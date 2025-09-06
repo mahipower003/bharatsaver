@@ -4,6 +4,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { Inter, Noto_Sans } from 'next/font/google';
 import { i18nConfig } from '@/lib/i18n-config';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -83,6 +84,7 @@ export default function RootLayout({
       <body>
         {children}
         <Toaster />
+        <SpeedInsights />
       </body>
     </html>
   );
