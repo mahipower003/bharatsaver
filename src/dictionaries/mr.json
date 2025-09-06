@@ -51,29 +51,12 @@
       "title": "नवीनतम मार्गदर्शक"
     }
   },
-  "scheme_selector": {
-    "title": "गुंतवणूक योजना निवडक",
-    "description": "तुमच्या गरजांसाठी सर्वोत्तम गुंतवणूक योजना शोधण्यासाठी काही प्रश्नांची उत्तरे द्या.",
-    "age_label": "तुमचे वय",
-    "income_label": "सध्याचे वार्षिक उत्पन्न (₹ मध्ये)",
-    "risk_label": "तुमची जोखीम सहनशीलता",
-    "risk_low": "कमी",
-    "risk_medium": "मध्यम",
-    "risk_high": "उच्च",
-    "horizon_label": "गुंतवणूक क्षितिज",
-    "horizon_short": "अल्प-मुदती (< 5 वर्षे)",
-    "horizon_medium": "मध्यम-मुदती (5-10 वर्षे)",
-    "horizon_long": "दीर्घ-मुदती (> 10 वर्षे)",
-    "goal_label": "प्राथमिक गुंतवणूक ध्येय",
-    "goal_placeholder": "उदा. सेवानिवृत्ती, मुलाचे शिक्षण",
-    "submit_button": "माझी योजना शोधा",
-    "loading": "तुमच्यासाठी सर्वोत्तम योजना शोधत आहे...",
-    "result_title": "तुमची शिफारस केलेली योजना",
-    "result_reasoning": "तर्क"
-  },
   "ppf_calculator": {
     "title": "PPF कॅल्क्युलेटर",
     "description": "आमच्या वापरण्यास सोप्या कॅल्क्युलेटरसह तुमच्या सार्वजनिक भविष्य निर्वाह निधी (PPF) गुंतवणुकीवरील परताव्याची गणना करा.",
+    "meta_title": "पीपीएफ कॅल्क्युलेटर 2025 – परिपक्वता व व्याज मोजा | BharatSaver",
+    "meta_description": "नवीनतम व्याज दरांसह पीपीएफ कॅल्क्युलेटर वापरून परिपक्व रक्कम व वार्षिक परतावा जाणून घ्या.",
+    "h1": "पीपीएफ कॅल्क्युलेटर 2025 – परिपक्वता व परतावा",
     "annual_investment_label": "वार्षिक गुंतवणूक (₹)",
     "annual_investment_placeholder": "उदा. 150000",
     "tenure_label": "गुंतवणूक कालावधी (वर्षे)",
@@ -94,5 +77,73 @@
     "table_amount_invested": "गुंतवलेली रक्कम",
     "table_interest_earned": "मिळालेले व्याज",
     "table_closing_balance": "अंतिम शिल्लक"
+  },
+  "ssy_calculator": {
+    "meta_title": "Sukanya Samriddhi Yojana (SSY) Calculator – कॅल्क्युलेटर | BharatSaver",
+    "meta_description": "Sukanya Samriddhi Yojana (SSY) Calculator कॅल्क्युलेटर वापरून परिपक्वता, व्याज व कर लाभ जाणून घ्या.",
+    "h1": "Sukanya Samriddhi Yojana (SSY) Calculator कॅल्क्युलेटर"
+  },
+  "nps_calculator": {
+    "meta_title": "NPS Calculator (National Pension System) – कॅल्क्युलेटर | BharatSaver",
+    "meta_description": "NPS Calculator (National Pension System) कॅल्क्युलेटर वापरून परिपक्वता, व्याज व कर लाभ जाणून घ्या.",
+    "h1": "NPS Calculator (National Pension System) कॅल्क्युलेटर"
+  },
+  "apy_calculator": {
+    "meta_title": "Atal Pension Yojana (APY) Calculator – कॅल्क्युलेटर | BharatSaver",
+    "meta_description": "Atal Pension Yojana (APY) Calculator कॅल्क्युलेटर वापरून परिपक्वता, व्याज व कर लाभ जाणून घ्या.",
+    "h1": "Atal Pension Yojana (APY) Calculator कॅल्क्युलेटर"
+  },
+  "fd_vs_ppf_calculator": {
+    "meta_title": "FD vs PPF Returns Calculator – कॅल्क्युलेटर | BharatSaver",
+    "meta_description": "FD vs PPF Returns Calculator कॅल्क्युलेटर वापरून परिपक्वता, व्याज व कर लाभ जाणून घ्या.",
+    "h1": "FD vs PPF Returns Calculator कॅल्क्युलेटर"
+  },
+  "tax_regime_calculator": {
+    "meta_title": "Tax Regime Calculator (Old vs New) – कॅल्क्युलेटर | BharatSaver",
+    "meta_description": "Tax Regime Calculator (Old vs New) कॅल्क्युलेटर वापरून परिपक्वता, व्याज व कर लाभ जाणून घ्या.",
+    "h1": "Tax Regime Calculator (Old vs New) कॅल्क्युलेटर"
+  },
+  "retirement_corpus_calculator": {
+    "meta_title": "Retirement Corpus Calculator – कॅल्क्युलेटर | BharatSaver",
+    "meta_description": "Retirement Corpus Calculator कॅल्क्युलेटर वापरून परिपक्वता, व्याज व कर लाभ जाणून घ्या.",
+    "h1": "Retirement Corpus Calculator कॅल्क्युलेटर"
+  },
+  "loan_optimization_calculator": {
+    "meta_title": "Loan Optimization Calculator – कॅल्क्युलेटर | BharatSaver",
+    "meta_description": "Loan Optimization Calculator कॅल्क्युलेटर वापरून परिपक्वता, व्याज व कर लाभ जाणून घ्या.",
+    "h1": "Loan Optimization Calculator कॅल्क्युलेटर"
+  },
+  "mutual_fund_overlap_calculator": {
+    "meta_title": "Mutual Fund Overlap Calculator – कॅल्क्युलेटर | BharatSaver",
+    "meta_description": "Mutual Fund Overlap Calculator कॅल्क्युलेटर वापरून परिपक्वता, व्याज व कर लाभ जाणून घ्या.",
+    "h1": "Mutual Fund Overlap Calculator कॅल्क्युलेटर"
+  },
+  "ups_pension_calculator": {
+    "meta_title": "UPS Pension Scheme Calculator – कॅल्क्युलेटर | BharatSaver",
+    "meta_description": "UPS Pension Scheme Calculator कॅल्क्युलेटर वापरून परिपक्वता, व्याज व कर लाभ जाणून घ्या.",
+    "h1": "UPS Pension Scheme Calculator कॅल्क्युलेटर"
+  },
+  "scheme_selector": {
+    "title": "गुंतवणूक योजना निवडक",
+    "description": "तुमच्या गरजांसाठी सर्वोत्तम गुंतवणूक योजना शोधण्यासाठी काही प्रश्नांची उत्तरे द्या.",
+    "meta_title": "Scheme Selector Quiz – कॅल्क्युलेटर | BharatSaver",
+    "meta_description": "Scheme Selector Quiz कॅल्क्युलेटर वापरून परिपक्वता, व्याज व कर लाभ जाणून घ्या.",
+    "h1": "Scheme Selector Quiz कॅल्क्युलेटर",
+    "age_label": "तुमचे वय",
+    "income_label": "सध्याचे वार्षिक उत्पन्न (₹ मध्ये)",
+    "risk_label": "तुमची जोखीम सहनशीलता",
+    "risk_low": "कमी",
+    "risk_medium": "मध्यम",
+    "risk_high": "उच्च",
+    "horizon_label": "गुंतवणूक क्षितिज",
+    "horizon_short": "अल्प-मुदती (< 5 वर्षे)",
+    "horizon_medium": "मध्यम-मुदती (5-10 वर्षे)",
+    "horizon_long": "दीर्घ-मुदती (> 10 वर्षे)",
+    "goal_label": "प्राथमिक गुंतवणूक ध्येय",
+    "goal_placeholder": "उदा. सेवानिवृत्ती, मुलाचे शिक्षण",
+    "submit_button": "माझी योजना शोधा",
+    "loading": "तुमच्यासाठी सर्वोत्तम योजना शोधत आहे...",
+    "result_title": "तुमची शिफारस केलेली योजना",
+    "result_reasoning": "तर्क"
   }
 }

@@ -10,8 +10,8 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params: { lang } }: { params: { lang: Locale } }): Promise<Metadata> {
   const dictionary = await getDictionary(lang);
   return {
-    title: dictionary.ppf_calculator.title,
-    description: dictionary.ppf_calculator.description,
+    title: dictionary.ppf_calculator.meta_title,
+    description: dictionary.ppf_calculator.meta_description,
   };
 }
 
@@ -23,7 +23,7 @@ export default async function PpfCalculatorPage({ params: { lang } }: { params: 
       <div className="mx-auto max-w-5xl">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
-            {dictionary.ppf_calculator.title}
+            {dictionary.ppf_calculator.h1}
           </h1>
           <p className="mt-4 text-lg text-muted-foreground">
             {dictionary.ppf_calculator.description}

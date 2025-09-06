@@ -19,16 +19,17 @@
       ]
     },
     "calculators": {
-      "title": "Calcutors",
+      "title": "Calculators",
       "links": [
-        { "title": "NPS Calcualator List", "href": "/en/nps-calculator" },
-        { "title": "Blog", "href": "/en/blog" }
+        { "title": "NPS Calculator", "href": "/en/nps-calculator" },
+        { "title": "PPF Calculator", "href": "/en/ppf-calculator" },
+        { "title": "SSY Calculator", "href": "/en/ssy-calculator" }
       ]
     },
     "resources": {
       "title": "Resources",
       "links": [
-        { "title": "Resources", "href": "/en/guides" },
+        { "title": "Guides", "href": "/en/guides" },
         { "title": "Contact", "href": "/en/contact" }
       ]
     },
@@ -36,7 +37,7 @@
       "title": "Contact"
     },
     "copyright": "© 2025",
-    "disclaimer": "We are an independent archicioles website. We are not affiliated with LIC or goverment body."
+    "disclaimer": "We are an independent articles website. We are not affiliated with LIC or any government body."
   },
   "home": {
     "hero": {
@@ -64,29 +65,12 @@
       "guide3_subtitle": "Tax regime comparison"
     }
   },
-  "scheme_selector": {
-    "title": "Investment Scheme Selector",
-    "description": "Answer a few questions to find the best investment scheme for your needs.",
-    "age_label": "Your Age",
-    "income_label": "Current Annual Income (in ₹)",
-    "risk_label": "Your Risk Tolerance",
-    "risk_low": "Low",
-    "risk_medium": "Medium",
-    "risk_high": "High",
-    "horizon_label": "Investment Horizon",
-    "horizon_short": "Short-term (< 5 years)",
-    "horizon_medium": "Medium-term (5-10 years)",
-    "horizon_long": "Long-term (> 10 years)",
-    "goal_label": "Primary Investment Goal",
-    "goal_placeholder": "e.g., Retirement, Child's education",
-    "submit_button": "Find my Scheme",
-    "loading": "Finding the best scheme for you...",
-    "result_title": "Your Recommended Scheme",
-    "result_reasoning": "Reasoning"
-  },
   "ppf_calculator": {
-    "title": "PPF Calculator",
+    "title": "PPF Calculator 2025",
     "description": "Calculate the returns on your Public Provident Fund (PPF) investment with our easy-to-use calculator.",
+    "meta_title": "PPF Calculator 2025 – Calculate Maturity & Interest | BharatSaver",
+    "meta_description": "Use our free PPF Calculator 2025 with latest interest rates to estimate maturity amount, yearly returns & tax savings.",
+    "h1": "PPF Calculator 2025 – Know Your Maturity & Returns",
     "annual_investment_label": "Annual Investment (₹)",
     "annual_investment_placeholder": "e.g., 150000",
     "tenure_label": "Investment Tenure (Years)",
@@ -107,5 +91,73 @@
     "table_amount_invested": "Amount Invested",
     "table_interest_earned": "Interest Earned",
     "table_closing_balance": "Closing Balance"
+  },
+  "ssy_calculator": {
+    "meta_title": "Sukanya Samriddhi Yojana (SSY) Calculator | BharatSaver",
+    "meta_description": "Use our free Sukanya Samriddhi Yojana (SSY) Calculator to calculate returns, maturity and tax benefits with latest rates in India.",
+    "h1": "Sukanya Samriddhi Yojana (SSY) Calculator"
+  },
+  "nps_calculator": {
+    "meta_title": "NPS Calculator (National Pension System) | BharatSaver",
+    "meta_description": "Use our free NPS Calculator (National Pension System) to calculate returns, maturity and tax benefits with latest rates in India.",
+    "h1": "NPS Calculator (National Pension System)"
+  },
+  "apy_calculator": {
+    "meta_title": "Atal Pension Yojana (APY) Calculator | BharatSaver",
+    "meta_description": "Use our free Atal Pension Yojana (APY) Calculator to calculate returns, maturity and tax benefits with latest rates in India.",
+    "h1": "Atal Pension Yojana (APY) Calculator"
+  },
+  "fd_vs_ppf_calculator": {
+    "meta_title": "FD vs PPF Returns Calculator | BharatSaver",
+    "meta_description": "Use our free FD vs PPF Returns Calculator to calculate returns, maturity and tax benefits with latest rates in India.",
+    "h1": "FD vs PPF Returns Calculator"
+  },
+  "tax_regime_calculator": {
+    "meta_title": "Tax Regime Calculator (Old vs New) | BharatSaver",
+    "meta_description": "Use our free Tax Regime Calculator (Old vs New) to calculate returns, maturity and tax benefits with latest rates in India.",
+    "h1": "Tax Regime Calculator (Old vs New)"
+  },
+  "retirement_corpus_calculator": {
+    "meta_title": "Retirement Corpus Calculator | BharatSaver",
+    "meta_description": "Use our free Retirement Corpus Calculator to calculate returns, maturity and tax benefits with latest rates in India.",
+    "h1": "Retirement Corpus Calculator"
+  },
+  "loan_optimization_calculator": {
+    "meta_title": "Loan Optimization Calculator | BharatSaver",
+    "meta_description": "Use our free Loan Optimization Calculator to calculate returns, maturity and tax benefits with latest rates in India.",
+    "h1": "Loan Optimization Calculator"
+  },
+  "mutual_fund_overlap_calculator": {
+    "meta_title": "Mutual Fund Overlap Calculator | BharatSaver",
+    "meta_description": "Use our free Mutual Fund Overlap Calculator to calculate returns, maturity and tax benefits with latest rates in India.",
+    "h1": "Mutual Fund Overlap Calculator"
+  },
+  "ups_pension_calculator": {
+    "meta_title": "UPS Pension Scheme Calculator | BharatSaver",
+    "meta_description": "Use our free UPS Pension Scheme Calculator to calculate returns, maturity and tax benefits with latest rates in India.",
+    "h1": "UPS Pension Scheme Calculator"
+  },
+  "scheme_selector": {
+    "title": "Investment Scheme Selector",
+    "description": "Answer a few questions to find the best investment scheme for your needs.",
+    "meta_title": "Scheme Selector Quiz | BharatSaver",
+    "meta_description": "Use our free Scheme Selector Quiz to calculate returns, maturity and tax benefits with latest rates in India.",
+    "h1": "Scheme Selector Quiz",
+    "age_label": "Your Age",
+    "income_label": "Current Annual Income (in ₹)",
+    "risk_label": "Your Risk Tolerance",
+    "risk_low": "Low",
+    "risk_medium": "Medium",
+    "risk_high": "High",
+    "horizon_label": "Investment Horizon",
+    "horizon_short": "Short-term (< 5 years)",
+    "horizon_medium": "Medium-term (5-10 years)",
+    "horizon_long": "Long-term (> 10 years)",
+    "goal_label": "Primary Investment Goal",
+    "goal_placeholder": "e.g., Retirement, Child's education",
+    "submit_button": "Find my Scheme",
+    "loading": "Finding the best scheme for you...",
+    "result_title": "Your Recommended Scheme",
+    "result_reasoning": "Reasoning"
   }
 }

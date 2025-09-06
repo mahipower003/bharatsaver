@@ -51,29 +51,12 @@
       "title": "சமீபத்திய வழிகாட்டிகள்"
     }
   },
-  "scheme_selector": {
-    "title": "முதலீட்டுத் திட்டத் தேர்வி",
-    "description": "உங்கள் தேவைகளுக்கு சிறந்த முதலீட்டுத் திட்டத்தைக் கண்டறிய சில கேள்விகளுக்கு பதிலளிக்கவும்.",
-    "age_label": "உங்கள் வயது",
-    "income_label": "தற்போதைய ஆண்டு வருமானம் (₹)",
-    "risk_label": "உங்கள் இடர் ಸಹಿष्णुತೆ",
-    "risk_low": "குறைந்த",
-    "risk_medium": "நடுத்தர",
-    "risk_high": "அதிக",
-    "horizon_label": "முதலீட்டுக் காலம்",
-    "horizon_short": "குறுகிய காலம் (< 5 ஆண்டுகள்)",
-    "horizon_medium": "நடுத்தர காலம் (5-10 ஆண்டுகள்)",
-    "horizon_long": "நீண்ட காலம் (> 10 ஆண்டுகள்)",
-    "goal_label": "முதன்மை முதலீட்டு இலக்கு",
-    "goal_placeholder": "எ.கா., ஓய்வு, குழந்தையின் கல்வி",
-    "submit_button": "என் திட்டத்தைக் கண்டுபிடி",
-    "loading": "உங்களுக்கான சிறந்த திட்டத்தைத் தேடுகிறது...",
-    "result_title": "உங்கள் பரிந்துரைக்கப்பட்ட திட்டம்",
-    "result_reasoning": "காரணம்"
-  },
   "ppf_calculator": {
     "title": "PPF கால்குலேட்டர்",
     "description": "எங்கள் சுலபமாக பயன்படுத்தக்கூடிய கால்குலேட்டர் மூலம் உங்கள் பொது வருங்கால வைப்பு நிதி (PPF) முதலீட்டின் மீதான வருமானத்தைக் கணக்கிடுங்கள்.",
+    "meta_title": "பிபிஎப் கால்குலேட்டர் 2025 – முதிர்ச்சி & வட்டி கணக்கிடு | BharatSaver",
+    "meta_description": "புதிய வட்டி விகிதங்களுடன் எங்கள் பிபிஎப் கால்குலேட்டரை பயன்படுத்தி முதிர்ச்சி தொகை மற்றும் வரி சேமிப்பை அறியுங்கள்.",
+    "h1": "பிபிஎப் கால்குலேட்டர் 2025 – முதிர்ச்சி & வருவாய்",
     "annual_investment_label": "ஆண்டு முதலீடு (₹)",
     "annual_investment_placeholder": "எ.கா. 150000",
     "tenure_label": "முதலீட்டு காலம் (ஆண்டுகள்)",
@@ -94,5 +77,73 @@
     "table_amount_invested": "முதலீடு செய்யப்பட்ட தொகை",
     "table_interest_earned": "ஈட்டிய வட்டி",
     "table_closing_balance": "இறுதி இருப்பு"
+  },
+  "ssy_calculator": {
+    "meta_title": "Sukanya Samriddhi Yojana (SSY) Calculator – கால்குலேட்டர் | BharatSaver",
+    "meta_description": "Sukanya Samriddhi Yojana (SSY) Calculator கால்குலேட்டரை பயன்படுத்தி வருமானம் மற்றும் வரி நன்மைகளை கணக்கிடுங்கள்.",
+    "h1": "Sukanya Samriddhi Yojana (SSY) Calculator கால்குலேட்டர்"
+  },
+  "nps_calculator": {
+    "meta_title": "NPS Calculator (National Pension System) – கால்குலேட்டர் | BharatSaver",
+    "meta_description": "NPS Calculator (National Pension System) கால்குலேட்டரை பயன்படுத்தி வருமானம் மற்றும் வரி நன்மைகளை கணக்கிடுங்கள்.",
+    "h1": "NPS Calculator (National Pension System) கால்குலேட்டர்"
+  },
+  "apy_calculator": {
+    "meta_title": "Atal Pension Yojana (APY) Calculator – கால்குலேட்டர் | BharatSaver",
+    "meta_description": "Atal Pension Yojana (APY) Calculator கால்குலேட்டரை பயன்படுத்தி வருமானம் மற்றும் வரி நன்மைகளை கணக்கிடுங்கள்.",
+    "h1": "Atal Pension Yojana (APY) Calculator கால்குலேட்டர்"
+  },
+  "fd_vs_ppf_calculator": {
+    "meta_title": "FD vs PPF Returns Calculator – கால்குலேட்டர் | BharatSaver",
+    "meta_description": "FD vs PPF Returns Calculator கால்குலேட்டரை பயன்படுத்தி வருமானம் மற்றும் வரி நன்மைகளை கணக்கிடுங்கள்.",
+    "h1": "FD vs PPF Returns Calculator கால்குலேட்டர்"
+  },
+  "tax_regime_calculator": {
+    "meta_title": "Tax Regime Calculator (Old vs New) – கால்குலேட்டர் | BharatSaver",
+    "meta_description": "Tax Regime Calculator (Old vs New) கால்குலேட்டரை பயன்படுத்தி வருமானம் மற்றும் வரி நன்மைகளை கணக்கிடுங்கள்.",
+    "h1": "Tax Regime Calculator (Old vs New) கால்குலேட்டர்"
+  },
+  "retirement_corpus_calculator": {
+    "meta_title": "Retirement Corpus Calculator – கால்குலேட்டர் | BharatSaver",
+    "meta_description": "Retirement Corpus Calculator கால்குலேட்டரை பயன்படுத்தி வருமானம் மற்றும் வரி நன்மைகளை கணக்கிடுங்கள்.",
+    "h1": "Retirement Corpus Calculator கால்குலேட்டர்"
+  },
+  "loan_optimization_calculator": {
+    "meta_title": "Loan Optimization Calculator – கால்குலேட்டர் | BharatSaver",
+    "meta_description": "Loan Optimization Calculator கால்குலேட்டரை பயன்படுத்தி வருமானம் மற்றும் வரி நன்மைகளை கணக்கிடுங்கள்.",
+    "h1": "Loan Optimization Calculator கால்குலேட்டர்"
+  },
+  "mutual_fund_overlap_calculator": {
+    "meta_title": "Mutual Fund Overlap Calculator – கால்குலேட்டர் | BharatSaver",
+    "meta_description": "Mutual Fund Overlap Calculator கால்குலேட்டரை பயன்படுத்தி வருமானம் மற்றும் வரி நன்மைகளை கணக்கிடுங்கள்.",
+    "h1": "Mutual Fund Overlap Calculator கால்குலேட்டர்"
+  },
+  "ups_pension_calculator": {
+    "meta_title": "UPS Pension Scheme Calculator – கால்குலேட்டர் | BharatSaver",
+    "meta_description": "UPS Pension Scheme Calculator கால்குலேட்டரை பயன்படுத்தி வருமானம் மற்றும் வரி நன்மைகளை கணக்கிடுங்கள்.",
+    "h1": "UPS Pension Scheme Calculator கால்குலேட்டர்"
+  },
+  "scheme_selector": {
+    "title": "முதலீட்டுத் திட்டத் தேர்வி",
+    "description": "உங்கள் தேவைகளுக்கு சிறந்த முதலீட்டுத் திட்டத்தைக் கண்டறிய சில கேள்விகளுக்கு பதிலளிக்கவும்.",
+    "meta_title": "Scheme Selector Quiz – கால்குலேட்டர் | BharatSaver",
+    "meta_description": "Scheme Selector Quiz கால்குலேட்டரை பயன்படுத்தி வருமானம் மற்றும் வரி நன்மைகளை கணக்கிடுங்கள்.",
+    "h1": "Scheme Selector Quiz கால்குலேட்டர்",
+    "age_label": "உங்கள் வயது",
+    "income_label": "தற்போதைய ஆண்டு வருமானம் (₹)",
+    "risk_label": "உங்கள் இடர் ಸಹಿष्णुತೆ",
+    "risk_low": "குறைந்த",
+    "risk_medium": "நடுத்தர",
+    "risk_high": "அதிக",
+    "horizon_label": "முதலீட்டுக் காலம்",
+    "horizon_short": "குறுகிய காலம் (< 5 ஆண்டுகள்)",
+    "horizon_medium": "நடுத்தர காலம் (5-10 ஆண்டுகள்)",
+    "horizon_long": "நீண்ட காலம் (> 10 ஆண்டுகள்)",
+    "goal_label": "முதன்மை முதலீட்டு இலக்கு",
+    "goal_placeholder": "எ.கா., ஓய்வு, குழந்தையின் கல்வி",
+    "submit_button": "என் திட்டத்தைக் கண்டுபிடி",
+    "loading": "உங்களுக்கான சிறந்த திட்டத்தைத் தேடுகிறது...",
+    "result_title": "உங்கள் பரிந்துரைக்கப்பட்ட திட்டம்",
+    "result_reasoning": "காரணம்"
   }
 }

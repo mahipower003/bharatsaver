@@ -51,29 +51,12 @@
       "title": "తాజా గైడ్లు"
     }
   },
-  "scheme_selector": {
-    "title": "పెట్టుబడి పథకం సెలెక్టర్",
-    "description": "మీ అవసరాలకు ఉత్తమ పెట్టుబడి పథకాన్ని కనుగొనడానికి కొన్ని ప్రశ్నలకు సమాధానం ఇవ్వండి.",
-    "age_label": "మీ వయస్సు",
-    "income_label": "ప్రస్తుత వార్షిక ఆదాయం (₹ లో)",
-    "risk_label": "మీ రిస్క్ సహనం",
-    "risk_low": "తక్కువ",
-    "risk_medium": "మధ్యస్థం",
-    "risk_high": "అధికం",
-    "horizon_label": "పెట్టుబడి కాలం",
-    "horizon_short": "స్వల్పకాలిక (< 5 సంవత్సరాలు)",
-    "horizon_medium": "మధ్యకాలిక (5-10 సంవత్సరాలు)",
-    "horizon_long": "దీర్ఘకాలిక (> 10 సంవత్సరాలు)",
-    "goal_label": "ప్రాథమిక పెట్టుబడి లక్ష్యం",
-    "goal_placeholder": "ఉదా., పదవీ విరమణ, పిల్లల చదువు",
-    "submit_button": "నా పథకాన్ని కనుగొనండి",
-    "loading": "మీ కోసం ఉత్తమ పథకాన్ని కనుగొనಲಾಗುತ್ತಿದೆ...",
-    "result_title": "మీ సిఫార్సు చేసిన పథకం",
-    "result_reasoning": "హేతువు"
-  },
   "ppf_calculator": {
     "title": "PPF క్యాలిక్యులేటర్",
     "description": "మా సులభంగా ఉపయోగించగల క్యాలిక్యులేటర్‌తో మీ పబ్లిక్ ప్రావిడెంట్ ఫండ్ (PPF) పెట్టుబడిపై రాబడిని లెక్కించండి.",
+    "meta_title": "పిపిఎఫ్ కాల్క్యులేటర్ 2025 – పరిపక్వత & వడ్డీ లెక్కించండి | BharatSaver",
+    "meta_description": "తాజా వడ్డీ రేట్లతో పిపిఎఫ్ కాల్క్యులేటర్ ఉపయోగించి పరిపక్వ మొత్తం & పన్ను ఆదా తెలుసుకోండి.",
+    "h1": "పిపిఎఫ్ కాల్క్యులేటర్ 2025 – పరిపక్వత & రిటర్న్స్",
     "annual_investment_label": "వార్షిక పెట్టుబడి (₹)",
     "annual_investment_placeholder": "ఉదా. 150000",
     "tenure_label": "పెట్టుబడి కాలం (సంవత్సరాలు)",
@@ -94,5 +77,73 @@
     "table_amount_invested": "పెట్టుబడి పెట్టిన మొత్తం",
     "table_interest_earned": "సంపాదించిన వడ్డీ",
     "table_closing_balance": "ముగింపు నిల్వ"
+  },
+    "ssy_calculator": {
+    "meta_title": "Sukanya Samriddhi Yojana (SSY) Calculator – కాల్క్యులేటర్ | BharatSaver",
+    "meta_description": "Sukanya Samriddhi Yojana (SSY) Calculator కాల్క్యులేటర్ ద్వారా పరిపక్వ మొత్తం, రాబడి మరియు పన్ను లాభాలను లెక్కించండి.",
+    "h1": "Sukanya Samriddhi Yojana (SSY) Calculator కాల్క్యులేటర్"
+  },
+  "nps_calculator": {
+    "meta_title": "NPS Calculator (National Pension System) – కాల్క్యులేటర్ | BharatSaver",
+    "meta_description": "NPS Calculator (National Pension System) కాల్క్యులేటర్ ద్వారా పరిపక్వ మొత్తం, రాబడి మరియు పన్ను లాభాలను లెక్కించండి.",
+    "h1": "NPS Calculator (National Pension System) కాల్క్యులేటర్"
+  },
+  "apy_calculator": {
+    "meta_title": "Atal Pension Yojana (APY) Calculator – కాల్క్యులేటర్ | BharatSaver",
+    "meta_description": "Atal Pension Yojana (APY) Calculator కాల్క్యులేటర్ ద్వారా పరిపక్వ మొత్తం, రాబడి మరియు పన్ను లాభాలను లెక్కించండి.",
+    "h1": "Atal Pension Yojana (APY) Calculator కాల్క్యులేటర్"
+  },
+  "fd_vs_ppf_calculator": {
+    "meta_title": "FD vs PPF Returns Calculator – కాల్క్యులేటర్ | BharatSaver",
+    "meta_description": "FD vs PPF Returns Calculator కాల్క్యులేటర్ ద్వారా పరిపక్వ మొత్తం, రాబడి మరియు పన్ను లాభాలను లెక్కించండి.",
+    "h1": "FD vs PPF Returns Calculator కాల్క్యులేటర్"
+  },
+  "tax_regime_calculator": {
+    "meta_title": "Tax Regime Calculator (Old vs New) – కాల్క్యులేటర్ | BharatSaver",
+    "meta_description": "Tax Regime Calculator (Old vs New) కాల్క్యులేటర్ ద్వారా పరిపక్వ మొత్తం, రాబడి మరియు పన్ను లాభాలను లెక్కించండి.",
+    "h1": "Tax Regime Calculator (Old vs New) కాల్క్యులేటర్"
+  },
+  "retirement_corpus_calculator": {
+    "meta_title": "Retirement Corpus Calculator – కాల్క్యులేటర్ | BharatSaver",
+    "meta_description": "Retirement Corpus Calculator కాల్క్యులేటర్ ద్వారా పరిపక్వ మొత్తం, రాబడి మరియు పన్ను లాభాలను లెక్కించండి.",
+    "h1": "Retirement Corpus Calculator కాల్క్యులేటర్"
+  },
+  "loan_optimization_calculator": {
+    "meta_title": "Loan Optimization Calculator – కాల్క్యులేటర్ | BharatSaver",
+    "meta_description": "Loan Optimization Calculator కాల్క్యులేటర్ ద్వారా పరిపక్వ మొత్తం, రాబడి మరియు పన్ను లాభాలను లెక్కించండి.",
+    "h1": "Loan Optimization Calculator కాల్క్యులేటర్"
+  },
+  "mutual_fund_overlap_calculator": {
+    "meta_title": "Mutual Fund Overlap Calculator – కాల్క్యులేటర్ | BharatSaver",
+    "meta_description": "Mutual Fund Overlap Calculator కాల్క్యులేటర్ ద్వారా పరిపక్వ మొత్తం, రాబడి మరియు పన్ను లాభాలను లెక్కించండి.",
+    "h1": "Mutual Fund Overlap Calculator కాల్క్యులేటర్"
+  },
+  "ups_pension_calculator": {
+    "meta_title": "UPS Pension Scheme Calculator – కాల్క్యులేటర్ | BharatSaver",
+    "meta_description": "UPS Pension Scheme Calculator కాల్క్యులేటర్ ద్వారా పరిపక్వ మొత్తం, రాబడి మరియు పన్ను లాభాలను లెక్కించండి.",
+    "h1": "UPS Pension Scheme Calculator కాల్క్యులేటర్"
+  },
+  "scheme_selector": {
+    "title": "పెట్టుబడి పథకం సెలెక్టర్",
+    "description": "మీ అవసరాలకు ఉత్తమ పెట్టుబడి పథకాన్ని కనుగొనడానికి కొన్ని ప్రశ్నలకు సమాధానం ఇవ్వండి.",
+    "meta_title": "Scheme Selector Quiz – కాల్క్యులేటర్ | BharatSaver",
+    "meta_description": "Scheme Selector Quiz కాల్క్యులేటర్ ద్వారా పరిపక్వ మొత్తం, రాబడి మరియు పన్ను లాభాలను లెక్కించండి.",
+    "h1": "Scheme Selector Quiz కాల్క్యులేటర్",
+    "age_label": "మీ వయస్సు",
+    "income_label": "ప్రస్తుత వార్షిక ఆదాయం (₹ లో)",
+    "risk_label": "మీ రిస్క్ సహనం",
+    "risk_low": "తక్కువ",
+    "risk_medium": "మధ్యస్థం",
+    "risk_high": "అధికం",
+    "horizon_label": "పెట్టుబడి కాలం",
+    "horizon_short": "స్వల్పకాలిక (< 5 సంవత్సరాలు)",
+    "horizon_medium": "మధ్యకాలిక (5-10 సంవత్సరాలు)",
+    "horizon_long": "దీర్ఘకాలిక (> 10 సంవత్సరాలు)",
+    "goal_label": "ప్రాథమిక పెట్టుబడి లక్ష్యం",
+    "goal_placeholder": "ఉదా., పదవీ విరమణ, పిల్లల చదువు",
+    "submit_button": "నా పథకాన్ని కనుగొనండి",
+    "loading": "మీ కోసం ఉత్తమ పథకాన్ని కనుగొనಲಾಗುತ್ತಿದೆ...",
+    "result_title": "మీ సిఫార్సు చేసిన పథకం",
+    "result_reasoning": "హేతువు"
   }
 }
