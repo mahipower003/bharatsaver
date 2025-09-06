@@ -13,13 +13,7 @@ export function Footer({ lang, dictionary }: FooterProps) {
   return (
     <footer className="bg-secondary/50 border-t">
       <div className="container mx-auto px-4 md:px-6 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
-          <div className="col-span-2 lg:col-span-1">
-             <Link href={`/${lang}`} className="flex items-center gap-2">
-                <Logo className="h-8 w-8" />
-                <span className="font-bold text-2xl text-foreground">BharatSaver</span>
-            </Link>
-          </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div>
             <h3 className="font-semibold mb-4">{dictionary.about.title}</h3>
             <ul className="space-y-2">
