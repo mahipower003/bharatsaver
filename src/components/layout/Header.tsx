@@ -22,16 +22,16 @@ export function Header({ lang, dictionary }: HeaderProps) {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-sm border-b">
-      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <div className="flex items-center gap-4">
+      <div className="container mx-auto flex h-20 items-center px-4 md:px-6">
+        <div className="flex items-center gap-4 md:gap-10">
           <MobileNav lang={lang} dictionary={dictionary} />
           <Link href={`/${lang}`} className="hidden sm:flex items-center gap-2">
             <Logo className="h-8 w-8" />
-            <span className="font-bold text-2xl text-foreground">BharatSaver</span>
+            <span className="font-bold text-xl text-foreground">BharatSaver</span>
           </Link>
         </div>
 
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden lg:flex flex-1 items-center justify-center gap-8">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href} className="text-base font-medium text-muted-foreground transition-colors hover:text-primary">
               {link.label}
@@ -39,9 +39,9 @@ export function Header({ lang, dictionary }: HeaderProps) {
           ))}
         </nav>
 
-        <div className="flex items-center justify-end gap-4">
-           <Link href={`/${lang}/search`} className="hidden lg:block">
-              <Button variant="ghost" size="icon">
+        <div className="flex items-center justify-end gap-2">
+           <Link href={`/${lang}/search`}>
+              <Button variant="ghost" size="icon" className="hidden lg:inline-flex">
                   <Search className="h-5 w-5" />
                   <span className="sr-only">Search</span>
               </Button>
