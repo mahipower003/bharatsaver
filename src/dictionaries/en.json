@@ -71,7 +71,8 @@
   },
   "calculators_page": {
     "meta_title": "Financial Calculators | BharatSaver",
-    "meta_description": "A comprehensive suite of financial calculators to help you plan your investments, savings, and taxes."
+    "meta_description": "A comprehensive suite of financial calculators to help you plan your investments, savings, and taxes.",
+    "h1": "Financial Calculators"
   },
   "guides_page": {
     "meta_title": "Financial Guides | BharatSaver",

@@ -1,3 +1,4 @@
+
 import { PopularTools } from '@/components/home/PopularTools';
 import { getDictionary } from '@/lib/dictionaries';
 import { i18nConfig, type Locale } from '@/lib/i18n-config';
@@ -25,9 +26,14 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 }
 
 export default async function CalculatorsPage({ params }: { params: { lang: Locale } }) {
-  const dictionary = await getDictionary(params.lang, ['home.popular_tools']);
+  const dictionary = await getDictionary(params.lang, ['home.popular_tools', 'calculators_page']);
   return (
     <div className="py-12">
+        <div className="text-center mb-12">
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl font-headline mb-4">
+                {dictionary.calculators_page.h1}
+            </h1>
+        </div>
       <PopularTools lang={params.lang} dictionary={dictionary.home.popular_tools} />
     </div>
   );
