@@ -45,7 +45,7 @@ export function Hero({ lang, dictionary }: HeroProps) {
           <div className="relative">
             <Card className="overflow-hidden rounded-lg border-2 shadow-lg">
               <Image
-                src="/Bharat-saver-home-page-top.png"
+                src="/images/Bharat-saver-home-page-top.png"
                 alt="Illustration of an Indian family planning their finances together, with icons representing savings and growth."
                 width={960}
                 height={640}
