@@ -6,11 +6,6 @@ import { ArrowRight, Calculator, Banknote, ShieldCheck, PieChart } from 'lucide-
 import type { Locale } from '@/lib/i18n-config';
 import type { Dictionary } from '@/types';
 
-type HeroProps = {
-  lang: Locale;
-  dictionary: Dictionary['home']['hero'];
-};
-
 const stats = [
   { icon: PieChart, title: 'High ROI', description: 'Estimatur/hega aruhter\'s education cotpus.', key: 'high_roi' },
   { icon: Banknote, title: 'Tax Saved', description: 'Compare old tax regim tax regrt tmstantly', key: 'tax_saved' },
@@ -44,7 +39,7 @@ export function Hero({ lang, dictionary }: HeroProps) {
           <div className="relative">
             <Card className="overflow-hidden shadow-lg rounded-lg border-2">
               <Image
-                src="https://picsum.photos/960/640"
+                src="/hero-image.png"
                 alt="Illustration of a family planning their finances with charts and graphs"
                 width={960}
                 height={640}
