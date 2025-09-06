@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { ArrowRight, PieChart, Banknote, UserCheck, ShieldCheck } from 'lucide-react';
 import type { Locale } from '@/lib/i18n-config';
 import type { Dictionary } from '@/types';
@@ -59,7 +59,8 @@ export function Hero({ lang, dictionary }: HeroProps) {
         <div className="mt-24">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
                 {stats.map((stat) => (
-                    <div key={stat.key} className="flex items-start gap-4">
+                  <Card key={stat.key} className="p-0">
+                    <CardContent className="flex items-start gap-4 p-6">
                         <div className="rounded-lg bg-primary/10 p-3">
                             <stat.icon className="h-8 w-8 text-primary" />
                         </div>
@@ -67,7 +68,8 @@ export function Hero({ lang, dictionary }: HeroProps) {
                             <p className="text-lg font-semibold">{dictionary.stats[stat.key as keyof typeof dictionary.stats].title}</p>
                             <p className="mt-1 text-sm text-muted-foreground">{dictionary.stats[stat.key as keyof typeof dictionary.stats].description}</p>
                         </div>
-                    </div>
+                    </CardContent>
+                  </Card>
                 ))}
             </div>
         </div>
