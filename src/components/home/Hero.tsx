@@ -44,7 +44,7 @@ export function Hero({ lang, dictionary }: HeroProps) {
           <div className="relative">
             <Card className="overflow-hidden shadow-lg rounded-lg border-2">
               <Image
-                src="/hero-image.png"
+                src="https://picsum.photos/960/640"
                 alt="Illustration of a family planning their finances with charts and graphs"
                 width={960}
                 height={640}
