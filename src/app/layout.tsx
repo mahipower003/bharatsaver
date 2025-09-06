@@ -2,9 +2,34 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
+const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
+
 export const metadata: Metadata = {
-  title: 'BharatSaver',
-  description: 'Smarter Savings for Every Indian. Free calculators, guides and tools to plan your financial future.',
+  title: {
+    default: 'BharatSaver - Smarter Savings for Every Indian',
+    template: '%s | BharatSaver',
+  },
+  description: 'Free calculators, guides and tools to plan your financial future— in English and regional languages.',
+  openGraph: {
+    title: 'BharatSaver - Smarter Savings for Every Indian',
+    description: 'Free calculators, guides and tools to plan your financial future.',
+    url: siteUrl,
+    siteName: 'BharatSaver',
+    images: [{ 
+      url: `${siteUrl}/hero-image.png`, 
+      width: 960, 
+      height: 640, 
+      alt: 'BharatSaver Hero Image' 
+    }],
+    locale: 'en_IN',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'BharatSaver - Smarter Savings for Every Indian',
+    description: 'Free calculators, guides and tools to plan your financial future.',
+    images: [`${siteUrl}/hero-image.png`],
+  },
 };
 
 export default function RootLayout({
