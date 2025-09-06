@@ -19,18 +19,16 @@ function getLocale(request: NextRequest): string {
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  if (pathname === '/hero-image.png') {
+  // Paths to ignore from localization
+  const ignoredPaths = [
+    '/sitemap.xml',
+    '/hero-image.png',
+    '/api/',
+    '/public/'
+  ];
+
+  if (ignoredPaths.some(p => pathname.startsWith(p)) || /\..*$/.test(pathname)) {
     return NextResponse.next();
-  }
-  
-  // Skip middleware for API routes, public files, etc.
-  if (
-    [
-      '/api/',
-      '/public/'
-    ].some(p => pathname.startsWith(p)) || /\..*$/.test(pathname)
-  ) {
-    return;
   }
 
   const pathnameIsMissingLocale = i18nConfig.locales.every(
