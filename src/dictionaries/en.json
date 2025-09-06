@@ -7,7 +7,8 @@
       "guides": "Guides",
       "blog": "Blog"
     },
-    "cta": "Get Started"
+    "cta": "Get Started",
+    "search_placeholder": "Search calculators..."
   },
   "footer": {
     "about": {
@@ -202,5 +203,14 @@
     "h2_1": "Our Story",
     "p2": "BharatSaver was founded with a simple idea: to make financial planning less intimidating and more accessible for everyone. We believe that with the right tools, anyone can take control of their financial well-being.",
     "p3": "Our team is passionate about finance and technology, and we are dedicated to creating high-quality, reliable resources that you can trust."
+  },
+  "search_page": {
+    "meta_title": "Search | BharatSaver",
+    "meta_description": "Search for financial calculators and guides on BharatSaver.",
+    "title": "Search Results",
+    "title_with_query": "Search results for",
+    "h1": "Search Calculators and Guides",
+    "h1_with_query": "Search Results for",
+    "results_placeholder": "Search functionality is coming soon."
   }
 }
