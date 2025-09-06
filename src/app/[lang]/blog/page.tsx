@@ -18,7 +18,7 @@ export default async function BlogPage({ params }: { params: { lang: Locale }}) 
   const dictionary = await getDictionary(params.lang, ['blog_page']);
   
   return (
-    <div className="container mx-auto px-4 md:px-6 py-12">
+    <div className="px-4 md:px-6 py-12">
       <div className="mx-auto max-w-5xl text-center">
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
           {dictionary.blog_page.h1}

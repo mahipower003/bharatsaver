@@ -20,7 +20,7 @@ export default async function AboutPage({ params }: { params: { lang: Locale }})
   const dictionary = await getDictionary(params.lang, ['about_page']);
   
   return (
-    <div className="container mx-auto px-4 md:px-6 py-12">
+    <div className="px-4 md:px-6 py-12">
       <div className="mx-auto max-w-4xl">
         <div className="text-center mb-12">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl font-headline mb-4">

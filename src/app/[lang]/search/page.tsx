@@ -41,7 +41,7 @@ export default async function SearchPage({
   const query = searchParams.q;
   
   return (
-    <div className="container mx-auto px-4 md:px-6 py-12">
+    <div className="px-4 md:px-6 py-12">
       <div className="mx-auto max-w-xl">
         <div className="mb-8">
             <Search lang={params.lang} dictionary={{ placeholder: dictionary.header.search_placeholder }} />

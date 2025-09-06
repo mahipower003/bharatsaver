@@ -14,7 +14,11 @@ export default async function LocaleLayout({
   return (
     <div className="flex min-h-screen flex-col">
       <Header lang={params.lang} dictionary={dictionary.header} />
-      <main className="flex-grow">{children}</main>
+      <main className="flex-grow">
+        <div className="container mx-auto">
+            {children}
+        </div>
+      </main>
       <Footer lang={params.lang} dictionary={dictionary.footer} />
     </div>
   );
