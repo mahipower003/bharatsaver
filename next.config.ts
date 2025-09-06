@@ -27,6 +27,10 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return [
       {
+        source: '/sitemap.xml',
+        destination: '/sitemap',
+      },
+      {
         source: '/hero-image.png',
         destination: '/hero-image.png',
       },
