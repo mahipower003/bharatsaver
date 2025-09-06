@@ -77,21 +77,8 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
     ],
   };
 
-  const websiteSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    url: siteUrl,
-    name: 'BharatSaver',
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: `${siteUrl}/${params.lang}/search?q={search_term_string}`,
-      'query-input': 'required name=search_term_string',
-    },
-  };
-  
   return (
     <div className="py-12">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       
