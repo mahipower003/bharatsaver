@@ -19,76 +19,76 @@ export const calculators: Calculator[] = [
     title: 'PPF Calculator',
     description: 'Estimate PPF maturity amount and returns.',
     icon: Landmark,
-    link_text: 'Calculate Now'
+    link_text: 'PPF Calculator'
   },
   {
     slug: 'ssy-calculator',
     title: 'SSY Calculator',
     description: 'Calculate SSY maturity and interest earned.',
     icon: Baby,
-    link_text: 'Calculate Now'
+    link_text: 'SSY Calculator'
   },
   {
     slug: 'nps-calculator',
     title: 'NPS Calculator',
     description: 'Estimate pension corpus and monthly pension.',
     icon: TrendingUp,
-    link_text: 'Calculate Now'
+    link_text: 'NPS Calculator'
   },
   {
     slug: 'apy-calculator',
     title: 'APY Calculator',
     description: 'Find your required APY contribution.',
     icon: Shield,
-    link_text: 'Calculate Now'
+    link_text: 'APY Calculator'
   },
   {
     slug: 'fd-vs-ppf-calculator',
     title: 'FD vs PPF Calculator',
     description: 'Compare FD lump-sum vs PPF recurring.',
     icon: ArrowRightLeft,
-    link_text: 'Compare Now'
+    link_text: 'FD vs PPF Calculator'
   },
   {
     slug: 'tax-regime-calculator',
     title: 'Tax Regime Calculator',
     description: 'Compare tax under Old vs New regimes.',
     icon: FileText,
-    link_text: 'Compare Now'
+    link_text: 'Tax Regime Calculator'
   },
   {
     slug: 'retirement-corpus-calculator',
     title: 'Retirement Corpus Calculator',
     description: 'Plan for a comfortable post-retirement life.',
     icon: Target,
-    link_text: 'Plan Now'
+    link_text: 'Retirement Corpus Calculator'
   },
   {
     slug: 'loan-optimizer',
-    title: 'Loan Optimizer',
+    title: 'Loan Optimization Calculator',
     description: 'Calculate EMI and optimize loan tenure.',
     icon: BadgePercent,
-    link_text: 'Optimize Now'
+    link_text: 'Loan Optimization Calculator'
   },
   {
     slug: 'mutual-fund-overlap-calculator',
     title: 'Mutual Fund Overlap',
     description: 'Check for overlap in your mutual funds.',
     icon: Layers,
-    link_text: 'Check Now'
+    link_text: 'Mutual Fund Overlap'
   },
   {
     slug: 'ups-pension-calculator',
     title: 'UPS Pension Calculator',
     description: 'Estimate your UPS pension amount.',
     icon: Building,
-    link_text: 'Calculate Now'
+    link_text: 'UPS Pension Calculator'
   },
   {
     slug: 'scheme-selector',
     title: 'Scheme Selector',
     description: 'Get an AI-powered scheme recommendation.',
     icon: Sparkles,
-    link_text: 'Get Advice'
+    link_text: 'Scheme Selector'
   },
 ];
