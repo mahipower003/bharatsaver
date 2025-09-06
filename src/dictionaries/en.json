@@ -109,6 +109,9 @@
     "table_amount_invested": "Amount Invested",
     "table_interest_earned": "Interest Earned",
     "table_closing_balance": "Closing Balance",
+    "explanation_title": "How is the PPF Return Calculated?",
+    "explanation_p1": "The PPF calculator works by compounding the interest on a yearly basis. The interest is calculated on the principal amount, which includes your annual contributions and the accumulated interest from previous years. The formula uses the opening balance at the start of the year, adds your investment for that year, and then calculates the interest based on the specified rate.",
+    "explanation_p2": "The result is a powerful, tax-free investment vehicle where your money grows exponentially over time. The 'Total Interest Earned' shows the power of compounding, often exceeding the 'Total Investment' you make over the long term.",
     "faq_title": "Frequently Asked Questions about PPF",
     "faqs": [
       {
@@ -233,5 +236,3 @@
     "results_placeholder": "Search functionality is coming soon."
   }
 }
-
-    

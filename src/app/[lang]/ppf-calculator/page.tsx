@@ -4,6 +4,7 @@ import { getDictionary } from "@/lib/dictionaries";
 import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -104,6 +105,16 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
           </p>
         </div>
         <PpfCalculator dictionary={dictionary.ppf_calculator} />
+
+        <Card className="mt-12 shadow-lg">
+          <CardHeader>
+            <CardTitle>{dictionary.ppf_calculator.explanation_title}</CardTitle>
+          </CardHeader>
+          <CardContent className="prose dark:prose-invert max-w-none">
+            <p>{dictionary.ppf_calculator.explanation_p1}</p>
+            <p>{dictionary.ppf_calculator.explanation_p2}</p>
+          </CardContent>
+        </Card>
 
         <div className="mt-12">
             <h2 className="text-2xl font-bold text-center mb-6">{dictionary.ppf_calculator.faq_title}</h2>
