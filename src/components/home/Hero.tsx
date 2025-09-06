@@ -41,7 +41,7 @@ export function Hero({ lang, dictionary }: HeroProps) {
               </Button>
             </div>
           </div>
-          <div className="relative hidden md:block">
+          <div className="relative">
             <Card className="overflow-hidden shadow-lg rounded-lg border-2">
               <Image
                 src="/hero-image.png"
