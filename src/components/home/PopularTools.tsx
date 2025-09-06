@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import { calculators } from '@/data/calculators';
 import type { Locale } from '@/lib/i18n-config';
@@ -23,9 +24,16 @@ export function PopularTools({ lang, dictionary }: PopularToolsProps) {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10">
           {popularCalculators.map((tool) => (
             <Link key={tool.slug} href={`/${lang}/${tool.slug}`} className="group">
-              <h3 className="text-lg font-semibold">{tool.title}</h3>
-              <p className="text-sm text-muted-foreground mt-1">{tool.description}</p>
-              <div className="flex items-center text-primary mt-2 text-sm font-medium">
+              <div className="flex items-center gap-4">
+                <div className="p-3 bg-primary/10 rounded-lg">
+                    <tool.icon className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                    <h3 className="text-lg font-semibold">{tool.title}</h3>
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground mt-2">{tool.description}</p>
+              <div className="flex items-center text-primary mt-4 text-sm font-medium">
                 <span>{tool.link_text}</span>
                 <ArrowRight className="ml-1 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
               </div>
