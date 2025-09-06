@@ -37,7 +37,7 @@ export function LatestGuides({ dictionary }: LatestGuidesProps) {
   ];
 
   return (
-    <section className="w-full py-20 bg-background">
+    <section className="w-full py-20 bg-secondary/50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mb-10">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
@@ -62,7 +62,7 @@ export function LatestGuides({ dictionary }: LatestGuidesProps) {
                   <h3 className="text-xl font-semibold flex-grow">{guide.title}</h3>
                   <p className="mt-2 text-muted-foreground">{guide.subtitle}</p>
                    <div className="flex items-center text-primary mt-6 text-sm font-medium">
-                    <span>Read Guide</span>
+                    <span>{dictionary.read_guide}</span>
                     <ArrowRight className="ml-1 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
                   </div>
                 </CardContent>

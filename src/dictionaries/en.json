@@ -7,63 +7,69 @@
       "guides": "Guides",
       "blog": "Blog"
     },
-    "cta": "Try PPF Calculator"
+    "cta": "Get Started"
   },
   "footer": {
     "about": {
       "title": "About BharatSaver",
       "links": [
-        { "title": "Home", "href": "/en" },
-        { "title": "Guides", "href": "/en/guides" },
-        { "title": "Blog", "href": "/en/blog" }
+        { "title": "Home", "href": "/" },
+        { "title": "Guides", "href": "/guides" },
+        { "title": "Blog", "href": "/blog" }
       ]
     },
     "calculators": {
       "title": "Calculators",
       "links": [
-        { "title": "NPS Calculator", "href": "/en/nps-calculator" },
-        { "title": "PPF Calculator", "href": "/en/ppf-calculator" },
-        { "title": "SSY Calculator", "href": "/en/ssy-calculator" }
+        { "title": "NPS Calculator", "href": "/nps-calculator" },
+        { "title": "PPF Calculator", "href": "/ppf-calculator" },
+        { "title": "SSY Calculator", "href": "/ssy-calculator" }
       ]
     },
     "resources": {
       "title": "Resources",
       "links": [
-        { "title": "Guides", "href": "/en/guides" },
-        { "title": "Contact", "href": "/en/contact" }
+        { "title": "Guides", "href": "/guides" },
+        { "title": "Contact", "href": "/contact" }
       ]
     },
     "contact": {
       "title": "Contact"
     },
-    "copyright": "© 2025",
+    "copyright": "© 2025 BharatSaver. All Rights Reserved.",
     "disclaimer": "We are an independent articles website. We are not affiliated with LIC or any government body."
   },
   "home": {
     "hero": {
       "title": "Smarter Savings for Every Indian",
       "subtitle": "Free calculators, guides and tools to plan your financial future— in English and regional languages.",
-      "cta_primary": "Try PPF Calculator",
-      "cta_secondary": "Calculate",
+      "cta_primary": "Get Started",
+      "cta_secondary": "Explore Calculators",
       "stats": {
-        "high_roi": { "title": "High ROI", "description": "Estimatur/hega aruhter's education cotpus." },
-        "tax_saved": { "title": "Tax Saved", "description": "Compare old tax regim tax regrt tmstantly" },
-        "retirement_ready": { "title": "Retirement Ready", "description": "Check your pension risk easion." },
-        "loan_emi": { "title": "Loan - EMI Optimizer", "description": "Apply pertihmamit tax reame" }
+        "high_roi": { "title": "High Returns on PPF", "description": "Maximize your long-term savings with top-tier returns." },
+        "tax_saved": { "title": "Save Tax with ELSS", "description": "Invest in ELSS to save on taxes under Section 80C." },
+        "retirement_ready": { "title": "Plan for Retirement", "description": "Secure your golden years with our NPS calculator." },
+        "loan_emi": { "title": "Optimize Loan EMIs", "description": "Manage your loan payments effectively and save money." }
       }
     },
     "popular_tools": {
-      "title": "Popular Tools"
+      "title": "Popular Financial Tools",
+      "subtitle": "Easy-to-use calculators for all your financial planning needs."
     },
     "latest_guides": {
       "title": "Latest Guides",
+      "read_guide": "Read Guide",
       "guide1_title": "PPF vs FD - Which is better?",
-      "guide1_subtitle": "PPF vs FL'obetter",
+      "guide1_subtitle": "Compare Public Provident Fund and Fixed Deposits to see which one suits your investment goals.",
       "guide2_title": "How to use SSY for child education",
-      "guide2_subtitle": "Tax regime",
+      "guide2_subtitle": "A comprehensive guide to planning your daughter's future with Sukanya Samriddhi Yojana.",
       "guide3_title": "Tax regime comparison",
-      "guide3_subtitle": "Tax regime comparison"
+      "guide3_subtitle": "Understand the differences between the old and new tax regimes to make an informed decision."
     }
+  },
+  "calculators_page": {
+    "meta_title": "Financial Calculators | BharatSaver",
+    "meta_description": "A comprehensive suite of financial calculators to help you plan your investments, savings, and taxes."
   },
   "ppf_calculator": {
     "title": "PPF Calculator 2025",

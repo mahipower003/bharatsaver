@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Locale } from '@/lib/i18n-config';
 import type { Dictionary } from '@/types';
 import { Twitter, Facebook, Linkedin } from 'lucide-react';
+import { Logo } from './Logo';
 
 type FooterProps = {
   lang: Locale;
@@ -10,15 +11,21 @@ type FooterProps = {
 
 export function Footer({ lang, dictionary }: FooterProps) {
   return (
-    <footer className="bg-background border-t">
+    <footer className="bg-secondary/50 border-t">
       <div className="container mx-auto px-4 md:px-6 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+          <div className="col-span-2 lg:col-span-1">
+             <Link href={`/${lang}`} className="flex items-center gap-2">
+                <Logo className="h-8 w-8" />
+                <span className="font-bold text-2xl text-foreground">BharatSaver</span>
+            </Link>
+          </div>
           <div>
             <h3 className="font-semibold mb-4">{dictionary.about.title}</h3>
             <ul className="space-y-2">
               {dictionary.about.links.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary">
+                  <Link href={`/${lang}${link.href}`} className="text-sm text-muted-foreground hover:text-primary">
                     {link.title}
                   </Link>
                 </li>
@@ -30,7 +37,7 @@ export function Footer({ lang, dictionary }: FooterProps) {
             <ul className="space-y-2">
               {dictionary.calculators.links.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary">
+                  <Link href={`/${lang}${link.href}`} className="text-sm text-muted-foreground hover:text-primary">
                     {link.title}
                   </Link>
                 </li>
@@ -42,7 +49,7 @@ export function Footer({ lang, dictionary }: FooterProps) {
             <ul className="space-y-2">
                 {dictionary.resources.links.map((link) => (
                     <li key={link.href}>
-                    <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary">
+                    <Link href={`/${lang}${link.href}`} className="text-sm text-muted-foreground hover:text-primary">
                         {link.title}
                     </Link>
                     </li>

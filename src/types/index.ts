@@ -24,7 +24,7 @@ export type Dictionary = {
   footer: {
     about: {
       title: string;
-      description: string;
+      links: { title: string, href: string }[];
     };
     calculators: {
       title: string;
@@ -55,9 +55,11 @@ export type Dictionary = {
     };
     popular_tools: {
       title: string;
+      subtitle: string;
     };
     latest_guides: {
       title: string;
+      read_guide: string;
       guide1_title: string;
       guide1_subtitle: string;
       guide2_title: string;
