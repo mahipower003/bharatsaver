@@ -2,7 +2,6 @@ import Link from 'next/link';
 import type { Locale } from '@/lib/i18n-config';
 import type { Dictionary } from '@/types';
 import { Twitter, Facebook, Linkedin } from 'lucide-react';
-import { Logo } from './Logo';
 
 type FooterProps = {
   lang: Locale;
@@ -43,7 +42,7 @@ export function Footer({ lang, dictionary }: FooterProps) {
             <ul className="space-y-2">
                 {dictionary.resources.links.map((link) => (
                     <li key={link.href}>
-                    <Link href={`/${lang}${link.href}`} className="text-sm text-muted-foreground hover:text-primary">
+                    <Link href={`${link.href.startsWith('/') ? `/${lang}`: ''}${link.href}`} className="text-sm text-muted-foreground hover:text-primary" target={link.href.startsWith('/') ? '' : '_blank'}>
                         {link.title}
                     </Link>
                     </li>

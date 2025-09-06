@@ -29,7 +29,8 @@
     "resources": {
       "title": "Resources",
       "links": [
-        { "title": "Resources", "href": "/guides" },
+        { "title": "Terms & Conditions", "href": "/terms" },
+        { "title": "Sitemap", "href": "/sitemap.xml" },
         { "title": "Contact", "href": "/contact" }
       ]
     },
@@ -175,5 +176,17 @@
     "loading": "Finding the best scheme for you...",
     "result_title": "Your Recommended Scheme",
     "result_reasoning": "Reasoning"
+  },
+  "terms_page": {
+    "meta_title": "Terms and Conditions | BharatSaver",
+    "meta_description": "Read the terms and conditions for using the BharatSaver website and its tools.",
+    "h1": "Terms and Conditions",
+    "p1": "Welcome to BharatSaver. By accessing our website, you agree to these terms and conditions. Please read them carefully.",
+    "h2_1": "Use of Website",
+    "p2": "The content and tools provided on this website are for general information and use only. They are subject to change without notice. Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable.",
+    "h2_2": "Accuracy of Information",
+    "p3": "While we strive to provide accurate and up-to-date information, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose.",
+    "h2_3": "Governing Law",
+    "p4": "Your use of this website and any dispute arising out of such use of the website is subject to the laws of India."
   }
 }
