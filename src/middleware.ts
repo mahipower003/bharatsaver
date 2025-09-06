@@ -23,10 +23,7 @@ export function middleware(request: NextRequest) {
   if (
     [
       '/api/',
-      '/public/',
-      '/A_2D_digital_screenshot_of_the_homepage_of_BharatS.png', // Legacy name from prompt
-      '/hero-screenshot.png',
-      '/hero-image.png'
+      '/public/'
     ].some(p => pathname.startsWith(p)) || /\..*$/.test(pathname)
   ) {
     return;
@@ -48,6 +45,6 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    '/((?!_next/static|_next/image|favicon.ico).*)',
+    '/((?!_next/static|_next/image|favicon.ico|hero-image.png).*)',
   ],
 };

@@ -13,6 +13,11 @@ const stats = [
   { icon: ShieldCheck, title: 'Loan - EMI Optimizer', description: 'Apply pertihmamit tax reame', key: 'loan_emi' },
 ];
 
+type HeroProps = {
+  lang: Locale;
+  dictionary: Dictionary['home']['hero'];
+}
+
 export function Hero({ lang, dictionary }: HeroProps) {
   return (
     <section className="w-full py-20 lg:py-28 bg-background">
