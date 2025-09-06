@@ -1,0 +1,101 @@
+
+{
+  "header": {
+    "subtitle": "Your Financial Guide",
+    "nav": {
+      "home": "Home",
+      "calculators": "Calculators",
+      "guides": "Guides",
+      "blog": "Blog"
+    },
+    "cta": "Try Calculator"
+  },
+  "footer": {
+    "about": {
+      "title": "About BharatSaver",
+      "description": "Smarter Savings for Every Indian. Free calculators, guides and tools to plan your financial future."
+    },
+    "calculators": {
+      "title": "Calculators"
+    },
+    "resources": {
+      "title": "Resources",
+      "guides": "Guides",
+      "blog": "Blog"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "copyright": "© 2025 BharatSaver. All Rights Reserved."
+  },
+  "home": {
+    "hero": {
+      "accent": "Free • Trusted",
+      "title": "Smarter Savings for Every Indian",
+      "subtitle": "Free calculators, guides and tools to plan your financial future — in English and regional languages.",
+      "cta_primary": "Try PPF Calculator",
+      "cta_secondary": "SSY Calculator",
+      "stats": {
+        "ppf": { "title": "PPF", "value": "High ROI" },
+        "ssy": { "title": "SSY", "value": "Tax Saved" },
+        "nps": { "title": "NPS", "value": "Retirement Ready" },
+        "loan": { "title": "Loan", "value": "EMI Optimizer" }
+      }
+    },
+    "popular_tools": {
+      "title": "Popular Tools"
+    },
+    "latest_guides": {
+      "title": "Latest Guides",
+      "guide1_title": "PPF vs FD – Which is better?",
+      "guide2_title": "How to use SSY for child education",
+      "guide3_title": "Tax regime comparison"
+    }
+  },
+  "scheme_selector": {
+    "title": "Investment Scheme Selector",
+    "description": "Answer a few questions to find the best investment scheme for your needs.",
+    "age_label": "Your Age",
+    "income_label": "Current Annual Income (in ₹)",
+    "risk_label": "Your Risk Tolerance",
+    "risk_low": "Low",
+    "risk_medium": "Medium",
+    "risk_high": "High",
+    "horizon_label": "Investment Horizon",
+    "horizon_short": "Short-term (< 5 years)",
+    "horizon_medium": "Medium-term (5-10 years)",
+    "horizon_long": "Long-term (> 10 years)",
+    "goal_label": "Primary Investment Goal",
+    "goal_placeholder": "e.g., Retirement, Child's education",
+    "submit_button": "Find my Scheme",
+    "loading": "Finding the best scheme for you...",
+    "result_title": "Your Recommended Scheme",
+    "result_reasoning": "Reasoning"
+  },
+  "ppf_calculator": {
+    "title": "PPF Calculator",
+    "description": "Calculate the returns on your Public Provident Fund (PPF) investment with our easy-to-use calculator.",
+    "annual_investment_label": "Annual Investment (₹)",
+    "annual_investment_placeholder": "e.g., 150000",
+    "tenure_label": "Investment Tenure (Years)",
+    "interest_rate_label": "Annual Interest Rate (%)",
+    "interest_rate_placeholder": "e.g., 7.1",
+    "calculate_button": "Calculate Projection",
+    "loading": "Calculating...",
+    "results_title": "Your PPF Projection",
+    "maturity_value": "Maturity Value",
+    "total_investment": "Total Investment",
+    "total_interest": "Total Interest Earned",
+    "view_chart": "Chart",
+    "view_table": "Table",
+    "yearly_breakdown_title": "Year-wise Breakdown",
+    "export_csv": "Export as CSV",
+    "table_year": "Year",
+    "table_opening_balance": "Opening Balance",
+    "table_amount_invested": "Amount Invested",
+    "table_interest_earned": "Interest Earned",
+    "table_closing_balance": "Closing Balance"
+  }
+}

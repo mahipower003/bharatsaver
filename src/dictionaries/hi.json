@@ -1,0 +1,98 @@
+
+{
+  "header": {
+    "subtitle": "आपका वित्तीय मार्गदर्शक",
+    "nav": {
+      "home": "होम",
+      "calculators": "कैलकुलेटर",
+      "guides": "गाइड",
+      "blog": "ब्लॉग"
+    },
+    "cta": "कैलकुलेटर आज़माएँ"
+  },
+  "footer": {
+    "about": {
+      "title": "भारतसेवर के बारे में",
+      "description": "हर भारतीय के लिए स्मार्ट बचत। अपने वित्तीय भविष्य की योजना बनाने के लिए मुफ्त कैलकुलेटर, गाइड और उपकरण।"
+    },
+    "calculators": {
+      "title": "कैलकुलेटर"
+    },
+    "resources": {
+      "title": "संसाधन",
+      "guides": "गाइड",
+      "blog": "ब्लॉग"
+    },
+    "legal": {
+      "title": "कानूनी",
+      "privacy": "गोपनीयता नीति",
+      "terms": "सेवा की शर्तें"
+    },
+    "copyright": "© 2025 भारतसेवर। सर्वाधिकार सुरक्षित।"
+  },
+  "home": {
+    "hero": {
+      "accent": "नि:शुल्क • विश्वसनीय",
+      "title": "हर भारतीय के लिए स्मार्ट बचत",
+      "subtitle": "अपने वित्तीय भविष्य की योजना बनाने के लिए मुफ्त कैलकुलेटर, गाइड और उपकरण - अंग्रेजी और क्षेत्रीय भाषाओं में।",
+      "cta_primary": "PPF कैलकुलेटर आज़माएँ",
+      "cta_secondary": "SSY कैलकुलेटर",
+      "stats": {
+        "ppf": { "title": "PPF", "value": "उच्च ROI" },
+        "ssy": { "title": "SSY", "value": "कर बचत" },
+        "nps": { "title": "NPS", "value": "सेवानिवृत्ति तैयार" },
+        "loan": { "title": "Loan", "value": "EMI ऑप्टिमाइज़र" }
+      }
+    },
+    "popular_tools": {
+      "title": "लोकप्रिय उपकरण"
+    },
+    "latest_guides": {
+      "title": "नवीनतम गाइड"
+    }
+  },
+  "scheme_selector": {
+    "title": "निवेश योजना चयनकर्ता",
+    "description": "अपनी ज़रूरतों के लिए सबसे अच्छी निवेश योजना खोजने के लिए कुछ सवालों के जवाब दें।",
+    "age_label": "आपकी उम्र",
+    "income_label": "वर्तमान वार्षिक आय (₹ में)",
+    "risk_label": "आपकी जोखिम सहनशीलता",
+    "risk_low": "कम",
+    "risk_medium": "मध्यम",
+    "risk_high": "उच्च",
+    "horizon_label": "निवेश क्षितिज",
+    "horizon_short": "अल्पावधि (< 5 वर्ष)",
+    "horizon_medium": "मध्यावधि (5-10 वर्ष)",
+    "horizon_long": "दीर्घावधि (> 10 वर्ष)",
+    "goal_label": "प्राथमिक निवेश लक्ष्य",
+    "goal_placeholder": "जैसे, सेवानिवृत्ति, बच्चे की शिक्षा",
+    "submit_button": "मेरी योजना खोजें",
+    "loading": "आपके लिए सबसे अच्छी योजना ढूंढी जा रही है...",
+    "result_title": "आपकी अनुशंसित योजना",
+    "result_reasoning": "तर्क"
+  },
+  "ppf_calculator": {
+    "title": "पीपीएफ कैलकुलेटर",
+    "description": "हमारे उपयोग में आसान कैलकुलेटर के साथ अपने सार्वजनिक भविष्य निधि (पीपीएफ) निवेश पर रिटर्न की गणना करें।",
+    "annual_investment_label": "वार्षिक निवेश (₹)",
+    "annual_investment_placeholder": "उदा. 150000",
+    "tenure_label": "निवेश अवधि (वर्ष)",
+    "interest_rate_label": "वार्षिक ब्याज दर (%)",
+    "interest_rate_placeholder": "उदा. 7.1",
+    "calculate_button": "प्रोजेक्शन की गणना करें",
+    "loading": "गणना हो रही है...",
+    "results_title": "आपकी पीपीएफ प्रक्षेपण",
+    "maturity_value": "परिपक्वता मूल्य",
+    "total_investment": "कुल निवेश",
+    "total_interest": "कुल अर्जित ब्याज",
+    "view_chart": "चार्ट",
+    "view_table": "तालिका",
+    "yearly_breakdown_title": "वर्ष-वार विवरण",
+    "export_csv": "CSV के रूप में निर्यात करें",
+    "table_year": "वर्ष",
+    "table_opening_balance": "प्रारंभिक शेष",
+    "table_amount_invested": "निवेश की गई राशि",
+    "table_interest_earned": "अर्जित ब्याज",
+    "table_closing_balance": "अंतिम शेष"
+  }
+}

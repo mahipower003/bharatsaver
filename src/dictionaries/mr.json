@@ -1,0 +1,98 @@
+
+{
+  "header": {
+    "subtitle": "तुमचे आर्थिक मार्गदर्शक",
+    "nav": {
+      "home": "होम",
+      "calculators": "कॅल्क्युलेटर",
+      "guides": "मार्गदर्शक",
+      "blog": "ब्लॉग"
+    },
+    "cta": "कॅल्क्युलेटर वापरून पहा"
+  },
+  "footer": {
+    "about": {
+      "title": "भारतसेवर बद्दल",
+      "description": "प्रत्येक भारतीयासाठी स्मार्ट बचत. तुमच्या आर्थिक भविष्याचे नियोजन करण्यासाठी मोफत कॅल्क्युलेटर, मार्गदर्शक आणि साधने."
+    },
+    "calculators": {
+      "title": "कॅल्क्युलेटर"
+    },
+    "resources": {
+      "title": " संसाधने",
+      "guides": "मार्गदर्शक",
+      "blog": "ब्लॉग"
+    },
+    "legal": {
+      "title": "कायदेशीर",
+      "privacy": "गोपनीयता धोरण",
+      "terms": "सेवा अटी"
+    },
+    "copyright": "© 2025 भारतसेवर. सर्व हक्क राखीव."
+  },
+  "home": {
+    "hero": {
+      "accent": "विनामूल्य • विश्वसनीय",
+      "title": "प्रत्येक भारतीयासाठी स्मार्ट बचत",
+      "subtitle": "तुमच्या आर्थिक भविष्याचे नियोजन करण्यासाठी मोफत कॅल्क्युलेटर, मार्गदर्शक आणि साधने — इंग्रजी आणि प्रादेशिक भाषांमध्ये.",
+      "cta_primary": "PPF कॅल्क्युलेटर वापरून पहा",
+      "cta_secondary": "SSY कॅल्क्युलेटर",
+      "stats": {
+        "ppf": { "title": "PPF", "value": "उच्च ROI" },
+        "ssy": { "title": "SSY", "value": "कर वाचवले" },
+        "nps": { "title": "NPS", "value": "सेवानिवृत्तीसाठी सज्ज" },
+        "loan": { "title": "Loan", "value": "EMI ऑप्टिमायझर" }
+      }
+    },
+    "popular_tools": {
+      "title": "लोकप्रिय साधने"
+    },
+    "latest_guides": {
+      "title": "नवीनतम मार्गदर्शक"
+    }
+  },
+  "scheme_selector": {
+    "title": "गुंतवणूक योजना निवडक",
+    "description": "तुमच्या गरजांसाठी सर्वोत्तम गुंतवणूक योजना शोधण्यासाठी काही प्रश्नांची उत्तरे द्या.",
+    "age_label": "तुमचे वय",
+    "income_label": "सध्याचे वार्षिक उत्पन्न (₹ मध्ये)",
+    "risk_label": "तुमची जोखीम सहनशीलता",
+    "risk_low": "कमी",
+    "risk_medium": "मध्यम",
+    "risk_high": "उच्च",
+    "horizon_label": "गुंतवणूक क्षितिज",
+    "horizon_short": "अल्प-मुदती (< 5 वर्षे)",
+    "horizon_medium": "मध्यम-मुदती (5-10 वर्षे)",
+    "horizon_long": "दीर्घ-मुदती (> 10 वर्षे)",
+    "goal_label": "प्राथमिक गुंतवणूक ध्येय",
+    "goal_placeholder": "उदा. सेवानिवृत्ती, मुलाचे शिक्षण",
+    "submit_button": "माझी योजना शोधा",
+    "loading": "तुमच्यासाठी सर्वोत्तम योजना शोधत आहे...",
+    "result_title": "तुमची शिफारस केलेली योजना",
+    "result_reasoning": "तर्क"
+  },
+  "ppf_calculator": {
+    "title": "PPF कॅल्क्युलेटर",
+    "description": "आमच्या वापरण्यास सोप्या कॅल्क्युलेटरसह तुमच्या सार्वजनिक भविष्य निर्वाह निधी (PPF) गुंतवणुकीवरील परताव्याची गणना करा.",
+    "annual_investment_label": "वार्षिक गुंतवणूक (₹)",
+    "annual_investment_placeholder": "उदा. 150000",
+    "tenure_label": "गुंतवणूक कालावधी (वर्षे)",
+    "interest_rate_label": "वार्षिक व्याज दर (%)",
+    "interest_rate_placeholder": "उदा. 7.1",
+    "calculate_button": "प्रोजेक्शनची गणना करा",
+    "loading": "गणना करत आहे...",
+    "results_title": "तुमचे PPF प्रोजेक्शन",
+    "maturity_value": "मॅच्युरिटी मूल्य",
+    "total_investment": "एकूण गुंतवणूक",
+    "total_interest": "एकूण मिळवलेले व्याज",
+    "view_chart": "चार्ट",
+    "view_table": "तक्ता",
+    "yearly_breakdown_title": "वर्ष-निहाय तपशील",
+    "export_csv": "CSV म्हणून निर्यात करा",
+    "table_year": "वर्ष",
+    "table_opening_balance": "सुरुवातीची शिल्लक",
+    "table_amount_invested": "गुंतवलेली रक्कम",
+    "table_interest_earned": "मिळालेले व्याज",
+    "table_closing_balance": "अंतिम शिल्लक"
+  }
+}
