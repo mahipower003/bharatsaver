@@ -49,11 +49,11 @@ export default async function AboutPage({ params }: { params: { lang: Locale }})
             <div>
                 <Image 
                     src="https://picsum.photos/600/400" 
-                    alt="A team of financial experts collaborating."
+                    alt="A team of financial experts collaborating in a modern office."
                     width={600}
                     height={400}
                     className="rounded-lg shadow-xl"
-                    data-ai-hint="team collaboration"
+                    data-ai-hint="finance office"
                 />
             </div>
         </div>

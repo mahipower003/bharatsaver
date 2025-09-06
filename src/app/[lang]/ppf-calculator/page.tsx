@@ -25,8 +25,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         siteName: 'BharatSaver',
         images: [{ 
           url: `/hero-image.png`,
-          width: 960, 
-          height: 640, 
+          width: 1200, 
+          height: 630, 
           alt: 'BharatSaver PPF Calculator' 
         }],
         locale: 'en_IN',

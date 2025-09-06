@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
@@ -33,8 +34,8 @@ export const metadata: Metadata = {
     siteName: 'BharatSaver',
     images: [{ 
       url: `/hero-image.png`, 
-      width: 960, 
-      height: 640, 
+      width: 1200, 
+      height: 630, 
       alt: 'BharatSaver Hero Image' 
     }],
     locale: 'en_IN',
