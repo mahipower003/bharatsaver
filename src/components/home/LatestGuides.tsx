@@ -16,7 +16,7 @@ export function LatestGuides({ dictionary }: LatestGuidesProps) {
       subtitle: dictionary.guide1_subtitle,
       link: '/guides',
       image: '/images/guide-1.png',
-      alt: 'A person reviewing financial documents, representing a guide on comparing PPF and FD.',
+      alt: 'A person reviewing financial documents to compare PPF and FD investment options.',
       hint: 'finance documents'
     },
     {
@@ -24,7 +24,7 @@ export function LatestGuides({ dictionary }: LatestGuidesProps) {
       subtitle: dictionary.guide2_subtitle,
       link: '/guides',
       image: '/images/guide-2.png',
-      alt: 'A happy child with graduation cap, symbolizing planning for education with SSY.',
+      alt: 'A happy young girl wearing a graduation cap, symbolizing planning for education with Sukanya Samriddhi Yojana.',
       hint: 'child education'
     },
     {
@@ -32,7 +32,7 @@ export function LatestGuides({ dictionary }: LatestGuidesProps) {
       subtitle: dictionary.guide3_subtitle,
       link: '/guides',
       image: '/images/guide-3.png',
-      alt: 'A comparison chart showing two different tax regimes side-by-side.',
+      alt: 'A comparison chart showing the old and new tax regimes side-by-side to help with financial decisions.',
       hint: 'tax comparison'
     },
   ];
