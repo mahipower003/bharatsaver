@@ -58,11 +58,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: { lang: string };
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${inter.variable} ${noto_sans.variable}`}>
+    <html lang={params.lang ?? i18nConfig.defaultLocale} suppressHydrationWarning className={`${inter.variable} ${noto_sans.variable}`}>
       <body>
         {children}
         <Toaster />
