@@ -21,17 +21,17 @@ type HeroProps = {
 
 export function Hero({ lang, dictionary }: HeroProps) {
   return (
-    <section className="w-full py-20 lg:py-28 bg-background">
+    <section className="w-full bg-background py-20 lg:py-28">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid gap-8 md:grid-cols-2 md:gap-16 items-center">
+        <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-16">
           <div className="space-y-6">
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl font-headline">
+            <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
               {dictionary.title}
             </h1>
             <p className="max-w-xl text-muted-foreground md:text-xl">
               {dictionary.subtitle}
             </p>
-            <div className="flex flex-col gap-4 sm:flex-row items-center">
+            <div className="flex flex-col items-center gap-4 sm:flex-row">
               <Button asChild size="lg">
                 <Link href={`/${lang}/ppf-calculator`}>{dictionary.cta_primary}</Link>
               </Button>
@@ -43,13 +43,13 @@ export function Hero({ lang, dictionary }: HeroProps) {
             </div>
           </div>
           <div className="relative">
-            <Card className="overflow-hidden shadow-lg rounded-lg border-2">
+            <Card className="overflow-hidden rounded-lg border-2 shadow-lg">
               <Image
-                src="https://picsum.photos/960/640"
+                src="/hero-image.png"
                 alt="Illustration of a family planning their finances with charts and graphs"
                 width={960}
                 height={640}
-                className="w-full h-auto"
+                className="h-auto w-full"
                 priority
                 data-ai-hint="family finance"
               />
@@ -57,15 +57,15 @@ export function Hero({ lang, dictionary }: HeroProps) {
           </div>
         </div>
         <div className="mt-24">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
                 {stats.map((stat) => (
                     <div key={stat.key} className="flex items-start gap-4">
-                        <div className="p-3 bg-primary/10 rounded-lg">
+                        <div className="rounded-lg bg-primary/10 p-3">
                             <stat.icon className="h-8 w-8 text-primary" />
                         </div>
                         <div>
                             <p className="text-lg font-semibold">{dictionary.stats[stat.key as keyof typeof dictionary.stats].title}</p>
-                            <p className="text-sm text-muted-foreground mt-1">{dictionary.stats[stat.key as keyof typeof dictionary.stats].description}</p>
+                            <p className="mt-1 text-sm text-muted-foreground">{dictionary.stats[stat.key as keyof typeof dictionary.stats].description}</p>
                         </div>
                     </div>
                 ))}
