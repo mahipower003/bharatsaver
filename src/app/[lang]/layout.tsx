@@ -5,17 +5,17 @@ import { getDictionary } from '@/lib/dictionaries';
 
 export default async function LocaleLayout({
   children,
-  params: { lang },
+  params,
 }: {
   children: React.ReactNode;
   params: { lang: Locale };
 }) {
-  const dictionary = await getDictionary(lang);
+  const dictionary = await getDictionary(params.lang);
   return (
     <div className="flex min-h-screen flex-col">
-      <Header lang={lang} dictionary={dictionary.header} />
+      <Header lang={params.lang} dictionary={dictionary.header} />
       <main className="flex-grow">{children}</main>
-      <Footer lang={lang} dictionary={dictionary.footer} />
+      <Footer lang={params.lang} dictionary={dictionary.footer} />
     </div>
   );
 }

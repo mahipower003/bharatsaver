@@ -6,16 +6,16 @@ export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
 }
 
-export async function generateMetadata({ params: { lang } }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(lang);
+export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
+  const dictionary = await getDictionary(params.lang);
   return {
     title: dictionary.loan_optimization_calculator.meta_title,
     description: dictionary.loan_optimization_calculator.meta_description,
   };
 }
 
-export default async function LoanOptimizerPage({ params: { lang } }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(lang);
+export default async function LoanOptimizerPage({ params }: { params: { lang: Locale }}) {
+  const dictionary = await getDictionary(params.lang);
   
   return (
     <div className="container mx-auto px-4 md:px-6 py-12">

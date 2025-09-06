@@ -7,8 +7,8 @@ export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
 }
 
-export async function generateMetadata({ params: { lang } }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(lang);
+export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
+  const dictionary = await getDictionary(params.lang);
   return {
     title: dictionary.scheme_selector.meta_title,
     description: dictionary.scheme_selector.meta_description,
@@ -16,8 +16,8 @@ export async function generateMetadata({ params: { lang } }: { params: { lang: L
 }
 
 
-export default async function SchemeSelectorPage({ params: { lang } }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(lang);
+export default async function SchemeSelectorPage({ params }: { params: { lang: Locale }}) {
+  const dictionary = await getDictionary(params.lang);
   return (
     <div className="container mx-auto px-4 md:px-6 py-12">
         <SchemeSelector dictionary={dictionary.scheme_selector}/>

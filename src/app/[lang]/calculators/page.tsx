@@ -7,19 +7,19 @@ export async function generateStaticParams() {
   return i18nConfig.locales.map(locale => ({ lang: locale }));
 }
 
-export async function generateMetadata({ params: { lang } }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(lang);
+export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
+  const dictionary = await getDictionary(params.lang);
   return {
     title: dictionary.calculators_page.meta_title,
     description: dictionary.calculators_page.meta_description,
   };
 }
 
-export default async function CalculatorsPage({ params: { lang } }: { params: { lang: Locale } }) {
-  const dictionary = await getDictionary(lang);
+export default async function CalculatorsPage({ params }: { params: { lang: Locale } }) {
+  const dictionary = await getDictionary(params.lang);
   return (
     <div className="py-12">
-      <PopularTools lang={lang} dictionary={dictionary.home.popular_tools} />
+      <PopularTools lang={params.lang} dictionary={dictionary.home.popular_tools} />
     </div>
   );
 }

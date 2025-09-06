@@ -4,13 +4,13 @@ import { Hero } from '@/components/home/Hero';
 import { PopularTools } from '@/components/home/PopularTools';
 import { LatestGuides } from '@/components/home/LatestGuides';
 
-export default async function Home({ params: { lang } }: { params: { lang: Locale } }) {
-  const dictionary = await getDictionary(lang);
+export default async function Home({ params }: { params: { lang: Locale } }) {
+  const dictionary = await getDictionary(params.lang);
 
   return (
     <>
-      <Hero lang={lang} dictionary={dictionary.home.hero} />
-      <PopularTools lang={lang} dictionary={dictionary.home.popular_tools} />
+      <Hero lang={params.lang} dictionary={dictionary.home.hero} />
+      <PopularTools lang={params.lang} dictionary={dictionary.home.popular_tools} />
       <LatestGuides dictionary={dictionary.home.latest_guides}/>
     </>
   );
