@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Locale } from '@/lib/i18n-config';
 import type { Dictionary } from '@/types';
 import { Twitter, Facebook, Linkedin } from 'lucide-react';
+import { Logo } from './Logo';
 
 type FooterProps = {
   lang: Locale;
@@ -9,33 +10,55 @@ type FooterProps = {
 };
 
 export function Footer({ lang, dictionary }: FooterProps) {
-  const allLinks = [
-    { title: 'Home', href: `/${lang}` },
-    { title: 'Guides', href: `/${lang}/guides` },
-    { title: 'Blog', href: `/${lang}/blog` },
-    ...dictionary.calculators.links,
-    ...dictionary.resources.links,
-  ];
-
   return (
     <footer className="bg-background border-t">
-      <div className="container mx-auto px-4 md:px-6 py-6">
-        <div className="flex flex-wrap justify-center md:justify-between items-center gap-4 md:gap-8 text-sm text-muted-foreground">
-          <p className="text-center md:text-left">{dictionary.copyright}</p>
-          <nav className="flex flex-wrap justify-center gap-4 md:gap-6">
-            {allLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="hover:text-primary">
-                {link.title}
-              </Link>
-            ))}
-          </nav>
-          <div className="flex gap-4 items-center">
-            <Link href="#" aria-label="Twitter"><Twitter className="h-5 w-5 hover:text-primary" /></Link>
-            <Link href="#" aria-label="Facebook"><Facebook className="h-5 w-5 hover:text-primary" /></Link>
-            <Link href="#" aria-label="Linkedin"><Linkedin className="h-5 w-5 hover:text-primary" /></Link>
+      <div className="container mx-auto px-4 md:px-6 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="space-y-4">
+            <Link href={`/${lang}`} className="flex items-center gap-2">
+                <Logo className="h-8 w-8" />
+                <span className="font-bold text-2xl text-foreground">BharatSaver</span>
+            </Link>
+            <p className="text-muted-foreground text-sm">
+                {dictionary.about.description}
+            </p>
           </div>
-          <p className="w-full text-center text-xs mt-4 md:hidden">{dictionary.disclaimer}</p>
-          <p className="hidden md:block text-right max-w-md">{dictionary.disclaimer}</p>
+          <div>
+            <h3 className="font-semibold mb-4">{dictionary.calculators.title}</h3>
+            <ul className="space-y-2">
+              {dictionary.calculators.links.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary">
+                    {link.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold mb-4">{dictionary.resources.title}</h3>
+            <ul className="space-y-2">
+                {dictionary.resources.links.map((link) => (
+                    <li key={link.href}>
+                    <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary">
+                        {link.title}
+                    </Link>
+                    </li>
+                ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold mb-4">{dictionary.contact.title}</h3>
+            <div className="flex gap-4 items-center">
+                <Link href="#" aria-label="Twitter"><Twitter className="h-5 w-5 text-muted-foreground hover:text-primary" /></Link>
+                <Link href="#" aria-label="Facebook"><Facebook className="h-5 w-5 text-muted-foreground hover:text-primary" /></Link>
+                <Link href="#" aria-label="Linkedin"><Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary" /></Link>
+            </div>
+          </div>
+        </div>
+        <div className="border-t mt-8 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground">
+          <p>{dictionary.copyright}</p>
+          <p className="mt-4 md:mt-0 text-center md:text-right max-w-md">{dictionary.disclaimer}</p>
         </div>
       </div>
     </footer>
