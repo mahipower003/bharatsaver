@@ -9,6 +9,16 @@ type FooterProps = {
 };
 
 export function Footer({ lang, dictionary }: FooterProps) {
+  const getLinkUrl = (href: string) => {
+    if (href.startsWith('/sitemap.xml')) {
+      return href;
+    }
+    if (href.startsWith('/')) {
+      return `/${lang}${href}`;
+    }
+    return href;
+  };
+
   return (
     <footer className="bg-secondary/50 border-t">
       <div className="container mx-auto px-4 md:px-6 py-12">
@@ -18,7 +28,7 @@ export function Footer({ lang, dictionary }: FooterProps) {
             <ul className="space-y-2">
               {dictionary.about.links.map((link) => (
                 <li key={link.href}>
-                  <Link href={`/${lang}${link.href}`} className="text-sm text-muted-foreground hover:text-primary">
+                  <Link href={getLinkUrl(link.href)} className="text-sm text-muted-foreground hover:text-primary">
                     {link.title}
                   </Link>
                 </li>
@@ -30,7 +40,7 @@ export function Footer({ lang, dictionary }: FooterProps) {
             <ul className="space-y-2">
               {dictionary.calculators.links.map((link) => (
                 <li key={link.href}>
-                  <Link href={`/${lang}${link.href}`} className="text-sm text-muted-foreground hover:text-primary">
+                  <Link href={getLinkUrl(link.href)} className="text-sm text-muted-foreground hover:text-primary">
                     {link.title}
                   </Link>
                 </li>
@@ -42,7 +52,7 @@ export function Footer({ lang, dictionary }: FooterProps) {
             <ul className="space-y-2">
                 {dictionary.resources.links.map((link) => (
                     <li key={link.href}>
-                    <Link href={`${link.href.startsWith('/') ? `/${lang}`: ''}${link.href}`} className="text-sm text-muted-foreground hover:text-primary" target={link.href.startsWith('/') ? '' : '_blank'}>
+                    <Link href={getLinkUrl(link.href)} className="text-sm text-muted-foreground hover:text-primary" target={link.href.startsWith('/') ? '' : '_blank'}>
                         {link.title}
                     </Link>
                     </li>

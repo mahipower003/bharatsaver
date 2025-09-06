@@ -30,8 +30,7 @@
       "title": "வளங்கள்",
       "links": [
         { "title": "விதிமுறைகளும் நிபந்தனைகளும்", "href": "/terms" },
-        { "title": "தளவரைபடம்", "href": "/sitemap.xml" },
-        { "title": "தொடர்புக்கு", "href": "/contact" }
+        { "title": "தளவரைபடம்", "href": "/sitemap.xml" }
       ]
     },
     "contact": {

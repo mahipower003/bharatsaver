@@ -30,8 +30,7 @@
       "title": " संसाधने",
       "links": [
         { "title": "अटी आणि नियम", "href": "/terms" },
-        { "title": "साइटमॅप", "href": "/sitemap.xml" },
-        { "title": "संपर्क", "href": "/contact" }
+        { "title": "साइटमॅप", "href": "/sitemap.xml" }
       ]
     },
     "contact": {

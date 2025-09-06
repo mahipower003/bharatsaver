@@ -30,8 +30,7 @@
       "title": "Resources",
       "links": [
         { "title": "Terms & Conditions", "href": "/terms" },
-        { "title": "Sitemap", "href": "/sitemap.xml" },
-        { "title": "Contact", "href": "/contact" }
+        { "title": "Sitemap", "href": "/sitemap.xml" }
       ]
     },
     "contact": {
