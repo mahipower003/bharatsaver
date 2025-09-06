@@ -70,26 +70,26 @@
     }
   },
   "calculators_page": {
-    "meta_title": "वित्तीय कैलकुलेटर | BharatSaver",
-    "meta_description": "आपके निवेश, बचत और करों की योजना बनाने में मदद करने के लिए वित्तीय कैलकुलेटर का एक व्यापक सूट।",
+    "meta_title": "भारतीय योजनाओं के लिए वित्तीय कैलकुलेटर | BharatSaver",
+    "meta_description": "PPF, NPS, SSY, और अधिक के लिए मुफ्त वित्तीय कैलकुलेटर का एक व्यापक सूट। भारत में अपने निवेश, बचत और करों की योजना बनाएं।",
     "h1": "वित्तीय कैलकुलेटर"
   },
   "guides_page": {
-    "meta_title": "वित्तीय गाइड | BharatSaver",
-    "meta_description": "भारत में वित्तीय नियोजन, निवेश और बचत योजनाओं पर गहन गाइड।",
+    "meta_title": "भारतीय निवेशकों के लिए वित्तीय गाइड | BharatSaver",
+    "meta_description": "भारतीयों के लिए वित्तीय नियोजन, निवेश योजनाओं (PPF, NPS), और बचत रणनीतियों पर गहन गाइड।",
     "h1": "वित्तीय गाइड"
   },
   "blog_page": {
-    "meta_title": "वित्त ब्लॉग | BharatSaver",
+    "meta_title": "भारत के लिए व्यक्तिगत वित्त ब्लॉग | BharatSaver",
     "meta_description": "भारत में व्यक्तिगत वित्त, कर योजना और निवेश रणनीतियों पर नवीनतम लेख और अपडेट।",
     "h1": "नवीनतम ब्लॉग पोस्ट"
   },
   "ppf_calculator": {
     "title": "पीपीएफ कैलकुलेटर",
     "description": "हमारे उपयोग में आसान कैलकुलेटर के साथ अपने सार्वजनिक भविष्य निधि (पीपीएफ) निवेश पर रिटर्न की गणना करें।",
-    "meta_title": "पीपीएफ कैलकुलेटर 2025 – परिपक्वता और ब्याज की गणना | BharatSaver",
-    "meta_description": "नवीनतम ब्याज दरों के साथ पीपीएफ कैलकुलेटर 2025 का उपयोग करें और परिपक्व राशि, वार्षिक रिटर्न व टैक्स बचत जानें।",
-    "h1": "पीपीएफ कैलकुलेटर 2025 – परिपक्वता और रिटर्न जानें",
+    "meta_title": "पीपीएफ कैलकुलेटर 2025 – परिपक्वता और ब्याज की गणना करें | BharatSaver",
+    "meta_description": "नवीनतम ब्याज दरों के साथ हमारे मुफ्त पीपीएफ कैलकुलेटर का उपयोग करके अपनी परिपक्वता राशि, वार्षिक रिटर्न और अपने पीपीएफ निवेश पर कर बचत का अनुमान लगाएं।",
+    "h1": "पीपीएफ कैलकुलेटर 2025 – अपनी परिपक्वता और रिटर्न जानें",
     "annual_investment_label": "वार्षिक निवेश (₹)",
     "annual_investment_placeholder": "उदा. 150000",
     "tenure_label": "निवेश अवधि (वर्ष)",
@@ -134,56 +134,56 @@
     ]
   },
   "ssy_calculator": {
-    "meta_title": "Sukanya Samriddhi Yojana (SSY) Calculator – कैलकुलेटर | BharatSaver",
-    "meta_description": "Sukanya Samriddhi Yojana (SSY) Calculator कैलकुलेटर से परिपक्वता राशि, ब्याज और टैक्स लाभ की गणना करें।",
-    "h1": "Sukanya Samriddhi Yojana (SSY) Calculator कैलकुलेटर"
+    "meta_title": "SSY कैलकुलेटर - सुकन्या समृद्धि योजना | BharatSaver",
+    "meta_description": "अपनी बेटी के भविष्य के लिए रिटर्न, परिपक्वता राशि और कर लाभ की गणना करने के लिए हमारे मुफ्त सुकन्या समृद्धि योजना (SSY) कैलकुलेटर का उपयोग करें।",
+    "h1": "सुकन्या समृद्धि योजना (SSY) कैलकुलेटर"
   },
   "nps_calculator": {
-    "meta_title": "NPS Calculator (National Pension System) – कैलकुलेटर | BharatSaver",
-    "meta_description": "NPS Calculator (National Pension System) कैलकुलेटर से परिपक्वता राशि, ब्याज और टैक्स लाभ की गणना करें।",
-    "h1": "NPS Calculator (National Pension System) कैलकुलेटर"
+    "meta_title": "NPS कैलकुलेटर - राष्ट्रीय पेंशन प्रणाली | BharatSaver",
+    "meta_description": "भारत में अपनी सेवानिवृत्ति कोष, मासिक पेंशन और कर लाभ का अनुमान लगाने के लिए हमारे मुफ्त राष्ट्रीय पेंशन प्रणाली (NPS) कैलकुलेटर का उपयोग करें।",
+    "h1": "NPS (राष्ट्रीय पेंशन प्रणाली) कैलकुलेटर"
   },
   "apy_calculator": {
-    "meta_title": "Atal Pension Yojana (APY) Calculator – कैलकुलेटर | BharatSaver",
-    "meta_description": "Atal Pension Yojana (APY) Calculator कैलकुलेटर से परिपक्वता राशि, ब्याज और टैक्स लाभ की गणना करें।",
-    "h1": "Atal Pension Yojana (APY) Calculator कैलकुलेटर"
+    "meta_title": "APY कैलकुलेटर - अटल पेंशन योजना | BharatSaver",
+    "meta_description": "हमारा मुफ्त अटल पेंशन योजना (APY) कैलकुलेटर आपको वांछित पेंशन राशि के लिए आवश्यक मासिक योगदान खोजने में मदद करता है।",
+    "h1": "अटल पेंशन योजना (APY) कैलकुलेटर"
   },
   "fd_vs_ppf_calculator": {
-    "meta_title": "FD vs PPF Returns Calculator – कैलकुलेटर | BharatSaver",
-    "meta_description": "FD vs PPF Returns Calculator कैलकुलेटर से परिपक्वता राशि, ब्याज और टैक्स लाभ की गणना करें।",
-    "h1": "FD vs PPF Returns Calculator कैलकुलेटर"
+    "meta_title": "FD vs PPF रिटर्न्स कैलकुलेटर | BharatSaver",
+    "meta_description": "हमारे कैलकुलेटर के साथ फिक्स्ड डिपॉजिट (FD) एकमुश्त निवेश बनाम आवर्ती सार्वजनिक भविष्य निधि (PPF) योगदान पर रिटर्न की तुलना करें।",
+    "h1": "FD vs PPF रिटर्न्स कैलकुलेटर"
   },
   "tax_regime_calculator": {
-    "meta_title": "Tax Regime Calculator (Old vs New) – कैलकुलेटर | BharatSaver",
-    "meta_description": "Tax Regime Calculator (Old vs New) कैलकुलेटर से परिपक्वता राशि, ब्याज और टैक्स लाभ की गणना करें।",
-    "h1": "Tax Regime Calculator (Old vs New) कैलकुलेटर"
+    "meta_title": "पुरानी बनाम नई कर व्यवस्था कैलकुलेटर | BharatSaver",
+    "meta_description": "भारत में पुरानी और नई कर व्यवस्थाओं के तहत अपनी आयकर देयता की तुलना करने और आपके लिए कौन सा बेहतर है, यह जानने के लिए हमारे मुफ्त कैलकुलेटर का उपयोग करें।",
+    "h1": "पुरानी बनाम नई कर व्यवस्था कैलकुलेटर"
   },
   "retirement_corpus_calculator": {
-    "meta_title": "Retirement Corpus Calculator – कैलकुलेटर | BharatSaver",
-    "meta_description": "Retirement Corpus Calculator कैलकुलेटर से परिपक्वता राशि, ब्याज और टैक्स लाभ की गणना करें।",
-    "h1": "Retirement Corpus Calculator कैलकुलेटर"
+    "meta_title": "सेवानिवृत्ति कोष कैलकुलेटर | BharatSaver",
+    "meta_description": "अपने वित्तीय लक्ष्यों के आधार पर अपने सेवानिवृत्ति के बाद के जीवन के लिए आवश्यक कुल कोष की गणना करके अपनी सेवानिवृत्ति की योजना बनाएं।",
+    "h1": "सेवानिवृत्ति कोष कैलकुलेटर"
   },
   "loan_optimization_calculator": {
-    "meta_title": "Loan Optimization Calculator – कैलकुलेटर | BharatSaver",
-    "meta_description": "Loan Optimization Calculator कैलकुलेटर से परिपक्वता राशि, ब्याज और टैक्स लाभ की गणना करें।",
-    "h1": "Loan Optimization Calculator कैलकुलेटर"
+    "meta_title": "ऋण अनुकूलक और EMI कैलकुलेटर | BharatSaver",
+    "meta_description": "अपने EMI की गणना करने के लिए हमारे मुफ्त ऋण अनुकूलन कैलकुलेटर का उपयोग करें और देखें कि अतिरिक्त भुगतान आपको अपनी ऋण अवधि कम करने और ब्याज बचाने में कैसे मदद कर सकते हैं।",
+    "h1": "ऋण अनुकूलन कैलकुलेटर"
   },
   "mutual_fund_overlap_calculator": {
-    "meta_title": "Mutual Fund Overlap Calculator – कैलकुलेटर | BharatSaver",
-    "meta_description": "Mutual Fund Overlap Calculator कैलकुलेटर से परिपक्वता राशि, ब्याज और टैक्स लाभ की गणना करें।",
-    "h1": "Mutual Fund Overlap Calculator कैलकुलेटर"
+    "meta_title": "म्यूचुअल फंड ओवरलैप कैलकुलेटर | BharatSaver",
+    "meta_description": "उचित विविधीकरण सुनिश्चित करने के लिए अपने म्यूचुअल फंड में पोर्टफोलियो ओवरलैप की जाँच करें। हमारे मुफ्त म्यूचुअल फंड ओवरलैप कैलकुलेटर का उपयोग करें।",
+    "h1": "म्यूचुअल फंड ओवरलैप कैलकुलेटर"
   },
   "ups_pension_calculator": {
-    "meta_title": "UPS Pension Scheme Calculator – कैलकुलेटर | BharatSaver",
-    "meta_description": "UPS Pension Scheme Calculator कैलकुलेटर से परिपक्वता राशि, ब्याज और टैक्स लाभ की गणना करें।",
-    "h1": "UPS Pension Scheme Calculator कैलकुलेटर"
+    "meta_title": "UPS पेंशन योजना कैलकुलेटर | BharatSaver",
+    "meta_description": "हमारे उपयोग में आसान कैलकुलेटर के साथ यूनिवर्सल पेंशन स्कीम (UPS) के तहत अपनी संभावित पेंशन राशि का अनुमान लगाएं।",
+    "h1": "UPS पेंशन योजना कैलकुलेटर"
   },
   "scheme_selector": {
     "title": "निवेश योजना चयनकर्ता",
     "description": "अपनी ज़रूरतों के लिए सबसे अच्छी निवेश योजना खोजने के लिए कुछ सवालों के जवाब दें।",
-    "meta_title": "Scheme Selector Quiz – कैलकुलेटर | BharatSaver",
-    "meta_description": "Scheme Selector Quiz कैलकुलेटर से परिपक्वता राशि, ब्याज और टैक्स लाभ की गणना करें।",
-    "h1": "Scheme Selector Quiz कैलकुलेटर",
+    "meta_title": "AI निवेश योजना चयनकर्ता प्रश्नोत्तरी | BharatSaver",
+    "meta_description": "आपके लिए सर्वश्रेष्ठ निवेश योजना (PPF, SSY, NPS, APY, FD) के लिए एक सिफारिश प्राप्त करने के लिए हमारी AI-संचालित योजना चयनकर्ता प्रश्नोत्तरी का उपयोग करें।",
+    "h1": "AI योजना चयनकर्ता प्रश्नोत्तरी",
     "age_label": "आपकी उम्र",
     "income_label": "वर्तमान वार्षिक आय (₹ में)",
     "risk_label": "आपकी जोखिम सहनशीलता",
@@ -215,12 +215,12 @@
   },
   "contact_page": {
     "meta_title": "हमसे संपर्क करें | BharatSaver",
-    "meta_description": "भारतसेवर टीम से संपर्क करें।",
+    "meta_description": "किसी भी प्रश्न या प्रतिक्रिया के लिए भारतसेवर टीम से संपर्क करें।",
     "h1": "हमसे संपर्क करें"
   },
   "about_page": {
     "meta_title": "हमारे बारे में | BharatSaver",
-    "meta_description": "वित्तीय ज्ञान के साथ हर भारतीय को सशक्त बनाने के भारतसेवर के मिशन के बारे में और जानें।",
+    "meta_description": "वित्तीय ज्ञान और मुफ्त, उपयोग में आसान उपकरणों के साथ हर भारतीय को सशक्त बनाने के भारतसेवर के मिशन के बारे में और जानें।",
     "h1": "वित्तीय ज्ञान के साथ हर भारतीय को सशक्त बनाना",
     "p1": "हमारा मिशन आपके भविष्य के लिए बेहतर निर्णय लेने में आपकी मदद करने के लिए सुलभ और आसानी से समझ में आने वाले वित्तीय उपकरण और गाइड प्रदान करना है।",
     "h2_1": "हमारी कहानी",

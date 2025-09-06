@@ -70,17 +70,17 @@
     }
   },
   "calculators_page": {
-    "meta_title": "Financial Calculators | BharatSaver",
-    "meta_description": "A comprehensive suite of financial calculators to help you plan your investments, savings, and taxes.",
+    "meta_title": "Financial Calculators for Indian Schemes | BharatSaver",
+    "meta_description": "A comprehensive suite of free financial calculators for PPF, NPS, SSY, and more. Plan your investments, savings, and taxes in India.",
     "h1": "Financial Calculators"
   },
   "guides_page": {
-    "meta_title": "Financial Guides | BharatSaver",
-    "meta_description": "In-depth guides on financial planning, investments, and savings schemes in India.",
+    "meta_title": "Financial Guides for Indian Investors | BharatSaver",
+    "meta_description": "In-depth guides on financial planning, investment schemes (PPF, NPS), and savings strategies for Indians.",
     "h1": "Financial Guides"
   },
   "blog_page": {
-    "meta_title": "Finance Blog | BharatSaver",
+    "meta_title": "Personal Finance Blog for India | BharatSaver",
     "meta_description": "Latest articles and updates on personal finance, tax planning, and investment strategies in India.",
     "h1": "Latest Blog Posts"
   },
@@ -88,7 +88,7 @@
     "title": "PPF Calculator 2025",
     "description": "Calculate the returns on your Public Provident Fund (PPF) investment with our easy-to-use calculator.",
     "meta_title": "PPF Calculator 2025 – Calculate Maturity & Interest | BharatSaver",
-    "meta_description": "Use our free PPF Calculator 2025 with latest interest rates to estimate maturity amount, yearly returns & tax savings.",
+    "meta_description": "Use our free PPF Calculator with the latest interest rates to estimate your maturity amount, yearly returns, and tax savings on your PPF investment.",
     "h1": "PPF Calculator 2025 – Know Your Maturity & Returns",
     "annual_investment_label": "Annual Investment (₹)",
     "annual_investment_placeholder": "e.g., 150000",
@@ -134,56 +134,56 @@
     ]
   },
   "ssy_calculator": {
-    "meta_title": "Sukanya Samriddhi Yojana (SSY) Calculator | BharatSaver",
-    "meta_description": "Use our free Sukanya Samriddhi Yojana (SSY) Calculator to calculate returns, maturity and tax benefits with latest rates in India.",
+    "meta_title": "SSY Calculator - Sukanya Samriddhi Yojana | BharatSaver",
+    "meta_description": "Use our free Sukanya Samriddhi Yojana (SSY) Calculator to calculate returns, maturity amount, and tax benefits for your daughter's future.",
     "h1": "Sukanya Samriddhi Yojana (SSY) Calculator"
   },
   "nps_calculator": {
-    "meta_title": "NPS Calculator (National Pension System) | BharatSaver",
-    "meta_description": "Use our free NPS Calculator (National Pension System) to calculate returns, maturity and tax benefits with latest rates in India.",
-    "h1": "NPS Calculator (National Pension System)"
+    "meta_title": "NPS Calculator - National Pension System | BharatSaver",
+    "meta_description": "Use our free National Pension System (NPS) Calculator to estimate your retirement corpus, monthly pension, and tax benefits in India.",
+    "h1": "NPS (National Pension System) Calculator"
   },
   "apy_calculator": {
-    "meta_title": "Atal Pension Yojana (APY) Calculator | BharatSaver",
-    "meta_description": "Use our free Atal Pension Yojana (APY) Calculator to calculate returns, maturity and tax benefits with latest rates in India.",
+    "meta_title": "APY Calculator - Atal Pension Yojana | BharatSaver",
+    "meta_description": "Our free Atal Pension Yojana (APY) Calculator helps you find your required monthly contribution for a desired pension amount.",
     "h1": "Atal Pension Yojana (APY) Calculator"
   },
   "fd_vs_ppf_calculator": {
     "meta_title": "FD vs PPF Returns Calculator | BharatSaver",
-    "meta_description": "Use our free FD vs PPF Returns Calculator to calculate returns, maturity and tax benefits with latest rates in India.",
+    "meta_description": "Compare returns on Fixed Deposit (FD) lump-sum investments vs recurring Public Provident Fund (PPF) contributions with our calculator.",
     "h1": "FD vs PPF Returns Calculator"
   },
   "tax_regime_calculator": {
-    "meta_title": "Tax Regime Calculator (Old vs New) | BharatSaver",
-    "meta_description": "Use our free Tax Regime Calculator (Old vs New) to calculate returns, maturity and tax benefits with latest rates in India.",
-    "h1": "Tax Regime Calculator (Old vs New)"
+    "meta_title": "Old vs New Tax Regime Calculator | BharatSaver",
+    "meta_description": "Use our free calculator to compare your income tax liability under the Old and New tax regimes in India and find out which is better for you.",
+    "h1": "Old vs New Tax Regime Calculator"
   },
   "retirement_corpus_calculator": {
     "meta_title": "Retirement Corpus Calculator | BharatSaver",
-    "meta_description": "Use our free Retirement Corpus Calculator to calculate returns, maturity and tax benefits with latest rates in India.",
+    "meta_description": "Plan for your retirement by calculating the total corpus required for your post-retirement life based on your financial goals.",
     "h1": "Retirement Corpus Calculator"
   },
   "loan_optimization_calculator": {
-    "meta_title": "Loan Optimization Calculator | BharatSaver",
-    "meta_description": "Use our free Loan Optimization Calculator to calculate returns, maturity and tax benefits with latest rates in India.",
+    "meta_title": "Loan Optimizer & EMI Calculator | BharatSaver",
+    "meta_description": "Use our free Loan Optimization Calculator to calculate your EMI and see how extra payments can help you reduce your loan tenure and save interest.",
     "h1": "Loan Optimization Calculator"
   },
   "mutual_fund_overlap_calculator": {
     "meta_title": "Mutual Fund Overlap Calculator | BharatSaver",
-    "meta_description": "Use our free Mutual Fund Overlap Calculator to calculate returns, maturity and tax benefits with latest rates in India.",
+    "meta_description": "Check for portfolio overlap in your mutual funds to ensure proper diversification. Use our free Mutual Fund Overlap Calculator.",
     "h1": "Mutual Fund Overlap Calculator"
   },
   "ups_pension_calculator": {
     "meta_title": "UPS Pension Scheme Calculator | BharatSaver",
-    "meta_description": "Use our free UPS Pension Scheme Calculator to calculate returns, maturity and tax benefits with latest rates in India.",
+    "meta_description": "Estimate your potential pension amount under the Universal Pension Scheme (UPS) with our easy-to-use calculator.",
     "h1": "UPS Pension Scheme Calculator"
   },
   "scheme_selector": {
     "title": "Investment Scheme Selector",
     "description": "Answer a few questions to find the best investment scheme for your needs.",
-    "meta_title": "Scheme Selector Quiz | BharatSaver",
-    "meta_description": "Use our free Scheme Selector Quiz to calculate returns, maturity and tax benefits with latest rates in India.",
-    "h1": "Scheme Selector Quiz",
+    "meta_title": "AI Investment Scheme Selector Quiz | BharatSaver",
+    "meta_description": "Use our AI-powered Scheme Selector Quiz to get a recommendation for the best investment scheme (PPF, SSY, NPS, APY, FD) for you.",
+    "h1": "AI Scheme Selector Quiz",
     "age_label": "Your Age",
     "income_label": "Current Annual Income (in ₹)",
     "risk_label": "Your Risk Tolerance",
@@ -215,12 +215,12 @@
   },
   "contact_page": {
     "meta_title": "Contact Us | BharatSaver",
-    "meta_description": "Get in touch with the BharatSaver team.",
+    "meta_description": "Get in touch with the BharatSaver team for any questions or feedback.",
     "h1": "Contact Us"
   },
   "about_page": {
     "meta_title": "About Us | BharatSaver",
-    "meta_description": "Learn more about BharatSaver's mission to empower every Indian with financial knowledge.",
+    "meta_description": "Learn more about BharatSaver's mission to empower every Indian with financial knowledge and free, easy-to-use tools.",
     "h1": "Empowering Every Indian with Financial Knowledge",
     "p1": "Our mission is to provide accessible and easy-to-understand financial tools and guides to help you make smarter decisions for your future.",
     "h2_1": "Our Story",

@@ -70,26 +70,26 @@
     }
   },
   "calculators_page": {
-    "meta_title": "Financial Calculators | BharatSaver",
-    "meta_description": "तुमची गुंतवणूक, बचत आणि कर योजना करण्यात मदत करण्यासाठी आर्थिक कॅल्क्युलेटरचा एक व्यापक संच.",
+    "meta_title": "भारतीय योजनांसाठी आर्थिक कॅल्क्युलेटर | BharatSaver",
+    "meta_description": "PPF, NPS, SSY, आणि अधिकसाठी मोफत आर्थिक कॅल्क्युलेटरचा एक व्यापक संच. भारतात तुमच्या गुंतवणूक, बचत आणि करांची योजना करा.",
     "h1": "Financial Calculators"
   },
   "guides_page": {
-    "meta_title": "Financial Guides | BharatSaver",
-    "meta_description": "भारतातील आर्थिक नियोजन, गुंतवणूक आणि बचत योजनांवरील सखोल मार्गदर्शक.",
+    "meta_title": "भारतीय गुंतवणूकदारांसाठी आर्थिक मार्गदर्शक | BharatSaver",
+    "meta_description": "भारतीयांसाठी आर्थिक नियोजन, गुंतवणूक योजना (PPF, NPS), आणि बचत धोरणांवर सखोल मार्गदर्शक.",
     "h1": "Financial Guides"
   },
   "blog_page": {
-    "meta_title": "Finance Blog | BharatSaver",
+    "meta_title": "भारतासाठी वैयक्तिक वित्त ब्लॉग | BharatSaver",
     "meta_description": "भारतातील वैयक्तिक वित्त, कर नियोजन आणि गुंतवणूक धोरणांवरील नवीनतम लेख आणि अद्यतने.",
     "h1": "Latest Blog Posts"
   },
   "ppf_calculator": {
     "title": "PPF कॅल्क्युलेटर",
     "description": "आमच्या वापरण्यास सोप्या कॅल्क्युलेटरसह तुमच्या सार्वजनिक भविष्य निर्वाह निधी (PPF) गुंतवणुकीवरील परताव्याची गणना करा.",
-    "meta_title": "पीपीएफ कॅल्क्युलेटर 2025 – परिपक्वता व व्याज मोजा | BharatSaver",
-    "meta_description": "नवीनतम व्याज दरांसह पीपीएफ कॅल्क्युलेटर वापरून परिपक्व रक्कम व वार्षिक परतावा जाणून घ्या.",
-    "h1": "पीपीएफ कॅल्क्युलेटर 2025 – परिपक्वता व परतावा",
+    "meta_title": "पीपीएफ कॅल्क्युलेटर 2025 – परिपक्वता आणि व्याज मोजा | BharatSaver",
+    "meta_description": "तुमच्या पीपीएफ गुंतवणुकीवर मॅच्युरिटी रक्कम, वार्षिक परतावा आणि कर बचतीचा अंदाज घेण्यासाठी नवीनतम व्याज दरांसह आमचा विनामूल्य पीपीएफ कॅल्क्युलेटर वापरा.",
+    "h1": "पीपीएफ कॅल्क्युलेटर 2025 – तुमची मॅच्युरिटी आणि परतावा जाणून घ्या",
     "annual_investment_label": "वार्षिक गुंतवणूक (₹)",
     "annual_investment_placeholder": "उदा. 150000",
     "tenure_label": "गुंतवणूक कालावधी (वर्षे)",
@@ -134,56 +134,56 @@
     ]
   },
   "ssy_calculator": {
-    "meta_title": "Sukanya Samriddhi Yojana (SSY) Calculator – कॅल्क्युलेटर | BharatSaver",
-    "meta_description": "Sukanya Samriddhi Yojana (SSY) Calculator कॅल्क्युलेटर वापरून परिपक्वता, व्याज व कर लाभ जाणून घ्या.",
-    "h1": "Sukanya Samriddhi Yojana (SSY) Calculator कॅल्क्युलेटर"
+    "meta_title": "SSY कॅल्क्युलेटर - सुकन्या समृद्धी योजना | BharatSaver",
+    "meta_description": "तुमच्या मुलीच्या भविष्यासाठी परतावा, मॅच्युरिटीची रक्कम आणि कर लाभांची गणना करण्यासाठी आमचा विनामूल्य सुकन्या समृद्धी योजना (SSY) कॅल्क्युलेटर वापरा.",
+    "h1": "सुकन्या समृद्धी योजना (SSY) कॅल्क्युलेटर"
   },
   "nps_calculator": {
-    "meta_title": "NPS Calculator (National Pension System) – कॅल्क्युलेटर | BharatSaver",
-    "meta_description": "NPS Calculator (National Pension System) कॅल्क्युलेटर वापरून परिपक्वता, व्याज व कर लाभ जाणून घ्या.",
-    "h1": "NPS Calculator (National Pension System) कॅल्क्युलेटर"
+    "meta_title": "NPS कॅल्क्युलेटर - राष्ट्रीय पेन्शन प्रणाली | BharatSaver",
+    "meta_description": "तुमच्या सेवानिवृत्ती कॉर्पस, मासिक पेन्शन आणि भारतातील कर लाभांचा अंदाज घेण्यासाठी आमचा विनामूल्य राष्ट्रीय पेन्शन प्रणाली (NPS) कॅल्क्युलेटर वापरा.",
+    "h1": "NPS (राष्ट्रीय पेन्शन प्रणाली) कॅल्क्युलेटर"
   },
   "apy_calculator": {
-    "meta_title": "Atal Pension Yojana (APY) Calculator – कॅल्क्युलेटर | BharatSaver",
-    "meta_description": "Atal Pension Yojana (APY) Calculator कॅल्क्युलेटर वापरून परिपक्वता, व्याज व कर लाभ जाणून घ्या.",
-    "h1": "Atal Pension Yojana (APY) Calculator कॅल्क्युलेटर"
+    "meta_title": "APY कॅल्क्युलेटर - अटल पेन्शन योजना | BharatSaver",
+    "meta_description": "आमचा विनामूल्य अटल पेन्शन योजना (APY) कॅल्क्युलेटर तुम्हाला हव्या असलेल्या पेन्शन रकमेसाठी आवश्यक मासिक योगदान शोधण्यात मदत करतो.",
+    "h1": "अटल पेन्शन योजना (APY) कॅल्क्युलेटर"
   },
   "fd_vs_ppf_calculator": {
-    "meta_title": "FD vs PPF Returns Calculator – कॅल्क्युलेटर | BharatSaver",
-    "meta_description": "FD vs PPF Returns Calculator कॅल्क्युलेटर वापरून परिपक्वता, व्याज व कर लाभ जाणून घ्या.",
-    "h1": "FD vs PPF Returns Calculator कॅल्क्युलेटर"
+    "meta_title": "FD vs PPF परतावा कॅल्क्युलेटर | BharatSaver",
+    "meta_description": "आमच्या कॅल्क्युलेटरसह मुदत ठेव (FD) एकरकमी गुंतवणूक विरुद्ध आवर्ती सार्वजनिक भविष्य निर्वाह निधी (PPF) योगदानावरील परताव्याची तुलना करा.",
+    "h1": "FD vs PPF परतावा कॅल्क्युलेटर"
   },
   "tax_regime_calculator": {
-    "meta_title": "Tax Regime Calculator (Old vs New) – कॅल्क्युलेटर | BharatSaver",
-    "meta_description": "Tax Regime Calculator (Old vs New) कॅल्क्युलेटर वापरून परिपक्वता, व्याज व कर लाभ जाणून घ्या.",
-    "h1": "Tax Regime Calculator (Old vs New) कॅल्क्युलेटर"
+    "meta_title": "जुनी vs नवीन कर प्रणाली कॅल्क्युलेटर | BharatSaver",
+    "meta_description": "भारतातील जुन्या आणि नवीन कर प्रणालींनुसार तुमच्या आयकर दायित्वाची तुलना करण्यासाठी आमचा विनामूल्य कॅल्क्युलेटर वापरा आणि तुमच्यासाठी कोणते चांगले आहे ते शोधा.",
+    "h1": "जुनी vs नवीन कर प्रणाली कॅल्क्युलेटर"
   },
   "retirement_corpus_calculator": {
-    "meta_title": "Retirement Corpus Calculator – कॅल्क्युलेटर | BharatSaver",
-    "meta_description": "Retirement Corpus Calculator कॅल्क्युलेटर वापरून परिपक्वता, व्याज व कर लाभ जाणून घ्या.",
-    "h1": "Retirement Corpus Calculator कॅल्क्युलेटर"
+    "meta_title": "सेवानिवृत्ती कॉर्पस कॅल्क्युलेटर | BharatSaver",
+    "meta_description": "तुमच्या आर्थिक उद्दिष्टांवर आधारित तुमच्या सेवानिवृत्तीनंतरच्या आयुष्यासाठी आवश्यक एकूण कॉर्पसची गणना करून तुमच्या सेवानिवृत्तीसाठी योजना करा.",
+    "h1": "सेवानिवृत्ती कॉर्पस कॅल्क्युलेटर"
   },
   "loan_optimization_calculator": {
-    "meta_title": "Loan Optimization Calculator – कॅल्क्युलेटर | BharatSaver",
-    "meta_description": "Loan Optimization Calculator कॅल्क्युलेटर वापरून परिपक्वता, व्याज व कर लाभ जाणून घ्या.",
-    "h1": "Loan Optimization Calculator कॅल्क्युलेटर"
+    "meta_title": "कर्ज ऑप्टिमायझर आणि EMI कॅल्क्युलेटर | BharatSaver",
+    "meta_description": "तुमचा EMI मोजण्यासाठी आमचा विनामूल्य कर्ज ऑप्टिमायझेशन कॅल्क्युलेटर वापरा आणि अतिरिक्त देयके तुम्हाला तुमचा कर्ज कालावधी कमी करण्यास आणि व्याज वाचविण्यात कशी मदत करू शकतात ते पहा.",
+    "h1": "कर्ज ऑप्टिमायझेशन कॅल्क्युलेटर"
   },
   "mutual_fund_overlap_calculator": {
-    "meta_title": "Mutual Fund Overlap Calculator – कॅल्क्युलेटर | BharatSaver",
-    "meta_description": "Mutual Fund Overlap Calculator कॅल्क्युलेटर वापरून परिपक्वता, व्याज व कर लाभ जाणून घ्या.",
-    "h1": "Mutual Fund Overlap Calculator कॅल्क्युलेटर"
+    "meta_title": "म्युच्युअल फंड ओव्हरलॅप कॅल्क्युलेटर | BharatSaver",
+    "meta_description": "योग्य विविधीकरण सुनिश्चित करण्यासाठी तुमच्या म्युच्युअल फंडांमध्ये पोर्टफोलिओ ओव्हरलॅप तपासा. आमचा विनामूल्य म्युच्युअल फंड ओव्हरलॅप कॅल्क्युलेटर वापरा.",
+    "h1": "म्युच्युअल फंड ओव्हरलॅप कॅल्क्युलेटर"
   },
   "ups_pension_calculator": {
-    "meta_title": "UPS Pension Scheme Calculator – कॅल्क्युलेटर | BharatSaver",
-    "meta_description": "UPS Pension Scheme Calculator कॅल्क्युलेटर वापरून परिपक्वता, व्याज व कर लाभ जाणून घ्या.",
-    "h1": "UPS Pension Scheme Calculator कॅल्क्युलेटर"
+    "meta_title": "UPS पेन्शन योजना कॅल्क्युलेटर | BharatSaver",
+    "meta_description": "आमच्या वापरण्यास सोप्या कॅल्क्युलेटरसह युनिव्हर्सल पेन्शन स्कीम (UPS) अंतर्गत तुमच्या संभाव्य पेन्शन रकमेचा अंदाज घ्या.",
+    "h1": "UPS पेन्షన్ योजना कॅल्क्युलेटर"
   },
   "scheme_selector": {
     "title": "गुंतवणूक योजना निवडक",
     "description": "तुमच्या गरजांसाठी सर्वोत्तम गुंतवणूक योजना शोधण्यासाठी काही प्रश्नांची उत्तरे द्या.",
-    "meta_title": "Scheme Selector Quiz – कॅल्क्युलेटर | BharatSaver",
-    "meta_description": "Scheme Selector Quiz कॅल्क्युलेटर वापरून परिपक्वता, व्याज व कर लाभ जाणून घ्या.",
-    "h1": "Scheme Selector Quiz कॅल्क्युलेटर",
+    "meta_title": "AI गुंतवणूक योजना निवडक क्विझ | BharatSaver",
+    "meta_description": "तुमच्यासाठी सर्वोत्तम गुंतवणूक योजनेसाठी (PPF, SSY, NPS, APY, FD) शिफारस मिळवण्यासाठी आमची AI-चालित योजना निवडक क्विझ वापरा.",
+    "h1": "AI योजना निवडक क्विझ",
     "age_label": "तुमचे वय",
     "income_label": "सध्याचे वार्षिक उत्पन्न (₹ मध्ये)",
     "risk_label": "तुमची जोखीम सहनशीलता",
@@ -215,12 +215,12 @@
   },
   "contact_page": {
     "meta_title": "आमच्याशी संपर्क साधा | BharatSaver",
-    "meta_description": "भारतसेवर टीमशी संपर्क साधा.",
+    "meta_description": "कोणत्याही प्रश्नांसाठी किंवा अभिप्रायासाठी भारतसेवर टीमशी संपर्क साधा.",
     "h1": "आमच्याशी संपर्क साधा"
   },
   "about_page": {
     "meta_title": "आमच्याबद्दल | BharatSaver",
-    "meta_description": "प्रत्येक भारतीयाला आर्थिक ज्ञानाने सक्षम करण्याच्या भारतसेवरच्या मिशनबद्दल अधिक जाणून घ्या.",
+    "meta_description": "प्रत्येक भारतीयाला आर्थिक ज्ञान आणि विनामूल्य, वापरण्यास सोप्या साधनांसह सक्षम करण्याच्या भारतसेवरच्या मिशनबद्दल अधिक जाणून घ्या.",
     "h1": "प्रत्येक भारतीयाला आर्थिक ज्ञानाने सक्षम करणे",
     "p1": "आमचे ध्येय तुमच्या भविष्यासाठी चांगले निर्णय घेण्यास मदत करण्यासाठी प्रवेशयोग्य आणि समजण्यास सोपी आर्थिक साधने आणि मार्गदर्शक प्रदान करणे आहे.",
     "h2_1": "आमची कथा",
