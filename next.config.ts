@@ -28,7 +28,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/hero-image.png',
-        destination: '/public/hero-image.png',
+        destination: '/hero-image.png',
       },
     ]
   },

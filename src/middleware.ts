@@ -19,6 +19,10 @@ function getLocale(request: NextRequest): string {
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
+  if (pathname === '/hero-image.png') {
+    return NextResponse.next();
+  }
+  
   // Skip middleware for API routes, public files, etc.
   if (
     [
