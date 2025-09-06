@@ -24,6 +24,14 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async rewrites() {
+    return [
+      {
+        source: '/hero-image.png',
+        destination: '/public/hero-image.png',
+      },
+    ]
+  },
 };
 
 export default nextConfig;

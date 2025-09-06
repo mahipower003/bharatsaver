@@ -3,14 +3,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { ArrowRight, Calculator, Banknote, ShieldCheck, PieChart } from 'lucide-react';
+import { ArrowRight, PieChart, Banknote, UserCheck, ShieldCheck } from 'lucide-react';
 import type { Locale } from '@/lib/i18n-config';
 import type { Dictionary } from '@/types';
 
 const stats = [
   { icon: PieChart, title: 'High ROI', description: 'Estimatur/hega aruhter\'s education cotpus.', key: 'high_roi' },
   { icon: Banknote, title: 'Tax Saved', description: 'Compare old tax regim tax regrt tmstantly', key: 'tax_saved' },
-  { icon: Calculator, title: 'Retirement Ready', description: 'Check your pension risk easion.', key: 'retirement_ready' },
+  { icon: UserCheck, title: 'Retirement Ready', description: 'Check your pension risk easion.', key: 'retirement_ready' },
   { icon: ShieldCheck, title: 'Loan - EMI Optimizer', description: 'Apply pertihmamit tax reame', key: 'loan_emi' },
 ];
 
