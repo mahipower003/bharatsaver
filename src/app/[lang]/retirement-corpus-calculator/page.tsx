@@ -7,7 +7,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang);
+  const dictionary = await getDictionary(params.lang, ['retirement_corpus_calculator']);
   return {
     title: dictionary.retirement_corpus_calculator.meta_title,
     description: dictionary.retirement_corpus_calculator.meta_description,
@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 }
 
 export default async function RetirementCorpusCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang);
+  const dictionary = await getDictionary(params.lang, ['retirement_corpus_calculator']);
   
   return (
     <div className="container mx-auto px-4 md:px-6 py-12">
