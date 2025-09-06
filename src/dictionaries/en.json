@@ -7,9 +7,8 @@
       "guides": "Guides",
       "blog": "Blog"
     },
-    "cta": "Get Started",
-    "search_placeholder": "Search calculators...",
-    "cta_button": "Try PF Calculator"
+    "cta_button": "Try PF Calculator",
+    "search_placeholder": "Search calculators..."
   },
   "footer": {
     "about": {
@@ -109,7 +108,26 @@
     "table_opening_balance": "Opening Balance",
     "table_amount_invested": "Amount Invested",
     "table_interest_earned": "Interest Earned",
-    "table_closing_balance": "Closing Balance"
+    "table_closing_balance": "Closing Balance",
+    "faq_title": "Frequently Asked Questions about PPF",
+    "faqs": [
+      {
+        "question": "What is the minimum and maximum amount I can invest in PPF?",
+        "answer": "You can invest a minimum of ₹500 and a maximum of ₹1,50,000 in a financial year."
+      },
+      {
+        "question": "Is the interest earned on PPF taxable?",
+        "answer": "No, the interest earned and the maturity amount are completely tax-free under Section 10(11) of the Income Tax Act."
+      },
+      {
+        "question": "Can I take a loan against my PPF account?",
+        "answer": "Yes, you can take a loan against your PPF account from the 3rd to the 6th financial year of opening the account."
+      },
+      {
+        "question": "What happens after the 15-year maturity period?",
+        "answer": "After 15 years, you can either withdraw the entire amount, extend the account for blocks of 5 years with new contributions, or extend it without making new contributions."
+      }
+    ]
   },
   "ssy_calculator": {
     "meta_title": "Sukanya Samriddhi Yojana (SSY) Calculator | BharatSaver",
