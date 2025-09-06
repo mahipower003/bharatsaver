@@ -53,7 +53,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className={`${inter.variable} ${noto_sans.variable}`}>
-      <body className="bg-background font-body antialiased">
+      <body>
         {children}
         <Toaster />
       </body>
