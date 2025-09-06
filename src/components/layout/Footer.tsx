@@ -62,9 +62,9 @@ export function Footer({ lang, dictionary }: FooterProps) {
           <div>
             <h3 className="font-semibold mb-4">{dictionary.contact.title}</h3>
             <div className="flex gap-4 items-center">
-                <Link href="#" aria-label="Twitter"><Twitter className="h-5 w-5 text-muted-foreground hover:text-primary" /></Link>
-                <Link href="#" aria-label="Facebook"><Facebook className="h-5 w-5 text-muted-foreground hover:text-primary" /></Link>
-                <Link href="#" aria-label="Linkedin"><Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary" /></Link>
+                <Link href="https://x.com/mahesh_chaube33" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><Twitter className="h-5 w-5 text-muted-foreground hover:text-primary" /></Link>
+                <Link href="https://www.facebook.com/mahi003" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><Facebook className="h-5 w-5 text-muted-foreground hover:text-primary" /></Link>
+                <Link href="https://www.linkedin.com/in/mahi003/" aria-label="Linkedin" target="_blank" rel="noopener noreferrer"><Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary" /></Link>
             </div>
           </div>
         </div>
