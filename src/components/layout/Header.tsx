@@ -41,7 +41,7 @@ export function Header({ lang, dictionary }: HeaderProps) {
 
         <div className="flex items-center justify-end gap-2">
            <Link href={`/${lang}/search`}>
-              <Button variant="ghost" size="icon" className="hidden lg:inline-flex">
+              <Button variant="ghost" size="icon" className="lg:inline-flex">
                   <Search className="h-5 w-5" />
                   <span className="sr-only">Search</span>
               </Button>
