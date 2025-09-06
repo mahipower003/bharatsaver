@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { Inter, Noto_Sans } from 'next/font/google';
+import { i18nConfig } from '@/lib/i18n-config';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -19,6 +20,7 @@ const noto_sans = Noto_Sans({
 const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     default: 'BharatSaver - Smarter Savings for Every Indian',
     template: '%s | BharatSaver',
@@ -30,7 +32,7 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: 'BharatSaver',
     images: [{ 
-      url: `${siteUrl}/hero-image.png`, 
+      url: `/hero-image.png`, 
       width: 960, 
       height: 640, 
       alt: 'BharatSaver Hero Image' 
@@ -42,7 +44,14 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'BharatSaver - Smarter Savings for Every Indian',
     description: 'Free calculators, guides and tools to plan your financial future.',
-    images: [`${siteUrl}/hero-image.png`],
+    images: [`/hero-image.png`],
+  },
+  alternates: {
+    canonical: siteUrl,
+    languages: i18nConfig.locales.reduce((acc, locale) => {
+        acc[locale] = `${siteUrl}/${locale}`;
+        return acc;
+    }, {} as Record<string, string>),
   },
 };
 

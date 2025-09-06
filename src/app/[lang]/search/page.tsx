@@ -19,6 +19,8 @@ export async function generateMetadata({
   const title = query 
     ? `${dictionary.search_page.title_with_query} "${query}"` 
     : dictionary.search_page.title;
+  const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
+  const pageUrl = `${siteUrl}/${params.lang}/search`;
   
   return {
     title: title,
@@ -26,7 +28,14 @@ export async function generateMetadata({
     robots: {
         index: false,
         follow: false,
-    }
+    },
+    alternates: {
+      canonical: pageUrl,
+      languages: i18nConfig.locales.reduce((acc, locale) => {
+        acc[locale] = `${siteUrl}/${locale}/search`;
+        return acc;
+      }, {} as Record<string, string>),
+    },
   };
 }
 
@@ -41,7 +50,7 @@ export default async function SearchPage({
   const query = searchParams.q;
   
   return (
-    <div className="px-4 md:px-6 py-12">
+    <div className="py-12">
       <div className="mx-auto max-w-xl">
         <div className="mb-8">
             <Search lang={params.lang} dictionary={{ placeholder: dictionary.header.search_placeholder }} />

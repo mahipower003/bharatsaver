@@ -10,9 +10,18 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
   const dictionary = await getDictionary(params.lang, ['about_page']);
+  const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
+  const pageUrl = `${siteUrl}/${params.lang}/about`;
   return {
     title: dictionary.about_page.meta_title,
     description: dictionary.about_page.meta_description,
+    alternates: {
+      canonical: pageUrl,
+      languages: i18nConfig.locales.reduce((acc, locale) => {
+        acc[locale] = `${siteUrl}/${locale}/about`;
+        return acc;
+      }, {} as Record<string, string>),
+    },
   };
 }
 
@@ -20,7 +29,7 @@ export default async function AboutPage({ params }: { params: { lang: Locale }})
   const dictionary = await getDictionary(params.lang, ['about_page']);
   
   return (
-    <div className="px-4 md:px-6 py-12">
+    <div className="py-12">
       <div className="mx-auto max-w-4xl">
         <div className="text-center mb-12">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl font-headline mb-4">

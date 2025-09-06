@@ -23,29 +23,26 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         url: pageUrl,
         siteName: 'BharatSaver',
         images: [{ 
-          url: `${siteUrl}/hero-image.png`, // Replace with a specific OG image later
+          url: `/hero-image.png`,
           width: 960, 
           height: 640, 
           alt: 'BharatSaver PPF Calculator' 
         }],
-        locale: 'en_IN', // Adjust locale based on params.lang if needed
+        locale: 'en_IN',
         type: 'website',
     },
     twitter: {
         card: 'summary_large_image',
         title: dictionary.ppf_calculator.meta_title,
         description: dictionary.ppf_calculator.meta_description,
-        images: [`${siteUrl}/hero-image.png`],
+        images: [`/hero-image.png`],
     },
     alternates: {
       canonical: pageUrl,
-      languages: {
-        'en': `${siteUrl}/en/ppf-calculator`,
-        'hi': `${siteUrl}/hi/ppf-calculator`,
-        'mr': `${siteUrl}/mr/ppf-calculator`,
-        'ta': `${siteUrl}/ta/ppf-calculator`,
-        'te': `${siteUrl}/te/ppf-calculator`,
-      },
+      languages: i18nConfig.locales.reduce((acc, locale) => {
+        acc[locale] = `${siteUrl}/${locale}/ppf-calculator`;
+        return acc;
+    }, {} as Record<string, string>),
     },
   };
 }
@@ -92,7 +89,7 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
   };
   
   return (
-    <div className="px-4 md:px-6 py-12">
+    <div className="py-12">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />

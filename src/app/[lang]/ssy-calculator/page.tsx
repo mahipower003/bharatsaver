@@ -8,9 +8,18 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
   const dictionary = await getDictionary(params.lang, ['ssy_calculator']);
+  const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
+  const pageUrl = `${siteUrl}/${params.lang}/ssy-calculator`;
   return {
     title: dictionary.ssy_calculator.meta_title,
     description: dictionary.ssy_calculator.meta_description,
+    alternates: {
+      canonical: pageUrl,
+      languages: i18nConfig.locales.reduce((acc, locale) => {
+        acc[locale] = `${siteUrl}/${locale}/ssy-calculator`;
+        return acc;
+      }, {} as Record<string, string>),
+    },
   };
 }
 
@@ -18,7 +27,7 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
   const dictionary = await getDictionary(params.lang, ['ssy_calculator']);
   
   return (
-    <div className="px-4 md:px-6 py-12">
+    <div className="py-12">
       <div className="mx-auto max-w-5xl text-center">
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
           {dictionary.ssy_calculator.h1}

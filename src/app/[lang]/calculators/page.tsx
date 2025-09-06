@@ -9,9 +9,18 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
   const dictionary = await getDictionary(params.lang, ['calculators_page']);
+  const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
+  const pageUrl = `${siteUrl}/${params.lang}/calculators`;
   return {
     title: dictionary.calculators_page.meta_title,
     description: dictionary.calculators_page.meta_description,
+    alternates: {
+      canonical: pageUrl,
+      languages: i18nConfig.locales.reduce((acc, locale) => {
+        acc[locale] = `${siteUrl}/${locale}/calculators`;
+        return acc;
+      }, {} as Record<string, string>),
+    },
   };
 }
 
