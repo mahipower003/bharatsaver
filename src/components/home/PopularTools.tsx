@@ -4,6 +4,7 @@ import { calculators } from '@/data/calculators';
 import type { Locale } from '@/lib/i18n-config';
 import type { Dictionary } from '@/types';
 import { ArrowRight } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
 
 type PopularToolsProps = {
   lang: Locale;
@@ -21,22 +22,24 @@ export function PopularTools({ lang, dictionary }: PopularToolsProps) {
             {dictionary.title}
           </h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {popularCalculators.map((tool) => (
             <Link key={tool.slug} href={`/${lang}/${tool.slug}`} className="group">
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-primary/10 rounded-lg">
-                    <tool.icon className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                    <h3 className="text-lg font-semibold">{tool.title}</h3>
-                </div>
-              </div>
-              <p className="text-sm text-muted-foreground mt-2">{tool.description}</p>
-              <div className="flex items-center text-primary mt-4 text-sm font-medium">
-                <span>{tool.link_text}</span>
-                <ArrowRight className="ml-1 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
-              </div>
+              <Card className="h-full flex flex-col transition-all duration-200 group-hover:shadow-xl group-hover:-translate-y-1">
+                <CardContent className="p-6 flex flex-col flex-grow">
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-primary/10 rounded-lg">
+                        <tool.icon className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="text-lg font-semibold pt-2">{tool.title}</h3>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-4 flex-grow">{tool.description}</p>
+                  <div className="flex items-center text-primary mt-6 text-sm font-medium">
+                    <span>{tool.link_text}</span>
+                    <ArrowRight className="ml-1 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </CardContent>
+              </Card>
             </Link>
           ))}
         </div>
