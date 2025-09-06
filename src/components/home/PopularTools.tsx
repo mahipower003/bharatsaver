@@ -24,25 +24,28 @@ export function PopularTools({ lang, dictionary }: PopularToolsProps) {
           <p className="mt-4 text-lg text-muted-foreground">{dictionary.subtitle}</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {popularCalculators.map((tool) => (
-            <Link key={tool.slug} href={`/${lang}/${tool.slug}`} className="group block h-full">
-              <Card className="h-full flex flex-col transition-all duration-200 group-hover:shadow-xl group-hover:-translate-y-1">
-                <CardContent className="p-6 flex flex-col flex-grow">
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 bg-primary/10 rounded-lg">
-                        <tool.icon className="h-6 w-6 text-primary" />
+          {popularCalculators.map((tool) => {
+            const Icon = tool.icon;
+            return (
+              <Link key={tool.slug} href={`/${lang}/${tool.slug}`} className="group block h-full">
+                <Card className="h-full flex flex-col transition-all duration-200 group-hover:shadow-xl group-hover:-translate-y-1">
+                  <CardContent className="p-6 flex flex-col flex-grow">
+                    <div className="flex items-start gap-4">
+                      <div className="p-3 bg-primary/10 rounded-lg">
+                          <Icon className="h-6 w-6 text-primary" />
+                      </div>
+                      <h3 className="text-lg font-semibold pt-2">{tool.title}</h3>
                     </div>
-                    <h3 className="text-lg font-semibold pt-2">{tool.title}</h3>
-                  </div>
-                  <p className="text-sm text-muted-foreground mt-4 flex-grow">{tool.description}</p>
-                  <div className="flex items-center text-primary mt-6 text-sm font-medium">
-                    <span>{tool.link_text}</span>
-                    <ArrowRight className="ml-1 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-          ))}
+                    <p className="text-sm text-muted-foreground mt-4 flex-grow">{tool.description}</p>
+                    <div className="flex items-center text-primary mt-6 text-sm font-medium">
+                      <span>{tool.link_text}</span>
+                      <ArrowRight className="ml-1 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>
