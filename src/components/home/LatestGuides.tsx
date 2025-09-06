@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Card, CardContent } from '@/components/ui/card';
 import type { Dictionary } from '@/types';
-import { Separator } from '../ui/separator';
+import { ArrowRight } from 'lucide-react';
 
 type LatestGuidesProps = {
   dictionary: Dictionary['home']['latest_guides'];
@@ -34,19 +34,21 @@ export function LatestGuides({ dictionary }: LatestGuidesProps) {
             {dictionary.title}
           </h2>
         </div>
-        <div className="relative">
-          <div className="grid grid-cols-1 md:grid-cols-3">
-            {guides.map((guide, index) => (
-              <Link key={index} href={guide.link} className="group p-8">
-                  <h3 className="text-xl font-semibold">{guide.title}</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {guides.map((guide, index) => (
+            <Link key={index} href={guide.link} className="group">
+              <Card className="h-full flex flex-col transition-all duration-200 group-hover:shadow-xl group-hover:-translate-y-1">
+                <CardContent className="p-6 flex flex-col flex-grow">
+                  <h3 className="text-xl font-semibold flex-grow">{guide.title}</h3>
                   <p className="mt-2 text-muted-foreground">{guide.subtitle}</p>
-              </Link>
-            ))}
-          </div>
-          <Separator className="absolute top-0 left-1/3 h-full w-[1px] hidden md:block" orientation="vertical" />
-          <Separator className="absolute top-0 left-2/3 h-full w-[1px] hidden md:block" orientation="vertical" />
-          <Separator className="absolute top-0 left-0 w-full" />
-          <Separator className="absolute bottom-0 left-0 w-full" />
+                   <div className="flex items-center text-primary mt-6 text-sm font-medium">
+                    <span>Read Guide</span>
+                    <ArrowRight className="ml-1 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+          ))}
         </div>
       </div>
     </section>
