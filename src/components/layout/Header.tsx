@@ -22,7 +22,7 @@ export function Header({ lang, dictionary }: HeaderProps) {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-sm border-b">
-      <div className="container mx-auto flex h-20 items-center px-4 md:px-6">
+      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <div className="flex items-center gap-4">
           <MobileNav lang={lang} dictionary={dictionary} />
           <Link href={`/${lang}`} className="hidden sm:flex items-center gap-2">
@@ -31,7 +31,7 @@ export function Header({ lang, dictionary }: HeaderProps) {
           </Link>
         </div>
 
-        <nav className="hidden lg:flex items-center gap-8 mx-auto">
+        <nav className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href} className="text-base font-medium text-muted-foreground transition-colors hover:text-primary">
               {link.label}
@@ -39,16 +39,16 @@ export function Header({ lang, dictionary }: HeaderProps) {
           ))}
         </nav>
 
-        <div className="flex items-center justify-end gap-2 ml-auto">
-           <Link href={`/${lang}/search`}>
+        <div className="flex items-center justify-end gap-4">
+           <Link href={`/${lang}/search`} className="hidden lg:block">
               <Button variant="ghost" size="icon">
                   <Search className="h-5 w-5" />
                   <span className="sr-only">Search</span>
               </Button>
            </Link>
-          <Button asChild className="hidden xl:flex bg-primary hover:bg-primary/90 text-primary-foreground">
+          <Button asChild className="hidden lg:flex bg-primary hover:bg-primary/90 text-primary-foreground">
             <Link href={`/${lang}/ppf-calculator`}>
-              {dictionary.cta}
+              {dictionary.cta_button}
             </Link>
           </Button>
         </div>

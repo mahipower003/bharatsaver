@@ -8,7 +8,8 @@
       "blog": "Blog"
     },
     "cta": "Get Started",
-    "search_placeholder": "Search calculators..."
+    "search_placeholder": "Search calculators...",
+    "cta_button": "Try PF Calculator"
   },
   "footer": {
     "about": {
