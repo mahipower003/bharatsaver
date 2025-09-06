@@ -38,7 +38,7 @@
     "contact": {
       "title": "Contact"
     },
-    "copyright": "© 2025 BharatSaver",
+    "copyright": "© Copyright 2025 BharatSaver.com. All Rights Reserved.",
     "disclaimer": "We are an independent financial information website and are not affiliated with LIC or any government body."
   },
   "home": {
@@ -233,3 +233,5 @@
     "results_placeholder": "Search functionality is coming soon."
   }
 }
+
+    
