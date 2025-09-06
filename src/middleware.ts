@@ -25,7 +25,8 @@ export function middleware(request: NextRequest) {
       '/api/',
       '/public/',
       '/A_2D_digital_screenshot_of_the_homepage_of_BharatS.png', // Legacy name from prompt
-      '/hero-screenshot.png'
+      '/hero-screenshot.png',
+      '/hero-image.png'
     ].some(p => pathname.startsWith(p)) || /\..*$/.test(pathname)
   ) {
     return;

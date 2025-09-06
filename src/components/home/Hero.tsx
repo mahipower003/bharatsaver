@@ -44,13 +44,13 @@ export function Hero({ lang, dictionary }: HeroProps) {
           <div className="relative hidden md:block">
             <Card className="overflow-hidden shadow-lg rounded-lg border-2">
               <Image
-                src="/hero-screenshot.png"
-                alt="BharatSaver application screenshot"
-                width={1200}
-                height={800}
+                src="/hero-image.png"
+                alt="Illustration of a family planning their finances with charts and graphs"
+                width={960}
+                height={640}
                 className="w-full h-auto"
                 priority
-                data-ai-hint="screenshot app"
+                data-ai-hint="family finance"
               />
             </Card>
           </div>
