@@ -22,6 +22,7 @@ export function middleware(request: NextRequest) {
   // Paths to ignore from localization
   const ignoredPaths = [
     '/sitemap.xml',
+    '/robots.txt',
     '/hero-image.png',
     '/api/',
     '/public/'
@@ -37,9 +38,10 @@ export function middleware(request: NextRequest) {
 
   if (pathnameIsMissingLocale) {
     const locale = getLocale(request);
-    return NextResponse.redirect(
-      new URL(`/${locale}${pathname}`, request.url)
-    );
+    
+    // Use a permanent (301) redirect for better SEO
+    const newUrl = new URL(`/${locale}${pathname}`, request.url)
+    return NextResponse.redirect(newUrl, 301);
   }
 
   return NextResponse.next();
