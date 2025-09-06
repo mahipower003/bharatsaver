@@ -2,26 +2,37 @@ import { MetadataRoute } from 'next';
 import { i18nConfig } from '@/lib/i18n-config';
 import { calculators } from '@/data/calculators';
 
-const BASE_URL = 'https://bharatsaver.com'; // Replace with your actual domain
+const BASE_URL = process.env.SITE_URL || 'https://bharatsaver.com';
+
+type SitemapEntry = {
+  url: string;
+  lastModified?: string | Date;
+  alternates?: {
+    languages: Record<string, string>;
+  };
+};
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const { locales } = i18nConfig;
+  const { locales, defaultLocale } = i18nConfig;
 
-  // Home, calculators, guides, blog pages for each locale
-  const mainRoutes = locales.flatMap((locale) => 
-    ['', '/calculators', '/guides', '/blog', '/terms', '/contact', '/about', '/search'].map((route) => ({
-      url: `${BASE_URL}/${locale}${route}`,
+  const staticRoutes = ['', '/calculators', '/guides', '/blog', '/terms', '/contact', '/about', '/search'];
+  const calculatorRoutes = calculators.map(c => `/${c.slug}`);
+  const allRoutes = [...staticRoutes, ...calculatorRoutes];
+
+  const sitemapEntries: SitemapEntry[] = allRoutes.map(route => {
+    const alternates: Record<string, string> = {};
+    locales.forEach(locale => {
+      alternates[locale] = `${BASE_URL}/${locale}${route}`;
+    });
+
+    return {
+      url: `${BASE_URL}/${defaultLocale}${route}`,
       lastModified: new Date(),
-    }))
-  );
+      alternates: {
+        languages: alternates,
+      },
+    };
+  });
 
-  // Individual calculator pages for each locale
-  const calculatorRoutes = locales.flatMap((locale) =>
-    calculators.map((calculator) => ({
-      url: `${BASE_URL}/${locale}/${calculator.slug}`,
-      lastModified: new Date(),
-    }))
-  );
-
-  return [...mainRoutes, ...calculatorRoutes];
+  return sitemapEntries;
 }
