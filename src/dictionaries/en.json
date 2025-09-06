@@ -30,7 +30,8 @@
       "title": "Resources",
       "links": [
         { "title": "Terms & Conditions", "href": "/terms" },
-        { "title": "Sitemap", "href": "/sitemap.xml" }
+        { "title": "Sitemap", "href": "/sitemap.xml" },
+        { "title": "Contact", "href": "/contact" }
       ]
     },
     "contact": {
@@ -187,5 +188,10 @@
     "p3": "While we strive to provide accurate and up-to-date information, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose.",
     "h2_3": "Governing Law",
     "p4": "Your use of this website and any dispute arising out of such use of the website is subject to the laws of India."
+  },
+  "contact_page": {
+    "meta_title": "Contact Us | BharatSaver",
+    "meta_description": "Get in touch with the BharatSaver team.",
+    "h1": "Contact Us"
   }
 }

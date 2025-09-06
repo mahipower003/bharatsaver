@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Home, calculators, guides, blog pages for each locale
   const mainRoutes = locales.flatMap((locale) => 
-    ['', '/calculators', '/guides', '/blog', '/terms'].map((route) => ({
+    ['', '/calculators', '/guides', '/blog', '/terms', '/contact'].map((route) => ({
       url: `${BASE_URL}/${locale}${route}`,
       lastModified: new Date(),
     }))
