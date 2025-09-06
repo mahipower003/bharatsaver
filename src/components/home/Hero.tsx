@@ -45,8 +45,8 @@ export function Hero({ lang, dictionary }: HeroProps) {
           <div className="relative">
             <Card className="overflow-hidden rounded-lg border-2 shadow-lg">
               <Image
-                src="/hero-image.png"
-                alt="Illustration of a family planning their finances with charts and graphs"
+                src="https://storage.googleapis.com/stey-tmp/bs_1.png"
+                alt="Illustration of an Indian family planning their finances, with icons for savings and growth."
                 width={960}
                 height={640}
                 className="h-auto w-full"
