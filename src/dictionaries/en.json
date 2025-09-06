@@ -1,47 +1,50 @@
 
 {
   "header": {
-    "subtitle": "Your Financial Guide",
     "nav": {
       "home": "Home",
       "calculators": "Calculators",
       "guides": "Guides",
       "blog": "Blog"
     },
-    "cta": "Try Calculator"
+    "cta": "Try PPF Calculator"
   },
   "footer": {
     "about": {
       "title": "About BharatSaver",
-      "description": "Smarter Savings for Every Indian. Free calculators, guides and tools to plan your financial future."
+      "description": ""
     },
     "calculators": {
-      "title": "Calculators"
+      "title": "Calcutors",
+      "links": [
+        { "title": "NPS Calcualator List", "href": "/en/nps-calculator" },
+        { "title": "Blog", "href": "/en/blog" }
+      ]
     },
     "resources": {
-      "title": "Resources",
-      "guides": "Guides",
-      "blog": "Blog"
+      "title": "Besources",
+      "links": [
+        { "title": "Resources", "href": "/en/guides" },
+        { "title": "Contact", "href": "/en/contact" }
+      ]
     },
-    "legal": {
-      "title": "Legal",
-      "privacy": "Privacy Policy",
-      "terms": "Terms of Service"
+    "contact": {
+      "title": "Contact"
     },
-    "copyright": "© 2025 BharatSaver. All Rights Reserved."
+    "copyright": "© 2025",
+    "disclaimer": "We are an independent archicioles website. We are not affiliated with LIC or goverment body."
   },
   "home": {
     "hero": {
-      "accent": "Free • Trusted",
       "title": "Smarter Savings for Every Indian",
-      "subtitle": "Free calculators, guides and tools to plan your financial future — in English and regional languages.",
-      "cta_primary": "Explore Tools",
-      "cta_secondary": "AI Scheme Selector",
+      "subtitle": "Free calculators, guides and tools to plan your financial future— in English and regional languages.",
+      "cta_primary": "Try PPF Calculator",
+      "cta_secondary": "Calculate",
       "stats": {
-        "ppf": { "title": "PPF", "value": "High ROI" },
-        "ssy": { "title": "SSY", "value": "Tax Saved" },
-        "nps": { "title": "NPS", "value": "Retirement Ready" },
-        "loan": { "title": "Loan", "value": "EMI Optimizer" }
+        "high_roi": { "title": "High ROI", "description": "Estimatur/hega aruhter's education cotpus." },
+        "tax_saved": { "title": "Tax Saved", "description": "Compare old tax regim tax regrt tmstantly" },
+        "retirement_ready": { "title": "Retirement Ready", "description": "Check your pension risk easion." },
+        "loan_emi": { "title": "Loan - EMI Optimizer", "description": "Apply pertihmamit tax reame" }
       }
     },
     "popular_tools": {
@@ -49,9 +52,12 @@
     },
     "latest_guides": {
       "title": "Latest Guides",
-      "guide1_title": "PPF vs FD – Which is better?",
+      "guide1_title": "PPF vs FD - Which is better?",
+      "guide1_subtitle": "PPF vs FL'obetter",
       "guide2_title": "How to use SSY for child education",
-      "guide3_title": "Tax regime comparison"
+      "guide2_subtitle": "Tax regime",
+      "guide3_title": "Tax regime comparison",
+      "guide3_subtitle": "Tax regime comparison"
     }
   },
   "scheme_selector": {

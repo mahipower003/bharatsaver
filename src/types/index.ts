@@ -8,6 +8,7 @@ export type Calculator = {
   title: string;
   description: string;
   icon: LucideIcon;
+  link_text: string;
 };
 
 export type Dictionary = {
@@ -27,30 +28,29 @@ export type Dictionary = {
     };
     calculators: {
       title: string;
+      links: { title: string, href: string }[];
     };
     resources: {
       title: string;
-      guides: string;
-      blog: string;
+      links: { title: string, href: string }[];
     };
-    legal: {
+    contact: {
       title: string;
-      privacy: string;
-      terms: string;
     };
+    copyright: string;
+    disclaimer: string;
   };
   home: {
     hero: {
-      accent: string;
       title: string;
       subtitle: string;
       cta_primary: string;
       cta_secondary: string;
       stats: {
-        ppf: { title: string; value: string; };
-        ssy: { title: string; value: string; };
-        nps: { title: string; value: string; };
-        loan: { title: string; value: string; };
+        high_roi: { title: string; description: string; };
+        tax_saved: { title: string; description: string; };
+        retirement_ready: { title: string; description: string; };
+        loan_emi: { title: string; description: string; };
       }
     };
     popular_tools: {
@@ -58,6 +58,12 @@ export type Dictionary = {
     };
     latest_guides: {
       title: string;
+      guide1_title: string;
+      guide1_subtitle: string;
+      guide2_title: string;
+      guide2_subtitle: string;
+      guide3_title: string;
+      guide3_subtitle: string;
     };
   };
   ppf_calculator: {

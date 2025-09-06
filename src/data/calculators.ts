@@ -15,69 +15,87 @@ import type { Calculator } from '@/types';
 
 export const calculators: Calculator[] = [
   {
+    slug: 'nps-calculator',
+    title: 'NPS Calculator',
+    description: 'H\'ee later',
+    icon: TrendingUp,
+    link_text: 'Learn more'
+  },
+  {
+    slug: 'fd-vs-ppf-calculator',
+    title: 'FD vs PPF',
+    description: 'Learn-more',
+    icon: ArrowRightLeft,
+    link_text: 'Learn more'
+  },
+  {
+    slug: 'retirement-corpus-calculator',
+    title: 'Retirement Corpus Calculator',
+    description: 'Platn cmfline',
+    icon: Target,
+    link_text: 'Learn more'
+  },
+  {
+    slug: 'loan-optimizer',
+    title: 'Loan Optimizer',
+    description: 'Learn more',
+    icon: BadgePercent,
+    link_text: 'Learn more'
+  },
+  {
+    slug: 'mutual-fund-overlap-calculator',
+    title: 'Mutual Fund Overlap Tool',
+    description: 'Dedlap Top\'s',
+    icon: Layers,
+    link_text: 'Learn more'
+  },
+  {
+    slug: 'ups-pension-calculator',
+    title: 'UPS Pension Calculator',
+    description: 'Enroil odesrial',
+    icon: Building,
+    link_text: 'Learn more'
+  },
+  {
+    slug: 'ups-pension-calculator-2', // Note: slug must be unique
+    title: 'UPS Pension Calculator',
+    description: 'Loan optimizer',
+    icon: Building,
+    link_text: 'Learn more'
+  },
+  {
+    slug: 'scheme-selector',
+    title: 'Scheme Selector',
+    description: 'Find a adviser',
+    icon: Sparkles,
+    link_text: 'Learn more'
+  },
+   {
     slug: 'ppf-calculator',
     title: 'PPF Calculator',
     description: 'Estimate PPF maturity amount and returns.',
     icon: Landmark,
+    link_text: 'Learn more'
   },
   {
     slug: 'ssy-calculator',
     title: 'SSY Calculator',
     description: 'Calculate SSY maturity and interest earned.',
     icon: Baby,
-  },
-  {
-    slug: 'nps-calculator',
-    title: 'NPS Calculator',
-    description: 'Estimate your NPS corpus and pension.',
-    icon: TrendingUp,
+    link_text: 'Learn more'
   },
   {
     slug: 'apy-calculator',
     title: 'APY Calculator',
     description: 'Find your required APY contribution.',
     icon: Shield,
-  },
-  {
-    slug: 'fd-vs-ppf-calculator',
-    title: 'FD vs PPF Calculator',
-    description: 'Compare returns from FD and PPF.',
-    icon: ArrowRightLeft,
+    link_text: 'Learn more'
   },
   {
     slug: 'tax-regime-calculator',
     title: 'Tax Regime Calculator',
     description: 'Compare tax under Old vs New regimes.',
     icon: FileText,
-  },
-  {
-    slug: 'retirement-corpus-calculator',
-    title: 'Retirement Calculator',
-    description: 'Plan your required retirement corpus.',
-    icon: Target,
-  },
-  {
-    slug: 'loan-optimizer',
-    title: 'Loan Optimizer',
-    description: 'Calculate loan EMI and optimize payments.',
-    icon: BadgePercent,
-  },
-  {
-    slug: 'mutual-fund-overlap-calculator',
-    title: 'MF Overlap Calculator',
-    description: 'Find common holdings in mutual funds.',
-    icon: Layers,
-  },
-  {
-    slug: 'ups-pension-calculator',
-    title: 'UPS Pension Calculator',
-    description: 'Estimate your potential monthly pension.',
-    icon: Building,
-  },
-  {
-    slug: 'scheme-selector',
-    title: 'Scheme Selector',
-    description: 'AI-powered scheme recommendations.',
-    icon: Sparkles,
+    link_text: 'Learn more'
   },
 ];

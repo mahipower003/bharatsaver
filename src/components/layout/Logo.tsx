@@ -3,22 +3,16 @@ import type { SVGProps } from 'react';
 export function Logo(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
-      width="40"
-      height="40"
-      viewBox="0 0 40 40"
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <defs>
-        <linearGradient id="logoGradient" x1="0" y1="20" x2="40" y2="20" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#F59E0B" />
-          <stop offset="1" stopColor="#4F46E5" />
-        </linearGradient>
-      </defs>
-      <circle cx="20" cy="20" r="20" fill="url(#logoGradient)" />
+      <circle cx="16" cy="16" r="16" fill="#3B82F6" />
       <path
-        d="M23.116 14.3H16.888C15.908 14.3 15.148 14.6 14.608 15.1C14.068 15.6 13.8 16.276 13.8 17.128C13.8 17.98 14.068 18.664 14.608 19.18C15.148 19.696 15.908 19.952 16.888 19.952H25.3V21.608H16.888L13.864 25.7H25.564V27.4H12V25.7L18.736 18.256C19.096 17.848 19.276 17.452 19.276 17.068C19.276 16.54 19.06 16.12 18.628 15.808C18.196 15.496 17.62 15.34 16.9 15.34H12V14.3H13.6V12.6H23.116V14.3Z"
+        d="M23.5 10.5H11.75C10.0917 10.5 9.25 11.3333 9.25 13C9.25 14.6667 10.0917 15.5 11.75 15.5H16.25V18.5H11.75C10.0917 18.5 9.25 19.3333 9.25 21C9.25 22.6667 10.0917 23.5 11.75 23.5H23.5V20.5H16.25V18.5H23.5V15.5H11.75V13.5H23.5V10.5Z"
         fill="white"
       />
     </svg>

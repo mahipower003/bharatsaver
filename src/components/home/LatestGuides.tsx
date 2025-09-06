@@ -1,8 +1,7 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
-import { ArrowRight } from 'lucide-react';
 import type { Dictionary } from '@/types';
+import { Separator } from '../ui/separator';
 
 type LatestGuidesProps = {
   dictionary: Dictionary['home']['latest_guides'];
@@ -12,55 +11,42 @@ export function LatestGuides({ dictionary }: LatestGuidesProps) {
   const guides = [
     {
       title: dictionary.guide1_title,
-      image: "https://picsum.photos/600/400?random=1",
-      dataAiHint: "finance chart",
+      subtitle: dictionary.guide1_subtitle,
       link: "#",
     },
     {
       title: dictionary.guide2_title,
-      image: "https://picsum.photos/600/400?random=2",
-      dataAiHint: "family planning",
+      subtitle: dictionary.guide2_subtitle,
       link: "#",
     },
     {
       title: dictionary.guide3_title,
-      image: "https://picsum.photos/600/400?random=3",
-      dataAiHint: "tax documents",
+      subtitle: dictionary.guide3_subtitle,
       link: "#",
     },
   ];
 
   return (
-    <section className="w-full py-12 md:py-20 bg-card">
+    <section className="w-full py-20 bg-background">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center space-y-4">
+        <div className="mb-10">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
             {dictionary.title}
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
-          {guides.map((guide, index) => (
-            <Link key={index} href={guide.link}>
-              <Card className="group overflow-hidden h-full flex flex-col">
-                <div className="overflow-hidden">
-                  <Image
-                    src={guide.image}
-                    alt={guide.title}
-                    width={600}
-                    height={400}
-                    data-ai-hint={guide.dataAiHint}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <CardContent className="p-6 flex-grow flex flex-col">
-                  <h3 className="text-lg font-semibold flex-grow">{guide.title}</h3>
-                  <div className="mt-4 flex items-center text-primary font-medium">
-                    Read More <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-          ))}
+        <div className="relative">
+          <div className="grid grid-cols-1 md:grid-cols-3">
+            {guides.map((guide, index) => (
+              <Link key={index} href={guide.link} className="group p-8">
+                  <h3 className="text-xl font-semibold">{guide.title}</h3>
+                  <p className="mt-2 text-muted-foreground">{guide.subtitle}</p>
+              </Link>
+            ))}
+          </div>
+          <Separator className="absolute top-0 left-1/3 h-full w-[1px] hidden md:block" orientation="vertical" />
+          <Separator className="absolute top-0 left-2/3 h-full w-[1px] hidden md:block" orientation="vertical" />
+          <Separator className="absolute top-0 left-0 w-full" />
+          <Separator className="absolute bottom-0 left-0 w-full" />
         </div>
       </div>
     </section>
