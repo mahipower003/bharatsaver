@@ -12,7 +12,7 @@ type PopularToolsProps = {
 };
 
 export function PopularTools({ lang, dictionary }: PopularToolsProps) {
-  const popularCalculators = calculators.slice(0, 8);
+  const popularCalculators = calculators;
   
   return (
     <section className="w-full py-20 bg-background">
