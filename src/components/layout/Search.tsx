@@ -23,8 +23,6 @@ export function Search({ lang, dictionary }: SearchProps) {
     const trimmedQuery = query.trim();
     if (trimmedQuery) {
       router.push(`/${lang}/search?q=${encodeURIComponent(trimmedQuery)}`);
-    } else {
-      router.push(`/${lang}/search`);
     }
   };
 

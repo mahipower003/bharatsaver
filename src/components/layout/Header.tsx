@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import type { Locale } from '@/lib/i18n-config';
 import type { Dictionary } from '@/types';
+import { Search } from 'lucide-react';
 
 import { Logo } from './Logo';
 import { Button } from '@/components/ui/button';
 import { MobileNav } from './MobileNav';
-import { Search } from './Search';
 
 type HeaderProps = {
   lang: Locale;
@@ -31,13 +31,7 @@ export function Header({ lang, dictionary }: HeaderProps) {
           </Link>
         </div>
 
-        <div className="flex-1 flex justify-center px-4">
-          <div className="w-full max-w-md">
-            <Search lang={lang} dictionary={{ placeholder: dictionary.search_placeholder }} />
-          </div>
-        </div>
-        
-        <nav className="hidden lg:flex items-center gap-8 ml-10">
+        <nav className="hidden lg:flex items-center gap-8 mx-auto">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href} className="text-base font-medium text-muted-foreground transition-colors hover:text-primary">
               {link.label}
@@ -45,7 +39,13 @@ export function Header({ lang, dictionary }: HeaderProps) {
           ))}
         </nav>
 
-        <div className="flex items-center justify-end gap-2">
+        <div className="flex items-center justify-end gap-2 ml-auto">
+           <Link href={`/${lang}/search`}>
+              <Button variant="ghost" size="icon">
+                  <Search className="h-5 w-5" />
+                  <span className="sr-only">Search</span>
+              </Button>
+           </Link>
           <Button asChild className="hidden xl:flex bg-primary hover:bg-primary/90 text-primary-foreground">
             <Link href={`/${lang}/ppf-calculator`}>
               {dictionary.cta}

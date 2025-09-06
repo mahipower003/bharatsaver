@@ -1,3 +1,4 @@
+import { Search } from "@/components/layout/Search";
 import { getDictionary } from "@/lib/dictionaries";
 import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
@@ -13,7 +14,7 @@ export async function generateMetadata({
     params: { lang: Locale },
     searchParams: { q?: string }
 }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang, ['search_page']);
+  const dictionary = await getDictionary(params.lang, ['search_page', 'header']);
   const query = searchParams.q;
   const title = query 
     ? `${dictionary.search_page.title_with_query} "${query}"` 
@@ -36,18 +37,22 @@ export default async function SearchPage({
     params: { lang: Locale },
     searchParams: { q?: string }
 }) {
-  const dictionary = await getDictionary(params.lang, ['search_page']);
+  const dictionary = await getDictionary(params.lang, ['search_page', 'header']);
   const query = searchParams.q;
   
   return (
     <div className="container mx-auto px-4 md:px-6 py-12">
-      <div className="mx-auto max-w-5xl">
-        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
+      <div className="mx-auto max-w-xl">
+        <div className="mb-8">
+            <Search lang={params.lang} dictionary={{ placeholder: dictionary.header.search_placeholder }} />
+        </div>
+        
+        <h1 className="text-2xl font-bold tracking-tight sm:text-3xl font-headline">
           {query ? `${dictionary.search_page.h1_with_query} "${query}"` : dictionary.search_page.h1}
         </h1>
 
         {query && (
-            <p className="mt-8 text-2xl text-muted-foreground">
+            <p className="mt-4 text-muted-foreground">
                 {dictionary.search_page.results_placeholder}
             </p>
         )}
