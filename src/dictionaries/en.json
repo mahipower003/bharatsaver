@@ -71,6 +71,16 @@
     "meta_title": "Financial Calculators | BharatSaver",
     "meta_description": "A comprehensive suite of financial calculators to help you plan your investments, savings, and taxes."
   },
+  "guides_page": {
+    "meta_title": "Financial Guides | BharatSaver",
+    "meta_description": "In-depth guides on financial planning, investments, and savings schemes in India.",
+    "h1": "Financial Guides"
+  },
+  "blog_page": {
+    "meta_title": "Finance Blog | BharatSaver",
+    "meta_description": "Latest articles and updates on personal finance, tax planning, and investment strategies in India.",
+    "h1": "Latest Blog Posts"
+  },
   "ppf_calculator": {
     "title": "PPF Calculator 2025",
     "description": "Calculate the returns on your Public Provident Fund (PPF) investment with our easy-to-use calculator.",

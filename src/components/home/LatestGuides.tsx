@@ -13,7 +13,7 @@ export function LatestGuides({ dictionary }: LatestGuidesProps) {
     {
       title: dictionary.guide1_title,
       subtitle: dictionary.guide1_subtitle,
-      link: '#',
+      link: '/guides',
       image: 'https://picsum.photos/400/250',
       alt: 'A person reviewing financial documents, representing a guide on comparing PPF and FD.',
       hint: 'finance documents'
@@ -21,7 +21,7 @@ export function LatestGuides({ dictionary }: LatestGuidesProps) {
     {
       title: dictionary.guide2_title,
       subtitle: dictionary.guide2_subtitle,
-      link: '#',
+      link: '/guides',
       image: 'https://picsum.photos/400/251',
       alt: 'A happy child with graduation cap, symbolizing planning for education with SSY.',
       hint: 'child education'
@@ -29,7 +29,7 @@ export function LatestGuides({ dictionary }: LatestGuidesProps) {
     {
       title: dictionary.guide3_title,
       subtitle: dictionary.guide3_subtitle,
-      link: '#',
+      link: '/guides',
       image: 'https://picsum.photos/400/252',
       alt: 'A comparison chart showing two different tax regimes side-by-side.',
       hint: 'tax comparison'

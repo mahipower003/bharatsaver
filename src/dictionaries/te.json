@@ -71,6 +71,16 @@
     "meta_title": "Financial Calculators | BharatSaver",
     "meta_description": "మీ పెట్టుబడులు, పొదుపులు మరియు పన్నులను ప్లాన్ చేయడంలో మీకు సహాయపడటానికి ఆర్థిక క్యాలిక్యులేటర్ల యొక్క సమగ్ర సూట్."
   },
+  "guides_page": {
+    "meta_title": "Financial Guides | BharatSaver",
+    "meta_description": "భారతదేశంలో ఆర్థిక ప్రణాళిక, పెట్టుబడులు మరియు పొదుపు పథకాలపై లోతైన మార్గదర్శకాలు.",
+    "h1": "Financial Guides"
+  },
+  "blog_page": {
+    "meta_title": "Finance Blog | BharatSaver",
+    "meta_description": "భారతదేశంలో వ్యక్తిగత ఆర్థిక, పన్ను ప్రణాళిక మరియు పెట్టుబడి వ్యూహాలపై తాజా కథనాలు మరియు నవీకరణలు.",
+    "h1": "Latest Blog Posts"
+  },
   "ppf_calculator": {
     "title": "PPF క్యాలిక్యులేటర్",
     "description": "మా సులభంగా ఉపయోగించగల క్యాలిక్యులేటర్‌తో మీ పబ్లిక్ ప్రావిడెంట్ ఫండ్ (PPF) పెట్టుబడిపై రాబడిని లెక్కించండి.",
