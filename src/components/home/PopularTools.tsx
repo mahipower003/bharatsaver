@@ -1,9 +1,11 @@
+'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import { calculators } from '@/data/calculators';
 import type { Locale } from '@/lib/i18n-config';
 import type { Dictionary } from '@/types';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Loader2 } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 type PopularToolsProps = {
@@ -13,6 +15,11 @@ type PopularToolsProps = {
 
 export function PopularTools({ lang, dictionary }: PopularToolsProps) {
   const popularCalculators = calculators;
+  const [loadingCalculator, setLoadingCalculator] = useState<string | null>(null);
+
+  const handleClick = (slug: string) => {
+    setLoadingCalculator(slug);
+  };
   
   return (
     <section className="w-full py-20 bg-background">
@@ -26,8 +33,14 @@ export function PopularTools({ lang, dictionary }: PopularToolsProps) {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {popularCalculators.map((tool) => {
             const Icon = tool.icon;
+            const isLoading = loadingCalculator === tool.slug;
             return (
-              <Link key={tool.slug} href={`/${lang}/${tool.slug}`} className="group block h-full">
+              <Link 
+                key={tool.slug} 
+                href={`/${lang}/${tool.slug}`} 
+                className="group block h-full"
+                onClick={() => handleClick(tool.slug)}
+              >
                 <Card className="h-full flex flex-col transition-all duration-200 group-hover:shadow-xl group-hover:-translate-y-1">
                   <CardContent className="p-6 flex flex-col flex-grow">
                     <div className="flex items-start gap-4">
@@ -37,9 +50,13 @@ export function PopularTools({ lang, dictionary }: PopularToolsProps) {
                       <h3 className="text-lg font-semibold pt-2">{tool.title}</h3>
                     </div>
                     <p className="text-sm text-muted-foreground mt-4 flex-grow">{tool.description}</p>
-                    <div className="flex items-center text-primary mt-6 text-sm font-medium">
+                    <div className="flex items-center justify-between text-primary mt-6 text-sm font-medium">
                       <span>{tool.link_text}</span>
-                      <ArrowRight className="ml-1 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
+                      {isLoading ? (
+                        <Loader2 className="h-4 w-4 animate-spin" />
+                      ) : (
+                        <ArrowRight className="ml-1 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
+                      )}
                     </div>
                   </CardContent>
                 </Card>
