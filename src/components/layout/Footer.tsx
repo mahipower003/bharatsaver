@@ -1,9 +1,7 @@
 import Link from 'next/link';
-import { Logo } from './Logo';
 import type { Locale } from '@/lib/i18n-config';
 import type { Dictionary } from '@/types';
 import { Twitter, Facebook, Linkedin } from 'lucide-react';
-import { Separator } from '../ui/separator';
 
 type FooterProps = {
   lang: Locale;
@@ -11,44 +9,33 @@ type FooterProps = {
 };
 
 export function Footer({ lang, dictionary }: FooterProps) {
-  const mainLinks = [
-    { title: dictionary.about.title, links: [{title: 'Home', href: `/${lang}`}, {title: 'Guides', href: `/${lang}/guides`}, {title: 'Blog', href: `/${lang}/blog`}] },
-    { title: dictionary.calculators.title, links: dictionary.calculators.links },
-    { title: dictionary.resources.title, links: dictionary.resources.links },
-  ]
+  const allLinks = [
+    { title: 'Home', href: `/${lang}` },
+    { title: 'Guides', href: `/${lang}/guides` },
+    { title: 'Blog', href: `/${lang}/blog` },
+    ...dictionary.calculators.links,
+    ...dictionary.resources.links,
+  ];
+
   return (
     <footer className="bg-background border-t">
-      <div className="container mx-auto px-4 md:px-6 py-12">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
-          <div className="lg:col-span-2 space-y-4">
+      <div className="container mx-auto px-4 md:px-6 py-6">
+        <div className="flex flex-wrap justify-center md:justify-between items-center gap-4 md:gap-8 text-sm text-muted-foreground">
+          <p className="text-center md:text-left">{dictionary.copyright}</p>
+          <nav className="flex flex-wrap justify-center gap-4 md:gap-6">
+            {allLinks.map((link) => (
+              <Link key={link.href} href={link.href} className="hover:text-primary">
+                {link.title}
+              </Link>
+            ))}
+          </nav>
+          <div className="flex gap-4 items-center">
+            <Link href="#" aria-label="Twitter"><Twitter className="h-5 w-5 hover:text-primary" /></Link>
+            <Link href="#" aria-label="Facebook"><Facebook className="h-5 w-5 hover:text-primary" /></Link>
+            <Link href="#" aria-label="Linkedin"><Linkedin className="h-5 w-5 hover:text-primary" /></Link>
           </div>
-          {mainLinks.map(section => (
-            <div key={section.title}>
-              <h3 className="text-base font-semibold">{section.title}</h3>
-              <ul className="mt-4 space-y-2">
-                {section.links.map((link) => (
-                  <li key={link.href}>
-                    <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary">
-                      {link.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-           <div>
-            <h3 className="text-base font-semibold">{dictionary.contact.title}</h3>
-            <div className="flex gap-4 mt-4">
-                <Link href="#" aria-label="Twitter"><Twitter className="h-5 w-5 text-muted-foreground hover:text-primary" /></Link>
-                <Link href="#" aria-label="Facebook"><Facebook className="h-5 w-5 text-muted-foreground hover:text-primary" /></Link>
-                <Link href="#" aria-label="Linkedin"><Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary" /></Link>
-            </div>
-          </div>
-        </div>
-        <Separator className="my-8"/>
-        <div className="flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground">
-          <p>{dictionary.copyright}</p>
-          <p className="mt-4 md:mt-0 max-w-md text-center md:text-right">{dictionary.disclaimer}</p>
+          <p className="w-full text-center text-xs mt-4 md:hidden">{dictionary.disclaimer}</p>
+          <p className="hidden md:block text-right max-w-md">{dictionary.disclaimer}</p>
         </div>
       </div>
     </footer>
