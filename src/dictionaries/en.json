@@ -12,7 +12,11 @@
   "footer": {
     "about": {
       "title": "About BharatSaver",
-      "description": ""
+      "links": [
+        { "title": "Home", "href": "/en" },
+        { "title": "Guides", "href": "/en/guides" },
+        { "title": "Blog", "href": "/en/blog" }
+      ]
     },
     "calculators": {
       "title": "Calcutors",
@@ -22,7 +26,7 @@
       ]
     },
     "resources": {
-      "title": "Besources",
+      "title": "Resources",
       "links": [
         { "title": "Resources", "href": "/en/guides" },
         { "title": "Contact", "href": "/en/contact" }
