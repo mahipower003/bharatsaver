@@ -22,21 +22,21 @@
       "title": "Calculators",
       "links": [
         { "title": "NPS Calculator", "href": "/nps-calculator" },
-        { "title": "PPF Calculator", "href": "/ppf-calculator" },
-        { "title": "SSY Calculator", "href": "/ssy-calculator" }
+        { "title": "Calculator List", "href": "/calculators" },
+        { "title": "Blog", "href": "/blog" }
       ]
     },
     "resources": {
       "title": "Resources",
       "links": [
-        { "title": "Guides", "href": "/guides" },
+        { "title": "Resources", "href": "/guides" },
         { "title": "Contact", "href": "/contact" }
       ]
     },
     "contact": {
       "title": "Contact"
     },
-    "copyright": "© 2025 BharatSaver. All Rights Reserved.",
+    "copyright": "© 2025",
     "disclaimer": "We are an independent articles website. We are not affiliated with LIC or any government body."
   },
   "home": {

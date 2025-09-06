@@ -22,21 +22,21 @@
       "title": "క్యాలిక్యులేటర్లు",
       "links": [
         { "title": "NPS క్యాలిక్యులేటర్", "href": "/nps-calculator" },
-        { "title": "PPF క్యాలిక్యులేటర్", "href": "/ppf-calculator" },
-        { "title": "SSY క్యాలిక్యులేటర్", "href": "/ssy-calculator" }
+        { "title": "క్యాలిక్యులేటర్ జాబితా", "href": "/calculators" },
+        { "title": "బ్లాగ్", "href": "/blog" }
       ]
     },
     "resources": {
       "title": "వనరులు",
       "links": [
-        { "title": "గైడ్లు", "href": "/guides" },
+        { "title": "వనరులు", "href": "/guides" },
         { "title": "సంప్రదించండి", "href": "/contact" }
       ]
     },
     "contact": {
       "title": "సంప్రదించండి"
     },
-    "copyright": "© 2025 భారత్ సేవర్. సర్వ హక్కులు ప్రత్యేకించబడినవి.",
+    "copyright": "© 2025",
     "disclaimer": "మేము ఒక స్వతంత్ర కథనాల వెబ్‌సైట్. మేము LIC లేదా ఏ ప్రభుత్వ సంస్థతోనూ అనుబంధించబడలేదు."
   },
   "home": {

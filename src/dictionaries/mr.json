@@ -22,21 +22,21 @@
       "title": "कॅल्क्युलेटर",
       "links": [
         { "title": "NPS कॅल्क्युलेटर", "href": "/nps-calculator" },
-        { "title": "PPF कॅल्क्युलेटर", "href": "/ppf-calculator" },
-        { "title": "SSY कॅल्क्युलेटर", "href": "/ssy-calculator" }
+        { "title": "कॅल्क्युलेटर सूची", "href": "/calculators" },
+        { "title": "ब्लॉग", "href": "/blog" }
       ]
     },
     "resources": {
       "title": " संसाधने",
       "links": [
-        { "title": "मार्गदर्शक", "href": "/guides" },
+        { "title": " संसाधने", "href": "/guides" },
         { "title": "संपर्क", "href": "/contact" }
       ]
     },
     "contact": {
       "title": "संपर्क"
     },
-    "copyright": "© 2025 भारतसेवर. सर्व हक्क राखीव.",
+    "copyright": "© 2025",
     "disclaimer": "आम्ही एक स्वतंत्र लेख वेबसाइट आहोत. आम्ही एलआयसी किंवा कोणत्याही सरकारी संस्थेशी संलग्न नाही."
   },
   "home": {

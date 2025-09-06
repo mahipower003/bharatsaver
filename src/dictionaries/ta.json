@@ -22,21 +22,21 @@
       "title": "கால்குலேட்டர்கள்",
       "links": [
         { "title": "NPS கால்குலேட்டர்", "href": "/nps-calculator" },
-        { "title": "PPF கால்குலேட்டர்", "href": "/ppf-calculator" },
-        { "title": "SSY கால்குலேட்டர்", "href": "/ssy-calculator" }
+        { "title": "கால்குலேட்டர் பட்டியல்", "href": "/calculators" },
+        { "title": "வலைப்பதிவு", "href": "/blog" }
       ]
     },
     "resources": {
       "title": "வளங்கள்",
       "links": [
-        { "title": "வழிகாட்டிகள்", "href": "/guides" },
+        { "title": "வளங்கள்", "href": "/guides" },
         { "title": "தொடர்புக்கு", "href": "/contact" }
       ]
     },
     "contact": {
       "title": "தொடர்புக்கு"
     },
-    "copyright": "© 2025 பாரத் சேவர். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.",
+    "copyright": "© 2025",
     "disclaimer": "நாங்கள் ஒரு சுதந்திரமான கட்டுரைகள் இணையதளம். நாங்கள் எல்ஐசி அல்லது எந்தவொரு அரசாங்க அமைப்புடனும் இணைக்கப்படவில்லை."
   },
   "home": {
