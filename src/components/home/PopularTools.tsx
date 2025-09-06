@@ -24,7 +24,7 @@ export function PopularTools({ lang, dictionary }: PopularToolsProps) {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {popularCalculators.map((tool) => (
-            <Link key={tool.slug} href={`/${lang}/${tool.slug}`} className="group">
+            <Link key={tool.slug} href={`/${lang}/${tool.slug}`} className="group block h-full">
               <Card className="h-full flex flex-col transition-all duration-200 group-hover:shadow-xl group-hover:-translate-y-1">
                 <CardContent className="p-6 flex flex-col flex-grow">
                   <div className="flex items-start gap-4">
