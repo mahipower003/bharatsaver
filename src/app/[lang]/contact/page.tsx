@@ -52,8 +52,8 @@ export default async function ContactPage({ params }: { params: { lang: Locale }
     {
       icon: Mail,
       title: "Email",
-      value: "maheshchaube333@gmail.com",
-      href: "mailto:maheshchaube333@gmail.com",
+      value: "maheshchaube333@gamil.com",
+      href: "mailto:maheshchaube333@gamil.com",
     },
     {
       icon: Phone,
@@ -92,7 +92,7 @@ export default async function ContactPage({ params }: { params: { lang: Locale }
                         </CardHeader>
                         <CardContent>
                             <CardTitle className="text-xl">{detail.title}</CardTitle>
-                            <CardDescription className="mt-2 text-base">{detail.value}</CardDescription>
+                            <CardDescription className="mt-2 text-base break-all">{detail.value}</CardDescription>
                         </CardContent>
                     </Card>
                 </Link>
