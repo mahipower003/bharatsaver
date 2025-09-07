@@ -121,8 +121,8 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
           <CardHeader>
             <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.advantages.title}</h2>
           </CardHeader>
-          <CardContent className="prose dark:prose-invert max-w-none">
-            <p>{dictionary.ppf_calculator.advantages.intro}</p>
+          <CardContent>
+            <p className="mb-6 text-muted-foreground">{dictionary.ppf_calculator.advantages.intro}</p>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
               {dictionary.ppf_calculator.advantages.points.map((point: string, index: number) => (
                 <li key={index} className="flex items-start gap-3">
@@ -131,7 +131,7 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
                 </li>
               ))}
             </ul>
-            <p className="mt-4" dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.advantages.conclusion }}></p>
+            <p className="mt-6 font-semibold" dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.advantages.conclusion }}></p>
           </CardContent>
         </Card>
 
@@ -154,18 +154,24 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
           <CardHeader>
             <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.tax_benefits.title}</h2>
           </CardHeader>
-          <CardContent className="prose dark:prose-invert max-w-none">
-            <p>{dictionary.ppf_calculator.tax_benefits.intro}</p>
-            <h3 className="text-xl font-semibold">{dictionary.ppf_calculator.tax_benefits.contribution_title}</h3>
-            <p dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.tax_benefits.contribution_body }}></p>
-            <h3 className="text-xl font-semibold">{dictionary.ppf_calculator.tax_benefits.interest_title}</h3>
-            <p>{dictionary.ppf_calculator.tax_benefits.interest_body}</p>
-            <h3 className="text-xl font-semibold">{dictionary.ppf_calculator.tax_benefits.maturity_title}</h3>
-            <p>{dictionary.ppf_calculator.tax_benefits.maturity_body}</p>
-            <div className="bg-primary/10 p-4 rounded-md border-l-4 border-primary">
+          <CardContent className="space-y-6">
+            <p className="text-muted-foreground">{dictionary.ppf_calculator.tax_benefits.intro}</p>
+            <div>
+                <h3 className="text-lg font-semibold">{dictionary.ppf_calculator.tax_benefits.contribution_title}</h3>
+                <p className="text-muted-foreground mt-1" dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.tax_benefits.contribution_body }}></p>
+            </div>
+            <div>
+                <h3 className="text-lg font-semibold">{dictionary.ppf_calculator.tax_benefits.interest_title}</h3>
+                <p className="text-muted-foreground mt-1">{dictionary.ppf_calculator.tax_benefits.interest_body}</p>
+            </div>
+            <div>
+                <h3 className="text-lg font-semibold">{dictionary.ppf_calculator.tax_benefits.maturity_title}</h3>
+                <p className="text-muted-foreground mt-1">{dictionary.ppf_calculator.tax_benefits.maturity_body}</p>
+            </div>
+            <div className="bg-primary/10 p-4 rounded-lg border-l-4 border-primary">
               <p className="font-semibold" dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.tax_benefits.why_matters }}></p>
             </div>
-            <p dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.tax_benefits.footer_note }}></p>
+            <p className="text-sm text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.tax_benefits.footer_note }}></p>
           </CardContent>
         </Card>
         
@@ -237,5 +243,3 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
     </div>
   );
 }
-
-    
