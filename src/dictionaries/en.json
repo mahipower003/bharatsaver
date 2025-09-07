@@ -404,8 +404,8 @@
     }
   },
   "nps_calculator": {
-    "meta_title": "NPS Calculator 2025 — National Pension System Pension & Corpus Calculator",
-    "meta_description": "Use our FREE NPS Calculator to estimate your retirement corpus, tax benefits and expected monthly pension. Supports monthly/yearly contributions — updated NPS rules for 2025.",
+    "meta_title": "NPS Calculator 2025 — National Pension System Corpus & Monthly Pension",
+    "meta_description": "Free NPS Calculator 2025 — estimate your retirement corpus, tax benefits and monthly pension. Supports monthly/yearly contributions and provides year-wise projections.",
     "h1": "NPS Calculator — Calculate Your Retirement Corpus & Monthly Pension",
     "description": "Plan a confident retirement with our National Pension System (NPS) Calculator. Enter your monthly or annual contribution, expected rate of return, and years to retirement — we’ll show your estimated corpus, the tax-efficient benefits, and a projected monthly annuity after age 60.",
     "title": "NPS Calculator",
@@ -434,6 +434,7 @@
     "view_chart": "Chart",
     "view_table": "Table",
     "export_csv": "Export CSV",
+    "last_updated": "Last Updated:",
     "table_year": "Year",
     "table_age": "Age",
     "table_opening_balance": "Opening Balance",
@@ -444,7 +445,7 @@
     "amount_in_lakhs": "Amount (in Lakhs)",
     "what_is_nps": {
       "title": "What is NPS (National Pension System)?",
-      "body": "NPS is a government-regulated retirement pension scheme for Indian citizens (and NRIs in certain cases) run under PFRDA. It’s a disciplined, market-linked retirement instrument offering:",
+      "body": "NPS is a government-regulated retirement pension scheme for Indian citizens (and NRIs in certain cases) run under PFRDA. It’s a disciplined, market-linked retirement instrument offering investment via equity, corporate bonds, and government securities. You can choose your asset allocation or opt for an auto-choice strategy.",
       "points": [
         {
           "title": "Tier I (Retirement Savings)",
@@ -452,12 +453,13 @@
         },
         {
           "title": "Tier II (Optional Account)",
-          "body": "A flexible, voluntary savings account with no lock-in, but also no extra tax benefits."
+          "body": "A flexible, voluntary savings account with no lock-in, but also no extra tax benefit."
         }
-      ]
+      ],
+      "footer": "Source: <a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA Official Website</a>"
     },
     "how_it_works": {
-      "title": "How the NPS Calculator Works (Formula & Explanation)",
+      "title": "How the NPS Calculator Works (Formula & Example)",
       "formula_title": "Formulas Used",
       "annual": {
         "title": "Annual Contributions",
@@ -465,21 +467,22 @@
       },
       "monthly": {
         "title": "Monthly Contributions",
-        "formula": "FV = PMT × [ (1 + r/12)^(12t) − 1 ] / (r/12)"
+        "formula": "FV = PMT × [ ((1 + r/12)^(12t) − 1) / (r/12) ]"
       }
     },
     "example": {
-      "title": "Example: How to Calculate NPS Returns",
-      "intro": "Let's assume the following scenario for a monthly contribution example to see how the corpus is calculated:",
+      "title": "How to Calculate NPS Returns (Step-by-Step Example)",
+      "intro": "Let's assume the following scenario to see how the corpus is calculated with annual contributions:",
       "assumptions": [
-        "You contribute <strong>₹6,000 per month</strong> (₹72,000 per year).",
+        "You contribute <strong>₹6,000 per month</strong>, which is <strong>₹72,000 per year</strong>.",
         "Expected average return (blend of equity + debt): <strong>9% p.a.</strong>",
         "Contribution period: <strong>30 years</strong> (from age 30 to 60)."
       ],
-      "result": "<strong>Estimated corpus at retirement ≈ ₹98.2 lakh</strong>",
-      "annuity_intro": "From this corpus, you must decide what is the NPS annuity rate in India you expect:",
-      "annuity_result": "Withdrawable lump sum (60%) ≈ ₹58.9 lakh<br/>Amount for Annuity (40%) ≈ ₹39.3 lakh<br/>If you purchase an annuity with a 6% payout rate, your <strong>monthly pension would be ≈ ₹19,650</strong>.",
-      "disclaimer": "These numbers are for illustration. Real-world returns vary and annuity rates change."
+      "calculation_steps": "<ul><li><strong>Annual contribution (P):</strong> ₹72,000</li><li><strong>Annual rate (r):</strong> 0.09</li><li><strong>Years (t):</strong> 30</li></ul><p class='mt-2'>Applying the formula <strong>FV = P × [((1 + r)^t - 1) / r]</strong>:</p><ol class='list-decimal pl-5 space-y-1 mt-2'><li>Compute (1 + r)^t = (1.09)^30 ≈ 13.27</li><li>Subtract 1: 13.27 - 1 = 12.27</li><li>Divide by r: 12.27 / 0.09 ≈ 136.33</li><li>Multiply by P: 72,000 × 136.33 ≈ ₹98,16,000</li></ol>",
+      "result": "<strong>Estimated Corpus at Retirement ≈ ₹98.2 Lakh</strong>",
+      "annuity_intro": "From this corpus, you can calculate your monthly pension:",
+      "annuity_result": "Withdrawable Lump Sum (60%) ≈ ₹58.9 lakh<br/>Amount for Annuity (40%) ≈ ₹39.3 lakh<br/>If you purchase an annuity with a 6% payout rate, your <strong>monthly pension would be ≈ ₹19,650</strong>.",
+      "disclaimer": "These numbers are for illustration. Real-world returns vary and annuity rates change. Always check live annuity quotes from providers before committing."
     },
     "tax_benefits": {
       "title": "NPS Tax Benefits 2025: Section 80C & 80CCD(1B)",
@@ -487,18 +490,17 @@
       "points": [
         "<strong>Section 80C:</strong> Up to ₹1.5 lakh deduction for your contributions.",
         "<strong>Section 80CCD(1B):</strong> An additional deduction of up to ₹50,000, over and above the 80C limit.",
-        "<strong>Employer Contributions:</strong> Your employer's contribution (up to 10% of basic salary) is also deductible under Section 80CCD(2)."
+        "<strong>Employer Contributions:</strong> Your employer's contribution (up to 10% of basic salary) is also deductible under Section 80CCD(2). Source: <a href='https://incometaxindia.gov.in/Pages/tools/deduction-under-section-80c.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Income Tax Department</a>."
       ]
     },
     "rules": {
-      "title": "Key NPS Rules You Must Know (Tier 1 vs Tier 2)",
+      "title": "NPS Tier I vs Tier II — Rules & Differences",
       "intro": "It's important to understand the NPS Tier 1 vs Tier 2 differences:",
       "tier1": {
         "title": "Tier I (Retirement Account)",
         "points": [
           "Minimum contribution: ₹500-₹1000 per year, depending on the provider.",
-          "Withdrawals are restricted until retirement (age 60).",
-          "At retirement, 60% can be withdrawn tax-free.",
+          "At retirement (age 60), 60% can be withdrawn tax-free.",
           "Minimum 40% must be used to buy an annuity for pension."
         ]
       },
@@ -509,6 +511,10 @@
           "No special tax benefits on contributions.",
           "Functions like a flexible investment account."
         ]
+      },
+      "withdrawal": {
+        "title": "Partial Withdrawals",
+        "body": "Allowed after a minimum period (usually 3 years) for specified reasons like education, medical emergencies, or house purchase, subject to conditions."
       }
     },
     "comparison": {
@@ -524,7 +530,7 @@
       },
       "footer_note": "Explore our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> and <a href='/{lang}/fd-vs-ppf-calculator' class='underline'>FD vs PPF Calculator</a> to compare returns."
     },
-    "faq_title": "Frequently Asked Questions about the National Pension System",
+    "faq_title": "Frequently Asked Questions about NPS",
     "faqs": [
       {
         "question": "What is the NPS calculator?",
@@ -532,11 +538,11 @@
       },
       {
         "question": "How is NPS corpus calculated?",
-        "answer": "By compounding your periodic contributions at the expected annual return rate until retirement. For a monthly contribution example, use our NPS pension calculator."
+        "answer": "By compounding your periodic contributions at the expected annual return rate until retirement. For annual contributions, the formula is FV = P × [((1 + r)^t - 1) / r]."
       },
       {
         "question": "How much pension will I get from my NPS corpus?",
-        "answer": "Your pension depends on how much you annuitize at retirement and the prevailing annuity rate in India. Example: a ₹39.3L annuity at 6% yields ~₹19,650/month."
+        "answer": "Your pension depends on how much of your corpus you annuitize and the prevailing annuity rate. For example, a ₹39.3 lakh annuity at a 6% rate can yield roughly ₹19,650 per month."
       },
       {
         "question": "What tax benefits does NPS offer for 2025?",

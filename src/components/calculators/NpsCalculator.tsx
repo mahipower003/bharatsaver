@@ -81,7 +81,8 @@ export function NpsCalculator({ dictionary }: NpsCalculatorProps) {
 
   const [result, setResult] = useState<CalculationResult | null>(null);
   const [isLoading, setIsLoading] = useState(false);
-
+  const [lastUpdated, setLastUpdated] = useState('');
+  
   const form = useForm<NpsFormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -113,6 +114,12 @@ export function NpsCalculator({ dictionary }: NpsCalculatorProps) {
       handleSubmit(values as NpsFormValues);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    const currentDate = new Date();
+    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    setLastUpdated(`${monthNames[currentDate.getMonth()]} ${currentDate.getFullYear()}`);
   }, []);
 
   async function handleSubmit(values: NpsFormValues) {
@@ -244,10 +251,15 @@ export function NpsCalculator({ dictionary }: NpsCalculatorProps) {
     <>
       <Card className="shadow-lg">
         <CardHeader>
+           <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
             <h2 className="flex items-center gap-2 text-xl font-bold">
                 <TrendingUp className="h-6 w-6 text-primary" />
                 <span>{dictionary.title}</span>
             </h2>
+             {lastUpdated && (
+              <p className="text-sm text-muted-foreground mt-1 whitespace-nowrap">{dictionary.last_updated} {lastUpdated}</p>
+            )}
+            </div>
              <CardDescription>{dictionary.form_description}</CardDescription>
         </CardHeader>
         <CardContent>
@@ -381,6 +393,10 @@ export function NpsCalculator({ dictionary }: NpsCalculatorProps) {
                 <p className="text-sm text-muted-foreground">{dictionary.total_corpus}</p>
                 <p className="text-2xl font-bold text-primary">{formatCurrency(result.totalCorpus)}</p>
               </div>
+              <div className="bg-green-500/10 p-4 rounded-lg">
+                <p className="text-sm text-muted-foreground">{dictionary.monthly_pension}</p>
+                <p className="text-2xl font-bold text-green-600">{formatCurrency(result.monthlyPension)}</p>
+              </div>
               <div className="bg-secondary p-4 rounded-lg">
                 <p className="text-sm text-muted-foreground">{dictionary.total_investment}</p>
                 <p className="text-xl font-bold">{formatCurrency(result.totalInvestment)}</p>
@@ -388,10 +404,6 @@ export function NpsCalculator({ dictionary }: NpsCalculatorProps) {
               <div className="bg-accent/10 p-4 rounded-lg">
                 <p className="text-sm text-muted-foreground">{dictionary.total_interest}</p>
                 <p className="text-xl font-bold text-accent-foreground">{formatCurrency(result.totalInterest)}</p>
-              </div>
-               <div className="bg-green-500/10 p-4 rounded-lg">
-                <p className="text-sm text-muted-foreground">{dictionary.monthly_pension}</p>
-                <p className="text-2xl font-bold text-green-600">{formatCurrency(result.monthlyPension)}</p>
               </div>
             </div>
              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 text-center">

@@ -6,8 +6,7 @@ import type { Metadata } from "next";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { CheckCircle2, TrendingUp, ShieldCheck, Scale, Star, FileText } from "lucide-react";
-import Link from "next/link";
+import { TrendingUp, ShieldCheck, Scale, Star } from "lucide-react";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -36,10 +35,10 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     title: dictionary.nps_calculator.meta_title,
     description: dictionary.nps_calculator.meta_description,
     openGraph: {
-      title: dictionary.nps_calculator.meta_title,
-      description: dictionary.nps_calculator.meta_description,
+      title: "NPS Calculator 2025 — National Pension System Corpus & Pension",
+      description: "Use our NPS calculator to plan your retirement. Enter contribution, expected returns and retirement age to get corpus & monthly pension estimates.",
       url: pageUrl,
-      images: [{ url: `${siteUrl}/images/nps-calculator-online.png`, width: 1200, height: 630, alt: 'BharatSaver NPS Calculator' }],
+      images: [{ url: `/images/nps-calculator-online.png`, width: 1200, height: 630, alt: 'BharatSaver NPS Calculator' }],
       locale: params.lang === 'en' ? 'en_IN' : params.lang,
       type: 'website',
     },
@@ -102,10 +101,11 @@ export default async function NpsCalculatorPage({ params }: { params: { lang: Lo
               {dictionary.nps_calculator.what_is_nps.points.map((point: {title: string, body: string}, index: number) => (
                 <div key={index} className="bg-muted/50 p-4 rounded-lg">
                   <h3 className="font-semibold text-primary">{point.title}</h3>
-                  <p className="text-sm text-muted-foreground mt-1">{point.body}</p>
+                  <p className="text-sm text-muted-foreground mt-1" dangerouslySetInnerHTML={{__html: point.body}}></p>
                 </div>
               ))}
             </div>
+             <p className="mt-4 text-sm text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.nps_calculator.what_is_nps.footer }}></p>
           </CardContent>
         </Card>
 
@@ -119,11 +119,11 @@ export default async function NpsCalculatorPage({ params }: { params: { lang: Lo
               <div className="space-y-4">
                 <div>
                   <h4 className="font-medium">{dictionary.nps_calculator.how_it_works.annual.title}</h4>
-                  <p className="font-mono bg-background p-3 rounded-md text-center text-sm md:text-base mt-1">{dictionary.nps_calculator.how_it_works.annual.formula}</p>
+                  <p className="font-mono bg-background p-3 rounded-md text-center text-sm md:text-base mt-1" dangerouslySetInnerHTML={{__html: dictionary.nps_calculator.how_it_works.annual.formula}}></p>
                 </div>
                  <div>
                   <h4 className="font-medium">{dictionary.nps_calculator.how_it_works.monthly.title}</h4>
-                  <p className="font-mono bg-background p-3 rounded-md text-center text-sm md:text-base mt-1">{dictionary.nps_calculator.how_it_works.monthly.formula}</p>
+                   <p className="font-mono bg-background p-3 rounded-md text-center text-sm md:text-base mt-1" dangerouslySetInnerHTML={{__html: dictionary.nps_calculator.how_it_works.monthly.formula}}></p>
                 </div>
               </div>
             </div>
@@ -136,6 +136,7 @@ export default async function NpsCalculatorPage({ params }: { params: { lang: Lo
                   <li key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
                 ))}
               </ul>
+               <div className="mt-4 prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.nps_calculator.example.calculation_steps }}></div>
               <div className="mt-4 bg-primary/10 p-4 rounded-lg border-l-4 border-primary">
                 <p className="text-muted-foreground font-semibold" dangerouslySetInnerHTML={{ __html: dictionary.nps_calculator.example.result }}></p>
               </div>
@@ -190,6 +191,10 @@ export default async function NpsCalculatorPage({ params }: { params: { lang: Lo
                   </ul>
                 </div>
              </div>
+             <div className="pt-4">
+                <h3 className="font-semibold text-lg">{dictionary.nps_calculator.rules.withdrawal.title}</h3>
+                <p className="text-muted-foreground mt-1" dangerouslySetInnerHTML={{__html: dictionary.nps_calculator.rules.withdrawal.body}}></p>
+             </div>
           </CardContent>
         </Card>
 
@@ -216,7 +221,7 @@ export default async function NpsCalculatorPage({ params }: { params: { lang: Lo
                       ))}
                   </TableBody>
               </Table>
-               <p className="text-sm text-muted-foreground mt-4" dangerouslySetInnerHTML={{ __html: dictionary.nps_calculator.comparison.footer_note.replace('{lang}', params.lang) }}></p>
+               <p className="text-sm text-muted-foreground mt-4" dangerouslySetInnerHTML={{ __html: dictionary.nps_calculator.comparison.footer_note.replace(/{lang}/g, params.lang) }}></p>
           </CardContent>
         </Card>
 
