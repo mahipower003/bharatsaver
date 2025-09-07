@@ -5,33 +5,19 @@ export function BharatSaverLogo(props: SVGProps<SVGSVGElement>) {
     <svg
       width="40"
       height="40"
-      viewBox="0 0 40 40"
+      viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
       <path
-        d="M33.3333 14.1667V22.5C33.3333 23.3214 33.0946 24.1242 32.6462 24.8196L23.8899 37.5C22.2593 39.7807 20 39.7807 18.3699 37.5L6.66663 24.1667C6.66663 24.1667 6.66663 19.1667 6.66663 14.1667C6.66663 6.66667 20 3.33333 20 3.33333S33.3333 6.66667 33.3333 14.1667Z"
+        d="M12 2L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-3z"
         fill="currentColor"
       />
       <path
-        d="M25.8333 20H15.8333"
+        d="M15.5 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0zM8 10h8m-8 2h8"
         stroke="hsl(var(--primary-foreground))"
-        strokeWidth="2.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M25.8333 15.833H15.8333"
-        stroke="hsl(var(--primary-foreground))"
-        strokeWidth="2.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M22.5 11.667C19.1666 11.667 15.8333 14.167 15.8333 17.5003C15.8333 20.8337 19.1666 23.3337 22.5 23.3337C22.5 23.3337 22.5 25.0003 22.5 26.667"
-        stroke="hsl(var(--primary-foreground))"
-        strokeWidth="2.5"
+        strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
