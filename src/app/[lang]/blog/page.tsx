@@ -2,7 +2,6 @@
 import { getDictionary } from "@/lib/dictionaries";
 import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
-import { pages } from '@/data/pages';
 import { calculators } from '@/data/calculators';
 import Link from "next/link";
 import Image from "next/image";
@@ -34,17 +33,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 export default async function BlogPage({ params }: { params: { lang: Locale }}) {
   const dictionary = await getDictionary(params.lang, ['blog_page']);
 
-  const combinedContent = [
-    ...pages,
-    ...calculators.map(calc => ({
-      ...calc,
-      // Map calculator fields to match page fields for consistency
-      changefreq: 'monthly' as const,
-      priority: 0.9,
-    }))
-  ].filter(item => item.lastModified); // Ensure item has a lastModified date
-
-  const sortedContent = combinedContent.sort((a, b) => new Date(b.lastModified).getTime() - new Date(a.lastModified).getTime());
+  const sortedContent = [...calculators].sort((a, b) => new Date(b.lastModified).getTime() - new Date(a.lastModified).getTime());
   
   return (
     <div className="py-12">
@@ -60,7 +49,7 @@ export default async function BlogPage({ params }: { params: { lang: Locale }}) 
 
         <div className="space-y-12">
           {sortedContent.map((item) => (
-             <Link key={item.slug} href={`/${params.lang}${item.slug.startsWith('/') ? item.slug : `/${item.slug}`}`} className="group block">
+             <Link key={item.slug} href={`/${params.lang}/${item.slug}`} className="group block">
                 <Card className="transition-all duration-300 group-hover:shadow-xl group-hover:border-primary/30 overflow-hidden md:flex md:flex-row">
                     <div className="md:w-1/3">
                         <Image
