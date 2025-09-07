@@ -14,27 +14,27 @@ type SitemapEntry = {
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const { locales, defaultLocale } = i18nConfig;
+  const { locales } = i18nConfig;
 
-  // Get all unique slugs from the pages data
-  const allRoutes = pages.map(p => p.slug === '/' ? '' : p.slug);
+  const sitemapEntries: SitemapEntry[] = pages.flatMap(page => {
+    // For each page, create a sitemap entry for each locale
+    return locales.map(locale => {
+      const pagePath = page.slug === '/' ? '' : page.slug;
+      
+      // Create alternate links for each locale
+      const alternates: Record<string, string> = {};
+      locales.forEach(altLocale => {
+        alternates[altLocale] = `${BASE_URL}/${altLocale}${pagePath}`;
+      });
 
-  const sitemapEntries: SitemapEntry[] = allRoutes.map(route => {
-    const pageData = pages.find(p => p.slug === (route === '' ? '/' : route));
-    
-    // Create alternate links for each locale
-    const alternates: Record<string, string> = {};
-    locales.forEach(locale => {
-      alternates[locale] = `${BASE_URL}/${locale}${route}`;
+      return {
+        url: `${BASE_URL}/${locale}${pagePath}`,
+        lastModified: new Date(page.lastModified),
+        alternates: {
+          languages: alternates,
+        },
+      };
     });
-
-    return {
-      url: `${BASE_URL}/${defaultLocale}${route}`,
-      lastModified: pageData ? new Date(pageData.lastModified) : new Date(),
-      alternates: {
-        languages: alternates,
-      },
-    };
   });
 
   return sitemapEntries;

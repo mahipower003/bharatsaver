@@ -4,4 +4,6 @@ module.exports = {
   generateRobotsTxt: true,
   // Note: The sitemap generation is now handled by src/app/sitemap.ts
   // next-sitemap will use the output of that file.
+  // We disable alternateRefs because we are generating them manually in sitemap.ts
+  alternateRefs: [],
 };
