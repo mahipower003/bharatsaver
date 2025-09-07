@@ -406,6 +406,8 @@
   "nps_calculator": {
     "meta_title": "NPS Calculator 2025 — National Pension System Pension & Corpus Calculator",
     "meta_description": "Use our FREE NPS Calculator to estimate your retirement corpus, tax benefits and expected monthly pension. Supports monthly/yearly contributions — updated NPS rules for 2025.",
+    "og_title": "NPS Calculator 2025 — National Pension System Corpus & Pension",
+    "og_description": "Use our NPS calculator to plan your retirement. Enter contribution, expected returns and retirement age to get corpus & monthly pension estimates.",
     "h1": "NPS Calculator — Calculate Your Retirement Corpus & Monthly Pension",
     "description": "Plan a confident retirement with our National Pension System (NPS) Calculator. Enter your monthly or annual contribution, expected rate of return, and years to retirement — we’ll show your estimated corpus, the tax-efficient benefits, and a projected monthly annuity after age 60.",
     "title": "NPS Calculator",
@@ -455,15 +457,14 @@
           "title": "Tier II (Optional Account)",
           "body": "A flexible, voluntary savings account with no lock-in, but also no extra tax benefit."
         }
-      ],
-      "footer": ""
+      ]
     },
     "how_it_works": {
       "title": "How the NPS Calculator Works (Formula & Example)",
       "formula_title": "Formulas Used",
       "annual": {
         "title": "For annual contributions, the calculator uses the future value of a series formula:",
-        "formula": "FV = P × [ (1 + r)^t − 1 ] / r"
+        "formula": "FV = P × [ ((1 + r)^t − 1) / r ]"
       },
       "monthly": {
         "title": "For monthly contributions, it uses the future value of an annuity formula:",
@@ -559,9 +560,87 @@
     }
   },
   "apy_calculator": {
-    "meta_title": "APY Calculator (2025) - Atal Pension Yojana | BharatSaver",
-    "meta_description": "Our free Atal Pension Yojana (APY) Calculator helps you find your required monthly contribution for a desired pension amount. Secure your future with a government-backed pension. Updated for 2025.",
-    "h1": "Atal Pension Yojana (APY) Calculator"
+    "meta_title": "APY Calculator 2025 — Atal Pension Yojana Premium Chart & Pension Estimate",
+    "meta_description": "Use our FREE APY Calculator to find the monthly premium required for ₹1,000–₹5,000 pensions. Get age-based premium charts, eligibility, FAQs and downloadable CSV. Updated Sep 2025.",
+    "og_title": "APY Calculator 2025 — Atal Pension Yojana Premium Chart & Pension Estimate",
+    "og_description": "Use our APY Calculator to find your monthly premium for a guaranteed pension of ₹1,000 to ₹5,000. Includes premium charts by age, eligibility, and FAQs.",
+    "h1": "APY Calculator 2025 — Atal Pension Yojana Premium & Pension Estimate",
+    "description": "Enter your age and desired pension to see the required monthly premium instantly. Download your plan as a CSV.",
+    "title": "APY Calculator",
+    "last_updated": "Last Updated:",
+    "form_description": "Find out your monthly contribution for a guaranteed pension.",
+    "age_label": "Your Age",
+    "years_label": "years",
+    "pension_label": "Desired Monthly Pension",
+    "calculate_button": "Calculate Premium",
+    "loading": "Calculating...",
+    "results_title": "Your APY Contribution",
+    "monthly_premium": "Your Monthly Premium",
+    "total_contribution": "Total Contribution until 60",
+    "indicative_corpus": "Indicative Corpus at 60",
+    "what_is_apy": {
+      "title": "What is Atal Pension Yojana (APY)?",
+      "body": "Atal Pension Yojana (APY) is a government-backed pension scheme providing a guaranteed monthly pension of ₹1,000 to ₹5,000 to eligible subscribers after age 60. It is administered by the <a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA</a>.",
+      "points": [
+        "Guaranteed Pension: Fixed monthly pension amounts of ₹1,000, ₹2,000, ₹3,000, ₹4,000, or ₹5,000.",
+        "Eligibility: Open to all Indian citizens aged 18-40 with a bank account.",
+        "Spouse/Nominee Benefits: On the subscriber's death, the spouse receives the pension. On the death of both, the nominee receives the accumulated corpus."
+      ]
+    },
+    "premium_chart": {
+      "title": "APY Premium Chart (by Age & Pension Amount)",
+      "description": "This chart shows the fixed monthly premium based on your entry age and desired pension amount. The earlier you start, the lower your premium.",
+      "age_header": "Entry Age",
+      "years_label": "Years"
+    },
+    "enrollment": {
+      "title": "APY Eligibility & How to Enroll",
+      "intro": "Enrolling in APY is simple:",
+      "steps": [
+        "<strong>Eligibility:</strong> You must be an Indian citizen between 18 and 40 years old.",
+        "<strong>Documents:</strong> You need an active bank account linked with your Aadhaar for auto-debit.",
+        "<strong>How to Enroll:</strong> You can enroll through your bank branch or via online banking portals that support APY enrollment."
+      ]
+    },
+    "comparison": {
+      "title": "APY vs NPS / PPF — Which is right for you?",
+      "body": "While APY is excellent for a basic, guaranteed pension, other schemes might be better for different goals. <strong>NPS</strong> offers higher potential returns and flexibility, making it suitable for those comfortable with market risks. <strong>PPF</strong> is a risk-free, long-term savings tool for wealth creation. Explore our <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> and <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> to compare."
+    },
+    "rules": {
+      "title": "APY Withdrawal, Penalties & Transfer Rules",
+      "body": "<strong>Withdrawal:</strong> Full withdrawal is only allowed at age 60. Early exit is permitted in cases of terminal illness or death. <br/> <strong>Penalties:</strong> A small penalty is charged for delayed payments, ranging from ₹1 to ₹10 per month depending on the premium amount. <br/> <strong>Transfer:</strong> You can transfer your APY account from one bank to another. For official rules, refer to the <a href='https://www.pfrda.org.in/my-apy/apy-faq' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA FAQ section</a>."
+    },
+    "faq_title": "Frequently Asked Questions",
+    "faqs": [
+      {
+        "question": "What is Atal Pension Yojana (APY)?",
+        "answer": "Atal Pension Yojana (APY) is a government-backed pension scheme providing a guaranteed monthly pension of ₹1,000–₹5,000 to eligible subscribers after age 60. (Source: PFRDA)."
+      },
+      {
+        "question": "Who is eligible for APY?",
+        "answer": "Indian citizens aged 18–40 can subscribe. A bank account and KYC documents are required. Check latest PFRDA rules for any updates."
+      },
+      {
+        "question": "How is the APY premium calculated?",
+        "answer": "Premiums depend on subscriber age and desired pension amount. Use the APY Calculator on this page to compute the exact monthly contribution."
+      },
+      {
+        "question": "Can I withdraw from APY before age 60?",
+        "answer": "Withdrawals are allowed only under specified conditions like terminal illness and may involve penalties. Full corpus is available at age 60."
+      },
+      {
+        "question": "What happens to APY corpus on the subscriber’s death?",
+        "answer": "The spouse of the subscriber is entitled to receive the same pension amount. On the death of both, the nominee receives the accumulated corpus."
+      },
+      {
+        "question": "Are APY contributions tax deductible?",
+        "answer": "Yes, contributions to APY are eligible for tax deduction under Section 80CCD(1B) of the Income Tax Act, up to the overall limit."
+      },
+      {
+        "question": "APY vs NPS — which should I choose?",
+        "answer": "APY is ideal for a basic, guaranteed pension for those with lower risk appetite. NPS is better for those seeking higher, market-linked returns and more flexibility."
+      }
+    ]
   },
   "fd_vs_ppf_calculator": {
     "meta_title": "FD vs PPF Returns Calculator (2025) | BharatSaver",
@@ -653,5 +732,3 @@
     "results_placeholder": "Search functionality is coming soon."
   }
 }
-
-    
