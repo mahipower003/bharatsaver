@@ -302,7 +302,8 @@
           ["15", "₹44,75,989.33"],
           ["21", "₹71,82,119.17"]
         ]
-      }
+      },
+      "footer_note": "This is an illustrative projection. Actual returns depend on quarterly government rate revisions."
     },
     "comparison": {
       "title": "SSY vs PPF vs FD vs NPS — quick comparison (2025)",
@@ -337,7 +338,7 @@
       "title": "SSY Rules: Withdrawals, Revival & Nomination",
       "withdrawal_title": "Partial Withdrawal Rules",
       "withdrawal_body": "Partial withdrawal is allowed only after the girl child turns 18 or has passed the 10th standard, whichever is earlier. The withdrawal is limited to 50% of the balance available at the end of the preceding financial year and can only be used for higher education or marriage expenses.",
-      "withdrawal_example": "<strong>Partial Withdrawal Example:</strong> If the account balance at the end of Year 17 is ₹40 lakh, you can withdraw up to 50% of this amount (₹20 lakh) in Year 18. Always check the exact calculation with your bank/Post Office when initiating withdrawal.",
+      "withdrawal_example": "<strong>Partial Withdrawal Example:</strong> If the account balance at the end of Year 17 is ₹40 lakh, you can withdraw up to 50% of this amount (₹20 lakh) for educational purposes in Year 18. Always check the exact calculation with your bank/Post Office when initiating withdrawal.",
       "revival_title": "How to Revive an Inactive SSY Account",
       "revival_intro": "If you miss the minimum annual deposit of ₹250, the account becomes inactive. To revive it:",
       "revival_steps": [
@@ -593,8 +594,9 @@
       "title": "How the APY Calculator Works — Premiums by Age & Pension",
       "intro": "The APY premium is not calculated with a compounding formula like PPF or NPS. Instead, the premiums are fixed amounts determined by the government based on your entry age and chosen pension. Our calculator uses the official premium table from PFRDA to give you the exact amount.",
       "example": {
-        "title": "Example: Age 25 — How ₹76/month gives ₹1,000 pension (step-by-step)",
-        "body": "If you join APY at age 25 and choose the ₹1,000 pension option, your fixed monthly premium is just ₹76. You contribute this amount every month until you turn 60. From age 60 onwards, you receive a guaranteed pension of ₹1,000 every month for life."
+        "title": "Example: Age 25 — How the premium works",
+        "body": "<strong>Monthly premium (from chart):</strong> ₹76<br/><strong>Years of contribution:</strong> from age 25 until age 60 = 35 years<br/><strong>Total paid</strong> = 76 × 12 × 35 = ₹31,920 (total contributions over 35 years)<br/><strong>Outcome:</strong> Guaranteed monthly pension ₹1,000 from age 60 (scheme provides the pension as per rules; payouts come from pooled fund/annuities).",
+        "note": "<strong>Note:</strong> APY premiums come from government actuarial tables — they reflect the pooled investment & guarantees. The low total-paid vs pension highlights the social-security nature of APY."
       }
     },
     "premium_chart": {
@@ -604,7 +606,7 @@
       "years_label": "Years"
     },
     "enrollment": {
-      "title": "APY Eligibility — Who Can Join & How to Enroll",
+      "title": "APY Eligibility & How to Enroll",
       "intro": "Enrolling in APY is simple:",
       "steps": [
         "<strong>Eligibility:</strong> You must be an Indian citizen between 18 and 40 years old.",
@@ -622,34 +624,18 @@
     },
     "faq_title": "Frequently Asked Questions",
     "faqs": [
-      {
-        "question": "What is the Atal Pension Yojana (APY)?",
-        "answer": "Atal Pension Yojana (APY) is a government-backed pension scheme providing a guaranteed monthly pension of ₹1,000–₹5,000 to eligible subscribers after age 60. (Source: <a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA</a>)."
-      },
-      {
-        "question": "Who is eligible for APY?",
-        "answer": "Indian citizens aged 18–40 can subscribe. A bank account and KYC documents are required. Check latest PFRDA rules for any updates."
-      },
-      {
-        "question": "How is the APY premium calculated?",
-        "answer": "Premiums are fixed based on subscriber age and desired pension amount, as per the official government chart. Use the APY Calculator on this page to find the exact monthly contribution for your age."
-      },
-      {
-        "question": "Can I withdraw from APY before age 60?",
-        "answer": "Withdrawals are allowed only under specified conditions like terminal illness and may involve penalties. The full corpus is available at age 60."
-      },
-      {
-        "question": "What happens to APY corpus on the subscriber’s death?",
-        "answer": "The spouse of the subscriber is entitled to receive the same pension amount. On the death of both, the nominee receives the accumulated corpus."
-      },
-      {
-        "question": "Are APY contributions tax deductible?",
-        "answer": "Yes, contributions to APY are eligible for tax deduction under Section 80CCD(1B) of the Income Tax Act, up to the overall limit."
-      },
-      {
-        "question": "APY vs NPS — which should I choose?",
-        "answer": "APY is ideal for a basic, guaranteed pension for those with lower risk appetite. NPS is better for those seeking higher, market-linked returns and more flexibility."
-      }
+      { "question": "What is Atal Pension Yojana (APY)?", "answer": "APY is a government social-security pension scheme that guarantees a fixed monthly pension between ₹1,000 and ₹5,000 to subscribers after they reach 60. It’s administered by the PFRDA and aimed primarily at the unorganized sector." },
+      { "question": "Who is eligible for APY?", "answer": "Any Indian citizen aged 18–40 with a valid bank account and KYC documents can join APY. Check your bank for enrollment steps." },
+      { "question": "How is the APY premium calculated?", "answer": "Premiums are fixed by official actuarial tables based on entry age and the pension amount you choose. Use our APY Calculator or download the premium chart to see the exact monthly premium for your age." },
+      { "question": "How much do I have to pay for ₹3,000 pension?", "answer": "Find the exact amount in the premium chart above. Example: at age 25 a ₹3,000 pension requires ₹226/month (per the table shown)." },
+      { "question": "Can I join APY if I pay income tax?", "answer": "Rules may vary over time. Historically APY targeted the unorganized sector; check PFRDA or your bank for the current policy regarding income-tax payers." },
+      { "question": "What happens if I miss an APY payment?", "answer": "Missed payments may attract small penalties and eventual account inactivation. Banks typically provide revival procedures — pay missed premiums plus any penalty to reactivate the account." },
+      { "question": "Can I withdraw from APY before age 60?", "answer": "Early exit is restricted — allowed only in exceptional situations (e.g., critical illness or death) and may involve penalties. See the official PFRDA rules or your bank’s APY terms." },
+      { "question": "Is there any government co-contribution?", "answer": "For certain eligible subscribers, government co-contribution schemes have been offered in the past. Verify current schemes and eligibility on PFRDA/NSDL pages." },
+      { "question": "What happens to the corpus on subscriber’s death?", "answer": "On the subscriber’s death, the spouse typically receives the same pension; if both are deceased, the nominee receives the accumulated corpus per scheme rules." },
+      { "question": "Are APY contributions tax deductible?", "answer": "APY offers pension benefits and not direct extra 80C allowances; check Income Tax rules for current tax treatments. (Always verify with the Income Tax Dept. for the latest tax guidance.)" },
+      { "question": "How do I enroll in APY?", "answer": "Visit your bank branch or use your bank’s online banking if they provide APY enrollment. You’ll need your bank account, Aadhaar, PAN (if required) and KYC." },
+      { "question": "APY vs NPS — which should I choose?", "answer": "APY is a guaranteed small pension product focused on basic security; NPS is market-linked with higher potential returns and greater flexibility. Choose APY if you want guaranteed fixed pension and low complexity; choose NPS if you want higher potential growth and are comfortable with market risks." }
     ],
     "conclusion": {
       "title": "Conclusion: Is APY the Right Choice for Your Retirement?",
