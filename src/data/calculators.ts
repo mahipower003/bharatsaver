@@ -31,7 +31,7 @@ export const calculators: Calculator[] = [
     icon: Baby,
     link_text: 'Calculate Now',
     lastModified: '2024-07-27',
-    image: 'https://picsum.photos/400/250?random=2'
+    image: '/images/calculate-ssy-online.png'
   },
   {
     slug: 'nps-calculator',
@@ -40,7 +40,7 @@ export const calculators: Calculator[] = [
     icon: TrendingUp,
     link_text: 'Calculate Now',
     lastModified: '2024-07-26',
-    image: 'https://picsum.photos/400/250?random=3'
+    image: '/images/PPF-NPS-FD-SSY-Scheme-selector.png'
   },
   {
     slug: 'apy-calculator',
@@ -49,7 +49,7 @@ export const calculators: Calculator[] = [
     icon: Shield,
     link_text: 'Calculate Now',
     lastModified: '2024-07-25',
-    image: 'https://picsum.photos/400/250?random=4'
+    image: '/images/PPF-NPS-FD-SSY-Scheme-selector.png'
   },
   {
     slug: 'fd-vs-ppf-calculator',
@@ -58,7 +58,7 @@ export const calculators: Calculator[] = [
     icon: ArrowRightLeft,
     link_text: 'Compare Now',
     lastModified: '2024-07-24',
-    image: 'https://picsum.photos/400/250?random=5'
+    image: '/images/PPF-NPS-FD-SSY-Scheme-selector.png'
   },
   {
     slug: 'tax-regime-calculator',
@@ -67,7 +67,7 @@ export const calculators: Calculator[] = [
     icon: FileText,
     link_text: 'Compare Now',
     lastModified: '2024-07-23',
-    image: 'https://picsum.photos/400/250?random=6'
+    image: '/images/PPF-NPS-FD-SSY-Scheme-selector.png'
   },
   {
     slug: 'retirement-corpus-calculator',
@@ -76,7 +76,7 @@ export const calculators: Calculator[] = [
     icon: Target,
     link_text: 'Plan Now',
     lastModified: '2024-07-22',
-    image: 'https://picsum.photos/400/250?random=7'
+    image: '/images/PPF-NPS-FD-SSY-Scheme-selector.png'
   },
   {
     slug: 'loan-optimizer',
@@ -85,7 +85,7 @@ export const calculators: Calculator[] = [
     icon: BadgePercent,
     link_text: 'Optimize Now',
     lastModified: '2024-07-21',
-    image: 'https://picsum.photos/400/250?random=8'
+    image: '/images/PPF-NPS-FD-SSY-Scheme-selector.png'
   },
   {
     slug: 'mutual-fund-overlap-calculator',
@@ -94,7 +94,7 @@ export const calculators: Calculator[] = [
     icon: Layers,
     link_text: 'Check Now',
     lastModified: '2024-07-20',
-    image: 'https://picsum.photos/400/250?random=9'
+    image: '/images/PPF-NPS-FD-SSY-Scheme-selector.png'
   },
   {
     slug: 'ups-pension-calculator',
@@ -103,7 +103,7 @@ export const calculators: Calculator[] = [
     icon: Building,
     link_text: 'Calculate Now',
     lastModified: '2024-07-19',
-    image: 'https://picsum.photos/400/250?random=10'
+    image: '/images/PPF-NPS-FD-SSY-Scheme-selector.png'
   },
   {
     slug: 'scheme-selector',
@@ -112,6 +112,6 @@ export const calculators: Calculator[] = [
     icon: Sparkles,
     link_text: 'Get Advice',
     lastModified: '2024-07-30',
-    image: 'https://picsum.photos/400/250?random=11'
+    image: '/images/PPF-NPS-FD-SSY-Scheme-selector.png'
   },
 ];
