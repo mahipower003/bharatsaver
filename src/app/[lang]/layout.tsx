@@ -5,7 +5,7 @@ import type { Locale } from '@/lib/i18n-config';
 import { getDictionary } from '@/lib/dictionaries';
 import { Suspense } from 'react';
 import Loading from './loading';
-import { ScrollToBottomButton } from '@/components/layout/ScrollToBottomButton';
+import { ScrollToTopButton } from '@/components/layout/ScrollToTopButton';
 
 export default async function LocaleLayout({
   children,
@@ -24,7 +24,7 @@ export default async function LocaleLayout({
         </Suspense>
       </main>
       <Footer lang={params.lang} dictionary={dictionary.footer} />
-      <ScrollToBottomButton />
+      <ScrollToTopButton />
     </div>
   );
 }
