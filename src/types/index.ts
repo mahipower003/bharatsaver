@@ -9,6 +9,18 @@ export type Calculator = {
   description: string;
   icon: LucideIcon;
   link_text: string;
+  lastModified: string;
+  image: string;
+};
+
+export type Page = {
+  slug: string;
+  title: string;
+  description: string;
+  lastModified: string;
+  priority: number;
+  changefreq: 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never';
+  image?: string;
 };
 
 export type Dictionary = {

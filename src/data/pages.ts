@@ -8,6 +8,7 @@ type Page = {
   lastModified: string;
   priority: number;
   changefreq: 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never';
+  image?: string;
 };
 
 const staticPages: Page[] = [
@@ -18,6 +19,7 @@ const staticPages: Page[] = [
     lastModified: '2024-07-29',
     priority: 1.0,
     changefreq: 'weekly',
+    image: 'https://picsum.photos/400/250?random=12',
   },
   {
     slug: '/about',
@@ -26,6 +28,7 @@ const staticPages: Page[] = [
     lastModified: '2024-07-29',
     priority: 0.5,
     changefreq: 'monthly',
+    image: 'https://picsum.photos/400/250?random=13',
   },
   {
     slug: '/blog',
@@ -34,6 +37,7 @@ const staticPages: Page[] = [
     lastModified: '2024-07-29',
     priority: 0.7,
     changefreq: 'weekly',
+    image: 'https://picsum.photos/400/250?random=14',
   },
   {
     slug: '/calculators',
@@ -42,6 +46,7 @@ const staticPages: Page[] = [
     lastModified: '2024-07-29',
     priority: 0.8,
     changefreq: 'monthly',
+    image: 'https://picsum.photos/400/250?random=15',
   },
   {
     slug: '/contact',
@@ -50,6 +55,7 @@ const staticPages: Page[] = [
     lastModified: '2024-07-29',
     priority: 0.3,
     changefreq: 'yearly',
+    image: 'https://picsum.photos/400/250?random=16',
   },
   {
     slug: '/guides',
@@ -58,6 +64,7 @@ const staticPages: Page[] = [
     lastModified: '2024-07-29',
     priority: 0.6,
     changefreq: 'monthly',
+    image: 'https://picsum.photos/400/250?random=17',
   },
   {
     slug: '/terms',
@@ -66,6 +73,7 @@ const staticPages: Page[] = [
     lastModified: '2024-07-29',
     priority: 0.3,
     changefreq: 'yearly',
+    image: 'https://picsum.photos/400/250?random=18',
   },
 ];
 
@@ -73,9 +81,10 @@ const calculatorPages: Page[] = calculators.map(calc => ({
     slug: `/${calc.slug}`,
     title: calc.title,
     description: calc.description,
-    lastModified: '2024-07-29',
+    lastModified: calc.lastModified,
     priority: 0.9,
-    changefreq: 'monthly'
+    changefreq: 'monthly',
+    image: calc.image
 }));
 
 export const pages: Page[] = [...staticPages, ...calculatorPages];
