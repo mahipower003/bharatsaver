@@ -1,1083 +1,485 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://bharatsaver.com/en</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en"/>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en" />
   </url>
   <url>
     <loc>https://bharatsaver.com/hi</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en"/>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en" />
   </url>
   <url>
     <loc>https://bharatsaver.com/mr</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en"/>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en" />
   </url>
   <url>
     <loc>https://bharatsaver.com/ta</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en"/>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en" />
   </url>
   <url>
     <loc>https://bharatsaver.com/te</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en"/>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en" />
   </url>
   <url>
     <loc>https://bharatsaver.com/en/about</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/about"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/about"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/about"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/about"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/about"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/about" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/about" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/about" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/about" />
   </url>
   <url>
     <loc>https://bharatsaver.com/hi/about</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/about"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/about"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/about"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/about"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/about"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/about" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/about" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/about" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/about" />
   </url>
   <url>
     <loc>https://bharatsaver.com/mr/about</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/about"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/about"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/about"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/about"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/about"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/about" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/about" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/about" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/about" />
   </url>
   <url>
     <loc>https://bharatsaver.com/ta/about</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/about"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/about"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/about"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/about"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/about"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/about" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/about" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/about" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/about" />
   </url>
   <url>
     <loc>https://bharatsaver.com/te/about</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/about"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/about"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/about"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/about"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/about"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/about" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/about" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/about" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/about" />
   </url>
   <url>
     <loc>https://bharatsaver.com/en/blog</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/blog"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/blog"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/blog"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/blog"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/blog"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/blog" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/blog" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/blog" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/blog" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/blog" />
   </url>
   <url>
     <loc>https://bharatsaver.com/hi/blog</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/blog"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/blog"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/blog"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/blog"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/blog"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/blog" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/blog" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/blog" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/blog" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/blog" />
   </url>
   <url>
     <loc>https://bharatsaver.com/mr/blog</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/blog"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/blog"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/blog"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/blog"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/blog"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/blog" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/blog" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/blog" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/blog" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/blog" />
   </url>
   <url>
     <loc>https://bharatsaver.com/ta/blog</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/blog"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/blog"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/blog"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/blog"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/blog"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/blog" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/blog" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/blog" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/blog" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/blog" />
   </url>
   <url>
     <loc>https://bharatsaver.com/te/blog</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/blog"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/blog"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/blog"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/blog"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/blog"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/blog" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/blog" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/blog" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/blog" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/blog" />
   </url>
   <url>
     <loc>https://bharatsaver.com/en/calculators</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/calculators"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/calculators"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/calculators"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/calculators"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/calculators"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/calculators"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/calculators" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/calculators" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/calculators" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/calculators" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/calculators" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/calculators" />
   </url>
   <url>
     <loc>https://bharatsaver.com/hi/calculators</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/calculators"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/calculators"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/calculators"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/calculators"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/calculators"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/calculators"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/calculators" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/calculators" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/calculators" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/calculators" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/calculators" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/calculators" />
   </url>
   <url>
     <loc>https://bharatsaver.com/mr/calculators</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/calculators"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/calculators"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/calculators"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/calculators"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/calculators"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/calculators"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/calculators" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/calculators" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/calculators" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/calculators" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/calculators" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/calculators" />
   </url>
   <url>
     <loc>https://bharatsaver.com/ta/calculators</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/calculators"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/calculators"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/calculators"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/calculators"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/calculators"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/calculators"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/calculators" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/calculators" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/calculators" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/calculators" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/calculators" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/calculators" />
   </url>
   <url>
     <loc>https://bharatsaver.com/te/calculators</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/calculators"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/calculators"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/calculators"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/calculators"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/calculators"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/calculators"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/calculators" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/calculators" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/calculators" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/calculators" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/calculators" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/calculators" />
   </url>
   <url>
     <loc>https://bharatsaver.com/en/contact</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/contact"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/contact"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/contact"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/contact"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/contact"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/contact" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/contact" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/contact" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/contact" />
   </url>
   <url>
     <loc>https://bharatsaver.com/hi/contact</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/contact"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/contact"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/contact"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/contact"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/contact"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/contact" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/contact" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/contact" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/contact" />
   </url>
   <url>
     <loc>https://bharatsaver.com/mr/contact</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/contact"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/contact"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/contact"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/contact"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/contact"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/contact" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/contact" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/contact" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/contact" />
   </url>
   <url>
     <loc>https://bharatsaver.com/ta/contact</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/contact"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/contact"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/contact"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/contact"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/contact"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/contact" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/contact" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/contact" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/contact" />
   </url>
   <url>
     <loc>https://bharatsaver.com/te/contact</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/contact"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/contact"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/contact"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/contact"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/contact"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/contact" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/contact" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/contact" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/contact" />
   </url>
   <url>
     <loc>https://bharatsaver.com/en/guides</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/guides"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/guides"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/guides"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/guides"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/guides"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/guides"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/guides" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/guides" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/guides" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/guides" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/guides" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/guides" />
   </url>
   <url>
     <loc>https://bharatsaver.com/hi/guides</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/guides"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/guides"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/guides"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/guides"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/guides"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/guides"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/guides" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/guides" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/guides" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/guides" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/guides" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/guides" />
   </url>
   <url>
     <loc>https://bharatsaver.com/mr/guides</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/guides"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/guides"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/guides"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/guides"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/guides"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/guides"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/guides" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/guides" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/guides" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/guides" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/guides" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/guides" />
   </url>
   <url>
     <loc>https://bharatsaver.com/ta/guides</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/guides"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/guides"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/guides"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/guides"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/guides"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/guides"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/guides" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/guides" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/guides" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/guides" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/guides" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/guides" />
   </url>
   <url>
     <loc>https://bharatsaver.com/te/guides</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/guides"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/guides"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/guides"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/guides"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/guides"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/guides"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/guides" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/guides" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/guides" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/guides" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/guides" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/guides" />
   </url>
   <url>
     <loc>https://bharatsaver.com/en/terms</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/terms"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/terms"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/terms"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/terms"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/terms"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/terms"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/terms" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/terms" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/terms" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/terms" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/terms" />
   </url>
   <url>
     <loc>https://bharatsaver.com/hi/terms</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/terms"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/terms"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/terms"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/terms"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/terms"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/terms"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/terms" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/terms" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/terms" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/terms" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/terms" />
   </url>
   <url>
     <loc>https://bharatsaver.com/mr/terms</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/terms"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/terms"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/terms"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/terms"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/terms"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/terms"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/terms" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/terms" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/terms" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/terms" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/terms" />
   </url>
   <url>
     <loc>https://bharatsaver.com/ta/terms</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/terms"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/terms"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/terms"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/terms"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/terms"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/terms"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/terms" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/terms" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/terms" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/terms" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/terms" />
   </url>
   <url>
     <loc>https://bharatsaver.com/te/terms</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/terms"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/terms"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/terms"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/terms"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/terms"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/terms"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/terms" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/terms" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/terms" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/terms" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/terms" />
   </url>
   <url>
     <loc>https://bharatsaver.com/en/ppf-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/ppf-calculator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/ppf-calculator" />
   </url>
   <url>
     <loc>https://bharatsaver.com/hi/ppf-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/ppf-calculator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/ppf-calculator" />
   </url>
   <url>
     <loc>https://bharatsaver.com/mr/ppf-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/ppf-calculator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/ppf-calculator" />
   </url>
   <url>
     <loc>https://bharatsaver.com/ta/ppf-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/ppf-calculator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/ppf-calculator" />
   </url>
   <url>
     <loc>https://bharatsaver.com/te/ppf-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
+    <lastmod>2024-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/ppf-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/en/ssy-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/ssy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/ssy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/ssy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/ssy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/ssy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/ssy-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/hi/ssy-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/ssy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/ssy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/ssy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/ssy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/ssy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/ssy-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/ssy-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/ssy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/ssy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/ssy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/ssy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/ssy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/ssy-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/ta/ssy-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/ssy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/ssy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/ssy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/ssy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/ssy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/ssy-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/te/ssy-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/ssy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/ssy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/ssy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/ssy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/ssy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/ssy-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/en/nps-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/nps-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/nps-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/nps-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/nps-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/nps-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/nps-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/hi/nps-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/nps-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/nps-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/nps-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/nps-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/nps-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/nps-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/nps-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/nps-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/nps-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/nps-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/nps-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/nps-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/nps-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/ta/nps-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/nps-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/nps-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/nps-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/nps-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/nps-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/nps-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/te/nps-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/nps-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/nps-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/nps-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/nps-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/nps-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/nps-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/en/apy-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/apy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/apy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/apy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/apy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/apy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/apy-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/hi/apy-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/apy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/apy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/apy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/apy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/apy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/apy-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/apy-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/apy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/apy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/apy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/apy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/apy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/apy-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/ta/apy-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/apy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/apy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/apy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/apy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/apy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/apy-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/te/apy-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/apy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/apy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/apy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/apy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/apy-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/apy-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/en/fd-vs-ppf-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/fd-vs-ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/fd-vs-ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/fd-vs-ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/fd-vs-ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/fd-vs-ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/fd-vs-ppf-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/hi/fd-vs-ppf-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/fd-vs-ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/fd-vs-ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/fd-vs-ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/fd-vs-ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/fd-vs-ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/fd-vs-ppf-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/fd-vs-ppf-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/fd-vs-ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/fd-vs-ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/fd-vs-ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/fd-vs-ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/fd-vs-ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/fd-vs-ppf-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/ta/fd-vs-ppf-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/fd-vs-ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/fd-vs-ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/fd-vs-ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/fd-vs-ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/fd-vs-ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/fd-vs-ppf-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/te/fd-vs-ppf-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/fd-vs-ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/fd-vs-ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/fd-vs-ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/fd-vs-ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/fd-vs-ppf-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/fd-vs-ppf-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/en/tax-regime-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/tax-regime-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/tax-regime-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/tax-regime-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/tax-regime-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/tax-regime-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/tax-regime-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/hi/tax-regime-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/tax-regime-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/tax-regime-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/tax-regime-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/tax-regime-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/tax-regime-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/tax-regime-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/tax-regime-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/tax-regime-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/tax-regime-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/tax-regime-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/tax-regime-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/tax-regime-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/tax-regime-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/ta/tax-regime-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/tax-regime-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/tax-regime-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/tax-regime-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/tax-regime-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/tax-regime-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/tax-regime-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/te/tax-regime-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/tax-regime-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/tax-regime-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/tax-regime-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/tax-regime-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/tax-regime-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/tax-regime-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/en/retirement-corpus-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/retirement-corpus-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/retirement-corpus-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/retirement-corpus-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/retirement-corpus-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/retirement-corpus-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/retirement-corpus-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/hi/retirement-corpus-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/retirement-corpus-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/retirement-corpus-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/retirement-corpus-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/retirement-corpus-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/retirement-corpus-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/retirement-corpus-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/retirement-corpus-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/retirement-corpus-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/retirement-corpus-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/retirement-corpus-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/retirement-corpus-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/retirement-corpus-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/retirement-corpus-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/ta/retirement-corpus-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/retirement-corpus-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/retirement-corpus-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/retirement-corpus-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/retirement-corpus-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/retirement-corpus-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/retirement-corpus-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/te/retirement-corpus-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/retirement-corpus-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/retirement-corpus-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/retirement-corpus-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/retirement-corpus-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/retirement-corpus-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/retirement-corpus-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/en/loan-optimizer</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/loan-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/loan-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/loan-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/loan-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/loan-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/loan-optimizer"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/hi/loan-optimizer</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/loan-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/loan-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/loan-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/loan-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/loan-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/loan-optimizer"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/loan-optimizer</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/loan-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/loan-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/loan-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/loan-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/loan-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/loan-optimizer"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/ta/loan-optimizer</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/loan-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/loan-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/loan-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/loan-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/loan-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/loan-optimizer"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/te/loan-optimizer</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/loan-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/loan-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/loan-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/loan-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/loan-optimizer"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/loan-optimizer"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/en/mutual-fund-overlap-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/mutual-fund-overlap-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/mutual-fund-overlap-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/mutual-fund-overlap-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/mutual-fund-overlap-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/mutual-fund-overlap-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/mutual-fund-overlap-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/hi/mutual-fund-overlap-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/mutual-fund-overlap-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/mutual-fund-overlap-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/mutual-fund-overlap-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/mutual-fund-overlap-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/mutual-fund-overlap-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/mutual-fund-overlap-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/mutual-fund-overlap-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/mutual-fund-overlap-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/mutual-fund-overlap-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/mutual-fund-overlap-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/mutual-fund-overlap-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/mutual-fund-overlap-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/mutual-fund-overlap-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/ta/mutual-fund-overlap-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/mutual-fund-overlap-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/mutual-fund-overlap-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/mutual-fund-overlap-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/mutual-fund-overlap-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/mutual-fund-overlap-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/mutual-fund-overlap-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/te/mutual-fund-overlap-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/mutual-fund-overlap-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/mutual-fund-overlap-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/mutual-fund-overlap-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/mutual-fund-overlap-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/mutual-fund-overlap-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/mutual-fund-overlap-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/en/ups-pension-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/ups-pension-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/ups-pension-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/ups-pension-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/ups-pension-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/ups-pension-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/ups-pension-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/hi/ups-pension-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/ups-pension-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/ups-pension-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/ups-pension-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/ups-pension-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/ups-pension-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/ups-pension-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/ups-pension-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/ups-pension-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/ups-pension-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/ups-pension-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/ups-pension-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/ups-pension-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/ups-pension-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/ta/ups-pension-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/ups-pension-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/ups-pension-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/ups-pension-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/ups-pension-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/ups-pension-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/ups-pension-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/te/ups-pension-calculator</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/ups-pension-calculator"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/ups-pension-calculator"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/ups-pension-calculator"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/ups-pension-calculator"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/ups-pension-calculator"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/ups-pension-calculator"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/en/scheme-selector</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/scheme-selector"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/scheme-selector"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/scheme-selector"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/scheme-selector"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/scheme-selector"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/scheme-selector"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/hi/scheme-selector</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/scheme-selector"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/scheme-selector"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/scheme-selector"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/scheme-selector"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/scheme-selector"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/scheme-selector"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/scheme-selector</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/scheme-selector"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/scheme-selector"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/scheme-selector"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/scheme-selector"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/scheme-selector"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/scheme-selector"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/ta/scheme-selector</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/scheme-selector"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/scheme-selector"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/scheme-selector"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/scheme-selector"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/scheme-selector"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/scheme-selector"/>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/te/scheme-selector</loc>
-    <lastmod>2024-07-29T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/scheme-selector"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/scheme-selector"/>
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/scheme-selector"/>
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/scheme-selector"/>
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/scheme-selector"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/scheme-selector"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bharatsaver.com/en/ppf-calculator" />
   </url>
 </urlset>
