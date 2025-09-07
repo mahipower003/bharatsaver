@@ -11,28 +11,29 @@ export function BharatSaverLogo(props: SVGProps<SVGSVGElement>) {
       {...props}
     >
       <path
-        d="M19.9998 3.33301C19.9998 3.33301 33.3332 6.66634 33.3332 14.1663V22.4997C33.3332 23.3211 33.0945 24.1239 32.6461 24.8193L23.8898 37.4997C22.2592 39.7804 19.9998 39.7804 18.3698 37.4997L6.6665 24.1663C6.6665 24.1663 6.6665 19.1663 6.6665 14.1663C6.6665 6.66634 19.9998 3.33301 19.9998 3.33301Z"
+        d="M33.3333 14.1667V22.5C33.3333 23.3214 33.0946 24.1242 32.6462 24.8196L23.8899 37.5C22.2593 39.7807 20 39.7807 18.3699 37.5L6.66663 24.1667C6.66663 24.1667 6.66663 19.1667 6.66663 14.1667C6.66663 6.66667 20 3.33333 20 3.33333S33.3333 6.66667 33.3333 14.1667Z"
         fill="currentColor"
-        stroke="currentColor"
-        strokeWidth="3"
       />
       <path
-        d="M15.8333 15.833H25.8333"
+        d="M25.8333 20H15.8333"
         stroke="hsl(var(--primary-foreground))"
-        strokeWidth="2"
+        strokeWidth="2.5"
         strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
-        d="M15.8333 20H25.8333"
+        d="M25.8333 15.833H15.8333"
         stroke="hsl(var(--primary-foreground))"
-        strokeWidth="2"
+        strokeWidth="2.5"
         strokeLinecap="round"
+        strokeLinejoin="round"
       />
-      <path d="M20 28.333V11.6663" stroke="hsl(var(--primary-foreground))" strokeWidth="2" />
       <path
-        d="M22.5 11.6663C20.73 11.6663 18.8833 13.1997 17.5 14.9997C15.8 17.1663 15.8333 21.0663 17.5 23.333C18.75 24.9997 20.8333 26.2163 22.5 26.6663"
+        d="M22.5 11.667C19.1666 11.667 15.8333 14.167 15.8333 17.5003C15.8333 20.8337 19.1666 23.3337 22.5 23.3337C22.5 23.3337 22.5 25.0003 22.5 26.667"
         stroke="hsl(var(--primary-foreground))"
-        strokeWidth="2"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
