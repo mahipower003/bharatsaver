@@ -318,7 +318,7 @@
     },
     "investment_strategy": {
       "title": "Best SSY investment strategy (practical tips)",
-      "monthly_example": "<strong>Monthly-mode example (approximation):</strong><br/>Monthly deposit (PMT) = ₹12,500 (₹1,50,000/year)<br/>Annual rate r = 8.2% → monthly rate = r/12 ≈ 0.006833<br/>Number of months (15 years) = 180<br/>Using the annuity formula <strong>FV ≈ PMT × [ ((1 + r/12)^n - 1) / (r/12) ]</strong>, the value after 15 years is ≈ ₹50.21 lakh. Our calculator then compounds this annually to maturity, resulting in ≈ ₹71.8 lakh. Because SSY officially compounds annually, this is an approximation—choose ‘Monthly’ only if you deposit monthly.",
+      "monthly_example": "<strong>Monthly-mode example (approximation):</strong><br/>Monthly deposit (PMT) = ₹12,500 (₹1,50,000/year)<br/>Annual rate r = 8.2% → monthly rate = r/12 ≈ 0.0068333333<br/>Number of months (for 15 years) = 180<br/>Using the annuity formula <strong>FV ≈ PMT × [ ((1 + r/12)^n - 1) / (r/12) ]</strong>, the value after 15 years is ≈ ₹50.21 lakh. Our calculator then compounds this annually to maturity, resulting in ≈ ₹71.8 lakh. Because SSY officially compounds annually, this is an approximation—choose ‘Monthly’ only if you deposit monthly.",
       "points": [
         "<strong>Deposit before the 5th of the month</strong> — deposits before the 5th are eligible for interest for that month.",
         "<strong>If possible, deposit lump sum early in the financial year</strong> — a full ₹1.5 lakh early in April maximizes the year’s interest.",
@@ -640,7 +640,11 @@
         "question": "APY vs NPS — which should I choose?",
         "answer": "APY is ideal for a basic, guaranteed pension for those with lower risk appetite. NPS is better for those seeking higher, market-linked returns and more flexibility."
       }
-    ]
+    ],
+    "conclusion": {
+      "title": "Conclusion: Is APY the Right Choice for Your Retirement?",
+      "body": "Atal Pension Yojana provides a simple, secure, and government-guaranteed foundation for your retirement. It's an excellent choice for individuals in the unorganized sector or anyone seeking a predictable pension with minimal risk. Use our APY Calculator to take the first step towards securing your financial future today."
+    }
   },
   "fd_vs_ppf_calculator": {
     "meta_title": "FD vs PPF Returns Calculator (2025) | BharatSaver",
