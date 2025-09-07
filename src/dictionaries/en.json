@@ -318,7 +318,7 @@
     },
     "investment_strategy": {
       "title": "Best SSY investment strategy (practical tips)",
-      "monthly_example": "<strong>Monthly deposit example:</strong> If you deposit <strong>₹12,500 per month (₹1.5 lakh/year)</strong> for 15 years and the annual SSY rate is 8.2%, the effective compounding is yearly but monthly deposits change interest days — our calculator supports monthly mode and will compute exact year-wise balances.",
+      "monthly_example": "<strong>Monthly-mode example (approximation):</strong><br/>Monthly deposit (PMT) = ₹12,500 (₹1,50,000/year)<br/>Annual rate r = 8.2% → monthly rate = r/12 ≈ 0.006833<br/>Number of months (15 years) = 180<br/>Using the annuity formula <strong>FV ≈ PMT × [ ((1 + r/12)^n - 1) / (r/12) ]</strong>, the value after 15 years is ≈ ₹50.21 lakh. Our calculator then compounds this annually to maturity, resulting in ≈ ₹71.8 lakh. Because SSY officially compounds annually, this is an approximation—choose ‘Monthly’ only if you deposit monthly.",
       "points": [
         "<strong>Deposit before the 5th of the month</strong> — deposits before the 5th are eligible for interest for that month.",
         "<strong>If possible, deposit lump sum early in the financial year</strong> — a full ₹1.5 lakh early in April maximizes the year’s interest.",
@@ -404,8 +404,8 @@
     }
   },
   "nps_calculator": {
-    "meta_title": "NPS Calculator 2025 — National Pension System Corpus & Monthly Pension",
-    "meta_description": "Free NPS Calculator 2025 — estimate your retirement corpus, tax benefits and monthly pension. Supports monthly/yearly contributions and provides year-wise projections.",
+    "meta_title": "NPS Calculator 2025 — National Pension System Pension & Corpus Calculator",
+    "meta_description": "Use our FREE NPS Calculator to estimate your retirement corpus, tax benefits and expected monthly pension. Supports monthly/yearly contributions — updated NPS rules for 2025.",
     "h1": "NPS Calculator — Calculate Your Retirement Corpus & Monthly Pension",
     "description": "Plan a confident retirement with our National Pension System (NPS) Calculator. Enter your monthly or annual contribution, expected rate of return, and years to retirement — we’ll show your estimated corpus, the tax-efficient benefits, and a projected monthly annuity after age 60.",
     "title": "NPS Calculator",
@@ -445,7 +445,7 @@
     "amount_in_lakhs": "Amount (in Lakhs)",
     "what_is_nps": {
       "title": "What is NPS (National Pension System)?",
-      "body": "NPS is a government-regulated retirement pension scheme for Indian citizens (and NRIs in certain cases) run under PFRDA. It’s a disciplined, market-linked retirement instrument offering investment via equity, corporate bonds, and government securities. You can choose your asset allocation or opt for an auto-choice strategy.",
+      "body": "NPS is a government-regulated retirement pension scheme for Indian citizens (and NRIs in certain cases) run under the <a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA</a>. It’s a disciplined, market-linked retirement instrument offering investment via equity, corporate bonds, and government securities. You can choose your asset allocation or opt for an auto-choice strategy.",
       "points": [
         {
           "title": "Tier I (Retirement Savings)",
@@ -456,17 +456,17 @@
           "body": "A flexible, voluntary savings account with no lock-in, but also no extra tax benefit."
         }
       ],
-      "footer": "Source: <a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA Official Website</a>"
+      "footer": ""
     },
     "how_it_works": {
       "title": "How the NPS Calculator Works (Formula & Example)",
       "formula_title": "Formulas Used",
       "annual": {
-        "title": "Annual Contributions",
+        "title": "For annual contributions, the calculator uses the future value of a series formula:",
         "formula": "FV = P × [ (1 + r)^t − 1 ] / r"
       },
       "monthly": {
-        "title": "Monthly Contributions",
+        "title": "For monthly contributions, it uses the future value of an annuity formula:",
         "formula": "FV = PMT × [ ((1 + r/12)^(12t) − 1) / (r/12) ]"
       }
     },
@@ -485,7 +485,7 @@
       "disclaimer": "These numbers are for illustration. Real-world returns vary and annuity rates change. Always check live annuity quotes from providers before committing."
     },
     "tax_benefits": {
-      "title": "NPS Tax Benefits 2025: Section 80C & 80CCD(1B)",
+      "title": "NPS Tax Benefits 2025: How to Save Tax with NPS",
       "intro": "NPS offers some of the best tax-saving opportunities for retirement planning:",
       "points": [
         "<strong>Section 80C:</strong> Up to ₹1.5 lakh deduction for your contributions.",
@@ -538,7 +538,7 @@
       },
       {
         "question": "How is NPS corpus calculated?",
-        "answer": "By compounding your periodic contributions at the expected annual return rate until retirement. For annual contributions, the formula is FV = P × [((1 + r)^t - 1) / r]."
+        "answer": "By compounding your periodic contributions at an expected annual return rate until retirement. For annual contributions, the formula is FV = P × [((1 + r)^t - 1) / r]."
       },
       {
         "question": "How much pension will I get from my NPS corpus?",
@@ -546,7 +546,7 @@
       },
       {
         "question": "What tax benefits does NPS offer for 2025?",
-        "answer": "NPS provides tax deductions under Section 80C (up to ₹1.5 lakh), an additional exclusive deduction of ₹50,000 under Section 80CCD(1B), and benefits on employer contributions under Section 80CCD(2)."
+        "answer": "NPS provides tax deductions under Section 80C (up to ₹1.5 lakh) and an additional exclusive deduction of ₹50,000 under Section 80CCD(1B). Employer contributions are also deductible. Source: <a href='https://incometaxindia.gov.in/Pages/tools/deduction-under-section-80c.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Income Tax Act</a>"
       },
       {
         "question": "Can NRIs invest in NPS?",
