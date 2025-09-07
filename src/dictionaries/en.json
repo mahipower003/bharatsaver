@@ -82,7 +82,8 @@
   "blog_page": {
     "meta_title": "Personal Finance Blog for India | Savings, Investing, Tax | BharatSaver",
     "meta_description": "Latest articles and updates on personal finance, tax planning, and investment strategies in India. Stay informed and manage your money better.",
-    "h1": "Latest Blog Posts"
+    "h1": "Latest Updates & Articles",
+    "subtitle": "Explore our latest calculators, guides, and financial insights."
   },
   "ppf_calculator": {
     "meta_title": "PPF Calculator (2025) — Calculate PPF Maturity & Returns | BharatSaver",
@@ -352,5 +353,3 @@
     "results_placeholder": "Search functionality is coming soon."
   }
 }
-
-    
