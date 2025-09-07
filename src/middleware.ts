@@ -1,3 +1,4 @@
+
 import { NextResponse, type NextRequest } from 'next/server';
 import { i18nConfig } from './lib/i18n-config';
 import Negotiator from 'negotiator';
@@ -19,13 +20,9 @@ function getLocale(request: NextRequest): string {
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  // Explicitly check for sitemap.xml and stop middleware processing
-  if (pathname === '/sitemap.xml') {
-    return NextResponse.next();
-  }
-  
   // Paths to ignore from localization
   const ignoredPaths = [
+    '/sitemap.xml',
     '/robots.txt',
     '/hero-image.png',
     '/api/',
