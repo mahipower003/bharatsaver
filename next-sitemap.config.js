@@ -2,8 +2,7 @@
 module.exports = {
   siteUrl: process.env.SITE_URL || 'https://bharatsaver.com',
   generateRobotsTxt: true,
-  // Note: The sitemap generation is now handled by src/app/sitemap.ts
-  // next-sitemap will use the output of that file.
-  // We disable alternateRefs because we are generating them manually in sitemap.ts
-  alternateRefs: [],
+  // This flag is important for next-sitemap to correctly handle
+  // the alternate links generated in sitemap.ts
+  generateIndexSitemap: false,
 };
