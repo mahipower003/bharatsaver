@@ -48,7 +48,7 @@ export default async function AboutPage({ params }: { params: { lang: Locale }})
             </div>
             <div>
                 <Image 
-                    src="/images/about-us.png" 
+                    src="/images/about us.png" 
                     alt="A team of financial experts collaborating in a modern office."
                     width={600}
                     height={400}
