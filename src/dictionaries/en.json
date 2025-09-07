@@ -369,7 +369,11 @@
         "question": "What happens if I miss an annual deposit?",
         "answer": "You must pay at least ₹250 each year. If you miss, account revival is possible with missed deposits + penalty — check bank/Post Office for current amounts."
       }
-    ]
+    ],
+    "conclusion": {
+      "title": "Conclusion: Is SSY the Right Choice for Your Daughter?",
+      "body": "Sukanya Samriddhi Yojana stands out as one of India's best savings schemes for a girl child. Its combination of a high, government-guaranteed interest rate and complete tax exemption (EEE status) makes it a powerful tool for building a substantial fund for your daughter's education and marriage. By planning your investments with our SSY Calculator, you can confidently secure her financial future."
+    }
   },
   "nps_calculator": {
     "meta_title": "NPS Calculator (2025) - National Pension System | BharatSaver",
