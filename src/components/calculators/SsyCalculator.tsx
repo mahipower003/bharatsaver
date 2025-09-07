@@ -6,7 +6,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
-import { Loader2, Download, Baby, IndianRupee } from 'lucide-react';
+import { Loader2, Download, Baby, Twitter, Printer } from 'lucide-react';
 import { Area, AreaChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 import { Button } from '@/components/ui/button';
@@ -49,6 +49,24 @@ type CalculationResult = {
 type SsyCalculatorProps = {
   dictionary: Dictionary['ssy_calculator'];
 };
+
+const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      {...props}
+    >
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52s-.669-1.611-.916-2.207c-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+    </svg>
+);
+
 
 export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
   const router = useRouter();
@@ -157,6 +175,27 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
 
     setIsLoading(false);
   }
+
+  const handlePrint = () => {
+    window.print();
+  };
+
+  const handleShare = (platform: 'whatsapp' | 'twitter') => {
+    if (!result) return;
+    const url = window.location.href;
+    const text = `I just calculated my SSY maturity amount using BharatSaver's calculator! I'm projected to get ${formatCurrency(result.maturityValue)}. Plan your daughter's future too:`;
+    
+    let shareUrl = '';
+    if (platform === 'twitter') {
+        shareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`;
+    } else if (platform === 'whatsapp') {
+        shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(text + ' ' + url)}`;
+    }
+
+    if (shareUrl) {
+      window.open(shareUrl, '_blank');
+    }
+  };
 
   const handleCSVExport = () => {
     if (!result) return;
@@ -351,10 +390,28 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
             </div>
 
             <Tabs defaultValue="chart">
-              <TabsList className="grid w-full grid-cols-2 md:w-auto md:inline-grid">
-                <TabsTrigger value="chart">{dictionary.view_chart}</TabsTrigger>
-                <TabsTrigger value="table">{dictionary.view_table}</TabsTrigger>
-              </TabsList>
+                <div className="flex flex-wrap items-center justify-between gap-4">
+                    <TabsList className="grid w-full grid-cols-2 md:w-auto md:inline-grid">
+                        <TabsTrigger value="chart">{dictionary.view_chart}</TabsTrigger>
+                        <TabsTrigger value="table">{dictionary.view_table}</TabsTrigger>
+                    </TabsList>
+                    <div className="flex flex-wrap gap-2">
+                        <Button variant="outline" size="sm" onClick={() => handleShare('whatsapp')}>
+                           <WhatsAppIcon className="mr-2 h-4 w-4" /> WhatsApp
+                        </Button>
+                         <Button variant="outline" size="sm" onClick={() => handleShare('twitter')}>
+                           <Twitter className="mr-2 h-4 w-4" /> Twitter
+                        </Button>
+                        <Button variant="outline" size="sm" onClick={handlePrint}>
+                            <Printer className="mr-2 h-4 w-4" /> Print
+                        </Button>
+                        <Button variant="outline" size="sm" onClick={handleCSVExport}>
+                            <Download className="mr-2 h-4 w-4" />
+                            {dictionary.export_csv}
+                        </Button>
+                    </div>
+                </div>
+
               <TabsContent value="chart" className="pt-4">
                 <ResponsiveContainer width="100%" height={400}>
                    <AreaChart data={result.yearlyData} margin={{ top: 10, right: 30, left: 20, bottom: 0 }}>
@@ -386,12 +443,6 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
                 </ResponsiveContainer>
               </TabsContent>
               <TabsContent value="table" className="pt-4">
-                <div className="flex justify-end mb-4">
-                  <Button variant="outline" size="sm" onClick={handleCSVExport}>
-                    <Download className="mr-2 h-4 w-4" />
-                    {dictionary.export_csv}
-                  </Button>
-                </div>
                 <div className="overflow-x-auto max-h-[400px]">
                   <Table>
                     <TableHeader className="sticky top-0 bg-card">
