@@ -224,9 +224,65 @@
     }
   },
   "ssy_calculator": {
-    "meta_title": "SSY Calculator (2025) - Sukanya Samriddhi Yojana | BharatSaver",
-    "meta_description": "Use our free Sukanya Samriddhi Yojana (SSY) Calculator to calculate returns, maturity amount, and tax benefits for your daughter's future. Uses latest 2025 interest rates.",
-    "h1": "Sukanya Samriddhi Yojana (SSY) Calculator"
+    "meta_title": "SSY Calculator 2025 – Sukanya Samriddhi Yojana Return Calculator | BharatSaver",
+    "meta_description": "Use our free SSY calculator to estimate Sukanya Samriddhi Yojana returns (8.2% interest). Learn eligibility, tax benefits (Section 80C up to ₹1.5L) and planning tips.",
+    "h1": "Sukanya Samriddhi Yojana (SSY) Calculator – Calculate Returns Online",
+    "description": "Plan your daughter's future with our free SSY Calculator. Instantly estimate the maturity amount, total interest, and year-wise growth of your Sukanya Samriddhi Yojana investment at the current 8.2% interest rate.",
+    "title": "SSY Calculator",
+    "yearly_investment_label": "Yearly Investment (₹)",
+    "yearly_investment_placeholder": "e.g., 1,50,000",
+    "girl_age_label": "Girl's Current Age",
+    "years": "years",
+    "interest_rate_label": "Annual Interest Rate (%)",
+    "interest_rate_placeholder": "e.g., 8.2",
+    "calculate_button": "Calculate SSY Returns",
+    "loading": "Calculating...",
+    "results_title": "Your SSY Projection",
+    "maturity_value": "Maturity Value at 21 Years",
+    "total_investment": "Total Investment",
+    "total_interest": "Total Interest Earned",
+    "view_chart": "Chart",
+    "view_table": "Table",
+    "export_csv": "Export as CSV",
+    "table_year": "Year",
+    "table_age": "Girl's Age",
+    "table_opening_balance": "Opening Balance",
+    "table_amount_invested": "Yearly Deposit",
+    "table_interest_earned": "Interest Earned",
+    "table_closing_balance": "Closing Balance",
+    "amount_in_lakhs": "Amount (in Lakhs)",
+    "what_is_ssy": {
+      "title": "What is the Sukanya Samriddhi Yojana (SSY)?",
+      "body": "The Sukanya Samriddhi Yojana (SSY) is a government-backed savings scheme launched in 2015 as part of the 'Beti Bachao, Beti Padhao' campaign. It is designed to help parents build a financial corpus for their daughter's education and marriage expenses. The scheme offers a high, tax-free interest rate, currently at <strong>8.2% per annum</strong>."
+    },
+    "tax_benefits": {
+      "title": "Tax Benefits of SSY",
+      "body": "SSY is an EEE (Exempt-Exempt-Exempt) investment. This means: <br/> 1. <strong>Exempt (Contribution):</strong> Investments up to ₹1.5 lakh per year are eligible for tax deduction under Section 80C. <br/> 2. <strong>Exempt (Interest):</strong> The interest earned annually is tax-free. <br/> 3. <strong>Exempt (Maturity):</strong> The final maturity amount is also completely tax-free."
+    },
+    "how_it_works": {
+      "title": "How Does the SSY Calculator Work?",
+      "points": [
+        "<strong>Investment Period:</strong> You only need to deposit money for the first 15 years.",
+        "<strong>Maturity Period:</strong> The account matures after 21 years from the date of opening.",
+        "<strong>Interest Calculation:</strong> From year 16 to 21, no new deposits are made, but the existing balance continues to earn compound interest.",
+        "<strong>Withdrawal:</strong> Partial withdrawal of up to 50% is allowed for the girl's higher education after she turns 18."
+      ],
+      "formula": "Our calculator uses the standard compound interest formula: A = P(1+r/n)^(n*t), where interest is compounded annually."
+    },
+    "deposit_rules": {
+        "title": "SSY Deposit Rules & Limits",
+        "body": "<strong>Minimum Deposit:</strong> ₹250 per financial year. <br/> <strong>Maximum Deposit:</strong> ₹1,50,000 per financial year. <br/> Deposits can be made in a lump sum or in multiple installments. If the minimum amount is not deposited, a penalty of ₹50 is charged to reactivate the account."
+    },
+    "faq_title": "Frequently Asked Questions about SSY",
+    "faqs": [
+      {
+        "question": "What is the current interest rate of SSY for 2025?",
+        "answer": "The current interest rate for Sukanya Samriddhi Yojana is 8.2% per annum, compounded annually. This rate is reviewed by the government quarterly."
+      },
+      { "question": "Can I open two SSY accounts for one girl child?", "answer": "No, only one SSY account is allowed per girl child. A family can open a maximum of two accounts for two different girls (or three in case of triplets)." },
+      { "question": "What happens when the girl turns 21?", "answer": "The SSY account matures when the girl turns 21, and the entire balance (principal + accumulated interest) can be withdrawn. The account automatically closes upon maturity." },
+      { "question": "Can I withdraw money before 21 years?", "answer": "Yes, a partial withdrawal of up to 50% of the balance is allowed for the girl's higher education once she turns 18. Premature closure is only allowed in specific cases like the death of the account holder or on extreme compassionate grounds." }
+    ]
   },
   "nps_calculator": {
     "meta_title": "NPS Calculator (2025) - National Pension System | BharatSaver",
@@ -327,5 +383,7 @@
     "results_placeholder": "Search functionality is coming soon."
   }
 }
+
+    
 
     
