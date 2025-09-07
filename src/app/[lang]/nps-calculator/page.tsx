@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       title: dictionary.nps_calculator.meta_title,
       description: dictionary.nps_calculator.meta_description,
       url: pageUrl,
-      images: [{ url: `/images/nps-calculator-online.png`, width: 1200, height: 630, alt: 'BharatSaver NPS Calculator' }],
+      images: [{ url: `${siteUrl}/images/nps-calculator-online.png`, width: 1200, height: 630, alt: 'BharatSaver NPS Calculator' }],
       locale: params.lang === 'en' ? 'en_IN' : params.lang,
       type: 'website',
     },
@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       card: 'summary_large_image',
       title: dictionary.nps_calculator.meta_title,
       description: dictionary.nps_calculator.meta_description,
-      images: [`/images/nps-calculator-online.png`],
+      images: [`${siteUrl}/images/nps-calculator-online.png`],
     },
     alternates: {
       canonical: pageUrl,
@@ -250,3 +250,5 @@ export default async function NpsCalculatorPage({ params }: { params: { lang: Lo
     </div>
   );
 }
+
+    

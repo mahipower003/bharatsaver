@@ -287,7 +287,7 @@
           "Total years to maturity: `T = 21`",
           "Number of annual deposits: `N = 15`"
         ],
-        "result": "Maturity value = sum_{k=0}^{14} P × (1 + r)^(T − k) <br/> <strong>Maturity value ≈ ₹7,182,119.17</strong> <br/> <strong>Total invested = ₹1,50,000 × 15 = ₹2,250,000</strong> <br/> <strong>Total interest earned ≈ ₹7,182,119.17 − ₹2,250,000 = ₹4,932,119.17</strong>"
+        "result": "<strong>Maturity value ≈ ₹7,182,119.17</strong> <br/> <strong>Total invested = ₹2,250,000</strong> <br/> <strong>Total interest earned ≈ ₹4,932,119.17</strong>"
       },
       "snapshot_title": "Snapshot (selected years):",
       "timing_note": "<strong>Note on timing:</strong> Our example assumes deposits are made at the *start of each financial year* (best-case). If you deposit later in the year (e.g., mid-year or monthly later in the month), the maturity will be slightly lower. The calculator provides both annual and monthly modes — choose the one that matches your deposit schedule.",
@@ -391,7 +391,7 @@
       },
       {
         "question": "What happens if the parent/guardian dies?",
-        "answer": "In the unfortunate event of the depositor's (parent/guardian's) death, the account can be continued by the other parent or legal guardian. If not possible, the account is typically closed, and the balance with interest is paid to the girl child's nominee or legal heir."
+        "answer": "In the unfortunate event of the depositor's (parent/guardian's) death, the account can be continued by the other parent or a new legal guardian. If not possible, the account is typically closed, and the balance with interest is paid to the girl child's nominee or legal heir."
       },
       { "question": "What is the current SSY interest rate for 2025?", "answer": "The SSY interest rate for Apr–Jun 2025 is <strong>8.2%</strong> (set quarterly by the Government of India)." },
       { "question": "How is SSY interest calculated?", "answer": "SSY compounds annually. For regular annual deposits, calculate each year’s deposit growth until maturity and sum them. Use A = P(1+r)^(years). Our calculator does this automatically for you." },
@@ -478,7 +478,7 @@
       ],
       "result": "<strong>Estimated corpus at retirement ≈ ₹98.2 lakh</strong>",
       "annuity_intro": "From this corpus, you must decide what is the NPS annuity rate in India you expect:",
-      "annuity_result": "Withdrawable lump sum (60%) ≈ ₹58.9 lakh<br/>Amount to annuitize (40%) ≈ ₹39.3 lakh<br/>If you purchase an annuity with a 6% payout rate, your <strong>monthly pension would be ≈ ₹19,650</strong>.",
+      "annuity_result": "Withdrawable lump sum (60%) ≈ ₹58.9 lakh<br/>Amount for Annuity (40%) ≈ ₹39.3 lakh<br/>If you purchase an annuity with a 6% payout rate, your <strong>monthly pension would be ≈ ₹19,650</strong>.",
       "disclaimer": "These numbers are for illustration. Real-world returns vary and annuity rates change."
     },
     "tax_benefits": {
@@ -512,7 +512,7 @@
       }
     },
     "comparison": {
-      "title": "NPS vs PPF vs FD vs Mutual Funds: Which is Better for Retirement?",
+      "title": "NPS vs PPF: Which is Better for Retirement?",
       "table": {
         "headers": ["Feature", "NPS", "PPF", "Fixed Deposit (FD)", "Mutual Funds (ELSS)"],
         "rows": [
@@ -532,11 +532,11 @@
       },
       {
         "question": "How is NPS corpus calculated?",
-        "answer": "By compounding your periodic contributions at the expected annual return rate until retirement. For annual contributions use FV = P × [(1+r)^t − 1] / r."
+        "answer": "By compounding your periodic contributions at the expected annual return rate until retirement. For a monthly contribution example, use our NPS pension calculator."
       },
       {
-        "question": "How much pension will I get from NPS?",
-        "answer": "It depends on the corpus size and the annuity rate at the time of your retirement. For example, a corpus of ₹39.3 lakh annuitized at a 6% rate can yield a monthly pension of roughly ₹19,650."
+        "question": "How much pension will I get from my NPS corpus?",
+        "answer": "Your pension depends on how much you annuitize at retirement and the prevailing annuity rate in India. Example: a ₹39.3L annuity at 6% yields ~₹19,650/month."
       },
       {
         "question": "What tax benefits does NPS offer for 2025?",
@@ -647,3 +647,5 @@
     "results_placeholder": "Search functionality is coming soon."
   }
 }
+
+    
