@@ -1,10 +1,11 @@
+
 import { ApyCalculator } from "@/components/calculators/ApyCalculator";
 import { getDictionary } from "@/lib/dictionaries";
 import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Shield, BarChart2, UserCheck, Bank, GitCompareArrows, AlertTriangle, FileText, Download } from "lucide-react";
+import { Shield, BarChart2, UserCheck, Landmark, GitCompareArrows, AlertTriangle } from "lucide-react";
 import Link from "next/link";
 import { ApyPremiumChart } from "@/components/calculators/ApyPremiumChart";
 
@@ -122,7 +123,7 @@ export default async function ApyCalculatorPage({ params }: { params: { lang: Lo
         <Card className="mt-12 shadow-lg">
           <CardHeader>
             <CardTitle className="flex items-center gap-3">
-                <Bank className="h-7 w-7 text-primary"/>
+                <Landmark className="h-7 w-7 text-primary"/>
                 <h2 className="text-2xl font-bold">{dictionary.apy_calculator.enrollment.title}</h2>
             </CardTitle>
           </CardHeader>
