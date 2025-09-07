@@ -86,6 +86,7 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
   };
   
   const comparisonData = dictionary.ppf_calculator.comparison.table;
+  const historicalRatesData = dictionary.ppf_calculator.historical_rates.table;
 
   return (
     <div className="py-12">
@@ -190,6 +191,63 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
         </Card>
 
         <Card className="mt-12 shadow-lg">
+          <CardHeader>
+            <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.historical_rates.title}</h2>
+          </CardHeader>
+          <CardContent>
+            <p className="mb-4 text-muted-foreground">{dictionary.ppf_calculator.historical_rates.intro}</p>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  {historicalRatesData.headers.map((header: string, index: number) => (
+                    <TableHead key={index}>{header}</TableHead>
+                  ))}
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {historicalRatesData.rows.map((row: string[], rowIndex: number) => (
+                  <TableRow key={rowIndex}>
+                    {row.map((cell: string, cellIndex: number) => (
+                      <TableCell key={cellIndex}>{cell}</TableCell>
+                    ))}
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+            <div className="prose dark:prose-invert max-w-none mt-4">
+                <p className="text-sm" dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.historical_rates.sources }}></p>
+                <p className="font-semibold italic">{dictionary.ppf_calculator.historical_rates.insight}</p>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="mt-12 shadow-lg">
+          <CardHeader>
+            <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.investment_example.title}</h2>
+          </CardHeader>
+          <CardContent className="prose dark:prose-invert max-w-none">
+            <p>{dictionary.ppf_calculator.investment_example.scenario}</p>
+            <h3 className="text-lg font-semibold">{dictionary.ppf_calculator.investment_example.assumptions.title}</h3>
+            <ul>
+                {dictionary.ppf_calculator.investment_example.assumptions.points.map((point:string, index: number) => <li key={index}>{point}</li>)}
+            </ul>
+            <h3 className="text-lg font-semibold">{dictionary.ppf_calculator.investment_example.formula.title}</h3>
+            <p className="bg-muted p-4 rounded-md font-mono text-sm"><code>{dictionary.ppf_calculator.investment_example.formula.formula_string}</code></p>
+            <h3 className="text-lg font-semibold">{dictionary.ppf_calculator.investment_example.calculation.title}</h3>
+            <div className="bg-muted/50 p-4 rounded-md space-y-2">
+              {dictionary.ppf_calculator.investment_example.calculation.steps.map((step:string, index: number) => <p key={index} className="font-mono text-sm">{step}</p>)}
+            </div>
+             <h3 className="text-lg font-semibold mt-4">{dictionary.ppf_calculator.investment_example.summary.title}</h3>
+             <ul>
+                <li><strong>{dictionary.ppf_calculator.total_investment}:</strong> {dictionary.ppf_calculator.investment_example.summary.total_invested}</li>
+                <li><strong>{dictionary.ppf_calculator.maturity_value}:</strong> {dictionary.ppf_calculator.investment_example.summary.maturity_value}</li>
+                <li><strong>{dictionary.ppf_calculator.total_interest}:</strong> {dictionary.ppf_calculator.investment_example.summary.interest_earned}</li>
+            </ul>
+            <p className="font-semibold italic">{dictionary.ppf_calculator.investment_example.takeaway}</p>
+          </CardContent>
+        </Card>
+
+        <Card className="mt-12 shadow-lg">
             <CardHeader>
                 <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.comparison.title}</h2>
             </CardHeader>
@@ -243,3 +301,5 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
     </div>
   );
 }
+
+    

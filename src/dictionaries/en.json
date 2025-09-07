@@ -165,6 +165,57 @@
       ],
       "footer_note": "Rates are verified quarterly by the Ministry of Finance, GoI. We automatically update the rate on this page."
     },
+    "historical_rates": {
+      "title": "PPF Interest Rates Over the Last 10 Years",
+      "intro": "Here’s how PPF rates have fluctuated since 2015:",
+      "table": {
+        "headers": ["Time Period", "Interest Rate (%)"],
+        "rows": [
+          ["April 2025 – June 2025 (latest)", "7.1%"],
+          ["2015–2016 (approx)", "8.1%"],
+          ["2016–2017", "~8.0%"],
+          ["2017–2018", "7.9% → 7.6%"],
+          ["2018–2019", "7.8% → 8.0%"],
+          ["2019–2020", "8.0% → 7.9%"],
+          ["2020–2025 (last 5 years)", "Stable at 7.1%"]
+        ]
+      },
+      "sources": "These rates are sourced from credible government and financial platforms like the <a href='https://www.nsiindia.gov.in/' target='_blank' rel='noopener noreferrer' class='underline'>Ministry of Finance</a> and <a href='https://groww.in/p/ppf-interest-rate' target='_blank' rel='noopener noreferrer' class='underline'>Groww</a>.",
+      "insight": "Insight: In the past decade, rates gradually declined from around 8%–8.8% in 2012–2016, dipping to 7.1%—and have stayed stable at that level since 2020."
+    },
+    "investment_example": {
+        "title": "What If You Invested 10 Years Ago? A Practical Example",
+        "scenario": "Let’s consider a real-life case: What if you invested ₹1.5 lakh annually, starting 10 years back, using actual average rates?",
+        "assumptions": {
+          "title": "Assumptions:",
+          "points": [
+            "Annual deposit: ₹1.5 lakh",
+            "Duration: 10 years",
+            "Used average annual interest rate (simple average): ~7.8%"
+          ]
+        },
+        "formula": {
+          "title": "Using the standard annual compounding formula:",
+          "formula_string": "A = P × [ ( (1 + r)^t – 1 ) / r ]"
+        },
+        "calculation": {
+          "title": "Calculation:",
+          "steps": [
+            "A ≈ 1,50,000 × [ (1.078^10 – 1) / 0.078 ]",
+            "1.078^10 ≈ 2.105",
+            "(2.105 – 1) = 1.105",
+            "1.105 / 0.078 ≈ 14.17",
+            "A ≈ ₹1,50,000 × 14.17 ≈ ₹21,25,500"
+          ]
+        },
+        "summary": {
+          "title": "Summary after 10 years:",
+          "total_invested": "₹15,00,000 (₹1.5 lakh × 10 years)",
+          "maturity_value": "~₹21,25,500",
+          "interest_earned": "₹6,25,500"
+        },
+        "takeaway": "Takeaway: Your investment grew by about 41.7% over 10 years — all tax-free. And even though rates tapered, PPF offered stable, risk-free growth."
+    },
     "comparison": {
       "title": "Compare PPF With Other Investment Options",
       "table": {
@@ -183,10 +234,6 @@
       {
         "question": "What is the current PPF interest rate?",
         "answer": "The PPF rate changes quarterly. This calculator auto-fills the current rate. We last checked it against the official <a href='https://www.indiapost.gov.in/Financial/pages/content/post-office-saving-schemes.aspx' target='_blank' rel='noopener noreferrer'>Ministry of Finance</a> announcements."
-      },
-      {
-        "question": "When does a deposit start earning interest?",
-        "answer": "Deposits made before the 5th of a month earn interest for that month. This is a crucial detail for maximizing returns."
       },
       { "question": "What is the maximum deposit allowed in PPF?", "answer": "You can deposit a maximum of ₹1,50,000 in a single financial year." },
       { "question": "Can I extend my PPF after 15 years?", "answer": "Yes, you can extend your PPF account in blocks of 5 years with or without making further contributions." },
@@ -305,3 +352,5 @@
     "results_placeholder": "Search functionality is coming soon."
   }
 }
+
+    
