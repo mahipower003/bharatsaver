@@ -85,7 +85,7 @@ export const calculators: Calculator[] = [
     icon: BadgePercent,
     link_text: 'Optimize Now',
     lastModified: '2024-07-21',
-    image: '/images/PPF-NPS-FD-SSY-Scheme-selector.png'
+    image: '/images/loan-optimizer-online.png'
   },
   {
     slug: 'mutual-fund-overlap-calculator',
