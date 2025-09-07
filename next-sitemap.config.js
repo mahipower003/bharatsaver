@@ -4,18 +4,11 @@ const { pages } = require('./src/data/pages');
 
 const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
 
-// Base configuration
-const config = {
-  siteUrl: siteUrl,
-  generateRobotsTxt: true,
-  generateIndexSitemap: false, // We'll create a single sitemap
-};
-
 // Generate URLs for all pages and locales
 const allPageUrls = pages.flatMap(page => {
   return i18nConfig.locales.map(locale => {
     const slug = page.slug === '/' ? '' : page.slug;
-    const path = `/${locale}${slug}`;
+    const path = `${siteUrl}/${locale}${slug}`;
     
     // Create alternate refs for this page in all locales
     const alternateRefs = i18nConfig.locales.map(altLocale => ({
@@ -24,7 +17,7 @@ const allPageUrls = pages.flatMap(page => {
     }));
 
     return {
-      loc: path, // next-sitemap will make this absolute
+      loc: path,
       lastmod: page.lastModified,
       changefreq: page.changefreq,
       priority: page.priority,
@@ -34,15 +27,15 @@ const allPageUrls = pages.flatMap(page => {
 });
 
 module.exports = {
-  ...config,
+  siteUrl: siteUrl,
+  generateRobotsTxt: true,
+  generateIndexSitemap: false, // We'll create a single sitemap
   // The source of all URLs is our programmatically generated list
-  additionalPaths: async (cfg) => {
-    return allPageUrls.map(page => ({
-        loc: page.loc,
-        lastmod: page.lastmod,
-        changefreq: page.changefreq,
-        priority: page.priority,
-        alternateRefs: page.alternateRefs,
-    }));
+  additionalPaths: async (config) => {
+    // The library expects relative paths for `loc` if we return from here.
+    // However, since we are providing the full object with `alternateRefs`
+    // which need to be absolute, we will return the pre-generated absolute URLs.
+    // The library will handle them correctly.
+    return allPageUrls;
   },
 };
