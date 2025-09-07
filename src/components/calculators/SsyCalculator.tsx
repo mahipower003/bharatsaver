@@ -477,3 +477,5 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
     </>
   );
 }
+
+    

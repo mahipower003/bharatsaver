@@ -105,7 +105,7 @@
     "view_chart": "Chart",
     "view_table": "Table",
     "yearly_breakdown_title": "Year-wise Breakdown",
-    "export_csv": "Export as CSV",
+    "export_csv": "Export year-wise table (CSV)",
     "table_year": "Year",
     "table_opening_balance": "Opening Balance",
     "table_amount_invested": "Amount Invested",
@@ -249,7 +249,7 @@
     "total_interest": "Total Interest Earned",
     "view_chart": "Chart",
     "view_table": "Table",
-    "export_csv": "Export as CSV",
+    "export_csv": "Export year-wise table (CSV)",
     "table_year": "Year",
     "table_age": "Girl's Age",
     "table_opening_balance": "Opening Balance",
@@ -490,3 +490,5 @@
     "results_placeholder": "Search functionality is coming soon."
   }
 }
+
+    
