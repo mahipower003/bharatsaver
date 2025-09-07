@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Logo } from './Logo';
+import { BharatSaverLogo } from './BharatSaverLogo';
 import { calculators } from '@/data/calculators';
 import type { Locale } from '@/lib/i18n-config';
 import type { Dictionary } from '@/types';
@@ -37,7 +37,7 @@ export function MobileNav({ lang, dictionary }: MobileNavProps) {
         <div className="flex flex-col h-full">
           <div className="p-4 border-b">
             <Link href={`/${lang}`} className="flex items-center gap-2" onClick={() => setOpen(false)}>
-              <Logo className="h-8 w-8" />
+              <BharatSaverLogo className="h-8 w-8" />
               <span className="font-bold text-lg">BharatSaver</span>
             </Link>
           </div>

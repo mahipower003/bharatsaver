@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { Locale } from '@/lib/i18n-config';
 import type { Dictionary } from '@/types';
 
-import { Logo } from './Logo';
+import { BharatSaverLogo } from './BharatSaverLogo';
 import { Button } from '@/components/ui/button';
 import { MobileNav } from './MobileNav';
 
@@ -25,7 +25,7 @@ export function Header({ lang, dictionary }: HeaderProps) {
         <div className="flex items-center gap-4 md:gap-10">
           <MobileNav lang={lang} dictionary={dictionary} />
           <Link href={`/${lang}`} className="hidden sm:flex items-center gap-2">
-            <Logo className="h-8 w-8" />
+            <BharatSaverLogo className="h-8 w-8" />
             <span className="font-bold text-xl text-foreground">BharatSaver</span>
           </Link>
         </div>
