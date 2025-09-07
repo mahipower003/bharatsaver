@@ -22,7 +22,7 @@ export const calculators: Calculator[] = [
     icon: Landmark,
     link_text: 'Calculate Now',
     lastModified: '2024-07-28',
-    image: '/images/ppf-calculator-online.png'
+    image: '/images/calculate-ppf-online.png'
   },
   {
     slug: 'ssy-calculator',

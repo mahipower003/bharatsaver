@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState, useEffect, useMemo } from 'react';
@@ -54,6 +55,7 @@ export function PpfCalculator({ dictionary }: PpfCalculatorProps) {
 
   const [result, setResult] = useState<CalculationResult | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [lastUpdated, setLastUpdated] = useState('');
 
   const form = useForm<PpfFormValues>({
     resolver: zodResolver(formSchema),
@@ -86,6 +88,12 @@ export function PpfCalculator({ dictionary }: PpfCalculatorProps) {
       handleSubmit(valuesToSet as PpfFormValues);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    const currentDate = new Date();
+    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    setLastUpdated(`${monthNames[currentDate.getMonth()]} ${currentDate.getFullYear()}`);
   }, []);
 
   async function handleSubmit(values: PpfFormValues) {
@@ -194,10 +202,15 @@ export function PpfCalculator({ dictionary }: PpfCalculatorProps) {
     <>
       <Card className="shadow-lg">
         <CardHeader>
-          <CardTitle className="flex items-center gap-2 text-xl">
-            <Landmark className="h-6 w-6 text-primary" />
-            <span>{dictionary.title}</span>
-          </CardTitle>
+          <div className="flex justify-between items-start">
+            <CardTitle className="flex items-center gap-2 text-xl">
+              <Landmark className="h-6 w-6 text-primary" />
+              <span>{dictionary.title}</span>
+            </CardTitle>
+            {lastUpdated && (
+              <p className="text-sm text-muted-foreground mt-2">{dictionary.last_updated} {lastUpdated}</p>
+            )}
+          </div>
         </CardHeader>
         <CardContent>
           <Form {...form}>

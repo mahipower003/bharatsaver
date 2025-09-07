@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         url: pageUrl,
         siteName: 'BharatSaver',
         images: [{ 
-          url: `/ppf-calculator-online.png`,
+          url: `/images/calculate-ppf-online.png`,
           width: 1200, 
           height: 630, 
           alt: 'BharatSaver PPF Calculator' 
@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         card: 'summary_large_image',
         title: dictionary.ppf_calculator.meta_title,
         description: dictionary.ppf_calculator.meta_description,
-        images: [`/ppf-calculator-online.png`],
+        images: [`/images/calculate-ppf-online.png`],
     },
     alternates: {
       canonical: pageUrl,
@@ -70,11 +70,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 export default async function PpfCalculatorPage({ params }: { params: { lang: Locale }}) {
   const dictionary = await getDictionary(params.lang, ['ppf_calculator']);
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const currentDate = new Date();
-  const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  const lastUpdated = `${monthNames[currentDate.getMonth()]} ${currentDate.getFullYear()}`;
-
-
+  
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -100,7 +96,6 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
           <p className="mt-4 text-lg text-muted-foreground">
             {dictionary.ppf_calculator.description}
           </p>
-          <p className="text-sm text-muted-foreground mt-2">{dictionary.ppf_calculator.last_updated} {lastUpdated}</p>
         </div>
         
         <PpfCalculator dictionary={dictionary.ppf_calculator} />
