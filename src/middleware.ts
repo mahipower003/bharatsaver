@@ -20,19 +20,6 @@ function getLocale(request: NextRequest): string {
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  // Paths to ignore from localization
-  const ignoredPaths = [
-    '/sitemap.xml',
-    '/robots.txt',
-    '/hero-image.png',
-    '/api/',
-    '/public/'
-  ];
-
-  if (ignoredPaths.some(p => pathname.startsWith(p)) || (/\..*$/.test(pathname) && !pathname.endsWith('.xml'))) {
-    return NextResponse.next();
-  }
-
   // Check if there is any supported locale in the pathname
   const pathnameIsMissingLocale = i18nConfig.locales.every(
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
@@ -58,6 +45,6 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     // Skip all internal paths (_next) and static files (e.g. images, favicon).
-    '/((?!api|_next/static|_next/image|images|favicon.ico|.*\\.png$).*)',
+    '/((?!api|_next/static|_next/image|images|favicon.ico|sitemap.xml|robots.txt|.*\\.png$).*)',
   ],
 };
