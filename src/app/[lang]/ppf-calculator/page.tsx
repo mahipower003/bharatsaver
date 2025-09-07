@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { CheckCircle2 } from "lucide-react";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -112,6 +113,24 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
 
         <Card className="mt-12 shadow-lg">
           <CardHeader>
+            <CardTitle className="text-2xl">{dictionary.ppf_calculator.advantages.title}</CardTitle>
+          </CardHeader>
+          <CardContent className="prose dark:prose-invert max-w-none">
+            <p>{dictionary.ppf_calculator.advantages.intro}</p>
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+              {dictionary.ppf_calculator.advantages.points.map((point: string, index: number) => (
+                <li key={index} className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
+                  <span>{point}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-4">{dictionary.ppf_calculator.advantages.conclusion}</p>
+          </CardContent>
+        </Card>
+
+        <Card className="mt-12 shadow-lg">
+          <CardHeader>
             <CardTitle className="text-2xl">{dictionary.ppf_calculator.example.title}</CardTitle>
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none">
@@ -122,6 +141,25 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
                 <li><strong>{dictionary.ppf_calculator.maturity_value}:</strong> {dictionary.ppf_calculator.example.maturity_amount}</li>
             </ul>
             <p>{dictionary.ppf_calculator.example.footer_note}</p>
+          </CardContent>
+        </Card>
+        
+        <Card className="mt-12 shadow-lg">
+          <CardHeader>
+            <CardTitle className="text-2xl">{dictionary.ppf_calculator.tax_benefits.title}</CardTitle>
+          </CardHeader>
+          <CardContent className="prose dark:prose-invert max-w-none">
+            <p>{dictionary.ppf_calculator.tax_benefits.intro}</p>
+            <h3 className="text-xl font-semibold">{dictionary.ppf_calculator.tax_benefits.contribution_title}</h3>
+            <p dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.tax_benefits.contribution_body }}></p>
+            <h3 className="text-xl font-semibold">{dictionary.ppf_calculator.tax_benefits.interest_title}</h3>
+            <p>{dictionary.ppf_calculator.tax_benefits.interest_body}</p>
+            <h3 className="text-xl font-semibold">{dictionary.ppf_calculator.tax_benefits.maturity_title}</h3>
+            <p>{dictionary.ppf_calculator.tax_benefits.maturity_body}</p>
+            <div className="bg-primary/10 p-4 rounded-md border-l-4 border-primary">
+              <p className="font-semibold" dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.tax_benefits.why_matters }}></p>
+            </div>
+            <p dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.tax_benefits.footer_note }}></p>
           </CardContent>
         </Card>
         
@@ -162,7 +200,7 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
                         ))}
                     </TableBody>
                 </Table>
-                 <p className="text-sm text-muted-foreground mt-4">{dictionary.ppf_calculator.comparison.footer_note}</p>
+                 <p className="text-sm text-muted-foreground mt-4" dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.comparison.footer_note }}></p>
             </CardContent>
         </Card>
 
@@ -193,5 +231,3 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
     </div>
   );
 }
-
-    

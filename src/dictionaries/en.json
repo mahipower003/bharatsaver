@@ -118,6 +118,32 @@
         "Click Calculate to view your maturity, interest earned, total invested, and a detailed year-by-year breakdown."
       ]
     },
+    "advantages": {
+      "title": "Advantages of Using a PPF Calculator",
+      "intro": "A PPF Calculator makes it easy to plan your long-term savings. Instead of doing manual math, you get instant, accurate results.",
+      "points": [
+        "Quick Results: Instantly see how much you’ll get after 15 years.",
+        "Year-Wise Breakdown: Check balance growth each year with clarity.",
+        "Plan Deposits Better: Compare annual vs monthly contributions and see which suits you more.",
+        "Adjust Interest Rate: Simulate returns if the government changes the interest rate.",
+        "Goal Planning: Plan for retirement, child’s education, or buying a house with predictable savings.",
+        "Compare Options: See how PPF fares against FD, NPS, or SIP with real numbers.",
+        "Save Time & Effort: Avoid manual formulas and errors — the tool does it for you."
+      ],
+      "conclusion": "A PPF calculator is not just a tool; it’s a financial planner that helps you make smarter decisions with confidence."
+    },
+    "tax_benefits": {
+      "title": "Tax Benefits of a PPF Account",
+      "intro": "The Public Provident Fund (PPF) is one of the few investment options in India that offers complete tax benefits at every stage. That’s why it is considered an EEE (Exempt–Exempt–Exempt) scheme.",
+      "contribution_title": "Exemption on Contribution (Invested Amount)",
+      "contribution_body": "You can claim up to ₹1.5 lakh each financial year under Section 80C of the Income Tax Act. <br/>👉 Example: If your taxable income is ₹10 lakh and you invest ₹1.5 lakh in PPF, your taxable income reduces to ₹8.5 lakh.",
+      "interest_title": "Exemption on Interest Earned",
+      "interest_body": "The annual interest added to your PPF account is completely tax-free. Unlike bank FDs, you don’t pay tax on PPF interest.",
+      "maturity_title": "Exemption on Maturity Amount",
+      "maturity_body": "After 15 years, the entire maturity amount (principal + interest) is fully exempt from tax.",
+      "why_matters": "✨ Why this matters: PPF is among the safest, government-backed schemes where your investment, returns, and maturity are all tax-free — a rare advantage compared to most other options.",
+      "footer_note": "Read official PPF rules on the <a href='https://www.indiapost.gov.in/Financial/pages/content/post-office-saving-schemes.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Ministry of Finance website</a> ✅"
+    },
     "example": {
       "title": "Example — See Your PPF Growth in Action",
       "scenario": "You invest ₹1,50,000 per year for 15 years at 7.1% interest.",
@@ -146,7 +172,7 @@
           ["Best For", "Long-term, secure, tax-free savings", "Short/medium-term needs", "Retirement planning"]
         ]
       },
-      "footer_note": "Explore our FD Calculator, NPS Calculator, and SIP Calculator to compare returns and make informed decisions."
+      "footer_note": "Explore our <a href='/fd-vs-ppf-calculator' class='underline'>FD Calculator</a>, <a href='/nps-calculator' class='underline'>NPS Calculator</a> to compare returns and make informed decisions."
     },
     "faq_title": "Frequently Asked Questions",
     "faqs": [
@@ -285,5 +311,3 @@
     "results_placeholder": "Search functionality is coming soon."
   }
 }
-
-    
