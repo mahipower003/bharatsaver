@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         url: pageUrl,
         siteName: 'BharatSaver',
         images: [{ 
-          url: `/hero-image.png`,
+          url: `/ppf-calculator-online.png`,
           width: 1200, 
           height: 630, 
           alt: 'BharatSaver PPF Calculator' 
@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         card: 'summary_large_image',
         title: dictionary.ppf_calculator.meta_title,
         description: dictionary.ppf_calculator.meta_description,
-        images: [`/hero-image.png`],
+        images: [`/ppf-calculator-online.png`],
     },
     alternates: {
       canonical: pageUrl,
@@ -117,7 +117,7 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
             </ul>
           </CardContent>
         </Card>
-
+        
         <Card className="mt-12 shadow-lg">
           <CardHeader>
             <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.advantages.title}</h2>
@@ -301,5 +301,3 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
     </div>
   );
 }
-
-    
