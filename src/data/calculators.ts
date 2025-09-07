@@ -67,7 +67,7 @@ export const calculators: Calculator[] = [
     icon: FileText,
     link_text: 'Compare Now',
     lastModified: '2024-07-23',
-    image: '/images/PPF-NPS-FD-SSY-Scheme-selector.png'
+    image: '/images/tax-regime-calculator-online.png'
   },
   {
     slug: 'retirement-corpus-calculator',
