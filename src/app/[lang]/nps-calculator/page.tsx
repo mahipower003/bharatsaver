@@ -233,9 +233,19 @@ export default async function NpsCalculatorPage({ params }: { params: { lang: Lo
             </Accordion>
         </div>
 
+        <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-3">
+              <Star className="h-7 w-7 text-accent" />
+              <h2 className="text-2xl font-bold">{dictionary.nps_calculator.conclusion.title}</h2>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-muted-foreground">{dictionary.nps_calculator.conclusion.body}</p>
+          </CardContent>
+        </Card>
+
       </div>
     </div>
   );
 }
-
-    

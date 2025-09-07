@@ -105,7 +105,7 @@
     "view_chart": "Chart",
     "view_table": "Table",
     "yearly_breakdown_title": "Year-wise Breakdown",
-    "export_csv": "Export CSV",
+    "export_csv": "Export year-wise table (CSV)",
     "table_year": "Year",
     "table_opening_balance": "Opening Balance",
     "table_amount_invested": "Amount Invested",
@@ -224,8 +224,6 @@
     }
   },
   "ssy_calculator": {
-    "meta_title": "Sukanya Samriddhi Yojana (SSY) Calculator 2025 — Calculate SSY Returns & Maturity",
-    "meta_description": "Use our free SSY Calculator 2025 to estimate maturity, total interest and year-wise projection (8.2% current rate). Supports annual & monthly deposits. Export results as CSV.",
     "h1": "Sukanya Samriddhi Yojana (SSY) Calculator — Calculate Returns Online",
     "description": "Use our <strong>free Sukanya Samriddhi Yojana (SSY) Calculator</strong> to instantly estimate your <strong>maturity amount</strong>, <strong>total interest earned</strong>, and a <strong>year-wise breakdown</strong>. This calculator is updated with the current SSY interest rate for 2025 and supports annual and monthly deposit scenarios.",
     "title": "SSY Calculator",
@@ -274,12 +272,12 @@
       }
     },
     "how_it_works": {
-      "title": "How SSY interest is calculated (formula & example)",
-      "formula_title": "The Formula",
-      "intro": "Because SSY compounds <strong>annually</strong>, we use `n = 1`. For regular annual deposits, each deposit earns interest for the remaining years until maturity.",
-      "formula": "A = P × (1 + r/n)^(n × t)"
+      "title": "How SSY interest is calculated (formula & example)"
     },
     "example": {
+      "formula_title": "The Formula",
+      "intro": "Because SSY compounds <strong>annually</strong>, we use `n = 1`. For regular annual deposits, each deposit earns interest for the remaining years until maturity.",
+      "formula": "A = P × (1 + r/n)^(n × t)",
       "scenario": {
         "title": "Example (exact calculation)",
         "body": "<strong>Scenario:</strong> You deposit <strong>₹1,50,000 per year</strong> for <strong>15 years</strong> (maximum yearly contribution). The account matures in <strong>21 years</strong>. The SSY interest rate = <strong>8.2%</strong> (0.082).",
@@ -292,6 +290,7 @@
         "result": "Maturity value = sum_{k=0}^{14} P × (1 + r)^(T − k) <br/> <strong>Maturity value ≈ ₹7,182,119.17</strong> <br/> <strong>Total invested = ₹1,50,000 × 15 = ₹2,250,000</strong> <br/> <strong>Total interest earned ≈ ₹7,182,119.17 − ₹2,250,000 = ₹4,932,119.17</strong>"
       },
       "snapshot_title": "Snapshot (selected years):",
+      "timing_note": "<strong>Note on timing:</strong> Our example assumes deposits are made at the *start of each financial year* (best-case). If you deposit later in the year (e.g., mid-year or monthly later in the month), the maturity will be slightly lower. The calculator provides both annual and monthly modes — choose the one that matches your deposit schedule.",
       "table": {
         "headers": ["Year", "Balance (end of year)"],
         "rows": [
@@ -319,8 +318,7 @@
     },
     "investment_strategy": {
       "title": "Best SSY investment strategy (practical tips)",
-      "monthly_example_title": "Monthly Deposit Example",
-      "monthly_example_body": "If you deposit <strong>₹12,500 per month (₹1.5 lakh/year)</strong> for 15 years and the annual SSY rate is 8.2%, the effective compounding is yearly but monthly deposits change interest days — our calculator supports monthly mode and will compute exact year-wise balances.",
+      "monthly_example": "<strong>Monthly Deposit Example:</strong> If you deposit <strong>₹12,500 per month (₹1.5 lakh/year)</strong> for 15 years and the annual SSY rate is 8.2%, the effective compounding is yearly but monthly deposits change interest days — our calculator supports monthly mode and will compute exact year-wise balances.",
       "points": [
         "<strong>Deposit before the 5th of the month</strong> — deposits before the 5th are eligible for interest for that month.",
         "<strong>If possible, deposit lump sum early in the financial year</strong> — a full ₹1.5 lakh early in April maximizes the year’s interest.",
@@ -338,8 +336,7 @@
       "title": "SSY Rules: Withdrawals, Revival & Nomination",
       "withdrawal_title": "Partial Withdrawal Rules",
       "withdrawal_body": "Partial withdrawal is allowed only after the girl child turns 18 or has passed the 10th standard, whichever is earlier. The withdrawal is limited to 50% of the balance available at the end of the preceding financial year and can only be used for higher education or marriage expenses.",
-      "withdrawal_example_title": "Partial Withdrawal Example",
-      "withdrawal_example_body": "If the account balance at the end of Year 17 is ₹40 lakh, you can withdraw up to 50% of this amount (₹20 lakh) in Year 18 for educational purposes. Always check the exact calculation with your bank/Post Office when initiating withdrawal.",
+      "withdrawal_example": "<strong>Partial Withdrawal Example:</strong> If the account balance at the end of Year 17 is ₹40 lakh, you can withdraw up to 50% of this amount (₹20 lakh) in Year 18 for educational purposes. Always check the exact calculation with your bank/Post Office when initiating withdrawal.",
       "revival_title": "How to Revive an Inactive SSY Account",
       "revival_intro": "If you miss the minimum annual deposit of ₹250, the account becomes inactive. To revive it:",
       "revival_steps": [
@@ -392,8 +389,6 @@
     }
   },
   "nps_calculator": {
-    "meta_title": "NPS Calculator (2025) - National Pension System | BharatSaver",
-    "meta_description": "Use our free National Pension System (NPS) Calculator to estimate your retirement corpus, monthly pension, and tax benefits in India. Plan for a secure retirement in 2025.",
     "h1": "NPS Calculator — Calculate Your Retirement Corpus & Monthly Pension",
     "description": "Plan a confident retirement with our NPS (National Pension System) Calculator. Enter your monthly or annual contribution, expected rate of return, and years to retirement — we’ll show your estimated corpus, the tax-efficient benefits, and a projected monthly annuity after age 60.",
     "title": "NPS Calculator",
@@ -519,7 +514,11 @@
       { "question": "How much pension will I get from NPS?", "answer": "Pension depends on how much you annuitize at retirement and the prevailing annuity rate. Example: a ₹39.3L annuity at 6% yields ~₹19,650/month." },
       { "question": "What tax benefits does NPS offer?", "answer": "Deductions under Section 80C (up to ₹1.5L), additional deduction ₹50k under 80CCD(1B), and employer contribution benefits under 80CCD(2)." },
       { "question": "Can NRIs open an NPS account?", "answer": "Yes, NRIs meeting age criteria (18–70) can open NPS accounts subject to provider rules." }
-    ]
+    ],
+    "conclusion": {
+      "title": "Conclusion: Is NPS the Right Choice for Your Retirement?",
+      "body": "The National Pension System is a powerful, tax-efficient tool specifically designed for long-term retirement planning. Its blend of equity and debt options allows for potentially higher returns than traditional fixed-income products, while its disciplined structure ensures you stay on track. Use this calculator to model different scenarios and see how NPS can form the cornerstone of your retirement strategy."
+    }
   },
   "apy_calculator": {
     "meta_title": "APY Calculator (2025) - Atal Pension Yojana | BharatSaver",
@@ -616,5 +615,3 @@
     "results_placeholder": "Search functionality is coming soon."
   }
 }
-
-    
