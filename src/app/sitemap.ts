@@ -3,33 +3,33 @@ import { pages } from '@/data/pages';
 import { i18nConfig } from '@/lib/i18n-config';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
+  const siteUrl = process.env.SITE_URL ?? 'https://bharatsaver.com';
   const { locales, defaultLocale } = i18nConfig;
 
-  const sitemapEntries: MetadataRoute.Sitemap = [];
+  return pages.flatMap((page) => {
+    const slug = page.slug === '/' ? '' : page.slug;
 
-  pages.forEach((page) => {
-    locales.forEach((locale) => {
-      const slug = page.slug === '/' ? '' : page.slug;
+    return locales.map((locale) => {
       const url = `${siteUrl}/${locale}${slug}`;
-      
-      const alternates: { [key: string]: string } = {};
+
+      // Build hreflang alternates
+      const alternates: Record<string, string> = {};
       locales.forEach((altLocale) => {
         alternates[altLocale] = `${siteUrl}/${altLocale}${slug}`;
       });
       alternates['x-default'] = `${siteUrl}/${defaultLocale}${slug}`;
 
-      sitemapEntries.push({
-        url: url,
-        lastModified: new Date(page.lastModified),
-        changeFrequency: page.changefreq,
-        priority: page.priority,
+      return {
+        url,
+        lastModified: page.lastModified
+          ? new Date(page.lastModified)
+          : new Date(), // fallback to now
+        changeFrequency: page.changefreq ?? 'monthly',
+        priority: page.priority ?? 0.5,
         alternates: {
           languages: alternates,
         },
-      });
+      };
     });
   });
-
-  return sitemapEntries;
 }
