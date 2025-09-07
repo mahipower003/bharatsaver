@@ -322,11 +322,11 @@ export function PpfCalculator({ dictionary }: PpfCalculatorProps) {
                         border: "1px solid hsl(var(--border))",
                         background: "hsl(var(--background))"
                       }}
-                      formatter={(value: number, name: string) => [formatCurrency(value), chartConfig[name as keyof typeof chartConfig].label]}
+                      formatter={(value: number, name: string) => [formatCurrency(value), chartConfig[name as keyof typeof chartConfig]?.label]}
                     />
                     <Legend />
-                    <Area type="monotone" dataKey="totalInvestment" stackId="1" stroke="hsl(var(--primary))" fill="url(#colorInvestment)" name={dictionary.total_investment}/>
-                    <Area type="monotone" dataKey="totalInterest" stackId="1" stroke="hsl(var(--accent))" fill="url(#colorInterest)" name={dictionary.total_interest} />
+                    <Area type="monotone" dataKey="totalInvestment" stackId="1" stroke="hsl(var(--primary))" fill="url(#colorInvestment)" name="totalInvestment"/>
+                    <Area type="monotone" dataKey="totalInterest" stackId="1" stroke="hsl(var(--accent))" fill="url(#colorInterest)" name="totalInterest" />
                   </AreaChart>
                 </ResponsiveContainer>
               </TabsContent>
