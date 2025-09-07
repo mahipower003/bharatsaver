@@ -290,7 +290,9 @@
         "result": "<strong>Maturity value ≈ ₹7,182,119.17</strong> <br/> <strong>Total invested = ₹2,250,000</strong> <br/> <strong>Total interest earned ≈ ₹4,932,119.17</strong>"
       },
       "snapshot_title": "Snapshot (selected years):",
-      "timing_note": "<strong>Note on timing:</strong> Our example assumes deposits are made at the *start of each financial year* (best-case). If you deposit later in the year (e.g., mid-year or monthly later in the month), the maturity will be slightly lower. The calculator provides both annual and monthly modes — choose the one that matches your deposit schedule.",
+      "timing_note": "<strong>Note on timing:</strong> Our monthly-mode uses an approximation for monthly deposits and then applies annual compounding to match official rules. Because SSY officially compounds annually, a lump-sum deposit at the start of the financial year (before April 5th) gives the best results. Choose ‘Monthly’ only if you deposit monthly.",
+      "monthly_deposit_example_title": "Monthly Deposit Example",
+      "monthly_deposit_example_body": "If you deposit ₹12,500 monthly, the calculator approximates the future value at the end of the 15-year deposit period (≈₹50.21 lakh) and then compounds it annually for the remaining 6 years. This results in a final maturity of around <strong>₹71.6–71.8 lakh</strong>, very close to the lump-sum best case.",
       "table": {
         "headers": ["Year", "Balance (end of year)"],
         "rows": [
@@ -300,8 +302,7 @@
           ["15", "₹44,75,989.33"],
           ["21", "₹71,82,119.17"]
         ]
-      },
-      "footer_note": "<strong>Note on timing:</strong> Our example assumes deposits are made at the *start of each financial year* (best-case). If you deposit later in the year (e.g., mid-year or monthly later in the month), the maturity will be slightly lower. The calculator provides both annual and monthly modes — choose the one that matches your deposit schedule."
+      }
     },
     "comparison": {
       "title": "SSY vs PPF vs FD vs NPS — quick comparison (2025)",
@@ -336,7 +337,7 @@
       "title": "SSY Rules: Withdrawals, Revival & Nomination",
       "withdrawal_title": "Partial Withdrawal Rules",
       "withdrawal_body": "Partial withdrawal is allowed only after the girl child turns 18 or has passed the 10th standard, whichever is earlier. The withdrawal is limited to 50% of the balance available at the end of the preceding financial year and can only be used for higher education or marriage expenses.",
-      "withdrawal_example": "<strong>Partial Withdrawal Example:</strong> If the account balance at the end of Year 17 is ₹40 lakh, you can withdraw up to 50% of this amount (₹20 lakh) in Year 18 for educational purposes. Always check the exact calculation with your bank/Post Office when initiating withdrawal.",
+      "withdrawal_example": "<strong>Partial Withdrawal Example:</strong> If the account balance at the end of Year 17 is ₹40 lakh, you can withdraw up to 50% of this amount (₹20 lakh) in Year 18. Always check the exact calculation with your bank/Post Office when initiating withdrawal.",
       "revival_title": "How to Revive an Inactive SSY Account",
       "revival_intro": "If you miss the minimum annual deposit of ₹250, the account becomes inactive. To revive it:",
       "revival_steps": [
@@ -458,7 +459,7 @@
           "body": "A flexible, voluntary savings account with no lock-in, but also no extra tax benefit."
         }
       ],
-      "footer": "It combines tax savings, market-linked returns, and disciplined investment to build a substantial retirement fund."
+      "footer": "It combines tax savings, market-based returns, and disciplined investment to build a substantial retirement fund."
     },
     "how_it_works": {
       "title": "How the NPS Calculator Works (Formula & Example)",
@@ -480,7 +481,7 @@
         "Expected average return (blend of equity + debt): <strong>9% p.a.</strong>",
         "Contribution period: <strong>30 years</strong> (from age 30 to 60)."
       ],
-      "calculation_steps": "<ul><li><strong>Annual contribution (P):</strong> ₹72,000</li><li><strong>Annual rate (r):</strong> 0.09</li><li><strong>Years (t):</strong> 30</li></ul><p class='mt-2'>Applying the formula <strong>FV = P × [((1 + r)^t - 1) / r]</strong>:</p><ol class='list-decimal pl-5 space-y-1 mt-2'><li>Compute (1 + r)^t = (1.09)^30 ≈ 13.27</li><li>Subtract 1: 13.27 - 1 = 12.27</li><li>Divide by r: 12.27 / 0.09 ≈ 136.33</li><li>Multiply by P: 72,000 × 136.33 ≈ ₹98,16,000</li></ol>",
+      "calculation_steps": "<ul><li><strong>Annual contribution (P):</strong> ₹72,000</li><li><strong>Annual rate (r):</strong> 0.09</li><li><strong>Years (t):</strong> 30</li></ul><p class='mt-2'>Applying the formula <strong>FV = P × [((1 + r)^t - 1) / r]</strong>:</p><ol class='list-decimal pl-5 space-y-1 mt-2'><li>Compute (1 + r)^t = (1.09)^30 ≈ 13.27</li><li>Subtract 1: 13.27 - 1 = 12.27</li><li>Divide by r: 12.27 / 0.09 ≈ 136.33</li><li>Multiply by P: 72,000 × 136.33 ≈ ₹9,816,000</li></ol>",
       "result": "<strong>Estimated Corpus at Retirement ≈ ₹98.2 Lakh</strong>",
       "annuity_intro": "From this corpus, you can calculate your monthly pension:",
       "annuity_result": "Withdrawable Lump Sum (60%) ≈ ₹58.9 lakh<br/>Amount for Annuity (40%) ≈ ₹39.3 lakh<br/>If you purchase an annuity with a 6% payout rate, your <strong>monthly pension would be ≈ ₹19,650</strong>.",
@@ -588,14 +589,22 @@
         "Spouse/Nominee Benefits: On the subscriber's death, the spouse receives the pension. On the death of both, the nominee receives the accumulated corpus."
       ]
     },
+    "how_it_works": {
+      "title": "How the APY Calculator Works — Premiums by Age & Pension",
+      "intro": "The APY premium is not calculated with a compounding formula like PPF or NPS. Instead, the premiums are fixed amounts determined by the government based on your entry age and chosen pension. Our calculator uses the official premium table from PFRDA to give you the exact amount.",
+      "example": {
+        "title": "Example: Age 25 — How ₹76/month gives ₹1,000 pension (step-by-step)",
+        "body": "If you join APY at age 25 and choose the ₹1,000 pension option, your fixed monthly premium is just ₹76. You contribute this amount every month until you turn 60. From age 60 onwards, you receive a guaranteed pension of ₹1,000 every month for life."
+      }
+    },
     "premium_chart": {
-      "title": "APY Premium Chart (by Age & Pension Amount)",
+      "title": "APY Premium Chart (by age & pension amount)",
       "description": "This chart shows the fixed monthly premium based on your entry age and desired pension amount, as per the official <a href='https://www.pfrda.org.in/my-apy/apy-chart' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA premium table</a>. The earlier you start, the lower your premium.",
       "age_header": "Entry Age",
       "years_label": "Years"
     },
     "enrollment": {
-      "title": "APY Eligibility & How to Enroll",
+      "title": "APY Eligibility — Who Can Join & How to Enroll",
       "intro": "Enrolling in APY is simple:",
       "steps": [
         "<strong>Eligibility:</strong> You must be an Indian citizen between 18 and 40 years old.",
@@ -604,17 +613,17 @@
       ]
     },
     "comparison": {
-      "title": "APY vs NPS / PPF — Which is right for you?",
+      "title": "APY vs NPS vs PPF — Which Plan Fits You?",
       "body": "While APY is excellent for a basic, guaranteed pension, other schemes might be better for different goals. <strong>NPS</strong> offers higher potential returns and flexibility, making it suitable for those comfortable with market risks. <strong>PPF</strong> is a risk-free, long-term savings tool for wealth creation. Explore our <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> and <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> to compare."
     },
     "rules": {
-      "title": "APY Withdrawal, Penalties & Transfer Rules",
+      "title": "Penalties, Missed Payments & Revival — What You Need to Know",
       "body": "<strong>Withdrawal:</strong> Full withdrawal is only allowed at age 60. Early exit is permitted in cases of terminal illness or death. <br/> <strong>Penalties:</strong> A small penalty is charged for delayed payments, ranging from ₹1 to ₹10 per month depending on the premium amount. <br/> <strong>Transfer:</strong> You can transfer your APY account from one bank to another. For official rules, refer to the <a href='https://www.pfrda.org.in/my-apy/apy-faq' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA FAQ section</a>."
     },
     "faq_title": "Frequently Asked Questions",
     "faqs": [
       {
-        "question": "What is Atal Pension Yojana (APY)?",
+        "question": "What is the Atal Pension Yojana (APY)?",
         "answer": "Atal Pension Yojana (APY) is a government-backed pension scheme providing a guaranteed monthly pension of ₹1,000–₹5,000 to eligible subscribers after age 60. (Source: <a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA</a>)."
       },
       {

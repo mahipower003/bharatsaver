@@ -106,6 +106,19 @@ export default async function ApyCalculatorPage({ params }: { params: { lang: Lo
             </ul>
           </CardContent>
         </Card>
+        
+        <Card className="mt-12 shadow-lg">
+          <CardHeader>
+              <h2 className="text-2xl font-bold">{dictionary.apy_calculator.how_it_works.title}</h2>
+          </CardHeader>
+          <CardContent className="space-y-4">
+              <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.apy_calculator.how_it_works.intro }}></p>
+              <div className="bg-muted/50 p-4 rounded-lg">
+                  <h3 className="font-semibold text-lg">{dictionary.apy_calculator.how_it_works.example.title}</h3>
+                  <p className="mt-2 text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.apy_calculator.how_it_works.example.body }}></p>
+              </div>
+          </CardContent>
+        </Card>
 
         <Card className="mt-12 shadow-lg">
           <CardHeader>
