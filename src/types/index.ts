@@ -7,6 +7,7 @@ export type Calculator = {
   slug: string;
   title: string;
   description: string;
+  summary: string;
   icon: LucideIcon;
   link_text: string;
   lastModified: string;

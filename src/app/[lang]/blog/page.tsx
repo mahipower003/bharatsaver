@@ -64,7 +64,7 @@ export default async function BlogPage({ params }: { params: { lang: Locale }}) 
                     <div className="md:w-2/3 flex flex-col">
                         <CardHeader>
                             <CardTitle>{item.title}</CardTitle>
-                            <CardDescription className="mt-2">{item.description}</CardDescription>
+                            <CardDescription className="mt-2">{item.summary}</CardDescription>
                         </CardHeader>
                         <CardContent className="flex-grow flex items-end justify-between text-sm text-muted-foreground">
                             <span>{format(new Date(item.lastModified), 'MMMM d, yyyy')}</span>
