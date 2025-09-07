@@ -56,11 +56,15 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         images: [`/images/calculate-ssy-online.png`],
     },
     alternates: {
-      canonical: pageUrl,
-      languages: i18nConfig.locales.reduce((acc, locale) => {
-        acc[locale] = `${siteUrl}/${locale}/ssy-calculator`;
-        return acc;
-      }, {} as Record<string, string>),
+      canonical: `${siteUrl}/en/ssy-calculator`,
+      languages: {
+        'en': `${siteUrl}/en/ssy-calculator`,
+        'hi': `${siteUrl}/hi/ssy-calculator`,
+        'mr': `${siteUrl}/mr/ssy-calculator`,
+        'ta': `${siteUrl}/ta/ssy-calculator`,
+        'te': `${siteUrl}/te/ssy-calculator`,
+        'x-default': `${siteUrl}/en/ssy-calculator`,
+      }
     },
     other: {
       'application/ld+json': JSON.stringify(faqSchema),
@@ -326,7 +330,3 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
     </div>
   );
 }
-
-    
-
-    
