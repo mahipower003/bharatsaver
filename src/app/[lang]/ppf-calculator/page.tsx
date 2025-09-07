@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { CheckCircle2, TrendingUp, Landmark, ArrowRight } from "lucide-react";
+import { CheckCircle2, TrendingUp, Landmark, ArrowRight, ShieldCheck, Scale, Star } from "lucide-react";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -138,7 +138,10 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
         
         <Card className="mt-12 shadow-lg">
           <CardHeader>
-            <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.tax_benefits.title}</h2>
+             <CardTitle className="flex items-center gap-3">
+                <ShieldCheck className="h-7 w-7 text-primary"/>
+                <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.tax_benefits.title}</h2>
+             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-6">
             <p className="text-muted-foreground">{dictionary.ppf_calculator.tax_benefits.intro}</p>
@@ -163,15 +166,21 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
         
         <Card className="mt-12 shadow-lg">
           <CardHeader>
-            <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.rules.title}</h2>
+            <CardTitle className="flex items-center gap-3">
+                <Scale className="h-7 w-7 text-primary"/>
+                <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.rules.title}</h2>
+            </CardTitle>
           </CardHeader>
-          <CardContent className="prose dark:prose-invert max-w-none">
-             <ul>
+          <CardContent className="space-y-4">
+             <ul className="space-y-3">
                 {dictionary.ppf_calculator.rules.points.map((point: string, index: number) => (
-                    <li key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
+                    <li key={index} className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
+                      <span dangerouslySetInnerHTML={{ __html: point }}></span>
+                    </li>
                 ))}
             </ul>
-            <p dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.rules.footer_note }}></p>
+            <p className="text-sm text-muted-foreground pt-4" dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.rules.footer_note }}></p>
           </CardContent>
         </Card>
 
@@ -270,7 +279,22 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
               ))}
             </Accordion>
         </div>
+
+        <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-3">
+              <Star className="h-7 w-7 text-accent" />
+              <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.conclusion.title}</h2>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-muted-foreground">{dictionary.ppf_calculator.conclusion.body}</p>
+          </CardContent>
+        </Card>
+
       </div>
     </div>
   );
 }
+
+    

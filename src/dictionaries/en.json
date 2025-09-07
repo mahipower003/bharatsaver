@@ -141,12 +141,12 @@
     "rules": {
       "title": "PPF Rules 2025 — Deposit Limits, Lock-in & Withdrawals",
       "points": [
-        "Maximum annual deposit: ₹1.5 lakh.",
-        "Minimum deposit: ₹500 p.a.",
-        "Lock-in: 15 years (extendable in blocks of 5 years).",
-        "Partial withdrawals: Allowed from the 7th financial year under specific rules.",
-        "Loan facility: Available from the 3rd year. (<a href='https://www.sbi.co.in/web/personal-banking/investments-deposits/govt-schemes/public-provident-fund' target='_blank' rel='noopener noreferrer' class='underline'>Learn more at SBI</a>)",
-        "Tax treatment: Contributions up to ₹1.5 lakh qualify under Section 80C and interest + maturity are tax-free (EEE). (<a href='https://www.hdfcbank.com/personal/save/accounts/public-provident-fund' target='_blank' rel='noopener noreferrer' class='underline'>See HDFC Bank details</a>)"
+        "<strong>Maximum annual deposit:</strong> ₹1.5 lakh.",
+        "<strong>Minimum deposit:</strong> ₹500 p.a.",
+        "<strong>Lock-in:</strong> 15 years (extendable in blocks of 5 years).",
+        "<strong>Partial withdrawals:</strong> Allowed from the 7th financial year under specific rules.",
+        "<strong>Loan facility:</strong> Available from the 3rd year. (<a href='https://www.sbi.co.in/web/personal-banking/investments-deposits/govt-schemes/public-provident-fund' target='_blank' rel='noopener noreferrer' class='underline'>Learn more at SBI</a>)",
+        "<strong>Tax treatment:</strong> Contributions up to ₹1.5 lakh qualify under Section 80C and interest + maturity are tax-free (EEE). (<a href='https://www.hdfcbank.com/personal/save/accounts/public-provident-fund' target='_blank' rel='noopener noreferrer' class='underline'>See HDFC Bank details</a>)"
       ],
       "footer_note": "Rates are verified quarterly by the Ministry of Finance, GoI. We automatically update the rate on this page."
     },
@@ -217,7 +217,11 @@
       { "question": "How is PPF interest calculated monthly?", "answer": "Interest is calculated on the lowest balance between the close of the fifth day and the last day of every month. However, the interest is credited to the account only at the end of the financial year." },
       { "question": "Is there any penalty for missed deposits?", "answer": "If you fail to deposit the minimum amount of ₹500 in a financial year, the account becomes inactive. You can reactivate it by paying a penalty of ₹50 per year of inactivity, along with the minimum deposit for each inactive year." },
       { "question": "How is PPF different from Sukanya Samriddhi Yojana (SSY)?", "answer": "PPF is a general long-term savings scheme for any resident Indian, while SSY is specifically designed for the financial security of a girl child. SSY typically offers a slightly higher interest rate but has stricter eligibility criteria." }
-    ]
+    ],
+    "conclusion": {
+      "title": "Final Thoughts: Is PPF Right for You?",
+      "body": "The Public Provident Fund remains one of the safest and most reliable long-term investment tools for Indian citizens. Its tax-free nature (EEE status), combined with a government-guaranteed return, makes it an essential part of any diversified portfolio, especially for risk-averse investors planning for major life goals like retirement or children's education. Use this calculator to see how small, consistent investments can grow into a significant, tax-free corpus over time."
+    }
   },
   "ssy_calculator": {
     "meta_title": "SSY Calculator (2025) - Sukanya Samriddhi Yojana | BharatSaver",
