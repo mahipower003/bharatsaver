@@ -192,7 +192,7 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
                     <TableHeader>
                         <TableRow>
                             {comparisonData.headers.map((header: string, index: number) => (
-                                <TableHead key={index}>{header}</TableHead>
+                                <TableHead key={index} className={index > 0 ? "text-center" : ""}>{header}</TableHead>
                             ))}
                         </TableRow>
                     </TableHeader>
@@ -237,3 +237,5 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
     </div>
   );
 }
+
+    
