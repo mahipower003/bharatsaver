@@ -6,7 +6,8 @@ import type { Metadata } from "next";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, TrendingUp, Bank, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -102,19 +103,6 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
 
         <Card className="mt-12 shadow-lg">
           <CardHeader>
-            <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.how_to_use.title}</h2>
-          </CardHeader>
-          <CardContent className="prose dark:prose-invert max-w-none">
-            <ul>
-                {dictionary.ppf_calculator.how_to_use.steps.map((step: string, index: number) => (
-                    <li key={index}>{step}</li>
-                ))}
-            </ul>
-          </CardContent>
-        </Card>
-        
-        <Card className="mt-12 shadow-lg">
-          <CardHeader>
             <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.advantages.title}</h2>
           </CardHeader>
           <CardContent>
@@ -131,19 +119,21 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
           </CardContent>
         </Card>
 
-        <Card className="mt-12 shadow-lg">
-          <CardHeader>
-            <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.example.title}</h2>
-          </CardHeader>
-          <CardContent className="prose dark:prose-invert max-w-none">
-            <p>{dictionary.ppf_calculator.example.scenario}</p>
-            <ul>
-                <li><strong>{dictionary.ppf_calculator.total_investment}:</strong> {dictionary.ppf_calculator.example.total_invested}</li>
-                <li><strong>{dictionary.ppf_calculator.total_interest}:</strong> {dictionary.ppf_calculator.example.interest_earned}</li>
-                <li><strong>{dictionary.ppf_calculator.maturity_value}:</strong> {dictionary.ppf_calculator.example.maturity_amount}</li>
-            </ul>
-            <p>{dictionary.ppf_calculator.example.footer_note}</p>
-          </CardContent>
+        <Card className="mt-12 shadow-lg bg-primary/10 border-primary/20">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3">
+                  <TrendingUp className="h-7 w-7 text-primary"/>
+                  <span className="text-2xl font-bold">{dictionary.ppf_calculator.investment_strategy.title}</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="prose dark:prose-invert max-w-none">
+              <p dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.investment_strategy.intro }}></p>
+              <ul>
+                {dictionary.ppf_calculator.investment_strategy.points.map((point: string, index: number) => (
+                  <li key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
+                ))}
+              </ul>
+            </CardContent>
         </Card>
         
         <Card className="mt-12 shadow-lg">
@@ -187,6 +177,30 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
 
         <Card className="mt-12 shadow-lg">
           <CardHeader>
+            <CardTitle className="flex items-center gap-3">
+              <Bank className="h-7 w-7 text-primary"/>
+              <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.how_to_open.title}</h2>
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="prose dark:prose-invert max-w-none">
+            <p>{dictionary.ppf_calculator.how_to_open.intro}</p>
+            <ol className="list-decimal pl-5 space-y-2">
+              {dictionary.ppf_calculator.how_to_open.steps.map((step: string, index: number) => (
+                <li key={index} dangerouslySetInnerHTML={{ __html: step }}></li>
+              ))}
+            </ol>
+            <div className="flex flex-wrap gap-4 mt-6">
+                {dictionary.ppf_calculator.how_to_open.links.map((link: { text: string; href: string }, index: number) => (
+                    <Link href={link.href} key={index} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary font-semibold hover:underline">
+                        {link.text} <ArrowRight className="h-4 w-4" />
+                    </Link>
+                ))}
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="mt-12 shadow-lg">
+          <CardHeader>
             <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.historical_rates.title}</h2>
           </CardHeader>
           <CardContent>
@@ -213,32 +227,6 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
                 <p className="text-sm" dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.historical_rates.sources }}></p>
                 <p className="font-semibold italic">{dictionary.ppf_calculator.historical_rates.insight}</p>
             </div>
-          </CardContent>
-        </Card>
-
-        <Card className="mt-12 shadow-lg">
-          <CardHeader>
-            <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.investment_example.title}</h2>
-          </CardHeader>
-          <CardContent className="prose dark:prose-invert max-w-none">
-            <p>{dictionary.ppf_calculator.investment_example.scenario}</p>
-            <h3 className="text-lg font-semibold">{dictionary.ppf_calculator.investment_example.assumptions.title}</h3>
-            <ul>
-                {dictionary.ppf_calculator.investment_example.assumptions.points.map((point:string, index: number) => <li key={index}>{point}</li>)}
-            </ul>
-            <h3 className="text-lg font-semibold">{dictionary.ppf_calculator.investment_example.formula.title}</h3>
-            <p className="bg-muted p-4 rounded-md font-mono text-sm"><code>{dictionary.ppf_calculator.investment_example.formula.formula_string}</code></p>
-            <h3 className="text-lg font-semibold">{dictionary.ppf_calculator.investment_example.calculation.title}</h3>
-            <div className="bg-muted/50 p-4 rounded-md space-y-2">
-              {dictionary.ppf_calculator.investment_example.calculation.steps.map((step:string, index: number) => <p key={index} className="font-mono text-sm">{step}</p>)}
-            </div>
-             <h3 className="text-lg font-semibold mt-4">{dictionary.ppf_calculator.investment_example.summary.title}</h3>
-             <ul>
-                <li><strong>{dictionary.ppf_calculator.total_investment}:</strong> {dictionary.ppf_calculator.investment_example.summary.total_invested}</li>
-                <li><strong>{dictionary.ppf_calculator.maturity_value}:</strong> {dictionary.ppf_calculator.investment_example.summary.maturity_value}</li>
-                <li><strong>{dictionary.ppf_calculator.total_interest}:</strong> {dictionary.ppf_calculator.investment_example.summary.interest_earned}</li>
-            </ul>
-            <p className="font-semibold italic">{dictionary.ppf_calculator.investment_example.takeaway}</p>
           </CardContent>
         </Card>
 
@@ -282,17 +270,9 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
               ))}
             </Accordion>
         </div>
-
-        <Card className="mt-12 shadow-lg bg-primary/10 border-primary/20">
-            <CardHeader>
-              <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.final_thoughts.title}</h2>
-            </CardHeader>
-            <CardContent className="prose dark:prose-invert max-w-none">
-              <p>{dictionary.ppf_calculator.final_thoughts.body}</p>
-              <p dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.final_thoughts.next_action }}></p>
-            </CardContent>
-        </Card>
       </div>
     </div>
   );
 }
+
+    

@@ -86,8 +86,8 @@
     "subtitle": "Explore our latest calculators, guides, and financial insights."
   },
   "ppf_calculator": {
-    "meta_title": "PPF Calculator (2025) — Calculate PPF Maturity & Returns | BharatSaver",
-    "meta_description": "Free PPF Calculator for India — estimate maturity amount, interest earned, and tax benefits with year-wise growth table. Updated with 2025 PPF rates.",
+    "meta_title": "PPF Calculator India (2025) — Calculate PPF Maturity Online | BharatSaver",
+    "meta_description": "Free PPF Calculator for 2025: Instantly estimate PPF maturity, interest, and tax savings (EEE). Includes year-wise chart, extension rules, and comparison with FD, NPS, and SSY.",
     "h1": "PPF Calculator 2025 — Calculate Maturity & Tax-Free Returns (India)",
     "description": "Use our free PPF Calculator to estimate how much you'll get from your Public Provident Fund (PPF) investment over time. Get instant results for maturity amount, total interest earned, and a year-wise breakdown, all using current government interest rates. Try it now to plan your savings with confidence!",
     "last_updated": "Last updated:",
@@ -112,17 +112,8 @@
     "table_interest_earned": "Interest Earned",
     "table_closing_balance": "Closing Balance",
     "title": "PPF Calculator",
-    "how_to_use": {
-      "title": "How to Use the PPF Calculator",
-      "steps": [
-        "Enter your deposit amount — choose monthly or annual payments.",
-        "Specify the tenure (default 15 years, with extension options).",
-        "The interest rate is auto-filled with the latest official PPF rate, but you can adjust it.",
-        "Click Calculate to view your maturity, interest earned, total invested, and a detailed year-by-year breakdown."
-      ]
-    },
     "advantages": {
-      "title": "Advantages of Using a PPF Calculator",
+      "title": "Why Use an Online PPF Calculator in 2025?",
       "intro": "A PPF Calculator makes it easy to plan your long-term savings. Instead of doing manual math, you get instant, accurate results.",
       "points": [
         "Quick Results: Instantly see how much you’ll get after 15 years.",
@@ -136,34 +127,26 @@
       "conclusion": "👉 A PPF calculator is not just a tool; it’s a financial planner that helps you make smarter decisions with confidence."
     },
     "tax_benefits": {
-      "title": "Tax Benefits of a PPF Account",
+      "title": "Tax Benefits of a PPF Account (EEE Status)",
       "intro": "The Public Provident Fund (PPF) is one of the few investment options in India that offers complete tax benefits at every stage. That’s why it is considered an EEE (Exempt–Exempt–Exempt) scheme.",
       "contribution_title": "Exemption on Contribution (Invested Amount)",
-      "contribution_body": "You can claim up to ₹1.5 lakh each financial year under Section 80C of the Income Tax Act. <br/>👉 Example: If your taxable income is ₹10 lakh and you invest ₹1.5 lakh in PPF, your taxable income reduces to ₹8.5 lakh.",
+      "contribution_body": "You can claim up to ₹1.5 lakh each financial year under <a href='https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Section 80C of the Income Tax Act</a>. <br/>👉 Example: If your taxable income is ₹10 lakh and you invest ₹1.5 lakh in PPF, your taxable income reduces to ₹8.5 lakh.",
       "interest_title": "Exemption on Interest Earned",
       "interest_body": "The annual interest added to your PPF account is completely tax-free. Unlike bank FDs, you don’t pay tax on PPF interest.",
       "maturity_title": "Exemption on Maturity Amount",
       "maturity_body": "After 15 years, the entire maturity amount (principal + interest) is fully exempt from tax.",
       "why_matters": "✨ Why this matters: PPF is among the safest, government-backed schemes where your investment, returns, and maturity are all tax-free — a rare advantage compared to most other options.",
-      "footer_note": "Read official PPF rules on the <a href='https://www.indiapost.gov.in/Financial/pages/content/post-office-saving-schemes.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Ministry of Finance website</a> ✅"
-    },
-    "example": {
-      "title": "Example — See Your PPF Growth in Action",
-      "scenario": "You invest ₹1,50,000 per year for 15 years at 7.1% interest.",
-      "total_invested": "₹22,50,000",
-      "interest_earned": "≈ ₹18,18,209",
-      "maturity_amount": "₹40,68,209",
-      "footer_note": "Our calculator shows exactly this breakdown in the result panel and a year-wise table."
+      "footer_note": "Read official PPF rules on the <a href='https://www.nsiindia.gov.in/ppf.aspx' target='_blank' rel='noopener noreferrer' class='underline'>National Savings Institute website</a> ✅"
     },
     "rules": {
-      "title": "Official Rates & Rules You Should Know",
+      "title": "PPF Rules 2025 — Deposit Limits, Lock-in & Withdrawals",
       "points": [
         "Maximum annual deposit: ₹1.5 lakh.",
         "Minimum deposit: ₹500 p.a.",
         "Lock-in: 15 years (extendable in blocks of 5 years).",
         "Partial withdrawals: Allowed from the 7th financial year under specific rules.",
-        "Loan facility: Available from the 3rd year. (<a href='https://www.sbi.co.in/web/personal-banking/investments-deposits/govt-schemes/public-provident-fund' target='_blank' rel='noopener noreferrer'>Learn more at SBI</a>)",
-        "Tax treatment: Contributions up to ₹1.5 lakh qualify under Section 80C and interest + maturity are tax-free (EEE). (<a href='https://www.hdfcbank.com/personal/save/accounts/public-provident-fund' target='_blank' rel='noopener noreferrer'>See HDFC Bank details</a>)"
+        "Loan facility: Available from the 3rd year. (<a href='https://www.sbi.co.in/web/personal-banking/investments-deposits/govt-schemes/public-provident-fund' target='_blank' rel='noopener noreferrer' class='underline'>Learn more at SBI</a>)",
+        "Tax treatment: Contributions up to ₹1.5 lakh qualify under Section 80C and interest + maturity are tax-free (EEE). (<a href='https://www.hdfcbank.com/personal/save/accounts/public-provident-fund' target='_blank' rel='noopener noreferrer' class='underline'>See HDFC Bank details</a>)"
       ],
       "footer_note": "Rates are verified quarterly by the Ministry of Finance, GoI. We automatically update the rate on this page."
     },
@@ -182,44 +165,35 @@
           ["2020–2025 (last 5 years)", "Stable at 7.1%"]
         ]
       },
-      "sources": "These rates are sourced from credible government and financial platforms like the <a href='https://www.nsiindia.gov.in/' target='_blank' rel='noopener noreferrer' class='underline'>Ministry of Finance</a> and <a href='https://groww.in/p/ppf-interest-rate' target='_blank' rel='noopener noreferrer' class='underline'>Groww</a>.",
+      "sources": "These rates are sourced from credible government and financial platforms like the <a href='https://www.nsiindia.gov.in/' target='_blank' rel='noopener noreferrer' class='underline'>National Savings Institute</a> and <a href='https://groww.in/p/ppf-interest-rate' target='_blank' rel='noopener noreferrer' class='underline'>Groww</a>.",
       "insight": "Insight: In the past decade, rates gradually declined from around 8%–8.8% in 2012–2016, dipping to 7.1%—and have stayed stable at that level since 2020."
     },
-    "investment_example": {
-        "title": "What If You Invested 10 Years Ago? A Practical Example",
-        "scenario": "Let’s consider a real-life case: What if you invested ₹1.5 lakh annually, starting 10 years back, using actual average rates?",
-        "assumptions": {
-          "title": "Assumptions:",
-          "points": [
-            "Annual deposit: ₹1.5 lakh",
-            "Duration: 10 years",
-            "Used average annual interest rate (simple average): ~7.8%"
-          ]
-        },
-        "formula": {
-          "title": "Using the standard annual compounding formula:",
-          "formula_string": "A = P × [ ( (1 + r)^t – 1 ) / r ]"
-        },
-        "calculation": {
-          "title": "Calculation:",
-          "steps": [
-            "A ≈ 1,50,000 × [ (1.078^10 – 1) / 0.078 ]",
-            "1.078^10 ≈ 2.105",
-            "(2.105 – 1) = 1.105",
-            "1.105 / 0.078 ≈ 14.17",
-            "A ≈ ₹1,50,000 × 14.17 ≈ ₹21,25,500"
-          ]
-        },
-        "summary": {
-          "title": "Summary after 10 years:",
-          "total_invested": "₹15,00,000 (₹1.5 lakh × 10 years)",
-          "maturity_value": "~₹21,25,500",
-          "interest_earned": "₹6,25,500"
-        },
-        "takeaway": "Takeaway: Your investment grew by about 41.7% over 10 years — all tax-free. And even though rates tapered, PPF offered stable, risk-free growth."
+    "investment_strategy": {
+        "title": "Best PPF Investment Strategy for Maximum Returns",
+        "intro": "To maximize your interest earnings in a PPF account, timing is everything. Here are the top strategies:",
+        "points": [
+            "<strong>Invest Before the 5th of the Month:</strong> The interest for any month is calculated on the lowest balance between the 5th and the last day. Depositing your money before the 5th ensures you earn interest for that entire month. Depositing after the 5th means you lose one month's interest on that amount.",
+            "<strong>Lump Sum vs. Monthly:</strong> If possible, depositing the full ₹1.5 lakh at the start of the financial year (before April 5th) maximizes your returns for the entire year. If not, stick to a monthly deposit before the 5th."
+        ]
+    },
+    "how_to_open": {
+        "title": "How to Open a PPF Account Online",
+        "intro": "Opening a PPF account is simple and can be done online through most major banks or at a Post Office. Here are the general steps:",
+        "steps": [
+            "<strong>Choose Your Bank/Post Office:</strong> Decide where you want to open the account. Most nationalized banks (like SBI, HDFC, ICICI) and Post Offices offer this facility.",
+            "<strong>Fill the Application Form:</strong> Download the PPF Account Opening Form (Form A) from the bank's website or get it from a branch.",
+            "<strong>Submit KYC Documents:</strong> You'll need your PAN card, Aadhaar card (for address proof), and passport-sized photographs.",
+            "<strong>Make the Initial Deposit:</strong> You can start with as little as ₹500. You can pay this by cheque or online transfer.",
+            "<strong>Get Your Passbook:</strong> Once processed, you'll receive a passbook with your PPF account details."
+        ],
+        "links": [
+            { "text": "Open PPF with SBI", "href": "https://www.sbi.co.in/web/personal-banking/investments-deposits/govt-schemes/public-provident-fund" },
+            { "text": "Open PPF with HDFC", "href": "https://www.hdfcbank.com/personal/save/accounts/public-provident-fund" },
+            { "text": "Open PPF at Post Office", "href": "https://www.indiapost.gov.in/Financial/pages/content/post-office-saving-schemes.aspx" }
+        ]
     },
     "comparison": {
-      "title": "Compare PPF With Other Investment Options",
+      "title": "PPF vs FD vs NPS vs SSY — Which is Better in 2025?",
       "table": {
         "headers": ["Feature", "PPF", "Fixed Deposit (FD)", "NPS", "Mutual Funds (ELSS)", "Sukanya Samriddhi (SSY)"],
         "rows": [
@@ -234,21 +208,16 @@
     "faq_title": "Frequently Asked Questions",
     "faqs": [
       {
-        "question": "What is the current PPF interest rate?",
-        "answer": "The PPF rate changes quarterly. This calculator auto-fills the current rate. We last checked it against the official <a href='https://www.indiapost.gov.in/Financial/pages/content/post-office-saving-schemes.aspx' target='_blank' rel='noopener noreferrer'>Ministry of Finance</a> announcements."
+        "question": "What is the current PPF interest rate for 2025?",
+        "answer": "The PPF rate is reviewed quarterly by the Ministry of Finance. For the current quarter, it is 7.1%. This calculator is automatically updated with the latest official rates."
       },
       { "question": "What is the maximum deposit allowed in PPF?", "answer": "You can deposit a maximum of ₹1,50,000 in a single financial year." },
-      { "question": "Can I extend my PPF after 15 years?", "answer": "Yes, you can extend your PPF account in blocks of 5 years with or without making further contributions." },
+      { "question": "Can I extend my PPF after 15 years?", "answer": "Yes, you can extend your PPF account in blocks of 5 years with or without making further contributions. An extended account with contributions continues to earn tax-free interest on the entire balance." },
       { "question": "Can I open multiple PPF accounts?", "answer": "No, an individual can only open one PPF account in their name." },
       { "question": "How is PPF interest calculated monthly?", "answer": "Interest is calculated on the lowest balance between the close of the fifth day and the last day of every month. However, the interest is credited to the account only at the end of the financial year." },
       { "question": "Is there any penalty for missed deposits?", "answer": "If you fail to deposit the minimum amount of ₹500 in a financial year, the account becomes inactive. You can reactivate it by paying a penalty of ₹50 per year of inactivity, along with the minimum deposit for each inactive year." },
       { "question": "How is PPF different from Sukanya Samriddhi Yojana (SSY)?", "answer": "PPF is a general long-term savings scheme for any resident Indian, while SSY is specifically designed for the financial security of a girl child. SSY typically offers a slightly higher interest rate but has stricter eligibility criteria." }
-    ],
-    "final_thoughts": {
-      "title": "Final Thoughts & Smart Savings Tips",
-      "body": "Your PPF maturity goal is within reach. Whether you're saving for your child's education or retirement, this calculator gives a clear roadmap. Combine regular contributions and early deposits (before the 5th) to maximize returns, all while gaining tax benefits.",
-      "next_action": "Next action: Try the PPF Calculator, see your projected maturity date, and <a href='#' class='underline'>download our PPF planning worksheet</a> to track your annual deposits. Happy saving!"
-    }
+    ]
   },
   "ssy_calculator": {
     "meta_title": "SSY Calculator (2025) - Sukanya Samriddhi Yojana | BharatSaver",
@@ -354,3 +323,5 @@
     "results_placeholder": "Search functionality is coming soon."
   }
 }
+
+    
