@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import type { Locale } from '@/lib/i18n-config';
 import type { Dictionary } from '@/types';
@@ -5,6 +6,7 @@ import type { Dictionary } from '@/types';
 import { BharatSaverLogo } from './BharatSaverLogo';
 import { Button } from '@/components/ui/button';
 import { MobileNav } from './MobileNav';
+import { LanguageSwitcher } from './LanguageSwitcher';
 
 type HeaderProps = {
   lang: Locale;
@@ -38,7 +40,8 @@ export function Header({ lang, dictionary }: HeaderProps) {
           ))}
         </nav>
 
-        <div className="flex items-center justify-end">
+        <div className="flex items-center justify-end gap-2">
+          <LanguageSwitcher currentLocale={lang} />
           <Button asChild className="hidden lg:flex bg-primary hover:bg-primary/90 text-primary-foreground">
             <Link href={`/${lang}/ppf-calculator`}>
               {dictionary.cta_button}

@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -10,6 +11,7 @@ import { BharatSaverLogo } from './BharatSaverLogo';
 import { calculators } from '@/data/calculators';
 import type { Locale } from '@/lib/i18n-config';
 import type { Dictionary } from '@/types';
+import { LanguageSwitcher } from './LanguageSwitcher';
 
 type MobileNavProps = {
   lang: Locale;
@@ -28,18 +30,19 @@ export function MobileNav({ lang, dictionary }: MobileNavProps) {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <Button variant="ghost" size="icon" className="md:hidden">
+        <Button variant="ghost" size="icon" className="lg:hidden">
           <Menu className="h-6 w-6" />
           <span className="sr-only">Open menu</span>
         </Button>
       </SheetTrigger>
       <SheetContent side="left" className="w-full max-w-sm">
         <div className="flex flex-col h-full">
-          <div className="p-4 border-b">
+          <div className="p-4 border-b flex justify-between items-center">
             <Link href={`/${lang}`} className="flex items-center gap-2" onClick={() => setOpen(false)}>
               <BharatSaverLogo className="h-8 w-8" />
               <span className="font-bold text-lg">BharatSaver</span>
             </Link>
+            <LanguageSwitcher currentLocale={lang} />
           </div>
           <div className="flex-grow overflow-y-auto p-4">
             <nav className="flex flex-col gap-4 text-lg">
