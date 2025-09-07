@@ -120,39 +120,50 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
           <CardHeader>
             <h2 className="text-2xl font-bold">{dictionary.ssy_calculator.how_it_works.title}</h2>
           </CardHeader>
-          <CardContent className="space-y-4">
-            <p className="text-muted-foreground">{dictionary.ssy_calculator.example.intro}</p>
-            <p className="font-mono bg-muted p-2 rounded-md text-sm">{dictionary.ssy_calculator.example.formula}</p>
+          <CardContent className="space-y-6">
+            <div className="bg-muted/50 p-4 rounded-lg">
+              <h3 className="font-semibold text-lg mb-2">The Formula</h3>
+              <p className="text-sm text-muted-foreground mb-2" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.example.intro }}></p>
+              <p className="font-mono bg-background p-3 rounded-md text-center text-sm md:text-base">{dictionary.ssy_calculator.example.formula}</p>
+            </div>
 
-            <h3 className="font-semibold pt-4">{dictionary.ssy_calculator.example.scenario.title}</h3>
-            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.example.scenario.body }}></p>
-            <ul className="list-disc pl-5 space-y-1 text-muted-foreground">
-              {dictionary.ssy_calculator.example.scenario.points.map((point: string, index: number) => (
-                <li key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
-              ))}
-            </ul>
-            <p className="text-muted-foreground font-semibold" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.example.scenario.result }}></p>
-
-            <h4 className="font-semibold pt-2">{dictionary.ssy_calculator.example.snapshot_title}</h4>
-            <Table>
-              <TableHeader>
-                <TableRow>
-                  {exampleData.headers.map((header: string, index: number) => (
-                    <TableHead key={index} className={index > 0 ? "text-right" : ""}>{header}</TableHead>
-                  ))}
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {exampleData.rows.map((row: string[], rowIndex: number) => (
-                  <TableRow key={rowIndex}>
-                    {row.map((cell: string, cellIndex: number) => (
-                      <TableCell key={cellIndex} className={cellIndex > 0 ? "text-right" : ""}>{cell}</TableCell>
-                    ))}
-                  </TableRow>
+            <div>
+              <h3 className="font-semibold text-lg">{dictionary.ssy_calculator.example.scenario.title}</h3>
+              <p className="text-muted-foreground mt-2" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.example.scenario.body }}></p>
+              <ul className="list-disc pl-5 space-y-2 mt-4 text-muted-foreground">
+                {dictionary.ssy_calculator.example.scenario.points.map((point: string, index: number) => (
+                  <li key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
                 ))}
-              </TableBody>
-            </Table>
-            <p className="text-xs text-muted-foreground italic pt-2" dangerouslySetInnerHTML={{__html: dictionary.ssy_calculator.example.footer_note}}></p>
+              </ul>
+              <div className="mt-4 bg-primary/10 p-4 rounded-lg border-l-4 border-primary">
+                <p className="text-muted-foreground font-semibold" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.example.scenario.result }}></p>
+              </div>
+            </div>
+
+            <div>
+              <h4 className="font-semibold text-lg">{dictionary.ssy_calculator.example.snapshot_title}</h4>
+              <div className="mt-2 overflow-x-auto">
+                <Table>
+                  <TableHeader>
+                    <TableRow>
+                      {exampleData.headers.map((header: string, index: number) => (
+                        <TableHead key={index} className={index > 0 ? "text-right" : ""}>{header}</TableHead>
+                      ))}
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {exampleData.rows.map((row: string[], rowIndex: number) => (
+                      <TableRow key={rowIndex}>
+                        {row.map((cell: string, cellIndex: number) => (
+                          <TableCell key={cellIndex} className={cellIndex > 0 ? "text-right" : ""}>{cell}</TableCell>
+                        ))}
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </div>
+              <p className="text-xs text-muted-foreground italic pt-4" dangerouslySetInnerHTML={{__html: dictionary.ssy_calculator.example.footer_note}}></p>
+            </div>
           </CardContent>
         </Card>
         
