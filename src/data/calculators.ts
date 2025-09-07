@@ -49,7 +49,7 @@ export const calculators: Calculator[] = [
     icon: Shield,
     link_text: 'Calculate Now',
     lastModified: '2024-07-25',
-    image: '/images/PPF-NPS-FD-SSY-Scheme-selector.png'
+    image: '/images/APY-Calculator-online.png'
   },
   {
     slug: 'fd-vs-ppf-calculator',
