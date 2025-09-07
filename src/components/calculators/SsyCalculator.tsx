@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -10,18 +11,20 @@ import { Area, AreaChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, X
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
+import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Slider } from '@/components/ui/slider';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { type ChartConfig } from '@/components/ui/chart';
 import type { Dictionary } from '@/types';
+import { RadioGroup, RadioGroupItem } from '../ui/radio-group';
 
 const formSchema = z.object({
-  yearlyInvestment: z.coerce.number().min(250, 'Minimum yearly investment is ₹250').max(150000, 'Maximum yearly investment is ₹1,50,000'),
+  investmentAmount: z.coerce.number().min(250, 'Minimum investment is ₹250').max(150000, 'Maximum investment is ₹1,50,000'),
   girlAge: z.coerce.number().min(0, 'Age cannot be negative').max(10, 'Girl child must be 10 years old or younger'),
   interestRate: z.coerce.number().min(0.1, 'Interest rate must be positive').max(15, 'Interest rate seems too high'),
+  investmentMode: z.enum(['yearly', 'monthly']),
 });
 
 type SsyFormValues = z.infer<typeof formSchema>;
@@ -58,27 +61,34 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
   const form = useForm<SsyFormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      yearlyInvestment: 150000,
+      investmentAmount: 150000,
       girlAge: 5,
       interestRate: 8.2,
+      investmentMode: 'yearly',
     },
   });
 
+  const investmentMode = form.watch('investmentMode');
+
   useEffect(() => {
     const params = new URLSearchParams(searchParams.toString());
-    const yearlyInvestment = params.get('investment');
+    const investment = params.get('investment');
     const girlAge = params.get('age');
     const interestRate = params.get('rate');
+    const mode = params.get('mode');
 
     const valuesToSet: Partial<SsyFormValues> = {};
-    if (yearlyInvestment && !isNaN(Number(yearlyInvestment))) {
-      valuesToSet.yearlyInvestment = Number(yearlyInvestment);
+    if (investment && !isNaN(Number(investment))) {
+      valuesToSet.investmentAmount = Number(investment);
     }
     if (girlAge && !isNaN(Number(girlAge))) {
       valuesToSet.girlAge = Number(girlAge);
     }
     if (interestRate && !isNaN(Number(interestRate))) {
       valuesToSet.interestRate = Number(interestRate);
+    }
+    if (mode === 'monthly' || mode === 'yearly') {
+        valuesToSet.investmentMode = mode;
     }
     
     if (Object.keys(valuesToSet).length > 0) {
@@ -94,6 +104,15 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
 
     await new Promise(resolve => setTimeout(resolve, 500));
 
+    const yearlyInvestment = values.investmentMode === 'monthly' ? values.investmentAmount * 12 : values.investmentAmount;
+    
+    if (yearlyInvestment > 150000) {
+        form.setError('investmentAmount', { type: 'manual', message: 'Total yearly investment cannot exceed ₹1,50,000'});
+        setIsLoading(false);
+        return;
+    }
+
+
     let balance = 0;
     let totalInvestment = 0;
     const yearlyData: YearlyData[] = [];
@@ -102,7 +121,7 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
 
     for (let i = 1; i <= maturityPeriod; i++) {
       const openingBalance = balance;
-      const invested = i <= contributionPeriod ? values.yearlyInvestment : 0;
+      const invested = i <= contributionPeriod ? yearlyInvestment : 0;
       if (invested > 0) {
         totalInvestment += invested;
       }
@@ -130,9 +149,10 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
     });
     
     const params = new URLSearchParams();
-    params.set('investment', values.yearlyInvestment.toString());
+    params.set('investment', values.investmentAmount.toString());
     params.set('age', values.girlAge.toString());
     params.set('rate', values.interestRate.toString());
+    params.set('mode', values.investmentMode);
     router.push(`${pathname}?${params.toString()}`, { scroll: false });
 
     setIsLoading(false);
@@ -208,15 +228,46 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
             <form onSubmit={form.handleSubmit(handleSubmit)} className="space-y-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
                 <div className="space-y-6">
+                    <FormField
+                        control={form.control}
+                        name="investmentMode"
+                        render={({ field }) => (
+                            <FormItem className="space-y-3">
+                            <FormLabel>{dictionary.investment_mode}</FormLabel>
+                            <FormControl>
+                                <RadioGroup
+                                onValueChange={field.onChange}
+                                defaultValue={field.value}
+                                className="flex gap-4"
+                                >
+                                <FormItem className="flex items-center space-x-3 space-y-0">
+                                    <FormControl>
+                                    <RadioGroupItem value="yearly" />
+                                    </FormControl>
+                                    <FormLabel className="font-normal">{dictionary.yearly_mode}</FormLabel>
+                                </FormItem>
+                                <FormItem className="flex items-center space-x-3 space-y-0">
+                                    <FormControl>
+                                    <RadioGroupItem value="monthly" />
+                                    </FormControl>
+                                    <FormLabel className="font-normal">{dictionary.monthly_mode}</FormLabel>
+                                </FormItem>
+                                </RadioGroup>
+                            </FormControl>
+                            <FormMessage />
+                            </FormItem>
+                        )}
+                    />
                    <FormField
                     control={form.control}
-                    name="yearlyInvestment"
+                    name="investmentAmount"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>{dictionary.yearly_investment_label}</FormLabel>
+                        <FormLabel>{investmentMode === 'yearly' ? dictionary.yearly_investment_label : dictionary.monthly_investment_label}</FormLabel>
                         <FormControl>
-                          <Input type="number" placeholder={dictionary.yearly_investment_placeholder} {...field} />
+                          <Input type="number" placeholder={investmentMode === 'yearly' ? dictionary.yearly_investment_placeholder : dictionary.monthly_investment_placeholder} {...field} />
                         </FormControl>
+                         <FormDescription>{dictionary.max_investment_note}</FormDescription>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -375,5 +426,3 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
     </>
   );
 }
-
-    

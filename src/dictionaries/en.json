@@ -229,8 +229,14 @@
     "h1": "Sukanya Samriddhi Yojana (SSY) Calculator — Calculate Returns Online",
     "description": "Use our <strong>free Sukanya Samriddhi Yojana (SSY) Calculator</strong> to instantly estimate your <strong>maturity amount</strong>, <strong>total interest earned</strong>, and a <strong>year-wise breakdown</strong>. This calculator is updated with the current SSY interest rate for 2025 and supports annual and monthly deposit scenarios.",
     "title": "SSY Calculator",
+    "investment_mode": "Investment Mode",
+    "yearly_mode": "Yearly",
+    "monthly_mode": "Monthly",
     "yearly_investment_label": "Yearly Investment (₹)",
+    "monthly_investment_label": "Monthly Investment (₹)",
     "yearly_investment_placeholder": "e.g., 1,50,000",
+    "monthly_investment_placeholder": "e.g., 12,500",
+    "max_investment_note": "Total annual investment cannot exceed ₹1,50,000.",
     "girl_age_label": "Girl's Current Age",
     "years": "years",
     "interest_rate_label": "Annual Interest Rate (%)",
@@ -488,5 +494,3 @@
     "results_placeholder": "Search functionality is coming soon."
   }
 }
-
-    
