@@ -79,6 +79,7 @@ export default function RootLayout({
   return (
     <html lang={params.lang ?? i18nConfig.defaultLocale} suppressHydrationWarning className={`${inter.variable} ${noto_sans.variable}`}>
       <head>
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" sizes="any" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
       </head>
       <body>
