@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { CheckCircle2, TrendingUp, Bank, ArrowRight } from "lucide-react";
+import { CheckCircle2, TrendingUp, Landmark, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -178,7 +178,7 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
         <Card className="mt-12 shadow-lg">
           <CardHeader>
             <CardTitle className="flex items-center gap-3">
-              <Bank className="h-7 w-7 text-primary"/>
+              <Landmark className="h-7 w-7 text-primary"/>
               <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.how_to_open.title}</h2>
             </CardTitle>
           </CardHeader>
@@ -274,5 +274,3 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
     </div>
   );
 }
-
-    
