@@ -203,7 +203,7 @@
           ["Best For", "Long-term, secure, tax-free savings", "Short/medium-term needs", "Retirement planning", "Wealth creation", "Girl child's future"]
         ]
       },
-      "footer_note": "Explore our <a href='/fd-vs-ppf-calculator' class='underline'>FD Calculator</a>, <a href='/nps-calculator' class='underline'>NPS Calculator</a>, and <a href='/ssy-calculator' class='underline'>SSY Calculator</a> to compare returns and make informed decisions."
+      "footer_note": "Explore our <a href='/{lang}/fd-vs-ppf-calculator' class='underline'>FD Calculator</a>, <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a>, and <a href='/{lang}/ssy-calculator' class='underline'>SSY Calculator</a> to compare returns and make informed decisions."
     },
     "faq_title": "Frequently Asked Questions",
     "faqs": [
@@ -318,7 +318,7 @@
     },
     "investment_strategy": {
       "title": "Best SSY investment strategy (practical tips)",
-      "monthly_example": "<strong>Monthly Deposit Example:</strong> If you deposit <strong>₹12,500 per month (₹1.5 lakh/year)</strong> for 15 years and the annual SSY rate is 8.2%, the effective compounding is yearly but monthly deposits change interest days — our calculator supports monthly mode and will compute exact year-wise balances.",
+      "monthly_example": "<strong>Monthly deposit example:</strong> If you deposit **₹12,500 per month (₹1.5 lakh/year)** for 15 years and the annual SSY rate is 8.2%, the effective compounding is yearly but monthly deposits change interest days — our calculator supports monthly mode and will compute exact year-wise balances.",
       "points": [
         "<strong>Deposit before the 5th of the month</strong> — deposits before the 5th are eligible for interest for that month.",
         "<strong>If possible, deposit lump sum early in the financial year</strong> — a full ₹1.5 lakh early in April maximizes the year’s interest.",

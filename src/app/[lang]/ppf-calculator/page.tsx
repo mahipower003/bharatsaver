@@ -262,7 +262,7 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
                         ))}
                     </TableBody>
                 </Table>
-                 <p className="text-sm text-muted-foreground mt-4" dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.comparison.footer_note }}></p>
+                 <p className="text-sm text-muted-foreground mt-4" dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.comparison.footer_note.replace('{lang}', params.lang) }}></p>
             </CardContent>
         </Card>
 

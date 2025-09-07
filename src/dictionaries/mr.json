@@ -202,7 +202,7 @@
                 ["यासाठी सर्वोत्तम", "दीर्घकालीन, सुरक्षित, कर-मुक्त बचत", "अल्प/मध्यम-मुदतीच्या गरजा", "निवृत्ती नियोजन", "संपत्ती निर्मिती", "मुलीचे भविष्य"]
             ]
         },
-        "footer_note": "परताव्याची तुलना करण्यासाठी आणि माहितीपूर्ण निर्णय घेण्यासाठी आमचे <a href='/fd-vs-ppf-calculator' class='underline'>FD कॅल्क्युलेटर</a>, <a href='/nps-calculator' class='underline'>NPS कॅल्क्युलेटर</a>, आणि <a href='/ssy-calculator' class='underline'>SSY कॅल्क्युलेटर</a> एक्सप्लोर करा."
+        "footer_note": "परताव्याची तुलना करण्यासाठी आणि माहितीपूर्ण निर्णय घेण्यासाठी आमचे <a href='/{lang}/fd-vs-ppf-calculator' class='underline'>FD कॅल्क्युलेटर</a>, <a href='/{lang}/nps-calculator' class='underline'>NPS कॅल्क्युलेटर</a>, आणि <a href='/{lang}/ssy-calculator' class='underline'>SSY कॅल्क्युलेटर</a> एक्सप्लोर करा."
     },
     "faq_title": "वारंवार विचारले जाणारे प्रश्न",
     "faqs": [

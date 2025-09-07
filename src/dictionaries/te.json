@@ -202,7 +202,7 @@
                 ["దీనికి ఉత్తమమైనది", "దీర్ఘకాలిక, సురక్షిత, పన్ను రహిత పొదుపు", "స్వల్ప/మధ్యకాలిక అవసరాలు", "పదవీ విరమణ ప్రణాళిక", "సంపద సృష్టి", "కుమార్తె భవిష్యత్తు"]
             ]
         },
-        "footer_note": "రాబడులను పోల్చడానికి మరియు సమాచారంతో కూడిన నిర్ణయాలు తీసుకోవడానికి మా <a href='/fd-vs-ppf-calculator' class='underline'>FD క్యాలిక్యులేటర్</a>, <a href='/nps-calculator' class='underline'>NPS క్యాలిక్యులేటర్</a>, మరియు <a href='/ssy-calculator' class='underline'>SSY క్యాలిక్యులేటర్</a>ను అన్వేషించండి."
+        "footer_note": "రాబడులను పోల్చడానికి మరియు సమాచారంతో కూడిన నిర్ణయాలు తీసుకోవడానికి మా <a href='/{lang}/fd-vs-ppf-calculator' class='underline'>FD క్యాలిక్యులేటర్</a>, <a href='/{lang}/nps-calculator' class='underline'>NPS క్యాలిక్యులేటర్</a>, మరియు <a href='/{lang}/ssy-calculator' class='underline'>SSY క్యాలిక్యులేటర్</a>ను అన్వేషించండి."
     },
     "faq_title": "తరచుగా అడిగే ప్రశ్నలు",
     "faqs": [
