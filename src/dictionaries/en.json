@@ -105,7 +105,7 @@
     "view_chart": "Chart",
     "view_table": "Table",
     "yearly_breakdown_title": "Year-wise Breakdown",
-    "export_csv": "Export year-wise table (CSV)",
+    "export_csv": "Export CSV",
     "table_year": "Year",
     "table_opening_balance": "Opening Balance",
     "table_amount_invested": "Amount Invested",
@@ -225,7 +225,7 @@
   },
   "ssy_calculator": {
     "meta_title": "Sukanya Samriddhi Yojana (SSY) Calculator 2025 — Calculate SSY Returns & Maturity",
-    "meta_description": "Free SSY Calculator 2025 — estimate Sukanya Samriddhi Yojana maturity, total interest earned and year-wise breakdown (8.2% rate). Compare SSY vs PPF, FD & NPS.",
+    "meta_description": "Use our free SSY Calculator 2025 to estimate maturity, total interest and year-wise projection (8.2% current rate). Supports annual & monthly deposits. Export results as CSV.",
     "h1": "Sukanya Samriddhi Yojana (SSY) Calculator — Calculate Returns Online",
     "description": "Use our <strong>free Sukanya Samriddhi Yojana (SSY) Calculator</strong> to instantly estimate your <strong>maturity amount</strong>, <strong>total interest earned</strong>, and a <strong>year-wise breakdown</strong>. This calculator is updated with the current SSY interest rate for 2025 and supports annual and monthly deposit scenarios.",
     "title": "SSY Calculator",
@@ -274,12 +274,12 @@
       }
     },
     "how_it_works": {
-      "title": "How SSY interest is calculated (formula & example)"
-    },
-    "example": {
+      "title": "How SSY interest is calculated (formula & example)",
       "formula_title": "The Formula",
       "intro": "Because SSY compounds <strong>annually</strong>, we use `n = 1`. For regular annual deposits, each deposit earns interest for the remaining years until maturity.",
-      "formula": "A = P × (1 + r/n)^(n × t)",
+      "formula": "A = P × (1 + r/n)^(n × t)"
+    },
+    "example": {
       "scenario": {
         "title": "Example (exact calculation)",
         "body": "<strong>Scenario:</strong> You deposit <strong>₹1,50,000 per year</strong> for <strong>15 years</strong> (maximum yearly contribution). The account matures in <strong>21 years</strong>. The SSY interest rate = <strong>8.2%</strong> (0.082).",
@@ -292,7 +292,6 @@
         "result": "Maturity value = sum_{k=0}^{14} P × (1 + r)^(T − k) <br/> <strong>Maturity value ≈ ₹7,182,119.17</strong> <br/> <strong>Total invested = ₹1,50,000 × 15 = ₹2,250,000</strong> <br/> <strong>Total interest earned ≈ ₹7,182,119.17 − ₹2,250,000 = ₹4,932,119.17</strong>"
       },
       "snapshot_title": "Snapshot (selected years):",
-      "timing_note": "<strong>Note on timing:</strong> Our example assumes deposits are made at the *start of each financial year* (best-case). If you deposit later in the year (e.g., mid-year or monthly later in the month), the maturity will be slightly lower. The calculator provides both annual and monthly modes — choose the one that matches your deposit schedule.",
       "table": {
         "headers": ["Year", "Balance (end of year)"],
         "rows": [
@@ -320,7 +319,8 @@
     },
     "investment_strategy": {
       "title": "Best SSY investment strategy (practical tips)",
-      "monthly_example": "<strong>Monthly deposit example:</strong> If you deposit <strong>₹12,500 per month (₹1.5 lakh/year)</strong> for 15 years and the annual SSY rate is 8.2%, the effective compounding is yearly but monthly deposits change interest days — our calculator supports monthly mode and will compute exact year-wise balances.",
+      "monthly_example_title": "Monthly Deposit Example",
+      "monthly_example_body": "If you deposit <strong>₹12,500 per month (₹1.5 lakh/year)</strong> for 15 years and the annual SSY rate is 8.2%, the effective compounding is yearly but monthly deposits change interest days — our calculator supports monthly mode and will compute exact year-wise balances.",
       "points": [
         "<strong>Deposit before the 5th of the month</strong> — deposits before the 5th are eligible for interest for that month.",
         "<strong>If possible, deposit lump sum early in the financial year</strong> — a full ₹1.5 lakh early in April maximizes the year’s interest.",
@@ -338,7 +338,8 @@
       "title": "SSY Rules: Withdrawals, Revival & Nomination",
       "withdrawal_title": "Partial Withdrawal Rules",
       "withdrawal_body": "Partial withdrawal is allowed only after the girl child turns 18 or has passed the 10th standard, whichever is earlier. The withdrawal is limited to 50% of the balance available at the end of the preceding financial year and can only be used for higher education or marriage expenses.",
-      "withdrawal_example": "<strong>Example:</strong> If the account balance at the end of Year 17 is ₹40 lakh, you can withdraw up to 50% of this amount (₹20 lakh) in Year 18 for educational purposes. Always check the exact calculation with your bank/Post Office when initiating withdrawal.",
+      "withdrawal_example_title": "Partial Withdrawal Example",
+      "withdrawal_example_body": "If the account balance at the end of Year 17 is ₹40 lakh, you can withdraw up to 50% of this amount (₹20 lakh) in Year 18 for educational purposes. Always check the exact calculation with your bank/Post Office when initiating withdrawal.",
       "revival_title": "How to Revive an Inactive SSY Account",
       "revival_intro": "If you miss the minimum annual deposit of ₹250, the account becomes inactive. To revive it:",
       "revival_steps": [
@@ -393,7 +394,132 @@
   "nps_calculator": {
     "meta_title": "NPS Calculator (2025) - National Pension System | BharatSaver",
     "meta_description": "Use our free National Pension System (NPS) Calculator to estimate your retirement corpus, monthly pension, and tax benefits in India. Plan for a secure retirement in 2025.",
-    "h1": "NPS (National Pension System) Calculator"
+    "h1": "NPS Calculator — Calculate Your Retirement Corpus & Monthly Pension",
+    "description": "Plan a confident retirement with our NPS (National Pension System) Calculator. Enter your monthly or annual contribution, expected rate of return, and years to retirement — we’ll show your estimated corpus, the tax-efficient benefits, and a projected monthly annuity after age 60.",
+    "title": "NPS Calculator",
+    "form_description": "Estimate your retirement savings with the National Pension System.",
+    "contribution_mode": "Contribution Mode",
+    "monthly_mode": "Monthly",
+    "yearly_mode": "Yearly",
+    "monthly_contribution_label": "Monthly Contribution (₹)",
+    "yearly_contribution_label": "Yearly Contribution (₹)",
+    "current_age_label": "Current Age",
+    "retirement_age_label": "Retirement Age",
+    "expected_returns_label": "Expected Returns (% p.a.)",
+    "annuity_percentage_label": "Percentage to Annuitize",
+    "annuity_percentage_description": "Minimum 40% of corpus must be used to buy an annuity.",
+    "annuity_rate_label": "Annuity Rate (%)",
+    "annuity_rate_description": "Expected rate from the annuity product for your pension.",
+    "calculate_button": "Calculate NPS Corpus",
+    "loading": "Calculating...",
+    "results_title": "Your NPS Projection",
+    "total_corpus": "Total Corpus at Retirement",
+    "lump_sum_value": "Tax-Free Lump Sum (60%)",
+    "annuity_value": "Amount for Annuity (40%)",
+    "monthly_pension": "Expected Monthly Pension",
+    "total_investment": "Total Investment",
+    "total_interest": "Total Interest Earned",
+    "view_chart": "Chart",
+    "view_table": "Table",
+    "export_csv": "Export CSV",
+    "table_year": "Year",
+    "table_age": "Age",
+    "table_opening_balance": "Opening Balance",
+    "table_amount_invested": "Yearly Deposit",
+    "table_interest_earned": "Interest Earned",
+    "table_closing_balance": "Closing Balance",
+    "age_label": "Age",
+    "amount_in_lakhs": "Amount (in Lakhs)",
+    "what_is_nps": {
+      "title": "What is NPS (National Pension System)?",
+      "body": "NPS is a government-regulated retirement pension scheme for Indian citizens (and NRIs in certain cases) run under PFRDA. It’s a disciplined, market-linked retirement instrument offering:",
+      "points": [
+        {
+          "title": "Tier I (Retirement Savings)",
+          "body": "Your primary retirement account with tax benefits and withdrawal restrictions until age 60."
+        },
+        {
+          "title": "Tier II (Optional Account)",
+          "body": "A flexible, voluntary savings account with no lock-in, but also no extra tax benefits."
+        }
+      ]
+    },
+    "how_it_works": {
+      "title": "How the NPS Calculator Works (Formula & Explanation)",
+      "formula_title": "Formulas Used",
+      "annual": {
+        "title": "Annual Contributions",
+        "formula": "FV = P × [ (1 + r)^t − 1 ] / r"
+      },
+      "monthly": {
+        "title": "Monthly Contributions",
+        "formula": "FV = PMT × [ (1 + r/12)^(12t) − 1 ] / (r/12)"
+      }
+    },
+    "example": {
+      "title": "Example: Exact NPS Calculation",
+      "intro": "Let's assume the following scenario to see how the corpus is calculated:",
+      "assumptions": [
+        "You contribute <strong>₹6,000 per month</strong> (₹72,000 per year).",
+        "Expected average return (blend of equity + debt): <strong>9% p.a.</strong>",
+        "Contribution period: <strong>30 years</strong> (from age 30 to 60)."
+      ],
+      "result": "<strong>Estimated corpus at retirement ≈ ₹98.2 lakh</strong>",
+      "annuity_intro": "From this corpus:",
+      "annuity_result": "Withdrawable lump sum (60%) ≈ ₹58.9 lakh<br/>Amount to annuitize (40%) ≈ ₹39.3 lakh<br/>If you purchase an annuity with a 6% payout rate, your <strong>monthly pension would be ≈ ₹19,650</strong>.",
+      "disclaimer": "These numbers are for illustration. Real-world returns vary and annuity rates change."
+    },
+    "tax_benefits": {
+      "title": "NPS Tax Benefits",
+      "intro": "NPS offers some of the best tax-saving opportunities for retirement planning:",
+      "points": [
+        "<strong>Section 80C:</strong> Up to ₹1.5 lakh deduction for your contributions.",
+        "<strong>Section 80CCD(1B):</strong> An additional deduction of up to ₹50,000, over and above the 80C limit.",
+        "<strong>Employer Contributions:</strong> Your employer's contribution (up to 10% of basic salary) is also deductible under Section 80CCD(2)."
+      ]
+    },
+    "rules": {
+      "title": "Key NPS Rules (Tier I vs Tier II)",
+      "intro": "It's important to understand the difference between the two NPS account types:",
+      "tier1": {
+        "title": "Tier I (Retirement Account)",
+        "points": [
+          "Minimum contribution: ₹500-₹1000 per year, depending on the provider.",
+          "Withdrawals are restricted until retirement (age 60).",
+          "At retirement, 60% can be withdrawn tax-free.",
+          "Minimum 40% must be used to buy an annuity for pension."
+        ]
+      },
+      "tier2": {
+        "title": "Tier II (Optional Account)",
+        "points": [
+          "No lock-in period, funds can be withdrawn anytime.",
+          "No special tax benefits on contributions.",
+          "Functions like a flexible investment account."
+        ]
+      }
+    },
+    "comparison": {
+      "title": "NPS vs PPF vs FD vs Mutual Funds",
+      "table": {
+        "headers": ["Feature", "NPS", "PPF", "Fixed Deposit (FD)", "Mutual Funds"],
+        "rows": [
+          ["Return Type", "Market-linked (8–12%)", "Govt. guaranteed (~7.1%)", "Bank-specified (5–7%)", "Market-linked"],
+          ["Lock-in", "Till retirement (Tier I)", "15 years", "Flexible", "Varies (ELSS 3 years)"],
+          ["Tax Benefits", "80C + 80CCD(1B)", "80C (EEE)", "Interest taxable", "ELSS under 80C"],
+          ["Best For", "Retirement & pension", "Risk-averse long term", "Short/medium goals", "Wealth creation"]
+        ]
+      },
+      "footer_note": "Explore our <a href='/ppf-calculator' class='underline'>PPF Calculator</a> and <a href='/fd-vs-ppf-calculator' class='underline'>FD vs PPF Calculator</a> to compare returns."
+    },
+    "faq_title": "Frequently Asked Questions",
+    "faqs": [
+      { "question": "What is the NPS calculator?", "answer": "An online tool that estimates your retirement corpus and potential monthly pension based on your contributions, expected returns and years to retirement." },
+      { "question": "How is NPS corpus calculated?", "answer": "By compounding your periodic contributions at the expected annual return rate until retirement. For annual contributions use FV = P × [(1+r)^t − 1] / r." },
+      { "question": "How much pension will I get from NPS?", "answer": "Pension depends on how much you annuitize at retirement and the prevailing annuity rate. Example: a ₹39.3L annuity at 6% yields ~₹19,650/month." },
+      { "question": "What tax benefits does NPS offer?", "answer": "Deductions under Section 80C (up to ₹1.5L), additional deduction ₹50k under 80CCD(1B), and employer contribution benefits under 80CCD(2)." },
+      { "question": "Can NRIs open an NPS account?", "answer": "Yes, NRIs meeting age criteria (18–70) can open NPS accounts subject to provider rules." }
+    ]
   },
   "apy_calculator": {
     "meta_title": "APY Calculator (2025) - Atal Pension Yojana | BharatSaver",
@@ -490,3 +616,5 @@
     "results_placeholder": "Search functionality is coming soon."
   }
 }
+
+    
