@@ -28,18 +28,6 @@ const nextConfig = {
       },
     ],
   },
-  async rewrites() {
-    return [
-      {
-        source: '/sitemap.xml',
-        destination: '/sitemap',
-      },
-      {
-        source: '/hero-image.png',
-        destination: '/hero-image.png',
-      },
-    ]
-  },
 };
 
 module.exports = nextConfig;
