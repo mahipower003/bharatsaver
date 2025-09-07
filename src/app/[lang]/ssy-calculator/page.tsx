@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { CheckCircle2, TrendingUp, ShieldCheck, Scale, Star, Baby, IndianRupee } from "lucide-react";
+import { CheckCircle2, TrendingUp, ShieldCheck, Scale, Star, Baby, IndianRupee, Landmark, FileText, ArrowRightLeft } from "lucide-react";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -80,6 +80,10 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
       { '@type': 'ListItem', position: 3, name: 'SSY Calculator', item: `${siteUrl}/${params.lang}/ssy-calculator` },
     ],
   };
+  
+  const historicalRatesData = dictionary.ssy_calculator.historical_rates.table;
+  const comparisonData = dictionary.ssy_calculator.comparison.table;
+  const exampleData = dictionary.ssy_calculator.example.table;
 
   return (
     <div className="py-12">
@@ -90,9 +94,7 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
             {dictionary.ssy_calculator.h1}
           </h1>
-          <p className="mt-4 text-lg text-muted-foreground">
-            {dictionary.ssy_calculator.description}
-          </p>
+          <p className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{__html: dictionary.ssy_calculator.description}}></p>
         </div>
         
         <SsyCalculator dictionary={dictionary.ssy_calculator} />
@@ -106,49 +108,137 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.what_is_ssy.body }}></p>
+            <h3 className="font-semibold mt-4 mb-2">{dictionary.ssy_calculator.what_is_ssy.quick_facts.title}</h3>
+            <ul className="list-disc pl-5 space-y-1 text-muted-foreground">
+              {dictionary.ssy_calculator.what_is_ssy.quick_facts.points.map((point: string, index: number) => (
+                <li key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
+              ))}
+            </ul>
           </CardContent>
         </Card>
 
-        <Card className="mt-12 shadow-lg">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-3">
-                <ShieldCheck className="h-7 w-7 text-primary"/>
-                <h2 className="text-2xl font-bold">{dictionary.ssy_calculator.tax_benefits.title}</h2>
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="prose dark:prose-invert max-w-none">
-             <p dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.tax_benefits.body }}></p>
-          </CardContent>
-        </Card>
-        
         <Card className="mt-12 shadow-lg">
           <CardHeader>
             <h2 className="text-2xl font-bold">{dictionary.ssy_calculator.how_it_works.title}</h2>
           </CardHeader>
           <CardContent className="space-y-4">
-             <ul className="space-y-3">
-                {dictionary.ssy_calculator.how_it_works.points.map((point: string, index: number) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <CheckCircle2 className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
-                      <span dangerouslySetInnerHTML={{ __html: point }}></span>
-                    </li>
-                ))}
+            <p className="text-muted-foreground">{dictionary.ssy_calculator.example.intro}</p>
+            <p className="font-mono bg-muted p-2 rounded-md text-sm">{dictionary.ssy_calculator.example.formula}</p>
+
+            <h3 className="font-semibold pt-4">{dictionary.ssy_calculator.example.scenario.title}</h3>
+            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.example.scenario.body }}></p>
+            <ul className="list-disc pl-5 space-y-1 text-muted-foreground">
+              {dictionary.ssy_calculator.example.scenario.points.map((point: string, index: number) => (
+                <li key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
+              ))}
             </ul>
-             <div className="prose dark:prose-invert max-w-none mt-4">
-                <p className="font-semibold italic" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.how_it_works.formula }}></p>
-            </div>
+            <p className="text-muted-foreground font-semibold" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.example.scenario.result }}></p>
+
+            <h4 className="font-semibold pt-2">{dictionary.ssy_calculator.example.snapshot_title}</h4>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  {exampleData.headers.map((header: string, index: number) => (
+                    <TableHead key={index} className={index > 0 ? "text-right" : ""}>{header}</TableHead>
+                  ))}
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {exampleData.rows.map((row: string[], rowIndex: number) => (
+                  <TableRow key={rowIndex}>
+                    {row.map((cell: string, cellIndex: number) => (
+                      <TableCell key={cellIndex} className={cellIndex > 0 ? "text-right" : ""}>{cell}</TableCell>
+                    ))}
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+            <p className="text-xs text-muted-foreground italic pt-2">{dictionary.ssy_calculator.example.footer_note}</p>
           </CardContent>
         </Card>
 
         <Card className="mt-12 shadow-lg">
           <CardHeader>
-            <CardTitle className="flex items-center gap-3">
-                <IndianRupee className="h-7 w-7 text-primary"/>
-                <h2 className="text-2xl font-bold">{dictionary.ssy_calculator.deposit_rules.title}</h2>
-            </CardTitle>
+            <h2 className="text-2xl font-bold">{dictionary.ssy_calculator.comparison.title}</h2>
           </CardHeader>
-          <CardContent className="prose dark:prose-invert max-w-none">
-            <p dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.deposit_rules.body }}></p>
+          <CardContent>
+              <Table>
+                  <TableHeader>
+                      <TableRow>
+                          {comparisonData.headers.map((header: string, index: number) => (
+                              <TableHead key={index} className={index > 0 ? "text-center" : ""}>{header}</TableHead>
+                          ))}
+                      </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                      {comparisonData.rows.map((row: string[], rowIndex: number) => (
+                          <TableRow key={rowIndex}>
+                              {row.map((cell: string, cellIndex: number) => (
+                                  <TableCell key={cellIndex} className={cellIndex > 0 ? 'text-center' : ''} dangerouslySetInnerHTML={{ __html: cell }}></TableCell>
+                              ))}
+                          </TableRow>
+                      ))}
+                  </TableBody>
+              </Table>
+          </CardContent>
+        </Card>
+
+        <Card className="mt-12 shadow-lg">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3">
+                  <TrendingUp className="h-7 w-7 text-primary"/>
+                  <span className="text-2xl font-bold">{dictionary.ssy_calculator.investment_strategy.title}</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="prose dark:prose-invert max-w-none">
+              <ol className="list-decimal pl-5 space-y-2">
+                {dictionary.ssy_calculator.investment_strategy.points.map((point: string, index: number) => (
+                  <li key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
+                ))}
+              </ol>
+            </CardContent>
+        </Card>
+        
+        <Card className="mt-12 shadow-lg">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3">
+                  <FileText className="h-7 w-7 text-primary"/>
+                  <h2 className="text-2xl font-bold">{dictionary.ssy_calculator.how_to_open.title}</h2>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="prose dark:prose-invert max-w-none">
+              <p>{dictionary.ssy_calculator.how_to_open.intro}</p>
+              <ol className="list-decimal pl-5 space-y-2">
+                {dictionary.ssy_calculator.how_to_open.steps.map((step: string, index: number) => (
+                  <li key={index} dangerouslySetInnerHTML={{ __html: step }}></li>
+                ))}
+              </ol>
+            </CardContent>
+        </Card>
+
+        <Card className="mt-12 shadow-lg">
+          <CardHeader>
+            <h2 className="text-2xl font-bold">{dictionary.ssy_calculator.historical_rates.title}</h2>
+          </CardHeader>
+          <CardContent>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  {historicalRatesData.headers.map((header: string, index: number) => (
+                    <TableHead key={index}>{header}</TableHead>
+                  ))}
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {historicalRatesData.rows.map((row: string[], rowIndex: number) => (
+                  <TableRow key={rowIndex}>
+                    {row.map((cell: string, cellIndex: number) => (
+                      <TableCell key={cellIndex}>{cell}</TableCell>
+                    ))}
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
           </CardContent>
         </Card>
 
@@ -170,5 +260,3 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
     </div>
   );
 }
-
-    

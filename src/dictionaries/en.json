@@ -224,10 +224,10 @@
     }
   },
   "ssy_calculator": {
-    "meta_title": "SSY Calculator 2025 – Sukanya Samriddhi Yojana Return Calculator | BharatSaver",
-    "meta_description": "Use our free SSY calculator to estimate Sukanya Samriddhi Yojana returns (8.2% interest). Learn eligibility, tax benefits (Section 80C up to ₹1.5L) and planning tips.",
-    "h1": "Sukanya Samriddhi Yojana (SSY) Calculator – Calculate Returns Online",
-    "description": "Plan your daughter's future with our free SSY Calculator. Instantly estimate the maturity amount, total interest, and year-wise growth of your Sukanya Samriddhi Yojana investment at the current 8.2% interest rate.",
+    "meta_title": "Sukanya Samriddhi Yojana (SSY) Calculator 2025 — Calculate SSY Returns & Maturity",
+    "meta_description": "Use our free SSY calculator 2025 to estimate Sukanya Samriddhi Yojana maturity, interest earned and year-wise projections (8.2% interest). See tax benefits, rules, and examples.",
+    "h1": "Sukanya Samriddhi Yojana (SSY) Calculator — Calculate Returns Online",
+    "description": "Use our <strong>free Sukanya Samriddhi Yojana (SSY) Calculator</strong> to instantly estimate your <strong>maturity amount</strong>, <strong>total interest earned</strong>, and a <strong>year-wise breakdown</strong>. This calculator is updated with the current SSY interest rate for 2025 and supports annual and monthly deposit scenarios.",
     "title": "SSY Calculator",
     "yearly_investment_label": "Yearly Investment (₹)",
     "yearly_investment_placeholder": "e.g., 1,50,000",
@@ -252,36 +252,123 @@
     "table_closing_balance": "Closing Balance",
     "amount_in_lakhs": "Amount (in Lakhs)",
     "what_is_ssy": {
-      "title": "What is the Sukanya Samriddhi Yojana (SSY)?",
-      "body": "The Sukanya Samriddhi Yojana (SSY) is a government-backed savings scheme launched in 2015 as part of the 'Beti Bachao, Beti Padhao' campaign. It is designed to help parents build a financial corpus for their daughter's education and marriage expenses. The scheme offers a high, tax-free interest rate, currently at <strong>8.2% per annum</strong>."
-    },
-    "tax_benefits": {
-      "title": "Tax Benefits of SSY",
-      "body": "SSY is an EEE (Exempt-Exempt-Exempt) investment. This means: <br/> 1. <strong>Exempt (Contribution):</strong> Investments up to ₹1.5 lakh per year are eligible for tax deduction under Section 80C. <br/> 2. <strong>Exempt (Interest):</strong> The interest earned annually is tax-free. <br/> 3. <strong>Exempt (Maturity):</strong> The final maturity amount is also completely tax-free."
+      "title": "What is Sukanya Samriddhi Yojana (SSY)?",
+      "body": "<strong>Sukanya Samriddhi Yojana (SSY)</strong> is a government-backed savings scheme for a girl child’s future (education & marriage). Launched under <em>Beti Bachao, Beti Padhao</em>, SSY offers guaranteed returns and tax benefits.",
+      "quick_facts": {
+        "title": "Quick facts (SSY at a glance):",
+        "points": [
+          "<strong>Interest rate (2025):</strong> <strong>8.2%</strong> (subject to quarterly govt revision).",
+          "<strong>Minimum deposit:</strong> ₹250 per year.",
+          "<strong>Maximum deposit:</strong> ₹1.5 lakh per year.",
+          "<strong>Deposit period:</strong> 15 years from account opening.",
+          "<strong>Maturity:</strong> 21 years from account opening.",
+          "<strong>Eligibility:</strong> Girl child below 10 years of age (max 2 accounts/family).",
+          "<strong>Tax:</strong> EEE — contributions, interest and maturity are tax-free (Section 80C)."
+        ]
+      }
     },
     "how_it_works": {
-      "title": "How Does the SSY Calculator Work?",
+      "title": "How SSY interest is calculated (formula & example)"
+    },
+    "example": {
+      "intro": "Because SSY compounds <strong>annually</strong>, we use `n = 1`. For regular annual deposits, each deposit earns interest for the remaining years until maturity.",
+      "formula": "A = P × (1 + r/n)^(n × t)",
+      "scenario": {
+        "title": "Example (exact calculation)",
+        "body": "<strong>Scenario:</strong> You deposit <strong>₹1,50,000 per year</strong> for <strong>15 years</strong> (maximum yearly contribution). The account matures in <strong>21 years</strong>. The SSY interest rate = <strong>8.2%</strong> (0.082).",
+        "points": [
+          "Principal per year: `P = 150,000`",
+          "Annual rate: `r = 0.082`",
+          "Total years to maturity: `T = 21`",
+          "Number of annual deposits: `N = 15`"
+        ],
+        "result": "Maturity value = sum_{k=0}^{14} P × (1 + r)^(T − k) <br/> <strong>Maturity value ≈ ₹7,182,119.17</strong> <br/> <strong>Total invested = ₹1,50,000 × 15 = ₹2,250,000</strong> <br/> <strong>Total interest earned ≈ ₹7,182,119.17 − ₹2,250,000 = ₹4,932,119.17</strong>"
+      },
+      "snapshot_title": "Snapshot (selected years):",
+      "table": {
+        "headers": ["Year", "Balance (end of year)"],
+        "rows": [
+          ["1", "₹1,62,300.00"],
+          ["5", "₹9,55,953.83"],
+          ["10", "₹23,73,617.52"],
+          ["15", "₹44,75,989.33"],
+          ["21", "₹71,82,119.17"]
+        ]
+      },
+      "footer_note": "These numbers assume deposits at the start of each year and 8.2% annual compounding. If you deposit later in the year, your maturity will be slightly lower."
+    },
+    "comparison": {
+      "title": "SSY vs PPF vs FD vs NPS — quick comparison (2025)",
+      "table": {
+        "headers": ["Feature", "SSY", "PPF", "Fixed Deposit (FD)", "NPS"],
+        "rows": [
+          ["Return type", "Guaranteed (govt)", "Guaranteed (govt)", "Fixed (bank)", "Market linked"],
+          ["Typical rate (2025)", "<strong>8.2%</strong>", "~7.1%", "5–7%", "Varies (equity/debt mix)"],
+          ["Lock-in", "21 yrs (deposit 15 yrs)", "15 yrs", "Flexible", "Till retirement"],
+          ["Tax", "EEE", "EEE", "Interest taxable", "Tax benefits in contribution"],
+          ["Best for", "Girl child savings", "General long-term savings", "Short/medium-term needs", "Retirement"]
+        ]
+      }
+    },
+    "investment_strategy": {
+      "title": "Best SSY investment strategy (practical tips)",
       "points": [
-        "<strong>Investment Period:</strong> You only need to deposit money for the first 15 years.",
-        "<strong>Maturity Period:</strong> The account matures after 21 years from the date of opening.",
-        "<strong>Interest Calculation:</strong> From year 16 to 21, no new deposits are made, but the existing balance continues to earn compound interest.",
-        "<strong>Withdrawal:</strong> Partial withdrawal of up to 50% is allowed for the girl's higher education after she turns 18."
-      ],
-      "formula": "Our calculator uses the standard compound interest formula: A = P(1+r/n)^(n*t), where interest is compounded annually."
+        "<strong>Deposit before the 5th of the month</strong> — deposits before the 5th are eligible for interest for that month.",
+        "<strong>If possible, deposit lump sum early in the financial year</strong> — a full ₹1.5 lakh early in April maximizes the year’s interest.",
+        "<strong>Prefer monthly system if lumpsum is not possible</strong> — deposit monthly amounts early in the month.",
+        "<strong>Avoid missed years</strong> — minimum ₹250 per year to keep account active; revival requires payment + penalty.",
+        "<strong>Keep documents handy</strong> — PAN, Aadhaar for KYC and faster online account opening."
+      ]
     },
-    "deposit_rules": {
-        "title": "SSY Deposit Rules & Limits",
-        "body": "<strong>Minimum Deposit:</strong> ₹250 per financial year. <br/> <strong>Maximum Deposit:</strong> ₹1,50,000 per financial year. <br/> Deposits can be made in a lump sum or in multiple installments. If the minimum amount is not deposited, a penalty of ₹50 is charged to reactivate the account."
+    "how_to_open": {
+      "title": "How to open an SSY account & documents needed",
+      "intro": "You can open SSY at <strong>Post Office</strong> or selected <strong>banks</strong> (SBI, HDFC, ICICI). Typical steps:",
+      "steps": [
+        "Choose Post Office or bank.",
+        "Fill SSY account opening form (available online/branch).",
+        "Provide <strong>PAN</strong>, <strong>Aadhaar</strong>, birth proof of girl child, passport photo, parent’s ID.",
+        "Make initial deposit (min ₹250).",
+        "Collect passbook/acknowledgement."
+      ]
     },
-    "faq_title": "Frequently Asked Questions about SSY",
+    "historical_rates": {
+      "title": "SSY interest rates — last 10 years (short table)",
+      "table": {
+        "headers": ["Period", "Interest Rate (%)"],
+        "rows": [
+          ["2025 (current)", "8.2%"],
+          ["2024", "8.2%"],
+          ["2020–2022", "7.6% – 7.8%"],
+          ["2015–2019", "8.0% – 8.6%"]
+        ]
+      }
+    },
+    "faq_title": "Frequently Asked Questions (FAQ)",
     "faqs": [
       {
-        "question": "What is the current interest rate of SSY for 2025?",
-        "answer": "The current interest rate for Sukanya Samriddhi Yojana is 8.2% per annum, compounded annually. This rate is reviewed by the government quarterly."
+        "question": "What is the current SSY interest rate for 2025?",
+        "answer": "The SSY interest rate for Apr–Jun 2025 is <strong>8.2%</strong> (subject to quarterly change by the Government of India)."
       },
-      { "question": "Can I open two SSY accounts for one girl child?", "answer": "No, only one SSY account is allowed per girl child. A family can open a maximum of two accounts for two different girls (or three in case of triplets)." },
-      { "question": "What happens when the girl turns 21?", "answer": "The SSY account matures when the girl turns 21, and the entire balance (principal + accumulated interest) can be withdrawn. The account automatically closes upon maturity." },
-      { "question": "Can I withdraw money before 21 years?", "answer": "Yes, a partial withdrawal of up to 50% of the balance is allowed for the girl's higher education once she turns 18. Premature closure is only allowed in specific cases like the death of the account holder or on extreme compassionate grounds." }
+      {
+        "question": "What is the minimum & maximum deposit in SSY?",
+        "answer": "Minimum is <strong>₹250 per year</strong> and maximum <strong>₹1.5 lakh per year</strong>."
+      },
+      {
+        "question": "Can I open more than one SSY account?",
+        "answer": "You can open accounts for up to <strong>two girl children</strong> in a family — one account per child."
+      },
+      {
+        "question": "When can I withdraw from SSY?",
+        "answer": "Partial withdrawal allowed after the girl turns <strong>18</strong> for education; full maturity at <strong>21 years</strong>."
+      },
+      {
+        "question": "How is SSY interest calculated?",
+        "answer": "SSY compounds annually; use the formula `A = P(1 + r)^t` for a single deposit, and sum contributions for recurring deposits."
+      },
+      {
+        "question": "What happens if I miss an annual deposit?",
+        "answer": "You must pay at least ₹250 each year. If you miss, account revival is possible with missed deposits + penalty — check bank/Post Office for current amounts."
+      }
     ]
   },
   "nps_calculator": {
@@ -362,7 +449,8 @@
   "contact_page": {
     "meta_title": "Contact Us | BharatSaver",
     "meta_description": "Get in touch with the BharatSaver team for any questions or feedback.",
-    "h1": "Contact Us"
+    "h1": "Contact Us",
+    "p1": "We're here to help. Reach out to us with any questions or feedback."
   },
   "about_page": {
     "meta_title": "About Us | BharatSaver",
@@ -383,7 +471,3 @@
     "results_placeholder": "Search functionality is coming soon."
   }
 }
-
-    
-
-    
