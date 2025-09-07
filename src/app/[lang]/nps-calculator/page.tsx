@@ -22,21 +22,22 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   const faqSchema = {
     "@context":"https://schema.org",
     "@type":"FAQPage",
-    "mainEntity":[
-      {"@type":"Question","name":"What is the NPS calculator?","acceptedAnswer":{"@type":"Answer","text":"An online tool that estimates your retirement corpus and potential monthly pension based on your contributions, expected returns and years to retirement."}},
-      {"@type":"Question","name":"How is NPS corpus calculated?","acceptedAnswer":{"@type":"Answer","text":"By compounding your periodic contributions at an expected annual return rate until retirement. For annual contributions use FV = P × [(1+r)^t − 1] / r."}},
-      {"@type":"Question","name":"What tax benefits does NPS offer?","acceptedAnswer":{"@type":"Answer","text":"Deductions under Section 80C (up to ₹1.5 lakh), extra ₹50,000 under Section 80CCD(1B), and employer contributions deductible under Section 80CCD(2)."}},
-      {"@type":"Question","name":"How much pension will I get from NPS?","acceptedAnswer":{"@type":"Answer","text":"It depends on corpus and annuity rate. Example: a corpus of ₹39.3 lakh annuitized at 6% can yield roughly ₹19,650/month."}},
-      {"@type":"Question","name":"Can NRIs invest in NPS?","acceptedAnswer":{"@type":"Answer","text":"Yes — NRIs can open NPS accounts subject to provider and regulatory rules; ensure your bank allows NPS for NRIs."}}
-    ]
+    "mainEntity": faqItems.map((faq: { question: string, answer: string }) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
   };
 
   return {
-    title: "NPS Calculator 2025 — National Pension System Pension & Corpus Calculator",
-    description: "Use our FREE NPS Calculator to estimate your retirement corpus, tax benefits and expected monthly pension. Supports monthly/yearly contributions — updated NPS rules for 2025.",
+    title: dictionary.nps_calculator.meta_title,
+    description: dictionary.nps_calculator.meta_description,
     openGraph: {
-      title: "NPS Calculator 2025 — National Pension System Pension & Corpus Calculator",
-      description: "Use our FREE NPS Calculator to estimate your retirement corpus, tax benefits and expected monthly pension. Supports monthly/yearly contributions — updated NPS rules for 2025.",
+      title: dictionary.nps_calculator.meta_title,
+      description: dictionary.nps_calculator.meta_description,
       url: pageUrl,
       images: [{ url: `/images/nps-calculator-online.png`, width: 1200, height: 630, alt: 'BharatSaver NPS Calculator' }],
       locale: params.lang === 'en' ? 'en_IN' : params.lang,
@@ -44,8 +45,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     },
     twitter: {
       card: 'summary_large_image',
-      title: "NPS Calculator 2025 — National Pension System Pension & Corpus Calculator",
-      description: "Use our FREE NPS Calculator to estimate your retirement corpus, tax benefits and expected monthly pension. Supports monthly/yearly contributions — updated NPS rules for 2025.",
+      title: dictionary.nps_calculator.meta_title,
+      description: dictionary.nps_calculator.meta_description,
       images: [`/images/nps-calculator-online.png`],
     },
     alternates: {
@@ -215,7 +216,7 @@ export default async function NpsCalculatorPage({ params }: { params: { lang: Lo
                       ))}
                   </TableBody>
               </Table>
-               <p className="text-sm text-muted-foreground mt-4" dangerouslySetInnerHTML={{ __html: dictionary.nps_calculator.comparison.footer_note }}></p>
+               <p className="text-sm text-muted-foreground mt-4" dangerouslySetInnerHTML={{ __html: dictionary.nps_calculator.comparison.footer_note.replace('{lang}', params.lang) }}></p>
           </CardContent>
         </Card>
 

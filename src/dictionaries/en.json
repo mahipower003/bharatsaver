@@ -203,7 +203,7 @@
           ["Best For", "Long-term, secure, tax-free savings", "Short/medium-term needs", "Retirement planning", "Wealth creation", "Girl child's future"]
         ]
       },
-      "footer_note": "Explore our <a href='/{lang}/fd-vs-ppf-calculator' class='underline'>FD Calculator</a>, <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a>, and <a href='/{lang}/ssy-calculator' class='underline'>SSY Calculator</a> to compare returns and make informed decisions."
+      "footer_note": "Explore our <a href='/{lang}/fd-vs-ppf-calculator' class='underline'>FD vs PPF Calculator</a>, <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a>, and <a href='/{lang}/ssy-calculator' class='underline'>SSY Calculator</a> to compare returns and make informed decisions."
     },
     "faq_title": "Frequently Asked Questions",
     "faqs": [
@@ -318,7 +318,7 @@
     },
     "investment_strategy": {
       "title": "Best SSY investment strategy (practical tips)",
-      "monthly_example": "<strong>Monthly deposit example:</strong> If you deposit **₹12,500 per month (₹1.5 lakh/year)** for 15 years and the annual SSY rate is 8.2%, the effective compounding is yearly but monthly deposits change interest days — our calculator supports monthly mode and will compute exact year-wise balances.",
+      "monthly_example": "<strong>Monthly deposit example:</strong> If you deposit <strong>₹12,500 per month (₹1.5 lakh/year)</strong> for 15 years and the annual SSY rate is 8.2%, the effective compounding is yearly but monthly deposits change interest days — our calculator supports monthly mode and will compute exact year-wise balances.",
       "points": [
         "<strong>Deposit before the 5th of the month</strong> — deposits before the 5th are eligible for interest for that month.",
         "<strong>If possible, deposit lump sum early in the financial year</strong> — a full ₹1.5 lakh early in April maximizes the year’s interest.",
@@ -373,15 +373,30 @@
     },
     "faq_title": "Frequently Asked Questions (FAQ)",
     "faqs": [
+      {
+        "question": "How much will ₹10,000 per month in SSY become in 21 years?",
+        "answer": "Assuming an 8.2% annual interest rate, a monthly deposit of ₹10,000 (₹1.2 lakh/year) for 15 years will result in a maturity amount of approximately ₹57.45 lakh after 21 years. You can use our SSY calculator to get an exact year-wise projection for your specific amount."
+      },
+      {
+        "question": "How does depositing on the 5th vs 6th affect SSY interest?",
+        "answer": "Interest is calculated on the lowest balance between the 5th and the end of the month. Depositing before the 5th ensures your money earns interest for that entire month. If you deposit after, you lose interest for that month on that specific deposit."
+      },
+      {
+        "question": "How to revive an SSY account — step by step?",
+        "answer": "If you miss the minimum ₹250 deposit, your account becomes inactive. To revive it, visit your bank/Post Office, fill the revival form, and pay the total missed deposits (₹250 per year) plus a small penalty for each missed year. Your account will become active again."
+      },
+      {
+        "question": "What are the nomination and transfer rules?",
+        "answer": "You can nominate a beneficiary for the SSY account. The account can also be transferred from one bank/Post Office to another anywhere in India if the family relocates."
+      },
+      {
+        "question": "What happens if the parent/guardian dies?",
+        "answer": "In the unfortunate event of the depositor's (parent/guardian's) death, the account can be continued by the other parent or legal guardian. If not possible, the account is typically closed, and the balance with interest is paid to the girl child's nominee or legal heir."
+      },
       { "question": "What is the current SSY interest rate for 2025?", "answer": "The SSY interest rate for Apr–Jun 2025 is <strong>8.2%</strong> (set quarterly by the Government of India)." },
       { "question": "How is SSY interest calculated?", "answer": "SSY compounds annually. For regular annual deposits, calculate each year’s deposit growth until maturity and sum them. Use A = P(1+r)^(years). Our calculator does this automatically for you." },
       { "question": "What is the minimum and maximum deposit in SSY?", "answer": "Minimum deposit is <strong>₹250 per year</strong> and maximum deposit is <strong>₹1.5 lakh per year</strong>." },
-      { "question": "When can I withdraw from SSY?", "answer": "Partial withdrawal is permitted after the girl turns 18 for higher education; the account matures at 21 years from opening." },
-      { "question": "How much will ₹10,000 per month in SSY become in 21 years?", "answer": "Assuming an 8.2% annual interest rate, a monthly deposit of ₹10,000 (₹1.2 lakh/year) for 15 years will result in a maturity amount of approximately ₹57.45 lakh after 21 years. You can use our SSY calculator to get an exact year-wise projection for your specific amount." },
-      { "question": "How does depositing on the 5th vs 6th affect SSY interest?", "answer": "Interest is calculated on the lowest balance between the 5th and the end of the month. Depositing before the 5th ensures your money earns interest for that entire month. If you deposit after, you lose interest for that month on that specific deposit." },
-      { "question": "How to revive an SSY account — step by step?", "answer": "If you miss the minimum ₹250 deposit, your account becomes inactive. To revive it, visit your bank/Post Office, fill the revival form, and pay the total missed deposits (₹250 per year) plus a small penalty for each missed year. Your account will become active again." },
-      { "question": "What are the nomination and transfer rules?", "answer": "You can nominate a beneficiary for the SSY account. The account can also be transferred from one bank/Post Office to another anywhere in India if the family relocates." },
-      { "question": "What happens if the parent/guardian dies?", "answer": "In the unfortunate event of the depositor's (parent/guardian's) death, the account can be continued by the other parent or legal guardian. If not possible, the account is typically closed, and the balance with interest is paid to the girl child's nominee or legal heir." }
+      { "question": "When can I withdraw from SSY?", "answer": "Partial withdrawal is permitted after the girl turns 18 for higher education; the account matures at 21 years from opening." }
     ],
     "conclusion": {
       "title": "Conclusion: Is SSY the Right Choice for Your Daughter?",
@@ -389,8 +404,10 @@
     }
   },
   "nps_calculator": {
+    "meta_title": "NPS Calculator 2025 — National Pension System Pension & Corpus Calculator",
+    "meta_description": "Use our FREE NPS Calculator to estimate your retirement corpus, tax benefits and expected monthly pension. Supports monthly/yearly contributions — updated NPS rules for 2025.",
     "h1": "NPS Calculator — Calculate Your Retirement Corpus & Monthly Pension",
-    "description": "Plan a confident retirement with our NPS (National Pension System) Calculator. Enter your monthly or annual contribution, expected rate of return, and years to retirement — we’ll show your estimated corpus, the tax-efficient benefits, and a projected monthly annuity after age 60.",
+    "description": "Plan a confident retirement with our National Pension System (NPS) Calculator. Enter your monthly or annual contribution, expected rate of return, and years to retirement — we’ll show your estimated corpus, the tax-efficient benefits, and a projected monthly annuity after age 60.",
     "title": "NPS Calculator",
     "form_description": "Estimate your retirement savings with the National Pension System.",
     "contribution_mode": "Contribution Mode",
@@ -452,20 +469,20 @@
       }
     },
     "example": {
-      "title": "Example: Exact NPS Calculation",
-      "intro": "Let's assume the following scenario to see how the corpus is calculated:",
+      "title": "Example: How to Calculate NPS Returns",
+      "intro": "Let's assume the following scenario for a monthly contribution example to see how the corpus is calculated:",
       "assumptions": [
         "You contribute <strong>₹6,000 per month</strong> (₹72,000 per year).",
         "Expected average return (blend of equity + debt): <strong>9% p.a.</strong>",
         "Contribution period: <strong>30 years</strong> (from age 30 to 60)."
       ],
       "result": "<strong>Estimated corpus at retirement ≈ ₹98.2 lakh</strong>",
-      "annuity_intro": "From this corpus:",
+      "annuity_intro": "From this corpus, you must decide what is the NPS annuity rate in India you expect:",
       "annuity_result": "Withdrawable lump sum (60%) ≈ ₹58.9 lakh<br/>Amount to annuitize (40%) ≈ ₹39.3 lakh<br/>If you purchase an annuity with a 6% payout rate, your <strong>monthly pension would be ≈ ₹19,650</strong>.",
       "disclaimer": "These numbers are for illustration. Real-world returns vary and annuity rates change."
     },
     "tax_benefits": {
-      "title": "NPS Tax Benefits",
+      "title": "NPS Tax Benefits 2025: Section 80C & 80CCD(1B)",
       "intro": "NPS offers some of the best tax-saving opportunities for retirement planning:",
       "points": [
         "<strong>Section 80C:</strong> Up to ₹1.5 lakh deduction for your contributions.",
@@ -474,8 +491,8 @@
       ]
     },
     "rules": {
-      "title": "Key NPS Rules (Tier I vs Tier II)",
-      "intro": "It's important to understand the difference between the two NPS account types:",
+      "title": "Key NPS Rules You Must Know (Tier 1 vs Tier 2)",
+      "intro": "It's important to understand the NPS Tier 1 vs Tier 2 differences:",
       "tier1": {
         "title": "Tier I (Retirement Account)",
         "points": [
@@ -495,29 +512,44 @@
       }
     },
     "comparison": {
-      "title": "NPS vs PPF vs FD vs Mutual Funds",
+      "title": "NPS vs PPF vs FD vs Mutual Funds: Which is Better for Retirement?",
       "table": {
-        "headers": ["Feature", "NPS", "PPF", "Fixed Deposit (FD)", "Mutual Funds"],
+        "headers": ["Feature", "NPS", "PPF", "Fixed Deposit (FD)", "Mutual Funds (ELSS)"],
         "rows": [
           ["Return Type", "Market-linked (8–12%)", "Govt. guaranteed (~7.1%)", "Bank-specified (5–7%)", "Market-linked"],
           ["Lock-in", "Till retirement (Tier I)", "15 years", "Flexible", "Varies (ELSS 3 years)"],
-          ["Tax Benefits", "80C + 80CCD(1B)", "80C (EEE)", "Interest taxable", "ELSS under 80C"],
+          ["Tax Benefits", "80C + 80CCD(1B)", "EEE (80C)", "Interest taxable", "ELSS under 80C"],
           ["Best For", "Retirement & pension", "Risk-averse long term", "Short/medium goals", "Wealth creation"]
         ]
       },
-      "footer_note": "Explore our <a href='/ppf-calculator' class='underline'>PPF Calculator</a> and <a href='/fd-vs-ppf-calculator' class='underline'>FD vs PPF Calculator</a> to compare returns."
+      "footer_note": "Explore our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> and <a href='/{lang}/fd-vs-ppf-calculator' class='underline'>FD vs PPF Calculator</a> to compare returns."
     },
-    "faq_title": "Frequently Asked Questions",
+    "faq_title": "Frequently Asked Questions about the National Pension System",
     "faqs": [
-      { "question": "What is the NPS calculator?", "answer": "An online tool that estimates your retirement corpus and potential monthly pension based on your contributions, expected returns and years to retirement." },
-      { "question": "How is NPS corpus calculated?", "answer": "By compounding your periodic contributions at the expected annual return rate until retirement. For annual contributions use FV = P × [(1+r)^t − 1] / r." },
-      { "question": "How much pension will I get from NPS?", "answer": "Pension depends on how much you annuitize at retirement and the prevailing annuity rate. Example: a ₹39.3L annuity at 6% yields ~₹19,650/month." },
-      { "question": "What tax benefits does NPS offer?", "answer": "Deductions under Section 80C (up to ₹1.5L), additional deduction ₹50k under 80CCD(1B), and employer contribution benefits under 80CCD(2)." },
-      { "question": "Can NRIs open an NPS account?", "answer": "Yes, NRIs meeting age criteria (18–70) can open NPS accounts subject to provider rules." }
+      {
+        "question": "What is the NPS calculator?",
+        "answer": "An online tool that estimates your retirement corpus and potential monthly pension based on your contributions, expected returns and years to retirement."
+      },
+      {
+        "question": "How is NPS corpus calculated?",
+        "answer": "By compounding your periodic contributions at the expected annual return rate until retirement. For annual contributions use FV = P × [(1+r)^t − 1] / r."
+      },
+      {
+        "question": "How much pension will I get from NPS?",
+        "answer": "It depends on the corpus size and the annuity rate at the time of your retirement. For example, a corpus of ₹39.3 lakh annuitized at a 6% rate can yield a monthly pension of roughly ₹19,650."
+      },
+      {
+        "question": "What tax benefits does NPS offer for 2025?",
+        "answer": "NPS provides tax deductions under Section 80C (up to ₹1.5 lakh), an additional exclusive deduction of ₹50,000 under Section 80CCD(1B), and benefits on employer contributions under Section 80CCD(2)."
+      },
+      {
+        "question": "Can NRIs invest in NPS?",
+        "answer": "Yes, Non-Resident Indians (NRIs) who meet the age criteria (typically 18–70 years) can open NPS accounts, subject to provider and regulatory guidelines. Ensure your bank facilitates NRI investments in NPS."
+      }
     ],
     "conclusion": {
       "title": "Conclusion: Is NPS the Right Choice for Your Retirement?",
-      "body": "The National Pension System is a powerful, tax-efficient tool specifically designed for long-term retirement planning. Its blend of equity and debt options allows for potentially higher returns than traditional fixed-income products, while its disciplined structure ensures you stay on track. Use this calculator to model different scenarios and see how NPS can form the cornerstone of your retirement strategy."
+      "body": "The National Pension System is a powerful, tax-efficient tool specifically designed for long-term retirement planning. Its blend of equity and debt options allows for potentially higher returns than traditional fixed-income products, while its disciplined structure ensures you stay on track. Use this NPS pension calculator to model different scenarios and see how it can form the cornerstone of your retirement strategy."
     }
   },
   "apy_calculator": {
