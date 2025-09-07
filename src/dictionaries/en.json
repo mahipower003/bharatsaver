@@ -332,13 +332,13 @@
     "tax_benefits": {
       "title": "Tax Benefits of SSY (EEE Status)",
       "intro": "Like PPF, the Sukanya Samriddhi Yojana (SSY) is an EEE (Exempt-Exempt-Exempt) investment.",
-      "body": "This means your contributions (up to ₹1.5 lakh per year under Section 80C), the interest you earn, and the final maturity amount are all **completely tax-free**. It's one of the most tax-efficient ways to save for a girl child's future. For more details on Section 80C, refer to the <a href='https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Income Tax Act</a>."
+      "body": "This means your contributions (up to ₹1.5 lakh per year under Section 80C), the interest you earn, and the final maturity amount are all <strong>completely tax-free</strong>. It's one of the most tax-efficient ways to save for a girl child's future. For more details on Section 80C, refer to the <a href='https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Income Tax Act</a>."
     },
     "rules": {
       "title": "SSY Rules: Withdrawals, Revival & Nomination",
       "withdrawal_title": "Partial Withdrawal Rules",
       "withdrawal_body": "Partial withdrawal is allowed only after the girl child turns 18 or has passed the 10th standard, whichever is earlier. The withdrawal is limited to 50% of the balance available at the end of the preceding financial year and can only be used for higher education or marriage expenses.",
-      "withdrawal_example": "<strong>Example:</strong> If the account balance at the end of Year 17 is ₹40 lakh, you can withdraw up to 50% of this amount (₹20 lakh) in Year 18 for educational purposes.",
+      "withdrawal_example": "<strong>Example:</strong> If the account balance at the end of Year 17 is ₹40 lakh, you can withdraw up to 50% of this amount (₹20 lakh) in Year 18 for educational purposes. Always check the exact calculation with your bank/Post Office when initiating withdrawal.",
       "revival_title": "How to Revive an Inactive SSY Account",
       "revival_intro": "If you miss the minimum annual deposit of ₹250, the account becomes inactive. To revive it:",
       "revival_steps": [
@@ -379,9 +379,9 @@
       { "question": "How is SSY interest calculated?", "answer": "SSY compounds annually. For regular annual deposits, calculate each year’s deposit growth until maturity and sum them. Use A = P(1+r)^(years). Our calculator does this automatically for you." },
       { "question": "What is the minimum and maximum deposit in SSY?", "answer": "Minimum deposit is <strong>₹250 per year</strong> and maximum deposit is <strong>₹1.5 lakh per year</strong>." },
       { "question": "When can I withdraw from SSY?", "answer": "Partial withdrawal is permitted after the girl turns 18 for higher education; the account matures at 21 years from opening." },
-      { "question": "How to revive an SSY account — step by step?", "answer": "If you miss the minimum ₹250 deposit, your account becomes inactive. To revive it, visit your bank/Post Office, fill the revival form, and pay the total missed deposits (₹250 per year) plus a small penalty for each missed year. Your account will become active again." },
+      { "question": "How much will ₹10,000 per month in SSY become in 21 years?", "answer": "Assuming an 8.2% annual interest rate, a monthly deposit of ₹10,000 (₹1.2 lakh/year) for 15 years will result in a maturity amount of approximately ₹57.45 lakh after 21 years. You can use our SSY calculator to get an exact year-wise projection for your specific amount." },
       { "question": "How does depositing on the 5th vs 6th affect SSY interest?", "answer": "Interest is calculated on the lowest balance between the 5th and the end of the month. Depositing before the 5th ensures your money earns interest for that entire month. If you deposit after, you lose interest for that month on that specific deposit." },
-      { "question": "Can NRIs open an SSY account?", "answer": "No, only resident Indian parents or legal guardians can open an SSY account for a girl child. If the girl child acquires NRI status after the account is opened, the account may be closed prematurely." },
+      { "question": "How to revive an SSY account — step by step?", "answer": "If you miss the minimum ₹250 deposit, your account becomes inactive. To revive it, visit your bank/Post Office, fill the revival form, and pay the total missed deposits (₹250 per year) plus a small penalty for each missed year. Your account will become active again." },
       { "question": "What are the nomination and transfer rules?", "answer": "You can nominate a beneficiary for the SSY account. The account can also be transferred from one bank/Post Office to another anywhere in India if the family relocates." },
       { "question": "What happens if the parent/guardian dies?", "answer": "In the unfortunate event of the depositor's (parent/guardian's) death, the account can be continued by the other parent or legal guardian. If not possible, the account is typically closed, and the balance with interest is paid to the girl child's nominee or legal heir." }
     ],
@@ -490,5 +490,3 @@
     "results_placeholder": "Search functionality is coming soon."
   }
 }
-
-    

@@ -34,12 +34,11 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   
   return {
     title: "SSY Calculator 2025 — Sukanya Samriddhi Yojana Returns & Maturity",
-    description: "Free SSY Calculator 2025 — estimate Sukanya Samriddhi Yojana maturity, total interest earned and year-wise breakdown (8.2% rate). Compare SSY vs PPF, FD & NPS.",
+    description: "Use our free SSY Calculator 2025 to estimate maturity, total interest and year-wise projection (8.2% current rate). Supports annual & monthly deposits. Export results as CSV.",
     openGraph: {
         title: "SSY Calculator 2025 — Sukanya Samriddhi Yojana Returns",
-        description: "Use our SSY calculator to plan your daughter’s future savings. Updated with current SSY interest rate and downloadable results.",
-        url: pageUrl,
-        siteName: 'BharatSaver',
+        description: "Plan your daughter's future with the SSY calculator. Updated with current SSY interest rate and download/export options.",
+        url: `${siteUrl}/${params.lang}/ssy-calculator`,
         images: [{ 
           url: `/images/calculate-ssy-online.png`,
           width: 1200, 
