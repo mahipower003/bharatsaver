@@ -1,3 +1,4 @@
+
 import {
   Landmark,
   Baby,
@@ -21,7 +22,7 @@ export const calculators: Calculator[] = [
     icon: Landmark,
     link_text: 'Calculate Now',
     lastModified: '2024-07-28',
-    image: '/ppf-calculator-online.png'
+    image: '/images/ppf-calculator-online.png'
   },
   {
     slug: 'ssy-calculator',
