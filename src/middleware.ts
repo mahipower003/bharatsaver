@@ -1,4 +1,3 @@
-
 import { NextResponse, type NextRequest } from 'next/server';
 import { i18nConfig } from './lib/i18n-config';
 import Negotiator from 'negotiator';
@@ -10,6 +9,7 @@ function getLocale(request: NextRequest): string {
 
   const languages = new Negotiator({ headers: negotiatorHeaders }).languages();
 
+  // Find the best match between the user's preferred languages and our available locales
   return (
     languages.find(lang =>
       locales.some(locale => locale.toLowerCase() === lang.toLowerCase())
@@ -43,8 +43,8 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
+  // Matcher ignoring `/_next/` and `/api/`
   matcher: [
-    // Skip all internal paths (_next) and static files (e.g. images, favicon).
-    '/((?!api|_next/static|_next/image|images|favicon.ico|sitemap.xml|robots.txt|.*\\.png$).*)',
+    '/((?!api|_next/static|_next/image|images|favicon.ico|icon.svg|sitemap.xml|robots.txt|.*\\.png$).*)',
   ],
 };
