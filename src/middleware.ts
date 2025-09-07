@@ -19,6 +19,11 @@ function getLocale(request: NextRequest): string {
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
+  // Explicitly check for sitemap.xml and stop middleware processing
+  if (pathname === '/sitemap.xml') {
+    return NextResponse.next();
+  }
+  
   // Paths to ignore from localization
   const ignoredPaths = [
     '/robots.txt',
@@ -56,7 +61,6 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     // Skip all internal paths (_next) and static files (e.g. images, favicon).
-    // Also skip sitemap.xml
-    '/((?!api|_next/static|_next/image|images|favicon.ico|sitemap.xml).*)',
+    '/((?!api|_next/static|_next/image|images|favicon.ico|.*\\.png$).*)',
   ],
 };

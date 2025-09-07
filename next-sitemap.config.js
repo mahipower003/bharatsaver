@@ -48,7 +48,4 @@ module.exports = {
     // The library expects an array of path objects, so we return what we generated.
     return paths;
   },
-  
-  // Exclude the default Next.js sitemap route as we are generating our own
-  exclude: ['/sitemap.xml', '/sitemap.ts', '/[lang]/sitemap.xml', '/[lang]/sitemap.ts'],
 };
