@@ -4,25 +4,29 @@ import { i18nConfig } from '@/lib/i18n-config';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const { locales, defaultLocale } = i18nConfig;
+  const { locales } = i18nConfig;
 
-  const sitemapEntries: MetadataRoute.Sitemap = pages.map((page) => {
-    const slug = page.slug === '/' ? '' : page.slug;
-    
-    const alternates: { [key: string]: string } = {};
+  const sitemapEntries: MetadataRoute.Sitemap = [];
+
+  pages.forEach((page) => {
     locales.forEach((locale) => {
-      alternates[locale] = `${siteUrl}/${locale}${slug}`;
-    });
+      const slug = page.slug === '/' ? '' : page.slug;
+      const alternates: { [key: string]: string } = {};
+      
+      locales.forEach((altLocale) => {
+        alternates[altLocale] = `${siteUrl}/${altLocale}${slug}`;
+      });
 
-    return {
-      url: `${siteUrl}/${defaultLocale}${slug}`,
-      lastModified: new Date(page.lastModified),
-      changeFrequency: page.changefreq,
-      priority: page.priority,
-      alternates: {
-        languages: alternates,
-      },
-    };
+      sitemapEntries.push({
+        url: `${siteUrl}/${locale}${slug}`,
+        lastModified: new Date(page.lastModified),
+        changeFrequency: page.changefreq,
+        priority: page.priority,
+        alternates: {
+          languages: alternates,
+        },
+      });
+    });
   });
 
   return sitemapEntries;
