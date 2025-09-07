@@ -66,7 +66,7 @@ export const calculators: Calculator[] = [
     description: 'Compare tax under Old vs New regimes.',
     icon: FileText,
     link_text: 'Compare Now',
-    lastModified: '202_4-07-23',
+    lastModified: '2024-07-23',
     image: '/images/tax-regime-calculator-online.png'
   },
   {
