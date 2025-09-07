@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" 
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+<xsl:stylesheet version="1.0"
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:sitemap="http://www.sitemaps.org/schemas/sitemap/0.9"
                 xmlns:xhtml="http://www.w3.org/1999/xhtml"
-                exclude-result-prefixes="sitemap">
+                exclude-result-prefixes="sitemap xhtml">
 
   <xsl:output method="html" encoding="UTF-8" indent="yes"/>
 
@@ -14,59 +14,69 @@
         <style type="text/css">
           body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            font-size: 16px;
+            font-size: 14px;
             color: #333;
-            line-height: 1.6;
-            background-color: #f9f9f9;
             margin: 0;
             padding: 20px;
+            background-color: #f8f9fa;
           }
           h1 {
+            color: #222;
             font-size: 24px;
-            color: #1a1a1a;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
             margin-bottom: 20px;
           }
           table {
-            border-collapse: collapse;
             width: 100%;
-            background-color: #fff;
+            border-collapse: collapse;
             box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
           }
           th, td {
-            border: 1px solid #ddd;
             padding: 12px 15px;
             text-align: left;
-            vertical-align: top;
+            border-bottom: 1px solid #ddd;
           }
           th {
-            background-color: #f2f2f2;
-            font-weight: 600;
+            background-color: #4a5568;
+            color: #fff;
+            font-weight: bold;
           }
-          tr:nth-child(even) {
-            background-color: #f9f9f9;
+          tr {
+            background-color: #fff;
+          }
+          tr:hover {
+            background-color: #f1f1f1;
           }
           a {
-            color: #007bff;
+            color: #2563eb;
             text-decoration: none;
           }
           a:hover {
             text-decoration: underline;
           }
-          .alternates-list {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
+          .alternates {
+            font-size: 0.9em;
+            color: #555;
           }
-          .alternates-list li {
-            padding: 2px 0;
+          .alternates a {
+            margin-right: 5px;
+            padding: 2px 4px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            white-space: nowrap;
+          }
+          .alternates a:hover {
+            background-color: #2563eb;
+            color: #fff;
+            border-color: #2563eb;
+            text-decoration: none;
           }
         </style>
       </head>
       <body>
         <h1>XML Sitemap</h1>
-        <p>This sitemap is intended for search engines. It provides a list of all pages available on this site.</p>
+        <p>
+          This is a sitemap file, meant for consumption by search engines. You can find more information about sitemaps at <a href="http://sitemaps.org">sitemaps.org</a>.
+        </p>
         <table>
           <thead>
             <tr>
@@ -74,41 +84,37 @@
               <th>Last Modified</th>
               <th>Change Frequency</th>
               <th>Priority</th>
-              <th>Hreflang Alternates</th>
+              <th>Alternates</th>
             </tr>
           </thead>
           <tbody>
-            <xsl:for-each select="sitemap:urlset/sitemap:url">
-              <tr>
-                <td>
-                  <a href="{sitemap:loc}">
-                    <xsl:value-of select="sitemap:loc"/>
-                  </a>
-                </td>
-                <td>
-                  <xsl:value-of select="sitemap:lastmod"/>
-                </td>
-                <td>
-                  <xsl:value-of select="sitemap:changefreq"/>
-                </td>
-                <td>
-                  <xsl:value-of select="sitemap:priority"/>
-                </td>
-                <td>
-                  <ul class="alternates-list">
-                    <xsl:for-each select="xhtml:link">
-                      <li>
-                        <xsl:value-of select="@hreflang"/>: <a href="{@href}"><xsl:value-of select="@href"/></a>
-                      </li>
-                    </xsl-for-each>
-                  </ul>
-                </td>
-              </tr>
-            </xsl:for-each>
+            <xsl:apply-templates select="sitemap:urlset/sitemap:url"/>
           </tbody>
         </table>
       </body>
     </html>
+  </xsl:template>
+
+  <xsl:template match="sitemap:url">
+    <tr>
+      <td>
+        <a href="{sitemap:loc}"><xsl:value-of select="sitemap:loc"/></a>
+      </td>
+      <td>
+        <xsl:value-of select="substring(sitemap:lastmod,0,11)"/>
+      </td>
+      <td>
+        <xsl:value-of select="sitemap:changefreq"/>
+      </td>
+      <td>
+        <xsl:value-of select="sitemap:priority"/>
+      </td>
+      <td class="alternates">
+        <xsl:for-each select="xhtml:link">
+            <a href="{@href}"><xsl:value-of select="@hreflang"/></a>
+        </xsl:for-each>
+      </td>
+    </tr>
   </xsl:template>
 
 </xsl:stylesheet>
