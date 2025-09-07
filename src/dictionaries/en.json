@@ -85,10 +85,11 @@
     "h1": "Latest Blog Posts"
   },
   "ppf_calculator": {
-    "meta_title": "PPF Calculator (2024) — Calculate PPF Maturity & Returns | BharatSaver",
-    "meta_description": "Free PPF Calculator to estimate your Public Provident Fund maturity amount, total interest, and year-wise growth. Uses the latest interest rates. Plan your long-term savings in minutes.",
-    "h1": "PPF Calculator — Calculate PPF Maturity & Returns (India)",
+    "meta_title": "PPF Calculator (2025) — Calculate PPF Maturity & Returns | BharatSaver",
+    "meta_description": "Free PPF Calculator for India — estimate maturity amount, interest earned, and tax benefits with year-wise growth table. Updated with 2025 PPF rates.",
+    "h1": "PPF Calculator 2025 — Calculate Maturity & Tax-Free Returns (India)",
     "description": "Use our free PPF Calculator to estimate how much you'll get from your Public Provident Fund (PPF) investment over time. Get instant results for maturity amount, total interest earned, and a year-wise breakdown, all using current government interest rates. Try it now to plan your savings with confidence!",
+    "last_updated": "Last updated:",
     "annual_investment_label": "Annual Investment (₹)",
     "annual_investment_placeholder": "e.g., 1,50,000",
     "tenure_label": "Investment Tenure (Years)",
@@ -130,7 +131,7 @@
         "Compare Options: See how PPF fares against FD, NPS, or SIP with real numbers.",
         "Save Time & Effort: Avoid manual formulas and errors — the tool does it for you."
       ],
-      "conclusion": "A PPF calculator is not just a tool; it’s a financial planner that helps you make smarter decisions with confidence."
+      "conclusion": "👉 A PPF calculator is not just a tool; it’s a financial planner that helps you make smarter decisions with confidence."
     },
     "tax_benefits": {
       "title": "Tax Benefits of a PPF Account",
@@ -155,108 +156,101 @@
     "rules": {
       "title": "Official Rates & Rules You Should Know",
       "points": [
-        "Deposit window: ₹500 minimum to ₹1.5 lakh maximum per year.",
-        "Lock-in period: 15 years, extendable in 5-year blocks.",
-        "Partial withdrawals allowed from the 7th financial year; loans possible from the 3rd year."
+        "Maximum annual deposit: ₹1.5 lakh.",
+        "Minimum deposit: ₹500 p.a.",
+        "Lock-in: 15 years (extendable in blocks of 5 years).",
+        "Partial withdrawals: Allowed from the 7th financial year under specific rules.",
+        "Loan facility: Available from the 3rd year. (<a href='https://www.sbi.co.in/web/personal-banking/investments-deposits/govt-schemes/public-provident-fund' target='_blank' rel='noopener noreferrer'>Learn more at SBI</a>)",
+        "Tax treatment: Contributions up to ₹1.5 lakh qualify under Section 80C and interest + maturity are tax-free (EEE). (<a href='https://www.hdfcbank.com/personal/save/accounts/public-provident-fund' target='_blank' rel='noopener noreferrer'>See HDFC Bank details</a>)"
       ],
       "footer_note": "Rates are verified quarterly by the Ministry of Finance, GoI. We automatically update the rate on this page."
     },
     "comparison": {
       "title": "Compare PPF With Other Investment Options",
       "table": {
-        "headers": ["Feature", "PPF", "Fixed Deposit (FD)", "National Pension System (NPS)"],
+        "headers": ["Feature", "PPF", "Fixed Deposit (FD)", "NPS", "Mutual Funds (ELSS)", "Sukanya Samriddhi (SSY)"],
         "rows": [
-          ["Return Type", "Guaranteed (Govt)", "Fixed (Bank-specific)", "Market-linked"],
-          ["Tax Treatment", "Tax-free (EEE)", "Taxable", "Tax benefits but taxable maturity"],
-          ["Lock-in Period", "15 years", "Flexible", "Till retirement"],
-          ["Best For", "Long-term, secure, tax-free savings", "Short/medium-term needs", "Retirement planning"]
+          ["Return Type", "Guaranteed (Govt)", "Fixed (Bank-specific)", "Market-linked", "Market-linked", "Guaranteed (Govt)"],
+          ["Tax Treatment", "Tax-free (EEE)", "Taxable", "Partially Taxable", "LTCG Taxable", "Tax-free (EEE)"],
+          ["Lock-in Period", "15 years", "Flexible", "Till retirement", "3 years", "21 years"],
+          ["Best For", "Long-term, secure, tax-free savings", "Short/medium-term needs", "Retirement planning", "Wealth creation", "Girl child's future"]
         ]
       },
-      "footer_note": "Explore our <a href='/fd-vs-ppf-calculator' class='underline'>FD Calculator</a>, <a href='/nps-calculator' class='underline'>NPS Calculator</a> to compare returns and make informed decisions."
+      "footer_note": "Explore our <a href='/fd-vs-ppf-calculator' class='underline'>FD Calculator</a>, <a href='/nps-calculator' class='underline'>NPS Calculator</a>, and <a href='/ssy-calculator' class='underline'>SSY Calculator</a> to compare returns and make informed decisions."
     },
     "faq_title": "Frequently Asked Questions",
     "faqs": [
       {
-        "question": "What is the current PPF interest rate, and when was it last updated?",
-        "answer": "The current interest is typically around 7.1%, set quarterly by the Government of India. This page shows the most recent rate and update date."
+        "question": "What is the current PPF interest rate?",
+        "answer": "The PPF rate changes quarterly. This calculator auto-fills the current rate. We last checked it against the official <a href='https://www.indiapost.gov.in/Financial/pages/content/post-office-saving-schemes.aspx' target='_blank' rel='noopener noreferrer'>Ministry of Finance</a> announcements."
       },
       {
-        "question": "Can I deposit monthly or annually?",
-        "answer": "Yes. Both options are supported by this calculator. Monthly deposits allow smaller savings throughout the year, while annual deposits let you invest a lump sum."
+        "question": "When does a deposit start earning interest?",
+        "answer": "Deposits made before the 5th of a month earn interest for that month. This is a crucial detail for maximizing returns."
       },
-      {
-        "question": "Deposits made after the 5th of the month — do they earn interest?",
-        "answer": "No. Deposits must be made before the 5th to earn interest for that month. This detail can add substantial interest over time."
-      },
-      {
-        "question": "When can I withdraw from PPF?",
-        "answer": "You can make a partial withdrawal after the 7th financial year. Complete withdrawals are allowed after maturity (15 years). Loans are available from the 3rd year."
-      },
-      {
-        "question": "Is the maturity amount from PPF tax-free?",
-        "answer": "Yes. PPF offers EEE benefits — contributions (under ₹1.5 lakh), interest, and maturity amount are all exempt from tax."
-      },
-      {
-        "question": "Can NRIs invest in PPF?",
-        "answer": "No. NRIs cannot open a new PPF account. Existing accounts held before attaining NRI status can be continued under special conditions."
-      }
+      { "question": "What is the maximum deposit allowed in PPF?", "answer": "You can deposit a maximum of ₹1,50,000 in a single financial year." },
+      { "question": "Can I extend my PPF after 15 years?", "answer": "Yes, you can extend your PPF account in blocks of 5 years with or without making further contributions." },
+      { "question": "Can I open multiple PPF accounts?", "answer": "No, an individual can only open one PPF account in their name." },
+      { "question": "How is PPF interest calculated monthly?", "answer": "Interest is calculated on the lowest balance between the close of the fifth day and the last day of every month. However, the interest is credited to the account only at the end of the financial year." },
+      { "question": "Is there any penalty for missed deposits?", "answer": "If you fail to deposit the minimum amount of ₹500 in a financial year, the account becomes inactive. You can reactivate it by paying a penalty of ₹50 per year of inactivity, along with the minimum deposit for each inactive year." },
+      { "question": "How is PPF different from Sukanya Samriddhi Yojana (SSY)?", "answer": "PPF is a general long-term savings scheme for any resident Indian, while SSY is specifically designed for the financial security of a girl child. SSY typically offers a slightly higher interest rate but has stricter eligibility criteria." }
     ],
     "final_thoughts": {
       "title": "Final Thoughts & Smart Savings Tips",
       "body": "Your PPF maturity goal is within reach. Whether you're saving for your child's education or retirement, this calculator gives a clear roadmap. Combine regular contributions and early deposits (before the 5th) to maximize returns, all while gaining tax benefits.",
-      "next_action": "Next action: Try the PPF Calculator, see your projected maturity date, and use our downloadable PPF planning worksheet to track your annual deposits. Happy saving!"
+      "next_action": "Next action: Try the PPF Calculator, see your projected maturity date, and <a href='#' class='underline'>download our PPF planning worksheet</a> to track your annual deposits. Happy saving!"
     }
   },
   "ssy_calculator": {
-    "meta_title": "SSY Calculator (2024) - Sukanya Samriddhi Yojana | BharatSaver",
-    "meta_description": "Use our free Sukanya Samriddhi Yojana (SSY) Calculator to calculate returns, maturity amount, and tax benefits for your daughter's future. Uses latest interest rates.",
+    "meta_title": "SSY Calculator (2025) - Sukanya Samriddhi Yojana | BharatSaver",
+    "meta_description": "Use our free Sukanya Samriddhi Yojana (SSY) Calculator to calculate returns, maturity amount, and tax benefits for your daughter's future. Uses latest 2025 interest rates.",
     "h1": "Sukanya Samriddhi Yojana (SSY) Calculator"
   },
   "nps_calculator": {
-    "meta_title": "NPS Calculator (2024) - National Pension System | BharatSaver",
-    "meta_description": "Use our free National Pension System (NPS) Calculator to estimate your retirement corpus, monthly pension, and tax benefits in India. Plan for a secure retirement.",
+    "meta_title": "NPS Calculator (2025) - National Pension System | BharatSaver",
+    "meta_description": "Use our free National Pension System (NPS) Calculator to estimate your retirement corpus, monthly pension, and tax benefits in India. Plan for a secure retirement in 2025.",
     "h1": "NPS (National Pension System) Calculator"
   },
   "apy_calculator": {
-    "meta_title": "APY Calculator (2024) - Atal Pension Yojana | BharatSaver",
-    "meta_description": "Our free Atal Pension Yojana (APY) Calculator helps you find your required monthly contribution for a desired pension amount. Secure your future with a government-backed pension.",
+    "meta_title": "APY Calculator (2025) - Atal Pension Yojana | BharatSaver",
+    "meta_description": "Our free Atal Pension Yojana (APY) Calculator helps you find your required monthly contribution for a desired pension amount. Secure your future with a government-backed pension. Updated for 2025.",
     "h1": "Atal Pension Yojana (APY) Calculator"
   },
   "fd_vs_ppf_calculator": {
-    "meta_title": "FD vs PPF Returns Calculator (2024) | BharatSaver",
-    "meta_description": "Compare returns on Fixed Deposit (FD) lump-sum investments vs recurring Public Provident Fund (PPF) contributions with our free calculator. Make an informed investment decision.",
+    "meta_title": "FD vs PPF Returns Calculator (2025) | BharatSaver",
+    "meta_description": "Compare returns on Fixed Deposit (FD) lump-sum investments vs recurring Public Provident Fund (PPF) contributions with our free calculator. Make an informed investment decision for 2025.",
     "h1": "FD vs PPF Returns Calculator"
   },
   "tax_regime_calculator": {
-    "meta_title": "Old vs New Tax Regime Calculator (AY 2024-25) | BharatSaver",
-    "meta_description": "Use our free calculator to compare your income tax liability under the Old and New tax regimes in India and find out which is better for you for AY 2024-25.",
+    "meta_title": "Old vs New Tax Regime Calculator (AY 2025-26) | BharatSaver",
+    "meta_description": "Use our free calculator to compare your income tax liability under the Old and New tax regimes in India and find out which is better for you for AY 2025-26.",
     "h1": "Old vs New Tax Regime Calculator"
   },
   "retirement_corpus_calculator": {
-    "meta_title": "Retirement Corpus Calculator for India (2024) | BharatSaver",
-    "meta_description": "Plan for your retirement by calculating the total corpus required for your post-retirement life based on your financial goals. Use our free retirement calculator.",
+    "meta_title": "Retirement Corpus Calculator for India (2025) | BharatSaver",
+    "meta_description": "Plan for your retirement by calculating the total corpus required for your post-retirement life based on your financial goals. Use our free 2025 retirement calculator.",
     "h1": "Retirement Corpus Calculator"
   },
   "loan_optimization_calculator": {
     "meta_title": "Loan Optimizer & EMI Calculator (Prepayment) | BharatSaver",
-    "meta_description": "Use our free Loan Optimization Calculator to calculate your EMI and see how extra payments (prepayment) can help you reduce your loan tenure and save interest.",
+    "meta_description": "Use our free Loan Optimization Calculator to calculate your EMI and see how extra payments (prepayment) can help you reduce your loan tenure and save interest. Updated for 2025.",
     "h1": "Loan Optimization Calculator"
   },
   "mutual_fund_overlap_calculator": {
-    "meta_title": "Mutual Fund Overlap Calculator India (2024) | BharatSaver",
-    "meta_description": "Check for portfolio overlap in your mutual funds to ensure proper diversification. Use our free Mutual Fund Overlap Calculator for Indian funds.",
+    "meta_title": "Mutual Fund Overlap Calculator India (2025) | BharatSaver",
+    "meta_description": "Check for portfolio overlap in your mutual funds to ensure proper diversification. Use our free Mutual Fund Overlap Calculator for Indian funds for 2025.",
     "h1": "Mutual Fund Overlap Calculator"
   },
   "ups_pension_calculator": {
-    "meta_title": "UPS Pension Scheme Calculator (2024) | BharatSaver",
-    "meta_description": "Estimate your potential pension amount under the Universal Pension Scheme (UPS) with our easy-to-use calculator. Plan for your future.",
+    "meta_title": "UPS Pension Scheme Calculator (2025) | BharatSaver",
+    "meta_description": "Estimate your potential pension amount under the Universal Pension Scheme (UPS) with our easy-to-use calculator. Plan for your future in 2025.",
     "h1": "UPS Pension Scheme Calculator"
   },
   "scheme_selector": {
     "title": "Investment Scheme Selector",
     "description": "Answer a few questions to find the best investment scheme for your needs.",
-    "meta_title": "AI Investment Scheme Selector Quiz | BharatSaver",
-    "meta_description": "Use our AI-powered Scheme Selector Quiz to get a recommendation for the best investment scheme (PPF, SSY, NPS, APY, FD) for you.",
+    "meta_title": "AI Investment Scheme Selector Quiz (2025) | BharatSaver",
+    "meta_description": "Use our AI-powered Scheme Selector Quiz to get a recommendation for the best investment scheme (PPF, SSY, NPS, APY, FD) for you in 2025.",
     "h1": "AI Scheme Selector Quiz",
     "age_label": "Your Age",
     "income_label": "Current Annual Income (in ₹)",

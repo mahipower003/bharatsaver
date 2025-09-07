@@ -70,6 +70,10 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 export default async function PpfCalculatorPage({ params }: { params: { lang: Locale }}) {
   const dictionary = await getDictionary(params.lang, ['ppf_calculator']);
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
+  const currentDate = new Date();
+  const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const lastUpdated = `${monthNames[currentDate.getMonth()]} ${currentDate.getFullYear()}`;
+
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -95,12 +99,14 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
           <p className="mt-4 text-lg text-muted-foreground">
             {dictionary.ppf_calculator.description}
           </p>
+          <p className="text-sm text-muted-foreground mt-2">{dictionary.ppf_calculator.last_updated} {lastUpdated}</p>
         </div>
+        
         <PpfCalculator dictionary={dictionary.ppf_calculator} />
 
         <Card className="mt-12 shadow-lg">
           <CardHeader>
-            <CardTitle className="text-2xl">{dictionary.ppf_calculator.how_to_use.title}</CardTitle>
+            <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.how_to_use.title}</h2>
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none">
             <ul>
@@ -113,7 +119,7 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
 
         <Card className="mt-12 shadow-lg">
           <CardHeader>
-            <CardTitle className="text-2xl">{dictionary.ppf_calculator.advantages.title}</CardTitle>
+            <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.advantages.title}</h2>
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none">
             <p>{dictionary.ppf_calculator.advantages.intro}</p>
@@ -125,13 +131,13 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
                 </li>
               ))}
             </ul>
-            <p className="mt-4">{dictionary.ppf_calculator.advantages.conclusion}</p>
+            <p className="mt-4" dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.advantages.conclusion }}></p>
           </CardContent>
         </Card>
 
         <Card className="mt-12 shadow-lg">
           <CardHeader>
-            <CardTitle className="text-2xl">{dictionary.ppf_calculator.example.title}</CardTitle>
+            <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.example.title}</h2>
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none">
             <p>{dictionary.ppf_calculator.example.scenario}</p>
@@ -146,7 +152,7 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
         
         <Card className="mt-12 shadow-lg">
           <CardHeader>
-            <CardTitle className="text-2xl">{dictionary.ppf_calculator.tax_benefits.title}</CardTitle>
+            <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.tax_benefits.title}</h2>
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none">
             <p>{dictionary.ppf_calculator.tax_benefits.intro}</p>
@@ -165,21 +171,21 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
         
         <Card className="mt-12 shadow-lg">
           <CardHeader>
-            <CardTitle className="text-2xl">{dictionary.ppf_calculator.rules.title}</CardTitle>
+            <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.rules.title}</h2>
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none">
              <ul>
                 {dictionary.ppf_calculator.rules.points.map((point: string, index: number) => (
-                    <li key={index}>{point}</li>
+                    <li key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
                 ))}
             </ul>
-            <p>{dictionary.ppf_calculator.rules.footer_note}</p>
+            <p dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.rules.footer_note }}></p>
           </CardContent>
         </Card>
 
         <Card className="mt-12 shadow-lg">
             <CardHeader>
-                <CardTitle className="text-2xl">{dictionary.ppf_calculator.comparison.title}</CardTitle>
+                <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.comparison.title}</h2>
             </CardHeader>
             <CardContent>
                 <Table>
@@ -220,11 +226,11 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
 
         <Card className="mt-12 shadow-lg bg-primary/10 border-primary/20">
             <CardHeader>
-              <CardTitle className="text-2xl">{dictionary.ppf_calculator.final_thoughts.title}</CardTitle>
+              <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.final_thoughts.title}</h2>
             </CardHeader>
             <CardContent className="prose dark:prose-invert max-w-none">
               <p>{dictionary.ppf_calculator.final_thoughts.body}</p>
-              <p>{dictionary.ppf_calculator.final_thoughts.next_action}</p>
+              <p dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.final_thoughts.next_action }}></p>
             </CardContent>
         </Card>
       </div>
