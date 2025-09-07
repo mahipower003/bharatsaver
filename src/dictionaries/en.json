@@ -85,11 +85,11 @@
     "h1": "Latest Blog Posts"
   },
   "ppf_calculator": {
-    "title": "PPF Calculator 2025",
-    "description": "Calculate the returns on your Public Provident Fund (PPF) investment with our easy-to-use calculator.",
-    "meta_title": "PPF Calculator 2025 – Calculate Maturity & Interest | BharatSaver",
-    "meta_description": "Use our free PPF Calculator with the latest interest rates to estimate your maturity amount, yearly returns, and tax savings on your PPF investment.",
-    "h1": "PPF Calculator 2025 – Know Your Maturity & Returns",
+    "title": "PPF Calculator",
+    "description": "Use our free PPF Calculator to estimate your maturity amount, total interest earned, and year-wise breakdown for Public Provident Fund (PPF). This tool supports annual and monthly deposits and uses the current government PPF interest rate (auto-updated). Try it now and plan your long-term savings in minutes.",
+    "meta_title": "PPF Calculator — Calculate PPF Maturity & Returns (India) | BharatSaver",
+    "meta_description": "Use our free PPF Calculator to estimate your maturity amount, total interest earned, and year-wise breakdown for Public Provident Fund (PPF). Supports annual/monthly deposits & current interest rates.",
+    "h1": "PPF Calculator — Calculate PPF Maturity & Returns (India)",
     "annual_investment_label": "Annual Investment (₹)",
     "annual_investment_placeholder": "e.g., 150000",
     "tenure_label": "Investment Tenure (Years)",
@@ -110,27 +110,64 @@
     "table_amount_invested": "Amount Invested",
     "table_interest_earned": "Interest Earned",
     "table_closing_balance": "Closing Balance",
-    "explanation_title": "How is the PPF Return Calculated?",
-    "explanation_p1": "The PPF calculator works by compounding the interest on a yearly basis. The interest is calculated on the principal amount, which includes your annual contributions and the accumulated interest from previous years. The formula uses the opening balance at the start of the year, adds your investment for that year, and then calculates the interest based on the specified rate.",
-    "explanation_p2": "The result is a powerful, tax-free investment vehicle where your money grows exponentially over time. The 'Total Interest Earned' shows the power of compounding, often exceeding the 'Total Investment' you make over the long term.",
-    "faq_title": "Frequently Asked Questions about PPF",
+    "quick_start": {
+        "title": "Quick Start — How to Use the PPF Calculator",
+        "steps": [
+            "Enter the deposit amount (monthly or yearly).",
+            "Choose deposit frequency (monthly/yearly).",
+            "Enter the tenure (default 15 years; you can extend).",
+            "Interest rate: auto-filled with the current government PPF rate — you can override it.",
+            "Click Calculate to see: maturity amount, total invested, interest earned, and year-wise table."
+        ]
+    },
+    "example": {
+        "title": "Example — PPF Maturity Calculation (Step-by-step)",
+        "scenario": "Scenario: You invest ₹1,50,000 per year for 15 years at 7.1% interest.",
+        "total_invested": "₹22,50,000",
+        "interest_earned": "≈ ₹18,18,209",
+        "maturity_amount": "₹40,68,209"
+    },
+    "rules": {
+        "title": "PPF Rules — What Every Investor Should Know",
+        "points": [
+            "Maximum annual deposit: ₹1.5 lakh.",
+            "Minimum deposit: ₹500 p.a.",
+            "Lock-in: 15 years (extendable in blocks of 5 years).",
+            "Partial withdrawals: Allowed from the 7th financial year under specific rules.",
+            "Loan facility: Available from the 3rd year.",
+            "Tax treatment: Contributions up to ₹1.5 lakh qualify under Section 80C and interest + maturity are tax-free (EEE)."
+        ]
+    },
+    "comparison": {
+        "title": "PPF vs FD vs NPS — Quick Comparison",
+        "table": {
+            "headers": ["Feature", "PPF", "FD", "NPS"],
+            "rows": [
+                ["Return Type", "Guaranteed (govt-set)", "Fixed (bank)", "Market-linked"],
+                ["Taxability", "Tax-free (interest & maturity)", "Taxable", "Tax benefits available"],
+                ["Lock-in", "15 years", "Flexible", "Till retirement (usually)"],
+                ["Ideal for", "Long-term tax-free savings", "Short/medium-term", "Retirement corpus"]
+            ]
+        }
+    },
+    "faq_title": "Frequently Asked Questions",
     "faqs": [
-      {
-        "question": "What is the minimum and maximum amount I can invest in PPF?",
-        "answer": "You can invest a minimum of ₹500 and a maximum of ₹1,50,000 in a financial year."
-      },
-      {
-        "question": "Is the interest earned on PPF taxable?",
-        "answer": "No, the interest earned and the maturity amount are completely tax-free under Section 10(11) of the Income Tax Act."
-      },
-      {
-        "question": "Can I take a loan against my PPF account?",
-        "answer": "Yes, you can take a loan against your PPF account from the 3rd to the 6th financial year of opening the account."
-      },
-      {
-        "question": "What happens after the 15-year maturity period?",
-        "answer": "After 15 years, you can either withdraw the entire amount, extend the account for blocks of 5 years with new contributions, or extend it without making new contributions."
-      }
+        {
+            "question": "What is the current PPF interest rate?",
+            "answer": "The PPF rate changes quarterly. The calculator auto-fills the current rate; you can override it."
+        },
+        {
+            "question": "Can I deposit monthly or yearly?",
+            "answer": "Yes. PPF accepts monthly or annual deposits — both are supported by this calculator."
+        },
+        {
+            "question": "When does a deposit start earning interest?",
+            "answer": "Deposits made before the 5th of a month earn interest for that month. This detail is highlighted on several top calculators."
+        },
+        {
+            "question": "Can I withdraw before 15 years?",
+            "answer": "Partial withdrawal rules apply from the seventh financial year; full withdrawal normally after maturity (15 years)."
+        }
     ]
   },
   "ssy_calculator": {

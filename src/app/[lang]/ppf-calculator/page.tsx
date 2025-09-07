@@ -1,10 +1,10 @@
-
 import { PpfCalculator } from "@/components/calculators/PpfCalculator";
 import { getDictionary } from "@/lib/dictionaries";
 import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -76,6 +76,8 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
       { '@type': 'ListItem', position: 3, name: 'PPF Calculator', item: `${siteUrl}/${params.lang}/ppf-calculator` },
     ],
   };
+  
+  const comparisonData = dictionary.ppf_calculator.comparison.table;
 
   return (
     <div className="py-12">
@@ -95,12 +97,68 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
 
         <Card className="mt-12 shadow-lg">
           <CardHeader>
-            <CardTitle>{dictionary.ppf_calculator.explanation_title}</CardTitle>
+            <CardTitle>{dictionary.ppf_calculator.quick_start.title}</CardTitle>
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none">
-            <p>{dictionary.ppf_calculator.explanation_p1}</p>
-            <p>{dictionary.ppf_calculator.explanation_p2}</p>
+            <ul>
+                {dictionary.ppf_calculator.quick_start.steps.map((step: string, index: number) => (
+                    <li key={index}>{step}</li>
+                ))}
+            </ul>
           </CardContent>
+        </Card>
+
+        <Card className="mt-12 shadow-lg">
+          <CardHeader>
+            <CardTitle>{dictionary.ppf_calculator.example.title}</CardTitle>
+          </CardHeader>
+          <CardContent className="prose dark:prose-invert max-w-none">
+            <p>{dictionary.ppf_calculator.example.scenario}</p>
+            <ul>
+                <li><strong>{dictionary.ppf_calculator.total_investment}:</strong> {dictionary.ppf_calculator.example.total_invested}</li>
+                <li><strong>{dictionary.ppf_calculator.total_interest}:</strong> {dictionary.ppf_calculator.example.interest_earned}</li>
+                <li><strong>{dictionary.ppf_calculator.maturity_value}:</strong> {dictionary.ppf_calculator.example.maturity_amount}</li>
+            </ul>
+          </CardContent>
+        </Card>
+        
+        <Card className="mt-12 shadow-lg">
+          <CardHeader>
+            <CardTitle>{dictionary.ppf_calculator.rules.title}</CardTitle>
+          </CardHeader>
+          <CardContent className="prose dark:prose-invert max-w-none">
+             <ul>
+                {dictionary.ppf_calculator.rules.points.map((point: string, index: number) => (
+                    <li key={index}>{point}</li>
+                ))}
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card className="mt-12 shadow-lg">
+            <CardHeader>
+                <CardTitle>{dictionary.ppf_calculator.comparison.title}</CardTitle>
+            </CardHeader>
+            <CardContent>
+                <Table>
+                    <TableHeader>
+                        <TableRow>
+                            {comparisonData.headers.map((header: string, index: number) => (
+                                <TableHead key={index}>{header}</TableHead>
+                            ))}
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                        {comparisonData.rows.map((row: string[], rowIndex: number) => (
+                            <TableRow key={rowIndex}>
+                                {row.map((cell: string, cellIndex: number) => (
+                                    <TableCell key={cellIndex}>{cell}</TableCell>
+                                ))}
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+            </CardContent>
         </Card>
 
         <div className="mt-12">
