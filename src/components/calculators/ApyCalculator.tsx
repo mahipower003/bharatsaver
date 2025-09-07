@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -5,7 +6,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
-import { Loader2, Download, Shield, Twitter, Printer, IndianRupee } from 'lucide-react';
+import { Loader2, Shield, Twitter, Printer, IndianRupee } from 'lucide-react';
 import { apyPremiums } from '@/data/apy-chart';
 
 import { Button } from '@/components/ui/button';

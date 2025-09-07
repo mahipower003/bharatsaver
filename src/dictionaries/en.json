@@ -86,7 +86,7 @@
     "subtitle": "Explore our latest calculators, guides, and financial insights."
   },
   "ppf_calculator": {
-    "meta_title": "PPF Calculator India (2025) — Calculate PPF Maturity Online | BharatSaver",
+    "meta_title": "PPF Calculator 2025 — Calculate PPF Maturity Online (India)",
     "meta_description": "Free PPF Calculator for 2025: Instantly estimate PPF maturity, interest, and tax savings (EEE). Includes year-wise chart, extension rules, and comparison with FD, NPS, and SSY.",
     "h1": "PPF Calculator 2025 — Calculate Maturity & Tax-Free Returns (India)",
     "description": "Use our free PPF Calculator to estimate how much you'll get from your Public Provident Fund (PPF) investment over time. Get instant results for maturity amount, total interest earned, and a year-wise breakdown, all using current government interest rates. Try it now to plan your savings with confidence!",
@@ -457,7 +457,8 @@
           "title": "Tier II (Optional Account)",
           "body": "A flexible, voluntary savings account with no lock-in, but also no extra tax benefit."
         }
-      ]
+      ],
+      "footer": "It combines tax savings, market-linked returns, and disciplined investment to build a substantial retirement fund."
     },
     "how_it_works": {
       "title": "How the NPS Calculator Works (Formula & Example)",
@@ -486,7 +487,7 @@
       "disclaimer": "These numbers are for illustration. Real-world returns vary and annuity rates change. Always check live annuity quotes from providers before committing."
     },
     "tax_benefits": {
-      "title": "NPS Tax Benefits 2025: How to Save Tax with NPS",
+      "title": "NPS Tax Benefits 2025: Section 80C & 80CCD(1B)",
       "intro": "NPS offers some of the best tax-saving opportunities for retirement planning:",
       "points": [
         "<strong>Section 80C:</strong> Up to ₹1.5 lakh deduction for your contributions.",
@@ -547,7 +548,7 @@
       },
       {
         "question": "What tax benefits does NPS offer for 2025?",
-        "answer": "NPS provides tax deductions under Section 80C (up to ₹1.5 lakh) and an additional exclusive deduction of ₹50,000 under Section 80CCD(1B). Employer contributions are also deductible. Source: <a href='https://incometaxindia.gov.in/Pages/tools/deduction-under-section-80c.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Income Tax Act</a>"
+        "answer": "NPS provides tax deductions under Section 80C (up to ₹1.5 lakh) and an additional exclusive deduction of ₹50,000 under Section 80CCD(1B). Employer contributions are also deductible under Section 80CCD(2). Source: <a href='https://incometaxindia.gov.in/Pages/tools/deduction-under-section-80c.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Income Tax Act</a>."
       },
       {
         "question": "Can NRIs invest in NPS?",
@@ -589,7 +590,7 @@
     },
     "premium_chart": {
       "title": "APY Premium Chart (by Age & Pension Amount)",
-      "description": "This chart shows the fixed monthly premium based on your entry age and desired pension amount. The earlier you start, the lower your premium.",
+      "description": "This chart shows the fixed monthly premium based on your entry age and desired pension amount, as per the official <a href='https://www.pfrda.org.in/my-apy/apy-chart' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA premium table</a>. The earlier you start, the lower your premium.",
       "age_header": "Entry Age",
       "years_label": "Years"
     },
@@ -614,7 +615,7 @@
     "faqs": [
       {
         "question": "What is Atal Pension Yojana (APY)?",
-        "answer": "Atal Pension Yojana (APY) is a government-backed pension scheme providing a guaranteed monthly pension of ₹1,000–₹5,000 to eligible subscribers after age 60. (Source: PFRDA)."
+        "answer": "Atal Pension Yojana (APY) is a government-backed pension scheme providing a guaranteed monthly pension of ₹1,000–₹5,000 to eligible subscribers after age 60. (Source: <a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA</a>)."
       },
       {
         "question": "Who is eligible for APY?",
@@ -622,11 +623,11 @@
       },
       {
         "question": "How is the APY premium calculated?",
-        "answer": "Premiums depend on subscriber age and desired pension amount. Use the APY Calculator on this page to compute the exact monthly contribution."
+        "answer": "Premiums are fixed based on subscriber age and desired pension amount, as per the official government chart. Use the APY Calculator on this page to find the exact monthly contribution for your age."
       },
       {
         "question": "Can I withdraw from APY before age 60?",
-        "answer": "Withdrawals are allowed only under specified conditions like terminal illness and may involve penalties. Full corpus is available at age 60."
+        "answer": "Withdrawals are allowed only under specified conditions like terminal illness and may involve penalties. The full corpus is available at age 60."
       },
       {
         "question": "What happens to APY corpus on the subscriber’s death?",

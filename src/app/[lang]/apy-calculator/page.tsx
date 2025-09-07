@@ -115,7 +115,7 @@ export default async function ApyCalculatorPage({ params }: { params: { lang: Lo
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="mb-4 text-muted-foreground">{dictionary.apy_calculator.premium_chart.description}</p>
+            <p className="mb-4 text-muted-foreground" dangerouslySetInnerHTML={{__html: dictionary.apy_calculator.premium_chart.description}}></p>
             <ApyPremiumChart dictionary={dictionary.apy_calculator.premium_chart} />
           </CardContent>
         </Card>
