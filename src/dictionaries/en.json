@@ -111,6 +111,7 @@
     "table_amount_invested": "Amount Invested",
     "table_interest_earned": "Interest Earned",
     "table_closing_balance": "Closing Balance",
+    "title": "PPF Calculator",
     "how_to_use": {
       "title": "How to Use the PPF Calculator",
       "steps": [

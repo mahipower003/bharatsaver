@@ -203,12 +203,14 @@ export function PpfCalculator({ dictionary }: PpfCalculatorProps) {
       <Card className="shadow-lg">
         <CardHeader>
           <div className="flex justify-between items-start">
-            <CardTitle className="flex items-center gap-2 text-xl">
-              <Landmark className="h-6 w-6 text-primary" />
-              <span>{dictionary.title}</span>
-            </CardTitle>
+            <div>
+                <h2 className="flex items-center gap-2 text-xl font-bold">
+                    <Landmark className="h-6 w-6 text-primary" />
+                    <span>{dictionary.title}</span>
+                </h2>
+            </div>
             {lastUpdated && (
-              <p className="text-sm text-muted-foreground mt-2">{dictionary.last_updated} {lastUpdated}</p>
+              <p className="text-sm text-muted-foreground mt-1 whitespace-nowrap">{dictionary.last_updated} {lastUpdated}</p>
             )}
           </div>
         </CardHeader>
