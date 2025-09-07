@@ -277,6 +277,7 @@
       "title": "How SSY interest is calculated (formula & example)"
     },
     "example": {
+      "formula_title": "The Formula",
       "intro": "Because SSY compounds <strong>annually</strong>, we use `n = 1`. For regular annual deposits, each deposit earns interest for the remaining years until maturity.",
       "formula": "A = P × (1 + r/n)^(n × t)",
       "scenario": {
@@ -291,6 +292,7 @@
         "result": "Maturity value = sum_{k=0}^{14} P × (1 + r)^(T − k) <br/> <strong>Maturity value ≈ ₹7,182,119.17</strong> <br/> <strong>Total invested = ₹1,50,000 × 15 = ₹2,250,000</strong> <br/> <strong>Total interest earned ≈ ₹7,182,119.17 − ₹2,250,000 = ₹4,932,119.17</strong>"
       },
       "snapshot_title": "Snapshot (selected years):",
+      "timing_note": "<strong>Note on timing:</strong> Our example assumes deposits are made at the *start of each financial year* (best-case). If you deposit later in the year (e.g., mid-year or monthly later in the month), the maturity will be slightly lower. The calculator provides both annual and monthly modes — choose the one that matches your deposit schedule.",
       "table": {
         "headers": ["Year", "Balance (end of year)"],
         "rows": [
@@ -327,6 +329,27 @@
         "<strong>Keep documents handy</strong> — PAN, Aadhaar for KYC and faster online account opening."
       ]
     },
+    "tax_benefits": {
+      "title": "Tax Benefits of SSY (EEE Status)",
+      "intro": "Like PPF, the Sukanya Samriddhi Yojana (SSY) is an EEE (Exempt-Exempt-Exempt) investment.",
+      "body": "This means your contributions (up to ₹1.5 lakh per year under Section 80C), the interest you earn, and the final maturity amount are all **completely tax-free**. It's one of the most tax-efficient ways to save for a girl child's future. For more details on Section 80C, refer to the <a href='https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Income Tax Act</a>."
+    },
+    "rules": {
+      "title": "SSY Rules: Withdrawals, Revival & Nomination",
+      "withdrawal_title": "Partial Withdrawal Rules",
+      "withdrawal_body": "Partial withdrawal is allowed only after the girl child turns 18 or has passed the 10th standard, whichever is earlier. The withdrawal is limited to 50% of the balance available at the end of the preceding financial year and can only be used for higher education or marriage expenses.",
+      "withdrawal_example": "<strong>Example:</strong> If the account balance at the end of Year 17 is ₹40 lakh, you can withdraw up to 50% of this amount (₹20 lakh) in Year 18 for educational purposes.",
+      "revival_title": "How to Revive an Inactive SSY Account",
+      "revival_intro": "If you miss the minimum annual deposit of ₹250, the account becomes inactive. To revive it:",
+      "revival_steps": [
+        "Visit your bank or Post Office branch where the account is held.",
+        "Submit a revival request letter.",
+        "Pay the minimum deposit for each missed year (e.g., ₹500 for 2 missed years).",
+        "Pay the penalty of ₹50 for each year of inactivity."
+      ],
+      "nomination_title": "Nomination and Succession",
+      "nomination_body": "While the girl child is the beneficiary, the parent/guardian operates the account. In the unfortunate event of the depositor's (parent/guardian's) death, the account can be continued by the other parent or a new legal guardian. If not possible, the account is typically closed, and the balance with interest is paid to the girl child's nominee or legal heir."
+    },
     "how_to_open": {
       "title": "How to open an SSY account & documents needed",
       "intro": "You can open SSY at <strong>Post Office</strong> or selected <strong>banks</strong> (SBI, HDFC, ICICI). Typical steps:",
@@ -352,42 +375,15 @@
     },
     "faq_title": "Frequently Asked Questions (FAQ)",
     "faqs": [
-        {
-            "question": "What is the current SSY interest rate for 2025?",
-            "answer": "The SSY interest rate for Apr–Jun 2025 is <strong>8.2%</strong> (set quarterly by the Government of India)."
-        },
-        {
-            "question": "How is SSY interest calculated?",
-            "answer": "SSY compounds annually. For regular annual deposits, calculate each year’s deposit growth until maturity and sum them. Use A = P(1+r)^(years)."
-        },
-        {
-            "question": "What is the minimum and maximum deposit in SSY?",
-            "answer": "Minimum deposit is <strong>₹250 per year</strong> and maximum deposit is <strong>₹1.5 lakh per year</strong>."
-        },
-        {
-            "question": "When can I withdraw from SSY?",
-            "answer": "Partial withdrawal permitted after the girl turns 18 for higher education; account matures at 21 years from opening."
-        },
-        {
-            "question": "How to revive an SSY account — step by step?",
-            "answer": "If you miss the minimum ₹250 deposit, your account becomes inactive. To revive it, visit your bank/Post Office, fill the revival form, and pay the total missed deposits (₹250 per year) plus a small penalty for each missed year. Your account will become active again."
-        },
-        {
-            "question": "How does depositing on the 5th vs 6th affect SSY interest?",
-            "answer": "Interest is calculated on the lowest balance between the 5th and the end of the month. Depositing before the 5th ensures your money earns interest for that entire month. If you deposit after, you lose interest for that month on that specific deposit."
-        },
-        {
-            "question": "Can NRIs open an SSY account?",
-            "answer": "No, only resident Indian parents or legal guardians can open an SSY account for a girl child. If the girl child acquires NRI status after the account is opened, the account may be closed prematurely."
-        },
-        {
-            "question": "What are the nomination and transfer rules?",
-            "answer": "You can nominate a beneficiary for the SSY account. The account can also be transferred from one bank/Post Office to another anywhere in India if the family relocates."
-        },
-        {
-            "question": "What happens if the parent/guardian dies?",
-            "answer": "In the unfortunate event of the depositor's (parent/guardian's) death, the account can be continued by the other parent or legal guardian. If not possible, the account is typically closed, and the balance with interest is paid to the girl child's nominee or legal heir."
-        }
+      { "question": "What is the current SSY interest rate for 2025?", "answer": "The SSY interest rate for Apr–Jun 2025 is <strong>8.2%</strong> (set quarterly by the Government of India)." },
+      { "question": "How is SSY interest calculated?", "answer": "SSY compounds annually. For regular annual deposits, calculate each year’s deposit growth until maturity and sum them. Use A = P(1+r)^(years). Our calculator does this automatically for you." },
+      { "question": "What is the minimum and maximum deposit in SSY?", "answer": "Minimum deposit is <strong>₹250 per year</strong> and maximum deposit is <strong>₹1.5 lakh per year</strong>." },
+      { "question": "When can I withdraw from SSY?", "answer": "Partial withdrawal is permitted after the girl turns 18 for higher education; the account matures at 21 years from opening." },
+      { "question": "How to revive an SSY account — step by step?", "answer": "If you miss the minimum ₹250 deposit, your account becomes inactive. To revive it, visit your bank/Post Office, fill the revival form, and pay the total missed deposits (₹250 per year) plus a small penalty for each missed year. Your account will become active again." },
+      { "question": "How does depositing on the 5th vs 6th affect SSY interest?", "answer": "Interest is calculated on the lowest balance between the 5th and the end of the month. Depositing before the 5th ensures your money earns interest for that entire month. If you deposit after, you lose interest for that month on that specific deposit." },
+      { "question": "Can NRIs open an SSY account?", "answer": "No, only resident Indian parents or legal guardians can open an SSY account for a girl child. If the girl child acquires NRI status after the account is opened, the account may be closed prematurely." },
+      { "question": "What are the nomination and transfer rules?", "answer": "You can nominate a beneficiary for the SSY account. The account can also be transferred from one bank/Post Office to another anywhere in India if the family relocates." },
+      { "question": "What happens if the parent/guardian dies?", "answer": "In the unfortunate event of the depositor's (parent/guardian's) death, the account can be continued by the other parent or legal guardian. If not possible, the account is typically closed, and the balance with interest is paid to the girl child's nominee or legal heir." }
     ],
     "conclusion": {
       "title": "Conclusion: Is SSY the Right Choice for Your Daughter?",
@@ -494,3 +490,5 @@
     "results_placeholder": "Search functionality is coming soon."
   }
 }
+
+    

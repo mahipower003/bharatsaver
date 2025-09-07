@@ -33,8 +33,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   };
   
   return {
-    title: dictionary.ssy_calculator.meta_title,
-    description: dictionary.ssy_calculator.meta_description,
+    title: "SSY Calculator 2025 — Sukanya Samriddhi Yojana Returns & Maturity",
+    description: "Free SSY Calculator 2025 — estimate Sukanya Samriddhi Yojana maturity, total interest earned and year-wise breakdown (8.2% rate). Compare SSY vs PPF, FD & NPS.",
     openGraph: {
         title: "SSY Calculator 2025 — Sukanya Samriddhi Yojana Returns",
         description: "Use our SSY calculator to plan your daughter’s future savings. Updated with current SSY interest rate and downloadable results.",
@@ -51,8 +51,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     },
     twitter: {
         card: 'summary_large_image',
-        title: dictionary.ssy_calculator.meta_title,
-        description: dictionary.ssy_calculator.meta_description,
+        title: "SSY Calculator 2025 — Sukanya Samriddhi Yojana Returns & Maturity",
+        description: "Free SSY Calculator 2025 — estimate Sukanya Samriddhi Yojana maturity, total interest earned and year-wise breakdown (8.2% rate). Compare SSY vs PPF, FD & NPS.",
         images: [`/images/calculate-ssy-online.png`],
     },
     alternates: {
@@ -122,7 +122,7 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
           </CardHeader>
           <CardContent className="space-y-6">
             <div className="bg-muted/50 p-4 rounded-lg">
-              <h3 className="font-semibold text-lg mb-2">The Formula</h3>
+              <h3 className="font-semibold text-lg mb-2">{dictionary.ssy_calculator.example.formula_title}</h3>
               <p className="text-sm text-muted-foreground mb-2" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.example.intro }}></p>
               <p className="font-mono bg-background p-3 rounded-md text-center text-sm md:text-base">{dictionary.ssy_calculator.example.formula}</p>
             </div>
@@ -139,6 +139,8 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
                 <p className="text-muted-foreground font-semibold" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.example.scenario.result }}></p>
               </div>
             </div>
+
+             <div className="mt-2 text-sm text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.example.timing_note }}></div>
 
             <div>
               <h4 className="font-semibold text-lg">{dictionary.ssy_calculator.example.snapshot_title}</h4>
@@ -167,7 +169,7 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
           </CardContent>
         </Card>
         
-        <Card className="mt-12 shadow-lg">
+        <Card className="mt-12 shadow-lg bg-primary/10 border-primary/20">
             <CardHeader>
               <CardTitle className="flex items-center gap-3">
                   <TrendingUp className="h-7 w-7 text-primary"/>
@@ -180,8 +182,50 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
                   <li key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
                 ))}
               </ol>
+               <div className="mt-4" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.investment_strategy.monthly_example }}></div>
             </CardContent>
         </Card>
+
+        <Card className="mt-12 shadow-lg">
+            <CardHeader>
+                <CardTitle className="flex items-center gap-3">
+                    <ShieldCheck className="h-7 w-7 text-primary"/>
+                    <h2 className="text-2xl font-bold">{dictionary.ssy_calculator.tax_benefits.title}</h2>
+                </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+                <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.tax_benefits.intro }}></p>
+                <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.tax_benefits.body }}></p>
+            </CardContent>
+        </Card>
+
+        <Card className="mt-12 shadow-lg">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-3">
+                <Scale className="h-7 w-7 text-primary"/>
+                <h2 className="text-2xl font-bold">{dictionary.ssy_calculator.rules.title}</h2>
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <h3 className="font-semibold">{dictionary.ssy_calculator.rules.withdrawal_title}</h3>
+            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.rules.withdrawal_body }}></p>
+            <div className="bg-muted/50 p-4 rounded-lg">
+              <p className="text-sm" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.rules.withdrawal_example }}></p>
+            </div>
+            
+            <h3 className="font-semibold pt-4">{dictionary.ssy_calculator.rules.revival_title}</h3>
+            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.rules.revival_intro }}></p>
+            <ul className="list-disc pl-5 space-y-1 text-muted-foreground">
+              {dictionary.ssy_calculator.rules.revival_steps.map((step: string, index: number) => (
+                <li key={index} dangerouslySetInnerHTML={{ __html: step }}></li>
+              ))}
+            </ul>
+
+            <h3 className="font-semibold pt-4">{dictionary.ssy_calculator.rules.nomination_title}</h3>
+            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.rules.nomination_body }}></p>
+          </CardContent>
+        </Card>
+
 
         <Card className="mt-12 shadow-lg">
           <CardHeader>
@@ -282,5 +326,7 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
     </div>
   );
 }
+
+    
 
     
