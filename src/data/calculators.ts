@@ -21,7 +21,7 @@ export const calculators: Calculator[] = [
     icon: Landmark,
     link_text: 'Calculate Now',
     lastModified: '2024-07-28',
-    image: 'https://picsum.photos/400/250?random=1'
+    image: 'https://storage.googleapis.com/studiostack-52564.appspot.com/4f9ae395-5735-4382-8424-a218f0a283e3.png'
   },
   {
     slug: 'ssy-calculator',
