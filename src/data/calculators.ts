@@ -72,7 +72,7 @@ export const calculators: Calculator[] = [
     icon: FileText,
     link_text: 'Compare Now',
     lastModified: '2024-07-23',
-    image: '/images/Old-vs-New-Tax-Regime-Calculator.png'
+    image: '/images/Old vs New Tax Regime Calculator.png'
   },
   {
     slug: 'retirement-corpus-calculator',
@@ -92,7 +92,7 @@ export const calculators: Calculator[] = [
     icon: BadgePercent,
     link_text: 'Optimize Now',
     lastModified: '2024-07-21',
-    image: '/images/loan-optimizer-online.png'
+    image: '/images/Loan Optimization Calculator.png'
   },
   {
     slug: 'mutual-fund-overlap-calculator',
