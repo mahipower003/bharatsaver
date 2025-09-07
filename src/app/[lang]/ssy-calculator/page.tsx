@@ -35,8 +35,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     title: dictionary.ssy_calculator.meta_title,
     description: dictionary.ssy_calculator.meta_description,
     openGraph: {
-        title: dictionary.ssy_calculator.meta_title,
-        description: dictionary.ssy_calculator.meta_description,
+        title: "SSY Calculator 2025 — Sukanya Samriddhi Yojana Returns",
+        description: "Use our SSY calculator to plan your daughter’s future savings. Updated with current SSY interest rate and downloadable results.",
         url: pageUrl,
         siteName: 'BharatSaver',
         images: [{ 
@@ -91,9 +91,7 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
 
       <div className="mx-auto max-w-5xl">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
-            {dictionary.ssy_calculator.h1}
-          </h1>
+          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{__html: dictionary.ssy_calculator.h1}}></h1>
           <p className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{__html: dictionary.ssy_calculator.description}}></p>
         </div>
         
@@ -153,7 +151,7 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
                 ))}
               </TableBody>
             </Table>
-            <p className="text-xs text-muted-foreground italic pt-2">{dictionary.ssy_calculator.example.footer_note}</p>
+            <p className="text-xs text-muted-foreground italic pt-2" dangerouslySetInnerHTML={{__html: dictionary.ssy_calculator.example.footer_note}}></p>
           </CardContent>
         </Card>
 

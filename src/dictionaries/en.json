@@ -225,7 +225,7 @@
   },
   "ssy_calculator": {
     "meta_title": "Sukanya Samriddhi Yojana (SSY) Calculator 2025 — Calculate SSY Returns & Maturity",
-    "meta_description": "Use our free SSY calculator 2025 to estimate Sukanya Samriddhi Yojana maturity, interest earned and year-wise projections (8.2% interest). See tax benefits, rules, and examples.",
+    "meta_description": "Free SSY Calculator 2025 — estimate Sukanya Samriddhi Yojana maturity, total interest earned and year-wise breakdown (8.2% rate). Compare SSY vs PPF, FD & NPS.",
     "h1": "Sukanya Samriddhi Yojana (SSY) Calculator — Calculate Returns Online",
     "description": "Use our <strong>free Sukanya Samriddhi Yojana (SSY) Calculator</strong> to instantly estimate your <strong>maturity amount</strong>, <strong>total interest earned</strong>, and a <strong>year-wise breakdown</strong>. This calculator is updated with the current SSY interest rate for 2025 and supports annual and monthly deposit scenarios.",
     "title": "SSY Calculator",
@@ -295,7 +295,7 @@
           ["21", "₹71,82,119.17"]
         ]
       },
-      "footer_note": "These numbers assume deposits at the start of each year and 8.2% annual compounding. If you deposit later in the year, your maturity will be slightly lower."
+      "footer_note": "Our example assumes deposits are made at the *start of each financial year* (best-case). If you deposit later in the year, the maturity will be slightly lower."
     },
     "comparison": {
       "title": "SSY vs PPF vs FD vs NPS — quick comparison (2025)",
@@ -347,27 +347,27 @@
     "faqs": [
       {
         "question": "What is the current SSY interest rate for 2025?",
-        "answer": "The SSY interest rate for Apr–Jun 2025 is <strong>8.2%</strong> (subject to quarterly change by the Government of India)."
-      },
-      {
-        "question": "What is the minimum & maximum deposit in SSY?",
-        "answer": "Minimum is <strong>₹250 per year</strong> and maximum <strong>₹1.5 lakh per year</strong>."
-      },
-      {
-        "question": "Can I open more than one SSY account?",
-        "answer": "You can open accounts for up to <strong>two girl children</strong> in a family — one account per child."
-      },
-      {
-        "question": "When can I withdraw from SSY?",
-        "answer": "Partial withdrawal allowed after the girl turns <strong>18</strong> for education; full maturity at <strong>21 years</strong>."
+        "answer": "The SSY interest rate for Apr–Jun 2025 is <strong>8.2%</strong> (set quarterly by the Government of India)."
       },
       {
         "question": "How is SSY interest calculated?",
-        "answer": "SSY compounds annually; use the formula `A = P(1 + r)^t` for a single deposit, and sum contributions for recurring deposits."
+        "answer": "SSY compounds annually. For regular annual deposits, calculate each year’s deposit growth until maturity and sum them. Use A = P(1+r)^(years)."
       },
       {
-        "question": "What happens if I miss an annual deposit?",
-        "answer": "You must pay at least ₹250 each year. If you miss, account revival is possible with missed deposits + penalty — check bank/Post Office for current amounts."
+        "question": "What is the minimum and maximum deposit in SSY?",
+        "answer": "Minimum deposit is <strong>₹250 per year</strong> and maximum deposit is <strong>₹1.5 lakh per year</strong>."
+      },
+      {
+        "question": "When can I withdraw from SSY?",
+        "answer": "Partial withdrawal permitted after the girl turns 18 for higher education; account matures at 21 years from opening."
+      },
+      {
+        "question": "What if I miss an annual SSY deposit?",
+        "answer": "You can revive an inactive account by paying missed deposits plus penalty — check your bank/Post Office for current penalty details."
+      },
+      {
+        "question": "How do I open an SSY account online?",
+        "answer": "You can open SSY at Post Office or participating banks (SBI, HDFC, ICICI) with PAN, Aadhaar, birth proof and initial deposit."
       }
     ],
     "conclusion": {
