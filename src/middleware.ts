@@ -21,27 +21,33 @@ export function middleware(request: NextRequest) {
 
   // Paths to ignore from localization
   const ignoredPaths = [
-    '/sitemap.xml',
     '/robots.txt',
     '/hero-image.png',
     '/api/',
     '/public/'
   ];
 
-  if (ignoredPaths.some(p => pathname.startsWith(p)) || /\..*$/.test(pathname)) {
+  if (ignoredPaths.some(p => pathname.startsWith(p)) || (/\..*$/.test(pathname) && !pathname.endsWith('.xml'))) {
     return NextResponse.next();
   }
 
+  // Check if there is any supported locale in the pathname
   const pathnameIsMissingLocale = i18nConfig.locales.every(
-    locale => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
+    (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   );
 
+  // Redirect if there is no locale
   if (pathnameIsMissingLocale) {
     const locale = getLocale(request);
-    
-    // Use a permanent (301) redirect for better SEO
-    const newUrl = new URL(`/${locale}${pathname}`, request.url)
-    return NextResponse.redirect(newUrl, 301);
+
+    // e.g. incoming request is /products
+    // The new URL is now /en/products
+    return NextResponse.redirect(
+      new URL(
+        `/${locale}${pathname.startsWith('/') ? '' : '/'}${pathname}`,
+        request.url
+      )
+    );
   }
 
   return NextResponse.next();
@@ -49,6 +55,8 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    '/((?!api|_next/static|_next/image|images|favicon.ico|.*\\..*).*)',
+    // Skip all internal paths (_next) and static files (e.g. images, favicon).
+    // Also skip sitemap.xml
+    '/((?!api|_next/static|_next/image|images|favicon.ico|sitemap.xml).*)',
   ],
 };
