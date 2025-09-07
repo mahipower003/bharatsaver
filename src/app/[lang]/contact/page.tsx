@@ -52,8 +52,8 @@ export default async function ContactPage({ params }: { params: { lang: Locale }
     {
       icon: Mail,
       title: "Email",
-      value: "maheshchaube333@gamil.com",
-      href: "mailto:maheshchaube333@gamil.com",
+      value: "maheshchaube333@gmail.com",
+      href: "mailto:maheshchaube333@gmail.com",
     },
     {
       icon: Phone,
