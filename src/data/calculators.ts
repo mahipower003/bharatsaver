@@ -40,7 +40,7 @@ export const calculators: Calculator[] = [
     icon: TrendingUp,
     link_text: 'Calculate Now',
     lastModified: '2024-07-26',
-    image: '/images/PPF-NPS-FD-SSY-Scheme-selector.png'
+    image: '/images/nps-calculator-online.png'
   },
   {
     slug: 'apy-calculator',
