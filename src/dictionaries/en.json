@@ -295,7 +295,7 @@
           ["21", "₹71,82,119.17"]
         ]
       },
-      "footer_note": "Our example assumes deposits are made at the *start of each financial year* (best-case). If you deposit later in the year, the maturity will be slightly lower."
+      "footer_note": "<strong>Note on timing:</strong> Our example assumes deposits are made at the *start of each financial year* (best-case). If you deposit later in the year (e.g., mid-year or monthly later in the month), the maturity will be slightly lower. The calculator provides both annual and monthly modes — choose the one that matches your deposit schedule."
     },
     "comparison": {
       "title": "SSY vs PPF vs FD vs NPS — quick comparison (2025)",
@@ -312,6 +312,7 @@
     },
     "investment_strategy": {
       "title": "Best SSY investment strategy (practical tips)",
+      "monthly_example": "<strong>Monthly deposit example:</strong> If you deposit <strong>₹12,500 per month (₹1.5 lakh/year)</strong> for 15 years and the annual SSY rate is 8.2%, the effective compounding is yearly but monthly deposits change interest days — our calculator supports monthly mode and will compute exact year-wise balances.",
       "points": [
         "<strong>Deposit before the 5th of the month</strong> — deposits before the 5th are eligible for interest for that month.",
         "<strong>If possible, deposit lump sum early in the financial year</strong> — a full ₹1.5 lakh early in April maximizes the year’s interest.",
@@ -363,11 +364,19 @@
       },
       {
         "question": "What if I miss an annual SSY deposit?",
-        "answer": "You can revive an inactive account by paying missed deposits plus penalty — check your bank/Post Office for current penalty details."
+        "answer": "<strong>Revival of inactive SSY account:</strong> If you miss the minimum ₹250 deposit in a year, your account becomes inactive. You can revive it by paying all missed yearly deposits plus a small penalty per missed year — check your bank/Post Office for the exact penalty amount and process."
       },
       {
         "question": "How do I open an SSY account online?",
         "answer": "You can open SSY at Post Office or participating banks (SBI, HDFC, ICICI) with PAN, Aadhaar, birth proof and initial deposit."
+      },
+      {
+        "question": "Can NRIs open an SSY account?",
+        "answer": "Generally, only resident Indian parents or legal guardians can open an SSY account for a girl child. If the girl child acquires NRI status after the account is opened, the account may be closed prematurely. It's best to check the latest rules with your bank or Post Office."
+      },
+      {
+        "question": "What happens if the parent/guardian dies?",
+        "answer": "In the unfortunate event of the depositor's (parent/guardian's) death, the account can be continued by the other parent or legal guardian. If not, the account is typically closed, and the balance with interest is paid to the girl child's nominee or legal heir."
       }
     ],
     "conclusion": {
@@ -475,3 +484,5 @@
     "results_placeholder": "Search functionality is coming soon."
   }
 }
+
+    

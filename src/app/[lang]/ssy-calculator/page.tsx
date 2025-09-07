@@ -1,3 +1,4 @@
+
 import { SsyCalculator } from "@/components/calculators/SsyCalculator";
 import { getDictionary } from "@/lib/dictionaries";
 import { i18nConfig, type Locale } from "@/lib/i18n-config";
@@ -154,6 +155,22 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
             <p className="text-xs text-muted-foreground italic pt-2" dangerouslySetInnerHTML={{__html: dictionary.ssy_calculator.example.footer_note}}></p>
           </CardContent>
         </Card>
+        
+        <Card className="mt-12 shadow-lg">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3">
+                  <TrendingUp className="h-7 w-7 text-primary"/>
+                  <span className="text-2xl font-bold">{dictionary.ssy_calculator.investment_strategy.title}</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="prose dark:prose-invert max-w-none">
+              <ol className="list-decimal pl-5 space-y-2">
+                {dictionary.ssy_calculator.investment_strategy.points.map((point: string, index: number) => (
+                  <li key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
+                ))}
+              </ol>
+            </CardContent>
+        </Card>
 
         <Card className="mt-12 shadow-lg">
           <CardHeader>
@@ -181,22 +198,6 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
           </CardContent>
         </Card>
 
-        <Card className="mt-12 shadow-lg">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-3">
-                  <TrendingUp className="h-7 w-7 text-primary"/>
-                  <span className="text-2xl font-bold">{dictionary.ssy_calculator.investment_strategy.title}</span>
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="prose dark:prose-invert max-w-none">
-              <ol className="list-decimal pl-5 space-y-2">
-                {dictionary.ssy_calculator.investment_strategy.points.map((point: string, index: number) => (
-                  <li key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
-                ))}
-              </ol>
-            </CardContent>
-        </Card>
-        
         <Card className="mt-12 shadow-lg">
             <CardHeader>
               <CardTitle className="flex items-center gap-3">
@@ -270,3 +271,5 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
     </div>
   );
 }
+
+    
