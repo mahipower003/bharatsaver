@@ -1,3 +1,4 @@
+
 import { PpfCalculator } from "@/components/calculators/PpfCalculator";
 import { getDictionary } from "@/lib/dictionaries";
 import { i18nConfig, type Locale } from "@/lib/i18n-config";
@@ -15,6 +16,20 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/ppf-calculator`;
 
+  const faqItems = dictionary.ppf_calculator.faqs;
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqItems.map((faq: { question: string, answer: string }) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  };
+
   return {
     title: dictionary.ppf_calculator.meta_title,
     description: dictionary.ppf_calculator.meta_description,
@@ -29,7 +44,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
           height: 630, 
           alt: 'BharatSaver PPF Calculator' 
         }],
-        locale: 'en_IN',
+        locale: params.lang === 'en' ? 'en_IN' : params.lang,
         type: 'website',
     },
     twitter: {
@@ -45,27 +60,15 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         return acc;
     }, {} as Record<string, string>),
     },
+    other: {
+      'application/ld+json': JSON.stringify(faqSchema),
+    },
   };
 }
 
 export default async function PpfCalculatorPage({ params }: { params: { lang: Locale }}) {
   const dictionary = await getDictionary(params.lang, ['ppf_calculator']);
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-
-  const faqItems = dictionary.ppf_calculator.faqs;
-
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqItems.map((faq: { question: string, answer: string }) => ({
-      '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: faq.answer,
-      },
-    })),
-  };
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -81,7 +84,6 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
 
   return (
     <div className="py-12">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       
       <div className="mx-auto max-w-5xl">
@@ -97,11 +99,11 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
 
         <Card className="mt-12 shadow-lg">
           <CardHeader>
-            <CardTitle>{dictionary.ppf_calculator.quick_start.title}</CardTitle>
+            <CardTitle className="text-2xl">{dictionary.ppf_calculator.how_to_use.title}</CardTitle>
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none">
             <ul>
-                {dictionary.ppf_calculator.quick_start.steps.map((step: string, index: number) => (
+                {dictionary.ppf_calculator.how_to_use.steps.map((step: string, index: number) => (
                     <li key={index}>{step}</li>
                 ))}
             </ul>
@@ -110,7 +112,7 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
 
         <Card className="mt-12 shadow-lg">
           <CardHeader>
-            <CardTitle>{dictionary.ppf_calculator.example.title}</CardTitle>
+            <CardTitle className="text-2xl">{dictionary.ppf_calculator.example.title}</CardTitle>
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none">
             <p>{dictionary.ppf_calculator.example.scenario}</p>
@@ -119,12 +121,13 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
                 <li><strong>{dictionary.ppf_calculator.total_interest}:</strong> {dictionary.ppf_calculator.example.interest_earned}</li>
                 <li><strong>{dictionary.ppf_calculator.maturity_value}:</strong> {dictionary.ppf_calculator.example.maturity_amount}</li>
             </ul>
+            <p>{dictionary.ppf_calculator.example.footer_note}</p>
           </CardContent>
         </Card>
         
         <Card className="mt-12 shadow-lg">
           <CardHeader>
-            <CardTitle>{dictionary.ppf_calculator.rules.title}</CardTitle>
+            <CardTitle className="text-2xl">{dictionary.ppf_calculator.rules.title}</CardTitle>
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none">
              <ul>
@@ -132,12 +135,13 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
                     <li key={index}>{point}</li>
                 ))}
             </ul>
+            <p>{dictionary.ppf_calculator.rules.footer_note}</p>
           </CardContent>
         </Card>
 
         <Card className="mt-12 shadow-lg">
             <CardHeader>
-                <CardTitle>{dictionary.ppf_calculator.comparison.title}</CardTitle>
+                <CardTitle className="text-2xl">{dictionary.ppf_calculator.comparison.title}</CardTitle>
             </CardHeader>
             <CardContent>
                 <Table>
@@ -152,29 +156,42 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
                         {comparisonData.rows.map((row: string[], rowIndex: number) => (
                             <TableRow key={rowIndex}>
                                 {row.map((cell: string, cellIndex: number) => (
-                                    <TableCell key={cellIndex}>{cell}</TableCell>
+                                    <TableCell key={cellIndex} className={cellIndex > 0 ? 'text-center' : ''}>{cell}</TableCell>
                                 ))}
                             </TableRow>
                         ))}
                     </TableBody>
                 </Table>
+                 <p className="text-sm text-muted-foreground mt-4">{dictionary.ppf_calculator.comparison.footer_note}</p>
             </CardContent>
         </Card>
 
         <div className="mt-12">
             <h2 className="text-2xl font-bold text-center mb-6">{dictionary.ppf_calculator.faq_title}</h2>
             <Accordion type="single" collapsible className="w-full">
-              {faqItems.map((faq: { question: string, answer: string }, index: number) => (
+              {dictionary.ppf_calculator.faqs.map((faq: { question: string, answer: string }, index: number) => (
                 <AccordionItem value={`item-${index}`} key={index}>
                   <AccordionTrigger>{faq.question}</AccordionTrigger>
                   <AccordionContent>
-                    {faq.answer}
+                    <p dangerouslySetInnerHTML={{ __html: faq.answer }}></p>
                   </AccordionContent>
                 </AccordionItem>
               ))}
             </Accordion>
         </div>
+
+        <Card className="mt-12 shadow-lg bg-primary/10 border-primary/20">
+            <CardHeader>
+              <CardTitle className="text-2xl">{dictionary.ppf_calculator.final_thoughts.title}</CardTitle>
+            </CardHeader>
+            <CardContent className="prose dark:prose-invert max-w-none">
+              <p>{dictionary.ppf_calculator.final_thoughts.body}</p>
+              <p>{dictionary.ppf_calculator.final_thoughts.next_action}</p>
+            </CardContent>
+        </Card>
       </div>
     </div>
   );
 }
+
+    
