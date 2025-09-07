@@ -6,6 +6,7 @@ import { getDictionary } from '@/lib/dictionaries';
 import { Suspense } from 'react';
 import Loading from './loading';
 import { ScrollToTopButton } from '@/components/layout/ScrollToTopButton';
+import { ScrollToBottomButton } from '@/components/layout/ScrollToBottomButton';
 
 export default async function LocaleLayout({
   children,
@@ -25,6 +26,7 @@ export default async function LocaleLayout({
       </main>
       <Footer lang={params.lang} dictionary={dictionary.footer} />
       <ScrollToTopButton />
+      <ScrollToBottomButton />
     </div>
   );
 }
