@@ -21,7 +21,7 @@ export const calculators: Calculator[] = [
     icon: Landmark,
     link_text: 'Calculate Now',
     lastModified: '2024-07-28',
-    image: '/images/ppf-calculator-feature.png'
+    image: 'https://picsum.photos/400/250?random=1'
   },
   {
     slug: 'ssy-calculator',
