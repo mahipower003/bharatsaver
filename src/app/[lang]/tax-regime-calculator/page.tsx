@@ -16,7 +16,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang, ['tax_regime_calculator']);
+  const dictionary = await getDictionary(params.lang, ['tax_regime_calculator', 'author_card']);
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/tax-regime-calculator`;
   const ogImageUrl = `${siteUrl}/images/tax-regime-calculator-online.png`;
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     "author": {
       "@type": "Person",
       "name": "Mahesh Chaube, CFP",
-      "url": "https://www.linkedin.com/in/mahi003/",
+      "url": `${siteUrl}/${params.lang}/author/mahesh-chaube`,
       "sameAs": "https://www.linkedin.com/in/mahi003/"
     },
     "publisher": {
@@ -66,6 +66,21 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     "about": ["Income Tax Calculator", "Old vs New Tax Regime", "Tax Planning India"],
     "datePublished": "2024-07-30",
     "dateModified": "2025-09-01"
+  };
+
+  const softwareSchema = {
+    "@context":"https://schema.org",
+    "@type":"SoftwareApplication",
+    "name":"Tax Regime Calculator",
+    "url": pageUrl,
+    "applicationCategory":"FinanceApplication",
+    "operatingSystem":"Web",
+    "offers": {
+      "@type":"Offer",
+      "url": pageUrl,
+      "price":"0",
+      "priceCurrency":"INR"
+    }
   };
 
   return {
@@ -93,7 +108,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       }, {} as Record<string, string>),
     },
     other: {
-      'application/ld+json': JSON.stringify([faqSchema, articleSchema]),
+      'application/ld+json': JSON.stringify([faqSchema, articleSchema, softwareSchema]),
     },
   };
 }
