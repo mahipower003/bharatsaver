@@ -17,6 +17,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import type { Dictionary } from '@/types';
 import { type ChartConfig } from '@/components/ui/chart';
+import { Alert, AlertDescription, AlertTitle } from '../ui/alert';
 
 const formSchema = z.object({
   investmentAmount: z.coerce.number().min(500, 'Minimum investment is ₹500'),
@@ -67,7 +68,6 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
   });
   
   useEffect(() => {
-    // On mount, check URL params and pre-fill form if they exist
     const params = new URLSearchParams(searchParams.toString());
     const values: Partial<FormValues> = {};
     if (params.get('amount')) values.investmentAmount = Number(params.get('amount'));
@@ -88,7 +88,6 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
     setResult(null);
     await new Promise(resolve => setTimeout(resolve, 500));
 
-    // FD Calculation (Lump-sum)
     const P_fd = values.investmentAmount;
     const r_fd = values.fdRate / 100;
     const t_fd = values.fdTenure;
@@ -97,11 +96,9 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
     const taxOnInterest = fdInterest * (values.taxBracket / 100);
     const fdPostTaxMaturity = P_fd + (fdInterest - taxOnInterest);
 
-    // PPF Calculation (Recurring annual investment)
-    // NOTE: PPF has a statutory lock-in of 15 years. We compare over the same tenure as the FD for an apples-to-apples view.
     const P_ppf_annual = values.investmentAmount;
     const r_ppf = values.ppfRate / 100;
-    const t_ppf = values.fdTenure; // Compare over same tenure
+    const t_ppf = values.fdTenure;
     let ppfBalance = 0;
     let totalPpfInvestment = 0;
     for (let i = 0; i < t_ppf; i++) {
@@ -119,7 +116,7 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
       {
         name: 'PPF',
         'Gross Value': Math.round(ppfBalance),
-        'Post-Tax Value': Math.round(ppfBalance), // PPF is tax-free
+        'Post-Tax Value': Math.round(ppfBalance),
       }
     ];
 
@@ -194,7 +191,7 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
             <ArrowRightLeft className="h-6 w-6 text-primary" />
             <span>{dictionary.title}</span>
           </CardTitle>
-          <CardDescription>{dictionary.form_description}</CardDescription>
+          <CardDescription dangerouslySetInnerHTML={{__html: dictionary.form_description}}></CardDescription>
         </CardHeader>
         <CardContent>
           <Form {...form}>
@@ -264,54 +261,60 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
       {isLoading && <div className="text-center py-12"><Loader2 className="mx-auto h-12 w-12 animate-spin text-primary" /></div>}
 
       {result && (
-        <Card className="mt-8 animate-in fade-in-50 slide-in-from-bottom-5 shadow-lg">
-          <CardHeader>
-            <CardTitle>{dictionary.results_title}</CardTitle>
-            <CardDescription>
-                {dictionary.result_snapshot.replace('{winner}', winner || '').replace('{difference}', formatCurrency(difference))}
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <div className="border p-4 rounded-lg">
-                    <h3 className="text-lg font-semibold text-center mb-2">{dictionary.fd_label}</h3>
-                    <div className="space-y-2">
-                        <p className="flex justify-between"><span>{dictionary.fd_maturity_label}</span> <span className="font-bold">{formatCurrency(result.fdMaturity)}</span></p>
-                        <p className="flex justify-between"><span>{dictionary.fd_post_tax_maturity_label}</span> <span className="font-bold text-primary">{formatCurrency(result.fdPostTaxMaturity)}</span></p>
-                        <p className="flex justify-between text-sm text-muted-foreground"><span>{dictionary.total_interest_label}</span> <span>{formatCurrency(result.fdInterest)}</span></p>
-                         <p className="flex justify-between text-sm text-muted-foreground"><span>{dictionary.total_investment_label}</span> <span>{formatCurrency(form.getValues().investmentAmount)}</span></p>
+        <>
+            <Alert className="mt-8">
+              <AlertTitle>{dictionary.assumptions.title}</AlertTitle>
+              <AlertDescription dangerouslySetInnerHTML={{ __html: dictionary.assumptions.body }} />
+            </Alert>
+            <Card className="mt-4 animate-in fade-in-50 slide-in-from-bottom-5 shadow-lg">
+            <CardHeader>
+                <CardTitle>{dictionary.results_title}</CardTitle>
+                <CardDescription>
+                    {dictionary.result_snapshot.replace('{winner}', winner || '').replace('{difference}', formatCurrency(difference))}
+                </CardDescription>
+            </CardHeader>
+            <CardContent>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div className="border p-4 rounded-lg">
+                        <h3 className="text-lg font-semibold text-center mb-2">{dictionary.fd_label}</h3>
+                        <div className="space-y-2">
+                            <p className="flex justify-between"><span>{dictionary.fd_maturity_label}</span> <span className="font-bold">{formatCurrency(result.fdMaturity)}</span></p>
+                            <p className="flex justify-between"><span>{dictionary.fd_post_tax_maturity_label}</span> <span className="font-bold text-primary">{formatCurrency(result.fdPostTaxMaturity)}</span></p>
+                            <p className="flex justify-between text-sm text-muted-foreground"><span>{dictionary.total_interest_label}</span> <span>{formatCurrency(result.fdInterest)}</span></p>
+                            <p className="flex justify-between text-sm text-muted-foreground"><span>{dictionary.total_investment_label}</span> <span>{formatCurrency(form.getValues().investmentAmount)}</span></p>
+                        </div>
+                    </div>
+                    <div className="border p-4 rounded-lg">
+                        <h3 className="text-lg font-semibold text-center mb-2">{dictionary.ppf_label}</h3>
+                        <div className="space-y-2">
+                            <p className="flex justify-between"><span>{dictionary.ppf_maturity_label}</span> <span className="font-bold text-primary">{formatCurrency(result.ppfMaturity)}</span></p>
+                            <p className="flex justify-between text-sm text-muted-foreground"><span>{dictionary.total_interest_label}</span> <span>{formatCurrency(result.ppfInterest)}</span></p>
+                            <p className="flex justify-between text-sm text-muted-foreground"><span>{dictionary.total_investment_label}</span> <span>{formatCurrency(result.totalPpfInvestment)}</span></p>
+                        </div>
                     </div>
                 </div>
-                <div className="border p-4 rounded-lg">
-                     <h3 className="text-lg font-semibold text-center mb-2">{dictionary.ppf_label}</h3>
-                    <div className="space-y-2">
-                        <p className="flex justify-between"><span>{dictionary.ppf_maturity_label}</span> <span className="font-bold text-primary">{formatCurrency(result.ppfMaturity)}</span></p>
-                        <p className="flex justify-between text-sm text-muted-foreground"><span>{dictionary.total_interest_label}</span> <span>{formatCurrency(result.ppfInterest)}</span></p>
-                        <p className="flex justify-between text-sm text-muted-foreground"><span>{dictionary.total_investment_label}</span> <span>{formatCurrency(result.totalPpfInvestment)}</span></p>
-                    </div>
+
+                <ResponsiveContainer width="100%" height={300}>
+                <BarChart data={result.chartData}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="name" />
+                    <YAxis tickFormatter={(value) => (value / 100000).toLocaleString('en-IN') + 'L'} />
+                    <Tooltip contentStyle={{ borderRadius: "var(--radius)", border: "1px solid hsl(var(--border))", background: "hsl(var(--background))" }} formatter={(value: number) => formatCurrency(value)} />
+                    <Legend />
+                    <Bar dataKey="Gross Value" fill="hsl(var(--secondary-foreground))" radius={[4, 4, 0, 0]} />
+                    <Bar dataKey="Post-Tax Value" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
+                </BarChart>
+                </ResponsiveContainer>
+
+                <div className="flex flex-wrap items-center justify-center gap-4 mt-8">
+                    <Button variant="outline" size="sm" onClick={() => handleShare('whatsapp')}><WhatsAppIcon className="mr-2 h-4 w-4" /> WhatsApp</Button>
+                    <Button variant="outline" size="sm" onClick={() => handleShare('twitter')}><Twitter className="mr-2 h-4 w-4" /> Twitter</Button>
+                    <Button variant="outline" size="sm" onClick={handlePrint}><Printer className="mr-2 h-4 w-4" /> Print</Button>
+                    <Button variant="outline" size="sm" onClick={handleCSVExport}><Download className="mr-2 h-4 w-4" />{dictionary.export_csv}</Button>
                 </div>
-            </div>
-
-            <ResponsiveContainer width="100%" height={300}>
-              <BarChart data={result.chartData}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
-                <YAxis tickFormatter={(value) => (value / 100000).toLocaleString('en-IN') + 'L'} />
-                <Tooltip contentStyle={{ borderRadius: "var(--radius)", border: "1px solid hsl(var(--border))", background: "hsl(var(--background))" }} formatter={(value: number) => formatCurrency(value)} />
-                <Legend />
-                <Bar dataKey="Gross Value" fill="hsl(var(--secondary-foreground))" radius={[4, 4, 0, 0]} />
-                <Bar dataKey="Post-Tax Value" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
-              </BarChart>
-            </ResponsiveContainer>
-
-             <div className="flex flex-wrap items-center justify-center gap-4 mt-8">
-                <Button variant="outline" size="sm" onClick={() => handleShare('whatsapp')}><WhatsAppIcon className="mr-2 h-4 w-4" /> WhatsApp</Button>
-                <Button variant="outline" size="sm" onClick={() => handleShare('twitter')}><Twitter className="mr-2 h-4 w-4" /> Twitter</Button>
-                <Button variant="outline" size="sm" onClick={handlePrint}><Printer className="mr-2 h-4 w-4" /> Print</Button>
-                <Button variant="outline" size="sm" onClick={handleCSVExport}><Download className="mr-2 h-4 w-4" />{dictionary.export_csv}</Button>
-             </div>
-          </CardContent>
-        </Card>
+            </CardContent>
+            </Card>
+        </>
       )}
     </>
   );

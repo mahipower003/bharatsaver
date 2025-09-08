@@ -674,12 +674,27 @@
       "title": "Quick Answer: Which is better, FD or PPF?",
       "body": "It depends on your goals. For <strong>long-term, tax-free wealth creation</strong> (like retirement), <strong>PPF is almost always better</strong> due to its EEE tax status and compounding benefits. For <strong>short-term goals or emergency funds</strong> where you need liquidity, an <strong>FD is more suitable</strong> despite the tax on interest. Use our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> or the tool on this page to see the exact difference for your amount."
     },
+    "how_it_works": {
+      "title": "How the FD vs PPF Calculator Works (Formula & Example)",
+      "assumptions": {
+        "title": "Assumptions Made",
+        "body": "FD interest compounds at the selected frequency and FD interest is taxed at your chosen income-tax slab (TDS shown where applicable). PPF is modeled with its official annual compounding; default maturity = 15 years (PPF has statutory lock-in). Results are nominal (not inflation-adjusted). Always check official sources (<a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer'>PFRDA</a> / <a href='https://incometaxindia.gov.in/' target='_blank' rel='noopener noreferrer'>Income Tax Dept</a>) for rules."
+      },
+      "example": {
+        "title": "Example: FD for ₹1,00,000 at 7% for 5 years — step-by-step",
+        "body": "<ol class='list-decimal pl-5 space-y-1 mt-2'><li>Annual growth factor = 1 + r = 1.07</li><li>(1.07)^5 = 1.4025516607</li><li>FV = 100,000 × 1.4025516607 = <strong>₹1,40,255</strong></li><li>Total interest earned = 1,40,255 − 1,00,000 = <strong>₹40,255</strong></li><li>Tax on interest at 30% = 0.30 × 40,255 = <strong>₹12,077</strong></li><li>Post-tax maturity = 1,00,000 + (40,255 - 12,077) = <strong>₹1,28,178</strong></li></ol>"
+      }
+    },
+    "assumptions": {
+        "title": "Calculator Assumptions",
+        "body": "FD interest compounds at the selected frequency and FD interest is taxed at your chosen income-tax slab (TDS shown where applicable). PPF is modeled with its official annual compounding; default maturity = 15 years (PPF has statutory lock-in). Results are nominal (not inflation-adjusted). Always check official sources (<a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA</a> / <a href='https://incometaxindia.gov.in/' target='_blank' rel='noopener noreferrer' class='underline'>Income Tax Dept</a>) for rules."
+    },
     "ppf_features": {
       "title": "PPF: Key Features, Rules & Tax Benefits",
       "points": [
-        "<strong>Tax Treatment:</strong> Exempt-Exempt-Exempt (EEE). Contributions, interest, and maturity are all tax-free.",
+        "<strong>Tax Treatment:</strong> Exempt-Exempt-Exempt (EEE). Contributions, interest, and maturity are all tax-free. <a href='https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx' target='_blank' rel='noopener noreferrer' class='text-xs'>(Source: Income Tax Dept)</a>",
         "<strong>Lock-in Period:</strong> 15 years, can be extended in blocks of 5 years.",
-        "<strong>Interest Rate:</strong> Set by the government quarterly. Generally higher than FD rates.",
+        "<strong>Interest Rate:</strong> Set by the government quarterly. Generally higher than FD rates. <a href='https://www.nsiindia.gov.in/ppf.aspx' target='_blank' rel='noopener noreferrer' class='text-xs'>(Source: NSI)</a>",
         "<strong>Contribution Limit:</strong> Min ₹500, Max ₹1.5 lakh per financial year.",
         "<strong>Best For:</strong> Long-term goals like retirement, children's education, and disciplined, tax-free saving."
       ]
@@ -691,6 +706,7 @@
         "<strong>Lock-in Period:</strong> Flexible, ranging from 7 days to 10 years. Premature withdrawal is possible with a penalty.",
         "<strong>Interest Rate:</strong> Fixed at the time of investment for the entire tenure. Varies by bank and tenure.",
         "<strong>Contribution Limit:</strong> No upper limit on investment.",
+        "<strong>Insurance:</strong> Deposits are insured up to ₹5 lakh by DICGC. <a href='https://www.dicgc.org.in/' target='_blank' rel='noopener noreferrer' class='text-xs'>(Source: DICGC)</a>",
         "<strong>Best For:</strong> Short to medium-term goals, emergency funds, and predictable returns for risk-averse investors."
       ]
     },
