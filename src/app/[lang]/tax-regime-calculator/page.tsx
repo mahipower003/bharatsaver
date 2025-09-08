@@ -47,7 +47,9 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     "image": ogImageUrl,
     "author": {
       "@type": "Person",
-      "name": "Mahesh Chaube, CFP"
+      "name": "Mahesh Chaube, CFP",
+      "url": "https://www.linkedin.com/in/mahi003/",
+      "sameAs": "https://www.linkedin.com/in/mahi003/"
     },
     "publisher": {
       "@type": "Organization",
@@ -246,7 +248,7 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground">{dictionary.tax_regime_calculator.conclusion.body}</p>
+            <p className="text-muted-foreground" dangerouslySetInnerHTML={{__html: dictionary.tax_regime_calculator.conclusion.body.replace(/{lang}/g, params.lang)}}></p>
           </CardContent>
         </Card>
 

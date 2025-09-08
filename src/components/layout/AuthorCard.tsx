@@ -30,9 +30,7 @@ export function AuthorCard({ dictionary }: AuthorCardProps) {
             <p className="bs-author-bio mt-2 text-muted-foreground">
                 {dictionary.bio}
             </p>
-            <div className="bs-review">
-              <strong>Reviewed by:</strong> Laveena Vijayi — BharatSaver Editorial Team — calculations and PPF/FD rules verified against official sources (PFRDA, Income Tax Department). Review date: <time dateTime="2025-09-01">September 2025</time>.
-            </div>
+            <div className="bs-review text-xs text-muted-foreground mt-2" dangerouslySetInnerHTML={{ __html: dictionary.review_text }} />
             <div className="bs-author-links mt-4 flex items-center gap-6">
                 <a href="https://www.linkedin.com/in/mahi003/" rel="noopener" target="_blank" className="flex items-center gap-2 hover:text-primary transition-colors">
                     <Linkedin className="h-5 w-5"/>

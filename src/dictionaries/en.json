@@ -850,7 +850,7 @@
     },
     "conclusion": {
       "title": "Final Thoughts: Making the Smart Choice",
-      "body": "Choosing a tax regime is a critical financial decision. The New Regime offers simplicity, while the Old Regime rewards those with significant investments and expenses. Use this calculator to compare your specific situation, understand the trade-offs, and choose the path that maximizes your take-home pay."
+      "body": "Choosing a tax regime is a critical financial decision. The New Regime offers simplicity, while the Old Regime rewards those with significant investments and expenses. Use this calculator to compare your specific situation, understand the trade-offs, and choose the path that maximizes your take-home pay. For deeper insights, explore our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> or our <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> to see how tax-saving investments can impact your decision."
     }
   },
   "retirement_corpus_calculator": {
@@ -934,7 +934,8 @@
   },
   "author_card": {
     "bio": "Mahesh Chaube, CFP is a Certified Financial Planner with extensive experience helping Indian families build tax-efficient retirement and education plans. Mahesh specialises in retirement strategy, tax-optimised fixed-income planning and practical financial tools (calculators, worksheets) that simplify decision-making for everyday investors. He regularly advises fintechs and writes data-driven personal finance guides.",
-    "author_page_link": "View all articles"
+    "author_page_link": "View all articles",
+    "review_text": "<strong>Reviewed & Verified by Experts:</strong> Laveena Vijayi — BharatSaver Editorial Team. Data verified against PFRDA, CBDT, and Income Tax Department official calculators."
   },
   "author_page": {
     "meta_title": "Articles by Mahesh Chaube, CFP | BharatSaver",
