@@ -31,7 +31,7 @@ export function AuthorCard({ dictionary }: AuthorCardProps) {
                 {dictionary.bio}
             </p>
             <div className="bs-review">
-              <strong>Reviewed by:</strong> BharatSaver Editorial Team — calculations and PPF/FD rules verified against official sources (PFRDA, Income Tax Department). Review date: <time dateTime="2025-09-01">September 2025</time>.
+              <strong>Reviewed by:</strong> Laveena Vijayi — BharatSaver Editorial Team — calculations and PPF/FD rules verified against official sources (PFRDA, Income Tax Department). Review date: <time dateTime="2025-09-01">September 2025</time>.
             </div>
             <div className="bs-author-links mt-4 flex items-center gap-6">
                 <a href="https://www.linkedin.com/in/mahi003/" rel="noopener" target="_blank" className="flex items-center gap-2 hover:text-primary transition-colors">
