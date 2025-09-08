@@ -847,6 +847,10 @@
       "cta1_desc": "Use a trusted partner to file your Income Tax Return accurately and on time.",
       "cta2_title": "Explore Tax-Saving Investments",
       "cta2_desc": "Use our calculators for PPF, NPS, and ELSS to plan your 80C investments."
+    },
+    "conclusion": {
+      "title": "Final Thoughts: Making the Smart Choice",
+      "body": "Choosing a tax regime is a critical financial decision. The New Regime offers simplicity, while the Old Regime rewards those with significant investments and expenses. Use this calculator to compare your specific situation, understand the trade-offs, and choose the path that maximizes your take-home pay."
     }
   },
   "retirement_corpus_calculator": {

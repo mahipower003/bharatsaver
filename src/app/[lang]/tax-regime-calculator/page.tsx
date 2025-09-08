@@ -211,30 +211,42 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
             <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.next_steps.title}</h2>
           </CardHeader>
           <CardContent className="space-y-4">
-              <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="https://www.cleartax.in/e-filing-of-income-tax-return" target="_blank" rel="noopener noreferrer" className="flex-1">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <Link href="https://www.cleartax.in/e-filing-of-income-tax-return" target="_blank" rel="noopener noreferrer" className="block group">
                       <Card className="h-full hover:shadow-md transition-shadow">
                           <CardHeader className="flex flex-row items-center gap-4">
                               <Download className="h-8 w-8 text-primary"/>
                               <div>
                                   <CardTitle className="text-lg">{dictionary.tax_regime_calculator.next_steps.cta1_title}</CardTitle>
-                                  <p className="text-sm text-muted-foreground">{dictionary.tax_regime_calculator.next_steps.cta1_desc}</p>
+                                  <p className="text-sm text-muted-foreground mt-1">{dictionary.tax_regime_calculator.next_steps.cta1_desc}</p>
                               </div>
                           </CardHeader>
                       </Card>
                   </Link>
-                   <Link href={`/${params.lang}/calculators`} className="flex-1">
+                   <Link href={`/${params.lang}/calculators`} className="block group">
                       <Card className="h-full hover:shadow-md transition-shadow">
                           <CardHeader className="flex flex-row items-center gap-4">
                               <TrendingUp className="h-8 w-8 text-primary"/>
                               <div>
                                   <CardTitle className="text-lg">{dictionary.tax_regime_calculator.next_steps.cta2_title}</CardTitle>
-                                  <p className="text-sm text-muted-foreground">{dictionary.tax_regime_calculator.next_steps.cta2_desc}</p>
+                                  <p className="text-sm text-muted-foreground mt-1">{dictionary.tax_regime_calculator.next_steps.cta2_desc}</p>
                               </div>
                           </CardHeader>
                       </Card>
                   </Link>
               </div>
+          </CardContent>
+        </Card>
+
+        <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-3">
+              <Star className="h-7 w-7 text-accent" />
+              <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.conclusion.title}</h2>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-muted-foreground">{dictionary.tax_regime_calculator.conclusion.body}</p>
           </CardContent>
         </Card>
 
