@@ -652,9 +652,7 @@
     "title": "FD vs PPF Calculator",
     "form_description": "Compare post-tax returns from a lump-sum FD vs recurring PPF investment.",
     "investment_amount_label": "Investment Amount (₹)",
-    "investment_amount_note": "This amount is treated as a one-time lump sum for FD and a recurring annual deposit for PPF.",
     "tenure_label": "Investment Tenure (Years)",
-    "tenure_note": "PPF has a 15-year lock-in. This tenure will be used for both calculations.",
     "fd_rate_label": "FD Interest Rate (% p.a.)",
     "ppf_rate_label": "PPF Interest Rate (% p.a.)",
     "tax_bracket_label": "Your Income Tax Bracket (%)",
@@ -663,38 +661,42 @@
     "results_title": "FD vs PPF Comparison",
     "result_snapshot": "For this scenario, {winner} wins by approximately {difference} after tax.",
     "fd_label": "Fixed Deposit (Lump-sum)",
-    "ppf_label": "Public Provident Fund (Recurring)",
+    "ppf_label": "Public Provident Fund (Recurring Annual)",
     "fd_maturity_label": "Gross Maturity Value",
     "fd_post_tax_maturity_label": "Post-Tax Maturity Value",
     "ppf_maturity_label": "PPF Maturity Value (Tax-Free)",
     "total_investment_label": "Total Investment",
     "total_interest_label": "Total Interest Earned",
     "export_csv": "Export CSV",
-    "quick_answer": {
-      "title": "Quick Answer: Which is better, FD or PPF?",
-      "body": "It depends on your goals. For <strong>long-term, tax-free wealth creation</strong> (like retirement), <strong>PPF is almost always better</strong> due to its EEE tax status and compounding benefits. For <strong>short-term goals or emergency funds</strong> where you need liquidity, an <strong>FD is more suitable</strong> despite the tax on interest. Use our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> or the tool on this page to see the exact difference for your amount."
-    },
-    "how_it_works": {
-      "title": "How the FD vs PPF Calculator Works (Formula & Example)",
-      "assumptions": {
-        "title": "Assumptions Made",
-        "body": "FD interest compounds at the selected frequency and FD interest is taxed at your chosen income-tax slab (TDS shown where applicable). PPF is modeled with its official annual compounding; default maturity = 15 years (PPF has statutory lock-in). Results are nominal (not inflation-adjusted). Always check official sources (<a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer'>PFRDA</a> / <a href='https://incometaxindia.gov.in/' target='_blank' rel='noopener noreferrer'>Income Tax Dept</a>) for rules."
-      },
-      "example": {
-        "title": "Example: FD for ₹1,00,000 at 7% for 5 years — step-by-step",
-        "body": "<ol class='list-decimal pl-5 space-y-1 mt-2'><li>Annual growth factor = 1 + r = 1.07</li><li>(1.07)^5 = 1.4025516607</li><li>FV = 100,000 × 1.4025516607 = <strong>₹1,40,255</strong></li><li>Total interest earned = 1,40,255 − 1,00,000 = <strong>₹40,255</strong></li><li>Tax on interest at 30% = 0.30 × 40,255 = <strong>₹12,077</strong></li><li>Post-tax maturity = 1,00,000 + (40,255 - 12,077) = <strong>₹1,28,178</strong></li></ol>"
-      }
+    "clarifier_note": {
+        "title": "Important — How We Compare",
+        "body": "The calculator treats the 'Investment Amount' as a one-time lump-sum for the FD and as a recurring annual deposit for PPF. This means the total money deployed differs. For example, a ₹1 lakh investment becomes a ₹1 lakh single deposit in FD vs. a total of ₹15 lakh (1L × 15 years) in PPF. This models a common real-world investment choice."
     },
     "assumptions": {
-        "title": "Calculator Assumptions",
-        "body": "FD interest compounds at the selected frequency and FD interest is taxed at your chosen income-tax slab (TDS shown where applicable). PPF is modeled with its official annual compounding; default maturity = 15 years (PPF has statutory lock-in). Results are nominal (not inflation-adjusted). Always check official sources (<a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA</a> / <a href='https://incometaxindia.gov.in/' target='_blank' rel='noopener noreferrer' class='underline'>Income Tax Dept</a>) for rules."
+      "title": "Calculator Assumptions",
+      "body": "<ul><li>PPF is modelled with annual compounding at the specified rate and a default maturity of 15 years. Deposits are assumed at the <strong>start</strong> of each year.</li><li>FD is modelled as a one-time lump-sum with annual compounding. Interest is taxed at your selected marginal rate.</li><li>Results are nominal (not inflation-adjusted). Always verify with official sources like <a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer'>PFRDA</a> and the <a href='https://incometaxindia.gov.in/' target='_blank' rel='noopener noreferrer'>Income Tax Dept</a>.</li></ul>"
+    },
+    "quick_answer": {
+      "title": "Quick Answer: Which is better, FD or PPF?",
+      "body": "For <strong>long-term, tax-free wealth creation</strong> (like retirement), <strong>PPF is almost always better</strong> due to its EEE tax status and compounding benefits. For <strong>short-term goals or emergency funds</strong> where you need liquidity, an <strong>FD is more suitable</strong> despite the tax on interest. Use our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> or the tool on this page to see the exact difference for your amount."
+    },
+    "how_it_works": {
+      "title": "How Returns are Calculated (Worked Examples)",
+      "example1": {
+        "title": "Example 1 — FD (Lump-Sum)",
+        "body": "<strong>Input:</strong> ₹100,000 lump-sum, 7% p.a., 15 years, 30% tax bracket.<br/><strong>Calculation:</strong><ol><li>Future Value = 100,000 × (1.07)^15 = ₹275,903.</li><li>Total Interest = 275,903 - 100,000 = ₹175,903.</li><li>Tax on Interest (30%) = 0.30 × 175,903 = ₹52,771.</li><li><strong>Post-Tax Maturity = 275,903 - 52,771 = ₹223,132.</strong></li></ol>"
+      },
+      "example2": {
+        "title": "Example 2 — PPF (Recurring Annual Deposit)",
+        "body": "<strong>Input:</strong> ₹100,000 paid at the start of each year for 15 years, 7.1% p.a.<br/><strong>Calculation (Annuity Due Formula):</strong><br/>Future Value = P × [((1 + r)^n - 1) / r] × (1 + r)<br/>This computes to a <strong>tax-free maturity of ₹2,712,139</strong> on a total investment of ₹1,500,000."
+      }
     },
     "ppf_features": {
       "title": "PPF: Key Features, Rules & Tax Benefits",
       "points": [
-        "<strong>Tax Treatment:</strong> Exempt-Exempt-Exempt (EEE). Contributions, interest, and maturity are all tax-free. <a href='https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx' target='_blank' rel='noopener noreferrer' class='text-xs'>(Source: Income Tax Dept)</a>",
+        "<strong>Tax Treatment:</strong> Exempt-Exempt-Exempt (EEE). Contributions, interest, and maturity are all tax-free. (<a href='https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx' target='_blank' rel='noopener noreferrer' class='text-xs'>Source: Income Tax Dept</a>)",
         "<strong>Lock-in Period:</strong> 15 years, can be extended in blocks of 5 years.",
-        "<strong>Interest Rate:</strong> Set by the government quarterly. Generally higher than FD rates. <a href='https://www.nsiindia.gov.in/ppf.aspx' target='_blank' rel='noopener noreferrer' class='text-xs'>(Source: NSI)</a>",
+        "<strong>Interest Rate:</strong> Set by the government quarterly. Generally higher than FD rates. (<a href='https://www.nsiindia.gov.in/ppf.aspx' target='_blank' rel='noopener noreferrer' class='text-xs'>Source: NSI</a>)",
         "<strong>Contribution Limit:</strong> Min ₹500, Max ₹1.5 lakh per financial year.",
         "<strong>Best For:</strong> Long-term goals like retirement, children's education, and disciplined, tax-free saving."
       ]
@@ -706,7 +708,7 @@
         "<strong>Lock-in Period:</strong> Flexible, ranging from 7 days to 10 years. Premature withdrawal is possible with a penalty.",
         "<strong>Interest Rate:</strong> Fixed at the time of investment for the entire tenure. Varies by bank and tenure.",
         "<strong>Contribution Limit:</strong> No upper limit on investment.",
-        "<strong>Insurance:</strong> Deposits are insured up to ₹5 lakh by DICGC. <a href='https://www.dicgc.org.in/' target='_blank' rel='noopener noreferrer' class='text-xs'>(Source: DICGC)</a>",
+        "<strong>Insurance:</strong> Deposits are insured up to ₹5 lakh by DICGC. (<a href='https://www.dicgc.org.in/' target='_blank' rel='noopener noreferrer' class='text-xs'>Source: DICGC</a>)",
         "<strong>Best For:</strong> Short to medium-term goals, emergency funds, and predictable returns for risk-averse investors."
       ]
     },
@@ -730,12 +732,18 @@
     },
     "faq_title": "Frequently Asked Questions",
     "faqs": [
-        { "question": "FD vs PPF — which is better?", "answer": "For long-term (15+ years) and tax-saving goals, PPF is superior due to its tax-free returns. For short-term goals (1-5 years) where you need access to your money, FD is better despite the tax." },
-        { "question": "How to calculate FD returns after tax?", "answer": "First, calculate the total interest earned using the compound interest formula. Then, calculate the tax on that interest based on your income tax slab. Your post-tax return is the total interest minus the tax amount." },
-        { "question": "How is PPF interest calculated?", "answer": "PPF interest is compounded annually, but the calculation is done monthly on the lowest balance between the 5th and the end of the month. The interest is credited to the account at the end of the financial year." },
-        { "question": "What is the PPF vs FD maturity for ₹1 lakh?", "answer": "It depends on the tenure and rates. For example, over 15 years, a recurring ₹1 lakh annual PPF investment will yield significantly more than a one-time ₹1 lakh FD, especially after tax. Use our calculator to see the exact numbers for your scenario." },
-        { "question": "Can I break an FD before maturity? What is the penalty?", "answer": "Yes, you can prematurely withdraw an FD, but the bank will usually charge a penalty of 0.5% to 1% on the interest rate." },
-        { "question": "Should a senior citizen choose FD or PPF?", "answer": "Senior citizens often benefit from special higher interest rates on FDs and may prefer the higher liquidity for regular income, making FD a strong choice for them. However, if they have a long-term, tax-saving goal, PPF can still be considered." }
+        { "question": "FD vs PPF — which is better?", "answer": "It depends: PPF is better for long-term, tax-free growth; FD is better for short-term goals and liquidity. Use the calculator to compare the exact numeric outcome for your inputs." },
+        { "question": "How to calculate FD returns after tax?", "answer": "Compute FD future value with compound interest, subtract the original principal to get interest earned, then apply your marginal tax rate to that interest to find tax owed. Post-tax maturity = gross maturity − tax." },
+        { "question": "How is PPF interest calculated?", "answer": "PPF interest is compounded annually at the rate notified quarterly by the government. If you deposit at the start of each year (annuity-due), the formula uses an annuity multiplier." },
+        { "question": "What if I want to compare equal total investments?", "answer": "This feature is coming soon. Currently, the tool compares a one-time FD investment against a recurring PPF investment, which is a common real-world scenario." },
+        { "question": "Does PPF allow early withdrawals?", "answer": "Partial withdrawals are permitted from the 7th financial year under limits; loans are available between years 3 and 6. Full premature closure is allowed only in specific cases (e.g., serious illness) and may carry a penalty." },
+        { "question": "Is FD interest taxable?", "answer": "Yes — FD interest is taxable at your marginal income tax slab. TDS (10%) is applicable above statutory thresholds; however, actual tax liability will depend on your slab." },
+        { "question": "Can I claim tax benefits for FD?", "answer": "Only 5-year tax-saving FDs qualify for deduction under Section 80C; their interest remains taxable." },
+        { "question": "Should a senior citizen choose FD or PPF?", "answer": "Many seniors use a mix — FDs for monthly income (banks give senior citizen rates) and PPF if they want a tax-free long-term corpus. The calculator helps quantify trade-offs." },
+        { "question": "What happens if I miss a PPF deposit?", "answer": "Missing the minimum contribution makes the account inactive; revival requires payment for missed years plus a penalty per missed year. Check your bank/Post Office for exact revival process." },
+        { "question": "Are PPF rates fixed forever?", "answer": "No — PPF rates are reviewed and notified by the government quarterly. The calculator allows you to edit the rate to model different scenarios." },
+        { "question": "Can NRIs open PPF accounts?", "answer": "NRIs cannot open new PPF accounts; existing accounts continue under specific conditions. Confirm current rules with the bank/Post Office and official guidelines." },
+        { "question": "How can I use FD laddering with PPF?", "answer": "A common strategy: max out PPF for tax-free long-term growth, and ladder FDs with staggered maturities for liquidity. This balances safety, liquidity and tax efficiency." }
     ],
     "conclusion": {
       "title": "Final Thoughts: Making the Right Choice",

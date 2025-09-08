@@ -6,8 +6,9 @@ import type { Metadata } from "next";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Landmark, ArrowRightLeft, ShieldCheck, Banknote, HelpCircle, Star } from "lucide-react";
+import { Landmark, ArrowRightLeft, ShieldCheck, Banknote, HelpCircle, Star, AlertTriangle } from "lucide-react";
 import Link from "next/link";
+import { Alert, AlertDescription } from "@/components/ui/alert";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -98,6 +99,22 @@ export default async function FdVsPpfCalculatorPage({ params }: { params: { lang
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.fd_vs_ppf_calculator.quick_answer.body.replace(/{lang}/g, params.lang) }}></p>
+          </CardContent>
+        </Card>
+
+        <Card className="mt-12 shadow-lg">
+          <CardHeader>
+              <h2 className="text-2xl font-bold">{dictionary.fd_vs_ppf_calculator.how_it_works.title}</h2>
+          </CardHeader>
+          <CardContent className="space-y-6">
+            <div className="bg-muted/50 p-4 rounded-lg">
+              <h3 className="font-semibold text-lg mb-2">{dictionary.fd_vs_ppf_calculator.how_it_works.example1.title}</h3>
+              <div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.fd_vs_ppf_calculator.how_it_works.example1.body }} />
+            </div>
+            <div className="bg-muted/50 p-4 rounded-lg">
+              <h3 className="font-semibold text-lg mb-2">{dictionary.fd_vs_ppf_calculator.how_it_works.example2.title}</h3>
+               <div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.fd_vs_ppf_calculator.how_it_works.example2.body }} />
+            </div>
           </CardContent>
         </Card>
 

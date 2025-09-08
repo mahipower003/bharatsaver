@@ -2,11 +2,11 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useForm, Controller } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
-import { Loader2, ArrowRightLeft, Twitter, Printer, Download } from 'lucide-react';
+import { Loader2, ArrowRightLeft, Twitter, Printer, Download, AlertTriangle } from 'lucide-react';
 import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 import { Button } from '@/components/ui/button';
@@ -14,7 +14,6 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import type { Dictionary } from '@/types';
 import { type ChartConfig } from '@/components/ui/chart';
 import { Alert, AlertDescription, AlertTitle } from '../ui/alert';
@@ -202,7 +201,6 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
                     <FormItem>
                       <FormLabel>{dictionary.investment_amount_label}</FormLabel>
                       <FormControl><Input type="number" {...field} /></FormControl>
-                      <CardDescription>{dictionary.investment_amount_note}</CardDescription>
                       <FormMessage />
                     </FormItem>
                   )} />
@@ -210,7 +208,24 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
                     <FormItem>
                       <FormLabel>{dictionary.tenure_label}</FormLabel>
                       <FormControl><Input type="number" {...field} /></FormControl>
-                      <CardDescription>{dictionary.tenure_note}</CardDescription>
+                      <FormMessage />
+                    </FormItem>
+                  )} />
+                   <FormField control={form.control} name="taxBracket" render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>{dictionary.tax_bracket_label}</FormLabel>
+                      <Select onValueChange={(value) => field.onChange(Number(value))} defaultValue={String(field.value)}>
+                          <FormControl>
+                          <SelectTrigger><SelectValue placeholder="Select tax bracket" /></SelectTrigger>
+                          </FormControl>
+                          <SelectContent>
+                          <SelectItem value="0">0%</SelectItem>
+                          <SelectItem value="5">5%</SelectItem>
+                          <SelectItem value="10">10%</SelectItem>
+                          <SelectItem value="20">20%</SelectItem>
+                          <SelectItem value="30">30%</SelectItem>
+                          </SelectContent>
+                      </Select>
                       <FormMessage />
                     </FormItem>
                   )} />
@@ -231,24 +246,6 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
                         </FormItem>
                     )} />
                 </div>
-                 <FormField control={form.control} name="taxBracket" render={({ field }) => (
-                    <FormItem>
-                    <FormLabel>{dictionary.tax_bracket_label}</FormLabel>
-                    <Select onValueChange={(value) => field.onChange(Number(value))} defaultValue={String(field.value)}>
-                        <FormControl>
-                        <SelectTrigger><SelectValue placeholder="Select tax bracket" /></SelectTrigger>
-                        </FormControl>
-                        <SelectContent>
-                        <SelectItem value="0">0%</SelectItem>
-                        <SelectItem value="5">5%</SelectItem>
-                        <SelectItem value="10">10%</SelectItem>
-                        <SelectItem value="20">20%</SelectItem>
-                        <SelectItem value="30">30%</SelectItem>
-                        </SelectContent>
-                    </Select>
-                    <FormMessage />
-                    </FormItem>
-                )} />
               </div>
               <Button type="submit" disabled={isLoading} className="w-full md:w-auto">
                 {isLoading ? <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> {dictionary.loading}</> : dictionary.calculate_button}
@@ -262,57 +259,66 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
 
       {result && (
         <>
-            <Alert className="mt-8">
-              <AlertTitle>{dictionary.assumptions.title}</AlertTitle>
-              <AlertDescription dangerouslySetInnerHTML={{ __html: dictionary.assumptions.body }} />
+            <Alert variant="destructive" className="mt-8">
+              <AlertTriangle className="h-4 w-4" />
+              <AlertTitle>{dictionary.clarifier_note.title}</AlertTitle>
+              <AlertDescription dangerouslySetInnerHTML={{ __html: dictionary.clarifier_note.body }} />
             </Alert>
+
+            <Alert className="mt-4">
+              <AlertTitle>{dictionary.assumptions.title}</AlertTitle>
+              <AlertDescription>
+                <div className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dictionary.assumptions.body }} />
+              </AlertDescription>
+            </Alert>
+            
             <Card className="mt-4 animate-in fade-in-50 slide-in-from-bottom-5 shadow-lg">
-            <CardHeader>
-                <CardTitle>{dictionary.results_title}</CardTitle>
-                <CardDescription>
-                    {dictionary.result_snapshot.replace('{winner}', winner || '').replace('{difference}', formatCurrency(difference))}
-                </CardDescription>
-            </CardHeader>
-            <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                    <div className="border p-4 rounded-lg">
-                        <h3 className="text-lg font-semibold text-center mb-2">{dictionary.fd_label}</h3>
-                        <div className="space-y-2">
-                            <p className="flex justify-between"><span>{dictionary.fd_maturity_label}</span> <span className="font-bold">{formatCurrency(result.fdMaturity)}</span></p>
-                            <p className="flex justify-between"><span>{dictionary.fd_post_tax_maturity_label}</span> <span className="font-bold text-primary">{formatCurrency(result.fdPostTaxMaturity)}</span></p>
-                            <p className="flex justify-between text-sm text-muted-foreground"><span>{dictionary.total_interest_label}</span> <span>{formatCurrency(result.fdInterest)}</span></p>
-                            <p className="flex justify-between text-sm text-muted-foreground"><span>{dictionary.total_investment_label}</span> <span>{formatCurrency(form.getValues().investmentAmount)}</span></p>
-                        </div>
-                    </div>
-                    <div className="border p-4 rounded-lg">
-                        <h3 className="text-lg font-semibold text-center mb-2">{dictionary.ppf_label}</h3>
-                        <div className="space-y-2">
-                            <p className="flex justify-between"><span>{dictionary.ppf_maturity_label}</span> <span className="font-bold text-primary">{formatCurrency(result.ppfMaturity)}</span></p>
-                            <p className="flex justify-between text-sm text-muted-foreground"><span>{dictionary.total_interest_label}</span> <span>{formatCurrency(result.ppfInterest)}</span></p>
-                            <p className="flex justify-between text-sm text-muted-foreground"><span>{dictionary.total_investment_label}</span> <span>{formatCurrency(result.totalPpfInvestment)}</span></p>
-                        </div>
-                    </div>
-                </div>
+              <CardHeader>
+                  <CardTitle>{dictionary.results_title}</CardTitle>
+                  <CardDescription>
+                      {dictionary.result_snapshot.replace('{winner}', winner || '').replace('{difference}', formatCurrency(difference))}
+                  </CardDescription>
+              </CardHeader>
+              <CardContent>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                      <div className="border p-4 rounded-lg">
+                          <h3 className="text-lg font-semibold text-center mb-2">{dictionary.fd_label}</h3>
+                          <div className="space-y-2">
+                              <p className="flex justify-between"><span>{dictionary.fd_maturity_label}</span> <span className="font-bold">{formatCurrency(result.fdMaturity)}</span></p>
+                              <p className="flex justify-between"><span>{dictionary.fd_post_tax_maturity_label}</span> <span className="font-bold text-primary">{formatCurrency(result.fdPostTaxMaturity)}</span></p>
+                              <p className="flex justify-between text-sm text-muted-foreground"><span>{dictionary.total_interest_label}</span> <span>{formatCurrency(result.fdInterest)}</span></p>
+                              <p className="flex justify-between text-sm text-muted-foreground"><span>{dictionary.total_investment_label}</span> <span>{formatCurrency(form.getValues().investmentAmount)}</span></p>
+                          </div>
+                      </div>
+                      <div className="border p-4 rounded-lg">
+                          <h3 className="text-lg font-semibold text-center mb-2">{dictionary.ppf_label}</h3>
+                          <div className="space-y-2">
+                              <p className="flex justify-between"><span>{dictionary.ppf_maturity_label}</span> <span className="font-bold text-primary">{formatCurrency(result.ppfMaturity)}</span></p>
+                              <p className="flex justify-between text-sm text-muted-foreground"><span>{dictionary.total_interest_label}</span> <span>{formatCurrency(result.ppfInterest)}</span></p>
+                              <p className="flex justify-between text-sm text-muted-foreground"><span>{dictionary.total_investment_label}</span> <span>{formatCurrency(result.totalPpfInvestment)}</span></p>
+                          </div>
+                      </div>
+                  </div>
 
-                <ResponsiveContainer width="100%" height={300}>
-                <BarChart data={result.chartData}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="name" />
-                    <YAxis tickFormatter={(value) => (value / 100000).toLocaleString('en-IN') + 'L'} />
-                    <Tooltip contentStyle={{ borderRadius: "var(--radius)", border: "1px solid hsl(var(--border))", background: "hsl(var(--background))" }} formatter={(value: number) => formatCurrency(value)} />
-                    <Legend />
-                    <Bar dataKey="Gross Value" fill="hsl(var(--secondary-foreground))" radius={[4, 4, 0, 0]} />
-                    <Bar dataKey="Post-Tax Value" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
-                </BarChart>
-                </ResponsiveContainer>
+                  <ResponsiveContainer width="100%" height={300}>
+                  <BarChart data={result.chartData}>
+                      <CartesianGrid strokeDasharray="3 3" />
+                      <XAxis dataKey="name" />
+                      <YAxis tickFormatter={(value) => (value / 100000).toLocaleString('en-IN') + 'L'} />
+                      <Tooltip contentStyle={{ borderRadius: "var(--radius)", border: "1px solid hsl(var(--border))", background: "hsl(var(--background))" }} formatter={(value: number) => formatCurrency(value)} />
+                      <Legend />
+                      <Bar dataKey="Gross Value" fill="hsl(var(--secondary-foreground))" radius={[4, 4, 0, 0]} />
+                      <Bar dataKey="Post-Tax Value" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
+                  </BarChart>
+                  </ResponsiveContainer>
 
-                <div className="flex flex-wrap items-center justify-center gap-4 mt-8">
-                    <Button variant="outline" size="sm" onClick={() => handleShare('whatsapp')}><WhatsAppIcon className="mr-2 h-4 w-4" /> WhatsApp</Button>
-                    <Button variant="outline" size="sm" onClick={() => handleShare('twitter')}><Twitter className="mr-2 h-4 w-4" /> Twitter</Button>
-                    <Button variant="outline" size="sm" onClick={handlePrint}><Printer className="mr-2 h-4 w-4" /> Print</Button>
-                    <Button variant="outline" size="sm" onClick={handleCSVExport}><Download className="mr-2 h-4 w-4" />{dictionary.export_csv}</Button>
-                </div>
-            </CardContent>
+                  <div className="flex flex-wrap items-center justify-center gap-4 mt-8">
+                      <Button variant="outline" size="sm" onClick={() => handleShare('whatsapp')}><WhatsAppIcon className="mr-2 h-4 w-4" /> WhatsApp</Button>
+                      <Button variant="outline" size="sm" onClick={() => handleShare('twitter')}><Twitter className="mr-2 h-4 w-4" /> Twitter</Button>
+                      <Button variant="outline" size="sm" onClick={handlePrint}><Printer className="mr-2 h-4 w-4" /> Print</Button>
+                      <Button variant="outline" size="sm" onClick={handleCSVExport}><Download className="mr-2 h-4 w-4" />{dictionary.export_csv}</Button>
+                  </div>
+              </CardContent>
             </Card>
         </>
       )}
