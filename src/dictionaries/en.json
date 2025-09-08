@@ -796,6 +796,10 @@
     "total_tax_label": "Total Tax Payable",
     "taxable_income_label": "Taxable Income",
     "net_income_label": "Take-home Income (Post-Tax)",
+    "assumptions": {
+      "title": "Calculator Assumptions",
+      "body": "The calculator is updated for FY 2024-25 (AY 2025-26). Standard Deduction of ₹50,000 is applied to both regimes for salaried individuals. All calculations are based on the slab rates published by the Income Tax Department of India. This is an estimator and not tax advice."
+    },
     "comparison_table": {
       "title": "Old vs New Tax Regime — Quick Comparison",
       "description": "A quick look at what's allowed in each regime.",
@@ -827,14 +831,14 @@
     },
     "faq_title": "Frequently Asked Questions",
     "faqs": [
-      { "question": "What is the new tax regime?", "answer": "The new tax regime offers lower income tax slab rates but does not allow most common deductions and exemptions like those under Section 80C, 80D, or HRA. It is the default regime for FY 2024-25." },
-      { "question": "What is the old tax regime?", "answer": "The old tax regime has higher tax slab rates but allows you to claim over 70 deductions and exemptions, such as Section 80C (for investments), 80D (for medical insurance), and HRA (House Rent Allowance)." },
-      { "question": "Which is better: old vs new for ₹10 lakh salary?", "answer": "It depends on your deductions. If your total deductions (80C, HRA, etc.) are more than ₹2.5 lakh, the Old Regime is usually better. If not, the New Regime is likely more beneficial. Use our calculator for an exact comparison." },
+      { "question": "What is the new tax regime?", "answer": "The new tax regime offers lower income tax slab rates but does not allow most common deductions like Section 80C, 80D, or HRA. It is the default regime for FY 2024-25." },
+      { "question": "What is the old tax regime?", "answer": "The old tax regime has higher tax slab rates but allows you to claim over 70 deductions like Section 80C, 80D, and HRA." },
+      { "question": "Which is better: old vs new for ₹10 lakh salary?", "answer": "It depends on your deductions. If your total deductions (80C, HRA, etc.) are more than ₹2.5 lakh, the Old Regime is usually better. If not, the New Regime is likely more beneficial." },
       { "question": "Can you claim HRA in new regime?", "answer": "No, HRA exemption cannot be claimed under the new tax regime." },
-      { "question": "Can I claim 80C under new regime?", "answer": "No, deductions under Section 80C (like PPF, ELSS, Life Insurance) are not allowed in the new tax regime." },
-      { "question": "How is standard deduction treated in new regime?", "answer": "A standard deduction of ₹50,000 is available for salaried individuals and pensioners under both the old and the new tax regimes." },
-      { "question": "Is rebate under section 87A available in 2025?", "answer": "Yes. In the new regime, if your taxable income is up to ₹7 lakh, you pay zero tax due to the rebate. In the old regime, the rebate is available for taxable income up to ₹5 lakh." },
-      { "question": "What is the last date to file ITR for FY 2024-25?", "answer": "For most individuals and salaried employees, the due date to file their Income Tax Return (ITR) for the Financial Year 2024-25 (Assessment Year 2025-26) is 31st July 2025." },
+      { "question": "Can I claim 80C under new regime?", "answer": "No, deductions under Section 80C are not allowed in the new tax regime." },
+      { "question": "How is standard deduction treated in new regime?", "answer": "A standard deduction of ₹50,000 is available for salaried individuals under both the old and new tax regimes." },
+      { "question": "Is rebate under section 87A available in 2025?", "answer": "Yes. In the new regime, if your taxable income is up to ₹7 lakh, you pay zero tax. In the old regime, the rebate is available for taxable income up to ₹5 lakh." },
+      { "question": "What is the last date to file ITR for FY 2024-25?", "answer": "For most individuals, the due date to file their Income Tax Return for FY 2024-25 (AY 2025-26) is 31st July 2025." },
       { "question": "Can I switch between regimes every year?", "answer": "Salaried individuals can choose between the old and new regimes every year. However, individuals with business income have only one opportunity to switch back to the old regime after opting for the new one." }
     ],
     "next_steps": {
@@ -936,3 +940,5 @@
     "view_calculator": "View Calculator"
   }
 }
+
+    

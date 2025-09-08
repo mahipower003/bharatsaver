@@ -9,6 +9,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { FileText, Download, TrendingUp, Star, AlertTriangle, CheckCircle } from "lucide-react";
 import Link from "next/link";
 import { AuthorCard } from "@/components/layout/AuthorCard";
+import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -134,8 +135,16 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
         </div>
         
         <TaxRegimeCalculator dictionary={dictionary.tax_regime_calculator} />
+        
+        <Alert className="mt-8">
+          <AlertTriangle className="h-4 w-4" />
+          <AlertTitle>{dictionary.tax_regime_calculator.assumptions.title}</AlertTitle>
+          <AlertDescription>
+            <div className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.assumptions.body }} />
+          </AlertDescription>
+        </Alert>
 
-        <Card className="mt-12 shadow-lg">
+        <Card className="mt-8 shadow-lg">
           <CardHeader>
             <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.comparison_table.title}</h2>
           </CardHeader>
@@ -162,14 +171,14 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
           </CardContent>
         </Card>
 
-        <Card className="mt-12 shadow-lg">
+        <Card className="mt-8 shadow-lg">
           <CardHeader>
             <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.how_we_calculate.title}</h2>
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.how_we_calculate.body.replace('{lang}', params.lang) }} />
         </Card>
 
-        <Card className="mt-12 shadow-lg">
+        <Card className="mt-8 shadow-lg">
           <CardHeader>
             <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.common_scenarios.title}</h2>
           </CardHeader>
