@@ -684,7 +684,7 @@
       "title": "How Returns are Calculated (Worked Examples)",
       "example1": {
         "title": "Example 1 — FD (Lump-Sum)",
-        "body": "<strong>Input:</strong> ₹100,000 lump-sum, 7% p.a., 15 years, 30% tax bracket.<br/><strong>Calculation:</strong><ol><li>Future Value = 100,000 × (1.07)^15 = ₹275,903.</li><li>Total Interest = 275,903 - 100,000 = ₹175,903.</li><li>Tax on Interest (30%) = 0.30 × 175,903 = ₹52,771.</li><li><strong>Post-Tax Maturity = 275,903 - 52,771 = ₹223,132.</strong></li></ol>"
+        "body": "<strong>Input:</strong> ₹100,000 lump-sum, 7% p.a., 15 years.<br/><strong>Calculation:</strong><ol><li>Future Value = 100,000 × (1.07)^15 = ₹275,903.</li><li>Total Interest = 275,903 - 100,000 = ₹175,903.</li><li>Tax on Interest (30%) = 0.30 × 175,903 = ₹52,771.</li><li><strong>Post-Tax Maturity = 275,903 - 52,771 = ₹223,132.</strong></li></ol>"
       },
       "example2": {
         "title": "Example 2 — PPF (Recurring Annual Deposit)",
@@ -848,6 +848,14 @@
   "author_card": {
     "title": "About the Author",
     "role": "Founder & Finance Expert",
-    "bio": "Mahesh Chaube, CFP is a Certified Financial Planner with extensive experience helping Indian families build tax-efficient retirement and education plans. Mahesh specialises in retirement strategy, tax-optimised fixed-income planning and practical financial tools (calculators, worksheets) that simplify decision-making for everyday investors. He regularly advises fintechs and writes data-driven personal finance guides."
+    "bio": "Mahesh Chaube, CFP is a Certified Financial Planner with extensive experience helping Indian families build tax-efficient retirement and education plans. Mahesh specialises in retirement strategy, tax-optimised fixed-income planning and practical financial tools (calculators, worksheets) that simplify decision-making for everyday investors. He regularly advises fintechs and writes data-driven personal finance guides.",
+    "author_page_link": "View all articles"
+  },
+  "author_page": {
+    "meta_title": "Articles by Mahesh Chaube, CFP | BharatSaver",
+    "meta_description": "Explore all financial calculators and guides written by Mahesh Chaube, a Certified Financial Planner and founder of BharatSaver.",
+    "h1": "Mahesh Chaube, CFP",
+    "h2": "Calculators & Guides",
+    "view_calculator": "View Calculator"
   }
 }

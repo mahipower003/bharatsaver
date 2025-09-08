@@ -683,7 +683,7 @@
       "title": "How Returns are Calculated (Worked Examples)",
       "example1": {
         "title": "Example 1 — FD (Lump-Sum)",
-        "body": "<strong>Input:</strong> ₹100,000 lump-sum, 7% p.a., 15 years, 30% tax bracket.<br/><strong>Calculation:</strong><ol><li>Future Value = 100,000 × (1.07)^15 = ₹275,903.</li><li>Total Interest = 275,903 - 100,000 = ₹175,903.</li><li>Tax on Interest (30%) = 0.30 × 175,903 = ₹52,771.</li><li><strong>Post-Tax Maturity = 275,903 - 52,771 = ₹223,132.</strong></li></ol>"
+        "body": "<strong>Input:</strong> ₹100,000 lump-sum, 7% p.a., 15 years.<br/><strong>Calculation:</strong><ol><li>Future Value = 100,000 × (1.07)^15 = ₹275,903.</li><li>Total Interest = 275,903 - 100,000 = ₹175,903.</li><li>Tax on Interest (30%) = 0.30 × 175,903 = ₹52,771.</li><li><strong>Post-Tax Maturity = 275,903 - 52,771 = ₹223,132.</strong></li></ol>"
       },
       "example2": {
         "title": "Example 2 — PPF (Recurring Annual Deposit)",
@@ -761,92 +761,100 @@
     }
   },
   "tax_regime_calculator": {
-    "meta_title": "Old vs New Tax Regime Calculator (AY 2025-26) | BharatSaver",
-    "meta_description": "Use our free calculator to compare your income tax liability under the Old and New tax regimes in India and find out which is better for you for AY 2025-26.",
-    "h1": "Old vs New Tax Regime Calculator"
+    "meta_title": "పాత vs కొత్త పన్ను విధానం క్యాలిక్యులేటర్ (AY 2025-26) | BharatSaver",
+    "meta_description": "భారతదేశంలో పాత మరియు కొత్త పన్ను విధానాల కింద మీ ఆదాయపు పన్ను బాధ్యతను పోల్చడానికి మరియు మీకు ఏది మంచిదో కనుగొనడానికి మా ఉచిత క్యాలిక్యులేటర్‌ను ఉపయోగించండి AY 2025-26 కోసం.",
+    "h1": "పాత vs కొత్త పన్ను విధానం క్యాలిక్యులేటర్"
   },
   "retirement_corpus_calculator": {
-    "meta_title": "Retirement Corpus Calculator for India (2025) | BharatSaver",
-    "meta_description": "Plan for your retirement by calculating the total corpus required for your post-retirement life based on your financial goals. Use our free 2025 retirement calculator.",
-    "h1": "Retirement Corpus Calculator"
+    "meta_title": "భారతదేశం కోసం పదవీ విరమణ కార్పస్ క్యాలిక్యులేటర్ (2025) | BharatSaver",
+    "meta_description": "మీ ఆర్థిక లక్ష్యాల ఆధారంగా మీ పదవీ విరమణ అనంతర జీవితానికి అవసరమైన మొత్తం కార్పస్‌ను లెక్కించడం ద్వారా మీ పదవీ విరమణ కోసం ప్లాన్ చేయండి. మా ఉచిత 2025 పదవీ విరమణ క్యాలిక్యులేటర్‌ను ఉపయోగించండి.",
+    "h1": "పదవీ విరమణ కార్పస్ క్యాలిక్యులేటర్"
   },
   "loan_optimization_calculator": {
-    "meta_title": "Loan Optimizer & EMI Calculator (Prepayment) | BharatSaver",
-    "meta_description": "Use our free Loan Optimization Calculator to calculate your EMI and see how extra payments (prepayment) can help you reduce your loan tenure and save interest. Updated for 2025.",
-    "h1": "Loan Optimization Calculator"
+    "meta_title": "లోన్ ఆప్టిమైజర్ & EMI క్యాలిక్యులేటర్ (ప్రీపేమెంట్) | BharatSaver",
+    "meta_description": "మీ EMIని లెక్కించడానికి మా ఉచిత లోన్ ఆప్టిమైజేషన్ క్యాలిక్యులేటర్‌ను ఉపయోగించండి మరియు అదనపు చెల్లింపులు (ప్రీపేమెంట్) మీ లోన్ కాలాన్ని తగ్గించడానికి మరియు వడ్డీని ఆదా చేయడానికి ఎలా సహాయపడతాయో చూడండి. 2025 కోసం నవీకరించబడింది.",
+    "h1": "లోన్ ఆప్టిమైజేషన్ క్యాలిక్యులేటర్"
   },
   "mutual_fund_overlap_calculator": {
-    "meta_title": "Mutual Fund Overlap Calculator India (2025) | BharatSaver",
-    "meta_description": "Check for portfolio overlap in your mutual funds to ensure proper diversification. Use our free Mutual Fund Overlap Calculator for Indian funds for 2025.",
-    "h1": "Mutual Fund Overlap Calculator"
+    "meta_title": "మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ క్యాలిక్యులేటర్ ఇండియా (2025) | BharatSaver",
+    "meta_description": "సరైన వైవిధ్యతను నిర్ధారించడానికి మీ మ్యూచువల్ ఫండ్స్‌లో పోర్ట్‌ఫోలియో ఓవర్‌ల్యాప్‌ను తనిఖీ చేయండి. భారతీయ ఫండ్ల కోసం మా ఉచిత మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ క్యాలిక్యులేటర్‌ను ఉపయోగించండి 2025 కోసం.",
+    "h1": "మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ క్యాలిక్యులేటర్"
   },
   "ups_pension_calculator": {
-    "meta_title": "UPS Pension Scheme Calculator (2025) | BharatSaver",
-    "meta_description": "Estimate your potential pension amount under the Universal Pension Scheme (UPS) with our easy-to-use calculator. Plan for your future in 2025.",
-    "h1": "UPS Pension Scheme Calculator"
+    "meta_title": "UPS పెన్షన్ స్కీమ్ క్యాలిక్యులేటర్ (2025) | BharatSaver",
+    "meta_description": "మా సులభంగా ఉపయోగించగల క్యాలిక్యులేటర్‌తో యూనివర్సల్ పెన్షన్ స్కీమ్ (UPS) కింద మీ సంభావ్య పెన్షన్ మొత్తాన్ని అంచనా వేయండి. 2025 లో మీ భవిష్యత్తు కోసం ప్లాన్ చేయండి.",
+    "h1": "UPS పెన్షన్ స్కీమ్ క్యాలిక్యులేటర్"
   },
   "scheme_selector": {
-    "title": "Investment Scheme Selector",
-    "description": "Answer a few questions to find the best investment scheme for your needs.",
-    "meta_title": "AI Investment Scheme Selector Quiz (2025) | BharatSaver",
-    "meta_description": "Use our AI-powered Scheme Selector Quiz to get a recommendation for the best investment scheme (PPF, SSY, NPS, APY, FD) for you in 2025.",
-    "h1": "AI Scheme Selector Quiz",
-    "age_label": "Your Age",
-    "income_label": "Current Annual Income (in ₹)",
-    "risk_label": "Your Risk Tolerance",
-    "risk_low": "Low",
-    "risk_medium": "Medium",
-    "risk_high": "High",
-    "horizon_label": "Investment Horizon",
-    "horizon_short": "Short-term (< 5 years)",
-    "horizon_medium": "Medium-term (5-10 years)",
-    "horizon_long": "Long-term (> 10 years)",
-    "goal_label": "Primary Investment Goal",
-    "goal_placeholder": "e.g., Retirement, Child's education",
-    "submit_button": "Find my Scheme",
-    "loading": "Finding the best scheme for you...",
-    "result_title": "Your Recommended Scheme",
-    "result_reasoning": "Reasoning"
+    "title": "పెట్టుబడి పథకం సెలెక్టర్",
+    "description": "మీ అవసరాలకు ఉత్తమ పెట్టుబడి పథకాన్ని కనుగొనడానికి కొన్ని ప్రశ్నలకు సమాధానం ఇవ్వండి.",
+    "meta_title": "AI ఇన్వెస్ట్‌మెంట్ స్కీమ్ సెలెక్టర్ క్విజ్ (2025) | BharatSaver",
+    "meta_description": "మీ కోసం ఉత్తమ పెట్టుబడి పథకం (PPF, SSY, NPS, APY, FD) కోసం సిఫార్సు పొందడానికి మా AI- ఆధారిత స్కీమ్ సెలెక్టర్ క్విజ్‌ను ఉపయోగించండి 2025 లో.",
+    "h1": "AI స్కీమ్ సెలెక్టర్ క్విజ్",
+    "age_label": "మీ వయస్సు",
+    "income_label": "ప్రస్తుత వార్షిక ఆదాయం (₹ లో)",
+    "risk_label": "మీ రిస్క్ సహనం",
+    "risk_low": "తక్కువ",
+    "risk_medium": "మధ్యస్థం",
+    "risk_high": "అధికం",
+    "horizon_label": "పెట్టుబడి కాలం",
+    "horizon_short": "స్వల్పకాలిక (< 5 సంవత్సరాలు)",
+    "horizon_medium": "మధ్యకాలిక (5-10 సంవత్సరాలు)",
+    "horizon_long": "దీర్ఘకాలిక (> 10 సంవత్సరాలు)",
+    "goal_label": "ప్రాథమిక పెట్టుబడి లక్ష్యం",
+    "goal_placeholder": "ఉదా., పదవీ విరమణ, పిల్లల చదువు",
+    "submit_button": "నా పథకాన్ని కనుగొనండి",
+    "loading": "మీ కోసం ఉత్తమ పథకాన్ని కనుగొనಲಾಗುತ್ತಿದೆ...",
+    "result_title": "మీ సిఫార్సు చేసిన పథకం",
+    "result_reasoning": "హేతువు"
   },
   "terms_page": {
-    "meta_title": "Terms and Conditions | BharatSaver",
-    "meta_description": "Read the terms and conditions for using the BharatSaver website and its tools.",
-    "h1": "Terms and Conditions",
-    "p1": "Welcome to BharatSaver. By accessing our website, you agree to these terms and conditions. Please read them carefully.",
-    "h2_1": "Use of Website",
-    "p2": "The content and tools provided on this website are for general information and use only. They are subject to change without notice. Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable.",
-    "h2_2": "Accuracy of Information",
-    "p3": "While we strive to provide accurate and up-to-date information, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose.",
-    "h2_3": "Governing Law",
-    "p4": "Your use of this website and any dispute arising out of such use of the website is subject to the laws of India."
+    "meta_title": "నిబంధనలు మరియు షరతులు | BharatSaver",
+    "meta_description": "భారత్‌సేవర్ వెబ్‌సైట్ మరియు దాని సాధనాలను ఉపయోగించడం కోసం నిబంధనలు మరియు షరతులను చదవండి.",
+    "h1": "నిబంధనలు మరియు షరతులు",
+    "p1": "భారత్‌సేవర్‌కు స్వాగతం. మా వెబ్‌సైట్‌ను యాక్సెస్ చేయడం ద్వారా, మీరు ఈ నిబంధనలు మరియు షరతులకు అంగీకరిస్తున్నారు. దయచేసి వాటిని జాగ్రత్తగా చదవండి.",
+    "h2_1": "వెబ్‌సైట్ వాడకం",
+    "p2": "ఈ వెబ్‌సైట్‌లో అందించబడిన కంటెంట్ మరియు సాధనాలు సాధారణ సమాచారం మరియు ఉపయోగం కోసం మాత్రమే. అవి నోటీసు లేకుండా మార్పుకు లోబడి ఉంటాయి. ఈ వెబ్‌సైట్‌లోని ఏదైనా సమాచారం లేదా మెటీరియల్‌ల మీ ఉపయోగం పూర్తిగా మీ స్వంత పూచీతో ఉంటుంది, దీనికి మేము బాధ్యత వహించము.",
+    "h2_2": "సమాచారం యొక్క ఖచ్చితత్వం",
+    "p3": "మేము ఖచ్చితమైన మరియు నవీనమైన సమాచారాన్ని అందించడానికి ప్రయత్నిస్తున్నప్పుడు, వెబ్‌సైట్ లేదా వెబ్‌సైట్‌లో ఉన్న సమాచారం, ఉత్పత్తులు, సేవలు లేదా సంబంధిత గ్రాఫिक्स యొక్క పరిపూర్ణత, ఖచ్చితత్వం, విశ్వసనీయత, అనుకూలత లేదా లభ్యత గురించి ఏ ఉద్దేశానికైనా మేము ఎలాంటి ప్రాతినిధ్యాలు లేదా వారెంటీలు ఇవ్వము.",
+    "h2_3": "పాలక చట్టం",
+    "p4": "ఈ వెబ్‌సైట్ యొక్క మీ ఉపయోగం మరియు వెబ్‌సైట్ యొక్క అటువంటి ఉపయోగం నుండి ఉత్పన్నమయ్యే ఏదైనా వివాదం భారతదేశ చట్టాలకు లోబడి ఉంటుంది."
   },
   "contact_page": {
-    "meta_title": "Contact Us | BharatSaver",
-    "meta_description": "Get in touch with the BharatSaver team for any questions or feedback.",
-    "h1": "Contact Us",
-    "p1": "We're here to help. Reach out to us with any questions or feedback."
+    "meta_title": "మమ్మల్ని సంప్రదించండి | BharatSaver",
+    "meta_description": "ఏవైనా ప్రశ్నలు లేదా అభిప్రాయాల కోసం భారత్‌సేవర్ బృందంతో సన్నిహితంగా ఉండండి.",
+    "h1": "మమ్మల్ని సంప్రదించండి",
+    "p1": "మేము సహాయం చేయడానికి ఇక్కడ ఉన్నాము. ఏవైనా ప్రశ్నలు లేదా అభిప్రాయాలతో మమ్మల్ని సంప్రదించండి."
   },
   "about_page": {
-    "meta_title": "About Us | BharatSaver",
-    "meta_description": "Learn more about BharatSaver's mission to empower every Indian with financial knowledge and free, easy-to-use tools.",
-    "h1": "Empowering Every Indian with Financial Knowledge",
-    "p1": "Our mission is to provide accessible and easy-to-understand financial tools and guides to help you make smarter decisions for your future.",
-    "h2_1": "Our Story",
-    "p2": "BharatSaver was founded with a simple idea: to make financial planning less intimidating and more accessible for everyone. We believe that with the right tools, anyone can take control of their financial well-being.",
-    "p3": "Our team is passionate about finance and technology, and we are dedicated to creating high-quality, reliable resources that you can trust."
+    "meta_title": "మా గురించి | BharatSaver",
+    "meta_description": "ప్రతి భారతీయుడిని ఆర్థిక పరిజ్ఞానం మరియు ఉచిత, సులభంగా ఉపయోగించగల సాధనాలతో సాధికారపరచాలనే భారత్‌సేవర్ లక్ష్యం గురించి మరింత తెలుసుకోండి.",
+    "h1": "ప్రతి భారతీయుడిని ఆర్థిక పరిజ్ఞానంతో సాధికారపరచడం",
+    "p1": "మీ భవిష్యత్తు కోసం తెలివైన నిర్ణయాలు తీసుకోవడంలో మీకు సహాయపడటానికి అందుబాటులో ఉండే మరియు సులభంగా అర్థమయ్యే ఆర్థిక సాధనాలు మరియు గైడ్‌లను అందించడమే మా లక్ష్యం.",
+    "h2_1": "మా కథ",
+    "p2": "భారత్‌సేవర్ ఒక సాధారణ ఆలోచనతో స్థాపించబడింది: ఆర్థిక ప్రణాళికను తక్కువ భయపెట్టేదిగా మరియు అందరికీ మరింత అందుబాటులోకి తీసుకురావడం. సరైన సాధనాలతో, ఎవరైనా వారి ఆర్థిక శ్రేయస్సును నియంత్రించగలరని మేము నమ్ముతున్నాము.",
+    "p3": "మా బృందం ఫైనాన్స్ మరియు టెక్నాలజీపై మక్కువ కలిగి ఉంది మరియు మీరు విశ్వసించగల అధిక-నాణ్యత, విశ్వసనీయ వనరులను రూపొందించడానికి మేము అంకితభావంతో ఉన్నాము."
   },
   "search_page": {
-    "meta_title": "Search | BharatSaver",
-    "meta_description": "Search for financial calculators and guides on BharatSaver.",
-    "title": "Search Results",
-    "title_with_query": "Search results for",
-    "h1": "Search Calculators and Guides",
-    "h1_with_query": "Search Results for",
-    "results_placeholder": "Search functionality is coming soon."
+    "meta_title": "శోధించండి | BharatSaver",
+    "meta_description": "భారత్‌సేవర్‌లో ఆర్థిక క్యాలిక్యులేటర్లు మరియు గైడ్‌ల కోసం శోధించండి.",
+    "title": "శోధన ఫలితాలు",
+    "title_with_query": "కోసం శోధన ఫలితాలు",
+    "h1": "క్యాలిక్యులేటర్లు మరియు గైడ్‌లను శోధించండి",
+    "h1_with_query": "కోసం శోధన ఫలితాలు",
+    "results_placeholder": "శోధన కార్యాచరణ త్వరలో వస్తుంది."
   },
   "author_card": {
-    "title": "लेखक के बारे में",
-    "role": "संस्थापक और वित्त विशेषज्ञ",
-    "bio": "महेश चौबे, CFP एक प्रमाणित वित्तीय योजनाकार हैं जिनके पास भारतीय परिवारों को कर-कुशल सेवानिवृत्ति और शिक्षा योजनाएं बनाने में मदद करने का व्यापक अनुभव है। महेश सेवानिवृत्ति रणनीति, कर-अनुकूलित निश्चित-आय योजना और व्यावहारिक वित्तीय उपकरणों (कैलकुलेटर, वर्कशीट) में माहिर हैं जो रोजमर्रा के निवेशकों के लिए निर्णय लेने को सरल बनाते हैं। वह नियमित रूप से फिनटेक को सलाह देते हैं और डेटा-संचालित व्यक्तिगत वित्त गाइड लिखते हैं।"
+    "title": "రచయిత గురించి",
+    "role": "వ్యవస్థాపకుడు & ఫైనాన్స్ నిపుణుడు",
+    "bio": "మహేష్ చౌబే, CFP ఒక సర్టిఫైడ్ ఫైనాన్షియల్ ప్లానర్, భారతీయ కుటుంబాలకు పన్ను-సమర్థవంతమైన పదవీ విరమణ మరియు విద్యా ప్రణాళికలను నిర్మించడంలో విస్తృతమైన అనుభవం ఉంది. మహేష్ పదవీ విరమణ వ్యూహం, పన్ను-ఆప్టిమైజ్డ్ ఫిక్స్‌డ్-ఇన్‌కమ్ ప్లానింగ్ మరియు రోజువారీ పెట్టుబడిదారులకు నిర్ణయం తీసుకోవడాన్ని సులభతరం చేసే ఆచరణాత్మక ఆర్థిక సాధనాలలో (క్యాలిక్యులేటర్లు, వర్క్‌షీట్‌లు) ప్రత్యేకత కలిగి ఉన్నారు. అతను క్రమం తప్పకుండా ఫిన్‌టెక్‌లకు సలహా ఇస్తాడు మరియు డేటా-ఆధారిత వ్యక్తిగత ఫైనాన్స్ గైడ్‌లను వ్రాస్తాడు.",
+    "author_page_link": "అన్ని కథనాలను చూడండి"
+  },
+  "author_page": {
+    "meta_title": "మహేష్ చౌబే, CFP ద్వారా కథనాలు | BharatSaver",
+    "meta_description": "మహేష్ చౌబే, ఒక సర్టిఫైడ్ ఫైనాన్షియల్ ప్లానర్ మరియు భారత్‌సేవర్ వ్యవస్థాపకుడు వ్రాసిన అన్ని ఆర్థిక క్యాలిక్యులేటర్లు మరియు గైడ్‌లను అన్వేషించండి.",
+    "h1": "మహేష్ చౌబే, CFP",
+    "h2": "క్యాలిక్యులేటర్లు & గైడ్లు",
+    "view_calculator": "క్యాలిక్యులేటర్‌ను వీక్షించండి"
   }
 }

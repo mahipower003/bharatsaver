@@ -6,12 +6,16 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Twitter, Linkedin } from 'lucide-react';
 import Link from 'next/link';
 import type { Dictionary } from '@/types';
+import { usePathname } from 'next/navigation';
 
 type AuthorCardProps = {
   dictionary: Dictionary['author_card'];
 }
 
 export function AuthorCard({ dictionary }: AuthorCardProps) {
+  const pathname = usePathname();
+  const lang = pathname.split('/')[1];
+  
   return (
     <aside className="bs-author-box mt-16" aria-labelledby="author-name">
         <Image 
@@ -34,6 +38,9 @@ export function AuthorCard({ dictionary }: AuthorCardProps) {
                     <Linkedin className="h-5 w-5"/>
                     LinkedIn
                 </a>
+                 <Link href={`/${lang}/author/mahesh-chaube`} className="flex items-center gap-2 hover:text-primary">
+                    {dictionary.author_page_link}
+                </Link>
             </p>
         </div>
     </aside>
