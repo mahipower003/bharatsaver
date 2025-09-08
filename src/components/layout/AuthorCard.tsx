@@ -13,32 +13,29 @@ type AuthorCardProps = {
 
 export function AuthorCard({ dictionary }: AuthorCardProps) {
   return (
-    <Card className="mt-12 shadow-lg">
-      <CardHeader>
-        <CardTitle>{dictionary.title}</CardTitle>
-      </CardHeader>
-      <CardContent className="flex flex-col sm:flex-row items-center gap-6">
-        <Image
-          src="/images/mahesh-chaube.jpg"
-          alt="Mahesh Chaube"
-          width={120}
-          height={120}
-          className="rounded-full border-4 border-primary/20"
+    <aside className="bs-author-box mt-16" aria-labelledby="author-name">
+        <Image 
+            src="/images/mahesh-chaube.jpg" 
+            alt="Photo of Mahesh Chaube" 
+            width={96} 
+            height={96} 
+            className="bs-author-photo" 
         />
-        <div className="text-center sm:text-left">
-          <h3 className="text-xl font-bold">Mahesh Chaube</h3>
-          <p className="text-sm text-muted-foreground">{dictionary.role}</p>
-          <p className="mt-2">{dictionary.bio}</p>
-          <div className="mt-4 flex justify-center sm:justify-start gap-4">
-            <Link href="https://x.com/mahesh_chaube33" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
-              <Twitter className="h-6 w-6 text-muted-foreground hover:text-primary" />
-            </Link>
-            <Link href="https://www.linkedin.com/in/mahi003/" aria-label="Linkedin" target="_blank" rel="noopener noreferrer">
-              <Linkedin className="h-6 w-6 text-muted-foreground hover:text-primary" />
-            </Link>
-          </div>
+        <div className="bs-author-info">
+            <h4 id="author-name" className="text-xl font-bold">Mahesh Chaube, CFP</h4>
+            <p className="bs-author-bio mt-2 text-muted-foreground">
+                {dictionary.bio}
+            </p>
+            <div className="bs-review mt-2">
+              <strong>Reviewed by:</strong> BharatSaver Editorial Team — calculations and PPF/FD rules verified against official sources (PFRDA, Income Tax Department). Review date: <time dateTime="2025-09-01">September 2025</time>.
+            </div>
+            <p className="bs-author-links mt-4 flex items-center gap-4">
+                <a href="https://www.linkedin.com/in/mahi003/" rel="noopener" target="_blank" className="flex items-center gap-2 hover:text-primary">
+                    <Linkedin className="h-5 w-5"/>
+                    LinkedIn
+                </a>
+            </p>
         </div>
-      </CardContent>
-    </Card>
+    </aside>
   );
 }

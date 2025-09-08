@@ -18,6 +18,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   const dictionary = await getDictionary(params.lang, ['ppf_calculator']);
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/ppf-calculator`;
+  const ogImageUrl = `${siteUrl}/images/calculate-ppf-online.png`;
 
   const faqItems = dictionary.ppf_calculator.faqs;
   const faqSchema = {
@@ -32,6 +33,34 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       },
     })),
   };
+  
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": pageUrl
+    },
+    "headline": "PPF Calculator 2025 — Calculate PPF Maturity Online (India)",
+    "description": "Free PPF calculator for 2025: Instantly estimate PPF maturity, interest, and tax savings (EEE). Includes year-wise charts, extension rules, and comparison with FD, NPS, and SSY.",
+    "image": ogImageUrl,
+    "author": {
+      "@type": "Person",
+      "name": "Mahesh Chaube",
+      "url": "https://www.linkedin.com/in/mahi003/",
+      "sameAs": "https://www.linkedin.com/in/mahi003/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "BharatSaver",
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${siteUrl}/icon.svg`
+      }
+    },
+    "datePublished": "2024-07-28",
+    "dateModified": "2025-09-01"
+  }
 
   return {
     title: dictionary.ppf_calculator.meta_title,
@@ -42,7 +71,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         url: pageUrl,
         siteName: 'BharatSaver',
         images: [{ 
-          url: `/images/calculate-ppf-online.png`,
+          url: ogImageUrl,
           width: 1200, 
           height: 630, 
           alt: 'BharatSaver PPF Calculator' 
@@ -54,7 +83,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         card: 'summary_large_image',
         title: dictionary.ppf_calculator.meta_title,
         description: dictionary.ppf_calculator.meta_description,
-        images: [`/images/calculate-ppf-online.png`],
+        images: [ogImageUrl],
     },
     alternates: {
       canonical: pageUrl,
@@ -64,7 +93,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     }, {} as Record<string, string>),
     },
     other: {
-      'application/ld+json': JSON.stringify(faqSchema),
+      'application/ld+json': JSON.stringify([faqSchema, articleSchema]),
     },
   };
 }
@@ -95,6 +124,13 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
             {dictionary.ppf_calculator.h1}
           </h1>
+          <div className="bs-byline justify-center text-center">
+            <span className="bs-author">By <strong>Mahesh Chaube</strong></span>
+            <span className="bs-creds">, CFP</span>
+            <span className="bs-sep">|</span>
+            <span className="bs-updated">Last updated: <time dateTime="2025-09-01">September 2025</time></span>
+            <div className="bs-reviewed">Reviewed by <strong>BharatSaver Editorial Team</strong></div>
+          </div>
           <p className="mt-4 text-lg text-muted-foreground">
             {dictionary.ppf_calculator.description}
           </p>

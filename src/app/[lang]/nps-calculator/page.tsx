@@ -17,6 +17,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   const dictionary = await getDictionary(params.lang, ['nps_calculator']);
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/nps-calculator`;
+  const ogImageUrl = `${siteUrl}/images/nps-calculator-online.png`;
 
   const faqItems = dictionary.nps_calculator.faqs;
   const faqSchema = {
@@ -32,6 +33,34 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     })),
   };
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": pageUrl
+    },
+    "headline": "NPS Calculator 2025 — National Pension System Corpus & Pension",
+    "description": "Use our NPS calculator to plan your retirement. Enter contribution, expected returns and retirement age to get corpus & monthly pension estimates.",
+    "image": ogImageUrl,
+    "author": {
+      "@type": "Person",
+      "name": "Mahesh Chaube",
+      "url": "https://www.linkedin.com/in/mahi003/",
+      "sameAs": "https://www.linkedin.com/in/mahi003/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "BharatSaver",
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${siteUrl}/icon.svg`
+      }
+    },
+    "datePublished": "2024-07-26",
+    "dateModified": "2025-09-01"
+  }
+
   return {
     title: dictionary.nps_calculator.meta_title,
     description: dictionary.nps_calculator.meta_description,
@@ -39,7 +68,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       title: "NPS Calculator 2025 — National Pension System Corpus & Pension",
       description: "Use our NPS calculator to plan your retirement. Enter contribution, expected returns and retirement age to get corpus & monthly pension estimates.",
       url: pageUrl,
-      images: [{ url: `/images/nps-calculator-online.png`, width: 1200, height: 630, alt: 'BharatSaver NPS Calculator' }],
+      images: [{ url: ogImageUrl, width: 1200, height: 630, alt: 'BharatSaver NPS Calculator' }],
       locale: params.lang === 'en' ? 'en_IN' : params.lang,
       type: 'website',
     },
@@ -47,7 +76,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       card: 'summary_large_image',
       title: dictionary.nps_calculator.meta_title,
       description: dictionary.nps_calculator.meta_description,
-      images: [`${siteUrl}/images/nps-calculator-online.png`],
+      images: [ogImageUrl],
     },
     alternates: {
       canonical: pageUrl,
@@ -57,7 +86,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       }, {} as Record<string, string>),
     },
     other: {
-      'application/ld+json': JSON.stringify(faqSchema),
+      'application/ld+json': JSON.stringify([faqSchema, articleSchema]),
     },
   };
 }
@@ -84,6 +113,13 @@ export default async function NpsCalculatorPage({ params }: { params: { lang: Lo
       <div className="mx-auto max-w-5xl">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{__html: dictionary.nps_calculator.h1}}></h1>
+           <div className="bs-byline justify-center text-center">
+            <span className="bs-author">By <strong>Mahesh Chaube</strong></span>
+            <span className="bs-creds">, CFP</span>
+            <span className="bs-sep">|</span>
+            <span className="bs-updated">Last updated: <time dateTime="2025-09-01">September 2025</time></span>
+            <div className="bs-reviewed">Reviewed by <strong>BharatSaver Editorial Team</strong></div>
+          </div>
           <p className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{__html: dictionary.nps_calculator.description}}></p>
         </div>
         
