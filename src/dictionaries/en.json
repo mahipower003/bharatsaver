@@ -667,7 +667,7 @@
     "export_csv": "Export CSV",
     "quick_answer": {
       "title": "Quick Answer: Which is better, FD or PPF?",
-      "body": "It depends on your goals. For <strong>long-term, tax-free wealth creation</strong> (like retirement), <strong>PPF is almost always better</strong> due to its EEE tax status and compounding benefits. For <strong>short-term goals or emergency funds</strong> where you need liquidity, an <strong>FD is more suitable</strong> despite the tax on interest. Use the calculator to see the exact difference for your amount."
+      "body": "It depends on your goals. For <strong>long-term, tax-free wealth creation</strong> (like retirement), <strong>PPF is almost always better</strong> due to its EEE tax status and compounding benefits. For <strong>short-term goals or emergency funds</strong> where you need liquidity, an <strong>FD is more suitable</strong> despite the tax on interest. Use our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> or the tool on this page to see the exact difference for your amount."
     },
     "ppf_features": {
       "title": "PPF: Key Features, Rules & Tax Benefits",
@@ -704,7 +704,7 @@
       }
     },
     "tax_impact": {
-      "title": "Tax Impact Explained (How tax affects effective returns)",
+      "title": "Tax Impact Explained (how tax affects effective returns)",
       "body": "The biggest difference between FD and PPF is tax. Interest from an FD is added to your 'Income from Other Sources' and taxed at your marginal slab rate. For example, if you are in the 30% tax bracket, a 7% FD effectively yields only 4.9% post-tax. In contrast, the entire interest earned from PPF is tax-free, making its effective return much higher."
     },
     "faq_title": "Frequently Asked Questions",
@@ -715,7 +715,11 @@
         { "question": "What is the PPF vs FD maturity for ₹1 lakh?", "answer": "It depends on the tenure and rates. For example, over 15 years, a recurring ₹1 lakh annual PPF investment will yield significantly more than a one-time ₹1 lakh FD, especially after tax. Use our calculator to see the exact numbers for your scenario." },
         { "question": "Can I break an FD before maturity? What is the penalty?", "answer": "Yes, you can prematurely withdraw an FD, but the bank will usually charge a penalty of 0.5% to 1% on the interest rate." },
         { "question": "Should a senior citizen choose FD or PPF?", "answer": "Senior citizens often benefit from special higher interest rates on FDs and may prefer the higher liquidity for regular income, making FD a strong choice for them. However, if they have a long-term, tax-saving goal, PPF can still be considered." }
-    ]
+    ],
+    "conclusion": {
+      "title": "Final Thoughts: Making the Right Choice",
+      "body": "Choosing between a Fixed Deposit and the Public Provident Fund ultimately depends on your financial goals, investment horizon, and need for liquidity. For secure, tax-free, long-term growth, PPF is an unmatched tool. For predictable returns on short-term savings, an FD provides reliability and access. Use our <a href='/{lang}/fd-vs-ppf-calculator' class='underline'>FD vs PPF Returns Calculator</a> to model various scenarios and make an informed decision that best suits your financial plan."
+    }
   },
   "tax_regime_calculator": {
     "meta_title": "Old vs New Tax Regime Calculator (AY 2025-26) | BharatSaver",

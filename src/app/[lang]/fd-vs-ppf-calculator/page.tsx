@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Landmark, ArrowRightLeft, ShieldCheck, Banknote, HelpCircle } from "lucide-react";
+import { Landmark, ArrowRightLeft, ShieldCheck, Banknote, HelpCircle, Star } from "lucide-react";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -97,7 +97,7 @@ export default async function FdVsPpfCalculatorPage({ params }: { params: { lang
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.fd_vs_ppf_calculator.quick_answer.body }}></p>
+            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.fd_vs_ppf_calculator.quick_answer.body.replace(/{lang}/g, params.lang) }}></p>
           </CardContent>
         </Card>
 
@@ -184,6 +184,18 @@ export default async function FdVsPpfCalculatorPage({ params }: { params: { lang
               ))}
             </Accordion>
         </div>
+
+        <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-3">
+              <Star className="h-7 w-7 text-accent" />
+              <h2 className="text-2xl font-bold">{dictionary.fd_vs_ppf_calculator.conclusion.title}</h2>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.fd_vs_ppf_calculator.conclusion.body.replace(/{lang}/g, params.lang) }}></p>
+          </CardContent>
+        </Card>
 
       </div>
     </div>
