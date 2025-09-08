@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     "image": ogImageUrl,
     "author": {
       "@type": "Person",
-      "name": "Mahesh Chaube",
+      "name": "Mahesh Chaube, CFP",
       "url": "https://www.linkedin.com/in/mahi003/",
       "sameAs": "https://www.linkedin.com/in/mahi003/"
     },
@@ -59,6 +59,11 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         "url": `${siteUrl}/icon.svg`
       }
     },
+     "reviewedBy": {
+      "@type": "Organization",
+      "name": "BharatSaver Editorial Team"
+    },
+    "about": ["Fixed Deposit", "Public Provident Fund", "FD vs PPF Returns Calculator"],
     "datePublished": "2024-07-24",
     "dateModified": "2025-09-01"
   };

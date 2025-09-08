@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     "image": ogImageUrl,
     "author": {
       "@type": "Person",
-      "name": "Mahesh Chaube",
+      "name": "Mahesh Chaube, CFP",
       "url": "https://www.linkedin.com/in/mahi003/",
       "sameAs": "https://www.linkedin.com/in/mahi003/"
     },
@@ -58,6 +58,11 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         "url": `${siteUrl}/icon.svg`
       }
     },
+    "reviewedBy": {
+      "@type": "Organization",
+      "name": "BharatSaver Editorial Team"
+    },
+    "about": ["Sukanya Samriddhi Yojana", "SSY Calculator", "Beti Bachao Beti Padhao"],
     "datePublished": "2024-07-27",
     "dateModified": "2025-09-01"
   };
