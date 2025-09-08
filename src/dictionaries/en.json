@@ -844,5 +844,10 @@
     "h1": "Search Calculators and Guides",
     "h1_with_query": "Search Results for",
     "results_placeholder": "Search functionality is coming soon."
+  },
+  "author_card": {
+    "title": "About the Author",
+    "role": "Founder & Finance Expert",
+    "bio": "Mahesh Chaube is a seasoned financial expert dedicated to simplifying personal finance for everyone. With a passion for teaching, he breaks down complex topics into easy-to-understand guides and tools."
   }
 }

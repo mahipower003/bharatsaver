@@ -8,6 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Shield, BarChart2, UserCheck, Landmark, GitCompareArrows, AlertTriangle, Star } from "lucide-react";
 import Link from "next/link";
 import { ApyPremiumChart } from "@/components/calculators/ApyPremiumChart";
+import { AuthorCard } from "@/components/layout/AuthorCard";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -63,7 +64,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 }
 
 export default async function ApyCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang, ['apy_calculator']);
+  const dictionary = await getDictionary(params.lang, ['apy_calculator', 'author_card']);
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
 
   const breadcrumbSchema = {
@@ -198,7 +199,7 @@ export default async function ApyCalculatorPage({ params }: { params: { lang: Lo
             <p className="text-muted-foreground">{dictionary.apy_calculator.conclusion.body}</p>
           </CardContent>
         </Card>
-
+        <AuthorCard dictionary={dictionary.author_card} />
       </div>
     </div>
   );

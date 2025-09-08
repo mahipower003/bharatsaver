@@ -8,6 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { CheckCircle2, TrendingUp, ShieldCheck, Scale, Star, Baby, IndianRupee, Landmark, FileText, ArrowRightLeft } from "lucide-react";
 import Link from "next/link";
+import { AuthorCard } from "@/components/layout/AuthorCard";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -72,7 +73,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 }
 
 export default async function SsyCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang, ['ssy_calculator']);
+  const dictionary = await getDictionary(params.lang, ['ssy_calculator', 'author_card']);
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
 
   const breadcrumbSchema = {
@@ -324,7 +325,7 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
             <p className="text-muted-foreground">{dictionary.ssy_calculator.conclusion.body}</p>
           </CardContent>
         </Card>
-
+        <AuthorCard dictionary={dictionary.author_card} />
       </div>
     </div>
   );

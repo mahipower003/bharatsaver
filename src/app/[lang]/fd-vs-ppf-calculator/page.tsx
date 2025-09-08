@@ -9,6 +9,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Landmark, ArrowRightLeft, ShieldCheck, Banknote, HelpCircle, Star, AlertTriangle, CheckCircle } from "lucide-react";
 import Link from "next/link";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { AuthorCard } from "@/components/layout/AuthorCard";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -65,7 +66,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 
 
 export default async function FdVsPpfCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang, ['fd_vs_ppf_calculator']);
+  const dictionary = await getDictionary(params.lang, ['fd_vs_ppf_calculator', 'author_card']);
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const comparisonData = dictionary.fd_vs_ppf_calculator.comparison.table;
 
@@ -229,7 +230,7 @@ export default async function FdVsPpfCalculatorPage({ params }: { params: { lang
             <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.fd_vs_ppf_calculator.conclusion.body.replace(/{lang}/g, params.lang) }}></p>
           </CardContent>
         </Card>
-
+        <AuthorCard dictionary={dictionary.author_card} />
       </div>
     </div>
   );

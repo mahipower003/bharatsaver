@@ -3,6 +3,7 @@ import { getDictionary } from "@/lib/dictionaries";
 import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
 import Image from "next/image";
+import { AuthorCard } from "@/components/layout/AuthorCard";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -26,7 +27,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 }
 
 export default async function AboutPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang, ['about_page']);
+  const dictionary = await getDictionary(params.lang, ['about_page', 'author_card']);
   
   return (
     <div className="py-12">
@@ -57,6 +58,7 @@ export default async function AboutPage({ params }: { params: { lang: Locale }})
                 />
             </div>
         </div>
+        <AuthorCard dictionary={dictionary.author_card} />
       </div>
     </div>
   );

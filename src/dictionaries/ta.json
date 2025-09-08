@@ -331,7 +331,7 @@
     "tax_benefits": {
         "title": "SSY இன் வரி நன்மைகள் (EEE நிலை)",
         "intro": "PPF போலவே, சுகன்யா சம்ரித்தி யோஜனா (SSY) ஒரு EEE (விலக்கு-விலக்கு-விலக்கு) முதலீடு.",
-        "body": "இதன் பொருள் உங்கள் பங்களிப்புகள் (பிரிவு 80C இன் கீழ் ஆண்டுக்கு ₹1.5 லட்சம் வரை), நீங்கள் சம்பாதிக்கும் வட்டி, మరియు இறுதி முதிர்வுத் தொகை அனைத்தும் <strong>முற்றிலும் வரி இல்லாதவை</strong>. ఇది ఒక பெண் குழந்தையின் எதிர்காலத்திற்காக சேமிப்பதற்கான மிகவும் வரி-திறமையான வழிகளில் ஒன்றாகும். பிரிவு 80C பற்றிய கூடுதல் விவரங்களுக்கு, <a href='https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx' target='_blank' rel='noopener noreferrer' class='underline'>வருமான வரிச் சட்டத்தைப்</a> பார்க்கவும்."
+        "body": "దీనర్థం మీ కంట్రిబ్యూషన్‌లు (సెక్షన్ 80C కింద సంవత్సరానికి ₹1.5 లక్షల వరకు), మీరు సంపాదించే వడ్డీ, మరియు చివరి మెచ్యూరిటీ మొత్తం అన్నీ <strong>పూర్తిగా పన్ను రహితం</strong>. இது ஒரு பெண் குழந்தையின் எதிர்காலத்திற்காக சேமிப்பதற்கான மிகவும் வரி-திறமையான வழிகளில் ஒன்றாகும். సెక్షన్ 80Cపై మరిన్ని వివరాల కోసం, <a href='https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx' target='_blank' rel='noopener noreferrer' class='underline'>ఆదాయపు పన్ను చట్టాన్ని</a> చూడండి."
     },
     "rules": {
         "title": "SSY விதிகள்: திரும்பப் பெறுதல், புத்துயிர் & நியமனம்",
@@ -380,7 +380,7 @@
       },
       {
         "question": "5 ஆம் தேதி மற்றும் 6 ஆம் தேதி டெபாசிட் செய்வது SSY வட்டியை எவ்வாறு பாதிக்கிறது?",
-        "answer": "மாதத்தின் 5 ஆம் தேதிக்கும் இறுதிக்கும் இடைப்பட்ட குறைந்தபட்ச இருப்பின் மீது வட்டி கணக்கிடப்படுகிறது. 5 ஆம் தேதிக்கு முன் டெபாசிட் செய்வது உங்கள் பணம் அந்த முழு மாதத்திற்கும் வட்டி சம்பாதிப்பதை உறுதி செய்கிறது. మీరు தாமதமாக டெபாசிட் செய்தால், அந்த குறிப்பிட்ட டெபாசிட்டிற்கு அந்த மாதத்திற்கான வட்டியை இழக்கிறீர்கள்."
+        "answer": "மாதத்தின் 5 ஆம் தேதிக்கும் இறுதிக்கும் இடைப்பட்ட குறைந்தபட்ச இருப்பின் மீது வட்டி கணக்கிடப்படுகிறது. 5 ஆம் தேதிக்கு முன் டெபாசிட் செய்வது உங்கள் பணம் அந்த முழு மாதத்திற்கும் வட்டி சம்பாதிப்பதை உறுதி செய்கிறது. நீங்கள் தாமதமாக டெபாசிட் செய்தால், அந்த குறிப்பிட்ட டெபாசிட்டிற்கு அந்த மாதத்திற்கான வட்டியை இழக்கிறீர்கள்."
       },
       {
         "question": "ஒரு SSY கணக்கை படிப்படியாக எப்படி புத்துயிர் அளிப்பது?",
@@ -394,7 +394,7 @@
         "question": "பெற்றோர்/பாதுகாவலர் இறந்தால் என்ன நடக்கும்?",
         "answer": "வைப்புதாரர் (பெற்றோர்/பாதுகாவலர்) துரதிர்ஷ்டவசமாக இறந்தால், கணக்கை மற்ற பெற்றோர் அல்லது ஒரு புதிய சட்டப்பூர்வ பாதுகாவலர் தொடரலாம். முடியாவிட்டால், கணக்கு பொதுவாக மூடப்பட்டு, வட்டியுடன் கூடிய இருப்புப் பெண் குழந்தையின் நியமனதாரர் அல்லது சட்டப்பூர்வ வாரிசுக்கு வழங்கப்படும்."
       },
-      { "question": "2025 க்கான SSY இன் தற்போதைய வட்டி விகிதம் என்ன?", "answer": "ஏப்ரல்-ஜூன் 2025 க்கான SSY வட்டி விகிதம் <strong>8.2%</strong> ஆகும் (இந்திய அரசாங்கத்தால் காலாண்டுக்கு ஒருமுறை மாற்றத்திற்கு உட்பட்டது)." },
+      { "question": "2025 க்கான SSY இன் தற்போதைய வட்டி விகிதம் என்ன?", "answer": "ఏప్రిల్-జూన్ 2025 க்கான SSY வட்டி விகிதம் <strong>8.2%</strong> ஆகும் (இந்திய அரசாங்கத்தால் காலாண்டுக்கு ஒருமுறை மாற்றத்திற்கு உட்பட்டது)." },
       { "question": "SSY வட்டி எவ்வாறு கணக்கிடப்படுகிறது?", "answer": "SSY ஆண்டுதோறும் கூட்டு வட்டி பெறுகிறது. வழக்கமான ஆண்டு வைப்புகளுக்கு, ஒவ்வொரு ஆண்டின் வைப்பு வளர்ச்சியை முதிர்வு வரை கணக்கிட்டு அவற்றை கூட்டவும். A = P(1+r)^(ஆண்டுகள்) ஐப் பயன்படுத்தவும். எங்கள் கால்குலேட்டர் இதை உங்களுக்காக தானாகவே செய்கிறது." },
       { "question": "SSY இல் குறைந்தபட்ச மற்றும் அதிகபட்ச வைப்பு என்ன?", "answer": "குறைந்தபட்ச வைப்பு <strong>ஆண்டுக்கு ₹250</strong> మరియు அதிகபட்ச வைப்பு <strong>ஆண்டுக்கு ₹1.5 லட்சம்</strong> ஆகும்." },
       { "question": "நான் எப்போது SSY இலிருந்து திரும்பப் பெற முடியும்?", "answer": "உயர்கல்விக்காக பெண் குழந்தை 18 வயதை எட்டிய பிறகு பகுதி திரும்பப் பெற அனுமதிக்கப்படுகிறது; கணக்கு திறக்கப்பட்டதிலிருந்து 21 ஆண்டுகளில் முதிர்வு." }
@@ -633,7 +633,7 @@
       { "question": "ఏதேனும் அரசாங்க సహ-సహకారం உண்டா?", "answer": "కొన్ని అర్హతగల சந்தாதாரர்களுக்கு, గతంలో ప్రభుత్వ సహ-సహకార పథకాలు வழங்கబడ్డాయి. PFRDA/NSDL పేజీలలో ప్రస్తుత పథకాలు మరియు అర్హతను ధృవీకరించండి." },
       { "question": "సంతாதாரர் மరణம்పై కార్పస్‌కు ఏమి జరుగుతుంది?", "answer": "சந்தாதாரர் மరణம்పై, జీవిత భాగస్వామికి సాధారణంగా అదే పెన్షన్ లభిస్తుంది; ఇద్దరూ మరణిస్తే, నామినీకి పథక నియమాల ప్రకారం సేకరించిన కార్పస్ లభిస్తుంది." },
       { "question": "APY కంట్రిబ్యూషన్‌లు పన్ను మినహాయింపుకు అర్హమా?", "answer": "APY పెన్షన్ ప్రయోజనాలను అందిస్తుంది మరియు ప్రత్యక్ష అదనపు 80C అలవెన్సులు కాదు; ప్రస్తుత పన్ను చికిత్సల కోసం ఆదాయపు పన్ను నియమాలను తనిఖీ చేయండి. (తాజా పన్ను మార్గదర్శకత్వం కోసం ఎల్లప్పుడూ ఆదాయపు పన్ను విభాగంతో ధృవీకరించండి.)" },
-      { "question": "నేను APY లో ఎలా నమోదు చేసుకోవాలి?", "answer": "మీ బ్యాంకు శాఖను సందర్శించండి அல்லது వారు APY నమోదును అందిస్తే మీ బ్యాంకు ఆన్‌లైన్ బ్యాంకింగ్‌ను ఉపయోగించండి. మీకు మీ బ్యాంకు ఖాతా, ఆధార్, పాన్ (అవసరమైతే) மற்றும் KYC అవసరం." },
+      { "question": "నేను APY లో ఎలా నమోదు చేసుకోవాలి?", "answer": "మీ బ్యాంకు శాఖను సందర్శించండి அல்லது వారు APY నమోదును అందిస్తే మీ బ్యాంకు ఆన్‌లైన్ బ్యాంకింగ్‌ను ఉపయోగించండి. మీకు మీ బ్యాంకు ఖాతా, ఆధార్, పాన్ (అవసరమైతే) మరియు KYC అవసరం." },
       { "question": "APY vs NPS — నేను ఏది ఎంచుకోవాలి?", "answer": "APY ప్రాథమిక భద్రతపై దృష్టి సారించిన హామీ చిన్న పెన్షన్ ఉత్పత్తి; NPS అధిక సంభావ్య రాబడులు మరియు ఎక్కువ సౌలభ్యంతో మార్కెట్‌తో అనుసంధానించబడింది. మీరు హామీ స్థిర పెన్షన్ మరియు తక్కువ సంక్లిష్టత కావాలనుకుంటే APY ను ఎంచుకోండి; మీరు అధిక సంభావ్య వృద్ధిని కోరుకుంటే మరియు మార్కెట్ రిస్క్‌లతో సౌకర్యవంతంగా ఉంటే NPS ను ఎంచుకోండి." }
     ],
     "conclusion": {
@@ -642,206 +642,211 @@
     }
   },
   "fd_vs_ppf_calculator": {
-    "meta_title": "FD vs PPF கால்குலேட்டர் 2025 — வருமானம், வரி & முதிர்வை ஒப்பிடவும் (இலவச கருவி)",
-    "meta_description": "முதிர்வுத் தொகைகள், வரி தாக்கம் మరియు வரிக்குப் பிந்தைய வருமானத்தை ஒப்பிட எங்கள் இலவச FD vs PPF கால்குலேட்டரைப் பயன்படுத்தவும். பிரீமியம் விளக்கப்படங்கள், எடுத்துக்காட்டுகள் மற்றும் பதிவிறக்கம் செய்யக்கூடிய CSV ஆகியவை அடங்கும். செப்டம்பர் 2025 அன்று புதுப்பிக்கப்பட்டது.",
-    "og_title": "FD vs PPF வருவாய் கால்குலேட்டர் 2025",
-    "og_description": "நிலையான வைப்பு vs PPF வருமானத்தை உடனடியாக ஒப்பிடவும் — வரிக்கு முந்தைய/பிந்தைய முதிர்வு, வரைபடங்கள் மற்றும் பதிவிறக்கம் செய்யக்கூடிய திட்டத்தைக் காண்க. இலவச FD vs PPF கால்குலேட்டர் (இந்தியா).",
-    "h1": "FD vs PPF வருவாய் கால்குலேட்டர் 2025 — நிலையான வைப்பு & PPF ஐ ஒப்பிடவும்",
-    "description": "நிலையான வைப்புகள் மற்றும் பொது வருங்கால வைப்பு நிதிக்கான முதிர்வு மதிப்பு, வரி தாக்கம் మరియు வரிக்குப் பிந்தைய வருவாயின் பக்கவாட்டு ஒப்பீட்டைக் காண உங்கள் முதலீட்டுத் தொகை மற்றும் கால அளவை உள்ளிடவும். ஒரு தகவலறிந்த முடிவை எடுக்கவும்.",
-    "title": "FD vs PPF கால்குலேட்டர்",
-    "form_description": "மொத்த தொகை FD vs தொடர்ச்சியான PPF முதலீட்டிலிருந்து வரிக்குப் பிந்தைய வருவாயை ஒப்பிடவும்.",
-    "investment_amount_label": "மொத்த தொகை முதலீடு (FD) / ஆண்டு தொடர்ச்சியான (PPF)",
-    "tenure_label": "முதலீட்டுக் காலம் (ஆண்டுகள்)",
-    "fd_rate_label": "FD வட்டி விகிதம் (% ஆண்டுதோறும்)",
-    "ppf_rate_label": "PPF வட்டி விகிதம் (% ஆண்டுதோறும்)",
-    "tax_bracket_label": "உங்கள் வருமான வரி அடைப்புக்குறி (%)",
-    "calculate_button": "வருவாயை ஒப்பிடு",
-    "loading": "ஒப்பிடுகிறது...",
-    "results_title": "FD vs PPF ஒப்பீடு",
-    "result_snapshot": "இந்த சூழ்நிலைக்கு, வரிக்குப் பிறகு {winner} தோராயமாக {difference} ஆல் வெல்கிறது.",
-    "fd_label": "நிலையான வைப்பு (மொத்த தொகை)",
-    "ppf_label": "பொது வருங்கால வைப்பு நிதி (தொடர்ச்சியான ஆண்டு)",
-    "fd_maturity_label": "மொத்த முதிர்வு மதிப்பு",
-    "fd_post_tax_maturity_label": "வரிக்குப் பிந்தைய முதிர்வு மதிப்பு",
-    "ppf_maturity_label": "PPF முதிர்வு மதிப்பு (வரி இல்லாதது)",
-    "total_investment_label": "மொத்த முதலீடு",
-    "total_interest_label": "மொத்தமாக ஈட்டிய வட்டி",
-    "export_csv": "CSV ஐ ஏற்றுமதி செய்",
+    "meta_title": "FD vs PPF Calculator 2025 — Compare Returns, Tax & Maturity (Free Tool)",
+    "meta_description": "Use our free FD vs PPF calculator to compare maturity amounts, tax impact and post-tax returns. Includes premium charts, examples, and downloadable CSV. Updated Sep 2025.",
+    "og_title": "FD vs PPF Returns Calculator 2025",
+    "og_description": "Compare Fixed Deposit vs PPF returns instantly — see pre/post-tax maturity, graphs, and downloadable plan. Free FD vs PPF calculator (India).",
+    "h1": "FD vs PPF Returns Calculator 2025 — Compare Fixed Deposit & PPF",
+    "description": "Enter your investment amount and tenure to see a side-by-side comparison of maturity value, tax impact, and post-tax returns for Fixed Deposits and Public Provident Fund. Make an informed decision.",
+    "title": "FD vs PPF Calculator",
+    "form_description": "Compare post-tax returns from a lump-sum FD vs recurring PPF investment.",
+    "investment_amount_label": "Lump-sum Investment (FD) / Annual Recurring (PPF)",
+    "tenure_label": "Investment Tenure (Years)",
+    "fd_rate_label": "FD Interest Rate (% p.a.)",
+    "ppf_rate_label": "PPF Interest Rate (% p.a.)",
+    "tax_bracket_label": "Your Income Tax Bracket (%)",
+    "calculate_button": "Compare Returns",
+    "loading": "Comparing...",
+    "results_title": "FD vs PPF Comparison",
+    "result_snapshot": "For this scenario, {winner} wins by approximately {difference} after tax.",
+    "fd_label": "Fixed Deposit (Lump-sum)",
+    "ppf_label": "Public Provident Fund (Recurring Annual)",
+    "fd_maturity_label": "Gross Maturity Value",
+    "fd_post_tax_maturity_label": "Post-Tax Maturity Value",
+    "ppf_maturity_label": "PPF Maturity Value (Tax-Free)",
+    "total_investment_label": "Total Investment",
+    "total_interest_label": "Total Interest Earned",
+    "export_csv": "Export CSV",
     "clarifier_note": {
-      "title": "முக்கியமானது — நாங்கள் எவ்வாறு ஒப்பிடுகிறோம்",
-      "body": "கால்குலேட்டர் 'முதலீட்டுத் தொகை'யை FDக்கு ஒருமுறை மொத்தமாகவும், PPFக்கு தொடர்ச்சியான ஆண்டு வைப்பாகவும் கருதுகிறது. இதன் பொருள் மொத்தமாகப் பயன்படுத்தப்படும் பணம் வேறுபடுகிறது. எடுத்துக்காட்டாக, ₹1 லட்சம் முதலீடு FD இல் ₹1 லட்சம் ஒற்றை வைப்பாகிறது, அதேசமயம் PPF இல் மொத்தம் ₹15 லட்சம் (1 லட்சம் × 15 ஆண்டுகள்) ஆகிறது. ఇది ఒక సాధారణ వాస్తవ-ప్రపంచ முதலீட்டுத் தேர்வை மாதிரியாகக் கொண்டுள்ளது."
+      "title": "Important — How We Compare",
+      "body": "The calculator treats the 'Investment Amount' as a one-time lump-sum for the FD and as a recurring annual deposit for PPF. This means the total money deployed differs. For example, a ₹1 lakh investment becomes a ₹1 lakh single deposit in FD vs. a total of ₹15 lakh (1L × 15 years) in PPF. This models a common real-world investment choice."
     },
     "assumptions": {
-      "title": "கால்குலேட்டர் அனுமானங்கள்",
-      "body": "<ul><li>PPF ஆனது குறிப்பிட்ட PPF விகிதத்தில் ஆண்டுதோறும் கூட்டு வட்டியுடன் మరియు 15 సంవత్సరాల இயல்புநிலை முதிர்ச்சியுடன் மாதிரியாக அமைக்கப்பட்டுள்ளது. வைப்புகள் ஒவ்வொரு ஆண்டும் <strong>ஆரம்பத்தில்</strong> கருதப்படுகின்றன.</li><li>FD ஆனது ஆண்டுதோறும் கூட்டு வட்டியுடன் ஒருமுறை மொத்த தொகையாக மாதிரியாக அமைக்கப்பட்டுள்ளது. வட்டி உங்கள் தேர்ந்தெடுக்கப்பட்ட விளிம்பு விகிதத்தில் வரி விதிக்கப்படுகிறது.</li><li>முடிவுகள் பெயரளவு (பணவீக்கத்திற்கு சரிசெய்யப்படவில்லை). <a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer'>PFRDA</a> மற்றும் <a href='https://incometaxindia.gov.in/' target='_blank' rel='noopener noreferrer'>வருமான வரித் துறை</a> போன்ற அதிகாரப்பூர்வ ஆதாரங்களுடன் விதிகளை எப்போதும் சரிபார்க்கவும்.</li></ul>"
+      "title": "Calculator Assumptions",
+      "body": "<ul><li>PPF is modelled with annual compounding at the specified rate and a default maturity of 15 years. Deposits are assumed at the <strong>start</strong> of each year.</li><li>FD is modelled as a one-time lump-sum with annual compounding. Interest is taxed at your selected marginal rate.</li><li>Results are nominal (not inflation-adjusted). Always verify with official sources like <a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer'>PFRDA</a> and the <a href='https://incometaxindia.gov.in/' target='_blank' rel='noopener noreferrer'>Income Tax Dept</a>.</li></ul>"
     },
     "quick_answer": {
-      "title": "விரைவான பதில்: எது சிறந்தது, FD அல்லது PPF?",
-      "body": "<strong>நீண்ட கால, வரி இல்லாத செல்வ உருவாக்கத்திற்கு</strong> (ஓய்வூதியம் போன்றவை), அதன் EEE வரி நிலை மற்றும் கூட்டுத்தொகை நன்மைகள் காரணமாக <strong>PPF దాదాపు ఎల్లప్పుడూ మంచిది</strong>. <strong>குறுகிய கால இலக்குகள் அல்லது அவசர நிதிகளுக்கு</strong> మీకు பணப்புழக்கம் தேவைப்படும் இடத்தில், வட்டி மீதான வரி இருந்தபோதிலும் <strong>FD ಹೆಚ್ಚು ಸೂಕ್ತವಾಗಿದೆ</strong>. మీ మొత్తం కోసం ఖచ్చితమైన వ్యత్యాసాన్ని చూడటానికి మా <a href='/{lang}/ppf-calculator' class='underline'>PPF கால்குலேட்டர்</a> లేదా <a href='/{lang}/nps-calculator' class='underline'>NPS கால்குலேட்டர்</a>ను ఉపయోగించండి."
+      "title": "Quick Answer: Which is better, FD or PPF?",
+      "body": "For <strong>long-term, tax-free wealth creation</strong> (like retirement), <strong>PPF is almost always better</strong> due to its EEE tax status and compounding benefits. For <strong>short-term goals or emergency funds</strong> where you need liquidity, an <strong>FD is more suitable</strong> despite the tax on interest. Use our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> or <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> to see the exact difference for your amount."
     },
     "how_it_works": {
-      "title": "வருவாய் எவ்வாறு கணக்கிடப்படுகிறது (பணிபுரிந்த எடுத்துக்காட்டுகள்)",
+      "title": "How Returns are Calculated (Worked Examples)",
       "example1": {
-        "title": "எடுத்துக்காட்டு 1 — FD (மொத்த தொகை)",
-        "body": "<strong>உள்ளீடு:</strong> ₹100,000 மொத்த தொகை, 7% ஆண்டுதோறும், 15 ஆண்டுகள், 30% வரி அடைப்புக்குறி.<br/><strong>கணக்கீடு:</strong><ol><li>எதிர்கால மதிப்பு = 100,000 × (1.07)^15 = ₹275,903.</li><li>மொத்த வட்டி = 275,903 - 100,000 = ₹175,903.</li><li>வட்டி மீது வரி (30%) = 0.30 × 175,903 = ₹52,771.</li><li><strong>வரிக்குப் பிந்தைய முதிர்வு = 275,903 - 52,771 = ₹223,132.</strong></li></ol>"
+        "title": "Example 1 — FD (Lump-Sum)",
+        "body": "<strong>Input:</strong> ₹100,000 lump-sum, 7% p.a., 15 years, 30% tax bracket.<br/><strong>Calculation:</strong><ol><li>Future Value = 100,000 × (1.07)^15 = ₹275,903.</li><li>Total Interest = 275,903 - 100,000 = ₹175,903.</li><li>Tax on Interest (30%) = 0.30 × 175,903 = ₹52,771.</li><li><strong>Post-Tax Maturity = 275,903 - 52,771 = ₹223,132.</strong></li></ol>"
       },
       "example2": {
-        "title": "எடுத்துக்காட்டு 2 — PPF (தொடர்ச்சியான ஆண்டு வைப்பு)",
-        "body": "<strong>உள்ளீடு:</strong> 15 ஆண்டுகளுக்கு ஒவ்வொரு ஆண்டும் தொடக்கத்தில் ₹100,000 செலுத்தப்பட்டது, 7.1% ஆண்டுதோறும்.<br/><strong>கணக்கீடு (ஆண்டுத்தொகை உரிய சூத்திரம்):</strong><br/>எதிர்கால மதிப்பு = P × [((1 + r)^n - 1) / r] × (1 + r)<br/>ఇది మొత్తం ₹1,500,000 పెట్టుబడిపై <strong>₹2,712,139 வரி இல்லாத முதிர்வை</strong> கணக்கிடுகிறது."
+        "title": "Example 2 — PPF (Recurring Annual Deposit)",
+        "body": "<strong>Input:</strong> ₹100,000 paid at the start of each year for 15 years, 7.1% p.a.<br/><strong>Calculation (Annuity Due Formula):</strong><br/>Future Value = P × [((1 + r)^n - 1) / r] × (1 + r)<br/>This computes to a <strong>tax-free maturity of ₹2,712,139</strong> on a total investment of ₹1,500,000."
       }
     },
     "ppf_features": {
-      "title": "PPF: முக்கிய அம்சங்கள், விதிகள் & வரி நன்மைகள்",
+      "title": "PPF: Key Features, Rules & Tax Benefits",
       "points": [
-        "<strong>வரி சிகிச்சை:</strong> விலக்கு-விலக்கு-விலக்கு (EEE). பங்களிப்புகள், வட்டி மற்றும் முதிர்வு அனைத்தும் வரி இல்லாதவை. (<a href='https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx' target='_blank' rel='noopener noreferrer' class='text-xs'>ஆதாரம்: வருமான வரித் துறை</a>)",
-        "<strong>பூட்டுதல் காலம்:</strong> 15 ஆண்டுகள், 5 ஆண்டு தொகுதிகளில் நீட்டிக்கப்படலாம்.",
-        "<strong>வட்டி விகிதம்:</strong> அரசாங்கத்தால் காலாண்டுக்கு ஒருமுறை நிர்ணயிக்கப்படுகிறது. பொதுவாக FD விகிதங்களை விட அதிகம். (<a href='https://www.nsiindia.gov.in/ppf.aspx' target='_blank' rel='noopener noreferrer' class='text-xs'>ஆதாரம்: NSI</a>)",
-        "<strong>பங்களிப்பு வரம்பு:</strong> குறைந்தபட்சம் ₹500, அதிகபட்சம் ₹1.5 லட்சம் ప్రతి நிதியாண்டு.",
-        "<strong>சிறந்தது:</strong> ஓய்வூதியம், குழந்தைகளின் கல்வி போன்ற நீண்ட கால இலக்குகள் மற்றும் ஒழுக்கமான, வரி இல்லாத சேமிப்பு."
+        "<strong>Tax Treatment:</strong> Exempt-Exempt-Exempt (EEE). Contributions, interest, and maturity are all tax-free. (<a href='https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx' target='_blank' rel='noopener noreferrer' class='text-xs'>Source: Income Tax Dept</a>)",
+        "<strong>Lock-in Period:</strong> 15 years, can be extended in blocks of 5 years.",
+        "<strong>Interest Rate:</strong> Set by the government quarterly. Generally higher than FD rates. (<a href='https://www.nsiindia.gov.in/ppf.aspx' target='_blank' rel='noopener noreferrer' class='text-xs'>Source: NSI</a>)",
+        "<strong>Contribution Limit:</strong> Min ₹500, Max ₹1.5 lakh per financial year.",
+        "<strong>Best For:</strong> Long-term goals like retirement, children's education, and disciplined, tax-free saving."
       ]
     },
     "fd_features": {
-      "title": "FD: முக்கிய அம்சங்கள், விதிகள் & வரி தாக்கங்கள்",
+      "title": "FD: Key Features, Rules & Tax Implications",
       "points": [
-        "<strong>வரி சிகிச்சை:</strong> ஈட்டிய வட்டி உங்கள் வருமான வரி அடுக்குக்கு ஏற்ப முழுமையாக வரிக்குட்பட்டது.",
-        "<strong>பூட்டுதல் காலம்:</strong> நெகிழ்வானது, 7 நாட்கள் முதல் 10 ஆண்டுகள் வரை. அபராதத்துடன் முன்கூட்டியே திரும்பப் பெறலாம்.",
-        "<strong>வட்டி விகிதம்:</strong> முழு காலத்திற்கும் முதலீட்டு நேரத்தில் நிர்ணயிக்கப்பட்டது. வங்கி మరియు காலத்தைப் பொறுத்து மாறுபடும்.",
-        "<strong>பங்களிப்பு வரம்பு:</strong> முதலீட்டிற்கு மேல் வரம்பு இல்லை.",
-        "<strong>காப்பீடு:</strong> வைப்புகள் DICGC ద్వారా ₹5 లక్షల వరకు బీమా చేయబడతాయి. (<a href='https://www.dicgc.org.in/' target='_blank' rel='noopener noreferrer' class='text-xs'>ஆதாரம்: DICGC</a>)",
-        "<strong>சிறந்தது:</strong> குறுகிய முதல் நடுத்தர கால இலக்குகள், அவசர நிதிகள் மற்றும் இடர்-வெறுக்கும் முதலீட்டாளர்களுக்கு கணிக்கக்கூடிய வருமானம்."
+        "<strong>Tax Treatment:</strong> Interest earned is fully taxable as per your income tax slab.",
+        "<strong>Lock-in Period:</strong> Flexible, ranging from 7 days to 10 years. Premature withdrawal is possible with a penalty.",
+        "<strong>Interest Rate:</strong> Fixed at the time of investment for the entire tenure. Varies by bank and tenure.",
+        "<strong>Contribution Limit:</strong> No upper limit on investment.",
+        "<strong>Insurance:</strong> Deposits are insured up to ₹5 lakh by DICGC. (<a href='https://www.dicgc.org.in/' target='_blank' rel='noopener noreferrer' class='text-xs'>Source: DICGC</a>)",
+        "<strong>Best For:</strong> Short to medium-term goals, emergency funds, and predictable returns for risk-averse investors."
       ]
     },
     "comparison": {
-      "title": "FD vs PPF: விரிவான ஒப்பீட்டு அட்டவணை",
+      "title": "FD vs PPF: Detailed Comparison Table",
       "table": {
-        "headers": ["அம்சம்", "நிலையான வைப்பு (FD)", "பொது வருங்கால வைப்பு நிதி (PPF)"],
+        "headers": ["Feature", "Fixed Deposit (FD)", "Public Provident Fund (PPF)"],
         "rows": [
-          ["வருவாய்", "நிலையானது மற்றும் உத்தரவாதம்", "உத்தரவாதம், ஆனால் விகிதம் காலாண்டுக்கு ஒருமுறை மாறும்"],
-          ["வட்டி மீதான வரி", "உங்கள் அடுக்கு விகிதத்தில் வரிக்குட்பட்டது", "முற்றிலும் வரி இல்லாதது"],
-          ["பூட்டுதல்", "நெகிழ்வானது (7 நாட்கள் முதல் 10 ஆண்டுகள் வரை)", "15 ஆண்டுகள்"],
-          ["பணப்புழக்கம்", "அதிகம் (முன்கூட்டியே திரும்பப் பெற்றால் அபராதம்)", "குறைவு (7 ஆண்டுகளுக்குப் பிறகு பகுதி திரும்பப் பெறுதல்)"],
-          ["கடன் வசதி", "ஆம், FD க்கு எதிராக", "ஆம், 3 ஆம் ஆண்டு முதல் 6 ஆம் ஆண்டு வரை"],
-          ["அதிகபட்ச முதலீடு", "வரம்பு இல்லை", "ஆண்டுக்கு ₹1.5 லட்சம்"]
+            ["Returns", "Fixed & Guaranteed", "Guaranteed, but rate changes quarterly"],
+            ["Tax on Interest", "Taxable at your slab rate", "Completely Tax-Free"],
+            ["Lock-in", "Flexible (7 days to 10 years)", "15 years"],
+            ["Liquidity", "High (penalty on early withdrawal)", "Low (partial withdrawal after 7 years)"],
+            ["Loan Facility", "Yes, against FD", "Yes, from 3rd to 6th year"],
+            ["Max Investment", "No limit", "₹1.5 Lakh per year"]
         ]
       }
     },
     "tax_impact": {
-      "title": "வரி தாக்கம் விளக்கப்பட்டது (வரி பயனுள்ள வருமானத்தை எவ்வாறு பாதிக்கிறது)",
-      "body": "FD மற்றும் PPF க்கு இடையிலான மிகப்பெரிய வேறுபாடு வரி. FD இலிருந்து வட்டி உங்கள் 'பிற ஆதாரங்களிலிருந்து வருமானம்' இல் சேர்க்கப்பட்டு உங்கள் விளிம்பு அடுக்கு விகிதத்தில் வரி விதிக்கப்படுகிறது. எடுத்துக்காட்டாக, நீங்கள் 30% வரி அடுக்கில் இருந்தால், 7% FD பயனுள்ள வகையில் வரிக்குப் பிறகு 4.9% மட்டுமே விளைகிறது. இதற்கு நேர்மாறாக, PPF இலிருந்து சம்பாதித்த முழு வட்டியும் வரி இல்லாதது, அதன் பயனுள்ள வருமானத்தை மிகவும் அதிகமாக ஆக்குகிறது."
+      "title": "Tax Impact Explained (how tax affects effective returns)",
+      "body": "The biggest difference between FD and PPF is tax. Interest from an FD is added to your 'Income from Other Sources' and taxed at your marginal slab rate. For example, if you are in the 30% tax bracket, a 7% FD effectively yields only 4.9% post-tax. In contrast, the entire interest earned from PPF is tax-free, making its effective return much higher."
     },
     "checklist": {
-      "title": "எப்படித் தேர்ந்தெடுப்பது: ஒரு விரைவான சரிபார்ப்புப் பட்டியல்",
+      "title": "How to Choose: A Quick Checklist",
       "points": [
-        "<strong>லட்சியக் காலம்:</strong> நீண்டகாலம் (>10 ஆண்டுகள்)? PPF சிறந்தது. குறுகிய காலம் (<5 ஆண்டுகள்)? FD மட்டுமே ஒரே வழி.",
-        "<strong>வரிப் பிரிவு:</strong> உயர் வரிப் பிரிவில் (20-30%)? PPF இன் வரி இல்லாத தன்மை மிகவும் கவர்ச்சிகரமானதாகிறது.",
-        "<strong>பணப்புழக்கத் தேவைகள்:</strong> அவசரநிலைகளுக்கு உங்கள் பணம் தேவையா? FD அபராதங்கள் இருந்தபோதிலும் சிறந்த பணப்புழக்கத்தை வழங்குகிறது.",
-        "<strong>இடர் ஏற்பு:</strong> நீங்கள் பூஜ்ஜிய இடர் விரும்பினால், இரண்டும் பாதுகாப்பானவை, ஆனால் PPF இறையாண்மை அரசாங்கத்தால் ஆதரிக்கப்படுகிறது.",
-        "<strong>முதலீட்டுத் தொகை:</strong> ஆண்டுக்கு ₹1.5 லட்சத்திற்கும் அதிகமாக முதலீடு செய்கிறீர்களா? உபரிக்கு நீங்கள் FDகள் அல்லது பிற விருப்பங்களைப் பயன்படுத்த வேண்டும்.",
-        "<strong>வயது:</strong> மூத்த குடிமக்களுக்கு, வங்கிகள் பெரும்பாலும் அதிக FD விகிதங்களை வழங்குகின்றன, இது அவர்களை மேலும் போட்டித்தன்மை வாய்ந்ததாக மாற்றக்கூடும்."
+        "<strong>Goal Horizon:</strong> Long-term (>10 years)? PPF is better. Short-term (<5 years)? FD is the only option.",
+        "<strong>Tax Bracket:</strong> In a higher tax bracket (20-30%)? The tax-free nature of PPF becomes much more attractive.",
+        "<strong>Liquidity Needs:</strong> Need access to your money for emergencies? FD offers better liquidity, despite penalties.",
+        "<strong>Risk Appetite:</strong> If you want zero risk, both are safe, but PPF is backed by the sovereign government.",
+        "<strong>Investment Amount:</strong> Investing over ₹1.5 lakh annually? You'll have to use FDs or other options for the surplus.",
+        "<strong>Age:</strong> For senior citizens, banks often offer higher FD rates, which might make them more competitive."
       ]
     },
-    "faq_title": "அடிக்கடி கேட்கப்படும் கேள்விகள்",
+    "faq_title": "Frequently Asked Questions",
     "faqs": [
-      { "question": "FD vs PPF — எது சிறந்தது?", "answer": "ఇది ఆధారపడి ఉంటుంది: PPF దీర్ఘకాలిక, పన్ను-రహిత వృద్ధికి మంచిది; FD స్వల్పకాలిక లక్ష్యాలు మరియు లిక్విడిటీకి మంచిది. మీ ఖచ్చితమైన ఇన్‌పుట్‌ల కోసం సంఖ్యా ఫలితాన్ని పోల్చడానికి క్యాలిక్యులేటర్‌ను ఉపయోగించండి." },
-      { "question": "పన్ను తర్వాత FD రాబడిని ఎలా లెక్కించాలి?", "answer": "చక్రవడ్డీతో FD భవిష్యత్ విలువను లెక్కించండి, సంపాదించిన వడ్డీని పొందడానికి అసలు ప్రిన్సిపల్‌ను తీసివేయండి, ఆపై ఆ వడ్డీపై మీ ఉపాంత పన్ను రేటును వర్తింపజేసి చెల్లించాల్సిన పన్నును కనుగొనండి. పన్ను-అనంతర మెచ్యూరిటీ = స్థూల మెచ్యూరిటీ − పన్ను." },
-      { "question": "PPF வட்டி எவ்வாறு கணக்கிடப்படுகிறது?", "answer": "PPF వడ్డీ ప్రభుత్వం త్రైమాసికంగా ప్రకటించిన రేటుతో వార్షికంగా చక్రవడ్డీ చేయబడుతుంది. మీరు ప్రతి సంవత్సరం ప్రారంభంలో డిపాజిట్ చేస్తే (యాన్యుటీ-డ్యూ), సూత్రం ఒక యాన్యుటీ గుణకాన్ని ఉపయోగిస్తుంది." },
-      { "question": "నేను సమాన మొత్తం పెట్టుబడులను పోల్చాలనుకుంటే ఏమిటి?", "answer": "ఈ ఫీచర్ త్వరలో వస్తుంది. ప్రస్తుతం, సాధనం ఒకేసారి FD పెట్టుబడిని పునరావృతమయ్యే PPF పెట్టుబడితో పోలుస్తుంది, ఇది ఒక సాధారణ వాస్తవ-ప్రపంచ దృష్టాంతం." },
-      { "question": "PPF முன்கூட்டியே திரும்பப் பெற அனுமதிக்கிறதா?", "answer": "7வது நிதியாண்டிலிருந்து పరిమితుల కింద పాక్షిక ఉపసంహరణలు అనుమతించబడతాయి; రుణాలు 3 మరియు 6 సంవత్సరాల మధ్య అందుబాటులో ఉంటాయి. పూర్తి అకాల మూసివేత నిర్దిష్ట సందర్భాలలో మాత్రమే అనుమతించబడుతుంది (ఉదా., తీవ్రమైన అనారోగ్యం) మరియు జరిమానా విధించవచ్చు." },
-      { "question": "FD வட்டிக்கு வரி உண்டா?", "answer": "ஆம் — FD வட்டி உங்கள் விளிம்பு வருமான வரி அடுக்கில் வரிக்குட்பட்டது. TDS (10%) சட்டப்பூர்வ வரம்புகளுக்கு மேல் பொருந்தும்; இருப்பினும், உண்மையான வரிப் பொறுப்பு உங்கள் அடுக்கைப் பொறுத்தது." },
-      { "question": "நான் FDக்கு வரிச் சலுகைகளைப் பெற முடியுமா?", "answer": "5-ஆண்டு வரி சேமிப்பு FDகள் மட்டுமே பிரிவு 80C இன் கீழ் விலக்குக்குத் தகுதி பெறுகின்றன; அவற்றின் வட்டி வரிக்குட்பட்டதாகவே உள்ளது." },
-      { "question": "ஒரு மூத்த குடிமகன் FD அல்லது PPF ஐத் தேர்ந்தெடுக்க வேண்டுமா?", "answer": "பல மூத்த குடிமக்கள் ஒரு கலவையைப் பயன்படுத்துகிறார்கள் — மாதாந்திர வருமானத்திற்காக FDகள் (வங்கிகள் மூத்த குடிமக்கள் விகிதங்களை வழங்குகின்றன) மற்றும் அவர்கள் வரி இல்லாத நீண்ட கால கார்பஸ் விரும்பினால் PPF. கால்குலேட்டர் வர்த்தகங்களை அளவிட உதவுகிறது." },
-      { "question": "நான் PPF வைப்புத்தொகையைத் தவறவிட்டால் என்ன நடக்கும்?", "answer": "குறைந்தபட்ச பங்களிப்பைத் தவறவிடுவது கணக்கை செயலிழக்கச் செய்கிறது; புத்துயிர் பெறுவதற்கு தவறிய ஆண்டுகளுக்கு பணம் செலுத்துதல் మరియు ಪ್ರತಿ தவறிய ஆண்டுக்கு ஒரு அபராதம் தேவை. சரியான புத்துயிர் செயல்முறைக்கு உங்கள் வங்கி/தபால் நிலையத்தைச் சரிபார்க்கவும்." },
-      { "question": "PPF விகிதங்கள் நிரந்தரமாக நிர்ணயிக்கப்பட்டவையா?", "answer": "இல்லை — PPF விகிதங்கள் அரசாங்கத்தால் காலாண்டுக்கு ஒருமுறை மதிப்பாய்வு செய்யப்பட்டு அறிவிக்கப்படுகின்றன. கால்குலேட்டர் வெவ்வேறு சூழ்நிலைகளை மாதிரியாகக் கொள்ள விகிதத்தைத் திருத்த உங்களை அனுமதிக்கிறது." },
-      { "question": "NRI கள் PPF கணக்குகளைத் திறக்க முடியுமா?", "answer": "NRI கள் புதிய PPF கணக்குகளைத் திறக்க முடியாது; ஏற்கனவே உள்ள கணக்குகள் குறிப்பிட்ட நிபந்தனைகளின் கீழ் தொடர்கின்றன. வங்கி/தபால் நிலையம் మరియు அதிகாரப்பூர்வ வழிகாட்டுதல்களுடன் தற்போதைய விதிகளை உறுதிப்படுத்தவும்." },
-      { "question": "நான் PPF உடன் FD ஏணியை எவ்வாறு பயன்படுத்த முடியும்?", "answer": "ஒரு பொதுவான உத்தி: வரி இல்லாத நீண்ட கால வளர்ச்சிக்கு PPF ஐ முழுமையாகப் பயன்படுத்தவும், మరియు பணப்புழக்கத்திற்காக வெவ்வேறு முதிர்வுகளுடன் FDகளை ஏணியாக அமைக்கவும். இது பாதுகாப்பு, பணப்புழக்கம் மற்றும் வரித் திறனை சமன் செய்கிறது." }
+        { "question": "FD vs PPF — which is better?", "answer": "It depends: PPF is better for long-term, tax-free growth; FD is better for short-term goals and liquidity. Use the calculator to compare the exact numeric outcome for your inputs." },
+        { "question": "How to calculate FD returns after tax?", "answer": "Compute FD future value with compound interest, subtract the original principal to get interest earned, then apply your marginal tax rate to that interest to find tax owed. Post-tax maturity = gross maturity − tax." },
+        { "question": "How is PPF interest calculated?", "answer": "PPF interest is compounded annually at the rate notified quarterly by the government. If you deposit at the start of each year (annuity-due), the formula uses an annuity multiplier." },
+        { "question": "What if I want to compare equal total investments?", "answer": "This feature is coming soon. Currently, the tool compares a one-time FD investment against a recurring PPF investment, which is a common real-world scenario." },
+        { "question": "Does PPF allow early withdrawals?", "answer": "Partial withdrawals are permitted from the 7th financial year under limits; loans are available between years 3 and 6. Full premature closure is allowed only in specific cases (e.g., serious illness) and may carry a penalty." },
+        { "question": "Is FD interest taxable?", "answer": "Yes — FD interest is taxable at your marginal income tax slab. TDS (10%) is applicable above statutory thresholds; however, actual tax liability will depend on your slab." },
+        { "question": "Can I claim tax benefits for FD?", "answer": "Only 5-year tax-saving FDs qualify for deduction under Section 80C; their interest remains taxable." },
+        { "question": "Should a senior citizen choose FD or PPF?", "answer": "Many seniors use a mix — FDs for monthly income (banks give senior citizen rates) and PPF if they want a tax-free long-term corpus. The calculator helps quantify trade-offs." },
+        { "question": "What happens if I miss a PPF deposit?", "answer": "Missing the minimum contribution makes the account inactive; revival requires payment for missed years plus a penalty per missed year. Check your bank/Post Office for exact revival process." },
+        { "question": "Are PPF rates fixed forever?", "answer": "No — PPF rates are reviewed and notified by the government quarterly. The calculator allows you to edit the rate to model different scenarios." },
+        { "question": "Can NRIs open PPF accounts?", "answer": "NRIs cannot open new PPF accounts; existing accounts continue under specific conditions. Confirm current rules with the bank/Post Office and official guidelines." },
+        { "question": "How can I use FD laddering with PPF?", "answer": "A common strategy: max out PPF for tax-free long-term growth, and ladder FDs with staggered maturities for liquidity. This balances safety, liquidity and tax efficiency." }
     ],
     "conclusion": {
-      "title": "இறுதி எண்ணங்கள்: சரியான தேர்வைச் செய்தல்",
-      "body": "நிலையான வைப்பு மற்றும் பொது வருங்கால வைப்பு நிதிக்கு இடையே தேர்ந்தெடுப்பது இறுதியில் உங்கள் நிதி இலக்குகள், முதலீட்டுக் காலம் மற்றும் பணப்புழக்கத் தேவையைப் பொறுத்தது. பாதுகாப்பான, வரி இல்லாத, நீண்ட கால வளர்ச்சிக்கு, PPF ஒரு ஒப்பிடமுடியாத கருவியாகும். குறுகிய கால சேமிப்பில் கணிக்கக்கூடிய வருமானத்திற்கு, ஒரு FD நம்பகத்தன்மை மற்றும் அணுகலை வழங்குகிறது. பல்வேறு சூழ்நிலைகளை மாதிரியாகக் கொள்ள எங்கள் <a href='/{lang}/fd-vs-ppf-calculator' class='underline'>FD vs PPF வருவாய் கால்குலேட்டரைப்</a> பயன்படுத்தவும் మరియు உங்கள் நிதித் திட்டத்திற்கு மிகவும் பொருத்தமான ஒரு தகவலறிந்த முடிவை எடுக்கவும்."
+      "title": "Final Thoughts: Making the Right Choice",
+      "body": "Choosing between a Fixed Deposit and the Public Provident Fund ultimately depends on your financial goals, investment horizon, and need for liquidity. For secure, tax-free, long-term growth, PPF is an unmatched tool. For predictable returns on short-term savings, an FD provides reliability and access. Use our <a href='/{lang}/fd-vs-ppf-calculator' class='underline'>FD vs PPF Returns Calculator</a> to model various scenarios and make an informed decision that best suits your financial plan."
     }
   },
   "tax_regime_calculator": {
-    "meta_title": "பழைய vs புதிய வரி முறை கால்குலேட்டர் (AY 2025-26) | BharatSaver",
-    "meta_description": "இந்தியாவில் பழைய మరియు புதிய வரி முறைகளின் கீழ் உங்கள் வருமான வரிப் பொறுப்பை ஒப்பிட்டு, మీకు எது சிறந்தது என்பதைக் கண்டறிய எங்கள் இலவச கால்குலேட்டரைப் பயன்படுத்தவும் AY 2025-26 க்கு.",
-    "h1": "பழைய vs புதிய வரி முறை கால்குலேட்டர்"
+    "meta_title": "Old vs New Tax Regime Calculator (AY 2025-26) | BharatSaver",
+    "meta_description": "Use our free calculator to compare your income tax liability under the Old and New tax regimes in India and find out which is better for you for AY 2025-26.",
+    "h1": "Old vs New Tax Regime Calculator"
   },
   "retirement_corpus_calculator": {
-    "meta_title": "இந்தியாவுக்கான ஓய்வூதிய கார்பஸ் கால்குலேட்டர் (2025) | BharatSaver",
-    "meta_description": "உங்கள் நிதி இலக்குகளின் அடிப்படையில் உங்கள் ஓய்வுக்குப் பிந்தைய வாழ்க்கைக்குத் தேவையான மொத்த கார்பஸைக் கணக்கிடுவதன் மூலம் உங்கள் ஓய்வூதியத்தைத் திட்டமிடுங்கள். எங்கள் இலவச 2025 ஓய்வூதிய கால்குலேட்டரைப் பயன்படுத்தவும்.",
-    "h1": "ஓய்வூதிய கார்பஸ் கால்குலேட்டர்"
+    "meta_title": "Retirement Corpus Calculator for India (2025) | BharatSaver",
+    "meta_description": "Plan for your retirement by calculating the total corpus required for your post-retirement life based on your financial goals. Use our free 2025 retirement calculator.",
+    "h1": "Retirement Corpus Calculator"
   },
   "loan_optimization_calculator": {
-    "meta_title": "கடன் மேம்படுத்தல் & EMI கால்குலேட்டர் (முன்பணம்) | BharatSaver",
-    "meta_description": "உங்கள் EMI ஐக் கணக்கிட எங்கள் இலவச கடன் மேம்படுத்தல் கால்குலேட்டரைப் பயன்படுத்தவும், மேலும் கூடுதல் கொடுப்பனவுகள் (முன்பணம்) உங்கள் கடன் காலத்தைக் குறைக்கவும் வட்டியைச் சேமிக்கவும் எவ்வாறு உதவும் என்பதைப் பார்க்கவும். 2025 க்கு புதுப்பிக்கப்பட்டது.",
-    "h1": "கடன் மேம்படுத்தல் கால்குலேட்டர்"
+    "meta_title": "Loan Optimizer & EMI Calculator (Prepayment) | BharatSaver",
+    "meta_description": "Use our free Loan Optimization Calculator to calculate your EMI and see how extra payments (prepayment) can help you reduce your loan tenure and save interest. Updated for 2025.",
+    "h1": "Loan Optimization Calculator"
   },
   "mutual_fund_overlap_calculator": {
-    "meta_title": "பரஸ்பர நிதி மேலடுக்கு கால்குலேட்டர் இந்தியா (2025) | BharatSaver",
-    "meta_description": "சரியான பல்வகைப்படுத்தலை உறுதிப்படுத்த உங்கள் பரஸ்பர நிதிகளில் போர்ட்ஃபோலியோ மேலடுக்கு சரிபார்க்கவும். இந்திய நிதிகளுக்கான எங்கள் இலவச பரஸ்பர நிதி மேலடுக்கு கால்குలేட்டரைப் பயன்படுத்தவும் 2025 க்கு.",
-    "h1": "பரஸ்பர நிதி மேலடுக்கு கால்குலேட்டர்"
+    "meta_title": "Mutual Fund Overlap Calculator India (2025) | BharatSaver",
+    "meta_description": "Check for portfolio overlap in your mutual funds to ensure proper diversification. Use our free Mutual Fund Overlap Calculator for Indian funds for 2025.",
+    "h1": "Mutual Fund Overlap Calculator"
   },
   "ups_pension_calculator": {
-    "meta_title": "UPS ஓய்வூதியத் திட்ட கால்குலேட்டர் (2025) | BharatSaver",
-    "meta_description": "எங்கள் சுலபமாக பயன்படுத்தக்கூடிய கால்குலேட்டர் மூலம் உலகளாவிய ஓய்வூதியத் திட்டத்தின் (UPS) கீழ் உங்கள் சாத்தியமான ஓய்வூதியத் தொகையை மதிப்பிடவும். 2025 இல் உங்கள் எதிர்காலத்தைத் திட்டமிடுங்கள்.",
-    "h1": "UPS ஓய்வூதியத் திட்ட கால்குலேட்டர்"
+    "meta_title": "UPS Pension Scheme Calculator (2025) | BharatSaver",
+    "meta_description": "Estimate your potential pension amount under the Universal Pension Scheme (UPS) with our easy-to-use calculator. Plan for your future in 2025.",
+    "h1": "UPS Pension Scheme Calculator"
   },
   "scheme_selector": {
-    "title": "முதலீட்டுத் திட்டத் தேர்வி",
-    "description": "உங்கள் தேவைகளுக்கு சிறந்த முதலீட்டுத் திட்டத்தைக் கண்டறிய சில கேள்விகளுக்கு பதிலளிக்கவும்.",
-    "meta_title": "AI முதலீட்டுத் திட்டத் தேர்வி வினாடி வினா (2025) | BharatSaver",
-    "meta_description": "உங்களுக்காக சிறந்த முதலீட்டுத் திட்டத்திற்கான (PPF, SSY, NPS, APY, FD) பரிந்துரையைப் பெற எங்கள் AI-இயங்கும் திட்டத் தேர்வி வினாடி வினாவைப் பயன்படுத்தவும் 2025 இல்.",
-    "h1": "AI திட்டத் தேர்வி வினாடி வினா",
-    "age_label": "உங்கள் வயது",
-    "income_label": "தற்போதைய ஆண்டு வருமானம் (₹)",
-    "risk_label": "உங்கள் இடர் సహిष्णुತೆ",
-    "risk_low": "குறைந்த",
-    "risk_medium": "நடுத்தர",
-    "risk_high": "அதிக",
-    "horizon_label": "முதலீட்டுக் காலம்",
-    "horizon_short": "குறுகிய காலம் (< 5 ஆண்டுகள்)",
-    "horizon_medium": "நடுத்தர காலம் (5-10 ஆண்டுகள்)",
-    "horizon_long": "நீண்ட காலம் (> 10 ஆண்டுகள்)",
-    "goal_label": "முதன்மை முதலீட்டு இலக்கு",
-    "goal_placeholder": "எ.கா., ஓய்வு, குழந்தையின் கல்வி",
-    "submit_button": "என் திட்டத்தைக் கண்டுபிடி",
-    "loading": "உங்களுக்கான சிறந்த திட்டத்தைத் தேடுகிறது...",
-    "result_title": "உங்கள் பரிந்துரைக்கப்பட்ட திட்டம்",
-    "result_reasoning": "காரணம்"
+    "title": "Investment Scheme Selector",
+    "description": "Answer a few questions to find the best investment scheme for your needs.",
+    "meta_title": "AI Investment Scheme Selector Quiz (2025) | BharatSaver",
+    "meta_description": "Use our AI-powered Scheme Selector Quiz to get a recommendation for the best investment scheme (PPF, SSY, NPS, APY, FD) for you in 2025.",
+    "h1": "AI Scheme Selector Quiz",
+    "age_label": "Your Age",
+    "income_label": "Current Annual Income (in ₹)",
+    "risk_label": "Your Risk Tolerance",
+    "risk_low": "Low",
+    "risk_medium": "Medium",
+    "risk_high": "High",
+    "horizon_label": "Investment Horizon",
+    "horizon_short": "Short-term (< 5 years)",
+    "horizon_medium": "Medium-term (5-10 years)",
+    "horizon_long": "Long-term (> 10 years)",
+    "goal_label": "Primary Investment Goal",
+    "goal_placeholder": "e.g., Retirement, Child's education",
+    "submit_button": "Find my Scheme",
+    "loading": "Finding the best scheme for you...",
+    "result_title": "Your Recommended Scheme",
+    "result_reasoning": "Reasoning"
   },
   "terms_page": {
-    "meta_title": "விதிமுறைகளும் நிபந்தனைகளும் | BharatSaver",
-    "meta_description": "பாரத்சேவர் இணையதளம் மற்றும் దాని கருவிகளைப் பயன்படுத்துவதற்கான விதிமுறைகள் மற்றும் நிபந்தனைகளைப் படிக்கவும்.",
-    "h1": "விதிமுறைகளும் நிபந்தனைகளும்",
-    "p1": "பாரத்சேவருக்கு வரவேற்கிறோம். எங்கள் வலைத்தளத்தை அணுகுவதன் மூலம், இந்த விதிமுறைகள் மற்றும் நிபந்தனைகளை ஏற்கிறீர்கள். தயவுசெய்து அவற்றை கவனமாகப் படியுங்கள்.",
-    "h2_1": "இணையதளத்தின் பயன்பாடு",
-    "p2": "இந்த இணையதளத்தில் வழங்கப்படும் உள்ளடக்கம் மற்றும் கருவிகள் பொதுவான தகவல் మరియు பயன்பாட்டிற்காக மட்டுமே. அவை அறிவிப்பு இல்லாமல் மாற்றத்திற்கு உட்பட்டவை. இந்த இணையதளத்தில் உள்ள எந்தவொரு தகவல் அல்லது பொருட்களின் பயன்பாடும் முற்றிலும் உங்கள் స్వంత ஆபத்தில் உள்ளது, அதற்கு நாங்கள் பொறுப்பேற்க மாட்டோம்.",
-    "h2_2": "தகவலின் துல்லியம்",
-    "p3": "துல்லியமான மற்றும் புதுப்பித்த தகவல்களை வழங்க நாங்கள் முயற்சிக்கும்போது, வலைத்தளம் அல்லது வலைத்தளத்தில் உள்ள தகவல், தயாரிப்புகள், சேவைகள் அல்லது संबंधित கிராபிக்ஸ் தொடர்பாக எந்தவொரு நோக்கத்திற்காகவும் முழுமை, துல்லியம், நம்பகத்தன்மை, பொருத்தம் அல்லது கிடைக்கும் தன்மை குறித்து எந்தவொரு பிரதிநிதித்துவத்தையும் அல்லது உத்தரவாதத்தையும் நாங்கள் வெளிப்படுத்தவோ அல்லது மறைமுகமாகவோ செய்யவில்லை.",
-    "h2_3": "ஆளும் சட்டம்",
-    "p4": "இந்த வலைத்தளத்தின் உங்கள் பயன்பாடு மற்றும் வலைத்தளத்தின் అത്തരം பயன்பாட்டிலிருந்து எழும் எந்தவொரு തർക്കமும் இந்தியாவின் சட்டங்களுக்கு உட்பட்டது."
+    "meta_title": "Terms and Conditions | BharatSaver",
+    "meta_description": "Read the terms and conditions for using the BharatSaver website and its tools.",
+    "h1": "Terms and Conditions",
+    "p1": "Welcome to BharatSaver. By accessing our website, you agree to these terms and conditions. Please read them carefully.",
+    "h2_1": "Use of Website",
+    "p2": "The content and tools provided on this website are for general information and use only. They are subject to change without notice. Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable.",
+    "h2_2": "Accuracy of Information",
+    "p3": "While we strive to provide accurate and up-to-date information, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose.",
+    "h2_3": "Governing Law",
+    "p4": "Your use of this website and any dispute arising out of such use of the website is subject to the laws of India."
   },
   "contact_page": {
-    "meta_title": "எங்களைத் தொடர்புகொள்ளவும் | BharatSaver",
-    "meta_description": "ఏதேனும் கேள்விகள் அல்லது கருத்துகளுக்கு பாரத்சேவர் குழுவுடன் தொடர்புகொள்ளவும்.",
-    "h1": "எங்களைத் தொடர்புகொள்ளவும்",
-    "p1": "உங்களுக்கு உதவ நாங்கள் இங்கே இருக்கிறோம். ஏதேனும் கேள்விகள் அல்லது கருத்துகளுடன் எங்களை அணுகவும்."
+    "meta_title": "Contact Us | BharatSaver",
+    "meta_description": "Get in touch with the BharatSaver team for any questions or feedback.",
+    "h1": "Contact Us",
+    "p1": "We're here to help. Reach out to us with any questions or feedback."
   },
   "about_page": {
-    "meta_title": "எங்களைப் பற்றி | BharatSaver",
-    "meta_description": "ஒவ்வொரு இந்தியரையும் நிதி அறிவு மற்றும் இலவச, சுலபமாக பயன்படுத்தக்கூடிய கருவிகளுடன் மேம்படுத்துவதற்கான பாரத்சேவரின் நோக்கம் பற்றி மேலும் அறியவும்.",
-    "h1": "ஒவ்வொரு இந்தியரையும் நிதி அறிவால் மேம்படுத்துதல்",
-    "p1": "உங்கள் எதிர்காலத்திற்கான சிறந்த முடிவுகளை எடுக்க உதவும் அணுகக்கூடிய மற்றும் எளிதில் புரிந்துகொள்ளக்கூடிய நிதி கருவிகள் మరియు வழிகாட்டிகளை வழங்குவதே எங்கள் நோக்கம்.",
-    "h2_1": "எங்கள் கதை",
-    "p2": "பாரத்சேவர் ஒரு எளிய யோசனையுடன் நிறுவப்பட்டது: நிதி திட்டமிடலை அச்சுறுத்தல் குறைவாகவும் அனைவருக்கும் அணுகக்கூடியதாகவும் மாற்றுவது. சரியான கருவிகளுடன், எவரும் தங்கள் நிதி நலனைக் கட்டுப்படுத்த முடியும் என்று நாங்கள் நம்புகிறோம்.",
-    "p3": "எங்கள் குழு நிதி மற்றும் தொழில்நுட்பத்தில் ஆர்வமாக உள்ளது, மற்றும் நீங்கள் நம்பக்கூடிய உயர்தர, நம்பகமான வளங்களை உருவாக்க நாங்கள் அர்ப்பணித்துள்ளோம்."
+    "meta_title": "About Us | BharatSaver",
+    "meta_description": "Learn more about BharatSaver's mission to empower every Indian with financial knowledge and free, easy-to-use tools.",
+    "h1": "Empowering Every Indian with Financial Knowledge",
+    "p1": "Our mission is to provide accessible and easy-to-understand financial tools and guides to help you make smarter decisions for your future.",
+    "h2_1": "Our Story",
+    "p2": "BharatSaver was founded with a simple idea: to make financial planning less intimidating and more accessible for everyone. We believe that with the right tools, anyone can take control of their financial well-being.",
+    "p3": "Our team is passionate about finance and technology, and we are dedicated to creating high-quality, reliable resources that you can trust."
   },
   "search_page": {
-    "meta_title": "தேடு | BharatSaver",
-    "meta_description": "பாரத்சேவரில் நிதி கால்குலேட்டர்கள் மற்றும் வழிகாட்டிகளைத் தேடுங்கள்.",
-    "title": "தேடல் முடிவுகள்",
-    "title_with_query": "தேடல் முடிவுகள்",
-    "h1": "கால்குலேட்டர்கள் மற்றும் வழிகாட்டிகளைத் தேடுங்கள்",
-    "h1_with_query": "தேடல் முடிவுகள்",
-    "results_placeholder": "தேடல் செயல்பாடு விரைவில் வருகிறது."
+    "meta_title": "Search | BharatSaver",
+    "meta_description": "Search for financial calculators and guides on BharatSaver.",
+    "title": "Search Results",
+    "title_with_query": "Search results for",
+    "h1": "Search Calculators and Guides",
+    "h1_with_query": "Search Results for",
+    "results_placeholder": "Search functionality is coming soon."
+  },
+  "author_card": {
+    "title": "About the Author",
+    "role": "Founder & Finance Expert",
+    "bio": "Mahesh Chaube is a seasoned financial expert dedicated to simplifying personal finance for everyone. With a passion for teaching, he breaks down complex topics into easy-to-understand guides and tools."
   }
 }
