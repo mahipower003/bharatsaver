@@ -1,4 +1,3 @@
-
 {
   "header": {
     "nav": {
@@ -594,7 +593,7 @@
       "intro": "APY ప్రీమియం PPF లేదా NPS వంటి చక్రవడ్డీ సూత్రంతో లెక్కించబడదు. బదులుగా, ప్రీమియంలు మీ ప్రవేశ వయస్సు మరియు ఎంచుకున్న పెన్షన్ ఆధారంగా ప్రభుత్వం నిర్ణయించిన స్థిర మొత్తాలు. మా క్యాలిక్యులేటర్ మీకు ఖచ్చితమైన మొత్తాన్ని ఇవ్వడానికి PFRDA యొక్క అధికారిక ప్రీమియం పట్టికను ఉపయోగిస్తుంది.",
       "example": {
         "title": "ఉదాహరణ: వయస్సు 25 — ప్రీమియం ఎలా పనిచేస్తుంది",
-        "body": "<strong>నెలవారీ ప్రీమియం (చార్ట్ నుండి):</strong> ₹76<br/><strong>కంట్రిబ్యూషన్ సంవత్సరాలు:</strong> 25 సంవత్సరాల నుండి 60 సంవత్సరాల వరకు = 35 సంవత్సరాలు<br/><strong>మొత్తం చెల్లించినది</strong> = 76 × 12 × 35 = ₹31,920 (35 సంవత్సరాలలో మొత్తం కంట్రిబ్యూషన్‌లు)<br/><strong>ఫలితం:</strong> 60 సంవత్సరాల నుండి ₹1,000 హామీ ఇవ్వబడిన నెలవారీ పెన్షన్ (పథకం నిబంధనల ప్రకారం పెన్షన్ అందిస్తుంది; చెల్లింపులు పూల్ చేయబడిన ఫండ్/యాన్యుటీల నుండి వస్తాయి).",
+        "body": "<strong>నెలవారీ ప్రీమియం (చార్ట్ నుండి):</strong> ₹76<br/><strong>కంట్రిబ్యూషన్ సంవత్సరాలు:</strong> 25 సంవత్సరాల నుండి 60 సంవత్సరాల వరకు = 35 సంవత్సరాలు<br/><strong>మొత్తం చెల్లించినది</strong> = 76 × 12 × 35 = ₹31,920 (35 సంవత్సరాలలో మొత్తం కంట్రిబ్యూషన్‌లు)<br/><strong>ఫలితం:</strong> 60 సంవత్సరాల నుండి ₹1,000 హామీ ఇవ్వబడిన నెలవారీ పెన్షన్ (పథకం నిబంధనల ప్రకారం పెన్షన్ అందిస్తుంది; చెల్లింపులు పూల్ చేయబడిన ఫండ్/వార్షికాల నుండి వస్తాయి).",
         "note": "<strong>గమనిక:</strong> APY ప్రీమియంలు ప్రభుత్వ యాక్చురియల్ పట్టికల నుండి వస్తాయి — అవి పూల్ చేయబడిన పెట్టుబడి & హామీలను ప్రతిబింబిస్తాయి. తక్కువ మొత్తం-చెల్లించిన వర్సెస్ పెన్షన్ APY యొక్క సామాజిక-భద్రతా స్వభావాన్ని హైలైట్ చేస్తుంది."
       }
     },
@@ -745,7 +744,7 @@
         { "question": "FD vs PPF — which is better?", "answer": "It depends: PPF is better for long-term, tax-free growth; FD is better for short-term goals and liquidity. Use the calculator to compare the exact numeric outcome for your inputs." },
         { "question": "How to calculate FD returns after tax?", "answer": "Compute FD future value with compound interest, subtract the original principal to get interest earned, then apply your marginal tax rate to that interest to find tax owed. Post-tax maturity = gross maturity − tax." },
         { "question": "How is PPF interest calculated?", "answer": "PPF interest is compounded annually at the rate notified quarterly by the government. If you deposit at the start of each year (annuity-due), the formula uses an annuity multiplier." },
-        { "question": "What if I want to compare equal total investments?", "answer": "This feature is coming soon. Currently, the tool compares a one-time FD investment against a recurring PPF investment, which is a common real-world scenario." },
+        { "question": "What if I want to compare equal total investments?", "answer": "Switch the tool to “Same total invested” mode — it will either spread your FD lump-sum into equal yearly investments or scale PPF contributions so total capital deployed matches." },
         { "question": "Does PPF allow early withdrawals?", "answer": "Partial withdrawals are permitted from the 7th financial year under limits; loans are available between years 3 and 6. Full premature closure is allowed only in specific cases (e.g., serious illness) and may carry a penalty." },
         { "question": "Is FD interest taxable?", "answer": "Yes — FD interest is taxable at your marginal income tax slab. TDS (10%) is applicable above statutory thresholds; however, actual tax liability will depend on your slab." },
         { "question": "Can I claim tax benefits for FD?", "answer": "Only 5-year tax-saving FDs qualify for deduction under Section 80C; their interest remains taxable." },
@@ -847,7 +846,7 @@
   "author_card": {
     "title": "రచయిత గురించి",
     "role": "వ్యవస్థాపకుడు & ఫైనాన్స్ నిపుణుడు",
-    "bio": "మహేష్ చౌబే, CFP ఒక సర్టిఫైడ్ ఫైనాన్షియల్ ప్లానర్, భారతీయ కుటుంబాలకు పన్ను-సమర్థవంతమైన పదవీ విరమణ మరియు విద్యా ప్రణాళికలను నిర్మించడంలో విస్తృతమైన అనుభవం ఉంది. మహేష్ పదవీ విరమణ వ్యూహం, పన్ను-ఆప్టిమైజ్డ్ ఫిక్స్‌డ్-ఇన్‌కమ్ ప్లానింగ్ మరియు రోజువారీ పెట్టుబడిదారులకు నిర్ణయం తీసుకోవడాన్ని సులభతరం చేసే ఆచరణాత్మక ఆర్థిక సాధనాలలో (క్యాలిక్యులేటర్లు, వర్క్‌షీట్‌లు) ప్రత్యేకత కలిగి ఉన్నారు. అతను క్రమం తప్పకుండా ఫిన్‌టెక్‌లకు సలహా ఇస్తాడు మరియు డేటా-ఆధారిత వ్యక్తిగత ఫైనాన్స్ గైడ్‌లను వ్రాస్తాడు.",
+    "bio": "మహేష్ చౌబే, CFP ఒక సర్టిఫైడ్ ఫైనాన్షియల్ ప్లానర్, భారతీయ కుటుంబాలకు పన్ను-సమర్థవంతమైన పదవీ విరమణ మరియు విద్యా ప్రణాళికలను నిర్మించడంలో విస్తృతమైన అనుభవం ఉంది। మహేష్ పదవీ విరమణ వ్యూహం, పన్ను-ఆప్టిమైజ్డ్ ఫిక్స్‌డ్-ఇన్‌కమ్ ప్లానింగ్ మరియు రోజువారీ పెట్టుబడిదారులకు నిర్ణయం తీసుకోవడాన్ని సులభతరం చేసే ఆచరణాత్మక ఆర్థిక సాధనాలలో (క్యాలిక్యులేటర్లు, వర్క్‌షీట్‌లు) ప్రత్యేకత కలిగి ఉన్నారు। అతను క్రమం తప్పకుండా ఫిన్‌టెక్‌లకు సలహా ఇస్తాడు మరియు డేటా-ఆధారిత వ్యక్తిగత ఫైనాన్స్ గైడ్‌లను వ్రాస్తాడు।",
     "author_page_link": "అన్ని కథనాలను చూడండి"
   },
   "author_page": {
