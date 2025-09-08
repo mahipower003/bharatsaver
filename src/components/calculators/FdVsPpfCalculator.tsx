@@ -183,6 +183,9 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
     "Post-Tax Value": { label: "Post-Tax Value", color: "hsl(var(--primary))" },
   } satisfies ChartConfig;
 
+  const winner = result ? (result.ppfMaturity > result.fdPostTaxMaturity ? 'PPF' : 'FD') : null;
+  const difference = result ? Math.abs(result.ppfMaturity - result.fdPostTaxMaturity) : 0;
+
   return (
     <>
       <Card className="shadow-lg">
@@ -202,6 +205,7 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
                     <FormItem>
                       <FormLabel>{dictionary.investment_amount_label}</FormLabel>
                       <FormControl><Input type="number" {...field} /></FormControl>
+                      <CardDescription>{dictionary.investment_amount_note}</CardDescription>
                       <FormMessage />
                     </FormItem>
                   )} />
@@ -263,12 +267,14 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
         <Card className="mt-8 animate-in fade-in-50 slide-in-from-bottom-5 shadow-lg">
           <CardHeader>
             <CardTitle>{dictionary.results_title}</CardTitle>
-            <CardDescription>{`For an annual investment of ${formatCurrency(form.getValues().investmentAmount)} over ${form.getValues().fdTenure} years:`}</CardDescription>
+            <CardDescription>
+                {dictionary.result_snapshot.replace('{winner}', winner || '').replace('{difference}', formatCurrency(difference))}
+            </CardDescription>
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div className="border p-4 rounded-lg">
-                    <h3 className="text-lg font-semibold text-center mb-2">Fixed Deposit (FD)</h3>
+                    <h3 className="text-lg font-semibold text-center mb-2">{dictionary.fd_label}</h3>
                     <div className="space-y-2">
                         <p className="flex justify-between"><span>{dictionary.fd_maturity_label}</span> <span className="font-bold">{formatCurrency(result.fdMaturity)}</span></p>
                         <p className="flex justify-between"><span>{dictionary.fd_post_tax_maturity_label}</span> <span className="font-bold text-primary">{formatCurrency(result.fdPostTaxMaturity)}</span></p>
@@ -277,7 +283,7 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
                     </div>
                 </div>
                 <div className="border p-4 rounded-lg">
-                     <h3 className="text-lg font-semibold text-center mb-2">Public Provident Fund (PPF)</h3>
+                     <h3 className="text-lg font-semibold text-center mb-2">{dictionary.ppf_label}</h3>
                     <div className="space-y-2">
                         <p className="flex justify-between"><span>{dictionary.ppf_maturity_label}</span> <span className="font-bold text-primary">{formatCurrency(result.ppfMaturity)}</span></p>
                         <p className="flex justify-between text-sm text-muted-foreground"><span>{dictionary.total_interest_label}</span> <span>{formatCurrency(result.ppfInterest)}</span></p>
