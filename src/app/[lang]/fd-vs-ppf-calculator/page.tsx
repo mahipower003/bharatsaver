@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   const dictionary = await getDictionary(params.lang, ['fd_vs_ppf_calculator']);
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/fd-vs-ppf-calculator`;
+  const ogImageUrl = `${siteUrl}/images/fd-vs-ppf-calculator.png`;
 
   const faqItems = dictionary.fd_vs_ppf_calculator.faqs;
   const faqSchema = {
@@ -34,6 +35,34 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     })),
   };
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": pageUrl
+    },
+    "headline": "FD vs PPF Calculator 2025 — Compare Returns, Tax & Maturity (Free Tool)",
+    "description": "Use our free FD vs PPF calculator to compare maturity amounts, tax impact and post-tax returns. Includes premium charts, examples, and downloadable CSV. Updated Sep 2025.",
+    "image": ogImageUrl,
+    "author": {
+      "@type": "Person",
+      "name": "Mahesh Chaube",
+      "url": "https://www.linkedin.com/in/mahi003/",
+      "sameAs": "https://www.linkedin.com/in/mahi003/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "BharatSaver",
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${siteUrl}/icon.svg`
+      }
+    },
+    "datePublished": "2024-07-24",
+    "dateModified": "2025-09-01"
+  };
+
   return {
     title: dictionary.fd_vs_ppf_calculator.meta_title,
     description: dictionary.fd_vs_ppf_calculator.meta_description,
@@ -41,7 +70,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       title: dictionary.fd_vs_ppf_calculator.og_title,
       description: dictionary.fd_vs_ppf_calculator.og_description,
       url: pageUrl,
-      images: [{ url: `/images/fd-vs-ppf-calculator.png`, width: 1200, height: 630, alt: 'BharatSaver FD vs PPF Calculator' }],
+      images: [{ url: ogImageUrl, width: 1200, height: 630, alt: 'BharatSaver FD vs PPF Calculator' }],
       locale: params.lang === 'en' ? 'en_IN' : params.lang,
       type: 'website',
     },
@@ -49,7 +78,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       card: 'summary_large_image',
       title: dictionary.fd_vs_ppf_calculator.meta_title,
       description: dictionary.fd_vs_ppf_calculator.meta_description,
-      images: [`${siteUrl}/images/fd-vs-ppf-calculator.png`],
+      images: [ogImageUrl],
     },
     alternates: {
       canonical: pageUrl,
@@ -59,7 +88,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       }, {} as Record<string, string>),
     },
     other: {
-      'application/ld+json': JSON.stringify(faqSchema),
+      'application/ld+json': JSON.stringify([faqSchema, articleSchema]),
     },
   };
 }
