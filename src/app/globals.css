@@ -10,7 +10,7 @@
     --card-foreground: 224 71.4% 4.1%;
     --popover: 0 0% 100%;
     --popover-foreground: 224 71.4% 4.1%;
-    --primary: 220 90% 55%;
+    --primary: 243 93% 59%;
     --primary-foreground: 0 0% 98%;
     --secondary: 220 14.3% 95.9%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -22,7 +22,7 @@
     --destructive-foreground: 0 0% 98%;
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 220 90% 55%;
+    --ring: 243 93% 59%;
     --radius: 0.5rem;
   }
 
@@ -33,7 +33,7 @@
     --card-foreground: 210 20% 98%;
     --popover: 224 71.4% 4.1%;
     --popover-foreground: 210 20% 98%;
-    --primary: 220 90% 55%;
+    --primary: 243 93% 59%;
     --primary-foreground: 0 0% 98%;
     --secondary: 215 27.9% 16.9%;
     --secondary-foreground: 210 20% 98%;
@@ -45,7 +45,7 @@
     --destructive-foreground: 0 0% 98%;
     --border: 215 27.9% 16.9%;
     --input: 215 27.9% 16.9%;
-    --ring: 220 90% 55%;
+    --ring: 243 93% 59%;
   }
 }
 
@@ -67,9 +67,9 @@
   .bs-byline .bs-sep { @apply mx-2 text-muted-foreground/50; }
   .bs-byline .bs-reviewed { @apply text-xs text-muted-foreground mt-1; }
 
-  .bs-author-box { @apply flex flex-col sm:flex-row gap-4 sm:gap-6 items-center sm:items-start border-t pt-8 mt-12; }
+  .bs-author-box { @apply flex flex-col sm:flex-row gap-6 items-start border bg-secondary/40 p-6 rounded-lg mt-12; }
   .bs-author-photo { @apply rounded-full w-24 h-24 object-cover; }
-  .bs-author-info h4 { @apply m-0 mb-2 text-lg; }
+  .bs-author-info h4 { @apply m-0 mb-2 text-xl font-bold; }
   .bs-author-bio { @apply m-0 mb-2 leading-relaxed; }
   .bs-author-links a { @apply text-primary mr-3 text-sm font-medium; }
   .bs-review { @apply text-xs text-muted-foreground mt-2; }

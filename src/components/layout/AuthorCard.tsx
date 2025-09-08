@@ -3,7 +3,7 @@
 
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Twitter, Linkedin } from 'lucide-react';
+import { Twitter, Linkedin, UserSquare } from 'lucide-react';
 import Link from 'next/link';
 import type { Dictionary } from '@/types';
 import { usePathname } from 'next/navigation';
@@ -33,15 +33,16 @@ export function AuthorCard({ dictionary }: AuthorCardProps) {
             <div className="bs-review">
               <strong>Reviewed by:</strong> BharatSaver Editorial Team — calculations and PPF/FD rules verified against official sources (PFRDA, Income Tax Department). Review date: <time dateTime="2025-09-01">September 2025</time>.
             </div>
-            <p className="bs-author-links mt-4 flex items-center gap-4">
-                <a href="https://www.linkedin.com/in/mahi003/" rel="noopener" target="_blank" className="flex items-center gap-2 hover:text-primary">
+            <div className="bs-author-links mt-4 flex items-center gap-6">
+                <a href="https://www.linkedin.com/in/mahi003/" rel="noopener" target="_blank" className="flex items-center gap-2 hover:text-primary transition-colors">
                     <Linkedin className="h-5 w-5"/>
                     LinkedIn
                 </a>
-                 <Link href={`/${lang}/author/mahesh-chaube`} className="flex items-center gap-2 hover:text-primary">
+                 <Link href={`/${lang}/author/mahesh-chaube`} className="flex items-center gap-2 hover:text-primary transition-colors">
+                    <UserSquare className="h-5 w-5" />
                     {dictionary.author_page_link}
                 </Link>
-            </p>
+            </div>
         </div>
     </aside>
   );
