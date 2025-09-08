@@ -1,3 +1,4 @@
+
 import {
   Landmark,
   Baby,
@@ -62,7 +63,7 @@ export const calculators: Calculator[] = [
     icon: ArrowRightLeft,
     link_text: 'Compare Now',
     lastModified: '2024-07-24',
-    image: '/images/fd-vs-ppf-calculator.png'
+    image: '/images/fdvspf-calculator-online.png'
   },
   {
     slug: 'tax-regime-calculator',
@@ -71,7 +72,7 @@ export const calculators: Calculator[] = [
     summary: 'Use our free calculator to compare your income tax liability under the Old and New tax regimes in India and find out which is better for you for the current assessment year.',
     icon: FileText,
     link_text: 'Compare Now',
-    lastModified: '2024-07-23',
+    lastModified: '2024-07-30',
     image: '/images/tax-regime-calculator-online.png'
   },
   {
@@ -125,3 +126,5 @@ export const calculators: Calculator[] = [
     image: '/images/PPF-NPS-FD-SSY-Scheme-selector.png'
   },
 ];
+
+    

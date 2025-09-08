@@ -650,6 +650,7 @@
     "h1": "FD vs PPF Returns Calculator 2025 — Compare Fixed Deposit & PPF",
     "description": "Enter your investment amount and tenure to see a side-by-side comparison of maturity value, tax impact, and post-tax returns for Fixed Deposits and Public Provident Fund. Make an informed decision.",
     "title": "FD vs PPF Calculator",
+    "last_updated": "Last Updated:",
     "form_description": "Compare post-tax returns from a lump-sum FD vs recurring PPF investment.",
     "investment_amount_label": "Lump-sum Investment (FD) / Annual Recurring (PPF)",
     "tenure_label": "Investment Tenure (Years)",
@@ -764,7 +765,78 @@
   "tax_regime_calculator": {
     "meta_title": "Old vs New Tax Regime Calculator (AY 2025-26) | BharatSaver",
     "meta_description": "Use our free calculator to compare your income tax liability under the Old and New tax regimes in India and find out which is better for you for AY 2025-26.",
-    "h1": "Old vs New Tax Regime Calculator"
+    "h1": "Tax Regime Calculator 2025 — Compare Old vs New Tax Regime (India)",
+    "description": "Enter your salary and deductions to instantly compare tax under the old vs new regime. Updated for FY 2025-26 — includes HRA, 80C, 80D, and worked examples.",
+    "title": "Tax Regime Calculator",
+    "last_updated": "Last Updated:",
+    "form_description": "Find out which tax regime saves you more money.",
+    "gross_salary_label": "Gross Annual Salary",
+    "basic_salary_label": "Basic Salary (for HRA calculation)",
+    "other_income_label": "Other Income (e.g., interest, rent)",
+    "age_label": "Age Category",
+    "deductions_title": "Deductions (for Old Regime)",
+    "section80C_label": "Section 80C (PPF, EPF, ELSS)",
+    "section80D_label": "Section 80D (Medical Insurance)",
+    "section80CCD1B_label": "Section 80CCD(1B) (NPS)",
+    "hra_label": "HRA Received",
+    "home_loan_interest_label": "Home Loan Interest (u/s 24)",
+    "calculate_button": "Compare Tax",
+    "loading": "Calculating...",
+    "results_title": "Tax Comparison Result",
+    "result_recommendation": "Choose the {winner} — it saves you {savings} this year based on your inputs.",
+    "old_regime": "Old Regime",
+    "new_regime": "New Regime",
+    "total_tax_label": "Total Tax Payable",
+    "taxable_income_label": "Taxable Income",
+    "net_income_label": "Take-home Income (Post-Tax)",
+    "comparison_table": {
+      "title": "Old vs New Tax Regime: Key Differences",
+      "description": "A quick look at what's allowed in each regime.",
+      "table": {
+        "headers": ["Feature", "Old Tax Regime", "New Tax Regime (Default)"],
+        "rows": [
+          ["Tax Slabs", "4 slabs (5%, 20%, 30%)", "6 slabs (5% to 30%)"],
+          ["Standard Deduction", "₹50,000", "₹50,000"],
+          ["Section 80C/80D", "Allowed", "Not Allowed"],
+          ["HRA Exemption", "Allowed", "Not Allowed"],
+          ["Home Loan Interest", "Allowed", "Not Allowed"]
+        ]
+      }
+    },
+    "how_we_calculate": {
+      "title": "How We Calculate Your Tax",
+      "body": "<p>Our calculator applies the official tax slabs and rules for both regimes for FY 2024-25 (AY 2025-26).</p><ul><li><strong>Old Regime Calculation:</strong> Gross Income - Standard Deduction - All Section 80 Deductions - HRA/Home Loan Interest = Taxable Income.</li><li><strong>New Regime Calculation:</strong> Gross Income - Standard Deduction = Taxable Income.</li></ul><p>Health & Education Cess of 4% is applied to the final tax amount. We cite the official <a href='https://incometaxindia.gov.in/Pages/tools/income-tax-calculator.aspx' target='_blank' rel='noopener noreferrer'>Income Tax Department e-calculator</a> for slab rates. The default new regime has a rebate under section 87A for incomes up to ₹7 lakh, making the effective tax zero. For more details, see our <a href='/{lang}/guides/old-vs-new-tax-regime'>guide on choosing a tax regime</a>.</p>"
+    },
+    "common_scenarios": {
+      "title": "Common Scenarios: Who Should Choose Which Regime?",
+      "scenario1": {
+        "title": "Salaried with HRA & 80C Investments",
+        "body": "<strong>Example:</strong> A person with a ₹12 lakh salary, receiving ₹2 lakh in HRA, and investing ₹1.5 lakh in 80C. <br/>👉 In this case, the <strong>Old Regime is almost always better</strong> because the combined value of HRA and 80C deductions significantly lowers the taxable income, offsetting the benefit of lower slab rates in the new regime."
+      },
+      "scenario2": {
+        "title": "Self-Employed with No Major Deductions",
+        "body": "<strong>Example:</strong> A freelancer earning ₹15 lakh with minimal deductions (less than ₹1.5 lakh). <br/>👉 The <strong>New Regime is likely better</strong> here. Since they cannot claim major deductions like HRA or have limited 80C investments, the lower tax rates of the new regime result in a lower overall tax liability."
+      }
+    },
+    "faq_title": "Frequently Asked Questions",
+    "faqs": [
+      { "question": "What is the new tax regime?", "answer": "The new tax regime offers lower income tax slab rates but does not allow most common deductions and exemptions like those under Section 80C, 80D, or HRA. It is the default regime for FY 2024-25." },
+      { "question": "What is the old tax regime?", "answer": "The old tax regime has higher tax slab rates but allows you to claim over 70 deductions and exemptions, such as Section 80C (for investments), 80D (for medical insurance), and HRA (House Rent Allowance)." },
+      { "question": "Which is better: old vs new for ₹10 lakh salary?", "answer": "It depends on your deductions. If your total deductions (80C, HRA, etc.) are more than ₹2.5 lakh, the Old Regime is usually better. If not, the New Regime is likely more beneficial. Use our calculator for an exact comparison." },
+      { "question": "Does new regime allow HRA?", "answer": "No, HRA exemption cannot be claimed under the new tax regime." },
+      { "question": "Can I claim 80C under new regime?", "answer": "No, deductions under Section 80C (like PPF, ELSS, Life Insurance) are not allowed in the new tax regime." },
+      { "question": "How is standard deduction treated in new regime?", "answer": "A standard deduction of ₹50,000 is available for salaried individuals and pensioners under both the old and the new tax regimes." },
+      { "question": "Is rebate under section 87A available in 2025?", "answer": "Yes. In the new regime, if your taxable income is up to ₹7 lakh, you pay zero tax due to the rebate. In the old regime, the rebate is available for taxable income up to ₹5 lakh." },
+      { "question": "What is the last date to file ITR for FY 2024-25?", "answer": "For most individuals and salaried employees, the due date to file their Income Tax Return (ITR) for the Financial Year 2024-25 (Assessment Year 2025-26) is 31st July 2025." },
+      { "question": "Can I switch between regimes every year?", "answer": "Salaried individuals can choose between the old and new regimes every year. However, individuals with business income have only one opportunity to switch back to the old regime after opting for the new one." }
+    ],
+    "next_steps": {
+      "title": "Next Steps",
+      "cta1_title": "File Your ITR",
+      "cta1_desc": "Use a trusted partner to file your Income Tax Return accurately and on time.",
+      "cta2_title": "Explore Tax-Saving Investments",
+      "cta2_desc": "Use our calculators for PPF, NPS, and ELSS to plan your 80C investments."
+    }
   },
   "retirement_corpus_calculator": {
     "meta_title": "Retirement Corpus Calculator for India (2025) | BharatSaver",
@@ -846,8 +918,6 @@
     "results_placeholder": "Search functionality is coming soon."
   },
   "author_card": {
-    "title": "About the Author",
-    "role": "Founder & Finance Expert",
     "bio": "Mahesh Chaube, CFP is a Certified Financial Planner with extensive experience helping Indian families build tax-efficient retirement and education plans. Mahesh specialises in retirement strategy, tax-optimised fixed-income planning and practical financial tools (calculators, worksheets) that simplify decision-making for everyday investors. He regularly advises fintechs and writes data-driven personal finance guides.",
     "author_page_link": "View all articles"
   },
@@ -859,3 +929,5 @@
     "view_calculator": "View Calculator"
   }
 }
+
+    
