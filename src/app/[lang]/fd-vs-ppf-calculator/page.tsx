@@ -125,7 +125,7 @@ export default async function FdVsPpfCalculatorPage({ params }: { params: { lang
             <span className="bs-creds">, CFP</span>
             <span className="bs-sep">|</span>
             <span className="bs-updated">Last updated: <time dateTime="2025-09-01">September 2025</time></span>
-            <div className="bs-reviewed">Reviewed by <strong>BharatSaver Editorial Team</strong></div>
+            <div className="bs-reviewed">Reviewed by <strong>Laveena Vijayi</strong> — BharatSaver Editorial Team</div>
           </div>
           <p className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{__html: dictionary.fd_vs_ppf_calculator.description}}></p>
         </div>

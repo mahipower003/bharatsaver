@@ -136,7 +136,7 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
             <span className="bs-creds">, CFP</span>
             <span className="bs-sep">|</span>
             <span className="bs-updated">Last updated: <time dateTime="2025-09-01">September 2025</time></span>
-            <div className="bs-reviewed">Reviewed by <strong>BharatSaver Editorial Team</strong></div>
+            <div className="bs-reviewed">Reviewed by <strong>Laveena Vijayi</strong> — BharatSaver Editorial Team</div>
           </div>
           <p className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{__html: dictionary.ssy_calculator.description}}></p>
         </div>
