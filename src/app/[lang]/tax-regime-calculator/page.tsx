@@ -236,3 +236,5 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
     </div>
   );
 }
+
+    

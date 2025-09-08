@@ -763,7 +763,7 @@
     }
   },
   "tax_regime_calculator": {
-    "meta_title": "Old vs New Tax Regime Calculator (AY 2025-26) | BharatSaver",
+    "meta_title": "Tax Regime Calculator 2025 — Compare Old vs New Tax Regime (India)",
     "meta_description": "Enter your salary and deductions to instantly compare tax under the old vs new regime. Updated for FY 2025-26 — includes HRA, 80C, 80D, and worked examples. Free downloadable summary & ITR filing options.",
     "h1": "Tax Regime Calculator 2025 — Compare Old vs New Tax Regime (India)",
     "description": "Enter your salary and deductions to instantly compare tax under the old vs new regime. Updated for FY 2025-26 — includes HRA, 80C, 80D, and worked examples.",
@@ -790,7 +790,7 @@
     "taxable_income_label": "Taxable Income",
     "net_income_label": "Take-home Income (Post-Tax)",
     "comparison_table": {
-      "title": "Old vs New Tax Regime: Key Differences",
+      "title": "Old vs New Tax Regime — Quick Comparison",
       "description": "A quick look at what's allowed in each regime.",
       "table": {
         "headers": ["Feature", "Old Tax Regime", "New Tax Regime (Default)"],
@@ -804,11 +804,11 @@
       }
     },
     "how_we_calculate": {
-      "title": "How We Calculate Your Tax (Old vs New Regime Example)",
+      "title": "How We Calculate Your Tax (Step-by-Step)",
       "body": "<p>Our tax calculator applies the official tax slabs for FY 2024-25 (AY 2025-26) to determine your liability under both regimes.</p><ul><li><strong>Old Regime Calculation:</strong> Gross Income - Standard Deduction - All Section 80 Deductions - HRA/Home Loan Interest = Taxable Income.</li><li><strong>New Regime Calculation:</strong> Gross Income - Standard Deduction = Taxable Income.</li></ul><p>Health & Education Cess of 4% is applied to the final tax amount. The default new regime has a rebate under section 87A for incomes up to ₹7 lakh, making the effective tax zero. For slab rates, we cite the official <a href='https://incometaxindia.gov.in/Pages/tools/income-tax-calculator.aspx' target='_blank' rel='noopener noreferrer'>Income Tax Department e-calculator</a>. For more details, see our <a href='/{lang}/guides/old-vs-new-tax-regime'>guide on how to choose a tax regime</a>.</p>"
     },
     "common_scenarios": {
-      "title": "Which Tax Regime is Better for My Salary?",
+      "title": "Common Scenarios: Which Tax Regime is Better?",
       "scenario1": {
         "title": "Scenario 1: Salaried with HRA & Full 80C Investments",
         "body": "<strong>Example:</strong> A person with a ₹12 lakh salary, receiving ₹2 lakh in HRA, and investing ₹1.5 lakh in 80C. <br/>👉 In this case, the <strong>Old Regime is almost always better</strong> because the combined value of HRA and 80C deductions significantly lowers the taxable income, offsetting the benefit of lower slab rates in the new regime."
@@ -929,3 +929,5 @@
     "view_calculator": "View Calculator"
   }
 }
+
+    
