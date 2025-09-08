@@ -834,7 +834,7 @@
       { "question": "What is the new tax regime?", "answer": "The new tax regime offers lower income tax slab rates but does not allow most common deductions like Section 80C, 80D, or HRA. It is the default regime for FY 2024-25." },
       { "question": "What is the old tax regime?", "answer": "The old tax regime has higher tax slab rates but allows you to claim over 70 deductions like Section 80C, 80D, and HRA." },
       { "question": "Which is better: old vs new for ₹10 lakh salary?", "answer": "It depends on your deductions. If your total deductions (80C, HRA, etc.) are more than ₹2.5 lakh, the Old Regime is usually better. If not, the New Regime is likely more beneficial." },
-      { "question": "Can you claim HRA in new regime?", "answer": "No, HRA exemption cannot be claimed under the new tax regime." },
+      { "question": "Does new regime allow HRA?", "answer": "No, HRA exemption cannot be claimed under the new tax regime." },
       { "question": "Can I claim 80C under new regime?", "answer": "No, deductions under Section 80C are not allowed in the new tax regime." },
       { "question": "How is standard deduction treated in new regime?", "answer": "A standard deduction of ₹50,000 is available for salaried individuals under both the old and new tax regimes." },
       { "question": "Is rebate under section 87A available in 2025?", "answer": "Yes. In the new regime, if your taxable income is up to ₹7 lakh, you pay zero tax. In the old regime, the rebate is available for taxable income up to ₹5 lakh." },
@@ -940,5 +940,3 @@
     "view_calculator": "View Calculator"
   }
 }
-
-    

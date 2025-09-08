@@ -47,9 +47,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     "image": ogImageUrl,
     "author": {
       "@type": "Person",
-      "name": "Mahesh Chaube, CFP",
-      "url": "https://www.linkedin.com/in/mahi003/",
-      "sameAs": "https://www.linkedin.com/in/mahi003/"
+      "name": "Mahesh Chaube, CFP"
     },
     "publisher": {
       "@type": "Organization",
@@ -245,5 +243,3 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
     </div>
   );
 }
-
-    

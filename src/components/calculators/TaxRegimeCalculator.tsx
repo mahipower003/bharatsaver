@@ -92,6 +92,13 @@ export function TaxRegimeCalculator({ dictionary }: CalculatorProps) {
     },
   });
 
+   useEffect(() => {
+    // Run calculation on initial load with default values
+    handleSubmit(form.getValues());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+
   useEffect(() => {
     const currentDate = new Date();
     setLastUpdated(currentDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' }));
