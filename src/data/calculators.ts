@@ -62,7 +62,7 @@ export const calculators: Calculator[] = [
     icon: ArrowRightLeft,
     link_text: 'Compare Now',
     lastModified: '2024-07-24',
-    image: '/images/fdvspf-calculator-online.png'
+    image: '/images/fd-vs-ppf-calculator.png'
   },
   {
     slug: 'tax-regime-calculator',

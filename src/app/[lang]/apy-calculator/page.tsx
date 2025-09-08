@@ -18,6 +18,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   const dictionary = await getDictionary(params.lang, ['apy_calculator']);
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/apy-calculator`;
+  const ogImageUrl = `${siteUrl}/images/APY-Calculator-online.png`;
 
   const faqItems = dictionary.apy_calculator.faqs;
   const faqSchema = {
@@ -33,6 +34,34 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     })),
   };
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": pageUrl
+    },
+    "headline": "APY Calculator 2025 — Atal Pension Yojana Premium Chart & Pension",
+    "description": "Use our FREE APY Calculator to find the monthly premium required for ₹1,000–₹5,000 pensions. Get age-based premium charts, eligibility, FAQs and downloadable CSV. Updated Sep 2025.",
+    "image": ogImageUrl,
+    "author": {
+      "@type": "Person",
+      "name": "Mahesh Chaube",
+      "url": "https://www.linkedin.com/in/mahi003/",
+      "sameAs": "https://www.linkedin.com/in/mahi003/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "BharatSaver",
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${siteUrl}/icon.svg`
+      }
+    },
+    "datePublished": "2024-07-25",
+    "dateModified": "2025-09-01"
+  };
+
   return {
     title: dictionary.apy_calculator.meta_title,
     description: dictionary.apy_calculator.meta_description,
@@ -40,7 +69,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       title: dictionary.apy_calculator.og_title,
       description: dictionary.apy_calculator.og_description,
       url: pageUrl,
-      images: [{ url: `/images/APY-Calculator-online.png`, width: 1200, height: 630, alt: 'BharatSaver APY Calculator' }],
+      images: [{ url: ogImageUrl, width: 1200, height: 630, alt: 'BharatSaver APY Calculator' }],
       locale: params.lang === 'en' ? 'en_IN' : params.lang,
       type: 'website',
     },
@@ -48,7 +77,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       card: 'summary_large_image',
       title: dictionary.apy_calculator.meta_title,
       description: dictionary.apy_calculator.meta_description,
-      images: [`${siteUrl}/images/APY-Calculator-online.png`],
+      images: [ogImageUrl],
     },
     alternates: {
       canonical: pageUrl,
@@ -58,7 +87,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       }, {} as Record<string, string>),
     },
     other: {
-      'application/ld+json': JSON.stringify(faqSchema),
+      'application/ld+json': JSON.stringify([faqSchema, articleSchema]),
     },
   };
 }
