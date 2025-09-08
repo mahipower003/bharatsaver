@@ -83,6 +83,13 @@ export default async function ApyCalculatorPage({ params }: { params: { lang: Lo
       <div className="mx-auto max-w-5xl">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{__html: dictionary.apy_calculator.h1}}></h1>
+          <div className="bs-byline justify-center text-center">
+            <span className="bs-author">By <strong>Mahesh Chaube</strong></span>
+            <span className="bs-creds">, CFP</span>
+            <span className="bs-sep">|</span>
+            <span className="bs-updated">Last updated: <time dateTime="2025-09-01">September 2025</time></span>
+            <div className="bs-reviewed">Reviewed by <strong>BharatSaver Editorial Team</strong></div>
+          </div>
           <p className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{__html: dictionary.apy_calculator.description}}></p>
         </div>
         
