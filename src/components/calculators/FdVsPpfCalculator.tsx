@@ -20,7 +20,7 @@ import { type ChartConfig } from '@/components/ui/chart';
 
 const formSchema = z.object({
   investmentAmount: z.coerce.number().min(500, 'Minimum investment is ₹500'),
-  fdTenure: z.coerce.number().min(1, 'Minimum tenure is 1 year').max(10, 'Maximum tenure is 10 years'),
+  fdTenure: z.coerce.number().min(1, 'Minimum tenure is 1 year').max(50, 'Maximum tenure is 50 years'),
   fdRate: z.coerce.number().min(1, 'Rate must be positive').max(15, 'Rate seems too high'),
   ppfRate: z.coerce.number().min(1).max(15),
   taxBracket: z.coerce.number().min(0).max(30),
@@ -59,7 +59,7 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
     resolver: zodResolver(formSchema),
     defaultValues: {
       investmentAmount: 100000,
-      fdTenure: 5,
+      fdTenure: 15,
       fdRate: 7,
       ppfRate: 7.1,
       taxBracket: 30,
@@ -98,15 +98,15 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
     const fdPostTaxMaturity = P_fd + (fdInterest - taxOnInterest);
 
     // PPF Calculation (Recurring annual investment)
-    // We assume the amount is invested annually for the same tenure as the FD for comparison
-    const P_ppf = values.investmentAmount;
+    // NOTE: PPF has a statutory lock-in of 15 years. We compare over the same tenure as the FD for an apples-to-apples view.
+    const P_ppf_annual = values.investmentAmount;
     const r_ppf = values.ppfRate / 100;
     const t_ppf = values.fdTenure; // Compare over same tenure
     let ppfBalance = 0;
     let totalPpfInvestment = 0;
     for (let i = 0; i < t_ppf; i++) {
-        ppfBalance = (ppfBalance + P_ppf) * (1 + r_ppf);
-        totalPpfInvestment += P_ppf;
+        ppfBalance = (ppfBalance + P_ppf_annual) * (1 + r_ppf);
+        totalPpfInvestment += P_ppf_annual;
     }
     const ppfInterest = ppfBalance - totalPpfInvestment;
 
@@ -209,6 +209,7 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
                     <FormItem>
                       <FormLabel>{dictionary.tenure_label}</FormLabel>
                       <FormControl><Input type="number" {...field} /></FormControl>
+                      <CardDescription>{dictionary.tenure_note}</CardDescription>
                       <FormMessage />
                     </FormItem>
                   )} />
@@ -262,7 +263,7 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
         <Card className="mt-8 animate-in fade-in-50 slide-in-from-bottom-5 shadow-lg">
           <CardHeader>
             <CardTitle>{dictionary.results_title}</CardTitle>
-            <CardDescription>{`For an investment of ${formatCurrency(form.getValues().investmentAmount)} over ${form.getValues().fdTenure} years:`}</CardDescription>
+            <CardDescription>{`For an annual investment of ${formatCurrency(form.getValues().investmentAmount)} over ${form.getValues().fdTenure} years:`}</CardDescription>
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -272,14 +273,15 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
                         <p className="flex justify-between"><span>{dictionary.fd_maturity_label}</span> <span className="font-bold">{formatCurrency(result.fdMaturity)}</span></p>
                         <p className="flex justify-between"><span>{dictionary.fd_post_tax_maturity_label}</span> <span className="font-bold text-primary">{formatCurrency(result.fdPostTaxMaturity)}</span></p>
                         <p className="flex justify-between text-sm text-muted-foreground"><span>{dictionary.total_interest_label}</span> <span>{formatCurrency(result.fdInterest)}</span></p>
+                         <p className="flex justify-between text-sm text-muted-foreground"><span>{dictionary.total_investment_label}</span> <span>{formatCurrency(form.getValues().investmentAmount)}</span></p>
                     </div>
                 </div>
                 <div className="border p-4 rounded-lg">
                      <h3 className="text-lg font-semibold text-center mb-2">Public Provident Fund (PPF)</h3>
                     <div className="space-y-2">
                         <p className="flex justify-between"><span>{dictionary.ppf_maturity_label}</span> <span className="font-bold text-primary">{formatCurrency(result.ppfMaturity)}</span></p>
-                         <p className="flex justify-between text-sm text-muted-foreground"><span>{dictionary.total_investment_label}</span> <span>{formatCurrency(result.totalPpfInvestment)}</span></p>
                         <p className="flex justify-between text-sm text-muted-foreground"><span>{dictionary.total_interest_label}</span> <span>{formatCurrency(result.ppfInterest)}</span></p>
+                        <p className="flex justify-between text-sm text-muted-foreground"><span>{dictionary.total_investment_label}</span> <span>{formatCurrency(result.totalPpfInvestment)}</span></p>
                     </div>
                 </div>
             </div>
