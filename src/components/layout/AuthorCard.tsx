@@ -17,7 +17,7 @@ export function AuthorCard({ dictionary }: AuthorCardProps) {
   const lang = pathname.split('/')[1];
   
   return (
-    <aside className="bs-author-box mt-16" aria-labelledby="author-name">
+    <aside className="bs-author-box" aria-labelledby="author-name">
         <Image 
             src="/images/mahesh-chaube.jpg" 
             alt="Photo of Mahesh Chaube" 
@@ -30,7 +30,7 @@ export function AuthorCard({ dictionary }: AuthorCardProps) {
             <p className="bs-author-bio mt-2 text-muted-foreground">
                 {dictionary.bio}
             </p>
-            <div className="bs-review mt-2">
+            <div className="bs-review">
               <strong>Reviewed by:</strong> BharatSaver Editorial Team — calculations and PPF/FD rules verified against official sources (PFRDA, Income Tax Department). Review date: <time dateTime="2025-09-01">September 2025</time>.
             </div>
             <p className="bs-author-links mt-4 flex items-center gap-4">

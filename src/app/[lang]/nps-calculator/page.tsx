@@ -113,7 +113,7 @@ export default async function NpsCalculatorPage({ params }: { params: { lang: Lo
       <div className="mx-auto max-w-5xl">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{__html: dictionary.nps_calculator.h1}}></h1>
-           <div className="bs-byline justify-center text-center">
+          <div className="bs-byline justify-center text-center">
             <span className="bs-author">By <strong>Mahesh Chaube</strong></span>
             <span className="bs-creds">, CFP</span>
             <span className="bs-sep">|</span>
