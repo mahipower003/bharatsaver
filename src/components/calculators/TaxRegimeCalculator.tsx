@@ -18,6 +18,7 @@ import { Checkbox } from "@/components/ui/checkbox"
 import type { Dictionary } from '@/types';
 import { type ChartConfig } from '@/components/ui/chart';
 import { Alert, AlertDescription, AlertTitle } from '../ui/alert';
+import { RadioGroup, RadioGroupItem } from '../ui/radio-group';
 
 const formSchema = z.object({
   grossSalary: z.coerce.number().min(0, 'Salary must be positive'),
@@ -29,8 +30,12 @@ const formSchema = z.object({
     section80C: z.coerce.number().min(0).max(150000).default(0),
     section80D: z.coerce.number().min(0).max(100000).default(0),
     section80CCD1B: z.coerce.number().min(0).max(50000).default(0),
+    section80TTA: z.coerce.number().min(0).max(10000).default(0),
     hra: z.coerce.number().min(0).default(0),
+    rentPaid: z.coerce.number().min(0).default(0),
+    isMetro: z.boolean().default(false),
     homeLoanInterest: z.coerce.number().min(0).max(200000).default(0),
+    lta: z.coerce.number().min(0).default(0),
   })
 });
 
@@ -77,8 +82,12 @@ export function TaxRegimeCalculator({ dictionary }: CalculatorProps) {
         section80C: 150000,
         section80D: 25000,
         section80CCD1B: 50000,
+        section80TTA: 10000,
         hra: 0,
+        rentPaid: 0,
+        isMetro: false,
         homeLoanInterest: 0,
+        lta: 0
       }
     },
   });
@@ -88,40 +97,40 @@ export function TaxRegimeCalculator({ dictionary }: CalculatorProps) {
     setLastUpdated(currentDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' }));
   }, []);
 
-  const calculateHraExemption = (basic: number, hraReceived: number) => {
-    // Simplified HRA calculation, assuming non-metro for now
-    const limit = basic * 0.40; 
-    return Math.min(hraReceived, limit);
+  const calculateHraExemption = (basic: number, hraReceived: number, rentPaid: number, isMetro: boolean) => {
+    const limit1 = hraReceived;
+    const limit2 = rentPaid - (basic * 0.10);
+    const limit3 = isMetro ? (basic * 0.50) : (basic * 0.40);
+    return Math.max(0, Math.min(limit1, limit2, limit3));
   };
 
-  const calculateTax = (taxableIncome: number, isSenior: boolean, isOldRegime: boolean): { tax: number, cess: number, total: number } => {
+  const calculateTax = (taxableIncome: number, age: number, isOldRegime: boolean): { tax: number, cess: number, total: number } => {
     let tax = 0;
-    const slabs = isOldRegime 
-      ? [
-          { limit: isSenior ? 300000 : 250000, rate: 0 },
-          { limit: 500000, rate: 0.05 },
-          { limit: 1000000, rate: 0.20 },
-          { limit: Infinity, rate: 0.30 }
-        ]
-      : [
-          { limit: 300000, rate: 0 },
-          { limit: 600000, rate: 0.05 },
-          { limit: 900000, rate: 0.10 },
-          { limit: 1200000, rate: 0.15 },
-          { limit: 1500000, rate: 0.20 },
-          { limit: Infinity, rate: 0.30 }
-        ];
+    const isSenior = age >= 60 && age < 80;
+    const isSuperSenior = age >= 80;
+
+    let slabs;
+    if (isOldRegime) {
+      if (isSuperSenior) {
+        slabs = [ { limit: 500000, rate: 0 }, { limit: 1000000, rate: 0.20 }, { limit: Infinity, rate: 0.30 } ];
+      } else if (isSenior) {
+        slabs = [ { limit: 300000, rate: 0 }, { limit: 500000, rate: 0.05 }, { limit: 1000000, rate: 0.20 }, { limit: Infinity, rate: 0.30 } ];
+      } else {
+        slabs = [ { limit: 250000, rate: 0 }, { limit: 500000, rate: 0.05 }, { limit: 1000000, rate: 0.20 }, { limit: Infinity, rate: 0.30 } ];
+      }
+    } else {
+       slabs = [ { limit: 300000, rate: 0 }, { limit: 600000, rate: 0.05 }, { limit: 900000, rate: 0.10 }, { limit: 1200000, rate: 0.15 }, { limit: 1500000, rate: 0.20 }, { limit: Infinity, rate: 0.30 } ];
+    }
 
     let income = taxableIncome;
     let lastLimit = 0;
 
     for (const slab of slabs) {
-        if (income > 0) {
-            const taxableInSlab = Math.min(income, slab.limit - lastLimit);
-            tax += taxableInSlab * slab.rate;
-            income -= taxableInSlab;
-            lastLimit = slab.limit;
-        }
+        if (income <= 0) break;
+        const taxableInSlab = Math.min(income, slab.limit - lastLimit);
+        tax += taxableInSlab * slab.rate;
+        income -= taxableInSlab;
+        lastLimit = slab.limit;
     }
     
     // Rebate under section 87A
@@ -141,20 +150,21 @@ export function TaxRegimeCalculator({ dictionary }: CalculatorProps) {
     await new Promise(resolve => setTimeout(resolve, 500));
 
     const totalIncome = values.grossSalary + values.otherIncome;
-    const isSenior = values.age >= 60;
-
+    
     // Old Regime Calculation
     const standardDeductionOld = 50000;
-    const hraExemption = calculateHraExemption(values.basicSalary, values.deductions.hra);
+    const hraExemption = calculateHraExemption(values.basicSalary, values.deductions.hra, values.deductions.rentPaid, values.deductions.isMetro);
     const totalDeductionsOld = standardDeductionOld + 
                               values.deductions.section80C + 
                               values.deductions.section80D + 
                               values.deductions.section80CCD1B +
+                              values.deductions.section80TTA +
                               hraExemption + 
-                              values.deductions.homeLoanInterest;
+                              values.deductions.homeLoanInterest +
+                              values.deductions.lta;
     
     const taxableIncomeOld = Math.max(0, totalIncome - totalDeductionsOld);
-    const taxOld = calculateTax(taxableIncomeOld, isSenior, true);
+    const taxOld = calculateTax(taxableIncomeOld, values.age, true);
 
     const oldRegimeResult: TaxResult = {
       regime: 'Old',
@@ -168,7 +178,7 @@ export function TaxRegimeCalculator({ dictionary }: CalculatorProps) {
     // New Regime Calculation
     const standardDeductionNew = 50000;
     const taxableIncomeNew = Math.max(0, totalIncome - standardDeductionNew);
-    const taxNew = calculateTax(taxableIncomeNew, isSenior, false);
+    const taxNew = calculateTax(taxableIncomeNew, values.age, false);
 
     const newRegimeResult: TaxResult = {
         regime: 'New',
@@ -247,9 +257,9 @@ export function TaxRegimeCalculator({ dictionary }: CalculatorProps) {
                         <Select onValueChange={(val) => field.onChange(Number(val))} defaultValue={String(field.value)}>
                             <FormControl><SelectTrigger><SelectValue/></SelectTrigger></FormControl>
                             <SelectContent>
-                                <SelectItem value="30">Below 60 years</SelectItem>
-                                <SelectItem value="65">60 to 80 years (Senior)</SelectItem>
-                                <SelectItem value="85">Above 80 years (Super Senior)</SelectItem>
+                                <SelectItem value="30">{dictionary.age_below_60}</SelectItem>
+                                <SelectItem value="65">{dictionary.age_60_to_80}</SelectItem>
+                                <SelectItem value="85">{dictionary.age_above_80}</SelectItem>
                             </SelectContent>
                         </Select>
                     </FormItem>
@@ -280,15 +290,46 @@ export function TaxRegimeCalculator({ dictionary }: CalculatorProps) {
                        <FormMessage />
                     </FormItem>
                   )} />
+                  <FormField control={form.control} name="deductions.section80TTA" render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>{dictionary.section80TTA_label}</FormLabel>
+                      <FormControl><Input type="number" {...field} /></FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )} />
                   <FormField control={form.control} name="deductions.hra" render={({ field }) => (
                     <FormItem>
                       <FormLabel>{dictionary.hra_label}</FormLabel>
                       <FormControl><Input type="number" {...field} /></FormControl>
                     </FormItem>
                   )} />
+                  <FormField control={form.control} name="deductions.rentPaid" render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>{dictionary.rent_paid_label}</FormLabel>
+                      <FormControl><Input type="number" {...field} /></FormControl>
+                    </FormItem>
+                  )} />
+                  <FormField control={form.control} name="deductions.isMetro" render={({ field }) => (
+                    <FormItem>
+                        <FormLabel>{dictionary.metro_city_label}</FormLabel>
+                        <FormControl>
+                            <RadioGroup onValueChange={(val) => field.onChange(val === 'true')} defaultValue={String(field.value)} className="flex gap-4 pt-2">
+                                <FormItem className="flex items-center space-x-2"><FormControl><RadioGroupItem value="true" /></FormControl><FormLabel className="font-normal">Yes</FormLabel></FormItem>
+                                <FormItem className="flex items-center space-x-2"><FormControl><RadioGroupItem value="false" /></FormControl><FormLabel className="font-normal">No</FormLabel></FormItem>
+                            </RadioGroup>
+                        </FormControl>
+                    </FormItem>
+                  )} />
                   <FormField control={form.control} name="deductions.homeLoanInterest" render={({ field }) => (
                     <FormItem>
                       <FormLabel>{dictionary.home_loan_interest_label}</FormLabel>
+                      <FormControl><Input type="number" {...field} /></FormControl>
+                       <FormMessage />
+                    </FormItem>
+                  )} />
+                  <FormField control={form.control} name="deductions.lta" render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>{dictionary.lta_label}</FormLabel>
                       <FormControl><Input type="number" {...field} /></FormControl>
                        <FormMessage />
                     </FormItem>
@@ -349,5 +390,3 @@ export function TaxRegimeCalculator({ dictionary }: CalculatorProps) {
     </>
   );
 }
-
-    
