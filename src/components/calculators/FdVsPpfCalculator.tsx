@@ -54,6 +54,7 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
 
   const [result, setResult] = useState<CalculationResult | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [lastUpdated, setLastUpdated] = useState('');
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -80,6 +81,12 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
       handleSubmit(values as FormValues);
     }
      // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    const currentDate = new Date();
+    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    setLastUpdated(`${monthNames[currentDate.getMonth()]} ${currentDate.getFullYear()}`);
   }, []);
 
   async function handleSubmit(values: FormValues) {
@@ -187,10 +194,15 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
     <>
       <Card className="shadow-lg">
         <CardHeader>
-          <CardTitle className="flex items-center gap-2 text-xl font-bold">
-            <ArrowRightLeft className="h-6 w-6 text-primary" />
-            <span>{dictionary.title}</span>
-          </CardTitle>
+          <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
+            <h2 className="flex items-center gap-2 text-xl font-bold">
+                <ArrowRightLeft className="h-6 w-6 text-primary" />
+                <span>{dictionary.title}</span>
+            </h2>
+             {lastUpdated && (
+              <p className="text-sm text-muted-foreground mt-1 whitespace-nowrap">{dictionary.last_updated} {lastUpdated}</p>
+            )}
+          </div>
           <CardDescription dangerouslySetInnerHTML={{__html: dictionary.form_description}}></CardDescription>
         </CardHeader>
         <CardContent>
