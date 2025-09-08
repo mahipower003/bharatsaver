@@ -669,8 +669,8 @@
     "total_interest_label": "Total Interest Earned",
     "export_csv": "Export CSV",
     "clarifier_note": {
-        "title": "Important — How We Compare",
-        "body": "The calculator treats the 'Investment Amount' as a one-time lump-sum for the FD and as a recurring annual deposit for PPF. This means the total money deployed differs. For example, a ₹1 lakh investment becomes a ₹1 lakh single deposit in FD vs. a total of ₹15 lakh (1L × 15 years) in PPF. This models a common real-world investment choice."
+      "title": "Important — How We Compare",
+      "body": "The calculator treats the 'Investment Amount' as a one-time lump-sum for the FD and as a recurring annual deposit for PPF. This means the total money deployed differs. For example, a ₹1 lakh investment becomes a ₹1 lakh single deposit in FD vs. a total of ₹15 lakh (1L × 15 years) in PPF. This models a common real-world investment choice."
     },
     "assumptions": {
       "title": "Calculator Assumptions",

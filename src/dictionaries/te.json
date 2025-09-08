@@ -642,122 +642,122 @@
     }
   },
   "fd_vs_ppf_calculator": {
-    "meta_title": "FD vs PPF క్యాలిక్యులేటర్ 2025 — రాబడి, పన్ను & మెచ్యూరిటీని పోల్చండి (ఉచిత సాధనం)",
-    "meta_description": "మెచ్యూరిటీ మొత్తాలు, పన్ను ప్రభావం మరియు పన్ను-అనంతర రాబడిని పోల్చడానికి మా ఉచిత FD vs PPF క్యాలిక్యులేటర్‌ను ఉపయోగించండి. ప్రీమియం చార్ట్‌లు, ఉదాహరణలు మరియు డౌన్‌లోడ్ చేయగల CSVని కలిగి ఉంటుంది. సెప్టెంబర్ 2025న నవీకరించబడింది.",
-    "og_title": "FD vs PPF రాబడి క్యాలిక్యులేటర్ 2025",
-    "og_description": "ఫిక్స్‌డ్ డిపాజిట్ vs PPF రాబడిని తక్షణమే పోల్చండి — పన్ను-ముందు/అనంతర మెచ్యూరిటీ, గ్రాఫ్‌లు మరియు డౌన్‌లోడ్ చేయగల ప్లాన్‌ను చూడండి. ఉచిత FD vs PPF క్యాలిక్యులేటర్ (భారతదేశం).",
-    "h1": "FD vs PPF రాబడి క్యాలిక్యులేటర్ 2025 — ఫిక్స్‌డ్ డిపాజిట్ & PPF పోల్చండి",
-    "description": "ఫిక్స్‌డ్ డిపాజిట్లు మరియు పబ్లిక్ ప్రావిడెంట్ ఫండ్ కోసం మెచ్యూరిటీ విలువ, పన్ను ప్రభావం మరియు పన్ను-అనంతర రాబడి యొక్క పక్కపక్కనే పోలికను చూడటానికి మీ పెట్టుబడి మొత్తం మరియు కాలాన్ని నమోదు చేయండి. సమాచారంతో కూడిన నిర్ణయం తీసుకోండి.",
-    "title": "FD vs PPF క్యాలిక్యులేటర్",
-    "form_description": "ఏకమొత్తం FD vs పునరావృత PPF పెట్టుబడి నుండి పన్ను-అనంతర రాబడిని పోల్చండి.",
-    "investment_amount_label": "ఏకమొత్తం పెట్టుబడి (FD) / వార్షిక పునరావృతం (PPF)",
-    "tenure_label": "పెట్టుబడి కాలం (సంవత్సరాలు)",
-    "fd_rate_label": "FD వడ్డీ రేటు (% p.a.)",
-    "ppf_rate_label": "PPF వడ్డీ రేటు (% p.a.)",
-    "tax_bracket_label": "మీ ఆదాయపు పన్ను బ్రాకెట్ (%)",
-    "calculate_button": "రాబడిని పోల్చండి",
-    "loading": "పోలుస్తోంది...",
-    "results_title": "FD vs PPF పోలిక",
-    "result_snapshot": "ఈ దృష్టాంతంలో, పన్ను తర్వాత సుమారు {difference}తో {winner} గెలుస్తుంది.",
-    "fd_label": "ఫిక్స్‌డ్ డిపాజిట్ (ఏకమొత్తం)",
-    "ppf_label": "పబ్లిక్ ప్రావిడెంట్ ఫండ్ (పునరావృత వార్షిక)",
-    "fd_maturity_label": "స్థూల మెచ్యూరిటీ విలువ",
-    "fd_post_tax_maturity_label": "పన్ను-అనంతర మెచ్యూరిటీ విలువ",
-    "ppf_maturity_label": "PPF మెచ్యూరిటీ విలువ (పన్ను-రహితం)",
-    "total_investment_label": "మొత్తం పెట్టుబడి",
-    "total_interest_label": "సంపాదించిన మొత్తం వడ్డీ",
-    "export_csv": "CSVని ఎగుమతి చేయండి",
+    "meta_title": "FD vs PPF Calculator 2025 — Compare Returns, Tax & Maturity (Free Tool)",
+    "meta_description": "Use our free FD vs PPF calculator to compare maturity amounts, tax impact and post-tax returns. Includes premium charts, examples, and downloadable CSV. Updated Sep 2025.",
+    "og_title": "FD vs PPF Returns Calculator 2025",
+    "og_description": "Compare Fixed Deposit vs PPF returns instantly — see pre/post-tax maturity, graphs, and downloadable plan. Free FD vs PPF calculator (India).",
+    "h1": "FD vs PPF Returns Calculator 2025 — Compare Fixed Deposit & PPF",
+    "description": "Enter your investment amount and tenure to see a side-by-side comparison of maturity value, tax impact, and post-tax returns for Fixed Deposits and Public Provident Fund. Make an informed decision.",
+    "title": "FD vs PPF Calculator",
+    "form_description": "Compare post-tax returns from a lump-sum FD vs recurring PPF investment.",
+    "investment_amount_label": "Lump-sum Investment (FD) / Annual Recurring (PPF)",
+    "tenure_label": "Investment Tenure (Years)",
+    "fd_rate_label": "FD Interest Rate (% p.a.)",
+    "ppf_rate_label": "PPF Interest Rate (% p.a.)",
+    "tax_bracket_label": "Your Income Tax Bracket (%)",
+    "calculate_button": "Compare Returns",
+    "loading": "Comparing...",
+    "results_title": "FD vs PPF Comparison",
+    "result_snapshot": "For this scenario, {winner} wins by approximately {difference} after tax.",
+    "fd_label": "Fixed Deposit (Lump-sum)",
+    "ppf_label": "Public Provident Fund (Recurring Annual)",
+    "fd_maturity_label": "Gross Maturity Value",
+    "fd_post_tax_maturity_label": "Post-Tax Maturity Value",
+    "ppf_maturity_label": "PPF Maturity Value (Tax-Free)",
+    "total_investment_label": "Total Investment",
+    "total_interest_label": "Total Interest Earned",
+    "export_csv": "Export CSV",
     "clarifier_note": {
-      "title": "ముఖ్యమైనది — మేము ఎలా పోలుస్తాము",
-      "body": "క్యాలిక్యులేటర్ 'పెట్టుబడి మొత్తం'ను FDకి ఒకేసారి ఏకమొత్తంగా మరియు PPFకి పునరావృత వార్షిక డిపాజిట్‌గా పరిగణిస్తుంది. దీని అర్థం మొత్తం మోహరించిన డబ్బు భిన్నంగా ఉంటుంది. ఉదాహరణకు, ₹1 లక్ష పెట్టుబడి FDలో ₹1 లక్ష ఒకే డిపాజిట్‌గా మారుతుంది, అయితే PPFలో మొత్తం ₹15 లక్షలు (1 లక్ష × 15 సంవత్సరాలు) అవుతుంది. ఇది ఒక సాధారణ వాస్తవ-ప్రపంచ పెట్టుబడి ఎంపికను మోడల్ చేస్తుంది."
+      "title": "Important — How We Compare",
+      "body": "The calculator treats the 'Investment Amount' as a one-time lump-sum for the FD and as a recurring annual deposit for PPF. This means the total money deployed differs. For example, a ₹1 lakh investment becomes a ₹1 lakh single deposit in FD vs. a total of ₹15 lakh (1L × 15 years) in PPF. This models a common real-world investment choice."
     },
     "assumptions": {
-      "title": "క్యాలిక్యులేటర్ అంచనాలు",
-      "body": "<ul><li>PPF దాని అధికారిక వార్షిక చక్రవడ్డీతో మరియు 15 సంవత్సరాల డిఫాల్ట్ మెచ్యూరిటీతో మోడల్ చేయబడింది. డిపాజిట్లు ప్రతి సంవత్సరం <strong>ప్రారంభంలో</strong> ఊహించబడతాయి.</li><li>FD వార్షిక చక్రవడ్డీతో ఒకేసారి ఏకమొత్తంగా మోడల్ చేయబడింది. వడ్డీ మీ ఎంచుకున్న ఉపాంత రేటుతో పన్ను విధించబడుతుంది.</li><li>ఫలితాలు నామమాత్రంగా ఉంటాయి (ద్రవ్యోల్బణం-సర్దుబాటు చేయబడలేదు). <a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer'>PFRDA</a> మరియు <a href='https://incometaxindia.gov.in/' target='_blank' rel='noopener noreferrer'>ఆదాయపు పన్ను శాఖ</a> వంటి అధికారిక మూలాలతో ఎల్లప్పుడూ నియమాలను ధృవీకరించండి.</li></ul>"
+      "title": "Calculator Assumptions",
+      "body": "<ul><li>PPF is modelled with annual compounding at the specified rate and a default maturity of 15 years. Deposits are assumed at the <strong>start</strong> of each year.</li><li>FD is modelled as a one-time lump-sum with annual compounding. Interest is taxed at your selected marginal rate.</li><li>Results are nominal (not inflation-adjusted). Always verify with official sources like <a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer'>PFRDA</a> and the <a href='https://incometaxindia.gov.in/' target='_blank' rel='noopener noreferrer'>Income Tax Dept</a>.</li></ul>"
     },
     "quick_answer": {
-      "title": "త్వరిత సమాధానం: ఏది మంచిది, FD లేదా PPF?",
-      "body": "<strong>దీర్ఘకాలిక, పన్ను-రహిత సంపద సృష్టికి</strong> (పదవీ విరమణ వంటివి), దాని EEE పన్ను స్థితి మరియు చక్రవడ్డీ ప్రయోజనాల కారణంగా <strong>PPF దాదాపు ఎల్లప్పుడూ మంచిది</strong>. <strong>స్వల్పకాలిక లక్ష్యాలు లేదా అత్యవసర నిధుల కోసం</strong> మీకు లిక్విడిటీ అవసరమైన చోట, వడ్డీపై పన్ను ఉన్నప్పటికీ <strong>FD మరింత అనుకూలంగా ఉంటుంది</strong>. మీ మొత్తం కోసం ఖచ్చితమైన వ్యత్యాసాన్ని చూడటానికి మా <a href='/{lang}/ppf-calculator' class='underline'>PPF క్యాలిక్యులేటర్</a> లేదా <a href='/{lang}/nps-calculator' class='underline'>NPS క్యాలిక్యులేటర్</a>ను ఉపయోగించండి."
+      "title": "Quick Answer: Which is better, FD or PPF?",
+      "body": "For <strong>long-term, tax-free wealth creation</strong> (like retirement), <strong>PPF is almost always better</strong> due to its EEE tax status and compounding benefits. For <strong>short-term goals or emergency funds</strong> where you need liquidity, an <strong>FD is more suitable</strong> despite the tax on interest. Use our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> or <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> to see the exact difference for your amount."
     },
     "how_it_works": {
-      "title": "రాబడి ఎలా లెక్కించబడుతుంది (పనిచేసిన ఉదాహరణలు)",
+      "title": "How Returns are Calculated (Worked Examples)",
       "example1": {
-        "title": "ఉదాహరణ 1 — FD (ఏకమొత్తం)",
-        "body": "<strong>ఇన్‌పుట్:</strong> ₹100,000 ఏకమొత్తం, 7% p.a., 15 సంవత్సరాలు, 30% పన్ను బ్రాకెట్.<br/><strong>లెక్కింపు:</strong><ol><li>భవిష్యత్ విలువ = 100,000 × (1.07)^15 = ₹275,903.</li><li>మొత్తం వడ్డీ = 275,903 - 100,000 = ₹175,903.</li><li>వడ్డీపై పన్ను (30%) = 0.30 × 175,903 = ₹52,771.</li><li><strong>పన్ను-అనంతర మెచ్యూరిటీ = 275,903 - 52,771 = ₹223,132.</strong></li></ol>"
+        "title": "Example 1 — FD (Lump-Sum)",
+        "body": "<strong>Input:</strong> ₹100,000 lump-sum, 7% p.a., 15 years, 30% tax bracket.<br/><strong>Calculation:</strong><ol><li>Future Value = 100,000 × (1.07)^15 = ₹275,903.</li><li>Total Interest = 275,903 - 100,000 = ₹175,903.</li><li>Tax on Interest (30%) = 0.30 × 175,903 = ₹52,771.</li><li><strong>Post-Tax Maturity = 275,903 - 52,771 = ₹223,132.</strong></li></ol>"
       },
       "example2": {
-        "title": "ఉదాహరణ 2 — PPF (పునరావృత వార్షిక డిపాజిట్)",
-        "body": "<strong>ఇన్‌పుట్:</strong> 15 సంవత్సరాల పాటు ప్రతి సంవత్సరం ప్రారంభంలో ₹100,000 చెల్లించబడుతుంది, 7.1% p.a.<br/><strong>లెక్కింపు (యాన్యుటీ డ్యూ ఫార్ములా):</strong><br/>భవిష్యత్ విలువ = P × [((1 + r)^n - 1) / r] × (1 + r)<br/>ఇది మొత్తం ₹1,500,000 పెట్టుబడిపై <strong>₹2,712,139 పన్ను-రహిత మెచ్యూరిటీ</strong>ని లెక్కిస్తుంది."
+        "title": "Example 2 — PPF (Recurring Annual Deposit)",
+        "body": "<strong>Input:</strong> ₹100,000 paid at the start of each year for 15 years, 7.1% p.a.<br/><strong>Calculation (Annuity Due Formula):</strong><br/>Future Value = P × [((1 + r)^n - 1) / r] × (1 + r)<br/>This computes to a <strong>tax-free maturity of ₹2,712,139</strong> on a total investment of ₹1,500,000."
       }
     },
     "ppf_features": {
-      "title": "PPF: ముఖ్య లక్షణాలు, నియమాలు & పన్ను ప్రయోజనాలు",
+      "title": "PPF: Key Features, Rules & Tax Benefits",
       "points": [
-        "<strong>పన్ను చికిత్స:</strong> మినహాయింపు-మినహాయింపు-మినహాయింపు (EEE). కంట్రిబ్యూషన్‌లు, వడ్డీ మరియు మెచ్యూరిటీ అన్నీ పన్ను-రహితం. (<a href='https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx' target='_blank' rel='noopener noreferrer' class='text-xs'>మూలం: ఆదాయపు పన్ను శాఖ</a>)",
-        "<strong>లాక్-ఇన్ కాలం:</strong> 15 సంవత్సరాలు, 5 సంవత్సరాల బ్లాకులలో పొడిగించవచ్చు.",
-        "<strong>వడ్డీ రేటు:</strong> ప్రభుత్వం త్రైమాసికంగా నిర్ణయిస్తుంది. సాధారణంగా FD రేట్ల కంటే ఎక్కువ. (<a href='https://www.nsiindia.gov.in/ppf.aspx' target='_blank' rel='noopener noreferrer' class='text-xs'>మూలం: NSI</a>)",
-        "<strong>కంట్రిబ్యూషన్ పరిమితి:</strong> కనీసం ₹500, గరిష్టంగా ₹1.5 లక్షలు ప్రతి ఆర్థిక సంవత్సరం.",
-        "<strong>దీనికి ఉత్తమమైనది:</strong> పదవీ విరమణ, పిల్లల చదువు వంటి దీర్ఘకాలిక లక్ష్యాలు మరియు క్రమశిక్షణతో కూడిన, పన్ను-రహిత పొదుపు."
+        "<strong>Tax Treatment:</strong> Exempt-Exempt-Exempt (EEE). Contributions, interest, and maturity are all tax-free. (<a href='https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx' target='_blank' rel='noopener noreferrer' class='text-xs'>Source: Income Tax Dept</a>)",
+        "<strong>Lock-in Period:</strong> 15 years, can be extended in blocks of 5 years.",
+        "<strong>Interest Rate:</strong> Set by the government quarterly. Generally higher than FD rates. (<a href='https://www.nsiindia.gov.in/ppf.aspx' target='_blank' rel='noopener noreferrer' class='text-xs'>Source: NSI</a>)",
+        "<strong>Contribution Limit:</strong> Min ₹500, Max ₹1.5 lakh per financial year.",
+        "<strong>Best For:</strong> Long-term goals like retirement, children's education, and disciplined, tax-free saving."
       ]
     },
     "fd_features": {
-      "title": "FD: ముఖ్య లక్షణాలు, నియమాలు & పన్ను చిక్కులు",
+      "title": "FD: Key Features, Rules & Tax Implications",
       "points": [
-        "<strong>పన్ను చికిత్స:</strong> సంపాదించిన వడ్డీ మీ ఆదాయపు పన్ను స్లాబ్ ప్రకారం పూర్తిగా పన్ను విధించదగినది.",
-        "<strong>లాక్-ఇన్ కాలం:</strong> ఫ్లెక్సిబుల్, 7 రోజుల నుండి 10 సంవత్సరాల వరకు. జరిమానాతో ముందస్తు ఉపసంహరణ సాధ్యమే.",
-        "<strong>వడ్డీ రేటు:</strong> మొత్తం కాలానికి పెట్టుబడి సమయంలో స్థిరంగా ఉంటుంది. బ్యాంకు మరియు కాల వ్యవధిని బట్టి మారుతుంది.",
-        "<strong>కంట్రిబ్యూషన్ పరిమితి:</strong> పెట్టుబడిపై ఎగువ పరిమితి లేదు.",
-        "<strong>భీమా:</strong> డిపాజిట్లు DICGC ద్వారా ₹5 లక్షల వరకు బీమా చేయబడతాయి. (<a href='https://www.dicgc.org.in/' target='_blank' rel='noopener noreferrer' class='text-xs'>మూలం: DICGC</a>)",
-        "<strong>దీనికి ఉత్తమమైనది:</strong> స్వల్ప నుండి మధ్యకాలిక లక్ష్యాలు, అత్యవసర నిధులు మరియు రిస్క్-విముఖ పెట్టుబడిదారులకు ఊహించదగిన రాబడులు."
+        "<strong>Tax Treatment:</strong> Interest earned is fully taxable as per your income tax slab.",
+        "<strong>Lock-in Period:</strong> Flexible, ranging from 7 days to 10 years. Premature withdrawal is possible with a penalty.",
+        "<strong>Interest Rate:</strong> Fixed at the time of investment for the entire tenure. Varies by bank and tenure.",
+        "<strong>Contribution Limit:</strong> No upper limit on investment.",
+        "<strong>Insurance:</strong> Deposits are insured up to ₹5 lakh by DICGC. (<a href='https://www.dicgc.org.in/' target='_blank' rel='noopener noreferrer' class='text-xs'>Source: DICGC</a>)",
+        "<strong>Best For:</strong> Short to medium-term goals, emergency funds, and predictable returns for risk-averse investors."
       ]
     },
     "comparison": {
-      "title": "FD vs PPF: వివరణాత్మక పోలిక పట్టిక",
+      "title": "FD vs PPF: Detailed Comparison Table",
       "table": {
-        "headers": ["ఫీచర్", "ఫిక్స్‌డ్ డిపాజిట్ (FD)", "పబ్లిక్ ప్రావిడెంట్ ఫండ్ (PPF)"],
+        "headers": ["Feature", "Fixed Deposit (FD)", "Public Provident Fund (PPF)"],
         "rows": [
-          ["రాబడి", "స్థిర మరియు హామీ", "హామీ, కానీ రేటు త్రైమాసికంగా మారుతుంది"],
-          ["వడ్డీపై పన్ను", "మీ స్లాబ్ రేటుతో పన్ను విధించదగినది", "పూర్తిగా పన్ను-రహితం"],
-          ["లాక్-ఇన్", "ఫ్లెక్సిబుల్ (7 రోజుల నుండి 10 సంవత్సరాల వరకు)", "15 సంవత్సరాలు"],
-          ["లిక్విడిటీ", "అధికం (ముందస్తు ఉపసంహరణపై జరిమానా)", "తక్కువ (7 సంవత్సరాల తర్వాత పాక్షిక ఉపసంహరణ)"],
-          ["రుణ సౌకర్యం", "అవును, FDకి వ్యతిరేకంగా", "అవును, 3వ నుండి 6వ సంవత్సరం వరకు"],
-          ["గరిష్ట పెట్టుబడి", "పరిమితి లేదు", "సంవత్సరానికి ₹1.5 లక్షలు"]
+            ["Returns", "Fixed & Guaranteed", "Guaranteed, but rate changes quarterly"],
+            ["Tax on Interest", "Taxable at your slab rate", "Completely Tax-Free"],
+            ["Lock-in", "Flexible (7 days to 10 years)", "15 years"],
+            ["Liquidity", "High (penalty on early withdrawal)", "Low (partial withdrawal after 7 years)"],
+            ["Loan Facility", "Yes, against FD", "Yes, from 3rd to 6th year"],
+            ["Max Investment", "No limit", "₹1.5 Lakh per year"]
         ]
       }
     },
     "tax_impact": {
-      "title": "పన్ను ప్రభావం వివరించబడింది (పన్ను సమర్థవంతమైన రాబడిని ఎలా ప్రభావితం చేస్తుంది)",
-      "body": "FD మరియు PPF మధ్య అతిపెద్ద వ్యత్యాసం పన్ను. FD నుండి వడ్డీ మీ 'ఇతర వనరుల నుండి ఆదాయం'కి జోడించబడుతుంది మరియు మీ ఉపాంత స్లాబ్ రేటుతో పన్ను విధించబడుతుంది. ఉదాహరణకు, మీరు 30% పన్ను బ్రాకెట్‌లో ఉంటే, 7% FD సమర్థవంతంగా కేవలం 4.9% పన్ను-అనంతర రాబడిని ఇస్తుంది. దీనికి విరుద్ధంగా, PPF నుండి సంపాదించిన మొత్తం వడ్డీ పన్ను-రహితం, దాని సమర్థవంతమైన రాబడిని చాలా ఎక్కువగా చేస్తుంది."
+      "title": "Tax Impact Explained (how tax affects effective returns)",
+      "body": "The biggest difference between FD and PPF is tax. Interest from an FD is added to your 'Income from Other Sources' and taxed at your marginal slab rate. For example, if you are in the 30% tax bracket, a 7% FD effectively yields only 4.9% post-tax. In contrast, the entire interest earned from PPF is tax-free, making its effective return much higher."
     },
     "checklist": {
-      "title": "ఎలా ఎంచుకోవాలి: ఒక శీఘ్ర చెక్‌లిస్ట్",
+      "title": "How to Choose: A Quick Checklist",
       "points": [
-        "<strong>లక్ష్య కాలం:</strong> దీర్ఘకాలిక (>10 సంవత్సరాలు)? PPF మంచిది. స్వల్పకాలిక (<5 సంవత్సరాలు)? FD మాత్రమే ఎంపిక.",
-        "<strong>పన్ను బ్రాకెట్:</strong> అధిక పన్ను బ్రాకెట్‌లో (20-30%)? PPF యొక్క పన్ను-రహిత స్వభావం చాలా ఆకర్షణీయంగా మారుతుంది.",
-        "<strong>లిక్విడిటీ అవసరాలు:</strong> అత్యవసర పరిస్థితులకు మీ డబ్బుకు ప్రాప్యత అవసరమా? FD జరిమానాలు ఉన్నప్పటికీ మెరుగైన లిక్విడిటీని అందిస్తుంది.",
-        "<strong>రిస్క్ ఆకలి:</strong> మీరు సున్నా రిస్క్ కావాలనుకుంటే, రెండూ సురక్షితమైనవి, కానీ PPF సార్వభౌమ ప్రభుత్వం మద్దతుతో ఉంది.",
-        "<strong>పెట్టుబడి మొత్తం:</strong> సంవత్సరానికి ₹1.5 లక్షల కంటే ఎక్కువ పెట్టుబడి పెడుతున్నారా? మీరు మిగులు కోసం FDలు లేదా ఇతర ఎంపికలను ఉపయోగించాల్సి ఉంటుంది.",
-        "<strong>వయస్సు:</strong> సీనియర్ సిటిజన్‌ల కోసం, బ్యాంకులు తరచుగా అధిక FD రేట్లను అందిస్తాయి, ఇది వాటిని మరింత పోటీగా చేస్తుంది."
+        "<strong>Goal Horizon:</strong> Long-term (>10 years)? PPF is better. Short-term (<5 years)? FD is the only option.",
+        "<strong>Tax Bracket:</strong> In a higher tax bracket (20-30%)? The tax-free nature of PPF becomes much more attractive.",
+        "<strong>Liquidity Needs:</strong> Need access to your money for emergencies? FD offers better liquidity, despite penalties.",
+        "<strong>Risk Appetite:</strong> If you want zero risk, both are safe, but PPF is backed by the sovereign government.",
+        "<strong>Investment Amount:</strong> Investing over ₹1.5 lakh annually? You'll have to use FDs or other options for the surplus.",
+        "<strong>Age:</strong> For senior citizens, banks often offer higher FD rates, which might make them more competitive."
       ]
     },
-    "faq_title": "తరచుగా అడిగే ప్రశ్నలు",
+    "faq_title": "Frequently Asked Questions",
     "faqs": [
-      { "question": "FD vs PPF — ఏది మంచిది?", "answer": "ఇది ఆధారపడి ఉంటుంది: PPF దీర్ఘకాలిక, పన్ను-రహిత వృద్ధికి మంచిది; FD స్వల్పకాలిక లక్ష్యాలు మరియు లిక్విడిటీకి మంచిది. మీ ఖచ్చితమైన ఇన్‌పుట్‌ల కోసం సంఖ్యా ఫలితాన్ని పోల్చడానికి క్యాలిక్యులేటర్‌ను ఉపయోగించండి." },
-      { "question": "పన్ను తర్వాత FD రాబడిని ఎలా లెక్కించాలి?", "answer": "చక్రవడ్డీతో FD భవిష్యత్ విలువను లెక్కించండి, సంపాదించిన వడ్డీని పొందడానికి అసలు ప్రిన్సిపల్‌ను తీసివేయండి, ఆపై ఆ వడ్డీపై మీ ఉపాంత పన్ను రేటును వర్తింపజేసి చెల్లించాల్సిన పన్నును కనుగొనండి. పన్ను-అనంతర మెచ్యూరిటీ = స్థూల మెచ్యూరిటీ − పన్ను." },
-      { "question": "PPF వడ్డీ ఎలా లెక్కించబడుతుంది?", "answer": "PPF వడ్డీ ప్రభుత్వం త్రైమాసికంగా ప్రకటించిన రేటుతో వార్షికంగా చక్రవడ్డీ చేయబడుతుంది. మీరు ప్రతి సంవత్సరం ప్రారంభంలో డిపాజిట్ చేస్తే (యాన్యుటీ-డ్యూ), సూత్రం ఒక యాన్యుటీ గుణకాన్ని ఉపయోగిస్తుంది." },
-      { "question": "నేను సమాన మొత్తం పెట్టుబడులను పోల్చాలనుకుంటే ఏమిటి?", "answer": "ఈ ఫీచర్ త్వరలో వస్తుంది. ప్రస్తుతం, సాధనం ఒకేసారి FD పెట్టుబడిని పునరావృతమయ్యే PPF పెట్టుబడితో పోలుస్తుంది, ఇది ఒక సాధారణ వాస్తవ-ప్రపంచ దృష్టాంతం." },
-      { "question": "PPF ముందస్తు ఉపసంహరణలను అనుమతిస్తుందా?", "answer": "7వ ఆర్థిక సంవత్సరం నుండి పరిమితుల కింద పాక్షిక ఉపసంహరణలు అనుమతించబడతాయి; రుణాలు 3 మరియు 6 సంవత్సరాల మధ్య అందుబాటులో ఉంటాయి. పూర్తి అకాల మూసివేత నిర్దిష్ట సందర్భాలలో మాత్రమే అనుమతించబడుతుంది (ఉదా., తీవ్రమైన అనారోగ్యం) మరియు జరిమానా విధించవచ్చు." },
-      { "question": "FD వడ్డీ పన్ను విధించదగినదా?", "answer": "అవును — FD వడ్డీ మీ ఉపాంత ఆదాయపు పన్ను స్లాబ్‌లో పన్ను విధించదగినది. TDS (10%) చట్టబద్ధమైన పరిమితుల పైన వర్తిస్తుంది; అయితే, వాస్తవ పన్ను బాధ్యత మీ స్లాబ్‌పై ఆధారపడి ఉంటుంది." },
-      { "question": "నేను FD కోసం పన్ను ప్రయోజనాలను క్లెయిమ్ చేయవచ్చా?", "answer": "కేవలం 5-సంవత్సరాల పన్ను-ఆదా FDలు మాత్రమే సెక్షన్ 80C కింద మినహాయింపుకు అర్హత పొందుతాయి; వాటి వడ్డీ పన్ను విధించదగినదిగా ఉంటుంది." },
-      { "question": "ఒక సీనియర్ సిటిజన్ FD లేదా PPFని ఎంచుకోవాలా?", "answer": "చాలా మంది సీనియర్లు ఒక మిశ్రమాన్ని ఉపయోగిస్తారు — నెలవారీ ఆదాయం కోసం FDలు (బ్యాంకులు సీనియర్ సిటిజన్ రేట్లు ఇస్తాయి) మరియు వారు పన్ను-రహిత దీర్ఘకాలిక కార్పస్ కావాలనుకుంటే PPF. క్యాలిక్యులేటర్ ట్రేడ్-ఆఫ్‌లను లెక్కించడానికి సహాయపడుతుంది." },
-      { "question": "నేను PPF డిపాజిట్‌ను కోల్పోతే ఏమి జరుగుతుంది?", "answer": "కనీస కంట్రిబ్యూషన్‌ను కోల్పోవడం వల్ల ఖాతా నిష్క్రియం అవుతుంది; పునరుద్ధరణకు తప్పిన సంవత్సరాలకు చెల్లింపు మరియు ప్రతి తప్పిన సంవత్సరానికి జరిమానా అవసరం. ఖచ్చితమైన పునరుద్ధరణ ప్రక్రియ కోసం మీ బ్యాంకు/పోస్టాఫీసును తనిఖీ చేయండి." },
-      { "question": "PPF రేట్లు ఎప్పటికీ స్థిరంగా ఉంటాయా?", "answer": "లేదు — PPF రేట్లు ప్రభుత్వం త్రైమాసికంగా సమీక్షించి ప్రకటిస్తాయి. క్యాలిక్యులేటర్ మీకు వివిధ దృశ్యాలను మోడల్ చేయడానికి రేటును సవరించడానికి అనుమతిస్తుంది." },
-      { "question": "NRIలు PPF ఖాతాలను తెరవవచ్చా?", "answer": "NRIలు కొత్త PPF ఖాతాలను తెరవలేరు; ఇప్పటికే ఉన్న ఖాతాలు నిర్దిష్ట షరతుల కింద కొనసాగుతాయి. బ్యాంకు/పోస్టాఫీసు మరియు అధికారిక మార్గదర్శకాలతో ప్రస్తుత నియమాలను నిర్ధారించండి." },
-      { "question": "నేను PPFతో FD ల్యాడరింగ్‌ను ఎలా ఉపయోగించగలను?", "answer": "ఒక సాధారణ వ్యూహం: పన్ను-రహిత దీర్ఘకాలిక వృద్ధి కోసం PPFని గరిష్టంగా ఉపయోగించుకోండి, మరియు లిక్విడిటీ కోసం వివిధ మెచ్యూరిటీలతో FDలను ల్యాడర్ చేయండి. ఇది భద్రత, లిక్విడిటీ మరియు పన్ను సామర్థ్యాన్ని సమతుల్యం చేస్తుంది." }
+        { "question": "FD vs PPF — which is better?", "answer": "It depends: PPF is better for long-term, tax-free growth; FD is better for short-term goals and liquidity. Use the calculator to compare the exact numeric outcome for your inputs." },
+        { "question": "How to calculate FD returns after tax?", "answer": "Compute FD future value with compound interest, subtract the original principal to get interest earned, then apply your marginal tax rate to that interest to find tax owed. Post-tax maturity = gross maturity − tax." },
+        { "question": "How is PPF interest calculated?", "answer": "PPF interest is compounded annually at the rate notified quarterly by the government. If you deposit at the start of each year (annuity-due), the formula uses an annuity multiplier." },
+        { "question": "What if I want to compare equal total investments?", "answer": "This feature is coming soon. Currently, the tool compares a one-time FD investment against a recurring PPF investment, which is a common real-world scenario." },
+        { "question": "Does PPF allow early withdrawals?", "answer": "Partial withdrawals are permitted from the 7th financial year under limits; loans are available between years 3 and 6. Full premature closure is allowed only in specific cases (e.g., serious illness) and may carry a penalty." },
+        { "question": "Is FD interest taxable?", "answer": "Yes — FD interest is taxable at your marginal income tax slab. TDS (10%) is applicable above statutory thresholds; however, actual tax liability will depend on your slab." },
+        { "question": "Can I claim tax benefits for FD?", "answer": "Only 5-year tax-saving FDs qualify for deduction under Section 80C; their interest remains taxable." },
+        { "question": "Should a senior citizen choose FD or PPF?", "answer": "Many seniors use a mix — FDs for monthly income (banks give senior citizen rates) and PPF if they want a tax-free long-term corpus. The calculator helps quantify trade-offs." },
+        { "question": "What happens if I miss a PPF deposit?", "answer": "Missing the minimum contribution makes the account inactive; revival requires payment for missed years plus a penalty per missed year. Check your bank/Post Office for exact revival process." },
+        { "question": "Are PPF rates fixed forever?", "answer": "No — PPF rates are reviewed and notified by the government quarterly. The calculator allows you to edit the rate to model different scenarios." },
+        { "question": "Can NRIs open PPF accounts?", "answer": "NRIs cannot open new PPF accounts; existing accounts continue under specific conditions. Confirm current rules with the bank/Post Office and official guidelines." },
+        { "question": "How can I use FD laddering with PPF?", "answer": "A common strategy: max out PPF for tax-free long-term growth, and ladder FDs with staggered maturities for liquidity. This balances safety, liquidity and tax efficiency." }
     ],
     "conclusion": {
-      "title": "తుది ఆలోచనలు: సరైన ఎంపిక చేసుకోవడం",
-      "body": "ఒక ఫిక్స్‌డ్ డిపాజిట్ మరియు పబ్లిక్ ప్రావిడెంట్ ఫండ్ మధ్య ఎంచుకోవడం చివరికి మీ ఆర్థిక లక్ష్యాలు, పెట్టుబడి కాలం మరియు లిక్విడిటీ అవసరంపై ఆధారపడి ఉంటుంది. సురక్షిత, పన్ను-రహిత, దీర్ఘకాలిక వృద్ధి కోసం, పిపిఎఫ్ ఒక అసమానమైన సాధనం. స్వల్పకాలిక పొదుపుపై ఊహించదగిన రాబడుల కోసం, ఒక ఎఫ్‌డి విశ్వసనీయత మరియు ప్రాప్యతను అందిస్తుంది. వివిధ దృశ్యాలను మోడల్ చేయడానికి మా <a href='/{lang}/fd-vs-ppf-calculator' class='underline'>FD vs PPF రిటర్న్స్ క్యాలిక్యులేటర్</a>ని ఉపయోగించండి మరియు మీ ఆర్థిక ప్రణాళికకు ఉత్తమంగా సరిపోయే సమాచారంతో కూడిన నిర్ణయం తీసుకోండి।"
+      "title": "Final Thoughts: Making the Right Choice",
+      "body": "Choosing between a Fixed Deposit and the Public Provident Fund ultimately depends on your financial goals, investment horizon, and need for liquidity. For secure, tax-free, long-term growth, PPF is an unmatched tool. For predictable returns on short-term savings, an FD provides reliability and access. Use our <a href='/{lang}/fd-vs-ppf-calculator' class='underline'>FD vs PPF Returns Calculator</a> to model various scenarios and make an informed decision that best suits your financial plan."
     }
   },
   "tax_regime_calculator": {
