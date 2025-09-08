@@ -97,12 +97,13 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
 
     const P_ppf_annual = values.investmentAmount;
     const r_ppf = values.ppfRate / 100;
-    const t_ppf = values.fdTenure;
+    const t_ppf = values.fdTenure >= 15 ? values.fdTenure : 15; // PPF min tenure is 15
     let ppfBalance = 0;
     let totalPpfInvestment = 0;
     for (let i = 0; i < t_ppf; i++) {
-        ppfBalance = (ppfBalance + P_ppf_annual) * (1 + r_ppf);
-        totalPpfInvestment += P_ppf_annual;
+        const contribution = i < values.fdTenure ? P_ppf_annual : 0;
+        ppfBalance = (ppfBalance + contribution) * (1 + r_ppf);
+        totalPpfInvestment += contribution;
     }
     const ppfInterest = ppfBalance - totalPpfInvestment;
 

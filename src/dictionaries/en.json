@@ -651,7 +651,7 @@
     "description": "Enter your investment amount and tenure to see a side-by-side comparison of maturity value, tax impact, and post-tax returns for Fixed Deposits and Public Provident Fund. Make an informed decision.",
     "title": "FD vs PPF Calculator",
     "form_description": "Compare post-tax returns from a lump-sum FD vs recurring PPF investment.",
-    "investment_amount_label": "Investment Amount (₹)",
+    "investment_amount_label": "Lump-sum Investment (FD) / Annual Recurring (PPF)",
     "tenure_label": "Investment Tenure (Years)",
     "fd_rate_label": "FD Interest Rate (% p.a.)",
     "ppf_rate_label": "PPF Interest Rate (% p.a.)",
@@ -678,7 +678,7 @@
     },
     "quick_answer": {
       "title": "Quick Answer: Which is better, FD or PPF?",
-      "body": "For <strong>long-term, tax-free wealth creation</strong> (like retirement), <strong>PPF is almost always better</strong> due to its EEE tax status and compounding benefits. For <strong>short-term goals or emergency funds</strong> where you need liquidity, an <strong>FD is more suitable</strong> despite the tax on interest. Use our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> or the tool on this page to see the exact difference for your amount."
+      "body": "For <strong>long-term, tax-free wealth creation</strong> (like retirement), <strong>PPF is almost always better</strong> due to its EEE tax status and compounding benefits. For <strong>short-term goals or emergency funds</strong> where you need liquidity, an <strong>FD is more suitable</strong> despite the tax on interest. Use our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> or <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> to see the exact difference for your amount."
     },
     "how_it_works": {
       "title": "How Returns are Calculated (Worked Examples)",
@@ -729,6 +729,17 @@
     "tax_impact": {
       "title": "Tax Impact Explained (how tax affects effective returns)",
       "body": "The biggest difference between FD and PPF is tax. Interest from an FD is added to your 'Income from Other Sources' and taxed at your marginal slab rate. For example, if you are in the 30% tax bracket, a 7% FD effectively yields only 4.9% post-tax. In contrast, the entire interest earned from PPF is tax-free, making its effective return much higher."
+    },
+    "checklist": {
+      "title": "How to Choose: A Quick Checklist",
+      "points": [
+        "<strong>Goal Horizon:</strong> Long-term (>10 years)? PPF is better. Short-term (<5 years)? FD is the only option.",
+        "<strong>Tax Bracket:</strong> In a higher tax bracket (20-30%)? The tax-free nature of PPF becomes much more attractive.",
+        "<strong>Liquidity Needs:</strong> Need access to your money for emergencies? FD offers better liquidity, despite penalties.",
+        "<strong>Risk Appetite:</strong> If you want zero risk, both are safe, but PPF is backed by the sovereign government.",
+        "<strong>Investment Amount:</strong> Investing over ₹1.5 lakh annually? You'll have to use FDs or other options for the surplus.",
+        "<strong>Age:</strong> For senior citizens, banks often offer higher FD rates, which might make them more competitive."
+      ]
     },
     "faq_title": "Frequently Asked Questions",
     "faqs": [

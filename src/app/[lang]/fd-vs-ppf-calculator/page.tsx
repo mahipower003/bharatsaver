@@ -6,9 +6,9 @@ import type { Metadata } from "next";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Landmark, ArrowRightLeft, ShieldCheck, Banknote, HelpCircle, Star, AlertTriangle } from "lucide-react";
+import { Landmark, ArrowRightLeft, ShieldCheck, Banknote, HelpCircle, Star, AlertTriangle, CheckCircle } from "lucide-react";
 import Link from "next/link";
-import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       name: faq.question,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: faq.answer,
+        text: faq.answer.replace(/<[^>]*>/g, ''), // Strip HTML tags for JSON-LD
       },
     })),
   };
@@ -188,6 +188,22 @@ export default async function FdVsPpfCalculatorPage({ params }: { params: { lang
           </CardContent>
         </Card>
         
+        <Card className="mt-12 shadow-lg">
+            <CardHeader>
+                <CardTitle className="flex items-center gap-3">
+                    <CheckCircle className="h-7 w-7 text-primary"/>
+                    <h2 className="text-2xl font-bold">{dictionary.fd_vs_ppf_calculator.checklist.title}</h2>
+                </CardTitle>
+            </CardHeader>
+            <CardContent>
+                <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
+                    {dictionary.fd_vs_ppf_calculator.checklist.points.map((point: string, index: number) => (
+                        <li key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
+                    ))}
+                </ul>
+            </CardContent>
+        </Card>
+
         <div className="mt-12">
             <h2 className="text-2xl font-bold text-center mb-6">{dictionary.fd_vs_ppf_calculator.faq_title}</h2>
             <Accordion type="single" collapsible className="w-full">
