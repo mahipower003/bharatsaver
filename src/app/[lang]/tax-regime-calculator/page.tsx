@@ -59,10 +59,19 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         "url": `${siteUrl}/icon.svg`
       }
     },
-    "reviewedBy": {
-      "@type": "Person",
-      "name": "Laveena Vijayi",
-      "jobTitle": "Finance Editor"
+    "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Laveena Vijayi",
+          "jobTitle": "Finance Editor"
+        },
+        "reviewBody": "This calculator provides an accurate comparison based on the latest tax slabs for FY 2024-25, including detailed deduction options like HRA and 80C, which is essential for informed decision-making."
     },
     "about": ["Income Tax Calculator", "Old vs New Tax Regime", "Tax Planning India"],
     "datePublished": "2024-07-30",
