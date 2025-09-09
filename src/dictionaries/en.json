@@ -763,8 +763,8 @@
     }
   },
   "tax_regime_calculator": {
-    "meta_title": "Tax Regime Calculator 2025 — Compare Old vs New Tax Regime (India)",
-    "meta_description": "Enter your salary and deductions to instantly compare tax under the old vs new regime. Updated for FY 2025-26 — includes HRA, 80C, 80D, and worked examples. Free downloadable summary & ITR filing options.",
+    "meta_title": "Tax Regime Calculator 2025 — Old vs New Regime Compare (HRA, 80C, 80D)",
+    "meta_description": "Compare Old vs New tax regime for FY 2024-25. Instant calculator with HRA, 80C, 80D, home loan and worked examples (₹6L, ₹10L, ₹15L). Download results & get filing options.",
     "h1": "Tax Regime Calculator 2025 — Compare Old vs New Tax Regime (India)",
     "description": "Enter your salary and deductions to instantly compare tax under the old vs new regime. Updated for FY 2025-26 — includes HRA, 80C, 80D, and worked examples.",
     "title": "Tax Regime Calculator",
@@ -803,7 +803,6 @@
     "comparison_table": {
       "title": "Old vs New Tax Regime — Quick Comparison",
       "description": "A quick look at what's allowed in each regime.",
-      "snippet_table_html": "<table style=\"width:100%;border-collapse:collapse;margin:12px 0;\"><thead><tr><th style=\"text-align:left;padding:6px;border-bottom:1px solid #e6e6e6\">Income</th><th style=\"text-align:left;padding:6px;border-bottom:1px solid #e6e6e6\">Old Regime Tax</th><th style=\"text-align:left;padding:6px;border-bottom:1px solid #e6e6e6\">New Regime Tax</th><th style=\"text-align:left;padding:6px;border-bottom:1px solid #e6e6e6\">Recommendation</th></tr></thead><tbody><tr><td style=\"padding:6px;border-bottom:1px solid #f1f5f9\">₹6,00,000</td><td style=\"padding:6px;border-bottom:1px solid #f1f5f9\">₹7,800</td><td style=\"padding:6px;border-bottom:1px solid #f1f5f9\">₹0</td><td style=\"padding:6px;border-bottom:1px solid #f1f5f9\">New Regime</td></tr><tr><td style=\"padding:6px;border-bottom:1px solid #f1f5f9\">₹10,00,000</td><td style=\"padding:6px;border-bottom:1px solid #f1f5f9\">₹54,600</td><td style=\"padding:6px;border-bottom:1px solid #f1f5f9\">₹54,600</td><td style=\"padding:6px;border-bottom:1px solid #f1f5f9\">Depends</td></tr><tr><td style=\"padding:6px;\">₹15,00,000</td><td style=\"padding:6px;\">₹1,63,800</td><td style=\"padding:6px;\">₹1,56,000</td><td style=\"padding:6px;\">New Regime</td></tr></tbody></table>",
       "table": {
         "headers": ["Feature", "Old Tax Regime", "New Tax Regime (Default)"],
         "rows": [
@@ -848,15 +847,15 @@
       { "question": "Is Standard Deduction available in the new regime?", "answer": "Yes, a standard deduction of ₹50,000 is available for salaried individuals under both regimes." },
       { "question": "Is rebate under section 87A available in 2025?", "answer": "Yes. In the new regime, if your taxable income is up to ₹7 lakh, you pay zero tax due to the rebate. In the old regime, the rebate is for income up to ₹5 lakh." },
       { "question": "How do I calculate tax on rental income?", "answer": "Rental income is added to 'Income from Other Sources'. A standard deduction of 30% on rent is allowed under the old regime but not the new one. Enter net rental income in the calculator." },
-      { "question": "Is this calculator for NRIs?", "answer": "Yes, but NRIs should be aware that some deductions and slab rates might differ. Always consult a tax professional." },
+      { "question": "Will NRIs use the same calculator?", "answer": "Yes, but NRIs should be aware that some deductions and slab rates might differ. Always consult a tax professional." },
       { "question": "How often are tax slab rates updated?", "answer": "Tax slabs are updated annually during the Union Budget. This calculator is updated for AY 2025-26. For official rates, refer to the <a href='https://incometaxindia.gov.in/' target='_blank' rel='noopener noreferrer'>Income Tax Department website</a>." }
     ],
     "next_steps": {
       "title": "Next Steps",
-      "cta1_title": "File Your ITR in 5 Mins",
+      "cta1_title": "File Your ITR",
       "cta1_desc": "Use a trusted partner like ClearTax to file your Income Tax Return accurately.",
-      "cta2_title": "Plan 80C Investments",
-      "cta2_desc": "Start your 80C planning before March 31st — try our PPF & NPS calculators."
+      "cta2_title": "Plan Tax-Saving Investments",
+      "cta2_desc": "Explore our tax-saving calculators like PPF and NPS to plan your investments."
     },
     "conclusion": {
       "title": "Final Thoughts: Making the Smart Choice",
@@ -955,3 +954,5 @@
     "view_calculator": "View Calculator"
   }
 }
+
+    

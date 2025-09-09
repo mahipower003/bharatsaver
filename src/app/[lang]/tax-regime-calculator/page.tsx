@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { FileText, Download, TrendingUp, Star, AlertTriangle, CheckCircle } from "lucide-react";
+import { FileText, Download, TrendingUp, Star, AlertTriangle, CheckCircle, HelpCircle } from "lucide-react";
 import Link from "next/link";
 import { AuthorCard } from "@/components/layout/AuthorCard";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
@@ -172,49 +172,62 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
 
         <Card className="mt-8 shadow-lg">
           <CardHeader>
-            <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.comparison_table.title}</h2>
+             <CardTitle className="flex items-center gap-3">
+                <FileText className="h-7 w-7 text-primary"/>
+                <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.comparison_table.title}</h2>
+             </CardTitle>
           </CardHeader>
           <CardContent>
             <p className="mb-4 text-muted-foreground">{dictionary.tax_regime_calculator.comparison_table.description}</p>
-            <div dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.comparison_table.snippet_table_html }} />
-            <Table>
-                <TableHeader>
-                    <TableRow>
-                        {comparisonData.headers.map((header: string, index: number) => (
-                            <TableHead key={index}>{header}</TableHead>
-                        ))}
-                    </TableRow>
-                </TableHeader>
-                <TableBody>
-                    {comparisonData.rows.map((row: string[], rowIndex: number) => (
-                        <TableRow key={rowIndex}>
-                            {row.map((cell: string, cellIndex: number) => (
-                                <TableCell key={cellIndex} dangerouslySetInnerHTML={{ __html: cell }}></TableCell>
-                            ))}
-                        </TableRow>
-                    ))}
-                </TableBody>
-            </Table>
+            <div className="overflow-x-auto">
+              <Table>
+                  <TableHeader>
+                      <TableRow>
+                          {comparisonData.headers.map((header: string, index: number) => (
+                              <TableHead key={index}>{header}</TableHead>
+                          ))}
+                      </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                      {comparisonData.rows.map((row: string[], rowIndex: number) => (
+                          <TableRow key={rowIndex}>
+                              {row.map((cell: string, cellIndex: number) => (
+                                  <TableCell key={cellIndex} dangerouslySetInnerHTML={{ __html: cell }}></TableCell>
+                              ))}
+                          </TableRow>
+                      ))}
+                  </TableBody>
+              </Table>
+            </div>
           </CardContent>
         </Card>
         
         <Card className="mt-8 shadow-lg">
-          <CardHeader>
-            <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.checklist.title}</h2>
+           <CardHeader>
+             <CardTitle className="flex items-center gap-3">
+                <CheckCircle className="h-7 w-7 text-primary"/>
+                <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.checklist.title}</h2>
+             </CardTitle>
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.checklist.body }} />
         </Card>
         
         <Card className="mt-8 shadow-lg">
-          <CardHeader>
-            <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.how_we_calculate.title}</h2>
+           <CardHeader>
+             <CardTitle className="flex items-center gap-3">
+                <HelpCircle className="h-7 w-7 text-primary"/>
+                <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.how_we_calculate.title}</h2>
+             </CardTitle>
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.how_we_calculate.body.replace(/{lang}/g, params.lang) }} />
         </Card>
 
         <Card className="mt-8 shadow-lg">
           <CardHeader>
-            <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.common_scenarios.title}</h2>
+             <CardTitle className="flex items-center gap-3">
+                <TrendingUp className="h-7 w-7 text-primary"/>
+                <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.common_scenarios.title}</h2>
+             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-6">
             <div className="bg-muted/50 p-4 rounded-lg">
@@ -248,7 +261,10 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
         
         <Card className="mt-12 shadow-lg">
           <CardHeader>
-            <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.next_steps.title}</h2>
+            <CardTitle className="flex items-center gap-3">
+              <Download className="h-7 w-7 text-primary"/>
+              <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.next_steps.title}</h2>
+            </CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -295,3 +311,5 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
     </div>
   );
 }
+
+    
