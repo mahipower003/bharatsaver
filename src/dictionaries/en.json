@@ -332,7 +332,7 @@
     "tax_benefits": {
       "title": "Tax Benefits of SSY (EEE Status)",
       "intro": "Like PPF, the Sukanya Samriddhi Yojana (SSY) is an EEE (Exempt-Exempt-Exempt) investment.",
-      "body": "This means your contributions (up to ₹1.5 lakh per year under Section 80C), the interest you earn, and the final maturity amount are all <strong>completely tax-free</strong>. It's one of the most tax-efficient ways to save for a girl child's future. For more details on Section 80C, refer to the <a href='https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Income Tax Act</a>."
+      "body": "This means your contributions (up to ₹1.5 lakh per year under Section 80C), the interest you earn, and the final maturity amount are all <strong>completely tax-free</strong>. It's one of the most tax-efficient ways to save for a girl child's future. For more details on Section 80C, refer to the <a href='https://incometaxindia.gov.in/Pages/acts/income-tax-act.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Income Tax Act</a>."
     },
     "rules": {
       "title": "SSY Rules: Withdrawals, Revival & Nomination",
@@ -763,8 +763,8 @@
     }
   },
   "tax_regime_calculator": {
-    "meta_title": "Tax Regime Calculator 2025 — Old vs New Regime Compare (HRA, 80C, 80D)",
-    "meta_description": "Compare Old vs New tax regime for FY 2024-25. Instant calculator with HRA, 80C, 80D, home loan and worked examples (₹6L, ₹10L, ₹15L). Download results & get filing options.",
+    "meta_title": "Tax Regime Calculator 2025 — Compare Old vs New Tax Regime (India)",
+    "meta_description": "Enter your salary and deductions to instantly compare tax under the old vs new regime. Updated for FY 2025-26 — includes HRA, 80C, 80D, and worked examples. Free downloadable summary & ITR filing options.",
     "h1": "Tax Regime Calculator 2025 — Compare Old vs New Tax Regime (India)",
     "description": "Enter your salary and deductions to instantly compare tax under the old vs new regime. Updated for FY 2025-26 — includes HRA, 80C, 80D, and worked examples.",
     "title": "Tax Regime Calculator",
@@ -824,18 +824,18 @@
       "body": "<ul><li><strong>High Deductions:</strong> If your total deductions (80C, HRA, home loan interest) are significant (typically > ₹2.5-3 lakh), the <strong>Old Regime</strong> is often better.</li><li><strong>Low/No Deductions:</strong> If you don't have many deductions, the <strong>New Regime's</strong> lower slab rates are usually more beneficial.</li><li><strong>Simplicity:</strong> Prefer a simpler tax filing process without tracking multiple investments? The <strong>New Regime</strong> is easier.</li></ul>"
     },
     "common_scenarios": {
-      "title": "Common Scenarios: Worked Examples",
+      "title": "Worked Examples — Old vs New Regime",
       "scenario1": {
-        "title": "Scenario 1: ₹12 Lakh Salary with HRA & Full 80C",
-        "body": "<strong>Example:</strong> A person with a ₹12 lakh salary, basic of ₹6 lakh, receiving ₹2.4 lakh in HRA, paying ₹3 lakh rent in a metro city, and investing ₹1.5 lakh in 80C. <br/>👉 In this case, the <strong>Old Regime is better</strong>, saving over ₹30,000 in tax because the HRA and 80C deductions outweigh the lower rates of the new regime."
+        "title": "Example 1: ₹10 Lakh Salary with HRA & Full Deductions",
+        "body": "<strong>Inputs:</strong> Salary ₹10,00,000 | HRA ₹2,00,000 | 80C ₹1,50,000 | 80D ₹25,000 | 80CCD(1B) ₹50,000<br/><strong>Old Regime Tax:</strong> ₹46,800<br/><strong>New Regime Tax:</strong> ₹54,600<br/><strong>Recommendation:</strong> Old Regime is better here because deductions + HRA exemptions reduce taxable income significantly."
       },
       "scenario2": {
-        "title": "Scenario 2: ₹15 Lakh Salary with No Major Deductions",
-        "body": "<strong>Example:</strong> A freelancer earning ₹15 lakh with minimal deductions. <br/>👉 The <strong>New Regime is better</strong>, saving approximately ₹7,800. Since they cannot claim major deductions, the lower tax rates of the new regime result in a lower tax liability."
+        "title": "Example 2: ₹15 Lakh Salary, No Deductions",
+        "body": "<strong>Inputs:</strong> Salary ₹15,00,000 | HRA = 0 | 80C/80D = 0<br/><strong>Old Regime Tax:</strong> ₹2,73,000<br/><strong>New Regime Tax:</strong> ₹1,95,000<br/><strong>Recommendation:</strong> New Regime saves ~₹78,000 since no deductions are used."
       },
        "scenario3": {
-        "title": "Scenario 3: ₹25 Lakh Salary with Home Loan",
-        "body": "<strong>Example:</strong> An individual earning ₹25 lakh with a home loan interest payment of ₹2 lakh and full 80C/80D deductions. <br/>👉 The <strong>Old Regime is significantly better</strong>, saving nearly ₹75,000 in tax. The ability to claim home loan interest and other deductions makes a huge difference at higher income levels."
+        "title": "Example 3: ₹7 Lakh Freelancer Income (No HRA, Small Deduction)",
+        "body": "<strong>Inputs:</strong> Income ₹7,00,000 | No HRA | 80C ₹50,000<br/><strong>Old Regime Tax:</strong> ₹23,400<br/><strong>New Regime Tax:</strong> ₹0 (87A rebate applies)<br/><strong>Recommendation:</strong> New Regime is better, especially for individuals with income up to ₹7 lakh due to rebate."
       }
     },
     "faq_title": "Frequently Asked Questions",
