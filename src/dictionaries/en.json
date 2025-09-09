@@ -754,7 +754,7 @@
         { "question": "Should a senior citizen choose FD or PPF?", "answer": "Many seniors use a mix — FDs for monthly income (banks give senior citizen rates) and PPF if they want a tax-free long-term corpus. The calculator helps quantify trade-offs." },
         { "question": "What happens if I miss a PPF deposit?", "answer": "Missing the minimum contribution makes the account inactive; revival requires payment for missed years plus a penalty per missed year. Check your bank/Post Office for exact revival process." },
         { "question": "Are PPF rates fixed forever?", "answer": "No — PPF rates are reviewed and notified by the government quarterly. The calculator allows you to edit the rate to model different scenarios." },
-        { "question": "Can NRIs open PPF accounts?", "answer": "NRIs cannot open new PPF accounts; existing accounts continue under specific conditions. Confirm current rules with the bank/Post Office and official guidelines." },
+        { "question": "Can NRIs use this calculator?", "answer": "Yes, NRIs can use this calculator. However, they should be aware that certain deductions and slab rates might differ. It's always best to consult with a tax professional." },
         { "question": "How can I use FD laddering with PPF?", "answer": "A common strategy: max out PPF for tax-free long-term growth, and ladder FDs with staggered maturities for liquidity. This balances safety, liquidity and tax efficiency." }
     ],
     "conclusion": {
@@ -763,8 +763,8 @@
     }
   },
   "tax_regime_calculator": {
-    "meta_title": "Tax Regime Calculator 2025 — Compare Old vs New Tax Regime (India)",
-    "meta_description": "Enter your salary and deductions to instantly compare tax under the old vs new regime. Updated for FY 2025-26 — includes HRA, 80C, 80D, and worked examples. Free downloadable summary & ITR filing options.",
+    "meta_title": "Tax Regime Calculator 2025 — Old vs New Regime Compare (HRA, 80C, 80D)",
+    "meta_description": "Compare Old vs New tax regime for FY 2024-25. Instant calculator with HRA, 80C, 80D, home loan and worked examples (₹6L, ₹10L, ₹15L). Download results & get filing options.",
     "h1": "Tax Regime Calculator 2025 — Compare Old vs New Tax Regime (India)",
     "description": "Enter your salary and deductions to instantly compare tax under the old vs new regime. Updated for FY 2025-26 — includes HRA, 80C, 80D, and worked examples.",
     "title": "Tax Regime Calculator",
@@ -833,13 +833,13 @@
     "faqs": [
       { "question": "What is the new tax regime?", "answer": "The new tax regime offers lower income tax rates but disallows most common deductions like HRA or Section 80C. It is the default regime from FY 2023-24 onwards." },
       { "question": "What is the old tax regime?", "answer": "The old tax regime has higher slab rates but allows taxpayers to claim over 70 deductions and exemptions, such as those under Section 80C, 80D, HRA, and for home loan interest." },
-      { "question": "Which is better: old vs new for ₹10 lakh salary?", "answer": "If your total deductions are over ₹2.5 lakh, the Old Regime is usually better. If not, the New Regime will likely save you more tax. Use the calculator for an exact comparison." },
-      { "question": "Does new regime allow HRA?", "answer": "No, House Rent Allowance (HRA) exemption cannot be claimed under the new tax regime." },
+      { "question": "Which is better: old vs new for ₹10 lakh salary?", "answer": "If your total deductions (80C, HRA, etc.) are over ₹2.5 lakh, the Old Regime is usually better. If not, the New Regime will likely save you more tax. Use the calculator for an exact comparison." },
+      { "question": "Does new regime allow HRA?", "answer": "No — HRA exemption is only claimable under the old tax regime. Include your HRA details in the calculator to see the exact impact." },
       { "question": "Can I claim 80C under new regime?", "answer": "No, deductions under Section 80C for investments like PPF, EPF, or ELSS are not allowed in the new tax regime." },
       { "question": "How is standard deduction treated in new regime?", "answer": "A standard deduction of ₹50,000 is available for salaried individuals and pensioners under both the old and new tax regimes." },
       { "question": "Is rebate under section 87A available in 2025?", "answer": "Yes. In the new regime, if your taxable income is up to ₹7 lakh, you pay zero tax due to the rebate. In the old regime, the rebate is available for taxable income up to ₹5 lakh." },
       { "question": "How to calculate tax on rental income?", "answer": "Rental income is added to your 'Income from Other Sources'. A standard deduction of 30% on rental income is allowed under the old regime, but not the new one. Enter your net rental income in the 'Other Income' field." },
-      { "question": "Can NRIs use this calculator?", "answer": "Yes, NRIs can use this calculator. However, they should be aware that certain deductions and slab rates might differ. It's always best to consult with a tax professional." },
+      { "question": "Can NRIs use this calculator?", "answer": "Yes, NRIs can use this calculator. However, they should be aware that certain deductions and slab rates might differ. It's always best to consult with a tax professional for specific advice." },
       { "question": "How often are tax slab rates updated?", "answer": "Tax slab rates are typically updated annually during the Union Budget presentation by the Government of India. This calculator is updated for the latest Assessment Year (AY 2025-26). For official rates, always refer to the <a href='https://incometaxindia.gov.in/' target='_blank' rel='noopener noreferrer'>Income Tax Department website</a>." }
     ],
     "next_steps": {

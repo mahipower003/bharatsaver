@@ -60,8 +60,9 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       }
     },
     "reviewedBy": {
-      "@type": "Organization",
-      "name": "BharatSaver Editorial Team"
+      "@type": "Person",
+      "name": "Laveena Vijayi",
+      "jobTitle": "Finance Editor"
     },
     "about": ["Income Tax Calculator", "Old vs New Tax Regime", "Tax Planning India"],
     "datePublished": "2024-07-30",
@@ -75,6 +76,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     "url": pageUrl,
     "applicationCategory":"FinanceApplication",
     "operatingSystem":"Web",
+    "description": "Compare old vs new tax regime for salaried and self-employed in India (FY 2024-25 / AY 2025-26). Includes HRA, 80C, 80D, home loan and CSV export.",
     "offers": {
       "@type":"Offer",
       "url": pageUrl,
@@ -87,8 +89,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     title: dictionary.tax_regime_calculator.meta_title,
     description: dictionary.tax_regime_calculator.meta_description,
     openGraph: {
-      title: "Tax Regime Calculator 2025 — Compare Old vs New",
-      description: "Free tax calculator for India (FY 2025-26). Compare old vs new regime with deductions like HRA, 80C, 80D. Download summary.",
+      title: dictionary.tax_regime_calculator.meta_title,
+      description: dictionary.tax_regime_calculator.meta_description,
       url: pageUrl,
       images: [{ url: ogImageUrl, width: 1200, height: 630, alt: 'BharatSaver Tax Regime Calculator' }],
       locale: params.lang === 'en' ? 'en_IN' : params.lang,
@@ -96,8 +98,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     },
     twitter: {
       card: 'summary_large_image',
-      title: "Tax Regime Calculator 2025 — Compare Old vs New",
-      description: "Free tax calculator for India (FY 2025-26). Compare old vs new regime with deductions like HRA, 80C, 80D. Download summary.",
+      title: dictionary.tax_regime_calculator.meta_title,
+      description: dictionary.tax_regime_calculator.meta_description,
       images: [ogImageUrl],
     },
     alternates: {
@@ -190,7 +192,7 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
           <CardHeader>
             <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.how_we_calculate.title}</h2>
           </CardHeader>
-          <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.how_we_calculate.body.replace('{lang}', params.lang) }} />
+          <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.how_we_calculate.body.replace(/{lang}/g, params.lang) }} />
         </Card>
 
         <Card className="mt-8 shadow-lg">
