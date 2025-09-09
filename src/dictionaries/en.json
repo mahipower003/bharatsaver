@@ -839,10 +839,10 @@
     },
     "faq_title": "Frequently Asked Questions",
     "faqs": [
-      { "question": "What is the new tax regime?", "answer": "The new tax regime offers lower tax rates but disallows most common deductions like HRA, 80C, and home loan interest. It is now the default regime." },
+      { "question": "What is the new tax regime?", "answer": "The new tax regime offers lower tax rates but disallows most common deductions like HRA, 80C, and home loan interest. It is now the default regime. If your total deductible investments are below ~₹1.8L, the new regime usually saves tax." },
       { "question": "What is the old tax regime?", "answer": "The old tax regime has slightly higher tax rates but allows you to claim over 70 deductions and exemptions. You must specifically opt for it." },
       { "question": "Which tax regime is better for a ₹10 lakh salary?", "answer": "If your total deductions are over ₹2.5 lakh, the Old Regime is usually better. Otherwise, the New Regime often saves you more tax." },
-      { "question": "Can I claim HRA in the new tax regime?", "answer": "No, HRA exemption is only available under the old tax regime. Use the calculator to see the exact impact." },
+      { "question": "Can I claim HRA in the new tax regime?", "answer": "No, HRA exemption is only available under the old tax regime; include your HRA details in the calculator to see the difference." },
       { "question": "Is Standard Deduction available in the new regime?", "answer": "Yes, a standard deduction of ₹50,000 for salaried individuals is available under both the old and new tax regimes." },
       { "question": "What is tax rebate under section 87A for FY 2024-25?", "answer": "In the new regime, if your taxable income is up to ₹7 lakh, you pay zero tax due to the rebate. In the old regime, the rebate applies to income up to ₹5 lakh." }
     ],
