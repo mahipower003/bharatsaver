@@ -167,6 +167,7 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
           </CardHeader>
           <CardContent>
             <p className="mb-4 text-muted-foreground">{dictionary.tax_regime_calculator.comparison_table.description}</p>
+            <div dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.comparison_table.snippet_table_html }} />
             <Table>
                 <TableHeader>
                     <TableRow>
@@ -193,6 +194,13 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
             <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.how_we_calculate.title}</h2>
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.how_we_calculate.body.replace(/{lang}/g, params.lang) }} />
+        </Card>
+        
+        <Card className="mt-8 shadow-lg">
+          <CardHeader>
+            <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.checklist.title}</h2>
+          </CardHeader>
+          <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.checklist.body }} />
         </Card>
 
         <Card className="mt-8 shadow-lg">
@@ -274,3 +282,5 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
     </div>
   );
 }
+
+    
