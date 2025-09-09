@@ -188,19 +188,19 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
             </Table>
           </CardContent>
         </Card>
-
-        <Card className="mt-8 shadow-lg">
-          <CardHeader>
-            <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.how_we_calculate.title}</h2>
-          </CardHeader>
-          <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.how_we_calculate.body.replace(/{lang}/g, params.lang) }} />
-        </Card>
         
         <Card className="mt-8 shadow-lg">
           <CardHeader>
             <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.checklist.title}</h2>
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.checklist.body }} />
+        </Card>
+        
+        <Card className="mt-8 shadow-lg">
+          <CardHeader>
+            <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.how_we_calculate.title}</h2>
+          </CardHeader>
+          <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.how_we_calculate.body.replace(/{lang}/g, params.lang) }} />
         </Card>
 
         <Card className="mt-8 shadow-lg">
@@ -215,6 +215,10 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
             <div className="bg-muted/50 p-4 rounded-lg">
               <h3 className="font-semibold text-lg">{dictionary.tax_regime_calculator.common_scenarios.scenario2.title}</h3>
               <div className="prose dark:prose-invert max-w-none mt-2" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.common_scenarios.scenario2.body }} />
+            </div>
+             <div className="bg-muted/50 p-4 rounded-lg">
+              <h3 className="font-semibold text-lg">{dictionary.tax_regime_calculator.common_scenarios.scenario3.title}</h3>
+              <div className="prose dark:prose-invert max-w-none mt-2" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.common_scenarios.scenario3.body }} />
             </div>
           </CardContent>
         </Card>
@@ -282,5 +286,3 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
     </div>
   );
 }
-
-    

@@ -754,7 +754,7 @@
         { "question": "Should a senior citizen choose FD or PPF?", "answer": "Many seniors use a mix — FDs for monthly income (banks give senior citizen rates) and PPF if they want a tax-free long-term corpus. The calculator helps quantify trade-offs." },
         { "question": "What happens if I miss a PPF deposit?", "answer": "Missing the minimum contribution makes the account inactive; revival requires payment for missed years plus a penalty per missed year. Check your bank/Post Office for exact revival process." },
         { "question": "Are PPF rates fixed forever?", "answer": "No — PPF rates are reviewed and notified by the government quarterly. The calculator allows you to edit the rate to model different scenarios." },
-        { "question": "Can NRIs use this calculator?", "answer": "Yes, NRIs can use this calculator. However, they should be aware that certain deductions and slab rates might differ. It's always best to consult with a tax professional." },
+        { "question": "Can NRIs open PPF accounts?", "answer": "NRIs cannot open new PPF accounts; existing accounts continue under specific conditions. Confirm current rules with the bank/Post Office and official guidelines." },
         { "question": "How can I use FD laddering with PPF?", "answer": "A common strategy: max out PPF for tax-free long-term growth, and ladder FDs with staggered maturities for liquidity. This balances safety, liquidity and tax efficiency." }
     ],
     "conclusion": {
@@ -821,38 +821,42 @@
     },
     "checklist": {
       "title": "How to Choose: A Quick Checklist",
-      "body": "<ul><li><strong>High Deductions:</strong> If your total deductions (80C, HRA, home loan interest) are significant (typically > ₹1.5-2 lakh), the <strong>Old Regime</strong> is often better.</li><li><strong>Low/No Deductions:</strong> If you don't have many deductions, the <strong>New Regime's</strong> lower slab rates are usually more beneficial.</li><li><strong>Simplicity:</strong> Prefer a simpler tax filing process without tracking multiple investments? The <strong>New Regime</strong> is easier.</li></ul>"
+      "body": "<ul><li><strong>High Deductions:</strong> If your total deductions (80C, HRA, home loan interest) are significant (typically > ₹2.5-3 lakh), the <strong>Old Regime</strong> is often better.</li><li><strong>Low/No Deductions:</strong> If you don't have many deductions, the <strong>New Regime's</strong> lower slab rates are usually more beneficial.</li><li><strong>Simplicity:</strong> Prefer a simpler tax filing process without tracking multiple investments? The <strong>New Regime</strong> is easier.</li></ul>"
     },
     "common_scenarios": {
-      "title": "Common Scenarios: Which Tax Regime is Better?",
+      "title": "Common Scenarios: Worked Examples",
       "scenario1": {
-        "title": "Scenario 1: Salaried with HRA & Full 80C Investments",
-        "body": "<strong>Example:</strong> A person with a ₹12 lakh salary, receiving ₹2 lakh in HRA, and investing ₹1.5 lakh in 80C. <br/>👉 In this case, the <strong>Old Regime is almost always better</strong> because the combined value of HRA and 80C deductions significantly lowers the taxable income, offsetting the benefit of lower slab rates in the new regime."
+        "title": "Scenario 1: ₹12 Lakh Salary with HRA & Full 80C",
+        "body": "<strong>Example:</strong> A person with a ₹12 lakh salary, basic of ₹6 lakh, receiving ₹2.4 lakh in HRA, paying ₹3 lakh rent in a metro city, and investing ₹1.5 lakh in 80C. <br/>👉 In this case, the <strong>Old Regime is better</strong>, saving over ₹30,000 in tax because the HRA and 80C deductions outweigh the lower rates of the new regime."
       },
       "scenario2": {
-        "title": "Scenario 2: Freelancer or No Major Deductions",
-        "body": "<strong>Example:</strong> A freelancer earning ₹15 lakh with minimal deductions (less than ₹1.5 lakh). <br/>👉 The <strong>New Regime is likely better</strong> here. Since they cannot claim major deductions like HRA or have limited 80C investments, the lower tax rates of the new regime result in a lower overall tax liability."
+        "title": "Scenario 2: ₹15 Lakh Salary with No Major Deductions",
+        "body": "<strong>Example:</strong> A freelancer earning ₹15 lakh with minimal deductions. <br/>👉 The <strong>New Regime is better</strong>, saving approximately ₹7,800. Since they cannot claim major deductions, the lower tax rates of the new regime result in a lower tax liability."
+      },
+       "scenario3": {
+        "title": "Scenario 3: ₹25 Lakh Salary with Home Loan",
+        "body": "<strong>Example:</strong> An individual earning ₹25 lakh with a home loan interest payment of ₹2 lakh and full 80C/80D deductions. <br/>👉 The <strong>Old Regime is significantly better</strong>, saving nearly ₹75,000 in tax. The ability to claim home loan interest and other deductions makes a huge difference at higher income levels."
       }
     },
     "faq_title": "Frequently Asked Questions",
     "faqs": [
-      { "question": "What is the new tax regime?", "answer": "The new tax regime offers lower income tax rates but disallows most common deductions like HRA or Section 80C. It is the default regime from FY 2023-24 onwards." },
-      { "question": "What is the old tax regime?", "answer": "The old tax regime has higher slab rates but allows taxpayers to claim over 70 deductions and exemptions, such as those under Section 80C, 80D, HRA, and for home loan interest." },
-      { "question": "Which is better: old vs new for ₹10 lakh salary?", "answer": "If your total deductions (80C, HRA, etc.) are over ₹2.5 lakh, the Old Regime is usually better. If not, the New Regime will likely save you more tax. Use the calculator for an exact comparison." },
-      { "question": "Does new regime allow HRA?", "answer": "No — HRA exemption is only claimable under the old tax regime. Include your HRA details in the calculator to see the exact impact." },
-      { "question": "Can I claim 80C under new regime?", "answer": "No, deductions under Section 80C for investments like PPF, EPF, or ELSS are not allowed in the new tax regime." },
-      { "question": "How is standard deduction treated in new regime?", "answer": "A standard deduction of ₹50,000 is available for salaried individuals and pensioners under both the old and new tax regimes." },
-      { "question": "Is rebate under section 87A available in 2025?", "answer": "Yes. In the new regime, if your taxable income is up to ₹7 lakh, you pay zero tax due to the rebate. In the old regime, the rebate is available for taxable income up to ₹5 lakh." },
-      { "question": "How to calculate tax on rental income?", "answer": "Rental income is added to your 'Income from Other Sources'. A standard deduction of 30% on rental income is allowed under the old regime, but not the new one. Enter your net rental income in the 'Other Income' field." },
-      { "question": "Will NRIs use the same calculator?", "answer": "Yes, NRIs can use this calculator. However, they should be aware that certain deductions and slab rates might differ. It's always best to consult with a tax professional for specific advice." },
-      { "question": "How often are tax slab rates updated?", "answer": "Tax slab rates are typically updated annually during the Union Budget presentation by the Government of India. This calculator is updated for the latest Assessment Year (AY 2025-26). For official rates, always refer to the <a href='https://incometaxindia.gov.in/' target='_blank' rel='noopener noreferrer'>Income Tax Department website</a>." }
+      { "question": "What is the new tax regime?", "answer": "The new tax regime offers lower tax rates but disallows most common deductions. It's the default regime unless you opt out." },
+      { "question": "What is the old tax regime?", "answer": "The old tax regime has slightly higher rates but allows you to claim over 70 deductions like HRA, 80C, and home loan interest." },
+      { "question": "Which is better for a ₹10 lakh salary?", "answer": "If your total deductions exceed ₹2.5 lakh, the Old Regime is usually better. Otherwise, the New Regime may save you tax." },
+      { "question": "Can I claim HRA in the new regime?", "answer": "No, HRA exemption is only available under the old tax regime. Use the calculator to see the impact." },
+      { "question": "Can I claim 80C in the new regime?", "answer": "No, deductions under Section 80C (like PPF, EPF) are not allowed in the new tax regime." },
+      { "question": "Is Standard Deduction available in the new regime?", "answer": "Yes, a standard deduction of ₹50,000 is available for salaried individuals under both regimes." },
+      { "question": "Is rebate under section 87A available in 2025?", "answer": "Yes. In the new regime, if your taxable income is up to ₹7 lakh, you pay zero tax due to the rebate. In the old regime, the rebate is for income up to ₹5 lakh." },
+      { "question": "How do I calculate tax on rental income?", "answer": "Rental income is added to 'Income from Other Sources'. A standard deduction of 30% on rent is allowed under the old regime but not the new one. Enter net rental income in the calculator." },
+      { "question": "Is this calculator for NRIs?", "answer": "Yes, but NRIs should be aware that some deductions and slab rates might differ. Always consult a tax professional." },
+      { "question": "How often are tax slab rates updated?", "answer": "Tax slabs are updated annually during the Union Budget. This calculator is updated for AY 2025-26. For official rates, refer to the <a href='https://incometaxindia.gov.in/' target='_blank' rel='noopener noreferrer'>Income Tax Department website</a>." }
     ],
     "next_steps": {
       "title": "Next Steps",
-      "cta1_title": "File Your ITR",
-      "cta1_desc": "Use a trusted partner to file your Income Tax Return accurately and on time.",
-      "cta2_title": "Explore Tax-Saving Investments",
-      "cta2_desc": "Use our calculators for PPF, NPS, and ELSS to plan your 80C investments."
+      "cta1_title": "File Your ITR in 5 Mins",
+      "cta1_desc": "Use a trusted partner like ClearTax to file your Income Tax Return accurately.",
+      "cta2_title": "Plan 80C Investments",
+      "cta2_desc": "Start your 80C planning before March 31st — try our PPF & NPS calculators."
     },
     "conclusion": {
       "title": "Final Thoughts: Making the Smart Choice",
@@ -951,5 +955,3 @@
     "view_calculator": "View Calculator"
   }
 }
-
-    
