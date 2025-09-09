@@ -62,6 +62,23 @@ type CalculatorProps = {
   dictionary: Dictionary['tax_regime_calculator'];
 };
 
+const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      {...props}
+    >
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52s-.669-1.611-.916-2.207c-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+    </svg>
+);
+
 export function TaxRegimeCalculator({ dictionary }: CalculatorProps) {
   const router = useRouter();
   const pathname = usePathname();
@@ -214,6 +231,38 @@ export function TaxRegimeCalculator({ dictionary }: CalculatorProps) {
     
     setIsLoading(false);
   }
+
+  const handlePrint = () => window.print();
+
+  const handleShare = (platform: 'whatsapp' | 'twitter') => {
+    if (!result) return;
+    const url = window.location.href;
+    const text = `I just compared tax regimes with BharatSaver! The ${result.winner} saved me ${formatCurrency(result.savings)}. See which one is better for you:`;
+    const shareUrl = platform === 'twitter'
+      ? `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`
+      : `https://api.whatsapp.com/send?text=${encodeURIComponent(text + ' ' + url)}`;
+    window.open(shareUrl, '_blank');
+  };
+
+  const handleCSVExport = () => {
+    if (!result) return;
+    const headers = ["Regime", "Taxable Income", "Tax Payable", "Cess", "Total Tax", "Net Income"];
+    let csvContent = headers.join(',') + '\n';
+    
+    const oldRow = [result.oldRegime.regime, Math.round(result.oldRegime.grossTaxableIncome), Math.round(result.oldRegime.taxPayable), Math.round(result.oldRegime.cess), Math.round(result.oldRegime.totalTax), Math.round(result.oldRegime.netIncome)];
+    const newRow = [result.newRegime.regime, Math.round(result.newRegime.grossTaxableIncome), Math.round(result.newRegime.taxPayable), Math.round(result.newRegime.cess), Math.round(result.newRegime.totalTax), Math.round(result.newRegime.netIncome)];
+
+    csvContent += oldRow.join(',') + '\n';
+    csvContent += newRow.join(',') + '\n';
+    
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.setAttribute('download', 'tax_regime_comparison.csv');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   
   const formatCurrency = (value: number) => {
     return value.toLocaleString('en-IN', { style: 'currency', currency: 'INR', minimumFractionDigits: 0, maximumFractionDigits: 0 });
@@ -391,6 +440,13 @@ export function TaxRegimeCalculator({ dictionary }: CalculatorProps) {
                   <Bar dataKey="tax" fill="hsl(var(--primary))" radius={[0, 4, 4, 0]} barSize={40} />
                 </BarChart>
               </ResponsiveContainer>
+
+               <div className="flex flex-wrap items-center justify-center gap-4 mt-8">
+                  <Button variant="outline" size="sm" onClick={() => handleShare('whatsapp')}><WhatsAppIcon className="mr-2 h-4 w-4" /> WhatsApp</Button>
+                  <Button variant="outline" size="sm" onClick={() => handleShare('twitter')}><Twitter className="mr-2 h-4 w-4" /> Twitter</Button>
+                  <Button variant="outline" size="sm" onClick={handlePrint}><Printer className="mr-2 h-4 w-4" /> Print</Button>
+                  <Button variant="outline" size="sm" onClick={handleCSVExport}><Download className="mr-2 h-4 w-4" /> {dictionary.next_steps.cta1_title}</Button>
+              </div>
           </CardContent>
         </Card>
       )}
