@@ -319,7 +319,7 @@
     },
     "investment_strategy": {
       "title": "सर्वश्रेष्ठ SSY निवेश रणनीति (व्यावहारिक सुझाव)",
-      "monthly_example": "<strong>मासिक-मोड उदाहरण (अनुमान):</strong><br/>मासिक जमा (PMT) = ₹12,500 (₹1,50,000/वर्ष)<br/>वार्षिक दर r = 8.2% → मासिक दर = r/12 ≈ 0.0068333333<br/>महीनों की संख्या (15 वर्ष) = 180<br/>वार्षिकी सूत्र <strong>FV ≈ PMT × [ ((1 + r/12)^n - 1) / (r/12) ]</strong> का उपयोग करके, 15 वर्षों के बाद मूल्य ≈ ₹50.21 लाख है। हमारा कैलकुलेटर फिर इसे वार्षिक रूप से परिपक्वता तक चक्रवृद्धि करता है, जिसके परिणामस्वरूप ≈ ₹71.8 लाख होता है। क्योंकि एसएसवाई आधिकारिक तौर पर वार्षिक रूप से चक्रवृद्धि होता है, यह एक अनुमान है—यदि आप मासिक जमा करते हैं तो ही ‘मासिक’ चुनें।",
+      "monthly_example": "<strong>मासिक-मोड उदाहरण (अनुमान):</strong><br/>मासिक जमा (PMT) = ₹12,500 (₹1,50,000/वर्ष)<br/>वार्षिक दर r = 8.2% → मासिक दर = r/12 ≈ 0.0068333333<br/>महीनों की संख्या (15 वर्ष) = 180<br/>वार्షिकी सूत्र <strong>FV ≈ PMT × [ ((1 + r/12)^n - 1) / (r/12) ]</strong> का उपयोग करके, 15 वर्षों के बाद मूल्य ≈ ₹50.21 लाख है। हमारा कैलकुलेटर फिर इसे वार्षिक रूप से परिपक्वता तक चक्रवृद्धि करता है, जिसके परिणामस्वरूप ≈ ₹71.8 लाख होता है। क्योंकि एसएसवाई आधिकारिक तौर पर वार्षिक रूप से चक्रवृद्धि होता है, यह एक अनुमान है—यदि आप मासिक जमा करते हैं तो ही ‘मासिक’ चुनें।",
       "points": [
         "<strong>महीने की 5 तारीख से पहले जमा करें</strong> — 5 तारीख से पहले जमा करने पर उस महीने के लिए ब्याज के लिए पात्र होते हैं।",
         "<strong>यदि संभव हो, तो वित्तीय वर्ष की शुरुआत में एकमुश्त जमा करें</strong> — अप्रैल की शुरुआत में पूरा ₹1.5 लाख जमा करने से वर्ष का ब्याज अधिकतम होता है।",
@@ -331,7 +331,7 @@
     "tax_benefits": {
         "title": "SSY के कर लाभ (EEE स्थिति)",
         "intro": "PPF की तरह, सुकन्या समृद्धि योजना (SSY) एक EEE (छूट-छूट-छूट) निवेश है।",
-        "body": "इसका मतलब है कि आपके योगदान (धारा 80C के तहत प्रति वर्ष ₹1.5 लाख तक), आपके द्वारा अर्जित ब्याज, और अंतिम परिपक्वता राशि सभी <strong>पूरी तरह से कर-मुक्त</strong> हैं। यह एक बालिका के भविष्य के लिए बचत करने के सबसे कर-कुशल तरीकों में से एक है। धारा 80C पर अधिक जानकारी के लिए, <a href='https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx' target='_blank' rel='noopener noreferrer' class='underline'>आयकर अधिनियम</a> देखें।"
+        "body": "इसका मतलब है कि आपके योगदान (धारा 80C के तहत प्रति वर्ष ₹1.5 लाख तक), आपके द्वारा अर्जित ब्याज, और अंतिम परिपक्वता राशि सभी <strong>पूरी तरह से कर-मुक्त</strong> हैं। यह एक बालिका के भविष्य के लिए बचत करने के सबसे कर-कुशल तरीकों में से एक है। धारा 80C पर अधिक जानकारी के लिए, <a href='https://incometaxindia.gov.in/Pages/acts/income-tax-act.aspx' target='_blank' rel='noopener noreferrer' class='underline'>आयकर अधिनियम</a> देखें।"
     },
     "rules": {
         "title": "SSY नियम: निकासी, पुनरुद्धार & नामांकन",
@@ -833,7 +833,7 @@
       },
       "scenario3": {
         "title": "उदाहरण 3: ₹7 लाख फ्रीलांसर आय (कोई HRA नहीं, छोटी कटौती)",
-        "body": "<strong>इनपुट:</strong> आय ₹7,00,000 | कोई HRA नहीं | 80C ₹50,000<br/><strong>पुरानी व्यवस्था कर:</strong> ₹23,400<br/><strong>नई व्यवस्था कर:</strong> ₹0 (87A छूट लागू होती है)<br/><strong>सिफारिश:</strong> नई व्यवस्था बेहतर है, खासकर ₹7 लाख तक की आय वाले व्यक्तियों के लिए छूट के कारण।"
+        "body": "<strong>इनपुट:</strong> आय ₹7,00,000 | कोई HRA नहीं | 80C ₹50,000<br/><strong>पुरानी व्यवस्था कर:</strong> ₹23,400<br/><strong>नई व्यवस्था कर:</strong> ₹0 (87A छूट लागू ہوتی है)<br/><strong>सिफारिश:</strong> नई व्यवस्था बेहतर है, खासकर ₹7 लाख तक की आय वाले व्यक्तियों के लिए छूट के कारण।"
       }
     },
     "faq_title": "अक्सर पूछे जाने वाले प्रश्न",
@@ -858,112 +858,150 @@
     }
   },
   "retirement_corpus_calculator": {
-    "meta_title": "Retirement Corpus Calculator 2025 — How Much to Save Monthly to Retire at 60",
-    "meta_description": "Use our free retirement corpus calculator (India) — includes inflation, life expectancy, existing savings and investment returns. 3 worked examples & downloadable CSV.",
-    "h1": "Retirement Corpus Calculator — How Much Money Do You Need to Retire in India (2025)",
-    "intro": "A retirement corpus is the total sum of money you need to support yourself after you stop working. Our calculator helps you move beyond a simple number to create a complete plan for a secure retirement.",
+    "meta_title": "सेवानिवृत्ति कोष कैलकुलेटर भारत 2025 | मुफ्त ऑनलाइन सेवानिवृత్తి योजना उपकरण",
+    "meta_description": "मुफ्त सेवानिवृत्ति कोष कैलकुलेटर भारत (2025)। आपको सेवानिवृत्त होने के लिए कितने पैसे चाहिए, आवश्यक एसआईपी की गणना करें, और आज एक तनाव-मुक्त सेवानिवृత్తి की योजना बनाएं।",
+    "og_description": "आराम से सेवानिवृत्त होने के लिए आवश्यक कॉर्पస్ और मासिक एसआईपी का अनुमान लगाएं। भारत-विशिष्ट, एनपीएस/पीपीएफ/ईपीएफ मार्गदर्शन शामिल है।",
+    "h1": "सेवानिवृत्ति कोष कैलकुलेटर — भारत में सेवानिवृत्त होने के लिए आपको कितने पैसे चाहिए (2025)",
+    "intro": "एक सेवानिवृత్తి कोष वह कुल राशि है जो आपको काम करना बंद करने के बाद खुद का समर्थन करने के लिए चाहिए। हमारा कैलकुलेटर आपको एक सुरक्षित सेवानिवृత్తి के लिए एक पूर्ण योजना बनाने के लिए एक साधारण संख्या से परे जाने में मदद करता है।",
     "tool_section": {
-      "h2": "Calculate your retirement corpus (free calculator)"
+      "h2": "अपने सेवानिवृत्ति कोष की गणना करें (मुफ्त ऑनलाइन उपकरण)"
     },
-    "title": "Retirement Corpus Calculator",
-    "form_description": "Plan your comfortable retirement by calculating the total corpus you need.",
-    "current_age_label": "Current Age",
-    "retirement_age_label": "Retirement Age",
-    "monthly_expenses_label": "Current Monthly Expenses (₹)",
-    "current_savings_label": "Current Retirement Savings (₹)",
-    "inflation_rate_label": "Expected Inflation Rate (% p.a.)",
-    "pre_retirement_returns_label": "Pre-Retirement Returns (% p.a.)",
-    "post_retirement_returns_label": "Post-Retirement Returns (% p.a.)",
-    "calculate_button": "Calculate Corpus",
-    "loading": "Calculating...",
-    "results_title": "Your Retirement Projection",
-    "required_corpus": "Required Corpus at Retirement",
-    "corpus_shortfall": "Corpus Shortfall",
-    "corpus_surplus": "Corpus Surplus",
-    "monthly_sip": "Required Monthly SIP",
-    "view_chart": "View Chart",
-    "view_table": "View Table",
-    "export_csv": "Export CSV",
-    "table_year": "Year",
-    "table_age": "Age",
-    "table_total_corpus": "Total Corpus",
-    "age_label": "Age",
-    "amount_in_lakhs": "Amount (in Lakhs)",
-    "assumptions": {
-      "title": "Assumptions We Use (Default)",
-      "body": "<ul><li><strong>Inflation:</strong> 6% p.a.</li><li><strong>Pre-retirement returns:</strong> 12% p.a.</li><li><strong>Post-retirement returns:</strong> 7% p.a.</li><li><strong>Deposits:</strong> monthly, made at the <strong>start</strong> of each month (annuity-due).</li><li><strong>Life expectancy:</strong> 85 years (adjustable).</li><li>Figures are nominal (not inflation-adjusted). This calculator is an estimator; consult a CFP for a personalised plan.</li></ul>"
-    },
+    "title": "सेवानिवृत्ति कोष कैलकुलेटर",
+    "form_description": "आपको आवश्यक कुल कॉर्पస్ की गणना करके अपनी आरामदायक सेवानिवृత్తి की योजना बनाएं।",
+    "current_age_label": "वर्तमान आयु",
+    "retirement_age_label": "सेवानिवृत्ति आयु",
+    "monthly_expenses_label": "वर्तमान मासिक व्यय (₹)",
+    "current_savings_label": "वर्तमान सेवानिवृత్తి बचत (₹)",
+    "inflation_rate_label": "अपेक्षित मुद्रास्फीति दर (% प्रति वर्ष)",
+    "pre_retirement_returns_label": "पूर्व-सेवानिवृత్తి रिटर्न (% प्रति वर्ष)",
+    "post_retirement_returns_label": "सेवानिवृత్తి के बाद रिटर्न (% प्रति वर्ष)",
+    "calculate_button": "कॉर्पస్ की गणना करें",
+    "loading": "गणना हो रही है...",
+    "results_title": "आपकी सेवानिवृత్తి प्रक्षेपण",
+    "required_corpus": "सेवानिवृత్తి पर आवश्यक कॉर्पస్",
+    "corpus_shortfall": "कॉर्पస్ की कमी",
+    "corpus_surplus": "कॉर्पస్ अधिशेष",
+    "monthly_sip": "आवश्यक मासिक एसआईपी",
+    "view_chart": "चार्ट देखें",
+    "view_table": "तालिका देखें",
+    "export_csv": "CSV निर्यात करें",
+    "table_year": "वर्ष",
+    "table_age": "आयु",
+    "table_total_corpus": "कुल कॉर्पస్",
+    "age_label": "आयु",
+    "amount_in_lakhs": "राशि (लाखों में)",
     "how_it_works": {
-      "h2": "How Our Retirement Corpus Calculator Works",
-      "body": "<p>We use standard financial formulas to give you an accurate projection. Here’s a simplified look at how we do it:</p><ul><li><strong>Future Value of Your Expenses:</strong> We first calculate how much your current monthly expenses will grow to by the time you retire, using the inflation rate you provide. The formula is: <code>Future Expense = Present Expense × (1 + Inflation Rate) ^ Years to Retirement</code>.</li><li><strong>Total Corpus You Need:</strong> Next, we calculate the total lump sum you'll need on the day you retire. This is the amount that, when invested, will generate enough income to cover your expenses for the rest of your life.</li><li><strong>Your Required Monthly SIP:</strong> Finally, we determine the monthly Systematic Investment Plan (SIP) needed to bridge the gap between your current savings and your target corpus. We calculate the future value of your existing savings and subtract it from the required corpus to find the shortfall.</li></ul>"
+      "h2": "आप सेवानिवृत्ति कोष की गणना कैसे करते हैं?",
+      "body": "हम आपको एक सटीक प्रक्षेपण देने के लिए मानक वित्तीय सूत्रों का उपयोग करते हैं। यहाँ हम इसे कैसे करते हैं, इसका एक सरलीकृत रूप है:<h3>सेवानिवृत्ति पर आपके व्यय का भविष्य मूल्य</h3><p>हम पहले गणना करते हैं कि आपके वर्तमान मासिक व्यय आपके द्वारा प्रदान की गई मुद्रास्फीति दर का उपयोग करके सेवानिवृत्त होने तक कितने बढ़ जाएंगे। सूत्र है: <code>भविष्य व्यय = वर्तमान व्यय × (1 + मुद्रास्फीति दर) ^ सेवानिवृत्ति के लिए वर्ष</code>।</p><h3>सेवानिवृत्ति पर आवश्यक कॉर्पస్ (वार्षिकी का पीवी)</h3><p>अगला, हम उस कुल एकमुश्त राशि की गणना करते हैं जिसकी आपको सेवानिवृत्त होने के दिन आवश्यकता होगी। यह वह राशि है जो, जब निवेश की जाती है, तो आपके शेष जीवन के लिए आपके खर्चों को कवर करने के लिए पर्याप्त आय उत्पन्न करेगी। हम इसके लिए एक वार्षिकी के वर्तमान मूल्य सूत्र का उपयोग करते हैं।</p><h3>आवश्यक एसआईपी गणना</h3><p>अंत में, हम आपकी वर्तमान बचत और आपके लक्ष्य कॉर्पస్ के बीच के अंतर को पाटने के लिए आवश्यक मासिक व्यवस्थित निवेश योजना (एसआईपी) का निर्धारण करते हैं। हम आपकी मौजूदा बचत के भविष्य के मूल्य की गणना करते हैं और इसे कमी को खोजने के लिए आवश्यक कॉर्पస్ से घटाते हैं। एसआईपी की गणना वार्षिकी देय सूत्र के भविष्य के मूल्य का उपयोग करके की जाती है, यह मानते हुए कि जमा प्रत्येक महीने की शुरुआत में किया जाता है।</p>"
     },
     "inputs_explained": {
-      "h2": "What Your Inputs Mean and Why They Matter",
-      "body": "<p>To get an accurate result, you need to provide some key details. Here’s what each one means for your plan:</p><ul><li><strong>Your Current & Retirement Age:</strong> This defines your investment horizon. The longer you have, the more the power of compounding can work for you, meaning you can start with smaller investments.</li><li><strong>Your Current Monthly Expenses:</strong> This is the foundation of your retirement plan. Be realistic about what you spend today to get an accurate picture of what you'll need tomorrow.</li><li><strong>Your Current Savings:</strong> This is your head start! Any money you've already saved in EPF, PPF, Mutual Funds, or other investments reduces the amount you'll need to save in the future.</li><li><strong>Inflation Rate (we default to 6%):</strong> This is the silent wealth killer. Inflation reduces the purchasing power of your money over time. A higher inflation rate means you'll need a much larger corpus.</li><li><strong>Pre-Retirement Returns (we default to 12%):</strong> This is the growth rate you expect on your investments while you're still working. A higher return means your money works harder for you, and you can reach your goal with smaller SIPs.</li><li><strong>Post-Retirement Returns (we default to 7%):</strong> This is the return you expect on your corpus after you retire. We assume a more conservative, capital-preserving portfolio here.</li></ul>"
+      "h2": "आपको कौन से इनपुट प्रदान करने होंगे और वे क्यों मायने रखते हैं",
+      "body": "<p>एक सटीक परिणाम प्राप्त करने के लिए, आपको कुछ प्रमुख विवरण प्रदान करने होंगे। यहाँ प्रत्येक का आपकी योजना के लिए क्या अर्थ है:</p><ul><li><strong>आपकी वर्तमान और सेवानिवृత్తి आयु:</strong> यह आपकी निवेश क्षितिज को परिभाषित करता है। आपके पास जितना अधिक समय होगा, चक्रवृद्धि की शक्ति आपके लिए उतना ही अधिक काम कर सकती है, जिसका अर्थ है कि आप छोटे निवेशों से शुरू कर सकते हैं।</li><li><strong>आपके वर्तमान मासिक व्यय:</strong> यह आपकी सेवानिवृత్తి योजना की नींव है। कल आपको क्या चाहिए होगा, इसकी एक सटीक तस्वीर पाने के लिए आज आप जो खर्च करते हैं, उसके बारे में यथार्थवादी बनें।</li><li><strong>आपकी वर्तमान बचत:</strong> यह आपकी शुरुआत है! ईपीएफ, पीपीएफ, म्यूचुअल फंड, या अन्य निवेशों में आपने जो भी पैसा पहले ही बचा लिया है, वह भविष्य में आपको बचाने की आवश्यकता वाली राशि को कम कर देता है।</li><li><strong>मुद्रास्फीति दर:</strong> यह मूक धन हत्यारा है। मुद्रास्फीति समय के साथ आपके पैसे की क्रय शक्ति को कम कर देती है। उच्च मुद्रास्फीति दर का मतलब है कि आपको बहुत बड़े कॉर्पస్ की आवश्यकता होगी।</li><li><strong>पूर्व-सेवानिवृత్తి रिटर्न:</strong> यह वह वृद्धि दर है जिसकी आप अपने काम करते समय अपने निवेशों पर उम्मीद करते हैं। उच्च रिटर्न का मतलब है कि आपका पैसा आपके लिए कठिन काम करता है, और आप छोटे एसआईपी के साथ अपने लक्ष्य तक पहुंच सकते हैं।</li><li><strong>सेवानिवृత్తి के बाद रिटर्न:</strong> यह वह रिटर्न है जिसकी आप सेवानिवृत्त होने के बाद अपने कॉर्पస్ पर उम्मीद करते हैं। हम यहां एक अधिक रूढ़िवादी, पूंजी-संरक्षण पोर्टफोलियो मानते हैं।</li></ul>"
     },
     "worked_examples": {
-      "h2": "Worked Examples — How Much Corpus Do You Need?",
+      "h2": "काम किए गए उदाहरण — आपको कितने कॉर्पస్ की आवश्यकता है?",
       "scenario1": {
-        "title": "Example 1: Middle-Income Salaried (₹10 LPA)",
-        "body": "<strong>Your Situation:</strong> You're 30, planning to retire at 60. Your monthly expenses are ₹50,000, and you've already saved ₹5 lakh.<br/><strong>Our Calculation:</strong> To maintain your lifestyle, you'll need a retirement corpus of approximately <strong>₹3.28 Crore</strong>. To reach this goal, you should start a monthly SIP of <strong>₹18,250</strong>."
+        "title": "उदाहरण 1: ₹50,000 मासिक व्यय के लिए (30 वर्ष की आयु में)",
+        "body": "<strong>आपकी स्थिति:</strong> आप 30 वर्ष के हैं, आज के पैसे में ₹50,000/माह की जीवन शैली का लक्ष्य रखते हैं। आपने पहले ही ₹5 लाख बचा लिए हैं।<br/><strong>हमारी गणना:</strong> अपनी जीवन शैली को बनाए रखने के लिए, आपको लगभग <strong>₹3.28 करोड़</strong> का सेवानिवृत्ति कोष चाहिए होगा। इस लक्ष्य तक पहुँचने के लिए, आपको <strong>₹18,250</strong> का मासिक एसआईपी शुरू करना चाहिए।"
       },
       "scenario2": {
-        "title": "Example 2: High-Income, Later Start (₹25 LPA)",
-        "body": "<strong>Your Situation:</strong> You're 35, aiming to retire at 60. Your monthly expenses are ₹1 lakh, and your current savings are ₹20 lakh.<br/><strong>Our Calculation:</strong> You'll need a corpus of around <strong>₹4.79 Crore</strong>. To achieve this, you should start a monthly SIP of <strong>₹37,842</strong>."
+        "title": "उदाहरण 2: ₹1 लाख मासिक व्यय के लिए (35 वर्ष की आयु में)",
+        "body": "<strong>आपकी स्थिति:</strong> आप 35 वर्ष के हैं, ₹1 लाख/माह की जीवन शैली का लक्ष्य रखते हैं। आपकी वर्तमान बचत ₹20 लाख है।<br/><strong>हमारी गणना:</strong> आपको लगभग <strong>₹4.79 करोड़</strong> का कोष चाहिए होगा। इसे प्राप्त करने के लिए, आपको <strong>₹37,842</strong> का मासिक एसआईपी शुरू करना चाहिए।"
       },
       "scenario3": {
-        "title": "Example 3: Freelancer, Early Start (₹7 LPA)",
-        "body": "<strong>Your Situation:</strong> You're a 25-year-old freelancer with monthly expenses of ₹30,000 and savings of ₹2 lakh.<br/><strong>Our Calculation:</strong> Your target corpus is <strong>₹3.04 Crore</strong>. Thanks to your long investment horizon, you only need to start a monthly SIP of <strong>₹7,725</strong> to get there."
+        "title": "उदाहरण 3: ₹30,000 मासिक व्यय के लिए (25 वर्ष की आयु में)",
+        "body": "<strong>आपकी स्थिति:</strong> आप एक 25 वर्षीय फ्रीलांसर हैं जिसके मासिक खर्च ₹30,000 और बचत ₹2 लाख है।<br/><strong>हमारी गणना:</strong> आपका लक्ष्य कोष <strong>₹3.04 करोड़</strong> है। आपके लंबे निवेश क्षितिज के लिए धन्यवाद, आपको वहां पहुंचने के लिए केवल <strong>₹7,725</strong> का मासिक एसआईपी शुरू करने की आवश्यकता है।"
       }
     },
     "sensitivity_analysis": {
-      "title": "Sensitivity Analysis: How Assumptions Change Your Goal",
-      "body": "Small changes in your assumptions can have a huge impact on your final corpus. This table shows how your required corpus and SIP change with slight adjustments to inflation and return rates."
+      "title": "संवेदनशीलता विश्लेषण: धारणाएँ आपके लक्ष्य को कैसे बदलती हैं",
+      "body": "आपकी धारणाओं में छोटे बदलाव आपके अंतिम कॉर्पస్ पर भारी प्रभाव डाल सकते हैं। यह तालिका दिखाती है कि मुद्रास्फीति और वापसी दरों में मामूली समायोजन के साथ आपका आवश्यक कॉर्पస్ और एसआईपी कैसे बदलता है।"
     },
     "accumulation_strategy": {
-      "h2": "How to Reach Your Retirement Corpus — Strategies & Vehicles",
-      "body": "<h3>Choosing Your Investment Path: SIP vs. Lump Sum</h3><ul><li><strong>Systematic Investment Plan (SIP):</strong> This is the most disciplined approach. You invest a fixed amount regularly (e.g., monthly), which helps you average out market highs and lows (rupee-cost averaging) and benefit from compounding. It's perfect for building wealth steadily over time.</li><li><strong>Step-up SIP:</strong> This is a supercharged version of a regular SIP. You increase your monthly investment amount annually, usually in line with your salary hike (e.g., by 10%). This simple step can dramatically accelerate your journey to your target corpus.</li></ul><h3>Your Asset Mix: How It Should Change with Age</h3><p>Your investment strategy shouldn't be static. As you get closer to retirement, you should gradually shift from high-risk, high-return assets to safer options to protect your capital.</p><ul><li><strong>In Your 20s & 30s:</strong> Be aggressive. A portfolio with 70-80% in equities (like mutual funds) can generate higher returns over the long term.</li><li><strong>In Your 40s:</strong> Start balancing your risk. A 60:40 split between equity and debt is a common strategy.</li><li><strong>In Your 50s and Beyond:</strong> It's time to preserve your capital. Shift your portfolio to be debt-heavy (70-80% in fixed-income instruments).</li></ul><h3>How PPF, NPS, & EPF Fit Into Your Plan</h3><p>These are the foundational pillars of retirement planning in India. Your current savings in these instruments give you a massive head start.</p><ul><li><strong>EPF (Employee Provident Fund):</strong> A mandatory saving for salaried individuals, forming a solid, risk-free base for your retirement fund.</li><li><strong>PPF (Public Provident Fund):</strong> A tax-free, government-backed scheme perfect for long-term, risk-averse savings.</li><li><strong>NPS (National Pension System):</strong> A market-linked product that offers a mix of equity and debt, providing tax benefits and the potential for higher returns.</li></ul>"
+      "h2": "अपने सेवानिवृत्ति कोष तक कैसे पहुंचें (निवेश रणनीतियाँ)",
+      "body": "<h3>अपना निवेश पथ चुनना: एसआईपी बनाम एकमुश्त</h3><p>एक <strong>व्यवस्थित निवेश योजना (एसआईपी)</strong> सबसे अनुशासित दृष्टिकोण है। आप नियमित रूप से (जैसे, मासिक) एक निश्चित राशि का निवेश करते हैं, जो आपको बाजार के उतार-चढ़ाव (रुपया-लागत औसत) को औसत करने और चक्रवृद्धि से लाभ उठाने में मदद करता है। यह समय के साथ लगातार धन बनाने के लिए एकदम सही है। और भी तेज वृद्धि के लिए, एक <strong>स्टेप-अप एसआईपी</strong> पर विचार करें, जहां आप सालाना अपनी मासिक निवेश राशि बढ़ाते हैं, आमतौर पर आपके वेतन वृद्धि के अनुरूप (जैसे, 10% द्वारा)।</p><h3>आयु के अनुसार संपत्ति आवंटन</h3><p>आपकी निवेश रणनीति स्थिर नहीं होनी चाहिए। जैसे-जैसे आप सेवानिवृत्ति के करीब आते हैं, आपको अपनी पूंजी की रक्षा के लिए उच्च-जोखिम, उच्च-प्रतिफल वाली संपत्तियों से सुरक्षित विकल्पों में धीरे-धीरे स्थानांतरित होना चाहिए।</p><ul><li><strong>आपके 20 और 30 के दशक में:</strong> आक्रामक बनें। इक्विटी (जैसे म्यूचुअल फंड) में 70-80% वाला एक पोर्टफोलियो लंबी अवधि में उच्च रिटर्न उत्पन्न कर सकता है।</li><li><strong>आपके 40 के दशक में:</strong> अपने जोखिम को संतुलित करना शुरू करें। इक्विटी और ऋण के बीच 60:40 का विभाजन एक आम रणनीति है।</li><li><strong>आपके 50 के दशक और उससे आगे:</strong> अपनी पूंजी को संरक्षित करने का समय है। अपने पोर्टफोलियो को ऋण-भारी (स्थिर-आय साधनों में 70-80%) में स्थानांतरित करें।</li></ul><h3>आपकी योजना में पीपीएफ, एनपीएस, और ईपीएफ कैसे फिट होते हैं</h3><p>ये भारत में सेवानिवृత్తి योजना के foundational स्तंभ हैं। इन उपकरणों में आपकी वर्तमान बचत आपको एक बड़ी शुरुआत देती है। अपने पोर्टफोलियो के ऋण/स्थिर-आय हिस्से को बनाने के लिए उनका उपयोग करें। वे कैसे बढ़ते हैं यह देखने के लिए हमारे <a href='/{lang}/ppf-calculator' class='underline'>पीपीएफ कैलकुलेटर</a> और <a href='/{lang}/nps-calculator' class='underline'>एनपीएस कैलकुलेटर</a> का अन्वेषण करें।</p>"
     },
     "sip_plans": {
-      "title": "Sample SIP Plans to Reach Your Goal",
-      "body": "This table shows the approximate monthly SIP required to reach common retirement corpus goals from different starting ages."
+      "title": "अपने लक्ष्य तक पहुँचने के लिए नमूना एसआईपी योजनाएँ",
+      "body": "यह तालिका विभिन्न शुरुआती युगों से सामान्य सेवानिवृత్తి कोष लक्ष्यों तक पहुँचने के लिए आवश्यक अनुमानित मासिक एसआईपी दिखाती है, यह मानते हुए कि 12% वार्षिक रिटर्न है।"
     },
     "deaccumulation_strategy": {
-      "h2": "The De-accumulation Phase: Making Your Corpus Last",
-      "body": "<p>Building your nest egg is only half the battle. The real challenge is making it last. Here’s how you can create a steady income stream after you retire.</p><h3>Systematic Withdrawal Plan (SWP)</h3><p>An SWP allows you to withdraw a fixed amount from your mutual fund investments every month, just like a pension. This is a tax-efficient method because the rest of your corpus remains invested and continues to grow, helping you beat inflation.</p><p><strong>Example:</strong> With a corpus of ₹2 Crore and a 7% annual return, a monthly SWP of ₹1 lakh could last for over 30 years.</p><h3>Annuity Plans</h3><p>An annuity is an insurance product where you pay a lump sum to an insurance company, and they guarantee you a fixed income for life. While this offers immense security, the returns (annuity rates) are often lower than what you might get from an SWP.</p>"
+      "h2": "डी-एक्यूमुलेशन चरण: अपने कॉर्पస్ को बनाए रखना",
+      "body": "<p>अपना घोंसला बनाना केवल आधी लड़ाई है। असली चुनौती इसे बनाए रखना है। सेवानिवृत्त होने के बाद आप एक स्थिर आय स्ट्रीम कैसे बना सकते हैं, यहाँ बताया गया है।</p><h3>व्यवस्थित निकासी योजना (एसडब्ल्यूपी)</h3><p>एक एसडब्ल्यूपी आपको हर महीने अपने म्यूचुअल फंड निवेशों से एक निश्चित राशि निकालने की अनुमति देता है, ठीक एक पेंशन की तरह। यह एक कर-कुशल तरीका है क्योंकि आपके कॉर्पస్ का बाकी हिस्सा निवेशित रहता है और बढ़ता रहता है, जो आपको मुद्रास्फीति को मात देने में मदद करता है।</p><p><strong>उदाहरण:</strong> ₹2 करोड़ के कॉर्पస్ और 7% वार्षिक रिटर्न के साथ, ₹1 लाख का मासिक एसडब्ल्यूपी 30 से अधिक वर्षों तक चल सकता है।</p><h3>वार्षिकी योजनाएँ</h3><p>एक वार्षिकी एक बीमा उत्पाद है जहाँ आप एक बीमा कंपनी को एकमुश्त राशि का भुगतान करते हैं, और वे आपको जीवन भर के लिए एक निश्चित आय की गारंटी देते हैं। जबकि यह अत्यधिक सुरक्षा प्रदान करता है, रिटर्न (वार्షिकी दरें) अक्सर आप एसडब्ल्यूपी से प्राप्त होने वाली राशि से कम होती हैं।</p>"
     },
     "tax_rules": {
-      "h2": "Taxes in Retirement (India-specific Rules)",
-      "body": "<ul><li><strong>Long-Term Capital Gains (LTCG):</strong> When you withdraw from equity mutual funds, gains over ₹1 lakh in a financial year are taxed at 10%. Planning your withdrawals strategically can help you minimize this tax.</li><li><strong>Pension Taxation:</strong> Your pension income, whether from an annuity or other sources, is generally added to your income and taxed as per your applicable slab rate.</li><li><strong>Special Rule for Returning NRIs (Section 89A):</strong> If you are an NRI returning to India, this rule allows you to defer paying tax on your foreign retirement accounts until you actually withdraw the money. This is a significant relief that helps avoid double taxation.</li></ul>"
+      "h2": "सेवानिवृत्ति में कर (भारत-विशिष्ट नियम)",
+      "body": "<ul><li><strong>दीर्घकालिक पूंजीगत लाभ (एलटीसीजी):</strong> जब आप इक्विटी म्यूचुअल फंड से निकालते हैं, तो एक वित्तीय वर्ष में ₹1 लाख से अधिक के लाभ पर 10% कर लगता है। अपनी निकासी को रणनीतिक रूप से योजना बनाने से आपको इस कर को कम करने में मदद मिल सकती है।</li><li><strong>पेंशन कराधान:</strong> आपकी पेंशन आय, चाहे वह वार्షिकी से हो या अन्य स्रोतों से, आम तौर पर आपकी आय में जोड़ी जाती है और आपके लागू स्लैब दर के अनुसार कर लगाया जाता है।</li><li><strong>लौट रहे एनआरआई के लिए विशेष नियम (धारा 89ए):</strong> यदि आप भारत लौट रहे एनआरआई हैं, तो यह नियम आपको वास्तव में पैसा निकालने तक अपने विदेशी सेवानिवृత్తి खातों पर कर का भुगतान स्थगित करने की अनुमति देता है। यह दोहरे कराधान से बचने में मदद करने वाला एक महत्वपूर्ण राहत है।</li></ul>"
     },
     "next_steps": {
-      "h2": "Tools & Resources",
-      "cta1_title": "Explore Investment Options",
-      "cta1_desc": "Use our PPF, NPS, and other calculators to model returns on specific investment vehicles.",
-      "cta2_title": "View All Financial Tools",
-      "cta2_desc": "Explore our full suite of calculators to plan for all your financial goals."
+      "h2": "उपकरण और संसाधन",
+      "cta1_title": "निवेश विकल्प खोजें",
+      "cta1_desc": "विशिष्ट निवेश वाहनों पर रिटर्न को मॉडल करने के लिए हमारे पीपीएफ, एनपीएस, और अन्य कैलकुलेटर का उपयोग करें।",
+      "cta2_title": "सभी वित्तीय उपकरण देखें",
+      "cta2_desc": "अपने सभी वित्तीय लक्ष्यों की योजना बनाने के लिए हमारे कैलकुलेटर के पूरे सूट का अन्वेषण करें।"
     },
     "conclusion": {
-      "title": "Conclusion: Your Path to a Secure Retirement",
-      "body": "Retirement planning isn't just about hitting a number; it's about building a sustainable financial future you can count on. By using this comprehensive calculator and understanding the key variables that drive your corpus, you can create a realistic and actionable plan. Remember, the key is to start early, invest consistently, and review your plan annually. That's the surest way to a comfortable and stress-free retirement."
+      "title": "निष्कर्ष: एक सुरक्षित सेवानिवृత్తి के लिए आपका मार्ग",
+      "body": "सेवानिवृత్తి योजना केवल एक संख्या को हिट करने के बारे में नहीं है; यह एक स्थायी वित्तीय भविष्य बनाने के बारे में है जिस पर आप भरोसा कर सकते हैं। इस व्यापक कैलकुलेटर का उपयोग करके और आपके कॉर्पస్ को चलाने वाले प्रमुख चरों को समझकर, आप एक यथार्थवादी और कार्रवाई योग्य योजना बना सकते हैं। याद रखें, कुंजी जल्दी शुरू करना, लगातार निवेश करना, और सालाना अपनी योजना की समीक्षा करना है। यह एक आरामदायक और तनाव-मुक्त सेवानिवृత్తి का सबसे पक्का तरीका है।"
     },
     "disclaimer": {
-      "title": "Disclaimer",
-      "body": "The figures generated are hypothetical and for illustrative purposes only. The accuracy of the output depends on your inputs. Please consult a qualified financial professional for personalized advice."
+      "title": "अस्वीकरण",
+      "body": "उत्पन्न आंकड़े काल्पनिक हैं और केवल उदाहरणात्मक उद्देश्यों के लिए हैं। आउटपुट की सटीकता आपके इनपुट पर निर्भर करती है। व्यक्तिगत सलाह के लिए कृपया एक योग्य वित्तीय पेशेवर से परामर्श करें।"
     },
-    "faq_title": "Frequently Asked Questions about Retirement Planning",
-    "faq_content": "<h4>What is a retirement corpus?</h4><p>A retirement corpus is the total sum of money and assets an individual accumulates to support their financial needs during their non-working years. It's your financial nest egg for retirement.</p><h4>How much corpus do I need to retire at 60?</h4><p>This is highly personal, but a common rule is the 25x/30x rule: your corpus should be 25 to 30 times your current annual expenses. Use our calculator for a precise figure based on your lifestyle.</p><h4>How do you calculate retirement corpus?</h4><p>The core calculation uses the present value formula, factoring in your future annual expenses, inflation, life expectancy, and expected returns on investment. Our calculator does this complex math for you.</p><h4>What inflation rate should I assume for retirement planning?</h4><p>We use 6% by default as a long-term average for India, but this is a critical assumption. For a more conservative plan, consider a higher rate, especially for healthcare costs.</p><h4>How much should a 30-year-old save per month for retirement?</h4><p>This depends entirely on their desired retirement lifestyle. A 30-year-old aiming for a corpus of ₹2 crore by age 60 might need to save ₹15,000 - ₹20,000 per month via SIPs, assuming a 12% return.</p><h4>Can I include EPF/PPF/NPS in the retirement corpus?</h4><p>Absolutely. Your existing savings in EPF, PPF, NPS, mutual funds, and other assets should all be included in the 'Current Savings' input of the calculator.</p>",
+    "faq_title": "सेवानिवृత్తి योजना के बारे में अक्सर पूछे जाने वाले प्रश्न",
     "faqs": [
-        { "question": "What is retirement corpus?", "answer": "A retirement corpus is the total sum of money and assets an individual accumulates to support their financial needs during their non-working years. It's your financial nest egg for retirement." },
-        { "question": "How much corpus do I need to retire at 60?", "answer": "This is highly personal, but a common rule is the 25x/30x rule: your corpus should be 25 to 30 times your current annual expenses. Use our calculator for a precise figure based on your lifestyle." },
-        { "question": "How do you calculate retirement corpus?", "answer": "The core calculation uses the present value formula, factoring in your future annual expenses, inflation, life expectancy, and expected returns on investment. Our calculator does this complex math for you." },
-        { "question": "What inflation rate should I assume for retirement planning?", "answer": "We use 6% by default as a long-term average for India, but this is a critical assumption. For a more conservative plan, consider a higher rate, especially for healthcare costs." },
-        { "question": "How much should a 30-year-old save per month for retirement?", "answer": "This depends entirely on their desired retirement lifestyle. A 30-year-old aiming for a corpus of ₹2 crore by age 60 might need to save ₹15,000 - ₹20,000 per month via SIPs, assuming a 12% return." },
-        { "question": "Can I include EPF/PPF/NPS in the retirement corpus?", "answer": "Absolutely. Your existing savings in EPF, PPF, NPS, mutual funds, and other assets should all be included in the 'Current Savings' input of the calculator." }
+      {
+        "question": "आप सेवानिवृत्ति कोष की गणना कैसे करते हैं?",
+        "answer": "हम मुद्रास्फीति का उपयोग करके आपके भविष्य के मासिक खर्चों का अनुमान लगाते हैं, सेवानिवृत्ति पर आपको आवश्यक वार्षिकी के वर्तमान मूल्य (पीवी) की गणना करते हैं, और कमी को खोजने के लिए मौजूदा बचत के भविष्य के मूल्य को घटाते हैं।"
+      },
+      {
+        "question": "भारतीय सेवानिवृత్తి योजना के लिए मुझे किस मुद्रास्फीति दर का उपयोग करना चाहिए?",
+        "answer": "कई योजनाकार भारत के लिए 5-7% की दीर्घकालिक डिफ़ॉल्ट का उपयोग करते हैं; 6% आम है। रूढ़िवादी स्वास्थ्य सेवा या लंबी क्षितिज धारणाओं के लिए उच्च दरों का उपयोग करें।"
+      },
+      {
+        "question": "क्या मैं अपने सेवानिवृत्ति कोष में ईपीएफ, पीपीएफ और एनपीएस को शामिल कर सकता हूँ?",
+        "answer": "हाँ — अतिरिक्त एसआईपी को कम करने के लिए अपनी वर्तमान बचत इनपुट में सभी तरल और पेंशन संपत्तियों (ईपीएफ, पीपीएफ, एनपीएस, म्यूचुअल फंड, बैंक एफडी) को शामिल करें।"
+      },
+      {
+        "question": "एक 30 वर्षीय को आराम से सेवानिवृत्त होने के लिए मासिक कितना बचत करना चाहिए?",
+        "answer": "यह लक्ष्य कॉर्पస్ और धारणाओं पर निर्भर करता है। एक मोटे गाइड के रूप में, ₹15,000–₹25,000/माह की बचत 10-12% रिटर्न पर 60 तक बहु-करोड़ कॉर्पస్ बना सकती है। सटीक संख्याओं के लिए कैलकुलेटर का उपयोग करें।"
+      },
+      {
+        "question": "क्या मुझे अपने सेवानिवृత్తి लक्ष्य तक पहुँचने کے लिए एसआईपी या एकमुश्त निवेश करना चाहिए?",
+        "answer": "अनुशासित निवेश और रुपया-लागत औसत के लिए एसआईपी की सिफारिश की जाती है; एकमुश्त लंबी तेजी के बाजारों में बेहतर प्रदर्शन कर सकता है लेकिन इसमें उच्च समय जोखिम होता है। एक मिश्रित दृष्टिकोण कई लोगों के लिए काम करता है।"
+      },
+      {
+        "question": "सेवानिवृత్తి के दौरान भारत में एक सुरक्षित निकासी दर क्या है?",
+        "answer": "कोई एक-आकार-फिट-सभी नहीं है; कई सलाहकार 3-4% प्रारंभिक निकासी नियम (मुद्रास्फीति کے लिए समायोजित) का उपयोग करते हैं। यदि दीर्घायु या स्वास्थ्य सेवा लागत अनिश्चित हैं तो रूढ़िवादी निकासी दरों पर विचार करें।"
+      },
+      {
+        "question": "स्वास्थ्य सेवा लागत सेवानिवृत्ति कोष को कैसे प्रभावित करती है?",
+        "answer": "स्वास्थ्य सेवा मुद्रास्फीति अक्सर सामान्य मुद्रास्फीति से अधिक होती है। अपने कॉर्पస్ को कम आंकने سے بچने کے लिए चिकित्सा लागतों के लिए एक समर्पित स्वास्थ्य सेवा बफर जोड़ें या उच्च मुद्रास्फीति का मॉडल बनाएं।"
+      },
+      {
+        "question": "मेरी सेवानिवृత్తి निकासी पर कर कैसे প্রভাব डालेंगे?",
+        "answer": "कर उपचार साधन और निकासी के प्रकार کے अनुसार भिन्न होता है। ईपीएफ/पीपीएफ के विशिष्ट नियम हैं; म्यूचुअल फंड निकासी पर सीमा से ऊपर एलटीसीजी कर लग सकता ہے। कॉर्पస్ को संरक्षित करने کے لیے निकासी को कर-कुशल तरीके से योजना बनाएं।"
+      },
+      {
+        "question": "मेरा सेवानिवृत्ति कोष कब तक चलना चाहिए?",
+        "answer": "आम तौर पर योजनाकार 85-90 वर्ष की जीवन प्रत्याशा मानते हैं। यदि पारिवारिक दीर्घायु अधिक है या आप जल्दी सेवानिवृत्त होते ہیں तो रूढ़िवादी दीर्घायु धारणाओं का उपयोग करें।"
+      },
+      {
+        "question": "क्या कैलकुलेटर सेवानिवृत्ति के बाद के रिटर्न کا حساب لگاتا ہے?",
+        "answer": "हाँ — आप एक कम, रूढ़िवादी सेवानिवृत्ति के बाद की वापसी (जैसे, 6–8%) निर्धारित कर सकते ہیں ताकि यह मॉडल किया जा सके कि कॉर्पస్ कैसे निवेश किया जाएगा और निकासी को बनाए रखेगा।"
+      },
+      {
+        "question": "क्या मैं इस कैलकुलेटर के साथ जल्दी सेवानिवृत्ति (60 से पहले) की योजना बना सकता हूँ?",
+        "answer": "हाँ — अपनी वांछित सेवानिवृత్తి आयु को पहले निर्धारित करें और निवेश क्षितिज اور एसआईपी کو तदनुसार बढ़ाएं। लंबी सेवानिवृత్తి کے बाद के वर्षों اور उच्च स्वास्थ्य सेवा लागतों को ध्यान में रखें।"
+      },
+      {
+        "question": "एक लक्ष्य कॉर्पస్ کا अनुमान लगाने का सबसे सरल नियम क्या ہے?",
+        "answer": "एक आम नियम आपके वर्तमान वार्षिक व्यय کا 25× है (4% वास्तविक निकासी के लिए), लेकिन मुद्रास्फीति, रिटर्न, اور मौजूदा बचत के साथ इसे परिष्कृत करने के लिए कैलकुलेटर کا उपयोग करें।"
+      }
     ],
     "methodology": {
-      "h2": "Methodology & Update Log",
-      "body": "This calculator uses standard financial formulas for future value (FV) and present value (PV) of annuities to project your retirement corpus and required SIP. All figures are illustrative. Last content update: September 2025. Financial formulas verified against established industry standards."
+      "h2": "पद्धति और अद्यतन लॉग",
+      "body": "यह कैलकुलेटर आपके सेवानिवृत्ति कोष और आवश्यक एसआईपी का अनुमान लगाने के लिए वार्षिकी के भविष्य के मूल्य (एफवी) और वर्तमान मूल्य (पीवी) के लिए मानक वित्तीय सूत्रों का उपयोग करता है। सभी आंकड़े उदाहरणात्मक हैं। अंतिम सामग्री अद्यतन: सितंबर 2025। स्थापित उद्योग मानकों के विरुद्ध वित्तीय सूत्रों का सत्यापन किया गया।"
     }
   },
   "loan_optimization_calculator": {
