@@ -764,7 +764,7 @@
   },
   "tax_regime_calculator": {
     "meta_title": "Tax Regime Calculator 2025 — Old vs New Regime Compare (HRA, 80C, 80D)",
-    "meta_description": "Enter your salary and deductions to instantly compare tax under the old vs new regime. Updated for FY 2025-26 — includes HRA, 80C, 80D, and worked examples. Free downloadable summary & ITR filing options.",
+    "meta_description": "Use our free tax regime calculator for FY 2024-25 to instantly compare tax under the old vs new regime. Includes HRA, 80C, 80D, home loan, and worked examples for ₹6L, ₹10L, ₹15L salaries. Download results and get filing options.",
     "h1": "Tax Regime Calculator 2025 — Compare Old vs New Tax Regime (India)",
     "description": "Enter your salary and deductions to instantly compare tax under the old vs new regime. Updated for FY 2025-26 — includes HRA, 80C, 80D, and worked examples.",
     "title": "Tax Regime Calculator",
@@ -839,8 +839,8 @@
     },
     "faq_title": "Frequently Asked Questions",
     "faqs": [
-      { "question": "What is the new tax regime?", "answer": "The new tax regime offers lower tax rates but disallows most common deductions like HRA, 80C, and home loan interest. It is now the default regime. If your total deductible investments are below ~₹1.8L, the new regime usually saves tax." },
-      { "question": "What is the old tax regime?", "answer": "The old tax regime has slightly higher tax rates but allows you to claim over 70 deductions and exemptions. You must specifically opt for it." },
+      { "question": "Is the new tax regime better?", "answer": "If your total deductible investments/exemptions are below ~₹1.2–1.8L per year (depends on income), the new regime usually saves tax; otherwise old regime often wins." },
+      { "question": "Does HRA work in new regime?", "answer": "No — HRA exemption is only under the old regime; include your HRA details in the calculator to see the difference." },
       { "question": "Which tax regime is better for a ₹10 lakh salary?", "answer": "If your total deductions are over ₹2.5 lakh, the Old Regime is usually better. Otherwise, the New Regime often saves you more tax." },
       { "question": "Can I claim HRA in the new tax regime?", "answer": "No, HRA exemption is only available under the old tax regime; include your HRA details in the calculator to see the difference." },
       { "question": "Is Standard Deduction available in the new regime?", "answer": "Yes, a standard deduction of ₹50,000 for salaried individuals is available under both the old and new tax regimes." },
@@ -859,9 +859,75 @@
     }
   },
   "retirement_corpus_calculator": {
-    "meta_title": "Retirement Corpus Calculator for India (2025) | BharatSaver",
-    "meta_description": "Plan for your retirement by calculating the total corpus required for your post-retirement life based on your financial goals. Use our free 2025 retirement calculator.",
-    "h1": "Retirement Corpus Calculator"
+    "meta_title": "Retirement Corpus Calculator 2025 — How Much to Save Monthly to Retire at 60",
+    "meta_description": "Use our free retirement corpus calculator (India) — includes inflation, life expectancy, existing savings and investment returns. 3 worked examples & downloadable CSV.",
+    "h1": "Retirement Corpus Calculator — How Much Money Do You Need to Retire in India (2025)",
+    "faqs": [
+        {
+            "question": "What is retirement corpus?",
+            "answer": "A retirement corpus is the total sum of money and assets an individual accumulates to support their financial needs during their non-working years. It's your financial nest egg for retirement."
+        },
+        {
+            "question": "How much corpus do I need to retire at 60?",
+            "answer": "This is highly personal, but a common rule is the 25x/30x rule: your corpus should be 25 to 30 times your current annual expenses. Use our calculator for a precise figure based on your lifestyle."
+        },
+        {
+            "question": "How do you calculate retirement corpus?",
+            "answer": "The core calculation uses the present value formula, factoring in your future annual expenses, inflation, life expectancy, and expected returns on investment. Our calculator does this complex math for you."
+        },
+        {
+            "question": "What inflation rate should I assume for retirement planning?",
+            "answer": "We use 6% by default as a long-term average for India, but this is a critical assumption. For a more conservative plan, consider a higher rate, especially for healthcare costs."
+        },
+        {
+            "question": "What is the difference between pre-retirement and post-retirement return?",
+            "answer": "Pre-retirement (accumulation phase) returns are typically higher as you can take more risk with equities. Post-retirement (withdrawal phase) returns are lower as your portfolio shifts to safer, fixed-income assets to preserve capital."
+        },
+        {
+            "question": "How much should a 30-year-old save per month for retirement?",
+            "answer": "This depends entirely on their desired retirement lifestyle. A 30-year-old aiming for a corpus of ₹2 crore by age 60 might need to save ₹15,000 - ₹20,000 per month via SIPs, assuming a 12% return."
+        },
+        {
+            "question": "Can I include EPF/PPF/NPS in the retirement corpus?",
+            "answer": "Absolutely. Your existing savings in EPF, PPF, NPS, mutual funds, and other assets should all be included in the 'Current Savings' input of the calculator."
+        },
+        {
+            "question": "How long will my retirement corpus last?",
+            "answer": "This depends on your withdrawal rate. The 4% rule suggests your corpus can last for 30 years or more if you withdraw only 4% of the initial amount in the first year, adjusted for inflation annually."
+        },
+        {
+            "question": "Does the calculator account for taxes and healthcare costs?",
+            "answer": "The calculator requires you to input post-tax investment returns. Healthcare costs should be factored into your 'monthly expenses' input, increasing it to account for rising medical inflation."
+        },
+        {
+            "question": "What if my income rises — how to update the plan?",
+            "answer": "You should re-run the retirement calculator annually or after any significant life event (like a salary hike or marriage). Increasing your SIP or monthly savings contributions will help you reach your goal faster."
+        },
+        {
+            "question": "How to plan retirement for early retirement (age 50)?",
+            "answer": "For early retirement, you need a larger corpus because your money needs to last longer, and you have fewer years to save. You must plan for a higher savings rate and potentially more aggressive investments."
+        },
+        {
+            "question": "Can a corpus be converted into monthly pension?",
+            "answer": "Yes. This is typically done through a Systematic Withdrawal Plan (SWP) from mutual funds or by purchasing an annuity plan from an insurance company, which provides a guaranteed income for life."
+        },
+        {
+            "question": "Should I assume conservative returns or aggressive returns?",
+            "answer": "This depends on your risk appetite. A balanced approach is to assume a 10-12% pre-retirement return (equity-heavy portfolio) and a 6-7% post-retirement return (debt-heavy portfolio)."
+        },
+        {
+            "question": "How frequently should I re-run the retirement calculator?",
+            "answer": "It is advisable to review your retirement plan and re-run the calculations at least once a year to ensure you are on track with your financial goals."
+        },
+        {
+            "question": "Can NRIs use this calculator?",
+            "answer": "Yes, NRIs can use this calculator to plan for their retirement in India. They should be mindful of specific tax implications, such as those covered under Section 89A for foreign retirement accounts."
+        },
+        {
+            "question": "Why is life expectancy important in retirement planning?",
+            "answer": "Life expectancy determines how many years your retirement corpus needs to support you. A longer life expectancy requires a larger corpus to avoid outliving your savings."
+        }
+    ]
   },
   "loan_optimization_calculator": {
     "meta_title": "Loan Optimizer & EMI Calculator (Prepayment) | BharatSaver",
