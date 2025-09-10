@@ -887,9 +887,13 @@
     "table_total_corpus": "Total Corpus",
     "age_label": "Age",
     "amount_in_lakhs": "Amount (in Lakhs)",
+    "assumptions": {
+      "title": "Assumptions we use (default)",
+      "body": "<ul><li>Inflation: 6% p.a. | Pre-retirement returns: 12% p.a. | Post-retirement returns: 7% p.a.</li><li>Deposits: monthly, made at the <strong>start</strong> of each month (annuity-due).</li><li>Life expectancy: 85 years (adjustable).</li><li>Figures are nominal (not inflation-adjusted). This calculator is an estimator; consult a CFP for a personalised plan.</li></ul>"
+    },
     "how_it_works": {
-        "title": "How Our Retirement Corpus Calculator Works",
-        "body": "<p>Our calculator uses established financial formulas to project your future needs and the savings required to meet them. Here’s a breakdown:</p><ul><li><strong>Future Value of Expenses:</strong> We first calculate the future value of your current monthly expenses at the time of retirement using the formula: <code>Future Value = Present Value * (1 + inflation rate) ^ years to retire</code>. This shows how much you'll need per month in the future to maintain your current lifestyle.</li><li><strong>Required Corpus (PV of Annuity):</strong> We then calculate the total corpus needed at retirement. This is the present value of all your future post-retirement expenses, calculated using the formula for the present value of a growing annuity.</li><li><strong>SIP Calculation:</strong> Finally, we determine the required monthly Systematic Investment Plan (SIP) needed to bridge the gap between your future savings and your required corpus. This is calculated using the future value of an annuity formula.</li></ul>"
+        "title": "How We Compute This",
+        "body": "<ul><li><strong>Future Value of Expenses:</strong> <code>FV = PV * (1 + i)^n</code> where PV is current monthly expense, i is inflation, and n is years to retirement.</li><li><strong>Required Corpus:</strong> Calculated using the Present Value of an annuity formula based on future annual expenses, post-retirement returns, inflation, and retirement duration.</li><li><strong>Required SIP:</strong> Calculated using the Future Value of an annuity formula to determine the monthly investment needed to bridge the corpus shortfall.</li></ul>"
     },
     "inputs_explained": {
         "title": "What Inputs You Must Provide & Why They Matter",
@@ -899,15 +903,15 @@
         "title": "Worked Examples — Quick Answers",
         "scenario1": {
             "title": "Example 1 — Middle-income salaried (₹10L)",
-            "body": "<strong>Inputs:</strong> Age 30, retires at 60, ₹50k monthly expenses, ₹5L current savings, 6% inflation, 12% pre-retirement return, 7% post-retirement return.<br/><strong>Result:</strong> Required Corpus: <strong>₹3.28 Crore</strong> | Required Monthly SIP: <strong>₹18,250</strong>"
+            "body": "<strong>Inputs:</strong> Age 30, retires at 60, ₹50k monthly expenses, ₹5L current savings, 6% inflation, 12% pre-retirement return, 7% post-retirement return.<br/><strong>Result:</strong> Required Corpus: <strong>₹1.74 Crore</strong> | Required Monthly SIP: <strong>₹16,634</strong>"
         },
         "scenario2": {
             "title": "Example 2 — High-income salaried (₹25L)",
-            "body": "<strong>Inputs:</strong> Age 35, retires at 60, ₹1L monthly expenses, ₹20L current savings, 6% inflation, 12% pre-retirement return, 7% post-retirement return.<br/><strong>Result:</strong> Required Corpus: <strong>₹4.8 Crore</strong> | Required Monthly SIP: <strong>₹35,500</strong>"
+            "body": "<strong>Inputs:</strong> Age 35, retires at 60, ₹1L monthly expenses, ₹20L current savings, 6% inflation, 12% pre-retirement return, 7% post-retirement return.<br/><strong>Result:</strong> Required Corpus: <strong>₹2.54 Crore</strong> | Required Monthly SIP: <strong>₹29,883</strong>"
         },
         "scenario3": {
             "title": "Example 3 — Freelancer, early start (₹7L)",
-            "body": "<strong>Inputs:</strong> Age 25, retires at 60, ₹30k monthly expenses, ₹2L current savings, 6% inflation, 12% pre-retirement return, 7% post-retirement return.<br/><strong>Result:</strong> Required Corpus: <strong>₹3.05 Crore</strong> | Required Monthly SIP: <strong>₹7,500</strong>"
+            "body": "<strong>Inputs:</strong> Age 25, retires at 60, ₹30k monthly expenses, ₹2L current savings, 6% inflation, 12% pre-retirement return, 7% post-retirement return.<br/><strong>Result:</strong> Required Corpus: <strong>₹1.61 Crore</strong> | Required Monthly SIP: <strong>₹5,583</strong>"
         }
     },
     "accumulation_strategy": {
@@ -938,12 +942,6 @@
         "body": "The figures generated are hypothetical and for illustrative purposes only. The accuracy of the output depends on your inputs. Please consult a qualified financial professional for personalized advice."
     },
     "faqs": [
-        { "question": "What is the ideal amount to save for my future?", "answer": "There is no universal answer, as the ideal corpus is highly personalized. However, a common benchmark in India suggests that a corpus of ₹1 crore may be a good starting point for retirement planning." },
-        { "question": "How long will my money last in retirement?", "answer": "The duration of a retirement corpus depends on spending habits and investment returns. A common rule of thumb is the 4% withdrawal rule, which suggests that withdrawing 4% of the corpus in the first year can make it last for 30 years or more." },
-        { "question": "What is a good monthly retirement income for me?", "answer": "A good monthly income is highly subjective and depends on your desired lifestyle, but a general guideline is to aim to replace 70% to 80% of your pre-retirement income." },
-        { "question": "What are the best ways to save for retirement?", "answer": "Starting early is the single most important factor. Strategies include contributing to a 401(k) or IRA, opening an IRA, and automating savings through a Systematic Investment Plan (SIP)." },
-        { "question": "How can I manage inflation during retirement?", "answer": "To manage inflation, consider investing in assets that provide inflation-beating returns, such as equities and inflation-protected bonds. It can also be beneficial to delay taking Social Security payments." },
-        { "question": "Are there special tax provisions for returning NRIs?", "answer": "Yes, Section 89A of the Indian Income Tax Act allows returning NRIs to defer tax payments on income from foreign retirement accounts until the funds are actually withdrawn. This helps prevent double taxation and simplifies the transition." },
         { "question": "What is retirement corpus?", "answer": "A retirement corpus is the total sum of money and assets an individual accumulates to support their financial needs during their non-working years. It's your financial nest egg for retirement." },
         { "question": "How much corpus do I need to retire at 60?", "answer": "This is highly personal, but a common rule is the 25x/30x rule: your corpus should be 25 to 30 times your current annual expenses. Use our calculator for a precise figure based on your lifestyle." },
         { "question": "How do you calculate retirement corpus?", "answer": "The core calculation uses the present value formula, factoring in your future annual expenses, inflation, life expectancy, and expected returns on investment. Our calculator does this complex math for you." },

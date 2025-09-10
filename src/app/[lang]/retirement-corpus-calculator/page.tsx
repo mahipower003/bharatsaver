@@ -26,7 +26,6 @@ export async function generateMetadata({ params }: { params: { lang:Locale } }):
     "name":"Retirement Corpus Calculator",
     "url": pageUrl,
     "applicationCategory":"FinanceApplication",
-    "operatingSystem":"Web",
     "description":"Calculator to estimate retirement corpus, monthly SIP required and post-retirement income for India.",
     "offers": {
       "@type":"Offer",
@@ -50,6 +49,39 @@ export async function generateMetadata({ params }: { params: { lang:Locale } }):
     })),
   };
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": pageUrl
+    },
+    "headline": "Retirement Corpus Calculator 2025 — How Much to Save to Retire in India",
+    "description": "Estimate the corpus and monthly SIP required to retire comfortably. India-specific, includes NPS/PPF/EPF guidance.",
+    "image": ogImageUrl,
+    "author": {
+      "@type": "Person",
+      "name": "Mahesh Chaube, CFP",
+      "url": "https://www.linkedin.com/in/mahi003/",
+      "sameAs": "https://www.linkedin.com/in/mahi003/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "BharatSaver",
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${siteUrl}/icon.svg`
+      }
+    },
+    "reviewedBy": {
+      "@type": "Organization",
+      "name": "BharatSaver Editorial Team"
+    },
+    "about": ["Retirement Planning", "SIP Calculator", "Retirement Corpus India"],
+    "datePublished": "2024-07-22",
+    "dateModified": "2025-09-01"
+  };
+
   return {
     title: dictionary.retirement_corpus_calculator.meta_title,
     description: dictionary.retirement_corpus_calculator.meta_description,
@@ -69,7 +101,7 @@ export async function generateMetadata({ params }: { params: { lang:Locale } }):
         type: 'website',
     },
     other: {
-      'application/ld+json': JSON.stringify([softwareSchema, faqSchema]),
+      'application/ld+json': JSON.stringify([softwareSchema, faqSchema, articleSchema]),
     },
   };
 }
@@ -100,8 +132,16 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
 
         <RetirementCorpusCalculator dictionary={dictionary.retirement_corpus_calculator} />
 
+        <Alert className="mt-8">
+          <AlertTriangle className="h-4 w-4" />
+          <AlertTitle>{dictionary.retirement_corpus_calculator.assumptions.title}</AlertTitle>
+          <AlertDescription>
+            <div className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.assumptions.body }} />
+          </AlertDescription>
+        </Alert>
+
         <Card className="mt-8 shadow-lg">
-          <CardHeader>
+           <CardHeader>
              <CardTitle className="flex items-center gap-3">
                 <Calculator className="h-7 w-7 text-primary"/>
                 <h2 className="text-2xl font-bold">{dictionary.retirement_corpus_calculator.how_it_works.title}</h2>

@@ -42,6 +42,7 @@ type CalculationResult = {
   corpusShortfall: number;
   monthlySip: number;
   yearlyData: YearlyData[];
+  futureMonthlyExpenses: number;
 };
 
 type CalculatorProps = {
@@ -82,38 +83,65 @@ export function RetirementCorpusCalculator({ dictionary }: CalculatorProps) {
     setResult(null);
     await new Promise(resolve => setTimeout(resolve, 500));
 
-    const yearsToRetire = values.retirementAge - values.currentAge;
-    const i = values.inflationRate / 100;
-    const r_pre = values.preRetirementReturns / 100;
-    const r_post = values.postRetirementReturns / 100;
+    const {
+        currentAge,
+        retirementAge,
+        monthlyExpenses,
+        currentSavings,
+        inflationRate,
+        preRetirementReturns,
+        postRetirementReturns
+    } = values;
 
-    // Calculate future value of current monthly expenses at retirement
-    const futureAnnualExpenses = values.monthlyExpenses * 12 * Math.pow(1 + i, yearsToRetire);
+    const yearsToRetire = retirementAge - currentAge;
+    const inflation = inflationRate / 100;
+    const preRetirementROR = preRetirementReturns / 100;
+    const postRetirementROR = postRetirementReturns / 100;
+
+    // 1. Future value of current monthly expenses
+    const futureMonthlyExpenses = monthlyExpenses * Math.pow(1 + inflation, yearsToRetire);
+    const futureAnnualExpenses = futureMonthlyExpenses * 12;
     
-    // Calculate required corpus at retirement (Present Value of an annuity)
-    const requiredCorpus = futureAnnualExpenses / (r_post - i);
+    // 2. Required corpus at retirement
+    // Using formula for Present Value of a growing annuity, simplified
+    const realReturnRate = (postRetirementROR - inflation) / (1 + inflation);
+    // Assuming retirement period from retirement age to 85 (25 years)
+    const retirementYears = 85 - retirementAge;
+    let requiredCorpus;
+    if (realReturnRate !== 0) {
+       requiredCorpus = futureAnnualExpenses * ((1 - Math.pow(1 + realReturnRate, -retirementYears)) / realReturnRate);
+    } else {
+       requiredCorpus = futureAnnualExpenses * retirementYears;
+    }
 
-    // Calculate future value of current savings
-    const futureValueOfCurrentSavings = values.currentSavings * Math.pow(1 + r_pre, yearsToRetire);
 
+    // 3. Future value of current savings
+    const futureValueOfCurrentSavings = currentSavings * Math.pow(1 + preRetirementROR, yearsToRetire);
+    
+    // 4. Corpus shortfall
     const corpusShortfall = requiredCorpus - futureValueOfCurrentSavings;
 
-    // Calculate required monthly SIP
-    const monthlyRate = r_pre / 12;
+    // 5. Required monthly SIP
+    const monthlyRate = preRetirementROR / 12;
     const totalMonths = yearsToRetire * 12;
-    const monthlySip = (corpusShortfall * monthlyRate) / (Math.pow(1 + monthlyRate, totalMonths) - 1);
+    let monthlySip = 0;
+    if (corpusShortfall > 0) {
+      monthlySip = (corpusShortfall * monthlyRate) / (Math.pow(1 + monthlyRate, totalMonths) - 1);
+    }
     
+    // 6. Yearly data for chart
     const yearlyData: YearlyData[] = [];
-    let existingCorpusValue = values.currentSavings;
+    let existingCorpusValue = currentSavings;
     let sipValue = 0;
 
     for (let year = 1; year <= yearsToRetire; year++) {
-      existingCorpusValue *= (1 + r_pre);
-      sipValue = (sipValue + (monthlySip * 12)) * (1 + r_pre);
+        let yearlySipContribution = monthlySip * 12;
+        sipValue = (sipValue + yearlySipContribution) * (1 + preRetirementROR);
+        existingCorpusValue *= (1 + preRetirementROR);
       
       yearlyData.push({
         year,
-        age: values.currentAge + year,
+        age: currentAge + year,
         sipValue,
         existingCorpusValue,
         totalCorpus: existingCorpusValue + sipValue,
@@ -124,7 +152,8 @@ export function RetirementCorpusCalculator({ dictionary }: CalculatorProps) {
       requiredCorpus,
       corpusShortfall,
       monthlySip: monthlySip > 0 ? monthlySip : 0,
-      yearlyData
+      yearlyData,
+      futureMonthlyExpenses,
     });
     
     setIsLoading(false);
@@ -167,10 +196,10 @@ export function RetirementCorpusCalculator({ dictionary }: CalculatorProps) {
   };
   
   const formatCurrency = (value: number) => {
-    if (value >= 10000000) {
+    if (Math.abs(value) >= 10000000) {
         return `₹${(value / 10000000).toFixed(2)} Cr`;
     }
-    if (value >= 100000) {
+    if (Math.abs(value) >= 100000) {
         return `₹${(value / 100000).toFixed(2)} Lakh`;
     }
     return value.toLocaleString('en-IN', { style: 'currency', currency: 'INR', minimumFractionDigits: 0, maximumFractionDigits: 0 });
@@ -300,3 +329,5 @@ export function RetirementCorpusCalculator({ dictionary }: CalculatorProps) {
     </>
   );
 }
+
+    
