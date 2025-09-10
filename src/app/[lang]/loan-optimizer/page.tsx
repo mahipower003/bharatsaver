@@ -5,7 +5,7 @@ import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { FileText, Download, TrendingUp, Star, AlertTriangle, CheckCircle, HelpCircle } from "lucide-react";
+import { FileText, Download, TrendingUp, Star, AlertTriangle, CheckCircle, HelpCircle, GitCompareArrows, LineChart, Banknote } from "lucide-react";
 import Link from "next/link";
 import { AuthorCard } from "@/components/layout/AuthorCard";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
@@ -125,7 +125,7 @@ export default async function LoanOptimizerPage({ params }: { params: { lang: Lo
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
             {dictionary.loan_optimization_calculator.h1}
           </h1>
-          <div className="bs-byline justify-center text-center">
+          <div className="bs-byline justify-center text-center mt-4">
             <span className="bs-author">By <strong>Mahesh Chaube, CFP</strong></span>
             <span className="bs-sep">|</span>
             <span className="bs-updated">Last updated: <time dateTime="2025-09-01">September 2025</time></span>
@@ -136,80 +136,73 @@ export default async function LoanOptimizerPage({ params }: { params: { lang: Lo
         
         <LoanOptimizer dictionary={dictionary.loan_optimization_calculator} />
 
-        <div className="prose dark:prose-invert max-w-none mt-12 space-y-8">
-            <section id="why-a-loan-optimization-calculator">
-                <h2 className="text-2xl font-bold">{dictionary.loan_optimization_calculator.why.h2}</h2>
-                <div dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.why.body}} />
-            </section>
-            
-            <section id="how-this-loan-optimization-calculator-works">
-                <h2 className="text-2xl font-bold">{dictionary.loan_optimization_calculator.how_it_works.h2}</h2>
-                <div dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.how_it_works.body}} />
-            </section>
-            
-            <section id="the-amortization-deep-dive">
-                <h2 className="text-2xl font-bold">{dictionary.loan_optimization_calculator.amortization_dive.h2}</h2>
-                <div dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.amortization_dive.body}} />
-            </section>
-            
-            <section id="the-optimization-masterclass">
-                <h2 className="text-2xl font-bold">{dictionary.loan_optimization_calculator.optimization_masterclass.h2}</h2>
-                <div dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.optimization_masterclass.body}} />
-            </section>
-            
-            <section id="prepayment-vs-invest">
-                <h2 className="text-2xl font-bold">{dictionary.loan_optimization_calculator.prepay_vs_invest.h2}</h2>
-                <div dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.prepay_vs_invest.body}} />
-            </section>
+        <div className="space-y-8 mt-12">
+            <Card>
+                <CardHeader>
+                    <CardTitle className="flex items-center gap-3"><HelpCircle className="h-6 w-6 text-primary" />{dictionary.loan_optimization_calculator.why.h2}</CardTitle>
+                </CardHeader>
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.why.body }} />
+            </Card>
 
-            <section id="refinance-balance-transfer">
-                <h2 className="text-2xl font-bold">{dictionary.loan_optimization_calculator.refinance.h2}</h2>
-                <div dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.refinance.body}} />
-            </section>
-            
-            <section id="multiple-loans">
-                <h2 className="text-2xl font-bold">{dictionary.loan_optimization_calculator.multiple_loans.h2}</h2>
-                <div dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.multiple_loans.body}} />
-            </section>
-            
-            <section id="worked-examples">
-                <h2 className="text-2xl font-bold">{dictionary.loan_optimization_calculator.examples.h2}</h2>
-                <div dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.examples.body}} />
-            </section>
-            
-            <section id="how-to-use">
-                 <h2 className="text-2xl font-bold">{dictionary.loan_optimization_calculator.how_to_use.h2}</h2>
-                <div dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.how_to_use.body}} />
-            </section>
-            
-            <section id="downloads-embedding">
-                 <h2 className="text-2xl font-bold">{dictionary.loan_optimization_calculator.downloads.h2}</h2>
-                <div dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.downloads.body}} />
-            </section>
+            <Card>
+                <CardHeader>
+                    <CardTitle className="flex items-center gap-3"><FileText className="h-6 w-6 text-primary" />{dictionary.loan_optimization_calculator.how_it_works.h2}</CardTitle>
+                </CardHeader>
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.how_it_works.body }} />
+            </Card>
 
-            <section id="tax-penalties">
-                <h2 className="text-2xl font-bold">{dictionary.loan_optimization_calculator.tax_notes.h2}</h2>
-                <div dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.tax_notes.body}} />
-            </section>
-
-            <section id="faq">
-                <h2 className="text-2xl font-bold text-center mb-6">{dictionary.loan_optimization_calculator.faq.h2}</h2>
-                <Accordion type="single" collapsible className="w-full">
-                {dictionary.loan_optimization_calculator.faq.faqs.map((faq: { q: string, a: string }, index: number) => (
-                    <AccordionItem value={`item-${index}`} key={index}>
-                    <AccordionTrigger>{faq.q}</AccordionTrigger>
-                    <AccordionContent>
-                        <p dangerouslySetInnerHTML={{ __html: faq.a }}></p>
-                    </AccordionContent>
-                    </AccordionItem>
-                ))}
-                </Accordion>
-            </section>
+             <Card>
+                <CardHeader>
+                    <CardTitle className="flex items-center gap-3"><LineChart className="h-6 w-6 text-primary" />{dictionary.loan_optimization_calculator.amortization_dive.h2}</CardTitle>
+                </CardHeader>
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.amortization_dive.body }} />
+            </Card>
             
-            <section id="sources-methodology">
-                <h2 className="text-2xl font-bold">{dictionary.loan_optimization_calculator.methodology.h2}</h2>
-                <div dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.methodology.body}} />
-            </section>
+             <Card>
+                <CardHeader>
+                    <CardTitle className="flex items-center gap-3"><TrendingUp className="h-6 w-6 text-primary" />{dictionary.loan_optimization_calculator.optimization_masterclass.h2}</CardTitle>
+                </CardHeader>
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.optimization_masterclass.body }} />
+            </Card>
+            
+            <Card>
+                <CardHeader>
+                    <CardTitle className="flex items-center gap-3"><GitCompareArrows className="h-6 w-6 text-primary" />{dictionary.loan_optimization_calculator.prepay_vs_invest.h2}</CardTitle>
+                </CardHeader>
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.prepay_vs_invest.body }} />
+            </Card>
+
+            <Card>
+                <CardHeader>
+                    <CardTitle className="flex items-center gap-3"><Banknote className="h-6 w-6 text-primary" />{dictionary.loan_optimization_calculator.refinance.h2}</CardTitle>
+                </CardHeader>
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.refinance.body }} />
+            </Card>
+
+            <Card>
+                <CardHeader>
+                    <CardTitle className="flex items-center gap-3"><AlertTriangle className="h-6 w-6 text-primary" />{dictionary.loan_optimization_calculator.tax_notes.h2}</CardTitle>
+                </CardHeader>
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.tax_notes.body }} />
+            </Card>
+            
+            <Card>
+                <CardHeader>
+                    <CardTitle className="flex items-center gap-3"><CheckCircle className="h-6 w-6 text-primary" />{dictionary.loan_optimization_calculator.faq.h2}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <Accordion type="single" collapsible className="w-full">
+                    {dictionary.loan_optimization_calculator.faq.faqs.map((faq: { q: string, a: string }, index: number) => (
+                        <AccordionItem value={`item-${index}`} key={index}>
+                        <AccordionTrigger>{faq.q}</AccordionTrigger>
+                        <AccordionContent>
+                            <p dangerouslySetInnerHTML={{ __html: faq.a }}></p>
+                        </AccordionContent>
+                        </AccordionItem>
+                    ))}
+                    </Accordion>
+                </CardContent>
+            </Card>
         </div>
         
         <AuthorCard dictionary={dictionary.author_card} />
@@ -217,3 +210,5 @@ export default async function LoanOptimizerPage({ params }: { params: { lang: Lo
     </div>
   );
 }
+
+    
