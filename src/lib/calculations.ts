@@ -49,50 +49,38 @@ export function calculateRetirementCorpus(values: FormValues): CalculationResult
     
     if (postRetirementROR !== inflation) {
       const realReturnRate = (1 + postRetirementROR) / (1 + inflation) - 1;
-      requiredCorpus = futureAnnualExpenses * ((1 - Math.pow(1 + realReturnRate, -retirementYears)) / realReturnRate) * (1 + realReturnRate);
+      requiredCorpus = futureAnnualExpenses * ((1 - Math.pow(1 + realReturnRate, -retirementYears)) / realReturnRate);
     } else {
       requiredCorpus = futureAnnualExpenses * retirementYears;
     }
 
-    const futureValueOfCurrentSavings = currentSavings * Math.pow(1 + preRetirementROR, yearsToRetire);
-    
-    const corpusShortfall = requiredCorpus - futureValueOfCurrentSavings;
-
-    let monthlySip = 0;
-    if (corpusShortfall > 0) {
-      const monthlyRate = preRetirementROR / 12;
-      const totalMonths = yearsToRetire * 12;
-      if (monthlyRate > 0) {
-        monthlySip = (corpusShortfall * monthlyRate) / (Math.pow(1 + monthlyRate, totalMonths) - 1);
-      } else {
-        monthlySip = corpusShortfall / totalMonths;
-      }
-    }
+    const monthlySip = calculateSip({
+        targetCorpus: requiredCorpus,
+        yearsToRetire: yearsToRetire,
+        rateOfReturn: preRetirementReturns,
+        existingSavings: currentSavings,
+    });
     
     const yearlyData: YearlyData[] = [];
     let existingCorpusValue = currentSavings;
-    let sipValue = 0;
+    let sipCorpusValue = 0;
     const annualSipContribution = monthlySip * 12;
 
     for (let year = 1; year <= yearsToRetire; year++) {
       existingCorpusValue *= (1 + preRetirementROR);
-      
-      let futureValOfSipForYear = 0;
-      if (preRetirementROR > 0) {
-        futureValOfSipForYear = annualSipContribution * (Math.pow(1 + preRetirementROR, year) - 1) / preRetirementROR;
-      } else {
-        futureValOfSipForYear = annualSipContribution * year;
-      }
-      sipValue = futureValOfSipForYear;
+      sipCorpusValue = sipCorpusValue * (1 + preRetirementROR) + annualSipContribution;
 
       yearlyData.push({
         year,
         age: currentAge + year,
-        sipValue,
+        sipValue: sipCorpusValue,
         existingCorpusValue,
-        totalCorpus: existingCorpusValue + sipValue,
+        totalCorpus: existingCorpusValue + sipCorpusValue,
       });
     }
+
+    const finalCorpus = (yearlyData[yearlyData.length - 1]?.totalCorpus) || 0;
+    const corpusShortfall = requiredCorpus - finalCorpus;
 
     return {
       requiredCorpus,
@@ -101,4 +89,32 @@ export function calculateRetirementCorpus(values: FormValues): CalculationResult
       yearlyData,
       futureMonthlyExpenses,
     };
+}
+
+
+type SipCalculationParams = {
+    targetCorpus: number;
+    yearsToRetire: number;
+    rateOfReturn: number;
+    existingSavings: number;
+};
+
+export function calculateSip({ targetCorpus, yearsToRetire, rateOfReturn, existingSavings }: SipCalculationParams): number {
+    const preRetirementROR = rateOfReturn / 100;
+    const futureValueOfCurrentSavings = existingSavings * Math.pow(1 + preRetirementROR, yearsToRetire);
+    
+    const corpusShortfall = targetCorpus - futureValueOfCurrentSavings;
+
+    let monthlySip = 0;
+    if (corpusShortfall > 0) {
+      const monthlyRate = preRetirementROR / 12;
+      const totalMonths = yearsToRetire * 12;
+      if (monthlyRate > 0) {
+        monthlySip = (corpusShortfall * monthlyRate) / ((Math.pow(1 + monthlyRate, totalMonths) - 1) * (1 + monthlyRate));
+      } else {
+        monthlySip = corpusShortfall / totalMonths;
+      }
+    }
+    
+    return monthlySip > 0 ? monthlySip : 0;
 }

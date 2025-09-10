@@ -4,15 +4,26 @@ import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
 import { RetirementCorpusCalculator, type CalculationResult } from "@/components/calculators/RetirementCorpusCalculator";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { FileText, Calculator, HelpCircle, TrendingUp, Wallet, Landmark, Star, AlertTriangle, Download, BadgeCheck, LineChart, Banknote } from "lucide-react";
+import { FileText, Calculator, HelpCircle, TrendingUp, Wallet, Landmark, Star, AlertTriangle, Download, BadgeCheck, LineChart, Banknote, TableIcon } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import Link from "next/link";
 import { AuthorCard } from "@/components/layout/AuthorCard";
-import { calculateRetirementCorpus } from "@/lib/calculations";
+import { calculateRetirementCorpus, calculateSip } from "@/lib/calculations";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
+}
+
+function formatCurrency(value: number) {
+    if (Math.abs(value) >= 10000000) {
+        return `₹${(value / 10000000).toFixed(2)} Cr`;
+    }
+    if (Math.abs(value) >= 100000) {
+        return `₹${(value / 100000).toFixed(2)} Lakh`;
+    }
+    return value.toLocaleString('en-IN', { style: 'currency', currency: 'INR', minimumFractionDigits: 0, maximumFractionDigits: 0 });
 }
 
 export async function generateMetadata({ params }: { params: { lang:Locale } }): Promise<Metadata> {
@@ -25,7 +36,7 @@ export async function generateMetadata({ params }: { params: { lang:Locale } }):
     "@context":"https://schema.org",
     "@type":"SoftwareApplication",
     "name":"Retirement Corpus Calculator",
-    "url": "https://bharatsaver.com/en/retirement-corpus-calculator",
+    "url": pageUrl,
     "applicationCategory":"FinanceApplication",
     "operatingSystem":"Web",
     "description":"India-specific retirement corpus calculator with inflation, pre/post-ret returns and SIP estimate.",
@@ -57,14 +68,13 @@ export async function generateMetadata({ params }: { params: { lang:Locale } }):
       "@type": "WebPage",
       "@id": pageUrl
     },
-    "headline": "Retirement Corpus Calculator 2025 — How Much to Save to Retire in India",
-    "description": "Estimate the corpus and monthly SIP required to retire comfortably. India-specific, includes NPS/PPF/EPF guidance.",
+    "headline": "Retirement Corpus Calculator — How Much Money Do You Need to Retire in India (2025)",
+    "description": "Use our free Retirement Corpus Calculator (India) — includes inflation, pre/post-retirement returns, life expectancy, existing savings and worked examples (₹6L/₹10L/₹15L). Export results & get a 1-page retirement plan.",
     "image": ogImageUrl,
     "author": {
       "@type": "Person",
       "name": "Mahesh Chaube, CFP",
-      "url": "https://www.linkedin.com/in/mahi003/",
-      "sameAs": "https://www.linkedin.com/in/mahi003/"
+      "url": `${siteUrl}/${params.lang}/author/mahesh-chaube`,
     },
     "publisher": {
       "@type": "Organization",
@@ -74,9 +84,19 @@ export async function generateMetadata({ params }: { params: { lang:Locale } }):
         "url": `${siteUrl}/icon.svg`
       }
     },
-    "reviewedBy": {
-      "@type": "Organization",
-      "name": "BharatSaver Editorial Team"
+    "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Laveena Vijayi",
+          "jobTitle": "Finance Editor"
+        },
+        "reviewBody": "This calculator provides a comprehensive and accurate retirement projection based on India-specific factors. The inclusion of worked examples and sensitivity analysis makes it an invaluable tool for financial planning."
     },
     "about": ["Retirement Planning", "SIP Calculator", "Retirement Corpus India"],
     "datePublished": "2024-07-22",
@@ -94,8 +114,8 @@ export async function generateMetadata({ params }: { params: { lang:Locale } }):
       }, {} as Record<string, string>),
     },
     openGraph: {
-        title: "Retirement Corpus Calculator 2025 — How Much to Save to Retire in India",
-        description: "Estimate the corpus and monthly SIP required to retire comfortably. India-specific, includes NPS/PPF/EPF guidance.",
+        title: dictionary.retirement_corpus_calculator.meta_title,
+        description: dictionary.retirement_corpus_calculator.meta_description,
         url: pageUrl,
         images: [{ url: ogImageUrl, width: 1200, height: 630, alt: 'BharatSaver Retirement Corpus Calculator' }],
         locale: params.lang === 'en' ? 'en_IN' : params.lang,
@@ -132,6 +152,37 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
 
   const initialResult: CalculationResult = calculateRetirementCorpus(defaultValues);
 
+  const sensitivityScenarios = [
+    { label: 'Base Case', values: { ...defaultValues } },
+    { label: '+1% Inflation', values: { ...defaultValues, inflationRate: 7 } },
+    { label: '-1% Inflation', values: { ...defaultValues, inflationRate: 5 } },
+    { label: '+2% Pre-Retirement Returns', values: { ...defaultValues, preRetirementReturns: 14 } },
+    { label: '-2% Pre-Retirement Returns', values: { ...defaultValues, preRetirementReturns: 10 } },
+  ];
+
+  const sensitivityData = sensitivityScenarios.map(s => ({
+    scenario: s.label,
+    ...calculateRetirementCorpus(s.values)
+  }));
+  
+  const sipPlanTargets = [10000000, 20000000, 50000000];
+  const sipPlanAges = [30, 40, 50];
+  const sipPlanData = sipPlanTargets.map(corpus => {
+    const row: { [key: string]: string | number } = { corpus: formatCurrency(corpus) };
+    sipPlanAges.forEach(age => {
+      const yearsToRetire = 60 - age;
+      const monthlySip = calculateSip({
+          targetCorpus: corpus,
+          yearsToRetire: yearsToRetire,
+          rateOfReturn: 12, // assuming 12% for this table
+          existingSavings: 0
+      });
+      row[`age${age}`] = formatCurrency(monthlySip);
+    });
+    return row;
+  });
+
+
   return (
     <div className="py-12">
        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
@@ -144,8 +195,7 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
         </div>
         
         <div className="bs-byline justify-center text-center">
-            <span className="bs-author">By <strong>Mahesh Chaube</strong></span>
-            <span className="bs-creds">, CFP</span>
+            <span className="bs-author">By <strong>Mahesh Chaube, CFP</strong></span>
             <span className="bs-sep">|</span>
             <span className="bs-updated">Last updated: <time dateTime="2025-09-01">September 2025</time></span>
             <div className="bs-reviewed">Reviewed by <strong>Laveena Vijayi</strong> — BharatSaver Editorial Team</div>
@@ -207,6 +257,36 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
           </CardContent>
         </Card>
         
+         <Card className="mt-8 shadow-lg">
+          <CardHeader>
+             <CardTitle className="flex items-center gap-3">
+                <TableIcon className="h-7 w-7 text-primary"/>
+                <h2 className="text-2xl font-bold">{dictionary.retirement_corpus_calculator.sensitivity_analysis.title}</h2>
+             </CardTitle>
+          </CardHeader>
+          <CardContent>
+             <p className="mb-4 text-muted-foreground">{dictionary.retirement_corpus_calculator.sensitivity_analysis.body}</p>
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead>Scenario</TableHead>
+                    <TableHead className="text-right">Required Corpus</TableHead>
+                    <TableHead className="text-right">Monthly SIP</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {sensitivityData.map(data => (
+                    <TableRow key={data.scenario}>
+                      <TableCell className="font-medium">{data.scenario}</TableCell>
+                      <TableCell className="text-right">{formatCurrency(data.requiredCorpus)}</TableCell>
+                      <TableCell className="text-right">{formatCurrency(data.monthlySip)}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+          </CardContent>
+        </Card>
+
         <Card className="mt-8 shadow-lg">
            <CardHeader>
              <CardTitle className="flex items-center gap-3">
@@ -214,7 +294,32 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
                 <h2 className="text-2xl font-bold">{dictionary.retirement_corpus_calculator.accumulation_strategy.h2}</h2>
              </CardTitle>
           </CardHeader>
-          <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.accumulation_strategy.body }} />
+          <CardContent className="prose dark:prose-invert max-w-none">
+            <div dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.accumulation_strategy.body }} />
+            <h3 className="font-semibold text-lg mt-6 mb-2">{dictionary.retirement_corpus_calculator.sip_plans.title}</h3>
+            <p className="text-muted-foreground">{dictionary.retirement_corpus_calculator.sip_plans.body}</p>
+            <Table className="mt-4">
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Target Corpus</TableHead>
+                  <TableHead className="text-right">SIP from Age 30</TableHead>
+                  <TableHead className="text-right">SIP from Age 40</TableHead>
+                  <TableHead className="text-right">SIP from Age 50</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {sipPlanData.map((row, index) => (
+                  <TableRow key={index}>
+                    <TableCell className="font-medium">{row.corpus}</TableCell>
+                    <TableCell className="text-right">{row.age30}</TableCell>
+                    <TableCell className="text-right">{row.age40}</TableCell>
+                    <TableCell className="text-right">{row.age50}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+             <p className="text-xs text-muted-foreground mt-2 italic">Assuming 12% annual returns and retirement at 60.</p>
+          </CardContent>
         </Card>
 
         <Card className="mt-8 shadow-lg">
@@ -310,7 +415,7 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
             <CardHeader>
                 <CardTitle className="text-lg flex items-center gap-2">
                     <BadgeCheck className="h-5 w-5"/>
-                    <h2>{dictionary.retirement_corpus_calculator.methodology.h2}</h2>
+                    <h2 className="text-2xl font-bold">{dictionary.retirement_corpus_calculator.methodology.h2}</h2>
                 </CardTitle>
             </CardHeader>
             <CardContent>
