@@ -68,8 +68,8 @@ export async function generateMetadata({ params }: { params: { lang:Locale } }):
       "@type": "WebPage",
       "@id": pageUrl
     },
-    "headline": "Retirement Corpus Calculator — How Much Money Do You Need to Retire in India (2025)",
-    "description": "Use our free Retirement Corpus Calculator (India) — includes inflation, pre/post-retirement returns, life expectancy, existing savings and worked examples (₹6L/₹10L/₹15L). Export results & get a 1-page retirement plan.",
+    "headline": dictionary.retirement_corpus_calculator.h1,
+    "description": dictionary.retirement_corpus_calculator.meta_description,
     "image": ogImageUrl,
     "author": {
       "@type": "Person",
@@ -115,7 +115,7 @@ export async function generateMetadata({ params }: { params: { lang:Locale } }):
     },
     openGraph: {
         title: dictionary.retirement_corpus_calculator.meta_title,
-        description: dictionary.retirement_corpus_calculator.meta_description,
+        description: dictionary.retirement_corpus_calculator.og_description,
         url: pageUrl,
         images: [{ url: ogImageUrl, width: 1200, height: 630, alt: 'BharatSaver Retirement Corpus Calculator' }],
         locale: params.lang === 'en' ? 'en_IN' : params.lang,
@@ -205,14 +205,6 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
           {dictionary.retirement_corpus_calculator.tool_section.h2}
         </h2>
         <RetirementCorpusCalculator dictionary={dictionary.retirement_corpus_calculator} initialResult={initialResult} />
-
-        <Alert className="mt-8">
-            <AlertTriangle className="h-4 w-4" />
-            <AlertTitle>{dictionary.retirement_corpus_calculator.assumptions.title}</AlertTitle>
-            <AlertDescription>
-                <div className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.assumptions.body }} />
-            </AlertDescription>
-        </Alert>
 
         <Card className="mt-8 shadow-lg">
            <CardHeader>
