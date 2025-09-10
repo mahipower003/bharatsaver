@@ -47,19 +47,108 @@ export async function generateMetadata({ params }: { params: { lang:Locale } }):
     }
   };
 
-  const faqItems = dictionary.retirement_corpus_calculator.faqs;
   const faqSchema = {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity": faqItems.map((faq: { question: string, answer: string }) => ({
-      '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: faq.answer,
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do you calculate retirement corpus?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We project your future monthly expenses using inflation, compute the present value (PV) of the annuity you’ll need at retirement, and subtract the future value of existing savings to find the shortfall."
+        }
       },
-    })),
-  };
+      {
+        "@type": "Question",
+        "name": "What inflation rate should I use for Indian retirement planning?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Many planners use a long-term default of 5–7% for India; 6% is common. Use higher rates for conservative healthcare or long horizon assumptions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I include EPF, PPF and NPS in my retirement corpus?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — include all liquid and pension assets (EPF, PPF, NPS, mutual funds, bank FD) in your Current Savings input to lower the additional SIP needed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much should a 30-year-old save monthly to retire comfortably?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It depends on target corpus and assumptions. As a rough guide, saving ₹15,000–₹25,000/month can build multi-crore corpus by 60 at 10–12% returns. Use the calculator for precise numbers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I invest by SIP or lump sum to reach my retirement goal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SIP is recommended for disciplined investing and rupee-cost averaging; lump sum can outperform in long bull markets but has higher timing risk. A blended approach works for many."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a safe withdrawal rate in India during retirement?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "There is no one-size-fits-all; many advisors use a 3–4% initial withdrawal rule (adjusted for inflation). Consider conservative withdrawal rates if longevity or healthcare costs are uncertain."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do healthcare costs affect the retirement corpus?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Healthcare inflation often exceeds general inflation. Add a dedicated healthcare buffer or model higher inflation for medical costs to avoid underestimating your corpus."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How will taxes impact my retirement withdrawals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tax treatment varies by instrument and withdrawal type. EPF/PPF have specific rules; mutual fund withdrawals may attract LTCG tax above thresholds. Plan withdrawals tax-efficiently to preserve corpus."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long should my retirement corpus last?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Typically planners assume life expectancy of 85–90 years. Use conservative longevity assumptions if family longevity is high or you retire early."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the calculator account for post-retirement returns?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — you can set a lower, conservative post-retirement return (e.g., 6–8%) to model how the corpus will be invested and sustain withdrawals."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I plan for early retirement (before 60) with this calculator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — set your desired retirement age earlier and increase the investment horizon and SIP accordingly. Factor in longer post-retirement years and higher healthcare costs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the simplest rule of thumb to estimate a target corpus?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A common rule is 25× your current annual expenses (for a 4% real withdrawal), but use the calculator to refine this with inflation, returns, and existing savings."
+        }
+      }
+    ]
+  }
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -104,8 +193,8 @@ export async function generateMetadata({ params }: { params: { lang:Locale } }):
   };
 
   return {
-    title: dictionary.retirement_corpus_calculator.meta_title,
-    description: dictionary.retirement_corpus_calculator.meta_description,
+    title: "Retirement Corpus Calculator India 2025 | Free Online Retirement Planning Tool",
+    description: "Free Retirement Corpus Calculator India (2025). Calculate how much money you need to retire, SIP required, and plan a stress-free retirement today.",
     alternates: {
       canonical: `https://bharatsaver.com/en/retirement-corpus-calculator`,
       languages: i18nConfig.locales.reduce((acc, locale) => {
@@ -205,6 +294,14 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
           {dictionary.retirement_corpus_calculator.tool_section.h2}
         </h2>
         <RetirementCorpusCalculator dictionary={dictionary.retirement_corpus_calculator} initialResult={initialResult} />
+
+        <Alert className="mt-8">
+          <AlertTriangle className="h-4 w-4" />
+          <AlertTitle>{dictionary.retirement_corpus_calculator.assumptions.title}</AlertTitle>
+          <AlertDescription>
+            <div className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.assumptions.body }} />
+          </AlertDescription>
+        </Alert>
 
         <Card className="mt-8 shadow-lg">
            <CardHeader>
@@ -342,7 +439,14 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
             </CardTitle>
           </CardHeader>
           <CardContent>
-              <div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.faq_content }} />
+              <div className="prose dark:prose-invert max-w-none">
+                {dictionary.retirement_corpus_calculator.faqs.map((faq: { question: string; answer: string; }, index: number) => (
+                  <div key={index} className="mb-4">
+                    <h3 className="font-semibold text-lg">{faq.question}</h3>
+                    <p className="text-muted-foreground">{faq.answer}</p>
+                  </div>
+                ))}
+              </div>
           </CardContent>
         </Card>
         
@@ -418,3 +522,5 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
     </div>
   );
 }
+
+    

@@ -858,8 +858,8 @@
     }
   },
   "retirement_corpus_calculator": {
-    "meta_title": "Retirement Corpus Calculator 2025 — How Much to Save to Retire in India (SIP & Lump Sum)",
-    "meta_description": "Free Retirement Corpus Calculator (India 2025). Calculate how much you need to retire, your SIP requirement, and build a stress-free retirement plan.",
+    "meta_title": "Retirement Corpus Calculator India 2025 | Free Online Retirement Planning Tool",
+    "meta_description": "Free Retirement Corpus Calculator India (2025). Calculate how much money you need to retire, SIP required, and plan a stress-free retirement today.",
     "og_description": "Estimate the corpus and monthly SIP required to retire comfortably. India-specific, includes NPS/PPF/EPF guidance.",
     "h1": "Retirement Corpus Calculator — How Much Money Do You Need to Retire in India (2025)",
     "intro": "A retirement corpus is the total sum of money you need to support yourself after you stop working. Our calculator helps you move beyond a simple number to create a complete plan for a secure retirement.",
@@ -903,7 +903,7 @@
       "body": "<p>To get an accurate result, you need to provide some key details. Here’s what each one means for your plan:</p><ul><li><strong>Your Current & Retirement Age:</strong> This defines your investment horizon. The longer you have, the more the power of compounding can work for you, meaning you can start with smaller investments.</li><li><strong>Your Current Monthly Expenses:</strong> This is the foundation of your retirement plan. Be realistic about what you spend today to get an accurate picture of what you'll need tomorrow.</li><li><strong>Your Current Savings:</strong> This is your head start! Any money you've already saved in EPF, PPF, Mutual Funds, or other investments reduces the amount you'll need to save in the future.</li><li><strong>Inflation Rate:</strong> This is the silent wealth killer. Inflation reduces the purchasing power of your money over time. A higher inflation rate means you'll need a much larger corpus.</li><li><strong>Pre-Retirement Returns:</strong> This is the growth rate you expect on your investments while you're still working. A higher return means your money works harder for you, and you can reach your goal with smaller SIPs.</li><li><strong>Post-Retirement Returns:</strong> This is the return you expect on your corpus after you retire. We assume a more conservative, capital-preserving portfolio here.</li></ul>"
     },
     "worked_examples": {
-      "h2": "How much corpus do I need to retire at 60?",
+      "h2": "Worked Examples — How Much Corpus Do You Need?",
       "scenario1": {
         "title": "Example 1: For ₹50,000 monthly expenses (at age 30)",
         "body": "<strong>Your Situation:</strong> You're 30, aiming for a ₹50,000/month lifestyle in today's money. You've already saved ₹5 lakh.<br/><strong>Our Calculation:</strong> To maintain your lifestyle, you'll need a retirement corpus of approximately <strong>₹3.28 Crore</strong>. To reach this goal, you should start a monthly SIP of <strong>₹18,250</strong>."
@@ -953,14 +953,55 @@
       "body": "The figures generated are hypothetical and for illustrative purposes only. The accuracy of the output depends on your inputs. Please consult a qualified financial professional for personalized advice."
     },
     "faq_title": "Frequently Asked Questions about Retirement Planning",
-    "faq_content": "",
     "faqs": [
-        { "question": "What is a retirement corpus?", "answer": "A retirement corpus is the total sum of money and assets an individual accumulates to support their financial needs during their non-working years. It's your financial nest egg for retirement." },
-        { "question": "How much corpus do I need to retire at 60?", "answer": "This is highly personal, but a common rule is the 25x/30x rule: your corpus should be 25 to 30 times your current annual expenses. Use our calculator for a precise figure based on your lifestyle." },
-        { "question": "How do you calculate retirement corpus?", "answer": "The core calculation uses the present value formula, factoring in your future annual expenses, inflation, life expectancy, and expected returns on investment. Our calculator does this complex math for you." },
-        { "question": "What inflation rate should I assume for retirement planning?", "answer": "We use 6% by default as a long-term average for India, but this is a critical assumption. For a more conservative plan, consider a higher rate, especially for healthcare costs." },
-        { "question": "How much should a 30-year-old save per month for retirement?", "answer": "This depends entirely on their desired retirement lifestyle. A 30-year-old aiming for a corpus of ₹2 crore by age 60 might need to save ₹15,000 - ₹20,000 per month via SIPs, assuming a 12% return." },
-        { "question": "Can I include EPF/PPF/NPS in the retirement corpus?", "answer": "Absolutely. Your existing savings in EPF, PPF, NPS, mutual funds, and other assets should all be included in the 'Current Savings' input of the calculator." }
+      {
+        "question": "How do you calculate retirement corpus?",
+        "answer": "We project your future monthly expenses using inflation, compute the present value (PV) of the annuity you’ll need at retirement, and subtract the future value of existing savings to find the shortfall."
+      },
+      {
+        "question": "What inflation rate should I use for Indian retirement planning?",
+        "answer": "Many planners use a long-term default of 5–7% for India; 6% is common. Use higher rates for conservative healthcare or long horizon assumptions."
+      },
+      {
+        "question": "Can I include EPF, PPF and NPS in my retirement corpus?",
+        "answer": "Yes — include all liquid and pension assets (EPF, PPF, NPS, mutual funds, bank FD) in your Current Savings input to lower the additional SIP needed."
+      },
+      {
+        "question": "How much should a 30-year-old save monthly to retire comfortably?",
+        "answer": "It depends on target corpus and assumptions. As a rough guide, saving ₹15,000–₹25,000/month can build multi-crore corpus by 60 at 10–12% returns. Use the calculator for precise numbers."
+      },
+      {
+        "question": "Should I invest by SIP or lump sum to reach my retirement goal?",
+        "answer": "SIP is recommended for disciplined investing and rupee-cost averaging; lump sum can outperform in long bull markets but has higher timing risk. A blended approach works for many."
+      },
+      {
+        "question": "What is a safe withdrawal rate in India during retirement?",
+        "answer": "There is no one-size-fits-all; many advisors use a 3–4% initial withdrawal rule (adjusted for inflation). Consider conservative withdrawal rates if longevity or healthcare costs are uncertain."
+      },
+      {
+        "question": "How do healthcare costs affect the retirement corpus?",
+        "answer": "Healthcare inflation often exceeds general inflation. Add a dedicated healthcare buffer or model higher inflation for medical costs to avoid underestimating your corpus."
+      },
+      {
+        "question": "How will taxes impact my retirement withdrawals?",
+        "answer": "Tax treatment varies by instrument and withdrawal type. EPF/PPF have specific rules; mutual fund withdrawals may attract LTCG tax above thresholds. Plan withdrawals tax-efficiently to preserve corpus."
+      },
+      {
+        "question": "How long should my retirement corpus last?",
+        "answer": "Typically planners assume life expectancy of 85–90 years. Use conservative longevity assumptions if family longevity is high or you retire early."
+      },
+      {
+        "question": "Does the calculator account for post-retirement returns?",
+        "answer": "Yes — you can set a lower, conservative post-retirement return (e.g., 6–8%) to model how the corpus will be invested and sustain withdrawals."
+      },
+      {
+        "question": "Can I plan for early retirement (before 60) with this calculator?",
+        "answer": "Yes — set your desired retirement age earlier and increase the investment horizon and SIP accordingly. Factor in longer post-retirement years and higher healthcare costs."
+      },
+      {
+        "question": "What is the simplest rule of thumb to estimate a target corpus?",
+        "answer": "A common rule is 25× your current annual expenses (for a 4% real withdrawal), but use the calculator to refine this with inflation, returns, and existing savings."
+      }
     ],
     "methodology": {
       "h2": "Methodology & Update Log",
@@ -1054,3 +1095,5 @@
     "view_calculator": "View Calculator"
   }
 }
+
+    
