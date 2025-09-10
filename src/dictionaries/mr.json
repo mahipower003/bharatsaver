@@ -219,7 +219,7 @@
     ],
     "conclusion": {
         "title": "अंतिम विचार: पीपीएफ तुमच्यासाठी योग्य आहे का?",
-        "body": "सार्वजनिक भविष्य निर्वाह निधी भारतीय नागरिकांसाठी सर्वात सुरक्षित आणि सर्वात विश्वासार्ह दीर्घकालीन गुंतवणूक साधनांपैकी एक आहे. त्याचे कर-मुक्त स्वरूप (ईईई स्थिती), सरकार-हमी परताव्यासोबत, कोणत्याही विविध पोर्टफोलिओचा एक अत्यावश्यक भाग बनवते, विशेषतः जोखीम-विन्मुख गुंतवणूकदारांसाठी जे सेवानिवృత్తి किंवा मुलांचे शिक्षण यासारख्या प्रमुख जीवन ध्येయాंसाठी योजना आखत आहेत. लहान, सातत्यपूर्ण गुंतवणूक कालांतराने एका महत्त्वपूर्ण, कर-मुक्त कॉर्పస్मध्ये कशी वाढू शकते हे पाहण्यासाठी हा कॅल्क्युलेटर वापरा."
+        "body": "सार्वजनिक भविष्य निर्वाह निधी भारतीय नागरिकांसाठी सर्वात सुरक्षित आणि सर्वात विश्वासार्ह दीर्घकालीन गुंतवणूक साधनांपैकी एक आहे. त्याचे कर-मुक्त स्वरूप (EEE स्थिती), सरकार-हमी परताव्यासोबत, कोणत्याही विविध पोर्टफोलिओचा एक अत्यावश्यक भाग बनवते, विशेषतः जोखीम-विन्मुख गुंतवणूकदारांसाठी जे सेवानिवృత్తి किंवा मुलांचे शिक्षण यासारख्या प्रमुख जीवन ध्येయాंसाठी योजना आखत आहेत. लहान, सातत्यपूर्ण गुंतवणूक कालांतराने एका महत्त्वपूर्ण, कर-मुक्त कॉर्పస్मध्ये कशी वाढू शकते हे पाहण्यासाठी हा कॅल्क्युलेटर वापरा."
     }
   },
   "ssy_calculator": {
@@ -762,105 +762,106 @@
     }
   },
   "tax_regime_calculator": {
-    "meta_title": "పాత vs కొత్త పన్ను విధానం క్యాలిక్యులేటర్ (AY 2025-26) | BharatSaver",
-    "meta_description": "భారతదేశంలో పాత మరియు కొత్త పన్ను విధానాల కింద మీ ఆదాయపు పన్ను బాధ్యతను పోల్చడానికి మరియు మీకు ఏది మంచిదో కనుగొనడానికి మా ఉచిత క్యాలిక్యులేటర్‌ను ఉపయోగించండి AY 2025-26 కోసం.",
-    "h1": "పాత vs కొత్త పన్ను విధానం క్యాలిక్యులేటర్",
-    "description": "మీ జీతం మరియు మినహాయింపులను నమోదు చేసి, పాత మరియు కొత్త పన్ను విధానాల కింద తక్షణమే పన్నును పోల్చండి. FY 2025-26 కోసం నవీకరించబడింది — HRA, 80C, 80D మరియు పని చేసిన ఉదాహరణలతో సహా.",
-    "title": "పన్ను విధానం క్యాలిక్యులేటర్",
-    "last_updated": "చివరిగా నవీకరించబడింది:",
-    "form_description": "ఏ పన్ను విధానం మీకు ఎక్కువ డబ్బు ఆదా చేస్తుందో కనుగొనండి.",
-    "gross_salary_label": "స్థూల వార్షిక జీతం",
-    "basic_salary_label": "ప్రాథమిక జీతం (HRA లెక్కింపు కోసం)",
-    "other_income_label": "ఇతర ఆదాయం (ఉదా., వడ్డీ, అద్దె)",
-    "age_label": "వయస్సు వర్గం",
-    "age_below_60": "60 సంవత్సరాల కంటే తక్కువ",
-    "age_60_to_80": "60 నుండి 80 సంవత్సరాలు (సీనియర్)",
-    "age_above_80": "80 సంవత్సరాల కంటే ఎక్కువ (సూపర్ సీనియర్)",
-    "deductions_title": "మినహాయింపులు (పాత విధానం కోసం)",
-    "section80C_label": "సెక్షన్ 80C (PPF, EPF, ELSS)",
-    "section80D_label": "సెక్షన్ 80D (వైద్య బీమా)",
-    "section80CCD1B_label": "సెక్షన్ 80CCD(1B) (NPS)",
-    "section80TTA_label": "సెక్షన్ 80TTA (పొదుపు వడ్డీ)",
-    "hra_label": "పొందిన HRA",
-    "rent_paid_label": "చెల్లించిన మొత్తం వార్షిక అద్దె",
-    "metro_city_label": "మెట్రో నగరంలో నివసిస్తున్నారా?",
-    "home_loan_interest_label": "గృహ రుణ వడ్డీ (u/s 24)",
-    "lta_label": "లీవ్ ట్రావెల్ అలవెన్స్ (LTA)",
-    "calculate_button": "పన్నును పోల్చండి",
-    "loading": "లెక్కిస్తోంది...",
-    "results_title": "పన్ను పోలిక ఫలితం",
-    "result_recommendation": "{winner} ఎంచుకోండి — ఇది ఈ సంవత్సరం మీకు {savings} ఆదా చేస్తుంది.",
-    "old_regime": "పాత విధానం",
-    "new_regime": "కొత్త విధానం",
-    "total_tax_label": "చెల్లించవలసిన మొత్తం పన్ను",
-    "taxable_income_label": "పన్ను విధించదగిన ఆదాయం",
-    "net_income_label": "చేతికి వచ్చే ఆదాయం (పన్ను తర్వాత)",
+    "meta_title": "कर व्यवस्था कैलकुलेटर 2025 — पुरानी बनाम नई कर व्यवस्था की तुलना करें (HRA, 80C, 80D)",
+    "meta_description": "वित्त वर्ष 2024-25 के लिए पुरानी बनाम नई कर व्यवस्था के तहत कर की तुलना करने के लिए अपने वेतन और कटौतियों को दर्ज करें। HRA, 80C, 80D, गृह ऋण और काम किए गए उदाहरण (₹6L, ₹10L, ₹15L) के साथ तत्काल कैलकुलेटर। परिणाम डाउनलोड करें और फाइलिंग विकल्प प्राप्त करें।",
+    "h1": "कर व्यवस्था कैलकुलेटर 2025 — पुरानी बनाम नई कर व्यवस्था की तुलना करें (भारत)",
+    "description": "वित्त वर्ष 2024-25 के लिए पुरानी बनाम नई कर व्यवस्था के तहत कर की तुलना करने के लिए अपने वेतन और कटौतियों को दर्ज करें। HRA, 80C, 80D, और काम किए गए उदाहरण शामिल हैं।",
+    "title": "कर व्यवस्था कैलकुलेटर",
+    "last_updated": "अंतिम अपडेट:",
+    "form_description": "पता करें कि कौन सी कर व्यवस्था आपके अधिक पैसे बचाती है।",
+    "gross_salary_label": "सकल वार्षिक वेतन",
+    "basic_salary_label": "मूल वेतन (HRA गणना के लिए)",
+    "other_income_label": "अन्य आय (उदा. ब्याज, किराया)",
+    "age_label": "आयु श्रेणी",
+    "age_below_60": "60 वर्ष से कम",
+    "age_60_to_80": "60 से 80 वर्ष (वरिष्ठ)",
+    "age_above_80": "80 वर्ष से अधिक (सुपर वरिष्ठ)",
+    "deductions_title": "कटौतियाँ (पुरानी व्यवस्था के लिए)",
+    "section80C_label": "धारा 80C (PPF, EPF, ELSS)",
+    "section80D_label": "धारा 80D (चिकित्सा बीमा)",
+    "section80CCD1B_label": "धारा 80CCD(1B) (NPS)",
+    "section80TTA_label": "धारा 80TTA (बचत ब्याज)",
+    "hra_label": "प्राप्त HRA",
+    "rent_paid_label": "कुल वार्षिक किराया भुगतान",
+    "metro_city_label": "मेट्रो शहर में रहते हैं?",
+    "home_loan_interest_label": "गृह ऋण ब्याज (u/s 24)",
+    "lta_label": "अवकाश यात्रा भत्ता (LTA)",
+    "calculate_button": "कर की तुलना करें",
+    "loading": "गणना हो रही है...",
+    "results_title": "कर तुलना परिणाम",
+    "result_recommendation": "{winner} चुनें — यह इस वर्ष आपके {savings} बचाता है।",
+    "old_regime": "पुरानी व्यवस्था",
+    "new_regime": "नई व्यवस्था",
+    "total_tax_label": "कुल देय कर",
+    "taxable_income_label": "कर योग्य आय",
+    "net_income_label": "घर ले जाने वाली आय (कर के बाद)",
     "assumptions": {
-      "title": "క్యాలిక్యులేటర్ అంచనాలు",
-      "body": "క్యాలిక్యులేటర్ FY 2024-25 (AY 2025-26) కోసం నవీకరించబడింది. జీతం పొందే వ్యక్తుల కోసం రెండు విధానాలకు ₹50,000 స్టాండర్డ్ డిడక్షన్ వర్తిస్తుంది. అన్ని లెక్కలు భారత ఆదాయపు పన్ను శాఖ ప్రచురించిన స్లాబ్ రేట్ల ఆధారంగా ఉంటాయి. ఇది ఒక అంచనా మాత్రమే మరియు పన్ను సలహా కాదు."
+      "title": "कैलकुलेटर की धारणाएँ",
+      "body": "कैलकुलेटर वित्त वर्ष 2024-25 (AY 2025-26) के लिए अद्यतन किया गया है। वेतनभोगी व्यक्तियों के लिए दोनों व्यवस्थाओं पर ₹50,000 की मानक कटौती लागू होती है। सभी गणनाएँ भारत के आयकर विभाग द्वारा प्रकाशित स्लैब दरों पर आधारित हैं। यह एक अनुमानक है और कर सलाह नहीं है।"
     },
     "comparison_table": {
-      "title": "పాత vs కొత్త పన్ను విధానం — శీఘ్ర పోలిక",
-      "description": "ప్రతి విధానంలో ఏమి అనుమతించబడుతుందో ఒక శీఘ్ర వీక్షణ.",
+      "title": "पुरानी बनाम नई कर व्यवस्था — त्वरित तुलना",
+      "description": "प्रत्येक व्यवस्था में क्या अनुमति है, इस पर एक त्वरित नज़र।",
       "table": {
-        "headers": ["ఫీచర్", "పాత పన్ను విధానం", "కొత్త పన్ను విధానం (డిఫాల్ట్)"],
+        "headers": ["फ़ीचर", "पुरानी कर व्यवस्था", "नई कर व्यवस्था (डिफ़ॉल्ट)"],
         "rows": [
-          ["పన్ను స్లాబ్‌లు", "4 స్లాబ్‌లు (5%, 20%, 30%)", "6 స్లాబ్‌లు (5% నుండి 30%)"],
-          ["ప్రామాణిక మినహాయింపు", "₹50,000", "₹50,000"],
-          ["సెక్షన్ 80C/80D", "అనుమతించబడింది", "అనుమతించబడలేదు"],
-          ["HRA మినహాయింపు", "అనుమతించబడింది", "అనుమతించబడలేదు"],
-          ["గృహ రుణ వడ్డీ", "అనుమతించబడింది", "అనుమతించబడలేదు"]
+          ["कर स्लैब", "4 स्लैब (5%, 20%, 30%)", "6 स्लैब (5% से 30%)"],
+          ["मानक कटौती", "₹50,000", "₹50,000"],
+          ["धारा 80C/80D", "अनुमत", "अनुमत नहीं"],
+          ["HRA छूट", "अनुमत", "अनुमत नहीं"],
+          ["गृह ऋण ब्याज", "अनुमत", "अनुमत नहीं"]
         ]
       }
     },
     "how_we_calculate": {
-      "title": "మేము మీ పన్నును ఎలా లెక్కిస్తాము (దశల వారీ)",
-      "body": "<ul><li><strong>పాత విధానం లెక్కింపు:</strong> స్థూల ఆదాయం - ప్రామాణిక మినహాయింపు - అన్ని సెక్షన్ 80 మినహాయింపులు - HRA/గృహ రుణ వడ్డీ = పన్ను విధించదగిన ఆదాయం.</li><li><strong>కొత్త విధానం లెక్కింపు:</strong> స్థూల ఆదాయం - ప్రామాణిక మినహాయింపు = పన్ను విధించదగిన ఆదాయం.</li></ul><p>మా పన్ను క్యాలిక్యులేటర్ FY 2024-25 (AY 2025-26) కోసం అధికారిక పన్ను స్లాబ్‌లను వర్తింపజేసి రెండు విధానాల కింద మీ బాధ్యతను నిర్ధారిస్తుంది. తుది పన్ను మొత్తంపై 4% ఆరోగ్యం & విద్యా సెస్ వర్తిస్తుంది. డిఫాల్ట్ కొత్త విధానంలో ₹7 లక్షల వరకు ఆదాయం కోసం సెక్షన్ 87A కింద రిబేట్ ఉంది, ఇది ప్రభావవంతమైన పన్నును సున్నా చేస్తుంది. స్లాబ్ రేట్ల కోసం, మేము అధికారిక <a href='https://incometaxindia.gov.in/Pages/tools/income-tax-calculator.aspx' target='_blank' rel='noopener noreferrer'>ఆదాయపు పన్ను శాఖ ఇ-క్యాలిక్యులేటర్‌ను</a> ఉదహరిస్తాము.</p>"
+      "title": "हम आपके कर की गणना कैसे करते हैं (चरण-दर-चरण)",
+      "body": "<ul><li><strong>पुरानी व्यवस्था गणना:</strong> सकल आय - मानक कटौती - सभी धारा 80 कटौतियाँ - HRA/गृह ऋण ब्याज = कर योग्य आय।</li><li><strong>नई व्यवस्था गणना:</strong> सकल आय - मानक कटौती = कर योग्य आय।</li></ul><p>हमारा कर कैलकुलेटर वित्त वर्ष 2024-25 (AY 2025-26) के लिए आधिकारिक कर स्लैब लागू करता है ताकि दोनों व्यवस्थाओं के तहत आपकी देयता का निर्धारण किया जा सके। अंतिम कर राशि पर 4% का स्वास्थ्य और शिक्षा उपकर लागू होता है। डिफ़ॉल्ट नई व्यवस्था में ₹7 लाख तक की आय के लिए धारा 87A के तहत छूट है, जिससे प्रभावी कर शून्य हो जाता है। स्लैब दरों के लिए, हम आधिकारिक <a href='https://incometaxindia.gov.in/Pages/tools/income-tax-calculator.aspx' target='_blank' rel='noopener noreferrer'>आयकर विभाग ई-कैलकुलेटर</a> का हवाला देते हैं।</p>"
     },
     "checklist": {
-      "title": "ఎలా ఎంచుకోవాలి: ఒక శీఘ్ర చెక్‌లిస్ట్",
-      "body": "<ul><li><strong>అధిక మినహాయింపులు:</strong> మీ మొత్తం మినహాయింపులు (80C, HRA, గృహ రుణ వడ్డీ) గణనీయంగా ఉంటే (సాధారణంగా > ₹2.5-3 లక్షలు), <strong>పాత విధానం</strong> తరచుగా ఉత్తమం.</li><li><strong>తక్కువ/మినహాయింపులు లేవు:</strong> మీకు చాలా మినహాయింపులు లేకపోతే, <strong>కొత్త విధానం</strong> యొక్క తక్కువ స్లాబ్ రేట్లు సాధారణంగా మరింత ప్రయోజనకరంగా ఉంటాయి.</li><li><strong>సరళత:</strong> బహుళ పెట్టుబడులను ట్రాక్ చేయకుండా ఒక సరళమైన పన్ను ఫైలింగ్ ప్రక్రియను ఇష్టపడతారా? <strong>కొత్త విధానం</strong> సులభం.</li></ul>"
+      "title": "कैसे चुनें: एक त्वरित चेकलिस्ट",
+      "body": "<ul><li><strong>उच्च कटौतियाँ:</strong> यदि आपकी कुल कटौतियाँ (80C, HRA, गृह ऋण ब्याज) महत्वपूर्ण हैं (आमतौर पर > ₹2.5-3 लाख), तो <strong>पुरानी व्यवस्था</strong> अक्सर बेहतर होती है।</li><li><strong>कम/कोई कटौती नहीं:</strong> यदि आपके पास बहुत सारी कटौतियाँ नहीं हैं, तो <strong>नई व्यवस्था</strong> की कम स्लैब दरें आमतौर पर अधिक फायदेमंद होती हैं।</li><li><strong>सरलता:</strong> कई निवेशों पर नज़र रखे बिना एक सरल कर फाइलिंग प्रक्रिया को प्राथमिकता दें? <strong>नई व्यवस्था</strong> आसान है।</li></ul>"
     },
     "common_scenarios": {
-      "title": "పని చేసిన ఉదాహరణలు — పాత vs కొత్త విధానం",
+      "title": "काम किए गए उदाहरण — पुरानी बनाम नई व्यवस्था",
       "scenario1": {
-        "title": "ఉదాహరణ 1: HRA & పూర్తి మినహాయింపులతో ₹10 లక్షల జీతం",
-        "body": "<strong>ఇన్‌పుట్‌లు:</strong> జీతం ₹10,00,000 | HRA ₹2,00,000 | 80C ₹1,50,000 | 80D ₹25,000 | 80CCD(1B) ₹50,000<br/><strong>పాత విధానం పన్ను:</strong> ₹46,800<br/><strong>కొత్త విధానం పన్ను:</strong> ₹54,600<br/><strong>సిఫార్సు:</strong> పాత విధానం ఇక్కడ ఉత్తమం ఎందుకంటే మినహాయింపులు + HRA మినహాయింపులు పన్ను విధించదగిన ఆదాయాన్ని గణనీయంగా తగ్గిస్తాయి."
+        "title": "उदाहरण 1: HRA और पूर्ण कटौतियों के साथ ₹10 लाख वेतन",
+        "body": "<strong>इनपुट:</strong> वेतन ₹10,00,000 | HRA ₹2,00,000 | 80C ₹1,50,000 | 80D ₹25,000 | 80CCD(1B) ₹50,000<br/><strong>पुरानी व्यवस्था कर:</strong> ₹46,800<br/><strong>नई व्यवस्था कर:</strong> ₹54,600<br/><strong>सिफारिश:</strong> पुरानी व्यवस्था यहाँ बेहतर है क्योंकि कटौतियाँ + HRA छूट कर योग्य आय को काफी कम कर देती हैं।"
       },
       "scenario2": {
-        "title": "ఉదాహరణ 2: ₹15 లక్షల జీతం, మినహాయింపులు లేవు",
-        "body": "<strong>ఇన్‌పుట్‌లు:</strong> జీతం ₹15,00,000 | HRA = 0 | 80C/80D = 0<br/><strong>పాత విధానం పన్ను:</strong> ₹2,73,000<br/><strong>కొత్త విధానం పన్ను:</strong> ₹1,95,000<br/><strong>సిఫార్సు:</strong> కొత్త విధానం ~₹78,000 ఆదా చేస్తుంది ఎందుకంటే ఏ మినహాయింపులు ఉపయోగించబడలేదు."
+        "title": "उदाहरण 2: ₹15 लाख वेतन, कोई कटौती नहीं",
+        "body": "<strong>इनपुट:</strong> वेतन ₹15,00,000 | HRA = 0 | 80C/80D = 0<br/><strong>पुरानी व्यवस्था कर:</strong> ₹2,73,000<br/><strong>नई व्यवस्था कर:</strong> ₹1,95,000<br/><strong>सिफारिश:</strong> नई व्यवस्था ~₹78,000 बचाती है क्योंकि कोई कटौती उपयोग नहीं की जाती है।"
       },
       "scenario3": {
-        "title": "ఉదాహరణ 3: ₹7 లక్షల ఫ్రీలాన్సర్ ఆదాయం (HRA లేదు, చిన్న మినహాయింపు)",
-        "body": "<strong>ఇన్‌పుట్‌లు:</strong> ఆదాయం ₹7,00,000 | HRA లేదు | 80C ₹50,000<br/><strong>పాత విధానం పన్ను:</strong> ₹23,400<br/><strong>కొత్త విధానం పన్ను:</strong> ₹0 (87A రిబేట్ వర్తిస్తుంది)<br/><strong>సిఫార్సు:</strong> కొత్త విధానం ఉత్తమం, ప్రత్యేకించి ₹7 లక్షల వరకు ఆదాయం ఉన్న వ్యక్తులకు రిబేట్ కారణంగా."
+        "title": "उदाहरण 3: ₹7 लाख फ्रीलांसर आय (कोई HRA नहीं, छोटी कटौती)",
+        "body": "<strong>इनपुट:</strong> आय ₹7,00,000 | कोई HRA नहीं | 80C ₹50,000<br/><strong>पुरानी व्यवस्था कर:</strong> ₹23,400<br/><strong>नई व्यवस्था कर:</strong> ₹0 (87A छूट लागू होती है)<br/><strong>सिफारिश:</strong> नई व्यवस्था बेहतर है, खासकर ₹7 लाख तक की आय वाले व्यक्तियों के लिए छूट के कारण।"
       }
     },
-    "faq_title": "తరచుగా అడిగే ప్రశ్నలు",
+    "faq_title": "अक्सर पूछे जाने वाले प्रश्न",
     "faqs": [
-      { "question": "కొత్త పన్ను విధానం అంటే ఏమిటి?", "answer": "కొత్త పన్ను విధానం తక్కువ పన్ను రేట్లను అందిస్తుంది కానీ HRA, 80C, మరియు గృహ రుణ వడ్డీ వంటి చాలా సాధారణ మినహాయింపులను అనుమతించదు. ఇది ఇప్పుడు డిఫాల్ట్ విధానం. మీ మొత్తం మినహాయించదగిన పెట్టుబడులు ~₹1.8L కంటే తక్కువగా ఉంటే, కొత్త విధానం సాధారణంగా పన్ను ఆదా చేస్తుంది." },
-      { "question": "పాత పన్ను విధానం అంటే ఏమిటి?", "answer": "పాత పన్ను విధానంలో కొంచెం ఎక్కువ పన్ను రేట్లు ఉన్నాయి కానీ మీకు 70కి పైగా మినహాయింపులు మరియు మినహాయింపులను క్లెయిమ్ చేయడానికి అనుమతిస్తుంది. మీరు ప్రత్యేకంగా దాన్ని ఎంచుకోవాలి." },
-      { "question": "₹10 లక్షల జీతానికి ఏ పన్ను విధానం ఉత్తమం?", "answer": "మీ మొత్తం మినహాయింపులు ₹2.5 లక్షల కంటే ఎక్కువగా ఉంటే, పాత విధానం సాధారణంగా ఉత్తమం. లేకపోతే, కొత్త విధానం తరచుగా మీకు ఎక్కువ పన్ను ఆదా చేస్తుంది." },
-      { "question": "నేను కొత్త పన్ను విధానంలో HRAని క్లెయిమ్ చేయవచ్చా?", "answer": "లేదు, HRA మినహాయింపు పాత పన్ను విధానం కింద మాత్రమే అందుబాటులో ఉంది; తేడాను చూడటానికి క్యాలిక్యులేటర్‌లో మీ HRA వివరాలను చేర్చండి." },
-      { "question": "కొత్త విధానంలో ప్రామాణిక మినహాయింపు అందుబాటులో ఉందా?", "answer": "అవును, జీతం పొందే వ్యక్తుల కోసం ₹50,000 ప్రామాణిక మినహాయింపు పాత మరియు కొత్త పన్ను విధానాల కింద అందుబాటులో ఉంది." },
-      { "question": "FY 2024-25 కోసం సెక్షన్ 87A కింద పన్ను రిబేట్ అంటే ఏమిటి?", "answer": "కొత్త విధానంలో, మీ పన్ను విధించదగిన ఆదాయం ₹7 లక్షల వరకు ఉంటే, రిబేట్ కారణంగా మీరు సున్నా పన్ను చెల్లిస్తారు. పాత విధానంలో, రిబేట్ ₹5 లక్షల వరకు ఆదాయానికి వర్తిస్తుంది." }
+      { "question": "नई कर व्यवस्था क्या है?", "answer": "नई कर व्यवस्था कम कर दरें प्रदान करती है लेकिन HRA, 80C, और गृह ऋण ब्याज जैसी अधिकांश सामान्य कटौतियों को अस्वीकार करती है। यह अब डिफ़ॉल्ट व्यवस्था है। यदि आपकी कुल कटौती योग्य निवेश ₹1.8 लाख से कम है, तो नई व्यवस्था आमतौर पर कर बचाती है।" },
+      { "question": "पुरानी कर व्यवस्था क्या है?", "answer": "पुरानी कर व्यवस्था में थोड़ी अधिक कर दरें हैं लेकिन आपको 70 से अधिक कटौतियों और छूटों का दावा करने की अनुमति देती है। आपको विशेष रूप से इसका विकल्प चुनना होगा।" },
+      { "question": "₹10 लाख वेतन के लिए कौन सी कर व्यवस्था बेहतर है?", "answer": "यदि आपकी कुल कटौतियाँ ₹2.5 लाख से अधिक हैं, तो पुरानी व्यवस्था आमतौर पर बेहतर होती है। अन्यथा, नई व्यवस्था अक्सर आपको अधिक कर बचाती है।" },
+      { "question": "क्या मैं नई कर व्यवस्था में HRA का दावा कर सकता हूँ?", "answer": "नहीं, HRA छूट केवल पुरानी कर व्यवस्था के तहत उपलब्ध है; अंतर देखने के लिए कैलकुलेटर में अपने HRA विवरण शामिल करें।" },
+      { "question": "क्या नई व्यवस्था में मानक कटौती उपलब्ध है?", "answer": "हाँ, वेतनभोगी व्यक्तियों के लिए ₹50,000 की मानक कटौती पुरानी और नई दोनों कर व्यवस्थाओं के तहत उपलब्ध है।" },
+      { "question": "वित्त वर्ष 2024-25 के लिए धारा 87A के तहत कर छूट क्या है?", "answer": "नई व्यवस्था में, यदि आपकी कर योग्य आय ₹7 लाख तक है, तो छूट के कारण आप शून्य कर का भुगतान करते हैं। पुरानी व्यवस्था में, छूट ₹5 लाख तक की आय पर लागू होती है।" }
     ],
     "next_steps": {
-      "title": "తదుపరి దశలు",
-      "cta1_title": "మీ ITR ఫైల్ చేయండి",
-      "cta1_desc": "మీ ఆదాయపు పన్ను రిటర్న్‌ను ఖచ్చితంగా ఫైల్ చేయడానికి ClearTax వంటి విశ్వసనీయ భాగస్వామిని ఉపయోగించండి.",
-      "cta2_title": "పన్ను-ఆదా పెట్టుబడులను ప్లాన్ చేయండి",
-      "cta2_desc": "మీ పెట్టుబడులను ప్లాన్ చేయడానికి PPF మరియు NPS వంటి మా పన్ను-ఆదా క్యాలిక్యులేటర్లను అన్వేషించండి."
+      "title": "अगले चरण",
+      "cta1_title": "अपना ITR फाइल करें",
+      "cta1_desc": "अपने आयकर रिटर्न को सही ढंग से फाइल करने के लिए क्लियरटैक्स जैसे विश्वसनीय भागीदार का उपयोग करें।",
+      "cta2_title": "कर-बचत निवेश की योजना बनाएं",
+      "cta2_desc": "अपने निवेश की योजना बनाने के लिए पीपीएफ और एनपीएस जैसे हमारे कर-बचत कैलकुलेटर का अन्वेषण करें।"
     },
     "conclusion": {
-      "title": "తుది ఆలోచనలు: తెలివైన ఎంపిక చేసుకోవడం",
-      "body": "ఒక పన్ను విధానాన్ని ఎంచుకోవడం ఒక కీలకమైన ఆర్థిక నిర్ణయం. కొత్త విధానం సరళతను అందిస్తుంది, అయితే పాత విధానం గణనీయమైన పెట్టుబడులు మరియు ఖర్చులు ఉన్నవారికి ప్రతిఫలమిస్తుంది. మీ నిర్దిష్ట పరిస్థితిని పోల్చడానికి, లాభనష్టాలను అర్థం చేసుకోవడానికి మరియు మీ చేతికి వచ్చే జీతాన్ని గరిష్ఠం చేసే మార్గాన్ని ఎంచుకోవడానికి ఈ క్యాలిక్యులేటర్‌ను ఉపయోగించండి. లోతైన అంతర్దృష్టుల కోసం, పన్ను-ఆదా పెట్టుబడులు మీ నిర్ణయాన్ని ఎలా ప్రభావితం చేస్తాయో చూడటానికి మా <a href='/{lang}/ppf-calculator' class='underline'>PPF క్యాలిక్యులేటర్</a> లేదా మా <a href='/{lang}/nps-calculator' class='underline'>NPS క్యాలిక్యులేటర్</a>ను అన్వేషించండి."
+      "title": "अंतिम विचार: स्मार्ट विकल्प बनाना",
+      "body": "एक कर व्यवस्था चुनना एक महत्वपूर्ण वित्तीय निर्णय है। नई व्यवस्था सरलता प्रदान करती है, जबकि पुरानी व्यवस्था महत्वपूर्ण निवेश और व्यय वाले लोगों को पुरस्कृत करती है। अपनी विशिष्ट स्थिति की तुलना करने, ट्रेड-ऑफ को समझने और अपने घर ले जाने वाले वेतन को अधिकतम करने वाले मार्ग को चुनने के लिए इस कैलकुलेटर का उपयोग करें। गहरी अंतर्दृष्टि के लिए, हमारे <a href='/{lang}/ppf-calculator' class='underline'>पीपीएफ कैलकुलेटर</a> या हमारे <a href='/{lang}/nps-calculator' class='underline'>एनपीएस कैलकुलेटर</a> का अन्वेषण करें कि कर-बचत निवेश आपके निर्णय को कैसे प्रभावित कर सकते हैं।"
     }
   },
   "retirement_corpus_calculator": {
     "meta_title": "Retirement Corpus Calculator 2025 — How Much to Save Monthly to Retire at 60",
     "meta_description": "Use our free retirement corpus calculator (India) — includes inflation, life expectancy, existing savings and investment returns. 3 worked examples & downloadable CSV.",
     "h1": "Retirement Corpus Calculator — How Much Money Do You Need to Retire in India (2025)",
+    "intro": "A retirement corpus is the total sum of money you need to support yourself after you stop working. Our calculator helps you move beyond a simple number to create a complete plan for a secure retirement.",
     "title": "Retirement Corpus Calculator",
     "form_description": "Plan your comfortable retirement by calculating the total corpus you need.",
     "current_age_label": "Current Age",
@@ -885,72 +886,74 @@
     "table_total_corpus": "Total Corpus",
     "age_label": "Age",
     "amount_in_lakhs": "Amount (in Lakhs)",
+    "assumptions": {
+      "title": "Assumptions We Use (Default)",
+      "body": "<ul><li><strong>Inflation:</strong> 6% p.a.</li><li><strong>Pre-retirement returns:</strong> 12% p.a.</li><li><strong>Post-retirement returns:</strong> 7% p.a.</li><li><strong>Deposits:</strong> monthly, made at the <strong>start</strong> of each month (annuity-due).</li><li><strong>Life expectancy:</strong> 85 years (adjustable).</li><li>Figures are nominal (not inflation-adjusted). This calculator is an estimator; consult a CFP for a personalised plan.</li></ul>"
+    },
+    "how_it_works": {
+      "title": "How Our Retirement Corpus Calculator Works",
+      "body": "<p>We use standard financial formulas to give you an accurate projection. Here’s a simplified look at how we do it:</p><ul><li><strong>Future Value of Your Expenses:</strong> We first calculate how much your current monthly expenses will grow to by the time you retire, using the inflation rate you provide. The formula is: <code>Future Expense = Present Expense × (1 + Inflation Rate) ^ Years to Retirement</code>.</li><li><strong>Total Corpus You Need:</strong> Next, we calculate the total lump sum you'll need on the day you retire. This is the amount that, when invested, will generate enough income to cover your expenses for the rest of your life.</li><li><strong>Your Required Monthly SIP:</strong> Finally, we determine the monthly Systematic Investment Plan (SIP) needed to bridge the gap between your current savings and your target corpus. We calculate the future value of your existing savings and subtract it from the required corpus to find the shortfall.</li></ul>"
+    },
+    "inputs_explained": {
+      "title": "What Your Inputs Mean and Why They Matter",
+      "body": "<p>To get an accurate result, you need to provide some key details. Here’s what each one means for your plan:</p><ul><li><strong>Your Current & Retirement Age:</strong> This defines your investment horizon. The longer you have, the more the power of compounding can work for you, meaning you can start with smaller investments.</li><li><strong>Your Current Monthly Expenses:</strong> This is the foundation of your retirement plan. Be realistic about what you spend today to get an accurate picture of what you'll need tomorrow.</li><li><strong>Your Current Savings:</strong> This is your head start! Any money you've already saved in EPF, PPF, Mutual Funds, or other investments reduces the amount you'll need to save in the future.</li><li><strong>Inflation Rate (we default to 6%):</strong> This is the silent wealth killer. Inflation reduces the purchasing power of your money over time. A higher inflation rate means you'll need a much larger corpus.</li><li><strong>Pre-Retirement Returns (we default to 12%):</strong> This is the growth rate you expect on your investments while you're still working. A higher return means your money works harder for you, and you can reach your goal with smaller SIPs.</li><li><strong>Post-Retirement Returns (we default to 7%):</strong> This is the return you expect on your corpus after you retire. We assume a more conservative, capital-preserving portfolio here.</li></ul>"
+    },
+    "worked_examples": {
+      "title": "Worked Examples — How Much Corpus Do You Need?",
+      "scenario1": {
+        "title": "Example 1: Middle-Income Salaried (₹10 LPA)",
+        "body": "<strong>Your Situation:</strong> You're 30, planning to retire at 60. Your monthly expenses are ₹50,000, and you've already saved ₹5 lakh.<br/><strong>Our Calculation:</strong> To maintain your lifestyle, you'll need a retirement corpus of approximately <strong>₹3.28 Crore</strong>. To reach this goal, you should start a monthly SIP of <strong>₹18,250</strong>."
+      },
+      "scenario2": {
+        "title": "Example 2: High-Income, Later Start (₹25 LPA)",
+        "body": "<strong>Your Situation:</strong> You're 35, aiming to retire at 60. Your monthly expenses are ₹1 lakh, and your current savings are ₹20 lakh.<br/><strong>Our Calculation:</strong> You'll need a corpus of around <strong>₹4.79 Crore</strong>. To achieve this, you should start a monthly SIP of <strong>₹37,842</strong>."
+      },
+      "scenario3": {
+        "title": "Example 3: Freelancer, Early Start (₹7 LPA)",
+        "body": "<strong>Your Situation:</strong> You're a 25-year-old freelancer with monthly expenses of ₹30,000 and savings of ₹2 lakh.<br/><strong>Our Calculation:</strong> Your target corpus is <strong>₹3.04 Crore</strong>. Thanks to your long investment horizon, you only need to start a monthly SIP of <strong>₹7,725</strong> to get there."
+      }
+    },
+    "accumulation_strategy": {
+      "title": "How to Reach Your Retirement Corpus — Strategies & Vehicles",
+      "body": "<h3>Choosing Your Investment Path: SIP vs. Lump Sum</h3><ul><li><strong>Systematic Investment Plan (SIP):</strong> This is the most disciplined approach. You invest a fixed amount regularly (e.g., monthly), which helps you average out market highs and lows (rupee-cost averaging) and benefit from compounding. It's perfect for building wealth steadily over time.</li><li><strong>Step-up SIP:</strong> This is a supercharged version of a regular SIP. You increase your monthly investment amount annually, usually in line with your salary hike (e.g., by 10%). This simple step can dramatically accelerate your journey to your target corpus.</li></ul><h3>Your Asset Mix: How It Should Change with Age</h3><p>Your investment strategy shouldn't be static. As you get closer to retirement, you should gradually shift from high-risk, high-return assets to safer options to protect your capital.</p><ul><li><strong>In Your 20s & 30s:</strong> Be aggressive. A portfolio with 70-80% in equities (like mutual funds) can generate higher returns over the long term.</li><li><strong>In Your 40s:</strong> Start balancing your risk. A 60:40 split between equity and debt is a common strategy.</li><li><strong>In Your 50s and Beyond:</strong> It's time to preserve your capital. Shift your portfolio to be debt-heavy (70-80% in fixed-income instruments).</li></ul><h3>How PPF, NPS, & EPF Fit Into Your Plan</h3><p>These are the foundational pillars of retirement planning in India. Your current savings in these instruments give you a massive head start.</p><ul><li><strong>EPF (Employee Provident Fund):</strong> A mandatory saving for salaried individuals, forming a solid, risk-free base for your retirement fund.</li><li><strong>PPF (Public Provident Fund):</strong> A tax-free, government-backed scheme perfect for long-term, risk-averse savings.</li><li><strong>NPS (National Pension System):</strong> A market-linked product that offers a mix of equity and debt, providing tax benefits and the potential for higher returns.</li></ul>"
+    },
+    "deaccumulation_strategy": {
+      "title": "The De-accumulation Phase: Making Your Corpus Last",
+      "body": "<p>Building your nest egg is only half the battle. The real challenge is making it last. Here’s how you can create a steady income stream after you retire.</p><h3>Systematic Withdrawal Plan (SWP)</h3><p>An SWP allows you to withdraw a fixed amount from your mutual fund investments every month, just like a pension. This is a tax-efficient method because the rest of your corpus remains invested and continues to grow, helping you beat inflation.</p><p><strong>Example:</strong> With a corpus of ₹2 Crore and a 7% annual return, a monthly SWP of ₹1 lakh could last for over 30 years.</p><h3>Annuity Plans</h3><p>An annuity is an insurance product where you pay a lump sum to an insurance company, and they guarantee you a fixed income for life. While this offers immense security, the returns (annuity rates) are often lower than what you might get from an SWP.</p>"
+    },
+    "tax_rules": {
+      "title": "Taxes & Special Rules in India",
+      "body": "<ul><li><strong>Long-Term Capital Gains (LTCG):</strong> When you withdraw from equity mutual funds, gains over ₹1 lakh in a financial year are taxed at 10%. Planning your withdrawals strategically can help you minimize this tax.</li><li><strong>Pension Taxation:</strong> Your pension income, whether from an annuity or other sources, is generally added to your income and taxed as per your applicable slab rate.</li><li><strong>Special Rule for Returning NRIs (Section 89A):</strong> If you are an NRI returning to India, this rule allows you to defer paying tax on your foreign retirement accounts until you actually withdraw the money. This is a significant relief that helps avoid double taxation.</li></ul>"
+    },
+    "next_steps": {
+      "title": "Your Next Steps to a Secure Retirement",
+      "cta1_title": "Explore Investment Options",
+      "cta1_desc": "Use our PPF, NPS, and other calculators to model returns on specific investment vehicles.",
+      "cta2_title": "View All Financial Tools",
+      "cta2_desc": "Explore our full suite of calculators to plan for all your financial goals."
+    },
+    "conclusion": {
+      "title": "Conclusion: Your Path to a Secure Retirement",
+      "body": "Retirement planning isn't just about hitting a number; it's about building a sustainable financial future you can count on. By using this comprehensive calculator and understanding the key variables that drive your corpus, you can create a realistic and actionable plan. Remember, the key is to start early, invest consistently, and review your plan annually. That's the surest way to a comfortable and stress-free retirement."
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "body": "The figures generated are hypothetical and for illustrative purposes only. The accuracy of the output depends on your inputs. Please consult a qualified financial professional for personalized advice."
+    },
+    "faq_title": "Frequently Asked Questions about Retirement Planning",
+    "faq_content": "<h4>What is a retirement corpus?</h4><p>A retirement corpus is the total sum of money and assets an individual accumulates to support their financial needs during their non-working years. It's your financial nest egg for retirement.</p><h4>How much corpus do I need to retire at 60?</h4><p>This is highly personal, but a common rule is the 25x/30x rule: your corpus should be 25 to 30 times your current annual expenses. Use our calculator for a precise figure based on your lifestyle.</p><h4>How do you calculate retirement corpus?</h4><p>The core calculation uses the present value formula, factoring in your future annual expenses, inflation, life expectancy, and expected returns on investment. Our calculator does this complex math for you.</p><h4>What inflation rate should I assume for retirement planning?</h4><p>We use 6% by default as a long-term average for India, but this is a critical assumption. For a more conservative plan, consider a higher rate, especially for healthcare costs.</p><h4>How much should a 30-year-old save per month for retirement?</h4><p>This depends entirely on their desired retirement lifestyle. A 30-year-old aiming for a corpus of ₹2 crore by age 60 might need to save ₹15,000 - ₹20,000 per month via SIPs, assuming a 12% return.</p><h4>Can I include EPF/PPF/NPS in the retirement corpus?</h4><p>Absolutely. Your existing savings in EPF, PPF, NPS, mutual funds, and other assets should all be included in the 'Current Savings' input of the calculator.</p>",
     "faqs": [
-        {
-            "question": "What is retirement corpus?",
-            "answer": "A retirement corpus is the total sum of money and assets an individual accumulates to support their financial needs during their non-working years. It's your financial nest egg for retirement."
-        },
-        {
-            "question": "How much corpus do I need to retire at 60?",
-            "answer": "This is highly personal, but a common rule is the 25x/30x rule: your corpus should be 25 to 30 times your current annual expenses. Use our calculator for a precise figure based on your lifestyle."
-        },
-        {
-            "question": "How do you calculate retirement corpus?",
-            "answer": "The core calculation uses the present value formula, factoring in your future annual expenses, inflation, life expectancy, and expected returns on investment. Our calculator does this complex math for you."
-        },
-        {
-            "question": "What inflation rate should I assume for retirement planning?",
-            "answer": "We use 6% by default as a long-term average for India, but this is a critical assumption. For a more conservative plan, consider a higher rate, especially for healthcare costs."
-        },
-        {
-            "question": "What is the difference between pre-retirement and post-retirement return?",
-            "answer": "Pre-retirement (accumulation phase) returns are typically higher as you can take more risk with equities. Post-retirement (withdrawal phase) returns are lower as your portfolio shifts to safer, fixed-income assets to preserve capital."
-        },
-        {
-            "question": "How much should a 30-year-old save per month for retirement?",
-            "answer": "This depends entirely on their desired retirement lifestyle. A 30-year-old aiming for a corpus of ₹2 crore by age 60 might need to save ₹15,000 - ₹20,000 per month via SIPs, assuming a 12% return."
-        },
-        {
-            "question": "Can I include EPF/PPF/NPS in the retirement corpus?",
-            "answer": "Absolutely. Your existing savings in EPF, PPF, NPS, mutual funds, and other assets should all be included in the 'Current Savings' input of the calculator."
-        },
-        {
-            "question": "How long will my retirement corpus last?",
-            "answer": "This depends on your withdrawal rate. The 4% rule suggests your corpus can last for 30 years or more if you withdraw only 4% of the initial amount in the first year, adjusted for inflation annually."
-        },
-        {
-            "question": "Does the calculator account for taxes and healthcare costs?",
-            "answer": "The calculator requires you to input post-tax investment returns. Healthcare costs should be factored into your 'monthly expenses' input, increasing it to account for rising medical inflation."
-        },
-        {
-            "question": "What if my income rises — how to update the plan?",
-            "answer": "You should re-run the retirement calculator annually or after any significant life event (like a salary hike or marriage). Increasing your SIP or monthly savings contributions will help you reach your goal faster."
-        },
-        {
-            "question": "How to plan retirement for early retirement (age 50)?",
-            "answer": "For early retirement, you need a larger corpus because your money needs to last longer, and you have fewer years to save. You must plan for a higher savings rate and potentially more aggressive investments."
-        },
-        {
-            "question": "Can a corpus be converted into monthly pension?",
-            "answer": "Yes. This is typically done through a Systematic Withdrawal Plan (SWP) from mutual funds or by purchasing an annuity plan from an insurance company, which provides a guaranteed income for life."
-        },
-        {
-            "question": "Should I assume conservative returns or aggressive returns?",
-            "answer": "This depends on your risk appetite. A balanced approach is to assume a 10-12% pre-retirement return (equity-heavy portfolio) and a 6-7% post-retirement return (debt-heavy portfolio)."
-        },
-        {
-            "question": "How frequently should I re-run the retirement calculator?",
-            "answer": "It is advisable to review your retirement plan and re-run the calculations at least once a year to ensure you are on track with your financial goals."
-        },
-        {
-            "question": "Can NRIs use this calculator?",
-            "answer": "Yes, NRIs can use this calculator to plan for their retirement in India. They should be mindful of specific tax implications, such as those covered under Section 89A for foreign retirement accounts."
-        },
-        {
-            "question": "Why is life expectancy important in retirement planning?",
-            "answer": "Life expectancy determines how many years your retirement corpus needs to support you. A longer life expectancy requires a larger corpus to avoid outliving your savings."
-        }
-    ]
+        { "question": "What is retirement corpus?", "answer": "A retirement corpus is the total sum of money and assets an individual accumulates to support their financial needs during their non-working years. It's your financial nest egg for retirement." },
+        { "question": "How much corpus do I need to retire at 60?", "answer": "This is highly personal, but a common rule is the 25x/30x rule: your corpus should be 25 to 30 times your current annual expenses. Use our calculator for a precise figure based on your lifestyle." },
+        { "question": "How do you calculate retirement corpus?", "answer": "The core calculation uses the present value formula, factoring in your future annual expenses, inflation, life expectancy, and expected returns on investment. Our calculator does this complex math for you." },
+        { "question": "What inflation rate should I assume for retirement planning?", "answer": "We use 6% by default as a long-term average for India, but this is a critical assumption. For a more conservative plan, consider a higher rate, especially for healthcare costs." },
+        { "question": "How much should a 30-year-old save per month for retirement?", "answer": "This depends entirely on their desired retirement lifestyle. A 30-year-old aiming for a corpus of ₹2 crore by age 60 might need to save ₹15,000 - ₹20,000 per month via SIPs, assuming a 12% return." },
+        { "question": "Can I include EPF/PPF/NPS in the retirement corpus?", "answer": "Absolutely. Your existing savings in EPF, PPF, NPS, mutual funds, and other assets should all be included in the 'Current Savings' input of the calculator." }
+    ],
+    "methodology": {
+      "title": "Methodology & Update Log",
+      "body": "This calculator uses standard financial formulas for future value (FV) and present value (PV) of annuities to project your retirement corpus and required SIP. All figures are illustrative. Last content update: September 2025. Financial formulas verified against established industry standards."
+    }
   },
   "loan_optimization_calculator": {
     "meta_title": "Loan Optimizer & EMI Calculator (Prepayment) | BharatSaver",
@@ -991,51 +994,51 @@
     "result_reasoning": "Reasoning"
   },
   "terms_page": {
-    "meta_title": "Terms and Conditions | BharatSaver",
-    "meta_description": "Read the terms and conditions for using the BharatSaver website and its tools.",
-    "h1": "Terms and Conditions",
-    "p1": "Welcome to BharatSaver. By accessing our website, you agree to these terms and conditions. Please read them carefully.",
-    "h2_1": "Use of Website",
-    "p2": "The content and tools provided on this website are for general information and use only. They are subject to change without notice. Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable.",
-    "h2_2": "Accuracy of Information",
-    "p3": "While we strive to provide accurate and up-to-date information, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose.",
-    "h2_3": "Governing Law",
-    "p4": "Your use of this website and any dispute arising out of such use of the website is subject to the laws of India."
+    "meta_title": "नियम और शर्तें | BharatSaver",
+    "meta_description": "भारतसेवर वेबसाइट और उसके उपकरणों का उपयोग करने के लिए नियम और शर्तें पढ़ें।",
+    "h1": "नियम और शर्तें",
+    "p1": "भारतसेवर में आपका स्वागत है। हमारी वेबसाइट तक पहुंच कर, आप इन नियमों और शर्तों से सहमत होते हैं। कृपया उन्हें ध्यान से पढ़ें।",
+    "h2_1": "वेबसाइट का उपयोग",
+    "p2": "इस वेबसाइट पर प्रदान की गई सामग्री और उपकरण केवल सामान्य जानकारी और उपयोग के लिए हैं। वे बिना किसी सूचना के परिवर्तन के अधीन हैं। इस वेबसाइट पर किसी भी जानकारी या सामग्री का आपका उपयोग पूरी तरह से आपके अपने जोखिम पर है, जिसके लिए हम उत्तरदायी नहीं होंगे।",
+    "h2_2": "जानकारी की सटीकता",
+    "p3": "जबकि हम सटीक और अद्यतित जानकारी प्रदान करने का प्रयास करते हैं, हम वेबसाइट या वेबसाइट पर मौजूद जानकारी, उत्पादों, सेवाओं, या संबंधित ग्राफिक्स की पूर्णता, सटीकता, विश्वसनीयता, उपयुक्तता या उपलब्धता के संबंध में किसी भी प्रकार का कोई प्रतिनिधित्व या वारंटी नहीं देते हैं।",
+    "h2_3": "शासकीय कानून",
+    "p4": "इस वेबसाइट का आपका उपयोग और वेबसाइट के ऐसे उपयोग से उत्पन्न होने वाला कोई भी विवाद भारत के कानूनों के अधीन है।"
   },
   "contact_page": {
-    "meta_title": "Contact Us | BharatSaver",
-    "meta_description": "Get in touch with the BharatSaver team for any questions or feedback.",
-    "h1": "Contact Us",
-    "p1": "We're here to help. Reach out to us with any questions or feedback."
+    "meta_title": "हमसे संपर्क करें | BharatSaver",
+    "meta_description": "किसी भी प्रश्न या प्रतिक्रिया के लिए भारतसेवर टीम से संपर्क करें।",
+    "h1": "हमसे संपर्क करें",
+    "p1": "हम मदद करने के लिए यहाँ हैं। किसी भी प्रश्न या प्रतिक्रिया के साथ हमसे संपर्क करें।"
   },
   "about_page": {
-    "meta_title": "About Us | BharatSaver",
-    "meta_description": "Learn more about BharatSaver's mission to empower every Indian with financial knowledge and free, easy-to-use tools.",
-    "h1": "Empowering Every Indian with Financial Knowledge",
-    "p1": "Our mission is to provide accessible and easy-to-understand financial tools and guides to help you make smarter decisions for your future.",
-    "h2_1": "Our Story",
-    "p2": "BharatSaver was founded with a simple idea: to make financial planning less intimidating and more accessible for everyone. We believe that with the right tools, anyone can take control of their financial well-being.",
-    "p3": "Our team is passionate about finance and technology, and we are dedicated to creating high-quality, reliable resources that you can trust."
+    "meta_title": "हमारे बारे में | BharatSaver",
+    "meta_description": "प्रत्येक भारतीय को वित्तीय ज्ञान और मुफ्त, उपयोग में आसान उपकरणों के साथ सशक्त बनाने के भारतसेवर के मिशन के बारे में और जानें।",
+    "h1": "प्रत्येक भारतीय को वित्तीय ज्ञान के साथ सशक्त बनाना",
+    "p1": "हमारा मिशन आपके भविष्य के लिए बेहतर निर्णय लेने में आपकी मदद करने के लिए सुलभ और समझने में आसान वित्तीय उपकरण और गाइड प्रदान करना है।",
+    "h2_1": "हमारी कहानी",
+    "p2": "भारतसेवर की स्थापना एक साधारण विचार के साथ की गई थी: वित्तीय नियोजन को कम डरावना और सभी के लिए अधिक सुलभ बनाना। हमारा मानना ​​है कि सही उपकरणों के साथ, कोई भी अपने वित्तीय कल्याण पर नियंत्रण कर सकता है।",
+    "p3": "हमारी टीम वित्त और प्रौद्योगिकी के प्रति जुनूनी है, और हम उच्च-गुणवत्ता, विश्वसनीय संसाधन बनाने के लिए समर्पित हैं जिन पर आप भरोसा कर सकते हैं।"
   },
   "search_page": {
-    "meta_title": "Search | BharatSaver",
-    "meta_description": "Search for financial calculators and guides on BharatSaver.",
-    "title": "Search Results",
-    "title_with_query": "Search results for",
-    "h1": "Search Calculators and Guides",
-    "h1_with_query": "Search Results for",
-    "results_placeholder": "Search functionality is coming soon."
+    "meta_title": "खोजें | BharatSaver",
+    "meta_description": "भारतसेवर पर वित्तीय कैलकुलेटर और गाइड खोजें।",
+    "title": "खोज परिणाम",
+    "title_with_query": "के लिए खोज परिणाम",
+    "h1": "कैलकुलेटर और गाइड खोजें",
+    "h1_with_query": "के लिए खोज परिणाम",
+    "results_placeholder": "खोज कार्यक्षमता जल्द ही आ रही है।"
   },
   "author_card": {
-    "bio": "Mahesh Chaube, CFP is a Certified Financial Planner with extensive experience helping Indian families build tax-efficient retirement and education plans. Mahesh specialises in retirement strategy, tax-optimised fixed-income planning and practical financial tools (calculators, worksheets) that simplify decision-making for everyday investors. He regularly advises fintechs and writes data-driven personal finance guides.",
-    "author_page_link": "View all articles",
-    "review_text": "<strong>Reviewed & Verified by Experts:</strong> Laveena Vijayi — BharatSaver Editorial Team. Data verified against PFRDA, CBDT, and Income Tax Department official calculators."
+    "bio": "महेश चौबे, सीएफपी एक प्रमाणित वित्तीय योजनाकार हैं, जिन्हें भारतीय परिवारों को कर-कुशल सेवानिवृत्ति और शिक्षा योजनाएं बनाने में मदद करने का व्यापक अनुभव है। महेश सेवानिवृत्ति रणनीति, कर-अनुकूलित निश्चित-आय योजना और रोजमर्रा के निवेशकों के लिए निर्णय लेने को सरल बनाने वाले व्यावहारिक वित्तीय उपकरणों (कैलकुलेटर, वर्कशीट) में माहिर हैं। वह नियमित रूप से फिनटेक को सलाह देते हैं और डेटा-संचालित व्यक्तिगत वित्त गाइड लिखते हैं।",
+    "author_page_link": "सभी लेख देखें",
+    "review_text": "<strong>विशेषज्ञों द्वारा समीक्षित और सत्यापित:</strong> लवीना विजई — भारतसेवर संपादकीय टीम। डेटा पीएफआरडीए, सीबीडीटी, और आयकर विभाग के आधिकारिक कैलकुलेटरों के विरुद्ध सत्यापित।"
   },
   "author_page": {
-    "meta_title": "Articles by Mahesh Chaube, CFP | BharatSaver",
-    "meta_description": "Explore all financial calculators and guides written by Mahesh Chaube, a Certified Financial Planner and founder of BharatSaver.",
-    "h1": "Mahesh Chaube, CFP",
-    "h2": "Calculators & Guides",
-    "view_calculator": "View Calculator"
+    "meta_title": "महेश चौबे, सीएफपी द्वारा लेख | BharatSaver",
+    "meta_description": "एक प्रमाणित वित्तीय योजनाकार और भारतसेवर के संस्थापक महेश चौबे द्वारा लिखे गए सभी वित्तीय कैलकुलेटर और गाइड का अन्वेषण करें।",
+    "h1": "महेश चौबे, सीएफपी",
+    "h2": "कैलकुलेटर और गाइड",
+    "view_calculator": "कैलकुलेटर देखें"
   }
 }

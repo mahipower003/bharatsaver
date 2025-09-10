@@ -181,7 +181,7 @@
         "steps": [
             "<strong>உங்கள் வங்கி/தபால் நிலையத்தைத் தேர்வு செய்யுங்கள்:</strong> நீங்கள் கணக்கைத் திறக்க விரும்பும் இடத்தைத் தீர்மானிக்கவும். பெரும்பாலான தேசியமயமாக்கப்பட்ட வங்கிகள் (எஸ்பிஐ, ஹெச்டிஎஃப்சி, ఐసిఐసిఐ போன்றவை) மற்றும் தபால் நிலையங்கள் இந்த வசதியை வழங்குகின்றன.",
             "<strong>விண்ணப்பப் படிவத்தை நிரப்பவும்:</strong> பிபிஎஃப் கணக்கு திறப்புப் படிவத்தை (படிவம் A) வங்கியின் இணையதளத்திலிருந்து பதிவிறக்கம் செய்யவும் அல்லது ஒரு கிளையிலிருந்து பெறவும்.",
-            "<strong>கேஒய்சி ஆவணங்களைச் சமர்ப்பிக்கவும்:</strong> உங்களுக்கு உங்கள் பான் கார்டு, ஆதார் கார்டு (முகவரிச் சான்றுக்கு), மற்றும் பாஸ்போர்ட் அளவு புகைப்படங்கள் தேவைப்படும்.",
+            "<strong>கேஒய்சி ஆவணங்களைச் சமர்ப்பிக்கவும்:</strong> మీకు మీ పాన్ கார்டு, ఆధార్ கார்டு (முகவரிச் சான்றுக்கு), మరియు பாஸ்போர்ட் அளவு புகைப்படங்கள் தேவைப்படும்.",
             "<strong>ஆரம்ப வைப்புத்தொகையைச் செய்யுங்கள்:</strong> நீங்கள் குறைந்தபட்சம் ₹500 உடன் தொடங்கலாம். దీన్ని நீங்கள் காசோலை அல்லது ஆன்லைன் பரிமாற்றம் மூலம் செலுத்தலாம்.",
             "<strong>உங்கள் பாஸ்புக்கைப் பெறுங்கள்:</strong> செயலாக்கப்பட்டவுடன், உங்கள் பிபிஎஃப் கணக்கு விவரங்களுடன் ஒரு பாஸ்புக் பெறுவீர்கள்."
         ],
@@ -383,16 +383,16 @@
         "answer": "மாதத்தின் 5 ஆம் தேதிக்கும் இறுதிக்கும் இடைப்பட்ட குறைந்தபட்ச இருப்பின் மீது வட்டி கணக்கிடப்படுகிறது. 5 ஆம் தேதிக்கு முன் டெபாசிட் செய்வது உங்கள் பணம் அந்த முழு மாதத்திற்கும் வட்டி சம்பாதிப்பதை உறுதி செய்கிறது. நீங்கள் தாமதமாக டெபாசிட் செய்தால், அந்த குறிப்பிட்ட டெபாசிட்டிற்கு அந்த மாதத்திற்கான வட்டியை இழக்கிறீர்கள்."
       },
       {
-        "question": "ஒரு SSY கணக்கை படிப்படியாக எப்படி புத்துயிர் அளிப்பது?",
-        "answer": "குறைந்தபட்சம் ₹250 வைப்புத்தொகையை நீங்கள் தவறவிட்டால், உங்கள் கணக்கு செயலிழந்துவிடும். அதை புத்துயிர் அளிக்க, உங்கள் வங்கி/தபால் நிலையத்திற்குச் சென்று, புத்துயிர் அளிப்புப் படிவத்தை நிரப்பி, ஒவ்வொரு தவறிய ஆண்டிற்கும் ஒரு சிறிய அபராதத்துடன் மொத்தத் தவறிய வைப்புத்தொகையை (ஆண்டுக்கு ₹250) செலுத்தவும். உங்கள் கணக்கு மீண்டும் செயலில் வரும்."
+        "question": "ఒక SSY ఖాతాను దశలవారీగా ఎలా పునరుద్ధరించాలి?",
+        "answer": "మీరు కనీసం ₹250 డిపాజిట్ చేయడంలో విఫలమైతే, మీ ఖాతా నిష్క్రియం అవుతుంది. దాన్ని పునరుద్ధరించడానికి, మీ బ్యాంకు/పోస్టాఫీసును సందర్శించండి, పునరుద్ధరణ ఫారమ్ నింపండి, మరియు ప్రతి తప్పిన సంవత్సరానికి ఒక చిన్న జరిమానాతో పాటు మొత్తం తప్పిన డిపాజిట్లను (సంవత్సరానికి ₹250) చెల్లించండి. మీ ఖాతా మళ్లీ చురుకుగా మారుతుంది."
       },
       {
         "question": "நியமனம் மற்றும் பரிமாற்ற விதிகள் என்ன?",
         "answer": "நீங்கள் SSY கணக்கிற்கு ஒரு பயனாளியை நியமிக்கலாம். குடும்பம் இடம் பெயர்ந்தால், கணக்கை இந்தியாவில் எங்கிருந்தும் ஒரு வங்கி/தபால் நிலையத்திலிருந்து மற்றொரு வங்கி/தபால் நிலையத்திற்கு மாற்றலாம்."
       },
       {
-        "question": "பெற்றோர்/பாதுகாவலர் இறந்தால் என்ன நடக்கும்?",
-        "answer": "வைப்புதாரர் (பெற்றோர்/பாதுகாவலர்) துரதிர்ஷ்டவசமாக இறந்தால், கணக்கை மற்ற பெற்றோர் அல்லது ஒரு புதிய சட்டப்பூர்வ பாதுகாவலர் தொடரலாம். முடியாவிட்டால், கணக்கு பொதுவாக மூடப்பட்டு, வட்டியுடன் கூடிய இருப்புப் பெண் குழந்தையின் நியமனதாரர் அல்லது சட்டப்பூர்வ வாரிசுக்கு வழங்கப்படும்."
+        "question": "తల్లిదండ్రులు/సంరక్షకులు మరణిస్తే ఏమి జరుగుతుంది?",
+        "answer": "డిపాజిటర్ (తల్లిదండ్రులు/సంరక్షకులు) దురదృష్టవశాత్తు మరణించిన సందర్భంలో, ఖాతాను ఇతర తల్లిదండ్రులు లేదా ఒక కొత్త చట్టపరమైన సంరక్షకులు కొనసాగించవచ్చు. సాధ్యం కాకపోతే, ఖాతా సాధారణంగా మూసివేయబడుతుంది, మరియు వడ్డీతో కూడిన బ్యాలెన్స్ బాలిక యొక్క నామినీ లేదా చట్టపరమైన వారసునికి చెల్లించబడుతుంది."
       },
       { "question": "2025 க்கான SSY இன் தற்போதைய வட்டி விகிதம் என்ன?", "answer": "ఏప్రిల్-జూన్ 2025 க்கான SSY வட்டி விகிதம் <strong>8.2%</strong> ஆகும் (இந்திய அரசாங்கத்தால் காலாண்டுக்கு ஒருமுறை மாற்றத்திற்கு உட்பட்டது)." },
       { "question": "SSY வட்டி எவ்வாறு கணக்கிடப்படுகிறது?", "answer": "SSY ஆண்டுதோறும் கூட்டு வட்டி பெறுகிறது. வழக்கமான ஆண்டு வைப்புகளுக்கு, ஒவ்வொரு ஆண்டின் வைப்பு வளர்ச்சியை முதிர்வு வரை கணக்கிட்டு அவற்றை கூட்டவும். A = P(1+r)^(ஆண்டுகள்) ஐப் பயன்படுத்தவும். எங்கள் கால்குலேட்டர் இதை உங்களுக்காக தானாகவே செய்கிறது." },
@@ -400,8 +400,8 @@
       { "question": "நான் எப்போது SSY இலிருந்து திரும்பப் பெற முடியும்?", "answer": "உயர்கல்விக்காக பெண் குழந்தை 18 வயதை எட்டிய பிறகு பகுதி திரும்பப் பெற அனுமதிக்கப்படுகிறது; கணக்கு திறக்கப்பட்டதிலிருந்து 21 ஆண்டுகளில் முதிர்வு." }
     ],
     "conclusion": {
-      "title": "முடிவு: உங்கள் மகளுக்கு SSY சரியான தேர்வா?",
-      "body": "சுகன்யா சம்ரித்தி யோஜனா ஒரு பெண் குழந்தைக்கான இந்தியாவின் சிறந்த சேமிப்புத் திட்டங்களில் ஒன்றாக விளங்குகிறது. దాని అధిక, ప్రభుత్వ-హామీ వడ్డీ రేటు మరియు పూర్తి வரி விலக்கு (EEE நிலை) ஆகியவற்றின் கலவையானது உங்கள் மகளின் கல்வி మరియు திருமணத்திற்கு ஒரு கணிசமான நிதியை உருவாக்குவதற்கான ஒரு శక్తిவாய்ந்த கருவியாக அமைகிறது. మా SSY கால்குலேட்டర్‌తో మీ முதலீடுகளைத் திட்டமிடுவதன் மூலம், நீங்கள் நம்பிக்கையுடன் அவளது நிதி எதிர்காலத்தைப் பாதுகாக்க முடியும்."
+      "title": "முடிவு: మీ కుమార్తెకు SSY సరైన ఎంపికా?",
+      "body": "సుకన్య సమృద్ధి యోజన ఒక బాలిక కోసం భారతదేశంలోని ఉత్తమ పొదుపు పథకాలలో ఒకటిగా నిలుస్తుంది. దాని అధిక, ప్రభుత్వ-హామీ వడ్డీ రేటు మరియు పూర్తి పన్ను మినహాయింపు (EEE స్థితి) కలయిక మీ కుమార్తె విద్య మరియు వివాహం కోసం గణనీయమైన నిధిని నిర్మించడానికి ఒక శక్తివంతమైన సాధనంగా చేస్తుంది. మా SSY క్యాలిక్యులేటర్‌తో మీ పెట్టుబడులను ప్లాన్ చేయడం ద్వారా, మీరు విశ్వాసంతో ఆమె ఆర్థిక భవిష్యత్తును సురక్షితం చేయవచ్చు."
     }
   },
   "nps_calculator": {
@@ -526,7 +526,7 @@
         "headers": ["அம்சம்", "NPS", "PPF", "நிலையான வைப்பு (FD)", "பரஸ்பர நிதிகள் (ELSS)"],
         "rows": [
           ["வருவாய் வகை", "சந்தை-இணைக்கப்பட்டது (8–12%)", "அரசு உத்தரவாதம் (~7.1%)", "வங்கி-குறிப்பிட்டது (5–7%)", "சந்தை-இணைக்கப்பட்டது"],
-          ["லாக்-இன்", "ஓய்வு பெறும் வரை (அடுக்கு I)", "15 ஆண்டுகள்", "நெகிழ்வானது", "மாறுபடும் (ELSS 3 ஆண்டுகள்)"],
+          ["லாக்-ఇన్", "ஓய்வு பெறும் வரை (அடுக்கு I)", "15 ஆண்டுகள்", "நெகிழ்வானது", "மாறுபடும் (ELSS 3 ஆண்டுகள்)"],
           ["வரி நன்மைகள்", "80C + 80CCD(1B)", "EEE (80C)", "வட்டி வரிக்குட்பட்டது", "ELSS 80C இன் கீழ்"],
           ["சிறந்தது", "ஓய்வூதியம் & ஓய்வூதியம்", "இடர்-வெறுக்கும் நீண்ட காலம்", "குறுகிய/நடுத்தர கால இலக்குகள்", "செல்வ உருவாக்கம்"]
         ]
@@ -586,12 +586,12 @@
       "points": [
         "உத்தரவாத ஓய்வூதியம்: ₹1,000, ₹2,000, ₹3,000, ₹4,000, அல்லது ₹5,000 இன் நிலையான மாதாந்திர ஓய்வூதியத் தொகைகள்.",
         "தகுதி: 18-40 வயதுக்குட்பட்ட அனைத்து இந்திய குடிமக்களுக்கும் வங்கிக் கணக்குடன் திறக்கப்பட்டுள்ளது.",
-        "வாழ்க்கைத் துணை/நியமனதாரர் நன்மைகள்: சந்தாதாரர் இறந்தால், வாழ்க்கைத் துணை ஓய்வூதியத்தைப் பெறுகிறார். இருவரும் இறந்தால், நியமனதாரர் திரட்டப்பட்ட கார்பஸைப் பெறுகிறார்."
+        "வாழ்க்கைத் துணை/நியமனதாரர் நன்மைகள்: சந்தாதாரர் இறந்தால், வாழ்க்கைத் துணை ஓய்வúதியத்தைப் பெறுகிறார். இருவரும் இறந்தால், நியமனதாரர் திரட்டப்பட்ட கார்பஸைப் பெறுகிறார்."
       ]
     },
     "how_it_works": {
       "title": "APY கால்குலேட்டர் எவ்வாறு செயல்படுகிறது — வயது மற்றும் ஓய்வூதியத்தின் அடிப்படையில் பிரீமியங்கள்",
-      "intro": "APY பிரீமியம் PPF அல்லது NPS போன்ற கூட்டு வட்டிக் சூத்திரத்தால் கணக்கிடப்படுவதில்லை. அதற்குப் பதிலாக, பிரீமியங்கள் உங்கள் நுழைவு வயது మరియు தேர்ந்தெடுக்கப்பட்ட ஓய்வூதியத்தின் அடிப்படையில் அரசாங்கத்தால் நிர்ணயிக்கப்பட்ட நிலையான தொகைகள் ஆகும். எங்கள் கால்குலேட்டர் உங்களுக்கு சரியான தொகையை வழங்க PFRDAவின் அதிகாரப்பூர்வ பிரீமியம் அட்டவணையைப் பயன்படுத்துகிறது.",
+      "intro": "APY பிரீமியம் PPF அல்லது NPS போன்ற கூட்டு வட்டிக் சூத்திரத்தால் கணக்கிடப்படுவதில்லை. அதற்குப் பதிலாக, பிரீமியங்கள் உங்கள் நுழைவு வயது మరియు தேர்ந்தெடுக்கப்பட்ட ஓய்வூதியத்தின் அடிப்படையில் அரசாங்கத்தால் நிர்ணயிக்கப்பட்ட நிலையான தொகைகள் ஆகும். எங்கள் கால்குலேட்டர் మీకు சரியான தொகையை வழங்க PFRDAவின் அதிகாரப்பூர்வ பிரீமியம் அட்டவணையைப் பயன்படுத்துகிறது.",
       "example": {
         "title": "உதாரணம்: வயது 25 — பிரீமியம் எவ்வாறு செயல்படுகிறது",
         "body": "<strong>மாதாந்திர பிரீமியம் (விளக்கப்படத்திலிருந்து):</strong> ₹76<br/><strong>பங்களிப்பு ஆண்டுகள்:</strong> 25 வயதிலிருந்து 60 வயது வரை = 35 ஆண்டுகள்<br/><strong>மொத்தமாகச் செலுத்தப்பட்டது</strong> = 76 × 12 × 35 = ₹31,920 (35 ஆண்டுகளில் மொத்த பங்களிப்புகள்)<br/><strong>விளைவு:</strong> 60 வயதிலிருந்து ₹1,000 உத்தரவாத மாதாந்திர ஓய்வூதியம் (పథకం నిబంధనల ప్రకారం పెన్షన్ అందిస్తుంది; చెల్లింపులు పూల్ చేయబడిన ఫండ్/వార్షికాల నుండి వస్తాయి).",
@@ -619,7 +619,7 @@
     },
     "rules": {
       "title": "அபராதங்கள், தவறிய கொடுப்பனவுகள் & పునరుద్ధరణ — நீங்கள் தெரிந்து கொள்ள வேண்டியவை",
-      "body": "<strong>திரும்பப் பெறுதல்:</strong> పూర్తి ఉపసంహరణ 60 సంవత్సరాల వయస్సులో మాత్రమే అనుమతించబడుతుంది. తీవ్రమైన అనారోగ్యం లేదా మరణం సందర్భాలలో ముందస్తు నిష్క్రమణ అనుమతించబడుతుంది. <br/> <strong>அபராதங்கள்:</strong> ఆలస్యమైన చెల్లింపులకు ஒரு చిన్న அபராதம் விதிக்கப்படுகிறது, இது பிரீமியம் தொகையைப் பொறுத்து மாதத்திற்கு ₹1 முதல் ₹10 வரை ఉంటుంది. <br/> <strong>பரிமாற்றம்:</strong> உங்கள் APY கணக்கை ஒரு வங்கியிலிருந்து மற்றொரு வங்கிக்கு மாற்றலாம். அதிகாரப்பூர்வ விதிகளுக்கு, <a href='https://www.pfrda.org.in/my-apy/apy-faq' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA FAQ విభాగాన్ని</a> பார்க்கவும்."
+      "body": "<strong>திரும்பப் பெறுதல்:</strong> పూర్తి ఉపసంహరణ 60 సంవత్సరాల వయస్సులో మాత్రమే అనుమతించబడుతుంది. తీవ్రమైన అనారోగ్యం లేదా మరణం సందర్భాలలో ముందస్తు నిష్క్రమణ అనుమతించబడుతుంది. <br/> <strong>அபராதங்கள்:</strong> ఆలస్యమైన చెల్లింపులకు ఒక చిన్న அபராதம் விதிக்கப்படுகிறது, இது பிரீமியம் தொகையைப் பொறுத்து மாதத்திற்கு ₹1 முதல் ₹10 வரை ఉంటుంది. <br/> <strong>பரிமாற்றம்:</strong> உங்கள் APY கணக்கை ஒரு வங்கியிலிருந்து மற்றொரு வங்கிக்கு மாற்றலாம். அதிகாரப்பூர்வ விதிகளுக்கு, <a href='https://www.pfrda.org.in/my-apy/apy-faq' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA FAQ విభాగాన్ని</a> பார்க்கவும்."
     },
     "faq_title": "அடிக்கடி கேட்கப்படும் கேள்விகள்",
     "faqs": [
@@ -746,7 +746,7 @@
         { "question": "FD vs PPF — which is better?", "answer": "It depends: PPF is better for long-term, tax-free growth; FD is better for short-term goals and liquidity. Use the calculator to compare the exact numeric outcome for your inputs." },
         { "question": "How to calculate FD returns after tax?", "answer": "Compute FD future value with compound interest, subtract the original principal to get interest earned, then apply your marginal tax rate to that interest to find tax owed. Post-tax maturity = gross maturity − tax." },
         { "question": "How is PPF interest calculated?", "answer": "PPF interest is compounded annually at the rate notified quarterly by the government. If you deposit at the start of each year (annuity-due), the formula uses an annuity multiplier." },
-        { "question": "What if I want to compare equal total investments?", "answer": "Switch the tool to “Same total invested” mode — it will either spread your FD lump-sum into equal yearly investments or scale PPF contributions so total capital deployed matches." },
+        { "question": "What if I want to compare equal total investments?", "answer": "This feature is coming soon. Currently, the tool compares a one-time FD investment against a recurring PPF investment, which is a common real-world scenario." },
         { "question": "Does PPF allow early withdrawals?", "answer": "Partial withdrawals are permitted from the 7th financial year under limits; loans are available between years 3 and 6. Full premature closure is allowed only in specific cases (e.g., serious illness) and may carry a penalty." },
         { "question": "Is FD interest taxable?", "answer": "Yes — FD interest is taxable at your marginal income tax slab. TDS (10%) is applicable above statutory thresholds; however, actual tax liability will depend on your slab." },
         { "question": "Can I claim tax benefits for FD?", "answer": "Only 5-year tax-saving FDs qualify for deduction under Section 80C; their interest remains taxable." },
@@ -765,7 +765,7 @@
     "meta_title": "பழைய vs புதிய வரி விதிப்பு கால்குலேட்டர் (AY 2025-26) | BharatSaver",
     "meta_description": "இந்தியாவில் பழைய மற்றும் புதிய வரி விதிப்புகளின் கீழ் உங்கள் வருமான வரிப் பொறுப்பை ஒப்பிட்டு, AY 2025-26 க்கு உங்களுக்கு எது சிறந்தது என்பதைக் கண்டறிய எங்கள் இலவச கால்குலேட்டரைப் பயன்படுத்தவும்.",
     "h1": "பழைய vs புதிய வரி விதிப்பு கால்குலேட்டர்",
-    "description": "உங்கள் சம்பளம் மற்றும் விலக்குகளை உள்ளிட்டு, பழைய மற்றும் புதிய வரி விதிப்புகளின் கீழ் உடனடியாக வரியை ஒப்பிடவும். FY 2025-26 க்கு புதுப்பிக்கப்பட்டது — HRA, 80C, 80D మరియు పని செய்த எடுத்துக்காட்டுகள் உட்பட.",
+    "description": "உங்கள் சம்பளம் மற்றும் விலக்குகளை உள்ளிட்டு, பழைய மற்றும் புதிய வரி விதிப்புகளின் கீழ் உடனடியாக வரியை ஒப்பிடவும். FY 2025-26 க்கு புதுப்பிக்கப்பட்டது — HRA, 80C, 80D மற்றும் పని செய்த எடுத்துக்காட்டுகள் உட்பட.",
     "title": "வரி விதிப்பு கால்குலேட்டர்",
     "last_updated": "கடைசியாகப் புதுப்பிக்கப்பட்டது:",
     "form_description": "எந்த வரி விதிப்பு உங்களுக்கு அதிக பணத்தை சேமிக்கிறது என்பதைக் கண்டறியவும்.",
@@ -858,9 +858,10 @@
     }
   },
   "retirement_corpus_calculator": {
-    "meta_title": "Retirement Corpus Calculator for India (2025) | BharatSaver",
-    "meta_description": "Plan for your retirement by calculating the total corpus required for your post-retirement life based on your financial goals. Use our free 2025 retirement calculator.",
-    "h1": "Retirement Corpus Calculator",
+    "meta_title": "Retirement Corpus Calculator 2025 — How Much to Save Monthly to Retire at 60",
+    "meta_description": "Use our free retirement corpus calculator (India) — includes inflation, life expectancy, existing savings and investment returns. 3 worked examples & downloadable CSV.",
+    "h1": "Retirement Corpus Calculator — How Much Money Do You Need to Retire in India (2025)",
+    "intro": "A retirement corpus is the total sum of money you need to support yourself after you stop working. Our calculator helps you move beyond a simple number to create a complete plan for a secure retirement.",
     "title": "Retirement Corpus Calculator",
     "form_description": "Plan your comfortable retirement by calculating the total corpus you need.",
     "current_age_label": "Current Age",
@@ -885,72 +886,74 @@
     "table_total_corpus": "Total Corpus",
     "age_label": "Age",
     "amount_in_lakhs": "Amount (in Lakhs)",
+    "assumptions": {
+      "title": "Assumptions We Use (Default)",
+      "body": "<ul><li><strong>Inflation:</strong> 6% p.a.</li><li><strong>Pre-retirement returns:</strong> 12% p.a.</li><li><strong>Post-retirement returns:</strong> 7% p.a.</li><li><strong>Deposits:</strong> monthly, made at the <strong>start</strong> of each month (annuity-due).</li><li><strong>Life expectancy:</strong> 85 years (adjustable).</li><li>Figures are nominal (not inflation-adjusted). This calculator is an estimator; consult a CFP for a personalised plan.</li></ul>"
+    },
+    "how_it_works": {
+      "title": "How Our Retirement Corpus Calculator Works",
+      "body": "<p>We use standard financial formulas to give you an accurate projection. Here’s a simplified look at how we do it:</p><ul><li><strong>Future Value of Your Expenses:</strong> We first calculate how much your current monthly expenses will grow to by the time you retire, using the inflation rate you provide. The formula is: <code>Future Expense = Present Expense × (1 + Inflation Rate) ^ Years to Retirement</code>.</li><li><strong>Total Corpus You Need:</strong> Next, we calculate the total lump sum you'll need on the day you retire. This is the amount that, when invested, will generate enough income to cover your expenses for the rest of your life.</li><li><strong>Your Required Monthly SIP:</strong> Finally, we determine the monthly Systematic Investment Plan (SIP) needed to bridge the gap between your current savings and your target corpus. We calculate the future value of your existing savings and subtract it from the required corpus to find the shortfall.</li></ul>"
+    },
+    "inputs_explained": {
+      "title": "What Your Inputs Mean and Why They Matter",
+      "body": "<p>To get an accurate result, you need to provide some key details. Here’s what each one means for your plan:</p><ul><li><strong>Your Current & Retirement Age:</strong> This defines your investment horizon. The longer you have, the more the power of compounding can work for you, meaning you can start with smaller investments.</li><li><strong>Your Current Monthly Expenses:</strong> This is the foundation of your retirement plan. Be realistic about what you spend today to get an accurate picture of what you'll need tomorrow.</li><li><strong>Your Current Savings:</strong> This is your head start! Any money you've already saved in EPF, PPF, Mutual Funds, or other investments reduces the amount you'll need to save in the future.</li><li><strong>Inflation Rate (we default to 6%):</strong> This is the silent wealth killer. Inflation reduces the purchasing power of your money over time. A higher inflation rate means you'll need a much larger corpus.</li><li><strong>Pre-Retirement Returns (we default to 12%):</strong> This is the growth rate you expect on your investments while you're still working. A higher return means your money works harder for you, and you can reach your goal with smaller SIPs.</li><li><strong>Post-Retirement Returns (we default to 7%):</strong> This is the return you expect on your corpus after you retire. We assume a more conservative, capital-preserving portfolio here.</li></ul>"
+    },
+    "worked_examples": {
+      "title": "Worked Examples — How Much Corpus Do You Need?",
+      "scenario1": {
+        "title": "Example 1: Middle-Income Salaried (₹10 LPA)",
+        "body": "<strong>Your Situation:</strong> You're 30, planning to retire at 60. Your monthly expenses are ₹50,000, and you've already saved ₹5 lakh.<br/><strong>Our Calculation:</strong> To maintain your lifestyle, you'll need a retirement corpus of approximately <strong>₹3.28 Crore</strong>. To reach this goal, you should start a monthly SIP of <strong>₹18,250</strong>."
+      },
+      "scenario2": {
+        "title": "Example 2: High-Income, Later Start (₹25 LPA)",
+        "body": "<strong>Your Situation:</strong> You're 35, aiming to retire at 60. Your monthly expenses are ₹1 lakh, and your current savings are ₹20 lakh.<br/><strong>Our Calculation:</strong> You'll need a corpus of around <strong>₹4.79 Crore</strong>. To achieve this, you should start a monthly SIP of <strong>₹37,842</strong>."
+      },
+      "scenario3": {
+        "title": "Example 3: Freelancer, Early Start (₹7 LPA)",
+        "body": "<strong>Your Situation:</strong> You're a 25-year-old freelancer with monthly expenses of ₹30,000 and savings of ₹2 lakh.<br/><strong>Our Calculation:</strong> Your target corpus is <strong>₹3.04 Crore</strong>. Thanks to your long investment horizon, you only need to start a monthly SIP of <strong>₹7,725</strong> to get there."
+      }
+    },
+    "accumulation_strategy": {
+      "title": "How to Reach Your Retirement Corpus — Strategies & Vehicles",
+      "body": "<h3>Choosing Your Investment Path: SIP vs. Lump Sum</h3><ul><li><strong>Systematic Investment Plan (SIP):</strong> This is the most disciplined approach. You invest a fixed amount regularly (e.g., monthly), which helps you average out market highs and lows (rupee-cost averaging) and benefit from compounding. It's perfect for building wealth steadily over time.</li><li><strong>Step-up SIP:</strong> This is a supercharged version of a regular SIP. You increase your monthly investment amount annually, usually in line with your salary hike (e.g., by 10%). This simple step can dramatically accelerate your journey to your target corpus.</li></ul><h3>Your Asset Mix: How It Should Change with Age</h3><p>Your investment strategy shouldn't be static. As you get closer to retirement, you should gradually shift from high-risk, high-return assets to safer options to protect your capital.</p><ul><li><strong>In Your 20s & 30s:</strong> Be aggressive. A portfolio with 70-80% in equities (like mutual funds) can generate higher returns over the long term.</li><li><strong>In Your 40s:</strong> Start balancing your risk. A 60:40 split between equity and debt is a common strategy.</li><li><strong>In Your 50s and Beyond:</strong> It's time to preserve your capital. Shift your portfolio to be debt-heavy (70-80% in fixed-income instruments).</li></ul><h3>How PPF, NPS, & EPF Fit Into Your Plan</h3><p>These are the foundational pillars of retirement planning in India. Your current savings in these instruments give you a massive head start.</p><ul><li><strong>EPF (Employee Provident Fund):</strong> A mandatory saving for salaried individuals, forming a solid, risk-free base for your retirement fund.</li><li><strong>PPF (Public Provident Fund):</strong> A tax-free, government-backed scheme perfect for long-term, risk-averse savings.</li><li><strong>NPS (National Pension System):</strong> A market-linked product that offers a mix of equity and debt, providing tax benefits and the potential for higher returns.</li></ul>"
+    },
+    "deaccumulation_strategy": {
+      "title": "The De-accumulation Phase: Making Your Corpus Last",
+      "body": "<p>Building your nest egg is only half the battle. The real challenge is making it last. Here’s how you can create a steady income stream after you retire.</p><h3>Systematic Withdrawal Plan (SWP)</h3><p>An SWP allows you to withdraw a fixed amount from your mutual fund investments every month, just like a pension. This is a tax-efficient method because the rest of your corpus remains invested and continues to grow, helping you beat inflation.</p><p><strong>Example:</strong> With a corpus of ₹2 Crore and a 7% annual return, a monthly SWP of ₹1 lakh could last for over 30 years.</p><h3>Annuity Plans</h3><p>An annuity is an insurance product where you pay a lump sum to an insurance company, and they guarantee you a fixed income for life. While this offers immense security, the returns (annuity rates) are often lower than what you might get from an SWP.</p>"
+    },
+    "tax_rules": {
+      "title": "Taxes & Special Rules in India",
+      "body": "<ul><li><strong>Long-Term Capital Gains (LTCG):</strong> When you withdraw from equity mutual funds, gains over ₹1 lakh in a financial year are taxed at 10%. Planning your withdrawals strategically can help you minimize this tax.</li><li><strong>Pension Taxation:</strong> Your pension income, whether from an annuity or other sources, is generally added to your income and taxed as per your applicable slab rate.</li><li><strong>Special Rule for Returning NRIs (Section 89A):</strong> If you are an NRI returning to India, this rule allows you to defer paying tax on your foreign retirement accounts until you actually withdraw the money. This is a significant relief that helps avoid double taxation.</li></ul>"
+    },
+    "next_steps": {
+      "title": "Your Next Steps to a Secure Retirement",
+      "cta1_title": "Explore Investment Options",
+      "cta1_desc": "Use our PPF, NPS, and other calculators to model returns on specific investment vehicles.",
+      "cta2_title": "View All Financial Tools",
+      "cta2_desc": "Explore our full suite of calculators to plan for all your financial goals."
+    },
+    "conclusion": {
+      "title": "Conclusion: Your Path to a Secure Retirement",
+      "body": "Retirement planning isn't just about hitting a number; it's about building a sustainable financial future you can count on. By using this comprehensive calculator and understanding the key variables that drive your corpus, you can create a realistic and actionable plan. Remember, the key is to start early, invest consistently, and review your plan annually. That's the surest way to a comfortable and stress-free retirement."
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "body": "The figures generated are hypothetical and for illustrative purposes only. The accuracy of the output depends on your inputs. Please consult a qualified financial professional for personalized advice."
+    },
+    "faq_title": "Frequently Asked Questions about Retirement Planning",
+    "faq_content": "<h4>What is a retirement corpus?</h4><p>A retirement corpus is the total sum of money and assets an individual accumulates to support their financial needs during their non-working years. It's your financial nest egg for retirement.</p><h4>How much corpus do I need to retire at 60?</h4><p>This is highly personal, but a common rule is the 25x/30x rule: your corpus should be 25 to 30 times your current annual expenses. Use our calculator for a precise figure based on your lifestyle.</p><h4>How do you calculate retirement corpus?</h4><p>The core calculation uses the present value formula, factoring in your future annual expenses, inflation, life expectancy, and expected returns on investment. Our calculator does this complex math for you.</p><h4>What inflation rate should I assume for retirement planning?</h4><p>We use 6% by default as a long-term average for India, but this is a critical assumption. For a more conservative plan, consider a higher rate, especially for healthcare costs.</p><h4>How much should a 30-year-old save per month for retirement?</h4><p>This depends entirely on their desired retirement lifestyle. A 30-year-old aiming for a corpus of ₹2 crore by age 60 might need to save ₹15,000 - ₹20,000 per month via SIPs, assuming a 12% return.</p><h4>Can I include EPF/PPF/NPS in the retirement corpus?</h4><p>Absolutely. Your existing savings in EPF, PPF, NPS, mutual funds, and other assets should all be included in the 'Current Savings' input of the calculator.</p>",
     "faqs": [
-        {
-            "question": "What is retirement corpus?",
-            "answer": "A retirement corpus is the total sum of money and assets an individual accumulates to support their financial needs during their non-working years. It's your financial nest egg for retirement."
-        },
-        {
-            "question": "How much corpus do I need to retire at 60?",
-            "answer": "This is highly personal, but a common rule is the 25x/30x rule: your corpus should be 25 to 30 times your current annual expenses. Use our calculator for a precise figure based on your lifestyle."
-        },
-        {
-            "question": "How do you calculate retirement corpus?",
-            "answer": "The core calculation uses the present value formula, factoring in your future annual expenses, inflation, life expectancy, and expected returns on investment. Our calculator does this complex math for you."
-        },
-        {
-            "question": "What inflation rate should I assume for retirement planning?",
-            "answer": "We use 6% by default as a long-term average for India, but this is a critical assumption. For a more conservative plan, consider a higher rate, especially for healthcare costs."
-        },
-        {
-            "question": "What is the difference between pre-retirement and post-retirement return?",
-            "answer": "Pre-retirement (accumulation phase) returns are typically higher as you can take more risk with equities. Post-retirement (withdrawal phase) returns are lower as your portfolio shifts to safer, fixed-income assets to preserve capital."
-        },
-        {
-            "question": "How much should a 30-year-old save per month for retirement?",
-            "answer": "This depends entirely on their desired retirement lifestyle. A 30-year-old aiming for a corpus of ₹2 crore by age 60 might need to save ₹15,000 - ₹20,000 per month via SIPs, assuming a 12% return."
-        },
-        {
-            "question": "Can I include EPF/PPF/NPS in the retirement corpus?",
-            "answer": "Absolutely. Your existing savings in EPF, PPF, NPS, mutual funds, and other assets should all be included in the 'Current Savings' input of the calculator."
-        },
-        {
-            "question": "How long will my retirement corpus last?",
-            "answer": "This depends on your withdrawal rate. The 4% rule suggests your corpus can last for 30 years or more if you withdraw only 4% of the initial amount in the first year, adjusted for inflation annually."
-        },
-        {
-            "question": "Does the calculator account for taxes and healthcare costs?",
-            "answer": "The calculator requires you to input post-tax investment returns. Healthcare costs should be factored into your 'monthly expenses' input, increasing it to account for rising medical inflation."
-        },
-        {
-            "question": "What if my income rises — how to update the plan?",
-            "answer": "You should re-run the retirement calculator annually or after any significant life event (like a salary hike or marriage). Increasing your SIP or monthly savings contributions will help you reach your goal faster."
-        },
-        {
-            "question": "How to plan retirement for early retirement (age 50)?",
-            "answer": "For early retirement, you need a larger corpus because your money needs to last longer, and you have fewer years to save. You must plan for a higher savings rate and potentially more aggressive investments."
-        },
-        {
-            "question": "Can a corpus be converted into monthly pension?",
-            "answer": "Yes. This is typically done through a Systematic Withdrawal Plan (SWP) from mutual funds or by purchasing an annuity plan from an insurance company, which provides a guaranteed income for life."
-        },
-        {
-            "question": "Should I assume conservative returns or aggressive returns?",
-            "answer": "This depends on your risk appetite. A balanced approach is to assume a 10-12% pre-retirement return (equity-heavy portfolio) and a 6-7% post-retirement return (debt-heavy portfolio)."
-        },
-        {
-            "question": "How frequently should I re-run the retirement calculator?",
-            "answer": "It is advisable to review your retirement plan and re-run the calculations at least once a year to ensure you are on track with your financial goals."
-        },
-        {
-            "question": "Can NRIs use this calculator?",
-            "answer": "Yes, NRIs can use this calculator to plan for their retirement in India. They should be mindful of specific tax implications, such as those covered under Section 89A for foreign retirement accounts."
-        },
-        {
-            "question": "Why is life expectancy important in retirement planning?",
-            "answer": "Life expectancy determines how many years your retirement corpus needs to support you. A longer life expectancy requires a larger corpus to avoid outliving your savings."
-        }
-    ]
+        { "question": "What is retirement corpus?", "answer": "A retirement corpus is the total sum of money and assets an individual accumulates to support their financial needs during their non-working years. It's your financial nest egg for retirement." },
+        { "question": "How much corpus do I need to retire at 60?", "answer": "This is highly personal, but a common rule is the 25x/30x rule: your corpus should be 25 to 30 times your current annual expenses. Use our calculator for a precise figure based on your lifestyle." },
+        { "question": "How do you calculate retirement corpus?", "answer": "The core calculation uses the present value formula, factoring in your future annual expenses, inflation, life expectancy, and expected returns on investment. Our calculator does this complex math for you." },
+        { "question": "What inflation rate should I assume for retirement planning?", "answer": "We use 6% by default as a long-term average for India, but this is a critical assumption. For a more conservative plan, consider a higher rate, especially for healthcare costs." },
+        { "question": "How much should a 30-year-old save per month for retirement?", "answer": "This depends entirely on their desired retirement lifestyle. A 30-year-old aiming for a corpus of ₹2 crore by age 60 might need to save ₹15,000 - ₹20,000 per month via SIPs, assuming a 12% return." },
+        { "question": "Can I include EPF/PPF/NPS in the retirement corpus?", "answer": "Absolutely. Your existing savings in EPF, PPF, NPS, mutual funds, and other assets should all be included in the 'Current Savings' input of the calculator." }
+    ],
+    "methodology": {
+      "title": "Methodology & Update Log",
+      "body": "This calculator uses standard financial formulas for future value (FV) and present value (PV) of annuities to project your retirement corpus and required SIP. All figures are illustrative. Last content update: September 2025. Financial formulas verified against established industry standards."
+    }
   },
   "loan_optimization_calculator": {
     "meta_title": "Loan Optimizer & EMI Calculator (Prepayment) | BharatSaver",
@@ -1033,7 +1036,7 @@
   },
   "author_page": {
     "meta_title": "மகேஷ் சௌபே, CFP எழுதிய கட்டுரைகள் | BharatSaver",
-    "meta_description": "ஒரு சான்றளிக்கப்பட்ட நிதி திட்டமிடுபவர் மற்றும் பாரத் சேவரின் நிறுவனர் மகேஷ் சௌபே எழுதிய அனைத்து நிதி கால்குలేட்டர்கள் மற்றும் வழிகாட்டிகளையும் ஆராயுங்கள்.",
+    "meta_description": "ஒரு சான்றளிக்கப்பட்ட நிதி திட்டமிடுபவர் மற்றும் பாரத் சேவரின் நிறுவனர் மகேஷ் சௌபே எழுதிய அனைத்து நிதி கால்குலேட்டர்கள் மற்றும் வழிகாட்டிகளையும் ஆராயுங்கள்.",
     "h1": "மகேஷ் சௌபே, CFP",
     "h2": "கால்குலேட்டர்கள் & வழிகாட்டிகள்",
     "view_calculator": "கால்குலேட்டரைக் காண்க"

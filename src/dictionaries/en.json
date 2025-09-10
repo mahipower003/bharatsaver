@@ -858,8 +858,8 @@
     }
   },
   "retirement_corpus_calculator": {
-    "meta_title": "Retirement Corpus Calculator 2025 — How Much to Save Monthly to Retire at 60",
-    "meta_description": "Use our free Retirement Corpus Calculator (India) — includes inflation, pre/post-retirement returns, life expectancy and SIP plan. Server-rendered worked examples, sensitivity table & downloadable plan.",
+    "meta_title": "Retirement Corpus Calculator 2025 — How Much to Save to Retire in India (SIP & Lump Sum)",
+    "meta_description": "Use our free Retirement Corpus Calculator (India) — includes inflation, pre/post-retirement returns, life expectancy, existing savings and worked examples (₹6L/₹10L/₹15L). Export results & get a 1-page retirement plan.",
     "h1": "Retirement Corpus Calculator — How Much Money Do You Need to Retire in India (2025)",
     "intro": "A retirement corpus is the total sum of money you need to support yourself after you stop working. Our calculator helps you move beyond a simple number to create a complete plan for a secure retirement.",
     "title": "Retirement Corpus Calculator",
@@ -886,6 +886,10 @@
     "table_total_corpus": "Total Corpus",
     "age_label": "Age",
     "amount_in_lakhs": "Amount (in Lakhs)",
+    "assumptions": {
+      "title": "Assumptions We Use (Default)",
+      "body": "<ul><li><strong>Inflation:</strong> 6% p.a.</li><li><strong>Pre-retirement returns:</strong> 12% p.a.</li><li><strong>Post-retirement returns:</strong> 7% p.a.</li><li><strong>Deposits:</strong> monthly, made at the <strong>start</strong> of each month (annuity-due).</li><li><strong>Life expectancy:</strong> 85 years (adjustable).</li><li>Figures are nominal (not inflation-adjusted). This calculator is an estimator; consult a CFP for a personalised plan.</li></ul>"
+    },
     "how_it_works": {
       "title": "How Our Retirement Corpus Calculator Works",
       "body": "<p>We use standard financial formulas to give you an accurate projection. Here’s a simplified look at how we do it:</p><ul><li><strong>Future Value of Your Expenses:</strong> We first calculate how much your current monthly expenses will grow to by the time you retire, using the inflation rate you provide. The formula is: <code>Future Expense = Present Expense × (1 + Inflation Rate) ^ Years to Retirement</code>.</li><li><strong>Total Corpus You Need:</strong> Next, we calculate the total lump sum you'll need on the day you retire. This is the amount that, when invested, will generate enough income to cover your expenses for the rest of your life.</li><li><strong>Your Required Monthly SIP:</strong> Finally, we determine the monthly Systematic Investment Plan (SIP) needed to bridge the gap between your current savings and your target corpus. We calculate the future value of your existing savings and subtract it from the required corpus to find the shortfall.</li></ul>"
