@@ -859,7 +859,7 @@
   },
   "retirement_corpus_calculator": {
     "meta_title": "Retirement Corpus Calculator India 2025 | Free Online Retirement Planning Tool",
-    "meta_description": "Free Retirement Corpus Calculator India (2025). Calculate how much money you need to retire, SIP required, and plan a stress-free retirement today.",
+    "meta_description": "Free Retirement Corpus Calculator India (2025). Calculate how much you need to retire, your SIP requirement, and plan a stress-free retirement today.",
     "og_description": "Estimate the corpus and monthly SIP required to retire comfortably. India-specific, includes NPS/PPF/EPF guidance.",
     "h1": "Retirement Corpus Calculator — How Much Money Do You Need to Retire in India (2025)",
     "intro": "A retirement corpus is the total sum of money you need to support yourself after you stop working. Our calculator helps you move beyond a simple number to create a complete plan for a secure retirement.",
@@ -890,10 +890,6 @@
     "table_total_corpus": "Total Corpus",
     "age_label": "Age",
     "amount_in_lakhs": "Amount (in Lakhs)",
-    "assumptions": {
-      "title": "Default assumptions & why we chose them",
-      "body": "<p>This calculator uses standard financial formulas and default assumptions based on long-term Indian market data. You can adjust these inputs to match your expectations.</p><ul><li><strong>Inflation: 6% p.a.</strong> - This is a conservative long-term average for India.</li><li><strong>Pre-retirement returns: 12% p.a.</strong> - This assumes a diversified portfolio with a significant equity component (e.g., mutual funds).</li><li><strong>Post-retirement returns: 7% p.a.</strong> - This assumes a more conservative, capital-preserving portfolio after you retire.</li><li><strong>Deposits:</strong> monthly, made at the <strong>start</strong> of each month (annuity-due), which slightly improves returns over end-of-month deposits.</li><li><strong>Life expectancy:</strong> 85 years.</li></ul>"
-    },
     "how_it_works": {
       "h2": "How do you calculate retirement corpus?",
       "body": "<p>We use standard financial formulas to give you an accurate projection. Here’s a simplified look at how we do it:</p><h3>Future Value of Your Expenses at Retirement</h3><p>We first calculate how much your current monthly expenses will grow to by the time you retire, using the inflation rate you provide. The formula is: <code>Future Expense = Present Expense × (1 + Inflation Rate) ^ Years to Retirement</code>.</p><h3>Required Corpus at Retirement (PV of Annuity)</h3><p>Next, we calculate the total lump sum you'll need on the day you retire. This is the amount that, when invested, will generate enough income to cover your expenses for the rest of your life. We use the Present Value of an annuity formula for this.</p><h3>Required SIP Calculation</h3><p>Finally, we determine the monthly Systematic Investment Plan (SIP) needed to bridge the gap between your current savings and your target corpus. We calculate the future value of your existing savings and subtract it from the required corpus to find the shortfall. The SIP is calculated using the future value of an annuity due formula, assuming deposits are made at the start of each month.</p>"
@@ -952,71 +948,133 @@
       "title": "Disclaimer",
       "body": "The figures generated are hypothetical and for illustrative purposes only. The accuracy of the output depends on your inputs. Please consult a qualified financial professional for personalized advice."
     },
-    "faq_title": "Frequently Asked Questions about Retirement Planning",
-    "faqs": [
-      {
-        "question": "How do you calculate retirement corpus?",
-        "answer": "We project your future monthly expenses using inflation, compute the present value (PV) of the annuity you’ll need at retirement, and subtract the future value of existing savings to find the shortfall."
-      },
-      {
-        "question": "What inflation rate should I use for Indian retirement planning?",
-        "answer": "Many planners use a long-term default of 5–7% for India; 6% is common. Use higher rates for conservative healthcare or long horizon assumptions."
-      },
-      {
-        "question": "Can I include EPF, PPF and NPS in my retirement corpus?",
-        "answer": "Yes — include all liquid and pension assets (EPF, PPF, NPS, mutual funds, bank FD) in your Current Savings input to lower the additional SIP needed."
-      },
-      {
-        "question": "How much should a 30-year-old save monthly to retire comfortably?",
-        "answer": "It depends on target corpus and assumptions. As a rough guide, saving ₹15,000–₹25,000/month can build multi-crore corpus by 60 at 10–12% returns. Use the calculator for precise numbers."
-      },
-      {
-        "question": "Should I invest by SIP or lump sum to reach my retirement goal?",
-        "answer": "SIP is recommended for disciplined investing and rupee-cost averaging; lump sum can outperform in long bull markets but has higher timing risk. A blended approach works for many."
-      },
-      {
-        "question": "What is a safe withdrawal rate in India during retirement?",
-        "answer": "There is no one-size-fits-all; many advisors use a 3–4% initial withdrawal rule (adjusted for inflation). Consider conservative withdrawal rates if longevity or healthcare costs are uncertain."
-      },
-      {
-        "question": "How do healthcare costs affect the retirement corpus?",
-        "answer": "Healthcare inflation often exceeds general inflation. Add a dedicated healthcare buffer or model higher inflation for medical costs to avoid underestimating your corpus."
-      },
-      {
-        "question": "How will taxes impact my retirement withdrawals?",
-        "answer": "Tax treatment varies by instrument and withdrawal type. EPF/PPF have specific rules; mutual fund withdrawals may attract LTCG tax above thresholds. Plan withdrawals tax-efficiently to preserve corpus."
-      },
-      {
-        "question": "How long should my retirement corpus last?",
-        "answer": "Typically planners assume life expectancy of 85–90 years. Use conservative longevity assumptions if family longevity is high or you retire early."
-      },
-      {
-        "question": "Does the calculator account for post-retirement returns?",
-        "answer": "Yes — you can set a lower, conservative post-retirement return (e.g., 6–8%) to model how the corpus will be invested and sustain withdrawals."
-      },
-      {
-        "question": "Can I plan for early retirement (before 60) with this calculator?",
-        "answer": "Yes — set your desired retirement age earlier and increase the investment horizon and SIP accordingly. Factor in longer post-retirement years and higher healthcare costs."
-      },
-      {
-        "question": "What is the simplest rule of thumb to estimate a target corpus?",
-        "answer": "A common rule is 25× your current annual expenses (for a 4% real withdrawal), but use the calculator to refine this with inflation, returns, and existing savings."
-      }
-    ],
+    "faq": {
+      "h2": "Frequently Asked Questions about Retirement Planning",
+      "faqs": [
+        { "q": "How do you calculate retirement corpus?", "a": "We project your future monthly expenses using inflation, compute the present value (PV) of the annuity you’ll need at retirement, and subtract the future value of existing savings to find the shortfall." },
+        { "q": "What inflation rate should I use for Indian retirement planning?", "a": "Many planners use a long-term default of 5–7% for India; 6% is common. Use higher rates for conservative healthcare or long horizon assumptions." },
+        { "q": "Can I include EPF, PPF and NPS in my retirement corpus?", "a": "Yes — include all liquid and pension assets (EPF, PPF, NPS, mutual funds, bank FD) in your Current Savings input to lower the additional SIP needed." },
+        { "q": "How much should a 30-year-old save monthly to retire comfortably?", "a": "It depends on target corpus and assumptions. As a rough guide, saving ₹15,000–₹25,000/month can build multi-crore corpus by 60 at 10–12% returns. Use the calculator for precise numbers." },
+        { "q": "Should I invest by SIP or lump sum to reach my retirement goal?", "a": "SIP is recommended for disciplined investing and rupee-cost averaging; lump sum can outperform in long bull markets but has higher timing risk. A blended approach works for many." },
+        { "q": "What is a safe withdrawal rate in India during retirement?", "a": "There is no one-size-fits-all; many advisors use a 3–4% initial withdrawal rule (adjusted for inflation). Consider conservative withdrawal rates if longevity or healthcare costs are uncertain." },
+        { "q": "How do healthcare costs affect the retirement corpus?", "a": "Healthcare inflation often exceeds general inflation. Add a dedicated healthcare buffer or model higher inflation for medical costs to avoid underestimating your corpus." },
+        { "q": "How will taxes impact my retirement withdrawals?", "a": "Tax treatment varies by instrument and withdrawal type. EPF/PPF have specific rules; mutual fund withdrawals may attract LTCG tax above thresholds. Plan withdrawals tax-efficiently to preserve corpus." },
+        { "q": "How long should my retirement corpus last?", "a": "Typically planners assume life expectancy of 85–90 years. Use conservative longevity assumptions if family longevity is high or you retire early." },
+        { "q": "Does the calculator account for post-retirement returns?", "a": "Yes — you can set a lower, conservative post-retirement return (e.g., 6–8%) to model how the corpus will be invested and sustain withdrawals." },
+        { "q": "Can I plan for early retirement (before 60) with this calculator?", "a": "Yes — set your desired retirement age earlier and increase the investment horizon and SIP accordingly. Factor in longer post-retirement years and higher healthcare costs." },
+        { "q": "What is the simplest rule of thumb to estimate a target corpus?", "a": "A common rule is 25× your current annual expenses (for a 4% real withdrawal), but use the calculator to refine this with inflation, returns, and existing savings." }
+      ]
+    },
     "methodology": {
       "h2": "Methodology & Update Log",
       "body": "This calculator uses standard financial formulas for future value (FV) and present value (PV) of annuities to project your retirement corpus and required SIP. All figures are illustrative. Last content update: September 2025. Financial formulas verified against established industry standards."
+    },
+    "assumptions": {
+      "title": "Default assumptions & why we chose them",
+      "body": "<p>This calculator uses standard financial formulas and default assumptions based on long-term Indian market data. You can adjust these inputs to match your expectations.</p><ul><li><strong>Inflation: 6% p.a.</strong> - This is a conservative long-term average for India.</li><li><strong>Pre-retirement returns: 12% p.a.</strong> - This assumes a diversified portfolio with a significant equity component (e.g., mutual funds).</li><li><strong>Post-retirement returns: 7% p.a.</strong> - This assumes a more conservative, capital-preserving portfolio after you retire.</li><li><strong>Deposits:</strong> monthly, made at the <strong>start</strong> of each month (annuity-due), which slightly improves returns over end-of-month deposits.</li><li><strong>Life expectancy:</strong> 85 years.</li></ul>"
     }
   },
   "loan_optimization_calculator": {
-    "meta_title": "Loan Optimizer & EMI Calculator (Prepayment) | BharatSaver",
-    "meta_description": "Use our free Loan Optimization Calculator to calculate your EMI and see how extra payments (prepayment) can help you reduce your loan tenure and save interest. Updated for 2025.",
-    "h1": "Loan Optimization Calculator"
-  },
-  "mutual_fund_overlap_calculator": {
-    "meta_title": "Mutual Fund Overlap Calculator India (2025) | BharatSaver",
-    "meta_description": "Check for portfolio overlap in your mutual funds to ensure proper diversification. Use our free Mutual Fund Overlap Calculator for Indian funds for 2025.",
-    "h1": "Mutual Fund Overlap Calculator"
+    "meta_title": "Loan Optimization Calculator India 2025 — Reduce EMI & Save Interest",
+    "meta_description": "Free Loan Optimization Calculator (India). Compare prepayment vs invest, optimize EMI, plan balance transfer, download amortization schedule.",
+    "h1": "Loan Optimization Calculator — Optimize EMI, Prepayment & Refinance (India, 2025)",
+    "summary": "This guide + interactive calculator helps you answer: How can I minimize total interest, reduce my EMI or tenure, and make the best choice between prepaying, refinancing, or investing my surplus? Read the guide, run the calculator, download your amortization plan and decide with confidence.",
+    "title": "Loan Optimizer",
+    "form_description": "Enter your loan details to calculate your EMI and see how prepayments can save you money.",
+    "form": {
+        "loan_amount": "Loan Amount (₹)",
+        "interest_rate": "Interest Rate (% p.a.)",
+        "tenure": "Tenure (in years)",
+        "prepayment_amount": "One-time Prepayment Amount (₹)",
+        "calculate_cta": "Calculate & Optimize",
+        "calculating": "Calculating..."
+    },
+    "results": {
+        "title": "Your Loan Analysis",
+        "monthly_emi": "Monthly EMI",
+        "total_interest": "Total Interest Payable",
+        "total_payment": "Total Payment (Principal + Interest)",
+        "prepayment_summary": {
+            "title": "With Prepayment, You Could Save:",
+            "subtitle": "and reduce your loan tenure by {months} months!"
+        },
+        "chart_view": "Chart",
+        "table_view": "Amortization Table",
+        "download_csv": "Download Schedule (CSV)",
+        "principal_paid": "Principal",
+        "interest_paid": "Interest",
+        "outstanding_balance": "Outstanding Balance",
+        "table": {
+            "month": "Month",
+            "principal": "Principal",
+            "interest": "Interest",
+            "total_payment": "Total Payment",
+            "ending_balance": "Ending Balance"
+        }
+    },
+    "why": {
+      "h2": "Why a Loan Optimization Calculator?",
+      "body": "<p>Loans are ubiquitous: home loans, car loans, personal loans, education loans, and credit-card debt. Even when interest rates are low, small decisions—reducing tenure, making a partial prepayment, consolidating high-rate debts—have large long-term effects.</p><p>A <strong>Loan Optimization Calculator</strong> does three things:</p><ul><li><strong>Shows the exact consequences</strong> of action (e.g., prepay ₹1,00,000 today reduces X years and saves Y in interest).</li><li><strong>Compares options numerically</strong> (keep EMI and shorten tenure vs reduce EMI).</li><li><strong>Generates a reproducible plan</strong> (amortization schedule, downloadable CSV/PDF) you can share with lenders or advisors.</li></ul><p>Unlike a simple EMI calculator, an optimization calculator models <em>what-if</em> scenarios and gives actionable recommendations — the bridge between information and action.</p><h4>Who should use this?</h4><ul><li>Homeowners considering part-prepayment or refinancing.</li><li>Borrowers with multiple high-rate loans.</li><li>People deciding whether to invest surplus or prepay loans.</li><li>Financial advisors preparing client plans.</li></ul>"
+    },
+    "how_it_works": {
+      "h2": "How this Loan Optimization Calculator Works (methodology & formulas)",
+      "body": "<p>This section explains the math so you can trust results. Transparency is critical—especially for financial tools.</p><h3>Core formulas</h3><h4>EMI (Equated Monthly Installment)</h4><p>Given: Principal P (loan amount), Annual nominal rate R%, Monthly rate r = R / 12 / 100, Number of monthly payments n (years × 12). The EMI E is: $$ E = P \\times \\frac{r (1+r)^n}{(1+r)^n - 1} $$</p><h4>Outstanding balance after k payments</h4><p>If you want remaining principal after k EMIs: $$ B_k = P \\times \\frac{(1+r)^n - (1+r)^k}{(1+r)^n - 1} $$</p><h4>Effect of a one-time prepayment</h4><p>Suppose at month k you pay X extra (a lump-sum). Two common lender choices: Option A — Reduce tenure (EMI unchanged), or Option B — Reduce EMI (tenure unchanged).</p>"
+    },
+    "amortization_dive": {
+      "h2": "The Amortization Deep Dive — principal vs interest (interactive)",
+      "body": "<p>Every EMI payment has two components: Interest = outstanding principal × monthly rate, and Principal = EMI − interest. In early years, because outstanding principal is high, interest portion is large. Over time, as principal falls, interest portion decreases and principal portion increases.</p><h4>Why this matters for optimization</h4><ul><li>Prepayments made earlier save <strong>more interest</strong>.</li><li>Splitting prepayments strategically yields greater total savings.</li></ul><p><strong>Interactive features:</strong> Toggle the chart to visualize the shift and export the monthly table for your records.</p>"
+    },
+    "optimization_masterclass": {
+      "h2": "The Optimization Masterclass — reduce EMI vs reduce tenure vs partial prepayment",
+      "body": "<p>When you have extra money, you usually face these choices: Reduce EMI (for cashflow relief), Reduce tenure (to save interest), or Partial prepayment.</p><h3>Decision framework</h3><ul><li>If your priority is <strong>lower monthly outflow</strong>, choose to <strong>reduce EMI</strong>.</li><li>If your priority is to <strong>minimize total interest</strong> and retire the loan faster, choose to <strong>reduce tenure</strong>.</li><li>If you expect investment returns > loan interest (after tax), you may prefer to <strong>invest</strong> rather than prepay.</li></ul>"
+    },
+    "prepay_vs_invest": {
+      "h2": "Prepayment vs Invest — the break-even framework",
+      "body": "<p>Many people ask: <strong>“Should I prepay my home loan or invest the money?”</strong> The calculator includes a break-even test. If expected after-tax investment return (adjusted for risk) is greater than the effective loan interest rate, investing may yield more wealth. Otherwise, prepay.</p>"
+    },
+    "refinance": {
+      "h2": "Refinance & Balance Transfer — when it makes sense in India",
+      "body": "<p>A <strong>balance transfer</strong> or <strong>refinance</strong> replaces your existing loan with a new one. Consider it if a new lender offers a significantly lower effective interest rate (after fees) and you have a good credit score. Our calculator helps you evaluate the break-even months and net savings.</p>"
+    },
+    "multiple_loans": {
+      "h2": "Multiple Loans — consolidation & priority repayment strategy",
+      "body": "<p>Many users carry multiple debts. The optimal strategy is to make minimum payments on all loans and direct any extra amount to the highest-rate loan first (often credit card or personal loan). This is known as the 'debt avalanche' method.</p>"
+    },
+    "examples": {
+      "h2": "Three worked examples (realistic India personas)",
+      "body": "<h4>Example A — Salaried professional (home loan prepayment)</h4><p>Loan: ₹50,00,000 @ 7.5% for 20 years. EMI ≈ ₹40,249. A one-time prepayment of ₹2,00,000 at month 12 reduces tenure by ~15 months and saves over ₹1 lakh in interest.</p><h4>Example B — Mid-income with multiple loans</h4><p>With a Personal Loan @ 12% and a Car Loan @ 9%, applying an extra ₹10,000/month to the higher-rate Personal Loan first saves the most interest overall.</p>"
+    },
+    "how_to_use": {
+      "h2": "How to use this calculator step-by-step (quick guide)",
+      "body": "<ol><li>Choose loan type and enter your loan amount, rate, and tenure.</li><li>Enter any one-time prepayment amount you wish to model.</li><li>Click 'Calculate' to see your new EMI, total interest, and full amortization schedule.</li><li>Use the tabs to switch between the summary chart and the detailed table.</li><li>Download the CSV or share the URL with your inputs saved.</li></ol>"
+    },
+    "downloads": {
+      "h2": "Downloadable outputs, sharing & embedding options",
+      "body": "<p><strong>Downloadable:</strong> A full month-by-month amortization schedule is available as a CSV file. A one-page PDF plan can be generated and emailed for your records. A sharable URL preserves your inputs for easy sharing.</p><p><strong>Embedding:</strong> We provide a lightweight iframe widget for partners and bloggers to embed on their sites, building high-quality backlinks and referral traffic.</p>"
+    },
+    "tax_notes": {
+      "h2": "Tax, penalties & regulatory notes (India-specific)",
+      "body": "<h4>Income tax considerations (India):</h4><p>Interest on a home loan for a self-occupied property is deductible under Section 24. Always consult a tax advisor as this tool shows pre-tax comparisons.</p><h4>Prepayment penalties:</h4><p>Many floating-rate home loans allow prepayment without penalty, but personal loans often have charges. Always check your loan agreement.</p>"
+    },
+    "faq": {
+      "h2": "Frequently Asked Questions (FAQ)",
+      "faqs": [
+        { "q": "Should I prepay my home loan or invest?", "a": "Use the break-even test: if expected post-investment returns exceed your loan interest after taxes/charges, investing may be better; otherwise prepay. Our calculator computes this for you." },
+        { "q": "How much interest will I save by prepaying?", "a": "Enter your loan details and prepayment schedule — the tool shows total interest saved and revised amortization." },
+        { "q": "What is an EMI?", "a": "EMI stands for Equated Monthly Installment — the fixed monthly amount you pay your lender combining principal and interest." },
+        { "q": "How is EMI calculated?", "a": "See the EMI formula in Section 2. The calculator uses that formula to compute EMI precisely." },
+        { "q": "Do prepayments reduce EMI or tenure?", "a": "Most lenders allow you to choose. If you want lower monthly burden, reduce EMI; if you want to pay less interest overall, reduce tenure." },
+        { "q": "Are there prepayment penalties in India?", "a": "It depends on loan type and lender. Many banks waive prepayment on floating-rate home loans but may charge for personal loans. Always check your loan agreement." },
+        { "q": "Can I download the amortization schedule?", "a": "Yes — CSV and PDF exports are available. PDF export can be gated for lead capture if you want." },
+        { "q": "Is refinancing always a good idea?", "a": "No. Include processing fees and prepayment penalties in your calculation. Refinance makes sense when net interest savings exceed costs within your relevant horizon." },
+        { "q": "How do I prioritize multiple loans?", "a": "Pay minimums on all loans; apply extra funds to the highest effective interest-rate loan first (consider penalties)." },
+        { "q": "How accurate is the calculator?", "a": "It uses standard formulas and month-by-month simulation. For exact lender-specific outcomes, check with your bank." }
+      ]
+    },
+    "methodology": {
+      "h2": "Sources, methodology & update log",
+      "body": "<p><strong>Methodology:</strong> Calculations use standard financial formulas and month-by-month amortization simulation. Assumptions like monthly compounding and payment timing are explicitly stated.</p><p><strong>Update log:</strong> Last content update: September 2025. Reviewed by Mahesh Chaube, CFP; editorial review by Laveena Vijayi.</p>"
+    }
   },
   "ups_pension_calculator": {
     "meta_title": "UPS Pension Scheme Calculator (2025) | BharatSaver",
@@ -1095,5 +1153,3 @@
     "view_calculator": "View Calculator"
   }
 }
-
-    
