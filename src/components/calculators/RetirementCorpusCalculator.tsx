@@ -16,6 +16,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { type ChartConfig } from '@/components/ui/chart';
 import type { Dictionary } from '@/types';
+import { calculateRetirementCorpus } from '@/lib/calculations';
 
 const formSchema = z.object({
   currentAge: z.coerce.number().min(18, 'Must be at least 18').max(60, 'Age is too high for retirement planning'),
@@ -27,7 +28,7 @@ const formSchema = z.object({
   postRetirementReturns: z.coerce.number().min(1, 'Rate must be positive').max(15, 'Rate seems too high'),
 });
 
-type FormValues = z.infer<typeof formSchema>;
+export type FormValues = z.infer<typeof formSchema>;
 
 type YearlyData = {
   year: number;
@@ -37,7 +38,7 @@ type YearlyData = {
   totalCorpus: number;
 };
 
-type CalculationResult = {
+export type CalculationResult = {
   requiredCorpus: number;
   corpusShortfall: number;
   monthlySip: number;
@@ -47,6 +48,7 @@ type CalculationResult = {
 
 type CalculatorProps = {
   dictionary: Dictionary['retirement_corpus_calculator'];
+  initialResult: CalculationResult;
 };
 
 const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -54,8 +56,8 @@ const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 
-export function RetirementCorpusCalculator({ dictionary }: CalculatorProps) {
-  const [result, setResult] = useState<CalculationResult | null>(null);
+export function RetirementCorpusCalculator({ dictionary, initialResult }: CalculatorProps) {
+  const [result, setResult] = useState<CalculationResult | null>(initialResult);
   const [isLoading, setIsLoading] = useState(false);
 
   const form = useForm<FormValues>({
@@ -64,97 +66,20 @@ export function RetirementCorpusCalculator({ dictionary }: CalculatorProps) {
       currentAge: 30,
       retirementAge: 60,
       monthlyExpenses: 50000,
-      currentSavings: 1000000,
+      currentSavings: 500000,
       inflationRate: 6,
       preRetirementReturns: 12,
       postRetirementReturns: 7,
     },
   });
 
-  useEffect(() => {
-    // Run calculation on initial load with default values
-    handleSubmit(form.getValues());
-     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-
   async function handleSubmit(values: FormValues) {
     setIsLoading(true);
     setResult(null);
-    await new Promise(resolve => setTimeout(resolve, 500));
+    await new Promise(resolve => setTimeout(resolve, 200));
 
-    const {
-        currentAge,
-        retirementAge,
-        monthlyExpenses,
-        currentSavings,
-        inflationRate,
-        preRetirementReturns,
-        postRetirementReturns
-    } = values;
-
-    const yearsToRetire = retirementAge - currentAge;
-    const inflation = inflationRate / 100;
-    const preRetirementROR = preRetirementReturns / 100;
-    const postRetirementROR = postRetirementReturns / 100;
-
-    // 1. Future value of current monthly expenses
-    const futureMonthlyExpenses = monthlyExpenses * Math.pow(1 + inflation, yearsToRetire);
-    const futureAnnualExpenses = futureMonthlyExpenses * 12;
-    
-    // 2. Required corpus at retirement
-    // Using formula for Present Value of a growing annuity, simplified
-    const realReturnRate = (postRetirementROR - inflation) / (1 + inflation);
-    // Assuming retirement period from retirement age to 85 (25 years)
-    const retirementYears = 85 - retirementAge;
-    let requiredCorpus;
-    if (realReturnRate !== 0) {
-       requiredCorpus = futureAnnualExpenses * ((1 - Math.pow(1 + realReturnRate, -retirementYears)) / realReturnRate);
-    } else {
-       requiredCorpus = futureAnnualExpenses * retirementYears;
-    }
-
-
-    // 3. Future value of current savings
-    const futureValueOfCurrentSavings = currentSavings * Math.pow(1 + preRetirementROR, yearsToRetire);
-    
-    // 4. Corpus shortfall
-    const corpusShortfall = requiredCorpus - futureValueOfCurrentSavings;
-
-    // 5. Required monthly SIP
-    const monthlyRate = preRetirementROR / 12;
-    const totalMonths = yearsToRetire * 12;
-    let monthlySip = 0;
-    if (corpusShortfall > 0) {
-      monthlySip = (corpusShortfall * monthlyRate) / (Math.pow(1 + monthlyRate, totalMonths) - 1);
-    }
-    
-    // 6. Yearly data for chart
-    const yearlyData: YearlyData[] = [];
-    let existingCorpusValue = currentSavings;
-    let sipValue = 0;
-
-    for (let year = 1; year <= yearsToRetire; year++) {
-        let yearlySipContribution = monthlySip * 12;
-        sipValue = (sipValue + yearlySipContribution) * (1 + preRetirementROR);
-        existingCorpusValue *= (1 + preRetirementROR);
-      
-      yearlyData.push({
-        year,
-        age: currentAge + year,
-        sipValue,
-        existingCorpusValue,
-        totalCorpus: existingCorpusValue + sipValue,
-      });
-    }
-
-    setResult({
-      requiredCorpus,
-      corpusShortfall,
-      monthlySip: monthlySip > 0 ? monthlySip : 0,
-      yearlyData,
-      futureMonthlyExpenses,
-    });
+    const calculatedResult = calculateRetirementCorpus(values);
+    setResult(calculatedResult);
     
     setIsLoading(false);
   }
@@ -213,7 +138,7 @@ export function RetirementCorpusCalculator({ dictionary }: CalculatorProps) {
 
   return (
     <>
-      <Card className="shadow-lg">
+      <Card className="shadow-lg mt-8">
         <CardHeader>
           <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
             <h2 className="flex items-center gap-2 text-xl font-bold">
@@ -329,5 +254,3 @@ export function RetirementCorpusCalculator({ dictionary }: CalculatorProps) {
     </>
   );
 }
-
-    

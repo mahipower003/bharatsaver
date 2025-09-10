@@ -2,12 +2,13 @@
 import { getDictionary } from "@/lib/dictionaries";
 import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
-import { RetirementCorpusCalculator } from "@/components/calculators/RetirementCorpusCalculator";
+import { RetirementCorpusCalculator, type CalculationResult } from "@/components/calculators/RetirementCorpusCalculator";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { FileText, Calculator, HelpCircle, TrendingUp, Wallet, Landmark, Star, AlertTriangle, Download, BadgeCheck } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import Link from "next/link";
 import { AuthorCard } from "@/components/layout/AuthorCard";
+import { calculateRetirementCorpus } from "@/lib/calculations";
 
 
 export async function generateStaticParams() {
@@ -119,6 +120,18 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
     ],
   };
 
+  const defaultValues = {
+      currentAge: 30,
+      retirementAge: 60,
+      monthlyExpenses: 50000,
+      currentSavings: 500000,
+      inflationRate: 6,
+      preRetirementReturns: 12,
+      postRetirementReturns: 7,
+  };
+
+  const initialResult: CalculationResult = calculateRetirementCorpus(defaultValues);
+
   return (
     <div className="py-12">
        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
@@ -138,7 +151,15 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
             <div className="bs-reviewed">Reviewed by <strong>Laveena Vijayi</strong> — BharatSaver Editorial Team</div>
         </div>
 
-        <RetirementCorpusCalculator dictionary={dictionary.retirement_corpus_calculator} />
+        <RetirementCorpusCalculator dictionary={dictionary.retirement_corpus_calculator} initialResult={initialResult} />
+
+        <Alert className="mt-8">
+            <AlertTriangle className="h-4 w-4" />
+            <AlertTitle>{dictionary.retirement_corpus_calculator.assumptions.title}</AlertTitle>
+            <AlertDescription>
+                <div className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.assumptions.body }} />
+            </AlertDescription>
+        </Alert>
 
         <Card className="mt-8 shadow-lg">
            <CardHeader>
