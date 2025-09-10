@@ -649,6 +649,7 @@
     "h1": "FD vs PPF Returns Calculator 2025 — Compare Fixed Deposit & PPF",
     "description": "Enter your investment amount and tenure to see a side-by-side comparison of maturity value, tax impact, and post-tax returns for Fixed Deposits and Public Provident Fund. Make an informed decision.",
     "title": "FD vs PPF Calculator",
+    "last_updated": "Last Updated:",
     "form_description": "Compare post-tax returns from a lump-sum FD vs recurring PPF investment.",
     "investment_amount_label": "Lump-sum Investment (FD) / Annual Recurring (PPF)",
     "tenure_label": "Investment Tenure (Years)",
@@ -814,7 +815,7 @@
     },
     "how_we_calculate": {
       "title": "మేము మీ పన్నును ఎలా లెక్కిస్తాము (దశల వారీ)",
-      "body": "<p>మా పన్ను క్యాలిక్యులేటర్ FY 2024-25 (AY 2025-26) కోసం అధికారిక పన్ను స్లాబ్‌లను వర్తింపజేసి రెండు విధానాల కింద మీ బాధ్యతను నిర్ధారిస్తుంది.</p><ul><li><strong>పాత విధానం లెక్కింపు:</strong> స్థూల ఆదాయం - ప్రామాణిక మినహాయింపు - అన్ని సెక్షన్ 80 మినహాయింపులు - HRA/గృహ రుణ వడ్డీ = పన్ను విధించదగిన ఆదాయం.</li><li><strong>కొత్త విధానం లెక్కింపు:</strong> స్థూల ఆదాయం - ప్రామాణిక మినహాయింపు = పన్ను విధించదగిన ఆదాయం.</li></ul><p>తుది పన్ను మొత్తంపై 4% ఆరోగ్యం & విద్యా సెస్ వర్తిస్తుంది. డిఫాల్ట్ కొత్త విధానంలో ₹7 లక్షల వరకు ఆదాయం కోసం సెక్షన్ 87A కింద రిబేట్ ఉంది, ఇది ప్రభావవంతమైన పన్నును సున్నా చేస్తుంది. స్లాబ్ రేట్ల కోసం, మేము అధికారిక <a href='https://incometaxindia.gov.in/Pages/tools/income-tax-calculator.aspx' target='_blank' rel='noopener noreferrer'>ఆదాయపు పన్ను శాఖ ఇ-క్యాలిక్యులేటర్‌ను</a> ఉదహరిస్తాము.</p>"
+      "body": "<ul><li><strong>పాత విధానం లెక్కింపు:</strong> స్థూల ఆదాయం - ప్రామాణిక మినహాయింపు - అన్ని సెక్షన్ 80 మినహాయింపులు - HRA/గృహ రుణ వడ్డీ = పన్ను విధించదగిన ఆదాయం.</li><li><strong>కొత్త విధానం లెక్కింపు:</strong> స్థూల ఆదాయం - ప్రామాణిక మినహాయింపు = పన్ను విధించదగిన ఆదాయం.</li></ul><p>మా పన్ను క్యాలిక్యులేటర్ FY 2024-25 (AY 2025-26) కోసం అధికారిక పన్ను స్లాబ్‌లను వర్తింపజేసి రెండు విధానాల కింద మీ బాధ్యతను నిర్ధారిస్తుంది. తుది పన్ను మొత్తంపై 4% ఆరోగ్యం & విద్యా సెస్ వర్తిస్తుంది. డిఫాల్ట్ కొత్త విధానంలో ₹7 లక్షల వరకు ఆదాయం కోసం సెక్షన్ 87A కింద రిబేట్ ఉంది, ఇది ప్రభావవంతమైన పన్నును సున్నా చేస్తుంది. స్లాబ్ రేట్ల కోసం, మేము అధికారిక <a href='https://incometaxindia.gov.in/Pages/tools/income-tax-calculator.aspx' target='_blank' rel='noopener noreferrer'>ఆదాయపు పన్ను శాఖ ఇ-క్యాలిక్యులేటర్‌ను</a> ఉదహరిస్తాము.</p>"
     },
     "checklist": {
       "title": "ఎలా ఎంచుకోవాలి: ఒక శీఘ్ర చెక్‌లిస్ట్",
@@ -857,94 +858,184 @@
     }
   },
   "retirement_corpus_calculator": {
-    "meta_title": "భారతదేశం కోసం పదవీ విరమణ కార్పస్ క్యాలిక్యులేటర్ (2025) | BharatSaver",
-    "meta_description": "మీ ఆర్థిక లక్ష్యాల ఆధారంగా మీ పదవీ విరమణ అనంతర జీవితానికి అవసరమైన మొత్తం కార్పస్‌ను లెక్కించడం ద్వారా మీ పదవీ విరమణ కోసం ప్లాన్ చేయండి. మా ఉచిత 2025 పదవీ విరమణ క్యాలిక్యులేటర్‌ను ఉపయోగించండి.",
-    "h1": "పదవీ విరమణ కార్పస్ క్యాలిక్యులేటర్"
+    "meta_title": "Retirement Corpus Calculator 2025 — How Much to Save Monthly to Retire at 60",
+    "meta_description": "Use our free retirement corpus calculator (India) — includes inflation, life expectancy, existing savings and investment returns. 3 worked examples & downloadable CSV.",
+    "h1": "Retirement Corpus Calculator — How Much Money Do You Need to Retire in India (2025)",
+    "title": "Retirement Corpus Calculator",
+    "form_description": "Plan your comfortable retirement by calculating the total corpus you need.",
+    "current_age_label": "Current Age",
+    "retirement_age_label": "Retirement Age",
+    "monthly_expenses_label": "Current Monthly Expenses (₹)",
+    "current_savings_label": "Current Retirement Savings (₹)",
+    "inflation_rate_label": "Expected Inflation Rate (% p.a.)",
+    "pre_retirement_returns_label": "Pre-Retirement Returns (% p.a.)",
+    "post_retirement_returns_label": "Post-Retirement Returns (% p.a.)",
+    "calculate_button": "Calculate Corpus",
+    "loading": "Calculating...",
+    "results_title": "Your Retirement Projection",
+    "required_corpus": "Required Corpus at Retirement",
+    "corpus_shortfall": "Corpus Shortfall",
+    "corpus_surplus": "Corpus Surplus",
+    "monthly_sip": "Required Monthly SIP",
+    "view_chart": "View Chart",
+    "view_table": "View Table",
+    "export_csv": "Export CSV",
+    "table_year": "Year",
+    "table_age": "Age",
+    "table_total_corpus": "Total Corpus",
+    "age_label": "Age",
+    "amount_in_lakhs": "Amount (in Lakhs)",
+    "faqs": [
+        {
+            "question": "What is retirement corpus?",
+            "answer": "A retirement corpus is the total sum of money and assets an individual accumulates to support their financial needs during their non-working years. It's your financial nest egg for retirement."
+        },
+        {
+            "question": "How much corpus do I need to retire at 60?",
+            "answer": "This is highly personal, but a common rule is the 25x/30x rule: your corpus should be 25 to 30 times your current annual expenses. Use our calculator for a precise figure based on your lifestyle."
+        },
+        {
+            "question": "How do you calculate retirement corpus?",
+            "answer": "The core calculation uses the present value formula, factoring in your future annual expenses, inflation, life expectancy, and expected returns on investment. Our calculator does this complex math for you."
+        },
+        {
+            "question": "What inflation rate should I assume for retirement planning?",
+            "answer": "We use 6% by default as a long-term average for India, but this is a critical assumption. For a more conservative plan, consider a higher rate, especially for healthcare costs."
+        },
+        {
+            "question": "What is the difference between pre-retirement and post-retirement return?",
+            "answer": "Pre-retirement (accumulation phase) returns are typically higher as you can take more risk with equities. Post-retirement (withdrawal phase) returns are lower as your portfolio shifts to safer, fixed-income assets to preserve capital."
+        },
+        {
+            "question": "How much should a 30-year-old save per month for retirement?",
+            "answer": "This depends entirely on their desired retirement lifestyle. A 30-year-old aiming for a corpus of ₹2 crore by age 60 might need to save ₹15,000 - ₹20,000 per month via SIPs, assuming a 12% return."
+        },
+        {
+            "question": "Can I include EPF/PPF/NPS in the retirement corpus?",
+            "answer": "Absolutely. Your existing savings in EPF, PPF, NPS, mutual funds, and other assets should all be included in the 'Current Savings' input of the calculator."
+        },
+        {
+            "question": "How long will my retirement corpus last?",
+            "answer": "This depends on your withdrawal rate. The 4% rule suggests your corpus can last for 30 years or more if you withdraw only 4% of the initial amount in the first year, adjusted for inflation annually."
+        },
+        {
+            "question": "Does the calculator account for taxes and healthcare costs?",
+            "answer": "The calculator requires you to input post-tax investment returns. Healthcare costs should be factored into your 'monthly expenses' input, increasing it to account for rising medical inflation."
+        },
+        {
+            "question": "What if my income rises — how to update the plan?",
+            "answer": "You should re-run the retirement calculator annually or after any significant life event (like a salary hike or marriage). Increasing your SIP or monthly savings contributions will help you reach your goal faster."
+        },
+        {
+            "question": "How to plan retirement for early retirement (age 50)?",
+            "answer": "For early retirement, you need a larger corpus because your money needs to last longer, and you have fewer years to save. You must plan for a higher savings rate and potentially more aggressive investments."
+        },
+        {
+            "question": "Can a corpus be converted into monthly pension?",
+            "answer": "Yes. This is typically done through a Systematic Withdrawal Plan (SWP) from mutual funds or by purchasing an annuity plan from an insurance company, which provides a guaranteed income for life."
+        },
+        {
+            "question": "Should I assume conservative returns or aggressive returns?",
+            "answer": "This depends on your risk appetite. A balanced approach is to assume a 10-12% pre-retirement return (equity-heavy portfolio) and a 6-7% post-retirement return (debt-heavy portfolio)."
+        },
+        {
+            "question": "How frequently should I re-run the retirement calculator?",
+            "answer": "It is advisable to review your retirement plan and re-run the calculations at least once a year to ensure you are on track with your financial goals."
+        },
+        {
+            "question": "Can NRIs use this calculator?",
+            "answer": "Yes, NRIs can use this calculator to plan for their retirement in India. They should be mindful of specific tax implications, such as those covered under Section 89A for foreign retirement accounts."
+        },
+        {
+            "question": "Why is life expectancy important in retirement planning?",
+            "answer": "Life expectancy determines how many years your retirement corpus needs to support you. A longer life expectancy requires a larger corpus to avoid outliving your savings."
+        }
+    ]
   },
   "loan_optimization_calculator": {
-    "meta_title": "లోన్ ఆప్టిమైజర్ & EMI క్యాలిక్యులేటర్ (ప్రీపేమెంట్) | BharatSaver",
-    "meta_description": "మీ EMIని లెక్కించడానికి మా ఉచిత లోన్ ఆప్టిమైజేషన్ క్యాలిక్యులేటర్‌ను ఉపయోగించండి మరియు అదనపు చెల్లింపులు (ప్రీపేమెంట్) మీ లోన్ కాలాన్ని తగ్గించడానికి మరియు వడ్డీని ఆదా చేయడానికి ఎలా సహాయపడతాయో చూడండి. 2025 కోసం నవీకరించబడింది.",
-    "h1": "లోన్ ఆప్టిమైజేషన్ క్యాలిక్యులేటర్"
+    "meta_title": "Loan Optimizer & EMI Calculator (Prepayment) | BharatSaver",
+    "meta_description": "Use our free Loan Optimization Calculator to calculate your EMI and see how extra payments (prepayment) can help you reduce your loan tenure and save interest. Updated for 2025.",
+    "h1": "Loan Optimization Calculator"
   },
   "mutual_fund_overlap_calculator": {
-    "meta_title": "మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ క్యాలిక్యులేటర్ ఇండియా (2025) | BharatSaver",
-    "meta_description": "సరైన వైవిధ్యతను నిర్ధారించడానికి మీ మ్యూచువల్ ఫండ్స్‌లో పోర్ట్‌ఫోలియో ఓవర్‌ల్యాప్‌ను తనిఖీ చేయండి. భారతీయ ఫండ్ల కోసం మా ఉచిత మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ క్యాలిక్యులేటర్‌ను ఉపయోగించండి 2025 కోసం.",
-    "h1": "మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ క్యాలిక్యులేటర్"
+    "meta_title": "Mutual Fund Overlap Calculator India (2025) | BharatSaver",
+    "meta_description": "Check for portfolio overlap in your mutual funds to ensure proper diversification. Use our free Mutual Fund Overlap Calculator for Indian funds for 2025.",
+    "h1": "Mutual Fund Overlap Calculator"
   },
   "ups_pension_calculator": {
-    "meta_title": "UPS పెన్షన్ స్కీమ్ క్యాలిక్యులేటర్ (2025) | BharatSaver",
-    "meta_description": "మా సులభంగా ఉపయోగించగల క్యాలిక్యులేటర్‌తో యూనివర్సల్ పెన్షన్ స్కీమ్ (UPS) కింద మీ సంభావ్య పెన్షన్ మొత్తాన్ని అంచనా వేయండి. 2025 లో మీ భవిష్యత్తు కోసం ప్లాన్ చేయండి.",
-    "h1": "UPS పెన్షన్ స్కీమ్ క్యాలిక్యులేటర్"
+    "meta_title": "UPS Pension Scheme Calculator (2025) | BharatSaver",
+    "meta_description": "Estimate your potential pension amount under the Universal Pension Scheme (UPS) with our easy-to-use calculator. Plan for your future in 2025.",
+    "h1": "UPS Pension Scheme Calculator"
   },
   "scheme_selector": {
-    "title": "పెట్టుబడి పథకం సెలెక్టర్",
-    "description": "మీ అవసరాలకు ఉత్తమ పెట్టుబడి పథకాన్ని కనుగొనడానికి కొన్ని ప్రశ్నలకు సమాధానం ఇవ్వండి.",
-    "meta_title": "AI ఇన్వెస్ట్‌మెంట్ స్కీమ్ సెలెక్టర్ క్విజ్ (2025) | BharatSaver",
-    "meta_description": "మీ కోసం ఉత్తమ పెట్టుబడి పథకం (PPF, SSY, NPS, APY, FD) కోసం సిఫార్సు పొందడానికి మా AI- ఆధారిత స్కీమ్ సెలెక్టర్ క్విజ్‌ను ఉపయోగించండి 2025 లో.",
-    "h1": "AI స్కీమ్ సెలెక్టర్ క్విజ్",
-    "age_label": "మీ వయస్సు",
-    "income_label": "ప్రస్తుత వార్షిక ఆదాయం (₹ లో)",
-    "risk_label": "మీ రిస్క్ సహనం",
-    "risk_low": "తక్కువ",
-    "risk_medium": "మధ్యస్థం",
-    "risk_high": "అధికం",
-    "horizon_label": "పెట్టుబడి కాలం",
-    "horizon_short": "స్వల్పకాలిక (< 5 సంవత్సరాలు)",
-    "horizon_medium": "మధ్యకాలిక (5-10 సంవత్సరాలు)",
-    "horizon_long": "దీర్ఘకాలిక (> 10 సంవత్సరాలు)",
-    "goal_label": "ప్రాథమిక పెట్టుబడి లక్ష్యం",
-    "goal_placeholder": "ఉదా., పదవీ విరమణ, పిల్లల చదువు",
-    "submit_button": "నా పథకాన్ని కనుగొనండి",
-    "loading": "మీ కోసం ఉత్తమ పథకాన్ని కనుగొనಲಾಗುತ್ತಿದೆ...",
-    "result_title": "మీ సిఫార్సు చేసిన పథకం",
-    "result_reasoning": "హేతువు"
+    "title": "Investment Scheme Selector",
+    "description": "Answer a few questions to find the best investment scheme for your needs.",
+    "meta_title": "AI Investment Scheme Selector Quiz (2025) | BharatSaver",
+    "meta_description": "Use our AI-powered Scheme Selector Quiz to get a recommendation for the best investment scheme (PPF, SSY, NPS, APY, FD) for you in 2025.",
+    "h1": "AI Scheme Selector Quiz",
+    "age_label": "Your Age",
+    "income_label": "Current Annual Income (in ₹)",
+    "risk_label": "Your Risk Tolerance",
+    "risk_low": "Low",
+    "risk_medium": "Medium",
+    "risk_high": "High",
+    "horizon_label": "Investment Horizon",
+    "horizon_short": "Short-term (< 5 years)",
+    "horizon_medium": "Medium-term (5-10 years)",
+    "horizon_long": "Long-term (> 10 years)",
+    "goal_label": "Primary Investment Goal",
+    "goal_placeholder": "e.g., Retirement, Child's education",
+    "submit_button": "Find my Scheme",
+    "loading": "Finding the best scheme for you...",
+    "result_title": "Your Recommended Scheme",
+    "result_reasoning": "Reasoning"
   },
   "terms_page": {
-    "meta_title": "నిబంధనలు మరియు షరతులు | BharatSaver",
-    "meta_description": "భారత్‌సేవర్ వెబ్‌సైట్ మరియు దాని సాధనాలను ఉపయోగించడం కోసం నిబంధనలు మరియు షరతులను చదవండి.",
-    "h1": "నిబంధనలు మరియు షరతులు",
-    "p1": "భారత్‌సేవర్‌కు స్వాగతం. మా వెబ్‌సైట్‌ను యాక్సెస్ చేయడం ద్వారా, మీరు ఈ నిబంధనలు మరియు షరతులకు అంగీకరిస్తున్నారు. దయచేసి వాటిని జాగ్రత్తగా చదవండి.",
-    "h2_1": "వెబ్‌సైట్ వాడకం",
-    "p2": "ఈ వెబ్‌సైట్‌లో అందించబడిన కంటెంట్ మరియు సాధనాలు సాధారణ సమాచారం మరియు ఉపయోగం కోసం మాత్రమే. అవి నోటీసు లేకుండా మార్పుకు లోబడి ఉంటాయి. ఈ వెబ్‌సైట్‌లోని ఏదైనా సమాచారం లేదా మెటీరియల్‌ల మీ ఉపయోగం పూర్తిగా మీ స్వంత పూచీతో ఉంటుంది, దీనికి మేము బాధ్యత వహించము.",
-    "h2_2": "సమాచారం యొక్క ఖచ్చితత్వం",
-    "p3": "మేము ఖచ్చితమైన మరియు నవీనమైన సమాచారాన్ని అందించడానికి ప్రయత్నిస్తున్నప్పుడు, వెబ్‌సైట్ లేదా వెబ్‌సైట్‌లో ఉన్న సమాచారం, ఉత్పత్తులు, సేవలు లేదా సంబంధిత గ్రాఫिक्स యొక్క పరిపూర్ణత, ఖచ్చితత్వం, విశ్వసనీయత, అనుకూలత లేదా లభ్యత గురించి ఏ ఉద్దేశానికైనా మేము ఎలాంటి ప్రాతినిధ్యాలు లేదా వారెంటీలు ఇవ్వము.",
-    "h2_3": "పాలక చట్టం",
-    "p4": "ఈ వెబ్‌సైట్ యొక్క మీ ఉపయోగం మరియు వెబ్‌సైట్ యొక్క అటువంటి ఉపయోగం నుండి ఉత్పన్నమయ్యే ఏదైనా వివాదం భారతదేశ చట్టాలకు లోబడి ఉంటుంది."
+    "meta_title": "Terms and Conditions | BharatSaver",
+    "meta_description": "Read the terms and conditions for using the BharatSaver website and its tools.",
+    "h1": "Terms and Conditions",
+    "p1": "Welcome to BharatSaver. By accessing our website, you agree to these terms and conditions. Please read them carefully.",
+    "h2_1": "Use of Website",
+    "p2": "The content and tools provided on this website are for general information and use only. They are subject to change without notice. Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable.",
+    "h2_2": "Accuracy of Information",
+    "p3": "While we strive to provide accurate and up-to-date information, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose.",
+    "h2_3": "Governing Law",
+    "p4": "Your use of this website and any dispute arising out of such use of the website is subject to the laws of India."
   },
   "contact_page": {
-    "meta_title": "మమ్మల్ని సంప్రదించండి | BharatSaver",
-    "meta_description": "ఏవైనా ప్రశ్నలు లేదా అభిప్రాయాల కోసం భారత్‌సేవర్ బృందంతో సన్నిహితంగా ఉండండి.",
-    "h1": "మమ్మల్ని సంప్రదించండి",
-    "p1": "మేము సహాయం చేయడానికి ఇక్కడ ఉన్నాము. ఏవైనా ప్రశ్నలు లేదా అభిప్రాయాలతో మమ్మల్ని సంప్రదించండి."
+    "meta_title": "Contact Us | BharatSaver",
+    "meta_description": "Get in touch with the BharatSaver team for any questions or feedback.",
+    "h1": "Contact Us",
+    "p1": "We're here to help. Reach out to us with any questions or feedback."
   },
   "about_page": {
-    "meta_title": "మా గురించి | BharatSaver",
-    "meta_description": "ప్రతి భారతీయుడిని ఆర్థిక పరిజ్ఞానం మరియు ఉచిత, సులభంగా ఉపయోగించగల సాధనాలతో సాధికారపరచాలనే భారత్‌సేవర్ లక్ష్యం గురించి మరింత తెలుసుకోండి.",
-    "h1": "ప్రతి భారతీయుడిని ఆర్థిక పరిజ్ఞానంతో సాధికారపరచడం",
-    "p1": "మీ భవిష్యత్తు కోసం తెలివైన నిర్ణయాలు తీసుకోవడంలో మీకు సహాయపడటానికి అందుబాటులో ఉండే మరియు సులభంగా అర్థమయ్యే ఆర్థిక సాధనాలు మరియు గైడ్‌లను అందించడమే మా లక్ష్యం.",
-    "h2_1": "మా కథ",
-    "p2": "భారత్‌సేవర్ ఒక సాధారణ ఆలోచనతో స్థాపించబడింది: ఆర్థిక ప్రణాళికను తక్కువ భయపెట్టేదిగా మరియు అందరికీ మరింత అందుబాటులోకి తీసుకురావడం. సరైన సాధనాలతో, ఎవరైనా వారి ఆర్థిక శ్రేయస్సును నియంత్రించగలరని మేము నమ్ముతున్నాము.",
-    "p3": "మా బృందం ఫైనాన్స్ మరియు టెక్నాలజీపై మక్కువ కలిగి ఉంది మరియు మీరు విశ్వసించగల అధిక-నాణ్యత, విశ్వసనీయ వనరులను రూపొందించడానికి మేము అంకితభావంతో ఉన్నాము."
+    "meta_title": "About Us | BharatSaver",
+    "meta_description": "Learn more about BharatSaver's mission to empower every Indian with financial knowledge and free, easy-to-use tools.",
+    "h1": "Empowering Every Indian with Financial Knowledge",
+    "p1": "Our mission is to provide accessible and easy-to-understand financial tools and guides to help you make smarter decisions for your future.",
+    "h2_1": "Our Story",
+    "p2": "BharatSaver was founded with a simple idea: to make financial planning less intimidating and more accessible for everyone. We believe that with the right tools, anyone can take control of their financial well-being.",
+    "p3": "Our team is passionate about finance and technology, and we are dedicated to creating high-quality, reliable resources that you can trust."
   },
   "search_page": {
-    "meta_title": "శోధించండి | BharatSaver",
-    "meta_description": "భారత్‌సేవర్‌లో ఆర్థిక క్యాలిక్యులేటర్లు మరియు గైడ్‌ల కోసం శోధించండి.",
-    "title": "శోధన ఫలితాలు",
-    "title_with_query": "కోసం శోధన ఫలితాలు",
-    "h1": "క్యాలిక్యులేటర్లు మరియు గైడ్‌లను శోధించండి",
-    "h1_with_query": "కోసం శోధన ఫలితాలు",
-    "results_placeholder": "శోధన కార్యాచరణ త్వరలో వస్తుంది."
+    "meta_title": "Search | BharatSaver",
+    "meta_description": "Search for financial calculators and guides on BharatSaver.",
+    "title": "Search Results",
+    "title_with_query": "Search results for",
+    "h1": "Search Calculators and Guides",
+    "h1_with_query": "Search Results for",
+    "results_placeholder": "Search functionality is coming soon."
   },
   "author_card": {
-    "bio": "మహేష్ చౌబే, CFP ఒక సర్టిఫైడ్ ఫైనాన్షియల్ ప్లానర్, భారతీయ కుటుంబాలకు పన్ను-సమర్థవంతమైన పదవీ విరమణ మరియు విద్యా ప్రణాళికలను నిర్మించడంలో విస్తృతమైన అనుభవం ఉంది। మహేష్ పదవీ విరమణ వ్యూహం, పన్ను-ఆప్టిమైజ్డ్ ఫిక్స్‌డ్-ఇన్‌కమ్ ప్లానింగ్ మరియు రోజువారీ పెట్టుబడిదారులకు నిర్ణయం తీసుకోవడాన్ని సులభతరం చేసే ఆచరణాత్మక ఆర్థిక సాధనాలలో (క్యాలిక్యులేటర్లు, వర్క్‌షీట్‌లు) ప్రత్యేకత కలిగి ఉన్నారు। అతను క్రమం తప్పకుండా ఫిన్‌టెక్‌లకు సలహా ఇస్తాడు మరియు డేటా-ఆధారిత వ్యక్తిగత ఫైనాన్స్ గైడ్‌లను వ్రాస్తాడు।",
-    "author_page_link": "అన్ని కథనాలను చూడండి",
-    "review_text": "<strong>నిపుణులచే సమీక్షించబడింది & ధృవీకరించబడింది:</strong> లవీనా విజయీ — భారత్‌సేవర్ సంపాదకీయ బృందం। డేటా PFRDA, CBDT మరియు ఆదాయపు పన్ను శాఖ అధికారిక క్యాలిక్యులేటర్‌లతో ధృవీకరించబడింది।"
+    "bio": "Mahesh Chaube, CFP is a Certified Financial Planner with extensive experience helping Indian families build tax-efficient retirement and education plans. Mahesh specialises in retirement strategy, tax-optimised fixed-income planning and practical financial tools (calculators, worksheets) that simplify decision-making for everyday investors. He regularly advises fintechs and writes data-driven personal finance guides.",
+    "author_page_link": "View all articles",
+    "review_text": "<strong>Reviewed & Verified by Experts:</strong> Laveena Vijayi — BharatSaver Editorial Team. Data verified against PFRDA, CBDT, and Income Tax Department official calculators."
   },
   "author_page": {
-    "meta_title": "మహేష్ చౌబే, CFP ద్వారా కథనాలు | BharatSaver",
-    "meta_description": "మహేష్ చౌబే, ఒక సర్టిఫైడ్ ఫైనాన్షియల్ ప్లానర్ మరియు భారత్‌సేవర్ వ్యవస్థాపకుడు వ్రాసిన అన్ని ఆర్థిక క్యాలిక్యులేటర్లు మరియు గైడ్‌లను అన్వేషించండి.",
-    "h1": "మహేష్ చౌబే, CFP",
-    "h2": "క్యాలిక్యులేటర్లు & గైడ్లు",
-    "view_calculator": "క్యాలిక్యులేటర్‌ను వీక్షించండి"
+    "meta_title": "Articles by Mahesh Chaube, CFP | BharatSaver",
+    "meta_description": "Explore all financial calculators and guides written by Mahesh Chaube, a Certified Financial Planner and founder of BharatSaver.",
+    "h1": "Mahesh Chaube, CFP",
+    "h2": "Calculators & Guides",
+    "view_calculator": "View Calculator"
   }
 }

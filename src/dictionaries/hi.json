@@ -815,7 +815,7 @@
     },
     "how_we_calculate": {
       "title": "हम आपके कर की गणना कैसे करते हैं (चरण-दर-चरण)",
-      "body": "<p>हमारा कर कैलकुलेटर वित्त वर्ष 2024-25 (AY 2025-26) के लिए आधिकारिक कर स्लैब लागू करता है ताकि दोनों व्यवस्थाओं के तहत आपकी देयता का निर्धारण किया जा सके।</p><ul><li><strong>पुरानी व्यवस्था गणना:</strong> सकल आय - मानक कटौती - सभी धारा 80 कटौतियाँ - HRA/गृह ऋण ब्याज = कर योग्य आय।</li><li><strong>नई व्यवस्था गणना:</strong> सकल आय - मानक कटौती = कर योग्य आय।</li></ul><p>अंतिम कर राशि पर 4% का स्वास्थ्य और शिक्षा उपकर लागू होता है। डिफ़ॉल्ट नई व्यवस्था में ₹7 लाख तक की आय के लिए धारा 87A के तहत छूट है, जिससे प्रभावी कर शून्य हो जाता है। स्लैब दरों के लिए, हम आधिकारिक <a href='https://incometaxindia.gov.in/Pages/tools/income-tax-calculator.aspx' target='_blank' rel='noopener noreferrer'>आयकर विभाग ई-कैलकुलेटर</a> का हवाला देते हैं।</p>"
+      "body": "<ul><li><strong>पुरानी व्यवस्था गणना:</strong> सकल आय - मानक कटौती - सभी धारा 80 कटौतियाँ - HRA/गृह ऋण ब्याज = कर योग्य आय।</li><li><strong>नई व्यवस्था गणना:</strong> सकल आय - मानक कटौती = कर योग्य आय।</li></ul><p>हमारा कर कैलकुलेटर वित्त वर्ष 2024-25 (AY 2025-26) के लिए आधिकारिक कर स्लैब लागू करता है ताकि दोनों व्यवस्थाओं के तहत आपकी देयता का निर्धारण किया जा सके। अंतिम कर राशि पर 4% का स्वास्थ्य और शिक्षा उपकर लागू होता है। डिफ़ॉल्ट नई व्यवस्था में ₹7 लाख तक की आय के लिए धारा 87A के तहत छूट है, जिससे प्रभावी कर शून्य हो जाता है। स्लैब दरों के लिए, हम आधिकारिक <a href='https://incometaxindia.gov.in/Pages/tools/income-tax-calculator.aspx' target='_blank' rel='noopener noreferrer'>आयकर विभाग ई-कैलकुलेटर</a> का हवाला देते हैं।</p>"
     },
     "checklist": {
       "title": "कैसे चुनें: एक त्वरित चेकलिस्ट",
@@ -860,7 +860,97 @@
   "retirement_corpus_calculator": {
     "meta_title": "Retirement Corpus Calculator for India (2025) | BharatSaver",
     "meta_description": "Plan for your retirement by calculating the total corpus required for your post-retirement life based on your financial goals. Use our free 2025 retirement calculator.",
-    "h1": "Retirement Corpus Calculator"
+    "h1": "Retirement Corpus Calculator",
+    "title": "Retirement Corpus Calculator",
+    "form_description": "Plan your comfortable retirement by calculating the total corpus you need.",
+    "current_age_label": "Current Age",
+    "retirement_age_label": "Retirement Age",
+    "monthly_expenses_label": "Current Monthly Expenses (₹)",
+    "current_savings_label": "Current Retirement Savings (₹)",
+    "inflation_rate_label": "Expected Inflation Rate (% p.a.)",
+    "pre_retirement_returns_label": "Pre-Retirement Returns (% p.a.)",
+    "post_retirement_returns_label": "Post-Retirement Returns (% p.a.)",
+    "calculate_button": "Calculate Corpus",
+    "loading": "Calculating...",
+    "results_title": "Your Retirement Projection",
+    "required_corpus": "Required Corpus at Retirement",
+    "corpus_shortfall": "Corpus Shortfall",
+    "corpus_surplus": "Corpus Surplus",
+    "monthly_sip": "Required Monthly SIP",
+    "view_chart": "View Chart",
+    "view_table": "View Table",
+    "export_csv": "Export CSV",
+    "table_year": "Year",
+    "table_age": "Age",
+    "table_total_corpus": "Total Corpus",
+    "age_label": "Age",
+    "amount_in_lakhs": "Amount (in Lakhs)",
+    "faqs": [
+        {
+            "question": "What is retirement corpus?",
+            "answer": "A retirement corpus is the total sum of money and assets an individual accumulates to support their financial needs during their non-working years. It's your financial nest egg for retirement."
+        },
+        {
+            "question": "How much corpus do I need to retire at 60?",
+            "answer": "This is highly personal, but a common rule is the 25x/30x rule: your corpus should be 25 to 30 times your current annual expenses. Use our calculator for a precise figure based on your lifestyle."
+        },
+        {
+            "question": "How do you calculate retirement corpus?",
+            "answer": "The core calculation uses the present value formula, factoring in your future annual expenses, inflation, life expectancy, and expected returns on investment. Our calculator does this complex math for you."
+        },
+        {
+            "question": "What inflation rate should I assume for retirement planning?",
+            "answer": "We use 6% by default as a long-term average for India, but this is a critical assumption. For a more conservative plan, consider a higher rate, especially for healthcare costs."
+        },
+        {
+            "question": "What is the difference between pre-retirement and post-retirement return?",
+            "answer": "Pre-retirement (accumulation phase) returns are typically higher as you can take more risk with equities. Post-retirement (withdrawal phase) returns are lower as your portfolio shifts to safer, fixed-income assets to preserve capital."
+        },
+        {
+            "question": "How much should a 30-year-old save per month for retirement?",
+            "answer": "This depends entirely on their desired retirement lifestyle. A 30-year-old aiming for a corpus of ₹2 crore by age 60 might need to save ₹15,000 - ₹20,000 per month via SIPs, assuming a 12% return."
+        },
+        {
+            "question": "Can I include EPF/PPF/NPS in the retirement corpus?",
+            "answer": "Absolutely. Your existing savings in EPF, PPF, NPS, mutual funds, and other assets should all be included in the 'Current Savings' input of the calculator."
+        },
+        {
+            "question": "How long will my retirement corpus last?",
+            "answer": "This depends on your withdrawal rate. The 4% rule suggests your corpus can last for 30 years or more if you withdraw only 4% of the initial amount in the first year, adjusted for inflation annually."
+        },
+        {
+            "question": "Does the calculator account for taxes and healthcare costs?",
+            "answer": "The calculator requires you to input post-tax investment returns. Healthcare costs should be factored into your 'monthly expenses' input, increasing it to account for rising medical inflation."
+        },
+        {
+            "question": "What if my income rises — how to update the plan?",
+            "answer": "You should re-run the retirement calculator annually or after any significant life event (like a salary hike or marriage). Increasing your SIP or monthly savings contributions will help you reach your goal faster."
+        },
+        {
+            "question": "How to plan retirement for early retirement (age 50)?",
+            "answer": "For early retirement, you need a larger corpus because your money needs to last longer, and you have fewer years to save. You must plan for a higher savings rate and potentially more aggressive investments."
+        },
+        {
+            "question": "Can a corpus be converted into monthly pension?",
+            "answer": "Yes. This is typically done through a Systematic Withdrawal Plan (SWP) from mutual funds or by purchasing an annuity plan from an insurance company, which provides a guaranteed income for life."
+        },
+        {
+            "question": "Should I assume conservative returns or aggressive returns?",
+            "answer": "This depends on your risk appetite. A balanced approach is to assume a 10-12% pre-retirement return (equity-heavy portfolio) and a 6-7% post-retirement return (debt-heavy portfolio)."
+        },
+        {
+            "question": "How frequently should I re-run the retirement calculator?",
+            "answer": "It is advisable to review your retirement plan and re-run the calculations at least once a year to ensure you are on track with your financial goals."
+        },
+        {
+            "question": "Can NRIs use this calculator?",
+            "answer": "Yes, NRIs can use this calculator to plan for their retirement in India. They should be mindful of specific tax implications, such as those covered under Section 89A for foreign retirement accounts."
+        },
+        {
+            "question": "Why is life expectancy important in retirement planning?",
+            "answer": "Life expectancy determines how many years your retirement corpus needs to support you. A longer life expectancy requires a larger corpus to avoid outliving your savings."
+        }
+    ]
   },
   "loan_optimization_calculator": {
     "meta_title": "Loan Optimizer & EMI Calculator (Prepayment) | BharatSaver",

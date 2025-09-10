@@ -2,6 +2,7 @@
 import { getDictionary } from "@/lib/dictionaries";
 import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
+import { RetirementCorpusCalculator } from "@/components/calculators/RetirementCorpusCalculator";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -63,12 +64,17 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
   
   return (
     <div className="py-12">
-      <div className="mx-auto max-w-5xl text-center">
-        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
-          {dictionary.retirement_corpus_calculator.h1}
-        </h1>
-        <p className="mt-8 text-2xl text-muted-foreground">Coming Soon</p>
+      <div className="mx-auto max-w-5xl">
+        <div className="text-center mb-8">
+            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
+            {dictionary.retirement_corpus_calculator.h1}
+            </h1>
+        </div>
+
+        <RetirementCorpusCalculator dictionary={dictionary.retirement_corpus_calculator} />
+
       </div>
     </div>
   );
 }
+

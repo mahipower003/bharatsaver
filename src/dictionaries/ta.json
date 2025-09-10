@@ -401,7 +401,7 @@
     ],
     "conclusion": {
       "title": "முடிவு: உங்கள் மகளுக்கு SSY சரியான தேர்வா?",
-      "body": "சுகன்யா சம்ரித்தி யோஜனா ஒரு பெண் குழந்தைக்கான இந்தியாவின் சிறந்த சேமிப்புத் திட்டங்களில் ஒன்றாக விளங்குகிறது. దాని అధిక, ప్రభుత్వ-హామీ వడ్డీ రేటు మరియు పూర్తి வரி விலக்கு (EEE நிலை) ஆகியவற்றின் கலவையானது உங்கள் மகளின் கல்வி మరియు திருமணத்திற்கு ஒரு கணிசமான நிதியை உருவாக்குவதற்கான ஒரு சக்திவாய்ந்த கருவியாக அமைகிறது. మా SSY கால்குலேட்டర్‌తో మీ முதலீடுகளைத் திட்டமிடுவதன் மூலம், நீங்கள் நம்பிக்கையுடன் அவளது நிதி எதிர்காலத்தைப் பாதுகாக்க முடியும்."
+      "body": "சுகன்யா சம்ரித்தி யோஜனா ஒரு பெண் குழந்தைக்கான இந்தியாவின் சிறந்த சேமிப்புத் திட்டங்களில் ஒன்றாக விளங்குகிறது. దాని అధిక, ప్రభుత్వ-హామీ వడ్డీ రేటు మరియు పూర్తి வரி விலக்கு (EEE நிலை) ஆகியவற்றின் கலவையானது உங்கள் மகளின் கல்வி మరియు திருமணத்திற்கு ஒரு கணிசமான நிதியை உருவாக்குவதற்கான ஒரு శక్తిவாய்ந்த கருவியாக அமைகிறது. మా SSY கால்குலேட்டర్‌తో మీ முதலீடுகளைத் திட்டமிடுவதன் மூலம், நீங்கள் நம்பிக்கையுடன் அவளது நிதி எதிர்காலத்தைப் பாதுகாக்க முடியும்."
     }
   },
   "nps_calculator": {
@@ -619,7 +619,7 @@
     },
     "rules": {
       "title": "அபராதங்கள், தவறிய கொடுப்பனவுகள் & పునరుద్ధరణ — நீங்கள் தெரிந்து கொள்ள வேண்டியவை",
-      "body": "<strong>திரும்பப் பெறுதல்:</strong> పూర్తి ఉపసంహరణ 60 సంవత్సరాల వయస్సులో మాత్రమే అనుమతించబడుతుంది. తీవ్రమైన అనారోగ్యం లేదా మరణం సందర్భాలలో ముందస్తు నిష్క్రమణ అనుమతించబడుతుంది. <br/> <strong>அபராதங்கள்:</strong> ఆలస్యమైన చెల్లింపులకు ஒரு చిన్న அபராதம் விதிக்கப்படுகிறது, ఇది பிரீமியம் தொகையைப் பொறுத்து மாதத்திற்கு ₹1 முதல் ₹10 வரை ఉంటుంది. <br/> <strong>பரிமாற்றம்:</strong> உங்கள் APY கணக்கை ஒரு வங்கியிலிருந்து மற்றொரு வங்கிக்கு மாற்றலாம். அதிகாரப்பூர்வ விதிகளுக்கு, <a href='https://www.pfrda.org.in/my-apy/apy-faq' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA FAQ విభాగాన్ని</a> பார்க்கவும்."
+      "body": "<strong>திரும்பப் பெறுதல்:</strong> పూర్తి ఉపసంహరణ 60 సంవత్సరాల వయస్సులో మాత్రమే అనుమతించబడుతుంది. తీవ్రమైన అనారోగ్యం లేదా మరణం సందర్భాలలో ముందస్తు నిష్క్రమణ అనుమతించబడుతుంది. <br/> <strong>அபராதங்கள்:</strong> ఆలస్యమైన చెల్లింపులకు ஒரு చిన్న அபராதம் விதிக்கப்படுகிறது, இது பிரீமியம் தொகையைப் பொறுத்து மாதத்திற்கு ₹1 முதல் ₹10 வரை ఉంటుంది. <br/> <strong>பரிமாற்றம்:</strong> உங்கள் APY கணக்கை ஒரு வங்கியிலிருந்து மற்றொரு வங்கிக்கு மாற்றலாம். அதிகாரப்பூர்வ விதிகளுக்கு, <a href='https://www.pfrda.org.in/my-apy/apy-faq' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA FAQ విభాగాన్ని</a> பார்க்கவும்."
     },
     "faq_title": "அடிக்கடி கேட்கப்படும் கேள்விகள்",
     "faqs": [
@@ -629,7 +629,7 @@
       { "question": "₹3,000 ஓய்வூதியத்திற்கு நான் எவ்வளவு செலுத்த வேண்டும்?", "answer": "மேலே உள்ள பிரீமியம் விளக்கப்படத்தில் சரியான தொகையைக் கண்டறியவும். எடுத்துக்காட்டு: 25 வயதில் ₹3,000 ஓய்வூதியத்திற்கு ₹226/மாதம் தேவைப்படுகிறது (காட்டப்பட்டுள்ள அட்டவணைப்படி)." },
       { "question": "நான் வருமான வரி செலுத்தினால் APY இல் சேர முடியுமா?", "answer": "விதிகள் காலப்போக்கில் மாறுபடலாம். வரலாற்று ரீதியாக APY அமைப்புசாரா துறையை இலக்காகக் கொண்டது; வருமான வரி செலுத்துபவர்கள் தொடர்பான தற்போதைய கொள்கைக்கு PFRDA அல்லது உங்கள் வங்கியைச் சரிபார்க்கவும்." },
       { "question": "நான் APY చెల్లింపును కోల్పోతే என்ன நடக்கும்?", "answer": "తప్పిన கொடுப்பனவுகள் சிறிய அபராதங்கள் మరియు இறுதியில் கணக்கு செயலிழக்கச் செய்யலாம். வங்கிகள் பொதுவாக పునరుద్ధరణ प्रक्रियाలను అందిస్తాయి — கணக்கை மீண்டும் செயல்படுத்த எந்த அபராதத்துடனும் தவறிய பிரீமியங்களைச் செலுத்துங்கள்." },
-      { "question": "நான் 60 வயதுக்கு முன் APY இலிருந்து திரும்பப் பெறலாமா?", "answer": "ముందస్తు నిష్క్రమణ నిషేధించబడింది — అసాధారణ పరిస్థితులలో (ఉదా., తీవ్రమైన అనారోగ్యం లేదా మరణం) మాత్రమే అనుమతించబడుతుంది మరియు அபராதங்கள் ఉండవచ్చు. అధికారిక PFRDA నియమాలు లేదా మీ బ్యాంకు APY నిబంధనలను చూడండి." },
+      { "question": "நான் 60 வயதுக்கு முன் APY இலிருந்து திரும்பப் பெறலாமா?", "answer": "ముందస్తు నిష్క్రమణ నిషేధించబడింది — అసాధారణ పరిస్థితులలో (ఉదా., తీవ్రమైన అనారోగ్యం లేదా మరణం) మాత్రమే అనుమతించబడుతుంది மற்றும் அபராதங்கள் ఉండవచ్చు. அதிகாரப்பூர்வ PFRDA నియమాలు లేదా మీ బ్యాంకు APY నిబంధనలను చూడండి." },
       { "question": "ఏதேனும் அரசாங்க సహ-సహకారం உண்டா?", "answer": "కొన్ని అర్హతగల சந்தாதாரர்களுக்கு, గతంలో ప్రభుత్వ సహ-సహకార పథకాలు வழங்கబడ్డాయి. PFRDA/NSDL పేజీలలో ప్రస్తుత పథకాలు మరియు అర్హతను ధృవీకరించండి." },
       { "question": "సంతாதாரர் மరణம்పై కార్పస్‌కు ఏమి జరుగుతుంది?", "answer": "சந்தாதாரர் மరణம்పై, జీవిత భాగస్వామికి సాధారణంగా అదే పెన్షన్ లభిస్తుంది; ఇద్దరూ మరణిస్తే, నామినీకి పథక నియమాల ప్రకారం సేకరించిన కార్పస్ లభిస్తుంది." },
       { "question": "APY కంట్రిబ్యూషన్‌లు పన్ను మినహాయింపుకు అర్హమా?", "answer": "APY పెన్షన్ ప్రయోజనాలను అందిస్తుంది మరియు ప్రత్యక్ష అదనపు 80C అలవెన్సులు కాదు; ప్రస్తుత పన్ను చికిత్సల కోసం ఆదాయపు పన్ను నియమాలను తనిఖీ చేయండి. (తాజా పన్ను మార్గదర్శకత్వం కోసం ఎల్లప్పుడూ ఆదాయపు పన్ను విభాగంతో ధృవీకరించండి.)" },
@@ -649,6 +649,7 @@
     "h1": "FD vs PPF Returns Calculator 2025 — Compare Fixed Deposit & PPF",
     "description": "Enter your investment amount and tenure to see a side-by-side comparison of maturity value, tax impact, and post-tax returns for Fixed Deposits and Public Provident Fund. Make an informed decision.",
     "title": "FD vs PPF Calculator",
+    "last_updated": "Last Updated:",
     "form_description": "Compare post-tax returns from a lump-sum FD vs recurring PPF investment.",
     "investment_amount_label": "Lump-sum Investment (FD) / Annual Recurring (PPF)",
     "tenure_label": "Investment Tenure (Years)",
@@ -814,7 +815,7 @@
     },
     "how_we_calculate": {
       "title": "உங்கள் வரியை நாங்கள் எப்படி கணக்கிடுகிறோம் (படிப்படியாக)",
-      "body": "<p>எங்கள் வரி கால்குலேட்டர் FY 2024-25 (AY 2025-26) க்கான அதிகாரப்பூர்வ வரி அடுக்குகளைப் பயன்படுத்தி இரண்டு விதிப்புகளின் கீழும் உங்கள் பொறுப்பை நிர்ணயிக்கிறது.</p><ul><li><strong>பழைய விதிப்பு கணக்கீடு:</strong> மொத்த வருமானம் - நிலையான விலக்கு - அனைத்து பிரிவு 80 விலக்குகள் - HRA/வீட்டுக் கடன் வட்டி = வரி விதிக்கக்கூடிய வருமானம்.</li><li><strong>புதிய விதிப்பு கணக்கீடு:</strong> மொத்த வருமானம் - நிலையான விலக்கு = வரி விதிக்கக்கூடிய வருமானம்.</li></ul><p>இறுதி வரித் தொகையில் 4% சுகாதாரம் மற்றும் கல்வி செஸ் பயன்படுத்தப்படுகிறது. இயல்புநிலை புதிய விதிப்பில் ₹7 லட்சம் வரை வருமானம் உள்ளவர்களுக்கு பிரிவு 87A இன் கீழ் தள்ளுபடி உள்ளது, இது பயனுள்ள வரியை பூஜ்ஜியமாக்குகிறது. அடுக்கு விகிதங்களுக்கு, நாங்கள் அதிகாரப்பூர்வ <a href='https://incometaxindia.gov.in/Pages/tools/income-tax-calculator.aspx' target='_blank' rel='noopener noreferrer'>வருமான வரித் துறை இ-கால்குலேட்டரை</a> மேற்கோள் காட்டுகிறோம்.</p>"
+      "body": "<ul><li><strong>பழைய விதிப்பு கணக்கீடு:</strong> மொத்த வருமானம் - நிலையான விலக்கு - அனைத்து பிரிவு 80 விலக்குகள் - HRA/வீட்டுக் கடன் வட்டி = வரி விதிக்கக்கூடிய வருமானம்.</li><li><strong>புதிய விதிப்பு கணக்கீடு:</strong> மொத்த வருமானம் - நிலையான விலக்கு = வரி விதிக்கக்கூடிய வருமானம்.</li></ul><p>எங்கள் வரி கால்குலேட்டர் FY 2024-25 (AY 2025-26) க்கான அதிகாரப்பூர்வ வரி அடுக்குகளைப் பயன்படுத்தி இரண்டு விதிப்புகளின் கீழும் உங்கள் பொறுப்பை நிர்ணயிக்கிறது. இறுதி வரித் தொகையில் 4% சுகாதாரம் மற்றும் கல்வி செஸ் பயன்படுத்தப்படுகிறது. இயல்புநிலை புதிய விதிப்பில் ₹7 லட்சம் வரை வருமானம் உள்ளவர்களுக்கு பிரிவு 87A இன் கீழ் தள்ளுபடி உள்ளது, இது பயனுள்ள வரியை பூஜ்ஜியமாக்குகிறது. அடுக்கு விகிதங்களுக்கு, நாங்கள் அதிகாரப்பூர்வ <a href='https://incometaxindia.gov.in/Pages/tools/income-tax-calculator.aspx' target='_blank' rel='noopener noreferrer'>வருமான வரித் துறை இ-கால்குலேட்டரை</a> மேற்கோள் காட்டுகிறோம்.</p>"
     },
     "checklist": {
       "title": "எப்படி தேர்வு செய்வது: ஒரு விரைவான சரிபார்ப்புப் பட்டியல்",
@@ -859,7 +860,97 @@
   "retirement_corpus_calculator": {
     "meta_title": "Retirement Corpus Calculator for India (2025) | BharatSaver",
     "meta_description": "Plan for your retirement by calculating the total corpus required for your post-retirement life based on your financial goals. Use our free 2025 retirement calculator.",
-    "h1": "Retirement Corpus Calculator"
+    "h1": "Retirement Corpus Calculator",
+    "title": "Retirement Corpus Calculator",
+    "form_description": "Plan your comfortable retirement by calculating the total corpus you need.",
+    "current_age_label": "Current Age",
+    "retirement_age_label": "Retirement Age",
+    "monthly_expenses_label": "Current Monthly Expenses (₹)",
+    "current_savings_label": "Current Retirement Savings (₹)",
+    "inflation_rate_label": "Expected Inflation Rate (% p.a.)",
+    "pre_retirement_returns_label": "Pre-Retirement Returns (% p.a.)",
+    "post_retirement_returns_label": "Post-Retirement Returns (% p.a.)",
+    "calculate_button": "Calculate Corpus",
+    "loading": "Calculating...",
+    "results_title": "Your Retirement Projection",
+    "required_corpus": "Required Corpus at Retirement",
+    "corpus_shortfall": "Corpus Shortfall",
+    "corpus_surplus": "Corpus Surplus",
+    "monthly_sip": "Required Monthly SIP",
+    "view_chart": "View Chart",
+    "view_table": "View Table",
+    "export_csv": "Export CSV",
+    "table_year": "Year",
+    "table_age": "Age",
+    "table_total_corpus": "Total Corpus",
+    "age_label": "Age",
+    "amount_in_lakhs": "Amount (in Lakhs)",
+    "faqs": [
+        {
+            "question": "What is retirement corpus?",
+            "answer": "A retirement corpus is the total sum of money and assets an individual accumulates to support their financial needs during their non-working years. It's your financial nest egg for retirement."
+        },
+        {
+            "question": "How much corpus do I need to retire at 60?",
+            "answer": "This is highly personal, but a common rule is the 25x/30x rule: your corpus should be 25 to 30 times your current annual expenses. Use our calculator for a precise figure based on your lifestyle."
+        },
+        {
+            "question": "How do you calculate retirement corpus?",
+            "answer": "The core calculation uses the present value formula, factoring in your future annual expenses, inflation, life expectancy, and expected returns on investment. Our calculator does this complex math for you."
+        },
+        {
+            "question": "What inflation rate should I assume for retirement planning?",
+            "answer": "We use 6% by default as a long-term average for India, but this is a critical assumption. For a more conservative plan, consider a higher rate, especially for healthcare costs."
+        },
+        {
+            "question": "What is the difference between pre-retirement and post-retirement return?",
+            "answer": "Pre-retirement (accumulation phase) returns are typically higher as you can take more risk with equities. Post-retirement (withdrawal phase) returns are lower as your portfolio shifts to safer, fixed-income assets to preserve capital."
+        },
+        {
+            "question": "How much should a 30-year-old save per month for retirement?",
+            "answer": "This depends entirely on their desired retirement lifestyle. A 30-year-old aiming for a corpus of ₹2 crore by age 60 might need to save ₹15,000 - ₹20,000 per month via SIPs, assuming a 12% return."
+        },
+        {
+            "question": "Can I include EPF/PPF/NPS in the retirement corpus?",
+            "answer": "Absolutely. Your existing savings in EPF, PPF, NPS, mutual funds, and other assets should all be included in the 'Current Savings' input of the calculator."
+        },
+        {
+            "question": "How long will my retirement corpus last?",
+            "answer": "This depends on your withdrawal rate. The 4% rule suggests your corpus can last for 30 years or more if you withdraw only 4% of the initial amount in the first year, adjusted for inflation annually."
+        },
+        {
+            "question": "Does the calculator account for taxes and healthcare costs?",
+            "answer": "The calculator requires you to input post-tax investment returns. Healthcare costs should be factored into your 'monthly expenses' input, increasing it to account for rising medical inflation."
+        },
+        {
+            "question": "What if my income rises — how to update the plan?",
+            "answer": "You should re-run the retirement calculator annually or after any significant life event (like a salary hike or marriage). Increasing your SIP or monthly savings contributions will help you reach your goal faster."
+        },
+        {
+            "question": "How to plan retirement for early retirement (age 50)?",
+            "answer": "For early retirement, you need a larger corpus because your money needs to last longer, and you have fewer years to save. You must plan for a higher savings rate and potentially more aggressive investments."
+        },
+        {
+            "question": "Can a corpus be converted into monthly pension?",
+            "answer": "Yes. This is typically done through a Systematic Withdrawal Plan (SWP) from mutual funds or by purchasing an annuity plan from an insurance company, which provides a guaranteed income for life."
+        },
+        {
+            "question": "Should I assume conservative returns or aggressive returns?",
+            "answer": "This depends on your risk appetite. A balanced approach is to assume a 10-12% pre-retirement return (equity-heavy portfolio) and a 6-7% post-retirement return (debt-heavy portfolio)."
+        },
+        {
+            "question": "How frequently should I re-run the retirement calculator?",
+            "answer": "It is advisable to review your retirement plan and re-run the calculations at least once a year to ensure you are on track with your financial goals."
+        },
+        {
+            "question": "Can NRIs use this calculator?",
+            "answer": "Yes, NRIs can use this calculator to plan for their retirement in India. They should be mindful of specific tax implications, such as those covered under Section 89A for foreign retirement accounts."
+        },
+        {
+            "question": "Why is life expectancy important in retirement planning?",
+            "answer": "Life expectancy determines how many years your retirement corpus needs to support you. A longer life expectancy requires a larger corpus to avoid outliving your savings."
+        }
+    ]
   },
   "loan_optimization_calculator": {
     "meta_title": "Loan Optimizer & EMI Calculator (Prepayment) | BharatSaver",
