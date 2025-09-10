@@ -4,7 +4,7 @@ import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
 import { RetirementCorpusCalculator } from "@/components/calculators/RetirementCorpusCalculator";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { FileText, Calculator, HelpCircle, TrendingUp, Wallet, Landmark, Star, AlertTriangle, Download } from "lucide-react";
+import { FileText, Calculator, HelpCircle, TrendingUp, Wallet, Landmark, Star, AlertTriangle, Download, BadgeCheck } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import Link from "next/link";
 import { AuthorCard } from "@/components/layout/AuthorCard";
@@ -129,16 +129,16 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">{dictionary.retirement_corpus_calculator.intro}</p>
         </div>
+        
+        <div className="bs-byline justify-center text-center">
+            <span className="bs-author">By <strong>Mahesh Chaube</strong></span>
+            <span className="bs-creds">, CFP</span>
+            <span className="bs-sep">|</span>
+            <span className="bs-updated">Last updated: <time dateTime="2025-09-01">September 2025</time></span>
+            <div className="bs-reviewed">Reviewed by <strong>Laveena Vijayi</strong> — BharatSaver Editorial Team</div>
+        </div>
 
         <RetirementCorpusCalculator dictionary={dictionary.retirement_corpus_calculator} />
-
-        <Alert className="mt-8">
-          <AlertTriangle className="h-4 w-4" />
-          <AlertTitle>{dictionary.retirement_corpus_calculator.assumptions.title}</AlertTitle>
-          <AlertDescription>
-            <div className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.assumptions.body }} />
-          </AlertDescription>
-        </Alert>
 
         <Card className="mt-8 shadow-lg">
            <CardHeader>
@@ -212,6 +212,11 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.tax_rules.body }} />
         </Card>
+
+        <div className="mt-12">
+            <h2 className="text-2xl font-bold text-center mb-6">{dictionary.retirement_corpus_calculator.faq_title}</h2>
+            <div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.faq_content }} />
+        </div>
         
         <Card className="mt-12 shadow-lg">
           <CardHeader>
@@ -269,6 +274,18 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
         </Alert>
 
         <AuthorCard dictionary={dictionary.author_card} />
+
+        <Card className="mt-12 text-sm text-muted-foreground">
+            <CardHeader>
+                <CardTitle className="text-lg flex items-center gap-2">
+                    <BadgeCheck className="h-5 w-5"/>
+                    <span>{dictionary.retirement_corpus_calculator.methodology.title}</span>
+                </CardTitle>
+            </CardHeader>
+            <CardContent>
+                <p>{dictionary.retirement_corpus_calculator.methodology.body}</p>
+            </CardContent>
+        </Card>
       </div>
     </div>
   );
