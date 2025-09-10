@@ -858,112 +858,154 @@
     }
   },
   "retirement_corpus_calculator": {
-    "meta_title": "Retirement Corpus Calculator 2025 — How Much to Save to Retire in India (SIP & Lump Sum)",
-    "meta_description": "Use our free Retirement Corpus Calculator (India) — includes inflation, pre/post-retirement returns, life expectancy, existing savings and worked examples (₹6L/₹10L/₹15L). Export results & get a 1-page retirement plan.",
-    "h1": "Retirement Corpus Calculator — How Much Money Do You Need to Retire in India (2025)",
-    "intro": "A retirement corpus is the total sum of money you need to support yourself after you stop working. Our calculator helps you move beyond a simple number to create a complete plan for a secure retirement.",
+    "meta_title": "పదవీ విరమణ కార్పస్ క్యాలిక్యులేటర్ భారతదేశం 2025 | ఉచిత ఆన్‌లైన్ పదవీ విరమణ ప్రణాళిక సాధనం",
+    "meta_description": "ఉచిత పదవీ విరమణ కార్పస్ క్యాలిక్యులేటర్ భారతదేశం (2025). మీరు పదవీ విరమణ చేయడానికి ఎంత డబ్బు అవసరమో, అవసరమైన SIP, మరియు ఒత్తిడి లేని పదవీ విరమణ ప్రణాళికను ఈరోజే ప్లాన్ చేయండి.",
+    "og_description": "సౌకర్యవంతంగా పదవీ విరమణ చేయడానికి అవసరమైన కార్పస్ మరియు నెలవారీ SIPని అంచనా వేయండి. భారతదేశం-నిర్దిష్ట, NPS/PPF/EPF మార్గదర్శకత్వం కలిగి ఉంటుంది.",
+    "h1": "పదవీ విరమణ కార్పస్ క్యాలిక్యులేటర్ — భారతదేశంలో పదవీ విరమణ చేయడానికి మీకు ఎంత డబ్బు అవసరం (2025)",
+    "intro": "ఒక పదవీ విరమణ కార్పస్ అనేది మీరు పని చేయడం మానేసిన తర్వాత మిమ్మల్ని మీరు పోషించుకోవడానికి అవసరమైన మొత్తం డబ్బు. మా క్యాలిక్యులేటర్ మీకు ఒక సురక్షితమైన పదవీ విరమణ కోసం ఒక పూర్తి ప్రణాళికను రూపొందించడానికి ఒక సాధారణ సంఖ్యకు మించి వెళ్ళడానికి సహాయపడుతుంది.",
     "tool_section": {
-      "h2": "Calculate your retirement corpus (free calculator)"
+      "h2": "మీ పదవీ విరమణ కార్పస్‌ను లెక్కించండి (ఉచిత ఆన్‌లైన్ సాధనం)"
     },
-    "title": "Retirement Corpus Calculator",
-    "form_description": "Plan your comfortable retirement by calculating the total corpus you need.",
-    "current_age_label": "Current Age",
-    "retirement_age_label": "Retirement Age",
-    "monthly_expenses_label": "Current Monthly Expenses (₹)",
-    "current_savings_label": "Current Retirement Savings (₹)",
-    "inflation_rate_label": "Expected Inflation Rate (% p.a.)",
-    "pre_retirement_returns_label": "Pre-Retirement Returns (% p.a.)",
-    "post_retirement_returns_label": "Post-Retirement Returns (% p.a.)",
-    "calculate_button": "Calculate Corpus",
-    "loading": "Calculating...",
-    "results_title": "Your Retirement Projection",
-    "required_corpus": "Required Corpus at Retirement",
-    "corpus_shortfall": "Corpus Shortfall",
-    "corpus_surplus": "Corpus Surplus",
-    "monthly_sip": "Required Monthly SIP",
-    "view_chart": "View Chart",
-    "view_table": "View Table",
-    "export_csv": "Export CSV",
-    "table_year": "Year",
-    "table_age": "Age",
-    "table_total_corpus": "Total Corpus",
-    "age_label": "Age",
-    "amount_in_lakhs": "Amount (in Lakhs)",
-    "assumptions": {
-      "title": "Assumptions We Use (Default)",
-      "body": "<ul><li><strong>Inflation:</strong> 6% p.a.</li><li><strong>Pre-retirement returns:</strong> 12% p.a.</li><li><strong>Post-retirement returns:</strong> 7% p.a.</li><li><strong>Deposits:</strong> monthly, made at the <strong>start</strong> of each month (annuity-due).</li><li><strong>Life expectancy:</strong> 85 years (adjustable).</li><li>Figures are nominal (not inflation-adjusted). This calculator is an estimator; consult a CFP for a personalised plan.</li></ul>"
-    },
+    "title": "పదవీ విరమణ కార్పస్ క్యాలిక్యులేటర్",
+    "form_description": "మీకు అవసరమైన మొత్తం కార్పస్‌ను లెక్కించడం ద్వారా మీ సౌకర్యవంతమైన పదవీ విరమణను ప్లాన్ చేయండి.",
+    "current_age_label": "ప్రస్తుత వయస్సు",
+    "retirement_age_label": "పదవీ విరమణ వయస్సు",
+    "monthly_expenses_label": "ప్రస్తుత నెలవారీ ఖర్చులు (₹)",
+    "current_savings_label": "ప్రస్తుత పదవీ విరమణ పొదుపు (₹)",
+    "inflation_rate_label": "ఆశించిన ద్రవ్యోల్బణం రేటు (% p.a.)",
+    "pre_retirement_returns_label": "ప్రీ-రిటైర్మెంట్ రిటర్న్స్ (% p.a.)",
+    "post_retirement_returns_label": "పోస్ట్-రిటైర్మెంట్ రిటర్న్స్ (% p.a.)",
+    "calculate_button": "కార్పస్‌ను లెక్కించండి",
+    "loading": "లెక్కిస్తోంది...",
+    "results_title": "మీ పదవీ విరమణ ప్రొజెక్షన్",
+    "required_corpus": "పదవీ విరమణ వద్ద అవసరమైన కార్పస్",
+    "corpus_shortfall": "కార్పస్ కొరత",
+    "corpus_surplus": "కార్పస్ మిగులు",
+    "monthly_sip": "అవసరమైన నెలవారీ SIP",
+    "view_chart": "చార్ట్ చూడండి",
+    "view_table": "పట్టిక చూడండి",
+    "export_csv": "CSVని ఎగుమతి చేయండి",
+    "table_year": "సంవత్సరం",
+    "table_age": "వయస్సు",
+    "table_total_corpus": "మొత్తం కార్పస్",
+    "age_label": "వయస్సు",
+    "amount_in_lakhs": "మొత్తం (లక్షలలో)",
     "how_it_works": {
-      "h2": "How Our Retirement Corpus Calculator Works",
-      "body": "<p>We use standard financial formulas to give you an accurate projection. Here’s a simplified look at how we do it:</p><ul><li><strong>Future Value of Your Expenses:</strong> We first calculate how much your current monthly expenses will grow to by the time you retire, using the inflation rate you provide. The formula is: <code>Future Expense = Present Expense × (1 + Inflation Rate) ^ Years to Retirement</code>.</li><li><strong>Total Corpus You Need:</strong> Next, we calculate the total lump sum you'll need on the day you retire. This is the amount that, when invested, will generate enough income to cover your expenses for the rest of your life.</li><li><strong>Your Required Monthly SIP:</strong> Finally, we determine the monthly Systematic Investment Plan (SIP) needed to bridge the gap between your current savings and your target corpus. We calculate the future value of your existing savings and subtract it from the required corpus to find the shortfall.</li></ul>"
+      "h2": "మీరు పదవీ విరమణ కార్పస్‌ను ఎలా లెక్కిస్తారు?",
+      "body": "<p>మేము మీకు ఒక ఖచ్చితమైన ప్రొజెక్షన్ ఇవ్వడానికి ప్రామాణిక ఆర్థిక సూత్రాలను ఉపయోగిస్తాము. ఇక్కడ మేము దానిని ఎలా చేస్తామో ఒక సరళీకృత వీక్షణ:</p><h3>పదవీ విరమణ వద్ద మీ ఖర్చుల భవిష్యత్ విలువ</h3><p>మేము మొదట మీరు అందించిన ద్రవ్యోల్బణం రేటును ఉపయోగించి, మీరు పదవీ విరమణ చేసే సమయానికి మీ ప్రస్తుత నెలవారీ ఖర్చులు ఎంత పెరుగుతాయో లెక్కిస్తాము. సూత్రం: <code>భవిష్యత్ వ్యయం = ప్రస్తుత వ్యయం × (1 + ద్రవ్యోల్బణం రేటు) ^ పదవీ విరమణకు సంవత్సరాలు</code>.</p><h3>పదవీ విరమణ వద్ద అవసరమైన కార్పస్ (యాన్యుటీ యొక్క PV)</h3><p>తరువాత, మీరు పదవీ విరమణ చేసే రోజున మీకు అవసరమైన మొత్తం ఏకమొత్తాన్ని మేము లెక్కిస్తాము. ఇది, పెట్టుబడి పెట్టినప్పుడు, మీ మిగిలిన జీవితానికి మీ ఖర్చులను కవర్ చేయడానికి తగినంత ఆదాయాన్ని ఉత్పత్తి చేసే మొత్తం. మేము దీని కోసం ఒక యాన్యుటీ యొక్క ప్రస్తుత విలువ సూత్రాన్ని ఉపయోగిస్తాము.</p><h3>అవసరమైన SIP లెక్కింపు</h3><p>చివరగా, మీ ప్రస్తుత పొదుపులు మరియు మీ లక్ష్య కార్పస్ మధ్య అంతరాన్ని పూరించడానికి అవసరమైన నెలవారీ క్రమబద్ధమైన పెట్టుబడి ప్రణాళిక (SIP)ని మేము నిర్ధారిస్తాము. మేము మీ ప్రస్తుత పొదుపుల భవిష్యత్ విలువను లెక్కిస్తాము మరియు కొరతను కనుగొనడానికి దాన్ని అవసరమైన కార్పస్ నుండి తీసివేస్తాము. ప్రతి నెల ప్రారంభంలో డిపాజిట్లు చేయబడతాయని ఊహించి, యాన్యుటీ డ్యూ సూత్రం యొక్క భవిష్యత్ విలువను ఉపయోగించి SIP లెక్కించబడుతుంది.</p>"
     },
     "inputs_explained": {
-      "h2": "What Your Inputs Mean and Why They Matter",
-      "body": "<p>To get an accurate result, you need to provide some key details. Here’s what each one means for your plan:</p><ul><li><strong>Your Current & Retirement Age:</strong> This defines your investment horizon. The longer you have, the more the power of compounding can work for you, meaning you can start with smaller investments.</li><li><strong>Your Current Monthly Expenses:</strong> This is the foundation of your retirement plan. Be realistic about what you spend today to get an accurate picture of what you'll need tomorrow.</li><li><strong>Your Current Savings:</strong> This is your head start! Any money you've already saved in EPF, PPF, Mutual Funds, or other investments reduces the amount you'll need to save in the future.</li><li><strong>Inflation Rate (we default to 6%):</strong> This is the silent wealth killer. Inflation reduces the purchasing power of your money over time. A higher inflation rate means you'll need a much larger corpus.</li><li><strong>Pre-Retirement Returns (we default to 12%):</strong> This is the growth rate you expect on your investments while you're still working. A higher return means your money works harder for you, and you can reach your goal with smaller SIPs.</li><li><strong>Post-Retirement Returns (we default to 7%):</strong> This is the return you expect on your corpus after you retire. We assume a more conservative, capital-preserving portfolio here.</li></ul>"
+      "h2": "మీరు ఏ ఇన్‌పుట్‌లను అందించాలి & అవి ఎందుకు ముఖ్యమైనవి",
+      "body": "<p>ఒక ఖచ్చితమైన ఫలితం పొందడానికి, మీరు కొన్ని కీలక వివరాలను అందించాలి. మీ ప్రణాళిక కోసం ప్రతి ఒక్కటి ఏమిటో ఇక్కడ ఉంది:</p><ul><li><strong>మీ ప్రస్తుత & పదవీ విరమణ వయస్సు:</strong> ఇది మీ పెట్టుబడి హోరిజోన్‌ను నిర్వచిస్తుంది. మీకు ఎంత ఎక్కువ సమయం ఉంటే, చక్రవడ్డీ శక్తి మీకు అంత ఎక్కువగా పనిచేయగలదు, అంటే మీరు చిన్న పెట్టుబడులతో ప్రారంభించవచ్చు.</li><li><strong>మీ ప్రస్తుత నెలవారీ ఖర్చులు:</strong> ఇది మీ పదవీ విరమణ ప్రణాళిక యొక్క పునాది. రేపు మీకు ఏమి అవసరమో దాని గురించి ఒక ఖచ్చితమైన చిత్రాన్ని పొందడానికి ఈ రోజు మీరు ఏమి ఖర్చు చేస్తారో దాని గురించి వాస్తవికంగా ఉండండి.</li><li><strong>మీ ప్రస్తుత పొదుపులు:</strong> ఇది మీ ప్రారంభం! EPF, PPF, మ్యూచువల్ ఫండ్స్, లేదా ఇతర పెట్టుబడులలో మీరు ఇప్పటికే ఆదా చేసిన ఏదైనా డబ్బు భవిష్యత్తులో మీరు ఆదా చేయవలసిన మొత్తాన్ని తగ్గిస్తుంది.</li><li><strong>ద్రవ్యోల్బణం రేటు:</strong> ఇది మूक సంపద కిల్లర్. ద్రవ్యోల్బణం కాలక్రమేణా మీ డబ్బు కొనుగోలు శక్తిని తగ్గిస్తుంది. అధిక ద్రవ్యోల్బణం రేటు అంటే మీకు చాలా పెద్ద కార్పస్ అవసరం.</li><li><strong>ప్రీ-రిటైర్మెంట్ రిటర్న్స్:</strong> మీరు ఇంకా పనిచేస్తున్నప్పుడు మీ పెట్టుబడులపై మీరు ఆశించే వృద్ధి రేటు ఇది. అధిక రాబడి అంటే మీ డబ్బు మీ కోసం కష్టపడి పనిచేస్తుంది, మరియు మీరు చిన్న ఎస్ఐపிகளுடன் మీ లక్ష్యాన్ని చేరుకోవచ్చు.</li><li><strong>పోస్ట్-రిటైర్మెంట్ రిటర్న్స్:</strong> మీరు పదవీ విరమణ చేసిన తర్వాత మీ కార్పస్‌పై ఆశించే రాబడి ఇది. మేము ఇక్కడ ఒక మరింత సాంప్రదాయిక, మూలధన-పరిరక్షణ పోర్ట్‌ఫోలియోను ఊహిస్తాము.</li></ul>"
     },
     "worked_examples": {
-      "h2": "Worked Examples — How Much Corpus Do You Need?",
+      "h2": "పని చేసిన ఉదాహరణలు — మీకు ఎంత కార్పస్ అవసరం?",
       "scenario1": {
-        "title": "Example 1: Middle-Income Salaried (₹10 LPA)",
-        "body": "<strong>Your Situation:</strong> You're 30, planning to retire at 60. Your monthly expenses are ₹50,000, and you've already saved ₹5 lakh.<br/><strong>Our Calculation:</strong> To maintain your lifestyle, you'll need a retirement corpus of approximately <strong>₹3.28 Crore</strong>. To reach this goal, you should start a monthly SIP of <strong>₹18,250</strong>."
+        "title": "ఉదాహరణ 1: ₹50,000 నెలవారీ ఖర్చుల కోసం (30 సంవత్సరాల వయస్సులో)",
+        "body": "<strong>మీ పరిస్థితి:</strong> మీరు 30 ఏళ్లవారు, నేటి డబ్బులో నెలకు ₹50,000 జీవనశైలిని లక్ష్యంగా చేసుకున్నారు. మీరు ఇప్పటికే ₹5 లక్షలు ఆదా చేసారు.<br/><strong>మా లెక్కింపు:</strong> మీ జీవనశైలిని కొనసాగించడానికి, మీకు సుమారుగా <strong>₹3.28 కోట్ల</strong> పదవీ విరమణ కార్పస్ అవసరం. ఈ లక్ష్యాన్ని చేరుకోవడానికి, మీరు <strong>₹18,250</strong> నెలవారీ SIPని ప్రారంభించాలి."
       },
       "scenario2": {
-        "title": "Example 2: High-Income, Later Start (₹25 LPA)",
-        "body": "<strong>Your Situation:</strong> You're 35, aiming to retire at 60. Your monthly expenses are ₹1 lakh, and your current savings are ₹20 lakh.<br/><strong>Our Calculation:</strong> You'll need a corpus of around <strong>₹4.79 Crore</strong>. To achieve this, you should start a monthly SIP of <strong>₹37,842</strong>."
+        "title": "ఉదాహరణ 2: ₹1 లక్ష నెలవారీ ఖర్చుల కోసం (35 సంవత్సరాల వయస్సులో)",
+        "body": "<strong>మీ పరిస్థితి:</strong> మీరు 35 ఏళ్లవారు, నెలకు ₹1 లక్ష జీవనశైలిని లక్ష్యంగా చేసుకున్నారు. మీ ప్రస్తుత పొదుపు ₹20 లక్షలు.<br/><strong>మా లెక్కింపు:</strong> మీకు సుమారు <strong>₹4.79 కోట్ల</strong> కార్పస్ అవసరం. దీన్ని సాధించడానికి, మీరు <strong>₹37,842</strong> నెలవారీ SIPని ప్రారంభించాలి."
       },
       "scenario3": {
-        "title": "Example 3: Freelancer, Early Start (₹7 LPA)",
-        "body": "<strong>Your Situation:</strong> You're a 25-year-old freelancer with monthly expenses of ₹30,000 and savings of ₹2 lakh.<br/><strong>Our Calculation:</strong> Your target corpus is <strong>₹3.04 Crore</strong>. Thanks to your long investment horizon, you only need to start a monthly SIP of <strong>₹7,725</strong> to get there."
+        "title": "ఉదాహరణ 3: ₹30,000 నెలవారీ ఖర్చుల కోసం (25 సంవత్సరాల వయస్సులో)",
+        "body": "<strong>మీ పరిస్థితి:</strong> మీరు 25 ఏళ్ల ఫ్రీలాన్సర్, నెలవారీ ఖర్చులు ₹30,000 మరియు పొదుపు ₹2 లక్షలు.<br/><strong>మా లెక్కింపు:</strong> మీ లక్ష్య కార్పస్ <strong>₹3.04 కోట్లు</strong>. మీ సుదీర్ఘ పెట్టుబడి హోరిజోన్‌కు ధన్యవాదాలు, అక్కడికి చేరుకోవడానికి మీరు కేవలం <strong>₹7,725</strong> నెలవారీ SIPని ప్రారంభించాలి."
       }
     },
-    "sensitivity_analysis": {
-      "title": "Sensitivity Analysis: How Assumptions Change Your Goal",
-      "body": "Small changes in your assumptions can have a huge impact on your final corpus. This table shows how your required corpus and SIP change with slight adjustments to inflation and return rates."
+     "sensitivity_analysis": {
+      "title": "సున్నితత్వ విశ్లేషణ: అంచనాలు మీ లక్ష్యాన్ని ఎలా మారుస్తాయి",
+      "body": "మీ అంచనాలలో చిన్న మార్పులు మీ చివరి కార్పస్‌పై భారీ ప్రభావాన్ని చూపుతాయి. ఈ పట్టిక ద్రవ్యోల్బణం మరియు రాబడి రేట్లలో స్వల్ప సర్దుబాట్లతో మీ అవసరమైన కార్పస్ మరియు SIP ఎలా మారుతుందో చూపిస్తుంది."
     },
     "accumulation_strategy": {
-      "h2": "How to Reach Your Retirement Corpus — Strategies & Vehicles",
-      "body": "<h3>Choosing Your Investment Path: SIP vs. Lump Sum</h3><ul><li><strong>Systematic Investment Plan (SIP):</strong> This is the most disciplined approach. You invest a fixed amount regularly (e.g., monthly), which helps you average out market highs and lows (rupee-cost averaging) and benefit from compounding. It's perfect for building wealth steadily over time.</li><li><strong>Step-up SIP:</strong> This is a supercharged version of a regular SIP. You increase your monthly investment amount annually, usually in line with your salary hike (e.g., by 10%). This simple step can dramatically accelerate your journey to your target corpus.</li></ul><h3>Your Asset Mix: How It Should Change with Age</h3><p>Your investment strategy shouldn't be static. As you get closer to retirement, you should gradually shift from high-risk, high-return assets to safer options to protect your capital.</p><ul><li><strong>In Your 20s & 30s:</strong> Be aggressive. A portfolio with 70-80% in equities (like mutual funds) can generate higher returns over the long term.</li><li><strong>In Your 40s:</strong> Start balancing your risk. A 60:40 split between equity and debt is a common strategy.</li><li><strong>In Your 50s and Beyond:</strong> It's time to preserve your capital. Shift your portfolio to be debt-heavy (70-80% in fixed-income instruments).</li></ul><h3>How PPF, NPS, & EPF Fit Into Your Plan</h3><p>These are the foundational pillars of retirement planning in India. Your current savings in these instruments give you a massive head start.</p><ul><li><strong>EPF (Employee Provident Fund):</strong> A mandatory saving for salaried individuals, forming a solid, risk-free base for your retirement fund.</li><li><strong>PPF (Public Provident Fund):</strong> A tax-free, government-backed scheme perfect for long-term, risk-averse savings.</li><li><strong>NPS (National Pension System):</strong> A market-linked product that offers a mix of equity and debt, providing tax benefits and the potential for higher returns.</li></ul>"
+      "h2": "మీ పదవీ విరమణ కార్పస్‌ను ఎలా నిర్మించాలి (పెట్టుబడి వ్యూహాలు)",
+      "body": "<h3>మీ పెట్టుబడి మార్గాన్ని ఎంచుకోవడం: SIP vs. ఏకమొత్తం</h3><p>ఒక <strong>క్రమబద్ధమైన పెట్టుబడి ప్రణాళిక (SIP)</strong> అత్యంత క్రమశిక్షణతో కూడిన విధానం. మీరు క్రమం తప్పకుండా (ఉదా., నెలవారీ) ఒక స్థిర మొత్తాన్ని పెట్టుబడి పెడతారు, ఇది మీకు మార్కెట్ హెచ్చుతగ్గులను (రూపాయి-ధర సగటు) సగటు చేయడానికి మరియు చక్రవడ్డీ నుండి ప్రయోజనం పొందడానికి సహాయపడుతుంది. ఇది కాలక్రమేణా స్థిరంగా సంపదను నిర్మించడానికి సరైనది. మరింత వేగవంతమైన వృద్ధి కోసం, ఒక <strong>స్టెప్-అప్ SIP</strong>ను పరిగణించండి, ఇక్కడ మీరు మీ నెలవారీ పెట్టుబడి మొత్తాన్ని ఏటా పెంచుతారు, సాధారణంగా మీ జీతం పెరుగుదలకు అనుగుణంగా (ఉదా., 10% ద్వారా).</p><h3>వయస్సు వారీగా ఆస్తి కేటాయింపు</h3><p>మీ పెట్టుబడి వ్యూహం స్థిరంగా ఉండకూడదు. మీరు పదవీ విరమణకు దగ్గరవుతున్న కొద్దీ, మీ మూలధనాన్ని రక్షించుకోవడానికి మీరు అధిక-రిస్క్, అధిక-రాబడి ఆస్తుల నుండి సురక్షితమైన ఎంపికలకు క్రమంగా మారాలి.</p><ul><li><strong>మీ 20 & 30లలో:</strong> దూకుడుగా ఉండండి. ఈక్విటీలలో (మ్యూచువల్ ఫండ్స్ వంటివి) 70-80% ఉన్న ఒక పోర్ట్‌ఫోలియో దీర్ఘకాలంలో అధిక రాబడులను ఉత్పత్తి చేయగలదు.</li><li><strong>మీ 40లలో:</strong> మీ రిస్క్‌ను సమతుల్యం చేయడం ప్రారంభించండి. ఈక్విటీ మరియు డెట్ మధ్య 60:40 విభజన ఒక సాధారణ వ్యూహం.</li><li><strong>మీ 50లు మరియు ఆపై:</strong> మీ మూలధనాన్ని పరిరక్షించుకునే సమయం ఇది. మీ పోర్ట్‌ఫోలియోను డెట్-హెవీగా (స్థిర-ఆదాయ సాధనాల్లో 70-80%) మార్చండి.</li></ul><h3>మీ ప్రణాళికలో PPF, NPS, & EPF ఎలా సరిపోతాయి</h3><p>ఇవి భారతదేశంలో పదవీ విరమణ ప్రణాళిక యొక్క పునాది స్తంభాలు. ఈ సాధనాల్లో మీ ప్రస్తుత పొదుపులు మీకు ఒక భారీ ప్రారంభాన్ని ఇస్తాయి. మీ పోర్ట్‌ఫోలియో యొక్క డెట్/స్థిర-ఆదాయ భాగాన్ని రూపొందించడానికి వాటిని ఉపయోగించండి. అవి ఎలా పెరుగుతాయో చూడటానికి మా <a href='/{lang}/ppf-calculator' class='underline'>PPF క్యాలిక్యులేటర్</a> మరియు <a href='/{lang}/nps-calculator' class='underline'>NPS క్యాలిక్యులేటర్</a>ను అన్వేషించండి.</p>"
     },
     "sip_plans": {
-      "title": "Sample SIP Plans to Reach Your Goal",
-      "body": "This table shows the approximate monthly SIP required to reach common retirement corpus goals from different starting ages."
+      "title": "మీ లక్ష్యాన్ని చేరుకోవడానికి నమూనా SIP ప్రణాళికలు",
+      "body": "ఈ పట్టిక వివిధ ప్రారంభ వయస్సుల నుండి సాధారణ పదవీ విరమణ కార్పస్ లక్ష్యాలను చేరుకోవడానికి అవసరమైన సుమారు నెలవారీ SIPని చూపిస్తుంది, ఇది 12% వార్షిక రాబడిని ఊహిస్తుంది."
     },
     "deaccumulation_strategy": {
-      "h2": "The De-accumulation Phase: Making Your Corpus Last",
-      "body": "<p>Building your nest egg is only half the battle. The real challenge is making it last. Here’s how you can create a steady income stream after you retire.</p><h3>Systematic Withdrawal Plan (SWP)</h3><p>An SWP allows you to withdraw a fixed amount from your mutual fund investments every month, just like a pension. This is a tax-efficient method because the rest of your corpus remains invested and continues to grow, helping you beat inflation.</p><p><strong>Example:</strong> With a corpus of ₹2 Crore and a 7% annual return, a monthly SWP of ₹1 lakh could last for over 30 years.</p><h3>Annuity Plans</h3><p>An annuity is an insurance product where you pay a lump sum to an insurance company, and they guarantee you a fixed income for life. While this offers immense security, the returns (annuity rates) are often lower than what you might get from an SWP.</p>"
+      "h2": "డి-అక్యుములేషన్ దశ: మీ కార్పస్‌ను కొనసాగించడం",
+      "body": "<p>మీ గూడును నిర్మించడం కేవలం సగం యుద్ధం మాత్రమే. అసలు సవాలు దానిని కొనసాగించడం. పదవీ విరమణ చేసిన తర్వాత మీరు ఒక స్థిరమైన ఆదాయ ప్రవాహాన్ని ఎలా సృష్టించవచ్చో ఇక్కడ ఉంది.</p><h3>క్రమబద్ధమైన ఉపసంహరణ ప్రణాళిక (SWP)</h3><p>ఒక SWP మీకు ప్రతి నెలా మీ మ్యూచువల్ ఫండ్ పెట్టుబడుల నుండి ఒక స్థిర మొత్తాన్ని ఉపసంహరించుకోవడానికి అనుమతిస్తుంది, ঠিক ఒక పెన్షన్ లాగా. ఇది ఒక పన్ను-సమర్థవంతమైన పద్ధతి ఎందుకంటే మీ కార్పస్ మిగిలినది పెట్టుబడి చేయబడి, ద్రవ్యోల్బణాన్ని అధిగమించడానికి సహాయపడుతూ పెరుగుతూనే ఉంటుంది.</p><p><strong>ఉదాహరణ:</strong> ₹2 కోట్ల కార్పస్‌తో మరియు 7% వార్షిక రాబడితో, ₹1 లక్ష నెలవారీ SWP 30 సంవత్సరాలకు పైగా కొనసాగగలదు.</p><h3>యాన్యుటీ ప్రణాళికలు</h3><p>ఒక యాన్యుటీ అనేది ఒక బీమా ఉత్పత్తి, ఇక్కడ మీరు ఒక బీమా కంపెనీకి ఒక ఏకమొత్తం చెల్లిస్తారు, మరియు వారు మీకు జీవితాంతం ఒక స్థిర ఆదాయానికి హామీ ఇస్తారు. ఇది అపారమైన భద్రతను అందించినప్పటికీ, రాబడులు (యాన్యుటీ రేట్లు) మీరు SWP నుండి పొందగలిగే దానికంటే తరచుగా తక్కువగా ఉంటాయి.</p>"
     },
     "tax_rules": {
-      "h2": "Taxes in Retirement (India-specific Rules)",
-      "body": "<ul><li><strong>Long-Term Capital Gains (LTCG):</strong> When you withdraw from equity mutual funds, gains over ₹1 lakh in a financial year are taxed at 10%. Planning your withdrawals strategically can help you minimize this tax.</li><li><strong>Pension Taxation:</strong> Your pension income, whether from an annuity or other sources, is generally added to your income and taxed as per your applicable slab rate.</li><li><strong>Special Rule for Returning NRIs (Section 89A):</strong> If you are an NRI returning to India, this rule allows you to defer paying tax on your foreign retirement accounts until you actually withdraw the money. This is a significant relief that helps avoid double taxation.</li></ul>"
+      "h2": "పదవీ విరమణలో పన్నులు (భారతదేశం-నిర్దిష్ట నియమాలు)",
+      "body": "<ul><li><strong>దీర్ఘకాలిక మూలధన లాభాలు (LTCG):</strong> మీరు ఈక్విటీ మ్యూచువల్ ఫండ్స్ నుండి ఉపసంహరించుకున్నప్పుడు, ఒక ఆర్థిక సంవత్సరంలో ₹1 లక్షకు పైగా లాభాలపై 10% పన్ను విధించబడుతుంది. మీ ఉపసంహరణలను వ్యూహాత్మకంగా ప్లాన్ చేయడం వల్ల ఈ పన్నును తగ్గించుకోవచ్చు.</li><li><strong>పెన్షన్ పన్నువిధింపు:</strong> మీ పెన్షన్ ఆదాయం, అది యాన్యుటీ నుండి అయినా లేదా ఇతర వనరుల నుండి అయినా, సాధారణంగా మీ ఆదాయానికి జోడించబడుతుంది మరియు మీ వర్తించే స్లాబ్ రేటు ప్రకారం పన్ను విధించబడుతుంది.</li><li><strong>తిరిగి వస్తున్న NRIల కోసం ప్రత్యేక నియమం (సెక్షన్ 89A):</strong> మీరు భారతదేశానికి తిరిగి వస్తున్న NRI అయితే, ఈ నియమం మీరు వాస్తవానికి డబ్బును ఉపసంహరించుకునే వరకు మీ విదేశీ పదవీ విరమణ ఖాతాలపై పన్ను చెల్లించడాన్ని వాయిదా వేయడానికి అనుమతిస్తుంది. ఇది ద్వంద్వ పన్నువిధింపును నివారించడానికి సహాయపడే ఒక ముఖ్యమైన ఉపశమనం.</li></ul>"
     },
     "next_steps": {
-      "h2": "Tools & Resources",
-      "cta1_title": "Explore Investment Options",
-      "cta1_desc": "Use our PPF, NPS, and other calculators to model returns on specific investment vehicles.",
-      "cta2_title": "View All Financial Tools",
-      "cta2_desc": "Explore our full suite of calculators to plan for all your financial goals."
+      "h2": "సాధనాలు & వనరులు",
+      "cta1_title": "పెట్టుబడి ఎంపికలను అన్వేషించండి",
+      "cta1_desc": "నిర్దిష్ట పెట్టుబడి వాహనాలపై రాబడులను మోడల్ చేయడానికి మా PPF, NPS, మరియు ఇతర క్యాలిక్యులేటర్లను ఉపయోగించండి.",
+      "cta2_title": "అన్ని ఆర్థిక సాధనాలను వీక్షించండి",
+      "cta2_desc": "మీ అన్ని ఆర్థిక లక్ష్యాల కోసం ప్రణాళిక చేయడానికి మా క్యాలిక్యులేటర్ల పూర్తి సూట్‌ను అన్వేషించండి."
     },
     "conclusion": {
-      "title": "Conclusion: Your Path to a Secure Retirement",
-      "body": "Retirement planning isn't just about hitting a number; it's about building a sustainable financial future you can count on. By using this comprehensive calculator and understanding the key variables that drive your corpus, you can create a realistic and actionable plan. Remember, the key is to start early, invest consistently, and review your plan annually. That's the surest way to a comfortable and stress-free retirement."
+      "title": "ముగింపు: ఒక సురక్షితమైన పదవీ విరమణకు మీ మార్గం",
+      "body": "పదవీ విరమణ ప్రణాళిక కేవలం ఒక సంఖ్యను చేరుకోవడం గురించి కాదు; ఇది మీరు ఆధారపడగల ఒక స్థిరమైన ఆర్థిక భవిష్యత్తును నిర్మించడం గురించి. ఈ సమగ్ర క్యాలిక్యులేటర్‌ను ఉపయోగించడం ద్వారా మరియు మీ కార్పస్‌ను నడిపించే కీలక వేరియబుల్స్‌ను అర్థం చేసుకోవడం ద్వారా, మీరు ఒక వాస్తవిక మరియు కార్యాచరణ ప్రణాళికను సృష్టించవచ్చు. గుర్తుంచుకోండి, కీ త్వరగా ప్రారంభించడం, స్థిరంగా పెట్టుబడి పెట్టడం, మరియు ఏటా మీ ప్రణాళికను సమీక్షించడం. ఇది ఒక సౌకర్యవంతమైన మరియు ఒత్తిడి లేని పదవీ విరమణకు అత్యంత ఖచ్చితమైన మార్గం."
     },
     "disclaimer": {
-      "title": "Disclaimer",
-      "body": "The figures generated are hypothetical and for illustrative purposes only. The accuracy of the output depends on your inputs. Please consult a qualified financial professional for personalized advice."
+      "title": "నిరాకరణ",
+      "body": "ఉత్పత్తి చేయబడిన గణాంకాలు ఊహాజనితమైనవి మరియు కేవలం ఉదాహరణ ప్రయోజనాల కోసం మాత్రమే. అవుట్‌పుట్ యొక్క ఖచ్చితత్వం మీ ఇన్‌పుట్‌లపై ఆధారపడి ఉంటుంది. వ్యక్తిగతీకరించిన సలహా కోసం దయచేసి ఒక అర్హతగల ఆర్థిక నిపుణుడిని సంప్రదించండి."
     },
-    "faq_title": "Frequently Asked Questions about Retirement Planning",
-    "faq_content": "<h4>What is a retirement corpus?</h4><p>A retirement corpus is the total sum of money and assets an individual accumulates to support their financial needs during their non-working years. It's your financial nest egg for retirement.</p><h4>How much corpus do I need to retire at 60?</h4><p>This is highly personal, but a common rule is the 25x/30x rule: your corpus should be 25 to 30 times your current annual expenses. Use our calculator for a precise figure based on your lifestyle.</p><h4>How do you calculate retirement corpus?</h4><p>The core calculation uses the present value formula, factoring in your future annual expenses, inflation, life expectancy, and expected returns on investment. Our calculator does this complex math for you.</p><h4>What inflation rate should I assume for retirement planning?</h4><p>We use 6% by default as a long-term average for India, but this is a critical assumption. For a more conservative plan, consider a higher rate, especially for healthcare costs.</p><h4>How much should a 30-year-old save per month for retirement?</h4><p>This depends entirely on their desired retirement lifestyle. A 30-year-old aiming for a corpus of ₹2 crore by age 60 might need to save ₹15,000 - ₹20,000 per month via SIPs, assuming a 12% return.</p><h4>Can I include EPF/PPF/NPS in the retirement corpus?</h4><p>Absolutely. Your existing savings in EPF, PPF, NPS, mutual funds, and other assets should all be included in the 'Current Savings' input of the calculator.</p>",
+    "faq_title": "పదవీ విరమణ ప్రణాళిక గురించి తరచుగా అడిగే ప్రశ్నలు",
     "faqs": [
-        { "question": "What is retirement corpus?", "answer": "A retirement corpus is the total sum of money and assets an individual accumulates to support their financial needs during their non-working years. It's your financial nest egg for retirement." },
-        { "question": "How much corpus do I need to retire at 60?", "answer": "This is highly personal, but a common rule is the 25x/30x rule: your corpus should be 25 to 30 times your current annual expenses. Use our calculator for a precise figure based on your lifestyle." },
-        { "question": "How do you calculate retirement corpus?", "answer": "The core calculation uses the present value formula, factoring in your future annual expenses, inflation, life expectancy, and expected returns on investment. Our calculator does this complex math for you." },
-        { "question": "What inflation rate should I assume for retirement planning?", "answer": "We use 6% by default as a long-term average for India, but this is a critical assumption. For a more conservative plan, consider a higher rate, especially for healthcare costs." },
-        { "question": "How much should a 30-year-old save per month for retirement?", "answer": "This depends entirely on their desired retirement lifestyle. A 30-year-old aiming for a corpus of ₹2 crore by age 60 might need to save ₹15,000 - ₹20,000 per month via SIPs, assuming a 12% return." },
-        { "question": "Can I include EPF/PPF/NPS in the retirement corpus?", "answer": "Absolutely. Your existing savings in EPF, PPF, NPS, mutual funds, and other assets should all be included in the 'Current Savings' input of the calculator." }
+      {
+        "question": "మీరు పదవీ విరమణ కార్పస్‌ను ఎలా లెక్కిస్తారు?",
+        "answer": "మేము ద్రవ్యోల్బణాన్ని ఉపయోగించి మీ భవిష్యత్ నెలవారీ ఖర్చులను అంచనా వేస్తాము, పదవీ విరమణలో మీకు అవసరమైన యాన్యుటీ యొక్క ప్రస్తుత విలువను (PV) లెక్కిస్తాము, మరియు కొరతను కనుగొనడానికి ప్రస్తుత పొదుపుల భవిష్యత్ విలువను తీసివేస్తాము."
+      },
+      {
+        "question": "భారతీయ పదవీ విరమణ ప్రణాళిక కోసం నేను ఏ ద్రవ్యోల్బణం రేటును ఉపయోగించాలి?",
+        "answer": "చాలా మంది ప్రణాళికదారులు భారతదేశానికి 5-7% దీర్ఘకాలిక డిఫాల్ట్‌ను ఉపయోగిస్తారు; 6% సాధారణం. సాంప్రదాయిక ఆరోగ్య సంరక్షణ లేదా సుదీర్ఘ హోరిజోన్ అంచనాల కోసం అధిక రేట్లను ఉపయోగించండి."
+      },
+      {
+        "question": "నేను నా పదవీ విరమణ కార్పస్‌లో EPF, PPF మరియు NPSని చేర్చవచ్చా?",
+        "answer": "అవును — అదనపు SIPని తగ్గించడానికి మీ ప్రస్తుత పొదుపు ఇన్‌పుట్‌లో అన్ని ద్రవ మరియు పెన్షన్ ఆస్తులను (EPF, PPF, NPS, మ్యూచువల్ ఫండ్స్, బ్యాంక్ FD) చేర్చండి."
+      },
+      {
+        "question": "ఒక 30 ఏళ్ల వ్యక్తి సౌకర్యవంతంగా పదవీ విరమణ చేయడానికి నెలవారీ ఎంత ఆదా చేయాలి?",
+        "answer": "ఇది లక్ష్య కార్పస్ మరియు అంచనాలపై ఆధారపడి ఉంటుంది. ఒక స్థూల మార్గదర్శిగా, ₹15,000–₹25,000/నెల ఆదా చేయడం 10-12% రాబడులతో 60 నాటికి బహుళ-కోట్ల కార్పస్‌ను నిర్మించగలదు. ఖచ్చితమైన సంఖ్యల కోసం క్యాలిక్యులేటర్‌ను ఉపయోగించండి."
+      },
+      {
+        "question": "నేను నా పదవీ విరమణ లక్ష్యాన్ని చేరుకోవడానికి SIP లేదా ఏకమొత్తం ద్వారా పెట్టుబడి పెట్టాలా?",
+        "answer": "క్రమశిక్షణతో కూడిన పెట్టుబడి మరియు రూపాయి-ధర సగటు కోసం SIP సిఫార్సు చేయబడింది; ఏకమొత్తం సుదీర్ఘ బుల్ మార్కెట్లలో అధిక పనితీరును కనబరచగలదు కానీ అధిక టైమింగ్ రిస్క్‌ను కలిగి ఉంటుంది. ఒక మిశ్రమ విధానం చాలా మందికి పనిచేస్తుంది."
+      },
+      {
+        "question": "పదవీ విరమణ సమయంలో భారతదేశంలో సురక్షితమైన ఉపసంహరణ రేటు ఎంత?",
+        "answer": "ఒక-పరిమాణం-అందరికీ-సరిపోదు; చాలా మంది సలహాదారులు 3-4% ప్రారంభ ఉపసంహరణ నియమాన్ని (ద్రవ్యోల్బణానికి సర్దుబాటు చేయబడింది) ఉపయోగిస్తారు. దీర్ఘాయువు లేదా ఆరోగ్య సంరక్షణ ఖర్చులు అనిశ్చితంగా ఉంటే సాంప్రదాయిక ఉపసంహరణ రేట్లను పరిగణించండి."
+      },
+      {
+        "question": "ఆరోగ్య సంరక్షణ ఖర్చులు పదవీ విరమణ కార్పస్‌ను ఎలా ప్రభావితం చేస్తాయి?",
+        "answer": "ఆరోగ్య సంరక్షణ ద్రవ్యోల్బణం తరచుగా సాధారణ ద్రవ్యోల్బణాన్ని మించిపోతుంది. మీ కార్పస్‌ను తక్కువ అంచనా వేయకుండా ఉండటానికి వైద్య ఖర్చుల కోసం ఒక ప్రత్యేక ఆరోగ్య సంరక్షణ బఫర్‌ను జోడించండి లేదా అధిక ద్రవ్యోల్బణాన్ని మోడల్ చేయండి."
+      },
+      {
+        "question": "నా పదవీ విరమణ ఉపసంహరణలపై పన్నులు ఎలా ప్రభావం చూపుతాయి?",
+        "answer": "పన్ను చికిత్స పరికరం మరియు ఉపసంహరణ రకం ప్రకారం మారుతుంది. EPF/PPFకి నిర్దిష్ట నియమాలు ఉన్నాయి; మ్యూచువల్ ఫండ్ ఉపసంహరణలు పరిమితుల కంటే ఎక్కువగా LTCG పన్నును ఆకర్షించవచ్చు. కార్పస్‌ను పరిరక్షించడానికి ఉపసంహరణలను పన్ను-సమర్థవంతంగా ప్లాన్ చేయండి."
+      },
+      {
+        "question": "నా పదవీ విరమణ కార్పస్ ఎంతకాలం కొనసాగాలి?",
+        "answer": "సాధారణంగా ప్రణాళికదారులు 85-90 సంవత్సరాల జీవితకాలం ఊహిస్తారు. కుటుంబ దీర్ఘాయువు ఎక్కువగా ఉంటే లేదా మీరు త్వరగా పదవీ విరమణ చేస్తే సాంప్రదాయిక దీర్ఘాయువు అంచనాలను ఉపయోగించండి."
+      },
+      {
+        "question": "క్యాలిక్యులేటర్ పదవీ విరమణ తర్వాత రాబడులను పరిగణనలోకి తీసుకుంటుందా?",
+        "answer": "అవును — మీరు ఒక తక్కువ, సాంప్రదాయిక పదవీ విరమణ తర్వాత రాబడిని (ఉదా., 6-8%) సెట్ చేయవచ్చు, కార్పస్ ఎలా పెట్టుబడి చేయబడుతుందో మరియు ఉపసంహరణలను ఎలా కొనసాగిస్తుందో మోడల్ చేయడానికి."
+      },
+      {
+        "question": "నేను ఈ క్యాలిక్యులేటర్‌తో ముందుగానే పదవీ విరమణ (60 కంటే ముందు) ప్లాన్ చేయవచ్చా?",
+        "answer": "అవును — మీ కోరుకున్న పదవీ విరమణ వయస్సును ముందుగానే సెట్ చేయండి మరియు పెట్టుబడి హోరిజోన్ మరియు SIPని తదనుగుణంగా పెంచండి. సుదీర్ఘ పదవీ విరమణ తర్వాత సంవత్సరాలు మరియు అధిక ఆరోగ్య సంరక్షణ ఖర్చులను పరిగణనలోకి తీసుకోండి."
+      },
+      {
+        "question": "ఒక లక్ష్య కార్పస్‌ను అంచనా వేయడానికి సరళమైన నియమం ఏమిటి?",
+        "answer": "ఒక సాధారణ నియమం మీ ప్రస్తుత వార్షిక ఖర్చులకు 25× (4% వాస్తవ ఉపసంహరణ కోసం), కానీ ద్రవ్యోల్బణం, రాబడులు, మరియు ప్రస్తుత పొదుపులతో దీన్ని మెరుగుపరచడానికి క్యాలిక్యులేటర్‌ను ఉపయోగించండి."
+      }
     ],
     "methodology": {
-      "h2": "Methodology & Update Log",
-      "body": "This calculator uses standard financial formulas for future value (FV) and present value (PV) of annuities to project your retirement corpus and required SIP. All figures are illustrative. Last content update: September 2025. Financial formulas verified against established industry standards."
+      "h2": "పద్ధతి & నవీకరణ లాగ్",
+      "body": "ఈ క్యాలిక్యులేటర్ మీ పదవీ విరమణ కార్పస్ మరియు అవసరమైన SIPని అంచనా వేయడానికి యాన్యుటీల భవిష్యత్ విలువ (FV) మరియు ప్రస్తుత విలువ (PV) కోసం ప్రామాణిక ఆర్థిక సూత్రాలను ఉపయోగిస్తుంది. అన్ని గణాంకాలు ఉదాహరణ ప్రయోజనాల కోసం మాత్రమే. చివరి కంటెంట్ నవీకరణ: సెప్టెంబర్ 2025. స్థాపించబడిన పరిశ్రమ ప్రమాణాలకు వ్యతిరేకంగా ఆర్థిక సూత్రాలు ధృవీకరించబడ్డాయి."
+    },
+    "assumptions": {
+      "title": "మేము ఉపయోగించే అంచనాలు (డిఫాల్ట్)",
+      "body": "ఈ క్యాలిక్యులేటర్ దీర్ఘకాలిక భారతీయ మార్కెట్ డేటా ఆధారంగా ప్రామాణిక ఆర్థిక సూత్రాలు మరియు డిఫాల్ట్ అంచనాలను ఉపయోగిస్తుంది. మీరు మీ అంచనాలకు సరిపోయేలా ఈ ఇన్‌పుట్‌లను సర్దుబాటు చేయవచ్చు.<ul><li><strong>ద్రవ్యోల్బణం:</strong> 6% p.a.</li><li><strong>ప్రీ-రిటైర్మెంట్ రిటర్న్స్:</strong> 12% p.a.</li><li><strong>పోస్ట్-రిటైర్మెంట్ రిటర్న్స్:</strong> 7% p.a.</li><li><strong>డిపాజిట్లు:</strong> నెలవారీ, ప్రతి నెల <strong>ప్రారంభంలో</strong> చేయబడతాయి (యాన్యుటీ-డ్యూ).</li><li><strong>జీవితకాలం:</strong> 85 సంవత్సరాలు.</li></ul>"
     }
   },
   "loan_optimization_calculator": {
