@@ -12,6 +12,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   const dictionary = await getDictionary(params.lang, ['retirement_corpus_calculator']);
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/retirement-corpus-calculator`;
+  const ogImageUrl = `${siteUrl}/images/retirement-calc-og.png`;
   
   const softwareSchema = {
     "@context":"https://schema.org",
@@ -47,11 +48,19 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     title: dictionary.retirement_corpus_calculator.meta_title,
     description: dictionary.retirement_corpus_calculator.meta_description,
     alternates: {
-      canonical: pageUrl,
+      canonical: `https://bharatsaver.com/en/retirement-corpus-calculator`,
       languages: i18nConfig.locales.reduce((acc, locale) => {
         acc[locale] = `${siteUrl}/${locale}/retirement-corpus-calculator`;
         return acc;
       }, {} as Record<string, string>),
+    },
+    openGraph: {
+        title: "Retirement Corpus Calculator 2025 — How Much to Save to Retire in India",
+        description: "Estimate the corpus and monthly SIP required to retire comfortably. India-specific, includes NPS/PPF/EPF guidance.",
+        url: pageUrl,
+        images: [{ url: ogImageUrl, width: 1200, height: 630, alt: 'BharatSaver Retirement Corpus Calculator' }],
+        locale: params.lang === 'en' ? 'en_IN' : params.lang,
+        type: 'website',
     },
     other: {
       'application/ld+json': JSON.stringify([softwareSchema, faqSchema]),
@@ -77,4 +86,3 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
     </div>
   );
 }
-

@@ -733,14 +733,22 @@
     },
     "checklist": {
       "title": "How to Choose: A Quick Checklist",
-      "points": [
-        "<strong>Goal Horizon:</strong> Long-term (>10 years)? PPF is better. Short-term (<5 years)? FD is the only option.",
-        "<strong>Tax Bracket:</strong> In a higher tax bracket (20-30%)? The tax-free nature of PPF becomes much more attractive.",
-        "<strong>Liquidity Needs:</strong> Need access to your money for emergencies? FD offers better liquidity, despite penalties.",
-        "<strong>Risk Appetite:</strong> If you want zero risk, both are safe, but PPF is backed by the sovereign government.",
-        "<strong>Investment Amount:</strong> Investing over ₹1.5 lakh annually? You'll have to use FDs or other options for the surplus.",
-        "<strong>Age:</strong> For senior citizens, banks often offer higher FD rates, which might make them more competitive."
-      ]
+      "body": "<ul><li><strong>Goal Horizon:</strong> Long-term (>10 years)? PPF is better. Short-term (<5 years)? FD is the only option.</li><li><strong>Tax Bracket:</strong> In a higher tax bracket (20-30%)? The tax-free nature of PPF becomes much more attractive.</li><li><strong>Liquidity Needs:</strong> Need access to your money for emergencies? FD offers better liquidity, despite penalties.</li><li><strong>Risk Appetite:</strong> If you want zero risk, both are safe, but PPF is backed by the sovereign government.</li><li><strong>Investment Amount:</strong> Investing over ₹1.5 lakh annually? You'll have to use FDs or other options for the surplus.</li><li><strong>Age:</strong> For senior citizens, banks often offer higher FD rates, which might make them more competitive.</li></ul>"
+    },
+    "common_scenarios": {
+      "title": "Worked Examples — Old vs New Regime",
+      "scenario1": {
+        "title": "Example 1: ₹10 Lakh Salary with HRA & Full Deductions",
+        "body": "<strong>Inputs:</strong> Salary ₹10,00,000 | HRA ₹2,00,000 | 80C ₹1,50,000 | 80D ₹25,000 | 80CCD(1B) ₹50,000<br/><strong>Old Regime Tax:</strong> ₹46,800<br/><strong>New Regime Tax:</strong> ₹54,600<br/><strong>Recommendation:</strong> Old Regime is better here because deductions + HRA exemptions reduce taxable income significantly."
+      },
+      "scenario2": {
+        "title": "Example 2: ₹15 Lakh Salary, No Deductions",
+        "body": "<strong>Inputs:</strong> Salary ₹15,00,000 | HRA = 0 | 80C/80D = 0<br/><strong>Old Regime Tax:</strong> ₹2,73,000<br/><strong>New Regime Tax:</strong> ₹1,95,000<br/><strong>Recommendation:</strong> New Regime saves ~₹78,000 since no deductions are used."
+      },
+       "scenario3": {
+        "title": "Example 3: ₹7 Lakh Freelancer Income (No HRA, Small Deduction)",
+        "body": "<strong>Inputs:</strong> Income ₹7,00,000 | No HRA | 80C ₹50,000<br/><strong>Old Regime Tax:</strong> ₹23,400<br/><strong>New Regime Tax:</strong> ₹0 (87A rebate applies)<br/><strong>Recommendation:</strong> New Regime is better, especially for individuals with income up to ₹7 lakh due to rebate."
+      }
     },
     "faq_title": "Frequently Asked Questions",
     "faqs": [
@@ -763,104 +771,104 @@
     }
   },
   "tax_regime_calculator": {
-    "meta_title": "Tax Regime Calculator 2025 — Old vs New Regime Compare (HRA, 80C, 80D)",
-    "meta_description": "Use our free tax regime calculator for FY 2024-25 to instantly compare tax under the old vs new regime. Includes HRA, 80C, 80D, home loan, and worked examples for ₹6L, ₹10L, ₹15L salaries. Download results and get filing options.",
-    "h1": "Tax Regime Calculator 2025 — Compare Old vs New Tax Regime (India)",
-    "description": "Enter your salary and deductions to instantly compare tax under the old vs new regime. Updated for FY 2025-26 — includes HRA, 80C, 80D, and worked examples.",
-    "title": "Tax Regime Calculator",
-    "last_updated": "Last Updated:",
-    "form_description": "Find out which tax regime saves you more money.",
-    "gross_salary_label": "Gross Annual Salary",
-    "basic_salary_label": "Basic Salary (for HRA calculation)",
-    "other_income_label": "Other Income (e.g., interest, rent)",
-    "age_label": "Age Category",
-    "age_below_60": "Below 60 years",
-    "age_60_to_80": "60 to 80 years (Senior)",
-    "age_above_80": "Above 80 years (Super Senior)",
-    "deductions_title": "Deductions (for Old Regime)",
-    "section80C_label": "Section 80C (PPF, EPF, ELSS)",
-    "section80D_label": "Section 80D (Medical Insurance)",
-    "section80CCD1B_label": "Section 80CCD(1B) (NPS)",
-    "section80TTA_label": "Section 80TTA (Savings Interest)",
-    "hra_label": "HRA Received",
-    "rent_paid_label": "Total Annual Rent Paid",
-    "metro_city_label": "Live in a Metro City?",
-    "home_loan_interest_label": "Home Loan Interest (u/s 24)",
-    "lta_label": "Leave Travel Allowance (LTA)",
-    "calculate_button": "Compare Tax",
-    "loading": "Calculating...",
-    "results_title": "Tax Comparison Result",
-    "result_recommendation": "Choose the {winner} — it saves you {savings} this year given your inputs.",
-    "old_regime": "Old Regime",
-    "new_regime": "New Regime",
-    "total_tax_label": "Total Tax Payable",
-    "taxable_income_label": "Taxable Income",
-    "net_income_label": "Take-home Income (Post-Tax)",
+    "meta_title": "పాత vs కొత్త పన్ను విధానం క్యాలిక్యులేటర్ (AY 2025-26) | BharatSaver",
+    "meta_description": "భారతదేశంలో పాత మరియు కొత్త పన్ను విధానాల కింద మీ ఆదాయపు పన్ను బాధ్యతను పోల్చడానికి మరియు మీకు ఏది మంచిదో కనుగొనడానికి మా ఉచిత క్యాలిక్యులేటర్‌ను ఉపయోగించండి AY 2025-26 కోసం.",
+    "h1": "పాత vs కొత్త పన్ను విధానం క్యాలిక్యులేటర్",
+    "description": "మీ జీతం మరియు మినహాయింపులను నమోదు చేసి, పాత మరియు కొత్త పన్ను విధానాల కింద తక్షణమే పన్నును పోల్చండి. FY 2025-26 కోసం నవీకరించబడింది — HRA, 80C, 80D మరియు పని చేసిన ఉదాహరణలతో సహా.",
+    "title": "పన్ను విధానం క్యాలిక్యులేటర్",
+    "last_updated": "చివరిగా నవీకరించబడింది:",
+    "form_description": "ఏ పన్ను విధానం మీకు ఎక్కువ డబ్బు ఆదా చేస్తుందో కనుగొనండి.",
+    "gross_salary_label": "స్థూల వార్షిక జీతం",
+    "basic_salary_label": "ప్రాథమిక జీతం (HRA లెక్కింపు కోసం)",
+    "other_income_label": "ఇతర ఆదాయం (ఉదా., వడ్డీ, అద్దె)",
+    "age_label": "వయస్సు వర్గం",
+    "age_below_60": "60 సంవత్సరాల కంటే తక్కువ",
+    "age_60_to_80": "60 నుండి 80 సంవత్సరాలు (సీనియర్)",
+    "age_above_80": "80 సంవత్సరాల కంటే ఎక్కువ (సూపర్ సీనియర్)",
+    "deductions_title": "మినహాయింపులు (పాత విధానం కోసం)",
+    "section80C_label": "సెక్షన్ 80C (PPF, EPF, ELSS)",
+    "section80D_label": "సెక్షన్ 80D (వైద్య బీమా)",
+    "section80CCD1B_label": "సెక్షన్ 80CCD(1B) (NPS)",
+    "section80TTA_label": "సెక్షన్ 80TTA (పొదుపు వడ్డీ)",
+    "hra_label": "పొందిన HRA",
+    "rent_paid_label": "చెల్లించిన మొత్తం వార్షిక అద్దె",
+    "metro_city_label": "మెట్రో నగరంలో నివసిస్తున్నారా?",
+    "home_loan_interest_label": "గృహ రుణ వడ్డీ (u/s 24)",
+    "lta_label": "లీవ్ ట్రావెల్ అలవెన్స్ (LTA)",
+    "calculate_button": "పన్నును పోల్చండి",
+    "loading": "లెక్కిస్తోంది...",
+    "results_title": "పన్ను పోలిక ఫలితం",
+    "result_recommendation": "{winner} ఎంచుకోండి — ఇది ఈ సంవత్సరం మీకు {savings} ఆదా చేస్తుంది.",
+    "old_regime": "పాత విధానం",
+    "new_regime": "కొత్త విధానం",
+    "total_tax_label": "చెల్లించవలసిన మొత్తం పన్ను",
+    "taxable_income_label": "పన్ను విధించదగిన ఆదాయం",
+    "net_income_label": "చేతికి వచ్చే ఆదాయం (పన్ను తర్వాత)",
     "assumptions": {
-      "title": "Calculator Assumptions",
-      "body": "The calculator is updated for FY 2024-25 (AY 2025-26). Standard Deduction of ₹50,000 is applied to both regimes for salaried individuals. All calculations are based on the slab rates published by the Income Tax Department of India. This is an estimator and not tax advice."
+      "title": "క్యాలిక్యులేటర్ అంచనాలు",
+      "body": "క్యాలిక్యులేటర్ FY 2024-25 (AY 2025-26) కోసం నవీకరించబడింది. జీతం పొందే వ్యక్తుల కోసం రెండు విధానాలకు ₹50,000 స్టాండర్డ్ డిడక్షన్ వర్తిస్తుంది. అన్ని లెక్కలు భారత ఆదాయపు పన్ను శాఖ ప్రచురించిన స్లాబ్ రేట్ల ఆధారంగా ఉంటాయి. ఇది ఒక అంచనా మాత్రమే మరియు పన్ను సలహా కాదు."
     },
     "comparison_table": {
-      "title": "Old vs New Tax Regime — Quick Comparison",
-      "description": "A quick look at what's allowed in each regime.",
+      "title": "పాత vs కొత్త పన్ను విధానం — శీఘ్ర పోలిక",
+      "description": "ప్రతి విధానంలో ఏమి అనుమతించబడుతుందో ఒక శీఘ్ర వీక్షణ.",
       "table": {
-        "headers": ["Feature", "Old Tax Regime", "New Tax Regime (Default)"],
+        "headers": ["ఫీచర్", "పాత పన్ను విధానం", "కొత్త పన్ను విధానం (డిఫాల్ట్)"],
         "rows": [
-          ["Tax Slabs", "4 slabs (5%, 20%, 30%)", "6 slabs (5% to 30%)"],
-          ["Standard Deduction", "₹50,000", "₹50,000"],
-          ["Section 80C/80D", "Allowed", "Not Allowed"],
-          ["HRA Exemption", "Allowed", "Not Allowed"],
-          ["Home Loan Interest", "Allowed", "Not Allowed"]
+          ["పన్ను స్లాబ్‌లు", "4 స్లాబ్‌లు (5%, 20%, 30%)", "6 స్లాబ్‌లు (5% నుండి 30%)"],
+          ["ప్రామాణిక మినహాయింపు", "₹50,000", "₹50,000"],
+          ["సెక్షన్ 80C/80D", "అనుమతించబడింది", "అనుమతించబడలేదు"],
+          ["HRA మినహాయింపు", "అనుమతించబడింది", "అనుమతించబడలేదు"],
+          ["గృహ రుణ వడ్డీ", "అనుమతించబడింది", "అనుమతించబడలేదు"]
         ]
       }
     },
     "how_we_calculate": {
-      "title": "How We Calculate Your Tax (Step-by-Step)",
-      "body": "<ul><li><strong>Old Regime Calculation:</strong> Gross Income - Standard Deduction - All Section 80 Deductions - HRA/Home Loan Interest = Taxable Income.</li><li><strong>New Regime Calculation:</strong> Gross Income - Standard Deduction = Taxable Income.</li></ul><p>Our tax calculator applies the official tax slabs for FY 2024-25 (AY 2025-26) to determine your liability under both regimes. Health & Education Cess of 4% is applied to the final tax amount. The default new regime has a rebate under section 87A for incomes up to ₹7 lakh, making the effective tax zero. For slab rates, we cite the official <a href='https://incometaxindia.gov.in/Pages/tools/income-tax-calculator.aspx' target='_blank' rel='noopener noreferrer'>Income Tax Department e-calculator</a>. For more details, see our <a href='/{lang}/guides/old-vs-new-tax-regime'>guide on how to choose a tax regime</a>.</p>"
+      "title": "మేము మీ పన్నును ఎలా లెక్కిస్తాము (దశల వారీ)",
+      "body": "<ul><li><strong>పాత విధానం లెక్కింపు:</strong> స్థూల ఆదాయం - ప్రామాణిక మినహాయింపు - అన్ని సెక్షన్ 80 మినహాయింపులు - HRA/గృహ రుణ వడ్డీ = పన్ను విధించదగిన ఆదాయం.</li><li><strong>కొత్త విధానం లెక్కింపు:</strong> స్థూల ఆదాయం - ప్రామాణిక మినహాయింపు = పన్ను విధించదగిన ఆదాయం.</li></ul><p>మా పన్ను క్యాలిక్యులేటర్ FY 2024-25 (AY 2025-26) కోసం అధికారిక పన్ను స్లాబ్‌లను వర్తింపజేసి రెండు విధానాల కింద మీ బాధ్యతను నిర్ధారిస్తుంది. తుది పన్ను మొత్తంపై 4% ఆరోగ్యం & విద్యా సెస్ వర్తిస్తుంది. డిఫాల్ట్ కొత్త విధానంలో ₹7 లక్షల వరకు ఆదాయం కోసం సెక్షన్ 87A కింద రిబేట్ ఉంది, ఇది ప్రభావవంతమైన పన్నును సున్నా చేస్తుంది. స్లాబ్ రేట్ల కోసం, మేము అధికారిక <a href='https://incometaxindia.gov.in/Pages/tools/income-tax-calculator.aspx' target='_blank' rel='noopener noreferrer'>ఆదాయపు పన్ను శాఖ ఇ-క్యాలిక్యులేటర్‌ను</a> ఉదహరిస్తాము.</p>"
     },
     "checklist": {
-      "title": "How to Choose: A Quick Checklist",
-      "body": "<ul><li><strong>High Deductions:</strong> If your total deductions (80C, HRA, home loan interest) are significant (typically > ₹2.5-3 lakh), the <strong>Old Regime</strong> is often better.</li><li><strong>Low/No Deductions:</strong> If you don't have many deductions, the <strong>New Regime's</strong> lower slab rates are usually more beneficial.</li><li><strong>Simplicity:</strong> Prefer a simpler tax filing process without tracking multiple investments? The <strong>New Regime</strong> is easier.</li></ul>"
+      "title": "ఎలా ఎంచుకోవాలి: ఒక శీఘ్ర చెక్‌లిస్ట్",
+      "body": "<ul><li><strong>అధిక మినహాయింపులు:</strong> మీ మొత్తం మినహాయింపులు (80C, HRA, గృహ రుణ వడ్డీ) గణనీయంగా ఉంటే (సాధారణంగా > ₹2.5-3 లక్షలు), <strong>పాత విధానం</strong> తరచుగా ఉత్తమం.</li><li><strong>తక్కువ/మినహాయింపులు లేవు:</strong> మీకు చాలా మినహాయింపులు లేకపోతే, <strong>కొత్త విధానం</strong> యొక్క తక్కువ స్లాబ్ రేట్లు సాధారణంగా మరింత ప్రయోజనకరంగా ఉంటాయి.</li><li><strong>సరళత:</strong> బహుళ పెట్టుబడులను ట్రాక్ చేయకుండా ఒక సరళమైన పన్ను ఫైలింగ్ ప్రక్రియను ఇష్టపడతారా? <strong>కొత్త విధానం</strong> సులభం.</li></ul>"
     },
     "common_scenarios": {
-      "title": "Worked Examples — Old vs New Regime",
+      "title": "పని చేసిన ఉదాహరణలు — పాత vs కొత్త విధానం",
       "scenario1": {
-        "title": "Example 1: ₹10 Lakh Salary with HRA & Full Deductions",
-        "body": "<strong>Inputs:</strong> Salary ₹10,00,000 | HRA ₹2,00,000 | 80C ₹1,50,000 | 80D ₹25,000 | 80CCD(1B) ₹50,000<br/><strong>Old Regime Tax:</strong> ₹46,800<br/><strong>New Regime Tax:</strong> ₹54,600<br/><strong>Recommendation:</strong> Old Regime is better here because deductions + HRA exemptions reduce taxable income significantly."
+        "title": "ఉదాహరణ 1: HRA & పూర్తి మినహాయింపులతో ₹10 లక్షల జీతం",
+        "body": "<strong>ఇన్‌పుట్‌లు:</strong> జీతం ₹10,00,000 | HRA ₹2,00,000 | 80C ₹1,50,000 | 80D ₹25,000 | 80CCD(1B) ₹50,000<br/><strong>పాత విధానం పన్ను:</strong> ₹46,800<br/><strong>కొత్త విధానం పన్ను:</strong> ₹54,600<br/><strong>సిఫార్సు:</strong> పాత విధానం ఇక్కడ ఉత్తమం ఎందుకంటే మినహాయింపులు + HRA మినహాయింపులు పన్ను విధించదగిన ఆదాయాన్ని గణనీయంగా తగ్గిస్తాయి."
       },
       "scenario2": {
-        "title": "Example 2: ₹15 Lakh Salary, No Deductions",
-        "body": "<strong>Inputs:</strong> Salary ₹15,00,000 | HRA = 0 | 80C/80D = 0<br/><strong>Old Regime Tax:</strong> ₹2,73,000<br/><strong>New Regime Tax:</strong> ₹1,95,000<br/><strong>Recommendation:</strong> New Regime saves ~₹78,000 since no deductions are used."
+        "title": "ఉదాహరణ 2: ₹15 లక్షల జీతం, మినహాయింపులు లేవు",
+        "body": "<strong>ఇన్‌పుట్‌లు:</strong> జీతం ₹15,00,000 | HRA = 0 | 80C/80D = 0<br/><strong>పాత విధానం పన్ను:</strong> ₹2,73,000<br/><strong>కొత్త విధానం పన్ను:</strong> ₹1,95,000<br/><strong>సిఫార్సు:</strong> కొత్త విధానం ~₹78,000 ఆదా చేస్తుంది ఎందుకంటే ఏ మినహాయింపులు ఉపయోగించబడలేదు."
       },
        "scenario3": {
-        "title": "Example 3: ₹7 Lakh Freelancer Income (No HRA, Small Deduction)",
-        "body": "<strong>Inputs:</strong> Income ₹7,00,000 | No HRA | 80C ₹50,000<br/><strong>Old Regime Tax:</strong> ₹23,400<br/><strong>New Regime Tax:</strong> ₹0 (87A rebate applies)<br/><strong>Recommendation:</strong> New Regime is better, especially for individuals with income up to ₹7 lakh due to rebate."
+        "title": "ఉదాహరణ 3: ₹7 లక్షల ఫ్రీలాన్సర్ ఆదాయం (HRA లేదు, చిన్న మినహాయింపు)",
+        "body": "<strong>ఇన్‌పుట్‌లు:</strong> ఆదాయం ₹7,00,000 | HRA లేదు | 80C ₹50,000<br/><strong>పాత విధానం పన్ను:</strong> ₹23,400<br/><strong>కొత్త విధానం పన్ను:</strong> ₹0 (87A రిబేట్ వర్తిస్తుంది)<br/><strong>సిఫార్సు:</strong> కొత్త విధానం ఉత్తమం, ప్రత్యేకించి ₹7 లక్షల వరకు ఆదాయం ఉన్న వ్యక్తులకు రిబేట్ కారణంగా."
       }
     },
-    "faq_title": "Frequently Asked Questions",
+    "faq_title": "తరచుగా అడిగే ప్రశ్నలు",
     "faqs": [
-      { "question": "Is the new tax regime better?", "answer": "If your total deductible investments/exemptions are below ~₹1.2–1.8L per year (depends on income), the new regime usually saves tax; otherwise old regime often wins." },
-      { "question": "Does HRA work in new regime?", "answer": "No — HRA exemption is only under the old regime; include your HRA details in the calculator to see the difference." },
-      { "question": "Which tax regime is better for a ₹10 lakh salary?", "answer": "If your total deductions are over ₹2.5 lakh, the Old Regime is usually better. Otherwise, the New Regime often saves you more tax." },
-      { "question": "Can I claim HRA in the new tax regime?", "answer": "No, HRA exemption is only available under the old tax regime; include your HRA details in the calculator to see the difference." },
-      { "question": "Is Standard Deduction available in the new regime?", "answer": "Yes, a standard deduction of ₹50,000 for salaried individuals is available under both the old and new tax regimes." },
-      { "question": "What is tax rebate under section 87A for FY 2024-25?", "answer": "In the new regime, if your taxable income is up to ₹7 lakh, you pay zero tax due to the rebate. In the old regime, the rebate applies to income up to ₹5 lakh." }
+      { "question": "కొత్త పన్ను విధానం అంటే ఏమిటి?", "answer": "కొత్త పన్ను విధానం తక్కువ పన్ను రేట్లను అందిస్తుంది కానీ HRA, 80C, మరియు గృహ రుణ వడ్డీ వంటి చాలా సాధారణ మినహాయింపులను అనుమతించదు. ఇది ఇప్పుడు డిఫాల్ట్ విధానం. మీ మొత్తం మినహాయించదగిన పెట్టుబడులు ~₹1.8L కంటే తక్కువగా ఉంటే, కొత్త విధానం సాధారణంగా పన్ను ఆదా చేస్తుంది." },
+      { "question": "పాత పన్ను విధానం అంటే ఏమిటి?", "answer": "పాత పన్ను విధానంలో కొంచెం ఎక్కువ పన్ను రేట్లు ఉన్నాయి కానీ మీకు 70కి పైగా మినహాయింపులు మరియు మినహాయింపులను క్లెయిమ్ చేయడానికి అనుమతిస్తుంది. మీరు ప్రత్యేకంగా దాన్ని ఎంచుకోవాలి." },
+      { "question": "₹10 లక్షల జీతానికి ఏ పన్ను విధానం ఉత్తమం?", "answer": "మీ మొత్తం మినహాయింపులు ₹2.5 లక్షల కంటే ఎక్కువగా ఉంటే, పాత విధానం సాధారణంగా ఉత్తమం. లేకపోతే, కొత్త విధానం తరచుగా మీకు ఎక్కువ పన్ను ఆదా చేస్తుంది." },
+      { "question": "నేను కొత్త పన్ను విధానంలో HRAని క్లెయిమ్ చేయవచ్చా?", "answer": "లేదు, HRA మినహాయింపు పాత పన్ను విధానం కింద మాత్రమే అందుబాటులో ఉంది; తేడాను చూడటానికి క్యాలిక్యులేటర్‌లో మీ HRA వివరాలను చేర్చండి." },
+      { "question": "కొత్త విధానంలో ప్రామాణిక మినహాయింపు అందుబాటులో ఉందా?", "answer": "అవును, జీతం పొందే వ్యక్తుల కోసం ₹50,000 ప్రామాణిక మినహాయింపు పాత మరియు కొత్త పన్ను విధానాల కింద అందుబాటులో ఉంది." },
+      { "question": "FY 2024-25 కోసం సెక్షన్ 87A కింద పన్ను రిబేట్ అంటే ఏమిటి?", "answer": "కొత్త విధానంలో, మీ పన్ను విధించదగిన ఆదాయం ₹7 లక్షల వరకు ఉంటే, రిబేట్ కారణంగా మీరు సున్నా పన్ను చెల్లిస్తారు. పాత విధానంలో, రిబేట్ ₹5 లక్షల వరకు ఆదాయానికి వర్తిస్తుంది." }
     ],
     "next_steps": {
-      "title": "Next Steps",
-      "cta1_title": "File Your ITR",
-      "cta1_desc": "Use a trusted partner like ClearTax to file your Income Tax Return accurately.",
-      "cta2_title": "Plan Tax-Saving Investments",
-      "cta2_desc": "Explore our tax-saving calculators like PPF and NPS to plan your investments."
+      "title": "తదుపరి దశలు",
+      "cta1_title": "మీ ITR ఫైల్ చేయండి",
+      "cta1_desc": "మీ ఆదాయపు పన్ను రిటర్న్‌ను ఖచ్చితంగా ఫైల్ చేయడానికి ClearTax వంటి విశ్వసనీయ భాగస్వామిని ఉపయోగించండి.",
+      "cta2_title": "పన్ను-ఆదా పెట్టుబడులను ప్లాన్ చేయండి",
+      "cta2_desc": "మీ పెట్టుబడులను ప్లాన్ చేయడానికి PPF మరియు NPS వంటి మా పన్ను-ఆదా క్యాలిక్యులేటర్లను అన్వేషించండి."
     },
     "conclusion": {
-      "title": "Final Thoughts: Making the Smart Choice",
-      "body": "Choosing a tax regime is a critical financial decision. The New Regime offers simplicity, while the Old Regime rewards those with significant investments and expenses. Use this calculator to compare your specific situation, understand the trade-offs, and choose the path that maximizes your take-home pay. For deeper insights, explore our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> or our <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> to see how tax-saving investments can impact your decision."
+      "title": "తుది ఆలోచనలు: తెలివైన ఎంపిక చేసుకోవడం",
+      "body": "ఒక పన్ను విధానాన్ని ఎంచుకోవడం ఒక కీలకమైన ఆర్థిక నిర్ణయం. కొత్త విధానం సరళతను అందిస్తుంది, అయితే పాత విధానం గణనీయమైన పెట్టుబడులు మరియు ఖర్చులు ఉన్నవారికి ప్రతిఫలమిస్తుంది. మీ నిర్దిష్ట పరిస్థితిని పోల్చడానికి, లాభనష్టాలను అర్థం చేసుకోవడానికి మరియు మీ చేతికి వచ్చే జీతాన్ని గరిష్ఠం చేసే మార్గాన్ని ఎంచుకోవడానికి ఈ క్యాలిక్యులేటర్‌ను ఉపయోగించండి. లోతైన అంతర్దృష్టుల కోసం, పన్ను-ఆదా పెట్టుబడులు మీ నిర్ణయాన్ని ఎలా ప్రభావితం చేస్తాయో చూడటానికి మా <a href='/{lang}/ppf-calculator' class='underline'>PPF క్యాలిక్యులేటర్</a> లేదా మా <a href='/{lang}/nps-calculator' class='underline'>NPS క్యాలిక్యులేటర్</a>ను అన్వేషించండి."
     }
   },
   "retirement_corpus_calculator": {
-    "meta_title": "Retirement Corpus Calculator 2025 — How Much to Save Monthly to Retire at 60",
-    "meta_description": "Use our free retirement corpus calculator (India) — includes inflation, life expectancy, existing savings and investment returns. 3 worked examples & downloadable CSV.",
+    "meta_title": "Retirement Corpus Calculator 2025 — How Much to Save to Retire in India (SIP & Lump Sum)",
+    "meta_description": "Use our free Retirement Corpus Calculator (India) — includes inflation, pre/post-retirement returns, life expectancy, existing savings and worked examples (₹6L/₹10L/₹15L). Export results & get a 1-page retirement plan.",
     "h1": "Retirement Corpus Calculator — How Much Money Do You Need to Retire in India (2025)",
     "title": "Retirement Corpus Calculator",
     "form_description": "Plan your comfortable retirement by calculating the total corpus you need.",
