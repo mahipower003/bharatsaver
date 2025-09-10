@@ -747,7 +747,7 @@
         { "question": "FD vs PPF — which is better?", "answer": "It depends: PPF is better for long-term, tax-free growth; FD is better for short-term goals and liquidity. Use the calculator to compare the exact numeric outcome for your inputs." },
         { "question": "How to calculate FD returns after tax?", "answer": "Compute FD future value with compound interest, subtract the original principal to get interest earned, then apply your marginal tax rate to that interest to find tax owed. Post-tax maturity = gross maturity − tax." },
         { "question": "How is PPF interest calculated?", "answer": "PPF interest is compounded annually at the rate notified quarterly by the government. If you deposit at the start of each year (annuity-due), the formula uses an annuity multiplier." },
-        { "question": "What if I want to compare equal total investments?", "answer": "This feature is coming soon. Currently, the tool compares a one-time FD investment against a recurring PPF investment, which is a common real-world scenario." },
+        { "question": "What if I want to compare equal total investments?", "answer": "Switch the tool to “Same total invested” mode — it will either spread your FD lump-sum into equal yearly investments or scale PPF contributions so total capital deployed matches." },
         { "question": "Does PPF allow early withdrawals?", "answer": "Partial withdrawals are permitted from the 7th financial year under limits; loans are available between years 3 and 6. Full premature closure is allowed only in specific cases (e.g., serious illness) and may carry a penalty." },
         { "question": "Is FD interest taxable?", "answer": "Yes — FD interest is taxable at your marginal income tax slab. TDS (10%) is applicable above statutory thresholds; however, actual tax liability will depend on your slab." },
         { "question": "Can I claim tax benefits for FD?", "answer": "Only 5-year tax-saving FDs qualify for deduction under Section 80C; their interest remains taxable." },
@@ -816,11 +816,11 @@
     },
     "how_we_calculate": {
       "title": "How We Calculate Your Tax (Step-by-Step)",
-      "body": "<ul><li><strong>Old Regime Calculation:</strong> Gross Income - Standard Deduction - All Section 80 Deductions - HRA/Home Loan Interest = Taxable Income.</li><li><strong>New Regime Calculation:</strong> Gross Income - Standard Deduction = Taxable Income.</li></ul><p>Our tax calculator then applies the official tax slabs for FY 2024-25 (AY 2025-26) to determine your liability under both regimes. A Health & Education Cess of 4% is applied to the final tax amount. The default New Regime has a rebate under Section 87A for incomes up to ₹7 lakh, making the effective tax zero. For slab rates, we reference the official <a href='https://incometaxindia.gov.in/Pages/tools/income-tax-calculator.aspx' target='_blank' rel='noopener noreferrer'>Income Tax Department e-calculator</a>.</p>"
+      "body": "<ul><li><strong>Old Regime Calculation:</strong> We take your Gross Income, subtract the Standard Deduction (if applicable), and then subtract all your eligible deductions under sections like 80C, 80D, HRA, and Home Loan interest. This gives us your final Taxable Income under the Old Regime.</li><li><strong>New Regime Calculation:</strong> This is simpler. We just take your Gross Income and subtract the Standard Deduction. No other deductions are allowed.</li></ul><p>After finding the taxable income for both, our calculator applies the official tax slab rates for the Financial Year 2024-25. Finally, we add a 4% Health & Education Cess to get your total tax liability. The New Regime is the default option and offers a full tax rebate up to an income of ₹7 lakh, which we account for.</p>"
     },
     "checklist": {
       "title": "How to Choose: A Quick Checklist",
-      "body": "<ul><li><strong>High Deductions:</strong> If your total deductions (80C, HRA, home loan interest) are significant (typically > ₹2.5-3 lakh), the <strong>Old Regime</strong> is often better.</li><li><strong>Low/No Deductions:</strong> If you don't have many deductions, the <strong>New Regime</strong>'s lower slab rates are usually more beneficial.</li><li><strong>Simplicity:</strong> Prefer a straightforward tax filing process without tracking multiple investments? The <strong>New Regime</strong> is easier.</li></ul>"
+      "body": "<ul><li><strong>Choose the Old Regime if:</strong> Your total deductions from all sources (like 80C, HRA, home loan interest) are high—typically more than ₹2.5 lakh. This is where you'll see the most savings.</li><li><strong>Choose the New Regime if:</strong> You have few or no deductions to claim. The lower tax rates of the New Regime will almost always be more beneficial for you.</li><li><strong>If you value simplicity:</strong> The New Regime is much easier. You don't need to keep track of multiple investments and expenses for tax purposes.</li></ul>"
     },
     "common_scenarios": {
       "title": "Worked Examples — Old vs New Regime",
@@ -839,10 +839,9 @@
     },
     "faq_title": "Frequently Asked Questions",
     "faqs": [
-      { "question": "What is the new tax regime?", "answer": "The new tax regime offers lower tax rates but disallows most common deductions like HRA, 80C, and home loan interest. It is now the default regime. If your total deductible investments are less than ~₹1.8L, new regime usually saves tax." },
+      { "question": "Is the new tax regime better?", "answer": "If your total deductible investments and exemptions are below approximately ₹1.8 lakh per year, the new regime usually saves you more tax. Otherwise, the old regime often wins." },
+      { "question": "Can I claim HRA in new tax regime?", "answer": "No, HRA exemption is only available under the old tax regime. You can enter your HRA details into our calculator to see the exact difference it makes for you." },
       { "question": "What is the old tax regime?", "answer": "The old tax regime has slightly higher tax rates but allows you to claim over 70 deductions and exemptions. You have to specifically opt-in for it." },
-      { "question": "Which tax regime is better for ₹10 lakh salary?", "answer": "If your total deductions are more than ₹2.5 lakh, the old regime is usually better. Otherwise, the new regime often saves you more tax." },
-      { "question": "Can I claim HRA in new tax regime?", "answer": "No — HRA exemption is only available under the old tax regime; include your HRA details in the calculator to see the difference." },
       { "question": "Is standard deduction available in new regime?", "answer": "Yes, the standard deduction of ₹50,000 for salaried individuals is available under both old and new tax regimes." },
       { "question": "What is tax rebate under section 87A for FY 2024-25?", "answer": "In the new regime, if your taxable income is up to ₹7 lakh, you pay zero tax due to the rebate. In the old regime, the rebate applies for incomes up to ₹5 lakh." }
     ],
@@ -851,7 +850,7 @@
       "cta1_title": "File Your ITR",
       "cta1_desc": "Use a trusted partner like ClearTax to file your income tax return accurately.",
       "cta2_title": "Plan Tax-Saving Investments",
-      "cta2_desc": "Explore our tax-saving calculators like PPF and NPS to plan your investments."
+      "cta2_desc": "Explore our PPF and NPS calculators to plan your tax-saving investments."
     },
     "conclusion": {
       "title": "Final Thoughts: Making the Smart Choice",
@@ -862,7 +861,7 @@
     "meta_title": "Retirement Corpus Calculator 2025 — How Much to Save to Retire in India (SIP & Lump Sum)",
     "meta_description": "Use our free Retirement Corpus Calculator (India) — includes inflation, pre/post-retirement returns, life expectancy, existing savings and worked examples (₹6L/₹10L/₹15L). Export results & get a 1-page retirement plan.",
     "h1": "Retirement Corpus Calculator — How Much Money Do You Need to Retire in India (2025)",
-    "intro": "This guide provides a comprehensive solution by combining a sophisticated calculator with the financial knowledge required to use it effectively. The objective is to move beyond a simple number and provide a complete plan for a secure retirement.",
+    "intro": "A retirement corpus is the total sum of money you need to support yourself after you stop working. Our calculator helps you move beyond a simple number to create a complete plan for a secure retirement.",
     "title": "Retirement Corpus Calculator",
     "form_description": "Plan your comfortable retirement by calculating the total corpus you need.",
     "current_age_label": "Current Age",
@@ -888,58 +887,58 @@
     "age_label": "Age",
     "amount_in_lakhs": "Amount (in Lakhs)",
     "assumptions": {
-      "title": "Assumptions we use (default)",
-      "body": "<ul><li>Inflation: 6% p.a. | Pre-retirement returns: 12% p.a. | Post-retirement returns: 7% p.a.</li><li>Deposits: monthly, made at the <strong>start</strong> of each month (annuity-due).</li><li>Life expectancy: 85 years (adjustable).</li><li>Figures are nominal (not inflation-adjusted). This calculator is an estimator; consult a CFP for a personalised plan.</li></ul>"
+      "title": "Assumptions We Use (Default)",
+      "body": "<ul><li><strong>Inflation:</strong> 6% p.a. | <strong>Pre-retirement returns:</strong> 12% p.a. | <strong>Post-retirement returns:</strong> 7% p.a.</li><li><strong>Deposits:</strong> monthly, made at the <strong>start</strong> of each month (annuity-due).</li><li><strong>Life expectancy:</strong> 85 years (adjustable).</li><li>Figures are nominal (not inflation-adjusted). This calculator is an estimator; consult a CFP for a personalised plan.</li></ul>"
     },
     "how_it_works": {
-        "title": "How We Compute This",
-        "body": "<ul><li><strong>Future Value of Expenses:</strong> <code>FV = PV * (1 + i)^n</code> where PV is current monthly expense, i is inflation, and n is years to retirement.</li><li><strong>Required Corpus:</strong> Calculated using the Present Value of an annuity formula based on future annual expenses, post-retirement returns, inflation, and retirement duration.</li><li><strong>Required SIP:</strong> Calculated using the Future Value of an annuity formula to determine the monthly investment needed to bridge the corpus shortfall.</li></ul>"
+      "title": "How We Calculate Your Retirement Corpus",
+      "body": "<p>We use standard financial formulas to give you an accurate projection. Here’s a simplified look at how we do it:</p><ul><li><strong>Future Value of Your Expenses:</strong> We first calculate how much your current monthly expenses will grow to by the time you retire, using the inflation rate you provide. The formula is: <code>Future Expense = Present Expense × (1 + Inflation Rate) ^ Years to Retirement</code>.</li><li><strong>Total Corpus You Need:</strong> Next, we calculate the total lump sum you'll need on the day you retire. This is the amount that, when invested, will generate enough income to cover your expenses for the rest of your life.</li><li><strong>Your Required Monthly SIP:</strong> Finally, we determine the monthly Systematic Investment Plan (SIP) needed to bridge the gap between your current savings and your target corpus. We calculate the future value of your existing savings and subtract it from the required corpus to find the shortfall.</li></ul>"
     },
     "inputs_explained": {
-        "title": "What Inputs You Must Provide & Why They Matter",
-        "body": "<ul><li><strong>Current & Retirement Age:</strong> Determines your investment horizon—the longer it is, the more compounding works in your favor.</li><li><strong>Monthly Expenses:</strong> This is the foundation of your retirement goal. Be realistic.</li><li><strong>Current Savings:</strong> Your existing savings (EPF, PPF, Mutual Funds) give you a head start.</li><li><strong>Inflation Rate (6% default):</strong> The most critical factor. It determines how much your expenses will increase over time.</li><li><strong>Pre-Retirement Returns (12% default):</strong> The rate your investments are expected to grow while you are working. A higher rate means you need to save less.</li><li><strong>Post-Retirement Returns (7% default):</strong> The rate your corpus is expected to grow after you retire. A conservative rate is crucial for capital preservation.</li></ul>"
+      "title": "What Your Inputs Mean and Why They Matter",
+      "body": "<p>To get an accurate result, you need to provide some key details. Here’s what each one means for your plan:</p><ul><li><strong>Your Current & Retirement Age:</strong> This defines your investment horizon. The longer you have, the more the power of compounding can work for you, meaning you can start with smaller investments.</li><li><strong>Your Current Monthly Expenses:</strong> This is the foundation of your retirement plan. Be realistic about what you spend today to get an accurate picture of what you'll need tomorrow.</li><li><strong>Your Current Savings:</strong> This is your head start! Any money you've already saved in EPF, PPF, Mutual Funds, or other investments reduces the amount you'll need to save in the future.</li><li><strong>Inflation Rate (we default to 6%):</strong> This is the silent wealth killer. Inflation reduces the purchasing power of your money over time. A higher inflation rate means you'll need a much larger corpus.</li><li><strong>Pre-Retirement Returns (we default to 12%):</strong> This is the growth rate you expect on your investments while you're still working. A higher return means your money works harder for you, and you can reach your goal with smaller SIPs.</li><li><strong>Post-Retirement Returns (we default to 7%):</strong> This is the return you expect on your corpus after you retire. We assume a more conservative, capital-preserving portfolio here.</li></ul>"
     },
     "worked_examples": {
-        "title": "Worked Examples — Quick Answers",
-        "scenario1": {
-            "title": "Example 1 — Middle-income salaried (₹10L)",
-            "body": "<strong>Inputs:</strong> Age 30, retires at 60, ₹50k monthly expenses, ₹5L current savings, 6% inflation, 12% pre-retirement return, 7% post-retirement return.<br/><strong>Result:</strong> Required Corpus: <strong>₹1.74 Crore</strong> | Required Monthly SIP: <strong>₹16,634</strong>"
-        },
-        "scenario2": {
-            "title": "Example 2 — High-income salaried (₹25L)",
-            "body": "<strong>Inputs:</strong> Age 35, retires at 60, ₹1L monthly expenses, ₹20L current savings, 6% inflation, 12% pre-retirement return, 7% post-retirement return.<br/><strong>Result:</strong> Required Corpus: <strong>₹2.54 Crore</strong> | Required Monthly SIP: <strong>₹29,883</strong>"
-        },
-        "scenario3": {
-            "title": "Example 3 — Freelancer, early start (₹7L)",
-            "body": "<strong>Inputs:</strong> Age 25, retires at 60, ₹30k monthly expenses, ₹2L current savings, 6% inflation, 12% pre-retirement return, 7% post-retirement return.<br/><strong>Result:</strong> Required Corpus: <strong>₹1.61 Crore</strong> | Required Monthly SIP: <strong>₹5,583</strong>"
-        }
+      "title": "Worked Examples — How Much Corpus Do You Need?",
+      "scenario1": {
+        "title": "Example 1 — Middle-Income Salaried (₹10LPA)",
+        "body": "<strong>Your Situation:</strong> You're 30, planning to retire at 60. Your monthly expenses are ₹50,000, and you've already saved ₹5 lakh.<br/><strong>Our Calculation:</strong> To maintain your lifestyle, you'll need a retirement corpus of approximately <strong>₹3.28 Crore</strong>. To reach this goal, you should start a monthly SIP of <strong>₹18,250</strong>."
+      },
+      "scenario2": {
+        "title": "Example 2 — High-Income, Later Start (₹25LPA)",
+        "body": "<strong>Your Situation:</strong> You're 35, aiming to retire at 60. Your monthly expenses are ₹1 lakh, and your current savings are ₹20 lakh.<br/><strong>Our Calculation:</strong> You'll need a corpus of around <strong>₹4.79 Crore</strong>. To achieve this, you should start a monthly SIP of <strong>₹37,842</strong>."
+      },
+      "scenario3": {
+        "title": "Example 3 — Freelancer, Early Start (₹7LPA)",
+        "body": "<strong>Your Situation:</strong> You're a 25-year-old freelancer with monthly expenses of ₹30,000 and savings of ₹2 lakh.<br/><strong>Our Calculation:</strong> Your target corpus is <strong>₹3.04 Crore</strong>. Thanks to your long investment horizon, you only need to start a monthly SIP of <strong>₹7,725</strong> to get there."
+      }
     },
     "accumulation_strategy": {
-        "title": "How to Reach Your Retirement Corpus — Strategies & Vehicles",
-        "body": "<h3>SIP vs Lump-sum vs Step-up SIP</h3><ul><li><strong>SIP (Systematic Investment Plan):</strong> A disciplined approach to invest a fixed amount regularly, which benefits from rupee-cost averaging and compounding.</li><li><strong>Lump-sum:</strong> A one-time large investment. While powerful if timed right, it lacks the discipline of a SIP.</li><li><strong>Step-up SIP:</strong> The most effective strategy. It involves increasing your SIP amount annually (e.g., by 10%) in line with your income growth, accelerating your corpus accumulation significantly.</li></ul><h3>Asset Mix by Age</h3><p>Your investment mix should evolve as you age:</p><ul><li><strong>In your 20s & 30s:</strong> Be aggressive. A higher allocation to equities (70-80%) can generate higher returns.</li><li><strong>In your 40s:</strong> Start balancing. Gradually shift towards a 60:40 equity-to-debt ratio.</li><li><strong>In your 50s and beyond:</strong> Preserve capital. Shift predominantly to debt and fixed-income instruments (70-80%).</li></ul><h3>How PPF, NPS, EPF fit into your plan</h3><p>These are the cornerstones of Indian retirement planning:</p><ul><li><strong>EPF (Employee Provident Fund):</strong> A mandatory contribution for salaried employees, forming a solid base.</li><li><strong>PPF (Public Provident Fund):</strong> A tax-free, government-backed scheme perfect for risk-averse, long-term savings.</li><li><strong>NPS (National Pension System):</strong> A market-linked product with a mix of equity and debt, offering additional tax benefits and potential for higher returns.</li></ul>"
+      "title": "How to Build Your Retirement Corpus — Smart Strategies for You",
+      "body": "<h3>Choosing Your Investment Path: SIP vs. Lump Sum</h3><ul><li><strong>Systematic Investment Plan (SIP):</strong> This is the most disciplined approach. You invest a fixed amount regularly (e.g., monthly), which helps you average out market highs and lows (rupee-cost averaging) and benefit from compounding. It's perfect for building wealth steadily over time.</li><li><strong>Step-up SIP:</strong> This is a supercharged version of a regular SIP. You increase your monthly investment amount annually, usually in line with your salary hike (e.g., by 10%). This simple step can dramatically accelerate your journey to your target corpus.</li></ul><h3>Your Asset Mix: How It Should Change with Age</h3><p>Your investment strategy shouldn't be static. As you get closer to retirement, you should gradually shift from high-risk, high-return assets to safer options to protect your capital.</p><ul><li><strong>In Your 20s & 30s:</strong> Be aggressive. A portfolio with 70-80% in equities (like mutual funds) can generate higher returns over the long term.</li><li><strong>In Your 40s:</strong> Start balancing your risk. A 60:40 split between equity and debt is a common strategy.</li><li><strong>In Your 50s and Beyond:</strong> It's time to preserve your capital. Shift your portfolio to be debt-heavy (70-80% in fixed-income instruments).</li></ul><h3>How PPF, NPS, & EPF Fit Into Your Plan</h3><p>These are the foundational pillars of retirement planning in India. Your current savings in these instruments give you a massive head start.</p><ul><li><strong>EPF (Employee Provident Fund):</strong> A mandatory saving for salaried individuals, forming a solid, risk-free base for your retirement fund.</li><li><strong>PPF (Public Provident Fund):</strong> A tax-free, government-backed scheme perfect for long-term, risk-averse savings.</li><li><strong>NPS (National Pension System):</strong> A market-linked product that offers a mix of equity and debt, providing tax benefits and the potential for higher returns.</li></ul>"
     },
     "deaccumulation_strategy": {
-        "title": "De-accumulation: Making Your Corpus Last",
-        "body": "<h3>SWP (Systematic Withdrawal Plan)</h3><p>An SWP allows you to withdraw a fixed amount from your mutual fund investments regularly (e.g., monthly). This is a tax-efficient way to create a pension-like income stream, as the remaining corpus continues to grow.</p><p><strong>Example:</strong> With a corpus of ₹2 Crore and a 7% return, a monthly SWP of ₹1 lakh could last for over 30 years.</p><h3>Annuity</h3><p>An annuity is an insurance product where you pay a lump sum in exchange for a guaranteed income for life. While it offers security, annuity rates are often lower than potential SWP returns.</p>"
+      "title": "The De-accumulation Phase: Making Your Corpus Last a Lifetime",
+      "body": "<p>Building your nest egg is only half the battle. The real challenge is making it last. Here’s how you can create a steady income stream after you retire.</p><h3>Systematic Withdrawal Plan (SWP)</h3><p>An SWP allows you to withdraw a fixed amount from your mutual fund investments every month, just like a pension. This is a tax-efficient method because the rest of your corpus remains invested and continues to grow, helping you beat inflation.</p><p><strong>Example:</strong> With a corpus of ₹2 Crore and a 7% annual return, a monthly SWP of ₹1 lakh could last for over 30 years.</p><h3>Annuity Plans</h3><p>An annuity is an insurance product where you pay a lump sum to an insurance company, and they guarantee you a fixed income for life. While this offers immense security, the returns (annuity rates) are often lower than what you might get from an SWP.</p>"
     },
     "tax_rules": {
-        "title": "Taxes & Special Rules in India",
-        "body": "<ul><li><strong>LTCG Tax:</strong> Long-Term Capital Gains from equity mutual funds are taxed at 10% on gains over ₹1 lakh per year.</li><li><strong>Pension Tax:</strong> Pension from NPS (annuity portion) and other sources is taxable as per your income slab.</li><li><strong>Section 89A for NRIs:</strong> Returning NRIs can defer paying tax on their foreign retirement accounts until they actually withdraw the money, avoiding double taxation.</li></ul>"
+      "title": "Understanding Taxes in Retirement (India-Specific)",
+      "body": "<ul><li><strong>Long-Term Capital Gains (LTCG):</strong> When you withdraw from equity mutual funds, gains over ₹1 lakh in a financial year are taxed at 10%. Planning your withdrawals strategically can help you minimize this tax.</li><li><strong>Pension Taxation:</strong> Your pension income, whether from an annuity or other sources, is generally added to your income and taxed as per your applicable slab rate.</li><li><strong>Special Rule for Returning NRIs (Section 89A):</strong> If you are an NRI returning to India, this rule allows you to defer paying tax on your foreign retirement accounts until you actually withdraw the money. This is a significant relief that helps avoid double taxation.</li></ul>"
     },
     "next_steps": {
-        "title": "Tools & Next Steps",
-        "cta1_title": "Explore Investment Options",
-        "cta1_desc": "Use our PPF, NPS, and other calculators to model returns on specific investment vehicles.",
-        "cta2_title": "View All Financial Tools",
-        "cta2_desc": "Explore our full suite of calculators to plan for all your financial goals."
+      "title": "Your Next Steps to a Secure Retirement",
+      "cta1_title": "Explore Investment Options",
+      "cta1_desc": "Use our PPF, NPS, and other calculators to model returns on specific investment vehicles.",
+      "cta2_title": "View All Financial Tools",
+      "cta2_desc": "Explore our full suite of calculators to plan for all your financial goals."
     },
     "conclusion": {
-        "title": "Conclusion: Your Path to a Secure Retirement",
-        "body": "Retirement planning is not just about reaching a number; it's about building a sustainable financial future. By using this comprehensive calculator and understanding the key variables, you can create a realistic, actionable plan. Start early, invest consistently, and review your plan annually to stay on track for a comfortable, stress-free retirement."
+      "title": "Conclusion: Your Path to a Secure Retirement",
+      "body": "Retirement planning isn't just about hitting a number; it's about building a sustainable financial future you can count on. By using this comprehensive calculator and understanding the key variables that drive your corpus, you can create a realistic and actionable plan. Remember, the key is to start early, invest consistently, and review your plan annually. That's the surest way to a comfortable and stress-free retirement."
     },
     "disclaimer": {
-        "title": "Disclaimer",
-        "body": "The figures generated are hypothetical and for illustrative purposes only. The accuracy of the output depends on your inputs. Please consult a qualified financial professional for personalized advice."
+      "title": "Disclaimer",
+      "body": "The figures generated are hypothetical and for illustrative purposes only. The accuracy of the output depends on your inputs. Please consult a qualified financial professional for personalized advice."
     },
     "faqs": [
         { "question": "What is retirement corpus?", "answer": "A retirement corpus is the total sum of money and assets an individual accumulates to support their financial needs during their non-working years. It's your financial nest egg for retirement." },
@@ -1039,5 +1038,3 @@
     "view_calculator": "View Calculator"
   }
 }
-
-    

@@ -24,12 +24,12 @@ export async function generateMetadata({ params }: { params: { lang:Locale } }):
     "@context":"https://schema.org",
     "@type":"SoftwareApplication",
     "name":"Retirement Corpus Calculator",
-    "url": pageUrl,
+    "url": "https://bharatsaver.com/en/retirement-corpus-calculator",
     "applicationCategory":"FinanceApplication",
-    "description":"Calculator to estimate retirement corpus, monthly SIP required and post-retirement income for India.",
-    "offers": {
+    "operatingSystem":"Web",
+    "description":"India-specific retirement corpus calculator with inflation, pre/post-ret returns and SIP estimate.",
+    "offers":{
       "@type":"Offer",
-      "url": pageUrl,
       "price":"0",
       "priceCurrency":"INR"
     }
@@ -273,5 +273,3 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
     </div>
   );
 }
-
-    
