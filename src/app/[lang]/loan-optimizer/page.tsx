@@ -5,10 +5,12 @@ import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { FileText, Download, TrendingUp, Star, AlertTriangle, CheckCircle, HelpCircle, GitCompareArrows, LineChart, Banknote } from "lucide-react";
+import { FileText, Download, TrendingUp, Star, AlertTriangle, CheckCircle, HelpCircle, GitCompareArrows, LineChart, Banknote, Table as TableIcon } from "lucide-react";
 import Link from "next/link";
 import { AuthorCard } from "@/components/layout/AuthorCard";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -263,6 +265,9 @@ export default async function LoanOptimizerPage({ params }: { params: { lang: Lo
     ],
   };
 
+  const comparisonData = dictionary.loan_optimization_calculator.comparison_table;
+
+
   return (
     <div className="py-12">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
@@ -297,14 +302,29 @@ export default async function LoanOptimizerPage({ params }: { params: { lang: Lo
                 <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.how_it_works.body }} />
             </Card>
 
-             <Card>
+            {dictionary.loan_optimization_calculator.worked_examples && (
+              <Card>
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-3"><LineChart className="h-6 w-6 text-primary" />{dictionary.loan_optimization_calculator.amortization_dive.h2}</CardTitle>
+                    <CardTitle className="flex items-center gap-3"><LineChart className="h-6 w-6 text-primary" />{dictionary.loan_optimization_calculator.worked_examples.h2}</CardTitle>
                 </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.amortization_dive.body }} />
-            </Card>
-            
-             <Card>
+                <CardContent className="space-y-6">
+                  <div className="bg-muted/50 p-4 rounded-lg">
+                    <h3 className="font-semibold text-lg">{dictionary.loan_optimization_calculator.worked_examples.scenario1.title}</h3>
+                    <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.worked_examples.scenario1.body }} />
+                  </div>
+                  <div className="bg-muted/50 p-4 rounded-lg">
+                    <h3 className="font-semibold text-lg">{dictionary.loan_optimization_calculator.worked_examples.scenario2.title}</h3>
+                    <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.worked_examples.scenario2.body }} />
+                  </div>
+                  <div className="bg-muted/50 p-4 rounded-lg">
+                    <h3 className="font-semibold text-lg">{dictionary.loan_optimization_calculator.worked_examples.scenario3.title}</h3>
+                    <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.worked_examples.scenario3.body }} />
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+
+            <Card>
                 <CardHeader>
                     <CardTitle className="flex items-center gap-3"><TrendingUp className="h-6 w-6 text-primary" />{dictionary.loan_optimization_calculator.optimization_masterclass.h2}</CardTitle>
                 </CardHeader>
@@ -317,6 +337,34 @@ export default async function LoanOptimizerPage({ params }: { params: { lang: Lo
                 </CardHeader>
                 <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.prepay_vs_invest.body }} />
             </Card>
+            
+            {comparisonData && (
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-3"><TableIcon className="h-6 w-6 text-primary" />{comparisonData.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <Table>
+                    <TableHeader>
+                        <TableRow>
+                            {comparisonData.headers.map((header: string, index: number) => (
+                                <TableHead key={index}>{header}</TableHead>
+                            ))}
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                        {comparisonData.rows.map((row: string[], rowIndex: number) => (
+                            <TableRow key={rowIndex}>
+                                {row.map((cell: string, cellIndex: number) => (
+                                    <TableCell key={cellIndex} dangerouslySetInnerHTML={{ __html: cell }}></TableCell>
+                                ))}
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                  </Table>
+                </CardContent>
+              </Card>
+            )}
 
             <Card>
                 <CardHeader>

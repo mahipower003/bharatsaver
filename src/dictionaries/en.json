@@ -1015,9 +1015,20 @@
       "h2": "How this Loan Optimization Calculator Works",
       "body": "<p>We believe in transparency. Our calculator uses standard financial formulas to ensure accuracy.</p><h4>EMI (Equated Monthly Installment)</h4><p>The EMI is calculated using the formula: <code>E = P * r * (1+r)^n / ((1+r)^n - 1)</code>, where P is the principal, r is the monthly interest rate, and n is the number of months.</p><h4>Outstanding Balance</h4><p>The outstanding balance after 'k' payments is calculated to determine the impact of a prepayment at that specific month.</p>"
     },
-    "amortization_dive": {
-      "h2": "The Amortization Deep Dive",
-      "body": "<p>Every EMI you pay consists of two parts: interest and principal. Initially, a larger portion of your EMI goes towards paying interest. Over time, as your principal reduces, the interest portion decreases, and more of your payment goes towards clearing the actual loan.</p><h4>Why this matters for optimization:</h4><ul><li>Prepayments made **early in the loan** save significantly more interest.</li><li>Strategically paying off high-interest loans first yields the greatest total savings.</li></ul>"
+    "worked_examples": {
+      "h2": "Worked Examples: How Much Can You Save?",
+      "scenario1": {
+        "title": "Example 1: Home Loan Prepayment",
+        "body": "<strong>Inputs:</strong> Loan ₹50L, Rate 8.5%, Tenure 20 years. One-time prepayment of ₹5L at the end of Year 1.<br/><strong>Result:</strong> You could save approximately <strong>₹12.5 lakh</strong> in total interest and reduce your tenure by over 3 years."
+      },
+      "scenario2": {
+        "title": "Example 2: Refinancing a Personal Loan",
+        "body": "<strong>Inputs:</strong> Outstanding loan ₹5L at 14% for 3 more years.<br/><strong>Refinance Offer:</strong> New loan at 11% with a 1% processing fee.<br/><strong>Result:</strong> Despite the ₹5,000 fee, refinancing would save you over <strong>₹40,000</strong> in interest over the remaining loan period."
+      },
+      "scenario3": {
+        "title": "Example 3: Invest vs. Prepay",
+        "body": "<strong>Inputs:</strong> Surplus of ₹3L. Home loan at 8.5%. Expected investment return of 12% p.a. in an index fund.<br/><strong>Result:</strong> Investing the ₹3L would likely generate a higher corpus over 10 years compared to the interest saved by prepaying, making it the better wealth-building choice (if you are comfortable with market risk)."
+      }
     },
     "optimization_masterclass": {
       "h2": "EMI Optimization Strategies in India",
@@ -1026,6 +1037,14 @@
     "prepay_vs_invest": {
       "h2": "Prepay vs. Invest — Which is Better?",
       "body": "<p>Should you prepay your loan or invest the extra cash? Here's the simple rule of thumb: <strong>If your expected after-tax return on investment is greater than your loan's interest rate, investing may be the better choice.</strong> Otherwise, prepaying is a guaranteed, risk-free return equal to your loan's interest rate.</p><p>Consider the tax benefits on home loan interest, which can lower your effective loan rate, making investing more attractive.</p>"
+    },
+    "comparison_table": {
+      "title": "Prepay vs Refinance: A Quick Comparison",
+      "headers": ["Action", "Impact on EMI", "Impact on Tenure", "Interest Saved", "Best For"],
+      "rows": [
+        ["Prepay ₹1L", "EMI same", "Tenure reduced", "High", "Early Payoff"],
+        ["Refinance", "EMI lower", "Tenure same", "Medium", "Cashflow Relief"]
+      ]
     },
     "refinance": {
       "h2": "Balance Transfer & Refinance Playbook",
@@ -1147,5 +1166,3 @@
       "h1": "Mutual Fund Overlap Calculator"
   }
 }
-
-    
