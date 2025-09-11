@@ -1,4 +1,3 @@
-
 {
   "header": {
     "nav": {
@@ -111,6 +110,7 @@
     "table_amount_invested": "పెట్టుబడి పెట్టిన మొత్తం",
     "table_interest_earned": "సంపాదించిన వడ్డీ",
     "table_closing_balance": "ముగింపు నిల్వ",
+    "title": "పిపిఎఫ్ క్యాలిక్యులేటర్",
     "advantages": {
         "title": "2025లో ఆన్‌లైన్ పిపిఎఫ్ క్యాలిక్యులేటర్‌ను ఎందుకు ఉపయోగించాలి?",
         "intro": "ఒక పిపిఎఫ్ క్యాలిక్యులేటర్ మీ దీర్ఘకాలిక పొదుపును ప్లాన్ చేయడాన్ని సులభతరం చేస్తుంది. మాన్యువల్ గణితం చేయడానికి బదులుగా, మీరు తక్షణ, ఖచ్చితమైన ఫలితాలను పొందుతారు.",
@@ -1161,9 +1161,9 @@
     "h2": "Calculators & Guides",
     "view_calculator": "View Calculator"
   },
-    "mutual_fund_overlap_calculator": {
-      "meta_title": "Mutual Fund Overlap Calculator (India) | BharatSaver",
-      "meta_description": "Check for portfolio overlap in your mutual funds to ensure proper diversification. Use our free Mutual Fund Overlap Calculator for Indian funds.",
-      "h1": "Mutual Fund Overlap Calculator"
+  "mutual_fund_overlap_calculator": {
+    "meta_title": "Mutual Fund Overlap Calculator (India) | BharatSaver",
+    "meta_description": "Check for portfolio overlap in your mutual funds to ensure proper diversification. Use our free Mutual Fund Overlap Calculator for Indian funds.",
+    "h1": "Mutual Fund Overlap Calculator"
   }
 }
