@@ -1016,7 +1016,7 @@
       "h2": "How the Loan Optimization Calculator Works (Formulas Explained)",
       "body": "<h3>EMI (Equated Monthly Installment)</h3><p>The EMI is calculated using the formula: <code>E = P * r * (1+r)^n / ((1+r)^n - 1)</code>, where P is the principal, r is the monthly interest rate, and n is the number of months.</p><h3>Outstanding Balance & Prepayment Math</h3><p>The outstanding balance after 'k' payments is calculated to determine the impact of a prepayment at that specific month. When you prepay, the calculator recalculates the remaining tenure or EMI based on the reduced principal.</p>"
     },
-     "worked_examples": {
+    "worked_examples": {
       "h2": "Worked Examples — How Much Can You Save?",
       "scenario1": {
         "title": "Example 1: Home loan prepayment (₹50L, 8.5%, 5L prepay)",
@@ -1053,7 +1053,7 @@
     },
     "tax_notes": {
       "h2": "Loan Optimization & Tax Benefits in India",
-      "body": "<h4>Section 24 Home Loan Deduction</h4><p>Under Section 24 of the Income Tax Act, you can claim a deduction of up to ₹2 lakh on the interest paid for a self-occupied home loan. This effectively lowers your interest rate, which is a key factor in the 'prepay vs. invest' decision.</p><h4>Prepayment Penalties & RBI Rules</h4><p>As per RBI guidelines, lenders cannot charge prepayment penalties on floating-rate home loans. However, fixed-rate home loans and other loan types (like personal loans) may still have penalties. Always check your loan agreement or confirm with your lender.</p>"
+      "body": "<h4>Section 24 Home Loan Deduction</h4><p>Under <a href='https://incometaxindia.gov.in/Pages/acts/income-tax-act.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Section 24 of the Income Tax Act</a>, you can claim a deduction of up to ₹2 lakh on the interest paid for a self-occupied home loan. This effectively lowers your interest rate, which is a key factor in the 'prepay vs. invest' decision.</p><h4>Prepayment Penalties & RBI Rules</h4><p>As per <a href='https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12101&Mode=0' target='_blank' rel='noopener noreferrer' class='underline'>RBI guidelines</a>, lenders cannot charge prepayment penalties on floating-rate home loans. However, fixed-rate home loans and other loan types (like personal loans) may still have penalties. Always check your loan agreement or confirm with your lender.</p>"
     },
     "faq": {
       "h2": "Frequently Asked Questions (FAQ)",
@@ -1167,6 +1167,3 @@
       "h1": "Mutual Fund Overlap Calculator"
   }
 }
-
-    
-    
