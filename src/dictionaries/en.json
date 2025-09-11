@@ -763,9 +763,9 @@
     }
   },
   "tax_regime_calculator": {
-    "meta_title": "Tax Regime Calculator 2025 — Old vs New Tax Regime Compare (HRA, 80C, 80D)",
-    "meta_description": "Compare Old vs New tax regime for FY 2024-25. Instant calculator with HRA, 80C, 80D, home loan and worked examples (₹6L, ₹10L, ₹15L). Download results & get filing options.",
-    "h1": "Tax Regime Calculator 2025 — Old vs New Tax Regime (India)",
+    "meta_title": "Old vs New Tax Regime Calculator (AY 2025-26) | BharatSaver",
+    "meta_description": "Use our free calculator to compare your income tax liability under the Old and New tax regimes in India for AY 2025-26. Includes HRA, 80C, 80D, home loan deductions & worked examples.",
+    "h1": "Old vs New Tax Regime Calculator",
     "description": "Enter your salary and deductions to instantly compare tax under the old vs new regime. Updated for FY 2025-26 — includes HRA, 80C, 80D, and worked examples.",
     "title": "Tax Regime Calculator",
     "last_updated": "Last Updated:",
@@ -816,11 +816,11 @@
     },
     "how_we_calculate": {
       "title": "How We Calculate Your Tax (Step-by-Step)",
-      "body": "<ul><li><strong>Old Regime Calculation:</strong> We take your Gross Income, subtract the Standard Deduction (if applicable), and then subtract all your eligible deductions under sections like 80C, 80D, HRA, and Home Loan interest. This gives us your final Taxable Income under the Old Regime.</li><li><strong>New Regime Calculation:</strong> This is simpler. We just take your Gross Income and subtract the Standard Deduction. No other deductions are allowed.</li></ul><p>After finding the taxable income for both, our calculator applies the official tax slab rates for the Financial Year 2024-25. Finally, we add a 4% Health & Education Cess to get your total tax liability. The New Regime is the default option and offers a full tax rebate up to an income of ₹7 lakh, which we account for.</p>"
+      "body": "<ul><li><strong>Old Regime Calculation:</strong> Gross Income - Standard Deduction - all Section 80 deductions - HRA/Home Loan interest = Taxable Income.</li><li><strong>New Regime Calculation:</strong> Gross Income - Standard Deduction = Taxable Income.</li></ul><p>Our tax calculator applies the official tax slabs for FY 2024-25 (AY 2025-26) to determine your liability under both regimes. A 4% Health & Education Cess is applied to the final tax amount. The default New Regime has a rebate under Section 87A for incomes up to ₹7 lakh, making the effective tax zero. For slab rates, we refer to the official <a href='https://incometaxindia.gov.in/Pages/tools/income-tax-calculator.aspx' target='_blank' rel='noopener noreferrer'>Income Tax Dept. e-calculator</a>.</p>"
     },
     "checklist": {
       "title": "How to Choose: A Quick Checklist",
-      "body": "<ul><li><strong>Choose the Old Regime if:</strong> Your total deductions from all sources (like 80C, HRA, home loan interest) are high—typically more than ₹2.5 lakh. This is where you'll see the most savings.</li><li><strong>Choose the New Regime if:</strong> You have few or no deductions to claim. The lower tax rates of the New Regime will almost always be more beneficial for you.</li><li><strong>If you value simplicity:</strong> The New Regime is much easier. You don't need to keep track of multiple investments and expenses for tax purposes.</li></ul>"
+      "body": "<ul><li><strong>High Deductions:</strong> If your total deductions (80C, HRA, home loan interest) are significant (typically > ₹2.5-3 lakh), the <strong>Old Regime</strong> is often better.</li><li><strong>Low/No Deductions:</strong> If you don't have many deductions, the <strong>New Regime's</strong> lower slab rates are usually more beneficial.</li><li><strong>Simplicity:</strong> Prefer a simple tax filing process without tracking multiple investments? The <strong>New Regime</strong> is easier.</li></ul>"
     },
     "common_scenarios": {
       "title": "Worked Examples — Old vs New Regime",
@@ -892,11 +892,11 @@
     "amount_in_lakhs": "Amount (in Lakhs)",
     "how_it_works": {
       "h2": "How do you calculate retirement corpus?",
-      "body": "<p>We use standard financial formulas to give you an accurate projection. Here’s a simplified look at how we do it:</p><h3>Future Value of Your Expenses at Retirement</h3><p>We first calculate how much your current monthly expenses will grow to by the time you retire, using the inflation rate you provide. The formula is: <code>Future Expense = Present Expense × (1 + Inflation Rate) ^ Years to Retirement</code>.</p><h3>Required Corpus at Retirement (PV of Annuity)</h3><p>Next, we calculate the total lump sum you'll need on the day you retire. This is the amount that, when invested, will generate enough income to cover your expenses for the rest of your life. We use the Present Value of an annuity formula for this.</p><h3>Required SIP Calculation</h3><p>Finally, we determine the monthly Systematic Investment Plan (SIP) needed to bridge the gap between your current savings and your target corpus. We calculate the future value of your existing savings and subtract it from the required corpus to find the shortfall. The SIP is calculated using the future value of an annuity due formula, assuming deposits are made at the start of each month.</p>"
+      "body": "<h3>Future Value of Your Expenses at Retirement</h3><p>We first calculate how much your current monthly expenses will grow to by the time you retire, using the inflation rate you provide. The formula is: <code>Future Expense = Present Expense × (1 + Inflation Rate) ^ Years to Retirement</code>.</p><h3>Required Corpus at Retirement (PV of Annuity)</h3><p>Next, we calculate the total lump sum you'll need on the day you retire. This is the amount that, when invested, will generate enough income to cover your expenses for the rest of your life. We use the Present Value of an annuity formula for this.</p><h3>Required SIP Calculation</h3><p>Finally, we determine the monthly Systematic Investment Plan (SIP) needed to bridge the gap between your current savings and your target corpus. We calculate the future value of your existing savings and subtract it from the required corpus to find the shortfall. The SIP is calculated using the future value of an annuity due formula, assuming deposits are made at the start of each month.</p>"
     },
     "inputs_explained": {
       "h2": "What inputs you must provide & why they matter",
-      "body": "<p>To get an accurate result, you need to provide some key details. Here’s what each one means for your plan:</p><ul><li><strong>Your Current & Retirement Age:</strong> This defines your investment horizon. The longer you have, the more the power of compounding can work for you, meaning you can start with smaller investments.</li><li><strong>Your Current Monthly Expenses:</strong> This is the foundation of your retirement plan. Be realistic about what you spend today to get an accurate picture of what you'll need tomorrow.</li><li><strong>Your Current Savings:</strong> This is your head start! Any money you've already saved in EPF, PPF, Mutual Funds, or other investments reduces the amount you'll need to save in the future.</li><li><strong>Inflation Rate:</strong> This is the silent wealth killer. Inflation reduces the purchasing power of your money over time. A higher inflation rate means you'll need a much larger corpus.</li><li><strong>Pre-Retirement Returns:</strong> This is the growth rate you expect on your investments while you're still working. A higher return means your money works harder for you, and you can reach your goal with smaller SIPs.</li><li><strong>Post-Retirement Returns:</strong> This is the return you expect on your corpus after you retire. We assume a more conservative, capital-preserving portfolio here.</li></ul>"
+      "body": "<ul><li><strong>Your Current & Retirement Age:</strong> This defines your investment horizon. The longer you have, the more the power of compounding can work for you, meaning you can start with smaller investments.</li><li><strong>Your Current Monthly Expenses:</strong> This is the foundation of your retirement plan. Be realistic about what you spend today to get an accurate picture of what you'll need tomorrow.</li><li><strong>Your Current Savings:</strong> This is your head start! Any money you've already saved in EPF, PPF, Mutual Funds, or other investments reduces the amount you'll need to save in the future.</li><li><strong>Inflation Rate:</strong> This is the silent wealth killer. Inflation reduces the purchasing power of your money over time. A higher inflation rate means you'll need a much larger corpus.</li><li><strong>Pre-Retirement Returns:</strong> This is the growth rate you expect on your investments while you're still working. A higher return means your money works harder for you, and you can reach your goal with smaller SIPs.</li><li><strong>Post-Retirement Returns:</strong> This is the return you expect on your corpus after you retire. We assume a more conservative, capital-preserving portfolio here.</li></ul>"
     },
     "worked_examples": {
       "h2": "How much corpus do I need to retire at 60 in India?",
@@ -915,11 +915,11 @@
     },
     "sensitivity_analysis": {
       "title": "Sensitivity Analysis: How Assumptions Change Your Goal",
-      "body": "Small changes in your assumptions can have a huge impact on your final corpus. This table shows how your required corpus and SIP change with slight adjustments to inflation and return rates."
-    },
-    "sip_plans": {
-      "title": "Sample SIP Plans to Reach Your Goal",
-      "body": "This table shows the approximate monthly SIP required to reach common retirement corpus goals from different starting ages, assuming a 12% annual return."
+      "body": "Small changes in your assumptions can have a huge impact on your final corpus. This table shows how your required corpus and SIP change with slight adjustments to inflation and return rates.",
+      "sip_plans": {
+        "title": "Sample SIP Plans to Reach Your Goal",
+        "body": "This table shows the approximate monthly SIP required to reach common retirement corpus goals from different starting ages, assuming a 12% annual return."
+      }
     },
     "accumulation_strategy": {
       "h2": "SIP vs Lump Sum vs Step-up SIP (best strategies)",
@@ -948,9 +948,6 @@
       "title": "Disclaimer",
       "body": "The figures generated are hypothetical and for illustrative purposes only. The accuracy of the output depends on your inputs. Please consult a qualified financial professional for personalized advice."
     },
-    "faq": {
-      "h2": "Frequently Asked Questions about Retirement Planning"
-    },
     "faqs": [
         { "question": "How do you calculate retirement corpus?", "answer": "We project your future monthly expenses using inflation, compute the present value (PV) of the annuity you’ll need at retirement, and subtract the future value of existing savings to find the shortfall." },
         { "question": "What inflation rate should I use for Indian retirement planning?", "answer": "Many planners use a long-term default of 5–7% for India; 6% is common. Use higher rates for conservative healthcare or long horizon assumptions." },
@@ -972,11 +969,13 @@
     "assumptions": {
       "title": "Default assumptions & why we chose them",
       "body": "<p>This calculator uses standard financial formulas and default assumptions based on long-term Indian market data. You can adjust these inputs to match your expectations.</p><ul><li><strong>Inflation: 6% p.a.</strong> - This is a conservative long-term average for India.</li><li><strong>Pre-retirement returns: 12% p.a.</strong> - This assumes a diversified portfolio with a significant equity component (e.g., mutual funds).</li><li><strong>Post-retirement returns: 7% p.a.</strong> - This assumes a more conservative, capital-preserving portfolio after you retire.</li><li><strong>Deposits:</strong> monthly, made at the <strong>start</strong> of each month (annuity-due), which slightly improves returns over end-of-month deposits.</li><li><strong>Life expectancy:</strong> 85 years.</li></ul>"
+    },
+    "sip_plans": {
+      "title": "Sample SIP Plans to Reach Your Goal",
+      "body": "This table shows the approximate monthly SIP required to reach common retirement corpus goals from different starting ages, assuming a 12% annual return."
     }
   },
   "loan_optimization_calculator": {
-    "meta_title": "Loan Optimization Calculator India 2025 — Reduce EMI & Save Interest",
-    "meta_description": "Free Loan Optimization Calculator (India). Compare prepayment vs invest, optimize EMI, plan balance transfer, download amortization schedule.",
     "h1": "Loan Optimization Calculator — Optimize EMI, Prepayment & Refinance (India, 2025)",
     "summary": "This guide + interactive calculator helps you answer: How can I minimize total interest, reduce my EMI or tenure, and make the best choice between prepaying, refinancing, or investing my surplus? Read the guide, run the calculator, download your amortization plan and decide with confidence.",
     "title": "Loan Optimizer",
@@ -1013,46 +1012,41 @@
         }
     },
     "why": {
-      "h2": "1. Why a Loan Optimization Calculator?",
-      "body": "<p>Loans are ubiquitous: home loans, car loans, personal loans, education loans, and credit-card debt. Even when interest rates are low, small decisions—reducing tenure, making a partial prepayment, consolidating high-rate debts—have large long-term effects.</p><p>A <strong>Loan Optimization Calculator</strong> does three things:</p><ul><li><strong>Shows the exact consequences</strong> of action (e.g., prepay ₹1,00,000 today reduces X years and saves Y in interest).</li><li><strong>Compares options numerically</strong> (keep EMI and shorten tenure vs reduce EMI).</li><li><strong>Generates a reproducible plan</strong> (amortization schedule, downloadable CSV/PDF) you can share with lenders or advisors.</li></ul><p>Unlike a simple EMI calculator, an optimization calculator models <em>what-if</em> scenarios and gives actionable recommendations — the bridge between information and action.</p><h4>Who should use this?</h4><ul><li>Homeowners considering part-prepayment or refinancing.</li><li>Borrowers with multiple high-rate loans.</li><li>People deciding whether to invest surplus or prepay loans.</li><li>Financial advisors preparing client plans.</li></ul>"
+      "h2": "Why a Loan Optimization Calculator?",
+      "body": "<p>Loans are ubiquitous, but small decisions—like making a partial prepayment or refinancing—can have a huge long-term impact. A good calculator helps you:</p><ul><li><strong>See the exact consequences</strong> of any action (e.g., prepaying ₹1 lakh saves ₹X in interest).</li><li><strong>Compare options numerically</strong> (e.g., reduce EMI vs. shorten tenure).</li><li><strong>Generate a clear plan</strong> (amortization schedule) to share with your advisor.</li></ul><p>This tool models 'what-if' scenarios, turning complex information into actionable insights for homeowners, borrowers, and financial advisors alike.</p>"
     },
     "how_it_works": {
-      "h2": "2. How this Loan Optimization Calculator Works",
-      "body": "<p>This section explains the math so you can trust results. Transparency is critical—especially for financial tools.</p><h3>Core formulas</h3><h4>EMI (Equated Monthly Installment)</h4><p>Given: Principal P (loan amount), Annual nominal rate R%, Monthly rate r = R / 12 / 100, Number of monthly payments n (years × 12). The EMI E is: <code>E = P * r * (1+r)^n / ((1+r)^n - 1)</code></p><h4>Outstanding balance after k payments</h4><p>If you want remaining principal after k EMIs: <code>B_k = P * ((1+r)^n - (1+r)^k) / ((1+r)^n - 1)</code></p>"
+      "h2": "How this Loan Optimization Calculator Works",
+      "body": "<p>We believe in transparency. Our calculator uses standard financial formulas to ensure accuracy.</p><h4>EMI (Equated Monthly Installment)</h4><p>The EMI is calculated using the formula: <code>E = P * r * (1+r)^n / ((1+r)^n - 1)</code>, where P is the principal, r is the monthly interest rate, and n is the number of months.</p><h4>Outstanding Balance</h4><p>The outstanding balance after 'k' payments is calculated to determine the impact of a prepayment at that specific month.</p>"
     },
     "amortization_dive": {
-      "h2": "3. The Amortization Deep Dive",
-      "body": "<p>Every EMI payment has two components: Interest = outstanding principal × monthly rate, and Principal = EMI − interest. In early years, because outstanding principal is high, interest portion is large. Over time, as principal falls, interest portion decreases and principal portion increases.</p><h4>Why this matters for optimization</h4><ul><li>Prepayments made earlier save <strong>more interest</strong>.</li><li>Splitting prepayments strategically yields greater total savings.</li></ul>"
+      "h2": "The Amortization Deep Dive",
+      "body": "<p>Every EMI you pay consists of two parts: interest and principal. Initially, a larger portion of your EMI goes towards paying interest. Over time, as your principal reduces, the interest portion decreases, and more of your payment goes towards clearing the actual loan.</p><h4>Why this matters for optimization:</h4><ul><li>Prepayments made **early in the loan** save significantly more interest.</li><li>Strategically paying off high-interest loans first yields the greatest total savings.</li></ul>"
     },
     "optimization_masterclass": {
-      "h2": "4. The Optimization Masterclass",
-      "body": "<p>When you have extra money, you usually face these choices:</p><ol><li><strong>Reduce EMI</strong> (keep tenure same) — good if you need monthly cashflow relief.</li><li><strong>Reduce tenure</strong> (keep EMI same) — best for minimizing total interest and achieving financial freedom sooner.</li><li><strong>Partial prepayment</strong> — one-time or recurring; often used to reduce tenure or EMI.</li></ol><h3>Decision Framework</h3><p>If your priority is <strong>lower monthly outflow today</strong>, choose <strong>reduce EMI</strong>. If it's to <strong>minimize total interest and retire the loan faster</strong>, choose <strong>reduce tenure</strong>.</p>"
+      "h2": "EMI Optimization Strategies in India",
+      "body": "<h3>Reduce EMI vs. Reduce Tenure</h3><p>When you make an extra payment, you often have a choice:</p><ul><li><strong>Reduce EMI:</strong> Lowers your monthly payment, providing immediate cashflow relief.</li><li><strong>Reduce Tenure:</strong> Keeps your EMI the same but pays off the loan faster, saving you the most interest in the long run.</li></ul><p>If your goal is financial freedom, reducing the tenure is almost always the better option.</p>"
     },
     "prepay_vs_invest": {
-      "h2": "5. Prepayment vs. Investing",
-      "body": "<p>Many people ask: “Should I prepay my home loan or invest the money?” The test is simple: if your expected after-tax investment return is greater than your loan interest rate, investing may yield more wealth. Otherwise, prepaying is the safer bet to reduce debt.</p>"
+      "h2": "Prepay vs. Invest — Which is Better?",
+      "body": "<p>Should you prepay your loan or invest the extra cash? Here's the simple rule of thumb: <strong>If your expected after-tax return on investment is greater than your loan's interest rate, investing may be the better choice.</strong> Otherwise, prepaying is a guaranteed, risk-free return equal to your loan's interest rate.</p><p>Consider the tax benefits on home loan interest, which can lower your effective loan rate, making investing more attractive.</p>"
     },
     "refinance": {
-      "h2": "6. Refinancing & Balance Transfers in India",
-      "body": "<p>A <strong>balance transfer</strong> or <strong>refinance</strong> replaces your existing loan with a new one. Consider it if a new lender offers a significantly lower effective interest rate (after all fees) and you have a good credit score. Our calculator helps you evaluate the break-even point and net savings.</p>"
+      "h2": "Balance Transfer & Refinance Playbook",
+      "body": "<p>Refinancing means replacing your existing loan with a new one, usually at a lower interest rate. Consider this if:</p><ul><li>You can get a significantly lower rate (at least 0.5% to 1% less).</li><li>Your credit score has improved.</li></ul><p>Our calculator helps you compute the break-even point, factoring in processing fees and prepayment penalties, to see if a switch is truly profitable.</p>"
     },
     "tax_notes": {
-      "h2": "7. Tax, Penalties & Regulatory Notes (India-Specific)",
-      "body": "<h4>Income Tax Considerations:</h4><p>Interest on a home loan for a self-occupied property is deductible under Section 24 of the Income Tax Act. Always consult a tax advisor as this tool shows pre-tax comparisons.</p><h4>Prepayment Penalties:</h4><p>Many floating-rate home loans allow prepayment without penalty, but personal loans often have charges. Always check your loan agreement.</p>"
+      "h2": "Loan Optimization & Tax Benefits in India",
+      "body": "<h4>Home Loan Deduction (Section 24)</h4><p>You can claim a tax deduction of up to ₹2 lakh on the interest paid for a self-occupied home loan under Section 24. This reduces your effective interest rate, making the 'prepay vs. invest' decision even more critical.</p><h4>Prepayment Penalties & RBI Rules</h4><p>As per RBI guidelines, lenders cannot charge prepayment penalties on floating-rate home loans. However, fixed-rate loans and other loan types like personal loans may still have penalties. Always check your loan agreement.</p>"
     },
     "faq": {
-      "h2": "Frequently Asked Questions (FAQ)",
+      "h2": "Frequently Asked Questions",
       "faqs": [
-        { "q": "Should I prepay my home loan or invest?", "a": "Use the break-even test: if expected post-investment returns exceed your loan interest after taxes/charges, investing may be better; otherwise prepay. Our calculator can help you model this." },
-        { "q": "How much interest will I save by prepaying?", "a": "Enter your loan details and prepayment amount — the tool will show you the total interest saved and your revised amortization schedule." },
-        { "q": "What is an EMI?", "a": "EMI stands for Equated Monthly Installment — the fixed monthly amount you pay your lender, which combines both principal and interest." },
-        { "q": "How is EMI calculated?", "a": "The EMI is calculated using a standard formula based on your principal, interest rate, and tenure. Our calculator does this math for you precisely." },
-        { "q": "Do prepayments reduce my EMI or my tenure?", "a": "Most lenders give you the choice. If you want a lower monthly payment, choose to reduce the EMI. If you want to pay less interest overall and become debt-free sooner, choose to reduce the tenure." },
-        { "q": "Are there prepayment penalties in India?", "a": "It depends on the loan type. Many banks waive prepayment penalties on floating-rate home loans, but personal loans often have charges. Always check your loan agreement." },
-        { "q": "Can I download the amortization schedule?", "a": "Yes, our tool allows you to download your complete month-by-month repayment schedule as a CSV file." },
-        { "q": "Is refinancing always a good idea?", "a": "Not always. You must include all processing fees and prepayment penalties in your calculation. Refinancing makes sense only if the net interest savings exceed these costs over a reasonable period." },
-        { "q": "How do I prioritize paying off multiple loans?", "a": "The best strategy is usually the 'debt avalanche' method. Make minimum payments on all loans, but direct any extra cash towards the loan with the highest interest rate first." },
-        { "q": "How accurate is this calculator?", "a": "It uses standard financial formulas for high accuracy. However, for exact figures specific to your lender (who might have different rounding rules), always check with your bank." }
+        { "q": "Should I prepay my home loan or invest?", "a": "Use the break-even test: if your expected post-investment returns exceed your loan interest after taxes and fees, investing may be better. Otherwise, prepaying offers a guaranteed, risk-free saving." },
+        { "q": "How much interest will I save by prepaying?", "a": "Our tool precisely calculates this for you. Just enter your loan details and the prepayment amount to see the total interest saved and your new, shorter loan tenure." },
+        { "q": "What is an EMI?", "a": "EMI stands for Equated Monthly Installment—the fixed monthly payment you make, which covers both the principal and interest components of your loan." },
+        { "q": "How is EMI calculated?", "a": "It's calculated using a standard formula based on your principal, interest rate, and tenure. Our calculator automates this complex math for you." },
+        { "q": "Are there prepayment penalties in India?", "a": "For floating-rate home loans, RBI has prohibited prepayment penalties. However, fixed-rate home loans and other loans (like personal or car loans) may still have them. Always verify with your lender." }
       ]
     }
   },

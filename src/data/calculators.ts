@@ -87,12 +87,12 @@ export const calculators: Calculator[] = [
   },
   {
     slug: 'loan-optimizer',
-    title: 'Loan Optimization Calculator',
-    description: 'Calculate EMI and optimize loan tenure.',
+    title: 'Loan Optimizer',
+    description: 'Optimize EMI, prepayment & refinance.',
     summary: 'Use our free Loan Optimization Calculator to calculate your EMI and see how extra payments (prepayment) can help you reduce your loan tenure and save interest.',
     icon: BadgePercent,
     link_text: 'Optimize Now',
-    lastModified: '2024-07-21',
+    lastModified: '2024-08-01',
     image: '/images/loan-optimizer-online.png'
   },
   {

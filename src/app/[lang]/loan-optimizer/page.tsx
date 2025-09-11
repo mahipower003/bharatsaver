@@ -71,25 +71,18 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         "url": `${siteUrl}/icon.svg`
       }
     },
-    "review": {
-        "@type": "Review",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5"
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Laveena Vijayi",
-          "jobTitle": "BharatSaver Editorial Team"
-        }
+    "reviewedBy": {
+        "@type": "Person",
+        "name": "Laveena Vijayi",
+        "jobTitle": "BharatSaver Editorial Team"
     },
     "datePublished": "2024-08-01",
     "dateModified": "2025-09-01"
   };
 
   return {
-    title: dictionary.loan_optimization_calculator.meta_title,
-    description: dictionary.loan_optimization_calculator.meta_description,
+    title: "Loan Optimization Calculator India 2025 — Reduce EMI & Save Interest",
+    description: "Free Loan Optimization Calculator (India). Compare prepayment vs invest, optimize EMI, plan balance transfer, download amortization schedule.",
     alternates: {
       canonical: pageUrl,
       languages: i18nConfig.locales.reduce((acc, locale) => {
