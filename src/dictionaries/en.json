@@ -113,46 +113,45 @@
     "table_closing_balance": "Closing Balance",
     "title": "PPF Calculator",
     "advantages": {
-      "title": "Why Use an Online PPF Calculator in 2025?",
-      "intro": "A PPF Calculator makes it easy to plan your long-term savings. Instead of doing manual math, you get instant, accurate results.",
+      "title": "Why Should You Use an Online PPF Calculator?",
+      "intro": "A PPF Calculator makes it easy to plan your long-term savings. Instead of doing manual math, you get instant, accurate results. Here’s what you can do with it:",
       "points": [
-        "Quick Results: Instantly see how much you’ll get after 15 years.",
-        "Year-Wise Breakdown: Check balance growth each year with clarity.",
-        "Plan Deposits Better: Compare annual vs monthly contributions and see which suits you more.",
-        "Adjust Interest Rate: Simulate returns if the government changes the interest rate.",
-        "Goal Planning: Plan for retirement, child’s education, or buying a house with predictable savings.",
-        "Compare Options: See how PPF fares against FD, NPS, or SIP with real numbers.",
-        "Save Time & Effort: Avoid manual formulas and errors — the tool does it for you."
+        "Get Instant Answers: See exactly how much you’ll have after 15 years.",
+        "Track Your Growth: Check your year-by-year balance with total clarity.",
+        "Plan Your Deposits: Compare how annual vs. monthly contributions affect your final amount.",
+        "Handle Rate Changes: Easily simulate what happens if the government changes the interest rate.",
+        "Plan for Your Goals: Confidently plan for retirement, a child’s education, or buying a house.",
+        "Compare Your Options: See how PPF stacks up against an FD, NPS, or a mutual fund SIP with real numbers.",
+        "Save Time and Effort: Avoid complicated formulas and potential errors—our tool does the hard work for you."
       ],
-      "conclusion": "👉 A PPF calculator is not just a tool; it’s a financial planner that helps you make smarter decisions with confidence."
+      "conclusion": "👉 A PPF calculator isn’t just a tool; it’s a financial co-pilot that helps you make smarter decisions with your money."
     },
     "tax_benefits": {
-      "title": "Tax Benefits of a PPF Account (EEE Status)",
-      "intro": "The Public Provident Fund (PPF) is one of the few investment options in India that offers complete tax benefits at every stage. That’s why it is considered an EEE (Exempt–Exempt–Exempt) scheme.",
-      "contribution_title": "Exemption on Contribution (Invested Amount)",
-      "contribution_body": "You can claim up to ₹1.5 lakh each financial year under <a href='https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Section 80C of the Income Tax Act</a>. <br/>👉 Example: If your taxable income is ₹10 lakh and you invest ₹1.5 lakh in PPF, your taxable income reduces to ₹8.5 lakh.",
-      "interest_title": "Exemption on Interest Earned",
-      "interest_body": "The annual interest added to your PPF account is completely tax-free. Unlike bank FDs, you don’t pay tax on PPF interest.",
-      "maturity_title": "Exemption on Maturity Amount",
-      "maturity_body": "After 15 years, the entire maturity amount (principal + interest) is fully exempt from tax.",
-      "why_matters": "✨ Why this matters: PPF is among the safest, government-backed schemes where your investment, returns, and maturity are all tax-free — a rare advantage compared to most other options.",
-      "footer_note": "Read official PPF rules on the <a href='https://www.nsiindia.gov.in/ppf.aspx' target='_blank' rel='noopener noreferrer' class='underline'>National Savings Institute website</a> ✅"
+      "title": "Do You Get Tax Benefits on a PPF Account?",
+      "intro": "Yes! The Public Provident Fund (PPF) is one of the few investments in India offering the powerful EEE (Exempt-Exempt-Exempt) tax status. Here’s what that means for you:",
+      "contribution_title": "1. Tax Exemption When You Invest",
+      "contribution_body": "You can claim a deduction of up to ₹1.5 lakh each financial year under <a href='https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Section 80C of the Income Tax Act</a>. <br/>👉 <strong>Example:</strong> If your taxable income is ₹10 lakh and you invest ₹1.5 lakh in PPF, your taxable income drops to just ₹8.5 lakh.",
+      "interest_title": "2. Tax Exemption on Your Earnings",
+      "interest_body": "The annual interest added to your PPF account is completely tax-free. Unlike bank FDs, you don’t pay any tax on the interest your PPF account earns.",
+      "maturity_title": "3. Tax Exemption When You Withdraw",
+      "maturity_body": "After 15 years, the entire maturity amount you withdraw (your principal + all the interest earned) is fully exempt from tax.",
+      "why_matters": "✨ <strong>Why this matters to you:</strong> PPF is one of the safest, government-backed schemes where your investment, your returns, and your final payout are all completely tax-free—a rare and powerful advantage.",
+      "footer_note": "You can always verify the official PPF rules on the <a href='https://www.nsiindia.gov.in/ppf.aspx' target='_blank' rel='noopener noreferrer' class='underline'>National Savings Institute website</a> ✅"
     },
     "rules": {
-      "title": "PPF Rules 2025 — Deposit Limits, Lock-in & Withdrawals",
+      "title": "PPF Rules You Should Know in 2025",
       "points": [
-        "<strong>Maximum annual deposit:</strong> ₹1.5 lakh.",
-        "<strong>Minimum deposit:</strong> ₹500 p.a.",
-        "<strong>Lock-in:</strong> 15 years (extendable in blocks of 5 years).",
-        "<strong>Partial withdrawals:</strong> Allowed from the 7th financial year under specific rules.",
-        "<strong>Loan facility:</strong> Available from the 3rd year. (<a href='https://www.sbi.co.in/web/personal-banking/investments-deposits/govt-schemes/public-provident-fund' target='_blank' rel='noopener noreferrer' class='underline'>Learn more at SBI</a>)",
-        "<strong>Tax treatment:</strong> Contributions up to ₹1.5 lakh qualify under Section 80C and interest + maturity are tax-free (EEE). (<a href='https://www.hdfcbank.com/personal/save/accounts/public-provident-fund' target='_blank' rel='noopener noreferrer' class='underline'>See HDFC Bank details</a>)"
+        "<strong>Annual Deposit Limit:</strong> You can invest a maximum of ₹1.5 lakh and a minimum of ₹500 per year.",
+        "<strong>Lock-in Period:</strong> Your money is locked in for 15 years, but you can extend it in blocks of 5 years after that.",
+        "<strong>Partial Withdrawals:</strong> You can take out some money starting from the 7th financial year, subject to certain rules.",
+        "<strong>Loan Facility:</strong> Need funds? You can take a loan against your PPF balance from the 3rd year. (<a href='https://www.sbi.co.in/web/personal-banking/investments-deposits/govt-schemes/public-provident-fund' target='_blank' rel='noopener noreferrer' class='underline'>Learn more at SBI</a>)",
+        "<strong>Tax Status:</strong> Your contributions up to ₹1.5 lakh are deductible under Section 80C, and all interest and maturity proceeds are tax-free (EEE status). (<a href='https://www.hdfcbank.com/personal/save/accounts/public-provident-fund' target='_blank' rel='noopener noreferrer' class='underline'>See HDFC Bank details</a>)"
       ],
-      "footer_note": "Rates are verified quarterly by the Ministry of Finance, GoI. We automatically update the rate on this page."
+      "footer_note": "Rates are reviewed quarterly by the Ministry of Finance, GoI. We automatically update the rate on this page to reflect the latest changes."
     },
     "historical_rates": {
-      "title": "PPF Interest Rates Over the Last 10 Years",
-      "intro": "Here’s how PPF rates have fluctuated since 2015:",
+      "title": "PPF Interest Rates: A Look at the Last 10 Years",
+      "intro": "Curious how PPF rates have changed? Here’s a quick look back since 2015:",
       "table": {
         "headers": ["Time Period", "Interest Rate (%)"],
         "rows": [
@@ -166,25 +165,25 @@
         ]
       },
       "sources": "These rates are sourced from credible government and financial platforms like the <a href='https://www.nsiindia.gov.in/' target='_blank' rel='noopener noreferrer' class='underline'>National Savings Institute</a> and <a href='https://groww.in/p/ppf-interest-rate' target='_blank' rel='noopener noreferrer' class='underline'>Groww</a>.",
-      "insight": "Insight: In the past decade, rates gradually declined from around 8%–8.8% in 2012–2016, dipping to 7.1%—and have stayed stable at that level since 2020."
+      "insight": "<strong>What this tells you:</strong> In the past decade, rates have gradually declined from the 8%-8.8% range seen in 2012-2016, settling at a stable 7.1% since 2020."
     },
     "investment_strategy": {
-        "title": "Best PPF Investment Strategy for Maximum Returns",
-        "intro": "To maximize your interest earnings in a PPF account, timing is everything. Here are the top strategies:",
+        "title": "Your Best PPF Investment Strategy for Maximum Returns",
+        "intro": "Want to get the most interest out of your PPF account? Timing is key. Here are the top strategies you should follow:",
         "points": [
-            "<strong>Invest Before the 5th of the Month:</strong> The interest for any month is calculated on the lowest balance between the 5th and the last day. Depositing your money before the 5th ensures you earn interest for that entire month. Depositing after the 5th means you lose one month's interest on that amount.",
-            "<strong>Lump Sum vs. Monthly:</strong> If possible, depositing the full ₹1.5 lakh at the start of the financial year (before April 5th) maximizes your returns for the entire year. If not, stick to a monthly deposit before the 5th."
+            "<strong>Pro-Tip: Invest Before the 5th of the Month.</strong> Interest for any given month is calculated on the lowest balance recorded between the 5th and the last day. By depositing your money before the 5th, you ensure you earn interest for that entire month. If you deposit after the 5th, you lose out on a full month's interest for that amount.",
+            "<strong>Lump Sum vs. Monthly: Which is better for you?</strong> If you have the funds, depositing the full ₹1.5 lakh at the start of the financial year (before April 5th) will maximize your returns for the entire year. If a lump sum isn't possible, a monthly deposit made before the 5th of each month is the next best strategy."
         ]
     },
     "how_to_open": {
-        "title": "How to Open a PPF Account Online",
-        "intro": "Opening a PPF account is simple and can be done online through most major banks or at a Post Office. Here are the general steps:",
+        "title": "How Can You Open a PPF Account Online?",
+        "intro": "Opening a PPF account is simple and can be done online through most major banks or at a Post Office. Here are the steps you’ll generally follow:",
         "steps": [
-            "<strong>Choose Your Bank/Post Office:</strong> Decide where you want to open the account. Most nationalized banks (like SBI, HDFC, ICICI) and Post Offices offer this facility.",
-            "<strong>Fill the Application Form:</strong> Download the PPF Account Opening Form (Form A) from the bank's website or get it from a branch.",
-            "<strong>Submit KYC Documents:</strong> You'll need your PAN card, Aadhaar card (for address proof), and passport-sized photographs.",
-            "<strong>Make the Initial Deposit:</strong> You can start with as little as ₹500. You can pay this by cheque or online transfer.",
-            "<strong>Get Your Passbook:</strong> Once processed, you'll receive a passbook with your PPF account details."
+            "<strong>Choose Your Bank or Post Office:</strong> Decide where you want to open the account. Most nationalized banks (like SBI, HDFC, ICICI) and Post Offices offer this facility.",
+            "<strong>Fill Out the Application Form:</strong> You can download the PPF Account Opening Form (Form A) from your chosen bank's website or get a physical copy from a branch.",
+            "<strong>Submit Your KYC Documents:</strong> You will typically need your PAN card, Aadhaar card (for address and identity proof), and a few passport-sized photographs.",
+            "<strong>Make Your First Deposit:</strong> You can start with as little as ₹500. You can usually pay this by cheque, cash (at the branch), or an online transfer.",
+            "<strong>Receive Your Passbook:</strong> Once your application is processed, you'll receive a passbook containing all your PPF account details. Your account is now active!"
         ],
         "links": [
             { "text": "Open PPF with SBI", "href": "https://www.sbi.co.in/web/personal-banking/investments-deposits/govt-schemes/public-provident-fund" },
@@ -193,7 +192,7 @@
         ]
     },
     "comparison": {
-      "title": "PPF vs FD vs NPS vs SSY — Which is Better in 2025?",
+      "title": "PPF vs FD vs NPS vs SSY — Which is Better for You in 2025?",
       "table": {
         "headers": ["Feature", "PPF", "Fixed Deposit (FD)", "NPS", "Mutual Funds (ELSS)", "Sukanya Samriddhi (SSY)"],
         "rows": [
@@ -203,7 +202,7 @@
           ["Best For", "Long-term, secure, tax-free savings", "Short/medium-term needs", "Retirement planning", "Wealth creation", "Girl child's future"]
         ]
       },
-      "footer_note": "Explore our <a href='/{lang}/fd-vs-ppf-calculator' class='underline'>FD vs PPF Calculator</a>, <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a>, and <a href='/{lang}/ssy-calculator' class='underline'>SSY Calculator</a> to compare returns and make informed decisions."
+      "footer_note": "<strong>What's Next?</strong> Explore our <a href='/{lang}/fd-vs-ppf-calculator' class='underline'>FD vs PPF Calculator</a>, <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a>, and <a href='/{lang}/ssy-calculator' class='underline'>SSY Calculator</a> to compare returns and make informed decisions."
     },
     "faq_title": "Frequently Asked Questions",
     "faqs": [
@@ -257,42 +256,42 @@
     "amount_in_lakhs": "Amount (in Lakhs)",
     "what_is_ssy": {
       "title": "What is Sukanya Samriddhi Yojana (SSY)?",
-      "body": "<strong>Sukanya Samriddhi Yojana (SSY)</strong> is a government-backed savings scheme for a girl child’s future (education & marriage). Launched under <em>Beti Bachao, Beti Padhao</em>, SSY offers guaranteed returns and tax benefits.",
+      "body": "<strong>Sukanya Samriddhi Yojana (SSY)</strong> is a government-backed savings scheme designed to help you secure your daughter's future financially. Launched as part of the <em>Beti Bachao, Beti Padhao</em> initiative, SSY offers a high, guaranteed rate of return and significant tax benefits, making it one of the best ways to save for her education and marriage expenses.",
       "quick_facts": {
-        "title": "Quick facts (SSY at a glance):",
+        "title": "Here are the key facts you should know:",
         "points": [
-          "<strong>Interest rate (2025):</strong> <strong>8.2%</strong> (subject to quarterly govt revision).",
-          "<strong>Minimum deposit:</strong> ₹250 per year.",
-          "<strong>Maximum deposit:</strong> ₹1.5 lakh per year.",
-          "<strong>Deposit period:</strong> 15 years from account opening.",
-          "<strong>Maturity:</strong> 21 years from account opening.",
-          "<strong>Eligibility:</strong> Girl child below 10 years of age (max 2 accounts/family).",
-          "<strong>Tax:</strong> EEE — contributions, interest and maturity are tax-free (Section 80C)."
+          "<strong>Current Interest Rate (2025):</strong> An attractive <strong>8.2%</strong> per year (this is reviewed quarterly by the government).",
+          "<strong>Minimum Deposit:</strong> You can start with as little as ₹250 per year.",
+          "<strong>Maximum Deposit:</strong> You can deposit up to ₹1.5 lakh per year.",
+          "<strong>Deposit Period:</strong> You only need to make deposits for the first 15 years after opening the account.",
+          "<strong>Maturity Period:</strong> The account matures 21 years after it's opened.",
+          "<strong>Who is Eligible?:</strong> You can open an account for a girl child who is below 10 years of age (a maximum of two accounts per family is allowed).",
+          "<strong>Tax Benefits:</strong> It's a fully tax-exempt (EEE) scheme. Your contributions, the interest earned, and the final maturity amount are all completely tax-free."
         ]
       }
     },
     "how_it_works": {
-      "title": "How SSY interest is calculated (formula & example)"
+      "title": "How is the Interest on Your SSY Account Calculated?"
     },
     "example": {
-      "formula_title": "The Formula",
-      "intro": "Because SSY compounds <strong>annually</strong>, we use `n = 1`. For regular annual deposits, each deposit earns interest for the remaining years until maturity.",
+      "formula_title": "The Formula We Use",
+      "intro": "Since SSY interest is compounded <strong>annually</strong>, we use the standard future value formula: `A = P × (1 + r/n)^(n × t)`. For regular annual deposits, the calculation becomes a future value of an annuity, where each deposit earns interest for the remaining years until maturity.",
       "formula": "A = P × (1 + r/n)^(n × t)",
       "scenario": {
-        "title": "Example (exact calculation)",
-        "body": "<strong>Scenario:</strong> You deposit <strong>₹1,50,000 per year</strong> for <strong>15 years</strong> (maximum yearly contribution). The account matures in <strong>21 years</strong>. The SSY interest rate = <strong>8.2%</strong> (0.082).",
+        "title": "Let's See a Worked Example",
+        "body": "<strong>Imagine this scenario:</strong> You decide to deposit <strong>₹1,50,000 every year</strong> (the maximum allowed) for the full <strong>15-year deposit period</strong>. The account will mature in <strong>21 years</strong>, and we'll assume the current SSY interest rate of <strong>8.2%</strong>.",
         "points": [
-          "Principal per year: `P = 150,000`",
-          "Annual rate: `r = 0.082`",
-          "Total years to maturity: `T = 21`",
-          "Number of annual deposits: `N = 15`"
+          "Your annual principal (P): `150,000`",
+          "Annual interest rate (r): `0.082`",
+          "Total years to maturity (T): `21`",
+          "Number of deposits (N): `15`"
         ],
-        "result": "<strong>Maturity value ≈ ₹7,182,119.17</strong> <br/> <strong>Total invested = ₹2,250,000</strong> <br/> <strong>Total interest earned ≈ ₹4,932,119.17</strong>"
+        "result": "<strong>Your Estimated Maturity Value ≈ ₹71.82 Lakh</strong> <br/> <strong>Your Total Investment = ₹22.50 Lakh</strong> <br/> <strong>Your Total Interest Earned ≈ ₹49.32 Lakh</strong>"
       },
-      "snapshot_title": "Snapshot (selected years):",
-      "timing_note": "<strong>Note on timing:</strong> Our monthly-mode uses an approximation for monthly deposits and then applies annual compounding to match official rules. Because SSY officially compounds annually, a lump-sum deposit at the start of the financial year (before April 5th) gives the best results. Choose ‘Monthly’ only if you deposit monthly.",
-      "monthly_deposit_example_title": "Monthly Deposit Example",
-      "monthly_deposit_example_body": "If you deposit ₹12,500 monthly, the calculator approximates the future value at the end of the 15-year deposit period (≈₹50.21 lakh) and then compounds it annually for the remaining 6 years. This results in a final maturity of around <strong>₹71.6–71.8 lakh</strong>, very close to the lump-sum best case.",
+      "snapshot_title": "Your Growth Over Time (Snapshot):",
+      "timing_note": "<strong>A quick note on timing:</strong> The calculator assumes your deposits are made at the start of each year. Because SSY interest is compounded annually, making a lump-sum deposit at the beginning of the financial year (before April 5th) will give you the best possible returns. If you prefer to deposit monthly, our tool uses an approximation to estimate your final returns.",
+      "monthly_deposit_example_title": "What if You Deposit Monthly?",
+      "monthly_deposit_example_body": "If you deposit ₹12,500 every month, our calculator first estimates the future value after the 15-year deposit period (around ₹50.21 lakh) and then compounds that amount annually for the remaining 6 years. This results in a final maturity value of approximately <strong>₹71.6–71.8 lakh</strong>, which is very close to the outcome of a lump-sum investment.",
       "table": {
         "headers": ["Year", "Balance (end of year)"],
         "rows": [
@@ -303,10 +302,10 @@
           ["21", "₹71,82,119.17"]
         ]
       },
-      "footer_note": "This is an illustrative projection. Actual returns depend on quarterly government rate revisions."
+      "footer_note": "This is an illustrative projection. Your actual returns will depend on the quarterly interest rate revisions by the government."
     },
     "comparison": {
-      "title": "SSY vs PPF vs FD vs NPS — quick comparison (2025)",
+      "title": "How Does SSY Compare to Other Schemes?",
       "table": {
         "headers": ["Feature", "SSY", "PPF", "Fixed Deposit (FD)", "NPS"],
         "rows": [
@@ -319,50 +318,50 @@
       }
     },
     "investment_strategy": {
-      "title": "Best SSY investment strategy (practical tips)",
-      "monthly_example": "<strong>Monthly-mode example (approximation):</strong><br/>Monthly deposit (PMT) = ₹12,500 (₹1,50,000/year)<br/>Annual rate r = 8.2% → monthly rate = r/12 ≈ 0.0068333333<br/>Number of months (for 15 years) = 180<br/>Using the annuity formula <strong>FV ≈ PMT × [ ((1 + r/12)^n - 1) / (r/12) ]</strong>, the value after 15 years is ≈ ₹50.21 lakh. Our calculator then compounds this annually to maturity, resulting in ≈ ₹71.8 lakh. Because SSY officially compounds annually, this is an approximation—choose ‘Monthly’ only if you deposit monthly.",
+      "title": "Your Best SSY Investment Strategy: Practical Tips",
+      "monthly_example": "<strong>Monthly Deposit Example:</strong><br/>If you deposit ₹12,500 monthly, the calculator approximates the future value at the end of the 15-year deposit period (≈₹50.21 lakh) and then compounds it annually for the remaining 6 years. This results in a final maturity of around <strong>₹71.6–71.8 lakh</strong>, very close to the lump-sum best case.",
       "points": [
-        "<strong>Deposit before the 5th of the month</strong> — deposits before the 5th are eligible for interest for that month.",
-        "<strong>If possible, deposit lump sum early in the financial year</strong> — a full ₹1.5 lakh early in April maximizes the year’s interest.",
-        "<strong>Prefer monthly system if lumpsum is not possible</strong> — deposit monthly amounts early in the month.",
-        "<strong>Avoid missed years</strong> — minimum ₹250 per year to keep account active; revival requires payment + penalty.",
-        "<strong>Keep documents handy</strong> — PAN, Aadhaar for KYC and faster online account opening."
+        "<strong>Pro-Tip: Deposit before the 5th of the month.</strong> Interest is calculated on the lowest balance between the 5th and the end of the month, so depositing early ensures you earn interest for that entire month.",
+        "<strong>If you can, deposit a lump sum at the start of the financial year.</strong> A full ₹1.5 lakh deposit before April 5th maximizes your interest earnings for the whole year.",
+        "<strong>If a lump sum isn't feasible, a monthly deposit is still great.</strong> Just try to make your deposit early in the month.",
+        "<strong>Don't miss a year.</strong> You need to deposit a minimum of ₹250 each year to keep the account active. Reviving an inactive account requires paying the missed deposits plus a penalty.",
+        "<strong>Keep your documents handy.</strong> Having your PAN and Aadhaar ready will make the online account opening process much faster."
       ]
     },
     "tax_benefits": {
-      "title": "Tax Benefits of SSY (EEE Status)",
-      "intro": "Like PPF, the Sukanya Samriddhi Yojana (SSY) is an EEE (Exempt-Exempt-Exempt) investment.",
-      "body": "This means your contributions (up to ₹1.5 lakh per year under Section 80C), the interest you earn, and the final maturity amount are all <strong>completely tax-free</strong>. It's one of the most tax-efficient ways to save for a girl child's future. For more details on Section 80C, refer to the <a href='https://incometaxindia.gov.in/Pages/acts/income-tax-act.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Income Tax Act</a>."
+        "title": "Are There Tax Benefits with SSY?",
+        "intro": "Absolutely. Just like PPF, the Sukanya Samriddhi Yojana (SSY) enjoys an EEE (Exempt-Exempt-Exempt) status.",
+        "body": "This means your contributions (up to ₹1.5 lakh per year under Section 80C), the interest you earn, and the final maturity amount are all <strong>completely tax-free</strong>. This makes it one of the most tax-efficient ways to save for your daughter's future. For more details on Section 80C, you can refer to the <a href='https://incometaxindia.gov.in/Pages/acts/income-tax-act.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Income Tax Act</a>."
     },
     "rules": {
-      "title": "SSY Rules: Withdrawals, Revival & Nomination",
-      "withdrawal_title": "Partial Withdrawal Rules",
-      "withdrawal_body": "Partial withdrawal is allowed only after the girl child turns 18 or has passed the 10th standard, whichever is earlier. The withdrawal is limited to 50% of the balance available at the end of the preceding financial year and can only be used for higher education or marriage expenses.",
-      "withdrawal_example": "<strong>Partial Withdrawal Example:</strong> If the account balance at the end of Year 17 is ₹40 lakh, you can withdraw up to 50% of this amount (₹20 lakh) for educational purposes in Year 18. Always check the exact calculation with your bank/Post Office when initiating withdrawal.",
-      "revival_title": "How to Revive an Inactive SSY Account",
-      "revival_intro": "If you miss the minimum annual deposit of ₹250, the account becomes inactive. To revive it:",
-      "revival_steps": [
-        "Visit your bank or Post Office branch where the account is held.",
-        "Submit a revival request letter.",
-        "Pay the minimum deposit for each missed year (e.g., ₹500 for 2 missed years).",
-        "Pay the penalty of ₹50 for each year of inactivity."
-      ],
-      "nomination_title": "Nomination and Succession",
-      "nomination_body": "While the girl child is the beneficiary, the parent/guardian operates the account. In the unfortunate event of the depositor's (parent/guardian's) death, the account can be continued by the other parent or a new legal guardian. If not possible, the account is typically closed, and the balance with interest is paid to the girl child's nominee or legal heir."
+        "title": "Key SSY Rules You Should Know",
+        "withdrawal_title": "When Can You Make a Partial Withdrawal?",
+        "withdrawal_body": "You can withdraw funds from the account only after your daughter turns 18 or has passed her 10th standard board exams, whichever comes first. The withdrawal is limited to 50% of the balance from the previous financial year and can only be used for her higher education or marriage expenses.",
+        "withdrawal_example": "<strong>Here’s an example:</strong> If the account balance at the end of the 17th year is ₹40 lakh, you can withdraw up to 50% of this amount (₹20 lakh) for her education in the 18th year. Always confirm the exact amount with your bank or Post Office before you initiate a withdrawal.",
+        "revival_title": "How Do You Revive an Inactive SSY Account?",
+        "revival_intro": "If you forget to deposit the minimum amount of ₹250 in a year, the account becomes inactive. Don't worry, you can revive it easily:",
+        "revival_steps": [
+            "Visit the bank or Post Office branch where the account is held.",
+            "Submit a simple revival request letter.",
+            "Pay the minimum deposit for each year you missed (e.g., ₹500 for 2 missed years).",
+            "Pay a small penalty of ₹50 for each inactive year."
+        ],
+        "nomination_title": "What About Nomination and Succession?",
+        "nomination_body": "While your daughter is the beneficiary, you as the parent or guardian operate the account. In the unfortunate event of your death, the account can be continued by the other parent or a new legal guardian. If that's not possible, the account is typically closed, and the entire balance, including interest, is paid to the nominee or legal heir."
     },
     "how_to_open": {
-      "title": "How to open an SSY account & documents needed",
-      "intro": "You can open SSY at <strong>Post Office</strong> or selected <strong>banks</strong> (SBI, HDFC, ICICI). Typical steps:",
+      "title": "How to Open an SSY Account & What Documents You'll Need",
+      "intro": "You can open an SSY account at any <strong>Post Office</strong> or at designated branches of major <strong>banks</strong> like SBI, HDFC, and ICICI. Here are the typical steps:",
       "steps": [
-        "Choose Post Office or bank.",
-        "Fill SSY account opening form (available online/branch).",
-        "Provide <strong>PAN</strong>, <strong>Aadhaar</strong>, birth proof of girl child, passport photo, parent’s ID.",
-        "Make initial deposit (min ₹250).",
-        "Collect passbook/acknowledgement."
+        "Choose your preferred Post Office or bank.",
+        "Fill out the SSY account opening form, which is available online or at the branch.",
+        "Submit your KYC documents: <strong>PAN card</strong>, <strong>Aadhaar card</strong>, the girl child's birth certificate, and your passport-sized photographs.",
+        "Make your initial deposit (the minimum is just ₹250).",
+        "Collect your passbook or an acknowledgement slip. Your account is now active!"
       ]
     },
     "historical_rates": {
-      "title": "SSY interest rates — last 10 years (short table)",
+      "title": "A Quick Look at SSY Interest Rates Over the Years",
       "table": {
         "headers": ["Period", "Interest Rate (%)"],
         "rows": [
@@ -376,32 +375,32 @@
     "faq_title": "Frequently Asked Questions (FAQ)",
     "faqs": [
       {
-        "question": "How much will ₹10,000 per month in SSY become in 21 years?",
-        "answer": "Assuming an 8.2% annual interest rate, a monthly deposit of ₹10,000 (₹1.2 lakh/year) for 15 years will result in a maturity amount of approximately ₹57.45 lakh after 21 years. You can use our SSY calculator to get an exact year-wise projection for your specific amount."
+        "question": "If I deposit ₹10,000 per month in SSY, how much will I get in 21 years?",
+        "answer": "Assuming the current 8.2% annual interest rate, a monthly deposit of ₹10,000 (which is ₹1.2 lakh per year) for 15 years will grow to a maturity amount of approximately ₹57.45 lakh after 21 years. You can use our SSY calculator to get an exact year-wise projection for your specific investment amount."
       },
       {
-        "question": "How does depositing on the 5th vs 6th affect SSY interest?",
-        "answer": "Interest is calculated on the lowest balance between the 5th and the end of the month. Depositing before the 5th ensures your money earns interest for that entire month. If you deposit after, you lose interest for that month on that specific deposit."
+        "question": "How does depositing on the 5th vs. the 6th affect my SSY interest?",
+        "answer": "Interest for any month is calculated on the lowest balance recorded between the 5th and the last day of that month. By depositing before the 5th, you ensure your money earns interest for that entire month. If you deposit after the 5th, you lose out on one month's interest for that specific deposit."
       },
       {
-        "question": "How to revive an SSY account — step by step?",
-        "answer": "If you miss the minimum ₹250 deposit, your account becomes inactive. To revive it, visit your bank/Post Office, fill the revival form, and pay the total missed deposits (₹250 per year) plus a small penalty for each missed year. Your account will become active again."
+        "question": "What are the step-by-step instructions to revive an SSY account?",
+        "answer": "If you miss the minimum ₹250 deposit, your account will become inactive. To revive it, simply visit your bank or Post Office, fill out the revival form, and pay the total missed deposits (e.g., ₹250 for each missed year) along with a small penalty for each year. Your account will be active again."
       },
       {
-        "question": "What are the nomination and transfer rules?",
-        "answer": "You can nominate a beneficiary for the SSY account. The account can also be transferred from one bank/Post Office to another anywhere in India if the family relocates."
+        "question": "What are the rules for nomination and transferring the account?",
+        "answer": "You can nominate a beneficiary for the SSY account at the time of opening. The account can also be transferred from one bank or Post Office to another anywhere in India if your family relocates."
       },
       {
-        "question": "What happens if the parent/guardian dies?",
-        "answer": "In the unfortunate event of the depositor's (parent/guardian's) death, the account can be continued by the other parent or a new legal guardian. If not possible, the account is typically closed, and the balance with interest is paid to the girl child's nominee or legal heir."
+        "question": "What happens if the parent or guardian passes away?",
+        "answer": "In the unfortunate event of the depositor's (parent/guardian's) death, the account can be continued by the other parent or a new legal guardian. If this isn't possible, the account is typically closed, and the full balance with interest is paid to the girl child's nominee or legal heir."
       },
-      { "question": "What is the current SSY interest rate for 2025?", "answer": "The SSY interest rate for Apr–Jun 2025 is <strong>8.2%</strong> (set quarterly by the Government of India)." },
-      { "question": "How is SSY interest calculated?", "answer": "SSY compounds annually. For regular annual deposits, calculate each year’s deposit growth until maturity and sum them. Use A = P(1+r)^(years). Our calculator does this automatically for you." },
-      { "question": "What is the minimum and maximum deposit in SSY?", "answer": "Minimum deposit is <strong>₹250 per year</strong> and maximum deposit is <strong>₹1.5 lakh per year</strong>." },
-      { "question": "When can I withdraw from SSY?", "answer": "Partial withdrawal is permitted after the girl turns 18 for higher education; the account matures at 21 years from opening." }
+      { "question": "What is the current SSY interest rate for 2025?", "answer": "The SSY interest rate for the April–June 2025 quarter is <strong>8.2%</strong>. This rate is set by the Government of India and is subject to quarterly revisions." },
+      { "question": "How is the interest in an SSY account calculated?", "answer": "SSY interest is compounded annually. Our calculator uses this annual compounding rule to project the future value of your regular deposits over the full 21-year maturity period." },
+      { "question": "What is the minimum and maximum amount I can deposit in SSY?", "answer": "You can deposit a minimum of <strong>₹250 per year</strong> and a maximum of <strong>₹1.5 lakh per year</strong>." },
+      { "question": "When can my daughter withdraw money from the SSY account?", "answer": "A partial withdrawal is allowed for her higher education after she turns 18. The full amount can be withdrawn when the account matures at 21 years from the date of opening." }
     ],
     "conclusion": {
-      "title": "Conclusion: Is SSY the Right Choice for Your Daughter?",
+      "title": "Final Thoughts: Is SSY the Right Choice for Your Daughter?",
       "body": "Sukanya Samriddhi Yojana stands out as one of India's best savings schemes for a girl child. Its combination of a high, government-guaranteed interest rate and complete tax exemption (EEE status) makes it a powerful tool for building a substantial fund for your daughter's education and marriage. By planning your investments with our SSY Calculator, you can confidently secure her financial future."
     }
   },
@@ -448,23 +447,23 @@
     "age_label": "Age",
     "amount_in_lakhs": "Amount (in Lakhs)",
     "what_is_nps": {
-      "title": "What is NPS (National Pension System)?",
-      "body": "NPS is a government-regulated retirement pension scheme for Indian citizens (and NRIs in certain cases) run under the <a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA</a>. It’s a disciplined, market-linked retirement instrument offering investment via equity, corporate bonds, and government securities. You can choose your asset allocation or opt for an auto-choice strategy.",
+      "title": "What is the National Pension System (NPS)?",
+      "body": "The National Pension System (NPS) is a retirement savings scheme regulated by the Indian government through the <a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA</a>. It’s designed to help you build a substantial retirement fund through disciplined, market-linked investments. You can choose how your money is invested across equities, corporate bonds, and government securities, or you can opt for an auto-choice strategy that adjusts your risk based on your age.",
       "points": [
         {
-          "title": "Tier I (Retirement Savings)",
-          "body": "Your primary retirement account with tax benefits and withdrawal restrictions until age 60."
+          "title": "Tier I (Your Retirement Account)",
+          "body": "This is your main retirement account. It comes with great tax benefits but has restrictions on withdrawals until you reach age 60."
         },
         {
-          "title": "Tier II (Optional Account)",
-          "body": "A flexible, voluntary savings account with no lock-in, but also no extra tax benefit."
+          "title": "Tier II (Your Flexible Savings Account)",
+          "body": "This is an optional, voluntary savings account. It has no lock-in period, so you can withdraw your funds anytime, but it doesn't offer the same tax benefits as Tier I."
         }
       ],
-      "footer": "It combines tax savings, market-based returns, and disciplined investment to build a substantial retirement fund."
+      "footer": "In short, NPS combines tax savings, market-based growth potential, and a disciplined investment approach to help you secure your future."
     },
     "how_it_works": {
-      "title": "How the NPS Calculator Works (Formula & Example)",
-      "formula_title": "Formulas Used",
+      "title": "How Does the NPS Calculator Work?",
+      "formula_title": "The Formulas We Use",
       "annual": {
         "title": "For annual contributions, the calculator uses the future value of a series formula:",
         "formula": "FV = P × [ ((1 + r)^t − 1) / r ]"
@@ -475,54 +474,54 @@
       }
     },
     "example": {
-      "title": "How to Calculate NPS Returns (Step-by-Step Example)",
-      "intro": "Let's assume the following scenario to see how the corpus is calculated with annual contributions:",
+      "title": "Let's See a Step-by-Step Example",
+      "intro": "Imagine you're planning your retirement with the following details:",
       "assumptions": [
-        "You contribute <strong>₹6,000 per month</strong>, which is <strong>₹72,000 per year</strong>.",
-        "Expected average return (blend of equity + debt): <strong>9% p.a.</strong>",
-        "Contribution period: <strong>30 years</strong> (from age 30 to 60)."
+        "You contribute <strong>₹6,000 every month</strong>, which adds up to <strong>₹72,000 per year</strong>.",
+        "You expect an average return of <strong>9% per year</strong> from a mix of equity and debt.",
+        "You plan to invest for <strong>30 years</strong> (from age 30 to 60)."
       ],
-      "calculation_steps": "<ul><li><strong>Annual contribution (P):</strong> ₹72,000</li><li><strong>Annual rate (r):</strong> 0.09</li><li><strong>Years (t):</strong> 30</li></ul><p class='mt-2'>Applying the formula <strong>FV = P × [((1 + r)^t - 1) / r]</strong>:</p><ol class='list-decimal pl-5 space-y-1 mt-2'><li>Compute (1 + r)^t = (1.09)^30 ≈ 13.27</li><li>Subtract 1: 13.27 - 1 = 12.27</li><li>Divide by r: 12.27 / 0.09 ≈ 136.33</li><li>Multiply by P: 72,000 × 136.33 ≈ ₹9,816,000</li></ol>",
-      "result": "<strong>Estimated Corpus at Retirement ≈ ₹98.2 Lakh</strong>",
-      "annuity_intro": "From this corpus, you can calculate your monthly pension:",
-      "annuity_result": "Withdrawable Lump Sum (60%) ≈ ₹58.9 lakh<br/>Amount for Annuity (40%) ≈ ₹39.3 lakh<br/>If you purchase an annuity with a 6% payout rate, your <strong>monthly pension would be ≈ ₹19,650</strong>.",
-      "disclaimer": "These numbers are for illustration. Real-world returns vary and annuity rates change. Always check live annuity quotes from providers before committing."
+      "calculation_steps": "<ul><li><strong>Annual contribution (P):</strong> ₹72,000</li><li><strong>Annual rate (r):</strong> 0.09</li><li><strong>Years (t):</strong> 30</li></ul><p class='mt-2'>Using the formula <strong>FV = P × [((1 + r)^t - 1) / r]</strong>:</p><ol class='list-decimal pl-5 space-y-1 mt-2'><li>First, we calculate (1 + r)^t, which is (1.09)^30 ≈ 13.27</li><li>Next, we subtract 1: 13.27 - 1 = 12.27</li><li>Then, we divide by r: 12.27 / 0.09 ≈ 136.33</li><li>Finally, we multiply by your annual contribution: 72,000 × 136.33 ≈ ₹98,16,000</li></ol>",
+      "result": "<strong>Your Estimated Corpus at Retirement will be ≈ ₹98.2 Lakh</strong>",
+      "annuity_intro": "From this corpus, you can calculate your expected monthly pension:",
+      "annuity_result": "Withdrawable Lump Sum (60%) ≈ ₹58.9 lakh<br/>Amount for Annuity (40%) ≈ ₹39.3 lakh<br/>If you use this annuity amount to buy a plan with a 6% payout rate, your <strong>expected monthly pension would be ≈ ₹19,650</strong>.",
+      "disclaimer": "Remember, these numbers are for illustration. Real-world returns can vary, and annuity rates change over time. It's always a good idea to check live annuity quotes from providers before making a decision."
     },
     "tax_benefits": {
-      "title": "NPS Tax Benefits 2025: Section 80C & 80CCD(1B)",
-      "intro": "NPS offers some of the best tax-saving opportunities for retirement planning:",
+      "title": "What Are the NPS Tax Benefits for You in 2025?",
+      "intro": "NPS offers some of the best tax-saving opportunities for retirement planning in India. Here’s how you can benefit:",
       "points": [
-        "<strong>Section 80C:</strong> Up to ₹1.5 lakh deduction for your contributions.",
-        "<strong>Section 80CCD(1B):</strong> An additional deduction of up to ₹50,000, over and above the 80C limit.",
-        "<strong>Employer Contributions:</strong> Your employer's contribution (up to 10% of basic salary) is also deductible under Section 80CCD(2). Source: <a href='https://incometaxindia.gov.in/Pages/tools/deduction-under-section-80c.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Income Tax Department</a>."
+        "<strong>Section 80C:</strong> You can claim a deduction of up to ₹1.5 lakh for your contributions.",
+        "<strong>Section 80CCD(1B):</strong> This is a special benefit for NPS. You get an additional deduction of up to ₹50,000, over and above the 80C limit.",
+        "<strong>Employer Contributions:</strong> If your employer contributes to your NPS account, you can claim a deduction for that amount as well (up to 10% of your basic salary) under Section 80CCD(2). You can verify these details on the <a href='https://incometaxindia.gov.in/Pages/tools/deduction-under-section-80c.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Income Tax Department's website</a>."
       ]
     },
     "rules": {
-      "title": "NPS Tier I vs Tier II — Rules & Differences",
-      "intro": "It's important to understand the NPS Tier 1 vs Tier 2 differences:",
+      "title": "NPS Tier I vs. Tier II: What's the Difference?",
+      "intro": "It's important to understand the two types of NPS accounts:",
       "tier1": {
-        "title": "Tier I (Retirement Account)",
+        "title": "Tier I (Your Main Retirement Account)",
         "points": [
-          "Minimum contribution: ₹500-₹1000 per year, depending on the provider.",
-          "At retirement (age 60), 60% can be withdrawn tax-free.",
-          "Minimum 40% must be used to buy an annuity for pension."
+          "This account is for long-term retirement savings and comes with tax benefits.",
+          "At retirement (age 60), you can withdraw up to 60% of the corpus tax-free.",
+          "The remaining 40% must be used to buy an annuity plan, which will provide you with a regular pension."
         ]
       },
       "tier2": {
-        "title": "Tier II (Optional Account)",
+        "title": "Tier II (Your Optional, Flexible Account)",
         "points": [
-          "No lock-in period, funds can be withdrawn anytime.",
-          "No special tax benefits on contributions.",
-          "Functions like a flexible investment account."
+          "This is a voluntary savings account with no lock-in period, so you can withdraw your funds anytime.",
+          "It doesn't offer any special tax benefits on your contributions.",
+          "Think of it as a flexible investment account that you can use alongside your main retirement savings."
         ]
       },
       "withdrawal": {
-        "title": "Partial Withdrawals",
-        "body": "Allowed after a minimum period (usually 3 years) for specified reasons like education, medical emergencies, or house purchase, subject to conditions."
+        "title": "Can You Make Partial Withdrawals?",
+        "body": "Yes, partial withdrawals from the Tier I account are allowed after a minimum of 3 years for specific reasons like higher education, medical emergencies, or buying a house, subject to certain conditions."
       }
     },
     "comparison": {
-      "title": "NPS vs PPF: Which is Better for Retirement?",
+      "title": "NPS vs. PPF: Which is Better for Your Retirement?",
       "table": {
         "headers": ["Feature", "NPS", "PPF", "Fixed Deposit (FD)", "Mutual Funds (ELSS)"],
         "rows": [
@@ -532,25 +531,25 @@
           ["Best For", "Retirement & pension", "Risk-averse long term", "Short/medium goals", "Wealth creation"]
         ]
       },
-      "footer_note": "Explore our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> and <a href='/{lang}/fd-vs-ppf-calculator' class='underline'>FD vs PPF Calculator</a> to compare returns."
+      "footer_note": "<strong>What's Next?</strong> Explore our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> and <a href='/{lang}/fd-vs-ppf-calculator' class='underline'>FD vs PPF Calculator</a> to compare returns and make an informed decision for your portfolio."
     },
     "faq_title": "Frequently Asked Questions about NPS",
     "faqs": [
       {
-        "question": "What is the NPS calculator?",
-        "answer": "An online tool that estimates your retirement corpus and potential monthly pension based on your contributions, expected returns and years to retirement."
+        "question": "What exactly is the NPS calculator?",
+        "answer": "It's an online tool that helps you estimate your retirement corpus and potential monthly pension based on your contributions, expected returns, and your investment timeline."
       },
       {
-        "question": "How is NPS corpus calculated?",
-        "answer": "By compounding your periodic contributions at an expected annual return rate until retirement. For annual contributions, the formula is FV = P × [((1 + r)^t - 1) / r]."
+        "question": "How is the NPS corpus calculated?",
+        "answer": "It's calculated by compounding your regular contributions at an expected annual rate of return until you retire. For annual contributions, the formula used is FV = P × [((1 + r)^t - 1) / r]."
       },
       {
-        "question": "How much pension will I get from my NPS corpus?",
-        "answer": "Your pension depends on how much of your corpus you annuitize and the prevailing annuity rate. For example, a ₹39.3 lakh annuity at a 6% rate can yield roughly ₹19,650 per month."
+        "question": "How much pension will I actually get from my NPS corpus?",
+        "answer": "Your pension depends on how much of your corpus you use to buy an annuity and the prevailing annuity rate at that time. For example, a ₹39.3 lakh annuity at a 6% rate could yield roughly ₹19,650 per month."
       },
       {
-        "question": "What tax benefits does NPS offer for 2025?",
-        "answer": "NPS provides tax deductions under Section 80C (up to ₹1.5 lakh) and an additional exclusive deduction of ₹50,000 under Section 80CCD(1B). Employer contributions are also deductible under Section 80CCD(2). Source: <a href='https://incometaxindia.gov.in/Pages/tools/deduction-under-section-80c.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Income Tax Act</a>."
+        "question": "What are the tax benefits of NPS for 2025?",
+        "answer": "NPS offers tax deductions under Section 80C (up to ₹1.5 lakh) and an additional, exclusive deduction of ₹50,000 under Section 80CCD(1B). Employer contributions are also deductible under Section 80CCD(2), as per the <a href='https://incometaxindia.gov.in/Pages/tools/deduction-under-section-80c.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Income Tax Act</a>."
       },
       {
         "question": "Can NRIs invest in NPS?",
@@ -558,7 +557,7 @@
       }
     ],
     "conclusion": {
-      "title": "Conclusion: Is NPS the Right Choice for Your Retirement?",
+      "title": "Final Thoughts: Is NPS the Right Choice for Your Retirement?",
       "body": "The National Pension System is a powerful, tax-efficient tool specifically designed for long-term retirement planning. Its blend of equity and debt options allows for potentially higher returns than traditional fixed-income products, while its disciplined structure ensures you stay on track. Use this NPS pension calculator to model different scenarios and see how it can form the cornerstone of your retirement strategy."
     }
   },
@@ -1144,7 +1143,7 @@
     "results_placeholder": "Search functionality is coming soon."
   },
   "author_card": {
-    "bio": "Mahesh Chaube, CFP is a Certified Financial Planner with extensive experience helping Indian families build tax-efficient retirement and education plans. Mahesh specialises in retirement strategy, tax-optimised fixed-income planning and practical financial tools (calculators, worksheets) that simplify decision-making for everyday investors. He has advised over 500 Indian families and collaborates with leading fintech platforms on data-driven personal finance solutions.",
+    "bio": "Mahesh Chaube is a Certified Financial Planner (CFP) with extensive experience helping Indian families build tax-efficient retirement and education plans. Mahesh specializes in retirement strategy, tax-optimized fixed-income planning, and practical financial tools that simplify decision-making for everyday investors. He has advised over 500 Indian families and collaborates with leading fintech platforms on data-driven personal finance solutions.",
     "author_page_link": "View all articles",
     "review_text": "<strong>Reviewed & Verified by Experts:</strong> Laveena Vijayi, Senior Financial Research Analyst — BharatSaver Editorial Team. All data cross-checked against PFRDA, CBDT, and Income Tax Department official calculators."
   },
