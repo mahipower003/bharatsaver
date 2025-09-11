@@ -915,11 +915,11 @@
     },
     "sensitivity_analysis": {
       "title": "Sensitivity Analysis: How Assumptions Change Your Goal",
-      "body": "Small changes in your assumptions can have a huge impact on your final corpus. This table shows how your required corpus and SIP change with slight adjustments to inflation and return rates.",
-      "sip_plans": {
-        "title": "Sample SIP Plans to Reach Your Goal",
-        "body": "This table shows the approximate monthly SIP required to reach common retirement corpus goals from different starting ages, assuming a 12% annual return."
-      }
+      "body": "This table shows how your required corpus and SIP change with slight adjustments to inflation and return rates."
+    },
+    "sip_plans": {
+      "title": "Sample SIP Plans to Reach Your Goal",
+      "body": "This table shows the approximate monthly SIP required to reach common retirement corpus goals from different starting ages, assuming a 12% annual return."
     },
     "accumulation_strategy": {
       "h2": "SIP vs Lump Sum vs Step-up SIP (best strategies)",
@@ -969,15 +969,11 @@
     "assumptions": {
       "title": "Default assumptions & why we chose them",
       "body": "<p>This calculator uses standard financial formulas and default assumptions based on long-term Indian market data. You can adjust these inputs to match your expectations.</p><ul><li><strong>Inflation: 6% p.a.</strong> - This is a conservative long-term average for India.</li><li><strong>Pre-retirement returns: 12% p.a.</strong> - This assumes a diversified portfolio with a significant equity component (e.g., mutual funds).</li><li><strong>Post-retirement returns: 7% p.a.</strong> - This assumes a more conservative, capital-preserving portfolio after you retire.</li><li><strong>Deposits:</strong> monthly, made at the <strong>start</strong> of each month (annuity-due), which slightly improves returns over end-of-month deposits.</li><li><strong>Life expectancy:</strong> 85 years.</li></ul>"
-    },
-    "sip_plans": {
-      "title": "Sample SIP Plans to Reach Your Goal",
-      "body": "This table shows the approximate monthly SIP required to reach common retirement corpus goals from different starting ages, assuming a 12% annual return."
     }
   },
   "loan_optimization_calculator": {
     "h1": "Loan Optimization Calculator — Optimize EMI, Prepayment & Refinance (India, 2025)",
-    "summary": "This guide + interactive calculator helps you answer: How can I minimize total interest, reduce my EMI or tenure, and make the best choice between prepaying, refinancing, or investing my surplus? Read the guide, run the calculator, download your amortization plan and decide with confidence.",
+    "summary": "This guide + interactive calculator helps you answer: *How can I minimize total interest, reduce my EMI or tenure, and make the best choice between prepaying, refinancing, or investing my surplus?* Read the guide, run the calculator, download your amortization plan and decide with confidence.",
     "title": "Loan Optimizer",
     "form_description": "Enter your loan details to calculate your EMI and see how prepayments can save you money.",
     "form": {
@@ -1025,7 +1021,7 @@
     },
     "optimization_masterclass": {
       "h2": "EMI Optimization Strategies in India",
-      "body": "<h3>Reduce EMI vs. Reduce Tenure</h3><p>When you make an extra payment, you often have a choice:</p><ul><li><strong>Reduce EMI:</strong> Lowers your monthly payment, providing immediate cashflow relief.</li><li><strong>Reduce Tenure:</strong> Keeps your EMI the same but pays off the loan faster, saving you the most interest in the long run.</li></ul><p>If your goal is financial freedom, reducing the tenure is almost always the better option.</p>"
+      "body": "<h3>Reduce EMI vs. Reduce Tenure</h3><p>When you have extra money, you often have a choice:</p><ul><li><strong>Reduce EMI:</strong> Lowers your monthly payment, providing immediate cashflow relief.</li><li><strong>Reduce Tenure:</strong> Keeps your EMI the same but pays off the loan faster, saving you the most interest in the long run.</li></ul><p>If your goal is financial freedom, reducing the tenure is almost always the better option.</p>"
     },
     "prepay_vs_invest": {
       "h2": "Prepay vs. Invest — Which is Better?",
@@ -1042,12 +1038,31 @@
     "faq": {
       "h2": "Frequently Asked Questions",
       "faqs": [
-        { "q": "Should I prepay my home loan or invest?", "a": "Use the break-even test: if your expected post-investment returns exceed your loan interest after taxes and fees, investing may be better. Otherwise, prepaying offers a guaranteed, risk-free saving." },
-        { "q": "How much interest will I save by prepaying?", "a": "Our tool precisely calculates this for you. Just enter your loan details and the prepayment amount to see the total interest saved and your new, shorter loan tenure." },
-        { "q": "What is an EMI?", "a": "EMI stands for Equated Monthly Installment—the fixed monthly payment you make, which covers both the principal and interest components of your loan." },
-        { "q": "How is EMI calculated?", "a": "It's calculated using a standard formula based on your principal, interest rate, and tenure. Our calculator automates this complex math for you." },
-        { "q": "Are there prepayment penalties in India?", "a": "For floating-rate home loans, RBI has prohibited prepayment penalties. However, fixed-rate home loans and other loans (like personal or car loans) may still have them. Always verify with your lender." }
+        { "q": "What is a Loan Optimization Calculator?", "a": "A loan optimization calculator is a tool that helps you decide whether to reduce EMI, shorten tenure, refinance, or prepay a loan. It goes beyond a simple EMI calculator by showing interest saved, years reduced, and when to refinance." },
+        { "q": "How does a Loan Optimization Calculator work?", "a": "It calculates EMI, interest outgo, and outstanding balance using standard formulas. Then it models “what-if” scenarios like prepayments, refinancing, or changing EMI vs tenure to show savings and optimal strategy." },
+        { "q": "How much interest can I save by prepaying my home loan?", "a": "Prepayment reduces outstanding principal, so future interest is calculated on a smaller balance. For example, a ₹5 lakh prepayment on a ₹50 lakh loan at 8.5% can cut nearly ₹12–15 lakh in total interest if done early." },
+        { "q": "Should I prepay my loan or invest my surplus?", "a": "If your expected post-tax return on investment is higher than your loan interest rate, investing may be better. If not, prepaying is safer, guaranteed, and reduces debt faster." },
+        { "q": "Does prepayment reduce EMI or tenure?", "a": "By default, lenders reduce the loan tenure when you prepay. However, you can request EMI reduction instead. Reducing tenure saves more interest, while reducing EMI eases cash flow." },
+        { "q": "What is an EMI and how is it calculated?", "a": "EMI (Equated Monthly Installment) is the fixed payment you make each month. Formula: EMI = P × r × (1+r)^n / ((1+r)^n − 1) where P = loan amount, r = monthly interest rate, n = number of months." },
+        { "q": "How can I reduce my EMI without prepayment?", "a": "You can refinance (balance transfer) to a lower rate, extend tenure, or restructure your loan with your bank. However, extending tenure increases total interest." },
+        { "q": "What is a home loan prepayment calculator in India?", "a": "It’s a tool that shows how much interest you save and how many years you cut by making a lump-sum or recurring prepayment. Our Loan Optimization Calculator includes this feature." },
+        { "q": "What is a loan refinancing calculator?", "a": "A refinancing calculator compares your existing loan with a new loan at a lower interest rate. It accounts for fees and shows your net savings. This is useful for home loans, personal loans, and education loans." },
+        { "q": "How does refinancing (balance transfer) work in India?", "a": "You shift your existing loan to another bank offering a lower rate. If the interest saved exceeds processing fees and penalties, refinancing can save you lakhs over time." },
+        { "q": "Can I use this calculator for multiple loans?", "a": "Yes. You can optimize home loans, car loans, personal loans, education loans, and even credit card debt. For multiple loans, prioritize high-interest debt first." },
+        { "q": "How do I decide between prepaying vs refinancing?", "a": "If you expect to keep the loan long-term and the rate difference is big, refinancing is better. If you have surplus cash, prepaying saves more. Sometimes doing both gives the best results." },
+        { "q": "How accurate is this Loan Optimization Calculator?", "a": "It uses standard amortization formulas and tax rules. Real-world results depend on lender policies, fees, and your repayment discipline. Always confirm with your bank." },
+        { "q": "Are there prepayment penalties in India?", "a": "For floating-rate home loans, RBI has mandated no prepayment penalty. Fixed-rate and personal loans may still carry charges, usually 1–3% of the amount prepaid." },
+        { "q": "Are home loan prepayments tax deductible?", "a": "No. Only interest (u/s 24) and principal (u/s 80C) are deductible. Prepayment reduces future interest outgo, but doesn’t give an extra tax deduction." },
+        { "q": "Can this calculator generate an amortization schedule?", "a": "Yes. You can view your loan breakdown month by month, showing principal, interest, outstanding balance, and impact of prepayments. Download as CSV or PDF." },
+        { "q": "Is refinancing always a good idea?", "a": "Not always. Refinancing makes sense only if the rate difference is at least 0.5–1.0%, the loan tenure left is significant, and processing fees don’t eat into savings." },
+        { "q": "How to prioritize paying off multiple loans?", "a": "Use the debt avalanche method: prepay the highest interest loan first (e.g., credit card > personal loan > car loan > home loan). This saves maximum interest." },
+        { "q": "Can I use the calculator for education or personal loans?", "a": "Yes. It works for all amortized loans in India—home, education, personal, car, and gold loans." },
+        { "q": "What is the best way to optimize a home loan in India?", "a": "Start with regular prepayments in the first 5 years, refinance if better rates are available, and align EMIs with salary hikes (step-up strategy). This can cut 5–7 years off a 20-year loan." }
       ]
+    },
+    "conclusion": {
+      "title": "Conclusion: How to Optimize Your Loan the Smart Way",
+      "body": "Loan optimization is not a one-time event; it's an ongoing strategy. By regularly reviewing your options—prepaying when you have a surplus, refinancing when rates drop, and always prioritizing high-interest debt—you can save lakhs in interest and achieve financial freedom years earlier. Use this calculator as your co-pilot on that journey."
     }
   },
   "ups_pension_calculator": {

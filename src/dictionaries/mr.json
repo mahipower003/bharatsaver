@@ -408,9 +408,9 @@
     "meta_title": "NPS कॅल्क्युलेटर 2025 — राष्ट्रीय पेन्शन प्रणाली पेन्शन आणि कॉर्पస్ कॅल्क्युलेटर",
     "meta_description": "तुमच्या सेवानिवृत्ती कॉर्पస్, कर लाभ आणि अपेक्षित मासिक पेन्शनचा अंदाज घेण्यासाठी आमचा मोफत एनपीएस कॅल्क्युलेटर वापरा. मासिक/वार्षिक योगदानाला समर्थन देते - 2025 साठी अद्यतनित एनपीएस नियम.",
     "og_title": "NPS कॅल्क्युलेटर 2025 — राष्ट्रीय पेन्शन प्रणाली कॉर्పస్ आणि पेन्शन",
-    "og_description": "तुमच्या सेवानिवृत्तीची योजना करण्यासाठी आमचा एनपीएस कॅल्क्युलेटर वापरा. कॉर्పస్ आणि मासिक पेन्షన్चा अंदाज घेण्यासाठी योगदान, अपेक्षित परतावा आणि सेवानिवृत्तीचे वय प्रविष्ट करा.",
+    "og_description": "तुमच्या सेवानिवृत्तीची योजना करण्यासाठी आमचा एनपीएस कॅल्क्युलेटर वापरा. कॉर्పస్ आणि मासिक पेन्షన్चा अंदाज घेण्यासाठी योगदान, अपेक्षित परतावा आणि सेवानिवृత్తిचे वय प्रविष्ट करा.",
     "h1": "एनपीएस कॅल्क्युलेटर — तुमची सेवानिवृत्ती कॉर्పస్ आणि मासिक पेन्शनची गणना करा",
-    "description": "आमच्या एनपीएस (राष्ट्रीय पेन्शन प्रणाली) कॅल्क्युलेटरसह एक आत्मविश्वासपूर्ण सेवानिवृत्तीची योजना करा. तुमचे मासिक किंवा वार्षिक योगदान, अपेक्षित परतावा दर, మరియు सेवानिवृత్తిपर्यंतची वर्षे प्रविष्ट करा — आम्ही तुमचा अंदाजित कॉर्पస్, कर-कार्यक्षम लाभ, మరియు वयाच्या 60 नंतर अंदाजित मासिक ॲన్యుइटी दाखवू.",
+    "description": "आमच्या एनपीएस (राष्ट्रीय पेन्शन प्रणाली) कॅल्क्युलेटरसह एक आत्मविश्वासपूर्ण सेवानिवृత్తిची योजना करा. तुमचे मासिक किंवा वार्षिक योगदान, अपेक्षित परतावा दर, మరియు सेवानिवृత్తిपर्यंतची वर्षे प्रविष्ट करा — आम्ही तुमचा अंदाजित कॉर्पస్, कर-कार्यक्षम लाभ, మరియు वयाच्या 60 नंतर अंदाजित मासिक ॲన్యుइटी दाखवू.",
     "title": "एनपीएस कॅल्क्युलेटर",
     "last_updated": "शेवटचे अद्यतन:",
     "form_description": "राष्ट्रीय पेन्शन प्रणालीसह तुमच्या सेवानिवृत्ती बचतीचा अंदाज घ्या.",
@@ -423,13 +423,13 @@
     "retirement_age_label": "सेवानिवृत्तीचे वय",
     "expected_returns_label": "अपेक्षित परतावा (% प्रति वर्ष)",
     "annuity_percentage_label": "ॲన్యుइटीसाठी टक्केवारी",
-    "annuity_percentage_description": "कॉर्पస్च्या किमान 40% ॲన్యుइटी खरेदी करण्यासाठी वापरणे आवश्यक आहे.",
+    "annuity_percentage_description": "कॉर्పస్च्या किमान 40% ॲన్యుइटी खरेदी करण्यासाठी वापरणे आवश्यक आहे.",
     "annuity_rate_label": "ॲన్యుइटी दर (%)",
     "annuity_rate_description": "तुमच्या पेन्शनसाठी ॲన్యుइటీ उत्पादनातून अपेक्षित दर.",
     "calculate_button": "एनपीएस कॉर्పస్ची गणना करा",
     "loading": "गणना करत आहे...",
     "results_title": "तुमचे एनपीएस प्रोजेक्शन",
-    "total_corpus": "सेवानिवृत्तीच्या वेळी एकूण कॉर्पస్",
+    "total_corpus": "सेवानिवृत्तीच्या वेळी एकूण कॉर्పస్",
     "lump_sum_value": "कर-मुक्त एकरकमी (60%)",
     "annuity_value": "ॲన్యుइటీसाठी रक्कम (40%)",
     "monthly_pension": "अपेक्षित मासिक पेन्शन",
@@ -540,7 +540,7 @@
         "answer": "तुमच्या योगदान, अपेक्षित परतावा आणि सेवानिवृత్తిपर्यंतच्या वर्षांवर आधारित तुमच्या सेवानिवृత్తి कॉर्పస్ మరియు संभाव्य मासिक पेन्शनचा अंदाज लावणारे एक ऑनलाइन साधन."
       },
       {
-        "question": "एनपीएस कॉर्पస్ची गणना कशी केली जाते?",
+        "question": "एनपीएस कॉर्పస్ची गणना कशी केली जाते?",
         "answer": "तुमच्या नियतकालिक योगदानाला अपेक्षित वार्षिक परताव्याच्या दराने सेवानिवृత్తిपर्यंत चक्रवाढ करून. वार्षिक योगदानांसाठी, सूत्र आहे FV = P × [((1 + r)^t - 1) / r]."
       },
       {
@@ -564,9 +564,9 @@
   "apy_calculator": {
     "meta_title": "APY कॅल्क्युलेटर 2025 — अटल पेन्शन योजना प्रीमियम चार्ट आणि पेन्शन अंदाज",
     "meta_description": "₹1,000–₹5,000 पेन्शनसाठी आवश्यक मासिक प्रीमियम शोधण्यासाठी आमचा मोफत APY कॅल्क्युलेटर वापरा. वय-आधारित प्रीमियम चार्ट, पात्रता, वारंवार विचारले जाणारे प्रश्न आणि डाउनलोड करण्यायोग्य CSV मिळवा. सप्टेंबर 2025 रोजी अद्यतनित.",
-    "og_title": "APY कॅल्क्युलेटर 2025 — अटल पेन्शन योजना प्रीमियम चार्ट आणि पेन्షన్ अंदाज",
+    "og_title": "APY कॅल्क्युलेटर 2025 — अटल पेन्शन योजना प्रीमियम चार्ट आणि पेन्शन अंदाज",
     "og_description": "₹1,000 ते ₹5,000 च्या हमी पेन्शनसाठी तुमचा मासिक प्रीमियम शोधण्यासाठी आमचा APY कॅल्क्युलेटर वापरा. यात वयानुसार प्रीमियम चार्ट, पात्रता आणि वारंवार विचारले जाणारे प्रश्न समाविष्ट आहेत.",
-    "h1": "APY कॅल्क्युलेटर 2025 — अटल पेन्शन योजना प्रीमियम आणि पेन्షన్ अंदाज",
+    "h1": "APY कॅल्क्युलेटर 2025 — अटल पेन्షన్ योजना प्रीमियम आणि पेन्షన్ अंदाज",
     "description": "तुमचे वय आणि इच्छित पेन्शन प्रविष्ट करा आणि आवश्यक मासिक प्रीमियम त्वरित पहा. तुमची योजना CSV म्हणून डाउनलोड करा.",
     "title": "APY कॅल्क्युलेटर",
     "last_updated": "शेवटचे अद्यतन:",
@@ -591,7 +591,7 @@
     },
     "how_it_works": {
       "title": "APY कॅल्क्युलेटर कसे कार्य करते — वय आणि पेन्शननुसार प्रीमियम",
-      "intro": "APY प्रीमियमची गणना PPF किंवा NPS सारख्या चक्रवाढ सूत्राने केली जात नाही. त्याऐवजी, प्रीमियम तुमच्या प्रवेश वय आणि निवडलेल्या पेन्शनच्या आधारावर सरकारने निर्धारित केलेल्या निश्चित रकमा आहेत. आमचा कॅल्क्युलेटर तुम्हाला अचूक रक्कम देण्यासाठी PFRDA च्या अधिकृत प्रीमियम तक्त्याचा वापर करतो.",
+      "intro": "APY प्रीमियमची गणना PPF किंवा NPS सारख्या चक्रवाढ सूत्राने केली जात नाही. त्याऐवजी, प्रीमियम तुमच्या प्रवेश वय आणि निवडलेल्या पेन्షన్च्या आधारावर सरकारने निर्धारित केलेल्या निश्चित रकमा आहेत. आमचा कॅल्क्युलेटर तुम्हाला अचूक रक्कम देण्यासाठी PFRDA च्या अधिकृत प्रीमियम तक्त्याचा वापर करतो.",
       "example": {
         "title": "उदाहरण: वय 25 — प्रीमियम कसे कार्य करते",
         "body": "<strong>मासिक प्रीमियम (चार्टमधून):</strong> ₹76<br/><strong>योगदानाची वर्षे:</strong> 25 वर्षांपासून 60 वर्षांपर्यंत = 35 वर्षे<br/><strong>एकूण भरलेले</strong> = 76 × 12 × 35 = ₹31,920 (35 वर्षांत एकूण योगदान)<br/><strong>परिणाम:</strong> 60 वर्षांपासून ₹1,000 ची हमी मासिक पेन्షన్ (పథకం నిబంధనల ప్రకారం పెన్షన్ అందిస్తుంది; చెల్లింపులు పూల్ చేయబడిన ఫండ్/వార్షికాల నుండి వస్తాయి).",
@@ -600,7 +600,7 @@
     },
     "premium_chart": {
       "title": "APY प्रीमियम चार्ट (वय आणि पेन्शन रकमेनुसार)",
-      "description": "हा चार्ट तुमच्या प्रवेश वय आणि इच्छित पेन्शन रकमेवर आधारित निश्चित मासिक प्रीमियम दाखवतो, अधिकृत <a href='https://www.pfrda.org.in/my-apy/apy-chart' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA प्रीमियम तक्त्यानुसार</a>. तुम्ही जितक्या लवकर सुरुवात कराल, तितका तुमचा प्रीमियम कमी असेल.",
+      "description": "हा चार्ट तुमच्या प्रवेश वय आणि इच्छित पेन्షన్ रकमेवर आधारित निश्चित मासिक प्रीमियम दाखवतो, अधिकृत <a href='https://www.pfrda.org.in/my-apy/apy-chart' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA प्रीमियम तक्त्यानुसार</a>. तुम्ही जितक्या लवकर सुरुवात कराल, तितका तुमचा प्रीमियम कमी असेल.",
       "age_header": "प्रवेश वय",
       "years_label": "वर्षे"
     },
@@ -819,7 +819,7 @@
     },
     "checklist": {
       "title": "कसे निवडावे: एक त्वरित चेकलिस्ट",
-      "body": "<ul><li><strong>उच्च वजावट:</strong> तुमची एकूण वजावट (80C, HRA, गृह कर्ज व्याज) लक्षणीय असल्यास (ಸಾధారణంగా > ₹2.5-3 लाख), <strong>जुनी प्रणाली</strong> తరచుగా ಉತ್ತಮವಾಗಿರುತ್ತದೆ.</li><li><strong>कमी/कोणतीही वजावट नाही:</strong> तुमच्याकडे बरीच वजावट नसल्यास, <strong>नवीन प्रणाली</strong>चे कमी स्लॅब दर సాధారణपणे अधिक फायदेशीर असतात.</li><li><strong>सरलता:</strong> अनेक गुंतवणुकींचा मागोवा न ठेवता एक सोपी कर फाइलिंग प्रक्रिया पसंत करता? <strong>नवीन प्रणाली</strong> सोपी आहे.</li></ul>"
+      "body": "<ul><li><strong>उच्च वजावट:</strong> तुमची एकूण वजावट (80C, HRA, गृह कर्ज व्याज) लक्षणीय असल्यास (సాధారణంగా > ₹2.5-3 लाख), <strong>जुनी प्रणाली</strong> తరచుగా ಉತ್ತಮವಾಗಿರುತ್ತದೆ.</li><li><strong>कमी/कोणतीही वजावट नाही:</strong> तुमच्याकडे बरीच वजावट नसल्यास, <strong>नवीन प्रणाली</strong>चे कमी स्लॅब दर సాధారణपणे अधिक फायदेशीर असतात.</li><li><strong>सरलता:</strong> अनेक गुंतवणुकींचा मागोवा न ठेवता एक सोपी कर फाइलिंग प्रक्रिया पसंत करता? <strong>नवीन प्रणाली</strong> सोपी आहे.</li></ul>"
     },
     "common_scenarios": {
       "title": "काम केलेली उदाहरणे — जुनी vs नवीन प्रणाली",
@@ -875,12 +875,12 @@
     "inflation_rate_label": "अपेक्षित महागाई दर (% प्रति वर्ष)",
     "pre_retirement_returns_label": "पूर्व-सेवानिवृత్తి परतावा (% प्रति वर्ष)",
     "post_retirement_returns_label": "सेवानिवृत्तीनंतरचा परतावा (% प्रति वर्ष)",
-    "calculate_button": "कॉर्पస్ची गणना करा",
+    "calculate_button": "कॉर्పస్ची गणना करा",
     "loading": "गणना करत आहे...",
     "results_title": "तुमची सेवानिवृत्ती प्रक्षेपण",
     "required_corpus": "सेवानिवृत्तीच्या वेळी आवश्यक कॉर्పస్",
-    "corpus_shortfall": "कॉर्पస్ची कमतरता",
-    "corpus_surplus": "कॉर्पస్ अधिशेष",
+    "corpus_shortfall": "कॉर्పస్ची कमतरता",
+    "corpus_surplus": "कॉर्పస్ अधिशेष",
     "monthly_sip": "आवश्यक मासिक एसआयपी",
     "view_chart": "चार्ट पहा",
     "view_table": "तक्ता पहा",
@@ -892,11 +892,11 @@
     "amount_in_lakhs": "रक्कम (लाखात)",
     "how_it_works": {
       "h2": "तुम्ही सेवानिवृत्ती कॉर्పస్ची गणना कशी करता?",
-      "body": "<p>आम्ही तुम्हाला एक अचूक प्रक्षेपण देण्यासाठी मानक आर्थिक सूत्रांचा वापर करतो. येथे आम्ही ते कसे करतो, याचा एक सरलीकृत दृष्टिकोन आहे:</p><h3>सेवानिवृत्तीच्या वेळी तुमच्या खर्चाचे भविष्य मूल्य</h3><p>आम्ही प्रथम गणना करतो की तुम्ही प्रदान केलेल्या महागाई दराचा वापर करून सेवानिवृत्त होईपर्यंत तुमचे सध्याचे मासिक खर्च किती वाढतील. सूत्र आहे: <code>भविष्य खर्च = वर्तमान खर्च × (1 + महागाई दर) ^ सेवानिवृత్తిसाठी वर्षे</code>.</p><h3>सेवानिवृत्तीच्या वेळी आवश्यक कॉर्पస్ (ॲన్యుइटीचे पीव्ही)</h3><p>पुढे, आम्ही सेवानिवृत्त होण्याच्या दिवशी तुम्हाला आवश्यक असलेल्या एकूण एकरकमी रकमेची गणना करतो. ही रक्कम, गुंतवल्यावर, तुमच्या उर्वरित आयुष्यासाठी तुमच्या खर्चांना कव्हर करण्यासाठी पुरेशी उत्पन्न निर्माण करेल. आम्ही यासाठी एक ॲన్యుइटीच्या वर्तमान मूल्य सूत्राचा वापर करतो.</p><h3>आवश्यक एसआयपी गणना</h3><p>शेवटी, आम्ही तुमची सध्याची बचत आणि तुमचा लक्ष्य कॉर्పస్ यांच्यातील अंतर भरून काढण्यासाठी आवश्यक मासिक पद्धतशीर गुंतवणूक योजना (एसआयपी) निश्चित करतो. आम्ही तुमच्या सध्याच्या बचतीच्या भविष्य मूल्याची गणना करतो आणि आवश्यक कॉर्పస్मधून ती वजा करून कमतरता शोधतो. एसआयपीची गणना ॲన్యుइटी देय सूत्राच्या भविष्य मूल्याचा वापर करून केली जाते, हे गृहीत धरून की जमा प्रत्येक महिन्याच्या सुरुवातीला केले जाते.</p>"
+      "body": "<p>आम्ही तुम्हाला एक अचूक प्रक्षेपण देण्यासाठी मानक आर्थिक सूत्रांचा वापर करतो. येथे आम्ही ते कसे करतो, याचा एक सरलीकृत दृष्टिकोन आहे:</p><h3>सेवानिवृत्तीच्या वेळी तुमच्या खर्चाचे भविष्य मूल्य</h3><p>आम्ही प्रथम गणना करतो की तुम्ही प्रदान केलेल्या महागाई दराचा वापर करून सेवानिवृत्त होईपर्यंत तुमचे सध्याचे मासिक खर्च किती वाढतील. सूत्र आहे: <code>भविष्य खर्च = वर्तमान खर्च × (1 + महागाई दर) ^ सेवानिवृత్తిसाठी वर्षे</code>.</p><h3>सेवानिवृత్తిच्या वेळी आवश्यक कॉर्పస్ (ॲన్యుइटीचे पीव्ही)</h3><p>पुढे, आम्ही सेवानिवृत्त होण्याच्या दिवशी तुम्हाला आवश्यक असलेल्या एकूण एकरकमी रकमेची गणना करतो. ही रक्कम, गुंतवल्यावर, तुमच्या उर्वरित आयुष्यासाठी तुमच्या खर्चांना कव्हर करण्यासाठी पुरेशी उत्पन्न निर्माण करेल. आम्ही यासाठी एक ॲన్యుइटीच्या वर्तमान मूल्य सूत्राचा वापर करतो.</p><h3>आवश्यक एसआयपी गणना</h3><p>शेवटी, आम्ही तुमची सध्याची बचत आणि तुमचा लक्ष्य कॉर्పస్ यांच्यातील अंतर भरून काढण्यासाठी आवश्यक मासिक पद्धतशीर गुंतवणूक योजना (एसआयपी) निश्चित करतो. आम्ही तुमच्या सध्याच्या बचतीच्या भविष्य मूल्याची गणना करतो आणि आवश्यक कॉर्పస్मधून ती वजा करून कमतरता शोधतो. एसआयपीची गणना ॲన్యుइटी देय सूत्राच्या भविष्य मूल्याचा वापर करून केली जाते, हे गृहीत धरून की जमा प्रत्येक महिन्याच्या सुरुवातीला केले जाते.</p>"
     },
     "inputs_explained": {
       "h2": "तुम्हाला कोणते इनपुट प्रदान करणे आवश्यक आहे आणि ते का महत्त्वाचे आहेत",
-      "body": "<p>एक अचूक परिणाम मिळवण्यासाठी, तुम्हाला काही प्रमुख तपशील प्रदान करणे आवश्यक आहे. येथे प्रत्येकाचा तुमच्या योजनेसाठी काय अर्थ आहे:</p><ul><li><strong>तुमचे सध्याचे आणि सेवानिवृత్తిचे वय:</strong> हे तुमचे गुंतवणूक क्षितिज परिभाषित करते. तुमच्याकडे जितका जास्त वेळ असेल, तितके चक्रवाढीचे सामर्थ्य तुमच्यासाठी काम करू शकते, म्हणजे तुम्ही लहान गुंतवणुकींनी सुरुवात करू शकता.</li><li><strong>तुमचे सध्याचे मासिक खर्च:</strong> ही तुमच्या सेवानिवृత్తి योजनेची पायाभरणी आहे. उद्या तुम्हाला काय लागेल याची अचूक कल्पना मिळवण्यासाठी आज तुम्ही काय खर्च करता याबद्दल वास्तववादी व्हा.</li><li><strong>तुमची सध्याची बचत:</strong> ही तुमची सुरुवात आहे! ईपीएफ, पीपीएफ, म्युच्युअल फंड, किंवा इतर गुंतवणुकींमध्ये तुम्ही आधीच वाचवलेले कोणतेही पैसे भविष्यात तुम्हाला वाचवाव्या लागणाऱ्या रकमेला कमी करतात.</li><li><strong>महागाई दर:</strong> हा मूक संपत्तीचा मारेकरी आहे. महागाई कालांतराने तुमच्या पैशाची खरेदी शक्ती कमी करते. उच्च महागाई दराचा अर्थ असा आहे की तुम्हाला खूप मोठ्या कॉर्पస్ची आवश्यकता असेल.</li><li><strong>पूर्व-सेवानिवृత్తి परतावा:</strong> तुम्ही काम करत असताना तुमच्या गुंतवणुकींवर अपेक्षित असलेली वाढीची दर ही आहे. उच्च परताव्याचा अर्थ असा आहे की तुमचे पैसे तुमच्यासाठी कठोर परिश्रम करतात, आणि तुम्ही लहान एसआयपीसह तुमच्या लक्ष्यापर्यंत पोहोचू शकता.</li><li><strong>सेवानिवृत्तीनंतरचा परतावा:</strong> तुम्ही सेवानिवृत्त झाल्यावर तुमच्या कॉर्పస్वर अपेक्षित असलेला परतावा हा आहे. आम्ही येथे एक अधिक রক্ষণशील, भांडवल-संरक्षण पोर्टफोलिओ गृहीत धरतो.</li></ul>"
+      "body": "<p>एक अचूक परिणाम मिळवण्यासाठी, तुम्हाला काही प्रमुख तपशील प्रदान करणे आवश्यक आहे. येथे प्रत्येकाचा तुमच्या योजनेसाठी काय अर्थ आहे:</p><ul><li><strong>तुमचे सध्याचे आणि सेवानिवृత్తిचे वय:</strong> हे तुमचे गुंतवणूक क्षितिज परिभाषित करते. तुमच्याकडे जितका जास्त वेळ असेल, तितके चक्रवाढीचे सामर्थ्य तुमच्यासाठी काम करू शकते, म्हणजे तुम्ही लहान गुंतवणुकींनी सुरुवात करू शकता.</li><li><strong>तुमचे सध्याचे मासिक खर्च:</strong> ही तुमच्या सेवानिवृత్తి योजनेची पायाभरणी आहे. उद्या तुम्हाला काय लागेल याची अचूक कल्पना मिळवण्यासाठी आज तुम्ही काय खर्च करता याबद्दल वास्तववादी व्हा.</li><li><strong>तुमची सध्याची बचत:</strong> ही तुमची सुरुवात आहे! ईपीएफ, पीपीएफ, म्युच्युअल फंड, किंवा इतर गुंतवणुकींमध्ये तुम्ही आधीच वाचवलेले कोणतेही पैसे भविष्यात तुम्हाला वाचवाव्या लागणाऱ्या रकमेला कमी करतात.</li><li><strong>महागाई दर:</strong> हा मूक संपत्तीचा मारेकरी आहे. महागाई कालांतराने तुमच्या पैशाची खरेदी शक्ती कमी करते. उच्च महागाई दराचा अर्थ असा आहे की तुम्हाला खूप मोठ्या कॉर्పస్ची आवश्यकता असेल.</li><li><strong>पूर्व-सेवानिवृత్తి परतावा:</strong> तुम्ही काम करत असताना तुमच्या गुंतवणुकींवर अपेक्षित असलेली वाढीची दर ही आहे. उच्च परताव्याचा अर्थ असा आहे की तुमचे पैसे तुमच्यासाठी कठोर परिश्रम करतात, आणि तुम्ही लहान एसआयपीसह तुमच्या लक्ष्यापर्यंत पोहोचू शकता.</li><li><strong>सेवानिवृत्तीनंतरचा परतावा:</strong> तुम्ही सेवानिवृत्त झाल्यावर तुमच्या कॉर्పస్वर अपेक्षित असलेला परतावा हा आहे. आम्ही येथे एक अधिक রক্ষণशील, भांडवल-संरक्षण पोर्टफोलिओ गृहीत धरतो.</li></ul>"
     },
     "worked_examples": {
       "h2": "काम केलेली उदाहरणे — तुम्हाला किती कॉर्పస్ची आवश्यकता आहे?",
@@ -919,7 +919,7 @@
     },
     "sip_plans": {
       "title": "तुमच्या ध्येयापर्यंत पोहोचण्यासाठी नमुना एसआयपी योजना",
-      "body": "ही सारणी विविध सुरुवातीच्या वयोगटातून सामान्य सेवानिवृत्ति कॉर्पస్ ध्येयांपर्यंत पोहोचण्यासाठी आवश्यक अंदाजित मासिक एसआयपी दाखवते, हे गृहीत धरून की 12% वार्षिक परतावा आहे."
+      "body": "ही सारणी विविध सुरुवातीच्या वयोगटातून सामान्य सेवानिवृत्ति कॉर्పస్ ध्येयांपर्यंत पोहोचण्यासाठी आवश्यक अंदाजित मासिक एसआयपी दाखवते, हे गृहीत धरून की 12% वार्षिक परतावा आहे."
     },
     "accumulation_strategy": {
       "h2": "तुमच्या सेवानिवृत्ती कॉर्పస్पर्यंत कसे पोहोचावे (गुंतवणूक धोरणे)",
@@ -960,8 +960,8 @@
         { "q": "सेवानिवृत्तीच्या काळात भारतात सुरक्षित काढण्याची दर काय आहे?", "a": "एक-आकार-सर्वांसाठी-योग्य असे काही नाही; बरेच सल्लागार 3-4% प्रारंभिक काढण्याचा नियम (महागाईसाठी समायोजित) वापरतात. दीर्घायुष्य किंवा आरोग्यसेवा खर्च अनिश्चित असल्यास রক্ষণশীল काढण्याचे दर विचारात घ्या." },
         { "q": "आरोग्यसेवा खर्च सेवानिवृत्ती कॉर्పస్वर कसा परिणाम करतात?", "a": "आरोग्यसेवा महागाई अनेकदा सामान्य महागाईपेक्षा जास्त असते. तुमच्या कॉर्పస్ला कमी लेखू नये म्हणून वैद्यकीय खर्चांसाठी एक समर्पित आरोग्यसेवा बफर ਜੋडा किंवा उच्च महागाई मॉडेल करा." },
         { "q": "माझ्या सेवानिवृत्ती काढण्यावर कर कसा प्रभाव टाकतील?", "a": "कर उपचार साधन आणि काढण्याच्या प्रकारानुसार बदलतो. ईपीएफ/पीपीएफचे विशिष्ट नियम आहेत; म्युच्युअल फंड काढण्यावर मर्यादेपेक्षा जास्त एलटीसीजी कर लागू शकतो. कॉर्పస్ संरक्षित करण्यासाठी काढण्याची योजना कर-कार्यक्षमतेने करा." },
-        { "q": "माझा सेवानिवृत्ती कॉर्పస్ किती काळ टिकला पाहिजे?", "a": "ಸಾಮಾನ್ಯವಾಗಿ नियोजक 85-90 वर्षांचे आयुर्मान गृहीत धरतात. कौटुंबिक आयुर्मान जास्त असल्यास किंवा तुम्ही लवकर सेवानिवृत्त झाल्यास রক্ষণশীল आयुर्मान गृहितके वापरा." },
-        { "q": "कॅल्क्युलेटर सेवानिवृत्तीनंतरच्या परताव्याचा हिशोब करतो का?", "a": "होय — तुम्ही एक कमी, রক্ষণশীল सेवानिवृत्तीनंतरचा परतावा (उदा. 6–8%) सेट करू शकता जेणेकरून कॉर्పస్ कसे गुंतवले जाईल आणि काढणे कसे टिकवून ठेवले जाईल हे मॉडेल करता येईल." },
+        { "q": "माझा सेवानिवृत्ती कॉर्పస్ किती काळ टिकला पाहिजे?", "a": "సాధారణంగా नियोजक 85-90 वर्षांचे आयुर्मान गृहीत धरतात. कौटुंबिक आयुर्मान जास्त असल्यास किंवा तुम्ही लवकर सेवानिवृत्त झाल्यास রক্ষণশীল आयुर्मान गृहितके वापरा." },
+        { "q": "कॅल्क्युलेटर सेवानिवृत्तीनंतरच्या परताव्याचा हिशोब करतो का?", "a": "होय — तुम्ही एक कमी, রক্ষণশীল सेवानिवृत्तीनंतरचा परतावा (उदा. 6-8%) सेट करू शकता जेणेकरून कॉर्పస్ कसे गुंतवले जाईल आणि काढणे कसे टिकवून ठेवले जाईल हे मॉडेल करता येईल." },
         { "q": "मी या कॅल्क्युलेटरसह लवकर सेवानिवृत्तीची (60 पूर्वी) योजना करू शकेन का?", "a": "होय — तुमचे इच्छित सेवानिवृత్తి वय आधी सेट करा आणि गुंतवणूक क्षितिज आणि एसआयपी त्यानुसार वाढवा. दीर्घ सेवानिवृत्तीनंतरची वर्षे आणि उच्च आरोग्यसेवा खर्च लक्षात घ्या." },
         { "q": "एक लक्ष्य कॉर्పస్चा अंदाज घेण्यासाठी सर्वात सोपा नियम कोणता आहे?", "a": "एक सामान्य नियम तुमच्या सध्याच्या वार्षिक खर्चाच्या 25× आहे (4% वास्तविक काढण्यासाठी), परंतु महागाई, परतावा आणि विद्यमान बचतीसह हे परिष्कृत करण्यासाठी कॅल्क्युलेटर वापरा." }
     ],
@@ -975,8 +975,6 @@
     }
   },
   "loan_optimization_calculator": {
-    "meta_title": "कर्ज ऑप्टिमायझेशन कॅल्क्युलेटर भारत 2025 — EMI कमी करा आणि व्याज वाचवा",
-    "meta_description": "मोफत कर्ज ऑप्टिमायझेशन कॅल्क्युलेटर (भारत). प्रीपेमेंट विरुद्ध गुंतवणूक तुलना करा, EMI ऑप्टिमाइझ करा, बॅलन्स ट्रान्सफरची योजना करा, परिशोधन वेळापत्रक डाउनलोड करा.",
     "h1": "कर्ज ऑप्टिमायझेशन कॅल्क्युलेटर — EMI, प्रीपेमेंट आणि पुनर्वित्त ऑप्टिमाइझ करा (भारत, 2025)",
     "summary": "हा मार्गदर्शक + परस्परसंवादी कॅल्क्युलेटर तुम्हाला उत्तर देण्यास मदत करतो: मी एकूण व्याज कसे कमी करू शकेन, माझी EMI किंवा मुदत कशी कमी करू शकेन, आणि प्रीपेमेंट, पुनर्वित्त, किंवा माझ्या अतिरिक्त रकमेची गुंतवणूक करण्यामध्ये सर्वोत्तम निवड कशी करू शकेन? मार्गदर्शक वाचा, कॅल्क्युलेटर चालवा, तुमची परिशोधन योजना डाउनलोड करा आणि आत्मविश्वासाने निर्णय घ्या.",
     "title": "कर्ज ऑप्टिमायझर",
@@ -1013,67 +1011,61 @@
       }
     },
     "why": {
-      "h2": "1. Why a Loan Optimization Calculator?",
-      "body": "<p>Loans are ubiquitous: home loans, car loans, personal loans, education loans, and credit-card debt. Even when interest rates are low, small decisions—reducing tenure, making a partial prepayment, consolidating high-rate debts—have large long-term effects.</p><p>A <strong>Loan Optimization Calculator</strong> does three things:</p><ul><li><strong>Shows the exact consequences</strong> of action (e.g., prepay ₹1,00,000 today reduces X years and saves Y in interest).</li><li><strong>Compares options numerically</strong> (keep EMI and shorten tenure vs reduce EMI).</li><li><strong>Generates a reproducible plan</strong> (amortization schedule, downloadable CSV/PDF) you can share with lenders or advisors.</li></ul><p>Unlike a simple EMI calculator, an optimization calculator models <em>what-if</em> scenarios and gives actionable recommendations — the bridge between information and action.</p><h4>Who should use this?</h4><ul><li>Homeowners considering part-prepayment or refinancing.</li><li>Borrowers with multiple high-rate loans.</li><li>People deciding whether to invest surplus or prepay loans.</li><li>Financial advisors preparing client plans.</li></ul>"
+      "h2": "Why a Loan Optimization Calculator?",
+      "body": "<p>Loans are ubiquitous, but small decisions—like making a partial prepayment or refinancing—can have a huge long-term impact. A good calculator helps you:</p><ul><li><strong>See the exact consequences</strong> of any action (e.g., prepaying ₹1 lakh saves ₹X in interest).</li><li><strong>Compare options numerically</strong> (e.g., reduce EMI vs. shorten tenure).</li><li><strong>Generate a clear plan</strong> (amortization schedule) to share with your advisor.</li></ul><p>This tool models 'what-if' scenarios, turning complex information into actionable insights for homeowners, borrowers, and financial advisors alike.</p>"
     },
     "how_it_works": {
-      "h2": "2. How this Loan Optimization Calculator Works (methodology & formulas)",
-      "body": "<p>This section explains the math so you can trust results. Transparency is critical—especially for financial tools.</p><h3>Core formulas</h3><h4>EMI (Equated Monthly Installment)</h4><p>Given: Principal P (loan amount), Annual nominal rate R%, Monthly rate r = R / 12 / 100, Number of monthly payments n (years × 12). The EMI E is: $$ E = P \\times \\frac{r (1+r)^n}{(1+r)^n - 1} $$</p><h4>Outstanding balance after k payments</h4><p>If you want remaining principal after k EMIs: $$ B_k = P \\times \\frac{(1+r)^n - (1+r)^k}{(1+r)^n - 1} $$</p><h4>Effect of a one-time prepayment</h4><p>Suppose at month k you pay X extra (a lump-sum). Two common lender choices: Option A — Reduce tenure (EMI unchanged), or Option B — Reduce EMI (tenure unchanged).</p>"
+      "h2": "How this Loan Optimization Calculator Works",
+      "body": "<p>We believe in transparency. Our calculator uses standard financial formulas to ensure accuracy.</p><h4>EMI (Equated Monthly Installment)</h4><p>The EMI is calculated using the formula: <code>E = P * r * (1+r)^n / ((1+r)^n - 1)</code>, where P is the principal, r is the monthly interest rate, and n is the number of months.</p><h4>Outstanding Balance</h4><p>The outstanding balance after 'k' payments is calculated to determine the impact of a prepayment at that specific month.</p>"
     },
     "amortization_dive": {
-      "h2": "3. The Amortization Deep Dive — principal vs interest (interactive)",
-      "body": "<p>Every EMI payment has two components: Interest = outstanding principal × monthly rate, and Principal = EMI − interest. In early years, because outstanding principal is high, interest portion is large. Over time, as principal falls, interest portion decreases and principal portion increases.</p><h4>Why this matters for optimization</h4><ul><li>Prepayments made earlier save <strong>more interest</strong>.</li><li>Splitting prepayments strategically yields greater total savings.</li></ul>"
+      "h2": "The Amortization Deep Dive",
+      "body": "<p>Every EMI you pay consists of two parts: interest and principal. Initially, a larger portion of your EMI goes towards paying interest. Over time, as your principal reduces, the interest portion decreases, and more of your payment goes towards clearing the actual loan.</p><h4>Why this matters for optimization:</h4><ul><li>Prepayments made **early in the loan** save significantly more interest.</li><li>Strategically paying off high-interest loans first yields the greatest total savings.</li></ul>"
     },
     "optimization_masterclass": {
-      "h2": "4. The Optimization Masterclass — reduce EMI vs reduce tenure vs partial prepayment",
-      "body": "<p>When you have extra money, you usually face these choices:</p><ol><li><strong>Reduce EMI</strong> (keep tenure same) — good if you need monthly cashflow relief.</li><li><strong>Reduce tenure</strong> (keep EMI same) — best for minimizing total interest and achieving financial freedom sooner.</li><li><strong>Partial prepayment</strong> — one-time or recurring; often used to reduce tenure or EMI.</li></ol>"
+      "h2": "EMI Optimization Strategies in India",
+      "body": "<h3>Reduce EMI vs. Reduce Tenure</h3><p>When you have extra money, you often have a choice:</p><ul><li><strong>Reduce EMI:</strong> Lowers your monthly payment, providing immediate cashflow relief.</li><li><strong>Reduce Tenure:</strong> Keeps your EMI the same but pays off the loan faster, saving you the most interest in the long run.</li></ul><p>If your goal is financial freedom, reducing the tenure is almost always the better option.</p>"
     },
     "prepay_vs_invest": {
-      "h2": "5. Prepayment vs Invest — the break-even framework",
-      "body": "<p>Many people ask: <strong>“Should I prepay my home loan or invest the money?”</strong> The calculator includes a break-even test. If expected after-tax investment return (adjusted for risk) is greater than the effective loan interest rate, investing may yield more wealth. Otherwise, prepay.</p>"
+      "h2": "Prepay vs. Invest — Which is Better?",
+      "body": "<p>Should you prepay your loan or invest the extra cash? Here's the simple rule of thumb: <strong>If your expected after-tax return on investment is greater than your loan's interest rate, investing may be the better choice.</strong> Otherwise, prepaying is a guaranteed, risk-free return equal to your loan's interest rate.</p><p>Consider the tax benefits on home loan interest, which can lower your effective loan rate, making investing more attractive.</p>"
     },
     "refinance": {
-      "h2": "6. Refinance & Balance Transfer — when it makes sense in India",
-      "body": "<p>A <strong>balance transfer</strong> or <strong>refinance</strong> replaces your existing loan with a new one. Consider it if a new lender offers a significantly lower effective interest rate (after fees) and you have a good credit score. Our calculator helps you evaluate the break-even months and net savings.</p>"
-    },
-    "multiple_loans": {
-      "h2": "7. Multiple Loans — consolidation & priority repayment strategy",
-      "body": "<p>Many users carry multiple debts. The optimal strategy is to make minimum payments on all loans and direct any extra amount to the highest-rate loan first (often credit card or personal loan). This is known as the 'debt avalanche' method.</p>"
-    },
-    "examples": {
-      "h2": "8. Three worked examples (realistic India personas)",
-      "body": "<h4>Example A — Salaried professional (home loan prepayment)</h4><p>Loan: ₹50,00,000 @ 7.5% for 20 years. EMI ≈ ₹40,249. A one-time prepayment of ₹2,00,000 at month 12 reduces tenure by ~15 months and saves over ₹1 lakh in interest.</p><h4>Example B — Mid-income with multiple loans</h4><p>With a Personal Loan @ 12% and a Car Loan @ 9%, applying an extra ₹10,000/month to the higher-rate Personal Loan first saves the most interest overall.</p>"
-    },
-    "how_to_use": {
-      "h2": "9. How to use this calculator step-by-step (quick guide)",
-      "body": "<ol><li>Choose loan type and enter your loan amount, rate, and tenure.</li><li>Enter any one-time prepayment amount you wish to model.</li><li>Click 'Calculate' to see your new EMI, total interest, and full amortization schedule.</li><li>Use the tabs to switch between the summary chart and the detailed table.</li><li>Download the CSV or share the URL with your inputs saved.</li></ol>"
-    },
-    "downloads": {
-      "h2": "10. Downloadable outputs, sharing & embedding options",
-      "body": "<p><strong>Downloadable:</strong> A full month-by-month amortization schedule is available as a CSV file. A one-page PDF plan can be generated and emailed for your records. A sharable URL preserves your inputs for easy sharing.</p><p><strong>Embedding:</strong> We provide a lightweight iframe widget for partners and bloggers to embed on their sites, building high-quality backlinks and referral traffic.</p>"
+      "h2": "Balance Transfer & Refinance Playbook",
+      "body": "<p>Refinancing means replacing your existing loan with a new one, usually at a lower interest rate. Consider this if:</p><ul><li>You can get a significantly lower rate (at least 0.5% to 1% less).</li><li>Your credit score has improved.</li></ul><p>Our calculator helps you compute the break-even point, factoring in processing fees and prepayment penalties, to see if a switch is truly profitable.</p>"
     },
     "tax_notes": {
-      "h2": "11. Tax, penalties & regulatory notes (India-specific)",
-      "body": "<h4>Income tax considerations (India):</h4><p>Interest on a home loan for a self-occupied property is deductible under Section 24. Always consult a tax advisor as this tool shows pre-tax comparisons.</p><h4>Prepayment penalties:</h4><p>Many floating-rate home loans allow prepayment without penalty, but personal loans often have charges. Always check your loan agreement.</p>"
+      "h2": "Loan Optimization & Tax Benefits in India",
+      "body": "<h4>Home Loan Deduction (Section 24)</h4><p>You can claim a tax deduction of up to ₹2 lakh on the interest paid for a self-occupied home loan under Section 24. This reduces your effective interest rate, making the 'prepay vs. invest' decision even more critical.</p><h4>Prepayment Penalties & RBI Rules</h4><p>As per RBI guidelines, lenders cannot charge prepayment penalties on floating-rate home loans. However, fixed-rate loans and other loan types like personal loans may still have penalties. Always check your loan agreement.</p>"
     },
     "faq": {
-      "h2": "12. Frequently Asked Questions (FAQ)",
+      "h2": "Frequently Asked Questions",
       "faqs": [
-        { "q": "Should I prepay my home loan or invest?", "a": "Use the break-even test: if expected post-investment returns exceed your loan interest after taxes/charges, investing may be better; otherwise prepay. Our calculator computes this for you." },
-        { "q": "How much interest will I save by prepaying?", "a": "Enter your loan details and prepayment schedule — the tool shows total interest saved and revised amortization." },
-        { "q": "What is an EMI?", "a": "EMI stands for Equated Monthly Installment — the fixed monthly amount you pay your lender combining principal and interest." },
-        { "q": "How is EMI calculated?", "a": "See the EMI formula in Section 2. The calculator uses that formula to compute EMI precisely." },
-        { "q": "Do prepayments reduce EMI or tenure?", "a": "Most lenders allow you to choose. If you want lower monthly burden, reduce EMI; if you want to pay less interest overall, reduce tenure." },
-        { "q": "Are there prepayment penalties in India?", "a": "It depends on loan type and lender. Many banks waive prepayment on floating-rate home loans but may charge for personal loans. Always check your loan agreement." },
-        { "q": "Can I download the amortization schedule?", "a": "Yes — CSV and PDF exports are available. PDF export can be gated for lead capture if you want." },
-        { "q": "Is refinancing always a good idea?", "a": "No. Include processing fees and prepayment penalties in your calculation. Refinance makes sense when net interest savings exceed costs within your relevant horizon." },
-        { "q": "How do I prioritize multiple loans?", "a": "Pay minimums on all loans; apply extra funds to the highest effective interest-rate loan first (consider penalties)." },
-        { "q": "How accurate is the calculator?", "a": "It uses standard formulas and month-by-month simulation. For exact lender-specific outcomes, check with your bank." }
+        { "q": "What is a Loan Optimization Calculator?", "a": "A loan optimization calculator is a tool that helps you decide whether to reduce EMI, shorten tenure, refinance, or prepay a loan. It goes beyond a simple EMI calculator by showing interest saved, years reduced, and when to refinance." },
+        { "q": "How does a Loan Optimization Calculator work?", "a": "It calculates EMI, interest outgo, and outstanding balance using standard formulas. Then it models “what-if” scenarios like prepayments, refinancing, or changing EMI vs tenure to show savings and optimal strategy." },
+        { "q": "How much interest can I save by prepaying my home loan?", "a": "Prepayment reduces outstanding principal, so future interest is calculated on a smaller balance. For example, a ₹5 lakh prepayment on a ₹50 lakh loan at 8.5% can cut nearly ₹12–15 lakh in total interest if done early." },
+        { "q": "Should I prepay my loan or invest my surplus?", "a": "If your expected post-tax return on investment is higher than your loan interest rate, investing may be better. If not, prepaying is safer, guaranteed, and reduces debt faster." },
+        { "q": "Does prepayment reduce EMI or tenure?", "a": "By default, lenders reduce the loan tenure when you prepay. However, you can request EMI reduction instead. Reducing tenure saves more interest, while reducing EMI eases cash flow." },
+        { "q": "What is an EMI and how is it calculated?", "a": "EMI (Equated Monthly Installment) is the fixed payment you make each month. Formula: EMI = P × r × (1+r)^n / ((1+r)^n − 1) where P = loan amount, r = monthly interest rate, n = number of months." },
+        { "q": "How can I reduce my EMI without prepayment?", "a": "You can refinance (balance transfer) to a lower rate, extend tenure, or restructure your loan with your bank. However, extending tenure increases total interest." },
+        { "q": "What is a home loan prepayment calculator in India?", "a": "It’s a tool that shows how much interest you save and how many years you cut by making a lump-sum or recurring prepayment. Our Loan Optimization Calculator includes this feature." },
+        { "q": "What is a loan refinancing calculator?", "a": "A refinancing calculator compares your existing loan with a new loan at a lower interest rate. It accounts for fees and shows your net savings. This is useful for home loans, personal loans, and education loans." },
+        { "q": "How does refinancing (balance transfer) work in India?", "a": "You shift your existing loan to another bank offering a lower rate. If the interest saved exceeds processing fees and penalties, refinancing can save you lakhs over time." },
+        { "q": "Can I use this calculator for multiple loans?", "a": "Yes. You can optimize home loans, car loans, personal loans, education loans, and even credit card debt. For multiple loans, prioritize high-interest debt first." },
+        { "q": "How do I decide between prepaying vs refinancing?", "a": "If you expect to keep the loan long-term and the rate difference is big, refinancing is better. If you have surplus cash, prepaying saves more. Sometimes doing both gives the best results." },
+        { "q": "How accurate is this Loan Optimization Calculator?", "a": "It uses standard amortization formulas and tax rules. Real-world results depend on lender policies, fees, and your repayment discipline. Always confirm with your bank." },
+        { "q": "Are there prepayment penalties in India?", "a": "For floating-rate home loans, RBI has mandated no prepayment penalty. Fixed-rate and personal loans may still carry charges, usually 1–3% of the amount prepaid." },
+        { "q": "Are home loan prepayments tax deductible?", "a": "No. Only interest (u/s 24) and principal (u/s 80C) are deductible. Prepayment reduces future interest outgo, but doesn’t give an extra tax deduction." },
+        { "q": "Can this calculator generate an amortization schedule?", "a": "Yes. You can view your loan breakdown month by month, showing principal, interest, outstanding balance, and impact of prepayments. Download as CSV or PDF." },
+        { "q": "Is refinancing always a good idea?", "a": "Not always. Refinancing makes sense only if the rate difference is at least 0.5–1.0%, the loan tenure left is significant, and processing fees don’t eat into savings." },
+        { "q": "How to prioritize paying off multiple loans?", "a": "Use the debt avalanche method: prepay the highest interest loan first (e.g., credit card > personal loan > car loan > home loan). This saves maximum interest." },
+        { "q": "Can I use the calculator for education or personal loans?", "a": "Yes. It works for all amortized loans in India—home, education, personal, car, and gold loans." },
+        { "q": "What is the best way to optimize a home loan in India?", "a": "Start with regular prepayments in the first 5 years, refinance if better rates are available, and align EMIs with salary hikes (step-up strategy). This can cut 5–7 years off a 20-year loan." }
       ]
     },
-    "methodology": {
-      "h2": "13. Sources, methodology & update log",
-      "body": "<p><strong>Methodology:</strong> Calculations use standard financial formulas and month-by-month amortization simulation. Assumptions like monthly compounding and payment timing are explicitly stated.</p><p><strong>Update log:</strong> Last content update: September 2025. Reviewed by Mahesh Chaube, CFP; editorial review by Laveena Vijayi.</p>"
+    "conclusion": {
+      "title": "Conclusion: How to Optimize Your Loan the Smart Way",
+      "body": "Loan optimization is not a one-time event; it's an ongoing strategy. By regularly reviewing your options—prepaying when you have a surplus, refinancing when rates drop, and always prioritizing high-interest debt—you can save lakhs in interest and achieve financial freedom years earlier. Use this calculator as your co-pilot on that journey."
     }
   },
   "ups_pension_calculator": {
@@ -1158,3 +1150,5 @@
       "h1": "Mutual Fund Overlap Calculator"
   }
 }
+
+    
