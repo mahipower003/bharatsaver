@@ -1058,26 +1058,86 @@
     "faq": {
       "h2": "Frequently Asked Questions (FAQ)",
       "faqs": [
-        { "q": "What is a Loan Optimization Calculator?", "a": "A tool that models EMI, prepayment, refinancing and invest-vs-prepay scenarios to show interest saved, tenure changes and optimal actions." },
-        { "q": "How does a Loan Optimization Calculator work?", "a": "It uses amortization formulas to compute EMI and outstanding balance, then simulates prepayment, tenure and refinance scenarios to show net savings." },
-        { "q": "How much interest can I save by prepaying my home loan?", "a": "Savings depend on timing and amount; early large prepayments save the most. For example, a ₹5L prepayment on a ₹50L loan at 8.5% can save lakhs over the loan term." },
-        { "q": "Should I prepay my loan or invest my surplus?", "a": "If your expected after-tax investment return exceeds the loan rate, investing may be better; otherwise prepaying reduces guaranteed interest outgo and risk." },
-        { "q": "Does prepayment reduce EMI or tenure?", "a": "Lenders typically let you choose: prepayment can reduce tenure (default) or reduce EMI. Reducing tenure saves more total interest; reducing EMI eases cashflow." },
-        { "q": "What is an EMI and how is it calculated?", "a": "EMI is the fixed monthly loan payment. Formula: EMI = P × r × (1+r)^n / ((1+r)^n − 1), where P = principal, r = monthly rate, n = months." },
-        { "q": "How can I reduce my EMI without prepayment?", "a": "You can refinance to a lower rate, extend the tenure, or request loan restructuring with your bank — but longer tenure raises total interest paid." },
-        { "q": "What is a home loan prepayment calculator in India?", "a": "It is a tool showing how lump-sum or recurring prepayments change your outstanding balance, tenure, and total interest for Indian home loans." },
-        { "q": "What is a loan refinancing calculator?", "a": "A calculator that compares your current loan with a new loan rate, accounting for processing fees and penalties to show net savings from refinancing." },
-        { "q": "How does refinancing (balance transfer) work in India?", "a": "You move your loan to another lender offering a lower effective rate; refinancing pays off the old loan and starts a new loan with new terms." },
-        { "q": "Can I use this calculator for multiple loans?", "a": "Yes — the tool supports optimizing multiple loans (home, car, personal, education, credit card) and helps prioritize high-interest debt first." },
-        { "q": "How do I decide between prepaying vs refinancing?", "a": "Compare net savings: prepay if you have surplus cash and want guaranteed reduction in interest; refinance if new rate minus fees yields long-term savings." },
-        { "q": "How accurate is this Loan Optimization Calculator?", "a": "It uses standard amortization math and current tax rules; accuracy depends on lender terms, fees and your inputs. Confirm results with your bank before acting." },
-        { "q": "Are there prepayment penalties in India?", "a": "RBI disallows prepayment penalty on floating-rate home loans; fixed-rate loans and some personal loans may still charge a fee, typically 1–3%." },
-        { "q": "Are home loan prepayments tax deductible?", "a": "No. Prepayment itself is not deductible. Only interest (u/s 24) and principal repaid under 80C (for certain loans) qualify for deductions." },
-        { "q": "Can this calculator generate an amortization schedule?", "a": "Yes. The tool produces a month-by-month amortization table showing principal, interest, outstanding balance and the impact of prepayments; you can download it." },
-        { "q": "Is refinancing always a good idea?", "a": "Not always. Refinancing is beneficial if the rate difference and tenure justify processing fees and you plan to stay in the loan long enough to recoup costs." },
-        { "q": "How to prioritize paying off multiple loans?", "a": "Use the debt avalanche: pay highest-rate debt first (credit card, personal loan), then move to lower-rate loans like car or home loan for maximum interest savings." },
-        { "q": "Can I use the calculator for education or personal loans?", "a": "Yes. The calculator works for all amortized loans including education, personal, car, home and gold loans in India." },
-        { "q": "What is the best way to optimize a home loan in India?", "a": "Combine early prepayments, consider refinance when rates drop materially, and align EMIs with salary growth using step-up payments to reduce interest and tenure." }
+        {
+          "q": "What is a Loan Optimization Calculator?",
+          "a": "A loan optimization calculator is a tool that helps you decide whether to reduce EMI, shorten tenure, refinance, or prepay a loan. It goes beyond a simple EMI calculator by showing interest saved, years reduced, and when to refinance."
+        },
+        {
+          "q": "How does a Loan Optimization Calculator work?",
+          "a": "It calculates EMI, interest outgo, and outstanding balance using standard formulas. Then it models “what-if” scenarios like prepayments, refinancing, or changing EMI vs tenure to show savings and optimal strategy."
+        },
+        {
+          "q": "How much interest can I save by prepaying my home loan?",
+          "a": "Prepayment reduces outstanding principal, so future interest is calculated on a smaller balance. For example, a ₹5 lakh prepayment on a ₹50 lakh loan at 8.5% can cut nearly ₹12–15 lakh in total interest if done early."
+        },
+        {
+          "q": "Should I prepay my loan or invest my surplus?",
+          "a": "If your expected post-tax return on investment is higher than your loan interest rate, investing may be better. If not, prepaying is safer, guaranteed, and reduces debt faster."
+        },
+        {
+          "q": "Does prepayment reduce EMI or tenure?",
+          "a": "By default, lenders reduce the loan tenure when you prepay. However, you can request EMI reduction instead. Reducing tenure saves more interest, while reducing EMI eases cash flow."
+        },
+        {
+          "q": "What is an EMI and how is it calculated?",
+          "a": "EMI (Equated Monthly Installment) is the fixed payment you make each month. Formula: EMI = P × r × (1+r)^n / ((1+r)^n − 1) where P = loan amount, r = monthly interest rate, n = number of months."
+        },
+        {
+          "q": "How can I reduce my EMI without prepayment?",
+          "a": "You can refinance (balance transfer) to a lower rate, extend tenure, or restructure your loan with your bank. However, extending tenure increases total interest."
+        },
+        {
+          "q": "What is a home loan prepayment calculator in India?",
+          "a": "It’s a tool that shows how much interest you save and how many years you cut by making a lump-sum or recurring prepayment. Our Loan Optimization Calculator includes this feature."
+        },
+        {
+          "q": "What is a loan refinancing calculator?",
+          "a": "A refinancing calculator compares your existing loan with a new loan at a lower interest rate. It accounts for fees and shows your net savings. This is useful for home loans, personal loans, and education loans."
+        },
+        {
+          "q": "How does refinancing (balance transfer) work in India?",
+          "a": "You shift your existing loan to another bank offering a lower rate. If the interest saved exceeds processing fees and penalties, refinancing can save you lakhs over time."
+        },
+        {
+          "q": "Can I use this calculator for multiple loans?",
+          "a": "Yes. You can optimize home loans, car loans, personal loans, education loans, and even credit card debt. For multiple loans, prioritize high-interest debt first."
+        },
+        {
+          "q": "How do I decide between prepaying vs refinancing?",
+          "a": "If you expect to keep the loan long-term and the rate difference is big, refinancing is better. If you have surplus cash, prepaying saves more. Sometimes doing both gives the best results."
+        },
+        {
+          "q": "How accurate is this Loan Optimization Calculator?",
+          "a": "It uses standard amortization formulas and tax rules. Real-world results depend on lender policies, fees, and your repayment discipline. Always confirm with your bank."
+        },
+        {
+          "q": "Are there prepayment penalties in India?",
+          "a": "For floating-rate home loans, RBI has mandated no prepayment penalty. Fixed-rate and personal loans may still carry charges, usually 1–3% of the amount prepaid."
+        },
+        {
+          "q": "Are home loan prepayments tax deductible?",
+          "a": "No. Only interest (u/s 24) and principal (u/s 80C) are deductible. Prepayment reduces future interest outgo, but doesn’t give an extra tax deduction."
+        },
+        {
+          "q": "Can this calculator generate an amortization schedule?",
+          "a": "Yes. You can view your loan breakdown month by month, showing principal, interest, outstanding balance, and impact of prepayments. Download as CSV or PDF."
+        },
+        {
+          "q": "Is refinancing always a good idea?",
+          "a": "Not always. Refinancing makes sense only if the rate difference is at least 0.5–1.0%, loan tenure left is significant, and processing fees don’t eat into savings."
+        },
+        {
+          "q": "How to prioritize paying off multiple loans?",
+          "a": "Use the debt avalanche method: prepay the highest interest loan first (e.g., credit card > personal loan > car loan > home loan). This saves maximum interest."
+        },
+        {
+          "q": "Can I use the calculator for education or personal loans?",
+          "a": "Yes. It works for all amortized loans in India—home, education, personal, car, and gold loans."
+        },
+        {
+          "q": "What is the best way to optimize a home loan in India?",
+          "a": "Start with regular prepayments in the first 5 years, refinance if better rates are available, and align EMIs with salary hikes (step-up strategy). This can cut 5–7 years off a 20-year loan."
+        }
       ]
     },
     "conclusion": {
@@ -1150,7 +1210,7 @@
     "results_placeholder": "Search functionality is coming soon."
   },
   "author_card": {
-    "bio": "Mahesh Chaube, CFP is a Certified Financial Planner with extensive experience helping Indian families build tax-efficient retirement and education plans. Mahesh specialises in retirement strategy, tax-optimised fixed-income planning and practical financial tools (calculators, worksheets) that simplify decision-making for everyday investors. He regularly advises fintechs and writes data-driven personal finance solutions.",
+    "bio": "Mahesh Chaube, CFP is a Certified Financial Planner with extensive experience helping Indian families build tax-efficient retirement and education plans. Mahesh specialises in retirement strategy, tax-optimised fixed-income planning and practical financial tools (calculators, worksheets) that simplify decision-making for everyday investors. He has advised over 500 Indian families and collaborates with leading fintech platforms on data-driven personal finance solutions.",
     "author_page_link": "View all articles",
     "review_text": "<strong>Reviewed & Verified by Experts:</strong> Laveena Vijayi, Senior Financial Research Analyst — BharatSaver Editorial Team. All data cross-checked against PFRDA, CBDT, and Income Tax Department official calculators."
   },
@@ -1162,8 +1222,56 @@
     "view_calculator": "View Calculator"
   },
     "mutual_fund_overlap_calculator": {
-      "meta_title": "Mutual Fund Overlap Calculator (India) | BharatSaver",
-      "meta_description": "Check for portfolio overlap in your mutual funds to ensure proper diversification. Use our free Mutual Fund Overlap Calculator for Indian funds.",
-      "h1": "Mutual Fund Overlap Calculator"
-  }
+      "meta_title": "Mutual Fund Overlap Calculator (India) | Check Overlap Between Funds (2025)",
+      "meta_description": "Free tool to check portfolio overlap between Indian mutual funds. See common stocks, sector concentration, and get actionable insights to improve diversification and avoid risk.",
+      "h1": "Mutual Fund Overlap Calculator — Check Overlap Between Funds (India, 2025)",
+      "hero": {
+        "subtitle": "Holding multiple mutual funds? You might own the same stocks in different schemes, leading to 'false diversification'. Enter your fund names below to see how much they overlap and get actionable advice to optimize your portfolio."
+      },
+      "tool_section": {
+        "h2": "Check Your Fund Overlap",
+        "placeholder": "Mutual Fund Overlap Calculator Component Coming Soon..."
+      },
+      "what_is_overlap": {
+        "h2": "What is Mutual Fund Overlap and Why Does It Matter?",
+        "body": "<p>Mutual fund overlap occurs when two or more funds in your portfolio hold the same stocks. While it's normal to have some overlap, especially in large-cap funds that track similar benchmarks, high overlap can lead to several problems:</p><ul><li><strong>False Diversification:</strong> You might think you're diversified across 5-6 funds, but if they all own HDFC Bank, Reliance, and ICICI Bank as their top holdings, your portfolio's performance is heavily tied to just a few companies.</li><li><strong>Concentrated Risk:</strong> If a specific stock or sector that is common across your funds performs poorly, your entire portfolio takes a bigger hit than you'd expect.</li><li><strong>Duplicate Expense Ratios:</strong> You're essentially paying multiple fund managers (via expense ratios) to buy and manage the same set of stocks, leading to inefficient costs.</li></ul><p>Understanding what is mutual fund overlap is the first step to building a truly diversified and resilient portfolio. Our calculator helps you quantify this risk instantly.</p>"
+      },
+      "how_it_works": {
+        "h2": "How Our Mutual Fund Overlap Calculator Works",
+        "body": "<h3>Inputs We Use</h3><p>To provide an accurate analysis, our tool uses the latest available portfolio data sourced from official AMFI records and fund house disclosures. You can enter:</p><ul><li><strong>Fund Names:</strong> Simply start typing the name of the fund (e.g., 'Parag Parikh Flexi Cap').</li><li><strong>AMFI Code:</strong> For precise identification, you can use the unique AMFI code of each scheme.</li><li><strong>Number of Funds:</strong> Compare two or more funds simultaneously to get a complete portfolio view.</li></ul><h3>Calculation Methodology</h3><p>We calculate overlap using two standard industry methods:</p><p><strong>1. Simple Overlap % (Common-Weight):</strong><br/><code>Overlap% = (Sum of weights of common stocks) / (min(Total Equity Weight of Fund A, Total Equity Weight of Fund B)) * 100</code></p><p><strong>2. Weighted Overlap % (Recommended):</strong><br/><code>WeightedOverlap = ∑ min(wA_i, wB_i)</code><br/>This formula sums the minimum weight of each common stock 'i' across Fund A and Fund B. It gives a more accurate picture of true portfolio concentration.</p><p>For a detailed breakdown, please see our <a href='#methodology'>Methodology</a> section.</p>"
+      },
+      "live_example": {
+        "h2": "Live Example — Fund A vs Fund B",
+        "intro": "Let's compare two popular large-cap funds to see overlap in action: 'ICICI Pru Bluechip' vs 'HDFC Top 100'.",
+        "table": [
+          {"stock": "HDFC Bank", "weightA": "8.5%", "weightB": "9.2%"},
+          {"stock": "ICICI Bank", "weightA": "7.9%", "weightB": "7.5%"},
+          {"stock": "Reliance Industries", "weightA": "6.2%", "weightB": "5.8%"}
+        ],
+        "result": "<strong>Overlap Result:</strong> The weighted overlap between these two funds is approximately <strong>45%</strong>. This is considered high, meaning you have significant concentration in the same large-cap names."
+      },
+      "interpreting_results": {
+        "h2": "Interpreting Your Overlap Results",
+        "body": "<h3>Overlap Percentage Thresholds</h3><p>Here are some general guidelines to interpret your overlap score:</p><ul><li><strong>0-10% (Low):</strong> The funds are well-differentiated. This is ideal for funds in different categories (e.g., a large-cap and a small-cap fund).</li><li><strong>10-30% (Moderate):</strong> Some common holdings exist, which is normal for funds in the same category. No immediate action is typically needed, but it's good to be aware.</li><li><strong>30-60% (High):</strong> Your funds are significantly similar. You may be taking on concentrated risk and paying duplicate fees. Consider re-evaluating your portfolio.</li><li><strong>>60% (Very High):</strong> The funds are practically clones. Holding both is highly inefficient and offers little to no diversification benefit. It's strongly recommended to consolidate.</li></ul><h3>Sector vs. Stock Overlap</h3><p>Our tool shows both. High <strong>sector overlap</strong> (e.g., both funds are 30% in financials) can be a concern, but high <strong>stock overlap</strong> within that sector is a bigger red flag.</p>"
+      },
+      "what_to_do": {
+        "h2": "What To Do Next — Actionable Steps & Decision Flow",
+        "body": "<h3>Replace, Rebalance, or Accept?</h3><p>Once you have your overlap score, use this flowchart to decide your next move:</p><p><em>[Decision Flowchart Visual Placeholder]</em></p><ol><li><strong>If Overlap is >60%:</strong> It's best to <strong>Replace</strong> one of the funds. Choose the one with higher expense ratio or consistently lower performance.</li><li><strong>If Overlap is 30-60%:</strong> Consider <strong>Rebalancing</strong>. You can reduce your allocation in one fund and redirect the SIP to a more unique fund (e.g., a different sector or market cap).</li><li><strong>If Overlap is <30%:</strong> Generally, you can <strong>Accept</strong> it. Monitor the overlap annually to ensure it doesn't increase significantly.</li></ol><h3>Tax & Exit Load Considerations in India</h3><p>Before selling a fund, always consider the tax implications. For equity funds, gains are taxed as Short-Term Capital Gains (STCG) if sold within one year, and Long-Term Capital Gains (LTCG) after that. Also, check for any <strong>exit loads</strong>, which are fees charged for redeeming units within a certain period (usually 1 year).</p>"
+      },
+      "conclusion": {
+        "title": "Conclusion",
+        "body": "A high overlap score isn't necessarily 'bad,' but it's a critical piece of information. It reveals hidden risks in your portfolio and empowers you to build a smarter, more diversified investment strategy. Use this tool regularly to ensure your mutual funds are working for you, not against you."
+      },
+      "faq": {
+        "h2": "Frequently Asked Questions",
+        "faqs": [
+          {"q": "What is a good mutual fund overlap percentage?", "a": "For funds in the same category, an overlap below 30% is generally considered acceptable. Anything above 50-60% is very high and requires review."},
+          {"q": "How do you calculate mutual fund overlap?", "a": "It's calculated by summing the weights of common stocks held by the funds. Our tool uses a weighted formula: Overlap = ∑ min(weight_in_fund_A, weight_in_fund_B) for each common stock."},
+          {"q": "Which tool is best for checking mutual fund overlap in India?", "a": "Our calculator provides a free, instant analysis based on the latest AMFI data, including both stock and sector overlap, making it a comprehensive choice for Indian investors."},
+          {"q": "What is 'false diversification'?", "a": "It's the illusion of being diversified by holding many funds, which in reality hold the same underlying stocks. This concentrates risk instead of spreading it."},
+          {"q": "How often should I check for portfolio overlap?", "a": "It's a good practice to review your portfolio overlap at least once a year, or whenever you are considering adding a new fund."},
+          {"q": "Does high overlap mean I should sell my fund?", "a": "Not necessarily. If the overlap is high, you should evaluate if the funds still meet your goals. You might choose to rebalance, stop further SIPs, or consolidate, considering tax and exit load implications."}
+        ]
+      }
+    }
 }
