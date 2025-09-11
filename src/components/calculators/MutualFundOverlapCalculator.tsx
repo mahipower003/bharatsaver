@@ -8,7 +8,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Checkbox } from '@/components/ui/checkbox';
-import { Download, Copy, Share2, PlusCircle, Trash2, BarChart2 } from 'lucide-react';
+import { Download, Copy, PlusCircle, Trash2, BarChart2 } from 'lucide-react';
 import type { Dictionary } from '@/types';
 
 /**
@@ -34,20 +34,27 @@ type Fund = {
  * @returns An array of Holding objects.
  */
 const parseHoldings = (text: string): Holding[] => {
-  const lines = text.split(/\n|\r/).map((l) => l.trim()).filter(Boolean);
+  const lines = text.split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
   const holdings: Holding[] = [];
+
   for (const line of lines) {
-    const parts = line.split(",").map((p) => p.trim());
+    // This regex is more robust for comma-separated values where the name might contain commas
+    const parts = line.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/).map(p => p.trim().replace(/^"|"$/g, ''));
     if (parts.length < 3) continue;
+
     const weightStr = parts[parts.length - 2];
     const sector = parts[parts.length - 1] || "Unknown";
     const symbol = parts[0];
     const name = parts.slice(1, -2).join(", ");
-    const weight = parseFloat(weightStr.replace("%", "")) || 0;
-    holdings.push({ symbol: symbol.toUpperCase(), name, weight, sector });
+    const weight = parseFloat(weightStr.replace(/%/g, '')) || 0;
+
+    if (symbol && !isNaN(weight)) {
+        holdings.push({ symbol: symbol.toUpperCase(), name, weight, sector });
+    }
   }
   return holdings;
 };
+
 
 type OverlapResult = {
   weightedOverlap: number;
@@ -64,26 +71,25 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
       name: "HDFC Top 100 (example)",
       sourceDate: "01-Sep-2025",
       holdingsText:
-        "RELIANCE, Reliance Industries Ltd, 8.2, Energy\nHDFCBANK, HDFC Bank Ltd, 6.3, Financials\nICICIBANK, ICICI Bank Ltd, 4.9, Financials\nTCS, Tata Consultancy Services, 5.0, Technology\nINFY, Infosys Ltd, 4.5, Technology",
+        "RELIANCE, Reliance Industries Ltd, 8.2%, Energy\nHDFCBANK, HDFC Bank Ltd, 6.3%, Financials\nICICIBANK, ICICI Bank Ltd, 4.9%, Financials\nTCS, Tata Consultancy Services, 5.0%, Technology\nINFY, Infosys Ltd, 4.5%, Technology",
     },
     {
       id: 2,
       name: "SBI Bluechip (example)",
       sourceDate: "01-Sep-2025",
       holdingsText:
-        "RELIANCE, Reliance Industries Ltd, 7.5, Energy\nHDFCBANK, HDFC Bank Ltd, 5.8, Financials\nICICIBANK, ICICI Bank Ltd, 4.4, Financials\nINFY, Infosys Ltd, 3.9, Technology\nTITAN, Titan Company Ltd, 2.5, Consumer",
+        "RELIANCE, Reliance Industries Ltd, 7.5%, Energy\nHDFCBANK, HDFC Bank Ltd, 5.8%, Financials\nICICIBANK, ICICI Bank Ltd, 4.4%, Financials\nINFY, Infosys Ltd, 3.9%, Technology\nTITAN, Titan Company Ltd, 2.5%, Consumer",
     },
   ]);
 
-  const [activeFundsCount, setActiveFundsCount] = useState(2);
   const [includeSectors, setIncludeSectors] = useState(true);
 
   const parsedFunds = useMemo(() => {
-    return funds.slice(0, activeFundsCount).map((f) => ({
+    return funds.map((f) => ({
       ...f,
       holdings: parseHoldings(f.holdingsText),
     }));
-  }, [funds, activeFundsCount]);
+  }, [funds]);
 
   const overlapResult: OverlapResult | null = useMemo(() => {
     if (parsedFunds.length < 2) return null;
@@ -103,19 +109,22 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
     const symbolRows: { symbol: string; perFund: number[]; minWeight: number; exampleName: string; sector: string }[] = [];
     allSymbols.forEach(symbol => {
       const perFund = fundWeightMaps.map((fw) => fw.map.get(symbol)?.weight || 0);
-      const minWeight = Math.min(...perFund);
+      const minWeight = Math.min(...perFund.filter(w => w > 0)); // Only consider funds that actually hold the stock
+      
       const firstFundWithStock = fundWeightMaps.find(fw => fw.map.has(symbol));
       const stockInfo = firstFundWithStock?.map.get(symbol);
       
-      symbolRows.push({
-        symbol,
-        perFund,
-        minWeight,
-        exampleName: stockInfo?.name || "N/A",
-        sector: stockInfo?.sector || "Unknown",
-      });
+      if(perFund.filter(w => w > 0).length > 1) { // Only include if it's an overlap
+          symbolRows.push({
+            symbol,
+            perFund,
+            minWeight,
+            exampleName: stockInfo?.name || "N/A",
+            sector: stockInfo?.sector || "Unknown",
+          });
+      }
     });
-
+    
     const weightedOverlap = symbolRows.reduce((s, r) => s + r.minWeight, 0);
 
     const pairwise: { i: number; j: number; percent: number }[] = [];
@@ -125,7 +134,9 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
         allSymbols.forEach(symbol => {
             const w1 = fundWeightMaps[i].map.get(symbol)?.weight || 0;
             const w2 = fundWeightMaps[j].map.get(symbol)?.weight || 0;
-            sumMin += Math.min(w1, w2);
+            if(w1 > 0 && w2 > 0) {
+               sumMin += Math.min(w1, w2);
+            }
         });
         const denom = Math.min(fundWeightMaps[i].totalEquityWeight || 100, fundWeightMaps[j].totalEquityWeight || 100);
         const percent = denom > 0 ? (sumMin / denom) * 100 : 0;
@@ -143,7 +154,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
     const topOverlapStocks = symbolRows
       .filter((r) => r.minWeight > 0)
       .sort((a, b) => b.minWeight - a.minWeight)
-      .map((r) => ({ ...r, name: r.exampleName }));
+      .map((r) => ({ ...r, name: r.exampleName } as any)); // Type assertion to satisfy Holding type
       
     const sectorOverlap = Array.from(sectorMap.entries())
         .map(([sector, weight]) => ({ sector, weight: Number(weight.toFixed(4)) }))
@@ -199,12 +210,10 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
     if (funds.length >= 5) return;
     const id = (funds[funds.length - 1]?.id || 0) + 1;
     setFunds((p) => [...p, { id, name: `Fund ${id}`, sourceDate: new Date().toLocaleDateString('en-CA'), holdingsText: "" }]);
-    setActiveFundsCount((c) => c + 1);
   };
 
   const removeFund = (id: number) => {
     setFunds((p) => p.filter((f) => f.id !== id));
-    setActiveFundsCount((c) => Math.max(2, c - 1));
   };
   
   const getOverlapLevel = (overlap: number) => {
