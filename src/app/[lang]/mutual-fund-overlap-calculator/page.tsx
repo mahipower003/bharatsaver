@@ -9,6 +9,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import Link from 'next/link';
+import { MutualFundOverlapCalculator } from "@/components/calculators/MutualFundOverlapCalculator";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -155,7 +156,7 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
             <CardTitle className="flex items-center gap-3"><Layers className="h-6 w-6 text-primary"/>{dictionary.mutual_fund_overlap_calculator.tool_section.h2}</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-center text-muted-foreground py-12">{dictionary.mutual_fund_overlap_calculator.tool_section.placeholder}</p>
+            <MutualFundOverlapCalculator dictionary={dictionary.mutual_fund_overlap_calculator} />
           </CardContent>
         </Card>
 
