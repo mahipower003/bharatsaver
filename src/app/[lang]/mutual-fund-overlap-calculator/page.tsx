@@ -14,18 +14,24 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
+  const dictionary = await getDictionary(params.lang, ['mutual_fund_overlap_calculator', 'author_card']);
+  const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
+  const pageUrl = `${siteUrl}/${params.lang}/mutual-fund-overlap-calculator`;
+  const ogImageUrl = `${siteUrl}/images/mutual-fund-overlap-og.png`;
+  
   if (params.lang !== 'en') {
-    const dictionary = await getDictionary(params.lang, ['mutual_fund_overlap_calculator']);
     return {
       title: dictionary.mutual_fund_overlap_calculator.meta_title,
       description: dictionary.mutual_fund_overlap_calculator.meta_description,
+       alternates: {
+        canonical: pageUrl,
+        languages: i18nConfig.locales.reduce((acc, locale) => {
+            acc[locale] = `${siteUrl}/${locale}/mutual-fund-overlap-calculator`;
+            return acc;
+        }, {} as Record<string, string>),
+       },
     };
   }
-  
-  const dictionary = await getDictionary('en', ['mutual_fund_overlap_calculator', 'author_card']);
-  const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/en/mutual-fund-overlap-calculator`;
-  const ogImageUrl = `${siteUrl}/images/mutual-fund-overlap-og.png`;
 
   const softwareSchema = {
     "@context": "https://schema.org",
@@ -35,6 +41,12 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     "applicationCategory": "FinanceApplication",
     "operatingSystem": "Web",
     "description": "Free tool to check for portfolio overlap between two or more Indian mutual funds. See common stocks, sector concentration, and get actionable insights to improve diversification.",
+     "author": {
+      "@type": "Person",
+      "name": "Mahesh Chaube",
+      "jobTitle": "CFP",
+      "sameAs": "https://www.linkedin.com/in/mahi003/"
+    },
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -48,22 +60,22 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     "mainEntityOfPage": { "@type": "WebPage", "@id": pageUrl },
     "headline": dictionary.mutual_fund_overlap_calculator.h1,
     "description": dictionary.mutual_fund_overlap_calculator.meta_description,
-    "image": ogImageUrl,
+    "image": [ogImageUrl],
     "author": {
-      "@type": "Person",
-      "name": "Mahesh Chaube, CFP",
-      "url": `${siteUrl}/en/author/mahesh-chaube`
+        "@type": "Person",
+        "name": "Mahesh Chaube",
+        "jobTitle": "CFP",
+        "url": `${siteUrl}/${params.lang}/author/mahesh-chaube`
+    },
+    "editor": {
+        "@type": "Person",
+        "name": "Laveena Vijayi",
+        "jobTitle": "Senior Financial Research Analyst"
     },
     "publisher": {
       "@type": "Organization",
       "name": "BharatSaver",
       "logo": { "@type": "ImageObject", "url": `${siteUrl}/icon.svg` }
-    },
-    "review": {
-      "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Laveena Vijayi", "jobTitle": "Senior Financial Research Analyst" },
-      "reviewBody": "This tool provides an accurate and in-depth analysis of portfolio overlap, going beyond simple percentages to offer actionable rebalancing advice. The methodology is transparent and aligns with industry best practices."
     },
     "datePublished": "2024-07-20",
     "dateModified": "2025-09-01"
@@ -112,6 +124,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 export default async function MutualFundOverlapCalculatorPage({ params }: { params: { lang: Locale }}) {
   const dictionary = await getDictionary(params.lang, ['mutual_fund_overlap_calculator', 'author_card']);
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
+  const pageUrl = `${siteUrl}/${params.lang}/mutual-fund-overlap-calculator`;
 
   if (params.lang !== 'en') {
     return (
@@ -148,7 +161,7 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
             <span className="bs-author">By <strong>Mahesh Chaube, CFP</strong></span>
             <span className="bs-sep">|</span>
             <span className="bs-updated">Last updated: <time dateTime="2025-09-01">September 2025</time></span>
-            <div className="bs-reviewed">Reviewed by <strong>Laveena Vijayi</strong> — BharatSaver Editorial Team</div>
+            <div className="bs-reviewed" dangerouslySetInnerHTML={{ __html: dictionary.author_card.review_text }} />
           </div>
           <p className="mt-4 text-lg text-muted-foreground">{dictionary.mutual_fund_overlap_calculator.hero.subtitle}</p>
         </div>
@@ -229,6 +242,13 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
                 </Accordion>
             </CardContent>
           </Card>
+
+            <Card>
+                <CardHeader>
+                    <CardTitle className="flex items-center gap-3"><Layers className="h-6 w-6 text-primary"/>{dictionary.mutual_fund_overlap_calculator.methodology.h2}</CardTitle>
+                </CardHeader>
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.mutual_fund_overlap_calculator.methodology.body }} />
+            </Card>
         </div>
 
         <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
@@ -248,3 +268,4 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
     </div>
   );
 }
+
