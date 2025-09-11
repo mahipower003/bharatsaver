@@ -297,3 +297,5 @@ export default async function NpsCalculatorPage({ params }: { params: { lang: Lo
     </div>
   );
 }
+
+    
