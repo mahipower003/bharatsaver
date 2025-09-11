@@ -383,8 +383,8 @@
         "answer": "महिन्याच्या 5 व्या आणि शेवटच्या दिवसाच्या दरम्यानच्या सर्वात कमी शिलकीवर व्याज मोजले जाते. 5 व्या तारखेपूर्वी जमा केल्याने तुमचे पैसे त्या संपूर्ण महिन्यासाठी व्याज मिळवतात हे सुनिश्चित होते. तुम्ही नंतर जमा केल्यास, तुम्ही त्या विशिष्ट ठेवीवर त्या महिन्याचे व्याज गमावता."
       },
       {
-        "question": "एक SSY खाते चरण-दर-चरण कसे पुनरुज्जीवित करावे?",
-        "answer": "तुम्ही किमान ₹250 जमा करण्यास चुकल्यास, तुमचे खाते निष्क्रिय होते. ते पुनरुज्जीवित करण्यासाठी, तुमच्या बँकेला/पोस्ट ऑफिसला भेट द्या, పునరుద్ధరణ ఫారమ్ నింపండి, आणि ప్రతి తప్పిన సంవత్సరానికి ఒక చిన్న జరిమానాతో పాటు మొత్తం తప్పిన డిపాజిట్లను (ప్రతి సంవత్సరానికి ₹250) చెల్లించండి. మీ ఖాతా మళ్లీ చురుకుగా మారుతుంది."
+        "question": "एक एसएसवाई खाते चरण-दर-चरण कसे पुनर्जीवित करें?",
+        "answer": "यदि आप न्यूनतम ₹250 जमा करने से चूक जाते हैं, तो आपका खाता निष्क्रिय हो जाता है। इसे पुनर्जीवित करने के लिए, अपने बैंक/पोस्ट ऑफिस पर जाएं, पुनरुద్ధरण ఫారమ్ నింపండి, और ప్రతి తప్పిన సంవత్సరానికి ఒక చిన్న జరిమానాతో పాటు మొత్తం తప్పిన డిపాజిట్లను (ప్రతి సంవత్సరానికి ₹250) చెల్లించండి. మీ ఖాతా మళ్లీ చురుకుగా మారుతుంది।"
       },
       {
         "question": "नामांकन आणि हस्तांतरण नियम काय आहेत?",
@@ -392,7 +392,7 @@
       },
       {
         "question": "पालक/पालक मरण पावल्यास काय होते?",
-        "answer": "ठेवीदाराच्या (पालक/पालक) दुर्दैवी मृत्यू झाल्यास, खाते दुसऱ्या पालकाने किंवा नवीन कायदेशीर पालकाने सुरू ठेवले जाऊ शकते. शक्य नसल्यास, खाते సాధారణంగా మూసివేయబడుతుంది, మరియు వడ్డీతో కూడిన బ్యాలెన్స్ బాలిక యొక్క నామినీ లేదా చట్టపరమైన వారసునికి చెల్లించబడుతుంది."
+        "answer": "ठेवीदाराच्या (पालक/पालक) दुर्दैवी मृत्यू झाल्यास, खाते दुसऱ्या पालकाने किंवा नवीन कायदेशीर पालकाने सुरू ठेवले जाऊ शकते. शक्य नसल्यास, ఖాతా సాధారణంగా మూసివేయబడుతుంది, మరియు వడ్డీతో కూడిన బ్యాలెన్స్ బాలిక యొక్క నామినీ లేదా చట్టపరమైన వారసునికి చెల్లించబడుతుంది."
       },
       { "question": "2025 साठी SSY चा सध्याचा व्याज दर काय आहे?", "answer": "एप्रिल-जून 2025 साठी SSY व्याज दर <strong>8.2%</strong> आहे (भारत सरकारद्वारे त्रैमासिक बदलाच्या अधीन)." },
       { "question": "SSY व्याज कसे मोजले जाते?", "answer": "SSY वार्षिक चक्रवाढ होते. नियमित वार्षिक ठेवींसाठी, प्रत्येक वर्षाच्या ठेवीची वाढ मॅच्युरिटीपर्यंत मोजा आणि त्यांना एकत्र करा. A = P(1+r)^(वर्षे) वापरा. आमचा कॅल्क्युलेटर तुमच्यासाठी हे स्वयंचलितपणे करतो." },
@@ -405,12 +405,12 @@
     }
   },
   "nps_calculator": {
-    "meta_title": "NPS कॅल्क्युलेटर 2025 — राष्ट्रीय पेन्शन प्रणाली पेन्शन आणि कॉर्पస్ कॅल्क्युलेटर",
-    "meta_description": "तुमच्या सेवानिवृत्ती कॉर्పస్, कर लाभ आणि अपेक्षित मासिक पेन्शनचा अंदाज घेण्यासाठी आमचा मोफत एनपीएस कॅल्क्युलेटर वापरा. मासिक/वार्षिक योगदानाला समर्थन देते - 2025 साठी अद्यतनित एनपीएस नियम.",
+    "meta_title": "NPS कॅल्क्युलेटर 2025 — राष्ट्रीय पेन्शन प्रणाली पेन्షన్ आणि कॉर्पస్ कॅल्क्युलेटर",
+    "meta_description": "तुमच्या सेवानिवृत्ती कॉर्పస్, कर लाभ आणि अपेक्षित मासिक पेन्షన్चा अंदाज घेण्यासाठी आमचा मोफत एनपीएस कॅल्क्युलेटर वापरा. मासिक/वार्षिक योगदानाला समर्थन देते - 2025 साठी अद्यतनित एनपीएस नियम.",
     "og_title": "NPS कॅल्क्युलेटर 2025 — राष्ट्रीय पेन्शन प्रणाली कॉर्పస్ आणि पेन्शन",
-    "og_description": "तुमच्या सेवानिवृत्तीची योजना करण्यासाठी आमचा एनपीएस कॅल्क्युलेटर वापरा. कॉर्పస్ आणि मासिक पेन्షన్चा अंदाज घेण्यासाठी योगदान, अपेक्षित परतावा आणि सेवानिवृత్తిचे वय प्रविष्ट करा.",
+    "og_description": "तुमच्या सेवानिवृत्तीची योजना करण्यासाठी आमचा एनपीएस कॅल्क्युलेटर वापरा. कॉर्పస్ आणि मासिक पेन्షన్चा अंदाज घेण्यासाठी योगदान, अपेक्षित परतावा आणि सेवानिवृत्तिचे वय प्रविष्ट करा.",
     "h1": "एनपीएस कॅल्क्युलेटर — तुमची सेवानिवृत्ती कॉर्పస్ आणि मासिक पेन्शनची गणना करा",
-    "description": "आमच्या एनपीएस (राष्ट्रीय पेन्शन प्रणाली) कॅल्क्युलेटरसह एक आत्मविश्वासपूर्ण सेवानिवृత్తిची योजना करा. तुमचे मासिक किंवा वार्षिक योगदान, अपेक्षित परतावा दर, మరియు सेवानिवृత్తిपर्यंतची वर्षे प्रविष्ट करा — आम्ही तुमचा अंदाजित कॉर्पస్, कर-कार्यक्षम लाभ, మరియు वयाच्या 60 नंतर अंदाजित मासिक ॲన్యుइटी दाखवू.",
+    "description": "आमच्या एनपीएस (राष्ट्रीय पेन्शन प्रणाली) कॅल्क्युलेटरसह एक आत्मविश्वासपूर्ण सेवानिवृత్తిची योजना करा. तुमचे मासिक किंवा वार्षिक योगदान, अपेक्षित परतावा दर, మరియు सेवानिवृత్తిपर्यंतची वर्षे प्रविष्ट करा — आम्ही तुमचा अंदाजित कॉर्పస్, कर-कार्यक्षम लाभ, మరియు वयाच्या 60 नंतर अंदाजित मासिक ॲన్యుइटी दाखवू.",
     "title": "एनपीएस कॅल्क्युलेटर",
     "last_updated": "शेवटचे अद्यतन:",
     "form_description": "राष्ट्रीय पेन्शन प्रणालीसह तुमच्या सेवानिवृत्ती बचतीचा अंदाज घ्या.",
@@ -422,7 +422,7 @@
     "current_age_label": "सध्याचे वय",
     "retirement_age_label": "सेवानिवृत्तीचे वय",
     "expected_returns_label": "अपेक्षित परतावा (% प्रति वर्ष)",
-    "annuity_percentage_label": "ॲన్యుइटीसाठी टक्केवारी",
+    "annuity_percentage_label": "ॲన్యుइటీसाठी टक्केवारी",
     "annuity_percentage_description": "कॉर्పస్च्या किमान 40% ॲన్యుइटी खरेदी करण्यासाठी वापरणे आवश्यक आहे.",
     "annuity_rate_label": "ॲన్యుइटी दर (%)",
     "annuity_rate_description": "तुमच्या पेन्शनसाठी ॲన్యుइటీ उत्पादनातून अपेक्षित दर.",
@@ -492,7 +492,7 @@
       "intro": "एनपीएस सेवानिवृत्ती नियोजनासाठी काही सर्वोत्तम कर-बचत संधी देते:",
       "points": [
         "<strong>कलम 80C:</strong> तुमच्या योगदानासाठी ₹1.5 लाखांपर्यंतची वजावट.",
-        "<strong>कलम 80CCD(1B):</strong> 80C मर्यादेपेक्षा जास्त ₹50,000 पर्यंतची अतिरिक्त वजावट.",
+        "<strong>कलમ 80CCD(1B):</strong> 80C मर्यादेपेक्षा जास्त ₹50,000 पर्यंतची अतिरिक्त वजावट.",
         "<strong>नियोक्ता योगदान:</strong> तुमच्या नियोक्ताचे योगदान (मूळ पगाराच्या 10% पर्यंत) कलम 80CCD(2) अंतर्गत देखील वजावटीस पात्र आहे. स्रोत: <a href='https://incometaxindia.gov.in/Pages/tools/deduction-under-section-80c.aspx' target='_blank' rel='noopener noreferrer' class='underline'>आयकर विभाग</a>."
       ]
     },
@@ -545,7 +545,7 @@
       },
       {
         "question": "मला एनपीएसमधून किती पेन्शन मिळेल?",
-        "answer": "तुमची पेन्షన్ तुमच्या कॉर्పస్ आणि प्रचलित ॲన్యుइటీ दरावर अवलंबून असते. उदाहरण: 6% दराने ₹39.3 लाख ॲన్యుइटीमधून अंदाजे ₹19,650/महिना मिळू शकतो."
+        "answer": "तुमची पेन्షన్ तुमच्या कॉर्పస్ మరియు प्रचलित ॲన్యుइटी दरावर अवलंबून असते. उदाहरण: 6% दराने ₹39.3 लाख ॲన్యుइटीमधून अंदाजे ₹19,650/महिना मिळू शकतो."
       },
       {
         "question": "एनपीएस 2025 साठी कोणते कर लाभ देते?",
@@ -564,9 +564,9 @@
   "apy_calculator": {
     "meta_title": "APY कॅल्क्युलेटर 2025 — अटल पेन्शन योजना प्रीमियम चार्ट आणि पेन्शन अंदाज",
     "meta_description": "₹1,000–₹5,000 पेन्शनसाठी आवश्यक मासिक प्रीमियम शोधण्यासाठी आमचा मोफत APY कॅल्क्युलेटर वापरा. वय-आधारित प्रीमियम चार्ट, पात्रता, वारंवार विचारले जाणारे प्रश्न आणि डाउनलोड करण्यायोग्य CSV मिळवा. सप्टेंबर 2025 रोजी अद्यतनित.",
-    "og_title": "APY कॅल्क्युलेटर 2025 — अटल पेन्शन योजना प्रीमियम चार्ट आणि पेन्షన్ अंदाज",
+    "og_title": "APY कॅल्क्युलेटर 2025 — अटल पेन्शन योजना प्रीमियम चार्ट आणि पेन्शन अंदाज",
     "og_description": "₹1,000 ते ₹5,000 च्या हमी पेन्शनसाठी तुमचा मासिक प्रीमियम शोधण्यासाठी आमचा APY कॅल्क्युलेटर वापरा. यात वयानुसार प्रीमियम चार्ट, पात्रता आणि वारंवार विचारले जाणारे प्रश्न समाविष्ट आहेत.",
-    "h1": "APY कॅल्क्युलेटर 2025 — अटल पेन्షన్ योजना प्रीमियम आणि पेन्షన్ अंदाज",
+    "h1": "APY कॅल्क्युलेटर 2025 — अटल पेन्शन योजना प्रीमियम आणि पेन्शन अंदाज",
     "description": "तुमचे वय आणि इच्छित पेन्शन प्रविष्ट करा आणि आवश्यक मासिक प्रीमियम त्वरित पहा. तुमची योजना CSV म्हणून डाउनलोड करा.",
     "title": "APY कॅल्क्युलेटर",
     "last_updated": "शेवटचे अद्यतन:",
@@ -618,7 +618,7 @@
       "body": "APY एक मूलभूत, हमी पेन्शनसाठी उत्कृष्ट असली तरी, इतर योजना वेगवेगळ्या उद्दिष्टांसाठी ಉತ್ತಮವಾಗಿರಬಹುದು. <strong>NPS</strong> అధిక సంభావ్య రాబడులు आणि लवचिकता देते, ज्यामुळे ते बाजारातील जोखमींसह सोयीस्कर असलेल्यांसाठी योग्य बनते. <strong>PPF</strong> సంపద निर्मितीக்காக ఒక ਜੋਖਮ-मुक्त, दीर्घकालीन बचत साधन आहे. तुलना करण्यासाठी आमचे <a href='/{lang}/nps-calculator' class='underline'>NPS कॅल्क्युलेटर</a> आणि <a href='/{lang}/ppf-calculator' class='underline'>PPF कॅल्क्युलेटर</a> एक्सप्लोर करा."
     },
     "rules": {
-      "title": "दंड, चुकलेले पेमेंट आणि पुनरुద్ధరణ — तुम्हाला काय माहित असणे आवश्यक आहे",
+      "title": "दंड, चुकलेले पेमेंट आणि पुनరుద్ధరణ — तुम्हाला काय माहित असणे आवश्यक आहे",
       "body": "<strong>काढणे:</strong> పూర్తి ఉపసంహరణ 60 సంవత్సరాల వయస్సులో మాత్రమే అనుమతించబడుతుంది. టర్మినల్ అనారోగ్యం లేదా మరణం సందర్భాలలో ముందస్తు నిష్క్రమణ అనుమతించబడుతుంది. <br/> <strong>दंड:</strong> ఆలస్యమైన చెల్లింపులకు ఒక చిన్న दंड आकारించబడుతుంది, ఇది ప్రీమియం మొత్తంపై ఆధారపడి నెలకు ₹1 నుండి ₹10 వరకు ఉంటుంది. <br/> <strong>బదిలీ:</strong> तुम्ही तुमच्या APY खात्याला एका बँकेतून दुसऱ्या बँकेत हस्तांतरित करू शकता. अधिकृत नियमांसाठी, <a href='https://www.pfrda.org.in/my-apy/apy-faq' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA FAQ విభాగాన్ని</a> पहा."
     },
     "faq_title": "वारंवार विचारले जाणारे प्रश्न",
@@ -632,7 +632,7 @@
       { "question": "मी 60 वर्षांपूर्वी APY मधून पैसे काढू शकेन का?", "answer": "ముందస్తు నిష్క్రమణ నిషేధించబడింది — కేవలం అసాధారణ పరిస్థితులలో (ఉదా., తీవ్రమైన అనారోగ్యం లేదా మరణం) మాత్రమే అనుమతించబడుతుంది आणि జరిమానాలు ఉండవచ్చు. అధికారిక PFRDA నియమాలు లేదా మీ బ్యాంకు APY నిబంధనలను చూడండి." },
       { "question": "कोणतेही सरकारी सह-योगदान आहे का?", "answer": "కొన్ని అర్హతగల చందాదారులకు, గతంలో ప్రభుత్వ సహ-కంట్రిబ్యూషన్ పథకాలు అందించబడ్డాయి. PFRDA/NSDL పేజీలలో ప్రస్తుత పథకాలు మరియు అర్హతను ధృవీకరించండి." },
       { "question": "ग्राहकाच्या मृत्यूनंतर कॉर्పస్चे काय होते?", "answer": "ग्राहकाच्या मृत्यूनंतर, पती/पत्नीला సాధారణपणे तीच पेन्షన్ मिळते; दोघांच्या मृत्यूनंतर, नामांकित व्यक्तीला योजनेच्या नियमांनुसार संचित कॉर्పస్ मिळतो." },
-      { "question": "APY योगदान कर वजावटीस पात्र आहेत का?", "answer": "APY పెన్షన్ ప్రయోజనాలను అందిస్తుంది आणि ప్రత్యక్ష అదనపు 80C భత్యాలు కాదు; ప్రస్తుత పన్ను చికిత్సల కోసం ఆదాయపు పన్ను నియమాలను తనిఖీ చేయండి. (తాజా పన్ను మార్గదర్శకత్వం కోసం ఎల్లప్పుడూ ఆదాయపు పన్ను విభాగంతో ధృవీకరించండి.)" },
+      { "question": "APY योगदान कर वजावटीस पात्र आहेत का?", "answer": "APY పెన్షన్ ప్రయోజనాలను అందిస్తుంది మరియు ప్రత్యక్ష అదనపు 80C భత్యాలు కాదు; ప్రస్తుత పన్ను చికిత్సల కోసం ఆదాయపు పన్ను నియమాలను తనిఖీ చేయండి. (తాజా పన్ను మార్గదర్శకత్వం కోసం ఎల్లప్పుడూ ఆదాయపు పన్ను విభాగంతో ధృవీకరించండి.)" },
       { "question": "मी APY मध्ये कसे नावनोंदणी करू?", "answer": "तुमच्या बँक शाखेला भेट द्या किंवा ते APY नावनोंदणी देत असल्यास तुमच्या बँकेचे ऑनलाइन बँकिंग वापरा. तुम्हाला तुमचे बँक खाते, आधार, पॅन (आवश्यक असल्यास) आणि KYC आवश्यक असेल." },
       { "question": "APY vs NPS — मी कोणते निवडावे?", "answer": "APY ప్రాథమిక భద్రతపై దృష్టి సారించిన హామీ చిన్న పెన్షన్ ఉత్పత్తి; NPS అధిక సంభావ్య రాబడులు మరియు ఎక్కువ సౌలభ్యంతో మార్కెట్‌తో అనుసంధానించబడింది. మీరు హామీ స్థిర పెన్షన్ మరియు తక్కువ సంక్లిష్టత కావాలనుకుంటే APY ను ఎంచుకోండి; మీరు అధిక సంభావ్య వృద్ధిని కోరుకుంటే మరియు మార్కెట్ రిస్క్‌లతో సౌకర్యవంతంగా ఉంటే NPS ను ఎంచుకోండి." }
     ],
@@ -858,18 +858,18 @@
     }
   },
   "retirement_corpus_calculator": {
-    "meta_title": "सेवानिवृत्ती कॉर्पస్ कॅल्क्युलेटर भारत 2025 | मोफत ऑनलाइन सेवानिवृत्ती नियोजन साधन",
+    "meta_title": "सेवानिवृत्ती कॉर्పస్ कॅल्क्युलेटर भारत 2025 | मोफत ऑनलाइन सेवानिवृत्ती नियोजन साधन",
     "meta_description": "मोफत सेवानिवृत्ती कॉर्పస్ कॅल्क्युलेटर भारत (2025). तुम्हाला सेवानिवृत्त होण्यासाठी किती पैसे लागतील, आवश्यक एसआयपीची गणना करा, आणि आजच एक तणावमुक्त सेवानिवृत्तीची योजना करा.",
     "og_description": "आरामदायकपणे सेवानिवृत्त होण्यासाठी आवश्यक कॉर्పస్ आणि मासिक एसआयपीचा अंदाज घ्या. भारत-विशिष्ट, एनपीएस/पीपीएफ/ईपीएफ मार्गदर्शन समाविष्ट आहे.",
     "h1": "सेवानिवृत्ती कॉर्పస్ कॅल्क्युलेटर — भारतात सेवानिवृत्त होण्यासाठी तुम्हाला किती पैसे लागतील (2025)",
-    "intro": "एक सेवानिवृత్తి कोष म्हणजे तुम्ही काम करणे थांबवल्यानंतर स्वतःला आधार देण्यासाठी लागणारी एकूण रक्कम. आमचा कॅल्क्युलेटर तुम्हाला सुरक्षित सेवानिवृత్తిसाठी एक संपूर्ण योजना तयार करण्यासाठी एका साध्या संख्येच्या पलीकडे जाण्यास मदत करतो.",
+    "intro": "एक सेवानिवृत्ति कोष म्हणजे तुम्ही काम करणे थांबवल्यानंतर स्वतःला आधार देण्यासाठी लागणारी एकूण रक्कम. आमचा कॅल्क्युलेटर तुम्हाला सुरक्षित सेवानिवृత్తిसाठी एक संपूर्ण योजना तयार करण्यासाठी एका साध्या संख्येच्या पलीकडे जाण्यास मदत करतो.",
     "tool_section": {
       "h2": "तुमच्या सेवानिवृत्ती कॉर्పస్ची गणना करा (मोफत ऑनलाइन साधन)"
     },
-    "title": "सेवानिवृत्ती कॉर्పస్ कॅल्क्युलेटर",
+    "title": "सेवानिवृత్తి कॉर्పస్ कॅल्क्युलेटर",
     "form_description": "तुम्हाला आवश्यक असलेल्या एकूण कॉर्పస్ची गणना करून तुमच्या आरामदायक सेवानिवृత్తిची योजना करा.",
     "current_age_label": "सध्याचे वय",
-    "retirement_age_label": "सेवानिवृत्तीचे वय",
+    "retirement_age_label": "सेवानिवृత్తిचे वय",
     "monthly_expenses_label": "सध्याचे मासिक खर्च (₹)",
     "current_savings_label": "सध्याची सेवानिवृత్తి बचत (₹)",
     "inflation_rate_label": "अपेक्षित महागाई दर (% प्रति वर्ष)",
@@ -927,7 +927,7 @@
     },
     "deaccumulation_strategy": {
       "h2": "डी-अॅक्युमुलेशन टप्पा: तुमचा कॉर्పస్ टिकवून ठेवणे",
-      "body": "<p>तुमचे घरटे बांधणे ही फक्त अर्धी लढाई आहे. खरे आव्हान ते टिकवून ठेवणे आहे. सेवानिवृत्त झाल्यावर तुम्ही स्थिर उत्पन्न प्रवाह कसा निर्माण करू शकता ते येथे आहे.</p><h3>पद्धतशीर काढण्याची योजना (एसడబ్ల్యూపి)</h3><p>एक एसడబ్ల్యూపి तुम्हाला दरमहा तुमच्या म्युच्युअल फंड गुंतवणुकीतून एक निश्चित रक्कम काढण्याची परवानगी देतो, अगदी पेन्शनप्रमाणे. ही एक कर-कार्यक्षम पद्धत आहे कारण तुमच्या कॉर्పస్चा उर्वरित भाग गुंतवलेला राहतो आणि वाढत राहतो, ज्यामुळे तुम्हाला महागाईला मात करण्यास मदत होते.</p><p><strong>उदाहरण:</strong> ₹2 कोटींच्या कॉर्పస్सह आणि 7% वार्षिक परताव्याने, ₹1 लाखाचा मासिक एसడబ్ల్యూపి 30 वर्षांपेक्षा जास्त काळ टिकू शकतो.</p><h3>ॲన్యుइटी योजना</h3><p>ॲన్యుइटी हे एक विमा उत्पादन आहे जिथे तुम्ही विमा कंपनीला एकरकमी रक्कम भरता आणि ते तुम्हाला आयुष्यभर निश्चित उत्पन्नाची हमी देतात. हे प्रचंड सुरक्षा देत असले तरी, परतावा (ॲన్యుइटी दर) तुम्ही एसడబ్ల్యూపిमधून मिळवू शकता त्यापेक्षा कमी असतो.</p>"
+      "body": "<p>तुमचे घरटे बांधणे ही फक्त अर्धी लढाई आहे. खरे आव्हान ते टिकवून ठेवणे आहे. सेवानिवृत्त झाल्यावर तुम्ही स्थिर उत्पन्न प्रवाह कसा निर्माण करू शकता ते येथे आहे.</p><h3>पद्धतशीर काढण्याची योजना (एसడబ్ల్యూపి)</h3><p>एक एसడబ్ల్యూపి तुम्हाला दरमहा तुमच्या म्युच्युअल फंड गुंतवणुकीतून एक निश्चित रक्कम काढण्याची परवानगी देतो, ঠিক एक पेन्शनप्रमाणे. ही एक कर-कार्यक्षम पद्धत आहे कारण तुमच्या कॉर्పస్चा उर्वरित भाग गुंतवलेला राहतो आणि वाढत राहतो, ज्यामुळे तुम्हाला महागाईला मात करण्यास मदत होते.</p><p><strong>उदाहरण:</strong> ₹2 कोटींच्या कॉर्పస్सह आणि 7% वार्षिक परताव्याने, ₹1 लाखाचा मासिक एसడబ్ల్యూపి 30 वर्षांपेक्षा जास्त काळ टिकू शकतो.</p><h3>ॲన్యుइटी योजना</h3><p>ॲన్యుइटी हे एक विमा उत्पादन आहे जिथे तुम्ही विमा कंपनीला एकरकमी रक्कम भरता आणि ते तुम्हाला आयुष्यभर निश्चित उत्पन्नाची हमी देतात. हे प्रचंड सुरक्षा देत असले तरी, परतावा (ॲన్యుइटी दर) तुम्ही एसడబ్ల్యూపిमधून मिळवू शकता त्यापेक्षा कमी असतो.</p>"
     },
     "tax_rules": {
       "h2": "सेवानिवृत्तीमधील कर (भारत-विशिष्ट नियम)",
@@ -1060,26 +1060,26 @@
     "faq": {
       "h2": "Frequently Asked Questions",
       "faqs": [
-        { "q": "What is a Loan Optimization Calculator?", "a": "A loan optimization calculator is a tool that helps you decide whether to reduce EMI, shorten tenure, refinance, or prepay a loan. It goes beyond a simple EMI calculator by showing interest saved, years reduced, and when to refinance." },
-        { "q": "How does a Loan Optimization Calculator work?", "a": "It calculates EMI, interest outgo, and outstanding balance using standard formulas. Then it models “what-if” scenarios like prepayments, refinancing, or changing EMI vs tenure to show savings and optimal strategy." },
-        { "q": "How much interest can I save by prepaying my home loan?", "a": "Prepayment reduces outstanding principal, so future interest is calculated on a smaller balance. For example, a ₹5L prepayment on a ₹50L loan at 8.5% can cut nearly ₹12–15 lakh in total interest if done early." },
-        { "q": "Should I prepay my loan or invest my surplus?", "a": "If your expected post-tax return on investment is higher than your loan interest rate, investing may be better. If not, prepaying is safer, guaranteed, and reduces debt faster." },
-        { "q": "Does prepayment reduce EMI or tenure?", "a": "By default, lenders reduce the loan tenure when you prepay. However, you can request EMI reduction instead. Reducing tenure saves more interest, while reducing EMI eases cash flow." },
-        { "q": "What is an EMI and how is it calculated?", "a": "EMI (Equated Monthly Installment) is the fixed payment you make each month. Formula: EMI = P × r × (1+r)^n / ((1+r)^n − 1) where P = loan amount, r = monthly interest rate, n = number of months." },
-        { "q": "How can I reduce my EMI without prepayment?", "a": "You can refinance (balance transfer) to a lower rate, extend tenure, or restructure your loan with your bank. However, extending tenure increases total interest." },
-        { "q": "What is a home loan prepayment calculator in India?", "a": "It’s a tool that shows how much interest you save and how many years you cut by making a lump-sum or recurring prepayment. Our Loan Optimization Calculator includes this feature." },
-        { "q": "What is a loan refinancing calculator?", "a": "A refinancing calculator compares your existing loan with a new loan at a lower interest rate. It accounts for fees and shows your net savings. This is useful for home loans, personal loans, and education loans." },
-        { "q": "How does refinancing (balance transfer) work in India?", "a": "You shift your existing loan to another bank offering a lower rate. If the interest saved exceeds processing fees and penalties, refinancing can save you lakhs over time." },
-        { "q": "Can I use this calculator for multiple loans?", "a": "Yes. You can optimize home loans, car loans, personal loans, education loans, and even credit card debt. For multiple loans, prioritize high-interest debt first." },
-        { "q": "How do I decide between prepaying vs refinancing?", "a": "If you expect to keep the loan long-term and the rate difference is big, refinancing is better. If you have surplus cash, prepaying saves more. Sometimes doing both gives the best results." },
-        { "q": "How accurate is this Loan Optimization Calculator?", "a": "It uses standard amortization formulas and tax rules. Real-world results depend on lender policies, fees, and your repayment discipline. Always confirm with your bank." },
-        { "q": "Are there prepayment penalties in India?", "a": "For floating-rate home loans, RBI has mandated no prepayment penalty. Fixed-rate and personal loans may still carry charges, usually 1–3% of the amount prepaid." },
-        { "q": "Are home loan prepayments tax deductible?", "a": "No. Only interest (u/s 24) and principal (u/s 80C) are deductible. Prepayment reduces future interest outgo, but doesn’t give an extra tax deduction." },
-        { "q": "Can this calculator generate an amortization schedule?", "a": "Yes. You can view your loan breakdown month by month, showing principal, interest, outstanding balance, and impact of prepayments. Download as CSV or PDF." },
-        { "q": "Is refinancing always a good idea?", "a": "Not always. Refinancing makes sense only if the rate difference is at least 0.5–1.0%, the loan tenure left is significant, and processing fees don’t eat into savings." },
-        { "q": "How to prioritize paying off multiple loans?", "a": "Use the debt avalanche method: prepay the highest interest loan first (e.g., credit card > personal loan > car loan > home loan). This saves maximum interest." },
-        { "q": "Can I use the calculator for education or personal loans?", "a": "Yes. It works for all amortized loans in India—home, education, personal, car, and gold loans." },
-        { "q": "What is the best way to optimize a home loan in India?", "a": "Start with regular prepayments in the first 5 years, refinance if better rates are available, and align EMIs with salary hikes (step-up strategy). This can cut 5–7 years off a 20-year loan." }
+        { "q": "What is a Loan Optimization Calculator?", "a": "A tool that models EMI, prepayment, refinancing and invest-vs-prepay scenarios to show interest saved, tenure changes and optimal actions." },
+        { "q": "How does a Loan Optimization Calculator work?", "a": "It uses amortization formulas to compute EMI and outstanding balance, then simulates prepayment, tenure and refinance scenarios to show net savings." },
+        { "q": "How much interest can I save by prepaying my home loan?", "a": "Savings depend on timing and amount; early large prepayments save the most. For example, a ₹5L prepayment on a ₹50L loan at 8.5% can save lakhs over the loan term." },
+        { "q": "Should I prepay my loan or invest my surplus?", "a": "If your expected after-tax investment return exceeds the loan rate, investing may be better; otherwise prepaying reduces guaranteed interest outgo and risk." },
+        { "q": "Does prepayment reduce EMI or tenure?", "a": "Lenders typically let you choose: prepayment can reduce tenure (default) or reduce EMI. Reducing tenure saves more total interest; reducing EMI eases cashflow." },
+        { "q": "What is an EMI and how is it calculated?", "a": "EMI is the fixed monthly loan payment. Formula: EMI = P × r × (1+r)^n / ((1+r)^n − 1), where P = principal, r = monthly rate, n = months." },
+        { "q": "How can I reduce my EMI without prepayment?", "a": "You can refinance to a lower rate, extend the tenure, or request loan restructuring with your bank — but longer tenure raises total interest paid." },
+        { "q": "What is a home loan prepayment calculator in India?", "a": "It is a tool showing how lump-sum or recurring prepayments change your outstanding balance, tenure, and total interest for Indian home loans." },
+        { "q": "What is a loan refinancing calculator?", "a": "A calculator that compares your current loan with a new loan rate, accounting for processing fees and penalties to show net savings from refinancing." },
+        { "q": "How does refinancing (balance transfer) work in India?", "a": "You move your loan to another lender offering a lower effective rate; refinancing pays off the old loan and starts a new loan with new terms." },
+        { "q": "Can I use this calculator for multiple loans?", "a": "Yes — the tool supports optimizing multiple loans (home, car, personal, education, credit card) and helps prioritize high-interest debt first." },
+        { "q": "How do I decide between prepaying vs refinancing?", "a": "Compare net savings: prepay if you have surplus cash and want guaranteed reduction in interest; refinance if new rate minus fees yields long-term savings." },
+        { "q": "How accurate is this Loan Optimization Calculator?", "a": "It uses standard amortization math and current tax rules; accuracy depends on lender terms, fees and your inputs. Confirm results with your bank before acting." },
+        { "q": "Are there prepayment penalties in India?", "a": "RBI disallows prepayment penalty on floating-rate home loans; fixed-rate loans and some personal loans may still charge a fee, typically 1–3%." },
+        { "q": "Are home loan prepayments tax deductible?", "a": "No. Prepayment itself is not deductible. Only interest (u/s 24) and principal repaid under 80C (for certain loans) qualify for deductions." },
+        { "q": "Can this calculator generate an amortization schedule?", "a": "Yes. The tool produces a month-by-month amortization table showing principal, interest, outstanding balance and the impact of prepayments; you can download it." },
+        { "q": "Is refinancing always a good idea?", "a": "Not always. Refinancing is beneficial if the rate difference and tenure justify processing fees and you plan to stay in the loan long enough to recoup costs." },
+        { "q": "How to prioritize paying off multiple loans?", "a": "Use the debt avalanche: pay highest-rate debt first (credit card, personal loan), then move to lower-rate loans like car or home loan for maximum interest savings." },
+        { "q": "Can I use the calculator for education or personal loans?", "a": "Yes. The calculator works for all amortized loans including education, personal, car, home and gold loans in India." },
+        { "q": "What is the best way to optimize a home loan in India?", "a": "Combine early prepayments, consider refinance when rates drop materially, and align EMIs with salary hikes (step-up strategy). This can cut 5–7 years off a 20-year loan." }
       ]
     },
     "conclusion": {
@@ -1152,7 +1152,7 @@
     "results_placeholder": "Search functionality is coming soon."
   },
   "author_card": {
-    "bio": "Mahesh Chaube, CFP is a Certified Financial Planner with extensive experience helping Indian families build tax-efficient retirement and education plans. Mahesh specialises in retirement strategy, tax-optimised fixed-income planning and practical financial tools (calculators, worksheets) that simplify decision-making for everyday investors. He regularly advises fintechs and writes data-driven personal finance guides.",
+    "bio": "Mahesh Chaube, CFP is a Certified Financial Planner with extensive experience helping Indian families build tax-efficient retirement and education plans. Mahesh specialises in retirement strategy, tax-optimised fixed-income planning and practical financial tools (calculators, worksheets) that simplify decision-making for everyday investors. He regularly advises fintechs and writes data-driven personal finance solutions.",
     "author_page_link": "View all articles",
     "review_text": "<strong>Reviewed & Verified by Experts:</strong> Laveena Vijayi — BharatSaver Editorial Team. Data verified against PFRDA, CBDT, and Income Tax Department official calculators."
   },
