@@ -153,7 +153,8 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
 
         <Card className="mb-12 shadow-lg">
           <CardHeader>
-            <CardTitle className="flex items-center gap-3"><Layers className="h-6 w-6 text-primary"/>{dictionary.mutual_fund_overlap_calculator.tool_section.h2}</CardTitle>
+            <CardTitle className="flex items-center gap-3"><Layers className="h-6 w-6 text-primary"/>{dictionary.mutual_fund_overlap_calculator.tool.title}</CardTitle>
+             <CardDescription>{dictionary.mutual_fund_overlap_calculator.tool.description}</CardDescription>
           </CardHeader>
           <CardContent>
             <MutualFundOverlapCalculator dictionary={dictionary.mutual_fund_overlap_calculator} />

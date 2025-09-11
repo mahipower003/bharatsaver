@@ -1,202 +1,316 @@
-
 'use client';
 
-import { useState } from 'react';
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { z } from 'zod';
-import { Loader2, Download, Twitter, Printer, BarChart2 } from 'lucide-react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-
+import React, { useState, useMemo } from 'react';
 import { Button } from '@/components/ui/button';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+import { Checkbox } from '@/components/ui/checkbox';
+import { Download, Copy, Share2, PlusCircle, Trash2, BarChart2 } from 'lucide-react';
 import type { Dictionary } from '@/types';
-import { funds, type FundPortfolio } from '@/data/mutual-fund-holdings';
-import { Alert, AlertDescription, AlertTitle } from '../ui/alert';
 
-const formSchema = z.object({
-  fund1: z.string().min(1, 'Please select a fund'),
-  fund2: z.string().min(1, 'Please select another fund'),
-});
+/**
+ * Data format for holdings.
+ */
+type Holding = {
+  symbol: string;
+  name: string;
+  weight: number;
+  sector: string;
+};
 
-type FormValues = z.infer<typeof formSchema>;
+type Fund = {
+  id: number;
+  name: string;
+  sourceDate: string;
+  holdingsText: string;
+};
+
+/**
+ * Parses holdings text into a structured array.
+ * @param text - The raw text from the textarea (CSV format).
+ * @returns An array of Holding objects.
+ */
+const parseHoldings = (text: string): Holding[] => {
+  const lines = text.split(/\n|\r/).map((l) => l.trim()).filter(Boolean);
+  const holdings: Holding[] = [];
+  for (const line of lines) {
+    const parts = line.split(",").map((p) => p.trim());
+    if (parts.length < 3) continue;
+    const weightStr = parts[parts.length - 2];
+    const sector = parts[parts.length - 1] || "Unknown";
+    const symbol = parts[0];
+    const name = parts.slice(1, -2).join(", ");
+    const weight = parseFloat(weightStr.replace("%", "")) || 0;
+    holdings.push({ symbol: symbol.toUpperCase(), name, weight, sector });
+  }
+  return holdings;
+};
 
 type OverlapResult = {
   weightedOverlap: number;
-  commonStocks: (FundPortfolio['holdings'][0] & { weight1: number; weight2: number })[];
-  topOverlappingStocks: (FundPortfolio['holdings'][0] & { weight1: number; weight2: number })[];
-  sectorOverlap: { sector: string; weight1: number; weight2: number; combinedWeight: number }[];
-};
-
-type CalculatorProps = {
-  dictionary: Dictionary['mutual_fund_overlap_calculator'];
+  pairwise: { i: number; j: number; percent: number }[];
+  topOverlapStocks: (Holding & { minWeight: number; perFund: number[] })[];
+  sectorOverlap: { sector: string; weight: number }[];
 };
 
 
-const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52s-.669-1.611-.916-2.207c-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" /></svg>
-);
+export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictionary['mutual_fund_overlap_calculator'] }) {
+  const [funds, setFunds] = useState<Fund[]>([
+    {
+      id: 1,
+      name: "HDFC Top 100 (example)",
+      sourceDate: "01-Sep-2025",
+      holdingsText:
+        "RELIANCE, Reliance Industries Ltd, 8.2, Energy\nHDFCBANK, HDFC Bank Ltd, 6.3, Financials\nICICIBANK, ICICI Bank Ltd, 4.9, Financials\nTCS, Tata Consultancy Services, 5.0, Technology\nINFY, Infosys Ltd, 4.5, Technology",
+    },
+    {
+      id: 2,
+      name: "SBI Bluechip (example)",
+      sourceDate: "01-Sep-2025",
+      holdingsText:
+        "RELIANCE, Reliance Industries Ltd, 7.5, Energy\nHDFCBANK, HDFC Bank Ltd, 5.8, Financials\nICICIBANK, ICICI Bank Ltd, 4.4, Financials\nINFY, Infosys Ltd, 3.9, Technology\nTITAN, Titan Company Ltd, 2.5, Consumer",
+    },
+  ]);
 
+  const [activeFundsCount, setActiveFundsCount] = useState(2);
+  const [includeSectors, setIncludeSectors] = useState(true);
 
-export function MutualFundOverlapCalculator({ dictionary }: CalculatorProps) {
-  const [result, setResult] = useState<OverlapResult | null>(null);
-  const [isLoading, setIsLoading] = useState(false);
+  const parsedFunds = useMemo(() => {
+    return funds.slice(0, activeFundsCount).map((f) => ({
+      ...f,
+      holdings: parseHoldings(f.holdingsText),
+    }));
+  }, [funds, activeFundsCount]);
 
-  const form = useForm<FormValues>({
-    resolver: zodResolver(formSchema),
-  });
-  
-  async function handleSubmit(values: FormValues) {
-    setIsLoading(true);
-    setResult(null);
-    await new Promise(resolve => setTimeout(resolve, 500));
+  const overlapResult: OverlapResult | null = useMemo(() => {
+    if (parsedFunds.length < 2) return null;
 
-    const fund1 = funds.find(f => f.schemeCode === values.fund1);
-    const fund2 = funds.find(f => f.schemeCode === values.fund2);
+    const allSymbols = new Set<string>();
+    const fundWeightMaps = parsedFunds.map((f) => {
+      const map = new Map<string, { weight: number; sector: string; name: string }>();
+      let totalEquityWeight = 0;
+      for (const h of f.holdings) {
+        map.set(h.symbol, { weight: h.weight, sector: h.sector, name: h.name });
+        totalEquityWeight += h.weight;
+        allSymbols.add(h.symbol);
+      }
+      return { map, totalEquityWeight };
+    });
 
-    if (!fund1 || !fund2) {
-      // Handle error, fund not found
-      setIsLoading(false);
-      return;
+    const symbolRows: { symbol: string; perFund: number[]; minWeight: number; exampleName: string; sector: string }[] = [];
+    allSymbols.forEach(symbol => {
+      const perFund = fundWeightMaps.map((fw) => fw.map.get(symbol)?.weight || 0);
+      const minWeight = Math.min(...perFund);
+      const firstFundWithStock = fundWeightMaps.find(fw => fw.map.has(symbol));
+      const stockInfo = firstFundWithStock?.map.get(symbol);
+      
+      symbolRows.push({
+        symbol,
+        perFund,
+        minWeight,
+        exampleName: stockInfo?.name || "N/A",
+        sector: stockInfo?.sector || "Unknown",
+      });
+    });
+
+    const weightedOverlap = symbolRows.reduce((s, r) => s + r.minWeight, 0);
+
+    const pairwise: { i: number; j: number; percent: number }[] = [];
+    for (let i = 0; i < parsedFunds.length; i++) {
+      for (let j = i + 1; j < parsedFunds.length; j++) {
+        let sumMin = 0;
+        allSymbols.forEach(symbol => {
+            const w1 = fundWeightMaps[i].map.get(symbol)?.weight || 0;
+            const w2 = fundWeightMaps[j].map.get(symbol)?.weight || 0;
+            sumMin += Math.min(w1, w2);
+        });
+        const denom = Math.min(fundWeightMaps[i].totalEquityWeight || 100, fundWeightMaps[j].totalEquityWeight || 100);
+        const percent = denom > 0 ? (sumMin / denom) * 100 : 0;
+        pairwise.push({ i, j, percent: Number(percent.toFixed(2)) });
+      }
     }
 
-    const fund1Holdings = new Map(fund1.holdings.map(h => [h.name, h]));
-    const fund2Holdings = new Map(fund2.holdings.map(h => [h.name, h]));
-
-    let weightedOverlap = 0;
-    const commonStocks: OverlapResult['commonStocks'] = [];
-    const sector1Weights = new Map<string, number>();
-    const sector2Weights = new Map<string, number>();
-
-    fund1Holdings.forEach((holding1, stockName) => {
-      const currentWeight = sector1Weights.get(holding1.sector) || 0;
-      sector1Weights.set(holding1.sector, currentWeight + holding1.weight);
-      
-      const holding2 = fund2Holdings.get(stockName);
-      if (holding2) {
-        const minWeight = Math.min(holding1.weight, holding2.weight);
-        weightedOverlap += minWeight;
-        commonStocks.push({ ...holding1, weight1: holding1.weight, weight2: holding2.weight });
+    const sectorMap = new Map<string, number>();
+    symbolRows.forEach(row => {
+      if (row.minWeight > 0) {
+        sectorMap.set(row.sector, (sectorMap.get(row.sector) || 0) + row.minWeight);
       }
     });
 
-    fund2Holdings.forEach(holding2 => {
-        const currentWeight = sector2Weights.get(holding2.sector) || 0;
-        sector2Weights.set(holding2.sector, currentWeight + holding2.weight);
+    const topOverlapStocks = symbolRows
+      .filter((r) => r.minWeight > 0)
+      .sort((a, b) => b.minWeight - a.minWeight)
+      .map((r) => ({ ...r, name: r.exampleName }));
+      
+    const sectorOverlap = Array.from(sectorMap.entries())
+        .map(([sector, weight]) => ({ sector, weight: Number(weight.toFixed(4)) }))
+        .sort((a,b) => b.weight - a.weight);
+
+
+    return {
+      weightedOverlap: Number(weightedOverlap.toFixed(2)),
+      pairwise,
+      topOverlapStocks,
+      sectorOverlap,
+    };
+  }, [parsedFunds]);
+
+  const exportCSV = () => {
+    if (!overlapResult) return;
+    const headers = ["Symbol", "Name", ...parsedFunds.map((f) => f.name), "MinWeight"];
+    const rows = overlapResult.topOverlapStocks.map(r => 
+        [r.symbol, `"${r.name}"`, ...r.perFund.map((w) => w.toFixed(2)), r.minWeight.toFixed(4)].join(",")
+    );
+    const csv = [headers.join(","), ...rows].join("\n");
+    const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "mutual_fund_overlap.csv";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  };
+
+  const copySummary = async () => {
+    if (!overlapResult) return;
+    let text = `Mutual Fund Overlap Summary\n`;
+    text += `Weighted Overlap: ${overlapResult.weightedOverlap}%\n\n`;
+    text += `Top 5 Overlapping Stocks:\n`;
+    overlapResult.topOverlapStocks.slice(0, 5).forEach(s => {
+      text += `- ${s.name} (${s.symbol}): ${s.minWeight.toFixed(2)}%\n`;
     });
+    await navigator.clipboard.writeText(text);
+    alert("Summary copied to clipboard!");
+  };
 
-    const sectorOverlap: OverlapResult['sectorOverlap'] = [];
-    const allSectors = new Set([...sector1Weights.keys(), ...sector2Weights.keys()]);
-    allSectors.forEach(sector => {
-        const weight1 = sector1Weights.get(sector) || 0;
-        const weight2 = sector2Weights.get(sector) || 0;
-        sectorOverlap.push({ sector, weight1, weight2, combinedWeight: weight1 + weight2 });
-    });
-    
-    sectorOverlap.sort((a,b) => b.combinedWeight - a.combinedWeight);
-    commonStocks.sort((a,b) => Math.min(b.weight1, b.weight2) - Math.min(a.weight1, a.weight2));
-    const topOverlappingStocks = commonStocks.slice(0, 5);
+  const updateFundText = (id: number, text: string) => {
+    setFunds((prev) => prev.map((f) => (f.id === id ? { ...f, holdingsText: text } : f)));
+  };
 
+  const updateFundName = (id: number, name: string) => {
+    setFunds((prev) => prev.map((f) => (f.id === id ? { ...f, name } : f)));
+  };
 
-    setResult({
-      weightedOverlap,
-      commonStocks,
-      topOverlappingStocks,
-      sectorOverlap: sectorOverlap.slice(0, 5)
-    });
+  const addFund = () => {
+    if (funds.length >= 5) return;
+    const id = (funds[funds.length - 1]?.id || 0) + 1;
+    setFunds((p) => [...p, { id, name: `Fund ${id}`, sourceDate: new Date().toLocaleDateString('en-CA'), holdingsText: "" }]);
+    setActiveFundsCount((c) => c + 1);
+  };
 
-    setIsLoading(false);
-  }
-
+  const removeFund = (id: number) => {
+    setFunds((p) => p.filter((f) => f.id !== id));
+    setActiveFundsCount((c) => Math.max(2, c - 1));
+  };
+  
   const getOverlapLevel = (overlap: number) => {
-    if (overlap > 60) return { label: 'Very High', color: 'text-red-600' };
+    if (overlap > 50) return { label: 'Very High', color: 'text-destructive' };
     if (overlap > 30) return { label: 'High', color: 'text-orange-500' };
-    if (overlap > 10) return { label: 'Moderate', color: 'text-yellow-500' };
+    if (overlap > 15) return { label: 'Moderate', color: 'text-yellow-500' };
     return { label: 'Low', color: 'text-green-500' };
   };
 
+
   return (
-    <>
-      <Form {...form}>
-        <form onSubmit={form.handleSubmit(handleSubmit)} className="space-y-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <FormField control={form.control} name="fund1" render={({ field }) => (
-              <FormItem>
-                <FormLabel>Fund 1</FormLabel>
-                <Select onValueChange={field.onChange} defaultValue={field.value}>
-                  <FormControl><SelectTrigger><SelectValue placeholder="Select a fund" /></SelectTrigger></FormControl>
-                  <SelectContent>{funds.map(f => <SelectItem key={f.schemeCode} value={f.schemeCode}>{f.schemeName}</SelectItem>)}</SelectContent>
-                </Select>
-                <FormMessage />
-              </FormItem>
-            )} />
-            <FormField control={form.control} name="fund2" render={({ field }) => (
-               <FormItem>
-                <FormLabel>Fund 2</FormLabel>
-                <Select onValueChange={field.onChange} defaultValue={field.value}>
-                  <FormControl><SelectTrigger><SelectValue placeholder="Select a fund" /></SelectTrigger></FormControl>
-                  <SelectContent>{funds.map(f => <SelectItem key={f.schemeCode} value={f.schemeCode}>{f.schemeName}</SelectItem>)}</SelectContent>
-                </Select>
-                <FormMessage />
-              </FormItem>
-            )} />
-          </div>
-          <Button type="submit" disabled={isLoading}>
-            {isLoading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
-            Calculate Overlap
+    <div className="space-y-6">
+      {funds.map((fund, idx) => (
+        <Card key={fund.id} className="overflow-hidden">
+          <CardHeader className="flex flex-row items-center justify-between bg-muted/50 p-4">
+            <Input value={fund.name} onChange={(e) => updateFundName(fund.id, e.target.value)} className="text-base font-semibold w-auto border-none focus-visible:ring-0 shadow-none bg-transparent" />
+            <div className="flex items-center gap-4">
+              <span className="text-xs text-muted-foreground">{dictionary.tool.holdings_as_of} {fund.sourceDate}</span>
+              {funds.length > 2 && (
+                <Button variant="ghost" size="icon" className="h-6 w-6 text-muted-foreground" onClick={() => removeFund(fund.id)}>
+                    <Trash2 className="h-4 w-4"/>
+                </Button>
+              )}
+            </div>
+          </CardHeader>
+          <CardContent className="p-4">
+            <Textarea
+              rows={5}
+              value={fund.holdingsText}
+              onChange={(e) => updateFundText(fund.id, e.target.value)}
+              className="w-full font-mono text-xs"
+              placeholder={dictionary.tool.placeholder}
+            />
+            <p className="text-xs text-muted-foreground mt-2">{dictionary.tool.format_hint}</p>
+          </CardContent>
+        </Card>
+      ))}
+
+        <div className="flex flex-wrap items-center justify-between gap-4">
+          <Button variant="outline" onClick={addFund} disabled={funds.length >= 5}>
+            <PlusCircle className="mr-2" /> {dictionary.tool.add_fund}
           </Button>
-        </form>
-      </Form>
+          <div className="flex items-center space-x-2">
+            <Checkbox id="include-sectors" checked={includeSectors} onCheckedChange={(checked) => setIncludeSectors(Boolean(checked))} />
+            <label htmlFor="include-sectors" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+              {dictionary.tool.include_sectors}
+            </label>
+          </div>
+        </div>
 
-      {isLoading && <div className="text-center py-12"><Loader2 className="mx-auto h-12 w-12 animate-spin text-primary" /></div>}
-
-      {result && (
-        <div className="mt-8 space-y-6 animate-in fade-in-50 slide-in-from-bottom-5">
-            <Alert variant="default" className="text-center">
-                <BarChart2 className="h-4 w-4" />
-                <AlertTitle className="text-2xl font-bold">
-                    Weighted Overlap: <span className={getOverlapLevel(result.weightedOverlap).color}>{result.weightedOverlap.toFixed(2)}% ({getOverlapLevel(result.weightedOverlap).label})</span>
-                </AlertTitle>
-                <AlertDescription>
-                    This score indicates the degree of concentration between the two funds.
+      {overlapResult && (
+        <div className="space-y-6 animate-in fade-in-50">
+            <Alert variant="default" className="text-center p-6">
+                <BarChart2 className="h-6 w-6 mx-auto mb-2 text-primary"/>
+                <AlertTitle className="text-base font-semibold mb-1">{dictionary.results.weighted_overlap_title}</AlertTitle>
+                <AlertDescription className="text-3xl font-bold">
+                    <span className={getOverlapLevel(overlapResult.weightedOverlap).color}>
+                        {overlapResult.weightedOverlap}% ({getOverlapLevel(overlapResult.weightedOverlap).label})
+                    </span>
                 </AlertDescription>
             </Alert>
             
-            <div>
-                <h3 className="text-lg font-semibold mb-2">Top 5 Overlapping Stocks</h3>
-                <Table>
-                    <TableHeader><TableRow><TableHead>Stock</TableHead><TableHead className="text-right">Fund 1 Wt. (%)</TableHead><TableHead className="text-right">Fund 2 Wt. (%)</TableHead><TableHead className="text-right">Min. Wt. (%)</TableHead></TableRow></TableHeader>
-                    <TableBody>
-                        {result.topOverlappingStocks.map(stock => (
-                            <TableRow key={stock.name}>
-                                <TableCell>{stock.name}</TableCell>
-                                <TableCell className="text-right">{stock.weight1.toFixed(2)}</TableCell>
-                                <TableCell className="text-right">{stock.weight2.toFixed(2)}</TableCell>
-                                <TableCell className="text-right font-bold">{Math.min(stock.weight1, stock.weight2).toFixed(2)}</TableCell>
-                            </TableRow>
-                        ))}
-                    </TableBody>
-                </Table>
-            </div>
+            <Card>
+                <CardHeader><CardTitle>{dictionary.results.top_stocks_title}</CardTitle></CardHeader>
+                <CardContent>
+                    <Table>
+                        <TableHeader><TableRow>
+                            <TableHead>{dictionary.results.stock_header}</TableHead>
+                            {parsedFunds.map((f) => <TableHead key={f.id} className="text-right">{f.name}</TableHead>)}
+                            <TableHead className="text-right font-bold">{dictionary.results.min_weight_header}</TableHead>
+                        </TableRow></TableHeader>
+                        <TableBody>
+                            {overlapResult.topOverlapStocks.slice(0,10).map(stock => (
+                                <TableRow key={stock.symbol}>
+                                    <TableCell className="font-medium">{stock.name}<br/><span className="text-xs text-muted-foreground">{stock.symbol}</span></TableCell>
+                                    {stock.perFund.map((w, i) => <TableCell key={i} className="text-right">{w > 0 ? `${w.toFixed(2)}%` : '-'}</TableCell>)}
+                                    <TableCell className="text-right font-bold">{stock.minWeight.toFixed(2)}%</TableCell>
+                                </TableRow>
+                            ))}
+                        </TableBody>
+                    </Table>
+                </CardContent>
+            </Card>
 
-            <div>
-                <h3 className="text-lg font-semibold mb-2">Top 5 Sector Overlaps</h3>
-                <ResponsiveContainer width="100%" height={300}>
-                    <BarChart data={result.sectorOverlap} layout="vertical" margin={{ left: 100 }}>
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis type="number" tickFormatter={(v) => `${v}%`} />
-                        <YAxis type="category" dataKey="sector" width={100} />
-                        <Tooltip formatter={(value) => `${Number(value).toFixed(2)}%`} />
-                        <Legend />
-                        <Bar dataKey="weight1" stackId="a" fill="hsl(var(--primary))" name="Fund 1" />
-                        <Bar dataKey="weight2" stackId="a" fill="hsl(var(--accent))" name="Fund 2" />
-                    </BarChart>
-                </ResponsiveContainer>
-            </div>
+           {includeSectors && (
+             <Card>
+                <CardHeader><CardTitle>{dictionary.results.sector_overlap_title}</CardTitle></CardHeader>
+                <CardContent>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                    {overlapResult.sectorOverlap.slice(0,10).map((s, i) => (
+                      <div key={i} className="flex justify-between items-center text-sm border-b pb-2">
+                        <span className="font-medium">{s.sector}</span>
+                        <span className="font-semibold text-primary">{s.weight.toFixed(2)}%</span>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+            </Card>
+           )}
+
+          <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
+              <Button variant="outline" onClick={exportCSV}><Download className="mr-2"/>{dictionary.tool.export_csv}</Button>
+              <Button variant="outline" onClick={copySummary}><Copy className="mr-2"/>{dictionary.tool.copy_summary}</Button>
+          </div>
         </div>
       )}
-    </>
+    </div>
   );
 }
