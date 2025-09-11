@@ -2,12 +2,13 @@
 import { getDictionary } from "@/lib/dictionaries";
 import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Layers, FileText, TrendingUp, AlertTriangle, BadgeCheck, HelpCircle, Download } from "lucide-react";
 import { AuthorCard } from "@/components/layout/AuthorCard";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import Link from 'next/link';
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -36,49 +37,32 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   const softwareSchema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Mutual Fund Overlap Calculator India (2025)",
+    "name": "Mutual Fund Overlap Calculator",
     "url": pageUrl,
     "applicationCategory": "FinanceApplication",
     "operatingSystem": "Web",
-    "description": "Free tool to check for portfolio overlap between two or more Indian mutual funds. See common stocks, sector concentration, and get actionable insights to improve diversification.",
-     "author": {
+    "description": "Compare mutual fund holdings to find overlap between funds. Shows common stocks, sector overlap and exportable CSV. India-focused.",
+    "author": {
       "@type": "Person",
       "name": "Mahesh Chaube",
       "jobTitle": "CFP",
       "sameAs": "https://www.linkedin.com/in/mahi003/"
     },
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "INR"
-    }
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
   };
 
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     "mainEntityOfPage": { "@type": "WebPage", "@id": pageUrl },
-    "headline": dictionary.mutual_fund_overlap_calculator.h1,
-    "description": dictionary.mutual_fund_overlap_calculator.meta_description,
+    "headline": "Mutual Fund Overlap Calculator — Check Overlap Between Funds (India, 2025)",
     "image": [ogImageUrl],
-    "author": {
-        "@type": "Person",
-        "name": "Mahesh Chaube",
-        "jobTitle": "CFP",
-        "url": `${siteUrl}/${params.lang}/author/mahesh-chaube`
-    },
-    "editor": {
-        "@type": "Person",
-        "name": "Laveena Vijayi",
-        "jobTitle": "Senior Financial Research Analyst"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "BharatSaver",
-      "logo": { "@type": "ImageObject", "url": `${siteUrl}/icon.svg` }
-    },
     "datePublished": "2024-07-20",
-    "dateModified": "2025-09-01"
+    "dateModified": "2025-09-01",
+    "author": { "@type": "Person", "name": "Mahesh Chaube", "jobTitle": "CFP", "url": `${siteUrl}/${params.lang}/author/mahesh-chaube` },
+    "editor": { "@type": "Person", "name": "Laveena Vijayi" },
+    "publisher": { "@type": "Organization", "name": "BharatSaver", "logo": { "@type": "ImageObject", "url": `${siteUrl}/icon.svg` } },
+    "description": dictionary.mutual_fund_overlap_calculator.meta_description
   };
 
   const faqSchema = {
@@ -166,7 +150,6 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
           <p className="mt-4 text-lg text-muted-foreground">{dictionary.mutual_fund_overlap_calculator.hero.subtitle}</p>
         </div>
 
-        {/* Tool Section - Placeholder */}
         <Card className="mb-12 shadow-lg">
           <CardHeader>
             <CardTitle className="flex items-center gap-3"><Layers className="h-6 w-6 text-primary"/>{dictionary.mutual_fund_overlap_calculator.tool_section.h2}</CardTitle>
@@ -190,7 +173,7 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
           <Card>
             <CardHeader><CardTitle className="flex items-center gap-3"><TrendingUp className="h-6 w-6 text-primary"/>{dictionary.mutual_fund_overlap_calculator.live_example.h2}</CardTitle></CardHeader>
             <CardContent className="space-y-4">
-              <p className="text-muted-foreground">{dictionary.mutual_fund_overlap_calculator.live_example.intro}</p>
+              <p className="text-muted-foreground" dangerouslySetInnerHTML={{__html: dictionary.mutual_fund_overlap_calculator.live_example.intro}}></p>
               <Table>
                 <TableHeader>
                   <TableRow>
