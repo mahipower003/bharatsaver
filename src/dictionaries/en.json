@@ -1223,7 +1223,7 @@
         { "q": "Does sector overlap matter more than stock overlap?", "a": "Both matter, but high stock-level overlap is a bigger red flag. High sector overlap (e.g., both funds are 30% in Financials) is common, but if they both hold the exact same banks, your risk is more concentrated." },
         { "q": "Can SIPs in different funds create high overlap?", "a": "Yes. If you run SIPs in multiple large-cap or flexi-cap funds that track similar benchmarks (like the Nifty 50), they will likely buy the same top stocks, leading to high portfolio overlap over time." },
         { "q": "How often should I check overlap for my portfolio?", "a": "A yearly portfolio review is a good practice. Check for overlap annually or whenever you are considering adding a new fund to ensure it's adding true diversification." },
-        { "q": "How to reduce overlap without changing my asset allocation?", "a": "You can 'steer' your SIPs by pausing contributions to a high-overlap fund and redirecting the amount to a more unique fund in the same category (e.g., a multi-cap fund with a different strategy)." },
+        { "q": "How to reduce overlap without changing my asset allocation?", "a": "You can 'steer' your SIPs by pausing contributions to a high-overlap fund and redirecting the amount to a more unique fund in the same category (e.g., a 'value' fund instead of a 'growth' fund) or a different market focus (e.g., a multi-cap fund)." },
         { "q": "Is fund overlap the same as correlation?", "a": "No. Overlap measures common holdings, while correlation measures how similarly the funds' NAVs move. High overlap often leads to high correlation, but funds can be correlated without having high overlap." },
         { "q": "Can overlap increase my downside risk during a crash?", "a": "Yes. High overlap concentrates your risk. If a specific stock or sector that is common across all your funds performs badly, your entire portfolio will suffer more than you might expect." },
         { "q": "Are international funds included in overlap calculations?", "a": "Yes, our tool can calculate overlap for any funds, including international ones, as long as you provide the holdings data. This is useful for checking overlap between, for example, two different US tech funds." },
@@ -1240,5 +1240,3 @@
     }
   }
 }
-
-    
