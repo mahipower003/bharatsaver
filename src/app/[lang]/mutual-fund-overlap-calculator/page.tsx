@@ -8,8 +8,7 @@ import { AuthorCard } from "@/components/layout/AuthorCard";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { BarChart2, HelpCircle, FileText, CheckCircle, AlertTriangle, Table as TableIcon } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import fs from 'fs';
-import path from 'path';
+import { getFundData } from "@/lib/fund-data";
 import type { RawFund } from "@/lib/overlap-calculator";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
@@ -72,17 +71,6 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       'application/ld+json': JSON.stringify([articleSchema, softwareSchema, faqSchema]),
     },
   };
-}
-
-async function getFundData(): Promise<RawFund[]> {
-  const filePath = path.join(process.cwd(), 'public', 'jsonfile', 'tickertape_top_holdings.json');
-  try {
-    const fileContents = await fs.promises.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
-  } catch (error) {
-    console.error('Error reading fund data:', error);
-    return [];
-  }
 }
 
 export default async function MutualFundOverlapCalculatorPage({ params }: { params: { lang: Locale }}) {
