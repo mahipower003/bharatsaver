@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Download, Copy, PlusCircle, Trash2, BarChart2, Check, ChevronsUpDown, AlertTriangle, Info, Loader2 } from 'lucide-react';
@@ -20,6 +20,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
 
   useEffect(() => {
     async function fetchData() {
+      setIsLoading(true);
       try {
         const response = await fetch('/data/mutual-fund-holdings.json');
         if (!response.ok) {
@@ -29,11 +30,10 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
         setAllFunds(data);
         if (data.length >= 2) {
           setSelectedFunds([data[0], data[1]]);
-        } else {
-          setIsLoading(false);
         }
       } catch (error) {
         console.error("Error fetching fund data:", error);
+      } finally {
         setIsLoading(false);
       }
     }
@@ -42,21 +42,18 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
 
   useEffect(() => {
     const calculateOverlap = async () => {
-      if (selectedFunds.length >= 2) {
-        setIsLoading(true);
-        await new Promise(resolve => setTimeout(resolve, 100)); 
-        const result = calculateAllOverlaps(selectedFunds);
-        setOverlapResult(result);
-        setIsLoading(false);
-      } else {
+      if (selectedFunds.length < 2) {
         setOverlapResult(null);
-        if (allFunds.length > 0) {
-          setIsLoading(false);
-        }
+        return;
       }
+      setIsLoading(true);
+      await new Promise(resolve => setTimeout(resolve, 50)); 
+      const result = calculateAllOverlaps(selectedFunds);
+      setOverlapResult(result);
+      setIsLoading(false);
     };
     calculateOverlap();
-  }, [selectedFunds, allFunds]);
+  }, [selectedFunds]);
 
   const exportCSV = () => {
     if (!overlapResult || !overlapResult.pairs.length) return;
