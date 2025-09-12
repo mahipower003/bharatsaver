@@ -4,7 +4,6 @@
 import React, { useState, useMemo } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Checkbox } from '@/components/ui/checkbox';
@@ -18,13 +17,11 @@ import { cn } from '@/lib/utils';
 type Fund = {
   id: number;
   name: string;
-  sourceDate: string;
   holdings: Holding[];
   schemeCode: string;
 };
 
 type Holding = {
-  symbol: string;
   name: string;
   weight: number;
   sector: string;
@@ -44,8 +41,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
     return initialFunds.map((f, i) => ({
       id: i + 1,
       name: f.schemeName,
-      sourceDate: '31-Aug-2025',
-      holdings: f.holdings.map(h => ({ ...h, symbol: h.name.toUpperCase().replace(/ /g,"").slice(0,10) })),
+      holdings: f.holdings,
       schemeCode: f.schemeCode,
     }));
   });
@@ -53,49 +49,48 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
   const [includeSectors, setIncludeSectors] = useState(true);
 
   const overlapResult: OverlapResult | null = useMemo(() => {
-    if (funds.length < 2) return null;
+    if (funds.length < 2 || funds.some(f => f.holdings.length === 0)) return null;
 
-    const allSymbols = new Set<string>();
+    const allStockNames = new Set<string>();
     const fundWeightMaps = funds.map((f) => {
-      const map = new Map<string, { weight: number; sector: string; name: string }>();
+      const map = new Map<string, { weight: number; sector: string }>();
       let totalEquityWeight = 0;
       for (const h of f.holdings) {
-        map.set(h.symbol, { weight: h.weight, sector: h.sector, name: h.name });
+        map.set(h.name, { weight: h.weight, sector: h.sector });
         totalEquityWeight += h.weight;
-        allSymbols.add(h.symbol);
+        allStockNames.add(h.name);
       }
       return { map, totalEquityWeight };
     });
 
-    const symbolRows: { symbol: string; perFund: number[]; minWeight: number; exampleName: string; sector: string }[] = [];
-    allSymbols.forEach(symbol => {
-      const perFund = fundWeightMaps.map((fw) => fw.map.get(symbol)?.weight || 0);
+    const stockRows: { name: string; perFund: number[]; minWeight: number; sector: string }[] = [];
+    
+    allStockNames.forEach(name => {
+      const perFund = fundWeightMaps.map((fw) => fw.map.get(name)?.weight || 0);
       
-      // Only include if it's an overlap (present in more than one fund)
       if (perFund.filter(w => w > 0).length > 1) {
         const minWeight = Math.min(...perFund.filter(w => w > 0));
-        const firstFundWithStock = fundWeightMaps.find(fw => fw.map.has(symbol));
-        const stockInfo = firstFundWithStock?.map.get(symbol);
+        const firstFundWithStock = fundWeightMaps.find(fw => fw.map.has(name));
+        const stockInfo = firstFundWithStock?.map.get(name);
         
-        symbolRows.push({
-          symbol,
+        stockRows.push({
+          name,
           perFund,
           minWeight,
-          exampleName: stockInfo?.name || "N/A",
           sector: stockInfo?.sector || "Unknown",
         });
       }
     });
     
-    const weightedOverlap = symbolRows.reduce((s, r) => s + r.minWeight, 0);
+    const weightedOverlap = stockRows.reduce((s, r) => s + r.minWeight, 0);
 
     const pairwise: { i: number; j: number; percent: number }[] = [];
     for (let i = 0; i < funds.length; i++) {
       for (let j = i + 1; j < funds.length; j++) {
         let sumMin = 0;
-        allSymbols.forEach(symbol => {
-            const w1 = fundWeightMaps[i].map.get(symbol)?.weight || 0;
-            const w2 = fundWeightMaps[j].map.get(symbol)?.weight || 0;
+        allStockNames.forEach(name => {
+            const w1 = fundWeightMaps[i].map.get(name)?.weight || 0;
+            const w2 = fundWeightMaps[j].map.get(name)?.weight || 0;
             if(w1 > 0 && w2 > 0) {
                sumMin += Math.min(w1, w2);
             }
@@ -107,15 +102,15 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
     }
 
     const sectorMap = new Map<string, number>();
-    symbolRows.forEach(row => {
+    stockRows.forEach(row => {
       if (row.minWeight > 0) {
         sectorMap.set(row.sector, (sectorMap.get(row.sector) || 0) + row.minWeight);
       }
     });
 
-    const topOverlapStocks = symbolRows
+    const topOverlapStocks = stockRows
       .sort((a, b) => b.minWeight - a.minWeight)
-      .map((r) => ({ ...r, name: r.exampleName } as any));
+      .map((r) => ({ ...r } as any));
       
     const sectorOverlap = Array.from(sectorMap.entries())
         .map(([sector, weight]) => ({ sector, weight: Number(weight.toFixed(4)) }))
@@ -132,9 +127,9 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
 
   const exportCSV = () => {
     if (!overlapResult) return;
-    const headers = ["Symbol", "Name", ...funds.map((f) => f.name), "MinWeight"];
+    const headers = ["Stock Name", ...funds.map((f) => f.name), "MinWeight"];
     const rows = overlapResult.topOverlapStocks.map(r => 
-        [r.symbol, `"${r.name}"`, ...r.perFund.map((w) => w.toFixed(2)), r.minWeight.toFixed(4)].join(",")
+        [`"${r.name}"`, ...r.perFund.map((w) => w.toFixed(2)), r.minWeight.toFixed(4)].join(",")
     );
     const csv = [headers.join(","), ...rows].join("\n");
     const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
@@ -153,7 +148,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
     text += `Weighted Overlap: ${overlapResult.weightedOverlap}%\n\n`;
     text += `Top 5 Overlapping Stocks:\n`;
     overlapResult.topOverlapStocks.slice(0, 5).forEach(s => {
-      text += `- ${s.name} (${s.symbol}): ${s.minWeight.toFixed(2)}%\n`;
+      text += `- ${s.name}: ${s.minWeight.toFixed(2)}%\n`;
     });
     await navigator.clipboard.writeText(text);
     alert("Summary copied to clipboard!");
@@ -162,8 +157,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
   const addFund = () => {
     if (funds.length >= 5) return;
     const id = (funds[funds.length - 1]?.id || 0) + 1;
-    // Add a default placeholder fund
-    setFunds((p) => [...p, { id, name: `Select Fund ${id}`, sourceDate: '', holdings: [], schemeCode: '' }]);
+    setFunds((p) => [...p, { id, name: `Select Fund ${id}`, holdings: [], schemeCode: '' }]);
   };
 
   const removeFund = (id: number) => {
@@ -179,8 +173,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
       ? {
         ...f,
         name: selectedFundData.schemeName,
-        holdings: selectedFundData.holdings.map(h => ({...h, symbol: h.name.toUpperCase().replace(/ /g,"").slice(0,10)})),
-        sourceDate: '31-Aug-2025',
+        holdings: selectedFundData.holdings,
         schemeCode: selectedFundData.schemeCode,
       } 
       : f
@@ -210,7 +203,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
               </Button>
             </CardHeader>
             <CardContent className="p-4 text-sm text-muted-foreground">
-              {fund.sourceDate ? `Holdings as of: ${fund.sourceDate}` : 'Please select a fund to see details.'}
+              {fund.holdings.length > 0 ? `Holdings as of: 31-Aug-2025` : 'Please select a fund to see details.'}
             </CardContent>
           </Card>
         ))}
@@ -250,9 +243,9 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
                             <TableHead className="text-right font-bold">{dictionary.results.min_weight_header}</TableHead>
                         </TableRow></TableHeader>
                         <TableBody>
-                            {overlapResult.topOverlapStocks.slice(0,10).map(stock => (
-                                <TableRow key={stock.symbol}>
-                                    <TableCell className="font-medium">{stock.name}<br/><span className="text-xs text-muted-foreground">{stock.symbol}</span></TableCell>
+                            {overlapResult.topOverlapStocks.slice(0,10).map((stock, idx) => (
+                                <TableRow key={idx}>
+                                    <TableCell className="font-medium">{stock.name}</TableCell>
                                     {stock.perFund.map((w, i) => <TableCell key={i} className="text-right">{w > 0 ? `${w.toFixed(2)}%` : '-'}</TableCell>)}
                                     <TableCell className="text-right font-bold">{stock.minWeight.toFixed(2)}%</TableCell>
                                 </TableRow>
@@ -336,3 +329,4 @@ function FundSelector({ selectedFund, onSelect, dictionary }: { selectedFund: Fu
     </Popover>
   );
 }
+
