@@ -1,4 +1,4 @@
-
+'use client';
 import fs from 'fs';
 import path from 'path';
 
@@ -12,6 +12,9 @@ export type FundPortfolio = {
     }[];
 };
 
+// This code will only run on the server during the build process,
+// but the result (the `funds` array) will be bundled with the client code.
+// The webpack config in next.config.js prevents `fs` and `path` from breaking the client build.
 const filePath = path.join(process.cwd(), 'public', 'json', 'tickertape_top_holdings.json');
 const jsonData = fs.readFileSync(filePath, 'utf-8');
 const rawData = JSON.parse(jsonData);
