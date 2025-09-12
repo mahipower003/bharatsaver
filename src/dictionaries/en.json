@@ -860,7 +860,7 @@
   "loan_optimization_calculator": {
     "h1": "Loan Optimization Calculator India (2025)",
     "summary": "Free Loan Optimization Calculator (India). Compare prepayment vs invest, optimize EMI, plan balance transfer, download amortization schedule.",
-    "title": "Loan Optimization Calculator",
+    "title": "Loan Optimizer",
     "form_description": "Calculate your EMI and see how extra payments can save you interest.",
     "form": {
       "loan_amount": "Loan Amount (₹)",
