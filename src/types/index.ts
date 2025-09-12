@@ -1,5 +1,7 @@
+
 import type { LucideIcon } from 'lucide-react';
 import type { i18nConfig } from '@/lib/i18n-config';
+import { RawFund } from '@/data/mutual-fund-holdings';
 
 export type Locale = (typeof i18nConfig)['locales'][number];
 
@@ -14,11 +16,7 @@ export type Calculator = {
   image: string;
 };
 
-export type FundPortfolio = {
-  schemeCode: string;
-  schemeName: string;
-  holdings: { name: string; weight: number; sector: string }[];
-};
+export type FundPortfolio = RawFund;
 
 export type Page = {
   slug: string;
@@ -113,5 +111,3 @@ export type Dictionary = {
   };
   [key: string]: any;
 };
-
-    
