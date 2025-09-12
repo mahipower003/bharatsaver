@@ -10,8 +10,8 @@ function processFundData(data: any[]): FundPortfolio[] {
     const constituents = Array.isArray(fund.constituents) ? fund.constituents : [];
 
     const holdings = constituents
-      // Filter out any holdings where the weight is null or undefined
-      .filter((c: any) => c.weight_pct !== null && c.weight_pct !== undefined)
+      // Filter out any holdings where the weight is null, undefined, or not a number
+      .filter((c: any) => typeof c.weight_pct === 'number' && c.weight_pct !== null)
       // Map the valid holdings to the required structure
       .map((c: any) => ({
         name: c.company,
@@ -21,7 +21,7 @@ function processFundData(data: any[]): FundPortfolio[] {
 
     return {
       // Create a unique schemeCode if one isn't provided
-      schemeCode: (fund.fund_name || `FUND_${index}`).toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 20) + `_${constituents.length}`,
+      schemeCode: (fund.fund_name || `FUND_${index}`).toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 20) + `_${index}`,
       schemeName: fund.fund_name || 'Unknown Fund',
       holdings: holdings,
     };
@@ -29,4 +29,3 @@ function processFundData(data: any[]): FundPortfolio[] {
 }
 
 export const funds: FundPortfolio[] = processFundData(rawData);
-
