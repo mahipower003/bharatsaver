@@ -930,7 +930,7 @@
       "body": "<p>మీ గూడును నిర్మించడం కేవలం సగం యుద్ధం మాత్రమే. అసలు సవాలు దానిని కొనసాగించడం. పదవీ విరమణ చేసిన తర్వాత మీరు ఒక స్థిరమైన ఆదాయ ప్రవాహాన్ని ఎలా సృష్టించవచ్చో ఇక్కడ ఉంది.</p><h3>క్రమబద్ధమైన ఉపసంహరణ ప్రణాళిక (SWP)</h3><p>ఒక SWP మీకు ప్రతి నెలా మీ మ్యూచువల్ ఫండ్ పెట్టుబడుల నుండి ఒక స్థిర మొత్తాన్ని ఉపసంహరించుకోవడానికి అనుమతిస్తుంది, ঠিক ఒక పెన్షన్ లాగా. ఇది ఒక పన్ను-సమర్థవంతమైన పద్ధతి ఎందుకంటే మీ కార్పస్ మిగిలినది పెట్టుబడి చేయబడి, ద్రవ్యోల్బణాన్ని అధిగమించడానికి సహాయపడుతూ పెరుగుతూనే ఉంటుంది.</p><p><strong>ఉదాహరణ:</strong> ₹2 కోట్ల కార్పస్‌తో మరియు 7% వార్షిక రాబడితో, ₹1 లక్ష నెలవారీ SWP 30 సంవత్సరాలకు పైగా కొనసాగగలదు.</p><h3>యాన్యుటీ ప్రణాళికలు</h3><p>ఒక యాన్యుటీ అనేది ఒక బీమా ఉత్పత్తి, ఇక్కడ మీరు ఒక బీమా కంపెనీకి ఒక ఏకమొత్తం చెల్లిస్తారు, మరియు వారు మీకు జీవితాంతం ఒక స్థిర ఆదాయానికి హామీ ఇస్తారు.</p>"
     }
   },
-   "mutual_fund_overlap_calculator": {
+  "mutual_fund_overlap_calculator": {
     "meta_title": "Mutual Fund Overlap Calculator India 2025 — Check Stock Overlap & Reduce Concentration",
     "meta_description": "Free Mutual Fund Overlap Calculator (India). Select your funds to find common stocks, sector overlap, and actionable steps to improve diversification.",
     "h1": "Mutual Fund Overlap Calculator — Check Overlap Between Funds (India, 2025)",
@@ -961,9 +961,17 @@
       "body": "<h3>Inputs We Use</h3><p>To provide an accurate analysis, our tool uses the latest available portfolio data sourced from official AMFI records and fund house disclosures. You can compare two or more funds simultaneously to get a complete portfolio view. If you select 3 funds (A, B, C), the tool will generate three separate comparison cards: A vs. B, A vs. C, and B vs. C.</p><h3>Calculation Methodology</h3><p>We calculate overlap using the standard industry method:</p><p><strong>Weighted Overlap % (Recommended):</strong><br/><code>WeightedOverlap = ∑ min(wA_i, wB_i)</code><br/>This formula sums the minimum weight of each common stock 'i' across a pair of funds (Fund A and Fund B). It gives the most accurate picture of true portfolio concentration.</p><p>For a detailed breakdown, please see our <a href='#methodology'>Methodology</a> section.</p>"
     },
     "live_example": {
-      "h2": "Live Example — A Pairwise Comparison",
-      "intro": "Let's compare two popular large-cap funds to see overlap in action: 'ICICI Pru Bluechip' vs 'HDFC Top 100'. This is an example of one pairwise comparison the tool generates.",
-      "result": "<strong>Overlap Result:</strong> The weighted overlap between these two funds is approximately <strong>45%</strong>. This is considered high, meaning you have significant concentration in the same large-cap names."
+        "h2": "Live Example — A Pairwise Comparison",
+        "intro": "Let's compare two popular large-cap funds to see overlap in action: 'ICICI Pru Bluechip' vs 'HDFC Top 100'. This server-rendered example shows how the tool displays the result for one pair.",
+        "result_summary": "The weighted overlap between these two funds is approximately <strong>45.3%</strong> (High). This means there is significant concentration in the same large-cap names.",
+        "top_stocks_title": "Top 5 Common Stocks (Example)",
+        "top_stocks": [
+            { "name": "ICICI Bank Ltd.", "weight": "6.7%" },
+            { "name": "HDFC Bank Ltd.", "weight": "6.2%" },
+            { "name": "Reliance Industries Ltd.", "weight": "5.5%" },
+            { "name": "Infosys Ltd.", "weight": "4.1%" },
+            { "name": "Larsen & Toubro Ltd.", "weight": "3.3%" }
+        ]
     },
     "interpreting_results": {
       "h2": "Interpreting Your Overlap Results",
@@ -979,7 +987,7 @@
     },
     "methodology": {
       "h2": "Methodology & Data Sources",
-      "body": "<p>This calculator uses portfolio data sourced from AMFI (Association of Mutual Funds in India) and is updated periodically. The overlap is calculated using a weighted overlap formula to give you an accurate view of portfolio concentration. For any discrepancies, please refer to the official fund factsheet from the respective Asset Management Company (AMC).</p><h3>Weighted Overlap (Used)</h3><p>For funds A and B, with constituents {i} and weights wA_i, wB_i (fractions; sum of equity weights ≤ 1):<br><code>WeightedOverlap(A,B) = Σ_i min(wA_i, wB_i)</code></p><p>Result expressed as % of equity exposure:<br><code>WeightedOverlapPct = WeightedOverlap(A,B) * 100</code></p><p><strong>Notes:</strong><br>- Cash/debt portion is excluded from overlap (we normalize to total equity weight when comparing funds across different equity allocation).<br>- If only top-N holdings are available, we display `coverage = Σ_topN weights`. If coverage < 80%, results are flagged as “partial”.</p>"
+      "body": "<p>This calculator uses portfolio data sourced from AMFI (Association of Mutual Funds in India) and is updated periodically. The overlap is calculated using a weighted overlap formula to give you an accurate view of portfolio concentration. For any discrepancies, please refer to the official fund factsheet from the respective Asset Management Company (AMC).</p><h3>Weighted Overlap (Used)</h3><p>For funds A and B, with constituents {i} and weights wA_i, wB_i (fractions; sum of equity weights ≤ 1):<br/><code>WeightedOverlap(A,B) = Σ_i min(wA_i, wB_i)</code></p><p>Result expressed as % of equity exposure:<br/><code>WeightedOverlapPct = WeightedOverlap(A,B) * 100</code></p><p><strong>Notes:</strong><br>- Cash/debt portion is excluded from overlap (we normalize to total equity weight when comparing funds across different equity allocation).<br>- If only top-N holdings are available, we display `coverage = Σ_topN weights`. If coverage < 80%, results are flagged as “partial”.</p>"
     },
     "faq": {
       "h2": "Frequently Asked Questions",

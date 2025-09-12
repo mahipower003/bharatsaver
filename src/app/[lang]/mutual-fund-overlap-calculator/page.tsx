@@ -6,11 +6,12 @@ import type { Metadata } from "next";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { AuthorCard } from "@/components/layout/AuthorCard";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { BarChart2, HelpCircle, FileText, CheckCircle, AlertTriangle } from "lucide-react";
+import { BarChart2, HelpCircle, FileText, CheckCircle, AlertTriangle, Table as TableIcon } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import fs from 'fs';
 import path from 'path';
 import type { RawFund } from "@/lib/overlap-calculator";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 
 export async function generateStaticParams() {
@@ -87,6 +88,7 @@ async function getFundData(): Promise<RawFund[]> {
 export default async function MutualFundOverlapCalculatorPage({ params }: { params: { lang: Locale }}) {
   const dictionary = await getDictionary(params.lang, ['mutual_fund_overlap_calculator', 'author_card']);
   const allFunds = await getFundData();
+  const exampleData = dictionary.mutual_fund_overlap_calculator.live_example;
   
   return (
     <div className="py-12">
@@ -125,13 +127,32 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
 
             <Card>
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-3"><BarChart2 className="h-6 w-6 text-primary" />{dictionary.mutual_fund_overlap_calculator.live_example.h2}</CardTitle>
+                    <CardTitle className="flex items-center gap-3"><BarChart2 className="h-6 w-6 text-primary" />{exampleData.h2}</CardTitle>
                 </CardHeader>
                  <CardContent>
-                    <p className="mb-4">{dictionary.mutual_fund_overlap_calculator.live_example.intro}</p>
+                    <p className="mb-4">{exampleData.intro}</p>
                     <Alert>
-                        <AlertTitle>Example Result</AlertTitle>
-                        <AlertDescription dangerouslySetInnerHTML={{ __html: dictionary.mutual_fund_overlap_calculator.live_example.result }} />
+                        <AlertTitle className="font-bold">Example Result (pre-rendered)</AlertTitle>
+                        <AlertDescription className="mt-2">
+                           <p dangerouslySetInnerHTML={{ __html: exampleData.result_summary }} />
+                           <h4 className="font-semibold mt-4 mb-2">{exampleData.top_stocks_title}</h4>
+                           <Table>
+                             <TableHeader>
+                               <TableRow>
+                                 <TableHead>Stock</TableHead>
+                                 <TableHead className="text-right">Weight</TableHead>
+                               </TableRow>
+                             </TableHeader>
+                             <TableBody>
+                               {exampleData.top_stocks.map((stock: { name: string; weight: string; }, index: number) => (
+                                 <TableRow key={index}>
+                                   <TableCell>{stock.name}</TableCell>
+                                   <TableCell className="text-right">{stock.weight}</TableCell>
+                                 </TableRow>
+                               ))}
+                             </TableBody>
+                           </Table>
+                        </AlertDescription>
                     </Alert>
                 </CardContent>
             </Card>
@@ -167,7 +188,7 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
 
         <AuthorCard dictionary={dictionary.author_card} />
 
-        <Card className="mt-12 text-sm text-muted-foreground">
+        <Card id="methodology" className="mt-12 text-sm text-muted-foreground">
             <CardHeader>
                 <CardTitle className="text-lg flex items-center gap-2">
                     <HelpCircle className="h-5 w-5"/>
