@@ -9,9 +9,9 @@ import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Download, Copy, PlusCircle, Trash2, BarChart2, Check, ChevronsUpDown } from 'lucide-react';
 import type { Dictionary } from '@/types';
 import { funds as allFunds, type FundPortfolio } from '@/data/mutual-fund-holdings';
-import { Command, CommandDialog, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from '@/components/ui/command';
-import { DialogTitle } from '@/components/ui/dialog';
+import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList, CommandDialog } from '@/components/ui/command';
 import { cn } from '@/lib/utils';
+import { DialogTitle } from '../ui/dialog';
 
 type Fund = {
   id: number;
@@ -31,19 +31,29 @@ type OverlapResult = {
   topOverlapStocks: (Holding & { minWeight: number; perFund: number[] })[];
 };
 
+/**
+ * Calculates the overlap between a list of mutual funds.
+ * This is the corrected and robust implementation.
+ */
 const calculateOverlap = (funds: Fund[]): OverlapResult | null => {
-    if (funds.length < 2 || funds.some(f => !f.holdings || f.holdings.length === 0)) {
-        return null;
+    // Need at least two funds to compare.
+    if (funds.length < 2) {
+      return null;
     }
 
-    const stockMap: Map<string, { weights: number[], sector: string }> = new Map();
-    const fundCount = funds.length;
+    // A map to hold all unique stocks and their weights across all selected funds.
+    // Key: Stock Name, Value: Array of weights corresponding to the funds array.
+    const stockMap = new Map<string, { weights: number[]; sector: string }>();
 
+    // Populate the stockMap.
     funds.forEach((fund, fundIndex) => {
+        if (!fund.holdings) return;
         fund.holdings.forEach(holding => {
             if (!stockMap.has(holding.name)) {
-                stockMap.set(holding.name, { weights: Array(fundCount).fill(0), sector: holding.sector });
+                // If stock is new, initialize its weight array for all funds.
+                stockMap.set(holding.name, { weights: Array(funds.length).fill(0), sector: holding.sector });
             }
+            // Set the weight for the current fund.
             stockMap.get(holding.name)!.weights[fundIndex] = holding.weight;
         });
     });
@@ -51,22 +61,32 @@ const calculateOverlap = (funds: Fund[]): OverlapResult | null => {
     const commonStocks: (Holding & { minWeight: number; perFund: number[] })[] = [];
     let totalWeightedOverlap = 0;
 
+    // Iterate over every unique stock found.
     stockMap.forEach((data, stockName) => {
-        const fundsWithStock = data.weights.filter(w => w > 0);
-        if (fundsWithStock.length > 1) { 
-            const minWeight = Math.min(...fundsWithStock);
-            totalWeightedOverlap += minWeight;
+        // Find how many of the selected funds hold this stock.
+        const fundsWithStockCount = data.weights.filter(w => w > 0).length;
+
+        // A stock is "common" if it appears in at least two of the selected fund slots.
+        if (fundsWithStockCount >= 2) {
+            // Get all the non-zero weights for this stock to find the minimum.
+            const nonZeroWeights = data.weights.filter(w => w > 0);
+            const minWeight = Math.min(...nonZeroWeights);
             
+            // Add the minimum weight to the total overlap.
+            totalWeightedOverlap += minWeight;
+
+            // Add the stock to our list of common stocks for display.
             commonStocks.push({
                 name: stockName,
-                weight: 0, 
+                weight: 0, // Not used, minWeight is the key metric.
                 sector: data.sector,
                 minWeight,
-                perFund: data.weights,
+                perFund: data.weights, // The full array of weights for display.
             });
         }
     });
 
+    // Sort stocks by the most significant overlap first.
     commonStocks.sort((a, b) => b.minWeight - a.minWeight);
 
     return {
@@ -74,6 +94,7 @@ const calculateOverlap = (funds: Fund[]): OverlapResult | null => {
         topOverlapStocks: commonStocks,
     };
 };
+
 
 const getDefaultFunds = (): Fund[] => {
     if (!allFunds || allFunds.length < 2) return [];
