@@ -14,6 +14,12 @@ export type Calculator = {
   image: string;
 };
 
+export type FundPortfolio = {
+  schemeCode: string;
+  schemeName: string;
+  holdings: { name: string; weight: number; sector: string }[];
+};
+
 export type Page = {
   slug: string;
   title: string;
@@ -107,3 +113,5 @@ export type Dictionary = {
   };
   [key: string]: any;
 };
+
+    

@@ -1,7 +1,7 @@
 
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
@@ -27,107 +27,73 @@ type Holding = {
 
 type OverlapResult = {
   weightedOverlap: number;
-  pairwise: { i: number; j: number; percent: number }[];
   topOverlapStocks: (Holding & { minWeight: number; perFund: number[] })[];
-  sectorOverlap: { sector: string; weight: number }[];
+};
+
+const calculateOverlap = (funds: Fund[]): OverlapResult | null => {
+  if (funds.length < 2 || funds.some(f => f.holdings.length === 0)) return null;
+
+  const allStockNames = new Set<string>();
+  const fundWeightMaps = funds.map((f) => {
+    const map = new Map<string, { weight: number; sector: string }>();
+    f.holdings.forEach(h => {
+        if (h.name && typeof h.weight === 'number') {
+            map.set(h.name, { weight: h.weight, sector: h.sector || 'Unknown' });
+            allStockNames.add(h.name);
+        }
+    });
+    return map;
+  });
+
+  const stockRows: { name: string; perFund: number[]; minWeight: number; sector: string }[] = [];
+  
+  allStockNames.forEach(name => {
+    const perFundWeights = fundWeightMaps.map(fwMap => fwMap.get(name)?.weight || 0);
+    const fundsWithStock = perFundWeights.filter(w => w > 0);
+
+    if (fundsWithStock.length > 1) {
+      const minWeight = Math.min(...fundsWithStock);
+      const firstFundWithStock = fundWeightMaps.find(fwMap => fwMap.has(name));
+      const stockInfo = firstFundWithStock?.get(name);
+      
+      stockRows.push({
+        name,
+        perFund: perFundWeights,
+        minWeight,
+        sector: stockInfo?.sector || "Unknown",
+      });
+    }
+  });
+  
+  const weightedOverlap = stockRows.reduce((sum, row) => sum + row.minWeight, 0);
+
+  const topOverlapStocks = stockRows
+    .sort((a, b) => b.minWeight - a.minWeight)
+    .map((r) => ({ ...r } as any));
+
+  return {
+    weightedOverlap: Number(weightedOverlap.toFixed(2)),
+    topOverlapStocks,
+  };
 };
 
 
 export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictionary['mutual_fund_overlap_calculator'] }) {
-  const [funds, setFunds] = useState<Fund[]>(() => {
-    const initialFunds = allFunds.slice(0, 2);
-    return initialFunds.map((f, i) => ({
-      id: i + 1,
-      name: f.schemeName,
-      holdings: f.holdings,
-      schemeCode: f.schemeCode,
-    }));
-  });
+    const [funds, setFunds] = useState<Fund[]>(() => {
+        const initialFunds = allFunds.slice(0, 2);
+        return initialFunds.map((f, i) => ({
+          id: i + 1,
+          name: f.schemeName,
+          holdings: f.holdings,
+          schemeCode: f.schemeCode,
+        }));
+    });
 
-  const overlapResult: OverlapResult | null = useMemo(() => {
-    if (funds.length < 2 || funds.some(f => f.holdings.length === 0)) return null;
-  
-    const allStockNames = new Set<string>();
-    const fundWeightMaps = funds.map((f) => {
-      const map = new Map<string, { weight: number; sector: string }>();
-      let totalEquityWeight = 0;
-      for (const h of f.holdings) {
-        if (h.name && typeof h.weight === 'number') {
-            map.set(h.name, { weight: h.weight, sector: h.sector || 'Unknown' });
-            totalEquityWeight += h.weight;
-            allStockNames.add(h.name);
-        }
-      }
-      // Normalize weights to sum to 100 if they don't, to handle data inconsistencies
-      if (totalEquityWeight > 0 && Math.abs(totalEquityWeight - 100) > 1) {
-          map.forEach((value, key) => {
-              map.set(key, { ...value, weight: (value.weight / totalEquityWeight) * 100 });
-          });
-      }
-      return { map, totalEquityWeight };
-    });
-  
-    const stockRows: { name: string; perFund: number[]; minWeight: number; sector: string }[] = [];
+    const [overlapResult, setOverlapResult] = useState<OverlapResult | null>(() => calculateOverlap(funds));
     
-    allStockNames.forEach(name => {
-      const perFund = fundWeightMaps.map((fw) => fw.map.get(name)?.weight || 0);
-      
-      if (perFund.filter(w => w > 0).length > 1) {
-        const minWeight = Math.min(...perFund.filter(w => w > 0));
-        const firstFundWithStock = fundWeightMaps.find(fw => fw.map.has(name));
-        const stockInfo = firstFundWithStock?.map.get(name);
-        
-        stockRows.push({
-          name,
-          perFund,
-          minWeight,
-          sector: stockInfo?.sector || "Unknown",
-        });
-      }
-    });
-    
-    const weightedOverlap = stockRows.reduce((s, r) => s + r.minWeight, 0);
-  
-    const pairwise: { i: number; j: number; percent: number }[] = [];
-    for (let i = 0; i < funds.length; i++) {
-      for (let j = i + 1; j < funds.length; j++) {
-        let sumMin = 0;
-        allStockNames.forEach(name => {
-            const w1 = fundWeightMaps[i].map.get(name)?.weight || 0;
-            const w2 = fundWeightMaps[j].map.get(name)?.weight || 0;
-            if(w1 > 0 && w2 > 0) {
-               sumMin += Math.min(w1, w2);
-            }
-        });
-        const denom = Math.min(fundWeightMaps[i].totalEquityWeight || 100, fundWeightMaps[j].totalEquityWeight || 100);
-        const percent = denom > 0 ? (sumMin / denom) * 100 : 0;
-        pairwise.push({ i, j, percent: Number(percent.toFixed(2)) });
-      }
-    }
-  
-    const sectorMap = new Map<string, number>();
-    stockRows.forEach(row => {
-      if (row.minWeight > 0) {
-        sectorMap.set(row.sector, (sectorMap.get(row.sector) || 0) + row.minWeight);
-      }
-    });
-  
-    const topOverlapStocks = stockRows
-      .sort((a, b) => b.minWeight - a.minWeight)
-      .map((r) => ({ ...r } as any));
-      
-    const sectorOverlap = Array.from(sectorMap.entries())
-        .map(([sector, weight]) => ({ sector, weight: Number(weight.toFixed(4)) }))
-        .sort((a,b) => b.weight - a.weight);
-  
-  
-    return {
-      weightedOverlap: Number(weightedOverlap.toFixed(2)),
-      pairwise,
-      topOverlapStocks,
-      sectorOverlap,
-    };
-  }, [funds]);
+    useEffect(() => {
+        setOverlapResult(calculateOverlap(funds));
+    }, [funds]);
 
   const exportCSV = () => {
     if (!overlapResult) return;
@@ -280,6 +246,7 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: FundPort
         <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
       </Button>
       <CommandDialog open={open} onOpenChange={setOpen}>
+        <DialogTitle className="sr-only">Select a fund to compare</DialogTitle>
         <Command>
           <CommandInput placeholder="Search for a fund..." />
           <CommandEmpty>No fund found.</CommandEmpty>
