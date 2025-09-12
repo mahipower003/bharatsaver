@@ -762,320 +762,249 @@
     }
   },
   "tax_regime_calculator": {
-    "meta_title": "Tax Regime Calculator 2025 — Compare Old vs New Tax Regime (India)",
-    "meta_description": "Enter your salary and deductions to instantly compare tax under the old vs new regime. Updated for FY 2025-26 — includes HRA, 80C, 80D, and worked examples.",
-    "h1": "Old vs New Tax Regime Calculator",
-    "description": "Enter your salary and deductions to instantly compare tax under the old vs new regime. Updated for FY 2025-26 — includes HRA, 80C, 80D, and worked examples.",
-    "title": "Tax Regime Calculator",
-    "last_updated": "Last Updated:",
-    "form_description": "Find out which tax regime saves you more money.",
-    "gross_salary_label": "Gross Annual Salary",
-    "basic_salary_label": "Basic Salary (for HRA calculation)",
-    "other_income_label": "Other Income (e.g., interest, rent)",
-    "age_label": "Age Category",
-    "age_below_60": "Below 60 years",
-    "age_60_to_80": "60 to 80 years (Senior)",
-    "age_above_80": "Above 80 years (Super Senior)",
-    "deductions_title": "Deductions (for Old Regime)",
-    "section80C_label": "Section 80C (PPF, EPF, ELSS)",
-    "section80D_label": "Section 80D (Medical Insurance)",
-    "section80CCD1B_label": "Section 80CCD(1B) (NPS)",
-    "section80TTA_label": "Section 80TTA (Savings Interest)",
-    "hra_label": "HRA Received",
-    "rent_paid_label": "Total Annual Rent Paid",
-    "metro_city_label": "Live in a Metro City?",
-    "home_loan_interest_label": "Home Loan Interest (u/s 24)",
-    "lta_label": "Leave Travel Allowance (LTA)",
-    "calculate_button": "Compare Tax",
-    "loading": "Calculating...",
-    "results_title": "Tax Comparison Result",
-    "result_recommendation": "Choose the {winner} — it saves you {savings} this year.",
-    "old_regime": "Old Regime",
-    "new_regime": "New Regime",
-    "total_tax_label": "Total Tax Payable",
-    "taxable_income_label": "Taxable Income",
-    "net_income_label": "Take-home Income (after tax)",
+    "meta_title": "పాత vs కొత్త పన్ను విధానం క్యాలిక్యులేటర్ (AY 2025-26) | BharatSaver",
+    "meta_description": "భారతదేశంలో పాత మరియు కొత్త పన్ను విధానాల కింద మీ ఆదాయపు పన్ను బాధ్యతను పోల్చడానికి మరియు మీకు ఏది మంచిదో కనుగొనడానికి మా ఉచిత క్యాలిక్యులేటర్‌ను ఉపయోగించండి AY 2025-26 కోసం.",
+    "h1": "పాత vs కొత్త పన్ను విధానం క్యాలిక్యులేటర్",
+    "description": "మీ జీతం మరియు మినహాయింపులను నమోదు చేసి, పాత మరియు కొత్త పన్ను విధానాల కింద తక్షణమే పన్నును పోల్చండి. FY 2025-26 కోసం నవీకరించబడింది — HRA, 80C, 80D మరియు పని చేసిన ఉదాహరణలతో సహా.",
+    "title": "పన్ను విధానం క్యాలిక్యులేటర్",
+    "last_updated": "చివరిగా నవీకరించబడింది:",
+    "form_description": "ఏ పన్ను విధానం మీకు ఎక్కువ డబ్బు ఆదా చేస్తుందో కనుగొనండి.",
+    "gross_salary_label": "స్థూల వార్షిక జీతం",
+    "basic_salary_label": "ప్రాథమిక జీతం (HRA లెక్కింపు కోసం)",
+    "other_income_label": "ఇతర ఆదాయం (ఉదా., వడ్డీ, అద్దె)",
+    "age_label": "వయస్సు వర్గం",
+    "age_below_60": "60 సంవత్సరాల కంటే తక్కువ",
+    "age_60_to_80": "60 నుండి 80 సంవత్సరాలు (సీనియర్)",
+    "age_above_80": "80 సంవత్సరాల కంటే ఎక్కువ (సూపర్ సీనియర్)",
+    "deductions_title": "మినహాయింపులు (పాత విధానం కోసం)",
+    "section80C_label": "సెక్షన్ 80C (PPF, EPF, ELSS)",
+    "section80D_label": "సెక్షన్ 80D (వైద్య బీమా)",
+    "section80CCD1B_label": "సెక్షన్ 80CCD(1B) (NPS)",
+    "section80TTA_label": "సెక్షన్ 80TTA (పొదుపు వడ్డీ)",
+    "hra_label": "పొందిన HRA",
+    "rent_paid_label": "చెల్లించిన మొత్తం వార్షిక అద్దె",
+    "metro_city_label": "మెట్రో నగరంలో నివసిస్తున్నారా?",
+    "home_loan_interest_label": "గృహ రుణ వడ్డీ (u/s 24)",
+    "lta_label": "లీవ్ ట్రావెల్ అలవెన్స్ (LTA)",
+    "calculate_button": "పన్నును పోల్చండి",
+    "loading": "లెక్కిస్తోంది...",
+    "results_title": "పన్ను పోలిక ఫలితం",
+    "result_recommendation": "{winner} ఎంచుకోండి — ఇది ఈ సంవత్సరం మీకు {savings} ఆదా చేస్తుంది.",
+    "old_regime": "పాత విధానం",
+    "new_regime": "కొత్త విధానం",
+    "total_tax_label": "చెల్లించవలసిన మొత్తం పన్ను",
+    "taxable_income_label": "పన్ను విధించదగిన ఆదాయం",
+    "net_income_label": "చేతికి వచ్చే ఆదాయం (పన్ను తర్వాత)",
     "assumptions": {
-      "title": "Calculator Assumptions",
-      "body": "The calculator is updated for FY 2024-25 (AY 2025-26). A standard deduction of ₹50,000 is applied to both regimes for salaried individuals. All calculations are based on slab rates published by the Income Tax Department of India. This is an estimator and not tax advice."
+      "title": "క్యాలిక్యులేటర్ అంచనాలు",
+      "body": "క్యాలిక్యులేటర్ FY 2024-25 (AY 2025-26) కోసం నవీకరించబడింది. జీతం పొందే వ్యక్తుల కోసం రెండు విధానాలకు ₹50,000 స్టాండర్డ్ డిడక్షన్ వర్తిస్తుంది. అన్ని లెక్కలు భారత ఆదాయపు పన్ను శాఖ ప్రచురించిన స్లాబ్ రేట్ల ఆధారంగా ఉంటాయి. ఇది ఒక అంచనా మాత్రమే మరియు పన్ను సలహా కాదు."
     },
     "comparison_table": {
-      "title": "Old vs New Tax Regime — Quick Comparison",
-      "description": "A quick look at what's allowed in each regime.",
+      "title": "పాత vs కొత్త పన్ను విధానం — శీఘ్ర పోలిక",
+      "description": "ప్రతి విధానంలో ఏమి అనుమతించబడుతుందో ఒక శీఘ్ర వీక్షణ.",
       "table": {
-        "headers": ["Feature", "Old Tax Regime", "New Tax Regime (Default)"],
+        "headers": ["ఫీచర్", "పాత పన్ను విధానం", "కొత్త పన్ను విధానం (డిఫాల్ట్)"],
         "rows": [
-          ["Tax Slabs", "4 slabs (5%, 20%, 30%)", "6 slabs (5% to 30%)"],
-          ["Standard Deduction", "₹50,000", "₹50,000"],
-          ["Section 80C/80D", "Allowed", "Not Allowed"],
-          ["HRA Exemption", "Allowed", "Not Allowed"],
-          ["Home Loan Interest", "Allowed", "Not Allowed"]
+          ["పన్ను స్లాబ్‌లు", "4 స్లాబ్‌లు (5%, 20%, 30%)", "6 స్లాబ్‌లు (5% నుండి 30%)"],
+          ["ప్రామాణిక మినహాయింపు", "₹50,000", "₹50,000"],
+          ["సెక్షన్ 80C/80D", "అనుమతించబడింది", "అనుమతించబడలేదు"],
+          ["HRA మినహాయింపు", "అనుమతించబడింది", "అనుమతించబడలేదు"],
+          ["గృహ రుణ వడ్డీ", "అనుమతించబడింది", "అనుమతించబడలేదు"]
         ]
       }
     },
     "how_we_calculate": {
-      "title": "How We Calculate Your Tax (Step-by-Step)",
-      "body": "<ul><li><strong>Old Regime Calculation:</strong> Gross Income - Standard Deduction - All Section 80 Deductions - HRA/Home Loan Interest = Taxable Income.</li><li><strong>New Regime Calculation:</strong> Gross Income - Standard Deduction = Taxable Income.</li></ul><p>Our tax calculator then applies the official tax slabs for FY 2024-25 (AY 2025-26) to determine your liability under both regimes. A 4% Health & Education Cess is applied to the final tax amount. Rebate under Section 87A for income up to ₹7 lakh in the default new regime makes the effective tax zero. For slab rates, we cite the official <a href='https://incometaxindia.gov.in/Pages/tools/income-tax-calculator.aspx' target='_blank' rel='noopener noreferrer'>Income Tax Department e-calculator</a>.</p>"
+      "title": "మేము మీ పన్నును ఎలా లెక్కిస్తాము (దశల వారీ)",
+      "body": "<ul><li><strong>పాత విధానం లెక్కింపు:</strong> స్థూల ఆదాయం - ప్రామాణిక మినహాయింపు - అన్ని సెక్షన్ 80 మినహాయింపులు - HRA/గృహ రుణ వడ్డీ = పన్ను విధించదగిన ఆదాయం.</li><li><strong>కొత్త విధానం లెక్కింపు:</strong> స్థూల ఆదాయం - ప్రామాణిక మినహాయింపు = పన్ను విధించదగిన ఆదాయం.</li></ul><p>మా పన్ను క్యాలిక్యులేటర్ FY 2024-25 (AY 2025-26) కోసం అధికారిక పన్ను స్లాబ్‌లను వర్తింపజేసి రెండు విధానాల కింద మీ బాధ్యతను నిర్ధారిస్తుంది. తుది పన్ను మొత్తంపై 4% ఆరోగ్యం & విద్యా సెస్ వర్తిస్తుంది. డిఫాల్ట్ కొత్త విధానంలో ₹7 లక్షల వరకు ఆదాయం కోసం సెక్షన్ 87A కింద రిబేట్ ఉంది, ఇది ప్రభావవంతమైన పన్నును సున్నా చేస్తుంది. స్లాబ్ రేట్ల కోసం, మేము అధికారిక <a href='https://incometaxindia.gov.in/Pages/tools/income-tax-calculator.aspx' target='_blank' rel='noopener noreferrer'>ఆదాయపు పన్ను శాఖ ఇ-క్యాలిక్యులేటర్‌ను</a> ఉదహరిస్తాము.</p>"
     },
     "checklist": {
-      "title": "How to Choose: A Quick Checklist",
-      "body": "<ul><li><strong>High Deductions:</strong> If your total deductions (80C, HRA, home loan interest) are significant (usually > ₹2.5-3 lakh), the <strong>Old Regime</strong> is often better.</li><li><strong>Low/No Deductions:</strong> If you don't have many deductions, the lower slab rates of the <strong>New Regime</strong> are usually more beneficial.</li><li><strong>Simplicity:</strong> Prefer a simpler tax filing process without tracking multiple investments? The <strong>New Regime</strong> is easier.</li></ul>"
+      "title": "ఎలా ఎంచుకోవాలి: ఒక శీఘ్ర చెక్‌లిస్ట్",
+      "body": "<ul><li><strong>అధిక మినహాయింపులు:</strong> మీ మొత్తం మినహాయింపులు (80C, HRA, గృహ రుణ వడ్డీ) గణనీయంగా ఉంటే (సాధారణంగా > ₹2.5-3 లక్షలు), <strong>పాత విధానం</strong> తరచుగా ఉత్తమం.</li><li><strong>తక్కువ/మినహాయింపులు లేవు:</strong> మీకు చాలా మినహాయింపులు లేకపోతే, <strong>కొత్త విధానం</strong> యొక్క తక్కువ స్లాబ్ రేట్లు సాధారణంగా మరింత ప్రయోజనకరంగా ఉంటాయి.</li><li><strong>సరళత:</strong> బహుళ పెట్టుబడులను ట్రాక్ చేయకుండా ఒక సరళమైన పన్ను ఫైలింగ్ ప్రక్రియను ఇష్టపడతారా? <strong>కొత్త విధానం</strong> సులభం.</li></ul>"
     },
     "common_scenarios": {
-      "title": "Worked Examples — Old vs New Regime",
+      "title": "పని చేసిన ఉదాహరణలు — పాత vs కొత్త విధానం",
       "scenario1": {
-        "title": "Example 1: ₹10 lakh salary with HRA & full deductions",
-        "body": "<strong>Inputs:</strong> Salary ₹10,00,000 | HRA ₹2,00,000 | 80C ₹1,50,000 | 80D ₹25,000 | 80CCD(1B) ₹50,000<br/><strong>Old Regime Tax:</strong> ₹46,800<br/><strong>New Regime Tax:</strong> ₹54,600<br/><strong>Recommendation:</strong> The Old Regime is better here because the deductions + HRA exemption significantly lower the taxable income."
+        "title": "ఉదాహరణ 1: HRA & పూర్తి మినహాయింపులతో ₹10 లక్షల జీతం",
+        "body": "<strong>ఇన్‌పుట్‌లు:</strong> జీతం ₹10,00,000 | HRA ₹2,00,000 | 80C ₹1,50,000 | 80D ₹25,000 | 80CCD(1B) ₹50,000<br/><strong>పాత విధానం పన్ను:</strong> ₹46,800<br/><strong>కొత్త విధానం పన్ను:</strong> ₹54,600<br/><strong>సిఫార్సు:</strong> పాత విధానం ఇక్కడ ఉత్తమం ఎందుకంటే మినహాయింపులు + HRA మినహాయింపులు పన్ను విధించదగిన ఆదాయాన్ని గణనీయంగా తగ్గిస్తాయి."
       },
       "scenario2": {
-        "title": "Example 2: ₹15 lakh salary, no deductions",
-        "body": "<strong>Inputs:</strong> Salary ₹15,00,000 | HRA = 0 | 80C/80D = 0<br/><strong>Old Regime Tax:</strong> ₹2,73,000<br/><strong>New Regime Tax:</strong> ₹1,95,000<br/><strong>Recommendation:</strong> The New Regime saves ~₹78,000 because no deductions are used."
+        "title": "ఉదాహరణ 2: ₹15 లక్షల జీతం, మినహాయింపులు లేవు",
+        "body": "<strong>ఇన్‌పుట్‌లు:</strong> జీతం ₹15,00,000 | HRA = 0 | 80C/80D = 0<br/><strong>పాత విధానం పన్ను:</strong> ₹2,73,000<br/><strong>కొత్త విధానం పన్ను:</strong> ₹1,95,000<br/><strong>సిఫార్సు:</strong> కొత్త విధానం ~₹78,000 ఆదా చేస్తుంది ఎందుకంటే ఏ మినహాయింపులు ఉపయోగించబడలేదు."
       },
       "scenario3": {
-        "title": "Example 3: ₹7 lakh freelancer income (no HRA, small deduction)",
-        "body": "<strong>Inputs:</strong> Income ₹7,00,000 | No HRA | 80C ₹50,000<br/><strong>Old Regime Tax:</strong> ₹23,400<br/><strong>New Regime Tax:</strong> ₹0 (87A rebate applies)<br/><strong>Recommendation:</strong> The New Regime is better, especially for individuals with income up to ₹7 lakh due to the rebate."
+        "title": "ఉదాహరణ 3: ₹7 లక్షల ఫ్రీలాన్సర్ ఆదాయం (HRA లేదు, చిన్న మినహాయింపు)",
+        "body": "<strong>ఇన్‌పుట్‌లు:</strong> ఆదాయం ₹7,00,000 | HRA లేదు | 80C ₹50,000<br/><strong>పాత విధానం పన్ను:</strong> ₹23,400<br/><strong>కొత్త విధానం పన్ను:</strong> ₹0 (87A రిబేట్ వర్తిస్తుంది)<br/><strong>సిఫార్సు:</strong> కొత్త విధానం ఉత్తమం, ప్రత్యేకించి ₹7 లక్షల వరకు ఆదాయం ఉన్న వ్యక్తులకు రిబేట్ కారణంగా."
       }
     },
-    "faq_title": "Frequently Asked Questions",
+    "faq_title": "తరచుగా అడిగే ప్రశ్నలు",
     "faqs": [
-      { "question": "What is the new tax regime?", "answer": "The new tax regime offers lower tax rates but disallows most common deductions like HRA, 80C, and home loan interest. It's now the default regime. If your total deductible investments are less than ~₹1.8L, the new regime usually saves tax." },
-      { "question": "What is the old tax regime?", "answer": "The old tax regime has slightly higher tax rates but allows you to claim over 70 deductions and exemptions. You have to specifically opt for it." },
-      { "question": "Which tax regime is better for a 10 lakh salary?", "answer": "If your total deductions are over ₹2.5 lakh, the old regime is usually better. Otherwise, the new regime often saves you more tax." },
-      { "question": "Can I claim HRA in the new tax regime?", "answer": "No, HRA exemption is only available under the old tax regime; include your HRA details in the calculator to see the difference." },
-      { "question": "Is standard deduction available in the new regime?", "answer": "Yes, a standard deduction of ₹50,000 for salaried individuals is available under both the old and new tax regimes." },
-      { "question": "What is the tax rebate under Section 87A for FY 2024-25?", "answer": "In the new regime, if your taxable income is up to ₹7 lakh, you pay zero tax due to the rebate. In the old regime, the rebate applies to income up to ₹5 lakh." }
+      { "question": "కొత్త పన్ను విధానం అంటే ఏమిటి?", "answer": "కొత్త పన్ను విధానం తక్కువ పన్ను రేట్లను అందిస్తుంది కానీ HRA, 80C, మరియు గృహ రుణ వడ్డీ వంటి చాలా సాధారణ మినహాయింపులను అనుమతించదు. ఇది ఇప్పుడు డిఫాల్ట్ విధానం. మీ మొత్తం మినహాయించదగిన పెట్టుబడులు ~₹1.8L కంటే తక్కువగా ఉంటే, కొత్త విధానం సాధారణంగా పన్ను ఆదా చేస్తుంది." },
+      { "question": "పాత పన్ను విధానం అంటే ఏమిటి?", "answer": "పాత పన్ను విధానంలో కొంచెం ఎక్కువ పన్ను రేట్లు ఉన్నాయి కానీ మీకు 70కి పైగా మినహాయింపులు మరియు మినహాయింపులను క్లెయిమ్ చేయడానికి అనుమతిస్తుంది. మీరు ప్రత్యేకంగా దాన్ని ఎంచుకోవాలి." },
+      { "question": "₹10 లక్షల జీతానికి ఏ పన్ను విధానం ఉత్తమం?", "answer": "మీ మొత్తం మినహాయింపులు ₹2.5 లక్షల కంటే ఎక్కువగా ఉంటే, పాత విధానం సాధారణంగా ఉత్తమం. లేకపోతే, కొత్త విధానం తరచుగా మీకు ఎక్కువ పన్ను ఆదా చేస్తుంది." },
+      { "question": "నేను కొత్త పన్ను విధానంలో HRAని క్లెయిమ్ చేయవచ్చా?", "answer": "లేదు, HRA మినహాయింపు పాత పన్ను విధానం కింద మాత్రమే అందుబాటులో ఉంది; తేడాను చూడటానికి క్యాలిక్యులేటర్‌లో మీ HRA వివరాలను చేర్చండి." },
+      { "question": "కొత్త విధానంలో ప్రామాణిక మినహాయింపు అందుబాటులో ఉందా?", "answer": "అవును, జీతం పొందే వ్యక్తుల కోసం ₹50,000 ప్రామాణిక మినహాయింపు పాత మరియు కొత్త రెండూ పన్ను విధానాల కింద అందుబాటులో ఉంది." },
+      { "question": "FY 2024-25 కోసం సెక్షన్ 87A కింద పన్ను రిబేట్ అంటే ఏమిటి?", "answer": "కొత్త విధానంలో, మీ పన్ను విధించదగిన ఆదాయం ₹7 లక్షల వరకు ఉంటే, రిబేట్ కారణంగా మీరు సున్నా పన్ను చెల్లిస్తారు. పాత విధానంలో, రిబేట్ ₹5 లక్షల వరకు ఆదాయానికి వర్తిస్తుంది." }
     ],
     "next_steps": {
-      "title": "Next Steps",
-      "cta1_title": "File Your ITR",
-      "cta1_desc": "Use a trusted partner like ClearTax to file your income tax return accurately.",
-      "cta2_title": "Plan Tax-Saving Investments",
-      "cta2_desc": "Explore our tax-saving calculators like PPF and NPS to plan your investments."
+      "title": "తదుపరి దశలు",
+      "cta1_title": "మీ ITR ఫైల్ చేయండి",
+      "cta1_desc": "మీ ఆదాయపు పన్ను రిటర్న్‌ను ఖచ్చితంగా ఫైల్ చేయడానికి ClearTax వంటి విశ్వసనీయ భాగస్వామిని ఉపయోగించండి.",
+      "cta2_title": "పన్ను-ఆదా పెట్టుబడులను ప్లాన్ చేయండి",
+      "cta2_desc": "మీ పెట్టుబడులను ప్లాన్ చేయడానికి PPF మరియు NPS వంటి మా పన్ను-ఆదా క్యాలిక్యులేటర్లను అన్వేషించండి."
     },
     "conclusion": {
-      "title": "Final Thoughts: Making the Smart Choice",
-      "body": "Choosing a tax regime is a critical financial decision. The new regime offers simplicity, while the old regime rewards those with significant investments and expenses. Use this calculator to compare your specific situation, understand the trade-offs, and choose the path that maximizes your take-home salary. For deeper insights, explore our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> or our <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> to see how tax-saving investments can influence your decision."
+      "title": "తుది ఆలోచనలు: తెలివైన ఎంపిక చేసుకోవడం",
+      "body": "ఒక పన్ను విధానాన్ని ఎంచుకోవడం ఒక కీలకమైన ఆర్థిక నిర్ణయం. కొత్త విధానం సరళతను అందిస్తుంది, అయితే పాత విధానం గణనీయమైన పెట్టుబడులు మరియు ఖర్చులు ఉన్నవారికి ప్రతిఫలమిస్తుంది. మీ నిర్దిష్ట పరిస్థితిని పోల్చడానికి, లాభనష్టాలను అర్థం చేసుకోవడానికి మరియు మీ చేతికి వచ్చే జీతాన్ని గరిష్ఠం చేసే మార్గాన్ని ఎంచుకోవడానికి ఈ క్యాలిక్యులేటర్‌ను ఉపయోగించండి. లోతైన అంతర్దృష్టుల కోసం, పన్ను-ఆదా పెట్టుబడులు మీ నిర్ణయాన్ని ఎలా ప్రభావితం చేస్తాయో చూడటానికి మా <a href='/{lang}/ppf-calculator' class='underline'>PPF క్యాలిక్యులేటర్</a> లేదా మా <a href='/{lang}/nps-calculator' class='underline'>NPS క్యాలిక్యులేటర్</a>ను అన్వేషించండి."
     }
   },
   "retirement_corpus_calculator": {
-    "meta_title": "Retirement Corpus Calculator India 2025 | Free Online Retirement Planning Tool",
-    "meta_description": "Free Retirement Corpus Calculator India (2025). Calculate how much money you need to retire, SIP required, and plan a stress-free retirement today.",
-    "og_description": "Estimate the corpus and monthly SIP required to retire comfortably. India-specific, includes NPS/PPF/EPF guidance.",
-    "h1": "Retirement Corpus Calculator — How Much Money You Need to Retire in India (2025)",
-    "intro": "A retirement corpus is the total sum of money you need to support yourself after you stop working. Our calculator helps you go beyond a simple number to create a complete plan for a secure retirement.",
+    "meta_title": "పదవీ విరమణ కార్పస్ క్యాలిక్యులేటర్ భారతదేశం 2025 | ఉచిత ఆన్‌లైన్ పదవీ విరమణ ప్రణాళిక సాధనం",
+    "meta_description": "ఉచిత పదవీ విరమణ కార్పస్ క్యాలిక్యులేటర్ భారతదేశం (2025). మీరు పదవీ విరమణ చేయడానికి ఎంత డబ్బు అవసరమో, అవసరమైన SIP, మరియు ఒత్తిడి లేని పదవీ విరమణ ప్రణాళికను ఈరోజే ప్లాన్ చేయండి.",
+    "og_description": "సౌకర్యవంతంగా పదవీ విరమణ చేయడానికి అవసరమైన కార్పస్ మరియు నెలవారీ SIPని అంచనా వేయండి. భారతదేశం-నిర్దిష్ట, NPS/PPF/EPF మార్గదర్శకత్వం కలిగి ఉంటుంది.",
+    "h1": "పదవీ విరమణ కార్పస్ క్యాలిక్యులేటర్ — భారతదేశంలో పదవీ విరమణ చేయడానికి మీకు ఎంత డబ్బు అవసరం (2025)",
+    "intro": "ఒక పదవీ విరమణ కార్పస్ అనేది మీరు పని చేయడం మానేసిన తర్వాత మిమ్మల్ని మీరు పోషించుకోవడానికి అవసరమైన మొత్తం డబ్బు. మా క్యాలిక్యులేటర్ మీకు ఒక సురక్షితమైన పదవీ విరమణ కోసం ఒక పూర్తి ప్రణాళికను రూపొందించడానికి ఒక సాధారణ సంఖ్యకు మించి వెళ్ళడానికి సహాయపడుతుంది.",
     "tool_section": {
-      "h2": "Calculate Your Retirement Corpus (Free Online Tool)"
+      "h2": "మీ పదవీ విరమణ కార్పస్‌ను లెక్కించండి (ఉచిత ఆన్‌లైన్ సాధనం)"
     },
-    "title": "Retirement Corpus Calculator",
-    "form_description": "Plan your comfortable retirement by calculating the total corpus you'll need.",
-    "current_age_label": "Current Age",
-    "retirement_age_label": "Retirement Age",
-    "monthly_expenses_label": "Current Monthly Expenses (₹)",
-    "current_savings_label": "Current Retirement Savings (₹)",
-    "inflation_rate_label": "Expected Inflation Rate (% p.a.)",
-    "pre_retirement_returns_label": "Pre-Retirement Returns (% p.a.)",
-    "post_retirement_returns_label": "Post-Retirement Returns (% p.a.)",
-    "calculate_button": "Calculate Corpus",
-    "loading": "Calculating...",
-    "results_title": "Your Retirement Projection",
-    "required_corpus": "Corpus Needed at Retirement",
-    "corpus_shortfall": "Corpus Shortfall",
-    "corpus_surplus": "Corpus Surplus",
-    "monthly_sip": "Monthly SIP Required",
-    "view_chart": "View Chart",
-    "view_table": "View Table",
-    "export_csv": "Export CSV",
-    "table_year": "Year",
-    "table_age": "Age",
-    "table_total_corpus": "Total Corpus",
-    "age_label": "Age",
-    "amount_in_lakhs": "Amount (in Lakhs)",
+    "title": "పదవీ విరమణ కార్పస్ క్యాలిక్యులేటర్",
+    "form_description": "మీకు అవసరమైన మొత్తం కార్పస్‌ను లెక్కించడం ద్వారా మీ సౌకర్యవంతమైన పదవీ విరమణను ప్లాన్ చేయండి.",
+    "current_age_label": "ప్రస్తుత వయస్సు",
+    "retirement_age_label": "పదవీ విరమణ వయస్సు",
+    "monthly_expenses_label": "ప్రస్తుత నెలవారీ ఖర్చులు (₹)",
+    "current_savings_label": "ప్రస్తుత పదవీ విరమణ పొదుపు (₹)",
+    "inflation_rate_label": "ఆశించిన ద్రవ్యోల్బణం రేటు (% p.a.)",
+    "pre_retirement_returns_label": "ప్రీ-రిటైర్మెంట్ రిటర్న్స్ (% p.a.)",
+    "post_retirement_returns_label": "పోస్ట్-రిటైర్మెంట్ రిటర్న్స్ (% p.a.)",
+    "calculate_button": "కార్పస్‌ను లెక్కించండి",
+    "loading": "లెక్కిస్తోంది...",
+    "results_title": "మీ పదవీ విరమణ ప్రొజెక్షన్",
+    "required_corpus": "పదవీ విరమణ వద్ద అవసరమైన కార్పస్",
+    "corpus_shortfall": "కార్పస్ కొరత",
+    "corpus_surplus": "కార్పస్ మిగులు",
+    "monthly_sip": "అవసరమైన నెలవారీ SIP",
+    "view_chart": "చార్ట్ చూడండి",
+    "view_table": "పట్టిక చూడండి",
+    "export_csv": "CSVని ఎగుమతి చేయండి",
+    "table_year": "సంవత్సరం",
+    "table_age": "వయస్సు",
+    "table_total_corpus": "మొత్తం కార్పస్",
+    "age_label": "వయస్సు",
+    "amount_in_lakhs": "మొత్తం (లక్షలలో)",
     "sip_plans": {
-      "title": "Sample SIP Plans to Reach Your Goal",
-      "body": "This table shows the approximate monthly SIP required to reach common retirement corpus goals from different starting ages, assuming a 12% annual return."
+      "title": "మీ లక్ష్యాన్ని చేరుకోవడానికి నమూనా SIP ప్రణాళికలు",
+      "body": "ఈ పట్టిక వివిధ ప్రారంభ వయస్సుల నుండి సాధారణ పదవీ విరమణ కార్పస్ లక్ష్యాలను చేరుకోవడానికి అవసరమైన సుమారు నెలవారీ SIPని చూపిస్తుంది, ఇది 12% వార్షిక రాబడిని ఊహిస్తుంది."
     },
     "how_it_works": {
-      "h2": "How Do You Calculate a Retirement Corpus?",
-      "body": "<p>We use standard financial formulas to give you an accurate projection. Here's a simplified look at how we do it:</p><h3>Future Value of Your Expenses at Retirement</h3><p>We first calculate how much your current monthly expenses will grow to by the time you retire, using the inflation rate you provide. The formula is: <code>Future Expense = Current Expense × (1 + Inflation Rate) ^ Years to Retirement</code>.</p><h3>Corpus Needed at Retirement (PV of Annuity)</h3><p>Next, we calculate the total lump sum you'll need on the day you retire. This is the amount that, when invested, will generate enough income to cover your expenses for the rest of your life. We use a present value of an annuity formula for this.</p><h3>Required SIP Calculation</h3><p>Finally, we determine the monthly Systematic Investment Plan (SIP) needed to bridge the gap between your existing savings and your target corpus. We calculate the future value of your current savings and subtract it from the needed corpus to find the shortfall. The SIP is then calculated using the future value of an annuity due formula, assuming deposits are made at the beginning of each month.</p>"
+      "h2": "మీరు పదవీ విరమణ కార్పస్‌ను ఎలా లెక్కిస్తారు?",
+      "body": "<p>మేము మీకు ఒక ఖచ్చితమైన ప్రొజెక్షన్ ఇవ్వడానికి ప్రామాణిక ఆర్థిక సూత్రాలను ఉపయోగిస్తాము. ఇక్కడ మేము దానిని ఎలా చేస్తామో ఒక సరళీకృత వీక్షణ:</p><h3>పదవీ విరమణ వద్ద మీ ఖర్చుల భవిష్యత్ విలువ</h3><p>మేము మొదట మీరు అందించిన ద్రవ్యోల్బణం రేటును ఉపయోగించి, మీరు పదవీ విరమణ చేసే సమయానికి మీ ప్రస్తుత నెలవారీ ఖర్చులు ఎంత పెరుగుతాయో లెక్కిస్తాము. సూత్రం: <code>భవిష్యత్ వ్యయం = ప్రస్తుత వ్యయం × (1 + ద్రవ్యోల్బణం రేటు) ^ పదవీ విరమణకు సంవత్సరాలు</code>.</p><h3>పదవీ విరమణ వద్ద అవసరమైన కార్పస్ (యాన్యుటీ యొక్క PV)</h3><p>తరువాత, మీరు పదవీ విరమణ చేసే రోజున మీకు అవసరమైన మొత్తం ఏకమొత్తాన్ని మేము లెక్కిస్తాము. ఇది, పెట్టుబడి పెట్టినప్పుడు, మీ మిగిలిన జీవితానికి మీ ఖర్చులను కవర్ చేయడానికి తగినంత ఆదాయాన్ని ఉత్పత్తి చేసే మొత్తం. మేము దీని కోసం ఒక యాన్యుటీ యొక్క ప్రస్తుత విలువ సూత్రాన్ని ఉపయోగిస్తాము.</p><h3>అవసరమైన SIP లెక్కింపు</h3><p>చివరగా, మీ ప్రస్తుత పొదుపులు మరియు మీ లక్ష్య కార్పస్ మధ్య అంతరాన్ని పూరించడానికి అవసరమైన నెలవారీ క్రమబద్ధమైన పెట్టుబడి ప్రణాళిక (SIP)ని మేము నిర్ధారిస్తాము. మేము మీ ప్రస్తుత పొదుపుల భవిష్యత్ విలువను లెక్కిస్తాము మరియు కొరతను కనుగొనడానికి దాన్ని అవసరమైన కార్పస్ నుండి తీసివేస్తాము. ప్రతి నెల ప్రారంభంలో డిపాజిట్లు చేయబడతాయని ఊహించి, యాన్యుటీ డ్యూ సూత్రం యొక్క భవిష్యత్ విలువను ఉపయోగించి SIP లెక్కించబడుతుంది.</p>"
     },
     "inputs_explained": {
-      "h2": "What Inputs You Need to Provide & Why They Matter",
-      "body": "<p>To get an accurate result, you need to provide a few key details. Here's what each one means for your plan:</p><ul><li><strong>Your Current & Retirement Age:</strong> This defines your investment horizon. The more time you have, the more the power of compounding can work for you, meaning you can start with smaller investments.</li><li><strong>Your Current Monthly Expenses:</strong> This is the foundation of your retirement plan. Be realistic about what you spend today to get an accurate picture of what you'll need tomorrow.</li><li><strong>Your Current Savings:</strong> This is your head start! Any money you've already saved in EPF, PPF, mutual funds, or other investments reduces the amount you need to save in the future.</li><li><strong>Inflation Rate:</strong> This is the silent wealth killer. Inflation erodes the purchasing power of your money over time. A higher inflation rate means you'll need a much larger corpus.</li><li><strong>Pre-Retirement Returns:</strong> This is the growth rate you expect on your investments while you're still working. Higher returns mean your money works harder for you, and you can reach your goal with smaller SIPs.</li><li><strong>Post-Retirement Returns:</strong> This is the return you expect on your corpus after you've retired. We assume a more conservative, capital-preservation portfolio here.</li></ul>"
+      "h2": "మీరు ఏ ఇన్‌పుట్‌లను అందించాలి & అవి ఎందుకు ముఖ్యమైనవి",
+      "body": "<p>ఒక ఖచ్చితమైన ఫలితం పొందడానికి, మీరు కొన్ని కీలక వివరాలను అందించాలి. మీ ప్రణాళిక కోసం ప్రతి ఒక్కటి ఏమిటో ఇక్కడ ఉంది:</p><ul><li><strong>మీ ప్రస్తుత & పదవీ విరమణ వయస్సు:</strong> ఇది మీ పెట్టుబడి హోరిజోన్‌ను నిర్వచిస్తుంది. మీకు ఎంత ఎక్కువ సమయం ఉంటే, చక్రవడ్డీ శక్తి మీకు అంత ఎక్కువగా పనిచేయగలదు, అంటే మీరు చిన్న పెట్టుబడులతో ప్రారంభించవచ్చు.</li><li><strong>మీ ప్రస్తుత నెలవారీ ఖర్చులు:</strong> ఇది మీ పదవీ విరమణ ప్రణాళిక యొక్క పునాది. రేపు మీకు ఏమి అవసరమో దాని గురించి ఒక ఖచ్చితమైన చిత్రాన్ని పొందడానికి ఈ రోజు మీరు ఏమి ఖర్చు చేస్తారో దాని గురించి వాస్తవికంగా ఉండండి.</li><li><strong>మీ ప్రస్తుత పొదుపులు:</strong> ఇది మీ ప్రారంభం! EPF, PPF, మ్యూచువల్ ఫండ్స్, లేదా ఇతర పెట్టుబడులలో మీరు ఇప్పటికే ఆదా చేసిన ఏదైనా డబ్బు భవిష్యత్తులో మీరు ఆదా చేయవలసిన మొత్తాన్ని తగ్గిస్తుంది.</li><li><strong>ద్రవ్యోల్బణం రేటు:</strong> ఇది మूक సంపద కిల్లర్. ద్రవ్యోల్బణం కాలక్రమేణా మీ డబ్బు కొనుగోలు శక్తిని తగ్గిస్తుంది. అధిక ద్రవ్యోల్బణం రేటు అంటే మీకు చాలా పెద్ద కార్పస్ అవసరం.</li><li><strong>ప్రీ-రిటైర్మెంట్ రిటర్న్స్:</strong> మీరు ఇంకా పనిచేస్తున్నప్పుడు మీ పెట్టుబడులపై మీరు ఆశించే వృద్ధి రేటు ఇది. అధిక రాబడి అంటే మీ డబ్బు మీ కోసం కష్టపడి పనిచేస్తుంది, మరియు మీరు చిన్న ఎస్ఐపிகளுடன் మీ లక్ష్యాన్ని చేరుకోవచ్చు.</li><li><strong>పోస్ట్-రిటైర్మెంట్ రిటర్న్స్:</strong> మీరు పదవీ విరమణ చేసిన తర్వాత మీ కార్పస్‌పై ఆశించే రాబడి ఇది. మేము ఇక్కడ ఒక మరింత సాంప్రదాయిక, మూలధన-పరిరక్షణ పోర్ట్‌ఫోలియోను ఊహిస్తాము.</li></ul>"
     },
     "worked_examples": {
-      "h2": "Worked Examples — How Much Corpus Do You Need?",
+      "h2": "పని చేసిన ఉదాహరణలు — మీకు ఎంత కార్పస్ అవసరం?",
       "scenario1": {
-        "title": "Example 1: For ₹50,000 monthly expenses (at age 30)",
-        "body": "<strong>Your situation:</strong> You are 30, aiming for a lifestyle of ₹50,000/month in today's money. You've already saved ₹5 lakh.<br/><strong>Our calculation:</strong> To maintain your lifestyle, you'll need a retirement corpus of approximately <strong>₹3.28 Crore</strong>. To reach this goal, you should start a monthly SIP of <strong>₹18,250</strong>."
+        "title": "ఉదాహరణ 1: ₹50,000 నెలవారీ ఖర్చుల కోసం (30 సంవత్సరాల వయస్సులో)",
+        "body": "<strong>మీ పరిస్థితి:</strong> మీరు 30 ఏళ్లవారు, నేటి డబ్బులో నెలకు ₹50,000 జీవనశైలిని లక్ష్యంగా చేసుకున్నారు. మీరు ఇప్పటికే ₹5 లక్షలు ఆదా చేసారు.<br/><strong>మా లెక్కింపు:</strong> మీ జీవనశైలిని కొనసాగించడానికి, మీకు సుమారుగా <strong>₹3.28 కోట్ల</strong> పదవీ విరమణ కార్పస్ అవసరం. ఈ లక్ష్యాన్ని చేరుకోవడానికి, మీరు <strong>₹18,250</strong> నెలవారీ SIPని ప్రారంభించాలి."
       },
       "scenario2": {
-        "title": "Example 2: For ₹1 lakh monthly expenses (at age 35)",
-        "body": "<strong>Your situation:</strong> You are 35, targeting a ₹1 lakh/month lifestyle. Your current savings are ₹20 lakh.<br/><strong>Our calculation:</strong> You'll need a corpus of around <strong>₹4.79 Crore</strong>. To achieve this, you should start a monthly SIP of <strong>₹37,842</strong>."
+        "title": "ఉదాహరణ 2: ₹1 లక్ష నెలవారీ ఖర్చుల కోసం (35 సంవత్సరాల వయస్సులో)",
+        "body": "<strong>మీ పరిస్థితి:</strong> మీరు 35 ఏళ్లవారు, నెలకు ₹1 లక్ష జీవనశైలిని లక్ష్యంగా చేసుకున్నారు. మీ ప్రస్తుత పొదుపు ₹20 లక్షలు.<br/><strong>మా లెక్కింపు:</strong> మీకు సుమారు <strong>₹4.79 కోట్ల</strong> కార్పస్ అవసరం. దీన్ని సాధించడానికి, మీరు <strong>₹37,842</strong> నెలవారీ SIPని ప్రారంభించాలి."
       },
       "scenario3": {
-        "title": "Example 3: For ₹30,000 monthly expenses (at age 25)",
-        "body": "<strong>Your situation:</strong> You are a 25-year-old freelancer with monthly expenses of ₹30,000 and savings of ₹2 lakh.<br/><strong>Our calculation:</strong> Your target corpus is <strong>₹3.04 Crore</strong>. Thanks to your long investment horizon, you only need to start a monthly SIP of <strong>₹7,725</strong> to get there."
+        "title": "ఉదాహరణ 3: ₹30,000 నెలవారీ ఖర్చుల కోసం (25 సంవత్సరాల వయస్సులో)",
+        "body": "<strong>మీ పరిస్థితి:</strong> మీరు 25 ఏళ్ల ఫ్రీలాన్సర్, నెలవారీ ఖర్చులు ₹30,000 మరియు పొదుపు ₹2 లక్షలు.<br/><strong>మా లెక్కింపు:</strong> మీ లక్ష్య కార్పస్ <strong>₹3.04 కోట్లు</strong>. మీ సుదీర్ఘ పెట్టుబడి హోరిజోన్‌కు ధన్యవాదాలు, అక్కడికి చేరుకోవడానికి మీరు కేవలం <strong>₹7,725</strong> నెలవారీ SIPని ప్రారంభించాలి."
       }
     },
      "sensitivity_analysis": {
-      "title": "Sensitivity Analysis: How Assumptions Change Your Goal",
-      "body": "Small changes in your assumptions can have a huge impact on your final corpus. This table shows how your required corpus and SIP change with slight adjustments in inflation and return rates."
+      "title": "సున్నితత్వ విశ్లేషణ: అంచనాలు మీ లక్ష్యాన్ని ఎలా మారుస్తాయి",
+      "body": "మీ అంచనాలలో చిన్న మార్పులు మీ చివరి కార్పస్‌పై భారీ ప్రభావాన్ని చూపుతాయి. ఈ పట్టిక ద్రవ్యోల్బణం మరియు రాబడి రేట్లలో స్వల్ప సర్దుబాట్లతో మీ అవసరమైన కార్పస్ మరియు SIP ఎలా మారుతుందో చూపిస్తుంది."
     },
     "accumulation_strategy": {
-      "h2": "How to Reach Your Retirement Corpus (Investment Strategies)",
-      "body": "<h3>Choosing Your Investment Path: SIP vs. Lumpsum</h3><p>A <strong>Systematic Investment Plan (SIP)</strong> is the most disciplined approach. You invest a fixed amount regularly (e.g., monthly), which helps you average out market fluctuations (rupee-cost averaging) and benefit from compounding. It's perfect for building wealth steadily over time. For even faster growth, consider a <strong>step-up SIP</strong>, where you increase your monthly investment amount annually, usually in line with your salary hike (e.g., by 10%).</p><h3>Asset Allocation by Age</h3><p>Your investment strategy shouldn't be static. As you get closer to retirement, you should gradually shift from high-risk, high-return assets to safer options to protect your capital.</p><ul><li><strong>In Your 20s & 30s:</strong> Be aggressive. A portfolio with 70-80% in equities (like mutual funds) can generate higher returns in the long run.</li><li><strong>In Your 40s:</strong> Start balancing your risk. A 60:40 split between equity and debt is a common strategy.</li><li><strong>In Your 50s and beyond:</strong> Time to preserve your capital. Shift your portfolio to be debt-heavy (70-80% in fixed-income instruments).</li></ul><h3>How PPF, NPS, & EPF Fit Into Your Plan</h3><p>These are the foundational pillars of retirement planning in India. Your current savings in these instruments give you a massive head start. Use them to form the debt/fixed-income portion of your portfolio. Explore our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> and <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> to see how they grow.</p>"
+      "h2": "మీ పదవీ విరమణ కార్పస్‌ను ఎలా నిర్మించాలి (పెట్టుబడి వ్యూహాలు)",
+      "body": "<h3>మీ పెట్టుబడి మార్గాన్ని ఎంచుకోవడం: SIP vs. ఏకమొత్తం</h3><p>ఒక <strong>క్రమబద్ధమైన పెట్టుబడి ప్రణాళిక (SIP)</strong> అత్యంత క్రమశిక్షణతో కూడిన విధానం. మీరు క్రమం తప్పకుండా (ఉదా., నెలవారీ) ఒక స్థిర మొత్తాన్ని పెట్టుబడి పెడతారు, ఇది మీకు మార్కెట్ హెచ్చుతగ్గులను (రూపాయి-ధర సగటు) సగటు చేయడానికి మరియు చక్రవడ్డీ నుండి ప్రయోజనం పొందడానికి సహాయపడుతుంది. ఇది కాలక్రమేణా స్థిరంగా సంపదను నిర్మించడానికి సరైనది. మరింత వేగవంతమైన వృద్ధి కోసం, ఒక <strong>స్టెప్-అప్ SIP</strong>ను పరిగణించండి, ఇక్కడ మీరు మీ నెలవారీ పెట్టుబడి మొత్తాన్ని ఏటా పెంచుతారు, సాధారణంగా మీ జీతం పెరుగుదలకు అనుగుణంగా (ఉదా., 10% ద్వారా).</p><h3>వయస్సు వారీగా ఆస్తి కేటాయింపు</h3><p>మీ పెట్టుబడి వ్యూహం స్థిరంగా ఉండకూడదు. మీరు పదవీ విరమణకు దగ్గరవుతున్న కొద్దీ, మీ మూలధనాన్ని రక్షించుకోవడానికి మీరు అధిక-రిస్క్, అధిక-రాబడి ఆస్తుల నుండి సురక్షితమైన ఎంపికలకు క్రమంగా మారాలి.</p><ul><li><strong>మీ 20 & 30లలో:</strong> దూకుడుగా ఉండండి. ఈక్విటీలలో (మ్యూచువల్ ఫండ్స్ వంటివి) 70-80% ఉన్న ఒక పోర్ట్‌ఫోలియో దీర్ఘకాలంలో అధిక రాబడులను ఉత్పత్తి చేయగలదు.</li><li><strong>మీ 40లలో:</strong> మీ రిస్క్‌ను సమతుల్యం చేయడం ప్రారంభించండి. ఈక్విటీ మరియు డెట్ మధ్య 60:40 విభజన ఒక సాధారణ వ్యూహం.</li><li><strong>మీ 50లు మరియు ఆపై:</strong> మీ మూలధనాన్ని పరిరక్షించుకునే సమయం ఇది. మీ పోర్ట్‌ఫోలియోను డెట్-హెవీగా (స్థిర-ఆదాయ సాధనాల్లో 70-80%) మార్చండి.</li></ul><h3>మీ ప్రణాళికలో PPF, NPS, & EPF ఎలా సరిపోతాయి</h3><p>ఇవి భారతదేశంలో పదవీ విరమణ ప్రణాళిక యొక్క పునాది స్తంభాలు. ఈ సాధనాల్లో మీ ప్రస్తుత పొదుపులు మీకు ఒక భారీ ప్రారంభాన్ని ఇస్తాయి. మీ పోర్ట్‌ఫోలియో యొక్క డెట్/స్థిర-ఆదాయ భాగాన్ని రూపొందించడానికి వాటిని ఉపయోగించండి. అవి ఎలా పెరుగుతాయో చూడటానికి మా <a href='/{lang}/ppf-calculator' class='underline'>PPF క్యాలిక్యులేటర్</a> మరియు <a href='/{lang}/nps-calculator' class='underline'>NPS క్యాలిక్యులేటర్</a>ను అన్వేషించండి.</p>"
     },
     "deaccumulation_strategy": {
-      "h2": "The De-accumulation Phase: Making Your Corpus Last",
-      "body": "<p>Building your nest egg is only half the battle. The real challenge is making it last. Here's how you can create a steady income stream after you retire.</p><h3>Systematic Withdrawal Plan (SWP)</h3><p>An SWP allows you to withdraw a fixed amount from your mutual fund investments every month, just like a pension. This is a tax-efficient method because the rest of your corpus remains invested and continues to grow, helping you beat inflation.</p><p><strong>Example:</strong> With a ₹2 Crore corpus and 7% annual return, a ₹1 lakh monthly SWP can last for over 30 years.</p><h3>Annuity Plans</h3><p>An annuity is an insurance product where you pay a lump sum to an insurance company, and they guarantee you a fixed income for life. While this offers immense security, the returns (annuity rates) are often lower than what you might get from an SWP.</p>"
-    },
-    "tax_rules": {
-      "h2": "Taxes in Retirement (India-Specific Rules)",
-      "body": "<ul><li><strong>Long-Term Capital Gains (LTCG):</strong> When you withdraw from equity mutual funds, gains over ₹1 lakh in a financial year are taxed at 10%. Planning your withdrawals strategically can minimize this tax.</li><li><strong>Pension Taxability:</strong> Your pension income, whether from an annuity or other sources, is generally added to your income and taxed as per your applicable slab rate.</li><li><strong>Special Rule for Returning NRIs (Section 89A):</strong> If you're an NRI returning to India, this rule allows you to defer paying tax on your foreign retirement accounts until you actually withdraw the money. This is a significant relief that helps avoid double taxation.</li></ul>"
-    },
-    "next_steps": {
-      "h2": "Tools & Resources",
-      "cta1_title": "Explore Investment Options",
-      "cta1_desc": "Use our PPF, NPS, and other calculators to model returns on specific investment vehicles.",
-      "cta2_title": "View All Financial Tools",
-      "cta2_desc": "Explore our full suite of calculators to plan for all your financial goals."
-    },
-    "conclusion": {
-      "title": "Conclusion: Your Path to a Secure Retirement",
-      "body": "Retirement planning isn't just about reaching a number; it's about building a stable financial future you can rely on. By using this comprehensive calculator and understanding the key variables that drive your corpus, you can create a realistic and actionable plan. Remember, the key is to start early, invest consistently, and review your plan annually. That's the surest path to a comfortable and stress-free retirement."
-    },
-    "disclaimer": {
-      "title": "Disclaimer",
-      "body": "The figures generated are hypothetical and for illustrative purposes only. The accuracy of the output depends on your inputs. Please consult a qualified financial professional for personalized advice."
-    },
-    "faq_title": "Frequently Asked Questions",
-    "faqs": [
-        { "question": "How do you calculate a retirement corpus?", "answer": "We project your future monthly expenses using inflation, compute the present value (PV) of the annuity you’ll need at retirement, and subtract the future value of existing savings to find the shortfall." },
-        { "question": "What inflation rate should I use for Indian retirement planning?", "answer": "Many planners use a long-term default of 5–7% for India; 6% is common. Use higher rates for conservative healthcare or long horizon assumptions." },
-        { "question": "Can I include EPF, PPF and NPS in my retirement corpus?", "answer": "Yes — include all liquid and pension assets (EPF, PPF, NPS, mutual funds, bank FD) in your Current Savings input to lower the additional SIP needed." },
-        { "question": "How much should a 30-year-old save monthly to retire comfortably?", "answer": "It depends on target corpus and assumptions. As a rough guide, saving ₹15,000–₹25,000/month can build multi-crore corpus by 60 at 10–12% returns. Use the calculator for precise numbers." },
-        { "question": "Should I invest by SIP or lump sum to reach my retirement goal?", "answer": "SIP is recommended for disciplined investing and rupee-cost averaging; lump sum can outperform in long bull markets but has higher timing risk. A blended approach works for many." },
-        { "question": "What is a safe withdrawal rate in India during retirement?", "answer": "There is no one-size-fits-all; many advisors use a 3–4% initial withdrawal rule (adjusted for inflation). Consider conservative withdrawal rates if longevity or healthcare costs are uncertain." },
-        { "question": "How do healthcare costs affect the retirement corpus?", "answer": "Healthcare inflation often exceeds general inflation. Add a dedicated healthcare buffer or model higher inflation for medical costs to avoid underestimating your corpus." },
-        { "question": "How will taxes impact my retirement withdrawals?", "answer": "Tax treatment varies by instrument and withdrawal type. EPF/PPF have specific rules; mutual fund withdrawals may attract LTCG tax above thresholds. Plan withdrawals tax-efficiently to preserve corpus." },
-        { "question": "How long should my retirement corpus last?", "answer": "Typically planners assume life expectancy of 85–90 years. Use conservative longevity assumptions if family longevity is high or you retire early." },
-        { "question": "Does the calculator account for post-retirement returns?", "answer": "Yes — you can set a lower, conservative post-retirement return (e.g., 6–8%) to model how the corpus will be invested and sustain withdrawals." },
-        { "question": "Can I plan for early retirement (before 60) with this calculator?", "answer": "Yes — set your desired retirement age earlier and increase the investment horizon and SIP accordingly. Factor in longer post-retirement years and higher healthcare costs." },
-        { "question": "What is the simplest rule of thumb to estimate a target corpus?", "answer": "A common rule is 25× your current annual expenses (for a 4% real withdrawal), but use the calculator to refine this with inflation, returns, and existing savings." }
-    ],
-    "methodology": {
-      "h2": "Methodology & Update Log",
-      "body": "This calculator uses standard financial formulas for the future value (FV) and present value (PV) of annuities to estimate your retirement corpus and required SIP. All figures are for illustrative purposes only. Last content update: September 2025. Financial formulas verified against established industry standards."
-    },
-    "assumptions": {
-      "title": "Assumptions We Use (Defaults)",
-      "body": "This calculator uses standard financial formulas and default assumptions based on long-term Indian market data. You can adjust these inputs to match your expectations.<ul><li><strong>Inflation:</strong> 6% p.a.</li><li><strong>Pre-Retirement Returns:</strong> 12% p.a.</li><li><strong>Post-Retirement Returns:</strong> 7% p.a.</li><li><strong>Deposits:</strong> Monthly, made at the <strong>start</strong> of each month (annuity-due).</li><li><strong>Life Expectancy:</strong> 85 years.</li></ul>"
+      "h2": "డి-అక్యుములేషన్ దశ: మీ కార్పస్‌ను కొనసాగించడం",
+      "body": "<p>మీ గూడును నిర్మించడం కేవలం సగం యుద్ధం మాత్రమే. అసలు సవాలు దానిని కొనసాగించడం. పదవీ విరమణ చేసిన తర్వాత మీరు ఒక స్థిరమైన ఆదాయ ప్రవాహాన్ని ఎలా సృష్టించవచ్చో ఇక్కడ ఉంది.</p><h3>క్రమబద్ధమైన ఉపసంహరణ ప్రణాళిక (SWP)</h3><p>ఒక SWP మీకు ప్రతి నెలా మీ మ్యూచువల్ ఫండ్ పెట్టుబడుల నుండి ఒక స్థిర మొత్తాన్ని ఉపసంహరించుకోవడానికి అనుమతిస్తుంది, ঠিক ఒక పెన్షన్ లాగా. ఇది ఒక పన్ను-సమర్థవంతమైన పద్ధతి ఎందుకంటే మీ కార్పస్ మిగిలినది పెట్టుబడి చేయబడి, ద్రవ్యోల్బణాన్ని అధిగమించడానికి సహాయపడుతూ పెరుగుతూనే ఉంటుంది.</p><p><strong>ఉదాహరణ:</strong> ₹2 కోట్ల కార్పస్‌తో మరియు 7% వార్షిక రాబడితో, ₹1 లక్ష నెలవారీ SWP 30 సంవత్సరాలకు పైగా కొనసాగగలదు.</p><h3>యాన్యుటీ ప్రణాళికలు</h3><p>ఒక యాన్యుటీ అనేది ఒక బీమా ఉత్పత్తి, ఇక్కడ మీరు ఒక బీమా కంపెనీకి ఒక ఏకమొత్తం చెల్లిస్తారు, మరియు వారు మీకు జీవితాంతం ఒక స్థిర ఆదాయానికి హామీ ఇస్తారు.</p>"
     }
   },
-  "loan_optimizer_calculator": {
-    "h1": "Loan Optimization Calculator — Optimize EMI, Prepayment & Refinance (India, 2025)",
-    "summary": "This guide + interactive calculator helps you answer: How can I minimize total interest, reduce my EMI or tenure, and make the best choice between prepaying, refinancing, or investing my surplus? Read the guide, run the calculator, download your amortization plan, and decide with confidence.",
-    "title": "Loan Optimizer",
-    "form_description": "Enter your loan details to calculate your EMI and see how prepayments can save you money.",
-    "form": {
-      "loan_amount": "Loan Amount (₹)",
-      "interest_rate": "Interest Rate (% p.a.)",
-      "tenure": "Tenure (in years)",
-      "prepayment_amount": "One-time Prepayment Amount (₹)",
-      "calculate_cta": "Calculate & Optimize",
-      "calculating": "Calculating..."
+   "mutual_fund_overlap_calculator": {
+    "meta_title": "Mutual Fund Overlap Calculator India 2025 — Check Stock Overlap & Reduce Concentration",
+    "meta_description": "Free Mutual Fund Overlap Calculator (India). Select your funds to find common stocks, sector overlap, and actionable steps to improve diversification.",
+    "h1": "Mutual Fund Overlap Calculator — Check Overlap Between Funds (India, 2025)",
+    "hero": {
+      "subtitle": "Holding multiple mutual funds? You might own the same stocks in different schemes, leading to 'false diversification'. Select your funds below to see how much they overlap and get actionable advice to optimize your portfolio."
+    },
+    "tool": {
+      "title": "Check Your Fund Overlap",
+      "description": "Select two or more funds from the list to see the overlap analysis for each pair.",
+      "add_fund": "Add Fund",
+      "include_sectors": "Include Sector Summary",
+      "export_csv": "Export CSV",
+      "copy_summary": "Copy Summary"
     },
     "results": {
-      "title": "Your Loan Analysis",
-      "monthly_emi": "Monthly EMI",
-      "total_interest": "Total Interest Payable",
-      "total_payment": "Total Payment (Principal + Interest)",
-      "prepayment_summary": {
-        "title": "By prepaying, you can save:",
-        "subtitle": "And reduce your loan tenure by {months} months!"
-      },
-      "chart_view": "Chart",
-      "table_view": "Amortization Table",
-      "download_csv": "Download Schedule (CSV)",
-      "principal_paid": "Principal",
-      "interest_paid": "Interest",
-      "outstanding_balance": "Outstanding Balance",
-      "table": {
-        "month": "Month",
-        "principal": "Principal",
-        "interest": "Interest",
-        "total_payment": "Total Payment",
-        "ending_balance": "Ending Balance"
-      }
+        "weighted_overlap_title": "Weighted Overlap",
+        "top_stocks_title": "Top Overlapping Stocks",
+        "stock_header": "Stock",
+        "min_weight_header": "Min. Weight",
+        "sector_overlap_title": "Sector Overlap Summary"
     },
-    "why": {
-      "h2": "Why a Loan Optimization Calculator Matters",
-      "body": "A loan optimization calculator shows you the exact impact of financial decisions like prepayment, which an EMI calculator alone cannot do. It is essential for anyone looking to clear debt faster and save money on interest. You should use this tool if you have a home, car, or personal loan and want to understand how to pay it off more efficiently."
+    "what_is_overlap": {
+      "h2": "What is Mutual Fund Overlap and Why Does It Matter?",
+      "body": "<p>Mutual fund overlap occurs when two or more funds in your portfolio hold the same stocks. While it's normal to have some overlap, especially in large-cap funds that track similar benchmarks, high overlap can lead to several problems:</p><ul><li><strong>False Diversification:</strong> You might think you're diversified across 5-6 funds, but if they all own HDFC Bank, Reliance, and ICICI Bank as their top holdings, your portfolio's performance is heavily tied to just a few companies.</li><li><strong>Concentrated Risk:</strong> If a specific stock or sector that is common across your funds performs poorly, your entire portfolio takes a bigger hit than you'd expect.</li><li><strong>Duplicate Expense Ratios:</strong> You're essentially paying multiple fund managers (via expense ratios) to buy and manage the same set of stocks, leading to inefficient costs.</li></ul><p>Understanding what is mutual fund overlap is the first step to building a truly diversified and resilient portfolio. Our calculator helps you quantify this risk instantly.</p>"
     },
     "how_it_works": {
-      "h2": "How the Calculator Works (Formulas Explained)",
-      "body": "<p>This loan optimization calculator uses the standard reducing-balance method to compute interest and principal repayment for each month of your loan's tenure.</p><h3>EMI Formula</h3><p>The Equated Monthly Installment (EMI) is calculated using the formula: <code>E = P * r * (1+r)^n / ((1+r)^n - 1)</code>, where P is the principal loan amount, r is the monthly interest rate, and n is the number of months in the loan tenure.</p><h3>Outstanding Balance & Prepayment Math</h3><p>The outstanding balance after any given month is calculated by subtracting the principal portion of the EMI from the opening balance. When you make a prepayment, that amount is deducted directly from the principal balance, causing the loan to be paid off faster and saving you significant interest over the remaining tenure.</p>"
+      "h2": "How Our Mutual Fund Overlap Calculator Works",
+      "body": "<h3>Inputs We Use</h3><p>To provide an accurate analysis, our tool uses the latest available portfolio data sourced from official AMFI records and fund house disclosures. You can compare two or more funds simultaneously to get a complete portfolio view. If you select 3 funds (A, B, C), the tool will generate three separate comparison cards: A vs. B, A vs. C, and B vs. C.</p><h3>Calculation Methodology</h3><p>We calculate overlap using the standard industry method:</p><p><strong>Weighted Overlap % (Recommended):</strong><br/><code>WeightedOverlap = ∑ min(wA_i, wB_i)</code><br/>This formula sums the minimum weight of each common stock 'i' across a pair of funds (Fund A and Fund B). It gives the most accurate picture of true portfolio concentration.</p><p>For a detailed breakdown, please see our <a href='#methodology'>Methodology</a> section.</p>"
     },
-     "worked_examples": {
-        "h2": "Worked Examples: How Much Can You Save?",
-        "scenario1": {
-            "title": "Example 1: Prepaying ₹5 Lakh on a ₹50 Lakh Home Loan",
-            "body": "<strong>Scenario:</strong> You have a ₹50 lakh home loan at 8.5% for 20 years. You make a one-time prepayment of ₹5 lakh at the end of the first year.<br/><strong>Result:</strong> By doing this, you could save approximately <strong>₹12.5 lakh</strong> in total interest and reduce your loan tenure by over 3 years, paying off your loan significantly faster."
-        },
-        "scenario2": {
-            "title": "Example 2: Refinancing a ₹25 Lakh Personal Loan",
-            "body": "<strong>Scenario:</strong> You have an outstanding personal loan of ₹25 lakh at 10% with 15 years remaining.<br/><strong>Refinance Offer:</strong> A new lender offers you the same loan at 8% with a 0.5% processing fee (₹12,500).<br/><strong>Result:</strong> Refinancing to the lower rate would save you over <strong>₹4.5 lakh</strong> in interest payments over the life of the loan, even after accounting for the processing fee."
-        },
-        "scenario3": {
-            "title": "Example 3: Investing a ₹3 Lakh Surplus vs. Prepaying",
-            "body": "<strong>Scenario:</strong> You have a ₹3 lakh surplus. Your home loan interest rate is 8.5%, but you expect a 12% annual return from an index fund SIP.<br/><strong>Result:</strong> Because your expected investment return (12%) is higher than your loan's interest rate (8.5%), investing the ₹3 lakh is likely to generate a much larger corpus over 10 years compared to the interest saved by prepaying. This makes investing the better wealth-building choice, provided you are comfortable with market risk."
-        }
+    "live_example": {
+      "h2": "Live Example — A Pairwise Comparison",
+      "intro": "Let's compare two popular large-cap funds to see overlap in action: 'ICICI Pru Bluechip' vs 'HDFC Top 100'. This is an example of one pairwise comparison the tool generates.",
+      "result": "<strong>Overlap Result:</strong> The weighted overlap between these two funds is approximately <strong>45%</strong>. This is considered high, meaning you have significant concentration in the same large-cap names."
     },
-    "optimization_masterclass": {
-      "h2": "How to Decide: Prepay vs Invest vs Refinance",
-      "body": "<h3>When to Reduce EMI vs. Shorten Tenure</h3><p>When you prepay, most banks let you choose between lowering your monthly EMI or reducing the loan tenure. Reducing the tenure saves you significantly more interest in the long run and helps you become debt-free faster. Lowering the EMI provides immediate cash flow relief but offers less overall savings.</p><h3>Tax Effect on Home Loans (Section 24)</h3><p>Under Section 24 of the Income Tax Act, you can claim a deduction of up to ₹2 lakh on the interest paid for a self-occupied home loan. This tax benefit reduces your effective interest rate, which is a key factor in the 'prepay vs. invest' decision. Always consider this tax shield when evaluating your options. For official rules, refer to the <a href='https://incometaxindia.gov.in/' target='_blank' rel='noopener noreferrer'>Income Tax Department website</a>.</p>"
+    "interpreting_results": {
+      "h2": "Interpreting Your Overlap Results",
+      "body": "<h3>Overlap Percentage Thresholds</h3><p>Here are some general guidelines to interpret your overlap score for each pair:</p><ul><li><strong>0-15% (Low):</strong> The funds are well-differentiated. This is ideal for funds in different categories.</li><li><strong>15-30% (Moderate):</strong> Some common holdings exist, which is normal for funds in the same category. No immediate action is typically needed.</li><li><strong>30-50% (High):</strong> Your funds are significantly similar. You may be taking on concentrated risk. Consider re-evaluating.</li><li><strong>>50% (Very High):</strong> The funds are practically clones. Holding both is highly inefficient. It's strongly recommended to consolidate.</li></ul>"
     },
-    "prepay_vs_invest": {
-      "h2": "How to Prioritize Paying Off Multiple Loans",
-      "body": "<p>If you have multiple loans (e.g., credit card, personal loan, car loan), it's crucial to prioritize them correctly to save the most money. There are two popular methods:</p><ul><li><strong>Debt Avalanche (Recommended):</strong> Focus on paying off the loan with the highest interest rate first, while making minimum payments on others. This method saves you the most money in total interest.</li><li><strong>Debt Snowball:</strong> Focus on paying off the smallest loan first, regardless of the interest rate. This provides a psychological boost from quick wins, which can help you stay motivated.</li></ul>"
+    "what_to_do": {
+      "h2": "What To Do Next — Actionable Steps & Decision Flow",
+      "body": "<h3>Replace, Rebalance, or Accept?</h3><p>Once you have your overlap scores, use this flowchart to decide your next move for each high-overlap pair:</p><p><em>[Decision Flowchart Visual Placeholder]</em></p><ol><li><strong>If Overlap is >50%:</strong> It's best to <strong>Replace</strong> one of the funds in that pair. Choose the one with the higher expense ratio or consistently lower performance.</li><li><strong>If Overlap is 30-50%:</strong> Consider <strong>Rebalancing</strong>. You can reduce your allocation in one fund and redirect the SIP to a more unique fund.</li><li><strong>If Overlap is <30%:</strong> Generally, you can <strong>Accept</strong> it. Monitor the overlap annually to ensure it doesn't increase significantly.</li></ol><h3>Tax & Exit Load Considerations in India</h3><p>Before selling a fund, always consider the tax implications. For equity funds, gains are taxed as Short-Term Capital Gains (STCG) if sold within one year, and Long-Term Capital Gains (LTCG) after that. Also, check for any <strong>exit loads</strong>, which are fees charged for redeeming units within a certain period (usually 1 year).</p>"
     },
-    "comparison_table": {
-        "title": "Refinancing & Balance Transfer in India: A Checklist",
-        "headers": ["Step", "Action", "Key Consideration"],
-        "rows": [
-            ["1. Check Current Rate", "Find the interest rate on your current loan statement.", "Is it significantly higher than current market rates?"],
-            ["2. Get New Offers", "Approach other lenders for a balance transfer offer.", "Compare the new rate, processing fees, and other charges."],
-            ["3. Calculate Break-Even", "Use our calculator to see if the savings from the lower rate outweigh the refinancing costs.", "Net savings should be positive and substantial."],
-            ["4. Apply & Document", "Submit the application and required documents to the new lender.", "Ensure you have all KYC, income, and property documents ready."],
-            ["5. Close Old Loan", "The new lender will pay off your old loan. Get a 'No Dues Certificate' from the old lender.", "Confirm that the old loan account is officially closed."]
-        ]
+    "conclusion": {
+      "title": "Conclusion",
+      "body": "A high overlap score isn't necessarily 'bad,' but it's a critical piece of information. It reveals hidden risks in your portfolio and empowers you to build a smarter, more diversified investment strategy. Use this tool regularly to ensure your mutual funds are working for you, not against you."
     },
-    "refinance": {
-      "h2": "Prepayment Penalties & RBI Rules in India",
-      "body": "<p>Understanding the rules around prepayment is crucial for loan optimization.</p><h3>Floating vs. Fixed Rate Loans</h3><p>As per <a href='https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=10499&Mode=0' target='_blank' rel='noopener noreferrer'>RBI guidelines</a>, lenders are not permitted to charge a prepayment penalty on floating-rate home loans given to individuals. However, fixed-rate home loans and other loan types like personal or car loans may still have prepayment penalties, typically ranging from 1% to 3% of the outstanding amount.</p>"
-    },
-    "tax_notes": {
-      "h2": "Amortization Schedule: What It Shows & How to Use It",
-      "body": "<p>An amortization schedule is a month-by-month table that details how each EMI payment is split between principal and interest, and how your outstanding loan balance decreases over time. It's a powerful tool that helps you:</p><ul><li>See the exact impact of a prepayment on your loan tenure.</li><li>Track your progress towards becoming debt-free.</li><li>Provide your financial advisor with a clear breakdown of your loan for planning purposes.</li></ul><p>Our tool generates a detailed amortization schedule that you can view online or download as a CSV file for your records.</p>"
+    "methodology": {
+      "h2": "Methodology & Data Sources",
+      "body": "<p>This calculator uses portfolio data sourced from AMFI (Association of Mutual Funds in India) and is updated periodically. The overlap is calculated using a weighted overlap formula to give you an accurate view of portfolio concentration. For any discrepancies, please refer to the official fund factsheet from the respective Asset Management Company (AMC).</p><h3>Weighted Overlap (Used)</h3><p>For funds A and B, with constituents {i} and weights wA_i, wB_i (fractions; sum of equity weights ≤ 1):<br><code>WeightedOverlap(A,B) = Σ_i min(wA_i, wB_i)</code></p><p>Result expressed as % of equity exposure:<br><code>WeightedOverlapPct = WeightedOverlap(A,B) * 100</code></p><p><strong>Notes:</strong><br>- Cash/debt portion is excluded from overlap (we normalize to total equity weight when comparing funds across different equity allocation).<br>- If only top-N holdings are available, we display `coverage = Σ_topN weights`. If coverage < 80%, results are flagged as “partial”.</p>"
     },
     "faq": {
       "h2": "Frequently Asked Questions",
       "faqs": [
-        { "q": "How much interest will I save by prepaying ₹1 lakh on my home loan?", "a": "The savings depend on your interest rate and remaining tenure, but it can often be multiple lakhs over the loan's life. Use our calculator to find the exact amount for your specific loan." },
-        { "q": "Is there a prepayment penalty for floating rate home loans in India?", "a": "No, as per RBI guidelines, banks cannot charge a prepayment penalty on floating-rate home loans given to individuals." },
-        { "q": "How to calculate break-even when refinancing my home loan?", "a": "Calculate the total interest saved with the new, lower rate and subtract any processing fees or penalties. If the result is positive, refinancing is beneficial. Our calculator does this for you." },
-        { "q": "Can I prepay my loan partially every year to reduce tenure?", "a": "Yes, making regular partial prepayments is an excellent strategy to reduce your loan tenure and save a significant amount of interest." },
-        { "q": "What documents do I need to apply for a balance transfer?", "a": "Typically, you'll need KYC documents (Aadhaar, PAN), proof of income (salary slips, ITR), and your existing loan documents from your current lender." },
-        { "q": "Is refinance the same as a balance transfer?", "a": "Yes, in the Indian context, 'refinance' and 'balance transfer' are often used interchangeably to mean moving your loan to a new lender for better terms." },
-        { "q": "How does loan prepayment affect home loan tax benefits?", "a": "Prepayment reduces your outstanding principal, which in turn reduces the total interest you pay. This can lower the amount of interest you can claim as a deduction under Section 24." },
-        { "q": "How to compare refinance offers effectively?", "a": "Look at the new Annual Percentage Rate (APR), which includes the interest rate and all fees. A lower APR indicates a better offer. Our tool helps you compare net savings." },
-        { "q": "What is the fastest way to become loan free?", "a": "The fastest way is to consistently prepay your loan whenever you have surplus funds. Even small, regular prepayments can significantly shorten your loan tenure." },
-        { "q": "How to calculate EMI after prepayment?", "a": "If you choose to reduce EMI, the bank will recalculate it based on the new, lower outstanding principal. If you choose to reduce tenure, the EMI remains the same." }
+        { "q": "What is mutual fund overlap?", "a": "Mutual fund overlap occurs when two or more of your funds hold the same stocks, which can lead to 'false diversification' and concentrated risk. Our calculator helps you identify these common holdings." },
+        { "q": "How do you calculate mutual fund overlap %?", "a": "We use a weighted overlap formula by summing the minimum weight of each common stock between funds. This gives a more accurate measure of concentration than simple counts." },
+        { "q": "How much overlap is too much between two mutual funds?", "a": "Generally, an overlap above 30% is considered high and warrants a review. Above 50-60% is very high, suggesting the funds are too similar and you should consider consolidating to avoid duplicate costs." },
+        { "q": "How to check overlap between two mutual funds in India?", "a": "Use our free Mutual Fund Overlap Calculator. Simply select your Indian mutual funds in the tool to get an instant analysis of common stocks and sector concentration." },
+        { "q": "Does sector overlap matter more than stock overlap?", "a": "Both matter, but high stock-level overlap is a bigger red flag. High sector overlap (e.g., both funds are 30% in Financials) is common, but if they both hold the exact same banks, your risk is more concentrated." },
+        { "q": "Can SIPs in different funds create high overlap?", "a": "Yes. If you run SIPs in multiple large-cap or flexi-cap funds that track similar benchmarks (like the Nifty 50), they will likely buy the same top stocks, leading to high portfolio overlap over time." },
+        { "q": "How often should I check overlap for my portfolio?", "a": "A yearly portfolio review is a good practice. Check for overlap annually or whenever you are considering adding a new fund to ensure it's adding true diversification." },
+        { "q": "How to reduce overlap without changing my asset allocation?", "a": "You can 'steer' your SIPs by pausing contributions to a high-overlap fund and redirecting the amount to a more unique fund in the same category (e.g., a 'value' fund instead of a 'growth' fund) or a different market focus (e.g., a multi-cap fund)." },
+        { "q": "Is fund overlap the same as correlation?", "a": "No. Overlap measures common holdings, while correlation measures how similarly the funds' NAVs move. High overlap often leads to high correlation, but funds can be correlated without having high overlap." },
+        { "q": "Can overlap increase my downside risk during a crash?", "a": "Yes. High overlap concentrates your risk. If a specific stock or sector that is common across all your funds performs badly, your entire portfolio will suffer more than you might expect." },
+        { "q": "Are international funds included in overlap calculations?", "a": "Yes, our tool can calculate overlap for any funds in our database, including international ones, as long as the data is available." },
+        { "q": "What date are fund holdings taken from? How often are they updated?", "a": "The holdings in our database are based on the latest available data from fund factsheets, typically updated monthly or quarterly." },
+        { "q": "Is mutual fund overlap taxable?", "a": "The overlap itself is not taxable. However, if you decide to sell a fund to reduce overlap, any capital gains from that sale will be taxed (Short-Term or Long-Term Capital Gains, depending on the holding period)." },
+        { "q": "Can I use this calculator for 5+ funds?", "a": "The user interface is optimized for comparing up to 5 funds at once for clarity. For a larger portfolio review, you can perform multiple comparisons." },
+        { "q": "What to do if two funds overlap 60%+?", "a": "An overlap of over 60% suggests the funds are nearly identical. It is highly recommended to consolidate. Choose the fund with the better long-term performance and lower expense ratio, and consider switching your SIP and holdings to that single fund." },
+        { "q": "Do you provide an API / embeddable widget?", "a": "This feature is not currently available, but we are considering it for the future. For now, you can link directly to our calculator page." },
+        { "q": "How accurate is the overlap calculation?", "a": "The calculation is mathematically precise based on the holdings data in our database. The accuracy depends on how recent the data is from the AMCs. We strive to keep it updated." },
+        { "q": "How to replace a fund with a low-overlap alternative?", "a": "First, identify the category of the fund you want to replace (e.g., Large-Cap). Then, research other funds in that category with a different investment style (e.g., a 'value' fund instead of a 'growth' fund) or a different market focus (e.g., a multi-cap fund)." },
+        { "q": "How do expense ratios affect the overlap decision?", "a": "High overlap means you are paying multiple fund managers (and multiple expense ratios) to own the same stocks. If two funds have high overlap, it often makes sense to consolidate into the one with the lower expense ratio to save on costs." },
+        { "q": "What is the weighted-overlap formula and why is it better?", "a": "The weighted-overlap formula is: Sum of [Minimum Weight of Stock X in Fund A vs Fund B]. It's better than just counting common stocks because it measures the *actual* portfolio concentration, giving more importance to stocks with a higher weight in both funds." }
       ]
-    },
-    "conclusion": {
-      "title": "Conclusion: How to Optimize Your Loan the Smart Way",
-      "body": "Loan optimization is not a one-time event; it's an ongoing strategy. By regularly reviewing your options—prepaying when you have a surplus, refinancing when rates drop, and always prioritizing high-interest debt—you can save lakhs in interest and achieve financial freedom years earlier. Use this calculator as your co-pilot on that journey."
     }
   },
   "ups_pension_calculator": {
@@ -1153,87 +1082,7 @@
     "h1": "Mahesh Chaube, CFP",
     "h2": "Calculators & Guides",
     "view_calculator": "View Calculator"
-  },
-  "mutual_fund_overlap_calculator": {
-    "meta_title": "Mutual Fund Overlap Calculator India 2025 — Check Stock Overlap & Reduce Concentration",
-    "meta_description": "Free Mutual Fund Overlap Calculator (India). Select your funds to find common stocks, sector overlap, and actionable steps to improve diversification.",
-    "h1": "Mutual Fund Overlap Calculator — Check Overlap Between Funds (India, 2025)",
-    "hero": {
-      "subtitle": "Holding multiple mutual funds? You might own the same stocks in different schemes, leading to 'false diversification'. Select your funds below to see how much they overlap and get actionable advice to optimize your portfolio."
-    },
-    "tool": {
-      "title": "Check Your Fund Overlap",
-      "description": "Select your funds from the list to see the overlap analysis.",
-      "add_fund": "Add Fund",
-      "include_sectors": "Include Sector Summary",
-      "export_csv": "Export CSV",
-      "copy_summary": "Copy Summary"
-    },
-    "results": {
-        "weighted_overlap_title": "Weighted Overlap",
-        "top_stocks_title": "Top Overlapping Stocks",
-        "stock_header": "Stock",
-        "min_weight_header": "Min. Weight",
-        "sector_overlap_title": "Sector Overlap Summary"
-    },
-    "what_is_overlap": {
-      "h2": "What is Mutual Fund Overlap and Why Does It Matter?",
-      "body": "<p>Mutual fund overlap occurs when two or more funds in your portfolio hold the same stocks. While it's normal to have some overlap, especially in large-cap funds that track similar benchmarks, high overlap can lead to several problems:</p><ul><li><strong>False Diversification:</strong> You might think you're diversified across 5-6 funds, but if they all own HDFC Bank, Reliance, and ICICI Bank as their top holdings, your portfolio's performance is heavily tied to just a few companies.</li><li><strong>Concentrated Risk:</strong> If a specific stock or sector that is common across your funds performs poorly, your entire portfolio takes a bigger hit than you'd expect.</li><li><strong>Duplicate Expense Ratios:</strong> You're essentially paying multiple fund managers (via expense ratios) to buy and manage the same set of stocks, leading to inefficient costs.</li></ul><p>Understanding what is mutual fund overlap is the first step to building a truly diversified and resilient portfolio. Our calculator helps you quantify this risk instantly.</p>"
-    },
-    "how_it_works": {
-      "h2": "How Our Mutual Fund Overlap Calculator Works",
-      "body": "<h3>Inputs We Use</h3><p>To provide an accurate analysis, our tool uses the latest available portfolio data sourced from official AMFI records and fund house disclosures. You can enter:</p><ul><li><strong>Fund Names:</strong> Simply start typing the name of the fund (e.g., 'Parag Parikh Flexi Cap').</li><li><strong>AMFI Code:</strong> For precise identification, you can use the unique AMFI code of each scheme.</li><li><strong>Number of Funds:</strong> Compare two or more funds simultaneously to get a complete portfolio view.</li></ul><h3>Calculation Methodology</h3><p>We calculate overlap using two standard industry methods:</p><p><strong>1. Simple Overlap % (Common-Weight):</strong><br/><code>Overlap% = (Sum of weights of common stocks) / (min(Total Equity Weight of Fund A, Total Equity Weight of Fund B)) * 100</code></p><p><strong>2. Weighted Overlap % (Recommended):</strong><br/><code>WeightedOverlap = ∑ min(wA_i, wB_i)</code><br/>This formula sums the minimum weight of each common stock 'i' across Fund A and Fund B. It gives a more accurate picture of true portfolio concentration.</p><p>For a detailed breakdown, please see our <a href='#methodology'>Methodology</a> section.</p>"
-    },
-    "live_example": {
-      "h2": "Live Example — Fund A vs Fund B",
-      "intro": "Let's compare two popular large-cap funds to see overlap in action: 'ICICI Pru Bluechip' vs 'HDFC Top 100'. This example is for illustrative purposes only.",
-      "table": [
-        {"stock": "HDFC Bank", "weightA": "8.5%", "weightB": "9.2%"},
-        {"stock": "ICICI Bank", "weightA": "7.9%", "weightB": "7.5%"},
-        {"stock": "Reliance Industries", "weightA": "6.2%", "weightB": "5.8%"}
-      ],
-      "result": "<strong>Overlap Result:</strong> The weighted overlap between these two funds is approximately <strong>45%</strong>. This is considered high, meaning you have significant concentration in the same large-cap names."
-    },
-    "interpreting_results": {
-      "h2": "Interpreting Your Overlap Results",
-      "body": "<h3>Overlap Percentage Thresholds</h3><p>Here are some general guidelines to interpret your overlap score:</p><ul><li><strong>0-10% (Low):</strong> The funds are well-differentiated. This is ideal for funds in different categories (e.g., a large-cap and a small-cap fund).</li><li><strong>10-30% (Moderate):</strong> Some common holdings exist, which is normal for funds in the same category. No immediate action is typically needed, but it's good to be aware.</li><li><strong>30-60% (High):</strong> Your funds are significantly similar. You may be taking on concentrated risk and paying duplicate fees. Consider re-evaluating your portfolio.</li><li><strong>>60% (Very High):</strong> The funds are practically clones. Holding both is highly inefficient and offers little to no diversification benefit. It's strongly recommended to consolidate.</li></ul><h3>Sector vs. Stock Overlap</h3><p>Our tool shows both. High <strong>sector overlap</strong> (e.g., both funds are 30% in financials) can be a concern, but high <strong>stock overlap</strong> within that sector is a bigger red flag.</p>"
-    },
-    "what_to_do": {
-      "h2": "What To Do Next — Actionable Steps & Decision Flow",
-      "body": "<h3>Replace, Rebalance, or Accept?</h3><p>Once you have your overlap score, use this flowchart to decide your next move:</p><p><em>[Decision Flowchart Visual Placeholder]</em></p><ol><li><strong>If Overlap is >60%:</strong> It's best to <strong>Replace</strong> one of the funds. Choose the one with higher expense ratio or consistently lower performance.</li><li><strong>If Overlap is 30-60%:</strong> Consider <strong>Rebalancing</strong>. You can reduce your allocation in one fund and redirect the SIP to a more unique fund (e.g., a different sector or market cap).</li><li><strong>If Overlap is <30%:</strong> Generally, you can <strong>Accept</strong> it. Monitor the overlap annually to ensure it doesn't increase significantly.</li></ol><h3>Tax & Exit Load Considerations in India</h3><p>Before selling a fund, always consider the tax implications. For equity funds, gains are taxed as Short-Term Capital Gains (STCG) if sold within one year, and Long-Term Capital Gains (LTCG) after that. Also, check for any <strong>exit loads</strong>, which are fees charged for redeeming units within a certain period (usually 1 year).</p>"
-    },
-    "conclusion": {
-      "title": "Conclusion",
-      "body": "A high overlap score isn't necessarily 'bad,' but it's a critical piece of information. It reveals hidden risks in your portfolio and empowers you to build a smarter, more diversified investment strategy. Use this tool regularly to ensure your mutual funds are working for you, not against you."
-    },
-    "methodology": {
-      "h2": "Methodology & Data Sources",
-      "body": "<p>This calculator uses portfolio data sourced from AMFI (Association of Mutual Funds in India) and is updated periodically. The overlap is calculated using both a simple common-weight method and a more accurate weighted overlap formula to give you a comprehensive view. For any discrepancies, please refer to the official fund factsheet from the respective Asset Management Company (AMC).</p><h3>Weighted Overlap (Used)</h3><p>For funds A and B, with constituents {i} and weights wA_i, wB_i (fractions; sum of equity weights ≤ 1):<br><code>WeightedOverlap(A,B) = Σ_i min(wA_i, wB_i)</code></p><p>Result expressed as % of equity exposure:<br><code>WeightedOverlapPct = WeightedOverlap(A,B) * 100</code></p><p><strong>Notes:</strong><br>- Cash/debt portion is excluded from overlap (we normalize to total equity weight when comparing funds across different equity allocation).<br>- If only top-N holdings are available, we display `coverage = Σ_topN weights`. If coverage < 80%, results are flagged as “partial”.</p>"
-    },
-    "faq": {
-      "h2": "Frequently Asked Questions",
-      "faqs": [
-        { "q": "What is mutual fund overlap?", "a": "Mutual fund overlap occurs when two or more of your funds hold the same stocks, which can lead to 'false diversification' and concentrated risk. Our calculator helps you identify these common holdings." },
-        { "q": "How do you calculate mutual fund overlap %?", "a": "We use a weighted overlap formula by summing the minimum weight of each common stock between funds. This gives a more accurate measure of concentration than simple counts." },
-        { "q": "How much overlap is too much between two mutual funds?", "a": "Generally, an overlap above 30% is considered high and warrants a review. Above 50-60% is very high, suggesting the funds are too similar and you should consider consolidating to avoid duplicate costs." },
-        { "q": "How to check overlap between two mutual funds in India?", "a": "Use our free Mutual Fund Overlap Calculator. Simply select your Indian mutual funds in the tool to get an instant analysis of common stocks and sector concentration." },
-        { "q": "Does sector overlap matter more than stock overlap?", "a": "Both matter, but high stock-level overlap is a bigger red flag. High sector overlap (e.g., both funds are 30% in Financials) is common, but if they both hold the exact same banks, your risk is more concentrated." },
-        { "q": "Can SIPs in different funds create high overlap?", "a": "Yes. If you run SIPs in multiple large-cap or flexi-cap funds that track similar benchmarks (like the Nifty 50), they will likely buy the same top stocks, leading to high portfolio overlap over time." },
-        { "q": "How often should I check overlap for my portfolio?", "a": "A yearly portfolio review is a good practice. Check for overlap annually or whenever you are considering adding a new fund to ensure it's adding true diversification." },
-        { "q": "How to reduce overlap without changing my asset allocation?", "a": "You can 'steer' your SIPs by pausing contributions to a high-overlap fund and redirecting the amount to a more unique fund in the same category (e.g., a 'value' fund instead of a 'growth' fund) or a different market focus (e.g., a multi-cap fund)." },
-        { "q": "Is fund overlap the same as correlation?", "a": "No. Overlap measures common holdings, while correlation measures how similarly the funds' NAVs move. High overlap often leads to high correlation, but funds can be correlated without having high overlap." },
-        { "q": "Can overlap increase my downside risk during a crash?", "a": "Yes. High overlap concentrates your risk. If a specific stock or sector that is common across all your funds performs badly, your entire portfolio will suffer more than you might expect." },
-        { "q": "Are international funds included in overlap calculations?", "a": "Yes, our tool can calculate overlap for any funds in our database, including international ones, as long as the data is available." },
-        { "q": "What date are fund holdings taken from? How often are they updated?", "a": "The holdings in our database are based on the latest available data from fund factsheets, typically updated monthly or quarterly." },
-        { "q": "Is mutual fund overlap taxable?", "a": "The overlap itself is not taxable. However, if you decide to sell a fund to reduce overlap, any capital gains from that sale will be taxed (Short-Term or Long-Term Capital Gains, depending on the holding period)." },
-        { "q": "Can I use this calculator for 5+ funds?", "a": "The user interface is optimized for comparing up to 5 funds at once for clarity. For a larger portfolio review, you can perform multiple comparisons." },
-        { "q": "What to do if two funds overlap 60%+?", "a": "An overlap of over 60% suggests the funds are nearly identical. It is highly recommended to consolidate. Choose the fund with the better long-term performance and lower expense ratio, and consider switching your SIP and holdings to that single fund." },
-        { "q": "Do you provide an API / embeddable widget?", "a": "This feature is not currently available, but we are considering it for the future. For now, you can link directly to our calculator page." },
-        { "q": "How accurate is the overlap calculation?", "a": "The calculation is mathematically precise based on the holdings data in our database. The accuracy depends on how recent the data is from the AMCs. We strive to keep it updated." },
-        { "q": "How to replace a fund with a low-overlap alternative?", "a": "First, identify the category of the fund you want to replace (e.g., Large-Cap). Then, research other funds in that category with a different investment style (e.g., a 'value' fund instead of a 'growth' fund) or a different market focus (e.g., a multi-cap fund)." },
-        { "q": "How do expense ratios affect the overlap decision?", "a": "High overlap means you are paying multiple fund managers (and multiple expense ratios) to own the same stocks. If two funds have high overlap, it often makes sense to consolidate into the one with the lower expense ratio to save on costs." },
-        { "q": "What is the weighted-overlap formula and why is it better?", "a": "The weighted-overlap formula is: Sum of [Minimum Weight of Stock X in Fund A vs Fund B]. It's better than just counting common stocks because it measures the *actual* portfolio concentration, giving more importance to stocks with a higher weight in both funds." }
-      ]
-    }
   }
 }
+
+    
