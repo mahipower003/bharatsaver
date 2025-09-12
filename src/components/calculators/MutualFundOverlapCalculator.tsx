@@ -22,7 +22,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
     async function fetchData() {
       setIsLoading(true);
       try {
-        const response = await fetch('/data/mutual-fund-holdings.json');
+        const response = await fetch('/jsonfile/tickertape_top_holdings.json');
         if (!response.ok) {
           throw new Error('Failed to fetch fund data');
         }
@@ -31,7 +31,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
         if (data.length >= 2) {
           setSelectedFunds([data[0], data[1]]);
         } else {
-          setIsLoading(false); // Not enough data to perform a default calculation
+          setIsLoading(false);
         }
       } catch (error) {
         console.error("Error fetching fund data:", error);
@@ -276,5 +276,3 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: RawFund[
     </>
   );
 }
-
-    
