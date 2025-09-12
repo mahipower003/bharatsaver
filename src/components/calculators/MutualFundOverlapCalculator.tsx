@@ -6,7 +6,6 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { Checkbox } from '@/components/ui/checkbox';
 import { Download, Copy, PlusCircle, Trash2, BarChart2, Check, ChevronsUpDown } from 'lucide-react';
 import type { Dictionary } from '@/types';
 import { funds as allFunds, type FundPortfolio } from '@/data/mutual-fund-holdings';
@@ -45,25 +44,29 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
     }));
   });
 
-  const [includeSectors, setIncludeSectors] = useState(true);
-
   const overlapResult: OverlapResult | null = useMemo(() => {
     if (funds.length < 2 || funds.some(f => f.holdings.length === 0)) return null;
-
+  
     const allStockNames = new Set<string>();
     const fundWeightMaps = funds.map((f) => {
       const map = new Map<string, { weight: number; sector: string }>();
       let totalEquityWeight = 0;
       for (const h of f.holdings) {
-        if (h.name && h.weight) {
+        if (h.name && typeof h.weight === 'number') {
             map.set(h.name, { weight: h.weight, sector: h.sector || 'Unknown' });
             totalEquityWeight += h.weight;
             allStockNames.add(h.name);
         }
       }
+      // Normalize weights to sum to 100 if they don't, to handle data inconsistencies
+      if (totalEquityWeight > 0 && Math.abs(totalEquityWeight - 100) > 1) {
+          map.forEach((value, key) => {
+              map.set(key, { ...value, weight: (value.weight / totalEquityWeight) * 100 });
+          });
+      }
       return { map, totalEquityWeight };
     });
-
+  
     const stockRows: { name: string; perFund: number[]; minWeight: number; sector: string }[] = [];
     
     allStockNames.forEach(name => {
@@ -84,7 +87,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
     });
     
     const weightedOverlap = stockRows.reduce((s, r) => s + r.minWeight, 0);
-
+  
     const pairwise: { i: number; j: number; percent: number }[] = [];
     for (let i = 0; i < funds.length; i++) {
       for (let j = i + 1; j < funds.length; j++) {
@@ -101,14 +104,14 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
         pairwise.push({ i, j, percent: Number(percent.toFixed(2)) });
       }
     }
-
+  
     const sectorMap = new Map<string, number>();
     stockRows.forEach(row => {
       if (row.minWeight > 0) {
         sectorMap.set(row.sector, (sectorMap.get(row.sector) || 0) + row.minWeight);
       }
     });
-
+  
     const topOverlapStocks = stockRows
       .sort((a, b) => b.minWeight - a.minWeight)
       .map((r) => ({ ...r } as any));
@@ -116,8 +119,8 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
     const sectorOverlap = Array.from(sectorMap.entries())
         .map(([sector, weight]) => ({ sector, weight: Number(weight.toFixed(4)) }))
         .sort((a,b) => b.weight - a.weight);
-
-
+  
+  
     return {
       weightedOverlap: Number(weightedOverlap.toFixed(2)),
       pairwise,
@@ -211,16 +214,10 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
         ))}
       </div>
 
-      <div className="flex flex-wrap items-center justify-between gap-4">
+      <div className="flex flex-wrap items-center justify-start gap-4">
         <Button variant="outline" onClick={addFund} disabled={funds.length >= 5}>
           <PlusCircle className="mr-2" /> {dictionary.tool.add_fund}
         </Button>
-        <div className="flex items-center space-x-2">
-          <Checkbox id="include-sectors" checked={includeSectors} onCheckedChange={(checked) => setIncludeSectors(Boolean(checked))} />
-          <label htmlFor="include-sectors" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
-            {dictionary.tool.include_sectors}
-          </label>
-        </div>
       </div>
 
       {overlapResult && (
@@ -257,22 +254,6 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
                 </CardContent>
             </Card>
 
-           {includeSectors && (
-             <Card>
-                <CardHeader><CardTitle>{dictionary.results.sector_overlap_title}</CardTitle></CardHeader>
-                <CardContent>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
-                    {overlapResult.sectorOverlap.slice(0,10).map((s, i) => (
-                      <div key={i} className="flex justify-between items-center text-sm border-b pb-2">
-                        <span className="font-medium">{s.sector}</span>
-                        <span className="font-semibold text-primary">{s.weight.toFixed(2)}%</span>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-            </Card>
-           )}
-
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
               <Button variant="outline" onClick={exportCSV}><Download className="mr-2"/>{dictionary.tool.export_csv}</Button>
               <Button variant="outline" onClick={copySummary}><Copy className="mr-2"/>{dictionary.tool.copy_summary}</Button>
@@ -299,31 +280,35 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: FundPort
         <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
       </Button>
       <CommandDialog open={open} onOpenChange={setOpen}>
-        <CommandInput placeholder="Search for a fund..." />
-        <CommandList>
+        <Command>
+          <CommandInput placeholder="Search for a fund..." />
           <CommandEmpty>No fund found.</CommandEmpty>
-          <CommandGroup>
-            {allFunds.map((fund) => (
-              <CommandItem
-                key={fund.schemeCode}
-                value={fund.schemeName}
-                onSelect={() => {
-                  onSelect(fund.schemeCode);
-                  setOpen(false);
-                }}
-              >
-                <Check
-                  className={cn(
-                    "mr-2 h-4 w-4",
-                    selectedFund.schemeCode === fund.schemeCode ? "opacity-100" : "opacity-0"
-                  )}
-                />
-                {fund.schemeName}
-              </CommandItem>
-            ))}
-          </CommandGroup>
-        </CommandList>
+          <CommandList>
+            <CommandGroup>
+              {allFunds.map((fund) => (
+                <CommandItem
+                  key={fund.schemeCode}
+                  value={fund.schemeName}
+                  onSelect={() => {
+                    onSelect(fund.schemeCode);
+                    setOpen(false);
+                  }}
+                >
+                  <Check
+                    className={cn(
+                      "mr-2 h-4 w-4",
+                      selectedFund.schemeCode === fund.schemeCode ? "opacity-100" : "opacity-0"
+                    )}
+                  />
+                  {fund.schemeName}
+                </CommandItem>
+              ))}
+            </CommandGroup>
+          </CommandList>
+        </Command>
       </CommandDialog>
     </>
   );
 }
+
+    
