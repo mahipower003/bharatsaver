@@ -10,13 +10,13 @@ export type FundPortfolio = {
 };
 
 const rawData = [
-  {
-    "source" : "https://www.tickertape.in/mutualfunds/parag-parikh-flexi-cap-fund-M_PARO",
-    "fetched_at_unix" : 1757655453,
-    "fund_name" : "Parag Parikh Flexi Cap Fund Direct Growth",
-    "coverage_pct" : 100.0771,
-    "constituents_count" : 161,
-    "constituents" : [ {
+ {
+  "source" : "https://www.tickertape.in/mutualfunds/parag-parikh-flexi-cap-fund-M_PARO",
+  "fetched_at_unix" : 1757655453,
+  "fund_name" : "Parag Parikh Flexi Cap Fund Direct Growth",
+  "coverage_pct" : 100.0771,
+  "constituents_count" : 161,
+  "constituents" : [ {
     "company" : "Clearing Corporation of India Ltd",
     "ticker" : "",
     "weight_pct" : 11.1243842248038
@@ -661,7 +661,8 @@ const rawData = [
     "ticker" : "",
     "weight_pct" : null
   } ]
-}, {
+},
+{
   "source" : "https://www.tickertape.in/mutualfunds/hdfc-balanced-advantage-fund-M_HDCBA",
   "fetched_at_unix" : 1757655454,
   "fund_name" : "HDFC Balanced Advantage Fund Direct Growth",
@@ -1512,7 +1513,7 @@ const rawData = [
     "ticker" : "",
     "weight_pct" : 0.0509658703234218
   }, {
-    "company" : "7.64% Gujarat SDL ISD 170124 Mat 170133^",
+    "company" : "7.64% Gujarat SDL ISD 170124 MAT 170133^",
     "ticker" : "",
     "weight_pct" : 0.0507609823030945
   }, {
@@ -1867,7 +1868,6 @@ export const funds: FundPortfolio[] = rawData.map(fund => ({
     .map(c => ({
       name: c.company,
       weight: c.weight_pct || 0,
-      sector: 'Unknown', 
+      sector: 'Unknown',
     })),
 }));
-
