@@ -10,7 +10,7 @@ import { Download, Copy, PlusCircle, Trash2, BarChart2, Check, ChevronsUpDown } 
 import type { Dictionary } from '@/types';
 import { funds as allFunds, type FundPortfolio } from '@/data/mutual-fund-holdings';
 import { Command, CommandDialog, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from '@/components/ui/command';
-import { DialogTitle } from '@/components/ui/dialog';
+import { Dialog, DialogTitle } from '@/components/ui/dialog';
 import { cn } from '@/lib/utils';
 
 type Fund = {
@@ -32,41 +32,53 @@ type OverlapResult = {
 };
 
 const calculateOverlap = (funds: Fund[]): OverlapResult | null => {
-  if (funds.length < 2 || funds.some(f => !f.holdings || f.holdings.length === 0)) return null;
-
-  const fundWeightMaps = funds.map((fund) => {
-    const weights = new Map<string, number>();
-    for (const holding of fund.holdings) {
-      weights.set(holding.name, holding.weight);
+    if (funds.length < 2 || funds.some(f => !f.holdings || f.holdings.length === 0)) {
+        return null;
     }
-    return weights;
-  });
 
-  const allStocks = new Set<string>();
-  fundWeightMaps.forEach(map => {
-    map.forEach((_, stockName) => allStocks.add(stockName));
-  });
+    const stockMap: Map<string, { weights: number[], funds: string[] }> = new Map();
 
-  const commonStocks: { name: string; perFund: number[]; minWeight: number }[] = [];
-  let totalWeightedOverlap = 0;
+    funds.forEach((fund, fundIndex) => {
+        if (!fund.holdings) return;
+        fund.holdings.forEach(holding => {
+            if (!stockMap.has(holding.name)) {
+                stockMap.set(holding.name, {
+                    weights: Array(funds.length).fill(0),
+                    funds: []
+                });
+            }
+            const stockData = stockMap.get(holding.name)!;
+            stockData.weights[fundIndex] = holding.weight;
+            if (!stockData.funds.includes(fund.name)) {
+                stockData.funds.push(fund.name);
+            }
+        });
+    });
 
-  allStocks.forEach(stockName => {
-    const weights = funds.map((_, i) => fundWeightMaps[i].get(stockName) || 0);
-    const fundsWithStock = weights.filter(w => w > 0);
+    const commonStocks: (Holding & { minWeight: number; perFund: number[] })[] = [];
+    let totalWeightedOverlap = 0;
 
-    if (fundsWithStock.length > 1) {
-      const minWeight = Math.min(...fundsWithStock);
-      totalWeightedOverlap += minWeight;
-      commonStocks.push({ name: stockName, perFund: weights, minWeight });
-    }
-  });
+    stockMap.forEach((data, stockName) => {
+        const fundsWithStock = data.weights.filter(w => w > 0);
+        if (fundsWithStock.length > 1) {
+            const minWeight = Math.min(...fundsWithStock);
+            totalWeightedOverlap += minWeight;
+            commonStocks.push({
+                name: stockName,
+                weight: 0, // Not used directly, minWeight is the key metric
+                sector: '', // Not used directly
+                minWeight: minWeight,
+                perFund: data.weights
+            });
+        }
+    });
 
-  commonStocks.sort((a, b) => b.minWeight - a.minWeight);
+    commonStocks.sort((a, b) => b.minWeight - a.minWeight);
 
-  return {
-    weightedOverlap: Number(totalWeightedOverlap.toFixed(2)),
-    topOverlapStocks: commonStocks as any,
-  };
+    return {
+        weightedOverlap: Number(totalWeightedOverlap.toFixed(2)),
+        topOverlapStocks: commonStocks,
+    };
 };
 
 export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictionary['mutual_fund_overlap_calculator'] }) {
@@ -82,14 +94,15 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
     const [overlapResult, setOverlapResult] = useState<OverlapResult | null>(null);
     
     useEffect(() => {
-        setOverlapResult(calculateOverlap(funds));
+        const result = calculateOverlap(funds);
+        setOverlapResult(result);
     }, [funds]);
 
   const exportCSV = () => {
     if (!overlapResult) return;
-    const headers = ["Stock Name", ...funds.map((f) => f.name), "MinWeight"];
+    const headers = ["Stock Name", ...funds.map((f) => `"${f.name.replace(/"/g, '""')}"`), "MinWeight"];
     const rows = overlapResult.topOverlapStocks.map(r => 
-        [`"${r.name}"`, ...r.perFund.map((w) => w.toFixed(2)), r.minWeight.toFixed(4)].join(",")
+        [`"${r.name.replace(/"/g, '""')}"`, ...r.perFund.map((w) => w.toFixed(2)), r.minWeight.toFixed(4)].join(",")
     );
     const csv = [headers.join(","), ...rows].join("\n");
     const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
@@ -110,19 +123,30 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
     overlapResult.topOverlapStocks.slice(0, 5).forEach(s => {
       text += `- ${s.name}: ${s.minWeight.toFixed(2)}%\n`;
     });
-    await navigator.clipboard.writeText(text);
-    alert("Summary copied to clipboard!");
+    try {
+        await navigator.clipboard.writeText(text);
+        alert("Summary copied to clipboard!");
+    } catch(err) {
+        console.error("Failed to copy summary: ", err)
+    }
   };
 
   const addFund = () => {
     if (funds.length >= 5) return;
-    const id = (funds[funds.length - 1]?.id || 0) + 1;
-    const nextFund = allFunds.find(f => !funds.some(selected => selected.schemeCode === f.schemeCode)) || allFunds[funds.length];
-    setFunds((p) => [...p, { id, name: nextFund?.schemeName || `Select Fund ${id}`, holdings: nextFund?.holdings || [], schemeCode: nextFund?.schemeCode || '' }]);
+    const nextId = (funds[funds.length - 1]?.id || 0) + 1;
+    const nextFundData = allFunds.find(f => !funds.some(selected => selected.schemeCode === f.schemeCode));
+    if (nextFundData) {
+        setFunds(prev => [...prev, { 
+            id: nextId, 
+            name: nextFundData.schemeName, 
+            holdings: nextFundData.holdings, 
+            schemeCode: nextFundData.schemeCode 
+        }]);
+    }
   };
 
-  const removeFund = (id: number) => {
-    setFunds((p) => p.filter((f) => f.id !== id));
+  const removeFund = (idToRemove: number) => {
+    setFunds(prev => prev.filter((f) => f.id !== idToRemove));
   };
   
   const updateFundSelection = (fundId: number, schemeCode: string) => {
@@ -164,7 +188,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
               </Button>
             </CardHeader>
             <CardContent className="p-4 text-sm text-muted-foreground">
-              {fund.holdings.length > 0 ? `${fund.holdings.length} holdings loaded for analysis.` : 'Please select a fund to see details.'}
+              {fund.holdings && fund.holdings.length > 0 ? `${fund.holdings.length} holdings loaded for analysis.` : 'Please select a fund to see details.'}
             </CardContent>
           </Card>
         ))}
