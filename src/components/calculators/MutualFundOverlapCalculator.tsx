@@ -1,7 +1,7 @@
 
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
@@ -10,7 +10,7 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { Download, Copy, PlusCircle, Trash2, BarChart2, Check, ChevronsUpDown } from 'lucide-react';
 import type { Dictionary } from '@/types';
 import { funds as allFunds, type FundPortfolio } from '@/data/mutual-fund-holdings';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import { Dialog, DialogTrigger, DialogContent } from '@/components/ui/dialog';
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from '@/components/ui/command';
 import { cn } from '@/lib/utils';
 
@@ -285,12 +285,12 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
 }
 
 
-function FundSelector({ allFunds, selectedFund, onSelect, dictionary }: { allFunds: FundPortfolio[], selectedFund: Fund, onSelect: (schemeCode: string) => void, dictionary: any }) {
+function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: FundPortfolio[], selectedFund: Fund, onSelect: (schemeCode: string) => void }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <Popover open={open} onOpenChange={setOpen}>
-      <PopoverTrigger asChild>
+    <Dialog open={open} onOpenChange={setOpen}>
+      <DialogTrigger asChild>
         <Button
           variant="outline"
           role="combobox"
@@ -300,8 +300,8 @@ function FundSelector({ allFunds, selectedFund, onSelect, dictionary }: { allFun
           <span className="truncate">{selectedFund.name}</span>
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
-      </PopoverTrigger>
-      <PopoverContent className="w-[300px] p-0">
+      </DialogTrigger>
+      <DialogContent className="p-0">
         <Command>
           <CommandInput placeholder="Search for a fund..." />
           <CommandEmpty>No fund found.</CommandEmpty>
@@ -311,11 +311,8 @@ function FundSelector({ allFunds, selectedFund, onSelect, dictionary }: { allFun
                 <CommandItem
                   key={fund.schemeCode}
                   value={fund.schemeName}
-                  onSelect={(currentValue) => {
-                    const selected = allFunds.find(f => f.schemeName.toLowerCase() === currentValue.toLowerCase());
-                    if (selected) {
-                      onSelect(selected.schemeCode);
-                    }
+                  onSelect={() => {
+                    onSelect(fund.schemeCode);
                     setOpen(false);
                   }}
                 >
@@ -331,7 +328,8 @@ function FundSelector({ allFunds, selectedFund, onSelect, dictionary }: { allFun
             </CommandGroup>
           </CommandList>
         </Command>
-      </PopoverContent>
-    </Popover>
+      </DialogContent>
+    </Dialog>
   );
 }
+
