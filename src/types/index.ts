@@ -38,7 +38,7 @@ export type Dictionary = {
       guides: string;
       blog: string;
     };
-    cta: string;
+    cta_button: string;
   };
   footer: {
     about: {

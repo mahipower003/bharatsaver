@@ -29,41 +29,45 @@ type OverlapResult = {
   topOverlapStocks: (Holding & { minWeight: number; perFund: number[] })[];
 };
 
+// **Corrected Overlap Calculation Logic**
 const calculateOverlap = (funds: Fund[]): OverlapResult | null => {
   if (!funds || funds.length < 2) {
     return null;
   }
 
-  const stockMap = new Map<string, { weights: number[]; sector: string }>();
+  const stockMap = new Map<string, number[]>();
 
+  // 1. Build a map of all stocks and their weights in each fund
   funds.forEach((fund, fundIndex) => {
     if (!fund.holdings) return;
     fund.holdings.forEach(holding => {
       if (!stockMap.has(holding.name)) {
-        stockMap.set(holding.name, { weights: Array(funds.length).fill(0), sector: holding.sector });
+        stockMap.set(holding.name, Array(funds.length).fill(0));
       }
-      stockMap.get(holding.name)!.weights[fundIndex] = holding.weight;
+      stockMap.get(holding.name)![fundIndex] = holding.weight;
     });
   });
 
   const commonStocks: (Holding & { minWeight: number; perFund: number[] })[] = [];
   let totalWeightedOverlap = 0;
-  
-  stockMap.forEach((data, stockName) => {
-    const fundsWithStockCount = data.weights.filter(w => w > 0).length;
+
+  // 2. Identify common stocks and calculate overlap
+  stockMap.forEach((weights, stockName) => {
+    const fundsWithStockCount = weights.filter(w => w > 0).length;
     
+    // A stock is common if it appears in at least two funds
     if (fundsWithStockCount >= 2) {
-      const nonZeroWeights = data.weights.filter(w => w > 0);
+      const nonZeroWeights = weights.filter(w => w > 0);
       const minWeight = Math.min(...nonZeroWeights);
       
       totalWeightedOverlap += minWeight;
 
       commonStocks.push({
         name: stockName,
-        weight: 0,
-        sector: data.sector,
+        weight: 0, // This field is not used, but part of the type
+        sector: 'N/A', // Sector data is not available in the provided schema
         minWeight,
-        perFund: data.weights,
+        perFund: weights,
       });
     }
   });
@@ -88,8 +92,9 @@ const getDefaultFunds = (): Fund[] => {
 
 export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictionary['mutual_fund_overlap_calculator'] }) {
   const [funds, setFunds] = useState<Fund[]>(getDefaultFunds);
-  const [overlapResult, setOverlapResult] = useState<OverlapResult | null>(() => calculateOverlap(getDefaultFunds()));
+  const [overlapResult, setOverlapResult] = useState<OverlapResult | null>(null);
     
+  // **Corrected useEffect for Initial Load and Updates**
   useEffect(() => {
     const result = calculateOverlap(funds);
     setOverlapResult(result);
