@@ -194,6 +194,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
           <Card key={fund.id} className="overflow-hidden">
             <CardHeader className="flex flex-row items-center justify-between bg-muted/50 p-4">
               <FundSelector
+                allFunds={allFunds}
                 selectedFund={fund}
                 onSelect={(schemeCode) => updateFundSelection(fund.id, schemeCode)}
                 dictionary={dictionary}
@@ -282,7 +283,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
 }
 
 
-function FundSelector({ selectedFund, onSelect, dictionary }: { selectedFund: Fund, onSelect: (schemeCode: string) => void, dictionary: any }) {
+function FundSelector({ allFunds, selectedFund, onSelect, dictionary }: { allFunds: FundPortfolio[], selectedFund: Fund, onSelect: (schemeCode: string) => void, dictionary: any }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -308,8 +309,11 @@ function FundSelector({ selectedFund, onSelect, dictionary }: { selectedFund: Fu
                 <CommandItem
                   key={fund.schemeCode}
                   value={fund.schemeName}
-                  onSelect={() => {
-                    onSelect(fund.schemeCode);
+                  onSelect={(currentValue) => {
+                    const selected = allFunds.find(f => f.schemeName.toLowerCase() === currentValue.toLowerCase());
+                    if (selected) {
+                      onSelect(selected.schemeCode);
+                    }
                     setOpen(false);
                   }}
                 >
@@ -329,3 +333,5 @@ function FundSelector({ selectedFund, onSelect, dictionary }: { selectedFund: Fu
     </Popover>
   );
 }
+
+    
