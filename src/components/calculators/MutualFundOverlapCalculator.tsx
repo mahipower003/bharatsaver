@@ -6,13 +6,13 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { Download, Copy, PlusCircle, Trash2, BarChart2, Check, ChevronsUpDown, AlertTriangle, Info } from 'lucide-react';
+import { Download, Copy, PlusCircle, Trash2, BarChart2, Check, ChevronsUpDown, AlertTriangle, Info, Loader2 } from 'lucide-react';
 import type { Dictionary } from '@/types';
-import { funds as allFunds } from '@/data/mutual-fund-holdings';
+import { funds as allFunds, RawFund } from '@/data/mutual-fund-holdings';
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList, CommandDialog } from '@/components/ui/command';
 import { cn } from '@/lib/utils';
 import { DialogTitle } from '@radix-ui/react-dialog';
-import { type OverlapOutput, calculateAllOverlaps, type RawFund } from '@/lib/overlap-calculator';
+import { type OverlapOutput, calculateAllOverlaps } from '@/lib/overlap-calculator';
 
 export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictionary['mutual_fund_overlap_calculator'] }) {
   const [selectedFunds, setSelectedFunds] = useState<RawFund[]>(() => {
@@ -20,18 +20,26 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
     return [allFunds[0], allFunds[1]];
   });
   const [overlapResult, setOverlapResult] = useState<OverlapOutput | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    if (selectedFunds.length >= 2) {
-      const result = calculateAllOverlaps(selectedFunds);
-      setOverlapResult(result);
-    } else {
-      setOverlapResult(null);
-    }
+    const calculateOverlap = async () => {
+      if (selectedFunds.length >= 2) {
+        setIsLoading(true);
+        // Simulate async calculation if needed
+        await new Promise(resolve => setTimeout(resolve, 100)); 
+        const result = calculateAllOverlaps(selectedFunds);
+        setOverlapResult(result);
+        setIsLoading(false);
+      } else {
+        setOverlapResult(null);
+      }
+    };
+    calculateOverlap();
   }, [selectedFunds]);
 
   const exportCSV = () => {
-    if (!overlapResult || overlapResult.pairs.length === 0) return;
+    if (!overlapResult || !overlapResult.pairs.length) return;
     const firstPair = overlapResult.pairs[0];
     const headers = ["Stock Name", `Weight in ${firstPair.fund_a}`, `Weight in ${firstPair.fund_b}`, "Min. Weight"];
     const rows = firstPair.common_holdings.map(r => 
@@ -49,7 +57,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
   };
 
   const copySummary = async () => {
-    if (!overlapResult || overlapResult.pairs.length === 0) return;
+    if (!overlapResult || !overlapResult.pairs.length) return;
     const firstPair = overlapResult.pairs[0];
     let text = `Mutual Fund Overlap Summary: ${firstPair.fund_a} vs ${firstPair.fund_b}\n`;
     text += `Weighted Overlap: ${firstPair.weighted_overlap}%\n\n`;
@@ -67,10 +75,8 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
 
   const addFund = () => {
     if (selectedFunds.length >= 5) return;
-
     const selectedNames = new Set(selectedFunds.map(f => f.fund_name));
     const nextFundToAdd = allFunds.find(f => !selectedNames.has(f.fund_name));
-    
     if (nextFundToAdd) {
         setSelectedFunds(prev => [...prev, nextFundToAdd]);
     }
@@ -137,8 +143,10 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
           <PlusCircle className="mr-2 h-4 w-4" /> {dictionary.tool.add_fund}
         </Button>
       </div>
+      
+      {isLoading && <div className="text-center py-12"><Loader2 className="mx-auto h-12 w-12 animate-spin text-primary" /></div>}
 
-      {firstPairResult ? (
+      {!isLoading && firstPairResult ? (
         <div className="space-y-6 animate-in fade-in-50">
             {firstPairResult.status === 'partial_coverage' && (
                 <Alert variant="destructive">
@@ -177,7 +185,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
                                     <TableCell className="font-medium">{stock.company}</TableCell>
                                     <TableCell className="text-right">{stock.weight_a > 0 ? `${stock.weight_a.toFixed(2)}%` : '-'}</TableCell>
                                     <TableCell className="text-right">{stock.weight_b > 0 ? `${stock.weight_b.toFixed(2)}%` : '-'}</TableCell>
-                                    <TableCell className="text-right font-bold">{stock.min_weight.toFixed(2)}%</TableCell>
+                                    <TableCell className="text-right font-bold">{stock.min_weight.toFixed(4)}%</TableCell>
                                 </TableRow>
                             ))}
                         </TableBody>
@@ -191,7 +199,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
           </div>
         </div>
       ) : (
-         <Alert>
+        !isLoading && <Alert>
           <AlertTitle>Not Enough Funds Selected</AlertTitle>
           <AlertDescription>
             Please select at least two funds to calculate the overlap.

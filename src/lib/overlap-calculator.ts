@@ -15,7 +15,7 @@ interface RawConstituent {
   weight_pct: number | string | null;
 }
 
-interface RawFund {
+export interface RawFund {
   source: string;
   fetched_at_unix: number;
   fund_name: string;
