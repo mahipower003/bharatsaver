@@ -204,7 +204,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
               </Button>
             </CardHeader>
             <CardContent className="p-4 text-sm text-muted-foreground">
-              {fund.holdings.length > 0 ? `Holdings as of: 31-Aug-2025` : 'Please select a fund to see details.'}
+              {fund.holdings.length > 0 ? `Holdings available for analysis.` : 'Please select a fund to see details.'}
             </CardContent>
           </Card>
         ))}
@@ -282,12 +282,11 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
   );
 }
 
-
 function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: FundPortfolio[], selectedFund: Fund, onSelect: (schemeCode: string) => void }) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = React.useState(false);
 
   return (
-    <CommandDialog open={open} onOpenChange={setOpen}>
+    <>
       <Button
         variant="outline"
         role="combobox"
@@ -298,6 +297,7 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: FundPort
         <span className="truncate">{selectedFund.name}</span>
         <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
       </Button>
+      <CommandDialog open={open} onOpenChange={setOpen}>
         <Command>
           <CommandInput placeholder="Search for a fund..." />
           <CommandList>
@@ -324,6 +324,7 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: FundPort
             </CommandGroup>
           </CommandList>
         </Command>
-    </CommandDialog>
+      </CommandDialog>
+    </>
   );
 }
