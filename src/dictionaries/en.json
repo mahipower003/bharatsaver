@@ -857,6 +857,105 @@
       "body": "Choosing a tax regime is a critical financial decision. The new regime offers simplicity, while the old regime rewards those with significant investments and expenses. Use this calculator to compare your specific situation, understand the trade-offs, and choose the path that maximizes your take-home salary. For deeper insights, explore our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> or our <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> to see how tax-saving investments can impact your decision."
     }
   },
+  "loan_optimization_calculator": {
+    "h1": "Loan Optimization Calculator India (2025)",
+    "summary": "Free Loan Optimization Calculator (India). Compare prepayment vs invest, optimize EMI, plan balance transfer, download amortization schedule.",
+    "title": "Loan Optimization Calculator",
+    "form_description": "Calculate your EMI and see how extra payments can save you interest.",
+    "form": {
+      "loan_amount": "Loan Amount (₹)",
+      "interest_rate": "Interest Rate (% p.a.)",
+      "tenure": "Tenure (Years)",
+      "prepayment_amount": "Prepayment Amount (₹)",
+      "calculating": "Calculating...",
+      "calculate_cta": "Calculate EMI & Savings"
+    },
+    "results": {
+      "title": "Your Loan Summary",
+      "monthly_emi": "Monthly EMI",
+      "total_interest": "Total Interest Payable",
+      "total_payment": "Total Payment",
+      "prepayment_summary": {
+        "title": "With Prepayment, You Could Save:",
+        "subtitle": "You could be debt-free {months} months earlier!"
+      },
+      "chart_view": "Chart View",
+      "table_view": "Table View",
+      "download_csv": "Download CSV",
+      "principal_paid": "Principal Paid",
+      "interest_paid": "Interest Paid",
+      "outstanding_balance": "Outstanding Balance",
+      "table": {
+        "month": "Month",
+        "principal": "Principal",
+        "interest": "Interest",
+        "total_payment": "Total Payment",
+        "ending_balance": "Ending Balance"
+      }
+    },
+    "why": {
+      "h2": "Why Optimize Your Loan? The Hidden Costs of Interest",
+      "body": "<p>When you take a loan, you pay back more than you borrowed — that extra amount is interest. For a long-term loan like a home loan, the total interest paid can often be as much as the principal amount itself. Loan optimization is the process of strategically managing your loan to minimize this interest cost and become debt-free faster.</p>"
+    },
+    "how_it_works": {
+      "h2": "How This Calculator Works",
+      "body": "<p>Our calculator first determines your Equated Monthly Installment (EMI) using the standard formula: <code>EMI = P × r × (1 + r)^n / ((1 + r)^n - 1)</code>, where P is the principal, r is the monthly interest rate, and n is the tenure in months.</p><p>When you add a prepayment, the calculator adjusts the amortization schedule to show how this extra payment reduces your principal, thereby lowering the total interest paid over the life of the loan and shortening the tenure.</p>"
+    },
+    "worked_examples": {
+      "h2": "Worked Examples",
+      "scenario1": {
+        "title": "Scenario 1: Standard Home Loan (₹50 Lakh)",
+        "body": "<strong>Inputs:</strong> ₹50 Lakh loan, 8.5% interest, 20 years.<br/><strong>Result:</strong> EMI is ₹43,391. Total interest paid is ₹54.14 Lakh.<br/><strong>With ₹5 Lakh Prepayment:</strong> Interest saved is ₹14.3 Lakh and tenure is reduced by 63 months."
+      },
+      "scenario2": {
+        "title": "Scenario 2: Car Loan (₹8 Lakh)",
+        "body": "<strong>Inputs:</strong> ₹8 Lakh loan, 10% interest, 7 years.<br/><strong>Result:</strong> EMI is ₹13,275. Total interest paid is ₹3.15 Lakh.<br/><strong>With ₹1 Lakh Prepayment:</strong> Interest saved is ₹70,000 and tenure is reduced by 15 months."
+      },
+      "scenario3": {
+        "title": "Scenario 3: Personal Loan (₹3 Lakh)",
+        "body": "<strong>Inputs:</strong> ₹3 Lakh loan, 12% interest, 5 years.<br/><strong>Result:</strong> EMI is ₹6,673. Total interest paid is ₹1 Lakh.<br/><strong>With ₹50,000 Prepayment:</strong> Interest saved is ₹25,000 and tenure is reduced by 12 months."
+      }
+    },
+    "optimization_masterclass": {
+      "h2": "Loan Optimization Masterclass: Prepayment, Refinance, & Investment",
+      "body": "<p>The three core strategies for loan optimization are:</p><ul><li><strong>Prepayment:</strong> Making extra payments towards your principal. This is the most direct way to reduce your loan burden.</li><li><strong>Refinance/Balance Transfer:</strong> Moving your loan to another lender offering a lower interest rate. This can significantly reduce your EMI and total interest.</li><li><strong>Prepay vs. Invest:</strong> Deciding whether to use surplus funds to prepay your loan or invest them elsewhere to earn higher returns.</li></ul>"
+    },
+    "prepay_vs_invest": {
+      "h2": "Prepay vs. Invest: A Critical Decision",
+      "body": "<p>The decision to prepay your loan or invest your surplus funds depends on a simple comparison: if the post-tax return on your investment is higher than your loan interest rate, investing is generally better. For example, if your loan rate is 8.5% and you can earn a 12% post-tax return on an equity investment, investing the surplus is mathematically the better choice.</p>"
+    },
+    "refinance": {
+      "h2": "When to Consider a Balance Transfer (Refinance)",
+      "body": "<p>A balance transfer is a good option if you can get a new loan at an interest rate that is at least 0.5-1% lower than your current rate. Factor in any processing fees or other charges associated with the transfer to ensure the net savings are worthwhile.</p>"
+    },
+    "tax_notes": {
+      "h2": "Important Tax Considerations for Home Loans",
+      "body": "<p>For home loans, the principal repayment qualifies for deduction under Section 80C (up to ₹1.5 lakh), and the interest paid is deductible under Section 24 (up to ₹2 lakh). Prepaying a home loan might reduce these tax benefits, so factor this into your 'prepay vs. invest' decision.</p>"
+    },
+    "faq": {
+      "h2": "Frequently Asked Questions",
+      "faqs": [
+        { "q": "What is loan optimization?", "a": "Loan optimization is the process of managing your loan to minimize interest costs and become debt-free faster through strategies like prepayment and refinancing." },
+        { "q": "How does prepayment save money?", "a": "Prepayment reduces your outstanding principal, which means you pay less interest over the remaining life of the loan, shortening the tenure." },
+        { "q": "Is it better to reduce EMI or tenure?", "a": "Reducing the tenure almost always saves you more interest than reducing the EMI. Opt to keep your EMI the same and shorten the loan period." },
+        { "q": "When should I refinance my loan?", "a": "Consider refinancing if you can get a new loan at an interest rate that is significantly lower (at least 0.5-1%) than your current rate, after accounting for all fees." }
+      ]
+    },
+    "conclusion": {
+      "title": "Conclusion: Take Control of Your Debt",
+      "body": "Loan optimization is a powerful way to accelerate your journey to financial freedom. By strategically using prepayments and refinancing, you can save a significant amount on interest and shorten your loan tenure. Use this calculator to model different scenarios and find the best path for your financial situation."
+    },
+    "comparison_table": {
+      "title": "Prepayment vs. Investment: A Quick Comparison",
+      "headers": ["Scenario", "Choose Prepayment if...", "Choose Investment if..."],
+      "rows": [
+          ["Risk", "You want a guaranteed, risk-free 'return' equal to your loan's interest rate.", "You are comfortable with market risks for potentially higher returns."],
+          ["Returns", "Your loan interest rate is high (e.g., personal loan at >12%).", "Your expected post-tax investment return is higher than your loan interest rate."],
+          ["Goal", "Your primary goal is to become debt-free as soon as possible.", "Your primary goal is long-term wealth creation."],
+          ["Tax", "Your loan has no tax benefits (e.g., car loan, personal loan).", "You are prepaying a home loan and will lose significant tax benefits on interest."]
+      ]
+    }
+  },
   "retirement_corpus_calculator": {
     "meta_title": "Retirement Corpus Calculator India 2025 | Free Online Retirement Planning Tool",
     "meta_description": "Free Retirement Corpus Calculator India (2025). Calculate how much money you need to retire, SIP required, and plan a stress-free retirement today.",
@@ -928,6 +1027,44 @@
     "deaccumulation_strategy": {
       "h2": "The De-accumulation Phase: Making Your Corpus Last",
       "body": "<p>Building your nest egg is only half the battle. The real challenge is making it last. Here’s how you can create a steady income stream after you retire.</p><h3>Systematic Withdrawal Plan (SWP)</h3><p>An SWP allows you to withdraw a fixed amount from your mutual fund investments every month, just like a pension. This is a tax-efficient method because the rest of your corpus remains invested and continues to grow, helping you beat inflation.</p><p><strong>Example:</strong> With a ₹2 Crore corpus and a 7% annual return, a ₹1 lakh monthly SWP can last for over 30 years.</p><h3>Annuity Plans</h3><p>An annuity is an insurance product where you pay a lump sum to an insurance company, and they guarantee you a fixed income for life.</p>"
+    },
+    "tax_rules": {
+      "h2": "Tax Rules During Accumulation & Withdrawal",
+      "body": "Tax planning is crucial for maximizing your retirement savings. During the accumulation phase, take advantage of tax-saving instruments like PPF, EPF, and NPS (under Section 80C and 80CCD). During withdrawal, understand the tax implications of different instruments. For example, PPF withdrawals are tax-free, while NPS withdrawals are partially taxed, and mutual fund gains attract capital gains tax. Plan your withdrawals to be as tax-efficient as possible."
+    },
+    "faq_title": "Frequently Asked Questions",
+    "faqs": [
+      { "question": "How do you calculate retirement corpus?", "answer": "We project your future monthly expenses using inflation, compute the present value (PV) of the annuity you’ll need at retirement, and subtract the future value of existing savings to find the shortfall." },
+      { "question": "What inflation rate should I use for Indian retirement planning?", "answer": "Many planners use a long-term default of 5–7% for India; 6% is common. Use higher rates for conservative healthcare or long horizon assumptions." },
+      { "question": "Can I include EPF, PPF and NPS in my retirement corpus?", "answer": "Yes — include all liquid and pension assets (EPF, PPF, NPS, mutual funds, bank FD) in your Current Savings input to lower the additional SIP needed." },
+      { "question": "How much should a 30-year-old save monthly to retire comfortably?", "answer": "It depends on target corpus and assumptions. As a rough guide, saving ₹15,000–₹25,000/month can build multi-crore corpus by 60 at 10–12% returns. Use the calculator for precise numbers." },
+      { "question": "Should I invest by SIP or lump sum to reach my retirement goal?", "answer": "SIP is recommended for disciplined investing and rupee-cost averaging; lump sum can outperform in long bull markets but has higher timing risk. A blended approach works for many." },
+      { "question": "What is a safe withdrawal rate in India during retirement?", "answer": "There is no one-size-fits-all; many advisors use a 3–4% initial withdrawal rule (adjusted for inflation). Consider conservative withdrawal rates if longevity or healthcare costs are uncertain." },
+      { "question": "How do healthcare costs affect the retirement corpus?", "answer": "Healthcare inflation often exceeds general inflation. Add a dedicated healthcare buffer or model higher inflation for medical costs to avoid underestimating your corpus." },
+      { "question": "How will taxes impact my retirement withdrawals?", "answer": "Tax treatment varies by instrument and withdrawal type. EPF/PPF have specific rules; mutual fund withdrawals may attract LTCG tax above thresholds. Plan withdrawals tax-efficiently to preserve corpus." },
+      { "question": "How long should my retirement corpus last?", "answer": "Typically planners assume life expectancy of 85–90 years. Use conservative longevity assumptions if family longevity is high or you retire early." },
+      { "question": "Does the calculator account for post-retirement returns?", "answer": "Yes — you can set a lower, conservative post-retirement return (e.g., 6–8%) to model how the corpus will be invested and sustain withdrawals." },
+      { "question": "Can I plan for early retirement (before 60) with this calculator?", "answer": "Yes — set your desired retirement age earlier and increase the investment horizon and SIP accordingly. Factor in longer post-retirement years and higher healthcare costs." },
+      { "question": "What is the simplest rule of thumb to estimate a target corpus?", "answer": "A common rule is 25× your current annual expenses (for a 4% real withdrawal), but use the calculator to refine this with inflation, returns, and existing savings." }
+    ],
+    "next_steps": {
+      "h2": "Download Your Plan & Take Action",
+      "cta1_title": "File your taxes",
+      "cta1_desc": "File your income tax returns easily using ClearTax.",
+      "cta2_title": "Explore more calculators",
+      "cta2_desc": "Find more tools to help with your financial planning."
+    },
+    "conclusion": {
+      "title": "Conclusion: Your Path to a Secure Retirement",
+      "body": "Retirement planning is a marathon, not a sprint. The key is to start early, invest consistently, and make informed decisions along the way. Use this calculator as your guide to stay on track and build the financial future you deserve."
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "body": "This calculator is an illustrative tool and should not be considered financial advice. Market returns are not guaranteed. Consult a qualified financial advisor before making any investment decisions."
+    },
+    "methodology": {
+      "h2": "Methodology",
+      "body": "The calculator uses standard time-value-of-money formulas. The required corpus is calculated as the present value of a growing annuity, and the SIP is calculated using the future value of a series formula. All calculations are for illustrative purposes."
     }
   },
   "mutual_fund_overlap_calculator": {
@@ -958,7 +1095,7 @@
     },
     "how_it_works": {
       "h2": "How Our Mutual Fund Overlap Calculator Works",
-      "body": "<p>To provide an accurate analysis, our tool uses the latest available portfolio data sourced from official AMFI records and fund house disclosures. You can compare two or more funds simultaneously to get a complete portfolio view. If you select 3 funds (A, B, C), the tool will generate three separate comparison cards: A vs. B, A vs. C, and B vs. C.</p><h3>Calculation Methodology</h3><p>We calculate overlap using the standard industry method:</p><p><strong>Weighted Overlap % (Recommended):</strong><br/><code>WeightedOverlap = ∑ min(wA_i, wB_i)</code><br/>This formula sums the minimum weight of each common stock 'i' across a pair of funds (Fund A and Fund B). It gives the most accurate picture of true portfolio concentration.</p><p>For a detailed breakdown, please see our <a href='#methodology'>Methodology</a> section.</p>"
+      "body": "<p>To provide an accurate analysis, our tool uses the latest available portfolio data sourced from official AMFI records and fund house disclosures. When you select 2 or more funds, the tool will generate a separate comparison card for every possible pair.</p><p>For example, if you select 3 funds (A, B, and C), you will see three analysis cards: A vs. B, A vs. C, and B vs. C.</p><h3>Calculation Methodology</h3><p>We calculate overlap using the standard industry method:</p><p><strong>Weighted Overlap % (Recommended):</strong><br/><code>WeightedOverlap = ∑ min(wA_i, wB_i)</code><br/>This formula sums the minimum weight of each common stock 'i' across a pair of funds (Fund A and Fund B). It gives the most accurate picture of true portfolio concentration.</p><p>For a detailed breakdown, please see our <a href='#methodology'>Methodology</a> section.</p>"
     },
     "live_example": {
         "h2": "Live Example — A Pairwise Comparison",
@@ -987,7 +1124,7 @@
     },
     "methodology": {
       "h2": "Methodology & Data Sources",
-      "body": "<h3>Calculation Formula</h3><p>This calculator uses portfolio data sourced from AMFI (Association of Mutual Funds in India) and is updated periodically. The overlap is calculated using a weighted overlap formula to give you an accurate view of portfolio concentration.</p><p>For funds A and B, with constituents {i} and weights wA_i, wB_i (as fractions of total portfolio):<br/><code>WeightedOverlap = Σ_i min(wA_i, wB_i)</code></p><h3>Worked Example</h3><p>To calculate the overlap between 'ICICI Pru Bluechip' (Fund A) and 'HDFC Top 100' (Fund B), we sum the minimum weight for each common stock. Here are the top 5:</p><table><thead><tr><th>Stock</th><th>Fund A (w%)</th><th>Fund B (w%)</th><th>Min(wA,wB)</th></tr></thead><tbody><tr><td>ICICI Bank</td><td>9.95</td><td>6.73</td><td>6.73</td></tr><tr><td>Reliance Industries</td><td>9.54</td><td>5.50</td><td>5.50</td></tr><tr><td>HDFC Bank</td><td>6.21</td><td>9.32</td><td>6.21</td></tr><tr><td>Infosys</td><td>5.14</td><td>4.07</td><td>4.07</td></tr><tr><td>Larsen & Toubro</td><td>4.43</td><td>3.31</td><td>3.31</td></tr><tr><td><em>... (and so on for all common stocks)</em></td><td></td><td></td><td></td></tr><tr><td><strong>Total Overlap</strong></td><td></td><td></td><td><strong>~45.3%</strong></td></tr></tbody></table><p>By summing the minimum weight for all common holdings, we arrive at the total weighted overlap.</p><h3>Edge Rules & Data Handling</h3><ul><li><strong>Matching:</strong> Stocks are matched primarily using their unique exchange ticker (e.g., 'RELIANCE'). If a ticker is unavailable, a normalized version of the company name is used as a fallback.</li><li><strong>Data Source:</strong> We use publicly available portfolio disclosures, typically updated monthly. For any discrepancies, please refer to the official fund factsheet from the respective Asset Management Company (AMC).</li><li><strong>Exclusions:</strong> Non-equity holdings such as cash, debt instruments, and other receivables (e.g., 'TREPS') are excluded from the calculation to ensure a true equity-to-equity comparison.</li><li><strong>Coverage:</strong> If a fund's disclosed holdings do not sum to at least 80% of its total assets, a 'partial coverage' warning is shown, as the calculated overlap may not be fully representative.</li></ul>"
+      "body": "<h3>Calculation Formula</h3><p>This calculator uses portfolio data sourced from AMFI (Association of Mutual Funds in India) and is updated periodically. The overlap is calculated using a weighted overlap formula to give you an accurate view of portfolio concentration.</p><p>For funds A and B, with constituents {i} and weights wA_i, wB_i (as fractions of total portfolio):<br/><code>WeightedOverlap = Σ_i min(wA_i, wB_i)</code></p><h3>Worked Example</h3><p>To calculate the overlap between 'ICICI Pru Bluechip' (Fund A) and 'HDFC Top 100' (Fund B), we sum the minimum weight for each common stock. Here are the top 5:</p><table><thead><tr><th>Stock</th><th>Fund A (w%)</th><th>Fund B (w%)</th><th>Min(wA,wB)</th></tr></thead><tbody><tr><td>ICICI Bank</td><td>9.95</td><td>6.73</td><td>6.73</td></tr><tr><td>Reliance Industries</td><td>9.54</td><td>5.50</td><td>5.50</td></tr><tr><td>HDFC Bank</td><td>6.21</td><td>9.32</td><td>6.21</td></tr><tr><td>Infosys</td><td>5.14</td><td>4.07</td><td>4.07</td></tr><tr><td>Larsen & Toubro</td><td>4.43</td><td>3.31</td><td>3.31</td></tr><tr><td><em>... (and so on for all common stocks)</em></td><td></td><td></td><td></td></tr><tr><td><strong>Total Overlap</strong></td><td></td><td></td><td><strong>~45.3%</strong></td></tr></tbody></table><p>By summing the minimum weight for all common holdings, we arrive at the total weighted overlap.</p><h3>Edge Rules & Data Handling</h3><ul><li><strong>Matching:</strong> Stocks are matched primarily using their unique exchange ticker (case-insensitive) if available. If a ticker is blank, a normalized version of the company name (lowercase, punctuation/suffixes removed) is used as a fallback.</li><li><strong>Data Source:</strong> We use publicly available portfolio disclosures, typically updated monthly. For any discrepancies, please refer to the official fund factsheet from the respective Asset Management Company (AMC).</li><li><strong>Exclusions:</strong> Non-equity holdings such as cash, debt instruments, and other receivables (e.g., 'TREPS') are excluded from the calculation to ensure a true equity-to-equity comparison. We use the regex <code>/\\b(cash|debt|receivable|payable|triparty|repo|net receivable|net payables|cash & equivalents)\\b/i</code> to filter these out.</li><li><strong>Coverage:</strong> If a fund's disclosed holdings do not sum to at least 80% of its total assets, a 'partial coverage' warning is shown, as the calculated overlap may not be fully representative.</li></ul>"
     },
     "faq": {
       "h2": "Frequently Asked Questions",
