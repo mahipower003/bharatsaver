@@ -30,10 +30,11 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
         setAllFunds(data);
         if (data.length >= 2) {
           setSelectedFunds([data[0], data[1]]);
+        } else {
+          setIsLoading(false); // Not enough data to perform a default calculation
         }
       } catch (error) {
         console.error("Error fetching fund data:", error);
-      } finally {
         setIsLoading(false);
       }
     }
@@ -41,19 +42,21 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
   }, []);
 
   useEffect(() => {
+    if (selectedFunds.length < 2) {
+      setOverlapResult(null);
+      if(allFunds.length > 0) setIsLoading(false);
+      return;
+    }
+    
+    setIsLoading(true);
     const calculateOverlap = async () => {
-      if (selectedFunds.length < 2) {
-        setOverlapResult(null);
-        return;
-      }
-      setIsLoading(true);
       await new Promise(resolve => setTimeout(resolve, 50)); 
       const result = calculateAllOverlaps(selectedFunds);
       setOverlapResult(result);
       setIsLoading(false);
     };
     calculateOverlap();
-  }, [selectedFunds]);
+  }, [selectedFunds, allFunds]);
 
   const exportCSV = () => {
     if (!overlapResult || !overlapResult.pairs.length) return;
@@ -273,3 +276,5 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: RawFund[
     </>
   );
 }
+
+    
