@@ -158,7 +158,8 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
   const addFund = () => {
     if (funds.length >= 5) return;
     const id = (funds[funds.length - 1]?.id || 0) + 1;
-    setFunds((p) => [...p, { id, name: `Select Fund ${id}`, holdings: [], schemeCode: '' }]);
+    const nextFund = allFunds.find(f => !funds.some(selected => selected.schemeCode === f.schemeCode)) || allFunds[funds.length];
+    setFunds((p) => [...p, { id, name: nextFund?.schemeName || `Select Fund ${id}`, holdings: nextFund?.holdings || [], schemeCode: nextFund?.schemeCode || '' }]);
   };
 
   const removeFund = (id: number) => {
@@ -204,7 +205,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
               </Button>
             </CardHeader>
             <CardContent className="p-4 text-sm text-muted-foreground">
-              {fund.holdings.length > 0 ? `Holdings available for analysis.` : 'Please select a fund to see details.'}
+              {fund.holdings.length > 0 ? `${fund.holdings.length} holdings loaded for analysis.` : 'Please select a fund to see details.'}
             </CardContent>
           </Card>
         ))}
