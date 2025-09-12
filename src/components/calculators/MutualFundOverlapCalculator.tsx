@@ -12,51 +12,41 @@ import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, Command
 import { cn } from '@/lib/utils';
 import { type OverlapOutput, calculateAllOverlaps, type RawFund } from '@/lib/overlap-calculator';
 
-export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictionary['mutual_fund_overlap_calculator'] }) {
-  const [allFunds, setAllFunds] = useState<RawFund[]>([]);
+type MutualFundOverlapCalculatorProps = {
+  dictionary: Dictionary['mutual_fund_overlap_calculator'];
+  allFundsData: RawFund[];
+}
+
+export function MutualFundOverlapCalculator({ dictionary, allFundsData }: MutualFundOverlapCalculatorProps) {
+  const [allFunds, setAllFunds] = useState<RawFund[]>(allFundsData);
   const [selectedFunds, setSelectedFunds] = useState<RawFund[]>([]);
   const [overlapResult, setOverlapResult] = useState<OverlapOutput | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    async function fetchData() {
-      setIsLoading(true);
-      try {
-        const response = await fetch('/jsonfile/tickertape_top_holdings.json');
-        if (!response.ok) {
-          throw new Error('Failed to fetch fund data');
-        }
-        const data: RawFund[] = await response.json();
-        setAllFunds(data);
-        if (data.length >= 2) {
-          setSelectedFunds([data[0], data[1]]);
-        } else {
-          setIsLoading(false);
-        }
-      } catch (error) {
-        console.error("Error fetching fund data:", error);
-        setIsLoading(false);
-      }
+    if (allFunds.length > 0) {
+      // Set default funds for initial comparison
+      setSelectedFunds(allFunds.slice(0, 2));
     }
-    fetchData();
-  }, []);
-
+  }, [allFunds]);
+  
   useEffect(() => {
     if (selectedFunds.length < 2) {
       setOverlapResult(null);
-      if(allFunds.length > 0) setIsLoading(false);
+      setIsLoading(false);
       return;
     }
     
     setIsLoading(true);
     const calculateOverlap = async () => {
+      // Simulate a short delay to allow UI to update
       await new Promise(resolve => setTimeout(resolve, 50)); 
       const result = calculateAllOverlaps(selectedFunds);
       setOverlapResult(result);
       setIsLoading(false);
     };
     calculateOverlap();
-  }, [selectedFunds, allFunds]);
+  }, [selectedFunds]);
 
   const exportCSV = () => {
     if (!overlapResult || !overlapResult.pairs.length) return;
