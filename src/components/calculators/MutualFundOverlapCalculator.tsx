@@ -36,35 +36,34 @@ const calculateOverlap = (funds: Fund[]): OverlapResult | null => {
         return null;
     }
 
-    const stockMap: Map<string, number[]> = new Map();
+    const stockMap: Map<string, { weights: number[], sector: string }> = new Map();
     const fundCount = funds.length;
+    const fundSchemeCodes = funds.map(f => f.schemeCode);
 
     funds.forEach((fund, fundIndex) => {
         fund.holdings.forEach(holding => {
             if (!stockMap.has(holding.name)) {
-                stockMap.set(holding.name, Array(fundCount).fill(0));
+                stockMap.set(holding.name, { weights: Array(fundCount).fill(0), sector: holding.sector });
             }
-            stockMap.get(holding.name)![fundIndex] = holding.weight;
+            stockMap.get(holding.name)!.weights[fundIndex] = holding.weight;
         });
     });
 
     const commonStocks: (Holding & { minWeight: number; perFund: number[] })[] = [];
     let totalWeightedOverlap = 0;
 
-    stockMap.forEach((weights, stockName) => {
-        const fundsWithStock = weights.filter(w => w > 0);
+    stockMap.forEach((data, stockName) => {
+        const fundsWithStock = data.weights.filter(w => w > 0);
         if (fundsWithStock.length > 1) { 
             const minWeight = Math.min(...fundsWithStock);
             totalWeightedOverlap += minWeight;
             
-            const firstHolding = funds.flatMap(f => f.holdings).find(h => h.name === stockName);
-
             commonStocks.push({
                 name: stockName,
                 weight: 0, 
-                sector: firstHolding?.sector || 'Unknown',
+                sector: data.sector,
                 minWeight,
-                perFund: weights,
+                perFund: data.weights,
             });
         }
     });
@@ -91,7 +90,7 @@ const getDefaultFunds = (): Fund[] => {
 
 export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictionary['mutual_fund_overlap_calculator'] }) {
     const [funds, setFunds] = useState<Fund[]>(getDefaultFunds);
-    const [overlapResult, setOverlapResult] = useState<OverlapResult | null>(() => calculateOverlap(funds));
+    const [overlapResult, setOverlapResult] = useState<OverlapResult | null>(() => calculateOverlap(getDefaultFunds()));
     
     useEffect(() => {
         const result = calculateOverlap(funds);
@@ -303,5 +302,6 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: FundPort
     </>
   );
 }
+    
 
     
