@@ -298,32 +298,30 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: FundPort
         <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
       </Button>
       <CommandDialog open={open} onOpenChange={setOpen}>
-        <Command>
-          <CommandInput placeholder="Search for a fund..." />
-          <CommandList>
-            <CommandEmpty>No fund found.</CommandEmpty>
-            <CommandGroup>
-              {allFunds.map((fund) => (
-                <CommandItem
-                  key={fund.schemeCode}
-                  value={fund.schemeName}
-                  onSelect={() => {
-                    onSelect(fund.schemeCode);
-                    setOpen(false);
-                  }}
-                >
-                  <Check
-                    className={cn(
-                      "mr-2 h-4 w-4",
-                      selectedFund.schemeCode === fund.schemeCode ? "opacity-100" : "opacity-0"
-                    )}
-                  />
-                  {fund.schemeName}
-                </CommandItem>
-              ))}
-            </CommandGroup>
-          </CommandList>
-        </Command>
+        <CommandInput placeholder="Search for a fund..." />
+        <CommandList>
+          <CommandEmpty>No fund found.</CommandEmpty>
+          <CommandGroup>
+            {allFunds.map((fund) => (
+              <CommandItem
+                key={fund.schemeCode}
+                value={fund.schemeName}
+                onSelect={() => {
+                  onSelect(fund.schemeCode);
+                  setOpen(false);
+                }}
+              >
+                <Check
+                  className={cn(
+                    "mr-2 h-4 w-4",
+                    selectedFund.schemeCode === fund.schemeCode ? "opacity-100" : "opacity-0"
+                  )}
+                />
+                {fund.schemeName}
+              </CommandItem>
+            ))}
+          </CommandGroup>
+        </CommandList>
       </CommandDialog>
     </>
   );
