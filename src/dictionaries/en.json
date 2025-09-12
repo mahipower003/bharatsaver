@@ -291,7 +291,7 @@
       "snapshot_title": "Your Growth Over Time (Snapshot):",
       "timing_note": "<strong>A quick note on timing:</strong> The calculator assumes your deposits are made at the start of each year. Because SSY interest is compounded annually, making a lump-sum deposit at the beginning of the financial year (before April 5th) will give you the best possible returns. If you prefer to deposit monthly, our tool uses an approximation to estimate your final returns.",
       "monthly_deposit_example_title": "What if You Deposit Monthly?",
-      "monthly_deposit_example_body": "If you deposit ₹12,500 every month, our calculator first estimates the future value after the 15-year deposit period (around ₹50.21 lakh) and then compounds that amount annually for the remaining 6 years. This results in a final maturity value of approximately <strong>₹71.6–71.8 lakh</strong>, which is very close to the outcome of a lump-sum investment.",
+      "monthly_deposit_example_body": "If you deposit ₹12,500 monthly, the calculator approximates the future value after the 15-year deposit period (around ₹50.21 lakh) and then compounds that amount annually for the remaining 6 years. This results in a final maturity value of approximately <strong>₹71.6–71.8 lakh</strong>, which is very close to the outcome of a lump-sum investment.",
       "table": {
         "headers": ["Year", "Balance (end of year)"],
         "rows": [
@@ -972,7 +972,7 @@
       "body": "This calculator uses standard financial formulas and default assumptions based on long-term Indian market data. You can adjust these inputs to match your expectations.<ul><li><strong>Inflation:</strong> 6% p.a.</li><li><strong>Pre-Retirement Returns:</strong> 12% p.a.</li><li><strong>Post-Retirement Returns:</strong> 7% p.a.</li><li><strong>Deposits:</strong> Monthly, made at the <strong>start</strong> of each month (annuity-due).</li><li><strong>Life Expectancy:</strong> 85 years.</li></ul>"
     }
   },
-  "loan_optimization_calculator": {
+  "loan_optimizer_calculator": {
     "h1": "Loan Optimization Calculator — Optimize EMI, Prepayment & Refinance (India, 2025)",
     "summary": "This guide + interactive calculator helps you answer: How can I minimize total interest, reduce my EMI or tenure, and make the best choice between prepaying, refinancing, or investing my surplus? Read the guide, run the calculator, download your amortization plan, and decide with confidence.",
     "title": "Loan Optimizer",
@@ -1165,7 +1165,7 @@
       "title": "Check Your Fund Overlap",
       "description": "Paste fund holdings below to see the overlap analysis.",
       "placeholder": "e.g., RELIANCE, Reliance Industries Ltd, 8.2, Energy",
-      "format_hint": "Format: SYMBOL, Name, weight(%), sector — one line per holding.",
+      "format_hint": "Format: SYMBOL, Name, weight(in %), sector — one line per holding.",
       "add_fund": "Add Fund",
       "include_sectors": "Include Sector Summary",
       "holdings_as_of": "Holdings as of",
@@ -1240,3 +1240,5 @@
     }
   }
 }
+
+    

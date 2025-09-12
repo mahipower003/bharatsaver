@@ -1,3 +1,4 @@
+
 'use client';
 
 import React, { useState, useMemo } from 'react';
@@ -34,6 +35,7 @@ type Fund = {
  * @returns An array of Holding objects.
  */
 const parseHoldings = (text: string): Holding[] => {
+  if (!text) return [];
   const lines = text.split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
   const holdings: Holding[] = [];
 
@@ -42,11 +44,13 @@ const parseHoldings = (text: string): Holding[] => {
     const parts = line.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/).map(p => p.trim().replace(/^"|"$/g, ''));
     if (parts.length < 3) continue;
 
-    const weightStr = parts[parts.length - 2];
     const sector = parts[parts.length - 1] || "Unknown";
+    const weightStr = parts[parts.length - 2];
     const symbol = parts[0];
     const name = parts.slice(1, -2).join(", ");
-    const weight = parseFloat(weightStr.replace(/%/g, '')) || 0;
+    
+    // Check if weight is a valid number
+    const weight = parseFloat(weightStr?.replace(/%/g, ''));
 
     if (symbol && !isNaN(weight)) {
         holdings.push({ symbol: symbol.toUpperCase(), name, weight, sector });
@@ -71,14 +75,22 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
       name: "HDFC Top 100 (example)",
       sourceDate: "01-Sep-2025",
       holdingsText:
-        "RELIANCE, Reliance Industries Ltd, 8.2%, Energy\nHDFCBANK, HDFC Bank Ltd, 6.3%, Financials\nICICIBANK, ICICI Bank Ltd, 4.9%, Financials\nTCS, Tata Consultancy Services, 5.0%, Technology\nINFY, Infosys Ltd, 4.5%, Technology",
+        "RELIANCE,Reliance Industries Ltd,8.2,Energy\n" +
+        "HDFCBANK,HDFC Bank Ltd,6.3,Financials\n" +
+        "ICICIBANK,ICICI Bank Ltd,4.9,Financials\n" +
+        "TCS,Tata Consultancy Services,5.0,Technology\n" +
+        "INFY,Infosys Ltd,4.5,Technology",
     },
     {
       id: 2,
       name: "SBI Bluechip (example)",
       sourceDate: "01-Sep-2025",
       holdingsText:
-        "RELIANCE, Reliance Industries Ltd, 7.5%, Energy\nHDFCBANK, HDFC Bank Ltd, 5.8%, Financials\nICICIBANK, ICICI Bank Ltd, 4.4%, Financials\nINFY, Infosys Ltd, 3.9%, Technology\nTITAN, Titan Company Ltd, 2.5%, Consumer",
+        "RELIANCE,Reliance Industries Ltd,7.5,Energy\n" +
+        "HDFCBANK,HDFC Bank Ltd,5.8,Financials\n" +
+        "ICICIBANK,ICICI Bank Ltd,4.4,Financials\n" +
+        "INFY,Infosys Ltd,3.9,Technology\n" +
+        "TITAN,Titan Company Ltd,2.5,Consumer",
     },
   ]);
 
@@ -323,3 +335,5 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
     </div>
   );
 }
+
+    
