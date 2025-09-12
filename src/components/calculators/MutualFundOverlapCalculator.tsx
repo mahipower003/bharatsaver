@@ -3,40 +3,60 @@
 
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Download, Copy, PlusCircle, Trash2, BarChart2, Check, ChevronsUpDown, AlertTriangle, Info, Loader2 } from 'lucide-react';
 import type { Dictionary } from '@/types';
-import { funds as allFunds, RawFund } from '@/data/mutual-fund-holdings';
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList, CommandDialog } from '@/components/ui/command';
 import { cn } from '@/lib/utils';
-import { DialogTitle } from '@radix-ui/react-dialog';
-import { type OverlapOutput, calculateAllOverlaps } from '@/lib/overlap-calculator';
+import { type OverlapOutput, calculateAllOverlaps, type RawFund } from '@/lib/overlap-calculator';
 
 export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictionary['mutual_fund_overlap_calculator'] }) {
-  const [selectedFunds, setSelectedFunds] = useState<RawFund[]>(() => {
-    if (!allFunds || allFunds.length < 2) return [];
-    return [allFunds[0], allFunds[1]];
-  });
+  const [allFunds, setAllFunds] = useState<RawFund[]>([]);
+  const [selectedFunds, setSelectedFunds] = useState<RawFund[]>([]);
   const [overlapResult, setOverlapResult] = useState<OverlapOutput | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await fetch('/data/mutual-fund-holdings.json');
+        if (!response.ok) {
+          throw new Error('Failed to fetch fund data');
+        }
+        const data: RawFund[] = await response.json();
+        setAllFunds(data);
+        if (data.length >= 2) {
+          setSelectedFunds([data[0], data[1]]);
+        } else {
+          setIsLoading(false);
+        }
+      } catch (error) {
+        console.error("Error fetching fund data:", error);
+        setIsLoading(false);
+      }
+    }
+    fetchData();
+  }, []);
 
   useEffect(() => {
     const calculateOverlap = async () => {
       if (selectedFunds.length >= 2) {
         setIsLoading(true);
-        // Simulate async calculation if needed
         await new Promise(resolve => setTimeout(resolve, 100)); 
         const result = calculateAllOverlaps(selectedFunds);
         setOverlapResult(result);
         setIsLoading(false);
       } else {
         setOverlapResult(null);
+        if (allFunds.length > 0) {
+          setIsLoading(false);
+        }
       }
     };
     calculateOverlap();
-  }, [selectedFunds]);
+  }, [selectedFunds, allFunds]);
 
   const exportCSV = () => {
     if (!overlapResult || !overlapResult.pairs.length) return;
@@ -60,7 +80,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
     if (!overlapResult || !overlapResult.pairs.length) return;
     const firstPair = overlapResult.pairs[0];
     let text = `Mutual Fund Overlap Summary: ${firstPair.fund_a} vs ${firstPair.fund_b}\n`;
-    text += `Weighted Overlap: ${firstPair.weighted_overlap}%\n\n`;
+    text += `Weighted Overlap: ${firstPair.weighted_overlap.toFixed(2)}%\n\n`;
     text += `Top 5 Overlapping Stocks:\n`;
     firstPair.common_holdings.slice(0, 5).forEach(s => {
       text += `- ${s.company}: ${s.min_weight.toFixed(2)}%\n`;
@@ -74,7 +94,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
   };
 
   const addFund = () => {
-    if (selectedFunds.length >= 5) return;
+    if (selectedFunds.length >= 5 || allFunds.length === 0) return;
     const selectedNames = new Set(selectedFunds.map(f => f.fund_name));
     const nextFundToAdd = allFunds.find(f => !selectedNames.has(f.fund_name));
     if (nextFundToAdd) {
@@ -113,8 +133,8 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {selectedFunds.map((fund) => (
-          <Card key={fund.fund_name} className="overflow-hidden">
+        {selectedFunds.map((fund, index) => (
+          <Card key={`${fund.fund_name}-${index}`} className="overflow-hidden">
             <CardHeader className="flex flex-row items-center justify-between bg-muted/50 p-4">
                <FundSelector
                 allFunds={allFunds}
@@ -130,7 +150,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
               {overlapResult?.per_fund[fund.fund_name] && (
                   <div className="flex items-center text-xs mt-2">
                     <Info className="h-3 w-3 mr-1.5" />
-                    Coverage: {overlapResult.per_fund[fund.fund_name].coverage_pct}%
+                    Coverage: {overlapResult.per_fund[fund.fund_name].coverage_pct.toFixed(2)}%
                   </div>
               )}
             </CardContent>
@@ -139,7 +159,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
       </div>
 
       <div className="flex flex-wrap items-center justify-start gap-4">
-        <Button variant="outline" onClick={addFund} disabled={selectedFunds.length >= 5}>
+        <Button variant="outline" onClick={addFund} disabled={selectedFunds.length >= 5 || isLoading}>
           <PlusCircle className="mr-2 h-4 w-4" /> {dictionary.tool.add_fund}
         </Button>
       </div>
@@ -161,7 +181,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
                 <AlertTitle className="text-base font-semibold mb-1">{dictionary.results.weighted_overlap_title}</AlertTitle>
                 <AlertDescription className="text-3xl font-bold">
                     <span className={getOverlapLevel(firstPairResult.weighted_overlap).color}>
-                        {firstPairResult.weighted_overlap}% ({getOverlapLevel(firstPairResult.weighted_overlap).label})
+                        {firstPairResult.weighted_overlap.toFixed(2)}% ({getOverlapLevel(firstPairResult.weighted_overlap).label})
                     </span>
                 </AlertDescription>
             </Alert>
@@ -185,7 +205,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
                                     <TableCell className="font-medium">{stock.company}</TableCell>
                                     <TableCell className="text-right">{stock.weight_a > 0 ? `${stock.weight_a.toFixed(2)}%` : '-'}</TableCell>
                                     <TableCell className="text-right">{stock.weight_b > 0 ? `${stock.weight_b.toFixed(2)}%` : '-'}</TableCell>
-                                    <TableCell className="text-right font-bold">{stock.min_weight.toFixed(4)}%</TableCell>
+                                    <TableCell className="text-right font-bold">{stock.min_weight.toFixed(2)}%</TableCell>
                                 </TableRow>
                             ))}
                         </TableBody>
@@ -226,7 +246,6 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: RawFund[
         <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
       </Button>
       <CommandDialog open={open} onOpenChange={setOpen}>
-        <DialogTitle className="sr-only">Select a fund to compare</DialogTitle>
         <Command>
           <CommandInput placeholder="Search for a fund..." />
           <CommandList>
@@ -236,9 +255,9 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: RawFund[
                 <CommandItem
                   key={fund.fund_name}
                   value={fund.fund_name}
-                  onSelect={() => {
-                    onSelect(fund.fund_name);
-                    setOpen(false);
+                  onSelect={(currentValue) => {
+                    onSelect(currentValue === selectedFund.fund_name ? "" : currentValue)
+                    setOpen(false)
                   }}
                 >
                   <Check

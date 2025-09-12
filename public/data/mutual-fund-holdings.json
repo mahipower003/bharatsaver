@@ -1,0 +1,73 @@
+
+[
+  {
+    "source": "https://www.amfiindia.com/",
+    "fetched_at_unix": 1757656477,
+    "fund_name": "Parag Parikh Flexi Cap Fund",
+    "coverage_pct": 98.5,
+    "constituents_count": 40,
+    "constituents": [
+      { "company": "HDFC Bank Ltd", "ticker": "HDFCBANK", "weight_pct": 8.5 },
+      { "company": "Bajaj Holdings & Investment Ltd", "ticker": "BAJAJHLDNG", "weight_pct": 7.5 },
+      { "company": "ITC Ltd", "ticker": "ITC", "weight_pct": 6.5 },
+      { "company": "Axis Bank Ltd", "ticker": "AXISBANK", "weight_pct": 5.5 },
+      { "company": "ICICI Bank Ltd", "ticker": "ICICIBANK", "weight_pct": 4.5 }
+    ]
+  },
+  {
+    "source": "https://www.amfiindia.com/",
+    "fetched_at_unix": 1757656477,
+    "fund_name": "Quant Small Cap Fund",
+    "coverage_pct": 99.2,
+    "constituents_count": 70,
+    "constituents": [
+      { "company": "Reliance Industries Ltd", "ticker": "RELIANCE", "weight_pct": 9.8 },
+      { "company": "Jio Financial Services Ltd", "ticker": "JIOFIN", "weight_pct": 7.2 },
+      { "company": "Hindustan Copper Ltd", "ticker": "HINDCOPPER", "weight_pct": 4.1 },
+      { "company": "HDFC Bank Ltd", "ticker": "HDFCBANK", "weight_pct": 3.5 },
+      { "company": "Aurobindo Pharma Ltd", "ticker": "AUROPHARMA", "weight_pct": 2.5 }
+    ]
+  },
+  {
+    "source": "https://www.amfiindia.com/",
+    "fetched_at_unix": 1757656477,
+    "fund_name": "SBI Contra Fund",
+    "coverage_pct": 97.8,
+    "constituents_count": 65,
+    "constituents": [
+      { "company": "HDFC Bank Ltd", "ticker": "HDFCBANK", "weight_pct": 4.2 },
+      { "company": "GAIL (India) Ltd", "ticker": "GAIL", "weight_pct": 3.8 },
+      { "company": "ICICI Bank Ltd", "ticker": "ICICIBANK", "weight_pct": 3.5 },
+      { "company": "State Bank of India", "ticker": "SBIN", "weight_pct": 3.1 },
+      { "company": "Reliance Industries Ltd", "ticker": "RELIANCE", "weight_pct": 2.9 }
+    ]
+  },
+  {
+    "source": "https://www.amfiindia.com/",
+    "fetched_at_unix": 1757656477,
+    "fund_name": "HDFC Mid-Cap Opportunities Fund",
+    "coverage_pct": 99.5,
+    "constituents_count": 80,
+    "constituents": [
+      { "company": "Indian Hotels Co Ltd", "ticker": "INDHOTEL", "weight_pct": 2.5 },
+      { "company": "Tata Communications Ltd", "ticker": "TATACOMM", "weight_pct": 2.2 },
+      { "company": "Max Financial Services Ltd", "ticker": "MFSL", "weight_pct": 2.1 },
+      { "company": "HDFC Bank Ltd", "ticker": "HDFCBANK", "weight_pct": 1.9 },
+      { "company": "Bharat Forge Ltd", "ticker": "BHARATFORG", "weight_pct": 1.8 }
+    ]
+  },
+  {
+    "source": "https://www.amfiindia.com/",
+    "fetched_at_unix": 1757656477,
+    "fund_name": "ICICI Prudential Bluechip Fund",
+    "coverage_pct": 99.8,
+    "constituents_count": 55,
+    "constituents": [
+      { "company": "ICICI Bank Ltd", "ticker": "ICICIBANK", "weight_pct": 9.5 },
+      { "company": "Reliance Industries Ltd", "ticker": "RELIANCE", "weight_pct": 9.2 },
+      { "company": "HDFC Bank Ltd", "ticker": "HDFCBANK", "weight_pct": 8.8 },
+      { "company": "Infosys Ltd", "ticker": "INFY", "weight_pct": 5.1 },
+      { "company": "Larsen & Toubro Ltd", "ticker": "LT", "weight_pct": 4.5 }
+    ]
+  }
+]
