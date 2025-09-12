@@ -10,6 +10,7 @@ import { Download, Copy, PlusCircle, Trash2, BarChart2, Check, ChevronsUpDown } 
 import type { Dictionary } from '@/types';
 import { funds as allFunds, type FundPortfolio } from '@/data/mutual-fund-holdings';
 import { Command, CommandDialog, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from '@/components/ui/command';
+import { DialogTitle } from '@/components/ui/dialog';
 import { cn } from '@/lib/utils';
 
 type Fund = {
@@ -277,5 +278,3 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: FundPort
     </>
   );
 }
-
-    
