@@ -80,22 +80,19 @@ const calculateOverlap = (funds: Fund[]): OverlapResult | null => {
 
 
 export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictionary['mutual_fund_overlap_calculator'] }) {
-    const [funds, setFunds] = useState<Fund[]>([]);
-    const [overlapResult, setOverlapResult] = useState<OverlapResult | null>(null);
-    
-    useEffect(() => {
-        // Initialize with first two funds
+    const [funds, setFunds] = useState<Fund[]>(() => {
         const initialFunds = allFunds.slice(0, 2);
-        setFunds(initialFunds.map((f, i) => ({
+        return initialFunds.map((f, i) => ({
           id: i + 1,
           name: f.schemeName,
           holdings: f.holdings,
           schemeCode: f.schemeCode,
-        })));
-    }, []);
-
+        }));
+    });
+    const [overlapResult, setOverlapResult] = useState<OverlapResult | null>(null);
+    
     useEffect(() => {
-        if (funds.length > 1) {
+        if (funds.length >= 2) {
             setOverlapResult(calculateOverlap(funds));
         } else {
             setOverlapResult(null);
