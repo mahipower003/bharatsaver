@@ -21,20 +21,65 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   const pageUrl = `${siteUrl}/${params.lang}/mutual-fund-overlap-calculator`;
   const ogImageUrl = `${siteUrl}/images/mutual-fund-overlap-og.png`;
   
+  const title = "Mutual Fund Overlap Calculator India 2025 — Check Stock Overlap & Reduce Concentration";
+  const description = "Free Mutual Fund Overlap Calculator (India). Paste or add fund holdings to find common stocks, sector overlap, and actionable steps to improve diversification.";
+
+  return {
+    title: title,
+    description: description,
+    alternates: {
+      canonical: pageUrl,
+      languages: i18nConfig.locales.reduce((acc, locale) => {
+        acc[locale] = `${siteUrl}/${locale}/mutual-fund-overlap-calculator`;
+        return acc;
+      }, {} as Record<string, string>),
+    },
+    openGraph: {
+      title: title,
+      description: description,
+      url: pageUrl,
+      images: [{ url: ogImageUrl, width: 1200, height: 630, alt: 'Mutual Fund Overlap Calculator Report' }],
+      locale: 'en_IN',
+      type: 'website'
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: title,
+      description: description,
+      images: [ogImageUrl]
+    },
+  };
+}
+
+export default async function MutualFundOverlapCalculatorPage({ params }: { params: { lang: Locale }}) {
+  const dictionary = await getDictionary(params.lang, ['mutual_fund_overlap_calculator', 'author_card']);
+  const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
+  const pageUrl = `${siteUrl}/${params.lang}/mutual-fund-overlap-calculator`;
+  const ogImageUrl = `${siteUrl}/images/mutual-fund-overlap-og.png`;
+
   if (params.lang !== 'en') {
-    return {
-      title: dictionary.mutual_fund_overlap_calculator.meta_title,
-      description: dictionary.mutual_fund_overlap_calculator.meta_description,
-       alternates: {
-        canonical: pageUrl,
-        languages: i18nConfig.locales.reduce((acc, locale) => {
-            acc[locale] = `${siteUrl}/${locale}/mutual-fund-overlap-calculator`;
-            return acc;
-        }, {} as Record<string, string>),
-       },
-    };
+    return (
+        <div className="py-12">
+        <div className="mx-auto max-w-5xl text-center">
+            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
+            {dictionary.mutual_fund_overlap_calculator.h1}
+            </h1>
+            <p className="mt-8 text-2xl text-muted-foreground">Coming Soon</p>
+        </div>
+        </div>
+    );
   }
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${params.lang}` },
+      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${params.lang}/calculators` },
+      { '@type': 'ListItem', position: 3, name: 'Mutual Fund Overlap Calculator', item: pageUrl },
+    ],
+  };
+  
   const softwareSchema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
@@ -42,7 +87,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     "url": pageUrl,
     "applicationCategory": "FinanceApplication",
     "operatingSystem": "Web",
-    "description": "Compare mutual fund holdings to find overlap between funds. Shows common stocks, sector overlap and exportable CSV. India-focused.",
+    "description": "Compare holdings across mutual funds in India and compute weighted overlap.",
     "author": {
       "@type": "Person",
       "name": "Mahesh Chaube",
@@ -79,68 +124,13 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
             }
         }))
     };
+    
+  const allSchemas = [breadcrumbSchema, softwareSchema, articleSchema, faqSchema];
 
-  return {
-    title: "Mutual Fund Overlap Calculator India 2025 — Check Stock Overlap & Reduce Concentration",
-    description: "Free Mutual Fund Overlap Calculator (India). Paste or add fund holdings to find common stocks, sector overlap, and actionable steps to improve diversification.",
-    alternates: {
-      canonical: pageUrl,
-      languages: i18nConfig.locales.reduce((acc, locale) => {
-        acc[locale] = `${siteUrl}/${locale}/mutual-fund-overlap-calculator`;
-        return acc;
-      }, {} as Record<string, string>),
-    },
-    openGraph: {
-      title: "Mutual Fund Overlap Calculator India 2025 — Check Stock Overlap & Reduce Concentration",
-      description: "Free Mutual Fund Overlap Calculator (India). Paste or add fund holdings to find common stocks, sector overlap, and actionable steps to improve diversification.",
-      url: pageUrl,
-      images: [{ url: ogImageUrl, width: 1200, height: 630, alt: 'Mutual Fund Overlap Calculator Report' }],
-      locale: 'en_IN',
-      type: 'website'
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: "Mutual Fund Overlap Calculator India 2025 — Check Stock Overlap & Reduce Concentration",
-      description: "Free Mutual Fund Overlap Calculator (India). Paste or add fund holdings to find common stocks, sector overlap, and actionable steps to improve diversification.",
-      images: [ogImageUrl]
-    },
-    other: {
-      'application/ld+json': JSON.stringify([softwareSchema, articleSchema, faqSchema]),
-    },
-  };
-}
-
-export default async function MutualFundOverlapCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang, ['mutual_fund_overlap_calculator', 'author_card']);
-  const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/${params.lang}/mutual-fund-overlap-calculator`;
-
-  if (params.lang !== 'en') {
-    return (
-        <div className="py-12">
-        <div className="mx-auto max-w-5xl text-center">
-            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
-            {dictionary.mutual_fund_overlap_calculator.h1}
-            </h1>
-            <p className="mt-8 text-2xl text-muted-foreground">Coming Soon</p>
-        </div>
-        </div>
-    );
-  }
-
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${params.lang}` },
-      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${params.lang}/calculators` },
-      { '@type': 'ListItem', position: 3, name: 'Mutual Fund Overlap Calculator', item: pageUrl },
-    ],
-  };
 
   return (
     <div className="py-12">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(allSchemas) }} />
       <div className="mx-auto max-w-5xl">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
@@ -170,12 +160,12 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
             <CardHeader><CardTitle className="flex items-center gap-3"><HelpCircle className="h-6 w-6 text-primary"/>{dictionary.mutual_fund_overlap_calculator.what_is_overlap.h2}</CardTitle></CardHeader>
             <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.mutual_fund_overlap_calculator.what_is_overlap.body }}/>
           </Card>
-
+          
           <Card>
             <CardHeader><CardTitle className="flex items-center gap-3"><FileText className="h-6 w-6 text-primary"/>{dictionary.mutual_fund_overlap_calculator.how_it_works.h2}</CardTitle></CardHeader>
             <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.mutual_fund_overlap_calculator.how_it_works.body }}/>
           </Card>
-
+          
           <Card>
             <CardHeader><CardTitle className="flex items-center gap-3"><TrendingUp className="h-6 w-6 text-primary"/>{dictionary.mutual_fund_overlap_calculator.live_example.h2}</CardTitle></CardHeader>
             <CardContent className="space-y-4">
@@ -205,12 +195,12 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
               </Alert>
             </CardContent>
           </Card>
-
+          
           <Card>
             <CardHeader><CardTitle className="flex items-center gap-3"><BadgeCheck className="h-6 w-6 text-primary"/>{dictionary.mutual_fund_overlap_calculator.interpreting_results.h2}</CardTitle></CardHeader>
             <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.mutual_fund_overlap_calculator.interpreting_results.body }}/>
           </Card>
-
+          
           <Card>
             <CardHeader><CardTitle className="flex items-center gap-3"><TrendingUp className="h-6 w-6 text-primary"/>{dictionary.mutual_fund_overlap_calculator.what_to_do.h2}</CardTitle></CardHeader>
             <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.mutual_fund_overlap_calculator.what_to_do.body }}/>
