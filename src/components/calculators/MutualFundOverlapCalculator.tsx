@@ -1,4 +1,5 @@
 
+
 'use client';
 
 import React, { useState, useEffect, useMemo } from 'react';
@@ -171,8 +172,10 @@ export function MutualFundOverlapCalculator({ dictionary, allFundsData }: Mutual
                 {pair.status === 'partial_coverage' && (
                     <Alert variant="destructive">
                         <AlertTriangle className="h-4 w-4" />
-                        <AlertTitle>Partial Coverage Warning</AlertTitle>
-                        <AlertDescription>{pair.status_note}</AlertDescription>
+                        <AlertTitle>Partial Data Coverage</AlertTitle>
+                        <AlertDescription>
+                          One or both funds have data coverage below 80% (Fund A: {pair.coverage_a.toFixed(2)}%, Fund B: {pair.coverage_b.toFixed(2)}%). The calculated overlap may be an underestimation.
+                        </AlertDescription>
                     </Alert>
                 )}
 

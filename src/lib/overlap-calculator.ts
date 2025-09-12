@@ -1,4 +1,5 @@
 
+
 /**
  * Mutual Fund Overlap Calculation Utility
  *
@@ -80,7 +81,7 @@ export interface OverlapOutput {
 // 2. Normalization and Parsing Functions
 // =========================================
 
-const NON_STOCK_REGEX = /cash|debt|receivables|triparty|net receivables|portfolio total/i;
+const NON_STOCK_REGEX = /\b(cash|debt|receivable|payable|triparty|repo|net receivable|net payables|cash & equivalents)\b/i;
 const SUFFIX_REGEX = /\s+(ltd\.?|limited|pvt\.?|pvt\. ltd\.?|inc\.?)$/i;
 
 /**
@@ -257,3 +258,4 @@ export function calculateAllOverlaps(rawFunds: RawFund[]): OverlapOutput {
     per_fund,
   };
 }
+
