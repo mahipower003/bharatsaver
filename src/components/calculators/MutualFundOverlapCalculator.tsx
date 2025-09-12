@@ -10,7 +10,7 @@ import { Download, Copy, PlusCircle, Trash2, BarChart2, Check, ChevronsUpDown } 
 import type { Dictionary } from '@/types';
 import { funds as allFunds, type FundPortfolio } from '@/data/mutual-fund-holdings';
 import { Command, CommandDialog, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from '@/components/ui/command';
-import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
+import { DialogTitle } from '@/components/ui/dialog';
 import { cn } from '@/lib/utils';
 
 // Type definitions remain the same
@@ -247,7 +247,6 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
       )}
        {overlapResult && overlapResult.topOverlapStocks.length === 0 && (
          <Alert>
-          <AlertTriangle className="h-4 w-4" />
           <AlertTitle>No Overlap Found</AlertTitle>
           <AlertDescription>
             The selected funds do not have any common stocks in their portfolios.

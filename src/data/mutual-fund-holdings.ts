@@ -20,7 +20,7 @@ function processFundData(data: any[]): FundPortfolio[] {
         name: c.company || 'Unknown Company',
         weight: c.weight_pct,
         // The source JSON does not have a sector, so we default it.
-        sector: c.sector || 'Unknown',
+        sector: 'Unknown',
       }));
 
     // Create a unique, stable schemeCode for each fund
