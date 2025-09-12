@@ -13,7 +13,6 @@ import { Command, CommandDialog, CommandEmpty, CommandGroup, CommandInput, Comma
 import { DialogTitle } from '@/components/ui/dialog';
 import { cn } from '@/lib/utils';
 
-// Type definitions remain the same
 type Fund = {
   id: number;
   name: string;
@@ -32,17 +31,14 @@ type OverlapResult = {
   topOverlapStocks: (Holding & { minWeight: number; perFund: number[] })[];
 };
 
-// **Corrected and Robust Overlap Calculation Logic**
 const calculateOverlap = (funds: Fund[]): OverlapResult | null => {
     if (funds.length < 2 || funds.some(f => !f.holdings || f.holdings.length === 0)) {
         return null;
     }
 
-    // Map to store stock names and their weights across all funds
     const stockMap: Map<string, number[]> = new Map();
     const fundCount = funds.length;
 
-    // Populate the stock map
     funds.forEach((fund, fundIndex) => {
         fund.holdings.forEach(holding => {
             if (!stockMap.has(holding.name)) {
@@ -55,23 +51,24 @@ const calculateOverlap = (funds: Fund[]): OverlapResult | null => {
     const commonStocks: (Holding & { minWeight: number; perFund: number[] })[] = [];
     let totalWeightedOverlap = 0;
 
-    // Iterate through the map to find common stocks and calculate overlap
     stockMap.forEach((weights, stockName) => {
         const fundsWithStock = weights.filter(w => w > 0);
-        if (fundsWithStock.length > 1) { // Stock is common if it's in more than one fund
+        if (fundsWithStock.length > 1) { 
             const minWeight = Math.min(...fundsWithStock);
             totalWeightedOverlap += minWeight;
+            
+            const firstHolding = funds.flatMap(f => f.holdings).find(h => h.name === stockName);
+
             commonStocks.push({
                 name: stockName,
-                weight: 0, // Placeholder
-                sector: '', // Placeholder
+                weight: 0, 
+                sector: firstHolding?.sector || 'Unknown',
                 minWeight,
                 perFund: weights,
             });
         }
     });
 
-    // Sort by the most significant overlap
     commonStocks.sort((a, b) => b.minWeight - a.minWeight);
 
     return {
@@ -80,24 +77,26 @@ const calculateOverlap = (funds: Fund[]): OverlapResult | null => {
     };
 };
 
+const getDefaultFunds = (): Fund[] => {
+    if (!allFunds || allFunds.length < 2) return [];
+    const initialFundsData = allFunds.slice(0, 2);
+    return initialFundsData.map((f, i) => ({
+      id: i + 1,
+      name: f.schemeName,
+      holdings: f.holdings,
+      schemeCode: f.schemeCode,
+    }));
+};
+
+
 export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictionary['mutual_fund_overlap_calculator'] }) {
-    // **Correct State Initialization**
-    const [funds, setFunds] = useState<Fund[]>(() => {
-        const initialFundsData = allFunds.slice(0, 2);
-        return initialFundsData.map((f, i) => ({
-          id: i + 1,
-          name: f.schemeName,
-          holdings: f.holdings,
-          schemeCode: f.schemeCode,
-        }));
-    });
-    const [overlapResult, setOverlapResult] = useState<OverlapResult | null>(null);
+    const [funds, setFunds] = useState<Fund[]>(getDefaultFunds);
+    const [overlapResult, setOverlapResult] = useState<OverlapResult | null>(() => calculateOverlap(funds));
     
-    // **Corrected useEffect to run on load and on change**
     useEffect(() => {
         const result = calculateOverlap(funds);
         setOverlapResult(result);
-    }, [funds]); // This dependency array ensures calculation runs on initial load and when funds change
+    }, [funds]);
 
   const exportCSV = () => {
     if (!overlapResult) return;
@@ -147,7 +146,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
   };
 
   const removeFund = (idToRemove: number) => {
-    if (funds.length <= 2) return; // Prevent removing below two funds
+    if (funds.length <= 2) return;
     setFunds(prev => prev.filter((f) => f.id !== idToRemove));
   };
   
@@ -304,3 +303,5 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: FundPort
     </>
   );
 }
+
+    
