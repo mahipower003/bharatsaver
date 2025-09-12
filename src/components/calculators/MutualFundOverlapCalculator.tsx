@@ -284,5 +284,3 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: FundPort
     </>
   );
 }
-
-    
