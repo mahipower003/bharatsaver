@@ -18,17 +18,20 @@ type MutualFundOverlapCalculatorProps = {
 }
 
 export function MutualFundOverlapCalculator({ dictionary, allFundsData }: MutualFundOverlapCalculatorProps) {
-  const [allFunds, setAllFunds] = useState<RawFund[]>(allFundsData);
+  const [allFunds] = useState<RawFund[]>(allFundsData);
   const [selectedFunds, setSelectedFunds] = useState<RawFund[]>([]);
   const [overlapResult, setOverlapResult] = useState<OverlapOutput | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     if (allFunds.length > 0) {
+      // Set default funds for initial comparison
       setSelectedFunds(allFunds.slice(0, 2));
+    } else {
+      setIsLoading(false);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [allFunds]);
   
   useEffect(() => {
     if (selectedFunds.length < 2) {
@@ -39,6 +42,7 @@ export function MutualFundOverlapCalculator({ dictionary, allFundsData }: Mutual
     
     setIsLoading(true);
     const calculateOverlap = async () => {
+      // Simulate a short delay to allow UI to update
       await new Promise(resolve => setTimeout(resolve, 50)); 
       const result = calculateAllOverlaps(selectedFunds);
       setOverlapResult(result);
@@ -265,9 +269,9 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: RawFund[
           <CommandList>
             <CommandEmpty>No fund found.</CommandEmpty>
             <CommandGroup>
-              {filteredFunds.map((fund) => (
+              {filteredFunds.map((fund, index) => (
                 <CommandItem
-                  key={fund.fund_name}
+                  key={`${fund.fund_name}-${index}`}
                   value={fund.fund_name}
                   onSelect={(currentValue) => {
                     const selected = allFunds.find(f => f.fund_name.toLowerCase() === currentValue.toLowerCase());
