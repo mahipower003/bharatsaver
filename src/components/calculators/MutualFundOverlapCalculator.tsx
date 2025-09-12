@@ -32,7 +32,7 @@ type OverlapResult = {
 };
 
 const calculateOverlap = (funds: Fund[]): OverlapResult | null => {
-  if (funds.length < 2 || funds.some(f => f.holdings.length === 0)) return null;
+  if (funds.length < 2 || funds.some(f => !f.holdings || f.holdings.length === 0)) return null;
 
   const allStockNames = new Set<string>();
   const fundWeightMaps = funds.map((f) => {
@@ -70,7 +70,7 @@ const calculateOverlap = (funds: Fund[]): OverlapResult | null => {
 
   const topOverlapStocks = stockRows
     .sort((a, b) => b.minWeight - a.minWeight)
-    .map((r) => ({ ...r } as any));
+    .map((r) => ({ ...r, name: r.name, minWeight: r.minWeight, perFund: r.perFund, sector: r.sector } as any));
 
   return {
     weightedOverlap: Number(weightedOverlap.toFixed(2)),
@@ -80,20 +80,26 @@ const calculateOverlap = (funds: Fund[]): OverlapResult | null => {
 
 
 export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictionary['mutual_fund_overlap_calculator'] }) {
-    const [funds, setFunds] = useState<Fund[]>(() => {
+    const [funds, setFunds] = useState<Fund[]>([]);
+    const [overlapResult, setOverlapResult] = useState<OverlapResult | null>(null);
+    
+    useEffect(() => {
+        // Initialize with first two funds
         const initialFunds = allFunds.slice(0, 2);
-        return initialFunds.map((f, i) => ({
+        setFunds(initialFunds.map((f, i) => ({
           id: i + 1,
           name: f.schemeName,
           holdings: f.holdings,
           schemeCode: f.schemeCode,
-        }));
-    });
+        })));
+    }, []);
 
-    const [overlapResult, setOverlapResult] = useState<OverlapResult | null>(() => calculateOverlap(funds));
-    
     useEffect(() => {
-        setOverlapResult(calculateOverlap(funds));
+        if (funds.length > 1) {
+            setOverlapResult(calculateOverlap(funds));
+        } else {
+            setOverlapResult(null);
+        }
     }, [funds]);
 
   const exportCSV = () => {
@@ -187,7 +193,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
         </Button>
       </div>
 
-      {overlapResult && (
+      {overlapResult && overlapResult.topOverlapStocks.length > 0 && (
         <div className="space-y-6 animate-in fade-in-50">
             <Alert variant="default" className="text-center p-6">
                 <BarChart2 className="h-6 w-6 mx-auto mb-2 text-primary"/>
@@ -278,3 +284,5 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: FundPort
     </>
   );
 }
+
+    
