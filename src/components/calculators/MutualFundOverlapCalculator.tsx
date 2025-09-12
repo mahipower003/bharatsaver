@@ -1,7 +1,7 @@
 
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
@@ -25,10 +25,10 @@ export function MutualFundOverlapCalculator({ dictionary, allFundsData }: Mutual
 
   useEffect(() => {
     if (allFunds.length > 0) {
-      // Set default funds for initial comparison
       setSelectedFunds(allFunds.slice(0, 2));
     }
-  }, [allFunds]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   
   useEffect(() => {
     if (selectedFunds.length < 2) {
@@ -39,7 +39,6 @@ export function MutualFundOverlapCalculator({ dictionary, allFundsData }: Mutual
     
     setIsLoading(true);
     const calculateOverlap = async () => {
-      // Simulate a short delay to allow UI to update
       await new Promise(resolve => setTimeout(resolve, 50)); 
       const result = calculateAllOverlaps(selectedFunds);
       setOverlapResult(result);
@@ -220,8 +219,29 @@ export function MutualFundOverlapCalculator({ dictionary, allFundsData }: Mutual
   );
 }
 
+const FUNDS_TO_SHOW_INITIAL = 100;
+
 function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: RawFund[], selectedFund: RawFund, onSelect: (fundName: string) => void }) {
   const [open, setOpen] = useState(false);
+  const [search, setSearch] = useState("");
+  const [visibleCount, setVisibleCount] = useState(FUNDS_TO_SHOW_INITIAL);
+
+  const filteredFunds = useMemo(() => {
+    if (!search) {
+      return allFunds.slice(0, visibleCount);
+    }
+    return allFunds.filter(fund =>
+      fund.fund_name.toLowerCase().includes(search.toLowerCase())
+    );
+  }, [allFunds, search, visibleCount]);
+
+  useEffect(() => {
+    if (!open) {
+      // Reset search and visible count when dialog is closed
+      setSearch("");
+      setVisibleCount(FUNDS_TO_SHOW_INITIAL);
+    }
+  }, [open]);
 
   return (
     <>
@@ -236,18 +256,25 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: RawFund[
         <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
       </Button>
       <CommandDialog open={open} onOpenChange={setOpen}>
-        <Command>
-          <CommandInput placeholder="Search for a fund..." />
+        <Command shouldFilter={false}>
+          <CommandInput 
+            placeholder="Search for a fund..."
+            value={search}
+            onValueChange={setSearch}
+          />
           <CommandList>
-          <CommandEmpty>No fund found.</CommandEmpty>
+            <CommandEmpty>No fund found.</CommandEmpty>
             <CommandGroup>
-              {allFunds.map((fund) => (
+              {filteredFunds.map((fund) => (
                 <CommandItem
                   key={fund.fund_name}
                   value={fund.fund_name}
                   onSelect={(currentValue) => {
-                    onSelect(currentValue === selectedFund.fund_name ? "" : currentValue)
-                    setOpen(false)
+                    const selected = allFunds.find(f => f.fund_name.toLowerCase() === currentValue.toLowerCase());
+                    if (selected) {
+                      onSelect(selected.fund_name);
+                    }
+                    setOpen(false);
                   }}
                 >
                   <Check
@@ -260,6 +287,14 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: RawFund[
                 </CommandItem>
               ))}
             </CommandGroup>
+            {!search && visibleCount < allFunds.length && (
+              <CommandItem
+                onSelect={() => setVisibleCount(prev => prev + 100)}
+                className="justify-center text-center text-primary"
+              >
+                Show More
+              </CommandItem>
+            )}
           </CommandList>
         </Command>
       </CommandDialog>
