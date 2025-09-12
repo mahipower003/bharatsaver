@@ -1,8 +1,6 @@
-
 import type { FundPortfolio } from '@/types';
 
 // This is a sample data structure. In a real application, this would be fetched from an API or a more complete JSON file.
-// The original `mutual-fund-data.json` was missing the actual holdings data.
 export const funds: FundPortfolio[] = [
     {
         schemeCode: "119550",
