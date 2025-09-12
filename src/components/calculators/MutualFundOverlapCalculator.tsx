@@ -1,17 +1,16 @@
 
 'use client';
 
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Download, Copy, PlusCircle, Trash2, BarChart2, Check, ChevronsUpDown } from 'lucide-react';
 import type { Dictionary } from '@/types';
 import { funds as allFunds, type FundPortfolio } from '@/data/mutual-fund-holdings';
-import { Dialog, DialogTrigger, DialogContent } from '@/components/ui/dialog';
-import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from '@/components/ui/command';
+import { Command, CommandDialog, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from '@/components/ui/command';
 import { cn } from '@/lib/utils';
 
 type Fund = {
@@ -195,11 +194,10 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
         {funds.map((fund) => (
           <Card key={fund.id} className="overflow-hidden">
             <CardHeader className="flex flex-row items-center justify-between bg-muted/50 p-4">
-              <FundSelector
+               <FundSelector
                 allFunds={allFunds}
                 selectedFund={fund}
                 onSelect={(schemeCode) => updateFundSelection(fund.id, schemeCode)}
-                dictionary={dictionary}
               />
               <Button variant="ghost" size="icon" className="h-6 w-6 text-muted-foreground" onClick={() => removeFund(fund.id)}>
                 <Trash2 className="h-4 w-4"/>
@@ -289,19 +287,18 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: FundPort
   const [open, setOpen] = useState(false);
 
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger asChild>
-        <Button
-          variant="outline"
-          role="combobox"
-          aria-expanded={open}
-          className="w-[300px] justify-between"
-        >
-          <span className="truncate">{selectedFund.name}</span>
-          <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
-        </Button>
-      </DialogTrigger>
-      <DialogContent className="p-0">
+    <CommandDialog open={open} onOpenChange={setOpen}>
+      <Button
+        variant="outline"
+        role="combobox"
+        aria-expanded={open}
+        className="w-[300px] justify-between"
+        onClick={() => setOpen(true)}
+      >
+        <span className="truncate">{selectedFund.name}</span>
+        <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+      </Button>
+      <CommandContent>
         <Command>
           <CommandInput placeholder="Search for a fund..." />
           <CommandEmpty>No fund found.</CommandEmpty>
@@ -328,8 +325,7 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: FundPort
             </CommandGroup>
           </CommandList>
         </Command>
-      </DialogContent>
-    </Dialog>
+      </CommandContent>
+    </CommandDialog>
   );
 }
-
