@@ -1156,19 +1156,16 @@
   },
   "mutual_fund_overlap_calculator": {
     "meta_title": "Mutual Fund Overlap Calculator India 2025 — Check Stock Overlap & Reduce Concentration",
-    "meta_description": "Free Mutual Fund Overlap Calculator (India). Paste or add fund holdings to find common stocks, sector overlap, and actionable steps to improve diversification.",
+    "meta_description": "Free Mutual Fund Overlap Calculator (India). Select your funds to find common stocks, sector overlap, and actionable steps to improve diversification.",
     "h1": "Mutual Fund Overlap Calculator — Check Overlap Between Funds (India, 2025)",
     "hero": {
-      "subtitle": "Holding multiple mutual funds? You might own the same stocks in different schemes, leading to 'false diversification'. Enter your fund names below to see how much they overlap and get actionable advice to optimize your portfolio."
+      "subtitle": "Holding multiple mutual funds? You might own the same stocks in different schemes, leading to 'false diversification'. Select your funds below to see how much they overlap and get actionable advice to optimize your portfolio."
     },
     "tool": {
       "title": "Check Your Fund Overlap",
-      "description": "Paste fund holdings below to see the overlap analysis.",
-      "placeholder": "e.g., RELIANCE, Reliance Industries Ltd, 8.2, Energy",
-      "format_hint": "Format: SYMBOL, Name, weight(in %), sector — one line per holding.",
+      "description": "Select your funds from the list to see the overlap analysis.",
       "add_fund": "Add Fund",
       "include_sectors": "Include Sector Summary",
-      "holdings_as_of": "Holdings as of",
       "export_csv": "Export CSV",
       "copy_summary": "Copy Summary"
     },
@@ -1219,20 +1216,20 @@
         { "q": "What is mutual fund overlap?", "a": "Mutual fund overlap occurs when two or more of your funds hold the same stocks, which can lead to 'false diversification' and concentrated risk. Our calculator helps you identify these common holdings." },
         { "q": "How do you calculate mutual fund overlap %?", "a": "We use a weighted overlap formula by summing the minimum weight of each common stock between funds. This gives a more accurate measure of concentration than simple counts." },
         { "q": "How much overlap is too much between two mutual funds?", "a": "Generally, an overlap above 30% is considered high and warrants a review. Above 50-60% is very high, suggesting the funds are too similar and you should consider consolidating to avoid duplicate costs." },
-        { "q": "How to check overlap between two mutual funds in India?", "a": "Use our free Mutual Fund Overlap Calculator. Simply paste the holdings of your Indian mutual funds into the tool to get an instant analysis of common stocks and sector concentration." },
+        { "q": "How to check overlap between two mutual funds in India?", "a": "Use our free Mutual Fund Overlap Calculator. Simply select your Indian mutual funds in the tool to get an instant analysis of common stocks and sector concentration." },
         { "q": "Does sector overlap matter more than stock overlap?", "a": "Both matter, but high stock-level overlap is a bigger red flag. High sector overlap (e.g., both funds are 30% in Financials) is common, but if they both hold the exact same banks, your risk is more concentrated." },
         { "q": "Can SIPs in different funds create high overlap?", "a": "Yes. If you run SIPs in multiple large-cap or flexi-cap funds that track similar benchmarks (like the Nifty 50), they will likely buy the same top stocks, leading to high portfolio overlap over time." },
         { "q": "How often should I check overlap for my portfolio?", "a": "A yearly portfolio review is a good practice. Check for overlap annually or whenever you are considering adding a new fund to ensure it's adding true diversification." },
         { "q": "How to reduce overlap without changing my asset allocation?", "a": "You can 'steer' your SIPs by pausing contributions to a high-overlap fund and redirecting the amount to a more unique fund in the same category (e.g., a 'value' fund instead of a 'growth' fund) or a different market focus (e.g., a multi-cap fund)." },
         { "q": "Is fund overlap the same as correlation?", "a": "No. Overlap measures common holdings, while correlation measures how similarly the funds' NAVs move. High overlap often leads to high correlation, but funds can be correlated without having high overlap." },
         { "q": "Can overlap increase my downside risk during a crash?", "a": "Yes. High overlap concentrates your risk. If a specific stock or sector that is common across all your funds performs badly, your entire portfolio will suffer more than you might expect." },
-        { "q": "Are international funds included in overlap calculations?", "a": "Yes, our tool can calculate overlap for any funds, including international ones, as long as you provide the holdings data. This is useful for checking overlap between, for example, two different US tech funds." },
-        { "q": "What date are fund holdings taken from? How often are they updated?", "a": "The holdings in our pre-filled examples are based on the latest available data from fund factsheets, typically updated monthly or quarterly. For the most accurate results, always paste the latest holdings yourself." },
+        { "q": "Are international funds included in overlap calculations?", "a": "Yes, our tool can calculate overlap for any funds in our database, including international ones, as long as the data is available." },
+        { "q": "What date are fund holdings taken from? How often are they updated?", "a": "The holdings in our database are based on the latest available data from fund factsheets, typically updated monthly or quarterly." },
         { "q": "Is mutual fund overlap taxable?", "a": "The overlap itself is not taxable. However, if you decide to sell a fund to reduce overlap, any capital gains from that sale will be taxed (Short-Term or Long-Term Capital Gains, depending on the holding period)." },
-        { "q": "Can I use this calculator for 5+ funds?", "a": "The user interface is optimized for comparing up to 5 funds at once for clarity. However, the underlying calculation logic can handle more. For a larger portfolio review, consider exporting multiple results." },
+        { "q": "Can I use this calculator for 5+ funds?", "a": "The user interface is optimized for comparing up to 5 funds at once for clarity. For a larger portfolio review, you can perform multiple comparisons." },
         { "q": "What to do if two funds overlap 60%+?", "a": "An overlap of over 60% suggests the funds are nearly identical. It is highly recommended to consolidate. Choose the fund with the better long-term performance and lower expense ratio, and consider switching your SIP and holdings to that single fund." },
         { "q": "Do you provide an API / embeddable widget?", "a": "This feature is not currently available, but we are considering it for the future. For now, you can link directly to our calculator page." },
-        { "q": "How accurate is the overlap calculation?", "a": "The calculation is mathematically precise based on the holdings data you provide. The accuracy depends on how recent and complete your pasted data is. We recommend using data from official fund factsheets." },
+        { "q": "How accurate is the overlap calculation?", "a": "The calculation is mathematically precise based on the holdings data in our database. The accuracy depends on how recent the data is from the AMCs. We strive to keep it updated." },
         { "q": "How to replace a fund with a low-overlap alternative?", "a": "First, identify the category of the fund you want to replace (e.g., Large-Cap). Then, research other funds in that category with a different investment style (e.g., a 'value' fund instead of a 'growth' fund) or a different market focus (e.g., a multi-cap fund)." },
         { "q": "How do expense ratios affect the overlap decision?", "a": "High overlap means you are paying multiple fund managers (and multiple expense ratios) to own the same stocks. If two funds have high overlap, it often makes sense to consolidate into the one with the lower expense ratio to save on costs." },
         { "q": "What is the weighted-overlap formula and why is it better?", "a": "The weighted-overlap formula is: Sum of [Minimum Weight of Stock X in Fund A vs Fund B]. It's better than just counting common stocks because it measures the *actual* portfolio concentration, giving more importance to stocks with a higher weight in both funds." }
@@ -1240,5 +1237,3 @@
     }
   }
 }
-
-    

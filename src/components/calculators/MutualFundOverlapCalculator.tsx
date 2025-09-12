@@ -5,60 +5,30 @@ import React, { useState, useMemo } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Checkbox } from '@/components/ui/checkbox';
-import { Download, Copy, PlusCircle, Trash2, BarChart2 } from 'lucide-react';
+import { Download, Copy, PlusCircle, Trash2, BarChart2, Check, ChevronsUpDown } from 'lucide-react';
 import type { Dictionary } from '@/types';
+import { funds as allFunds, type FundPortfolio } from '@/data/mutual-fund-holdings';
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from '@/components/ui/command';
+import { cn } from '@/lib/utils';
 
-/**
- * Data format for holdings.
- */
+type Fund = {
+  id: number;
+  name: string;
+  sourceDate: string;
+  holdings: Holding[];
+  schemeCode: string;
+};
+
 type Holding = {
   symbol: string;
   name: string;
   weight: number;
   sector: string;
 };
-
-type Fund = {
-  id: number;
-  name: string;
-  sourceDate: string;
-  holdingsText: string;
-};
-
-/**
- * Parses holdings text into a structured array.
- * @param text - The raw text from the textarea (CSV format).
- * @returns An array of Holding objects.
- */
-const parseHoldings = (text: string): Holding[] => {
-  if (!text) return [];
-  const lines = text.split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
-  const holdings: Holding[] = [];
-
-  for (const line of lines) {
-    // This regex is more robust for comma-separated values where the name might contain commas
-    const parts = line.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/).map(p => p.trim().replace(/^"|"$/g, ''));
-    if (parts.length < 3) continue;
-
-    const sector = parts[parts.length - 1] || "Unknown";
-    const weightStr = parts[parts.length - 2];
-    const symbol = parts[0];
-    const name = parts.slice(1, -2).join(", ");
-    
-    // Check if weight is a valid number
-    const weight = parseFloat(weightStr?.replace(/%/g, ''));
-
-    if (symbol && !isNaN(weight)) {
-        holdings.push({ symbol: symbol.toUpperCase(), name, weight, sector });
-    }
-  }
-  return holdings;
-};
-
 
 type OverlapResult = {
   weightedOverlap: number;
@@ -69,45 +39,24 @@ type OverlapResult = {
 
 
 export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictionary['mutual_fund_overlap_calculator'] }) {
-  const [funds, setFunds] = useState<Fund[]>([
-    {
-      id: 1,
-      name: "HDFC Top 100 (example)",
-      sourceDate: "01-Sep-2025",
-      holdingsText:
-        "RELIANCE,Reliance Industries Ltd,8.2,Energy\n" +
-        "HDFCBANK,HDFC Bank Ltd,6.3,Financials\n" +
-        "ICICIBANK,ICICI Bank Ltd,4.9,Financials\n" +
-        "TCS,Tata Consultancy Services,5.0,Technology\n" +
-        "INFY,Infosys Ltd,4.5,Technology",
-    },
-    {
-      id: 2,
-      name: "SBI Bluechip (example)",
-      sourceDate: "01-Sep-2025",
-      holdingsText:
-        "RELIANCE,Reliance Industries Ltd,7.5,Energy\n" +
-        "HDFCBANK,HDFC Bank Ltd,5.8,Financials\n" +
-        "ICICIBANK,ICICI Bank Ltd,4.4,Financials\n" +
-        "INFY,Infosys Ltd,3.9,Technology\n" +
-        "TITAN,Titan Company Ltd,2.5,Consumer",
-    },
-  ]);
+  const [funds, setFunds] = useState<Fund[]>(() => {
+    const initialFunds = allFunds.slice(0, 2);
+    return initialFunds.map((f, i) => ({
+      id: i + 1,
+      name: f.schemeName,
+      sourceDate: '31-Aug-2025',
+      holdings: f.holdings.map(h => ({ ...h, symbol: h.name.toUpperCase().replace(/ /g,"").slice(0,10) })),
+      schemeCode: f.schemeCode,
+    }));
+  });
 
   const [includeSectors, setIncludeSectors] = useState(true);
 
-  const parsedFunds = useMemo(() => {
-    return funds.map((f) => ({
-      ...f,
-      holdings: parseHoldings(f.holdingsText),
-    }));
-  }, [funds]);
-
   const overlapResult: OverlapResult | null = useMemo(() => {
-    if (parsedFunds.length < 2) return null;
+    if (funds.length < 2) return null;
 
     const allSymbols = new Set<string>();
-    const fundWeightMaps = parsedFunds.map((f) => {
+    const fundWeightMaps = funds.map((f) => {
       const map = new Map<string, { weight: number; sector: string; name: string }>();
       let totalEquityWeight = 0;
       for (const h of f.holdings) {
@@ -121,27 +70,28 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
     const symbolRows: { symbol: string; perFund: number[]; minWeight: number; exampleName: string; sector: string }[] = [];
     allSymbols.forEach(symbol => {
       const perFund = fundWeightMaps.map((fw) => fw.map.get(symbol)?.weight || 0);
-      const minWeight = Math.min(...perFund.filter(w => w > 0)); // Only consider funds that actually hold the stock
       
-      const firstFundWithStock = fundWeightMaps.find(fw => fw.map.has(symbol));
-      const stockInfo = firstFundWithStock?.map.get(symbol);
-      
-      if(perFund.filter(w => w > 0).length > 1) { // Only include if it's an overlap
-          symbolRows.push({
-            symbol,
-            perFund,
-            minWeight,
-            exampleName: stockInfo?.name || "N/A",
-            sector: stockInfo?.sector || "Unknown",
-          });
+      // Only include if it's an overlap (present in more than one fund)
+      if (perFund.filter(w => w > 0).length > 1) {
+        const minWeight = Math.min(...perFund.filter(w => w > 0));
+        const firstFundWithStock = fundWeightMaps.find(fw => fw.map.has(symbol));
+        const stockInfo = firstFundWithStock?.map.get(symbol);
+        
+        symbolRows.push({
+          symbol,
+          perFund,
+          minWeight,
+          exampleName: stockInfo?.name || "N/A",
+          sector: stockInfo?.sector || "Unknown",
+        });
       }
     });
     
     const weightedOverlap = symbolRows.reduce((s, r) => s + r.minWeight, 0);
 
     const pairwise: { i: number; j: number; percent: number }[] = [];
-    for (let i = 0; i < parsedFunds.length; i++) {
-      for (let j = i + 1; j < parsedFunds.length; j++) {
+    for (let i = 0; i < funds.length; i++) {
+      for (let j = i + 1; j < funds.length; j++) {
         let sumMin = 0;
         allSymbols.forEach(symbol => {
             const w1 = fundWeightMaps[i].map.get(symbol)?.weight || 0;
@@ -164,9 +114,8 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
     });
 
     const topOverlapStocks = symbolRows
-      .filter((r) => r.minWeight > 0)
       .sort((a, b) => b.minWeight - a.minWeight)
-      .map((r) => ({ ...r, name: r.exampleName } as any)); // Type assertion to satisfy Holding type
+      .map((r) => ({ ...r, name: r.exampleName } as any));
       
     const sectorOverlap = Array.from(sectorMap.entries())
         .map(([sector, weight]) => ({ sector, weight: Number(weight.toFixed(4)) }))
@@ -179,11 +128,11 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
       topOverlapStocks,
       sectorOverlap,
     };
-  }, [parsedFunds]);
+  }, [funds]);
 
   const exportCSV = () => {
     if (!overlapResult) return;
-    const headers = ["Symbol", "Name", ...parsedFunds.map((f) => f.name), "MinWeight"];
+    const headers = ["Symbol", "Name", ...funds.map((f) => f.name), "MinWeight"];
     const rows = overlapResult.topOverlapStocks.map(r => 
         [r.symbol, `"${r.name}"`, ...r.perFund.map((w) => w.toFixed(2)), r.minWeight.toFixed(4)].join(",")
     );
@@ -210,24 +159,34 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
     alert("Summary copied to clipboard!");
   };
 
-  const updateFundText = (id: number, text: string) => {
-    setFunds((prev) => prev.map((f) => (f.id === id ? { ...f, holdingsText: text } : f)));
-  };
-
-  const updateFundName = (id: number, name: string) => {
-    setFunds((prev) => prev.map((f) => (f.id === id ? { ...f, name } : f)));
-  };
-
   const addFund = () => {
     if (funds.length >= 5) return;
     const id = (funds[funds.length - 1]?.id || 0) + 1;
-    setFunds((p) => [...p, { id, name: `Fund ${id}`, sourceDate: new Date().toLocaleDateString('en-CA'), holdingsText: "" }]);
+    // Add a default placeholder fund
+    setFunds((p) => [...p, { id, name: `Select Fund ${id}`, sourceDate: '', holdings: [], schemeCode: '' }]);
   };
 
   const removeFund = (id: number) => {
     setFunds((p) => p.filter((f) => f.id !== id));
   };
   
+  const updateFundSelection = (fundId: number, schemeCode: string) => {
+    const selectedFundData = allFunds.find(f => f.schemeCode === schemeCode);
+    if (!selectedFundData) return;
+
+    setFunds(prev => prev.map(f => 
+      f.id === fundId 
+      ? {
+        ...f,
+        name: selectedFundData.schemeName,
+        holdings: selectedFundData.holdings.map(h => ({...h, symbol: h.name.toUpperCase().replace(/ /g,"").slice(0,10)})),
+        sourceDate: '31-Aug-2025',
+        schemeCode: selectedFundData.schemeCode,
+      } 
+      : f
+    ));
+  };
+
   const getOverlapLevel = (overlap: number) => {
     if (overlap > 50) return { label: 'Very High', color: 'text-destructive' };
     if (overlap > 30) return { label: 'High', color: 'text-orange-500' };
@@ -235,46 +194,39 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
     return { label: 'Low', color: 'text-green-500' };
   };
 
-
   return (
     <div className="space-y-6">
-      {funds.map((fund, idx) => (
-        <Card key={fund.id} className="overflow-hidden">
-          <CardHeader className="flex flex-row items-center justify-between bg-muted/50 p-4">
-            <Input value={fund.name} onChange={(e) => updateFundName(fund.id, e.target.value)} className="text-base font-semibold w-auto border-none focus-visible:ring-0 shadow-none bg-transparent" />
-            <div className="flex items-center gap-4">
-              <span className="text-xs text-muted-foreground">{dictionary.tool.holdings_as_of} {fund.sourceDate}</span>
-              {funds.length > 2 && (
-                <Button variant="ghost" size="icon" className="h-6 w-6 text-muted-foreground" onClick={() => removeFund(fund.id)}>
-                    <Trash2 className="h-4 w-4"/>
-                </Button>
-              )}
-            </div>
-          </CardHeader>
-          <CardContent className="p-4">
-            <Textarea
-              rows={5}
-              value={fund.holdingsText}
-              onChange={(e) => updateFundText(fund.id, e.target.value)}
-              className="w-full font-mono text-xs"
-              placeholder={dictionary.tool.placeholder}
-            />
-            <p className="text-xs text-muted-foreground mt-2">{dictionary.tool.format_hint}</p>
-          </CardContent>
-        </Card>
-      ))}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {funds.map((fund) => (
+          <Card key={fund.id} className="overflow-hidden">
+            <CardHeader className="flex flex-row items-center justify-between bg-muted/50 p-4">
+              <FundSelector
+                selectedFund={fund}
+                onSelect={(schemeCode) => updateFundSelection(fund.id, schemeCode)}
+                dictionary={dictionary}
+              />
+              <Button variant="ghost" size="icon" className="h-6 w-6 text-muted-foreground" onClick={() => removeFund(fund.id)}>
+                <Trash2 className="h-4 w-4"/>
+              </Button>
+            </CardHeader>
+            <CardContent className="p-4 text-sm text-muted-foreground">
+              {fund.sourceDate ? `Holdings as of: ${fund.sourceDate}` : 'Please select a fund to see details.'}
+            </CardContent>
+          </Card>
+        ))}
+      </div>
 
-        <div className="flex flex-wrap items-center justify-between gap-4">
-          <Button variant="outline" onClick={addFund} disabled={funds.length >= 5}>
-            <PlusCircle className="mr-2" /> {dictionary.tool.add_fund}
-          </Button>
-          <div className="flex items-center space-x-2">
-            <Checkbox id="include-sectors" checked={includeSectors} onCheckedChange={(checked) => setIncludeSectors(Boolean(checked))} />
-            <label htmlFor="include-sectors" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
-              {dictionary.tool.include_sectors}
-            </label>
-          </div>
+      <div className="flex flex-wrap items-center justify-between gap-4">
+        <Button variant="outline" onClick={addFund} disabled={funds.length >= 5}>
+          <PlusCircle className="mr-2" /> {dictionary.tool.add_fund}
+        </Button>
+        <div className="flex items-center space-x-2">
+          <Checkbox id="include-sectors" checked={includeSectors} onCheckedChange={(checked) => setIncludeSectors(Boolean(checked))} />
+          <label htmlFor="include-sectors" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+            {dictionary.tool.include_sectors}
+          </label>
         </div>
+      </div>
 
       {overlapResult && (
         <div className="space-y-6 animate-in fade-in-50">
@@ -294,7 +246,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
                     <Table>
                         <TableHeader><TableRow>
                             <TableHead>{dictionary.results.stock_header}</TableHead>
-                            {parsedFunds.map((f) => <TableHead key={f.id} className="text-right">{f.name}</TableHead>)}
+                            {funds.map((f) => <TableHead key={f.id} className="text-right">{f.name}</TableHead>)}
                             <TableHead className="text-right font-bold">{dictionary.results.min_weight_header}</TableHead>
                         </TableRow></TableHeader>
                         <TableBody>
@@ -336,4 +288,51 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
   );
 }
 
-    
+
+function FundSelector({ selectedFund, onSelect, dictionary }: { selectedFund: Fund, onSelect: (schemeCode: string) => void, dictionary: any }) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <Popover open={open} onOpenChange={setOpen}>
+      <PopoverTrigger asChild>
+        <Button
+          variant="outline"
+          role="combobox"
+          aria-expanded={open}
+          className="w-[300px] justify-between"
+        >
+          <span className="truncate">{selectedFund.name}</span>
+          <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+        </Button>
+      </PopoverTrigger>
+      <PopoverContent className="w-[300px] p-0">
+        <Command>
+          <CommandInput placeholder="Search for a fund..." />
+          <CommandEmpty>No fund found.</CommandEmpty>
+          <CommandList>
+            <CommandGroup>
+              {allFunds.map((fund) => (
+                <CommandItem
+                  key={fund.schemeCode}
+                  value={fund.schemeName}
+                  onSelect={() => {
+                    onSelect(fund.schemeCode);
+                    setOpen(false);
+                  }}
+                >
+                  <Check
+                    className={cn(
+                      "mr-2 h-4 w-4",
+                      selectedFund.schemeCode === fund.schemeCode ? "opacity-100" : "opacity-0"
+                    )}
+                  />
+                  {fund.schemeName}
+                </CommandItem>
+              ))}
+            </CommandGroup>
+          </CommandList>
+        </Command>
+      </PopoverContent>
+    </Popover>
+  );
+}
