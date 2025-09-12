@@ -56,9 +56,11 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
       const map = new Map<string, { weight: number; sector: string }>();
       let totalEquityWeight = 0;
       for (const h of f.holdings) {
-        map.set(h.name, { weight: h.weight, sector: h.sector });
-        totalEquityWeight += h.weight;
-        allStockNames.add(h.name);
+        if (h.name && h.weight) {
+            map.set(h.name, { weight: h.weight, sector: h.sector || 'Unknown' });
+            totalEquityWeight += h.weight;
+            allStockNames.add(h.name);
+        }
       }
       return { map, totalEquityWeight };
     });
@@ -333,5 +335,3 @@ function FundSelector({ allFunds, selectedFund, onSelect, dictionary }: { allFun
     </Popover>
   );
 }
-
-    
