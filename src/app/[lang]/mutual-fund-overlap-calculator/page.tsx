@@ -3,7 +3,7 @@ import { MutualFundOverlapCalculator } from "@/components/calculators/MutualFund
 import { getDictionary } from "@/lib/dictionaries";
 import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { AuthorCard } from "@/components/layout/AuthorCard";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { BarChart2, HelpCircle, FileText, CheckCircle, AlertTriangle } from "lucide-react";
