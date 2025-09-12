@@ -38,7 +38,6 @@ const calculateOverlap = (funds: Fund[]): OverlapResult | null => {
 
     const stockMap: Map<string, { weights: number[], sector: string }> = new Map();
     const fundCount = funds.length;
-    const fundSchemeCodes = funds.map(f => f.schemeCode);
 
     funds.forEach((fund, fundIndex) => {
         fund.holdings.forEach(holding => {
@@ -90,7 +89,7 @@ const getDefaultFunds = (): Fund[] => {
 
 export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictionary['mutual_fund_overlap_calculator'] }) {
     const [funds, setFunds] = useState<Fund[]>(getDefaultFunds);
-    const [overlapResult, setOverlapResult] = useState<OverlapResult | null>(() => calculateOverlap(getDefaultFunds()));
+    const [overlapResult, setOverlapResult] = useState<OverlapResult | null>(null);
     
     useEffect(() => {
         const result = calculateOverlap(funds);
@@ -200,7 +199,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
         </Button>
       </div>
 
-      {overlapResult && overlapResult.topOverlapStocks.length > 0 && (
+      {overlapResult && overlapResult.topOverlapStocks.length > 0 ? (
         <div className="space-y-6 animate-in fade-in-50">
             <Alert variant="default" className="text-center p-6">
                 <BarChart2 className="h-6 w-6 mx-auto mb-2 text-primary"/>
@@ -242,12 +241,11 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
               <Button variant="outline" onClick={copySummary}><Copy className="mr-2"/>{dictionary.tool.copy_summary}</Button>
           </div>
         </div>
-      )}
-       {overlapResult && overlapResult.topOverlapStocks.length === 0 && (
+      ) : (
          <Alert>
-          <AlertTitle>No Overlap Found</AlertTitle>
+          <AlertTitle>No Overlap Found or Data Missing</AlertTitle>
           <AlertDescription>
-            The selected funds do not have any common stocks in their portfolios.
+            The selected funds do not have any common stocks, or the portfolio data could not be loaded. Please try selecting different funds.
           </AlertDescription>
         </Alert>
        )}
@@ -302,6 +300,3 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: FundPort
     </>
   );
 }
-    
-
-    

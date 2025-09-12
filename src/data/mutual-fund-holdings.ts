@@ -14,10 +14,10 @@ function processFundData(data: any[]): FundPortfolio[] {
     const constituents = Array.isArray(fund.constituents) ? fund.constituents : [];
 
     const holdings = constituents
-      // Filter out any holdings that are not valid objects or have null/undefined weight
-      .filter((c: any) => c && typeof c === 'object' && c.weight_pct !== null && typeof c.weight_pct === 'number')
+      // Filter out any holdings that are not valid objects or have null/undefined weight_pct
+      .filter((c: any) => c && typeof c === 'object' && c.weight_pct !== null && typeof c.weight_pct === 'number' && c.company)
       .map((c: any) => ({
-        name: c.company || 'Unknown Company',
+        name: c.company,
         weight: c.weight_pct,
         // The source JSON does not have a sector, so we default it.
         sector: 'Unknown',
