@@ -14,9 +14,7 @@ import { cn } from '@/lib/utils';
 import { DialogTitle } from '@radix-ui/react-dialog';
 
 
-type Fund = FundPortfolio & {
-  id: number;
-};
+type Fund = FundPortfolio;
 
 type Holding = {
   name: string;
@@ -78,17 +76,13 @@ const calculateOverlap = (funds: Fund[]): OverlapResult | null => {
 
 const getDefaultFunds = (): Fund[] => {
     if (!allFunds || allFunds.length < 2) return [];
-    const initialFundsData = allFunds.slice(0, 2);
-    return initialFundsData.map((f, i) => ({
-      ...f,
-      id: i + 1,
-    }));
+    return allFunds.slice(0, 2);
 };
 
 
 export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictionary['mutual_fund_overlap_calculator'] }) {
   const [funds, setFunds] = useState<Fund[]>(getDefaultFunds());
-  const [overlapResult, setOverlapResult] = useState<OverlapResult | null>(calculateOverlap(funds));
+  const [overlapResult, setOverlapResult] = useState<OverlapResult | null>(null);
     
   useEffect(() => {
     const result = calculateOverlap(funds);
@@ -130,37 +124,37 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
 
   const addFund = () => {
     if (funds.length >= 5) return;
-    const nextId = (funds.length > 0 ? Math.max(...funds.map(f => f.id)) : 0) + 1;
-    
+
     const selectedSchemeCodes = new Set(funds.map(f => f.schemeCode));
     const nextFundData = allFunds.find(f => !selectedSchemeCodes.has(f.schemeCode));
-
+    
     if (nextFundData) {
-        setFunds(prev => [...prev, { 
-            ...nextFundData,
-            id: nextId, 
-        }]);
+        setFunds(prev => [...prev, nextFundData]);
     }
   };
 
-  const removeFund = (idToRemove: number) => {
+  const removeFund = (schemeCodeToRemove: string) => {
     if (funds.length <= 2) return;
-    setFunds(prev => prev.filter((f) => f.id !== idToRemove));
+    setFunds(prev => prev.filter((f) => f.schemeCode !== schemeCodeToRemove));
   };
   
-  const updateFundSelection = (fundId: number, schemeCode: string) => {
-    const selectedFundData = allFunds.find(f => f.schemeCode === schemeCode);
+  const updateFundSelection = (oldSchemeCode: string, newSchemeCode: string) => {
+    const selectedFundData = allFunds.find(f => f.schemeCode === newSchemeCode);
     if (!selectedFundData) return;
+    
+    // Prevent adding a fund that is already selected
+    if (funds.some(f => f.schemeCode === newSchemeCode && f.schemeCode !== oldSchemeCode)) {
+        alert("This fund is already selected. Please choose a different one.");
+        return;
+    }
 
     setFunds(prev => prev.map(f => 
-      f.id === fundId 
-      ? {
-        ...f,
-        ...selectedFundData
-      } 
+      f.schemeCode === oldSchemeCode 
+      ? selectedFundData
       : f
     ));
   };
+
 
   const getOverlapLevel = (overlap: number) => {
     if (overlap > 50) return { label: 'Very High', color: 'text-destructive' };
@@ -172,15 +166,15 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {funds.map((fund) => (
-          <Card key={fund.id} className="overflow-hidden">
+        {funds.map((fund, index) => (
+          <Card key={fund.schemeCode + index} className="overflow-hidden">
             <CardHeader className="flex flex-row items-center justify-between bg-muted/50 p-4">
                <FundSelector
                 allFunds={allFunds}
                 selectedFund={fund}
-                onSelect={(schemeCode) => updateFundSelection(fund.id, schemeCode)}
+                onSelect={(newSchemeCode) => updateFundSelection(fund.schemeCode, newSchemeCode)}
               />
-              <Button variant="ghost" size="icon" className="h-6 w-6 text-muted-foreground" onClick={() => removeFund(fund.id)} disabled={funds.length <= 2}>
+              <Button variant="ghost" size="icon" className="h-6 w-6 text-muted-foreground" onClick={() => removeFund(fund.schemeCode)} disabled={funds.length <= 2}>
                 <Trash2 className="h-4 w-4"/>
               </Button>
             </CardHeader>
@@ -218,7 +212,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
                     <Table>
                         <TableHeader><TableRow>
                             <TableHead>{dictionary.results.stock_header}</TableHead>
-                            {funds.map((f) => <TableHead key={f.id} className="text-right truncate max-w-[150px]">{f.schemeName}</TableHead>)}
+                            {funds.map((f, i) => <TableHead key={f.schemeCode + i} className="text-right truncate max-w-[150px]">{f.schemeName}</TableHead>)}
                             <TableHead className="text-right font-bold">{dictionary.results.min_weight_header}</TableHead>
                         </TableRow></TableHeader>
                         <TableBody>
@@ -298,3 +292,5 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: FundPort
     </>
   );
 }
+
+    
