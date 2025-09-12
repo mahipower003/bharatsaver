@@ -1,28 +1,31 @@
 
-import rawData from '@/data/mutual-fund-data.json';
+import type { FundPortfolio } from '@/types';
+import rawData from './mutual-fund-data.json';
 
-export type FundPortfolio = {
-    schemeCode: string;
-    schemeName: string;
-    holdings: {
-        name: string;
-        weight: number;
-        sector: string;
-    }[];
-};
+// This function processes the raw JSON data and transforms it into the format
+// expected by the application. It ensures that only valid stock holdings are included.
+function processFundData(data: any[]): FundPortfolio[] {
+  return data.map((fund: any, index: number) => {
+    // Ensure constituents is an array before processing
+    const constituents = Array.isArray(fund.constituents) ? fund.constituents : [];
 
-export const funds: FundPortfolio[] = rawData.map((fund: any) => {
-  const holdings = (fund.constituents || [])
-    .filter((c: any) => c.company && c.weight_pct !== null)
-    .map((c: any) => ({
-      name: c.company,
-      weight: c.weight_pct,
-      sector: c.sector || 'Unknown',
-    }));
+    const holdings = constituents
+      // Filter out any holdings where the weight is null or undefined
+      .filter((c: any) => c.weight_pct != null)
+      // Map the valid holdings to the required structure
+      .map((c: any) => ({
+        name: c.company,
+        weight: c.weight_pct,
+        sector: c.sector || 'Unknown', // Use provided sector or default
+      }));
 
-  return {
-    schemeCode: (fund.fund_name || "UNKNOWN").toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 15) + fund.constituents_count,
-    schemeName: fund.fund_name,
-    holdings: holdings,
-  };
-});
+    return {
+      // Create a unique schemeCode if one isn't provided
+      schemeCode: (fund.fund_name || `FUND_${index}`).toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 20) + constituents.length,
+      schemeName: fund.fund_name || 'Unknown Fund',
+      holdings: holdings,
+    };
+  });
+}
+
+export const funds: FundPortfolio[] = processFundData(rawData);
