@@ -28,6 +28,17 @@ const nextConfig = {
       },
     ],
   },
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+        // Don't bundle 'fs' and 'path' on the client side
+        config.resolve.fallback = {
+            fs: false,
+            path: false,
+        };
+    }
+
+    return config;
+  },
 };
 
 module.exports = nextConfig;

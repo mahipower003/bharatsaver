@@ -329,4 +329,3 @@ function FundSelector({ selectedFund, onSelect, dictionary }: { selectedFund: Fu
     </Popover>
   );
 }
-
