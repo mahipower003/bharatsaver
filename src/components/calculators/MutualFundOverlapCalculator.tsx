@@ -3,7 +3,7 @@
 
 import React, { useState, useMemo } from 'react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Checkbox } from '@/components/ui/checkbox';
@@ -298,11 +298,10 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: FundPort
         <span className="truncate">{selectedFund.name}</span>
         <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
       </Button>
-      <CommandContent>
         <Command>
           <CommandInput placeholder="Search for a fund..." />
-          <CommandEmpty>No fund found.</CommandEmpty>
           <CommandList>
+            <CommandEmpty>No fund found.</CommandEmpty>
             <CommandGroup>
               {allFunds.map((fund) => (
                 <CommandItem
@@ -325,7 +324,6 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: FundPort
             </CommandGroup>
           </CommandList>
         </Command>
-      </CommandContent>
     </CommandDialog>
   );
 }
