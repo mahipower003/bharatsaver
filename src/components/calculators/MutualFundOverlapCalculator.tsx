@@ -12,19 +12,13 @@ import { funds as allFunds } from '@/data/mutual-fund-holdings';
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList, CommandDialog } from '@/components/ui/command';
 import { cn } from '@/lib/utils';
 import { DialogTitle } from '@radix-ui/react-dialog';
-import { type OverlapOutput, calculateAllOverlaps } from '@/lib/overlap-calculator';
-
-// Use the RawFund type from your data source
-type RawFund = (typeof allFunds)[0];
-
-const getDefaultFunds = (): RawFund[] => {
-    if (!allFunds || allFunds.length < 2) return [];
-    // Return a copy to avoid mutation issues
-    return [allFunds[0], allFunds[1]];
-};
+import { type OverlapOutput, calculateAllOverlaps, type RawFund } from '@/lib/overlap-calculator';
 
 export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictionary['mutual_fund_overlap_calculator'] }) {
-  const [selectedFunds, setSelectedFunds] = useState<RawFund[]>(getDefaultFunds);
+  const [selectedFunds, setSelectedFunds] = useState<RawFund[]>(() => {
+    if (!allFunds || allFunds.length < 2) return [];
+    return [allFunds[0], allFunds[1]];
+  });
   const [overlapResult, setOverlapResult] = useState<OverlapOutput | null>(null);
 
   useEffect(() => {
@@ -38,7 +32,6 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
 
   const exportCSV = () => {
     if (!overlapResult || overlapResult.pairs.length === 0) return;
-    // For simplicity, exporting the first pair's common holdings
     const firstPair = overlapResult.pairs[0];
     const headers = ["Stock Name", `Weight in ${firstPair.fund_a}`, `Weight in ${firstPair.fund_b}`, "Min. Weight"];
     const rows = firstPair.common_holdings.map(r => 
