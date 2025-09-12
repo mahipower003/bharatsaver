@@ -1155,8 +1155,8 @@
     "view_calculator": "View Calculator"
   },
   "mutual_fund_overlap_calculator": {
-    "meta_title": "Mutual Fund Overlap Calculator (India) | Check Overlap Between Funds (2025)",
-    "meta_description": "Free tool to check portfolio overlap between Indian mutual funds. See common stocks, sector concentration, and get actionable insights to improve diversification and avoid risk.",
+    "meta_title": "Mutual Fund Overlap Calculator India 2025 — Check Stock Overlap & Reduce Concentration",
+    "meta_description": "Free Mutual Fund Overlap Calculator (India). Paste or add fund holdings to find common stocks, sector overlap, and actionable steps to improve diversification.",
     "h1": "Mutual Fund Overlap Calculator — Check Overlap Between Funds (India, 2025)",
     "hero": {
       "subtitle": "Holding multiple mutual funds? You might own the same stocks in different schemes, leading to 'false diversification'. Enter your fund names below to see how much they overlap and get actionable advice to optimize your portfolio."
@@ -1211,12 +1211,12 @@
     },
     "methodology": {
       "h2": "Methodology & Data Sources",
-      "body": "<p>This calculator uses portfolio data sourced from AMFI (Association of Mutual Funds in India) and is updated periodically. The overlap is calculated using both a simple common-weight method and a more accurate weighted overlap formula to give you a comprehensive view. For any discrepancies, please refer to the official fund factsheet from the respective Asset Management Company (AMC).</p>"
+      "body": "<p>This calculator uses portfolio data sourced from AMFI (Association of Mutual Funds in India) and is updated periodically. The overlap is calculated using both a simple common-weight method and a more accurate weighted overlap formula to give you a comprehensive view. For any discrepancies, please refer to the official fund factsheet from the respective Asset Management Company (AMC).</p><h3>Weighted Overlap (Used)</h3><p>For funds A and B, with constituents {i} and weights wA_i, wB_i (fractions; sum of equity weights ≤ 1):<br><code>WeightedOverlap(A,B) = Σ_i min(wA_i, wB_i)</code></p><p>Result expressed as % of equity exposure:<br><code>WeightedOverlapPct = WeightedOverlap(A,B) * 100</code></p><p><strong>Notes:</strong><br>- Cash/debt portion is excluded from overlap (we normalize to total equity weight when comparing funds across different equity allocation).<br>- If only top-N holdings are available, we display `coverage = Σ_topN weights`. If coverage < 80%, results are flagged as “partial”.</p>"
     },
     "faq": {
       "h2": "Frequently Asked Questions",
       "faqs": [
-        { "q": "What is mutual fund overlap?", "a": "Mutual fund overlap is when two or more of your funds hold the same stocks, which can lead to 'false diversification' and concentrated risk. Our calculator helps you identify these common holdings." },
+        { "q": "What is mutual fund overlap?", "a": "Mutual fund overlap occurs when two or more of your funds hold the same stocks, which can lead to 'false diversification' and concentrated risk. Our calculator helps you identify these common holdings." },
         { "q": "How do you calculate mutual fund overlap %?", "a": "We use a weighted overlap formula by summing the minimum weight of each common stock between funds. This gives a more accurate measure of concentration than simple counts." },
         { "q": "How much overlap is too much between two mutual funds?", "a": "Generally, an overlap above 30% is considered high and warrants a review. Above 50-60% is very high, suggesting the funds are too similar and you should consider consolidating to avoid duplicate costs." },
         { "q": "How to check overlap between two mutual funds in India?", "a": "Use our free Mutual Fund Overlap Calculator. Simply paste the holdings of your Indian mutual funds into the tool to get an instant analysis of common stocks and sector concentration." },

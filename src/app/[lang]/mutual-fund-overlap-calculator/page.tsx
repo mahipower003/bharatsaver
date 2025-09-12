@@ -66,19 +66,23 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     "description": dictionary.mutual_fund_overlap_calculator.meta_description
   };
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": dictionary.mutual_fund_overlap_calculator.faq.faqs.map((faq: { q: string, a: string }) => ({
-      "@type": "Question",
-      "name": faq.q,
-      "acceptedAnswer": { "@type": "Answer", "text": faq.a }
-    }))
-  };
+  const faqItems = dictionary.mutual_fund_overlap_calculator.faq.faqs;
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqItems.map((faq: { q: string, a: string }) => ({
+            "@type": "Question",
+            "name": faq.q,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.a.replace(/<[^>]*>?/gm, '') // Strip HTML tags for clean schema
+            }
+        }))
+    };
 
   return {
-    title: dictionary.mutual_fund_overlap_calculator.meta_title,
-    description: dictionary.mutual_fund_overlap_calculator.meta_description,
+    title: "Mutual Fund Overlap Calculator India 2025 — Check Stock Overlap & Reduce Concentration",
+    description: "Free Mutual Fund Overlap Calculator (India). Paste or add fund holdings to find common stocks, sector overlap, and actionable steps to improve diversification.",
     alternates: {
       canonical: pageUrl,
       languages: i18nConfig.locales.reduce((acc, locale) => {
@@ -87,8 +91,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       }, {} as Record<string, string>),
     },
     openGraph: {
-      title: dictionary.mutual_fund_overlap_calculator.meta_title,
-      description: dictionary.mutual_fund_overlap_calculator.meta_description,
+      title: "Mutual Fund Overlap Calculator India 2025 — Check Stock Overlap & Reduce Concentration",
+      description: "Free Mutual Fund Overlap Calculator (India). Paste or add fund holdings to find common stocks, sector overlap, and actionable steps to improve diversification.",
       url: pageUrl,
       images: [{ url: ogImageUrl, width: 1200, height: 630, alt: 'Mutual Fund Overlap Calculator Report' }],
       locale: 'en_IN',
@@ -96,8 +100,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     },
     twitter: {
       card: 'summary_large_image',
-      title: dictionary.mutual_fund_overlap_calculator.meta_title,
-      description: dictionary.mutual_fund_overlap_calculator.meta_description,
+      title: "Mutual Fund Overlap Calculator India 2025 — Check Stock Overlap & Reduce Concentration",
+      description: "Free Mutual Fund Overlap Calculator (India). Paste or add fund holdings to find common stocks, sector overlap, and actionable steps to improve diversification.",
       images: [ogImageUrl]
     },
     other: {
