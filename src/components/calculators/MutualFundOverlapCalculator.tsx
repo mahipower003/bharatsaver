@@ -200,8 +200,8 @@ export function MutualFundOverlapCalculator({ dictionary, allFundsData }: Mutual
                                 <TableHead className="text-right font-bold">{dictionary.results.min_weight_header}</TableHead>
                             </TableRow></TableHeader>
                             <TableBody>
-                                {pair.common_holdings.slice(0,10).map((stock) => (
-                                    <TableRow key={stock.company}>
+                                {pair.common_holdings.slice(0,10).map((stock, idx) => (
+                                    <TableRow key={`${stock.company}-${idx}`}>
                                         <TableCell className="font-medium">{stock.company}</TableCell>
                                         <TableCell className="text-right">{stock.weight_a > 0 ? `${stock.weight_a.toFixed(2)}%` : '-'}</TableCell>
                                         <TableCell className="text-right">{stock.weight_b > 0 ? `${stock.weight_b.toFixed(2)}%` : '-'}</TableCell>
