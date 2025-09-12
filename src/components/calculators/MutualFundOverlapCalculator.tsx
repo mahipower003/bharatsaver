@@ -11,13 +11,11 @@ import type { Dictionary } from '@/types';
 import { funds as allFunds, type FundPortfolio } from '@/data/mutual-fund-holdings';
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList, CommandDialog } from '@/components/ui/command';
 import { cn } from '@/lib/utils';
-import { DialogTitle } from '../ui/dialog';
+import { DialogTitle } from '@radix-ui/react-dialog';
 
-type Fund = {
+
+type Fund = FundPortfolio & {
   id: number;
-  name: string;
-  holdings: Holding[];
-  schemeCode: string;
 };
 
 type Holding = {
@@ -31,95 +29,84 @@ type OverlapResult = {
   topOverlapStocks: (Holding & { minWeight: number; perFund: number[] })[];
 };
 
-/**
- * Calculates the overlap between a list of mutual funds.
- * This is the corrected and robust implementation.
- */
 const calculateOverlap = (funds: Fund[]): OverlapResult | null => {
-    // Need at least two funds to compare.
-    if (funds.length < 2) {
-      return null;
+  if (!funds || funds.length < 2) {
+    return null;
+  }
+
+  const stockMap = new Map<string, { weights: number[]; sector: string }>();
+
+  funds.forEach((fund, fundIndex) => {
+    if (!fund.holdings) return;
+    fund.holdings.forEach(holding => {
+      if (!stockMap.has(holding.name)) {
+        stockMap.set(holding.name, { weights: Array(funds.length).fill(0), sector: holding.sector });
+      }
+      stockMap.get(holding.name)!.weights[fundIndex] = holding.weight;
+    });
+  });
+
+  const commonStocks: (Holding & { minWeight: number; perFund: number[] })[] = [];
+  let totalWeightedOverlap = 0;
+
+  stockMap.forEach((data, stockName) => {
+    const fundsWithStockCount = data.weights.filter(w => w > 0).length;
+    
+    // A stock is common if it appears in at least two of the selected fund slots.
+    if (fundsWithStockCount >= 2) {
+      const nonZeroWeights = data.weights.filter(w => w > 0);
+      const minWeight = Math.min(...nonZeroWeights);
+      
+      totalWeightedOverlap += minWeight;
+
+      commonStocks.push({
+        name: stockName,
+        weight: 0,
+        sector: data.sector,
+        minWeight,
+        perFund: data.weights,
+      });
     }
+  });
 
-    // A map to hold all unique stocks and their weights across all selected funds.
-    // Key: Stock Name, Value: Array of weights corresponding to the funds array.
-    const stockMap = new Map<string, { weights: number[]; sector: string }>();
+  commonStocks.sort((a, b) => b.minWeight - a.minWeight);
 
-    // Populate the stockMap.
-    funds.forEach((fund, fundIndex) => {
-        if (!fund.holdings) return;
-        fund.holdings.forEach(holding => {
-            if (!stockMap.has(holding.name)) {
-                // If stock is new, initialize its weight array for all funds.
-                stockMap.set(holding.name, { weights: Array(funds.length).fill(0), sector: holding.sector });
-            }
-            // Set the weight for the current fund.
-            stockMap.get(holding.name)!.weights[fundIndex] = holding.weight;
-        });
-    });
-
-    const commonStocks: (Holding & { minWeight: number; perFund: number[] })[] = [];
-    let totalWeightedOverlap = 0;
-
-    // Iterate over every unique stock found.
-    stockMap.forEach((data, stockName) => {
-        // Find how many of the selected funds hold this stock.
-        const fundsWithStockCount = data.weights.filter(w => w > 0).length;
-
-        // A stock is "common" if it appears in at least two of the selected fund slots.
-        if (fundsWithStockCount >= 2) {
-            // Get all the non-zero weights for this stock to find the minimum.
-            const nonZeroWeights = data.weights.filter(w => w > 0);
-            const minWeight = Math.min(...nonZeroWeights);
-            
-            // Add the minimum weight to the total overlap.
-            totalWeightedOverlap += minWeight;
-
-            // Add the stock to our list of common stocks for display.
-            commonStocks.push({
-                name: stockName,
-                weight: 0, // Not used, minWeight is the key metric.
-                sector: data.sector,
-                minWeight,
-                perFund: data.weights, // The full array of weights for display.
-            });
-        }
-    });
-
-    // Sort stocks by the most significant overlap first.
-    commonStocks.sort((a, b) => b.minWeight - a.minWeight);
-
-    return {
-        weightedOverlap: Number(totalWeightedOverlap.toFixed(2)),
-        topOverlapStocks: commonStocks,
-    };
+  return {
+    weightedOverlap: Number(totalWeightedOverlap.toFixed(2)),
+    topOverlapStocks: commonStocks,
+  };
 };
-
 
 const getDefaultFunds = (): Fund[] => {
     if (!allFunds || allFunds.length < 2) return [];
     const initialFundsData = allFunds.slice(0, 2);
     return initialFundsData.map((f, i) => ({
+      ...f,
       id: i + 1,
-      name: f.schemeName,
-      holdings: f.holdings,
-      schemeCode: f.schemeCode,
     }));
 };
 
 
 export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictionary['mutual_fund_overlap_calculator'] }) {
-    const [funds, setFunds] = useState<Fund[]>(getDefaultFunds);
+    const [funds, setFunds] = useState<Fund[]>([]);
     const [overlapResult, setOverlapResult] = useState<OverlapResult | null>(null);
     
     useEffect(() => {
-        const result = calculateOverlap(funds);
-        setOverlapResult(result);
+        // Initialize with default funds on mount
+        const defaultFunds = getDefaultFunds();
+        setFunds(defaultFunds);
+    }, []);
+
+    useEffect(() => {
+        if (funds.length > 0) {
+            const result = calculateOverlap(funds);
+            setOverlapResult(result);
+        }
     }, [funds]);
 
   const exportCSV = () => {
     if (!overlapResult) return;
-    const headers = ["Stock Name", ...funds.map((f) => `"${f.name.replace(/"/g, '""')}"`), "MinWeight"];
+    const headers = ["Stock Name", ...funds.map((f) => `"${f.schemeName.replace(/"/g, '""')}"`), "MinWeight"];
     const rows = overlapResult.topOverlapStocks.map(r => 
         [`"${r.name.replace(/"/g, '""')}"`, ...r.perFund.map((w) => w.toFixed(2)), r.minWeight.toFixed(4)].join(",")
     );
@@ -156,10 +143,8 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
     const nextFundData = allFunds.find(f => !funds.some(selected => selected.schemeCode === f.schemeCode));
     if (nextFundData) {
         setFunds(prev => [...prev, { 
+            ...nextFundData,
             id: nextId, 
-            name: nextFundData.schemeName, 
-            holdings: nextFundData.holdings, 
-            schemeCode: nextFundData.schemeCode 
         }]);
     }
   };
@@ -177,9 +162,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
       f.id === fundId 
       ? {
         ...f,
-        name: selectedFundData.schemeName,
-        holdings: selectedFundData.holdings,
-        schemeCode: selectedFundData.schemeCode,
+        ...selectedFundData
       } 
       : f
     ));
@@ -241,7 +224,7 @@ export function MutualFundOverlapCalculator({ dictionary }: { dictionary: Dictio
                     <Table>
                         <TableHeader><TableRow>
                             <TableHead>{dictionary.results.stock_header}</TableHead>
-                            {funds.map((f) => <TableHead key={f.id} className="text-right truncate max-w-[150px]">{f.name}</TableHead>)}
+                            {funds.map((f) => <TableHead key={f.id} className="text-right truncate max-w-[150px]">{f.schemeName}</TableHead>)}
                             <TableHead className="text-right font-bold">{dictionary.results.min_weight_header}</TableHead>
                         </TableRow></TableHeader>
                         <TableBody>
@@ -286,7 +269,7 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: FundPort
         className="w-[300px] justify-between"
         onClick={() => setOpen(true)}
       >
-        <span className="truncate">{selectedFund.name}</span>
+        <span className="truncate">{selectedFund.schemeName}</span>
         <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
       </Button>
       <CommandDialog open={open} onOpenChange={setOpen}>

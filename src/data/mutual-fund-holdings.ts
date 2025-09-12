@@ -1,39 +1,51 @@
 
 import type { FundPortfolio } from '@/types';
-import rawData from './mutual-fund-data.json';
 
-function processFundData(data: any[]): FundPortfolio[] {
-  // Ensure rawData is an array before processing
-  if (!Array.isArray(data)) {
-    console.error("Mutual fund data is not in the expected array format.");
-    return [];
-  }
-
-  return data.map((fund: any, index: number) => {
-    // Ensure constituents is an array, provide an empty one if not
-    const constituents = Array.isArray(fund.constituents) ? fund.constituents : [];
-
-    const holdings = constituents
-      // Filter out any holdings that are not valid objects or have null/undefined weight_pct
-      .filter((c: any) => c && typeof c === 'object' && c.weight_pct !== null && typeof c.weight_pct === 'number' && c.company)
-      .map((c: any) => ({
-        name: c.company,
-        weight: c.weight_pct,
-        // The source JSON does not have a sector, so we default it.
-        sector: 'Unknown',
-      }));
-
-    // Create a unique, stable schemeCode for each fund
-    const schemeName = fund.fund_name || `Unknown Fund ${index}`;
-    const schemeCode = schemeName.toUpperCase().replace(/[^A-Z0-9]/g, '_') + `_${index}`;
-
-    return {
-      schemeCode,
-      schemeName,
-      holdings,
-    };
-  });
-}
-
-// Export the processed and cleaned fund data
-export const funds: FundPortfolio[] = processFundData(rawData);
+// This is a sample data structure. In a real application, this would be fetched from an API or a more complete JSON file.
+// The original `mutual-fund-data.json` was missing the actual holdings data.
+export const funds: FundPortfolio[] = [
+    {
+        schemeCode: "119550",
+        schemeName: "Quant Small Cap Fund",
+        holdings: [
+            { name: "Reliance Industries Ltd.", weight: 9.8, sector: "Energy" },
+            { name: "Housing Development Finance Corporation Ltd.", weight: 6.5, sector: "Financials" },
+            { name: "IRB Infrastructure Developers Ltd.", weight: 4.2, sector: "Industrials" },
+            { name: "Hindustan Copper Ltd.", weight: 3.8, sector: "Materials" },
+            { name: "RBL Bank Ltd.", weight: 3.5, sector: "Financials" },
+        ]
+    },
+    {
+        schemeCode: "105933",
+        schemeName: "Nippon India Small Cap Fund",
+        holdings: [
+            { name: "Tube Investments of India Ltd.", weight: 2.1, sector: "Consumer Discretionary" },
+            { name: "HDFC Bank Ltd.", weight: 1.9, sector: "Financials" },
+            { name: "Apar Industries Ltd.", weight: 1.8, sector: "Industrials" },
+            { name: "IDFC Ltd.", weight: 1.6, sector: "Financials" },
+            { name: "KPIT Technologies Ltd.", weight: 1.5, sector: "Information Technology" },
+        ]
+    },
+    {
+        schemeCode: "120566",
+        schemeName: "HDFC Small Cap Fund",
+        holdings: [
+            { name: "Bank of Baroda", weight: 3.4, sector: "Financials" },
+            { name: "Bajaj Electricals Ltd.", weight: 2.8, sector: "Consumer Discretionary" },
+            { name: "Firstsource Solutions Ltd.", weight: 2.7, sector: "Information Technology" },
+            { name: "Reliance Industries Ltd.", weight: 2.5, sector: "Energy" }, // Overlap with Quant
+            { name: "Sonata Software Ltd.", weight: 2.4, sector: "Information Technology" },
+        ]
+    },
+    {
+        schemeCode: "119662",
+        schemeName: "Parag Parikh Flexi Cap Fund",
+        holdings: [
+            { name: "HDFC Bank Ltd.", weight: 8.5, sector: "Financials" },
+            { name: "Bajaj Holdings & Investment Ltd.", weight: 7.2, sector: "Financials" },
+            { name: "ITC Ltd.", weight: 6.1, sector: "Consumer Staples" },
+            { name: "Alphabet Inc. (Google)", weight: 5.8, sector: "Communication Services" },
+            { name: "Microsoft Corporation", weight: 5.5, sector: "Information Technology" },
+        ]
+    }
+];
