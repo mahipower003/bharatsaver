@@ -39,7 +39,7 @@ interface FundData {
   holdingsCount: number;
 }
 
-interface CommonHolding {
+export interface CommonHolding {
   company: string;
   ticker: string;
   weight_a: number;
@@ -47,7 +47,7 @@ interface CommonHolding {
   min_weight: number;
 }
 
-interface PairwiseResult {
+export interface PairwiseResult {
   fund_a: string;
   fund_b: string;
   coverage_a: number;
