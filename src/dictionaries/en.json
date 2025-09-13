@@ -1275,13 +1275,13 @@
       { "q": "What date are the fund rules or pension rules based on?", "a": "The calculations are based on the latest rules and circulars available as of the 'Last Updated' date mentioned in our Methodology section." },
       { "q": "Can this calculator handle family pension for multiple beneficiaries?", "a": "This calculator primarily estimates the pension for a single spouse beneficiary. Rules for other dependents can be complex and should be verified with official sources." }
     ],
-    "ctas": {
-      "h2": "Get Help — Book a consultation / Download Excel / Share results",
-      "body": "Get a personalised pension plan or download your calculation as an Excel template. Share your results with family or a financial advisor."
-    },
     "disclaimer": {
       "title": "References &amp; Legal Disclaimer",
       "body": "This is an illustrative tool and not financial advice. Please consult official government circulars and a qualified financial advisor for binding calculations."
+    },
+    "conclusion": {
+      "title": "Your Next Steps",
+      "body": "The Unified Pension Scheme offers a stable and predictable income for your retirement. Use this calculator as a starting point to understand your potential pension, and consult with a financial advisor to build a comprehensive retirement plan that includes other investments like PPF, NPS, and mutual funds."
     }
   },
   "scheme_selector": {
@@ -1307,5 +1307,3 @@
     "result_reasoning": "Why we recommend this:"
   }
 }
-
-    

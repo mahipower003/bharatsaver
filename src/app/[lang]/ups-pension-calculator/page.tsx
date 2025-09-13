@@ -167,7 +167,7 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
                 </CardHeader>
                 <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.optimization.body }} />
             </Card>
-
+            
             <Card id="methodology" className="mt-12 text-sm text-muted-foreground">
                 <CardHeader>
                     <CardTitle className="text-lg flex items-center gap-2">
@@ -177,8 +177,6 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
                 </CardHeader>
                 <CardContent className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dict.methodology.body }}/>
             </Card>
-
-            <AuthorCard dictionary={dictionary.author_card} />
             
             <div className="mt-12">
                 <h2 className="text-2xl font-bold text-center mb-6">{dict.faq_title}</h2>
@@ -193,20 +191,20 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
                 ))}
                 </Accordion>
             </div>
-            
-            <Card className="mt-12 shadow-lg">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3">
-                  <Download className="h-7 w-7 text-primary"/>
-                  <h2 className="text-2xl font-bold">{dict.ctas.h2}</h2>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">{dict.ctas.body}</p>
-              </CardContent>
-            </Card>
         </div>
         
+        <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-3">
+              <Star className="h-7 w-7 text-accent" />
+              <h2 className="text-2xl font-bold">{dict.conclusion.title}</h2>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-muted-foreground">{dict.conclusion.body}</p>
+          </CardContent>
+        </Card>
+
         <Alert variant="destructive" className="mt-8">
           <AlertTriangle className="h-4 w-4" />
           <AlertTitle>{dict.disclaimer.title}</AlertTitle>
@@ -214,6 +212,8 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
             {dict.disclaimer.body}
           </AlertDescription>
         </Alert>
+
+        <AuthorCard dictionary={dictionary.author_card} />
 
       </div>
     </div>
