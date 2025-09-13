@@ -105,6 +105,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 export default async function UpsPensionCalculatorPage({ params }: { params: { lang: Locale }}) {
   const dictionary = await getDictionary(params.lang, ['ups_pension_calculator', 'author_card']);
   const dict = dictionary.ups_pension_calculator;
+  const workedExamplesTable = dict.worked_examples_table;
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -156,6 +157,35 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
                   </div>
                 </CardContent>
             </Card>
+
+            {workedExamplesTable && (
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-3"><TableIcon className="h-6 w-6 text-primary" />{workedExamplesTable.h2}</CardTitle>
+                  <CardDescription>{workedExamplesTable.description}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Table>
+                    <TableHeader>
+                      <TableRow>
+                        {workedExamplesTable.headers.map((header: string, index: number) => (
+                            <TableHead key={index} className={index > 0 ? 'text-right' : ''}>{header}</TableHead>
+                        ))}
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                        {workedExamplesTable.rows.map((row: string[], rowIndex: number) => (
+                            <TableRow key={rowIndex}>
+                                {row.map((cell: string, cellIndex: number) => (
+                                    <TableCell key={cellIndex} className={cellIndex > 0 ? 'text-right' : 'font-medium'}>{cell}</TableCell>
+                                ))}
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                  </Table>
+                </CardContent>
+              </Card>
+            )}
 
             <Card>
                 <CardHeader>

@@ -1117,58 +1117,66 @@
     }
   },
   "mutual_fund_overlap_calculator": {
-    "meta_title": "మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ క్యాలిక్యులేటర్ — ఫండ్‌ల మధ్య ఓవర్‌ల్యాప్‌ను తనిఖీ చేయండి (భారతదేశం, 2025)",
-    "meta_description": "భారతీయ ఫండ్‌ల కోసం ఉచిత మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ క్యాలిక్యులేటర్ (2025). పోర్ట్‌ఫోలియో ఓవర్‌ల్యాప్ శాతం మరియు సాధారణ స్టాక్‌లను చూడటానికి 2-5 ఫండ్‌లను పక్కపక్కనే పోల్చండి. సమాచారంతో కూడిన వైవిధ్యభరిత నిర్ణయాలు తీసుకోండి.",
-    "h1": "మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ క్యాలిక్యులేటర్ భారతదేశం (2025)",
+    "meta_title": "Mutual Fund Overlap Calculator — Check for Overlap in Your Funds (India, 2025)",
+    "meta_description": "Free Mutual Fund Overlap Calculator (2025) for Indian funds. Compare 2-5 funds side-by-side to see the portfolio overlap percentage and common stocks. Make informed diversification decisions.",
+    "h1": "Mutual Fund Overlap Calculator India (2025)",
     "hero": {
-      "subtitle": "మీ మ్యూచువల్ ఫండ్‌లు రహస్యంగా ఒకేలా ఉన్నాయా? మీ నిజమైన పోర్ట్‌ఫోలియో ఓవర్‌ల్యాప్ మరియు అగ్ర సాధారణ హోల్డింగ్‌లను తక్షణమే చూడటానికి ఐదు భారతీయ ఈక్విటీ ఫండ్‌ల వరకు పోల్చండి."
+      "subtitle": "Are your mutual funds secretly the same? Compare up to five Indian equity funds to instantly see your true portfolio overlap and top common holdings."
     },
     "tool": {
-      "title": "మ్యూచువల్ ఫండ్ హోల్డింగ్‌లను పోల్చండి",
-      "add_fund": "మరొక ఫండ్‌ను జోడించండి",
-      "export_csv": "CSVని ఎగుమతి చేయండి",
-      "copy_summary": "సారాంశాన్ని కాపీ చేయండి"
+      "title": "Compare Mutual Fund Holdings",
+      "add_fund": "Add Another Fund",
+      "export_csv": "Export CSV",
+      "copy_summary": "Copy Summary"
     },
     "what_is_overlap": {
-      "h2": "మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ అంటే ఏమిటి & అది ఎందుకు ముఖ్యం?",
-      "body": "మీ పోర్ట్‌ఫోలియోలోని రెండు లేదా అంతకంటే ఎక్కువ ఫండ్‌లు ఒకే స్టాక్‌లను కలిగి ఉన్నప్పుడు మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ సంభవిస్తుంది. కొంత ఓవర్‌ల్యాప్ సాధారణమైనప్పటికీ (ముఖ్యంగా లార్జ్-క్యాప్ ఫండ్‌లలో), అధిక ఓవర్‌ల్యాప్ <strong>అతి-గాఢత</strong> మరియు <strong>‘వైవిధ్యభరిత’</strong>కి దారితీయవచ్చు — ఇక్కడ మీరు వైవిధ్యభరితంగా ఉన్నారని అనుకుంటారు కానీ వాస్తవానికి అవే అంతర్లీన ఆస్తులను కలిగి ఉంటారు. ఈ క్యాలిక్యులేటర్ ఆ దాచిన ప్రమాదాన్ని వెలికితీయడానికి మీకు సహాయపడుతుంది."
+      "h2": "What is Mutual Fund Overlap & Why Does It Matter?",
+      "body": "Mutual fund overlap occurs when two or more funds in your portfolio hold the same stocks. While some overlap is normal (especially in large-cap funds), high overlap can lead to <strong>over-concentration</strong> and <strong>‘diworsification’</strong> — where you think you're diversified but are actually holding the same underlying assets. This calculator helps you uncover that hidden risk."
     },
     "how_it_works": {
-      "h2": "మా మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ క్యాలిక్యులేటర్ ఎలా పనిచేస్తుంది",
-      "body": "మా సాధనం మీరు ఎంచుకున్న ఫండ్‌ల హోల్డింగ్‌లను పోల్చి <strong>భారిత ఓవర్‌ల్యాప్</strong>ను లెక్కిస్తుంది. ఈ మెట్రిక్ మీ పోర్ట్‌ఫోలియోలో ఎంత శాతం రెండు ఫండ్‌ల మధ్య నకిలీ చేయబడిందో చెబుతుంది, ప్రతి సాధారణ స్టాక్ కోసం చిన్న బరువుల ఆధారంగా.<br/><br/><strong>ఉదాహరణ:</strong> ఫండ్ A ఐసిఐసిఐ బ్యాంక్‌లో 5% మరియు ఫండ్ B 6% కలిగి ఉంటే, ఆ స్టాక్ నుండి ఓవర్‌ల్యాప్ కంట్రిబ్యూషన్ 5% (రెండింటిలో కనిష్టం). మేము మొత్తం భారిత ఓవర్‌ల్యాప్ పొందడానికి అన్ని సాధారణ స్టాక్‌ల కోసం దీన్ని కూడతాము."
+      "h2": "How Our Mutual Fund Overlap Calculator Works",
+      "body": "Our tool compares the holdings of the funds you select and calculates the <strong>weighted overlap</strong>. This metric tells you what percentage of your portfolio is duplicated between two funds, based on the smaller of the weights for each common stock.<br/><br/><strong>Example:</strong> If Fund A holds 5% in ICICI Bank and Fund B holds 6%, the overlap contribution from that stock is 5% (the minimum of the two). We sum this up for all common stocks to get the total weighted overlap."
     },
     "live_example": {
-      "h2": "లైవ్ ఉదాహరణ: ఐసిఐసిఐ ప్రూ బ్లూచిప్ వర్సెస్ హెచ్‌డిఎఫ్‌సి టాప్ 100",
-      "intro": "ఇక్కడ ఒక సాధారణ పోలికను చూపించే ఒక ముందు-రెండర్ చేయబడిన ఉదాహరణ. ఫండ్‌లలో <strong>27.02%</strong> భారిత ఓవర్‌ల్యాప్ ఉంది.",
-      "result_summary": "ఇది <strong>మధ్యస్థ</strong> స్థాయి ఓవర్‌ల్యాప్, ఇది ఒకే విధమైన బెంచ్‌మార్క్‌లను ట్రాక్ చేసే లార్జ్-క్యాప్ ఫండ్‌లకు సాధారణం. మొదటి 5 సాధారణ స్టాక్‌లు మాత్రమే ఈ ఓవర్‌ల్యాప్‌కు 18% కంటే ఎక్కువ దోహదం చేస్తాయి.",
-      "top_stocks_title": "అగ్ర 5 ఓవర్‌ల్యాపింగ్ స్టాక్‌లు"
+      "h2": "Live Example: ICICI Pru Bluechip vs HDFC Top 100",
+      "intro": "Here's a pre-rendered example showing a typical comparison. The funds have a weighted overlap of <strong>27.02%</strong>.",
+      "result_summary": "This is a <strong>Moderate</strong> level of overlap, common for large-cap funds tracking similar benchmarks. The top 5 common stocks alone contribute over 18% to this overlap.",
+      "top_stocks_title": "Top 5 Overlapping Stocks",
+      "top_stocks": [
+        { "name": "ICICI Bank", "weight": "5.21%" },
+        { "name": "Infosys", "weight": "4.67%" },
+        { "name": "Axis Bank", "weight": "2.34%" },
+        { "name": "Bharti Airtel", "weight": "3.12%" },
+        { "name": "State Bank of India", "weight": "2.98%" }
+      ]
     },
     "interpreting_results": {
-      "h2": "మీ ఓవర్‌ల్యాప్ స్కోర్‌ను ఎలా అన్వయించాలి",
-      "body": "<ul><li><strong>తక్కువ (0-15%):</strong> మంచి వైవిధ్యం. ఫండ్‌లకు విభిన్న వ్యూహాలు ఉన్నాయి.</li><li><strong>మధ్యస్థం (15-30%):</strong> ఒకే వర్గంలోని ఫండ్‌లకు సాధారణం (ఉదా., లార్జ్-క్యాప్). మీరు భాగస్వామ్య బహిర్గతంతో సౌకర్యంగా ఉన్నారని నిర్ధారించుకోవడానికి సమీక్షించండి.</li><li><strong>అధికం (30-50%):</strong> ముఖ్యమైన ఓవర్‌ల్యాప్. మీరు ఒకే స్టాక్‌ల కోసం రెండు సెట్ల ఫీజులు చెల్లిస్తూ ఉండవచ్చు. ఏకీకృతం చేయడాన్ని పరిగణించండి.</li><li><strong>చాలా అధికం (>50%):</strong> ఫండ్‌లు ఆచరణాత్మకంగా క్లోన్‌లు. వైవిధ్యాన్ని మెరుగుపరచడానికి ఒకదానిని భర్తీ చేయడం చాలా సిఫార్సు చేయబడింది.</li></ul>"
+      "h2": "How to Interpret Your Overlap Score",
+      "body": "<ul><li><strong>Low (0-15%):</strong> Good diversification. The funds have distinct strategies.</li><li><strong>Moderate (15-30%):</strong> Common for funds in the same category (e.g., large-cap). Review to ensure you are comfortable with the shared exposure.</li><li><strong>High (30-50%):</strong> Significant overlap. You may be paying two sets of fees for the same stocks. Consider consolidating.</li><li><strong>Very High (>50%):</strong> The funds are practically clones. Replacing one to improve diversification is highly recommended.</li></ul>"
     },
     "what_to_do": {
-      "h2": "మీకు అధిక ఓవర్‌ల్యాప్ ఉంటే ఏమి చేయాలి",
-      "body": "మీకు అధిక ఓవర్‌ల్యాప్ కనిపిస్తే, భయపడవద్దు. ఫండ్‌లలో ఒకదానిని వేరే వ్యూహం లేదా మార్కెట్-క్యాప్ ఫోకస్‌తో ఉన్న మరొకదానితో భర్తీ చేయడాన్ని పరిగణించండి. ఉదాహరణకు, రెండు లార్జ్-క్యాప్ ఫండ్‌లు ఓవర్‌ల్యాప్ అయితే, మీరు నిజమైన వైవిధ్యాన్ని సాధించడానికి ఒకదానిని మిడ్-క్యాప్ లేదా సెక్టార్-నిర్దిష్ట ఫండ్‌గా మార్చవచ్చు."
+      "h2": "What to Do If You Have High Overlap",
+      "body": "If you find high overlap, don't panic. Consider replacing one of the funds with another that has a different strategy or market-cap focus. For example, if two large-cap funds overlap, you might switch one to a mid-cap or sector-specific fund to achieve true diversification.",
+      "tax_considerations": "<strong>Tax Considerations:</strong> Before selling, be aware of the tax implications. Short-term capital gains (within 1 year) and long-term capital gains on equity funds are taxed differently. Consult a tax advisor to make the most tax-efficient decision."
     },
     "faq": {
-      "h2": "తరచుగా అడిగే ప్రశ్నలు",
+      "h2": "Frequently Asked Questions",
       "faqs": [
-        { "q": "మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ ఎలా లెక్కించబడుతుంది?", "a": "రెండు ఫండ్‌లు కలిగి ఉన్న ప్రతి సాధారణ స్టాక్ యొక్క కనీస బరువును కూడటం ద్వారా మేము భారిత ఓవర్‌ల్యాప్‌ను లెక్కిస్తాము. సూత్రం: అన్ని సాధారణ స్టాక్‌ల కోసం Σ min(Weight_Fund_A, Weight_Fund_B)." },
-        { "q": "మ్యూచువల్ ఫండ్‌లలో 30% ఓవర్‌ల్యాప్ చెడ్డదా?", "a": "30% ఓవర్‌ల్యాప్ అధికంగా పరిగణించబడుతుంది. 'చెడ్డది' అని అవసరం లేనప్పటికీ, మీరు ఒకే విధమైన హోల్డింగ్‌ల కోసం రెండు వ్యయ నిష్పత్తులను చెల్లిస్తూ ఉండవచ్చని ఇది సూచిస్తుంది, ఇది వైవిధ్యాన్ని తగ్గిస్తుంది. మీ పోర్ట్‌ఫోలియోకు రెండు ఫండ్‌లు అవసరమా అని సమీక్షించడం విలువ." },
-        { "q": "మీరు మ్యూచువల్ ఫండ్‌లలో ఓవర్‌ల్యాప్‌ను ఎలా తనిఖీ చేస్తారు?", "a": "మా క్యాలిక్యులేటర్‌లోని డ్రాప్‌డౌన్ మెనూల నుండి 2 నుండి 5 భారతీయ ఈక్విటీ ఫండ్‌లను ఎంచుకోండి. సాధనం స్వయంచాలకంగా తాజా హోల్డింగ్స్ డేటాను పొందుతుంది మరియు మీ కోసం జతవారీ ఓవర్‌ల్యాప్‌ను లెక్కిస్తుంది." },
-        { "q": "ఏ రకమైన ఫండ్‌లలో ఎక్కువ ఓవర్‌ల్యాప్ ఉంటుంది?", "a": "లార్జ్-క్యాప్ మరియు ఇండెక్స్ ఫండ్‌లలో ఎక్కువ ఓవర్‌ల్యాప్ ఉంటుంది ఎందుకంటే అవి ఒకే విధమైన బెంచ్‌మార్క్‌లను (నిఫ్టీ 50 లేదా సెన్సెక్స్ వంటివి) ట్రాక్ చేస్తాయి మరియు అగ్ర బ్లూ-చిప్ కంపెనీల అదే సెట్‌లో పెట్టుబడి పెడతాయి." }
+        { "q": "How is mutual fund overlap calculated?", "a": "We calculate weighted overlap by summing up the minimum weight of each common stock held by two funds. The formula is: Σ min(Weight_Fund_A, Weight_Fund_B) for all common stocks." },
+        { "q": "Is 30% overlap in mutual funds bad?", "a": "A 30% overlap is considered high. While not necessarily 'bad', it suggests you may be paying two expense ratios for very similar holdings, which reduces diversification. It's worth reviewing if both funds are needed in your portfolio." },
+        { "q": "How do you check overlap in mutual funds?", "a": "Simply select 2 to 5 Indian equity funds from the dropdown menus in our calculator. The tool will automatically fetch the latest holdings data and compute the pairwise overlap for you." },
+        { "q": "Which type of funds have the most overlap?", "a": "Large-cap and index funds tend to have the most overlap because they track similar benchmarks (like the Nifty 50 or Sensex) and invest in the same set of top blue-chip companies." }
       ]
     },
     "methodology": {
-      "h2": "డేటా & పద్ధతి",
-      "body": "<p><strong>డేటా మూలం:</strong> మా హోల్డింగ్స్ డేటా పబ్లిక్‌గా అందుబాటులో ఉన్న పథక పత్రాల నుండి తీసుకోబడింది మరియు కాలానుగుణంగా నవీకరించబడుతుంది. మేము ఖచ్చితత్వం కోసం ప్రయత్నిస్తున్నప్పుడు, మేము దానిని హామీ ఇవ్వలేము. ఎల్లప్పుడూ అధికారిక ఏఎంసి ఫ్యాక్ట్‌షీట్‌లతో ధృవీకరించండి. <strong>చివరిగా నవీకరించబడింది: ఆగస్టు 2025।</strong></p><p><strong>మ్యాచింగ్ తర్కం:</strong> హోల్డింగ్స్ మొదట వాటి స్టాక్ టిక్కర్ ద్వారా (ఉదా. 'RELIANCE') సరిపోల్చబడతాయి. టిక్కర్ అందుబాటులో లేకపోతే, మేము ఒక సాధారణీకరించిన కంపెనీ పేరును (ఉదా. 'reliance industries' 'Ltd', 'Inc', మొదలైనవి తీసివేసిన తర్వాత) ఉపయోగిస్తాము. 'క్యాష్', 'ట్రైపార్టీ రెపో', లేదా 'నెట్ రిసీవబుల్స్' వంటి నాన్-ఈక్విటీ హోల్డింగ్‌లు సాధారణ పదాల కోసం ఒక రెజెక్స్ మ్యాచ్ ఆధారంగా లెక్కింపు నుండి మినహాయించబడతాయి.</p><p><strong>పని చేసిన ఉదాహరణ (భారిత ఓవర్‌ల్యాప్):</strong></p><p>భారిత ఓవర్‌ల్యాప్ = అన్ని సాధారణ స్టాక్‌ల కోసం Σ min(ఫండ్ Aలో బరువు, ఫండ్ Bలో బరువు).</p><div class='overflow-x-auto'><table class='w-full text-sm my-4'><thead><tr class='border-b'><th class='text-left p-2'>స్టాక్</th><th class='text-right p-2'>ఫండ్ A (w%)</th><th class='text-right p-2'>ఫండ్ B (w%)</th><th class='text-right p-2'>కనిష్ట బరువు</th></tr></thead><tbody><tr class='border-b'><td class='p-2'>ఐసిఐసిఐ బ్యాంక్</td><td class='text-right p-2'>5.21</td><td class='text-right p-2'>6.03</td><td class='text-right p-2'>5.21</td></tr><tr class='border-b'><td class='p-2'>ఇన్ఫోసిస్</td><td class='text-right p-2'>4.67</td><td class='text-right p-2'>5.06</td><td class='text-right p-2'>4.67</td></tr><tr class='border-b'><td class='p-2'>యాక్సిస్ బ్యాంక్</td><td class='text-right p-2'>2.34</td><td class='text-right p-2'>3.45</td><td class='text-right p-2'>2.34</td></tr><tr class='border-b'><td class='p-2'>భారతీ ఎయిర్‌టెల్</td><td class='text-right p-2'>3.12</td><td class='text-right p-2'>4.50</td><td class='text-right p-2'>3.12</td></tr><tr class='border-b'><td class='p-2'>స్టేట్ బ్యాంక్ ఆఫ్ ఇండియా</td><td class='text-right p-2'>2.98</td><td class='text-right p-2'>3.80</td><td class='text-right p-2'>2.98</td></tr><tr><td colspan='3' class='text-right font-bold p-2'>...మరియు అన్ని 35 సాధారణ స్టాక్‌ల కోసం...</td><td class='text-right font-bold p-2'></td></tr><tr class='border-t'><td colspan='3' class='text-right font-bold p-2'>మొత్తం భారిత ఓవర్‌ల్యాప్</td><td class='text-right font-bold p-2'>27.02%</td></tr></tbody></table></div>"
+      "h2": "Data & Methodology",
+      "body": "<p><strong>Data Source:</strong> Our holdings data is sourced from publicly available scheme documents and updated periodically. While we strive for accuracy, we cannot guarantee it. Always verify with official AMC factsheets. <strong>Last updated: August 2025.</strong></p><p><strong>Matching Logic:</strong> Holdings are first matched by their stock ticker (e.g. 'RELIANCE'). If a ticker is not available, we use a normalized company name (e.g. 'reliance industries' after removing 'Ltd', 'Inc', etc.). Non-equity holdings like 'Cash', 'Triparty Repo', or 'Net Receivables' are excluded from calculations based on a regex match for common terms.</p><p><strong>Worked Example (Weighted Overlap):</strong></p><p>Weighted Overlap = Σ min(Weight in Fund A, Weight in Fund B) for all common stocks.</p><div class='overflow-x-auto'><table class='w-full text-sm my-4'><thead><tr class='border-b'><th class='text-left p-2'>Stock</th><th class='text-right p-2'>Fund A (w%)</th><th class='text-right p-2'>Fund B (w%)</th><th class='text-right p-2'>Min. Weight</th></tr></thead><tbody><tr class='border-b'><td class='p-2'>ICICI Bank</td><td class='text-right p-2'>5.21</td><td class='text-right p-2'>6.03</td><td class='text-right p-2'>5.21</td></tr><tr class='border-b'><td class='p-2'>Infosys</td><td class='text-right p-2'>4.67</td><td class='text-right p-2'>5.06</td><td class='text-right p-2'>4.67</td></tr><tr class='border-b'><td class='p-2'>Axis Bank</td><td class='text-right p-2'>2.34</td><td class='text-right p-2'>3.45</td><td class='text-right p-2'>2.34</td></tr><tr class='border-b'><td class='p-2'>Bharti Airtel</td><td class='text-right p-2'>3.12</td><td class='text-right p-2'>4.50</td><td class='text-right p-2'>3.12</td></tr><tr class='border-b'><td class='p-2'>State Bank of India</td><td class='text-right p-2'>2.98</td><td class='text-right p-2'>3.80</td><td class='text-right p-2'>2.98</td></tr><tr><td colspan='3' class='text-right font-bold p-2'>...and so on for all 35 common stocks...</td><td class='text-right font-bold p-2'></td></tr><tr class='border-t'><td colspan='3' class='text-right font-bold p-2'>Total Weighted Overlap</td><td class='text-right font-bold p-2'>27.02%</td></tr></tbody></table></div>"
     },
     "results": {
-        "weighted_overlap_title": "భారిత ఓవర్‌ల్యాప్",
-        "top_stocks_title": "అగ్ర సాధారణ స్టాక్‌లు",
-        "stock_header": "స్టాక్",
-        "min_weight_header": "కనిష్ట బరువు"
+        "weighted_overlap_title": "Weighted Overlap",
+        "top_stocks_title": "Top Common Stocks",
+        "stock_header": "Stock",
+        "min_weight_header": "Min. Weight"
     }
   },
   "ups_pension_calculator": {
@@ -1231,9 +1239,9 @@
       "body": "<p>The calculation for your monthly pension under the Unified Pension Scheme follows a standard formula used for many government pensions. It is:</p><code>Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor</code><h3>What is pensionable salary under UPS</h3><p>This is typically the average of your basic pay over the last 10 or 12 months of your service before retirement. Our calculator uses the 'Last Drawn Basic Pay' as a proxy for simplicity. The formula is:</p><code>Pensionable Salary = Basic Pay × (1 + DA Percentage / 100)</code><h3>Pension Factor & Divisor</h3><p>The <strong>Pension Factor</strong> is generally 0.5 (representing 50% of the pensionable salary as the base pension). The <strong>Divisor</strong> is often set to 33, representing the standard number of qualifying service years for a full pension in many older schemes. The UPS may have its own specific values, which we incorporate based on the latest rules.</p>"
     },
     "worked_examples": {
-      "h2": "20 Worked Examples — pension for common salaries & service lengths",
+      "h2": "How much pension will I get under UPS with basic ₹50,000",
       "scenario1": {
-        "title": "How much pension will I get under UPS with basic ₹50,000",
+        "title": "UPS pension calculation example",
         "body": "<strong>Inputs:</strong> Age 30, 30 years service, Basic Pay ₹50,000.<br/><strong>Result:</strong> We calculate the pensionable salary and apply the formula to show an estimated monthly pension of around ₹22,727."
       },
       "scenario2": {
@@ -1244,6 +1252,18 @@
         "title": "Long service, high basic pay",
         "body": "<strong>Inputs:</strong> Age 25, 35 years service, Basic Pay ₹1,00,000.<br/><strong>Result:</strong> This scenario results in a significantly higher pension of approximately ₹53,030, showing the power of a long service duration."
       }
+    },
+     "worked_examples_table": {
+      "h2": "20 Worked Examples — pension for common salaries & service lengths",
+      "description": "This table provides quick estimates for various salary and service combinations, assuming a 50% DA.",
+      "headers": ["Basic Salary", "10 Years", "15 Years", "20 Years", "25 Years", "30 Years", "35 Years"],
+      "rows": [
+        ["₹25,000", "₹5,682", "₹8,523", "₹11,364", "₹14,205", "₹17,045", "₹19,886"],
+        ["₹40,000", "₹9,091", "₹13,636", "₹18,182", "₹22,727", "₹27,273", "₹31,818"],
+        ["₹50,000", "₹11,364", "₹17,045", "₹22,727", "₹28,409", "₹34,091", "₹39,773"],
+        ["₹75,000", "₹17,045", "₹25,568", "₹34,091", "₹42,614", "₹51,136", "₹59,659"],
+        ["₹1,00,000", "₹22,727", "₹34,091", "₹45,455", "₹56,818", "₹68,182", "₹79,545"]
+      ]
     },
     "family_pension": {
       "h2": "How to calculate UPS family pension (60% example)",
