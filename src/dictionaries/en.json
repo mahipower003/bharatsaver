@@ -1124,7 +1124,6 @@
     },
     "tool": {
       "title": "Compare Mutual Fund Holdings",
-      "description": "Select at least two funds to begin.",
       "add_fund": "Add Another Fund",
       "export_csv": "Export CSV",
       "copy_summary": "Copy Summary"
@@ -1141,8 +1140,7 @@
       "h2": "Live Example — Fund A vs Fund B",
       "intro": "Let's compare two popular large-cap funds to see overlap in action: 'ICICI Pru Bluechip' vs 'HDFC Top 100'. This example is for illustrative purposes only.",
       "result_summary": "The weighted overlap between these two funds is approximately 45%. This is considered high, meaning you have significant concentration in the same large-cap names.",
-      "top_stocks_title": "Top 5 Overlapping Stocks",
-      "top_stocks": []
+      "top_stocks_title": "Top 5 Overlapping Stocks"
     },
     "interpreting_results": {
       "h2": "How to Interpret Your Overlap Score",
@@ -1252,7 +1250,7 @@
     },
     "optimization": {
       "h2": "8. How to Reduce Tax / Optimize Your UPS Pension",
-      "body": "<h3>Practical Tips</h3><ul><li><strong>Timing of Withdrawals:</strong> Plan your commutation and withdrawals to align with your overall tax strategy.</li><li><strong>Spouse Considerations:</strong> Understand the family pension rules to ensure your spouse is provided for.</li></ul><h3>When to take Annuity, SWP or other post-retirement strategies</h3><p>Your UPS pension provides a stable base. You can supplement this with income from other investments, such as a Systematic Withdrawal Plan (SWP) from mutual funds for more flexibility.</p>"
+      "body": "<h3>Practical Tips</h3><p>While UPS provides a fixed pension, you can still make smart moves to optimize your overall retirement income. Consider these tips for your UPS pension planning:</p><ul><li><strong>Spouse's Financial Plan:</strong> Ensure your spouse's investments are structured to complement your pension, creating a diversified household income.</li><li><strong>Timing of Commutation:</strong> The decision to take a lump sum (commute) versus a higher monthly pension depends on your immediate needs and other income sources. If you have a high-return investment opportunity, a lump sum might be beneficial.</li></ul><h3>When to take Annuity, SWP or other post-retirement strategies</h3><p>Your UPS pension provides a stable, risk-free base. You can build on this with other instruments:</p><ul><li><strong>Systematic Withdrawal Plan (SWP):</strong> For additional income, you can set up an SWP from your mutual fund investments. This offers more flexibility than a pension but comes with market risk.</li><li><strong>Annuity from other savings:</strong> If you have other retirement savings (e.g., from NPS or mutual funds), you can purchase an annuity for additional guaranteed income.</li></ul>"
     },
     "methodology": {
       "h2": "9. Methodology & Sources (Show your Math)",
@@ -1308,3 +1306,5 @@
     "result_reasoning": "Why we recommend this:"
   }
 }
+
+  
