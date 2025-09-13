@@ -1172,8 +1172,7 @@
         { "q": "Do you provide an API / embeddable widget?", "a": "We are planning to release an API for developers and a simple embeddable widget for financial advisors. Please contact us for early access." },
         { "q": "How accurate is the overlap calculation?", "a": "Our calculations use the latest publicly available data and standard industry formulas. However, always cross-verify with the official fund factsheet for 100% accuracy, as data reporting can have lags." },
         { "q": "How to replace a fund with a low-overlap alternative?", "a": "Identify the category of the fund you want to replace (e.g., large-cap). Then, look for funds in the same category but with a different investment style (e.g., value vs. growth) or managed by a different fund house with a distinct philosophy." },
-        { "q": "How do expense ratios affect the overlap decision?", "a": "If two funds have high overlap, you are paying two sets of fees for the same service. A good tie-breaker when deciding which fund to sell is to choose the one with the higher expense ratio, as it is a direct drag on your returns." },
-        { "q": "What is the weighted-overlap formula and why is it better?", "a": "The formula is Weighted Overlap = Σ min(wA_i, wB_i), where 'w' is the weight of a common stock 'i' in funds A and B. It's better than simple count-based methods because it measures the true portfolio concentration, giving more importance to stocks with higher allocations." }
+        { "q": "How do expense ratios affect the overlap decision?", "a": "If two funds have high overlap, you are paying two sets of fees for the same service. A good tie-breaker when deciding which fund to sell is to choose the one with the higher expense ratio, as it is a direct drag on your returns." }
       ]
     },
     "methodology": {
@@ -1198,9 +1197,17 @@
       "calculate_cta": "Calculate Pension",
       "calculating": "Calculating...",
       "try_example": "Try Example",
-      "download_excel": "Download Excel",
+      "download_excel": "Download Steps (CSV)",
       "print_results": "Print Results",
-      "share_twitter": "Share on Twitter"
+      "share_twitter": "Share on Twitter",
+      "show_steps": "Show calculation steps",
+      "hide_steps": "Hide calculation steps"
+    },
+    "calculation_steps": {
+        "title": "Step-by-Step Calculation",
+        "pensionable_salary": "Pensionable Salary",
+        "monthly_pension": "Monthly Pension",
+        "family_pension": "Family Pension"
     },
     "inputs": {
       "basic_pay": "Monthly Basic Pay (₹)",
@@ -1220,7 +1227,7 @@
     },
     "formula_section": {
       "h2": "UPS Pension Formula — Step by Step",
-      "body": "<h3>The Core Formula</h3><p>Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor. We use the official formula from NPSTRUST and government circulars.</p><h3>How to Calculate Pensionable Salary</h3><p>This is typically the average of your basic pay over the last 12 months of your service.</p><h3>Qualifying Service</h3><p>This includes full years and months of service. Any breaks in service may be deducted as per scheme rules.</p>"
+      "body": "<h3>The Core Formula</h3><p>The calculation for your monthly pension under the Unified Pension Scheme follows a standard formula used for many government pensions. It is:</p><code>Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor</code><h3>How to Calculate Pensionable Salary</h3><p>This is typically the average of your basic pay over the last 10 or 12 months of your service before retirement. Our calculator uses the 'Last Drawn Basic Pay' as a proxy for simplicity. The formula is:</p><code>Pensionable Salary = Basic Pay × (1 + DA Percentage / 100)</code><h3>Pension Factor & Divisor</h3><p>The <strong>Pension Factor</strong> is generally 0.5 (representing 50% of the pensionable salary as the base pension). The <strong>Divisor</strong> is often set to 33, representing the standard number of qualifying service years for a full pension in many older schemes. The UPS may have its own specific values, which we incorporate based on the latest rules.</p>"
     },
     "worked_examples": {
       "h2": "Worked Examples (real scenarios)",
@@ -1232,7 +1239,7 @@
         "title": "Example B — Mid-career joiner, 20 years service",
         "body": "<strong>Inputs:</strong> Age 40, 20 years service, Basic Pay ₹80,000.<br/><strong>Result:</strong> This scenario leads to a monthly pension of roughly ₹24,242, demonstrating the impact of a shorter service period despite a higher basic pay."
       },
-      "scenario3": {
+       "scenario3": {
         "title": "Example C — Long service 35 years with high basic pay",
         "body": "<strong>Inputs:</strong> Age 25, 35 years service, Basic Pay ₹1,00,000.<br/><strong>Result:</strong> This scenario results in a significantly higher pension of approximately ₹53,030, showing the power of a long service duration."
       }
@@ -1255,7 +1262,7 @@
     },
     "methodology": {
       "h2": "Methodology &amp; Sources (show your math)",
-      "body": "<p>This calculator uses data and formulas from official sources such as NPSTRUST, PFRDA circulars, and government notifications. Key assumptions include the DA percentage and commutation factors, which are subject to change. Last updated: August 2024.</p>"
+      "body": "<p>This calculator uses data and formulas from official sources such as NPSTRUST, PFRDA circulars, and government notifications. Key assumptions include the DA percentage and commutation factors, which are subject to change. Last updated: August 2024.</p><h3>Core Formula Used</h3><p>The monthly pension is calculated using a standard government pension formula:</p><code>Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor</code><p>Where:</p><ul><li><strong>Pensionable Salary:</strong> <code>Basic Pay × (1 + DA % / 100)</code></li><li><strong>Pension Factor:</strong> Assumed to be 0.5 (for 50% of pensionable salary).</li><li><strong>Qualifying Service:</strong> The number of years you have served.</li><li><strong>Divisor:</strong> A standard factor, typically 33 for full pension calculations in many schemes.</li></ul>"
     },
     "faq_title": "Frequently Asked Questions (FAQ)",
     "faqs": [

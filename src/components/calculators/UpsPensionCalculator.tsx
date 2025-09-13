@@ -5,12 +5,13 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Loader2, Building, Download, Printer, Twitter } from 'lucide-react';
+import { Loader2, Building, Download, Printer, Twitter, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import type { Dictionary } from '@/types';
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 
 const formSchema = z.object({
   basicPay: z.coerce.number().min(1000, "Basic pay seems too low"),
@@ -20,10 +21,17 @@ const formSchema = z.object({
 
 type FormValues = z.infer<typeof formSchema>;
 
+type CalculationSteps = {
+    pensionableSalary: number;
+    pensionFactor: number;
+    divisor: number;
+}
+
 type CalculationResult = {
     monthlyPension: number;
     familyPension: number;
     lumpSum: number;
+    steps: CalculationSteps;
 };
 
 type CalculatorProps = {
@@ -38,6 +46,7 @@ const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
 export function UpsPensionCalculator({ dictionary }: CalculatorProps) {
   const [result, setResult] = useState<CalculationResult | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [showSteps, setShowSteps] = useState(false);
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -53,19 +62,60 @@ export function UpsPensionCalculator({ dictionary }: CalculatorProps) {
     setResult(null);
     await new Promise(resolve => setTimeout(resolve, 500));
 
-    // Simplified UPS calculation logic for demonstration
     const pensionableSalary = values.basicPay * (1 + values.daPercentage / 100);
-    const pensionFactor = 0.5; // Example factor
-    const monthlyPension = (pensionableSalary * pensionFactor * values.qualifyingServiceYears) / 33;
+    const pensionFactor = 0.5;
+    const divisor = 33;
+    const monthlyPension = (pensionableSalary * pensionFactor * values.qualifyingServiceYears) / divisor;
     
     setResult({
-      monthlyPension: monthlyPension,
+      monthlyPension,
       familyPension: monthlyPension * 0.6, // Example
       lumpSum: monthlyPension * 12 * 5, // Example
+      steps: {
+          pensionableSalary,
+          pensionFactor,
+          divisor
+      }
     });
     
     setIsLoading(false);
   }
+  
+  const handleCSVExport = () => {
+    if (!result) return;
+    
+    const { basicPay, daPercentage, qualifyingServiceYears } = form.getValues();
+    const { steps, monthlyPension, familyPension, lumpSum } = result;
+
+    const headers = ["Parameter", "Formula / Value"];
+    const rows = [
+      ["Inputs", ""],
+      ["Basic Pay", basicPay],
+      ["DA Percentage", daPercentage],
+      ["Qualifying Service (Years)", qualifyingServiceYears],
+      ["", ""],
+      ["Calculations", ""],
+      ["Pensionable Salary", `(${basicPay} * (1 + ${daPercentage} / 100)) = ${steps.pensionableSalary.toFixed(2)}`],
+      ["Pension Factor", steps.pensionFactor],
+      ["Divisor", steps.divisor],
+      ["Monthly Pension", `(${steps.pensionableSalary.toFixed(2)} * ${steps.pensionFactor} * ${qualifyingServiceYears}) / ${steps.divisor} = ${monthlyPension.toFixed(2)}`],
+      ["Family Pension (60%)", `(${monthlyPension.toFixed(2)} * 0.6) = ${familyPension.toFixed(2)}`],
+      ["Lump Sum (Commutation Example)", `(${monthlyPension.toFixed(2)} * 12 * 5) = ${lumpSum.toFixed(2)}`],
+    ];
+    
+    let csvContent = headers.join(',') + '\n';
+    rows.forEach(row => {
+        csvContent += `"${row[0]}","${row[1]}"\n`;
+    });
+    
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.setAttribute('download', 'ups_pension_calculation_steps.csv');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   const formatCurrency = (value: number) => {
     return value.toLocaleString('en-IN', { style: 'currency', currency: 'INR', minimumFractionDigits: 0, maximumFractionDigits: 0 });
@@ -108,7 +158,7 @@ export function UpsPensionCalculator({ dictionary }: CalculatorProps) {
             <CardTitle>{dictionary.outputs.title}</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 text-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 text-center">
               <div className="bg-primary/10 p-4 rounded-lg">
                 <p className="text-sm text-muted-foreground">{dictionary.outputs.monthly_pension}</p>
                 <p className="text-2xl font-bold text-primary">{formatCurrency(result.monthlyPension)}</p>
@@ -122,8 +172,26 @@ export function UpsPensionCalculator({ dictionary }: CalculatorProps) {
                 <p className="text-xl font-bold">{formatCurrency(result.lumpSum)}</p>
               </div>
             </div>
-             <div className="flex flex-wrap items-center justify-center gap-4">
-                <Button variant="outline" size="sm"><Download className="mr-2 h-4 w-4" />{dictionary.interactive_tool.download_excel}</Button>
+
+            <Collapsible open={showSteps} onOpenChange={setShowSteps}>
+                <CollapsibleTrigger asChild>
+                    <Button variant="link" className="p-0 text-sm">
+                        {showSteps ? dictionary.interactive_tool.hide_steps : dictionary.interactive_tool.show_steps}
+                        <ChevronDown className={`ml-1 h-4 w-4 transition-transform ${showSteps ? 'rotate-180' : ''}`} />
+                    </Button>
+                </CollapsibleTrigger>
+                <CollapsibleContent className="mt-4 space-y-4 rounded-md border bg-muted/50 p-4 text-sm">
+                    <h4 className="font-semibold">{dictionary.calculation_steps.title}</h4>
+                    <div className="space-y-2">
+                        <p><strong>1. {dictionary.calculation_steps.pensionable_salary}:</strong> <code>({formatCurrency(form.getValues().basicPay)} * (1 + {form.getValues().daPercentage} / 100))</code> = <strong>{formatCurrency(result.steps.pensionableSalary)}</strong></p>
+                        <p><strong>2. {dictionary.calculation_steps.monthly_pension}:</strong> <code>({formatCurrency(result.steps.pensionableSalary)} * {result.steps.pensionFactor} * {form.getValues().qualifyingServiceYears}) / {result.steps.divisor}</code> = <strong>{formatCurrency(result.monthlyPension)}</strong></p>
+                        <p><strong>3. {dictionary.calculation_steps.family_pension}:</strong> <code>({formatCurrency(result.monthlyPension)} * 0.60)</code> = <strong>{formatCurrency(result.familyPension)}</strong></p>
+                    </div>
+                </CollapsibleContent>
+            </Collapsible>
+            
+             <div className="flex flex-wrap items-center justify-center gap-4 mt-8">
+                <Button variant="outline" size="sm" onClick={handleCSVExport}><Download className="mr-2 h-4 w-4" />{dictionary.interactive_tool.download_excel}</Button>
                 <Button variant="outline" size="sm"><Printer className="mr-2 h-4 w-4" /> {dictionary.interactive_tool.print_results}</Button>
                 <Button variant="outline" size="sm"><Twitter className="mr-2 h-4 w-4" /> {dictionary.interactive_tool.share_twitter}</Button>
              </div>
@@ -133,3 +201,4 @@ export function UpsPensionCalculator({ dictionary }: CalculatorProps) {
     </>
   );
 }
+

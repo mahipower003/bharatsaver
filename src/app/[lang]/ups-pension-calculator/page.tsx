@@ -108,6 +108,13 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
         <div className="space-y-8 mt-12">
             <Card>
                 <CardHeader>
+                    <CardTitle className="flex items-center gap-3"><HelpCircle className="h-6 w-6 text-primary" />{dict.how_it_works.h2}</CardTitle>
+                </CardHeader>
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.how_it_works.body }} />
+            </Card>
+
+            <Card>
+                <CardHeader>
                     <CardTitle className="flex items-center gap-3"><TrendingUp className="h-6 w-6 text-primary" />{dict.worked_examples.h2}</CardTitle>
                 </CardHeader>
                  <CardContent className="space-y-6">
@@ -124,13 +131,6 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
                     <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: dict.worked_examples.scenario3.body }} />
                   </div>
                 </CardContent>
-            </Card>
-
-            <Card>
-                <CardHeader>
-                    <CardTitle className="flex items-center gap-3"><HelpCircle className="h-6 w-6 text-primary" />{dict.how_it_works.h2}</CardTitle>
-                </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.how_it_works.body }} />
             </Card>
 
             <Card>
@@ -168,16 +168,6 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
                 <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.optimization.body }} />
             </Card>
             
-            <Card id="methodology" className="mt-12 text-sm text-muted-foreground">
-                <CardHeader>
-                    <CardTitle className="text-lg flex items-center gap-2">
-                        <HelpCircle className="h-5 w-5"/>
-                        <h2 className="text-2xl font-bold">{dict.methodology.h2}</h2>
-                    </CardTitle>
-                </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dict.methodology.body }}/>
-            </Card>
-            
             <div className="mt-12">
                 <h2 className="text-2xl font-bold text-center mb-6">{dict.faq_title}</h2>
                 <Accordion type="single" collapsible className="w-full">
@@ -191,6 +181,16 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
                 ))}
                 </Accordion>
             </div>
+
+            <Card id="methodology" className="mt-12 text-sm text-muted-foreground">
+                <CardHeader>
+                    <CardTitle className="text-lg flex items-center gap-2">
+                        <HelpCircle className="h-5 w-5"/>
+                        <h2 className="text-2xl font-bold">{dict.methodology.h2}</h2>
+                    </CardTitle>
+                </CardHeader>
+                <CardContent className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dict.methodology.body }}/>
+            </Card>
         </div>
         
         <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
@@ -219,3 +219,4 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
     </div>
   );
 }
+
