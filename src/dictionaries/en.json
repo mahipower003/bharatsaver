@@ -1109,6 +1109,10 @@
     "methodology": {
       "h2": "Methodology",
       "body": "The calculator uses standard time-value-of-money formulas. The required corpus is calculated as the present value of a growing annuity, and the SIP is calculated using the future value of a series formula. All calculations are for illustrative purposes only."
+    },
+    "assumptions": {
+      "title": "Calculator Assumptions",
+      "body": "The results are based on the inputs you provide and assume constant rates of return and inflation. They are for illustrative purposes and are not a guarantee of future performance. This is not financial advice."
     }
   },
   "mutual_fund_overlap_calculator": {
