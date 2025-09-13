@@ -23,20 +23,30 @@ export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCal
   const [selectedFunds, setSelectedFunds] = useState<RawFund[]>([]);
   const [overlapResult, setOverlapResult] = useState<OverlapOutput | null>(null);
   const [isCalculating, setIsCalculating] = useState(false);
-
-  // This effect runs ONLY when the fund data is loaded for the first time.
+  
+  // This effect sets the initial default funds ONCE after the main data has loaded.
   useEffect(() => {
     if (allFunds.length > 0 && selectedFunds.length === 0) {
-      const uniqueFunds = Array.from(new Map(allFunds.map(fund => [fund.fund_name, fund])).values());
-      if (uniqueFunds.length >= 2) {
-        // Set the initial two funds for comparison
-        setSelectedFunds(uniqueFunds.slice(0, 2));
+      const initialFund1 = allFunds.find(f => f.fund_name === "ICICI Prudential Bluechip Fund");
+      const initialFund2 = allFunds.find(f => f.fund_name === "HDFC Top 100 Fund");
+      
+      const initialSelection = [initialFund1, initialFund2].filter((f): f is RawFund => !!f);
+
+      if (initialSelection.length === 2) {
+        setSelectedFunds(initialSelection);
+      } else {
+        // Fallback if the default funds aren't found
+        const uniqueFunds = Array.from(new Map(allFunds.map(fund => [fund.fund_name, fund])).values());
+        if (uniqueFunds.length >= 2) {
+          setSelectedFunds(uniqueFunds.slice(0, 2));
+        }
       }
     }
-    // We only want this to run when `allFunds` is populated, not when `selectedFunds` changes.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [allFunds]);
-  
+
+
+  // This effect recalculates the overlap whenever the user changes the fund selection.
   useEffect(() => {
     if (selectedFunds.length < 2) {
       setOverlapResult(null);
@@ -44,14 +54,14 @@ export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCal
     }
     
     setIsCalculating(true);
-    const calculateOverlap = async () => {
-      // Allow UI to update before blocking for calculation
-      await new Promise(resolve => setTimeout(resolve, 50)); 
+    // Use a timeout to allow the UI to update to the "loading" state before the calculation blocks the main thread.
+    const timer = setTimeout(() => {
       const result = calculateAllOverlaps(selectedFunds);
       setOverlapResult(result);
       setIsCalculating(false);
-    };
-    calculateOverlap();
+    }, 50);
+
+    return () => clearTimeout(timer);
   }, [selectedFunds]);
 
   const exportCSV = (pair: PairwiseResult) => {
@@ -326,5 +336,3 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: RawFund[
     </>
   );
 }
-
-    
