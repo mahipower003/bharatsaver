@@ -144,7 +144,7 @@ export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCal
                   selectedFund={fund}
                   onSelect={(newFundName) => updateFundSelection(index, newFundName)}
                 />
-                <Button variant="ghost" size="icon" className="h-6 w-6 text-muted-foreground" onClick={() => removeFund(index)} disabled={selectedFunds.length < 2}>
+                <Button variant="ghost" size="icon" className="h-6 w-6 text-muted-foreground" onClick={() => removeFund(index)} disabled={selectedFunds.length < 1}>
                   <Trash2 className="h-4 w-4"/>
                 </Button>
               </CardHeader>
@@ -331,4 +331,3 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: RawFund[
     </>
   );
 }
-
