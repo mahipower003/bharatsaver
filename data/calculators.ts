@@ -108,11 +108,11 @@ export const calculators: Calculator[] = [
   {
     slug: 'ups-pension-calculator',
     title: 'UPS Pension Calculator',
-    description: 'Estimate your UPS pension amount.',
-    summary: 'Estimate your potential pension amount under the Universal Pension Scheme (UPS) with our easy-to-use calculator. Plan for your future.',
+    description: 'Estimate your monthly pension under the Unified Pension Scheme.',
+    summary: 'Use our free UPS Pension Calculator to estimate your monthly pension, family pension and lump sum under the Unified Pension Scheme.',
     icon: Building,
     link_text: 'Calculate Now',
-    lastModified: '2024-07-19',
+    lastModified: '2024-08-02',
     image: '/images/UPS Pension Scheme Calculator.png'
   },
   {
