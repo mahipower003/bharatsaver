@@ -1,14 +1,15 @@
 
+      
 import { getDictionary } from "@/lib/dictionaries";
 import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
 import { UpsPensionCalculator } from "@/components/calculators/UpsPensionCalculator";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FileText, TrendingUp, Star, AlertTriangle, CheckCircle, HelpCircle, GitCompareArrows } from "lucide-react";
+import { FileText, TrendingUp, Star, AlertTriangle, CheckCircle, HelpCircle, GitCompareArrows, Table as TableIcon } from "lucide-react";
 import { AuthorCard } from "@/components/layout/AuthorCard";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
-
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -23,14 +24,14 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [
-      {"@type":"Question","name":"What is the UPS pension formula?","acceptedAnswer":{"@type":"Answer","text":"Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor. Pensionable Salary = Basic × (1 + DA%/100)."}},
-      {"@type":"Question","name":"How do I calculate my monthly UPS pension?","acceptedAnswer":{"@type":"Answer","text":"Enter Basic Pay, DA% and qualifying service into the calculator to get an instant result and a step-by-step transcript."}},
-      {"@type":"Question","name":"What inputs do I need for the UPS Pension Calculator?","acceptedAnswer":{"@type":"Answer","text":"Last drawn Basic Pay, DA percentage, total qualifying service (years + months), and retirement/joining dates (optional)."}},
-      {"@type":"Question","name":"How is the pensionable salary calculated under UPS?","acceptedAnswer":{"@type":"Answer","text":"Pensionable Salary = Basic Pay × (1 + DA%/100). Many schemes use an average of last 10–12 months; see Methodology for details."}},
-      {"@type":"Question","name":"How much family pension will my spouse get under UPS?","acceptedAnswer":{"@type":"Answer","text":"Family pension is typically 60% of the original monthly pension; the calculator shows this by default and notes scheme variations."}},
-      {"@type":"Question","name":"Can I download the UPS pension calculation as an Excel file?","acceptedAnswer":{"@type":"Answer","text":"Yes — the Download Excel button exports inputs, the step-by-step transcript, and the worked example table."}}
-    ]
+    "mainEntity": dict.faqs.map((faq: { q: string, a: string }) => ({
+        "@type": "Question",
+        "name": faq.q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.a
+        }
+    }))
   };
 
   const softwareSchema = {
@@ -138,7 +139,7 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
         <div className="space-y-8 mt-12">
             <Card>
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-3"><TrendingUp className="h-6 w-6 text-primary" />{dict.worked_examples.h2}</CardTitle>
+                    <CardTitle className="flex items-center gap-3"><TableIcon className="h-6 w-6 text-primary" />{dict.worked_examples.h2}</CardTitle>
                 </CardHeader>
                  <CardContent className="space-y-6">
                   <div className="bg-muted/50 p-4 rounded-lg">
@@ -247,3 +248,5 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
     </div>
   );
 }
+
+    
