@@ -96,7 +96,7 @@
   },
   "author_card": {
     "bio": "Mahesh Chaube is a Certified Financial Planner (CFP) with extensive experience helping Indian families build tax-efficient retirement and education plans. Mahesh specializes in retirement strategy, tax-optimized fixed-income planning, and practical financial tools that simplify decision-making for everyday investors. He has advised over 500 Indian families and collaborates with leading fintech platforms on data-driven personal finance solutions.",
-    "review_text": "Reviewed & Verified by Experts: <strong>Laveena Vijayi, Senior Financial Research Analyst — BharatSaver Editorial Team.</strong> All data cross-checked against PFRDA, CBDT, and Income Tax Department official calculators.",
+    "review_text": "Reviewed &amp; Verified by Experts: <strong>Laveena Vijayi, Senior Financial Research Analyst — BharatSaver Editorial Team.</strong> All data cross-checked against PFRDA, CBDT, and Income Tax Department official calculators.",
     "author_page_link": "View all articles"
   },
   "author_page": {
@@ -449,240 +449,240 @@
     }
   },
   "nps_calculator": {
-    "meta_title": "NPS క్యాలిక్యులేటర్ 2025 — జాతీయ పెన్షన్ వ్యవస్థ పెన్షన్ మరియు కార్పస్ క్యాలిక్యులేటర్",
-    "meta_description": "మీ పదవీ విరమణ కార్పస్, పన్ను ప్రయోజనాలు మరియు ఆశించిన నెలవారీ పెన్షన్‌ను అంచనా వేయడానికి మా ఉచిత NPS క్యాలిక్యులేటర్‌ను ఉపయోగించండి. నెలవారీ/వార్షిక కంట్రిబ్యూషన్‌లకు మద్దతు ఇస్తుంది - 2025 కోసం నవీకరించబడిన NPS నియమాలు.",
-    "og_title": "NPS క్యాలిక్యులేటర్ 2025 — జాతీయ పెన్షన్ వ్యవస్థ పెన్షన్ మరియు కార్పస్",
-    "og_description": "మీ పదవీ విరమణను ప్లాన్ చేయడానికి మా NPS క్యాలిక్యులేటర్‌ను ఉపయోగించండి. కంట్రిబ్యూషన్, ఆశించిన రాబడులు మరియు పదవీ విరమణ వయస్సును నమోదు చేసి కార్పస్ & నెలవారీ పెన్షన్ అంచనాలను పొందండి.",
-    "h1": "NPS క్యాలిక్యులేటర్ — మీ పదవీ విరమణ కార్పస్ మరియు నెలవారీ పెన్షన్‌ను లెక్కించండి",
-    "description": "మా ఎన్‌పిఎస్ (జాతీయ పెన్షన్ వ్యవస్థ) క్యాలిక్యులేటర్‌తో ఒక విశ్వాసపాత్రమైన పదవీ విరమణను ప్లాన్ చేయండి. మీ నెలవారీ లేదా వార్షిక కంట్రిబ్యూషన్, ఆశించిన రాబడి రేటు, మరియు పదవీ విరమణ వరకు సంవత్సరాలను నమోదు చేయండి — మేము మీ అంచనా కార్పస్, పన్ను-సమర్థవంతమైన ప్రయోజనాలు, మరియు 60 సంవత్సరాల తర్వాత ఒక అంచనా నెలవారీ యాన్యుటీని చూపిస్తాము.",
-    "title": "NPS క్యాలిక్యులేటర్",
-    "form_description": "జాతీయ పెన్షన్ వ్యవస్థతో మీ పదవీ విరమణ పొదుపును అంచనా వేయండి.",
-    "contribution_mode": "కంట్రిబ్యూషన్ మోడ్",
-    "monthly_mode": "నెలవారీ",
-    "yearly_mode": "వార్షిక",
-    "monthly_contribution_label": "నెలవారీ కంట్రిబ్యూషన్ (₹)",
-    "yearly_contribution_label": "వార్షిక కంట్రిబ్యూషన్ (₹)",
-    "current_age_label": "ప్రస్తుత వయస్సు",
-    "retirement_age_label": "పదవీ విరమణ వయస్సు",
-    "expected_returns_label": "ఆశించిన రాబడులు (% p.a.)",
-    "annuity_percentage_label": "యాన్యుటీ కోసం శాతం",
-    "annuity_percentage_description": "కార్పస్‌లో కనీసం 40% యాన్యుటీ కొనడానికి ఉపయోగించాలి.",
-    "annuity_rate_label": "యాన్యుటీ రేటు (%)",
-    "annuity_rate_description": "మీ పెన్షన్ కోసం యాన్యుటీ ఉత్పత్తి నుండి ఆశించిన రేటు.",
-    "calculate_button": "NPS కార్పస్‌ను లెక్కించండి",
-    "loading": "లెక్కిస్తోంది...",
-    "results_title": "మీ NPS ప్రొజెక్షన్",
-    "total_corpus": "పదవీ విరమణ వద్ద మొత్తం కార్పస్",
-    "lump_sum_value": "పన్ను-రహిత ఏకమొత్తం (60%)",
-    "annuity_value": "యాన్యుటీ కోసం మొత్తం (40%)",
-    "monthly_pension": "ఆశించిన నెలవారీ పెన్షన్",
-    "total_investment": "మొత్తం పెట్టుబడి",
-    "total_interest": "సంపాదించిన మొత్తం వడ్డీ",
-    "view_chart": "చార్ట్",
-    "view_table": "పట్టిక",
-    "export_csv": "CSVని ఎగుమతి చేయండి",
-    "last_updated": "చివరిగా నవీకరించబడింది:",
-    "table_year": "సంవత్సరం",
-    "table_age": "వయస్సు",
-    "table_opening_balance": "ప్రారంభ నిల్వ",
-    "table_amount_invested": "వార్షిక డిపాజిట్",
-    "table_interest_earned": "సంపాదించిన వడ్డీ",
-    "table_closing_balance": "ముగింపు నిల్వ",
-    "age_label": "వయస్సు",
-    "amount_in_lakhs": "మొత్తం (లక్షలలో)",
+    "meta_title": "NPS Calculator 2025 — National Pension System Corpus & Pension",
+    "meta_description": "Use our free NPS calculator to estimate your retirement corpus, tax benefits and expected monthly pension. Supports monthly/annual contributions - updated NPS rules for 2025.",
+    "og_title": "NPS Calculator 2025 — National Pension System Corpus & Pension",
+    "og_description": "Use our NPS calculator to plan your retirement. Enter contribution, expected returns and retirement age to get corpus & monthly pension estimates.",
+    "h1": "NPS Calculator — Calculate Your Retirement Corpus & Monthly Pension",
+    "description": "Plan a confident retirement with our NPS (National Pension System) calculator. Enter your monthly or yearly contribution, expected rate of return, and years to retirement — we'll show you your projected corpus, tax-efficient benefits, and an estimated monthly annuity after age 60.",
+    "title": "NPS Calculator",
+    "form_description": "Estimate your retirement savings with the National Pension System.",
+    "contribution_mode": "Contribution Mode",
+    "monthly_mode": "Monthly",
+    "yearly_mode": "Yearly",
+    "monthly_contribution_label": "Monthly Contribution (₹)",
+    "yearly_contribution_label": "Yearly Contribution (₹)",
+    "current_age_label": "Current Age",
+    "retirement_age_label": "Retirement Age",
+    "expected_returns_label": "Expected Returns (% p.a.)",
+    "annuity_percentage_label": "Percentage for Annuity",
+    "annuity_percentage_description": "Minimum 40% of corpus must be used to buy an annuity.",
+    "annuity_rate_label": "Annuity Rate (%)",
+    "annuity_rate_description": "Expected rate from the annuity product for your pension.",
+    "calculate_button": "Calculate NPS Corpus",
+    "loading": "Calculating...",
+    "results_title": "Your NPS Projection",
+    "total_corpus": "Total Corpus at Retirement",
+    "lump_sum_value": "Tax-Free Lumpsum (60%)",
+    "annuity_value": "Amount for Annuity (40%)",
+    "monthly_pension": "Expected Monthly Pension",
+    "total_investment": "Total Investment",
+    "total_interest": "Total Interest Earned",
+    "view_chart": "Chart",
+    "view_table": "Table",
+    "export_csv": "Export CSV",
+    "last_updated": "Last updated:",
+    "table_year": "Year",
+    "table_age": "Age",
+    "table_opening_balance": "Opening Balance",
+    "table_amount_invested": "Yearly Deposit",
+    "table_interest_earned": "Interest Earned",
+    "table_closing_balance": "Closing Balance",
+    "age_label": "Age",
+    "amount_in_lakhs": "Amount (in Lakhs)",
     "what_is_nps": {
-      "title": "NPS (జాతీయ పెన్షన్ వ్యవస్థ) అంటే ఏమిటి?",
-      "body": "NPS అనేది <a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA</a> కింద నడుస్తున్న భారతీయ పౌరుల (మరియు కొన్ని సందర్భాల్లో NRIల) కోసం ఒక ప్రభుత్వ-నియంత్రిత పదవీ విరమణ పెన్షన్ పథకం. ఇది ఈక్విటీ, కార్పొరేట్ బాండ్లు మరియు ప్రభుత్వ సెక్యూరిటీల ద్వారా పెట్టుబడిని అందించే ఒక క్రమశిక్షణతో కూడిన, మార్కెట్-లింక్డ్ పదవీ విరమణ సాధనం. మీరు మీ ఆస్తి కేటాయింపును ఎంచుకోవచ్చు లేదా ఆటో-ఛాయిస్ వ్యూహాన్ని ఎంచుకోవచ్చు.",
+      "title": "What is NPS (National Pension System)?",
+      "body": "NPS is a government-regulated retirement pension scheme for Indian citizens (and NRIs in some cases) run under the <a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA</a>. It is a disciplined, market-linked retirement tool that offers investment through equity, corporate bonds, and government securities. You can choose your asset allocation or opt for an auto-choice strategy.",
       "points": [
         {
-          "title": "టైర్ I (పదవీ విరమణ పొదుపు)",
-          "body": "60 సంవత్సరాల వయస్సు వరకు పన్ను ప్రయోజనాలు మరియు ఉపసంహరణ పరిమితులతో మీ ప్రాథమిక పదవీ విరమణ ఖాతా."
+          "title": "Tier I (Retirement Savings)",
+          "body": "Your primary retirement account with tax benefits and withdrawal restrictions until age 60."
         },
         {
-          "title": "టైర్ II (ఐచ్ఛిక ఖాతా)",
-          "body": "లాక్-ఇన్ లేని ఒక ఫ్లెక్సిబుల్, స్వచ్ఛంద పొదుపు ఖాతా, కానీ అదనపు పన్ను ప్రయోజనం లేదు."
+          "title": "Tier II (Optional Account)",
+          "body": "A flexible, voluntary savings account with no lock-in, but no extra tax benefit."
         }
       ],
-      "footer": "ఇది పన్ను ఆదా, మార్కెట్-ఆధారిత రాబడులు, మరియు క్రమశిక్షణతో కూడిన పెట్టుబడిని కలిపి ఒక గణనీయమైన పదవీ విరమణ నిధిని నిర్మిస్తుంది."
+      "footer": "It combines tax savings, market-based returns, and disciplined investment to build a substantial retirement fund."
     },
     "how_it_works": {
-      "title": "NPS క్యాలిక్యులేటర్ ఎలా పనిచేస్తుంది (సూత్రం మరియు వివరణ)",
-      "formula_title": "ఉపయోగించిన సూత్రాలు",
+      "title": "How the NPS Calculator Works (Formula & Explanation)",
+      "formula_title": "Formulas Used",
       "annual": {
-        "title": "వార్షిక కంట్రిబ్యూషన్‌ల కోసం, క్యాలిక్యులేటర్ భవిష్యత్ విలువ సూత్రాన్ని ఉపయోగిస్తుంది:",
+        "title": "For annual contributions, the calculator uses the future value formula:",
         "formula": "FV = P × [ (1 + r)^t − 1 ] / r"
       },
       "monthly": {
-        "title": "నెలవారీ కంట్రిబ్యూషన్‌ల కోసం, ఇది ఒక యాన్యుటీ యొక్క భవిష్యత్ విలువ సూత్రాన్ని ఉపయోగిస్తుంది:",
+        "title": "For monthly contributions, it uses the future value of an annuity formula:",
         "formula": "FV = PMT × [ ((1 + r/12)^(12t) − 1) / (r/12) ]"
       }
     },
     "example": {
-      "title": "NPS రాబడిని ఎలా లెక్కించాలి (దశల వారీ ఉదాహరణ)",
-      "intro": "వార్షిక కంట్రిబ్యూషన్‌లతో కార్పస్ ఎలా లెక్కించబడుతుందో చూడటానికి క్రింది దృశ్యాన్ని ఊహించుకుందాం:",
+      "title": "How to Calculate NPS Returns (Step-by-Step Example)",
+      "intro": "Let's assume the following scenario to see how the corpus is calculated with annual contributions:",
       "assumptions": [
-        "మీరు నెలకు <strong>₹6,000</strong> కంట్రిబ్యూట్ చేస్తారు, ఇది <strong>సంవత్సరానికి ₹72,000</strong>.",
-        "ఆశించిన సగటు రాబడి (ఈక్విటీ + డెట్ మిశ్రమం): <strong>9% p.a.</strong>",
-        "కంట్రిబ్యూషన్ కాలం: <strong>30 సంవత్సరాలు</strong> (30 నుండి 60 సంవత్సరాల వయస్సు వరకు)."
+        "You contribute <strong>₹6,000</strong> per month, which is <strong>₹72,000 per year</strong>.",
+        "Expected average returns (mix of equity + debt): <strong>9% p.a.</strong>",
+        "Contribution period: <strong>30 years</strong> (from age 30 to 60)."
       ],
-      "calculation_steps": "<ul><li><strong>వార్షిక కంట్రిబ్యూషన్ (P):</strong> ₹72,000</li><li><strong>వార్షిక రేటు (r):</strong> 0.09</li><li><strong>సంవత్సరాలు (t):</strong> 30</li></ul><p class='mt-2'>సూత్రాన్ని వర్తింపజేయడం <strong>FV = P × [((1 + r)^t - 1) / r]</strong>:</p><ol class='list-decimal pl-5 space-y-1 mt-2'><li>లెక్కించండి (1 + r)^t = (1.09)^30 ≈ 13.27</li><li>1 తీసివేయండి: 13.27 - 1 = 12.27</li><li>rతో భాగించండి: 12.27 / 0.09 ≈ 136.33</li><li>Pతో గుణించండి: 72,000 × 136.33 ≈ ₹98,16,000</li></ol>",
-      "result": "<strong>పదవీ విరమణ వద్ద అంచనా కార్పస్ ≈ ₹98.2 లక్షలు</strong>",
-      "annuity_intro": "ఈ కార్పస్ నుండి, మీరు మీ నెలవారీ పెన్షన్‌ను లెక్కించవచ్చు:",
-      "annuity_result": "ఉపసంహరించుకోగల ఏకమొత్తం (60%) ≈ ₹58.9 లక్షలు<br/>యాన్యుటీ కోసం మొత్తం (40%) ≈ ₹39.3 లక్షలు<br/>మీరు 6% చెల్లింపు రేటుతో ఒక యాన్యుటీ కొనుగోలు చేస్తే, మీ <strong>నెలవారీ పెన్షన్ ≈ ₹19,650</strong> అవుతుంది.",
-      "disclaimer": "ఈ సంఖ్యలు ఉదాహరణ కోసం. వాస్తవ ప్రపంచ రాబడులు మారుతాయి మరియు యాన్యుటీ రేట్లు మారుతాయి. కట్టుబడి ఉండే ముందు ప్రొవైడర్ల నుండి ప్రత్యక్ష యాన్యుటీ కోట్‌లను ఎల్లప్పుడూ తనిఖీ చేయండి."
+      "calculation_steps": "&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Annual Contribution (P):&lt;/strong&gt; ₹72,000&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Annual Rate (r):&lt;/strong&gt; 0.09&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Years (t):&lt;/strong&gt; 30&lt;/li&gt;&lt;/ul&gt;&lt;p class='mt-2'&gt;Applying the formula &lt;strong&gt;FV = P × [((1 + r)^t - 1) / r]&lt;/strong&gt;:&lt;/p&gt;&lt;ol class='list-decimal pl-5 space-y-1 mt-2'&gt;&lt;li&gt;Calculate (1 + r)^t = (1.09)^30 ≈ 13.27&lt;/li&gt;&lt;li&gt;Subtract 1: 13.27 - 1 = 12.27&lt;/li&gt;&lt;li&gt;Divide by r: 12.27 / 0.09 ≈ 136.33&lt;/li&gt;&lt;li&gt;Multiply by P: 72,000 × 136.33 ≈ ₹98,16,000&lt;/li&gt;&lt;/ol&gt;",
+      "result": "<strong>Estimated Corpus at Retirement ≈ ₹98.2 Lakh</strong>",
+      "annuity_intro": "From this corpus, you can calculate your monthly pension:",
+      "annuity_result": "Withdrawable lumpsum (60%) ≈ ₹58.9 Lakh&lt;br/&gt;Amount for annuity (40%) ≈ ₹39.3 Lakh&lt;br/&gt;If you buy an annuity with a 6% payout rate, your &lt;strong&gt;monthly pension would be ≈ ₹19,650&lt;/strong&gt;.",
+      "disclaimer": "These numbers are for illustration. Real-world returns vary and annuity rates change. Always check direct annuity quotes from providers before committing."
     },
     "tax_benefits": {
-      "title": "NPS పన్ను ప్రయోజనాలు 2025: సెక్షన్ 80C & 80CCD(1B)",
-      "intro": "NPS పదవీ విరమణ ప్రణాళిక కోసం కొన్ని ఉత్తమ పన్ను-ఆదా అవకాశాలను అందిస్తుంది:",
+      "title": "NPS Tax Benefits 2025: Section 80C & 80CCD(1B)",
+      "intro": "NPS offers some of the best tax-saving opportunities for retirement planning:",
       "points": [
-        "<strong>సెక్షన్ 80C:</strong> మీ కంట్రిబ్యూషన్‌ల కోసం ₹1.5 లక్షల వరకు మినహాయింపు.",
-        "<strong>సెక్షన్ 80CCD(1B):</strong> 80C పరిమితికి అదనంగా ₹50,000 వరకు అదనపు మినహాయింపు.",
-        "<strong>యజమాని కంట్రిబ్యూషన్‌లు:</strong> మీ యజమాని కంట్రిబ్యూషన్ (ప్రాథమిక జీతంలో 10% వరకు) కూడా సెక్షన్ 80CCD(2) కింద మినహాయించదగినది. మూలం: <a href='https://incometaxindia.gov.in/Pages/tools/deduction-under-section-80c.aspx' target='_blank' rel='noopener noreferrer' class='underline'>ఆదాయపు పన్ను శాఖ</a>."
+        "<strong>Section 80C:</strong> Up to ₹1.5 lakh deduction for your contributions.",
+        "<strong>Section 80CCD(1B):</strong> An additional deduction of up to ₹50,000 over and above the 80C limit.",
+        "<strong>Employer Contributions:</strong> Your employer's contribution (up to 10% of basic salary) is also deductible under Section 80CCD(2). Source: <a href='https://incometaxindia.gov.in/Pages/tools/deduction-under-section-80c.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Income Tax Department</a>."
       ]
     },
     "rules": {
-      "title": "NPS టైర్ I vs టైర్ II — నియమాలు & తేడాలు",
-      "intro": "NPS టైర్ 1 vs టైర్ 2 తేడాలను అర్థం చేసుకోవడం ముఖ్యం:",
+      "title": "NPS Tier I vs Tier II — Rules & Differences",
+      "intro": "It's important to understand the differences between NPS Tier 1 vs Tier 2:",
       "tier1": {
-        "title": "టైర్ I (పదవీ విరమణ ఖాతా)",
+        "title": "Tier I (Retirement Account)",
         "points": [
-          "కనీస కంట్రిబ్యూషన్: ప్రొవైడర్‌ను బట్టి సంవత్సరానికి ₹500-₹1000.",
-          "పదవీ విరమణ (వయస్సు 60) వద్ద, 60% పన్ను-రహితంగా ఉపసంహరించుకోవచ్చు.",
-          "పెన్షన్ కోసం యాన్యుటీ కొనడానికి కనీసం 40% ఉపయోగించాలి."
+          "Minimum contribution: ₹500-₹1000 per year, depending on provider.",
+          "At retirement (age 60), 60% can be withdrawn tax-free.",
+          "Minimum 40% must be used to buy an annuity for pension."
         ]
       },
       "tier2": {
-        "title": "టైర్ II (ఐచ్ఛిక ఖాతా)",
+        "title": "Tier II (Optional Account)",
         "points": [
-          "లాక్-ఇన్ కాలం లేదు, ఎప్పుడైనా నిధులు ఉపసంహరించుకోవచ్చు.",
-          "కంట్రిబ్యూషన్‌లపై ప్రత్యేక పన్ను ప్రయోజనాలు లేవు.",
-          "ఒక ఫ్లెక్సిబుల్ ఇన్వెస్ట్‌మెంట్ ఖాతా లాగా పనిచేస్తుంది."
+          "No lock-in period, funds can be withdrawn anytime.",
+          "No specific tax benefits on contributions.",
+          "Works like a flexible investment account."
         ]
       },
       "withdrawal": {
-        "title": "పాక్షిక ఉపసంహరణలు",
-        "body": "విద్య, వైద్య అత్యవసర పరిస్థితులు, లేదా ఇంటి కొనుగోలు వంటి నిర్దిష్ట కారణాల కోసం కనీస కాలం (సాధారణంగా 3 సంవత్సరాలు) తర్వాత అనుమతించబడుతుంది, షరతులకు లోబడి."
+        "title": "Partial Withdrawals",
+        "body": "Allowed after a minimum period (usually 3 years) for specified reasons like education, medical emergencies, or house purchase, subject to conditions."
       }
     },
     "comparison": {
-      "title": "NPS vs PPF: పదవీ విరమణకు ఏది మంచిది?",
+      "title": "NPS vs PPF: Which is Better for Retirement?",
       "table": {
-        "headers": ["ఫీచర్", "NPS", "PPF", "ఫిక్స్‌డ్ డిపాజిట్ (FD)", "మ్యూచువల్ ఫండ్స్ (ELSS)"],
+        "headers": ["Feature", "NPS", "PPF", "Fixed Deposit (FD)", "Mutual Funds (ELSS)"],
         "rows": [
-          ["రాబడి రకం", "మార్కెట్-లింక్డ్ (8–12%)", "ప్రభుత్వ హామీ (~7.1%)", "బ్యాంకు-నిర్దిష్ట (5–7%)", "మార్కెట్-లింక్డ్"],
-          ["లాక్-ఇన్", "పదవీ విరమణ వరకు (టైర్ I)", "15 సంవత్సరాలు", "ఫ్లెక్సిబుల్", "మారుతుంది (ELSS 3 సంవత్సరాలు)"],
-          ["పన్ను ప్రయోజనాలు", "80C + 80CCD(1B)", "EEE (80C)", "వడ్డీ పన్ను విధించదగినది", "ELSS 80C కింద"],
-          ["దీనికి ఉత్తమమైనది", "పదవీ విరమణ & పెన్షన్", "రిస్క్-విముఖ దీర్ఘకాలిక", "స్వల్ప/మధ్యకాలిక లక్ష్యాలు", "సంపద సృష్టి"]
+          ["Return type", "Market-linked (8–12%)", "Govt-guaranteed (~7.1%)", "Bank-specific (5–7%)", "Market-linked"],
+          ["Lock-in", "Till retirement (Tier I)", "15 years", "Flexible", "Varies (ELSS 3 years)"],
+          ["Tax benefits", "80C + 80CCD(1B)", "EEE (80C)", "Interest taxable", "ELSS under 80C"],
+          ["Best for", "Retirement & pension", "Risk-averse long-term", "Short/medium-term goals", "Wealth creation"]
         ]
       },
-      "footer_note": "రాబడులను పోల్చడానికి మా <a href='/{lang}/ppf-calculator' class='underline'>PPF క్యాలిక్యులేటర్</a> మరియు <a href='/{lang}/fd-vs-ppf-calculator' class='underline'>FD vs PPF క్యాలిక్యులేటర్</a>ను అన్వేషించండి."
+      "footer_note": "Explore our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> and <a href='/{lang}/fd-vs-ppf-calculator' class='underline'>FD vs PPF Calculator</a> to compare returns."
     },
-    "faq_title": "NPS గురించి తరచుగా అడిగే ప్రశ్నలు",
+    "faq_title": "Frequently Asked Questions about NPS",
     "faqs": [
       {
-        "question": "NPS క్యాలిక్యులేటర్ అంటే ఏమిటి?",
-        "answer": "మీ కంట్రిబ్యూషన్‌లు, ఆశించిన రాబడులు మరియు పదవీ విరమణ వరకు సంవత్సరాల ఆధారంగా మీ పదవీ విరమణ కార్పస్ మరియు సంభావ్య నెలవారీ పెన్షన్‌ను అంచనా వేసే ఒక ఆన్‌లైన్ సాధనం."
+        "question": "What is an NPS calculator?",
+        "answer": "An online tool that estimates your retirement corpus and potential monthly pension based on your contributions, expected returns, and years to retirement."
       },
       {
-        "question": "NPS కార్పస్ ఎలా లెక్కించబడుతుంది?",
-        "answer": "పదవీ విరమణ వరకు ఆశించిన వార్షిక రాబడి రేటుతో మీ ఆవర్తన కంట్రిబ్యూషన్‌లను చక్రవడ్డీ చేయడం ద్వారా. వార్షిక కంట్రిబ్యూషన్‌ల కోసం, సూత్రం FV = P × [((1 + r)^t - 1) / r]."
+        "question": "How is NPS corpus calculated?",
+        "answer": "By compounding your periodic contributions at the expected annual rate of return until retirement. For annual contributions, the formula is FV = P × [((1 + r)^t - 1) / r]."
       },
       {
-        "question": "నాకు NPS నుండి ఎంత పెన్షన్ వస్తుంది?",
-        "answer": "మీ పెన్షన్ మీ కార్పస్ మరియు प्रचलित యాన్యుటీ రేటుపై ఆధారపడి ఉంటుంది. ఉదాహరణ: 6% రేటుతో ₹39.3 లక్షల యాన్యుటీ సుమారు ₹19,650/నెల రాబడినిస్తుంది."
+        "question": "How much pension will I get from my NPS corpus?",
+        "answer": "Your pension depends on how much you put into an annuity at retirement and the prevailing annuity rate in India. Example: a ₹39.3L annuity at a 6% rate could yield ~₹19,650/month."
       },
       {
-        "question": "NPS 2025 కోసం ఏ పన్ను ప్రయోజనాలను అందిస్తుంది?",
-        "answer": "NPS సెక్షన్ 80C (₹1.5 లక్షల వరకు) కింద పన్ను మినహాయింపులు, సెక్షన్ 80CCD(1B) కింద ₹50,000 అదనపు ప్రత్యేక మినహాయింపు, మరియు సెక్షన్ 80CCD(2) కింద యజమాని కంట్రిబ్యూషన్‌లపై ప్రయోజనాలను అందిస్తుంది. మూలం: <a href='https://incometaxindia.gov.in/Pages/tools/deduction-under-section-80c.aspx' target='_blank' rel='noopener noreferrer' class='underline'>ఆదాయపు పన్ను చట్టం</a>"
+        "question": "What tax benefits does NPS offer for 2025?",
+        "answer": "NPS offers tax deductions under Section 80C (up to ₹1.5 lakh), an additional exclusive deduction of ₹50,000 under Section 80CCD(1B), and benefits on employer contributions under Section 80CCD(2). Source: <a href='https://incometaxindia.gov.in/Pages/tools/deduction-under-section-80c.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Income Tax Act</a>"
       },
       {
-        "question": "NRIలు ఒక NPS ఖాతాను తెరవవచ్చా?",
-        "answer": "అవును, వయస్సు ప్రమాణాలను (సాధారణంగా 18-70 సంవత్సరాలు) నెరవేర్చిన ప్రవాస భారతీయులు (NRIలు) ప్రొవైడర్ మరియు నియంత్రణ మార్గదర్శకాలకు లోబడి NPS ఖాతాలను తెరవవచ్చు. మీ బ్యాంకు NPSలో NRI పెట్టుబడులను సులభతరం చేస్తుందని నిర్ధారించుకోండి."
+        "question": "Can NRIs open an NPS account?",
+        "answer": "Yes, Non-Resident Indians (NRIs) who meet the age criteria (usually 18-70 years) can open NPS accounts, subject to provider and regulatory guidelines. Ensure your bank facilitates NRI investments in NPS."
       }
     ],
     "conclusion": {
-      "title": "ముగింపు: మీ పదవీ విరమణకు ఎన్‌పిఎస్ సరైన ఎంపికా?",
-      "body": "జాతీయ పెన్షన్ వ్యవస్థ అనేది దీర్ఘకాలిక పదవీ విరమణ ప్రణాళిక కోసం ప్రత్యేకంగా రూపొందించబడిన ఒక శక్తివంతమైన, పన్ను-సమర్థవంతమైన సాధనం. దాని ఈక్విటీ మరియు డెట్ ఎంపికల మిశ్రమం సాంప్రదాయ స్థిర-ఆదాయ ఉత్పత్తుల కంటే సంభావ్యంగా అధిక రాబడులను అనుమతిస్తుంది, అయితే దాని క్రమశిక్షణతో కూడిన నిర్మాణం మీరు ట్రాక్‌లో ఉండేలా చూస్తుంది. వివిధ దృశ్యాలను మోడల్ చేయడానికి ఈ ఎన్‌పిఎస్ పెన్షన్ క్యాలిక్యులేటర్‌ను ఉపయోగించండి మరియు ఎన్‌పిఎస్ మీ పదవీ విరమణ వ్యూహానికి మూలస్తంభంగా ఎలా మారగలదో చూడండి."
+      "title": "Conclusion: Is NPS the Right Choice for Your Retirement?",
+      "body": "The National Pension System is a powerful, tax-efficient tool specifically designed for long-term retirement planning. Its mix of equity and debt options allows for potentially higher returns than traditional fixed-income products, while its disciplined structure ensures you stay on track. Use this NPS pension calculator to model various scenarios and see how NPS can become a cornerstone of your retirement strategy."
     }
   },
   "apy_calculator": {
-    "meta_title": "APY క్యాలిక్యులేటర్ 2025 — అటల్ పెన్షన్ యోజన ప్రీమియం చార్ట్ & పెన్షన్ అంచనా",
-    "meta_description": "₹1,000–₹5,000 పెన్షన్‌లకు అవసరమైన నెలవారీ ప్రీమియంను కనుగొనడానికి మా ఉచిత APY క్యాలిక్యులేటర్‌ను ఉపయోగించండి. వయస్సు-ఆధారిత ప్రీమియం చార్ట్‌లు, అర్హత, తరచుగా అడిగే ప్రశ్నలు మరియు డౌన్‌లోడ్ చేయగల CSVని పొందండి. సెప్టెంబర్ 2025న నవీకరించబడింది.",
-    "og_title": "APY క్యాలిక్యులేటర్ 2025 — అటల్ పెన్షన్ యోజన ప్రీమియం చార్ట్ & పెన్షన్ అంచనా",
-    "og_description": "₹1,000 నుండి ₹5,000 వరకు హామీ ఇవ్వబడిన పెన్షన్ కోసం మీ నెలవారీ ప్రీమియంను కనుగొనడానికి మా APY క్యాలిక్యులేటర్‌ను ఉపయోగించండి. వయస్సు వారీగా ప్రీమియం చార్ట్‌లు, అర్హత మరియు తరచుగా అడిగే ప్రశ్నలను కలిగి ఉంటుంది.",
-    "h1": "APY క్యాలిక్యులేటర్ 2025 — అటల్ పెన్షన్ యోజన ప్రీమియం & పెన్షన్ అంచనా",
-    "description": "అవసరమైన నెలవారీ ప్రీమియంను తక్షణమే చూడటానికి మీ వయస్సు మరియు కోరుకున్న పెన్షన్‌ను నమోదు చేయండి. మీ ప్లాన్‌ను CSVగా డౌన్‌లోడ్ చేయండి.",
-    "title": "APY క్యాలిక్యులేటర్",
-    "last_updated": "చివరిగా నవీకరించబడింది:",
-    "form_description": "ఒక హామీ ఇవ్వబడిన పెన్షన్ కోసం మీ నెలవారీ కంట్రిబ్యూషన్‌ను కనుగొనండి.",
-    "age_label": "మీ వయస్సు",
-    "years_label": "సంవత్సరాలు",
-    "pension_label": "కోరుకున్న నెలవారీ పెన్షన్",
-    "calculate_button": "ప్రీమియం లెక్కించండి",
-    "loading": "లెక్కిస్తోంది...",
-    "results_title": "మీ APY కంట్రిబ్యూషన్",
-    "monthly_premium": "మీ నెలవారీ ప్రీమియం",
-    "total_contribution": "60 వరకు మొత్తం కంట్రిబ్యూషన్",
-    "indicative_corpus": "60 వద్ద సూచనాత్మక కార్పస్",
+    "meta_title": "APY Calculator 2025 — Atal Pension Yojana Premium Chart & Pension Estimate",
+    "meta_description": "Use our FREE APY Calculator to find the monthly premium required for ₹1,000–₹5,000 pensions. Get age-based premium charts, eligibility, FAQs and downloadable CSV. Updated Sep 2025.",
+    "og_title": "APY Calculator 2025 — Atal Pension Yojana Premium Chart & Pension Estimate",
+    "og_description": "Use our APY calculator to find your monthly premium for guaranteed pensions of ₹1,000 to ₹5,000. Includes age-wise premium charts, eligibility and FAQs.",
+    "h1": "APY Calculator 2025 — Atal Pension Yojana Premium & Pension Estimate",
+    "description": "Enter your age and desired pension to instantly see the required monthly premium. Download your plan as a CSV.",
+    "title": "APY Calculator",
+    "last_updated": "Last updated:",
+    "form_description": "Find your monthly contribution for a guaranteed pension.",
+    "age_label": "Your Age",
+    "years_label": "years",
+    "pension_label": "Desired Monthly Pension",
+    "calculate_button": "Calculate Premium",
+    "loading": "Calculating...",
+    "results_title": "Your APY Contribution",
+    "monthly_premium": "Your Monthly Premium",
+    "total_contribution": "Total Contribution until 60",
+    "indicative_corpus": "Indicative Corpus at 60",
     "what_is_apy": {
-      "title": "అటల్ పెన్షన్ యోజన (APY) అంటే ఏమిటి?",
-      "body": "అటల్ పెన్షన్ యోజన (APY) అనేది 60 సంవత్సరాల తర్వాత అర్హతగల చందాదారులకు ₹1,000 నుండి ₹5,000 వరకు హామీ ఇవ్వబడిన నెలవారీ పెన్షన్‌ను అందించే ఒక ప్రభుత్వ-మద్దతుగల పెన్షన్ పథకం. ఇది <a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA</a> ద్వారా నిర్వహించబడుతుంది.",
+      "title": "What is Atal Pension Yojana (APY)?",
+      "body": "The Atal Pension Yojana (APY) is a government-backed pension scheme that provides a guaranteed monthly pension between ₹1,000 and ₹5,000 to eligible subscribers after the age of 60. It is administered by the <a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA</a>.",
       "points": [
-        "హామీ ఇవ్వబడిన పెన్షన్: ₹1,000, ₹2,000, ₹3,000, ₹4,000, లేదా ₹5,000 యొక్క స్థిర నెలవారీ పెన్షన్ మొత్తాలు.",
-        "అర్హత: 18-40 సంవత్సరాల వయస్సు గల భారతీయ పౌరులందరికీ బ్యాంకు ఖాతాతో తెరిచి ఉంటుంది.",
-        "భార్య/నామినీ ప్రయోజనాలు: చందాదారు మరణంపై, భార్య పెన్షన్ పొందుతుంది. ఇద్దరూ మరణిస్తే, నామినీ సేకరించిన కార్పస్‌ను పొందుతాడు."
+        "Guaranteed Pension: Fixed monthly pension amounts of ₹1,000, ₹2,000, ₹3,000, ₹4,000, or ₹5,000.",
+        "Eligibility: Open to all Indian citizens aged 18-40 with a bank account.",
+        "Spouse/Nominee Benefits: On the subscriber's death, the spouse receives the pension. On the death of both, the nominee receives the accumulated corpus."
       ]
     },
     "how_it_works": {
-      "title": "APY క్యాలిక్యులేటర్ ఎలా పనిచేస్తుంది — వయస్సు & పెన్షన్ ప్రకారం ప్రీమియంలు",
-      "intro": "APY ప్రీమియం PPF లేదా NPS వంటి చక్రవడ్డీ సూత్రంతో లెక్కించబడదు. బదులుగా, ప్రీమియంలు మీ ప్రవేశ వయస్సు మరియు ఎంచుకున్న పెన్షన్ ఆధారంగా ప్రభుత్వం నిర్ణయించిన స్థిర మొత్తాలు. మా క్యాలిక్యులేటర్ మీకు ఖచ్చితమైన మొత్తాన్ని ఇవ్వడానికి PFRDA యొక్క అధికారిక ప్రీమియం పట్టికను ఉపయోగిస్తుంది.",
+      "title": "How the APY Calculator Works — Premiums by Age & Pension",
+      "intro": "The APY premium isn't calculated with a compounding formula like PPF or NPS. Instead, the premiums are fixed amounts set by the government based on your entry age and chosen pension. Our calculator uses PFRDA's official premium table to give you the exact amount.",
       "example": {
-        "title": "ఉదాహరణ: వయస్సు 25 — ప్రీమియం ఎలా పనిచేస్తుంది",
-        "body": "<strong>నెలవారీ ప్రీమియం (చార్ట్ నుండి):</strong> ₹76<br/><strong>కంట్రిబ్యూషన్ సంవత్సరాలు:</strong> 25 సంవత్సరాల నుండి 60 సంవత్సరాల వరకు = 35 సంవత్సరాలు<br/><strong>మొత్తం చెల్లించినది</strong> = 76 × 12 × 35 = ₹31,920 (35 సంవత్సరాలలో మొత్తం కంట్రిబ్యూషన్‌లు)<br/><strong>ఫలితం:</strong> 60 సంవత్సరాల నుండి ₹1,000 హామీ ఇవ్వబడిన నెలవారీ పెన్షన్ (పథకం నిబంధనల ప్రకారం పెన్షన్ అందిస్తుంది; చెల్లింపులు పూల్ చేయబడిన ఫండ్/వార్షికాల నుండి వస్తాయి).",
-        "note": "<strong>గమనిక:</strong> APY ప్రీమియంలు ప్రభుత్వ యాక్చురియల్ పట్టికల నుండి వస్తాయి — అవి పూల్ చేయబడిన పెట్టుబడి & హామీలను ప్రతిబింబిస్తాయి. తక్కువ మొత్తం-చెల్లించిన వర్సెస్ పెన్షన్ APY యొక్క సామాజిక-భద్రతా స్వభావాన్ని హైలైట్ చేస్తుంది."
+        "title": "Example: Age 25 — How the premium works",
+        "body": "&lt;strong&gt;Monthly Premium (from chart):&lt;/strong&gt; ₹76&lt;br/&gt;&lt;strong&gt;Contribution Years:&lt;/strong&gt; From age 25 to 60 = 35 years&lt;br/&gt;&lt;strong&gt;Total Paid&lt;/strong&gt; = 76 × 12 × 35 = ₹31,920 (total contributions over 35 years)&lt;br/&gt;&lt;strong&gt;Result:&lt;/strong&gt; A guaranteed monthly pension of ₹1,000 from age 60 onwards (the scheme provides the pension; payments come from the pooled fund/annuity).",
+        "note": "&lt;strong&gt;Note:&lt;/strong&gt; APY premiums come from government actuarial tables — they reflect pooled investment &amp; guarantees. The low total-paid vs. pension highlights APY's social-security nature."
       }
     },
     "premium_chart": {
-      "title": "APY ప్రీమియం చార్ట్ (వయస్సు & పెన్షన్ మొత్తం వారీగా)",
-      "description": "ఈ చార్ట్ మీ ప్రవేశ వయస్సు మరియు కోరుకున్న పెన్షన్ మొత్తం ఆధారంగా స్థిర నెలవారీ ప్రీమియంను చూపుతుంది, అధికారిక <a href='https://www.pfrda.org.in/my-apy/apy-chart' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA ప్రీమియం పట్టిక</a> ప్రకారం. మీరు ఎంత త్వరగా ప్రారంభిస్తే, మీ ప్రీమియం అంత తక్కువగా ఉంటుంది.",
-      "age_header": "ప్రవేశ వయస్సు",
-      "years_label": "సంవత్సరాలు"
+      "title": "APY Premium Chart (by Age & Pension Amount)",
+      "description": "This chart shows the fixed monthly premium based on your entry age and desired pension amount, as per the official <a href='https://www.pfrda.org.in/my-apy/apy-chart' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA premium table</a>. The earlier you start, the lower your premium.",
+      "age_header": "Entry Age",
+      "years_label": "Years"
     },
     "enrollment": {
-      "title": "APY అర్హత మరియు ఎలా నమోదు చేసుకోవాలి",
-      "intro": "APYలో నమోదు చేసుకోవడం చాలా సులభం:",
+      "title": "APY Eligibility and How to Enroll",
+      "intro": "Enrolling in APY is simple:",
       "steps": [
-        "<strong>అర్హత:</strong> మీరు 18 నుండి 40 సంవత్సరాల మధ్య వయస్సు గల భారతీయ పౌరుడిగా ఉండాలి.",
-        "<strong>పత్రాలు:</strong> ఆటో-డెబిట్ కోసం మీ ఆధార్‌తో అనుసంధానించబడిన ఒక చురుకైన బ్యాంకు ఖాతా అవసరం.",
-        "<strong>ఎలా నమోదు చేసుకోవాలి:</strong> మీరు మీ బ్యాంకు శాఖ ద్వారా లేదా APY నమోదుకు మద్దతు ఇచ్చే ఆన్‌లైన్ బ్యాంకింగ్ పోర్టల్‌ల ద్వారా నమోదు చేసుకోవచ్చు."
+        "<strong>Eligibility:</strong> You must be an Indian citizen between 18 and 40 years old.",
+        "<strong>Documents:</strong> You need an active bank account linked to your Aadhaar for auto-debit.",
+        "<strong>How to Enroll:</strong> You can enroll through your bank branch or via online banking portals that support APY enrollment."
       ]
     },
     "comparison": {
-      "title": "APY vs NPS vs PPF — మీకు ఏ ప్రణాళిక సరిపోతుంది?",
-      "body": "APY ఒక ప్రాథమిక, హామీ ఇవ్వబడిన పెన్షన్ కోసం అద్భుతమైనది అయినప్పటికీ, ఇతర పథకాలు వేర్వేరు లక్ష్యాల కోసం మెరుగ్గా ఉండవచ్చు. <strong>NPS</strong> అధిక సంభావ్య రాబడులు మరియు ఫ్లెక్సిబిలిటీని అందిస్తుంది, ఇది మార్కెట్ రిస్క్‌లతో సౌకర్యవంతంగా ఉన్నవారికి అనుకూలంగా ఉంటుంది. <strong>PPF</strong> సంపద సృష్టి కోసం ఒక రిస్క్-ఫ్రీ, దీర్ఘకాలిక పొదుపు సాధనం. పోల్చడానికి మా <a href='/{lang}/nps-calculator' class='underline'>NPS క్యాలిక్యులేటర్</a> మరియు <a href='/{lang}/ppf-calculator' class='underline'>PPF క్యాలిక్యులేటర్</a>ను అన్వేషించండి."
+      "title": "APY vs NPS vs PPF — Which Plan Fits You?",
+      "body": "While APY is excellent for a basic, guaranteed pension, other schemes may be better for different goals. <strong>NPS</strong> offers higher potential returns and flexibility, making it suitable for those comfortable with market risks. <strong>PPF</strong> is a risk-free, long-term savings instrument for wealth creation. Explore our <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> and <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> to compare."
     },
     "rules": {
-      "title": "జరిమానాలు, తప్పిన చెల్లింపులు & పునరుద్ధరణ — మీరు తెలుసుకోవలసినవి",
-      "body": "<strong>ఉపసంహరణ:</strong> పూర్తి ఉపసంహరణ 60 సంవత్సరాల వయస్సులో మాత్రమే అనుమతించబడుతుంది. టర్మినల్ అనారోగ్యం లేదా మరణం సందర్భాలలో ముందస్తు నిష్క్రమణ అనుమతించబడుతుంది. <br/> <strong>జరిమానాలు:</strong> ఆలస్యమైన చెల్లింపులకు ఒక చిన్న జరిమానా విధించబడుతుంది, ఇది ప్రీమియం మొత్తంపై ఆధారపడి నెలకు ₹1 నుండి ₹10 వరకు ఉంటుంది. <br/> <strong>బదిలీ:</strong> మీరు మీ APY ఖాతాను ఒక బ్యాంకు నుండి మరొక బ్యాంకుకు బదిలీ చేయవచ్చు. అధికారిక నియమాల కోసం, <a href='https://www.pfrda.org.in/my-apy/apy-faq' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA FAQ విభాగాన్ని</a> చూడండి."
+      "title": "Penalties, Missed Payments & Revival — What you need to know",
+      "body": "&lt;strong&gt;Withdrawal:&lt;/strong&gt; Full withdrawal is only allowed at age 60. Early exit is allowed in exceptional circumstances (e.g., terminal illness or death). &lt;br/&gt; &lt;strong&gt;Penalties:&lt;/strong&gt; A small penalty is levied for delayed payments, ranging from ₹1 to ₹10 per month depending on the premium amount. &lt;br/&gt; &lt;strong&gt;Transfer:&lt;/strong&gt; You can transfer your APY account from one bank to another. For official rules, see the &lt;a href='https://www.pfrda.org.in/my-apy/apy-faq' target='_blank' rel='noopener noreferrer' class='underline'&gt;PFRDA FAQ section&lt;/a&gt;."
     },
-    "faq_title": "తరచుగా అడిగే ప్రశ్నలు",
+    "faq_title": "Frequently Asked Questions",
     "faqs": [
-      { "question": "అటల్ పెన్షన్ యోజన (APY) అంటే ఏమిటి?", "answer": "APY అనేది 60 సంవత్సరాల వయస్సు వచ్చిన తర్వాత చందాదారులకు ₹1,000 మరియు ₹5,000 మధ్య ఒక స్థిర నెలవారీ పెన్షన్‌ను హామీ ఇచ్చే ఒక ప్రభుత్వ సామాజిక-భద్రతా పెన్షన్ పథకం. ఇది PFRDA ద్వారా నిర్వహించబడుతుంది మరియు ప్రధానంగా అసంఘటిత రంగంపై దృష్టి సారించింది." },
-      { "question": "APYకి ఎవరు అర్హులు?", "answer": "చెల్లుబాటు అయ్యే బ్యాంకు ఖాతా మరియు KYC పత్రాలు కలిగిన 18-40 సంవత్సరాల వయస్సు గల ఏ భారతీయ పౌరుడైనా APYలో చేరవచ్చు. నమోదు దశల కోసం మీ బ్యాంకును సంప్రదించండి." },
-      { "question": "APY ప్రీమియం ఎలా లెక్కించబడుతుంది?", "answer": "ప్రీమియంలు ప్రవేశ వయస్సు మరియు మీరు ఎంచుకున్న పెన్షన్ మొత్తం ఆధారంగా అధికారిక బీమా గణన పట్టికల ద్వారా స్థిరంగా ఉంటాయి. మీ వయస్సు కోసం ఖచ్చితమైన నెలవారీ ప్రీమియంను లెక్కించడానికి మా APY క్యాలిక్యులేటర్‌ను ఉపయోగించండి లేదా ప్రీమియం చార్ట్‌ను డౌన్‌లోడ్ చేయండి." },
-      { "question": "₹3,000 పెన్షన్ కోసం నేను ఎంత చెల్లించాలి?", "answer": "పై ప్రీమియం చార్ట్‌లో ఖచ్చితమైన మొత్తాన్ని కనుగొనండి. ఉదాహరణ: 25 సంవత్సరాల వయస్సులో ₹3,000 పెన్షన్ కోసం ₹226/నెల అవసరం (చూపిన పట్టిక ప్రకారం)." },
-      { "question": "నేను ఆదాయపు పన్ను చెల్లిస్తే APYలో చేరవచ్చా?", "answer": "నియమాలు కాలక్రమేణా మారవచ్చు. చారిత్రాత్మకంగా APY అసంఘటిత రంగాన్ని లక్ష్యంగా చేసుకుంది; ఆదాయపు పన్ను చెల్లింపుదారులకు సంబంధించిన ప్రస్తుత విధానం కోసం PFRDA లేదా మీ బ్యాంకును సంప్రదించండి." },
-      { "question": "నేను APY చెల్లింపును కోల్పోతే ఏమి జరుగుతుంది?", "answer": "తప్పిన చెల్లింపులు చిన్న జరిమానాలను మరియు చివరికి ఖాతా నిష్క్రియంను ఆకర్షించవచ్చు. బ్యాంకులు సాధారణంగా పునరుద్ధరణ విధానాలను అందిస్తాయి — ఖాతాను పునఃసక్రియం చేయడానికి ఏదైనా జరిమానాతో పాటు తప్పిన ప్రీమియంలను చెల్లించండి." },
-      { "question": "నేను 60 సంవత్సరాల ముందు APY నుండి ఉపసంహరించుకోవచ్చా?", "answer": "ముందస్తు నిష్క్రమణ నిషేధించబడింది — కేవలం అసాధారణ పరిస్థితులలో (ఉదా., తీవ్రమైన అనారోగ్యం లేదా మరణం) మాత్రమే అనుమతించబడుతుంది మరియు జరిమానాలు ఉండవచ్చు. అధికారిక PFRDA నియమాలు లేదా మీ బ్యాంకు APY నిబంధనలను చూడండి." },
-      { "question": "ఏదైనా ప్రభుత్వ సహ-కంట్రిబ్యూషన్ ఉందా?", "answer": "కొన్ని అర్హతగల చందాదారులకు, గతంలో ప్రభుత్వ సహ-కంట్రిబ్యూషన్ పథకాలు అందించబడ్డాయి. PFRDA/NSDL పేజీలలో ప్రస్తుత పథకాలు మరియు అర్హతను ధృవీకరించండి." },
-      { "question": "చందాదారు మరణంపై కార్పస్‌కు ఏమి జరుగుతుంది?", "answer": "చందాదారు మరణంపై, భార్య/భర్త సాధారణంగా అదే పెన్షన్ పొందుతారు; ఇద్దరూ మరణిస్తే, నామినీ పథక నిబంధనల ప్రకారం సేకరించిన కార్పస్‌ను పొందుతాడు." },
-      { "question": "APY కంట్రిబ్యూషన్‌లు పన్ను మినహాయింపుకు అర్హమా?", "answer": "APY పెన్షన్ ప్రయోజనాలను అందిస్తుంది మరియు ప్రత్యక్ష అదనపు 80C భత్యాలు కాదు; ప్రస్తుత పన్ను చికిత్సల కోసం ఆదాయపు పన్ను నియమాలను తనిఖీ చేయండి. (తాజా పన్ను మార్గదర్శకత్వం కోసం ఎల్లప్పుడూ ఆదాయపు పన్ను విభాగంతో ధృవీకరించండి.)" },
-      { "question": "నేను APYలో ఎలా నమోదు చేసుకోవాలి?", "answer": "మీ బ్యాంకు శాఖను సందర్శించండి లేదా వారు APY నమోదును అందిస్తే మీ బ్యాంకు ఆన్‌లైన్ బ్యాంకింగ్‌ను ఉపయోగించండి. మీకు మీ బ్యాంకు ఖాతా, ఆధార్, పాన్ (అవసరమైతే) మరియు KYC అవసరం." },
-      { "question": "APY vs NPS — నేను ఏది ఎంచుకోవాలి?", "answer": "APY ప్రాథమిక భద్రతపై దృష్టి సారించిన హామీ చిన్న పెన్షన్ ఉత్పత్తి; NPS అధిక సంభావ్య రాబడులు మరియు ఎక్కువ సౌలభ్యంతో మార్కెట్‌తో అనుసంధానించబడింది. మీరు హామీ స్థిర పెన్షన్ మరియు తక్కువ సంక్లిష్టత కావాలనుకుంటే APY ను ఎంచుకోండి; మీరు అధిక సంభావ్య వృద్ధిని కోరుకుంటే మరియు మార్కెట్ రిస్క్‌లతో సౌకర్యవంతంగా ఉంటే NPS ను ఎంచుకోండి." }
+      { "question": "What is Atal Pension Yojana (APY)?", "answer": "APY is a government social-security pension scheme that guarantees a fixed monthly pension between ₹1,000 and ₹5,000 to subscribers after they turn 60. It is administered by PFRDA and primarily targets the unorganized sector." },
+      { "question": "Who is eligible for APY?", "answer": "Any Indian citizen between 18-40 years with a valid bank account and KYC documents can join APY. Contact your bank for enrollment steps." },
+      { "question": "How is the APY premium calculated?", "answer": "Premiums are fixed by official actuarial tables based on entry age and your chosen pension amount. Use our APY calculator to compute the exact monthly premium for your age, or download the premium chart." },
+      { "question": "How much do I have to pay for a ₹3,000 pension?", "answer": "Find the exact amount in the premium chart above. Example: ₹226/month is required for a ₹3,000 pension at age 25 (as per the table shown)." },
+      { "question": "Can I join APY if I pay income tax?", "answer": "Rules may vary over time. Historically APY targeted the unorganized sector; contact PFRDA or your bank for current policy regarding income-tax payers." },
+      { "question": "What happens if I miss an APY payment?", "answer": "Missed payments may attract small penalties and eventual account deactivation. Banks usually offer a revival process — pay the missed premiums plus any penalties to reactivate the account." },
+      { "question": "Can I withdraw from APY before 60?", "answer": "Early exit is discouraged — allowed only in exceptional circumstances (e.g. terminal illness or death) and may have penalties. Refer to official PFRDA rules or your bank APY terms." },
+      { "question": "Is there any government co-contribution?", "answer": "For some eligible subscribers, government co-contribution schemes were offered in the past. Verify current schemes and eligibility on PFRDA/NSDL pages." },
+      { "question": "What happens to the corpus on subscriber's death?", "answer": "On subscriber's death, the spouse typically gets the same pension; on death of both, the nominee gets the accumulated corpus as per scheme rules." },
+      { "question": "Are APY contributions eligible for tax deduction?", "answer": "APY offers pension benefits and not direct extra 80C allowances; check income-tax rules for current tax treatments. (Always verify with Income Tax Dept for latest tax guidance.)" },
+      { "question": "How do I enroll in APY?", "answer": "Visit your bank branch or use your bank's online banking if they offer APY enrollment. You will need your bank account, Aadhaar, PAN (if required) and KYC." },
+      { "question": "APY vs NPS — Which one should I choose?", "answer": "APY is a guaranteed small pension product focused on basic security; NPS is market-linked with higher potential returns and more flexibility. Choose APY if you want guaranteed fixed pension and low complexity; choose NPS if you want higher potential growth and are comfortable with market risks." }
     ],
     "conclusion": {
-      "title": "ముగింపు: మీ పదవీ విరమణకు APY సరైన ఎంపికా?",
-      "body": "అటల్ పెన్షన్ యోజన మీ పదవీ విరమణకు ఒక సాధారణ, సురక్షితమైన మరియు ప్రభుత్వ-హామీ పునాదిని అందిస్తుంది. ఇది అసంఘటిత రంగంలోని వ్యక్తులకు లేదా కనీస రిస్క్‌తో ఊహించదగిన పెన్షన్ కోరుకునే ఎవరికైనా ఒక అద్భుతమైన ఎంపిక. ఈరోజే మీ ఆర్థిక భవిష్యత్తును సురక్షితం చేసుకునే దిశగా మొదటి అడుగు వేయడానికి మా APY క్యాలిక్యులేటర్ను ఉపయోగించండి."
+      "title": "Conclusion: Is APY the Right Choice for Your Retirement?",
+      "body": "The Atal Pension Yojana offers a simple, secure, and government-guaranteed foundation for your retirement. It is an excellent choice for individuals in the unorganized sector or anyone seeking a predictable pension with minimal risk. Use our APY Calculator to take the first step towards securing your financial future today."
     }
   },
   "fd_vs_ppf_calculator": {
@@ -718,21 +718,21 @@
     },
     "assumptions": {
       "title": "Calculator Assumptions",
-      "body": "<ul><li>PPF is modelled with annual compounding at the specified rate and a default maturity of 15 years. Deposits are assumed at the <strong>start</strong> of each year.</li><li>FD is modelled as a one-time lump-sum with annual compounding. Interest is taxed at your selected marginal rate.</li><li>Results are nominal (not inflation-adjusted). Always verify with official sources like <a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer'>PFRDA</a> and the <a href='https://incometaxindia.gov.in/' target='_blank' rel='noopener noreferrer'>Income Tax Dept</a>.</li></ul>"
+      "body": "&lt;ul&gt;&lt;li&gt;PPF is modelled with annual compounding at the specified rate and a default maturity of 15 years. Deposits are assumed at the &lt;strong&gt;start&lt;/strong&gt; of each year.&lt;/li&gt;&lt;li&gt;FD is modelled as a one-time lump-sum with annual compounding. Interest is taxed at your selected marginal rate.&lt;/li&gt;&lt;li&gt;Results are nominal (not inflation-adjusted). Always verify with official sources like &lt;a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer'&gt;PFRDA&lt;/a&gt; and the &lt;a href='https://incometaxindia.gov.in/' target='_blank' rel='noopener noreferrer'&gt;Income Tax Dept&lt;/a&gt;.&lt;/li&gt;&lt;/ul&gt;"
     },
     "quick_answer": {
       "title": "Quick Answer: Which is better, FD or PPF?",
-      "body": "For <strong>long-term, tax-free wealth creation</strong> (like retirement), <strong>PPF is almost always better</strong> due to its EEE tax status and compounding benefits. For <strong>short-term goals or emergency funds</strong> where you need liquidity, an <strong>FD is more suitable</strong> despite the tax on interest. Use our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> or <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> to see the exact difference for your amount."
+      "body": "For &lt;strong&gt;long-term, tax-free wealth creation&lt;/strong&gt; (like retirement), &lt;strong&gt;PPF is almost always better&lt;/strong&gt; due to its EEE tax status and compounding benefits. For &lt;strong&gt;short-term goals or emergency funds&lt;/strong&gt; where you need liquidity, an &lt;strong&gt;FD is more suitable&lt;/strong&gt; despite the tax on interest. Use our &lt;a href='/{lang}/ppf-calculator' class='underline'&gt;PPF Calculator&lt;/a&gt; or &lt;a href='/{lang}/nps-calculator' class='underline'&gt;NPS Calculator&lt;/a&gt; to see the exact difference for your amount."
     },
     "how_it_works": {
       "title": "How Returns are Calculated (Worked Examples)",
       "example1": {
         "title": "Example 1 — FD (Lump-Sum)",
-        "body": "<strong>Input:</strong> ₹100,000 lump-sum, 7% p.a., 15 years.<br/><strong>Calculation:</strong><ol><li>Future Value = 100,000 × (1.07)^15 = ₹275,903.</li><li>Total Interest = 275,903 - 100,000 = ₹175,903.</li><li>Tax on Interest (30%) = 0.30 × 175,903 = ₹52,771.</li><li><strong>Post-Tax Maturity = 275,903 - 52,771 = ₹223,132.</strong></li></ol>"
+        "body": "&lt;strong&gt;Input:&lt;/strong&gt; ₹100,000 lump-sum, 7% p.a., 15 years.&lt;br/&gt;&lt;strong&gt;Calculation:&lt;/strong&gt;&lt;ol&gt;&lt;li&gt;Future Value = 100,000 × (1.07)^15 = ₹275,903.&lt;/li&gt;&lt;li&gt;Total Interest = 275,903 - 100,000 = ₹175,903.&lt;/li&gt;&lt;li&gt;Tax on Interest (30%) = 0.30 × 175,903 = ₹52,771.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Post-Tax Maturity = 275,903 - 52,771 = ₹223,132.&lt;/strong&gt;&lt;/li&gt;&lt;/ol&gt;"
       },
       "example2": {
         "title": "Example 2 — PPF (Recurring Annual Deposit)",
-        "body": "<strong>Input:</strong> ₹100,000 paid at the start of each year for 15 years, 7.1% p.a.<br/><strong>Calculation (Annuity Due Formula):</strong><br/>Future Value = P × [((1 + r)^n - 1) / r] × (1 + r)<br/>This computes to a <strong>tax-free maturity of ₹2,712,139</strong> on a total investment of ₹1,500,000."
+        "body": "&lt;strong&gt;Input:&lt;/strong&gt; ₹100,000 paid at the start of each year for 15 years, 7.1% p.a.&lt;br/&gt;&lt;strong&gt;Calculation (Annuity Due Formula):&lt;/strong&gt;&lt;br/&gt;Future Value = P × [((1 + r)^n - 1) / r] × (1 + r)&lt;br/&gt;This computes to a &lt;strong&gt;tax-free maturity of ₹2,712,139&lt;/strong&gt; on a total investment of ₹1,500,000."
       }
     },
     "ppf_features": {
@@ -777,7 +777,7 @@
     "checklist": {
       "title": "How to Choose: A Quick Checklist",
       "points": [
-        "<strong>Goal Horizon:</strong> Long-term (>10 years)? PPF is better. Short-term (<5 years)? FD is the only option.",
+        "<strong>Goal Horizon:</strong> Long-term (&gt;10 years)? PPF is better. Short-term (&lt;5 years)? FD is the only option.",
         "<strong>Tax Bracket:</strong> In a higher tax bracket (20-30%)? The tax-free nature of PPF becomes much more attractive.",
         "<strong>Liquidity Needs:</strong> Need access to your money for emergencies? FD offers better liquidity, despite penalties.",
         "<strong>Risk Appetite:</strong> If you want zero risk, both are safe, but PPF is backed by the sovereign government.",
@@ -802,313 +802,313 @@
     ],
     "conclusion": {
       "title": "Final Thoughts: Making the Right Choice",
-      "body": "Choosing between a Fixed Deposit and the Public Provident Fund ultimately depends on your financial goals, investment horizon, and need for liquidity. For secure, tax-free, long-term growth, PPF is an unmatched tool. For predictable returns on short-term savings, an FD provides reliability and access. Use our <a href='/{lang}/fd-vs-ppf-calculator' class='underline'>FD vs PPF Returns Calculator</a> to model various scenarios and make an informed decision that best suits your financial plan."
+      "body": "Choosing between a Fixed Deposit and the Public Provident Fund ultimately depends on your financial goals, investment horizon, and need for liquidity. For secure, tax-free, long-term growth, PPF is an unmatched tool. For predictable returns on short-term savings, an FD provides reliability and access. Use our &lt;a href='/{lang}/fd-vs-ppf-calculator' class='underline'&gt;FD vs PPF Returns Calculator&lt;/a&gt; to model various scenarios and make an informed decision that best suits your financial plan."
     }
   },
   "tax_regime_calculator": {
-    "meta_title": "పాత vs కొత్త పన్ను విధానం క్యాలిక్యులేటర్ (AY 2025-26) | BharatSaver",
-    "meta_description": "భారతదేశంలో పాత మరియు కొత్త పన్ను విధానాల కింద మీ ఆదాయపు పన్ను బాధ్యతను పోల్చడానికి మరియు మీకు ఏది మంచిదో కనుగొనడానికి మా ఉచిత క్యాలిక్యులేటర్‌ను ఉపయోగించండి AY 2025-26 కోసం.",
-    "h1": "పాత vs కొత్త పన్ను విధానం క్యాలిక్యులేటర్",
-    "description": "మీ జీతం మరియు మినహాయింపులను నమోదు చేసి, పాత మరియు కొత్త పన్ను విధానాల కింద తక్షణమే పన్నును పోల్చండి. FY 2025-26 కోసం నవీకరించబడింది — HRA, 80C, 80D మరియు పని చేసిన ఉదాహరణలతో సహా.",
-    "title": "పన్ను విధానం క్యాలిక్యులేటర్",
-    "last_updated": "చివరిగా నవీకరించబడింది:",
-    "form_description": "ఏ పన్ను విధానం మీకు ఎక్కువ డబ్బు ఆదా చేస్తుందో కనుగొనండి.",
-    "gross_salary_label": "స్థూల వార్షిక జీతం",
-    "basic_salary_label": "ప్రాథమిక జీతం (HRA లెక్కింపు కోసం)",
-    "other_income_label": "ఇతర ఆదాయం (ఉదా., వడ్డీ, అద్దె)",
-    "age_label": "వయస్సు వర్గం",
-    "age_below_60": "60 సంవత్సరాల కంటే తక్కువ",
-    "age_60_to_80": "60 నుండి 80 సంవత్సరాలు (సీనియర్)",
-    "age_above_80": "80 సంవత్సరాల కంటే ఎక్కువ (సూపర్ సీనియర్)",
-    "deductions_title": "మినహాయింపులు (పాత విధానం కోసం)",
-    "section80C_label": "సెక్షన్ 80C (PPF, EPF, ELSS)",
-    "section80D_label": "సెక్షన్ 80D (వైద్య బీమా)",
-    "section80CCD1B_label": "సెక్షన్ 80CCD(1B) (NPS)",
-    "section80TTA_label": "సెక్షన్ 80TTA (పొదుపు వడ్డీ)",
-    "hra_label": "పొందిన HRA",
-    "rent_paid_label": "చెల్లించిన మొత్తం వార్షిక అద్దె",
-    "metro_city_label": "మెట్రో నగరంలో నివసిస్తున్నారా?",
-    "home_loan_interest_label": "గృహ రుణ వడ్డీ (u/s 24)",
-    "lta_label": "లీవ్ ట్రావెల్ అలవెన్స్ (LTA)",
-    "calculate_button": "పన్నును పోల్చండి",
-    "loading": "లెక్కిస్తోంది...",
-    "results_title": "పన్ను పోలిక ఫలితం",
-    "result_recommendation": "{winner} ఎంచుకోండి — ఇది ఈ సంవత్సరం మీకు {savings} ఆదా చేస్తుంది.",
-    "old_regime": "పాత విధానం",
-    "new_regime": "కొత్త విధానం",
-    "total_tax_label": "చెల్లించవలసిన మొత్తం పన్ను",
-    "taxable_income_label": "పన్ను విధించదగిన ఆదాయం",
-    "net_income_label": "చేతికి వచ్చే ఆదాయం (పన్ను తర్వాత)",
+    "meta_title": "Old vs New Tax Regime Calculator (AY 2025-26) | BharatSaver",
+    "meta_description": "Use our free calculator to compare your income tax liability under the Old and New tax regimes in India and find out which is better for you for AY 2025-26.",
+    "h1": "Old vs New Tax Regime Calculator",
+    "description": "Enter your salary and deductions to instantly compare tax under the old vs new regime. Updated for FY 2025-26 — includes HRA, 80C, 80D, and worked examples.",
+    "title": "Tax Regime Calculator",
+    "last_updated": "Last updated:",
+    "form_description": "Find out which tax regime saves you more money.",
+    "gross_salary_label": "Gross Annual Salary",
+    "basic_salary_label": "Basic Salary (for HRA calculation)",
+    "other_income_label": "Other Income (e.g., interest, rent)",
+    "age_label": "Age Category",
+    "age_below_60": "Below 60 years",
+    "age_60_to_80": "60 to 80 years (Senior)",
+    "age_above_80": "Above 80 years (Super Senior)",
+    "deductions_title": "Deductions (for Old Regime)",
+    "section80C_label": "Section 80C (PPF, EPF, ELSS)",
+    "section80D_label": "Section 80D (Medical Insurance)",
+    "section80CCD1B_label": "Section 80CCD(1B) (NPS)",
+    "section80TTA_label": "Section 80TTA (Savings Interest)",
+    "hra_label": "HRA Received",
+    "rent_paid_label": "Total Annual Rent Paid",
+    "metro_city_label": "Live in a Metro City?",
+    "home_loan_interest_label": "Home Loan Interest (u/s 24)",
+    "lta_label": "Leave Travel Allowance (LTA)",
+    "calculate_button": "Compare Tax",
+    "loading": "Calculating...",
+    "results_title": "Tax Comparison Result",
+    "result_recommendation": "Choose the {winner} — it saves you {savings} this year.",
+    "old_regime": "Old Regime",
+    "new_regime": "New Regime",
+    "total_tax_label": "Total Tax Payable",
+    "taxable_income_label": "Taxable Income",
+    "net_income_label": "Take-Home Income (after tax)",
     "assumptions": {
-      "title": "క్యాలిక్యులేటర్ అంచనాలు",
-      "body": "క్యాలిక్యులేటర్ FY 2024-25 (AY 2025-26) కోసం నవీకరించబడింది. జీతం పొందే వ్యక్తుల కోసం రెండు విధానాలకు ₹50,000 స్టాండర్డ్ డిడక్షన్ వర్తిస్తుంది. అన్ని లెక్కలు భారత ఆదాయపు పన్ను శాఖ ప్రచురించిన స్లాబ్ రేట్ల ఆధారంగా ఉంటాయి. ఇది ఒక అంచనా మాత్రమే మరియు పన్ను సలహా కాదు."
+      "title": "Calculator Assumptions",
+      "body": "The calculator is updated for FY 2024-25 (AY 2025-26). A standard deduction of ₹50,000 is applied to both regimes for salaried individuals. All calculations are based on the slab rates published by the Income Tax Department of India. This is an estimator and not tax advice."
     },
     "comparison_table": {
-      "title": "పాత vs కొత్త పన్ను విధానం — శీఘ్ర పోలిక",
-      "description": "ప్రతి విధానంలో ఏమి అనుమతించబడుతుందో ఒక శీఘ్ర వీక్షణ.",
+      "title": "Old vs New Tax Regime — Quick Comparison",
+      "description": "A quick look at what's allowed in each regime.",
       "table": {
-        "headers": ["ఫీచర్", "పాత పన్ను విధానం", "కొత్త పన్ను విధానం (డిఫాల్ట్)"],
+        "headers": ["Feature", "Old Tax Regime", "New Tax Regime (Default)"],
         "rows": [
-          ["పన్ను స్లాబ్‌లు", "4 స్లాబ్‌లు (5%, 20%, 30%)", "6 స్లాబ్‌లు (5% నుండి 30%)"],
-          ["ప్రామాణిక మినహాయింపు", "₹50,000", "₹50,000"],
-          ["సెక్షన్ 80C/80D", "అనుమతించబడింది", "అనుమతించబడలేదు"],
-          ["HRA మినహాయింపు", "అనుమతించబడింది", "అనుమతించబడలేదు"],
-          ["గృహ రుణ వడ్డీ", "అనుమతించబడింది", "అనుమతించబడలేదు"]
+          ["Tax Slabs", "4 Slabs (5%, 20%, 30%)", "6 Slabs (5% to 30%)"],
+          ["Standard Deduction", "₹50,000", "₹50,000"],
+          ["Section 80C/80D", "Allowed", "Not Allowed"],
+          ["HRA Exemption", "Allowed", "Not Allowed"],
+          ["Home Loan Interest", "Allowed", "Not Allowed"]
         ]
       }
     },
     "how_we_calculate": {
-      "title": "మేము మీ పన్నును ఎలా లెక్కిస్తాము (దశల వారీ)",
-      "body": "<ul><li><strong>పాత విధానం లెక్కింపు:</strong> స్థూల ఆదాయం - ప్రామాణిక మినహాయింపు - అన్ని సెక్షన్ 80 మినహాయింపులు - HRA/గృహ రుణ వడ్డీ = పన్ను విధించదగిన ఆదాయం.</li><li><strong>కొత్త విధానం లెక్కింపు:</strong> స్థూల ఆదాయం - ప్రామాణిక మినహాయింపు = పన్ను విధించదగిన ఆదాయం.</li></ul><p>మా పన్ను క్యాలిక్యులేటర్ FY 2024-25 (AY 2025-26) కోసం అధికారిక పన్ను స్లాబ్‌లను వర్తింపజేసి రెండు విధానాల కింద మీ బాధ్యతను నిర్ధారిస్తుంది. తుది పన్ను మొత్తంపై 4% ఆరోగ్యం & విద్యా సెస్ వర్తిస్తుంది. డిఫాల్ట్ కొత్త విధానంలో ₹7 లక్షల వరకు ఆదాయం కోసం సెక్షన్ 87A కింద రిబేట్ ఉంది, ఇది ప్రభావవంతమైన పన్నును సున్నా చేస్తుంది. స్లాబ్ రేట్ల కోసం, మేము అధికారిక <a href='https://incometaxindia.gov.in/Pages/tools/income-tax-calculator.aspx' target='_blank' rel='noopener noreferrer'>ఆదాయపు పన్ను శాఖ ఇ-క్యాలిక్యులేటర్‌ను</a> ఉదహరిస్తాము.</p>"
+      "title": "How We Calculate Your Tax (Step-by-step)",
+      "body": "&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Old Regime Calculation:&lt;/strong&gt; Gross Income - Standard Deduction - All Section 80 Deductions - HRA/Home Loan Interest = Taxable Income.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;New Regime Calculation:&lt;/strong&gt; Gross Income - Standard Deduction = Taxable Income.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Our tax calculator then applies the official tax slabs for FY 2024-25 (AY 2025-26) to determine your liability under both regimes. A 4% Health &amp; Education Cess is applied to the final tax amount. The default new regime has a rebate under Section 87A for incomes up to ₹7 lakh, making the effective tax zero. For slab rates, we reference the official &lt;a href='https://incometaxindia.gov.in/Pages/tools/income-tax-calculator.aspx' target='_blank' rel='noopener noreferrer'&gt;Income Tax Department e-calculator&lt;/a&gt;.&lt;/p&gt;"
     },
     "checklist": {
-      "title": "ఎలా ఎంచుకోవాలి: ఒక శీఘ్ర చెక్‌లిస్ట్",
-      "body": "<ul><li><strong>అధిక మినహాయింపులు:</strong> మీ మొత్తం మినహాయింపులు (80C, HRA, గృహ రుణ వడ్డీ) గణనీయంగా ఉంటే (సాధారణంగా > ₹2.5-3 లక్షలు), <strong>పాత విధానం</strong> తరచుగా ఉత్తమం.</li><li><strong>తక్కువ/మినహాయింపులు లేవు:</strong> మీకు చాలా మినహాయింపులు లేకపోతే, <strong>కొత్త విధానం</strong> యొక్క తక్కువ స్లాబ్ రేట్లు సాధారణంగా మరింత ప్రయోజనకరంగా ఉంటాయి.</li><li><strong>సరళత:</strong> బహుళ పెట్టుబడులను ట్రాక్ చేయకుండా ఒక సరళమైన పన్ను ఫైలింగ్ ప్రక్రియను ఇష్టపడతారా? <strong>కొత్త విధానం</strong> సులభం.</li></ul>"
+      "title": "How to Choose: A Quick Checklist",
+      "body": "&lt;ul&gt;&lt;li&gt;&lt;strong&gt;High Deductions:&lt;/strong&gt; If your total deductions (80C, HRA, home loan interest) are significant (usually &gt; ₹2.5-3 lakh), the &lt;strong&gt;Old Regime&lt;/strong&gt; is often better.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Low/No Deductions:&lt;/strong&gt; If you don't have many deductions, the &lt;strong&gt;New Regime's&lt;/strong&gt; lower slab rates are usually more beneficial.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Simplicity:&lt;/strong&gt; Prefer a straightforward tax filing process without tracking multiple investments? The &lt;strong&gt;New Regime&lt;/strong&gt; is simpler.&lt;/li&gt;&lt;/ul&gt;"
     },
     "common_scenarios": {
-      "title": "పని చేసిన ఉదాహరణలు — పాత vs కొత్త విధానం",
+      "title": "Worked Examples — Old vs New Regime",
       "scenario1": {
-        "title": "ఉదాహరణ 1: HRA & పూర్తి మినహాయింపులతో ₹10 లక్షల జీతం",
-        "body": "<strong>ఇన్‌పుట్‌లు:</strong> జీతం ₹10,00,000 | HRA ₹2,00,000 | 80C ₹1,50,000 | 80D ₹25,000 | 80CCD(1B) ₹50,000<br/><strong>పాత విధానం పన్ను:</strong> ₹46,800<br/><strong>కొత్త విధానం పన్ను:</strong> ₹54,600<br/><strong>సిఫార్సు:</strong> పాత విధానం ఇక్కడ ఉత్తమం ఎందుకంటే మినహాయింపులు + HRA మినహాయింపులు పన్ను విధించదగిన ఆదాయాన్ని గణనీయంగా తగ్గిస్తాయి."
+        "title": "Example 1: ₹10 Lakh Salary with HRA & Full Deductions",
+        "body": "&lt;strong&gt;Inputs:&lt;/strong&gt; Salary ₹10,00,000 | HRA ₹2,00,000 | 80C ₹1,50,000 | 80D ₹25,000 | 80CCD(1B) ₹50,000&lt;br/&gt;&lt;strong&gt;Old Regime Tax:&lt;/strong&gt; ₹46,800&lt;br/&gt;&lt;strong&gt;New Regime Tax:&lt;/strong&gt; ₹54,600&lt;br/&gt;&lt;strong&gt;Recommendation:&lt;/strong&gt; The Old Regime is better here because the deductions + HRA exemption significantly lower the taxable income."
       },
       "scenario2": {
-        "title": "ఉదాహరణ 2: ₹15 లక్షల జీతం, మినహాయింపులు లేవు",
-        "body": "<strong>ఇన్‌పుట్‌లు:</strong> జీతం ₹15,00,000 | HRA = 0 | 80C/80D = 0<br/><strong>పాత విధానం పన్ను:</strong> ₹2,73,000<br/><strong>కొత్త విధానం పన్ను:</strong> ₹1,95,000<br/><strong>సిఫార్సు:</strong> కొత్త విధానం ~₹78,000 ఆదా చేస్తుంది ఎందుకంటే ఏ మినహాయింపులు ఉపయోగించబడలేదు."
+        "title": "Example 2: ₹15 Lakh Salary, No Deductions",
+        "body": "&lt;strong&gt;Inputs:&lt;/strong&gt; Salary ₹15,00,000 | HRA = 0 | 80C/80D = 0&lt;br/&gt;&lt;strong&gt;Old Regime Tax:&lt;/strong&gt; ₹2,73,000&lt;br/&gt;&lt;strong&gt;New Regime Tax:&lt;/strong&gt; ₹1,95,000&lt;br/&gt;&lt;strong&gt;Recommendation:&lt;/strong&gt; The New Regime saves ~₹78,000 as no deductions are utilized."
       },
       "scenario3": {
-        "title": "ఉదాహరణ 3: ₹7 లక్షల ఫ్రీలాన్సర్ ఆదాయం (HRA లేదు, చిన్న మినహాయింపు)",
-        "body": "<strong>ఇన్‌పుట్‌లు:</strong> ఆదాయం ₹7,00,000 | HRA లేదు | 80C ₹50,000<br/><strong>పాత విధానం పన్ను:</strong> ₹23,400<br/><strong>కొత్త విధానం పన్ను:</strong> ₹0 (87A రిబేట్ వర్తిస్తుంది)<br/><strong>సిఫార్సు:</strong> కొత్త విధానం ఉత్తమం, ప్రత్యేకించి ₹7 లక్షల వరకు ఆదాయం ఉన్న వ్యక్తులకు రిబేట్ కారణంగా."
+        "title": "Example 3: ₹7 Lakh Freelancer Income (No HRA, Small Deduction)",
+        "body": "&lt;strong&gt;Inputs:&lt;/strong&gt; Income ₹7,00,000 | No HRA | 80C ₹50,000&lt;br/&gt;&lt;strong&gt;Old Regime Tax:&lt;/strong&gt; ₹23,400&lt;br/&gt;&lt;strong&gt;New Regime Tax:&lt;/strong&gt; ₹0 (Rebate under 87A applies)&lt;br/&gt;&lt;strong&gt;Recommendation:&lt;/strong&gt; The New Regime is better, especially for individuals with income up to ₹7 lakh due to the rebate."
       }
     },
-    "faq_title": "తరచుగా అడిగే ప్రశ్నలు",
+    "faq_title": "Frequently Asked Questions",
     "faqs": [
-      { "question": "కొత్త పన్ను విధానం అంటే ఏమిటి?", "answer": "కొత్త పన్ను విధానం తక్కువ పన్ను రేట్లను అందిస్తుంది కానీ HRA, 80C, మరియు గృహ రుణ వడ్డీ వంటి చాలా సాధారణ మినహాయింపులను అనుమతించదు. ఇది ఇప్పుడు డిఫాల్ట్ విధానం. మీ మొత్తం మినహాయించదగిన పెట్టుబడులు ~₹1.8L కంటే తక్కువగా ఉంటే, కొత్త విధానం సాధారణంగా పన్ను ఆదా చేస్తుంది." },
-      { "question": "పాత పన్ను విధానం అంటే ఏమిటి?", "answer": "పాత పన్ను విధానంలో కొంచెం ఎక్కువ పన్ను రేట్లు ఉన్నాయి కానీ మీకు 70కి పైగా మినహాయింపులు మరియు మినహాయింపులను క్లెయిమ్ చేయడానికి అనుమతిస్తుంది. మీరు ప్రత్యేకంగా దాన్ని ఎంచుకోవాలి." },
-      { "question": "₹10 లక్షల జీతానికి ఏ పన్ను విధానం ఉత్తమం?", "answer": "మీ మొత్తం మినహాయింపులు ₹2.5 లక్షల కంటే ఎక్కువగా ఉంటే, పాత విధానం సాధారణంగా ఉత్తమం. లేకపోతే, కొత్త విధానం తరచుగా మీకు ఎక్కువ పన్ను ఆదా చేస్తుంది." },
-      { "question": "నేను కొత్త పన్ను విధానంలో HRAని క్లెయిమ్ చేయవచ్చా?", "answer": "లేదు, HRA మినహాయింపు పాత పన్ను విధానం కింద మాత్రమే అందుబాటులో ఉంది; తేడాను చూడటానికి క్యాలిక్యులేటర్‌లో మీ HRA వివరాలను చేర్చండి." },
-      { "question": "కొత్త విధానంలో ప్రామాణిక మినహాయింపు అందుబాటులో ఉందా?", "answer": "అవును, జీతం పొందే వ్యక్తుల కోసం ₹50,000 ప్రామాణిక మినహాయింపు పాత మరియు కొత్త రెండూ పన్ను విధానాల కింద అందుబాటులో ఉంది." },
-      { "question": "FY 2024-25 కోసం సెక్షన్ 87A కింద పన్ను రిబేట్ అంటే ఏమిటి?", "answer": "కొత్త విధానంలో, మీ పన్ను విధించదగిన ఆదాయం ₹7 లక్షల వరకు ఉంటే, రిబేట్ కారణంగా మీరు సున్నా పన్ను చెల్లిస్తారు. పాత విధానంలో, రిబేట్ ₹5 లక్షల వరకు ఆదాయానికి వర్తిస్తుంది." }
+      { "question": "What is the new tax regime?", "answer": "The new tax regime offers lower tax rates but disallows most common deductions like HRA, 80C, and home loan interest. It is now the default regime. If your total deductible investments are less than ~₹1.8L, the new regime usually saves you tax." },
+      { "question": "What is the old tax regime?", "answer": "The old tax regime has slightly higher tax rates but allows you to claim over 70 deductions and exemptions. You must specifically opt for it." },
+      { "question": "Which tax regime is better for a ₹10 lakh salary?", "answer": "If your total deductions are over ₹2.5 lakh, the Old Regime is usually better. Otherwise, the New Regime often saves you more tax." },
+      { "question": "Can I claim HRA in the new tax regime?", "answer": "No, HRA exemption is only available under the Old tax regime; include your HRA details in the calculator to see the difference." },
+      { "question": "Is standard deduction available in the new regime?", "answer": "Yes, a standard deduction of ₹50,000 for salaried individuals is available under both the Old and New tax regimes." },
+      { "question": "What is the tax rebate under Section 87A for FY 2024-25?", "answer": "In the new regime, if your taxable income is up to ₹7 lakh, you pay zero tax due to the rebate. In the old regime, the rebate applies for income up to ₹5 lakh." }
     ],
     "next_steps": {
-      "title": "తదుపరి దశలు",
-      "cta1_title": "మీ ITR ఫైల్ చేయండి",
-      "cta1_desc": "మీ ఆదాయపు పన్ను రిటర్న్‌ను ఖచ్చితంగా ఫైల్ చేయడానికి ClearTax వంటి విశ్వసనీయ భాగస్వామిని ఉపయోగించండి.",
-      "cta2_title": "పన్ను-ఆదా పెట్టుబడులను ప్లాన్ చేయండి",
-      "cta2_desc": "మీ పెట్టుబడులను ప్లాన్ చేయడానికి PPF మరియు NPS వంటి మా పన్ను-ఆదా క్యాలిక్యులేటర్లను అన్వేషించండి."
+      "title": "Next Steps",
+      "cta1_title": "File Your ITR",
+      "cta1_desc": "Use a trusted partner like ClearTax to file your income tax return accurately.",
+      "cta2_title": "Plan Tax-Saving Investments",
+      "cta2_desc": "Explore our tax-saving calculators like PPF and NPS to plan your investments."
     },
     "conclusion": {
-      "title": "తుది ఆలోచనలు: తెలివైన ఎంపిక చేసుకోవడం",
-      "body": "ఒక పన్ను విధానాన్ని ఎంచుకోవడం ఒక కీలకమైన ఆర్థిక నిర్ణయం. కొత్త విధానం సరళతను అందిస్తుంది, అయితే పాత విధానం గణనీయమైన పెట్టుబడులు మరియు ఖర్చులు ఉన్నవారికి ప్రతిఫలమిస్తుంది. మీ నిర్దిష్ట పరిస్థితిని పోల్చడానికి, లాభనష్టాలను అర్థం చేసుకోవడానికి మరియు మీ చేతికి వచ్చే జీతాన్ని గరిష్ఠం చేసే మార్గాన్ని ఎంచుకోవడానికి ఈ క్యాలిక్యులేటర్‌ను ఉపయోగించండి. లోతైన అంతర్దృష్టుల కోసం, పన్ను-ఆదా పెట్టుబడులు మీ నిర్ణయాన్ని ఎలా ప్రభావితం చేస్తాయో చూడటానికి మా <a href='/{lang}/ppf-calculator' class='underline'>PPF క్యాలిక్యులేటర్</a> లేదా మా <a href='/{lang}/nps-calculator' class='underline'>NPS క్యాలిక్యులేటర్</a>ను అన్వేషించండి."
+      "title": "Final Thoughts: Making the Smart Choice",
+      "body": "Choosing a tax regime is a critical financial decision. The new regime offers simplicity, while the old regime rewards those with significant investments and expenses. Use this calculator to compare your specific situation, understand the trade-offs, and choose the path that maximizes your take-home salary. For deeper insights, explore our &lt;a href='/{lang}/ppf-calculator' class='underline'&gt;PPF Calculator&lt;/a&gt; or our &lt;a href='/{lang}/nps-calculator' class='underline'&gt;NPS Calculator&lt;/a&gt; to see how tax-saving investments can impact your decision."
     }
   },
   "loan_optimization_calculator": {
-    "h1": "లోన్ ఆప్టిమైజేషన్ క్యాలిక్యులేటర్ భారతదేశం (2025)",
-    "summary": "ఉచిత లోన్ ఆప్టిమైజేషన్ క్యాలిక్యులేటర్ (భారతదేశం). ప్రీపేమెంట్ వర్సెస్ ఇన్వెస్ట్ పోల్చండి, ఇఎంఐ ఆప్టిమైజ్ చేయండి, బ్యాలెన్స్ బదిలీ ప్లాన్ చేయండి, రుణ విమోచన షెడ్యూల్‌ను డౌన్‌లోడ్ చేయండి.",
-    "title": "లోన్ ఆప్టిమైజర్",
-    "form_description": "మీ ఈఎంఐని లెక్కించండి మరియు అదనపు చెల్లింపులు మీకు వడ్డీ ఎలా ఆదా చేస్తాయో చూడండి.",
+    "h1": "Loan Optimization Calculator India (2025)",
+    "summary": "Free Loan Optimization Calculator (India). Compare prepayment vs invest, optimize EMI, plan balance transfer, download amortization schedule.",
+    "title": "Loan Optimizer",
+    "form_description": "Calculate your EMI and see how extra payments can save you interest.",
     "form": {
-      "loan_amount": "రుణ మొత్తం (₹)",
-      "interest_rate": "వడ్డీ రేటు (% p.a.)",
-      "tenure": "కాలపరిమితి (సంవత్సరాలు)",
-      "prepayment_amount": "ముందస్తు చెల్లింపు మొత్తం (₹)",
-      "calculating": "లెక్కిస్తోంది...",
-      "calculate_cta": "ఈఎంఐ & పొదుపులను లెక్కించండి"
+      "loan_amount": "Loan Amount (₹)",
+      "interest_rate": "Interest Rate (% p.a.)",
+      "tenure": "Tenure (Years)",
+      "prepayment_amount": "Prepayment Amount (₹)",
+      "calculating": "Calculating...",
+      "calculate_cta": "Calculate EMI & Savings"
     },
     "results": {
-      "title": "మీ రుణ సారాంశం",
-      "monthly_emi": "నెలవారీ ఈఎంఐ",
-      "total_interest": "చెల్లించవలసిన మొత్తం వడ్డీ",
-      "total_payment": "మొత్తం చెల్లింపు",
+      "title": "Your Loan Summary",
+      "monthly_emi": "Monthly EMI",
+      "total_interest": "Total Interest Payable",
+      "total_payment": "Total Payment",
       "prepayment_summary": {
-        "title": "ముందస్తు చెల్లింపుతో, మీరు ఆదా చేయవచ్చు:",
-        "subtitle": "మీరు {months} నెలల ముందుగా రుణ-రహితం కావచ్చు!"
+        "title": "With prepayment, you can save:",
+        "subtitle": "You could be loan-free {months} months earlier!"
       },
-      "chart_view": "చార్ట్ వీక్షణ",
-      "table_view": "పట్టిక వీక్షణ",
-      "download_csv": "CSVని డౌన్‌లోడ్ చేయండి",
-      "principal_paid": "చెల్లించిన అసలు",
-      "interest_paid": "చెల్లించిన వడ్డీ",
-      "outstanding_balance": "బకాయి ఉన్న బ్యాలెన్స్",
+      "chart_view": "Chart View",
+      "table_view": "Table View",
+      "download_csv": "Download CSV",
+      "principal_paid": "Principal Paid",
+      "interest_paid": "Interest Paid",
+      "outstanding_balance": "Outstanding Balance",
       "table": {
-        "month": "నెల",
-        "principal": "అసలు",
-        "interest": "వడ్డీ",
-        "total_payment": "మొత్తం చెల్లింపు",
-        "ending_balance": "చివరి బ్యాలెన్స్"
+        "month": "Month",
+        "principal": "Principal",
+        "interest": "Interest",
+        "total_payment": "Total Payment",
+        "ending_balance": "Ending Balance"
       }
     },
     "why": {
-      "h2": "మీ రుణాన్ని ఎందుకు ఆప్టిమైజ్ చేయాలి? వడ్డీ యొక్క దాచిన ఖర్చులు",
-      "body": "<p>మీరు రుణం తీసుకున్నప్పుడు, మీరు తీసుకున్న దానికంటే ఎక్కువ తిరిగి చెల్లిస్తారు — ఆ అదనపు మొత్తం వడ్డీ. గృహ రుణం వంటి దీర్ఘకాలిక రుణం కోసం, చెల్లించిన మొత్తం వడ్డీ తరచుగా అసలు మొత్తానికి సమానంగా ఉంటుంది. లోన్ ఆప్టిమైజేషన్ అనేది ఈ వడ్డీ వ్యయాన్ని తగ్గించడానికి మరియు వేగంగా రుణ-రహితం కావడానికి మీ రుణాన్ని వ్యూహాత్మకంగా నిర్వహించే ప్రక్రియ.</p>"
+      "h2": "Why Optimize Your Loan? The Hidden Costs of Interest",
+      "body": "&lt;p&gt;When you take a loan, you pay back more than you borrowed — that extra amount is interest. For a long-term loan like a home loan, the total interest paid can often be as much as the principal amount itself. Loan optimization is the process of strategically managing your loan to reduce this interest cost and become debt-free faster.&lt;/p&gt;"
     },
     "how_it_works": {
-      "h2": "ఈ క్యాలిక్యులేటర్ ఎలా పనిచేస్తుంది",
-      "body": "<p>మా క్యాలిక్యులేటర్ మొదట ప్రామాణిక సూత్రాన్ని ఉపయోగించి మీ సమాన నెలవారీ విడత (ఈఎంఐ)ని నిర్ణయిస్తుంది: <code>ఈఎంఐ = పి × ఆర్ × (1 + ఆర్)^ఎన్ / ((1 + ఆర్)^ఎన్ - 1)</code>, ఇక్కడ పి అసలు, ఆర్ నెలవారీ వడ్డీ రేటు, మరియు ఎన్ నెలల్లో కాలపరిమితి.</p><p>మీరు ఒక ప్రీపేమెంట్ జోడించినప్పుడు, క్యాలిక్యులేటర్ రుణ విమోచన షెడ్యూల్‌ను సర్దుబాటు చేస్తుంది, ఈ అదనపు చెల్లింపు మీ అసలును ఎలా తగ్గిస్తుందో చూపిస్తుంది, తద్వారా రుణం జీవితకాలంలో చెల్లించిన మొత్తం వడ్డీని తగ్గిస్తుంది మరియు కాలపరిమితిని తగ్గిస్తుంది.</p>"
+      "h2": "How This Calculator Works",
+      "body": "&lt;p&gt;Our calculator first determines your Equated Monthly Installment (EMI) using the standard formula: &lt;code&gt;EMI = P × r × (1 + r)^n / ((1 + r)^n - 1)&lt;/code&gt;, where P is the principal, r is the monthly interest rate, and n is the tenure in months.&lt;/p&gt;&lt;p&gt;When you add a prepayment, the calculator adjusts the amortization schedule to show how this extra payment reduces your principal, thereby lowering the total interest paid over the life of the loan and shortening the tenure.&lt;/p&gt;"
     },
     "worked_examples": {
-      "h2": "పని చేసిన ఉదాహరణలు",
+      "h2": "Worked Examples",
       "scenario1": {
-        "title": "దృష్టాంతం 1: ప్రామాణిక గృహ రుణం (₹50 లక్షలు)",
-        "body": "<strong>ఇన్‌పుట్‌లు:</strong> ₹50 లక్షల రుణం, 8.5% వడ్డీ, 20 సంవత్సరాలు.<br/><strong>ఫలితం:</strong> ఈఎంఐ ₹43,391. చెల్లించిన మొత్తం వడ్డీ ₹54.14 లక్షలు.<br/><strong>₹5 లక్షల ప్రీపేమెంట్‌తో:</strong> ఆదా అయిన వడ్డీ ₹14.3 లక్షలు మరియు కాలపరిమితి 63 నెలలు తగ్గుతుంది."
+        "title": "Scenario 1: Standard Home Loan (₹50 Lakh)",
+        "body": "&lt;strong&gt;Inputs:&lt;/strong&gt; ₹50 lakh loan, 8.5% interest, 20 years.&lt;br/&gt;&lt;strong&gt;Result:&lt;/strong&gt; EMI is ₹43,391. Total interest paid is ₹54.14 lakh.&lt;br/&gt;&lt;strong&gt;With ₹5 Lakh Prepayment:&lt;/strong&gt; Interest saved is ₹14.3 lakh and tenure is reduced by 63 months."
       },
       "scenario2": {
-        "title": "దృష్టాంతం 2: కారు రుణం (₹8 లక్షలు)",
-        "body": "<strong>ఇన్‌పుట్‌లు:</strong> ₹8 లక్షల రుణం, 10% వడ్డీ, 7 సంవత్సరాలు.<br/><strong>ఫలితం:</strong> ఈఎంఐ ₹13,275. చెల్లించిన మొత్తం వడ్డీ ₹3.15 లక్షలు.<br/><strong>₹1 లక్షల ప్రీపేమెంట్‌తో:</strong> ఆదా అయిన వడ్డీ ₹70,000 మరియు కాలపరిమితి 15 నెలలు తగ్గుతుంది."
+        "title": "Scenario 2: Car Loan (₹8 Lakh)",
+        "body": "&lt;strong&gt;Inputs:&lt;/strong&gt; ₹8 lakh loan, 10% interest, 7 years.&lt;br/&gt;&lt;strong&gt;Result:&lt;/strong&gt; EMI is ₹13,275. Total interest paid is ₹3.15 lakh.&lt;br/&gt;&lt;strong&gt;With ₹1 Lakh Prepayment:&lt;/strong&gt; Interest saved is ₹70,000 and tenure is reduced by 15 months."
       },
       "scenario3": {
-        "title": "దృష్టాంతం 3: వ్యక్తిగత రుణం (₹3 లక్షలు)",
-        "body": "<strong>ఇన్‌పుట్‌లు:</strong> ₹3 లక్షల రుణం, 12% వడ్డీ, 5 సంవత్సరాలు.<br/><strong>ఫలితం:</strong> ఈఎంఐ ₹6,673. చెల్లించిన మొత్తం వడ్డీ ₹1 లక్ష.<br/><strong>₹50,000 ప్రీపేమెంట్‌తో:</strong> ఆదా అయిన వడ్డీ ₹25,000 మరియు కాలపరిమితి 12 నెలలు తగ్గుతుంది."
+        "title": "Scenario 3: Personal Loan (₹3 Lakh)",
+        "body": "&lt;strong&gt;Inputs:&lt;/strong&gt; ₹3 lakh loan, 12% interest, 5 years.&lt;br/&gt;&lt;strong&gt;Result:&lt;/strong&gt; EMI is ₹6,673. Total interest paid is ₹1 lakh.&lt;br/&gt;&lt;strong&gt;With ₹50,000 Prepayment:&lt;/strong&gt; Interest saved is ₹25,000 and tenure is reduced by 12 months."
       }
     },
     "optimization_masterclass": {
-      "h2": "లోన్ ఆప్టిమైజేషన్ మాస్టర్‌క్లాస్: ప్రీపేమెంట్, రీఫైనాన్స్, & ఇన్వెస్ట్‌మెంట్",
-      "body": "<p>లోన్ ఆప్టిమైజేషన్ కోసం మూడు ప్రధాన వ్యూహాలు ఉన్నాయి:</p><ul><li><strong>ప్రీపేమెంట్:</strong> మీ అసలు వైపు అదనపు చెల్లింపులు చేయడం. ఇది మీ రుణ భారాన్ని తగ్గించడానికి అత్యంత ప్రత్యక్ష మార్గం.</li><li><strong>రీఫైనాన్స్/బ్యాలెన్స్ బదిలీ:</strong> తక్కువ వడ్డీ రేటును అందించే మరో రుణదాతకు మీ రుణాన్ని తరలించడం. ఇది మీ ఈఎంఐ మరియు మొత్తం వడ్డీని గణనీయంగా తగ్గించగలదు.</li><li><strong>ప్రీపే వర్సెస్ ఇన్వెస్ట్:</strong> మీ అదనపు నిధులను మీ రుణాన్ని ముందస్తుగా చెల్లించడానికి ఉపయోగించాలా లేదా అధిక రాబడిని సంపాదించడానికి వాటిని ఎక్కడైనా పెట్టుబడి పెట్టాలా అని నిర్ణయించడం.</li></ul>"
+      "h2": "Loan Optimization Masterclass: Prepayment, Refinance, & Investment",
+      "body": "&lt;p&gt;There are three main strategies for loan optimization:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Prepayment:&lt;/strong&gt; Making extra payments towards your principal. This is the most direct way to reduce your debt burden.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Refinance/Balance Transfer:&lt;/strong&gt; Moving your loan to another lender offering a lower interest rate. This can significantly reduce your EMI and total interest.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Prepay vs. Invest:&lt;/strong&gt; Deciding whether to use surplus funds to prepay your loan or invest them elsewhere to earn a higher return.&lt;/li&gt;&lt;/ul&gt;"
     },
     "prepay_vs_invest": {
-      "h2": "ప్రీపే వర్సెస్ ఇన్వెస్ట్: ఒక కీలక నిర్ణయం",
-      "body": "<p>మీ రుణాన్ని ముందస్తుగా చెల్లించాలా లేదా మీ అదనపు నిధులను పెట్టుబడి పెట్టాలా అనే నిర్ణయం ఒక సాధారణ పోలికపై ఆధారపడి ఉంటుంది: మీ పెట్టుబడిపై పన్ను తర్వాత రాబడి మీ రుణ వడ్డీ రేటు కంటే ఎక్కువగా ఉంటే, పెట్టుబడి పెట్టడం సాధారణంగా మంచిది. ఉదాహరణకు, మీ రుణ రేటు 8.5% అయితే మరియు మీరు ఒక ఈక్విటీ పెట్టుబడిపై 12% పన్ను తర్వాత రాబడిని సంపాదించగలిగితే, అదనపు నిధులను పెట్టుబడి పెట్టడం గణితశాస్త్రపరంగా ఉత్తమ ఎంపిక.</p>"
+      "h2": "Prepay vs. Invest: A Key Decision",
+      "body": "&lt;p&gt;The decision to prepay your loan or invest your surplus funds depends on a simple comparison: if the post-tax return on your investment is higher than your loan's interest rate, it's generally better to invest. For example, if your loan rate is 8.5% and you can earn a 12% post-tax return on an equity investment, investing the surplus is the mathematically superior option.&lt;/p&gt;"
     },
     "comparison_table": {
-        "title": "ప్రీపేమెంట్ వర్సెస్ ఇన్వెస్ట్‌మెంట్: ఒక శీఘ్ర పోలిక",
-        "headers": ["దృష్టాంతం", "ప్రీపేమెంట్ ఎంచుకోండి nếu...", "పెట్టుబడి ఎంచుకోండి nếu..."],
+        "title": "Prepayment vs. Investment: A Quick Comparison",
+        "headers": ["Scenario", "Choose Prepayment if...", "Choose Investment if..."],
         "rows": [
-            ["రిస్క్", "మీకు మీ రుణ వడ్డీ రేటుకు సమానమైన హామీ, రిస్క్-ఫ్రీ 'రాబడి' కావాలనుకుంటే.", "మీరు సంభావ్యంగా అధిక రాబడుల కోసం మార్కెట్ రిస్క్‌లతో సౌకర్యవంతంగా ఉంటే."],
-            ["రాబడులు", "మీ రుణ వడ్డీ రేటు ఎక్కువగా ఉంటే (ఉదా., వ్యక్తిగత రుణం >12%).", "మీరు ఆశించే పన్ను-తర్వాత పెట్టుబడి రాబడి మీ రుణ వడ్డీ రేటు కంటే ఎక్కువగా ఉంటే."],
-            ["లక్ష్యం", "మీ ప్రాథమిక లక్ష్యం వీలైనంత త్వరగా రుణ-రహితం కావడం అయితే.", "మీ ప్రాథమిక లక్ష్యం దీర్ఘకాలిక సంపద సృష్టి అయితే."],
-            ["పన్ను", "మీ రుణానికి పన్ను ప్రయోజనాలు లేకపోతే (ఉదా., కారు రుణం, వ్యక్తిగత రుణం).", "మీరు గృహ రుణాన్ని ముందస్తుగా చెల్లిస్తుంటే మరియు వడ్డీపై గణనీయమైన పన్ను ప్రయోజనాలను కోల్పోతారు."]
+            ["Risk", "You want a guaranteed, risk-free 'return' equal to your loan's interest rate.", "You are comfortable with market risks for potentially higher returns."],
+            ["Returns", "Your loan interest rate is high (e.g., personal loan &gt;12%).", "Your expected post-tax investment return is higher than your loan interest rate."],
+            ["Goal", "Your primary goal is to become debt-free as quickly as possible.", "Your primary goal is long-term wealth creation."],
+            ["Tax", "Your loan has no tax benefits (e.g., car loan, personal loan).", "You are prepaying a home loan and will lose significant tax benefits on the interest."]
         ]
     },
     "refinance": {
-      "h2": "బ్యాలెన్స్ బదిలీ (రీఫైనాన్స్) ఎప్పుడు పరిగణించాలి",
-      "body": "<p>మీ ప్రస్తుత రేటు కంటే కనీసం 0.5-1% తక్కువ వడ్డీ రేటుతో కొత్త రుణం పొందగలిగితే బ్యాలెన్స్ బదిలీ ఒక మంచి ఎంపిక. నికర పొదుపులు సార్థకమైనవి అని నిర్ధారించుకోవడానికి బదిలీతో సంబంధం ఉన్న ఏవైనా ప్రాసెసింగ్ ఫీజులు లేదా ఇతర ఛార్జీలను పరిగణనలోకి తీసుకోండి.</p>"
+      "h2": "When to Consider a Balance Transfer (Refinance)",
+      "body": "&lt;p&gt;A balance transfer is a good option if you can get a new loan with an interest rate at least 0.5-1% lower than your current rate. Factor in any processing fees or other charges associated with the transfer to ensure the net savings are worthwhile.&lt;/p&gt;"
     },
     "tax_notes": {
-      "h2": "గృహ రుణాల కోసం ముఖ్యమైన పన్ను పరిగణనలు",
-      "body": "<p>గృహ రుణాల కోసం, అసలు తిరిగి చెల్లింపు సెక్షన్ 80C (₹1.5 లక్షల వరకు) కింద మినహాయింపుకు అర్హత పొందుతుంది, మరియు చెల్లించిన వడ్డీ సెక్షన్ 24 (₹2 లక్షల వరకు) కింద మినహాయించదగినది. గృహ రుణాన్ని ముందస్తుగా చెల్లించడం వల్ల ఈ పన్ను ప్రయోజనాలు తగ్గవచ్చు, కాబట్టి మీ 'ప్రీపే వర్సెస్ ఇన్వెస్ట్' నిర్ణయంలో దీన్ని పరిగణనలోకి తీసుకోండి.</p>"
+      "h2": "Important Tax Considerations for Home Loans",
+      "body": "&lt;p&gt;For home loans, principal repayment is eligible for deduction under Section 80C (up to ₹1.5 lakh), and interest paid is deductible under Section 24 (up to ₹2 lakh). Prepaying a home loan may reduce these tax benefits, so factor this into your 'prepay vs. invest' decision.&lt;/p&gt;"
     },
     "faq": {
-      "h2": "తరచుగా అడిగే ప్రశ్నలు",
+      "h2": "Frequently Asked Questions",
       "faqs": [
-        { "q": "లోన్ ఆప్టిమైజేషన్ అంటే ఏమిటి?", "a": "లోన్ ఆప్టిమైజేషన్ అనేది ప్రీపేమెంట్ మరియు రీఫైనాన్సింగ్ వంటి వ్యూహాల ద్వారా వడ్డీ ఖర్చులను తగ్గించడానికి మరియు వేగంగా రుణ-రహితం కావడానికి మీ రుణాన్ని నిర్వహించే ప్రక్రియ." },
-        { "q": "ప్రీపేమెంట్ డబ్బు ఎలా ఆదా చేస్తుంది?", "a": "ప్రీపేమెంట్ మీ బకాయి ఉన్న అసలును తగ్గిస్తుంది, దీని అర్థం మీరు రుణం యొక్క మిగిలిన జీవితకాలంలో తక్కువ వడ్డీ చెల్లిస్తారు, కాలపరిమితిని తగ్గిస్తుంది." },
-        { "q": "ఈఎంఐ తగ్గించడం లేదా కాలపరిమితి తగ్గించడం మంచిదా?", "a": "కాలపరిమితి తగ్గించడం దాదాపు ఎల్లప్పుడూ ఈఎంఐ తగ్గించడం కంటే ఎక్కువ వడ్డీని ఆదా చేస్తుంది. మీ ఈఎంఐని అలాగే ఉంచి రుణ కాలాన్ని తగ్గించుకోవడానికి ఎంచుకోండి." },
-        { "q": "నేను నా రుణాన్ని ఎప్పుడు రీఫైనాన్స్ చేయాలి?", "a": "మీరు మీ ప్రస్తుత రేటు కంటే గణనీయంగా తక్కువ (కనీసం 0.5-1%) వడ్డీ రేటుతో కొత్త రుణం పొందగలిగితే, అన్ని ఫీజులను పరిగణనలోకి తీసుకున్న తర్వాత రీఫైనాన్సింగ్‌ను పరిగణించండి." }
+        { "q": "What is loan optimization?", "a": "Loan optimization is the process of managing your loan through strategies like prepayment and refinancing to reduce interest costs and become debt-free faster." },
+        { "q": "How does prepayment save money?", "a": "Prepayment reduces your outstanding principal, which means you pay less interest over the remaining life of the loan, thereby shortening the tenure." },
+        { "q": "Is it better to reduce EMI or reduce tenure?", "a": "Reducing the tenure almost always saves more interest than reducing the EMI. Opt to keep your EMI the same and shorten the loan period." },
+        { "q": "When should I refinance my loan?", "a": "Consider refinancing if you can get a new loan with an interest rate significantly lower (at least 0.5-1%) than your current rate, after accounting for all fees." }
       ]
     },
     "conclusion": {
-      "title": "ముగింపు: మీ రుణంపై నియంత్రణ తీసుకోండి",
-      "body": "లోన్ ఆప్టిమైజేషన్ అనేది ఆర్థిక స్వేచ్ఛ వైపు మీ ప్రయాణాన్ని వేగవంతం చేయడానికి ఒక శక్తివంతమైన మార్గం. ప్రీపేమెంట్లు మరియు రీఫైనాన్సింగ్‌ను వ్యూహాత్మకంగా ఉపయోగించడం ద్వారా, మీరు వడ్డీపై గణనీయమైన మొత్తాన్ని ఆదా చేయవచ్చు మరియు మీ రుణ కాలాన్ని తగ్గించవచ్చు. విభిన్న దృశ్యాలను మోడల్ చేయడానికి మరియు మీ ఆర్థిక పరిస్థితికి ఉత్తమ మార్గాన్ని కనుగొనడానికి ఈ క్యాలిక్యులేటర్‌ను ఉపయోగించండి."
+      "title": "Conclusion: Take Control of Your Debt",
+      "body": "Loan optimization is a powerful way to accelerate your journey toward financial freedom. By strategically using prepayments and refinancing, you can save a significant amount on interest and shorten your loan tenure. Use this calculator to model different scenarios and find the best path for your financial situation."
     }
   },
   "retirement_corpus_calculator": {
-    "meta_title": "పదవీ విరమణ కార్పస్ క్యాలిక్యులేటర్ భారతదేశం 2025 | ఉచిత ఆన్‌లైన్ పదవీ విరమణ ప్రణాళిక సాధనం",
-    "meta_description": "ఉచిత పదవీ విరమణ కార్పస్ క్యాలిక్యులేటర్ భారతదేశం (2025). మీరు పదవీ విరమణ చేయడానికి ఎంత డబ్బు అవసరమో, అవసరమైన SIP, మరియు ఒత్తిడి లేని పదవీ విరమణ ప్రణాళికను ఈరోజే ప్లాన్ చేయండి.",
-    "og_description": "సౌకర్యవంతంగా పదవీ విరమణ చేయడానికి అవసరమైన కార్పస్ మరియు నెలవారీ SIPని అంచనా వేయండి. భారతదేశం-నిర్దిష్ట, NPS/PPF/EPF మార్గదర్శకత్వం కలిగి ఉంటుంది.",
-    "h1": "పదవీ విరమణ కార్పస్ క్యాలిక్యులేటర్ — భారతదేశంలో పదవీ విరమణ చేయడానికి మీకు ఎంత డబ్బు అవసరం (2025)",
-    "intro": "ఒక పదవీ విరమణ కార్పస్ అనేది మీరు పని చేయడం మానేసిన తర్వాత మిమ్మల్ని మీరు పోషించుకోవడానికి అవసరమైన మొత్తం డబ్బు. మా క్యాలిక్యులేటర్ మీకు ఒక సురక్షితమైన పదవీ విరమణ కోసం ఒక పూర్తి ప్రణాళికను రూపొందించడానికి ఒక సాధారణ సంఖ్యకు మించి వెళ్ళడానికి సహాయపడుతుంది.",
+    "meta_title": "Retirement Corpus Calculator India 2025 | Free Online Retirement Planning Tool",
+    "meta_description": "Free Retirement Corpus Calculator India (2025). Calculate how much money you need to retire, the SIP required, and plan a stress-free retirement today.",
+    "og_description": "Estimate the corpus and monthly SIP required to retire comfortably. India-specific, includes NPS/PPF/EPF guidance.",
+    "h1": "Retirement Corpus Calculator — How Much Money You Need to Retire in India (2025)",
+    "intro": "A retirement corpus is the total amount of money you need to support yourself after you stop working. Our calculator helps you go beyond a simple number to create a complete plan for a secure retirement.",
     "tool_section": {
-      "h2": "మీ పదవీ విరమణ కార్పస్‌ను లెక్కించండి (ఉచిత ఆన్‌లైన్ సాధనం)"
+      "h2": "Calculate Your Retirement Corpus (Free Online Tool)"
     },
-    "title": "పదవీ విరమణ కార్పస్ క్యాలిక్యులేటర్",
-    "form_description": "మీకు అవసరమైన మొత్తం కార్పస్‌ను లెక్కించడం ద్వారా మీ సౌకర్యవంతమైన పదవీ విరమణను ప్లాన్ చేయండి.",
-    "current_age_label": "ప్రస్తుత వయస్సు",
-    "retirement_age_label": "పదవీ విరమణ వయస్సు",
-    "monthly_expenses_label": "ప్రస్తుత నెలవారీ ఖర్చులు (₹)",
-    "current_savings_label": "ప్రస్తుత పదవీ విరమణ పొదుపు (₹)",
-    "inflation_rate_label": "ఆశించిన ద్రవ్యోల్బణం రేటు (% p.a.)",
-    "pre_retirement_returns_label": "ప్రీ-రిటైర్మెంట్ రిటర్న్స్ (% p.a.)",
-    "post_retirement_returns_label": "పోస్ట్-రిటైర్మెంట్ రిటర్న్స్ (% p.a.)",
-    "calculate_button": "కార్పస్‌ను లెక్కించండి",
-    "loading": "లెక్కిస్తోంది...",
-    "results_title": "మీ పదవీ విరమణ ప్రొజెక్షన్",
-    "required_corpus": "పదవీ విరమణ వద్ద అవసరమైన కార్పస్",
-    "corpus_shortfall": "కార్పస్ కొరత",
-    "corpus_surplus": "కార్పస్ మిగులు",
-    "monthly_sip": "అవసరమైన నెలవారీ SIP",
-    "view_chart": "చార్ట్ చూడండి",
-    "view_table": "పట్టిక చూడండి",
-    "export_csv": "CSVని ఎగుమతి చేయండి",
-    "table_year": "సంవత్సరం",
-    "table_age": "వయస్సు",
-    "table_total_corpus": "మొత్తం కార్పస్",
-    "age_label": "వయస్సు",
-    "amount_in_lakhs": "మొత్తం (లక్షలలో)",
+    "title": "Retirement Corpus Calculator",
+    "form_description": "Plan your comfortable retirement by calculating the total corpus you'll need.",
+    "current_age_label": "Current Age",
+    "retirement_age_label": "Retirement Age",
+    "monthly_expenses_label": "Current Monthly Expenses (₹)",
+    "current_savings_label": "Current Retirement Savings (₹)",
+    "inflation_rate_label": "Expected Inflation Rate (% p.a.)",
+    "pre_retirement_returns_label": "Pre-Retirement Returns (% p.a.)",
+    "post_retirement_returns_label": "Post-Retirement Returns (% p.a.)",
+    "calculate_button": "Calculate Corpus",
+    "loading": "Calculating...",
+    "results_title": "Your Retirement Projection",
+    "required_corpus": "Corpus Required at Retirement",
+    "corpus_shortfall": "Corpus Shortfall",
+    "corpus_surplus": "Corpus Surplus",
+    "monthly_sip": "Monthly SIP Required",
+    "view_chart": "View Chart",
+    "view_table": "View Table",
+    "export_csv": "Export CSV",
+    "table_year": "Year",
+    "table_age": "Age",
+    "table_total_corpus": "Total Corpus",
+    "age_label": "Age",
+    "amount_in_lakhs": "Amount (in Lakhs)",
     "how_it_works": {
-      "h2": "మీరు పదవీ విరమణ కార్పస్‌ను ఎలా లెక్కిస్తారు?",
-      "body": "<p>మేము మీకు ఒక ఖచ్చితమైన ప్రొజెక్షన్ ఇవ్వడానికి ప్రామాణిక ఆర్థిక సూత్రాలను ఉపయోగిస్తాము. ఇక్కడ మేము దానిని ఎలా చేస్తామో ఒక సరళీకృత వీక్షణ:</p><h3>పదవీ విరమణ వద్ద మీ ఖర్చుల భవిష్యత్ విలువ</h3><p>మేము మొదట మీరు అందించిన ద్రవ్యోల్బణం రేటును ఉపయోగించి, మీరు పదవీ విరమణ చేసే సమయానికి మీ ప్రస్తుత నెలవారీ ఖర్చులు ఎంత పెరుగుతాయో లెక్కిస్తాము. సూత్రం: <code>భవిష్యత్ వ్యయం = ప్రస్తుత వ్యయం × (1 + ద్రవ్యోల్బణం రేటు) ^ పదవీ విరమణకు సంవత్సరాలు</code>।</p><h3>పదవీ విరమణ వద్ద అవసరమైన కార్పస్ (యాన్యుటీ యొక్క PV)</h3><p>తరువాత, మీరు పదవీ విరమణ చేసే రోజున మీకు అవసరమైన మొత్తం ఏకమొత్తాన్ని మేము లెక్కిస్తాము. ఇది, పెట్టుబడి పెట్టినప్పుడు, మీ మిగిలిన జీవితానికి మీ ఖర్చులను కవర్ చేయడానికి తగినంత ఆదాయాన్ని ఉత్పత్తి చేసే మొత్తం. మేము దీని కోసం ఒక యాన్యుటీ యొక్క ప్రస్తుత విలువ సూత్రాన్ని ఉపయోగిస్తాము.</p><h3>అవసరమైన SIP లెక్కింపు</h3><p>చివరగా, మీ ప్రస్తుత పొదుపులు మరియు మీ లక్ష్య కార్పస్ మధ్య అంతరాన్ని పూరించడానికి అవసరమైన నెలవారీ క్రమబద్ధమైన పెట్టుబడి ప్రణాళిక (SIP)ని మేము నిర్ధారిస్తాము. మేము మీ ప్రస్తుత పొదుపుల భవిష్యత్ విలువను లెక్కిస్తాము మరియు కొరతను కనుగొనడానికి దాన్ని అవసరమైన కార్పస్ నుండి తీసివేస్తాము. ప్రతి నెల ప్రారంభంలో డిపాజిట్లు చేయబడతాయని ఊహించి, యాన్యుటీ డ్యూ సూత్రం యొక్క భవిష్యత్ విలువను ఉపయోగించి SIP లెక్కించబడుతుంది.</p>"
+      "h2": "How Do You Calculate a Retirement Corpus?",
+      "body": "&lt;p&gt;We use standard financial formulas to give you an accurate projection. Here's a simplified look at how we do it:&lt;/p&gt;&lt;h3&gt;Future Value of Your Expenses at Retirement&lt;/h3&gt;&lt;p&gt;We first calculate how much your current monthly expenses will grow to by the time you retire, using the inflation rate you provide. The formula is: &lt;code&gt;Future Expense = Current Expense × (1 + Inflation Rate) ^ Years to Retirement&lt;/code&gt;.&lt;/p&gt;&lt;h3&gt;The Corpus Required at Retirement (PV of an Annuity)&lt;/h3&gt;&lt;p&gt;Next, we calculate the total lump sum you'll need on the day you retire. This is the amount that, when invested, will generate enough income to cover your expenses for the rest of your life. We use a present value of an annuity formula for this.&lt;/p&gt;&lt;h3&gt;Required SIP Calculation&lt;/h3&gt;&lt;p&gt;Finally, we determine the monthly Systematic Investment Plan (SIP) needed to bridge the gap between your current savings and your target corpus. We calculate the future value of your current savings and subtract it from the required corpus to find the shortfall. The SIP is then calculated using the future value of an annuity due formula, assuming deposits are made at the beginning of each month.&lt;/p&gt;"
     },
     "inputs_explained": {
-      "h2": "మీరు ఏ ఇన్‌పుట్‌లను అందించాలి & అవి ఎందుకు ముఖ్యమైనవి",
-      "body": "<p>ఒక ఖచ్చితమైన ఫలితం పొందడానికి, మీరు కొన్ని కీలక వివరాలను అందించాలి. మీ ప్రణాళిక కోసం ప్రతి ఒక్కటి ఏమిటో ఇక్కడ ఉంది:</p><ul><li><strong>మీ ప్రస్తుత & పదవీ విరమణ వయస్సు:</strong> ఇది మీ పెట్టుబడి హోరిజోన్‌ను నిర్వచిస్తుంది. మీకు ఎంత ఎక్కువ సమయం ఉంటే, చక్రవడ్డీ శక్తి మీకు అంత ఎక్కువగా పనిచేయగలదు, అంటే మీరు చిన్న పెట్టుబడులతో ప్రారంభించవచ్చు.</li><li><strong>మీ ప్రస్తుత నెలవారీ ఖర్చులు:</strong> ఇది మీ పదవీ విరమణ ప్రణాళిక యొక్క పునాది. రేపు మీకు ఏమి అవసరమో దాని గురించి ఒక ఖచ్చితమైన చిత్రాన్ని పొందడానికి ఈ రోజు మీరు ఏమి ఖర్చు చేస్తారో దాని గురించి వాస్తవికంగా ఉండండి.</li><li><strong>మీ ప్రస్తుత పొదుపులు:</strong> ఇది మీ ప్రారంభం! EPF, PPF, మ్యూచువల్ ఫండ్స్, లేదా ఇతర పెట్టుబడులలో మీరు ఇప్పటికే ఆదా చేసిన ఏదైనా డబ్బు భవిష్యత్తులో మీరు ఆదా చేయవలసిన మొత్తాన్ని తగ్గిస్తుంది.</li><li><strong>ద్రవ్యోల్బణం రేటు:</strong> ఇది మूक సంపద కిల్లర్. ద్రవ్యోల్బణం కాలక్రమేణా మీ డబ్బు కొనుగోలు శక్తిని తగ్గిస్తుంది. అధిక ద్రవ్యోల్బణం రేటు అంటే మీకు చాలా పెద్ద కార్పస్ అవసరం.</li><li><strong>ప్రీ-రిటైర్మెంట్ రిటర్న్స్:</strong> మీరు ఇంకా పనిచేస్తున్నప్పుడు మీ పెట్టుబడులపై మీరు ఆశించే వృద్ధి రేటు ఇది. అధిక రాబడి అంటే మీ డబ్బు మీ కోసం కష్టపడి పనిచేస్తుంది, మరియు మీరు చిన్న ఎస్ఐపிகளுடன் మీ లక్ష్యాన్ని చేరుకోవచ్చు.</li><li><strong>పోస్ట్-రిటైర్మెంట్ రిటర్న్స్:</strong> మీరు పదవీ విరమణ చేసిన తర్వాత మీ కార్పస్‌పై ఆశించే రాబడి ఇది. మేము ఇక్కడ ఒక మరింత సాంప్రదాయిక, మూలధన-పరిరక్షణ పోర్ట్‌ఫోలియోను ఊహిస్తాము.</li></ul>"
+      "h2": "What Inputs You Need to Provide & Why They Matter",
+      "body": "&lt;p&gt;To get an accurate result, you need to provide a few key details. Here's what each one means for your plan:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Your Current &amp; Retirement Age:&lt;/strong&gt; This defines your investment horizon. The more time you have, the more the power of compounding can work for you, meaning you can start with smaller investments.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Your Current Monthly Expenses:&lt;/strong&gt; This is the foundation of your retirement plan. Be realistic about what you spend today to get an accurate picture of what you'll need tomorrow.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Your Current Savings:&lt;/strong&gt; This is your head start! Any money you've already saved in EPF, PPF, mutual funds, or other investments reduces the amount you need to save in the future.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Inflation Rate:&lt;/strong&gt; This is the silent wealth killer. Inflation erodes the purchasing power of your money over time. A higher inflation rate means you'll need a much larger corpus.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Pre-Retirement Returns:&lt;/strong&gt; This is the rate of growth you expect on your investments while you're still working. Higher returns mean your money works harder for you, and you can reach your goal with smaller SIPs.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Post-Retirement Returns:&lt;/strong&gt; This is the return you expect on your corpus after you've retired. We assume a more conservative, capital-preservation portfolio here.&lt;/li&gt;&lt;/ul&gt;"
     },
     "worked_examples": {
-      "h2": "పని చేసిన ఉదాహరణలు — మీకు ఎంత కార్పస్ అవసరం?",
+      "h2": "Worked Examples — How Much Corpus Do You Need?",
       "scenario1": {
-        "title": "ఉదాహరణ 1: ₹50,000 నెలవారీ ఖర్చుల కోసం (30 సంవత్సరాల వయస్సులో)",
-        "body": "<strong>మీ పరిస్థితి:</strong> మీరు 30 ఏళ్లవారు, నేటి డబ్బులో నెలకు ₹50,000 జీవనశైలిని లక్ష్యంగా చేసుకున్నారు. మీరు ఇప్పటికే ₹5 లక్షలు ఆదా చేసారు.<br/><strong>మా లెక్కింపు:</strong> మీ జీవనశైలిని కొనసాగించడానికి, మీకు సుమారుగా <strong>₹3.28 కోట్ల</strong> పదవీ విరమణ కార్పస్ అవసరం. ఈ లక్ష్యాన్ని చేరుకోవడానికి, మీరు <strong>₹18,250</strong> నెలవారీ SIPని ప్రారంభించాలి."
+        "title": "Example 1: For ₹50,000 monthly expenses (at age 30)",
+        "body": "&lt;strong&gt;Your situation:&lt;/strong&gt; You're 30, aiming for a ₹50,000/month lifestyle in today's money. You've already saved ₹5 lakh.&lt;br/&gt;&lt;strong&gt;Our calculation:&lt;/strong&gt; To maintain your lifestyle, you'll need a retirement corpus of approximately &lt;strong&gt;₹3.28 Crore&lt;/strong&gt;. To reach this goal, you should start a monthly SIP of &lt;strong&gt;₹18,250&lt;/strong&gt;."
       },
       "scenario2": {
-        "title": "ఉదాహరణ 2: ₹1 లక్ష నెలవారీ ఖర్చుల కోసం (35 సంవత్సరాల వయస్సులో)",
-        "body": "<strong>మీ పరిస్థితి:</strong> మీరు 35 ఏళ్లవారు, నెలకు ₹1 లక్ష జీవనశైలిని లక్ష్యంగా చేసుకున్నారు. మీ ప్రస్తుత పొదుపు ₹20 లక్షలు.<br/><strong>మా లెక్కింపు:</strong> మీకు సుమారు <strong>₹4.79 కోట్ల</strong> కార్పస్ అవసరం. దీన్ని సాధించడానికి, మీరు <strong>₹37,842</strong> నెలవారీ SIPని ప్రారంభించాలి."
+        "title": "Example 2: For ₹1 lakh monthly expenses (at age 35)",
+        "body": "&lt;strong&gt;Your situation:&lt;/strong&gt; You're 35, aiming for a ₹1 lakh/month lifestyle. Your current savings are ₹20 lakh.&lt;br/&gt;&lt;strong&gt;Our calculation:&lt;/strong&gt; You'll need a corpus of around &lt;strong&gt;₹4.79 Crore&lt;/strong&gt;. To achieve this, you should start a monthly SIP of &lt;strong&gt;₹37,842&lt;/strong&gt;."
       },
       "scenario3": {
-        "title": "ఉదాహరణ 3: ₹30,000 నెలవారీ ఖర్చుల కోసం (25 సంవత్సరాల వయస్సులో)",
-        "body": "<strong>మీ పరిస్థితి:</strong> మీరు 25 ఏళ్ల ఫ్రీలాన్సర్, నెలవారీ ఖర్చులు ₹30,000 మరియు పొదుపు ₹2 లక్షలు.<br/><strong>మా లెక్కింపు:</strong> మీ లక్ష్య కార్పస్ <strong>₹3.04 కోట్లు</strong>. మీ సుదీర్ఘ పెట్టుబడి హోరిజోన్‌కు ధన్యవాదాలు, అక్కడికి చేరుకోవడానికి మీరు కేవలం <strong>₹7,725</strong> నెలవారీ SIPని ప్రారంభించాలి."
+        "title": "Example 3: For ₹30,000 monthly expenses (at age 25)",
+        "body": "&lt;strong&gt;Your situation:&lt;/strong&gt; You're a 25-year-old freelancer with monthly expenses of ₹30,000 and savings of ₹2 lakh.&lt;br/&gt;&lt;strong&gt;Our calculation:&lt;/strong&gt; Your target corpus is &lt;strong&gt;₹3.04 Crore&lt;/strong&gt;. Thanks to your long investment horizon, you only need to start a monthly SIP of &lt;strong&gt;₹7,725&lt;/strong&gt; to get there."
       }
     },
      "sensitivity_analysis": {
-      "title": "సున్నితత్వ విశ్లేషణ: అంచనాలు మీ లక్ష్యాన్ని ఎలా మారుస్తాయి",
-      "body": "మీ అంచనాలలో చిన్న మార్పులు మీ చివరి కార్పస్‌పై భారీ ప్రభావాన్ని చూపుతాయి. ఈ పట్టిక ద్రవ్యోల్బణం మరియు రాబడి రేట్లలో స్వల్ప సర్దుబాట్లతో మీ అవసరమైన కార్పస్ మరియు SIP ఎలా మారుతుందో చూపిస్తుంది."
+      "title": "Sensitivity Analysis: How Assumptions Change Your Goal",
+      "body": "Small changes in your assumptions can have a huge impact on your final corpus. This table shows how your required corpus and SIP change with slight adjustments in inflation and return rates."
     },
     "accumulation_strategy": {
-      "h2": "మీ పదవీ విరమణ కార్పస్‌ను ఎలా నిర్మించాలి (పెట్టుబడి వ్యూహాలు)",
-      "body": "<h3>మీ పెట్టుబడి మార్గాన్ని ఎంచుకోవడం: SIP vs. ఏకమొత్తం</h3><p>ఒక <strong>క్రమబద్ధమైన పెట్టుబడి ప్రణాళిక (SIP)</strong> అత్యంత క్రమశిక్షణతో కూడిన విధానం. మీరు క్రమం తప్పకుండా (ఉదా., నెలవారీ) ఒక స్థిర మొత్తాన్ని పెట్టుబడి పెడతారు, ఇది మీకు మార్కెట్ హెచ్చుతగ్గులను (రూపాయి-ధర సగటు) సగటు చేయడానికి మరియు చక్రవడ్డీ నుండి ప్రయోజనం పొందడానికి సహాయపడుతుంది. ఇది కాలక్రమేణా స్థిరంగా సంపదను నిర్మించడానికి సరైనది. మరింత వేగవంతమైన వృద్ధి కోసం, ఒక <strong>స్టెప్-అప్ SIP</strong>ను పరిగణించండి, ఇక్కడ మీరు మీ నెలవారీ పెట్టుబడి మొత్తాన్ని ఏటా పెంచుతారు, సాధారణంగా మీ జీతం పెరుగుదలకు అనుగుణంగా (ఉదా., 10% ద్వారా).</p><h3>వయస్సు వారీగా ఆస్తి కేటాయింపు</h3><p>మీ పెట్టుబడి వ్యూహం స్థిరంగా ఉండకూడదు. మీరు పదవీ విరమణకు దగ్గరవుతున్న కొద్దీ, మీ మూలధనాన్ని రక్షించుకోవడానికి మీరు అధిక-రిస్క్, అధిక-రాబడి ఆస్తుల నుండి సురక్షితమైన ఎంపికలకు క్రమంగా మారాలి.</p><ul><li><strong>మీ 20 & 30లలో:</strong> దూకుడుగా ఉండండి. ఈక్విటీలలో (మ్యూచువల్ ఫండ్స్ వంటివి) 70-80% ఉన్న ఒక పోర్ట్‌ఫోలియో దీర్ఘకాలంలో అధిక రాబడులను ఉత్పత్తి చేయగలదు.</li><li><strong>మీ 40లలో:</strong> మీ రిస్క్‌ను సమతుల్యం చేయడం ప్రారంభించండి. ఈక్విటీ మరియు డెట్ మధ్య 60:40 విభజన ఒక సాధారణ వ్యూహం.</li><li><strong>మీ 50లు మరియు ఆపై:</strong> మీ మూలధనాన్ని పరిరక్షించుకునే సమయం ఇది. మీ పోర్ట్‌ఫోలియోను డెట్-హెవీగా (స్థిర-ఆదాయ సాధనాల్లో 70-80%) మార్చండి.</li></ul><h3>మీ ప్రణాళికలో PPF, NPS, & EPF ఎలా సరిపోతాయి</h3><p>ఇవి భారతదేశంలో పదవీ విరమణ ప్రణాళిక యొక్క పునాది స్తంభాలు. ఈ సాధనాల్లో మీ ప్రస్తుత పొదుపులు మీకు ఒక భారీ ప్రారంభాన్ని ఇస్తాయి. మీ పోర్ట్‌ఫోలియో యొక్క డెట్/స్థిర-ఆదాయ భాగాన్ని రూపొందించడానికి వాటిని ఉపయోగించండి. అవి ఎలా పెరుగుతాయో చూడటానికి మా <a href='/{lang}/ppf-calculator' class='underline'>PPF క్యాలిక్యులేటర్</a> మరియు <a href='/{lang}/nps-calculator' class='underline'>NPS క్యాలిక్యులేటర్</a>ను అన్వేషించండి.</p>",
+      "h2": "How to Build Your Retirement Corpus (Investment Strategies)",
+      "body": "&lt;h3&gt;Choosing Your Investment Path: SIP vs. Lumpsum&lt;/h3&gt;&lt;p&gt;A &lt;strong&gt;Systematic Investment Plan (SIP)&lt;/strong&gt; is the most disciplined approach. You invest a fixed amount regularly (e.g., monthly), which helps you average out market fluctuations (rupee-cost averaging) and benefit from compounding. It's perfect for building wealth steadily over time. For even faster growth, consider a &lt;strong&gt;Step-up SIP&lt;/strong&gt;, where you increase your monthly investment amount annually, typically in line with your salary hike (e.g., by 10%).&lt;/p&gt;&lt;h3&gt;Asset Allocation by Age&lt;/h3&gt;&lt;p&gt;Your investment strategy shouldn't be static. As you get closer to retirement, you should gradually shift from high-risk, high-return assets to safer options to protect your capital.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;In your 20s &amp; 30s:&lt;/strong&gt; Be aggressive. A portfolio with 70-80% in equities (like mutual funds) can generate higher returns in the long run.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;In your 40s:&lt;/strong&gt; Start balancing your risk. A 60:40 split between equity and debt is a common strategy.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;In your 50s and beyond:&lt;/strong&gt; It's time to preserve your capital. Shift your portfolio to be debt-heavy (70-80% in fixed-income instruments).&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;How PPF, NPS, &amp; EPF Fit Into Your Plan&lt;/h3&gt;&lt;p&gt;These are the cornerstones of retirement planning in India. Your current savings in these instruments give you a massive head start. Use them to form the debt/fixed-income portion of your portfolio. Explore our &lt;a href='/{lang}/ppf-calculator' class='underline'&gt;PPF Calculator&lt;/a&gt; and &lt;a href='/{lang}/nps-calculator' class='underline'&gt;NPS Calculator&lt;/a&gt; to see how they grow.&lt;/p&gt;",
       "sip_plans": {
-        "title": "మీ లక్ష్యాన్ని చేరుకోవడానికి నమూనా SIP ప్రణాళికలు",
-        "body": "ఈ పట్టిక వివిధ ప్రారంభ వయస్సుల నుండి సాధారణ పదవీ విరమణ కార్పస్ లక్ష్యాలను చేరుకోవడానికి అవసరమైన సుమారు నెలవారీ SIPని చూపిస్తుంది, ఇది 12% వార్షిక రాబడిని ఊహిస్తుంది."
+        "title": "Sample SIP Plans to Reach Your Goal",
+        "body": "This table shows the approximate monthly SIP required to reach common retirement corpus goals from different starting ages, assuming a 12% annual return."
        }
     },
     "deaccumulation_strategy": {
-      "h2": "డి-అక్యుములేషన్ దశ: మీ కార్పస్‌ను కొనసాగించడం",
-      "body": "<p>మీ గూడును నిర్మించడం కేవలం సగం యుద్ధం మాత్రమే. అసలు సవాలు దానిని కొనసాగించడం. పదవీ విరమణ చేసిన తర్వాత మీరు ఒక స్థిరమైన ఆదాయ ప్రవాహాన్ని ఎలా సృష్టించవచ్చో ఇక్కడ ఉంది.</p><h3>క్రమబద్ధమైన ఉపసంహరణ ప్రణాళిక (SWP)</h3><p>ఒక SWP మీకు ప్రతి నెలా మీ మ్యూచువల్ ఫండ్ పెట్టుబడుల నుండి ఒక స్థిర మొత్తాన్ని ఉపసంహరించుకోవడానికి అనుమతిస్తుంది, ঠিক ఒక పెన్షన్ లాగా. ఇది ఒక పన్ను-సమర్థవంతమైన పద్ధతి ఎందుకంటే మీ కార్పస్ మిగిలినది పెట్టుబడి చేయబడి, ద్రవ్యోల్బణాన్ని అధిగమించడానికి సహాయపడుతూ పెరుగుతూనే ఉంటుంది.</p><p><strong>ఉదాహరణ:</strong> ₹2 కోట్ల కార్పస్‌తో మరియు 7% వార్షిక రాబడితో, ₹1 లక్ష నెలవారీ SWP 30 సంవత్సరాలకు పైగా కొనసాగగలదు.</p><h3>యాన్యుటీ ప్రణాళికలు</h3><p>ఒక యాన్యుటీ అనేది ఒక బీమా ఉత్పత్తి, ఇక్కడ మీరు ఒక బీమా కంపెనీకి ఒక ఏకమొత్తం చెల్లిస్తారు, మరియు వారు మీకు జీవితాంతం ఒక స్థిర ఆదాయానికి హామీ ఇస్తారు.</p>"
+      "h2": "The De-accumulation Phase: Making Your Corpus Last",
+      "body": "&lt;p&gt;Building your nest egg is only half the battle. The real challenge is making it last. Here's how you can create a steady income stream after you retire.&lt;/p&gt;&lt;h3&gt;Systematic Withdrawal Plan (SWP)&lt;/h3&gt;&lt;p&gt;An SWP allows you to withdraw a fixed amount from your mutual fund investments every month, just like a pension. This is a tax-efficient method because the rest of your corpus remains invested and continues to grow, helping you beat inflation.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt; With a ₹2 crore corpus and a 7% annual return, a ₹1 lakh monthly SWP can last for over 30 years.&lt;/p&gt;&lt;h3&gt;Annuity Plans&lt;/h3&gt;&lt;p&gt;An annuity is an insurance product where you pay a lump sum to an insurance company, and they guarantee you a fixed income for life.&lt;/p&gt;"
     },
     "tax_rules": {
-      "h2": "సంచితం మరియు ఉపసంహరణ సమయంలో పన్ను నియమాలు",
-      "body": "మీ పదవీ విరమణ పొదుపులను పెంచుకోవడానికి పన్ను ప్రణాళిక చాలా ముఖ్యం. సంచిత దశలో, PPF, EPF, మరియు NPS (సెక్షన్ 80C మరియు 80CCD కింద) వంటి పన్ను-ఆదా సాధనాల ప్రయోజనాన్ని పొందండి. ఉపసంహరణ సమయంలో, వివిధ సాధనాల పన్ను ప్రభావాలను అర్థం చేసుకోండి. ఉదాహరణకు, PPF ఉపసంహరణలు పన్ను-రహితం, అయితే NPS ఉపసంహరణలు పాక్షికంగా పన్ను విధించబడతాయి, మరియు మ్యూచువల్ ఫండ్ లాభాలు మూలధన లాభాల పన్నును ఆకర్షిస్తాయి. సాధ్యమైనంత పన్ను-సమర్థవంతంగా ఉండటానికి మీ ఉపసంహరణలను ప్లాన్ చేయండి."
+      "h2": "Tax Rules During Accumulation and Withdrawal",
+      "body": "Tax planning is crucial to maximizing your retirement savings. During the accumulation phase, take advantage of tax-saving instruments like PPF, EPF, and NPS (under Section 80C and 80CCD). At withdrawal, understand the tax implications of different instruments. For example, PPF withdrawals are tax-free, while NPS withdrawals are partially taxable, and mutual fund gains attract capital gains tax. Plan your withdrawals to be as tax-efficient as possible."
     },
-    "faq_title": "తరచుగా అడిగే ప్రశ్నలు",
+    "faq_title": "Frequently Asked Questions",
     "faqs": [
-      { "question": "మీరు పదవీ విరమణ కార్పస్‌ను ఎలా లెక్కిస్తారు?", "answer": "మేము ద్రవ్యోల్బణాన్ని ఉపయోగించి మీ భవిష్యత్ నెలవారీ ఖర్చులను అంచనా వేస్తాము, పదవీ విరమణలో మీకు అవసరమైన యాన్యుటీ యొక్క ప్రస్తుత విలువను (PV) లెక్కిస్తాము, మరియు లోటును కనుగొనడానికి ప్రస్తుత పొదుపుల భవిష్యత్ విలువను తీసివేస్తాము." },
-      { "question": "భారతీయ పదవీ విరమణ ప్రణాళిక కోసం నేను ఏ ద్రవ్యోల్బణం రేటును ఉపయోగించాలి?", "answer": "చాలా మంది ప్లానర్లు భారతదేశానికి 5-7% దీర్ఘకాలిక డిఫాల్ట్‌ను ఉపయోగిస్తారు; 6% సాధారణం. సంప్రదాయ ఆరోగ్య సంరక్షణ లేదా సుదీర్ఘ క్షితిజ సమాంతర అంచనాల కోసం అధిక రేట్లను ఉపయోగించండి." },
-      { "question": "నేను నా పదవీ విరమణ కార్పస్‌లో EPF, PPF మరియు NPSని చేర్చవచ్చా?", "answer": "అవును — అవసరమైన అదనపు SIPని తగ్గించడానికి మీ ప్రస్తుత పొదుపు ఇన్‌పుట్‌లో అన్ని ద్రవ మరియు పెన్షన్ ఆస్తులను (EPF, PPF, NPS, మ్యూచువల్ ఫండ్‌లు, బ్యాంకు FD) చేర్చండి." },
-      { "question": "ఒక 30 ఏళ్ల వ్యక్తి సౌకర్యవంతంగా పదవీ విరమణ చేయడానికి నెలవారీ ఎంత ఆదా చేయాలి?", "answer": "ఇది లక్ష్య కార్పస్ మరియు అంచనాలపై ఆధారపడి ఉంటుంది. ఒక స్థూల మార్గదర్శిగా, ₹15,000–₹25,000/నెల పొదుపు 10-12% రాబడితో 60 నాటికి బహుళ-కోట్ల కార్పస్‌ను నిర్మించగలదు. ఖచ్చితమైన సంఖ్యల కోసం క్యాలిక్యులేటర్‌ను ఉపయోగించండి." },
-      { "question": "నా పదవీ విరమణ లక్ష్యాన్ని చేరుకోవడానికి నేను SIP లేదా ఏకమొత్తం ద్వారా పెట్టుబడి పెట్టాలా?", "answer": "క్రమశిక్షణతో కూడిన పెట్టుబడి మరియు రూపాయి-ధర సగటు కోసం SIP సిఫార్సు చేయబడింది; ఏకమొత్తం సుదీర్ఘ బుల్ మార్కెట్లలో అధిక పనితీరును కనబరచగలదు కానీ అధిక టైమింగ్ రిస్క్ కలిగి ఉంటుంది. ఒక మిశ్రమ విధానం చాలా మందికి పనిచేస్తుంది." },
-      { "question": "భారతదేశంలో పదవీ విరమణ సమయంలో సురక్షితమైన ఉపసంహరణ రేటు ఏమిటి?", "answer": "ఒక-పరిమాణం-అందరికీ-సరిపోదు; చాలా మంది సలహాదారులు 3-4% ప్రారంభ ఉపసంహరణ నియమాన్ని (ద్రవ్యోల్బణం కోసం సర్దుబాటు చేయబడింది) ఉపయోగిస్తారు. దీర్ఘాయువు లేదా ఆరోగ్య సంరక్షణ ఖర్చులు అనిశ్చితంగా ఉంటే సంప్రదాయ ఉపసంహరణ రేట్లను పరిగణించండి." },
-      { "question": "ఆరోగ్య సంరక్షణ ఖర్చులు పదవీ విరమణ కార్పస్‌ను ఎలా ప్రభావితం చేస్తాయి?", "answer": "ఆరోగ్య సంరక్షణ ద్రవ్యోల్బణం తరచుగా సాధారణ ద్రవ్యోల్బణాన్ని మించిపోతుంది. మీ కార్పస్‌ను తక్కువ అంచనా వేయకుండా ఉండటానికి ఒక ప్రత్యేక ఆరోగ్య సంరక్షణ బఫర్‌ను జోడించండి లేదా వైద్య ఖర్చుల కోసం అధిక ద్రవ్యోల్బణాన్ని మోడల్ చేయండి." },
-      { "question": "పన్నులు నా పదవీ విరమణ ఉపసంహరణలను ఎలా ప్రభావితం చేస్తాయి?", "answer": "పన్ను చికిత్స పరికరం మరియు ఉపసంహరణ రకాన్ని బట్టి మారుతుంది. ఇపిఎఫ్/పిపిఎఫ్‌కు నిర్దిష్ట నియమాలు ఉన్నాయి; మ్యూచువల్ ఫండ్ ఉపసంహరణలు పరిమితుల పైన ఎల్‌టిసిజి పన్నును ఆకర్షించవచ్చు. కార్పస్‌ను పరిరక్షించడానికి పన్ను-సమర్థవంతంగా ఉపసంహరణలను ప్లాన్ చేయండి." },
-      { "question": "నా పదవీ విరమణ కార్పస్ ఎంతకాలం కొనసాగాలి?", "answer": "సాధారణంగా ప్లానర్లు 85-90 సంవత్సరాల ఆయుర్దాయం అంచనా వేస్తారు. కుటుంబ దీర్ఘాయువు ఎక్కువగా ఉంటే లేదా మీరు ముందుగానే పదవీ విరమణ చేస్తే సంప్రదాయ దీర్ఘాయువు అంచనాలను ఉపయోగించండి." },
-      { "question": "క్యాలిక్యులేటర్ పదవీ విరమణ తర్వాత రాబడులను పరిగణనలోకి తీసుకుంటుందా?", "answer": "అవును — కార్పస్ ఎలా పెట్టుబడి పెట్టబడుతుందో మరియు ఉపసంహరణలను ఎలా కొనసాగిస్తుందో మోడల్ చేయడానికి మీరు ఒక తక్కువ, సంప్రదాయ పోస్ట్-రిటైర్మెంట్ రిటర్న్ (ఉదా., 6-8%) సెట్ చేయవచ్చు." },
-      { "question": "నేను ఈ క్యాలిక్యులేటర్‌తో ముందుగానే పదవీ విరమణ (60 కంటే ముందు) కోసం ప్లాన్ చేయవచ్చా?", "answer": "అవును — మీ కోరుకున్న పదవీ విరమణ వయస్సును ముందుగానే సెట్ చేయండి మరియు పెట్టుబడి హోరిజోన్ మరియు SIPని తదనుగుణంగా పెంచండి. సుదీర్ఘ పదవీ విరమణ తర్వాత సంవత్సరాలు మరియు అధిక ఆరోగ్య సంరక్షణ ఖర్చులను పరిగణనలోకి తీసుకోండి." },
-      { "question": "ఒక లక్ష్య కార్పస్‌ను అంచనా వేయడానికి సరళమైన థంబ్ రూల్ ఏమిటి?", "answer": "ఒక సాధారణ నియమం మీ ప్రస్తుత వార్షిక ఖర్చుల 25× (4% వాస్తవ ఉపసంహరణ కోసం), కానీ ద్రవ్యోల్బణం, రాబడులు మరియు ప్రస్తుత పొదుపులతో దీన్ని మెరుగుపరచడానికి క్యాలిక్యులేటర్‌ను ఉపయోగించండి." }
+      { "question": "How do you calculate a retirement corpus?", "answer": "We estimate your future monthly expenses using inflation, calculate the present value (PV) of an annuity you'll need at retirement, and subtract the future value of existing savings to find the shortfall." },
+      { "question": "What inflation rate should I use for Indian retirement planning?", "answer": "Most planners use a long-term default of 5-7% for India; 6% is common. Use higher rates for conservative healthcare or long-horizon assumptions." },
+      { "question": "Can I include EPF, PPF, and NPS in my retirement corpus?", "answer": "Yes — include all liquid and pension assets (EPF, PPF, NPS, mutual funds, bank FDs) in your current savings input to reduce the required additional SIP." },
+      { "question": "How much should a 30-year-old save monthly to retire comfortably?", "answer": "It depends on the target corpus and assumptions. As a rough guide, saving ₹15,000–₹25,000/month can build a multi-crore corpus by 60 at 10-12% returns. Use the calculator for precise numbers." },
+      { "question": "Should I invest via SIP or lumpsum to reach my retirement goal?", "answer": "SIP is recommended for disciplined investing and rupee-cost averaging; lumpsum can outperform in long bull markets but carries higher timing risk. A mixed approach works for many." },
+      { "question": "What is a safe withdrawal rate in retirement in India?", "answer": "There is no one-size-fits-all; many advisors use a 3-4% initial withdrawal rule (adjusted for inflation). Consider conservative withdrawal rates if longevity or healthcare costs are uncertain." },
+      { "question": "How do healthcare costs affect the retirement corpus?", "answer": "Healthcare inflation often outpaces general inflation. Add a dedicated healthcare buffer or model higher inflation for medical costs to avoid underestimating your corpus." },
+      { "question": "How will taxes affect my retirement withdrawals?", "answer": "Tax treatment varies by instrument and withdrawal type. EPF/PPF have specific rules; mutual fund withdrawals may attract LTCG tax above thresholds. Plan withdrawals to be tax-efficient to preserve corpus." },
+      { "question": "How long should my retirement corpus last?", "answer": "Planners generally assume a life expectancy of 85-90 years. Use conservative longevity estimates if family longevity is high or you retire early." },
+      { "question": "Does the calculator account for post-retirement returns?", "answer": "Yes — you can set a lower, conservative post-retirement return (e.g., 6-8%) to model how the corpus remains invested and continues to support withdrawals." },
+      { "question": "Can I plan for early retirement (before 60) with this calculator?", "answer": "Yes — just set your desired retirement age earlier and the investment horizon and SIP will increase accordingly. Factor in longer post-retirement years and higher healthcare costs." },
+      { "question": "What's the simplest thumb rule to estimate a target corpus?", "answer": "A common rule is 25× your current annual expenses (for a 4% real withdrawal), but use the calculator to refine this with inflation, returns, and existing savings." }
     ],
     "next_steps": {
-      "h2": "మీ ప్రణాళికను డౌన్‌లోడ్ చేయండి & చర్య తీసుకోండి",
-      "cta1_title": "మీ పన్నులు ఫైల్ చేయండి",
-      "cta1_desc": "మీ ఆదాయపు పన్ను రిటర్న్‌లను సులభంగా ఫైల్ చేయడానికి ClearTaxను ఉపయోగించండి.",
-      "cta2_title": "మరిన్ని క్యాలిక్యులేటర్లను అన్వేషించండి",
-      "cta2_desc": "మీ ఆర్థిక ప్రణాళికకు సహాయపడటానికి మరిన్ని సాధనాలను కనుగొనండి."
+      "h2": "Download Your Plan & Take Action",
+      "cta1_title": "File Your Taxes",
+      "cta1_desc": "Use ClearTax to file your income tax returns with ease.",
+      "cta2_title": "Explore More Calculators",
+      "cta2_desc": "Find more tools to help with your financial planning."
     },
     "conclusion": {
-      "title": "ముగింపు: ఒక సురక్షితమైన పదవీ విరమణకు మీ మార్గం",
-      "body": "పదవీ విరమణ ప్రణాళిక ఒక మారథాన్, స్ప్రింట్ కాదు. ముఖ్యమైనది ముందుగానే ప్రారంభించడం, స్థిరంగా పెట్టుబడి పెట్టడం, మరియు మార్గంలో సమాచారంతో కూడిన నిర్ణయాలు తీసుకోవడం. ట్రాక్‌లో ఉండటానికి మరియు మీరు అర్హులైన ఆర్థిక భవిష్యత్తును నిర్మించడానికి ఈ క్యాలిక్యులేటర్‌ను మీ గైడ్‌గా ఉపయోగించండి."
+      "title": "Conclusion: Your Path to a Secure Retirement",
+      "body": "Retirement planning is a marathon, not a sprint. The key is to start early, invest consistently, and make informed decisions along the way. Use this calculator as your guide to stay on track and build the financial future you deserve."
     },
     "disclaimer": {
-      "title": "నిరాకరణ",
-      "body": "ఈ క్యాలిక్యులేటర్ ఒక ఉదాహరణ సాధనం మరియు ఆర్థిక సలహాగా పరిగణించరాదు. మార్కెట్ రాబడులకు హామీ లేదు. ఏదైనా పెట్టుబడి నిర్ణయాలు తీసుకునే ముందు ఒక అర్హతగల ఆర్థిక సలహాదారుని సంప్రదించండి."
+      "title": "Disclaimer",
+      "body": "This calculator is an illustrative tool and should not be considered financial advice. Market returns are not guaranteed. Consult a qualified financial advisor before making any investment decisions."
     },
     "methodology": {
-      "h2": "పద్ధతి",
-      "body": "క్యాలిక్యులేటర్ ప్రామాణిక సమయం-విలువ-డబ్బు సూత్రాలను ఉపయోగిస్తుంది. అవసరమైన కార్పస్ పెరుగుతున్న యాన్యుటీ యొక్క ప్రస్తుత విలువగా లెక్కించబడుతుంది, మరియు SIP ఒక సిరీస్ సూత్రం యొక్క భవిష్యత్ విలువను ఉపయోగించి లెక్కించబడుతుంది. అన్ని లెక్కలు ఉదాహరణ ప్రయోజనాల కోసం మాత్రమే."
+      "h2": "Methodology",
+      "body": "The calculator uses standard time-value-of-money formulas. The required corpus is calculated as the present value of a growing annuity, and the SIP is calculated using the future value of a series formula. All calculations are for illustrative purposes only."
     },
     "assumptions": {
       "title": "Calculator Assumptions",
@@ -1116,162 +1116,163 @@
     }
   },
   "mutual_fund_overlap_calculator": {
-    "meta_title": "మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ క్యాలిక్యులేటర్ — ఫండ్‌ల మధ్య ఓవర్‌ల్యాప్‌ను తనిఖీ చేయండి (భారతదేశం, 2025)",
-    "meta_description": "భారతీయ ఫండ్‌ల కోసం ఉచిత మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ క్యాలిక్యులేటర్ (2025). పోర్ట్‌ఫోలియో ఓవర్‌ల్యాప్ శాతం మరియు సాధారణ స్టాక్‌లను చూడటానికి 2-5 ఫండ్‌లను పక్కపక్కనే పోల్చండి. సమాచారంతో కూడిన వైవిధ్యభరిత నిర్ణయాలు తీసుకోండి.",
-    "h1": "మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ క్యాలిక్యులేటర్ భారతదేశం (2025)",
+    "meta_title": "Mutual Fund Overlap Calculator — Check Overlap Between Funds (India, 2025)",
+    "meta_description": "Free Mutual Fund Overlap Calculator for Indian funds (2025). Compare 2-5 funds side-by-side to see portfolio overlap percentage and common stocks. Make informed diversification decisions.",
+    "h1": "Mutual Fund Overlap Calculator India (2025)",
     "hero": {
-      "subtitle": "మీ మ్యూచువల్ ఫండ్‌లు రహస్యంగా ఒకేలా ఉన్నాయా? మీ నిజమైన పోర్ట్‌ఫోలియో ఓవర్‌ల్యాప్ మరియు అగ్ర సాధారణ హోల్డింగ్‌లను తక్షణమే చూడటానికి ఐదు భారతీయ ఈక్విటీ ఫండ్‌ల వరకు పోల్చండి."
+      "subtitle": "Are your mutual funds secretly the same? Compare up to five Indian equity funds to instantly see your true portfolio overlap and top common holdings."
     },
     "tool": {
-      "title": "మ్యూచువల్ ఫండ్ హోల్డింగ్‌లను పోల్చండి",
-      "description": "ప్రారంభించడానికి కనీసం రెండు ఫండ్‌లను ఎంచుకోండి.",
-      "add_fund": "మరొక ఫండ్‌ను జోడించండి",
-      "export_csv": "CSVని ఎగుమతి చేయండి",
-      "copy_summary": "సారాంశాన్ని కాపీ చేయండి"
+      "title": "Compare Mutual Fund Holdings",
+      "description": "Select at least two funds to begin.",
+      "add_fund": "Add Another Fund",
+      "export_csv": "Export CSV",
+      "copy_summary": "Copy Summary"
     },
     "what_is_overlap": {
-      "h2": "మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ అంటే ఏమిటి & అది ఎందుకు ముఖ్యం?",
-      "body": "మీ పోర్ట్‌ఫోలియోలోని రెండు లేదా అంతకంటే ఎక్కువ ఫండ్‌లు ఒకే స్టాక్‌లను కలిగి ఉన్నప్పుడు మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ సంభవిస్తుంది. కొంత ఓవర్‌ల్యాప్ సాధారణమైనప్పటికీ (ముఖ్యంగా లార్జ్-క్యాప్ ఫండ్‌లలో), అధిక ఓవర్‌ల్యాప్ <strong>అతి-గాఢత</strong> మరియు <strong>‘వైవిధ్యభరిత’</strong>కి దారితీయవచ్చు — ఇక్కడ మీరు వైవిధ్యభరితంగా ఉన్నారని అనుకుంటారు కానీ వాస్తవానికి అవే అంతర్లీన ఆస్తులను కలిగి ఉంటారు. ఈ క్యాలిక్యులేటర్ ఆ దాచిన ప్రమాదాన్ని వెలికితీయడానికి మీకు సహాయపడుతుంది."
+      "h2": "What is Mutual Fund Overlap and Why Does It Matter?",
+      "body": "Mutual fund overlap occurs when two or more funds in your portfolio hold the same stocks. While some overlap is normal (especially in large-cap funds that track similar benchmarks), high overlap can lead to &lt;strong&gt;over-concentration&lt;/strong&gt; and &lt;strong&gt;‘diworsification’&lt;/strong&gt; — where you think you’re diversified but are actually holding the same underlying assets. This calculator helps you uncover that hidden risk."
     },
     "how_it_works": {
-      "h2": "మా మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ క్యాలిక్యులేటర్ ఎలా పనిచేస్తుంది",
-      "body": "మా సాధనం మీరు ఎంచుకున్న ఫండ్‌ల హోల్డింగ్‌లను పోల్చి <strong>భారిత ఓవర్‌ల్యాప్</strong>ను లెక్కిస్తుంది. ఈ మెట్రిక్ మీ పోర్ట్‌ఫోలియోలో ఎంత శాతం రెండు ఫండ్‌ల మధ్య నకిలీ చేయబడిందో చెబుతుంది, ప్రతి సాధారణ స్టాక్ కోసం చిన్న బరువుల ఆధారంగా.<br/><br/><strong>ఉదాహరణ:</strong> ఫండ్ A ఐసిఐసిఐ బ్యాంక్‌లో 5% మరియు ఫండ్ B 6% కలిగి ఉంటే, ఆ స్టాక్ నుండి ఓవర్‌ల్యాప్ కంట్రిబ్యూషన్ 5% (రెండింటిలో కనిష్టం). మేము మొత్తం భారిత ఓవర్‌ల్యాప్ పొందడానికి అన్ని సాధారణ స్టాక్‌ల కోసం దీన్ని కూడతాము."
+      "h2": "How Our Mutual Fund Overlap Calculator Works",
+      "body": "Our tool compares the holdings of your selected funds and calculates the &lt;strong&gt;weighted overlap&lt;/strong&gt;. This metric tells you what percentage of your portfolio is duplicated between two funds, based on the smaller weight for each common stock.&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Example:&lt;/strong&gt; If Fund A holds 5% in ICICI Bank and Fund B holds 6%, the overlap contribution from that stock is 5% (the minimum of the two). We sum this for all common stocks to get the total weighted overlap."
     },
     "live_example": {
-      "h2": "లైవ్ ఉదాహరణ: ఐసిఐసిఐ ప్రూ బ్లూచిప్ వర్సెస్ హెచ్‌డిఎఫ్‌సి టాప్ 100",
-      "intro": "ఇక్కడ ఒక సాధారణ పోలికను చూపించే ఒక ముందు-రెండర్ చేయబడిన ఉదాహరణ. ఫండ్‌లలో <strong>27.02%</strong> భారిత ఓవర్‌ల్యాప్ ఉంది.",
-      "result_summary": "ఇది <strong>మధ్యస్థ</strong> స్థాయి ఓవర్‌ల్యాప్, ఇది ఒకే విధమైన బెంచ్‌మార్క్‌లను ట్రాక్ చేసే లార్జ్-క్యాప్ ఫండ్‌లకు సాధారణం. మొదటి 5 సాధారణ స్టాక్‌లు మాత్రమే ఈ ఓవర్‌ల్యాప్‌కు 18% కంటే ఎక్కువ దోహదం చేస్తాయి.",
-      "top_stocks_title": "అగ్ర 5 ఓవర్‌ల్యాపింగ్ స్టాక్‌లు",
+      "h2": "Live Example: ICICI Pru Bluechip vs HDFC Top 100",
+      "intro": "Here's a pre-rendered example showing a typical comparison. The funds have a weighted overlap of &lt;strong&gt;27.02%&lt;/strong&gt;.",
+      "result_summary": "This is a &lt;strong&gt;Moderate&lt;/strong&gt; level of overlap, which is common for large-cap funds tracking similar benchmarks. The top 5 common stocks alone contribute over 18% to this overlap.",
+      "top_stocks_title": "Top 5 Overlapping Stocks",
       "top_stocks": [
-        { "name": "ఐసిఐసిఐ బ్యాంక్", "weight": "5.21%" },
-        { "name": "ఇన్ఫోసిస్", "weight": "4.67%" },
-        { "name": "యాక్సిస్ బ్యాంక్", "weight": "2.34%" },
-        { "name": "భారతీ ఎయిర్‌టెల్", "weight": "3.12%" },
-        { "name": "స్టేట్ బ్యాంక్ ఆఫ్ ఇండియా", "weight": "2.98%" }
+        { "name": "ICICI Bank", "weight": "5.21%" },
+        { "name": "Infosys", "weight": "4.67%" },
+        { "name": "Axis Bank", "weight": "2.34%" },
+        { "name": "Bharti Airtel", "weight": "3.12%" },
+        { "name": "State Bank of India", "weight": "2.98%" }
       ]
     },
     "interpreting_results": {
-      "h2": "మీ ఓవర్‌ల్యాప్ స్కోర్‌ను ఎలా అన్వయించాలి",
-      "body": "<ul><li><strong>తక్కువ (0-15%):</strong> మంచి వైవిధ్యం. ఫండ్‌లకు విభిన్న వ్యూహాలు ఉన్నాయి.</li><li><strong>మధ్యస్థం (15-30%):</strong> ఒకే వర్గంలోని ఫండ్‌లకు సాధారణం (ఉదా., లార్జ్-క్యాప్). మీరు భాగస్వామ్య బహిర్గతంతో సౌకర్యవంతంగా ఉన్నారని నిర్ధారించుకోవడానికి సమీక్షించండి.</li><li><strong>అధికం (30-50%):</strong> ముఖ్యమైన ఓవర్‌ల్యాప్. మీరు ఒకే స్టాక్‌ల కోసం రెండు సెట్ల ఫీజులు చెల్లిస్తూ ఉండవచ్చు. ఏకీకృతం చేయడాన్ని పరిగణించండి.</li><li><strong>చాలా అధికం (>50%):</strong> ఫండ్‌లు ఆచరణాత్మకంగా క్లోన్‌లు. వైవిధ్యాన్ని మెరుగుపరచడానికి ఒకదానిని భర్తీ చేయడం చాలా సిఫార్సు చేయబడింది.</li></ul>"
+      "h2": "How to Interpret Your Overlap Score",
+      "body": "&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Low (0-15%):&lt;/strong&gt; Good diversification. The funds have distinct strategies.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Moderate (15-30%):&lt;/strong&gt; Normal for funds in the same category (e.g., large-cap). Review to ensure you are comfortable with the shared exposure.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;High (30-50%):&lt;/strong&gt; Significant overlap. You may be paying two sets of fees for the same stocks, reducing diversification. Consider consolidating.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Very High (&gt;50%):&lt;/strong&gt; The funds are practically clones. Replacing one to improve diversification is highly recommended.&lt;/li&gt;&lt;/ul&gt;"
     },
     "what_to_do": {
-      "h2": "మీకు అధిక ఓవర్‌ల్యాప్ ఉంటే ఏమి చేయాలి",
-      "body": "మీకు అధిక ఓవర్‌ల్యాప్ కనిపిస్తే, భయపడవద్దు. ఫండ్‌లలో ఒకదానిని వేరే వ్యూహం లేదా మార్కెట్-క్యాప్ ఫోకస్‌తో ఉన్న మరొకదానితో భర్తీ చేయడాన్ని పరిగణించండి. ఉదాహరణకు, రెండు లార్జ్-క్యాప్ ఫండ్‌లు ఓవర్‌ల్యాప్ అయితే, మీరు నిజమైన వైవిధ్యాన్ని సాధించడానికి ఒకదానిని మిడ్-క్యాప్ లేదా సెక్టార్-నిర్దిష్ట ఫండ్‌గా మార్చవచ్చు."
+      "h2": "What To Do If You Have High Overlap",
+      "body": "If you find high overlap, don't panic. Consider replacing one of the funds with another that has a different strategy or market-cap focus. For example, if two large-cap funds overlap, you could swap one for a mid-cap or sector-specific fund to achieve true diversification.",
+      "tax_considerations": "&lt;h3&gt;Tax &amp; Exit Load Considerations&lt;/h3&gt;&lt;p&gt;Before selling a fund, always consider the tax implications. For equity funds, gains are taxed as Short-Term Capital Gains (STCG) if sold within one year, and Long-Term Capital Gains (LTCG) after that. Also, check for any exit loads, which are fees charged for redeeming units within a certain period (usually 1 year).&lt;/p&gt;"
     },
     "faq": {
-      "h2": "తరచుగా అడిగే ప్రశ్నలు",
+      "h2": "Frequently Asked Questions",
       "faqs": [
-        { "q": "మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ ఎలా లెక్కించబడుతుంది?", "a": "రెండు ఫండ్‌లు కలిగి ఉన్న ప్రతి సాధారణ స్టాక్ యొక్క కనీస బరువును కూడటం ద్వారా మేము భారిత ఓవర్‌ల్యాప్‌ను లెక్కిస్తాము. సూత్రం: అన్ని సాధారణ స్టాక్‌ల కోసం Σ min(Weight_Fund_A, Weight_Fund_B)." },
-        { "q": "మ్యూచువల్ ఫండ్‌లలో 30% ఓవర్‌ల్యాప్ చెడ్డదా?", "a": "30% ఓవర్‌ల్యాప్ అధికంగా పరిగణించబడుతుంది. 'చెడ్డది' అని అవసరం లేనప్పటికీ, మీరు ఒకే విధమైన హోల్డింగ్‌ల కోసం రెండు వ్యయ నిష్పత్తులను చెల్లిస్తూ ఉండవచ్చని ఇది సూచిస్తుంది, ఇది వైవిధ్యాన్ని తగ్గిస్తుంది. మీ పోర్ట్‌ఫోలియోకు రెండు ఫండ్‌లు అవసరమా అని సమీక్షించడం విలువ." },
-        { "q": "మీరు మ్యూచువల్ ఫండ్‌లలో ఓవర్‌ల్యాప్‌ను ఎలా తనిఖీ చేస్తారు?", "a": "మా క్యాలిక్యులేటర్‌లోని డ్రాప్‌డౌన్ మెనూల నుండి 2 నుండి 5 భారతీయ ఈక్విటీ ఫండ్‌లను ఎంచుకోండి. సాధనం స్వయంచాలకంగా తాజా హోల్డింగ్స్ డేటాను పొందుతుంది మరియు మీ కోసం జతవారీ ఓవర్‌ల్యాప్‌ను లెక్కిస్తుంది." },
-        { "q": "ఏ రకమైన ఫండ్‌లలో ఎక్కువ ఓవర్‌ల్యాప్ ఉంటుంది?", "a": "లార్జ్-క్యాప్ మరియు ఇండెక్స్ ఫండ్‌లలో ఎక్కువ ఓవర్‌ల్యాప్ ఉంటుంది ఎందుకంటే అవి ఒకే విధమైన బెంచ్‌మార్క్‌లను (నిఫ్టీ 50 లేదా సెన్సెక్స్ వంటివి) ట్రాక్ చేస్తాయి మరియు అగ్ర బ్లూ-చిప్ కంపెనీల అదే సెట్‌లో పెట్టుబడి పెడతాయి." }
+        { "q": "How is mutual fund overlap calculated?", "a": "We calculate weighted overlap by summing the minimum weight of each common stock held by two funds. Formula: Σ min(Weight_in_Fund_A, Weight_in_Fund_B) for all common stocks." },
+        { "q": "Is 30% overlap in mutual funds bad?", "a": "30% overlap is considered high. While not necessarily 'bad', it suggests you might be paying two expense ratios for similar holdings, reducing diversification. It's worth reviewing if both funds are necessary for your portfolio." },
+        { "q": "How do you check overlap between two mutual funds?", "a": "Simply select 2 to 5 Indian equity funds from the dropdown menus in our calculator. The tool will automatically fetch the latest holdings data and compute the pairwise overlap for you." },
+        { "q": "Which type of funds have the most overlap?", "a": "Large-cap and index funds tend to have the most overlap because they track similar benchmarks (like Nifty 50 or Sensex) and invest in the same set of top blue-chip companies." }
       ]
     },
     "methodology": {
-      "h2": "డేటా & పద్ధతి",
-      "body": "<p><strong>డేటా మూలం:</strong> మా హోల్డింగ్స్ డేటా పబ్లిక్‌గా అందుబాటులో ఉన్న పథక పత్రాల నుండి తీసుకోబడింది మరియు కాలానుగుణంగా నవీకరించబడుతుంది. మేము ఖచ్చితత్వం కోసం ప్రయత్నిస్తున్నప్పుడు, మేము దానిని హామీ ఇవ్వలేము. ఎల్లప్పుడూ అధికారిక ఏఎంసి ఫ్యాక్ట్‌షీట్‌లతో ధృవీకరించండి. <strong>చివరిగా నవీకరించబడింది: ఆగస్టు 2025।</strong></p><p><strong>మ్యాచింగ్ తర్కం:</strong> హోల్డింగ్స్ మొదట వాటి స్టాక్ టిక్కర్ ద్వారా (ఉదా. 'RELIANCE') సరిపోల్చబడతాయి. టిక్కర్ అందుబాటులో లేకపోతే, మేము ఒక సాధారణీకరించిన కంపెనీ పేరును (ఉదా. 'reliance industries' 'Ltd', 'Inc', మొదలైనవి తీసివేసిన తర్వాత) ఉపయోగిస్తాము. 'క్యాష్', 'ట్రైపార్టీ రెపో', లేదా 'నెట్ రిసీవబుల్స్' వంటి నాన్-ఈక్విటీ హోల్డింగ్‌లు సాధారణ పదాల కోసం ఒక రెజెక్స్ మ్యాచ్ ఆధారంగా లెక్కింపు నుండి మినహాయించబడతాయి.</p><p><strong>పని చేసిన ఉదాహరణ (భారిత ఓవర్‌ల్యాప్):</strong></p><p>భారిత ఓవర్‌ల్యాప్ = అన్ని సాధారణ స్టాక్‌ల కోసం Σ min(ఫండ్ Aలో బరువు, ఫండ్ Bలో బరువు).</p><div class='overflow-x-auto'><table class='w-full text-sm my-4'><thead><tr class='border-b'><th class='text-left p-2'>స్టాక్</th><th class='text-right p-2'>ఫండ్ A (w%)</th><th class='text-right p-2'>ఫండ్ B (w%)</th><th class='text-right p-2'>కనిష్ట బరువు</th></tr></thead><tbody><tr class='border-b'><td class='p-2'>ఐసిఐసిఐ బ్యాంక్</td><td class='text-right p-2'>5.21</td><td class='text-right p-2'>6.03</td><td class='text-right p-2'>5.21</td></tr><tr class='border-b'><td class='p-2'>ఇన్ఫోసిస్</td><td class='text-right p-2'>4.67</td><td class='text-right p-2'>5.06</td><td class='text-right p-2'>4.67</td></tr><tr class='border-b'><td class='p-2'>యాక్సిస్ బ్యాంక్</td><td class='text-right p-2'>2.34</td><td class='text-right p-2'>3.45</td><td class='text-right p-2'>2.34</td></tr><tr class='border-b'><td class='p-2'>భారతీ ఎయిర్‌టెల్</td><td class='text-right p-2'>3.12</td><td class='text-right p-2'>4.50</td><td class='text-right p-2'>3.12</td></tr><tr class='border-b'><td class='p-2'>స్టేట్ బ్యాంక్ ఆఫ్ ఇండియా</td><td class='text-right p-2'>2.98</td><td class='text-right p-2'>3.80</td><td class='text-right p-2'>2.98</td></tr><tr><td colspan='3' class='text-right font-bold p-2'>...మరియు అన్ని 35 సాధారణ స్టాక్‌ల కోసం...</td><td class='text-right font-bold p-2'></td></tr><tr class='border-t'><td colspan='3' class='text-right font-bold p-2'>మొత్తం భారిత ఓవర్‌ల్యాప్</td><td class='text-right font-bold p-2'>27.02%</td></tr></tbody></table></div>"
+      "h2": "Data & Methodology",
+      "body": "&lt;p&gt;&lt;strong&gt;Data Source:&lt;/strong&gt; Our holdings data is sourced from publicly available scheme documents and is updated periodically. While we strive for accuracy, we cannot guarantee it. Always verify with official AMC factsheets. &lt;strong&gt;Last updated: August 2025.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Matching Logic:&lt;/strong&gt; Holdings are first matched by their stock ticker (e.g., 'RELIANCE'). If a ticker is not available, we use a normalized company name (e.g., 'reliance industries' after removing 'Ltd', 'Inc', etc.). Non-equity holdings like 'Cash', 'Triparty Repo', or 'Net Receivables' are excluded from calculations based on a regex match for common terms.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Worked Example (Weighted Overlap):&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Weighted Overlap = Σ min(Weight in Fund A, Weight in Fund B) for all common stocks.&lt;/p&gt;&lt;div class='overflow-x-auto'&gt;&lt;table class='w-full text-sm my-4'&gt;&lt;thead&gt;&lt;tr class='border-b'&gt;&lt;th class='text-left p-2'&gt;Stock&lt;/th&gt;&lt;th class='text-right p-2'&gt;Fund A (w%)&lt;/th&gt;&lt;th class='text-right p-2'&gt;Fund B (w%)&lt;/th&gt;&lt;th class='text-right p-2'&gt;Min. Weight&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr class='border-b'&gt;&lt;td class='p-2'&gt;ICICI Bank&lt;/td&gt;&lt;td class='text-right p-2'&gt;5.21&lt;/td&gt;&lt;td class='text-right p-2'&gt;6.03&lt;/td&gt;&lt;td class='text-right p-2'&gt;5.21&lt;/td&gt;&lt;/tr&gt;&lt;tr class='border-b'&gt;&lt;td class='p-2'&gt;Infosys&lt;/td&gt;&lt;td class='text-right p-2'&gt;4.67&lt;/td&gt;&lt;td class='text-right p-2'&gt;5.06&lt;/td&gt;&lt;td class='text-right p-2'&gt;4.67&lt;/td&gt;&lt;/tr&gt;&lt;tr class='border-b'&gt;&lt;td class='p-2'&gt;Axis Bank&lt;/td&gt;&lt;td class='text-right p-2'&gt;2.34&lt;/td&gt;&lt;td class='text-right p-2'&gt;3.45&lt;/td&gt;&lt;td class='text-right p-2'&gt;2.34&lt;/td&gt;&lt;/tr&gt;&lt;tr class='border-b'&gt;&lt;td class='p-2'&gt;Bharti Airtel&lt;/td&gt;&lt;td class='text-right p-2'&gt;3.12&lt;/td&gt;&lt;td class='text-right p-2'&gt;4.50&lt;/td&gt;&lt;td class='text-right p-2'&gt;3.12&lt;/td&gt;&lt;/tr&gt;&lt;tr class='border-b'&gt;&lt;td class='p-2'&gt;State Bank of India&lt;/td&gt;&lt;td class='text-right p-2'&gt;2.98&lt;/td&gt;&lt;td class='text-right p-2'&gt;3.80&lt;/td&gt;&lt;td class='text-right p-2'&gt;2.98&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan='3' class='text-right font-bold p-2'&gt;...and for all 35 common stocks...&lt;/td&gt;&lt;td class='text-right font-bold p-2'&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class='border-t'&gt;&lt;td colspan='3' class='text-right font-bold p-2'&gt;Total Weighted Overlap&lt;/td&gt;&lt;td class='text-right font-bold p-2'&gt;27.02%&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;"
     },
     "results": {
-        "weighted_overlap_title": "భారిత ఓవర్‌ల్యాప్",
-        "top_stocks_title": "అగ్ర సాధారణ స్టాక్‌లు",
-        "stock_header": "స్టాక్",
-        "min_weight_header": "కనిష్ట బరువు"
+        "weighted_overlap_title": "Weighted Overlap",
+        "top_stocks_title": "Top Common Stocks",
+        "stock_header": "Stock",
+        "min_weight_header": "Min. Weight"
     }
   },
   "ups_pension_calculator": {
-    "meta_title": "UPS పెన్షన్ క్యాలిక్యులేటర్ 2025 — యూనివర్సల్ పెన్షన్ స్కీమ్ | నెలవారీ పెన్షన్ & కుటుంబ పెన్షన్ అంచనా",
-    "meta_description": "మా ఉచిత UPS పెన్షన్ క్యాలిక్యులేటర్‌ను ఉపయోగించి మీ నెలవారీ పెన్షన్, కుటుంబ పెన్షన్ మరియు ఏకమొత్తం యూనివర్సల్ పెన్షన్ స్కీమ్ కింద అంచనా వేయండి. పని చేసిన ఉదాహరణలు, UPS vs NPS పోలిక, పద్ధతి మరియు డౌన్‌లోడ్ చేయగల ఎక్సెల్ ఉన్నాయి.",
-    "h1": "UPS పెన్షన్ క్యాలిక్యులేటర్ — మీ యూనివర్సల్ పెన్షన్ స్కీమ్ (UPS) పెన్షన్ అంచనా (2025)",
-    "hero_subtitle": "మా ఉచిత UPS పెన్షన్ క్యాలిక్యులేటర్‌ను ఉపయోగించి మీ నెలవారీ పెన్షన్, కుటుంబ పెన్షన్ మరియు ఏకమొత్తం యూనివర్సల్ పెన్షన్ స్కీమ్ కింద అంచనా వేయండి.",
+    "meta_title": "UPS Pension Calculator 2025 — Unified Pension Scheme | Estimate Monthly Pension & Family Pension",
+    "meta_description": "Use our free UPS Pension Calculator to estimate your monthly pension, family pension and lump sum under the Unified Pension Scheme. Includes worked examples, UPS vs NPS comparison, methodology and downloadable Excel.",
+    "h1": "UPS Pension Calculator — Estimate Your Unified Pension Scheme (UPS) Pension (2025)",
+    "hero_subtitle": "Use our free UPS Pension Calculator to estimate your monthly pension, family pension and lump sum under the Unified Pension Scheme.",
     "interactive_tool": {
-      "title": "UPS పెన్షన్ క్యాలిక్యులేటర్",
-      "description": "తక్షణ పెన్షన్ అంచనా పొందడానికి మీ సేవా వివరాలను నమోదు చేయండి.",
-      "calculate_cta": "పెన్షన్‌ను లెక్కించండి",
-      "calculating": "లెక్కిస్తోంది...",
-      "try_example": "ఉదాహరణ ప్రయత్నించండి",
-      "download_excel": "ఎక్సెల్ డౌన్‌లోడ్ చేయండి",
-      "print_results": "ఫలితాలను ముద్రించండి",
-      "share_twitter": "ట్విట్టర్‌లో షేర్ చేయండి"
+      "title": "UPS Pension Calculator",
+      "description": "Enter your service details to get an instant pension estimate.",
+      "calculate_cta": "Calculate Pension",
+      "calculating": "Calculating...",
+      "try_example": "Try Example",
+      "download_excel": "Download Excel",
+      "print_results": "Print Results",
+      "share_twitter": "Share on Twitter"
     },
     "inputs": {
-      "basic_pay": "నెలవారీ ప్రాథమిక వేతనం (₹)",
-      "da_percentage": "DA శాతం (%)",
-      "service_years": "అర్హతగల సేవ (సంవత్సరాలు)"
+      "basic_pay": "Monthly Basic Pay (₹)",
+      "da_percentage": "DA Percentage (%)",
+      "service_years": "Qualifying Service (Years)"
     },
     "outputs": {
-      "title": "మీ అంచనా పెన్షన్",
-      "monthly_pension": "నెలవారీ పెన్షన్",
-      "family_pension": "కుటుంబ పెన్షన్",
-      "lump_sum": "ఏకమొత్తం"
+      "title": "Your Estimated Pension",
+      "monthly_pension": "Monthly Pension",
+      "family_pension": "Family Pension",
+      "lump_sum": "Lump Sum"
     },
     "how_it_works": {
-      "h2": "1. UPS పెన్షన్ క్యాలిక్యులేటర్ ఎలా పనిచేస్తుంది",
-      "body": "<h3>క్యాలిక్యులేటర్కు ఏ ఇన్‌పుట్‌లు అవసరం</h3><ul><li>నెలవారీ ప్రాథమిక వేతనం: మీ చివరిగా తీసుకున్న ప్రాథమిక వేతనం.</li><li>DA %: వర్తించే డియర్‌నెస్ అలవెన్స్ శాతం.</li><li>అర్హతగల సేవ యొక్క సంవత్సరాలు మరియు నెలలు: మీ మొత్తం సేవా కాలం.</li><li>చేరిన/పదవీ విరమణ తేదీ: సేవా పొడవును ఖచ్చితంగా లెక్కించడానికి.</li></ul><h3>మీరు ఏ అవుట్‌పుట్‌లు పొందుతారు</h3><p>మీరు మీ అంచనా వేసిన నెలవారీ పెన్షన్, కుటుంబ పెన్షన్ మరియు ఏదైనా వర్తించే ఏకమొత్తం పొందుతారు.</p><p>ఈ క్యాలిక్యులేటర్ మీ పెన్షన్‌ను అంచనా వేయడానికి అధికారిక ప్రభుత్వ సూత్రాన్ని ఉపయోగిస్తుంది. గణితం యొక్క వివరణాత్మక విచ్ఛిన్నం కోసం, దయచేసి మా <a href='#methodology'>పద్ధతి విభాగాన్ని</a> చూడండి.</p>"
+      "h2": "1. How the UPS Pension Calculator Works",
+      "body": "&lt;h3&gt;What inputs the calculator needs&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;Monthly Basic Pay: Your last drawn basic pay.&lt;/li&gt;&lt;li&gt;DA %: The applicable Dearness Allowance percentage.&lt;/li&gt;&lt;li&gt;Years and Months of Qualifying Service: Your total service duration.&lt;/li&gt;&lt;li&gt;Date of Joining/Retirement: To accurately calculate service length.&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;What outputs you’ll get&lt;/h3&gt;&lt;p&gt;You’ll get your estimated monthly pension, family pension, and any applicable lump sum.&lt;/p&gt;&lt;p&gt;This calculator uses the official government formula to estimate your pension. For a detailed breakdown of the math, please see our &lt;a href='#methodology'&gt;Methodology section&lt;/a&gt;.&lt;/p&gt;"
     },
     "formula_section": {
-      "h2": "3. UPS పెన్షన్ ఫార్ములా — దశల వారీ",
-      "body": "<h3>ప్రధాన సూత్రం</h3><p>నెలవారీ పెన్షన్ = (పెన్షనబుల్ జీతం × పెన్షన్ ఫ్యాక్టర్ × అర్హతగల సేవ) / డివైజర్. మేము NPSTRUST మరియు ప్రభుత్వ సర్క్యులర్‌ల నుండి అధికారిక సూత్రాన్ని ఉపయోగిస్తాము.</p><h3>పెన్షనబుల్ జీతం ఎలా లెక్కించాలి</h3><p>ఇది సాధారణంగా మీ సేవ యొక్క చివరి 12 నెలల్లో మీ ప్రాథమిక వేతనం యొక్క సగటు.</p><h3>అర్హతగల సేవ</h3><p>ఇది పూర్తి సంవత్సరాలు మరియు సేవా నెలలను కలిగి ఉంటుంది. సేవలో ఏవైనా విరామాలు పథక నిబంధనల ప్రకారం తీసివేయబడవచ్చు.</p><h3>కుటుంబ పెన్షన్ & ఏకమొత్తం సూత్రాలు</h3><p>కుటుంబ పెన్షన్ సాధారణంగా ప్రాథమిక పెన్షన్‌లో ఒక శాతం (ఉదా., 60%). ఏకమొత్తం, లేదా కమ్యూటెడ్ విలువ, ఒక కమ్యూటేషన్ ఫ్యాక్టర్ ఆధారంగా లెక్కించబడుతుంది.</p>"
+      "h2": "3. UPS Pension Formula — Step by Step",
+      "body": "&lt;h3&gt;The Core Formula&lt;/h3&gt;&lt;p&gt;Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor. We use the official formula from NPSTRUST and government circulars.&lt;/p&gt;&lt;h3&gt;How to Calculate Pensionable Salary&lt;/h3&gt;&lt;p&gt;This is typically the average of your basic pay over the last 12 months of your service.&lt;/p&gt;&lt;h3&gt;Qualifying Service&lt;/h3&gt;&lt;p&gt;This includes full years and months of service. Any breaks in service may be deducted as per scheme rules.&lt;/p&gt;&lt;h3&gt;Family Pension &amp; Lump Sum Formulas&lt;/h3&gt;&lt;p&gt;Family pension is usually a percentage (e.g., 60%) of the basic pension. The lump sum, or commuted value, is calculated based on a commutation factor.&lt;/p&gt;"
     },
     "worked_examples": {
-      "h2": "4. పని చేసిన ఉదాహరణలు (నిజమైన దృశ్యాలు)",
+      "h2": "4. Worked Examples (real scenarios)",
       "scenario1": {
-        "title": "ఉదాహరణ A — యువ ప్రారంభం, 60 వద్ద పదవీ విరమణ",
-        "body": "<strong>ఇన్‌పుట్‌లు:</strong> వయస్సు 30, 30 సంవత్సరాల సేవ, ప్రాథమిక వేతనం ₹50,000.<br/><strong>ఫలితం:</strong> మేము పెన్షనబుల్ జీతాన్ని లెక్కిస్తాము మరియు సుమారు ₹22,727 నెలవారీ పెన్షన్ చూపించడానికి సూత్రాన్ని వర్తింపజేస్తాము."
+        "title": "Example A — Young start, retire at 60",
+        "body": "&lt;strong&gt;Inputs:&lt;/strong&gt; Age 30, 30 years service, Basic Pay ₹50,000.&lt;br/&gt;&lt;strong&gt;Result:&lt;/strong&gt; We calculate the pensionable salary and apply the formula to show an estimated monthly pension of around ₹22,727."
       },
       "scenario2": {
-        "title": "ఉదాహరణ B — మధ్య-కెరీర్ చేరిక, 20 సంవత్సరాల సేవ",
-        "body": "<strong>ఇన్‌పుట్‌లు:</strong> వయస్సు 40, 20 సంవత్సరాల సేవ, ప్రాథమిక వేతనం ₹80,000.<br/><strong>ఫలితం:</strong> ఈ దృష్టాంతం సుమారు ₹24,242 నెలవారీ పెన్షన్‌కు దారితీస్తుంది, ఇది అధిక ప్రాథమిక వేతనం ఉన్నప్పటికీ తక్కువ సేవా కాలం యొక్క ప్రభావాన్ని ప్రదర్శిస్తుంది."
+        "title": "Example B — Mid-career joiner, 20 years service",
+        "body": "&lt;strong&gt;Inputs:&lt;/strong&gt; Age 40, 20 years service, Basic Pay ₹80,000.&lt;br/&gt;&lt;strong&gt;Result:&lt;/strong&gt; This scenario leads to a monthly pension of roughly ₹24,242, demonstrating the impact of a shorter service period despite a higher basic pay."
       },
       "scenario3": {
-        "title": "ఉదాహరణ C — అధిక ప్రాథమిక వేతనంతో 35 సంవత్సరాల సుదీర్ఘ సేవ",
-        "body": "<strong>ఇన్‌పుట్‌లు:</strong> వయస్సు 25, 35 సంవత్సరాల సేవ, ప్రాథమిక వేతనం ₹1,00,000.<br/><strong>ఫలితం:</strong> ఈ దృష్టాంతం గణనీయంగా అధిక పెన్షన్‌కు దారితీస్తుంది, సుమారు ₹53,030, ఇది సుదీర్ఘ సేవా కాలం యొక్క శక్తిని చూపుతుంది."
+        "title": "Example C — Long service 35 years with high basic pay",
+        "body": "&lt;strong&gt;Inputs:&lt;/strong&gt; Age 25, 35 years service, Basic Pay ₹1,00,000.&lt;br/&gt;&lt;strong&gt;Result:&lt;/strong&gt; This scenario results in a significantly higher pension of approximately ₹53,030, showing the power of a long service duration."
       }
     },
     "family_pension": {
-      "h2": "5. ఏకమొత్తం & కుటుంబ పెన్షన్ — వివరాలు & ఎలా లెక్కించాలి",
-      "body": "<h3>కుటుంబ పెన్షన్ ఎలా పనిచేస్తుంది</h3><p>పెన్షనర్ మరణించిన సందర్భంలో కుటుంబ పెన్షన్ భార్య/భర్తకు అందించబడుతుంది. ఈ మొత్తం సాధారణంగా చివరిగా తీసుకున్న పెన్షన్‌లో ఒక శాతం, తరచుగా సుమారు 60%, పథక నిబంధనలకు లోబడి ఉంటుంది.</p><h3>ఏకమొత్తం లెక్కింపు</h3><p>పెన్షన్‌లో కొంత భాగాన్ని పదవీ విరమణపై ఒక ఏకమొత్తం మొత్తంలోకి 'కమ్యూట్' చేయవచ్చు. దీని సూత్రంలో పెన్షనర్ వయస్సుపై ఆధారపడిన ఒక కమ్యూటేషన్ ఫ్యాక్టర్ ఉంటుంది.</p>"
+      "h2": "5. Lump Sum & Family Pension — Details & How To Compute",
+      "body": "&lt;h3&gt;How UPS Family Pension Works&lt;/h3&gt;&lt;p&gt;Family pension provides financial security to the family in the unfortunate event of the pensioner's death. Under the Universal Pension Scheme (UPS), the spouse is typically entitled to receive a percentage of the basic pension as a family pension for their lifetime. This is often around 60% of the original pension, but can vary based on specific scheme rules.&lt;/p&gt;&lt;h3&gt;Lump Sum Computation&lt;/h3&gt;&lt;p&gt;At retirement, pensioners may have the option to 'commute' a portion of their pension, which means they receive a lump sum amount upfront in exchange for a lower monthly pension. The lump sum is calculated using a 'commutation factor' which depends on the pensioner's age at the time of retirement. Our UPS lump sum calculator uses these standard factors to provide an estimate. For example, if you choose to commute one-third of a ₹30,000 monthly pension, you would receive a lump sum and your monthly pension would be reduced to ₹20,000.&lt;/p&gt;"
     },
     "comparison": {
-      "h2": "6. UPS vs NPS — ఏది మంచిది?",
-      "body": "<h3>నిర్మాణాత్మక తేడాలు</h3><table><thead><tr><th>ఫీచర్</th><th>UPS</th><th>NPS</th></tr></thead><tbody><tr><td>అర్హత</td><td>ప్రభుత్వ ఉద్యోగులు</td><td>అన్ని పౌరులు</td></tr><tr><td>కంట్రిబ్యూషన్‌లు</td><td>ప్రభుత్వం ద్వారా నిర్వచించబడింది</td><td>ఫ్లెక్సిబుల్</td></tr><tr><td>చెల్లింపు శైలి</td><td>నిర్వచించిన ప్రయోజనం</td><td>నిర్వచించిన కంట్రిబ్యూషన్</td></tr></tbody></table><h3>UPS NPS కంటే ఎప్పుడు ఎక్కువ అర్ధవంతంగా ఉంటుంది</h3><p>ప్రభుత్వం హామీ ఇచ్చిన, ఊహించదగిన ఆదాయ ప్రవాహాన్ని ఇష్టపడే వారికి UPS ఉత్తమం. సంభావ్యంగా అధిక రాబడుల కోసం మార్కెట్ రిస్క్‌లతో సౌకర్యవంతంగా ఉన్నవారికి NPS ఉత్తమం.</p>"
+      "h2": "6. UPS vs NPS — Which is Better?",
+      "body": "&lt;h3&gt;Structural Differences&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Feature&lt;/th&gt;&lt;th&gt;UPS&lt;/th&gt;&lt;th&gt;NPS&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Eligibility&lt;/td&gt;&lt;td&gt;Government Employees&lt;/td&gt;&lt;td&gt;All Citizens&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Contributions&lt;/td&gt;&lt;td&gt;Defined by Government&lt;/td&gt;&lt;td&gt;Flexible&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Payout Style&lt;/td&gt;&lt;td&gt;Defined Benefit&lt;/td&gt;&lt;td&gt;Defined Contribution&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h3&gt;When UPS Makes More Sense vs. NPS&lt;/h3&gt;&lt;p&gt;UPS is better for those who prefer a predictable, government-guaranteed income stream. NPS is better for those comfortable with market risks for potentially higher returns.&lt;/p&gt;"
     },
     "tax_rules": {
-      "h2": "7. పన్ను & ఉపసంహరణ నియమాలు (భారతదేశం-నిర్దిష్ట)",
-      "body": "<h3>పెన్షన్ & ఏకమొత్తం యొక్క పన్ను చికిత్స</h3><p>UPS నుండి అందుకున్న నెలవారీ పెన్షన్ సాధారణంగా 'జీతం నుండి ఆదాయం'గా పన్ను విధించబడుతుంది. కమ్యూటేషన్‌పై అందుకున్న ఏకమొత్తం మొత్తం ఆదాయపు పన్ను చట్టంలోని సెక్షన్ 10(10A) కింద పాక్షికంగా లేదా పూర్తిగా మినహాయించబడవచ్చు. వ్యక్తిగతీకరించిన పన్ను సలహా కోసం దయచేసి ఒక చార్టర్డ్ అకౌంటెంట్‌ను సంప్రదించండి.</p><h3>నిష్క్రమణ/లోడ్ పరిగణనలు</h3><p>ఇది ప్రభుత్వ పెన్షన్ పథకం కాబట్టి, నిష్క్రమణ లోడ్‌లు లేవు. ఉపసంహరణ మరియు కమ్యూటేషన్ కోసం నియమాలు సేవా నియమాల ద్వారా నిర్వహించబడతాయి.</p>"
+      "h2": "7. Taxation & Withdrawal Rules (India-specific)",
+      "body": "&lt;h3&gt;Tax Treatment of Pension &amp; Lump Sum&lt;/h3&gt;&lt;p&gt;The monthly pension received from UPS is generally taxable as 'Income from Salary'. A lump sum amount received on commutation may be partially or fully exempt under Section 10(10A) of the Income Tax Act. Please consult a Chartered Accountant for personalized tax advice.&lt;/p&gt;&lt;h3&gt;Exit/Load Considerations&lt;/h3&gt;&lt;p&gt;As this is a government pension scheme, there are no exit loads. Rules for withdrawal and commutation are governed by service rules.&lt;/p&gt;"
     },
     "optimization": {
-      "h2": "8. పన్నును ఎలా తగ్గించాలి / మీ UPS పెన్షన్‌ను ఆప్టిమైజ్ చేయాలి",
-      "body": "<h3>ఆచరణాత్మక చిట్కాలు</h3><ul><li><strong>ఉపసంహరణల సమయం:</strong> మీ మొత్తం పన్ను వ్యూహంతో సమలేఖనం చేయడానికి మీ కమ్యూటేషన్ మరియు ఉపసంహరణలను ప్లాన్ చేయండి.</li><li><strong>భార్య పరిగణనలు:</strong> మీ భార్య/భర్తకు అందించబడిందని నిర్ధారించుకోవడానికి కుటుంబ పెన్షన్ నియమాలను అర్థం చేసుకోండి.</li></ul><h3>యాన్యుటీ, SWP లేదా ఇతర పోస్ట్-రిటైర్మెంట్ వ్యూహాలను ఎప్పుడు తీసుకోవాలి</h3><p>మీ UPS పెన్షన్ ఒక స్థిరమైన ఆధారాన్ని అందిస్తుంది. మీరు దీన్ని ఇతర పెట్టుబడుల నుండి వచ్చే ఆదాయంతో భర్తీ చేయవచ్చు, ఉదాహరణకు మ్యూచువల్ ఫండ్స్ నుండి ఒక సిస్టమాటిక్ విత్‌డ్రాయల్ ప్లాన్ (SWP) ద్వారా ఎక్కువ సౌలభ్యం కోసం.</p>"
+      "h2": "8. How to Reduce Tax / Optimize Your UPS Pension",
+      "body": "&lt;h3&gt;Practical Tips&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Timing of Withdrawals:&lt;/strong&gt; Plan your commutation and withdrawals to align with your overall tax strategy.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Spouse Considerations:&lt;/strong&gt; Understand the family pension rules to ensure your spouse is provided for.&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;When to take Annuity, SWP or other post-retirement strategies&lt;/h3&gt;&lt;p&gt;Your UPS pension provides a stable base. You can supplement this with income from other investments, such as a Systematic Withdrawal Plan (SWP) from mutual funds for more flexibility.&lt;/p&gt;"
     },
     "methodology": {
-      "h2": "9. పద్ధతి & మూలాలు (మీ గణితాన్ని చూపండి)",
-      "body": "<p>ఈ క్యాలిక్యులేటర్ NPSTRUST, PFRDA సర్క్యులర్లు మరియు ప్రభుత్వ నోటిఫికేషన్ల వంటి అధికారిక మూలాల నుండి డేటా మరియు సూత్రాలను ఉపయోగిస్తుంది. ముఖ్య అంచనాలలో DA శాతం మరియు కమ్యూటేషన్ ఫ్యాక్టర్లు ఉన్నాయి, ఇవి మార్పుకు లోబడి ఉంటాయి. చివరిగా నవీకరించబడింది: ఆగస్టు 2024.</p>"
+      "h2": "9. Methodology & Sources (Show your Math)",
+      "body": "&lt;p&gt;This calculator uses data and formulas from official sources such as NPSTRUST, PFRDA circulars, and government notifications. Key assumptions include the DA percentage and commutation factors, which are subject to change. Last updated: August 2024.&lt;/p&gt;"
     },
-    "faq_title": "10. తరచుగా అడిగే ప్రశ్నలు (FAQ)",
+    "faq_title": "10. Frequently Asked Questions (FAQ)",
     "faqs": [
-        { "q": "UPS పెన్షన్ సూత్రం ఏమిటి?", "a": "నెలవారీ UPS పెన్షన్ = (పెన్షనబుల్ జీతం × పెన్షన్ ఫ్యాక్టర్ × అర్హతగల సేవ) / [పథకం డివైజర్]. పెన్షనబుల్ జీతం గత 12 నెలల సగటు ప్రాథమిక వేతనం." },
-        { "q": "నేను నా నెలవారీ UPS పెన్షన్‌ను ఎలా లెక్కించాలి?", "a": "మీ ప్రాథమిక వేతనం, DA శాతం మరియు సేవా సంవత్సరాలను నమోదు చేయడం ద్వారా మా క్యాలిక్యులేటర్‌ను ఉపయోగించండి. ఇది మీకు ఖచ్చితమైన అంచనా ఇవ్వడానికి అధికారిక సూత్రాన్ని వర్తింపజేస్తుంది." },
-        { "q": "UPS పెన్షన్ క్యాలిక్యులేటర్ కోసం నాకు ఏ ఇన్‌పుట్‌లు అవసరం?", "a": "మీకు మీ చివరిగా తీసుకున్న నెలవారీ ప్రాథమిక వేతనం, ప్రస్తుత DA శాతం మరియు మీ మొత్తం అర్హతగల సేవా సంవత్సరాలు అవసరం." },
-        { "q": "UPS కింద పెన్షనబుల్ జీతం ఎలా లెక్కించబడుతుంది?", "a": "ఇది సాధారణంగా మీ సేవ యొక్క చివరి 10 లేదా 12 నెలల్లో మీ ప్రాథమిక వేతనం యొక్క సగటు, మీ విభాగానికి వర్తించే నిర్దిష్ట నియమాలపై ఆధారపడి ఉంటుంది." },
-        { "q": "UPS కింద నా భార్య/భర్తకు ఎంత కుటుంబ పెన్షన్ వస్తుంది?", "a": "కుటుంబ పెన్షన్ సాధారణంగా ప్రాథమిక పెన్షన్‌లో ఒక శాతం, తరచుగా సుమారు 60%, కానీ ఇది మారవచ్చు. మా క్యాలిక్యులేటర్ ప్రామాణిక నియమాల ఆధారంగా ఒక అంచనాను అందిస్తుంది." },
-        { "q": "2025లో UPS కింద కనీస పెన్షన్ ఎంత?", "a": "కనీస పెన్షన్ మొత్తం ప్రభుత్వ నిబంధనల ద్వారా నిర్ణయించబడుతుంది మరియు మారవచ్చు. దయచేసి అత్యంత ప్రస్తుత గణాంకాల కోసం అధికారిక సర్క్యులర్‌లను చూడండి." },
-        { "q": "నేను ఈ క్యాలిక్యులేటర్‌ను పాక్షిక సేవా సంవత్సరాల కోసం ఉపయోగించవచ్చా?", "a": "అవును, మా క్యాలిక్యులేటర్ మరింత ఖచ్చితమైన లెక్కింపు కోసం పాక్షిక సంవత్సరాలు మరియు సేవా నెలలను నిర్వహించగలదు." },
-        { "q": "ఈ క్యాలిక్యులేటర్‌ను ఉపయోగిస్తున్నప్పుడు నేను అంచనాలను (ద్రవ్యోల్బణం, DA) ఎంత తరచుగా నవీకరించాలి?", "a": "DA శాతంలో లేదా మీ పే స్కేల్‌లో గణనీయమైన మార్పు ఉన్నప్పుడల్లా మీ అంచనా వేసిన పెన్షన్‌ను తిరిగి లెక్కించడం మంచి పద్ధతి." },
-        { "q": "ప్రభుత్వ ఉద్యోగులకు UPS NPS కంటే మంచిదా?", "a": "UPS ఒక నిర్వచించిన, హామీ ఇవ్వబడిన పెన్షన్‌ను అందిస్తుంది, ఇది తక్కువ-రిస్క్. NPS మార్కెట్-లింక్డ్ మరియు సంభావ్యంగా అధిక రాబడులను అందిస్తుంది కానీ మార్కెట్ రిస్క్‌తో. ఎంపిక మీ రిస్క్ ఆకలిపై ఆధారపడి ఉంటుంది." },
-        { "q": "UPS కింద ఏకమొత్తం ఎలా లెక్కించబడుతుంది?", "a": "ఏకమొత్తం అనేది మీ పెన్షన్‌లో 'కమ్యూట్ చేయబడిన' భాగం, ఇది మీ పదవీ విరమణ వయస్సు ఆధారంగా ఒక నిర్దిష్ట కమ్యూటేషన్ ఫ్యాక్టర్‌ను ఉపయోగించి లెక్కించబడుతుంది." },
-        { "q": "UPS పెన్షన్‌లు పన్ను విధించదగినవా?", "a": "అవును, అందుకున్న నెలవారీ పెన్షన్ 'జీతం నుండి ఆదాయం' శీర్షిక కింద పన్ను విధించదగినది. కమ్యూట్ చేయబడిన (ఏకమొత్తం) భాగం పాక్షికంగా లేదా పూర్తిగా మినహాయించబడవచ్చు." },
-        { "q": "నేను UPS పెన్షన్ లెక్కింపును ఎక్సెల్ ఫైల్‌గా డౌన్‌లోడ్ చేయవచ్చా?", "a": "అవును, మా సాధనం మీ రికార్డుల కోసం మీ వివరణాత్మక పెన్షన్ లెక్కింపును ఎక్సెల్ ఫైల్‌గా డౌన్‌లోడ్ చేసుకునే ఎంపికను అందిస్తుంది." },
-        { "q": "ఈ UPS పెన్షన్ క్యాలిక్యులేటర్ ఎంత ఖచ్చితమైనది?", "a": "ఈ క్యాలిక్యులేటర్ అధికారిక సూత్రాలను ఉపయోగిస్తుంది మరియు అత్యంత ఖచ్చితమైన అంచనాను అందిస్తుంది. అయితే, చివరి, కట్టుబడి ఉండే సంఖ్య కోసం, ఎల్లప్పుడూ మీ అధికారిక పెన్షన్ మంజూరు అధికారాన్ని చూడండి." },
-        { "q": "ఫండ్ నియమాలు లేదా పెన్షన్ నియమాలు ఏ తేదీ ఆధారంగా ఉన్నాయి?", "a": "లెక్కలు మా పద్ధతి విభాగంలో పేర్కొన్న 'చివరిగా నవీకరించబడిన' తేదీ నాటికి అందుబాటులో ఉన్న తాజా నియమాలు మరియు సర్క్యులర్‌ల ఆధారంగా ఉంటాయి." },
-        { "q": "ఈ క్యాలిక్యులేటర్ బహుళ లబ్ధిదారుల కోసం కుటుంబ పెన్షన్‌ను నిర్వహించగలదా?", "a": "ఈ క్యాలిక్యులేటర్ ప్రధానంగా ఒకే భార్య/భర్త లబ్ధిదారు కోసం పెన్షన్‌ను అంచనా వేస్తుంది. ఇతర ఆధారపడిన వారి కోసం నియమాలు సంక్లిష్టంగా ఉండవచ్చు మరియు అధికారిక మూలాలతో ధృవీకరించబడాలి." }
+        { "q": "What is the UPS pension formula?", "a": "The monthly UPS pension = (Pensionable Salary × Pension Factor × Qualifying Service) / [Scheme Divisor]. Pensionable Salary is the average basic pay of the last 12 months." },
+        { "q": "How do I calculate my monthly UPS pension?", "a": "Use our calculator by entering your basic pay, DA percentage, and years of service. It applies the official formula to give you an accurate estimate." },
+        { "q": "What inputs do I need for the UPS Pension Calculator?", "a": "You'll need your last drawn monthly basic pay, the current DA percentage, and your total qualifying years of service." },
+        { "q": "How is the pensionable salary calculated under UPS?", "a": "It is typically the average of your basic pay over the last 10 or 12 months of your service, depending on the specific rules applicable to your department." },
+        { "q": "How much family pension will my spouse get under UPS?", "a": "The family pension is usually a percentage of the basic pension, often around 60%, but this can vary. Our calculator provides an estimate based on standard rules." },
+        { "q": "What is the minimum pension under UPS in 2025?", "a": "The minimum pension amount is determined by government regulations and can change. Please refer to official circulars for the most current figures." },
+        { "q": "Can I use this calculator for partial years of service?", "a": "Yes, our calculator can handle partial years and months of service for a more accurate calculation." },
+        { "q": "How often should I update assumptions (inflation, DA) when using this calculator?", "a": "It's good practice to re-calculate your estimated pension whenever there is a significant change in the DA percentage or your pay scale." },
+        { "q": "Is UPS better than NPS for government employees?", "a": "UPS offers a defined, guaranteed pension, which is lower-risk. NPS is market-linked and offers potentially higher returns but with market risk. The choice depends on your risk appetite." },
+        { "q": "How is the lump sum calculated under UPS?", "a": "The lump sum is the 'commuted' part of your pension, calculated using a specific commutation factor based on your age at retirement." },
+        { "q": "Are UPS pensions taxable?", "a": "Yes, the monthly pension received is taxable under the head 'Income from Salary'. The commuted (lump sum) portion may be partially or fully exempt." },
+        { "q": "Can I download the UPS pension calculation as an Excel file?", "a": "Yes, our tool provides an option to download your detailed pension calculation as an Excel file for your records." },
+        { "q": "How accurate is this UPS Pension Calculator?", "a": "This calculator uses official formulas and provides a highly accurate estimate. However, for a final, binding figure, always refer to your official pension sanctioning authority." },
+        { "q": "What date are the fund rules or pension rules based on?", "a": "The calculations are based on the latest rules and circulars available as of the 'Last Updated' date mentioned in our Methodology section." },
+        { "q": "Can this calculator handle family pension for multiple beneficiaries?", "a": "This calculator primarily estimates the pension for a single spouse beneficiary. Rules for other dependents can be complex and should be verified with official sources." }
     ],
     "ctas": {
-        "h2": "11. సహాయం పొందండి — ఒక సంప్రదింపును బుక్ చేసుకోండి / ఎక్సెల్ డౌన్‌లోడ్ చేయండి / ఫలితాలను షేర్ చేయండి",
-        "body": "ఒక వ్యక్తిగతీకరించిన పెన్షన్ ప్రణాళికను పొందండి లేదా మీ లెక్కింపును ఒక ఎక్సెల్ టెంప్లేట్‌గా డౌన్‌లోడ్ చేయండి. మీ ఫలితాలను కుటుంబంతో లేదా ఒక ఆర్థిక సలహాదారుతో పంచుకోండి."
+        "h2": "11. Get Help — Book a consultation / Download Excel / Share results",
+        "body": "Get a personalised pension plan or download your calculation as an Excel template. Share your results with family or a financial advisor."
     },
     "disclaimer": {
-        "title": "12. సూచనలు & చట్టపరమైన నిరాకరణ",
-        "body": "ఇది ఒక ఉదాహరణ సాధనం మరియు ఆర్థిక సలహా కాదు. దయచేసి అధికారిక ప్రభుత్వ సర్క్యులర్‌లను మరియు కట్టుబడి ఉండే లెక్కల కోసం ఒక అర్హతగల ఆర్థిక సలహాదారుని సంప్రదించండి."
+        "title": "12. References & Legal Disclaimer",
+        "body": "This is an illustrative tool and not financial advice. Please consult official government circulars and a qualified financial advisor for binding calculations."
     }
   },
   "scheme_selector": {
@@ -1297,7 +1298,3 @@
     "result_reasoning": "Why we recommend this:"
   }
 }
-
-    
-
-  
