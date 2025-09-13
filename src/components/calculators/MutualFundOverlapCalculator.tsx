@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Download, Copy, PlusCircle, Trash2, BarChart2, Check, ChevronsUpDown, AlertTriangle, Info, Loader2 } from 'lucide-react';
-import type { Dictionary } from '@/types';
+import type { Dictionary } from '@/lib/types';
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList, CommandDialog } from '@/components/ui/command';
 import { cn } from '@/lib/utils';
 import { type OverlapOutput, calculateAllOverlaps, type RawFund, type PairwiseResult } from '@/lib/overlap-calculator';
