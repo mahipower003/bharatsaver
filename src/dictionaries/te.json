@@ -99,6 +99,12 @@
     "review_text": "<strong>భారత్ సేవర్ సంపాదకీయ బృందం</strong> ద్వారా వాస్తవ ఖచ్చితత్వం కోసం సమీక్షించబడింది.",
     "author_page_link": "రచయిత ప్రొఫైల్"
   },
+    "author_page": {
+    "meta_title": "మహేష్ చౌబే, CFP గురించి - భారత్ సేవర్ వద్ద ప్రధాన రచయిత",
+    "meta_description": "మహేష్ చౌబే, ఒక సర్టిఫైడ్ ఫైనాన్షియల్ ప్లానర్ మరియు భారత్ సేవర్ వద్ద సాధనాలు మరియు గైడ్ల వెనుక ఉన్న ప్రధాన ఆర్థిక నిపుణుడు గురించి మరింత తెలుసుకోండి.",
+    "h2": "మహేష్ చౌబే ద్వారా క్యాలిక్యులేటర్లు & కథనాలు",
+    "view_calculator": "క్యాలిక్యులేటర్‌ను వీక్షించండి"
+  },
   "contact_page": {
     "meta_title": "మమ్మల్ని సంప్రదించండి | భారత్ సేవర్",
     "meta_description": "ప్రశ్నలు, ఫీడ్‌బ్యాక్ లేదా విచారణల కోసం భారత్ సేవర్ బృందాన్ని సంప్రదించండి. మీ ఆర్థిక ప్రశ్నలకు సమాధానం ఇవ్వడానికి మేము ఇక్కడ ఉన్నాము.",
@@ -1164,7 +1170,7 @@
     },
     "methodology": {
       "h2": "డేటా & పద్ధతి",
-      "body": "<p><strong>డేటా మూలం:</strong> మా హోల్డింగ్స్ డేటా పబ్లిక్‌గా అందుబాటులో ఉన్న పథక పత్రాల నుండి తీసుకోబడింది మరియు కాలానుగుణంగా నవీకరించబడుతుంది. మేము ఖచ్చితత్వం కోసం ప్రయత్నిస్తున్నప్పుడు, మేము దానిని హామీ ఇవ్వలేము. ఎల్లప్పుడూ అధికారిక AMC ఫ్యాక్ట్‌షీట్‌లతో ధృవీకరించండి. <strong>చివరిగా నవీకరించబడింది: ఆగస్టు 2025।</strong></p><p><strong>మ్యాచింగ్ తర్కం:</strong> హోల్డింగ్స్ మొదట వాటి స్టాక్ టిక్కర్ ద్వారా (ఉదా. 'RELIANCE') సరిపోల్చబడతాయి. టిక్కర్ అందుబాటులో లేకపోతే, మేము ఒక సాధారణీకరించిన కంపెనీ పేరును (ఉదా. 'reliance industries' 'Ltd', 'Inc', మొదలైనవి తీసివేసిన తర్వాత) ఉపయోగిస్తాము. 'క్యాష్', 'ట్రైపార్టీ రెపో', లేదా 'నెట్ రిసీవబుల్స్' వంటి నాన్-ఈక్విటీ హోల్డింగ్‌లు సాధారణ పదాల కోసం ఒక రెజెక్స్ మ్యాచ్ ఆధారంగా లెక్కింపు నుండి మినహాయించబడతాయి.</p><p><strong>పని చేసిన ఉదాహరణ (భారిత ఓవర్‌ల్యాప్):</strong></p><p>భారిత ఓవర్‌ల్యాప్ = అన్ని సాధారణ స్టాక్‌ల కోసం Σ min(ఫండ్ Aలో బరువు, ఫండ్ Bలో బరువు).</p><div class='overflow-x-auto'><table class='w-full text-sm my-4'><thead><tr class='border-b'><th class='text-left p-2'>స్టాక్</th><th class='text-right p-2'>ఫండ్ A (w%)</th><th class='text-right p-2'>ఫండ్ B (w%)</th><th class='text-right p-2'>కనిష్ట బరువు</th></tr></thead><tbody><tr class='border-b'><td class='p-2'>ఐసిఐసిఐ బ్యాంక్</td><td class='text-right p-2'>5.21</td><td class='text-right p-2'>6.03</td><td class='text-right p-2'>5.21</td></tr><tr class='border-b'><td class='p-2'>ఇన్ఫోసిస్</td><td class='text-right p-2'>4.67</td><td class='text-right p-2'>5.06</td><td class='text-right p-2'>4.67</td></tr><tr class='border-b'><td class='p-2'>యాక్సిస్ బ్యాంక్</td><td class='text-right p-2'>2.34</td><td class='text-right p-2'>3.45</td><td class='text-right p-2'>2.34</td></tr><tr class='border-b'><td class='p-2'>భారతీ ఎయిర్‌టెల్</td><td class='text-right p-2'>3.12</td><td class='text-right p-2'>4.50</td><td class='text-right p-2'>3.12</td></tr><tr class='border-b'><td class='p-2'>స్టేట్ బ్యాంక్ ఆఫ్ ఇండియా</td><td class='text-right p-2'>2.98</td><td class='text-right p-2'>3.80</td><td class='text-right p-2'>2.98</td></tr><tr><td colspan='3' class='text-right font-bold p-2'>...మరియు అన్ని 35 సాధారణ స్టాక్‌ల కోసం...</td><td class='text-right font-bold p-2'></td></tr><tr class='border-t'><td colspan='3' class='text-right font-bold p-2'>మొత్తం భారిత ఓవర్‌ల్యాప్</td><td class='text-right font-bold p-2'>27.02%</td></tr></tbody></table></div>"
+      "body": "<p><strong>డేటా మూలం:</strong> మా హోల్డింగ్స్ డేటా పబ్లిక్‌గా అందుబాటులో ఉన్న పథక పత్రాల నుండి తీసుకోబడింది మరియు కాలానుగుణంగా నవీకరించబడుతుంది. మేము ఖచ్చితత్వం కోసం ప్రయత్నిస్తున్నప్పుడు, మేము దానిని హామీ ఇవ్వలేము. ఎల్లప్పుడూ అధికారిక ఏఎంసి ఫ్యాక్ట్‌షీట్‌లతో ధృవీకరించండి. <strong>చివరిగా నవీకరించబడింది: ఆగస్టు 2025।</strong></p><p><strong>మ్యాచింగ్ తర్కం:</strong> హోల్డింగ్స్ మొదట వాటి స్టాక్ టిక్కర్ ద్వారా (ఉదా. 'RELIANCE') సరిపోల్చబడతాయి. టిక్కర్ అందుబాటులో లేకపోతే, మేము ఒక సాధారణీకరించిన కంపెనీ పేరును (ఉదా. 'reliance industries' 'Ltd', 'Inc', మొదలైనవి తీసివేసిన తర్వాత) ఉపయోగిస్తాము. 'క్యాష్', 'ట్రైపార్టీ రెపో', లేదా 'నెట్ రిసీవబుల్స్' వంటి నాన్-ఈక్విటీ హోల్డింగ్‌లు సాధారణ పదాల కోసం ఒక రెజెక్స్ మ్యాచ్ ఆధారంగా లెక్కింపు నుండి మినహాయించబడతాయి.</p><p><strong>పని చేసిన ఉదాహరణ (భారిత ఓవర్‌ల్యాప్):</strong></p><p>భారిత ఓవర్‌ల్యాప్ = అన్ని సాధారణ స్టాక్‌ల కోసం Σ min(ఫండ్ Aలో బరువు, ఫండ్ Bలో బరువు).</p><div class='overflow-x-auto'><table class='w-full text-sm my-4'><thead><tr class='border-b'><th class='text-left p-2'>స్టాక్</th><th class='text-right p-2'>ఫండ్ A (w%)</th><th class='text-right p-2'>ఫండ్ B (w%)</th><th class='text-right p-2'>కనిష్ట బరువు</th></tr></thead><tbody><tr class='border-b'><td class='p-2'>ఐసిఐసిఐ బ్యాంక్</td><td class='text-right p-2'>5.21</td><td class='text-right p-2'>6.03</td><td class='text-right p-2'>5.21</td></tr><tr class='border-b'><td class='p-2'>ఇన్ఫోసిస్</td><td class='text-right p-2'>4.67</td><td class='text-right p-2'>5.06</td><td class='text-right p-2'>4.67</td></tr><tr class='border-b'><td class='p-2'>యాక్సిస్ బ్యాంక్</td><td class='text-right p-2'>2.34</td><td class='text-right p-2'>3.45</td><td class='text-right p-2'>2.34</td></tr><tr class='border-b'><td class='p-2'>భారతీ ఎయిర్‌టెల్</td><td class='text-right p-2'>3.12</td><td class='text-right p-2'>4.50</td><td class='text-right p-2'>3.12</td></tr><tr class='border-b'><td class='p-2'>స్టేట్ బ్యాంక్ ఆఫ్ ఇండియా</td><td class='text-right p-2'>2.98</td><td class='text-right p-2'>3.80</td><td class='text-right p-2'>2.98</td></tr><tr><td colspan='3' class='text-right font-bold p-2'>...మరియు అన్ని 35 సాధారణ స్టాక్‌ల కోసం...</td><td class='text-right font-bold p-2'></td></tr><tr class='border-t'><td colspan='3' class='text-right font-bold p-2'>మొత్తం భారిత ఓవర్‌ల్యాప్</td><td class='text-right font-bold p-2'>27.02%</td></tr></tbody></table></div>"
     },
     "results": {
         "weighted_overlap_title": "భారిత ఓవర్‌ల్యాప్",
@@ -1173,7 +1179,7 @@
         "min_weight_header": "కనిష్ట బరువు"
     }
   },
-  "ups_pension_calculator": {
+   "ups_pension_calculator": {
     "meta_title": "UPS పెన్షన్ క్యాలిక్యులేటర్ | భారత్ సేవర్",
     "meta_description": "మా సులభంగా ఉపయోగించగల క్యాలిక్యులేటర్‌తో యూనివర్సల్ పెన్షన్ స్కీమ్ (UPS) కింద మీ సంభావ్య పెన్షన్ మొత్తాన్ని అంచనా వేయండి.",
     "h1": "UPS పెన్షన్ క్యాలిక్యులేటర్"
