@@ -6,9 +6,10 @@ import type { Metadata } from "next";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { AuthorCard } from "@/components/layout/AuthorCard";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { BarChart2, HelpCircle, FileText, CheckCircle, AlertTriangle, Table as TableIcon } from "lucide-react";
+import { CheckCircle, GitCompareArrows, HelpCircle, FileText, AlertTriangle, Table as TableIcon, BarChart2 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import Image from "next/image";
 
 
 export async function generateStaticParams() {
@@ -73,94 +74,106 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 
 export default async function MutualFundOverlapCalculatorPage({ params }: { params: { lang: Locale }}) {
   const dictionary = await getDictionary(params.lang, ['mutual_fund_overlap_calculator', 'author_card']);
-  const exampleData = dictionary.mutual_fund_overlap_calculator.live_example;
+  const dict = dictionary.mutual_fund_overlap_calculator;
+  const liveExample = dict.live_example;
   
   return (
     <div className="py-12">
       <div className="mx-auto max-w-5xl">
          <div className="text-center mb-8">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
-            {dictionary.mutual_fund_overlap_calculator.h1}
+            {dict.h1}
           </h1>
-          <p className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.mutual_fund_overlap_calculator.hero.subtitle }} />
+          <p className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: dict.hero.subtitle }} />
         </div>
         
         <Card className="shadow-lg">
           <CardHeader>
-            <CardTitle>{dictionary.mutual_fund_overlap_calculator.tool.title}</CardTitle>
-            <CardDescription>{dictionary.mutual_fund_overlap_calculator.tool.description}</CardDescription>
+            <CardTitle>{dict.tool.title}</CardTitle>
           </CardHeader>
           <CardContent>
-            <MutualFundOverlapCalculator dictionary={dictionary.mutual_fund_overlap_calculator} />
+            <MutualFundOverlapCalculator dictionary={dict} />
           </CardContent>
         </Card>
         
         <div className="space-y-8 mt-12">
             <Card>
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-3"><HelpCircle className="h-6 w-6 text-primary" />{dictionary.mutual_fund_overlap_calculator.what_is_overlap.h2}</CardTitle>
+                    <CardTitle className="flex items-center gap-3"><HelpCircle className="h-6 w-6 text-primary" />{dict.what_is_overlap.h2}</CardTitle>
                 </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.mutual_fund_overlap_calculator.what_is_overlap.body }} />
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.what_is_overlap.body }} />
             </Card>
             
             <Card>
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-3"><FileText className="h-6 w-6 text-primary" />{dictionary.mutual_fund_overlap_calculator.how_it_works.h2}</CardTitle>
+                    <CardTitle className="flex items-center gap-3"><FileText className="h-6 w-6 text-primary" />{dict.how_it_works.h2}</CardTitle>
                 </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.mutual_fund_overlap_calculator.how_it_works.body }} />
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.how_it_works.body }} />
+            </Card>
+
+            {liveExample && <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3"><BarChart2 className="h-6 w-6 text-primary" />{liveExample.h2}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="mb-4 text-muted-foreground">{liveExample.intro}</p>
+                <Alert variant="default" className="text-center p-6 mb-6">
+                    <AlertTitle className="text-base font-semibold mb-1">{dict.results.weighted_overlap_title}</AlertTitle>
+                    <AlertDescription className="text-3xl font-bold text-orange-500">
+                        {liveExample.result_summary.split(' ')[0]} (Moderate)
+                    </AlertDescription>
+                </Alert>
+                <Card>
+                    <CardHeader>
+                        <CardTitle>{liveExample.top_stocks_title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <Table>
+                            <TableHeader>
+                                <TableRow>
+                                    <TableHead>{dict.results.stock_header}</TableHead>
+                                    <TableHead className="text-right">{dict.results.min_weight_header}</TableHead>
+                                </TableRow>
+                            </TableHeader>
+                            <TableBody>
+                                {liveExample.top_stocks.map((stock: any, idx: number) => (
+                                    <TableRow key={`${stock.name}-${idx}`}>
+                                        <TableCell className="font-medium">{stock.name}</TableCell>
+                                        <TableCell className="text-right font-bold">{stock.weight}</TableCell>
+                                    </TableRow>
+                                ))}
+                            </TableBody>
+                        </Table>
+                    </CardContent>
+                </Card>
+              </CardContent>
+            </Card>}
+
+            <Card>
+                <CardHeader>
+                    <CardTitle className="flex items-center gap-3"><GitCompareArrows className="h-6 w-6 text-primary" />{dict.interpreting_results.h2}</CardTitle>
+                </CardHeader>
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.interpreting_results.body }} />
             </Card>
 
             <Card>
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-3"><BarChart2 className="h-6 w-6 text-primary" />{exampleData.h2}</CardTitle>
+                    <CardTitle className="flex items-center gap-3"><CheckCircle className="h-6 w-6 text-primary" />{dict.what_to_do.h2}</CardTitle>
                 </CardHeader>
-                 <CardContent>
-                    <p className="mb-4">{exampleData.intro}</p>
-                    <Alert>
-                        <AlertTitle className="font-bold">Example Result (pre-rendered)</AlertTitle>
-                        <AlertDescription className="mt-2">
-                           <p dangerouslySetInnerHTML={{ __html: exampleData.result_summary }} />
-                           <h4 className="font-semibold mt-4 mb-2">{exampleData.top_stocks_title}</h4>
-                           <Table>
-                             <TableHeader>
-                               <TableRow>
-                                 <TableHead>Stock</TableHead>
-                                 <TableHead className="text-right">Weight</TableHead>
-                               </TableRow>
-                             </TableHeader>
-                             <TableBody>
-                               {exampleData.top_stocks.map((stock: { name: string; weight: string; }, index: number) => (
-                                 <TableRow key={index}>
-                                   <TableCell>{stock.name}</TableCell>
-                                   <TableCell className="text-right">{stock.weight}</TableCell>
-                                 </TableRow>
-                               ))}
-                             </TableBody>
-                           </Table>
-                        </AlertDescription>
-                    </Alert>
+                <CardContent>
+                  <div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.what_to_do.body }} />
+                  <div className="my-6">
+                    <Image src="/images/decision-flowchart-placeholder.png" alt="Decision flowchart for mutual fund overlap" width={800} height={500} className="rounded-lg border shadow-md mx-auto" />
+                  </div>
+                  <div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.what_to_do.tax_considerations }} />
                 </CardContent>
-            </Card>
-
-            <Card>
-                <CardHeader>
-                    <CardTitle className="flex items-center gap-3"><CheckCircle className="h-6 w-6 text-primary" />{dictionary.mutual_fund_overlap_calculator.interpreting_results.h2}</CardTitle>
-                </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.mutual_fund_overlap_calculator.interpreting_results.body }} />
-            </Card>
-
-            <Card>
-                <CardHeader>
-                    <CardTitle className="flex items-center gap-3"><AlertTriangle className="h-6 w-6 text-primary" />{dictionary.mutual_fund_overlap_calculator.what_to_do.h2}</CardTitle>
-                </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.mutual_fund_overlap_calculator.what_to_do.body }} />
             </Card>
         </div>
 
         <div className="mt-12">
-            <h2 className="text-2xl font-bold text-center mb-6">{dictionary.mutual_fund_overlap_calculator.faq.h2}</h2>
+            <h2 className="text-2xl font-bold text-center mb-6">{dict.faq.h2}</h2>
             <Accordion type="single" collapsible className="w-full">
-            {dictionary.mutual_fund_overlap_calculator.faq.faqs.map((faq: { q: string, a: string }, index: number) => (
+            {dict.faq.faqs.map((faq: { q: string, a: string }, index: number) => (
                 <AccordionItem value={`item-${index}`} key={index}>
                 <AccordionTrigger>{faq.q}</AccordionTrigger>
                 <AccordionContent>
@@ -177,10 +190,10 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
             <CardHeader>
                 <CardTitle className="text-lg flex items-center gap-2">
                     <HelpCircle className="h-5 w-5"/>
-                    <h2 className="text-2xl font-bold">{dictionary.mutual_fund_overlap_calculator.methodology.h2}</h2>
+                    <h2 className="text-2xl font-bold">{dict.methodology.h2}</h2>
                 </CardTitle>
             </CardHeader>
-            <CardContent className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dictionary.mutual_fund_overlap_calculator.methodology.body }}/>
+            <CardContent className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dict.methodology.body }}/>
         </Card>
       </div>
     </div>

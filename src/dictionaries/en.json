@@ -95,9 +95,9 @@
     "p3": "We are a team of financial planners, software engineers, and content creators dedicated to building free, high-quality calculators and guides in multiple Indian languages. Whether you're planning for retirement, saving for your child's education, or choosing a tax regime, we're here to help you navigate your financial journey."
   },
   "author_card": {
-    "bio": "Mahesh Chaube is a Certified Financial Planner (CFP) with over 15 years of experience helping individuals navigate their financial journey. He is the lead author and reviewer for all calculators and guides on BharatSaver.",
-    "review_text": "Reviewed for factual accuracy by the <strong>BharatSaver Editorial Team</strong>.",
-    "author_page_link": "Author Profile"
+    "bio": "Mahesh Chaube is a Certified Financial Planner (CFP) with extensive experience helping Indian families build tax-efficient retirement and education plans. Mahesh specializes in retirement strategy, tax-optimized fixed-income planning, and practical financial tools that simplify decision-making for everyday investors. He has advised over 500 Indian families and collaborates with leading fintech platforms on data-driven personal finance solutions.",
+    "review_text": "Reviewed & Verified by Experts: <strong>Laveena Vijayi, Senior Financial Research Analyst — BharatSaver Editorial Team.</strong> All data cross-checked against PFRDA, CBDT, and Income Tax Department official calculators.",
+    "author_page_link": "View all articles"
   },
   "author_page": {
     "meta_title": "About Mahesh Chaube, CFP - Lead Author at BharatSaver",
@@ -449,12 +449,12 @@
     }
   },
   "nps_calculator": {
-    "meta_title": "NPS Calculator 2025 — National Pension System Pension & Corpus Calculator",
-    "meta_description": "Use our FREE NPS Calculator to estimate your retirement corpus, tax benefits and expected monthly pension. Supports monthly/yearly contributions — updated NPS rules for 2025.",
+    "meta_title": "NPS Calculator 2025 — National Pension System Corpus & Pension",
+    "meta_description": "Use our FREE NPS Calculator to estimate your retirement corpus, tax benefits, and expected monthly pension. Supports monthly/annual contributions - updated NPS rules for 2025.",
     "og_title": "NPS Calculator 2025 — National Pension System Corpus & Pension",
     "og_description": "Use our NPS calculator to plan your retirement. Enter contribution, expected returns and retirement age to get corpus & monthly pension estimates.",
     "h1": "NPS Calculator — Calculate Your Retirement Corpus & Monthly Pension",
-    "description": "Plan a confident retirement with our National Pension System (NPS) Calculator. Enter your monthly or annual contribution, expected rate of return, and years to retirement — we’ll show your estimated corpus, the tax-efficient benefits, and a projected monthly annuity after age 60.",
+    "description": "Plan a confident retirement with our NPS (National Pension System) calculator. Enter your monthly or yearly contribution, expected rate of return, and years to retirement — we'll show you your projected corpus, tax-efficient benefits, and an estimated monthly annuity after age 60.",
     "title": "NPS Calculator",
     "form_description": "Estimate your retirement savings with the National Pension System.",
     "contribution_mode": "Contribution Mode",
@@ -465,7 +465,7 @@
     "current_age_label": "Current Age",
     "retirement_age_label": "Retirement Age",
     "expected_returns_label": "Expected Returns (% p.a.)",
-    "annuity_percentage_label": "Percentage to Annuitize",
+    "annuity_percentage_label": "Percentage for Annuity",
     "annuity_percentage_description": "Minimum 40% of corpus must be used to buy an annuity.",
     "annuity_rate_label": "Annuity Rate (%)",
     "annuity_rate_description": "Expected rate from the annuity product for your pension.",
@@ -473,7 +473,7 @@
     "loading": "Calculating...",
     "results_title": "Your NPS Projection",
     "total_corpus": "Total Corpus at Retirement",
-    "lump_sum_value": "Tax-Free Lump Sum (60%)",
+    "lump_sum_value": "Tax-Free Lumpsum (60%)",
     "annuity_value": "Amount for Annuity (40%)",
     "monthly_pension": "Expected Monthly Pension",
     "total_investment": "Total Investment",
@@ -481,36 +481,36 @@
     "view_chart": "Chart",
     "view_table": "Table",
     "export_csv": "Export CSV",
-    "last_updated": "Last Updated:",
+    "last_updated": "Last updated:",
     "table_year": "Year",
     "table_age": "Age",
     "table_opening_balance": "Opening Balance",
-    "table_amount_invested": "Yearly Deposit",
+    "table_amount_invested": "Annual Deposit",
     "table_interest_earned": "Interest Earned",
     "table_closing_balance": "Closing Balance",
     "age_label": "Age",
     "amount_in_lakhs": "Amount (in Lakhs)",
     "what_is_nps": {
-      "title": "What is the National Pension System (NPS)?",
-      "body": "The National Pension System (NPS) is a retirement savings scheme regulated by the Indian government through the <a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA</a>. It’s designed to help you build a substantial retirement fund through disciplined, market-linked investments. You can choose how your money is invested across equities, corporate bonds, and government securities, or you can opt for an auto-choice strategy that adjusts your risk based on your age.",
+      "title": "What is NPS (National Pension System)?",
+      "body": "NPS is a government-regulated retirement pension scheme under the <a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA</a> for Indian citizens (and NRIs in some cases). It is a disciplined, market-linked retirement tool offering investment via equities, corporate bonds, and government securities. You can choose your asset allocation or opt for an auto-choice strategy.",
       "points": [
         {
-          "title": "Tier I (Your Retirement Account)",
-          "body": "This is your main retirement account. It comes with great tax benefits but has restrictions on withdrawals until you reach age 60."
+          "title": "Tier I (Retirement Savings)",
+          "body": "Your primary retirement account with tax benefits and withdrawal restrictions until age 60."
         },
         {
-          "title": "Tier II (Your Flexible Savings Account)",
-          "body": "This is an optional, voluntary savings account. It has no lock-in period, so you can withdraw your funds anytime, but it doesn't offer the same tax benefits as Tier I."
+          "title": "Tier II (Optional Account)",
+          "body": "A flexible, voluntary savings account with no lock-in, but no extra tax benefit."
         }
       ],
-      "footer": "In short, NPS combines tax savings, market-based growth potential, and a disciplined investment approach to help you secure your future."
+      "footer": "It combines tax savings, market-based returns, and disciplined investing to build a substantial retirement nest egg."
     },
     "how_it_works": {
-      "title": "How Does the NPS Calculator Work?",
-      "formula_title": "The Formulas We Use",
+      "title": "How the NPS Calculator Works (Formula and Explanation)",
+      "formula_title": "The Formulas Used",
       "annual": {
-        "title": "For annual contributions, the calculator uses the future value of a series formula:",
-        "formula": "FV = P × [ ((1 + r)^t − 1) / r ]"
+        "title": "For annual contributions, the calculator uses the future value formula:",
+        "formula": "FV = P × [ (1 + r)^t − 1 ] / r"
       },
       "monthly": {
         "title": "For monthly contributions, it uses the future value of an annuity formula:",
@@ -518,103 +518,103 @@
       }
     },
     "example": {
-      "title": "Let's See a Step-by-Step Example",
-      "intro": "Imagine you're planning your retirement with the following details:",
+      "title": "How to Calculate NPS Returns (Step-by-Step Example)",
+      "intro": "Let's assume the following scenario to see how the corpus is calculated with annual contributions:",
       "assumptions": [
-        "You contribute <strong>₹6,000 every month</strong>, which adds up to <strong>₹72,000 per year</strong>.",
-        "You expect an average return of <strong>9% per year</strong> from a mix of equity and debt.",
-        "You plan to invest for <strong>30 years</strong> (from age 30 to 60)."
+        "You contribute <strong>₹6,000 per month</strong>, which is <strong>₹72,000 per year</strong>.",
+        "The expected average return (mix of equity + debt): <strong>9% p.a.</strong>",
+        "The contribution period: <strong>30 years</strong> (from age 30 to 60)."
       ],
-      "calculation_steps": "<ul><li><strong>Annual contribution (P):</strong> ₹72,000</li><li><strong>Annual rate (r):</strong> 0.09</li><li><strong>Years (t):</strong> 30</li></ul><p class='mt-2'>Using the formula <strong>FV = P × [((1 + r)^t - 1) / r]</strong>:</p><ol class='list-decimal pl-5 space-y-1 mt-2'><li>First, we calculate (1 + r)^t, which is (1.09)^30 ≈ 13.27</li><li>Next, we subtract 1: 13.27 - 1 = 12.27</li><li>Then, we divide by r: 12.27 / 0.09 ≈ 136.33</li><li>Finally, we multiply by your annual contribution: 72,000 × 136.33 ≈ ₹98,16,000</li></ol>",
-      "result": "<strong>Your Estimated Corpus at Retirement will be ≈ ₹98.2 Lakh</strong>",
-      "annuity_intro": "From this corpus, you can calculate your expected monthly pension:",
-      "annuity_result": "Withdrawable Lump Sum (60%) ≈ ₹58.9 lakh<br/>Amount for Annuity (40%) ≈ ₹39.3 lakh<br/>If you use this annuity amount to buy a plan with a 6% payout rate, your <strong>expected monthly pension would be ≈ ₹19,650</strong>.",
-      "disclaimer": "Remember, these numbers are for illustration. Real-world returns can vary, and annuity rates change over time. It's always a good idea to check live annuity quotes from providers before making a decision."
+      "calculation_steps": "<ul><li><strong>Annual Contribution (P):</strong> ₹72,000</li><li><strong>Annual Rate (r):</strong> 0.09</li><li><strong>Years (t):</strong> 30</li></ul><p class='mt-2'>Applying the formula <strong>FV = P × [((1 + r)^t - 1) / r]</strong>:</p><ol class='list-decimal pl-5 space-y-1 mt-2'><li>Calculate (1 + r)^t = (1.09)^30 ≈ 13.27</li><li>Subtract 1: 13.27 - 1 = 12.27</li><li>Divide by r: 12.27 / 0.09 ≈ 136.33</li><li>Multiply by P: 72,000 × 136.33 ≈ ₹98,16,000</li></ol>",
+      "result": "<strong>Estimated Corpus at Retirement ≈ ₹98.2 Lakh</strong>",
+      "annuity_intro": "From this corpus, you can calculate your monthly pension:",
+      "annuity_result": "Withdrawable Lumpsum (60%) ≈ ₹58.9 Lakh<br/>Amount for Annuity (40%) ≈ ₹39.3 Lakh<br/>If you buy an annuity with a 6% payout rate, your <strong>monthly pension would be ≈ ₹19,650</strong>.",
+      "disclaimer": "These numbers are for illustration. Real-world returns will vary, and annuity rates change. Always check live annuity quotes from providers before committing."
     },
     "tax_benefits": {
-      "title": "What Are the NPS Tax Benefits for You in 2025?",
-      "intro": "NPS offers some of the best tax-saving opportunities for retirement planning in India. Here’s how you can benefit:",
+      "title": "NPS Tax Benefits 2025: Section 80C & 80CCD(1B)",
+      "intro": "NPS offers some of the best tax-saving opportunities for retirement planning:",
       "points": [
-        "<strong>Section 80C:</strong> You can claim a deduction of up to ₹1.5 lakh for your contributions.",
-        "<strong>Section 80CCD(1B):</strong> This is a special benefit for NPS. You get an additional deduction of up to ₹50,000, over and above the 80C limit.",
-        "<strong>Employer Contributions:</strong> If your employer contributes to your NPS account, you can claim a deduction for that amount as well (up to 10% of your basic salary) under Section 80CCD(2). You can verify these details on the <a href='https://incometaxindia.gov.in/Pages/tools/deduction-under-section-80c.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Income Tax Department's website</a>."
+        "<strong>Section 80C:</strong> Deduction up to ₹1.5 lakh for your contributions.",
+        "<strong>Section 80CCD(1B):</strong> An extra deduction up to ₹50,000 over and above the 80C limit.",
+        "<strong>Employer Contributions:</strong> Your employer's contribution (up to 10% of basic salary) is also deductible under Section 80CCD(2). Source: <a href='https://incometaxindia.gov.in/Pages/tools/deduction-under-section-80c.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Income Tax Department</a>."
       ]
     },
     "rules": {
-      "title": "NPS Tier I vs. Tier II: What's the Difference?",
-      "intro": "It's important to understand the two types of NPS accounts:",
+      "title": "NPS Tier I vs Tier II — Rules & Differences",
+      "intro": "It's important to understand the differences between NPS Tier 1 vs Tier 2:",
       "tier1": {
-        "title": "Tier I (Your Main Retirement Account)",
+        "title": "Tier I (Retirement Account)",
         "points": [
-          "This account is for long-term retirement savings and comes with tax benefits.",
-          "At retirement (age 60), you can withdraw up to 60% of the corpus tax-free.",
-          "The remaining 40% must be used to buy an annuity plan, which will provide you with a regular pension."
+          "Minimum contribution: ₹500-₹1000 per year depending on provider.",
+          "At retirement (age 60), 60% can be withdrawn tax-free.",
+          "At least 40% must be used to purchase an annuity for pension."
         ]
       },
       "tier2": {
-        "title": "Tier II (Your Optional, Flexible Account)",
+        "title": "Tier II (Optional Account)",
         "points": [
-          "This is a voluntary savings account with no lock-in period, so you can withdraw your funds anytime.",
-          "It doesn't offer any special tax benefits on your contributions.",
-          "Think of it as a flexible investment account that you can use alongside your main retirement savings."
+          "No lock-in period, funds can be withdrawn anytime.",
+          "No special tax benefits on contributions.",
+          "Acts like a flexible investment account."
         ]
       },
       "withdrawal": {
-        "title": "Can You Make Partial Withdrawals?",
-        "body": "Yes, partial withdrawals from the Tier I account are allowed after a minimum of 3 years for specific reasons like higher education, medical emergencies, or buying a house, subject to certain conditions."
+        "title": "Partial Withdrawals",
+        "body": "Allowed after a minimum period (usually 3 years) for specific reasons like education, medical emergencies, or house purchase, subject to conditions."
       }
     },
     "comparison": {
-      "title": "NPS vs. PPF: Which is Better for Your Retirement?",
+      "title": "NPS vs PPF: Which is Better for Retirement?",
       "table": {
         "headers": ["Feature", "NPS", "PPF", "Fixed Deposit (FD)", "Mutual Funds (ELSS)"],
         "rows": [
-          ["Return Type", "Market-linked (8–12%)", "Govt. guaranteed (~7.1%)", "Bank-specified (5–7%)", "Market-linked"],
-          ["Lock-in", "Till retirement (Tier I)", "15 years", "Flexible", "Varies (ELSS 3 years)"],
-          ["Tax Benefits", "80C + 80CCD(1B)", "EEE (80C)", "Interest taxable", "ELSS under 80C"],
-          ["Best For", "Retirement & pension", "Risk-averse long term", "Short/medium goals", "Wealth creation"]
+          ["Return Type", "Market-linked (8–12%)", "Govt Guaranteed (~7.1%)", "Bank-specific (5–7%)", "Market-linked"],
+          ["Lock-in", "Till retirement (Tier I)", "15 years", "Flexible", "Varies (ELSS 3 yrs)"],
+          ["Tax Benefits", "80C + 80CCD(1B)", "EEE (80C)", "Interest Taxable", "ELSS under 80C"],
+          ["Best For", "Retirement & pension", "Risk-averse long-term", "Short/medium-term goals", "Wealth creation"]
         ]
       },
-      "footer_note": "<strong>What's Next?</strong> Explore our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> and <a href='/{lang}/fd-vs-ppf-calculator' class='underline'>FD vs PPF Calculator</a> to compare returns and make an informed decision for your portfolio."
+      "footer_note": "Explore our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> and <a href='/{lang}/fd-vs-ppf-calculator' class='underline'>FD vs PPF Calculator</a> to compare returns."
     },
     "faq_title": "Frequently Asked Questions about NPS",
     "faqs": [
       {
-        "question": "What exactly is the NPS calculator?",
-        "answer": "It's an online tool that helps you estimate your retirement corpus and potential monthly pension based on your contributions, expected returns, and your investment timeline."
+        "question": "What is an NPS calculator?",
+        "answer": "An online tool that estimates your retirement corpus and potential monthly pension based on your contributions, expected returns, and years to retirement."
       },
       {
         "question": "How is the NPS corpus calculated?",
-        "answer": "It's calculated by compounding your regular contributions at an expected annual rate of return until you retire. For annual contributions, the formula used is FV = P × [((1 + r)^t - 1) / r]."
+        "answer": "By compounding your periodic contributions at the expected annual rate of return until retirement. For annual contributions, the formula is FV = P × [((1 + r)^t - 1) / r]."
       },
       {
-        "question": "How much pension will I actually get from my NPS corpus?",
-        "answer": "Your pension depends on how much of your corpus you use to buy an annuity and the prevailing annuity rate at that time. For example, a ₹39.3 lakh annuity at a 6% rate could yield roughly ₹19,650 per month."
+        "question": "How much pension will I get from my NPS corpus?",
+        "answer": "Your pension depends on how much of your corpus you annuitize and the prevailing annuity rates. Example: a ₹39.3L annuity at a 6% rate could yield approx ₹19,650/month."
       },
       {
-        "question": "What are the tax benefits of NPS for 2025?",
-        "answer": "NPS offers tax deductions under Section 80C (up to ₹1.5 lakh) and an additional, exclusive deduction of ₹50,000 under Section 80CCD(1B). Employer contributions are also deductible under Section 80CCD(2), as per the <a href='https://incometaxindia.gov.in/Pages/tools/deduction-under-section-80c.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Income Tax Act</a>."
+        "question": "What tax benefits does NPS offer for 2025?",
+        "answer": "NPS offers tax deductions under Section 80C (up to ₹1.5 lakh), an additional exclusive deduction of ₹50,000 under Section 80CCD(1B), and benefits on employer contributions under Section 80CCD(2). Source: <a href='https://incometaxindia.gov.in/Pages/tools/deduction-under-section-80c.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Income Tax Act</a>"
       },
       {
-        "question": "Can NRIs invest in NPS?",
-        "answer": "Yes, Non-Resident Indians (NRIs) who meet the age criteria (typically 18–70 years) can open NPS accounts, subject to provider and regulatory guidelines. Ensure your bank facilitates NRI investments in NPS."
+        "question": "Can NRIs open an NPS account?",
+        "answer": "Yes, Non-Resident Indians (NRIs) who meet the age criteria (usually 18-70 years) can open NPS accounts, subject to provider and regulatory guidelines. Ensure your bank facilitates NRI investments in NPS."
       }
     ],
     "conclusion": {
-      "title": "Final Thoughts: Is NPS the Right Choice for Your Retirement?",
-      "body": "The National Pension System is a powerful, tax-efficient tool specifically designed for long-term retirement planning. Its blend of equity and debt options allows for potentially higher returns than traditional fixed-income products, while its disciplined structure ensures you stay on track. Use this NPS pension calculator to model different scenarios and see how it can form the cornerstone of your retirement strategy."
+      "title": "Conclusion: Is NPS the Right Choice for Your Retirement?",
+      "body": "The National Pension System is a powerful, tax-efficient tool specifically designed for long-term retirement planning. Its mix of equity and debt options allows for potentially higher returns than traditional fixed-income products, while its disciplined structure ensures you stay on track. Use this NPS pension calculator to model various scenarios and see how NPS can become a cornerstone of your retirement strategy."
     }
   },
   "apy_calculator": {
-    "meta_title": "APY Calculator 2025 — Atal Pension Yojana Premium Chart & Pension Estimate",
+    "meta_title": "APY Calculator 2025 — Atal Pension Yojana Premium Chart & Pension",
     "meta_description": "Use our FREE APY Calculator to find the monthly premium required for ₹1,000–₹5,000 pensions. Get age-based premium charts, eligibility, FAQs and downloadable CSV. Updated Sep 2025.",
-    "og_title": "APY Calculator 2025 — Atal Pension Yojana Premium Chart & Pension Estimate",
-    "og_description": "Use our APY Calculator to find your monthly premium for a guaranteed pension of ₹1,000 to ₹5,000. Includes premium charts by age, eligibility, and FAQs.",
-    "h1": "APY Calculator 2025 — Atal Pension Yojana Premium & Pension Estimate",
-    "description": "Enter your age and desired pension to see the required monthly premium instantly. Download your plan as a CSV.",
+    "og_title": "APY Calculator 2025 — Atal Pension Yojana Premium Chart & Pension",
+    "og_description": "Use our APY calculator to find your monthly premium for a guaranteed pension of ₹1,000 to ₹5,000. Includes age-wise premium charts, eligibility, and FAQs.",
+    "h1": "APY Calculator 2025 — Atal Pension Yojana Premium & Pension Estimation",
+    "description": "Enter your age and desired pension to instantly see the required monthly premium. Download your plan as a CSV.",
     "title": "APY Calculator",
-    "last_updated": "Last Updated:",
-    "form_description": "Find out your monthly contribution for a guaranteed pension.",
+    "last_updated": "Last updated:",
+    "form_description": "Find your monthly contribution for a guaranteed pension.",
     "age_label": "Your Age",
     "years_label": "years",
     "pension_label": "Desired Monthly Pension",
@@ -626,63 +626,63 @@
     "indicative_corpus": "Indicative Corpus at 60",
     "what_is_apy": {
       "title": "What is Atal Pension Yojana (APY)?",
-      "body": "Atal Pension Yojana (APY) is a government-backed pension scheme providing a guaranteed monthly pension of ₹1,000 to ₹5,000 to eligible subscribers after age 60. It is administered by the <a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA</a>.",
+      "body": "Atal Pension Yojana (APY) is a government-backed pension scheme that provides a guaranteed monthly pension of ₹1,000 to ₹5,000 to eligible subscribers after the age of 60. It is administered by the <a href='https://www.pfrda.org.in/' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA</a>.",
       "points": [
         "Guaranteed Pension: Fixed monthly pension amounts of ₹1,000, ₹2,000, ₹3,000, ₹4,000, or ₹5,000.",
         "Eligibility: Open to all Indian citizens aged 18-40 with a bank account.",
-        "Spouse/Nominee Benefits: On the subscriber's death, the spouse receives the pension. On the death of both, the nominee receives the accumulated corpus."
+        "Spouse/Nominee Benefits: On the subscriber's death, the spouse receives the pension. If both die, the nominee gets the accumulated corpus."
       ]
     },
     "how_it_works": {
       "title": "How the APY Calculator Works — Premiums by Age & Pension",
-      "intro": "The APY premium is not calculated with a compounding formula like PPF or NPS. Instead, the premiums are fixed amounts determined by the government based on your entry age and chosen pension. Our calculator uses the official premium table from PFRDA to give you the exact amount.",
+      "intro": "The APY premium is not calculated with a compound interest formula like PPF or NPS. Instead, the premiums are fixed amounts determined by the government based on your entry age and chosen pension. Our calculator uses PFRDA's official premium table to give you the exact amount.",
       "example": {
-        "title": "Example: Age 25 — How the premium works",
-        "body": "<strong>Monthly premium (from chart):</strong> ₹76<br/><strong>Years of contribution:</strong> from age 25 until age 60 = 35 years<br/><strong>Total paid</strong> = 76 × 12 × 35 = ₹31,920 (total contributions over 35 years)<br/><strong>Outcome:</strong> Guaranteed monthly pension ₹1,000 from age 60 (scheme provides the pension as per rules; payouts come from pooled fund/annuities).",
-        "note": "<strong>Note:</strong> APY premiums come from government actuarial tables — they reflect the pooled investment & guarantees. The low total-paid vs pension highlights the social-security nature of APY."
+        "title": "Example: Age 25 — How the Premium Works",
+        "body": "<strong>Monthly Premium (from chart):</strong> ₹76<br/><strong>Contribution Years:</strong> From age 25 to 60 = 35 years<br/><strong>Total Paid</strong> = 76 × 12 × 35 = ₹31,920 (total contributions over 35 years)<br/><strong>Result:</strong> A guaranteed monthly pension of ₹1,000 from age 60 (pension is provided as per scheme rules; payments come from the pooled fund/annuity).",
+        "note": "<strong>Note:</strong> APY premiums come from government actuarial tables — they reflect pooled investment & guarantees. The low total-paid vs. pension highlights APY's social-security nature."
       }
     },
     "premium_chart": {
-      "title": "APY Premium Chart (by age & pension amount)",
+      "title": "APY Premium Chart (by Age & Pension Amount)",
       "description": "This chart shows the fixed monthly premium based on your entry age and desired pension amount, as per the official <a href='https://www.pfrda.org.in/my-apy/apy-chart' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA premium table</a>. The earlier you start, the lower your premium.",
       "age_header": "Entry Age",
-      "years_label": "Years"
+      "years_label": "years"
     },
     "enrollment": {
-      "title": "APY Eligibility & How to Enroll",
+      "title": "APY Eligibility and How to Enrol",
       "intro": "Enrolling in APY is simple:",
       "steps": [
         "<strong>Eligibility:</strong> You must be an Indian citizen between 18 and 40 years old.",
-        "<strong>Documents:</strong> You need an active bank account linked with your Aadhaar for auto-debit.",
-        "<strong>How to Enroll:</strong> You can enroll through your bank branch or via online banking portals that support APY enrollment."
+        "<strong>Documents:</strong> You need an active bank account linked to your Aadhaar for auto-debit.",
+        "<strong>How to Enrol:</strong> You can enrol through your bank branch or via online banking portals that support APY registration."
       ]
     },
     "comparison": {
-      "title": "APY vs NPS vs PPF — Which Plan Fits You?",
-      "body": "While APY is excellent for a basic, guaranteed pension, other schemes might be better for different goals. <strong>NPS</strong> offers higher potential returns and flexibility, making it suitable for those comfortable with market risks. <strong>PPF</strong> is a risk-free, long-term savings tool for wealth creation. Explore our <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> and <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> to compare."
+      "title": "APY vs NPS vs PPF — Which Plan Suits You?",
+      "body": "While APY is excellent for a basic, guaranteed pension, other schemes might be better for different goals. <strong>NPS</strong> offers higher potential returns and more flexibility, making it suitable for those comfortable with market risks. <strong>PPF</strong> is a risk-free, long-term savings tool for wealth creation. Explore our <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> and <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> to compare."
     },
     "rules": {
       "title": "Penalties, Missed Payments & Revival — What You Need to Know",
-      "body": "<strong>Withdrawal:</strong> Full withdrawal is only allowed at age 60. Early exit is permitted in cases of terminal illness or death. <br/> <strong>Penalties:</strong> A small penalty is charged for delayed payments, ranging from ₹1 to ₹10 per month depending on the premium amount. <br/> <strong>Transfer:</strong> You can transfer your APY account from one bank to another. For official rules, refer to the <a href='https://www.pfrda.org.in/my-apy/apy-faq' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA FAQ section</a>."
+      "body": "<strong>Withdrawal:</strong> Full withdrawal is only allowed at age 60. Early exit is permitted in cases of terminal illness or death. <br/> <strong>Penalties:</strong> A small penalty is levied for late payments, ranging from ₹1 to ₹10 per month depending on the premium amount. <br/> <strong>Transfer:</strong> You can transfer your APY account from one bank to another. For official rules, see the <a href='https://www.pfrda.org.in/my-apy/apy-faq' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA FAQ section</a>."
     },
     "faq_title": "Frequently Asked Questions",
     "faqs": [
-      { "question": "What is Atal Pension Yojana (APY)?", "answer": "APY is a government social-security pension scheme that guarantees a fixed monthly pension between ₹1,000 and ₹5,000 to subscribers after they reach 60. It’s administered by the PFRDA and aimed primarily at the unorganized sector." },
-      { "question": "Who is eligible for APY?", "answer": "Any Indian citizen aged 18–40 with a valid bank account and KYC documents can join APY. Check your bank for enrollment steps." },
-      { "question": "How is the APY premium calculated?", "answer": "Premiums are fixed by official actuarial tables based on entry age and the pension amount you choose. Use our APY Calculator or download the premium chart to see the exact monthly premium for your age." },
-      { "question": "How much do I have to pay for ₹3,000 pension?", "answer": "Find the exact amount in the premium chart above. Example: at age 25 a ₹3,000 pension requires ₹226/month (per the table shown)." },
-      { "question": "Can I join APY if I pay income tax?", "answer": "Rules may vary over time. Historically APY targeted the unorganized sector; check PFRDA or your bank for the current policy regarding income-tax payers." },
-      { "question": "What happens if I miss a payment?", "answer": "Missed payments may attract small penalties and eventual account inactivation. Banks typically provide revival procedures — pay missed premiums plus any penalty to reactivate the account." },
-      { "question": "Can I withdraw from APY before age 60?", "answer": "Early exit is restricted — allowed only in exceptional situations (e.g., critical illness or death) and may involve penalties. See the official PFRDA rules or your bank’s APY terms." },
-      { "question": "Is there any government co-contribution?", "answer": "For certain eligible subscribers, government co-contribution schemes have been offered in the past. Verify current schemes and eligibility on PFRDA/NSDL pages." },
-      { "question": "What happens to the corpus on subscriber’s death?", "answer": "On the subscriber’s death, the spouse typically receives the same pension; if both are deceased, the nominee receives the accumulated corpus per scheme rules." },
-      { "question": "Are APY contributions tax deductible?", "answer": "APY offers pension benefits and not direct extra 80C allowances; check Income Tax rules for current tax treatments. (Always verify with the Income Tax Dept. for the latest tax guidance.)" },
-      { "question": "How do I enroll in APY?", "answer": "Visit your bank branch or use your bank’s online banking if they provide APY enrollment. You’ll need your bank account, Aadhaar, PAN (if required) and KYC." },
-      { "question": "APY vs NPS — which should I choose?", "answer": "APY is a guaranteed small pension product focused on basic security; NPS is market-linked with higher potential returns and greater flexibility. Choose APY if you want guaranteed fixed pension and low complexity; choose NPS if you want higher potential growth and are comfortable with market risks." }
+      { "question": "What is Atal Pension Yojana (APY)?", "answer": "APY is a government social-security pension scheme that guarantees a fixed monthly pension between ₹1,000 and ₹5,000 to subscribers after they reach the age of 60. It is administered by PFRDA and is primarily targeted at the unorganized sector." },
+      { "question": "Who is eligible for APY?", "answer": "Any Indian citizen between 18-40 years of age with a valid bank account and KYC documents can join APY. Contact your bank for enrollment steps." },
+      { "question": "How is APY premium calculated?", "answer": "Premiums are fixed by official actuarial tables based on entry age and the pension amount you select. Use our APY Calculator or download the premium chart to find the exact monthly premium for your age." },
+      { "question": "How much do I pay for a ₹3,000 pension?", "answer": "Find the exact amount in the premium chart above. Example: ₹226/month is required for a ₹3,000 pension at age 25 (as per table shown)." },
+      { "question": "Can I join APY if I pay income tax?", "answer": "Rules can vary over time. Historically APY has targeted the unorganized sector; contact PFRDA or your bank for current policy regarding income-tax payers." },
+      { "question": "What happens if I miss an APY payment?", "answer": "Missed payments may attract small penalties and eventual account deactivation. Banks usually offer revival procedures — pay the missed premiums along with any penalty to reactivate the account." },
+      { "question": "Can I withdraw from APY before 60?", "answer": "Early exit is discouraged — allowed only in exceptional circumstances (e.g., critical illness or death) and may have penalties. Refer to official PFRDA rules or your bank APY terms." },
+      { "question": "Is there any government co-contribution?", "answer": "For certain eligible subscribers, government co-contribution schemes have been offered in the past. Verify current schemes & eligibility on PFRDA/NSDL pages." },
+      { "question": "What happens to the corpus on the subscriber's death?", "answer": "On the subscriber's death, the spouse typically receives the same pension; if both pass away, the nominee receives the accumulated corpus as per scheme rules." },
+      { "question": "Are APY contributions eligible for tax deduction?", "answer": "APY provides pension benefits and not direct extra 80C allowances; check income tax rules for current tax treatment. (Always verify with the Income Tax Dept. for latest tax guidance.)" },
+      { "question": "How do I enrol in APY?", "answer": "Visit your bank branch or use your bank's online banking if they offer APY enrolment. You will need your bank account, Aadhaar, PAN (if required), and KYC." },
+      { "question": "APY vs NPS — which should I choose?", "answer": "APY is a guaranteed small pension product focused on basic security; NPS is market-linked with higher potential returns and more flexibility. Choose APY if you want a guaranteed fixed pension and low complexity; choose NPS if you want higher potential growth and are comfortable with market risks." }
     ],
     "conclusion": {
       "title": "Conclusion: Is APY the Right Choice for Your Retirement?",
-      "body": "Atal Pension Yojana provides a simple, secure, and government-guaranteed foundation for your retirement. It's an excellent choice for individuals in the unorganized sector or anyone seeking a predictable pension with minimal risk. Use our APY Calculator to take the first step towards securing your financial future today."
+      "body": "Atal Pension Yojana offers a simple, secure, and government-guaranteed foundation for your retirement. It's an excellent choice for individuals in the unorganized sector or anyone seeking a predictable pension with minimal risk. Use our APY Calculator to take the first step towards securing your financial future today."
     }
   },
   "fd_vs_ppf_calculator": {
@@ -807,11 +807,11 @@
   },
   "tax_regime_calculator": {
     "meta_title": "Old vs New Tax Regime Calculator (AY 2025-26) | BharatSaver",
-    "meta_description": "Enter your salary and deductions to instantly compare tax under the old and new tax regimes for FY 2024-25. Calculator with HRA, 80C, 80D, home loan and worked examples (₹6L, ₹10L, ₹15L). Download results and get filing options.",
-    "h1": "Old vs New Tax Regime Calculator 2025 — Compare Old vs New Tax Slabs (India)",
-    "description": "Enter your salary and deductions to instantly compare tax under the old and new tax regimes. Updated for FY 2024-25 — includes HRA, 80C, 80D, and worked examples.",
+    "meta_description": "Use our free calculator to compare your income tax liability under the Old and New tax regimes in India and find out which is better for you for AY 2025-26.",
+    "h1": "Old vs New Tax Regime Calculator",
+    "description": "Enter your salary and deductions to instantly compare tax under the old and new regimes. Updated for FY 2025-26 — includes HRA, 80C, 80D, and worked examples.",
     "title": "Tax Regime Calculator",
-    "last_updated": "Last Updated:",
+    "last_updated": "Last updated:",
     "form_description": "Find out which tax regime saves you more money.",
     "gross_salary_label": "Gross Annual Salary",
     "basic_salary_label": "Basic Salary (for HRA calculation)",
@@ -838,13 +838,13 @@
     "new_regime": "New Regime",
     "total_tax_label": "Total Tax Payable",
     "taxable_income_label": "Taxable Income",
-    "net_income_label": "Take-Home Income (after tax)",
+    "net_income_label": "Take-home Income (post-tax)",
     "assumptions": {
       "title": "Calculator Assumptions",
-      "body": "The calculator is updated for FY 2024-25 (AY 2025-26). A standard deduction of ₹50,000 is applied to both regimes for salaried individuals. All calculations are based on the slab rates published by the Income Tax Department of India. This is an estimator and not tax advice."
+      "body": "The calculator is updated for FY 2024-25 (AY 2025-26). Standard deduction of ₹50,000 is applied to both regimes for salaried individuals. All calculations are based on slab rates published by the Income Tax Department of India. This is an estimator and not tax advice."
     },
     "comparison_table": {
-      "title": "Old vs New Tax Regime — A Quick Comparison",
+      "title": "Old vs New Tax Regime — Quick Comparison",
       "description": "A quick look at what's allowed in each regime.",
       "table": {
         "headers": ["Feature", "Old Tax Regime", "New Tax Regime (Default)"],
@@ -859,34 +859,34 @@
     },
     "how_we_calculate": {
       "title": "How We Calculate Your Tax (Step-by-Step)",
-      "body": "<ul><li><strong>Old Regime Calculation:</strong> Gross Income - Standard Deduction - All Section 80 Deductions - HRA/Home Loan Interest = Taxable Income.</li><li><strong>New Regime Calculation:</strong> Gross Income - Standard Deduction = Taxable Income.</li></ul><p>Our tax calculator then applies the official tax slabs for FY 2024-25 (AY 2025-26) to determine your liability under both regimes. A 4% Health & Education Cess is applied to the final tax amount. Rebate under Section 87A for income up to ₹7 lakh in the default new regime makes the effective tax zero. For slab rates, we cite the official <a href='https://incometaxindia.gov.in/Pages/tools/income-tax-calculator.aspx' target='_blank' rel='noopener noreferrer'>Income Tax Dept e-calculator</a>.</p>"
+      "body": "<ul><li><strong>Old Regime Calculation:</strong> Gross Income - Standard Deduction - All Section 80 Deductions - HRA/Home Loan Interest = Taxable Income.</li><li><strong>New Regime Calculation:</strong> Gross Income - Standard Deduction = Taxable Income.</li></ul><p>Our tax calculator then applies the official tax slabs for FY 2024-25 (AY 2025-26) to determine your liability under both regimes. A 4% Health & Education Cess is applied to the final tax amount. Rebate under Section 87A for income up to ₹7 lakh in the default New Regime makes the effective tax zero. For slab rates, we cite the official <a href='https://incometaxindia.gov.in/Pages/tools/income-tax-calculator.aspx' target='_blank' rel='noopener noreferrer'>Income Tax Department e-calculator</a>.</p>"
     },
     "checklist": {
       "title": "How to Choose: A Quick Checklist",
-      "body": "<ul><li><strong>High Deductions:</strong> If your total deductions (80C, HRA, home loan interest) are significant (typically > ₹2.5-3 lakh), the <strong>Old Regime</strong> is often better.</li><li><strong>Low/No Deductions:</strong> If you don't have many deductions, the lower slab rates of the <strong>New Regime</strong> will usually be more beneficial.</li><li><strong>Simplicity:</strong> Prefer a simpler tax filing process without tracking multiple investments? The <strong>New Regime</strong> is easier.</li></ul>"
+      "body": "<ul><li><strong>High Deductions:</strong> If your total deductions (80C, HRA, home loan interest) are significant (typically > ₹2.5-3 lakh), the <strong>Old Regime</strong> is often better.</li><li><strong>Low/No Deductions:</strong> If you don't have many deductions, the lower slab rates of the <strong>New Regime</strong> are usually more beneficial.</li><li><strong>Simplicity:</strong> Prefer a simpler tax filing process without tracking multiple investments? The <strong>New Regime</strong> is easier.</li></ul>"
     },
     "common_scenarios": {
       "title": "Worked Examples — Old vs New Regime",
       "scenario1": {
-        "title": "Scenario 1: ₹10 Lakh Salary with HRA & Full Deductions",
-        "body": "<strong>Inputs:</strong> Salary ₹10,00,000 | HRA ₹2,00,000 | 80C ₹1,50,000 | 80D ₹25,000 | 80CCD(1B) ₹50,000<br/><strong>Old Regime Tax:</strong> ₹46,800<br/><strong>New Regime Tax:</strong> ₹54,600<br/><strong>Recommendation:</strong> The Old Regime is better here because the deductions + HRA exemptions significantly lower the taxable income."
+        "title": "Example 1: ₹10 Lakh Salary with HRA & Full Deductions",
+        "body": "<strong>Inputs:</strong> Salary ₹10,00,000 | HRA ₹2,00,000 | 80C ₹1,50,000 | 80D ₹25,000 | 80CCD(1B) ₹50,000<br/><strong>Old Regime Tax:</strong> ₹46,800<br/><strong>New Regime Tax:</strong> ₹54,600<br/><strong>Recommendation:</strong> The Old Regime is better here because deductions + HRA exemptions significantly lower the taxable income."
       },
       "scenario2": {
-        "title": "Scenario 2: ₹15 Lakh Salary, No Deductions",
+        "title": "Example 2: ₹15 Lakh Salary, No Deductions",
         "body": "<strong>Inputs:</strong> Salary ₹15,00,000 | HRA = 0 | 80C/80D = 0<br/><strong>Old Regime Tax:</strong> ₹2,73,000<br/><strong>New Regime Tax:</strong> ₹1,95,000<br/><strong>Recommendation:</strong> The New Regime saves ~₹78,000 because no deductions are utilized."
       },
       "scenario3": {
-        "title": "Scenario 3: ₹7 Lakh Freelancer Income (No HRA, small deduction)",
-        "body": "<strong>Inputs:</strong> Income ₹7,00,000 | No HRA | 80C ₹50,000<br/><strong>Old Regime Tax:</strong> ₹23,400<br/><strong>New Regime Tax:</strong> ₹0 (rebate under 87A applies)<br/><strong>Recommendation:</strong> The New Regime is better, especially for individuals with income up to ₹7 lakh due to the rebate."
+        "title": "Example 3: ₹7 Lakh Freelancer Income (No HRA, small deduction)",
+        "body": "<strong>Inputs:</strong> Income ₹7,00,000 | No HRA | 80C ₹50,000<br/><strong>Old Regime Tax:</strong> ₹23,400<br/><strong>New Regime Tax:</strong> ₹0 (Rebate u/s 87A applies)<br/><strong>Recommendation:</strong> The New Regime is better, especially for individuals with income up to ₹7 lakh due to the rebate."
       }
     },
     "faq_title": "Frequently Asked Questions",
     "faqs": [
-      { "question": "What is the New Tax Regime?", "answer": "The New Tax Regime offers lower tax rates but disallows most common deductions like HRA, 80C, and home loan interest. It's now the default regime. If your total deductible investments are less than ~₹1.8L, the new regime usually saves tax." },
-      { "question": "What is the Old Tax Regime?", "answer": "The Old Tax Regime has slightly higher tax rates but allows you to claim over 70 deductions and exemptions. You must specifically opt for it." },
-      { "question": "Which tax regime is better for a ₹10 lakh salary?", "answer": "If your total deductions are over ₹2.5 lakh, the old regime is usually better. Otherwise, the new regime often saves you more tax." },
+      { "question": "What is the new tax regime?", "answer": "The new tax regime offers lower tax rates but disallows most common deductions like HRA, 80C, and home loan interest. It is now the default regime. If your total deductible investments are less than ~₹1.8L, the new regime usually saves tax." },
+      { "question": "What is the old tax regime?", "answer": "The old tax regime has slightly higher tax rates but allows you to claim over 70 deductions and exemptions. You have to specifically opt for it." },
+      { "question": "Which tax regime is better for a ₹10 lakh salary?", "answer": "If your total deductions are over ₹2.5 lakh, the old regime is usually better. If not, the new regime often saves you more tax." },
       { "question": "Can I claim HRA in the new tax regime?", "answer": "No, HRA exemption is only available under the old tax regime; include your HRA details in the calculator to see the difference." },
-      { "question": "Is standard deduction available in the new regime?", "answer": "Yes, a standard deduction of ₹50,000 for salaried individuals is available under both the old and new tax regimes." },
+      { "question": "Is standard deduction available in the new regime?", "answer": "Yes, a standard deduction of ₹50,000 for salaried individuals is available under both old and new tax regimes." },
       { "question": "What is the tax rebate under Section 87A for FY 2024-25?", "answer": "In the new regime, if your taxable income is up to ₹7 lakh, you pay zero tax due to the rebate. In the old regime, the rebate applies to income up to ₹5 lakh." }
     ],
     "next_steps": {
@@ -898,14 +898,14 @@
     },
     "conclusion": {
       "title": "Final Thoughts: Making the Smart Choice",
-      "body": "Choosing a tax regime is a critical financial decision. The new regime offers simplicity, while the old regime rewards those with significant investments and expenses. Use this calculator to compare your specific situation, understand the trade-offs, and choose the path that maximizes your take-home pay. For deeper insights, explore our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> or our <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> to see how tax-saving investments can impact your decision."
+      "body": "Choosing a tax regime is a critical financial decision. The new regime offers simplicity, while the old regime rewards those with significant investments and expenses. Use this calculator to compare your specific situation, understand the trade-offs, and choose the path that maximizes your take-home salary. For deeper insights, explore our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> or our <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> to see how tax-saving investments can impact your decision."
     }
   },
   "loan_optimization_calculator": {
     "h1": "Loan Optimization Calculator India (2025)",
     "summary": "Free Loan Optimization Calculator (India). Compare prepayment vs invest, optimize EMI, plan balance transfer, download amortization schedule.",
     "title": "Loan Optimizer",
-    "form_description": "Calculate your EMI and see how extra payments can help you save interest.",
+    "form_description": "Calculate your EMI and see how extra payments can save you interest.",
     "form": {
       "loan_amount": "Loan Amount (₹)",
       "interest_rate": "Interest Rate (% p.a.)",
@@ -920,8 +920,8 @@
       "total_interest": "Total Interest Payable",
       "total_payment": "Total Payment",
       "prepayment_summary": {
-        "title": "With Prepayment, You Can Save:",
-        "subtitle": "You could be loan-free {months} months sooner!"
+        "title": "With a prepayment, you could save:",
+        "subtitle": "and be loan-free {months} months earlier!"
       },
       "chart_view": "Chart View",
       "table_view": "Table View",
@@ -943,30 +943,30 @@
     },
     "how_it_works": {
       "h2": "How This Calculator Works",
-      "body": "<p>Our calculator first determines your Equated Monthly Installment (EMI) using the standard formula: <code>EMI = P × R × (1 + R)^N / ((1 + R)^N - 1)</code>, where P is the principal, R is the monthly interest rate, and N is the tenure in months.</p><p>When you add a prepayment, the calculator adjusts the amortization schedule to show how this extra payment reduces your principal, thereby lowering the total interest paid over the life of the loan and shortening the tenure.</p>"
+      "body": "<p>Our calculator first determines your Equated Monthly Installment (EMI) using the standard formula: <code>EMI = P × r × (1 + r)^n / ((1 + r)^n - 1)</code>, where P is the principal, r is the monthly interest rate, and n is the tenure in months.</p><p>When you add a prepayment, the calculator adjusts the amortization schedule to show how this extra payment reduces your principal, thereby lowering the total interest paid over the life of the loan and shortening the tenure.</p>"
     },
     "worked_examples": {
       "h2": "Worked Examples",
       "scenario1": {
         "title": "Scenario 1: Standard Home Loan (₹50 Lakh)",
-        "body": "<strong>Inputs:</strong> ₹50 lakh loan, 8.5% interest, 20 years.<br/><strong>Result:</strong> EMI is ₹43,391. Total interest paid is ₹54.14 lakh.<br/><strong>With ₹5 Lakh Prepayment:</strong> Interest saved is ₹14.3 lakh and tenure reduces by 63 months."
+        "body": "<strong>Inputs:</strong> ₹50 lakh loan, 8.5% interest, 20 years.<br/><strong>Result:</strong> EMI is ₹43,391. Total interest paid is ₹54.14 lakh.<br/><strong>With ₹5 Lakh Prepayment:</strong> Interest saved is ₹14.3 lakh and tenure is reduced by 63 months."
       },
       "scenario2": {
         "title": "Scenario 2: Car Loan (₹8 Lakh)",
-        "body": "<strong>Inputs:</strong> ₹8 lakh loan, 10% interest, 7 years.<br/><strong>Result:</strong> EMI is ₹13,275. Total interest paid is ₹3.15 lakh.<br/><strong>With ₹1 Lakh Prepayment:</strong> Interest saved is ₹70,000 and tenure reduces by 15 months."
+        "body": "<strong>Inputs:</strong> ₹8 lakh loan, 10% interest, 7 years.<br/><strong>Result:</strong> EMI is ₹13,275. Total interest paid is ₹3.15 lakh.<br/><strong>With ₹1 Lakh Prepayment:</strong> Interest saved is ₹70,000 and tenure is reduced by 15 months."
       },
       "scenario3": {
         "title": "Scenario 3: Personal Loan (₹3 Lakh)",
-        "body": "<strong>Inputs:</strong> ₹3 lakh loan, 12% interest, 5 years.<br/><strong>Result:</strong> EMI is ₹6,673. Total interest paid is ₹1 lakh.<br/><strong>With ₹50,000 Prepayment:</strong> Interest saved is ₹25,000 and tenure reduces by 12 months."
+        "body": "<strong>Inputs:</strong> ₹3 lakh loan, 12% interest, 5 years.<br/><strong>Result:</strong> EMI is ₹6,673. Total interest paid is ₹1 lakh.<br/><strong>With ₹50,000 Prepayment:</strong> Interest saved is ₹25,000 and tenure is reduced by 12 months."
       }
     },
     "optimization_masterclass": {
       "h2": "Loan Optimization Masterclass: Prepayment, Refinance, & Investment",
-      "body": "<p>There are three main strategies for loan optimization:</p><ul><li><strong>Prepayment:</strong> Making extra payments towards your principal. This is the most direct way to reduce your debt burden.</li><li><strong>Refinance/Balance Transfer:</strong> Moving your loan to another lender offering a lower interest rate. This can significantly reduce your EMI and total interest.</li><li><strong>Prepay vs. Invest:</strong> Deciding whether surplus funds should be used to prepay your loan or invested elsewhere to earn higher returns.</li></ul>"
+      "body": "<p>There are three main strategies for loan optimization:</p><ul><li><strong>Prepayment:</strong> Making extra payments towards your principal. This is the most direct way to reduce your loan burden.</li><li><strong>Refinance/Balance Transfer:</strong> Moving your loan to another lender offering a lower interest rate. This can significantly reduce your EMI and total interest.</li><li><strong>Prepay vs. Invest:</strong> Deciding whether to use your surplus funds to prepay your loan or invest them elsewhere to earn a higher return.</li></ul>"
     },
     "prepay_vs_invest": {
       "h2": "Prepay vs. Invest: A Key Decision",
-      "body": "<p>The decision to prepay your loan or invest your surplus funds rests on a simple comparison: if the post-tax return on your investment is higher than your loan's interest rate, investing is generally better. For example, if your loan rate is 8.5% and you can earn a 12% post-tax return on an equity investment, investing the surplus is the mathematically superior option.</p>"
+      "body": "<p>The decision to prepay your loan or invest your surplus funds depends on a simple comparison: if the post-tax return on your investment is higher than your loan's interest rate, it's generally better to invest. For example, if your loan rate is 8.5% and you can earn a 12% post-tax return on an equity investment, investing the surplus is mathematically the better option.</p>"
     },
     "comparison_table": {
         "title": "Prepayment vs. Investment: A Quick Comparison",
@@ -980,11 +980,11 @@
     },
     "refinance": {
       "h2": "When to Consider a Balance Transfer (Refinance)",
-      "body": "<p>A balance transfer is a good option if you can get a new loan with an interest rate at least 0.5-1% lower than your current rate. Factor in any processing fees or other charges associated with the transfer to ensure the net savings are worthwhile.</p>"
+      "body": "<p>A balance transfer is a good option if you can get a new loan at an interest rate that is at least 0.5-1% lower than your current rate. Factor in any processing fees or other charges associated with the transfer to ensure the net savings are worthwhile.</p>"
     },
     "tax_notes": {
       "h2": "Important Tax Considerations for Home Loans",
-      "body": "<p>For home loans, the principal repayment is eligible for deduction under Section 80C (up to ₹1.5 lakh), and the interest paid is deductible under Section 24 (up to ₹2 lakh). Prepaying a home loan may reduce these tax benefits, so factor this into your 'prepay vs. invest' decision.</p>"
+      "body": "<p>For home loans, the principal repayment is eligible for deduction under Section 80C (up to ₹1.5 lakh), and the interest paid is deductible under Section 24 (up to ₹2 lakh). Prepaying a home loan can reduce these tax benefits, so factor this into your 'prepay vs. invest' decision.</p>"
     },
     "faq": {
       "h2": "Frequently Asked Questions",
@@ -992,25 +992,25 @@
         { "q": "What is loan optimization?", "a": "Loan optimization is the process of managing your loan through strategies like prepayment and refinancing to reduce interest costs and become debt-free faster." },
         { "q": "How does prepayment save money?", "a": "Prepayment reduces your outstanding principal, which means you pay less interest over the remaining life of the loan, shortening the tenure." },
         { "q": "Is it better to reduce EMI or tenure?", "a": "Reducing the tenure almost always saves more interest than reducing the EMI. Opt to keep your EMI the same and shorten the loan period." },
-        { "q": "When should I refinance my loan?", "a": "Consider refinancing if you can get a new loan with an interest rate significantly lower (at least 0.5-1%) than your current rate, after accounting for all fees." }
+        { "q": "When should I refinance my loan?", "a": "Consider refinancing if you can get a new loan at an interest rate that is significantly lower (at least 0.5-1%) than your current rate, after factoring in all fees." }
       ]
     },
     "conclusion": {
       "title": "Conclusion: Take Control of Your Loan",
-      "body": "Loan optimization is a powerful way to accelerate your journey toward financial freedom. By strategically using prepayments and refinancing, you can save a significant amount on interest and shorten your loan tenure. Use this calculator to model different scenarios and find the best path for your financial situation."
+      "body": "Loan optimization is a powerful way to accelerate your journey towards financial freedom. By strategically using prepayments and refinancing, you can save a significant amount on interest and shorten your loan tenure. Use this calculator to model different scenarios and find the best path for your financial situation."
     }
   },
   "retirement_corpus_calculator": {
     "meta_title": "Retirement Corpus Calculator India 2025 | Free Online Retirement Planning Tool",
     "meta_description": "Free Retirement Corpus Calculator India (2025). Calculate how much money you need to retire, the SIP required, and plan a stress-free retirement today.",
-    "og_description": "Estimate the corpus and monthly SIP you need to retire comfortably. India-specific, with NPS/PPF/EPF guidance.",
+    "og_description": "Estimate the corpus and monthly SIP needed to retire comfortably. India-specific, includes NPS/PPF/EPF guidance.",
     "h1": "Retirement Corpus Calculator — How Much Money You Need to Retire in India (2025)",
-    "intro": "A retirement corpus is the total sum of money you'll need to support yourself after you stop working. Our calculator helps you go beyond a simple number to create a complete plan for a secure retirement.",
+    "intro": "A retirement corpus is the total sum of money you will need to support yourself after you stop working. Our calculator helps you go beyond a simple number to build a complete plan for a secure retirement.",
     "tool_section": {
       "h2": "Calculate Your Retirement Corpus (Free Online Tool)"
     },
     "title": "Retirement Corpus Calculator",
-    "form_description": "Plan your comfortable retirement by calculating the total corpus you need.",
+    "form_description": "Plan your comfortable retirement by calculating the total corpus you'll need.",
     "current_age_label": "Current Age",
     "retirement_age_label": "Retirement Age",
     "monthly_expenses_label": "Current Monthly Expenses (₹)",
@@ -1035,34 +1035,34 @@
     "amount_in_lakhs": "Amount (in Lakhs)",
     "how_it_works": {
       "h2": "How Do You Calculate a Retirement Corpus?",
-      "body": "<p>We use standard financial formulas to give you an accurate projection. Here's a simplified view of how we do it:</p><h3>Future Value of Your Expenses at Retirement</h3><p>We first calculate how much your current monthly expenses will grow to by the time you retire, using the inflation rate you provided. The formula is: <code>Future Expense = Current Expense × (1 + Inflation Rate) ^ Years to Retirement</code>.</p><h3>Required Corpus at Retirement (PV of an Annuity)</h3><p>Next, we calculate the total lump sum you'll need on the day you retire. This is the amount that, when invested, will generate enough income to cover your expenses for the rest of your life. We use a present value of an annuity formula for this.</p><h3>Required SIP Calculation</h3><p>Finally, we determine the monthly Systematic Investment Plan (SIP) needed to bridge the gap between your current savings and your target corpus. We calculate the future value of your existing savings and subtract it from the required corpus to find the shortfall. The SIP is calculated using the future value of an annuity due formula, assuming deposits are made at the beginning of each month.</p>"
+      "body": "<p>We use standard financial formulas to give you an accurate projection. Here's a simplified view of how we do it:</p><h3>Future Value of Your Expenses at Retirement</h3><p>We first calculate how much your current monthly expenses will grow to by the time you retire, using the inflation rate you provide. The formula is: <code>Future Expense = Current Expense × (1 + Inflation Rate) ^ Years to Retirement</code>.</p><h3>Required Corpus at Retirement (PV of an Annuity)</h3><p>Next, we calculate the total lump-sum amount you will need on the day you retire. This is the amount which, when invested, will generate enough income to cover your expenses for the rest of your life. We use the present value of an annuity formula for this.</p><h3>Required SIP Calculation</h3><p>Finally, we determine the monthly Systematic Investment Plan (SIP) needed to bridge the gap between your current savings and your target corpus. We calculate the future value of your current savings and subtract it from the required corpus to find the shortfall. The SIP is then calculated using the future value of an annuity due formula, assuming deposits are made at the beginning of each month.</p>"
     },
     "inputs_explained": {
       "h2": "What Inputs You Need to Provide & Why They Matter",
-      "body": "<p>To get an accurate result, you need to provide a few key details. Here's what each one means for your plan:</p><ul><li><strong>Your Current & Retirement Age:</strong> This defines your investment horizon. The more time you have, the more the power of compounding can work for you, meaning you can start with smaller investments.</li><li><strong>Your Current Monthly Expenses:</strong> This is the foundation of your retirement plan. Be realistic about what you spend today to get a precise picture of what you'll need tomorrow.</li><li><strong>Your Current Savings:</strong> This is your head start! Any money you've already saved in EPF, PPF, mutual funds, or other investments will reduce the amount you need to save in the future.</li><li><strong>Inflation Rate:</strong> This is the silent wealth killer. Inflation erodes the purchasing power of your money over time. A higher inflation rate means you'll need a much larger corpus.</li><li><strong>Pre-Retirement Returns:</strong> This is the growth rate you expect on your investments while you're still working. Higher returns mean your money works harder for you, and you can reach your goal with smaller SIPs.</li><li><strong>Post-Retirement Returns:</strong> This is the return you expect on your corpus after you've retired. We assume a more conservative, capital-preserving portfolio here.</li></ul>"
+      "body": "<p>To get an accurate result, you'll need to provide a few key details. Here's what each one means for your plan:</p><ul><li><strong>Your Current & Retirement Age:</strong> This defines your investment horizon. The more time you have, the more the power of compounding can work for you, meaning you can start with smaller investments.</li><li><strong>Your Current Monthly Expenses:</strong> This is the foundation of your retirement plan. Be realistic about what you spend today to get an accurate picture of what you'll need tomorrow.</li><li><strong>Your Current Savings:</strong> This is your head start! Any money you've already saved in EPF, PPF, mutual funds, or other investments reduces the amount you'll need to save in the future.</li><li><strong>Inflation Rate:</strong> This is the silent wealth killer. Inflation erodes the purchasing power of your money over time. A higher inflation rate means you'll need a much larger corpus.</li><li><strong>Pre-Retirement Returns:</strong> This is the rate of growth you expect on your investments while you're still working. Higher returns mean your money works harder for you, and you can reach your goal with smaller SIPs.</li><li><strong>Post-Retirement Returns:</strong> This is the return you expect on your corpus after you've retired. We assume a more conservative, capital-preservation portfolio here.</li></ul>"
     },
     "worked_examples": {
       "h2": "Worked Examples — How Much Corpus Do You Need?",
       "scenario1": {
-        "title": "Scenario 1: For ₹50,000 Monthly Expenses (at Age 30)",
-        "body": "<strong>Your Situation:</strong> You're 30, aiming for a lifestyle of ₹50,000/month in today's money. You have ₹5 lakh saved already.<br/><strong>Our Calculation:</strong> To sustain your lifestyle, you'll need a retirement corpus of about <strong>₹3.28 Crore</strong>. To reach this goal, you should start a monthly SIP of <strong>₹18,250</strong>."
+        "title": "Example 1: For ₹50,000 Monthly Expenses (at Age 30)",
+        "body": "<strong>Your Situation:</strong> You're 30, aiming for a ₹50,000/month lifestyle in today's money. You've already saved ₹5 lakh.<br/><strong>Our Calculation:</strong> To maintain your lifestyle, you'll need a retirement corpus of approximately <strong>₹3.28 Crore</strong>. To reach this goal, you should start a monthly SIP of <strong>₹18,250</strong>."
       },
       "scenario2": {
-        "title": "Scenario 2: For ₹1 Lakh Monthly Expenses (at Age 35)",
-        "body": "<strong>Your Situation:</strong> You're 35, aiming for a lifestyle of ₹1 lakh/month. Your current savings are ₹20 lakh.<br/><strong>Our Calculation:</strong> You will need a corpus of approximately <strong>₹4.79 Crore</strong>. To achieve this, you should start a monthly SIP of <strong>₹37,842</strong>."
+        "title": "Example 2: For ₹1 Lakh Monthly Expenses (at Age 35)",
+        "body": "<strong>Your Situation:</strong> You're 35, aiming for a ₹1 lakh/month lifestyle. Your current savings are ₹20 lakh.<br/><strong>Our Calculation:</strong> You'll need a corpus of around <strong>₹4.79 Crore</strong>. To achieve this, you should start a monthly SIP of <strong>₹37,842</strong>."
       },
       "scenario3": {
-        "title": "Scenario 3: For ₹30,000 Monthly Expenses (at Age 25)",
+        "title": "Example 3: For ₹30,000 Monthly Expenses (at Age 25)",
         "body": "<strong>Your Situation:</strong> You're a 25-year-old freelancer with monthly expenses of ₹30,000 and savings of ₹2 lakh.<br/><strong>Our Calculation:</strong> Your target corpus is <strong>₹3.04 Crore</strong>. Thanks to your long investment horizon, you only need to start a monthly SIP of <strong>₹7,725</strong> to get there."
       }
     },
-    "sensitivity_analysis": {
+     "sensitivity_analysis": {
       "title": "Sensitivity Analysis: How Assumptions Change Your Goal",
       "body": "Small changes in your assumptions can have a huge impact on your final corpus. This table shows how your required corpus and SIP change with slight adjustments in inflation and return rates."
     },
     "accumulation_strategy": {
       "h2": "How to Reach Your Retirement Corpus (Investment Strategies)",
-      "body": "<h3>Choosing Your Investment Path: SIP vs. Lump Sum</h3><p>A <strong>Systematic Investment Plan (SIP)</strong> is the most disciplined approach. You invest a fixed amount regularly (e.g., monthly), which helps you average out market fluctuations (rupee-cost averaging) and benefit from compounding. It's perfect for building wealth steadily over time. For even faster growth, consider a <strong>step-up SIP</strong>, where you increase your monthly investment amount annually, usually in line with your salary hike (e.g., by 10%).</p><h3>Asset Allocation by Age</h3><p>Your investment strategy shouldn't be static. As you get closer to retirement, you should gradually shift from high-risk, high-return assets to safer options to protect your capital.</p><ul><li><strong>In your 20s & 30s:</strong> Be aggressive. A portfolio with 70-80% in equities (like mutual funds) can generate higher returns over the long term.</li><li><strong>In your 40s:</strong> Start balancing your risk. A 60:40 split between equity and debt is a common strategy.</li><li><strong>In your 50s and beyond:</strong> It's time to preserve your capital. Shift your portfolio to be debt-heavy (70-80% in fixed-income instruments).</li></ul><h3>How PPF, NPS, & EPF Fit into Your Plan</h3><p>These are the foundation pillars of retirement planning in India. Your current savings in these instruments give you a massive head start. Use them to form the debt/fixed-income portion of your portfolio. Explore our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> and <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> to see how they grow.</p>",
+      "body": "<h3>Choosing Your Investment Path: SIP vs. Lumpsum</h3><p>A <strong>Systematic Investment Plan (SIP)</strong> is the most disciplined approach. You invest a fixed amount regularly (e.g., monthly), which helps you average out market fluctuations (rupee-cost averaging) and benefit from compounding. It's perfect for building wealth steadily over time. For even faster growth, consider a <strong>Step-up SIP</strong>, where you increase your monthly investment amount annually, usually in line with your salary hike (e.g., by 10%).</p><h3>Asset Allocation by Age</h3><p>Your investment strategy shouldn't be static. As you get closer to retirement, you should gradually shift from high-risk, high-return assets to safer options to protect your capital.</p><ul><li><strong>In your 20s & 30s:</strong> Be aggressive. A portfolio with 70-80% in equities (like mutual funds) can generate higher returns over the long term.</li><li><strong>In your 40s:</strong> Start balancing your risk. A 60:40 split between equity and debt is a common strategy.</li><li><strong>In your 50s and beyond:</strong> It's time to preserve your capital. Shift your portfolio to be debt-heavy (70-80% in fixed-income instruments).</li></ul><h3>How PPF, NPS, & EPF Fit Into Your Plan</h3><p>These are the cornerstones of retirement planning in India. Your current savings in these instruments give you a huge head start. Use them to form the debt/fixed-income portion of your portfolio. Explore our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> and <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> to see how they grow.</p>",
       "sip_plans": {
         "title": "Sample SIP Plans to Reach Your Goal",
         "body": "This table shows the approximate monthly SIP required to reach common retirement corpus goals from different starting ages, assuming a 12% annual return."
@@ -1070,31 +1070,31 @@
     },
     "deaccumulation_strategy": {
       "h2": "The De-accumulation Phase: Making Your Corpus Last",
-      "body": "<p>Building your nest egg is only half the battle. The real challenge is making it last. Here’s how you can create a steady income stream after you retire.</p><h3>Systematic Withdrawal Plan (SWP)</h3><p>An SWP allows you to withdraw a fixed amount from your mutual fund investments every month, just like a pension. It's a tax-efficient method because the rest of your corpus remains invested and continues to grow, helping you beat inflation.</p><p><strong>Example:</strong> With a ₹2 crore corpus and a 7% annual return, a ₹1 lakh monthly SWP can last for over 30 years.</p><h3>Annuity Plans</h3><p>An annuity is an insurance product where you pay a lump sum to an insurance company, and they guarantee you a fixed income for life.</p>"
+      "body": "<p>Building your nest egg is only half the battle. The real challenge is making it last. Here's how you can create a steady income stream after you retire.</p><h3>Systematic Withdrawal Plan (SWP)</h3><p>An SWP allows you to withdraw a fixed amount from your mutual fund investments every month, just like a pension. It's a tax-efficient method because the rest of your corpus remains invested and continues to grow, helping you beat inflation.</p><p><strong>Example:</strong> With a ₹2 crore corpus and a 7% annual return, a ₹1 lakh monthly SWP could last for over 30 years.</p><h3>Annuity Plans</h3><p>An annuity is an insurance product where you pay a lump sum to an insurance company, and they guarantee you a fixed income for life.</p>"
     },
     "tax_rules": {
       "h2": "Tax Rules During Accumulation and Withdrawal",
-      "body": "Tax planning is crucial to maximizing your retirement savings. During the accumulation phase, take advantage of tax-saving instruments like PPF, EPF, and NPS (under Section 80C and 80CCD). During withdrawal, understand the tax implications of different instruments. For example, PPF withdrawals are tax-free, while NPS withdrawals are partially taxable, and mutual fund gains attract capital gains tax. Plan your withdrawals to be as tax-efficient as possible."
+      "body": "Tax planning is crucial to maximizing your retirement savings. During the accumulation phase, take advantage of tax-saving instruments like PPF, EPF, and NPS (under Section 80C and 80CCD). During withdrawal, understand the tax implications of different instruments. For example, PPF withdrawals are tax-free, while NPS withdrawals are partially taxed, and mutual fund gains attract capital gains tax. Plan your withdrawals to be as tax-efficient as possible."
     },
     "faq_title": "Frequently Asked Questions",
     "faqs": [
-      { "question": "How do you calculate a retirement corpus?", "answer": "We project your future monthly expenses using inflation, compute the present value (PV) of the annuity you’ll need at retirement, and subtract the future value of existing savings to find the shortfall." },
-      { "question": "What inflation rate should I use for Indian retirement planning?", "answer": "Many planners use a long-term default of 5–7% for India; 6% is common. Use higher rates for conservative healthcare or long horizon assumptions." },
-      { "question": "Can I include EPF, PPF and NPS in my retirement corpus?", "answer": "Yes — include all liquid and pension assets (EPF, PPF, NPS, mutual funds, bank FD) in your Current Savings input to lower the additional SIP needed." },
-      { "question": "How much should a 30-year-old save monthly to retire comfortably?", "answer": "It depends on the target corpus and assumptions. As a rough guide, saving ₹15,000–₹25,000/month can build a multi-crore corpus by 60 at 10–12% returns. Use the calculator for precise numbers." },
-      { "question": "Should I invest by SIP or lump sum to reach my retirement goal?", "answer": "SIP is recommended for disciplined investing and rupee-cost averaging; a lump sum can outperform in long bull markets but has a higher timing risk. A blended approach works for many." },
-      { "question": "What is a safe withdrawal rate in India during retirement?", "answer": "There is no one-size-fits-all; many advisors use a 3–4% initial withdrawal rule (adjusted for inflation). Consider conservative withdrawal rates if longevity or healthcare costs are uncertain." },
-      { "question": "How do healthcare costs affect the retirement corpus?", "answer": "Healthcare inflation often exceeds general inflation. Add a dedicated healthcare buffer or model higher inflation for medical costs to avoid underestimating your corpus." },
-      { "question": "How will taxes impact my retirement withdrawals?", "answer": "Tax treatment varies by instrument and withdrawal type. EPF/PPF have specific rules; mutual fund withdrawals may attract LTCG tax above thresholds. Plan withdrawals tax-efficiently to preserve the corpus." },
-      { "question": "How long should my retirement corpus last?", "answer": "Typically planners assume a life expectancy of 85–90 years. Use conservative longevity assumptions if family longevity is high or you retire early." },
-      { "question": "Does the calculator account for post-retirement returns?", "answer": "Yes — you can set a lower, conservative post-retirement return (e.g., 6–8%) to model how the corpus will be invested and sustain withdrawals." },
-      { "question": "Can I plan for early retirement (before 60) with this calculator?", "answer": "Yes — set your desired retirement age earlier and increase the investment horizon and SIP accordingly. Factor in longer post-retirement years and higher healthcare costs." },
-      { "question": "What is the simplest rule of thumb to estimate a target corpus?", "answer": "A common rule is 25× your current annual expenses (for a 4% real withdrawal), but use the calculator to refine this with inflation, returns, and existing savings." }
+      { "question": "How do you calculate a retirement corpus?", "answer": "We estimate your future monthly expenses using inflation, calculate the present value (PV) of an annuity you'll need at retirement, and subtract the future value of existing savings to find the deficit." },
+      { "question": "What inflation rate should I use for Indian retirement planning?", "answer": "Most planners use a long-term default of 5-7% for India; 6% is common. Use higher rates for conservative healthcare or long-horizon assumptions." },
+      { "question": "Should I include EPF, PPF, and NPS in my retirement corpus?", "answer": "Yes — include all liquid and pension assets (EPF, PPF, NPS, mutual funds, bank FDs) in your current savings input to reduce the required additional SIP." },
+      { "question": "How much should a 30-year-old save monthly to retire comfortably?", "answer": "It depends on the target corpus and assumptions. As a rough guide, saving ₹15,000–₹25,000/month at 10-12% returns can build a multi-crore corpus by 60. Use the calculator for exact numbers." },
+      { "question": "Should I invest via SIP or lumpsum to reach my retirement goal?", "answer": "SIP is recommended for disciplined investing and rupee-cost averaging; lumpsum can outperform in long bull markets but carries higher timing risk. A mixed approach works for many." },
+      { "question": "What is a safe withdrawal rate in retirement in India?", "answer": "There is no one-size-fits-all; many advisors use a 3-4% initial withdrawal rule (adjusted for inflation). Consider conservative withdrawal rates if longevity or healthcare costs are uncertain." },
+      { "question": "How do healthcare costs affect the retirement corpus?", "answer": "Healthcare inflation often outpaces general inflation. Add a dedicated healthcare buffer or model a higher inflation for medical costs to avoid underestimating your corpus." },
+      { "question": "How will taxes affect my retirement withdrawals?", "answer": "Tax treatment varies by instrument and withdrawal type. EPF/PPF have specific rules; mutual fund withdrawals may attract LTCG tax above thresholds. Plan withdrawals to be tax-efficient to preserve corpus." },
+      { "question": "How long should my retirement corpus last?", "answer": "Planners typically estimate a life expectancy of 85-90 years. Use conservative longevity assumptions if family longevity is high or you retire early." },
+      { "question": "Does the calculator take post-retirement returns into account?", "answer": "Yes — you can set a lower, conservative post-retirement return (e.g., 6-8%) to model how the corpus is invested and continues to sustain withdrawals." },
+      { "question": "Can I plan for early retirement (before 60) with this calculator?", "answer": "Yes — set your desired retirement age earlier and factor in a longer post-retirement years and higher healthcare costs. The required SIP will increase accordingly." },
+      { "question": "What is a simple rule of thumb for estimating a target corpus?", "answer": "A common rule is 25× your current annual expenses (for a 4% real withdrawal), but use the calculator to refine this with inflation, returns, and existing savings." }
     ],
     "next_steps": {
       "h2": "Download Your Plan & Take Action",
-      "cta1_title": "File Your ITR",
-      "cta1_desc": "Use a trusted partner like ClearTax to file your income tax return accurately.",
+      "cta1_title": "File Your Taxes",
+      "cta1_desc": "Use ClearTax to file your income tax returns with ease.",
       "cta2_title": "Explore More Calculators",
       "cta2_desc": "Find more tools to help with your financial planning."
     },
@@ -1116,31 +1116,31 @@
     }
   },
   "mutual_fund_overlap_calculator": {
-    "meta_title": "Mutual Fund Overlap Calculator — Check for Overlap in Funds (India, 2025)",
-    "meta_description": "Free Mutual Fund Overlap Calculator (2025) for Indian funds. Compare up to 5 funds side-by-side to see portfolio overlap percentage and common stocks. Make informed diversification decisions.",
-    "h1": "Mutual Fund Overlap Calculator India (2025)",
+    "meta_title": "Mutual Fund Overlap Calculator — Check Overlap Between Funds (India, 2025)",
+    "meta_description": "Free mutual fund overlap calculator for Indian funds (2025). Compare 2-5 funds side-by-side to see portfolio overlap percentage and common stocks. Make informed diversification decisions.",
+    "h1": "Mutual Fund Overlap Calculator — Check Overlap Between Funds (India, 2025)",
     "hero": {
-      "subtitle": "Are your mutual funds secretly identical? Compare up to five Indian equity funds to instantly see your true portfolio overlap and top common holdings."
+      "subtitle": "Holding multiple mutual funds? You might own the same stocks in different schemes, leading to 'false diversification'. Select your funds below to see how much they overlap and get actionable advice to optimize your portfolio."
     },
     "tool": {
-      "title": "Compare Mutual Fund Holdings",
-      "description": "Select at least two funds to begin.",
-      "add_fund": "Add Another Fund",
+      "title": "Check Your Fund Overlap",
+      "description": "Select your funds from the list to see the overlap analysis.",
+      "add_fund": "Add Fund",
       "export_csv": "Export CSV",
       "copy_summary": "Copy Summary"
     },
     "what_is_overlap": {
-      "h2": "What is Mutual Fund Overlap & Why Does it Matter?",
-      "body": "Mutual fund overlap occurs when two or more funds in your portfolio hold the same stocks. While some overlap is normal (especially in large-cap funds), high overlap can lead to <strong>over-concentration</strong> and <strong>‘diworsification’</strong> — where you think you're diversified but are actually holding the same underlying assets. This calculator helps you uncover that hidden risk."
+      "h2": "What is Mutual Fund Overlap and Why Does It Matter?",
+      "body": "Mutual fund overlap occurs when two or more funds in your portfolio hold the same stocks. While it's normal to have some overlap, especially in large-cap funds that track similar benchmarks, high overlap can lead to several problems:<ul><li><strong>False Diversification:</strong> You might think you're diversified across 5-6 funds, but if they all own HDFC Bank, Reliance, and ICICI Bank as their top holdings, your portfolio's performance is heavily tied to just a few companies.</li><li><strong>Concentrated Risk:</strong> If a specific stock or sector that is common across your funds performs poorly, your entire portfolio takes a bigger hit than you'd expect.</li><li><strong>Duplicate Expense Ratios:</strong> You're essentially paying multiple fund managers (via expense ratios) to buy and manage the same set of stocks, leading to inefficient costs.</li></ul>Understanding what is mutual fund overlap is the first step to building a truly diversified and resilient portfolio. Our calculator helps you quantify this risk instantly."
     },
     "how_it_works": {
       "h2": "How Our Mutual Fund Overlap Calculator Works",
-      "body": "Our tool compares the holdings of your selected funds and calculates the <strong>weighted overlap</strong>. This metric tells you what percentage of your portfolio is duplicated between two funds, based on the smaller weight for each common stock.<br/><br/><strong>Example:</strong> If Fund A holds 5% in ICICI Bank and Fund B holds 6%, the overlap contribution from that stock is 5% (the minimum of the two). We sum this for all common stocks to get the total weighted overlap."
+      "body": "<h3>Inputs We Use</h3><p>To provide an accurate analysis, our tool uses the latest available portfolio data sourced from official AMFI records and fund house disclosures. You can enter:</p><ul><li><strong>Fund Names:</strong> Simply start typing the name of the fund (e.g., 'Parag Parikh Flexi Cap').</li><li><strong>AMFI Code:</strong> For precise identification, you can use the unique AMFI code of each scheme.</li><li><strong>Number of Funds:</strong> Compare two or more funds simultaneously to get a complete portfolio view.</li></ul><h3>Calculation Methodology</h3><p>We calculate overlap using two standard industry methods:</p><ol><li><strong>Simple Overlap % (Common-Weight):</strong><br/><code>Overlap% = (Sum of weights of common stocks) / (min(Total Equity Weight of Fund A, Total Equity Weight of Fund B)) * 100</code></li><li><strong>Weighted Overlap % (Recommended):</strong><br/><code>WeightedOverlap = Σ min(wA_i, wB_i)</code><br/>This formula sums the minimum weight of each common stock 'i' across Fund A and Fund B. It gives a more accurate picture of true portfolio concentration.</li></ol><p>For a detailed breakdown, please see our Methodology section.</p>"
     },
     "live_example": {
-      "h2": "Live Example: ICICI Pru Bluechip vs HDFC Top 100",
-      "intro": "Here is a pre-rendered example showing a typical comparison. The funds have a <strong>27.02%</strong> weighted overlap.",
-      "result_summary": "This is a <strong>Moderate</strong> level of overlap, common for large-cap funds tracking similar benchmarks. The top 5 common stocks alone contribute over 18% to this overlap.",
+      "h2": "Live Example — Fund A vs Fund B",
+      "intro": "Let's compare two popular large-cap funds to see overlap in action: 'ICICI Pru Bluechip' vs 'HDFC Top 100'. This example is for illustrative purposes only.",
+      "result_summary": "The weighted overlap between these two funds is approximately 45%. This is considered high, meaning you have significant concentration in the same large-cap names.",
       "top_stocks_title": "Top 5 Overlapping Stocks",
       "top_stocks": [
         { "name": "ICICI Bank", "weight": "5.21%" },
@@ -1151,34 +1151,51 @@
       ]
     },
     "interpreting_results": {
-      "h2": "How to Interpret Your Overlap Score",
-      "body": "<ul><li><strong>Low (0-15%):</strong> Good diversification. The funds have distinct strategies.</li><li><strong>Moderate (15-30%):</strong> Common for funds in the same category (e.g., large-cap). Review to ensure you're comfortable with the shared exposure.</li><li><strong>High (30-50%):</strong> Significant overlap. You might be paying two sets of fees for the same stocks. Consider consolidating.</li><li><strong>Very High (>50%):</strong> The funds are practically clones. Replacing one to improve diversification is highly recommended.</li></ul>"
+        "h2": "Interpreting Your Overlap Results",
+        "body": "<h3>Overlap Percentage Thresholds</h3><p>Here are some general guidelines to interpret your overlap score:</p><ul><li><strong>0-10% (Low):</strong> The funds are well-differentiated. This is ideal for funds in different categories (e.g., a large-cap and a small-cap fund).</li><li><strong>10-30% (Moderate):</strong> Some common holdings exist, which is normal for funds in the same category. No immediate action is typically needed, but it's good to be aware.</li><li><strong>30-60% (High):</strong> Your funds are significantly similar. You may be taking on concentrated risk and paying duplicate fees. Consider re-evaluating your portfolio.</li><li><strong>>60% (Very High):</strong> The funds are practically clones. Holding both is highly inefficient and offers little to no diversification benefit. It's strongly recommended to consolidate.</li></ul><h3>Sector vs. Stock Overlap</h3><p>Our tool shows both. High sector overlap (e.g., both funds are 30% in financials) can be a concern, but high stock overlap within that sector is a bigger red flag.</p>"
     },
     "what_to_do": {
-      "h2": "What to Do If You Have High Overlap",
-      "body": "If you find high overlap, don't panic. Consider replacing one of the funds with another that has a different strategy or market-cap focus. For instance, if two large-cap funds overlap, you could switch one to a mid-cap or sector-specific fund to achieve true diversification."
+        "h2": "What To Do Next — Actionable Steps & Decision Flow",
+        "body": "<h3>Replace, Rebalance, or Accept?</h3><p>Once you have your overlap score, use this flowchart to decide your next move:</p>",
+        "tax_considerations": "<h3>Tax & Exit Load Considerations in India</h3><p>Before selling a fund, always consider the tax implications. For equity funds, gains are taxed as Short-Term Capital Gains (STCG) if sold within one year, and Long-Term Capital Gains (LTCG) after that. Also, check for any exit loads, which are fees charged for redeeming units within a certain period (usually 1 year).</p>"
     },
     "faq": {
       "h2": "Frequently Asked Questions",
       "faqs": [
-        { "q": "How is mutual fund overlap calculated?", "a": "We calculate weighted overlap by summing the minimum weight of each common stock held by two funds. The formula is: Σ min(Weight_Fund_A, Weight_Fund_B) for all common stocks." },
-        { "q": "Is 30% overlap in mutual funds bad?", "a": "A 30% overlap is considered high. While not necessarily 'bad', it suggests you might be paying two expense ratios for very similar holdings, which reduces diversification. It's worth reviewing if both funds are needed for your portfolio." },
-        { "q": "How do you check for overlap in mutual funds?", "a": "Simply select 2 to 5 Indian equity funds from the dropdown menus in our calculator. The tool will automatically fetch the latest holdings data and calculate the pairwise overlap for you." },
-        { "q": "What type of funds have the most overlap?", "a": "Large-cap and index funds tend to have the most overlap because they track similar benchmarks (like the NIFTY 50 or Sensex) and invest in the same set of top blue-chip companies." }
+        { "q": "What is mutual fund overlap?", "a": "Mutual fund overlap occurs when two or more funds in your portfolio hold the same stocks." },
+        { "q": "How do you calculate mutual fund overlap %?", "a": "We calculate weighted overlap by summing the minimum weight of each common stock held by two funds. The formula is: Σ min(Weight in Fund A, Weight in Fund B) for all common stocks." },
+        { "q": "How much overlap is too much between two mutual funds?", "a": "An overlap of 30% or more is considered high. It suggests you may be paying two expense ratios for similar holdings, which reduces diversification." },
+        { "q": "How to check overlap between two mutual funds in India?", "a": "Select 2 to 5 Indian equity funds from the dropdown menus in our calculator. The tool automatically fetches the latest holdings data and computes the pairwise overlap for you." },
+        { "q": "Does sector overlap matter more than stock overlap?", "a": "High sector overlap can be a concern, but high stock overlap within that sector is a bigger red flag." },
+        { "q": "Can SIPs in different funds create high overlap?", "a": "Yes, if you run SIPs in funds with similar strategies, you can unintentionally build high overlap. It's important to check periodically." },
+        { "q": "How often should I check overlap for my portfolio?", "a": "Reviewing overlap once a year or whenever you add a new fund is a good practice." },
+        { "q": "How to reduce overlap without changing my asset allocation?", "a": "Consider replacing one fund with another of a different style or strategy within the same category (e.g., swapping a growth fund for a value fund)." },
+        { "q": "Is fund overlap the same as correlation?", "a": "No, they are different. Overlap measures common holdings, while correlation measures how closely the funds' price movements track each other." },
+        { "q": "Can overlap increase my downside risk during a crash?", "a": "Yes, high overlap means your portfolio is more concentrated in the same stocks. If those stocks fall, your overall portfolio will take a larger hit." },
+        { "q": "Are international funds included in overlap calculations?", "a": "Currently, our tool primarily focuses on Indian equity funds. Support for international funds is coming soon." },
+        { "q": "What date are fund holdings taken from? How often are they updated?", "a": "The data is sourced from AMFI and fund house disclosures and is updated periodically. See our methodology section for the latest update date." },
+        { "q": "Is mutual fund overlap taxable?", "a": "Overlap itself is not a taxable event. However, if you sell a fund to reduce overlap, you may have to pay capital gains tax." },
+        { "q": "Can I use this calculator for 5+ funds?", "a": "Currently, you can compare up to 5 funds at once, which is sufficient for most portfolios." },
+        { "q": "What to do if two funds overlap 60%+?", "a": "With over 60% overlap, replacing one of the funds is highly recommended. Choose the one with the higher expense ratio or consistently lower performance." },
+        { "q": "Do you provide an API / embeddable widget?", "a": "We do not currently offer an API, but it is under consideration for future releases." },
+        { "q": "How accurate is the overlap calculation?", "a": "Our calculations are based on the latest available data and standard industry formulas. However, always verify with the official fund factsheets for any discrepancies." },
+        { "q": "How to replace a fund with a low-overlap alternative?", "a": "Research a fund with a different strategy (e.g., different market cap or sector focus) that fits your goals. Check its overlap with your existing funds using our tool before making the switch." },
+        { "q": "How do expense ratios affect the overlap decision?", "a": "When choosing between two funds with high overlap, keeping the one with the lower expense ratio is often the smarter choice, all other factors being equal." },
+        { "q": "What is the weighted-overlap formula and why is it better?", "a": "The weighted-overlap formula is Σ min(wA_i, wB_i). It's better than a simple count of common stocks because it considers the actual portfolio weight of each holding, giving a more accurate picture of concentration." }
       ]
     },
     "methodology": {
-      "h2": "Data & Methodology",
-      "body": "<p><strong>Data Source:</strong> Our holdings data is sourced from publicly available scheme documents and is updated periodically. While we strive for accuracy, we cannot guarantee it. Always verify with official AMC factsheets. <strong>Last Updated: August 2025.</strong></p><p><strong>Matching Logic:</strong> Holdings are first matched by their stock ticker (e.g., 'RELIANCE'). If a ticker is unavailable, we use a normalized company name (e.g., 'reliance industries' after removing 'Ltd', 'Inc', etc.). Non-equity holdings like 'Cash', 'Triparty Repo', or 'Net Receivables' are excluded from calculations based on a regex match for common terms.</p><p><strong>Worked Example (Weighted Overlap):</strong></p><p>Weighted Overlap = Σ min(Weight in Fund A, Weight in Fund B) for all common stocks.</p><div class='overflow-x-auto'><table class='w-full text-sm my-4'><thead><tr class='border-b'><th class='text-left p-2'>Stock</th><th class='text-right p-2'>Fund A (w%)</th><th class='text-right p-2'>Fund B (w%)</th><th class='text-right p-2'>Min. Weight</th></tr></thead><tbody><tr class='border-b'><td class='p-2'>ICICI Bank</td><td class='text-right p-2'>5.21</td><td class='text-right p-2'>6.03</td><td class='text-right p-2'>5.21</td></tr><tr class='border-b'><td class='p-2'>Infosys</td><td class='text-right p-2'>4.67</td><td class='text-right p-2'>5.06</td><td class='text-right p-2'>4.67</td></tr><tr class='border-b'><td class='p-2'>Axis Bank</td><td class='text-right p-2'>2.34</td><td class='text-right p-2'>3.45</td><td class='text-right p-2'>2.34</td></tr><tr class='border-b'><td class='p-2'>Bharti Airtel</td><td class='text-right p-2'>3.12</td><td class='text-right p-2'>4.50</td><td class='text-right p-2'>3.12</td></tr><tr class='border-b'><td class='p-2'>State Bank of India</td><td class='text-right p-2'>2.98</td><td class='text-right p-2'>3.80</td><td class='text-right p-2'>2.98</td></tr><tr><td colspan='3' class='text-right font-bold p-2'>...and for all 35 common stocks...</td><td class='text-right font-bold p-2'></td></tr><tr class='border-t'><td colspan='3' class='text-right font-bold p-2'>Total Weighted Overlap</td><td class='text-right font-bold p-2'>27.02%</td></tr></tbody></table></div>"
+      "h2": "Methodology & Data Sources",
+      "body": "<p>This calculator uses portfolio data sourced from AMFI (Association of Mutual Funds in India) and is updated periodically. The overlap is calculated using both a simple common-weight method and a more accurate weighted overlap formula to give you a comprehensive view. For any discrepancies, please refer to the official fund factsheet from the respective Asset Management Company (AMC).</p><h3>Weighted Overlap (Used)</h3><p>For funds A and B, with constituents {i} and weights wA_i, wB_i (fractions; sum of equity weights ≤ 1):<br/><code>WeightedOverlap(A,B) = Σ_i min(wA_i, wB_i)</code></p><p>Result expressed as % of equity exposure:<br/><code>WeightedOverlapPct = WeightedOverlap(A,B) * 100</code></p><h3>Notes:</h3><ul><li>Cash/debt portion is excluded from overlap (we normalize to total equity weight when comparing funds across different equity allocation).</li><li>If only top-N holdings are available, we display `coverage = Σ_topN weights`. If coverage < 80%, results are flagged as “partial”.</li></ul>"
     },
     "results": {
         "weighted_overlap_title": "Weighted Overlap",
-        "top_stocks_title": "Top Common Stocks",
+        "top_stocks_title": "Top Overlapping Stocks",
         "stock_header": "Stock",
         "min_weight_header": "Min. Weight"
     }
   },
-  "ups_pension_calculator": {
+   "ups_pension_calculator": {
     "meta_title": "UPS Pension Calculator | BharatSaver",
     "meta_description": "Estimate your potential pension amount under the Universal Pension Scheme (UPS) with our easy-to-use calculator.",
     "h1": "UPS Pension Calculator"
@@ -1206,5 +1223,3 @@
     "result_reasoning": "Why we recommend this:"
   }
 }
-
-    
