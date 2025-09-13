@@ -177,6 +177,8 @@ export function UpsPensionCalculator({ dictionary }: CalculatorProps) {
   const formatCurrency = (value: number) => {
     return value.toLocaleString('en-IN', { style: 'currency', currency: 'INR', minimumFractionDigits: 0, maximumFractionDigits: 0 });
   }
+  
+  const formValues = form.getValues();
 
   return (
     <>
@@ -230,6 +232,26 @@ export function UpsPensionCalculator({ dictionary }: CalculatorProps) {
               </div>
             </div>
 
+             {result && (
+              <div className="mt-6 text-sm font-mono bg-muted p-4 rounded-md">
+                  <h4 className="font-semibold text-foreground mb-2">{dictionary.calculation_transcript.title}</h4>
+                  <p><strong>{dictionary.calculation_transcript.inputs_title}</strong></p>
+                  <p>  {dictionary.calculation_transcript.basic_pay} = {formatCurrency(formValues.basicPay)}</p>
+                  <p>  {dictionary.calculation_transcript.da_percentage} = {formValues.daPercentage}%</p>
+                  <p>  {dictionary.calculation_transcript.pensionable_salary} = {formatCurrency(formValues.basicPay)} * (1 + {formValues.daPercentage}/100) = <strong>{formatCurrency(result.steps.pensionableSalary)}</strong></p>
+                  <p className="mt-2"><strong>{dictionary.calculation_transcript.formula_title}</strong></p>
+                  <p>  {dictionary.calculation_transcript.monthly_pension_formula}</p>
+                  <p><strong>{dictionary.calculation_transcript.numbers_title}</strong></p>
+                  <p>  {dictionary.calculation_transcript.pension_factor} = {result.steps.pensionFactor}</p>
+                  <p>  {dictionary.calculation_transcript.service_years} = {formValues.qualifyingServiceYears}</p>
+                  <p>  {dictionary.calculation_transcript.divisor} = {result.steps.divisor}</p>
+                  <p className="mt-2"><strong>{dictionary.calculation_transcript.compute_title}</strong></p>
+                  <p>  {dictionary.calculation_transcript.monthly_pension} = ({formatCurrency(result.steps.pensionableSalary)} * {result.steps.pensionFactor} * {formValues.qualifyingServiceYears}) / {result.steps.divisor} = <strong>{formatCurrency(result.monthlyPension)}</strong></p>
+                  <p>  {dictionary.calculation_transcript.family_pension} = {formatCurrency(result.monthlyPension)} * 0.60 = <strong>{formatCurrency(result.familyPension)}</strong></p>
+              </div>
+            )}
+
+
             <div className="mt-6">
                 <ResponsiveContainer width="100%" height={250}>
                     <BarChart data={result.chartData} layout="vertical" margin={{ left: 50 }}>
@@ -271,7 +293,3 @@ export function UpsPensionCalculator({ dictionary }: CalculatorProps) {
     </>
   );
 }
-
-    
-
-    

@@ -1190,7 +1190,7 @@
     "meta_title": "UPS Pension Calculator 2025 — Estimate Monthly Pension, Family Pension & Lump Sum",
     "meta_description": "Free UPS Pension Calculator (2025). Enter basic pay, DA% & qualifying service to instantly calculate monthly UPS pension, family pension (60%) and commuted lump sum. Download Excel & view step-by-step transcript.",
     "h1": "UPS Pension Calculator — Estimate Your Unified Pension Scheme (UPS) Pension (2025)",
-    "hero_subtitle": "Use our free UPS Pension Calculator to estimate your monthly pension, family pension and possible commutation lump sum under the Unified Pension Scheme. Enter basic pay, DA% and qualifying service to get an instant, step-by-step calculation and a downloadable Excel.",
+    "hero_subtitle": "Use our free UPS Pension Calculator to estimate your monthly pension, family pension and possible commutation lump sum under the Unified Pension Scheme. Enter your last drawn Basic Pay, DA% and qualifying service to get an instant, step-by-step calculation, a permalinkable result you can share, and a downloadable Excel with the full transcript.",
     "last_reviewed_date": "August 2024",
     "interactive_tool": {
       "title": "UPS pension calculator online free",
@@ -1211,8 +1211,20 @@
         "family_pension": "Family Pension"
     },
     "calculation_transcript": {
-      "title": "Calculation Transcript — exactly how your pension was computed",
-      "formula": "Pension = (Pensionable_Salary × 0.5 × Service_Years) / 33"
+      "title": "Calculation Transcript (example)",
+      "inputs_title": "Inputs:",
+      "basic_pay": "Basic Pay",
+      "da_percentage": "DA%",
+      "pensionable_salary": "Pensionable Salary = Basic × (1 + DA%/100)",
+      "formula_title": "Formula:",
+      "monthly_pension_formula": "Monthly Pension = (Pensionable Salary × Pension Factor × Service Years) / Divisor",
+      "numbers_title": "Numbers:",
+      "pension_factor": "Pension Factor",
+      "service_years": "Service Years",
+      "divisor": "Divisor",
+      "compute_title": "Compute:",
+      "monthly_pension": "Monthly Pension",
+      "family_pension": "Family Pension (60%)"
     },
     "inputs": {
       "basic_pay": "Monthly Basic Pay (₹)",
@@ -1234,7 +1246,7 @@
       "body": "<h3>The Core Formula</h3><p>The calculation for your monthly pension under the Unified Pension Scheme follows a standard formula used for many government pensions. It is:</p><code>Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor</code><h3>What is pensionable salary under UPS</h3><p>This is typically the average of your basic pay over the last 10 or 12 months of your service before retirement. Our calculator uses the 'Last Drawn Basic Pay' as a proxy for simplicity. The formula is:</p><code>Pensionable Salary = Basic Pay × (1 + DA Percentage / 100)</code><h3>Pension Factor & Divisor</h3><p>The <strong>Pension Factor</strong> is generally 0.5 (representing 50% of the pensionable salary as the base pension). The <strong>Divisor</strong> is often set to 33, representing the standard number of qualifying service years for a full pension in many older schemes. The UPS may have its own specific values, which we incorporate based on the latest rules.</p>"
     },
     "worked_examples": {
-      "h2": "Worked Examples — pension for common salaries & service lengths",
+      "h2": "20 Worked Examples — pension for common salaries & service lengths",
       "scenario1": {
         "title": "How much pension will I get under UPS with basic ₹50,000",
         "body": "<strong>Inputs:</strong> Age 30, 30 years service, Basic Pay ₹50,000.<br/><strong>Result:</strong> We calculate the pensionable salary and apply the formula to show an estimated monthly pension of around ₹22,727."
