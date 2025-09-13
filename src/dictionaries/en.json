@@ -1211,18 +1211,19 @@
       "title": "Your Estimated Pension",
       "monthly_pension": "Monthly Pension",
       "family_pension": "Family Pension",
-      "lump_sum": "Lump Sum"
+      "lump_sum": "Lump Sum",
+      "chart_title": "Pension Component Allocation"
     },
     "how_it_works": {
-      "h2": "1. How the UPS Pension Calculator Works",
+      "h2": "How the UPS Pension Calculator Works",
       "body": "<h3>What inputs the calculator needs</h3><ul><li>Monthly Basic Pay: Your last drawn basic pay.</li><li>DA %: The applicable Dearness Allowance percentage.</li><li>Years and Months of Qualifying Service: Your total service duration.</li><li>Date of Joining/Retirement: To accurately calculate service length.</li></ul><h3>What outputs you’ll get</h3><p>You’ll get your estimated monthly pension, family pension, and any applicable lump sum.</p><p>This calculator uses the official government formula to estimate your pension. For a detailed breakdown of the math, please see our <a href='#methodology'>Methodology section</a>.</p>"
     },
     "formula_section": {
-      "h2": "3. UPS Pension Formula — Step by Step",
-      "body": "<h3>The Core Formula</h3><p>Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor. We use the official formula from NPSTRUST and government circulars.</p><h3>How to Calculate Pensionable Salary</h3><p>This is typically the average of your basic pay over the last 12 months of your service.</p><h3>Qualifying Service</h3><p>This includes full years and months of service. Any breaks in service may be deducted as per scheme rules.</p><h3>Family Pension &amp; Lump Sum Formulas</h3><p>Family pension is usually a percentage (e.g., 60%) of the basic pension. The lump sum, or commuted value, is calculated based on a commutation factor.</p>"
+      "h2": "UPS Pension Formula — Step by Step",
+      "body": "<h3>The Core Formula</h3><p>Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor. We use the official formula from NPSTRUST and government circulars.</p><h3>How to Calculate Pensionable Salary</h3><p>This is typically the average of your basic pay over the last 12 months of your service.</p><h3>Qualifying Service</h3><p>This includes full years and months of service. Any breaks in service may be deducted as per scheme rules.</p>"
     },
     "worked_examples": {
-      "h2": "4. Worked Examples (real scenarios)",
+      "h2": "Worked Examples (real scenarios)",
       "scenario1": {
         "title": "Example A — Young start, retire at 60",
         "body": "<strong>Inputs:</strong> Age 30, 30 years service, Basic Pay ₹50,000.<br/><strong>Result:</strong> We calculate the pensionable salary and apply the formula to show an estimated monthly pension of around ₹22,727."
@@ -1231,56 +1232,56 @@
         "title": "Example B — Mid-career joiner, 20 years service",
         "body": "<strong>Inputs:</strong> Age 40, 20 years service, Basic Pay ₹80,000.<br/><strong>Result:</strong> This scenario leads to a monthly pension of roughly ₹24,242, demonstrating the impact of a shorter service period despite a higher basic pay."
       },
-       "scenario3": {
+      "scenario3": {
         "title": "Example C — Long service 35 years with high basic pay",
         "body": "<strong>Inputs:</strong> Age 25, 35 years service, Basic Pay ₹1,00,000.<br/><strong>Result:</strong> This scenario results in a significantly higher pension of approximately ₹53,030, showing the power of a long service duration."
       }
     },
     "family_pension": {
-        "h2": "5. Lump Sum &amp; Family Pension — Details &amp; How To Compute",
-        "body": "<h3>How UPS Family Pension Works</h3><p>Family pension provides financial security to the family in the unfortunate event of the pensioner's death. Under the Universal Pension Scheme (UPS), the spouse is typically entitled to receive a percentage of the basic pension as a family pension for their lifetime. This is often around 60% of the original pension, but can vary based on specific scheme rules.</p><h3>Lump Sum Computation</h3><p>At retirement, pensioners may have the option to 'commute' a portion of their pension, which means they receive a lump sum amount upfront in exchange for a lower monthly pension. The lump sum is calculated using a 'commutation factor' which depends on the pensioner's age at the time of retirement. Our UPS lump sum calculator uses these standard factors to provide an estimate. For example, if you choose to commute one-third of a ₹30,000 monthly pension, you would receive a lump sum and your monthly pension would be reduced to ₹20,000.</p>"
+      "h2": "Lump Sum &amp; Family Pension — Details &amp; How To Compute",
+      "body": "<h3>How UPS Family Pension Works</h3><p>Family pension provides financial security to the family in the unfortunate event of the pensioner's death. Under the Universal Pension Scheme (UPS), the spouse is typically entitled to receive a percentage of the basic pension as a family pension for their lifetime. This is often around 60% of the original pension, but can vary based on specific scheme rules.</p><h3>Lump Sum Computation</h3><p>At retirement, pensioners may have the option to 'commute' a portion of their pension, which means they receive a lump sum amount upfront in exchange for a lower monthly pension. The lump sum is calculated using a 'commutation factor' which depends on the pensioner's age at the time of retirement. Our UPS lump sum calculator uses these standard factors to provide an estimate. For example, if you choose to commute one-third of a ₹30,000 monthly pension, you would receive a lump sum and your monthly pension would be reduced to ₹20,000.</p>"
     },
-     "comparison": {
-      "h2": "6. UPS vs NPS — Which is Better?",
+    "comparison": {
+      "h2": "UPS vs NPS — Which is Better?",
       "body": "<h3>Structural Differences</h3><p>The main difference lies in their structure: UPS is a <strong>Defined Benefit</strong> scheme, offering a guaranteed pension based on your salary and service years. NPS is a <strong>Defined Contribution</strong> scheme, where your final corpus depends on your contributions and market performance.</p><table class='w-full text-left border-collapse my-4'><thead><tr class='border-b'><th class='p-2'>Feature</th><th class='p-2'>UPS</th><th class='p-2'>NPS</th></tr></thead><tbody><tr class='border-b'><td class='p-2'>Return Type</td><td class='p-2'>Guaranteed (Defined Benefit)</td><td class='p-2'>Market-linked (Defined Contribution)</td></tr><tr class='border-b'><td class='p-2'>Risk</td><td class='p-2'>Zero risk for employee</td><td class='p-2'>Market risk borne by employee</td></tr><tr><td class='p-2'>Best For</td><td class='p-2'>Those seeking a predictable, secure income</td><td class='p-2'>Those willing to take market risk for potentially higher returns</td></tr></tbody></table><h3>When UPS Makes More Sense vs. NPS</h3><p>Choose UPS if you prioritize a predictable, government-guaranteed income stream without any market volatility. Choose NPS if you are comfortable with market risks and want the potential for higher wealth creation over the long term.</p>"
     },
     "tax_rules": {
-        "h2": "7. Taxation &amp; Withdrawal Rules (India-specific)",
-        "body": "<h3>Tax Treatment of Pension &amp; Lump Sum</h3><p>The monthly pension received from UPS is generally taxable as 'Income from Salary'. A lump sum amount received on commutation may be partially or fully exempt under Section 10(10A) of the Income Tax Act. The rules around UPS pension tax treatment can be complex, and it is crucial to understand whether your UPS pension is taxable based on your specific situation. Please consult a Chartered Accountant for personalized tax advice.</p><h3>Exit/Load Considerations</h3><p>As this is a government pension scheme, there are no exit loads. Rules for withdrawal and commutation are governed by service rules. It's important to note that this is not financial or tax advice; always consult a professional for guidance tailored to your circumstances.</p>"
+      "h2": "Taxation &amp; Withdrawal Rules (India-specific)",
+      "body": "<h3>Tax Treatment of Pension &amp; Lump Sum</h3><p>The monthly pension received from UPS is generally taxable as 'Income from Salary'. A lump sum amount received on commutation may be partially or fully exempt under Section 10(10A) of the Income Tax Act. The rules around UPS pension tax treatment can be complex, and it is crucial to understand whether your UPS pension is taxable based on your specific situation. Please consult a Chartered Accountant for personalized tax advice.</p><h3>Exit/Load Considerations</h3><p>As this is a government pension scheme, there are no exit loads. Rules for withdrawal and commutation are governed by service rules. It's important to note that this is not financial or tax advice; always consult a professional for guidance tailored to your circumstances.</p>"
     },
     "optimization": {
-      "h2": "8. How to Reduce Tax / Optimize Your UPS Pension",
+      "h2": "How to Reduce Tax / Optimize Your UPS Pension",
       "body": "<h3>Practical Tips</h3><p>While UPS provides a fixed pension, you can still make smart moves to optimize your overall retirement income. Consider these tips for your UPS pension planning:</p><ul><li><strong>Spouse's Financial Plan:</strong> Ensure your spouse's investments are structured to complement your pension, creating a diversified household income.</li><li><strong>Timing of Commutation:</strong> The decision to take a lump sum (commute) versus a higher monthly pension depends on your immediate needs and other income sources. If you have a high-return investment opportunity, a lump sum might be beneficial.</li></ul><h3>When to take Annuity, SWP or other post-retirement strategies</h3><p>Your UPS pension provides a stable, risk-free base. You can build on this with other instruments:</p><ul><li><strong>Systematic Withdrawal Plan (SWP):</strong> For additional income, you can set up an SWP from your mutual fund investments. This offers more flexibility than a pension but comes with market risk.</li><li><strong>Annuity from other savings:</strong> If you have other retirement savings (e.g., from NPS or mutual funds), you can purchase an annuity for additional guaranteed income.</li></ul>"
     },
     "methodology": {
-      "h2": "9. Methodology &amp; Sources (Show your Math)",
+      "h2": "Methodology &amp; Sources (show your math)",
       "body": "<p>This calculator uses data and formulas from official sources such as NPSTRUST, PFRDA circulars, and government notifications. Key assumptions include the DA percentage and commutation factors, which are subject to change. Last updated: August 2024.</p>"
     },
-    "faq_title": "10. Frequently Asked Questions (FAQ)",
+    "faq_title": "Frequently Asked Questions (FAQ)",
     "faqs": [
-        { "q": "What is the UPS pension formula?", "a": "The monthly UPS pension = (Pensionable Salary × Pension Factor × Qualifying Service) / [Scheme Divisor]. Pensionable Salary is the average basic pay of the last 12 months." },
-        { "q": "How do I calculate my monthly UPS pension?", "a": "Use our calculator by entering your basic pay, DA percentage, and years of service. It applies the official formula to give you an accurate estimate." },
-        { "q": "What inputs do I need for the UPS Pension Calculator?", "a": "You'll need your last drawn monthly basic pay, the current DA percentage, and your total qualifying years of service." },
-        { "q": "How is the pensionable salary calculated under UPS?", "a": "It is typically the average of your basic pay over the last 10 or 12 months of your service, depending on the specific rules applicable to your department." },
-        { "q": "How much family pension will my spouse get under UPS?", "a": "The family pension is usually a percentage of the basic pension, often around 60%, but this can vary. Our calculator provides an estimate based on standard rules." },
-        { "q": "What is the minimum pension under UPS in 2025?", "a": "The minimum pension amount is determined by government regulations and can change. Please refer to official circulars for the most current figures." },
-        { "q": "Can I use this calculator for partial years of service?", "a": "Yes, our calculator can handle partial years and months of service for a more accurate calculation." },
-        { "q": "How often should I update assumptions (inflation, DA) when using this calculator?", "a": "It's good practice to re-calculate your estimated pension whenever there is a significant change in the DA percentage or your pay scale." },
-        { "q": "Is UPS better than NPS for government employees?", "a": "UPS offers a defined, guaranteed pension, which is lower-risk. NPS is market-linked and offers potentially higher returns but with market risk. The choice depends on your risk appetite." },
-        { "q": "How is the lump sum calculated under UPS?", "a": "The lump sum is the 'commuted' part of your pension, calculated using a specific commutation factor based on your age at retirement." },
-        { "q": "Are UPS pensions taxable?", "a": "Yes, the monthly pension received is taxable under the head 'Income from Salary'. The commuted (lump sum) portion may be partially or fully exempt." },
-        { "q": "Can I download the UPS pension calculation as an Excel file?", "a": "Yes, our tool provides an option to download your detailed pension calculation as an Excel file for your records." },
-        { "q": "How accurate is this UPS Pension Calculator?", "a": "This calculator uses official formulas and provides a highly accurate estimate. However, for a final, binding figure, always refer to your official pension sanctioning authority." },
-        { "q": "What date are the fund rules or pension rules based on?", "a": "The calculations are based on the latest rules and circulars available as of the 'Last Updated' date mentioned in our Methodology section." },
-        { "q": "Can this calculator handle family pension for multiple beneficiaries?", "a": "This calculator primarily estimates the pension for a single spouse beneficiary. Rules for other dependents can be complex and should be verified with official sources." }
+      { "q": "What is the UPS pension formula?", "a": "The monthly UPS pension = (Pensionable Salary × Pension Factor × Qualifying Service) / [Scheme Divisor]. Pensionable Salary is the average basic pay of the last 12 months." },
+      { "q": "How do I calculate my monthly UPS pension?", "a": "Use our calculator by entering your basic pay, DA percentage, and years of service. It applies the official formula to give you an accurate estimate." },
+      { "q": "What inputs do I need for the UPS Pension Calculator?", "a": "You'll need your last drawn monthly basic pay, the current DA percentage, and your total qualifying years of service." },
+      { "q": "How is the pensionable salary calculated under UPS?", "a": "It is typically the average of your basic pay over the last 10 or 12 months of your service, depending on the specific rules applicable to your department." },
+      { "q": "How much family pension will my spouse get under UPS?", "a": "The family pension is usually a percentage of the basic pension, often around 60%, but this can vary. Our calculator provides an estimate based on standard rules." },
+      { "q": "What is the minimum pension under UPS in 2025?", "a": "The minimum pension amount is determined by government regulations and can change. Please refer to official circulars for the most current figures." },
+      { "q": "Can I use this calculator for partial years of service?", "a": "Yes, our calculator can handle partial years and months of service for a more accurate calculation." },
+      { "q": "How often should I update assumptions (inflation, DA) when using this calculator?", "a": "It's good practice to re-calculate your estimated pension whenever there is a significant change in the DA percentage or your pay scale." },
+      { "q": "Is UPS better than NPS for government employees?", "a": "UPS offers a defined, guaranteed pension, which is lower-risk. NPS is market-linked and offers potentially higher returns but with market risk. The choice depends on your risk appetite." },
+      { "q": "How is the lump sum calculated under UPS?", "a": "The lump sum is the 'commuted' part of your pension, calculated using a specific commutation factor based on your age at retirement." },
+      { "q": "Are UPS pensions taxable?", "a": "Yes, the monthly pension received is taxable under the head 'Income from Salary'. The commuted (lump sum) portion may be partially or fully exempt." },
+      { "q": "Can I download the UPS pension calculation as an Excel file?", "a": "Yes, our tool provides an option to download your detailed pension calculation as an Excel file for your records." },
+      { "q": "How accurate is this UPS Pension Calculator?", "a": "This calculator uses official formulas and provides a highly accurate estimate. However, for a final, binding figure, always refer to your official pension sanctioning authority." },
+      { "q": "What date are the fund rules or pension rules based on?", "a": "The calculations are based on the latest rules and circulars available as of the 'Last Updated' date mentioned in our Methodology section." },
+      { "q": "Can this calculator handle family pension for multiple beneficiaries?", "a": "This calculator primarily estimates the pension for a single spouse beneficiary. Rules for other dependents can be complex and should be verified with official sources." }
     ],
     "ctas": {
-        "h2": "11. Get Help — Book a consultation / Download Excel / Share results",
-        "body": "Get a personalised pension plan or download your calculation as an Excel template. Share your results with family or a financial advisor."
+      "h2": "Get Help — Book a consultation / Download Excel / Share results",
+      "body": "Get a personalised pension plan or download your calculation as an Excel template. Share your results with family or a financial advisor."
     },
     "disclaimer": {
-        "title": "12. References &amp; Legal Disclaimer",
-        "body": "This is an illustrative tool and not financial advice. Please consult official government circulars and a qualified financial advisor for binding calculations."
+      "title": "References &amp; Legal Disclaimer",
+      "body": "This is an illustrative tool and not financial advice. Please consult official government circulars and a qualified financial advisor for binding calculations."
     }
   },
   "scheme_selector": {
