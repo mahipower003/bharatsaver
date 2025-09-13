@@ -2,98 +2,1347 @@
 [
   {
     "source": "tickertape",
-    "fetched_at_unix": 1722336000,
-    "fund_name": "ICICI Prudential Bluechip Fund",
-    "coverage_pct": 99.5,
-    "constituents_count": 50,
-    "constituents": [
-      { "company": "ICICI Bank Ltd.", "ticker": "ICICIBANK", "weight_pct": 9.5 },
-      { "company": "Infosys Ltd.", "ticker": "INFY", "weight_pct": 7.5 },
-      { "company": "Reliance Industries Ltd.", "ticker": "RELIANCE", "weight_pct": 7.0 },
-      { "company": "HDFC Bank Ltd.", "ticker": "HDFCBANK", "weight_pct": 6.5 },
-      { "company": "Larsen & Toubro Ltd.", "ticker": "LT", "weight_pct": 5.0 },
-      { "company": "Bharti Airtel Ltd.", "ticker": "BHARTIARTL", "weight_pct": 4.5 },
-      { "company": "Axis Bank Ltd.", "ticker": "AXISBANK", "weight_pct": 4.0 },
-      { "company": "Maruti Suzuki India Ltd.", "ticker": "MARUTI", "weight_pct": 3.5 },
-      { "company": "Sun Pharmaceutical Industries Ltd.", "ticker": "SUNPHARMA", "weight_pct": 3.0 },
-      { "company": "State Bank of India", "ticker": "SBIN", "weight_pct": 2.8 }
-    ]
-  },
-  {
-    "source": "tickertape",
-    "fetched_at_unix": 1722336000,
-    "fund_name": "HDFC Top 100 Fund",
-    "coverage_pct": 98.9,
+    "fetched_at_unix": 1722300095,
+    "fund_name": "ICICI Prudential Bluechip Fund - Growth",
+    "coverage_pct": 99.8,
     "constituents_count": 52,
     "constituents": [
-      { "company": "HDFC Bank Ltd.", "ticker": "HDFCBANK", "weight_pct": 9.8 },
-      { "company": "ICICI Bank Ltd.", "ticker": "ICICIBANK", "weight_pct": 8.2 },
-      { "company": "Reliance Industries Ltd.", "ticker": "RELIANCE", "weight_pct": 7.5 },
-      { "company": "Infosys Ltd.", "ticker": "INFY", "weight_pct": 6.1 },
-      { "company": "State Bank of India", "ticker": "SBIN", "weight_pct": 5.5 },
-      { "company": "Larsen & Toubro Ltd.", "ticker": "LT", "weight_pct": 4.8 },
-      { "company": "Bharti Airtel Ltd.", "ticker": "BHARTIARTL", "weight_pct": 4.2 },
-      { "company": "ITC Ltd.", "ticker": "ITC", "weight_pct": 3.7 },
-      { "company": "Tata Consultancy Services Ltd.", "ticker": "TCS", "weight_pct": 3.1 },
-      { "company": "Axis Bank Ltd.", "ticker": "AXISBANK", "weight_pct": 2.9 }
+      {
+        "company": "ICICI Bank",
+        "ticker": "ICICIBANK",
+        "weight_pct": 9.92
+      },
+      {
+        "company": "Infosys",
+        "ticker": "INFY",
+        "weight_pct": 6.83
+      },
+      {
+        "company": "Reliance Industries",
+        "ticker": "RELIANCE",
+        "weight_pct": 6.25
+      },
+      {
+        "company": "Larsen & Toubro",
+        "ticker": "LT",
+        "weight_pct": 5.48
+      },
+      {
+        "company": "Maruti Suzuki India",
+        "ticker": "MARUTI",
+        "weight_pct": 4.19
+      },
+      {
+        "company": "Bharti Airtel",
+        "ticker": "BHARTIARTL",
+        "weight_pct": 3.73
+      },
+      {
+        "company": "Sun Pharmaceutical Industries",
+        "ticker": "SUNPHARMA",
+        "weight_pct": 3.49
+      },
+      {
+        "company": "Axis Bank",
+        "ticker": "AXISBANK",
+        "weight_pct": 3.23
+      },
+      {
+        "company": "Mahindra & Mahindra",
+        "ticker": "M&M",
+        "weight_pct": 2.7
+      },
+      {
+        "company": "Hindustan Unilever",
+        "ticker": "HINDUNILVR",
+        "weight_pct": 2.45
+      },
+      {
+        "company": "ITC",
+        "ticker": "ITC",
+        "weight_pct": 2.29
+      },
+      {
+        "company": "State Bank of India",
+        "ticker": "SBIN",
+        "weight_pct": 2.2
+      },
+      {
+        "company": "UltraTech Cement",
+        "ticker": "ULTRACEMCO",
+        "weight_pct": 1.94
+      },
+      {
+        "company": "HCL Technologies",
+        "ticker": "HCLTECH",
+        "weight_pct": 1.89
+      },
+      {
+        "company": "Bajaj Auto",
+        "ticker": "BAJAJ-AUTO",
+        "weight_pct": 1.63
+      },
+      {
+        "company": "HDFC Bank",
+        "ticker": "HDFCBANK",
+        "weight_pct": 1.59
+      },
+      {
+        "company": "NTPC",
+        "ticker": "NTPC",
+        "weight_pct": 1.55
+      },
+      {
+        "company": "Oil & Natural Gas Corporation",
+        "ticker": "ONGC",
+        "weight_pct": 1.49
+      },
+      {
+        "company": "Wipro",
+        "ticker": "WIPRO",
+        "weight_pct": 1.48
+      },
+      {
+        "company": "Cipla",
+        "ticker": "CIPLA",
+        "weight_pct": 1.47
+      },
+      {
+        "company": "Power Grid Corporation of India",
+        "ticker": "POWERGRID",
+        "weight_pct": 1.34
+      },
+      {
+        "company": "Hindustan Aeronautics",
+        "ticker": "HAL",
+        "weight_pct": 1.3
+      },
+      {
+        "company": "Grasim Industries",
+        "ticker": "GRASIM",
+        "weight_pct": 1.25
+      },
+      {
+        "company": "Nestle India",
+        "ticker": "NESTLEIND",
+        "weight_pct": 1.15
+      },
+      {
+        "company": "Coal India",
+        "ticker": "COALINDIA",
+        "weight_pct": 1.11
+      },
+      {
+        "company": "Tata Motors",
+        "ticker": "TATAMOTORS",
+        "weight_pct": 1.05
+      },
+      {
+        "company": "Tata Steel",
+        "ticker": "TATASTEEL",
+        "weight_pct": 1.02
+      },
+      {
+        "company": "Eicher Motors",
+        "ticker": "EICHERMOT",
+        "weight_pct": 1
+      },
+      {
+        "company": "HDFC Life Insurance Company",
+        "ticker": "HDFCLIFE",
+        "weight_pct": 0.96
+      },
+      {
+        "company": "Britannia Industries",
+        "ticker": "BRITANNIA",
+        "weight_pct": 0.94
+      },
+      {
+        "company": "GAIL (India)",
+        "ticker": "GAIL",
+        "weight_pct": 0.93
+      },
+      {
+        "company": "Hero MotoCorp",
+        "ticker": "HEROMOTOCO",
+        "weight_pct": 0.84
+      },
+      {
+        "company": "Kotak Mahindra Bank",
+        "ticker": "KOTAKBANK",
+        "weight_pct": 0.74
+      },
+      {
+        "company": "Divi's Laboratories",
+        "ticker": "DIVISLAB",
+        "weight_pct": 0.7
+      },
+      {
+        "company": "Mankind Pharma",
+        "ticker": "MANKIND",
+        "weight_pct": 0.69
+      },
+      {
+        "company": "Zomato",
+        "ticker": "ZOMATO",
+        "weight_pct": 0.61
+      },
+      {
+        "company": "Titan Company",
+        "ticker": "TITAN",
+        "weight_pct": 0.58
+      },
+      {
+        "company": "Godrej Consumer Products",
+        "ticker": "GODREJCP",
+        "weight_pct": 0.58
+      },
+      {
+        "company": "FSN E-Commerce Ventures",
+        "ticker": "NYKAA",
+        "weight_pct": 0.53
+      },
+      {
+        "company": "Adani Ports and Special Economic Zone",
+        "ticker": "ADANIPORTS",
+        "weight_pct": 0.51
+      },
+      {
+        "company": "Tata Consultancy Services",
+        "ticker": "TCS",
+        "weight_pct": 0.47
+      },
+      {
+        "company": "SBI Life Insurance Company",
+        "ticker": "SBILIFE",
+        "weight_pct": 0.38
+      },
+      {
+        "company": "Tech Mahindra",
+        "ticker": "TECHM",
+        "weight_pct": 0.34
+      },
+      {
+        "company": "Dr. Reddy's Laboratories",
+        "ticker": "DRREDDY",
+        "weight_pct": 0.3
+      },
+      {
+        "company": "Bharat Electronics",
+        "ticker": "BEL",
+        "weight_pct": 0.28
+      },
+      {
+        "company": "Apollo Hospitals Enterprise",
+        "ticker": "APOLLOHOSP",
+        "weight_pct": 0.26
+      },
+      {
+        "company": "InterGlobe Aviation",
+        "ticker": "INDIGO",
+        "weight_pct": 0.25
+      },
+      {
+        "company": "Procter & Gamble Hygiene and Health Care",
+        "ticker": "PGHH",
+        "weight_pct": 0.22
+      },
+      {
+        "company": "Asian Paints",
+        "ticker": "ASIANPAINT",
+        "weight_pct": 0.17
+      },
+      {
+        "company": "Vedanta",
+        "ticker": "VEDL",
+        "weight_pct": 0.1
+      },
+      {
+        "company": "Others",
+        "ticker": null,
+        "weight_pct": 1.4
+      },
+      {
+        "company": "Cash & Equivalents",
+        "ticker": null,
+        "weight_pct": 0.2
+      }
     ]
   },
   {
     "source": "tickertape",
-    "fetched_at_unix": 1722336000,
-    "fund_name": "SBI Bluechip Fund",
-    "coverage_pct": 99.1,
-    "constituents_count": 51,
-    "constituents": [
-      { "company": "HDFC Bank Ltd.", "ticker": "HDFCBANK", "weight_pct": 9.9 },
-      { "company": "ICICI Bank Ltd.", "ticker": "ICICIBANK", "weight_pct": 8.5 },
-      { "company": "Reliance Industries Ltd.", "ticker": "RELIANCE", "weight_pct": 6.8 },
-      { "company": "Infosys Ltd.", "ticker": "INFY", "weight_pct": 5.9 },
-      { "company": "Larsen & Toubro Ltd.", "ticker": "LT", "weight_pct": 5.1 },
-      { "company": "State Bank of India", "ticker": "SBIN", "weight_pct": 4.5 },
-      { "company": "Bharti Airtel Ltd.", "ticker": "BHARTIARTL", "weight_pct": 3.9 },
-      { "company": "ITC Ltd.", "ticker": "ITC", "weight_pct": 3.5 },
-      { "company": "Kotak Mahindra Bank Ltd.", "ticker": "KOTAKBANK", "weight_pct": 3.0 },
-      { "company": "Hindustan Unilever Ltd.", "ticker": "HINDUNILVR", "weight_pct": 2.5 }
-    ]
-  },
-  {
-    "source": "tickertape",
-    "fetched_at_unix": 1722336000,
-    "fund_name": "Mirae Asset Large Cap Fund",
-    "coverage_pct": 99.8,
-    "constituents_count": 55,
-    "constituents": [
-        { "company": "HDFC Bank Ltd.", "ticker": "HDFCBANK", "weight_pct": 9.7 },
-        { "company": "ICICI Bank Ltd.", "ticker": "ICICIBANK", "weight_pct": 8.1 },
-        { "company": "Reliance Industries Ltd.", "ticker": "RELIANCE", "weight_pct": 7.2 },
-        { "company": "Infosys Ltd.", "ticker": "INFY", "weight_pct": 6.3 },
-        { "company": "Larsen & Toubro Ltd.", "ticker": "LT", "weight_pct": 4.9 },
-        { "company": "State Bank of India", "ticker": "SBIN", "weight_pct": 4.6 },
-        { "company": "Bharti Airtel Ltd.", "ticker": "BHARTIARTL", "weight_pct": 4.1 },
-        { "company": "Axis Bank Ltd.", "ticker": "AXISBANK", "weight_pct": 3.8 },
-        { "company": "ITC Ltd.", "ticker": "ITC", "weight_pct": 3.2 },
-        { "company": "Tata Consultancy Services Ltd.", "ticker": "TCS", "weight_pct": 2.9 }
-    ]
-  },
-  {
-    "source": "tickertape",
-    "fetched_at_unix": 1722336000,
-    "fund_name": "Axis Bluechip Fund",
-    "coverage_pct": 99.2,
+    "fetched_at_unix": 1722300095,
+    "fund_name": "HDFC Top 100 Fund - Growth",
+    "coverage_pct": 99.41,
     "constituents_count": 48,
     "constituents": [
-        { "company": "ICICI Bank Ltd.", "ticker": "ICICIBANK", "weight_pct": 9.2 },
-        { "company": "HDFC Bank Ltd.", "ticker": "HDFCBANK", "weight_pct": 8.8 },
-        { "company": "Infosys Ltd.", "ticker": "INFY", "weight_pct": 7.1 },
-        { "company": "Reliance Industries Ltd.", "ticker": "RELIANCE", "weight_pct": 6.9 },
-        { "company": "Bajaj Finance Ltd.", "ticker": "BAJFINANCE", "weight_pct": 5.5 },
-        { "company": "Tata Consultancy Services Ltd.", "ticker": "TCS", "weight_pct": 4.8 },
-        { "company": "Kotak Mahindra Bank Ltd.", "ticker": "KOTAKBANK", "weight_pct": 4.2 },
-        { "company": "Avenue Supermarts Ltd.", "ticker": "DMART", "weight_pct": 3.5 },
-        { "company": "Bharti Airtel Ltd.", "ticker": "BHARTIARTL", "weight_pct": 3.1 },
-        { "company": "Hindustan Unilever Ltd.", "ticker": "HINDUNILVR", "weight_pct": 2.8 }
+      {
+        "company": "ICICI Bank",
+        "ticker": "ICICIBANK",
+        "weight_pct": 8.76
+      },
+      {
+        "company": "HDFC Bank",
+        "ticker": "HDFCBANK",
+        "weight_pct": 7.91
+      },
+      {
+        "company": "Reliance Industries",
+        "ticker": "RELIANCE",
+        "weight_pct": 5.21
+      },
+      {
+        "company": "Infosys",
+        "ticker": "INFY",
+        "weight_pct": 4.67
+      },
+      {
+        "company": "Larsen & Toubro",
+        "ticker": "LT",
+        "weight_pct": 4.39
+      },
+      {
+        "company": "State Bank of India",
+        "ticker": "SBIN",
+        "weight_pct": 3.8
+      },
+      {
+        "company": "Bharti Airtel",
+        "ticker": "BHARTIARTL",
+        "weight_pct": 3.12
+      },
+      {
+        "company": "Axis Bank",
+        "ticker": "AXISBANK",
+        "weight_pct": 2.92
+      },
+      {
+        "company": "ITC",
+        "ticker": "ITC",
+        "weight_pct": 2.76
+      },
+      {
+        "company": "Tata Consultancy Services",
+        "ticker": "TCS",
+        "weight_pct": 2.61
+      },
+      {
+        "company": "Mahindra & Mahindra",
+        "ticker": "M&M",
+        "weight_pct": 2.34
+      },
+      {
+        "company": "Hindustan Aeronautics",
+        "ticker": "HAL",
+        "weight_pct": 2.14
+      },
+      {
+        "company": "Coal India",
+        "ticker": "COALINDIA",
+        "weight_pct": 2.1
+      },
+      {
+        "company": "HCL Technologies",
+        "ticker": "HCLTECH",
+        "weight_pct": 2.05
+      },
+      {
+        "company": "Sun Pharmaceutical Industries",
+        "ticker": "SUNPHARMA",
+        "weight_pct": 1.96
+      },
+      {
+        "company": "NTPC",
+        "ticker": "NTPC",
+        "weight_pct": 1.83
+      },
+      {
+        "company": "Hindustan Unilever",
+        "ticker": "HINDUNILVR",
+        "weight_pct": 1.76
+      },
+      {
+        "company": "Power Grid Corporation of India",
+        "ticker": "POWERGRID",
+        "weight_pct": 1.57
+      },
+      {
+        "company": "Oil & Natural Gas Corporation",
+        "ticker": "ONGC",
+        "weight_pct": 1.5
+      },
+      {
+        "company": "Tata Motors",
+        "ticker": "TATAMOTORS",
+        "weight_pct": 1.48
+      },
+      {
+        "company": "UltraTech Cement",
+        "ticker": "ULTRACEMCO",
+        "weight_pct": 1.42
+      },
+      {
+        "company": "Cipla",
+        "ticker": "CIPLA",
+        "weight_pct": 1.2
+      },
+      {
+        "company": "Grasim Industries",
+        "ticker": "GRASIM",
+        "weight_pct": 1.15
+      },
+      {
+        "company": "IndusInd Bank",
+        "ticker": "INDUSINDBK",
+        "weight_pct": 1.11
+      },
+      {
+        "company": "Wipro",
+        "ticker": "WIPRO",
+        "weight_pct": 1.05
+      },
+      {
+        "company": "Bharat Electronics",
+        "ticker": "BEL",
+        "weight_pct": 1.04
+      },
+      {
+        "company": "Tech Mahindra",
+        "ticker": "TECHM",
+        "weight_pct": 1.02
+      },
+      {
+        "company": "Maruti Suzuki India",
+        "ticker": "MARUTI",
+        "weight_pct": 0.94
+      },
+      {
+        "company": "Adani Ports and Special Economic Zone",
+        "ticker": "ADANIPORTS",
+        "weight_pct": 0.93
+      },
+      {
+        "company": "Power Finance Corporation",
+        "ticker": "PFC",
+        "weight_pct": 0.88
+      },
+      {
+        "company": "GAIL (India)",
+        "ticker": "GAIL",
+        "weight_pct": 0.86
+      },
+      {
+        "company": "Dr. Reddy's Laboratories",
+        "ticker": "DRREDDY",
+        "weight_pct": 0.81
+      },
+      {
+        "company": "Hindalco Industries",
+        "ticker": "HINDALCO",
+        "weight_pct": 0.77
+      },
+      {
+        "company": "Tata Steel",
+        "ticker": "TATASTEEL",
+        "weight_pct": 0.71
+      },
+      {
+        "company": "SRF",
+        "ticker": "SRF",
+        "weight_pct": 0.69
+      },
+      {
+        "company": "Shriram Finance",
+        "ticker": "SHRIRAMFIN",
+        "weight_pct": 0.67
+      },
+      {
+        "company": "Bajaj Auto",
+        "ticker": "BAJAJ-AUTO",
+        "weight_pct": 0.62
+      },
+      {
+        "company": "Eicher Motors",
+        "ticker": "EICHERMOT",
+        "weight_pct": 0.58
+      },
+      {
+        "company": "Samvardhana Motherson International",
+        "ticker": "MOTHERSON",
+        "weight_pct": 0.52
+      },
+      {
+        "company": "Aurobindo Pharma",
+        "ticker": "AUROPHARMA",
+        "weight_pct": 0.51
+      },
+      {
+        "company": "HDFC Life Insurance Company",
+        "ticker": "HDFCLIFE",
+        "weight_pct": 0.48
+      },
+      {
+        "company": "Mankind Pharma",
+        "ticker": "MANKIND",
+        "weight_pct": 0.44
+      },
+      {
+        "company": "Godrej Consumer Products",
+        "ticker": "GODREJCP",
+        "weight_pct": 0.4
+      },
+      {
+        "company": "Hero MotoCorp",
+        "ticker": "HEROMOTOCO",
+        "weight_pct": 0.38
+      },
+      {
+        "company": "Zydus Lifesciences",
+        "ticker": "ZYDUSLIFE",
+        "weight_pct": 0.36
+      },
+      {
+        "company": "Procter & Gamble Hygiene and Health Care",
+        "ticker": "PGHH",
+        "weight_pct": 0.33
+      },
+      {
+        "company": "Nestle India",
+        "ticker": "NESTLEIND",
+        "weight_pct": 0.17
+      },
+      {
+        "company": "Others",
+        "ticker": null,
+        "weight_pct": 1.48
+      },
+      {
+        "company": "Cash & Equivalents",
+        "ticker": null,
+        "weight_pct": 0.59
+      }
+    ]
+  },
+  {
+    "source": "tickertape",
+    "fetched_at_unix": 1722300095,
+    "fund_name": "SBI Bluechip Fund - Growth",
+    "coverage_pct": 99.78,
+    "constituents_count": 52,
+    "constituents": [
+      {
+        "company": "HDFC Bank",
+        "ticker": "HDFCBANK",
+        "weight_pct": 8.16
+      },
+      {
+        "company": "ICICI Bank",
+        "ticker": "ICICIBANK",
+        "weight_pct": 7.91
+      },
+      {
+        "company": "Larsen & Toubro",
+        "ticker": "LT",
+        "weight_pct": 5.03
+      },
+      {
+        "company": "ITC",
+        "ticker": "ITC",
+        "weight_pct": 4.54
+      },
+      {
+        "company": "Infosys",
+        "ticker": "INFY",
+        "weight_pct": 4.19
+      },
+      {
+        "company": "Reliance Industries",
+        "ticker": "RELIANCE",
+        "weight_pct": 3.79
+      },
+      {
+        "company": "Kotak Mahindra Bank",
+        "ticker": "KOTAKBANK",
+        "weight_pct": 3.65
+      },
+      {
+        "company": "Bajaj Finance",
+        "ticker": "BAJFINANCE",
+        "weight_pct": 3.23
+      },
+      {
+        "company": "Mahindra & Mahindra",
+        "ticker": "M&M",
+        "weight_pct": 2.76
+      },
+      {
+        "company": "Hindustan Unilever",
+        "ticker": "HINDUNILVR",
+        "weight_pct": 2.45
+      },
+      {
+        "company": "Tata Consultancy Services",
+        "ticker": "TCS",
+        "weight_pct": 2.39
+      },
+      {
+        "company": "Bharti Airtel",
+        "ticker": "BHARTIARTL",
+        "weight_pct": 2.05
+      },
+      {
+        "company": "Titan Company",
+        "ticker": "TITAN",
+        "weight_pct": 1.93
+      },
+      {
+        "company": "Sun Pharmaceutical Industries",
+        "ticker": "SUNPHARMA",
+        "weight_pct": 1.63
+      },
+      {
+        "company": "Nestle India",
+        "ticker": "NESTLEIND",
+        "weight_pct": 1.54
+      },
+      {
+        "company": "Asian Paints",
+        "ticker": "ASIANPAINT",
+        "weight_pct": 1.51
+      },
+      {
+        "company": "Eicher Motors",
+        "ticker": "EICHERMOT",
+        "weight_pct": 1.48
+      },
+      {
+        "company": "Britannia Industries",
+        "ticker": "BRITANNIA",
+        "weight_pct": 1.47
+      },
+      {
+        "company": "United Spirits",
+        "ticker": "MCDOWELL-N",
+        "weight_pct": 1.34
+      },
+      {
+        "company": "HCL Technologies",
+        "ticker": "HCLTECH",
+        "weight_pct": 1.3
+      },
+      {
+        "company": "Procter & Gamble Hygiene and Health Care",
+        "ticker": "PGHH",
+        "weight_pct": 1.25
+      },
+      {
+        "company": "Cipla",
+        "ticker": "CIPLA",
+        "weight_pct": 1.15
+      },
+      {
+        "company": "Dr. Reddy's Laboratories",
+        "ticker": "DRREDDY",
+        "weight_pct": 1.11
+      },
+      {
+        "company": "IndusInd Bank",
+        "ticker": "INDUSINDBK",
+        "weight_pct": 1.05
+      },
+      {
+        "company": "NTPC",
+        "ticker": "NTPC",
+        "weight_pct": 1.02
+      },
+      {
+        "company": "Tata Motors",
+        "ticker": "TATAMOTORS",
+        "weight_pct": 1
+      },
+      {
+        "company": "State Bank of India",
+        "ticker": "SBIN",
+        "weight_pct": 0.96
+      },
+      {
+        "company": "HDFC Life Insurance Company",
+        "ticker": "HDFCLIFE",
+        "weight_pct": 0.94
+      },
+      {
+        "company": "Grasim Industries",
+        "ticker": "GRASIM",
+        "weight_pct": 0.93
+      },
+      {
+        "company": "Cholamandalam Investment and Finance Company",
+        "ticker": "CHOLAFIN",
+        "weight_pct": 0.84
+      },
+      {
+        "company": "Mankind Pharma",
+        "ticker": "MANKIND",
+        "weight_pct": 0.74
+      },
+      {
+        "company": "Maruti Suzuki India",
+        "ticker": "MARUTI",
+        "weight_pct": 0.7
+      },
+      {
+        "company": "Hindustan Aeronautics",
+        "ticker": "HAL",
+        "weight_pct": 0.69
+      },
+      {
+        "company": "UltraTech Cement",
+        "ticker": "ULTRACEMCO",
+        "weight_pct": 0.61
+      },
+      {
+        "company": "Zomato",
+        "ticker": "ZOMATO",
+        "weight_pct": 0.58
+      },
+      {
+        "company": "GAIL (India)",
+        "ticker": "GAIL",
+        "weight_pct": 0.58
+      },
+      {
+        "company": "Power Grid Corporation of India",
+        "ticker": "POWERGRID",
+        "weight_pct": 0.53
+      },
+      {
+        "company": "Adani Ports and Special Economic Zone",
+        "ticker": "ADANIPORTS",
+        "weight_pct": 0.51
+      },
+      {
+        "company": "The Phoenix Mills",
+        "ticker": "PHOENIXLTD",
+        "weight_pct": 0.47
+      },
+      {
+        "company": "FSN E-Commerce Ventures",
+        "ticker": "NYKAA",
+        "weight_pct": 0.38
+      },
+      {
+        "company": "SBI Life Insurance Company",
+        "ticker": "SBILIFE",
+        "weight_pct": 0.34
+      },
+      {
+        "company": "Tube Investments of India",
+        "ticker": "TIINDIA",
+        "weight_pct": 0.3
+      },
+      {
+        "company": "Sheela Foam",
+        "ticker": "SFL",
+        "weight_pct": 0.28
+      },
+      {
+        "company": "Wipro",
+        "ticker": "WIPRO",
+        "weight_pct": 0.26
+      },
+      {
+        "company": "Carborundum Universal",
+        "ticker": "CARBORUNIV",
+        "weight_pct": 0.25
+      },
+      {
+        "company": "Cummins India",
+        "ticker": "CUMMINSIND",
+        "weight_pct": 0.22
+      },
+      {
+        "company": "Timken India",
+        "ticker": "TIMKEN",
+        "weight_pct": 0.17
+      },
+      {
+        "company": "Bharat Forge",
+        "ticker": "BHARATFORG",
+        "weight_pct": 0.1
+      },
+      {
+        "company": "Page Industries",
+        "ticker": "PAGEIND",
+        "weight_pct": 0.08
+      },
+      {
+        "company": "Axis Bank",
+        "ticker": "AXISBANK",
+        "weight_pct": 0.05
+      },
+      {
+        "company": "Others",
+        "ticker": null,
+        "weight_pct": 14.39
+      },
+      {
+        "company": "Cash & Equivalents",
+        "ticker": null,
+        "weight_pct": 0.22
+      }
+    ]
+  },
+  {
+    "source": "tickertape",
+    "fetched_at_unix": 1722300095,
+    "fund_name": "Mirae Asset Large Cap Fund - Growth",
+    "coverage_pct": 99.57,
+    "constituents_count": 64,
+    "constituents": [
+      {
+        "company": "HDFC Bank",
+        "ticker": "HDFCBANK",
+        "weight_pct": 9.29
+      },
+      {
+        "company": "ICICI Bank",
+        "ticker": "ICICIBANK",
+        "weight_pct": 7.92
+      },
+      {
+        "company": "Reliance Industries",
+        "ticker": "RELIANCE",
+        "weight_pct": 7.2
+      },
+      {
+        "company": "Infosys",
+        "ticker": "INFY",
+        "weight_pct": 5.01
+      },
+      {
+        "company": "Larsen & Toubro",
+        "ticker": "LT",
+        "weight_pct": 4.79
+      },
+      {
+        "company": "Bharti Airtel",
+        "ticker": "BHARTIARTL",
+        "weight_pct": 3.73
+      },
+      {
+        "company": "Axis Bank",
+        "ticker": "AXISBANK",
+        "weight_pct": 3.42
+      },
+      {
+        "company": "Tata Consultancy Services",
+        "ticker": "TCS",
+        "weight_pct": 3.3
+      },
+      {
+        "company": "State Bank of India",
+        "ticker": "SBIN",
+        "weight_pct": 3.1
+      },
+      {
+        "company": "Mahindra & Mahindra",
+        "ticker": "M&M",
+        "weight_pct": 2.76
+      },
+      {
+        "company": "Hindustan Unilever",
+        "ticker": "HINDUNILVR",
+        "weight_pct": 2.21
+      },
+      {
+        "company": "Maruti Suzuki India",
+        "ticker": "MARUTI",
+        "weight_pct": 1.94
+      },
+      {
+        "company": "Sun Pharmaceutical Industries",
+        "ticker": "SUNPHARMA",
+        "weight_pct": 1.89
+      },
+      {
+        "company": "NTPC",
+        "ticker": "NTPC",
+        "weight_pct": 1.83
+      },
+      {
+        "company": "HCL Technologies",
+        "ticker": "HCLTECH",
+        "weight_pct": 1.76
+      },
+      {
+        "company": "ITC",
+        "ticker": "ITC",
+        "weight_pct": 1.63
+      },
+      {
+        "company": "UltraTech Cement",
+        "ticker": "ULTRACEMCO",
+        "weight_pct": 1.59
+      },
+      {
+        "company": "Kotak Mahindra Bank",
+        "ticker": "KOTAKBANK",
+        "weight_pct": 1.55
+      },
+      {
+        "company": "Power Grid Corporation of India",
+        "ticker": "POWERGRID",
+        "weight_pct": 1.49
+      },
+      {
+        "company": "Hindustan Aeronautics",
+        "ticker": "HAL",
+        "weight_pct": 1.48
+      },
+      {
+        "company": "Oil & Natural Gas Corporation",
+        "ticker": "ONGC",
+        "weight_pct": 1.47
+      },
+      {
+        "company": "Cipla",
+        "ticker": "CIPLA",
+        "weight_pct": 1.34
+      },
+      {
+        "company": "Coal India",
+        "ticker": "COALINDIA",
+        "weight_pct": 1.3
+      },
+      {
+        "company": "Grasim Industries",
+        "ticker": "GRASIM",
+        "weight_pct": 1.25
+      },
+      {
+        "company": "Tata Motors",
+        "ticker": "TATAMOTORS",
+        "weight_pct": 1.15
+      },
+      {
+        "company": "Wipro",
+        "ticker": "WIPRO",
+        "weight_pct": 1.11
+      },
+      {
+        "company": "Bajaj Auto",
+        "ticker": "BAJAJ-AUTO",
+        "weight_pct": 1.05
+      },
+      {
+        "company": "Adani Ports and Special Economic Zone",
+        "ticker": "ADANIPORTS",
+        "weight_pct": 1.02
+      },
+      {
+        "company": "Eicher Motors",
+        "ticker": "EICHERMOT",
+        "weight_pct": 1
+      },
+      {
+        "company": "HDFC Life Insurance Company",
+        "ticker": "HDFCLIFE",
+        "weight_pct": 0.96
+      },
+      {
+        "company": "Dr. Reddy's Laboratories",
+        "ticker": "DRREDDY",
+        "weight_pct": 0.94
+      },
+      {
+        "company": "GAIL (India)",
+        "ticker": "GAIL",
+        "weight_pct": 0.93
+      },
+      {
+        "company": "Hindalco Industries",
+        "ticker": "HINDALCO",
+        "weight_pct": 0.84
+      },
+      {
+        "company": "Britannia Industries",
+        "ticker": "BRITANNIA",
+        "weight_pct": 0.74
+      },
+      {
+        "company": "Godrej Consumer Products",
+        "ticker": "GODREJCP",
+        "weight_pct": 0.7
+      },
+      {
+        "company": "Shriram Finance",
+        "ticker": "SHRIRAMFIN",
+        "weight_pct": 0.69
+      },
+      {
+        "company": "Zydus Lifesciences",
+        "ticker": "ZYDUSLIFE",
+        "weight_pct": 0.61
+      },
+      {
+        "company": "Mankind Pharma",
+        "ticker": "MANKIND",
+        "weight_pct": 0.58
+      },
+      {
+        "company": "Divi's Laboratories",
+        "ticker": "DIVISLAB",
+        "weight_pct": 0.58
+      },
+      {
+        "company": "Zomato",
+        "ticker": "ZOMATO",
+        "weight_pct": 0.53
+      },
+      {
+        "company": "Hero MotoCorp",
+        "ticker": "HEROMOTOCO",
+        "weight_pct": 0.51
+      },
+      {
+        "company": "SBI Life Insurance Company",
+        "ticker": "SBILIFE",
+        "weight_pct": 0.47
+      },
+      {
+        "company": "Tata Steel",
+        "ticker": "TATASTEEL",
+        "weight_pct": 0.38
+      },
+      {
+        "company": "Tech Mahindra",
+        "ticker": "TECHM",
+        "weight_pct": 0.34
+      },
+      {
+        "company": "Nestle India",
+        "ticker": "NESTLEIND",
+        "weight_pct": 0.3
+      },
+      {
+        "company": "FSN E-Commerce Ventures",
+        "ticker": "NYKAA",
+        "weight_pct": 0.28
+      },
+      {
+        "company": "Titan Company",
+        "ticker": "TITAN",
+        "weight_pct": 0.26
+      },
+      {
+        "company": "Procter & Gamble Hygiene and Health Care",
+        "ticker": "PGHH",
+        "weight_pct": 0.25
+      },
+      {
+        "company": "IndusInd Bank",
+        "ticker": "INDUSINDBK",
+        "weight_pct": 0.22
+      },
+      {
+        "company": "Asian Paints",
+        "ticker": "ASIANPAINT",
+        "weight_pct": 0.17
+      },
+      {
+        "company": "Bharat Electronics",
+        "ticker": "BEL",
+        "weight_pct": 0.1
+      },
+      {
+        "company": "Vedanta",
+        "ticker": "VEDL",
+        "weight_pct": 0.08
+      },
+      {
+        "company": "Cholamandalam Investment and Finance Company",
+        "ticker": "CHOLAFIN",
+        "weight_pct": 0.05
+      },
+      {
+        "company": "Samvardhana Motherson International",
+        "ticker": "MOTHERSON",
+        "weight_pct": 0.03
+      },
+      {
+        "company": "Aurobindo Pharma",
+        "ticker": "AUROPHARMA",
+        "weight_pct": 0.03
+      },
+      {
+        "company": "Power Finance Corporation",
+        "ticker": "PFC",
+        "weight_pct": 0.02
+      },
+      {
+        "company": "SRF",
+        "ticker": "SRF",
+        "weight_pct": 0.02
+      },
+      {
+        "company": "Bajaj Finance",
+        "ticker": "BAJFINANCE",
+        "weight_pct": 0.01
+      },
+      {
+        "company": "Apollo Hospitals Enterprise",
+        "ticker": "APOLLOHOSP",
+        "weight_pct": 0.01
+      },
+      {
+        "company": "InterGlobe Aviation",
+        "ticker": "INDIGO",
+        "weight_pct": 0.01
+      },
+      {
+        "company": "Cummins India",
+        "ticker": "CUMMINSIND",
+        "weight_pct": 0.01
+      },
+      {
+        "company": "United Spirits",
+        "ticker": "MCDOWELL-N",
+        "weight_pct": 0.01
+      },
+      {
+        "company": "The Phoenix Mills",
+        "ticker": "PHOENIXLTD",
+        "weight_pct": 0.01
+      },
+      {
+        "company": "Cash & Equivalents",
+        "ticker": null,
+        "weight_pct": 0.43
+      }
+    ]
+  },
+  {
+    "source": "tickertape",
+    "fetched_at_unix": 1722300095,
+    "fund_name": "Axis Bluechip Fund - Growth",
+    "coverage_pct": 94.13,
+    "constituents_count": 43,
+    "constituents": [
+      {
+        "company": "ICICI Bank",
+        "ticker": "ICICIBANK",
+        "weight_pct": 9.28
+      },
+      {
+        "company": "HDFC Bank",
+        "ticker": "HDFCBANK",
+        "weight_pct": 8.16
+      },
+      {
+        "company": "Bajaj Finance",
+        "ticker": "BAJFINANCE",
+        "weight_pct": 6.88
+      },
+      {
+        "company": "Infosys",
+        "ticker": "INFY",
+        "weight_pct": 6.55
+      },
+      {
+        "company": "Reliance Industries",
+        "ticker": "RELIANCE",
+        "weight_pct": 5.16
+      },
+      {
+        "company": "Tata Consultancy Services",
+        "ticker": "TCS",
+        "weight_pct": 4.95
+      },
+      {
+        "company": "Avenue Supermarts",
+        "ticker": "DMART",
+        "weight_pct": 3.7
+      },
+      {
+        "company": "Kotak Mahindra Bank",
+        "ticker": "KOTAKBANK",
+        "weight_pct": 3.51
+      },
+      {
+        "company": "Bharti Airtel",
+        "ticker": "BHARTIARTL",
+        "weight_pct": 2.87
+      },
+      {
+        "company": "Larsen & Toubro",
+        "ticker": "LT",
+        "weight_pct": 2.45
+      },
+      {
+        "company": "Maruti Suzuki India",
+        "ticker": "MARUTI",
+        "weight_pct": 2.29
+      },
+      {
+        "company": "Nestle India",
+        "ticker": "NESTLEIND",
+        "weight_pct": 2.19
+      },
+      {
+        "company": "Hindustan Unilever",
+        "ticker": "HINDUNILVR",
+        "weight_pct": 2.13
+      },
+      {
+        "company": "Titan Company",
+        "ticker": "TITAN",
+        "weight_pct": 2.1
+      },
+      {
+        "company": "Asian Paints",
+        "ticker": "ASIANPAINT",
+        "weight_pct": 1.94
+      },
+      {
+        "company": "Varun Beverages",
+        "ticker": "VBL",
+        "weight_pct": 1.92
+      },
+      {
+        "company": "HCL Technologies",
+        "ticker": "HCLTECH",
+        "weight_pct": 1.83
+      },
+      {
+        "company": "Sun Pharmaceutical Industries",
+        "ticker": "SUNPHARMA",
+        "weight_pct": 1.63
+      },
+      {
+        "company": "Grasim Industries",
+        "ticker": "GRASIM",
+        "weight_pct": 1.54
+      },
+      {
+        "company": "Tata Motors",
+        "ticker": "TATAMOTORS",
+        "weight_pct": 1.48
+      },
+      {
+        "company": "Pidilite Industries",
+        "ticker": "PIDILITIND",
+        "weight_pct": 1.43
+      },
+      {
+        "company": "Cholamandalam Investment and Finance Company",
+        "ticker": "CHOLAFIN",
+        "weight_pct": 1.41
+      },
+      {
+        "company": "State Bank of India",
+        "ticker": "SBIN",
+        "weight_pct": 1.34
+      },
+      {
+        "company": "Dr. Reddy's Laboratories",
+        "ticker": "DRREDDY",
+        "weight_pct": 1.3
+      },
+      {
+        "company": "Divi's Laboratories",
+        "ticker": "DIVISLAB",
+        "weight_pct": 1.25
+      },
+      {
+        "company": "Zomato",
+        "ticker": "ZOMATO",
+        "weight_pct": 1.15
+      },
+      {
+        "company": "Siemens",
+        "ticker": "SIEMENS",
+        "weight_pct": 1.11
+      },
+      {
+        "company": "InterGlobe Aviation",
+        "ticker": "INDIGO",
+        "weight_pct": 1.05
+      },
+      {
+        "company": "Godrej Consumer Products",
+        "ticker": "GODREJCP",
+        "weight_pct": 1.02
+      },
+      {
+        "company": "Mahindra & Mahindra",
+        "ticker": "M&M",
+        "weight_pct": 1
+      },
+      {
+        "company": "Tata Steel",
+        "ticker": "TATASTEEL",
+        "weight_pct": 0.96
+      },
+      {
+        "company": "FSN E-Commerce Ventures",
+        "ticker": "NYKAA",
+        "weight_pct": 0.94
+      },
+      {
+        "company": "Britannia Industries",
+        "ticker": "BRITANNIA",
+        "weight_pct": 0.93
+      },
+      {
+        "company": "Torrent Pharmaceuticals",
+        "ticker": "TORNTPHARM",
+        "weight_pct": 0.84
+      },
+      {
+        "company": "Eicher Motors",
+        "ticker": "EICHERMOT",
+        "weight_pct": 0.74
+      },
+      {
+        "company": "Bajaj Auto",
+        "ticker": "BAJAJ-AUTO",
+        "weight_pct": 0.7
+      },
+      {
+        "company": "TVS Motor Company",
+        "ticker": "TVSMOTOR",
+        "weight_pct": 0.69
+      },
+      {
+        "company": "Adani Ports and Special Economic Zone",
+        "ticker": "ADANIPORTS",
+        "weight_pct": 0.61
+      },
+      {
+        "company": "HDFC Life Insurance Company",
+        "ticker": "HDFCLIFE",
+        "weight_pct": 0.58
+      },
+      {
+        "company": "Wipro",
+        "ticker": "WIPRO",
+        "weight_pct": 0.58
+      },
+      {
+        "company": "NTPC",
+        "ticker": "NTPC",
+        "weight_pct": 0.53
+      },
+      {
+        "company": "Others",
+        "ticker": null,
+        "weight_pct": 1.2
+      },
+      {
+        "company": "Cash & Equivalents",
+        "ticker": null,
+        "weight_pct": 5.87
+      }
     ]
   }
 ]
-    
