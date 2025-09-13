@@ -94,6 +94,10 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
                     <h3 className="font-semibold text-lg">{dict.worked_examples.scenario2.title}</h3>
                     <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: dict.worked_examples.scenario2.body }} />
                   </div>
+                  <div className="bg-muted/50 p-4 rounded-lg">
+                    <h3 className="font-semibold text-lg">{dict.worked_examples.scenario3.title}</h3>
+                    <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: dict.worked_examples.scenario3.body }} />
+                  </div>
                 </CardContent>
             </Card>
 
@@ -175,3 +179,5 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
     </div>
   );
 }
+
+  
