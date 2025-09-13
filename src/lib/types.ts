@@ -1,5 +1,4 @@
 
-
 import type { LucideIcon } from 'lucide-react';
 import type { i18nConfig } from '@/lib/i18n-config';
 import type { RawFund, PairwiseResult, CommonHolding } from '@/lib/overlap-calculator';
@@ -111,5 +110,7 @@ export type Dictionary = {
   [key: string]: any;
 };
 
-// Re-export types from the new utility file
+// Re-export types from the overlap calculator utility
 export type { RawFund, PairwiseResult, CommonHolding };
+
+    

@@ -22,28 +22,6 @@ export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCal
   const [selectedFunds, setSelectedFunds] = useState<RawFund[]>([]);
   const [overlapResult, setOverlapResult] = useState<OverlapOutput | null>(null);
   const [isCalculating, setIsCalculating] = useState(false);
-  
-  // This effect sets the initial default funds ONCE after the main data has loaded.
-  useEffect(() => {
-    if (allFunds.length > 0 && selectedFunds.length === 0) {
-      const initialFund1 = allFunds.find(f => f.fund_name === "ICICI Prudential Bluechip Fund");
-      const initialFund2 = allFunds.find(f => f.fund_name === "HDFC Top 100 Fund");
-      
-      const initialSelection = [initialFund1, initialFund2].filter((f): f is RawFund => !!f);
-
-      if (initialSelection.length === 2) {
-        setSelectedFunds(initialSelection);
-      } else {
-        // Fallback if the default funds aren't found
-        const uniqueFunds = Array.from(new Map(allFunds.map(fund => [fund.fund_name, fund])).values());
-        if (uniqueFunds.length >= 2) {
-          setSelectedFunds(uniqueFunds.slice(0, 2));
-        }
-      }
-    }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [allFunds]);
-
 
   // This effect recalculates the overlap whenever the user changes the fund selection.
   useEffect(() => {
@@ -106,7 +84,6 @@ export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCal
   };
 
   const removeFund = (fundNameToRemove: string) => {
-    if (selectedFunds.length <= 2) return;
     setSelectedFunds(prev => prev.filter((f) => f.fund_name !== fundNameToRemove));
   };
   
@@ -142,6 +119,17 @@ export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCal
         <AlertDescription>{error}</AlertDescription>
       </Alert>
   }
+  
+  if (selectedFunds.length === 0) {
+      return (
+        <div className="text-center py-12">
+            <p className="mb-4 text-muted-foreground">Select up to 5 funds to compare their holdings.</p>
+            <Button onClick={addFund}>
+                <PlusCircle className="mr-2 h-4 w-4" /> Add a fund to start
+            </Button>
+        </div>
+      )
+  }
 
   return (
     <div className="space-y-6">
@@ -154,7 +142,7 @@ export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCal
                 selectedFund={fund}
                 onSelect={(newFundName) => updateFundSelection(fund.fund_name, newFundName)}
               />
-              <Button variant="ghost" size="icon" className="h-6 w-6 text-muted-foreground" onClick={() => removeFund(fund.fund_name)} disabled={selectedFunds.length <= 2}>
+              <Button variant="ghost" size="icon" className="h-6 w-6 text-muted-foreground" onClick={() => removeFund(fund.fund_name)} disabled={selectedFunds.length <= 1}>
                 <Trash2 className="h-4 w-4"/>
               </Button>
             </CardHeader>
@@ -175,6 +163,9 @@ export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCal
         <Button variant="outline" onClick={addFund} disabled={selectedFunds.length >= 5 || isCalculating}>
           <PlusCircle className="mr-2 h-4 w-4" /> {dictionary.tool.add_fund}
         </Button>
+         {selectedFunds.length < 2 && (
+            <p className="text-sm text-muted-foreground">Please add at least one more fund to see the overlap.</p>
+         )}
       </div>
       
       {isCalculating && <div className="text-center py-12"><Loader2 className="mx-auto h-12 w-12 animate-spin text-primary" /></div>}
@@ -256,7 +247,7 @@ export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCal
 
 const FUNDS_TO_SHOW_INITIAL = 100;
 
-function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: RawFund[], selectedFund: RawFund, onSelect: (fundName: string) => void }) {
+function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: RawFund[], selectedFund: RawFund | null, onSelect: (fundName: string) => void }) {
   const [open, setOpen] = useState(false);
   const [search, setSearch] = useState("");
   const [visibleCount, setVisibleCount] = useState(FUNDS_TO_SHOW_INITIAL);
@@ -286,7 +277,7 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: RawFund[
         className="w-full sm:w-[300px] justify-between"
         onClick={() => setOpen(true)}
       >
-        <span className="truncate">{selectedFund.fund_name}</span>
+        <span className="truncate">{selectedFund ? selectedFund.fund_name : 'Select a fund...'}</span>
         <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
       </Button>
       <CommandDialog open={open} onOpenChange={setOpen}>
@@ -314,7 +305,7 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: RawFund[
                   <Check
                     className={cn(
                       "mr-2 h-4 w-4",
-                      selectedFund.fund_name === fund.fund_name ? "opacity-100" : "opacity-0"
+                      selectedFund?.fund_name === fund.fund_name ? "opacity-100" : "opacity-0"
                     )}
                   />
                   {fund.fund_name}
@@ -335,3 +326,5 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: RawFund[
     </>
   );
 }
+
+    
