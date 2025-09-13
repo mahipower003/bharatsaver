@@ -34,6 +34,46 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     }))
   };
 
+  const softwareSchema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "UPS Pension Calculator",
+    "url": pageUrl,
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web",
+    "description": "Estimate your monthly pension, family pension and lump sum under the Unified Pension Scheme.",
+    "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+    }
+  };
+
+  const articleSchema = {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": pageUrl
+      },
+      "headline": dict.h1,
+      "datePublished": "2024-08-02",
+      "dateModified": "2024-08-02",
+      "author": {
+        "@type": "Person",
+        "name": "Mahesh Chaube, CFP",
+        "url": `${siteUrl}/${params.lang}/author/mahesh-chaube`
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "BharatSaver",
+        "logo": {
+          "@type": "ImageObject",
+          "url": `${siteUrl}/icon.svg`
+        }
+      }
+  };
+
   return {
     title: dict.meta_title,
     description: dict.meta_description,
@@ -45,7 +85,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       }, {} as Record<string, string>),
     },
     other: {
-      'application/ld+json': JSON.stringify([faqSchema]),
+      'application/ld+json': JSON.stringify([faqSchema, softwareSchema, articleSchema]),
     },
   };
 }
@@ -54,8 +94,61 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
   const dictionary = await getDictionary(params.lang, ['ups_pension_calculator', 'author_card']);
   const dict = dictionary.ups_pension_calculator;
 
+  const allSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FAQPage",
+        "mainEntity": dict.faqs.map((faq: { q: string, a: string }) => ({
+          "@type": "Question",
+          "name": faq.q,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.a
+          }
+        }))
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "UPS Pension Calculator",
+        "url": `https://bharatsaver.com/${params.lang}/ups-pension-calculator`,
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "description": dict.meta_description,
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "INR"
+        }
+      },
+      {
+        "@type": "Article",
+        "headline": dict.h1,
+        "datePublished": "2024-08-02",
+        "dateModified": "2024-08-02",
+         "author": {
+            "@type": "Person",
+            "name": "Mahesh Chaube, CFP",
+            "url": `https://bharatsaver.com/${params.lang}/author/mahesh-chaube`
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "BharatSaver",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://bharatsaver.com/icon.svg"
+            }
+          }
+      }
+    ]
+  };
+
   return (
     <div className="py-12">
+      <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(allSchema) }}
+      />
       <div className="mx-auto max-w-5xl">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
@@ -63,6 +156,10 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
           </h1>
           <p className="mt-4 text-lg text-muted-foreground">{dict.hero_subtitle}</p>
         </div>
+        
+        <p className="text-center text-sm text-muted-foreground mb-8">
+          {dict.how_it_works.intro}
+        </p>
 
         <UpsPensionCalculator dictionary={dict} />
 
@@ -180,7 +277,3 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
     </div>
   );
 }
-
-  
-
-    
