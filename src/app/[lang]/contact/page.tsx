@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/contact`;
   return {
-    title: dictionary.contact_page.meta_title,
-    description: dictionary.contact_page.meta_description,
+    title: dictionary.contact_page?.meta_title,
+    description: dictionary.contact_page?.meta_description,
     alternates: {
       canonical: pageUrl,
       languages: i18nConfig.locales.reduce((acc, locale) => {
@@ -74,10 +74,10 @@ export default async function ContactPage({ params }: { params: { lang: Locale }
       <div className="mx-auto max-w-3xl">
         <div className="text-center mb-12">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl font-headline mb-4">
-              {dictionary.contact_page.h1}
+              {dictionary.contact_page?.h1}
             </h1>
             <p className="text-xl text-muted-foreground">
-              {dictionary.contact_page.p1 || "We're here to help. Reach out to us with any questions or feedback."}
+              {dictionary.contact_page?.p1 || "We're here to help. Reach out to us with any questions or feedback."}
             </p>
         </div>
 
