@@ -1188,7 +1188,7 @@
   },
   "ups_pension_calculator": {
     "meta_title": "UPS Pension Calculator 2025 — Estimate Monthly Pension, Family Pension & Lump Sum",
-    "meta_description": "Free UPS Pension Calculator (2025). Enter basic pay, DA & years of service to instantly estimate monthly UPS pension, family pension and commuted lump sum. Includes worked examples & downloadable Excel.",
+    "meta_description": "Free UPS Pension Calculator (2025). Enter basic pay, DA% & qualifying service to instantly calculate monthly UPS pension, family pension (60%) and commuted lump sum. Download Excel & view step-by-step transcript.",
     "h1": "UPS Pension Calculator — Estimate Your Unified Pension Scheme (UPS) Pension (2025)",
     "hero_subtitle": "Use our free UPS Pension Calculator to estimate your monthly pension, family pension and possible commutation lump sum under the Unified Pension Scheme. Enter basic pay, DA% and qualifying service to get an instant, step-by-step calculation and a downloadable Excel.",
     "last_reviewed_date": "August 2024",
@@ -1268,7 +1268,6 @@
       "h2": "Methodology & Sources",
       "body": "<p>This calculator uses data and formulas from official sources such as NPSTRUST, PFRDA circulars, and government notifications. Key assumptions include the DA percentage and commutation factors, which are subject to change. For any discrepancies, please refer to the official scheme documents.</p><h3>How this calculator was tested</h3><ul><li>Results were cross-verified against sample calculations from PFRDA documents.</li><li>Calculations were manually checked for edge cases (e.g., minimum/maximum service years).</li><li>The formula was validated against the standard government pension formula.</li></ul>"
     },
-    "faq_title": "Frequently Asked Questions",
     "faqs": [
       {"q": "What is the UPS pension formula?", "a": "Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor. Pensionable Salary is typically Basic × (1 + DA%). See Methodology for worked steps."},
       {"q": "How do I calculate my monthly UPS pension?", "a": "Enter your last drawn basic pay, DA% and qualifying years of service into the UPS Pension Calculator to get an instant monthly pension estimate and step-by-step transcript."},
@@ -1309,5 +1308,3 @@
     "result_reasoning": "Why we recommend this:"
   }
 }
-
-    
