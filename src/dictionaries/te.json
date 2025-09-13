@@ -445,8 +445,8 @@
       { "question": "నేను ఎప్పుడు SSY నుండి ఉపసంహరించుకోవచ్చు?", "answer": "ఉన్నత విద్య కోసం బాలిక 18 సంవత్సరాలు నిండిన తర్వాత పాక్షిక ఉపసంహరణ అనుమతించబడుతుంది; ఖాతా తెరిచినప్పటి నుండి 21 సంవత్సరాలకు మెచ్యూరిటీ." }
     ],
     "conclusion": {
-      "title": "తుది ఆలోచనలు: మీ కుమార్తెకు SSY సరైన ఎంపికా?",
-      "body": "సుకన్య సమృద్ధి యోజన ఒక బాలిక కోసం భారతదేశంలోని ఉత్తమ పొదుపు పథకాలలో ఒకటిగా నిలుస్తుంది. దాని అధిక, ప్రభుత్వ-హామీ వడ్డీ రేటు మరియు పూర్తి పన్ను మినహాయింపు (EEE స్థితి) కలయిక మీ కుమార్తె విద్య మరియు వివాహం కోసం గణనీయమైన నిధిని నిర్మించడానికి ఒక శక్తివంతమైన సాధనంగా చేస్తుంది. మా SSY క్యాలిక్యులేటర్‌తో మీ పెట్టుబడులను ప్లాన్ చేయడం ద్వారా, మీరు విశ్వాసంతో ఆమె ఆర్థిక భవిష్యత్తును సురక్షితం చేయవచ్చు."
+        "title": "ముగింపు: మీ కుమార్తెకు SSY సరైన ఎంపికా?",
+        "body": "సుకన్య సమృద్ధి యోజన ఒక బాలిక కోసం భారతదేశంలోని ఉత్తమ పొదుపు పథకాలలో ఒకటిగా నిలుస్తుంది. దాని అధిక, ప్రభుత్వ-హామీ వడ్డీ రేటు మరియు పూర్తి పన్ను మినహాయింపు (EEE స్థితి) కలయిక మీ కుమార్తె విద్య మరియు వివాహం కోసం గణనీయమైన నిధిని నిర్మించడానికి ఒక శక్తివంతమైన సాధనంగా చేస్తుంది. మా SSY క్యాలిక్యులేటర్‌తో మీ పెట్టుబడులను ప్లాన్ చేయడం ద్వారా, మీరు విశ్వాసంతో ఆమె ఆర్థిక భవిష్యత్తును సురక్షితం చేయవచ్చు."
     }
   },
   "nps_calculator": {
@@ -504,7 +504,7 @@
           "body": "లాక్-ఇన్ లేని ఒక ఫ్లెక్సిబుల్, స్వచ్ఛంద పొదుపు ఖాతా, కానీ అదనపు పన్ను ప్రయోజనం లేదు."
         }
       ],
-      "footer": "ఇది పన్ను ఆదా, మార్కెట్-ఆధారిత రాబడులు మరియు క్రమశిక్షణతో కూడిన పెట్టుబడిని కలిపి ఒక గణనీయమైన పదవీ విరమణ నిధిని నిర్మిస్తుంది."
+      "footer": "ఇది పన్ను ఆదా, మార్కెట్-ఆధారిత రాబడులు, మరియు క్రమశిక్షణతో కూడిన పెట్టుబడిని కలిపి ఒక గణనీయమైన పదవీ విరమణ నిధిని నిర్మిస్తుంది."
     },
     "how_it_works": {
       "title": "NPS క్యాలిక్యులేటర్ ఎలా పనిచేస్తుంది (సూత్రం మరియు వివరణ)",
@@ -1111,7 +1111,7 @@
       "h2": "పద్ధతి",
       "body": "క్యాలిక్యులేటర్ ప్రామాణిక సమయం-విలువ-డబ్బు సూత్రాలను ఉపయోగిస్తుంది. అవసరమైన కార్పస్ పెరుగుతున్న యాన్యుటీ యొక్క ప్రస్తుత విలువగా లెక్కించబడుతుంది, మరియు SIP ఒక సిరీస్ సూత్రం యొక్క భవిష్యత్ విలువను ఉపయోగించి లెక్కించబడుతుంది. అన్ని లెక్కలు ఉదాహరణ ప్రయోజనాల కోసం మాత్రమే."
     },
-     "assumptions": {
+    "assumptions": {
       "title": "క్యాలిక్యులేటర్ అంచనాలు",
       "body": "The results are based on the inputs you provide and assume constant rates of return and inflation. They are for illustrative purposes and are not a guarantee of future performance. This is not financial advice."
     }
@@ -1179,10 +1179,32 @@
         "min_weight_header": "కనిష్ట బరువు"
     }
   },
-   "ups_pension_calculator": {
+  "ups_pension_calculator": {
     "meta_title": "UPS Pension Calculator | BharatSaver",
     "meta_description": "Estimate your potential pension amount under the Universal Pension Scheme (UPS) with our easy-to-use calculator.",
     "h1": "UPS Pension Calculator"
+  },
+  "scheme_selector": {
+    "meta_title": "AI Scheme Selector: Find the Best Investment for You | BharatSaver",
+    "meta_description": "Use our AI-powered quiz to find the best government savings scheme (PPF, NPS, SSY, APY, FD) for your financial goals, risk tolerance, and age.",
+    "title": "AI-Powered Scheme Selector",
+    "description": "Answer a few simple questions, and our AI advisor will recommend the best investment scheme for you.",
+    "age_label": "What is your age?",
+    "income_label": "What is your current annual income?",
+    "risk_label": "What is your risk tolerance?",
+    "risk_low": "Low (I prefer safe, guaranteed returns)",
+    "risk_medium": "Medium (I'm okay with some market risk for better returns)",
+    "risk_high": "High (I want to maximize returns, even with higher risk)",
+    "horizon_label": "What is your investment horizon?",
+    "horizon_short": "Short-term (1-3 years)",
+    "horizon_medium": "Medium-term (3-7 years)",
+    "horizon_long": "Long-term (7+ years)",
+    "goal_label": "What is your primary investment goal?",
+    "goal_placeholder": "e.g., Retirement, child's education, tax saving...",
+    "submit_button": "Get AI Recommendation",
+    "loading": "Analyzing your profile...",
+    "result_title": "Our AI Recommendation For You",
+    "result_reasoning": "Why we recommend this:"
   }
 }
 
