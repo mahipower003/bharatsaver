@@ -24,15 +24,6 @@ export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCal
   const [isCalculating, setIsCalculating] = useState(false);
 
   useEffect(() => {
-    if (allFunds.length > 0 && selectedFunds.length === 0) {
-      const uniqueFunds = Array.from(new Map(allFunds.map(fund => [fund.fund_name, fund])).values());
-      if (uniqueFunds.length >= 2) {
-        setSelectedFunds(uniqueFunds.slice(0, 2));
-      }
-    }
-  }, [allFunds, selectedFunds.length]);
-  
-  useEffect(() => {
     if (selectedFunds.length < 2) {
       setOverlapResult(null);
       return;
@@ -98,21 +89,21 @@ export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCal
   };
   
 
-  const removeFund = (fundNameToRemove: string) => {
-    setSelectedFunds(prev => prev.filter((f) => f.fund_name !== fundNameToRemove));
+  const removeFund = (indexToRemove: number) => {
+    setSelectedFunds(prev => prev.filter((_, index) => index !== indexToRemove));
   };
   
-  const updateFundSelection = (oldFundName: string, newFundName: string) => {
+  const updateFundSelection = (indexToUpdate: number, newFundName: string) => {
     const newFundData = allFunds.find(f => f.fund_name === newFundName);
     if (!newFundData) return;
     
-    if (selectedFunds.some(f => f.fund_name === newFundName && f.fund_name !== oldFundName)) {
+    if (selectedFunds.some((f, idx) => f.fund_name === newFundName && idx !== indexToUpdate)) {
         alert("This fund is already selected. Please choose a different one.");
         return;
     }
 
-    setSelectedFunds(prev => prev.map(f => 
-      f.fund_name === oldFundName ? newFundData : f
+    setSelectedFunds(prev => prev.map((f, idx) => 
+      idx === indexToUpdate ? newFundData : f
     ));
   };
 
@@ -137,8 +128,8 @@ export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCal
   
   return (
     <div className="space-y-6">
-       {selectedFunds.length < 2 && (
-        <div className="text-center py-12">
+       {selectedFunds.length === 0 && (
+        <div className="text-center py-12 border-2 border-dashed rounded-lg">
             <p className="mb-4 text-muted-foreground">Select up to 5 funds to compare their holdings.</p>
         </div>
       )}
@@ -151,9 +142,9 @@ export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCal
                 <FundSelector
                   allFunds={allFunds}
                   selectedFund={fund}
-                  onSelect={(newFundName) => updateFundSelection(fund.fund_name, newFundName)}
+                  onSelect={(newFundName) => updateFundSelection(index, newFundName)}
                 />
-                <Button variant="ghost" size="icon" className="h-6 w-6 text-muted-foreground" onClick={() => removeFund(fund.fund_name)} disabled={selectedFunds.length < 2}>
+                <Button variant="ghost" size="icon" className="h-6 w-6 text-muted-foreground" onClick={() => removeFund(index)} disabled={selectedFunds.length < 2}>
                   <Trash2 className="h-4 w-4"/>
                 </Button>
               </CardHeader>
@@ -340,3 +331,4 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: RawFund[
     </>
   );
 }
+
