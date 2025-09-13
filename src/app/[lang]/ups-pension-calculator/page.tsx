@@ -72,6 +72,19 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       }
   };
   
+  const howToSchema = {
+    "@context":"https://schema.org",
+    "@type":"HowTo",
+    "name":"How to calculate your UPS pension (transcript)",
+    "description":"Step-by-step example showing how the UPS Pension Calculator derives the monthly pension.",
+    "step":[
+      {"@type":"HowToStep","name":"Step 1","text":"Take last drawn Basic Pay and DA%."},
+      {"@type":"HowToStep","name":"Step 2","text":"Compute Pensionable Salary = Basic × (1 + DA%/100)."},
+      {"@type":"HowToStep","name":"Step 3","text":"Apply formula: Monthly Pension = (Pensionable Salary × Pension Factor × Service Years) / Divisor."},
+      {"@type":"HowToStep","name":"Step 4","text":"Show family pension and commuted lump sum if applicable."}
+    ]
+  };
+
   return {
     title: dict.meta_title,
     description: dict.meta_description,
@@ -83,7 +96,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       }, {} as Record<string, string>),
     },
      other: {
-      'application/ld+json': JSON.stringify([faqSchema, softwareSchema, articleSchema]),
+      'application/ld+json': JSON.stringify([faqSchema, softwareSchema, articleSchema, howToSchema]),
     },
   };
 }
@@ -232,7 +245,3 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
     </div>
   );
 }
-
-    
-
-    

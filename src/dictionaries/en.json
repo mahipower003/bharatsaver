@@ -1248,11 +1248,11 @@
       }
     },
     "family_pension": {
-      "h2": "Lump Sum & Family Pension",
+      "h2": "How to calculate UPS family pension (60% example)",
       "body": "<h3>How to calculate UPS family pension</h3><p>Family pension provides financial security to the family in the unfortunate event of the pensioner's death. Under the Universal Pension Scheme (UPS), the spouse is typically entitled to receive a percentage of the basic pension as a family pension for their lifetime. This is often around 60% of the original pension, but can vary based on specific scheme rules.</p><h3>UPS lump sum calculator — commutation example</h3><p>At retirement, pensioners may have the option to 'commute' a portion of their pension, which means they receive a lump sum amount upfront in exchange for a lower monthly pension. The lump sum is calculated using a 'commutation factor' which depends on the pensioner's age at the time of retirement. Our UPS lump sum calculator uses these standard factors to provide an estimate. For example, if you choose to commute one-third of a ₹30,000 monthly pension, you would receive a lump sum and your monthly pension would be reduced to ₹20,000.</p>"
     },
     "comparison": {
-      "h2": "UPS vs NPS — Which is Better?",
+      "h2": "UPS vs NPS — compare results for the same inputs",
       "body": "<h3>Structural Differences</h3><p>The main difference lies in their structure: UPS is a <strong>Defined Benefit</strong> scheme, offering a guaranteed pension based on your salary and service years. NPS is a <strong>Defined Contribution</strong> scheme, where your final corpus depends on your contributions and market performance.</p><table class='w-full text-left border-collapse my-4'><thead><tr class='border-b'><th class='p-2'>Feature</th><th class='p-2'>UPS</th><th class='p-2'>NPS</th></tr></thead><tbody><tr class='border-b'><td class='p-2'>Return Type</td><td class='p-2'>Guaranteed (Defined Benefit)</td><td class='p-2'>Market-linked (Defined Contribution)</td></tr><tr class='border-b'><td class='p-2'>Risk</td><td class='p-2'>Zero risk for employee</td><td class='p-2'>Market risk borne by employee</td></tr><tr><td class='p-2'>Best For</td><td class='p-2'>Those seeking a predictable, secure income</td><td class='p-2'>Those willing to take market risk for potentially higher returns</td></tr></tbody></table><h3>When UPS makes more sense vs. NPS</h3><p>Choose UPS if you prioritize a predictable, government-guaranteed income stream without any market volatility. Choose NPS if you are comfortable with market risks and want the potential for higher wealth creation over the long term.</p>"
     },
     "tax_rules": {
@@ -1265,25 +1265,16 @@
     },
     "methodology": {
       "h2": "Methodology & Sources",
-      "body": "<p>This calculator uses data and formulas from official sources such as NPSTRUST, PFRDA circulars, and government notifications. Key assumptions include the DA percentage and commutation factors, which are subject to change. Last updated: August 2024.</p><h3>UPS pension calculation example</h3><p>The monthly pension is calculated using a standard government pension formula:</p><code>Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor</code><p>Where:</p><ul><li><strong>Pensionable Salary:</strong> <code>Basic Pay × (1 + DA % / 100)</code></li><li><strong>Pension Factor:</strong> Assumed to be 0.5 (for 50% of pensionable salary).</li><li><strong>Qualifying Service:</strong> The number of years you have served.</li><li><strong>Divisor:</strong> A standard factor, typically 33 for full pension calculations in many older schemes.</li></ul>"
+      "body": "<p>This calculator uses data and formulas from official sources such as NPSTRUST, PFRDA circulars, and government notifications. Key assumptions include the DA percentage and commutation factors, which are subject to change. Last updated: August 2024.</p><h3>How to calculate UPS pension for 30 years of service</h3><p>The monthly pension is calculated using a standard government pension formula:</p><code>Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor</code><p>Where:</p><ul><li><strong>Pensionable Salary:</strong> <code>Basic Pay × (1 + DA % / 100)</code></li><li><strong>Pension Factor:</strong> Assumed to be 0.5 (for 50% of pensionable salary).</li><li><strong>Qualifying Service:</strong> The number of years you have served.</li><li><strong>Divisor:</strong> A standard factor, typically 33 for full pension calculations in many older schemes.</li></ul>"
     },
-    "faq_title": "Frequently Asked Questions (FAQ)",
+    "faq_title": "Frequently Asked Questions",
     "faqs": [
-      { "q": "What is the UPS pension formula?", "a": "The monthly UPS pension = (Pensionable Salary × Pension Factor × Qualifying Service) / [Scheme Divisor]. Pensionable Salary is the average basic pay of the last 12 months." },
-      { "q": "How do I calculate my monthly UPS pension?", "a": "Use our calculator by entering your basic pay, DA percentage, and years of service. It applies the official formula to give you an accurate estimate." },
-      { "q": "What inputs do I need for the UPS Pension Calculator?", "a": "You'll need your last drawn monthly basic pay, the current DA percentage, and your total qualifying years of service." },
-      { "q": "How is the pensionable salary calculated under UPS?", "a": "It is typically the average of your basic pay over the last 10 or 12 months of your service, depending on the specific rules applicable to your department." },
-      { "q": "How much family pension will my spouse get under UPS?", "a": "The family pension is usually a percentage of the basic pension, often around 60%, but this can vary. Our calculator provides an estimate based on standard rules." },
-      { "q": "What is the minimum pension under UPS in 2025?", "a": "The minimum pension amount is determined by government regulations and can change. Please refer to official circulars for the most current figures." },
-      { "q": "Can I use this calculator for partial years of service?", "a": "Yes, our calculator can handle partial years and months of service for a more accurate calculation." },
-      { "q": "How often should I update assumptions (inflation, DA) when using this calculator?", "a": "It's good practice to re-calculate your estimated pension whenever there is a significant change in the DA percentage or your pay scale." },
-      { "q": "Is UPS better than NPS for government employees?", "a": "UPS offers a defined, guaranteed pension, which is lower-risk. NPS is market-linked and offers potentially higher returns but with market risk. The choice depends on your risk appetite." },
-      { "q": "How is the lump sum calculated under UPS?", "a": "The lump sum is the 'commuted' part of your pension, calculated using a specific commutation factor based on your age at retirement." },
-      { "q": "Are UPS pensions taxable?", "a": "Yes, the monthly pension received is taxable under the head 'Income from Salary'. The commuted (lump sum) portion may be partially or fully exempt." },
-      { "q": "Can I download the UPS pension calculation as an Excel file?", "a": "Yes, our tool provides an option to download your detailed pension calculation as an Excel file for your records." },
-      { "q": "How accurate is this UPS Pension Calculator?", "a": "This calculator uses official formulas and provides a highly accurate estimate. However, for a final, binding figure, always refer to your official pension sanctioning authority." },
-      { "q": "What date are the fund rules or pension rules based on?", "a": "The calculations are based on the latest rules and circulars available as of the 'Last Updated' date mentioned in our Methodology section." },
-      { "q": "Can this calculator handle family pension for multiple beneficiaries?", "a": "This calculator primarily estimates the pension for a single spouse beneficiary. Rules for other dependents can be complex and should be verified with official sources." }
+      {"q": "What is the UPS pension formula?", "a": "Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor. Pensionable Salary is typically Basic × (1 + DA%). See Methodology for worked steps."},
+      {"q": "How do I calculate my monthly UPS pension?", "a": "Enter your last drawn basic pay, DA% and qualifying years of service into the UPS Pension Calculator to get an instant monthly pension estimate and step-by-step transcript."},
+      {"q": "What inputs do I need for the UPS Pension Calculator?", "a": "Monthly basic pay, DA percentage, years and months of qualifying service, and retirement/joing dates (optional)."},
+      {"q": "How is the pensionable salary calculated under UPS?", "a": "Pensionable Salary = Basic Pay × (1 + DA% / 100), typically averaged over the last 10–12 months as per scheme rules."},
+      {"q": "How much family pension will my spouse get under UPS?", "a": "Family pension is commonly around 60% of the original pension, but specific rules may vary by scheme — check the fund circular or consult HR."},
+      {"q": "Can I download the UPS pension calculation as an Excel file?", "a": "Yes — a downloadable Excel with full stepwise computation is available. Click the 'Download Excel' button after you calculate your result."}
     ],
     "disclaimer": {
       "title": "References & Legal Disclaimer",
@@ -1317,7 +1308,3 @@
     "result_reasoning": "Why we recommend this:"
   }
 }
-
-    
-
-    
