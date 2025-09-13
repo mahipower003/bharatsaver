@@ -12,6 +12,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { Input } from '@/components/ui/input';
 import type { Dictionary } from '@/types';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 
 const formSchema = z.object({
   basicPay: z.coerce.number().min(1000, "Basic pay seems too low"),
@@ -32,6 +33,7 @@ type CalculationResult = {
     familyPension: number;
     lumpSum: number;
     steps: CalculationSteps;
+    chartData: any[];
 };
 
 type CalculatorProps = {
@@ -66,16 +68,23 @@ export function UpsPensionCalculator({ dictionary }: CalculatorProps) {
     const pensionFactor = 0.5;
     const divisor = 33;
     const monthlyPension = (pensionableSalary * pensionFactor * values.qualifyingServiceYears) / divisor;
+    const familyPension = monthlyPension * 0.6;
+    const lumpSum = monthlyPension * 12 * 5;
     
     setResult({
       monthlyPension,
-      familyPension: monthlyPension * 0.6, // Example
-      lumpSum: monthlyPension * 12 * 5, // Example
+      familyPension,
+      lumpSum,
       steps: {
           pensionableSalary,
           pensionFactor,
           divisor
-      }
+      },
+      chartData: [
+        { name: 'Monthly Pension', value: monthlyPension },
+        { name: 'Family Pension', value: familyPension },
+        { name: 'Lump Sum (Commutation)', value: lumpSum },
+      ]
     });
     
     setIsLoading(false);
@@ -173,7 +182,18 @@ export function UpsPensionCalculator({ dictionary }: CalculatorProps) {
               </div>
             </div>
 
-            <Collapsible open={showSteps} onOpenChange={setShowSteps}>
+            <div className="mt-6">
+                <ResponsiveContainer width="100%" height={250}>
+                    <BarChart data={result.chartData} layout="vertical" margin={{ left: 50 }}>
+                        <XAxis type="number" hide />
+                        <YAxis type="category" dataKey="name" axisLine={false} tickLine={false} width={150} />
+                        <Tooltip cursor={{ fill: 'hsl(var(--muted))' }} contentStyle={{ borderRadius: "var(--radius)", background: "hsl(var(--background))" }} formatter={(value: number) => formatCurrency(value)} />
+                        <Bar dataKey="value" fill="hsl(var(--primary))" radius={[0, 4, 4, 0]} barSize={30} />
+                    </BarChart>
+                </ResponsiveContainer>
+            </div>
+
+            <Collapsible open={showSteps} onOpenChange={setShowSteps} className="mt-6">
                 <CollapsibleTrigger asChild>
                     <Button variant="link" className="p-0 text-sm">
                         {showSteps ? dictionary.interactive_tool.hide_steps : dictionary.interactive_tool.show_steps}
@@ -182,7 +202,7 @@ export function UpsPensionCalculator({ dictionary }: CalculatorProps) {
                 </CollapsibleTrigger>
                 <CollapsibleContent className="mt-4 space-y-4 rounded-md border bg-muted/50 p-4 text-sm">
                     <h4 className="font-semibold">{dictionary.calculation_steps.title}</h4>
-                    <div className="space-y-2">
+                    <div className="space-y-2 font-mono">
                         <p><strong>1. {dictionary.calculation_steps.pensionable_salary}:</strong> <code>({formatCurrency(form.getValues().basicPay)} * (1 + {form.getValues().daPercentage} / 100))</code> = <strong>{formatCurrency(result.steps.pensionableSalary)}</strong></p>
                         <p><strong>2. {dictionary.calculation_steps.monthly_pension}:</strong> <code>({formatCurrency(result.steps.pensionableSalary)} * {result.steps.pensionFactor} * {form.getValues().qualifyingServiceYears}) / {result.steps.divisor}</code> = <strong>{formatCurrency(result.monthlyPension)}</strong></p>
                         <p><strong>3. {dictionary.calculation_steps.family_pension}:</strong> <code>({formatCurrency(result.monthlyPension)} * 0.60)</code> = <strong>{formatCurrency(result.familyPension)}</strong></p>
@@ -192,8 +212,6 @@ export function UpsPensionCalculator({ dictionary }: CalculatorProps) {
             
              <div className="flex flex-wrap items-center justify-center gap-4 mt-8">
                 <Button variant="outline" size="sm" onClick={handleCSVExport}><Download className="mr-2 h-4 w-4" />{dictionary.interactive_tool.download_excel}</Button>
-                <Button variant="outline" size="sm"><Printer className="mr-2 h-4 w-4" /> {dictionary.interactive_tool.print_results}</Button>
-                <Button variant="outline" size="sm"><Twitter className="mr-2 h-4 w-4" /> {dictionary.interactive_tool.share_twitter}</Button>
              </div>
           </CardContent>
         </Card>
@@ -201,4 +219,3 @@ export function UpsPensionCalculator({ dictionary }: CalculatorProps) {
     </>
   );
 }
-

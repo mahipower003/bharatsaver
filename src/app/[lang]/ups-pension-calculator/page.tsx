@@ -8,6 +8,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { FileText, TrendingUp, Star, AlertTriangle, CheckCircle, HelpCircle, GitCompareArrows } from "lucide-react";
 import { AuthorCard } from "@/components/layout/AuthorCard";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
 
 export async function generateStaticParams() {
@@ -39,7 +40,6 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     "name": "UPS Pension Calculator",
     "url": pageUrl,
     "applicationCategory": "FinanceApplication",
-    "operatingSystem": "Web",
     "description": "Estimate your monthly pension, family pension and lump sum under the Unified Pension Scheme.",
     "offers": {
         "@type": "Offer",
@@ -104,6 +104,10 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
         </div>
         
         <UpsPensionCalculator dictionary={dict} />
+
+        <div className="mt-4 text-center text-xs text-muted-foreground font-mono bg-muted p-2 rounded-md">
+            <span className="font-semibold">{dict.calculation_transcript.title}</span> {dict.calculation_transcript.formula}
+        </div>
 
         <div className="space-y-8 mt-12">
             <Card>
@@ -177,8 +181,6 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
                 </CardHeader>
                 <CardContent className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dict.methodology.body }}/>
             </Card>
-
-            <AuthorCard dictionary={dictionary.author_card} />
             
             <div className="mt-12">
                 <h2 className="text-2xl font-bold text-center mb-6">{dict.faq_title}</h2>
@@ -194,7 +196,7 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
                 </Accordion>
             </div>
 
-            <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
+             <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
               <CardHeader>
                 <CardTitle className="flex items-center gap-3">
                   <Star className="h-7 w-7 text-accent" />
@@ -213,6 +215,8 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
                 {dict.disclaimer.body}
               </AlertDescription>
             </Alert>
+            
+            <AuthorCard dictionary={dictionary.author_card} />
         </div>
       </div>
     </div>
