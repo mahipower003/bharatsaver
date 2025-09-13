@@ -5,8 +5,7 @@ import type { Metadata } from "next";
 import { UpsPensionCalculator } from "@/components/calculators/UpsPensionCalculator";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FileText, Download, TrendingUp, Star, AlertTriangle, CheckCircle, HelpCircle, GitCompareArrows } from "lucide-react";
-import Link from "next/link";
+import { FileText, TrendingUp, Star, AlertTriangle, CheckCircle, HelpCircle, GitCompareArrows } from "lucide-react";
 import { AuthorCard } from "@/components/layout/AuthorCard";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 
@@ -40,6 +39,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     "name": "UPS Pension Calculator",
     "url": pageUrl,
     "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web",
     "description": "Estimate your monthly pension, family pension and lump sum under the Unified Pension Scheme.",
     "offers": {
         "@type": "Offer",
@@ -108,13 +108,6 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
         <div className="space-y-8 mt-12">
             <Card>
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-3"><HelpCircle className="h-6 w-6 text-primary" />{dict.how_it_works.h2}</CardTitle>
-                </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.how_it_works.body }} />
-            </Card>
-
-            <Card>
-                <CardHeader>
                     <CardTitle className="flex items-center gap-3"><TrendingUp className="h-6 w-6 text-primary" />{dict.worked_examples.h2}</CardTitle>
                 </CardHeader>
                  <CardContent className="space-y-6">
@@ -131,6 +124,13 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
                     <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: dict.worked_examples.scenario3.body }} />
                   </div>
                 </CardContent>
+            </Card>
+
+            <Card>
+                <CardHeader>
+                    <CardTitle className="flex items-center gap-3"><HelpCircle className="h-6 w-6 text-primary" />{dict.how_it_works.h2}</CardTitle>
+                </CardHeader>
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.how_it_works.body }} />
             </Card>
 
             <Card>
@@ -167,6 +167,18 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
                 </CardHeader>
                 <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.optimization.body }} />
             </Card>
+
+            <Card id="methodology" className="mt-12 text-sm text-muted-foreground">
+                <CardHeader>
+                    <CardTitle className="text-lg flex items-center gap-2">
+                        <HelpCircle className="h-5 w-5"/>
+                        <h2 className="text-2xl font-bold">{dict.methodology.h2}</h2>
+                    </CardTitle>
+                </CardHeader>
+                <CardContent className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dict.methodology.body }}/>
+            </Card>
+
+            <AuthorCard dictionary={dictionary.author_card} />
             
             <div className="mt-12">
                 <h2 className="text-2xl font-bold text-center mb-6">{dict.faq_title}</h2>
@@ -182,41 +194,27 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
                 </Accordion>
             </div>
 
-            <Card id="methodology" className="mt-12 text-sm text-muted-foreground">
-                <CardHeader>
-                    <CardTitle className="text-lg flex items-center gap-2">
-                        <HelpCircle className="h-5 w-5"/>
-                        <h2 className="text-2xl font-bold">{dict.methodology.h2}</h2>
-                    </CardTitle>
-                </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dict.methodology.body }}/>
+            <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3">
+                  <Star className="h-7 w-7 text-accent" />
+                  <h2 className="text-2xl font-bold">{dict.conclusion.title}</h2>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">{dict.conclusion.body}</p>
+              </CardContent>
             </Card>
+
+            <Alert variant="destructive" className="mt-8">
+              <AlertTriangle className="h-4 w-4" />
+              <AlertTitle>{dict.disclaimer.title}</AlertTitle>
+              <AlertDescription>
+                {dict.disclaimer.body}
+              </AlertDescription>
+            </Alert>
         </div>
-        
-        <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-3">
-              <Star className="h-7 w-7 text-accent" />
-              <h2 className="text-2xl font-bold">{dict.conclusion.title}</h2>
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-muted-foreground">{dict.conclusion.body}</p>
-          </CardContent>
-        </Card>
-
-        <Alert variant="destructive" className="mt-8">
-          <AlertTriangle className="h-4 w-4" />
-          <AlertTitle>{dict.disclaimer.title}</AlertTitle>
-          <AlertDescription>
-            {dict.disclaimer.body}
-          </AlertDescription>
-        </Alert>
-
-        <AuthorCard dictionary={dictionary.author_card} />
-
       </div>
     </div>
   );
 }
-
