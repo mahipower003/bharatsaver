@@ -102,7 +102,7 @@
   "author_page": {
     "meta_title": "About Mahesh Chaube, CFP - Lead Author at BharatSaver",
     "meta_description": "Learn more about Mahesh Chaube, a Certified Financial Planner and the lead financial expert behind the tools and guides at BharatSaver.",
-    "h2": "Calculators & Articles by Mahesh Chaube",
+    "h2": "Calculators &amp; Articles by Mahesh Chaube",
     "view_calculator": "View Calculator"
   },
    "contact_page": {
@@ -114,7 +114,7 @@
   "terms_page": {
     "meta_title": "Terms and Conditions | BharatSaver",
     "meta_description": "Read the terms and conditions for using the BharatSaver website and its tools. By using our services, you agree to these terms.",
-    "h1": "Terms & Conditions",
+    "h1": "Terms &amp; Conditions",
     "p1": "Welcome to BharatSaver. By using this website, you agree to comply with and be bound by the following terms and conditions of use.",
     "h2_1": "Terms of Use",
     "p2": "The information provided on this website is for general informational purposes only. While we strive to ensure accuracy, we make no warranties about the completeness or reliability of any information.",
@@ -134,7 +134,7 @@
   "ppf_calculator": {
     "meta_title": "PPF Calculator 2025 — Calculate PPF Maturity Online (India)",
     "meta_description": "Free PPF calculator for 2025: Instantly estimate PPF maturity, interest, and tax savings (EEE). Includes year-wise charts, extension rules, and comparison with FD, NPS, and SSY.",
-    "h1": "PPF Calculator 2025 — Calculate Maturity & Tax-Free Returns (India)",
+    "h1": "PPF Calculator 2025 — Calculate Maturity &amp; Tax-Free Returns (India)",
     "description": "Use our free PPF Calculator to estimate how much you'll get from your Public Provident Fund (PPF) investment over time. Get instant results for maturity amount, total interest earned, and a year-wise breakdown, all using current government interest rates. Try it now to plan your savings with confidence!",
     "last_updated": "Last updated:",
     "annual_investment_label": "Annual Investment (₹)",
@@ -394,7 +394,7 @@
         "nomination_body": "While your daughter is the beneficiary, you as the parent or guardian operate the account. In the unfortunate event of your death, the account can be continued by the other parent or a new legal guardian. If that's not possible, the account is typically closed, and the entire balance, including interest, is paid to the nominee or legal heir."
     },
     "how_to_open": {
-      "title": "How to Open an SSY Account & What Documents You'll Need",
+      "title": "How to Open an SSY Account &amp; What Documents You'll Need",
       "intro": "You can open an SSY account at any <strong>Post Office</strong> or at designated branches of major <strong>banks</strong> like SBI, HDFC, and ICICI. Here are the typical steps:",
       "steps": [
         "Choose your preferred Post Office or bank.",
@@ -449,11 +449,11 @@
     }
   },
   "nps_calculator": {
-    "meta_title": "NPS Calculator 2025 — National Pension System Corpus & Pension",
+    "meta_title": "NPS Calculator 2025 — National Pension System Corpus &amp; Pension",
     "meta_description": "Use our free NPS calculator to estimate your retirement corpus, tax benefits and expected monthly pension. Supports monthly/annual contributions - updated NPS rules for 2025.",
-    "og_title": "NPS Calculator 2025 — National Pension System Corpus & Pension",
-    "og_description": "Use our NPS calculator to plan your retirement. Enter contribution, expected returns and retirement age to get corpus & monthly pension estimates.",
-    "h1": "NPS Calculator — Calculate Your Retirement Corpus & Monthly Pension",
+    "og_title": "NPS Calculator 2025 — National Pension System Corpus &amp; Pension",
+    "og_description": "Use our NPS calculator to plan your retirement. Enter contribution, expected returns and retirement age to get corpus &amp; monthly pension estimates.",
+    "h1": "NPS Calculator — Calculate Your Retirement Corpus &amp; Monthly Pension",
     "description": "Plan a confident retirement with our NPS (National Pension System) calculator. Enter your monthly or yearly contribution, expected rate of return, and years to retirement — we'll show you your projected corpus, tax-efficient benefits, and an estimated monthly annuity after age 60.",
     "title": "NPS Calculator",
     "form_description": "Estimate your retirement savings with the National Pension System.",
@@ -506,7 +506,7 @@
       "footer": "It combines tax savings, market-based returns, and disciplined investment to build a substantial retirement fund."
     },
     "how_it_works": {
-      "title": "How the NPS Calculator Works (Formula & Explanation)",
+      "title": "How the NPS Calculator Works (Formula &amp; Explanation)",
       "formula_title": "Formulas Used",
       "annual": {
         "title": "For annual contributions, the calculator uses the future value formula:",
@@ -532,7 +532,7 @@
       "disclaimer": "These numbers are for illustration. Real-world returns vary and annuity rates change. Always check direct annuity quotes from providers before committing."
     },
     "tax_benefits": {
-      "title": "NPS Tax Benefits 2025: Section 80C & 80CCD(1B)",
+      "title": "NPS Tax Benefits 2025: Section 80C &amp; 80CCD(1B)",
       "intro": "NPS offers some of the best tax-saving opportunities for retirement planning:",
       "points": [
         "<strong>Section 80C:</strong> Up to ₹1.5 lakh deduction for your contributions.",
@@ -541,7 +541,7 @@
       ]
     },
     "rules": {
-      "title": "NPS Tier I vs Tier II — Rules & Differences",
+      "title": "NPS Tier I vs Tier II — Rules &amp; Differences",
       "intro": "It's important to understand the differences between NPS Tier 1 vs Tier 2:",
       "tier1": {
         "title": "Tier I (Retirement Account)",
@@ -572,7 +572,7 @@
           ["Return type", "Market-linked (8–12%)", "Govt-guaranteed (~7.1%)", "Bank-specific (5–7%)", "Market-linked"],
           ["Lock-in", "Till retirement (Tier I)", "15 years", "Flexible", "Varies (ELSS 3 years)"],
           ["Tax benefits", "80C + 80CCD(1B)", "EEE (80C)", "Interest taxable", "ELSS under 80C"],
-          ["Best for", "Retirement & pension", "Risk-averse long-term", "Short/medium-term goals", "Wealth creation"]
+          ["Best for", "Retirement &amp; pension", "Risk-averse long-term", "Short/medium-term goals", "Wealth creation"]
         ]
       },
       "footer_note": "Explore our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> and <a href='/{lang}/fd-vs-ppf-calculator' class='underline'>FD vs PPF Calculator</a> to compare returns."
@@ -606,11 +606,11 @@
     }
   },
   "apy_calculator": {
-    "meta_title": "APY Calculator 2025 — Atal Pension Yojana Premium Chart & Pension Estimate",
+    "meta_title": "APY Calculator 2025 — Atal Pension Yojana Premium Chart &amp; Pension Estimate",
     "meta_description": "Use our FREE APY Calculator to find the monthly premium required for ₹1,000–₹5,000 pensions. Get age-based premium charts, eligibility, FAQs and downloadable CSV. Updated Sep 2025.",
-    "og_title": "APY Calculator 2025 — Atal Pension Yojana Premium Chart & Pension Estimate",
+    "og_title": "APY Calculator 2025 — Atal Pension Yojana Premium Chart &amp; Pension Estimate",
     "og_description": "Use our APY calculator to find your monthly premium for guaranteed pensions of ₹1,000 to ₹5,000. Includes age-wise premium charts, eligibility and FAQs.",
-    "h1": "APY Calculator 2025 — Atal Pension Yojana Premium & Pension Estimate",
+    "h1": "APY Calculator 2025 — Atal Pension Yojana Premium &amp; Pension Estimate",
     "description": "Enter your age and desired pension to instantly see the required monthly premium. Download your plan as a CSV.",
     "title": "APY Calculator",
     "last_updated": "Last updated:",
@@ -634,16 +634,16 @@
       ]
     },
     "how_it_works": {
-      "title": "How the APY Calculator Works — Premiums by Age & Pension",
+      "title": "How the APY Calculator Works — Premiums by Age &amp; Pension",
       "intro": "The APY premium isn't calculated with a compounding formula like PPF or NPS. Instead, the premiums are fixed amounts set by the government based on your entry age and chosen pension. Our calculator uses PFRDA's official premium table to give you the exact amount.",
       "example": {
         "title": "Example: Age 25 — How the premium works",
         "body": "<strong>Monthly Premium (from chart):</strong> ₹76<br/><strong>Contribution Years:</strong> From age 25 to 60 = 35 years<br/><strong>Total Paid</strong> = 76 × 12 × 35 = ₹31,920 (total contributions over 35 years)<br/><strong>Result:</strong> A guaranteed monthly pension of ₹1,000 from age 60 onwards (the scheme provides the pension; payments come from the pooled fund/annuity).",
-        "note": "<strong>Note:</strong> APY premiums come from government actuarial tables — they reflect pooled investment & guarantees. The low total-paid vs. pension highlights APY's social-security nature."
+        "note": "<strong>Note:</strong> APY premiums come from government actuarial tables — they reflect pooled investment &amp; guarantees. The low total-paid vs. pension highlights APY's social-security nature."
       }
     },
     "premium_chart": {
-      "title": "APY Premium Chart (by Age & Pension Amount)",
+      "title": "APY Premium Chart (by Age &amp; Pension Amount)",
       "description": "This chart shows the fixed monthly premium based on your entry age and desired pension amount, as per the official <a href='https://www.pfrda.org.in/my-apy/apy-chart' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA premium table</a>. The earlier you start, the lower your premium.",
       "age_header": "Entry Age",
       "years_label": "Years"
@@ -662,7 +662,7 @@
       "body": "While APY is excellent for a basic, guaranteed pension, other schemes may be better for different goals. <strong>NPS</strong> offers higher potential returns and flexibility, making it suitable for those comfortable with market risks. <strong>PPF</strong> is a risk-free, long-term savings instrument for wealth creation. Explore our <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> and <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> to compare."
     },
     "rules": {
-      "title": "Penalties, Missed Payments & Revival — What you need to know",
+      "title": "Penalties, Missed Payments &amp; Revival — What you need to know",
       "body": "<strong>Withdrawal:</strong> Full withdrawal is only allowed at age 60. Early exit is allowed in exceptional circumstances (e.g., terminal illness or death). <br/> <strong>Penalties:</strong> A small penalty is levied for delayed payments, ranging from ₹1 to ₹10 per month depending on the premium amount. <br/> <strong>Transfer:</strong> You can transfer your APY account from one bank to another. For official rules, see the <a href='https://www.pfrda.org.in/my-apy/apy-faq' target='_blank' rel='noopener noreferrer' class='underline'>PFRDA FAQ section</a>."
     },
     "faq_title": "Frequently Asked Questions",
@@ -686,11 +686,11 @@
     }
   },
   "fd_vs_ppf_calculator": {
-    "meta_title": "FD vs PPF Calculator 2025 — Compare Returns, Tax & Maturity (Free Tool)",
+    "meta_title": "FD vs PPF Calculator 2025 — Compare Returns, Tax &amp; Maturity (Free Tool)",
     "meta_description": "Use our free FD vs PPF calculator to compare maturity amounts, tax impact and post-tax returns. Includes premium charts, examples, and downloadable CSV. Updated Sep 2025.",
     "og_title": "FD vs PPF Returns Calculator 2025",
     "og_description": "Compare Fixed Deposit vs PPF returns instantly — see pre/post-tax maturity, graphs, and downloadable plan. Free FD vs PPF calculator (India).",
-    "h1": "FD vs PPF Returns Calculator 2025 — Compare Fixed Deposit & PPF",
+    "h1": "FD vs PPF Returns Calculator 2025 — Compare Fixed Deposit &amp; PPF",
     "description": "Enter your investment amount and tenure to see a side-by-side comparison of maturity value, tax impact, and post-tax returns for Fixed Deposits and Public Provident Fund. Make an informed decision.",
     "title": "FD vs PPF Calculator",
     "last_updated": "Last Updated:",
@@ -736,7 +736,7 @@
       }
     },
     "ppf_features": {
-      "title": "PPF: Key Features, Rules & Tax Benefits",
+      "title": "PPF: Key Features, Rules &amp; Tax Benefits",
       "points": [
         "<strong>Tax Treatment:</strong> Exempt-Exempt-Exempt (EEE). Contributions, interest, and maturity are all tax-free. (<a href='https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx' target='_blank' rel='noopener noreferrer' class='text-xs'>Source: Income Tax Dept</a>)",
         "<strong>Lock-in Period:</strong> 15 years, can be extended in blocks of 5 years.",
@@ -746,7 +746,7 @@
       ]
     },
     "fd_features": {
-      "title": "FD: Key Features, Rules & Tax Implications",
+      "title": "FD: Key Features, Rules &amp; Tax Implications",
       "points": [
         "<strong>Tax Treatment:</strong> Interest earned is fully taxable as per your income tax slab.",
         "<strong>Lock-in Period:</strong> Flexible, ranging from 7 days to 10 years. Premature withdrawal is possible with a penalty.",
@@ -761,7 +761,7 @@
       "table": {
         "headers": ["Feature", "Fixed Deposit (FD)", "Public Provident Fund (PPF)"],
         "rows": [
-            ["Returns", "Fixed & Guaranteed", "Guaranteed, but rate changes quarterly"],
+            ["Returns", "Fixed &amp; Guaranteed", "Guaranteed, but rate changes quarterly"],
             ["Tax on Interest", "Taxable at your slab rate", "Completely Tax-Free"],
             ["Lock-in", "Flexible (7 days to 10 years)", "15 years"],
             ["Liquidity", "High (penalty on early withdrawal)", "Low (partial withdrawal after 7 years)"],
@@ -859,7 +859,7 @@
     },
     "how_we_calculate": {
       "title": "How We Calculate Your Tax (Step-by-step)",
-      "body": "<ul><li><strong>Old Regime Calculation:</strong> Gross Income - Standard Deduction - All Section 80 Deductions - HRA/Home Loan Interest = Taxable Income.</li><li><strong>New Regime Calculation:</strong> Gross Income - Standard Deduction = Taxable Income.</li></ul><p>Our tax calculator then applies the official tax slabs for FY 2024-25 (AY 2025-26) to determine your liability under both regimes. A 4% Health & Education Cess is applied to the final tax amount. The default new regime has a rebate under Section 87A for incomes up to ₹7 lakh, making the effective tax zero. For slab rates, we reference the official <a href='https://incometaxindia.gov.in/Pages/tools/income-tax-calculator.aspx' target='_blank' rel='noopener noreferrer'>Income Tax Department e-calculator</a>.</p>"
+      "body": "<ul><li><strong>Old Regime Calculation:</strong> Gross Income - Standard Deduction - All Section 80 Deductions - HRA/Home Loan Interest = Taxable Income.</li><li><strong>New Regime Calculation:</strong> Gross Income - Standard Deduction = Taxable Income.</li></ul><p>Our tax calculator then applies the official tax slabs for FY 2024-25 (AY 2025-26) to determine your liability under both regimes. A 4% Health &amp; Education Cess is applied to the final tax amount. The default new regime has a rebate under Section 87A for incomes up to ₹7 lakh, making the effective tax zero. For slab rates, we reference the official <a href='https://incometaxindia.gov.in/Pages/tools/income-tax-calculator.aspx' target='_blank' rel='noopener noreferrer'>Income Tax Department e-calculator</a>.</p>"
     },
     "checklist": {
       "title": "How to Choose: A Quick Checklist",
@@ -868,7 +868,7 @@
     "common_scenarios": {
       "title": "Worked Examples — Old vs New Regime",
       "scenario1": {
-        "title": "Example 1: ₹10 Lakh Salary with HRA & Full Deductions",
+        "title": "Example 1: ₹10 Lakh Salary with HRA &amp; Full Deductions",
         "body": "<strong>Inputs:</strong> Salary ₹10,00,000 | HRA ₹2,00,000 | 80C ₹1,50,000 | 80D ₹25,000 | 80CCD(1B) ₹50,000<br/><strong>Old Regime Tax:</strong> ₹46,800<br/><strong>New Regime Tax:</strong> ₹54,600<br/><strong>Recommendation:</strong> The Old Regime is better here because the deductions + HRA exemption significantly lower the taxable income."
       },
       "scenario2": {
@@ -912,7 +912,7 @@
       "tenure": "Tenure (Years)",
       "prepayment_amount": "Prepayment Amount (₹)",
       "calculating": "Calculating...",
-      "calculate_cta": "Calculate EMI & Savings"
+      "calculate_cta": "Calculate EMI &amp; Savings"
     },
     "results": {
       "title": "Your Loan Summary",
@@ -961,7 +961,7 @@
       }
     },
     "optimization_masterclass": {
-      "h2": "Loan Optimization Masterclass: Prepayment, Refinance, & Investment",
+      "h2": "Loan Optimization Masterclass: Prepayment, Refinance, &amp; Investment",
       "body": "<p>There are three main strategies for loan optimization:</p><ul><li><strong>Prepayment:</strong> Making extra payments towards your principal. This is the most direct way to reduce your debt burden.</li><li><strong>Refinance/Balance Transfer:</strong> Moving your loan to another lender offering a lower interest rate. This can significantly reduce your EMI and total interest.</li><li><strong>Prepay vs. Invest:</strong> Deciding whether to use surplus funds to prepay your loan or invest them elsewhere to earn a higher return.</li></ul>"
     },
     "prepay_vs_invest": {
@@ -1038,8 +1038,8 @@
       "body": "<p>We use standard financial formulas to give you an accurate projection. Here's a simplified look at how we do it:</p><h3>Future Value of Your Expenses at Retirement</h3><p>We first calculate how much your current monthly expenses will grow to by the time you retire, using the inflation rate you provide. The formula is: <code>Future Expense = Current Expense × (1 + Inflation Rate) ^ Years to Retirement</code>.</p><h3>The Corpus Required at Retirement (PV of an Annuity)</h3><p>Next, we calculate the total lump sum you'll need on the day you retire. This is the amount that, when invested, will generate enough income to cover your expenses for the rest of your life. We use a present value of an annuity formula for this.</p><h3>Required SIP Calculation</h3><p>Finally, we determine the monthly Systematic Investment Plan (SIP) needed to bridge the gap between your current savings and your target corpus. We calculate the future value of your current savings and subtract it from the required corpus to find the shortfall. The SIP is then calculated using the future value of an annuity due formula, assuming deposits are made at the beginning of each month.</p>"
     },
     "inputs_explained": {
-      "h2": "What Inputs You Need to Provide & Why They Matter",
-      "body": "<p>To get an accurate result, you need to provide a few key details. Here's what each one means for your plan:</p><ul><li><strong>Your Current & Retirement Age:</strong> This defines your investment horizon. The more time you have, the more the power of compounding can work for you, meaning you can start with smaller investments.</li><li><strong>Your Current Monthly Expenses:</strong> This is the foundation of your retirement plan. Be realistic about what you spend today to get an accurate picture of what you'll need tomorrow.</li><li><strong>Your Current Savings:</strong> This is your head start! Any money you've already saved in EPF, PPF, mutual funds, or other investments reduces the amount you need to save in the future.</li><li><strong>Inflation Rate:</strong> This is the silent wealth killer. Inflation erodes the purchasing power of your money over time. A higher inflation rate means you'll need a much larger corpus.</li><li><strong>Pre-Retirement Returns:</strong> This is the rate of growth you expect on your investments while you're still working. Higher returns mean your money works harder for you, and you can reach your goal with smaller SIPs.</li><li><strong>Post-Retirement Returns:</strong> This is the return you expect on your corpus after you've retired. We assume a more conservative, capital-preservation portfolio here.</li></ul>"
+      "h2": "What Inputs You Need to Provide &amp; Why They Matter",
+      "body": "<p>To get an accurate result, you need to provide a few key details. Here's what each one means for your plan:</p><ul><li><strong>Your Current &amp; Retirement Age:</strong> This defines your investment horizon. The more time you have, the more the power of compounding can work for you, meaning you can start with smaller investments.</li><li><strong>Your Current Monthly Expenses:</strong> This is the foundation of your retirement plan. Be realistic about what you spend today to get an accurate picture of what you'll need tomorrow.</li><li><strong>Your Current Savings:</strong> This is your head start! Any money you've already saved in EPF, PPF, mutual funds, or other investments reduces the amount you need to save in the future.</li><li><strong>Inflation Rate:</strong> This is the silent wealth killer. Inflation erodes the purchasing power of your money over time. A higher inflation rate means you'll need a much larger corpus.</li><li><strong>Pre-Retirement Returns:</strong> This is the rate of growth you expect on your investments while you're still working. Higher returns mean your money works harder for you, and you can reach your goal with smaller SIPs.</li><li><strong>Post-Retirement Returns:</strong> This is the return you expect on your corpus after you've retired. We assume a more conservative, capital-preservation portfolio here.</li></ul>"
     },
     "worked_examples": {
       "h2": "Worked Examples — How Much Corpus Do You Need?",
@@ -1062,7 +1062,7 @@
     },
     "accumulation_strategy": {
       "h2": "How to Build Your Retirement Corpus (Investment Strategies)",
-      "body": "<h3>Choosing Your Investment Path: SIP vs. Lumpsum</h3><p>A <strong>Systematic Investment Plan (SIP)</strong> is the most disciplined approach. You invest a fixed amount regularly (e.g., monthly), which helps you average out market fluctuations (rupee-cost averaging) and benefit from compounding. It's perfect for building wealth steadily over time. For even faster growth, consider a <strong>Step-up SIP</strong>, where you increase your monthly investment amount annually, typically in line with your salary hike (e.g., by 10%).</p><h3>Asset Allocation by Age</h3><p>Your investment strategy shouldn't be static. As you get closer to retirement, you should gradually shift from high-risk, high-return assets to safer options to protect your capital.</p><ul><li><strong>In your 20s & 30s:</strong> Be aggressive. A portfolio with 70-80% in equities (like mutual funds) can generate higher returns in the long run.</li><li><strong>In your 40s:</strong> Start balancing your risk. A 60:40 split between equity and debt is a common strategy.</li><li><strong>In your 50s and beyond:</strong> It's time to preserve your capital. Shift your portfolio to be debt-heavy (70-80% in fixed-income instruments).</li></ul><h3>How PPF, NPS, & EPF Fit Into Your Plan</h3><p>These are the cornerstones of retirement planning in India. Your current savings in these instruments give you a massive head start. Use them to form the debt/fixed-income portion of your portfolio. Explore our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> and <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> to see how they grow.</p>",
+      "body": "<h3>Choosing Your Investment Path: SIP vs. Lumpsum</h3><p>A <strong>Systematic Investment Plan (SIP)</strong> is the most disciplined approach. You invest a fixed amount regularly (e.g., monthly), which helps you average out market fluctuations (rupee-cost averaging) and benefit from compounding. It's perfect for building wealth steadily over time. For even faster growth, consider a <strong>Step-up SIP</strong>, where you increase your monthly investment amount annually, typically in line with your salary hike (e.g., by 10%).</p><h3>Asset Allocation by Age</h3><p>Your investment strategy shouldn't be static. As you get closer to retirement, you should gradually shift from high-risk, high-return assets to safer options to protect your capital.</p><ul><li><strong>In your 20s &amp; 30s:</strong> Be aggressive. A portfolio with 70-80% in equities (like mutual funds) can generate higher returns in the long run.</li><li><strong>In your 40s:</strong> Start balancing your risk. A 60:40 split between equity and debt is a common strategy.</li><li><strong>In your 50s and beyond:</strong> It's time to preserve your capital. Shift your portfolio to be debt-heavy (70-80% in fixed-income instruments).</li></ul><h3>How PPF, NPS, &amp; EPF Fit Into Your Plan</h3><p>These are the cornerstones of retirement planning in India. Your current savings in these instruments give you a massive head start. Use them to form the debt/fixed-income portion of your portfolio. Explore our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> and <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> to see how they grow.</p>",
       "sip_plans": {
         "title": "Sample SIP Plans to Reach Your Goal",
         "body": "This table shows the approximate monthly SIP required to reach common retirement corpus goals from different starting ages, assuming a 12% annual return."
@@ -1092,7 +1092,7 @@
       { "question": "What's the simplest thumb rule to estimate a target corpus?", "answer": "A common rule is 25× your current annual expenses (for a 4% real withdrawal), but use the calculator to refine this with inflation, returns, and existing savings." }
     ],
     "next_steps": {
-      "h2": "Download Your Plan & Take Action",
+      "h2": "Download Your Plan &amp; Take Action",
       "cta1_title": "File Your Taxes",
       "cta1_desc": "Use ClearTax to file your income tax returns with ease.",
       "cta2_title": "Explore More Calculators",
@@ -1147,9 +1147,9 @@
       "body": "<h3>Overlap Percentage Thresholds</h3><p>Here are some general guidelines to interpret your overlap score:</p><ul class='list-disc pl-5 mt-2 space-y-1'><li><strong>0-10% (Low):</strong> The funds are well-differentiated. This is ideal for funds in different categories (e.g., a large-cap and a small-cap fund).</li><li><strong>10-30% (Moderate):</strong> Some common holdings exist, which is normal for funds in the same category. No immediate action is typically needed, but it's good to be aware.</li><li><strong>30-60% (High):</strong> Your funds are significantly similar. You may be taking on concentrated risk and paying duplicate fees. Consider re-evaluating your portfolio.</li><li><strong>>60% (Very High):</strong> The funds are practically clones. Holding both is highly inefficient and offers little to no diversification benefit. It's strongly recommended to consolidate.</li></ul><h3 class='mt-4'>Sector vs. Stock Overlap</h3><p>Our tool shows both. High sector overlap (e.g., both funds are 30% in financials) can be a concern, but high stock overlap within that sector is a bigger red flag.</p>"
     },
     "what_to_do": {
-      "h2": "What To Do Next — Actionable Steps & Decision Flow",
+      "h2": "What To Do Next — Actionable Steps &amp; Decision Flow",
       "body": "<h3>Replace, Rebalance, or Accept?</h3><p>Once you have your overlap score, use this flowchart to decide your next move:</p>",
-      "tax_considerations": "<h3 class='mt-4'>Tax & Exit Load Considerations in India</h3><p>Before selling a fund, always consider the tax implications. For equity funds, gains are taxed as Short-Term Capital Gains (STCG) if sold within one year, and Long-Term Capital Gains (LTCG) after that. Also, check for any exit loads, which are fees charged for redeeming units within a certain period (usually 1 year).</p>"
+      "tax_considerations": "<h3 class='mt-4'>Tax &amp; Exit Load Considerations in India</h3><p>Before selling a fund, always consider the tax implications. For equity funds, gains are taxed as Short-Term Capital Gains (STCG) if sold within one year, and Long-Term Capital Gains (LTCG) after that. Also, check for any exit loads, which are fees charged for redeeming units within a certain period (usually 1 year).</p>"
     },
     "faq": {
       "h2": "Frequently Asked Questions",
@@ -1177,7 +1177,7 @@
       ]
     },
     "methodology": {
-      "h2": "Methodology & Data Sources",
+      "h2": "Methodology &amp; Data Sources",
       "body": "<p>This calculator uses portfolio data sourced from AMFI (Association of Mutual Funds in India) and is updated periodically. The overlap is calculated using both a simple common-weight method and a more accurate weighted overlap formula to give you a comprehensive view. For any discrepancies, please refer to the official fund factsheet from the respective Asset Management Company (AMC).</p><h3>Weighted Overlap (Used)</h3><p>For funds A and B, with constituents {i} and weights wA_i, wB_i (fractions; sum of equity weights ≤ 1):</p><code>WeightedOverlap(A,B) = Σ_i min(wA_i, wB_i)</code><h3>Notes:</h3><ul><li>Cash/debt portion is excluded from overlap (we normalize to total equity weight when comparing funds across different equity allocation).</li><li>If only top-N holdings are available, we display `coverage = Σ_topN weights`. If coverage < 80%, results are flagged as “partial”.</li></ul>"
     },
     "results": {
@@ -1188,7 +1188,7 @@
     }
   },
   "ups_pension_calculator": {
-    "meta_title": "UPS Pension Calculator 2025 — Unified Pension Scheme | Estimate Monthly Pension & Family Pension",
+    "meta_title": "UPS Pension Calculator 2025 — Unified Pension Scheme | Estimate Monthly Pension &amp; Family Pension",
     "meta_description": "Use our free UPS Pension Calculator to estimate your monthly pension, family pension and lump sum under the Unified Pension Scheme. Includes worked examples, UPS vs NPS comparison, methodology and downloadable Excel.",
     "h1": "UPS Pension Calculator — Estimate Your Unified Pension Scheme (UPS) Pension (2025)",
     "hero_subtitle": "Use our free UPS Pension Calculator to estimate your monthly pension, family pension and lump sum under the Unified Pension Scheme.",
@@ -1219,7 +1219,7 @@
     },
     "formula_section": {
       "h2": "3. UPS Pension Formula — Step by Step",
-      "body": "<h3>The Core Formula</h3><p>Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor. We use the official formula from NPSTRUST and government circulars.</p><h3>How to Calculate Pensionable Salary</h3><p>This is typically the average of your basic pay over the last 12 months of your service.</p><h3>Qualifying Service</h3><p>This includes full years and months of service. Any breaks in service may be deducted as per scheme rules.</p><h3>Family Pension & Lump Sum Formulas</h3><p>Family pension is usually a percentage (e.g., 60%) of the basic pension. The lump sum, or commuted value, is calculated based on a commutation factor.</p>"
+      "body": "<h3>The Core Formula</h3><p>Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor. We use the official formula from NPSTRUST and government circulars.</p><h3>How to Calculate Pensionable Salary</h3><p>This is typically the average of your basic pay over the last 12 months of your service.</p><h3>Qualifying Service</h3><p>This includes full years and months of service. Any breaks in service may be deducted as per scheme rules.</p><h3>Family Pension &amp; Lump Sum Formulas</h3><p>Family pension is usually a percentage (e.g., 60%) of the basic pension. The lump sum, or commuted value, is calculated based on a commutation factor.</p>"
     },
     "worked_examples": {
       "h2": "4. Worked Examples (real scenarios)",
@@ -1231,29 +1231,29 @@
         "title": "Example B — Mid-career joiner, 20 years service",
         "body": "<strong>Inputs:</strong> Age 40, 20 years service, Basic Pay ₹80,000.<br/><strong>Result:</strong> This scenario leads to a monthly pension of roughly ₹24,242, demonstrating the impact of a shorter service period despite a higher basic pay."
       },
-      "scenario3": {
+       "scenario3": {
         "title": "Example C — Long service 35 years with high basic pay",
         "body": "<strong>Inputs:</strong> Age 25, 35 years service, Basic Pay ₹1,00,000.<br/><strong>Result:</strong> This scenario results in a significantly higher pension of approximately ₹53,030, showing the power of a long service duration."
       }
     },
     "family_pension": {
-      "h2": "5. Lump Sum & Family Pension — Details & How To Compute",
-      "body": "<h3>How UPS Family Pension Works</h3><p>Family pension provides financial security to the family in the unfortunate event of the pensioner's death. Under the Universal Pension Scheme (UPS), the spouse is typically entitled to receive a percentage of the basic pension as a family pension for their lifetime. This is often around 60% of the original pension, but can vary based on specific scheme rules.</p><h3>Lump Sum Computation</h3><p>At retirement, pensioners may have the option to 'commute' a portion of their pension, which means they receive a lump sum amount upfront in exchange for a lower monthly pension. The lump sum is calculated using a 'commutation factor' which depends on the pensioner's age at the time of retirement. Our UPS lump sum calculator uses these standard factors to provide an estimate. For example, if you choose to commute one-third of a ₹30,000 monthly pension, you would receive a lump sum and your monthly pension would be reduced to ₹20,000.</p>"
+        "h2": "5. Lump Sum &amp; Family Pension — Details &amp; How To Compute",
+        "body": "<h3>How UPS Family Pension Works</h3><p>Family pension provides financial security to the family in the unfortunate event of the pensioner's death. Under the Universal Pension Scheme (UPS), the spouse is typically entitled to receive a percentage of the basic pension as a family pension for their lifetime. This is often around 60% of the original pension, but can vary based on specific scheme rules.</p><h3>Lump Sum Computation</h3><p>At retirement, pensioners may have the option to 'commute' a portion of their pension, which means they receive a lump sum amount upfront in exchange for a lower monthly pension. The lump sum is calculated using a 'commutation factor' which depends on the pensioner's age at the time of retirement. Our UPS lump sum calculator uses these standard factors to provide an estimate. For example, if you choose to commute one-third of a ₹30,000 monthly pension, you would receive a lump sum and your monthly pension would be reduced to ₹20,000.</p>"
     },
-    "comparison": {
+     "comparison": {
       "h2": "6. UPS vs NPS — Which is Better?",
       "body": "<h3>Structural Differences</h3><p>The main difference lies in their structure: UPS is a <strong>Defined Benefit</strong> scheme, offering a guaranteed pension based on your salary and service years. NPS is a <strong>Defined Contribution</strong> scheme, where your final corpus depends on your contributions and market performance.</p><table class='w-full text-left border-collapse my-4'><thead><tr class='border-b'><th class='p-2'>Feature</th><th class='p-2'>UPS</th><th class='p-2'>NPS</th></tr></thead><tbody><tr class='border-b'><td class='p-2'>Return Type</td><td class='p-2'>Guaranteed (Defined Benefit)</td><td class='p-2'>Market-linked (Defined Contribution)</td></tr><tr class='border-b'><td class='p-2'>Risk</td><td class='p-2'>Zero risk for employee</td><td class='p-2'>Market risk borne by employee</td></tr><tr><td class='p-2'>Best For</td><td class='p-2'>Those seeking a predictable, secure income</td><td class='p-2'>Those willing to take market risk for potentially higher returns</td></tr></tbody></table><h3>When UPS Makes More Sense vs. NPS</h3><p>Choose UPS if you prioritize a predictable, government-guaranteed income stream without any market volatility. Choose NPS if you are comfortable with market risks and want the potential for higher wealth creation over the long term.</p>"
     },
     "tax_rules": {
-      "h2": "7. Taxation & Withdrawal Rules (India-specific)",
-      "body": "<h3>Tax Treatment of Pension & Lump Sum</h3><p>The monthly pension received from UPS is generally taxable as 'Income from Salary'. A lump sum amount received on commutation may be partially or fully exempt under Section 10(10A) of the Income Tax Act. The rules around UPS pension tax treatment can be complex, and it is crucial to understand whether your UPS pension is taxable based on your specific situation. Please consult a Chartered Accountant for personalized tax advice.</p><h3>Exit/Load Considerations</h3><p>As this is a government pension scheme, there are no exit loads. Rules for withdrawal and commutation are governed by service rules. It's important to note that this is not financial or tax advice; always consult a professional for guidance tailored to your circumstances.</p>"
+        "h2": "7. Taxation &amp; Withdrawal Rules (India-specific)",
+        "body": "<h3>Tax Treatment of Pension &amp; Lump Sum</h3><p>The monthly pension received from UPS is generally taxable as 'Income from Salary'. A lump sum amount received on commutation may be partially or fully exempt under Section 10(10A) of the Income Tax Act. The rules around UPS pension tax treatment can be complex, and it is crucial to understand whether your UPS pension is taxable based on your specific situation. Please consult a Chartered Accountant for personalized tax advice.</p><h3>Exit/Load Considerations</h3><p>As this is a government pension scheme, there are no exit loads. Rules for withdrawal and commutation are governed by service rules. It's important to note that this is not financial or tax advice; always consult a professional for guidance tailored to your circumstances.</p>"
     },
     "optimization": {
       "h2": "8. How to Reduce Tax / Optimize Your UPS Pension",
       "body": "<h3>Practical Tips</h3><p>While UPS provides a fixed pension, you can still make smart moves to optimize your overall retirement income. Consider these tips for your UPS pension planning:</p><ul><li><strong>Spouse's Financial Plan:</strong> Ensure your spouse's investments are structured to complement your pension, creating a diversified household income.</li><li><strong>Timing of Commutation:</strong> The decision to take a lump sum (commute) versus a higher monthly pension depends on your immediate needs and other income sources. If you have a high-return investment opportunity, a lump sum might be beneficial.</li></ul><h3>When to take Annuity, SWP or other post-retirement strategies</h3><p>Your UPS pension provides a stable, risk-free base. You can build on this with other instruments:</p><ul><li><strong>Systematic Withdrawal Plan (SWP):</strong> For additional income, you can set up an SWP from your mutual fund investments. This offers more flexibility than a pension but comes with market risk.</li><li><strong>Annuity from other savings:</strong> If you have other retirement savings (e.g., from NPS or mutual funds), you can purchase an annuity for additional guaranteed income.</li></ul>"
     },
     "methodology": {
-      "h2": "9. Methodology & Sources (Show your Math)",
+      "h2": "9. Methodology &amp; Sources (Show your Math)",
       "body": "<p>This calculator uses data and formulas from official sources such as NPSTRUST, PFRDA circulars, and government notifications. Key assumptions include the DA percentage and commutation factors, which are subject to change. Last updated: August 2024.</p>"
     },
     "faq_title": "10. Frequently Asked Questions (FAQ)",
@@ -1279,7 +1279,7 @@
         "body": "Get a personalised pension plan or download your calculation as an Excel template. Share your results with family or a financial advisor."
     },
     "disclaimer": {
-        "title": "12. References & Legal Disclaimer",
+        "title": "12. References &amp; Legal Disclaimer",
         "body": "This is an illustrative tool and not financial advice. Please consult official government circulars and a qualified financial advisor for binding calculations."
     }
   },
@@ -1307,4 +1307,4 @@
   }
 }
 
-  
+    

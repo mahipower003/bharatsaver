@@ -129,6 +129,18 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
                 <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.optimization.body }} />
             </Card>
 
+            <Card id="methodology" className="mt-12 text-sm text-muted-foreground">
+                <CardHeader>
+                    <CardTitle className="text-lg flex items-center gap-2">
+                        <HelpCircle className="h-5 w-5"/>
+                        <h2 className="text-2xl font-bold">{dict.methodology.h2}</h2>
+                    </CardTitle>
+                </CardHeader>
+                <CardContent className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dict.methodology.body }}/>
+            </Card>
+
+            <AuthorCard dictionary={dictionary.author_card} />
+            
             <div className="mt-12">
                 <h2 className="text-2xl font-bold text-center mb-6">{dict.faq_title}</h2>
                 <Accordion type="single" collapsible className="w-full">
@@ -142,16 +154,6 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
                 ))}
                 </Accordion>
             </div>
-            
-            <Card id="methodology" className="mt-12 text-sm text-muted-foreground">
-                <CardHeader>
-                    <CardTitle className="text-lg flex items-center gap-2">
-                        <HelpCircle className="h-5 w-5"/>
-                        <h2 className="text-2xl font-bold">{dict.methodology.h2}</h2>
-                    </CardTitle>
-                </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dict.methodology.body }}/>
-            </Card>
             
             <Card className="mt-12 shadow-lg">
               <CardHeader>
@@ -174,10 +176,11 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
           </AlertDescription>
         </Alert>
 
-        <AuthorCard dictionary={dictionary.author_card} />
       </div>
     </div>
   );
 }
 
   
+
+    
