@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Inter, Noto_Sans } from 'next/font/google';
 import { i18nConfig } from '@/lib/i18n-config';
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Script from 'next/script';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -79,10 +80,27 @@ export default function RootLayout({
   return (
     <html lang={params.lang ?? i18nConfig.defaultLocale} suppressHydrationWarning className={`${inter.variable} ${noto_sans.variable}`}>
       <head>
+        <Script id="google-tag-manager" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-W5RGW9FM');
+          `}
+        </Script>
         <link rel="icon" href="/icon.svg" type="image/svg+xml" sizes="any" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
       </head>
       <body>
+        <noscript>
+            <iframe 
+                src="https://www.googletagmanager.com/ns.html?id=GTM-W5RGW9FM"
+                height="0" 
+                width="0" 
+                style={{display: 'none', visibility: 'hidden'}}
+            ></iframe>
+        </noscript>
         {children}
         <Toaster />
         <SpeedInsights />
