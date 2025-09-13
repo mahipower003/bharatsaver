@@ -26,7 +26,9 @@ export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCal
   useEffect(() => {
     if (allFunds.length > 0 && selectedFunds.length === 0) {
       const uniqueFunds = Array.from(new Map(allFunds.map(fund => [fund.fund_name, fund])).values());
-      setSelectedFunds(uniqueFunds.slice(0, 2));
+      if (uniqueFunds.length >= 2) {
+        setSelectedFunds(uniqueFunds.slice(0, 2));
+      }
     }
   }, [allFunds, selectedFunds.length]);
   
@@ -81,10 +83,17 @@ export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCal
 
   const addFund = () => {
     if (selectedFunds.length >= 5 || allFunds.length === 0) return;
-    const selectedNames = new Set(selectedFunds.map(f => f.fund_name));
-    const nextFundToAdd = allFunds.find(f => !selectedNames.has(f.fund_name));
-    if (nextFundToAdd) {
-      setSelectedFunds(prev => [...prev, nextFundToAdd]);
+  
+    const allUniqueFundNames = Array.from(new Map(allFunds.map(f => [f.fund_name, f])).keys());
+    const selectedFundNames = new Set(selectedFunds.map(f => f.fund_name));
+    
+    const nextAvailableFundName = allUniqueFundNames.find(name => !selectedFundNames.has(name));
+    
+    if (nextAvailableFundName) {
+      const fundToAdd = allFunds.find(f => f.fund_name === nextAvailableFundName);
+      if (fundToAdd) {
+        setSelectedFunds(prev => [...prev, fundToAdd]);
+      }
     }
   };
   
@@ -255,14 +264,16 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: RawFund[
   const [search, setSearch] = useState("");
   const [visibleCount, setVisibleCount] = useState(FUNDS_TO_SHOW_INITIAL);
 
+  const uniqueFunds = useMemo(() => Array.from(new Map(allFunds.map(fund => [fund.fund_name, fund])).values()), [allFunds]);
+
   const filteredFunds = useMemo(() => {
     if (!search) {
-      return allFunds.slice(0, visibleCount);
+      return uniqueFunds.slice(0, visibleCount);
     }
-    return allFunds.filter(fund =>
+    return uniqueFunds.filter(fund =>
       fund.fund_name.toLowerCase().includes(search.toLowerCase())
     );
-  }, [allFunds, search, visibleCount]);
+  }, [uniqueFunds, search, visibleCount]);
 
   useEffect(() => {
     if (!open) {
@@ -298,7 +309,7 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: RawFund[
                   key={`${fund.fund_name}-${index}`}
                   value={fund.fund_name}
                   onSelect={(currentValue) => {
-                    const selected = allFunds.find(f => f.fund_name.toLowerCase() === currentValue.toLowerCase());
+                    const selected = uniqueFunds.find(f => f.fund_name.toLowerCase() === currentValue.toLowerCase());
                     if (selected) {
                       onSelect(selected.fund_name);
                     }
@@ -315,7 +326,7 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: RawFund[
                 </CommandItem>
               ))}
             </CommandGroup>
-            {!search && visibleCount < allFunds.length && (
+            {!search && visibleCount < uniqueFunds.length && (
               <CommandItem
                 onSelect={() => setVisibleCount(prev => prev + 100)}
                 className="justify-center text-center text-primary"
@@ -329,5 +340,3 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: RawFund[
     </>
   );
 }
-
-    
