@@ -217,7 +217,10 @@ export async function generateMetadata({ params }: { params: { lang:Locale } }):
 }
 
 export default async function RetirementCorpusCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang, ['retirement_corpus_calculator', 'author_card', 'loan_optimization_calculator', 'tax_regime_calculator', 'ssy_calculator', 'nps_calculator', 'fd_vs_ppf_calculator']);
+  const dictionary = await getDictionary(params.lang, [
+    'retirement_corpus_calculator', 
+    'author_card'
+  ]);
   
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -294,14 +297,6 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
           {dictionary.retirement_corpus_calculator.tool_section.h2}
         </h2>
         <RetirementCorpusCalculator dictionary={dictionary.retirement_corpus_calculator} initialResult={initialResult} />
-
-        <Alert className="mt-8">
-          <AlertTriangle className="h-4 w-4" />
-          <AlertTitle>{dictionary.retirement_corpus_calculator.assumptions.title}</AlertTitle>
-          <AlertDescription>
-            <div className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.assumptions.body }} />
-          </AlertDescription>
-        </Alert>
 
         <Card className="mt-8 shadow-lg">
            <CardHeader>
