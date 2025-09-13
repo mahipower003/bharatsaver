@@ -184,6 +184,8 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
     return row;
   });
 
+  const retirementDict = dictionary.retirement_corpus_calculator;
+
 
   return (
     <div className="py-12">
@@ -191,9 +193,9 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
       <div className="mx-auto max-w-5xl">
         <div className="text-center mb-8">
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
-            {dictionary.retirement_corpus_calculator?.h1}
+            {retirementDict?.h1}
             </h1>
-            <p className="mt-4 text-lg text-muted-foreground">{dictionary.retirement_corpus_calculator?.intro}</p>
+            <p className="mt-4 text-lg text-muted-foreground">{retirementDict?.intro}</p>
         </div>
         
         <div className="bs-byline justify-center text-center">
@@ -203,63 +205,63 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
             <div className="bs-reviewed">Reviewed by <strong>Laveena Vijayi</strong> — BharatSaver Editorial Team</div>
         </div>
 
-        {dictionary.retirement_corpus_calculator?.tool_section && <h2 className="text-2xl font-bold tracking-tight sm:text-3xl font-headline mt-12 mb-6 text-center">
-          {dictionary.retirement_corpus_calculator.tool_section.h2}
+        {retirementDict?.tool_section && <h2 className="text-2xl font-bold tracking-tight sm:text-3xl font-headline mt-12 mb-6 text-center">
+          {retirementDict.tool_section.h2}
         </h2>}
-        <RetirementCorpusCalculator dictionary={dictionary.retirement_corpus_calculator} initialResult={initialResult} />
+        <RetirementCorpusCalculator dictionary={retirementDict} initialResult={initialResult} />
 
-        {dictionary.retirement_corpus_calculator?.how_it_works && <Card className="mt-8 shadow-lg">
+        {retirementDict?.how_it_works && <Card className="mt-8 shadow-lg">
            <CardHeader>
              <CardTitle className="flex items-center gap-3">
                 <Calculator className="h-7 w-7 text-primary"/>
-                <h2 className="text-2xl font-bold">{dictionary.retirement_corpus_calculator.how_it_works.h2}</h2>
+                <h2 className="text-2xl font-bold">{retirementDict.how_it_works.h2}</h2>
              </CardTitle>
           </CardHeader>
-          <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.how_it_works.body }} />
+          <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: retirementDict.how_it_works.body }} />
         </Card>}
         
-        {dictionary.retirement_corpus_calculator?.inputs_explained && <Card className="mt-8 shadow-lg">
+        {retirementDict?.inputs_explained && <Card className="mt-8 shadow-lg">
            <CardHeader>
              <CardTitle className="flex items-center gap-3">
                 <HelpCircle className="h-7 w-7 text-primary"/>
-                <h2 className="text-2xl font-bold">{dictionary.retirement_corpus_calculator.inputs_explained.h2}</h2>
+                <h2 className="text-2xl font-bold">{retirementDict.inputs_explained.h2}</h2>
              </CardTitle>
           </CardHeader>
-          <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.inputs_explained.body }} />
+          <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: retirementDict.inputs_explained.body }} />
         </Card>}
 
-        {dictionary.retirement_corpus_calculator?.worked_examples && <Card className="mt-8 shadow-lg">
+        {retirementDict?.worked_examples && <Card className="mt-8 shadow-lg">
           <CardHeader>
              <CardTitle className="flex items-center gap-3">
                 <FileText className="h-7 w-7 text-primary"/>
-                <h2 className="text-2xl font-bold">{dictionary.retirement_corpus_calculator.worked_examples.h2}</h2>
+                <h2 className="text-2xl font-bold">{retirementDict.worked_examples.h2}</h2>
              </CardTitle>
           </CardHeader>
           <CardContent className="space-y-6">
-            <div className="bg-muted/50 p-4 rounded-lg">
-              <h3 className="font-semibold text-lg">{dictionary.retirement_corpus_calculator.worked_examples.scenario1?.title}</h3>
-              <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.worked_examples.scenario1?.body }} />
-            </div>
-            <div className="bg-muted/50 p-4 rounded-lg">
-              <h3 className="font-semibold text-lg">{dictionary.retirement_corpus_calculator.worked_examples.scenario2?.title}</h3>
-              <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.worked_examples.scenario2?.body }} />
-            </div>
-             <div className="bg-muted/50 p-4 rounded-lg">
-              <h3 className="font-semibold text-lg">{dictionary.retirement_corpus_calculator.worked_examples.scenario3?.title}</h3>
-              <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.worked_examples.scenario3?.body }} />
-            </div>
+            {retirementDict.worked_examples.scenario1 && <div className="bg-muted/50 p-4 rounded-lg">
+              <h3 className="font-semibold text-lg">{retirementDict.worked_examples.scenario1.title}</h3>
+              <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: retirementDict.worked_examples.scenario1.body }} />
+            </div>}
+            {retirementDict.worked_examples.scenario2 && <div className="bg-muted/50 p-4 rounded-lg">
+              <h3 className="font-semibold text-lg">{retirementDict.worked_examples.scenario2.title}</h3>
+              <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: retirementDict.worked_examples.scenario2.body }} />
+            </div>}
+            {retirementDict.worked_examples.scenario3 && <div className="bg-muted/50 p-4 rounded-lg">
+              <h3 className="font-semibold text-lg">{retirementDict.worked_examples.scenario3.title}</h3>
+              <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: retirementDict.worked_examples.scenario3.body }} />
+            </div>}
           </CardContent>
         </Card>}
         
-         {dictionary.retirement_corpus_calculator?.sensitivity_analysis && <Card className="mt-8 shadow-lg">
+         {retirementDict?.sensitivity_analysis && <Card className="mt-8 shadow-lg">
           <CardHeader>
              <CardTitle className="flex items-center gap-3">
                 <TableIcon className="h-7 w-7 text-primary"/>
-                <h2 className="text-2xl font-bold">{dictionary.retirement_corpus_calculator.sensitivity_analysis.title}</h2>
+                <h2 className="text-2xl font-bold">{retirementDict.sensitivity_analysis.title}</h2>
              </CardTitle>
           </CardHeader>
           <CardContent>
-             <p className="mb-4 text-muted-foreground">{dictionary.retirement_corpus_calculator.sensitivity_analysis.body}</p>
+             <p className="mb-4 text-muted-foreground">{retirementDict.sensitivity_analysis.body}</p>
               <Table>
                 <TableHeader>
                   <TableRow>
@@ -281,18 +283,18 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
           </CardContent>
         </Card>}
 
-        {dictionary.retirement_corpus_calculator?.accumulation_strategy && <Card className="mt-8 shadow-lg">
+        {retirementDict?.accumulation_strategy && <Card className="mt-8 shadow-lg">
            <CardHeader>
              <CardTitle className="flex items-center gap-3">
                 <TrendingUp className="h-7 w-7 text-primary"/>
-                <h2 className="text-2xl font-bold">{dictionary.retirement_corpus_calculator.accumulation_strategy.h2}</h2>
+                <h2 className="text-2xl font-bold">{retirementDict.accumulation_strategy.h2}</h2>
              </CardTitle>
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none">
-            <div dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.accumulation_strategy.body }} />
-            {dictionary.retirement_corpus_calculator.sip_plans && <>
-                <h3 className="font-semibold text-lg mt-6 mb-2">{dictionary.retirement_corpus_calculator.sip_plans.title}</h3>
-                <p className="text-muted-foreground">{dictionary.retirement_corpus_calculator.sip_plans.body}</p>
+            <div dangerouslySetInnerHTML={{ __html: retirementDict.accumulation_strategy.body }} />
+            {retirementDict.sip_plans && <>
+                <h3 className="font-semibold text-lg mt-6 mb-2">{retirementDict.sip_plans.title}</h3>
+                <p className="text-muted-foreground">{retirementDict.sip_plans.body}</p>
                 <Table className="mt-4">
                 <TableHeader>
                     <TableRow>
@@ -318,36 +320,36 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
           </CardContent>
         </Card>}
 
-        {dictionary.retirement_corpus_calculator?.deaccumulation_strategy && <Card className="mt-8 shadow-lg">
+        {retirementDict?.deaccumulation_strategy && <Card className="mt-8 shadow-lg">
            <CardHeader>
              <CardTitle className="flex items-center gap-3">
                 <Wallet className="h-7 w-7 text-primary"/>
-                <h2 className="text-2xl font-bold">{dictionary.retirement_corpus_calculator.deaccumulation_strategy.h2}</h2>
+                <h2 className="text-2xl font-bold">{retirementDict.deaccumulation_strategy.h2}</h2>
              </CardTitle>
           </CardHeader>
-          <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.deaccumulation_strategy.body }} />
+          <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: retirementDict.deaccumulation_strategy.body }} />
         </Card>}
         
-        {dictionary.retirement_corpus_calculator?.tax_rules && <Card className="mt-8 shadow-lg">
+        {retirementDict?.tax_rules && <Card className="mt-8 shadow-lg">
            <CardHeader>
              <CardTitle className="flex items-center gap-3">
                 <Banknote className="h-7 w-7 text-primary"/>
-                <h2 className="text-2xl font-bold">{dictionary.retirement_corpus_calculator.tax_rules.h2}</h2>
+                <h2 className="text-2xl font-bold">{retirementDict.tax_rules.h2}</h2>
              </CardTitle>
           </CardHeader>
-          <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.tax_rules.body }} />
+          <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: retirementDict.tax_rules.body }} />
         </Card>}
 
-        {dictionary.retirement_corpus_calculator?.faqs && <Card className="mt-12 shadow-lg">
+        {retirementDict?.faqs && <Card className="mt-12 shadow-lg">
           <CardHeader>
             <CardTitle className="flex items-center gap-3">
                 <LineChart className="h-7 w-7 text-primary"/>
-                <h2 className="text-2xl font-bold">{dictionary.retirement_corpus_calculator.faq_title}</h2>
+                <h2 className="text-2xl font-bold">{retirementDict.faq_title}</h2>
             </CardTitle>
           </CardHeader>
           <CardContent>
               <div className="prose dark:prose-invert max-w-none">
-                {dictionary.retirement_corpus_calculator.faqs.map((faq: { question: string; answer: string; }, index: number) => (
+                {retirementDict.faqs.map((faq: { question: string; answer: string; }, index: number) => (
                   <div key={index} className="mb-4">
                     <h3 className="font-semibold text-lg">{faq.question}</h3>
                     <p className="text-muted-foreground">{faq.answer}</p>
@@ -357,11 +359,11 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
           </CardContent>
         </Card>}
         
-        {dictionary.retirement_corpus_calculator?.next_steps && <Card className="mt-12 shadow-lg">
+        {retirementDict?.next_steps && <Card className="mt-12 shadow-lg">
           <CardHeader>
             <CardTitle className="flex items-center gap-3">
               <Download className="h-7 w-7 text-primary"/>
-              <h2 className="text-2xl font-bold">{dictionary.retirement_corpus_calculator.next_steps.h2}</h2>
+              <h2 className="text-2xl font-bold">{retirementDict.next_steps.h2}</h2>
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -371,8 +373,8 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
                           <CardHeader className="flex flex-row items-center gap-4">
                               <TrendingUp className="h-8 w-8 text-primary"/>
                               <div>
-                                  <CardTitle className="text-lg">{dictionary.retirement_corpus_calculator.next_steps.cta1_title}</CardTitle>
-                                  <p className="text-sm text-muted-foreground mt-1">{dictionary.retirement_corpus_calculator.next_steps.cta1_desc}</p>
+                                  <CardTitle className="text-lg">{retirementDict.next_steps.cta1_title}</CardTitle>
+                                  <p className="text-sm text-muted-foreground mt-1">{retirementDict.next_steps.cta1_desc}</p>
                               </div>
                           </CardHeader>
                       </Card>
@@ -382,8 +384,8 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
                           <CardHeader className="flex flex-row items-center gap-4">
                               <Calculator className="h-8 w-8 text-primary"/>
                               <div>
-                                  <CardTitle className="text-lg">{dictionary.retirement_corpus_calculator.next_steps.cta2_title}</CardTitle>
-                                  <p className="text-sm text-muted-foreground mt-1">{dictionary.retirement_corpus_calculator.next_steps.cta2_desc}</p>
+                                  <CardTitle className="text-lg">{retirementDict.next_steps.cta2_title}</CardTitle>
+                                  <p className="text-sm text-muted-foreground mt-1">{retirementDict.next_steps.cta2_desc}</p>
                               </div>
                           </CardHeader>
                       </Card>
@@ -392,42 +394,44 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
           </CardContent>
         </Card>}
         
-        {dictionary.retirement_corpus_calculator?.conclusion && <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
+        {retirementDict?.conclusion && <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
           <CardHeader>
             <CardTitle className="flex items-center gap-3">
               <Star className="h-7 w-7 text-accent" />
-              <h2 className="text-2xl font-bold">{dictionary.retirement_corpus_calculator.conclusion.title}</h2>
+              <h2 className="text-2xl font-bold">{retirementDict.conclusion.title}</h2>
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground">{dictionary.retirement_corpus_calculator.conclusion.body}</p>
+            <p className="text-muted-foreground">{retirementDict.conclusion.body}</p>
           </CardContent>
         </Card>}
         
-        {dictionary.retirement_corpus_calculator?.disclaimer && <Alert variant="destructive" className="mt-8">
+        {retirementDict?.disclaimer && <Alert variant="destructive" className="mt-8">
           <AlertTriangle className="h-4 w-4" />
-          <AlertTitle>{dictionary.retirement_corpus_calculator.disclaimer.title}</AlertTitle>
+          <AlertTitle>{retirementDict.disclaimer.title}</AlertTitle>
           <AlertDescription>
-            {dictionary.retirement_corpus_calculator.disclaimer.body}
+            {retirementDict.disclaimer.body}
           </AlertDescription>
         </Alert>}
 
         <AuthorCard dictionary={dictionary.author_card} />
 
-        {dictionary.retirement_corpus_calculator?.methodology && <Card className="mt-12 text-sm text-muted-foreground">
+        {retirementDict?.methodology && <Card className="mt-12 text-sm text-muted-foreground">
             <CardHeader>
                 <CardTitle className="text-lg flex items-center gap-2">
                     <BadgeCheck className="h-5 w-5"/>
-                    <h2 className="text-2xl font-bold">{dictionary.retirement_corpus_calculator.methodology.h2}</h2>
+                    <h2 className="text-2xl font-bold">{retirementDict.methodology.h2}</h2>
                 </CardTitle>
             </CardHeader>
             <CardContent>
-                <p>{dictionary.retirement_corpus_calculator.methodology.body}</p>
+                <p>{retirementDict.methodology.body}</p>
             </CardContent>
         </Card>}
       </div>
     </div>
   );
 }
+
+    
 
     
