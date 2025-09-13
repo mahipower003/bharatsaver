@@ -15,6 +15,8 @@ export function useFundData() {
   useEffect(() => {
     // If data is already cached, no need to fetch again.
     if (fundDataCache) {
+      setAllFunds(fundDataCache);
+      setIsLoading(false);
       return;
     }
 
@@ -33,6 +35,7 @@ export function useFundData() {
       return;
     }
     
+    // The path must be absolute from the root.
     fetchPromise = fetch('/jsonfile/tickertape_top_holdings.json')
       .then(response => {
         if (!response.ok) {
