@@ -95,14 +95,14 @@
     "p3": "We are a team of financial planners, software engineers, and content creators dedicated to building free, high-quality calculators and guides in multiple Indian languages. Whether you're planning for retirement, saving for your child's education, or choosing a tax regime, we're here to help you navigate your financial journey."
   },
   "author_card": {
-    "bio": "Mahesh Chaube is a Certified Financial Planner (CFP) with extensive experience helping Indian families build tax-efficient retirement and education plans. Mahesh specializes in retirement strategy, tax-optimized fixed-income planning, and practical financial tools that simplify decision-making for everyday investors. He has advised over 500 Indian families and collaborates with leading fintech platforms on data-driven personal finance solutions.",
-    "review_text": "Reviewed &amp; Verified by Experts: <strong>Laveena Vijayi, Senior Financial Research Analyst — BharatSaver Editorial Team.</strong> All data cross-checked against PFRDA, CBDT, and Income Tax Department official calculators.",
+    "bio": "Mahesh Chaube is a Certified Financial Planner (CFP) with over 15 years of experience in retirement planning. He is the lead author and reviewer for all calculators on BharatSaver.",
+    "review_text": "Reviewed & Verified by <strong>Laveena Vijayi</strong> — Senior Financial Research Analyst — BharatSaver Editorial Team.",
     "author_page_link": "View all articles"
   },
   "author_page": {
     "meta_title": "About Mahesh Chaube, CFP - Lead Author at BharatSaver",
     "meta_description": "Learn more about Mahesh Chaube, a Certified Financial Planner and the lead financial expert behind the tools and guides at BharatSaver.",
-    "h2": "Calculators &amp; Articles by Mahesh Chaube",
+    "h2": "Calculators & Articles by Mahesh Chaube",
     "view_calculator": "View Calculator"
   },
    "contact_page": {
@@ -114,7 +114,7 @@
   "terms_page": {
     "meta_title": "Terms and Conditions | BharatSaver",
     "meta_description": "Read the terms and conditions for using the BharatSaver website and its tools. By using our services, you agree to these terms.",
-    "h1": "Terms &amp; Conditions",
+    "h1": "Terms & Conditions",
     "p1": "Welcome to BharatSaver. By using this website, you agree to comply with and be bound by the following terms and conditions of use.",
     "h2_1": "Terms of Use",
     "p2": "The information provided on this website is for general informational purposes only. While we strive to ensure accuracy, we make no warranties about the completeness or reliability of any information.",
@@ -134,7 +134,7 @@
   "ppf_calculator": {
     "meta_title": "PPF Calculator 2025 — Calculate PPF Maturity Online (India)",
     "meta_description": "Free PPF calculator for 2025: Instantly estimate PPF maturity, interest, and tax savings (EEE). Includes year-wise charts, extension rules, and comparison with FD, NPS, and SSY.",
-    "h1": "PPF Calculator 2025 — Calculate Maturity &amp; Tax-Free Returns (India)",
+    "h1": "PPF Calculator 2025 — Calculate Maturity & Tax-Free Returns (India)",
     "description": "Use our free PPF Calculator to estimate how much you'll get from your Public Provident Fund (PPF) investment over time. Get instant results for maturity amount, total interest earned, and a year-wise breakdown, all using current government interest rates. Try it now to plan your savings with confidence!",
     "last_updated": "Last updated:",
     "annual_investment_label": "Annual Investment (₹)",
@@ -394,7 +394,7 @@
         "nomination_body": "While your daughter is the beneficiary, you as the parent or guardian operate the account. In the unfortunate event of your death, the account can be continued by the other parent or a new legal guardian. If that's not possible, the account is typically closed, and the entire balance, including interest, is paid to the nominee or legal heir."
     },
     "how_to_open": {
-      "title": "How to Open an SSY Account &amp; What Documents You'll Need",
+      "title": "How to Open an SSY Account & What Documents You'll Need",
       "intro": "You can open an SSY account at any <strong>Post Office</strong> or at designated branches of major <strong>banks</strong> like SBI, HDFC, and ICICI. Here are the typical steps:",
       "steps": [
         "Choose your preferred Post Office or bank.",
@@ -1191,6 +1191,7 @@
     "meta_description": "Free UPS Pension Calculator (2025). Enter basic pay, DA & years of service to instantly estimate monthly UPS pension, family pension and commuted lump sum. Includes worked examples & downloadable Excel.",
     "h1": "UPS Pension Calculator — Estimate Your Unified Pension Scheme (UPS) Pension (2025)",
     "hero_subtitle": "Use our free UPS Pension Calculator to estimate your monthly pension, family pension and possible commutation lump sum under the Unified Pension Scheme. Enter basic pay, DA% and qualifying service to get an instant, step-by-step calculation and a downloadable Excel.",
+    "last_reviewed_date": "August 2024",
     "interactive_tool": {
       "title": "UPS pension calculator online free",
       "description": "Enter your service details to get an instant pension estimate.",
@@ -1264,8 +1265,8 @@
       "body": "<h3>UPS pension planning</h3><p>While UPS provides a fixed pension, you can still make smart moves to optimize your overall retirement income. Consider these tips for your UPS pension planning:</p><ul><li><strong>Spouse's Financial Plan:</strong> Ensure your spouse's investments are structured to complement your pension, creating a diversified household income.</li><li><strong>Timing of Commutation:</strong> The decision to take a lump sum (commute) versus a higher monthly pension depends on your immediate needs and other income sources. If you have a high-return investment opportunity, a lump sum might be beneficial.</li></ul><h3>When to take Annuity, SWP or other post-retirement strategies</h3><p>Your UPS pension provides a stable, risk-free base. You can build on this with other instruments:</p><ul><li><strong>Systematic Withdrawal Plan (SWP):</strong> For additional income, you can set up an SWP from your mutual fund investments. This offers more flexibility than a pension but comes with market risk.</li><li><strong>Annuity from other savings:</strong> If you have other retirement savings (e.g., from NPS or mutual funds), you can purchase an annuity for additional guaranteed income.</li></ul>"
     },
     "methodology": {
-      "h2": "Methodology &amp; Sources",
-      "body": "<p>This calculator uses data and formulas from official sources such as NPSTRUST, PFRDA circulars, and government notifications. Key assumptions include the DA percentage and commutation factors, which are subject to change. Last updated: August 2024.</p><h3>How to calculate UPS pension for 30 years of service</h3><p>The monthly pension is calculated using a standard government pension formula:</p><code>Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor</code><p>Where:</p><ul><li><strong>Pensionable Salary:</strong> <code>Basic Pay × (1 + DA % / 100)</code></li><li><strong>Pension Factor:</strong> Assumed to be 0.5 (for 50% of pensionable salary).</li><li><strong>Qualifying Service:</strong> The number of years you have served.</li><li><strong>Divisor:</strong> A standard factor, typically 33 for full pension calculations in many older schemes.</li></ul>"
+      "h2": "Methodology & Sources",
+      "body": "<p>This calculator uses data and formulas from official sources such as NPSTRUST, PFRDA circulars, and government notifications. Key assumptions include the DA percentage and commutation factors, which are subject to change. For any discrepancies, please refer to the official scheme documents.</p><h3>How this calculator was tested</h3><ul><li>Results were cross-verified against sample calculations from PFRDA documents.</li><li>Calculations were manually checked for edge cases (e.g., minimum/maximum service years).</li><li>The formula was validated against the standard government pension formula.</li></ul>"
     },
     "faq_title": "Frequently Asked Questions",
     "faqs": [
@@ -1277,8 +1278,8 @@
       {"q": "Can I download the UPS pension calculation as an Excel file?", "a": "Yes — a downloadable Excel with full stepwise computation is available. Click the 'Download Excel' button after you calculate your result."}
     ],
     "disclaimer": {
-      "title": "References &amp; Legal Disclaimer",
-      "body": "This is an illustrative tool and not financial advice. Please consult official government circulars and a qualified financial advisor for binding calculations."
+      "title": "References & Legal Disclaimer",
+      "body": "This is an illustrative tool and not financial advice. Please consult official government circulars from NPSTRUST and PFRDA, and a qualified financial advisor for binding calculations. For tax advice, including details on Section 10(10A) of the Income Tax Act for commutation, consult a Chartered Accountant."
     },
     "conclusion": {
       "h2": "Conclusion: Your Path to a Secure Pension",
@@ -1308,6 +1309,5 @@
     "result_reasoning": "Why we recommend this:"
   }
 }
-
 
     

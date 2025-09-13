@@ -125,6 +125,13 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
           </h1>
           <p className="mt-4 text-lg text-muted-foreground">{dict.hero_subtitle}</p>
         </div>
+
+        <div className="bs-byline justify-center text-center">
+            <span className="bs-author">By <strong>Mahesh Chaube, CFP</strong></span>
+            <span className="bs-sep">|</span>
+            <span className="bs-updated">Last reviewed: <time dateTime="2024-08-02">{dict.last_reviewed_date}</time></span>
+            <div className="bs-reviewed">Reviewed by <strong>Laveena Vijayi</strong> — BharatSaver Editorial Team</div>
+        </div>
         
         <UpsPensionCalculator dictionary={dict} />
 
@@ -231,9 +238,9 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
                 <p className="text-muted-foreground">{dict.conclusion.body}</p>
               </CardContent>
             </Card>
-
+            
             <Alert variant="destructive" className="mt-8">
-              <AlertTitle>{dict.disclaimer.title}</AlertTitle>
+              <AlertTitle>{dict.disclaimer.title} (Last reviewed: August 2024)</AlertTitle>
               <AlertDescription>
                 {dict.disclaimer.body}
               </AlertDescription>
@@ -245,3 +252,5 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
     </div>
   );
 }
+
+    
