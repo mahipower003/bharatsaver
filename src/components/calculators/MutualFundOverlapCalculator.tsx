@@ -23,16 +23,13 @@ export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCal
   const [overlapResult, setOverlapResult] = useState<OverlapOutput | null>(null);
   const [isCalculating, setIsCalculating] = useState(false);
 
-  // Effect to set the initial state with two default funds once data is loaded.
   useEffect(() => {
     if (allFunds.length > 0 && selectedFunds.length === 0) {
-      // Ensure we only grab unique funds by name
       const uniqueFunds = Array.from(new Map(allFunds.map(fund => [fund.fund_name, fund])).values());
       setSelectedFunds(uniqueFunds.slice(0, 2));
     }
   }, [allFunds, selectedFunds.length]);
-
-  // Effect to recalculate the overlap whenever the user changes the fund selection.
+  
   useEffect(() => {
     if (selectedFunds.length < 2) {
       setOverlapResult(null);
@@ -40,7 +37,6 @@ export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCal
     }
     
     setIsCalculating(true);
-    // Use a timeout to allow the UI to update to the "loading" state before the calculation blocks the main thread.
     const timer = setTimeout(() => {
       const result = calculateAllOverlaps(selectedFunds);
       setOverlapResult(result);
@@ -88,9 +84,10 @@ export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCal
     const selectedNames = new Set(selectedFunds.map(f => f.fund_name));
     const nextFundToAdd = allFunds.find(f => !selectedNames.has(f.fund_name));
     if (nextFundToAdd) {
-        setSelectedFunds(prev => [...prev, nextFundToAdd]);
+      setSelectedFunds(prev => [...prev, nextFundToAdd]);
     }
   };
+  
 
   const removeFund = (fundNameToRemove: string) => {
     setSelectedFunds(prev => prev.filter((f) => f.fund_name !== fundNameToRemove));
@@ -131,7 +128,7 @@ export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCal
   
   return (
     <div className="space-y-6">
-       {selectedFunds.length === 0 && (
+       {selectedFunds.length < 2 && (
         <div className="text-center py-12">
             <p className="mb-4 text-muted-foreground">Select up to 5 funds to compare their holdings.</p>
         </div>
@@ -332,3 +329,5 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: RawFund[
     </>
   );
 }
+
+    
