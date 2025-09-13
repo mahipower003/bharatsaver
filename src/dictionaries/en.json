@@ -85,6 +85,26 @@
     "h1": "Latest Updates & Articles",
     "subtitle": "Explore our latest calculators, guides, and financial insights."
   },
+    "about_page": {
+    "meta_title": "About BharatSaver | Our Mission and Team",
+    "meta_description": "Learn about BharatSaver's mission to simplify financial decision-making for every Indian. Meet our team of experts dedicated to providing clear, unbiased, and accessible financial tools and guides.",
+    "h1": "Simplifying Finance for Every Indian",
+    "p1": "Our mission is to empower you with the clarity and confidence to make smarter financial decisions.",
+    "h2_1": "Our Story",
+    "p2": "BharatSaver was founded on a simple principle: financial planning shouldn't be complicated. We saw millions of Indians struggling with complex financial products, confusing jargon, and a lack of accessible, unbiased tools. We decided to change that.",
+    "p3": "We are a team of financial planners, software engineers, and content creators dedicated to building free, high-quality calculators and guides in multiple Indian languages. Whether you're planning for retirement, saving for your child's education, or choosing a tax regime, we're here to help you navigate your financial journey."
+  },
+  "author_card": {
+    "bio": "Mahesh Chaube is a Certified Financial Planner (CFP) with over 15 years of experience helping individuals navigate their financial journey. He is the lead author and reviewer for all calculators and guides on BharatSaver.",
+    "review_text": "Reviewed for factual accuracy by the <strong>BharatSaver Editorial Team</strong>.",
+    "author_page_link": "Author Profile"
+  },
+  "author_page": {
+    "meta_title": "About Mahesh Chaube, CFP - Lead Author at BharatSaver",
+    "meta_description": "Learn more about Mahesh Chaube, a Certified Financial Planner and the lead financial expert behind the tools and guides at BharatSaver.",
+    "h2": "Calculators & Articles by Mahesh Chaube",
+    "view_calculator": "View Calculator"
+  },
   "ppf_calculator": {
     "meta_title": "PPF Calculator 2025 — Calculate PPF Maturity Online (India)",
     "meta_description": "Free PPF calculator for 2025: Instantly estimate PPF maturity, interest, and tax savings (EEE). Includes year-wise charts, extension rules, and comparison with FD, NPS, and SSY.",
@@ -847,8 +867,8 @@
       "title": "Next Steps",
       "cta1_title": "File Your ITR",
       "cta1_desc": "Use a trusted partner like ClearTax to file your income tax return accurately.",
-      "cta2_title": "Plan Tax-Saving Investments",
-      "cta2_desc": "Explore our tax-saving calculators like PPF and NPS to plan your investments."
+      "cta2_title": "Explore more calculators",
+      "cta2_desc": "Find more tools to help with your financial planning."
     },
     "conclusion": {
       "title": "Final Thoughts: Making the Smart Choice",
@@ -1075,7 +1095,9 @@
     "tool": {
       "title": "Compare Mutual Fund Holdings",
       "description": "Select at least two funds to begin.",
-      "add_fund": "Add another fund"
+      "add_fund": "Add another fund",
+      "export_csv": "Export CSV",
+      "copy_summary": "Copy Summary"
     },
     "what_is_overlap": {
       "h2": "What is Mutual Fund Overlap & Why Does It Matter?",
@@ -1124,13 +1146,6 @@
         "top_stocks_title": "Top Common Stocks",
         "stock_header": "Stock",
         "min_weight_header": "Min. Weight"
-    },
-    "tool": {
-      "title": "Compare Mutual Fund Holdings",
-      "description": "Select at least two funds to begin.",
-      "add_fund": "Add another fund",
-      "export_csv": "Export CSV",
-      "copy_summary": "Copy Summary"
     }
   }
 }
