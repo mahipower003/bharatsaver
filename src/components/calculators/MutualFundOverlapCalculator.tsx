@@ -24,6 +24,14 @@ export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCal
   const [isCalculating, setIsCalculating] = useState(false);
 
   useEffect(() => {
+    if (allFunds.length > 0 && selectedFunds.length === 0) {
+      const uniqueFunds = Array.from(new Map(allFunds.map(fund => [fund.fund_name, fund])).values());
+      setSelectedFunds(uniqueFunds.slice(0, 2));
+    }
+  }, [allFunds, selectedFunds.length]);
+  
+
+  useEffect(() => {
     if (selectedFunds.length < 2) {
       setOverlapResult(null);
       return;
