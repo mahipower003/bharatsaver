@@ -116,7 +116,8 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
         <UpsPensionCalculator dictionary={dict} />
 
         <div className="mt-4 text-center text-xs text-muted-foreground font-mono bg-muted p-2 rounded-md">
-            <span className="font-semibold">{dict.calculation_transcript.title}</span> {dict.calculation_transcript.formula}
+            <h2 className="text-lg font-semibold tracking-tight text-foreground my-2">{dict.calculation_transcript.title}</h2>
+            <p>{dict.calculation_transcript.formula}</p>
         </div>
 
         <div className="space-y-8 mt-12">
@@ -210,7 +211,7 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
               <CardHeader>
                 <CardTitle className="flex items-center gap-3">
                   <Star className="h-7 w-7 text-accent" />
-                  <h2 className="text-2xl font-bold">{dict.conclusion.title}</h2>
+                  <h2 className="text-2xl font-bold">{dict.conclusion.h2}</h2>
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -231,5 +232,7 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
     </div>
   );
 }
+
+    
 
     
