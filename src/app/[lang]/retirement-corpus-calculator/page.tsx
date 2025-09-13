@@ -217,7 +217,7 @@ export async function generateMetadata({ params }: { params: { lang:Locale } }):
 }
 
 export default async function RetirementCorpusCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang, ['retirement_corpus_calculator', 'author_card']);
+  const dictionary = await getDictionary(params.lang, ['retirement_corpus_calculator', 'author_card', 'loan_optimization_calculator', 'tax_regime_calculator', 'ssy_calculator', 'nps_calculator', 'fd_vs_ppf_calculator']);
   
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
