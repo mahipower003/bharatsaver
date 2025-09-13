@@ -138,7 +138,7 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
     ],
   };
   
-  const comparisonData = dictionary.tax_regime_calculator.comparison_table.table;
+  const comparisonData = dictionary.tax_regime_calculator.comparison_table;
 
   return (
     <div className="py-12">
@@ -162,149 +162,171 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
         
         <TaxRegimeCalculator dictionary={dictionary.tax_regime_calculator} />
         
-        <Alert className="mt-8">
-          <AlertTriangle className="h-4 w-4" />
-          <AlertTitle>{dictionary.tax_regime_calculator.assumptions.title}</AlertTitle>
-          <AlertDescription>
-            <div className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.assumptions.body }} />
-          </AlertDescription>
-        </Alert>
+        {dictionary.tax_regime_calculator.assumptions && (
+          <Alert className="mt-8">
+            <AlertTriangle className="h-4 w-4" />
+            <AlertTitle>{dictionary.tax_regime_calculator.assumptions.title}</AlertTitle>
+            <AlertDescription>
+              <div className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.assumptions.body }} />
+            </AlertDescription>
+          </Alert>
+        )}
 
-        <Card className="mt-8 shadow-lg">
-          <CardHeader>
-             <CardTitle className="flex items-center gap-3">
-                <FileText className="h-7 w-7 text-primary"/>
-                <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.comparison_table.title}</h2>
-             </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="mb-4 text-muted-foreground">{dictionary.tax_regime_calculator.comparison_table.description}</p>
-            <div className="overflow-x-auto">
-              <Table>
-                  <TableHeader>
-                      <TableRow>
-                          {comparisonData.headers.map((header: string, index: number) => (
-                              <TableHead key={index}>{header}</TableHead>
-                          ))}
-                      </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                      {comparisonData.rows.map((row: string[], rowIndex: number) => (
-                          <TableRow key={rowIndex}>
-                              {row.map((cell: string, cellIndex: number) => (
-                                  <TableCell key={cellIndex} dangerouslySetInnerHTML={{ __html: cell }}></TableCell>
-                              ))}
-                          </TableRow>
-                      ))}
-                  </TableBody>
-              </Table>
-            </div>
-          </CardContent>
-        </Card>
-        
-        <Card className="mt-8 shadow-lg">
-           <CardHeader>
-             <CardTitle className="flex items-center gap-3">
-                <CheckCircle className="h-7 w-7 text-primary"/>
-                <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.checklist.title}</h2>
-             </CardTitle>
-          </CardHeader>
-          <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.checklist.body }} />
-        </Card>
-        
-        <Card className="mt-8 shadow-lg">
-           <CardHeader>
-             <CardTitle className="flex items-center gap-3">
-                <HelpCircle className="h-7 w-7 text-primary"/>
-                <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.how_we_calculate.title}</h2>
-             </CardTitle>
-          </CardHeader>
-          <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.how_we_calculate.body.replace(/{lang}/g, params.lang) }} />
-        </Card>
-
-        <Card className="mt-8 shadow-lg">
-          <CardHeader>
-             <CardTitle className="flex items-center gap-3">
-                <TrendingUp className="h-7 w-7 text-primary"/>
-                <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.common_scenarios.title}</h2>
-             </CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <div className="bg-muted/50 p-4 rounded-lg">
-              <h3 className="font-semibold text-lg">{dictionary.tax_regime_calculator.common_scenarios.scenario1.title}</h3>
-              <div className="prose dark:prose-invert max-w-none mt-2" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.common_scenarios.scenario1.body }} />
-            </div>
-            <div className="bg-muted/50 p-4 rounded-lg">
-              <h3 className="font-semibold text-lg">{dictionary.tax_regime_calculator.common_scenarios.scenario2.title}</h3>
-              <div className="prose dark:prose-invert max-w-none mt-2" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.common_scenarios.scenario2.body }} />
-            </div>
-             <div className="bg-muted/50 p-4 rounded-lg">
-              <h3 className="font-semibold text-lg">{dictionary.tax_regime_calculator.common_scenarios.scenario3.title}</h3>
-              <div className="prose dark:prose-invert max-w-none mt-2" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.common_scenarios.scenario3.body }} />
-            </div>
-          </CardContent>
-        </Card>
-
-        <div className="mt-12">
-          <h2 className="text-2xl font-bold text-center mb-6">{dictionary.tax_regime_calculator.faq_title}</h2>
-          <Accordion type="single" collapsible className="w-full">
-            {dictionary.tax_regime_calculator.faqs.map((faq: { question: string, answer: string }, index: number) => (
-              <AccordionItem value={`item-${index}`} key={index}>
-                <AccordionTrigger>{faq.question}</AccordionTrigger>
-                <AccordionContent>
-                  <p dangerouslySetInnerHTML={{ __html: faq.answer }}></p>
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
-        
-        <Card className="mt-12 shadow-lg">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-3">
-              <Download className="h-7 w-7 text-primary"/>
-              <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.next_steps.title}</h2>
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <Link href="https://www.cleartax.in/e-filing-of-income-tax-return" target="_blank" rel="noopener noreferrer" className="block group">
-                      <Card className="h-full hover:shadow-md transition-shadow">
-                          <CardHeader className="flex flex-row items-center gap-4">
-                              <Download className="h-8 w-8 text-primary"/>
-                              <div>
-                                  <CardTitle className="text-lg">{dictionary.tax_regime_calculator.next_steps.cta1_title}</CardTitle>
-                                  <p className="text-sm text-muted-foreground mt-1">{dictionary.tax_regime_calculator.next_steps.cta1_desc}</p>
-                              </div>
-                          </CardHeader>
-                      </Card>
-                  </Link>
-                   <Link href={`/${params.lang}/calculators`} className="block group">
-                      <Card className="h-full hover:shadow-md transition-shadow">
-                          <CardHeader className="flex flex-row items-center gap-4">
-                              <TrendingUp className="h-8 w-8 text-primary"/>
-                              <div>
-                                  <CardTitle className="text-lg">{dictionary.tax_regime_calculator.next_steps.cta2_title}</CardTitle>
-                                  <p className="text-sm text-muted-foreground mt-1">{dictionary.tax_regime_calculator.next_steps.cta2_desc}</p>
-                              </div>
-                          </CardHeader>
-                      </Card>
-                  </Link>
+        {comparisonData && (
+          <Card className="mt-8 shadow-lg">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3">
+                  <FileText className="h-7 w-7 text-primary"/>
+                  <h2 className="text-2xl font-bold">{comparisonData.title}</h2>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="mb-4 text-muted-foreground">{comparisonData.description}</p>
+              <div className="overflow-x-auto">
+                <Table>
+                    <TableHeader>
+                        <TableRow>
+                            {comparisonData.table.headers.map((header: string, index: number) => (
+                                <TableHead key={index}>{header}</TableHead>
+                            ))}
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                        {comparisonData.table.rows.map((row: string[], rowIndex: number) => (
+                            <TableRow key={rowIndex}>
+                                {row.map((cell: string, cellIndex: number) => (
+                                    <TableCell key={cellIndex} dangerouslySetInnerHTML={{ __html: cell }}></TableCell>
+                                ))}
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
               </div>
-          </CardContent>
-        </Card>
+            </CardContent>
+          </Card>
+        )}
+        
+        {dictionary.tax_regime_calculator.checklist && (
+          <Card className="mt-8 shadow-lg">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3">
+                  <CheckCircle className="h-7 w-7 text-primary"/>
+                  <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.checklist.title}</h2>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.checklist.body }} />
+          </Card>
+        )}
+        
+        {dictionary.tax_regime_calculator.how_we_calculate && (
+          <Card className="mt-8 shadow-lg">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3">
+                  <HelpCircle className="h-7 w-7 text-primary"/>
+                  <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.how_we_calculate.title}</h2>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.how_we_calculate.body.replace(/{lang}/g, params.lang) }} />
+          </Card>
+        )}
 
-        <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-3">
-              <Star className="h-7 w-7 text-accent" />
-              <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.conclusion.title}</h2>
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-muted-foreground" dangerouslySetInnerHTML={{__html: dictionary.tax_regime_calculator.conclusion.body.replace(/{lang}/g, params.lang)}}></p>
-          </CardContent>
-        </Card>
+        {dictionary.tax_regime_calculator.common_scenarios && (
+          <Card className="mt-8 shadow-lg">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3">
+                  <TrendingUp className="h-7 w-7 text-primary"/>
+                  <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.common_scenarios.title}</h2>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-6">
+              {dictionary.tax_regime_calculator.common_scenarios.scenario1 && (
+                <div className="bg-muted/50 p-4 rounded-lg">
+                  <h3 className="font-semibold text-lg">{dictionary.tax_regime_calculator.common_scenarios.scenario1.title}</h3>
+                  <div className="prose dark:prose-invert max-w-none mt-2" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.common_scenarios.scenario1.body }} />
+                </div>
+              )}
+              {dictionary.tax_regime_calculator.common_scenarios.scenario2 && (
+                <div className="bg-muted/50 p-4 rounded-lg">
+                  <h3 className="font-semibold text-lg">{dictionary.tax_regime_calculator.common_scenarios.scenario2.title}</h3>
+                  <div className="prose dark:prose-invert max-w-none mt-2" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.common_scenarios.scenario2.body }} />
+                </div>
+              )}
+              {dictionary.tax_regime_calculator.common_scenarios.scenario3 && (
+                <div className="bg-muted/50 p-4 rounded-lg">
+                  <h3 className="font-semibold text-lg">{dictionary.tax_regime_calculator.common_scenarios.scenario3.title}</h3>
+                  <div className="prose dark:prose-invert max-w-none mt-2" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.common_scenarios.scenario3.body }} />
+                </div>
+              )}
+            </CardContent>
+          </Card>
+        )}
+
+        {dictionary.tax_regime_calculator.faqs && (
+          <div className="mt-12">
+            <h2 className="text-2xl font-bold text-center mb-6">{dictionary.tax_regime_calculator.faq_title}</h2>
+            <Accordion type="single" collapsible className="w-full">
+              {dictionary.tax_regime_calculator.faqs.map((faq: { question: string, answer: string }, index: number) => (
+                <AccordionItem value={`item-${index}`} key={index}>
+                  <AccordionTrigger>{faq.question}</AccordionTrigger>
+                  <AccordionContent>
+                    <p dangerouslySetInnerHTML={{ __html: faq.answer }}></p>
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        )}
+        
+        {dictionary.tax_regime_calculator.next_steps && (
+          <Card className="mt-12 shadow-lg">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3">
+                <Download className="h-7 w-7 text-primary"/>
+                <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.next_steps.title}</h2>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <Link href="https://www.cleartax.in/e-filing-of-income-tax-return" target="_blank" rel="noopener noreferrer" className="block group">
+                        <Card className="h-full hover:shadow-md transition-shadow">
+                            <CardHeader className="flex flex-row items-center gap-4">
+                                <Download className="h-8 w-8 text-primary"/>
+                                <div>
+                                    <CardTitle className="text-lg">{dictionary.tax_regime_calculator.next_steps.cta1_title}</CardTitle>
+                                    <p className="text-sm text-muted-foreground mt-1">{dictionary.tax_regime_calculator.next_steps.cta1_desc}</p>
+                                </div>
+                            </CardHeader>
+                        </Card>
+                    </Link>
+                     <Link href={`/${params.lang}/calculators`} className="block group">
+                        <Card className="h-full hover:shadow-md transition-shadow">
+                            <CardHeader className="flex flex-row items-center gap-4">
+                                <TrendingUp className="h-8 w-8 text-primary"/>
+                                <div>
+                                    <CardTitle className="text-lg">{dictionary.tax_regime_calculator.next_steps.cta2_title}</CardTitle>
+                                    <p className="text-sm text-muted-foreground mt-1">{dictionary.tax_regime_calculator.next_steps.cta2_desc}</p>
+                                </div>
+                            </CardHeader>
+                        </Card>
+                    </Link>
+                </div>
+            </CardContent>
+          </Card>
+        )}
+
+        {dictionary.tax_regime_calculator.conclusion && (
+          <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3">
+                <Star className="h-7 w-7 text-accent" />
+                <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.conclusion.title}</h2>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground" dangerouslySetInnerHTML={{__html: dictionary.tax_regime_calculator.conclusion.body.replace(/{lang}/g, params.lang)}}></p>
+            </CardContent>
+          </Card>
+        )}
 
         <AuthorCard dictionary={dictionary.author_card} />
       </div>
