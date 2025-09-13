@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Loader2, Download, Target, Twitter, Printer, AlertTriangle } from 'lucide-react';
+import { Loader2, Download, Target, Twitter, Printer } from 'lucide-react';
 import { Area, AreaChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 import { Button } from '@/components/ui/button';
@@ -17,7 +17,6 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { type ChartConfig } from '@/components/ui/chart';
 import type { Dictionary } from '@/types';
 import { calculateRetirementCorpus } from '@/lib/calculations';
-import { Alert, AlertDescription, AlertTitle } from '../ui/alert';
 
 const formSchema = z.object({
   currentAge: z.coerce.number().min(18, 'Must be at least 18').max(60, 'Age is too high for retirement planning'),
@@ -173,96 +172,89 @@ export function RetirementCorpusCalculator({ dictionary, initialResult }: Calcul
       {isLoading && <div className="text-center py-12"><Loader2 className="mx-auto h-12 w-12 animate-spin text-primary" /></div>}
 
       {result && (
-        <>
-          <Card className="mt-8 animate-in fade-in-50 slide-in-from-bottom-5 shadow-lg">
-            <CardHeader>
-                <CardTitle>{dictionary.results_title}</CardTitle>
-            </CardHeader>
-            <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 text-center">
-                    <div className="bg-primary/10 p-4 rounded-lg">
-                        <p className="text-sm text-muted-foreground">{dictionary.required_corpus}</p>
-                        <p className="text-2xl font-bold text-primary">{formatCurrency(result.requiredCorpus)}</p>
-                    </div>
-                    <div className={`p-4 rounded-lg ${result.corpusShortfall > 0 ? 'bg-destructive/10' : 'bg-green-500/10'}`}>
-                        <p className="text-sm text-muted-foreground">{result.corpusShortfall > 0 ? dictionary.corpus_shortfall : dictionary.corpus_surplus}</p>
-                        <p className={`text-2xl font-bold ${result.corpusShortfall > 0 ? 'text-destructive' : 'text-green-600'}`}>{formatCurrency(Math.abs(result.corpusShortfall))}</p>
-                    </div>
-                    <div className="bg-secondary p-4 rounded-lg">
-                        <p className="text-sm text-muted-foreground">{dictionary.monthly_sip}</p>
-                        <p className="text-2xl font-bold">{formatCurrency(result.monthlySip)}</p>
-                    </div>
-                </div>
-
-              <Tabs defaultValue="chart">
-                <div className="flex flex-wrap items-center justify-between gap-4">
-                    <TabsList className="grid w-full grid-cols-2 md:w-auto md:inline-grid">
-                      <TabsTrigger value="chart">{dictionary.view_chart}</TabsTrigger>
-                      <TabsTrigger value="table">{dictionary.view_table}</TabsTrigger>
-                    </TabsList>
-                    <div className="flex flex-wrap gap-2">
-                          <Button variant="outline" size="sm" onClick={() => handleShare('whatsapp')}><WhatsAppIcon className="mr-2 h-4 w-4" /> WhatsApp</Button>
-                           <Button variant="outline" size="sm" onClick={() => handleShare('twitter')}><Twitter className="mr-2 h-4 w-4" /> Twitter</Button>
-                          <Button variant="outline" size="sm" onClick={handlePrint}><Printer className="mr-2 h-4 w-4" /> Print</Button>
-                          <Button variant="outline" size="sm" onClick={handleCSVExport}><Download className="mr-2 h-4 w-4" />{dictionary.export_csv}</Button>
-                      </div>
-                </div>
-                <TabsContent value="chart" className="pt-4">
-                  <ResponsiveContainer width="100%" height={400}>
-                     <AreaChart data={result.yearlyData} margin={{ top: 10, right: 30, left: 20, bottom: 0 }}>
-                       <defs>
-                        <linearGradient id="colorSip" x1="0" y1="0" x2="0" y2="1"><stop offset="5%" stopColor="hsl(var(--primary))" stopOpacity={0.8}/><stop offset="95%" stopColor="hsl(var(--primary))" stopOpacity={0}/></linearGradient>
-                        <linearGradient id="colorExisting" x1="0" y1="0" x2="0" y2="1"><stop offset="5%" stopColor="hsl(var(--accent))" stopOpacity={0.8}/><stop offset="95%" stopColor="hsl(var(--accent))" stopOpacity={0}/></linearGradient>
-                      </defs>
-                      <CartesianGrid strokeDasharray="3 3" />
-                      <XAxis dataKey="age" label={{ value: dictionary.age_label, position: 'insideBottom', offset: -10 }}/>
-                      <YAxis tickFormatter={(value) => (value / 100000).toLocaleString('en-IN') + 'L'} label={{ value: dictionary.amount_in_lakhs, angle: -90, position: 'insideLeft' }}/>
-                      <Tooltip 
-                         contentStyle={{ borderRadius: "var(--radius)", border: "1px solid hsl(var(--border))", background: "hsl(var(--background))" }}
-                         formatter={(value: number, name: string) => [formatCurrency(value), chartConfig[name as keyof typeof chartConfig]?.label]}
-                      />
-                      <Legend />
-                      <Area type="monotone" dataKey="existingCorpusValue" stackId="1" stroke="hsl(var(--accent))" fill="url(#colorExisting)" name="existingCorpusValue"/>
-                      <Area type="monotone" dataKey="sipValue" stackId="1" stroke="hsl(var(--primary))" fill="url(#colorSip)" name="sipValue"/>
-                    </AreaChart>
-                  </ResponsiveContainer>
-                </TabsContent>
-                <TabsContent value="table" className="pt-4">
-                  <div className="overflow-x-auto max-h-[400px]">
-                    <Table>
-                      <TableHeader className="sticky top-0 bg-card">
-                        <TableRow>
-                          <TableHead>{dictionary.table_year}</TableHead>
-                          <TableHead>{dictionary.table_age}</TableHead>
-                          <TableHead className="text-right">{dictionary.table_total_corpus}</TableHead>
-                        </TableRow>
-                      </TableHeader>
-                      <TableBody>
-                        {result.yearlyData.map((row) => (
-                          <TableRow key={row.year}>
-                            <TableCell>{row.year}</TableCell>
-                            <TableCell>{row.age}</TableCell>
-                            <TableCell className="text-right font-semibold">{formatCurrency(row.totalCorpus)}</TableCell>
-                          </TableRow>
-                        ))}
-                      </TableBody>
-                    </Table>
+        <Card className="mt-8 animate-in fade-in-50 slide-in-from-bottom-5 shadow-lg">
+          <CardHeader>
+              <CardTitle>{dictionary.results_title}</CardTitle>
+          </CardHeader>
+          <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 text-center">
+                  <div className="bg-primary/10 p-4 rounded-lg">
+                      <p className="text-sm text-muted-foreground">{dictionary.required_corpus}</p>
+                      <p className="text-2xl font-bold text-primary">{formatCurrency(result.requiredCorpus)}</p>
                   </div>
-                </TabsContent>
-              </Tabs>
-            </CardContent>
-          </Card>
-           <Alert className="mt-8">
-            <AlertTriangle className="h-4 w-4" />
-            <AlertTitle>{dictionary.assumptions.title}</AlertTitle>
-            <AlertDescription>
-              <div className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dictionary.assumptions.body }} />
-            </AlertDescription>
-          </Alert>
-        </>
+                  <div className={`p-4 rounded-lg ${result.corpusShortfall > 0 ? 'bg-destructive/10' : 'bg-green-500/10'}`}>
+                      <p className="text-sm text-muted-foreground">{result.corpusShortfall > 0 ? dictionary.corpus_shortfall : dictionary.corpus_surplus}</p>
+                      <p className={`text-2xl font-bold ${result.corpusShortfall > 0 ? 'text-destructive' : 'text-green-600'}`}>{formatCurrency(Math.abs(result.corpusShortfall))}</p>
+                  </div>
+                  <div className="bg-secondary p-4 rounded-lg">
+                      <p className="text-sm text-muted-foreground">{dictionary.monthly_sip}</p>
+                      <p className="text-2xl font-bold">{formatCurrency(result.monthlySip)}</p>
+                  </div>
+              </div>
+
+            <Tabs defaultValue="chart">
+              <div className="flex flex-wrap items-center justify-between gap-4">
+                  <TabsList className="grid w-full grid-cols-2 md:w-auto md:inline-grid">
+                    <TabsTrigger value="chart">{dictionary.view_chart}</TabsTrigger>
+                    <TabsTrigger value="table">{dictionary.view_table}</TabsTrigger>
+                  </TabsList>
+                  <div className="flex flex-wrap gap-2">
+                        <Button variant="outline" size="sm" onClick={() => handleShare('whatsapp')}><WhatsAppIcon className="mr-2 h-4 w-4" /> WhatsApp</Button>
+                         <Button variant="outline" size="sm" onClick={() => handleShare('twitter')}><Twitter className="mr-2 h-4 w-4" /> Twitter</Button>
+                        <Button variant="outline" size="sm" onClick={handlePrint}><Printer className="mr-2 h-4 w-4" /> Print</Button>
+                        <Button variant="outline" size="sm" onClick={handleCSVExport}><Download className="mr-2 h-4 w-4" />{dictionary.export_csv}</Button>
+                    </div>
+              </div>
+              <TabsContent value="chart" className="pt-4">
+                <ResponsiveContainer width="100%" height={400}>
+                   <AreaChart data={result.yearlyData} margin={{ top: 10, right: 30, left: 20, bottom: 0 }}>
+                     <defs>
+                      <linearGradient id="colorSip" x1="0" y1="0" x2="0" y2="1"><stop offset="5%" stopColor="hsl(var(--primary))" stopOpacity={0.8}/><stop offset="95%" stopColor="hsl(var(--primary))" stopOpacity={0}/></linearGradient>
+                      <linearGradient id="colorExisting" x1="0" y1="0" x2="0" y2="1"><stop offset="5%" stopColor="hsl(var(--accent))" stopOpacity={0.8}/><stop offset="95%" stopColor="hsl(var(--accent))" stopOpacity={0}/></linearGradient>
+                    </defs>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="age" label={{ value: dictionary.age_label, position: 'insideBottom', offset: -10 }}/>
+                    <YAxis tickFormatter={(value) => (value / 100000).toLocaleString('en-IN') + 'L'} label={{ value: dictionary.amount_in_lakhs, angle: -90, position: 'insideLeft' }}/>
+                    <Tooltip 
+                       contentStyle={{ borderRadius: "var(--radius)", border: "1px solid hsl(var(--border))", background: "hsl(var(--background))" }}
+                       formatter={(value: number, name: string) => [formatCurrency(value), chartConfig[name as keyof typeof chartConfig]?.label]}
+                    />
+                    <Legend />
+                    <Area type="monotone" dataKey="existingCorpusValue" stackId="1" stroke="hsl(var(--accent))" fill="url(#colorExisting)" name="existingCorpusValue"/>
+                    <Area type="monotone" dataKey="sipValue" stackId="1" stroke="hsl(var(--primary))" fill="url(#colorSip)" name="sipValue"/>
+                  </AreaChart>
+                </ResponsiveContainer>
+              </TabsContent>
+              <TabsContent value="table" className="pt-4">
+                <div className="overflow-x-auto max-h-[400px]">
+                  <Table>
+                    <TableHeader className="sticky top-0 bg-card">
+                      <TableRow>
+                        <TableHead>{dictionary.table_year}</TableHead>
+                        <TableHead>{dictionary.table_age}</TableHead>
+                        <TableHead className="text-right">{dictionary.table_total_corpus}</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      {result.yearlyData.map((row) => (
+                        <TableRow key={row.year}>
+                          <TableCell>{row.year}</TableCell>
+                          <TableCell>{row.age}</TableCell>
+                          <TableCell className="text-right font-semibold">{formatCurrency(row.totalCorpus)}</TableCell>
+                        </TableRow>
+                      ))}
+                    </TableBody>
+                  </Table>
+                </div>
+              </TabsContent>
+            </Tabs>
+          </CardContent>
+        </Card>
       )}
     </>
   );
 }
+
+    
 
     
