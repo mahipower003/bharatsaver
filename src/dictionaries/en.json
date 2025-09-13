@@ -1056,7 +1056,7 @@
         "body": "<strong>Your Situation:</strong> You're a 25-year-old freelancer with monthly expenses of ₹30,000 and savings of ₹2 lakh.<br/><strong>Our Calculation:</strong> Your target corpus is <strong>₹3.04 Crore</strong>. Thanks to your long investment horizon, you only need to start a monthly SIP of <strong>₹7,725</strong> to get there."
       }
     },
-     "sensitivity_analysis": {
+    "sensitivity_analysis": {
       "title": "Sensitivity Analysis: How Assumptions Change Your Goal",
       "body": "Small changes in your assumptions can have a huge impact on your final corpus. This table shows how your required corpus and SIP change with slight adjustments in inflation and return rates."
     },
@@ -1206,3 +1206,5 @@
     "result_reasoning": "Why we recommend this:"
   }
 }
+
+    
