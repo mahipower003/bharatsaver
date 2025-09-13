@@ -1192,14 +1192,14 @@
     "h1": "UPS Pension Calculator — Estimate Your Unified Pension Scheme (UPS) Pension (2025)",
     "hero_subtitle": "Use our free UPS Pension Calculator to estimate your monthly pension, family pension and possible commutation lump sum under the Unified Pension Scheme. Enter basic pay, DA% and qualifying service to get an instant, step-by-step calculation and a downloadable Excel.",
     "interactive_tool": {
-      "title": "UPS Pension Calculator online free",
+      "title": "UPS pension calculator online free",
       "description": "Enter your service details to get an instant pension estimate.",
       "calculate_cta": "Calculate Pension",
       "calculating": "Calculating...",
       "try_example": "Try Example",
       "download_excel": "Download Excel",
-      "print_results": "Print Results",
-      "share_twitter": "Share on Twitter",
+      "print_results": "Print",
+      "copy_link": "Copy Link",
       "show_steps": "Show calculation steps",
       "hide_steps": "Hide calculation steps"
     },
@@ -1264,7 +1264,7 @@
       "body": "<h3>UPS pension planning</h3><p>While UPS provides a fixed pension, you can still make smart moves to optimize your overall retirement income. Consider these tips for your UPS pension planning:</p><ul><li><strong>Spouse's Financial Plan:</strong> Ensure your spouse's investments are structured to complement your pension, creating a diversified household income.</li><li><strong>Timing of Commutation:</strong> The decision to take a lump sum (commute) versus a higher monthly pension depends on your immediate needs and other income sources. If you have a high-return investment opportunity, a lump sum might be beneficial.</li></ul><h3>When to take Annuity, SWP or other post-retirement strategies</h3><p>Your UPS pension provides a stable, risk-free base. You can build on this with other instruments:</p><ul><li><strong>Systematic Withdrawal Plan (SWP):</strong> For additional income, you can set up an SWP from your mutual fund investments. This offers more flexibility than a pension but comes with market risk.</li><li><strong>Annuity from other savings:</strong> If you have other retirement savings (e.g., from NPS or mutual funds), you can purchase an annuity for additional guaranteed income.</li></ul>"
     },
     "methodology": {
-      "h2": "Methodology & Sources",
+      "h2": "Methodology &amp; Sources",
       "body": "<p>This calculator uses data and formulas from official sources such as NPSTRUST, PFRDA circulars, and government notifications. Key assumptions include the DA percentage and commutation factors, which are subject to change. Last updated: August 2024.</p><h3>How to calculate UPS pension for 30 years of service</h3><p>The monthly pension is calculated using a standard government pension formula:</p><code>Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor</code><p>Where:</p><ul><li><strong>Pensionable Salary:</strong> <code>Basic Pay × (1 + DA % / 100)</code></li><li><strong>Pension Factor:</strong> Assumed to be 0.5 (for 50% of pensionable salary).</li><li><strong>Qualifying Service:</strong> The number of years you have served.</li><li><strong>Divisor:</strong> A standard factor, typically 33 for full pension calculations in many older schemes.</li></ul>"
     },
     "faq_title": "Frequently Asked Questions",
@@ -1277,7 +1277,7 @@
       {"q": "Can I download the UPS pension calculation as an Excel file?", "a": "Yes — a downloadable Excel with full stepwise computation is available. Click the 'Download Excel' button after you calculate your result."}
     ],
     "disclaimer": {
-      "title": "References & Legal Disclaimer",
+      "title": "References &amp; Legal Disclaimer",
       "body": "This is an illustrative tool and not financial advice. Please consult official government circulars and a qualified financial advisor for binding calculations."
     },
     "conclusion": {
@@ -1308,3 +1308,6 @@
     "result_reasoning": "Why we recommend this:"
   }
 }
+
+
+    

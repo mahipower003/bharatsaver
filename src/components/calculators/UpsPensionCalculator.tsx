@@ -251,9 +251,9 @@ export function UpsPensionCalculator({ dictionary }: CalculatorProps) {
                 <CollapsibleContent className="mt-4 space-y-4 rounded-md border bg-muted/50 p-4 text-sm">
                     <h4 className="font-semibold">{dictionary.calculation_steps.title}</h4>
                     <div className="space-y-2 font-mono">
-                        <p><strong>1. {dictionary.calculation_steps.pensionable_salary}:</strong> <code>({formatCurrency(form.getValues().basicPay)} * (1 + {form.getValues().daPercentage} / 100))</code> = <strong>{formatCurrency(result.steps.pensionableSalary)}</strong></p>
-                        <p><strong>2. {dictionary.calculation_steps.monthly_pension}:</strong> <code>({formatCurrency(result.steps.pensionableSalary)} * {result.steps.pensionFactor} * {form.getValues().qualifyingServiceYears}) / {result.steps.divisor}</code> = <strong>{formatCurrency(result.monthlyPension)}</strong></p>
-                        <p><strong>3. {dictionary.calculation_steps.family_pension}:</strong> <code>({formatCurrency(result.monthlyPension)} * 0.60)</code> = <strong>{formatCurrency(result.familyPension)}</strong></p>
+                        <p><strong>{dictionary.calculation_steps.pensionable_salary}:</strong> <code>({form.getValues().basicPay} × (1 + {form.getValues().daPercentage}/100))</code> = <strong>{formatCurrency(result.steps.pensionableSalary)}</strong></p>
+                        <p><strong>{dictionary.calculation_steps.monthly_pension}:</strong> <code>({formatCurrency(result.steps.pensionableSalary)} × {result.steps.pensionFactor} × {form.getValues().qualifyingServiceYears}) / {result.steps.divisor}</code> = <strong>{formatCurrency(result.monthlyPension)}</strong></p>
+                        <p><strong>{dictionary.calculation_steps.family_pension}:</strong> <code>({formatCurrency(result.monthlyPension)} × 0.60)</code> = <strong>{formatCurrency(result.familyPension)}</strong></p>
                     </div>
                 </CollapsibleContent>
             </Collapsible>
@@ -261,8 +261,8 @@ export function UpsPensionCalculator({ dictionary }: CalculatorProps) {
              <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 mt-8">
                 <Button variant="outline" size="sm" onClick={() => handleShare('whatsapp')}><WhatsAppIcon className="mr-2 h-4 w-4" /> WhatsApp</Button>
                 <Button variant="outline" size="sm" onClick={() => handleShare('twitter')}><Twitter className="mr-2 h-4 w-4" /> Twitter</Button>
-                <Button variant="outline" size="sm" onClick={handleCopyLink}><LinkIcon className="mr-2 h-4 w-4" /> Copy Link</Button>
-                <Button variant="outline" size="sm" onClick={handlePrint}><Printer className="mr-2 h-4 w-4" /> Print</Button>
+                <Button variant="outline" size="sm" onClick={handleCopyLink}><LinkIcon className="mr-2 h-4 w-4" /> {dictionary.interactive_tool.copy_link}</Button>
+                <Button variant="outline" size="sm" onClick={handlePrint}><Printer className="mr-2 h-4 w-4" /> {dictionary.interactive_tool.print_results}</Button>
                 <Button variant="outline" size="sm" onClick={handleCSVExport}><Download className="mr-2 h-4 w-4" />{dictionary.interactive_tool.download_excel}</Button>
              </div>
           </CardContent>
@@ -271,5 +271,7 @@ export function UpsPensionCalculator({ dictionary }: CalculatorProps) {
     </>
   );
 }
+
+    
 
     
