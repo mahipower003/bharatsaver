@@ -8,8 +8,6 @@ import { AuthorCard } from "@/components/layout/AuthorCard";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { BarChart2, HelpCircle, FileText, CheckCircle, AlertTriangle, Table as TableIcon } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { getFundData } from "@/lib/fund-data";
-import type { RawFund } from "@/lib/overlap-calculator";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 
@@ -75,7 +73,6 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 
 export default async function MutualFundOverlapCalculatorPage({ params }: { params: { lang: Locale }}) {
   const dictionary = await getDictionary(params.lang, ['mutual_fund_overlap_calculator', 'author_card']);
-  const allFunds = await getFundData();
   const exampleData = dictionary.mutual_fund_overlap_calculator.live_example;
   
   return (
@@ -94,7 +91,7 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
             <CardDescription>{dictionary.mutual_fund_overlap_calculator.tool.description}</CardDescription>
           </CardHeader>
           <CardContent>
-            <MutualFundOverlapCalculator dictionary={dictionary.mutual_fund_overlap_calculator} allFundsData={allFunds} />
+            <MutualFundOverlapCalculator dictionary={dictionary.mutual_fund_overlap_calculator} />
           </CardContent>
         </Card>
         

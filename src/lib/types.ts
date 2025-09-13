@@ -17,8 +17,6 @@ export type Calculator = {
   image: string;
 };
 
-export type FundPortfolio = RawFund;
-
 export type Page = {
   slug: string;
   title: string;

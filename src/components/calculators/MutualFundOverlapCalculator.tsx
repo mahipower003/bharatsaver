@@ -12,47 +12,39 @@ import type { Dictionary } from '@/types';
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList, CommandDialog } from '@/components/ui/command';
 import { cn } from '@/lib/utils';
 import { type OverlapOutput, calculateAllOverlaps, type RawFund, type PairwiseResult } from '@/lib/overlap-calculator';
+import { useFundData } from '@/hooks/use-fund-data';
 
 type MutualFundOverlapCalculatorProps = {
   dictionary: Dictionary['mutual_fund_overlap_calculator'];
-  allFundsData: RawFund[];
 }
 
-export function MutualFundOverlapCalculator({ dictionary, allFundsData }: MutualFundOverlapCalculatorProps) {
-  const [allFunds, setAllFunds] = useState<RawFund[]>([]);
+export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCalculatorProps) {
+  const { allFunds, isLoading: isDataLoading, error } = useFundData();
   const [selectedFunds, setSelectedFunds] = useState<RawFund[]>([]);
   const [overlapResult, setOverlapResult] = useState<OverlapOutput | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isCalculating, setIsCalculating] = useState(false);
 
   useEffect(() => {
-    if (allFundsData.length > 0) {
-      setAllFunds(allFundsData);
-      // Set default funds for initial comparison, ensuring they are unique
-      const uniqueFunds = Array.from(new Map(allFundsData.map(fund => [fund.fund_name, fund])).values());
+    if (allFunds.length > 0 && selectedFunds.length === 0) {
+      const uniqueFunds = Array.from(new Map(allFunds.map(fund => [fund.fund_name, fund])).values());
       if (uniqueFunds.length >= 2) {
         setSelectedFunds(uniqueFunds.slice(0, 2));
-      } else {
-        setIsLoading(false);
       }
-    } else {
-      setIsLoading(false);
     }
-  }, [allFundsData]);
+  }, [allFunds, selectedFunds.length]);
   
   useEffect(() => {
     if (selectedFunds.length < 2) {
       setOverlapResult(null);
-      setIsLoading(false);
       return;
     }
     
-    setIsLoading(true);
+    setIsCalculating(true);
     const calculateOverlap = async () => {
-      // Simulate a short delay to allow UI to update
       await new Promise(resolve => setTimeout(resolve, 50)); 
       const result = calculateAllOverlaps(selectedFunds);
       setOverlapResult(result);
-      setIsLoading(false);
+      setIsCalculating(false);
     };
     calculateOverlap();
   }, [selectedFunds]);
@@ -125,6 +117,18 @@ export function MutualFundOverlapCalculator({ dictionary, allFundsData }: Mutual
     return { label: 'Low', color: 'text-green-500' };
   };
 
+  if (isDataLoading) {
+    return <div className="text-center py-12"><Loader2 className="mx-auto h-12 w-12 animate-spin text-primary" /></div>;
+  }
+
+  if (error) {
+    return <Alert variant="destructive">
+        <AlertTriangle className="h-4 w-4" />
+        <AlertTitle>Error Loading Fund Data</AlertTitle>
+        <AlertDescription>{error}</AlertDescription>
+      </Alert>
+  }
+
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -154,14 +158,14 @@ export function MutualFundOverlapCalculator({ dictionary, allFundsData }: Mutual
       </div>
 
       <div className="flex flex-wrap items-center justify-start gap-4">
-        <Button variant="outline" onClick={addFund} disabled={selectedFunds.length >= 5 || isLoading}>
+        <Button variant="outline" onClick={addFund} disabled={selectedFunds.length >= 5 || isCalculating}>
           <PlusCircle className="mr-2 h-4 w-4" /> {dictionary.tool.add_fund}
         </Button>
       </div>
       
-      {isLoading && <div className="text-center py-12"><Loader2 className="mx-auto h-12 w-12 animate-spin text-primary" /></div>}
+      {isCalculating && <div className="text-center py-12"><Loader2 className="mx-auto h-12 w-12 animate-spin text-primary" /></div>}
 
-      {!isLoading && overlapResult && overlapResult.pairs.length > 0 ? (
+      {!isCalculating && overlapResult && overlapResult.pairs.length > 0 ? (
         <div className="space-y-8 animate-in fade-in-50">
           {overlapResult.pairs.map((pair, index) => (
             <Card key={index} className="shadow-md">
@@ -225,10 +229,10 @@ export function MutualFundOverlapCalculator({ dictionary, allFundsData }: Mutual
           ))}
         </div>
       ) : (
-        !isLoading && <Alert>
-          <AlertTitle>Not Enough Funds Selected</AlertTitle>
+        !isCalculating && selectedFunds.length >= 2 && <Alert>
+          <AlertTitle>Not Enough Data</AlertTitle>
           <AlertDescription>
-            Please select at least two funds to calculate the overlap.
+            Could not calculate overlap. Please ensure the selected funds have valid holdings data.
           </AlertDescription>
         </Alert>
        )}
@@ -254,7 +258,6 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: RawFund[
 
   useEffect(() => {
     if (!open) {
-      // Reset search and visible count when dialog is closed
       setSearch("");
       setVisibleCount(FUNDS_TO_SHOW_INITIAL);
     }
