@@ -85,7 +85,7 @@
     "h1": "Latest Updates & Articles",
     "subtitle": "Explore our latest calculators, guides, and financial insights."
   },
-    "about_page": {
+  "about_page": {
     "meta_title": "About BharatSaver | Our Mission and Team",
     "meta_description": "Learn about BharatSaver's mission to simplify financial decision-making for every Indian. Meet our team of experts dedicated to providing clear, unbiased, and accessible financial tools and guides.",
     "h1": "Simplifying Finance for Every Indian",
@@ -1093,8 +1093,8 @@
     ],
     "next_steps": {
       "h2": "Download Your Plan & Take Action",
-      "cta1_title": "File your taxes",
-      "cta1_desc": "Use ClearTax to file your income tax returns easily.",
+      "cta1_title": "File Your ITR",
+      "cta1_desc": "Use a trusted partner like ClearTax to file your income tax return accurately.",
       "cta2_title": "Explore More Calculators",
       "cta2_desc": "Find more tools to help with your financial planning."
     },
@@ -1202,5 +1202,3 @@
     "result_reasoning": "Why we recommend this:"
   }
 }
-
-    
