@@ -50,105 +50,15 @@ export async function generateMetadata({ params }: { params: { lang:Locale } }):
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [
-      {
+    "mainEntity": dictionary.retirement_corpus_calculator.faqs?.map((faq: { question: string; answer: string; }) => ({
         "@type": "Question",
-        "name": "How do you calculate retirement corpus?",
+        "name": faq.question,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We project your future monthly expenses using inflation, compute the present value (PV) of the annuity you’ll need at retirement, and subtract the future value of existing savings to find the shortfall."
+          "text": faq.answer
         }
-      },
-      {
-        "@type": "Question",
-        "name": "What inflation rate should I use for Indian retirement planning?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Many planners use a long-term default of 5–7% for India; 6% is common. Use higher rates for conservative healthcare or long horizon assumptions."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I include EPF, PPF and NPS in my retirement corpus?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes — include all liquid and pension assets (EPF, PPF, NPS, mutual funds, bank FD) in your Current Savings input to lower the additional SIP needed."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much should a 30-year-old save monthly to retire comfortably?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "It depends on target corpus and assumptions. As a rough guide, saving ₹15,000–₹25,000/month can build multi-crore corpus by 60 at 10–12% returns. Use the calculator for precise numbers."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Should I invest by SIP or lump sum to reach my retirement goal?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "SIP is recommended for disciplined investing and rupee-cost averaging; lump sum can outperform in long bull markets but has higher timing risk. A blended approach works for many."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is a safe withdrawal rate in India during retirement?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "There is no one-size-fits-all; many advisors use a 3–4% initial withdrawal rule (adjusted for inflation). Consider conservative withdrawal rates if longevity or healthcare costs are uncertain."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do healthcare costs affect the retirement corpus?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Healthcare inflation often exceeds general inflation. Add a dedicated healthcare buffer or model higher inflation for medical costs to avoid underestimating your corpus."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How will taxes impact my retirement withdrawals?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Tax treatment varies by instrument and withdrawal type. EPF/PPF have specific rules; mutual fund withdrawals may attract LTCG tax above thresholds. Plan withdrawals tax-efficiently to preserve corpus."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How long should my retirement corpus last?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Typically planners assume life expectancy of 85–90 years. Use conservative longevity assumptions if family longevity is high or you retire early."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does the calculator account for post-retirement returns?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes — you can set a lower, conservative post-retirement return (e.g., 6–8%) to model how the corpus will be invested and sustain withdrawals."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I plan for early retirement (before 60) with this calculator?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes — set your desired retirement age earlier and increase the investment horizon and SIP accordingly. Factor in longer post-retirement years and higher healthcare costs."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the simplest rule of thumb to estimate a target corpus?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A common rule is 25× your current annual expenses (for a 4% real withdrawal), but use the calculator to refine this with inflation, returns, and existing savings."
-        }
-      }
-    ]
-  }
+    })) || []
+  };
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -281,9 +191,9 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
       <div className="mx-auto max-w-5xl">
         <div className="text-center mb-8">
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
-            {dictionary.retirement_corpus_calculator.h1}
+            {dictionary.retirement_corpus_calculator?.h1}
             </h1>
-            <p className="mt-4 text-lg text-muted-foreground">{dictionary.retirement_corpus_calculator.intro}</p>
+            <p className="mt-4 text-lg text-muted-foreground">{dictionary.retirement_corpus_calculator?.intro}</p>
         </div>
         
         <div className="bs-byline justify-center text-center">
@@ -293,12 +203,12 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
             <div className="bs-reviewed">Reviewed by <strong>Laveena Vijayi</strong> — BharatSaver Editorial Team</div>
         </div>
 
-        <h2 className="text-2xl font-bold tracking-tight sm:text-3xl font-headline mt-12 mb-6 text-center">
+        {dictionary.retirement_corpus_calculator?.tool_section && <h2 className="text-2xl font-bold tracking-tight sm:text-3xl font-headline mt-12 mb-6 text-center">
           {dictionary.retirement_corpus_calculator.tool_section.h2}
-        </h2>
+        </h2>}
         <RetirementCorpusCalculator dictionary={dictionary.retirement_corpus_calculator} initialResult={initialResult} />
 
-        <Card className="mt-8 shadow-lg">
+        {dictionary.retirement_corpus_calculator?.how_it_works && <Card className="mt-8 shadow-lg">
            <CardHeader>
              <CardTitle className="flex items-center gap-3">
                 <Calculator className="h-7 w-7 text-primary"/>
@@ -306,9 +216,9 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
              </CardTitle>
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.how_it_works.body }} />
-        </Card>
+        </Card>}
         
-        <Card className="mt-8 shadow-lg">
+        {dictionary.retirement_corpus_calculator?.inputs_explained && <Card className="mt-8 shadow-lg">
            <CardHeader>
              <CardTitle className="flex items-center gap-3">
                 <HelpCircle className="h-7 w-7 text-primary"/>
@@ -316,9 +226,9 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
              </CardTitle>
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.inputs_explained.body }} />
-        </Card>
+        </Card>}
 
-        <Card className="mt-8 shadow-lg">
+        {dictionary.retirement_corpus_calculator?.worked_examples && <Card className="mt-8 shadow-lg">
           <CardHeader>
              <CardTitle className="flex items-center gap-3">
                 <FileText className="h-7 w-7 text-primary"/>
@@ -327,21 +237,21 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
           </CardHeader>
           <CardContent className="space-y-6">
             <div className="bg-muted/50 p-4 rounded-lg">
-              <h3 className="font-semibold text-lg">{dictionary.retirement_corpus_calculator.worked_examples.scenario1.title}</h3>
-              <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.worked_examples.scenario1.body }} />
+              <h3 className="font-semibold text-lg">{dictionary.retirement_corpus_calculator.worked_examples.scenario1?.title}</h3>
+              <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.worked_examples.scenario1?.body }} />
             </div>
             <div className="bg-muted/50 p-4 rounded-lg">
-              <h3 className="font-semibold text-lg">{dictionary.retirement_corpus_calculator.worked_examples.scenario2.title}</h3>
-              <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.worked_examples.scenario2.body }} />
+              <h3 className="font-semibold text-lg">{dictionary.retirement_corpus_calculator.worked_examples.scenario2?.title}</h3>
+              <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.worked_examples.scenario2?.body }} />
             </div>
              <div className="bg-muted/50 p-4 rounded-lg">
-              <h3 className="font-semibold text-lg">{dictionary.retirement_corpus_calculator.worked_examples.scenario3.title}</h3>
-              <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.worked_examples.scenario3.body }} />
+              <h3 className="font-semibold text-lg">{dictionary.retirement_corpus_calculator.worked_examples.scenario3?.title}</h3>
+              <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.worked_examples.scenario3?.body }} />
             </div>
           </CardContent>
-        </Card>
+        </Card>}
         
-         <Card className="mt-8 shadow-lg">
+         {dictionary.retirement_corpus_calculator?.sensitivity_analysis && <Card className="mt-8 shadow-lg">
           <CardHeader>
              <CardTitle className="flex items-center gap-3">
                 <TableIcon className="h-7 w-7 text-primary"/>
@@ -369,9 +279,9 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
                 </TableBody>
               </Table>
           </CardContent>
-        </Card>
+        </Card>}
 
-        <Card className="mt-8 shadow-lg">
+        {dictionary.retirement_corpus_calculator?.accumulation_strategy && <Card className="mt-8 shadow-lg">
            <CardHeader>
              <CardTitle className="flex items-center gap-3">
                 <TrendingUp className="h-7 w-7 text-primary"/>
@@ -380,33 +290,35 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none">
             <div dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.accumulation_strategy.body }} />
-            <h3 className="font-semibold text-lg mt-6 mb-2">{dictionary.retirement_corpus_calculator.sip_plans.title}</h3>
-            <p className="text-muted-foreground">{dictionary.retirement_corpus_calculator.sip_plans.body}</p>
-            <Table className="mt-4">
-              <TableHeader>
-                <TableRow>
-                  <TableHead>Target Corpus</TableHead>
-                  <TableHead className="text-right">SIP from Age 30</TableHead>
-                  <TableHead className="text-right">SIP from Age 40</TableHead>
-                  <TableHead className="text-right">SIP from Age 50</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {sipPlanData.map((row, index) => (
-                  <TableRow key={index}>
-                    <TableCell className="font-medium">{row.corpus}</TableCell>
-                    <TableCell className="text-right">{row.age30}</TableCell>
-                    <TableCell className="text-right">{row.age40}</TableCell>
-                    <TableCell className="text-right">{row.age50}</TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-             <p className="text-xs text-muted-foreground mt-2 italic">Assuming 12% annual returns and retirement at 60.</p>
+            {dictionary.retirement_corpus_calculator.sip_plans && <>
+                <h3 className="font-semibold text-lg mt-6 mb-2">{dictionary.retirement_corpus_calculator.sip_plans.title}</h3>
+                <p className="text-muted-foreground">{dictionary.retirement_corpus_calculator.sip_plans.body}</p>
+                <Table className="mt-4">
+                <TableHeader>
+                    <TableRow>
+                    <TableHead>Target Corpus</TableHead>
+                    <TableHead className="text-right">SIP from Age 30</TableHead>
+                    <TableHead className="text-right">SIP from Age 40</TableHead>
+                    <TableHead className="text-right">SIP from Age 50</TableHead>
+                    </TableRow>
+                </TableHeader>
+                <TableBody>
+                    {sipPlanData.map((row, index) => (
+                    <TableRow key={index}>
+                        <TableCell className="font-medium">{row.corpus}</TableCell>
+                        <TableCell className="text-right">{row.age30}</TableCell>
+                        <TableCell className="text-right">{row.age40}</TableCell>
+                        <TableCell className="text-right">{row.age50}</TableCell>
+                    </TableRow>
+                    ))}
+                </TableBody>
+                </Table>
+                <p className="text-xs text-muted-foreground mt-2 italic">Assuming 12% annual returns and retirement at 60.</p>
+            </>}
           </CardContent>
-        </Card>
+        </Card>}
 
-        <Card className="mt-8 shadow-lg">
+        {dictionary.retirement_corpus_calculator?.deaccumulation_strategy && <Card className="mt-8 shadow-lg">
            <CardHeader>
              <CardTitle className="flex items-center gap-3">
                 <Wallet className="h-7 w-7 text-primary"/>
@@ -414,9 +326,9 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
              </CardTitle>
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.deaccumulation_strategy.body }} />
-        </Card>
+        </Card>}
         
-        <Card className="mt-8 shadow-lg">
+        {dictionary.retirement_corpus_calculator?.tax_rules && <Card className="mt-8 shadow-lg">
            <CardHeader>
              <CardTitle className="flex items-center gap-3">
                 <Banknote className="h-7 w-7 text-primary"/>
@@ -424,9 +336,9 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
              </CardTitle>
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.retirement_corpus_calculator.tax_rules.body }} />
-        </Card>
+        </Card>}
 
-        <Card className="mt-12 shadow-lg">
+        {dictionary.retirement_corpus_calculator?.faqs && <Card className="mt-12 shadow-lg">
           <CardHeader>
             <CardTitle className="flex items-center gap-3">
                 <LineChart className="h-7 w-7 text-primary"/>
@@ -443,9 +355,9 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
                 ))}
               </div>
           </CardContent>
-        </Card>
+        </Card>}
         
-        <Card className="mt-12 shadow-lg">
+        {dictionary.retirement_corpus_calculator?.next_steps && <Card className="mt-12 shadow-lg">
           <CardHeader>
             <CardTitle className="flex items-center gap-3">
               <Download className="h-7 w-7 text-primary"/>
@@ -478,9 +390,9 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
                   </Link>
               </div>
           </CardContent>
-        </Card>
+        </Card>}
         
-        <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
+        {dictionary.retirement_corpus_calculator?.conclusion && <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
           <CardHeader>
             <CardTitle className="flex items-center gap-3">
               <Star className="h-7 w-7 text-accent" />
@@ -490,19 +402,19 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
           <CardContent>
             <p className="text-muted-foreground">{dictionary.retirement_corpus_calculator.conclusion.body}</p>
           </CardContent>
-        </Card>
+        </Card>}
         
-        <Alert variant="destructive" className="mt-8">
+        {dictionary.retirement_corpus_calculator?.disclaimer && <Alert variant="destructive" className="mt-8">
           <AlertTriangle className="h-4 w-4" />
           <AlertTitle>{dictionary.retirement_corpus_calculator.disclaimer.title}</AlertTitle>
           <AlertDescription>
             {dictionary.retirement_corpus_calculator.disclaimer.body}
           </AlertDescription>
-        </Alert>
+        </Alert>}
 
         <AuthorCard dictionary={dictionary.author_card} />
 
-        <Card className="mt-12 text-sm text-muted-foreground">
+        {dictionary.retirement_corpus_calculator?.methodology && <Card className="mt-12 text-sm text-muted-foreground">
             <CardHeader>
                 <CardTitle className="text-lg flex items-center gap-2">
                     <BadgeCheck className="h-5 w-5"/>
@@ -512,12 +424,10 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
             <CardContent>
                 <p>{dictionary.retirement_corpus_calculator.methodology.body}</p>
             </CardContent>
-        </Card>
+        </Card>}
       </div>
     </div>
   );
 }
-
-    
 
     
