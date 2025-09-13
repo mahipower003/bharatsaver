@@ -1265,7 +1265,7 @@
     },
     "methodology": {
       "h2": "Methodology & Sources",
-      "body": "<p>This calculator uses data and formulas from official sources such as NPSTRUST, PFRDA circulars, and government notifications. Key assumptions include the DA percentage and commutation factors, which are subject to change. Last updated: August 2024.</p><h3>Core Formula Used</h3><p>The monthly pension is calculated using a standard government pension formula:</p><code>Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor</code><p>Where:</p><ul><li><strong>Pensionable Salary:</strong> <code>Basic Pay × (1 + DA % / 100)</code></li><li><strong>Pension Factor:</strong> Assumed to be 0.5 (for 50% of pensionable salary).</li><li><strong>Qualifying Service:</strong> The number of years you have served.</li><li><strong>Divisor:</strong> A standard factor, typically 33 for full pension calculations in many schemes.</li></ul>"
+      "body": "<p>This calculator uses data and formulas from official sources such as NPSTRUST, PFRDA circulars, and government notifications. Key assumptions include the DA percentage and commutation factors, which are subject to change. Last updated: August 2024.</p><h3>Core Formula Used</h3><p>The monthly pension is calculated using a standard government pension formula:</p><code>Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor</code><p>Where:</p><ul><li><strong>Pensionable Salary:</strong> <code>Basic Pay × (1 + DA % / 100)</code></li><li><strong>Pension Factor:</strong> Assumed to be 0.5 (for 50% of pensionable salary).</li><li><strong>Qualifying Service:</strong> The number of years you have served.</li><li><strong>Divisor:</strong> A standard factor, typically 33 for full pension calculations in many older schemes.</li></ul>"
     },
     "faq_title": "Frequently Asked Questions (FAQ)",
     "faqs": [
@@ -1290,7 +1290,7 @@
       "body": "This is an illustrative tool and not financial advice. Please consult official government circulars and a qualified financial advisor for binding calculations."
     },
     "conclusion": {
-      "title": "Your Next Steps",
+      "title": "Conclusion: Your Path to a Secure Pension",
       "body": "The Unified Pension Scheme offers a stable and predictable income for your retirement. Use this calculator as a starting point to understand your potential pension, and consult with a financial advisor to build a comprehensive retirement plan that includes other investments like PPF, NPS, and mutual funds."
     }
   },
@@ -1317,3 +1317,5 @@
     "result_reasoning": "Why we recommend this:"
   }
 }
+
+    

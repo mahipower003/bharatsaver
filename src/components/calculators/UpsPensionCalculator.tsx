@@ -1,18 +1,19 @@
 
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Loader2, Building, Download, Printer, Twitter, ChevronDown, Share, Link as LinkIcon } from 'lucide-react';
+import { useSearchParams, useRouter, usePathname } from 'next/navigation';
+import { Loader2, Building, Download, Printer, Twitter, ChevronDown, Link as LinkIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import type { Dictionary } from '@/types';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import { useToast } from '@/hooks/use-toast';
 
 const formSchema = z.object({
@@ -47,10 +48,14 @@ const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 
 export function UpsPensionCalculator({ dictionary }: CalculatorProps) {
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const { toast } = useToast();
+
   const [result, setResult] = useState<CalculationResult | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [showSteps, setShowSteps] = useState(false);
-  const { toast } = useToast();
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -60,6 +65,21 @@ export function UpsPensionCalculator({ dictionary }: CalculatorProps) {
       qualifyingServiceYears: 30,
     },
   });
+
+  useEffect(() => {
+    const params = new URLSearchParams(searchParams.toString());
+    const values: Partial<FormValues> = {};
+    if (params.get('basicPay')) values.basicPay = Number(params.get('basicPay'));
+    if (params.get('da')) values.daPercentage = Number(params.get('da'));
+    if (params.get('service')) values.qualifyingServiceYears = Number(params.get('service'));
+    
+    if (Object.keys(values).length > 0) {
+        form.reset(values);
+        handleSubmit(values as FormValues);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
 
   async function handleSubmit(values: FormValues) {
     setIsLoading(true);
@@ -73,6 +93,12 @@ export function UpsPensionCalculator({ dictionary }: CalculatorProps) {
     const familyPension = monthlyPension * 0.6;
     const lumpSum = monthlyPension * 12 * 5;
     
+    const params = new URLSearchParams();
+    params.set('basicPay', values.basicPay.toString());
+    params.set('da', values.daPercentage.toString());
+    params.set('service', values.qualifyingServiceYears.toString());
+    router.push(`${pathname}?${params.toString()}`, { scroll: false });
+
     setResult({
       monthlyPension,
       familyPension,
@@ -83,9 +109,9 @@ export function UpsPensionCalculator({ dictionary }: CalculatorProps) {
           divisor
       },
       chartData: [
-        { name: 'Monthly Pension', value: monthlyPension },
-        { name: 'Family Pension', value: familyPension },
-        { name: 'Lump Sum (Commutation)', value: lumpSum },
+        { name: dictionary.outputs.monthly_pension, value: monthlyPension },
+        { name: dictionary.outputs.family_pension, value: familyPension },
+        { name: dictionary.outputs.lump_sum, value: lumpSum },
       ]
     });
     
@@ -245,3 +271,5 @@ export function UpsPensionCalculator({ dictionary }: CalculatorProps) {
     </>
   );
 }
+
+    

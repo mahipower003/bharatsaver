@@ -92,8 +92,19 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
   const dictionary = await getDictionary(params.lang, ['ups_pension_calculator', 'author_card']);
   const dict = dictionary.ups_pension_calculator;
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `https://bharatsaver.com/${params.lang}` },
+      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `https://bharatsaver.com/${params.lang}/calculators` },
+      { '@type': 'ListItem', position: 3, name: 'UPS Pension Calculator', item: `https://bharatsaver.com/${params.lang}/ups-pension-calculator` },
+    ],
+  };
+
   return (
     <div className="py-12">
+       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <div className="mx-auto max-w-5xl">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
@@ -170,6 +181,16 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
                 </CardHeader>
                 <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.optimization.body }} />
             </Card>
+
+            <Card id="methodology" className="mt-12 text-sm text-muted-foreground">
+                <CardHeader>
+                    <CardTitle className="text-lg flex items-center gap-2">
+                        <HelpCircle className="h-5 w-5"/>
+                        <h2 className="text-2xl font-bold">{dict.methodology.h2}</h2>
+                    </CardTitle>
+                </CardHeader>
+                <CardContent className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dict.methodology.body }}/>
+            </Card>
             
             <div className="mt-12">
                 <h2 className="text-2xl font-bold text-center mb-6">{dict.faq_title}</h2>
@@ -184,16 +205,6 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
                 ))}
                 </Accordion>
             </div>
-
-            <Card id="methodology" className="mt-12 text-sm text-muted-foreground">
-                <CardHeader>
-                    <CardTitle className="text-lg flex items-center gap-2">
-                        <HelpCircle className="h-5 w-5"/>
-                        <h2 className="text-2xl font-bold">{dict.methodology.h2}</h2>
-                    </CardTitle>
-                </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dict.methodology.body }}/>
-            </Card>
 
              <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
               <CardHeader>
@@ -220,3 +231,5 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
     </div>
   );
 }
+
+    
