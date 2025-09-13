@@ -1238,12 +1238,12 @@
       "lump_sum": "Lump Sum (Commutation)"
     },
     "how_it_works": {
-      "h2": "How This UPS Pension Calculator Works",
+      "h2": "How to calculate UPS pension",
       "body": "<h3>What inputs the calculator needs</h3><ul><li>Monthly Basic Pay: Your last drawn basic pay.</li><li>DA %: The applicable Dearness Allowance percentage.</li><li>Years and Months of Qualifying Service: Your total service duration.</li><li>Date of Joining/Retirement: To accurately calculate service length.</li></ul><h3>What outputs you’ll get</h3><p>You’ll get your estimated monthly pension, family pension, and any applicable lump sum.</p><p>This calculator uses the official government formula to estimate your pension. For a detailed breakdown of the math, please see our <a href='#methodology'>Methodology section</a>.</p>"
     },
     "formula_section": {
-      "h2": "How to calculate UPS pension",
-      "body": "<h3>The Core Formula</h3><p>The calculation for your monthly pension under the Unified Pension Scheme follows a standard formula used for many government pensions. It is:</p><code>Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor</code><h3>What is pensionable salary under UPS</h3><p>This is typically the average of your basic pay over the last 10 or 12 months of your service before retirement. Our calculator uses the 'Last Drawn Basic Pay' as a proxy for simplicity. The formula is:</p><code>Pensionable Salary = Basic Pay × (1 + DA Percentage / 100)</code><h3>Pension Factor & Divisor</h3><p>The <strong>Pension Factor</strong> is generally 0.5 (representing 50% of the pensionable salary as the base pension). The <strong>Divisor</strong> is often set to 33, representing the standard number of qualifying service years for a full pension in many older schemes. The UPS may have its own specific values, which we incorporate based on the latest rules.</p>"
+      "h2": "The Core Formula",
+      "body": "<p>The calculation for your monthly pension under the Unified Pension Scheme follows a standard formula used for many government pensions. It is:</p><code>Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor</code><h3>What is pensionable salary under UPS</h3><p>This is typically the average of your basic pay over the last 10 or 12 months of your service before retirement. Our calculator uses the 'Last Drawn Basic Pay' as a proxy for simplicity. The formula is:</p><code>Pensionable Salary = Basic Pay × (1 + DA Percentage / 100)</code><h3>Pension Factor & Divisor</h3><p>The <strong>Pension Factor</strong> is generally 0.5 (representing 50% of the pensionable salary as the base pension). The <strong>Divisor</strong> is often set to 33, representing the standard number of qualifying service years for a full pension in many older schemes. The UPS may have its own specific values, which we incorporate based on the latest rules.</p>"
     },
     "worked_examples": {
       "h2": "20 Worked Examples — pension for common salaries & service lengths",
@@ -1280,13 +1280,14 @@
       "h2": "Methodology & Sources",
       "body": "<p>This calculator uses data and formulas from official sources such as NPSTRUST, PFRDA circulars, and government notifications. Key assumptions include the DA percentage and commutation factors, which are subject to change. For any discrepancies, please refer to the official scheme documents.</p><h3>How this calculator was tested</h3><ul><li>Results were cross-verified against sample calculations from PFRDA documents.</li><li>Calculations were manually checked for edge cases (e.g., minimum/maximum service years).</li><li>The formula was validated against the standard government pension formula.</li></ul>"
     },
+    "faq_title": "Frequently Asked Questions",
     "faqs": [
-      {"q": "What is the UPS pension formula?", "a": "Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor. Pensionable Salary is typically Basic × (1 + DA%). See Methodology for worked steps."},
-      {"q": "How do I calculate my monthly UPS pension?", "a": "Enter your last drawn basic pay, DA% and qualifying years of service into the UPS Pension Calculator to get an instant monthly pension estimate and step-by-step transcript."},
-      {"q": "What inputs do I need for the UPS Pension Calculator?", "a": "Monthly basic pay, DA percentage, years and months of qualifying service, and retirement/joing dates (optional)."},
-      {"q": "How is the pensionable salary calculated under UPS?", "a": "Pensionable Salary = Basic Pay × (1 + DA% / 100), typically averaged over the last 10–12 months as per scheme rules."},
-      {"q": "How much family pension will my spouse get under UPS?", "a": "Family pension is commonly around 60% of the original pension, but specific rules may vary by scheme — check the fund circular or consult HR."},
-      {"q": "Can I download the UPS pension calculation as an Excel file?", "a": "Yes — a downloadable Excel with full stepwise computation is available. Click the 'Download Excel' button after you calculate your result."}
+      {"q": "What is the UPS pension formula?","a":"Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor. Pensionable Salary is generally the basic pay adjusted for DA (Basic × (1 + DA%/100)). Pension Factor and Divisor vary by scheme; our calculator uses Pension Factor = 0.5 and Divisor = 33 by default (we note scheme exceptions in Methodology)."},
+      {"q": "How do I calculate my monthly UPS pension?","a":"Enter your last drawn Basic Pay, DA percentage and qualifying years of service into the calculator. The tool computes Pensionable Salary, applies the standard pension factor and divisor, and returns the monthly pension. A step-by-step numeric transcript is shown so you can verify each calculation."},
+      {"q": "What inputs do I need for the UPS Pension Calculator?","a":"You need last drawn Basic Pay, Dearness Allowance (DA) % or amount, total qualifying service (years + months), and optionally your retirement age or date of joining/retirement to auto-calc service length."},
+      {"q": "How is the pensionable salary calculated under UPS?","a":"Pensionable Salary used here = Basic Pay × (1 + DA%/100). Many schemes average basic pay over the last 10–12 months; our tool uses last-drawn basic as the default and documents this assumption in Methodology."},
+      {"q": "How much family pension will my spouse get under UPS?","a":"Family pension is commonly around 60% of the original monthly pension (scheme-specific). The calculator shows the family pension value using 60% by default and notes exceptions where the scheme prescribes different percentages."},
+      {"q": "Can I download the UPS pension calculation as an Excel file?","a":"Yes — after running a calculation click Download Excel to get a spreadsheet containing inputs, the calculation transcript, and a worked example table for exports and record-keeping."}
     ],
     "disclaimer": {
       "title": "References & Legal Disclaimer",

@@ -20,17 +20,17 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/ups-pension-calculator`;
 
- const faqSchema = {
+  const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": dict.faqs.map((faq: { q: string, a: string }) => ({
-        "@type": "Question",
-        "name": faq.q,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": faq.a
-        }
-    }))
+    "mainEntity": [
+      {"@type":"Question","name":"What is the UPS pension formula?","acceptedAnswer":{"@type":"Answer","text":"Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor. Pensionable Salary = Basic × (1 + DA%/100)."}},
+      {"@type":"Question","name":"How do I calculate my monthly UPS pension?","acceptedAnswer":{"@type":"Answer","text":"Enter Basic Pay, DA% and qualifying service into the calculator to get an instant result and a step-by-step transcript."}},
+      {"@type":"Question","name":"What inputs do I need for the UPS Pension Calculator?","acceptedAnswer":{"@type":"Answer","text":"Last drawn Basic Pay, DA percentage, total qualifying service (years + months), and retirement/joining dates (optional)."}},
+      {"@type":"Question","name":"How is the pensionable salary calculated under UPS?","acceptedAnswer":{"@type":"Answer","text":"Pensionable Salary = Basic Pay × (1 + DA%/100). Many schemes use an average of last 10–12 months; see Methodology for details."}},
+      {"@type":"Question","name":"How much family pension will my spouse get under UPS?","acceptedAnswer":{"@type":"Answer","text":"Family pension is typically 60% of the original monthly pension; the calculator shows this by default and notes scheme variations."}},
+      {"@type":"Question","name":"Can I download the UPS pension calculation as an Excel file?","acceptedAnswer":{"@type":"Answer","text":"Yes — the Download Excel button exports inputs, the step-by-step transcript, and the worked example table."}}
+    ]
   };
 
   const softwareSchema = {
