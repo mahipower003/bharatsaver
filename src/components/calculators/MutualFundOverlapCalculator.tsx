@@ -24,14 +24,18 @@ export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCal
   const [overlapResult, setOverlapResult] = useState<OverlapOutput | null>(null);
   const [isCalculating, setIsCalculating] = useState(false);
 
+  // This effect runs ONLY when the fund data is loaded for the first time.
   useEffect(() => {
     if (allFunds.length > 0 && selectedFunds.length === 0) {
       const uniqueFunds = Array.from(new Map(allFunds.map(fund => [fund.fund_name, fund])).values());
       if (uniqueFunds.length >= 2) {
+        // Set the initial two funds for comparison
         setSelectedFunds(uniqueFunds.slice(0, 2));
       }
     }
-  }, [allFunds, selectedFunds.length]);
+    // We only want this to run when `allFunds` is populated, not when `selectedFunds` changes.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [allFunds]);
   
   useEffect(() => {
     if (selectedFunds.length < 2) {
@@ -41,6 +45,7 @@ export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCal
     
     setIsCalculating(true);
     const calculateOverlap = async () => {
+      // Allow UI to update before blocking for calculation
       await new Promise(resolve => setTimeout(resolve, 50)); 
       const result = calculateAllOverlaps(selectedFunds);
       setOverlapResult(result);
@@ -321,3 +326,5 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: RawFund[
     </>
   );
 }
+
+    

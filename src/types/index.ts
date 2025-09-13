@@ -2,7 +2,6 @@
 
 import type { LucideIcon } from 'lucide-react';
 import type { i18nConfig } from '@/lib/i18n-config';
-import type { RawFund } from '@/lib/overlap-calculator';
 
 export type Locale = (typeof i18nConfig)['locales'][number];
 
@@ -16,8 +15,6 @@ export type Calculator = {
   lastModified: string;
   image: string;
 };
-
-export type FundPortfolio = RawFund;
 
 export type Page = {
   slug: string;
@@ -112,3 +109,5 @@ export type Dictionary = {
   };
   [key: string]: any;
 };
+
+    
