@@ -19,7 +19,7 @@ export function AuthorCard({ dictionary }: AuthorCardProps) {
   return (
     <aside className="bs-author-box" aria-labelledby="author-name">
         <Image 
-            src="/images/mahesh-chaube.jpg" 
+            src="/images/Mahesh_Chaube.png" 
             alt="Photo of Mahesh Chaube" 
             width={96} 
             height={96} 
