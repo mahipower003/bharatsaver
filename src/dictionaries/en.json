@@ -806,378 +806,401 @@
     }
   },
   "tax_regime_calculator": {
-    "meta_title": "పాత vs కొత్త పన్ను విధానం క్యాలిక్యులేటర్ (AY 2025-26) | BharatSaver",
-    "meta_description": "భారతదేశంలో పాత మరియు కొత్త పన్ను విధానాల కింద మీ ఆదాయపు పన్ను బాధ్యతను పోల్చడానికి మరియు మీకు ఏది మంచిదో కనుగొనడానికి మా ఉచిత క్యాలిక్యులేటర్‌ను ఉపయోగించండి AY 2025-26 కోసం.",
-    "h1": "పాత vs కొత్త పన్ను విధానం క్యాలిక్యులేటర్",
-    "description": "మీ జీతం మరియు మినహాయింపులను నమోదు చేసి, పాత మరియు కొత్త పన్ను విధానాల కింద తక్షణమే పన్నును పోల్చండి. FY 2025-26 కోసం నవీకరించబడింది — HRA, 80C, 80D మరియు పని చేసిన ఉదాహరణలతో సహా.",
-    "title": "పన్ను విధానం క్యాలిక్యులేటర్",
-    "last_updated": "చివరిగా నవీకరించబడింది:",
-    "form_description": "ఏ పన్ను విధానం మీకు ఎక్కువ డబ్బు ఆదా చేస్తుందో కనుగొనండి.",
-    "gross_salary_label": "స్థూల వార్షిక జీతం",
-    "basic_salary_label": "ప్రాథమిక జీతం (HRA లెక్కింపు కోసం)",
-    "other_income_label": "ఇతర ఆదాయం (ఉదా., వడ్డీ, అద్దె)",
-    "age_label": "వయస్సు వర్గం",
-    "age_below_60": "60 సంవత్సరాల కంటే తక్కువ",
-    "age_60_to_80": "60 నుండి 80 సంవత్సరాలు (సీనియర్)",
-    "age_above_80": "80 సంవత్సరాల కంటే ఎక్కువ (సూపర్ సీనియర్)",
-    "deductions_title": "మినహాయింపులు (పాత విధానం కోసం)",
-    "section80C_label": "సెక్షన్ 80C (PPF, EPF, ELSS)",
-    "section80D_label": "సెక్షన్ 80D (వైద్య బీమా)",
-    "section80CCD1B_label": "సెక్షన్ 80CCD(1B) (NPS)",
-    "section80TTA_label": "సెక్షన్ 80TTA (పొదుపు వడ్డీ)",
-    "hra_label": "పొందిన HRA",
-    "rent_paid_label": "చెల్లించిన మొత్తం వార్షిక అద్దె",
-    "metro_city_label": "మెట్రో నగరంలో నివసిస్తున్నారా?",
-    "home_loan_interest_label": "గృహ రుణ వడ్డీ (u/s 24)",
-    "lta_label": "లీవ్ ట్రావెల్ అలవెన్స్ (LTA)",
-    "calculate_button": "పన్నును పోల్చండి",
-    "loading": "లెక్కిస్తోంది...",
-    "results_title": "పన్ను పోలిక ఫలితం",
-    "result_recommendation": "{winner} ఎంచుకోండి — ఇది ఈ సంవత్సరం మీకు {savings} ఆదా చేస్తుంది.",
-    "old_regime": "పాత విధానం",
-    "new_regime": "కొత్త విధానం",
-    "total_tax_label": "చెల్లించవలసిన మొత్తం పన్ను",
-    "taxable_income_label": "పన్ను విధించదగిన ఆదాయం",
-    "net_income_label": "చేతికి వచ్చే ఆదాయం (పన్ను తర్వాత)",
+    "meta_title": "Old vs New Tax Regime Calculator (AY 2025-26) | BharatSaver",
+    "meta_description": "Use our free calculator to compare your income tax liability under the Old and New tax regimes in India and find out which is better for you for AY 2025-26.",
+    "h1": "Old vs New Tax Regime Calculator",
+    "description": "Enter your salary and deductions to instantly compare tax under the old and new tax regimes. Updated for FY 2025-26 — includes HRA, 80C, 80D, and worked examples.",
+    "title": "Tax Regime Calculator",
+    "last_updated": "Last Updated:",
+    "form_description": "Find out which tax regime saves you more money.",
+    "gross_salary_label": "Gross Annual Salary",
+    "basic_salary_label": "Basic Salary (for HRA calculation)",
+    "other_income_label": "Other Income (e.g., interest, rent)",
+    "age_label": "Age Category",
+    "age_below_60": "Below 60 years",
+    "age_60_to_80": "60 to 80 years (Senior)",
+    "age_above_80": "Above 80 years (Super Senior)",
+    "deductions_title": "Deductions (for Old Regime)",
+    "section80C_label": "Section 80C (PPF, EPF, ELSS)",
+    "section80D_label": "Section 80D (Medical Insurance)",
+    "section80CCD1B_label": "Section 80CCD(1B) (NPS)",
+    "section80TTA_label": "Section 80TTA (Savings Interest)",
+    "hra_label": "HRA Received",
+    "rent_paid_label": "Total Annual Rent Paid",
+    "metro_city_label": "Living in a Metro City?",
+    "home_loan_interest_label": "Home Loan Interest (u/s 24)",
+    "lta_label": "Leave Travel Allowance (LTA)",
+    "calculate_button": "Compare Tax",
+    "loading": "Calculating...",
+    "results_title": "Tax Comparison Result",
+    "result_recommendation": "Choose the {winner} — it saves you {savings} this year.",
+    "old_regime": "Old Regime",
+    "new_regime": "New Regime",
+    "total_tax_label": "Total Tax Payable",
+    "taxable_income_label": "Taxable Income",
+    "net_income_label": "Take-Home Income (after tax)",
     "assumptions": {
-      "title": "క్యాలిక్యులేటర్ అంచనాలు",
-      "body": "క్యాలిక్యులేటర్ FY 2024-25 (AY 2025-26) కోసం నవీకరించబడింది. జీతం పొందే వ్యక్తుల కోసం రెండు విధానాలకు ₹50,000 స్టాండర్డ్ డిడక్షన్ వర్తిస్తుంది. అన్ని లెక్కలు భారత ఆదాయపు పన్ను శాఖ ప్రచురించిన స్లాబ్ రేట్ల ఆధారంగా ఉంటాయి. ఇది ఒక అంచనా మాత్రమే మరియు పన్ను సలహా కాదు."
+      "title": "Calculator Assumptions",
+      "body": "The calculator is updated for FY 2024-25 (AY 2025-26). A standard deduction of ₹50,000 is applied to both regimes for salaried individuals. All calculations are based on the slab rates published by the Income Tax Department of India. This is an estimator and not tax advice."
     },
     "comparison_table": {
-      "title": "పాత vs కొత్త పన్ను విధానం — శీఘ్ర పోలిక",
-      "description": "ప్రతి విధానంలో ఏమి అనుమతించబడుతుందో ఒక శీఘ్ర వీక్షణ.",
+      "title": "Old vs New Tax Regime — A Quick Comparison",
+      "description": "A quick look at what's allowed in each regime.",
       "table": {
-        "headers": ["ఫీచర్", "పాత పన్ను విధానం", "కొత్త పన్ను విధానం (డిఫాల్ట్)"],
+        "headers": ["Feature", "Old Tax Regime", "New Tax Regime (Default)"],
         "rows": [
-          ["పన్ను స్లాబ్‌లు", "4 స్లాబ్‌లు (5%, 20%, 30%)", "6 స్లాబ్‌లు (5% నుండి 30%)"],
-          ["ప్రామాణిక మినహాయింపు", "₹50,000", "₹50,000"],
-          ["సెక్షన్ 80C/80D", "అనుమతించబడింది", "అనుమతించబడలేదు"],
-          ["HRA మినహాయింపు", "అనుమతించబడింది", "అనుమతించబడలేదు"],
-          ["గృహ రుణ వడ్డీ", "అనుమతించబడింది", "అనుమతించబడలేదు"]
+          ["Tax Slabs", "4 Slabs (5%, 20%, 30%)", "6 Slabs (5% to 30%)"],
+          ["Standard Deduction", "₹50,000", "₹50,000"],
+          ["Section 80C/80D", "Allowed", "Not Allowed"],
+          ["HRA Exemption", "Allowed", "Not Allowed"],
+          ["Home Loan Interest", "Allowed", "Not Allowed"]
         ]
       }
     },
     "how_we_calculate": {
-      "title": "మేము మీ పన్నును ఎలా లెక్కిస్తాము (దశల వారీ)",
-      "body": "<ul><li><strong>పాత విధానం లెక్కింపు:</strong> స్థూల ఆదాయం - ప్రామాణిక మినహాయింపు - అన్ని సెక్షన్ 80 మినహాయింపులు - HRA/గృహ రుణ వడ్డీ = పన్ను విధించదగిన ఆదాయం.</li><li><strong>కొత్త విధానం లెక్కింపు:</strong> స్థూల ఆదాయం - ప్రామాణిక మినహాయింపు = పన్ను విధించదగిన ఆదాయం.</li></ul><p>మా పన్ను క్యాలిక్యులేటర్ FY 2024-25 (AY 2025-26) కోసం అధికారిక పన్ను స్లాబ్‌లను వర్తింపజేసి రెండు విధానాల కింద మీ బాధ్యతను నిర్ధారిస్తుంది. తుది పన్ను మొత్తంపై 4% ఆరోగ్యం & విద్యా సెస్ వర్తిస్తుంది. డిఫాల్ట్ కొత్త విధానంలో ₹7 లక్షల వరకు ఆదాయం కోసం సెక్షన్ 87A కింద రిబేట్ ఉంది, ఇది ప్రభావవంతమైన పన్నును సున్నా చేస్తుంది. స్లాబ్ రేట్ల కోసం, మేము అధికారిక <a href='https://incometaxindia.gov.in/Pages/tools/income-tax-calculator.aspx' target='_blank' rel='noopener noreferrer'>ఆదాయపు పన్ను శాఖ ఇ-క్యాలిక్యులేటర్‌ను</a> ఉదహరిస్తాము.</p>"
+      "title": "How We Calculate Your Tax (Step-by-Step)",
+      "body": "<ul><li><strong>Old Regime Calculation:</strong> Gross Income - Standard Deduction - All Section 80 Deductions - HRA/Home Loan Interest = Taxable Income.</li><li><strong>New Regime Calculation:</strong> Gross Income - Standard Deduction = Taxable Income.</li></ul><p>Our tax calculator then applies the official tax slabs for FY 2024-25 (AY 2025-26) to determine your liability under both regimes. A 4% Health & Education Cess is applied to the final tax amount. Rebate under Section 87A for income up to ₹7 lakh in the default new regime makes the effective tax zero. For slab rates, we cite the official <a href='https://incometaxindia.gov.in/Pages/tools/income-tax-calculator.aspx' target='_blank' rel='noopener noreferrer'>Income Tax Dept e-calculator</a>.</p>"
     },
     "checklist": {
-      "title": "ఎలా ఎంచుకోవాలి: ఒక శీఘ్ర చెక్‌లిస్ట్",
-      "body": "<ul><li><strong>అధిక మినహాయింపులు:</strong> మీ మొత్తం మినహాయింపులు (80C, HRA, గృహ రుణ వడ్డీ) గణనీయంగా ఉంటే (సాధారణంగా > ₹2.5-3 లక్షలు), <strong>పాత విధానం</strong> తరచుగా ఉత్తమం.</li><li><strong>తక్కువ/మినహాయింపులు లేవు:</strong> మీకు చాలా మినహాయింపులు లేకపోతే, <strong>కొత్త విధానం</strong> యొక్క తక్కువ స్లాబ్ రేట్లు సాధారణంగా మరింత ప్రయోజనకరంగా ఉంటాయి.</li><li><strong>సరళత:</strong> బహుళ పెట్టుబడులను ట్రాక్ చేయకుండా ఒక సరళమైన పన్ను ఫైలింగ్ ప్రక్రియను ఇష్టపడతారా? <strong>కొత్త విధానం</strong> సులభం.</li></ul>"
+      "title": "How to Choose: A Quick Checklist",
+      "body": "<ul><li><strong>High Deductions:</strong> If your total deductions (80C, HRA, home loan interest) are significant (typically > ₹2.5-3 lakh), the <strong>Old Regime</strong> is often better.</li><li><strong>Low/No Deductions:</strong> If you don't have many deductions, the lower slab rates of the <strong>New Regime</strong> will usually be more beneficial.</li><li><strong>Simplicity:</strong> Prefer a simpler tax filing process without tracking multiple investments? The <strong>New Regime</strong> is easier.</li></ul>"
     },
     "common_scenarios": {
-      "title": "పని చేసిన ఉదాహరణలు — పాత vs కొత్త విధానం",
+      "title": "Worked Examples — Old vs New Regime",
       "scenario1": {
-        "title": "ఉదాహరణ 1: HRA & పూర్తి మినహాయింపులతో ₹10 లక్షల జీతం",
-        "body": "<strong>ఇన్‌పుట్‌లు:</strong> జీతం ₹10,00,000 | HRA ₹2,00,000 | 80C ₹1,50,000 | 80D ₹25,000 | 80CCD(1B) ₹50,000<br/><strong>పాత విధానం పన్ను:</strong> ₹46,800<br/><strong>కొత్త విధానం పన్ను:</strong> ₹54,600<br/><strong>సిఫార్సు:</strong> పాత విధానం ఇక్కడ ఉత్తమం ఎందుకంటే మినహాయింపులు + HRA మినహాయింపులు పన్ను విధించదగిన ఆదాయాన్ని గణనీయంగా తగ్గిస్తాయి."
+        "title": "Scenario 1: ₹10 Lakh Salary with HRA & Full Deductions",
+        "body": "<strong>Inputs:</strong> Salary ₹10,00,000 | HRA ₹2,00,000 | 80C ₹1,50,000 | 80D ₹25,000 | 80CCD(1B) ₹50,000<br/><strong>Old Regime Tax:</strong> ₹46,800<br/><strong>New Regime Tax:</strong> ₹54,600<br/><strong>Recommendation:</strong> The Old Regime is better here because the deductions + HRA exemptions significantly lower the taxable income."
       },
       "scenario2": {
-        "title": "ఉదాహరణ 2: ₹15 లక్షల జీతం, మినహాయింపులు లేవు",
-        "body": "<strong>ఇన్‌పుట్‌లు:</strong> జీతం ₹15,00,000 | HRA = 0 | 80C/80D = 0<br/><strong>పాత విధానం పన్ను:</strong> ₹2,73,000<br/><strong>కొత్త విధానం పన్ను:</strong> ₹1,95,000<br/><strong>సిఫార్సు:</strong> కొత్త విధానం ~₹78,000 ఆదా చేస్తుంది ఎందుకంటే ఏ మినహాయింపులు ఉపయోగించబడలేదు."
+        "title": "Scenario 2: ₹15 Lakh Salary, No Deductions",
+        "body": "<strong>Inputs:</strong> Salary ₹15,00,000 | HRA = 0 | 80C/80D = 0<br/><strong>Old Regime Tax:</strong> ₹2,73,000<br/><strong>New Regime Tax:</strong> ₹1,95,000<br/><strong>Recommendation:</strong> The New Regime saves ~₹78,000 because no deductions are utilized."
       },
       "scenario3": {
-        "title": "ఉదాహరణ 3: ₹7 లక్షల ఫ్రీలాన్సర్ ఆదాయం (HRA లేదు, చిన్న మినహాయింపు)",
-        "body": "<strong>ఇన్‌పుట్‌లు:</strong> ఆదాయం ₹7,00,000 | HRA లేదు | 80C ₹50,000<br/><strong>పాత విధానం పన్ను:</strong> ₹23,400<br/><strong>కొత్త విధానం పన్ను:</strong> ₹0 (87A రిబేట్ వర్తిస్తుంది)<br/><strong>సిఫార్సు:</strong> కొత్త విధానం ఉత్తమం, ప్రత్యేకించి ₹7 లక్షల వరకు ఆదాయం ఉన్న వ్యక్తులకు రిబేట్ కారణంగా."
+        "title": "Scenario 3: ₹7 Lakh Freelancer Income (No HRA, small deduction)",
+        "body": "<strong>Inputs:</strong> Income ₹7,00,000 | No HRA | 80C ₹50,000<br/><strong>Old Regime Tax:</strong> ₹23,400<br/><strong>New Regime Tax:</strong> ₹0 (rebate under 87A applies)<br/><strong>Recommendation:</strong> The New Regime is better, especially for individuals with income up to ₹7 lakh due to the rebate."
       }
     },
-    "faq_title": "తరచుగా అడిగే ప్రశ్నలు",
+    "faq_title": "Frequently Asked Questions",
     "faqs": [
-      { "question": "కొత్త పన్ను విధానం అంటే ఏమిటి?", "answer": "కొత్త పన్ను విధానం తక్కువ పన్ను రేట్లను అందిస్తుంది కానీ HRA, 80C, మరియు గృహ రుణ వడ్డీ వంటి చాలా సాధారణ మినహాయింపులను అనుమతించదు. ఇది ఇప్పుడు డిఫాల్ట్ విధానం. మీ మొత్తం మినహాయించదగిన పెట్టుబడులు ~₹1.8L కంటే తక్కువగా ఉంటే, కొత్త విధానం సాధారణంగా పన్ను ఆదా చేస్తుంది." },
-      { "question": "పాత పన్ను విధానం అంటే ఏమిటి?", "answer": "పాత పన్ను విధానంలో కొంచెం ఎక్కువ పన్ను రేట్లు ఉన్నాయి కానీ మీకు 70కి పైగా మినహాయింపులు మరియు మినహాయింపులను క్లెయిమ్ చేయడానికి అనుమతిస్తుంది. మీరు ప్రత్యేకంగా దాన్ని ఎంచుకోవాలి." },
-      { "question": "₹10 లక్షల జీతానికి ఏ పన్ను విధానం ఉత్తమం?", "answer": "మీ మొత్తం మినహాయింపులు ₹2.5 లక్షల కంటే ఎక్కువగా ఉంటే, పాత విధానం సాధారణంగా ఉత్తమం. లేకపోతే, కొత్త విధానం తరచుగా మీకు ఎక్కువ పన్ను ఆదా చేస్తుంది." },
-      { "question": "నేను కొత్త పన్ను విధానంలో HRAని క్లెయిమ్ చేయవచ్చా?", "answer": "లేదు, HRA మినహాయింపు పాత పన్ను విధానం కింద మాత్రమే అందుబాటులో ఉంది; తేడాను చూడటానికి క్యాలిక్యులేటర్‌లో మీ HRA వివరాలను చేర్చండి." },
-      { "question": "కొత్త విధానంలో ప్రామాణిక మినహాయింపు అందుబాటులో ఉందా?", "answer": "అవును, జీతం పొందే వ్యక్తుల కోసం ₹50,000 ప్రామాణిక మినహాయింపు పాత మరియు కొత్త రెండూ పన్ను విధానాల కింద అందుబాటులో ఉంది." },
-      { "question": "FY 2024-25 కోసం సెక్షన్ 87A కింద పన్ను రిబేట్ అంటే ఏమిటి?", "answer": "కొత్త విధానంలో, మీ పన్ను విధించదగిన ఆదాయం ₹7 లక్షల వరకు ఉంటే, రిబేట్ కారణంగా మీరు సున్నా పన్ను చెల్లిస్తారు. పాత విధానంలో, రిబేట్ ₹5 లక్షల వరకు ఆదాయానికి వర్తిస్తుంది." }
+      { "question": "What is the New Tax Regime?", "answer": "The New Tax Regime offers lower tax rates but disallows most common deductions like HRA, 80C, and home loan interest. It's now the default regime. If your total deductible investments are less than ~₹1.8L, the new regime usually saves tax." },
+      { "question": "What is the Old Tax Regime?", "answer": "The Old Tax Regime has slightly higher tax rates but allows you to claim over 70 deductions and exemptions. You must specifically opt for it." },
+      { "question": "Which tax regime is better for a ₹10 lakh salary?", "answer": "If your total deductions are over ₹2.5 lakh, the old regime is usually better. Otherwise, the new regime often saves you more tax." },
+      { "question": "Can I claim HRA in the new tax regime?", "answer": "No, HRA exemption is only available under the old tax regime; include your HRA details in the calculator to see the difference." },
+      { "question": "Is standard deduction available in the new regime?", "answer": "Yes, a standard deduction of ₹50,000 for salaried individuals is available under both the old and new tax regimes." },
+      { "question": "What is the tax rebate under Section 87A for FY 2024-25?", "answer": "In the new regime, if your taxable income is up to ₹7 lakh, you pay zero tax due to the rebate. In the old regime, the rebate applies to income up to ₹5 lakh." }
     ],
     "next_steps": {
-      "title": "తదుపరి దశలు",
-      "cta1_title": "మీ ITR ఫైల్ చేయండి",
-      "cta1_desc": "మీ ఆదాయపు పన్ను రిటర్న్‌ను ఖచ్చితంగా ఫైల్ చేయడానికి ClearTax వంటి విశ్వసనీయ భాగస్వామిని ఉపయోగించండి.",
-      "cta2_title": "పన్ను-ఆదా పెట్టుబడులను ప్లాన్ చేయండి",
-      "cta2_desc": "మీ పెట్టుబడులను ప్లాన్ చేయడానికి PPF మరియు NPS వంటి మా పన్ను-ఆదా క్యాలిక్యులేటర్లను అన్వేషించండి."
+      "title": "Next Steps",
+      "cta1_title": "File Your ITR",
+      "cta1_desc": "Use a trusted partner like ClearTax to file your income tax return accurately.",
+      "cta2_title": "Plan Tax-Saving Investments",
+      "cta2_desc": "Explore our tax-saving calculators like PPF and NPS to plan your investments."
     },
     "conclusion": {
-      "title": "తుది ఆలోచనలు: తెలివైన ఎంపిక చేసుకోవడం",
-      "body": "ఒక పన్ను విధానాన్ని ఎంచుకోవడం ఒక కీలకమైన ఆర్థిక నిర్ణయం. కొత్త విధానం సరళతను అందిస్తుంది, అయితే పాత విధానం గణనీయమైన పెట్టుబడులు మరియు ఖర్చులు ఉన్నవారికి ప్రతిఫలమిస్తుంది. మీ నిర్దిష్ట పరిస్థితిని పోల్చడానికి, లాభనష్టాలను అర్థం చేసుకోవడానికి మరియు మీ చేతికి వచ్చే జీతాన్ని గరిష్ఠం చేసే మార్గాన్ని ఎంచుకోవడానికి ఈ క్యాలిక్యులేటర్‌ను ఉపయోగించండి. లోతైన అంతర్దృష్టుల కోసం, పన్ను-ఆదా పెట్టుబడులు మీ నిర్ణయాన్ని ఎలా ప్రభావితం చేస్తాయో చూడటానికి మా <a href='/{lang}/ppf-calculator' class='underline'>PPF క్యాలిక్యులేటర్</a> లేదా మా <a href='/{lang}/nps-calculator' class='underline'>NPS క్యాలిక్యులేటర్</a>ను అన్వేషించండి."
+      "title": "Final Thoughts: Making the Smart Choice",
+      "body": "Choosing a tax regime is a critical financial decision. The new regime offers simplicity, while the old regime rewards those with significant investments and expenses. Use this calculator to compare your specific situation, understand the trade-offs, and choose the path that maximizes your take-home pay. For deeper insights, explore our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> or our <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> to see how tax-saving investments can impact your decision."
     }
   },
   "loan_optimization_calculator": {
-    "h1": "లోన్ ఆప్టిమైజేషన్ క్యాలిక్యులేటర్ భారతదేశం (2025)",
-    "summary": "ఉచిత లోన్ ఆప్టిమైజేషన్ క్యాలిక్యులేటర్ (భారతదేశం). ప్రీపేమెంట్ వర్సెస్ ఇన్వెస్ట్ పోల్చండి, ఇఎంఐ ఆప్టిమైజ్ చేయండి, బ్యాలెన్స్ బదిలీ ప్లాన్ చేయండి, రుణ విమోచన షెడ్యూల్‌ను డౌన్‌లోడ్ చేయండి.",
-    "title": "లోన్ ఆప్టిమైజర్",
-    "form_description": "మీ ఈఎంఐని లెక్కించండి మరియు అదనపు చెల్లింపులు మీకు వడ్డీ ఎలా ఆదా చేస్తాయో చూడండి.",
+    "h1": "Loan Optimization Calculator India (2025)",
+    "summary": "Free Loan Optimization Calculator (India). Compare prepayment vs invest, optimize EMI, plan balance transfer, download amortization schedule.",
+    "title": "Loan Optimizer",
+    "form_description": "Calculate your EMI and see how extra payments can help you save interest.",
     "form": {
-      "loan_amount": "రుణ మొత్తం (₹)",
-      "interest_rate": "వడ్డీ రేటు (% p.a.)",
-      "tenure": "కాలపరిమితి (సంవత్సరాలు)",
-      "prepayment_amount": "ముందస్తు చెల్లింపు మొత్తం (₹)",
-      "calculating": "లెక్కిస్తోంది...",
-      "calculate_cta": "ఈఎంఐ & పొదుపులను లెక్కించండి"
+      "loan_amount": "Loan Amount (₹)",
+      "interest_rate": "Interest Rate (% p.a.)",
+      "tenure": "Tenure (Years)",
+      "prepayment_amount": "Prepayment Amount (₹)",
+      "calculating": "Calculating...",
+      "calculate_cta": "Calculate EMI & Savings"
     },
     "results": {
-      "title": "మీ రుణ సారాంశం",
-      "monthly_emi": "నెలవారీ ఈఎంఐ",
-      "total_interest": "చెల్లించవలసిన మొత్తం వడ్డీ",
-      "total_payment": "మొత్తం చెల్లింపు",
+      "title": "Your Loan Summary",
+      "monthly_emi": "Monthly EMI",
+      "total_interest": "Total Interest Payable",
+      "total_payment": "Total Payment",
       "prepayment_summary": {
-        "title": "ముందస్తు చెల్లింపుతో, మీరు ఆదా చేయవచ్చు:",
-        "subtitle": "మీరు {months} నెలల ముందుగా రుణ-రహితం కావచ్చు!"
+        "title": "With Prepayment, You Can Save:",
+        "subtitle": "You could be loan-free {months} months sooner!"
       },
-      "chart_view": "చార్ట్ వీక్షణ",
-      "table_view": "పట్టిక వీక్షణ",
-      "download_csv": "CSVని డౌన్‌లోడ్ చేయండి",
-      "principal_paid": "చెల్లించిన అసలు",
-      "interest_paid": "చెల్లించిన వడ్డీ",
-      "outstanding_balance": "బకాయి ఉన్న బ్యాలెన్స్",
+      "chart_view": "Chart View",
+      "table_view": "Table View",
+      "download_csv": "Download CSV",
+      "principal_paid": "Principal Paid",
+      "interest_paid": "Interest Paid",
+      "outstanding_balance": "Outstanding Balance",
       "table": {
-        "month": "నెల",
-        "principal": "అసలు",
-        "interest": "వడ్డీ",
-        "total_payment": "మొత్తం చెల్లింపు",
-        "ending_balance": "చివరి బ్యాలెన్స్"
+        "month": "Month",
+        "principal": "Principal",
+        "interest": "Interest",
+        "total_payment": "Total Payment",
+        "ending_balance": "Ending Balance"
       }
     },
     "why": {
-      "h2": "మీ రుణాన్ని ఎందుకు ఆప్టిమైజ్ చేయాలి? వడ్డీ యొక్క దాచిన ఖర్చులు",
-      "body": "<p>మీరు రుణం తీసుకున్నప్పుడు, మీరు తీసుకున్న దానికంటే ఎక్కువ తిరిగి చెల్లిస్తారు — ఆ అదనపు మొత్తం వడ్డీ. గృహ రుణం వంటి దీర్ఘకాలిక రుణం కోసం, చెల్లించిన మొత్తం వడ్డీ తరచుగా అసలు మొత్తానికి సమానంగా ఉంటుంది. లోన్ ఆప్టిమైజేషన్ అనేది ఈ వడ్డీ వ్యయాన్ని తగ్గించడానికి మరియు వేగంగా రుణ-రహితం కావడానికి మీ రుణాన్ని వ్యూహాత్మకంగా నిర్వహించే ప్రక్రియ.</p>"
+      "h2": "Why Optimize Your Loan? The Hidden Costs of Interest",
+      "body": "<p>When you take a loan, you pay back more than you borrowed — that extra amount is interest. For a long-term loan like a home loan, the total interest paid can often be as much as the principal amount itself. Loan optimization is the process of strategically managing your loan to reduce this interest cost and become debt-free faster.</p>"
     },
     "how_it_works": {
-      "h2": "ఈ క్యాలిక్యులేటర్ ఎలా పనిచేస్తుంది",
-      "body": "<p>మా క్యాలిక్యులేటర్ మొదట ప్రామాణిక సూత్రాన్ని ఉపయోగించి మీ సమాన నెలవారీ విడత (ఈఎంఐ)ని నిర్ణయిస్తుంది: <code>ఈఎంఐ = పి × ఆర్ × (1 + ఆర్)^ఎన్ / ((1 + ఆర్)^ఎన్ - 1)</code>, ఇక్కడ పి అసలు, ఆర్ నెలవారీ వడ్డీ రేటు, మరియు ఎన్ నెలల్లో కాలపరిమితి.</p><p>మీరు ఒక ప్రీపేమెంట్ జోడించినప్పుడు, క్యాలిక్యులేటర్ రుణ విమోచన షెడ్యూల్‌ను సర్దుబాటు చేస్తుంది, ఈ అదనపు చెల్లింపు మీ అసలును ఎలా తగ్గిస్తుందో చూపిస్తుంది, తద్వారా రుణం జీవితకాలంలో చెల్లించిన మొత్తం వడ్డీని తగ్గిస్తుంది మరియు కాలపరిమితిని తగ్గిస్తుంది.</p>"
+      "h2": "How This Calculator Works",
+      "body": "<p>Our calculator first determines your Equated Monthly Installment (EMI) using the standard formula: <code>EMI = P × R × (1 + R)^N / ((1 + R)^N - 1)</code>, where P is the principal, R is the monthly interest rate, and N is the tenure in months.</p><p>When you add a prepayment, the calculator adjusts the amortization schedule to show how this extra payment reduces your principal, thereby lowering the total interest paid over the life of the loan and shortening the tenure.</p>"
     },
     "worked_examples": {
-      "h2": "పని చేసిన ఉదాహరణలు",
+      "h2": "Worked Examples",
       "scenario1": {
-        "title": "దృష్టాంతం 1: ప్రామాణిక గృహ రుణం (₹50 లక్షలు)",
-        "body": "<strong>ఇన్‌పుట్‌లు:</strong> ₹50 లక్షల రుణం, 8.5% వడ్డీ, 20 సంవత్సరాలు.<br/><strong>ఫలితం:</strong> ఈఎంఐ ₹43,391. చెల్లించిన మొత్తం వడ్డీ ₹54.14 లక్షలు.<br/><strong>₹5 లక్షల ప్రీపేమెంట్‌తో:</strong> ఆదా అయిన వడ్డీ ₹14.3 లక్షలు మరియు కాలపరిమితి 63 నెలలు తగ్గుతుంది."
+        "title": "Scenario 1: Standard Home Loan (₹50 Lakh)",
+        "body": "<strong>Inputs:</strong> ₹50 lakh loan, 8.5% interest, 20 years.<br/><strong>Result:</strong> EMI is ₹43,391. Total interest paid is ₹54.14 lakh.<br/><strong>With ₹5 Lakh Prepayment:</strong> Interest saved is ₹14.3 lakh and tenure reduces by 63 months."
       },
       "scenario2": {
-        "title": "దృష్టాంతం 2: కారు రుణం (₹8 లక్షలు)",
-        "body": "<strong>ఇన్‌పుట్‌లు:</strong> ₹8 లక్షల రుణం, 10% వడ్డీ, 7 సంవత్సరాలు.<br/><strong>ఫలితం:</strong> ఈఎంఐ ₹13,275. చెల్లించిన మొత్తం వడ్డీ ₹3.15 లక్షలు.<br/><strong>₹1 లక్షల ప్రీపేమెంట్‌తో:</strong> ఆదా అయిన వడ్డీ ₹70,000 మరియు కాలపరిమితి 15 నెలలు తగ్గుతుంది."
+        "title": "Scenario 2: Car Loan (₹8 Lakh)",
+        "body": "<strong>Inputs:</strong> ₹8 lakh loan, 10% interest, 7 years.<br/><strong>Result:</strong> EMI is ₹13,275. Total interest paid is ₹3.15 lakh.<br/><strong>With ₹1 Lakh Prepayment:</strong> Interest saved is ₹70,000 and tenure reduces by 15 months."
       },
       "scenario3": {
-        "title": "దృష్టాంతం 3: వ్యక్తిగత రుణం (₹3 లక్షలు)",
-        "body": "<strong>ఇన్‌పుట్‌లు:</strong> ₹3 లక్షల రుణం, 12% వడ్డీ, 5 సంవత్సరాలు.<br/><strong>ఫలితం:</strong> ఈఎంఐ ₹6,673. చెల్లించిన మొత్తం వడ్డీ ₹1 లక్ష.<br/><strong>₹50,000 ప్రీపేమెంట్‌తో:</strong> ఆదా అయిన వడ్డీ ₹25,000 మరియు కాలపరిమితి 12 నెలలు తగ్గుతుంది."
+        "title": "Scenario 3: Personal Loan (₹3 Lakh)",
+        "body": "<strong>Inputs:</strong> ₹3 lakh loan, 12% interest, 5 years.<br/><strong>Result:</strong> EMI is ₹6,673. Total interest paid is ₹1 lakh.<br/><strong>With ₹50,000 Prepayment:</strong> Interest saved is ₹25,000 and tenure reduces by 12 months."
       }
     },
     "optimization_masterclass": {
-      "h2": "లోన్ ఆప్టిమైజేషన్ మాస్టర్‌క్లాస్: ప్రీపేమెంట్, రీఫైనాన్స్, & ఇన్వెస్ట్‌మెంట్",
-      "body": "<p>లోన్ ఆప్టిమైజేషన్ కోసం మూడు ప్రధాన వ్యూహాలు ఉన్నాయి:</p><ul><li><strong>ప్రీపేమెంట్:</strong> మీ అసలు వైపు అదనపు చెల్లింపులు చేయడం. ఇది మీ రుణ భారాన్ని తగ్గించడానికి అత్యంత ప్రత్యక్ష మార్గం.</li><li><strong>రీఫైనాన్స్/బ్యాలెన్స్ బదిలీ:</strong> తక్కువ వడ్డీ రేటును అందించే మరో రుణదాతకు మీ రుణాన్ని తరలించడం. ఇది మీ ఈఎంఐ మరియు మొత్తం వడ్డీని గణనీయంగా తగ్గించగలదు.</li><li><strong>ప్రీపే వర్సెస్ ఇన్వెస్ట్:</strong> మీ అదనపు నిధులను మీ రుణాన్ని ముందస్తుగా చెల్లించడానికి ఉపయోగించాలా లేదా అధిక రాబడిని సంపాదించడానికి వాటిని ఎక్కడైనా పెట్టుబడి పెట్టాలా అని నిర్ణయించడం.</li></ul>"
+      "h2": "Loan Optimization Masterclass: Prepayment, Refinance, & Investment",
+      "body": "<p>There are three main strategies for loan optimization:</p><ul><li><strong>Prepayment:</strong> Making extra payments towards your principal. This is the most direct way to reduce your debt burden.</li><li><strong>Refinance/Balance Transfer:</strong> Moving your loan to another lender offering a lower interest rate. This can significantly reduce your EMI and total interest.</li><li><strong>Prepay vs. Invest:</strong> Deciding whether surplus funds should be used to prepay your loan or invested elsewhere to earn higher returns.</li></ul>"
     },
     "prepay_vs_invest": {
-      "h2": "ప్రీపే వర్సెస్ ఇన్వెస్ట్: ఒక కీలక నిర్ణయం",
-      "body": "<p>మీ రుణాన్ని ముందస్తుగా చెల్లించాలా లేదా మీ అదనపు నిధులను పెట్టుబడి పెట్టాలా అనే నిర్ణయం ఒక సాధారణ పోలికపై ఆధారపడి ఉంటుంది: మీ పెట్టుబడిపై పన్ను తర్వాత రాబడి మీ రుణ వడ్డీ రేటు కంటే ఎక్కువగా ఉంటే, పెట్టుబడి పెట్టడం సాధారణంగా మంచిది. ఉదాహరణకు, మీ రుణ రేటు 8.5% అయితే మరియు మీరు ఒక ఈక్విటీ పెట్టుబడిపై 12% పన్ను తర్వాత రాబడిని సంపాదించగలిగితే, అదనపు నిధులను పెట్టుబడి పెట్టడం గణితశాస్త్రపరంగా ఉత్తమ ఎంపిక.</p>"
+      "h2": "Prepay vs. Invest: A Key Decision",
+      "body": "<p>The decision to prepay your loan or invest your surplus funds rests on a simple comparison: if the post-tax return on your investment is higher than your loan's interest rate, investing is generally better. For example, if your loan rate is 8.5% and you can earn a 12% post-tax return on an equity investment, investing the surplus is the mathematically superior option.</p>"
     },
     "comparison_table": {
-        "title": "ప్రీపేమెంట్ వర్సెస్ ఇన్వెస్ట్‌మెంట్: ఒక శీఘ్ర పోలిక",
-        "headers": ["దృష్టాంతం", "ప్రీపేమెంట్ ఎంచుకోండి nếu...", "పెట్టుబడి ఎంచుకోండి nếu..."],
+        "title": "Prepayment vs. Investment: A Quick Comparison",
+        "headers": ["Scenario", "Choose Prepayment if...", "Choose Investment if..."],
         "rows": [
-            ["రిస్క్", "మీకు మీ రుణ వడ్డీ రేటుకు సమానమైన హామీ, రిస్క్-ఫ్రీ 'రాబడి' కావాలనుకుంటే.", "మీరు సంభావ్యంగా అధిక రాబడుల కోసం మార్కెట్ రిస్క్‌లతో సౌకర్యవంతంగా ఉంటే."],
-            ["రాబడులు", "మీ రుణ వడ్డీ రేటు ఎక్కువగా ఉంటే (ఉదా., వ్యక్తిగత రుణం >12%).", "మీరు ఆశించే పన్ను-తర్వాత పెట్టుబడి రాబడి మీ రుణ వడ్డీ రేటు కంటే ఎక్కువగా ఉంటే."],
-            ["లక్ష్యం", "మీ ప్రాథమిక లక్ష్యం వీలైనంత త్వరగా రుణ-రహితం కావడం అయితే.", "మీ ప్రాథమిక లక్ష్యం దీర్ఘకాలిక సంపద సృష్టి అయితే."],
-            ["పన్ను", "మీ రుణానికి పన్ను ప్రయోజనాలు లేకపోతే (ఉదా., కారు రుణం, వ్యక్తిగత రుణం).", "మీరు గృహ రుణాన్ని ముందస్తుగా చెల్లిస్తుంటే మరియు వడ్డీపై గణనీయమైన పన్ను ప్రయోజనాలను కోల్పోతారు."]
+            ["Risk", "You want a guaranteed, risk-free 'return' equal to your loan's interest rate.", "You are comfortable with market risks for potentially higher returns."],
+            ["Returns", "Your loan interest rate is high (e.g., personal loan >12%).", "Your expected post-tax investment return is higher than your loan interest rate."],
+            ["Goal", "Your primary goal is to become debt-free as soon as possible.", "Your primary goal is long-term wealth creation."],
+            ["Tax", "Your loan has no tax benefits (e.g., car loan, personal loan).", "You are prepaying a home loan and will lose significant tax benefits on the interest."]
         ]
     },
     "refinance": {
-      "h2": "బ్యాలెన్స్ బదిలీ (రీఫైనాన్స్) ఎప్పుడు పరిగణించాలి",
-      "body": "<p>మీ ప్రస్తుత రేటు కంటే కనీసం 0.5-1% తక్కువ వడ్డీ రేటుతో కొత్త రుణం పొందగలిగితే బ్యాలెన్స్ బదిలీ ఒక మంచి ఎంపిక. నికర పొదుపులు సార్థకమైనవి అని నిర్ధారించుకోవడానికి బదిలీతో సంబంధం ఉన్న ఏవైనా ప్రాసెసింగ్ ఫీజులు లేదా ఇతర ఛార్జీలను పరిగణనలోకి తీసుకోండి.</p>"
+      "h2": "When to Consider a Balance Transfer (Refinance)",
+      "body": "<p>A balance transfer is a good option if you can get a new loan with an interest rate at least 0.5-1% lower than your current rate. Factor in any processing fees or other charges associated with the transfer to ensure the net savings are worthwhile.</p>"
     },
     "tax_notes": {
-      "h2": "గృహ రుణాల కోసం ముఖ్యమైన పన్ను పరిగణనలు",
-      "body": "<p>గృహ రుణాల కోసం, అసలు తిరిగి చెల్లింపు సెక్షన్ 80C (₹1.5 లక్షల వరకు) కింద మినహాయింపుకు అర్హత పొందుతుంది, మరియు చెల్లించిన వడ్డీ సెక్షన్ 24 (₹2 లక్షల వరకు) కింద మినహాయించదగినది. గృహ రుణాన్ని ముందస్తుగా చెల్లించడం వల్ల ఈ పన్ను ప్రయోజనాలు తగ్గవచ్చు, కాబట్టి మీ 'ప్రీపే వర్సెస్ ఇన్వెస్ట్' నిర్ణయంలో దీన్ని పరిగణనలోకి తీసుకోండి.</p>"
+      "h2": "Important Tax Considerations for Home Loans",
+      "body": "<p>For home loans, the principal repayment is eligible for deduction under Section 80C (up to ₹1.5 lakh), and the interest paid is deductible under Section 24 (up to ₹2 lakh). Prepaying a home loan may reduce these tax benefits, so factor this into your 'prepay vs. invest' decision.</p>"
     },
     "faq": {
-      "h2": "తరచుగా అడిగే ప్రశ్నలు",
+      "h2": "Frequently Asked Questions",
       "faqs": [
-        { "q": "లోన్ ఆప్టిమైజేషన్ అంటే ఏమిటి?", "a": "లోన్ ఆప్టిమైజేషన్ అనేది ప్రీపేమెంట్ మరియు రీఫైనాన్సింగ్ వంటి వ్యూహాల ద్వారా వడ్డీ ఖర్చులను తగ్గించడానికి మరియు వేగంగా రుణ-రహితం కావడానికి మీ రుణాన్ని నిర్వహించే ప్రక్రియ." },
-        { "q": "ప్రీపేమెంట్ డబ్బు ఎలా ఆదా చేస్తుంది?", "a": "ప్రీపేమెంట్ మీ బకాయి ఉన్న అసలును తగ్గిస్తుంది, దీని అర్థం మీరు రుణం యొక్క మిగిలిన జీవితకాలంలో తక్కువ వడ్డీ చెల్లిస్తారు, కాలపరిమితిని తగ్గిస్తుంది." },
-        { "q": "ఈఎంఐ తగ్గించడం లేదా కాలపరిమితి తగ్గించడం మంచిదా?", "a": "కాలపరిమితి తగ్గించడం దాదాపు ఎల్లప్పుడూ ఈఎంఐ తగ్గించడం కంటే ఎక్కువ వడ్డీని ఆదా చేస్తుంది. మీ ఈఎంఐని అలాగే ఉంచి రుణ కాలాన్ని తగ్గించుకోవడానికి ఎంచుకోండి." },
-        { "q": "నేను నా రుణాన్ని ఎప్పుడు రీఫైనాన్స్ చేయాలి?", "a": "మీరు మీ ప్రస్తుత రేటు కంటే గణనీయంగా తక్కువ (కనీసం 0.5-1%) వడ్డీ రేటుతో కొత్త రుణం పొందగలిగితే, అన్ని ఫీజులను పరిగణనలోకి తీసుకున్న తర్వాత రీఫైనాన్సింగ్‌ను పరిగణించండి." }
+        { "q": "What is loan optimization?", "a": "Loan optimization is the process of managing your loan through strategies like prepayment and refinancing to reduce interest costs and become debt-free faster." },
+        { "q": "How does prepayment save money?", "a": "Prepayment reduces your outstanding principal, which means you pay less interest over the remaining life of the loan, shortening the tenure." },
+        { "q": "Is it better to reduce EMI or tenure?", "a": "Reducing the tenure almost always saves more interest than reducing the EMI. Opt to keep your EMI the same and shorten the loan period." },
+        { "q": "When should I refinance my loan?", "a": "Consider refinancing if you can get a new loan with an interest rate significantly lower (at least 0.5-1%) than your current rate, after accounting for all fees." }
       ]
     },
     "conclusion": {
-      "title": "ముగింపు: మీ రుణంపై నియంత్రణ తీసుకోండి",
-      "body": "లోన్ ఆప్టిమైజేషన్ అనేది ఆర్థిక స్వేచ్ఛ వైపు మీ ప్రయాణాన్ని వేగవంతం చేయడానికి ఒక శక్తివంతమైన మార్గం. ప్రీపేమెంట్లు మరియు రీఫైనాన్సింగ్‌ను వ్యూహాత్మకంగా ఉపయోగించడం ద్వారా, మీరు వడ్డీపై గణనీయమైన మొత్తాన్ని ఆదా చేయవచ్చు మరియు మీ రుణ కాలాన్ని తగ్గించవచ్చు. విభిన్న దృశ్యాలను మోడల్ చేయడానికి మరియు మీ ఆర్థిక పరిస్థితికి ఉత్తమ మార్గాన్ని కనుగొనడానికి ఈ క్యాలిక్యులేటర్‌ను ఉపయోగించండి."
+      "title": "Conclusion: Take Control of Your Loan",
+      "body": "Loan optimization is a powerful way to accelerate your journey toward financial freedom. By strategically using prepayments and refinancing, you can save a significant amount on interest and shorten your loan tenure. Use this calculator to model different scenarios and find the best path for your financial situation."
     }
   },
   "retirement_corpus_calculator": {
-    "meta_title": "పదవీ విరమణ కార్పస్ క్యాలిక్యులేటర్ భారతదేశం 2025 | ఉచిత ఆన్‌లైన్ పదవీ విరమణ ప్రణాళిక సాధనం",
-    "meta_description": "ఉచిత పదవీ విరమణ కార్పస్ క్యాలిక్యులేటర్ భారతదేశం (2025). మీరు పదవీ విరమణ చేయడానికి ఎంత డబ్బు అవసరమో, అవసరమైన SIP, మరియు ఒత్తిడి లేని పదవీ విరమణ ప్రణాళికను ఈరోజే ప్లాన్ చేయండి.",
-    "og_description": "సౌకర్యవంతంగా పదవీ విరమణ చేయడానికి అవసరమైన కార్పస్ మరియు నెలవారీ SIPని అంచనా వేయండి. భారతదేశం-నిర్దిష్ట, NPS/PPF/EPF మార్గదర్శకత్వం కలిగి ఉంటుంది.",
-    "h1": "పదవీ విరమణ కార్పస్ క్యాలిక్యులేటర్ — భారతదేశంలో పదవీ విరమణ చేయడానికి మీకు ఎంత డబ్బు అవసరం (2025)",
-    "intro": "ఒక పదవీ విరమణ కార్పస్ అనేది మీరు పని చేయడం మానేసిన తర్వాత మిమ్మల్ని మీరు పోషించుకోవడానికి అవసరమైన మొత్తం డబ్బు. మా క్యాలిక్యులేటర్ మీకు ఒక సురక్షితమైన పదవీ విరమణ కోసం ఒక పూర్తి ప్రణాళికను రూపొందించడానికి ఒక సాధారణ సంఖ్యకు మించి వెళ్ళడానికి సహాయపడుతుంది.",
+    "meta_title": "Retirement Corpus Calculator India 2025 | Free Online Retirement Planning Tool",
+    "meta_description": "Free Retirement Corpus Calculator India (2025). Calculate how much money you need to retire, the SIP required, and plan a stress-free retirement today.",
+    "og_description": "Estimate the corpus and monthly SIP you need to retire comfortably. India-specific, with NPS/PPF/EPF guidance.",
+    "h1": "Retirement Corpus Calculator — How Much Money You Need to Retire in India (2025)",
+    "intro": "A retirement corpus is the total sum of money you'll need to support yourself after you stop working. Our calculator helps you go beyond a simple number to create a complete plan for a secure retirement.",
     "tool_section": {
-      "h2": "మీ పదవీ విరమణ కార్పస్‌ను లెక్కించండి (ఉచిత ఆన్‌లైన్ సాధనం)"
+      "h2": "Calculate Your Retirement Corpus (Free Online Tool)"
     },
-    "title": "పదవీ విరమణ కార్పస్ క్యాలిక్యులేటర్",
-    "form_description": "మీకు అవసరమైన మొత్తం కార్పస్‌ను లెక్కించడం ద్వారా మీ సౌకర్యవంతమైన పదవీ విరమణను ప్లాన్ చేయండి.",
-    "current_age_label": "ప్రస్తుత వయస్సు",
-    "retirement_age_label": "పదవీ విరమణ వయస్సు",
-    "monthly_expenses_label": "ప్రస్తుత నెలవారీ ఖర్చులు (₹)",
-    "current_savings_label": "ప్రస్తుత పదవీ విరమణ పొదుపు (₹)",
-    "inflation_rate_label": "ఆశించిన ద్రవ్యోల్బణం రేటు (% p.a.)",
-    "pre_retirement_returns_label": "ప్రీ-రిటైర్మెంట్ రిటర్న్స్ (% p.a.)",
-    "post_retirement_returns_label": "పోస్ట్-రిటైర్మెంట్ రిటర్న్స్ (% p.a.)",
-    "calculate_button": "కార్పస్‌ను లెక్కించండి",
-    "loading": "లెక్కిస్తోంది...",
-    "results_title": "మీ పదవీ విరమణ ప్రొజెక్షన్",
-    "required_corpus": "పదవీ విరమణ వద్ద అవసరమైన కార్పస్",
-    "corpus_shortfall": "కార్పస్ కొరత",
-    "corpus_surplus": "కార్పస్ మిగులు",
-    "monthly_sip": "అవసరమైన నెలవారీ SIP",
-    "view_chart": "చార్ట్ చూడండి",
-    "view_table": "పట్టిక చూడండి",
-    "export_csv": "CSVని ఎగుమతి చేయండి",
-    "table_year": "సంవత్సరం",
-    "table_age": "వయస్సు",
-    "table_total_corpus": "మొత్తం కార్పస్",
-    "age_label": "వయస్సు",
-    "amount_in_lakhs": "మొత్తం (లక్షలలో)",
+    "title": "Retirement Corpus Calculator",
+    "form_description": "Plan your comfortable retirement by calculating the total corpus you need.",
+    "current_age_label": "Current Age",
+    "retirement_age_label": "Retirement Age",
+    "monthly_expenses_label": "Current Monthly Expenses (₹)",
+    "current_savings_label": "Current Retirement Savings (₹)",
+    "inflation_rate_label": "Expected Inflation Rate (% p.a.)",
+    "pre_retirement_returns_label": "Pre-Retirement Returns (% p.a.)",
+    "post_retirement_returns_label": "Post-Retirement Returns (% p.a.)",
+    "calculate_button": "Calculate Corpus",
+    "loading": "Calculating...",
+    "results_title": "Your Retirement Projection",
+    "required_corpus": "Corpus Required at Retirement",
+    "corpus_shortfall": "Corpus Shortfall",
+    "corpus_surplus": "Corpus Surplus",
+    "monthly_sip": "Required Monthly SIP",
+    "view_chart": "View Chart",
+    "view_table": "View Table",
+    "export_csv": "Export CSV",
+    "table_year": "Year",
+    "table_age": "Age",
+    "table_total_corpus": "Total Corpus",
+    "age_label": "Age",
+    "amount_in_lakhs": "Amount (in Lakhs)",
     "how_it_works": {
-      "h2": "మీరు పదవీ విరమణ కార్పస్‌ను ఎలా లెక్కిస్తారు?",
-      "body": "<p>మేము మీకు ఒక ఖచ్చితమైన ప్రొజెక్షన్ ఇవ్వడానికి ప్రామాణిక ఆర్థిక సూత్రాలను ఉపయోగిస్తాము. ఇక్కడ మేము దానిని ఎలా చేస్తామో ఒక సరళీకృత వీక్షణ:</p><h3>పదవీ విరమణ వద్ద మీ ఖర్చుల భవిష్యత్ విలువ</h3><p>మేము మొదట మీరు అందించిన ద్రవ్యోల్బణం రేటును ఉపయోగించి, మీరు పదవీ విరమణ చేసే సమయానికి మీ ప్రస్తుత నెలవారీ ఖర్చులు ఎంత పెరుగుతాయో లెక్కిస్తాము. సూత్రం: <code>భవిష్యత్ వ్యయం = ప్రస్తుత వ్యయం × (1 + ద్రవ్యోల్బణం రేటు) ^ పదవీ విరమణకు సంవత్సరాలు</code>।</p><h3>పదవీ విరమణ వద్ద అవసరమైన కార్పస్ (యాన్యుటీ యొక్క PV)</h3><p>తరువాత, మీరు పదవీ విరమణ చేసే రోజున మీకు అవసరమైన మొత్తం ఏకమొత్తాన్ని మేము లెక్కిస్తాము. ఇది, పెట్టుబడి పెట్టినప్పుడు, మీ మిగిలిన జీవితానికి మీ ఖర్చులను కవర్ చేయడానికి తగినంత ఆదాయాన్ని ఉత్పత్తి చేసే మొత్తం. మేము దీని కోసం ఒక యాన్యుటీ యొక్క ప్రస్తుత విలువ సూత్రాన్ని ఉపయోగిస్తాము.</p><h3>అవసరమైన SIP లెక్కింపు</h3><p>చివరగా, మీ ప్రస్తుత పొదుపులు మరియు మీ లక్ష్య కార్పస్ మధ్య అంతరాన్ని పూరించడానికి అవసరమైన నెలవారీ క్రమబద్ధమైన పెట్టుబడి ప్రణాళిక (SIP)ని మేము నిర్ధారిస్తాము. మేము మీ ప్రస్తుత పొదుపుల భవిష్యత్ విలువను లెక్కిస్తాము మరియు కొరతను కనుగొనడానికి దాన్ని అవసరమైన కార్పస్ నుండి తీసివేస్తాము. ప్రతి నెల ప్రారంభంలో డిపాజిట్లు చేయబడతాయని ఊహించి, యాన్యుటీ డ్యూ సూత్రం యొక్క భవిష్యత్ విలువను ఉపయోగించి SIP లెక్కించబడుతుంది.</p>"
+      "h2": "How Do You Calculate a Retirement Corpus?",
+      "body": "<p>We use standard financial formulas to give you an accurate projection. Here's a simplified view of how we do it:</p><h3>Future Value of Your Expenses at Retirement</h3><p>We first calculate how much your current monthly expenses will grow to by the time you retire, using the inflation rate you provided. The formula is: <code>Future Expense = Current Expense × (1 + Inflation Rate) ^ Years to Retirement</code>.</p><h3>Required Corpus at Retirement (PV of an Annuity)</h3><p>Next, we calculate the total lump sum you'll need on the day you retire. This is the amount that, when invested, will generate enough income to cover your expenses for the rest of your life. We use a present value of an annuity formula for this.</p><h3>Required SIP Calculation</h3><p>Finally, we determine the monthly Systematic Investment Plan (SIP) needed to bridge the gap between your current savings and your target corpus. We calculate the future value of your existing savings and subtract it from the required corpus to find the shortfall. The SIP is calculated using the future value of an annuity due formula, assuming deposits are made at the beginning of each month.</p>"
     },
     "inputs_explained": {
-      "h2": "మీరు ఏ ఇన్‌పుట్‌లను అందించాలి & అవి ఎందుకు ముఖ్యమైనవి",
-      "body": "<p>ఒక ఖచ్చితమైన ఫలితం పొందడానికి, మీరు కొన్ని కీలక వివరాలను అందించాలి. మీ ప్రణాళిక కోసం ప్రతి ఒక్కటి ఏమిటో ఇక్కడ ఉంది:</p><ul><li><strong>మీ ప్రస్తుత & పదవీ విరమణ వయస్సు:</strong> ఇది మీ పెట్టుబడి హోరిజోన్‌ను నిర్వచిస్తుంది. మీకు ఎంత ఎక్కువ సమయం ఉంటే, చక్రవడ్డీ శక్తి మీకు అంత ఎక్కువగా పనిచేయగలదు, అంటే మీరు చిన్న పెట్టుబడులతో ప్రారంభించవచ్చు.</li><li><strong>మీ ప్రస్తుత నెలవారీ ఖర్చులు:</strong> ఇది మీ పదవీ విరమణ ప్రణాళిక యొక్క పునాది. రేపు మీకు ఏమి అవసరమో దాని గురించి ఒక ఖచ్చితమైన చిత్రాన్ని పొందడానికి ఈ రోజు మీరు ఏమి ఖర్చు చేస్తారో దాని గురించి వాస్తవికంగా ఉండండి.</li><li><strong>మీ ప్రస్తుత పొదుపులు:</strong> ఇది మీ ప్రారంభం! EPF, PPF, మ్యూచువల్ ఫండ్స్, లేదా ఇతర పెట్టుబడులలో మీరు ఇప్పటికే ఆదా చేసిన ఏదైనా డబ్బు భవిష్యత్తులో మీరు ఆదా చేయవలసిన మొత్తాన్ని తగ్గిస్తుంది.</li><li><strong>ద్రవ్యోల్బణం రేటు:</strong> ఇది మूक సంపద కిల్లర్. ద్రవ్యోల్బణం కాలక్రమేణా మీ డబ్బు కొనుగోలు శక్తిని తగ్గిస్తుంది. అధిక ద్రవ్యోల్బణం రేటు అంటే మీకు చాలా పెద్ద కార్పస్ అవసరం.</li><li><strong>ప్రీ-రిటైర్మెంట్ రిటర్న్స్:</strong> మీరు ఇంకా పనిచేస్తున్నప్పుడు మీ పెట్టుబడులపై మీరు ఆశించే వృద్ధి రేటు ఇది. అధిక రాబడి అంటే మీ డబ్బు మీ కోసం కష్టపడి పనిచేస్తుంది, మరియు మీరు చిన్న ఎస్ఐపிகளுடன் మీ లక్ష్యాన్ని చేరుకోవచ్చు.</li><li><strong>పోస్ట్-రిటైర్మెంట్ రిటర్న్స్:</strong> మీరు పదవీ విరమణ చేసిన తర్వాత మీ కార్పస్‌పై ఆశించే రాబడి ఇది. మేము ఇక్కడ ఒక మరింత సాంప్రదాయిక, మూలధన-పరిరక్షణ పోర్ట్‌ఫోలియోను ఊహిస్తాము.</li></ul>"
+      "h2": "What Inputs You Need to Provide & Why They Matter",
+      "body": "<p>To get an accurate result, you need to provide a few key details. Here's what each one means for your plan:</p><ul><li><strong>Your Current & Retirement Age:</strong> This defines your investment horizon. The more time you have, the more the power of compounding can work for you, meaning you can start with smaller investments.</li><li><strong>Your Current Monthly Expenses:</strong> This is the foundation of your retirement plan. Be realistic about what you spend today to get a precise picture of what you'll need tomorrow.</li><li><strong>Your Current Savings:</strong> This is your head start! Any money you've already saved in EPF, PPF, mutual funds, or other investments will reduce the amount you need to save in the future.</li><li><strong>Inflation Rate:</strong> This is the silent wealth killer. Inflation erodes the purchasing power of your money over time. A higher inflation rate means you'll need a much larger corpus.</li><li><strong>Pre-Retirement Returns:</strong> This is the growth rate you expect on your investments while you're still working. Higher returns mean your money works harder for you, and you can reach your goal with smaller SIPs.</li><li><strong>Post-Retirement Returns:</strong> This is the return you expect on your corpus after you've retired. We assume a more conservative, capital-preserving portfolio here.</li></ul>"
     },
     "worked_examples": {
-      "h2": "పని చేసిన ఉదాహరణలు — మీకు ఎంత కార్పస్ అవసరం?",
+      "h2": "Worked Examples — How Much Corpus Do You Need?",
       "scenario1": {
-        "title": "ఉదాహరణ 1: ₹50,000 నెలవారీ ఖర్చుల కోసం (30 సంవత్సరాల వయస్సులో)",
-        "body": "<strong>మీ పరిస్థితి:</strong> మీరు 30 ఏళ్లవారు, నేటి డబ్బులో నెలకు ₹50,000 జీవనశైలిని లక్ష్యంగా చేసుకున్నారు. మీరు ఇప్పటికే ₹5 లక్షలు ఆదా చేసారు.<br/><strong>మా లెక్కింపు:</strong> మీ జీవనశైలిని కొనసాగించడానికి, మీకు సుమారుగా <strong>₹3.28 కోట్ల</strong> పదవీ విరమణ కార్పస్ అవసరం. ఈ లక్ష్యాన్ని చేరుకోవడానికి, మీరు <strong>₹18,250</strong> నెలవారీ SIPని ప్రారంభించాలి."
+        "title": "Scenario 1: For ₹50,000 Monthly Expenses (at Age 30)",
+        "body": "<strong>Your Situation:</strong> You're 30, aiming for a lifestyle of ₹50,000/month in today's money. You have ₹5 lakh saved already.<br/><strong>Our Calculation:</strong> To sustain your lifestyle, you'll need a retirement corpus of about <strong>₹3.28 Crore</strong>. To reach this goal, you should start a monthly SIP of <strong>₹18,250</strong>."
       },
       "scenario2": {
-        "title": "ఉదాహరణ 2: ₹1 లక్ష నెలవారీ ఖర్చుల కోసం (35 సంవత్సరాల వయస్సులో)",
-        "body": "<strong>మీ పరిస్థితి:</strong> మీరు 35 ఏళ్లవారు, నెలకు ₹1 లక్ష జీవనశైలిని లక్ష్యంగా చేసుకున్నారు. మీ ప్రస్తుత పొదుపు ₹20 లక్షలు.<br/><strong>మా లెక్కింపు:</strong> మీకు సుమారు <strong>₹4.79 కోట్ల</strong> కార్పస్ అవసరం. దీన్ని సాధించడానికి, మీరు <strong>₹37,842</strong> నెలవారీ SIPని ప్రారంభించాలి."
+        "title": "Scenario 2: For ₹1 Lakh Monthly Expenses (at Age 35)",
+        "body": "<strong>Your Situation:</strong> You're 35, aiming for a lifestyle of ₹1 lakh/month. Your current savings are ₹20 lakh.<br/><strong>Our Calculation:</strong> You will need a corpus of approximately <strong>₹4.79 Crore</strong>. To achieve this, you should start a monthly SIP of <strong>₹37,842</strong>."
       },
       "scenario3": {
-        "title": "ఉదాహరణ 3: ₹30,000 నెలవారీ ఖర్చుల కోసం (25 సంవత్సరాల వయస్సులో)",
-        "body": "<strong>మీ పరిస్థితి:</strong> మీరు 25 ఏళ్ల ఫ్రీలాన్సర్, నెలవారీ ఖర్చులు ₹30,000 మరియు పొదుపు ₹2 లక్షలు.<br/><strong>మా లెక్కింపు:</strong> మీ లక్ష్య కార్పస్ <strong>₹3.04 కోట్లు</strong>. మీ సుదీర్ఘ పెట్టుబడి హోరిజోన్‌కు ధన్యవాదాలు, అక్కడికి చేరుకోవడానికి మీరు కేవలం <strong>₹7,725</strong> నెలవారీ SIPని ప్రారంభించాలి."
+        "title": "Scenario 3: For ₹30,000 Monthly Expenses (at Age 25)",
+        "body": "<strong>Your Situation:</strong> You're a 25-year-old freelancer with monthly expenses of ₹30,000 and savings of ₹2 lakh.<br/><strong>Our Calculation:</strong> Your target corpus is <strong>₹3.04 Crore</strong>. Thanks to your long investment horizon, you only need to start a monthly SIP of <strong>₹7,725</strong> to get there."
       }
     },
      "sensitivity_analysis": {
-      "title": "సున్నితత్వ విశ్లేషణ: అంచనాలు మీ లక్ష్యాన్ని ఎలా మారుస్తాయి",
-      "body": "మీ అంచనాలలో చిన్న మార్పులు మీ చివరి కార్పస్‌పై భారీ ప్రభావాన్ని చూపుతాయి. ఈ పట్టిక ద్రవ్యోల్బణం మరియు రాబడి రేట్లలో స్వల్ప సర్దుబాట్లతో మీ అవసరమైన కార్పస్ మరియు SIP ఎలా మారుతుందో చూపిస్తుంది."
+      "title": "Sensitivity Analysis: How Assumptions Change Your Goal",
+      "body": "Small changes in your assumptions can have a huge impact on your final corpus. This table shows how your required corpus and SIP change with slight adjustments in inflation and return rates."
     },
     "accumulation_strategy": {
-      "h2": "మీ పదవీ విరమణ కార్పస్‌ను ఎలా నిర్మించాలి (పెట్టుబడి వ్యూహాలు)",
-      "body": "<h3>మీ పెట్టుబడి మార్గాన్ని ఎంచుకోవడం: SIP vs. ఏకమొత్తం</h3><p>ఒక <strong>క్రమబద్ధమైన పెట్టుబడి ప్రణాళిక (SIP)</strong> అత్యంత క్రమశిక్షణతో కూడిన విధానం. మీరు క్రమం తప్పకుండా (ఉదా., నెలవారీ) ఒక స్థిర మొత్తాన్ని పెట్టుబడి పెడతారు, ఇది మీకు మార్కెట్ హెచ్చుతగ్గులను (రూపాయి-ధర సగటు) సగటు చేయడానికి మరియు చక్రవడ్డీ నుండి ప్రయోజనం పొందడానికి సహాయపడుతుంది. ఇది కాలక్రమేణా స్థిరంగా సంపదను నిర్మించడానికి సరైనది. మరింత వేగవంతమైన వృద్ధి కోసం, ఒక <strong>స్టెప్-అప్ SIP</strong>ను పరిగణించండి, ఇక్కడ మీరు మీ నెలవారీ పెట్టుబడి మొత్తాన్ని ఏటా పెంచుతారు, సాధారణంగా మీ జీతం పెరుగుదలకు అనుగుణంగా (ఉదా., 10% ద్వారా).</p><h3>వయస్సు వారీగా ఆస్తి కేటాయింపు</h3><p>మీ పెట్టుబడి వ్యూహం స్థిరంగా ఉండకూడదు. మీరు పదవీ విరమణకు దగ్గరవుతున్న కొద్దీ, మీ మూలధనాన్ని రక్షించుకోవడానికి మీరు అధిక-రిస్క్, అధిక-రాబడి ఆస్తుల నుండి సురక్షితమైన ఎంపికలకు క్రమంగా మారాలి.</p><ul><li><strong>మీ 20 & 30లలో:</strong> దూకుడుగా ఉండండి. ఈక్విటీలలో (మ్యూచువల్ ఫండ్స్ వంటివి) 70-80% ఉన్న ఒక పోర్ట్‌ఫోలియో దీర్ఘకాలంలో అధిక రాబడులను ఉత్పత్తి చేయగలదు.</li><li><strong>మీ 40లలో:</strong> మీ రిస్క్‌ను సమతుల్యం చేయడం ప్రారంభించండి. ఈక్విటీ మరియు డెట్ మధ్య 60:40 విభజన ఒక సాధారణ వ్యూహం.</li><li><strong>మీ 50లు మరియు ఆపై:</strong> మీ మూలధనాన్ని పరిరక్షించుకునే సమయం ఇది. మీ పోర్ట్‌ఫోలియోను డెట్-హెవీగా (స్థిర-ఆదాయ సాధనాల్లో 70-80%) మార్చండి.</li></ul><h3>మీ ప్రణాళికలో PPF, NPS, & EPF ఎలా సరిపోతాయి</h3><p>ఇవి భారతదేశంలో పదవీ విరమణ ప్రణాళిక యొక్క పునాది స్తంభాలు. ఈ సాధనాల్లో మీ ప్రస్తుత పొదుపులు మీకు ఒక భారీ ప్రారంభాన్ని ఇస్తాయి. మీ పోర్ట్‌ఫోలియో యొక్క డెట్/స్థిర-ఆదాయ భాగాన్ని రూపొందించడానికి వాటిని ఉపయోగించండి. అవి ఎలా పెరుగుతాయో చూడటానికి మా <a href='/{lang}/ppf-calculator' class='underline'>PPF క్యాలిక్యులేటర్</a> మరియు <a href='/{lang}/nps-calculator' class='underline'>NPS క్యాలిక్యులేటర్</a>ను అన్వేషించండి.</p>",
+      "h2": "How to Reach Your Retirement Corpus (Investment Strategies)",
+      "body": "<h3>Choosing Your Investment Path: SIP vs. Lump Sum</h3><p>A <strong>Systematic Investment Plan (SIP)</strong> is the most disciplined approach. You invest a fixed amount regularly (e.g., monthly), which helps you average out market fluctuations (rupee-cost averaging) and benefit from compounding. It's perfect for building wealth steadily over time. For even faster growth, consider a <strong>step-up SIP</strong>, where you increase your monthly investment amount annually, usually in line with your salary hike (e.g., by 10%).</p><h3>Asset Allocation by Age</h3><p>Your investment strategy shouldn't be static. As you get closer to retirement, you should gradually shift from high-risk, high-return assets to safer options to protect your capital.</p><ul><li><strong>In your 20s & 30s:</strong> Be aggressive. A portfolio with 70-80% in equities (like mutual funds) can generate higher returns over the long term.</li><li><strong>In your 40s:</strong> Start balancing your risk. A 60:40 split between equity and debt is a common strategy.</li><li><strong>In your 50s and beyond:</strong> It's time to preserve your capital. Shift your portfolio to be debt-heavy (70-80% in fixed-income instruments).</li></ul><h3>How PPF, NPS, & EPF Fit into Your Plan</h3><p>These are the foundation pillars of retirement planning in India. Your current savings in these instruments give you a massive head start. Use them to form the debt/fixed-income portion of your portfolio. Explore our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> and <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> to see how they grow.</p>",
       "sip_plans": {
-        "title": "మీ లక్ష్యాన్ని చేరుకోవడానికి నమూనా SIP ప్రణాళికలు",
-        "body": "ఈ పట్టిక వివిధ ప్రారంభ వయస్సుల నుండి సాధారణ పదవీ విరమణ కార్పస్ లక్ష్యాలను చేరుకోవడానికి అవసరమైన సుమారు నెలవారీ SIPని చూపిస్తుంది, ఇది 12% వార్షిక రాబడిని ఊహిస్తుంది."
+        "title": "Sample SIP Plans to Reach Your Goal",
+        "body": "This table shows the approximate monthly SIP required to reach common retirement corpus goals from different starting ages, assuming a 12% annual return."
        }
     },
     "deaccumulation_strategy": {
-      "h2": "డి-అక్యుములేషన్ దశ: మీ కార్పస్‌ను కొనసాగించడం",
-      "body": "<p>మీ గూడును నిర్మించడం కేవలం సగం యుద్ధం మాత్రమే. అసలు సవాలు దానిని కొనసాగించడం. పదవీ విరమణ చేసిన తర్వాత మీరు ఒక స్థిరమైన ఆదాయ ప్రవాహాన్ని ఎలా సృష్టించవచ్చో ఇక్కడ ఉంది.</p><h3>క్రమబద్ధమైన ఉపసంహరణ ప్రణాళిక (SWP)</h3><p>ఒక SWP మీకు ప్రతి నెలా మీ మ్యూచువల్ ఫండ్ పెట్టుబడుల నుండి ఒక స్థిర మొత్తాన్ని ఉపసంహరించుకోవడానికి అనుమతిస్తుంది, ঠিক ఒక పెన్షన్ లాగా. ఇది ఒక పన్ను-సమర్థవంతమైన పద్ధతి ఎందుకంటే మీ కార్పస్ మిగిలినది పెట్టుబడి చేయబడి, ద్రవ్యోల్బణాన్ని అధిగమించడానికి సహాయపడుతూ పెరుగుతూనే ఉంటుంది.</p><p><strong>ఉదాహరణ:</strong> ₹2 కోట్ల కార్పస్‌తో మరియు 7% వార్షిక రాబడితో, ₹1 లక్ష నెలవారీ SWP 30 సంవత్సరాలకు పైగా కొనసాగగలదు.</p><h3>యాన్యుటీ ప్రణాళికలు</h3><p>ఒక యాన్యుటీ అనేది ఒక బీమా ఉత్పత్తి, ఇక్కడ మీరు ఒక బీమా కంపెనీకి ఒక ఏకమొత్తం చెల్లిస్తారు, మరియు వారు మీకు జీవితాంతం ఒక స్థిర ఆదాయానికి హామీ ఇస్తారు.</p>"
+      "h2": "The De-accumulation Phase: Making Your Corpus Last",
+      "body": "<p>Building your nest egg is only half the battle. The real challenge is making it last. Here’s how you can create a steady income stream after you retire.</p><h3>Systematic Withdrawal Plan (SWP)</h3><p>An SWP allows you to withdraw a fixed amount from your mutual fund investments every month, just like a pension. It's a tax-efficient method because the rest of your corpus remains invested and continues to grow, helping you beat inflation.</p><p><strong>Example:</strong> With a ₹2 crore corpus and a 7% annual return, a ₹1 lakh monthly SWP can last for over 30 years.</p><h3>Annuity Plans</h3><p>An annuity is an insurance product where you pay a lump sum to an insurance company, and they guarantee you a fixed income for life.</p>"
     },
     "tax_rules": {
-      "h2": "సంచితం మరియు ఉపసంహరణ సమయంలో పన్ను నియమాలు",
-      "body": "మీ పదవీ విరమణ పొదుపులను పెంచుకోవడానికి పన్ను ప్రణాళిక చాలా ముఖ్యం. సంచిత దశలో, PPF, EPF, మరియు NPS (సెక్షన్ 80C మరియు 80CCD కింద) వంటి పన్ను-ఆదా సాధనాల ప్రయోజనాన్ని పొందండి. ఉపసంహరణ సమయంలో, వివిధ సాధనాల పన్ను ప్రభావాలను అర్థం చేసుకోండి. ఉదాహరణకు, PPF ఉపసంహరణలు పన్ను-రహితం, అయితే NPS ఉపసంహరణలు పాక్షికంగా పన్ను విధించబడతాయి, మరియు మ్యూచువల్ ఫండ్ లాభాలు మూలధన లాభాల పన్నును ఆకర్షిస్తాయి. సాధ్యమైనంత పన్ను-సమర్థవంతంగా ఉండటానికి మీ ఉపసంహరణలను ప్లాన్ చేయండి."
+      "h2": "Tax Rules During Accumulation and Withdrawal",
+      "body": "Tax planning is crucial to maximizing your retirement savings. During the accumulation phase, take advantage of tax-saving instruments like PPF, EPF, and NPS (under Section 80C and 80CCD). During withdrawal, understand the tax implications of different instruments. For example, PPF withdrawals are tax-free, while NPS withdrawals are partially taxable, and mutual fund gains attract capital gains tax. Plan your withdrawals to be as tax-efficient as possible."
     },
-    "faq_title": "తరచుగా అడిగే ప్రశ్నలు",
+    "faq_title": "Frequently Asked Questions",
     "faqs": [
-      { "question": "మీరు పదవీ విరమణ కార్పస్‌ను ఎలా లెక్కిస్తారు?", "answer": "మేము ద్రవ్యోల్బణాన్ని ఉపయోగించి మీ భవిష్యత్ నెలవారీ ఖర్చులను అంచనా వేస్తాము, పదవీ విరమణలో మీకు అవసరమైన యాన్యుటీ యొక్క ప్రస్తుత విలువను (PV) లెక్కిస్తాము, మరియు లోటును కనుగొనడానికి ప్రస్తుత పొదుపుల భవిష్యత్ విలువను తీసివేస్తాము." },
-      { "question": "భారతీయ పదవీ విరమణ ప్రణాళిక కోసం నేను ఏ ద్రవ్యోల్బణం రేటును ఉపయోగించాలి?", "answer": "చాలా మంది ప్లానర్లు భారతదేశానికి 5-7% దీర్ఘకాలిక డిఫాల్ట్‌ను ఉపయోగిస్తారు; 6% సాధారణం. సంప్రదాయ ఆరోగ్య సంరక్షణ లేదా సుదీర్ఘ క్షితిజ సమాంతర అంచనాల కోసం అధిక రేట్లను ఉపయోగించండి." },
-      { "question": "నేను నా పదవీ విరమణ కార్పస్‌లో EPF, PPF మరియు NPSని చేర్చవచ్చా?", "answer": "అవును — అవసరమైన అదనపు SIPని తగ్గించడానికి మీ ప్రస్తుత పొదుపు ఇన్‌పుట్‌లో అన్ని ద్రవ మరియు పెన్షన్ ఆస్తులను (EPF, PPF, NPS, మ్యూచువల్ ఫండ్‌లు, బ్యాంకు FD) చేర్చండి." },
-      { "question": "ఒక 30 ఏళ్ల వ్యక్తి సౌకర్యవంతంగా పదవీ విరమణ చేయడానికి నెలవారీ ఎంత ఆదా చేయాలి?", "answer": "ఇది లక్ష్య కార్పస్ మరియు అంచనాలపై ఆధారపడి ఉంటుంది. ఒక స్థూల మార్గదర్శిగా, ₹15,000–₹25,000/నెల పొదుపు 10-12% రాబడితో 60 నాటికి బహుళ-కోట్ల కార్పస్‌ను నిర్మించగలదు. ఖచ్చితమైన సంఖ్యల కోసం క్యాలిక్యులేటర్‌ను ఉపయోగించండి." },
-      { "question": "నా పదవీ విరమణ లక్ష్యాన్ని చేరుకోవడానికి నేను SIP లేదా ఏకమొత్తం ద్వారా పెట్టుబడి పెట్టాలా?", "answer": "క్రమశిక్షణతో కూడిన పెట్టుబడి మరియు రూపాయి-ధర సగటు కోసం SIP సిఫార్సు చేయబడింది; ఏకమొత్తం సుదీర్ఘ బుల్ మార్కెట్లలో అధిక పనితీరును కనబరచగలదు కానీ అధిక టైమింగ్ రిస్క్ కలిగి ఉంటుంది. ఒక మిశ్రమ విధానం చాలా మందికి పనిచేస్తుంది." },
-      { "question": "భారతదేశంలో పదవీ విరమణ సమయంలో సురక్షితమైన ఉపసంహరణ రేటు ఏమిటి?", "answer": "ఒక-పరిమాణం-అందరికీ-సరిపోదు; చాలా మంది సలహాదారులు 3-4% ప్రారంభ ఉపసంహరణ నియమాన్ని (ద్రవ్యోల్బణం కోసం సర్దుబాటు చేయబడింది) ఉపయోగిస్తారు. దీర్ఘాయువు లేదా ఆరోగ్య సంరక్షణ ఖర్చులు అనిశ్చితంగా ఉంటే సంప్రదాయ ఉపసంహరణ రేట్లను పరిగణించండి." },
-      { "question": "ఆరోగ్య సంరక్షణ ఖర్చులు పదవీ విరమణ కార్పస్‌ను ఎలా ప్రభావితం చేస్తాయి?", "answer": "ఆరోగ్య సంరక్షణ ద్రవ్యోల్బణం తరచుగా సాధారణ ద్రవ్యోల్బణాన్ని మించిపోతుంది. మీ కార్పస్‌ను తక్కువ అంచనా వేయకుండా ఉండటానికి ఒక ప్రత్యేక ఆరోగ్య సంరక్షణ బఫర్‌ను జోడించండి లేదా వైద్య ఖర్చుల కోసం అధిక ద్రవ్యోల్బణాన్ని మోడల్ చేయండి." },
-      { "question": "పన్నులు నా పదవీ విరమణ ఉపసంహరణలను ఎలా ప్రభావితం చేస్తాయి?", "answer": "పన్ను చికిత్స పరికరం మరియు ఉపసంహరణ రకాన్ని బట్టి మారుతుంది. ఇపిఎఫ్/పిపిఎఫ్‌కు నిర్దిష్ట నియమాలు ఉన్నాయి; మ్యూచువల్ ఫండ్ ఉపసంహరణలు పరిమితుల పైన ఎల్‌టిసిజి పన్నును ఆకర్షించవచ్చు. కార్పస్‌ను పరిరక్షించడానికి పన్ను-సమర్థవంతంగా ఉపసంహరణలను ప్లాన్ చేయండి." },
-      { "question": "నా పదవీ విరమణ కార్పస్ ఎంతకాలం కొనసాగాలి?", "answer": "సాధారణంగా ప్లానర్లు 85-90 సంవత్సరాల ఆయుర్దాయం అంచనా వేస్తారు. కుటుంబ దీర్ఘాయువు ఎక్కువగా ఉంటే లేదా మీరు ముందుగానే పదవీ విరమణ చేస్తే సంప్రదాయ దీర్ఘాయువు అంచనాలను ఉపయోగించండి." },
-      { "question": "క్యాలిక్యులేటర్ పదవీ విరమణ తర్వాత రాబడులను పరిగణనలోకి తీసుకుంటుందా?", "answer": "అవును — కార్పస్ ఎలా పెట్టుబడి పెట్టబడుతుందో మరియు ఉపసంహరణలను ఎలా కొనసాగిస్తుందో మోడల్ చేయడానికి మీరు ఒక తక్కువ, సంప్రదాయ పోస్ట్-రిటైర్మెంట్ రిటర్న్ (ఉదా., 6-8%) సెట్ చేయవచ్చు." },
-      { "question": "నేను ఈ క్యాలిక్యులేటర్‌తో ముందుగానే పదవీ విరమణ (60 కంటే ముందు) కోసం ప్లాన్ చేయవచ్చా?", "answer": "అవును — మీ కోరుకున్న పదవీ విరమణ వయస్సును ముందుగానే సెట్ చేయండి మరియు పెట్టుబడి హోరిజోన్ మరియు SIPని తదనుగుణంగా పెంచండి. సుదీర్ఘ పదవీ విరమణ తర్వాత సంవత్సరాలు మరియు అధిక ఆరోగ్య సంరక్షణ ఖర్చులను పరిగణనలోకి తీసుకోండి." },
-      { "question": "ఒక లక్ష్య కార్పస్‌ను అంచనా వేయడానికి సరళమైన థంబ్ రూల్ ఏమిటి?", "answer": "ఒక సాధారణ నియమం మీ ప్రస్తుత వార్షిక ఖర్చుల 25× (4% వాస్తవ ఉపసంహరణ కోసం), కానీ ద్రవ్యోల్బణం, రాబడులు మరియు ప్రస్తుత పొదుపులతో దీన్ని మెరుగుపరచడానికి క్యాలిక్యులేటర్‌ను ఉపయోగించండి." }
+      { "question": "How do you calculate a retirement corpus?", "answer": "We project your future monthly expenses using inflation, compute the present value (PV) of the annuity you’ll need at retirement, and subtract the future value of existing savings to find the shortfall." },
+      { "question": "What inflation rate should I use for Indian retirement planning?", "answer": "Many planners use a long-term default of 5–7% for India; 6% is common. Use higher rates for conservative healthcare or long horizon assumptions." },
+      { "question": "Can I include EPF, PPF and NPS in my retirement corpus?", "answer": "Yes — include all liquid and pension assets (EPF, PPF, NPS, mutual funds, bank FD) in your Current Savings input to lower the additional SIP needed." },
+      { "question": "How much should a 30-year-old save monthly to retire comfortably?", "answer": "It depends on the target corpus and assumptions. As a rough guide, saving ₹15,000–₹25,000/month can build a multi-crore corpus by 60 at 10–12% returns. Use the calculator for precise numbers." },
+      { "question": "Should I invest by SIP or lump sum to reach my retirement goal?", "answer": "SIP is recommended for disciplined investing and rupee-cost averaging; a lump sum can outperform in long bull markets but has a higher timing risk. A blended approach works for many." },
+      { "question": "What is a safe withdrawal rate in India during retirement?", "answer": "There is no one-size-fits-all; many advisors use a 3–4% initial withdrawal rule (adjusted for inflation). Consider conservative withdrawal rates if longevity or healthcare costs are uncertain." },
+      { "question": "How do healthcare costs affect the retirement corpus?", "answer": "Healthcare inflation often exceeds general inflation. Add a dedicated healthcare buffer or model higher inflation for medical costs to avoid underestimating your corpus." },
+      { "question": "How will taxes impact my retirement withdrawals?", "answer": "Tax treatment varies by instrument and withdrawal type. EPF/PPF have specific rules; mutual fund withdrawals may attract LTCG tax above thresholds. Plan withdrawals tax-efficiently to preserve the corpus." },
+      { "question": "How long should my retirement corpus last?", "answer": "Typically planners assume a life expectancy of 85–90 years. Use conservative longevity assumptions if family longevity is high or you retire early." },
+      { "question": "Does the calculator account for post-retirement returns?", "answer": "Yes — you can set a lower, conservative post-retirement return (e.g., 6–8%) to model how the corpus will be invested and sustain withdrawals." },
+      { "question": "Can I plan for early retirement (before 60) with this calculator?", "answer": "Yes — set your desired retirement age earlier and increase the investment horizon and SIP accordingly. Factor in longer post-retirement years and higher healthcare costs." },
+      { "question": "What is the simplest rule of thumb to estimate a target corpus?", "answer": "A common rule is 25× your current annual expenses (for a 4% real withdrawal), but use the calculator to refine this with inflation, returns, and existing savings." }
     ],
     "next_steps": {
-      "h2": "మీ ప్రణాళికను డౌన్‌లోడ్ చేయండి & చర్య తీసుకోండి",
-      "cta1_title": "మీ పన్నులు ఫైల్ చేయండి",
-      "cta1_desc": "మీ ఆదాయపు పన్ను రిటర్న్‌లను సులభంగా ఫైల్ చేయడానికి ClearTaxను ఉపయోగించండి.",
-      "cta2_title": "మరిన్ని క్యాలిక్యులేటర్లను అన్వేషించండి",
-      "cta2_desc": "మీ ఆర్థిక ప్రణాళికకు సహాయపడటానికి మరిన్ని సాధనాలను కనుగొనండి."
+      "h2": "Download Your Plan & Take Action",
+      "cta1_title": "File your taxes",
+      "cta1_desc": "Use ClearTax to file your income tax returns easily.",
+      "cta2_title": "Explore More Calculators",
+      "cta2_desc": "Find more tools to help with your financial planning."
     },
     "conclusion": {
-      "title": "ముగింపు: ఒక సురక్షితమైన పదవీ విరమణకు మీ మార్గం",
-      "body": "పదవీ విరమణ ప్రణాళిక ఒక మారథాన్, స్ప్రింట్ కాదు. ముఖ్యమైనది ముందుగానే ప్రారంభించడం, స్థిరంగా పెట్టుబడి పెట్టడం, మరియు మార్గంలో సమాచారంతో కూడిన నిర్ణయాలు తీసుకోవడం. ట్రాక్‌లో ఉండటానికి మరియు మీరు అర్హులైన ఆర్థిక భవిష్యత్తును నిర్మించడానికి ఈ క్యాలిక్యులేటర్‌ను మీ గైడ్‌గా ఉపయోగించండి."
+      "title": "Conclusion: Your Path to a Secure Retirement",
+      "body": "Retirement planning is a marathon, not a sprint. The key is to start early, invest consistently, and make informed decisions along the way. Use this calculator as your guide to stay on track and build the financial future you deserve."
     },
     "disclaimer": {
-      "title": "నిరాకరణ",
-      "body": "ఈ క్యాలిక్యులేటర్ ఒక ఉదాహరణ సాధనం మరియు ఆర్థిక సలహాగా పరిగణించరాదు. మార్కెట్ రాబడులకు హామీ లేదు. ఏదైనా పెట్టుబడి నిర్ణయాలు తీసుకునే ముందు ఒక అర్హతగల ఆర్థిక సలహాదారుని సంప్రదించండి."
+      "title": "Disclaimer",
+      "body": "This calculator is an illustrative tool and should not be considered financial advice. Market returns are not guaranteed. Consult a qualified financial advisor before making any investment decisions."
     },
     "methodology": {
-      "h2": "పద్ధతి",
-      "body": "క్యాలిక్యులేటర్ ప్రామాణిక సమయం-విలువ-డబ్బు సూత్రాలను ఉపయోగిస్తుంది. అవసరమైన కార్పస్ పెరుగుతున్న యాన్యుటీ యొక్క ప్రస్తుత విలువగా లెక్కించబడుతుంది, మరియు SIP ఒక సిరీస్ సూత్రం యొక్క భవిష్యత్ విలువను ఉపయోగించి లెక్కించబడుతుంది. అన్ని లెక్కలు ఉదాహరణ ప్రయోజనాల కోసం మాత్రమే."
+      "h2": "Methodology",
+      "body": "The calculator uses standard time-value-of-money formulas. The required corpus is calculated as the present value of a growing annuity, and the SIP is calculated using the future value of a series formula. All calculations are for illustrative purposes only."
     }
   },
   "mutual_fund_overlap_calculator": {
-    "meta_title": "మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ క్యాలిక్యులేటర్ — ఫండ్‌ల మధ్య ఓవర్‌ల్యాప్‌ను తనిఖీ చేయండి (భారతదేశం, 2025)",
-    "meta_description": "భారతీయ ఫండ్‌ల కోసం ఉచిత మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ క్యాలిక్యులేటర్ (2025). పోర్ట్‌ఫోలియో ఓవర్‌ల్యాప్ శాతం మరియు సాధారణ స్టాక్‌లను చూడటానికి 2-5 ఫండ్‌లను పక్కపక్కనే పోల్చండి. సమాచారంతో కూడిన వైవిధ్యభరిత నిర్ణయాలు తీసుకోండి.",
-    "h1": "మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ క్యాలిక్యులేటర్ భారతదేశం (2025)",
+    "meta_title": "Mutual Fund Overlap Calculator — Check for Overlap in Funds (India, 2025)",
+    "meta_description": "Free Mutual Fund Overlap Calculator (2025) for Indian funds. Compare up to 5 funds side-by-side to see portfolio overlap percentage and common stocks. Make informed diversification decisions.",
+    "h1": "Mutual Fund Overlap Calculator India (2025)",
     "hero": {
-      "subtitle": "మీ మ్యూచువల్ ఫండ్‌లు రహస్యంగా ఒకేలా ఉన్నాయా? మీ నిజమైన పోర్ట్‌ఫోలియో ఓవర్‌ల్యాప్ మరియు అగ్ర సాధారణ హోల్డింగ్‌లను తక్షణమే చూడటానికి ఐదు భారతీయ ఈక్విటీ ఫండ్‌ల వరకు పోల్చండి."
+      "subtitle": "Are your mutual funds secretly identical? Compare up to five Indian equity funds to instantly see your true portfolio overlap and top common holdings."
     },
     "tool": {
-      "title": "మ్యూచువల్ ఫండ్ హోల్డింగ్‌లను పోల్చండి",
-      "description": "ప్రారంభించడానికి కనీసం రెండు ఫండ్‌లను ఎంచుకోండి.",
-      "add_fund": "మరొక ఫండ్‌ను జోడించండి",
-      "export_csv": "CSVని ఎగుమతి చేయండి",
-      "copy_summary": "సారాంశాన్ని కాపీ చేయండి"
+      "title": "Compare Mutual Fund Holdings",
+      "description": "Select at least two funds to begin.",
+      "add_fund": "Add Another Fund",
+      "export_csv": "Export CSV",
+      "copy_summary": "Copy Summary"
     },
     "what_is_overlap": {
-      "h2": "మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ అంటే ఏమిటి & అది ఎందుకు ముఖ్యం?",
-      "body": "మీ పోర్ట్‌ఫోలియోలోని రెండు లేదా అంతకంటే ఎక్కువ ఫండ్‌లు ఒకే స్టాక్‌లను కలిగి ఉన్నప్పుడు మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ సంభవిస్తుంది. కొంత ఓవర్‌ల్యాప్ సాధారణమైనప్పటికీ (ముఖ్యంగా లార్జ్-క్యాప్ ఫండ్‌లలో), అధిక ఓవర్‌ల్యాప్ <strong>అతి-గాఢత</strong> మరియు <strong>‘వైవిధ్యభరిత’</strong>కి దారితీయవచ్చు — ఇక్కడ మీరు వైవిధ్యభరితంగా ఉన్నారని అనుకుంటారు కానీ వాస్తవానికి అవే అంతర్లీన ఆస్తులను కలిగి ఉంటారు. ఈ క్యాలిక్యులేటర్ ఆ దాచిన ప్రమాదాన్ని వెలికితీయడానికి మీకు సహాయపడుతుంది."
+      "h2": "What is Mutual Fund Overlap & Why Does it Matter?",
+      "body": "Mutual fund overlap occurs when two or more funds in your portfolio hold the same stocks. While some overlap is normal (especially in large-cap funds), high overlap can lead to <strong>over-concentration</strong> and <strong>‘diworsification’</strong> — where you think you're diversified but are actually holding the same underlying assets. This calculator helps you uncover that hidden risk."
     },
     "how_it_works": {
-      "h2": "మా మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ క్యాలిక్యులేటర్ ఎలా పనిచేస్తుంది",
-      "body": "మా సాధనం మీరు ఎంచుకున్న ఫండ్‌ల హోల్డింగ్‌లను పోల్చి <strong>భారిత ఓవర్‌ల్యాప్</strong>ను లెక్కిస్తుంది. ఈ మెట్రిక్ మీ పోర్ట్‌ఫోలియోలో ఎంత శాతం రెండు ఫండ్‌ల మధ్య నకిలీ చేయబడిందో చెబుతుంది, ప్రతి సాధారణ స్టాక్ కోసం చిన్న బరువుల ఆధారంగా.<br/><br/><strong>ఉదాహరణ:</strong> ఫండ్ A ఐసిఐసిఐ బ్యాంక్‌లో 5% మరియు ఫండ్ B 6% కలిగి ఉంటే, ఆ స్టాక్ నుండి ఓవర్‌ల్యాప్ కంట్రిబ్యూషన్ 5% (రెండింటిలో కనిష్టం). మేము మొత్తం భారిత ఓవర్‌ల్యాప్ పొందడానికి అన్ని సాధారణ స్టాక్‌ల కోసం దీన్ని కూడతాము."
+      "h2": "How Our Mutual Fund Overlap Calculator Works",
+      "body": "Our tool compares the holdings of your selected funds and calculates the <strong>weighted overlap</strong>. This metric tells you what percentage of your portfolio is duplicated between two funds, based on the smaller weight for each common stock.<br/><br/><strong>Example:</strong> If Fund A holds 5% in ICICI Bank and Fund B holds 6%, the overlap contribution from that stock is 5% (the minimum of the two). We sum this for all common stocks to get the total weighted overlap."
     },
     "live_example": {
-      "h2": "లైవ్ ఉదాహరణ: ఐసిఐసిఐ ప్రూ బ్లూచిప్ vs హెచ్‌డిఎఫ్‌సి టాప్ 100",
-      "intro": "ఇక్కడ ఒక సాధారణ పోలికను చూపించే ఒక ముందు-రెండర్ చేయబడిన ఉదాహరణ. ఫండ్‌లలో <strong>27.02%</strong> భారిత ఓవర్‌ల్యాప్ ఉంది.",
-      "result_summary": "ఇది <strong>మధ్యస్థ</strong> స్థాయి ఓవర్‌ల్యాప్, ఇది ఒకే విధమైన బెంచ్‌మార్క్‌లను ట్రాక్ చేసే లార్జ్-క్యాప్ ఫండ్‌లకు సాధారణం. మొదటి 5 సాధారణ స్టాక్‌లు మాత్రమే ఈ ఓవర్‌ల్యాప్‌కు 18% కంటే ఎక్కువ దోహదం చేస్తాయి.",
-      "top_stocks_title": "టాప్ 5 ఓవర్‌ల్యాపింగ్ స్టాక్‌లు",
+      "h2": "Live Example: ICICI Pru Bluechip vs HDFC Top 100",
+      "intro": "Here is a pre-rendered example showing a typical comparison. The funds have a <strong>27.02%</strong> weighted overlap.",
+      "result_summary": "This is a <strong>Moderate</strong> level of overlap, common for large-cap funds tracking similar benchmarks. The top 5 common stocks alone contribute over 18% to this overlap.",
+      "top_stocks_title": "Top 5 Overlapping Stocks",
       "top_stocks": [
-        { "name": "ఐసిఐసిఐ బ్యాంక్", "weight": "5.21%" },
-        { "name": "ఇన్ఫోసిస్", "weight": "4.67%" },
-        { "name": "యాక్సిస్ బ్యాంక్", "weight": "2.34%" },
-        { "name": "భారతీ ఎయిర్‌టెల్", "weight": "3.12%" },
-        { "name": "స్టేట్ బ్యాంక్ ఆఫ్ ఇండియా", "weight": "2.98%" }
+        { "name": "ICICI Bank", "weight": "5.21%" },
+        { "name": "Infosys", "weight": "4.67%" },
+        { "name": "Axis Bank", "weight": "2.34%" },
+        { "name": "Bharti Airtel", "weight": "3.12%" },
+        { "name": "State Bank of India", "weight": "2.98%" }
       ]
     },
     "interpreting_results": {
-      "h2": "మీ ఓవర్‌ల్యాప్ స్కోర్‌ను ఎలా అన్వయించాలి",
-      "body": "<ul><li><strong>తక్కువ (0-15%):</strong> మంచి వైవిధ్యం. ఫండ్‌లకు విభిన్న వ్యూహాలు ఉన్నాయి.</li><li><strong>మధ్యస్థం (15-30%):</strong> ఒకే వర్గంలోని ఫండ్‌లకు సాధారణం (ఉదా., లార్జ్-క్యాప్). మీరు భాగస్వామ్య బహిర్గతంతో సౌకర్యవంతంగా ఉన్నారని నిర్ధారించుకోవడానికి సమీక్షించండి.</li><li><strong>అధికం (30-50%):</strong> ముఖ్యమైన ఓవర్‌ల్యాప్. మీరు ఒకే స్టాక్‌ల కోసం రెండు సెట్ల ఫీజులు చెల్లిస్తూ ఉండవచ్చు. ఏకీకృతం చేయడాన్ని పరిగణించండి.</li><li><strong>చాలా అధికం (>50%):</strong> ఫండ్‌లు ఆచరణాత్మకంగా క్లోన్‌లు. వైవిధ్యాన్ని మెరుగుపరచడానికి ఒకదానిని భర్తీ చేయడం చాలా సిఫార్సు చేయబడింది.</li></ul>"
+      "h2": "How to Interpret Your Overlap Score",
+      "body": "<ul><li><strong>Low (0-15%):</strong> Good diversification. The funds have distinct strategies.</li><li><strong>Moderate (15-30%):</strong> Common for funds in the same category (e.g., large-cap). Review to ensure you're comfortable with the shared exposure.</li><li><strong>High (30-50%):</strong> Significant overlap. You might be paying two sets of fees for the same stocks. Consider consolidating.</li><li><strong>Very High (>50%):</strong> The funds are practically clones. Replacing one to improve diversification is highly recommended.</li></ul>"
     },
     "what_to_do": {
-      "h2": "మీకు అధిక ఓవర్‌ల్యాప్ ఉంటే ఏమి చేయాలి",
-      "body": "మీకు అధిక ఓవర్‌ల్యాప్ కనిపిస్తే, భయపడవద్దు. ఫండ్‌లలో ఒకదానిని వేరే వ్యూహం లేదా మార్కెట్-క్యాప్ ఫోకస్‌తో ఉన్న మరొకదానితో భర్తీ చేయడాన్ని పరిగణించండి. ఉదాహరణకు, రెండు లార్జ్-క్యాప్ ఫండ్‌లు ఓవర్‌ల్యాప్ అయితే, మీరు నిజమైన వైవిధ్యాన్ని సాధించడానికి ఒకదానిని మిడ్-క్యాప్ లేదా సెక్టార్-నిర్దిష్ట ఫండ్‌గా మార్చవచ్చు."
+      "h2": "What to Do If You Have High Overlap",
+      "body": "If you find high overlap, don't panic. Consider replacing one of the funds with another that has a different strategy or market-cap focus. For instance, if two large-cap funds overlap, you could switch one to a mid-cap or sector-specific fund to achieve true diversification."
     },
     "faq": {
-      "h2": "తరచుగా అడిగే ప్రశ్నలు",
+      "h2": "Frequently Asked Questions",
       "faqs": [
-        { "q": "మ్యూచువల్ ఫండ్ ఓవర్‌ల్యాప్ ఎలా లెక్కించబడుతుంది?", "a": "రెండు ఫండ్‌లు కలిగి ఉన్న ప్రతి సాధారణ స్టాక్ యొక్క కనీస బరువును కూడటం ద్వారా మేము భారిత ఓవర్‌ల్యాప్‌ను లెక్కిస్తాము. సూత్రం: అన్ని సాధారణ స్టాక్‌ల కోసం Σ min(Weight_Fund_A, Weight_Fund_B)." },
-        { "q": "మ్యూచువల్ ఫండ్‌లలో 30% ఓవర్‌ల్యాప్ చెడ్డదా?", "a": "30% ఓవర్‌ల్యాప్ అధికంగా పరిగణించబడుతుంది. 'చెడ్డది' అని అవసరం లేనప్పటికీ, మీరు ఒకే విధమైన హోల్డింగ్‌ల కోసం రెండు వ్యయ నిష్పత్తులను చెల్లిస్తూ ఉండవచ్చని ఇది సూచిస్తుంది, ఇది వైవిధ్యాన్ని తగ్గిస్తుంది. మీ పోర్ట్‌ఫోలియోకు రెండు ఫండ్‌లు అవసరమా అని సమీక్షించడం విలువ." },
-        { "q": "మీరు మ్యూచువల్ ఫండ్‌లలో ఓవర్‌ల్యాప్‌ను ఎలా తనిఖీ చేస్తారు?", "a": "మా క్యాలిక్యులేటర్‌లోని డ్రాప్‌డౌన్ మెనూల నుండి 2 నుండి 5 భారతీయ ఈక్విటీ ఫండ్‌లను ఎంచుకోండి. సాధనం స్వయంచాలకంగా తాజా హోల్డింగ్స్ డేటాను పొందుతుంది మరియు మీ కోసం జతవారీ ఓవర్‌ల్యాప్‌ను లెక్కిస్తుంది." },
-        { "q": "ఏ రకమైన ఫండ్‌లలో ఎక్కువ ఓవర్‌ల్యాప్ ఉంటుంది?", "a": "లార్జ్-క్యాప్ మరియు ఇండెక్స్ ఫండ్‌లలో ఎక్కువ ఓవర్‌ల్యాప్ ఉంటుంది ఎందుకంటే అవి ఒకే విధమైన బెంచ్‌మార్క్‌లను (నిఫ్టీ 50 లేదా సెన్సెక్స్ వంటివి) ట్రాక్ చేస్తాయి మరియు అగ్ర బ్లూ-చిప్ కంపెనీల అదే సెట్‌లో పెట్టుబడి పెడతాయి." }
+        { "q": "How is mutual fund overlap calculated?", "a": "We calculate weighted overlap by summing the minimum weight of each common stock held by two funds. The formula is: Σ min(Weight_Fund_A, Weight_Fund_B) for all common stocks." },
+        { "q": "Is 30% overlap in mutual funds bad?", "a": "A 30% overlap is considered high. While not necessarily 'bad', it suggests you might be paying two expense ratios for very similar holdings, which reduces diversification. It's worth reviewing if both funds are needed for your portfolio." },
+        { "q": "How do you check for overlap in mutual funds?", "a": "Simply select 2 to 5 Indian equity funds from the dropdown menus in our calculator. The tool will automatically fetch the latest holdings data and calculate the pairwise overlap for you." },
+        { "q": "What type of funds have the most overlap?", "a": "Large-cap and index funds tend to have the most overlap because they track similar benchmarks (like the NIFTY 50 or Sensex) and invest in the same set of top blue-chip companies." }
       ]
     },
     "methodology": {
-      "h2": "డేటా & పద్ధతి",
-      "body": "<p><strong>డేటా మూలం:</strong> మా హోల్డింగ్స్ డేటా పబ్లిక్‌గా అందుబాటులో ఉన్న పథక పత్రాల నుండి తీసుకోబడింది మరియు కాలానుగుణంగా నవీకరించబడుతుంది. మేము ఖచ్చితత్వం కోసం ప్రయత్నిస్తున్నప్పుడు, మేము దానిని హామీ ఇవ్వలేము. ఎల్లప్పుడూ అధికారిక AMC ఫ్యాక్ట్‌షీట్‌లతో ధృవీకరించండి. <strong>చివరిగా నవీకరించబడింది: ఆగస్టు 2025।</strong></p><p><strong>మ్యాచింగ్ తర్కం:</strong> హోల్డింగ్స్ మొదట వాటి స్టాక్ టిక్కర్ ద్వారా (ఉదా. 'RELIANCE') సరిపోల్చబడతాయి. టిక్కర్ అందుబాటులో లేకపోతే, మేము ఒక సాధారణీకరించిన కంపెనీ పేరును (ఉదా. 'reliance industries' 'Ltd', 'Inc', మొదలైనవి తీసివేసిన తర్వాత) ఉపయోగిస్తాము. 'క్యాష్', 'ట్రైపార్టీ రెపో', లేదా 'నెట్ రిసీవబుల్స్' వంటి నాన్-ఈక్విటీ హోల్డింగ్‌లు సాధారణ పదాల కోసం ఒక రెజెక్స్ మ్యాచ్ ఆధారంగా లెక్కింపు నుండి మినహాయించబడతాయి.</p><p><strong>పని చేసిన ఉదాహరణ (భారిత ఓవర్‌ల్యాప్):</strong></p><p>భారిత ఓవర్‌ల్యాప్ = అన్ని సాధారణ స్టాక్‌ల కోసం Σ min(ఫండ్ Aలో బరువు, ఫండ్ Bలో బరువు).</p><div class='overflow-x-auto'><table class='w-full text-sm my-4'><thead><tr class='border-b'><th class='text-left p-2'>స్టాక్</th><th class='text-right p-2'>ఫండ్ A (w%)</th><th class='text-right p-2'>ఫండ్ B (w%)</th><th class='text-right p-2'>కనిష్ట బరువు</th></tr></thead><tbody><tr class='border-b'><td class='p-2'>ఐసిఐసిఐ బ్యాంక్</td><td class='text-right p-2'>5.21</td><td class='text-right p-2'>6.03</td><td class='text-right p-2'>5.21</td></tr><tr class='border-b'><td class='p-2'>ఇన్ఫోసిస్</td><td class='text-right p-2'>4.67</td><td class='text-right p-2'>5.06</td><td class='text-right p-2'>4.67</td></tr><tr class='border-b'><td class='p-2'>యాక్సిస్ బ్యాంక్</td><td class='text-right p-2'>2.34</td><td class='text-right p-2'>3.45</td><td class='text-right p-2'>2.34</td></tr><tr class='border-b'><td class='p-2'>భారతీ ఎయిర్‌టెల్</td><td class='text-right p-2'>3.12</td><td class='text-right p-2'>4.50</td><td class='text-right p-2'>3.12</td></tr><tr class='border-b'><td class='p-2'>స్టేట్ బ్యాంక్ ఆఫ్ ఇండియా</td><td class='text-right p-2'>2.98</td><td class='text-right p-2'>3.80</td><td class='text-right p-2'>2.98</td></tr><tr><td colspan='3' class='text-right font-bold p-2'>...మరియు అన్ని 35 సాధారణ స్టాక్‌ల కోసం...</td><td class='text-right font-bold p-2'></td></tr><tr class='border-t'><td colspan='3' class='text-right font-bold p-2'>మొత్తం భారిత ఓవర్‌ల్యాప్</td><td class='text-right font-bold p-2'>27.02%</td></tr></tbody></table></div>"
+      "h2": "Data & Methodology",
+      "body": "<p><strong>Data Source:</strong> Our holdings data is sourced from publicly available scheme documents and is updated periodically. While we strive for accuracy, we cannot guarantee it. Always verify with official AMC factsheets. <strong>Last Updated: August 2025.</strong></p><p><strong>Matching Logic:</strong> Holdings are first matched by their stock ticker (e.g., 'RELIANCE'). If a ticker is unavailable, we use a normalized company name (e.g., 'reliance industries' after removing 'Ltd', 'Inc', etc.). Non-equity holdings like 'Cash', 'Triparty Repo', or 'Net Receivables' are excluded from calculations based on a regex match for common terms.</p><p><strong>Worked Example (Weighted Overlap):</strong></p><p>Weighted Overlap = Σ min(Weight in Fund A, Weight in Fund B) for all common stocks.</p><div class='overflow-x-auto'><table class='w-full text-sm my-4'><thead><tr class='border-b'><th class='text-left p-2'>Stock</th><th class='text-right p-2'>Fund A (w%)</th><th class='text-right p-2'>Fund B (w%)</th><th class='text-right p-2'>Min. Weight</th></tr></thead><tbody><tr class='border-b'><td class='p-2'>ICICI Bank</td><td class='text-right p-2'>5.21</td><td class='text-right p-2'>6.03</td><td class='text-right p-2'>5.21</td></tr><tr class='border-b'><td class='p-2'>Infosys</td><td class='text-right p-2'>4.67</td><td class='text-right p-2'>5.06</td><td class='text-right p-2'>4.67</td></tr><tr class='border-b'><td class='p-2'>Axis Bank</td><td class='text-right p-2'>2.34</td><td class='text-right p-2'>3.45</td><td class='text-right p-2'>2.34</td></tr><tr class='border-b'><td class='p-2'>Bharti Airtel</td><td class='text-right p-2'>3.12</td><td class='text-right p-2'>4.50</td><td class='text-right p-2'>3.12</td></tr><tr class='border-b'><td class='p-2'>State Bank of India</td><td class='text-right p-2'>2.98</td><td class='text-right p-2'>3.80</td><td class='text-right p-2'>2.98</td></tr><tr><td colspan='3' class='text-right font-bold p-2'>...and for all 35 common stocks...</td><td class='text-right font-bold p-2'></td></tr><tr class='border-t'><td colspan='3' class='text-right font-bold p-2'>Total Weighted Overlap</td><td class='text-right font-bold p-2'>27.02%</td></tr></tbody></table></div>"
     },
     "results": {
-        "weighted_overlap_title": "భారిత ఓవర్‌ల్యాప్",
-        "top_stocks_title": "అగ్ర సాధారణ స్టాక్‌లు",
-        "stock_header": "స్టాక్",
-        "min_weight_header": "కనిష్ట బరువు"
+        "weighted_overlap_title": "Weighted Overlap",
+        "top_stocks_title": "Top Common Stocks",
+        "stock_header": "Stock",
+        "min_weight_header": "Min. Weight"
     }
   },
-   "ups_pension_calculator": {
+  "ups_pension_calculator": {
     "meta_title": "UPS Pension Calculator | BharatSaver",
     "meta_description": "Estimate your potential pension amount under the Universal Pension Scheme (UPS) with our easy-to-use calculator.",
     "h1": "UPS Pension Calculator"
+  },
+  "scheme_selector": {
+    "meta_title": "AI Scheme Selector: Find the Best Investment for You | BharatSaver",
+    "meta_description": "Use our AI-powered quiz to find the best government savings scheme (PPF, NPS, SSY, APY, FD) for your financial goals, risk tolerance, and age.",
+    "title": "AI-Powered Scheme Selector",
+    "description": "Answer a few simple questions, and our AI advisor will recommend the best investment scheme for you.",
+    "age_label": "What is your age?",
+    "income_label": "What is your current annual income?",
+    "risk_label": "What is your risk tolerance?",
+    "risk_low": "Low (I prefer safe, guaranteed returns)",
+    "risk_medium": "Medium (I'm okay with some market risk for better returns)",
+    "risk_high": "High (I want to maximize returns, even with higher risk)",
+    "horizon_label": "What is your investment horizon?",
+    "horizon_short": "Short-term (1-3 years)",
+    "horizon_medium": "Medium-term (3-7 years)",
+    "horizon_long": "Long-term (7+ years)",
+    "goal_label": "What is your primary investment goal?",
+    "goal_placeholder": "e.g., Retirement, child's education, tax saving...",
+    "submit_button": "Get AI Recommendation",
+    "loading": "Analyzing your profile...",
+    "result_title": "Our AI Recommendation For You",
+    "result_reasoning": "Why we recommend this:"
   }
 }
+
     
