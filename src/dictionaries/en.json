@@ -1235,15 +1235,15 @@
     "worked_examples": {
       "h2": "Worked Examples",
       "scenario1": {
-        "title": "Example: Young start, retire at 60",
+        "title": "Young start, retire at 60",
         "body": "<strong>Inputs:</strong> Age 30, 30 years service, Basic Pay ₹50,000.<br/><strong>Result:</strong> We calculate the pensionable salary and apply the formula to show an estimated monthly pension of around ₹22,727."
       },
       "scenario2": {
-        "title": "Example: Mid-career joiner, 20 years service",
+        "title": "Mid-career joiner, 20 years service",
         "body": "<strong>Inputs:</strong> Age 40, 20 years service, Basic Pay ₹80,000.<br/><strong>Result:</strong> This scenario leads to a monthly pension of roughly ₹24,242, demonstrating the impact of a shorter service period despite a higher basic pay."
       },
        "scenario3": {
-        "title": "Example: Long service 35 years with high basic pay",
+        "title": "Long service, high basic pay",
         "body": "<strong>Inputs:</strong> Age 25, 35 years service, Basic Pay ₹1,00,000.<br/><strong>Result:</strong> This scenario results in a significantly higher pension of approximately ₹53,030, showing the power of a long service duration."
       }
     },

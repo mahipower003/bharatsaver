@@ -8,7 +8,6 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { FileText, TrendingUp, Star, AlertTriangle, CheckCircle, HelpCircle, GitCompareArrows } from "lucide-react";
 import { AuthorCard } from "@/components/layout/AuthorCard";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
 
 export async function generateStaticParams() {
@@ -171,16 +170,6 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
                 </CardHeader>
                 <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.optimization.body }} />
             </Card>
-
-            <Card id="methodology" className="mt-12 text-sm text-muted-foreground">
-                <CardHeader>
-                    <CardTitle className="text-lg flex items-center gap-2">
-                        <HelpCircle className="h-5 w-5"/>
-                        <h2 className="text-2xl font-bold">{dict.methodology.h2}</h2>
-                    </CardTitle>
-                </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dict.methodology.body }}/>
-            </Card>
             
             <div className="mt-12">
                 <h2 className="text-2xl font-bold text-center mb-6">{dict.faq_title}</h2>
@@ -196,6 +185,16 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
                 </Accordion>
             </div>
 
+            <Card id="methodology" className="mt-12 text-sm text-muted-foreground">
+                <CardHeader>
+                    <CardTitle className="text-lg flex items-center gap-2">
+                        <HelpCircle className="h-5 w-5"/>
+                        <h2 className="text-2xl font-bold">{dict.methodology.h2}</h2>
+                    </CardTitle>
+                </CardHeader>
+                <CardContent className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dict.methodology.body }}/>
+            </Card>
+
              <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
               <CardHeader>
                 <CardTitle className="flex items-center gap-3">
@@ -209,7 +208,6 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
             </Card>
 
             <Alert variant="destructive" className="mt-8">
-              <AlertTriangle className="h-4 w-4" />
               <AlertTitle>{dict.disclaimer.title}</AlertTitle>
               <AlertDescription>
                 {dict.disclaimer.body}

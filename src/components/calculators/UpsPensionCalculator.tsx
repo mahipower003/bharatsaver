@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Loader2, Building, Download, Printer, Twitter, ChevronDown } from 'lucide-react';
+import { Loader2, Building, Download, Printer, Twitter, ChevronDown, Share, Link as LinkIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
@@ -13,6 +13,7 @@ import { Input } from '@/components/ui/input';
 import type { Dictionary } from '@/types';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend } from 'recharts';
+import { useToast } from '@/hooks/use-toast';
 
 const formSchema = z.object({
   basicPay: z.coerce.number().min(1000, "Basic pay seems too low"),
@@ -49,6 +50,7 @@ export function UpsPensionCalculator({ dictionary }: CalculatorProps) {
   const [result, setResult] = useState<CalculationResult | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [showSteps, setShowSteps] = useState(false);
+  const { toast } = useToast();
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -125,6 +127,26 @@ export function UpsPensionCalculator({ dictionary }: CalculatorProps) {
     link.click();
     document.body.removeChild(link);
   };
+  
+  const handleCopyLink = () => {
+    navigator.clipboard.writeText(window.location.href);
+    toast({
+        title: "Link Copied!",
+        description: "You can now share the link to your calculation.",
+    });
+  };
+
+  const handleShare = (platform: 'whatsapp' | 'twitter') => {
+    if (!result) return;
+    const url = window.location.href;
+    const text = `I just calculated my UPS pension with BharatSaver! My estimated monthly pension is ${formatCurrency(result.monthlyPension)}. Plan yours:`;
+    const shareUrl = platform === 'twitter'
+      ? `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`
+      : `https://api.whatsapp.com/send?text=${encodeURIComponent(text + ' ' + url)}`;
+    window.open(shareUrl, '_blank');
+  };
+
+  const handlePrint = () => window.print();
 
   const formatCurrency = (value: number) => {
     return value.toLocaleString('en-IN', { style: 'currency', currency: 'INR', minimumFractionDigits: 0, maximumFractionDigits: 0 });
@@ -210,7 +232,11 @@ export function UpsPensionCalculator({ dictionary }: CalculatorProps) {
                 </CollapsibleContent>
             </Collapsible>
             
-             <div className="flex flex-wrap items-center justify-center gap-4 mt-8">
+             <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 mt-8">
+                <Button variant="outline" size="sm" onClick={() => handleShare('whatsapp')}><WhatsAppIcon className="mr-2 h-4 w-4" /> WhatsApp</Button>
+                <Button variant="outline" size="sm" onClick={() => handleShare('twitter')}><Twitter className="mr-2 h-4 w-4" /> Twitter</Button>
+                <Button variant="outline" size="sm" onClick={handleCopyLink}><LinkIcon className="mr-2 h-4 w-4" /> Copy Link</Button>
+                <Button variant="outline" size="sm" onClick={handlePrint}><Printer className="mr-2 h-4 w-4" /> Print</Button>
                 <Button variant="outline" size="sm" onClick={handleCSVExport}><Download className="mr-2 h-4 w-4" />{dictionary.interactive_tool.download_excel}</Button>
              </div>
           </CardContent>
