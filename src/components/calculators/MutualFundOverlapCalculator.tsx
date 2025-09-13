@@ -23,7 +23,16 @@ export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCal
   const [overlapResult, setOverlapResult] = useState<OverlapOutput | null>(null);
   const [isCalculating, setIsCalculating] = useState(false);
 
-  // This effect recalculates the overlap whenever the user changes the fund selection.
+  // Effect to set the initial state with two default funds once data is loaded.
+  useEffect(() => {
+    if (allFunds.length > 0 && selectedFunds.length === 0) {
+      // Ensure we only grab unique funds by name
+      const uniqueFunds = Array.from(new Map(allFunds.map(fund => [fund.fund_name, fund])).values());
+      setSelectedFunds(uniqueFunds.slice(0, 2));
+    }
+  }, [allFunds, selectedFunds.length]);
+
+  // Effect to recalculate the overlap whenever the user changes the fund selection.
   useEffect(() => {
     if (selectedFunds.length < 2) {
       setOverlapResult(null);
@@ -120,50 +129,47 @@ export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCal
       </Alert>
   }
   
-  if (selectedFunds.length === 0) {
-      return (
-        <div className="text-center py-12">
-            <p className="mb-4 text-muted-foreground">Select up to 5 funds to compare their holdings.</p>
-            <Button onClick={addFund}>
-                <PlusCircle className="mr-2 h-4 w-4" /> Add a fund to start
-            </Button>
-        </div>
-      )
-  }
-
   return (
     <div className="space-y-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {selectedFunds.map((fund, index) => (
-          <Card key={`${fund.fund_name}-${index}`} className="overflow-hidden">
-            <CardHeader className="flex flex-row items-center justify-between bg-muted/50 p-4">
-               <FundSelector
-                allFunds={allFunds}
-                selectedFund={fund}
-                onSelect={(newFundName) => updateFundSelection(fund.fund_name, newFundName)}
-              />
-              <Button variant="ghost" size="icon" className="h-6 w-6 text-muted-foreground" onClick={() => removeFund(fund.fund_name)} disabled={selectedFunds.length <= 1}>
-                <Trash2 className="h-4 w-4"/>
-              </Button>
-            </CardHeader>
-            <CardContent className="p-4 text-sm text-muted-foreground">
-              {fund.constituents?.length > 0 ? `${fund.constituents.length} holdings loaded.` : 'No holdings data found.'}
-              {overlapResult?.per_fund[fund.fund_name] && (
-                  <div className="flex items-center text-xs mt-2">
-                    <Info className="h-3 w-3 mr-1.5" />
-                    Coverage: {overlapResult.per_fund[fund.fund_name].coverage_pct.toFixed(2)}%
-                  </div>
-              )}
-            </CardContent>
-          </Card>
-        ))}
-      </div>
+       {selectedFunds.length === 0 && (
+        <div className="text-center py-12">
+            <p className="mb-4 text-muted-foreground">Select up to 5 funds to compare their holdings.</p>
+        </div>
+      )}
+
+      {selectedFunds.length > 0 && 
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {selectedFunds.map((fund, index) => (
+            <Card key={`${fund.fund_name}-${index}`} className="overflow-hidden">
+              <CardHeader className="flex flex-row items-center justify-between bg-muted/50 p-4">
+                <FundSelector
+                  allFunds={allFunds}
+                  selectedFund={fund}
+                  onSelect={(newFundName) => updateFundSelection(fund.fund_name, newFundName)}
+                />
+                <Button variant="ghost" size="icon" className="h-6 w-6 text-muted-foreground" onClick={() => removeFund(fund.fund_name)} disabled={selectedFunds.length < 2}>
+                  <Trash2 className="h-4 w-4"/>
+                </Button>
+              </CardHeader>
+              <CardContent className="p-4 text-sm text-muted-foreground">
+                {fund.constituents?.length > 0 ? `${fund.constituents.length} holdings loaded.` : 'No holdings data found.'}
+                {overlapResult?.per_fund[fund.fund_name] && (
+                    <div className="flex items-center text-xs mt-2">
+                      <Info className="h-3 w-3 mr-1.5" />
+                      Coverage: {overlapResult.per_fund[fund.fund_name].coverage_pct.toFixed(2)}%
+                    </div>
+                )}
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      }
 
       <div className="flex flex-wrap items-center justify-start gap-4">
-        <Button variant="outline" onClick={addFund} disabled={selectedFunds.length >= 5 || isCalculating}>
+        <Button variant="outline" onClick={addFund} disabled={selectedFunds.length >= 5 || isCalculating || allFunds.length === 0}>
           <PlusCircle className="mr-2 h-4 w-4" /> {dictionary.tool.add_fund}
         </Button>
-         {selectedFunds.length < 2 && (
+         {selectedFunds.length > 0 && selectedFunds.length < 2 && (
             <p className="text-sm text-muted-foreground">Please add at least one more fund to see the overlap.</p>
          )}
       </div>
@@ -326,5 +332,3 @@ function FundSelector({ allFunds, selectedFund, onSelect }: { allFunds: RawFund[
     </>
   );
 }
-
-    
