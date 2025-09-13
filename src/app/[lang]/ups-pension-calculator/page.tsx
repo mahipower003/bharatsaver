@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/ups-pension-calculator`;
 
-  const faqSchema = {
+ const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": dict.faqs.map((faq: { q: string, a: string }) => ({
@@ -40,7 +40,6 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     "name": "UPS Pension Calculator",
     "url": pageUrl,
     "applicationCategory": "FinanceApplication",
-    "operatingSystem": "Web",
     "description": "Estimate your monthly pension, family pension and lump sum under the Unified Pension Scheme.",
     "offers": {
         "@type": "Offer",
@@ -73,7 +72,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         }
       }
   };
-
+  
   return {
     title: dict.meta_title,
     description: dict.meta_description,
@@ -84,7 +83,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         return acc;
       }, {} as Record<string, string>),
     },
-    other: {
+     other: {
       'application/ld+json': JSON.stringify([faqSchema, softwareSchema, articleSchema]),
     },
   };
@@ -94,61 +93,8 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
   const dictionary = await getDictionary(params.lang, ['ups_pension_calculator', 'author_card']);
   const dict = dictionary.ups_pension_calculator;
 
-  const allSchema = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "FAQPage",
-        "mainEntity": dict.faqs.map((faq: { q: string, a: string }) => ({
-          "@type": "Question",
-          "name": faq.q,
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": faq.a
-          }
-        }))
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "UPS Pension Calculator",
-        "url": `https://bharatsaver.com/${params.lang}/ups-pension-calculator`,
-        "applicationCategory": "FinanceApplication",
-        "operatingSystem": "Web",
-        "description": dict.meta_description,
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "INR"
-        }
-      },
-      {
-        "@type": "Article",
-        "headline": dict.h1,
-        "datePublished": "2024-08-02",
-        "dateModified": "2024-08-02",
-         "author": {
-            "@type": "Person",
-            "name": "Mahesh Chaube, CFP",
-            "url": `https://bharatsaver.com/${params.lang}/author/mahesh-chaube`
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "BharatSaver",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://bharatsaver.com/icon.svg"
-            }
-          }
-      }
-    ]
-  };
-
   return (
     <div className="py-12">
-      <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(allSchema) }}
-      />
       <div className="mx-auto max-w-5xl">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
@@ -157,27 +103,9 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
           <p className="mt-4 text-lg text-muted-foreground">{dict.hero_subtitle}</p>
         </div>
         
-        <p className="text-center text-sm text-muted-foreground mb-8">
-          {dict.how_it_works.intro}
-        </p>
-
         <UpsPensionCalculator dictionary={dict} />
 
         <div className="space-y-8 mt-12">
-            <Card>
-                <CardHeader>
-                    <CardTitle className="flex items-center gap-3"><HelpCircle className="h-6 w-6 text-primary" />{dict.how_it_works.h2}</CardTitle>
-                </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.how_it_works.body }} />
-            </Card>
-
-            <Card>
-                <CardHeader>
-                    <CardTitle className="flex items-center gap-3"><FileText className="h-6 w-6 text-primary" />{dict.formula_section.h2}</CardTitle>
-                </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.formula_section.body }} />
-            </Card>
-
             <Card>
                 <CardHeader>
                     <CardTitle className="flex items-center gap-3"><TrendingUp className="h-6 w-6 text-primary" />{dict.worked_examples.h2}</CardTitle>
@@ -196,6 +124,20 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
                     <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: dict.worked_examples.scenario3.body }} />
                   </div>
                 </CardContent>
+            </Card>
+
+            <Card>
+                <CardHeader>
+                    <CardTitle className="flex items-center gap-3"><HelpCircle className="h-6 w-6 text-primary" />{dict.how_it_works.h2}</CardTitle>
+                </CardHeader>
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.how_it_works.body }} />
+            </Card>
+
+            <Card>
+                <CardHeader>
+                    <CardTitle className="flex items-center gap-3"><FileText className="h-6 w-6 text-primary" />{dict.formula_section.h2}</CardTitle>
+                </CardHeader>
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.formula_section.body }} />
             </Card>
 
             <Card>
