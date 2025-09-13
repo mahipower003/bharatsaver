@@ -105,6 +105,32 @@
     "h2": "Calculators & Articles by Mahesh Chaube",
     "view_calculator": "View Calculator"
   },
+   "contact_page": {
+    "meta_title": "Contact Us | BharatSaver",
+    "meta_description": "Get in touch with the BharatSaver team for questions, feedback, or inquiries. We're here to help you answer your financial questions.",
+    "h1": "Contact Us",
+    "p1": "We're here to help. Reach out to us with any questions or feedback."
+  },
+  "terms_page": {
+    "meta_title": "Terms and Conditions | BharatSaver",
+    "meta_description": "Read the terms and conditions for using the BharatSaver website and its tools. By using our services, you agree to these terms.",
+    "h1": "Terms & Conditions",
+    "p1": "Welcome to BharatSaver. By using this website, you agree to comply with and be bound by the following terms and conditions of use.",
+    "h2_1": "Terms of Use",
+    "p2": "The information provided on this website is for general informational purposes only. While we strive to ensure accuracy, we make no warranties about the completeness or reliability of any information.",
+    "h2_2": "Limitation of Liability",
+    "p3": "BharatSaver will not be liable for any loss or damage arising from the use of information on this website. It is advisable to seek professional advice before making any financial decisions.",
+    "h2_3": "Intellectual Property",
+    "p4": "All content on this website, including text, graphics, and logos, is the property of BharatSaver and is protected by copyright laws."
+  },
+  "search_page": {
+    "title": "Search Results",
+    "title_with_query": "Search results for",
+    "meta_description": "Find financial calculators, guides, and articles on BharatSaver.",
+    "h1": "What are you looking for?",
+    "h1_with_query": "Results for",
+    "results_placeholder": "Results matching your search criteria will be displayed here."
+  },
   "ppf_calculator": {
     "meta_title": "PPF Calculator 2025 — Calculate PPF Maturity Online (India)",
     "meta_description": "Free PPF calculator for 2025: Instantly estimate PPF maturity, interest, and tax savings (EEE). Includes year-wise charts, extension rules, and comparison with FD, NPS, and SSY.",
@@ -1037,7 +1063,7 @@
     "accumulation_strategy": {
       "h2": "How to Reach Your Retirement Corpus (Investment Strategies)",
       "body": "<h3>Choosing Your Investment Path: SIP vs. Lumpsum</h3><p>A <strong>Systematic Investment Plan (SIP)</strong> is the most disciplined approach. You invest a fixed amount regularly (e.g., monthly), which helps you average out market fluctuations (rupee-cost averaging) and benefit from compounding. It's perfect for building wealth steadily over time. For even faster growth, consider a <strong>step-up SIP</strong>, where you increase your monthly investment amount annually, typically in line with your salary increase (e.g., by 10%).</p><h3>Asset Allocation by Age</h3><p>Your investment strategy shouldn't be static. As you get closer to retirement, you should gradually shift from high-risk, high-return assets to safer options to protect your capital.</p><ul><li><strong>In your 20s & 30s:</strong> Be aggressive. A portfolio with 70-80% in equities (like mutual funds) can generate higher returns over the long run.</li><li><strong>In your 40s:</strong> Start balancing your risk. A 60:40 split between equity and debt is a common strategy.</li><li><strong>In your 50s and beyond:</strong> It's time to preserve your capital. Shift your portfolio to be debt-heavy (70-80% in fixed-income instruments).</li></ul><h3>How PPF, NPS, & EPF Fit into Your Plan</h3><p>These are the foundation pillars of retirement planning in India. Your current savings in these instruments give you a huge head start. Use them to form the debt/fixed-income component of your portfolio. Explore our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> and <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> to see how they grow.</p>",
-       "sip_plans": {
+      "sip_plans": {
         "title": "Sample SIP Plans to Reach Your Goal",
         "body": "This table shows the approximate monthly SIP required to reach common retirement corpus goals from different starting ages, assuming a 12% annual return."
        }
