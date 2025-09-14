@@ -152,7 +152,7 @@ export default async function MutualFundScreenerPage({ params }: { params: { lan
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {dict.tools_downloads.links.map((link: { text: string, href: string, desc: string }, index: number) => (
                     <Button key={index} asChild variant="outline">
-                      <Link href={link.href}>{link.text}</Link>
+                      <Link href={link.href} target={link.href.startsWith('/') ? '_self' : '_blank'}>{link.text}</Link>
                     </Button>
                   ))}
               </div>
