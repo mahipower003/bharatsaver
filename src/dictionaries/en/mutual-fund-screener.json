@@ -1,7 +1,7 @@
 
 {
-  "meta_title": "Mutual Fund Scheme Selector 2025 — Filter by Returns, Risk, AUM & Holdings",
-  "meta_description": "Use our free mutual fund scheme selector to filter and compare direct funds by returns, risk, AUM, expense ratio and holdings. Includes overlap check, SIP planner & downloadable CSV.",
+  "meta_title": "Mutual Fund Scheme Selector 2025 — Compare, Check Overlap, Export CSV",
+  "meta_description": "Use our mutual fund scheme selector (India) to filter by holdings, TER, AUM, compare funds and download CSV.",
   "h1": "Mutual Fund Scheme Selector — Find & Compare Best Funds for Your Goal (India, 2025)",
   "intro": "<p>With over 2,000 mutual fund schemes in India, trying to pick the 'right' one can feel like finding a needle in a haystack. I've spent two decades guiding investors through this exact maze, and it's precisely why I built this tool. This isn't just another list of funds; it's a complete guide and an interactive platform designed to help you cut through the noise, avoid costly mistakes, and confidently select the best funds for *your* specific financial goals.</p><p>You're not just looking for a fund; you're looking for clarity and a clear path forward. Whether you're planning for retirement, saving for a big purchase, or just starting your investment journey, my goal here is to turn that confusion into confidence. We'll do it together, starting now.</p>",
   "how_it_works": {
@@ -270,7 +270,7 @@
       }
     ]
   },
-   "article_schema": {
+  "article_schema": {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Mutual Fund Scheme Selector 2025 — Find & Compare Best Funds for Your Goal (India, 2025)",
@@ -341,5 +341,3 @@
     "cta_text": "Get My Personalized Fund List"
   }
 }
-
-    
