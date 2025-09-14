@@ -19,6 +19,32 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/mutual-fund-screener`;
 
+  const softwareSchema = {
+    "@context":"https://schema.org",
+    "@type":"SoftwareApplication",
+    "name": "Mutual Fund Scheme Selector 2025 India",
+    "url": pageUrl,
+    "applicationCategory":"FinanceApplication",
+    "operatingSystem":"Web",
+    "description":"Use our free mutual fund screener to filter and compare direct funds by returns, risk, AUM, expense ratio and holdings. Includes overlap check, SIP planner & downloadable CSV.",
+    "offers": {
+      "@type":"Offer",
+      "url": pageUrl,
+      "price":"0",
+      "priceCurrency":"INR"
+    }
+  };
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": dict.h1,
+    "author":{"@type":"Person","name":"Mahesh Chaube","jobTitle":"CFP","url":`${siteUrl}/${params.lang}/author/mahesh-chaube`},
+    "datePublished":"2025-08-15",
+    "dateModified":"2025-09-01",
+    "publisher":{"@type":"Organization","name":"BharatSaver","logo":{"@type":"ImageObject","url":`${siteUrl}/icon.svg`}}
+  };
+
   return {
     title: dict.meta_title,
     description: dict.meta_description,
@@ -30,7 +56,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       }, {} as Record<string, string>),
     },
     other: {
-      'application/ld+json': JSON.stringify(dict.faq_json_ld),
+      'application/ld+json': JSON.stringify([dict.faq_json_ld, softwareSchema, articleSchema]),
     },
   };
 }
@@ -38,15 +64,27 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 export default async function MutualFundScreenerPage({ params }: { params: { lang: Locale }}) {
   const dictionary = await getDictionary(params.lang, ['mutual_fund_screener', 'author_card']);
   const dict = dictionary.mutual_fund_screener;
+  const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${params.lang}` },
+      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${params.lang}/calculators` },
+      { '@type': 'ListItem', position: 3, name: 'Mutual Fund Screener', item: pageUrl },
+    ],
+  };
 
   return (
     <div className="py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <div className="mx-auto max-w-5xl">
         <header className="text-center mb-12">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl font-headline mb-4" dangerouslySetInnerHTML={{ __html: dict.h1 }}></h1>
-          <div className="text-xl text-muted-foreground" dangerouslySetInnerHTML={{ __html: dict.intro }}></div>
+          <div className="text-xl text-muted-foreground prose dark:prose-invert max-w-none mx-auto" dangerouslySetInnerHTML={{ __html: dict.intro }}></div>
           <Button asChild size="lg" className="mt-6">
-            <Link href="#interactive-selector">Jump to the Screener</Link>
+            <Link href="#interactive-selector">{dict.interactive_tool.cta_button}</Link>
           </Button>
         </header>
 
@@ -152,7 +190,7 @@ export default async function MutualFundScreenerPage({ params }: { params: { lan
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {dict.tools_downloads.links.map((link: { text: string, href: string, desc: string }, index: number) => (
                     <Button key={index} asChild variant="outline">
-                      <Link href={link.href} target={link.href.startsWith('/') ? '_self' : '_blank'}>{link.text}</Link>
+                      <Link href={link.href.replace('{lang}', params.lang)} target={link.href.startsWith('/') ? '_self' : '_blank'}>{link.text}</Link>
                     </Button>
                   ))}
               </div>
@@ -176,8 +214,8 @@ export default async function MutualFundScreenerPage({ params }: { params: { lan
             </CardHeader>
             <CardContent>
               <p className="mb-4">{dict.footer_cta.body}</p>
-              <Button size="lg">
-                <Link href="/contact">{dict.footer_cta.cta_text}</Link>
+              <Button size="lg" asChild>
+                <Link href={`/${params.lang}/contact`}>{dict.footer_cta.cta_text}</Link>
               </Button>
             </CardContent>
           </Card>
