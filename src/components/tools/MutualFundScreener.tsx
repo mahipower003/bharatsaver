@@ -5,17 +5,16 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useFundData } from '@/hooks/use-fund-data';
-import type { RawFund } from '@/lib/overlap-calculator';
-import { Loader2, Info } from 'lucide-react';
+import type { RawFund, OverlapOutput } from '@/lib/overlap-calculator';
+import { Loader2, Info, Download } from 'lucide-react';
 import { Alert, AlertTitle, AlertDescription } from '@/components/ui/alert';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Slider } from '@/components/ui/slider';
-import { Input } from '@/components/ui/input';
 import { useToast } from '@/hooks/use-toast';
+import { calculateAllOverlaps } from '@/lib/overlap-calculator';
 
-const formatCurrency = (value: number) => `₹${(value / 1000000000).toFixed(0)}k Cr`;
 const formatPercent = (value: number) => `${value.toFixed(2)}%`;
 
 export function MutualFundScreenerTool() {
@@ -29,6 +28,8 @@ export function MutualFundScreenerTool() {
   });
 
   const [selectedFunds, setSelectedFunds] = useState<RawFund[]>([]);
+  const [comparisonResult, setComparisonResult] = useState<OverlapOutput | null>(null);
+  const [isCalculating, setIsCalculating] = useState(false);
 
   const uniqueCategories = useMemo(() => {
     if (isDataLoading) return [];
@@ -80,6 +81,27 @@ export function MutualFundScreenerTool() {
     }
   };
 
+  const handleCompare = () => {
+    if (selectedFunds.length < 2) {
+      toast({ title: "Please select at least 2 funds to compare." });
+      return;
+    }
+    setIsCalculating(true);
+    setComparisonResult(null);
+    setTimeout(() => {
+        const result = calculateAllOverlaps(selectedFunds);
+        setComparisonResult(result);
+        setIsCalculating(false);
+    }, 500);
+  };
+  
+  const getOverlapLevel = (overlap: number) => {
+    if (overlap > 50) return { label: 'Very High', color: 'text-destructive' };
+    if (overlap > 30) return { label: 'High', color: 'text-orange-500' };
+    if (overlap > 15) return { label: 'Moderate', color: 'text-yellow-500' };
+    return { label: 'Low', color: 'text-green-500' };
+  };
+
   if (isDataLoading) {
     return <div className="text-center py-12"><Loader2 className="mx-auto h-12 w-12 animate-spin text-primary" /> <p className="mt-2 text-muted-foreground">Loading fund data...</p></div>;
   }
@@ -89,6 +111,7 @@ export function MutualFundScreenerTool() {
   }
 
   return (
+    <>
     <Card className="shadow-lg animate-in fade-in-50">
       <CardHeader>
         <CardTitle>Interactive Mutual Fund Screener</CardTitle>
@@ -134,7 +157,10 @@ export function MutualFundScreenerTool() {
         <div className="mt-6">
           <div className="flex justify-between items-center mb-2">
             <p className="text-sm text-muted-foreground">Showing {filteredFunds.length} of {allFunds.length} funds.</p>
-            <Button disabled={selectedFunds.length < 2}>Compare {selectedFunds.length} Funds</Button>
+            <Button onClick={handleCompare} disabled={selectedFunds.length < 2 || isCalculating}>
+                {isCalculating ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
+                Compare {selectedFunds.length} Funds
+            </Button>
           </div>
           <div className="overflow-x-auto border rounded-md max-h-[600px]">
             <Table>
@@ -174,6 +200,57 @@ export function MutualFundScreenerTool() {
         </div>
       </CardContent>
     </Card>
+
+    {isCalculating && <div className="text-center py-12"><Loader2 className="mx-auto h-12 w-12 animate-spin text-primary" /> <p className="mt-2 text-muted-foreground">Comparing funds...</p></div>}
+
+    {comparisonResult && (
+      <Card className="mt-8 animate-in fade-in-50">
+        <CardHeader>
+          <CardTitle>Comparison & Overlap Results</CardTitle>
+          <CardDescription>
+            Here is a breakdown of how your selected funds overlap with each other.
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          {comparisonResult.pairs.map((pair, index) => (
+            <div key={index} className="border p-4 rounded-lg">
+              <h3 className="text-lg font-bold">{pair.fund_a} vs {pair.fund_b}</h3>
+              <div className="text-center my-4 p-4 bg-muted/50 rounded-md">
+                <p className="text-sm text-muted-foreground">Weighted Overlap</p>
+                <p className={`text-3xl font-bold ${getOverlapLevel(pair.weighted_overlap).color}`}>
+                  {formatPercent(pair.weighted_overlap)} ({getOverlapLevel(pair.weighted_overlap).label})
+                </p>
+              </div>
+              <h4 className="font-semibold mb-2">Top 5 Common Stocks</h4>
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead>Stock</TableHead>
+                    <TableHead className="text-right">Weight (A)</TableHead>
+                    <TableHead className="text-right">Weight (B)</TableHead>
+                    <TableHead className="text-right">Min. Weight</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {pair.common_holdings.slice(0, 5).map(stock => (
+                    <TableRow key={stock.company}>
+                      <TableCell className="font-medium">{stock.company}</TableCell>
+                      <TableCell className="text-right">{formatPercent(stock.weight_a)}</TableCell>
+                      <TableCell className="text-right">{formatPercent(stock.weight_b)}</TableCell>
+                      <TableCell className="text-right font-bold">{formatPercent(stock.min_weight)}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </div>
+          ))}
+          <div className="text-center">
+            <Button variant="outline"><Download className="mr-2 h-4 w-4" /> Export Full Comparison (CSV)</Button>
+          </div>
+        </CardContent>
+      </Card>
+    )}
+    </>
   );
 }
 
@@ -186,5 +263,3 @@ function parseWeight(w?: number | string | null): number {
   const n = parseFloat(s);
   return isNaN(n) ? 0 : n;
 }
-
-    
