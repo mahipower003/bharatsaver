@@ -10,6 +10,7 @@ import { CheckCircle, GitCompareArrows, HelpCircle, FileText, AlertTriangle, Tab
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import Image from "next/image";
+import { FooterCta } from "@/components/layout/FooterCta";
 
 
 export async function generateStaticParams() {
@@ -73,7 +74,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 }
 
 export default async function MutualFundOverlapCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang, ['mutual_fund_overlap_calculator', 'author_card']);
+  const dictionary = await getDictionary(params.lang, ['mutual_fund_overlap_calculator', 'author_card', 'footer_cta']);
   const dict = dictionary.mutual_fund_overlap_calculator;
   const liveExample = dict.live_example;
   
@@ -195,6 +196,7 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
             </CardHeader>
             <CardContent className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dict.methodology.body }}/>
         </Card>
+        <FooterCta dictionary={dictionary.footer_cta} lang={params.lang} />
       </div>
     </div>
   );

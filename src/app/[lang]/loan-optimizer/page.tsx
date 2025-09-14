@@ -10,6 +10,7 @@ import Link from "next/link";
 import { AuthorCard } from "@/components/layout/AuthorCard";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { FooterCta } from "@/components/layout/FooterCta";
 
 
 export async function generateStaticParams() {
@@ -98,7 +99,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 }
 
 export default async function LoanOptimizerPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang, ['loan_optimization_calculator', 'author_card']);
+  const dictionary = await getDictionary(params.lang, ['loan_optimization_calculator', 'author_card', 'footer_cta']);
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   
   const breadcrumbSchema = {
@@ -258,6 +259,7 @@ export default async function LoanOptimizerPage({ params }: { params: { lang: Lo
         </Card>
 
         <AuthorCard dictionary={dictionary.author_card} />
+        <FooterCta dictionary={dictionary.footer_cta} lang={params.lang} />
       </div>
     </div>
   );

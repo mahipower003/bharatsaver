@@ -10,6 +10,7 @@ import { FileText, TrendingUp, Star, AlertTriangle, CheckCircle, HelpCircle, Git
 import { AuthorCard } from "@/components/layout/AuthorCard";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { FooterCta } from "@/components/layout/FooterCta";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -103,7 +104,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 }
 
 export default async function UpsPensionCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang, ['ups_pension_calculator', 'author_card']);
+  const dictionary = await getDictionary(params.lang, ['ups_pension_calculator', 'author_card', 'footer_cta']);
   const dict = dictionary.ups_pension_calculator;
   const workedExamplesTable = dict.worked_examples_table;
 
@@ -273,6 +274,7 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
             </Alert>
             
             <AuthorCard dictionary={dictionary.author_card} />
+            <FooterCta dictionary={dictionary.footer_cta} lang={params.lang} />
         </div>
       </div>
     </div>

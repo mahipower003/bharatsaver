@@ -9,6 +9,7 @@ import { Shield, BarChart2, UserCheck, Landmark, GitCompareArrows, AlertTriangle
 import Link from "next/link";
 import { ApyPremiumChart } from "@/components/calculators/ApyPremiumChart";
 import { AuthorCard } from "@/components/layout/AuthorCard";
+import { FooterCta } from "@/components/layout/FooterCta";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -98,7 +99,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 }
 
 export default async function ApyCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang, ['apy_calculator', 'author_card']);
+  const dictionary = await getDictionary(params.lang, ['apy_calculator', 'author_card', 'footer_cta']);
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
 
   const breadcrumbSchema = {
@@ -241,6 +242,7 @@ export default async function ApyCalculatorPage({ params }: { params: { lang: Lo
           </CardContent>
         </Card>
         <AuthorCard dictionary={dictionary.author_card} />
+        <FooterCta dictionary={dictionary.footer_cta} lang={params.lang} />
       </div>
     </div>
   );

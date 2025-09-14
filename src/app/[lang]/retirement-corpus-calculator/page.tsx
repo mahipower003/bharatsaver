@@ -10,6 +10,7 @@ import Link from "next/link";
 import { AuthorCard } from "@/components/layout/AuthorCard";
 import { calculateRetirementCorpus, calculateSip } from "@/lib/calculations";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { FooterCta } from "@/components/layout/FooterCta";
 
 
 export async function generateStaticParams() {
@@ -129,7 +130,8 @@ export async function generateMetadata({ params }: { params: { lang:Locale } }):
 export default async function RetirementCorpusCalculatorPage({ params }: { params: { lang: Locale }}) {
   const dictionary = await getDictionary(params.lang, [
     'retirement_corpus_calculator', 
-    'author_card'
+    'author_card',
+    'footer_cta'
   ]);
   
   const breadcrumbSchema = {
@@ -427,6 +429,7 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
                 <p>{retirementDict.methodology.body}</p>
             </CardContent>
         </Card>}
+        <FooterCta dictionary={dictionary.footer_cta} lang={params.lang} />
       </div>
     </div>
   );

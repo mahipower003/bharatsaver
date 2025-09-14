@@ -10,6 +10,7 @@ import { Landmark, ArrowRightLeft, ShieldCheck, Banknote, HelpCircle, Star, Aler
 import Link from "next/link";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { AuthorCard } from "@/components/layout/AuthorCard";
+import { FooterCta } from "@/components/layout/FooterCta";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -100,7 +101,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 
 
 export default async function FdVsPpfCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang, ['fd_vs_ppf_calculator', 'author_card']);
+  const dictionary = await getDictionary(params.lang, ['fd_vs_ppf_calculator', 'author_card', 'footer_cta']);
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const comparisonData = dictionary.fd_vs_ppf_calculator.comparison.table;
 
@@ -272,6 +273,7 @@ export default async function FdVsPpfCalculatorPage({ params }: { params: { lang
           </CardContent>
         </Card>
         <AuthorCard dictionary={dictionary.author_card} />
+        <FooterCta dictionary={dictionary.footer_cta} lang={params.lang} />
       </div>
     </div>
   );

@@ -8,6 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { TrendingUp, ShieldCheck, Scale, Star } from "lucide-react";
 import { AuthorCard } from "@/components/layout/AuthorCard";
+import { FooterCta } from "@/components/layout/FooterCta";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -97,7 +98,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 }
 
 export default async function NpsCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang, ['nps_calculator', 'author_card']);
+  const dictionary = await getDictionary(params.lang, ['nps_calculator', 'author_card', 'footer_cta']);
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
 
   const breadcrumbSchema = {
@@ -293,6 +294,7 @@ export default async function NpsCalculatorPage({ params }: { params: { lang: Lo
           </CardContent>
         </Card>
         <AuthorCard dictionary={dictionary.author_card} />
+        <FooterCta dictionary={dictionary.footer_cta} lang={params.lang} />
       </div>
     </div>
   );
