@@ -1,1 +1,307 @@
-[]
+
+[
+  {
+    "fund_name": "ICICI Prudential Bluechip Fund",
+    "aum": 54494,
+    "constituents": [
+      { "company": "ICICI Bank", "ticker": "ICICIBANK", "weight_pct": 9.47 },
+      { "company": "Reliance Industries", "ticker": "RELIANCE", "weight_pct": 7.42 },
+      { "company": "Larsen & Toubro", "ticker": "LT", "weight_pct": 5.99 },
+      { "company": "Infosys", "ticker": "INFY", "weight_pct": 5.82 },
+      { "company": "Maruti Suzuki India", "ticker": "MARUTI", "weight_pct": 3.73 },
+      { "company": "HDFC Bank", "ticker": "HDFCBANK", "weight_pct": 3.49 },
+      { "company": "Bharti Airtel", "ticker": "BHARTIARTL", "weight_pct": 3.42 },
+      { "company": "Sun Pharmaceutical Industries", "ticker": "SUNPHARMA", "weight_pct": 2.92 },
+      { "company": "Axis Bank", "ticker": "AXISBANK", "weight_pct": 2.76 },
+      { "company": "Mahindra & Mahindra", "ticker": "M&M", "weight_pct": 2.54 }
+    ]
+  },
+  {
+    "fund_name": "HDFC Top 100 Fund",
+    "aum": 33279,
+    "constituents": [
+      { "company": "HDFC Bank", "ticker": "HDFCBANK", "weight_pct": 8.94 },
+      { "company": "ICICI Bank", "ticker": "ICICIBANK", "weight_pct": 8.16 },
+      { "company": "Reliance Industries", "ticker": "RELIANCE", "weight_pct": 4.96 },
+      { "company": "Infosys", "ticker": "INFY", "weight_pct": 4.28 },
+      { "company": "Larsen & Toubro", "ticker": "LT", "weight_pct": 4.2 },
+      { "company": "State Bank of India", "ticker": "SBIN", "weight_pct": 3.99 },
+      { "company": "Bharti Airtel", "ticker": "BHARTIARTL", "weight_pct": 3.51 },
+      { "company": "ITC", "ticker": "ITC", "weight_pct": 3.03 },
+      { "company": "Coal India", "ticker": "COALINDIA", "weight_pct": 2.68 },
+      { "company": "Tata Consultancy Services", "ticker": "TCS", "weight_pct": 2.38 }
+    ]
+  },
+  {
+    "fund_name": "SBI Bluechip Fund",
+    "aum": 45338,
+    "constituents": [
+        { "company": "HDFC Bank", "ticker": "HDFCBANK", "weight_pct": 9.85 },
+        { "company": "ICICI Bank", "ticker": "ICICIBANK", "weight_pct": 9.47 },
+        { "company": "Larsen & Toubro", "ticker": "LT", "weight_pct": 6.32 },
+        { "company": "Reliance Industries", "ticker": "RELIANCE", "weight_pct": 5.41 },
+        { "company": "Infosys", "ticker": "INFY", "weight_pct": 4.14 },
+        { "company": "ITC", "ticker": "ITC", "weight_pct": 4.02 },
+        { "company": "Kotak Mahindra Bank", "ticker": "KOTAKBANK", "weight_pct": 3.55 },
+        { "company": "Mahindra & Mahindra", "ticker": "M&M", "weight_pct": 2.38 },
+        { "company": "HCL Technologies", "ticker": "HCLTECH", "weight_pct": 2.21 },
+        { "company": "Eicher Motors", "ticker": "EICHERMOT", "weight_pct": 1.95 }
+    ]
+  },
+  {
+    "fund_name": "Mirae Asset Large Cap Fund",
+    "aum": 37375,
+    "constituents": [
+        { "company": "HDFC Bank", "ticker": "HDFCBANK", "weight_pct": 9.42 },
+        { "company": "ICICI Bank", "ticker": "ICICIBANK", "weight_pct": 8.01 },
+        { "company": "Reliance Industries", "ticker": "RELIANCE", "weight_pct": 7.37 },
+        { "company": "Infosys", "ticker": "INFY", "weight_pct": 5.43 },
+        { "company": "Larsen & Toubro", "ticker": "LT", "weight_pct": 5.09 },
+        { "company": "State Bank of India", "ticker": "SBIN", "weight_pct": 3.96 },
+        { "company": "Bharti Airtel", "ticker": "BHARTIARTL", "weight_pct": 3.82 },
+        { "company": "Axis Bank", "ticker": "AXISBANK", "weight_pct": 3.7 },
+        { "company": "Mahindra & Mahindra", "ticker": "M&M", "weight_pct": 2.92 },
+        { "company": "ITC", "ticker": "ITC", "weight_pct": 2.5 }
+    ]
+  },
+  {
+    "fund_name": "Axis Bluechip Fund",
+    "aum": 31102,
+    "constituents": [
+        { "company": "ICICI Bank", "ticker": "ICICIBANK", "weight_pct": 9.57 },
+        { "company": "HDFC Bank", "ticker": "HDFCBANK", "weight_pct": 9.2 },
+        { "company": "Bajaj Finance", "ticker": "BAJFINANCE", "weight_pct": 7.55 },
+        { "company": "Infosys", "ticker": "INFY", "weight_pct": 6.84 },
+        { "company": "Reliance Industries", "ticker": "RELIANCE", "weight_pct": 5.11 },
+        { "company": "Tata Consultancy Services", "ticker": "TCS", "weight_pct": 4.96 },
+        { "company": "Avenue Supermarts", "ticker": "DMART", "weight_pct": 3.52 },
+        { "company": "Kotak Mahindra Bank", "ticker": "KOTAKBANK", "weight_pct": 3.12 },
+        { "company": "Maruti Suzuki India", "ticker": "MARUTI", "weight_pct": 2.37 },
+        { "company": "Nestle India", "ticker": "NESTLEIND", "weight_pct": 2.32 }
+    ]
+  },
+  {
+    "fund_name": "Parag Parikh Flexi Cap Fund",
+    "aum": 66947,
+    "constituents": [
+      { "company": "HDFC Bank", "ticker": "HDFCBANK", "weight_pct": 7.74 },
+      { "company": "Alphabet Inc (Google)", "ticker": "GOOGL", "weight_pct": 5.86 },
+      { "company": "Bajaj Holdings & Investment", "ticker": "BAJAJHLDNG", "weight_pct": 5.71 },
+      { "company": "ITC", "ticker": "ITC", "weight_pct": 5.02 },
+      { "company": "HCL Technologies", "ticker": "HCLTECH", "weight_pct": 4.98 },
+      { "company": "Microsoft Corp", "ticker": "MSFT", "weight_pct": 4.88 },
+      { "company": "Axis Bank", "ticker": "AXISBANK", "weight_pct": 4.67 },
+      { "company": "Power Grid Corp Of India", "ticker": "POWERGRID", "weight_pct": 3.99 },
+      { "company": "Maruti Suzuki India", "ticker": "MARUTI", "weight_pct": 3.88 },
+      { "company": "Coal India", "ticker": "COALINDIA", "weight_pct": 3.53 }
+    ]
+  },
+  {
+    "fund_name": "Quant Small Cap Fund",
+    "aum": 21243,
+    "constituents": [
+      { "company": "Reliance Industries", "ticker": "RELIANCE", "weight_pct": 9.53 },
+      { "company": "Jio Financial Services", "ticker": "JIOFIN", "weight_pct": 6.03 },
+      { "company": "IRB Infrastructure Developers", "ticker": "IRB", "weight_pct": 3.65 },
+      { "company": "Hindustan Copper", "ticker": "HINDCOPPER", "weight_pct": 3.25 },
+      { "company": "Housing & Urban Development Corp", "ticker": "HUDCO", "weight_pct": 3.19 },
+      { "company": "Aarvi Encon", "ticker": "AARVI", "weight_pct": 2.99 },
+      { "company": "RBL Bank", "ticker": "RBLBANK", "weight_pct": 2.9 },
+      { "company": "Adani Power", "ticker": "ADANIPOWER", "weight_pct": 2.65 },
+      { "company": "Steel Authority Of India", "ticker": "SAIL", "weight_pct": 2.45 },
+      { "company": "Engineers India", "ticker": "ENGINERSIN", "weight_pct": 2.38 }
+    ]
+  },
+  {
+    "fund_name": "Nippon India Small Cap Fund",
+    "aum": 51554,
+    "constituents": [
+      { "company": "Tube Investments of India", "ticker": "TIINDIA", "weight_pct": 2.11 },
+      { "company": "HDFC Bank", "ticker": "HDFCBANK", "weight_pct": 1.76 },
+      { "company": "Voltamp Transformers", "ticker": "VOLTAMP", "weight_pct": 1.48 },
+      { "company": "Apar Industries", "ticker": "APARINDS", "weight_pct": 1.41 },
+      { "company": "KPIT Technologies", "ticker": "KPITTECH", "weight_pct": 1.28 },
+      { "company": "Creditaccess Grameen", "ticker": "CREDITACC", "weight_pct": 1.13 },
+      { "company": "IDFC", "ticker": "IDFC", "weight_pct": 1.12 },
+      { "company": "Tejas Networks", "ticker": "TEJASNET", "weight_pct": 1.1 },
+      { "company": "Zensar Technologies", "ticker": "ZENSARTECH", "weight_pct": 1.05 },
+      { "company": "Bank of Baroda", "ticker": "BANKBARODA", "weight_pct": 1.04 }
+    ]
+  },
+  {
+    "fund_name": "DSP Small Cap Fund",
+    "aum": 13748,
+    "constituents": [
+        { "company": "Cyient", "ticker": "CYIENT", "weight_pct": 3.13 },
+        { "company": "IDFC", "ticker": "IDFC", "weight_pct": 2.92 },
+        { "company": "Ambuja Cements", "ticker": "AMBUJACEM", "weight_pct": 2.76 },
+        { "company": "Tata Motors", "ticker": "TATAMOTORS", "weight_pct": 2.51 },
+        { "company": "Cholamandalam Financial Holdings", "ticker": "CHOLAFIN", "weight_pct": 2.37 },
+        { "company": "Indusind Bank", "ticker": "INDUSINDBK", "weight_pct": 2.29 },
+        { "company": "Karur Vysya Bank", "ticker": "KARURVYSYA", "weight_pct": 2.17 },
+        { "company": "Suprajit Engineering", "ticker": "SUPRAJIT", "weight_pct": 2.05 },
+        { "company": "UCO Bank", "ticker": "UCOBANK", "weight_pct": 1.99 },
+        { "company": "Gujarat Pipavav Port", "ticker": "GPPL", "weight_pct": 1.95 }
+    ]
+  },
+  {
+    "fund_name": "Kotak Emerging Equity Fund",
+    "aum": 45018,
+    "constituents": [
+        { "company": "Supreme Industries", "ticker": "SUPREMEIND", "weight_pct": 3.49 },
+        { "company": "Solar Industries India", "ticker": "SOLARINDS", "weight_pct": 2.76 },
+        { "company": "SKF India", "ticker": "SKFINDIA", "weight_pct": 2.45 },
+        { "company": "Persistent Systems", "ticker": "PERSISTENT", "weight_pct": 2.44 },
+        { "company": "Schaeffler India", "ticker": "SCHAEFFLER", "weight_pct": 2.16 },
+        { "company": "Cummins India", "ticker": "CUMMINSIND", "weight_pct": 2.07 },
+        { "company": "Bharat Forge", "ticker": "BHARATFORG", "weight_pct": 1.98 },
+        { "company": "The Phoenix Mills", "ticker": "PHOENIXLTD", "weight_pct": 1.76 },
+        { "company": "Thermax", "ticker": "THERMAX", "weight_pct": 1.74 },
+        { "company": "Coromandel International", "ticker": "COROMANDEL", "weight_pct": 1.64 }
+    ]
+  },
+  {
+    "fund_name": "HDFC Mid-Cap Opportunities Fund",
+    "aum": 65394,
+    "constituents": [
+        { "company": "Tata Communications", "ticker": "TATACOMM", "weight_pct": 3.19 },
+        { "company": "Indian Hotels Company", "ticker": "INDHOTEL", "weight_pct": 2.97 },
+        { "company": "Max Financial Services", "ticker": "MFSL", "weight_pct": 2.79 },
+        { "company": "Hindustan Petroleum Corporation", "ticker": "HINDPETRO", "weight_pct": 2.51 },
+        { "company": "Cholamandalam Investment and Finance Company", "ticker": "CHOLAFIN", "weight_pct": 2.41 },
+        { "company": "Apollo Tyres", "ticker": "APOLLOTYRE", "weight_pct": 2.16 },
+        { "company": "Federal Bank", "ticker": "FEDERALBNK", "weight_pct": 2.07 },
+        { "company": "Hindustan Aeronautics", "ticker": "HAL", "weight_pct": 1.98 },
+        { "company": "Nippon Life India Asset Management", "ticker": "NAM-INDIA", "weight_pct": 1.92 },
+        { "company": "Coforge", "ticker": "COFORGE", "weight_pct": 1.83 }
+    ]
+  },
+  {
+    "fund_name": "Quant Mid Cap Fund",
+    "aum": 7953,
+    "constituents": [
+        { "company": "Reliance Industries", "ticker": "RELIANCE", "weight_pct": 9.4 },
+        { "company": "Punjab National Bank", "ticker": "PNB", "weight_pct": 6.32 },
+        { "company": "Linde India", "ticker": "LINDEINDIA", "weight_pct": 5.92 },
+        { "company": "Union Bank of India", "ticker": "UNIONBANK", "weight_pct": 5.43 },
+        { "company": "Jio Financial Services", "ticker": "JIOFIN", "weight_pct": 5.12 },
+        { "company": "Oracle Financial Services Software", "ticker": "OFSS", "weight_pct": 4.19 },
+        { "company": "Adani Power", "ticker": "ADANIPOWER", "weight_pct": 4.13 },
+        { "company": "Tata Communications", "ticker": "TATACOMM", "weight_pct": 3.86 },
+        { "company": "Steel Authority Of India", "ticker": "SAIL", "weight_pct": 3.32 },
+        { "company": "Gas Authority of India", "ticker": "GAIL", "weight_pct": 3.23 }
+    ]
+  },
+  {
+    "fund_name": "UTI Nifty 50 Index Fund",
+    "aum": 16930,
+    "constituents": [
+      { "company": "HDFC Bank", "ticker": "HDFCBANK", "weight_pct": 11.55 },
+      { "company": "Reliance Industries", "ticker": "RELIANCE", "weight_pct": 9.71 },
+      { "company": "ICICI Bank", "ticker": "ICICIBANK", "weight_pct": 7.92 },
+      { "company": "Infosys", "ticker": "INFY", "weight_pct": 5.13 },
+      { "company": "Larsen & Toubro", "ticker": "LT", "weight_pct": 4.54 },
+      { "company": "Tata Consultancy Services", "ticker": "TCS", "weight_pct": 3.84 },
+      { "company": "ITC", "ticker": "ITC", "weight_pct": 3.61 },
+      { "company": "Bharti Airtel", "ticker": "BHARTIARTL", "weight_pct": 3.51 },
+      { "company": "Axis Bank", "ticker": "AXISBANK", "weight_pct": 3.19 },
+      { "company": "Kotak Mahindra Bank", "ticker": "KOTAKBANK", "weight_pct": 2.87 }
+    ]
+  },
+  {
+    "fund_name": "HDFC Nifty 50 Index Fund",
+    "aum": 21323,
+    "constituents": [
+        { "company": "HDFC Bank", "ticker": "HDFCBANK", "weight_pct": 11.55 },
+        { "company": "Reliance Industries", "ticker": "RELIANCE", "weight_pct": 9.71 },
+        { "company": "ICICI Bank", "ticker": "ICICIBANK", "weight_pct": 7.92 },
+        { "company": "Infosys", "ticker": "INFY", "weight_pct": 5.13 },
+        { "company": "Larsen & Toubro", "ticker": "LT", "weight_pct": 4.54 },
+        { "company": "Tata Consultancy Services", "ticker": "TCS", "weight_pct": 3.84 },
+        { "company": "ITC", "ticker": "ITC", "weight_pct": 3.61 },
+        { "company": "Bharti Airtel", "ticker": "BHARTIARTL", "weight_pct": 3.51 },
+        { "company": "Axis Bank", "ticker": "AXISBANK", "weight_pct": 3.19 },
+        { "company": "State Bank of India", "ticker": "SBIN", "weight_pct": 2.8 }
+    ]
+  },
+  {
+    "fund_name": "ICICI Prudential Nifty 50 Index Fund",
+    "aum": 9124,
+    "constituents": [
+        { "company": "HDFC Bank", "ticker": "HDFCBANK", "weight_pct": 11.55 },
+        { "company": "Reliance Industries", "ticker": "RELIANCE", "weight_pct": 9.71 },
+        { "company": "ICICI Bank", "ticker": "ICICIBANK", "weight_pct": 7.92 },
+        { "company": "Infosys", "ticker": "INFY", "weight_pct": 5.13 },
+        { "company": "Larsen & Toubro", "ticker": "LT", "weight_pct": 4.54 },
+        { "company": "Tata Consultancy Services", "ticker": "TCS", "weight_pct": 3.84 },
+        { "company": "ITC", "ticker": "ITC", "weight_pct": 3.61 },
+        { "company": "Bharti Airtel", "ticker": "BHARTIARTL", "weight_pct": 3.51 },
+        { "company": "Axis Bank", "ticker": "AXISBANK", "weight_pct": 3.19 },
+        { "company": "Kotak Mahindra Bank", "ticker": "KOTAKBANK", "weight_pct": 2.87 }
+    ]
+  },
+  {
+    "fund_name": "Quant ELSS Tax Saver Fund",
+    "aum": 9860,
+    "constituents": [
+        { "company": "Reliance Industries", "ticker": "RELIANCE", "weight_pct": 9.72 },
+        { "company": "Adani Power", "ticker": "ADANIPOWER", "weight_pct": 4.88 },
+        { "company": "Jio Financial Services", "ticker": "JIOFIN", "weight_pct": 4.83 },
+        { "company": "Orchid Pharma", "ticker": "ORCHPHARMA", "weight_pct": 4.67 },
+        { "company": "Linde India", "ticker": "LINDEINDIA", "weight_pct": 4.39 },
+        { "company": "GAIL (India) Ltd", "ticker": "GAIL", "weight_pct": 4.3 },
+        { "company": "Punjab National Bank", "ticker": "PNB", "weight_pct": 4.25 },
+        { "company": "Steel Authority Of India", "ticker": "SAIL", "weight_pct": 3.64 },
+        { "company": "Strides Pharma Science", "ticker": "STAR", "weight_pct": 2.92 },
+        { "company": "Hindustan Copper", "ticker": "HINDCOPPER", "weight_pct": 2.87 }
+    ]
+  },
+  {
+    "fund_name": "Mirae Asset ELSS Tax Saver Fund",
+    "aum": 22621,
+    "constituents": [
+        { "company": "HDFC Bank", "ticker": "HDFCBANK", "weight_pct": 9.42 },
+        { "company": "ICICI Bank", "ticker": "ICICIBANK", "weight_pct": 7.73 },
+        { "company": "Reliance Industries", "ticker": "RELIANCE", "weight_pct": 7.15 },
+        { "company": "Larsen & Toubro", "ticker": "LT", "weight_pct": 5.48 },
+        { "company": "Infosys", "ticker": "INFY", "weight_pct": 4.82 },
+        { "company": "State Bank of India", "ticker": "SBIN", "weight_pct": 4.54 },
+        { "company": "Axis Bank", "ticker": "AXISBANK", "weight_pct": 4.14 },
+        { "company": "Bharti Airtel", "ticker": "BHARTIARTL", "weight_pct": 3.28 },
+        { "company": "Mahindra & Mahindra", "ticker": "M&M", "weight_pct": 2.62 },
+        { "company": "Sun Pharmaceutical Industries", "ticker": "SUNPHARMA", "weight_pct": 2.34 }
+    ]
+  },
+  {
+    "fund_name": "Canara Robeco Bluechip Equity Fund",
+    "aum": 12469,
+    "constituents": [
+        { "company": "HDFC Bank", "ticker": "HDFCBANK", "weight_pct": 9.29 },
+        { "company": "ICICI Bank", "ticker": "ICICIBANK", "weight_pct": 8.01 },
+        { "company": "Reliance Industries", "ticker": "RELIANCE", "weight_pct": 7.33 },
+        { "company": "Infosys", "ticker": "INFY", "weight_pct": 4.96 },
+        { "company": "Larsen & Toubro", "ticker": "LT", "weight_pct": 4.81 },
+        { "company": "State Bank of India", "ticker": "SBIN", "weight_pct": 3.73 },
+        { "company": "Bharti Airtel", "ticker": "BHARTIARTL", "weight_pct": 3.49 },
+        { "company": "ITC", "ticker": "ITC", "weight_pct": 2.91 },
+        { "company": "Tata Consultancy Services", "ticker": "TCS", "weight_pct": 2.47 },
+        { "company": "Asian Paints", "ticker": "ASIANPAINT", "weight_pct": 2.29 }
+    ]
+  },
+  {
+    "fund_name": "Invesco India Contra Fund",
+    "aum": 15324,
+    "constituents": [
+        { "company": "HDFC Bank", "ticker": "HDFCBANK", "weight_pct": 8.42 },
+        { "company": "ICICI Bank", "ticker": "ICICIBANK", "weight_pct": 6.83 },
+        { "company": "Reliance Industries", "ticker": "RELIANCE", "weight_pct": 6.22 },
+        { "company": "Infosys", "ticker": "INFY", "weight_pct": 4.29 },
+        { "company": "State Bank of India", "ticker": "SBIN", "weight_pct": 4.01 },
+        { "company": "Larsen & Toubro", "ticker": "LT", "weight_pct": 3.87 },
+        { "company": "ITC", "ticker": "ITC", "weight_pct": 3.25 },
+        { "company": "Sun Pharmaceutical Industries", "ticker": "SUNPHARMA", "weight_pct": 2.44 },
+        { "company": "Hindustan Unilever", "ticker": "HINDUNILVR", "weight_pct": 2.16 },
+        { "company": "Maruti Suzuki India", "ticker": "MARUTI", "weight_pct": 1.99 }
+    ]
+  }
+]
