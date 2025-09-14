@@ -270,6 +270,42 @@
       }
     ]
   },
+   "article_schema": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Mutual Fund Scheme Selector 2025 — Find & Compare Best Funds for Your Goal (India, 2025)",
+    "author": {
+      "@type": "Person",
+      "name": "Mahesh Chaube, CFP"
+    },
+    "datePublished": "2025-08-15",
+    "dateModified": "2025-09-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "BharatSaver",
+      "logo": {
+        "@type": "ImageObject"
+      }
+    },
+    "reviewedBy": {
+        "@type": "Person",
+        "name": "Laveena Vijayi",
+        "jobTitle": "Head of Mutual Fund Research, BharatSaver"
+    }
+  },
+  "how_to_schema": {
+    "@context":"https://schema.org",
+    "@type":"HowTo",
+    "name":"How to Choose a Mutual Fund in India",
+    "description":"A 5-step guide to selecting the right mutual fund scheme for your financial goals using our interactive screener.",
+    "step":[
+      {"@type":"HowToStep","name":"Step 1: Define Goal & Risk","text":"Choose your financial goal (e.g., retirement, tax saving) and your personal risk tolerance (low, medium, or high)."},
+      {"@type":"HowToStep","name":"Step 2: Filter the Universe","text":"Use the screener to filter funds by category (e.g., Large Cap, ELSS), AUM, and expense ratio to create a shortlist."},
+      {"@type":"HowToStep","name":"Step 3: Compare Top 3 Funds","text":"Select your top 2-3 funds from the list to prepare them for a side-by-side comparison."},
+      {"@type":"HowToStep","name":"Step 4: Check Portfolio Overlap","text":"Run the comparison to check the weighted portfolio overlap. If it's over 30%, consider replacing one fund to ensure true diversification."},
+      {"@type":"HowToStep","name":"Step 5: Review Final Details","text":"Check the fund manager's tenure, exit loads, and the fund house's reputation before investing."}
+    ]
+  },
   "tools_downloads": {
     "h2": "Tools & Downloads to Supercharge Your Analysis",
     "intro": "Take your analysis offline or explore related calculators to build a complete financial picture.",

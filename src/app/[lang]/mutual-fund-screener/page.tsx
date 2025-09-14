@@ -1,5 +1,4 @@
 
-
 import { getDictionary } from "@/lib/dictionaries";
 import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
@@ -35,17 +34,17 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     }
   };
 
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": dict.h1,
-    "author":{"@type":"Person","name":"Mahesh Chaube","jobTitle":"CFP","url":`${siteUrl}/${params.lang}/author/mahesh-chaube`},
-    "datePublished":"2025-08-15",
-    "dateModified":"2025-09-01",
-    "publisher":{"@type":"Organization","name":"BharatSaver","logo":{"@type":"ImageObject","url":`${siteUrl}/icon.svg`}}
+  const articleSchema = dict.article_schema;
+  articleSchema.mainEntityOfPage = {
+      "@type": "WebPage",
+      "@id": pageUrl
   };
+   articleSchema.author.url = `${siteUrl}/${params.lang}/author/mahesh-chaube`;
+   articleSchema.publisher.logo["@id"] = `${siteUrl}/icon.svg`;
+
 
   const faqSchema = dict.faq_json_ld;
+  const howToSchema = dict.how_to_schema;
   
   return {
     title: dict.meta_title,
@@ -58,7 +57,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       }, {} as Record<string, string>),
     },
     other: {
-      'application/ld+json': JSON.stringify([faqSchema, softwareSchema, articleSchema]),
+      'application/ld+json': JSON.stringify([faqSchema, softwareSchema, articleSchema, howToSchema]),
     },
   };
 }
@@ -292,3 +291,5 @@ export default async function MutualFundScreenerPage({ params }: { params: { lan
     </div>
   );
 }
+
+    
