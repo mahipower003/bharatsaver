@@ -99,12 +99,6 @@
     "review_text": "Reviewed & Verified by <strong>Laveena Vijayi</strong> — Senior Financial Research Analyst — BharatSaver Editorial Team.",
     "author_page_link": "View all articles"
   },
-  "author_page": {
-    "meta_title": "About Mahesh Chaube, CFP - Lead Author at BharatSaver",
-    "meta_description": "Learn more about Mahesh Chaube, a Certified Financial Planner and the lead financial expert behind the tools and guides at BharatSaver.",
-    "h2": "Calculators & Articles by Mahesh Chaube",
-    "view_calculator": "View Calculator"
-  },
    "contact_page": {
     "meta_title": "Contact Us | BharatSaver",
     "meta_description": "Get in touch with the BharatSaver team for questions, feedback, or inquiries. We're here to help you answer your financial questions.",
@@ -132,26 +126,26 @@
     "results_placeholder": "Results matching your search criteria will be displayed here."
   },
   "ppf_calculator": {
-    "meta_title": "PPF Calculator 2025 — Calculate PPF Maturity Online (India)",
-    "meta_description": "Free PPF calculator for 2025: Instantly estimate PPF maturity, interest, and tax savings (EEE). Includes year-wise charts, extension rules, and comparison with FD, NPS, and SSY.",
-    "h1": "PPF Calculator 2025 — Calculate Maturity & Tax-Free Returns (India)",
-    "description": "Use our free PPF Calculator to estimate how much you'll get from your Public Provident Fund (PPF) investment over time. Get instant results for maturity amount, total interest earned, and a year-wise breakdown, all using current government interest rates. Try it now to plan your savings with confidence!",
+    "meta_title": "PPF Calculator (2025): How Much Will Your PPF Grow To? (India)",
+    "meta_description": "Free PPF Calculator for 2025. Instantly see how much your PPF will be worth at maturity, how much interest you’ll earn, and your year-by-year growth. Updated with the latest 7.1% rate.",
+    "h1": "PPF Calculator: How Much Will Your PPF Grow To in 2025?",
+    "description": "Ever wonder what your PPF account could be worth in 15, 20, or even 30 years? I've designed this free calculator to give you instant clarity. Just enter your annual investment, and I'll show you your exact maturity amount, total tax-free interest, and a year-by-year projection based on the current government rates. Let's plan your secure financial future, together.",
     "last_updated": "Last updated:",
-    "annual_investment_label": "Annual Investment (₹)",
+    "annual_investment_label": "Your Annual Investment (₹)",
     "annual_investment_placeholder": "e.g., 1,50,000",
     "tenure_label": "Investment Tenure (Years)",
-    "interest_rate_label": "Annual Interest Rate (%)",
+    "interest_rate_label": "Current Annual Interest Rate (%)",
     "interest_rate_placeholder": "e.g., 7.1",
-    "calculate_button": "Calculate Projection",
-    "loading": "Calculating...",
-    "results_title": "Your PPF Projection",
-    "maturity_value": "Maturity Value",
-    "total_investment": "Total Investment",
-    "total_interest": "Total Interest Earned",
+    "calculate_button": "Calculate My PPF Growth",
+    "loading": "Calculating your future...",
+    "results_title": "Here's Your PPF Projection",
+    "maturity_value": "Your Final Maturity Value",
+    "total_investment": "Your Total Investment",
+    "total_interest": "Your Tax-Free Interest",
     "view_chart": "Chart",
     "view_table": "Table",
-    "yearly_breakdown_title": "Year-wise Breakdown",
-    "export_csv": "Export CSV",
+    "yearly_breakdown_title": "Your Year-by-Year Growth",
+    "export_csv": "Export as CSV",
     "table_year": "Year",
     "table_opening_balance": "Opening Balance",
     "table_amount_invested": "Amount Invested",
@@ -159,50 +153,50 @@
     "table_closing_balance": "Closing Balance",
     "title": "PPF Calculator",
     "advantages": {
-      "title": "Why Should You Use an Online PPF Calculator?",
-      "intro": "A PPF Calculator makes it easy to plan your long-term savings. Instead of doing manual math, you get instant, accurate results. Here’s what you can do with it:",
+      "title": "Why a PPF Calculator is Your Best Friend for Financial Planning",
+      "intro": "Forget manual spreadsheets and confusing formulas. An online PPF calculator is the smartest way to plan your long-term savings. Here’s what it does for you:",
       "points": [
-        "Get Instant Answers: See exactly how much you’ll have after 15 years.",
-        "Track Your Growth: Check your year-by-year balance with total clarity.",
-        "Plan Your Deposits: Compare how annual vs. monthly contributions affect your final amount.",
-        "Handle Rate Changes: Easily simulate what happens if the government changes the interest rate.",
-        "Plan for Your Goals: Confidently plan for retirement, a child’s education, or buying a house.",
-        "Compare Your Options: See how PPF stacks up against an FD, NPS, or a mutual fund SIP with real numbers.",
-        "Save Time and Effort: Avoid complicated formulas and potential errors—our tool does the hard work for you."
+        "Get Instant Answers: See exactly what your money will grow to after 15 years or more.",
+        "Visualize Your Growth: The year-by-year breakdown gives you a clear picture of your money compounding.",
+        "Plan Your Deposits Smartly: See how different annual investment amounts impact your final corpus.",
+        "Stay Updated: Easily adjust for any future changes in government interest rates.",
+        "Plan for Your Biggest Goals: Confidently map out your savings for retirement, a child's education, or buying a home.",
+        "Compare Your Options: See exactly how PPF stacks up against an FD or NPS with real numbers.",
+        "Save Time and Effort: Let the tool do the hard work for you, accurately and instantly."
       ],
-      "conclusion": "👉 A PPF calculator isn’t just a tool; it’s a financial co-pilot that helps you make smarter decisions with your money."
+      "conclusion": "👉 A PPF calculator isn’t just a tool; it’s your financial co-pilot, helping you make smarter, more confident decisions with your money."
     },
     "tax_benefits": {
-      "title": "Do You Get Tax Benefits on a PPF Account?",
-      "intro": "Yes! The Public Provident Fund (PPF) is one of the few investments in India offering the powerful EEE (Exempt-Exempt-Exempt) tax status. Here’s what that means for you:",
-      "contribution_title": "1. Tax Exemption When You Invest",
-      "contribution_body": "You can claim a deduction of up to ₹1.5 lakh each financial year under <a href='https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Section 80C of the Income Tax Act</a>. <br/>👉 <strong>Example:</strong> If your taxable income is ₹10 lakh and you invest ₹1.5 lakh in PPF, your taxable income drops to just ₹8.5 lakh.",
-      "interest_title": "2. Tax Exemption on Your Earnings",
-      "interest_body": "The annual interest added to your PPF account is completely tax-free. Unlike bank FDs, you don’t pay any tax on the interest your PPF account earns.",
-      "maturity_title": "3. Tax Exemption When You Withdraw",
-      "maturity_body": "After 15 years, the entire maturity amount you withdraw (your principal + all the interest earned) is fully exempt from tax.",
-      "why_matters": "✨ <strong>Why this matters to you:</strong> PPF is one of the safest, government-backed schemes where your investment, your returns, and your final payout are all completely tax-free—a rare and powerful advantage.",
+      "title": "The Magic of PPF: Understanding Its EEE Tax Benefits",
+      "intro": "The Public Provident Fund (PPF) is one of the very few investments in India that offers the powerful EEE (Exempt-Exempt-Exempt) tax status. As a financial planner, this is one of the first things I tell my clients about. Here’s what it means for your money:",
+      "contribution_title": "1. Save Tax When You Invest (Exempt)",
+      "contribution_body": "You can claim a tax deduction of up to ₹1.5 lakh each financial year under <a href='https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx' target='_blank' rel='noopener noreferrer' class='underline'>Section 80C of the Income Tax Act</a>. <br/>👉 <strong>Here’s a simple example:</strong> If your taxable income is ₹10 lakh and you invest ₹1.5 lakh in PPF, your taxable income instantly drops to just ₹8.5 lakh.",
+      "interest_title": "2. Your Earnings are Tax-Free (Exempt)",
+      "interest_body": "The annual interest added to your PPF account is completely tax-free. Unlike a bank FD, where you pay tax on the interest earned every year, your PPF interest grows untouched by the taxman.",
+      "maturity_title": "3. Your Final Payout is Tax-Free (Exempt)",
+      "maturity_body": "After 15 years, the entire maturity amount you withdraw—your original investment plus all the interest you've earned over the years—is fully exempt from tax. Not a single rupee of tax is due.",
+      "why_matters": "✨ <strong>Why this is a game-changer for you:</strong> PPF is one of the safest, government-backed schemes where your investment, your returns, and your final payout are all completely tax-free. This is a rare and powerful advantage for building long-term wealth.",
       "footer_note": "You can always verify the official PPF rules on the <a href='https://www.nsiindia.gov.in/ppf.aspx' target='_blank' rel='noopener noreferrer' class='underline'>National Savings Institute website</a> ✅"
     },
     "rules": {
-      "title": "PPF Rules You Should Know in 2025",
+      "title": "PPF Rules You Need to Know for 2025",
       "points": [
-        "<strong>Annual Deposit Limit:</strong> You can invest a maximum of ₹1.5 lakh and a minimum of ₹500 per year.",
-        "<strong>Lock-in Period:</strong> Your money is locked in for 15 years, but you can extend it in blocks of 5 years after that.",
-        "<strong>Partial Withdrawals:</strong> You can take out some money starting from the 7th financial year, subject to certain rules.",
-        "<strong>Loan Facility:</strong> Need funds? You can take a loan against your PPF balance from the 3rd year. (<a href='https://www.sbi.co.in/web/personal-banking/investments-deposits/govt-schemes/public-provident-fund' target='_blank' rel='noopener noreferrer' class='underline'>Learn more at SBI</a>)",
-        "<strong>Tax Status:</strong> Your contributions up to ₹1.5 lakh are deductible under Section 80C, and all interest and maturity proceeds are tax-free (EEE status). (<a href='https://www.hdfcbank.com/personal/save/accounts/public-provident-fund' target='_blank' rel='noopener noreferrer' class='underline'>See HDFC Bank details</a>)"
+        "<strong>Annual Deposit Limit:</strong> You can invest a maximum of ₹1.5 lakh and a minimum of ₹500 per year. This flexibility is great for getting started.",
+        "<strong>Lock-in Period:</strong> Your money is locked in for 15 years, which encourages disciplined long-term saving. You can then extend it in blocks of 5 years.",
+        "<strong>Partial Withdrawals:</strong> Need funds in an emergency? You can withdraw a portion of your balance starting from the 7th financial year, subject to certain limits.",
+        "<strong>Loan Facility:</strong> You can take a loan against your PPF balance between the 3rd and 6th years of the account, which adds a layer of liquidity. (<a href='https://www.sbi.co.in/web/personal-banking/investments-deposits/govt-schemes/public-provident-fund' target='_blank' rel='noopener noreferrer' class='underline'>Learn more at SBI</a>)",
+        "<strong>The EEE Advantage:</strong> Your contributions, interest, and final maturity amount are all tax-free. This is the scheme's superpower. (<a href='https://www.hdfcbank.com/personal/save/accounts/public-provident-fund' target='_blank' rel='noopener noreferrer' class='underline'>See HDFC Bank details</a>)"
       ],
-      "footer_note": "Rates are reviewed quarterly by the Ministry of Finance, GoI. We automatically update the rate on this page to reflect the latest changes."
+      "footer_note": "The PPF interest rate is reviewed quarterly by the Ministry of Finance. We automatically update the rate on this page to reflect the latest changes, so you're always getting the most accurate calculation."
     },
     "historical_rates": {
-      "title": "PPF Interest Rates: A Look at the Last 10 Years",
-      "intro": "Curious how PPF rates have changed? Here’s a quick look back since 2015:",
+      "title": "PPF Interest Rates: A Look Back at the Last 10 Years",
+      "intro": "Wondering how PPF rates have performed over time? It's a great question. Here’s a quick look back since 2015:",
       "table": {
         "headers": ["Time Period", "Interest Rate (%)"],
         "rows": [
           ["April 2025 – June 2025 (latest)", "7.1%"],
-          ["2015–2016 (approx)", "8.1%"],
+          ["2015–2016", "~8.1%"],
           ["2016–2017", "~8.0%"],
           ["2017–2018", "7.9% → 7.6%"],
           ["2018–2019", "7.8% → 8.0%"],
@@ -211,25 +205,25 @@
         ]
       },
       "sources": "These rates are sourced from credible government and financial platforms like the <a href='https://www.nsiindia.gov.in/' target='_blank' rel='noopener noreferrer' class='underline'>National Savings Institute</a> and <a href='https://groww.in/p/ppf-interest-rate' target='_blank' rel='noopener noreferrer' class='underline'>Groww</a>.",
-      "insight": "<strong>What this tells you:</strong> In the past decade, rates have gradually declined from the 8%-8.8% range seen in 2012-2016, settling at a stable 7.1% since 2020."
+      "insight": "<strong>What this tells you:</strong> In the past decade, rates have gradually declined from the 8%-8.8% range seen in 2012-2016, settling at a stable 7.1% since 2020. This stability makes it a reliable part of your portfolio."
     },
     "investment_strategy": {
-        "title": "Your Best PPF Investment Strategy for Maximum Returns",
-        "intro": "Want to get the most interest out of your PPF account? Timing is key. Here are the top strategies you should follow:",
+        "title": "My Pro-Tip for Maximizing Your PPF Returns",
+        "intro": "As a financial planner, I get this question all the time: 'How can I get the absolute most out of my PPF account?' The secret is all in the timing. Here are the top strategies I share with my clients:",
         "points": [
-            "<strong>Pro-Tip: Invest Before the 5th of the Month.</strong> Interest for any given month is calculated on the lowest balance recorded between the 5th and the last day. By depositing your money before the 5th, you ensure you earn interest for that entire month. If you deposit after the 5th, you lose out on a full month's interest for that amount.",
-            "<strong>Lump Sum vs. Monthly: Which is better for you?</strong> If you have the funds, depositing the full ₹1.5 lakh at the start of the financial year (before April 5th) will maximize your returns for the entire year. If a lump sum isn't possible, a monthly deposit made before the 5th of each month is the next best strategy."
+            "<strong>The Golden Rule: Invest Before the 5th of the Month.</strong> Here's why this is crucial: PPF interest for any given month is calculated on the lowest balance recorded between the 5th and the last day. By depositing your money before the 5th, you ensure that new deposit earns interest for the entire month. If you deposit after the 5th, you lose out on a full month's interest for that amount. It's a small change that makes a big difference over 15 years.",
+            "<strong>Lump Sum vs. Monthly: Which is Better for You?</strong> If you have the funds, making a one-time, lump-sum deposit of your full ₹1.5 lakh at the very start of the financial year (before April 5th) will maximize your returns for the entire year. It's the most efficient way to invest. If a lump sum isn't possible, a monthly deposit made before the 5th of each month is the next best strategy to keep your money working hard for you."
         ]
     },
     "how_to_open": {
-        "title": "How Can You Open a PPF Account Online?",
-        "intro": "Opening a PPF account is simple and can be done online through most major banks or at a Post Office. Here are the steps you’ll generally follow:",
+        "title": "How to Open a PPF Account Online (It's Easier Than You Think!)",
+        "intro": "Opening a PPF account is a simple process and can be done online through most major banks or at your local Post Office. Here are the steps you’ll generally follow:",
         "steps": [
-            "<strong>Choose Your Bank or Post Office:</strong> Decide where you want to open the account. Most nationalized banks (like SBI, HDFC, ICICI) and Post Offices offer this facility.",
-            "<strong>Fill Out the Application Form:</strong> You can download the PPF Account Opening Form (Form A) from your chosen bank's website or get a physical copy from a branch.",
+            "<strong>Choose Your Bank or Post Office:</strong> Decide where you feel most comfortable opening the account. Most nationalized banks (like SBI, HDFC, ICICI) and Post Offices offer this facility.",
+            "<strong>Fill Out the Application Form:</strong> You can usually download the PPF Account Opening Form (Form A) from your chosen bank's website or get a physical copy from a branch.",
             "<strong>Submit Your KYC Documents:</strong> You will typically need your PAN card, Aadhaar card (for address and identity proof), and a few passport-sized photographs.",
-            "<strong>Make Your First Deposit:</strong> You can start with as little as ₹500. You can usually pay this by cheque, cash (at the branch), or an online transfer.",
-            "<strong>Receive Your Passbook:</strong> Once your application is processed, you'll receive a passbook containing all your PPF account details. Your account is now active!"
+            "<strong>Make Your First Deposit:</strong> You can start your PPF journey with as little as ₹500. You can usually pay this by cheque, cash (at the branch), or a simple online transfer.",
+            "<strong>Receive Your Passbook:</strong> Once your application is processed, you'll receive a passbook containing all your PPF account details. Congratulations, your account is now active and on its way to building wealth!"
         ],
         "links": [
             { "text": "Open PPF with SBI", "href": "https://www.sbi.co.in/web/personal-banking/investments-deposits/govt-schemes/public-provident-fund" },
@@ -238,34 +232,34 @@
         ]
     },
     "comparison": {
-      "title": "PPF vs FD vs NPS vs SSY — Which is Better for You in 2025?",
+      "title": "PPF vs FD vs NPS: Which is the Right Choice for You?",
       "table": {
-        "headers": ["Feature", "PPF", "Fixed Deposit (FD)", "NPS", "Mutual Funds (ELSS)", "Sukanya Samriddhi (SSY)"],
+        "headers": ["Feature", "PPF", "Fixed Deposit (FD)", "NPS", "Mutual Funds (ELSS)"],
         "rows": [
-          ["Return Type", "Guaranteed (Govt)", "Fixed (Bank-specific)", "Market-linked", "Market-linked", "Guaranteed (Govt)"],
-          ["Tax Treatment", "Tax-free (EEE)", "Taxable", "Partially Taxable", "LTCG Taxable", "Tax-free (EEE)"],
-          ["Lock-in Period", "15 years", "Flexible", "Till retirement", "3 years", "21 years"],
-          ["Best For", "Long-term, secure, tax-free savings", "Short/medium-term needs", "Retirement planning", "Wealth creation", "Girl child's future"]
+          ["Return Type", "Guaranteed (Govt)", "Fixed (Bank-specific)", "Market-linked", "Market-linked"],
+          ["Tax Treatment", "Tax-free (EEE)", "Taxable", "Partially Taxable", "LTCG Taxable"],
+          ["Lock-in Period", "15 years", "Flexible", "Till retirement", "3 years"],
+          ["Best For", "Long-term, secure, tax-free savings", "Short/medium-term needs", "Retirement planning", "Wealth creation"]
         ]
       },
-      "footer_note": "<strong>What's Next?</strong> Explore our <a href='/{lang}/fd-vs-ppf-calculator' class='underline'>FD vs PPF Calculator</a>, <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a>, and <a href='/{lang}/ssy-calculator' class='underline'>SSY Calculator</a> to compare returns and make informed decisions."
+      "footer_note": "<strong>Ready to compare?</strong> Explore our <a href='/{lang}/fd-vs-ppf-calculator' class='underline'>FD vs PPF Calculator</a> and <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> to see exactly how the numbers stack up for your investment amount."
     },
     "faq_title": "Frequently Asked Questions",
     "faqs": [
       {
         "question": "What is the current PPF interest rate for 2025?",
-        "answer": "The PPF rate is reviewed quarterly by the Ministry of Finance. For the current quarter, it is 7.1%. This calculator is automatically updated with the latest official rates."
+        "answer": "For the current quarter (April-June 2025), the PPF interest rate is 7.1%. This rate is reviewed by the Ministry of Finance every quarter, and our calculator is always updated with the latest official rate."
       },
-      { "question": "What is the maximum deposit allowed in PPF?", "answer": "You can deposit a maximum of ₹1,50,000 in a single financial year." },
-      { "question": "Can I extend my PPF after 15 years?", "answer": "Yes, you can extend your PPF account in blocks of 5 years with or without making further contributions. An extended account with contributions continues to earn tax-free interest on the entire balance." },
-      { "question": "Can I open multiple PPF accounts?", "answer": "No, an individual can only open one PPF account in their name." },
-      { "question": "How is PPF interest calculated monthly?", "answer": "Interest is calculated on the lowest balance between the close of the fifth day and the last day of every month. However, the interest is credited to the account only at the end of the financial year." },
-      { "question": "Is there any penalty for missed deposits?", "answer": "If you fail to deposit the minimum amount of ₹500 in a financial year, the account becomes inactive. You can reactivate it by paying a penalty of ₹50 per year of inactivity, along with the minimum deposit for each inactive year." },
-      { "question": "How is PPF different from Sukanya Samriddhi Yojana (SSY)?", "answer": "PPF is a general long-term savings scheme for any resident Indian, while SSY is specifically designed for the financial security of a girl child. SSY typically offers a slightly higher interest rate but has stricter eligibility criteria." }
+      { "question": "What is the maximum amount I can deposit in PPF?", "answer": "You can deposit a maximum of ₹1,50,000 in a single financial year. The minimum is ₹500 to keep the account active." },
+      { "question": "Can I extend my PPF account after 15 years?", "answer": "Absolutely! You can extend your PPF account in blocks of 5 years after the initial 15-year term. You can choose to extend it with or without making further contributions, and your entire balance will continue to earn tax-free interest." },
+      { "question": "Can I have more than one PPF account?", "answer": "No, an individual can only have one PPF account in their name. You can, however, open an account on behalf of a minor." },
+      { "question": "How is PPF interest calculated?", "answer": "Interest is calculated monthly on the lowest balance between the 5th and the last day of the month. However, the total interest is credited to your account at the end of the financial year on March 31st." },
+      { "question": "What happens if I miss a deposit?", "answer": "If you don't deposit the minimum ₹500 in a financial year, the account becomes inactive. To reactivate it, you'll need to pay a penalty of ₹50 for each inactive year, along with the minimum deposit for each year you missed." },
+      { "question": "How is PPF different from Sukanya Samriddhi Yojana (SSY)?", "answer": "While both are excellent government-backed savings schemes, PPF is for any resident Indian, whereas SSY is exclusively for the financial security of a girl child. SSY often offers a slightly higher interest rate but has stricter eligibility criteria focused on the girl's age." }
     ],
     "conclusion": {
-      "title": "Final Thoughts: Is PPF Right for You?",
-      "body": "The Public Provident Fund remains one of the safest and most reliable long-term investment tools for Indian citizens. Its tax-free nature (EEE status), combined with a government-guaranteed return, makes it an essential part of any diversified portfolio, especially for risk-averse investors planning for major life goals like retirement or children's education. Use this calculator to see how small, consistent investments can grow into a significant, tax-free corpus over time."
+      "title": "My Final Thoughts: Is PPF Right for You?",
+      "body": "As a financial planner, I see PPF as a cornerstone of a solid, long-term portfolio. Its combination of government-backed safety, a competitive guaranteed return, and unbeatable tax-free (EEE) status makes it an essential tool for almost every Indian saver. Whether you're planning for a worry-free retirement or building a fund for your child's education, PPF provides the discipline and security you need. Use this calculator to see for yourself how small, consistent investments can grow into a significant, tax-free corpus over time."
     }
   },
   "ssy_calculator": {
@@ -1062,7 +1056,7 @@
     },
     "accumulation_strategy": {
       "h2": "How to Build Your Retirement Corpus (Investment Strategies)",
-      "body": "<h3>Choosing Your Investment Path: SIP vs. Lumpsum</h3><p>A <strong>Systematic Investment Plan (SIP)</strong> is the most disciplined approach. You invest a fixed amount regularly (e.g., monthly), which helps you average out market fluctuations (rupee-cost averaging) and benefit from compounding. It's perfect for building wealth steadily over time. For even faster growth, consider a <strong>Step-up SIP</strong>, where you increase your monthly investment amount annually, typically in line with your salary hike (e.g., by 10%).</p><h3>Asset Allocation by Age</h3><p>Your investment strategy shouldn't be static. As you get closer to retirement, you should gradually shift from high-risk, high-return assets to safer options to protect your capital.</p><ul><li><strong>In your 20s & 30s:</strong> Be aggressive. A portfolio with 70-80% in equities (like mutual funds) can generate higher returns in the long run.</li><li><strong>In your 40s:</strong> Start balancing your risk. A 60:40 split between equity and debt is a common strategy.</li><li><strong>In your 50s and beyond:</strong> It's time to preserve your capital. Shift your portfolio to be debt-heavy (70-80% in fixed-income instruments).</li></ul><h3>How PPF, NPS, &amp; EPF Fit Into Your Plan</h3><p>These are the cornerstones of retirement planning in India. Your current savings in these instruments give you a massive head start. Use them to form the debt/fixed-income portion of your portfolio. Explore our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> and <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> to see how they grow.</p>",
+      "body": "<h3>Choosing Your Investment Path: SIP vs. Lumpsum</h3><p>A <strong>Systematic Investment Plan (SIP)</strong> is the most disciplined approach. You invest a fixed amount regularly (e.g., monthly), which helps you average out market fluctuations (rupee-cost averaging) and benefit from compounding. It's perfect for building wealth steadily over time. For even faster growth, consider a <strong>Step-up SIP</strong>, where you increase your monthly investment amount annually, typically in line with your salary hike (e.g., by 10%).</p><h3>Asset Allocation by Age</h3><p>Your investment strategy shouldn't be static. As you get closer to retirement, you should gradually shift from high-risk, high-return assets to safer options to protect your capital.</p><ul><li><strong>In your 20s & 30s:</strong> Be aggressive. A portfolio with 70-80% in equities (like mutual funds) can generate higher returns in the long run.</li><li><strong>In your 40s:</strong> Start balancing your risk. A 60:40 split between equity and debt is a common strategy.</li><li><strong>In your 50s and beyond:</strong> It's time to preserve your capital. Shift your portfolio to be debt-heavy (70-80% in fixed-income instruments).</li></ul><h3>How PPF, NPS, & EPF Fit Into Your Plan</h3><p>These are the cornerstones of retirement planning in India. Your current savings in these instruments give you a massive head start. Use them to form the debt/fixed-income portion of your portfolio. Explore our <a href='/{lang}/ppf-calculator' class='underline'>PPF Calculator</a> and <a href='/{lang}/nps-calculator' class='underline'>NPS Calculator</a> to see how they grow.</p>",
       "sip_plans": {
         "title": "Sample SIP Plans to Reach Your Goal",
         "body": "This table shows the approximate monthly SIP required to reach common retirement corpus goals from different starting ages, assuming a 12% annual return."
@@ -1275,7 +1269,7 @@
     },
     "tax_rules": {
       "h2": "Taxation & Withdrawal Rules (India-specific)",
-      "body": "<h3>Is UPS pension taxable?</h3><p>The monthly pension received from UPS is generally taxable as 'Income from Salary'. A lump sum amount received on commutation may be partially or fully exempt under Section 10(10A) of the Income Tax Act. The rules around UPS pension tax treatment can be complex, and it is crucial to understand whether your UPS pension is taxable based on your specific situation. Please consult a Chartered Accountant for personalized tax advice.</p><h3>Can I commute UPS pension?</h3><p>As this is a government pension scheme, there are no exit loads. Rules for withdrawal and commutation are governed by service rules. It's important to note that this is not financial or tax advice; always consult a professional for guidance tailored to your circumstances.</p>"
+      "body": "<h3>Is UPS pension taxable?</h3><p>The monthly pension received from UPS is generally taxable as 'Income from Salary'. A lump sum amount received on commutation may be partially or fully exempt under Section 10(10A) of the Income Tax Act. The rules around UPS pension tax treatment can be complex, and it is crucial to understand whether your UPS pension is taxable based on your specific situation. Please consult a Chartered Accountant for personalized tax advice.</p><h3>Can I commute UPS pension?</h3><p>As this is a government pension scheme, there are no exit loads. Rules for withdrawal and commutation are governed by service rules. It's important to note that this is not financial advice; always consult a professional for guidance tailored to your circumstances.</p>"
     },
     "optimization": {
       "h2": "How to Optimize Your UPS Pension",
@@ -1287,12 +1281,12 @@
     },
     "faq_title": "Frequently Asked Questions",
     "faqs": [
-      {"q": "What is the UPS pension formula?","a":"Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor. Pensionable Salary = Basic × (1 + DA%/100)."},
-      {"q": "How do I calculate my monthly UPS pension?","a":"Enter Basic Pay, DA% and qualifying service into the calculator to get an instant result and a step-by-step transcript."},
-      {"q": "What inputs do I need for the UPS Pension Calculator?","a":"Last drawn Basic Pay, DA percentage, total qualifying service (years + months), and retirement/joining dates (optional)."},
-      {"q": "How is the pensionable salary calculated under UPS?","a":"Pensionable Salary = Basic Pay × (1 + DA%/100). Many schemes use an average of last 10–12 months; see Methodology for details."},
-      {"q": "How much family pension will my spouse get under UPS?","a":"Family pension is typically 60% of the original monthly pension; the calculator shows this by default and notes scheme variations."},
-      {"q": "Can I download the UPS pension calculation as an Excel file?","a":"Yes — the Download Excel button exports inputs, the step-by-step transcript, and the worked example table."}
+        {"q": "What is the UPS pension formula?","a":"Monthly Pension = (Pensionable Salary × Pension Factor × Qualifying Service) / Divisor. Pensionable Salary is generally the basic pay adjusted for DA (Basic × (1 + DA%/100)). Pension Factor and Divisor vary by scheme; our calculator uses Pension Factor = 0.5 and Divisor = 33 by default (we note scheme exceptions in Methodology)."},
+        {"q": "How do I calculate my monthly UPS pension?","a":"Enter your last drawn Basic Pay, DA percentage and qualifying years of service into the calculator. The tool computes Pensionable Salary, applies the standard pension factor and divisor, and returns the monthly pension. A step-by-step numeric transcript is shown so you can verify each calculation."},
+        {"q": "What inputs do I need for the UPS Pension Calculator?","a":"Last drawn Basic Pay, Dearness Allowance (DA) % or amount, total qualifying service (years + months), and optionally your retirement age or date of joining/retirement to auto-calc service length."},
+        {"q": "How is the pensionable salary calculated under UPS?","a":"Pensionable Salary used here = Basic Pay × (1 + DA%/100). Many schemes average basic pay over the last 10–12 months; our tool uses last-drawn basic as the default and documents this assumption in Methodology."},
+        {"q": "How much family pension will my spouse get under UPS?","a":"Family pension is commonly around 60% of the original monthly pension (scheme-specific). The calculator shows the family pension value using 60% by default and notes exceptions where the scheme prescribes different percentages."},
+        {"q": "Can I download the UPS pension calculation as an Excel file?","a":"Yes — after running a calculation click Download Excel to get a spreadsheet containing inputs, the calculation transcript, and a worked example table for exports and record-keeping."}
     ],
     "disclaimer": {
       "title": "References & Legal Disclaimer",
