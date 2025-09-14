@@ -9,7 +9,7 @@ import { AuthorCard } from "@/components/layout/AuthorCard";
 import { MutualFundScreenerTool } from "@/components/tools/MutualFundScreener";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { BookOpen, ListOrdered, Wand2, GitCompareArrows, HeartPulse, Ban, ShieldCheck, Star } from 'lucide-react';
+import { BookOpen, ListOrdered, Wand2, GitCompareArrows, HeartPulse, Ban, ShieldCheck, Star, Newspaper, Users, Scaling } from 'lucide-react';
 import { FooterCta } from "@/components/layout/FooterCta";
 
 
@@ -150,6 +150,35 @@ export default async function MutualFundScreenerPage({ params }: { params: { lan
             </CardContent>
           </Card>
 
+           <Card>
+              <CardHeader>
+                  <CardTitle className="flex items-center gap-3 text-3xl font-bold font-headline">
+                      <Newspaper className="h-8 w-8 text-primary" />
+                      {dict.original_report.h2}
+                  </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-6 prose dark:prose-invert max-w-none">
+                  <div dangerouslySetInnerHTML={{ __html: dict.original_report.body }}></div>
+              </CardContent>
+            </Card>
+
+            <Card>
+                <CardHeader>
+                    <CardTitle className="flex items-center gap-3 text-3xl font-bold font-headline">
+                        <Users className="h-8 w-8 text-primary" />
+                        {dict.case_studies.h2}
+                    </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                    {dict.case_studies.studies.map((study: {title: string, body: string}, index: number) => (
+                        <div key={index} className="p-4 border rounded-lg bg-muted/30">
+                            <h4 className="font-bold text-xl mb-2">{study.title}</h4>
+                            <div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: study.body }}></div>
+                        </div>
+                    ))}
+                </CardContent>
+            </Card>
+
           <Card>
             <CardHeader>
                 <CardTitle className="flex items-center gap-3 text-3xl font-bold font-headline">
@@ -161,6 +190,18 @@ export default async function MutualFundScreenerPage({ params }: { params: { lan
                 <div dangerouslySetInnerHTML={{ __html: dict.compare_funds.body }}></div>
             </CardContent>
           </Card>
+
+           <Card>
+              <CardHeader>
+                  <CardTitle className="flex items-center gap-3 text-3xl font-bold font-headline">
+                      <Scaling className="h-8 w-8 text-primary" />
+                      {dict.benchmarks.h2}
+                  </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-6 prose dark:prose-invert max-w-none">
+                  <div dangerouslySetInnerHTML={{ __html: dict.benchmarks.body }}></div>
+              </CardContent>
+            </Card>
 
            <Card>
             <CardHeader>
