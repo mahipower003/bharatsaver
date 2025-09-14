@@ -5,8 +5,8 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useFundData } from '@/hooks/use-fund-data';
-import type { RawFund, OverlapOutput } from '@/lib/overlap-calculator';
-import { Loader2, Info, Download } from 'lucide-react';
+import type { RawFund, OverlapOutput, PairwiseResult } from '@/lib/overlap-calculator';
+import { Loader2, Info, Download, Mail } from 'lucide-react';
 import { Alert, AlertTitle, AlertDescription } from '@/components/ui/alert';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Checkbox } from '@/components/ui/checkbox';
@@ -206,7 +206,7 @@ export function MutualFundScreenerTool() {
     {comparisonResult && (
       <Card className="mt-8 animate-in fade-in-50">
         <CardHeader>
-          <CardTitle>Comparison & Overlap Results</CardTitle>
+          <CardTitle>Comparison &amp; Overlap Results</CardTitle>
           <CardDescription>
             Here is a breakdown of how your selected funds overlap with each other.
           </CardDescription>
@@ -244,8 +244,9 @@ export function MutualFundScreenerTool() {
               </Table>
             </div>
           ))}
-          <div className="text-center">
-            <Button variant="outline"><Download className="mr-2 h-4 w-4" /> Export Full Comparison (CSV)</Button>
+          <div className="text-center pt-6 border-t">
+              <Button variant="outline"><Mail className="mr-2 h-4 w-4" /> Save &amp; Email My Analysis</Button>
+              <p className="text-xs text-muted-foreground mt-2">Get a permanent link to this comparison sent to your inbox.</p>
           </div>
         </CardContent>
       </Card>
@@ -263,3 +264,5 @@ function parseWeight(w?: number | string | null): number {
   const n = parseFloat(s);
   return isNaN(n) ? 0 : n;
 }
+
+    
