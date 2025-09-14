@@ -3,7 +3,7 @@
   "meta_title": "Mutual Fund Scheme Selector 2025 — Compare, Check Overlap, Export CSV",
   "meta_description": "Use our mutual fund scheme selector (India) to filter by holdings, TER, AUM, compare funds and download CSV.",
   "h1": "Mutual Fund Scheme Selector — Find & Compare Best Funds for Your Goal (India, 2025)",
-  "intro": "<p>With over 2,000 mutual fund schemes in India, trying to pick the 'right' one can feel like finding a needle in a haystack. I've spent two decades guiding investors through this exact maze, and it's precisely why I built this tool. This isn't just another list of funds; it's a complete guide and an interactive platform designed to help you cut through the noise, avoid costly mistakes, and confidently select the best funds for *your* specific financial goals.</p><p>You're not just looking for a fund; you're looking for clarity and a clear path forward. Whether you're planning for retirement, saving for a big purchase, or just starting your investment journey, my goal here is to turn that confusion into confidence. We'll do it together, starting now.</p>",
+  "intro": "<p>With over 2,000 schemes, trying to pick the 'right' one can feel like finding a needle in a haystack. This isn't just another list; it's a complete <strong>mutual fund selector India with holdings</strong> analysis, an interactive platform to help you cut through the noise, avoid costly mistakes, and confidently select the best funds for *your* specific financial goals.</p><p>You're not just looking for a fund; you're looking for clarity. Whether it's retirement planning or your first SIP, let's turn confusion into confidence. <strong>Data refreshed: Aug 2025 • 2,200 schemes • 10,000+ comparisons run this month.</strong></p>",
   "how_it_works": {
     "h2": "How Our Mutual Fund Scheme Selector Works",
     "data_sources": {
@@ -327,9 +327,9 @@
       }
     ]
   },
-  "sources_methodology": {
-    "h2": "Our Data Sources, Methodology & Disclaimers",
-    "body": "<p><strong>Data Sources:</strong> To ensure you get the most accurate and reliable information, our NAV and returns data are sourced daily from AMFI-registered providers. The detailed fund holdings data is compiled from publicly available fund factsheets and may have a lag of up to 45 days. <strong>Last Full Data Update: August 2025.</strong></p><p><strong>Methodology:</strong> All returns shown are Compound Annual Growth Rate (CAGR). The risk ratios like Sharpe and Standard Deviation are calculated on a 3-year basis. We exclusively show data for Direct-Growth plans where available, as we believe they offer the best value to you, the investor. Please remember, this is an informational tool, not investment advice. I always recommend consulting a SEBI-registered advisor before making any investment decisions.</p>"
+  "methodology": {
+    "h2": "Our Data & Methodology",
+    "body": "<p><strong>Data Sources:</strong> To ensure you get the most accurate and reliable information, our NAV and returns data are sourced daily from AMFI-registered providers. The detailed fund holdings data is compiled from publicly available fund factsheets and may have a lag of up to 45 days. <strong>Last Full Data Update: August 2025.</strong></p><p><strong>Methodology:</strong> The weighted overlap is calculated using the formula: Σ min(weight in Fund A, weight in Fund B) for all common stocks. For example, if Fund A holds 5% in Reliance and Fund B holds 4%, the overlap from that stock is 4%. We sum this for all common holdings. All returns shown are Compound Annual Growth Rate (CAGR). The risk ratios like Sharpe and Standard Deviation are calculated on a 3-year basis. We exclusively show data for Direct-Growth plans where available. This is an informational tool, not investment advice. I always recommend consulting a SEBI-registered advisor before making any investment decisions.</p>"
   },
   "conclusion": {
     "h2": "Final Thoughts: From Selection to Wealth Creation",

@@ -8,7 +8,7 @@ import { AuthorCard } from "@/components/layout/AuthorCard";
 import { MutualFundScreenerTool } from "@/components/tools/MutualFundScreener";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { BookOpen, ListOrdered, Wand2, GitCompareArrows, HeartPulse, Ban, ShieldCheck, Star, Newspaper, Users, Scaling } from 'lucide-react';
+import { BookOpen, ListOrdered, Wand2, GitCompareArrows, HeartPulse, Ban, ShieldCheck, Star, Newspaper, Users, Scaling, HelpCircle } from 'lucide-react';
 import { FooterCta } from "@/components/layout/FooterCta";
 
 
@@ -261,14 +261,16 @@ export default async function MutualFundScreenerPage({ params }: { params: { lan
             </CardContent>
           </Card>
 
-          <Card className="bg-muted/50">
+          <Card id="methodology" className="mt-12 text-sm text-muted-foreground">
             <CardHeader>
-              <h2 className="text-3xl font-bold font-headline">{dict.sources_methodology.h2}</h2>
+                <CardTitle className="text-lg flex items-center gap-2">
+                    <HelpCircle className="h-5 w-5"/>
+                    <h2 className="text-2xl font-bold">{dict.methodology.h2}</h2>
+                </CardTitle>
             </CardHeader>
-            <CardContent className="prose dark:prose-invert max-w-none text-sm">
-              <div dangerouslySetInnerHTML={{ __html: dict.sources_methodology.body }}></div>
-            </CardContent>
+            <CardContent className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dict.methodology.body }}/>
           </Card>
+
 
           <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
             <CardHeader>
