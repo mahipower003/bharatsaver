@@ -1,9 +1,9 @@
 
 {
-  "meta_title": "Mutual Fund Scheme Selector 2025 — Filter by Returns, Risk, AUM",
-  "meta_description": "Use our free mutual fund scheme selector to filter and compare direct funds by returns, risk, AUM, expense ratio and holdings. Includes portfolio overlap check & downloadable CSV.",
+  "meta_title": "Mutual Fund Scheme Selector 2025 — Filter by Returns, Risk, AUM & Holdings",
+  "meta_description": "Use our free mutual fund scheme selector to filter and compare direct funds by returns, risk, AUM, expense ratio and holdings. Includes overlap check, SIP planner & downloadable CSV.",
   "h1": "Mutual Fund Scheme Selector — Find & Compare Best Funds for Your Goal (India, 2025)",
-  "intro": "Feeling lost in a sea of over 2,000 mutual fund schemes? You're not alone. I've spent years helping people cut through the noise, and it's incredibly difficult to know where to even start. That's why I built this tool and guide — to give you a single, powerful platform to find the right fund for *your* specific financial goals. Let's get you from confused to confident in just a few clicks.",
+  "intro": "<p>With over 2,000 mutual fund schemes in India, finding the right one can feel overwhelming. I've spent my career guiding people through this maze, and it's precisely why I built this tool. This isn't just another list; it's a complete guide and an interactive platform designed to help you cut through the noise and confidently select the best funds for *your* specific financial goals. Let's turn that confusion into clarity, starting now.</p>",
   "how_it_works": {
     "h2": "How Our Mutual Fund Scheme Selector Works",
     "data_sources": {
@@ -11,7 +11,7 @@
       "body": "<p>To give you the most reliable information, I pull data from multiple trusted sources, including official AMFI disclosures, daily NAV updates, and detailed fund factsheets. Holdings data is refreshed monthly, while performance metrics like NAV and returns are updated daily. This ensures you're making decisions based on the freshest data available. Transparency is key, and I want you to feel confident in the numbers you see.</p>"
     },
     "filters": {
-      "h3": "Filters Available to You: A Powerful Screener at Your Fingertips",
+      "h3": "Filters Available: A Powerful Screener at Your Fingertips",
       "body": "<p>I've designed this screener with the filters I personally use to analyze funds. You can use this <strong>mutual fund selector by expense ratio and AUM</strong>, returns, risk, and even manager history. You can narrow down your choices by:</p><ul><li><strong>Fund Category:</strong> Large Cap, Mid Cap, Small Cap, Flexi Cap, ELSS (Tax Saver), etc.</li><li><strong>Key Metrics:</strong> AUM (Assets Under Management), TER (Total Expense Ratio), and manager tenure.</li><li><strong>Performance:</strong> 1, 3, 5, and 10-year CAGR returns.</li><li><strong>Risk Scores:</strong> Alpha, Beta, Standard Deviation, and Sharpe Ratio to understand a fund's volatility and risk-adjusted returns.</li><li><strong>Holdings:</strong> You can even search for funds that hold (or don't hold) a specific stock.</li></ul>"
     },
     "matching_logic": {
@@ -29,7 +29,7 @@
   },
   "screener_examples": {
     "h2": "Screener Examples & Curated Presets",
-    "body": "<h3>Best Direct Large-Cap Funds for SIP Selection</h3><p>Looking for stable, long-term growth? This preset is for you. We filter for: Category = 'Large Cap', AUM > ₹20,000 Cr, 5-Year CAGR > 14%, and Expense Ratio < 0.9%. This is a great starting point for anyone looking for a <strong>mutual fund screener for SIP selection</strong>.</p><h3>Best Tax-Saver Mutual Fund Selector (ELSS)</h3><p>Need to save tax under Section 80C? This preset filters for: Category = 'ELSS', 3-Year Lock-in, and consistent performance over 5 years. It helps you find funds that not only save you tax but have also delivered strong returns.</p><h3>Low-Cost Portfolio for Small Investors</h3><p>Just starting out? This preset is perfect. It's one of the <strong>best mutual fund selectors for small investors</strong>, looking for Index Funds or low-cost Large & Mid-Cap funds with an Expense Ratio < 0.5% and a minimum SIP amount of ₹500 or less. It's the ideal way to build a diversified portfolio without high fees eating into your returns.</p>"
+    "body": "<h3>Best Direct Large-Cap Funds for SIP Selection</h3><p>Looking for stable, long-term growth? This preset is for you. We filter for: Category = 'Large Cap', AUM > ₹20,000 Cr, 5-Year CAGR > 14%, and Expense Ratio < 0.9%. This is a great starting point for anyone looking for a <strong>mutual fund screener for SIP selection</strong>.</p><h3>Best ELSS Funds for Tax-Savers</h3><p>Need to save tax under Section 80C? This is the ultimate <strong>tax saver mutual fund selector (ELSS)</strong>. This preset filters for: Category = 'ELSS', 3-Year Lock-in, and consistent performance over 5 years. It helps you find funds that not only save you tax but have also delivered strong returns.</p><h3>Small Investor Low-Cost Portfolio</h3><p>Just starting out? This preset is perfect. It's one of the <strong>best mutual fund selectors for small investors</strong>, looking for Index Funds or low-cost Large & Mid-Cap funds with an Expense Ratio < 0.5% and a minimum SIP amount of ₹500 or less. It's the ideal way to build a diversified portfolio without high fees eating into your returns.</p>"
   },
   "compare_funds": {
     "h2": "How to Compare Mutual Fund Schemes by Holdings in India",
@@ -239,7 +239,7 @@
         "name": "How often should I rebalance my mutual fund portfolio?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A good rule of thumb is to review and rebalance your portfolio once a year. Rebalancing means bringing your asset allocation back to your original targets. For example, if a great run in mid-caps means they now form 30% of your portfolio instead of your target 20%, you'd sell some profits and reinvest in other areas. It's a disciplined way to book profits."
+          "text": "A good rule of thumb is to review and rebalance your portfolio once a year. Rebalancing means bringing your asset allocation back to your original targets. For example, if a great run in mid-caps means they now form 30% of your portfolio instead of your target 20%, you'd sell some mid-cap profits and reinvest in other areas. It's a disciplined way to book profits."
         }
       }
     ]
@@ -275,3 +275,5 @@
     "cta_text": "Get My Personalized Fund List"
   }
 }
+
+    

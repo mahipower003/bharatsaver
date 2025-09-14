@@ -44,7 +44,7 @@ export default async function MutualFundScreenerPage({ params }: { params: { lan
       <div className="mx-auto max-w-5xl">
         <header className="text-center mb-12">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl font-headline mb-4" dangerouslySetInnerHTML={{ __html: dict.h1 }}></h1>
-          <p className="text-xl text-muted-foreground" dangerouslySetInnerHTML={{ __html: dict.intro }}></p>
+          <div className="text-xl text-muted-foreground" dangerouslySetInnerHTML={{ __html: dict.intro }}></div>
           <Button asChild size="lg" className="mt-6">
             <Link href="#interactive-selector">Jump to the Screener</Link>
           </Button>
@@ -57,11 +57,11 @@ export default async function MutualFundScreenerPage({ params }: { params: { lan
             </CardHeader>
             <CardContent className="space-y-6 prose dark:prose-invert max-w-none">
               <h3 className="text-2xl font-semibold">{dict.how_it_works.data_sources.h3}</h3>
-              <p dangerouslySetInnerHTML={{ __html: dict.how_it_works.data_sources.body }}></p>
+              <div dangerouslySetInnerHTML={{ __html: dict.how_it_works.data_sources.body }}></div>
               <h3 className="text-2xl font-semibold">{dict.how_it_works.filters.h3}</h3>
-              <p dangerouslySetInnerHTML={{ __html: dict.how_it_works.filters.body }}></p>
+              <div dangerouslySetInnerHTML={{ __html: dict.how_it_works.filters.body }}></div>
               <h3 className="text-2xl font-semibold">{dict.how_it_works.matching_logic.h3}</h3>
-              <p dangerouslySetInnerHTML={{ __html: dict.how_it_works.matching_logic.body }}></p>
+              <div dangerouslySetInnerHTML={{ __html: dict.how_it_works.matching_logic.body }}></div>
             </CardContent>
           </Card>
 
@@ -187,3 +187,5 @@ export default async function MutualFundScreenerPage({ params }: { params: { lan
     </div>
   );
 }
+
+    
