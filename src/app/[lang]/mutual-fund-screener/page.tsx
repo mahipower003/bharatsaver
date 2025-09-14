@@ -45,18 +45,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     "publisher":{"@type":"Organization","name":"BharatSaver","logo":{"@type":"ImageObject","url":`${siteUrl}/icon.svg`}}
   };
 
-  const faqSchema = {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity": dict.faq.questions.map((faq: { q: string, a: string }) => ({
-      "@type": "Question",
-      "name": faq.q,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.a
-      }
-    }))
-  };
+  const faqSchema = dict.faq_json_ld;
   
   return {
     title: dict.meta_title,

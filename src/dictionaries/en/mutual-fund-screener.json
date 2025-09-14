@@ -95,7 +95,7 @@
         "a": "Yes, absolutely. That's one of its most powerful features. Once you've filtered down to a list of funds, you can click on any fund to see its top 10 stock holdings and sector allocation. This is critical for understanding what you're *really* investing in and for comparing it against other funds to avoid costly overlap."
       },
       {
-        "q": "How often are fund holdings and NAV updated in the selector?",
+        "q": "How frequently does the selector update fund holdings?",
         "a": "I take data accuracy very seriously. The Net Asset Value (NAV) for each fund is updated daily, so you're always seeing the latest price. The detailed fund holdings (the actual stocks a fund owns) are updated monthly, as soon as the fund houses (AMCs) release their latest portfolios. This ensures you're making decisions on the freshest, most reliable data available."
       },
       {
@@ -111,7 +111,7 @@
         "a": "Not always, but it's a massive head start. A lower expense ratio means more of your hard-earned money is working for you, not going to the fund manager. While a brilliant manager might justify a slightly higher fee with consistent outperformance, you should always be skeptical. For index funds, a low expense ratio is the single most important factor, period."
       },
       {
-        "q": "How do I compare ELSS funds for tax saving?",
+        "q": "How do I compare ELSS funds for tax and returns?",
         "a": "When comparing ELSS (tax-saving) funds, look beyond just the tax benefit. Use the selector to filter for the 'ELSS' category, then compare their 3-year and 5-year returns (since they have a 3-year lock-in). Crucially, check their portfolio overlap with your existing funds to ensure the new fund is adding real diversification, not just more of the same stocks."
       },
       {
@@ -174,7 +174,7 @@
       },
       {
         "@type": "Question",
-        "name": "How often are fund holdings and NAV updated in the selector?",
+        "name": "How frequently does the selector update fund holdings?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "We update Net Asset Value (NAV) data daily. The detailed fund holdings (the stocks a fund owns) are updated monthly, as soon as this information is released by the fund houses (AMCs). This ensures you are always making decisions based on the most current, reliable data available."
@@ -206,7 +206,7 @@
       },
       {
         "@type": "Question",
-        "name": "How do I compare ELSS funds for tax saving?",
+        "name": "How do I compare ELSS funds for tax and returns?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "When comparing ELSS (tax-saving) funds, look beyond just the tax benefit. Use the selector to filter by the 'ELSS' category, then compare their 3-year and 5-year returns (due to the 3-year lock-in). Crucially, check their portfolio overlap with your existing funds to ensure it adds diversification, not duplication."
