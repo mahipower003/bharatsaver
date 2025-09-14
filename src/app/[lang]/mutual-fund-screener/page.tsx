@@ -9,7 +9,7 @@ import { AuthorCard } from "@/components/layout/AuthorCard";
 import { MutualFundScreenerTool } from "@/components/tools/MutualFundScreener";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { BookOpen, ListSteps, Wand2, GitCompareArrows, HeartPulse, Ban, ShieldCheck, Star } from 'lucide-react';
+import { BookOpen, ListOrdered, Wand2, GitCompareArrows, HeartPulse, Ban, ShieldCheck, Star } from 'lucide-react';
 
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
@@ -242,7 +242,7 @@ export default async function MutualFundScreenerPage({ params }: { params: { lan
           <Card>
             <CardHeader>
                 <CardTitle className="flex items-center gap-3 text-3xl font-bold font-headline">
-                    <ListSteps className="h-8 w-8 text-primary" />
+                    <ListOrdered className="h-8 w-8 text-primary" />
                     {dict.step_by_step.h2}
                 </CardTitle>
             </CardHeader>
