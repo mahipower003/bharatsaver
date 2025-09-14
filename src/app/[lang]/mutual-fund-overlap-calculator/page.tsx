@@ -136,7 +136,7 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
                                 </TableRow>
                             </TableHeader>
                             <TableBody>
-                                {liveExample.top_stocks && liveExample.top_stocks.map((stock: any, idx: number) => (
+                                {liveExample.top_stocks.map((stock: any, idx: number) => (
                                     <TableRow key={`${stock.name}-${idx}`}>
                                         <TableCell className="font-medium">{stock.name}</TableCell>
                                         <TableCell className="text-right font-bold">{stock.weight}</TableCell>
