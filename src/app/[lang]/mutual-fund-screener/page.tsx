@@ -9,10 +9,6 @@ import { MutualFundScreenerTool } from "@/components/tools/MutualFundScreener";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-export async function generateStaticParams() {
-    return i18nConfig.locales.map(locale => ({ lang: locale }));
-}
-
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
   const dictionary = await getDictionary(params.lang, ['mutual_fund_screener']);
   const dict = dictionary.mutual_fund_screener;
@@ -65,6 +61,7 @@ export default async function MutualFundScreenerPage({ params }: { params: { lan
   const dictionary = await getDictionary(params.lang, ['mutual_fund_screener', 'author_card']);
   const dict = dictionary.mutual_fund_screener;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
+  const pageUrl = `${siteUrl}/${params.lang}/mutual-fund-screener`;
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
