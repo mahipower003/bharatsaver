@@ -1,0 +1,149 @@
+
+{
+  "meta_title": "Mutual Fund Scheme Selector 2025 — Filter by Returns, Risk, AUM & Holdings | BharatSaver",
+  "meta_description": "Use our free mutual fund scheme selector to filter and compare direct funds by returns, risk, AUM, expense ratio and holdings. Includes overlap check, SIP planner & downloadable CSV.",
+  "h1": "Mutual Fund Scheme Selector — Find & Compare the Best Funds for Your Goal (India, 2025)",
+  "intro": "Feeling lost in a sea of over 2,000 mutual fund schemes? You're not alone. It's incredibly difficult to know where to even start. That's why I built this tool and guide — to give you a single, powerful platform to cut through the noise and find the right fund for *your* specific financial goals. Let's get you from confused to confident in just a few clicks.",
+  "how_it_works": {
+    "h2": "How Our Mutual Fund Scheme Selector Works",
+    "data_sources": {
+      "h3": "Data Sources & Update Frequency",
+      "body": "<p>To give you the most reliable information, I pull data from multiple trusted sources, including official AMFI disclosures, daily NAV updates, and detailed fund factsheets. Holdings data is refreshed monthly, while performance metrics like NAV and returns are updated daily. This ensures you're making decisions based on the freshest data available. Transparency is key, and I want you to feel confident in the numbers you see.</p>"
+    },
+    "filters": {
+      "h3": "Filters Available to You",
+      "body": "<p>I've designed this screener with the filters I personally use to analyze funds. You can narrow down your choices by:</p><ul><li><strong>Fund Category:</strong> Large Cap, Mid Cap, Small Cap, Flexi Cap, ELSS (Tax Saver), etc.</li><li><strong>Key Metrics:</strong> AUM (Assets Under Management), TER (Total Expense Ratio), and manager tenure.</li><li><strong>Performance:</strong> 1, 3, 5, and 10-year CAGR returns.</li><li><strong>Risk Scores:</strong> Alpha, Beta, Standard Deviation, and Sharpe Ratio to understand a fund's volatility and risk-adjusted returns.</li><li><strong>Holdings:</strong> You can even search for funds that hold (or don't hold) a specific stock.</li></ul>"
+    },
+    "matching_logic": {
+      "h3": "Our Matching Logic (E-E-A-T)",
+      "body": "<p>For holdings and overlap analysis, ensuring accuracy is my top priority. We primarily match stocks using their unique exchange tickers (like 'RELIANCE' for Reliance Industries). Where tickers aren't available, I use a smart normalization algorithm that cleans up company names (e.g., 'Reliance Industries Ltd.' and 'RELIANCE IND' are treated as the same) to ensure we're comparing apples to apples. This commitment to data accuracy is part of our Experience, Expertise, Authoritativeness, and Trustworthiness (E-E-A-T) promise to you.</p>"
+    }
+  },
+  "interactive_tool": {
+    "h2": "Interactive Selector",
+    "guide": "Start with your goal → filter by category → check holdings → compare your top 3. It's that simple."
+  },
+  "step_by_step": {
+    "h2": "How to Use the Selector: A Step-by-Step Guide",
+    "body": "<h3>Step 1: Choose a Goal</h3><p>What are you saving for? Your goal dictates the type of fund you should look for. Are you planning for retirement 20 years away? A high-growth equity fund might be suitable. Saving for a down payment in 3 years? A debt or hybrid fund is likely a safer bet. Start by selecting a goal like 'Retirement', 'Tax Saving', or 'Wealth Creation'.</p><h3>Step 2: Choose Your Risk Profile & Time Horizon</h3><p>Be honest with yourself. Can you stomach a 20% drop in your portfolio without panicking? If not, a 'High Risk' profile isn't for you. Your time horizon is equally important. The longer your horizon, the more risk you can afford to take, as you have time to recover from market downturns.</p><h3>Step 3: Use Filters to Narrow to ~10 Funds</h3><p>Now, let's cut down the universe of 2,000+ funds. Start with broad filters. For example: Category = 'Flexi Cap', AUM > ₹10,000 Cr, and Expense Ratio < 1.0%. This might leave you with 20-30 funds. Then, add a performance filter, like '5-Year Return > 15%', to narrow it down to a manageable list of around 10 top contenders.</p><h3>Step 4: Compare Holdings & Overlap</h3><p>This is a crucial step most investors miss. Select your top 3-5 funds from the list and run our Overlap Check. You might be surprised to find that two different funds are holding the exact same top 10 stocks. If the overlap is over 30%, you're likely not diversified. You're just paying two expense ratios for the same portfolio. The goal is to find funds with different strategies and holdings.</p><h3>Step 5: Final Checks Before Investing</h3><p>You've got your top 2-3 funds. Before you invest, do these final checks: <strong>Expense Ratio (TER):</strong> Lower is always better. <strong>Exit Loads:</strong> Are there penalties for withdrawing early? <strong>AUM:</strong> Is the fund too small (risky) or too large (potentially unwieldy)? <strong>Fund House Reputation:</strong> Does the AMC have a long, consistent track record? Answering these gives you the final confidence to invest.</p>"
+  },
+  "screener_examples": {
+    "h2": "Screener Examples & Curated Presets",
+    "body": "<h3>Best Direct Large-Cap Funds for SIP</h3><p>Looking for stable, long-term growth? This preset is for you. We filter for: Category = 'Large Cap', AUM > ₹20,000 Cr, 5-Year CAGR > 14%, and Expense Ratio < 0.9%. This typically yields a list of 5-7 blue-chip funds known for their consistency.</p><h3>Best ELSS Funds for Tax-Savers</h3><p>Need to save tax under Section 80C? This preset filters for: Category = 'ELSS', 3-Year Lock-in, and consistent performance over 5 years. It helps you find funds that not only save you tax but have also delivered strong returns.</p><h3>Low-Cost Portfolio for Small Investors</h3><p>Just starting out? This preset is perfect. It looks for Index Funds or low-cost Large & Mid-Cap funds with an Expense Ratio < 0.5% and a minimum SIP amount of ₹500 or less. It's the ideal way to build a diversified portfolio without high fees eating into your returns.</p>"
+  },
+  "compare_funds": {
+    "h2": "How to Compare Funds: What to Look at Side-by-Side",
+    "body": "<h3>Performance Metrics</h3><p>Don't just look at 1-year returns. <strong>CAGR (Compound Annual Growth Rate)</strong> over 3, 5, and 10 years gives you a much better picture of long-term performance. I also recommend checking <strong>Rolling Returns</strong> to see how the fund has performed across different market cycles, not just from one arbitrary point to another. <strong>Downside Capture Ratio</strong> is another great metric; it tells you how much a fund lost compared to its benchmark during down markets. A lower ratio is better.</p><h3>Risk Metrics</h3><p>Performance is meaningless without understanding the risk taken to achieve it. <strong>Standard Deviation (SD)</strong> measures volatility; a higher SD means a bumpier ride. The <strong>Sharpe Ratio</strong> tells you the return you get per unit of risk taken (higher is better). <strong>Beta</strong> measures a fund's volatility relative to the market; a Beta > 1 means it's more volatile than the market. Finally, look at the <strong>Max Drawdown</strong>—the most a fund has lost from its peak. This gives you a gut check on how much you could potentially lose in a worst-case scenario.</p><h3>Portfolio Inspection</h3><p>Go beyond the numbers. Look at the <strong>Top 10 Holdings</strong>. Are they companies you believe in? Check the <strong>Sector Concentration</strong>. Is the fund too heavily reliant on one sector, like banking or IT? High concentration can be risky. A well-diversified portfolio across multiple sectors is generally safer.</p><h3>Manager & Process</h3><p>Who is managing your money? A fund manager with a long <strong>tenure</strong> (5+ years with the fund) provides consistency. Also, look at the <strong>Fund House's reputation</strong>. Do they have a consistent investment philosophy across their schemes, or do they chase trends? A solid process is often more important than a star fund manager.</p>"
+  },
+  "portfolio_hygiene": {
+    "h2": "Portfolio Hygiene: Overlap, Concentration & Rebalancing",
+    "body": "<p>Once you've selected your funds, the work isn't over. Good portfolio hygiene is crucial for long-term success. The most common mistake I see is 'over-diversification', where an investor holds 10-15 funds that all own the same stocks. This is where our <strong>Overlap Checker</strong> is your best friend. As a rule of thumb, if two equity funds have a <strong>weighted overlap of over 30%</strong>, you should question if you need both. Consolidating into one could reduce your fees and simplify your portfolio without sacrificing diversification.</p><p>Regularly <strong>rebalancing</strong> your portfolio is also key. For example, if a great run in your mid-cap fund means it now makes up 40% of your portfolio instead of your target 20%, it's time to sell some profits and reallocate to your other funds. This locks in gains and keeps your risk profile in check. I recommend reviewing and rebalancing your portfolio once a year.</p>"
+  },
+  "common_mistakes": {
+    "h2": "Common Fund Selection Mistakes to Avoid",
+    "mistakes": [
+      "<strong>Chasing Recent Returns:</strong> Don't just invest in last year's top performer. Past performance is not indicative of future returns. Look for long-term consistency.",
+      "<strong>Ignoring Expense Ratios:</strong> A 0.5% difference in fees might seem small, but over 20-30 years, it can cost you lakhs in lost returns.",
+      "<strong>Over-Diversifying:</strong> Owning 20 different funds doesn't mean you're diversified. You might just own 20 versions of the same portfolio. Check for overlap.",
+      "<strong>Ignoring Your Risk Profile:</strong> Don't invest in a small-cap fund if you can't handle volatility. Be honest about your risk tolerance.",
+      "<strong>Tax Mistakes:</strong> Not using ELSS funds to save tax, or selling equity funds within a year and incurring short-term capital gains tax."
+    ]
+  },
+  "goal_based_portfolio": {
+    "h2": "How to Build a Goal-Based Portfolio Using the Screener",
+    "body": "<h3>Conservative Portfolio (Low Risk)</h3><p><strong>Goal:</strong> Capital preservation, regular income. <strong>Horizon:</strong> 1-3 years. <br/><strong>Allocation:</strong> Use the screener to find 1-2 good Large Cap Index Funds (40%) and 1-2 high-quality Short-Term Debt Funds (60%).</p><h3>Balanced Portfolio (Medium Risk)</h3><p><strong>Goal:</strong> Moderate growth for goals 5-7 years away. <br/><strong>Allocation:</strong> Use the screener to find a Flexi Cap fund (40%), a Large & Mid-Cap fund (20%), and supplement with your PPF/EPF and a Corporate Bond Fund (40%).</p><h3>Aggressive Portfolio (High Risk)</h3><p><strong>Goal:</strong> High growth for long-term goals like retirement (10+ years). <br/><strong>Allocation:</strong> Screener picks: 1 Mid-Cap Fund (30%), 1 Small-Cap Fund (20%), 1 Flexi-Cap/Multi-Cap Fund (30%), and maybe 1 Sectoral Fund like tech or banking (20%). Aim for a monthly SIP and rebalance annually.</p>"
+  },
+  "faq": {
+    "h2": "Frequently Asked Questions",
+    "questions": [
+      {
+        "q": "How many mutual funds should I own?",
+        "a": "For most retail investors, a portfolio of 4-6 well-chosen funds is more than enough for proper diversification. This could include a mix of large-cap, mid-cap, small-cap, and possibly an international or sectoral fund, depending on your risk profile."
+      },
+      {
+        "q": "Which is the best mutual fund scheme selector in India?",
+        "a": "The best mutual fund selector is one that provides clean, up-to-date data and flexible filters. Our tool is designed to do just that, sourcing data from AMFI and fund factsheets, and giving you powerful filters for returns, risk, AUM, and holdings to make an informed choice."
+      },
+      {
+        "q": "How do I choose a mutual fund for the first time?",
+        "a": "Start simple. If you're a beginner, a Nifty 50 Index Fund or a good Flexi Cap fund is a great starting point. Use our screener to filter for 'Index Funds' or 'Flexi Cap', sort by a low Expense Ratio (under 0.5%), and pick a fund with a large AUM (over ₹10,000 Cr) from a reputable fund house."
+      },
+      {
+        "q": "What is a good CAGR for a mutual fund?",
+        "a": "A good CAGR depends on the fund category. For a large-cap fund, a 5-year CAGR of 12-15% is considered strong. For a mid or small-cap fund, you might look for 18-25% or more, but be aware this comes with higher risk. The key is to compare a fund's CAGR against its category average and benchmark."
+      },
+      {
+        "q": "How can I compare mutual fund returns?",
+        "a": "Don't just look at the last year. Use our screener to compare 3, 5, and 10-year CAGR. Even better, look at rolling returns to see how funds performed across different market cycles. A fund that consistently beats its benchmark is more reliable than one with a single year of outlier performance."
+      }
+    ]
+  },
+  "faq_json_ld": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How many mutual funds should I own?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For most retail investors, a portfolio of 4-6 well-chosen funds is more than enough for proper diversification. This could include a mix of large-cap, mid-cap, small-cap, and possibly an international or sectoral fund, depending on your risk profile."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which is the best mutual fund scheme selector in India?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The best mutual fund selector is one that provides clean, up-to-date data and flexible filters. Our tool is designed to do just that, sourcing data from AMFI and fund factsheets, and giving you powerful filters for returns, risk, AUM, and holdings to make an informed choice."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I choose a mutual fund for the first time?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Start simple. If you're a beginner, a Nifty 50 Index Fund or a good Flexi Cap fund is a great starting point. Use our screener to filter for 'Index Funds' or 'Flexi Cap', sort by a low Expense Ratio (under 0.5%), and pick a fund with a large AUM (over ₹10,000 Cr) from a reputable fund house."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a good CAGR for a mutual fund?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A good CAGR depends on the fund category. For a large-cap fund, a 5-year CAGR of 12-15% is considered strong. For a mid or small-cap fund, you might look for 18-25% or more, but be aware this comes with higher risk. The key is to compare a fund's CAGR against its category average and benchmark."
+        }
+      }
+    ]
+  },
+  "tools_downloads": {
+    "h2": "Tools & Downloads",
+    "intro": "Take your analysis offline with these helpful resources.",
+    "links": [
+      {
+        "text": "Download Comparison Template (CSV)",
+        "href": "/downloads/fund-comparison-template.csv",
+        "desc": "An empty CSV template to compare funds side-by-side."
+      },
+      {
+        "text": "SIP Calculator",
+        "href": "/en/sip-calculator",
+        "desc": "Calculate the future value of your SIP investments."
+      },
+      {
+        "text": "Fund Overlap Checker",
+        "href": "/en/mutual-fund-overlap-calculator",
+        "desc": "Do a deep-dive on overlap between any two funds."
+      }
+    ]
+  },
+  "sources_methodology": {
+    "h2": "Sources, Methodology & Disclaimers",
+    "body": "<p><strong>Data Sources:</strong> NAV and returns data are sourced from AMFI-registered data providers. Holdings data is compiled from publicly available fund factsheets and may have a lag of up to 45 days. <strong>Last Full Update: July 2025.</strong></p><p><strong>Methodology:</strong> Returns are CAGR. Risk ratios are calculated on a 3-year basis. All data is for Direct-Growth plans where available. This is an informational tool, not investment advice.</p>"
+  },
+  "footer_cta": {
+    "h2": "Need Help Picking Funds?",
+    "body": "Get a personalized list of funds curated by our experts based on your goals and risk profile.",
+    "cta_text": "Get My Personalized List"
+  }
+}

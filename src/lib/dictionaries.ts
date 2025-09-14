@@ -1,3 +1,4 @@
+
 import 'server-only';
 import type { Locale } from './i18n-config';
 
@@ -7,11 +8,31 @@ const dictionaries = {
   mr: () => import('@/dictionaries/mr.json').then(module => module.default),
   ta: () => import('@/dictionaries/ta.json').then(module => module.default),
   te: () => import('@/dictionaries/te.json').then(module => module.default),
+  'en/mutual-fund-screener': () => import('@/dictionaries/en/mutual-fund-screener.json').then(module => module.default),
 };
 
+const getDynamicDictionary = async (path: string) => {
+    switch (path) {
+        case 'en/mutual-fund-screener':
+            return await import('@/dictionaries/en/mutual-fund-screener.json').then(module => module.default);
+        default:
+            return null;
+    }
+}
+
 export const getDictionary = async (locale: Locale, keys: string[] = []) => {
-  const loader = dictionaries[locale] || dictionaries.en;
-  const dictionary = await loader();
+  const dictionaryPromises = [dictionaries[locale]()];
+  
+  // Handle specific page dictionaries
+  if (keys.includes('mutual_fund_screener')) {
+      const screenerDict = await getDynamicDictionary(`${locale}/mutual-fund-screener`) 
+        || await getDynamicDictionary(`en/mutual-fund-screener`);
+      if (screenerDict) {
+        return { mutual_fund_screener: screenerDict, ...(await dictionaryPromises[0]) };
+      }
+  }
+
+  const dictionary = await dictionaryPromises[0];
 
   if (keys.length === 0) {
     return dictionary;

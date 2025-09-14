@@ -11,6 +11,7 @@ import {
   Layers,
   Building,
   Sparkles,
+  Filter,
 } from 'lucide-react';
 import type { Calculator } from '@/types';
 
@@ -106,13 +107,23 @@ export const calculators: Calculator[] = [
     image: '/images/Mutual Fund Overlap Calculator.png'
   },
   {
+    slug: 'mutual-fund-screener',
+    title: 'Mutual Fund Screener',
+    description: 'Filter and compare the best mutual funds for your goals.',
+    summary: 'Use our free mutual fund screener to filter and compare direct funds by returns, risk, AUM, expense ratio and holdings. Includes overlap check, SIP planner & downloadable CSV.',
+    icon: Filter,
+    link_text: 'Find Funds',
+    lastModified: '2024-08-05',
+    image: '/images/mutual-fund-screener-online.png'
+  },
+  {
     slug: 'ups-pension-calculator',
     title: 'UPS Pension Calculator',
-    description: 'Estimate your UPS pension amount.',
-    summary: 'Estimate your potential pension amount under the Universal Pension Scheme (UPS) with our easy-to-use calculator. Plan for your future.',
+    description: 'Estimate your monthly pension under the Unified Pension Scheme.',
+    summary: 'Use our free UPS Pension Calculator to estimate your monthly pension, family pension and lump sum under the Unified Pension Scheme.',
     icon: Building,
     link_text: 'Calculate Now',
-    lastModified: '2024-07-19',
+    lastModified: '2024-08-02',
     image: '/images/UPS Pension Scheme Calculator.png'
   },
   {
