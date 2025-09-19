@@ -293,5 +293,3 @@ export default async function MutualFundScreenerPage({ params }: { params: { lan
     </div>
   );
 }
-
-    

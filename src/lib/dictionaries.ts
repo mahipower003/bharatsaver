@@ -37,7 +37,6 @@ export const getDictionary = async (locale: Locale, keys: string[] = []) => {
         if (pageDictionaries[key]) {
             const pageDict = await pageDictionaries[key](locale);
             if (pageDict) {
-                 // Directly merge the page-specific dictionary into the main object
                  resultDictionary[key] = pageDict;
             }
         }
