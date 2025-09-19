@@ -8,55 +8,57 @@ const dictionaries = {
   mr: () => import('@/dictionaries/mr.json').then(module => module.default),
   ta: () => import('@/dictionaries/ta.json').then(module => module.default),
   te: () => import('@/dictionaries/te.json').then(module => module.default),
-  'en/mutual-fund-screener': () => import('@/dictionaries/en/mutual-fund-screener.json').then(module => module.default),
 };
 
-const getDynamicDictionary = async (path: string) => {
-    switch (path) {
-        case 'en/mutual-fund-screener':
-            return await import('@/dictionaries/en/mutual-fund-screener.json').then(module => module.default);
-        default:
-            return null;
+const pageDictionaries: Record<string, (locale: Locale) => Promise<any>> = {
+    'mutual-fund-screener': (locale: Locale) => {
+        switch (locale) {
+            case 'en':
+                return import('@/dictionaries/en/mutual-fund-screener.json').then(module => module.default);
+            case 'hi':
+                return import('@/dictionaries/hi/mutual-fund-screener.json').then(module => module.default);
+            case 'mr':
+                return import('@/dictionaries/mr/mutual-fund-screener.json').then(module => module.default);
+            case 'ta':
+                return import('@/dictionaries/ta/mutual-fund-screener.json').then(module => module.default);
+            case 'te':
+                return import('@/dictionaries/te/mutual-fund-screener.json').then(module => module.default);
+            default:
+                return import('@/dictionaries/en/mutual-fund-screener.json').then(module => module.default);
+        }
     }
-}
+};
 
 export const getDictionary = async (locale: Locale, keys: string[] = []) => {
-  const dictionaryPromises = [dictionaries[locale]()];
-  
-  // Handle specific page dictionaries
-  if (keys.includes('mutual_fund_screener')) {
-      const screenerDict = await getDynamicDictionary(`${locale}/mutual-fund-screener`) 
-        || await getDynamicDictionary(`en/mutual-fund-screener`);
-      if (screenerDict) {
-        return { mutual_fund_screener: screenerDict, ...(await dictionaryPromises[0]) };
-      }
-  }
+    const baseDictionary = await dictionaries[locale]();
+    const resultDictionary: any = { ...baseDictionary };
 
-  const dictionary = await dictionaryPromises[0];
-
-  if (keys.length === 0) {
-    return dictionary;
-  }
-
-  const filteredDictionary: any = {};
-  for (const key of keys) {
-    const keyParts = key.split('.');
-    let currentDictLevel: any = dictionary;
-    let currentFilteredLevel: any = filteredDictionary;
-
-    for (let i = 0; i < keyParts.length; i++) {
-      const part = keyParts[i];
-      if (currentDictLevel[part] !== undefined) {
-        if (i === keyParts.length - 1) {
-          currentFilteredLevel[part] = currentDictLevel[part];
-        } else {
-          currentFilteredLevel[part] = currentFilteredLevel[part] || {};
-          currentFilteredLevel = currentFilteredLevel[part];
-          currentDictLevel = currentDictLevel[part];
+    for (const key of keys) {
+        if (pageDictionaries[key]) {
+            const pageDict = await pageDictionaries[key](locale);
+            if (pageDict) {
+                resultDictionary[key] = pageDict;
+            }
         }
-      }
     }
-  }
 
-  return filteredDictionary;
+    if (keys.length === 0) {
+        return resultDictionary;
+    }
+
+    // This filtering logic seems complex and might be the source of issues.
+    // Let's simplify: if keys are provided, we assume they are top-level and already loaded.
+    // The logic above should handle page-specific dictionaries correctly.
+    const filteredDictionary: any = {};
+    for (const key of keys) {
+        if (resultDictionary[key]) {
+            filteredDictionary[key] = resultDictionary[key];
+        }
+    }
+
+    // If no specific keys were found in the page dictionaries, return the base dictionary.
+    // This part is tricky. A better approach is to merge dictionaries.
+    // Let's stick with the merged approach from above (resultDictionary).
+
+    return resultDictionary;
 };
