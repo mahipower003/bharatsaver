@@ -20,10 +20,12 @@ const formatPercent = (value: number) => `${value.toFixed(2)}%`;
 // This is a mock function to get an expense ratio.
 // In a real application, this data would come from the API/JSON.
 const getMockExpenseRatio = (fund: RawFund) => {
-    if (fund.fund_name.includes('Index')) return 0.2;
-    if (fund.fund_name.includes('Small Cap')) return 0.7;
-    if (fund.fund_name.includes('Mid Cap')) return 0.6;
-    return 0.5;
+    if (!fund || !fund.fund_name) return 0.5;
+    const hash = fund.fund_name.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+    if (fund.fund_name.includes('Index')) return 0.1 + (hash % 20) / 100; // 0.1 - 0.29
+    if (fund.fund_name.includes('Small Cap')) return 0.5 + (hash % 100) / 100; // 0.5 - 1.49
+    if (fund.fund_name.includes('Mid Cap')) return 0.4 + (hash % 80) / 100; // 0.4 - 1.19
+    return 0.3 + (hash % 120) / 100; // 0.3 - 1.49
 };
 
 
@@ -44,6 +46,7 @@ export function MutualFundScreenerTool() {
   const uniqueCategories = useMemo(() => {
     if (isDataLoading) return [];
     const categories = new Set(allFunds.map(fund => {
+        if (!fund.fund_name) return 'Other';
         if (fund.fund_name.includes('Large & Mid')) return 'Large & Mid Cap';
         if (fund.fund_name.includes('Large Cap') || fund.fund_name.includes('Bluechip')) return 'Large Cap';
         if (fund.fund_name.includes('Midcap') || fund.fund_name.includes('Mid Cap')) return 'Mid Cap';
@@ -63,6 +66,7 @@ export function MutualFundScreenerTool() {
       const fundExpense = getMockExpenseRatio(fund);
       
       const fundCategory = 
+          !fund.fund_name ? 'Other' :
           fund.fund_name.includes('Large & Mid') ? 'Large & Mid Cap' :
           (fund.fund_name.includes('Large Cap') || fund.fund_name.includes('Bluechip')) ? 'Large Cap' :
           (fund.fund_name.includes('Midcap') || fund.fund_name.includes('Mid Cap')) ? 'Mid Cap' :
@@ -185,7 +189,7 @@ export function MutualFundScreenerTool() {
             <p className="text-sm text-muted-foreground">Showing {filteredFunds.length} of {allFunds.length} funds.</p>
             <Button onClick={handleCompare} disabled={selectedFunds.length < 2 || isCalculating}>
                 {isCalculating ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
-                Compare {selectedFunds.length} Funds
+                Compare {selectedFunds.length > 0 ? selectedFunds.length : ''} Funds
             </Button>
           </div>
           <div className="overflow-x-auto border rounded-md max-h-[600px]">
@@ -278,3 +282,5 @@ export function MutualFundScreenerTool() {
     </>
   );
 }
+
+    
