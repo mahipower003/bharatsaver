@@ -221,52 +221,28 @@
         }
       },
       {
-        "@type": "Question",
-        "name": "How do I use the selector to build a retirement portfolio?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "For retirement, you have a long time horizon, which is your biggest advantage. I'd start by filtering for equity funds like 'Flexi Cap' or 'Large & Mid-Cap'. Look for funds with a consistent 10-year track record and a high Sharpe Ratio (which indicates good risk-adjusted returns). Combining 2-3 such equity funds with your EPF/PPF is a great way to build a balanced, growth-oriented retirement portfolio."
-        }
+        "q": "How do I use the selector to build a retirement portfolio?",
+        "a": "For retirement, you have a long time horizon, which is your biggest advantage. I'd start by filtering for equity funds like 'Flexi Cap' or 'Large & Mid-Cap'. Look for funds with a consistent 10-year track record and a high Sharpe Ratio (which indicates good risk-adjusted returns). Combining 2-3 such equity funds with your EPF/PPF is a great way to build a balanced, growth-oriented retirement portfolio."
       },
       {
-        "@type": "Question",
-        "name": "Will the selector recommend direct plans or regular plans?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "My selector exclusively recommends **Direct Plans**. Why? Because they have lower expense ratios. Direct plans don't involve paying a commission to a distributor, and over the long term, that seemingly small difference can add up to lakhs in extra returns for you, the investor. I believe in putting more of your own money to work for you."
-        }
+        "q": "Will the selector recommend direct plans or regular plans?",
+        "a": "My selector exclusively recommends **Direct Plans**. Why? Because they have lower expense ratios. Direct plans don't involve paying a commission to a distributor, and over the long term, that seemingly small difference can add up to lakhs in extra returns for you, the investor. I believe in putting more of your own money to work for you."
       },
       {
-        "@type": "Question",
-        "name": "How do I check fund manager track record in the tool?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Experience matters. In our detailed fund view, we show the 'Manager Tenure'—how long the current fund manager has been at the helm. A manager with a tenure of 5+ years is a great sign of stability and a consistent investment process. It shows they've navigated multiple market cycles, which builds a lot of confidence."
-        }
+        "q": "How do I check fund manager track record in the tool?",
+        "a": "Experience matters. In our detailed fund view, we show the 'Manager Tenure'—how long the current fund manager has been at the helm. A manager with a tenure of 5+ years is a great sign of stability and a consistent investment process. It shows they've navigated multiple market cycles, which builds a lot of confidence."
       },
       {
-        "@type": "Question",
-        "name": "Is overlap the same as correlation?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No, and this is a critical distinction. Overlap measures the *direct duplication of holdings*. If two funds own the same stock, it contributes to overlap. Correlation measures how the *prices* of two funds move together, regardless of their holdings. Two funds could have zero overlap but still be highly correlated (e.g., a US tech fund and a China tech fund might both fall if global tech sentiment sours)."
-        }
+        "q": "Is overlap the same as correlation?",
+        "a": "No, and this is a critical distinction. Overlap measures the *direct duplication of holdings*. If two funds own the same stock, it contributes to overlap. Correlation measures how the *prices* of two funds move together, regardless of their holdings. Two funds could have zero overlap but still be highly correlated (e.g., a US tech fund and a China tech fund might both fall if global tech sentiment sours)."
       },
       {
-        "@type": "Question",
-        "name": "Can the selector suggest a low-overlap alternative to my existing funds?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "While the tool doesn't have an 'auto-suggest' feature yet, it gives you all the power to do this yourself. Here's how I do it: First, put in your existing fund. Then, add a fund from a different category (e.g., if you have a Large-Cap, add a Mid-Cap or a sector-specific fund). Run the overlap check. If it's low (<20%), you've found a good candidate for diversification. It's a quick, effective process of elimination."
-        }
+        "q": "Can the selector suggest a low-overlap alternative to my existing funds?",
+        "a": "While the tool doesn't have an 'auto-suggest' feature yet, it gives you all the power to do this yourself. Here's how I do it: First, put in your existing fund. Then, add a fund from a different category (e.g., if you have a Large-Cap, add a Mid-Cap or a sector-specific fund). Run the overlap check. If it's low (<20%), you've found a good candidate for diversification. It's a quick, effective process of elimination."
       },
       {
-        "@type": "Question",
-        "name": "How to build a goal-based 3-fund portfolio using the selector?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A 3-fund portfolio is a fantastic, simple strategy. Here’s a classic approach: 1) Use the screener to find a low-cost Nifty 50 Index Fund for your Large-Cap allocation (Core of your portfolio). 2) Find a Nifty Midcap 150 Index Fund for Mid-Cap exposure. 3) Find a Nasdaq 100 or S&P 500 fund for international diversification. Run the overlap check—it should be very low. This gives you a diversified, low-cost portfolio covering the most important market segments."
-        }
+        "q": "How to build a goal-based 3-fund portfolio using the selector?",
+        "a": "A 3-fund portfolio is a fantastic, simple strategy. Here’s a classic approach: 1) Use the screener to find a low-cost Nifty 50 Index Fund for your Large-Cap allocation (Core of your portfolio). 2) Find a Nifty Midcap 150 Index Fund for Mid-Cap exposure. 3) Find a Nasdaq 100 or S&P 500 fund for international diversification. Run the overlap check—it should be very low. This gives you a diversified, low-cost portfolio covering the most important market segments."
       }
     ]
   },

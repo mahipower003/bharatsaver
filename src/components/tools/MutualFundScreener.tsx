@@ -265,4 +265,3 @@ function parseWeight(w?: number | string | null): number {
   return isNaN(n) ? 0 : n;
 }
 
-    
