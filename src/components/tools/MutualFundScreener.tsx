@@ -17,6 +17,16 @@ import { calculateAllOverlaps } from '@/lib/overlap-calculator';
 
 const formatPercent = (value: number) => `${value.toFixed(2)}%`;
 
+// This is a mock function to get an expense ratio.
+// In a real application, this data would come from the API/JSON.
+const getMockExpenseRatio = (fund: RawFund) => {
+    if (fund.fund_name.includes('Index')) return 0.2;
+    if (fund.fund_name.includes('Small Cap')) return 0.7;
+    if (fund.fund_name.includes('Mid Cap')) return 0.6;
+    return 0.5;
+};
+
+
 export function MutualFundScreenerTool() {
   const { allFunds, isLoading: isDataLoading, error } = useFundData();
   const { toast } = useToast();
@@ -33,21 +43,37 @@ export function MutualFundScreenerTool() {
 
   const uniqueCategories = useMemo(() => {
     if (isDataLoading) return [];
-    const categories = new Set(allFunds.map(fund => fund.fund_name.includes('Large') ? 'Large Cap' : fund.fund_name.includes('Mid') ? 'Mid Cap' : fund.fund_name.includes('Small') ? 'Small Cap' : fund.fund_name.includes('ELSS') ? 'ELSS' : 'Other'));
-    return ['all', ...Array.from(categories)];
+    const categories = new Set(allFunds.map(fund => {
+        if (fund.fund_name.includes('Large & Mid')) return 'Large & Mid Cap';
+        if (fund.fund_name.includes('Large Cap') || fund.fund_name.includes('Bluechip')) return 'Large Cap';
+        if (fund.fund_name.includes('Midcap') || fund.fund_name.includes('Mid Cap')) return 'Mid Cap';
+        if (fund.fund_name.includes('Small Cap')) return 'Small Cap';
+        if (fund.fund_name.includes('ELSS')) return 'ELSS';
+        if (fund.fund_name.includes('Flexi Cap')) return 'Flexi Cap';
+        if (fund.fund_name.includes('Focused')) return 'Focused Fund';
+        if (fund.fund_name.includes('Index') || fund.fund_name.includes('Nifty')) return 'Index Fund';
+        return 'Other';
+    }));
+    return ['all', ...Array.from(categories).sort()];
   }, [allFunds, isDataLoading]);
 
   const filteredFunds = useMemo(() => {
     return allFunds.filter(fund => {
-      const fundAUM = (fund.constituents?.reduce((acc, c) => acc + parseWeight(c.weight_pct), 0) ?? 0) * (fund.aum ?? 0) / 100 / 10000000; // in crores
-      const fundExpense = 0.5; // Placeholder for actual expense ratio data
+      const fundAUM = fund.aum ?? 0;
+      const fundExpense = getMockExpenseRatio(fund);
+      
+      const fundCategory = 
+          fund.fund_name.includes('Large & Mid') ? 'Large & Mid Cap' :
+          (fund.fund_name.includes('Large Cap') || fund.fund_name.includes('Bluechip')) ? 'Large Cap' :
+          (fund.fund_name.includes('Midcap') || fund.fund_name.includes('Mid Cap')) ? 'Mid Cap' :
+          fund.fund_name.includes('Small Cap') ? 'Small Cap' :
+          fund.fund_name.includes('ELSS') ? 'ELSS' :
+          fund.fund_name.includes('Flexi Cap') ? 'Flexi Cap' :
+          fund.fund_name.includes('Focused') ? 'Focused Fund' :
+          (fund.fund_name.includes('Index') || fund.fund_name.includes('Nifty')) ? 'Index Fund' :
+          'Other';
 
-      const categoryMatch = filters.category === 'all' || 
-        (filters.category === 'Large Cap' && fund.fund_name.includes('Large')) ||
-        (filters.category === 'Mid Cap' && fund.fund_name.includes('Mid')) ||
-        (filters.category === 'Small Cap' && fund.fund_name.includes('Small')) ||
-        (filters.category === 'ELSS' && fund.fund_name.includes('ELSS'));
-
+      const categoryMatch = filters.category === 'all' || filters.category === fundCategory;
       const expenseMatch = fundExpense >= filters.expenseRatio[0] && fundExpense <= filters.expenseRatio[1];
       const aumMatch = fundAUM >= filters.aum[0] && fundAUM <= filters.aum[1];
 
@@ -77,7 +103,7 @@ export function MutualFundScreenerTool() {
     } else if (preset === 'elss') {
       setFilters({ category: 'ELSS', expenseRatio: [0, 1.5], aum: [5000, 200000] });
     } else if (preset === 'low_cost') {
-      setFilters({ category: 'all', expenseRatio: [0, 0.5], aum: [1000, 200000] });
+      setFilters({ category: 'Index Fund', expenseRatio: [0, 0.5], aum: [1000, 200000] });
     }
   };
 
@@ -168,8 +194,7 @@ export function MutualFundScreenerTool() {
                 <TableRow>
                   <TableHead className="w-10"></TableHead>
                   <TableHead>Fund Name</TableHead>
-                  <TableHead className="text-right">1Y Return</TableHead>
-                  <TableHead className="text-right">3Y Return</TableHead>
+                  <TableHead className="text-right">AUM (Cr)</TableHead>
                   <TableHead className="text-right">Expense Ratio</TableHead>
                 </TableRow>
               </TableHeader>
@@ -183,9 +208,8 @@ export function MutualFundScreenerTool() {
                       />
                     </TableCell>
                     <TableCell className="font-medium">{fund.fund_name}</TableCell>
-                    <TableCell className="text-right text-green-600">15.2%</TableCell>
-                    <TableCell className="text-right text-green-600">12.8%</TableCell>
-                    <TableCell className="text-right">0.5%</TableCell>
+                    <TableCell className="text-right">{fund.aum?.toLocaleString('en-IN')}</TableCell>
+                    <TableCell className="text-right">{formatPercent(getMockExpenseRatio(fund))}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
@@ -254,14 +278,3 @@ export function MutualFundScreenerTool() {
     </>
   );
 }
-
-// Helper function to parse weight which can be string, number, or null
-function parseWeight(w?: number | string | null): number {
-  if (w === null || w === undefined) return 0;
-  if (typeof w === 'number') return Number(w);
-  const s = String(w).trim().replace('%', '');
-  if (s === '') return 0;
-  const n = parseFloat(s);
-  return isNaN(n) ? 0 : n;
-}
-
