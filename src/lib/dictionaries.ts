@@ -11,7 +11,7 @@ const dictionaries = {
 };
 
 const pageDictionaries: Record<string, (locale: Locale) => Promise<any>> = {
-    'mutual-fund-screener': (locale: Locale) => {
+    'mutual_fund_screener': (locale: Locale) => {
         switch (locale) {
             case 'en':
                 return import('@/dictionaries/en/mutual-fund-screener.json').then(module => module.default);
@@ -37,28 +37,11 @@ export const getDictionary = async (locale: Locale, keys: string[] = []) => {
         if (pageDictionaries[key]) {
             const pageDict = await pageDictionaries[key](locale);
             if (pageDict) {
-                resultDictionary[key] = pageDict;
+                 // Directly merge the page-specific dictionary into the main object
+                 resultDictionary[key] = pageDict;
             }
         }
     }
-
-    if (keys.length === 0) {
-        return resultDictionary;
-    }
-
-    // This filtering logic seems complex and might be the source of issues.
-    // Let's simplify: if keys are provided, we assume they are top-level and already loaded.
-    // The logic above should handle page-specific dictionaries correctly.
-    const filteredDictionary: any = {};
-    for (const key of keys) {
-        if (resultDictionary[key]) {
-            filteredDictionary[key] = resultDictionary[key];
-        }
-    }
-
-    // If no specific keys were found in the page dictionaries, return the base dictionary.
-    // This part is tricky. A better approach is to merge dictionaries.
-    // Let's stick with the merged approach from above (resultDictionary).
 
     return resultDictionary;
 };
