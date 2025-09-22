@@ -6,7 +6,7 @@ import { Menu, Sparkles } from 'lucide-react';
 import { useState } from 'react';
 
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { BharatSaverLogo } from './BharatSaverLogo';
 import { calculators } from '@/data/calculators';
 import type { Locale } from '@/lib/i18n-config';
@@ -36,6 +36,7 @@ export function MobileNav({ lang, dictionary }: MobileNavProps) {
         </Button>
       </SheetTrigger>
       <SheetContent side="left" className="w-full max-w-sm">
+        <SheetTitle className="sr-only">Mobile Navigation Menu</SheetTitle>
         <div className="flex flex-col h-full">
           <div className="p-4 border-b flex justify-between items-center">
             <Link href={`/${lang}`} className="flex items-center gap-2" onClick={() => setOpen(false)}>
