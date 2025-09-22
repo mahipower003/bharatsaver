@@ -2,7 +2,11 @@ import 'server-only';
 import type { Locale } from './i18n-config';
 import { i18nConfig } from './i18n-config';
 
-const dictionaries = {
+// Define a type for our dictionary loader function
+type DictionaryLoader = () => Promise<any>;
+
+// Map locales to their dynamic import functions
+const dictionaries: Record<Locale, DictionaryLoader> = {
   en: () => import('@/dictionaries/en.json').then(module => module.default),
   hi: () => import('@/dictionaries/hi.json').then(module => module.default),
   mr: () => import('@/dictionaries/mr.json').then(module => module.default),
@@ -11,9 +15,17 @@ const dictionaries = {
 };
 
 export const getDictionary = async (locale: Locale) => {
-    const lang = i18nConfig.locales.includes(locale) ? locale : i18nConfig.defaultLocale;
-    const load = dictionaries[lang] || dictionaries.en;
-    return load();
+  const selectedLocale = i18nConfig.locales.includes(locale) ? locale : i18nConfig.defaultLocale;
+  const loader = dictionaries[selectedLocale] || dictionaries.en;
+  
+  try {
+    const dictionary = await loader();
+    // The loaded JSON is the dictionary itself.
+    return dictionary;
+  } catch (error) {
+    console.error(`Failed to load dictionary for locale: ${locale}`, error);
+    // Fallback to English dictionary in case of any error
+    const fallbackLoader = dictionaries.en;
+    return fallbackLoader();
+  }
 };
-
-    
