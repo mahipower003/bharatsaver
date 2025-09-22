@@ -106,16 +106,6 @@ export const calculators: Calculator[] = [
     lastModified: '2024-07-20',
     image: '/images/Mutual Fund Overlap Calculator.png'
   },
-   {
-    slug: 'mutual-fund-screener',
-    title: 'Mutual Fund Screener',
-    description: 'Filter and compare the best mutual funds for your goals.',
-    summary: 'Use our free mutual fund screener to filter and compare direct funds by returns, risk, AUM, expense ratio and holdings. Includes overlap check, SIP planner & downloadable CSV.',
-    icon: Filter,
-    link_text: 'Find Funds',
-    lastModified: '2024-08-05',
-    image: '/images/PPF-NPS-FD-SSY-Scheme-selector.png'
-  },
   {
     slug: 'ups-pension-calculator',
     title: 'UPS Pension Calculator',
@@ -125,5 +115,15 @@ export const calculators: Calculator[] = [
     link_text: 'Calculate Now',
     lastModified: '2024-08-02',
     image: '/images/UPS Pension Scheme Calculator.png'
+  },
+  {
+    slug: 'mutual-fund-screener',
+    title: 'Mutual Fund Screener',
+    description: 'Filter and compare the best mutual funds for your goals.',
+    summary: 'Use our free mutual fund screener to filter and compare direct funds by returns, risk, AUM, expense ratio and holdings. Includes overlap check, SIP planner & downloadable CSV.',
+    icon: Filter,
+    link_text: 'Find Funds',
+    lastModified: '2024-08-05',
+    image: '/images/PPF-NPS-FD-SSY-Scheme-selector.png'
   },
 ];
