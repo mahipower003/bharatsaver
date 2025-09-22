@@ -137,124 +137,67 @@
     "body": "Still not sure which funds to pick? That's completely normal. For a more personalized approach, I can help you get a curated list of funds based on your specific goals and risk profile.",
     "cta_text": "Get My Personalized Fund List"
   },
-  "ups_pension_calculator": {
-    "meta_title": "UPS Pension Calculator (India) — Estimate Your Monthly Pension",
-    "meta_description": "Free UPS Pension Calculator for Indian employees. Estimate your monthly pension, family pension and commuted lump sum based on last drawn salary and service years.",
-    "h1": "UPS Pension Calculator (India)",
-    "hero_subtitle": "Estimate your monthly pension, family pension and lump sum under the Unified Pension Scheme.",
-    "last_reviewed_date": "August 2024",
-    "worked_examples": {
-      "h2": "Worked Examples (Transcript)",
-      "scenario1": {
-        "title": "Scenario 1: Standard Retirement",
-        "body": "<p><strong>Inputs:</strong> Basic Pay = ₹50,000, DA% = 50%, Service = 30 years.</p><p><strong>Calculation:</strong> Pensionable Salary = ₹75,000. Monthly Pension = (75000 * 0.5 * 30) / 33 = <strong>₹34,091</strong>.</p>"
-      },
-      "scenario2": {
-        "title": "Scenario 2: Early Retirement",
-        "body": "<p><strong>Inputs:</strong> Basic Pay = ₹40,000, DA% = 45%, Service = 20 years.</p><p><strong>Calculation:</strong> Pensionable Salary = ₹58,000. Monthly Pension = (58000 * 0.5 * 20) / 33 = <strong>₹17,576</strong>.</p>"
-      },
-      "scenario3": {
-        "title": "Scenario 3: Higher Salary",
-        "body": "<p><strong>Inputs:</strong> Basic Pay = ₹80,000, DA% = 55%, Service = 33 years.</p><p><strong>Calculation:</strong> Pensionable Salary = ₹1,24,000. Monthly Pension = (124000 * 0.5 * 33) / 33 = <strong>₹62,000</strong>.</p>"
-      }
+  "mutual_fund_overlap_calculator": {
+    "meta_title": "Mutual Fund Overlap Calculator — Check Overlap Between Funds (India, 2025)",
+    "meta_description": "Free mutual fund overlap calculator (2025) for Indian funds. Compare 2-5 funds side-by-side to see portfolio overlap percentage and common stocks. Make informed diversification decisions.",
+    "h1": "Mutual Fund Overlap Calculator India (2025)",
+    "hero": {
+      "subtitle": "Are your mutual funds secretly the same? Compare up to five Indian equity funds to instantly see your true portfolio overlap and top common holdings."
     },
-    "worked_examples_table": {
-        "h2": "Pension Calculation at a Glance",
-        "description": "The table below shows sample pension amounts for different salary and service year combinations.",
-        "headers": ["Basic + DA", "10 Years Service", "20 Years Service", "30 Years Service"],
-        "rows": [
-            ["₹50,000", "₹7,576", "₹15,152", "₹22,727"],
-            ["₹75,000", "₹11,364", "₹22,727", "₹34,091"],
-            ["₹1,00,000", "₹15,152", "₹30,303", "₹45,455"],
-            ["₹1,25,000", "₹18,939", "₹37,879", "₹56,818"]
-        ]
+    "tool": {
+      "title": "Compare Mutual Fund Holdings",
+      "description": "Select at least two funds to begin.",
+      "add_fund": "Add Another Fund",
+      "export_csv": "Export CSV",
+      "copy_summary": "Copy Summary"
+    },
+    "what_is_overlap": {
+      "h2": "What is Mutual Fund Overlap and Why Does It Matter?",
+      "body": "Mutual fund overlap occurs when two or more funds in your portfolio hold the same stocks. While some overlap is normal (especially in large-cap funds), high overlap can lead to <strong>over-concentration</strong> and <strong>‘diworsification’</strong> — where you think you are diversified but are actually holding the same underlying assets. This calculator helps you uncover that hidden risk."
     },
     "how_it_works": {
-      "h2": "How is the UPS Pension Calculated?",
-      "body": "<p>The calculator uses a standardized formula based on the Unified Pension Scheme guidelines. The key components are:</p><ul><li><strong>Pensionable Salary:</strong> This is your last drawn Basic Pay plus the applicable Dearness Allowance (DA).</li><li><strong>Pension Factor:</strong> This is a fixed multiplier, typically 0.5 (representing 50%).</li><li><strong>Qualifying Service Years:</strong> The total number of years you have served.</li><li><strong>Divisor:</strong> A standard divisor, typically 33, used to normalize the calculation over a standard service period.</li></ul>"
+      "h2": "How Our Mutual Fund Overlap Calculator Works",
+      "body": "Our tool compares the holdings of the funds you select and calculates the <strong>weighted overlap</strong>. This metric tells you what percentage of your portfolio is duplicated between two funds, based on the smaller weight for each common stock.<br/><br/><strong>Example:</strong> If Fund A holds 5% in ICICI Bank and Fund B holds 6%, the overlap contribution from that stock is 5% (the minimum of the two). We sum this for all common shares to get the total weighted overlap."
     },
-    "formula_section": {
-      "h2": "The UPS Pension Formula",
-      "body": "<p>The core formula used is:</p><p class='font-mono bg-muted p-4 rounded-md text-center'>Monthly Pension = (Pensionable Salary × Pension Factor × Service Years) / Divisor</p>"
+    "live_example": {
+      "h2": "Live Example: ICICI Pru Bluechip vs HDFC Top 100",
+      "intro": "Here is a pre-rendered example showing a typical comparison. The funds have a weighted overlap of <strong>27.02%</strong>.",
+      "result_summary": "This is a <strong>moderate</strong> level of overlap, common for large-cap funds tracking similar benchmarks. The top 5 common stocks alone contribute over 18% to this overlap.",
+      "top_stocks_title": "Top 5 Overlapping Stocks",
+      "top_stocks": [
+        { "name": "ICICI Bank", "weight": "5.21%" },
+        { "name": "Infosys", "weight": "4.67%" },
+        { "name": "Axis Bank", "weight": "2.34%" },
+        { "name": "Bharti Airtel", "weight": "3.12%" },
+        { "name": "State Bank of India", "weight": "2.98%" }
+      ]
     },
-    "family_pension": {
-      "h2": "Family Pension Rules",
-      "body": "<p>In the unfortunate event of the pensioner's death, the family is entitled to a family pension. This is typically calculated as <strong>60% of the original monthly pension</strong>. Our calculator automatically computes this amount for you.</p>"
+    "interpreting_results": {
+      "h2": "How to Interpret Your Overlap Score",
+      "body": "<ul><li><strong>Low (0-15%):</strong> Good diversification. The funds have distinct strategies.</li><li><strong>Moderate (15-30%):</strong> Common for funds in the same category (e.g., large-cap). Review to ensure you are comfortable with the shared exposure.</li><li><strong>High (30-50%):</strong> Significant overlap. You may be paying two sets of fees for the same stocks. Consider consolidating.</li><li><strong>Very High (>50%):</strong> The funds are practically clones. Replacing one to improve diversification is highly recommended.</li></ul>"
     },
-    "comparison": {
-      "h2": "UPS vs. NPS: A Quick Comparison",
-      "body": "<p>The Unified Pension Scheme (UPS) is a defined benefit plan, where the pension is guaranteed based on a formula. The National Pension System (NPS), on the other hand, is a defined contribution plan, where the final corpus depends on market performance. UPS offers certainty, while NPS offers the potential for higher returns (and higher risk).</p>"
+    "what_to_do": {
+      "h2": "What to Do If You Have High Overlap",
+      "body": "If you find a high overlap, don't panic. Consider replacing one of the funds with another that has a different strategy or market-cap focus. For example, if two large-cap funds overlap, you might switch one to a mid-cap or a sector-specific fund to achieve true diversification."
     },
-    "tax_rules": {
-      "h2": "Taxation of Pension Income",
-      "body": "<p>The monthly pension received under the UPS is taxable as 'Income from Salary'. The commuted (lump sum) portion may be partially or fully exempt, depending on whether you are a government or non-government employee and whether you also receive gratuity. It's advisable to consult a tax professional for specific advice.</p>"
-    },
-    "optimization": {
-      "h2": "How to Optimize Your Pension",
-      "body": "<p>Since the pension is formula-based, optimization primarily involves maximizing your service years and ensuring your final basic pay is as high as possible through timely promotions and pay scale revisions. Unlike NPS, you cannot increase your contribution to get a higher pension.</p>"
+    "faq": {
+      "h2": "Frequently Asked Questions",
+      "faqs": [
+        { "q": "How is mutual fund overlap calculated?", "a": "We calculate the weighted overlap by summing the minimum weight of each common stock held by two funds. The formula is: Σ min(Weight_Fund_A, Weight_Fund_B) for all common stocks." },
+        { "q": "Is 30% overlap in mutual funds bad?", "a": "An overlap of 30% is considered high. While not necessarily 'bad,' it suggests you may be paying two expense ratios for very similar holdings, which reduces diversification. It is worth reviewing if you need both funds in your portfolio." },
+        { "q": "How do you check overlap in mutual funds?", "a": "Simply select 2 to 5 Indian equity funds from the dropdown menus in our calculator. The tool will automatically fetch the latest holdings data and calculate the pairwise overlap for you." },
+        { "q": "Which type of funds have the most overlap?", "a": "Large-cap and index funds tend to have the most overlap because they often track similar benchmarks (like the Nifty 50 or Sensex) and invest in the same set of top blue-chip companies." }
+      ]
     },
     "methodology": {
-      "h2": "Methodology",
-      "body": "<p>The calculations are based on the standard formula prescribed under the Unified Pension Scheme rules applicable to many Indian government and public sector employees. The calculator assumes a standard pension factor of 0.5 and a divisor of 33. This is an estimation tool and should not be considered as final financial advice. Always consult official sources for definitive figures.</p>"
+      "h2": "Data & Methodology",
+      "body": "<p><strong>Data Sources:</strong> Our holdings data is sourced from publicly available scheme documents and updated periodically. While we strive for accuracy, we cannot guarantee it. Always verify with official AMC factsheets. <strong>Last Updated: Aug 2025.</strong></p><p><strong>Matching Logic:</strong> Holdings are matched first by their stock ticker (e.g., 'RELIANCE'). If a ticker is not available, we use a normalized company name (e.g., 'reliance industries' after removing 'Ltd', 'Inc', etc.). Non-equity holdings like 'Cash', 'Tri-party repo', or 'Net Receivables' are excluded from the calculation based on a regex match for common terms.</p><p><strong>Worked Example (Weighted Overlap):</strong></p><p>Weighted Overlap = Σ min(weight in Fund A, weight in Fund B) for all common stocks.</p><div class='overflow-x-auto'><table class='w-full text-sm my-4'><thead><tr class='border-b'><th class='text-left p-2'>Stock</th><th class='text-right p-2'>Fund A (w%)</th><th class='text-right p-2'>Fund B (w%)</th><th class='text-right p-2'>Min Weight</th></tr></thead><tbody><tr class='border-b'><td class='p-2'>ICICI Bank</td><td class='text-right p-2'>5.21</td><td class='text-right p-2'>6.03</td><td class='text-right p-2'>5.21</td></tr><tr class='border-b'><td class='p-2'>Infosys</td><td class='text-right p-2'>4.67</td><td class='text-right p-2'>5.06</td><td class='text-right p-2'>4.67</td></tr><tr class='border-b'><td class='p-2'>Axis Bank</td><td class='text-right p-2'>2.34</td><td class='text-right p-2'>3.45</td><td class='text-right p-2'>2.34</td></tr><tr class='border-b'><td class='p-2'>Bharti Airtel</td><td class='text-right p-2'>3.12</td><td class='text-right p-2'>4.50</td><td class='text-right p-2'>3.12</td></tr><tr class='border-b'><td class='p-2'>State Bank of India</td><td class='text-right p-2'>2.98</td><td class='text-right p-2'>3.80</td><td class='text-right p-2'>2.98</td></tr><tr><td colspan='3' class='text-right font-bold p-2'>...and so on for all 35 common stocks...</td><td class='text-right font-bold p-2'></td></tr><tr class='border-t'><td colspan='3' class='text-right font-bold p-2'>Total Weighted Overlap</td><td class='text-right font-bold p-2'>27.02%</td></tr></tbody></table></div>"
     },
-    "faqs": [
-      { "q": "Is this calculator for central government employees?", "a": "Yes, the formula used is standard for many central and state government employees under the old pension scheme (pre-NPS)." },
-      { "q": "What is DA (Dearness Allowance)?", "a": "Dearness Allowance is a cost of living adjustment allowance paid to government employees and pensioners in India." },
-      { "q": "Can I commute a portion of my pension?", "a": "Yes, pensioners are generally allowed to commute (take as a lump sum) a portion of their pension, typically up to one-third. The lump sum is often tax-exempt for government employees." }
-    ],
-    "faq_title": "Frequently Asked Questions",
-    "conclusion": {
-      "h2": "Final Thoughts",
-      "body": "The UPS Pension Calculator is a powerful tool to get a clear estimate of your post-retirement income, helping you plan your finances with greater confidence and certainty."
-    },
-    "disclaimer": {
-      "title": "Disclaimer",
-      "body": "This is an estimation tool based on standard pension rules. The final pension amount may vary based on your specific organization's rules and regulations. Always verify with your employer's pension cell."
-    },
-    "interactive_tool": {
-      "title": "UPS Pension Calculator",
-      "description": "Enter your details to estimate your pension.",
-      "calculating": "Calculating...",
-      "calculate_cta": "Calculate Pension",
-      "try_example": "Try Example",
-      "show_steps": "Show Calculation Steps",
-      "hide_steps": "Hide Steps",
-      "copy_link": "Copy Link",
-      "print_results": "Print",
-      "download_excel": "Download Steps"
-    },
-    "inputs": {
-      "basic_pay": "Last Drawn Basic Pay (₹)",
-      "da_percentage": "DA Percentage (%)",
-      "service_years": "Qualifying Service (Years)"
-    },
-    "outputs": {
-      "title": "Your Estimated Pension",
-      "monthly_pension": "Monthly Pension",
-      "family_pension": "Family Pension (60%)",
-      "lump_sum": "Commuted Lump Sum (Example)"
-    },
-    "calculation_steps": {
-      "title": "Calculation Breakdown",
-      "pensionable_salary": "Pensionable Salary",
-      "monthly_pension": "Monthly Pension",
-      "family_pension": "Family Pension"
-    },
-    "calculation_transcript": {
-        "title": "Calculation Transcript",
-        "inputs_title": "Inputs",
-        "basic_pay": "Basic Pay",
-        "da_percentage": "DA %",
-        "pensionable_salary": "Pensionable Salary",
-        "formula_title": "Formula",
-        "monthly_pension_formula": "Monthly Pension = (Pensionable Salary * Pension Factor * Service Years) / Divisor",
-        "numbers_title": "The Numbers",
-        "pension_factor": "Pension Factor",
-        "service_years": "Service Years",
-        "divisor": "Divisor",
-        "compute_title": "Compute",
-        "monthly_pension": "Monthly Pension",
-        "family_pension": "Family Pension"
+    "results": {
+        "weighted_overlap_title": "Weighted Overlap",
+        "top_stocks_title": "Top Common Stocks",
+        "stock_header": "Stock",
+        "min_weight_header": "Min. Weight"
     }
   }
 }
