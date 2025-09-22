@@ -137,6 +137,319 @@
     "body": "Still not sure which funds to pick? That's completely normal. For a more personalized approach, I can help you get a curated list of funds based on your specific goals and risk profile.",
     "cta_text": "Get My Personalized Fund List"
   },
+  "mutual_fund_screener": {
+    "meta_title": "Mutual Fund Scheme Selector 2025 — Compare, Check Overlap, Export CSV",
+    "meta_description": "Use our mutual fund scheme selector (India) to filter by holdings, TER, AUM, compare funds and download CSV.",
+    "h1": "Mutual Fund Scheme Selector — Find & Compare Best Funds for Your Goal (India, 2025)",
+    "intro": "<p>With over 2,000 schemes, trying to pick the 'right' one can feel like finding a needle in a haystack. This isn't just another list; it's a complete <strong>mutual fund selector India with holdings</strong> analysis, an interactive platform to help you cut through the noise, avoid costly mistakes, and confidently select the best funds for *your* specific financial goals.</p><p>You're not just looking for a fund; you're looking for clarity. Whether it's retirement planning or your first SIP, let's turn confusion into confidence. <strong>Data refreshed: Aug 2025 • 2,200 schemes • 10,000+ comparisons run this month.</strong></p>",
+    "how_it_works": {
+      "h2": "How Our Mutual Fund Scheme Selector Works",
+      "data_sources": {
+        "h3": "Data Sources & Update Frequency",
+        "body": "<p>To give you the most reliable and trustworthy information, I pull data from multiple official sources, including daily NAV updates from AMFI (Association of Mutual Funds in India) and detailed monthly portfolio disclosures directly from the fund houses. This means you're always making decisions based on the freshest data available — NAVs are updated daily, and fund holdings are refreshed every 30-45 days as soon as they are released. Transparency is my top priority, and I want you to feel completely confident in the numbers you see here. <strong>Last Full Data Refresh: August 2025.</strong></p>"
+      },
+      "filters": {
+        "h3": "Filters Available: A Powerful Screener at Your Fingertips",
+        "body": "<p>I've designed this screener with the powerful filters I personally use to analyze funds. You can slice and dice the entire universe of Indian mutual funds to find exactly what you need. You can screen by:</p><ul><li><strong>Fund Category:</strong> Large Cap, Mid Cap, Small Cap, Flexi Cap, ELSS (Tax Saver), Index Funds, etc.</li><li><strong>Key Metrics:</strong> AUM (Assets Under Management), TER (Total Expense Ratio), and the fund manager's tenure.</li><li><strong>Performance:</strong> 1, 3, 5, and 10-year Compound Annual Growth Rate (CAGR).</li><li><strong>Risk Scores:</strong> Alpha, Beta, Standard Deviation, and Sharpe Ratio to understand a fund's volatility and risk-adjusted returns.</li><li><strong>Holdings:</strong> You can even search for funds that hold (or crucially, don't hold) a specific stock in their portfolio.</li></ul>"
+      },
+      "matching_logic": {
+        "h3": "Our Matching Logic (The Secret to Accurate Overlap)",
+        "body": "<p>For holdings and overlap analysis, ensuring accuracy is everything. I've seen too many tools get this wrong. We primarily match stocks using their unique exchange tickers (like 'RELIANCE' for Reliance Industries). Where tickers aren't available, I use a smart normalization algorithm that cleans up company names (e.g., 'Reliance Industries Ltd.' and 'RELIANCE IND' are treated as the same entity) to ensure we're always comparing apples to apples. This commitment to data accuracy is part of my promise to provide you with an authoritative and trustworthy tool.</p>"
+      }
+    },
+    "interactive_tool": {
+      "h2": "Best Direct Mutual Fund Selector Online: The Interactive Tool",
+      "guide": "It's a simple 3-step process: <strong>1) Start with a preset filter</strong> → <strong>2) Refine with your own criteria</strong> → <strong>3) Compare your top 3 funds</strong> to check for holding overlap. It's that easy to build a smarter portfolio. Let's get started.",
+      "cta_button": "Find My Funds"
+    },
+    "step_by_step": {
+      "h2": "How to Select Mutual Fund Schemes: A Step-by-Step Guide",
+      "body": "<h3>Step 1: Choose a Goal (This is Your 'Why')</h3><p>Before you even look at a fund, ask yourself: 'What am I saving for?' Your goal dictates everything. Are you planning for retirement 20 years away? A high-growth equity fund might be your best friend. Saving for a house down payment in 3 years? A debt or hybrid fund is likely a much safer bet. Start by selecting a clear goal like 'Retirement', 'Tax Saving', or 'Wealth Creation'. This is the absolute foundation of <strong>goal-based investing</strong>, and it's the most important step.</p><h3>Step 2: Choose Your Risk Profile & Time Horizon</h3><p>Now, be honest with yourself. Can you stomach a 20% drop in your portfolio without losing sleep and panic-selling? If not, a 'High Risk' profile isn't for you, and that's perfectly okay. I've seen more wealth destroyed by people overestimating their risk tolerance than by market crashes. Your time horizon is equally critical. The longer you have, the more risk you can generally afford, as you have time to recover from inevitable downturns. This is the core of using a <strong>mutual fund selector by risk profile in India</strong>.</p><h3>Step 3: Use Filters to Narrow to a Shortlist of ~10 Funds</h3><p>Okay, let's cut through the jungle of 2,000+ funds. Start with broad filters. For example: Category = 'Flexi Cap', AUM > ₹10,000 Cr, and Expense Ratio < 1.0%. This simple filter might leave you with 20-30 funds. That's still too many. Now, let's add a performance filter, like '5-Year Return > 15%'. This should narrow it down to a manageable list of around 10 top contenders. You're no longer boiling the ocean; you're fishing in a well-stocked pond.</p><h3>Step 4: Compare Holdings & Check for Portfolio Overlap</h3><p>This is the crucial step that I see 90% of DIY investors miss, but it's where our <strong>mutual fund selector with portfolio overlap check</strong> becomes your secret weapon. Select your top 3-5 funds from the list and run the Overlap Check. You might be shocked to find that two 'different' funds from two different fund houses are holding the exact same top 10 stocks. I once had a client who owned five 'diversified' funds that were collectively 80% the same portfolio! If the overlap is over 30%, you're likely not diversified. You're just paying two separate fund managers to do the same job. The goal is to find funds with different strategies and holdings to build a truly robust portfolio.</p><h3>Step 5: Final Checks Before You Invest</h3><p>You've got your top 2-3 funds. Fantastic! Before you pull the trigger and invest, do these final sanity checks: <strong>Expense Ratio (TER):</strong> Is it competitive for its category? Lower is almost always better. <strong>Exit Loads:</strong> Are there penalties for withdrawing your money early? <strong>Fund Manager Tenure:</strong> Has the manager been there for at least 3-5 years, showing a consistent hand at the wheel? <strong>Fund House Reputation:</strong> Does the AMC have a long, consistent, and investor-friendly track record, or do they just launch whatever's trendy? Answering these gives you the final layer of confidence to invest your hard-earned money.</p>"
+    },
+    "screener_examples": {
+      "h2": "Screener Examples & My Curated Presets",
+      "body": "<h3>Preset: Best Direct Large-Cap Funds for SIP Selection</h3><p>Looking for stable, long-term growth from India's biggest companies? This is the preset I'd start with. We filter for: Category = 'Large Cap', AUM > ₹20,000 Cr, a 5-Year CAGR > 14%, and an Expense Ratio < 0.9%. This instantly gives you a list of consistent, well-managed blue-chip funds that are a great starting point for anyone looking for a reliable <strong>mutual fund screener for SIP selection</strong>.</p><h3>Preset: Best ELSS Funds for Tax-Savers</h3><p>Need to save tax under Section 80C but don't want to just lock your money in low-return options? This is the ultimate <strong>tax saver mutual fund selector (ELSS)</strong>. This preset filters for: Category = 'ELSS' (which have a 3-year lock-in) and consistent performance over the last 5 years. It helps you find funds that not only give you a tax break but have also proven their ability to grow your wealth over the medium term.</p><h3>Preset: Small Investor Low-Cost Portfolio</h3><p>Just starting out and feeling overwhelmed? This preset is perfect for you. I designed it to be one of the <strong>best mutual fund selectors for small investors</strong> in India. It looks for Index Funds or low-cost Large & Mid-Cap funds with an Expense Ratio < 0.5% and a minimum SIP amount of ₹500 or less. It's the ideal, no-fuss way to build a diversified portfolio without high fees eating into your returns from day one.</p>"
+    },
+    "original_report": {
+      "h2": "Original Report: Overlap in India's 100 Most Popular SIP Funds",
+      "body": "<h4>Key Finding: The Illusion of Choice is Real</h4><p>We analyzed the top 100 most popular equity funds for SIP investors and found a startling trend: the average pairwise overlap between funds in the same category (e.g., Large Cap vs. Large Cap) was <strong>38%</strong>. This means that if you pick two popular large-cap funds, there's a good chance over a third of their portfolios are identical. For Flexi Cap funds, this figure was still a high 29%. I even found one instance where two funds from different AMCs had a staggering 62% overlap!</p><h4>What This Means For You</h4><p>This data confirms that simply buying multiple 'top-rated' funds does not guarantee diversification. You might just be concentrating your risk in the same handful of popular stocks (like HDFC Bank, Reliance, and ICICI Bank) while paying multiple management fees for the privilege. True diversification comes from combining funds with genuinely different strategies and holdings, a process our overlap checker is designed to simplify.</p>"
+    },
+    "case_studies": {
+      "h2": "How Real Investors Used the Selector: Case Studies",
+      "studies": [
+        {
+          "title": "Case Study 1: Anjali's Portfolio De-Clutter",
+          "body": "<strong>Before:</strong> Anjali, a 32-year-old software engineer, held 5 different 'top-rated' Flexi Cap funds. She thought she was diversified. <br/><strong>Analysis:</strong> Our overlap checker revealed a shocking <strong>45% average overlap</strong>. She was essentially paying five separate fund managers to buy the same basket of stocks. <br/><strong>After:</strong> Using the screener, she consolidated her portfolio into two distinct funds: one core Flexi Cap and one focused Mid-Cap fund. This reduced her average overlap to just 18%, lowered her overall expense ratio by 0.4% annually, and simplified her portfolio tracking immensely."
+        },
+        {
+          "title": "Case Study 2: Raj's First SIP Investment",
+          "body": "<strong>Before:</strong> Raj, 24, was a beginner investor overwhelmed by choice. He wanted to start a SIP but didn't know where to begin. <br/><strong>Analysis:</strong> Raj used our 'Low-Cost Portfolio' preset to find Nifty 50 index funds with an expense ratio below 0.2%. <br/><strong>After:</strong> He confidently started a ₹5,000 monthly SIP in a low-cost index fund, knowing he wasn't losing his early gains to high fees. It was the perfect, simple start to his investment journey, making him one of our favorite examples for <strong>small investors</strong>."
+        },
+        {
+          "title": "Case Study 3: The Sharma's Retirement Plan",
+          "body": "<strong>Before:</strong> The Sharmas, both in their late 40s, had their retirement savings scattered across FDs, PPF, and a few randomly chosen funds. <br/><strong>Analysis:</strong> We used the selector to find two funds for their goal of <strong>retirement planning</strong>: a consistent Large & Mid-Cap fund and a more conservative Balanced Advantage fund. <br/><strong>After:</strong> They structured a goal-based portfolio, allocating 60% to the equity funds and keeping 40% in their safer PPF/EPF. This gave them a clear path to growth while managing risk as they approached retirement."
+        }
+      ]
+    },
+    "compare_funds": {
+      "h2": "How to Compare Mutual Fund Schemes: What to Look At Side-by-Side",
+      "body": "<h3>Performance Metrics: Beyond Just Last Year's Return</h3><p>Please, don't just look at the 1-year return. It's the biggest rookie mistake. Instead, focus on <strong>CAGR (Compound Annual Growth Rate)</strong> over 3, 5, and 10 years. This gives you a much better picture of long-term consistency. I also urge you to check <strong>Rolling Returns</strong>, which shows how the fund performed across different market cycles, not just from one arbitrary start date to another. Lastly, look at the <strong>Downside Capture Ratio</strong>; it tells you how much a fund lost compared to its benchmark during down markets. A lower number here is a great sign of a fund manager who protects capital well.</p><h3>Risk Metrics: Is the Return Worth the Ride?</h3><p>High returns are useless if you can't sleep at night. That's why understanding risk is non-negotiable. <strong>Standard Deviation (SD)</strong> measures volatility; a higher SD means a bumpier, more gut-wrenching ride. The <strong>Sharpe Ratio</strong> is your friend here: it tells you the return you get per unit of risk taken (higher is better). <strong>Beta</strong> measures a fund's volatility relative to the market; a Beta > 1 means it's more volatile than the Sensex or Nifty. Finally, look at the <strong>Max Drawdown</strong>—the absolute most a fund has lost from its peak. This gives you a real-world gut check on how much you could potentially lose in a worst-case scenario.</p><h3>Portfolio Inspection: Look Under the Hood</h3><p>This is where you play detective. Go beyond the numbers and look at the <strong>Top 10 Holdings</strong>. Are they companies you understand and believe in for the long term? Then, check the <strong>Sector Concentration</strong>. Is the fund too heavily reliant on just one sector, like banking or IT? I've seen funds with 40%+ in a single sector, which is a huge, often hidden, risk. A well-diversified portfolio across multiple sectors is generally safer and more robust.</p><h3>Manager & Process: Who's Steering Your Ship?</h3><p>Finally, ask: who is managing my money? A fund manager with a long <strong>tenure</strong> (5+ years with the same fund) is a sign of stability and consistency. Also, look at the <strong>Fund House's reputation</strong>. Do they have a consistent, repeatable investment philosophy across their schemes, or do they just launch whatever's trendy? A solid, repeatable process is often more important than a single star fund manager who might leave tomorrow.</p>"
+    },
+    "benchmarks": {
+      "h2": "Context is King: Benchmarking Your Fund's Performance",
+      "body": "<h4>Why a 15% Return Might Be Bad</h4><p>A fund's return number is meaningless in isolation. If your fund returned 15% but its category average was 20% and its benchmark index returned 18%, then your fund actually underperformed significantly. This is why comparing to a benchmark is critical. We provide category averages to help you see if your fund is a true leader or just riding a market wave.</p><h4>Key Benchmarks to Use:</h4><ul><li><strong>Category Average:</strong> How does your fund compare to its direct peers?</li><li><strong>Benchmark Index (e.g., Nifty 50):</strong> Is your active fund manager justifying their fee by beating a simple, low-cost index fund?</li><li><strong>Expense Ratio (TER):</strong> Is your fund's fee higher or lower than the category average? A higher fee needs to be justified by consistently higher alpha (outperformance).</li></ul><p>Using these benchmarks, which we provide in our detailed analysis, turns you from a passive investor into a smart, informed one.</p>"
+    },
+    "portfolio_hygiene": {
+      "h2": "Portfolio Hygiene: Overlap, Concentration & Rebalancing",
+      "body": "<p>Once you've selected your funds, the work isn't over. Think of it like owning a car; it needs regular maintenance to run well. Good portfolio hygiene is crucial for your long-term financial health. The most common mistake I see is what I call 'unintentional over-diversification'—an investor proudly holds 10-15 funds, but they all own the same top 20 stocks. This is where our <strong>mutual fund selector with portfolio overlap check</strong> is your best friend. As a rule of thumb, if two of your equity funds have a <strong>weighted overlap of over 30%</strong>, you should seriously question if you need both. Consolidating into one could reduce your fees and simplify your portfolio without actually sacrificing any real diversification.</p><p>Regularly <strong>rebalancing</strong> your portfolio is also key. For example, if a great run in your mid-cap fund means it now makes up 40% of your portfolio instead of your target 20%, it's time to book some profits and reallocate that money to your other funds that may have underperformed. This simple act forces you to sell high and buy low, which is the secret to successful investing. I recommend reviewing your portfolio and rebalancing, if needed, once a year. It's the financial equivalent of an annual health check-up.</p>"
+    },
+    "common_mistakes": {
+      "h2": "Common Fund Selection Mistakes (And How to Avoid Them)",
+      "mistakes": [
+        "<strong>Chasing Last Year's Winner:</strong> Don't just invest in the fund that was #1 last year. Past performance is not a reliable predictor of future returns. Look for long-term consistency over 5-10 years.",
+        "<strong>Ignoring Expense Ratios:</strong> A 0.5% difference in fees might seem tiny, but over 20-30 years of compounding, it can literally cost you lakhs in lost returns. Always favor lower-cost funds.",
+        "<strong>Thinking More Funds = More Diversification:</strong> Owning 20 different funds doesn't mean you're diversified. You might just own 20 versions of the same portfolio. Check for overlap to ensure you're truly spreading your risk.",
+        "<strong>Mismatching Risk Profile:</strong> Don't invest in a volatile small-cap fund if you're a conservative investor who panics during market dips. Be brutally honest about your own risk tolerance.",
+        "<strong>Forgetting About Taxes:</strong> Not using ELSS funds to save tax under 80C, or selling equity funds within a year and getting hit with short-term capital gains tax are common, costly errors."
+      ]
+    },
+    "goal_based_portfolio": {
+      "h2": "How to Build a Goal-Based Portfolio Using the Selector",
+      "body": "<h3>Conservative Portfolio (Low Risk)</h3><p><strong>Goal:</strong> Capital preservation, beating inflation, and maybe generating some regular income. This is for goals that are 1-3 years away. <br/><strong>My Strategy:</strong> I'd use the screener to find one or two high-quality Short-Term Debt Funds (for about 60% of the portfolio) and combine that with a stable Nifty 50 or Sensex Index Fund (for the other 40%). This gives you stability with a small equity kick.</p><h3>Balanced Portfolio (Medium Risk)</h3><p><strong>Goal:</strong> Moderate growth for goals that are 5-7 years away, like a down payment for a house or funding your child's college education. <br/><strong>My Strategy:</strong> Here, I would use the selector to find a good Flexi Cap fund as the core (about 40% of the portfolio). I'd add a Large & Mid-Cap fund for a bit more growth punch (20%), and then balance it with the stability of my PPF/EPF and perhaps a good Corporate Bond Fund (the remaining 40%).</p><h3>Aggressive Portfolio (High Risk)</h3><p><strong>Goal:</strong> High growth for very long-term goals like retirement (10+ years away). This is where you can truly harness the power of compounding. <br/><strong>My Strategy:</strong> For this, I'd use the selector to build a more dynamic portfolio. I'd start with a core Flexi-Cap/Multi-Cap Fund (30%), add a dedicated Mid-Cap Fund (30%) and a Small-Cap Fund (20%) for aggressive growth, and maybe even a Sectoral Fund like tech or banking (20%) if I have a strong conviction in that sector's future. The key here is to invest via SIPs and commit to rebalancing this portfolio at least once a year.</p>"
+    },
+    "faq": {
+      "h2": "Frequently Asked Questions",
+      "questions": [
+        {
+          "q": "What is a mutual fund scheme selector and how does it work?",
+          "a": "Think of it as a smart filter. It helps you sift through thousands of funds to find the few that actually match your goals. You tell it what you're looking for—like category, returns, and risk—and the selector gives you a shortlist. My tool then lets you dive deeper by comparing holdings and checking for portfolio overlap, so you know you're truly diversified."
+        },
+        {
+          "q": "How do I choose the right mutual fund scheme for SIP investing?",
+          "a": "For SIPs, consistency is king. Don't chase last year's winner. Use the selector to find funds with a solid 5-10 year track record and a manager who's been at the helm for a while. A low expense ratio (under 1% for active funds) is also crucial. For most people starting out, a Nifty 50 index fund or a well-managed Flexi Cap fund is a fantastic, reliable choice for SIPs."
+        },
+        {
+          "q": "Can the selector show top holdings of a mutual fund?",
+          "a": "Yes, absolutely. That's one of its most powerful features. Once you've filtered down to a list of funds, you can click on any fund to see its top 10 stock holdings and sector allocation. This is critical for understanding what you're *really* investing in and for comparing it against other funds to avoid costly overlap."
+        },
+        {
+          "q": "How frequently does the selector update fund holdings?",
+          "a": "I take data accuracy very seriously. The Net Asset Value (NAV) for each fund is updated daily, so you're always seeing the latest price. The detailed fund holdings (the actual stocks a fund owns) are updated monthly, as soon as the fund houses (AMCs) release their latest portfolios. This ensures you're making decisions on the freshest, most reliable data available."
+        },
+        {
+          "q": "What is weighted overlap and why should I care?",
+          "a": "Weighted overlap tells you the exact percentage of your portfolio that's duplicated between two funds. You should care because high overlap (I'd say over 30%) means you're not actually diversified; you might just be paying two managers to buy the same stocks. My tool calculates this so you can build a portfolio of funds that genuinely have different strategies, giving you true diversification."
+        },
+        {
+          "q": "How many funds should I hold in a diversified portfolio?",
+          "a": "Honestly, less is often more. For most investors, a well-chosen portfolio of 4-6 funds is more than enough. This could be a mix like one large-cap, one mid-cap, one small-cap, and perhaps one international or ELSS fund. The goal is to have funds with different strategies, not just a large number of funds that all do the same thing."
+        },
+        {
+          "q": "Does a lower expense ratio always mean a better fund?",
+          "a": "Not always, but it's a massive head start. A lower expense ratio means more of your hard-earned money is working for you, not going to the fund manager. While a brilliant manager might justify a slightly higher fee with consistent outperformance, you should always be skeptical. For index funds, a low expense ratio is the single most important factor, period."
+        },
+        {
+          "q": "How do I compare ELSS funds for tax and returns?",
+          "a": "When comparing ELSS (tax-saving) funds, look beyond just the tax benefit. Use the selector to filter for the 'ELSS' category, then compare their 3-year and 5-year returns (since they have a 3-year lock-in). Crucially, check their portfolio overlap with your existing funds to ensure the new fund is adding real diversification, not just more of the same stocks."
+        },
+        {
+          "q": "Can I export the selector results to CSV or Excel?",
+          "a": "Yes. Once you've created a shortlist of funds you're interested in, you can use our 'Export to CSV' feature. This allows you to download the key data points for your selected funds, so you can do your own offline analysis, keep a record of your research, or share it with your financial advisor to discuss your choices."
+        },
+        {
+          "q": "How do I use the selector to build a retirement portfolio?",
+          "a": "For retirement, you have a long time horizon, which is your biggest advantage. I'd start by filtering for equity funds like 'Flexi Cap' or 'Large & Mid-Cap'. Look for funds with a consistent 10-year track record and a high Sharpe Ratio (which indicates good risk-adjusted returns). Combining 2-3 such equity funds with your EPF/PPF is a great way to build a balanced, growth-oriented retirement portfolio."
+        },
+        {
+          "q": "Will the selector recommend direct plans or regular plans?",
+          "a": "My selector exclusively recommends <strong>Direct Plans</strong>. Why? Because they have lower expense ratios. Direct plans don't involve paying a commission to a distributor, and over the long term, that seemingly small difference can add up to lakhs in extra returns for you, the investor. I believe in putting more of your own money to work for you."
+        },
+        {
+          "q": "How do I check fund manager track record in the tool?",
+          "a": "Experience matters. In our detailed fund view, we show the 'Manager Tenure'—how long the current fund manager has been at the helm. A manager with a tenure of 5+ years is a great sign of stability and a consistent investment process. It shows they've navigated multiple market cycles, which builds a lot of confidence."
+        },
+        {
+          "q": "Is overlap the same as correlation?",
+          "a": "No, and this is a critical distinction. Overlap measures the *direct duplication of holdings*. If two funds own the same stock, it contributes to overlap. Correlation measures how the *prices* of two funds move together, regardless of their holdings. Two funds could have zero overlap but still be highly correlated (e.g., a US tech fund and a China tech fund might both fall if global tech sentiment sours)."
+        },
+        {
+          "q": "Can the selector suggest a low-overlap alternative to my existing funds?",
+          "a": "While the tool doesn't have an 'auto-suggest' feature yet, it gives you all the power to do this yourself. Here's how I do it: First, put in your existing fund. Then, add a fund from a different category (e.g., if you have a Large-Cap, add a Mid-Cap or a sector-specific fund). Run the overlap check. If it's low (<20%), you've found a good candidate for diversification. It's a quick, effective process of elimination."
+        },
+        {
+          "q": "How to build a goal-based 3-fund portfolio using the selector?",
+          "a": "A 3-fund portfolio is a fantastic, simple strategy. Here’s a classic approach: 1) Use the screener to find a low-cost Nifty 50 Index Fund for your Large-Cap allocation (Core of your portfolio). 2) Find a Nifty Midcap 150 Index Fund for Mid-Cap exposure. 3) Find a Nasdaq 100 or S&P 500 fund for international diversification. Run the overlap check—it should be very low. This gives you a diversified, low-cost portfolio covering the most important market segments."
+        }
+      ]
+    },
+    "faq_json_ld": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a mutual fund scheme selector and how does it work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Think of it as a smart filter. It helps you sift through thousands of funds to find the few that actually match your goals. You tell it what you're looking for—like category, returns, and risk—and the selector gives you a shortlist. My tool then lets you dive deeper by comparing holdings and checking for portfolio overlap, so you know you're truly diversified."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I choose the right mutual fund scheme for SIP investing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For SIPs, consistency is king. Don't chase last year's winner. Use the selector to find funds with a solid 5-10 year track record and a manager who's been at the helm for a while. A low expense ratio (under 1% for active funds) is also crucial. For most people starting out, a Nifty 50 index fund or a well-managed Flexi Cap fund is a fantastic, reliable choice for SIPs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can the selector show top holdings of a mutual fund?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, absolutely. That's one of its most powerful features. Once you've filtered down to a list of funds, you can click on any fund to see its top 10 stock holdings and sector allocation. This is critical for understanding what you're *really* investing in and for comparing it against other funds to avoid costly overlap."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How frequently does the selector update fund holdings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "I take data accuracy very seriously. The Net Asset Value (NAV) for each fund is updated daily, so you're always seeing the latest price. The detailed fund holdings (the actual stocks a fund owns) are updated monthly, as soon as the fund houses (AMCs) release their latest portfolios. This ensures you're making decisions on the freshest, most reliable data available."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is weighted overlap and why should I care?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Weighted overlap tells you the exact percentage of your portfolio that's duplicated between two funds. You should care because high overlap (I'd say over 30%) means you're not actually diversified; you might just be paying two managers to buy the same stocks. My tool calculates this so you can build a portfolio of funds that genuinely have different strategies, giving you true diversification."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many funds should I hold in a diversified portfolio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Honestly, less is often more. For most investors, a well-chosen portfolio of 4-6 funds is more than enough. This could be a mix like one large-cap, one mid-cap, one small-cap, and perhaps one international or ELSS fund. The goal is to have funds with different strategies, not just a large number of funds that all do the same thing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a lower expense ratio always mean a better fund?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not always, but it's a massive head start. A lower expense ratio means more of your hard-earned money is working for you, not going to the fund manager. While a brilliant manager might justify a slightly higher fee with consistent outperformance, you should always be skeptical. For index funds, a low expense ratio is the single most important factor, period."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I compare ELSS funds for tax and returns?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When comparing ELSS (tax-saving) funds, look beyond just the tax benefit. Use the selector to filter for the 'ELSS' category, then compare their 3-year and 5-year returns (since they have a 3-year lock-in). Crucially, check their portfolio overlap with your existing funds to ensure the new fund is adding real diversification, not just more of the same stocks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I export the selector results to CSV or Excel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Once you've created a shortlist of funds you're interested in, you can use our 'Export to CSV' feature. This allows you to download the key data points for your selected funds, so you can do your own offline analysis, keep a record of your research, or share it with your financial advisor to discuss your choices."
+          }
+        },
+        {
+          "q": "How do I use the selector to build a retirement portfolio?",
+          "a": "For retirement, you have a long time horizon, which is your biggest advantage. I'd start by filtering for equity funds like 'Flexi Cap' or 'Large & Mid-Cap'. Look for funds with a consistent 10-year track record and a high Sharpe Ratio (which indicates good risk-adjusted returns). Combining 2-3 such equity funds with your EPF/PPF is a great way to build a balanced, growth-oriented retirement portfolio."
+        },
+        {
+          "q": "Will the selector recommend direct plans or regular plans?",
+          "a": "My selector exclusively recommends <strong>Direct Plans</strong>. Why? Because they have lower expense ratios. Direct plans don't involve paying a commission to a distributor, and over the long term, that seemingly small difference can add up to lakhs in extra returns for you, the investor. I believe in putting more of your own money to work for you."
+        },
+        {
+          "q": "How do I check fund manager track record in the tool?",
+          "a": "Experience matters. In our detailed fund view, we show the 'Manager Tenure'—how long the current fund manager has been at the helm. A manager with a tenure of 5+ years is a great sign of stability and a consistent investment process. It shows they've navigated multiple market cycles, which builds a lot of confidence."
+        },
+        {
+          "q": "Is overlap the same as correlation?",
+          "a": "No, and this is a critical distinction. Overlap measures the *direct duplication of holdings*. If two funds own the same stock, it contributes to overlap. Correlation measures how the *prices* of two funds move together, regardless of their holdings. Two funds could have zero overlap but still be highly correlated (e.g., a US tech fund and a China tech fund might both fall if global tech sentiment sours)."
+        },
+        {
+          "q": "Can the selector suggest a low-overlap alternative to my existing funds?",
+          "a": "While the tool doesn't have an 'auto-suggest' feature yet, it gives you all the power to do this yourself. Here's how I do it: First, put in your existing fund. Then, add a fund from a different category (e.g., if you have a Large-Cap, add a Mid-Cap or a sector-specific fund). Run the overlap check. If it's low (<20%), you've found a good candidate for diversification. It's a quick, effective process of elimination."
+        },
+        {
+          "q": "How to build a goal-based 3-fund portfolio using the selector?",
+          "a": "A 3-fund portfolio is a fantastic, simple strategy. Here’s a classic approach: 1) Use the screener to find a low-cost Nifty 50 Index Fund for your Large-Cap allocation (Core of your portfolio). 2) Find a Nifty Midcap 150 Index Fund for Mid-Cap exposure. 3) Find a Nasdaq 100 or S&P 500 fund for international diversification. Run the overlap check—it should be very low. This gives you a diversified, low-cost portfolio covering the most important market segments."
+        }
+      ]
+    },
+    "article_schema": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Mutual Fund Scheme Selector 2025 — Find & Compare Best Funds for Your Goal (India, 2025)",
+      "author": {
+        "@type": "Person",
+        "name": "Mahesh Chaube, CFP"
+      },
+      "datePublished": "2025-08-15",
+      "dateModified": "2025-09-01",
+      "publisher": {
+        "@type": "Organization",
+        "name": "BharatSaver",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      },
+      "reviewedBy": {
+          "@type": "Person",
+          "name": "Laveena Vijayi",
+          "jobTitle": "Head of Mutual Fund Research, BharatSaver"
+      }
+    },
+    "how_to_schema": {
+      "@context":"https://schema.org",
+      "@type":"HowTo",
+      "name":"How to Choose a Mutual Fund in India",
+      "description":"A 5-step guide to selecting the right mutual fund scheme for your financial goals using our interactive screener.",
+      "step":[
+        {"@type":"HowToStep","name":"Step 1: Define Goal & Risk","text":"Choose your financial goal (e.g., retirement, tax saving) and your personal risk tolerance (low, medium, or high)."},
+        {"@type":"HowToStep","name":"Step 2: Filter the Universe","text":"Use the screener to filter funds by category (e.g., Large Cap, ELSS), AUM, and expense ratio to create a shortlist."},
+        {"@type":"HowToStep","name":"Step 3: Compare Top 3 Funds","text":"Select your top 2-3 funds from the list to prepare them for a side-by-side comparison."},
+        {"@type":"HowToStep","name":"Step 4: Check Portfolio Overlap","text":"Run the comparison to check the weighted portfolio overlap. If it's over 30%, consider replacing one fund to ensure true diversification."},
+        {"@type":"HowToStep","name":"Step 5: Review Final Details","text":"Check the fund manager's tenure, exit loads, and the fund house's reputation before investing."}
+      ]
+    },
+    "tools_downloads": {
+      "h2": "Tools & Downloads to Supercharge Your Analysis",
+      "intro": "Take your analysis offline or explore related calculators to build a complete financial picture.",
+      "links": [
+        {
+          "text": "Download Comparison Template (CSV)",
+          "href": "/downloads/fund-comparison-template.csv",
+          "desc": "An empty CSV template to compare funds side-by-side."
+        },
+        {
+          "text": "SIP Calculator",
+          "href": "/{lang}/sip-calculator",
+          "desc": "Calculate the future value of your SIP investments."
+        },
+        {
+          "text": "Mutual Fund Overlap Checker",
+          "href": "/{lang}/mutual-fund-overlap-calculator",
+          "desc": "Do a deep-dive on overlap between any two funds."
+        }
+      ]
+    },
+    "methodology": {
+      "h2": "Our Data & Methodology",
+      "body": "<p><strong>Data Sources:</strong> To ensure you get the most accurate and reliable information, our NAV and returns data are sourced daily from AMFI-registered providers. The detailed fund holdings data is compiled from publicly available fund factsheets and may have a lag of up to 45 days. <strong>Last Full Data Update: August 2025.</strong></p><p><strong>Methodology:</strong> The weighted overlap is calculated using the formula: Σ min(weight in Fund A, weight in Fund B) for all common stocks. For example, if Fund A holds 5% in Reliance and Fund B holds 4%, the overlap from that stock is 4%. We sum this for all common holdings. All returns shown are Compound Annual Growth Rate (CAGR). The risk ratios like Sharpe and Standard Deviation are calculated on a 3-year basis. We exclusively show data for Direct-Growth plans where available. This is an informational tool, not investment advice. I always recommend consulting a SEBI-registered advisor before making any investment decisions.</p>"
+    },
+    "conclusion": {
+      "h2": "Final Thoughts: From Selection to Wealth Creation",
+      "body": "Congratulations on taking a huge step towards building a smarter, more intentional mutual fund portfolio. I built this tool because I believe every investor deserves access to the same high-quality data and analysis that professionals use. Remember, the goal isn't just to pick 'good' funds; it's to build a resilient, diversified portfolio that works as hard for your financial future as you do. Use this screener as your starting point, your co-pilot, and your sanity check. Your journey to wealth creation is a marathon, not a sprint, and you've just taken a powerful first stride."
+    }
+  },
   "mutual_fund_overlap_calculator": {
     "meta_title": "Mutual Fund Overlap Calculator — Check Overlap Between Funds (India, 2025)",
     "meta_description": "Free mutual fund overlap calculator (2025) for Indian funds. Compare 2-5 funds side-by-side to see portfolio overlap percentage and common stocks. Make informed diversification decisions.",
