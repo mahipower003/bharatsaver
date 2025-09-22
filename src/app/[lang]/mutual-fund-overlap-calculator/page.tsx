@@ -18,12 +18,13 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang, ['mutual_fund_overlap_calculator']);
+  const dictionary = await getDictionary(params.lang);
+  const dict = dictionary.mutual_fund_overlap_calculator;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/mutual-fund-overlap-calculator`;
   
-  const title = dictionary.mutual_fund_overlap_calculator.meta_title;
-  const description = dictionary.mutual_fund_overlap_calculator.meta_description;
+  const title = dict.meta_title;
+  const description = dict.meta_description;
 
   const softwareSchema = {
     "@context":"https://schema.org",
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   const articleSchema = {
     "@context":"https://schema.org",
     "@type":"Article",
-    "headline": dictionary.mutual_fund_overlap_calculator.h1,
+    "headline": dict.h1,
     "author":{"@type":"Person","name":"Mahesh Chaube","jobTitle":"CFP","url":`${siteUrl}/${params.lang}/author/mahesh-chaube`},
     "datePublished":"2025-09-01","dateModified":"2025-09-12",
     "publisher":{"@type":"Organization","name":"BharatSaver","logo":{"@type":"ImageObject","url":`${siteUrl}/icon.svg`}}
@@ -47,7 +48,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   const faqSchema = {
     "@context":"https://schema.org",
     "@type":"FAQPage",
-    "mainEntity": dictionary.mutual_fund_overlap_calculator.faq.faqs.map((faq: { q: string, a: string }) => ({
+    "mainEntity": dict.faq.faqs.map((faq: { q: string, a: string }) => ({
         "@type": "Question",
         "name": faq.q,
         "acceptedAnswer": {
@@ -74,7 +75,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 }
 
 export default async function MutualFundOverlapCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang, ['mutual_fund_overlap_calculator', 'author_card', 'footer_cta']);
+  const dictionary = await getDictionary(params.lang);
   const dict = dictionary.mutual_fund_overlap_calculator;
   const liveExample = dict.live_example;
   
@@ -201,3 +202,5 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
     </div>
   );
 }
+
+    

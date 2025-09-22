@@ -17,12 +17,13 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang, ['tax_regime_calculator', 'author_card']);
+  const dictionary = await getDictionary(params.lang);
+  const pageDict = dictionary.tax_regime_calculator;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/tax-regime-calculator`;
   const ogImageUrl = `${siteUrl}/images/tax-regime-calculator-online.png`;
 
-  const faqItems = dictionary.tax_regime_calculator.faqs;
+  const faqItems = pageDict.faqs;
   const faqSchema = {
     "@context":"https://schema.org",
     "@type":"FAQPage",
@@ -96,11 +97,11 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   };
 
   return {
-    title: dictionary.tax_regime_calculator.meta_title,
-    description: dictionary.tax_regime_calculator.meta_description,
+    title: pageDict.meta_title,
+    description: pageDict.meta_description,
     openGraph: {
-      title: dictionary.tax_regime_calculator.meta_title,
-      description: dictionary.tax_regime_calculator.meta_description,
+      title: pageDict.meta_title,
+      description: pageDict.meta_description,
       url: pageUrl,
       images: [{ url: ogImageUrl, width: 1200, height: 630, alt: 'BharatSaver Tax Regime Calculator' }],
       locale: params.lang === 'en' ? 'en_IN' : params.lang,
@@ -108,8 +109,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     },
     twitter: {
       card: 'summary_large_image',
-      title: dictionary.tax_regime_calculator.meta_title,
-      description: dictionary.tax_regime_calculator.meta_description,
+      title: pageDict.meta_title,
+      description: pageDict.meta_description,
       images: [ogImageUrl],
     },
     alternates: {
@@ -126,7 +127,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 }
 
 export default async function TaxRegimeCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang, ['tax_regime_calculator', 'author_card', 'footer_cta']);
+  const dictionary = await getDictionary(params.lang);
+  const pageDict = dictionary.tax_regime_calculator;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   
   const breadcrumbSchema = {
@@ -139,7 +141,7 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
     ],
   };
   
-  const comparisonData = dictionary.tax_regime_calculator.comparison_table;
+  const comparisonData = pageDict.comparison_table;
 
   return (
     <div className="py-12">
@@ -147,7 +149,7 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
       <div className="mx-auto max-w-5xl">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
-            {dictionary.tax_regime_calculator.h1}
+            {pageDict.h1}
           </h1>
           <div className="bs-byline justify-center text-center">
             <span className="bs-author">By <strong>Mahesh Chaube</strong></span>
@@ -157,18 +159,18 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
             <div className="bs-reviewed">Reviewed by <strong>Laveena Vijayi</strong> — BharatSaver Editorial Team</div>
           </div>
           <p className="mt-4 text-lg text-muted-foreground">
-            {dictionary.tax_regime_calculator.description}
+            {pageDict.description}
           </p>
         </div>
         
-        <TaxRegimeCalculator dictionary={dictionary.tax_regime_calculator} />
+        <TaxRegimeCalculator dictionary={pageDict} />
         
-        {dictionary.tax_regime_calculator.assumptions && (
+        {pageDict.assumptions && (
           <Alert className="mt-8">
             <AlertTriangle className="h-4 w-4" />
-            <AlertTitle>{dictionary.tax_regime_calculator.assumptions.title}</AlertTitle>
+            <AlertTitle>{pageDict.assumptions.title}</AlertTitle>
             <AlertDescription>
-              <div className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.assumptions.body }} />
+              <div className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: pageDict.assumptions.body }} />
             </AlertDescription>
           </Alert>
         )}
@@ -207,66 +209,66 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
           </Card>
         )}
         
-        {dictionary.tax_regime_calculator.checklist && (
+        {pageDict.checklist && (
           <Card className="mt-8 shadow-lg">
             <CardHeader>
               <CardTitle className="flex items-center gap-3">
                   <CheckCircle className="h-7 w-7 text-primary"/>
-                  <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.checklist.title}</h2>
+                  <h2 className="text-2xl font-bold">{pageDict.checklist.title}</h2>
               </CardTitle>
             </CardHeader>
-            <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.checklist.body }} />
+            <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.checklist.body }} />
           </Card>
         )}
         
-        {dictionary.tax_regime_calculator.how_we_calculate && (
+        {pageDict.how_we_calculate && (
           <Card className="mt-8 shadow-lg">
             <CardHeader>
               <CardTitle className="flex items-center gap-3">
                   <HelpCircle className="h-7 w-7 text-primary"/>
-                  <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.how_we_calculate.title}</h2>
+                  <h2 className="text-2xl font-bold">{pageDict.how_we_calculate.title}</h2>
               </CardTitle>
             </CardHeader>
-            <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.how_we_calculate.body.replace(/{lang}/g, params.lang) }} />
+            <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.how_we_calculate.body.replace(/{lang}/g, params.lang) }} />
           </Card>
         )}
 
-        {dictionary.tax_regime_calculator.common_scenarios && (
+        {pageDict.common_scenarios && (
           <Card className="mt-8 shadow-lg">
             <CardHeader>
               <CardTitle className="flex items-center gap-3">
                   <TrendingUp className="h-7 w-7 text-primary"/>
-                  <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.common_scenarios.title}</h2>
+                  <h2 className="text-2xl font-bold">{pageDict.common_scenarios.title}</h2>
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
-              {dictionary.tax_regime_calculator.common_scenarios.scenario1 && (
+              {pageDict.common_scenarios.scenario1 && (
                 <div className="bg-muted/50 p-4 rounded-lg">
-                  <h3 className="font-semibold text-lg">{dictionary.tax_regime_calculator.common_scenarios.scenario1.title}</h3>
-                  <div className="prose dark:prose-invert max-w-none mt-2" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.common_scenarios.scenario1.body }} />
+                  <h3 className="font-semibold text-lg">{pageDict.common_scenarios.scenario1.title}</h3>
+                  <div className="prose dark:prose-invert max-w-none mt-2" dangerouslySetInnerHTML={{ __html: pageDict.common_scenarios.scenario1.body }} />
                 </div>
               )}
-              {dictionary.tax_regime_calculator.common_scenarios.scenario2 && (
+              {pageDict.common_scenarios.scenario2 && (
                 <div className="bg-muted/50 p-4 rounded-lg">
-                  <h3 className="font-semibold text-lg">{dictionary.tax_regime_calculator.common_scenarios.scenario2.title}</h3>
-                  <div className="prose dark:prose-invert max-w-none mt-2" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.common_scenarios.scenario2.body }} />
+                  <h3 className="font-semibold text-lg">{pageDict.common_scenarios.scenario2.title}</h3>
+                  <div className="prose dark:prose-invert max-w-none mt-2" dangerouslySetInnerHTML={{ __html: pageDict.common_scenarios.scenario2.body }} />
                 </div>
               )}
-              {dictionary.tax_regime_calculator.common_scenarios.scenario3 && (
+              {pageDict.common_scenarios.scenario3 && (
                 <div className="bg-muted/50 p-4 rounded-lg">
-                  <h3 className="font-semibold text-lg">{dictionary.tax_regime_calculator.common_scenarios.scenario3.title}</h3>
-                  <div className="prose dark:prose-invert max-w-none mt-2" dangerouslySetInnerHTML={{ __html: dictionary.tax_regime_calculator.common_scenarios.scenario3.body }} />
+                  <h3 className="font-semibold text-lg">{pageDict.common_scenarios.scenario3.title}</h3>
+                  <div className="prose dark:prose-invert max-w-none mt-2" dangerouslySetInnerHTML={{ __html: pageDict.common_scenarios.scenario3.body }} />
                 </div>
               )}
             </CardContent>
           </Card>
         )}
 
-        {dictionary.tax_regime_calculator.faqs && (
+        {pageDict.faqs && (
           <div className="mt-12">
-            <h2 className="text-2xl font-bold text-center mb-6">{dictionary.tax_regime_calculator.faq_title}</h2>
+            <h2 className="text-2xl font-bold text-center mb-6">{pageDict.faq_title}</h2>
             <Accordion type="single" collapsible className="w-full">
-              {dictionary.tax_regime_calculator.faqs.map((faq: { question: string, answer: string }, index: number) => (
+              {pageDict.faqs.map((faq: { question: string, answer: string }, index: number) => (
                 <AccordionItem value={`item-${index}`} key={index}>
                   <AccordionTrigger>{faq.question}</AccordionTrigger>
                   <AccordionContent>
@@ -278,12 +280,12 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
           </div>
         )}
         
-        {dictionary.tax_regime_calculator.next_steps && (
+        {pageDict.next_steps && (
           <Card className="mt-12 shadow-lg">
             <CardHeader>
               <CardTitle className="flex items-center gap-3">
                 <Download className="h-7 w-7 text-primary"/>
-                <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.next_steps.title}</h2>
+                <h2 className="text-2xl font-bold">{pageDict.next_steps.title}</h2>
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -293,8 +295,8 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
                             <CardHeader className="flex flex-row items-center gap-4">
                                 <Download className="h-8 w-8 text-primary"/>
                                 <div>
-                                    <CardTitle className="text-lg">{dictionary.tax_regime_calculator.next_steps.cta1_title}</CardTitle>
-                                    <p className="text-sm text-muted-foreground mt-1">{dictionary.tax_regime_calculator.next_steps.cta1_desc}</p>
+                                    <CardTitle className="text-lg">{pageDict.next_steps.cta1_title}</CardTitle>
+                                    <p className="text-sm text-muted-foreground mt-1">{pageDict.next_steps.cta1_desc}</p>
                                 </div>
                             </CardHeader>
                         </Card>
@@ -304,8 +306,8 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
                             <CardHeader className="flex flex-row items-center gap-4">
                                 <TrendingUp className="h-8 w-8 text-primary"/>
                                 <div>
-                                    <CardTitle className="text-lg">{dictionary.tax_regime_calculator.next_steps.cta2_title}</CardTitle>
-                                    <p className="text-sm text-muted-foreground mt-1">{dictionary.tax_regime_calculator.next_steps.cta2_desc}</p>
+                                    <CardTitle className="text-lg">{pageDict.next_steps.cta2_title}</CardTitle>
+                                    <p className="text-sm text-muted-foreground mt-1">{pageDict.next_steps.cta2_desc}</p>
                                 </div>
                             </CardHeader>
                         </Card>
@@ -315,16 +317,16 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
           </Card>
         )}
 
-        {dictionary.tax_regime_calculator.conclusion && (
+        {pageDict.conclusion && (
           <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
             <CardHeader>
               <CardTitle className="flex items-center gap-3">
                 <Star className="h-7 w-7 text-accent" />
-                <h2 className="text-2xl font-bold">{dictionary.tax_regime_calculator.conclusion.title}</h2>
+                <h2 className="text-2xl font-bold">{pageDict.conclusion.title}</h2>
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground" dangerouslySetInnerHTML={{__html: dictionary.tax_regime_calculator.conclusion.body.replace(/{lang}/g, params.lang)}}></p>
+              <p className="text-muted-foreground" dangerouslySetInnerHTML={{__html: pageDict.conclusion.body.replace(/{lang}/g, params.lang)}}></p>
             </CardContent>
           </Card>
         )}
@@ -335,3 +337,5 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
     </div>
   );
 }
+
+    

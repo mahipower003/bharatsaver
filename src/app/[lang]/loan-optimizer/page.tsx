@@ -18,14 +18,15 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang, ['loan_optimization_calculator', 'author_card']);
+  const dictionary = await getDictionary(params.lang);
+  const pageDict = dictionary.loan_optimization_calculator;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/loan-optimizer`;
   
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": dictionary.loan_optimization_calculator.faq.faqs.map((faq: { q: string, a: string }) => ({
+    "mainEntity": pageDict.faq.faqs.map((faq: { q: string, a: string }) => ({
         "@type": "Question",
         "name": faq.q,
         "acceptedAnswer": {
@@ -58,7 +59,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       "@type": "WebPage",
       "@id": pageUrl
     },
-    "headline": dictionary.loan_optimization_calculator.h1,
+    "headline": pageDict.h1,
     "description": "This guide + interactive calculator helps you answer: How can I minimize total interest, reduce my EMI or tenure, and make the best choice between prepaying, refinancing, or investing my surplus?",
     "author": {
       "@type": "Person",
@@ -99,7 +100,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 }
 
 export default async function LoanOptimizerPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang, ['loan_optimization_calculator', 'author_card', 'footer_cta']);
+  const dictionary = await getDictionary(params.lang);
+  const pageDict = dictionary.loan_optimization_calculator;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   
   const breadcrumbSchema = {
@@ -112,7 +114,7 @@ export default async function LoanOptimizerPage({ params }: { params: { lang: Lo
     ],
   };
 
-  const comparisonData = dictionary.loan_optimization_calculator.comparison_table;
+  const comparisonData = pageDict.comparison_table;
 
 
   return (
@@ -121,7 +123,7 @@ export default async function LoanOptimizerPage({ params }: { params: { lang: Lo
       <div className="mx-auto max-w-5xl">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
-            {dictionary.loan_optimization_calculator.h1}
+            {pageDict.h1}
           </h1>
           <div className="bs-byline justify-center text-center mt-4">
             <span className="bs-author">By <strong>Mahesh Chaube, CFP</strong></span>
@@ -129,43 +131,43 @@ export default async function LoanOptimizerPage({ params }: { params: { lang: Lo
             <span className="bs-updated">Last updated: <time dateTime="2025-09-01">September 2025</time></span>
             <div className="bs-reviewed">Reviewed by <strong>Laveena Vijayi</strong> — BharatSaver Editorial Team</div>
           </div>
-          <p className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.summary }} />
+          <p className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.summary }} />
         </div>
         
-        <LoanOptimizer dictionary={dictionary.loan_optimization_calculator} />
+        <LoanOptimizer dictionary={pageDict} />
 
         <div className="space-y-8 mt-12">
             <Card>
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-3"><HelpCircle className="h-6 w-6 text-primary" />{dictionary.loan_optimization_calculator.why.h2}</CardTitle>
+                    <CardTitle className="flex items-center gap-3"><HelpCircle className="h-6 w-6 text-primary" />{pageDict.why.h2}</CardTitle>
                 </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.why.body }} />
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.why.body }} />
             </Card>
 
             <Card>
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-3"><FileText className="h-6 w-6 text-primary" />{dictionary.loan_optimization_calculator.how_it_works.h2}</CardTitle>
+                    <CardTitle className="flex items-center gap-3"><FileText className="h-6 w-6 text-primary" />{pageDict.how_it_works.h2}</CardTitle>
                 </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.how_it_works.body }} />
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.how_it_works.body }} />
             </Card>
 
-            {dictionary.loan_optimization_calculator.worked_examples && (
+            {pageDict.worked_examples && (
               <Card>
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-3"><LineChart className="h-6 w-6 text-primary" />{dictionary.loan_optimization_calculator.worked_examples.h2}</CardTitle>
+                    <CardTitle className="flex items-center gap-3"><LineChart className="h-6 w-6 text-primary" />{pageDict.worked_examples.h2}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="bg-muted/50 p-4 rounded-lg">
-                    <h3 className="font-semibold text-lg">{dictionary.loan_optimization_calculator.worked_examples.scenario1.title}</h3>
-                    <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.worked_examples.scenario1.body }} />
+                    <h3 className="font-semibold text-lg">{pageDict.worked_examples.scenario1.title}</h3>
+                    <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: pageDict.worked_examples.scenario1.body }} />
                   </div>
                   <div className="bg-muted/50 p-4 rounded-lg">
-                    <h3 className="font-semibold text-lg">{dictionary.loan_optimization_calculator.worked_examples.scenario2.title}</h3>
-                    <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.worked_examples.scenario2.body }} />
+                    <h3 className="font-semibold text-lg">{pageDict.worked_examples.scenario2.title}</h3>
+                    <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: pageDict.worked_examples.scenario2.body }} />
                   </div>
                   <div className="bg-muted/50 p-4 rounded-lg">
-                    <h3 className="font-semibold text-lg">{dictionary.loan_optimization_calculator.worked_examples.scenario3.title}</h3>
-                    <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.worked_examples.scenario3.body }} />
+                    <h3 className="font-semibold text-lg">{pageDict.worked_examples.scenario3.title}</h3>
+                    <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: pageDict.worked_examples.scenario3.body }} />
                   </div>
                 </CardContent>
               </Card>
@@ -173,16 +175,16 @@ export default async function LoanOptimizerPage({ params }: { params: { lang: Lo
 
             <Card>
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-3"><TrendingUp className="h-6 w-6 text-primary" />{dictionary.loan_optimization_calculator.optimization_masterclass.h2}</CardTitle>
+                    <CardTitle className="flex items-center gap-3"><TrendingUp className="h-6 w-6 text-primary" />{pageDict.optimization_masterclass.h2}</CardTitle>
                 </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.optimization_masterclass.body }} />
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.optimization_masterclass.body }} />
             </Card>
             
             <Card>
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-3"><GitCompareArrows className="h-6 w-6 text-primary" />{dictionary.loan_optimization_calculator.prepay_vs_invest.h2}</CardTitle>
+                    <CardTitle className="flex items-center gap-3"><GitCompareArrows className="h-6 w-6 text-primary" />{pageDict.prepay_vs_invest.h2}</CardTitle>
                 </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.prepay_vs_invest.body }} />
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.prepay_vs_invest.body }} />
             </Card>
             
             {comparisonData && (
@@ -215,25 +217,25 @@ export default async function LoanOptimizerPage({ params }: { params: { lang: Lo
 
             <Card>
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-3"><Banknote className="h-6 w-6 text-primary" />{dictionary.loan_optimization_calculator.refinance.h2}</CardTitle>
+                    <CardTitle className="flex items-center gap-3"><Banknote className="h-6 w-6 text-primary" />{pageDict.refinance.h2}</CardTitle>
                 </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.refinance.body }} />
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.refinance.body }} />
             </Card>
 
             <Card>
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-3"><AlertTriangle className="h-6 w-6 text-primary" />{dictionary.loan_optimization_calculator.tax_notes.h2}</CardTitle>
+                    <CardTitle className="flex items-center gap-3"><AlertTriangle className="h-6 w-6 text-primary" />{pageDict.tax_notes.h2}</CardTitle>
                 </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dictionary.loan_optimization_calculator.tax_notes.body }} />
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.tax_notes.body }} />
             </Card>
             
             <Card>
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-3"><CheckCircle className="h-6 w-6 text-primary" />{dictionary.loan_optimization_calculator.faq.h2}</CardTitle>
+                    <CardTitle className="flex items-center gap-3"><CheckCircle className="h-6 w-6 text-primary" />{pageDict.faq.h2}</CardTitle>
                 </CardHeader>
                 <CardContent>
                     <Accordion type="single" collapsible className="w-full">
-                    {dictionary.loan_optimization_calculator.faq.faqs.map((faq: { q: string, a: string }, index: number) => (
+                    {pageDict.faq.faqs.map((faq: { q: string, a: string }, index: number) => (
                         <AccordionItem value={`item-${index}`} key={index}>
                         <AccordionTrigger>{faq.q}</AccordionTrigger>
                         <AccordionContent>
@@ -250,11 +252,11 @@ export default async function LoanOptimizerPage({ params }: { params: { lang: Lo
           <CardHeader>
             <CardTitle className="flex items-center gap-3">
               <Star className="h-7 w-7 text-accent" />
-              <h2 className="text-2xl font-bold">{dictionary.loan_optimization_calculator.conclusion.title}</h2>
+              <h2 className="text-2xl font-bold">{pageDict.conclusion.title}</h2>
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground">{dictionary.loan_optimization_calculator.conclusion.body}</p>
+            <p className="text-muted-foreground">{pageDict.conclusion.body}</p>
           </CardContent>
         </Card>
 
@@ -264,3 +266,5 @@ export default async function LoanOptimizerPage({ params }: { params: { lang: Lo
     </div>
   );
 }
+
+    

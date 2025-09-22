@@ -28,7 +28,8 @@ function formatCurrency(value: number) {
 }
 
 export async function generateMetadata({ params }: { params: { lang:Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang, ['retirement_corpus_calculator']);
+  const dictionary = await getDictionary(params.lang);
+  const retirementDict = dictionary.retirement_corpus_calculator;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/retirement-corpus-calculator`;
   const ogImageUrl = `${siteUrl}/images/retirement-calc-og.png`;
@@ -51,7 +52,7 @@ export async function generateMetadata({ params }: { params: { lang:Locale } }):
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": dictionary.retirement_corpus_calculator.faqs?.map((faq: { question: string; answer: string; }) => ({
+    "mainEntity": retirementDict.faqs?.map((faq: { question: string; answer: string; }) => ({
         "@type": "Question",
         "name": faq.question,
         "acceptedAnswer": {
@@ -68,8 +69,8 @@ export async function generateMetadata({ params }: { params: { lang:Locale } }):
       "@type": "WebPage",
       "@id": pageUrl
     },
-    "headline": dictionary.retirement_corpus_calculator.h1,
-    "description": dictionary.retirement_corpus_calculator.meta_description,
+    "headline": retirementDict.h1,
+    "description": retirementDict.meta_description,
     "image": ogImageUrl,
     "author": {
       "@type": "Person",
@@ -114,8 +115,8 @@ export async function generateMetadata({ params }: { params: { lang:Locale } }):
       }, {} as Record<string, string>),
     },
     openGraph: {
-        title: dictionary.retirement_corpus_calculator.meta_title,
-        description: dictionary.retirement_corpus_calculator.og_description,
+        title: retirementDict.meta_title,
+        description: retirementDict.og_description,
         url: pageUrl,
         images: [{ url: ogImageUrl, width: 1200, height: 630, alt: 'BharatSaver Retirement Corpus Calculator' }],
         locale: params.lang === 'en' ? 'en_IN' : params.lang,
@@ -128,11 +129,7 @@ export async function generateMetadata({ params }: { params: { lang:Locale } }):
 }
 
 export default async function RetirementCorpusCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang, [
-    'retirement_corpus_calculator', 
-    'author_card',
-    'footer_cta'
-  ]);
+  const dictionary = await getDictionary(params.lang);
   
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -434,7 +431,5 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
     </div>
   );
 }
-
-    
 
     

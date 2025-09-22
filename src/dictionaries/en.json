@@ -137,7 +137,7 @@
     "body": "Still not sure which funds to pick? That's completely normal. For a more personalized approach, I can help you get a curated list of funds based on your specific goals and risk profile.",
     "cta_text": "Get My Personalized Fund List"
   },
-    "ppf_calculator": {
+  "ppf_calculator": {
     "meta_title": "PPF Calculator 2025 — Calculate PPF Maturity Online (India)",
     "meta_description": "Free PPF calculator for 2025: Instantly estimate PPF maturity, interest, and tax savings (EEE). Includes year-wise charts, extension rules, and comparison with FD, NPS, and SSY.",
     "h1": "PPF Calculator 2025 - Calculate Maturity & Tax-Free Returns (India)",
@@ -298,3 +298,5 @@
     "result_reasoning": "Why we recommend this:"
   }
 }
+
+    

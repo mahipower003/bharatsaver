@@ -1,5 +1,4 @@
 
-      
 import { getDictionary } from "@/lib/dictionaries";
 import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
@@ -17,7 +16,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang, ['ups_pension_calculator']);
+  const dictionary = await getDictionary(params.lang);
   const dict = dictionary.ups_pension_calculator;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/ups-pension-calculator`;
@@ -104,7 +103,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 }
 
 export default async function UpsPensionCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang, ['ups_pension_calculator', 'author_card', 'footer_cta']);
+  const dictionary = await getDictionary(params.lang);
   const dict = dictionary.ups_pension_calculator;
   const workedExamplesTable = dict.worked_examples_table;
 
