@@ -6,7 +6,7 @@ import { LatestGuides } from '@/components/home/LatestGuides';
 import { HomeTools } from '@/components/home/HomeTools';
 
 export default async function Home({ params }: { params: { lang: Locale } }) {
-  const dictionary = await getDictionary(params.lang, ['home']);
+  const dictionary = await getDictionary(params.lang);
 
   return (
     <>

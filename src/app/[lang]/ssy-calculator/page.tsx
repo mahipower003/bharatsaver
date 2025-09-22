@@ -16,12 +16,13 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang, ['ssy_calculator']);
+  const dictionary = await getDictionary(params.lang);
+  const pageDict = dictionary.ssy_calculator;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/ssy-calculator`;
   const ogImageUrl = `${siteUrl}/images/calculate-ssy-online.png`;
 
-  const faqItems = dictionary.ssy_calculator.faqs;
+  const faqItems = pageDict.faqs;
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -108,7 +109,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 }
 
 export default async function SsyCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang, ['ssy_calculator', 'author_card', 'footer_cta']);
+  const dictionary = await getDictionary(params.lang);
+  const pageDict = dictionary.ssy_calculator;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
 
   const breadcrumbSchema = {
@@ -121,9 +123,9 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
     ],
   };
   
-  const historicalRatesData = dictionary.ssy_calculator.historical_rates.table;
-  const comparisonData = dictionary.ssy_calculator.comparison.table;
-  const exampleData = dictionary.ssy_calculator.example.table;
+  const historicalRatesData = pageDict.historical_rates.table;
+  const comparisonData = pageDict.comparison.table;
+  const exampleData = pageDict.example.table;
 
   return (
     <div className="py-12">
@@ -131,7 +133,7 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
 
       <div className="mx-auto max-w-5xl">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{__html: dictionary.ssy_calculator.h1}}></h1>
+          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{__html: pageDict.h1}}></h1>
            <div className="bs-byline justify-center text-center">
             <span className="bs-author">By <strong>Mahesh Chaube</strong></span>
             <span className="bs-creds">, CFP</span>
@@ -139,23 +141,23 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
             <span className="bs-updated">Last updated: <time dateTime="2025-09-01">September 2025</time></span>
             <div className="bs-reviewed">Reviewed by <strong>Laveena Vijayi</strong> — BharatSaver Editorial Team</div>
           </div>
-          <p className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{__html: dictionary.ssy_calculator.description}}></p>
+          <p className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{__html: pageDict.description}}></p>
         </div>
         
-        <SsyCalculator dictionary={dictionary.ssy_calculator} />
+        <SsyCalculator dictionary={pageDict} />
 
         <Card className="mt-12 shadow-lg">
           <CardHeader>
             <CardTitle className="flex items-center gap-3">
                 <Baby className="h-7 w-7 text-primary"/>
-                <h2 className="text-2xl font-bold">{dictionary.ssy_calculator.what_is_ssy.title}</h2>
+                <h2 className="text-2xl font-bold">{pageDict.what_is_ssy.title}</h2>
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.what_is_ssy.body }}></p>
-            <h3 className="font-semibold mt-4 mb-2">{dictionary.ssy_calculator.what_is_ssy.quick_facts.title}</h3>
+            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.what_is_ssy.body }}></p>
+            <h3 className="font-semibold mt-4 mb-2">{pageDict.what_is_ssy.quick_facts.title}</h3>
             <ul className="list-disc pl-5 space-y-1 text-muted-foreground">
-              {dictionary.ssy_calculator.what_is_ssy.quick_facts.points.map((point: string, index: number) => (
+              {pageDict.what_is_ssy.quick_facts.points.map((point: string, index: number) => (
                 <li key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
               ))}
             </ul>
@@ -164,32 +166,32 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
 
         <Card className="mt-12 shadow-lg">
           <CardHeader>
-            <h2 className="text-2xl font-bold">{dictionary.ssy_calculator.how_it_works.title}</h2>
+            <h2 className="text-2xl font-bold">{pageDict.how_it_works.title}</h2>
           </CardHeader>
           <CardContent className="space-y-6">
             <div className="bg-muted/50 p-4 rounded-lg">
-              <h3 className="font-semibold text-lg mb-2">{dictionary.ssy_calculator.example.formula_title}</h3>
-              <p className="text-sm text-muted-foreground mb-2" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.example.intro }}></p>
-              <p className="font-mono bg-background p-3 rounded-md text-center text-sm md:text-base">{dictionary.ssy_calculator.example.formula}</p>
+              <h3 className="font-semibold text-lg mb-2">{pageDict.example.formula_title}</h3>
+              <p className="text-sm text-muted-foreground mb-2" dangerouslySetInnerHTML={{ __html: pageDict.example.intro }}></p>
+              <p className="font-mono bg-background p-3 rounded-md text-center text-sm md:text-base">{pageDict.example.formula}</p>
             </div>
 
             <div>
-              <h3 className="font-semibold text-lg">{dictionary.ssy_calculator.example.scenario.title}</h3>
-              <p className="text-muted-foreground mt-2" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.example.scenario.body }}></p>
+              <h3 className="font-semibold text-lg">{pageDict.example.scenario.title}</h3>
+              <p className="text-muted-foreground mt-2" dangerouslySetInnerHTML={{ __html: pageDict.example.scenario.body }}></p>
               <ul className="list-disc pl-5 space-y-2 mt-4 text-muted-foreground">
-                {dictionary.ssy_calculator.example.scenario.points.map((point: string, index: number) => (
+                {pageDict.example.scenario.points.map((point: string, index: number) => (
                   <li key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
                 ))}
               </ul>
               <div className="mt-4 bg-primary/10 p-4 rounded-lg border-l-4 border-primary">
-                <p className="text-muted-foreground font-semibold" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.example.scenario.result }}></p>
+                <p className="text-muted-foreground font-semibold" dangerouslySetInnerHTML={{ __html: pageDict.example.scenario.result }}></p>
               </div>
             </div>
 
-             <div className="mt-2 text-sm text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.example.timing_note }}></div>
+             <div className="mt-2 text-sm text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.example.timing_note }}></div>
 
             <div>
-              <h4 className="font-semibold text-lg">{dictionary.ssy_calculator.example.snapshot_title}</h4>
+              <h4 className="font-semibold text-lg">{pageDict.example.snapshot_title}</h4>
               <div className="mt-2 overflow-x-auto">
                 <Table>
                   <TableHeader>
@@ -210,7 +212,7 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
                   </TableBody>
                 </Table>
               </div>
-              <p className="text-xs text-muted-foreground italic pt-4" dangerouslySetInnerHTML={{__html: dictionary.ssy_calculator.example.footer_note}}></p>
+              <p className="text-xs text-muted-foreground italic pt-4" dangerouslySetInnerHTML={{__html: pageDict.example.footer_note}}></p>
             </div>
           </CardContent>
         </Card>
@@ -219,16 +221,16 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
             <CardHeader>
               <CardTitle className="flex items-center gap-3">
                   <TrendingUp className="h-7 w-7 text-primary"/>
-                  <span className="text-2xl font-bold">{dictionary.ssy_calculator.investment_strategy.title}</span>
+                  <span className="text-2xl font-bold">{pageDict.investment_strategy.title}</span>
               </CardTitle>
             </CardHeader>
             <CardContent className="prose dark:prose-invert max-w-none">
               <ol className="list-decimal pl-5 space-y-2">
-                {dictionary.ssy_calculator.investment_strategy.points.map((point: string, index: number) => (
+                {pageDict.investment_strategy.points.map((point: string, index: number) => (
                   <li key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
                 ))}
               </ol>
-               <div className="mt-4" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.investment_strategy.monthly_example }}></div>
+               <div className="mt-4" dangerouslySetInnerHTML={{ __html: pageDict.investment_strategy.monthly_example }}></div>
             </CardContent>
         </Card>
 
@@ -236,12 +238,12 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
             <CardHeader>
                 <CardTitle className="flex items-center gap-3">
                     <ShieldCheck className="h-7 w-7 text-primary"/>
-                    <h2 className="text-2xl font-bold">{dictionary.ssy_calculator.tax_benefits.title}</h2>
+                    <h2 className="text-2xl font-bold">{pageDict.tax_benefits.title}</h2>
                 </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-                <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.tax_benefits.intro }}></p>
-                <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.tax_benefits.body }}></p>
+                <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.tax_benefits.intro }}></p>
+                <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.tax_benefits.body }}></p>
             </CardContent>
         </Card>
 
@@ -249,33 +251,33 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
           <CardHeader>
             <CardTitle className="flex items-center gap-3">
                 <Scale className="h-7 w-7 text-primary"/>
-                <h2 className="text-2xl font-bold">{dictionary.ssy_calculator.rules.title}</h2>
+                <h2 className="text-2xl font-bold">{pageDict.rules.title}</h2>
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
-            <h3 className="font-semibold">{dictionary.ssy_calculator.rules.withdrawal_title}</h3>
-            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.rules.withdrawal_body }}></p>
+            <h3 className="font-semibold">{pageDict.rules.withdrawal_title}</h3>
+            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.rules.withdrawal_body }}></p>
             <div className="bg-muted/50 p-4 rounded-lg">
-              <p className="text-sm" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.rules.withdrawal_example }}></p>
+              <p className="text-sm" dangerouslySetInnerHTML={{ __html: pageDict.rules.withdrawal_example }}></p>
             </div>
             
-            <h3 className="font-semibold pt-4">{dictionary.ssy_calculator.rules.revival_title}</h3>
-            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.rules.revival_intro }}></p>
+            <h3 className="font-semibold pt-4">{pageDict.rules.revival_title}</h3>
+            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.rules.revival_intro }}></p>
             <ul className="list-disc pl-5 space-y-1 text-muted-foreground">
-              {dictionary.ssy_calculator.rules.revival_steps.map((step: string, index: number) => (
+              {pageDict.rules.revival_steps.map((step: string, index: number) => (
                 <li key={index} dangerouslySetInnerHTML={{ __html: step }}></li>
               ))}
             </ul>
 
-            <h3 className="font-semibold pt-4">{dictionary.ssy_calculator.rules.nomination_title}</h3>
-            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.ssy_calculator.rules.nomination_body }}></p>
+            <h3 className="font-semibold pt-4">{pageDict.rules.nomination_title}</h3>
+            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.rules.nomination_body }}></p>
           </CardContent>
         </Card>
 
 
         <Card className="mt-12 shadow-lg">
           <CardHeader>
-            <h2 className="text-2xl font-bold">{dictionary.ssy_calculator.comparison.title}</h2>
+            <h2 className="text-2xl font-bold">{pageDict.comparison.title}</h2>
           </CardHeader>
           <CardContent>
               <Table>
@@ -303,13 +305,13 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
             <CardHeader>
               <CardTitle className="flex items-center gap-3">
                   <FileText className="h-7 w-7 text-primary"/>
-                  <h2 className="text-2xl font-bold">{dictionary.ssy_calculator.how_to_open.title}</h2>
+                  <h2 className="text-2xl font-bold">{pageDict.how_to_open.title}</h2>
               </CardTitle>
             </CardHeader>
             <CardContent className="prose dark:prose-invert max-w-none">
-              <p>{dictionary.ssy_calculator.how_to_open.intro}</p>
+              <p>{pageDict.how_to_open.intro}</p>
               <ol className="list-decimal pl-5 space-y-2">
-                {dictionary.ssy_calculator.how_to_open.steps.map((step: string, index: number) => (
+                {pageDict.how_to_open.steps.map((step: string, index: number) => (
                   <li key={index} dangerouslySetInnerHTML={{ __html: step }}></li>
                 ))}
               </ol>
@@ -318,7 +320,7 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
 
         <Card className="mt-12 shadow-lg">
           <CardHeader>
-            <h2 className="text-2xl font-bold">{dictionary.ssy_calculator.historical_rates.title}</h2>
+            <h2 className="text-2xl font-bold">{pageDict.historical_rates.title}</h2>
           </CardHeader>
           <CardContent>
             <Table>
@@ -343,9 +345,9 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
         </Card>
 
         <div className="mt-12">
-            <h2 className="text-2xl font-bold text-center mb-6">{dictionary.ssy_calculator.faq_title}</h2>
+            <h2 className="text-2xl font-bold text-center mb-6">{pageDict.faq_title}</h2>
             <Accordion type="single" collapsible className="w-full">
-              {dictionary.ssy_calculator.faqs.map((faq: { question: string, answer: string }, index: number) => (
+              {pageDict.faqs.map((faq: { question: string, answer: string }, index: number) => (
                 <AccordionItem value={`item-${index}`} key={index}>
                   <AccordionTrigger>{faq.question}</AccordionTrigger>
                   <AccordionContent>
@@ -360,11 +362,11 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
           <CardHeader>
             <CardTitle className="flex items-center gap-3">
               <Star className="h-7 w-7 text-accent" />
-              <h2 className="text-2xl font-bold">{dictionary.ssy_calculator.conclusion.title}</h2>
+              <h2 className="text-2xl font-bold">{pageDict.conclusion.title}</h2>
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground">{dictionary.ssy_calculator.conclusion.body}</p>
+            <p className="text-muted-foreground">{pageDict.conclusion.body}</p>
           </CardContent>
         </Card>
         <AuthorCard dictionary={dictionary.author_card} />

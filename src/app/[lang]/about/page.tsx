@@ -10,7 +10,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang, ['about_page']);
+  const dictionary = await getDictionary(params.lang);
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/about`;
   return {
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 }
 
 export default async function AboutPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang, ['about_page', 'author_card']);
+  const dictionary = await getDictionary(params.lang);
   
   return (
     <div className="py-12">

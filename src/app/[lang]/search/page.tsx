@@ -14,7 +14,7 @@ export async function generateMetadata({
     params: { lang: Locale },
     searchParams: { q?: string }
 }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang, ['search_page', 'header']);
+  const dictionary = await getDictionary(params.lang);
   const query = searchParams.q;
   const title = query 
     ? `${dictionary.search_page.title_with_query} "${query}"` 
@@ -46,7 +46,7 @@ export default async function SearchPage({
     params: { lang: Locale },
     searchParams: { q?: string }
 }) {
-  const dictionary = await getDictionary(params.lang, ['search_page', 'header']);
+  const dictionary = await getDictionary(params.lang);
   const query = searchParams.q;
   
   return (

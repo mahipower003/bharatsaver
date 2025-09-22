@@ -11,7 +11,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang, ['contact_page']);
+  const dictionary = await getDictionary(params.lang);
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/contact`;
   return {
@@ -46,7 +46,7 @@ const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 
 export default async function ContactPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang, ['contact_page']);
+  const dictionary = await getDictionary(params.lang);
   
   const contactDetails = [
     {

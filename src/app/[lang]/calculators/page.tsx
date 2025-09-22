@@ -9,7 +9,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang, ['calculators_page']);
+  const dictionary = await getDictionary(params.lang);
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/calculators`;
   return {
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 }
 
 export default async function CalculatorsPage({ params }: { params: { lang: Locale } }) {
-  const dictionary = await getDictionary(params.lang, ['home.popular_tools', 'calculators_page']);
+  const dictionary = await getDictionary(params.lang);
   return (
     <div className="py-12">
         <div className="text-center mb-12">

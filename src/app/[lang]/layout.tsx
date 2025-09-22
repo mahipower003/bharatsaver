@@ -15,7 +15,7 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: { lang: Locale };
 }) {
-  const dictionary = await getDictionary(params.lang, ['header', 'footer']);
+  const dictionary = await getDictionary(params.lang);
   return (
     <div className="flex min-h-screen flex-col">
       <Header lang={params.lang} dictionary={dictionary.header} />

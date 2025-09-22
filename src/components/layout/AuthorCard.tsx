@@ -26,7 +26,7 @@ export function AuthorCard({ dictionary }: AuthorCardProps) {
             className="bs-author-photo" 
         />
         <div className="bs-author-info">
-            <h4 id="author-name" className="text-xl font-bold">Mahesh Chaube, CFP</h4>
+            <h4 id="author-name" className="text-xl font-bold">{dictionary.name}</h4>
             <p className="bs-author-bio mt-2 text-muted-foreground">
                 {dictionary.bio}
             </p>

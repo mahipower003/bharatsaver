@@ -16,12 +16,13 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang, ['ppf_calculator']);
+  const dictionary = await getDictionary(params.lang);
+  const pageDict = dictionary.ppf_calculator;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/ppf-calculator`;
   const ogImageUrl = `${siteUrl}/images/calculate-ppf-online.png`;
 
-  const faqItems = dictionary.ppf_calculator.faqs;
+  const faqItems = pageDict.faqs;
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -69,11 +70,11 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   }
 
   return {
-    title: dictionary.ppf_calculator.meta_title,
-    description: dictionary.ppf_calculator.meta_description,
+    title: pageDict.meta_title,
+    description: pageDict.meta_description,
     openGraph: {
-        title: dictionary.ppf_calculator.meta_title,
-        description: dictionary.ppf_calculator.meta_description,
+        title: pageDict.meta_title,
+        description: pageDict.meta_description,
         url: pageUrl,
         siteName: 'BharatSaver',
         images: [{ 
@@ -87,8 +88,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     },
     twitter: {
         card: 'summary_large_image',
-        title: dictionary.ppf_calculator.meta_title,
-        description: dictionary.ppf_calculator.meta_description,
+        title: pageDict.meta_title,
+        description: pageDict.meta_description,
         images: [ogImageUrl],
     },
     alternates: {
@@ -105,7 +106,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 }
 
 export default async function PpfCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang, ['ppf_calculator', 'author_card', 'footer_cta']);
+  const dictionary = await getDictionary(params.lang);
+  const pageDict = dictionary.ppf_calculator;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   
   const breadcrumbSchema = {
@@ -118,8 +120,8 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
     ],
   };
   
-  const comparisonData = dictionary.ppf_calculator.comparison.table;
-  const historicalRatesData = dictionary.ppf_calculator.historical_rates.table;
+  const comparisonData = pageDict.comparison.table;
+  const historicalRatesData = pageDict.historical_rates.table;
 
   return (
     <div className="py-12">
@@ -128,7 +130,7 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
       <div className="mx-auto max-w-5xl">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
-            {dictionary.ppf_calculator.h1}
+            {pageDict.h1}
           </h1>
           <div className="bs-byline justify-center text-center">
             <span className="bs-author">By <strong>Mahesh Chaube</strong></span>
@@ -138,27 +140,27 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
             <div className="bs-reviewed">Reviewed by <strong>Laveena Vijayi</strong> — BharatSaver Editorial Team</div>
           </div>
           <p className="mt-4 text-lg text-muted-foreground">
-            {dictionary.ppf_calculator.description}
+            {pageDict.description}
           </p>
         </div>
         
-        <PpfCalculator dictionary={dictionary.ppf_calculator} />
+        <PpfCalculator dictionary={pageDict} />
 
         <Card className="mt-12 shadow-lg">
           <CardHeader>
-            <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.advantages.title}</h2>
+            <h2 className="text-2xl font-bold">{pageDict.advantages.title}</h2>
           </CardHeader>
           <CardContent>
-            <p className="mb-6 text-muted-foreground">{dictionary.ppf_calculator.advantages.intro}</p>
+            <p className="mb-6 text-muted-foreground">{pageDict.advantages.intro}</p>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
-              {dictionary.ppf_calculator.advantages.points.map((point: string, index: number) => (
+              {pageDict.advantages.points.map((point: string, index: number) => (
                 <li key={index} className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
                   <span>{point}</span>
                 </li>
               ))}
             </ul>
-            <p className="mt-6 font-semibold" dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.advantages.conclusion }}></p>
+            <p className="mt-6 font-semibold" dangerouslySetInnerHTML={{ __html: pageDict.advantages.conclusion }}></p>
           </CardContent>
         </Card>
 
@@ -166,13 +168,13 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
             <CardHeader>
               <CardTitle className="flex items-center gap-3">
                   <TrendingUp className="h-7 w-7 text-primary"/>
-                  <span className="text-2xl font-bold">{dictionary.ppf_calculator.investment_strategy.title}</span>
+                  <span className="text-2xl font-bold">{pageDict.investment_strategy.title}</span>
               </CardTitle>
             </CardHeader>
             <CardContent className="prose dark:prose-invert max-w-none">
-              <p dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.investment_strategy.intro }}></p>
+              <p dangerouslySetInnerHTML={{ __html: pageDict.investment_strategy.intro }}></p>
               <ul>
-                {dictionary.ppf_calculator.investment_strategy.points.map((point: string, index: number) => (
+                {pageDict.investment_strategy.points.map((point: string, index: number) => (
                   <li key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
                 ))}
               </ul>
@@ -183,27 +185,27 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
           <CardHeader>
              <CardTitle className="flex items-center gap-3">
                 <ShieldCheck className="h-7 w-7 text-primary"/>
-                <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.tax_benefits.title}</h2>
+                <h2 className="text-2xl font-bold">{pageDict.tax_benefits.title}</h2>
              </CardTitle>
           </CardHeader>
           <CardContent className="space-y-6">
-            <p className="text-muted-foreground">{dictionary.ppf_calculator.tax_benefits.intro}</p>
+            <p className="text-muted-foreground">{pageDict.tax_benefits.intro}</p>
             <div>
-                <h3 className="text-lg font-semibold">{dictionary.ppf_calculator.tax_benefits.contribution_title}</h3>
-                <p className="text-muted-foreground mt-1" dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.tax_benefits.contribution_body }}></p>
+                <h3 className="text-lg font-semibold">{pageDict.tax_benefits.contribution_title}</h3>
+                <p className="text-muted-foreground mt-1" dangerouslySetInnerHTML={{ __html: pageDict.tax_benefits.contribution_body }}></p>
             </div>
             <div>
-                <h3 className="text-lg font-semibold">{dictionary.ppf_calculator.tax_benefits.interest_title}</h3>
-                <p className="text-muted-foreground mt-1">{dictionary.ppf_calculator.tax_benefits.interest_body}</p>
+                <h3 className="text-lg font-semibold">{pageDict.tax_benefits.interest_title}</h3>
+                <p className="text-muted-foreground mt-1">{pageDict.tax_benefits.interest_body}</p>
             </div>
             <div>
-                <h3 className="text-lg font-semibold">{dictionary.ppf_calculator.tax_benefits.maturity_title}</h3>
-                <p className="text-muted-foreground mt-1">{dictionary.ppf_calculator.tax_benefits.maturity_body}</p>
+                <h3 className="text-lg font-semibold">{pageDict.tax_benefits.maturity_title}</h3>
+                <p className="text-muted-foreground mt-1">{pageDict.tax_benefits.maturity_body}</p>
             </div>
             <div className="bg-primary/10 p-4 rounded-lg border-l-4 border-primary">
-              <p className="font-semibold" dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.tax_benefits.why_matters }}></p>
+              <p className="font-semibold" dangerouslySetInnerHTML={{ __html: pageDict.tax_benefits.why_matters }}></p>
             </div>
-            <p className="text-sm text-muted-foreground" dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.tax_benefits.footer_note }}></p>
+            <p className="text-sm text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.tax_benefits.footer_note }}></p>
           </CardContent>
         </Card>
         
@@ -211,19 +213,19 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
           <CardHeader>
             <CardTitle className="flex items-center gap-3">
                 <Scale className="h-7 w-7 text-primary"/>
-                <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.rules.title}</h2>
+                <h2 className="text-2xl font-bold">{pageDict.rules.title}</h2>
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
              <ul className="space-y-3">
-                {dictionary.ppf_calculator.rules.points.map((point: string, index: number) => (
+                {pageDict.rules.points.map((point: string, index: number) => (
                     <li key={index} className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
                       <span dangerouslySetInnerHTML={{ __html: point }}></span>
                     </li>
                 ))}
             </ul>
-            <p className="text-sm text-muted-foreground pt-4" dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.rules.footer_note }}></p>
+            <p className="text-sm text-muted-foreground pt-4" dangerouslySetInnerHTML={{ __html: pageDict.rules.footer_note }}></p>
           </CardContent>
         </Card>
 
@@ -231,18 +233,18 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
           <CardHeader>
             <CardTitle className="flex items-center gap-3">
               <Landmark className="h-7 w-7 text-primary"/>
-              <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.how_to_open.title}</h2>
+              <h2 className="text-2xl font-bold">{pageDict.how_to_open.title}</h2>
             </CardTitle>
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none">
-            <p>{dictionary.ppf_calculator.how_to_open.intro}</p>
+            <p>{pageDict.how_to_open.intro}</p>
             <ol className="list-decimal pl-5 space-y-2">
-              {dictionary.ppf_calculator.how_to_open.steps.map((step: string, index: number) => (
+              {pageDict.how_to_open.steps.map((step: string, index: number) => (
                 <li key={index} dangerouslySetInnerHTML={{ __html: step }}></li>
               ))}
             </ol>
             <div className="flex flex-wrap gap-4 mt-6">
-                {dictionary.ppf_calculator.how_to_open.links.map((link: { text: string; href: string }, index: number) => (
+                {pageDict.how_to_open.links.map((link: { text: string; href: string }, index: number) => (
                     <Link href={link.href} key={index} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary font-semibold hover:underline">
                         {link.text} <ArrowRight className="h-4 w-4" />
                     </Link>
@@ -253,10 +255,10 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
 
         <Card className="mt-12 shadow-lg">
           <CardHeader>
-            <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.historical_rates.title}</h2>
+            <h2 className="text-2xl font-bold">{pageDict.historical_rates.title}</h2>
           </CardHeader>
           <CardContent>
-            <p className="mb-4 text-muted-foreground">{dictionary.ppf_calculator.historical_rates.intro}</p>
+            <p className="mb-4 text-muted-foreground">{pageDict.historical_rates.intro}</p>
             <Table>
               <TableHeader>
                 <TableRow>
@@ -276,15 +278,15 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
               </TableBody>
             </Table>
             <div className="prose dark:prose-invert max-w-none mt-4">
-                <p className="text-sm" dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.historical_rates.sources }}></p>
-                <p className="font-semibold italic">{dictionary.ppf_calculator.historical_rates.insight}</p>
+                <p className="text-sm" dangerouslySetInnerHTML={{ __html: pageDict.historical_rates.sources }}></p>
+                <p className="font-semibold italic">{pageDict.historical_rates.insight}</p>
             </div>
           </CardContent>
         </Card>
 
         <Card className="mt-12 shadow-lg">
             <CardHeader>
-                <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.comparison.title}</h2>
+                <h2 className="text-2xl font-bold">{pageDict.comparison.title}</h2>
             </CardHeader>
             <CardContent>
                 <Table>
@@ -305,14 +307,14 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
                         ))}
                     </TableBody>
                 </Table>
-                 <p className="text-sm text-muted-foreground mt-4" dangerouslySetInnerHTML={{ __html: dictionary.ppf_calculator.comparison.footer_note.replace('{lang}', params.lang) }}></p>
+                 <p className="text-sm text-muted-foreground mt-4" dangerouslySetInnerHTML={{ __html: pageDict.comparison.footer_note.replace('{lang}', params.lang) }}></p>
             </CardContent>
         </Card>
 
         <div className="mt-12">
-            <h2 className="text-2xl font-bold text-center mb-6">{dictionary.ppf_calculator.faq_title}</h2>
+            <h2 className="text-2xl font-bold text-center mb-6">{pageDict.faq_title}</h2>
             <Accordion type="single" collapsible className="w-full">
-              {dictionary.ppf_calculator.faqs.map((faq: { question: string, answer: string }, index: number) => (
+              {pageDict.faqs.map((faq: { question: string, answer: string }, index: number) => (
                 <AccordionItem value={`item-${index}`} key={index}>
                   <AccordionTrigger>{faq.question}</AccordionTrigger>
                   <AccordionContent>
@@ -327,11 +329,11 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
           <CardHeader>
             <CardTitle className="flex items-center gap-3">
               <Star className="h-7 w-7 text-accent" />
-              <h2 className="text-2xl font-bold">{dictionary.ppf_calculator.conclusion.title}</h2>
+              <h2 className="text-2xl font-bold">{pageDict.conclusion.title}</h2>
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground">{dictionary.ppf_calculator.conclusion.body}</p>
+            <p className="text-muted-foreground">{pageDict.conclusion.body}</p>
           </CardContent>
         </Card>
         <AuthorCard dictionary={dictionary.author_card} />
