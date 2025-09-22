@@ -13,7 +13,7 @@ import { FooterCta } from "@/components/layout/FooterCta";
 
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang, ['mutual_fund_screener']);
+  const dictionary = await getDictionary(params.lang);
   const dict = dictionary.mutual_fund_screener;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/mutual-fund-screener`;
@@ -63,7 +63,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 }
 
 export default async function MutualFundSelectorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang, ['mutual_fund_screener', 'author_card', 'footer_cta']);
+  const dictionary = await getDictionary(params.lang);
   const dict = dictionary.mutual_fund_screener;
   const authorCardDict = dictionary.author_card;
 
@@ -295,3 +295,5 @@ export default async function MutualFundSelectorPage({ params }: { params: { lan
     </div>
   );
 }
+
+    

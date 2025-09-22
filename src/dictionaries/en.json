@@ -275,91 +275,6 @@
         "body": "The Public Provident Fund remains one of the safest and most reliable long-term investment tools for Indian citizens. Its tax-free nature (EEE status), combined with government-guaranteed returns, makes it an essential part of any diversified portfolio, especially for risk-averse investors planning for major life goals like retirement or children's education. Use this calculator to see how small, consistent investments can grow into a significant, tax-free corpus over time."
     }
   },
-  "scheme_selector": {
-    "meta_title": "AI Scheme Selector: Find the Best Investment for You | BharatSaver",
-    "meta_description": "Use our AI-powered quiz to find the best government savings scheme (PPF, NPS, SSY, APY, FD) for your financial goals, risk tolerance, and age.",
-    "title": "AI-Powered Scheme Selector",
-    "description": "Answer a few simple questions, and our AI advisor will recommend the best investment scheme for you.",
-    "age_label": "What is your age?",
-    "income_label": "What is your current annual income?",
-    "risk_label": "What is your risk tolerance?",
-    "risk_low": "Low (I prefer safe, guaranteed returns)",
-    "risk_medium": "Medium (I'm okay with some market risk for better returns)",
-    "risk_high": "High (I want to maximize returns, even with higher risk)",
-    "horizon_label": "What is your investment horizon?",
-    "horizon_short": "Short-term (1-3 years)",
-    "horizon_medium": "Medium-term (3-7 years)",
-    "horizon_long": "Long-term (7+ years)",
-    "goal_label": "What is your primary investment goal?",
-    "goal_placeholder": "e.g., Retirement, child's education, tax saving...",
-    "submit_button": "Get AI Recommendation",
-    "loading": "Analyzing your profile...",
-    "result_title": "Our AI Recommendation For You",
-    "result_reasoning": "Why we recommend this:"
-  },
-  "mutual_fund_overlap_calculator": {
-    "meta_title": "Mutual Fund Overlap Calculator — Check Overlap Between Funds (India, 2025)",
-    "meta_description": "Free mutual fund overlap calculator (2025) for Indian funds. Compare 2-5 funds side-by-side to see portfolio overlap percentage and common stocks. Make informed diversification decisions.",
-    "h1": "Mutual Fund Overlap Calculator India (2025)",
-    "hero": {
-      "subtitle": "Are your mutual funds secretly the same? Compare up to five Indian equity funds to instantly see your true portfolio overlap and top common holdings."
-    },
-    "tool": {
-      "title": "Compare Mutual Fund Holdings",
-      "description": "Select at least two funds to begin.",
-      "add_fund": "Add Another Fund",
-      "export_csv": "Export CSV",
-      "copy_summary": "Copy Summary"
-    },
-    "what_is_overlap": {
-      "h2": "What is Mutual Fund Overlap and Why Does It Matter?",
-      "body": "Mutual fund overlap occurs when two or more funds in your portfolio hold the same stocks. While some overlap is normal (especially in large-cap funds), high overlap can lead to <strong>over-concentration</strong> and <strong>‘diworsification’</strong> — where you think you are diversified but are actually holding the same underlying assets. This calculator helps you uncover that hidden risk."
-    },
-    "how_it_works": {
-      "h2": "How Our Mutual Fund Overlap Calculator Works",
-      "body": "Our tool compares the holdings of the funds you select and calculates the <strong>weighted overlap</strong>. This metric tells you what percentage of your portfolio is duplicated between two funds, based on the smaller weight for each common stock.<br/><br/><strong>Example:</strong> If Fund A holds 5% in ICICI Bank and Fund B holds 6%, the overlap contribution from that stock is 5% (the minimum of the two). We sum this for all common shares to get the total weighted overlap."
-    },
-    "live_example": {
-      "h2": "Live Example: ICICI Pru Bluechip vs HDFC Top 100",
-      "intro": "Here is a pre-rendered example showing a typical comparison. The funds have a weighted overlap of <strong>27.02%</strong>.",
-      "result_summary": "This is a <strong>moderate</strong> level of overlap, common for large-cap funds tracking similar benchmarks. The top 5 common stocks alone contribute over 18% to this overlap.",
-      "top_stocks_title": "Top 5 Overlapping Stocks",
-      "top_stocks": [
-        { "name": "ICICI Bank", "weight": "5.21%" },
-        { "name": "Infosys", "weight": "4.67%" },
-        { "name": "Axis Bank", "weight": "2.34%" },
-        { "name": "Bharti Airtel", "weight": "3.12%" },
-        { "name": "State Bank of India", "weight": "2.98%" }
-      ]
-    },
-    "interpreting_results": {
-      "h2": "How to Interpret Your Overlap Score",
-      "body": "<ul><li><strong>Low (0-15%):</strong> Good diversification. The funds have distinct strategies.</li><li><strong>Moderate (15-30%):</strong> Common for funds in the same category (e.g., large-cap). Review to ensure you are comfortable with the shared exposure.</li><li><strong>High (30-50%):</strong> Significant overlap. You may be paying two sets of fees for the same stocks. Consider consolidating.</li><li><strong>Very High (>50%):</strong> The funds are practically clones. Replacing one to improve diversification is highly recommended.</li></ul>"
-    },
-    "what_to_do": {
-      "h2": "What to Do If You Have High Overlap",
-      "body": "If you find a high overlap, don't panic. Consider replacing one of the funds with another that has a different strategy or market-cap focus. For example, if two large-cap funds overlap, you might switch one to a mid-cap or a sector-specific fund to achieve true diversification."
-    },
-    "faq": {
-      "h2": "Frequently Asked Questions",
-      "faqs": [
-        { "q": "How is mutual fund overlap calculated?", "a": "We calculate the weighted overlap by summing the minimum weight of each common stock held by two funds. The formula is: Σ min(Weight_Fund_A, Weight_Fund_B) for all common stocks." },
-        { "q": "Is 30% overlap in mutual funds bad?", "a": "An overlap of 30% is considered high. While not necessarily 'bad,' it suggests you may be paying two expense ratios for very similar holdings, which reduces diversification. It is worth reviewing if you need both funds in your portfolio." },
-        { "q": "How do you check overlap in mutual funds?", "a": "Simply select 2 to 5 Indian equity funds from the dropdown menus in our calculator. The tool will automatically fetch the latest holdings data and calculate the pairwise overlap for you." },
-        { "q": "Which type of funds have the most overlap?", "a": "Large-cap and index funds tend to have the most overlap because they often track similar benchmarks (like the Nifty 50 or Sensex) and invest in the same set of top blue-chip companies." }
-      ]
-    },
-    "methodology": {
-      "h2": "Data & Methodology",
-      "body": "<p><strong>Data Sources:</strong> Our holdings data is sourced from publicly available scheme documents and updated periodically. While we strive for accuracy, we cannot guarantee it. Always verify with official AMC factsheets. <strong>Last Updated: Aug 2025.</strong></p><p><strong>Matching Logic:</strong> Holdings are matched first by their stock ticker (e.g., 'RELIANCE'). If a ticker is not available, we use a normalized company name (e.g., 'reliance industries' after removing 'Ltd', 'Inc', etc.). Non-equity holdings like 'Cash', 'Tri-party repo', or 'Net Receivables' are excluded from the calculation based on a regex match for common terms.</p><p><strong>Worked Example (Weighted Overlap):</strong></p><p>Weighted Overlap = Σ min(weight in Fund A, weight in Fund B) for all common stocks.</p><div class='overflow-x-auto'><table class='w-full text-sm my-4'><thead><tr class='border-b'><th class='text-left p-2'>Stock</th><th class='text-right p-2'>Fund A (w%)</th><th class='text-right p-2'>Fund B (w%)</th><th class='text-right p-2'>Min Weight</th></tr></thead><tbody><tr class='border-b'><td class='p-2'>ICICI Bank</td><td class='text-right p-2'>5.21</td><td class='text-right p-2'>6.03</td><td class='text-right p-2'>5.21</td></tr><tr class='border-b'><td class='p-2'>Infosys</td><td class='text-right p-2'>4.67</td><td class='text-right p-2'>5.06</td><td class='text-right p-2'>4.67</td></tr><tr class='border-b'><td class='p-2'>Axis Bank</td><td class='text-right p-2'>2.34</td><td class='text-right p-2'>3.45</td><td class='text-right p-2'>2.34</td></tr><tr class='border-b'><td class='p-2'>Bharti Airtel</td><td class='text-right p-2'>3.12</td><td class='text-right p-2'>4.50</td><td class='text-right p-2'>3.12</td></tr><tr class='border-b'><td class='p-2'>State Bank of India</td><td class='text-right p-2'>2.98</td><td class='text-right p-2'>3.80</td><td class='text-right p-2'>2.98</td></tr><tr><td colspan='3' class='text-right font-bold p-2'>...and so on for all 35 common stocks...</td><td class='text-right font-bold p-2'></td></tr><tr class='border-t'><td colspan='3' class='text-right font-bold p-2'>Total Weighted Overlap</td><td class='text-right font-bold p-2'>27.02%</td></tr></tbody></table></div>"
-    },
-    "results": {
-        "weighted_overlap_title": "Weighted Overlap",
-        "top_stocks_title": "Top Common Stocks",
-        "stock_header": "Stock",
-        "min_weight_header": "Min. Weight"
-    }
-  },
   "mutual_fund_screener": {
     "meta_title": "Mutual Fund Scheme Selector 2025 — Compare, Check Overlap, Export CSV",
     "meta_description": "Use our mutual fund scheme selector (India) to filter by holdings, TER, AUM, compare funds and download CSV.",
@@ -387,7 +302,7 @@
     },
     "step_by_step": {
       "h2": "How to Select Mutual Fund Schemes: A Step-by-Step Guide",
-      "body": "<h3>Step 1: Choose a Goal (This is Your 'Why')</h3><p>Before you even look at a fund, ask yourself: 'What am I saving for?' Your goal dictates everything. Are you planning for retirement 20 years away? A high-growth equity fund might be your best friend. Saving for a house down payment in 3 years? A debt or hybrid fund is likely a much safer bet. Start by selecting a clear goal like 'Retirement', 'Tax Saving', or 'Wealth Creation'. This is the absolute foundation of <strong>goal-based investing</strong>, and it's the most important step.</p><h3>Step 2: Choose Your Risk Profile & Time Horizon</h3><p>Now, be honest with yourself. Can you stomach a 20% drop in your portfolio without losing sleep and panic-selling? If not, a 'High Risk' profile isn't for you, and that's perfectly okay. I've seen more wealth destroyed by people overestimating their risk tolerance than by market crashes. Your time horizon is equally critical. The longer you have, the more risk you can generally afford, as you have time to recover from inevitable downturns. This is the core of using a <strong>mutual fund selector by risk profile in India</strong>.</p><h3>Step 3: Use Filters to Narrow to a Shortlist of ~10 Funds</h3><p>Okay, let's cut through the jungle of 2,000+ funds. Start with broad filters. For example: Category = 'Flexi Cap', AUM > ₹10,000 Cr, and Expense Ratio < 1.0%. This simple filter might leave you with 20-30 funds. That's still too many. Now, let's add a performance filter, like '5-Year Return > 15%'. This should narrow it down to a manageable list of around 10 top contenders. You're no longer boiling the ocean; you're fishing in a well-stocked pond.</p><h3>Step 4: Compare Holdings & Check for Portfolio Overlap</h3><p>This is the crucial step that I see 90% of DIY investors miss, but it's where our <strong>mutual fund selector with portfolio overlap check</strong> becomes your secret weapon. Select your top 3-5 funds from the list and run the Overlap Check. You might be shocked to find that two 'different' funds from two different fund houses are holding the exact same top 10 stocks. I once had a client who owned five 'diversified' funds that were collectively 80% the same portfolio! If the overlap is over 30%, you're likely not diversified. You're just paying two separate fund managers to do the same job. The goal is to find funds with different strategies and holdings to build a truly robust portfolio.</p><h3>Step 5: Final Checks Before You Invest</h3><p>You've got your top 2-3 funds. Fantastic! Before you pull the trigger and invest, do these final sanity checks: <strong>Expense Ratio (TER):</strong> Is it competitive for its category? Lower is almost always better. <strong>Exit Loads:</strong> Are there penalties for withdrawing your money early? <strong>Fund Manager Tenure:</strong> Has the manager been there for at least 3-5 years, showing a consistent hand at the wheel? <strong>Fund House Reputation:</strong> Does the AMC have a long, consistent, and investor-friendly track record? Answering these gives you the final layer of confidence to invest your hard-earned money.</p>"
+      "body": "<h3>Step 1: Choose a Goal (This is Your 'Why')</h3><p>Before you even look at a fund, ask yourself: 'What am I saving for?' Your goal dictates everything. Are you planning for retirement 20 years away? A high-growth equity fund might be your best friend. Saving for a house down payment in 3 years? A debt or hybrid fund is likely a much safer bet. Start by selecting a clear goal like 'Retirement', 'Tax Saving', or 'Wealth Creation'. This is the absolute foundation of <strong>goal-based investing</strong>, and it's the most important step.</p><h3>Step 2: Choose Your Risk Profile & Time Horizon</h3><p>Now, be honest with yourself. Can you stomach a 20% drop in your portfolio without losing sleep and panic-selling? If not, a 'High Risk' profile isn't for you, and that's perfectly okay. I've seen more wealth destroyed by people overestimating their risk tolerance than by market crashes. Your time horizon is equally critical. The longer you have, the more risk you can generally afford, as you have time to recover from inevitable downturns. This is the core of using a <strong>mutual fund selector by risk profile in India</strong>.</p><h3>Step 3: Use Filters to Narrow to a Shortlist of ~10 Funds</h3><p>Okay, let's cut through the jungle of 2,000+ funds. Start with broad filters. For example: Category = 'Flexi Cap', AUM > ₹10,000 Cr, and Expense Ratio < 1.0%. This simple filter might leave you with 20-30 funds. That's still too many. Now, let's add a performance filter, like '5-Year Return > 15%'. This should narrow it down to a manageable list of around 10 top contenders. You're no longer boiling the ocean; you're fishing in a well-stocked pond.</p><h3>Step 4: Compare Holdings & Check for Portfolio Overlap</h3><p>This is the crucial step that I see 90% of DIY investors miss, but it's where our <strong>mutual fund selector with portfolio overlap check</strong> becomes your secret weapon. Select your top 3-5 funds from the list and run the Overlap Check. You might be shocked to find that two 'different' funds from two different fund houses are holding the exact same top 10 stocks. I once had a client who owned five 'diversified' funds that were collectively 80% the same portfolio! If the overlap is over 30%, you're likely not diversified. You're just paying two separate fund managers to do the same job. The goal is to find funds with different strategies and holdings to build a truly robust portfolio.</p><h3>Step 5: Final Checks Before You Invest</h3><p>You've got your top 2-3 funds. Fantastic! Before you pull the trigger and invest, do these final sanity checks: <strong>Expense Ratio (TER):</strong> Is it competitive for its category? Lower is almost always better. <strong>Exit Loads:</strong> Are there penalties for withdrawing your money early? <strong>Fund Manager Tenure:</strong> Has the manager been there for at least 3-5 years, showing a consistent hand at the wheel? <strong>Fund House Reputation:</strong> Does the AMC have a long, consistent, and investor-friendly track record, or do they just launch whatever's trendy? A solid, repeatable process is often more important than a single star fund manager who might leave tomorrow.</p>"
     },
     "screener_examples": {
       "h2": "Screener Examples & My Curated Presets",
@@ -438,7 +353,7 @@
     },
     "goal_based_portfolio": {
       "h2": "How to Build a Goal-Based Portfolio Using the Selector",
-      "body": "<h3>Conservative Portfolio (Low Risk)</h3><p><strong>Goal:</strong> Capital preservation, beating inflation, and maybe generating some regular income. This is for goals that are 1-3 years away. <br/><strong>My Strategy:</strong> I'd use the screener to find one or two high-quality Short-Term Debt Funds (for about 60% of the portfolio) and combine that with a stable Nifty 50 or Sensex Index Fund (for the other 40%). This gives you stability with a small equity kick.</p><h3>Balanced Portfolio (Medium Risk)</h3><p><strong>Goal:</strong> Moderate growth for goals that are 5-7 years away, like a down payment for a house or funding your child's college education. <br/><strong>My Strategy:</strong> Here, I would use the selector to find a good Flexi Cap fund as the core (about 40% of the portfolio). I'd add a Large & Mid-Cap fund for a bit more growth punch (20%), and then balance it with the stability of my PPF/EPF and perhaps a good Corporate Bond Fund (the remaining 40%).</p><h3>Aggressive Portfolio (High Risk)</h3><p><strong>Goal:</strong> High growth for very long-term goals like retirement (10+ years away). This is where you can truly harness the power of compounding. <br/><strong>My Strategy:</strong> For this, I'd use the selector to build a more dynamic portfolio. I'd start with a core Flexi-Cap/Multi-Cap Fund (30%), add a dedicated Mid-Cap Fund (30%) and a Small-Cap Fund (20%) for aggressive growth, and maybe even a Sectoral Fund like tech or banking (20%) if I have a strong conviction in that sector's future. The key here is to invest via SIPs and commit to rebalancing this portfolio at least once a year.</p>"
+      "body": "<h3>Conservative Portfolio (Low Risk)</h3><p><strong>Goal:</strong> Capital preservation, beating inflation, and maybe generating some regular income. This is for goals that are 1-3 years away. <br/><strong>My Strategy:</strong> I'd use the screener to find one or two high-quality Short-Term Debt Funds (for about 60% of the portfolio) and combine that with a stable Nifty 50 or Sensex Index Fund (for the other 40%). This gives you stability with a small equity kick.</p><h3>Balanced Portfolio (Medium Risk)</h3><p><strong>Goal:</strong> Moderate growth for goals that are 5-7 years away, like a down payment for a house or funding your child's college education. <br/><strong>My Strategy:</strong> Here, I would use the selector to find a good Flexi Cap fund as the core (about 40% of the portfolio). I'd add a Large & Mid-Cap fund for a bit more growth punch (20%), and then balance it with the stability of my PPF/EPF and perhaps a good Corporate Bond Fund (the remaining 40%).</p><h3>Aggressive Portfolio (High Risk)</h3><p><strong>Goal:</strong> High growth for very long-term goals like retirement (10+ years away). This is where you can truly harness the power of compounding. <br/><strong>My Strategy:</strong> For this, I'd use the screener to build a more dynamic portfolio. I'd start with a core Flexi-Cap/Multi-Cap Fund (30%), add a dedicated Mid-Cap Fund (30%) and a Small-Cap Fund (20%) for aggressive growth, and maybe even a Sectoral Fund like tech or banking (20%) if I have a strong conviction in that sector's future. The key here is to invest via SIPs and commit to rebalancing this portfolio at least once a year.</p>"
     },
     "faq": {
       "h2": "Frequently Asked Questions",
@@ -677,7 +592,68 @@
       "body": "Still not sure which funds to pick? That's completely normal. For a more personalized approach, I can help you get a curated list of funds based on your specific goals and risk profile.",
       "cta_text": "Get My Personalized Fund List"
     }
+  },
+  "mutual_fund_overlap_calculator": {
+    "meta_title": "Mutual Fund Overlap Calculator — Check Overlap Between Funds (India, 2025)",
+    "meta_description": "Free mutual fund overlap calculator (2025) for Indian funds. Compare 2-5 funds side-by-side to see portfolio overlap percentage and common stocks. Make informed diversification decisions.",
+    "h1": "Mutual Fund Overlap Calculator India (2025)",
+    "hero": {
+      "subtitle": "Are your mutual funds secretly the same? Compare up to five Indian equity funds to instantly see your true portfolio overlap and top common holdings."
+    },
+    "tool": {
+      "title": "Compare Mutual Fund Holdings",
+      "description": "Select at least two funds to begin.",
+      "add_fund": "Add Another Fund",
+      "export_csv": "Export CSV",
+      "copy_summary": "Copy Summary"
+    },
+    "what_is_overlap": {
+      "h2": "What is Mutual Fund Overlap and Why Does It Matter?",
+      "body": "Mutual fund overlap occurs when two or more funds in your portfolio hold the same stocks. While some overlap is normal (especially in large-cap funds), high overlap can lead to <strong>over-concentration</strong> and <strong>‘diworsification’</strong> — where you think you are diversified but are actually holding the same underlying assets. This calculator helps you uncover that hidden risk."
+    },
+    "how_it_works": {
+      "h2": "How Our Mutual Fund Overlap Calculator Works",
+      "body": "Our tool compares the holdings of the funds you select and calculates the <strong>weighted overlap</strong>. This metric tells you what percentage of your portfolio is duplicated between two funds, based on the smaller weight for each common stock.<br/><br/><strong>Example:</strong> If Fund A holds 5% in ICICI Bank and Fund B holds 6%, the overlap contribution from that stock is 5% (the minimum of the two). We sum this for all common shares to get the total weighted overlap."
+    },
+    "live_example": {
+      "h2": "Live Example: ICICI Pru Bluechip vs HDFC Top 100",
+      "intro": "Here is a pre-rendered example showing a typical comparison. The funds have a weighted overlap of <strong>27.02%</strong>.",
+      "result_summary": "This is a <strong>moderate</strong> level of overlap, common for large-cap funds tracking similar benchmarks. The top 5 common stocks alone contribute over 18% to this overlap.",
+      "top_stocks_title": "Top 5 Overlapping Stocks",
+      "top_stocks": [
+        { "name": "ICICI Bank", "weight": "5.21%" },
+        { "name": "Infosys", "weight": "4.67%" },
+        { "name": "Axis Bank", "weight": "2.34%" },
+        { "name": "Bharti Airtel", "weight": "3.12%" },
+        { "name": "State Bank of India", "weight": "2.98%" }
+      ]
+    },
+    "interpreting_results": {
+      "h2": "How to Interpret Your Overlap Score",
+      "body": "<ul><li><strong>Low (0-15%):</strong> Good diversification. The funds have distinct strategies.</li><li><strong>Moderate (15-30%):</strong> Common for funds in the same category (e.g., large-cap). Review to ensure you are comfortable with the shared exposure.</li><li><strong>High (30-50%):</strong> Significant overlap. You may be paying two sets of fees for the same stocks. Consider consolidating.</li><li><strong>Very High (>50%):</strong> The funds are practically clones. Replacing one to improve diversification is highly recommended.</li></ul>"
+    },
+    "what_to_do": {
+      "h2": "What to Do If You Have High Overlap",
+      "body": "If you find a high overlap, don't panic. Consider replacing one of the funds with another that has a different strategy or market-cap focus. For example, if two large-cap funds overlap, you might switch one to a mid-cap or a sector-specific fund to achieve true diversification."
+    },
+    "faq": {
+      "h2": "Frequently Asked Questions",
+      "faqs": [
+        { "q": "How is mutual fund overlap calculated?", "a": "We calculate the weighted overlap by summing the minimum weight of each common stock held by two funds. The formula is: Σ min(Weight_Fund_A, Weight_Fund_B) for all common stocks." },
+        { "q": "Is 30% overlap in mutual funds bad?", "a": "An overlap of 30% is considered high. While not necessarily 'bad,' it suggests you may be paying two expense ratios for very similar holdings, which reduces diversification. It is worth reviewing if you need both funds in your portfolio." },
+        { "q": "How do you check overlap in mutual funds?", "a": "Simply select 2 to 5 Indian equity funds from the dropdown menus in our calculator. The tool will automatically fetch the latest holdings data and calculate the pairwise overlap for you." },
+        { "q": "Which type of funds have the most overlap?", "a": "Large-cap and index funds tend to have the most overlap because they often track similar benchmarks (like the Nifty 50 or Sensex) and invest in the same set of top blue-chip companies." }
+      ]
+    },
+    "methodology": {
+      "h2": "Data & Methodology",
+      "body": "<p><strong>Data Sources:</strong> Our holdings data is sourced from publicly available scheme documents and updated periodically. While we strive for accuracy, we cannot guarantee it. Always verify with official AMC factsheets. <strong>Last Updated: Aug 2025.</strong></p><p><strong>Matching Logic:</strong> Holdings are matched first by their stock ticker (e.g., 'RELIANCE'). If a ticker is not available, we use a normalized company name (e.g., 'reliance industries' after removing 'Ltd', 'Inc', etc.). Non-equity holdings like 'Cash', 'Tri-party repo', or 'Net Receivables' are excluded from the calculation based on a regex match for common terms.</p><p><strong>Worked Example (Weighted Overlap):</strong></p><p>Weighted Overlap = Σ min(weight in Fund A, weight in Fund B) for all common stocks.</p><div class='overflow-x-auto'><table class='w-full text-sm my-4'><thead><tr class='border-b'><th class='text-left p-2'>Stock</th><th class='text-right p-2'>Fund A (w%)</th><th class='text-right p-2'>Fund B (w%)</th><th class='text-right p-2'>Min Weight</th></tr></thead><tbody><tr class='border-b'><td class='p-2'>ICICI Bank</td><td class='text-right p-2'>5.21</td><td class='text-right p-2'>6.03</td><td class='text-right p-2'>5.21</td></tr><tr class='border-b'><td class='p-2'>Infosys</td><td class='text-right p-2'>4.67</td><td class='text-right p-2'>5.06</td><td class='text-right p-2'>4.67</td></tr><tr class='border-b'><td class='p-2'>Axis Bank</td><td class='text-right p-2'>2.34</td><td class='text-right p-2'>3.45</td><td class='text-right p-2'>2.34</td></tr><tr class='border-b'><td class='p-2'>Bharti Airtel</td><td class='text-right p-2'>3.12</td><td class='text-right p-2'>4.50</td><td class='text-right p-2'>3.12</td></tr><tr class='border-b'><td class='p-2'>State Bank of India</td><td class='text-right p-2'>2.98</td><td class='text-right p-2'>3.80</td><td class='text-right p-2'>2.98</td></tr><tr><td colspan='3' class='text-right font-bold p-2'>...and so on for all 35 common stocks...</td><td class='text-right font-bold p-2'></td></tr><tr class='border-t'><td colspan='3' class='text-right font-bold p-2'>Total Weighted Overlap</td><td class='text-right font-bold p-2'>27.02%</td></tr></tbody></table></div>"
+    },
+    "results": {
+        "weighted_overlap_title": "Weighted Overlap",
+        "top_stocks_title": "Top Common Stocks",
+        "stock_header": "Stock",
+        "min_weight_header": "Min. Weight"
+    }
   }
 }
-
-    

@@ -124,7 +124,7 @@
       },
       {
         "q": "Will the selector recommend direct plans or regular plans?",
-        "a": "My selector exclusively recommends **Direct Plans**. Why? Because they have lower expense ratios. Direct plans don't involve paying a commission to a distributor, and over the long term, that seemingly small difference can add up to lakhs in extra returns for you, the investor. I believe in putting more of your own money to work for you."
+        "a": "My selector exclusively recommends <strong>Direct Plans</strong>. Why? Because they have lower expense ratios. Direct plans don't involve paying a commission to a distributor, and over the long term, that seemingly small difference can add up to lakhs in extra returns for you, the investor. I believe in putting more of your own money to work for you."
       },
       {
         "q": "How do I check fund manager track record in the tool?",
@@ -194,7 +194,7 @@
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Honestly, less is often more. For most investors, a well-chosen portfolio of 4-6 funds is more than enough. This could be a mix like one large-cap, one mid-cap, one small-cap, and perhaps one international or ELSS fund. The goal is to have funds with different strategies, not just a large number of funds that all do the same thing."
-        }
+      }
       },
       {
         "@type": "Question",
@@ -202,7 +202,7 @@
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Not always, but it's a massive head start. A lower expense ratio means more of your hard-earned money is working for you, not going to the fund manager. While a brilliant manager might justify a slightly higher fee with consistent outperformance, you should always be skeptical. For index funds, a low expense ratio is the single most important factor, period."
-        }
+      }
       },
       {
         "@type": "Question",
@@ -226,7 +226,7 @@
       },
       {
         "q": "Will the selector recommend direct plans or regular plans?",
-        "a": "My selector exclusively recommends **Direct Plans**. Why? Because they have lower expense ratios. Direct plans don't involve paying a commission to a distributor, and over the long term, that seemingly small difference can add up to lakhs in extra returns for you, the investor. I believe in putting more of your own money to work for you."
+        "a": "My selector exclusively recommends <strong>Direct Plans</strong>. Why? Because they have lower expense ratios. Direct plans don't involve paying a commission to a distributor, and over the long term, that seemingly small difference can add up to lakhs in extra returns for you, the investor. I believe in putting more of your own money to work for you."
       },
       {
         "q": "How do I check fund manager track record in the tool?",
@@ -317,3 +317,5 @@
     "cta_text": "Get My Personalized Fund List"
   }
 }
+
+    
