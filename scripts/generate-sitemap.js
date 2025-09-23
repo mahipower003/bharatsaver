@@ -18,6 +18,8 @@ const LOCALES = ['en', 'hi', 'mr', 'ta', 'te'];
 const DEFAULT_LOCALE = 'en';
 
 // Import pages data directly.
+// Note: This requires your tsconfig to be set up to allow require() on .ts files,
+// or you can transpile it first. For this script, we'll assume it works.
 const { pages } = require('../src/data/pages.ts');
 
 // --- Helper Functions ---
@@ -33,10 +35,12 @@ function escapeXml(s) {
 
 function buildLocaleUrl(slug, locale) {
   if (locale === DEFAULT_LOCALE) {
-    return `${BASE_URL}${slug}`;
+    // For root paths, don't add a trailing slash unless it's the homepage
+    return slug === '/' ? BASE_URL : `${BASE_URL}${slug}`;
   }
   return `${BASE_URL}/${locale}${slug}`;
 }
+
 
 // --- Main Logic ---
 
@@ -46,15 +50,18 @@ function generateSitemaps() {
   }
 
   const sitemapFiles = [];
+  const stylesheet = '<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>';
+
 
   // 1. Generate per-locale sitemaps
   for (const locale of LOCALES) {
     const sitemapContent = pages
       .map((page) => {
         const url = buildLocaleUrl(page.slug, locale);
+        const lastMod = new Date(page.lastModified).toISOString();
         return `  <url>
     <loc>${escapeXml(url)}</loc>
-    <lastmod>${new Date(page.lastModified).toISOString()}</lastmod>
+    <lastmod>${lastMod}</lastmod>
     <changefreq>${page.changefreq}</changefreq>
     <priority>${page.priority.toFixed(1)}</priority>
   </url>`;
@@ -62,6 +69,7 @@ function generateSitemaps() {
       .join('\n');
 
     const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
+${stylesheet}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${sitemapContent}
 </urlset>`;
@@ -84,6 +92,7 @@ ${sitemapContent}
     .join('\n');
 
   const indexXml = `<?xml version="1.0" encoding="UTF-8"?>
+${stylesheet}
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${indexBody}
 </sitemapindex>`;
