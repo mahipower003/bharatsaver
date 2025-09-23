@@ -49,7 +49,7 @@ export function Footer({ lang, dictionary }: FooterProps) {
             <ul className="space-y-2">
                 {dictionary.resources.links.map((link) => (
                     <li key={link.href}>
-                      {link.href.startsWith('/sitemap.xml') ? (
+                      {link.href.includes('.xml') ? (
                         <a href={link.href} className="text-sm text-muted-foreground hover:text-primary" target="_blank" rel="noopener noreferrer">
                           {link.title}
                         </a>
