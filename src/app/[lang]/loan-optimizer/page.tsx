@@ -18,7 +18,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const pageDict = (await import(`@/dictionaries/${params.lang}/loan-optimizer.json`)).default;
+  const pageDict = (await import(`@/dictionaries/${params.lang}/loan-optimization-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/loan-optimizer`;
   
@@ -100,7 +100,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 
 export default async function LoanOptimizerPage({ params }: { params: { lang: Locale }}) {
   const dictionary = await getDictionary(params.lang);
-  const pageDict = (await import(`@/dictionaries/${params.lang}/loan-optimizer.json`)).default;
+  const pageDict = (await import(`@/dictionaries/${params.lang}/loan-optimization-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   
   const breadcrumbSchema = {
@@ -265,5 +265,4 @@ export default async function LoanOptimizerPage({ params }: { params: { lang: Lo
     </div>
   );
 }
-
     
