@@ -11,7 +11,7 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "sitemap": "node scripts/generate-sitemap.mjs"
+    "sitemap": "tsx scripts/generate-sitemap.mjs"
   },
   "dependencies": {
     "@genkit-ai/googleai": "^1.14.1",
