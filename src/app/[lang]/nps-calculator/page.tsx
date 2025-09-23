@@ -15,8 +15,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang);
-  const pageDict = dictionary.nps_calculator;
+  const pageDict = (await import(`@/dictionaries/${params.lang}/nps-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/nps-calculator`;
   const ogImageUrl = `${siteUrl}/images/nps-calculator-online.png`;
@@ -100,7 +99,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 
 export default async function NpsCalculatorPage({ params }: { params: { lang: Locale }}) {
   const dictionary = await getDictionary(params.lang);
-  const pageDict = dictionary.nps_calculator;
+  const pageDict = (await import(`@/dictionaries/${params.lang}/nps-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
 
   const breadcrumbSchema = {
@@ -301,5 +300,7 @@ export default async function NpsCalculatorPage({ params }: { params: { lang: Lo
     </div>
   );
 }
+
+    
 
     

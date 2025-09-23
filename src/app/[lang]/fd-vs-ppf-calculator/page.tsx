@@ -17,8 +17,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang);
-  const pageDict = dictionary.fd_vs_ppf_calculator;
+  const pageDict = (await import(`@/dictionaries/${params.lang}/fd-vs-ppf-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/fd-vs-ppf-calculator`;
   const ogImageUrl = `${siteUrl}/images/fd-vs-ppf-calculator.png`;
@@ -103,7 +102,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 
 export default async function FdVsPpfCalculatorPage({ params }: { params: { lang: Locale }}) {
   const dictionary = await getDictionary(params.lang);
-  const pageDict = dictionary.fd_vs_ppf_calculator;
+  const pageDict = (await import(`@/dictionaries/${params.lang}/fd-vs-ppf-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const comparisonData = pageDict.comparison.table;
 
@@ -280,5 +279,7 @@ export default async function FdVsPpfCalculatorPage({ params }: { params: { lang
     </div>
   );
 }
+
+    
 
     

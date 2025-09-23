@@ -16,8 +16,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang);
-  const pageDict = dictionary.ssy_calculator;
+  const pageDict = (await import(`@/dictionaries/${params.lang}/ssy-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/ssy-calculator`;
   const ogImageUrl = `${siteUrl}/images/calculate-ssy-online.png`;
@@ -110,7 +109,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 
 export default async function SsyCalculatorPage({ params }: { params: { lang: Locale }}) {
   const dictionary = await getDictionary(params.lang);
-  const pageDict = dictionary.ssy_calculator;
+  const pageDict = (await import(`@/dictionaries/${params.lang}/ssy-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
 
   const breadcrumbSchema = {
@@ -375,5 +374,7 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
     </div>
   );
 }
+
+    
 
     

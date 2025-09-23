@@ -18,8 +18,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang);
-  const dict = dictionary.mutual_fund_overlap_calculator;
+  const dict = (await import(`@/dictionaries/${params.lang}/mutual-fund-overlap-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/mutual-fund-overlap-calculator`;
   
@@ -76,7 +75,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 
 export default async function MutualFundOverlapCalculatorPage({ params }: { params: { lang: Locale }}) {
   const dictionary = await getDictionary(params.lang);
-  const dict = dictionary.mutual_fund_overlap_calculator;
+  const dict = (await import(`@/dictionaries/${params.lang}/mutual-fund-overlap-calculator.json`)).default;
   const liveExample = dict.live_example;
   
   return (
@@ -201,5 +200,7 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
     </div>
   );
 }
+
+    
 
     

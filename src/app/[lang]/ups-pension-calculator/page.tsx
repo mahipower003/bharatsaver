@@ -16,8 +16,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang);
-  const dict = dictionary.ups_pension_calculator;
+  const dict = (await import(`@/dictionaries/${params.lang}/ups-pension-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/ups-pension-calculator`;
 
@@ -104,8 +103,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 
 export default async function UpsPensionCalculatorPage({ params }: { params: { lang: Locale }}) {
   const dictionary = await getDictionary(params.lang);
-  const dict = dictionary.ups_pension_calculator;
-  const workedExamplesTable = dict.worked_examples;
+  const dict = (await import(`@/dictionaries/${params.lang}/ups-pension-calculator.json`)).default;
+  const workedExamples = dict.worked_examples;
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -138,33 +137,25 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
         <UpsPensionCalculator dictionary={dict} />
 
         <div className="space-y-8 mt-12">
-            <Card>
+            {workedExamples && <Card>
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-3"><TableIcon className="h-6 w-6 text-primary" />{dict.worked_examples.h2}</CardTitle>
+                    <CardTitle className="flex items-center gap-3"><TableIcon className="h-6 w-6 text-primary" />{workedExamples.h2}</CardTitle>
                 </CardHeader>
                  <CardContent className="space-y-6">
                   <div className="bg-muted/50 p-4 rounded-lg">
-                    <h3 className="font-semibold text-lg">{dict.worked_examples.scenario1.title}</h3>
-                    <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: dict.worked_examples.scenario1.body }} />
+                    <h3 className="font-semibold text-lg">{workedExamples.scenario1.title}</h3>
+                    <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: workedExamples.scenario1.body }} />
                   </div>
                   <div className="bg-muted/50 p-4 rounded-lg">
-                    <h3 className="font-semibold text-lg">{dict.worked_examples.scenario2.title}</h3>
-                    <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: dict.worked_examples.scenario2.body }} />
+                    <h3 className="font-semibold text-lg">{workedExamples.scenario2.title}</h3>
+                    <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: workedExamples.scenario2.body }} />
                   </div>
                   <div className="bg-muted/50 p-4 rounded-lg">
-                    <h3 className="font-semibold text-lg">{dict.worked_examples.scenario3.title}</h3>
-                    <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: dict.worked_examples.scenario3.body }} />
+                    <h3 className="font-semibold text-lg">{workedExamples.scenario3.title}</h3>
+                    <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: workedExamples.scenario3.body }} />
                   </div>
                 </CardContent>
-            </Card>
-
-            {workedExamplesTable && (
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-3"><TableIcon className="h-6 w-6 text-primary" />{workedExamplesTable.h2}</CardTitle>
-                </CardHeader>
-              </Card>
-            )}
+            </Card>}
 
             <Card>
                 <CardHeader>
@@ -258,6 +249,8 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
     </div>
   );
 }
+
+    
 
     
 

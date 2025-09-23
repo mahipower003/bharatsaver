@@ -17,8 +17,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang);
-  const pageDict = dictionary.tax_regime_calculator;
+  const pageDict = (await import(`@/dictionaries/${params.lang}/tax-regime-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/tax-regime-calculator`;
   const ogImageUrl = `${siteUrl}/images/tax-regime-calculator-online.png`;
@@ -128,7 +127,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 
 export default async function TaxRegimeCalculatorPage({ params }: { params: { lang: Locale }}) {
   const dictionary = await getDictionary(params.lang);
-  const pageDict = dictionary.tax_regime_calculator;
+  const pageDict = (await import(`@/dictionaries/${params.lang}/tax-regime-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   
   const breadcrumbSchema = {
@@ -337,5 +336,7 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
     </div>
   );
 }
+
+    
 
     

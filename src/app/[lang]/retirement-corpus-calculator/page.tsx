@@ -28,8 +28,7 @@ function formatCurrency(value: number) {
 }
 
 export async function generateMetadata({ params }: { params: { lang:Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang);
-  const retirementDict = dictionary.retirement_corpus_calculator;
+  const retirementDict = (await import(`@/dictionaries/${params.lang}/retirement-corpus-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/retirement-corpus-calculator`;
   const ogImageUrl = `${siteUrl}/images/retirement-calc-og.png`;
@@ -130,6 +129,7 @@ export async function generateMetadata({ params }: { params: { lang:Locale } }):
 
 export default async function RetirementCorpusCalculatorPage({ params }: { params: { lang: Locale }}) {
   const dictionary = await getDictionary(params.lang);
+  const retirementDict = (await import(`@/dictionaries/${params.lang}/retirement-corpus-calculator.json`)).default;
   
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -182,9 +182,6 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
     });
     return row;
   });
-
-  const retirementDict = dictionary.retirement_corpus_calculator;
-
 
   return (
     <div className="py-12">
@@ -431,5 +428,7 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
     </div>
   );
 }
+
+    
 
     

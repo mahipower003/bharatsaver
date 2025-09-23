@@ -135,19 +135,7 @@
     "h2": "भारावून गेल्यासारखे वाटते? मला मदत करू द्या.",
     "body": "अजूनही कोणते फंड निवडावे याबद्दल खात्री नाही? हे पूर्णपणे सामान्य आहे. अधिक वैयक्तिकृत दृष्टिकोनासाठी, मी तुमच्या विशिष्ट ध्येये आणि जोखीम प्रोफाइलवर आधारित फंडांची एक क्युरेटेड सूची मिळविण्यात मदत करू शकेन.",
     "cta_text": "माझी वैयक्तिकृत फंड सूची मिळवा"
-  },
-  "apy_calculator": {},
-  "fd_vs_ppf_calculator": {},
-  "loan_optimization_calculator": {},
-  "mutual_fund_overlap_calculator": {},
-  "mutual_fund_screener": {},
-  "nps_calculator": {},
-  "ppf_calculator": {},
-  "retirement_corpus_calculator": {},
-  "scheme_selector": {},
-  "ssy_calculator": {},
-  "tax_regime_calculator": {},
-  "ups_pension_calculator": {}
+  }
 }
 
-  
+    

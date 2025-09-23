@@ -16,8 +16,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang);
-  const pageDict = dictionary.ppf_calculator;
+  const pageDict = (await import(`@/dictionaries/${params.lang}/ppf-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/ppf-calculator`;
   const ogImageUrl = `${siteUrl}/images/calculate-ppf-online.png`;
@@ -107,7 +106,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 
 export default async function PpfCalculatorPage({ params }: { params: { lang: Locale }}) {
   const dictionary = await getDictionary(params.lang);
-  const pageDict = dictionary.ppf_calculator;
+  const pageDict = (await import(`@/dictionaries/${params.lang}/ppf-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   
   const breadcrumbSchema = {
@@ -342,5 +341,7 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
     </div>
   );
 }
+
+    
 
     

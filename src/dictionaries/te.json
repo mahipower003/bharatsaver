@@ -131,18 +131,11 @@
     "h1_with_query": "కోసం ఫలితాలు",
     "results_placeholder": "మీ శోధన ప్రమాణాలకు సరిపోయే ఫలితాలు ఇక్కడ ప్రదర్శించబడతాయి."
   },
-  "apy_calculator": {},
-  "fd_vs_ppf_calculator": {},
-  "loan_optimization_calculator": {},
-  "mutual_fund_overlap_calculator": {},
-  "mutual_fund_screener": {},
-  "nps_calculator": {},
-  "ppf_calculator": {},
-  "retirement_corpus_calculator": {},
-  "scheme_selector": {},
-  "ssy_calculator": {},
-  "tax_regime_calculator": {},
-  "ups_pension_calculator": {}
+  "footer_cta": {
+    "h2": "అధికంగా అనిపిస్తుందా? నేను సహాయం చేయనివ్వండి.",
+    "body": "ఇప్పటికీ ఏ ఫండ్‌లను ఎంచుకోవాలో ఖచ్చితంగా తెలియదా? ఇది పూర్తిగా సాధారణం. మరింత వ్యక్తిగతీకరించిన విధానం కోసం, నేను మీ నిర్దిష్ట లక్ష్యాలు మరియు రిస్క్ ప్రొఫైల్ ఆధారంగా ఫండ్‌ల క్యూరేటెడ్ జాబితాను పొందడంలో మీకు సహాయపడగలను.",
+    "cta_text": "నా వ్యక్తిగతీకరించిన ఫండ్ జాబితాను పొందండి"
+  }
 }
 
-  
+    

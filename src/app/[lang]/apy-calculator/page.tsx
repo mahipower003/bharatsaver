@@ -16,8 +16,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang);
-  const pageDict = dictionary.apy_calculator;
+  const pageDict = (await import(`@/dictionaries/${params.lang}/apy-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${params.lang}/apy-calculator`;
   const ogImageUrl = `${siteUrl}/images/APY-Calculator-online.png`;
@@ -101,7 +100,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 
 export default async function ApyCalculatorPage({ params }: { params: { lang: Locale }}) {
   const dictionary = await getDictionary(params.lang);
-  const pageDict = dictionary.apy_calculator;
+  const pageDict = (await import(`@/dictionaries/${params.lang}/apy-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
 
   const breadcrumbSchema = {
@@ -249,5 +248,7 @@ export default async function ApyCalculatorPage({ params }: { params: { lang: Lo
     </div>
   );
 }
+
+    
 
     
