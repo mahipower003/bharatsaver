@@ -1,3 +1,4 @@
+
 // scripts/generate-sitemap.js
 const fs = require('fs');
 const path = require('path');
@@ -44,12 +45,19 @@ function generateSitemap(pages, locale) {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   ${pages
     .map((page) => {
-      const path = page.slug === '/' ? '' : page.slug;
-      const url = `${siteUrl}/${locale}${path}`;
+      const getUrl = (loc) => {
+        const isDefaultLocale = loc === i18nConfig.defaultLocale;
+        const slug = page.slug.startsWith('/') ? page.slug : `/${page.slug}`;
+        const path = slug === '/' ? '' : slug;
+        return isDefaultLocale ? `${siteUrl}${path}` : `${siteUrl}/${loc}${path}`;
+      };
+
+      const url = getUrl(locale);
+      
       const alternates = i18nConfig.locales
         .map(
           (altLocale) =>
-            `<xhtml:link rel="alternate" hreflang="${altLocale}" href="${siteUrl}/${altLocale}${path}" />`
+            `<xhtml:link rel="alternate" hreflang="${altLocale}" href="${getUrl(altLocale)}" />`
         )
         .join('\n    ');
 
