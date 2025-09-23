@@ -11,21 +11,19 @@ type FooterProps = {
 
 export function Footer({ lang, dictionary }: FooterProps) {
   const renderLink = (link: { title: string; href: string }) => {
-    // Check if the link is for a sitemap or other static XML/XSL file
+    // Check for sitemap files or other static XML/XSL files in the public directory
     if (link.href.endsWith('.xml') || link.href.endsWith('.xsl')) {
       return (
         <a 
           href={link.href} 
           className="text-sm text-muted-foreground hover:text-primary"
-          target="_blank" 
-          rel="noopener noreferrer"
         >
           {link.title}
         </a>
       );
     }
     
-    // Check for external links
+    // Check for any external links
     if (link.href.startsWith('http')) {
         return (
              <a 
