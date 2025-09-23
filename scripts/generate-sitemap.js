@@ -45,7 +45,7 @@ function buildPageUrl(route, locale) {
   } else {
     url.pathname = `/${locale}${route}`;
   }
-  return url.href.replace(/\/$/, ""); // Remove trailing slash for consistency
+  return url.href.replace(/\/$/, "") || url.href; // Handle root path
 }
 
 // 1. Get all routes
@@ -57,7 +57,6 @@ const sitemapIndexEntries = [];
 for (const locale of LOCALES) {
   const urls = allRoutes.map(route => {
     const loc = buildPageUrl(route, locale);
-    // lastmod can be dynamic based on git history or a fixed date
     const lastmod = new Date().toISOString(); 
     return `  <url>\n    <loc>${escapeXml(loc)}</loc>\n    <lastmod>${lastmod}</lastmod>\n  </url>`;
   }).join('\n');
@@ -73,7 +72,8 @@ ${urls}
   console.log(`✅ Generated ${filename} with ${allRoutes.length} routes.`);
 
   // Entry for the sitemap index file
-  const sitemapUrl = new URL(filename, BASE_URL).href;
+  // **CORRECTED LOGIC**: The URL for the sitemap file itself does NOT have a locale prefix.
+  const sitemapUrl = `${BASE_URL}/${filename}`;
   sitemapIndexEntries.push(`  <sitemap>
     <loc>${escapeXml(sitemapUrl)}</loc>
     <lastmod>${new Date().toISOString()}</lastmod>
