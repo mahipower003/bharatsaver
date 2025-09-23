@@ -1,104 +1,95 @@
 /**
- * generate-sitemap.js
+ * generate-sitemaps.js
  *
- * This script generates a sitemap index and individual sitemap files for each locale.
- * It reads page data from `src/data/pages.ts` to build the URLs.
+ * Generates:
+ *  - public/sitemap.xml        (the index sitemap)
+ *  - public/sitemap-<locale>.xml (per-locale sitemap files)
  *
- * To run: `node scripts/generate-sitemap.js`
+ * Assumes Next.js with i18n path prefixes (e.g., /hi/about).
  */
 
 const fs = require('fs');
 const path = require('path');
+const { calculators } = require('../src/data/calculators');
 
-// --- Configuration ---
+// === CONFIG ===
 const ROOT = process.cwd();
 const OUT_DIR = path.join(ROOT, 'public');
-const BASE_URL = 'https://bharatsaver.com';
-const LOCALES = ['en', 'hi', 'mr', 'ta', 'te'];
-const DEFAULT_LOCALE = 'en';
+if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR, { recursive: true });
 
-// Import pages data directly.
-// This relies on the project being able to require .ts files.
-const { pages } = require('../src/data/pages.ts');
+const baseUrl = "https://bharatsaver.com"; // your prod domain
+const locales = ["en", "hi", "mr", "ta", "te"]; // all locales
+const defaultLocale = "en";
 
-// --- Helper Functions ---
+// Combine static routes with dynamic calculator routes
+const staticRoutes = ["/", "/about", "/contact", "/blog", "/guides", "/calculators", "/terms", "/author/mahesh-chaube"];
+const calculatorRoutes = calculators.map(c => `/${c.slug}`);
+const allRoutes = [...staticRoutes, ...calculatorRoutes];
+
+// === END CONFIG ===
 
 function escapeXml(s) {
   return String(s)
-    .replace(/&/g, '&amp;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&apos;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;');
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
 }
 
-function buildPageUrl(slug, locale) {
-  const base = BASE_URL.replace(/\/$/, '');
-  if (locale === DEFAULT_LOCALE) {
-    return slug === '/' ? base + '/' : `${base}${slug}`;
+function buildLocaleUrl(route, locale) {
+  const base = baseUrl.replace(/\/$/, "");
+  if (locale === defaultLocale) {
+    return route === "/" ? base + "/" : `${base}${route}`;
   }
-  return `${base}/${locale}${slug === '/' ? '' : slug}`;
+  return `${base}/${locale}${route === "/" ? "" : route}`;
 }
 
 
-// --- Main Logic ---
-
-function generateSitemaps() {
-  if (!fs.existsSync(OUT_DIR)) {
-    fs.mkdirSync(OUT_DIR, { recursive: true });
-  }
-
-  const sitemapFiles = [];
+function buildSitemapXml(locale, routes) {
   const stylesheet = '<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>';
+  const header =
+    `<?xml version="1.0" encoding="UTF-8"?>\n` +
+    `${stylesheet}\n` +
+    `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
+  const footer = `</urlset>\n`;
 
-  // 1. Generate per-locale sitemaps
-  for (const locale of LOCALES) {
-    const sitemapContent = pages
-      .map((page) => {
-        const url = buildPageUrl(page.slug, locale);
-        const lastMod = new Date(page.lastModified).toISOString();
-        return `  <url>
-    <loc>${escapeXml(url)}</loc>
-    <lastmod>${lastMod}</lastmod>
-    <changefreq>${page.changefreq}</changefreq>
-    <priority>${page.priority.toFixed(1)}</priority>
-  </url>`;
-      })
-      .join('\n');
+  const body = routes
+    .map((r) => {
+      const loc = buildLocaleUrl(r, locale);
+      // For now, using current date. Ideally, you'd get this from your data source.
+      const lastMod = new Date().toISOString(); 
+      return `  <url>\n    <loc>${escapeXml(loc)}</loc>\n    <lastmod>${lastMod}</lastmod>\n  </url>`;
+    })
+    .join("\n");
 
-    const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
-${stylesheet}
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${sitemapContent}
-</urlset>`;
-
-    const fileName = `sitemap-${locale}.xml`;
-    fs.writeFileSync(path.join(OUT_DIR, fileName), sitemapXml, 'utf8');
-    // The URL to the sitemap file itself is always at the root
-    sitemapFiles.push({ file: fileName, url: `${BASE_URL}/${fileName}` }); 
-    console.log(`✅ Wrote ${fileName} with ${pages.length} routes`);
-  }
-
-  // 2. Generate sitemap.xml (index)
-  const indexBody = sitemapFiles
-    .map(
-      (s) =>
-        `  <sitemap>
-    <loc>${escapeXml(s.url)}</loc>
-    <lastmod>${new Date().toISOString()}</lastmod>
-  </sitemap>`
-    )
-    .join('\n');
-
-  const indexXml = `<?xml version="1.0" encoding="UTF-8"?>
-${stylesheet}
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${indexBody}
-</sitemapindex>`;
-
-  fs.writeFileSync(path.join(OUT_DIR, 'sitemap.xml'), indexXml, 'utf8');
-  console.log(`✅ Wrote sitemap.xml (index) referencing: ${sitemapFiles.map(f => f.file).join(', ')}`);
+  return header + body + "\n" + footer;
 }
 
-// Run the generation
-generateSitemaps();
+// 1. Generate per-locale sitemaps
+const sitemapFiles = [];
+for (const loc of locales) {
+  const xml = buildSitemapXml(loc, allRoutes);
+  const fname = `sitemap-${loc}.xml`;
+  fs.writeFileSync(path.join(OUT_DIR, fname), xml, "utf8");
+  // CRITICAL FIX: The URL to the sitemap file itself should be at the root.
+  sitemapFiles.push({ file: fname, url: `${baseUrl}/${fname}` });
+  console.log(`✅ Wrote ${fname} with ${allRoutes.length} routes`);
+}
+
+// 2. Generate sitemap.xml (index)
+const stylesheet = '<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>';
+const indexHeader =
+  `<?xml version="1.0" encoding="UTF-8"?>\n${stylesheet}\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
+const indexFooter = `</sitemapindex>\n`;
+const indexBody = sitemapFiles
+  .map(
+    (s) =>
+      `  <sitemap>\n    <loc>${escapeXml(s.url)}</loc>\n    <lastmod>${new Date().toISOString()}</lastmod>\n  </sitemap>`
+  )
+  .join("\n");
+
+const indexXml = indexHeader + indexBody + "\n" + indexFooter;
+fs.writeFileSync(path.join(OUT_DIR, "sitemap.xml"), indexXml, "utf8");
+
+console.log("✅ Wrote sitemap.xml (index) with references to:", sitemapFiles.map(f => f.file).join(", "));
