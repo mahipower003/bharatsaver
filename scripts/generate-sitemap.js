@@ -18,8 +18,7 @@ const LOCALES = ['en', 'hi', 'mr', 'ta', 'te'];
 const DEFAULT_LOCALE = 'en';
 
 // Import pages data directly.
-// Note: This requires your tsconfig to be set up to allow require() on .ts files,
-// or you can transpile it first. For this script, we'll assume it works.
+// This relies on the project being able to require .ts files.
 const { pages } = require('../src/data/pages.ts');
 
 // --- Helper Functions ---
@@ -33,12 +32,12 @@ function escapeXml(s) {
     .replace(/>/g, '&gt;');
 }
 
-function buildLocaleUrl(slug, locale) {
+function buildPageUrl(slug, locale) {
+  const base = BASE_URL.replace(/\/$/, '');
   if (locale === DEFAULT_LOCALE) {
-    // For root paths, don't add a trailing slash unless it's the homepage
-    return slug === '/' ? BASE_URL : `${BASE_URL}${slug}`;
+    return slug === '/' ? base + '/' : `${base}${slug}`;
   }
-  return `${BASE_URL}/${locale}${slug}`;
+  return `${base}/${locale}${slug}`;
 }
 
 
@@ -52,12 +51,11 @@ function generateSitemaps() {
   const sitemapFiles = [];
   const stylesheet = '<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>';
 
-
   // 1. Generate per-locale sitemaps
   for (const locale of LOCALES) {
     const sitemapContent = pages
       .map((page) => {
-        const url = buildLocaleUrl(page.slug, locale);
+        const url = buildPageUrl(page.slug, locale);
         const lastMod = new Date(page.lastModified).toISOString();
         return `  <url>
     <loc>${escapeXml(url)}</loc>
@@ -76,7 +74,8 @@ ${sitemapContent}
 
     const fileName = `sitemap-${locale}.xml`;
     fs.writeFileSync(path.join(OUT_DIR, fileName), sitemapXml, 'utf8');
-    sitemapFiles.push({ file: fileName, url: `${BASE_URL}/${fileName}` });
+    // The URL to the sitemap file itself is always at the root
+    sitemapFiles.push({ file: fileName, url: `${BASE_URL}/${fileName}` }); 
     console.log(`✅ Wrote ${fileName} with ${pages.length} routes`);
   }
 
