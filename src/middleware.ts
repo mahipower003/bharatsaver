@@ -1,3 +1,4 @@
+
 import { NextResponse, type NextRequest } from 'next/server';
 import { i18nConfig } from './lib/i18n-config';
 import Negotiator from 'negotiator';
@@ -43,7 +44,8 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  // Matcher ignoring `/_next/` and `/api/`
+  // Matcher ignoring `/_next/`, `/api/`, and static files.
+  // CRITICAL: It now ignores all files ending in .xml or .xsl to prevent redirection of sitemaps.
   matcher: [
     '/((?!api|_next/static|_next/image|images|favicon.ico|icon.svg|robots.txt|.*\\.xml$|.*\\.xsl$|.*\\.png$).*)',
   ],
