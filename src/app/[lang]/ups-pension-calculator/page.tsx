@@ -249,9 +249,3 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
     </div>
   );
 }
-
-    
-
-    
-
-    
