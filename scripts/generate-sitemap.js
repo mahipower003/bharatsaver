@@ -37,7 +37,7 @@ function buildPageUrl(slug, locale) {
   if (locale === DEFAULT_LOCALE) {
     return slug === '/' ? base + '/' : `${base}${slug}`;
   }
-  return `${base}/${locale}${slug}`;
+  return `${base}/${locale}${slug === '/' ? '' : slug}`;
 }
 
 
