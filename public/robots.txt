@@ -1,4 +1,8 @@
+# See https://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
+
+# Allow all User-Agents
 User-agent: *
 Allow: /
 
+# Point to the sitemap index file
 Sitemap: https://bharatsaver.com/sitemap.xml
