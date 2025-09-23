@@ -1,0 +1,103 @@
+{
+  "meta_title": "Tax Regime Calculator 2025 — Compare Old vs New Tax Regime (India)",
+  "meta_description": "Enter your salary and deductions to instantly compare tax under the old vs new regime. Updated for FY 2025-26 — includes HRA, 80C, 80D, and worked examples. Free downloadable summary & ITR filing options.",
+  "h1": "Old vs New Tax Regime Calculator (FY 2024-25 / AY 2025-26)",
+  "description": "Confused about which tax regime to choose? Enter your income and deductions to instantly find out whether the Old or New Tax Regime is more beneficial for you for the current financial year.",
+  "last_updated": "Updated:",
+  "title": "Old vs New Tax Regime Calculator",
+  "form_description": "Fill in your income and potential deductions to get a clear comparison.",
+  "gross_salary_label": "Gross Annual Salary",
+  "basic_salary_label": "Basic Salary (for HRA calculation)",
+  "other_income_label": "Income from Other Sources",
+  "age_label": "Your Age",
+  "age_below_60": "Below 60 years",
+  "age_60_to_80": "60 to 80 years (Senior Citizen)",
+  "age_above_80": "Above 80 years (Super Senior Citizen)",
+  "deductions_title": "Deductions (for Old Regime)",
+  "section80C_label": "Section 80C (e.g., PPF, ELSS, Life Insurance)",
+  "section80D_label": "Section 80D (Health Insurance Premium)",
+  "section80CCD1B_label": "Section 80CCD(1B) (NPS Contribution)",
+  "section80TTA_label": "Section 80TTA (Savings Account Interest)",
+  "hra_label": "HRA Received",
+  "rent_paid_label": "Total Annual Rent Paid",
+  "metro_city_label": "Do you live in a metro city? (Delhi, Mumbai, Kolkata, Chennai)",
+  "home_loan_interest_label": "Home Loan Interest (Self-occupied)",
+  "lta_label": "Leave Travel Allowance (LTA)",
+  "calculate_button": "Compare Tax Regimes",
+  "loading": "Comparing...",
+  "results_title": "Tax Comparison Result",
+  "result_recommendation": "The {winner} is better for you, saving you {savings} in taxes!",
+  "old_regime": "Old Tax Regime",
+  "new_regime": "New Tax Regime (Default)",
+  "total_tax_label": "Total Tax Payable",
+  "taxable_income_label": "Taxable Income",
+  "net_income_label": "Net Take-Home Income",
+  "assumptions": {
+    "title": "Assumptions & Notes",
+    "body": "<ul><li>This calculator is for Assessment Year 2025-26 (Financial Year 2024-25).</li><li>It assumes you are a salaried individual.</li><li>The New Tax Regime is the default regime. You must explicitly opt for the Old Regime if it is more beneficial.</li><li>Standard Deduction of ₹50,000 is applied to salary income under both regimes as per latest rules.</li></ul>"
+  },
+  "comparison_table": {
+    "title": "Old vs New Regime: Key Differences",
+    "description": "Here’s a quick look at what’s allowed under each regime.",
+    "table": {
+      "headers": ["Deduction/Exemption", "Old Regime", "New Regime"],
+      "rows": [
+        ["Standard Deduction", "✅ (₹50,000)", "✅ (₹50,000)"],
+        ["Section 80C (PPF, ELSS, etc.)", "✅ (Up to ₹1.5 Lakh)", "❌ Not Allowed"],
+        ["Section 80D (Health Insurance)", "✅", "❌ Not Allowed"],
+        ["HRA Exemption", "✅", "❌ Not Allowed"],
+        ["Home Loan Interest (Sec 24b)", "✅ (Up to ₹2 Lakh)", "❌ Not Allowed"],
+        ["Section 80CCD(1B) (NPS)", "✅ (Up to ₹50,000)", "❌ Not Allowed"]
+      ]
+    }
+  },
+  "checklist": {
+    "title": "Which Regime Should You Choose?",
+    "body": "<ul><li><strong>Choose the Old Regime if:</strong> You have significant deductions like HRA, home loan interest, and utilize the full 80C limit. Typically, if your total deductions are above ₹2.5 - ₹3.75 lakh, the old regime is often better.</li><li><strong>Choose the New Regime if:</strong> You have few or no deductions, prefer simplicity, and want lower tax rates at most income levels without the hassle of tracking investments for tax purposes.</li></ul>"
+  },
+  "how_we_calculate": {
+    "title": "How We Calculate Your Tax",
+    "body": "<p><strong>Old Regime:</strong> We first calculate your total deductions, including HRA exemption and all sections (80C, 80D, etc.). This is subtracted from your gross income to get your 'Taxable Income'. Tax is then calculated based on the old tax slabs, which vary for different age groups.</p><p><strong>New Regime:</strong> The calculation is simpler. We only apply the standard deduction of ₹50,000 to your salary. No other deductions are allowed. Tax is then calculated based on the new, lower tax slabs. For a detailed breakdown of slabs, you can refer to the <a href='https://incometaxindia.gov.in/' target='_blank' rel='noopener noreferrer'>official Income Tax Department website</a>.</p>"
+  },
+  "common_scenarios": {
+    "title": "Common Scenarios",
+    "scenario1": {
+      "title": "Young Professional Renting in a Metro (Salary: ₹12 Lakh)",
+      "body": "<p>With full 80C (₹1.5L) and 80D (₹25k) deductions, plus HRA exemption, the <strong>Old Regime</strong> is likely better, saving significant tax.</p>"
+    },
+    "scenario2": {
+      "title": "Homeowner with a Home Loan (Salary: ₹20 Lakh)",
+      "body": "<p>With ₹2L home loan interest deduction, 80C, 80D, and NPS, the <strong>Old Regime</strong> is almost certainly more beneficial due to the large volume of deductions.</p>"
+    },
+    "scenario3": {
+      "title": "Investor with Low Deductions (Salary: ₹15 Lakh)",
+      "body": "<p>If you don't have HRA or a home loan and only make minimal 80C investments, the <strong>New Regime's</strong> lower slab rates will likely result in lower tax payable.</p>"
+    }
+  },
+  "faq_title": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "Which tax regime is the default for FY 2024-25?",
+      "answer": "The New Tax Regime is the default option for all taxpayers. If you want to opt for the Old Regime, you must do so specifically when filing your Income Tax Return (ITR)."
+    },
+    {
+      "question": "Can I switch between the old and new regimes every year?",
+      "answer": "Salaried individuals can choose between the old and new regimes every financial year. However, individuals with business income can only switch once in their lifetime."
+    },
+    {
+      "question": "Is the standard deduction of ₹50,000 available in the new tax regime?",
+      "answer": "Yes, from FY 2023-24 onwards, the standard deduction of ₹50,000 is available for salaried individuals and pensioners under the New Tax Regime as well."
+    }
+  ],
+  "next_steps": {
+    "title": "Download & Next Steps",
+    "cta1_title": "Download Summary (CSV)",
+    "cta1_desc": "Export your tax calculation for your records.",
+    "cta2_title": "Optimize Your Tax Savings",
+    "cta2_desc": "Explore our tax-saving investment calculators like PPF and ELSS."
+  },
+  "conclusion": {
+    "title": "Make an Informed Choice",
+    "body": "Choosing the right tax regime is a critical financial decision that can save you thousands of rupees. This choice depends entirely on your individual income and deduction profile. Use this calculator to run your numbers and make the most financially prudent decision for the year. For more savings options, check our <a href='/{lang}/ppf-calculator'>PPF</a> or <a href='/{lang}/nps-calculator'>NPS</a> calculators."
+  }
+}

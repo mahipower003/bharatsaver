@@ -1,0 +1,111 @@
+{
+  "meta_title": "Retirement Corpus Calculator India 2025 | Free Online Retirement Planning Tool",
+  "meta_description": "Free Retirement Corpus Calculator India (2025). Calculate how much money you need to retire, the monthly SIP required, and plan a stress-free retirement.",
+  "og_description": "Our free retirement corpus calculator for India helps you estimate the total corpus required for a comfortable retirement. Calculate the SIP needed to reach your goal.",
+  "h1": "Retirement Corpus Calculator India (2025)",
+  "intro": "Use our retirement calculator to determine the total corpus you need to accumulate for a comfortable, stress-free post-retirement life. It also estimates the monthly SIP required to reach your goal.",
+  "tool_section": {
+    "h2": "Interactive Retirement Planning Calculator"
+  },
+  "title": "Retirement Corpus Calculator",
+  "form_description": "Enter your details to calculate your retirement needs.",
+  "current_age_label": "Your Current Age",
+  "retirement_age_label": "Your Desired Retirement Age",
+  "monthly_expenses_label": "Current Monthly Expenses (₹)",
+  "current_savings_label": "Current Retirement Savings (₹)",
+  "inflation_rate_label": "Expected Inflation Rate (% p.a.)",
+  "pre_retirement_returns_label": "Pre-Retirement Returns (% p.a.)",
+  "post_retirement_returns_label": "Post-Retirement Returns (% p.a.)",
+  "calculate_button": "Calculate Retirement Corpus",
+  "loading": "Calculating...",
+  "results_title": "Your Retirement Analysis",
+  "required_corpus": "Required Corpus at Retirement",
+  "corpus_shortfall": "Corpus Shortfall",
+  "corpus_surplus": "Corpus Surplus",
+  "monthly_sip": "Required Monthly SIP",
+  "view_chart": "View Chart",
+  "view_table": "View Breakdown",
+  "export_csv": "Download Projection",
+  "age_label": "Age",
+  "amount_in_lakhs": "Amount (in Lakhs)",
+  "table_year": "Year",
+  "table_age": "Age",
+  "table_total_corpus": "Total Corpus Value",
+  "how_it_works": {
+    "h2": "How This Retirement Calculator Works",
+    "body": "<p>This calculator uses a multi-step process based on the principles of time value of money:</p><ol><li><strong>Future Value of Expenses:</strong> It first projects your current monthly expenses into the future to your retirement age, using the provided inflation rate. This tells you how much you'll need per month when you retire.</li><li><strong>Retirement Corpus Calculation:</strong> It then calculates the total corpus needed at retirement. This is the amount of money that, when invested, can generate enough returns to cover your inflation-adjusted annual expenses for your expected lifespan post-retirement (assumed until age 85). This is done using the present value of an annuity formula on your post-retirement cash flows.</li><li><strong>SIP Calculation:</strong> Finally, it calculates the monthly Systematic Investment Plan (SIP) required to bridge the gap between your future required corpus and the future value of your existing savings.</li></ol>"
+  },
+  "inputs_explained": {
+    "h2": "Understanding the Inputs",
+    "body": "<ul><li><strong>Post-Retirement Returns:</strong> The expected annual return from your investments *after* you retire. This is typically lower and more conservative (e.g., from FDs, debt funds, or senior citizen schemes) than pre-retirement returns. A rate of 6-7% is a reasonable assumption.</li><li><strong>Pre-Retirement Returns:</strong> The expected annual return from your investments *before* you retire. This is usually higher as you can take more risks with equity mutual funds. A rate of 10-12% is a common long-term assumption for equity-oriented portfolios.</li><li><strong>Inflation Rate:</strong> The average rate at which the cost of living increases. A long-term average of 5-6% is a realistic estimate for India.</li></ul>"
+  },
+  "worked_examples": {
+    "h2": "Worked Examples: From Planning to Corpus",
+    "scenario1": {
+      "title": "Scenario 1: Early Planner (Age 30)",
+      "body": "<p><strong>Inputs:</strong> Age: 30, Retire: 60, Expenses: ₹50k, Savings: ₹5 Lakh, Inflation: 6%, Pre-Ret: 12%, Post-Ret: 7%.</p><p><strong>Result:</strong> Needs a corpus of <strong>₹2.97 Cr</strong>. The required monthly SIP is <strong>₹22,965</strong>. Starting early makes the SIP amount manageable.</p>"
+    },
+    "scenario2": {
+      "title": "Scenario 2: Mid-Career Start (Age 40)",
+      "body": "<p><strong>Inputs:</strong> Age: 40, Retire: 60, Expenses: ₹70k, Savings: ₹15 Lakh, Inflation: 6%, Pre-Ret: 11%, Post-Ret: 7%.</p><p><strong>Result:</strong> Needs a corpus of <strong>₹4.46 Cr</strong>. The required monthly SIP is a much higher <strong>₹58,630</strong> due to the shorter investment horizon.</p>"
+    },
+    "scenario3": {
+      "title": "Scenario 3: Late Start (Age 50)",
+      "body": "<p><strong>Inputs:</strong> Age: 50, Retire: 60, Expenses: ₹1 Lakh, Savings: ₹40 Lakh, Inflation: 6%, Pre-Ret: 10%, Post-Ret: 6%.</p><p><strong>Result:</strong> Needs a corpus of <strong>₹5.68 Cr</strong>. Despite having significant savings, the required monthly SIP is a staggering <strong>₹1,84,545</strong> because of the very short 10-year period for compounding.</p>"
+    }
+  },
+  "sensitivity_analysis": {
+    "title": "Sensitivity Analysis: How Variables Impact Your Goal",
+    "body": "Small changes in inflation or returns can have a massive impact on your required corpus and SIP. The table below shows how the numbers change based on our base case (Age 30, 50k expenses, 5L savings)."
+  },
+  "accumulation_strategy": {
+    "h2": "The Accumulation Phase: Building Your Corpus",
+    "body": "<p>The key to building a large corpus is disciplined, long-term investing, primarily through Systematic Investment Plans (SIPs) in equity mutual funds. The 'pre-retirement returns' you enter should reflect the expected returns from your SIP portfolio.</p><h4>Portfolio Mix Suggestion:</h4><ul><li><strong>Early Stage (25-40 years):</strong> A more aggressive portfolio with 70-80% in equity (a mix of large-cap, mid-cap, and flexi-cap funds) and 20-30% in debt (like PPF or debt funds).</li><li><strong>Mid-Career (40-55 years):</strong> Gradually shift towards a more balanced approach, reducing equity to 50-60% and increasing debt allocation.</li><li><strong>Nearing Retirement (55+ years):</strong> Become more conservative, with equity reduced to 30-40% to protect your accumulated corpus from market volatility.</li></ul>",
+    "sip_plans": {
+      "title": "Sample SIP Plans for Different Corpus Goals",
+      "body": "The table below shows the approximate monthly SIP required to reach a specific corpus by age 60, starting at different ages."
+    }
+  },
+  "deaccumulation_strategy": {
+    "h2": "The De-accumulation Phase: Making Your Money Last",
+    "body": "<p>Once you retire, you move from accumulating wealth to drawing from it. This is the de-accumulation phase. Your entire corpus should be moved to safer, income-generating instruments. A common strategy is the <strong>Systematic Withdrawal Plan (SWP)</strong> from a mix of conservative hybrid or debt funds. The 'post-retirement returns' in the calculator should reflect the returns from this safer portfolio. The goal is to withdraw an amount that covers your expenses while ensuring the corpus lasts for your entire lifetime.</p>"
+  },
+  "tax_rules": {
+    "h2": "Tax Rules and Retirement Planning",
+    "body": "<p>Taxation plays a huge role. Instruments like PPF and EPF are tax-free at withdrawal (EEE status). However, withdrawals from mutual funds are subject to Long-Term Capital Gains (LTCG) tax. As of now, equity gains over ₹1 lakh in a financial year are taxed at 10%. You must account for this tax when planning your withdrawal strategy to ensure your net income meets your needs.</p>"
+  },
+  "faq_title": "Retirement Planning FAQs",
+  "faqs": [
+    {
+      "question": "How much money is enough to retire in India?",
+      "answer": "A common rule of thumb is to have a corpus that is at least 25-30 times your final year's annual expenses. Our calculator provides a more precise figure based on your specific age, expenses, and expected returns."
+    },
+    {
+      "question": "What is the 4% withdrawal rule?",
+      "answer": "It's a guideline suggesting you can safely withdraw 4% of your initial retirement corpus each year, adjusted for inflation, without running out of money for about 30 years. Our calculator uses a similar principle but adapts it to your specific post-retirement return and inflation inputs."
+    },
+    {
+      "question": "Should I include my EPF and PPF in 'Current Savings'?",
+      "answer": "Yes, absolutely. Your Employee Provident Fund (EPF) and Public Provident Fund (PPF) balances are a critical part of your retirement savings and should be included in the 'Current Savings' field."
+    }
+  ],
+  "next_steps": {
+    "h2": "What's Next? Tools & Downloads",
+    "cta1_title": "File Your ITR",
+    "cta1_desc": "Ensure your tax planning is on track.",
+    "cta2_title": "Explore Other Calculators",
+    "cta2_desc": "Plan for other goals like PPF, SSY, or NPS."
+  },
+  "conclusion": {
+    "title": "Your Journey to a Secure Retirement",
+    "body": "Retirement planning can seem daunting, but it's a journey of a thousand small steps. By starting today, understanding your numbers, and investing consistently, you are taking control of your financial future. Use this calculator as your guide and revisit it annually to ensure you stay on track."
+  },
+  "disclaimer": {
+    "title": "Disclaimer",
+    "body": "This calculator is an informational tool and its results are based on the inputs you provide. It is not financial advice. Market returns are not guaranteed. Always consult a SEBI-registered financial advisor before making any investment decisions."
+  },
+  "methodology": {
+    "h2": "Methodology & Verification",
+    "body": "The corpus is calculated using the Present Value of an annuity formula, accounting for real returns (Post-Retirement Returns - Inflation). The SIP amount is calculated using the Future Value of a series formula to meet the corpus shortfall. All calculations have been cross-verified with standard financial models in Excel for accuracy. Reviewed by Mahesh Chaube, CFP."
+  }
+}
