@@ -116,6 +116,16 @@ export const calculators: Calculator[] = [
     lastModified: '2024-08-02',
     image: '/images/UPS Pension Scheme Calculator.png'
   },
+   {
+    slug: 'scheme-selector',
+    title: 'Scheme Selector',
+    description: 'Get an AI-powered scheme recommendation.',
+    summary: 'Use our AI-powered Scheme Selector Quiz to get a recommendation for the best investment scheme (PPF, SSY, NPS, APY, FD) for you.',
+    icon: Sparkles,
+    link_text: 'Get Advice',
+    lastModified: '2024-07-30',
+    image: '/images/PPF-NPS-FD-SSY-Scheme-selector.png'
+  },
   {
     slug: 'mutual-fund-screener',
     title: 'Mutual Fund Screener',
@@ -127,3 +137,5 @@ export const calculators: Calculator[] = [
     image: '/images/PPF-NPS-FD-SSY-Scheme-selector.png'
   },
 ];
+
+    
