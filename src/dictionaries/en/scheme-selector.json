@@ -1,0 +1,23 @@
+
+{
+  "title": "AI-Powered Scheme Selector",
+  "description": "Answer a few questions to get an AI-driven recommendation for the best investment scheme for you.",
+  "age_label": "Your Age",
+  "income_label": "Annual Income (₹)",
+  "risk_label": "Risk Tolerance",
+  "risk_low": "Low (Capital preservation is key)",
+  "risk_medium": "Medium (Balanced growth and safety)",
+  "risk_high": "High (Willing to take risks for higher returns)",
+  "horizon_label": "Investment Horizon",
+  "horizon_short": "Short-term (1-3 years)",
+  "horizon_medium": "Medium-term (3-7 years)",
+  "horizon_long": "Long-term (7+ years)",
+  "goal_label": "What is your primary investment goal?",
+  "goal_placeholder": "e.g., saving for retirement, child's education, buying a house...",
+  "submit_button": "Get Recommendation",
+  "loading": "Analyzing your profile...",
+  "result_title": "AI Recommendation",
+  "result_reasoning": "Why this scheme is recommended:"
+}
+
+    

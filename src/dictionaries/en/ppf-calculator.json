@@ -1,0 +1,147 @@
+
+{
+  "meta_title": "PPF Calculator 2025 — Calculate PPF Maturity Online (India)",
+  "meta_description": "Free PPF calculator for 2025: Instantly estimate PPF maturity, interest, and tax savings (EEE). Includes year-wise charts, extension rules, and comparison with FD, NPS, and SSY.",
+  "h1": "PPF Calculator 2025 (Public Provident Fund)",
+  "description": "Use our free PPF Calculator to estimate your Public Provident Fund maturity amount, total interest earned, and year-wise investment breakdown. Updated with the latest interest rates.",
+  "last_updated": "Rates updated:",
+  "title": "Public Provident Fund (PPF) Calculator",
+  "annual_investment_label": "Yearly Investment Amount",
+  "annual_investment_placeholder": "e.g., 100000",
+  "tenure_label": "Investment Tenure",
+  "interest_rate_label": "Interest Rate (% p.a.)",
+  "interest_rate_placeholder": "e.g., 7.1",
+  "calculate_button": "Calculate PPF Returns",
+  "loading": "Calculating...",
+  "results_title": "Your PPF Projection",
+  "maturity_value": "Maturity Value",
+  "total_investment": "Total Investment",
+  "total_interest": "Total Interest Earned",
+  "view_chart": "Chart",
+  "view_table": "Table",
+  "yearly_breakdown_title": "Year-wise Breakdown",
+  "export_csv": "Export CSV",
+  "table_year": "Year",
+  "table_opening_balance": "Opening Balance",
+  "table_amount_invested": "Amount Invested",
+  "table_interest_earned": "Interest Earned",
+  "table_closing_balance": "Closing Balance",
+  "advantages": {
+    "title": "Advantages of PPF Investment",
+    "intro": "PPF is one of India's most popular long-term savings schemes for several reasons:",
+    "points": [
+      "Risk-Free Sovereign Guarantee",
+      "Attractive Compounded Returns",
+      "Unmatched EEE Tax Benefit",
+      "Flexible Investment Amounts (₹500 to ₹1.5 Lakh/year)",
+      "Loan Facility Against Balance",
+      "Partial Withdrawal Option"
+    ],
+    "conclusion": "It's an ideal tool for long-term goals like retirement, children's education, or wealth creation."
+  },
+  "investment_strategy": {
+    "title": "Pro Tip: When to Invest in PPF for Maximum Returns",
+    "intro": "To maximize your interest earnings in a PPF account, it's crucial to understand how interest is calculated. The interest is calculated monthly on the lowest balance between the 5th and the last day of each month. Therefore, to get the maximum benefit:",
+    "points": [
+      "<strong>Invest before the 5th of each month</strong> if you are investing monthly.",
+      "<strong>Invest the full amount before April 5th</strong> if you are making a lump-sum annual investment."
+    ]
+  },
+  "tax_benefits": {
+    "title": "PPF Tax Benefits: The Power of EEE",
+    "intro": "PPF enjoys the Exempt-Exempt-Exempt (EEE) status, making it one of the most tax-efficient investment options available in India.",
+    "contribution_title": "1. Contribution is Tax-Deductible",
+    "contribution_body": "Your annual contributions of up to ₹1.5 lakh are eligible for deduction under <strong>Section 80C</strong> of the Income Tax Act.",
+    "interest_title": "2. Interest Earned is Tax-Free",
+    "interest_body": "The interest you earn each year is completely exempt from income tax.",
+    "maturity_title": "3. Maturity Amount is Tax-Free",
+    "maturity_body": "The entire maturity amount, including the principal and the accumulated interest, is tax-free upon withdrawal.",
+    "why_matters": "This triple tax benefit significantly enhances your effective rate of return compared to other instruments where returns are taxable.",
+    "footer_note": "To know which tax regime is better for you, use our <a href='/en/tax-regime-calculator'>Old vs New Tax Regime calculator</a>."
+  },
+  "rules": {
+    "title": "Key PPF Rules You Should Know",
+    "points": [
+      "<strong>Tenure:</strong> The mandatory lock-in period is 15 years. It can be extended in blocks of 5 years indefinitely.",
+      "<strong>Contribution Limit:</strong> Minimum of ₹500 and a maximum of ₹1.5 lakh per financial year.",
+      "<strong>Deposits:</strong> Can be made in a lump sum or in a maximum of 12 installments.",
+      "<strong>Account Opening:</strong> Can be opened at any nationalized bank, major private banks, or post offices.",
+      "<strong>Loan:</strong> A loan can be taken against the PPF balance from the 3rd to the 6th financial year.",
+      "<strong>Withdrawal:</strong> Partial withdrawal is permissible from the 7th financial year onwards under specific conditions."
+    ],
+    "footer_note": "For official and detailed rules, always refer to the guidelines provided by the Ministry of Finance or the RBI."
+  },
+  "how_to_open": {
+    "title": "How to Open a PPF Account",
+    "intro": "Opening a PPF account is a straightforward process:",
+    "steps": [
+      "Choose a bank or post office that offers PPF accounts.",
+      "Fill out the account opening form (Form A).",
+      "Submit the necessary KYC documents: Proof of Identity (Aadhaar, PAN) and Proof of Address.",
+      "Make the initial deposit (minimum ₹500).",
+      "Many banks now offer a completely online, Aadhaar e-verification-based account opening process."
+    ],
+    "links": [
+      {"text": "Open PPF in SBI", "href": "https://www.onlinesbi.sbi/"},
+      {"text": "Open PPF in HDFC Bank", "href": "https://www.hdfcbank.com/"},
+      {"text": "Open PPF in ICICI Bank", "href": "https://www.icicibank.com/"}
+    ]
+  },
+  "historical_rates": {
+    "title": "Historical PPF Interest Rates",
+    "intro": "The PPF interest rate is set by the government and reviewed quarterly. Here are the rates over the past few years:",
+    "table": {
+      "headers": ["Period", "Interest Rate"],
+      "rows": [
+        ["Apr 2024 - Jun 2024", "7.1%"],
+        ["Jan 2024 - Mar 2024", "7.1%"],
+        ["Oct 2023 - Dec 2023", "7.1%"],
+        ["Jul 2020 - Sep 2023", "7.1%"],
+        ["Apr 2020 - Jun 2020", "7.1%"],
+        ["Jul 2019 - Mar 2020", "7.9%"],
+        ["Oct 2018 - Jun 2019", "8.0%"]
+      ]
+    },
+    "sources": "Sources: Ministry of Finance notifications, RBI circulars.",
+    "insight": "While the rate has seen a downtrend from its highs, it remains one of the most competitive rates for a risk-free instrument."
+  },
+  "comparison": {
+    "title": "PPF vs Other Investment Options",
+    "table": {
+      "headers": ["Feature", "PPF", "FD", "NPS", "SSY"],
+      "rows": [
+        ["Risk", "Sovereign (Nil)", "Low", "Market-linked", "Sovereign (Nil)"],
+        ["Returns", "Govt. set (7.1%)", "Bank set (Varies)", "Market-driven", "Govt. set (8.2%)"],
+        ["Tax on Maturity", "Tax-Free (EEE)", "Taxable", "Partially Taxable", "Tax-Free (EEE)"],
+        ["Lock-in", "15 years", "Varies (days to yrs)", "Till 60", "21 years"],
+        ["Eligibility", "All Indians", "All Indians", "18-70 years", "Girl child < 10"]
+      ]
+    },
+    "footer_note": "For a detailed comparison, check out our <a href='/{lang}/fd-vs-ppf-calculator'>FD vs PPF calculator</a>."
+  },
+  "faq_title": "Frequently Asked Questions about PPF",
+  "faqs": [
+    {
+      "question": "Can I have more than one PPF account?",
+      "answer": "No, an individual can only have one PPF account in their name. You can, however, open another account on behalf of a minor."
+    },
+    {
+      "question": "What happens if I don't deposit the minimum ₹500 in a year?",
+      "answer": "The account becomes inactive. To reactivate it, you need to pay a penalty of ₹50 for each inactive year, along with the minimum subscription of ₹500 for each of those years."
+    },
+    {
+      "question": "Can an NRI continue to invest in a PPF account?",
+      "answer": "A Non-Resident Indian (NRI) cannot open a new PPF account. However, if they had an account as a resident, they can continue to subscribe to it until maturity, but the account cannot be extended."
+    },
+    {
+      "question": "Is the maturity value of PPF completely tax-free?",
+      "answer": "Yes, under the current tax laws, the entire maturity amount, including principal and interest, is exempt from income tax."
+    }
+  ],
+  "conclusion": {
+    "title": "The Bottom Line: Is PPF Right For You?",
+    "body": "PPF is an outstanding investment for anyone looking for a safe, tax-efficient, and disciplined way to build a long-term corpus. Its guaranteed returns and EEE status make it a cornerstone of a well-diversified portfolio for risk-averse investors. Use this calculator to see how small, consistent savings can grow into a substantial amount over time."
+  }
+}
+
+    

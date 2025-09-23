@@ -1,0 +1,123 @@
+
+{
+    "meta_title": "NPS Calculator 2025 — National Pension System Corpus & Pension",
+    "meta_description": "Use our NPS calculator to plan your retirement. Enter contribution, expected returns and retirement age to get corpus & monthly pension estimates.",
+    "h1": "NPS Calculator 2025 — National Pension System Corpus & Pension",
+    "description": "Use our free <a href=\"https://www.pfrda.org.in/\" target=\"_blank\" rel=\"noopener noreferrer\">National Pension System (NPS)</a> Calculator to estimate your retirement corpus, monthly pension, and tax benefits in India. Plan for a secure retirement.",
+    "last_updated": "Rates updated:",
+    "title": "National Pension System (NPS) Calculator",
+    "form_description": "Enter your investment details to project your NPS corpus and pension.",
+    "contribution_mode": "Contribution Mode",
+    "monthly_mode": "Monthly",
+    "yearly_mode": "Yearly",
+    "monthly_contribution_label": "Monthly Contribution",
+    "yearly_contribution_label": "Yearly Contribution",
+    "current_age_label": "Your Current Age",
+    "retirement_age_label": "Retirement Age",
+    "expected_returns_label": "Expected Returns (% p.a.)",
+    "annuity_percentage_label": "Annuity Purchase Percentage",
+    "annuity_percentage_description": "Min. 40% must be used to buy an annuity, which provides the pension.",
+    "annuity_rate_label": "Annuity Rate (% p.a.)",
+    "annuity_rate_description": "Assumed rate at which the annuity provides pension.",
+    "calculate_button": "Calculate NPS Corpus",
+    "loading": "Calculating...",
+    "results_title": "Your NPS Projection",
+    "total_corpus": "Total Corpus at Retirement",
+    "monthly_pension": "Expected Monthly Pension",
+    "total_investment": "Total Investment",
+    "total_interest": "Total Interest Earned",
+    "lump_sum_value": "Tax-Free Lump Sum Withdrawal",
+    "annuity_value": "Amount for Annuity",
+    "view_chart": "Chart",
+    "view_table": "Table",
+    "age_label": "Age",
+    "amount_in_lakhs": "Amount (in Lakhs)",
+    "export_csv": "Export CSV",
+    "table_year": "Year",
+    "table_age": "Age",
+    "table_opening_balance": "Opening Balance",
+    "table_amount_invested": "Amount Invested",
+    "table_interest_earned": "Interest Earned",
+    "table_closing_balance": "Closing Balance",
+    "what_is_nps": {
+        "title": "What is the National Pension System (NPS)?",
+        "body": "The National Pension System (NPS) is a voluntary, defined contribution retirement savings scheme designed to enable subscribers to make optimum decisions for their future. It's regulated by the Pension Fund Regulatory and Development Authority (PFRDA).",
+        "points": [
+          {"title": "Tier-I Account", "body": "A mandatory retirement account with tax benefits. Withdrawals are restricted until age 60."},
+          {"title": "Tier-II Account", "body": "An optional, voluntary savings account with no withdrawal restrictions. Does not offer tax benefits on investment."}
+        ],
+        "footer": "Your contributions are invested in a mix of assets (equity, corporate bonds, government securities) based on your choice."
+    },
+    "how_it_works": {
+        "title": "How the NPS Calculator Works",
+        "formula_title": "The Compounding Formula",
+        "annual": {"title": "For Annual Investment", "formula": "A = P * [((1+r)^n - 1) / r]"},
+        "monthly": {"title": "For Monthly Investment", "formula": "A = P * [((1+r)^n - 1) / r] * (1+r)"}
+    },
+    "example": {
+        "title": "Example Calculation",
+        "intro": "Let's say a <strong>30-year-old</strong> starts a monthly NPS contribution of <strong>₹6,000</strong>. Here's a breakdown:",
+        "assumptions": [
+            "Retirement Age: 60 years",
+            "Expected Returns: 9% p.a.",
+            "Annuity Purchase: 40%",
+            "Annuity Rate: 6% p.a."
+        ],
+        "calculation_steps": "<h4>Calculation:</h4><p>Over 30 years, the total invested amount is ₹21,60,000. With a 9% return, the magic of compounding grows this into a substantial corpus.</p>",
+        "result": "The total corpus at age 60 will be approximately <strong>₹1.14 Crores</strong>.",
+        "annuity_intro": "From this corpus, 40% (₹45.58 Lakhs) must be used to purchase an annuity. The remaining 60% (₹68.37 Lakhs) can be withdrawn as a tax-free lump sum.",
+        "annuity_result": "The annuity portion will then generate an estimated monthly pension of <strong>₹22,790</strong>.",
+        "disclaimer": "This is an illustrative example. Actual returns are not guaranteed and depend on market performance."
+    },
+    "tax_benefits": {
+        "title": "Tax Benefits of NPS",
+        "intro": "NPS offers significant tax advantages, making it an attractive retirement planning tool:",
+        "points": [
+            "<strong>Section 80CCD(1):</strong> Deduction up to ₹1.5 lakh (part of 80C limit).",
+            "<strong>Section 80CCD(1B):</strong> Additional deduction of up to ₹50,000, over and above the 80C limit.",
+            "<strong>Section 80CCD(2):</strong> Deduction on employer's contribution (up to 10% of basic + DA).",
+            "<strong>Withdrawal:</strong> 60% of the corpus withdrawn at retirement is tax-free."
+        ]
+    },
+    "rules": {
+        "title": "NPS Tiers & Withdrawal Rules",
+        "intro": "NPS has two account types:",
+        "tier1": {
+            "title": "Tier-I (Retirement Account)",
+            "points": ["Mandatory account", "Tax benefits apply", "Withdrawal restrictions"]
+        },
+        "tier2": {
+            "title": "Tier-II (Investment Account)",
+            "points": ["Voluntary account", "No tax benefits on investment", "No withdrawal restrictions"]
+        },
+        "withdrawal": {
+            "title": "Withdrawal at Retirement (Age 60)",
+            "body": "At age 60, you can withdraw up to 60% of the corpus as a tax-free lump sum. A minimum of 40% must be used to purchase an annuity, which will provide a monthly pension."
+        }
+    },
+    "comparison": {
+        "title": "NPS vs. Other Investment Options",
+        "table": {
+            "headers": ["Feature", "NPS", "PPF", "ELSS"],
+            "rows": [
+                ["Risk", "Market-linked (Low to High)", "Sovereign (Nil)", "High"],
+                ["Returns", "Market-driven (avg. 8-12%)", "Govt. set (7.1%)", "Market-driven"],
+                ["Tax on Maturity", "60% Tax-Free", "Tax-Free", "Tax-Free (LTCG > ₹1L is taxed)"],
+                ["Lock-in", "Till 60", "15 years", "3 years"],
+                ["80C Deduction", "Yes", "Yes", "Yes"],
+                ["Extra Deduction", "Yes (80CCD1B)", "No", "No"]
+            ]
+        },
+        "footer_note": "To choose between NPS and PPF, consider your risk appetite and return expectations. Use our <a href='/{lang}/ppf-calculator'>PPF Calculator</a> for comparison."
+    },
+    "faq_title": "Frequently Asked Questions",
+    "faqs": [
+        {"question": "Can I withdraw from my NPS Tier-I account before age 60?", "answer": "Partial withdrawal (up to 25% of your contribution) is allowed for specific purposes like higher education, medical emergencies, or home purchase, after 3 years of opening the account."},
+        {"question": "What is an annuity?", "answer": "An annuity is a financial product that provides a regular income (pension) in exchange for a lump-sum investment. In NPS, you must use at least 40% of your corpus to buy an annuity from an IRDAI-registered insurance company."},
+        {"question": "Can I choose how my NPS money is invested?", "answer": "Yes, NPS offers 'Active Choice' where you can decide the asset allocation mix between equity, corporate bonds, and government securities. Alternatively, you can opt for 'Auto Choice', which automatically rebalances your portfolio based on your age."}
+    ],
+    "conclusion": {
+        "title": "Plan Your Retirement with Confidence",
+        "body": "NPS is a powerful, long-term tool for disciplined retirement savings. Its combination of market-linked growth, tax benefits, and a structured pension makes it an essential part of a modern financial plan. Use this calculator to visualize your retirement corpus and start planning today."
+    }
+}
