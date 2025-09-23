@@ -1,16 +1,7 @@
-/**
- * generate-sitemaps.js
- *
- * This script generates a sitemap index and individual sitemaps for each locale.
- * - public/sitemap.xml: The sitemap index file.
- * - public/sitemap-[locale].xml: Sitemap for each language.
- *
- * It dynamically pulls routes from the `calculators.ts` data file.
- */
 
-const fs = require('fs');
-const path = require('path');
-const { calculators } = require('../dist/data/calculators'); // Use compiled JS file
+import fs from 'fs';
+import path from 'path';
+import { calculators } from '../src/data/calculators.ts';
 
 // === CONFIGURATION ===
 const ROOT = process.cwd();
@@ -72,7 +63,6 @@ ${urls}
   console.log(`✅ Generated ${filename} with ${allRoutes.length} routes.`);
 
   // Entry for the sitemap index file
-  // **CORRECTED LOGIC**: The URL for the sitemap file itself does NOT have a locale prefix.
   const sitemapUrl = `${BASE_URL}/${filename}`;
   sitemapIndexEntries.push(`  <sitemap>
     <loc>${escapeXml(sitemapUrl)}</loc>
@@ -90,8 +80,10 @@ ${sitemapIndexEntries.join('\n')}
 fs.writeFileSync(path.join(OUT_DIR, 'sitemap.xml'), sitemapIndexContent, 'utf8');
 console.log(`✅ Generated sitemap.xml (index) linking to ${sitemapIndexEntries.length} sitemaps.`);
 
-// 4. Create sitemap.xsl for styling
-const xslContent = `<?xml version="1.0" encoding="UTF-8"?>
+// 4. Create sitemap.xsl for styling (if it doesn't exist)
+const xslPath = path.join(OUT_DIR, 'sitemap.xsl');
+if (!fs.existsSync(xslPath)) {
+    const xslContent = `<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:s="http://www.sitemaps.org/schemas/sitemap/0.9">
   <xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes"/>
   <xsl:template match="/">
@@ -147,5 +139,6 @@ const xslContent = `<?xml version="1.0" encoding="UTF-8"?>
   </xsl:template>
 </xsl:stylesheet>`;
 
-fs.writeFileSync(path.join(OUT_DIR, 'sitemap.xsl'), xslContent, 'utf8');
-console.log('✅ Generated sitemap.xsl for styling.');
+    fs.writeFileSync(xslPath, xslContent, 'utf8');
+    console.log('✅ Generated sitemap.xsl for styling.');
+}
