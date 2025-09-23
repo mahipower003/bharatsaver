@@ -10,9 +10,6 @@ type FooterProps = {
 
 export function Footer({ lang, dictionary }: FooterProps) {
   const getLinkUrl = (href: string) => {
-    if (href.startsWith('/sitemap.xml')) {
-      return href;
-    }
     if (href.startsWith('/')) {
       return `/${lang}${href}`;
     }
@@ -52,9 +49,15 @@ export function Footer({ lang, dictionary }: FooterProps) {
             <ul className="space-y-2">
                 {dictionary.resources.links.map((link) => (
                     <li key={link.href}>
-                    <Link href={getLinkUrl(link.href)} className="text-sm text-muted-foreground hover:text-primary" target={link.href.startsWith('/') ? '' : '_blank'}>
-                        {link.title}
-                    </Link>
+                      {link.href.startsWith('/sitemap.xml') ? (
+                        <a href={link.href} className="text-sm text-muted-foreground hover:text-primary" target="_blank" rel="noopener noreferrer">
+                          {link.title}
+                        </a>
+                      ) : (
+                        <Link href={getLinkUrl(link.href)} className="text-sm text-muted-foreground hover:text-primary" target={link.href.startsWith('/') ? '' : '_blank'}>
+                            {link.title}
+                        </Link>
+                      )}
                     </li>
                 ))}
             </ul>
