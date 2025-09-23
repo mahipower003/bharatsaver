@@ -21,7 +21,6 @@ const calculators = [
   { slug: 'loan-optimizer', lastModified: '2024-08-01', priority: 0.9, changefreq: 'monthly' },
   { slug: 'mutual-fund-overlap-calculator', lastModified: '2024-07-20', priority: 0.9, changefreq: 'monthly' },
   { slug: 'ups-pension-calculator', lastModified: '2024-08-02', priority: 0.9, changefreq: 'monthly' },
-  { slug: 'scheme-selector', lastModified: '2024-07-30', priority: 0.8, changefreq: 'monthly' },
   { slug: 'mutual-fund-screener', lastModified: '2024-08-05', priority: 0.9, changefreq: 'monthly' },
 ];
 
