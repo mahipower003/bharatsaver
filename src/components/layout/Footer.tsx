@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import type { Locale } from '@/lib/i18n-config';
 import type { Dictionary } from '@/types';
@@ -9,11 +10,41 @@ type FooterProps = {
 };
 
 export function Footer({ lang, dictionary }: FooterProps) {
-  const getLinkUrl = (href: string) => {
-    if (href.startsWith('/')) {
-      return `/${lang}${href}`;
+  const renderLink = (link: { title: string; href: string }) => {
+    // Check if the link is for a sitemap or other static XML/XSL file
+    if (link.href.endsWith('.xml') || link.href.endsWith('.xsl')) {
+      return (
+        <a 
+          href={link.href} 
+          className="text-sm text-muted-foreground hover:text-primary"
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          {link.title}
+        </a>
+      );
     }
-    return href;
+    
+    // Check for external links
+    if (link.href.startsWith('http')) {
+        return (
+             <a 
+                href={link.href} 
+                className="text-sm text-muted-foreground hover:text-primary"
+                target="_blank" 
+                rel="noopener noreferrer"
+            >
+                {link.title}
+            </a>
+        )
+    }
+
+    // Otherwise, it's an internal Next.js page, so use <Link>
+    return (
+      <Link href={`/${lang}${link.href}`} className="text-sm text-muted-foreground hover:text-primary">
+        {link.title}
+      </Link>
+    );
   };
 
   return (
@@ -25,9 +56,7 @@ export function Footer({ lang, dictionary }: FooterProps) {
             <ul className="space-y-2">
               {dictionary.about.links.map((link) => (
                 <li key={link.href}>
-                  <Link href={getLinkUrl(link.href)} className="text-sm text-muted-foreground hover:text-primary">
-                    {link.title}
-                  </Link>
+                  {renderLink(link)}
                 </li>
               ))}
             </ul>
@@ -37,9 +66,7 @@ export function Footer({ lang, dictionary }: FooterProps) {
             <ul className="space-y-2">
               {dictionary.calculators.links.map((link) => (
                 <li key={link.href}>
-                  <Link href={getLinkUrl(link.href)} className="text-sm text-muted-foreground hover:text-primary">
-                    {link.title}
-                  </Link>
+                  {renderLink(link)}
                 </li>
               ))}
             </ul>
@@ -47,19 +74,11 @@ export function Footer({ lang, dictionary }: FooterProps) {
           <div>
             <h3 className="font-semibold mb-4">{dictionary.resources.title}</h3>
             <ul className="space-y-2">
-                {dictionary.resources.links.map((link) => (
-                    <li key={link.href}>
-                      {link.href.includes('.xml') ? (
-                        <a href={link.href} className="text-sm text-muted-foreground hover:text-primary" target="_blank" rel="noopener noreferrer">
-                          {link.title}
-                        </a>
-                      ) : (
-                        <Link href={getLinkUrl(link.href)} className="text-sm text-muted-foreground hover:text-primary" target={link.href.startsWith('/') ? '' : '_blank'}>
-                            {link.title}
-                        </Link>
-                      )}
-                    </li>
-                ))}
+              {dictionary.resources.links.map((link) => (
+                <li key={link.href}>
+                  {renderLink(link)}
+                </li>
+              ))}
             </ul>
           </div>
           <div>
