@@ -1,84 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://bharatsaver.com/mr</loc>
-    <lastmod>2024-08-06T12:00:00.000Z</lastmod>
+    <loc>https://bharatsaver.com/mr/</loc>
+    <lastmod>2024-05-24T12:00:00.000Z</lastmod>
   </url>
   <url>
     <loc>https://bharatsaver.com/mr/about</loc>
-    <lastmod>2024-08-06T12:00:00.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/contact</loc>
-    <lastmod>2024-08-06T12:00:00.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/blog</loc>
-    <lastmod>2024-08-06T12:00:00.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/guides</loc>
-    <lastmod>2024-08-06T12:00:00.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/calculators</loc>
-    <lastmod>2024-08-06T12:00:00.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/terms</loc>
-    <lastmod>2024-08-06T12:00:00.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/author/mahesh-chaube</loc>
-    <lastmod>2024-08-06T12:00:00.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/ppf-calculator</loc>
-    <lastmod>2024-08-06T12:00:00.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/ssy-calculator</loc>
-    <lastmod>2024-08-06T12:00:00.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/nps-calculator</loc>
-    <lastmod>2024-08-06T12:00:00.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/apy-calculator</loc>
-    <lastmod>2024-08-06T12:00:00.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/fd-vs-ppf-calculator</loc>
-    <lastmod>2024-08-06T12:00:00.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/tax-regime-calculator</loc>
-    <lastmod>2024-08-06T12:00:00.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/retirement-corpus-calculator</loc>
-    <lastmod>2024-08-06T12:00:00.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/loan-optimizer</loc>
-    <lastmod>2024-08-06T12:00:00.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/mutual-fund-overlap-calculator</loc>
-    <lastmod>2024-08-06T12:00:00.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/ups-pension-calculator</loc>
-    <lastmod>2024-08-06T12:00:00.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/scheme-selector</loc>
-    <lastmod>2024-08-06T12:00:00.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://bharatsaver.com/mr/mutual-fund-screener</loc>
-    <lastmod>2024-08-06T12:00:00.000Z</lastmod>
+    <lastmod>2024-05-24T12:00:00.000Z</lastmod>
   </url>
 </urlset>
