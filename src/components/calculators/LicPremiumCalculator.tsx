@@ -5,69 +5,29 @@ import { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Loader2, ShieldCheck } from 'lucide-react';
+import { useRouter, usePathname } from 'next/navigation';
+import { Loader2, ShieldCheck, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { RadioGroup, RadioGroupItem } from '../ui/radio-group';
 import type { Dictionary } from '@/types';
 
 const formSchema = z.object({
   productCategory: z.string().min(1, 'Please select a category'),
   subCategory: z.string().optional(),
   plan: z.string().min(1, 'Please select a plan'),
-  age: z.coerce.number().min(8, 'Minimum age is 8').max(65, 'Maximum age is 65'),
-  ppt: z.coerce.number().min(5, 'Minimum PPT is 5 years'),
-  frequency: z.enum(['yearly', 'half-yearly', 'quarterly', 'monthly']),
-  sumAssured: z.coerce.number().min(50000, 'Minimum sum assured is ₹50,000'),
 });
 
 type LicFormValues = z.infer<typeof formSchema>;
-
-type CalculationResult = {
-  premium: number;
-};
 
 type LicCalculatorProps = {
   dictionary: Dictionary['lic_premium_calculator'];
 };
 
-// This is a simplified mock calculation. A real implementation would use complex rate tables.
-const calculateMockLicPremium = (values: LicFormValues): number => {
-  const { age, sumAssured, plan, ppt, frequency } = values;
-  
-  let baseRate = 0.025; // A base rate per thousand sum assured
-  
-  // Adjust base rate based on plan
-  if (plan === 'jeevan_umang' || plan === 'jeevan_utsav') baseRate *= 1.5;
-  if (plan.includes('endowment')) baseRate *= 1.0;
-  if (plan.includes('money_back')) baseRate *= 1.2;
-  if (plan.includes('pension')) baseRate *= 1.8;
-
-
-  // Adjust for age
-  baseRate *= 1 + (age - 8) / 100;
-
-  // Adjust for PPT (shorter PPT = higher premium)
-  baseRate *= 1 + (25 - ppt) / 50;
-
-  let annualPremium = (sumAssured / 1000) * baseRate * 100;
-  
-  // Add a base amount
-  annualPremium += 500;
-  
-  let finalPremium = annualPremium;
-  if (frequency === 'half-yearly') finalPremium = annualPremium * 0.51;
-  if (frequency === 'quarterly') finalPremium = annualPremium * 0.26;
-  if (frequency === 'monthly') finalPremium = annualPremium * 0.088;
-
-  return Math.round(finalPremium);
-}
-
 export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
-  const [result, setResult] = useState<CalculationResult | null>(null);
+  const router = useRouter();
+  const pathname = usePathname();
   const [isLoading, setIsLoading] = useState(false);
 
   const form = useForm<LicFormValues>({
@@ -76,10 +36,6 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
       productCategory: 'insurance_plans',
       subCategory: 'whole_life_plans',
       plan: 'jeevan_umang',
-      age: 30,
-      ppt: 20,
-      frequency: 'yearly',
-      sumAssured: 1000000,
     },
   });
 
@@ -87,13 +43,11 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
   const subCategory = form.watch('subCategory');
   const categoriesWithSubCategories = ['insurance_plans'];
 
-  // This effect will reset the subCategory and plan when the productCategory changes.
   useEffect(() => {
     form.resetField('subCategory', { defaultValue: '' });
     form.resetField('plan', { defaultValue: '' });
   }, [productCategory, form]);
 
-  // This effect will reset the plan when the subCategory changes.
   useEffect(() => {
      form.resetField('plan', { defaultValue: '' });
   }, [subCategory, form]);
@@ -107,22 +61,13 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
 
   async function handleSubmit(values: LicFormValues) {
     setIsLoading(true);
-    setResult(null);
-    await new Promise(resolve => setTimeout(resolve, 500));
+    const lang = pathname.split('/')[1] || 'en';
+    const planSlug = `lic-${values.plan}-calculator`.replace(/_/g, '-');
     
-    const premium = calculateMockLicPremium(values);
-    
-    setResult({ premium });
-    setIsLoading(false);
-  }
+    // Simulate a brief delay before redirecting
+    await new Promise(resolve => setTimeout(resolve, 300));
 
-  const formatCurrency = (value: number) => {
-    return value.toLocaleString('en-IN', {
-      style: 'currency',
-      currency: 'INR',
-      minimumFractionDigits: 0,
-      maximumFractionDigits: 0,
-    });
+    router.push(`/${lang}/${planSlug}`);
   }
 
   return (
@@ -139,8 +84,8 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
         </CardHeader>
         <CardContent>
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(handleSubmit)} className="space-y-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            <form onSubmit={form.handleSubmit(handleSubmit)} className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <FormField
                     control={form.control}
                     name="productCategory"
@@ -207,54 +152,16 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
                     )}
                   />
                 )}
-                 <FormField control={form.control} name="age" render={({ field }) => (<FormItem><FormLabel>{dictionary.age_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
-                 <FormField control={form.control} name="ppt" render={({ field }) => (<FormItem><FormLabel>{dictionary.ppt_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
-                 <FormField
-                    control={form.control}
-                    name="frequency"
-                    render={({ field }) => (
-                      <FormItem className="space-y-3">
-                        <FormLabel>{dictionary.frequency_label}</FormLabel>
-                        <FormControl>
-                          <RadioGroup onValueChange={field.onChange} defaultValue={field.value} className="grid grid-cols-1 gap-y-4">
-                            <FormItem className="flex items-center space-x-3 space-y-0"><FormControl><RadioGroupItem value="yearly" /></FormControl><FormLabel className="font-normal">{dictionary.frequencies.yearly}</FormLabel></FormItem>
-                            <FormItem className="flex items-center space-x-3 space-y-0"><FormControl><RadioGroupItem value="half-yearly" /></FormControl><FormLabel className="font-normal">{dictionary.frequencies.half_yearly}</FormLabel></FormItem>
-                            <FormItem className="flex items-center space-x-3 space-y-0"><FormControl><RadioGroupItem value="quarterly" /></FormControl><FormLabel className="font-normal">{dictionary.frequencies.quarterly}</FormLabel></FormItem>
-                            <FormItem className="flex items-center space-x-3 space-y-0"><FormControl><RadioGroupItem value="monthly" /></FormControl><FormLabel className="font-normal">{dictionary.frequencies.monthly}</FormLabel></FormItem>
-                          </RadioGroup>
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                 <FormField control={form.control} name="sumAssured" render={({ field }) => (<FormItem><FormLabel>{dictionary.sum_assured_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
               </div>
 
               <Button type="submit" disabled={isLoading} className="w-full md:w-auto">
-                {isLoading ? <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> {dictionary.loading}</> : dictionary.calculate_button}
+                {isLoading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <ArrowRight className="mr-2 h-4 w-4" />}
+                {dictionary.view_calculator_button}
               </Button>
             </form>
           </Form>
         </CardContent>
       </Card>
-
-      {isLoading && <div className="text-center py-12"><Loader2 className="mx-auto h-12 w-12 animate-spin text-primary" /></div>}
-
-      {result && (
-        <Card className="mt-8 animate-in fade-in-50 slide-in-from-bottom-5 shadow-lg">
-          <CardHeader>
-            <CardTitle>{dictionary.results_title}</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="text-center">
-              <p className="text-lg text-muted-foreground">{dictionary.estimated_premium_label}</p>
-              <p className="text-4xl font-bold text-primary mt-2">{formatCurrency(result.premium)}</p>
-              <p className="text-md text-muted-foreground capitalize">{form.getValues().frequency}</p>
-            </div>
-             <p className="text-xs text-center text-muted-foreground mt-6 italic">{dictionary.disclaimer}</p>
-          </CardContent>
-        </Card>
-      )}
     </>
   );
 }

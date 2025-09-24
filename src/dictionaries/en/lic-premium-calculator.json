@@ -1,9 +1,9 @@
 
 {
   "h1": "LIC Premium Calculator",
-  "description": "Use our free LIC Premium Calculator to estimate premiums for Jeevan Umang, Jeevan Utsav, Jeevan Labh and other LIC plans.",
-  "title": "LIC Premium Calculator",
-  "form_description": "Enter your details to get an estimated premium for popular LIC plans.",
+  "description": "Select an LIC plan below to open its dedicated premium calculator.",
+  "title": "LIC Plan Selector",
+  "form_description": "Find the specific LIC plan you're interested in to calculate its premium.",
   "category_label": "Product Category",
   "categories": {
     "insurance_plans": "Insurance Plans",
@@ -76,38 +76,20 @@
       "micro_bima": "LIC's Micro Bima"
     }
   },
-  "age_label": "Your Age",
-  "sum_assured_label": "Sum Assured (₹)",
-  "ppt_label": "Premium Paying Term (Years)",
-  "frequency_label": "Premium Frequency",
-  "frequencies": {
-    "yearly": "Yearly",
-    "half-yearly": "Half-yearly",
-    "quarterly": "Quarterly",
-    "monthly": "Monthly"
-  },
-  "calculate_button": "Calculate Premium",
-  "loading": "Calculating...",
-  "results_title": "Estimated LIC Premium",
-  "estimated_premium_label": "Your Estimated Premium is",
-  "disclaimer": "This is a mock calculation for illustrative purposes. The actual premium may vary. Please consult an LIC agent for exact quotes.",
+  "view_calculator_button": "View Calculator",
   "faq_title": "Frequently Asked Questions",
   "faqs": [
     {
-      "question": "How is the LIC premium calculated?",
-      "answer": "LIC premiums are calculated based on several factors including your age, the sum assured, the policy term, the premium paying term, and the specific plan chosen. Each plan has its own rate table."
+      "question": "How do I use this page?",
+      "answer": "Select the product category, sub-category, and the specific LIC plan you are interested in from the dropdown menus. Then, click 'View Calculator' to be taken to a dedicated page for that plan's premium calculation."
     },
     {
-      "question": "Is this calculator official?",
-      "answer": "No, this is an independent tool to provide an estimate. It is not an official LIC calculator. For official and exact premium quotes, please contact LIC of India or one of its authorized agents."
-    },
-    {
-      "question": "Can I pay my LIC premium monthly?",
-      "answer": "Yes, most LIC plans offer multiple premium payment frequencies, including Yearly, Half-yearly, Quarterly, and Monthly (through NACH)."
+      "question": "Is this an official LIC calculator?",
+      "answer": "No, this is an independent website providing tools for estimation. It is not an official LIC calculator. For exact premium quotes, please contact an authorized LIC agent."
     }
   ],
   "conclusion": {
-    "title": "Secure Your Family's Future",
-    "body": "Life insurance is a crucial step in securing your family's financial future. This calculator helps you get a quick estimate of the premium, making it easier to plan your budget and choose the right policy."
+    "title": "Plan Your Financial Protection",
+    "body": "Life insurance is a crucial step in securing your family's financial future. Use our tools to get a quick estimate of the premium, making it easier to plan your budget and choose the right policy."
   }
 }
