@@ -141,97 +141,93 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
           <Form {...form}>
             <form onSubmit={form.handleSubmit(handleSubmit)} className="space-y-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-                  <div className="space-y-6">
-                     <FormField
-                        control={form.control}
-                        name="productCategory"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>{dictionary.category_label}</FormLabel>
-                            <Select onValueChange={field.onChange} defaultValue={field.value}>
-                              <FormControl>
-                                <SelectTrigger><SelectValue /></SelectTrigger>
-                              </FormControl>
-                              <SelectContent>
-                                {Object.entries(dictionary.categories).map(([key, value]) => (
-                                  <SelectItem key={key} value={key}>{value}</SelectItem>
-                                ))}
-                              </SelectContent>
-                            </Select>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-
-                    {subCategories && hasSubCategories && (
-                       <FormField
-                          control={form.control}
-                          name="subCategory"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormLabel>{dictionary.sub_category_label}</FormLabel>
-                              <Select onValueChange={field.onChange} value={field.value || ''} >
-                                <FormControl>
-                                  <SelectTrigger><SelectValue placeholder={dictionary.sub_category_placeholder} /></SelectTrigger>
-                                </FormControl>
-                                <SelectContent>
-                                  {Object.entries(subCategories).map(([key, value]) => (
-                                    <SelectItem key={key} value={key}>{value}</SelectItem>
-                                  ))}
-                                </SelectContent>
-                              </Select>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
+                  <FormField
+                    control={form.control}
+                    name="productCategory"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>{dictionary.category_label}</FormLabel>
+                        <Select onValueChange={field.onChange} defaultValue={field.value}>
+                          <FormControl>
+                            <SelectTrigger><SelectValue /></SelectTrigger>
+                          </FormControl>
+                          <SelectContent>
+                            {Object.entries(dictionary.categories).map(([key, value]) => (
+                              <SelectItem key={key} value={key}>{value}</SelectItem>
+                            ))}
+                          </SelectContent>
+                        </Select>
+                        <FormMessage />
+                      </FormItem>
                     )}
+                  />
 
-                    {plans && (
-                      <FormField
-                        control={form.control}
-                        name="plan"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>{dictionary.plan_label}</FormLabel>
-                            <Select onValueChange={field.onChange} value={field.value || ''}>
-                              <FormControl>
-                                <SelectTrigger><SelectValue placeholder={dictionary.plan_placeholder} /></SelectTrigger>
-                              </FormControl>
-                              <SelectContent>
-                                 {Object.entries(plans).map(([key, value]) => (
-                                    <SelectItem key={key} value={key}>{value}</SelectItem>
-                                  ))}
-                              </SelectContent>
-                            </Select>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                    )}
-                     <FormField control={form.control} name="sumAssured" render={({ field }) => (<FormItem><FormLabel>{dictionary.sum_assured_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
-                  </div>
-                  <div className="space-y-6">
-                     <FormField control={form.control} name="age" render={({ field }) => (<FormItem><FormLabel>{dictionary.age_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
-                     <FormField control={form.control} name="ppt" render={({ field }) => (<FormItem><FormLabel>{dictionary.ppt_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
-                     <FormField
-                        control={form.control}
-                        name="frequency"
-                        render={({ field }) => (
-                          <FormItem className="space-y-3">
-                            <FormLabel>{dictionary.frequency_label}</FormLabel>
+                {subCategories && hasSubCategories && (
+                   <FormField
+                      control={form.control}
+                      name="subCategory"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>{dictionary.sub_category_label}</FormLabel>
+                          <Select onValueChange={field.onChange} value={field.value || ''} >
                             <FormControl>
-                              <RadioGroup onValueChange={field.onChange} defaultValue={field.value} className="grid grid-cols-2 gap-4">
-                                <FormItem className="flex items-center space-x-3 space-y-0"><FormControl><RadioGroupItem value="yearly" /></FormControl><FormLabel className="font-normal">{dictionary.frequencies.yearly}</FormLabel></FormItem>
-                                <FormItem className="flex items-center space-x-3 space-y-0"><FormControl><RadioGroupItem value="half-yearly" /></FormControl><FormLabel className="font-normal">{dictionary.frequencies.half_yearly}</FormLabel></FormItem>
-                                <FormItem className="flex items-center space-x-3 space-y-0"><FormControl><RadioGroupItem value="quarterly" /></FormControl><FormLabel className="font-normal">{dictionary.frequencies.quarterly}</FormLabel></FormItem>
-                                <FormItem className="flex items-center space-x-3 space-y-0"><FormControl><RadioGroupItem value="monthly" /></FormControl><FormLabel className="font-normal">{dictionary.frequencies.monthly}</FormLabel></FormItem>
-                              </RadioGroup>
+                              <SelectTrigger><SelectValue placeholder={dictionary.sub_category_placeholder} /></SelectTrigger>
                             </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                  </div>
+                            <SelectContent>
+                              {Object.entries(subCategories).map(([key, value]) => (
+                                <SelectItem key={key} value={key}>{value}</SelectItem>
+                              ))}
+                            </SelectContent>
+                          </Select>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                )}
+
+                {plans && (
+                  <FormField
+                    control={form.control}
+                    name="plan"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>{dictionary.plan_label}</FormLabel>
+                        <Select onValueChange={field.onChange} value={field.value || ''}>
+                          <FormControl>
+                            <SelectTrigger><SelectValue placeholder={dictionary.plan_placeholder} /></SelectTrigger>
+                          </FormControl>
+                          <SelectContent>
+                             {Object.entries(plans).map(([key, value]) => (
+                                <SelectItem key={key} value={key}>{value}</SelectItem>
+                              ))}
+                          </SelectContent>
+                        </Select>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                )}
+                 <FormField control={form.control} name="age" render={({ field }) => (<FormItem><FormLabel>{dictionary.age_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
+                 <FormField control={form.control} name="ppt" render={({ field }) => (<FormItem><FormLabel>{dictionary.ppt_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
+                 <FormField
+                    control={form.control}
+                    name="frequency"
+                    render={({ field }) => (
+                      <FormItem className="space-y-3">
+                        <FormLabel>{dictionary.frequency_label}</FormLabel>
+                        <FormControl>
+                          <RadioGroup onValueChange={field.onChange} defaultValue={field.value} className="grid grid-cols-2 gap-4">
+                            <FormItem className="flex items-center space-x-3 space-y-0"><FormControl><RadioGroupItem value="yearly" /></FormControl><FormLabel className="font-normal">{dictionary.frequencies.yearly}</FormLabel></FormItem>
+                            <FormItem className="flex items-center space-x-3 space-y-0"><FormControl><RadioGroupItem value="half-yearly" /></FormControl><FormLabel className="font-normal">{dictionary.frequencies.half_yearly}</FormLabel></FormItem>
+                            <FormItem className="flex items-center space-x-3 space-y-0"><FormControl><RadioGroupItem value="quarterly" /></FormControl><FormLabel className="font-normal">{dictionary.frequencies.quarterly}</FormLabel></FormItem>
+                            <FormItem className="flex items-center space-x-3 space-y-0"><FormControl><RadioGroupItem value="monthly" /></FormControl><FormLabel className="font-normal">{dictionary.frequencies.monthly}</FormLabel></FormItem>
+                          </RadioGroup>
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                 <FormField control={form.control} name="sumAssured" render={({ field }) => (<FormItem><FormLabel>{dictionary.sum_assured_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
               </div>
 
               <Button type="submit" disabled={isLoading} className="w-full md:w-auto">
@@ -262,5 +258,3 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
     </>
   );
 }
-
-    
