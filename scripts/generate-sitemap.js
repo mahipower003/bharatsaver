@@ -11,6 +11,7 @@ const i18nConfig = {
 
 // Manually define calculators to avoid import issues
 const calculators = [
+  { slug: 'lic-premium-calculator', lastModified: '2024-09-25', priority: 0.9, changefreq: 'monthly' },
   { slug: 'ppf-calculator', lastModified: '2024-07-28', priority: 0.9, changefreq: 'monthly' },
   { slug: 'ssy-calculator', lastModified: '2024-07-27', priority: 0.9, changefreq: 'monthly' },
   { slug: 'nps-calculator', lastModified: '2024-07-26', priority: 0.9, changefreq: 'monthly' },
@@ -47,8 +48,8 @@ function generateSitemap(pages, locale) {
       const getUrl = (loc) => {
         const isDefaultLocale = loc === i18nConfig.defaultLocale;
         const slug = page.slug.startsWith('/') ? page.slug : `/${page.slug}`;
-        const path = slug === '/' ? '' : slug;
-        return isDefaultLocale ? `${siteUrl}${path}` : `${siteUrl}/${loc}${path}`;
+        const path = isDefaultLocale ? (slug === '/' ? '' : slug) : `/${loc}${slug === '/' ? '' : slug}`;
+        return `${siteUrl}${path}`;
       };
 
       const url = getUrl(locale);

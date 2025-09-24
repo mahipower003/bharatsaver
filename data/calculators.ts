@@ -10,11 +10,22 @@ import {
   BadgePercent,
   Layers,
   Building,
-  Sparkles,
+  Filter,
+  ShieldCheck,
 } from 'lucide-react';
 import type { Calculator } from '@/types';
 
 export const calculators: Calculator[] = [
+  {
+    slug: 'lic-premium-calculator',
+    title: 'LIC Premium Calculator',
+    description: 'Estimate premiums for LIC plans like Jeevan Umang, Utsav, and Labh.',
+    summary: 'Use our free LIC Premium Calculator to instantly estimate premiums for popular plans. Enter your age, sum assured, and term to get accurate results for your life insurance needs.',
+    icon: ShieldCheck,
+    link_text: 'Calculate Premium',
+    lastModified: '2024-09-25',
+    image: '/images/lic-premium-calculator.png'
+  },
   {
     slug: 'ppf-calculator',
     title: 'PPF Calculator',
@@ -116,13 +127,13 @@ export const calculators: Calculator[] = [
     image: '/images/UPS Pension Scheme Calculator.png'
   },
   {
-    slug: 'scheme-selector',
-    title: 'Scheme Selector',
-    description: 'Get an AI-powered scheme recommendation.',
-    summary: 'Use our AI-powered Scheme Selector Quiz to get a recommendation for the best investment scheme (PPF, SSY, NPS, APY, FD) for you.',
-    icon: Sparkles,
-    link_text: 'Get Advice',
-    lastModified: '2024-07-30',
+    slug: 'mutual-fund-screener',
+    title: 'Mutual Fund Screener',
+    description: 'Filter and compare the best mutual funds for your goals.',
+    summary: 'Use our free mutual fund screener to filter and compare direct funds by returns, risk, AUM, expense ratio and holdings. Includes overlap check, SIP planner & downloadable CSV.',
+    icon: Filter,
+    link_text: 'Find Funds',
+    lastModified: '2024-08-05',
     image: '/images/PPF-NPS-FD-SSY-Scheme-selector.png'
   },
 ];
