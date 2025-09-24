@@ -1,3 +1,4 @@
+
 {
   "meta_title": "Tax Regime Calculator 2025 — Compare Old vs New Tax Regime (India)",
   "meta_description": "Enter your salary and deductions to instantly compare tax under the old vs new regime. Updated for FY 2025-26 — includes HRA, 80C, 80D, and worked examples. Free downloadable summary & ITR filing options.",
@@ -57,7 +58,7 @@
   },
   "how_we_calculate": {
     "title": "How We Calculate Your Tax",
-    "body": "<p><strong>Old Regime:</strong> We first calculate your total deductions, including HRA exemption and all sections (80C, 80D, etc.). This is subtracted from your gross income to get your 'Taxable Income'. Tax is then calculated based on the old tax slabs, which vary for different age groups.</p><p><strong>New Regime:</strong> The calculation is simpler. We only apply the standard deduction of ₹50,000 to your salary. No other deductions are allowed. Tax is then calculated based on the new, lower tax slabs. For a detailed breakdown of slabs, you can refer to the <a href='https://incometaxindia.gov.in/' target='_blank' rel='noopener noreferrer'>official Income Tax Department website</a>.</p>"
+    "body": "<p><strong>Old Regime:</strong> We first calculate your total deductions, including HRA exemption and all sections (80C, 80D, etc.). This is subtracted from your gross income to get your 'Taxable Income'. Tax is then calculated based on the old tax slabs, which vary for different age groups.</p><p><strong>New Regime:</strong> The calculation is simpler. We only apply the standard deduction of ₹50,000 to your salary. No other deductions are allowed. Tax is then calculated based on the new, lower tax slabs. For a detailed breakdown of slabs, you can refer to the <a href='https://incometaxindia.gov.in/' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>official Income Tax Department website</a>.</p>"
   },
   "common_scenarios": {
     "title": "Common Scenarios",
@@ -98,6 +99,6 @@
   },
   "conclusion": {
     "title": "Make an Informed Choice",
-    "body": "Choosing the right tax regime is a critical financial decision that can save you thousands of rupees. This choice depends entirely on your individual income and deduction profile. Use this calculator to run your numbers and make the most financially prudent decision for the year. For more savings options, check our <a href='/{lang}/ppf-calculator'>PPF</a> or <a href='/{lang}/nps-calculator'>NPS</a> calculators."
+    "body": "Choosing the right tax regime is a critical financial decision that can save you thousands of rupees. This choice depends entirely on your individual income and deduction profile. Use this calculator to run your numbers and make the most financially prudent decision for the year. For more savings options, check our <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a> or <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a> calculators."
   }
 }

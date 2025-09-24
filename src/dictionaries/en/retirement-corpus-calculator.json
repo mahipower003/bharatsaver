@@ -1,3 +1,4 @@
+
 {
   "meta_title": "Retirement Corpus Calculator India 2025 | Free Online Retirement Planning Tool",
   "meta_description": "Free Retirement Corpus Calculator India (2025). Calculate how much money you need to retire, the monthly SIP required, and plan a stress-free retirement.",
@@ -60,7 +61,7 @@
   },
   "accumulation_strategy": {
     "h2": "The Accumulation Phase: Building Your Corpus",
-    "body": "<p>The key to building a large corpus is disciplined, long-term investing, primarily through Systematic Investment Plans (SIPs) in equity mutual funds. The 'pre-retirement returns' you enter should reflect the expected returns from your SIP portfolio.</p><h4>Portfolio Mix Suggestion:</h4><ul><li><strong>Early Stage (25-40 years):</strong> A more aggressive portfolio with 70-80% in equity (a mix of large-cap, mid-cap, and flexi-cap funds) and 20-30% in debt (like PPF or debt funds).</li><li><strong>Mid-Career (40-55 years):</strong> Gradually shift towards a more balanced approach, reducing equity to 50-60% and increasing debt allocation.</li><li><strong>Nearing Retirement (55+ years):</strong> Become more conservative, with equity reduced to 30-40% to protect your accumulated corpus from market volatility.</li></ul>",
+    "body": "<p>The key to building a large corpus is disciplined, long-term investing, primarily through Systematic Investment Plans (SIPs) in equity mutual funds. The 'pre-retirement returns' you enter should reflect the expected returns from your SIP portfolio. You can use our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>Mutual Fund Screener</a> to find suitable funds.</p><h4>Portfolio Mix Suggestion:</h4><ul><li><strong>Early Stage (25-40 years):</strong> A more aggressive portfolio with 70-80% in equity (a mix of large-cap, mid-cap, and flexi-cap funds) and 20-30% in debt (like PPF or debt funds).</li><li><strong>Mid-Career (40-55 years):</strong> Gradually shift towards a more balanced approach, reducing equity to 50-60% and increasing debt allocation.</li><li><strong>Nearing Retirement (55+ years):</strong> Become more conservative, with equity reduced to 30-40% to protect your accumulated corpus from market volatility.</li></ul>",
     "sip_plans": {
       "title": "Sample SIP Plans for Different Corpus Goals",
       "body": "The table below shows the approximate monthly SIP required to reach a specific corpus by age 60, starting at different ages."
@@ -72,7 +73,7 @@
   },
   "tax_rules": {
     "h2": "Tax Rules and Retirement Planning",
-    "body": "<p>Taxation plays a huge role. Instruments like PPF and EPF are tax-free at withdrawal (EEE status). However, withdrawals from mutual funds are subject to Long-Term Capital Gains (LTCG) tax. As of now, equity gains over ₹1 lakh in a financial year are taxed at 10%. You must account for this tax when planning your withdrawal strategy to ensure your net income meets your needs.</p>"
+    "body": "<p>Taxation plays a huge role. Instruments like <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a> and EPF are tax-free at withdrawal (EEE status). However, withdrawals from mutual funds are subject to Long-Term Capital Gains (LTCG) tax. As of now, equity gains over ₹1 lakh in a financial year are taxed at 10%. You must account for this tax when planning your withdrawal strategy to ensure your net income meets your needs.</p>"
   },
   "faq_title": "Retirement Planning FAQs",
   "faqs": [

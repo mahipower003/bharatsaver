@@ -1,3 +1,4 @@
+
 {
   "meta_title": "PPF Calculator 2025 — Calculate PPF Maturity Online (India)",
   "meta_description": "Free PPF calculator for 2025: Instantly estimate PPF maturity, interest, and tax savings (EEE). Includes year-wise charts, extension rules, and comparison with FD, NPS, and SSY.",
@@ -56,7 +57,7 @@
     "maturity_title": "3. Maturity Amount is Tax-Free",
     "maturity_body": "The entire maturity amount, including the principal and the accumulated interest, is tax-free upon withdrawal.",
     "why_matters": "This triple tax benefit significantly enhances your effective rate of return compared to other instruments where returns are taxable.",
-    "footer_note": "To know which tax regime is better for you, use our <a href='/en/tax-regime-calculator'>Old vs New Tax Regime calculator</a>."
+    "footer_note": "To know which tax regime is better for you, use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>Old vs New Tax Regime calculator</a>."
   },
   "rules": {
     "title": "Key PPF Rules You Should Know",
@@ -116,7 +117,7 @@
         ["Eligibility", "All Indians", "All Indians", "18-70 years", "Girl child < 10"]
       ]
     },
-    "footer_note": "For a detailed comparison, check out our <a href='/{lang}/fd-vs-ppf-calculator'>FD vs PPF calculator</a>."
+    "footer_note": "For a detailed comparison, check out our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a>."
   },
   "faq_title": "Frequently Asked Questions about PPF",
   "faqs": [
@@ -139,6 +140,6 @@
   ],
   "conclusion": {
     "title": "The Bottom Line: Is PPF Right For You?",
-    "body": "PPF is an outstanding investment for anyone looking for a safe, tax-efficient, and disciplined way to build a long-term corpus. Its guaranteed returns and EEE status make it a cornerstone of a well-diversified portfolio for risk-averse investors. Use this calculator to see how small, consistent savings can grow into a substantial amount over time."
+    "body": "PPF is an outstanding investment for anyone looking for a safe, tax-efficient, and disciplined way to build a long-term corpus. Its guaranteed returns and EEE status make it a cornerstone of a well-diversified portfolio for risk-averse investors. Also see how it compares to the <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>Sukanya Samriddhi Yojana</a> for a girl child."
   }
 }

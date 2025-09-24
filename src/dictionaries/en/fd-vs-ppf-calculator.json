@@ -36,7 +36,7 @@
   "result_snapshot": "After {tenure} years, the {winner} yields a higher post-tax return by {difference}.",
   "quick_answer": {
     "title": "Quick Answer: Which is better, FD or PPF?",
-    "body": "For long-term goals (15+ years) and for investors in higher tax brackets (20-30%), <strong>PPF almost always provides superior post-tax returns</strong> due to its EEE (Exempt-Exempt-Exempt) status. FDs are better for short-term goals where liquidity is needed and the lock-in periods of PPF are not suitable. Use our <a href='/{lang}/tax-regime-calculator'>tax calculator</a> to determine your slab."
+    "body": "For long-term goals (15+ years) and for investors in higher tax brackets (20-30%), <strong>PPF almost always provides superior post-tax returns</strong> due to its EEE (Exempt-Exempt-Exempt) status. FDs are better for short-term goals where liquidity is needed and the lock-in periods of PPF are not suitable. Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax calculator</a> to determine your slab."
   },
   "how_it_works": {
     "title": "How the Comparison Works: Worked Examples",
@@ -109,6 +109,6 @@
   ],
   "conclusion": {
     "title": "The Right Tool for the Right Goal",
-    "body": "Both FD and PPF are excellent tools in their own right. The choice isn't about which is universally 'better,' but which is better for *your* specific financial goal and timeline. Use this calculator to see the numbers for yourself and make an informed decision that aligns with your financial plan. For a complete portfolio view, also consider comparing with <a href='/{lang}/nps-calculator'>NPS</a> and <a href='/{lang}/ssy-calculator'>SSY</a>."
+    "body": "Both FD and PPF are excellent tools in their own right. The choice isn't about which is universally 'better,' but which is better for *your* specific financial goal and timeline. Use this calculator to see the numbers for yourself and make an informed decision that aligns with your financial plan. For a complete portfolio view, also consider comparing with our <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS Calculator</a> and <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>SSY Calculator</a>."
   }
 }

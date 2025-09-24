@@ -1,8 +1,9 @@
+
 {
     "meta_title": "NPS Calculator 2025 — National Pension System Corpus & Pension",
     "meta_description": "Use our NPS calculator to plan your retirement. Enter contribution, expected returns and retirement age to get corpus & monthly pension estimates.",
     "h1": "NPS Calculator 2025 — National Pension System Corpus & Pension",
-    "description": "Use our free <a href=\"https://www.pfrda.org.in/\" target=\"_blank\" rel=\"noopener noreferrer\">National Pension System (NPS)</a> Calculator to estimate your retirement corpus, monthly pension, and tax benefits in India. Plan for a secure retirement.",
+    "description": "Use our free <a href=\"https://www.pfrda.org.in/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline\">National Pension System (NPS)</a> Calculator to estimate your retirement corpus, monthly pension, and tax benefits in India. Plan for a secure retirement.",
     "last_updated": "Rates updated:",
     "title": "National Pension System (NPS) Calculator",
     "form_description": "Enter your investment details to project your NPS corpus and pension.",
@@ -107,7 +108,7 @@
                 ["Extra Deduction", "Yes (80CCD1B)", "No", "No"]
             ]
         },
-        "footer_note": "To choose between NPS and PPF, consider your risk appetite and return expectations. Use our <a href='/{lang}/ppf-calculator'>PPF Calculator</a> for comparison."
+        "footer_note": "To choose between NPS and PPF, consider your risk appetite and return expectations. Use our <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF Calculator</a> for comparison."
     },
     "faq_title": "Frequently Asked Questions",
     "faqs": [
@@ -117,6 +118,6 @@
     ],
     "conclusion": {
         "title": "Plan Your Retirement with Confidence",
-        "body": "NPS is a powerful, long-term tool for disciplined retirement savings. Its combination of market-linked growth, tax benefits, and a structured pension makes it an essential part of a modern financial plan. Use this calculator to visualize your retirement corpus and start planning today."
+        "body": "NPS is a powerful, long-term tool for disciplined retirement savings. Its combination of market-linked growth, tax benefits, and a structured pension makes it an essential part of a modern financial plan. For a complete picture, use this tool alongside our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>Retirement Corpus Calculator</a>."
     }
 }

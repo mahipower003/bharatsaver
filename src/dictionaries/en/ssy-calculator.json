@@ -1,3 +1,4 @@
+
 {
   "h1": "SSY Calculator 2025 — Sukanya Samriddhi Yojana Returns & Maturity",
   "description": "Use our free SSY Calculator 2025 to estimate maturity, total interest and year-wise projection (8.2% current rate). Supports annual & monthly deposits. Export results as CSV.",
@@ -37,7 +38,7 @@
       "title": "Quick Facts:",
       "points": [
         "<strong>High Interest Rate:</strong> Currently offers one of the highest interest rates among small savings schemes.",
-        "<strong>Tax Benefits:</strong> Enjoys Exempt-Exempt-Exempt (EEE) status, similar to PPF.",
+        "<strong>Tax Benefits:</strong> Enjoys Exempt-Exempt-Exempt (EEE) status, similar to <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a>.",
         "<strong>Eligibility:</strong> For a girl child below the age of 10."
       ]
     }
@@ -85,7 +86,7 @@
   "tax_benefits": {
     "title": "Tax Benefits of SSY",
     "intro": "SSY is a powerful tax-saving tool with an EEE (Exempt-Exempt-Exempt) status:",
-    "body": "This means the <strong>contribution</strong> (up to ₹1.5 lakh under 80C), the <strong>interest earned</strong>, and the <strong>maturity amount</strong> are all completely tax-free."
+    "body": "This means the <strong>contribution</strong> (up to ₹1.5 lakh under 80C), the <strong>interest earned</strong>, and the <strong>maturity amount</strong> are all completely tax-free. Check if you can save more with our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a>."
   },
   "rules": {
     "title": "Key Rules of SSY",
