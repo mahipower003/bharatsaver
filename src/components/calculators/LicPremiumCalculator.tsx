@@ -85,6 +85,7 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
 
   const productCategory = form.watch('productCategory');
   const subCategory = form.watch('subCategory');
+  const categoriesWithSubCategories = ['insurance_plans'];
 
   // This effect will reset the subCategory and plan when the productCategory changes.
   useEffect(() => {
@@ -97,10 +98,11 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
      form.resetField('plan', { defaultValue: '' });
   }, [subCategory, form]);
 
-  const subCategories = productCategory && dictionary.sub_categories[productCategory] ? dictionary.sub_categories[productCategory] : null;
-  const plans = (productCategory === 'pension_plans') 
-    ? dictionary.plans[productCategory]
-    : (subCategory && dictionary.plans[subCategory] ? dictionary.plans[subCategory] : null);
+  const hasSubCategories = categoriesWithSubCategories.includes(productCategory);
+  const subCategories = hasSubCategories && dictionary.sub_categories[productCategory] ? dictionary.sub_categories[productCategory] : null;
+  const plans = hasSubCategories 
+    ? (subCategory && dictionary.plans[subCategory] ? dictionary.plans[subCategory] : null)
+    : (productCategory && dictionary.plans[productCategory] ? dictionary.plans[productCategory] : null);
 
 
   async function handleSubmit(values: LicFormValues) {
@@ -161,7 +163,7 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
                         )}
                       />
 
-                    {subCategories && (
+                    {subCategories && hasSubCategories && (
                        <FormField
                           control={form.control}
                           name="subCategory"
@@ -260,3 +262,5 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
     </>
   );
 }
+
+    

@@ -63,6 +63,17 @@
       "jeevan_shanti": "LIC's Jeevan Shanti",
       "new_jeevan_shanti": "LIC's New Jeevan Shanti",
       "saral_pension": "LIC's Saral Pension"
+    },
+    "ulip_plans": {
+      "nivesh_plus": "LIC's Nivesh Plus",
+      "siip": "LIC's SIIP",
+      "new_pension_plus": "LIC's New Pension Plus",
+      "new_endowment_plus": "LIC's New Endowment Plus"
+    },
+    "micro_insurance_plans": {
+      "bhagya_lakshmi": "LIC's Bhagya Lakshmi",
+      "new_jeevan_mangal": "LIC's New Jeevan Mangal Plan",
+      "micro_bima": "LIC's Micro Bima"
     }
   },
   "age_label": "Your Age",
@@ -100,3 +111,5 @@
     "body": "Life insurance is a crucial step in securing your family's financial future. This calculator helps you get a quick estimate of the premium, making it easier to plan your budget and choose the right policy."
   }
 }
+
+    
