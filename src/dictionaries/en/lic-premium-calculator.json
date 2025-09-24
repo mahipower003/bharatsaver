@@ -4,6 +4,14 @@
   "description": "Use our free LIC Premium Calculator to estimate premiums for Jeevan Umang, Jeevan Utsav, Jeevan Labh and other LIC plans.",
   "title": "LIC Premium Calculator",
   "form_description": "Enter your details to get an estimated premium for popular LIC plans.",
+  "category_label": "Product Category",
+  "categories": {
+    "insurance_plans": "Insurance Plans",
+    "pension_plans": "Pension Plans",
+    "ulip_plans": "Unit Linked Plans",
+    "micro_insurance_plans": "Micro Insurance Plans",
+    "withdrawn_plans": "Withdrawn Plans"
+  },
   "plan_label": "Select LIC Plan",
   "plans": {
     "jeevan_umang": "Jeevan Umang",

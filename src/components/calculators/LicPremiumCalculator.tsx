@@ -15,6 +15,7 @@ import { RadioGroup, RadioGroupItem } from '../ui/radio-group';
 import type { Dictionary } from '@/types';
 
 const formSchema = z.object({
+  productCategory: z.string(),
   age: z.coerce.number().min(8, 'Minimum age is 8').max(65, 'Maximum age is 65'),
   sumAssured: z.coerce.number().min(50000, 'Minimum sum assured is ₹50,000'),
   plan: z.string(),
@@ -70,6 +71,7 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
   const form = useForm<LicFormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
+      productCategory: 'insurance_plans',
       age: 30,
       sumAssured: 1000000,
       plan: 'jeevan_umang',
@@ -117,6 +119,28 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
                   <div className="space-y-6">
                      <FormField
                         control={form.control}
+                        name="productCategory"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel>{dictionary.category_label}</FormLabel>
+                            <Select onValueChange={field.onChange} defaultValue={field.value}>
+                              <FormControl>
+                                <SelectTrigger><SelectValue /></SelectTrigger>
+                              </FormControl>
+                              <SelectContent>
+                                <SelectItem value="insurance_plans">{dictionary.categories.insurance_plans}</SelectItem>
+                                <SelectItem value="pension_plans">{dictionary.categories.pension_plans}</SelectItem>
+                                <SelectItem value="ulip_plans">{dictionary.categories.ulip_plans}</SelectItem>
+                                <SelectItem value="micro_insurance_plans">{dictionary.categories.micro_insurance_plans}</SelectItem>
+                                <SelectItem value="withdrawn_plans">{dictionary.categories.withdrawn_plans}</SelectItem>
+                              </SelectContent>
+                            </Select>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                     <FormField
+                        control={form.control}
                         name="plan"
                         render={({ field }) => (
                           <FormItem>
@@ -136,9 +160,9 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
                         )}
                       />
                      <FormField control={form.control} name="sumAssured" render={({ field }) => (<FormItem><FormLabel>{dictionary.sum_assured_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
-                     <FormField control={form.control} name="age" render={({ field }) => (<FormItem><FormLabel>{dictionary.age_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
                   </div>
                   <div className="space-y-6">
+                     <FormField control={form.control} name="age" render={({ field }) => (<FormItem><FormLabel>{dictionary.age_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
                      <FormField control={form.control} name="ppt" render={({ field }) => (<FormItem><FormLabel>{dictionary.ppt_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
                      <FormField
                         control={form.control}
