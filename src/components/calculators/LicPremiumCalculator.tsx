@@ -15,11 +15,11 @@ import { RadioGroup, RadioGroupItem } from '../ui/radio-group';
 import type { Dictionary } from '@/types';
 
 const formSchema = z.object({
-  productCategory: z.string(),
-  subCategory: z.string(),
+  productCategory: z.string().min(1, 'Please select a category'),
+  subCategory: z.string().optional(),
   age: z.coerce.number().min(8, 'Minimum age is 8').max(65, 'Maximum age is 65'),
   sumAssured: z.coerce.number().min(50000, 'Minimum sum assured is ₹50,000'),
-  plan: z.string(),
+  plan: z.string().min(1, 'Please select a plan'),
   ppt: z.coerce.number().min(5, 'Minimum PPT is 5 years'),
   frequency: z.enum(['yearly', 'half-yearly', 'quarterly', 'monthly']),
 });
@@ -41,9 +41,11 @@ const calculateMockLicPremium = (values: LicFormValues): number => {
   let baseRate = 0.025; // A base rate per thousand sum assured
   
   // Adjust base rate based on plan
-  if (plan === 'jeevan_umang') baseRate *= 1.5;
-  if (plan === 'jeevan_utsav') baseRate *= 1.2;
-  if (plan === 'jeevan_labh') baseRate *= 1.0;
+  if (plan === 'jeevan_umang' || plan === 'jeevan_utsav') baseRate *= 1.5;
+  if (plan.includes('endowment')) baseRate *= 1.0;
+  if (plan.includes('money_back')) baseRate *= 1.2;
+  if (plan.includes('pension')) baseRate *= 1.8;
+
 
   // Adjust for age
   baseRate *= 1 + (age - 8) / 100;
@@ -86,17 +88,20 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
 
   // This effect will reset the subCategory and plan when the productCategory changes.
   useEffect(() => {
-    form.resetField('subCategory');
-    form.resetField('plan');
+    form.resetField('subCategory', { defaultValue: '' });
+    form.resetField('plan', { defaultValue: '' });
   }, [productCategory, form]);
 
   // This effect will reset the plan when the subCategory changes.
   useEffect(() => {
-    form.resetField('plan');
+     form.resetField('plan', { defaultValue: '' });
   }, [subCategory, form]);
 
-  const subCategories = productCategory ? dictionary.sub_categories[productCategory] : null;
-  const plans = subCategory && dictionary.plans[subCategory] ? dictionary.plans[subCategory] : null;
+  const subCategories = productCategory && dictionary.sub_categories[productCategory] ? dictionary.sub_categories[productCategory] : null;
+  const plans = (productCategory === 'pension_plans') 
+    ? dictionary.plans[productCategory]
+    : (subCategory && dictionary.plans[subCategory] ? dictionary.plans[subCategory] : null);
+
 
   async function handleSubmit(values: LicFormValues) {
     setIsLoading(true);

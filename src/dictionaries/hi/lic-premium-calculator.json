@@ -15,8 +15,8 @@
   "sub_category_placeholder": "एक उप श्रेणी चुनें",
   "sub_categories": {
     "insurance_plans": {
-      "whole_life_plans": "संपूर्ण जीवन योजनाएं",
       "endowment_plans": "बंदोबस्ती योजनाएं",
+      "whole_life_plans": "संपूर्ण जीवन योजनाएं",
       "money_back_plans": "मनी बैक योजनाएं",
       "term_assurance_plans": "टर्म एश्योरेंस योजनाएं",
       "rider": "राइडर"
@@ -25,12 +25,44 @@
   "plan_label": "एलआईसी योजना चुनें",
   "plan_placeholder": "एक योजना चुनें",
   "plans": {
-    "whole_life_plans": {
-      "jeevan_umang": "जीवन उमंग",
-      "jeevan_utsav": "जीवन उत्सव"
-    },
     "endowment_plans": {
-      "jeevan_labh": "जीवन लाभ"
+      "bima_jyoti": "एलआईसी की बीमा ज्योति",
+      "dhan_rekha": "एलआईसी की धन रेखा",
+      "bima_ratna": "एलआईसी की बीमा रत्न",
+      "single_premium_endowment": "एलआईसी की सिंगल प्रीमियम एंडोमेंट प्लान",
+      "jeevan_labh": "एलआईसी की जीवन लाभ",
+      "aadhaar_stambh": "एलआईसी की आधार स्तंभ",
+      "aadhaar_shila": "एलआईसी की आधार शिला"
+    },
+    "whole_life_plans": {
+      "jeevan_utsav": "एलआईसी की जीवन उत्सव",
+      "jeevan_umang": "एलआईसी की जीवन उमंग"
+    },
+    "money_back_plans": {
+      "jeevan_shiromani": "एलआईसी की जीवन शिरोमणि",
+      "bima_shree": "एलआईसी की बीमा श्री",
+      "jeevan_tarun": "एलआईसी की जीवन तरुण",
+      "childrens_money_back": "एलआईसी की चिल्ड्रन्स मनी बैक प्लान",
+      "new_money_back_20": "एलआईसी की नई मनी बैक प्लान - 20 वर्ष",
+      "new_money_back_25": "एलआईसी की नई मनी बैक प्लान - 25 वर्ष"
+    },
+    "term_assurance_plans": {
+      "saral_jeevan_bima": "एलआईसी की सरल जीवन बीमा",
+      "jeevan_kiran": "एलआईसी की जीवन किरण",
+      "new_tech_term": "एलआईसी की नई टेक-टर्म",
+      "new_jeevan_amar": "एलआईसी की नई जीवन अमर"
+    },
+    "rider": {
+      "accidental_death_disability": "एलआईसी की आकस्मिक मृत्यु और विकलांगता लाभ राइडर",
+      "accident_benefit": "एलआईसी की दुर्घटना लाभ राइडर",
+      "new_critical_illness": "एलआईसी की नई गंभीर बीमारी लाभ राइडर",
+      "new_term_assurance": "एलआईसी की नई टर्म एश्योरेंस राइडर",
+      "premium_waiver": "एलआईसी की प्रीमियम छूट लाभ राइडर"
+    },
+    "pension_plans": {
+      "jeevan_shanti": "एलआईसी की जीवन शांति",
+      "new_jeevan_shanti": "एलआईसी की नई जीवन शांति",
+      "saral_pension": "एलआईसी की सरल पेंशन"
     }
   },
   "age_label": "आपकी आयु",

@@ -15,8 +15,8 @@
   "sub_category_placeholder": "ஒரு துணை வகையைத் தேர்ந்தெடுக்கவும்",
   "sub_categories": {
     "insurance_plans": {
-      "whole_life_plans": "முழு ஆயுள் திட்டங்கள்",
       "endowment_plans": "எண்டோவ்மென்ட் திட்டங்கள்",
+      "whole_life_plans": "முழு ஆயுள் திட்டங்கள்",
       "money_back_plans": "பணம் திரும்பப் பெறும் திட்டங்கள்",
       "term_assurance_plans": "டேர்ம் அஷ்யூரன்ஸ் திட்டங்கள்",
       "rider": "ரைடர்"
@@ -25,12 +25,44 @@
   "plan_label": "எல்ஐசி திட்டத்தைத் தேர்ந்தெடுக்கவும்",
   "plan_placeholder": "ஒரு திட்டத்தைத் தேர்ந்தெடுக்கவும்",
   "plans": {
-    "whole_life_plans": {
-      "jeevan_umang": "ஜீவன் உமாங்",
-      "jeevan_utsav": "ஜீவன் உத்சவ்"
-    },
     "endowment_plans": {
-      "jeevan_labh": "ஜீவன் லாப்"
+      "bima_jyoti": "எல்ஐசியின் பீமா ஜோதி",
+      "dhan_rekha": "எல்ஐசியின் தன் ரேகா",
+      "bima_ratna": "எல்ஐசியின் பீமா ரத்னா",
+      "single_premium_endowment": "எல்ஐசியின் ஒற்றை பிரீமியம் எண்டோவ்மென்ட் திட்டம்",
+      "jeevan_labh": "எல்ஐசியின் ஜீவன் லாப்",
+      "aadhaar_stambh": "எல்ஐசியின் ஆதார் ஸ்தம்ப்",
+      "aadhaar_shila": "எல்ஐசியின் ஆதார் ஷிலா"
+    },
+    "whole_life_plans": {
+      "jeevan_utsav": "எல்ஐசியின் ஜீவன் உத்சவ்",
+      "jeevan_umang": "எல்ஐசியின் ஜீவன் உமாங்"
+    },
+    "money_back_plans": {
+      "jeevan_shiromani": "எல்ஐசியின் ஜீவன் ஷிரோமணி",
+      "bima_shree": "எல்ஐசியின் பீமா ஸ்ரீ",
+      "jeevan_tarun": "எல்ஐசியின் ஜீவன் தருண்",
+      "childrens_money_back": "எல்ஐசியின் குழந்தைகள் பணம் திரும்பப் பெறும் திட்டம்",
+      "new_money_back_20": "எல்ஐசியின் புதிய பணம் திரும்பப் பெறும் திட்டம் - 20 ஆண்டுகள்",
+      "new_money_back_25": "எல்ஐசியின் புதிய பணம் திரும்பப் பெறும் திட்டம் - 25 ஆண்டுகள்"
+    },
+    "term_assurance_plans": {
+      "saral_jeevan_bima": "எல்ஐசியின் சரல் ஜீவன் பீமா",
+      "jeevan_kiran": "எல்ஐசியின் ஜீவன் கிரண்",
+      "new_tech_term": "எல்ஐசியின் நியூ டெக்-டேர்ம்",
+      "new_jeevan_amar": "எல்ஐசியின் நியூ ஜீவன் அமர்"
+    },
+    "rider": {
+      "accidental_death_disability": "எல்ஐசியின் விபத்து மரணம் மற்றும் இயலாமை பலன் ரைடர்",
+      "accident_benefit": "எல்ஐசியின் விபத்து பலன் ரைடர்",
+      "new_critical_illness": "எல்ஐசியின் புதிய தீவிர நோய் பலன் ரைடர்",
+      "new_term_assurance": "எல்ஐசியின் புதிய டேர்ம் அஷ்யூரன்ஸ் ரைடர்",
+      "premium_waiver": "எல்ஐசியின் பிரீமியம் தள்ளுபடி பலன் ரைடர்"
+    },
+    "pension_plans": {
+      "jeevan_shanti": "எல்ஐசியின் ஜீவன் சாந்தி",
+      "new_jeevan_shanti": "எல்ஐசியின் புதிய ஜீவன் சாந்தி",
+      "saral_pension": "எல்ஐசியின் சரல் பென்ஷன்"
     }
   },
   "age_label": "உங்கள் வயது",
