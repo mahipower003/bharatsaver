@@ -17,11 +17,11 @@ import type { Dictionary } from '@/types';
 const formSchema = z.object({
   productCategory: z.string().min(1, 'Please select a category'),
   subCategory: z.string().optional(),
-  age: z.coerce.number().min(8, 'Minimum age is 8').max(65, 'Maximum age is 65'),
-  sumAssured: z.coerce.number().min(50000, 'Minimum sum assured is ₹50,000'),
   plan: z.string().min(1, 'Please select a plan'),
+  age: z.coerce.number().min(8, 'Minimum age is 8').max(65, 'Maximum age is 65'),
   ppt: z.coerce.number().min(5, 'Minimum PPT is 5 years'),
   frequency: z.enum(['yearly', 'half-yearly', 'quarterly', 'monthly']),
+  sumAssured: z.coerce.number().min(50000, 'Minimum sum assured is ₹50,000'),
 });
 
 type LicFormValues = z.infer<typeof formSchema>;
@@ -75,11 +75,11 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
     defaultValues: {
       productCategory: 'insurance_plans',
       subCategory: 'whole_life_plans',
-      age: 30,
-      sumAssured: 1000000,
       plan: 'jeevan_umang',
+      age: 30,
       ppt: 20,
       frequency: 'yearly',
+      sumAssured: 1000000,
     },
   });
 
@@ -216,7 +216,7 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
                       <FormItem className="space-y-3">
                         <FormLabel>{dictionary.frequency_label}</FormLabel>
                         <FormControl>
-                          <RadioGroup onValueChange={field.onChange} defaultValue={field.value} className="grid grid-cols-2 gap-4">
+                          <RadioGroup onValueChange={field.onChange} defaultValue={field.value} className="grid grid-cols-1 gap-y-4">
                             <FormItem className="flex items-center space-x-3 space-y-0"><FormControl><RadioGroupItem value="yearly" /></FormControl><FormLabel className="font-normal">{dictionary.frequencies.yearly}</FormLabel></FormItem>
                             <FormItem className="flex items-center space-x-3 space-y-0"><FormControl><RadioGroupItem value="half-yearly" /></FormControl><FormLabel className="font-normal">{dictionary.frequencies.half_yearly}</FormLabel></FormItem>
                             <FormItem className="flex items-center space-x-3 space-y-0"><FormControl><RadioGroupItem value="quarterly" /></FormControl><FormLabel className="font-normal">{dictionary.frequencies.quarterly}</FormLabel></FormItem>
