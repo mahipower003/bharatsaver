@@ -164,7 +164,7 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
                 <CardContent>
                   <div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.what_to_do.body }} />
                   <div className="my-6">
-                    <Image src="/images/decision-flowchart-placeholder.png" alt="Decision flowchart for mutual fund overlap" width={800} height={500} className="rounded-lg border shadow-md mx-auto" />
+                    <Image src="/images/Mutual Fund Overlap decision .png" alt="Decision flowchart for mutual fund overlap" width={800} height={500} className="rounded-lg border shadow-md mx-auto" />
                   </div>
                 </CardContent>
             </Card>
