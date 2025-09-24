@@ -9,8 +9,7 @@
     "insurance_plans": "Insurance Plans",
     "pension_plans": "Pension Plans",
     "ulip_plans": "Unit Linked Plans",
-    "micro_insurance_plans": "Micro Insurance Plans",
-    "withdrawn_plans": "Withdrawn Plans"
+    "micro_insurance_plans": "Micro Insurance Plans"
   },
   "sub_category_label": "Sub Category",
   "sub_category_placeholder": "Select a sub category",
