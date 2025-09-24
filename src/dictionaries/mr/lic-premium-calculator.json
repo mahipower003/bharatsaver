@@ -1,7 +1,7 @@
 
 {
   "h1": "एलआयसी प्रीमियम कॅल्क्युलेटर",
-  "description": "जीवन उमंग, जीवन उत्सव, जीवन लाभ आणि इतर एलआयसी योजनांसाठी प्रीमियमचा अंदाज घेण्यासाठी आमचे मोफत एलआयसी प्रीमियम कॅल्क्युलेटर वापरा.",
+  "description": "जीवन उमंग, जीवन उत्सव, जीवन लाभ आणि इतर एलआयसी योजनांसाठी प्रीमियमचा अंदाज घेण्यासाठी आमचे मोफत एलआयసి प्रीमियम कॅल्क्युलेटर वापरा.",
   "title": "एलआयसी प्रीमियम कॅल्क्युलेटर",
   "form_description": "लोकप्रिय एलआयसी योजनांसाठी अंदाजित प्रीमियम मिळवण्यासाठी तुमचे तपशील प्रविष्ट करा.",
   "category_label": "उत्पादन श्रेणी",
@@ -12,11 +12,27 @@
     "micro_insurance_plans": "मायक्रो विमा योजना",
     "withdrawn_plans": "मागे घेतलेल्या योजना"
   },
+  "sub_category_label": "उप श्रेणी",
+  "sub_category_placeholder": "एक उप श्रेणी निवडा",
+  "sub_categories": {
+    "insurance_plans": {
+      "whole_life_plans": "संपूर्ण जीवन योजना",
+      "endowment_plans": "एंडॉमेंट योजना",
+      "money_back_plans": "मनी बॅक योजना",
+      "term_assurance_plans": "टर्म अॅश्युरन्स योजना",
+      "rider": "रायडर"
+    }
+  },
   "plan_label": "एलआयसी योजना निवडा",
+  "plan_placeholder": "एक योजना निवडा",
   "plans": {
-    "jeevan_umang": "जीवन उमंग",
-    "jeevan_utsav": "जीवन उत्सव",
-    "jeevan_labh": "जीवन लाभ"
+    "whole_life_plans": {
+      "jeevan_umang": "जीवन उमंग",
+      "jeevan_utsav": "जीवन उत्सव"
+    },
+    "endowment_plans": {
+      "jeevan_labh": "जीवन लाभ"
+    }
   },
   "age_label": "तुमचे वय",
   "sum_assured_label": "विमा रक्कम (₹)",

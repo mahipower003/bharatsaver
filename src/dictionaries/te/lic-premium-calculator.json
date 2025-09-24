@@ -12,11 +12,27 @@
     "micro_insurance_plans": "సూక్ష్మ భీమా పథకాలు",
     "withdrawn_plans": "ఉపసంహరించబడిన పథకాలు"
   },
+  "sub_category_label": "ఉప వర్గం",
+  "sub_category_placeholder": "ఒక ఉప వర్గాన్ని ఎంచుకోండి",
+  "sub_categories": {
+    "insurance_plans": {
+      "whole_life_plans": "పూర్తి జీవిత పథకాలు",
+      "endowment_plans": "ఎండోమెంట్ పథకాలు",
+      "money_back_plans": "మనీ బ్యాక్ పథకాలు",
+      "term_assurance_plans": "టర్మ్ అస్యూరెన్స్ పథకాలు",
+      "rider": "రైడర్"
+    }
+  },
   "plan_label": "ఎల్‌ఐసి పథకాన్ని ఎంచుకోండి",
+  "plan_placeholder": "ఒక పథకాన్ని ఎంచుకోండి",
   "plans": {
-    "jeevan_umang": "జీవన్ ఉమంగ్",
-    "jeevan_utsav": "జీవన్ ఉత్సవ్",
-    "jeevan_labh": "జీవన్ లాభ్"
+    "whole_life_plans": {
+      "jeevan_umang": "జీవన్ ఉమంగ్",
+      "jeevan_utsav": "జీవన్ ఉత్సవ్"
+    },
+    "endowment_plans": {
+      "jeevan_labh": "జీవన్ లాభ్"
+    }
   },
   "age_label": "మీ వయస్సు",
   "sum_assured_label": "హామీ మొత్తం (₹)",

@@ -16,6 +16,7 @@ import type { Dictionary } from '@/types';
 
 const formSchema = z.object({
   productCategory: z.string(),
+  subCategory: z.string(),
   age: z.coerce.number().min(8, 'Minimum age is 8').max(65, 'Maximum age is 65'),
   sumAssured: z.coerce.number().min(50000, 'Minimum sum assured is ₹50,000'),
   plan: z.string(),
@@ -63,7 +64,6 @@ const calculateMockLicPremium = (values: LicFormValues): number => {
   return Math.round(finalPremium);
 }
 
-
 export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
   const [result, setResult] = useState<CalculationResult | null>(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -72,6 +72,7 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
     resolver: zodResolver(formSchema),
     defaultValues: {
       productCategory: 'insurance_plans',
+      subCategory: 'whole_life_plans',
       age: 30,
       sumAssured: 1000000,
       plan: 'jeevan_umang',
@@ -79,6 +80,23 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
       frequency: 'yearly',
     },
   });
+
+  const productCategory = form.watch('productCategory');
+  const subCategory = form.watch('subCategory');
+
+  // This effect will reset the subCategory and plan when the productCategory changes.
+  useEffect(() => {
+    form.resetField('subCategory');
+    form.resetField('plan');
+  }, [productCategory, form]);
+
+  // This effect will reset the plan when the subCategory changes.
+  useEffect(() => {
+    form.resetField('plan');
+  }, [subCategory, form]);
+
+  const subCategories = productCategory ? dictionary.sub_categories[productCategory] : null;
+  const plans = subCategory && dictionary.plans[subCategory] ? dictionary.plans[subCategory] : null;
 
   async function handleSubmit(values: LicFormValues) {
     setIsLoading(true);
@@ -128,37 +146,61 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
                                 <SelectTrigger><SelectValue /></SelectTrigger>
                               </FormControl>
                               <SelectContent>
-                                <SelectItem value="insurance_plans">{dictionary.categories.insurance_plans}</SelectItem>
-                                <SelectItem value="pension_plans">{dictionary.categories.pension_plans}</SelectItem>
-                                <SelectItem value="ulip_plans">{dictionary.categories.ulip_plans}</SelectItem>
-                                <SelectItem value="micro_insurance_plans">{dictionary.categories.micro_insurance_plans}</SelectItem>
-                                <SelectItem value="withdrawn_plans">{dictionary.categories.withdrawn_plans}</SelectItem>
+                                {Object.entries(dictionary.categories).map(([key, value]) => (
+                                  <SelectItem key={key} value={key}>{value}</SelectItem>
+                                ))}
                               </SelectContent>
                             </Select>
                             <FormMessage />
                           </FormItem>
                         )}
                       />
-                     <FormField
+
+                    {subCategories && (
+                       <FormField
+                          control={form.control}
+                          name="subCategory"
+                          render={({ field }) => (
+                            <FormItem>
+                              <FormLabel>{dictionary.sub_category_label}</FormLabel>
+                              <Select onValueChange={field.onChange} value={field.value || ''} >
+                                <FormControl>
+                                  <SelectTrigger><SelectValue placeholder={dictionary.sub_category_placeholder} /></SelectTrigger>
+                                </FormControl>
+                                <SelectContent>
+                                  {Object.entries(subCategories).map(([key, value]) => (
+                                    <SelectItem key={key} value={key}>{value}</SelectItem>
+                                  ))}
+                                </SelectContent>
+                              </Select>
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
+                    )}
+
+                    {plans && (
+                      <FormField
                         control={form.control}
                         name="plan"
                         render={({ field }) => (
                           <FormItem>
                             <FormLabel>{dictionary.plan_label}</FormLabel>
-                            <Select onValueChange={field.onChange} defaultValue={field.value}>
+                            <Select onValueChange={field.onChange} value={field.value || ''}>
                               <FormControl>
-                                <SelectTrigger><SelectValue /></SelectTrigger>
+                                <SelectTrigger><SelectValue placeholder={dictionary.plan_placeholder} /></SelectTrigger>
                               </FormControl>
                               <SelectContent>
-                                <SelectItem value="jeevan_umang">{dictionary.plans.jeevan_umang}</SelectItem>
-                                <SelectItem value="jeevan_utsav">{dictionary.plans.jeevan_utsav}</SelectItem>
-                                <SelectItem value="jeevan_labh">{dictionary.plans.jeevan_labh}</SelectItem>
+                                 {Object.entries(plans).map(([key, value]) => (
+                                    <SelectItem key={key} value={key}>{value}</SelectItem>
+                                  ))}
                               </SelectContent>
                             </Select>
                             <FormMessage />
                           </FormItem>
                         )}
                       />
+                    )}
                      <FormField control={form.control} name="sumAssured" render={({ field }) => (<FormItem><FormLabel>{dictionary.sum_assured_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
                   </div>
                   <div className="space-y-6">

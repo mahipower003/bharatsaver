@@ -12,11 +12,27 @@
     "micro_insurance_plans": "सूक्ष्म बीमा योजनाएं",
     "withdrawn_plans": "वापस ली गई योजनाएं"
   },
+  "sub_category_label": "उप श्रेणी",
+  "sub_category_placeholder": "एक उप श्रेणी चुनें",
+  "sub_categories": {
+    "insurance_plans": {
+      "whole_life_plans": "संपूर्ण जीवन योजनाएं",
+      "endowment_plans": "बंदोबस्ती योजनाएं",
+      "money_back_plans": "मनी बैक योजनाएं",
+      "term_assurance_plans": "टर्म एश्योरेंस योजनाएं",
+      "rider": "राइडर"
+    }
+  },
   "plan_label": "एलआईसी योजना चुनें",
+  "plan_placeholder": "एक योजना चुनें",
   "plans": {
-    "jeevan_umang": "जीवन उमंग",
-    "jeevan_utsav": "जीवन उत्सव",
-    "jeevan_labh": "जीवन लाभ"
+    "whole_life_plans": {
+      "jeevan_umang": "जीवन उमंग",
+      "jeevan_utsav": "जीवन उत्सव"
+    },
+    "endowment_plans": {
+      "jeevan_labh": "जीवन लाभ"
+    }
   },
   "age_label": "आपकी आयु",
   "sum_assured_label": "बीमा राशि (₹)",

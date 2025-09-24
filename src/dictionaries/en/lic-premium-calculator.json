@@ -12,11 +12,27 @@
     "micro_insurance_plans": "Micro Insurance Plans",
     "withdrawn_plans": "Withdrawn Plans"
   },
+  "sub_category_label": "Sub Category",
+  "sub_category_placeholder": "Select a sub category",
+  "sub_categories": {
+    "insurance_plans": {
+      "whole_life_plans": "Whole Life Plans",
+      "endowment_plans": "Endowment Plans",
+      "money_back_plans": "Money Back Plans",
+      "term_assurance_plans": "Term Assurance Plans",
+      "rider": "Rider"
+    }
+  },
   "plan_label": "Select LIC Plan",
+  "plan_placeholder": "Select a plan",
   "plans": {
-    "jeevan_umang": "Jeevan Umang",
-    "jeevan_utsav": "Jeevan Utsav",
-    "jeevan_labh": "Jeevan Labh"
+    "whole_life_plans": {
+      "jeevan_umang": "Jeevan Umang",
+      "jeevan_utsav": "Jeevan Utsav"
+    },
+    "endowment_plans": {
+      "jeevan_labh": "Jeevan Labh"
+    }
   },
   "age_label": "Your Age",
   "sum_assured_label": "Sum Assured (₹)",
