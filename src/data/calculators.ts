@@ -10,12 +10,22 @@ import {
   BadgePercent,
   Layers,
   Building,
-  Sparkles,
   Filter,
+  ShieldCheck,
 } from 'lucide-react';
 import type { Calculator } from '@/types';
 
 export const calculators: Calculator[] = [
+  {
+    slug: 'lic-premium-calculator',
+    title: 'LIC Premium Calculator',
+    description: 'Estimate premiums for LIC plans like Jeevan Umang, Utsav, and Labh.',
+    summary: 'Use our free LIC Premium Calculator to instantly estimate premiums for popular plans. Enter your age, sum assured, and term to get accurate results for your life insurance needs.',
+    icon: ShieldCheck,
+    link_text: 'Calculate Premium',
+    lastModified: '2024-09-25',
+    image: '/images/lic-premium-calculator.png'
+  },
   {
     slug: 'ppf-calculator',
     title: 'PPF Calculator',
