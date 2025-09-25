@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         "name": "How do I calculate LIC premium?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Open the plan calculator, enter age/DOB, sum assured, PPT and frequency. Select a plan preset if needed and click Calculate."
+          "text": "Open the plan calculator, enter age/DOB, sum assured, PPT and frequency. Select a plan preset if needed and click Calculate to see estimated premiums."
         }
       },
       {
@@ -55,7 +55,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     "@type": "Article",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://bharatsaver.com/lic-calculators"
+      "@id": `${siteUrl}/${params.lang}/lic-premium-calculator`
     },
     "headline": "LIC Premium Calculator — Select an LIC Plan",
     "description": "Select an LIC plan and open its dedicated premium calculator. Use plan presets (Saral Pension) for accurate estimates.",
@@ -63,7 +63,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       "@type": "Person",
       "name": "Mahesh Chaube",
       "jobTitle": "Certified Financial Planner (CFP)",
-      "sameAs": "https://www.linkedin.com/in/maheshchaube"
+      "url": `${siteUrl}/${params.lang}/author/mahesh-chaube`
     },
     "reviewedBy": {
       "@type": "Person",
@@ -75,19 +75,19 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       "name": "BharatSaver",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://bharatsaver.com/images/logo.png"
+        "url": `${siteUrl}/icon.svg`
       }
     },
-    "datePublished": "2025-09-24",
-    "dateModified": "2025-09-24"
+    "datePublished": "2024-09-25",
+    "dateModified": "2024-09-25"
   };
   
   return {
     title: "LIC Premium Calculator — Select Your LIC Plan & Calculate Premium | BharatSaver",
     description: "Select your LIC plan and instantly open the calculator. Compare premiums for Jeevan Umang, Jeevan Utsav, Jeevan Labh and more. Free, accurate LIC premium estimates and plan details.",
     alternates: {
-      canonical: "https://bharatsaver.com/lic-calculators",
-      languages: i18nConfig.locales.reduce((acc, locale) => {
+      canonical: `${siteUrl}/en/lic-premium-calculator`,
+       languages: i18nConfig.locales.reduce((acc, locale) => {
         acc[locale] = `${siteUrl}/${locale}/lic-premium-calculator`;
         return acc;
       }, {} as Record<string, string>),
@@ -110,3 +110,4 @@ export default async function LicPremiumCalculatorPage({ params }: { params: { l
     />
   );
 }
+

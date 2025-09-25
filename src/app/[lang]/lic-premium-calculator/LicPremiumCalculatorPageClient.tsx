@@ -18,31 +18,32 @@ export default function LicPremiumCalculatorPageClient({
 
   const seoContent = `
     <h2>Why use an LIC Premium Calculator?</h2>
-    <p>A calculator removes guesswork. Instead of asking an agent or flipping through tables, you get:</p>
+    <p>A calculator removes guesswork. Instead of asking an agent or flipping through tables, you get several key advantages:</p>
     <ul>
-      <li>Fast premium estimates for any age, sum assured and premium paying term (PPT).</li>
-      <li>Plan presets (for example: Jeevan Umang premium calculator) so the result follows plan rules.</li>
-      <li>Rider cost toggles — see incremental cost for Accident / Critical Illness riders.</li>
-      <li>Frequency conversion — monthly, quarterly, half-yearly, yearly breakdowns for budgeting.</li>
+      <li><strong>Fast premium estimates:</strong> Enter your age, sum assured, premium paying term (PPT), and frequency to get instant numbers for any policy.</li>
+      <li><strong>Plan presets:</strong> Pick a preset, like the <strong>Jeevan Umang premium calculator</strong>, to automatically apply that plan's specific rules and UIN references for a more accurate result.</li>
+      <li><strong>Rider cost toggles:</strong> See the incremental cost for valuable add-ons like Accident or Critical Illness riders with our comprehensive <strong>LIC premium calculator with riders</strong>.</li>
+      <li><strong>Frequency conversion:</strong> Easily compare monthly, quarterly, half-yearly, and yearly premium breakdowns to see what fits your budget best.</li>
     </ul>
-    <p>Top tools on the web combine calculators with short plan guides and UIN references — that pattern improves both rankings and user trust, so we follow the same approach here.</p>
+    <p>Top tools on the web combine calculators with short plan guides and UIN references. This pattern improves search rankings and builds user trust, so we follow the same successful approach here.</p>
     
-    <h2>How the calculator works (quick)</h2>
-    <p><strong>Inputs:</strong> Age or DOB, gender, sum assured, PPT, payment frequency, and optional riders.</p>
-    <p><strong>Output:</strong> Estimated premium per chosen frequency, monthly equivalent, rider breakdown and short notes about assumptions (bonuses or rounding).</p>
-    <p>We prefill common LIC plan parameters when you select presets (so your result is plan-accurate). Many high-ranking pages surface both the tool and a brief plan guide on the same page — that’s vital for capturing both “calculator” and “informational” queries.</p>
+    <h2>How the Calculator Works (A Quick Guide)</h2>
+    <p>Our calculator simplifies the premium estimation process. Here’s what you need to provide and what you get:</p>
+    <p><strong>Inputs:</strong> You'll enter your Age or Date of Birth, gender, the Sum Assured you want, the Premium Paying Term (PPT), your preferred payment frequency, and any optional riders.</p>
+    <p><strong>Output:</strong> You receive an estimated premium for your chosen frequency, the equivalent monthly cost for easy comparison, a breakdown of rider costs, and short notes about any assumptions made (like bonus rates or rounding).</p>
+    <p>We pre-fill common LIC plan parameters when you select presets, so your result is always plan-accurate. Many high-ranking pages surface both the tool and a brief plan guide on the same page, which is vital for capturing both "calculator" and "informational" search queries.</p>
 
-    <h2>Use cases — real examples</h2>
-    <p><strong>Example 1 — Age 35, Sum Assured ₹5,00,000, PPT 20 years (Yearly):</strong> estimated annual premium ≈ ₹34,500; monthly equivalent ≈ ₹2,875. (Illustrative.)</p>
-    <p><strong>Example 2 — Compare Jeevan Labh vs Jeevan Utsav:</strong> choose each preset and keep sum assured constant — see which plan gives lower premium or better maturity for the same outlay.</p>
-    <p>(We will show exact sample results and calculators on the page with a downloadable PDF for users who want to save results.)</p>
+    <h2>Use Cases: Real-World Examples</h2>
+    <p>See how the calculator works in practice with these common scenarios:</p>
+    <p><strong>Example 1:</strong> A 35-year-old individual looking for a Sum Assured of ₹5,00,000 with a 20-year Premium Paying Term (Yearly) can expect an estimated annual premium of around ₹34,500, which breaks down to a monthly equivalent of about ₹2,875. <em>(This is illustrative.)</em></p>
+    <p><strong>Example 2:</strong> To compare Jeevan Labh vs. Jeevan Utsav, you can choose each plan's preset while keeping the sum assured constant. This allows you to see which plan offers a lower premium or better maturity benefits for the same financial outlay.</p>
+    <p>You can see exact sample results in the calculator and even download a PDF for your records.</p>
 
-    <h2>Targeted searches we answer (long tails)</h2>
-    <p>This page is optimized for these real user queries:</p>
+    <h2>Targeted Searches We Answer</h2>
+    <p>This page is optimized to help users with specific, long-tail search queries, ensuring you find exactly what you're looking for. These include:</p>
     <ul>
       <li>LIC premium calculator online free</li>
       <li>LIC premium calculator Jeevan Umang</li>
-      <li>LIC premium calculator with riders</li>
       <li>How to calculate LIC premium for Jeevan Umang</li>
       <li>LIC premium per month yearly conversion</li>
       <li>LIC premium calculator monthly</li>
@@ -50,57 +51,63 @@ export default function LicPremiumCalculatorPageClient({
       <li>LIC premium calculator Jeevan Labh</li>
       <li>LIC premium payment calculator yearly vs monthly</li>
     </ul>
-    <p>We intentionally place those phrases in headings, FAQs and anchor texts (not stuffed — naturally). This targets both head and long-tail traffic.</p>
+    <p>We've intentionally placed these phrases in headings, FAQs, and anchor texts naturally to target both broad and specific search traffic, getting you to the right information faster.</p>
     
-    <h2>Plan presets we support (example list)</h2>
+    <h2>Plan Presets We Support (Example List)</h2>
+    <p>Each LIC plan has slightly different rules. Choosing a plan preset like the <strong>Jeevan Umang premium calculator</strong> ensures the tool uses correct defaults. We currently provide presets for:</p>
     <ul>
-      <li>Jeevan Umang — Plan No. 745 (preset)</li>
+      <li>Jeevan Umang — Plan No. 745</li>
       <li>Jeevan Utsav — Plan No. 771</li>
       <li>Jeevan Labh — Plan No. 736</li>
       <li>Index Plus — Plan No. 873</li>
       <li>New Pension Plus — Plan No. 867</li>
     </ul>
-    <p>Including plan UINs and a short plan snippet boosts trust (users and Google like sourceable facts). We link back to LIC’s official brochure pages where possible.</p>
+    <p>Including plan UINs and a short snippet about the plan boosts trust for both users and search engines. Where possible, we link back to LIC’s official brochure pages for verification.</p>
 
-    <h2>Tips to lower your LIC premium</h2>
+    <h2>Tips to Lower Your LIC Premium</h2>
+    <p>Want to reduce what you pay? Try these practical strategies in the calculator:</p>
     <ul>
-      <li>Opt for longer PPT — lowers annual amount (but more payments).</li>
-      <li>Pay annually — reduces mode conversion overhead vs monthly.</li>
-      <li>Re-evaluate riders — keep only what you need.</li>
-      <li>Compare plans — a different product may yield lower premium for similar benefits.</li>
+      <li><strong>Opt for a longer PPT:</strong> Increasing the Premium Paying Term often lowers the annual premium, though it means making more payments over time.</li>
+      <li><strong>Pay Annually:</strong> Switching to annual payments usually has a lower effective cost than paying monthly due to reduced administrative overhead.</li>
+      <li><strong>Re-evaluate Riders:</strong> Make sure you only keep the riders you truly need to avoid unnecessary costs.</li>
+      <li><strong>Compare Plans:</strong> A different product with a similar structure might offer better value or a lower premium for the same sum assured.</li>
     </ul>
 
-    <h2>Accuracy & caveats</h2>
-    <p>We use official plan rules where available and conservative assumptions elsewhere. This is an estimation tool, not a binding quote — LIC’s official rate tables and underwriting determine final premiums. Include a visible disclaimer and link to LIC for details. (Official LIC pages include plan documents/UINs; we should cite those.)</p>
+    <h2>Accuracy & Caveats</h2>
+    <p>We build our calculators using official plan rules and conservative, documented assumptions. This tool provides an estimate and is not a binding quote. The final premiums are always determined by LIC India based on their official rate tables and underwriting process. We include a visible disclaimer and link to LIC for official details.</p>
 
     <h2>Frequently Asked Questions</h2>
     <div class="faq">
       <h3>How do I calculate LIC premium?</h3>
-      <p>Open the plan calculator, enter age/DOB, sum assured, PPT and frequency, and click calculate.</p>
+      <p>Open the plan calculator, enter your age/DOB, desired sum assured, PPT, and payment frequency. If you select a plan preset (like <em>Jeevan Umang</em>), the calculator uses the plan’s defaults to provide a more accurate estimate.</p>
       <h3>Is this an official LIC calculator?</h3>
-      <p>No — we estimate using plan rules. Final quotes from LIC/agent.</p>
+      <p>No, this is an independent tool built by BharatSaver to provide reliable estimates based on public plan rules. For a binding quote, please contact an authorized LIC agent.</p>
       <h3>Does the calculation include taxes?</h3>
-      <p>By default we show pre-tax premiums. Toggle “Include tax” to view GST/service tax.</p>
+      <p>By default, premiums are shown before any applicable GST or service tax. You can use the “include tax” toggle to see the premium inclusive of current tax rates.</p>
       <h3>What is Premium Paying Term (PPT)?</h3>
-      <p>Number of years you pay premiums. Longer PPT typically lowers annual premium but means more payments.</p>
+      <p>The Premium Paying Term (PPT) is the number of years you will pay premiums for the policy. A longer PPT can reduce the annual premium amount but increases the total number of payments you'll make.</p>
     </div>
 
-    <h2>Compare & Next steps</h2>
-    <p>After you get an estimate, you can compare two plans side-by-side (use our Compare tool), download your calculator result as a PDF (we capture email for this lead), or request a verified quote from LIC or book a call with our CFPs.</p>
-    <p><strong>Want help?</strong> If you’d like personalized guidance, click the “Get My Personalized Plan” button to request a curated list from our CFPs.</p>
+    <h2>Next Steps & Comparisons</h2>
+    <p>After you get an estimate, you can take several next steps:</p>
+    <ol>
+        <li>Download or save the result as a PDF for your records (we may ask for an email to send it to you).</li>
+        <li>Compare the output with other policies using our side-by-side Compare tool.</li>
+        <li>If you want a verified quote, you can request a consultation with our CFP team or contact an LIC agent directly.</li>
+    </ol>
+    <p><strong>Want personalized help?</strong> If you're unsure, click the “Get My Personalized Plan” button to request a curated list of recommendations from our certified financial planners.</p>
     
     <footer class="disclaimer">
       <p><small>Disclaimer: This calculator provides estimates only. LIC India’s official premiums and underwriting determine the final payable premium and policy issuance.</small></p>
     </footer>
   `;
 
-
   return (
     <div className="py-12">
       <div className="mx-auto max-w-5xl">
         <header className="hero text-center mb-8">
             <h1>LIC Premium Calculator — Calculate Your LIC Premium Instantly</h1>
-            <p className="mt-4 text-lg text-muted-foreground">Looking for a fast, accurate way to estimate LIC premiums? You’re in the right place. Use BharatSaver’s <strong>LIC Premium Calculator</strong> to get instant premium estimates for popular plans like <em>Jeevan Umang</em>, <em>Jeevan Utsav</em>, <em>Jeevan Labh</em> and more. Whether you want an <strong>LIC premium calculator online free</strong>, a plan-specific preset, or a quick monthly vs yearly premium conversion, this tool is built to help you decide faster and smarter.</p>
+            <p className="mt-4 text-lg text-muted-foreground">Looking for a fast, accurate way to estimate LIC premiums? You’re in the right place. Use BharatSaver’s <strong>LIC Premium Calculator</strong> to get instant premium estimates for popular plans like <em>Jeevan Umang</em>, <em>Jeevan Utsav</em>, <em>Jeevan Labh</em> and more. Whether you want an <strong>LIC premium calculator online</strong>, a plan-specific preset, or a comparison between monthly and yearly premiums — this tool has you covered.</p>
         </header>
         
         <LicPremiumCalculator dictionary={pageDict} />
@@ -110,7 +117,6 @@ export default function LicPremiumCalculatorPageClient({
         <div className="mt-12">
             <AuthorCard dictionary={dictionary.author_card} />
         </div>
-
       </div>
     </div>
   );
