@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         "name": "Does the calculator include taxes?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "By default we show premiums before tax. Use the include-tax toggle to view premiums inclusive of current GST/service tax."
+          "text": "By default we show premiums before tax. Use the include-tax option to view premiums inclusive of current GST/service tax."
         }
       },
       {
