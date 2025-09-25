@@ -9,10 +9,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const pageDict = (await import(`@/dictionaries/${params.lang}/lic-premium-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/${params.lang}/lic-premium-calculator`;
-
+  
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -22,7 +20,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         "name": "How do I calculate LIC premium?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Enter age/DOB, sum assured, PPT and payment frequency. Select a plan preset (optional) to use plan rules and click Calculate to see estimated premiums."
+          "text": "Open the plan calculator, enter age/DOB, sum assured, PPT and frequency. Select a plan preset if needed and click Calculate."
         }
       },
       {
@@ -30,15 +28,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         "name": "Is this an official LIC calculator?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. This tool is provided by BharatSaver to estimate premiums. Final premium quotes are issued by LIC and subject to underwriting."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I compare premiums across LIC plans?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes — use the Compare tool or select different plan presets to see side-by-side premium and payout differences."
+          "text": "No. BharatSaver’s calculator provides estimates based on plan rules; final quotes are issued by LIC and depend on underwriting."
         }
       },
       {
@@ -46,7 +36,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         "name": "Does the calculator include taxes?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Premiums are shown before tax by default. Use the include-tax option to view premiums inclusive of current service tax/GST where applicable."
+          "text": "By default we show premiums before tax. Use the include-tax toggle to view premiums inclusive of current GST/service tax."
         }
       },
       {
@@ -54,7 +44,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         "name": "What is Premium Paying Term (PPT)?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "PPT is the number of years you will pay the policy premium. Longer PPT can reduce annual premiums but increases total payments."
+          "text": "PPT is the number of years you will pay the premiums. A longer PPT generally lowers the annual premium but increases the number of payments."
         }
       }
     ]
