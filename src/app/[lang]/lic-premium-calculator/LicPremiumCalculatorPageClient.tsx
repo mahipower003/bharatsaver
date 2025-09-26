@@ -22,45 +22,45 @@ export default function LicPremiumCalculatorPageClient({
     <div className="prose dark:prose-invert max-w-none mt-12 space-y-8">
       
       <div className="p-6 bg-secondary/30 rounded-lg">
-          <h2 className="flex items-center gap-3"><Smile className="h-8 w-8 text-primary"/>So, What Exactly is This Tool?</h2>
-          <p>Think of the LIC Premium Calculator as your personal guide to figuring out policy costs. Instead of wading through complicated documents or waiting for someone to call you back, this tool gives you a clear, instant estimate of what you can expect to pay for an LIC policy. You just need to tell it a few things, like:</p>
+          <h2 className="flex items-center gap-3"><Smile className="h-8 w-8 text-primary"/>What Is This LIC Premium Calculator & How Does It Help?</h2>
+          <p>Think of the <strong>LIC Premium Calculator</strong> as your personal financial assistant, designed to make sense of policy costs. Instead of navigating complex documents or waiting for an agent, this tool provides a clear, instant estimate of your premium. You just need to provide a few key details:</p>
           <ul className="list-disc pl-5">
               <li>Your age and gender</li>
-              <li>How much coverage (Sum Assured) you want</li>
-              <li>How many years you plan to pay the premium (the Premium Paying Term)</li>
-              <li>Whether you want to pay monthly, quarterly, half-yearly, or yearly</li>
+              <li>The Sum Assured (the coverage amount you want)</li>
+              <li>How long you wish to pay premiums (the Premium Paying Term or PPT)</li>
+              <li>How often you'll pay (monthly, quarterly, half-yearly, or yearly)</li>
           </ul>
-          <p>Once you plug that in, it does the heavy lifting and shows you an estimated premium. Simple as that!</p>
+          <p>Once you input this information, the calculator does the heavy lifting and presents an estimated premium. It’s a simple, fast, and reliable way to get started with your financial planning.</p>
       </div>
 
       <div>
-          <h2 className="flex items-center gap-3"><Lightbulb className="h-8 w-8 text-accent"/>Why Should I Bother Using a Calculator?</h2>
-          <p>Great question! It really comes down to saving time and gaining clarity. Here’s what you get in just a few clicks:</p>
+          <h2 className="flex items-center gap-3"><Lightbulb className="h-8 w-8 text-accent"/>Why Should I Use an Online Premium Calculator?</h2>
+          <p>Using an <strong>LIC premium calculator online for free</strong> is about gaining clarity and saving time. Here’s what you achieve in just a few clicks:</p>
           <ul className="space-y-3">
-              <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-green-500 mt-1"/><span><strong>No More Guesswork:</strong> Get fast, reliable premium estimates without the confusing math.</span></li>
-              <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-green-500 mt-1"/><span><strong>Apples-to-Apples Comparisons:</strong> Easily compare what you’d pay for different plans like Jeevan Umang vs. Jeevan Labh.</span></li>
-              <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-green-500 mt-1"/><span><strong>Budget with Confidence:</strong> See how your premium changes if you pay monthly versus yearly, so you can choose what fits your wallet.</span></li>
-              <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-green-500 mt-1"/><span><strong>See the Full Picture:</strong> Thinking about adding riders like Accident or Critical Illness cover? The calculator shows you exactly how much extra that will cost.</span></li>
+              <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-green-500 mt-1"/><span><strong>Eliminate Guesswork:</strong> Get fast, dependable premium estimates without complex math.</span></li>
+              <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-green-500 mt-1"/><span><strong>Easy Comparisons:</strong> Effortlessly compare what you’d pay for different popular plans like the <em>Jeevan Umang premium calculator</em> vs. the <em>Jeevan Labh premium calculator</em>.</span></li>
+              <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-green-500 mt-1"/><span><strong>Budget with Confidence:</strong> Instantly see how your premium changes with different payment frequencies, helping you choose what best fits your financial situation.</span></li>
+              <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-green-500 mt-1"/><span><strong>Full Cost Transparency:</strong> If you're considering riders like Accident or Critical Illness cover, the <em>LIC premium calculator with riders</em> shows you the exact incremental cost.</span></li>
           </ul>
       </div>
 
       <div>
-          <h2 className="flex items-center gap-3"><BarChart2 className="h-8 w-8 text-primary"/>Let's See It in Action: Real-World Examples</h2>
-          <p>Numbers speak louder than words. Here are a couple of quick scenarios to show you what the calculator can do:</p>
+          <h2 className="flex items-center gap-3"><BarChart2 className="h-8 w-8 text-primary"/>How to Calculate LIC Premium: Real-World Examples</h2>
+          <p>Numbers often speak louder than words. Here are a couple of scenarios to demonstrate what our calculator can do for you:</p>
           <div className="bg-muted/50 p-4 rounded-lg my-4">
-              <h3 className="font-semibold">👉 Scenario 1: Planning for the long haul</h3>
-              <p className="mt-2">A 30-year-old looking at <strong>Jeevan Umang</strong> with a ₹5,00,000 cover for a 20-year payment term would see an estimated yearly premium of around <strong>₹34,500</strong>. The tool would also show this breaks down to about <strong>₹2,875 per month</strong>.</p>
+              <h3 className="font-semibold">👉 Scenario 1: Long-Term Planning with Jeevan Umang</h3>
+              <p className="mt-2">A 30-year-old looking at <strong>Jeevan Umang</strong> with a ₹5,00,000 cover for a 20-year payment term would see an estimated yearly premium of around <strong>₹34,500</strong>. The tool also shows this breaks down to about <strong>₹2,875 per month</strong>. This helps answer the common query, “how to calculate LIC premium for Jeevan Umang”.</p>
           </div>
           <div className="bg-muted/50 p-4 rounded-lg">
-              <h3 className="font-semibold">👉 Scenario 2: Adding a safety net</h3>
+              <h3 className="font-semibold">👉 Scenario 2: Adding a Safety Net with Jeevan Utsav</h3>
               <p className="mt-2">A 28-year-old considering <strong>Jeevan Utsav</strong> for ₹7,50,000 might see a base premium of ~₹41,200. By toggling the "Accident Benefit" rider, they'd instantly see the premium rise to about <strong>₹43,000</strong>, making the cost of extra protection crystal clear.</p>
           </div>
-          <p className="text-sm italic mt-4">(Please note: These are just illustrations! Your final premium is always determined by LIC after their underwriting process.)</p>
+          <p className="text-sm italic mt-4">(Disclaimer: These are illustrations. Your final premium is always determined by LIC after their underwriting process.)</p>
       </div>
 
       <div>
-          <h2 className="flex items-center gap-3"><SlidersHorizontal className="h-8 w-8 text-accent"/>Do You Have Presets for Specific Plans?</h2>
-          <p>Yes, and this is where the tool gets really smart. Different LIC plans have different rules, so using a generic calculator can be misleading. Our presets automatically apply the correct parameters for popular plans, including:</p>
+          <h2 className="flex items-center gap-3"><SlidersHorizontal className="h-8 w-8 text-accent"/>Which Plan Presets Are Available?</h2>
+          <p>Different LIC plans have different rules, so a generic calculator can be misleading. Our presets automatically apply the correct parameters, giving you a more accurate estimate. We support popular plans including:</p>
           <ul className="list-disc pl-5">
               <li>Jeevan Umang (Plan No. 745)</li>
               <li>Jeevan Utsav (Plan No. 771)</li>
@@ -69,33 +69,33 @@ export default function LicPremiumCalculatorPageClient({
               <li>New Pension Plus (Plan No. 867)</li>
               <li>Saral Pension (Plan No. 862)</li>
           </ul>
-          <p>When you choose a preset, you can be confident the estimate is tailored to that specific plan's structure.</p>
+          <p>When you use a preset like the <strong>Jeevan Labh premium calculator</strong>, you can be confident the estimate is tailored to that specific plan's structure.</p>
       </div>
 
       <div>
           <h2 className="flex items-center gap-3"><TrendingUp className="h-8 w-8 text-primary"/>Any Tips for Lowering My Premium?</h2>
           <p>Absolutely! Here are a few strategies you can test in the calculator to see how they affect your premium:</p>
           <ul className="space-y-3">
-              <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-green-500 mt-1"/><span><strong>Pay Annually:</strong> Paying once a year is often slightly cheaper than paying monthly over the course of a year.</span></li>
-              <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-green-500 mt-1"/><span><strong>Choose a Longer Paying Term (PPT):</strong> Spreading your payments over more years can lower your yearly premium, though you'll be paying for longer.</span></li>
-              <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-green-500 mt-1"/><span><strong>Start Early:</strong> The younger you are when you buy a policy, the lower your premiums will be. It's the biggest advantage you have!</span></li>
+              <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-green-500 mt-1"/><span><strong>Pay Annually:</strong> The <em>LIC premium payment calculator for yearly vs monthly</em> will show that paying once a year is often slightly cheaper than paying in monthly installments.</span></li>
+              <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-green-500 mt-1"/><span><strong>Choose a Longer Paying Term (PPT):</strong> Spreading your payments over more years can lower your yearly premium, though you'll be paying for a longer duration.</span></li>
+              <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-green-500 mt-1"/><span><strong>Start Early:</strong> The most significant factor. The younger you are when you buy a policy, the lower your premiums will be.</span></li>
           </ul>
       </div>
 
       <div>
-          <h2 className="flex items-center gap-3"><HelpCircle className="h-8 w-8 text-accent"/>Quick Answers to Common Questions (FAQ)</h2>
+          <h2 className="flex items-center gap-3"><HelpCircle className="h-8 w-8 text-accent"/>Frequently Asked Questions (FAQ)</h2>
           <div className="space-y-4 mt-4">
               <div>
-                <h3 className="font-semibold">Q: How do I actually calculate the premium?</h3>
-                <p>Just enter your age, how much coverage you want (Sum Assured), how long you want to pay for (PPT), and how often (e.g., monthly). The calculator does the rest!</p>
+                <h3 className="font-semibold">Q: How do I calculate LIC premium?</h3>
+                <p>Just enter your age, the sum assured you want, how long you want to pay for (PPT), and how often (e.g., monthly). The calculator does the rest, giving you an instant estimate!</p>
               </div>
               <div>
                 <h3 className="font-semibold">Q: Is this an official LIC tool?</h3>
                 <p>No, this is an independent estimation tool created by BharatSaver to help you plan. For a final, binding quote, you should always contact LIC or an authorized agent.</p>
               </div>
               <div>
-                <h3 className="font-semibold">Q: Can I see if GST is included?</h3>
-                <p>Yep! By default, we show the premium before tax. There's a toggle you can use to see the final amount including any applicable GST.</p>
+                <h3 className="font-semibold">Q: Does this LIC premium calculator include tax?</h3>
+                <p>By default, we show the premium before tax. There's a toggle you can use to see the final amount including any applicable GST, making it a useful <em>LIC premium calculator with tax</em>.</p>
               </div>
               <div>
                 <h3 className="font-semibold">Q: What exactly is Premium Paying Term (PPT)?</h3>
@@ -106,12 +106,12 @@ export default function LicPremiumCalculatorPageClient({
       
       <div className="p-6 bg-secondary/30 rounded-lg">
           <h2 className="flex items-center gap-3"><Star className="h-8 w-8 text-primary"/>What Should I Do Next?</h2>
-          <p>Once you have your estimate, you're in a great position to take the next step:</p>
+          <p>Once you have your estimate, you're in a great position to take the next step toward securing your financial future:</p>
           <ol className="list-decimal pl-5 space-y-2 mt-4">
-              <li><strong>Download Your Results:</strong> Save a PDF of your calculation so you can refer to it later.</li>
-              <li><strong>Compare Different Plans:</strong> Run a few more calculations for other plans to see which one gives you the best value.</li>
-              <li><strong>Get Personalized Advice:</strong> If you're still unsure, our team of certified financial planners can help.</li>
-              <li><strong>Talk to an Agent:</strong> When you're ready to buy, contact an official LIC agent to get a final quote and complete the process.</li>
+              <li><strong>Download Your Results:</strong> Save a PDF of your calculation so you can refer to it later or discuss it with your family.</li>
+              <li><strong>Compare Different Plans:</strong> Run a few more calculations for other plans to see which one gives you the best value for your needs.</li>
+              <li><strong>Get Personalized Advice:</strong> If you're still unsure, our team of certified financial planners is here to help guide you.</li>
+              <li><strong>Talk to an Agent:</strong> When you're ready to buy, contact an official LIC agent to get a final quote and complete the purchase process.</li>
           </ol>
       </div>
 
@@ -141,3 +141,5 @@ export default function LicPremiumCalculatorPageClient({
     </div>
   );
 }
+
+    

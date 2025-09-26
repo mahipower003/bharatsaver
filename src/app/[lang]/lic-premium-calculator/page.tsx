@@ -18,27 +18,22 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       {
         "@type": "Question",
         "name": "How do I calculate LIC premium?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Enter your age, sum assured, PPT, and frequency in the calculator. Use presets for better accuracy." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Open the plan calculator, enter age/DOB, sum assured, PPT and frequency. Select a plan preset if needed and click Calculate." }
       },
       {
         "@type": "Question",
         "name": "Is this an official LIC calculator?",
-        "acceptedAnswer": { "@type": "Answer", "text": "No. This is an independent tool by BharatSaver. For binding quotes, contact LIC." }
+        "acceptedAnswer": { "@type": "Answer", "text": "No. BharatSaver’s calculator provides estimates based on plan rules; final quotes are issued by LIC and depend on underwriting." }
       },
       {
         "@type": "Question",
-        "name": "Can I compare premiums across LIC plans?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes, use the Compare Tool to check premiums for Jeevan Umang vs Jeevan Labh vs Jeevan Utsav." }
-      },
-      {
-        "@type": "Question",
-        "name": "Does this calculator include GST?",
-        "acceptedAnswer": { "@type": "Answer", "text": "By default, no. Toggle “Include Tax” to view GST-inclusive premiums." }
+        "name": "Does the calculator include taxes?",
+        "acceptedAnswer": { "@type": "Answer", "text": "By default we show premiums before tax. Use the include-tax toggle to view premiums inclusive of current GST/service tax." }
       },
       {
         "@type": "Question",
         "name": "What is Premium Paying Term (PPT)?",
-        "acceptedAnswer": { "@type": "Answer", "text": "It’s the number of years you’ll pay premiums. Longer PPT = lower yearly premium." }
+        "acceptedAnswer": { "@type": "Answer", "text": "PPT is the number of years you will pay the premiums. A longer PPT generally lowers the annual premium but increases the number of payments." }
       }
     ]
   };
@@ -103,3 +98,5 @@ export default async function LicPremiumCalculatorPage({ params }: { params: { l
     />
   );
 }
+
+    
