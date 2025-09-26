@@ -125,7 +125,7 @@ export default function LicPremiumCalculatorPageClient({
     <div className="py-12">
       <div className="mx-auto max-w-5xl">
         <header className="text-center mb-8">
-            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">LIC Premium Calculator — Calculate Your LIC Premium Instantly</h1>
+            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">LIC Premium Calculator — Your Simple Guide to Estimating LIC Premiums</h1>
             <p className="mt-4 text-lg text-muted-foreground">Looking to find out how much an LIC policy will cost you — in under a minute? Welcome. Use BharatSaver’s LIC Premium Calculator to get instant, reliable premium estimates for plans such as Jeevan Umang, Jeevan Utsav, Jeevan Labh, Index Plus and more. Whether you want an LIC premium calculator online free, a plan-specific preset, or a quick monthly vs yearly premium conversion, this tool is built to help you decide faster and smarter.</p>
         </header>
         
@@ -141,3 +141,5 @@ export default function LicPremiumCalculatorPageClient({
     </div>
   );
 }
+
+    
