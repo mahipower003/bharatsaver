@@ -48,11 +48,11 @@ export default function LicPremiumCalculatorPageClient({
           <h2 className="flex items-center gap-3"><BarChart2 className="h-8 w-8 text-primary"/>How to Calculate LIC Premium: Real-World Examples</h2>
           <p>Numbers often speak louder than words. Here are a couple of scenarios to demonstrate what our calculator can do for you:</p>
           <div className="bg-muted/50 p-4 rounded-lg my-4">
-              <h3 className="font-semibold">👉 Scenario 1: Long-Term Planning with Jeevan Umang</h3>
+              <h3>Scenario 1: Long-Term Planning with Jeevan Umang</h3>
               <p className="mt-2">A 30-year-old looking at <strong>Jeevan Umang</strong> with a ₹5,00,000 cover for a 20-year payment term would see an estimated yearly premium of around <strong>₹34,500</strong>. The tool also shows this breaks down to about <strong>₹2,875 per month</strong>. This helps answer the common query, “how to calculate LIC premium for Jeevan Umang”.</p>
           </div>
           <div className="bg-muted/50 p-4 rounded-lg">
-              <h3 className="font-semibold">👉 Scenario 2: Adding a Safety Net with Jeevan Utsav</h3>
+              <h3>Scenario 2: Adding a Safety Net with Jeevan Utsav</h3>
               <p className="mt-2">A 28-year-old considering <strong>Jeevan Utsav</strong> for ₹7,50,000 might see a base premium of ~₹41,200. By toggling the "Accident Benefit" rider, they'd instantly see the premium rise to about <strong>₹43,000</strong>, making the cost of extra protection crystal clear.</p>
           </div>
           <p className="text-sm italic mt-4">(Disclaimer: These are illustrations. Your final premium is always determined by LIC after their underwriting process.)</p>
@@ -86,19 +86,19 @@ export default function LicPremiumCalculatorPageClient({
           <h2 className="flex items-center gap-3"><HelpCircle className="h-8 w-8 text-accent"/>Frequently Asked Questions (FAQ)</h2>
           <div className="space-y-4 mt-4">
               <div>
-                <h3 className="font-semibold">Q: How do I calculate LIC premium?</h3>
+                <h3>Q: How do I calculate LIC premium?</h3>
                 <p>Just enter your age, the sum assured you want, how long you want to pay for (PPT), and how often (e.g., monthly). The calculator does the rest, giving you an instant estimate!</p>
               </div>
               <div>
-                <h3 className="font-semibold">Q: Is this an official LIC tool?</h3>
+                <h3>Q: Is this an official LIC tool?</h3>
                 <p>No, this is an independent estimation tool created by BharatSaver to help you plan. For a final, binding quote, you should always contact LIC or an authorized agent.</p>
               </div>
               <div>
-                <h3 className="font-semibold">Q: Does this LIC premium calculator include tax?</h3>
+                <h3>Q: Does this LIC premium calculator include tax?</h3>
                 <p>By default, we show the premium before tax. There's a toggle you can use to see the final amount including any applicable GST, making it a useful <em>LIC premium calculator with tax</em>.</p>
               </div>
               <div>
-                <h3 className="font-semibold">Q: What exactly is Premium Paying Term (PPT)?</h3>
+                <h3>Q: What exactly is Premium Paying Term (PPT)?</h3>
                 <p>It’s simply the number of years you'll be paying premiums. For some plans, this is different from the full policy term. A longer PPT usually means a smaller yearly payment.</p>
               </div>
           </div>
@@ -141,5 +141,3 @@ export default function LicPremiumCalculatorPageClient({
     </div>
   );
 }
-
-    
