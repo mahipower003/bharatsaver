@@ -18,34 +18,52 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       {
         "@type": "Question",
         "name": "How do I calculate LIC premium?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Open the plan calculator, enter age/DOB, sum assured, PPT and frequency. Select a plan preset if needed and click Calculate to see estimated premiums."
-        }
+        "acceptedAnswer": { "@type": "Answer", "text": "Enter age/DOB, sum assured, PPT and frequency in the calculator. Use presets for better accuracy." }
       },
       {
         "@type": "Question",
         "name": "Is this an official LIC calculator?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. BharatSaver’s calculator provides estimates based on plan rules; final quotes are issued by LIC and depend on underwriting."
-        }
+        "acceptedAnswer": { "@type": "Answer", "text": "No. This is an independent tool by BharatSaver. For binding quotes, contact LIC." }
       },
       {
         "@type": "Question",
-        "name": "Does the calculator include taxes?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "By default we show premiums before tax. Use the include-tax option to view premiums inclusive of current GST/service tax."
-        }
+        "name": "Can I compare premiums across LIC plans?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, use the Compare Tool to check premiums for Jeevan Umang vs Jeevan Labh vs Jeevan Utsav." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does this calculator include GST?",
+        "acceptedAnswer": { "@type": "Answer", "text": "By default, no. Toggle “Include Tax” to view GST-inclusive premiums." }
       },
       {
         "@type": "Question",
         "name": "What is Premium Paying Term (PPT)?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "PPT is the number of years you will pay the premiums. A longer PPT generally lowers the annual premium but increases the number of payments."
-        }
+        "acceptedAnswer": { "@type": "Answer", "text": "It’s the number of years you’ll pay premiums. Longer PPT = lower yearly premium." }
+      },
+      {
+        "@type": "Question",
+        "name": "Which is the best LIC plan?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Depends on your goal. Jeevan Umang suits long-term wealth + protection, Jeevan Labh suits savings with protection, Utsav suits mixed needs." }
+      },
+      {
+        "@type": "Question",
+        "name": "How to calculate LIC premium monthly?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Use the frequency selector — it automatically converts yearly premium into monthly." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can riders increase premium significantly?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Accident/CI riders can add 5–15% depending on coverage." }
+      },
+      {
+        "@type": "Question",
+        "name": "How accurate are online LIC premium calculators?",
+        "acceptedAnswer": { "@type": "Answer", "text": "They’re close estimates, but LIC’s official quote at purchase is final." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the LIC Premium Calculator free?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — completely free to use, 24/7." }
       }
     ]
   };
@@ -57,13 +75,13 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       "@type": "WebPage",
       "@id": `${siteUrl}/${params.lang}/lic-premium-calculator`
     },
-    "headline": "LIC Premium Calculator — Select an LIC Plan",
-    "description": "Select an LIC plan and open its dedicated premium calculator. Use plan presets (Saral Pension) for accurate estimates.",
+    "headline": "LIC Premium Calculator — Free Online LIC Premium Calculator (2025)",
+    "description": "Select your LIC plan and instantly open the calculator. Compare premiums for Jeevan Umang, Jeevan Utsav, Jeevan Labh and more. Free, accurate LIC premium estimates and plan details.",
     "author": {
       "@type": "Person",
       "name": "Mahesh Chaube",
       "jobTitle": "Certified Financial Planner (CFP)",
-      "url": `${siteUrl}/${params.lang}/author/mahesh-chaube`
+      "sameAs": "https://www.linkedin.com/in/maheshchaube"
     },
     "reviewedBy": {
       "@type": "Person",
@@ -79,11 +97,11 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       }
     },
     "datePublished": "2024-09-25",
-    "dateModified": "2024-09-25"
+    "dateModified": "2025-09-24"
   };
   
   return {
-    title: "LIC Premium Calculator — Select Your LIC Plan & Calculate Premium | BharatSaver",
+    title: "LIC Premium Calculator — Free Online LIC Premium Calculator (2025) | BharatSaver",
     description: "Select your LIC plan and instantly open the calculator. Compare premiums for Jeevan Umang, Jeevan Utsav, Jeevan Labh and more. Free, accurate LIC premium estimates and plan details.",
     alternates: {
       canonical: `${siteUrl}/en/lic-premium-calculator`,
