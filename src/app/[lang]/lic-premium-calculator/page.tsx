@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       {
         "@type": "Question",
         "name": "How do I calculate LIC premium?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Enter age/DOB, sum assured, PPT and frequency in the calculator. Use presets for better accuracy." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Enter your age, sum assured, PPT, and frequency in the calculator. Use presets for better accuracy." }
       },
       {
         "@type": "Question",
@@ -39,31 +39,6 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         "@type": "Question",
         "name": "What is Premium Paying Term (PPT)?",
         "acceptedAnswer": { "@type": "Answer", "text": "It’s the number of years you’ll pay premiums. Longer PPT = lower yearly premium." }
-      },
-      {
-        "@type": "Question",
-        "name": "Which is the best LIC plan?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Depends on your goal. Jeevan Umang suits long-term wealth + protection, Jeevan Labh suits savings with protection, Utsav suits mixed needs." }
-      },
-      {
-        "@type": "Question",
-        "name": "How to calculate LIC premium monthly?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Use the frequency selector — it automatically converts yearly premium into monthly." }
-      },
-      {
-        "@type": "Question",
-        "name": "Can riders increase premium significantly?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Accident/CI riders can add 5–15% depending on coverage." }
-      },
-      {
-        "@type": "Question",
-        "name": "How accurate are online LIC premium calculators?",
-        "acceptedAnswer": { "@type": "Answer", "text": "They’re close estimates, but LIC’s official quote at purchase is final." }
-      },
-      {
-        "@type": "Question",
-        "name": "Is the LIC Premium Calculator free?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes — completely free to use, 24/7." }
       }
     ]
   };
@@ -81,7 +56,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       "@type": "Person",
       "name": "Mahesh Chaube",
       "jobTitle": "Certified Financial Planner (CFP)",
-      "sameAs": "https://www.linkedin.com/in/maheshchaube"
+      "url": "https://www.linkedin.com/in/maheshchaube"
     },
     "reviewedBy": {
       "@type": "Person",
@@ -128,4 +103,3 @@ export default async function LicPremiumCalculatorPage({ params }: { params: { l
     />
   );
 }
-
