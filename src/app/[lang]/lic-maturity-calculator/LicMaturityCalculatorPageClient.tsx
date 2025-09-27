@@ -41,28 +41,39 @@ export default function LicMaturityCalculatorPageClient({
     const siteUrl = 'https://bharatsaver.com';
     const pageUrl = `${siteUrl}/${params.lang}/lic-maturity-calculator`;
 
-    const faqItems = pageDict.faq.questions ?? [];
     const faqSchema = {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": faqItems.map((faq: {q: string; a: string}) => ({
-        "@type": "Question",
-        "name": faq.q,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": faq.a.replace(/<[^>]*>/g, '') // Strip HTML for schema
-        }
-      }))
+      "@context":"https://schema.org",
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"How do I calculate my LIC policy maturity amount?","acceptedAnswer":{"@type":"Answer","text":"Enter sum assured, policy term, and an illustrative bonus rate per ₹1,000 SA into the calculator. Maturity = Sum Assured + (Vested bonus × policy term) + Final Additional Bonus (if any)."}},
+        {"@type":"Question","name":"Does the LIC maturity calculator include bonus?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can input an illustrative bonus rate per ₹1,000 SA or use historical averages. The calculator multiplies the annual bonus by the policy term to estimate total bonus."}},
+        {"@type":"Question","name":"How accurate is the maturity estimate?","acceptedAnswer":{"@type":"Answer","text":"Estimates use the inputs and illustrative bonus/FAB rates. Actual maturity depends on LIC's declared bonuses and final underwriting; treat results as indicative, not binding."}},
+        {"@type":"Question","name":"What is Final Additional Bonus (FAB)?","acceptedAnswer":{"@type":"Answer","text":"FAB is a loyalty bonus paid by LIC at maturity on long-term participating policies. It is variable and declared by LIC depending on business performance."}},
+        {"@type":"Question","name":"How do I calculate surrender value of LIC policy?","acceptedAnswer":{"@type":"Answer","text":"Surrender value can be Guaranteed Surrender Value (a % of premiums paid) or Special Surrender Value (based on vested bonuses). Use the calculator's surrender tab and enter last premium date for a precise estimate."}},
+        {"@type":"Question","name":"What is paid-up value?","acceptedAnswer":{"@type":"Answer","text":"Paid-up value applies if you stop paying premiums after two full years; benefits are reduced proportionately based on premiums paid and vested bonuses. The calculator can show paid-up estimates."}},
+        {"@type":"Question","name":"How do riders affect maturity?","acceptedAnswer":{"@type":"Answer","text":"Riders increase premium but do not increase maturity sum-assured. Our calculator shows rider premium and the separate rider benefits (if any) but maturity formula remains SA + bonuses + FAB."}},
+        {"@type":"Question","name":"Can NRIs use this LIC maturity calculator?","acceptedAnswer":{"@type":"Answer","text":"Yes, NRIs can use the calculator for estimates. Actual purchase may be subject to FEMA and LIC rules for NRIs; check with LIC/agent for eligibility."}},
+        {"@type":"Question","name":"Does the calculator include GST?","acceptedAnswer":{"@type":"Answer","text":"By default the calculator excludes GST from maturity calculations (GST is not part of invested amount). You can toggle GST in premium breakdown for clarity on total payable."}},
+        {"@type":"Question","name":"How do I find the bonus rate to use?","acceptedAnswer":{"@type":"Answer","text":"Use the bonus rate shown on your policy statement or the published LIC bonus notifications. If unavailable, use a historical average (e.g., 40–48 per ₹1,000 SA for typical endowment plans)." }},
+        {"@type":"Question","name":"How to compute IRR of an LIC policy?","acceptedAnswer":{"@type":"Answer","text":"IRR is the discount rate that equates total premiums paid with maturity received. Our calculator provides an approximate IRR after computing maturity and total premiums paid." }},
+        {"@type":"Question","name":"What is modal loading?","acceptedAnswer":{"@type":"Answer","text":"Modal loading is the extra cost when paying premium monthly/quarterly/half-yearly versus yearly. The calculator converts yearly premium using modal factors to show accurate mode-wise premiums."}},
+        {"@type":"Question","name":"Is maturity tax-free under Section 10(10D)?","acceptedAnswer":{"@type":"Answer","text":"Generally yes, but the exemption depends on rules (notably if annual premium does not exceed 10% of Sum Assured for most policies). Check your policy specifics." }},
+        {"@type":"Question","name":"Can I download the calculation as PDF?","acceptedAnswer":{"@type":"Answer","text":"Yes — click 'Download PDF' after calculating to save the maturity and premium breakdown for your records." }},
+        {"@type":"Question","name":"How to compare LIC maturity vs mutual funds?","acceptedAnswer":{"@type":"Answer","text":"LIC policies are low-risk, lower-return, and tax-efficient for long-term conservative investors; mutual funds can offer higher returns with market risk. Use our comparison tool to evaluate both."}}
+      ]
     };
     
     const howToSchema = {
-        "@context": "https://schema.org",
-        "@type": "HowTo",
-        "name": "How to use LIC maturity calculator",
-        "step": [
-            {"@type": "HowToStep", "name": "Enter policy details", "text": "Enter sum assured, policy term and bonus rate."},
-            {"@type": "HowToStep", "name": "Click Calculate", "text": "Review maturity, download PDF or compare plans."}
-        ]
+      "@context":"https://schema.org",
+      "@type":"HowTo",
+      "name":"How to use the LIC Maturity Calculator",
+      "description":"Step-by-step instructions to estimate LIC maturity, surrender and paid-up values using our tool.",
+      "step":[
+        {"@type":"HowToStep","name":"Select plan preset","text":"Choose the LIC plan (for example Jeevan Labh) to set PPT and typical bonus ranges automatically."},
+        {"@type":"HowToStep","name":"Enter policy details","text":"Input Sum Assured, policy term, annual premium (if required), bonus per ₹1000 SA and FAB (optional)."},
+        {"@type":"HowToStep","name":"Provide dates","text":"Enter date of birth and last premium paid date for surrender/loan eligibility calculations."},
+        {"@type":"HowToStep","name":"Click Calculate","text":"View maturity, total premiums paid, IRR, surrender and loan estimates; download the result as PDF."}
+      ]
     };
     
     const financialProductSchema = {
