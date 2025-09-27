@@ -78,9 +78,8 @@
         "index_plus": "LIC's Index Plus",
         "new_endowment_plus": "LIC's New Endowment Plus"
       },
-      "health_plans": {
-        "cancer_cover": "LIC's Cancer Cover",
-        "dhan_varsha": "LIC's Dhan Varsha"
+      "micro_insurance_plans": {
+        "micro_bachat": "LIC's Micro Bachat (751)"
       }
     },
     "view_calculator_button": "View Calculator"
