@@ -2,7 +2,7 @@
 {
   "meta_title": "LIC Single Premium Endowment Calculator (Plan 917) - Free & Online",
   "meta_description": "Use our free LIC Single Premium Endowment Calculator to instantly estimate maturity, returns, and bonus for Plan 917/717/817. Calculate tax benefits and compare with FD, PPF & other plans.",
-  "h1": "LIC Single Premium Endowment Calculator (Plan 917)",
+  "h1": "LIC Single Premium Endowment Calculator (Plan 717)",
   "description": "Looking for a secure one-time investment that offers guaranteed returns, insurance coverage, and tax benefits? The LIC Single Premium Endowment Plan is a popular choice. Use our free LIC Single Premium Endowment Calculator to see exactly what you'll pay and what you could get back.",
   "tool": {
     "title": "LIC Single Premium Endowment Calculator",
@@ -12,8 +12,10 @@
     "sum_assured_label": "Sum Assured (₹)",
     "calculate_button": "Calculate Benefits",
     "calculating": "Calculating...",
+    "addb_rider_label": "Accidental Death & Disability Rider",
+    "term_rider_label": "Term Assurance Rider",
     "results": {
-      "note": "Disclaimer: All values are estimates. Bonus rates are illustrative and not guaranteed. Maturity proceeds are tax-free under Section 10(10D)."
+      "note": "Disclaimer: All values are estimates. Bonus rates are illustrative and not guaranteed."
     }
   },
   "article": {
@@ -23,7 +25,7 @@
         "icon": "HelpCircle",
         "title": "What is LIC Single Premium Endowment Plan (No. 717)?",
         "content": [
-          { "type": "paragraph", "text": "The LIC Single Premium Endowment Plan (Plan No. 717) is a straightforward savings-cum-protection plan where you pay the premium only once at the start of the policy. It's a hassle-free, one-time investment that provides a combination of guaranteed savings and life insurance coverage. At the end of the policy term, you receive a lump sum maturity amount, and your family is protected with a death benefit throughout the term. It's an ideal solution for those who have a lump sum amount and want to secure it for a future goal." }
+          { "type": "paragraph", "text": "The LIC Single Premium Endowment Plan (UIN: 512N283V03, Plan No. 717) is a straightforward savings-cum-protection plan where you pay the premium only once at the start of the policy. It's a hassle-free, one-time investment that provides a combination of guaranteed savings and life insurance coverage. At the end of the policy term, you receive a lump sum maturity amount, and your family is protected with a death benefit throughout the term. It's an ideal solution for those who have a lump sum amount and want to secure it for a future goal." }
         ]
       },
       {
@@ -120,9 +122,9 @@
                 {"q": "What is the return on LIC Single Premium Endowment Plan?", "a": "The plan typically offers an illustrative Internal Rate of Return (IRR) between 5% to 6%, depending on the term and age. While modest, this return is generally tax-free, making it competitive with post-tax FD returns."},
                 {"q": "Is the maturity amount taxable?", "a": "The maturity amount from this plan is tax-free under Section 10(10D) of the Income Tax Act."},
                 {"q": "Can I take a loan on this plan?", "a": "Yes, a loan facility is available after the completion of one policy year. This provides a good liquidity option without having to surrender the policy."},
-                {"q": "What is the surrender value of LIC single premium plan?", "a": "The policy can be surrendered at any time during the policy term. The Guaranteed Surrender Value (GSV) is 75% of the Single Premium in the first year, and increases to 90% from the second year onwards. A higher Special Surrender Value may also be payable."},
+                {"q": "What is the surrender value of LIC single premium plan?", "a": "The policy can be surrendered at any time during the policy term. The Guaranteed Surrender Value (GSV) is 75% of the Single Premium paid if surrendered during the first policy year, and 90% of the Single Premium paid if surrendered thereafter. A higher Special Surrender Value may also be payable."},
                 {"q": "Which is better: LIC single premium vs FD vs PPF?", "a": "It depends on your goal. Choose LIC for a combined insurance + savings goal with a one-time investment. Choose FD for short-term goals with high liquidity. Choose PPF for long-term, tax-free wealth creation with recurring investments."},
-                {"q": "Is LIC Single Premium Endowment Plan good or bad?", "a": "It's 'good' for risk-averse individuals who need a safe, one-time investment with an insurance component. It's 'bad' for investors seeking high, inflation-beating returns, for whom equity mutual funds would be a better choice."}
+                {"q": "Is LIC single premium endowment good or bad?", "a": "It's 'good' for risk-averse individuals who need a safe, one-time investment with an insurance component. It's 'bad' for investors seeking high, inflation-beating returns, for whom equity mutual funds would be a better choice."}
             ]}
         ]
       }
