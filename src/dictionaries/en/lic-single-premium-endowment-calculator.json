@@ -1,3 +1,4 @@
+
 {
   "meta_title": "LIC Single Premium Endowment Calculator (Plan 917/717) – Premium & Maturity Online",
   "meta_description": "Use LIC Single Premium Endowment Calculator online free to estimate your premium, maturity value, bonus & tax benefits. Plan 917/717 one-time investment returns explained.",
@@ -127,8 +128,8 @@
           {
             "type": "list",
             "items": [
-                "<strong>Guaranteed Surrender Value:</strong> A percentage of the single premium paid (excluding riders/taxes). It's 75% in the first year and 90% thereafter.",
-                "<strong>Special Surrender Value:</strong> This is a higher value that also depends on the vested bonuses and is determined by LIC based on their performance."
+                "<strong>Guaranteed Surrender Value (GSV):</strong> A percentage of the single premium paid (excluding riders/taxes). It's 75% in the first year and 90% thereafter.",
+                "<strong>Special Surrender Value (SSV):</strong> This is a higher value that also depends on the vested bonuses and is determined by LIC based on their performance."
             ]
           },
           {
@@ -157,7 +158,7 @@
                 "items": [
                     {
                         "title": "Taxability Example",
-                        "body": "If your single premium for a ₹5 Lakh Sum Assured is ₹3.5 Lakh, the Sum Assured is less than 10 times the premium. In such cases, the maturity proceeds could become taxable. Always check this ratio before investing."
+                        "body": "If your single premium for a ₹5 Lakh Sum Assured is ₹3.5 Lakh, the Sum Assured is not 10 times the premium. In such cases, the maturity proceeds could become taxable. Always check this ratio before investing."
                     }
                 ]
             }
