@@ -51,15 +51,15 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
      form.resetField('plan', { defaultValue: '' });
   }, [subCategory, form]);
 
-  const hasSubCategories = productCategory === 'insurance_plans';
+  const hasSubCategories = productCategory && dictionary.tool.sub_categories[productCategory];
   
-  const subCategories = hasSubCategories && dictionary.tool.sub_categories[productCategory] 
+  const subCategories = hasSubCategories 
     ? Object.entries(dictionary.tool.sub_categories[productCategory])
     : null;
 
   const plans = hasSubCategories 
-    ? (subCategory && dictionary.tool.plans[subCategory] ? Object.entries(dictionary.tool.plans[subCategory]) : null)
-    : (productCategory && dictionary.tool.plans[productCategory] ? Object.entries(dictionary.tool.plans[productCategory]) : null);
+    ? (subCategory && dictionary.tool.plans[subCategory] ? Object.entries(dictionary.tool.plans[subCategory]) : [])
+    : (productCategory && dictionary.tool.plans[productCategory] ? Object.entries(dictionary.tool.plans[productCategory]) : []);
 
 
   async function handleSubmit(values: LicFormValues) {
@@ -133,7 +133,7 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
                     />
                 )}
 
-                {plans && (
+                {plans && plans.length > 0 && (
                   <FormField
                     control={form.control}
                     name="plan"
