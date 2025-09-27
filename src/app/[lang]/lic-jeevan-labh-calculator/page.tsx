@@ -13,31 +13,29 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     const pageUrl = `${siteUrl}/${params.lang}/lic-jeevan-labh-calculator`;
     const pageDict = (await import(`@/dictionaries/${params.lang}/lic-jeevan-labh-calculator.json`)).default;
 
-    const faqItems = pageDict.article.sections.find((s: any) => s.id === 'faq')?.content.find((c: any) => c.type === 'faq')?.items || [];
     const faqSchema = {
-      "@context":"https://schema.org",
-      "@type":"FAQPage",
-      "mainEntity": faqItems.map((faq: { q: string, a: string }) => ({
-        '@type': 'Question',
-        name: faq.q,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: faq.a.replace(/<[^>]*>/g, ''), // Strip HTML for clean text
-        },
-      })),
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "What is the premium of LIC Jeevan Labh for 10 lakh?", "acceptedAnswer": {"@type": "Answer", "text": "For a 30-year-old, 25-year term, 16-year PPT, premium is ~₹42,200 yearly (before tax)."}},
+        {"@type": "Question", "name": "How is LIC Jeevan Labh maturity calculated?", "acceptedAnswer": {"@type": "Answer", "text": "Maturity = Sum Assured + Simple Reversionary Bonuses + Final Additional Bonus (FAB)."}},
+        {"@type": "Question", "name": "What are LIC Jeevan Labh bonus rates 2025?", "acceptedAnswer": {"@type": "Answer", "text": "LIC declares yearly bonus rates. Historically, ₹40–₹48 per ₹1,000 SA depending on term."}},
+        {"@type": "Question", "name": "Which is better: LIC Jeevan Labh or Jeevan Umang?", "acceptedAnswer": {"@type": "Answer", "text": "Jeevan Labh suits fixed-goal lump sum needs. Jeevan Umang is better for lifelong income."}},
+        {"@type": "Question", "name": "Can I take a loan on Jeevan Labh?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, loans are available after 2 years, up to 80–90% of surrender value."}},
+        {"@type": "Question", "name": "How much is LIC Jeevan Labh 1 crore premium?", "acceptedAnswer": {"@type": "Answer", "text": "For a 35-year-old, 21-year term, ~₹5.1L yearly premium for 15 years. Maturity >₹2 crore (illustrative)."}}
+      ]
     };
     
-    const howToSteps = pageDict.article.sections.find((s: any) => s.id === 'how-to-use')?.content.find((c: any) => c.type === 'steps')?.items || [];
     const howToSchema = {
         "@context": "https://schema.org",
         "@type": "HowTo",
-        "name": "How to Use the LIC Jeevan Labh Calculator",
-        "description": "A step-by-step guide to calculating your premium and maturity benefits for LIC Jeevan Labh Plan 936.",
-        "step": howToSteps.map((step: { title: string, description: string }, index: number) => ({
-            "@type": "HowToStep",
-            "name": `Step ${index + 1}: ${step.title}`,
-            "text": step.description
-        }))
+        "name": "How to Use LIC Jeevan Labh Premium Calculator",
+        "step": [
+            {"@type": "HowToStep", "name": "Enter Basic Details", "text": "Provide your age and desired sum assured."},
+            {"@type": "HowToStep", "name": "Select Term & PPT", "text": "Choose policy term (16, 21, 25 years)."},
+            {"@type": "HowToStep", "name": "Click Calculate", "text": "Our calculator shows premium including GST and maturity estimate."},
+            {"@type": "HowToStep", "name": "View Results", "text": "Check yearly/monthly premium, total paid, and estimated maturity."}
+        ]
     };
     
     const financialProductSchema = {
