@@ -12,10 +12,11 @@ import {
   Building,
   Filter,
   ShieldCheck,
+  Calculator,
 } from 'lucide-react';
-import type { Calculator } from '@/types';
+import type { Calculator as CalculatorType } from '@/types';
 
-export const calculators: Calculator[] = [
+export const calculators: CalculatorType[] = [
   {
     slug: 'lic-premium-calculator',
     title: 'LIC Premium Calculator',
@@ -25,6 +26,16 @@ export const calculators: Calculator[] = [
     link_text: 'Calculate Premium',
     lastModified: '2024-09-25',
     image: '/images/lic-premium-calculator.png'
+  },
+  {
+    slug: 'lic-maturity-calculator',
+    title: 'LIC Maturity Calculator',
+    description: 'Estimate maturity, bonus, and surrender values for LIC plans.',
+    summary: 'Use our free LIC Maturity Calculator to estimate the final maturity value, including bonuses, for your endowment and traditional plans. Download a PDF summary of your results.',
+    icon: Calculator,
+    link_text: 'Calculate Maturity',
+    lastModified: '2024-10-05',
+    image: '/images/lic-maturity-calculator.png'
   },
   {
     slug: 'ppf-calculator',
@@ -137,3 +148,4 @@ export const calculators: Calculator[] = [
     image: '/images/PPF-NPS-FD-SSY-Scheme-selector.png'
   },
 ];
+    

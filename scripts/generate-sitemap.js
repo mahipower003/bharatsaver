@@ -12,6 +12,7 @@ const i18nConfig = {
 // Manually define calculators to avoid import issues
 const calculators = [
   { slug: 'lic-premium-calculator', lastModified: '2024-09-25', priority: 0.9, changefreq: 'monthly' },
+  { slug: 'lic-maturity-calculator', lastModified: '2024-10-05', priority: 0.9, changefreq: 'monthly' },
   { slug: 'lic-jeevan-labh-calculator', lastModified: '2024-09-26', priority: 0.9, changefreq: 'monthly' },
   { slug: 'lic-single-premium-endowment-calculator', lastModified: '2024-10-02', priority: 0.9, changefreq: 'monthly' },
   { slug: 'ppf-calculator', lastModified: '2024-07-28', priority: 0.9, changefreq: 'monthly' },
@@ -101,3 +102,5 @@ function main() {
 }
 
 main();
+
+    
