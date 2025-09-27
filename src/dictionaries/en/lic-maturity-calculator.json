@@ -194,7 +194,7 @@
     {
       "id": "alternatives",
       "icon": "GitCompareArrows",
-      "title": "Compare: LIC Maturity vs. Alternatives",
+      "title": "Compare: LIC Maturity vs. Other Investments",
       "content": [
         {
           "type": "paragraph",
@@ -282,9 +282,8 @@
             {"q": "Can I change Sum Assured during the policy?","a": "No, the Basic Sum Assured is fixed at the time of policy issuance and cannot be changed during the term."},
             {"q": "What happens if I stop paying premiums (paid-up)?","a": "After 2 years, the policy can become 'paid-up' with a reduced Sum Assured. You won't have to pay more premiums, and you will receive the reduced sum assured plus vested bonuses at maturity."},
             {"q": "How often does LIC declare bonus rates?","a": "LIC declares its Simple Reversionary Bonus rates annually, typically after the end of each financial year (March 31st)."}
-          ]
-        }
-      ]
+          ]}
+        ]
     },
     {
       "id": "conclusion",

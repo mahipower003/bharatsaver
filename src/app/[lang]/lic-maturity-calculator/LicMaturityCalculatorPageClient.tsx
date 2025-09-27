@@ -40,11 +40,11 @@ const ContentRenderer = ({ content, lang }: { content: any[], lang: Locale }) =>
       {content.map((item, idx) => {
         switch (item.type) {
           case 'paragraph':
-            return <div key={idx} className="prose dark:prose-invert max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: item.text.replace(/{lang}/g, lang) }} />;
+            return <div key={idx} className="prose dark:prose-invert max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: item.text }} />;
           case 'list':
             return (
               <ul key={idx} className="list-disc pl-5 space-y-2 text-muted-foreground">
-                {item.items.map((li: string, liIdx: number) => <li key={liIdx} dangerouslySetInnerHTML={{ __html: li.replace(/{lang}/g, lang) }} />)}
+                {item.items.map((li: string, liIdx: number) => <li key={liIdx} dangerouslySetInnerHTML={{ __html: li }} />)}
               </ul>
             );
           case 'table':
@@ -55,7 +55,7 @@ const ContentRenderer = ({ content, lang }: { content: any[], lang: Locale }) =>
                   <TableBody>
                     {item.rows.map((row: string[], rIdx: number) => (
                       <TableRow key={rIdx}>
-                        {row.map((cell: string, cIdx: number) => <TableCell key={cIdx} dangerouslySetInnerHTML={{ __html: cell.replace(/{lang}/g, lang) }} />)}
+                        {row.map((cell: string, cIdx: number) => <TableCell key={cIdx} dangerouslySetInnerHTML={{ __html: cell }} />)}
                       </TableRow>
                     ))}
                   </TableBody>
