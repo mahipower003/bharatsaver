@@ -1,9 +1,8 @@
-
 {
-  "meta_title": "LIC Jeevan Labh Premium Calculator (Plan 936) — Premiums & Maturity",
-  "meta_description": "Use the free online LIC Jeevan Labh premium calculator for Plan 936 to instantly estimate maturity benefits, yearly/monthly premiums, and returns. Updated for 2025.",
-  "h1": "LIC Jeevan Labh Premium Calculator (Plan 936) — Calculate Premiums & Maturity Instantly",
-  "description": "<p>LIC's Jeevan Labh (Plan 936) is one of the most popular savings and protection plans due to its limited premium payment options and attractive bonuses. Use our free LIC Jeevan Labh Premium Calculator below to get instant results for your premium and estimated maturity value.</p>",
+  "meta_title": "LIC Jeevan Labh Premium Calculator (Plan 936) — Online, Free (2025)",
+  "meta_description": "Use this free LIC Jeevan Labh Premium Calculator for Plan 936 to instantly estimate maturity benefits, yearly/monthly premiums, bonus, and returns. Updated for 2025.",
+  "h1": "LIC Jeevan Labh Premium Calculator (Plan 936) — Free & Online",
+  "description": "<p>LIC's Jeevan Labh (Plan 936) is one of the most popular savings and protection plans due to its limited premium payment options and attractive bonuses. Use our free LIC Jeevan Labh premium calculator online to get instant results for your premium and estimated maturity value.</p>",
   "tool": {
     "title": "Jeevan Labh Calculator (Plan 936)",
     "form_description": "Enter your details to estimate the premium and maturity benefits.",
@@ -98,13 +97,13 @@
         "content": [
           { "type": "paragraph", "text": "The maturity value is the key attraction of Jeevan Labh. It is calculated as:" },
           { "type": "paragraph", "text": "<strong>Maturity Value = Basic Sum Assured + Vested Simple Reversionary Bonuses + Final Additional Bonus (FAB)</strong>" },
-          { "type": "paragraph", "text": "<strong>Example:</strong> For a 30-year-old taking a ₹10 lakh policy for a 25-year term (16-year PPT), the total premium paid is ~₹6.75 lakh. Based on current illustrative bonus rates (~₹47 per 1000 SA), the estimated maturity could be around <strong>₹27.50 lakh</strong>. This represents a safe, tax-free return of around 5-6% IRR, combined with life cover." }
+          { "type": "paragraph", "text": "The 'LIC Jeevan Labh Maturity Calculator' function of our tool projects this value based on current illustrative bonus rates. For example, for a 30-year-old taking a policy with a **Jeevan Labh maturity value of 10 lakh** (as the sum assured), the final payout after 25 years could be around **₹27.50 lakh**. This represents a safe, tax-free return of around 5-6% IRR, combined with life cover." }
         ]
       },
       {
         "id": "how-to-use",
         "icon": "StepForward",
-        "title": "How to Use Our LIC Jeevan Labh Premium Calculator",
+        "title": "How to Use Our LIC Jeevan Labh Calculator Online Free",
         "content": [
             { "type": "steps", "items": [
                 {"title": "Enter Basic Details", "description": "Input your current age and the Sum Assured (coverage amount) you desire."},
@@ -133,14 +132,14 @@
         "title": "Frequently Asked Questions (FAQ)",
         "content": [
             {"type": "faq", "items": [
-                {"q": "What is the premium of LIC Jeevan Labh for 10 lakh?", "a": "For a 30-year-old taking a 25-year term, the yearly premium for a ₹10 lakh cover is approximately ₹42,200. This can be calculated instantly using our tool."},
-                {"q": "How is LIC Jeevan Labh maturity value calculated?", "a": "The maturity value is the sum of the Basic Sum Assured, all vested Simple Reversionary Bonuses declared over the policy term, and a one-time Final Additional Bonus (FAB), if any."},
+                {"q": "What is the premium of LIC Jeevan Labh for 10 lakh?", "a": "For a 30-year-old taking a 25-year term, the yearly premium for a ₹10 lakh cover is approximately ₹42,200. This can be calculated instantly using our Jeevan Labh 936 calculator online free."},
+                {"q": "How is LIC Jeevan Labh maturity value calculated?", "a": "The maturity value is the sum of the Basic Sum Assured, all vested Simple Reversionary Bonuses declared over the policy term, and a one-time Final Additional Bonus (FAB), if any. Our LIC Jeevan Labh maturity calculator estimates this for you."},
                 {"q": "What are LIC Jeevan Labh bonus rates 2025?", "a": "Bonus rates are declared by LIC annually and are not guaranteed. For recent years, the illustrative rate for Jeevan Labh has been in the range of ₹43-₹47 per ₹1,000 Sum Assured, depending on the policy term."},
-                {"q": "Which is better: LIC Jeevan Labh or Jeevan Umang?", "a": "Jeevan Labh is a limited-pay endowment plan with a fixed maturity date, ideal for goal-based savings. Jeevan Umang is a whole-life plan that provides annual survival benefits after the PPT and matures at age 100. Umang has higher premiums but offers lifelong cover and income."},
+                {"q": "Which is better: LIC Jeevan Labh or Jeevan Umang?", "a": "Jeevan Labh is a limited-pay endowment plan with a fixed maturity date, ideal for goal-based savings. Jeevan Umang is a whole-life plan that provides annual survival benefits after the PPT and matures at age 100. Umang has higher premiums but offers lifelong cover and income. Use a Jeevan Labh vs Jeevan Umang calculator for a detailed comparison."},
                 {"q": "Can I take a loan on my LIC Jeevan Labh policy?", "a": "Yes, a loan can be availed on the policy after at least two full years' premiums have been paid, subject to terms and conditions."},
-                {"q": "Is LIC Jeevan Labh a good investment?", "a": "Jeevan Labh is a safe, traditional insurance-cum-savings product offering tax-free returns of around 5-6% IRR. It's suitable for risk-averse individuals seeking disciplined savings and life cover, but not for those seeking high, market-linked growth."},
+                {"q": "Is LIC Jeevan Labh a good investment?", "a": "Jeevan Labh is a safe, traditional insurance-cum-savings product offering tax-free returns of around 5-6% IRR. It's suitable for risk-averse individuals seeking disciplined savings and life cover, but not for those seeking high, market-linked growth. A good return calculator can illustrate this."},
                 {"q": "How much is the LIC Jeevan Labh 1 crore premium?", "a": "For a 30-year-old with a 25-year term, the yearly premium for a ₹1 crore sum assured is approximately ₹4,15,000. Use our calculator to get an exact figure for your age."},
-                {"q": "What is the surrender value in Jeevan Labh?", "a": "The policy acquires a surrender value after two full years of premium payment. The Guaranteed Surrender Value is a percentage of total premiums paid, but the Special Surrender Value, which depends on LIC's discretion and bonus rates, is usually higher."}
+                {"q": "What is the surrender value in Jeevan Labh?", "a": "The policy acquires a surrender value after two full years of premium payment. A Jeevan Labh surrender value calculator would show the Guaranteed Surrender Value (a percentage of total premiums paid) and the Special Surrender Value, which depends on LIC's discretion and is usually higher."}
             ]}
         ]
       }
