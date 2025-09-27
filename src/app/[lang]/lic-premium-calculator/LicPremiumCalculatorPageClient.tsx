@@ -71,32 +71,28 @@ export default function LicPremiumCalculatorPageClient({
             <CardHeader>
                 <CardTitle className="flex items-center gap-3">
                     <HelpCircle className="h-8 w-8 text-primary"/>
-                    <h2 className="text-2xl font-bold">What is the LIC Premium Calculator?</h2>
+                    <h2 className="text-2xl font-bold">What is this LIC Premium Calculator & How Does It Help You?</h2>
                 </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-                <p className="text-muted-foreground">The LIC Premium Calculator is a free online tool that helps you estimate the premium you’ll need to pay for your chosen LIC policy. Instead of manually calculating or waiting for an agent, this tool gives you an instant, reliable figure, helping you make smarter financial decisions.</p>
+                <p className="text-muted-foreground">Think of the LIC Premium Calculator as your personal financial assistant, designed to make sense of policy costs. Instead of navigating complex documents or waiting for an agent, this tool provides a clear, instant estimate of your premium. You just need to provide a few key details:</p>
                 
-                <div>
-                    <h3 className="font-semibold text-lg mb-2">Inputs We Need</h3>
-                    <ul className="list-disc pl-5 space-y-1 text-muted-foreground">
-                        <li><strong>Age & Gender:</strong> Premiums are based on life expectancy.</li>
-                        <li><strong>Sum Assured:</strong> The total coverage amount you want.</li>
-                        <li><strong>Premium Paying Term (PPT):</strong> The number of years you'll pay the premium.</li>
-                        <li><strong>Payment Frequency:</strong> How often you'll pay (e.g., monthly, yearly).</li>
-                        <li><strong>Riders:</strong> Optional add-ons like Accident or Critical Illness cover.</li>
-                    </ul>
-                </div>
+                <ul className="list-disc pl-5 space-y-1 text-muted-foreground">
+                    <li>Your age and gender</li>
+                    <li>The Sum Assured (the coverage amount you want)</li>
+                    <li>How long you wish to pay premiums (the Premium Paying Term or PPT)</li>
+                    <li>How often you'll pay (monthly, quarterly, half-yearly, or yearly)</li>
+                </ul>
+                <p className="text-muted-foreground">Once you input this information, the calculator does the heavy lifting and presents an estimated premium. It’s a simple, fast, and reliable way to get started with your financial planning.</p>
                 
-                <div>
-                    <h3 className="font-semibold text-lg mb-2">What Results You'll See</h3>
-                     <ul className="list-disc pl-5 space-y-1 text-muted-foreground">
-                        <li><strong>Estimated Premium:</strong> The cost per payment frequency.</li>
-                        <li><strong>GST Breakdown:</strong> The tax component of your premium.</li>
-                        <li><strong>Rider Costs:</strong> The incremental cost for any add-ons.</li>
-                        <li><strong>Plan Details:</strong> The plan number and UIN for verification.</li>
-                    </ul>
-                </div>
+                <h3 className="font-semibold text-lg pt-4">Why Should You Use an Online Premium Calculator?</h3>
+                <p className="text-muted-foreground">Using an LIC premium calculator online for free is about gaining clarity and saving time. Here’s what you achieve in just a few clicks:</p>
+                <ul className="list-disc pl-5 space-y-1 text-muted-foreground">
+                    <li><strong>Eliminate Guesswork:</strong> Get fast, dependable premium estimates without complex math.</li>
+                    <li><strong>Easy Comparisons:</strong> Effortlessly compare what you’d pay for different popular plans like the Jeevan Umang premium calculator vs. the Jeevan Labh premium calculator.</li>
+                    <li><strong>Budget with Confidence:</strong> Instantly see how your premium changes with different payment frequencies, helping you choose what best fits your financial situation.</li>
+                    <li><strong>Full Cost Transparency:</strong> If you're considering riders like Accident or Critical Illness cover, the LIC premium calculator with riders shows you the exact incremental cost.</li>
+                </ul>
             </CardContent>
         </Card>
 
