@@ -206,19 +206,37 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
   
   const handleCSVExport = () => {
     if (!result) return;
-    const headers = ["Description", "Value"];
-    const rows = [
-        ["Basic Sum Assured", result.maturity.sumAssured],
-        ["Total Premium Paid (Approx)", result.totalPremiumPaid],
-        ["Accumulated Bonus (Approx)", result.maturity.bonus],
-        ["Final Addition Bonus (Approx)", result.maturity.fab],
-        ["Total Maturity (Approx)", result.maturity.total],
-    ];
-    let csvContent = headers.join(',') + '\n';
-    rows.forEach(row => {
-        csvContent += row.join(',') + '\n';
-    });
+    const { age, term, sumAssured, addb, termRider } = form.getValues();
     
+    let csvContent = "Parameter,Value\n";
+    csvContent += `Age,${age}\n`;
+    csvContent += `Policy Term,${term}\n`;
+    csvContent += `Sum Assured,${sumAssured}\n`;
+    csvContent += `Accidental Rider,${addb ? 'Yes' : 'No'}\n`;
+    csvContent += `Term Rider,${termRider ? 'Yes' : 'No'}\n\n`;
+
+    csvContent += "First Year Premium\n";
+    csvContent += "Mode,Premium,GST,Total\n";
+    result.firstYear.forEach(row => {
+        csvContent += `${row.mode},${row.premium.toFixed(2)},${row.gst.toFixed(2)},${row.total.toFixed(2)}\n`;
+    });
+    csvContent += "\n";
+
+    csvContent += "Second Year Onwards Premium\n";
+    csvContent += "Mode,Premium,GST,Total\n";
+    result.secondYear.forEach(row => {
+        csvContent += `${row.mode},${row.premium.toFixed(2)},${row.gst.toFixed(2)},${row.total.toFixed(2)}\n`;
+    });
+    csvContent += "\n";
+    
+    csvContent += "Maturity Benefits (Approximate)\n";
+    csvContent += "Description,Value\n";
+    csvContent += `Sum Assured,${result.maturity.sumAssured}\n`;
+    csvContent += `Total Premium Paid,${result.totalPremiumPaid.toFixed(2)}\n`;
+    csvContent += `Accumulated Bonus,${result.maturity.bonus}\n`;
+    csvContent += `Final Additional Bonus,${result.maturity.fab}\n`;
+    csvContent += `Total Maturity,${result.maturity.total}\n`;
+
     const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
@@ -231,7 +249,7 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
   const values = form.getValues();
 
   return (
-    <>
+    <div className="print-hide">
       <Card className="shadow-lg">
         <CardHeader>
           <CardTitle>{dictionary.title}</CardTitle>
@@ -308,7 +326,6 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
                   </div>
               </div>
 
-
               <Button type="submit" disabled={isLoading} className="w-full sm:w-auto">
                 {isLoading ? <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> {dictionary.calculating}</> : dictionary.calculate_button}
               </Button>
@@ -378,15 +395,15 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
              <div>
                 <h3 className="font-semibold mb-2">Maturity vs. Premium Investment</h3>
                 <ResponsiveContainer width="100%" height={300}>
-                    <BarChart data={result.chartData} layout="vertical" margin={{ left: 30 }}>
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis type="number" tickFormatter={(value) => (value / 100000).toLocaleString('en-IN') + 'L'} />
-                        <YAxis type="category" dataKey="name" hide />
-                        <Tooltip formatter={(value: number) => formatCurrency(value)} />
-                        <Legend />
-                        <Bar dataKey="Total Premium Paid" stackId="a" fill="hsl(var(--destructive))" />
-                        <Bar dataKey="Sum Assured" stackId="a" fill="hsl(var(--primary))" />
-                        <Bar dataKey="Estimated Bonus" stackId="a" fill="hsl(var(--accent))" />
+                    <BarChart data={result.chartData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+                         <CartesianGrid strokeDasharray="3 3" />
+                         <XAxis dataKey="name" />
+                         <YAxis tickFormatter={(value) => (value / 100000).toLocaleString('en-IN') + 'L'} />
+                         <Tooltip formatter={(value: number) => formatCurrency(value)} />
+                         <Legend />
+                         <Bar dataKey="Total Premium Paid" stackId="a" fill="hsl(var(--destructive))" />
+                         <Bar dataKey="Sum Assured" stackId="a" fill="hsl(var(--primary))" />
+                         <Bar dataKey="Estimated Bonus" stackId="a" fill="hsl(var(--accent))" />
                     </BarChart>
                 </ResponsiveContainer>
             </div>
@@ -416,7 +433,7 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
           </CardContent>
         </Card>
       )}
-    </>
+    </div>
   );
 }
 

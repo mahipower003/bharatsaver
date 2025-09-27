@@ -35,7 +35,7 @@ export default function LicJeevanLabhCalculatorPageClient({
 }) {
 
   const ArticleContent = () => (
-    <div className="mt-12 space-y-8">
+    <div className="mt-12 space-y-8 print-hide">
       {pageDict.article.sections.map((section: any, index: number) => {
         const Icon = getIcon(section.icon);
         return (
@@ -116,7 +116,7 @@ export default function LicJeevanLabhCalculatorPageClient({
   return (
     <div className="py-12">
       <div className="mx-auto max-w-5xl">
-        <header className="text-center mb-8">
+        <header className="text-center mb-8 print-hide">
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{__html: pageDict.h1}} />
             <div className="mt-4 text-lg text-muted-foreground prose dark:prose-invert max-w-none mx-auto" dangerouslySetInnerHTML={{__html: pageDict.description}} />
         </header>
@@ -127,10 +127,12 @@ export default function LicJeevanLabhCalculatorPageClient({
 
         <ArticleContent />
         
-        <div className="mt-12">
+        <div className="mt-12 print-hide">
             <AuthorCard dictionary={dictionary.author_card} />
         </div>
-        <FooterCta dictionary={dictionary.footer_cta} lang={params.lang} />
+        <div className="print-hide">
+            <FooterCta dictionary={dictionary.footer_cta} lang={params.lang} />
+        </div>
       </div>
     </div>
   );
