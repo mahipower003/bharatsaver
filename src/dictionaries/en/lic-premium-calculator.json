@@ -9,8 +9,8 @@
     "categories": {
       "insurance_plans": "Insurance Plans",
       "pension_plans": "Pension Plans",
-      "ulip_plans": "ULIP Plans",
-      "health_plans": "Health Plans"
+      "ulip_plans": "Unit Linked Plans",
+      "micro_insurance_plans": "Micro Insurance Plans"
     },
     "sub_category_label": "Sub Category",
     "sub_category_placeholder": "Select a sub category",
@@ -264,3 +264,5 @@
     "disclaimer": "This LIC Premium Calculator provides estimates for informational purposes only. The final payable premium and policy terms are determined by LIC of India at the time of underwriting. BharatSaver is not affiliated with LIC."
   }
 }
+
+    
