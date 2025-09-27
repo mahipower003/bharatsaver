@@ -6,10 +6,10 @@ import { AuthorCard } from "@/components/layout/AuthorCard";
 import type { Dictionary } from "@/lib/types";
 import type { Locale } from "@/lib/i18n-config";
 import { FooterCta } from "@/components/layout/FooterCta";
-import { BarChart2, CheckCircle, Lightbulb, TrendingUp, HelpCircle, FileText, Download, Users, Star, Smile, Search, SlidersHorizontal, Calculator, Clock, GitCompareArrows, StepForward, FileDown, BookUser, Link as LinkIcon, Table } from "lucide-react";
+import { BarChart2, CheckCircle, Lightbulb, TrendingUp, HelpCircle, FileText, Download, Users, Star, Smile, Search, SlidersHorizontal, Calculator, Clock, GitCompareArrows, StepForward, FileDown, BookUser, Link as LinkIcon } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Table as UiTable, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 export default function LicPremiumCalculatorPageClient({
   params,
@@ -33,7 +33,7 @@ export default function LicPremiumCalculatorPageClient({
             </CardHeader>
             <CardContent>
                 <p className="text-muted-foreground mb-4">Here’s a quick look at estimated yearly premiums for a ₹10 Lakh Sum Assured across popular plans. Use the calculator above for precise figures based on your profile.</p>
-                <UiTable>
+                <Table>
                     <TableHeader>
                         <TableRow>
                             <TableHead>Age</TableHead>
@@ -62,7 +62,7 @@ export default function LicPremiumCalculatorPageClient({
                             <TableCell>~ ₹95,000</TableCell>
                         </TableRow>
                     </TableBody>
-                </UiTable>
+                </Table>
                 <p className="text-xs text-muted-foreground mt-2 italic">Disclaimer: These are illustrative estimates for a non-smoker male, standard life. Actuals will vary.</p>
             </CardContent>
         </Card>
@@ -380,3 +380,5 @@ export default function LicPremiumCalculatorPageClient({
     </div>
   );
 }
+
+    

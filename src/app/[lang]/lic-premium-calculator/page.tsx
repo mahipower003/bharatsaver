@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {
+       {
         "@type": "Question",
         "name": "How to calculate LIC premium for Jeevan Umang?",
         "acceptedAnswer": {
@@ -147,7 +147,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       "@id": pageUrl
     },
     "headline": "LIC Premium Calculator — Free Online LIC Premium Calculator (2025)",
-    "description": "Select your LIC plan and instantly open the calculator. Compare premiums for Jeevan Umang, Jeevan Utsav, Jeevan Labh and more. Free, accurate LIC premium estimates and plan details.",
+    "description": "Calculate LIC premium instantly for Jeevan Umang, Jeevan Utsav, Jeevan Labh & more. Use plan presets, add riders, compare monthly vs yearly and download results.",
     "author": {
       "@type": "Person",
       "name": "Mahesh Chaube",
@@ -218,8 +218,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   };
   
   return {
-    title: "LIC Premium Calculator — Free Online LIC Premium Calculator (2025) | BharatSaver",
-    description: "Select your LIC plan and instantly open the calculator. Compare premiums for Jeevan Umang, Jeevan Utsav, Jeevan Labh and more. Free, accurate LIC premium estimates and plan details.",
+    title: "LIC Premium Calculator — Free Online LIC Premium Calculator | BharatSaver",
+    description: "Calculate LIC premium instantly for Jeevan Umang, Jeevan Utsav, Jeevan Labh & more. Use plan presets, add riders, compare monthly vs yearly and download results.",
     alternates: {
       canonical: `${siteUrl}/en/lic-premium-calculator`,
        languages: i18nConfig.locales.reduce((acc, locale) => {
@@ -260,3 +260,5 @@ export default async function LicPremiumCalculatorPage({ params }: { params: { l
     </>
   );
 }
+
+    
