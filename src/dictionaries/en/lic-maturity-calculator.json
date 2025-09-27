@@ -99,26 +99,26 @@
   "faq": {
     "title": "Frequently Asked Questions (FAQs)",
     "questions": [
-      {
-        "q": "How do I calculate my LIC policy maturity amount?",
-        "a": "Enter your sum assured, policy term, and an illustrative bonus rate into our calculator. The basic formula is: Maturity = Sum Assured + Vested Bonuses + Final Additional Bonus."
-      },
-      {
-        "q": "Does the LIC maturity calculator include bonus?",
-        "a": "Yes, our tool allows you to input an assumed bonus rate (per ₹1,000 Sum Assured) to get a realistic projection of your maturity value, as bonuses form a major part of the final payout."
-      },
-      {
-        "q": "How can I check my LIC policy maturity amount online?",
-        "a": "You can get an accurate estimate using this calculator. For the exact official amount for an already matured policy, you would need to log in to the LIC customer portal or contact your agent."
-      },
-      {
-        "q": "Is the maturity amount of an LIC policy taxable?",
-        "a": "Generally, no. For most policies, the maturity amount is tax-free under Section 10(10D) of the Income Tax Act. The main condition is that the annual premium should not exceed 10% of the sum assured."
-      },
-      {
-        "q": "What is the surrender value of my LIC policy after 3 years?",
-        "a": "After 3 years, the surrender value is typically 30% of premiums paid (excluding the first year's premium and rider costs), plus a portion of vested bonuses. Our calculator can provide a more accurate estimate based on your specific policy details."
-      }
+      {"q": "How do I calculate my LIC policy maturity amount?","a": "Enter sum assured, policy term, and an illustrative bonus rate per ₹1,000 SA into the calculator. Maturity = Sum Assured + (Vested bonus × policy term) + Final Additional Bonus (if any)."},
+      {"q": "Does the LIC maturity calculator include bonus and FAB?","a": "Yes. You can input an illustrative bonus rate and Final Additional Bonus (FAB) rate per ₹1,000 SA or use historical averages to get a comprehensive estimate."},
+      {"q": "How accurate are maturity calculator estimates?","a": "Estimates use the inputs and illustrative bonus/FAB rates. Actual maturity depends on LIC's declared bonuses and final underwriting; treat results as indicative, not binding."},
+      {"q": "What is the formula for LIC maturity?","a": "The basic formula is: Basic Sum Assured + Vested Simple Reversionary Bonuses + Final Additional Bonus (FAB)."},
+      {"q": "How do I find the correct bonus rate to use?","a": "Use the bonus rate shown on your policy statement or the published LIC bonus notifications. If unavailable, use a historical average (e.g., 40–48 per ₹1,000 SA for typical endowment plans)."},
+      {"q": "Does GST affect my maturity?","a": "No, GST is paid on premiums and does not affect the maturity amount calculation. The maturity consists of the Sum Assured and bonuses only."},
+      {"q": "How is surrender value calculated for LIC policies?","a": "Surrender value is the higher of Guaranteed Surrender Value (a % of premiums paid) or Special Surrender Value (based on vested bonuses). Our calculator provides an estimate for both."},
+      {"q": "What is paid-up value and how is it computed?","a": "If you stop paying premiums after two full years, your policy becomes 'paid-up'. The Sum Assured is reduced proportionately to the number of premiums paid versus total payable."},
+      {"q": "When can I take a loan on my LIC policy?","a": "You can typically take a loan after the policy has acquired a surrender value, which is usually after paying premiums for two full years."},
+      {"q": "Is LIC maturity tax-free under Section 10(10D)?","a": "Generally yes, but the exemption depends on rules, notably if the annual premium does not exceed 10% of the Sum Assured for most policies. Always check your specific policy documents."},
+      {"q": "What is modal loading and how does it affect premiums?","a": "Modal loading is an extra charge for paying premiums more frequently than annually (i.e., monthly, quarterly, half-yearly). Paying annually is the cheapest option."},
+      {"q": "Can NRIs use the LIC maturity calculator?","a": "Yes, NRIs can use this calculator for estimation purposes. However, investment rules for NRIs are subject to FEMA regulations, so they should consult with LIC or an agent before purchasing."},
+      {"q": "How do riders affect my premium and maturity?","a": "Riders (like accidental death benefit) increase your premium but do not increase the maturity Sum Assured. The maturity calculation remains SA + Bonuses + FAB."},
+      {"q": "What is Final Additional Bonus (FAB)?","a": "FAB is a one-time loyalty bonus paid by LIC at maturity on long-term policies (typically 15+ years). It is not guaranteed and depends on LIC's profitability."},
+      {"q": "How to calculate IRR on LIC policy?","a": "The Internal Rate of Return (IRR) is the discount rate that makes the net present value of all cash flows (premiums paid and maturity received) equal to zero. Our calculator provides an approximate IRR for your policy."},
+      {"q": "Which LIC plans pay higher maturity?","a": "Plans with longer terms and higher participation in profits (like Jeevan Anand or Jeevan Umang) tend to accumulate larger bonuses, leading to higher maturity values compared to pure endowment plans."},
+      {"q": "How to compare LIC maturity against FD/PPF?","a": "Compare the post-tax IRR. LIC maturity is often tax-free, making its ~6% return equivalent to a ~8.5% pre-tax return from an FD for someone in the 30% tax bracket. PPF is also tax-free and often offers a higher rate than LIC."},
+      {"q": "Can I change Sum Assured during the policy?","a": "No, the Basic Sum Assured is fixed at the time of policy issuance and cannot be changed during the term."},
+      {"q": "What happens if I stop paying premiums (paid-up)?","a": "After 2 years, the policy becomes 'paid-up' with a reduced Sum Assured. You will not have to pay more premiums, and you will receive the reduced sum assured plus vested bonuses at maturity."},
+      {"q": "How often does LIC declare bonus rates?","a": "LIC declares its Simple Reversionary Bonus rates annually, typically after the end of each financial year."}
     ]
   },
   "next_steps": {
