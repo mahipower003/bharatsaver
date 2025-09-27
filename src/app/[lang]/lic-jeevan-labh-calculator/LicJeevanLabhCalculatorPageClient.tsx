@@ -9,7 +9,7 @@ import { FooterCta } from "@/components/layout/FooterCta";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { CheckCircle, HelpCircle, ShieldCheck, TrendingUp, SlidersHorizontal, BarChart2, StepForward } from "lucide-react";
+import { CheckCircle, HelpCircle, ShieldCheck, TrendingUp, SlidersHorizontal, BarChart2, StepForward, GitCompareArrows, FileText } from "lucide-react";
 
 function getIcon(iconName: string) {
     switch (iconName) {
@@ -20,6 +20,8 @@ function getIcon(iconName: string) {
         case 'SlidersHorizontal': return SlidersHorizontal;
         case 'BarChart2': return BarChart2;
         case 'StepForward': return StepForward;
+        case 'GitCompareArrows': return GitCompareArrows;
+        case 'FileText': return FileText;
         default: return HelpCircle;
     }
 }
@@ -91,6 +93,17 @@ export default function LicJeevanLabhCalculatorPageClient({
                             ))}
                         </ol>
                      );
+                  case 'examples':
+                    return (
+                        <div key={idx} className="space-y-4">
+                            {item.items.map((example: {title: string, body: string}, eIdx: number) => (
+                                <div key={eIdx} className="bg-muted/50 p-4 rounded-lg">
+                                    <h3 className="font-semibold text-lg">{example.title}</h3>
+                                    <div className="mt-2 text-muted-foreground prose prose-sm dark:prose-invert max-w-none" dangerouslySetInnerHTML={{__html: example.body}}></div>
+                                </div>
+                            ))}
+                        </div>
+                    );
                   case 'faq':
                     return (
                         <Accordion key={idx} type="single" collapsible className="w-full">
