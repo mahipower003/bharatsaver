@@ -54,16 +54,16 @@ export default function LicSinglePremiumEndowmentCalculatorPageClient({
       }))
     };
     
+    const howToSteps = pageDict.article.sections.find((s:any) => s.id === 'how-to-use')?.content[0]?.items ?? [];
     const howToSchema = {
         "@context": "https://schema.org",
         "@type": "HowTo",
         "name": "How to Use LIC Single Premium Endowment Calculator",
-        "step": [
-            {"@type": "HowToStep", "name": "Enter Basic Details", "text": "Provide your age and desired sum assured."},
-            {"@type": "HowToStep", "name": "Select Term", "text": "Choose your desired policy term (10 to 25 years)."},
-            {"@type": "HowToStep", "name": "Click 'Calculate'", "text": "Our calculator instantly shows your one-time premium, including GST, and the estimated maturity benefits."},
-            {"@type": "HowToStep", "name": "View Your Projected Returns", "text": "Check your total maturity amount, including bonuses, to understand the plan's potential."}
-        ]
+        "step": howToSteps.map((step: {title: string; description: string;}, index: number) => ({
+            "@type": "HowToStep",
+            "name": `Step ${index + 1}: ${step.title}`,
+            "text": step.description
+        }))
     };
     
     const financialProductSchema = {
