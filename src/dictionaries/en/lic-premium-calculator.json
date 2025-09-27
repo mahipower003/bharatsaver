@@ -1,95 +1,214 @@
 
 {
-  "h1": "LIC Premium Calculator",
-  "description": "Select an LIC plan below to open its dedicated premium calculator.",
-  "title": "LIC Plan Selector",
-  "form_description": "Find the specific LIC plan you're interested in to calculate its premium.",
-  "category_label": "Product Category",
-  "categories": {
-    "insurance_plans": "Insurance Plans",
-    "pension_plans": "Pension Plans",
-    "ulip_plans": "Unit Linked Plans",
-    "micro_insurance_plans": "Micro Insurance Plans"
+  "h1": "LIC Premium Calculator — Free Online Tool (2025)",
+  "description": "Calculate LIC premiums for Jeevan Umang, Jeevan Utsav, Jeevan Labh & more. Use our free, instantly updated online calculator. Supports all riders and payment modes.",
+  "tool": {
+    "title": "LIC Plan Selector",
+    "form_description": "Find the specific LIC plan you're interested in to calculate its premium.",
+    "category_label": "Product Category",
+    "categories": {
+      "insurance_plans": "Insurance Plans"
+    },
+    "sub_category_label": "Sub Category",
+    "sub_category_placeholder": "Select a sub category",
+    "sub_categories": {
+      "insurance_plans": {
+        "endowment_plans": "Endowment Plans",
+        "whole_life_plans": "Whole Life Plans",
+        "money_back_plans": "Money Back Plans",
+        "term_assurance_plans": "Term Assurance Plans",
+        "rider": "Rider"
+      }
+    },
+    "plan_label": "Select LIC Plan",
+    "plan_placeholder": "Select a plan",
+    "plans": {
+      "endowment_plans": {
+        "jeevan_labh": "LIC's Jeevan Labh"
+      },
+      "whole_life_plans": {
+        "jeevan_utsav": "LIC's Jeevan Utsav",
+        "jeevan_umang": "LIC's Jeevan Umang"
+      }
+    },
+    "view_calculator_button": "View Calculator"
   },
-  "sub_category_label": "Sub Category",
-  "sub_category_placeholder": "Select a sub category",
-  "sub_categories": {
-    "insurance_plans": {
-      "endowment_plans": "Endowment Plans",
-      "whole_life_plans": "Whole Life Plans",
-      "money_back_plans": "Money Back Plans",
-      "term_assurance_plans": "Term Assurance Plans",
-      "rider": "Rider"
-    }
-  },
-  "plan_label": "Select LIC Plan",
-  "plan_placeholder": "Select a plan",
-  "plans": {
-    "endowment_plans": {
-      "bima_jyoti": "LIC's Bima Jyoti",
-      "dhan_rekha": "LIC's Dhan Rekha",
-      "bima_ratna": "LIC's Bima Ratna",
-      "single_premium_endowment": "LIC's Single Premium Endowment Plan",
-      "jeevan_labh": "LIC's Jeevan Labh",
-      "aadhaar_stambh": "LIC's Aadhaar Stambh",
-      "aadhaar_shila": "LIC's Aadhaar Shila"
+  "article": {
+    "sections": [
+      {
+        "id": "quick-answer",
+        "icon": "TrendingUp",
+        "title": "Quick Answer: Sample LIC Premium Estimates",
+        "content": [
+          { "type": "paragraph", "text": "Here’s a quick look at estimated yearly premiums for a ₹10 Lakh Sum Assured across popular plans. Use the calculator above for precise figures based on your profile." },
+          {
+            "type": "table",
+            "headers": ["Age", "Jeevan Umang", "Jeevan Labh (16 yr PPT)", "Jeevan Utsav"],
+            "rows": [
+              ["30 Years", "~ ₹56,000", "~ ₹58,500", "~ ₹65,000"],
+              ["35 Years", "~ ₹68,000", "~ ₹61,000", "~ ₹78,000"],
+              ["40 Years", "~ ₹84,000", "~ ₹64,500", "~ ₹95,000"]
+            ],
+            "footer": "Disclaimer: These are illustrative estimates for a non-smoker male, standard life. Actuals will vary."
+          }
+        ]
+      },
+      {
+        "id": "what-is-calculator",
+        "icon": "HelpCircle",
+        "title": "What is this LIC Premium Calculator & How Does It Help You?",
+        "content": [
+          { "type": "paragraph", "text": "Think of the LIC Premium Calculator as your personal financial assistant, designed to make sense of policy costs. Instead of navigating complex documents or waiting for an agent, this tool provides a clear, instant estimate of your premium. You just need to provide a few key details:" },
+          { "type": "list", "items": ["Your age and gender", "The Sum Assured (the coverage amount you want)", "How long you wish to pay premiums (the Premium Paying Term or PPT)", "How often you'll pay (monthly, quarterly, half-yearly, or yearly)"] },
+          { "type": "paragraph", "text": "Once you input this information, the calculator does the heavy lifting and presents an estimated premium. It’s a simple, fast, and reliable way to get started with your financial planning." }
+        ]
+      },
+      {
+        "id": "why-use-calculator",
+        "icon": "HelpCircle",
+        "title": "Why Should You Use a Free LIC Online Premium Calculator?",
+        "content": [
+            { "type": "paragraph", "text": "Using an LIC premium calculator online for free is about gaining clarity and saving time. Here’s what you achieve in just a few clicks:" },
+            { "type": "list", "items": [
+                "<strong>Eliminate Guesswork:</strong> Get fast, dependable premium estimates without complex math.",
+                "<strong>Easy Comparisons:</strong> Effortlessly compare what you’d pay for different popular plans like the Jeevan Umang premium calculator vs. the Jeevan Labh premium calculator.",
+                "<strong>Budget with Confidence:</strong> Instantly see how your premium changes with different payment frequencies, helping you choose what best fits your financial situation.",
+                "<strong>Full Cost Transparency:</strong> If you're considering riders like Accident or Critical Illness cover, the LIC premium calculator with riders shows you the exact incremental cost."
+            ]}
+        ]
+      },
+      {
+        "id": "how-to-use",
+        "icon": "StepForward",
+        "title": "How to Use the LIC Premium Calculator (Step-by-Step)",
+        "content": [
+            { "type": "steps", "items": [
+                {"title": "Select Your Plan", "description": "Start by choosing your desired LIC plan from the dropdown menus. Using a preset like 'Jeevan Umang' ensures the calculator uses the correct parameters for that policy."},
+                {"title": "Enter Your Details", "description": "Input your age, gender, desired Sum Assured (the coverage amount), and the Premium Paying Term (PPT)."},
+                {"title": "Click Calculate", "description": "The tool processes your inputs using LIC's formulas to determine the base premium before any taxes or optional riders."},
+                {"title": "View Your Results", "description": "The calculator displays your estimated premium for yearly, half-yearly, quarterly, and monthly frequencies, allowing you to see which payment plan best suits your budget."}
+            ]}
+        ]
+      },
+      {
+        "id": "examples",
+        "icon": "BarChart2",
+        "title": "Real Examples of LIC Premium Calculation",
+        "content": [
+            {"type": "examples", "items": [
+                {"title": "Example 1: Long-Term Planning with Jeevan Umang", "body": "A 30-year-old male planning for retirement with <strong>Jeevan Umang</strong>. He wants a Sum Assured of <strong>₹5,00,000</strong> and will pay premiums for <strong>20 years</strong>. His estimated yearly premium would be approximately <strong>₹34,500</strong>. This breaks down to about <strong>₹2,875 per month</strong>, making it easier to budget."},
+                {"title": "Example 2: Adding a Safety Net with Jeevan Utsav", "body": "A 28-year-old considering <strong>Jeevan Utsav</strong> for a <strong>₹7,50,000</strong> cover. The base premium is around ₹41,200. By toggling the 'Accident Benefit' rider, they'd instantly see the premium rise to about <strong>₹43,000</strong>. This transparency makes the cost of extra protection crystal clear."}
+            ]},
+            {"type": "paragraph", "text": "<p class='text-sm italic mt-4 text-muted-foreground'>Disclaimer: These figures are for illustration only. Your final premium is always determined by LIC after their underwriting process.</p>"}
+        ]
+      },
+      {
+        "id": "plan-presets",
+        "icon": "SlidersHorizontal",
+        "title": "Plan Presets Available In Our Calculator",
+        "content": [
+            {"type": "paragraph", "text": "Different LIC plans have unique rules. Our presets automatically apply the correct parameters, giving you a more accurate estimate. We support popular plans including:"},
+            {"type": "list", "items": [
+                "<strong>Jeevan Umang</strong> (UIN: 512N317V02)",
+                "<strong>Jeevan Utsav</strong> (UIN: 512N361V01)",
+                "<strong>Jeevan Labh</strong> (UIN: 512N304V02)",
+                "<strong>Index Plus</strong> (UIN: 512N355V01)",
+                "<strong>New Pension Plus</strong> (UIN: 512N338V02)",
+                "<strong>Saral Pension</strong> (UIN: 512N342V02)"
+            ]}
+        ]
+      },
+      {
+        "id": "payment-modes",
+        "icon": "Clock",
+        "title": "LIC Premium: Monthly vs Yearly Payments",
+        "content": [
+            {"type": "paragraph", "text": "Choosing between monthly and yearly payments affects your total outflow. While monthly payments are lighter on the wallet, they come with a small 'modal loading' charge. Paying annually is almost always cheaper."},
+            {"type": "paragraph", "text": "<h3 class='font-semibold text-lg my-3'>How Conversion Works</h3><p class='text-muted-foreground'>LIC applies specific factors to convert the yearly premium. Here's the formula:</p>"},
+            {"type": "list", "items": [
+                "<strong>Half-yearly Premium</strong> = Yearly Premium × 0.5098",
+                "<strong>Quarterly Premium</strong> = Yearly Premium × 0.2575",
+                "<strong>Monthly Premium</strong> = Yearly Premium × 0.0879"
+            ]},
+            {"type": "paragraph", "text": "<p class='text-sm italic text-muted-foreground'>Our calculator does this math automatically when you switch frequencies.</p>"}
+        ]
+      },
+      {
+        "id": "riders",
+        "icon": "Smile",
+        "title": "How Riders Impact Your Premium",
+        "content": [
+            {"type": "paragraph", "text": "Riders are optional add-ons that provide extra coverage for specific events. While incredibly useful, they come at an additional cost."},
+            {"type": "examples", "items": [
+                {"title": "Example: Adding an Accidental Death & Disability Rider", "body": "For a 30-year-old male with a ₹10 lakh Sum Assured, the base premium might be ₹25,000. Adding an Accidental Death & Disability Benefit Rider for the same amount could increase the premium by ₹1,000 - ₹1,500 per year. Our calculator lets you toggle these riders to see the exact financial impact in real-time."}
+            ]}
+        ]
+      },
+      {
+        "id": "tips",
+        "icon": "CheckCircle",
+        "title": "Tips to Lower Your LIC Premium",
+        "content": [
+            {"type": "paragraph", "text": "Here are a few actionable strategies to make your life insurance more affordable:"},
+            {"type": "list", "items": [
+                "<strong>Pay Annually:</strong> You can save 2-3% of your premium compared to paying monthly due to modal loading charges.",
+                "<strong>Start Early:</strong> The most significant factor. Buying a policy in your 20s can be up to 30% cheaper than buying the same policy in your late 30s.",
+                "<strong>Re-evaluate Riders:</strong> Only add the riders you genuinely need. While helpful, they increase the cost.",
+                "<strong>Compare Plans:</strong> Don't just settle on the first plan you see. A different product might offer similar benefits for a lower premium."
+            ]}
+        ]
+      },
+      {
+        "id": "faq",
+        "icon": "Search",
+        "title": "Frequently Asked Questions (FAQ)",
+        "content": [
+            {"type": "faq", "items": [
+                {"q": "How to calculate LIC premium for Jeevan Umang?", "a": "Use the plan rate per ₹1,000 Sum Assured × (Sum Assured/1,000), apply the payment mode factor (YR 1.00, HY ~0.51, Q ~0.26, M ~0.087), add rider charges, then add applicable GST. Exact rates depend on age, PPT, and riders."},
+                {"q": "Which LIC plan has the lowest premium for age 30?", "a": "Pure term plans (e.g., LIC Tech Term/Jeevan Amar) have the lowest premiums for 30-year-olds; savings plans like Jeevan Labh/Umang cost more because they build benefits."},
+                {"q": "How is LIC premium calculated for monthly payment?", "a": "Start with the annual base premium and multiply by the monthly modal factor (~0.087), then add rider charges and GST."},
+                {"q": "Does LIC charge GST on premium?", "a": "Yes. Typical effective GST is ~4.5% in the first year and ~2.25% on renewals for traditional plans, ~18% on pure-risk term premiums, and ~1.8% on many single-premium plans (rates may change by regulation)."},
+                {"q": "What is the formula to calculate LIC premium?", "a": "Approx: Premium ≈ (Base rate per ₹1,000 × SA/1,000 × modal factor) + rider costs − rebates (mode/SA) + GST. Actual premiums are as per LIC’s rate tables and underwriting."},
+                {"q": "How do riders affect LIC premium?", "a": "Each rider (e.g., Accidental Death/Disability, Term Rider, Critical Illness) adds its own charge to the base premium; PWB waives future premiums on disability but still has a cost."},
+                {"q": "How to reduce LIC premium without reducing sum assured?", "a": "Buy at a younger age, choose annual mode, opt for a longer PPT, avoid unnecessary riders, and use higher SA slabs to get rebates."},
+                {"q": "Is it cheaper to pay LIC premium annually?", "a": "Usually yes—annual mode avoids modal loading from monthly/quarterly payments and can minimize GST impact."},
+                {"q": "Can I change premium paying term later?", "a": "Generally no; PPT is fixed after policy issuance. You can change payment mode or use options like paid-up/surrender, subject to policy rules."},
+                {"q": "How accurate are online LIC premium calculators?", "a": "They’re close for quick estimates but final premiums depend on underwriting, medicals, exact rider choices, GST, and current rate tables."},
+                {"q": "Does LIC give concession for females?", "a": "Yes, many LIC plans offer lower premiums for female lives or specific female concessions, subject to plan rules."},
+                {"q": "How does age affect LIC premium?", "a": "Premiums rise with age because mortality risk increases; buying earlier locks in lower rates for the term."},
+                {"q": "How to calculate premium for single premium plans?", "a": "Single Premium ≈ (Single-premium rate per ₹1,000 × SA/1,000) − applicable rebates + GST (often ~1.8% on eligible plans)."},
+                {"q": "How to compute maturity payout (basic formula)?", "a": "For endowments: Maturity ≈ Sum Assured + vested bonus + final additional bonus (if any) − dues; for money-back, add the same but you’ve already received periodic survival benefits earlier."},
+                {"q": "How to compare Jeevan Umang vs Jeevan Labh for same sum assured?", "a": "Umang is whole-life with 8% SA yearly survival benefit after PPT and maturity at age 100—premium is higher but gives lifelong cover/income; Labh is a limited-premium endowment with a lump-sum maturity at term and generally lower premium."}
+            ]}
+        ]
+      },
+      {
+        "id": "next-steps",
+        "icon": "GitCompareArrows",
+        "title": "Next Steps After Using the Calculator",
+        "content": [
+            {"type": "list", "items": [
+                "<strong>Download Your Results:</strong> Save a PDF of your calculation so you can refer to it later or discuss it with your family.",
+                "<strong>Compare Plans:</strong> Run a few more calculations for other plans to see which one gives you the best value for your needs.",
+                "<strong>Consult an Advisor:</strong> If you're still unsure, request personalized help from our team of Certified Financial Planners.",
+                "<strong>Contact an LIC Agent:</strong> When you're ready to buy, contact an official LIC agent to get a final quote and complete the purchase process."
+            ]}
+        ]
+      },
+      {
+        "id": "references",
+        "icon": "BookUser",
+        "title": "Sources & References",
+        "content": [
+            {"type": "paragraph", "text": "We use official LIC plan documents, UINs, and actuarial formulas for our calculations. For more details, you can refer to LIC's official website."},
+            {"type": "link", "href": "https://licindia.in/", "text": "Visit LIC of India Official Website"}
+        ]
+      }
+    ],
+    "conclusion": {
+      "title": "Your First Step to Financial Security",
+      "body": "Figuring out your LIC premium is the first, most important step towards securing your family's future. By using this calculator, you've replaced guesswork with clarity. You can now confidently budget for your policy, compare different options, and make a decision that perfectly aligns with your financial goals. Your journey to financial peace of mind starts here."
     },
-    "whole_life_plans": {
-      "jeevan_utsav": "LIC's Jeevan Utsav",
-      "jeevan_umang": "LIC's Jeevan Umang"
-    },
-    "money_back_plans": {
-      "jeevan_shiromani": "LIC's Jeevan Shiromani",
-      "bima_shree": "LIC's Bima Shree",
-      "jeevan_tarun": "LIC's Jeevan Tarun",
-      "childrens_money_back": "LIC's Children's Money Back Plan",
-      "new_money_back_20": "LIC's New Money Back Plan - 20 Years",
-      "new_money_back_25": "LIC's New Money Back Plan - 25 Years"
-    },
-    "term_assurance_plans": {
-      "saral_jeevan_bima": "LIC's Saral Jeevan Bima",
-      "jeevan_kiran": "LIC's Jeevan Kiran",
-      "new_tech_term": "LIC's New Tech-Term",
-      "new_jeevan_amar": "LIC's New Jeevan Amar"
-    },
-    "rider": {
-      "accidental_death_disability": "LIC's Accidental Death and Disability Benefit Rider",
-      "accident_benefit": "LIC's Accident Benefit Rider",
-      "new_critical_illness": "LIC's New Critical Illness Benefit Rider",
-      "new_term_assurance": "LIC's New Term Assurance Rider",
-      "premium_waiver": "LIC's Premium Waiver Benefit Rider"
-    },
-    "pension_plans": {
-      "jeevan_shanti": "LIC's Jeevan Shanti",
-      "new_jeevan_shanti": "LIC's New Jeevan Shanti",
-      "saral_pension": "LIC's Saral Pension"
-    },
-    "ulip_plans": {
-      "nivesh_plus": "LIC's Nivesh Plus",
-      "siip": "LIC's SIIP",
-      "new_pension_plus": "LIC's New Pension Plus",
-      "new_endowment_plus": "LIC's New Endowment Plus"
-    },
-    "micro_insurance_plans": {
-      "bhagya_lakshmi": "LIC's Bhagya Lakshmi",
-      "new_jeevan_mangal": "LIC's New Jeevan Mangal Plan",
-      "micro_bima": "LIC's Micro Bima"
-    }
-  },
-  "view_calculator_button": "View Calculator",
-  "faq_title": "Frequently Asked Questions",
-  "faqs": [
-    {
-      "question": "How do I use this page?",
-      "answer": "Select the product category, sub-category, and the specific LIC plan you are interested in from the dropdown menus. Then, click 'View Calculator' to be taken to a dedicated page for that plan's premium calculation."
-    },
-    {
-      "question": "Is this an official LIC calculator?",
-      "answer": "No, this is an independent website providing tools for estimation. It is not an official LIC calculator. For exact premium quotes, please contact an authorized LIC agent."
-    }
-  ],
-  "conclusion": {
-    "title": "Plan Your Financial Protection",
-    "body": "Life insurance is a crucial step in securing your family's financial future. Use our tools to get a quick estimate of the premium, making it easier to plan your budget and choose the right policy."
+    "disclaimer": "This LIC Premium Calculator provides estimates for informational purposes only. The final payable premium and policy terms are determined by LIC of India at the time of underwriting. BharatSaver is not affiliated with LIC."
   }
 }
