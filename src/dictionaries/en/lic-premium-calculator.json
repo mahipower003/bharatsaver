@@ -1,3 +1,4 @@
+
 {
   "h1": "LIC Premium Calculator — Free Online Tool (2025)",
   "description": "Calculate LIC premiums for Jeevan Umang, Jeevan Utsav, Jeevan Labh & more. Use our free, instantly updated online calculator. Supports all riders and payment modes.",
@@ -9,8 +10,7 @@
       "insurance_plans": "Insurance Plans",
       "pension_plans": "Pension Plans",
       "ulip_plans": "ULIP Plans",
-      "health_plans": "Health Plans",
-      "riders": "Riders"
+      "health_plans": "Health Plans"
     },
     "sub_category_label": "Sub Category",
     "sub_category_placeholder": "Select a sub category",
@@ -19,7 +19,8 @@
         "endowment_plans": "Endowment Plans",
         "whole_life_plans": "Whole Life Plans",
         "money_back_plans": "Money Back Plans",
-        "term_assurance_plans": "Term Assurance Plans"
+        "term_assurance_plans": "Term Assurance Plans",
+        "riders": "Riders"
       }
     },
     "plan_label": "Select LIC Plan",
