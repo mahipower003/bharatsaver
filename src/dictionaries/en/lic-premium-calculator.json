@@ -1,4 +1,3 @@
-
 {
   "h1": "LIC Premium Calculator — Free Online Tool (2025)",
   "description": "Calculate LIC premiums for Jeevan Umang, Jeevan Utsav, Jeevan Labh & more. Use our free, instantly updated online calculator. Supports all riders and payment modes.",
@@ -27,33 +26,28 @@
     "plan_placeholder": "Select a plan",
     "plans": {
       "endowment_plans": {
-        "single_premium_endowment_plan": "LIC's Single Premium Endowment Plan (717)",
-        "new_endowment_plan": "LIC's New Endowment Plan (714)",
-        "new_jeevan_anand": "LIC's New Jeevan Anand (715)",
-        "jeevan_lakshya": "LIC's Jeevan Lakshya (733)",
-        "jeevan_labh": "LIC's Jeevan Labh Plan (736)",
-        "amritbaal": "LIC's Amritbaal (774)",
-        "bima_jyoti": "LIC's Bima Jyoti (760)",
-        "jeevan_azad": "LIC's Jeevan Azad (768)",
-        "nav_jeevan_shree": "LIC’s Nav Jeevan Shree (912)",
-        "nav_jeevan_shree_single_premium": "LIC’s Nav Jeevan Shree -Single Premium"
+        "lic-single-premium-endowment-plan-calculator": "LIC's Single Premium Endowment Plan (917)",
+        "new_endowment_plan": "LIC's New Endowment Plan (914)",
+        "new_jeevan_anand": "LIC's New Jeevan Anand (915)",
+        "jeevan_lakshya": "LIC's Jeevan Lakshya (933)",
+        "jeevan_labh": "LIC's Jeevan Labh Plan (936)",
+        "amritbaal": "LIC's Amritbaal (874)",
+        "bima_jyoti": "LIC's Bima Jyoti (860)",
+        "jeevan_azad": "LIC's Jeevan Azad (868)"
       },
       "whole_life_plans": {
-        "jeevan_umang": "LIC's Jeevan Umang (745)",
-        "jeevan_utsav": "LIC's Jeevan Utsav (771)"
+        "jeevan_umang": "LIC's Jeevan Umang (945)",
+        "jeevan_utsav": "LIC's Jeevan Utsav (871)"
       },
       "money_back_plans": {
-        "bima_shree": "LIC’s Bima Shree (748)",
-        "new_money_back_20": "LIC's New Money Back Plan- 20 Years (720)",
-        "new_money_back_25": "LIC's New Money Back Plan-25 years (721)",
-        "new_childrens_money_back": "LIC's New Children's Money Back Plan (732)",
-        "bima_ratna": "LIC's Bima Ratna (764)"
+        "bima_shree": "LIC’s Bima Shree (948)",
+        "new_money_back_20": "LIC's New Money Back Plan- 20 Years (920)",
+        "new_money_back_25": "LIC's New Money Back Plan-25 years (921)",
+        "new_childrens_money_back": "LIC's New Children's Money Back Plan (932)",
+        "bima_ratna": "LIC's Bima Ratna (864)",
+        "dhan_rekha": "LIC's Dhan Rekha (863)"
       },
       "term_assurance_plans": {
-        "digi_term": "LIC’s Digi Term (876)",
-        "digi_credit_life": "LIC’s Digi Credit Life (878)",
-        "yuva_credit_life": "LIC’s Yuva Credit Life (877)",
-        "yuva_term": "LIC’s Yuva Term (875)",
         "new_tech_term": "LIC's New Tech-Term (954)",
         "new_jeevan_amar": "LIC's New Jeevan Amar (955)",
         "saral_jeevan_bima": "LIC's Saral Jeevan Bima (859)"
@@ -68,18 +62,17 @@
       "pension_plans": {
         "new_pension_plus": "LIC's New Pension Plus (867)",
         "jeevan_akshay_vii": "LIC's Jeevan Akshay-VII (857)",
-        "new_jeevan_shanti": "LIC’s New Jeevan Shanti (758)",
-        "saral_pension": "LIC's Saral Pension (862)",
-        "smart_pension": "LIC’s Smart Pension (879)"
+        "new_jeevan_shanti": "LIC’s New Jeevan Shanti (858)",
+        "saral_pension": "LIC's Saral Pension (862)"
       },
       "ulip_plans": {
-        "nivesh_plus": "LIC's Nivesh Plus",
-        "siip": "LIC's SIIP",
-        "index_plus": "LIC's Index Plus",
-        "new_endowment_plus": "LIC's New Endowment Plus"
+        "nivesh_plus": "LIC's Nivesh Plus (849)",
+        "siip": "LIC's SIIP (852)",
+        "index_plus": "LIC's Index Plus (873)",
+        "new_endowment_plus": "LIC's New Endowment Plus (935)"
       },
       "micro_insurance_plans": {
-        "micro_bachat": "LIC's Micro Bachat (751)"
+        "micro_bachat": "LIC's Micro Bachat (951)"
       }
     },
     "view_calculator_button": "View Calculator"
@@ -263,5 +256,3 @@
     "disclaimer": "This LIC Premium Calculator provides estimates for informational purposes only. The final payable premium and policy terms are determined by LIC of India at the time of underwriting. BharatSaver is not affiliated with LIC."
   }
 }
-
-    
