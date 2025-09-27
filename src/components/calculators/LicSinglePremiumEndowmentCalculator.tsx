@@ -34,6 +34,7 @@ type CalculationResult = {
   fab: number;
   totalPremium: number;
   riderPremium: number;
+  gst: number;
 };
 
 const premiumRates: Record<number, number> = {
@@ -90,7 +91,8 @@ export function LicSinglePremiumEndowmentCalculator({ dictionary }: { dictionary
 
     const gstOnBase = basePremium * 0.045; // As per endowment rules
     const gstOnRiders = totalRiderPremium * 0.18; // Riders are pure risk
-    const totalPremiumWithGst = basePremium + totalRiderPremium + gstOnBase + gstOnRiders;
+    const totalGst = gstOnBase + gstOnRiders;
+    const totalPremiumWithGst = basePremium + totalRiderPremium + totalGst;
     
     const bonusRate = 45; // Illustrative
     const fabRate = 50; // Illustrative
@@ -103,6 +105,7 @@ export function LicSinglePremiumEndowmentCalculator({ dictionary }: { dictionary
         singlePremium: basePremium,
         riderPremium: totalRiderPremium,
         totalPremium: totalPremiumWithGst,
+        gst: totalGst,
         maturityValue,
         bonus: vestedBonus,
         fab: finalAdditionalBonus,
@@ -113,6 +116,49 @@ export function LicSinglePremiumEndowmentCalculator({ dictionary }: { dictionary
 
   const formatCurrency = (value: number) => value.toLocaleString('en-IN', { style: 'currency', currency: 'INR', minimumFractionDigits: 0, maximumFractionDigits: 0 });
   const values = form.getValues();
+
+  const handlePrint = () => window.print();
+
+  const handleShare = (platform: 'whatsapp' | 'twitter') => {
+    if (!result || typeof window === 'undefined') return;
+    const url = window.location.href;
+    const text = `I just calculated my LIC Single Premium Endowment Plan benefits! My estimated maturity for a one-time investment is ${formatCurrency(result.maturityValue)}. Plan yours:`;
+    const shareUrl = platform === 'twitter'
+      ? `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`
+      : `https://api.whatsapp.com/send?text=${encodeURIComponent(text + ' ' + url)}`;
+    window.open(shareUrl, '_blank');
+  };
+  
+  const handleCSVExport = () => {
+    if (!result) return;
+    const { age, term, sumAssured } = form.getValues();
+    
+    let csvContent = "Parameter,Value\n";
+    csvContent += `Age,${age}\n`;
+    csvContent += `Policy Term,${term}\n`;
+    csvContent += `Sum Assured,${sumAssured}\n\n`;
+
+    csvContent += "Premium Breakdown\n";
+    csvContent += `Base Single Premium,${result.singlePremium.toFixed(2)}\n`;
+    csvContent += `Rider Premium,${result.riderPremium.toFixed(2)}\n`;
+    csvContent += `Total GST,${result.gst.toFixed(2)}\n`;
+    csvContent += `Total Payable Premium,${result.totalPremium.toFixed(2)}\n\n`;
+    
+    csvContent += "Maturity Benefits (Approximate)\n";
+    csvContent += `Sum Assured,${sumAssured}\n`;
+    csvContent += `Vested Bonus,${result.bonus}\n`;
+    csvContent += `Final Additional Bonus,${result.fab}\n`;
+    csvContent += `Total Maturity,${result.maturityValue}\n`;
+
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.setAttribute('download', 'lic_single_premium_summary.csv');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
 
   return (
     <div className="print-hide">
@@ -186,7 +232,7 @@ export function LicSinglePremiumEndowmentCalculator({ dictionary }: { dictionary
             <CardTitle>Calculation Results</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                 <div className="bg-destructive/10 p-4 rounded-lg text-center">
                     <p className="text-sm text-muted-foreground">One-Time Premium (incl. GST)</p>
                     <p className="text-2xl font-bold text-destructive">{formatCurrency(result.totalPremium)}</p>
@@ -196,18 +242,38 @@ export function LicSinglePremiumEndowmentCalculator({ dictionary }: { dictionary
                     <p className="text-2xl font-bold text-primary">{formatCurrency(result.maturityValue)}</p>
                 </div>
             </div>
-            <Table>
-              <TableBody>
-                <TableRow><TableCell>Base Single Premium</TableCell><TableCell className="text-right">{formatCurrency(result.singlePremium)}</TableCell></TableRow>
-                <TableRow><TableCell>Rider Premium</TableCell><TableCell className="text-right">{formatCurrency(result.riderPremium)}</TableCell></TableRow>
-                <TableRow><TableCell>Total GST</TableCell><TableCell className="text-right">{formatCurrency(result.totalPremium - result.singlePremium - result.riderPremium)}</TableCell></TableRow>
-                <TableRow className="font-bold"><TableCell>Total Payable Premium</TableCell><TableCell className="text-right">{formatCurrency(result.totalPremium)}</TableCell></TableRow>
-                <TableRow><TableCell>Sum Assured</TableCell><TableCell className="text-right">{formatCurrency(form.getValues().sumAssured)}</TableCell></TableRow>
-                <TableRow><TableCell>Vested Bonus (Approx.)</TableCell><TableCell className="text-right">{formatCurrency(result.bonus)}</TableCell></TableRow>
-                <TableRow><TableCell>Final Additional Bonus (FAB, Approx.)</TableCell><TableCell className="text-right">{formatCurrency(result.fab)}</TableCell></TableRow>
-                <TableRow className="font-bold bg-primary/10"><TableCell>Total Maturity</TableCell><TableCell className="text-right">{formatCurrency(result.maturityValue)}</TableCell></TableRow>
-              </TableBody>
-            </Table>
+
+            <div>
+              <h3 className="font-semibold mb-2">One-Time Premium Breakdown</h3>
+              <Table>
+                <TableBody>
+                  <TableRow><TableCell>Base Single Premium</TableCell><TableCell className="text-right">{formatCurrency(result.singlePremium)}</TableCell></TableRow>
+                  <TableRow><TableCell>Rider Premium</TableCell><TableCell className="text-right">{formatCurrency(result.riderPremium)}</TableCell></TableRow>
+                  <TableRow><TableCell>Total GST</TableCell><TableCell className="text-right">{formatCurrency(result.gst)}</TableCell></TableRow>
+                  <TableRow className="font-bold text-lg bg-muted/50"><TableCell>Total Payable Premium</TableCell><TableCell className="text-right">{formatCurrency(result.totalPremium)}</TableCell></TableRow>
+                </TableBody>
+              </Table>
+            </div>
+            
+            <div className="mt-6">
+              <h3 className="font-semibold mb-2">Maturity Benefits (Approximate)</h3>
+              <Table>
+                 <TableBody>
+                  <TableRow><TableCell>Sum Assured (A)</TableCell><TableCell className="text-right">{formatCurrency(form.getValues().sumAssured)}</TableCell></TableRow>
+                  <TableRow><TableCell>Vested Bonus (B)</TableCell><TableCell className="text-right">{formatCurrency(result.bonus)}</TableCell></TableRow>
+                  <TableRow><TableCell>Final Additional Bonus (FAB) (C)</TableCell><TableCell className="text-right">{formatCurrency(result.fab)}</TableCell></TableRow>
+                  <TableRow className="font-bold text-lg bg-primary/10"><TableCell>Total Maturity (A+B+C)</TableCell><TableCell className="text-right">{formatCurrency(result.maturityValue)}</TableCell></TableRow>
+                 </TableBody>
+              </Table>
+            </div>
+            
+            <div className="flex flex-wrap items-center justify-center gap-4 pt-6 print-hide mt-4">
+                <Button variant="outline" size="sm" onClick={() => handleShare('whatsapp')}><WhatsAppIcon className="mr-2 h-4 w-4" /> WhatsApp</Button>
+                <Button variant="outline" size="sm" onClick={() => handleShare('twitter')}><Twitter className="mr-2 h-4 w-4" /> Twitter</Button>
+                <Button variant="outline" size="sm" onClick={handlePrint}><Printer className="mr-2 h-4 w-4" /> Print / Save PDF</Button>
+                <Button variant="outline" size="sm" onClick={handleCSVExport}><Download className="mr-2 h-4 w-4" />Download CSV</Button>
+            </div>
+
             <p className="text-xs text-center text-muted-foreground mt-4">{dictionary.results.note}</p>
           </CardContent>
         </Card>
@@ -215,3 +281,5 @@ export function LicSinglePremiumEndowmentCalculator({ dictionary }: { dictionary
     </div>
   );
 }
+
+    
