@@ -2,7 +2,7 @@
 {
   "meta_title": "LIC Jeevan Labh Premium & Maturity Calculator (Plan 936) — Online, Free (2025)",
   "meta_description": "Use this free LIC Jeevan Labh 936 calculator to instantly estimate maturity benefits, yearly/monthly premiums, bonus rates, and returns. Includes surrender value info and plan comparisons. Updated for 2025.",
-  "h1": "LIC Jeevan Labh Premium & Maturity Calculator (Plan 936)",
+  "h1": "LIC Jeevan Labh Premium Calculator (Plan 936) — Calculate Premiums & Maturity Instantly",
   "description": "<p>Our free, online LIC Jeevan Labh 936 calculator gives you instant, accurate estimates for your premiums and maturity value. Understand your returns, bonus, and tax benefits for Plan 936 in seconds. Use our <strong>lic jeevan labh calculator online free</strong> to plan your investment today.</p>",
   "tool": {
     "title": "Jeevan Labh Calculator (Plan 936)",
@@ -54,7 +54,7 @@
             "type": "list",
             "items": [
               "<strong>Fast & Accurate Premiums:</strong> Get immediate, reliable premium estimates for your chosen sum assured and term.",
-              "<strong>Compare Scenarios:</strong> Easily check how your premium changes for a ₹10 lakh cover versus a ₹1 crore cover.",
+              "<strong>Compare Scenarios:</strong> Easily check how your premium changes for a 'lic jeevan labh maturity value 10 lakh' versus a 'lic jeevan labh 1 crore premium'.",
               "<strong>Budgeting Made Easy:</strong> Instantly see the difference between monthly, quarterly, and yearly payment modes.",
               "<strong>Full Cost Transparency:</strong> Understand the impact of GST and optional riders on your total premium outflow."
             ]
@@ -108,7 +108,7 @@
         "content": [
           {
             "type": "paragraph",
-            "text": "This table projects the approximate **tax-free maturity amount** for a **₹10 Lakh Sum Assured** policy, based on illustrative bonus rates."
+            "text": "This table projects the approximate **tax-free maturity amount** for a **₹10 Lakh Sum Assured** policy, based on illustrative bonus rates. This helps answer what the 'jeevan labh maturity value 10 lakh' would be."
           },
           {
             "type": "table",
@@ -213,77 +213,50 @@
         "icon": "FileText",
         "title": "Tax Benefits Explained: 80C & 10(10D)",
         "content": [
-          {
-            "type": "paragraph",
-            "text": "Jeevan Labh offers significant tax advantages under the Exempt-Exempt-Exempt (EEE) category."
-          },
-          {
-            "type": "examples",
-            "items": [
-              {
-                "title": "Section 80C Deduction (Exempt 1)",
-                "body": "The premium you pay each year is eligible for deduction from your taxable income under Section 80C, up to a limit of ₹1.5 Lakh. For example, if your annual premium is ₹42,200 and you are in the 30% tax bracket, you effectively save ~₹12,660 in taxes each year."
-              },
-              {
-                "title": "Section 10(10D) Tax-Free Maturity (Exempt 3)",
-                "body": "The entire maturity amount, including the Sum Assured and all bonuses, is completely tax-free under Section 10(10D). If your estimated maturity is ₹23 Lakh, you receive the full amount without any tax liability. This is a major advantage over instruments like Fixed Deposits where interest is taxable."
-              }
-            ]
-          }
+            {
+                "type": "paragraph",
+                "text": "Jeevan Labh offers significant tax advantages under the Exempt-Exempt-Exempt (EEE) category, a key reason for its popularity."
+            },
+            {
+                "type": "examples",
+                "items": [
+                    {
+                        "title": "Section 80C Deduction (Investment Phase)",
+                        "body": "The premium you pay each year (up to ₹1.5 Lakh) is eligible for deduction from your taxable income. <strong>Example:</strong> If your annual premium for a ₹10 Lakh Jeevan Labh plan is ₹42,000 and you are in the 30% tax bracket, you can save approximately <strong>₹12,600 in taxes</strong> each year."
+                    },
+                    {
+                        "title": "Section 10(10D) Tax-Free Maturity (Return Phase)",
+                        "body": "The entire maturity amount—including the Sum Assured and all bonuses—is completely tax-free, provided the annual premium does not exceed 10% of the sum assured. <strong>Example:</strong> If your maturity value is ₹23 Lakh, you receive the full amount without any tax liability. This offers a significant advantage over instruments like Fixed Deposits where interest is fully taxable."
+                    }
+                ]
+            }
         ]
       },
       {
         "id": "surrender-value",
         "icon": "TrendingUp",
-        "title": "Understanding Surrender Value in Jeevan Labh",
+        "title": "Surrender Value & Loan Facility Explained",
         "content": [
-          {
-            "type": "paragraph",
-            "text": "If you need to exit the policy before maturity, it acquires a 'Surrender Value' after two full years of premiums have been paid. A 'Jeevan Labh surrender value calculator' would consider two components:"
-          },
-          {
-            "type": "list",
-            "items": [
-              "<strong>Guaranteed Surrender Value (GSV):</strong> This is a fixed percentage of total premiums paid, which increases with the policy duration.",
-              "<strong>Special Surrender Value (SSV):</strong> This is usually higher and is calculated as (Paid-up Sum Assured + Vested Bonuses) multiplied by a surrender value factor declared by LIC."
-            ]
-          },
-          {
-             "type": "examples",
-             "items": [
-                {
-                  "title": "Surrender Value Example (Illustrative)",
-                  "body": "If you've paid ₹2 Lakh in premiums over 5 years and the GSV factor is 30%, your Guaranteed Surrender Value would be ₹60,000. However, the SSV might be significantly higher, depending on the bonuses accrued. It's generally advisable not to surrender the policy to avoid losses."
-                }
-              ]
-          }
-        ]
-      },
-      {
-        "id": "loan-facility",
-        "icon": "Landmark",
-        "title": "Loan Facility on Your Jeevan Labh Policy",
-        "content": [
-          {
-            "type": "paragraph",
-            "text": "One of the key liquidity features of Jeevan Labh is the ability to take a loan against the policy. This can be availed after the policy has acquired a surrender value (i.e., after 2 full years of premium payments)."
-          },
-          {
-            "type": "list",
-            "items": [
-                "<strong>Loan Amount:</strong> The maximum loan you can get is up to 90% of the Surrender Value for in-force policies.",
-                "<strong>Interest Rate:</strong> The interest rate on the loan is determined by LIC and is typically competitive compared to personal loans."
-            ]
-          },
-          {
-             "type": "examples",
-             "items": [
-                {
-                  "title": "Loan Example (Illustrative)",
-                  "body": "If your policy's surrender value is ₹2,00,000, you could be eligible for a loan of up to ₹1,80,000 (90% of Surrender Value). This provides a useful source of funds for emergencies without having to terminate the policy."
-                }
-              ]
-          }
+            {
+                "type": "paragraph",
+                "text": "Jeevan Labh provides liquidity options after you have paid premiums for at least two full years, at which point the policy acquires a 'Surrender Value'. This value is crucial for both policy surrender and loan eligibility."
+            },
+            {
+                "type": "list",
+                "items": [
+                    "<strong>Guaranteed Surrender Value (GSV):</strong> This is calculated as a percentage of total premiums paid (excluding riders) plus a percentage of vested bonuses.",
+                    "<strong>Loan Facility:</strong> You can take a loan against the policy, with the maximum amount being up to 90% of the surrender value for in-force policies. This provides access to funds without terminating the plan."
+                ]
+            },
+            {
+                "type": "examples",
+                "items": [
+                    {
+                        "title": "Surrender & Loan Example (Illustrative)",
+                        "body": "If you have paid premiums totaling <strong>₹2.5 Lakh</strong> over 5 years for your policy, it might acquire a surrender value of approximately <strong>₹1.3 Lakh</strong> (this value depends on LIC's specific tables). Based on this, you could be eligible for a loan of up to <strong>₹1.17 Lakh</strong> (90% of ₹1.3L). Our 'jeevan labh surrender value calculator' logic is built into our result estimates."
+                    }
+                ]
+            }
         ]
       },
       {
