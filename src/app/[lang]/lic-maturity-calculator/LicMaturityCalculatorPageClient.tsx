@@ -70,6 +70,17 @@ const ContentRenderer = ({ content, lang }: { content: any[], lang: Locale }) =>
             );
           case 'formula':
             return <p key={idx} className="font-mono bg-muted p-4 rounded-md my-4 text-center" dangerouslySetInnerHTML={{ __html: item.text }} />;
+           case 'faq':
+            return (
+              <Accordion key={idx} type="single" collapsible className="w-full">
+                {item.items.map((faq: {q: string, a: string}, qIdx: number) => (
+                    <AccordionItem key={qIdx} value={`item-${qIdx}`}>
+                        <AccordionTrigger>{faq.q}</AccordionTrigger>
+                        <AccordionContent><p dangerouslySetInnerHTML={{__html: faq.a}} /></AccordionContent>
+                    </AccordionItem>
+                ))}
+              </Accordion>
+            );
           default:
             return null;
         }
