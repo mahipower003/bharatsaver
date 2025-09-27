@@ -152,52 +152,66 @@
       ]
     },
     {
+        "id": "alternatives",
+        "icon": "GitCompareArrows",
+        "title": "Compare: LIC Maturity vs. Alternatives",
+        "description": "How does an LIC maturity payout stack up against other popular investment options? Here’s a side-by-side look.",
+        "content": [
+            {
+              "type": "paragraph",
+              "text": "<h5>Comparing against Market Instruments</h5>"
+            },
+            {
+              "type": "table",
+              "headers": ["Instrument", "Typical Return (p.a.)", "Risk Level", "Tax on Maturity"],
+              "rows": [
+                ["LIC Endowment", "~5-6%", "Very Low (Sovereign-backed)", "Tax-Free (u/s 10(10D))"],
+                ["Bank FD", "~7%", "Low", "Taxable as per slab"],
+                ["PPF", "~7.1%", "Very Low (Sovereign)", "Tax-Free"],
+                ["Equity Mutual Funds", "~12-15%", "High (Market Risk)", "Taxable (LTCG > ₹1L)"]
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "<h5 class='mt-6'>Comparing Different LIC Plans</h5>"
+            },
+            {
+              "type": "table",
+              "headers": ["Feature", "Jeevan Labh", "Jeevan Anand", "Single Premium"],
+              "rows": [
+                ["Payment", "Limited (e.g. 16/25)", "Regular (Full Term)", "One-Time"],
+                ["Best For", "Goal-based savings", "Legacy + Savings", "Lump-sum investors"],
+                ["Maturity", "SA + Bonus + FAB", "SA + Bonus + FAB", "SA + Bonus + FAB"]
+              ]
+            }
+        ]
+    },
+    {
       "id": "plan-specifics",
       "icon": "ShieldCheck",
       "title": "Plan-Specific Maturity Calculators",
-      "description": "Different plans have unique features. Our calculator presets help adjust for these, but here’s a quick guide:",
+      "description": "Different plans have unique features. Our calculator presets help adjust for these, but here’s a quick guide to our dedicated tools:",
       "content": [
         {
-          "type": "list",
-          "items": [
-            "<h4>LIC Jeevan Labh Maturity Calculator (Plan 936)</h4><p>A limited premium plan. For a 25-year term, you only pay for 16 years. <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>View Jeevan Labh Calculator &rarr;</a></p>",
-            "<h4>LIC New Jeevan Anand Maturity Calculator (Plan 915)</h4><p>An endowment plan where the Sum Assured is paid on death even after maturity. <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>View Plan Details &rarr;</a></p>",
-            "<h4>LIC Single Premium Endowment Maturity Calculator</h4><p>You pay the premium only once. Taxability depends on the premium vs. sum assured ratio. <a href='/{lang}/lic-single-premium-endowment-calculator' class='text-primary hover:underline'>View Single Premium Calculator &rarr;</a></p>"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "alternatives",
-      "icon": "GitCompareArrows",
-      "title": "Compare: LIC Maturity vs. Alternatives",
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "<h5>Comparing against Market Instruments</h5>"
+          "type": "card_link",
+          "icon": "Calculator",
+          "title": "LIC Jeevan Labh Maturity Calculator (Plan 936)",
+          "description": "A limited premium plan where you pay for less time than the policy term.",
+          "href": "/{lang}/lic-jeevan-labh-calculator"
         },
         {
-          "type": "table",
-          "headers": ["Instrument", "Typical Return (p.a.)", "Risk Level", "Tax on Maturity"],
-          "rows": [
-            ["LIC Endowment", "~5-6%", "Very Low (Sovereign-backed)", "Tax-Free (u/s 10(10D))"],
-            ["Bank FD", "~7%", "Low", "Taxable as per slab"],
-            ["PPF", "~7.1%", "Very Low (Sovereign)", "Tax-Free"],
-            ["Equity Mutual Funds", "~12-15%", "High (Market Risk)", "Taxable (LTCG > ₹1L)"]
-          ]
+          "type": "card_link",
+          "icon": "Calculator",
+          "title": "LIC Single Premium Endowment Calculator",
+          "description": "For one-time lump sum investments.",
+          "href": "/{lang}/lic-single-premium-endowment-calculator"
         },
         {
-          "type": "paragraph",
-          "text": "<h5 class='mt-6'>Comparing Different LIC Plans</h5>"
-        },
-        {
-          "type": "table",
-          "headers": ["Feature", "Jeevan Labh", "Jeevan Anand", "Single Premium"],
-          "rows": [
-            ["Payment", "Limited (e.g. 16/25)", "Regular (Full Term)", "One-Time"],
-            ["Best For", "Goal-based savings", "Legacy + Savings", "Lump-sum investors"],
-            ["Maturity", "SA + Bonus + FAB", "SA + Bonus + FAB", "SA + Bonus + FAB"]
-          ]
+          "type": "card_link",
+          "icon": "LinkIcon",
+          "title": "All LIC Premium Calculators",
+          "description": "Explore premiums for all popular plans.",
+          "href": "/{lang}/lic-premium-calculator"
         }
       ]
     },
@@ -246,4 +260,3 @@
     }
   ]
 }
-    

@@ -7,7 +7,7 @@ import type { Dictionary } from "@/lib/types";
 import type { Locale } from "@/lib/i18n-config";
 import { FooterCta } from "@/components/layout/FooterCta";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { HelpCircle, SlidersHorizontal, StepForward, BarChart2, TrendingUp, FileText, GitCompareArrows, BookUser, Star, CheckCircle, ShieldCheck, Calculator, Table as TableIcon } from "lucide-react";
+import { HelpCircle, SlidersHorizontal, StepForward, BarChart2, TrendingUp, FileText, GitCompareArrows, BookUser, Star, CheckCircle, ShieldCheck, Calculator, Table as TableIcon, Link as LinkIcon } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -28,6 +28,7 @@ function getIcon(iconName: string) {
         case 'ShieldCheck': return ShieldCheck;
         case 'Calculator': return Calculator;
         case 'TableIcon': return TableIcon;
+        case 'LinkIcon': return LinkIcon;
         default: return Star;
     }
 }
@@ -38,7 +39,7 @@ const ContentRenderer = ({ content, lang }: { content: any[], lang: Locale }) =>
       {content.map((item, idx) => {
         switch (item.type) {
           case 'paragraph':
-            return <p key={idx} className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: item.text.replace(/{lang}/g, lang) }} />;
+            return <div key={idx} className="prose dark:prose-invert max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: item.text.replace(/{lang}/g, lang) }} />;
           case 'list':
             return (
               <ul key={idx} className="list-disc pl-5 space-y-2 text-muted-foreground">
@@ -81,6 +82,21 @@ const ContentRenderer = ({ content, lang }: { content: any[], lang: Locale }) =>
                 ))}
               </Accordion>
             );
+            case 'card_link':
+              const CardIcon = getIcon(item.icon);
+              return (
+                  <Link key={idx} href={item.href.replace('{lang}', lang)} className="group block">
+                      <Card className="hover:shadow-md hover:border-primary/30 transition-all">
+                          <CardHeader className="flex flex-row items-center gap-4">
+                              <CardIcon className="h-8 w-8 text-primary" />
+                              <div>
+                                  <CardTitle className="text-lg">{item.title}</CardTitle>
+                                  <p className="text-sm text-muted-foreground mt-1">{item.description}</p>
+                              </div>
+                          </CardHeader>
+                      </Card>
+                  </Link>
+              );
           default:
             return null;
         }
@@ -124,7 +140,7 @@ export default function LicMaturityCalculatorPageClient({
                 <Icon className="h-8 w-8 text-primary" />
                 <h2 className="text-2xl font-bold">{section.title}</h2>
               </CardTitle>
-              {section.description && <CardDescription>{section.description}</CardDescription>}
+              {section.description && <CardDescription dangerouslySetInnerHTML={{ __html: section.description }} />}
             </CardHeader>
             <CardContent>
               <ContentRenderer content={section.content} lang={params.lang} />
