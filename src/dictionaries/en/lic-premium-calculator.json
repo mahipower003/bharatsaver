@@ -66,9 +66,11 @@
         "linked_accidental_death_rider": "LIC's Linked Accidental Death Benefit Rider"
       },
       "pension_plans": {
-        "new_jeevan_shanti": "LIC's New Jeevan Shanti",
-        "jeevan_akshay_vii": "LIC's Jeevan Akshay-VII",
-        "saral_pension": "LIC's Saral Pension"
+        "new_pension_plus": "LIC's New Pension Plus (867)",
+        "jeevan_akshay_vii": "LIC's Jeevan Akshay-VII (857)",
+        "new_jeevan_shanti": "LIC’s New Jeevan Shanti (758)",
+        "saral_pension": "LIC's Saral Pension (862)",
+        "smart_pension": "LIC’s Smart Pension (879)"
       },
       "ulip_plans": {
         "nivesh_plus": "LIC's Nivesh Plus",
