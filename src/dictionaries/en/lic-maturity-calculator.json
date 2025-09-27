@@ -45,33 +45,7 @@
     "title": "Inputs Explained: What You Must Enter",
     "body": "<ul><li><strong>Plan Preset:</strong> Selecting a specific plan like 'Jeevan Labh' helps the tool apply correct Premium Paying Terms (PPT) and typical bonus ranges.</li><li><strong>Premium & Term:</strong> The annual premium and the full policy term are needed to calculate total investment. Note the difference between Policy Term (e.g., 25 years) and Premium Paying Term (e.g., 16 years for Jeevan Labh).</li><li><strong>Bonus & FAB Rates:</strong> The most critical inputs for an accurate estimate. You can find these in your annual policy statement or use the historical average of ₹40-₹48 as a guideline.</li><li><strong>Surrender/Loan Dates:</strong> Your Date of Birth and the date of the last premium paid are required to calculate the precise Surrender Value and loan eligibility, as these are age- and term-dependent.</li></ul>"
   },
-  "plan_specifics": {
-    "title": "Plan-Specific Maturity Calculations",
-    "intro": "Different plans have unique features. Our calculator presets help adjust for these, but here’s a quick guide:",
-    "plans": [
-      {
-        "name": "LIC Jeevan Labh (936)",
-        "desc": "A limited premium plan. For a 25-year term, you only pay for 16 years. Our calculator automatically factors this in when you select the Jeevan Labh preset.",
-        "link": "/lic-jeevan-labh-calculator"
-      },
-      {
-        "name": "LIC New Jeevan Anand (915)",
-        "desc": "An endowment plan where the Sum Assured is paid on death even after maturity. The maturity calculation remains the same (SA + Bonuses).",
-        "link": "/new-jeevan-anand-calculator"
-      },
-      {
-        "name": "LIC New Endowment Plan (914)",
-        "desc": "A standard endowment plan. The formula SA + Vested Bonus + FAB applies directly. It's one of the simplest to calculate.",
-        "link": "/new-endowment-plan-calculator"
-      },
-      {
-        "name": "LIC Single Premium Endowment (917)",
-        "desc": "You pay the premium only once. The bonus calculation is the same, but the tax-free nature of maturity depends on the premium being less than 10% of the Sum Assured.",
-        "link": "/lic-single-premium-endowment-calculator"
-      }
-    ]
-  },
-  "worked_examples": {
+   "worked_examples": {
     "id": "worked-examples",
     "icon": "FileText",
     "title": "Worked Examples & IRR Calculation",
@@ -88,6 +62,33 @@
     "icon": "BarChart2",
     "title": "Bonus Rates & Historical Context",
     "body": "<p>The 'bonus rate' is the most important variable in your maturity calculation. LIC declares this rate each year, and it can change. While not guaranteed, looking at past rates gives a realistic expectation. Below are recent illustrative bonus rates for standard endowment plans.</p><div class='overflow-x-auto'><table class='w-full text-sm my-4'><thead><tr class='border-b'><th class='text-left p-2'>Financial Year</th><th class='text-right p-2'>Bonus Rate per ₹1,000 SA (Avg. for 20-25 yr term)</th></tr></thead><tbody><tr class='border-b'><td class='p-2'>2023-24</td><td class='text-right p-2'>₹48</td></tr><tr class='border-b'><td class='p-2'>2022-23</td><td class='text-right p-2'>₹46</td></tr><tr class='border-b'><td class='p-2'>2021-22</td><td class='text-right p-2'>₹45</td></tr><tr><td class='p-2'>2020-21</td><td class='text-right p-2'>₹44</td></tr></tbody></table></div><p>As you can see, a small change in the bonus rate can significantly impact your final maturity amount over a long term.</p>"
+  },
+  "plan_specifics": {
+    "id": "plan-specifics",
+    "title": "Plan-Specific Maturity Calculations",
+    "intro": "Different plans have unique features. Our calculator presets help adjust for these, but here’s a quick guide:",
+    "plans": [
+      {
+        "name": "LIC Jeevan Labh (936)",
+        "desc": "A limited premium plan. For a 25-year term, you only pay for 16 years. Our calculator automatically factors this in when you select the Jeevan Labh preset.",
+        "link": "/lic-jeevan-labh-calculator"
+      },
+      {
+        "name": "LIC New Jeevan Anand (915)",
+        "desc": "An endowment plan where the Sum Assured is paid on death even after maturity. The maturity calculation remains the same (SA + Bonuses).",
+        "link": "/lic-premium-calculator"
+      },
+      {
+        "name": "LIC New Endowment Plan (914)",
+        "desc": "A standard endowment plan. The formula SA + Vested Bonus + FAB applies directly. It's one of the simplest to calculate.",
+        "link": "/lic-premium-calculator"
+      },
+      {
+        "name": "LIC Single Premium Endowment (917)",
+        "desc": "You pay the premium only once. The bonus calculation is the same, but the tax-free nature of maturity depends on the premium being less than 10% of the Sum Assured.",
+        "link": "/lic-single-premium-endowment-calculator"
+      }
+    ]
   },
   "alternatives": {
     "id": "alternatives",
