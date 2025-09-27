@@ -12,7 +12,6 @@ import {
   Building,
   Filter,
   ShieldCheck,
-  PiggyBank,
 } from 'lucide-react';
 import type { Calculator } from '@/types';
 
@@ -26,16 +25,6 @@ export const calculators: Calculator[] = [
     link_text: 'Calculate Premium',
     lastModified: '2024-09-25',
     image: '/images/lic-premium-calculator.png'
-  },
-  {
-    slug: 'lic-single-premium-endowment-calculator',
-    title: 'LIC Single Premium Endowment Calculator',
-    description: 'Calculate maturity for LIC\'s one-time investment plan.',
-    summary: 'Use our free LIC Single Premium Endowment Calculator to see returns, maturity value, and tax benefits for this one-time investment plan. Make an informed decision for your lump-sum funds.',
-    icon: PiggyBank,
-    link_text: 'Calculate Now',
-    lastModified: '2024-10-02',
-    image: '/images/lic-single-premium-calculator.png'
   },
   {
     slug: 'ppf-calculator',
