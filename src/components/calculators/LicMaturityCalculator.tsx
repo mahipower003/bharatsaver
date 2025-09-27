@@ -16,6 +16,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { CalendarIcon } from "lucide-react"
 import { format } from "date-fns"
 import { cn } from "@/lib/utils"
+import Link from 'next/link';
 
 const formSchema = z.object({
   plan: z.string().optional(),
@@ -87,12 +88,13 @@ export function LicMaturityCalculator({ dictionary }: { dictionary: any }) {
     
     // Maturity Calculation
     const vestedBonus = (values.sumAssured / 1000) * values.bonusRate * values.policyTerm;
-    const fab = (values.sumAssured / 1000) * values.fabRate;
+    const fab = (values.sumAssured / 1000) * (values.fabRate || 0);
     const totalMaturity = values.sumAssured + vestedBonus + fab;
 
     // Surrender Value Calculation (Simplified)
-    const yearsPaid = new Date().getFullYear() - values.lastPremiumDate.getFullYear() > 0 ? values.lastPremiumDate.getFullYear() - (new Date(values.dob).getFullYear() + 18) : new Date().getFullYear() - (new Date(values.dob).getFullYear() + 18);
-    const gsv = Math.min(0.3 * totalPremiumsPaid, totalPremiumsPaid); 
+    const yearsPaid = Math.max(1, new Date().getFullYear() - values.lastPremiumDate.getFullYear());
+    const gsvPercent = yearsPaid >= 3 ? 0.3 : 0;
+    const gsv = totalPremiumsPaid * gsvPercent;
     const ssv = gsv + (vestedBonus * 0.2); // Highly illustrative
     
     // Loan Calculation
@@ -221,5 +223,3 @@ export function LicMaturityCalculator({ dictionary }: { dictionary: any }) {
     </>
   );
 }
-
-    

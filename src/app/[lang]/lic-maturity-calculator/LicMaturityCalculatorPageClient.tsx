@@ -10,6 +10,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { HelpCircle, SlidersHorizontal, StepForward, BarChart2, TrendingUp, FileText, GitCompareArrows, BookUser, Star, CheckCircle, ShieldCheck } from "lucide-react";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 function getIcon(iconName: string) {
     switch (iconName) {
@@ -53,16 +54,6 @@ export default function LicMaturityCalculatorPageClient({
         }
       }))
     };
-    
-    const howToSteps = pageDict.how_it_works.body.match(/<h4>(.*?)<\/h4><ul><li><strong>(.*?)<\/strong>.*?<\/li><\/ul>/g)?.map((step: string) => {
-        const titleMatch = step.match(/<h4>(.*?)<\/h4>/);
-        const textMatch = step.match(/<li><strong>(.*?)<\/strong>.*?<\/li>/);
-        return {
-            "@type": "HowToStep",
-            "name": titleMatch ? titleMatch[1] : "",
-            "text": textMatch ? textMatch[1].replace(/<[^>]*>/g, '') : ""
-        }
-    }) ?? [];
     
     const howToSchema = {
         "@context": "https://schema.org",
@@ -217,5 +208,3 @@ export default function LicMaturityCalculatorPageClient({
     </div>
   );
 }
-
-    
