@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Loader2 } from 'lucide-react';
+import { Loader2, Download, Printer, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
@@ -13,6 +13,13 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Input } from '@/components/ui/input';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Checkbox } from '../ui/checkbox';
+import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer, CartesianGrid } from 'recharts';
+import { useToast } from '@/hooks/use-toast';
+
+const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52s-.669-1.611-.916-2.207c-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" /></svg>
+);
+
 
 const formSchema = z.object({
   age: z.coerce.number().min(8, "Minimum age is 8").max(59, "Maximum age is 59"),
@@ -37,6 +44,7 @@ type CalculationResult = {
   deathSumAssured: number;
   accidentRiderSA: number;
   termRiderSA: number;
+  chartData: any[];
 };
 
 // Simplified tabular rates for illustration.
@@ -54,6 +62,7 @@ const termRiderRates: Record<number, number> = {
 export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
   const [result, setResult] = useState<CalculationResult | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const { toast } = useToast();
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -151,6 +160,15 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
 
     const deathSumAssured = Math.max(values.sumAssured, 7 * (baseYearlyPremium + (values.termRider ? (termRiderSA/1000) * getRateForAge(values.age, termRiderRates) : 0)));
 
+    const chartData = [
+      {
+        name: 'Analysis',
+        'Total Premium Paid': totalPremiumPaid,
+        'Sum Assured': values.sumAssured,
+        'Estimated Bonus': vestedBonus + finalAdditionalBonus,
+      },
+    ];
+
     setResult({
       firstYear: firstYearPremiums,
       secondYear: secondYearPremiums,
@@ -164,6 +182,7 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
       deathSumAssured,
       accidentRiderSA,
       termRiderSA,
+      chartData,
     });
     
     setIsLoading(false);
@@ -172,6 +191,42 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
   const formatCurrency = (value: number) => {
     return value.toLocaleString('en-IN', { style: 'currency', currency: 'INR', minimumFractionDigits: 0, maximumFractionDigits: 0 });
   }
+  
+  const handlePrint = () => window.print();
+
+  const handleShare = (platform: 'whatsapp' | 'twitter') => {
+    if (!result || typeof window === 'undefined') return;
+    const url = window.location.href;
+    const text = `I just calculated my LIC Jeevan Labh premium using BharatSaver's calculator! My estimated maturity is ${formatCurrency(result.maturity.total)}. Plan yours:`;
+    const shareUrl = platform === 'twitter'
+      ? `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`
+      : `https://api.whatsapp.com/send?text=${encodeURIComponent(text + ' ' + url)}`;
+    window.open(shareUrl, '_blank');
+  };
+  
+  const handleCSVExport = () => {
+    if (!result) return;
+    const headers = ["Description", "Value"];
+    const rows = [
+        ["Basic Sum Assured", result.maturity.sumAssured],
+        ["Total Premium Paid (Approx)", result.totalPremiumPaid],
+        ["Accumulated Bonus (Approx)", result.maturity.bonus],
+        ["Final Addition Bonus (Approx)", result.maturity.fab],
+        ["Total Maturity (Approx)", result.maturity.total],
+    ];
+    let csvContent = headers.join(',') + '\n';
+    rows.forEach(row => {
+        csvContent += row.join(',') + '\n';
+    });
+    
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.setAttribute('download', 'lic_jeevan_labh_summary.csv');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   
   const values = form.getValues();
 
@@ -265,7 +320,10 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
       {isLoading && <div className="text-center py-12"><Loader2 className="mx-auto h-12 w-12 animate-spin text-primary" /></div>}
 
       {result && (
-        <Card className="mt-8 animate-in fade-in-50">
+        <Card className="mt-8 animate-in fade-in-50 print-container">
+            <div className="print-header">
+                <h2>BharatSaver - LIC Jeevan Labh Calculation</h2>
+            </div>
           <CardHeader>
             <CardTitle>LIC Jeevan Labh (936) - Calculation Details</CardTitle>
           </CardHeader>
@@ -286,7 +344,7 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
             <div>
               <h3 className="font-semibold mb-2">First Year Premium</h3>
               <Table>
-                <TableHeader><TableRow><TableHead>Mode</TableHead><TableHead className="text-right">Premium</TableHead><TableHead className="text-right">GST (@4.5% + 18%)</TableHead><TableHead className="text-right">Total Premium</TableHead></TableRow></TableHeader>
+                <TableHeader><TableRow><TableHead>Mode</TableHead><TableHead className="text-right">Premium</TableHead><TableHead className="text-right">GST (@4.5%)</TableHead><TableHead className="text-right">Total Premium</TableHead></TableRow></TableHeader>
                 <TableBody>
                   {result.firstYear.map(item => (
                     <TableRow key={item.mode}>
@@ -303,7 +361,7 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
             <div>
               <h3 className="font-semibold mb-2">Second Year Onward Premium</h3>
               <Table>
-                <TableHeader><TableRow><TableHead>Mode</TableHead><TableHead className="text-right">Premium</TableHead><TableHead className="text-right">GST (@2.25% + 18%)</TableHead><TableHead className="text-right">Total Premium</TableHead></TableRow></TableHeader>
+                <TableHeader><TableRow><TableHead>Mode</TableHead><TableHead className="text-right">Premium</TableHead><TableHead className="text-right">GST (@2.25%)</TableHead><TableHead className="text-right">Total Premium</TableHead></TableRow></TableHeader>
                 <TableBody>
                   {result.secondYear.map(item => (
                     <TableRow key={item.mode}>
@@ -317,6 +375,22 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
               </Table>
             </div>
 
+             <div>
+                <h3 className="font-semibold mb-2">Maturity vs. Premium Investment</h3>
+                <ResponsiveContainer width="100%" height={300}>
+                    <BarChart data={result.chartData} layout="vertical" margin={{ left: 30 }}>
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis type="number" tickFormatter={(value) => (value / 100000).toLocaleString('en-IN') + 'L'} />
+                        <YAxis type="category" dataKey="name" hide />
+                        <Tooltip formatter={(value: number) => formatCurrency(value)} />
+                        <Legend />
+                        <Bar dataKey="Total Premium Paid" stackId="a" fill="hsl(var(--destructive))" />
+                        <Bar dataKey="Sum Assured" stackId="a" fill="hsl(var(--primary))" />
+                        <Bar dataKey="Estimated Bonus" stackId="a" fill="hsl(var(--accent))" />
+                    </BarChart>
+                </ResponsiveContainer>
+            </div>
+
             <div>
               <h3 className="font-semibold mb-2">Maturity Benefits (Approximate)</h3>
               <Table>
@@ -325,27 +399,19 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
                   <TableRow><TableCell>Total Premium Paid (Approx)</TableCell><TableCell className="text-right">{formatCurrency(result.totalPremiumPaid)}</TableCell></TableRow>
                   <TableRow><TableCell>Accumulated Bonus (B)</TableCell><TableCell className="text-right">{formatCurrency(result.maturity.bonus)}</TableCell></TableRow>
                   <TableRow><TableCell>Final Addition Bonus (FAB) (C)</TableCell><TableCell className="text-right">{formatCurrency(result.maturity.fab)}</TableCell></TableRow>
-                  <TableRow className="font-bold bg-primary/10"><TableCell>Maturity (A+B+C)</TableCell><TableCell className="text-right">{formatCurrency(result.maturity.total)}</TableCell></TableRow>
+                  <TableRow className="font-bold bg-primary/10"><TableCell>Maturity (Approx) (A+B+C)</TableCell><TableCell className="text-right">{formatCurrency(result.maturity.total)}</TableCell></TableRow>
                  </TableBody>
               </Table>
               {values.age < 18 && <p className="text-xs text-destructive mt-2">Accidental and Disability Benefit Rider is not available for less than 18 years.</p>}
             </div>
             
-            <div>
-              <h3 className="font-semibold mb-2">Jeevan Labh Plan (Table-936) Summary</h3>
-              <Table>
-                 <TableBody>
-                   <TableRow><TableCell className="font-medium">Age</TableCell><TableCell>8-59 Years</TableCell></TableRow>
-                   <TableRow><TableCell className="font-medium">Policy Term (Premium Paying Term)</TableCell><TableCell>16 (10) Years<br/>21 (15) Years<br/>25 (16) Years</TableCell></TableRow>
-                   <TableRow><TableCell className="font-medium">Maturity</TableCell><TableCell>Basic Sum Assured + Accumulated Bonus + Final Additional Bonus (FAB)</TableCell></TableRow>
-                   <TableRow><TableCell className="font-medium">Death Claim</TableCell><TableCell>Death Sum Assured + Accumulated Bonus + FAB + Riders (if any)</TableCell></TableRow>
-                   <TableRow><TableCell className="font-medium">Available Riders</TableCell><TableCell>Accidental and Disability Benefit, Term Assurance, Premium Waiver Benefit (PWB)</TableCell></TableRow>
-                   <TableRow><TableCell className="font-medium">Surrender & Loan</TableCell><TableCell>Available after 2 full years of premium payment.</TableCell></TableRow>
-                   <TableRow><TableCell className="font-medium">Tax Benefit</TableCell><TableCell>Premium under 80C, Maturity under 10(10D)</TableCell></TableRow>
-                 </TableBody>
-              </Table>
+            <div className="flex flex-wrap items-center justify-center gap-4 pt-6 print-hide">
+                <Button variant="outline" size="sm" onClick={() => handleShare('whatsapp')}><WhatsAppIcon className="mr-2 h-4 w-4" /> WhatsApp</Button>
+                <Button variant="outline" size="sm" onClick={() => handleShare('twitter')}><Twitter className="mr-2 h-4 w-4" /> Twitter</Button>
+                <Button variant="outline" size="sm" onClick={handlePrint}><Printer className="mr-2 h-4 w-4" /> Print / Save PDF</Button>
+                <Button variant="outline" size="sm" onClick={handleCSVExport}><Download className="mr-2 h-4 w-4" />Download CSV</Button>
             </div>
-            
+
             <p className="text-xs text-center text-muted-foreground mt-4">{dictionary.results.note}</p>
           </CardContent>
         </Card>
@@ -353,3 +419,4 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
     </>
   );
 }
+

@@ -74,3 +74,35 @@
   .bs-author-links a { @apply text-primary mr-3 text-sm font-medium; }
   .bs-review { @apply text-xs text-muted-foreground mt-2; }
 }
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .print-hide {
+    display: none;
+  }
+  .print-container {
+    box-shadow: none;
+    border: none;
+  }
+  .print-header {
+    display: block;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 1rem;
+  }
+  .print-header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: hsl(var(--primary));
+  }
+}
+
+@layer base {
+  .print-header {
+    display: none;
+  }
+}
