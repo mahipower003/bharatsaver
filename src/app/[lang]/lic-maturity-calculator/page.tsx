@@ -10,7 +10,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
     const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-    const pageUrl = "https://bharatsaver.com/lic-calculators/tools/maturity-calculator";
+    const pageUrl = `${siteUrl}/lic-calculators/tools/maturity-calculator`;
 
     const articleSchema = {
       "@context":"https://schema.org",
@@ -21,7 +21,12 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       "author":{"@type":"Person","name":"Mahesh Chaube, CFP","url":"https://bharatsaver.com/author/mahesh-chaube"},
       "publisher":{"@type":"Organization","name":"BharatSaver","logo":{"@type":"ImageObject","url":"https://bharatsaver.com/logo.png"}},
       "datePublished":"2025-09-01",
-      "dateModified":"2025-09-23"
+      "dateModified":"2025-09-23",
+      "reviewedBy": {
+        "@type": "Person",
+        "name": "Laveena Vijayi",
+        "jobTitle": "Senior Financial Research Analyst"
+      }
     };
 
     return {

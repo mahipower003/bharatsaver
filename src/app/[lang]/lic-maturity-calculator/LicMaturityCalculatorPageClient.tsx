@@ -7,7 +7,6 @@ import type { Dictionary } from "@/lib/types";
 import type { Locale } from "@/lib/i18n-config";
 import { FooterCta } from "@/components/layout/FooterCta";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { HelpCircle, SlidersHorizontal, StepForward, BarChart2, TrendingUp, FileText, GitCompareArrows, BookUser, Star, CheckCircle, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -116,6 +115,9 @@ export default function LicMaturityCalculatorPageClient({
           !!section && typeof section === 'object' && 'title' in section && 'body' in section && 'id' in section
         )
         .map((section, index) => {
+          if (section.id === 'quick-answer' || section.id === 'conclusion' || section.id === 'plan-specifics' || section.id === 'faq') {
+            return null;
+          }
           const Icon = section.icon ? getIcon(section.icon) : null;
           return (
             <Card key={index} className="shadow-lg" id={section.id}>
