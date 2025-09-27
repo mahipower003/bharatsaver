@@ -115,7 +115,7 @@ export default function LicMaturityCalculatorPageClient({
           !!section && typeof section === 'object' && 'title' in section && 'body' in section && 'id' in section
         )
         .map((section, index) => {
-          if (section.id === 'quick-answer' || section.id === 'conclusion' || section.id === 'plan-specifics' || section.id === 'faq') {
+          if (['quick-answer', 'conclusion', 'plan_specifics', 'faq'].includes(section.id)) {
             return null;
           }
           const Icon = section.icon ? getIcon(section.icon) : null;
@@ -202,7 +202,7 @@ export default function LicMaturityCalculatorPageClient({
                     </CardTitle>
                 </CardHeader>
                 <CardContent>
-                    <p className="text-muted-foreground">{pageDict.conclusion.body}</p>
+                    <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.conclusion.body }} />
                 </CardContent>
             </Card>
         )}

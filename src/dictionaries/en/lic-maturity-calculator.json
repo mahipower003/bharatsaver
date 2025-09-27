@@ -41,7 +41,7 @@
     "title": "Inputs Explained: What You Must Enter",
     "body": "<ul><li><strong>Plan Preset:</strong> Selecting a specific plan like 'Jeevan Labh' helps the tool apply correct Premium Paying Terms (PPT) and typical bonus ranges.</li><li><strong>Premium & Term:</strong> The annual premium and the full policy term are needed to calculate total investment. Note the difference between Policy Term (e.g., 25 years) and Premium Paying Term (e.g., 16 years for Jeevan Labh).</li><li><strong>Bonus & FAB Rates:</strong> The most critical inputs for an accurate estimate. You can find these in your annual policy statement or use the historical average of ₹40-₹48 as a guideline.</li><li><strong>Surrender/Loan Dates:</strong> Your Date of Birth and the date of the last premium paid are required to calculate the precise Surrender Value and loan eligibility, as these are age- and term-dependent.</li></ul>"
   },
-  "worked_examples": {
+    "worked_examples": {
     "id": "worked-examples",
     "icon": "FileText",
     "title": "Worked Examples & IRR Calculation",
@@ -120,7 +120,6 @@
   },
   "conclusion": {
     "id": "conclusion",
-    "icon": "Star",
     "title": "Take Control of Your Financial Future",
     "body": "Understanding your policy's maturity value is a crucial step in financial planning. It allows you to see if you're on track to meet your goals and make necessary adjustments. Use this calculator to gain clarity, download your results for future reference, and take the next confident step in your investment journey."
   }
