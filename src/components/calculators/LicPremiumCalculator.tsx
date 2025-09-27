@@ -33,15 +33,14 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
   const form = useForm<LicFormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      productCategory: 'insurance_plans',
-      subCategory: 'whole_life_plans',
-      plan: 'jeevan_umang',
+      productCategory: '',
+      subCategory: '',
+      plan: '',
     },
   });
 
   const productCategory = form.watch('productCategory');
   const subCategory = form.watch('subCategory');
-  const categoriesWithSubCategories = ['insurance_plans'];
 
   useEffect(() => {
     form.resetField('subCategory', { defaultValue: '' });
@@ -52,7 +51,7 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
      form.resetField('plan', { defaultValue: '' });
   }, [subCategory, form]);
 
-  const hasSubCategories = categoriesWithSubCategories.includes(productCategory);
+  const hasSubCategories = productCategory === 'insurance_plans';
   
   const subCategories = hasSubCategories && dictionary.tool.sub_categories[productCategory] 
     ? Object.entries(dictionary.tool.sub_categories[productCategory])
@@ -66,7 +65,7 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
   async function handleSubmit(values: LicFormValues) {
     setIsLoading(true);
     const lang = pathname.split('/')[1] || 'en';
-    const planSlug = `lic-${values.plan}-calculator`.replace(/_/g, '-');
+    const planSlug = `lic-${values.plan.replace(/_/g, '-')}-calculator`;
     
     // Simulate a brief delay before redirecting
     await new Promise(resolve => setTimeout(resolve, 300));
@@ -96,9 +95,9 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel>{dictionary.tool.category_label}</FormLabel>
-                        <Select onValueChange={field.onChange} defaultValue={field.value}>
+                        <Select onValueChange={field.onChange} value={field.value || ''}>
                           <FormControl>
-                            <SelectTrigger><SelectValue /></SelectTrigger>
+                            <SelectTrigger><SelectValue placeholder={dictionary.tool.sub_category_placeholder} /></SelectTrigger>
                           </FormControl>
                           <SelectContent>
                             {Object.entries(dictionary.tool.categories).map(([key, value]) => (
@@ -158,7 +157,7 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
                 )}
               </div>
 
-              <Button type="submit" disabled={isLoading} className="w-full md:w-auto">
+              <Button type="submit" disabled={isLoading || !form.formState.isValid} className="w-full md:w-auto">
                 {isLoading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <ArrowRight className="mr-2 h-4 w-4" />}
                 {dictionary.tool.view_calculator_button}
               </Button>
@@ -169,3 +168,5 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
     </>
   );
 }
+
+    
