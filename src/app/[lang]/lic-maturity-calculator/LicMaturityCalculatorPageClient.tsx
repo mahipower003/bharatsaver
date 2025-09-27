@@ -106,22 +106,7 @@ export default function LicMaturityCalculatorPageClient({
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4" dangerouslySetInnerHTML={{ __html: pageDict.quick_answer.intro }} />
-              <div className="overflow-x-auto">
-                <Table>
-                    <TableHeader>
-                        <TableRow>
-                            {pageDict.quick_answer.table.headers.map((header: string, hIdx: number) => <TableHead key={hIdx}>{header}</TableHead>)}
-                        </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                        {pageDict.quick_answer.table.rows.map((row: string[], rIdx: number) => (
-                            <TableRow key={rIdx}>
-                            {row.map((cell: string, cIdx: number) => <TableCell key={cIdx} dangerouslySetInnerHTML={{ __html: cell }} />)}
-                            </TableRow>
-                        ))}
-                    </TableBody>
-                </Table>
-              </div>
+              <div className="overflow-x-auto" dangerouslySetInnerHTML={{ __html: pageDict.quick_answer.table_html}} />
             </CardContent>
           </Card>
         )}
@@ -195,6 +180,7 @@ export default function LicMaturityCalculatorPageClient({
       <div className="mx-auto max-w-5xl">
         <header className="text-center mb-8">
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{__html: pageDict.h1}} />
+            {pageDict.top_cta && <p className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.top_cta }}></p>}
         </header>
         
         <div id="calculator-widget">
