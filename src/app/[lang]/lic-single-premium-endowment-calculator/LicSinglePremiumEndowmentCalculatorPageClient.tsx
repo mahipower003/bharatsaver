@@ -37,6 +37,53 @@ export default function LicSinglePremiumEndowmentCalculatorPageClient({
   pageDict: any;
 }) {
 
+    const siteUrl = 'https://bharatsaver.com';
+    const pageUrl = `${siteUrl}/${params.lang}/lic-single-premium-endowment-calculator`;
+
+    const faqItems = pageDict.article.sections.find((s:any) => s.id === 'faq')?.content[0]?.items ?? [];
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqItems.map((faq: {q: string; a: string}) => ({
+        "@type": "Question",
+        "name": faq.q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.a.replace(/<[^>]*>/g, '') // Strip HTML for schema
+        }
+      }))
+    };
+    
+    const howToSchema = {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Use LIC Single Premium Endowment Calculator",
+        "step": [
+            {"@type": "HowToStep", "name": "Enter Basic Details", "text": "Provide your age and desired sum assured."},
+            {"@type": "HowToStep", "name": "Select Term", "text": "Choose your desired policy term (10 to 25 years)."},
+            {"@type": "HowToStep", "name": "Click 'Calculate'", "text": "Our calculator instantly shows your one-time premium, including GST, and the estimated maturity benefits."},
+            {"@type": "HowToStep", "name": "View Your Projected Returns", "text": "Check your total maturity amount, including bonuses, to understand the plan's potential."}
+        ]
+    };
+    
+    const financialProductSchema = {
+        "@context": "https://schema.org",
+        "@type": "FinancialProduct",
+        "name": "LIC Single Premium Endowment Plan (Plan No. 917/717)",
+        "description": "A single premium, non-linked, with-profits endowment plan offering a combination of savings and protection.",
+        "brand": {
+            "@type": "Brand",
+            "name": "LIC of India"
+        },
+        "identifier": "512N283V03", // UIN of the plan
+        "url": pageUrl,
+        "offers": {
+            "@type": "Offer",
+            "priceCurrency": "INR"
+        }
+    };
+
+
   const ArticleContent = () => (
     <div className="mt-12 space-y-8 print-hide">
       {pageDict.article.sections.map((section: any, index: number) => {
@@ -72,7 +119,7 @@ export default function LicSinglePremiumEndowmentCalculatorPageClient({
                             <TableBody>
                             {item.rows.map((row: string[], rIdx: number) => (
                                 <TableRow key={rIdx}>
-                                {row.map((cell: string, cIdx: number) => <TableCell key={cIdx} dangerouslySetInnerHTML={{ __html: cell }} />)}
+                                {row.map((cell: string, cIdx: number) => <TableCell key={cIdx} dangerouslySetInnerHTML={{ __html: cell.replace(/{lang}/g, params.lang) }} />)}
                                 </TableRow>
                             ))}
                             </TableBody>
@@ -129,6 +176,7 @@ export default function LicSinglePremiumEndowmentCalculatorPageClient({
 
   return (
     <div className="py-12">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([faqSchema, howToSchema, financialProductSchema]) }} />
       <div className="mx-auto max-w-5xl">
         <header className="text-center mb-8 print-hide">
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{__html: pageDict.h1}} />
