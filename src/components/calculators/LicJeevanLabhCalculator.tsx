@@ -436,4 +436,3 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
     </div>
   );
 }
-
