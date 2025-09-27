@@ -6,7 +6,7 @@ import { AuthorCard } from "@/components/layout/AuthorCard";
 import type { Dictionary } from "@/lib/types";
 import type { Locale } from "@/lib/i18n-config";
 import { FooterCta } from "@/components/layout/FooterCta";
-import { BarChart2, CheckCircle, Lightbulb, TrendingUp, HelpCircle, FileText, Download, Users, Star, Smile, Search, SlidersHorizontal, Calculator, Clock, GitCompareArrows } from "lucide-react";
+import { BarChart2, CheckCircle, Lightbulb, TrendingUp, HelpCircle, FileText, Download, Users, Star, Smile, Search, SlidersHorizontal, Calculator, Clock, GitCompareArrows, StepForward } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function LicPremiumCalculatorPageClient({
@@ -56,6 +56,47 @@ export default function LicPremiumCalculatorPageClient({
               <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0"/><span><strong>Budget with Confidence:</strong> Instantly see how your premium changes with different payment frequencies, helping you choose what best fits your financial situation.</span></li>
               <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0"/><span><strong>Full Cost Transparency:</strong> If you're considering riders like Accident or Critical Illness cover, the <em>LIC premium calculator with riders</em> shows you the exact incremental cost.</span></li>
           </ul>
+        </CardContent>
+      </Card>
+
+      <Card className="shadow-lg">
+        <CardHeader>
+            <CardTitle className="flex items-center gap-3">
+                <StepForward className="h-8 w-8 text-primary"/>
+                <h2>How Does the LIC Calculator Work? A Step-by-Step Guide</h2>
+            </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ol className="space-y-4">
+            <li className="flex items-start gap-4">
+              <div className="flex-shrink-0 h-8 w-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">1</div>
+              <div>
+                <h3 className="font-semibold">Select Your Plan</h3>
+                <p className="text-muted-foreground">Start by choosing your desired LIC plan from the dropdown menus. Selecting a preset like "Jeevan Umang" ensures the calculator uses the correct parameters for that specific policy.</p>
+              </div>
+            </li>
+            <li className="flex items-start gap-4">
+              <div className="flex-shrink-0 h-8 w-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">2</div>
+              <div>
+                <h3 className="font-semibold">Enter Your Details</h3>
+                <p className="text-muted-foreground">Input your age, gender, desired Sum Assured (the coverage amount), and the Premium Paying Term (PPT).</p>
+              </div>
+            </li>
+            <li className="flex items-start gap-4">
+              <div className="flex-shrink-0 h-8 w-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">3</div>
+              <div>
+                <h3 className="font-semibold">Click Calculate</h3>
+                <p className="text-muted-foreground">The tool processes your inputs using LIC's formulas to determine the base premium before any taxes or optional riders.</p>
+              </div>
+            </li>
+             <li className="flex items-start gap-4">
+              <div className="flex-shrink-0 h-8 w-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">4</div>
+              <div>
+                <h3 className="font-semibold">View Your Results</h3>
+                <p className="text-muted-foreground">The calculator displays your estimated premium for yearly, half-yearly, quarterly, and monthly frequencies, allowing you to see which payment plan best suits your budget.</p>
+              </div>
+            </li>
+          </ol>
         </CardContent>
       </Card>
 
@@ -188,5 +229,3 @@ export default function LicPremiumCalculatorPageClient({
     </div>
   );
 }
-
-    
