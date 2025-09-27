@@ -173,5 +173,11 @@
     "icon": "StepForward",
     "title": "Next Steps: Take Control of Your Policy",
     "body": "Now that you have an estimate, what's next? Download a PDF of your calculation for your records, compare it against other investment options, or contact a certified financial planner to discuss your portfolio."
+  },
+  "conclusion": {
+    "id": "conclusion",
+    "icon": "Star",
+    "title": "Take Control of Your Financial Future",
+    "body": "Understanding your policy's maturity value is a crucial step in financial planning. It allows you to see if you're on track to meet your goals and make necessary adjustments. Use this calculator to gain clarity, download your results for future reference, and take the next confident step in your investment journey."
   }
 }

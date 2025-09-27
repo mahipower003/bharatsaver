@@ -96,37 +96,39 @@ export default function LicMaturityCalculatorPageClient({
 
   const ArticleContent = () => (
     <div className="mt-12 space-y-8">
-        {pageDict.quick_answer && (
-          <Card id="quick-answer" className="shadow-lg">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-3">
-                <CheckCircle className="h-8 w-8 text-primary" />
-                <h2 className="text-2xl font-bold">{pageDict.quick_answer.title}</h2>
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground mb-4" dangerouslySetInnerHTML={{ __html: pageDict.quick_answer.intro }} />
-              <div className="overflow-x-auto" dangerouslySetInnerHTML={{ __html: pageDict.quick_answer.table_html}} />
-            </CardContent>
-          </Card>
-        )}
+      {pageDict.quick_answer && (
+        <Card id="quick-answer" className="shadow-lg">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-3">
+              <CheckCircle className="h-8 w-8 text-primary" />
+              <h2 className="text-2xl font-bold">{pageDict.quick_answer.title}</h2>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-muted-foreground mb-4" dangerouslySetInnerHTML={{ __html: pageDict.quick_answer.intro }} />
+            <div className="overflow-x-auto" dangerouslySetInnerHTML={{ __html: pageDict.quick_answer.table_html}} />
+          </CardContent>
+        </Card>
+      )}
 
       {Object.values(pageDict)
-        .filter((section: any) => section.title && section.body && section.id)
-        .map((section: any, index: number) => {
-        const Icon = section.icon ? getIcon(section.icon) : null;
-        return (
-          <Card key={index} className="shadow-lg" id={section.id}>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-3">
-                {Icon && <Icon className="h-8 w-8 text-primary" />}
-                <h2 className="text-2xl font-bold">{section.title}</h2>
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: section.body }} />
-          </Card>
-        );
-      })}
+        .filter((section: any): section is { title: string; body: string; id: string; icon?: string } =>
+          !!section && typeof section === 'object' && 'title' in section && 'body' in section && 'id' in section
+        )
+        .map((section, index) => {
+          const Icon = section.icon ? getIcon(section.icon) : null;
+          return (
+            <Card key={index} className="shadow-lg" id={section.id}>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3">
+                  {Icon && <Icon className="h-8 w-8 text-primary" />}
+                  <h2 className="text-2xl font-bold">{section.title}</h2>
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: section.body }} />
+            </Card>
+          );
+        })}
 
       {pageDict.plan_specifics && (
         <Card id="plan-specifics" className="shadow-lg">
@@ -188,6 +190,20 @@ export default function LicMaturityCalculatorPageClient({
         </div>
 
         <ArticleContent />
+
+        {pageDict.conclusion && (
+            <Card id="conclusion" className="mt-12 shadow-lg bg-accent/10 border-accent/20">
+                <CardHeader>
+                    <CardTitle className="flex items-center gap-3">
+                        <Star className="h-8 w-8 text-accent" />
+                        <h2 className="text-2xl font-bold">{pageDict.conclusion.title}</h2>
+                    </CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <p className="text-muted-foreground">{pageDict.conclusion.body}</p>
+                </CardContent>
+            </Card>
+        )}
         
         <div className="mt-12">
             <AuthorCard dictionary={dictionary.author_card} />
