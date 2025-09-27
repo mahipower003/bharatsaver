@@ -7,7 +7,10 @@
     "form_description": "Find the specific LIC plan you're interested in to calculate its premium.",
     "category_label": "Product Category",
     "categories": {
-      "insurance_plans": "Insurance Plans"
+      "insurance_plans": "Insurance Plans",
+      "pension_plans": "Pension Plans",
+      "ulip_plans": "ULIP Plans",
+      "health_plans": "Health Plans"
     },
     "sub_category_label": "Sub Category",
     "sub_category_placeholder": "Select a sub category",
@@ -16,19 +19,51 @@
         "endowment_plans": "Endowment Plans",
         "whole_life_plans": "Whole Life Plans",
         "money_back_plans": "Money Back Plans",
-        "term_assurance_plans": "Term Assurance Plans",
-        "rider": "Rider"
+        "term_assurance_plans": "Term Assurance Plans"
       }
     },
     "plan_label": "Select LIC Plan",
     "plan_placeholder": "Select a plan",
     "plans": {
       "endowment_plans": {
-        "jeevan_labh": "LIC's Jeevan Labh"
+        "bima_jyoti": "LIC's Bima Jyoti",
+        "bima_ratna": "LIC's Bima Ratna",
+        "dhan_sanchay": "LIC's Dhan Sanchay",
+        "jeevan_azad": "LIC's Jeevan Azad",
+        "jeevan_labh": "LIC's Jeevan Labh",
+        "jeevan_lakshya": "LIC's Jeevan Lakshya",
+        "new_endowment_plan": "LIC's New Endowment Plan"
       },
       "whole_life_plans": {
         "jeevan_utsav": "LIC's Jeevan Utsav",
         "jeevan_umang": "LIC's Jeevan Umang"
+      },
+       "money_back_plans": {
+        "dhan_rekha": "LIC's Dhan Rekha",
+        "new_money_back_20": "LIC's New Money Back Plan - 20 Years",
+        "new_money_back_25": "LIC's New Money Back Plan - 25 Years",
+        "new_jeevan_mangal": "LIC's New Jeevan Mangal"
+      },
+      "term_assurance_plans": {
+        "jeevan_kiran": "LIC's Jeevan Kiran",
+        "new_jeevan_amar": "LIC's New Jeevan Amar",
+        "saral_jeevan_bima": "LIC's Saral Jeevan Bima",
+        "tech_term": "LIC's New Tech-Term"
+      },
+      "pension_plans": {
+        "new_jeevan_shanti": "LIC's New Jeevan Shanti",
+        "jeevan_akshay_vii": "LIC's Jeevan Akshay-VII",
+        "saral_pension": "LIC's Saral Pension"
+      },
+      "ulip_plans": {
+        "nivesh_plus": "LIC's Nivesh Plus",
+        "siip": "LIC's SIIP",
+        "index_plus": "LIC's Index Plus",
+        "new_endowment_plus": "LIC's New Endowment Plus"
+      },
+      "health_plans": {
+        "cancer_cover": "LIC's Cancer Cover",
+        "dhan_varsha": "LIC's Dhan Varsha"
       }
     },
     "view_calculator_button": "View Calculator"

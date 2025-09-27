@@ -54,13 +54,13 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
 
   const hasSubCategories = categoriesWithSubCategories.includes(productCategory);
   
-  const subCategories = hasSubCategories && dictionary.sub_categories[productCategory] 
-    ? Object.entries(dictionary.sub_categories[productCategory])
+  const subCategories = hasSubCategories && dictionary.tool.sub_categories[productCategory] 
+    ? Object.entries(dictionary.tool.sub_categories[productCategory])
     : null;
 
   const plans = hasSubCategories 
-    ? (subCategory && dictionary.plans[subCategory] ? Object.entries(dictionary.plans[subCategory]) : null)
-    : (productCategory && dictionary.plans[productCategory] ? Object.entries(dictionary.plans[productCategory]) : null);
+    ? (subCategory && dictionary.tool.plans[subCategory] ? Object.entries(dictionary.tool.plans[subCategory]) : null)
+    : (productCategory && dictionary.tool.plans[productCategory] ? Object.entries(dictionary.tool.plans[productCategory]) : null);
 
 
   async function handleSubmit(values: LicFormValues) {
@@ -81,10 +81,10 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
            <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
             <h2 className="flex items-center gap-2 text-xl font-bold">
                 <ShieldCheck className="h-6 w-6 text-primary" />
-                <span>{dictionary.title}</span>
+                <span>{dictionary.tool.title}</span>
             </h2>
             </div>
-             <CardDescription>{dictionary.form_description}</CardDescription>
+             <CardDescription>{dictionary.tool.form_description}</CardDescription>
         </CardHeader>
         <CardContent>
           <Form {...form}>
@@ -95,13 +95,13 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
                     name="productCategory"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>{dictionary.category_label}</FormLabel>
+                        <FormLabel>{dictionary.tool.category_label}</FormLabel>
                         <Select onValueChange={field.onChange} defaultValue={field.value}>
                           <FormControl>
                             <SelectTrigger><SelectValue /></SelectTrigger>
                           </FormControl>
                           <SelectContent>
-                            {Object.entries(dictionary.categories).map(([key, value]) => (
+                            {Object.entries(dictionary.tool.categories).map(([key, value]) => (
                               <SelectItem key={key} value={key}>{value}</SelectItem>
                             ))}
                           </SelectContent>
@@ -117,10 +117,10 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
                       name="subCategory"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>{dictionary.sub_category_label}</FormLabel>
+                          <FormLabel>{dictionary.tool.sub_category_label}</FormLabel>
                           <Select onValueChange={field.onChange} value={field.value || ''} >
                             <FormControl>
-                              <SelectTrigger><SelectValue placeholder={dictionary.sub_category_placeholder} /></SelectTrigger>
+                              <SelectTrigger><SelectValue placeholder={dictionary.tool.sub_category_placeholder} /></SelectTrigger>
                             </FormControl>
                             <SelectContent>
                               {subCategories.map(([key, value]) => (
@@ -140,10 +140,10 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
                     name="plan"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>{dictionary.plan_label}</FormLabel>
+                        <FormLabel>{dictionary.tool.plan_label}</FormLabel>
                         <Select onValueChange={field.onChange} value={field.value || ''}>
                           <FormControl>
-                            <SelectTrigger><SelectValue placeholder={dictionary.plan_placeholder} /></SelectTrigger>
+                            <SelectTrigger><SelectValue placeholder={dictionary.tool.plan_placeholder} /></SelectTrigger>
                           </FormControl>
                           <SelectContent>
                              {plans.map(([key, value]) => (
@@ -160,7 +160,7 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
 
               <Button type="submit" disabled={isLoading} className="w-full md:w-auto">
                 {isLoading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <ArrowRight className="mr-2 h-4 w-4" />}
-                {dictionary.view_calculator_button}
+                {dictionary.tool.view_calculator_button}
               </Button>
             </form>
           </Form>
