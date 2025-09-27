@@ -71,28 +71,28 @@
       ]
     },
     {
-        "id": "death-benefit",
-        "icon": "ShieldCheck",
-        "title": "Death Benefit Explained",
-        "content": [
-          {
-            "type": "paragraph",
-            "text": "In the unfortunate event of the policyholder's death during the policy term, the nominee receives the 'Sum Assured on Death' plus any vested bonuses. This 'Sum Assured on Death' is defined as the higher of:"
-          },
-          {
-            "type": "list",
-            "items": [
-              "<strong>125% of the Basic Sum Assured</strong>",
-              "<strong>7 times the annualized premium</strong>"
-            ]
-          },
-          {
-            "type": "alert",
-            "variant": "default",
-            "title": "Example",
-            "text": "For a ₹10 Lakh policy with an annual premium of ₹50,000, the Sum Assured on Death would be the higher of ₹12.5 Lakh (125% of 10L) or ₹3.5 Lakh (7 x 50k), which is <strong>₹12.5 Lakh</strong>, plus any accumulated bonuses."
-          }
-        ]
+      "id": "death-benefit",
+      "icon": "ShieldCheck",
+      "title": "Death Benefit Explained",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In the unfortunate event of the policyholder's death during the policy term, the nominee receives the 'Sum Assured on Death' plus any vested bonuses. This 'Sum Assured on Death' is defined as the higher of:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>125% of the Basic Sum Assured</strong>",
+            "<strong>7 times the annualized premium</strong>"
+          ]
+        },
+        {
+          "type": "alert",
+          "variant": "default",
+          "title": "Example",
+          "text": "For a ₹10 Lakh policy with an annual premium of ₹50,000, the Sum Assured on Death would be the higher of ₹12.5 Lakh (125% of 10L) or ₹3.5 Lakh (7 x 50k), which is <strong>₹12.5 Lakh</strong>, plus any accumulated bonuses."
+        }
+      ]
     },
     {
       "id": "paid-up-value",
@@ -236,21 +236,21 @@
           "icon": "Calculator",
           "title": "LIC Jeevan Labh Calculator",
           "description": "Limited premium plan for goal-based savings.",
-          "href": "/{lang}/lic-jeevan-labh-calculator"
+          "href": "/en/lic-jeevan-labh-calculator"
         },
         {
           "type": "card_link",
           "icon": "Calculator",
           "title": "LIC Single Premium Calculator",
           "description": "For one-time lump sum investments.",
-          "href": "/{lang}/lic-single-premium-endowment-calculator"
+          "href": "/en/lic-single-premium-endowment-calculator"
         },
         {
           "type": "card_link",
           "icon": "LinkIcon",
           "title": "All LIC Premium Calculators",
           "description": "Explore premiums for all popular plans.",
-          "href": "/{lang}/lic-premium-calculator"
+          "href": "/en/lic-premium-calculator"
         }
       ]
     },
@@ -261,7 +261,7 @@
       "content": [
         {
           "type": "faq",
-          "questions": [
+          "items": [
             {"q": "How do I calculate my LIC policy maturity amount?","a": "Enter sum assured, policy term, and an illustrative bonus rate per ₹1,000 SA into the calculator. Maturity = Sum Assured + (Vested bonus × policy term) + Final Additional Bonus (if any)."},
             {"q": "Does the LIC maturity calculator include bonus?","a": "Yes. You can input an illustrative bonus rate per ₹1,000 SA or use historical averages. The calculator multiplies the annual bonus by the policy term to estimate total bonus."},
             {"q": "How accurate is the maturity estimate?","a": "Estimates use the inputs and illustrative bonus/FAB rates. Actual maturity depends on LIC's declared bonuses and final underwriting; treat results as indicative, not binding."},
@@ -282,8 +282,9 @@
             {"q": "Can I change Sum Assured during the policy?","a": "No, the Basic Sum Assured is fixed at the time of policy issuance and cannot be changed during the term."},
             {"q": "What happens if I stop paying premiums (paid-up)?","a": "After 2 years, the policy can become 'paid-up' with a reduced Sum Assured. You won't have to pay more premiums, and you will receive the reduced sum assured plus vested bonuses at maturity."},
             {"q": "How often does LIC declare bonus rates?","a": "LIC declares its Simple Reversionary Bonus rates annually, typically after the end of each financial year (March 31st)."}
-          ]}
-        ]
+          ]
+        }
+      ]
     },
     {
       "id": "conclusion",

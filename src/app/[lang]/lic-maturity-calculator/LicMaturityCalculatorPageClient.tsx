@@ -86,10 +86,10 @@ const ContentRenderer = ({ content, lang }: { content: any[], lang: Locale }) =>
           case 'formula':
             return <p key={idx} className="font-mono bg-muted p-4 rounded-md my-4 text-center" dangerouslySetInnerHTML={{ __html: item.text }} />;
            case 'faq':
-             if (!item.questions || !Array.isArray(item.questions)) return null;
+             if (!item.items || !Array.isArray(item.items)) return null;
             return (
               <Accordion key={idx} type="single" collapsible className="w-full">
-                {item.questions.map((faq: {q: string, a: string}, qIdx: number) => (
+                {item.items.map((faq: {q: string, a: string}, qIdx: number) => (
                     <AccordionItem key={qIdx} value={`item-${qIdx}`}>
                         <AccordionTrigger>{faq.q}</AccordionTrigger>
                         <AccordionContent><p dangerouslySetInnerHTML={{__html: faq.a}} /></AccordionContent>
@@ -100,7 +100,7 @@ const ContentRenderer = ({ content, lang }: { content: any[], lang: Locale }) =>
             case 'card_link':
               const CardIcon = getIcon(item.icon);
               return (
-                  <Link key={idx} href={item.href.replace('{lang}', lang)} className="group block">
+                  <Link key={idx} href={item.href} className="group block">
                       <Card className="hover:shadow-md hover:border-primary/30 transition-all">
                           <CardHeader className="flex flex-row items-center gap-4">
                               <CardIcon className="h-8 w-8 text-primary" />
