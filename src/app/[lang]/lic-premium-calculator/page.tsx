@@ -18,98 +18,122 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "How do I calculate LIC premium?",
+        "name": "How to calculate LIC premium for Jeevan Umang?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "To calculate your LIC premium, open the plan calculator on our page, enter your age (or date of birth), the desired sum assured, the premium paying term (PPT), and how often you'd like to pay (e.g., monthly, yearly). For more accurate results, select a plan preset like 'Jeevan Umang' and click 'Calculate' to get an instant estimate."
+          "text": "Use the plan rate per ₹1,000 Sum Assured × (Sum Assured/1,000), apply the payment mode factor (YR 1.00, HY ~0.51, Q ~0.26, M ~0.087), add rider charges, then add applicable GST. Exact rates depend on age, PPT, and riders."
         }
       },
       {
         "@type": "Question",
-        "name": "Is this an official LIC calculator?",
+        "name": "Which LIC plan has the lowest premium for age 30?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No, this is an independent estimation tool provided by BharatSaver. It uses official LIC plan rules and formulas for accuracy, but for a final, binding quote, you should always contact LIC or an authorized agent as premiums are subject to underwriting."
+          "text": "Pure term plans (e.g., LIC Tech Term/Jeevan Amar) have the lowest premiums for 30-year-olds; savings plans like Jeevan Labh/Umang cost more because they build benefits."
         }
       },
       {
         "@type": "Question",
-        "name": "Does this LIC premium calculator include tax (GST)?",
+        "name": "How is LIC premium calculated for monthly payment?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "By default, our calculator shows the premium before tax to give you the base cost. However, you can use the 'include tax' toggle to see the final premium inclusive of the current GST rates (e.g., 4.5% for the first year and 2.25% thereafter for traditional plans)."
+          "text": "Start with the annual base premium and multiply by the monthly modal factor (~0.087), then add rider charges and GST."
         }
       },
       {
         "@type": "Question",
-        "name": "What is Premium Paying Term (PPT) in LIC?",
+        "name": "Does LIC charge GST on premium?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The Premium Paying Term (PPT) is the specific number of years you are required to pay premiums for your LIC policy. This can be different from the full policy term. For example, in a plan like Jeevan Labh, you might pay premiums for 16 years, but the policy matures in 25 years. A longer PPT generally results in a lower annual premium."
+          "text": "Yes. Typical effective GST is ~4.5% in the first year and ~2.25% on renewals for traditional plans, ~18% on pure-risk term premiums, and ~1.8% on many single-premium plans (rates may change by regulation)."
         }
       },
       {
         "@type": "Question",
-        "name": "How can I compare premiums for different LIC plans like Jeevan Umang vs Jeevan Labh?",
+        "name": "What is the formula to calculate LIC premium?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Our calculator makes this easy. First, calculate the premium for 'Jeevan Umang' using its preset. Then, simply switch the preset to 'Jeevan Labh' while keeping the sum assured and age the same. This will give you a direct, side-by-side comparison of the premium cost for both plans."
+          "text": "Approx: Premium ≈ (Base rate per ₹1,000 × SA/1,000 × modal factor) + rider costs − rebates (mode/SA) + GST. Actual premiums are as per LIC’s rate tables and underwriting."
         }
       },
       {
         "@type": "Question",
-        "name": "Can I calculate the monthly premium for an LIC policy?",
+        "name": "How do riders affect LIC premium?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. The calculator has a 'Frequency' option where you can select 'Monthly'. It will automatically convert the annual premium to its monthly equivalent, including any modal loading charges applied by LIC for non-yearly payments."
+          "text": "Each rider (e.g., Accidental Death/Disability, Term Rider, Critical Illness) adds its own charge to the base premium; PWB waives future premiums on disability but still has a cost."
         }
       },
       {
         "@type": "Question",
-        "name": "How does adding a rider affect my LIC premium?",
+        "name": "How to reduce LIC premium without reducing sum assured?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Adding riders like the Accidental Death & Disability Benefit Rider or the Critical Illness Rider will increase your total premium. Our calculator allows you to toggle these riders on and off to see their exact incremental cost, helping you decide if the extra protection is worth the price."
+          "text": "Buy at a younger age, choose annual mode, opt for a longer PPT, avoid unnecessary riders, and use higher SA slabs to get rebates."
         }
       },
       {
         "@type": "Question",
-        "name": "What is the most accurate LIC premium calculator online for free?",
+        "name": "Is it cheaper to pay LIC premium annually?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "While many tools exist, a calculator that uses plan-specific presets, includes rider costs, and clarifies its tax assumptions (like this one) will provide the most accurate estimates. Official LIC agent portals are the most accurate source for a final quote."
+          "text": "Usually yes—annual mode avoids modal loading from monthly/quarterly payments and can minimize GST impact."
         }
       },
       {
         "@type": "Question",
-        "name": "How do you convert yearly LIC premium to monthly?",
+        "name": "Can I change premium paying term later?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The conversion is not a simple division by 12. LIC applies 'modal factors' for non-annual payments. For monthly payments, the factor is approximately 0.088 times the annual premium. Our calculator handles this conversion automatically when you select the 'Monthly' frequency."
+          "text": "Generally no; PPT is fixed after policy issuance. You can change payment mode or use options like paid-up/surrender, subject to policy rules."
         }
       },
       {
         "@type": "Question",
-        "name": "What details are needed for the Jeevan Utsav premium calculator?",
+        "name": "How accurate are online LIC premium calculators?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "For Jeevan Utsav, you'll need to provide your age, desired sum assured, and choose a premium paying term (from 5 to 16 years). The calculator will then show the premium for your selected term and the subsequent income benefits."
+          "text": "They’re close for quick estimates but final premiums depend on underwriting, medicals, exact rider choices, GST, and current rate tables."
         }
       },
       {
         "@type": "Question",
-        "name": "Can I download my premium calculation?",
+        "name": "Does LIC give concession for females?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, our tool includes a feature to download your calculated premium summary as a PDF. This is useful for your records or for discussing with a financial advisor."
+          "text": "Yes, many LIC plans offer lower premiums for female lives or specific female concessions, subject to plan rules."
         }
       },
       {
         "@type": "Question",
-        "name": "Which is the best LIC plan for me?",
+        "name": "How does age affect LIC premium?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The 'best' plan depends on your financial goal. Jeevan Umang is excellent for whole-life coverage and guaranteed income. Jeevan Labh is a classic endowment plan for savings. Jeevan Utsav offers flexible income benefits. We recommend comparing them with our tool to see which aligns with your needs."
+          "text": "Premiums rise with age because mortality risk increases; buying earlier locks in lower rates for the term."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How to calculate premium for single premium plans?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Single Premium ≈ (Single-premium rate per ₹1,000 × SA/1,000) − applicable rebates + GST (often ~1.8% on eligible plans)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How to compute maturity payout (basic formula)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For endowments: Maturity ≈ Sum Assured + vested bonus + final additional bonus (if any) − dues; for money-back, add the same but you’ve already received periodic survival benefits earlier."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How to compare Jeevan Umang vs Jeevan Labh for same sum assured?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Umang is whole-life with 8% SA yearly survival benefit after PPT and maturity at age 100—premium is higher but gives lifelong cover/income; Labh is a limited-premium endowment with a lump-sum maturity at term and generally lower premium."
         }
       }
     ]
