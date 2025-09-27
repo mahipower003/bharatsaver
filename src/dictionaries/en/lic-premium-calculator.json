@@ -115,10 +115,10 @@
         "content": [
             { "type": "paragraph", "text": "Using an LIC premium calculator online for free is about gaining clarity and saving time. Here’s what you achieve in just a few clicks:" },
             { "type": "list", "items": [
-                "&lt;strong&gt;Eliminate Guesswork:&lt;/strong&gt; Get fast, dependable premium estimates without complex math.",
-                "&lt;strong&gt;Easy Comparisons:&lt;/strong&gt; Effortlessly compare what you’d pay for different popular plans like the Jeevan Umang premium calculator vs. the Jeevan Labh premium calculator.",
-                "&lt;strong&gt;Budget with Confidence:&lt;/strong&gt; Instantly see how your premium changes with different payment frequencies, helping you choose what best fits your financial situation.",
-                "&lt;strong&gt;Full Cost Transparency:&lt;/strong&gt; If you're considering riders like Accident or Critical Illness cover, the LIC premium calculator with riders shows you the exact incremental cost."
+                "Eliminate Guesswork: Get fast, dependable premium estimates without complex math.",
+                "Easy Comparisons: Effortlessly compare what you’d pay for different popular plans like the Jeevan Umang premium calculator vs. the Jeevan Labh premium calculator.",
+                "Budget with Confidence: Instantly see how your premium changes with different payment frequencies, helping you choose what best fits your financial situation.",
+                "Full Cost Transparency: If you're considering riders like Accident or Critical Illness cover, the LIC premium calculator with riders shows you the exact incremental cost."
             ]}
         ]
       },
@@ -141,10 +141,10 @@
         "title": "Real Examples of LIC Premium Calculation",
         "content": [
             {"type": "examples", "items": [
-                {"title": "Example 1: Long-Term Planning with Jeevan Umang", "body": "A 30-year-old male planning for retirement with &lt;strong&gt;Jeevan Umang&lt;/strong&gt;. He wants a Sum Assured of &lt;strong&gt;₹5,00,000&lt;/strong&gt; and will pay premiums for &lt;strong&gt;20 years&lt;/strong&gt;. His estimated yearly premium would be approximately &lt;strong&gt;₹34,500&lt;/strong&gt;. This breaks down to about &lt;strong&gt;₹2,875 per month&lt;/strong&gt;, making it easier to budget."},
-                {"title": "Example 2: Adding a Safety Net with Jeevan Utsav", "body": "A 28-year-old considering &lt;strong&gt;Jeevan Utsav&lt;/strong&gt; for a &lt;strong&gt;₹7,50,000&lt;/strong&gt; cover. The base premium is around ₹41,200. By toggling the 'Accident Benefit' rider, they'd instantly see the premium rise to about &lt;strong&gt;₹43,000&lt;/strong&gt;. This transparency makes the cost of extra protection crystal clear."}
+                {"title": "Example 1: Long-Term Planning with Jeevan Umang", "body": "A 30-year-old male planning for retirement with Jeevan Umang. He wants a Sum Assured of ₹5,00,000 and will pay premiums for 20 years. His estimated yearly premium would be approximately ₹34,500. This breaks down to about ₹2,875 per month, making it easier to budget."},
+                {"title": "Example 2: Adding a Safety Net with Jeevan Utsav", "body": "A 28-year-old considering Jeevan Utsav for a ₹7,50,000 cover. The base premium is around ₹41,200. By toggling the 'Accident Benefit' rider, they'd instantly see the premium rise to about ₹43,000. This transparency makes the cost of extra protection crystal clear."}
             ]},
-            {"type": "paragraph", "text": "&lt;p class='text-sm italic mt-4 text-muted-foreground'&gt;Disclaimer: These figures are for illustration only. Your final premium is always determined by LIC after their underwriting process.&lt;/p&gt;"}
+            {"type": "paragraph", "text": "Disclaimer: These figures are for illustration only. Your final premium is always determined by LIC after their underwriting process."}
         ]
       },
       {
@@ -154,12 +154,12 @@
         "content": [
             {"type": "paragraph", "text": "Different LIC plans have unique rules. Our presets automatically apply the correct parameters, giving you a more accurate estimate. We support popular plans including:"},
             {"type": "list", "items": [
-                "&lt;strong&gt;Jeevan Umang&lt;/strong&gt; (UIN: 512N317V02)",
-                "&lt;strong&gt;Jeevan Utsav&lt;/strong&gt; (UIN: 512N361V01)",
-                "&lt;strong&gt;Jeevan Labh&lt;/strong&gt; (UIN: 512N304V02)",
-                "&lt;strong&gt;Index Plus&lt;/strong&gt; (UIN: 512N355V01)",
-                "&lt;strong&gt;New Pension Plus&lt;/strong&gt; (UIN: 512N338V02)",
-                "&lt;strong&gt;Saral Pension&lt;/strong&gt; (UIN: 512N342V02)"
+                "Jeevan Umang (UIN: 512N317V02)",
+                "Jeevan Utsav (UIN: 512N361V01)",
+                "Jeevan Labh (UIN: 512N304V02)",
+                "Index Plus (UIN: 512N355V01)",
+                "New Pension Plus (UIN: 512N338V02)",
+                "Saral Pension (UIN: 512N342V02)"
             ]}
         ]
       },
@@ -169,13 +169,13 @@
         "title": "LIC Premium: Monthly vs Yearly Payments",
         "content": [
             {"type": "paragraph", "text": "Choosing between monthly and yearly payments affects your total outflow. While monthly payments are lighter on the wallet, they come with a small 'modal loading' charge. Paying annually is almost always cheaper."},
-            {"type": "paragraph", "text": "&lt;h3 class='font-semibold text-lg my-3'&gt;How Conversion Works&lt;/h3&gt;&lt;p class='text-muted-foreground'&gt;LIC applies specific factors to convert the yearly premium. Here's the formula:&lt;/p&gt;"},
+            {"type": "paragraph", "text": "How Conversion Works: LIC applies specific factors to convert the yearly premium. Here's the formula:"},
             {"type": "list", "items": [
-                "&lt;strong&gt;Half-yearly Premium&lt;/strong&gt; = Yearly Premium × 0.5098",
-                "&lt;strong&gt;Quarterly Premium&lt;/strong&gt; = Yearly Premium × 0.2575",
-                "&lt;strong&gt;Monthly Premium&lt;/strong&gt; = Yearly Premium × 0.0879"
+                "Half-yearly Premium = Yearly Premium × 0.5098",
+                "Quarterly Premium = Yearly Premium × 0.2575",
+                "Monthly Premium = Yearly Premium × 0.0879"
             ]},
-            {"type": "paragraph", "text": "&lt;p class='text-sm italic text-muted-foreground'&gt;Our calculator does this math automatically when you switch frequencies.&lt;/p&gt;"}
+            {"type": "paragraph", "text": "Our calculator does this math automatically when you switch frequencies."}
         ]
       },
       {
@@ -196,10 +196,10 @@
         "content": [
             {"type": "paragraph", "text": "Here are a few actionable strategies to make your life insurance more affordable:"},
             {"type": "list", "items": [
-                "&lt;strong&gt;Pay Annually:&lt;/strong&gt; You can save 2-3% of your premium compared to paying monthly due to modal loading charges.",
-                "&lt;strong&gt;Start Early:&lt;/strong&gt; The most significant factor. Buying a policy in your 20s can be up to 30% cheaper than buying the same policy in your late 30s.",
-                "&lt;strong&gt;Re-evaluate Riders:&lt;/strong&gt; Only add the riders you genuinely need. While helpful, they increase the cost.",
-                "&lt;strong&gt;Compare Plans:&lt;/strong&gt; Don't just settle on the first plan you see. A different product might offer similar benefits for a lower premium."
+                "Pay Annually: You can save 2-3% of your premium compared to paying monthly due to modal loading charges.",
+                "Start Early: The most significant factor. Buying a policy in your 20s can be up to 30% cheaper than buying the same policy in your late 30s.",
+                "Re-evaluate Riders: Only add the riders you genuinely need. While helpful, they increase the cost.",
+                "Compare Plans: Don't just settle on the first plan you see. A different product might offer similar benefits for a lower premium."
             ]}
         ]
       },
@@ -233,17 +233,17 @@
         "title": "Next Steps After Using the Calculator",
         "content": [
             {"type": "list", "items": [
-                "&lt;strong&gt;Download Your Results:&lt;/strong&gt; Save a PDF of your calculation so you can refer to it later or discuss it with your family.",
-                "&lt;strong&gt;Compare Plans:&lt;/strong&gt; Run a few more calculations for other plans to see which one gives you the best value for your needs.",
-                "&lt;strong&gt;Consult an Advisor:&lt;/strong&gt; If you're still unsure, request personalized help from our team of Certified Financial Planners.",
-                "&lt;strong&gt;Contact an LIC Agent:&lt;/strong&gt; When you're ready to buy, contact an official LIC agent to get a final quote and complete the purchase process."
+                "Download Your Results: Save a PDF of your calculation so you can refer to it later or discuss it with your family.",
+                "Compare Plans: Run a few more calculations for other plans to see which one gives you the best value for your needs.",
+                "Consult an Advisor: If you're still unsure, request personalized help from our team of Certified Financial Planners.",
+                "Contact an LIC Agent: When you're ready to buy, contact an official LIC agent to get a final quote and complete the purchase process."
             ]}
         ]
       },
       {
         "id": "references",
         "icon": "BookUser",
-        "title": "Sources &amp; References",
+        "title": "Sources & References",
         "content": [
             {"type": "paragraph", "text": "We use official LIC plan documents, UINs, and actuarial formulas for our calculations. For more details, you can refer to LIC's official website."},
             {"type": "link", "href": "https://licindia.in/", "text": "Visit LIC of India Official Website"}
