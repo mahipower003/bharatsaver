@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         "name": faq.q,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": faq.a
+          "text": faq.a.replace(/<[^>]*>/g, '') // Strip HTML for schema
         }
       }))
     };
@@ -42,13 +42,13 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     const financialProductSchema = {
         "@context": "https://schema.org",
         "@type": "FinancialProduct",
-        "name": "LIC Single Premium Endowment Plan (Plan No. 917)",
+        "name": "LIC Single Premium Endowment Plan (Plan No. 917/717)",
         "description": "A single premium, non-linked, with-profits endowment plan offering a combination of savings and protection.",
         "brand": {
             "@type": "Brand",
             "name": "LIC of India"
         },
-        "identifier": "512N310V02", // UIN of the plan
+        "identifier": "512N283V03", // UIN of the plan
         "url": pageUrl,
         "offers": {
             "@type": "Offer",

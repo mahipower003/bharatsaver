@@ -1,8 +1,8 @@
 
 {
-  "meta_title": "LIC Single Premium Endowment Calculator (Plan 917) - Free & Online",
-  "meta_description": "Use our free LIC Single Premium Endowment Calculator to instantly estimate maturity, returns, and bonus for Plan 917/717/817. Calculate tax benefits and compare with FD, PPF & other plans.",
-  "h1": "LIC Single Premium Endowment Calculator (Plan 717)",
+  "meta_title": "LIC Single Premium Endowment Calculator (Plan 917/717) – Premium & Maturity Online",
+  "meta_description": "Use LIC Single Premium Endowment Calculator online free to estimate your premium, maturity value, bonus & tax benefits. Plan 917/717 one-time investment returns explained.",
+  "h1": "LIC Single Premium Endowment Calculator (Plan 917/717)",
   "description": "Looking for a secure one-time investment that offers guaranteed returns, insurance coverage, and tax benefits? The LIC Single Premium Endowment Plan is a popular choice. Use our free LIC Single Premium Endowment Calculator to see exactly what you'll pay and what you could get back.",
   "tool": {
     "title": "LIC Single Premium Endowment Calculator",
@@ -23,15 +23,15 @@
       {
         "id": "what-is-plan",
         "icon": "HelpCircle",
-        "title": "What is LIC Single Premium Endowment Plan (No. 717)?",
+        "title": "What is LIC Single Premium Endowment Plan (917/717/817)?",
         "content": [
-          { "type": "paragraph", "text": "The LIC Single Premium Endowment Plan (UIN: 512N283V03, Plan No. 717) is a straightforward savings-cum-protection plan where you pay the premium only once at the start of the policy. It's a hassle-free, one-time investment that provides a combination of guaranteed savings and life insurance coverage. At the end of the policy term, you receive a lump sum maturity amount, and your family is protected with a death benefit throughout the term. It's an ideal solution for those who have a lump sum amount and want to secure it for a future goal." }
+          { "type": "paragraph", "text": "The LIC Single Premium Endowment Plan (UIN: 512N283V03) is a straightforward savings-cum-protection plan where you pay the premium only once at the start of the policy. It's a hassle-free, one-time investment that provides a combination of guaranteed savings and life insurance coverage. At the end of the policy term, you receive a lump sum maturity amount, and your family is protected with a death benefit throughout the term. It's an ideal solution for those who have a lump sum amount and want to secure it for a future goal." }
         ]
       },
       {
         "id": "key-features",
         "icon": "ShieldCheck",
-        "title": "Key Features, Eligibility & Tax Benefits (Plan 717)",
+        "title": "Key Features, Eligibility & Tax Benefits",
         "content": [
           { "type": "list", "items": [
               "<strong>Entry Age:</strong> 90 days (completed) to 65 years",
@@ -46,7 +46,7 @@
       {
         "id": "how-it-works",
         "icon": "StepForward",
-        "title": "How the LIC Single Premium Endowment Calculator Works",
+        "title": "LIC Single Premium Endowment Calculator – How It Works",
         "content": [
           { "type": "paragraph", "text": "Our free online calculator simplifies the process of understanding this plan. It's quick, accurate, and easy to use:"},
           { "type": "steps", "items": [
@@ -76,11 +76,11 @@
                 "type": "table",
                 "headers": ["✅ Benefits", "❌ Drawbacks"],
                 "rows": [
-                    ["One-time, hassle-free premium payment.", "Returns are modest and may not beat high inflation."],
+                    ["One-time, hassle-free premium payment.", "Returns are modest (may not beat high inflation)."],
                     ["Guaranteed lump sum maturity plus life cover.", "Requires a large upfront premium payment."],
                     ["Tax benefits under 80C and 10(10D).", "Returns are lower compared to market-linked products like mutual funds."],
                     ["Loan and surrender facility available for liquidity.", "Liquidity is low in the early years of the policy."],
-                    ["Safe, guaranteed returns (typically 5-6% IRR), often higher than FDs post-tax.", "Not a high-growth instrument for aggressive investors."]
+                    ["Safe returns (5-6% IRR), often higher than FDs post-tax.", "Not a high-growth instrument for aggressive investors."]
                 ]
             }
         ]
@@ -103,13 +103,14 @@
         "icon": "TrendingUp",
         "title": "LIC Single Premium Endowment vs. Other Investments",
         "content": [
-            {"type": "table", "headers": ["Feature", "LIC Single Premium", "Fixed Deposit", "PPF"], "rows": [
-                ["Payment", "One-Time", "One-Time", "Recurring Yearly"],
-                ["Returns", "~5-6% (Tax-Free)", "~7% (Taxable)", "~7.1% (Tax-Free)"],
-                ["Risk", "Sovereign Guarantee", "Low (Bank Risk)", "Sovereign Guarantee"],
-                ["Insurance", "Yes", "No", "No"],
-                ["Liquidity", "Low (Loan after 1 yr)", "High (with penalty)", "Very Low (15-yr lock-in)"]
-            ]}
+            {"type": "table", "headers": ["Feature", "LIC Single Premium", "Fixed Deposit", "PPF", "LIC Jeevan Labh"], "rows": [
+                ["Payment", "One-Time", "One-Time", "Recurring Yearly", "Limited Recurring"],
+                ["Returns", "~5-6% (Tax-Free)", "~7% (Taxable)", "~7.1% (Tax-Free)", "~5.5% (Tax-Free)"],
+                ["Risk", "Sovereign Guarantee", "Low (Bank Risk)", "Sovereign Guarantee", "Sovereign Guarantee"],
+                ["Insurance", "Yes", "No", "No", "Yes"],
+                ["Liquidity", "Low (Loan after 1 yr)", "High (with penalty)", "Very Low (15-yr lock-in)", "Low (Loan after 2 yrs)"]
+            ]},
+            { "type": "paragraph", "text": "For more detailed comparisons, check out our <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>LIC Jeevan Labh Calculator</a> or the main <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC Premium Calculator</a> page."}
         ]
       },
       {
