@@ -1,0 +1,250 @@
+
+{
+  "meta_title": "LIC Single Premium Endowment Calculator (Plan 917/717) – Premium & Maturity Online",
+  "meta_description": "Use LIC Single Premium Endowment Calculator online free to estimate your premium, maturity value, bonus & tax benefits. Plan 917/717 one-time investment returns explained.",
+  "h1": "LIC Single Premium Endowment Calculator (Plan 917/717/817)",
+  "description": "Looking for a secure one-time investment that offers guaranteed returns, insurance coverage, and tax benefits? The LIC Single Premium Endowment Plan is a popular choice. Use our free LIC Single Premium Endowment Calculator to see exactly what you'll pay and what you could get back.",
+  "tool": {
+    "title": "LIC Single Premium Endowment Calculator",
+    "form_description": "Enter your details to get an instant premium and maturity estimate.",
+    "age_label": "Your Age (90 days - 65 years)",
+    "term_label": "Policy Term (10-25 years)",
+    "sum_assured_label": "Sum Assured (₹)",
+    "calculate_button": "Calculate Benefits",
+    "calculating": "Calculating...",
+    "addb_rider_label": "Accidental Death & Disability Benefit Rider",
+    "term_rider_label": "Term Assurance Rider",
+    "results": {
+      "note": "Disclaimer: All values are estimates. Bonus rates are illustrative and not guaranteed."
+    }
+  },
+  "article": {
+    "sections": [
+       {
+        "id": "what-is-plan",
+        "icon": "HelpCircle",
+        "title": "What is LIC Single Premium Endowment Plan (917/717/817)?",
+        "content": [
+          { "type": "paragraph", "text": "The LIC Single Premium Endowment Plan (UIN: 512N283V03) is a straightforward savings-cum-protection plan where you pay the premium only once at the start of the policy. It's a hassle-free, one-time investment that provides a combination of guaranteed savings and life insurance coverage. At the end of the policy term, you receive a lump sum maturity amount, and your family is protected with a death benefit throughout the term. It's an ideal solution for those who have a lump sum amount and want to secure it for a future goal." }
+        ]
+      },
+      {
+        "id": "key-features",
+        "icon": "ShieldCheck",
+        "title": "Key Features, Eligibility & Tax Benefits",
+        "content": [
+          { "type": "list", "items": [
+              "<strong>Entry Age:</strong> 90 days (completed) to 65 years",
+              "<strong>Policy Term:</strong> 10 to 25 years",
+              "<strong>Premium Payment:</strong> Single Pay Only",
+              "<strong>Sum Assured:</strong> Minimum ₹50,000 (No upper limit)",
+              "<strong>Riders:</strong> Accidental Death & Disability Benefit Rider and a New Term Assurance Rider are available.",
+              "<strong>Tax Benefits:</strong> Premium paid can be claimed under Section 80C. Maturity may be tax-free under Section 10(10D) subject to conditions."
+          ]}
+        ]
+      },
+      {
+        "id": "how-to-use",
+        "icon": "StepForward",
+        "title": "LIC Single Premium Endowment Calculator – How It Works",
+        "content": [
+          { "type": "paragraph", "text": "Our free online calculator simplifies the process of understanding this plan. It's quick, accurate, and easy to use:"},
+          { "type": "steps", "items": [
+              {"title": "Enter Your Details", "description": "Input your age, desired policy term, and the Sum Assured you want."},
+              {"title": "Click 'Calculate'", "description": "The tool instantly computes your one-time premium, including applicable taxes."},
+              {"title": "View Your Returns", "description": "The calculator projects your estimated maturity value, including the Sum Assured, vested bonuses, and a potential Final Additional Bonus (FAB)."}
+          ]}
+        ]
+      },
+      {
+        "id": "high-sum-example",
+        "icon": "TrendingUp",
+        "title": "High Sum Assured Example (1 Crore Policy)",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "This plan is also suitable for high-net-worth individuals looking for a safe, one-time investment. This helps target searches like 'LIC 1 crore single premium plan'."
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "title": "Scenario: ₹1 Crore Sum Assured",
+                "body": "<strong>Inputs:</strong> Age: 35, Term: 20 years, Sum Assured: ₹1 Crore.<br/><strong>Single Premium:</strong> Approx. ₹58-60 Lakhs (one-time).<br/><strong>Estimated Maturity:</strong> ~₹1.9 to ₹2.0 Crore (tax-free, if SA ≥ 10× premium)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bonus-rates-chart",
+        "icon": "BarChart2",
+        "title": "LIC Single Premium Bonus Rate Chart (Past 5 Years)",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Bonus rates are declared annually by LIC and are a key component of your returns. While not guaranteed, historical rates offer a strong indication."
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "title": "Bonus Example",
+                "body": "A ₹10 lakh plan with a 15-year term at a bonus rate of ₹42/1000 would accumulate: (10,00,000 / 1000) * 42 * 15 = ₹6,30,000 in bonuses over the policy term."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "irr-return",
+        "icon": "TrendingUp",
+        "title": "LIC Single Premium IRR (Return %)",
+        "content": [
+          { "type": "paragraph", "text": "The Internal Rate of Return (IRR) is the effective annual return on your investment. Here’s a worked-out example:" },
+          { "type": "examples", "items": [
+              {
+                "title": "Example IRR Calculation:",
+                "body": "<strong>One-Time Premium:</strong> ₹2.87 lakh<br><strong>Maturity Value:</strong> ₹8.62 lakh (after 15 years)<br><strong>Effective IRR:</strong> ~5.3% per annum (tax-free).<br>This directly answers 'LIC single premium return calculator' queries by showing the real, compounded return."
+              }
+          ]}
+        ]
+      },
+      {
+        "id": "maturity-chart",
+        "icon": "BarChart2",
+        "title": "LIC Single Premium Endowment Maturity Chart",
+        "content": [
+          { "type": "paragraph", "text": "The table below provides illustrative maturity values and IRRs for different Sum Assured amounts and terms." },
+          { "type": "table", "headers": ["Sum Assured", "Premium (approx)", "Term", "Maturity (approx)", "IRR"], "rows": [
+              ["₹5 Lakh", "₹2.87L", "15Y", "₹8.62L", "5.3%"],
+              ["₹10 Lakh", "₹5.8L", "20Y", "₹19L", "5.5%"],
+              ["₹25 Lakh", "₹14.5L", "25Y", "₹52L", "5.6%"],
+              ["₹1 Crore", "₹58-60L", "20Y", "₹1.9–2 Cr", "5.7%"]
+          ]}
+        ]
+      },
+      {
+        "id": "surrender-value",
+        "icon": "TrendingUp",
+        "title": "Surrender Value Explained",
+        "content": [
+          { "type": "paragraph", "text": "You can surrender the policy after one full year. The value you receive depends on two factors:" },
+          {
+            "type": "list",
+            "items": [
+                "<strong>Guaranteed Surrender Value:</strong> This is a percentage of the single premium paid (excluding riders/taxes). It's 75% in the first year and 90% thereafter.",
+                "<strong>Special Surrender Value:</strong> This is a higher value that also depends on the vested bonuses and is determined by LIC based on their performance."
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              { "title": "Surrender Value Example", "body": "If you paid a <strong>₹5 Lakh premium</strong> and surrender the policy after 5 years, your surrender value might be around <strong>₹3.2 Lakh</strong> (illustrative). This provides a liquidity option if needed." }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "tax-benefits-explained",
+        "icon": "FileText",
+        "title": "Tax Benefits — 80C & 10(10D) Caveat",
+        "content": [
+            { "type": "paragraph", "text": "The plan offers tax benefits, but with an important condition for maturity." },
+            {
+                "type": "list",
+                "items": [
+                    "<strong>Section 80C:</strong> Premiums paid qualify for deduction up to ₹1.5 Lakh.",
+                    "<strong>Section 10(10D):</strong> Maturity is tax-free <strong>only if the Sum Assured is at least 10 times the single premium paid</strong>."
+                ]
+            },
+            {
+                "type": "examples",
+                "items": [
+                    {
+                        "title": "Taxability Example",
+                        "body": "If your single premium for a ₹5 Lakh Sum Assured is ₹3.5 Lakh, the Sum Assured is more than 1.4 times the premium (₹5L / ₹3.5L = 1.4x), which is less than the required 10x. In such cases, the maturity proceeds could become taxable. Always check this ratio before investing."
+                    }
+                ]
+            }
+        ]
+      },
+      {
+        "id": "benefits-drawbacks",
+        "icon": "GitCompareArrows",
+        "title": "Benefits vs. Drawbacks of This Plan",
+        "content": [
+            {
+                "type": "table",
+                "headers": ["✅ Benefits", "❌ Drawbacks"],
+                "rows": [
+                    ["One-time, hassle-free premium payment.", "Returns are modest (may not beat high inflation)."],
+                    ["Guaranteed lump sum maturity plus life cover.", "Requires a large upfront premium payment."],
+                    ["Tax benefits under 80C and potentially 10(10D).", "Low liquidity in the early years of the policy."],
+                    ["Loan and surrender facility available for liquidity.", "Not a high-growth instrument for aggressive investors."]
+                ]
+            }
+        ]
+      },
+       {
+        "id": "nri-angle",
+        "icon": "Users",
+        "title": "Can NRIs Invest in LIC Single Premium Endowment Plan?",
+        "content": [
+            { "type": "paragraph", "text": "Yes, Non-Resident Indians (NRIs) can absolutely invest in this plan, making it a very popular choice for those looking to invest a lump sum in a secure, India-based instrument. The investment must be made in Indian Rupees (INR) and is subject to FEMA regulations. This is a great way for NRIs to participate in a guaranteed savings plan in India with a single, straightforward payment."}
+        ]
+      },
+      {
+        "id": "who-should-buy",
+        "icon": "Users",
+        "title": "Who Should Buy This Plan?",
+        "content": [
+            { "type": "paragraph", "text": "This plan is not for everyone, but it's an excellent fit for specific profiles:"},
+            { "type": "list", "items": [
+                "<strong>Risk-Averse Investors:</strong> Individuals who prioritize capital safety over high returns.",
+                "<strong>Those with Lump Sum Funds:</strong> Perfect for retirees with a corpus, people who received a bonus, or NRIs looking to invest a one-time amount in India.",
+                "<strong>Goal-Based Planners:</strong> Parents or grandparents planning for a child's future education or marriage with a fixed, one-time investment."
+            ]}
+        ]
+      },
+      {
+        "id": "comparison",
+        "icon": "TrendingUp",
+        "title": "LIC Single Premium Endowment vs. Other Investments",
+        "content": [
+            {"type": "table", "headers": ["Feature", "LIC Single Premium", "Fixed Deposit", "PPF", "LIC Jeevan Labh"], "rows": [
+                ["Payment", "One-Time", "One-Time", "Recurring Yearly", "Limited Recurring"],
+                ["Returns", "~5-6% (Tax-Free*)", "~7% (Taxable)", "~7.1% (Tax-Free)", "~5.5% (Tax-Free)"],
+                ["Risk", "Sovereign Guarantee", "Low (Bank Risk)", "Sovereign Guarantee", "Sovereign Guarantee"],
+                ["Insurance", "Yes", "No", "No", "Yes"],
+                ["Liquidity", "Low (Loan after 1 yr)", "High (with penalty)", "Very Low (15-yr lock-in)", "Low (Loan after 2 yrs)"]
+            ]},
+            { "type": "paragraph", "text": "For more detailed comparisons, check out our <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>LIC Jeevan Labh Calculator</a> or the main <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC Premium Calculator</a> page."}
+        ]
+      },
+      {
+        "id": "faq",
+        "icon": "HelpCircle",
+        "title": "Frequently Asked Questions (FAQ)",
+        "content": [
+            {"type": "faq", "items": [
+                {"q": "What is the difference between LIC Single Premium Endowment Plan 917 and 717?", "a": "There is no major difference. Plan 717 was the offline version, and Plan 917 (and previously 817) are the online versions. The underlying structure and benefits are identical. Our LIC single premium endowment plan calculator online free applies to all these plan numbers."},
+                {"q": "What is the return on a ₹5 lakh / ₹10 lakh single premium policy?", "a": "For a ₹5 Lakh policy with a 15-year term, the maturity is around ₹8.62 Lakh (IRR ~5.3%). For a ₹10 Lakh policy over 20 years, the maturity could be around ₹19 Lakh. Our LIC single premium 10 lakh return calculator can give you a precise estimate based on your age and term."},
+                {"q": "Is the maturity of LIC single premium plan tax-free under 10(10D)?", "a": "Yes, but with a critical condition for its tax benefit: the maturity is tax-free only if the Sum Assured is at least 10 times the single premium you paid. If the premium is higher relative to the Sum Assured, the proceeds may become taxable."},
+                {"q": "What is the IRR of LIC Single Premium Endowment Plan?", "a": "The Internal Rate of Return (IRR) for this plan typically ranges from 5% to 6%, depending on the policyholder's age and the chosen term. This return is often tax-free, making it competitive."},
+                {"q": "Can NRIs invest in LIC single premium plan?", "a": "Yes, NRIs can invest in this plan, making it a popular choice for those looking to invest a lump sum in a secure, India-based instrument, subject to FEMA rules."},
+                {"q": "LIC single premium vs LIC Jeevan Labh — which is better?", "a": "Choose the Single Premium plan if you have a lump sum and want a one-time, hassle-free investment. Choose Jeevan Labh if you prefer to pay premiums over a limited period (like 10-16 years) for a long-term goal. Jeevan Labh requires disciplined payments but a smaller initial outlay."},
+                {"q": "What is the surrender value calculation method?", "a": "The surrender value is the higher of the Guaranteed Surrender Value (GSV) or Special Surrender Value (SSV). The GSV is a percentage of premiums paid (75% in year 1, 90% thereafter). The SSV is a more favorable value determined by LIC that also includes a portion of vested bonuses."},
+                {"q": "Is LIC Single Premium better than FD or PPF?", "a": "It depends on your goal. It's better than an FD for those in higher tax brackets due to its tax-free returns. It's better than PPF if you have a lump sum to invest instead of making yearly contributions and need life insurance cover included."}
+            ]}
+        ]
+      }
+    ],
+    "conclusion": {
+      "title": "Secure Your Future with One Smart Payment",
+      "body": "The LIC Single Premium Endowment Plan offers a unique blend of safety, savings, and security in a single, hassle-free payment. It's a powerful tool for achieving specific financial goals without the burden of yearly commitments. Use our LIC Single Premium Endowment Calculator online free now and get instant premium & maturity estimates tailored for you."
+    }
+  }
+}
+
+    
