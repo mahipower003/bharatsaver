@@ -84,9 +84,18 @@ export default function LicPremiumCalculatorPageClient({
                     <li>How often you'll pay (monthly, quarterly, half-yearly, or yearly)</li>
                 </ul>
                 <p className="text-muted-foreground">Once you input this information, the calculator does the heavy lifting and presents an estimated premium. It’s a simple, fast, and reliable way to get started with your financial planning.</p>
-                
-                <h3 className="font-semibold text-lg pt-4">Why Should You Use an Online Premium Calculator?</h3>
-                <p className="text-muted-foreground">Using an LIC premium calculator online for free is about gaining clarity and saving time. Here’s what you achieve in just a few clicks:</p>
+            </CardContent>
+        </Card>
+        
+        <Card className="shadow-lg">
+            <CardHeader>
+                <CardTitle className="flex items-center gap-3">
+                    <HelpCircle className="h-8 w-8 text-primary"/>
+                    <h2 className="text-2xl font-bold">Why Should You Use a Free LIC Online Premium Calculator?</h2>
+                </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+                 <p className="text-muted-foreground">Using an LIC premium calculator online for free is about gaining clarity and saving time. Here’s what you achieve in just a few clicks:</p>
                 <ul className="list-disc pl-5 space-y-1 text-muted-foreground">
                     <li><strong>Eliminate Guesswork:</strong> Get fast, dependable premium estimates without complex math.</li>
                     <li><strong>Easy Comparisons:</strong> Effortlessly compare what you’d pay for different popular plans like the Jeevan Umang premium calculator vs. the Jeevan Labh premium calculator.</li>
