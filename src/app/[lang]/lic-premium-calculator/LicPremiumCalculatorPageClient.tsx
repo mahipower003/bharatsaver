@@ -10,7 +10,7 @@ import { BarChart2, CheckCircle, Lightbulb, TrendingUp, HelpCircle, FileText, Do
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
 
 function getIcon(iconName: string) {
     switch (iconName) {
@@ -160,7 +160,7 @@ export default function LicPremiumCalculatorPageClient({
         </header>
         
         <div id="calculator-widget">
-          <LicPremiumCalculator dictionary={pageDict.tool} />
+          <LicPremiumCalculator dictionary={pageDict} />
         </div>
 
         <ArticleContent />
@@ -173,3 +173,5 @@ export default function LicPremiumCalculatorPageClient({
     </div>
   );
 }
+
+    
