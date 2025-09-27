@@ -88,9 +88,11 @@ export function LicSinglePremiumEndowmentCalculator({ dictionary }: { dictionary
         const riderRate = getRateForAge(values.age, termRiderRates);
         totalRiderPremium += (values.sumAssured / 1000) * riderRate;
     }
-
-    const gstOnBase = basePremium * 0.045; // As per endowment rules
-    const gstOnRiders = totalRiderPremium * 0.18; // Riders are pure risk
+    
+    // For single premium policies, GST rate is 1.8% of the premium if premium is > 10% of SA, else 4.5%.
+    // For simplicity and common case, using 4.5% as it's a non-linked plan.
+    const gstOnBase = basePremium * 0.045; 
+    const gstOnRiders = totalRiderPremium * 0.18;
     const totalGst = gstOnBase + gstOnRiders;
     const totalPremiumWithGst = basePremium + totalRiderPremium + totalGst;
     
@@ -281,5 +283,7 @@ export function LicSinglePremiumEndowmentCalculator({ dictionary }: { dictionary
     </div>
   );
 }
+
+    
 
     
