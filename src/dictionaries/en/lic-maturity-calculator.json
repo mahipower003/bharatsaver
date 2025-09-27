@@ -1,3 +1,4 @@
+
 {
   "meta_title": "LIC Maturity Calculator — Calculate Your LIC Policy Maturity Online (Free)",
   "meta_description": "Use our free LIC maturity calculator to estimate maturity, surrender and paid-up values for LIC plans. Enter sum assured, term, bonus rate & get instant downloadable results.",
@@ -69,29 +70,29 @@
         }
       ]
     },
-     {
-      "id": "death-benefit",
-      "icon": "ShieldCheck",
-      "title": "Death Benefit Explained",
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "In the unfortunate event of the policyholder's death during the policy term, the nominee receives the 'Sum Assured on Death' plus any vested bonuses. This 'Sum Assured on Death' is defined as the higher of:"
-        },
-        {
-          "type": "list",
-          "items": [
-            "<strong>125% of the Basic Sum Assured</strong>",
-            "<strong>7 times the annualized premium</strong>"
-          ]
-        },
-        {
-          "type": "alert",
-          "variant": "default",
-          "title": "Example",
-          "text": "For a ₹10 Lakh policy with an annual premium of ₹50,000, the Sum Assured on Death would be the higher of ₹12.5 Lakh (125% of 10L) or ₹3.5 Lakh (7 x 50k), which is <strong>₹12.5 Lakh</strong>, plus any accumulated bonuses."
-        }
-      ]
+    {
+        "id": "death-benefit",
+        "icon": "ShieldCheck",
+        "title": "Death Benefit Explained",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "In the unfortunate event of the policyholder's death during the policy term, the nominee receives the 'Sum Assured on Death' plus any vested bonuses. This 'Sum Assured on Death' is defined as the higher of:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "<strong>125% of the Basic Sum Assured</strong>",
+              "<strong>7 times the annualized premium</strong>"
+            ]
+          },
+          {
+            "type": "alert",
+            "variant": "default",
+            "title": "Example",
+            "text": "For a ₹10 Lakh policy with an annual premium of ₹50,000, the Sum Assured on Death would be the higher of ₹12.5 Lakh (125% of 10L) or ₹3.5 Lakh (7 x 50k), which is <strong>₹12.5 Lakh</strong>, plus any accumulated bonuses."
+          }
+        ]
     },
     {
       "id": "paid-up-value",
@@ -171,31 +172,34 @@
     {
         "id": "bonus-rates",
         "icon": "BarChart2",
-        "title": "LIC Bonus Rates 2025 (Historical Trends)",
-        "description": "The 'bonus rate' is the most important variable in your maturity calculation. LIC declares this rate each year. While not guaranteed for 2025, looking at past rates gives a realistic expectation.",
+        "title": "LIC Bonus Rates (Historical Trends)",
+        "description": "The 'bonus rate' is the most important variable in your maturity calculation. LIC declares this rate each year. While not guaranteed, looking at past rates gives a realistic expectation.",
         "content": [
-        {
-            "type": "bar_chart",
-            "data": [
-            { "name": "2015-16", "value": 48 },
-            { "name": "2016-17", "value": 44 },
-            { "name": "2017-18", "value": 43 },
-            { "name": "2018-19", "value": 42 },
-            { "name": "2019-20", "value": 40 },
-            { "name": "2020-21", "value": 44 },
-            { "name": "2021-22", "value": 45 },
-            { "name": "2022-23", "value": 46 },
-            { "name": "2023-24", "value": 48 }
-            ]
-        }
+            {
+              "type": "bar_chart",
+              "data": [
+                { "name": "2015-16", "value": 48 },
+                { "name": "2016-17", "value": 44 },
+                { "name": "2017-18", "value": 43 },
+                { "name": "2018-19", "value": 42 },
+                { "name": "2019-20", "value": 40 },
+                { "name": "2020-21", "value": 44 },
+                { "name": "2021-22", "value": 45 },
+                { "name": "2022-23", "value": 46 },
+                { "name": "2023-24", "value": 48 }
+              ]
+            }
         ]
     },
-     {
-      "id": "alternatives-market",
+    {
+      "id": "alternatives",
       "icon": "GitCompareArrows",
-      "title": "Compare: LIC vs. Market Instruments",
-      "description": "How does an LIC maturity payout stack up against other popular investment options?",
+      "title": "Compare: LIC Maturity vs. Alternatives",
       "content": [
+        {
+          "type": "paragraph",
+          "text": "How does an LIC maturity payout stack up against other popular investment options?"
+        },
         {
           "type": "table",
           "headers": ["Instrument", "Typical Return (p.a.)", "Risk Level", "Tax on Maturity"],
@@ -205,15 +209,11 @@
             ["PPF", "~7.1%", "Very Low (Sovereign)", "Tax-Free"],
             ["Equity Mutual Funds", "~12-15%", "High (Market Risk)", "Taxable (LTCG > ₹1L)"]
           ]
-        }
-      ]
-    },
-    {
-      "id": "alternatives-lic",
-      "icon": "GitCompareArrows",
-      "title": "Compare: Different LIC Plans",
-      "description": "Even within LIC, different plans serve different purposes.",
-      "content": [
+        },
+        {
+          "type": "paragraph",
+          "text": "<br>Even within LIC, different plans serve different purposes."
+        },
         {
           "type": "table",
           "headers": ["Feature", "Jeevan Labh", "Jeevan Anand", "Single Premium"],
