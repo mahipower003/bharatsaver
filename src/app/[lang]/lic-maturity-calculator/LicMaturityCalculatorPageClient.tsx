@@ -100,7 +100,7 @@ const ContentRenderer = ({ content, lang }: { content: any[], lang: Locale }) =>
             case 'card_link':
               const CardIcon = getIcon(item.icon);
               return (
-                  <Link key={idx} href={item.href} className="group block">
+                  <Link key={idx} href={`/${lang}${item.href}`} className="group block">
                       <Card className="hover:shadow-md hover:border-primary/30 transition-all">
                           <CardHeader className="flex flex-row items-center gap-4">
                               <CardIcon className="h-8 w-8 text-primary" />

@@ -236,21 +236,21 @@
           "icon": "Calculator",
           "title": "LIC Jeevan Labh Calculator",
           "description": "Limited premium plan for goal-based savings.",
-          "href": "/en/lic-jeevan-labh-calculator"
+          "href": "/lic-jeevan-labh-calculator"
         },
         {
           "type": "card_link",
           "icon": "Calculator",
           "title": "LIC Single Premium Calculator",
           "description": "For one-time lump sum investments.",
-          "href": "/en/lic-single-premium-endowment-calculator"
+          "href": "/lic-single-premium-endowment-calculator"
         },
         {
           "type": "card_link",
           "icon": "LinkIcon",
           "title": "All LIC Premium Calculators",
           "description": "Explore premiums for all popular plans.",
-          "href": "/en/lic-premium-calculator"
+          "href": "/lic-premium-calculator"
         }
       ]
     },
