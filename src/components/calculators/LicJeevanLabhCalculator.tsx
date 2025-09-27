@@ -12,11 +12,14 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Input } from '@/components/ui/input';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
+import { Checkbox } from '../ui/checkbox';
 
 const formSchema = z.object({
   age: z.coerce.number().min(8, "Minimum age is 8").max(59, "Maximum age is 59"),
   term: z.coerce.number().refine(val => [16, 21, 25].includes(val), "Invalid term"),
   sumAssured: z.coerce.number().min(200000, "Minimum Sum Assured is 2,00,000"),
+  addb: z.boolean().default(false),
+  termRider: z.boolean().default(false),
 });
 
 type FormValues = z.infer<typeof formSchema>;
@@ -32,6 +35,8 @@ type CalculationResult = {
     total: number;
   };
   deathSumAssured: number;
+  accidentRiderSA: number;
+  termRiderSA: number;
 };
 
 // Simplified tabular rates for illustration.
@@ -39,6 +44,10 @@ const premiumRates: Record<number, Record<number, number>> = {
   16: { 8: 88.55, 15: 61.20, 20: 44.00, 25: 32.50, 30: 24.50, 35: 18.90, 40: 15.10, 45: 12.60, 50: 11.15, 59: 11.15 },
   21: { 8: 67.50, 15: 48.90, 20: 36.80, 25: 28.45, 30: 22.50, 35: 18.20, 40: 15.20, 45: 13.20, 50: 12.00, 55: 11.50, 59: 11.50 },
   25: { 8: 55.50, 15: 42.10, 20: 32.80, 25: 26.25, 30: 21.50, 35: 18.00, 40: 15.50, 45: 13.80, 50: 12.80, 55: 12.50, 59: 12.50},
+};
+
+const termRiderRates: Record<number, number> = {
+    20: 1.5, 30: 2.0, 40: 3.0, 50: 5.0, 59: 8.0
 };
 
 
@@ -52,6 +61,8 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
       age: 30,
       term: 25,
       sumAssured: 1000000,
+      addb: false,
+      termRider: false,
     },
   });
 
@@ -85,15 +96,28 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
         return;
     }
     
-    // Rebates
     let rebate = 0;
     if (values.sumAssured >= 1000000) rebate = 1.25;
     else if (values.sumAssured >= 500000) rebate = 1.00;
     else if (values.sumAssured >= 200000) rebate = 0.75;
     
     const tabularRate = getRateForAge(values.age, termRates);
-    const yearlyPremium = ((values.sumAssured / 1000) * tabularRate) - (rebate * (values.sumAssured/1000));
+    const baseYearlyPremium = ((values.sumAssured / 1000) * tabularRate) - (rebate * (values.sumAssured/1000));
     
+    let riderPremium = 0;
+    const accidentRiderSA = values.addb && values.age >= 18 ? values.sumAssured : 0;
+    const termRiderSA = values.termRider ? values.sumAssured : 0;
+    
+    if (accidentRiderSA > 0) {
+        riderPremium += (accidentRiderSA / 1000) * 1; // Approx. Rs 1 per 1000 SA
+    }
+    if (termRiderSA > 0) {
+        const termRiderRate = getRateForAge(values.age, termRiderRates);
+        riderPremium += (termRiderSA / 1000) * termRiderRate;
+    }
+
+    const yearlyPremium = baseYearlyPremium + riderPremium;
+
     const modes = [
         { name: 'Yearly', factor: 1, rebate: 0.02 },
         { name: 'Half Yearly', factor: 0.5098, rebate: 0.01 },
@@ -103,13 +127,13 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
 
     const firstYearPremiums = modes.map(mode => {
         const modalPremium = yearlyPremium * mode.factor * (1 - mode.rebate);
-        const gst = modalPremium * 0.045;
+        const gst = (baseYearlyPremium * mode.factor * (1-mode.rebate) * 0.045) + (riderPremium * mode.factor * (1-mode.rebate) * 0.18);
         return { mode: mode.name, premium: modalPremium, gst, total: modalPremium + gst };
     });
 
     const secondYearPremiums = modes.map(mode => {
         const modalPremium = yearlyPremium * mode.factor * (1 - mode.rebate);
-        const gst = modalPremium * 0.0225;
+        const gst = (baseYearlyPremium * mode.factor * (1-mode.rebate) * 0.0225) + (riderPremium * mode.factor * (1-mode.rebate) * 0.18);
         return { mode: mode.name, premium: modalPremium, gst, total: modalPremium + gst };
     });
 
@@ -118,7 +142,6 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
     const premiumPayingTerm = getPremiumPayingTerm(values.term);
     const totalPremiumPaid = firstYearTotal + (secondYearTotal * (premiumPayingTerm - 1));
 
-    // Illustrative bonus calculation (NOT GUARANTEED)
     const bonusRate = 45; // Assume ₹45 per 1000 SA per year
     const fabRate = 100; // Assume ₹100 per 1000 SA
     
@@ -126,7 +149,7 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
     const finalAdditionalBonus = (values.sumAssured / 1000) * fabRate;
     const estimatedMaturityValue = values.sumAssured + vestedBonus + finalAdditionalBonus;
 
-    const deathSumAssured = Math.max(values.sumAssured, 7 * yearlyPremium);
+    const deathSumAssured = Math.max(values.sumAssured, 7 * (baseYearlyPremium + (values.termRider ? (termRiderSA/1000) * getRateForAge(values.age, termRiderRates) : 0)));
 
     setResult({
       firstYear: firstYearPremiums,
@@ -139,6 +162,8 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
         total: estimatedMaturityValue,
       },
       deathSumAssured,
+      accidentRiderSA,
+      termRiderSA,
     });
     
     setIsLoading(false);
@@ -182,6 +207,53 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
                 <FormField control={form.control} name="sumAssured" render={({ field }) => (<FormItem><FormLabel>{dictionary.sum_assured_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
               </div>
 
+              <div className="space-y-4 pt-4">
+                  <h3 className="text-lg font-medium">Optional Riders</h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <FormField
+                      control={form.control}
+                      name="addb"
+                      render={({ field }) => (
+                        <FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md border p-4">
+                          <FormControl>
+                            <Checkbox
+                              checked={field.value}
+                              onCheckedChange={field.onChange}
+                              disabled={values.age < 18}
+                            />
+                          </FormControl>
+                          <div className="space-y-1 leading-none">
+                            <FormLabel>
+                              Accidental Death & Disability Benefit Rider
+                            </FormLabel>
+                             {values.age < 18 && <FormMessage>Min age is 18</FormMessage>}
+                          </div>
+                        </FormItem>
+                      )}
+                    />
+                     <FormField
+                      control={form.control}
+                      name="termRider"
+                      render={({ field }) => (
+                        <FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md border p-4">
+                          <FormControl>
+                            <Checkbox
+                              checked={field.value}
+                              onCheckedChange={field.onChange}
+                            />
+                          </FormControl>
+                          <div className="space-y-1 leading-none">
+                            <FormLabel>
+                              Term Assurance Rider
+                            </FormLabel>
+                          </div>
+                        </FormItem>
+                      )}
+                    />
+                  </div>
+              </div>
+
+
               <Button type="submit" disabled={isLoading} className="w-full sm:w-auto">
                 {isLoading ? <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> {dictionary.calculating}</> : dictionary.calculate_button}
               </Button>
@@ -198,7 +270,6 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
             <CardTitle>LIC Jeevan Labh (936) - Calculation Details</CardTitle>
           </CardHeader>
           <CardContent className="space-y-8">
-            {/* Plan Details */}
             <div>
               <Table>
                 <TableBody>
@@ -206,15 +277,16 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
                   <TableRow><TableCell className="font-medium">Age</TableCell><TableCell className="text-right">{values.age}</TableCell></TableRow>
                   <TableRow><TableCell className="font-medium">Policy Term</TableCell><TableCell className="text-right">{values.term}</TableCell></TableRow>
                   <TableRow><TableCell className="font-medium">Death Sum Assured</TableCell><TableCell className="text-right">{formatCurrency(result.deathSumAssured)}</TableCell></TableRow>
+                  <TableRow><TableCell className="font-medium">Accidental Rider Sum Assured</TableCell><TableCell className="text-right">{formatCurrency(result.accidentRiderSA)}</TableCell></TableRow>
+                  <TableRow><TableCell className="font-medium">Term Rider Sum Assured</TableCell><TableCell className="text-right">{formatCurrency(result.termRiderSA)}</TableCell></TableRow>
                 </TableBody>
               </Table>
             </div>
 
-            {/* First Year Premium */}
             <div>
               <h3 className="font-semibold mb-2">First Year Premium</h3>
               <Table>
-                <TableHeader><TableRow><TableHead>Mode</TableHead><TableHead className="text-right">Premium</TableHead><TableHead className="text-right">GST (@4.5%)</TableHead><TableHead className="text-right">Total Premium</TableHead></TableRow></TableHeader>
+                <TableHeader><TableRow><TableHead>Mode</TableHead><TableHead className="text-right">Premium</TableHead><TableHead className="text-right">GST (@4.5% + 18%)</TableHead><TableHead className="text-right">Total Premium</TableHead></TableRow></TableHeader>
                 <TableBody>
                   {result.firstYear.map(item => (
                     <TableRow key={item.mode}>
@@ -228,11 +300,10 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
               </Table>
             </div>
             
-            {/* Second Year Onward Premium */}
             <div>
               <h3 className="font-semibold mb-2">Second Year Onward Premium</h3>
               <Table>
-                <TableHeader><TableRow><TableHead>Mode</TableHead><TableHead className="text-right">Premium</TableHead><TableHead className="text-right">GST (@2.25%)</TableHead><TableHead className="text-right">Total Premium</TableHead></TableRow></TableHeader>
+                <TableHeader><TableRow><TableHead>Mode</TableHead><TableHead className="text-right">Premium</TableHead><TableHead className="text-right">GST (@2.25% + 18%)</TableHead><TableHead className="text-right">Total Premium</TableHead></TableRow></TableHeader>
                 <TableBody>
                   {result.secondYear.map(item => (
                     <TableRow key={item.mode}>
@@ -246,7 +317,6 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
               </Table>
             </div>
 
-            {/* Maturity Benefits */}
             <div>
               <h3 className="font-semibold mb-2">Maturity Benefits (Approximate)</h3>
               <Table>
@@ -261,7 +331,6 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
               {values.age < 18 && <p className="text-xs text-destructive mt-2">Accidental and Disability Benefit Rider is not available for less than 18 years.</p>}
             </div>
             
-            {/* Plan Summary Table */}
             <div>
               <h3 className="font-semibold mb-2">Jeevan Labh Plan (Table-936) Summary</h3>
               <Table>
@@ -284,4 +353,3 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
     </>
   );
 }
-
