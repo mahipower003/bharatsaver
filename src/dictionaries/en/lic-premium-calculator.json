@@ -10,7 +10,8 @@
       "insurance_plans": "Insurance Plans",
       "pension_plans": "Pension Plans",
       "ulip_plans": "ULIP Plans",
-      "health_plans": "Health Plans"
+      "health_plans": "Health Plans",
+      "riders": "Riders"
     },
     "sub_category_label": "Sub Category",
     "sub_category_placeholder": "Select a sub category",
@@ -26,35 +27,43 @@
     "plan_placeholder": "Select a plan",
     "plans": {
       "endowment_plans": {
-        "bima_jyoti": "LIC's Bima Jyoti",
-        "bima_ratna": "LIC's Bima Ratna",
-        "dhan_sanchay": "LIC's Dhan Sanchay",
-        "jeevan_azad": "LIC's Jeevan Azad",
-        "jeevan_labh": "LIC's Jeevan Labh",
-        "jeevan_lakshya": "LIC's Jeevan Lakshya",
-        "new_endowment_plan": "LIC's New Endowment Plan",
-        "single_premium_endowment": "LIC's Single Premium Endowment Plan",
-        "aadhaar_shila": "LIC's Aadhaar Shila",
-        "aadhaar_stambh": "LIC's Aadhaar Stambh"
+        "single_premium_endowment_plan": "LIC's Single Premium Endowment Plan (717)",
+        "new_endowment_plan": "LIC's New Endowment Plan (714)",
+        "new_jeevan_anand": "LIC's New Jeevan Anand (715)",
+        "jeevan_lakshya": "LIC's Jeevan Lakshya (733)",
+        "jeevan_labh": "LIC's Jeevan Labh Plan (736)",
+        "amritbaal": "LIC's Amritbaal (774)",
+        "bima_jyoti": "LIC's Bima Jyoti (760)",
+        "jeevan_azad": "LIC's Jeevan Azad (768)",
+        "nav_jeevan_shree": "LIC’s Nav Jeevan Shree (912)",
+        "nav_jeevan_shree_single_premium": "LIC’s Nav Jeevan Shree -Single Premium"
       },
       "whole_life_plans": {
-        "jeevan_utsav": "LIC's Jeevan Utsav",
-        "jeevan_umang": "LIC's Jeevan Umang"
+        "jeevan_umang": "LIC's Jeevan Umang (745)",
+        "jeevan_utsav": "LIC's Jeevan Utsav (771)"
       },
       "money_back_plans": {
-        "dhan_rekha": "LIC's Dhan Rekha",
-        "new_money_back_20": "LIC's New Money Back Plan - 20 Years",
-        "new_money_back_25": "LIC's New Money Back Plan - 25 Years",
-        "new_childrens_money_back": "LIC's New Children's Money Back Plan",
-        "jeevan_tarun": "LIC's Jeevan Tarun",
-        "jeevan_shiromani": "LIC's Jeevan Shiromani",
-        "bima_shree": "LIC's Bima Shree"
+        "bima_shree": "LIC’s Bima Shree (748)",
+        "new_money_back_20": "LIC's New Money Back Plan- 20 Years (720)",
+        "new_money_back_25": "LIC's New Money Back Plan-25 years (721)",
+        "new_childrens_money_back": "LIC's New Children's Money Back Plan (732)",
+        "bima_ratna": "LIC's Bima Ratna (764)"
       },
       "term_assurance_plans": {
-        "jeevan_kiran": "LIC's Jeevan Kiran",
-        "new_jeevan_amar": "LIC's New Jeevan Amar",
-        "saral_jeevan_bima": "LIC's Saral Jeevan Bima",
-        "new_tech_term": "LIC's New Tech-Term"
+        "digi_term": "LIC’s Digi Term (876)",
+        "digi_credit_life": "LIC’s Digi Credit Life (878)",
+        "yuva_credit_life": "LIC’s Yuva Credit Life (877)",
+        "yuva_term": "LIC’s Yuva Term (875)",
+        "new_tech_term": "LIC's New Tech-Term (954)",
+        "new_jeevan_amar": "LIC's New Jeevan Amar (955)",
+        "saral_jeevan_bima": "LIC's Saral Jeevan Bima (859)"
+      },
+      "riders": {
+        "accident_benefit_rider": "LIC's Accident Benefit Rider",
+        "premium_waiver_benefit_rider": "LIC's Premium Waiver Benefit Rider",
+        "accidental_death_disability_rider": "LIC's Accidental Death & Disability Benefit Rider",
+        "new_term_assurance_rider": "LIC's New Term Assurance Rider",
+        "linked_accidental_death_rider": "LIC's Linked Accidental Death Benefit Rider"
       },
       "pension_plans": {
         "new_jeevan_shanti": "LIC's New Jeevan Shanti",
