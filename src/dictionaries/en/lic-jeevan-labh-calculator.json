@@ -18,8 +18,7 @@
       "monthly_premium": "Approx. Monthly Premium (inc. GST)",
       "total_premium_paid": "Total Premium Paid",
       "maturity_value": "Estimated Maturity Value",
-      "maturity_details": "Maturity = Sum Assured + Vested Bonus + Final Additional Bonus (FAB)",
-      "note": "Disclaimer: All values are estimates. GST @4.5% (1st year) and 2.25% (renewals) is included. Bonus rates are not guaranteed and are based on past performance for illustration purposes only."
+      "note": "Disclaimer: All values are estimates. GST @4.5% (1st year) is included. Bonus rates are illustrative and not guaranteed."
     }
   },
   "article": {
