@@ -133,7 +133,7 @@
             "items": [
               {
                 "title": "Example 1: Jeevan Labh Maturity Value for ₹10 Lakh Sum Assured",
-                "body": "<strong>Scenario:</strong> A 30-year-old invests in a 25-year term policy. <br><strong>Premium:</strong> Approx. ₹42,200 per year for 16 years. <br><strong>Total Paid:</strong> ~₹6.75 Lakh. <br><strong>Estimated Maturity:</strong> ₹10,00,000 (Sum Assured) + ~₹12,00,000 (Bonus) + ~₹1,00,000 (FAB) = <strong>~₹23,00,000</strong>."
+                "body": "<strong>Scenario:</strong> A 30-year-old invests in a 25-year term policy. <br><strong>Premium:</strong> Approx. ₹42,200 per year for 16 years. <br><strong>Total Paid:</strong> ~₹6.75 Lakh. <br><strong>Estimated Maturity:</strong> ₹10,00,000 (Sum Assured) + ~₹12,00,000 (Bonus) + ~₹1,00,000 (FAB) = <strong>~₹23,00,000</strong>. This example helps users looking for a 'jeevan labh maturity value 10 lakh' calculation."
               },
               {
                 "title": "Example 2: LIC Jeevan Labh 1 Crore Premium",
@@ -161,29 +161,6 @@
               ["25 Years", "₹48", "₹45"]
             ],
             "footer": "Source: Publicly available LIC bonus declarations. Rates are not guaranteed for future years."
-          }
-        ]
-      },
-      {
-        "id": "comparison",
-        "icon": "GitCompareArrows",
-        "title": "Jeevan Labh vs. Jeevan Umang vs. Jeevan Utsav",
-        "content": [
-          {
-            "type": "paragraph",
-            "text": "Choosing the right LIC plan can be confusing. Here’s a quick comparison to help you decide:"
-          },
-          {
-            "type": "table",
-            "headers": ["Feature", "Jeevan Labh (936)", "Jeevan Umang (945)", "Jeevan Utsav (871)"],
-            "rows": [
-              ["Plan Type", "Limited Pay Endowment", "Whole Life + Guaranteed Income", "Whole Life + Guaranteed Additions"],
-              ["Primary Goal", "Goal-based lump sum (e.g., child's marriage)", "Lifelong income stream post-PPT", "Flexible lifelong benefits"],
-              ["Maturity", "Fixed at end of policy term", "At age 100 or on death", "At age 100 or on death"],
-              ["Key Benefit", "Lump sum payout", "8% of Sum Assured annually after PPT", "Guaranteed Additions during PPT"],
-              ["Premium Level", "Lowest of the three", "Highest", "Moderate"]
-            ],
-            "footer": "<strong>Conclusion:</strong> Choose Jeevan Labh for a specific, timed goal. Choose Jeevan Umang for a lifelong pension-like income. Choose Jeevan Utsav for more flexibility on benefit withdrawal."
           }
         ]
       },
@@ -232,6 +209,107 @@
         ]
       },
       {
+        "id": "tax-benefits-explained",
+        "icon": "FileText",
+        "title": "Tax Benefits Explained: 80C & 10(10D)",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Jeevan Labh offers significant tax advantages under the Exempt-Exempt-Exempt (EEE) category."
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "title": "Section 80C Deduction (Exempt 1)",
+                "body": "The premium you pay each year is eligible for deduction from your taxable income under Section 80C, up to a limit of ₹1.5 Lakh. For example, if your annual premium is ₹42,200 and you are in the 30% tax bracket, you effectively save ~₹12,660 in taxes each year."
+              },
+              {
+                "title": "Section 10(10D) Tax-Free Maturity (Exempt 3)",
+                "body": "The entire maturity amount, including the Sum Assured and all bonuses, is completely tax-free under Section 10(10D). If your estimated maturity is ₹23 Lakh, you receive the full amount without any tax liability. This is a major advantage over instruments like Fixed Deposits where interest is taxable."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "surrender-value",
+        "icon": "TrendingUp",
+        "title": "Understanding Surrender Value in Jeevan Labh",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "If you need to exit the policy before maturity, it acquires a 'Surrender Value' after two full years of premiums have been paid. A 'Jeevan Labh surrender value calculator' would consider two components:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "<strong>Guaranteed Surrender Value (GSV):</strong> This is a fixed percentage of total premiums paid, which increases with the policy duration.",
+              "<strong>Special Surrender Value (SSV):</strong> This is usually higher and is calculated as (Paid-up Sum Assured + Vested Bonuses) multiplied by a surrender value factor declared by LIC."
+            ]
+          },
+          {
+             "type": "examples",
+             "items": [
+                {
+                  "title": "Surrender Value Example (Illustrative)",
+                  "body": "If you've paid ₹2 Lakh in premiums over 5 years and the GSV factor is 30%, your Guaranteed Surrender Value would be ₹60,000. However, the SSV might be significantly higher, depending on the bonuses accrued. It's generally advisable not to surrender the policy to avoid losses."
+                }
+              ]
+          }
+        ]
+      },
+      {
+        "id": "loan-facility",
+        "icon": "Landmark",
+        "title": "Loan Facility on Your Jeevan Labh Policy",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "One of the key liquidity features of Jeevan Labh is the ability to take a loan against the policy. This can be availed after the policy has acquired a surrender value (i.e., after 2 full years of premium payments)."
+          },
+          {
+            "type": "list",
+            "items": [
+                "<strong>Loan Amount:</strong> The maximum loan you can get is up to 90% of the Surrender Value for in-force policies.",
+                "<strong>Interest Rate:</strong> The interest rate on the loan is determined by LIC and is typically competitive compared to personal loans."
+            ]
+          },
+          {
+             "type": "examples",
+             "items": [
+                {
+                  "title": "Loan Example (Illustrative)",
+                  "body": "If your policy's surrender value is ₹2,00,000, you could be eligible for a loan of up to ₹1,80,000 (90% of Surrender Value). This provides a useful source of funds for emergencies without having to terminate the policy."
+                }
+              ]
+          }
+        ]
+      },
+      {
+        "id": "comparison",
+        "icon": "GitCompareArrows",
+        "title": "Jeevan Labh vs. Jeevan Umang vs. Jeevan Utsav",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Choosing the right LIC plan can be confusing. Here’s a quick comparison to help you decide:"
+          },
+          {
+            "type": "table",
+            "headers": ["Feature", "Jeevan Labh (936)", "Jeevan Umang (945)", "Jeevan Utsav (871)"],
+            "rows": [
+              ["Plan Type", "Limited Pay Endowment", "Whole Life + Guaranteed Income", "Whole Life + Guaranteed Additions"],
+              ["Primary Goal", "Goal-based lump sum (e.g., child's marriage)", "Lifelong income stream post-PPT", "Flexible lifelong benefits"],
+              ["Maturity", "Fixed at end of policy term", "At age 100 or on death", "At age 100 or on death"],
+              ["Key Benefit", "Lump sum payout", "8% of Sum Assured annually after PPT", "Guaranteed Additions during PPT"],
+              ["Premium Level", "Lowest of the three", "Highest", "Moderate"]
+            ],
+            "footer": "<strong>Conclusion:</strong> Choose Jeevan Labh for a specific, timed goal. Choose Jeevan Umang for a lifelong pension-like income. Choose Jeevan Utsav for more flexibility on benefit withdrawal."
+          }
+        ]
+      },
+      {
         "id": "faq",
         "icon": "HelpCircle",
         "title": "Frequently Asked Questions (FAQ)",
@@ -253,7 +331,7 @@
               },
               {
                 "q": "Which is better: LIC Jeevan Labh or Jeevan Umang?",
-                "a": "Jeevan Labh is a limited-pay endowment plan with a fixed maturity date, ideal for goal-based savings. Jeevan Umang is a whole-life plan that provides annual survival benefits after the PPT and matures at age 100. Umang has higher premiums but offers lifelong cover and income. Use a Jeevan Labh vs Jeevan Umang calculator for a detailed comparison."
+                "a": "Jeevan Labh is a limited-pay endowment plan with a fixed maturity date, ideal for goal-based savings. Jeevan Umang is a whole-life plan that provides annual survival benefits after the PPT and matures at age 100. Umang has higher premiums but offers lifelong cover and income. A Jeevan Labh vs Jeevan Umang calculator provides a detailed comparison."
               },
               {
                 "q": "Can I take a loan on my LIC Jeevan Labh policy?",
