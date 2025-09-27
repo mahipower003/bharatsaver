@@ -22,9 +22,39 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         name: faq.q,
         acceptedAnswer: {
           '@type': 'Answer',
-          text: faq.a,
+          text: faq.a.replace(/<[^>]*>/g, ''), // Strip HTML for clean text
         },
       })),
+    };
+    
+    const howToSteps = pageDict.article.sections.find((s: any) => s.id === 'how-to-use')?.content.find((c: any) => c.type === 'steps')?.items || [];
+    const howToSchema = {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Use the LIC Jeevan Labh Calculator",
+        "description": "A step-by-step guide to calculating your premium and maturity benefits for LIC Jeevan Labh Plan 936.",
+        "step": howToSteps.map((step: { title: string, description: string }, index: number) => ({
+            "@type": "HowToStep",
+            "name": `Step ${index + 1}: ${step.title}`,
+            "text": step.description
+        }))
+    };
+    
+    const financialProductSchema = {
+        "@context": "https://schema.org",
+        "@type": "FinancialProduct",
+        "name": "LIC Jeevan Labh (Plan No. 936)",
+        "description": "A non-linked, with-profits, limited premium payment endowment plan from LIC of India.",
+        "brand": {
+            "@type": "Brand",
+            "name": "LIC of India"
+        },
+        "identifier": "512N304V02", // UIN of the plan
+        "url": pageUrl,
+        "offers": {
+            "@type": "Offer",
+            "priceCurrency": "INR"
+        }
     };
 
     return {
@@ -38,7 +68,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
             }, {} as Record<string, string>),
         },
         other: {
-            'application/ld+json': JSON.stringify(faqSchema),
+            'application/ld+json': JSON.stringify([faqSchema, howToSchema, financialProductSchema]),
         },
     };
 }
@@ -72,4 +102,3 @@ export default async function LicJeevanLabhCalculatorPage({ params }: { params: 
         </>
     );
 }
-
