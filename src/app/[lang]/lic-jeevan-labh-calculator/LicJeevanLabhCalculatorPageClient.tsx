@@ -39,12 +39,12 @@ export default function LicJeevanLabhCalculatorPageClient({
   const ArticleContent = () => (
     <div className="mt-12 space-y-8 print-hide">
       {pageDict.article.sections.map((section: any, index: number) => {
-        const Icon = getIcon(section.icon);
+        const Icon = section.icon ? getIcon(section.icon) : null;
         return (
           <Card key={index} className="shadow-lg" id={section.id}>
             <CardHeader>
               <CardTitle className="flex items-center gap-3">
-                <Icon className="h-8 w-8 text-primary" />
+                {Icon && <Icon className="h-8 w-8 text-primary" />}
                 <h2 className="text-2xl font-bold">{section.title}</h2>
               </CardTitle>
             </CardHeader>
