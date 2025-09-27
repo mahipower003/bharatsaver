@@ -65,7 +65,7 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
   async function handleSubmit(values: LicFormValues) {
     setIsLoading(true);
     const lang = pathname.split('/')[1] || 'en';
-    const planSlug = `lic-${values.plan.replace(/_/g, '-')}-calculator`;
+    const planSlug = values.plan; // Use the key directly as the slug
     
     // Simulate a brief delay before redirecting
     await new Promise(resolve => setTimeout(resolve, 300));
@@ -168,5 +168,3 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
     </>
   );
 }
-
-    

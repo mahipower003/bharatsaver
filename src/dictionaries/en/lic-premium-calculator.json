@@ -1,3 +1,4 @@
+
 {
   "h1": "LIC Premium Calculator — Free Online Tool (2025)",
   "description": "Calculate LIC premiums for Jeevan Umang, Jeevan Utsav, Jeevan Labh & more. Use our free, instantly updated online calculator. Supports all riders and payment modes.",
@@ -26,7 +27,7 @@
     "plan_placeholder": "Select a plan",
     "plans": {
       "endowment_plans": {
-        "lic-single-premium-endowment-plan-calculator": "LIC's Single Premium Endowment Plan (917)",
+        "lic-single-premium-endowment-calculator": "LIC's Single Premium Endowment Plan (917)",
         "new_endowment_plan": "LIC's New Endowment Plan (914)",
         "new_jeevan_anand": "LIC's New Jeevan Anand (915)",
         "jeevan_lakshya": "LIC's Jeevan Lakshya (933)",
