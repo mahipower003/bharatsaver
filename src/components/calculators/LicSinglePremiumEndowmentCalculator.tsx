@@ -30,7 +30,6 @@ type CalculationResult = {
   bonus: number;
   fab: number;
   totalPremium: number;
-  isTaxable: boolean;
 };
 
 const premiumRates: Record<number, number> = {
@@ -79,15 +78,12 @@ export function LicSinglePremiumEndowmentCalculator({ dictionary }: { dictionary
     const finalAdditionalBonus = (values.sumAssured / 1000) * fabRate;
     const maturityValue = values.sumAssured + vestedBonus + finalAdditionalBonus;
 
-    const isTaxable = values.sumAssured < singlePremium * 10;
-
     setResult({
         singlePremium,
         maturityValue,
         bonus: vestedBonus,
         fab: finalAdditionalBonus,
         totalPremium: singlePremium,
-        isTaxable
     });
     
     setIsLoading(false);
@@ -142,10 +138,7 @@ export function LicSinglePremiumEndowmentCalculator({ dictionary }: { dictionary
                 <TableRow className="font-bold"><TableCell>Total Maturity</TableCell><TableCell className="text-right">{formatCurrency(result.maturityValue)}</TableCell></TableRow>
               </TableBody>
             </Table>
-            {result.isTaxable && (
-                <p className="text-destructive text-sm mt-4">Note: Maturity may be taxable as Sum Assured is less than 10x the premium.</p>
-            )}
-             <p className="text-xs text-center text-muted-foreground mt-4">{dictionary.results.note}</p>
+            <p className="text-xs text-center text-muted-foreground mt-4">{dictionary.results.note}</p>
           </CardContent>
         </Card>
       )}
