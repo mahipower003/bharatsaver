@@ -53,10 +53,14 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
   }, [subCategory, form]);
 
   const hasSubCategories = categoriesWithSubCategories.includes(productCategory);
-  const subCategories = hasSubCategories && dictionary.sub_categories[productCategory] ? dictionary.sub_categories[productCategory] : null;
+  
+  const subCategories = hasSubCategories && dictionary.sub_categories[productCategory] 
+    ? Object.entries(dictionary.sub_categories[productCategory])
+    : null;
+
   const plans = hasSubCategories 
-    ? (subCategory && dictionary.plans[subCategory] ? dictionary.plans[subCategory] : null)
-    : (productCategory && dictionary.plans[productCategory] ? dictionary.plans[productCategory] : null);
+    ? (subCategory && dictionary.plans[subCategory] ? Object.entries(dictionary.plans[subCategory]) : null)
+    : (productCategory && dictionary.plans[productCategory] ? Object.entries(dictionary.plans[productCategory]) : null);
 
 
   async function handleSubmit(values: LicFormValues) {
@@ -119,7 +123,7 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
                               <SelectTrigger><SelectValue placeholder={dictionary.sub_category_placeholder} /></SelectTrigger>
                             </FormControl>
                             <SelectContent>
-                              {Object.entries(subCategories).map(([key, value]) => (
+                              {subCategories.map(([key, value]) => (
                                 <SelectItem key={key} value={key}>{value}</SelectItem>
                               ))}
                             </SelectContent>
@@ -142,7 +146,7 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
                             <SelectTrigger><SelectValue placeholder={dictionary.plan_placeholder} /></SelectTrigger>
                           </FormControl>
                           <SelectContent>
-                             {Object.entries(plans).map(([key, value]) => (
+                             {plans.map(([key, value]) => (
                                 <SelectItem key={key} value={key}>{value}</SelectItem>
                               ))}
                           </SelectContent>

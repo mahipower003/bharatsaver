@@ -143,7 +143,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     "@type": "Article",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `${siteUrl}/${params.lang}/lic-calculators/tools/premium-calculator`
+      "@id": `${siteUrl}/lic-calculators/tools/premium-calculator`
     },
     "headline": "LIC Premium Calculator — Free Online LIC Premium Calculator (2025)",
     "description": "Calculate LIC premium instantly for Jeevan Umang, Jeevan Utsav, Jeevan Labh & more. Use plan presets, add riders, compare monthly vs yearly and download results.",
@@ -181,19 +181,19 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         "@type": "HowToStep",
         "name": "Step 1: Select Your Plan",
         "text": "Start by choosing your desired LIC plan from the dropdown menus. Use a preset like 'Jeevan Umang' for better accuracy.",
-        "url": `${siteUrl}/${params.lang}/lic-calculators/tools/premium-calculator#calculator-widget`
+        "url": `${siteUrl}/${params.lang}/lic-premium-calculator#calculator-widget`
       },
       {
         "@type": "HowToStep",
         "name": "Step 2: Enter Your Details",
         "text": "Input your current age, gender, the sum assured (coverage amount), and the premium paying term (PPT).",
-        "url": `${siteUrl}/${params.lang}/lic-calculators/tools/premium-calculator#calculator-widget`
+        "url": `${siteUrl}/${params.lang}/lic-premium-calculator#calculator-widget`
       },
       {
         "@type": "HowToStep",
         "name": "Step 3: Click 'Calculate'",
         "text": "The tool will process your inputs and instantly display your estimated premium for yearly, half-yearly, quarterly, and monthly frequencies.",
-        "url": `${siteUrl}/${params.lang}/lic-calculators/tools/premium-calculator#calculator-widget`
+        "url": `${siteUrl}/${params.lang}/lic-premium-calculator#calculator-widget`
       }
     ]
   };
