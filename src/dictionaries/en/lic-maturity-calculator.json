@@ -170,26 +170,26 @@
       ]
     },
     {
-        "id": "bonus-rates",
-        "icon": "BarChart2",
-        "title": "LIC Bonus Rates (Historical Trends)",
-        "description": "The 'bonus rate' is the most important variable in your maturity calculation. LIC declares this rate each year. While not guaranteed, looking at past rates gives a realistic expectation.",
-        "content": [
-            {
-              "type": "bar_chart",
-              "data": [
-                { "name": "2015-16", "value": 48 },
-                { "name": "2016-17", "value": 44 },
-                { "name": "2017-18", "value": 43 },
-                { "name": "2018-19", "value": 42 },
-                { "name": "2019-20", "value": 40 },
-                { "name": "2020-21", "value": 44 },
-                { "name": "2021-22", "value": 45 },
-                { "name": "2022-23", "value": 46 },
-                { "name": "2023-24", "value": 48 }
-              ]
-            }
-        ]
+      "id": "bonus-rates",
+      "icon": "BarChart2",
+      "title": "LIC Bonus Rates (Historical Trends)",
+      "description": "The 'bonus rate' is the most important variable in your maturity calculation. LIC declares this rate each year. While not guaranteed, looking at past rates gives a realistic expectation.",
+      "content": [
+        {
+          "type": "bar_chart",
+          "data": [
+            { "name": "2015-16", "value": 48 },
+            { "name": "2016-17", "value": 44 },
+            { "name": "2017-18", "value": 43 },
+            { "name": "2018-19", "value": 42 },
+            { "name": "2019-20", "value": 40 },
+            { "name": "2020-21", "value": 44 },
+            { "name": "2021-22", "value": 45 },
+            { "name": "2022-23", "value": 46 },
+            { "name": "2023-24", "value": 48 }
+          ]
+        }
+      ]
     },
     {
       "id": "alternatives",
