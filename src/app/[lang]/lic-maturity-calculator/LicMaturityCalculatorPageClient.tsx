@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { ResponsiveContainer, BarChart, XAxis, YAxis, Tooltip, Bar } from 'recharts';
 
 function getIcon(iconName: string) {
     switch (iconName) {
@@ -62,6 +63,19 @@ const ContentRenderer = ({ content, lang }: { content: any[], lang: Locale }) =>
                 {item.footer && <p className="text-xs text-muted-foreground mt-2 italic" dangerouslySetInnerHTML={{ __html: item.footer }} />}
               </div>
             );
+          case 'bar_chart':
+            return (
+              <div key={idx} className="h-64 w-full mt-4">
+                  <ResponsiveContainer>
+                      <BarChart data={item.data}>
+                          <XAxis dataKey="name" tick={{ fontSize: 12 }} />
+                          <YAxis />
+                          <Tooltip contentStyle={{ borderRadius: "var(--radius)", background: "hsl(var(--background))" }} />
+                          <Bar dataKey="value" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
+                      </BarChart>
+                  </ResponsiveContainer>
+              </div>
+            );
           case 'alert':
             return (
               <Alert key={idx} variant={item.variant || 'default'}>
@@ -72,9 +86,10 @@ const ContentRenderer = ({ content, lang }: { content: any[], lang: Locale }) =>
           case 'formula':
             return <p key={idx} className="font-mono bg-muted p-4 rounded-md my-4 text-center" dangerouslySetInnerHTML={{ __html: item.text }} />;
            case 'faq':
+             if (!item.questions || !Array.isArray(item.questions)) return null;
             return (
               <Accordion key={idx} type="single" collapsible className="w-full">
-                {item.items.map((faq: {q: string, a: string}, qIdx: number) => (
+                {item.questions.map((faq: {q: string, a: string}, qIdx: number) => (
                     <AccordionItem key={qIdx} value={`item-${qIdx}`}>
                         <AccordionTrigger>{faq.q}</AccordionTrigger>
                         <AccordionContent><p dangerouslySetInnerHTML={{__html: faq.a}} /></AccordionContent>

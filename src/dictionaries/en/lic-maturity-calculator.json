@@ -70,6 +70,51 @@
         }
       ]
     },
+     {
+      "id": "death-benefit",
+      "icon": "ShieldCheck",
+      "title": "Death Benefit Explained",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In the unfortunate event of the policyholder's death during the policy term, the nominee receives the 'Sum Assured on Death' plus any vested bonuses. This 'Sum Assured on Death' is defined as the higher of:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>125% of the Basic Sum Assured</strong>",
+            "<strong>7 times the annualized premium</strong>"
+          ]
+        },
+        {
+          "type": "alert",
+          "variant": "default",
+          "title": "Example",
+          "text": "For a ₹10 Lakh policy with an annual premium of ₹50,000, the Sum Assured on Death would be the higher of ₹12.5 Lakh (125% of 10L) or ₹3.5 Lakh (7 x 50k), which is <strong>₹12.5 Lakh</strong>, plus any accumulated bonuses."
+        }
+      ]
+    },
+    {
+      "id": "paid-up-value",
+      "icon": "FileText",
+      "title": "Paid-Up Value Explained",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "If you stop paying premiums after at least two full years, your policy doesn't lapse completely. It becomes a 'paid-up' policy with reduced benefits. You don't have to pay any more premiums, and you will receive the 'Paid-up Sum Assured' plus vested bonuses at maturity."
+        },
+        {
+            "type": "formula",
+            "text": "<strong>Paid-up Value = Sum Assured × (No. of Premiums Paid / Total Premiums Payable)</strong>"
+        },
+        {
+          "type": "alert",
+          "variant": "default",
+          "title": "Example",
+          "text": "If you have a 25-year policy with a ₹10 Lakh Sum Assured and a 16-year PPT, and you stop paying after 8 years, your Paid-up Sum Assured becomes: ₹10,00,000 * (8 / 16) = <strong>₹5,00,000</strong>. This amount, plus bonuses accrued for 8 years, will be paid at maturity."
+        }
+      ]
+    },
     {
       "id": "inputs-explained",
       "icon": "HelpCircle",
@@ -125,17 +170,14 @@
       ]
     },
     {
-      "id": "bonus-rates",
-      "icon": "BarChart2",
-      "title": "LIC Maturity Calculator with Bonus Rates 2025",
-      "content": [
+        "id": "bonus-rates",
+        "icon": "BarChart2",
+        "title": "LIC Bonus Rates 2025 (Historical Trends)",
+        "description": "The 'bonus rate' is the most important variable in your maturity calculation. LIC declares this rate each year. While not guaranteed for 2025, looking at past rates gives a realistic expectation.",
+        "content": [
         {
-          "type": "paragraph",
-          "text": "The 'bonus rate' is the most important variable in your maturity calculation. LIC declares this rate each year, and it can change. While not guaranteed, looking at past rates gives a realistic expectation for 2025 and beyond. Below are recent illustrative bonus rates for standard endowment plans."
-        },
-        {
-          "type": "bar_chart",
-          "data": [
+            "type": "bar_chart",
+            "data": [
             { "name": "2015-16", "value": 48 },
             { "name": "2016-17", "value": 44 },
             { "name": "2017-18", "value": 43 },
@@ -145,14 +187,14 @@
             { "name": "2021-22", "value": 45 },
             { "name": "2022-23", "value": 46 },
             { "name": "2023-24", "value": 48 }
-          ]
+            ]
         }
-      ]
+        ]
     },
      {
       "id": "alternatives-market",
       "icon": "GitCompareArrows",
-      "title": "Compare: LIC Maturity vs. Market Instruments",
+      "title": "Compare: LIC vs. Market Instruments",
       "description": "How does an LIC maturity payout stack up against other popular investment options?",
       "content": [
         {
@@ -220,7 +262,7 @@
       "content": [
         {
           "type": "faq",
-          "items": [
+          "questions": [
             {"q": "How do I calculate my LIC policy maturity amount?","a": "Enter sum assured, policy term, and an illustrative bonus rate per ₹1,000 SA into the calculator. Maturity = Sum Assured + (Vested bonus × policy term) + Final Additional Bonus (if any)."},
             {"q": "Does the LIC maturity calculator include bonus?","a": "Yes. You can input an illustrative bonus rate per ₹1,000 SA or use historical averages. The calculator multiplies the annual bonus by the policy term to estimate total bonus."},
             {"q": "How accurate is the maturity estimate?","a": "Estimates use the inputs and illustrative bonus/FAB rates. Actual maturity depends on LIC's declared bonuses and final underwriting; treat results as indicative, not binding."},
@@ -241,7 +283,7 @@
             {"q": "Can I change Sum Assured during the policy?","a": "No, the Basic Sum Assured is fixed at the time of policy issuance and cannot be changed during the term."},
             {"q": "What happens if I stop paying premiums (paid-up)?","a": "After 2 years, the policy can become 'paid-up' with a reduced Sum Assured. You won't have to pay more premiums, and you will receive the reduced sum assured plus vested bonuses at maturity."},
             {"q": "How often does LIC declare bonus rates?","a": "LIC declares its Simple Reversionary Bonus rates annually, typically after the end of each financial year (March 31st)."}
-          ]
+          ]}
         }
       ]
     },
