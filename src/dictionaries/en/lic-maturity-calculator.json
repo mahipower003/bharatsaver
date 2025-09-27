@@ -148,10 +148,6 @@
             ["2015-16", "₹45"],
             ["2014-15", "₹48"]
           ]
-        },
-        {
-          "type": "paragraph",
-          "text": "<p>As you can see, a small change in the bonus rate can significantly impact your final maturity amount over a long term.</p>"
         }
       ]
     },
@@ -172,38 +168,38 @@
       ]
     },
     {
-        "id": "alternatives",
-        "icon": "GitCompareArrows",
-        "title": "Compare: LIC Maturity vs. Alternatives",
-        "content": [
-            {
-                "type": "paragraph",
-                "text": "<h5>Comparing against Market Instruments</h5>"
-            },
-            {
-                "type": "table",
-                "headers": ["Instrument", "Typical Return (p.a.)", "Risk Level", "Tax on Maturity"],
-                "rows": [
-                    ["LIC Endowment", "~5-6%", "Very Low (Sovereign-backed)", "Tax-Free (u/s 10(10D))"],
-                    ["Bank FD", "~7%", "Low", "Taxable as per slab"],
-                    ["PPF", "~7.1%", "Very Low (Sovereign)", "Tax-Free"],
-                    ["Equity Mutual Funds", "~12-15%", "High (Market Risk)", "Taxable (LTCG > ₹1L)"]
-                ]
-            },
-            {
-                "type": "paragraph",
-                "text": "<h5 class='mt-6'>Comparing Different LIC Plans</h5>"
-            },
-            {
-                "type": "table",
-                "headers": ["Feature", "Jeevan Labh", "Jeevan Anand", "Single Premium"],
-                "rows": [
-                    ["Payment", "Limited (e.g. 16/25)", "Regular (Full Term)", "One-Time"],
-                    ["Best For", "Goal-based savings", "Legacy + Savings", "Lump-sum investors"],
-                    ["Maturity", "SA + Bonus + FAB", "SA + Bonus + FAB", "SA + Bonus + FAB"]
-                ]
-            }
-        ]
+      "id": "alternatives",
+      "icon": "GitCompareArrows",
+      "title": "Compare: LIC Maturity vs. Alternatives",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "<h5>Comparing against Market Instruments</h5>"
+        },
+        {
+          "type": "table",
+          "headers": ["Instrument", "Typical Return (p.a.)", "Risk Level", "Tax on Maturity"],
+          "rows": [
+            ["LIC Endowment", "~5-6%", "Very Low (Sovereign-backed)", "Tax-Free (u/s 10(10D))"],
+            ["Bank FD", "~7%", "Low", "Taxable as per slab"],
+            ["PPF", "~7.1%", "Very Low (Sovereign)", "Tax-Free"],
+            ["Equity Mutual Funds", "~12-15%", "High (Market Risk)", "Taxable (LTCG > ₹1L)"]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "<h5 class='mt-6'>Comparing Different LIC Plans</h5>"
+        },
+        {
+          "type": "table",
+          "headers": ["Feature", "Jeevan Labh", "Jeevan Anand", "Single Premium"],
+          "rows": [
+            ["Payment", "Limited (e.g. 16/25)", "Regular (Full Term)", "One-Time"],
+            ["Best For", "Goal-based savings", "Legacy + Savings", "Lump-sum investors"],
+            ["Maturity", "SA + Bonus + FAB", "SA + Bonus + FAB", "SA + Bonus + FAB"]
+          ]
+        }
+      ]
     },
     {
       "id": "faq",
@@ -233,11 +229,11 @@
             {"q": "Can I change Sum Assured during the policy?","a": "No, the Basic Sum Assured is fixed at the time of policy issuance and cannot be changed during the term."},
             {"q": "What happens if I stop paying premiums (paid-up)?","a": "After 2 years, the policy can become 'paid-up' with a reduced Sum Assured. You won't have to pay more premiums, and you will receive the reduced sum assured plus vested bonuses at maturity."},
             {"q": "How often does LIC declare bonus rates?","a": "LIC declares its Simple Reversionary Bonus rates annually, typically after the end of each financial year (March 31st)."}
-          ]}
-        ]
-      }
-    ],
-    "conclusion": {
+          ]
+        }
+      ]
+    },
+    {
       "id": "conclusion",
       "icon": "Star",
       "title": "Take Control of Your Financial Future",
@@ -248,5 +244,6 @@
         }
       ]
     }
-  }
+  ]
 }
+    
