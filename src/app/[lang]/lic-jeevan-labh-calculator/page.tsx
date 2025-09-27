@@ -13,6 +13,20 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     const pageUrl = `${siteUrl}/${params.lang}/lic-jeevan-labh-calculator`;
     const pageDict = (await import(`@/dictionaries/${params.lang}/lic-jeevan-labh-calculator.json`)).default;
 
+    const faqItems = pageDict.article.sections.find((s: any) => s.id === 'faq')?.content.find((c: any) => c.type === 'faq')?.items || [];
+    const faqSchema = {
+      "@context":"https://schema.org",
+      "@type":"FAQPage",
+      "mainEntity": faqItems.map((faq: { q: string, a: string }) => ({
+        '@type': 'Question',
+        name: faq.q,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.a,
+        },
+      })),
+    };
+
     return {
         title: pageDict.meta_title,
         description: pageDict.meta_description,
@@ -22,6 +36,9 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
                 acc[locale] = `${siteUrl}/${locale}/lic-jeevan-labh-calculator`;
                 return acc;
             }, {} as Record<string, string>),
+        },
+        other: {
+            'application/ld+json': JSON.stringify(faqSchema),
         },
     };
 }
@@ -55,3 +72,4 @@ export default async function LicJeevanLabhCalculatorPage({ params }: { params: 
         </>
     );
 }
+
