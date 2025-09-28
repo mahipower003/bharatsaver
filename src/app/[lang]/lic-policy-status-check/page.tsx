@@ -87,7 +87,7 @@ const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
 export default async function LicStatusPage({ params }: { params: { lang: Locale } }) {
   const dictionary = await getDictionary(params.lang);
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/${params.lang}/lic-policy-status-check`;
+  const pageUrl = `${siteUrl}/lic-policy-status-check`;
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -105,7 +105,7 @@ export default async function LicStatusPage({ params }: { params: { lang: Locale
       <div className="mx-auto max-w-4xl">
         
         <header className="text-center mb-12">
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl font-headline mb-4">How to Check LIC Policy Status: Step-by-Step Guide (Online & Offline)</h1>
+          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl font-headline mb-4">How to Check LIC Policy Status Online & Offline (Step-by-Step Guide 2025)</h1>
         </header>
 
         <section id="why-check-status" className="mb-12">
@@ -304,3 +304,5 @@ export default async function LicStatusPage({ params }: { params: { lang: Locale
     </div>
   );
 }
+
+    
