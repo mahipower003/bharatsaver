@@ -2,17 +2,17 @@
 {
   "meta_title": "LIC Surrender Value Calculator 2025: Calculate Online Free (Form 5074/3510)",
   "meta_description": "Use our free LIC Surrender Value Calculator online to find the Guaranteed (GSV) and Special Surrender Value (SSV) for your policy. Our tool helps calculate the surrender value for Jeevan Anand, Jeevan Labh, and more. Understand the formula & financial implications before you surrender.",
-  "h1": "LIC Surrender Value Calculator (2025)",
+  "h1": "I Built This LIC Surrender Value Calculator to Give You the Unvarnished Truth (2025)",
   "description": "Thinking about surrendering your LIC policy? It's a tough spot to be in, and I get it. Before you make a move, let's figure out exactly what you'd get back. I've built this free <strong>LIC Surrender Value Calculator</strong> to give you an honest, instant estimate. We'll break down the difference between the Guaranteed Value (GSV) and the more realistic Special Value (SSV), so you can make a decision with your eyes wide open.",
   "tool": {
     "title": "Instant Surrender Value Calculator",
     "plan_label": "LIC Plan",
     "plans": {
-      "new_jeevan_anand": "New Jeevan Anand (915)",
-      "jeevan_labh": "Jeevan Labh (936)",
-      "new_endowment": "New Endowment Plan (914)",
-      "jeevan_utsav": "Jeevan Utsav (871)",
-      "jeevan_umang": "Jeevan Umang (945)"
+      "new-jeevan-anand": "New Jeevan Anand (915)",
+      "jeevan-labh": "Jeevan Labh (936)",
+      "new-endowment": "New Endowment Plan (914)",
+      "jeevan-utsav": "Jeevan Utsav (871)",
+      "jeevan-umang": "Jeevan Umang (945)"
     },
     "basic_sa_label": "Basic Sum Assured (₹)",
     "policy_term_label": "Policy Term (Years)",
@@ -22,15 +22,15 @@
     "loan_principal_label": "Outstanding Loan (₹) (Optional)",
     "calculate_button": "Calculate Surrender Value",
     "calculating": "Calculating...",
-    "results_title": "Estimated Surrender Value",
+    "results_title": "Estimated Surrender Value Breakdown",
     "gsv_label": "Guaranteed Surrender Value (GSV)",
-    "ssv_label": "Special Surrender Value (SSV - Est.)",
-    "net_payout_label": "Net Payout After Loan",
+    "ssv_label": "Special Surrender Value (SSV - Estimated)",
+    "net_payout_label": "Your Estimated Net Payout",
     "paid_up_sa_label": "Paid-up Sum Assured",
     "policy_year_label": "Policy Years Completed",
     "copy_link_cta": "Copy Link",
-    "print_cta": "Print",
-    "export_csv_cta": "Export CSV",
+    "print_cta": "Print / PDF",
+    "export_csv_cta": "Export to CSV",
     "email_cta": "Email Results",
     "share_text": "I just estimated my LIC policy's surrender value with BharatSaver! My potential payout is ~{payout}. Check yours:",
     "copy_success_title": "Link Copied!",
@@ -92,34 +92,21 @@
       ]
     },
     {
-      "id": "factors-affecting-value",
+      "id": "gsv-factors-chart",
       "icon": "BarChart2",
-      "title": "What Decides Your Final Surrender Amount?",
+      "title": "The Brutal Reality: How Surrender Value Grows Over Time",
       "content": [
         {
           "type": "paragraph",
-          "text": "The payout isn't arbitrary. It's a direct result of these key factors:"
-        },
-        {
-          "type": "list",
-          "items": [
-            "<strong>How Long You've Paid:</strong> This is the biggest one. Surrendering in the first few years (e.g., after 3 years) gives you a very small fraction of your money back. The value grows significantly as you get closer to the maturity date.",
-            "<strong>Total Premiums Paid:</strong> The more you've put in, the more you'll get back in absolute terms.",
-            "<strong>Bonuses You've Earned:</strong> Any vested bonuses are a key ingredient in the Special Surrender Value. The more bonuses, the higher the payout.",
-            "<strong>Your Specific Plan:</strong> A Jeevan Anand will have different surrender factors than a Jeevan Labh. Endowment and money-back plans have surrender values; pure term plans do not."
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "<h4>How the Surrender Value Grows Over Time</h4><p>To give you a real-world picture, here’s how the surrender value factor (as a percentage of premiums you've paid) typically progresses. Notice how little you get back in the early years.</p>"
+          "text": "To give you a real-world picture of why surrendering early is so costly, here’s how the surrender value factor (as a percentage of premiums you've paid) typically progresses. Notice how little you get back in the first few years."
         },
         {
           "type": "table",
           "headers": ["Policy Year of Surrender", "Estimated Payout (% of premiums paid)"],
           "rows": [
-            ["3rd Year", "~30% (approx)"],
-            ["5th Year", "~50% – 60%"],
-            ["10th Year", "~80% – 90%"]
+            ["3rd Year", "~30% (You lose ~70% of what you paid)"],
+            ["5th Year", "~50% - 60%"],
+            ["10th Year", "~80% - 90%"]
           ]
         }
       ]
@@ -127,7 +114,7 @@
     {
       "id": "surrender-vs-paidup",
       "icon": "GitCompareArrows",
-      "title": "The Big Question: Surrender or Make It 'Paid-Up'?",
+      "title": "The Big Question: Surrender vs. Make It 'Paid-Up'?",
       "content": [
         {
           "type": "paragraph",
@@ -145,7 +132,7 @@
     {
       "id": "alternatives",
       "icon": "CheckCircle",
-      "title": "Smarter Alternatives to Surrendering Your Policy",
+      "title": "My Advice: Smarter Alternatives to Surrendering Your Policy",
       "content": [
         {
           "type": "paragraph",
@@ -230,3 +217,5 @@
     }
   ]
 }
+
+    
