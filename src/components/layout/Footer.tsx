@@ -23,11 +23,12 @@ export function Footer({ lang, dictionary }: FooterProps) {
     }
     
     // 2. Static files in /public directory (like sitemap.xml)
+    // Use a standard <a> tag to force a full browser navigation for non-page files.
     if (href.includes('.')) {
       return (
-        <Link href={href} className="text-sm text-muted-foreground hover:text-primary">
+        <a href={href} className="text-sm text-muted-foreground hover:text-primary">
           {title}
-        </Link>
+        </a>
       );
     }
 
