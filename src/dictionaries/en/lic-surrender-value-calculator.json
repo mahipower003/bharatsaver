@@ -65,7 +65,7 @@
         }
       ]
     },
-    {
+     {
       "id": "tax-implications",
       "icon": "FileText",
       "title": "Tax Implications of Surrendering an LIC Policy",
@@ -125,7 +125,7 @@
         }
       ]
     },
-    {
+     {
       "id": "pros-cons",
       "icon": "GitCompareArrows",
       "title": "Pros and Cons of Surrendering an LIC Policy",
@@ -145,7 +145,7 @@
         }
       ]
     },
-    {
+     {
       "id": "surrender-vs-paidup",
       "icon": "GitCompareArrows",
       "title": "LIC Surrender Value vs. Paid-Up Value",
