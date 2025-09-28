@@ -2,32 +2,9 @@
 // scripts/generate-sitemap.js
 const fs = require('fs');
 const path = require('path');
+const { calculators } = require('../dist/data/calculators');
+const { i18nConfig } = require('../dist/lib/i18n-config');
 
-// Manually define i18nConfig to avoid import issues
-const i18nConfig = {
-  locales: ['en', 'hi', 'mr', 'ta', 'te'],
-  defaultLocale: 'en',
-};
-
-// Manually define calculators to avoid import issues
-const calculators = [
-  { slug: 'lic-premium-calculator', lastModified: '2024-09-25', priority: 0.9, changefreq: 'monthly' },
-  { slug: 'lic-maturity-calculator', lastModified: '2024-10-05', priority: 0.9, changefreq: 'monthly' },
-  { slug: 'lic-jeevan-labh-calculator', lastModified: '2024-09-26', priority: 0.9, changefreq: 'monthly' },
-  { slug: 'lic-single-premium-endowment-calculator', lastModified: '2024-10-02', priority: 0.9, changefreq: 'monthly' },
-  { slug: 'lic-surrender-value-calculator', lastModified: '2024-10-10', priority: 0.9, changefreq: 'monthly' },
-  { slug: 'ppf-calculator', lastModified: '2024-07-28', priority: 0.9, changefreq: 'monthly' },
-  { slug: 'ssy-calculator', lastModified: '2024-07-27', priority: 0.9, changefreq: 'monthly' },
-  { slug: 'nps-calculator', lastModified: '2024-07-26', priority: 0.9, changefreq: 'monthly' },
-  { slug: 'apy-calculator', lastModified: '2024-07-25', priority: 0.9, changefreq: 'monthly' },
-  { slug: 'fd-vs-ppf-calculator', lastModified: '2024-07-24', priority: 0.9, changefreq: 'monthly' },
-  { slug: 'tax-regime-calculator', lastModified: '2024-07-30', priority: 0.9, changefreq: 'monthly' },
-  { slug: 'retirement-corpus-calculator', lastModified: '2024-07-22', priority: 0.9, changefreq: 'monthly' },
-  { slug: 'loan-optimizer', lastModified: '2024-08-01', priority: 0.9, changefreq: 'monthly' },
-  { slug: 'mutual-fund-overlap-calculator', lastModified: '2024-07-20', priority: 0.9, changefreq: 'monthly' },
-  { slug: 'ups-pension-calculator', lastModified: '2024-08-02', priority: 0.9, changefreq: 'monthly' },
-  { slug: 'mutual-fund-screener', lastModified: '2024-08-05', priority: 0.9, changefreq: 'monthly' },
-];
 
 const staticPages = [
   { slug: '/', lastModified: '2024-07-29', priority: 1.0, changefreq: 'weekly' },
@@ -40,7 +17,15 @@ const staticPages = [
   { slug: '/author/mahesh-chaube', lastModified: '2024-07-29', priority: 0.4, changefreq: 'monthly' },
 ];
 
-const allPages = [...staticPages, ...calculators];
+// Add priority and changefreq to calculator pages
+const calculatorPages = calculators.map(calc => ({
+    ...calc,
+    priority: 0.9,
+    changefreq: 'monthly'
+}));
+
+
+const allPages = [...staticPages, ...calculatorPages];
 
 const siteUrl = 'https://bharatsaver.com';
 
