@@ -1,24 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
-    <loc>https://bharatsaver.com/sitemap-en.xml</loc>
-    <lastmod>2024-08-08T12:00:00.000Z</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://bharatsaver.com/sitemap-hi.xml</loc>
-    <lastmod>2024-08-08T12:00:00.000Z</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://bharatsaver.com/sitemap-mr.xml</loc>
-    <lastmod>2024-08-08T12:00:00.000Z</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://bharatsaver.com/sitemap-ta.xml</loc>
-    <lastmod>2024-08-08T12:00:00.000Z</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://bharatsaver.com/sitemap-te.xml</loc>
-    <lastmod>2024-08-08T12:00:00.000Z</lastmod>
-  </sitemap>
+  <sitemap><loc>https://bharatsaver.com/sitemap-en.xml</loc></sitemap>
+  <sitemap><loc>https://bharatsaver.com/sitemap-hi.xml</loc></sitemap>
+  <sitemap><loc>https://bharatsaver.com/sitemap-mr.xml</loc></sitemap>
+  <sitemap><loc>https://bharatsaver.com/sitemap-ta.xml</loc></sitemap>
+  <sitemap><loc>https://bharatsaver.com/sitemap-te.xml</loc></sitemap>
 </sitemapindex>
