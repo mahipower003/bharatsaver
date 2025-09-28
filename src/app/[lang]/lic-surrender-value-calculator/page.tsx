@@ -27,6 +27,18 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       }))
     };
 
+    const howToSteps = pageDict.sections.find((s:any) => s.id === 'how-to-surrender')?.content[1]?.items ?? [];
+    const howToSchema = {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Surrender an LIC Policy",
+        "step": howToSteps.map((stepText: string, index: number) => ({
+            "@type": "HowToStep",
+            "name": `Step ${index + 1}`,
+            "text": stepText.replace(/<strong>/g, '').replace(/<\/strong>/g, '')
+        }))
+    };
+
     return {
         title: pageDict.meta_title,
         description: pageDict.meta_description,
@@ -38,7 +50,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
             }, {} as Record<string, string>),
         },
         other: {
-            'application/ld+json': JSON.stringify([faqSchema]),
+            'application/ld+json': JSON.stringify([faqSchema, howToSchema]),
         },
     };
 }
