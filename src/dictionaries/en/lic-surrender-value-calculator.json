@@ -182,7 +182,7 @@
           "type": "faq",
           "items": [
             {"q": "How do I calculate the surrender value of my LIC policy?", "a": "The simplest way is to use our calculator above. Just enter your policy details to get an instant estimate. The formula is a percentage of premiums paid plus a portion of your accrued bonuses, which our tool calculates for you."},
-            {"q": "After how many years can I surrender an LIC policy?", "a": "Generally, you can surrender a policy only after you've paid premiums for at least two to three full years. Some single premium policies may be surrendered after one year. Before this period, the policy has no surrender value."},
+            {"q": "After how many years can I surrender an LIC policy?", "a": "Generally, you can surrender a policy only after you've paid premiums for at least two or three full years. Some single premium policies may be surrendered after one year. Before this period, the policy has no surrender value."},
             {"q": "Is the surrender value of an LIC policy taxable?", "a": "If you surrender after 5 full premium-paying years, the amount is generally tax-free under Section 10(10D). If you surrender before 5 years, the amount can become taxable, and any tax deductions you claimed under 80C can be reversed."},
             {"q": "How much money will I get if I surrender my LIC policy?", "a": "It's a percentage of what you've paid, and it starts very low. For example, after 3 years, you might only get back ~30% of your premiums. The value increases the longer you hold the policy. Use our calculator above to get a personalized estimate for your policy."},
             {"q": "What is the difference between guaranteed and special surrender value?", "a": "Guaranteed Surrender Value (GSV) is the legally mandated minimum payout based on a formula of premiums paid. Special Surrender Value (SSV) is a higher, non-guaranteed amount that includes a portion of your bonuses. LIC will always pay whichever amount is higher."},
@@ -211,11 +211,9 @@
             "title": "Your Next Step: Ready to Make a Better Move?",
             "body": "If you're surrendering because you've realized your current plan doesn't meet your needs, that's a smart financial insight. The next logical step is to find a better alternative. Check out our tools to find high-cover, low-cost term insurance or explore investment options that can genuinely grow your wealth.",
             "href": "https://www.policybazaar.com/life-insurance/term-insurance/",
-            "cta": "Compare High-Cover Term Insurance Plans"
+            "cta": "Compare Term Plans"
         }
       ]
     }
   ]
 }
-
-    
