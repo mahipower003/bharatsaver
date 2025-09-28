@@ -136,10 +136,10 @@ export default async function LicStatusPage({ params }: { params: { lang: Locale
                     <div>
                         <h3 className="text-xl font-semibold flex items-center gap-2"><LogIn className="text-primary"/>Check Policy Status via LIC Portal – Registered Users (Login Method)</h3>
                         <ol className="list-decimal pl-6 space-y-2 text-muted-foreground mt-4">
-                            <li>Visit the <ExternalLink href="https://licindia.in/">LIC India official website (licindia.in)</ExternalLink> and click on “Login to Customer Portal”.</li>
-                            <li>Select “Registered User” and enter your LIC User ID and Password to sign in.</li>
-                            <li>Once logged in, navigate to the “Policy Status” section of the portal.</li>
-                            <li>Click on a policy number to view its status and details. If you have multiple policies and some are not listed, use the “Enroll Policy” option to add them using the policy number.</li>
+                          <li>Visit the <ExternalLink href="https://licindia.in/">LIC India official website (licindia.in)</ExternalLink> and click on “Login to Customer Portal”.</li>
+                          <li>Select “Registered User” and enter your LIC User ID and Password to sign in.</li>
+                          <li>Once logged in, navigate to the “Policy Status” section of the portal.</li>
+                          <li>Click on a policy number to view its status and details. If you have multiple policies and some are not listed, use the “Enroll Policy” option to add them using the policy number.</li>
                         </ol>
                         <p className="pl-6 text-sm italic text-muted-foreground mt-2">Note: Ensure that you have your policy number handy when logging in.</p>
                     </div>
@@ -151,7 +151,7 @@ export default async function LicStatusPage({ params }: { params: { lang: Locale
                             <li>Verify your account: After submitting, LIC will send a verification link to your email. Click it to activate your account.</li>
                             <li>Log in and add policies: Log in with your new credentials. You may need to enroll your policy by entering your policy number to view it in the portal.</li>
                         </ol>
-                        <Alert className="mt-4">
+                         <Alert className="mt-4">
                             <Info className="h-4 w-4" />
                             <AlertTitle>Pro Tip</AlertTitle>
                             <AlertDescription>During registration, make sure the details you enter exactly match those on your policy documents. An active mobile number and email are mandatory.</AlertDescription>
@@ -169,15 +169,15 @@ export default async function LicStatusPage({ params }: { params: { lang: Locale
                     
                     <div>
                         <h3 className="text-xl font-semibold flex items-center gap-2"><MessageSquare className="text-primary"/>Check LIC Policy Status by SMS (Text Message)</h3>
-                        <p className="mt-2 text-muted-foreground">One of the easiest ways to get your LIC policy status without any internet or login is through SMS. Follow these steps:</p>
+                        <p className="mt-2 text-muted-foreground">One of the easiest ways to get your LIC policy status without any internet or login is through SMS. LIC has SMS short codes that allow you to retrieve policy information instantly. Follow these steps:</p>
                         <ol className="list-decimal pl-6 space-y-2 text-muted-foreground mt-4">
                             <li>Open the SMS app on your registered mobile phone.</li>
                             <li>Type a message in the format: <code className="bg-muted p-1 rounded-md font-mono">LICHELP &lt;PolicyNumber&gt;</code>.</li>
-                            <li>Send the SMS to <code className="bg-muted p-1 rounded-md font-mono">9222492224</code>.</li>
+                            <li>Send the SMS to <code className="bg-muted p-1 rounded-md font-mono">9222492224</code>. You can also use the alternate number 56767877.</li>
                             <li>You will get an SMS reply from LIC with your policy status details.</li>
                         </ol>
                         <p className="mt-2 text-sm text-muted-foreground"><strong>Example:</strong> Text <code className="font-mono">LICHELP 987654321</code> to <code className="font-mono">9222492224</code>.</p>
-                        <p className="mt-2 text-sm text-muted-foreground"><strong>Note:</strong> You can also get specific details by texting <code className="font-mono">ASKLIC &lt;PolicyNumber&gt; PREMIUM</code> or <code className="font-mono">BONUS</code> or <code className="font-mono">LOAN</code> to the same number.</p>
+                        <p className="mt-2 text-sm text-muted-foreground"><strong>Note:</strong> Make sure to send the SMS from the mobile number registered with your LIC policy. For detailed inquiries, you can use codes like <code className="font-mono">ASKLIC &lt;PolicyNumber&gt; PREMIUM</code> or <code className="font-mono">BONUS</code>.</p>
                     </div>
                     
                     <div>
@@ -189,7 +189,7 @@ export default async function LicStatusPage({ params }: { params: { lang: Locale
                             <li>Enter your policy number using the phone keypad when prompted.</li>
                             <li>Listen to the automated response which will provide your policy details.</li>
                         </ol>
-                        <p className="mt-2 text-sm text-muted-foreground"><strong>Tip:</strong> The IVRS is available 24x7. Keep your policy number ready before calling.</p>
+                        <p className="mt-2 text-sm text-muted-foreground"><strong>Tip:</strong> The IVRS is available 24x7. Live support is generally available Monday to Friday, 8:00 a.m. to 8:00 p.m. Keep your policy number ready before calling.</p>
                     </div>
                     
                     <div>
@@ -210,12 +210,19 @@ export default async function LicStatusPage({ params }: { params: { lang: Locale
         <section id="mobile-app-method" className="mb-12">
             <h2 className="text-3xl font-bold font-headline text-center mb-6">Check LIC Policy Status via LIC Mobile App (LIC Customer App)</h2>
             <Card>
-                <CardContent className="p-6">
-                    <p className="mt-2 text-muted-foreground">Download the official “LIC Customer” app, log in or register, and add your policies to view their status and manage them on the go.</p>
+                <CardContent className="p-6 space-y-4">
+                    <p className="text-muted-foreground">LIC offers an official mobile application called “LIC Customer” (also referred to as the LIC Digital App) for policyholders. Using this app, you can manage your policies on your smartphone, including checking policy status, premium due dates, etc. Here’s how to use the app for policy status:</p>
+                    <ol className="list-decimal pl-6 space-y-2 text-muted-foreground">
+                        <li><strong>Install the official app:</strong> Download the LIC Customer app from the Google Play Store (Android) or Apple App Store (iOS). Ensure it’s the official app by LIC of India to avoid fraudulent apps.</li>
+                        <li><strong>Register or Login:</strong> Open the app. If you are a new user, tap on “New User” or “Sign Up” and follow the prompts to register (you’ll need to enter your policy number, premium, DOB, etc.). If you already have an online LIC account, simply choose “Registered User”, and log in.</li>
+                        <li><strong>Link/Select your policy:</strong> After logging in, the app will show your linked policy or allow you to add/enroll a policy. Add your policy if not already listed by entering the policy number.</li>
+                        <li><strong>Check Policy Status:</strong> Once your policy is added, simply tap on your policy number in the app to view its status and details.</li>
+                    </ol>
+                    <p className="text-muted-foreground">Using the LIC mobile app is essentially like having the customer portal in your pocket. It’s secure and convenient, especially if you frequently manage your policies. The LIC Digital app allows you to not only check status but also get premium reminders, pay premiums online, and view policy statements.</p>
                     <Alert variant="destructive" className="mt-4">
                         <ShieldAlert className="h-4 w-4" />
                         <AlertTitle>Security Tip</AlertTitle>
-                        <AlertDescription>Never share your login credentials or OTPs. Always use the official LIC website or app to avoid scams.</AlertDescription>
+                        <AlertDescription>When using the LIC app or website, never share your login credentials or OTPs with anyone. Always use the official LIC app or website (licindia.in) for checking your policy to avoid phishing scams.</AlertDescription>
                     </Alert>
                 </CardContent>
             </Card>
@@ -287,3 +294,5 @@ export default async function LicStatusPage({ params }: { params: { lang: Locale
   );
 }
 
+
+    
