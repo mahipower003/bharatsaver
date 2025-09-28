@@ -4,17 +4,6 @@ import type { i18nConfig } from '@/lib/i18n-config';
 
 export type Locale = (typeof i18nConfig)['locales'][number];
 
-export type Calculator = {
-  slug: string;
-  title: string;
-  description: string;
-  summary: string;
-  icon: LucideIcon;
-  link_text: string;
-  lastModified: string;
-  image: string;
-};
-
 export type Page = {
   slug: string;
   title: string;

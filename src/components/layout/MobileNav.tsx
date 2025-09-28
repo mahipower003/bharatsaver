@@ -8,7 +8,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { BharatSaverLogo } from './BharatSaverLogo';
-import { calculators } from '@/data/calculators';
+import { calculators, type Calculator } from '@/data/calculators';
 import type { Locale } from '@/lib/i18n-config';
 import type { Dictionary } from '@/lib/types';
 import { LanguageSwitcher } from './LanguageSwitcher';
