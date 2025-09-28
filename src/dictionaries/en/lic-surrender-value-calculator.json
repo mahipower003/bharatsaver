@@ -66,6 +66,33 @@
       ]
     },
     {
+      "id": "tax-implications",
+      "icon": "FileText",
+      "title": "Tax Implications of Surrendering an LIC Policy",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The tax treatment of the surrender amount is a critical factor in your decision. It depends heavily on when you surrender the policy."
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>If Surrendered After 5 Years:</strong> If you surrender the policy after paying premiums for five full years, the surrender value you receive is generally <strong>tax-free</strong> under Section 10(10D) of the Income Tax Act.",
+            "<strong>If Surrendered Before 5 Years:</strong> This is where it gets tricky. If you surrender before completing five premium-paying years, the tax benefits you claimed earlier are reversed. The entire surrender amount is added to your 'Income from Other Sources' and taxed as per your applicable slab rate. Furthermore, any deductions you claimed under Section 80C for the premiums paid in previous years become taxable in the year of surrender."
+          ]
+        },
+        {
+            "type": "examples",
+            "items": [
+                {
+                    "title": "Taxability Example (Surrender in Year 3):",
+                    "body": "Suppose you paid a premium of ₹50,000 each year for 3 years and claimed a ₹50,000 deduction under 80C each time. If you surrender the policy in the 3rd year, the total surrender amount received will be added to your income for that year and taxed. Additionally, the ₹1,00,000 you claimed as a deduction in the first two years could be added back to your taxable income for the year of surrender."
+                }
+            ]
+        }
+      ]
+    },
+    {
       "id": "factors-affecting-value",
       "icon": "BarChart2",
       "title": "Factors Affecting Surrender Value",
@@ -155,15 +182,15 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "Many users have buyer’s remorse about traditional LIC policies; instead of surrendering outright, suggest other options (this is a good place to insert affiliate links and internal links):"
+          "text": "Surrendering should be your last resort. Before you terminate your policy, consider these smarter alternatives:"
         },
         {
           "type": "list",
           "items": [
-            "<strong>Make the Policy Paid-Up:</strong> If you stop paying premiums after a certain minimum period, the policy continues with a reduced sum assured. This avoids immediate loss and keeps some insurance in force.",
-            "<strong>Take a Policy Loan from LIC:</strong> You can borrow against your policy’s surrender value for short-term needs without terminating your cover.",
-            "<strong>Switch to a Term Plan + Invest Difference:</strong> If low returns are the issue, buy a pure term plan for adequate cover (at a much cheaper premium) and invest the difference in higher-return instruments like mutual funds. This often yields better long-term results. <br>👉 <strong><a href='#' class='text-primary font-bold hover:underline'>Compare Term Insurance Plans with ₹1 Cr cover for low premiums</a></strong>",
-            "<strong>Continue or Partial Surrender:</strong> For money-back or ULIP plans, check if you can withdraw bonuses or use partial withdrawal options instead of a full surrender."
+            "<strong>Make the Policy Paid-Up:</strong> If you can no longer afford premiums, simply stop paying after 2-3 years. The policy continues with a reduced sum assured, preserving some of your benefits without further payments. This is often the best alternative to outright surrender.",
+            "<strong>Take a Policy Loan:</strong> If you need funds for a short-term emergency, you can borrow against your policy's surrender value from LIC. This keeps your life cover intact while providing liquidity.",
+            "<strong>Switch to Term Plan + Invest:</strong> If low returns are your concern, a better strategy is to buy a low-cost pure term insurance plan for adequate life cover and invest the premium difference in higher-return instruments like mutual funds. This combination often leads to much better wealth creation. <br>👉 <strong><a href='#' class='text-primary font-bold hover:underline'>Compare Term Insurance Plans with ₹1 Cr cover for low premiums</a></strong>",
+            "<strong>Use Partial Withdrawal Options:</strong> If you have a ULIP or a money-back plan, check if you can make partial withdrawals instead of a full surrender. This allows you to access some funds while keeping the policy active."
           ]
         }
       ]
