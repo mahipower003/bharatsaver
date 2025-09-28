@@ -10,14 +10,18 @@
     "sum_assured_label": "Basic Sum Assured (₹)",
     "policy_term_label": "Original Policy Term (Years)",
     "years_paid_label": "No. of Years Premiums Paid",
-    "bonus_rate_label": "Bonus Rate (per ₹1000 SA)",
+    "accumulated_bonus_label": "Total Accumulated Bonus (₹)",
     "calculate_button": "Calculate Surrender Value",
     "calculating": "Calculating...",
     "results_title": "Estimated Surrender Value",
     "results_warning_title": "Important Note on Surrendering",
     "results_warning_body": "Surrendering a policy almost always results in a financial loss compared to holding it to maturity. This calculator is for informational purposes to help you understand the potential payout.",
     "gsv_label": "Guaranteed Surrender Value (GSV)",
-    "ssv_label": "Special Surrender Value (SSV - Est.)"
+    "ssv_label": "Special Surrender Value (SSV - Est.)",
+    "gsv_breakdown_title": "Guaranteed Surrender Value (GSV) Breakdown",
+    "gsv_breakdown_1": "GSV of Premiums ({factor}% of {premiums})",
+    "gsv_breakdown_2": "GSV of Bonuses ({factor}% of {bonus})",
+    "gsv_breakdown_total": "Total Guaranteed Surrender Value (A + B)"
   },
   "sections": [
     {
@@ -33,7 +37,7 @@
           "type": "list",
           "items": [
             "<strong>Guaranteed Surrender Value (GSV):</strong> This is the minimum amount LIC guarantees to pay. It is calculated as a percentage of total premiums paid plus a percentage of vested bonuses.",
-            "<strong>Special Surrender Value (SSV):</strong> This is a non-guaranteed, higher value that LIC may pay. It depends on factors like the policy term, premiums paid, and LIC's business performance. Our calculator provides an estimate for this."
+            "<strong>Special Surrender Value (SSV):</strong> This is a non-guaranteed, higher value that LIC may pay. It depends on factors like the policy term, premiums paid, and LIC's business performance. Our calculator provides an estimate for this, which is always higher than or equal to the GSV."
           ]
         }
       ]
@@ -92,13 +96,13 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "Surrendering your policy often leads to a financial loss. Before you proceed, consider these alternatives:"
+          "text": "Surrendering your policy often leads to a significant financial loss. Before you proceed, consider these much better alternatives:"
         },
         {
           "type": "list",
           "items": [
-            "<strong>Take a Loan Against the Policy:</strong> If you need funds urgently, you can take a loan of up to 90% of the surrender value. This keeps your policy active and your life cover intact.",
-            "<strong>Make the Policy 'Paid-Up':</strong> If you can no longer pay premiums, you can convert your policy to a 'paid-up' status (after 2 years). You won't pay any more premiums, and you will receive a reduced sum assured at maturity. This is almost always better than surrendering."
+            "<strong>Take a Loan Against the Policy:</strong> If you need funds urgently, you can take a loan of up to 90% of the surrender value. This keeps your policy active and your life cover intact while providing immediate liquidity.",
+            "<strong>Make the Policy 'Paid-Up':</strong> If you can no longer pay premiums, you can convert your policy to a 'paid-up' status (after 2 years). You won't pay any more premiums, and you will receive a reduced sum assured at maturity. This is almost always better than surrendering as you retain proportional benefits."
           ]
         },
         {
@@ -142,7 +146,7 @@
               {"q": "Can I surrender my LIC policy after 1 year?","a": "No, a policy can only be surrendered after premiums have been paid for at least two consecutive years. Before that, it has no surrender value."},
               {"q": "How much money will I get if I surrender my LIC policy after 3 years?","a": "After 3 years, you are entitled to the Guaranteed Surrender Value (GSV), which is typically 30% of the total premiums paid (excluding the first year's premium and rider premiums), plus a percentage of any vested bonuses."},
               {"q": "What is the formula for calculating LIC surrender value?","a": "The basic formula for GSV is: (GSV Factor × Total Premiums Paid) + (Bonus Surrender Value Factor × Vested Bonus). The factors are determined by LIC and vary by policy term and year of surrender."},
-              {"q": "Is Special Surrender Value always higher than Guaranteed Surrender Value?","a": "Yes, the Special Surrender Value (SSV) is a non-guaranteed amount calculated by LIC and is almost always higher than the minimum guaranteed amount (GSV). It reflects the policy's performance more accurately."},
+              {"q": "Is Special Surrender Value always higher than Guaranteed Surrender Value?","a": "Yes, the Special Surrender Value (SSV) is a non-guaranteed amount calculated by LIC and is always higher than or equal to the minimum guaranteed amount (GSV). It reflects the policy's performance more accurately."},
               {"q": "Which form is required for surrendering an LIC policy?","a": "You typically need to fill out 'LIC Surrender Form 5074'. In some specific cases or for older policies, Form 3510 might be required. Your home branch will provide the correct form."}
             ]
           }
