@@ -12,7 +12,6 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { LicSurrenderValueCalculator } from "./LicSurrenderValueCalculator";
 
 function getIcon(iconName: string) {
     switch (iconName) {
@@ -60,7 +59,7 @@ export default function LicSurrenderValueCalculatorPageClient({
         </header>
 
         <div id="calculator-widget">
-            <LicSurrenderValueCalculator dictionary={pageDict.tool} />
+            {/* Calculator component removed as requested */}
         </div>
         
         <div className="mt-12 space-y-8">
