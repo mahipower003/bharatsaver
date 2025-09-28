@@ -42,10 +42,10 @@
         }
       ]
     },
-    {
+     {
       "id": "how-to-calculate",
       "icon": "FileText",
-      "title": "How to Calculate LIC Policy Surrender Value (Formula & Examples)",
+      "title": "How to Calculate LIC Surrender Value (Formula & Examples)",
       "content": [
         {
           "type": "paragraph",
@@ -54,18 +54,18 @@
         {
           "type": "alert",
           "variant": "default",
-          "title": "Step 1: Calculate Total Vested Bonus",
-          "text": "Vested Bonus = (Sum Assured / 1000) * Bonus Rate * Number of Years Premiums Paid.<br><strong>Example:</strong> For a ₹10 Lakh policy with a ₹45 bonus rate, paid for 5 years, the vested bonus is (10,00,000/1000) * 45 * 5 = ₹2,25,000."
+          "title": "Step 1: Calculate Guaranteed Surrender Value (GSV)",
+          "text": "GSV = (Total Premiums Paid × GSV Factor) + (Vested Bonus × Bonus Surrender Value Factor).<br>The factors are determined by LIC. For example, to find the LIC surrender value after 5 years, the GSV factor might be around 50% and the bonus factor around 17%."
         },
         {
-          "type": "alert",
-          "variant": "default",
-          "title": "Step 2: Calculate Guaranteed Surrender Value (GSV)",
-          "text": "GSV = (Total Premiums Paid × GSV Factor) + (Vested Bonus × Bonus Surrender Value Factor).<br>The factors are determined by LIC based on the policy year. For example, to find the LIC surrender value after 5 years, the GSV factor might be around 50% and the bonus factor around 17%.<br><strong>Example:</strong> If total premiums paid are ₹2.1 Lakhs, then GSV ≈ (2,10,000 * 50%) + (2,25,000 * 17%) = ₹1,05,000 + ₹38,250 = <strong>₹1,43,250</strong>."
+            "type": "alert",
+            "variant": "default",
+            "title": "Step 2: Estimate Special Surrender Value (SSV)",
+            "text": "The SSV formula is more complex: (Paid-up Value + Vested Bonus) * SSV Factor. The 'Paid-up Value' is (Sum Assured * No. of Years Paid / Total Term). The SSV factor is a variable multiplier determined by LIC. Our calculator estimates this value to give you a more realistic payout figure."
         }
       ]
     },
-    {
+     {
       "id": "tax-implications",
       "icon": "FileText",
       "title": "Tax Implications of Surrendering an LIC Policy",
@@ -82,13 +82,10 @@
           ]
         },
         {
-          "type": "examples",
-          "items": [
-            {
-              "title": "Taxability Example (Surrender in Year 3):",
-              "body": "Suppose you paid a premium of ₹50,000 each year and claimed a ₹50,000 deduction under 80C. If you surrender in the 3rd year, the surrender amount may be added to your income. Additionally, the ₹1,00,000 you claimed as a deduction could be added back to your taxable income for the year of surrender."
-            }
-          ]
+            "type": "alert",
+            "variant": "destructive",
+            "title": "Taxability Example (Surrender in Year 3):",
+            "text": "Suppose you paid a premium of ₹50,000 each year and claimed a ₹50,000 deduction under 80C for two years. If you surrender in the 3rd year, the surrender amount may be added to your income. Additionally, the ₹1,00,000 you claimed as a deduction would be added back to your taxable income for the year of surrender."
         }
       ]
     },
@@ -129,7 +126,7 @@
         }
       ]
     },
-     {
+    {
       "id": "pros-cons",
       "icon": "GitCompareArrows",
       "title": "Pros and Cons of Surrendering an LIC Policy",
@@ -150,7 +147,7 @@
       ]
     },
     {
-      "id": "paid-up-vs-surrender",
+      "id": "surrender-vs-paidup",
       "icon": "GitCompareArrows",
       "title": "LIC Surrender Value vs. Paid-Up Value",
       "content": [
@@ -189,7 +186,8 @@
           "items": [
             "<strong>Make the Policy Paid-Up:</strong> If you can no longer afford premiums, stop paying after 2-3 years. The policy continues with a reduced sum assured. This is often better than outright surrender if you don't urgently need cash.",
             "<strong>Take a Policy Loan from LIC:</strong> For short-term needs, you can borrow against your policy’s surrender value. This provides liquidity without terminating your life cover.",
-            "<strong>Switch to a Term Plan + Invest Difference:</strong> If low returns are the issue, a better strategy is to buy a pure term insurance plan for adequate cover and invest the premium difference in higher-return instruments like mutual funds. This often yields better long-term results.<br>👉 <strong><a href='/en/term-insurance' class='text-primary font-bold hover:underline'>Compare Term Insurance Plans with ₹1 Cr cover for low premiums</a></strong>"
+            "<strong>Switch to a Term Plan + Invest Difference:</strong> If low returns are the issue, a better strategy is to buy a pure term insurance plan for adequate cover and invest the premium difference in higher-return instruments like mutual funds. This often yields better long-term results.<br>👉 <strong><a href='/en/term-insurance' class='text-primary font-bold hover:underline'>Compare Term Insurance Plans with ₹1 Cr cover for low premiums</a></strong>",
+            "<strong>Continue or Partial Surrender:</strong> If it’s a money-back or ULIP, perhaps you can withdraw some bonus or use partial withdrawal options instead of full surrender (if applicable)."
           ]
         }
       ]
@@ -223,17 +221,18 @@
         {
           "type": "faq",
           "items": [
-            {"q": "How is the surrender value of an LIC policy calculated?","a": "The surrender value is the higher of the Guaranteed Surrender Value (GSV) or the Special Surrender Value (SSV). Our online calculator uses the standard LIC surrender value formula to give you an instant estimate."},
-            {"q": "How soon can I surrender my LIC policy (what is the minimum lock-in period)?","a": "Most LIC policies can be surrendered only after premiums have been paid for at least two to three full years. Before this period, the policy has no surrender value."},
-            {"q": "Is the surrender value of an LIC policy taxable?","a": "It's tax-free if surrendered after 5 years, as per Section 10(10D). If surrendered before 5 years, the payout may be taxed, and previous 80C deductions reversed. The 'LIC policy surrender income tax 5 years' rule is key."},
-            {"q": "What happens if I surrender my LIC policy early?","a": "The policy terminates, you receive the surrender amount (often less than total premiums paid), and you lose all life insurance coverage."},
-            {"q": "Do I get the bonus if I surrender the policy?","a": "Yes, a portion of the vested or accrued bonus is factored into the Special Surrender Value (SSV)."},
-            {"q": "Can I surrender my LIC policy online?","a": "Currently, LIC requires an offline process for policy surrender; you must visit the servicing branch. You cannot fully surrender an LIC policy online, but you can download the required forms."},
-            {"q": "What documents are required to surrender an LIC policy?","a": "You will need: the original policy bond, a filled Surrender Form (No. 5074), copy of your PAN and Aadhaar, and a cancelled cheque for your bank details."},
-            {"q": "How long does it take to get the surrender value after applying?","a": "Typically, the amount is credited to your bank account via NEFT within 7-10 working days after the request is processed and approved."},
-            {"q": "Can I revive a policy after surrendering it?","a": "No, a surrendered policy is permanently terminated and cannot be reinstated. The decision is final."},
-            {"q": "Should I surrender or make my LIC policy paid-up instead?","a": "If you don’t need immediate cash, making the policy paid-up is often a wiser choice as it keeps some insurance cover. Surrender is suitable only for urgent cash needs, as the 'surrender value vs paid-up value' comparison almost always favors the latter in the long run."},
-            {"q": "Does a term insurance plan have a surrender value?","a": "Pure term insurance plans do not have a surrender value, as premiums go purely towards risk cover. You get nothing back if you cancel a term plan."}
+            {"q": "How do I calculate the surrender value of my LIC policy?","a": "The surrender value is the higher of the Guaranteed (GSV) or Special Surrender Value (SSV), calculated based on premiums paid and policy duration. Use our online calculator above for an instant, accurate estimate."},
+            {"q": "After how many years can I surrender an LIC policy?","a": "Most LIC policies can be surrendered only after premiums have been paid for at least two to three full years. Before this, the policy has no surrender value. Some single-premium plans can be surrendered sooner."},
+            {"q": "Is the surrender value of an LIC policy taxable?","a": "The payout is generally tax-free under Section 10(10D) if surrendered after 5 years. If surrendered before 5 years, the amount can become taxable, and any 80C deductions you've claimed may be reversed."},
+            {"q": "How much money will I get if I surrender my LIC policy?","a": "The amount is a percentage of total premiums paid, increasing over time (e.g., ~30% after 3 years). Our calculator provides a precise estimate based on your specific policy details."},
+            {"q": "What is the difference between guaranteed and special surrender value?","a": "GSV is the minimum guaranteed amount based on premiums paid. SSV is a usually higher, non-guaranteed value that includes a portion of vested bonuses. LIC pays whichever amount is higher."},
+            {"q": "Should I surrender my LIC policy or make it paid-up?","a": "If you don't need cash urgently, making the policy paid-up is often better as it retains some insurance cover. Surrender is best only for immediate fund requirements, as the payout is a financial loss."},
+            {"q": "Can I surrender my LIC policy online?","a": "No, as of now, a full surrender requires a physical visit to your LIC servicing branch with the necessary documents. You can, however, often download the required forms online."},
+            {"q": "What documents are required to surrender an LIC policy?","a": "You will need the Original Policy Bond, a filled Surrender Form (No. 5074), your PAN card, Aadhaar card, and a cancelled cheque for your bank details."},
+            {"q": "How long does it take to receive the surrender value amount?","a": "After approval, it typically takes 5-10 working days for LIC to credit the surrender amount to your bank account via NEFT."},
+            {"q": "Can a surrendered LIC policy be reinstated or revived?","a": "No, once a policy is surrendered and the amount is paid out, it is permanently terminated and cannot be revived. You would need to purchase a new policy for coverage."},
+            {"q": "Do term insurance policies have surrender value?","a": "No, pure term insurance plans generally do not have any surrender value. Since premiums are for risk cover only, you get nothing back if you cancel the policy."},
+            {"q": "Will I get the bonus if I surrender the policy?","a": "A portion of any accrued bonuses is factored into the Special Surrender Value (SSV). So, if your policy is eligible for SSV, you will receive a part of the vested bonus. Loyalty additions, however, are usually forfeited."}
           ]
         }
       ]
