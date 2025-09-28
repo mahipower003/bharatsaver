@@ -59,7 +59,7 @@ export function LicSurrenderValueCalculator({ dictionary }: { dictionary: any })
       premiumMode: 'Yearly',
       basePremium: 42000,
       premiumsPaidCount: 5,
-      vestedBonus: 225000,
+      vestedBonus: 0,
       loanPrincipal: 0,
       loanInterestRate: 9,
       policyStartDate: new Date(new Date().setFullYear(new Date().getFullYear() - 5)),
@@ -75,7 +75,12 @@ export function LicSurrenderValueCalculator({ dictionary }: { dictionary: any })
     
     const paymentsPerYear = { 'Yearly': 1, 'Half-yearly': 2, 'Quarterly': 4, 'Monthly': 12, 'Single': 1 };
     const totalPremiumsPaid = values.basePremium * values.premiumsPaidCount;
-    const yearsPaid = values.premiumsPaidCount / paymentsPerYear[values.premiumMode];
+    
+    let yearsPaid = values.premiumsPaidCount / paymentsPerYear[values.premiumMode];
+    if (values.policyStartDate && values.surrenderDate) {
+        yearsPaid = Math.floor((values.surrenderDate.getTime() - values.policyStartDate.getTime()) / (1000 * 60 * 60 * 24 * 365.25));
+    }
+
 
     if (yearsPaid < 2) {
         form.setError("premiumsPaidCount", { message: "Policy acquires surrender value only after 2 full years of premium payment." });
@@ -161,8 +166,10 @@ export function LicSurrenderValueCalculator({ dictionary }: { dictionary: any })
                 <FormField control={form.control} name="basePremium" render={({ field }) => (<FormItem><FormLabel>Base Premium per Mode (₹)</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
                 <FormField control={form.control} name="premiumsPaidCount" render={({ field }) => (<FormItem><FormLabel>No. of Full Premiums Paid</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
                 <FormField control={form.control} name="policyStartDate" render={({ field }) => (<FormItem className="flex flex-col"><FormLabel>Policy Start Date</FormLabel><Popover><PopoverTrigger asChild><FormControl><Button variant={"outline"} className={cn("pl-3 text-left font-normal", !field.value && "text-muted-foreground")}>{field.value ? format(field.value, "PPP") : <span>Pick a date</span>}<CalendarIcon className="ml-auto h-4 w-4 opacity-50" /></Button></FormControl></PopoverTrigger><PopoverContent className="w-auto p-0" align="start"><Calendar mode="single" selected={field.value} onSelect={field.onChange} captionLayout="dropdown-buttons" fromYear={1980} toYear={new Date().getFullYear()} /></PopoverContent></Popover><FormMessage /></FormItem>)} />
+                <FormField control={form.control} name="surrenderDate" render={({ field }) => (<FormItem className="flex flex-col"><FormLabel>Surrender Date</FormLabel><Popover><PopoverTrigger asChild><FormControl><Button variant={"outline"} className={cn("pl-3 text-left font-normal", !field.value && "text-muted-foreground")}>{field.value ? format(field.value, "PPP") : <span>Pick a date</span>}<CalendarIcon className="ml-auto h-4 w-4 opacity-50" /></Button></FormControl></PopoverTrigger><PopoverContent className="w-auto p-0" align="start"><Calendar mode="single" selected={field.value} onSelect={field.onChange} initialFocus /></PopoverContent></Popover><FormMessage /></FormItem>)} />
                 <FormField control={form.control} name="vestedBonus" render={({ field }) => (<FormItem><FormLabel>Total Vested Bonuses (₹)</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
                 <FormField control={form.control} name="loanPrincipal" render={({ field }) => (<FormItem><FormLabel>Outstanding Policy Loan (₹)</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
+                <FormField control={form.control} name="loanInterestRate" render={({ field }) => (<FormItem><FormLabel>Loan Interest Rate (% p.a.)</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
               </div>
               <Button type="submit" disabled={isLoading} className="w-full sm:w-auto">
                 {isLoading ? <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> {dictionary.calculating}</> : dictionary.calculate_button}
@@ -210,3 +217,4 @@ export function LicSurrenderValueCalculator({ dictionary }: { dictionary: any })
   );
 }
 
+    
