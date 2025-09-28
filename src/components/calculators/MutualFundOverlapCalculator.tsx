@@ -157,7 +157,7 @@ export function MutualFundOverlapCalculator({ dictionary }: MutualFundOverlapCal
                 </Button>
               </CardHeader>
               <CardContent className="p-4 text-sm text-muted-foreground">
-                {fund.constituents?.length > 0 ? `${fund.constituents.length} holdings loaded.` : 'No holdings data found.'}
+                {(fund.constituents?.length ?? 0) > 0 ? `${fund.constituents?.length ?? 0} holdings loaded.` : 'No holdings data found.'}
                 {overlapResult?.per_fund[fund.fund_name] && (
                     <div className="flex items-center text-xs mt-2">
                       <Info className="h-3 w-3 mr-1.5" />

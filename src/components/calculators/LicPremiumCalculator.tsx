@@ -11,7 +11,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import type { Dictionary } from '@/types';
+import type { Dictionary } from '@/lib/types';
 import { licPlans } from '@/data/lic-plans';
 
 const formSchema = z.object({
@@ -102,7 +102,7 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
                           </FormControl>
                           <SelectContent>
                             {Object.entries(dictionary.tool.categories).map(([key, value]) => (
-                              <SelectItem key={key} value={key}>{value}</SelectItem>
+                              <SelectItem key={key} value={key}>{value as React.ReactNode}</SelectItem>
                             ))}
                           </SelectContent>
                         </Select>
@@ -124,7 +124,7 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
                             </FormControl>
                             <SelectContent>
                               {subCategories.map(([key, value]) => (
-                                <SelectItem key={key} value={key}>{value}</SelectItem>
+                                <SelectItem key={key} value={key}>{value as React.ReactNode}</SelectItem>
                               ))}
                             </SelectContent>
                           </Select>
@@ -147,7 +147,7 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
                           </FormControl>
                           <SelectContent>
                              {plans.map(([key, value]) => (
-                                <SelectItem key={key} value={key}>{value}</SelectItem>
+                                <SelectItem key={key} value={key}>{value as React.ReactNode}</SelectItem>
                               ))}
                           </SelectContent>
                         </Select>

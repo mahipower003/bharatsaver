@@ -13,23 +13,10 @@ import {
   Filter,
   ShieldCheck,
   Calculator,
-  type LucideIcon,
 } from 'lucide-react';
 import type { Calculator as CalculatorType } from '@/lib/types';
 
-export type Calculator = {
-  slug: string;
-  title: string;
-  description: string;
-  summary: string;
-  icon: LucideIcon;
-  link_text: string;
-  lastModified: string;
-  image: string;
-};
-
-
-export const calculators: Calculator[] = [
+export const calculators: CalculatorType[] = [
   {
     slug: 'lic-premium-calculator',
     title: 'LIC Premium Calculator',

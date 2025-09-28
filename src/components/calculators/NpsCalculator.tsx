@@ -17,7 +17,7 @@ import { Slider } from '@/components/ui/slider';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { type ChartConfig } from '@/components/ui/chart';
-import type { Dictionary } from '@/types';
+import type { Dictionary } from '@/lib/types';
 import { RadioGroup, RadioGroupItem } from '../ui/radio-group';
 
 const formSchema = z.object({
@@ -101,8 +101,10 @@ export function NpsCalculator({ dictionary }: NpsCalculatorProps) {
   useEffect(() => {
     const params = new URLSearchParams(searchParams.toString());
     const values: Partial<NpsFormValues> = {};
+    const mode = params.get('mode');
+    
     if (params.get('contribution')) values.contribution = Number(params.get('contribution'));
-    if (params.get('mode') === 'monthly' || params.get('mode') === 'yearly') values.contributionMode = params.get('mode');
+    if (mode === 'monthly' || mode === 'yearly') values.contributionMode = mode;
     if (params.get('age')) values.currentAge = Number(params.get('age'));
     if (params.get('retire')) values.retirementAge = Number(params.get('retire'));
     if (params.get('returns')) values.expectedReturns = Number(params.get('returns'));
@@ -110,7 +112,7 @@ export function NpsCalculator({ dictionary }: NpsCalculatorProps) {
     if (params.get('annuityRate')) values.annuityRate = Number(params.get('annuityRate'));
     
     if (Object.keys(values).length > 0) {
-      form.reset(values);
+      form.reset(values as NpsFormValues);
       handleSubmit(values as NpsFormValues);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -487,7 +489,3 @@ export function NpsCalculator({ dictionary }: NpsCalculatorProps) {
     </>
   );
 }
-
-    
-
-    

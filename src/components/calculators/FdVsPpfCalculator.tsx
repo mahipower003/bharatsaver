@@ -14,7 +14,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import type { Dictionary } from '@/types';
+import type { Dictionary } from '@/lib/types';
 import { type ChartConfig } from '@/components/ui/chart';
 import { Alert, AlertDescription, AlertTitle } from '../ui/alert';
 
@@ -77,7 +77,7 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
     if (params.get('tax')) values.taxBracket = Number(params.get('tax'));
 
     if (Object.keys(values).length > 0) {
-      form.reset(values);
+      form.reset(values as FormValues);
       handleSubmit(values as FormValues);
     }
      // eslint-disable-next-line react-hooks/exhaustive-deps
