@@ -8,12 +8,13 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue, SelectGroup } from '@/components/ui/select';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Loader2, AlertTriangle, CalculatorIcon, Download, Printer, Twitter, Link as LinkIcon, Mail } from 'lucide-react';
 import { useLicSurrenderCalculator } from '@/hooks/use-lic-surrender-calculator';
 import type { LicSurrenderFormValues } from '@/hooks/use-lic-surrender-calculator';
 import { useToast } from '@/hooks/use-toast';
+import { licPlans } from '@/data/lic-plans';
 
 const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52s-.669-1.611-.916-2.207c-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" /></svg>
@@ -37,7 +38,7 @@ export function LicSurrenderValueCalculator({ dictionary }: { dictionary: any })
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      plan: 'new-jeevan-anand',
+      plan: '715',
       basicSumAssured: 1000000,
       policyTerm: 20,
       premiumsPaid: 5,
@@ -117,16 +118,23 @@ export function LicSurrenderValueCalculator({ dictionary }: { dictionary: any })
                  <FormField control={form.control} name="plan" render={({ field }) => (
                     <FormItem>
                       <FormLabel>{toolDict.plan_label}</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
-                        <FormControl><SelectTrigger><SelectValue /></SelectTrigger></FormControl>
-                        <SelectContent>
-                          <SelectItem value="new-jeevan-anand">{toolDict.plans.new_jeevan_anand}</SelectItem>
-                          <SelectItem value="jeevan-labh">{toolDict.plans.jeevan_labh}</SelectItem>
-                          <SelectItem value="new-endowment">{toolDict.plans.new_endowment}</SelectItem>
-                          <SelectItem value="jeevan-utsav">{toolDict.plans.jeevan_utsav}</SelectItem>
-                          <SelectItem value="jeevan-umang">{toolDict.plans.jeevan_umang}</SelectItem>
-                        </SelectContent>
-                      </Select>
+                        <Select onValueChange={field.onChange} defaultValue={field.value}>
+                            <FormControl>
+                                <SelectTrigger>
+                                    <SelectValue placeholder="Select an LIC Plan" />
+                                </SelectTrigger>
+                            </FormControl>
+                            <SelectContent>
+                                {licPlans.map((group) => (
+                                    <SelectGroup key={group.label}>
+                                        <h3 className="pl-8 pr-2 py-1.5 text-sm font-semibold text-muted-foreground">{group.label}</h3>
+                                        {group.plans.map(plan => (
+                                            <SelectItem key={plan.value} value={plan.value}>{plan.label}</SelectItem>
+                                        ))}
+                                    </SelectGroup>
+                                ))}
+                            </SelectContent>
+                        </Select>
                       <FormMessage />
                     </FormItem>
                   )} />
@@ -196,5 +204,3 @@ export function LicSurrenderValueCalculator({ dictionary }: { dictionary: any })
     </>
   );
 }
-
-    

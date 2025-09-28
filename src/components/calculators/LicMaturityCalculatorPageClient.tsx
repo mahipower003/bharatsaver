@@ -1,126 +1,34 @@
 
 'use client';
 
-import { LicMaturityCalculator } from "@/components/calculators/LicMaturityCalculator";
 import { AuthorCard } from "@/components/layout/AuthorCard";
 import type { Dictionary } from "@/lib/types";
 import type { Locale } from "@/lib/i18n-config";
 import { FooterCta } from "@/components/layout/FooterCta";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { HelpCircle, SlidersHorizontal, StepForward, BarChart2, TrendingUp, FileText, GitCompareArrows, BookUser, Star, CheckCircle, ShieldCheck, Calculator, Table as TableIcon, Link as LinkIcon } from "lucide-react";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { AlertTriangle, BarChart2, BookOpen, CheckCircle, FileText, GitCompareArrows, HelpCircle, TrendingUp } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { ResponsiveContainer, BarChart, XAxis, YAxis, Tooltip, Bar } from 'recharts';
+import Link from "next/link";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { LicSurrenderValueCalculator } from "@/components/calculators/LicSurrenderValueCalculator";
 
 function getIcon(iconName: string) {
     switch (iconName) {
-        case 'HelpCircle': return HelpCircle;
-        case 'SlidersHorizontal': return SlidersHorizontal;
-        case 'StepForward': return StepForward;
-        case 'BarChart2': return BarChart2;
-        case 'TrendingUp': return TrendingUp;
         case 'FileText': return FileText;
-        case 'GitCompareArrows': return GitCompareArrows;
-        case 'BookUser': return BookUser;
+        case 'HelpCircle': return HelpCircle;
+        case 'TrendingUp': return TrendingUp;
+        case 'BarChart2': return BarChart2;
         case 'CheckCircle': return CheckCircle;
-        case 'ShieldCheck': return ShieldCheck;
-        case 'Calculator': return Calculator;
-        case 'TableIcon': return TableIcon;
-        case 'LinkIcon': return LinkIcon;
-        default: return Star;
+        case 'GitCompareArrows': return GitCompareArrows;
+        case 'BookOpen': return BookOpen;
+        default: return AlertTriangle;
     }
 }
 
-const ContentRenderer = ({ content, lang }: { content: any[], lang: Locale }) => {
-  return (
-    <div className="space-y-4">
-      {content.map((item, idx) => {
-        switch (item.type) {
-          case 'paragraph':
-            return <div key={idx} className="prose dark:prose-invert max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: item.text.replace(/{lang}/g, lang) }} />;
-          case 'list':
-            return (
-              <ul key={idx} className="list-disc pl-5 space-y-2 text-muted-foreground">
-                {item.items.map((li: string, liIdx: number) => <li key={liIdx} dangerouslySetInnerHTML={{ __html: li.replace(/{lang}/g, lang) }} />)}
-              </ul>
-            );
-          case 'table':
-            return (
-              <div key={idx} className="overflow-x-auto">
-                <Table>
-                  {item.headers && <TableHeader><TableRow>{item.headers.map((header: string, hIdx: number) => <TableHead key={hIdx}>{header}</TableHead>)}</TableRow></TableHeader>}
-                  <TableBody>
-                    {item.rows.map((row: string[], rIdx: number) => (
-                      <TableRow key={rIdx}>
-                        {row.map((cell: string, cIdx: number) => <TableCell key={cIdx} dangerouslySetInnerHTML={{ __html: cell.replace(/{lang}/g, lang) }} />)}
-                      </TableRow>
-                    ))}
-                  </TableBody>
-                </Table>
-                {item.footer && <p className="text-xs text-muted-foreground mt-2 italic" dangerouslySetInnerHTML={{ __html: item.footer }} />}
-              </div>
-            );
-          case 'bar_chart':
-            return (
-              <div key={idx} className="h-64 w-full mt-4">
-                  <ResponsiveContainer>
-                      <BarChart data={item.data}>
-                          <XAxis dataKey="name" tick={{ fontSize: 12 }} />
-                          <YAxis />
-                          <Tooltip contentStyle={{ borderRadius: "var(--radius)", background: "hsl(var(--background))" }} />
-                          <Bar dataKey="value" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
-                      </BarChart>
-                  </ResponsiveContainer>
-              </div>
-            );
-          case 'alert':
-            return (
-              <Alert key={idx} variant={item.variant || 'default'}>
-                {item.title && <AlertTitle>{item.title}</AlertTitle>}
-                <AlertDescription dangerouslySetInnerHTML={{ __html: item.text }} />
-              </Alert>
-            );
-          case 'formula':
-            return <p key={idx} className="font-mono bg-muted p-4 rounded-md my-4 text-center" dangerouslySetInnerHTML={{ __html: item.text }} />;
-           case 'faq':
-            return (
-              <Accordion key={idx} type="single" collapsible className="w-full">
-                {item.items.map((faq: {q: string, a: string}, qIdx: number) => (
-                    <AccordionItem key={qIdx} value={`item-${qIdx}`}>
-                        <AccordionTrigger>{faq.q}</AccordionTrigger>
-                        <AccordionContent><p dangerouslySetInnerHTML={{__html: faq.a}} /></AccordionContent>
-                    </AccordionItem>
-                ))}
-              </Accordion>
-            );
-            case 'card_link':
-              const CardIcon = getIcon(item.icon);
-              return (
-                  <Link key={idx} href={item.href.replace('{lang}', lang)} className="group block">
-                      <Card className="hover:shadow-md hover:border-primary/30 transition-all">
-                          <CardHeader className="flex flex-row items-center gap-4">
-                              <CardIcon className="h-8 w-8 text-primary" />
-                              <div>
-                                  <CardTitle className="text-lg">{item.title}</CardTitle>
-                                  <p className="text-sm text-muted-foreground mt-1">{item.description}</p>
-                              </div>
-                          </CardHeader>
-                      </Card>
-                  </Link>
-              );
-          default:
-            return null;
-        }
-      })}
-    </div>
-  );
-};
-
-
-export default function LicMaturityCalculatorPageClient({
+export default function LicSurrenderValueCalculatorPageClient({
   params,
   dictionary,
   pageDict,
@@ -131,7 +39,7 @@ export default function LicMaturityCalculatorPageClient({
 }) {
 
   const siteUrl = 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/${params.lang}/lic-maturity-calculator`;
+  const pageUrl = `${siteUrl}/${params.lang}/lic-surrender-value-calculator`;
   
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -139,46 +47,74 @@ export default function LicMaturityCalculatorPageClient({
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${params.lang}` },
       { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${params.lang}/calculators` },
-      { '@type': 'ListItem', position: 3, name: 'LIC Maturity Calculator', item: pageUrl },
+      { '@type': 'ListItem', position: 3, name: 'LIC Surrender Value Calculator', item: pageUrl },
     ],
   };
 
-  const ArticleContent = () => (
-    <div className="mt-12 space-y-8">
-      {pageDict.sections.map((section: any, index: number) => {
-        const Icon = getIcon(section.icon);
-        return (
-          <Card key={index} id={section.id} className="shadow-lg">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-3">
-                <Icon className="h-8 w-8 text-primary" />
-                <h2 className="text-2xl font-bold">{section.title}</h2>
-              </CardTitle>
-              {section.description && <CardDescription dangerouslySetInnerHTML={{ __html: section.description }} />}
-            </CardHeader>
-            <CardContent>
-              <ContentRenderer content={section.content} lang={params.lang} />
-            </CardContent>
-          </Card>
-        );
-      })}
-    </div>
-  );
-  
   return (
     <div className="py-12">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <div className="mx-auto max-w-5xl">
         <header className="text-center mb-8">
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{__html: pageDict.h1}} />
-            {pageDict.top_cta && <p className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.top_cta.replace('{calculator-widget}', '#calculator-widget') }}></p>}
+            {pageDict.description && <div className="mt-4 text-lg text-muted-foreground prose dark:prose-invert max-w-none mx-auto" dangerouslySetInnerHTML={{ __html: pageDict.description }} />}
         </header>
-        
-        <div id="calculator-widget">
-          <LicMaturityCalculator dictionary={pageDict.tool} />
-        </div>
 
-        <ArticleContent />
+        <div id="calculator-widget">
+            <LicSurrenderValueCalculator dictionary={pageDict} />
+        </div>
+        
+        <div className="mt-12 space-y-8">
+          {pageDict.sections.map((section: any, index: number) => {
+            const Icon = getIcon(section.icon);
+            return (
+              <Card key={index} id={section.id} className="shadow-lg">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-3">
+                    <Icon className="h-8 w-8 text-primary" />
+                    <h2 className="text-2xl font-bold">{section.title}</h2>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    {section.content.map((item: any, idx: number) => {
+                      switch(item.type) {
+                        case 'paragraph':
+                           return <div key={idx} className="prose dark:prose-invert max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: item.text }} />;
+                        case 'list':
+                           return <ul key={idx} className="list-disc pl-5 space-y-2 text-muted-foreground">
+                                {item.items.map((li: string, liIdx: number) => <li key={liIdx} dangerouslySetInnerHTML={{ __html: li }} />)}
+                              </ul>;
+                        case 'table':
+                            return <div key={idx} className="overflow-x-auto">
+                                <Table><TableHeader><TableRow>{item.headers.map((h: string) => <TableHead key={h}>{h}</TableHead>)}</TableRow></TableHeader>
+                                <TableBody>{item.rows.map((row: string[], rIdx: number) => <TableRow key={rIdx}>{row.map((cell:string, cIdx:number) => <TableCell key={cIdx} dangerouslySetInnerHTML={{__html: cell}} />)}</TableRow>)}</TableBody>
+                                </Table></div>;
+                        case 'alert':
+                            return <Alert key={idx} variant={item.variant || 'default'}><AlertTriangle className="h-4 w-4" /><AlertTitle>{item.title}</AlertTitle><AlertDescription dangerouslySetInnerHTML={{ __html: item.text }} /></Alert>;
+                        case 'faq':
+                             return <Accordion key={idx} type="single" collapsible className="w-full">
+                                {item.items.map((faq: {q: string, a: string}, qIdx: number) => (
+                                    <AccordionItem key={qIdx} value={`item-${qIdx}`}>
+                                        <AccordionTrigger>{faq.q}</AccordionTrigger>
+                                        <AccordionContent><p dangerouslySetInnerHTML={{__html: faq.a}} /></AccordionContent>
+                                    </AccordionItem>
+                                ))}
+                              </Accordion>;
+                        case 'image':
+                            return <div key={idx} className="my-6"><Image src={item.src} alt={item.alt} width={800} height={450} className="rounded-lg border shadow-md mx-auto" /></div>
+                        case 'monetization_card':
+                            return <Card key={idx} className="bg-amber-100/50 dark:bg-amber-900/20 border-amber-400/50"><CardHeader><CardTitle className="text-amber-700 dark:text-amber-400 text-xl">{item.title}</CardTitle></CardHeader><CardContent><p className="text-muted-foreground mb-4">{item.body}</p><Button asChild><Link href={item.href} target="_blank" rel="noopener noreferrer sponsored">{item.cta}</Link></Button></CardContent></Card>
+                        default:
+                          return null;
+                      }
+                    })}
+                  </div>
+                </CardContent>
+              </Card>
+            );
+          })}
+        </div>
         
         <div className="mt-12">
             <AuthorCard dictionary={dictionary.author_card} />

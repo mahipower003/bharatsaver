@@ -12,6 +12,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import type { Dictionary } from '@/types';
+import { licPlans } from '@/data/lic-plans';
 
 const formSchema = z.object({
   productCategory: z.string().min(1, 'Please select a category'),
