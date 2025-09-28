@@ -18,8 +18,8 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/lic-policy-status-check`;
-  const title = "How to Check LIC Policy Status Online & Offline (SMS, Call, App, WhatsApp) – Step-by-Step Guide 2025";
-  const description = "Learn how to check your LIC policy status easily in 2025 – online via LIC portal, SMS, customer care, WhatsApp, and LIC mobile app. Step-by-step guide with numbers, codes, and FAQs. Stay updated on premium due dates, bonuses, and policy details.";
+  const title = "How to Check LIC Policy Status Online & Offline (2025 Guide)";
+  const description = "The ultimate guide on how to check your LIC policy status online, via SMS, WhatsApp, or the app. Perform an LIC status check by policy number in minutes. Stay updated on premiums, bonuses, and more.";
 
   const faqSchema = {
       "@context": "https://schema.org",
@@ -122,8 +122,8 @@ export default async function LicStatusPage({ params }: { params: { lang: Locale
                   priority
               />
                <div className="prose dark:prose-invert max-w-none text-muted-foreground">
-                <p>Many LIC policyholders forget to monitor their policy status routinely. This can lead to missed premium payments and even policy lapses, meaning loss of coverage and benefits. In fact, thousands of LIC policies lapse each year due to non-payment. The good news is that LIC now offers multiple convenient ways to check your policy status — without needing to visit a branch or agent as was necessary in the past. By checking your policy status, you can see details like next premium due date, policy term, maturity date, bonus accumulated, loan availability, and more. This empowers you to keep your policy active and plan your finances better.</p>
-                <p>In this comprehensive guide, we’ll cover all the methods to check your LIC policy status step-by-step. Whether you prefer using the online portal, mobile app, sending an SMS, calling customer care, or even using WhatsApp, we have you covered. Follow these SEO-optimized steps (in English with some regional language insights) to easily track your LIC policy details and ensure you never miss an important update.</p>
+                <p>Let's be honest, life gets busy. It's easy to forget to check in on our LIC policies. But here’s the thing I’ve learned after years in finance: a quick <strong>LIC policy status check</strong> isn't just a chore; it's one of the smartest financial habits you can build. It’s the difference between a policy that protects your family and one that accidentally lapses, leaving them vulnerable.</p>
+                <p>Thousands of policies lapse each year simply due to missed payments. The good news? The days of visiting a branch just to get an update are long gone. Now, whether you want to perform an <strong>LIC policy status check online</strong>, via SMS, or even on WhatsApp, you have multiple convenient options at your fingertips. In this guide, I'll walk you through exactly <strong>how to check LIC policy status</strong> using every method available, step-by-step. Let's make sure your hard-earned investment is working for you.</p>
               </div>
             </CardContent>
           </Card>
@@ -134,27 +134,26 @@ export default async function LicStatusPage({ params }: { params: { lang: Locale
             <Card>
                 <CardContent className="space-y-8 p-6">
                     <div>
-                        <h3 className="text-xl font-semibold flex items-center gap-2"><LogIn className="text-primary"/>Check Policy Status via LIC Portal – Registered Users (Login Method)</h3>
+                        <h3 className="text-xl font-semibold flex items-center gap-2"><LogIn className="text-primary"/>Check Policy Status via LIC Portal – Registered Users</h3>
                         <ol className="list-decimal pl-6 space-y-2 text-muted-foreground mt-4">
-                          <li>Visit the <ExternalLink href="https://licindia.in/">LIC India official website (licindia.in)</ExternalLink> and click on “Login to Customer Portal” (usually found on the homepage).</li>
-                          <li>Select “Registered User” and enter your LIC User ID and Password to sign in. (If you forgot your credentials, you can use the Forgot Password option.)</li>
-                          <li>Once logged in, navigate to the “Policy Status” section of the portal. You will see a list of your linked policies and their basic details.</li>
-                          <li>View policy details: Click on a policy number to view its status and details (e.g. next premium due date, policy term, sum assured, bonus accumulated, etc.). If you have multiple policies and some are not listed, use the “Enroll Policy” option to add them using the policy number.</li>
+                            <li>Visit the <ExternalLink href="https://licindia.in/">LIC India official website (licindia.in)</ExternalLink> and click on “Login to Customer Portal.”</li>
+                            <li>Select “Registered User” and enter your User ID and Password to sign in.</li>
+                            <li>Once logged in, navigate to the “Policy Status” section. You'll see a list of your linked policies.</li>
+                            <li>To perform a detailed <strong>lic status check by policy number</strong>, simply click on the policy you want to review. You'll see all its details: next premium due date, bonus accumulated, and more.</li>
                         </ol>
-                        <p className="pl-6 text-sm italic text-muted-foreground mt-2">Note: Ensure that you have your policy number handy when logging in. If a policy isn’t linked to your online account yet, you might need to add it via the “Enroll Policy” feature by entering the policy number and other details.</p>
                     </div>
                     <div>
-                        <h3 className="text-xl font-semibold flex items-center gap-2"><UserPlus className="text-primary"/>Check Policy Status via LIC Portal – New User Registration (Sign-Up Method)</h3>
+                        <h3 className="text-xl font-semibold flex items-center gap-2"><UserPlus className="text-primary"/>How to Register on the Portal for a New User</h3>
                         <ol className="list-decimal pl-6 space-y-2 text-muted-foreground mt-4">
-                          <li>Go to LIC’s official website and click “Login to Customer Portal”, then choose “New User / Sign Up” on the login page.</li>
-                          <li>Fill the registration form: Provide the required details, including your LIC policy number, installment premium amount, date of birth, mobile number, and email ID. Choose a unique User ID and password during this sign-up process.</li>
-                          <li>Verify your account: After submitting the form, LIC will send a verification link to your registered email (and/or an OTP to your phone). Click the email link (or enter the OTP) to activate your new LIC online account.</li>
-                          <li>Log in and add policies: Now log in with the User ID and password you created. Once logged in, you may need to enroll your policy by entering your policy number and other details to view it in the portal (follow the on-screen instructions). After adding your policy, you can click on “Policy Status” to see the status and details of your policy online.</li>
+                            <li>Go to LIC’s official website, click “Login to Customer Portal,” then choose “New User / Sign Up.”</li>
+                            <li>Fill out the registration form with your policy number, premium amount, date of birth, mobile number, and email ID.</li>
+                            <li>LIC will send a verification link to your email. Click it to activate your account.</li>
+                            <li>Log in and use the “Enroll Policy” feature to add your policies. After that, you can check your <strong>LIC policy status online</strong> anytime.</li>
                         </ol>
                          <Alert className="mt-4">
                             <Info className="h-4 w-4" />
-                            <AlertTitle>Pro Tip</AlertTitle>
-                            <AlertDescription>During registration, make sure the details you enter (policy number, premium amount, DOB, etc.) exactly match those on your policy documents. You’ll need an active mobile number and email to register (for verification and future alerts). Once registered, you can log in anytime to check premium due dates, policy statements, loan eligibility and even pay premiums or update contact information online.</AlertDescription>
+                            <AlertTitle>My Pro Tip</AlertTitle>
+                            <AlertDescription>When registering, make sure the details you enter match your policy documents exactly. An active mobile number and email are mandatory for verification and future alerts. Once you're in, you can do so much more than just check status—you can pay premiums, download statements, and even check loan eligibility.</AlertDescription>
                         </Alert>
                     </div>
                 </CardContent>
@@ -165,95 +164,78 @@ export default async function LicStatusPage({ params }: { params: { lang: Locale
             <h2 className="text-3xl font-bold font-headline text-center mb-6">How to Check LIC Policy Status Without Registration (Offline Methods)</h2>
             <Card>
                 <CardContent className="space-y-8 p-6">
-                    <p className="text-muted-foreground">Not comfortable with online registration? No worries. LIC has provided ways to check your policy status without logging in to the website. These offline methods are quick and handy, especially if you don’t have immediate internet access. You can use SMS, phone call (IVR/customer care), or WhatsApp to inquire about your policy. All you need is your policy number and a phone. Below, we explain each method step-by-step.</p>
+                    <p className="text-muted-foreground">Not comfortable with online portals? No problem at all. LIC has provided simple and effective ways for a quick <strong>LIC policy status check</strong> without ever logging in. All you need is your policy number and a phone.</p>
                     
                     <div>
-                        <h3 className="text-xl font-semibold flex items-center gap-2"><MessageSquare className="text-primary"/>Check LIC Policy Status by SMS (Text Message)</h3>
-                        <p className="mt-2 text-muted-foreground">One of the easiest ways to get your LIC policy status without any internet or login is through SMS. LIC has SMS short codes that allow you to retrieve policy information instantly. Follow these steps:</p>
+                        <h3 className="text-xl font-semibold flex items-center gap-2"><MessageSquare className="text-primary"/>How to Check LIC Policy Status by SMS</h3>
+                        <p className="mt-2 text-muted-foreground">This is one of the quickest offline methods. Just follow these steps:</p>
                         <ol className="list-decimal pl-6 space-y-2 text-muted-foreground mt-4">
-                            <li>Open the SMS app on your registered mobile phone.</li>
-                            <li>Type a message in the format: <code className="bg-muted p-1 rounded-md font-mono">LICHELP &lt;PolicyNumber&gt;</code> (e.g., if your policy number is 123456789, type LICHELP 123456789).</li>
-                            <li>Send the SMS to <code className="bg-muted p-1 rounded-md font-mono">9222492224</code> (LIC’s SMS helpline number). You can also use the alternate number 56767877 – both numbers work for LIC policy inquiries.</li>
-                            <li>Receive policy status: Within a few seconds, you will get an SMS reply from LIC with your policy status details. The reply typically includes information like the policy status (in-force or lapsed), next premium due date, premium amount, etc., for that policy.</li>
+                            <li>Open the SMS app on your mobile phone.</li>
+                            <li>Type a message in the format: <code className="bg-muted p-1 rounded-md font-mono">ASKLIC &lt;PolicyNumber&gt; STAT</code> (e.g., <code className="font-mono">ASKLIC 123456789 STAT</code>).</li>
+                            <li>Send this SMS to <code className="bg-muted p-1 rounded-md font-mono">9222492224</code>.</li>
+                            <li>You will receive an instant SMS reply with your policy status. For other details, you can use codes like PREMIUM, BONUS, or LOAN instead of STAT.</li>
                         </ol>
-                        <p className="mt-2 text-sm text-muted-foreground"><strong>Example:</strong> If your LIC policy number is 987654321, text <code className="font-mono">LICHELP 987654321</code> to <code className="font-mono">9222492224</code>. LIC will respond with a message such as: “Policy No. 987654321 is in force. Next premium due on 28/02/2026. Sum Assured: Rs X lakhs…”, or similar details.</p>
-                        <p className="mt-2 text-sm text-muted-foreground"><strong>Note:</strong> Make sure to send the SMS from the mobile number registered with your LIC policy, so that you receive the information promptly. If your number isn’t updated with LIC, you might not get a response or the details might be limited.</p>
-                        <p className="mt-4 text-sm text-muted-foreground"><strong>Additional SMS Enquiry Options:</strong> The simple LICHELP SMS gives you the basic status. LIC also supports specific SMS codes for detailed inquiries. For example, you can text <code className="font-mono">ASKLIC &lt;PolicyNumber&gt; PREMIUM</code> to get premium amount and payment frequency, <code className="font-mono">ASKLIC &lt;PolicyNumber&gt; BONUS</code> to know the bonus accrued, or <code className="font-mono">ASKLIC &lt;PolicyNumber&gt; LOAN</code> to check loan amount available on your policy. There are codes for other info like REVIVAL (revival amount if policy lapsed), NOM (nominee details), STAT (policy status) etc. For a quick policy status though, the LICHELP SMS to 9222492224 is the easiest to remember.</p>
                     </div>
                     
                     <div>
-                        <h3 className="text-xl font-semibold flex items-center gap-2"><Phone className="text-primary"/>Check LIC Policy Status by Calling Customer Care (IVR)</h3>
-                        <p className="mt-2 text-muted-foreground">Another convenient offline method is to call LIC’s customer care helpline and use their IVR (Interactive Voice Response) system. LIC’s phone helpline can provide policy details after verifying your identity. Here’s how to use the call method:</p>
+                        <h3 className="text-xl font-semibold flex items-center gap-2"><Phone className="text-primary"/>How to Check LIC Policy Status by Phone Call (IVR)</h3>
+                        <p className="mt-2 text-muted-foreground">You can also get your policy details through LIC’s automated phone service:</p>
                         <ol className="list-decimal pl-6 space-y-2 text-muted-foreground mt-4">
-                            <li>Dial the LIC Customer Care number <code className="bg-muted p-1 rounded-md font-mono">022-68276827</code> (prefix with +91 if calling from outside India). This is LIC’s centralized call center number for policy inquiries.</li>
-                            <li>Choose language and service: You will hear an automated menu. Select your preferred language (the service is available in English, Hindi, and 8 regional languages). Then choose the menu option for Policy Status or Policy Details (the IVR options will guide you – typically, you might press a number for “Policy information”).</li>
-                            <li>Enter policy details: When prompted, enter your policy number using the phone keypad (or you may be asked to speak to a customer service agent). You might also need to verify some personal details (like date of birth or name) to ensure security.</li>
-                            <li>Listen to your policy status: The IVR system will retrieve your policy information. You will hear details such as premium due date, unpaid premium (if any), policy tenure, next bonus due, etc. If you chose to speak with a customer care representative, they will ask for your policy number and perhaps some identification questions, then provide you the status verbally.</li>
+                            <li>Dial LIC’s integrated customer care number: <code className="bg-muted p-1 rounded-md font-mono">022-68276827</code>.</li>
+                            <li>Select your preferred language from the automated menu.</li>
+                            <li>Follow the IVR prompts for "Policy Information" and enter your policy number when asked.</li>
+                            <li>The system will read out your policy details, including the current <strong>LIC policy status</strong>.</li>
                         </ol>
-                        <p className="mt-4 text-sm text-muted-foreground"><strong>Helpline Availability:</strong> LIC’s IVRS helpline is available 24x7 for basic automated services. However, if you need to speak to an executive, live support is generally available Monday to Friday, 8:00 a.m. to 8:00 p.m. Support is offered in multiple languages (English, Hindi and several regional Indian languages) to cater to customers across India. If one number is busy, you can also try LIC’s zonal office lines or the toll-free number (if available in your region). But the 022-68276827 line is the primary nationwide helpline.</p>
-                        <p className="mt-2 text-sm text-muted-foreground"><strong>Tip:</strong> Have your policy number ready before calling, and ideally call from your registered phone number. This will speed up the process of retrieving your details. The automated system may also allow you to enter the last premium paid or date of birth for verification. Follow the IVR instructions carefully, and you’ll get your status in a minute or two.</p>
                     </div>
                     
                     <div>
-                        <h3 className="text-xl font-semibold flex items-center gap-2"><WhatsAppIcon className="text-primary h-6 w-6"/>Check LIC Policy Status via WhatsApp</h3>
+                        <h3 className="text-xl font-semibold flex items-center gap-2"><WhatsAppIcon className="text-primary h-6 w-6"/>How to Check LIC Policy Status via WhatsApp</h3>
                         <ol className="list-decimal pl-6 space-y-2 text-muted-foreground mt-4">
-                            <li>Save LIC’s WhatsApp number: Add the number <code className="bg-muted p-1 rounded-md font-mono">8976862090</code> to your contacts and name it “LIC WhatsApp” (this is LIC’s official WhatsApp helpline).</li>
-                            <li>Send “Hi” on WhatsApp: Open WhatsApp, find the LIC contact, and send a “Hi” message to start the conversation. LIC’s automated chatbot will respond with a greeting and a list of service options.</li>
-                            <li>Choose the “Policy Status” option: The WhatsApp menu will show various services (usually numbered). For example, it may list options like 1. Pay Premium, 2. Bonus Information, 3. Policy Status, 4. Loan Eligibility, etc. Reply by typing the number corresponding to “Policy Status” (in past menus it’s option 3, but confirm from the menu you receive).</li>
-                            <li>Get policy details: The chatbot will ask for your policy number (if not already linked to your WhatsApp). Provide the policy number in the chat. It might also ask for a bit of personal detail for verification (like date of birth). After you respond, the WhatsApp service will promptly reply with your policy status and details (similar info as you’d get via SMS or call: e.g. policy in-force/lapsed, next premium due date, premium amount, etc.). You can navigate through the menu for additional details or services as needed.</li>
+                            <li>Save LIC’s official WhatsApp number to your contacts: <code className="bg-muted p-1 rounded-md font-mono">8976862090</code>.</li>
+                            <li>Open WhatsApp and send a “Hi” message to this number.</li>
+                            <li>The LIC chatbot will respond with a list of services. Reply with the number corresponding to “Policy Status.”</li>
+                            <li>Provide your policy number when prompted to receive your details directly in the chat.</li>
                         </ol>
-                        <p className="mt-4 text-sm text-muted-foreground">This WhatsApp service is very convenient – it’s available 24/7 and you can use it on the go. Plus, you have a written record of the information in your WhatsApp chat for later reference. No registration is required to use the WhatsApp service beyond having your policy number and a WhatsApp-enabled phone. Just ensure the WhatsApp message comes from your registered mobile number (the one you’ve given to LIC) so that LIC can fetch your details securely.</p>
                     </div>
                 </CardContent>
             </Card>
         </section>
         
         <section id="mobile-app-method" className="mb-12">
-            <h2 className="text-3xl font-bold font-headline text-center mb-6">Check LIC Policy Status via LIC Mobile App (LIC Customer App)</h2>
+            <h2 className="text-3xl font-bold font-headline text-center mb-6">How to Use the LIC Policy Status App</h2>
             <Card>
                 <CardContent className="p-6 space-y-4">
-                    <p className="text-muted-foreground">LIC offers an official mobile application called “LIC Customer” (also referred to as the LIC Digital App) for policyholders. Using this app, you can manage your policies on your smartphone, including checking policy status, premium due dates, etc. Here’s how to use the app for policy status:</p>
+                    <p className="text-muted-foreground">For those who prefer managing everything on their smartphone, the official <strong>LIC policy status app</strong>, "LIC Customer," is incredibly useful. It's like having the customer portal in your pocket.</p>
                     <ol className="list-decimal pl-6 space-y-2 text-muted-foreground">
-                        <li><strong>Install the official app:</strong> Download the LIC Customer app from the Google Play Store (Android) or Apple App Store (iOS). Ensure it’s the official app by LIC of India to avoid fraudulent apps.</li>
-                        <li><strong>Register or Login:</strong> Open the app. If you are a new user, tap on “New User” or “Sign Up” and follow the prompts to register (you’ll need to enter your policy number, premium, DOB, etc.). If you already have an online LIC account, simply choose “Registered User”, and log in.</li>
-                        <li><strong>Link/Select your policy:</strong> After logging in, the app will show your linked policy or allow you to add/enroll a policy. Add your policy if not already listed by entering the policy number.</li>
-                        <li><strong>Check Policy Status:</strong> Once your policy is added, simply tap on your policy number in the app to view its status and details.</li>
+                        <li><strong>Install the App:</strong> Download “LIC Customer” from the Google Play Store or Apple App Store. Make sure it's the official app from "Life Insurance Corporation of India".</li>
+                        <li><strong>Register or Login:</strong> If you're a new user, sign up by entering your policy details. If you've already registered on the LIC portal, you can log in with the same credentials.</li>
+                        <li><strong>Check Status:</strong> Once logged in, simply tap on your enrolled policy to see all its details—status, premium due dates, accumulated bonus, and more, all on one dashboard.</li>
                     </ol>
-                    <p className="text-muted-foreground">Using the LIC Customer app is essentially like having the customer portal in your pocket. It’s secure and convenient, especially if you frequently manage your policies. The LIC Digital app allows you to not only check status but also get premium reminders, pay premiums online, and view policy statements.</p>
                     <Alert variant="destructive" className="mt-4">
                         <ShieldAlert className="h-4 w-4" />
-                        <AlertTitle>Security Tip</AlertTitle>
-                        <AlertDescription>When using the LIC app or website, never share your login credentials or OTPs with anyone. LIC will not call asking for your password or OTP. Always use the official LIC app or website (licindia.in) for checking your policy to avoid phishing scams.</AlertDescription>
+                        <AlertTitle>A Personal Security Tip</AlertTitle>
+                        <AlertDescription>I can't stress this enough: never share your login details or OTPs. LIC will never call you asking for your password. Always use the official website or app for any <strong>LIC policy status check online</strong> to avoid scams.</AlertDescription>
                     </Alert>
                 </CardContent>
             </Card>
         </section>
 
         <section id="benefits" className="mb-12">
-            <h2 className="text-3xl font-bold font-headline text-center mb-6">Benefits of Regularly Checking LIC Policy Status</h2>
+            <h2 className="text-3xl font-bold font-headline text-center mb-6">Benefits of Regularly Checking Your LIC Policy Status</h2>
             <Card>
               <CardContent className="p-6 space-y-4">
                 <div>
                   <h3 className="font-semibold text-lg">Avoid Missed Payments & Lapses</h3>
-                  <p className="text-muted-foreground mt-1">By checking your status, you’ll always know when the next premium is due, so you can pay on time. This prevents your policy from lapsing due to missed payments. You’ll also become aware if a payment was missed or if the grace period is about to end, allowing you to take quick action and keep the policy active.</p>
+                  <p className="text-muted-foreground mt-1">This is the big one. A quick check tells you the next premium due date, helping you avoid late fees and, more importantly, preventing your policy from lapsing. An active policy is the only one that protects your family.</p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg">Stay Informed of Policy Details</h3>
-                  <p className="text-muted-foreground mt-1">Regular checks let you verify important policy details such as the policy term, maturity date, sum assured, and bonus accumulated so far. Having these details handy helps in overall financial planning. For example, knowing the maturity date and expected payout can help you plan for that lump sum in the future.</p>
+                  <h3 className="font-semibold text-lg">Stay Updated on Bonuses & Loans</h3>
+                  <p className="text-muted-foreground mt-1">Is your policy eligible for a loan? How much bonus has it accumulated? A status check gives you a clear picture of your policy's financial health and the liquidity options available to you in an emergency.</p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg">Plan Financially (Loans/Bonus)</h3>
-                  <p className="text-muted-foreground mt-1">You can see if your policy has acquired a loan value or bonuses. Many LIC policies accrue bonuses and also allow loans against the policy. By checking status, you’ll know how much bonus has been added or if you’re eligible for a policy loan, which can be useful in emergencies. It basically gives a clear picture of your policy’s performance and value over time.</p>
+                  <h3 className="font-semibold text-lg">Verify Policy Details & Nominee Information</h3>
+                  <p className="text-muted-foreground mt-1">Life changes. People move, and contact details get updated. A regular check ensures your personal information and, crucially, your nominee details are correct. This simple step can save your family from immense hassle during a claim.</p>
                 </div>
-                <div>
-                  <h3 className="font-semibold text-lg">Ensure Information is Up-to-date</h3>
-                  <p className="text-muted-foreground mt-1">When you regularly view your policy details, you can ensure that your personal details (like nominee name, contact info) are correct in LIC’s records. If you spot any discrepancy (e.g., an incorrect nominee or address), you can get it corrected well before any claim or maturity payout. This avoids hassles for your family or nominees later and ensures a smooth claim process when the time comes.</p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg">Peace of Mind</h3>
-                  <p className="text-muted-foreground mt-1">Ultimately, staying updated with your policy status gives you peace of mind. You know your coverage is in-force, you’re aware of upcoming dues, and you understand the benefits accumulating. It keeps you in control of your investment and insurance protection, rather than leaving things to assumption.</p>
-                </div>
-                <p className="text-muted-foreground pt-4">In summary, a quick status check every now and then can save you from unpleasant surprises and help you maximize the benefits from your LIC policy.</p>
               </CardContent>
             </Card>
         </section>
@@ -262,40 +244,39 @@ export default async function LicStatusPage({ params }: { params: { lang: Locale
             <h2 className="text-3xl font-headline text-center mb-8">Frequently Asked Questions (FAQs)</h2>
             <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1">
-                    <AccordionTrigger>How can I check my LIC policy status by SMS?</AccordionTrigger>
-                    <AccordionContent>To check via SMS, simply send a text message in the format LICHELP &lt;PolicyNumber&gt; from your registered mobile number to 9222492224 (or 56767877). You will receive an SMS reply from LIC with the current status and details of your policy (e.g. next premium due date, policy status, etc.). This service does not require any online registration – it’s quick and works 24/7.</AccordionContent>
+                    <AccordionTrigger>How can I check my LIC policy status online?</AccordionTrigger>
+                    <AccordionContent>The easiest way to perform an <strong>LIC policy status check online</strong> is by registering on the LIC e-Services portal. Once registered, you can log in anytime to view all your policy details in one place.</AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
-                    <AccordionTrigger>What number should I call to inquire about my LIC policy status?</AccordionTrigger>
-                    <AccordionContent>You can call LIC’s customer care helpline at 📞 022-68276827 to check your policy status. The automated IVR service is available 24x7 (with live support from 8 a.m. to 8 p.m., Monday–Friday). Just follow the instructions and enter your policy number when prompted, and you’ll hear your policy details. Support is available in English, Hindi, and several regional languages for your convenience.</AccordionContent>
+                    <AccordionTrigger>How to check LIC policy status by SMS?</AccordionTrigger>
+                    <AccordionContent>To do an <strong>LIC policy status check by SMS</strong>, send a text in the format `ASKLIC &lt;YourPolicyNumber&gt; STAT` to `9222492224` from your registered mobile number. You will receive an instant SMS reply with your policy's current status.</AccordionContent>
                 </AccordionItem>
-                 <AccordionItem value="item-3">
-                    <AccordionTrigger>Do I need to register on the LIC portal to get my policy status via SMS or call?</AccordionTrigger>
-                    <AccordionContent>No. Registration on the LIC online portal is not required for checking status via SMS or phone call. The SMS and IVR methods work for all policyholders as long as you have your policy number and (for SMS) use the phone number that you’ve registered with LIC. These are meant to be “offline” alternatives, so even unregistered/new users can get their policy info easily.</AccordionContent>
+                <AccordionItem value="item-3">
+                    <AccordionTrigger>What is the number to call for LIC policy inquiries?</AccordionTrigger>
+                    <AccordionContent>You can call LIC’s centralized customer care helpline at `022-68276827`. The automated IVR service is available 24x7 for a quick <strong>LIC status check by policy number</strong>.</AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-4">
-                     <AccordionTrigger>In which languages is the LIC phone helpline service available?</AccordionTrigger>
-                     <AccordionContent>The LIC IVR phone service is offered in English, Hindi, and 8 regional Indian languages. When you call, you can select your preferred language (such as Marathi, Gujarati, Tamil, Bengali, etc.) from the menu. This ensures that policyholders across different states can get assistance in a language they are comfortable with.</AccordionContent>
+                     <AccordionTrigger>Do I need to register to check policy status offline?</AccordionTrigger>
+                     <AccordionContent>No, registration is not required for offline methods like SMS, phone call, or WhatsApp. These methods are designed to work for everyone, as long as you have your policy number handy.</AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-5">
-                    <AccordionTrigger>Is the LIC SMS service for policy status available 24/7?</AccordionTrigger>
-                    <AccordionContent>Yes, absolutely. You can send the SMS query anytime, 24x7 and you will receive an automatic reply with your policy information shortly after. The SMS helpline doesn’t depend on office hours. Keep in mind that if you don’t get a reply immediately, there might be a slight network delay, but generally the service is available round the clock.</AccordionContent>
+                    <AccordionTrigger>Can I check LIC policy status on WhatsApp?</AccordionTrigger>
+                    <AccordionContent>Yes, you can. Just save LIC's official WhatsApp number, `8976862090`, and send a "Hi" message to start the automated chat. It's a quick and convenient way to get updates.</AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-6">
-                    <AccordionTrigger>Is there an official LIC mobile app to check policy details?</AccordionTrigger>
-                    <AccordionContent>Yes, LIC offers an official app called the “LIC Customer” app (LIC Digital App) for Android and iOS. You can download this app and log in with your LIC online credentials (or register a new account). The app allows you to view your policy status, see premium due dates, pay premiums online, download policy statements, and even track claims – all from your mobile phone. It’s an authorized app by LIC, so it’s safe to use. Make sure you only download the genuine LIC app (developed by LIC of India) for security.</AccordionContent>
+                    <AccordionTrigger>Is the LIC Customer App safe to use?</AccordionTrigger>
+                    <AccordionContent>Yes, the "LIC Customer" app is the official <strong>LIC policy status app</strong>. It is secure to use, provided you download it from the official Google Play Store or Apple App Store. Always be wary of fake apps.</AccordionContent>
                 </AccordionItem>
-                <AccordionItem value="item-7">
-                    <AccordionTrigger>What information do I need handy to check my LIC policy status?</AccordionTrigger>
-                    <AccordionContent>For any of the methods, the most important piece of information is your LIC policy number. Whether you are logging into the portal/app, sending an SMS, or calling customer care, you will be asked for the policy number to retrieve the details. If using online methods (portal or app) as a new user, you’ll also need details like date of birth, registered mobile number, email, and policy premium amount during the one-time registration process. It’s a good practice to keep your policy bond or policy document handy, where all these details are listed, whenever you attempt to check your policy status.</AccordionContent>
+                 <AccordionItem value="item-7">
+                    <AccordionTrigger>What information do I need to check my policy status?</AccordionTrigger>
+                    <AccordionContent>For almost all methods, your <strong>policy number</strong> is the most critical piece of information. If you are registering online for the first time, you may also need details like your date of birth and the premium amount, which can be found on your policy document.</AccordionContent>
                 </AccordionItem>
             </Accordion>
         </section>
 
         <section id="conclusion" className="text-center">
             <h2 className="text-3xl font-headline mb-4">Conclusion: Stay Informed, Stay Protected</h2>
-            <p className="text-muted-foreground max-w-3xl mx-auto">Checking your LIC policy status is now easier than ever. You don’t need to visit an LIC branch or depend on an agent to know your policy details. With methods like the online portal login, SMS, phone call, WhatsApp, and the LIC mobile app, you can get up-to-date information on your policy within minutes. This not only helps you avoid missing premium payments and policy lapses, but also keeps you informed about your policy’s growth (bonus, loan value, etc.) over time.</p>
-            <p className="text-muted-foreground max-w-3xl mx-auto mt-4">By following the step-by-step guide above, you can confidently track your policy’s status anytime and ensure that your valuable insurance policy remains in force and continues to protect you and your family. Remember, an informed policyholder can make better financial decisions – so take advantage of these convenient LIC services to stay on top of your policy.</p>
+            <p className="text-muted-foreground max-w-3xl mx-auto">Staying on top of your LIC policy is easier today than ever before. It's no longer a chore but a simple, quick check-in that gives you control over your financial security. A regular <strong>LIC policy status</strong> update is a small habit that pays huge dividends in peace of mind. Use the steps I’ve outlined in this guide to stay informed and ensure the promises you've made to your family are always protected.</p>
         </section>
 
         <AuthorCard dictionary={dictionary.author_card} />
@@ -304,5 +285,3 @@ export default async function LicStatusPage({ params }: { params: { lang: Locale
     </div>
   );
 }
-
-    
