@@ -73,38 +73,66 @@ export function LicSurrenderValueCalculator({ dictionary }: { dictionary: any })
 
     await new Promise(resolve => setTimeout(resolve, 500));
     
-    const paymentsPerYear = { 'Yearly': 1, 'Half-yearly': 2, 'Quarterly': 4, 'Monthly': 12, 'Single': 1 };
+    // --- DERIVED VALUES ---
+    const paymentsPerYearMap = { 'Yearly': 1, 'Half-yearly': 2, 'Quarterly': 4, 'Monthly': 12, 'Single': 1 };
+    const paymentsPerYear = paymentsPerYearMap[values.premiumMode];
+    const totalPremiumsPayable = values.policyTerm * paymentsPerYear;
     const totalPremiumsPaid = values.basePremium * values.premiumsPaidCount;
-    
-    let yearsPaid = values.premiumsPaidCount / paymentsPerYear[values.premiumMode];
+
+    let policyYearCompleted = Math.floor(values.premiumsPaidCount / paymentsPerYear);
     if (values.policyStartDate && values.surrenderDate) {
-        yearsPaid = Math.floor((values.surrenderDate.getTime() - values.policyStartDate.getTime()) / (1000 * 60 * 60 * 24 * 365.25));
+        const diffInMs = values.surrenderDate.getTime() - values.policyStartDate.getTime();
+        policyYearCompleted = Math.floor(diffInMs / (1000 * 60 * 60 * 24 * 365.25));
     }
-
-
-    if (yearsPaid < 2) {
+    
+    if (policyYearCompleted < 2) {
         form.setError("premiumsPaidCount", { message: "Policy acquires surrender value only after 2 full years of premium payment." });
         setIsLoading(false);
         return;
     }
-    
-    const gsvFactorPremiums = yearsPaid <= 3 ? 0.3 : yearsPaid <= 7 ? 0.5 : Math.min(0.9, 0.5 + (yearsPaid - 7) * (0.4 / (values.policyTerm - 8)));
-    const bonusSurrenderValueFactor = Math.min(0.2, (0.13 + (0.01 * yearsPaid)));
+
+    const paidupRatio = totalPremiumsPayable > 0 ? values.premiumsPaidCount / totalPremiumsPayable : 0;
+    const paidUpSumAssured = values.sumAssured * paidupRatio;
+
+    // --- GSV CALCULATION ---
+    // Using a simplified factor curve for demonstration as per spec. In a real scenario, this would be a matrix lookup.
+    const getGsvFactorPremiums = (year: number, term: number) => {
+        if (year < 2) return 0;
+        if (year === 2) return 0.30;
+        if (year === 3) return 0.35;
+        if (year >= 4 && year <= 7) return 0.50;
+        // Linear interpolation for years > 7 up to 90% at term-2
+        const yearFraction = (year - 7) / (term - 2 - 7);
+        return Math.min(0.90, 0.50 + (0.40 * yearFraction));
+    };
+
+    const getBonusSvf = (year: number) => {
+        if (year < 4) return 0.15;
+        if (year === 4) return 0.16;
+        if (year === 5) return 0.17;
+        return Math.min(0.25, 0.17 + (year - 5) * 0.01); // Simplified growth
+    };
+
+    const gsvFactorPremiums = getGsvFactorPremiums(policyYearCompleted, values.policyTerm);
+    const bonusSurrenderValueFactor = getBonusSvf(policyYearCompleted);
 
     const gsvPremiums = totalPremiumsPaid * gsvFactorPremiums;
-    const gsvBonus = values.vestedBonus! * bonusSurrenderValueFactor;
+    const gsvBonus = (values.vestedBonus || 0) * bonusSurrenderValueFactor;
     const guaranteedSurrenderValue = gsvPremiums + gsvBonus;
 
-    const totalPremiumsPayable = values.policyTerm * paymentsPerYear[values.premiumMode];
-    const paidUpRatio = values.premiumsPaidCount / totalPremiumsPayable;
-    const paidUpSumAssured = values.sumAssured * paidUpRatio;
-    
-    const ssvFactor = 0.35 + (yearsPaid / values.policyTerm) * 0.55;
-    const specialSurrenderValue = Math.max(guaranteedSurrenderValue, (paidUpSumAssured + values.vestedBonus!) * ssvFactor);
+    // --- SSV (HEURISTIC) CALCULATION ---
+    const getSsvFactor = (year: number, term: number) => {
+        return Math.min(0.95, 0.35 + (year / term) * 0.60);
+    };
 
-    const accruedLoanInterest = values.loanPrincipal! * (values.loanInterestRate! / 100) * 1; // Assuming 1 year interest for simplicity
+    const ssvFactor = getSsvFactor(policyYearCompleted, values.policyTerm);
+    const specialSurrenderValue = Math.max(guaranteedSurrenderValue, (paidUpSumAssured + (values.vestedBonus || 0)) * ssvFactor);
+
+    // --- NET PAYOUT CALCULATION ---
+    const accruedLoanInterest = (values.loanPrincipal || 0) * ((values.loanInterestRate || 0) / 100); // Simplified to 1 year interest
+    const totalLoanAmount = (values.loanPrincipal || 0) + accruedLoanInterest;
     const grossSurrender = Math.max(guaranteedSurrenderValue, specialSurrenderValue);
-    const netPayout = Math.max(0, grossSurrender - values.loanPrincipal! - accruedLoanInterest);
+    const netPayout = Math.max(0, grossSurrender - totalLoanAmount);
 
     setResult({
       guaranteedSurrenderValue,
@@ -206,7 +234,7 @@ export function LicSurrenderValueCalculator({ dictionary }: { dictionary: any })
               <h3 className="text-lg font-semibold mb-2">Net Payout Calculation</h3>
                <div className="text-lg space-y-2">
                  <p className="flex justify-between"><span>Gross Surrender Value</span> <span className="font-semibold">{formatCurrency(result.specialSurrenderValue)}</span></p>
-                 <p className="flex justify-between"><span>(-) Outstanding Loan & Interest</span> <span className="font-semibold text-destructive">{formatCurrency(form.getValues().loanPrincipal! + (form.getValues().loanPrincipal! * (form.getValues().loanInterestRate!/100)))}</span></p>
+                 <p className="flex justify-between"><span>(-) Outstanding Loan & Interest</span> <span className="font-semibold text-destructive">{formatCurrency(form.getValues().loanPrincipal! + (form.getValues().loanPrincipal! * ((form.getValues().loanInterestRate || 0)/100)))}</span></p>
                  <p className="flex justify-between border-t pt-2 mt-2 font-bold text-xl"><span>Net Payout Amount</span> <span className="text-green-600">{formatCurrency(result.netPayout)}</span></p>
               </div>
             </div>
@@ -216,5 +244,3 @@ export function LicSurrenderValueCalculator({ dictionary }: { dictionary: any })
     </>
   );
 }
-
-    
