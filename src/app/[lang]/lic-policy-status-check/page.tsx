@@ -17,7 +17,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/${params.lang}/lic-policy-status-check`;
+  const pageUrl = `${siteUrl}/lic-policy-status-check`;
   const title = "How to Check LIC Policy Status Online & Offline (SMS, Call, App, WhatsApp) – Step-by-Step Guide 2025";
   const description = "Learn how to check your LIC policy status easily in 2025 – online via LIC portal, SMS, customer care, WhatsApp, and LIC mobile app. Step-by-step guide with numbers, codes, and FAQs. Stay updated on premium due dates, bonuses, and policy details.";
 
@@ -120,41 +120,43 @@ export default async function LicStatusPage({ params }: { params: { lang: Locale
                 data-ai-hint="LIC building"
                 priority
             />
-            <p className="mt-6 text-muted-foreground">Many LIC policyholders forget to monitor their policy status routinely. This can lead to missed premium payments and even policy lapses, meaning loss of coverage and benefits. The good news is that LIC now offers multiple convenient ways to check your policy status. In this guide, we’ll cover all the methods step-by-step.</p>
+            <p className="mt-6 text-muted-foreground">Many LIC policyholders forget to monitor their policy status routinely. This can lead to missed premium payments and even policy lapses, meaning loss of coverage and benefits. In fact, thousands of LIC policies lapse each year due to non-payment. The good news is that LIC now offers multiple convenient ways to check your policy status — without needing to visit a branch or agent as was necessary in the past. By checking your policy status, you can see details like next premium due date, policy term, maturity date, bonus accumulated, loan availability, and more. This empowers you to keep your policy active and plan your finances better.</p>
             <p className="mt-4 text-muted-foreground">In this comprehensive guide, we’ll cover all the methods to check your LIC policy status step-by-step. Whether you prefer using the online portal, mobile app, sending an SMS, calling customer care, or even using WhatsApp, we have you covered. Follow these SEO-optimized steps (in English with some regional language insights) to easily track your LIC policy details and ensure you never miss an important update.</p>
           </CardContent>
         </Card>
         
         {/* Online Methods */}
         <Card className="mb-12">
-            <CardHeader>
-                <CardTitle className="text-3xl font-headline">Check Status Online (LIC e-Services)</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-8">
+          <CardHeader>
+              <CardTitle className="text-3xl font-headline">Check LIC Policy Status Online via LIC e-Services Portal (Website)</CardTitle>
+              <CardDescription>LIC’s official website allows you to check your policy status and details online through the e-Services customer portal. If you already have an account (registered user) on LIC’s portal, you can log in and see all your policy details. If you’re a new user, you will need to complete a one-time registration first. Here are the steps for both:</CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-8">
+              <div className="space-y-4">
+                  <h3 className="text-xl font-semibold flex items-center gap-2"><LogIn className="text-primary"/> For Existing Registered Users (Login to Portal)</h3>
+                  <ol className="list-decimal pl-6 space-y-2 text-muted-foreground">
+                      <li>Visit the <ExternalLink href="https://licindia.in/">LIC India official website (licindia.in)</ExternalLink> and click on “Login to Customer Portal” (usually found on the homepage).</li>
+                      <li>Select “Registered User” and enter your LIC User ID and Password to sign in. (If you forgot your credentials, you can use the Forgot Password option.)</li>
+                      <li>Once logged in, navigate to the “Policy Status” section of the portal. You will see a list of your linked policies and their basic details.</li>
+                      <li>View policy details: Click on a policy number to view its status and details (e.g. next premium due date, policy term, sum assured, bonus accumulated, etc.). If you have multiple policies and some are not listed, use the “Enroll Policy” option to add them using the policy number.</li>
+                  </ol>
+                  <p className="text-sm italic text-muted-foreground pl-6">Note: Ensure that you have your policy number handy when logging in. If a policy isn’t linked to your online account yet, you might need to add it via the “Enroll Policy” feature by entering the policy number and other details.</p>
+              </div>
                 <div className="space-y-4">
-                    <h3 className="text-xl font-semibold flex items-center gap-2"><LogIn className="text-primary"/> For Existing Users</h3>
-                    <ol className="list-decimal pl-6 space-y-2 text-muted-foreground">
-                        <li>Visit the <ExternalLink href="https://licindia.in/">LIC India website</ExternalLink> and click on “Login to Customer Portal”.</li>
-                        <li>Select “Registered User” and sign in with your User ID and Password.</li>
-                        <li>Navigate to the “Policy Status” section to see your linked policies.</li>
-                        <li>Click on a policy number to view detailed information.</li>
-                    </ol>
-                </div>
-                 <div className="space-y-4">
-                    <h3 className="text-xl font-semibold flex items-center gap-2"><UserPlus className="text-primary"/> For New Users (One-Time Registration)</h3>
-                    <ol className="list-decimal pl-6 space-y-2 text-muted-foreground">
-                        <li>On the customer portal page, choose “New User / Sign Up”.</li>
-                        <li>Fill the registration form with your policy number, premium amount, DOB, and contact details.</li>
-                        <li>Verify your account via the link sent to your email or OTP on your phone.</li>
-                        <li>Log in and use the “Enroll Policy” feature to add your policies and view their status.</li>
-                    </ol>
-                </div>
-                 <Alert>
-                    <Info className="h-4 w-4" />
-                    <AlertTitle>Pro Tip</AlertTitle>
-                    <AlertDescription>Ensure your details match your policy documents exactly during registration. An active mobile number and email are mandatory.</AlertDescription>
-                </Alert>
-            </CardContent>
+                  <h3 className="text-xl font-semibold flex items-center gap-2"><UserPlus className="text-primary"/> For New Users (One-Time Registration on Portal)</h3>
+                  <ol className="list-decimal pl-6 space-y-2 text-muted-foreground">
+                      <li>Go to LIC’s official website and click “Login to Customer Portal”, then choose “New User / Sign Up” on the login page.</li>
+                      <li>Fill the registration form: Provide the required details, including your LIC policy number, installment premium amount, date of birth, mobile number, email ID, and other required info. Choose a unique User ID and password during this sign-up process.</li>
+                      <li>Verify your account: After submitting the form, LIC will send a verification link to your registered email (and/or an OTP to your phone). Click the email link (or enter the OTP) to activate your new LIC online account.</li>
+                      <li>Log in and add policies: Now log in with the User ID and password you created. Once logged in, you may need to enroll your policy by entering your policy number and other details to view it in the portal (follow the on-screen instructions). After adding your policy, you can click on “Policy Status” to see the status and details of your policy online.</li>
+                  </ol>
+              </div>
+                <Alert>
+                  <Info className="h-4 w-4" />
+                  <AlertTitle>Pro Tip</AlertTitle>
+                  <AlertDescription>During registration, make sure the details you enter (policy number, premium amount, DOB, etc.) exactly match those on your policy documents. You’ll need an active mobile number and email to register (for verification and future alerts). Once registered, you can log in anytime to check premium due dates, policy statements, loan eligibility and even pay premiums or update contact information online.</AlertDescription>
+              </Alert>
+          </CardContent>
         </Card>
 
         {/* Offline Methods */}
@@ -238,5 +240,3 @@ export default async function LicStatusPage({ params }: { params: { lang: Locale
     </div>
   );
 }
-
-    
