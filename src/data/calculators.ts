@@ -37,7 +37,7 @@ export const calculators: CalculatorType[] = [
     lastModified: '2024-10-05',
     image: '/images/lic-maturity-calculator.png'
   },
-   {
+  {
     slug: 'lic-surrender-value-calculator',
     title: 'LIC Surrender Value Calculator',
     description: 'Calculate GSV & SSV for LIC plans before maturity.',

@@ -11,7 +11,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
     const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
     const pageUrl = `${siteUrl}/${params.lang}/lic-surrender-value-calculator`;
-    const pageDict = (await import(`@/dictionaries/${params.lang}/lic-surrender-value-calculator.json`)).default;
+    const pageDict = (await import(`@/dictionaries/en/lic-surrender-value-calculator.json`)).default;
 
     const faqItems = pageDict.sections.find((s:any) => s.id === 'faq')?.content[0]?.items ?? [];
     const faqSchema = {
@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 
 export default async function LicSurrenderValueCalculatorPage({ params }: { params: { lang: Locale }}) {
     const dictionary = await getDictionary(params.lang);
-    const pageDict = (await import(`@/dictionaries/${params.lang}/lic-surrender-value-calculator.json`)).default;
+    const pageDict = (await import(`@/dictionaries/en/lic-surrender-value-calculator.json`)).default;
     
     return (
         <LicSurrenderValueCalculatorPageClient 

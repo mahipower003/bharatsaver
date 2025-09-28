@@ -15,6 +15,7 @@ const calculators = [
   { slug: 'lic-maturity-calculator', lastModified: '2024-10-05', priority: 0.9, changefreq: 'monthly' },
   { slug: 'lic-jeevan-labh-calculator', lastModified: '2024-09-26', priority: 0.9, changefreq: 'monthly' },
   { slug: 'lic-single-premium-endowment-calculator', lastModified: '2024-10-02', priority: 0.9, changefreq: 'monthly' },
+  { slug: 'lic-surrender-value-calculator', lastModified: '2024-10-10', priority: 0.9, changefreq: 'monthly' },
   { slug: 'ppf-calculator', lastModified: '2024-07-28', priority: 0.9, changefreq: 'monthly' },
   { slug: 'ssy-calculator', lastModified: '2024-07-27', priority: 0.9, changefreq: 'monthly' },
   { slug: 'nps-calculator', lastModified: '2024-07-26', priority: 0.9, changefreq: 'monthly' },

@@ -13,6 +13,7 @@ import { AlertTriangle, BarChart2, BookOpen, CheckCircle, FileText, GitCompareAr
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import Link from "next/link";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 function getIcon(iconName: string) {
     switch (iconName) {
