@@ -296,7 +296,8 @@ export default async function LicStatusPage({ params }: { params: { lang: Locale
 
         <section id="conclusion" className="text-center">
             <h2 className="text-3xl font-headline mb-4">Conclusion: Stay Informed, Stay Protected</h2>
-            <p className="text-muted-foreground max-w-3xl mx-auto">Checking your LIC policy status is now easier than ever. By following the step-by-step guide above, you can confidently track your policy’s status anytime and ensure that your valuable insurance policy remains in force and continues to protect you and your family.</p>
+            <p className="text-muted-foreground max-w-3xl mx-auto">Checking your LIC policy status is now easier than ever. You don’t need to visit an LIC branch or depend on an agent to know your policy details. With methods like the online portal login, SMS, phone call, WhatsApp, and the LIC mobile app, you can get up-to-date information on your policy within minutes. This not only helps you avoid missing premium payments and policy lapses, but also keeps you informed about your policy’s growth (bonus, loan value, etc.) over time.</p>
+            <p className="text-muted-foreground max-w-3xl mx-auto mt-4">By following the step-by-step guide above, you can confidently track your policy’s status anytime and ensure that your valuable insurance policy remains in force and continues to protect you and your family. Remember, an informed policyholder can make better financial decisions – so take advantage of these convenient LIC services to stay on top of your policy.</p>
         </section>
 
         <AuthorCard dictionary={dictionary.author_card} />
@@ -305,3 +306,5 @@ export default async function LicStatusPage({ params }: { params: { lang: Locale
     </div>
   );
 }
+
+    
