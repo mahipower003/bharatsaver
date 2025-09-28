@@ -3,7 +3,7 @@
 
 import { PopularTools } from '@/components/home/PopularTools';
 import type { Locale } from '@/lib/i18n-config';
-import type { Dictionary } from '@/types';
+import type { Dictionary } from '@/lib/types';
 
 type HomeToolsProps = {
   lang: Locale;

@@ -17,7 +17,7 @@ import { Slider } from '@/components/ui/slider';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { type ChartConfig } from '@/components/ui/chart';
-import type { Dictionary } from '@/types';
+import type { Dictionary } from '@/lib/types';
 
 const formSchema = z.object({
   annualInvestment: z.coerce.number().min(500, 'Minimum annual investment is ₹500').max(150000, 'Maximum annual investment is ₹1,50,000'),
@@ -434,5 +434,3 @@ export function PpfCalculator({ dictionary }: PpfCalculatorProps) {
     </>
   );
 }
-
-    

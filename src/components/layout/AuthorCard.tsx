@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Twitter, Linkedin, UserSquare } from 'lucide-react';
 import Link from 'next/link';
-import type { Dictionary } from '@/types';
+import type { Dictionary } from '@/lib/types';
 import { usePathname } from 'next/navigation';
 
 type AuthorCardProps = {

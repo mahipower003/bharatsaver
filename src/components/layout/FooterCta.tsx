@@ -4,7 +4,7 @@
 import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import type { Dictionary } from '@/types';
+import type { Dictionary } from '@/lib/types';
 import { type Locale } from '@/lib/i18n-config';
 
 type FooterCtaProps = {

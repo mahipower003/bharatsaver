@@ -1,10 +1,11 @@
+
 'use client';
 
 import { useState } from 'react';
 import Link from 'next/link';
 import { calculators } from '@/data/calculators';
 import type { Locale } from '@/lib/i18n-config';
-import type { Dictionary } from '@/types';
+import type { Dictionary } from '@/lib/types';
 import { ArrowRight, Loader2 } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 

@@ -10,7 +10,7 @@ import { Sheet, SheetContent, SheetTitle, SheetTrigger } from '@/components/ui/s
 import { BharatSaverLogo } from './BharatSaverLogo';
 import { calculators } from '@/data/calculators';
 import type { Locale } from '@/lib/i18n-config';
-import type { Dictionary } from '@/types';
+import type { Dictionary } from '@/lib/types';
 import { LanguageSwitcher } from './LanguageSwitcher';
 
 type MobileNavProps = {

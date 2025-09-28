@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { ArrowRight, TrendingUp, ShieldCheck, UserCheck, Banknote } from 'lucide-react';
 import type { Locale } from '@/lib/i18n-config';
-import type { Dictionary } from '@/types';
+import type { Dictionary } from '@/lib/types';
 
 const stats = [
   { icon: TrendingUp, key: 'high_roi' },

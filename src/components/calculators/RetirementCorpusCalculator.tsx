@@ -15,7 +15,7 @@ import { Input } from '@/components/ui/input';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { type ChartConfig } from '@/components/ui/chart';
-import type { Dictionary } from '@/types';
+import type { Dictionary } from '@/lib/types';
 import { calculateRetirementCorpus } from '@/lib/calculations';
 
 const formSchema = z.object({
@@ -254,7 +254,3 @@ export function RetirementCorpusCalculator({ dictionary, initialResult }: Calcul
     </>
   );
 }
-
-    
-
-    

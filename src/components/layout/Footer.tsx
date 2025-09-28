@@ -27,17 +27,6 @@ export function Footer({ lang, dictionary }: FooterProps) {
 
     const href = link.href.startsWith('/') ? `/${lang}${link.href}` : `/${lang}/${link.href}`;
     
-    if (link.href.endsWith('.xml') || link.href.endsWith('.xsl')) {
-      return (
-         <a 
-          href={link.href} 
-          className="text-sm text-muted-foreground hover:text-primary"
-        >
-          {link.title}
-        </a>
-      )
-    }
-
     return (
       <Link href={href} className="text-sm text-muted-foreground hover:text-primary">
         {link.title}

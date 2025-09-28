@@ -17,7 +17,7 @@ import { Slider } from '@/components/ui/slider';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { type ChartConfig } from '@/components/ui/chart';
-import type { Dictionary } from '@/types';
+import type { Dictionary } from '@/lib/types';
 import { RadioGroup, RadioGroupItem } from '../ui/radio-group';
 
 const formSchema = z.object({
@@ -477,5 +477,3 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
     </>
   );
 }
-
-    

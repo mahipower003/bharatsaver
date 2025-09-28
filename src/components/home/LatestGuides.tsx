@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
-import type { Dictionary } from '@/types';
+import type { Dictionary } from '@/lib/types';
 import { ArrowRight } from 'lucide-react';
 
 type LatestGuidesProps = {
