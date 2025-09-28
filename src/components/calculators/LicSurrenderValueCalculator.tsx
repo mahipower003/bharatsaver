@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useForm } from 'react-hook-form';
@@ -9,9 +10,19 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { Loader2, AlertTriangle, CalculatorIcon } from 'lucide-react';
+import { Loader2, AlertTriangle, CalculatorIcon, Download, Printer, Twitter, Link as LinkIcon, Mail } from 'lucide-react';
 import { useLicSurrenderCalculator } from '@/hooks/use-lic-surrender-calculator';
 import type { LicSurrenderFormValues } from '@/hooks/use-lic-surrender-calculator';
+import { useToast } from '@/hooks/use-toast';
+import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover';
+import { CalendarIcon } from 'lucide-react';
+import { Calendar } from '../ui/calendar';
+import { cn } from '@/lib/utils';
+import { format } from 'date-fns';
+
+const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52s-.669-1.611-.916-2.207c-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" /></svg>
+);
 
 const formSchema = z.object({
   plan: z.string().min(1, "Please select a plan"),
@@ -25,6 +36,7 @@ const formSchema = z.object({
 
 export function LicSurrenderValueCalculator({ dictionary }: { dictionary: any }) {
   const { result, isLoading, error, performCalculation } = useLicSurrenderCalculator();
+  const { toast } = useToast();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -44,6 +56,54 @@ export function LicSurrenderValueCalculator({ dictionary }: { dictionary: any })
   }
 
   const formatCurrency = (value: number) => value.toLocaleString('en-IN', { style: 'currency', currency: 'INR', minimumFractionDigits: 0, maximumFractionDigits: 0 });
+
+  const handlePrint = () => window.print();
+
+  const handleShare = (platform: 'whatsapp' | 'twitter') => {
+    if (!result) return;
+    const url = window.location.href;
+    const text = `I just estimated my LIC policy's surrender value with BharatSaver! My potential payout is ~${formatCurrency(result.netPayout)}. Check yours:`;
+    const shareUrl = platform === 'twitter'
+      ? `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`
+      : `https://api.whatsapp.com/send?text=${encodeURIComponent(text + ' ' + url)}`;
+    window.open(shareUrl, '_blank');
+  };
+
+  const handleCopyLink = () => {
+    navigator.clipboard.writeText(window.location.href);
+    toast({
+        title: "Link Copied!",
+        description: "You can now share the link to your calculation.",
+    });
+  };
+
+  const handleCSVExport = () => {
+    if (!result) return;
+    const headers = ["Parameter", "Value"];
+    const rows = [
+        ["Policy Year Completed", result.policyYearCompleted],
+        ["Paid-up Sum Assured", formatCurrency(result.paidUpSumAssured)],
+        ["GSV (Premium Component)", formatCurrency(result.gsv.premiumComponent)],
+        ["GSV (Bonus Component)", formatCurrency(result.gsv.bonusComponent)],
+        ["Total GSV", formatCurrency(result.gsv.total)],
+        ["Estimated SSV", formatCurrency(result.ssv)],
+        ["Gross Surrender Value", formatCurrency(result.grossSurrenderValue)],
+        ["Loan Principal", formatCurrency(result.loanAdjustments.principal)],
+        ["Net Payout", formatCurrency(result.netPayout)],
+    ];
+    let csvContent = headers.join(',') + '\n';
+    rows.forEach(row => {
+        csvContent += row.join(',') + '\n';
+    });
+    
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.setAttribute('download', 'lic_surrender_value_summary.csv');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <>
@@ -125,6 +185,14 @@ export function LicSurrenderValueCalculator({ dictionary }: { dictionary: any })
              <div className="text-sm text-muted-foreground text-center">
                 <p><strong>Paid-up Sum Assured:</strong> {formatCurrency(result.paidUpSumAssured)}</p>
                 <p><strong>Policy Years Completed:</strong> {result.policyYearCompleted}</p>
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-2 pt-4">
+                <Button variant="outline" size="sm" onClick={() => handleShare('whatsapp')}><WhatsAppIcon className="mr-2 h-4 w-4" /> WhatsApp</Button>
+                <Button variant="outline" size="sm" onClick={() => handleShare('twitter')}><Twitter className="mr-2 h-4 w-4" /> Twitter</Button>
+                <Button variant="outline" size="sm" onClick={handleCopyLink}><LinkIcon className="mr-2 h-4 w-4" /> Copy Link</Button>
+                <Button variant="outline" size="sm" onClick={handlePrint}><Printer className="mr-2 h-4 w-4" /> Print</Button>
+                <Button variant="outline" size="sm" onClick={handleCSVExport}><Download className="mr-2 h-4 w-4" /> Export CSV</Button>
+                <Button variant="outline" size="sm" onClick={() => window.location.href='mailto:'}><Mail className="mr-2 h-4 w-4" /> Email Results</Button>
             </div>
           </CardContent>
         </Card>
