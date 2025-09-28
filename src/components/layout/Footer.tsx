@@ -25,10 +25,8 @@ export function Footer({ lang, dictionary }: FooterProps) {
         )
     }
 
-    // Handle all other links, including those to static files in /public
     const href = link.href.startsWith('/') ? `/${lang}${link.href}` : `/${lang}/${link.href}`;
     
-    // For sitemap files, link directly without the lang prefix if they are in public root
     if (link.href.endsWith('.xml') || link.href.endsWith('.xsl')) {
       return (
          <a 

@@ -34,6 +34,7 @@ export type Dictionary = {
       blog: string;
     };
     cta_button: string;
+    search_placeholder: string;
   };
   footer: {
     about: {
@@ -81,30 +82,6 @@ export type Dictionary = {
       guide3_title: string;
       guide3_subtitle: string;
     };
-  };
-  ppf_calculator: {
-    title: string;
-    description: string;
-    annual_investment_label: string;
-    annual_investment_placeholder: string;
-    tenure_label: string;
-    interest_rate_label: string;
-    interest_rate_placeholder: string;
-    calculate_button: string;
-    loading: string;
-    results_title: string;
-    maturity_value: string;
-    total_investment: string;
-    total_interest: string;
-    view_chart: string;
-    view_table: string;
-    yearly_breakdown_title: string;
-    export_csv: string;
-    table_year: string;
-    table_opening_balance: string;
-    table_amount_invested: string;
-    table_interest_earned: string;
-    table_closing_balance: string;
   };
   [key: string]: any;
 };

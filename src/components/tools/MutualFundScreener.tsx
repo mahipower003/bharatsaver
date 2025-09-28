@@ -212,7 +212,7 @@ export function MutualFundScreenerTool() {
                       />
                     </TableCell>
                     <TableCell className="font-medium">{fund.fund_name}</TableCell>
-                    <TableCell className="text-right">{(fund as any).aum?.toLocaleString('en-IN')}</TableCell>
+                    <TableCell className="text-right">{fund.aum?.toLocaleString('en-IN')}</TableCell>
                     <TableCell className="text-right">{formatPercent(getMockExpenseRatio(fund))}</TableCell>
                   </TableRow>
                 ))}

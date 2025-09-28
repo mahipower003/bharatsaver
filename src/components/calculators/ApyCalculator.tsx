@@ -14,7 +14,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Slider } from '@/components/ui/slider';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
-import type { Dictionary } from '@/types';
+import type { Dictionary } from '@/lib/types';
 
 const formSchema = z.object({
   age: z.coerce.number().min(18, 'Minimum age is 18').max(40, 'Maximum age is 40'),
@@ -30,7 +30,7 @@ type CalculationResult = {
 };
 
 type ApyCalculatorProps = {
-  dictionary: Dictionary['apy_calculator'];
+  dictionary: any;
 };
 
 const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
