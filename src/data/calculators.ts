@@ -37,6 +37,16 @@ export const calculators: CalculatorType[] = [
     lastModified: '2024-10-05',
     image: '/images/lic-maturity-calculator.png'
   },
+   {
+    slug: 'lic-surrender-value-calculator',
+    title: 'LIC Surrender Value Calculator',
+    description: 'Calculate GSV & SSV for LIC plans before maturity.',
+    summary: 'Use our free LIC Surrender Value Calculator to find the Guaranteed (GSV) and Special Surrender Value (SSV) for your policy. Understand the financial implications before you surrender.',
+    icon: FileText,
+    link_text: 'Calculate Now',
+    lastModified: '2024-10-10',
+    image: '/images/lic-surrender-value-calculator.png'
+  },
   {
     slug: 'ppf-calculator',
     title: 'PPF Calculator',
