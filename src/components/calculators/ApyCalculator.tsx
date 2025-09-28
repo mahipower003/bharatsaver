@@ -70,13 +70,19 @@ export function ApyCalculator({ dictionary }: ApyCalculatorProps) {
 
   useEffect(() => {
     const params = new URLSearchParams(searchParams.toString());
+    const ageParam = params.get('age');
+    const pensionParam = params.get('pension');
+
     const values: Partial<ApyFormValues> = {};
-    if (params.get('age')) values.age = Number(params.get('age'));
-    if (params.get('pension')) values.pensionAmount = Number(params.get('pension'));
+    if (ageParam) values.age = Number(ageParam);
+    if (pensionParam) values.pensionAmount = Number(pensionParam);
     
     if (Object.keys(values).length > 0) {
-      form.reset(values);
-      handleSubmit(values as ApyFormValues);
+      form.reset({
+        age: values.age || 25,
+        pensionAmount: values.pensionAmount || 5000,
+      });
+      handleSubmit(form.getValues());
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
