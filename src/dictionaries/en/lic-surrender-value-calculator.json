@@ -92,25 +92,20 @@
     {
       "id": "alternatives",
       "icon": "GitCompareArrows",
-      "title": "Alternatives to Surrendering Your LIC Policy",
+      "title": "Alternatives to Surrendering Your Policy",
       "content": [
         {
           "type": "paragraph",
-          "text": "Surrendering your policy often leads to a significant financial loss. Before you proceed, consider these much better alternatives:"
+          "text": "Many policyholders feel buyer's remorse about traditional insurance plans. Instead of surrendering outright, which often leads to a financial loss, consider these smarter alternatives:"
         },
         {
           "type": "list",
           "items": [
-            "<strong>Take a Loan Against the Policy:</strong> If you need funds urgently, you can take a loan of up to 90% of the surrender value. This keeps your policy active and your life cover intact while providing immediate liquidity.",
-            "<strong>Make the Policy 'Paid-Up':</strong> If you can no longer pay premiums, you can convert your policy to a 'paid-up' status (after 2 years). You won't pay any more premiums, and you will receive a reduced sum assured at maturity. This is almost always better than surrendering as you retain proportional benefits."
+            "<strong>Make the Policy Paid-Up:</strong> If you stop paying premiums after the minimum period (usually 2-3 years), the policy doesn't end. It continues with a reduced sum assured. This keeps your life cover active and you still receive a maturity value later. This is often the best choice if you don't need cash urgently.",
+            "<strong>Take a Loan Against the Policy:</strong> You can borrow against your policy's surrender value for short-term needs. This gives you immediate funds without terminating your insurance cover. Your policy remains active as long as you manage the loan interest.",
+            "<strong>Switch to Term Plan + Invest the Difference:</strong> If you're surrendering due to low returns, a better strategy is to buy a pure term insurance plan for a much cheaper premium and invest the difference in higher-return instruments like mutual funds. This can yield significantly better results in the long run. <br>👉 <strong><a href='#' class='text-primary font-bold hover:underline'>Compare Term Insurance Plans with ₹1 Cr cover for low premiums</a></strong>",
+            "<strong>Use Partial Withdrawal Options:</strong> For ULIPs or money-back policies, check if you can make partial withdrawals of bonuses or funds instead of a full surrender. This can provide liquidity while keeping the base policy intact."
           ]
-        },
-        {
-            "type": "monetization_card",
-            "title": "Struggling with Premiums? Consider a Low-Interest Personal Loan.",
-            "body": "If the issue is temporary cash flow, a low-interest personal loan to cover your premiums might be a better option than losing your insurance cover. Compare top offers from our lending partners.",
-            "href": "https://www.bankbazaar.com/personal-loan.html",
-            "cta": "Compare Personal Loan Offers"
         }
       ]
     },
@@ -132,6 +127,20 @@
                     "<strong>Processing:</strong> LIC will process the request, and the surrender value will be credited to your bank account within 7-10 working days."
                 ]
             }
+        ]
+    },
+    {
+        "id": "monetization-cta",
+        "icon": "TrendingUp",
+        "title": "Struggling with Premiums? Explore Better Options.",
+        "content": [
+          {
+            "type": "monetization_card",
+            "title": "Don't Lose Your Cover. Consider a Low-Interest Personal Loan.",
+            "body": "If temporary cash flow is the issue, a low-interest personal loan to cover premiums might be a smarter move than losing your insurance. Compare top offers from lending partners.",
+            "href": "https://www.bankbazaar.com/personal-loan.html",
+            "cta": "Compare Personal Loan Offers"
+          }
         ]
     },
     {
