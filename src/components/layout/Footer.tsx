@@ -11,25 +11,31 @@ type FooterProps = {
 
 export function Footer({ lang, dictionary }: FooterProps) {
   const renderLink = (link: { title: string; href: string }) => {
-    // Check for any external links
-    if (link.href.startsWith('http')) {
-        return (
-             <a 
-                href={link.href} 
-                className="text-sm text-muted-foreground hover:text-primary"
-                target="_blank" 
-                rel="noopener noreferrer"
-            >
-                {link.title}
-            </a>
-        )
+    const { href, title } = link;
+
+    // 1. External links
+    if (href.startsWith('http')) {
+      return (
+        <a href={href} className="text-sm text-muted-foreground hover:text-primary" target="_blank" rel="noopener noreferrer">
+          {title}
+        </a>
+      );
+    }
+    
+    // 2. Static files in /public directory (like sitemap.xml)
+    if (href.includes('.')) {
+      return (
+        <Link href={href} className="text-sm text-muted-foreground hover:text-primary">
+          {title}
+        </Link>
+      );
     }
 
-    const href = link.href.startsWith('/') ? `/${lang}${link.href}` : `/${lang}/${link.href}`;
-    
+    // 3. Internal page links (prefixed with language)
+    const internalHref = href.startsWith('/') ? `/${lang}${href}` : `/${lang}/${href}`;
     return (
-      <Link href={href} className="text-sm text-muted-foreground hover:text-primary">
-        {link.title}
+      <Link href={internalHref} className="text-sm text-muted-foreground hover:text-primary">
+        {title}
       </Link>
     );
   };
@@ -39,9 +45,9 @@ export function Footer({ lang, dictionary }: FooterProps) {
       <div className="container mx-auto px-4 md:px-6 py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="font-semibold mb-4">{dictionary.about.title}</h3>
+            <h3 className="font-semibold mb-4">{dictionary.resources.title}</h3>
             <ul className="space-y-2">
-              {dictionary.about.links.map((link) => (
+              {dictionary.resources.links.map((link) => (
                 <li key={link.href}>
                   {renderLink(link)}
                 </li>
@@ -59,9 +65,9 @@ export function Footer({ lang, dictionary }: FooterProps) {
             </ul>
           </div>
           <div>
-            <h3 className="font-semibold mb-4">{dictionary.resources.title}</h3>
+            <h3 className="font-semibold mb-4">{dictionary.about.title}</h3>
             <ul className="space-y-2">
-              {dictionary.resources.links.map((link) => (
+              {dictionary.about.links.map((link) => (
                 <li key={link.href}>
                   {renderLink(link)}
                 </li>
