@@ -99,7 +99,7 @@ export function ApyCalculator({ dictionary }: ApyCalculatorProps) {
 
     const premiumData = apyPremiums[values.age];
     if (premiumData) {
-      const monthlyPremium = premiumData[values.pensionAmount as keyof typeof premiumData];
+      const monthlyPremium = premiumData[values.pensionAmount as keyof typeof premiumData.indicativeCorpus];
       const contributionYears = 60 - values.age;
       const totalContribution = monthlyPremium * 12 * contributionYears;
       const totalCorpus = premiumData.indicativeCorpus[values.pensionAmount as keyof typeof premiumData.indicativeCorpus];

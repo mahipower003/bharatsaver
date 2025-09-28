@@ -14,7 +14,9 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     // We are fetching the english dictionary specifically, as it contains the most complete data for schema.
     const pageDict = (await import(`@/dictionaries/en/lic-surrender-value-calculator.json`)).default;
 
-    const faqItems = pageDict.sections.find((s:any) => s.id === 'faq')?.content[0]?.items ?? [];
+    const faqSection = pageDict.sections.find((s:any) => s.id === 'faq');
+    const faqItems = faqSection ? faqSection.content.find((c: any) => c.type === 'faq')?.items : [];
+
     const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -27,8 +29,10 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         }
       }))
     };
+    
+    const howToSection = pageDict.sections.find((s:any) => s.id === 'how-to-surrender');
+    const howToSteps = howToSection ? howToSection.content.find((c: any) => c.type === 'list')?.items : [];
 
-    const howToSteps = pageDict.sections.find((s:any) => s.id === 'how-to-surrender')?.content.find((c:any) => c.type === 'list')?.items ?? [];
     const howToSchema = {
         "@context": "https://schema.org",
         "@type": "HowTo",

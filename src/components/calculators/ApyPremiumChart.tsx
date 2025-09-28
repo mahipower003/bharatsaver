@@ -28,9 +28,8 @@ export function ApyPremiumChart({ dictionary }: ApyPremiumChartProps) {
                     <TableRow key={age}>
                         <TableCell className="font-medium">{age} {dictionary.years_label}</TableCell>
                         {pensionAmounts.map(pension => {
-                            const premium = apyPremiums[age]?.[pension as keyof typeof apyPremiums[18]];
-                            // Ensure we only try to render the premium, not the indicativeCorpus object
-                            const premiumValue = (premium && typeof premium !== 'object') ? premium : '-';
+                            const premiumData = apyPremiums[age];
+                            const premiumValue = premiumData ? premiumData[pension as keyof Omit<typeof premiumData, 'indicativeCorpus'>] : '-';
                             return (
                                 <TableCell key={`${age}-${pension}`} className="text-center">
                                     {typeof premiumValue === 'number' ? `₹${premiumValue}` : premiumValue}
