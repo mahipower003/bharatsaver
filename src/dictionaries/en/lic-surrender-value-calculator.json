@@ -102,7 +102,7 @@
         }
       ]
     },
-    {
+     {
       "id": "pros-cons",
       "icon": "GitCompareArrows",
       "title": "Pros and Cons of Surrendering an LIC Policy",
@@ -155,15 +155,15 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "Many policyholders feel buyer's remorse about traditional insurance plans. Instead of surrendering outright, which often leads to a financial loss, consider these smarter alternatives:"
+          "text": "Many users have buyer’s remorse about traditional LIC policies; instead of surrendering outright, suggest other options (this is a good place to insert affiliate links and internal links):"
         },
         {
           "type": "list",
           "items": [
-            "<strong>Make the Policy Paid-Up:</strong> If you stop paying premiums after the minimum period, the policy continues with a reduced sum assured instead of ending. This avoids immediate loss, keeps some insurance in force, and you still get a maturity value later.",
-            "<strong>Take a Loan Against the Policy:</strong> You can borrow against your policy's surrender value for short-term needs. This gives you immediate funds without terminating your insurance cover.",
-            "<strong>Switch to a Term Plan + Invest Difference:</strong> If low returns are the issue, buy a pure term insurance plan for adequate cover (much cheaper premium) and invest the remaining money in higher-return instruments like mutual funds. This often yields better results in the long run. <br>👉 <strong><a href='#' class='text-primary font-bold hover:underline'>Compare Term Insurance Plans with ₹1 Cr cover for low premiums</a></strong>",
-            "<strong>Continue or Partial Surrender:</strong> For money-back or ULIP plans, check if you can withdraw some bonus or use partial withdrawal options instead of a full surrender (if applicable). Also mention the option of reducing premium frequency or sum assured (if any such options exist) as alternatives to outright surrender."
+            "<strong>Make the Policy Paid-Up:</strong> If you stop paying premiums after a certain minimum period, the policy continues with a reduced sum assured. This avoids immediate loss and keeps some insurance in force.",
+            "<strong>Take a Policy Loan from LIC:</strong> You can borrow against your policy’s surrender value for short-term needs without terminating your cover.",
+            "<strong>Switch to a Term Plan + Invest Difference:</strong> If low returns are the issue, buy a pure term plan for adequate cover (at a much cheaper premium) and invest the difference in higher-return instruments like mutual funds. This often yields better long-term results. <br>👉 <strong><a href='#' class='text-primary font-bold hover:underline'>Compare Term Insurance Plans with ₹1 Cr cover for low premiums</a></strong>",
+            "<strong>Continue or Partial Surrender:</strong> For money-back or ULIP plans, check if you can withdraw bonuses or use partial withdrawal options instead of a full surrender."
           ]
         }
       ]
