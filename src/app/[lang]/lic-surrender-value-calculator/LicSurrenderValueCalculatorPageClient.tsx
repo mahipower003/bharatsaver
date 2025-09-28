@@ -1,7 +1,5 @@
-
 'use client';
 
-import { LicSurrenderValueCalculator } from "./LicSurrenderValueCalculator";
 import { AuthorCard } from "@/components/layout/AuthorCard";
 import type { Dictionary } from "@/lib/types";
 import type { Locale } from "@/lib/i18n-config";
@@ -60,10 +58,6 @@ export default function LicSurrenderValueCalculatorPageClient({
             {pageDict.description && <div className="mt-4 text-lg text-muted-foreground prose dark:prose-invert max-w-none mx-auto" dangerouslySetInnerHTML={{ __html: pageDict.description }} />}
         </header>
         
-        <div id="calculator-widget">
-          <LicSurrenderValueCalculator dictionary={pageDict.tool} />
-        </div>
-
         <div className="mt-12 space-y-8">
           {pageDict.sections.map((section: any, index: number) => {
             const Icon = getIcon(section.icon);

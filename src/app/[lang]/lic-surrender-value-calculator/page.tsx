@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       }))
     };
 
-    const howToSteps = pageDict.sections.find((s:any) => s.id === 'how-to-surrender')?.content[1]?.items ?? [];
+    const howToSteps = pageDict.sections.find((s:any) => s.id === 'how-to-surrender')?.content.find((c:any) => c.type === 'list')?.items ?? [];
     const howToSchema = {
         "@context": "https://schema.org",
         "@type": "HowTo",
