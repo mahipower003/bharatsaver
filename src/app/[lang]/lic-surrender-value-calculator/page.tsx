@@ -11,6 +11,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
     const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
     const pageUrl = `${siteUrl}/${params.lang}/lic-surrender-value-calculator`;
+    // We are fetching the english dictionary specifically, as it contains the most complete data for schema.
     const pageDict = (await import(`@/dictionaries/en/lic-surrender-value-calculator.json`)).default;
 
     const faqItems = pageDict.sections.find((s:any) => s.id === 'faq')?.content[0]?.items ?? [];
@@ -40,8 +41,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     };
 
     return {
-        title: pageDict.meta_title,
-        description: pageDict.meta_description,
+        title: "LIC Surrender Value Calculator – Estimate Your Policy’s Cash Value & Guide 2025",
+        description: "Calculate your LIC policy’s surrender value instantly with our online calculator. Learn how surrender value is computed, when to surrender, tax impact, FAQs and more on this comprehensive guide.",
         alternates: {
             canonical: pageUrl,
             languages: i18nConfig.locales.reduce((acc, locale) => {
@@ -58,7 +59,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 
 export default async function LicSurrenderValueCalculatorPage({ params }: { params: { lang: Locale }}) {
     const dictionary = await getDictionary(params.lang);
-    const pageDict = (await import(`@/dictionaries/en/lic-surrender-value-calculator.json`)).default;
+    // Fallback to english dictionary if the translation is not available for this page
+    const pageDict = (await import(`@/dictionaries/${params.lang}/lic-surrender-value-calculator.json`).catch(() => import(`@/dictionaries/en/lic-surrender-value-calculator.json`))).default;
     
     return (
         <LicSurrenderValueCalculatorPageClient 

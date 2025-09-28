@@ -42,7 +42,7 @@
         }
       ]
     },
-     {
+    {
       "id": "how-to-calculate",
       "icon": "FileText",
       "title": "How to Calculate LIC Surrender Value (Formula & Examples)",
@@ -82,10 +82,10 @@
           ]
         },
         {
-            "type": "alert",
-            "variant": "destructive",
-            "title": "Taxability Example (Surrender in Year 3):",
-            "text": "Suppose you paid a premium of ₹50,000 each year and claimed a ₹50,000 deduction under 80C for two years. If you surrender in the 3rd year, the surrender amount may be added to your income. Additionally, the ₹1,00,000 you claimed as a deduction would be added back to your taxable income for the year of surrender."
+          "type": "alert",
+          "variant": "destructive",
+          "title": "Taxability Example (Surrender in Year 3):",
+          "text": "Suppose you paid a premium of ₹50,000 each year and claimed a ₹50,000 deduction under 80C for two years. If you surrender in the 3rd year, the surrender amount may be added to your income. Additionally, the ₹1,00,000 you claimed as a deduction would be added back to your taxable income for the year of surrender."
         }
       ]
     },
@@ -162,7 +162,8 @@
           ]
         },
         {
-          "type": "paragraph",
+          "type": "alert",
+          "title": "Pro Tip",
           "text": "<strong>When to Choose Paid-Up:</strong> If you cannot afford future premiums but don't need immediate cash, making the policy paid-up is almost always the better financial decision. It keeps your life insurance cover (albeit reduced) and allows your accumulated bonuses to continue earning interest."
         },
         {
@@ -178,14 +179,14 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "Surrendering should be your last resort. Before you terminate your policy, consider these smarter alternatives to surrendering an LIC policy:"
+          "text": "Surrendering should be your last resort. Before you terminate your policy, consider these smarter alternatives:"
         },
         {
           "type": "list",
           "items": [
             "<strong>Make the Policy Paid-Up:</strong> If you can no longer afford premiums, stop paying after 2-3 years. The policy continues with a reduced sum assured. This is often better than outright surrender if you don't urgently need cash.",
             "<strong>Take a Policy Loan from LIC:</strong> For short-term needs, you can borrow against your policy’s surrender value. This provides liquidity without terminating your life cover.",
-            "<strong>Switch to a Term Plan + Invest Difference:</strong> If low returns are the issue, a better strategy is to buy a pure term insurance plan for adequate cover (much cheaper premium) and invest the remaining money in higher-return instruments like mutual funds. This often yields better long-term results.<br>👉 <strong><a href='/en/term-insurance' class='text-primary font-bold hover:underline'>Compare Term Insurance Plans with ₹1 Cr cover for low premiums</a></strong>",
+            "<strong>Switch to a Term Plan + Invest Difference:</strong> If low returns are the issue, a better strategy is to buy a pure term insurance plan for adequate cover (much cheaper premium) and invest the remaining money in higher-return instruments like mutual funds. This often yields better results in the long run.<br>👉 <strong><a href='/en/term-insurance' class='text-primary font-bold hover:underline'>Compare Term Insurance Plans with ₹1 Cr cover for low premiums</a></strong>",
             "<strong>Continue or Partial Surrender:</strong> If it’s a money-back or ULIP, perhaps you can withdraw some bonus or use partial withdrawal options instead of full surrender (if applicable)."
           ]
         }
@@ -225,13 +226,13 @@
             {"q": "Is the surrender value of an LIC policy taxable?","a": "The payout is generally tax-free under Section 10(10D) if surrendered after 5 years. If surrendered before 5 years, the amount can become taxable, and any 80C deductions you've claimed may be reversed."},
             {"q": "How much money will I get if I surrender my LIC policy?","a": "The amount is a percentage of total premiums paid, increasing over time (e.g. ~30% after 3 years, increasing over time). Use our calculator above to get an exact estimate for your policy."},
             {"q": "What is the difference between guaranteed and special surrender value?","a": "GSV is the minimum guaranteed amount based on premiums paid. SSV includes a portion of vested bonuses and is calculated if bonuses are vested. LIC will pay whichever amount is higher."},
-            {"q": "Should I surrender my LIC policy or make it paid-up?","a": "If you don’t need immediate cash and want to retain some insurance, making it paid-up can be wiser. Surrender is suitable if you urgently need funds."},
+            {"q": "Should I surrender my LIC policy or make it paid-up?","a": "If you don’t need immediate cash and want to retain some insurance, making it paid-up can be wiser (no further premiums, reduced cover remains). Surrender is suitable if you urgently need funds or want to stop losses on a poor-return policy."},
             {"q": "Can I surrender my LIC policy online?","a": "No, as of now, a full surrender requires a physical visit to your LIC servicing branch with the necessary documents, though forms may be available online."},
             {"q": "What documents are required to surrender an LIC policy?","a": "You will need the Original Policy Bond, a filled Surrender Form (No. 5074), your PAN card, Aadhaar card, and a cancelled cheque for your bank details."},
             {"q": "How long does it take to receive the surrender value amount?","a": "After approval, it typically takes 5-10 working days for LIC to credit the amount to your bank account via NEFT."},
-            {"q": "Can a surrendered LIC policy be reinstated or revived?","a": "No, once a policy is surrendered and the amount is paid out, it is permanently terminated and cannot be revived."},
-            {"q": "Do term insurance policies have surrender value?","a": "No, pure term insurance plans generally do not have any surrender value as premiums go purely towards risk cover."},
-            {"q": "Will I get the bonus and loyalty additions if I surrender the policy?","a": "A portion of any accrued regular bonus is typically considered in the Special Surrender Value (SSV) calculation. However, loyalty additions are usually forfeited if the policy is not run for its full term."}
+            {"q": "Can a surrendered LIC policy be reinstated or revived?","a": "No, once you surrender and take the money, the policy is terminated permanently and cannot be revived. One would have to buy a new policy if needed."},
+            {"q": "Do term insurance policies have surrender value?","a": "Generally no – pure term plans usually don’t offer any payout on cancellation as they are risk-cover only. If the user has a term plan with a return of premium rider, that’s a different scenario, but standard term = no surrender value."},
+            {"q": "Will I get the bonus and loyalty additions if I surrender the policy?","a": "Any accrued regular bonus is typically considered in the Special Surrender Value calculation, so if your policy has bonuses, the surrender value will include a portion of them. Loyalty additions might be forfeited if policy not run full term."}
           ]
         }
       ]
@@ -248,7 +249,7 @@
         {
             "type": "monetization_card",
             "title": "Next Step: Ready to Switch to a Better Option?",
-            "body": "If you're surrendering due to low returns, your next step is crucial. Secure your family's future with a high-cover, low-cost term plan and invest the difference.",
+            "body": "If you're surrendering to switch to a better insurance or investment, check out our Term Insurance Compare Tool for more affordable high-cover plans, or explore investment options that can yield better returns.",
             "href": "/en/term-insurance",
             "cta": "Compare Term Insurance Plans Now"
         }
