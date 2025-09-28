@@ -11,18 +11,6 @@ type FooterProps = {
 
 export function Footer({ lang, dictionary }: FooterProps) {
   const renderLink = (link: { title: string; href: string }) => {
-    // Check for sitemap files or other static XML/XSL files in the public directory
-    if (link.href.endsWith('.xml') || link.href.endsWith('.xsl')) {
-      return (
-        <a 
-          href={link.href} 
-          className="text-sm text-muted-foreground hover:text-primary"
-        >
-          {link.title}
-        </a>
-      );
-    }
-    
     // Check for any external links
     if (link.href.startsWith('http')) {
         return (
@@ -37,9 +25,23 @@ export function Footer({ lang, dictionary }: FooterProps) {
         )
     }
 
-    // Otherwise, it's an internal Next.js page, so use <Link>
+    // Handle all other links, including those to static files in /public
+    const href = link.href.startsWith('/') ? `/${lang}${link.href}` : `/${lang}/${link.href}`;
+    
+    // For sitemap files, link directly without the lang prefix if they are in public root
+    if (link.href.endsWith('.xml') || link.href.endsWith('.xsl')) {
+      return (
+         <a 
+          href={link.href} 
+          className="text-sm text-muted-foreground hover:text-primary"
+        >
+          {link.title}
+        </a>
+      )
+    }
+
     return (
-      <Link href={`/${lang}${link.href}`} className="text-sm text-muted-foreground hover:text-primary">
+      <Link href={href} className="text-sm text-muted-foreground hover:text-primary">
         {link.title}
       </Link>
     );
