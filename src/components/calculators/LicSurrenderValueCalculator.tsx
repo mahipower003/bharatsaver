@@ -10,7 +10,8 @@ import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Loader2, AlertTriangle, CalculatorIcon } from 'lucide-react';
-import { useLicSurrenderCalculator, type LicSurrenderFormValues, type CalculationResult } from '@/hooks/use-lic-surrender-calculator';
+import { useLicSurrenderCalculator } from '@/hooks/use-lic-surrender-calculator';
+import type { LicSurrenderFormValues } from '@/hooks/use-lic-surrender-calculator';
 
 const formSchema = z.object({
   plan: z.string().min(1, "Please select a plan"),
@@ -39,7 +40,7 @@ export function LicSurrenderValueCalculator({ dictionary }: { dictionary: any })
   });
 
   function handleSubmit(values: z.infer<typeof formSchema>) {
-    performCalculation(values);
+    performCalculation(values as LicSurrenderFormValues);
   }
 
   const formatCurrency = (value: number) => value.toLocaleString('en-IN', { style: 'currency', currency: 'INR', minimumFractionDigits: 0, maximumFractionDigits: 0 });
@@ -63,8 +64,11 @@ export function LicSurrenderValueCalculator({ dictionary }: { dictionary: any })
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl><SelectTrigger><SelectValue /></SelectTrigger></FormControl>
                         <SelectContent>
-                          <SelectItem value="new-jeevan-anand">New Jeevan Anand</SelectItem>
-                          <SelectItem value="jeevan-labh">Jeevan Labh</SelectItem>
+                          <SelectItem value="new-jeevan-anand">New Jeevan Anand (915)</SelectItem>
+                          <SelectItem value="jeevan-labh">Jeevan Labh (936)</SelectItem>
+                          <SelectItem value="new-endowment">New Endowment Plan (914)</SelectItem>
+                          <SelectItem value="jeevan-utsav">Jeevan Utsav (871)</SelectItem>
+                          <SelectItem value="jeevan-umang">Jeevan Umang (945)</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />
@@ -73,9 +77,9 @@ export function LicSurrenderValueCalculator({ dictionary }: { dictionary: any })
                 <FormField control={form.control} name="basicSumAssured" render={({ field }) => (<FormItem><FormLabel>Basic Sum Assured (₹)</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
                 <FormField control={form.control} name="policyTerm" render={({ field }) => (<FormItem><FormLabel>Policy Term (Years)</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
                 <FormField control={form.control} name="premiumsPaid" render={({ field }) => (<FormItem><FormLabel>No. of Premiums Paid</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
-                <FormField control={form.control} name="totalPremiumsPayable" render={({ field }) => (<FormItem><FormLabel>Total Premiums Payable</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
-                <FormField control={form.control} name="vestedBonus" render={({ field }) => (<FormItem><FormLabel>Vested Bonus (₹) (Optional)</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
-                 <FormField control={form.control} name="loanPrincipal" render={({ field }) => (<FormItem><FormLabel>Outstanding Loan (₹) (Optional)</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
+                <FormField control={form.control} name="totalPremiumsPayable" render={({ field }) => (<FormItem><FormLabel>Total Premiums Payable in Term</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
+                <FormField control={form.control} name="vestedBonus" render={({ field }) => (<FormItem><FormLabel>Total Vested Bonus (₹) (Optional)</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
+                <FormField control={form.control} name="loanPrincipal" render={({ field }) => (<FormItem><FormLabel>Outstanding Loan (₹) (Optional)</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
               </div>
               <Button type="submit" disabled={isLoading} className="w-full sm:w-auto">
                 {isLoading ? <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> {dictionary.tool.calculating}</> : dictionary.tool.calculate_button}
