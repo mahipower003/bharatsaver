@@ -1,7 +1,7 @@
 
 import Link from 'next/link';
 import type { Locale } from '@/lib/i18n-config';
-import type { Dictionary } from '@/types';
+import type { Dictionary } from '@/lib/types';
 import { Twitter, Facebook, Linkedin } from 'lucide-react';
 
 type FooterProps = {

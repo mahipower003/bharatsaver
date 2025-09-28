@@ -1,3 +1,4 @@
+
 // src/lib/overlap-calculator.ts
 // TypeScript - robust mutual-fund overlap logic
 // Exports:
@@ -19,6 +20,7 @@ export type RawFund = {
   source?: string;
   fetched_at_unix?: number;
   fund_name: string;
+  aum?: number;
   coverage_pct?: number | null;
   constituents_count?: number;
   constituents?: Constituent[] | null;
