@@ -121,6 +121,7 @@ export default async function LicStatusPage({ params }: { params: { lang: Locale
                 priority
             />
             <p className="mt-6 text-muted-foreground">Many LIC policyholders forget to monitor their policy status routinely. This can lead to missed premium payments and even policy lapses, meaning loss of coverage and benefits. The good news is that LIC now offers multiple convenient ways to check your policy status. In this guide, we’ll cover all the methods step-by-step.</p>
+            <p className="mt-4 text-muted-foreground">In this comprehensive guide, we’ll cover all the methods to check your LIC policy status step-by-step. Whether you prefer using the online portal, mobile app, sending an SMS, calling customer care, or even using WhatsApp, we have you covered. Follow these SEO-optimized steps (in English with some regional language insights) to easily track your LIC policy details and ensure you never miss an important update.</p>
           </CardContent>
         </Card>
         
@@ -237,3 +238,5 @@ export default async function LicStatusPage({ params }: { params: { lang: Locale
     </div>
   );
 }
+
+    
