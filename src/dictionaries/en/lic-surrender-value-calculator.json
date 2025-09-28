@@ -52,79 +52,53 @@
           "text": "The calculation involves two main components. Here’s a simplified breakdown to help you understand the logic behind our calculator:"
         },
         {
-            "type": "alert",
-            "variant": "default",
-            "title": "Step 1: Calculate Total Vested Bonus",
-            "text": "Vested Bonus = (Sum Assured / 1000) * Bonus Rate * Number of Years Premiums Paid.<br><strong>Example:</strong> For a ₹10 Lakh policy with a ₹45 bonus rate, paid for 5 years, the vested bonus is (10,00,000/1000) * 45 * 5 = ₹2,25,000."
+          "type": "alert",
+          "variant": "default",
+          "title": "Step 1: Calculate Total Vested Bonus",
+          "text": "Vested Bonus = (Sum Assured / 1000) * Bonus Rate * Number of Years Premiums Paid.<br><strong>Example:</strong> For a ₹10 Lakh policy with a ₹45 bonus rate, paid for 5 years, the vested bonus is (10,00,000/1000) * 45 * 5 = ₹2,25,000."
         },
         {
-            "type": "alert",
-            "variant": "default",
-            "title": "Step 2: Calculate Guaranteed Surrender Value (GSV)",
-            "text": "GSV = (Total Premiums Paid × GSV Factor) + (Vested Bonus × Bonus Surrender Value Factor).<br>The factors are determined by LIC based on the policy year. For example, after 5 years, the GSV factor might be around 50% and the bonus factor around 17%.<br><strong>Example:</strong> If total premiums paid are ₹2.1 Lakhs, then GSV ≈ (2,10,000 * 50%) + (2,25,000 * 17%) = ₹1,05,000 + ₹38,250 = <strong>₹1,43,250</strong>."
+          "type": "alert",
+          "variant": "default",
+          "title": "Step 2: Calculate Guaranteed Surrender Value (GSV)",
+          "text": "GSV = (Total Premiums Paid × GSV Factor) + (Vested Bonus × Bonus Surrender Value Factor).<br>The factors are determined by LIC based on the policy year. For example, after 5 years, the GSV factor might be around 50% and the bonus factor around 17%.<br><strong>Example:</strong> If total premiums paid are ₹2.1 Lakhs, then GSV ≈ (2,10,000 * 50%) + (2,25,000 * 17%) = ₹1,05,000 + ₹38,250 = <strong>₹1,43,250</strong>."
         }
       ]
     },
     {
-        "id": "gsv-factors-chart",
-        "icon": "BarChart2",
-        "title": "Factors Affecting Surrender Value",
-        "content": [
-            {
-                "type": "paragraph",
-                "text": "The surrender value isn't a random number; it's influenced by several key factors:"
-            },
-            {
-                "type": "list",
-                "items": [
-                    "<strong>Policy Term & Years Completed:</strong> The longer you've paid premiums, the higher the surrender value factor. Early years yield very low returns, but the value grows significantly as you approach maturity.",
-                    "<strong>Premium Amount:</strong> A higher total premium paid naturally results in a higher absolute surrender value.",
-                    "<strong>Accrued Bonuses:</strong> For participating policies, the vested bonuses form a significant part of the Special Surrender Value (SSV). More bonuses mean a higher payout.",
-                    "<strong>Policy Type:</strong> Endowment plans have surrender values, but pure term plans do not, as they have no savings component."
-                ]
-            },
-            {
-                "type": "paragraph",
-                "text": "<h4>Guaranteed Surrender Value (GSV) Factors Chart</h4><p>The GSV factor increases with the policy duration. Here’s an illustrative table:</p>"
-            },
-            {
-                "type": "table",
-                "headers": ["Policy Year of Surrender", "GSV Factor (% of Premiums)"],
-                "rows": [
-                    ["2", "30%"],
-                    ["3", "30%"],
-                    ["4", "50%"],
-                    ["5", "50%"],
-                    ["6", "50%"],
-                    ["7", "50%"],
-                    ["From 8th year onwards", "Increases up to 90% near maturity"]
-                ]
-            }
-        ]
-    },
-    {
-      "id": "paid-up-vs-surrender",
-      "icon": "GitCompareArrows",
-      "title": "LIC Surrender Value vs. Paid-Up Value",
+      "id": "factors-affecting-value",
+      "icon": "BarChart2",
+      "title": "Factors Affecting Surrender Value",
       "content": [
         {
           "type": "paragraph",
-          "text": "Understanding the difference between surrendering a policy and making it paid-up is crucial. They are two very different options."
+          "text": "The surrender value isn't a random number; it's influenced by several key factors:"
         },
         {
           "type": "list",
           "items": [
-            "<strong>Surrender Value:</strong> This is the lump-sum cash amount you get if you decide to <strong>completely terminate</strong> your policy before its maturity date. You lose all life cover and future benefits.",
-            "<strong>Paid-Up Value:</strong> If you stop paying premiums after a minimum period (e.g., 2 years), your policy is not terminated. It continues with a <strong>reduced Sum Assured</strong>. You don't have to pay any more premiums and will still receive this reduced maturity amount at the end of the policy term."
+            "<strong>Policy Term & Years Completed:</strong> The longer you've paid premiums, the higher the surrender value factor. Early years yield very low returns, but the value grows significantly as you approach maturity.",
+            "<strong>Premium Amount:</strong> A higher total premium paid naturally results in a higher absolute surrender value.",
+            "<strong>Accrued Bonuses:</strong> For participating policies, the vested bonuses form a significant part of the Special Surrender Value (SSV). More bonuses mean a higher payout.",
+            "<strong>Policy Type:</strong> Endowment plans have surrender values, but pure term plans do not, as they have no savings component."
           ]
         },
         {
           "type": "paragraph",
-          "text": "<strong>When to Choose Paid-Up:</strong> If you cannot afford future premiums but don't need immediate cash, making the policy paid-up is almost always the better financial decision. It keeps your life insurance cover (albeit reduced) and allows your accumulated bonuses to continue earning interest."
+          "text": "<h4>Guaranteed Surrender Value (GSV) Factors Chart</h4><p>The GSV factor increases with the policy duration. Here’s an illustrative table:</p>"
         },
         {
-            "type": "paragraph",
-            "text": "<strong>When to Consider Surrender:</strong> Only consider surrendering if you have a dire, immediate need for cash and have no other option. Remember that the surrender value is typically much lower than the total premiums you have paid."
+          "type": "table",
+          "headers": ["Policy Year of Surrender", "GSV Factor (% of Premiums)"],
+          "rows": [
+            ["2", "30%"],
+            ["3", "30%"],
+            ["4", "50%"],
+            ["5", "50%"],
+            ["6", "50%"],
+            ["7", "50%"],
+            ["From 8th year onwards", "Increases up to 90% near maturity"]
+          ]
         }
       ]
     },
@@ -149,6 +123,32 @@
       ]
     },
     {
+      "id": "paid-up-vs-surrender",
+      "icon": "GitCompareArrows",
+      "title": "LIC Surrender Value vs. Paid-Up Value",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Understanding the difference between surrendering a policy and making it paid-up is crucial. They are two very different options."
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Surrender Value:</strong> This is the lump-sum cash amount you get if you decide to <strong>completely terminate</strong> your policy before its maturity date. You lose all life cover and future benefits.",
+            "<strong>Paid-Up Value:</strong> If you stop paying premiums after a minimum period (e.g., 2 years), your policy is not terminated. It continues with a <strong>reduced Sum Assured</strong>. You don't have to pay any more premiums and will still receive this reduced maturity amount at the end of the policy term."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>When to Choose Paid-Up:</strong> If you cannot afford future premiums but don't need immediate cash, making the policy paid-up is almost always the better financial decision. It keeps your life insurance cover (albeit reduced) and allows your accumulated bonuses to continue earning interest."
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>When to Consider Surrender:</strong> Only consider surrendering if you have a dire, immediate need for cash and have no other option. Remember that the surrender value is typically much lower than the total premiums you have paid."
+        }
+      ]
+    },
+    {
       "id": "alternatives",
       "icon": "CheckCircle",
       "title": "Alternatives to Surrendering Your Policy",
@@ -162,63 +162,63 @@
           "items": [
             "<strong>Make the Policy Paid-Up:</strong> If you stop paying premiums after the minimum period, the policy continues with a reduced sum assured instead of ending. This avoids immediate loss, keeps some insurance in force, and you still get a maturity value later.",
             "<strong>Take a Loan Against the Policy:</strong> You can borrow against your policy's surrender value for short-term needs. This gives you immediate funds without terminating your insurance cover.",
-            "<strong>Switch to a Term Plan + Invest Difference:</strong> If low returns are the issue, buy a pure term insurance plan for adequate cover (at a much cheaper premium) and invest the remaining money in higher-return instruments like mutual funds. This often yields better results in the long run. <br>👉 <strong><a href='#' class='text-primary font-bold hover:underline'>Compare Term Insurance Plans with ₹1 Cr cover for low premiums</a></strong>",
-            "<strong>Continue or Partial Surrender:</strong> For money-back or ULIP plans, check if you can withdraw some bonus or use partial withdrawal options instead of a full surrender (if applicable). Also mention the option of reducing the premium frequency or sum assured (if any such options exist) as alternatives to outright surrender."
+            "<strong>Switch to a Term Plan + Invest Difference:</strong> If low returns are the issue, buy a pure term insurance plan for adequate cover (much cheaper premium) and invest the remaining money in higher-return instruments like mutual funds. This often yields better results in the long run. <br>👉 <strong><a href='#' class='text-primary font-bold hover:underline'>Compare Term Insurance Plans with ₹1 Cr cover for low premiums</a></strong>",
+            "<strong>Continue or Partial Surrender:</strong> For money-back or ULIP plans, check if you can withdraw some bonus or use partial withdrawal options instead of a full surrender (if applicable). Also mention the option of reducing premium frequency or sum assured (if any such options exist) as alternatives to outright surrender."
           ]
         }
       ]
     },
     {
-        "id": "how-to-surrender",
-        "icon": "BookOpen",
-        "title": "How to Surrender an LIC Policy (The Process)",
-        "content": [
-            {
-                "type": "paragraph",
-                "text": "If you've weighed the options and still wish to proceed, here is the official process:"
-            },
-            {
-                "type": "list",
-                "items": [
-                    "<strong>Visit Your Home Branch:</strong> You must go to the LIC branch where you originally took the policy.",
-                    "<strong>Fill Surrender Form:</strong> Request and fill out 'LIC Surrender Form 5074'. For some plans, Form 3510 might be required.",
-                    "<strong>Submit Documents:</strong> You will need the original policy bond, a copy of your PAN card, Aadhaar card, and a cancelled cheque for fund transfer.",
-                    "<strong>Processing:</strong> LIC will process the request, and the surrender value will be credited to your bank account within 7-10 working days."
-                ]
-            }
-        ]
+      "id": "how-to-surrender",
+      "icon": "BookOpen",
+      "title": "How to Surrender Your LIC Policy (Process & Documents)",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "If you've weighed the options and still wish to proceed, here is the official process:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Check Eligibility:</strong> Confirm the policy has been active for the minimum required period (typically 2-3 years) to ensure it has acquired a surrender value.",
+            "<strong>Collect Documents:</strong> Gather the necessary paperwork: Original policy bond, a filled Surrender Form No. 5074, a copy of your PAN and Aadhaar cards, and a cancelled cheque for bank details.",
+            "<strong>Visit LIC Branch:</strong> The policyholder must visit the servicing LIC branch to submit the surrender request and fill out any required discharge vouchers.",
+            "<strong>Verification & Payment:</strong> LIC will process the request, and the surrender value is usually credited via NEFT to the policyholder’s bank account within 7-10 working days."
+          ]
+        }
+      ]
     },
     {
-        "id": "monetization-cta",
-        "icon": "TrendingUp",
-        "title": "Struggling with Premiums? Explore Better Options.",
-        "content": [
-          {
-            "type": "monetization_card",
-            "title": "Don't Lose Your Cover. Consider a Low-Interest Personal Loan.",
-            "body": "If temporary cash flow is the issue, a low-interest personal loan to cover premiums might be a smarter move than losing your insurance. Compare top offers from lending partners.",
-            "href": "https://www.bankbazaar.com/personal-loan.html",
-            "cta": "Compare Personal Loan Offers"
-          }
-        ]
+      "id": "monetization-cta",
+      "icon": "TrendingUp",
+      "title": "Struggling with Premiums? Explore Better Options.",
+      "content": [
+        {
+          "type": "monetization_card",
+          "title": "Don't Lose Your Cover. Consider a Low-Interest Personal Loan.",
+          "body": "If temporary cash flow is the issue, a low-interest personal loan to cover premiums might be a smarter move than losing your insurance. Compare top offers from lending partners.",
+          "href": "https://www.bankbazaar.com/personal-loan.html",
+          "cta": "Compare Personal Loan Offers"
+        }
+      ]
     },
     {
-        "id": "faq",
-        "icon": "HelpCircle",
-        "title": "Frequently Asked Questions (FAQ)",
-        "content": [
-          {
-            "type": "faq",
-            "items": [
-              {"q": "How to calculate LIC policy surrender value online?","a": "Use our calculator by entering your total premiums paid, sum assured, policy term, and the number of years you've paid premiums. It will give you an instant estimate of both GSV and SSV."},
-              {"q": "Can I surrender my LIC policy after 1 year?","a": "No, a policy can only be surrendered after premiums have been paid for at least two consecutive years. Before that, it has no surrender value."},
-              {"q": "How much money will I get if I surrender my LIC policy after 3 years?","a": "After 3 years, you are entitled to the Guaranteed Surrender Value (GSV), which is typically 30% of the total premiums paid (excluding the first year's premium and rider premiums), plus a percentage of any vested bonuses."},
-              {"q": "What is the formula for calculating LIC surrender value?","a": "The basic formula for GSV is: (GSV Factor × Total Premiums Paid) + (Bonus Surrender Value Factor × Vested Bonus). The factors are determined by LIC and vary by policy term and year of surrender."},
-              {"q": "Is Special Surrender Value always higher than Guaranteed Surrender Value?","a": "Yes, the Special Surrender Value (SSV) is a non-guaranteed amount calculated by LIC and is always higher than or equal to the minimum guaranteed amount (GSV). It reflects the policy's performance more accurately."},
-              {"q": "Which form is required for surrendering an LIC policy?","a": "You typically need to fill out 'LIC Surrender Form 5074'. In some specific cases or for older policies, Form 3510 might be required. Your home branch will provide the correct form."}
-            ]
-          }
-        ]
+      "id": "faq",
+      "icon": "HelpCircle",
+      "title": "Frequently Asked Questions (FAQ)",
+      "content": [
+        {
+          "type": "faq",
+          "items": [
+            {"q": "How to calculate LIC policy surrender value online?","a": "Use our calculator by entering your total premiums paid, sum assured, policy term, and the number of years you've paid premiums. It will give you an instant estimate of both GSV and SSV."},
+            {"q": "Can I surrender my LIC policy after 1 year?","a": "No, a policy can only be surrendered after premiums have been paid for at least two consecutive years. Before that, it has no surrender value."},
+            {"q": "How much money will I get if I surrender my LIC policy after 3 years?","a": "After 3 years, you are entitled to the Guaranteed Surrender Value (GSV), which is typically 30% of the total premiums paid (excluding the first year's premium and rider premiums), plus a percentage of any vested bonuses."},
+            {"q": "What is the formula for calculating LIC surrender value?","a": "The basic formula for GSV is: (GSV Factor × Total Premiums Paid) + (Bonus Surrender Value Factor × Vested Bonus). The factors are determined by LIC and vary by policy term and year of surrender."},
+            {"q": "Is Special Surrender Value always higher than Guaranteed Surrender Value?","a": "Yes, the Special Surrender Value (SSV) is a non-guaranteed amount calculated by LIC and is always higher than or equal to the minimum guaranteed amount (GSV). It reflects the policy's performance more accurately."},
+            {"q": "Which form is required for surrendering an LIC policy?","a": "You typically need to fill out 'LIC Surrender Form 5074'. In some specific cases or for older policies, Form 3510 might be required. Your home branch will provide the correct form."}
+          ]
+        }
+      ]
     }
   ]
 }
