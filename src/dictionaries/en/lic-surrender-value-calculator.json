@@ -66,6 +66,43 @@
       ]
     },
     {
+        "id": "gsv-factors-chart",
+        "icon": "BarChart2",
+        "title": "Factors Affecting Surrender Value",
+        "content": [
+            {
+                "type": "paragraph",
+                "text": "The surrender value isn't a random number; it's influenced by several key factors:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "<strong>Policy Term & Years Completed:</strong> The longer you've paid premiums, the higher the surrender value factor. Early years yield very low returns, but the value grows significantly as you approach maturity.",
+                    "<strong>Premium Amount:</strong> A higher total premium paid naturally results in a higher absolute surrender value.",
+                    "<strong>Accrued Bonuses:</strong> For participating policies, the vested bonuses form a significant part of the Special Surrender Value (SSV). More bonuses mean a higher payout.",
+                    "<strong>Policy Type:</strong> Endowment plans have surrender values, but pure term plans do not, as they have no savings component."
+                ]
+            },
+            {
+                "type": "paragraph",
+                "text": "<h4>Guaranteed Surrender Value (GSV) Factors Chart</h4><p>The GSV factor increases with the policy duration. Here’s an illustrative table:</p>"
+            },
+            {
+                "type": "table",
+                "headers": ["Policy Year of Surrender", "GSV Factor (% of Premiums)"],
+                "rows": [
+                    ["2", "30%"],
+                    ["3", "30%"],
+                    ["4", "50%"],
+                    ["5", "50%"],
+                    ["6", "50%"],
+                    ["7", "50%"],
+                    ["From 8th year onwards", "Increases up to 90% near maturity"]
+                ]
+            }
+        ]
+    },
+    {
       "id": "paid-up-vs-surrender",
       "icon": "GitCompareArrows",
       "title": "LIC Surrender Value vs. Paid-Up Value",
@@ -92,30 +129,6 @@
       ]
     },
     {
-        "id": "gsv-factors-chart",
-        "icon": "BarChart2",
-        "title": "Guaranteed Surrender Value (GSV) Factors Chart",
-        "content": [
-            {
-                "type": "paragraph",
-                "text": "The GSV factor increases the longer you've held the policy. Here’s an illustrative table of GSV factors as a percentage of total premiums paid:"
-            },
-            {
-                "type": "table",
-                "headers": ["Policy Year of Surrender", "GSV Factor (%)"],
-                "rows": [
-                    ["2", "30%"],
-                    ["3", "30%"],
-                    ["4", "50%"],
-                    ["5", "50%"],
-                    ["6", "50%"],
-                    ["7", "50%"],
-                    ["From 8th to (Term-2) years", "Increases up to 90%"]
-                ]
-            }
-        ]
-    },
-    {
       "id": "pros-cons",
       "icon": "GitCompareArrows",
       "title": "Pros and Cons of Surrendering an LIC Policy",
@@ -129,7 +142,7 @@
           "headers": ["Pros (When It Might Make Sense)", "Cons (Major Drawbacks)"],
           "rows": [
             ["<strong>Instant Liquidity:</strong> You get immediate cash to meet an urgent financial need.", "<strong>Significant Financial Loss:</strong> You often get back much less than you've paid, especially in the early years."],
-            ["<strong>Stops Premium Payments:</strong> Provides relief if you can't afford the premiums.", "<strong>Loss of Life Cover:</strong> You forfeit the primary benefit of the policy—the life insurance protection for your family."],
+            ["<strong>Stops Premium Payments:</strong> Provides relief if you can’t afford the premiums.", "<strong>Loss of Life Cover:</strong> You forfeit the primary benefit of the policy—the life insurance protection for your family."],
             ["<strong>Reallocation of Funds:</strong> Allows you to move money from a low-return policy to potentially higher-growth investments.", "<strong>Higher Cost of New Insurance:</strong> If you seek new insurance later, it will be more expensive due to your increased age."]
           ]
         }
@@ -149,8 +162,8 @@
           "items": [
             "<strong>Make the Policy Paid-Up:</strong> If you stop paying premiums after the minimum period, the policy continues with a reduced sum assured instead of ending. This avoids immediate loss, keeps some insurance in force, and you still get a maturity value later.",
             "<strong>Take a Loan Against the Policy:</strong> You can borrow against your policy's surrender value for short-term needs. This gives you immediate funds without terminating your insurance cover.",
-            "<strong>Switch to a Term Plan + Invest Difference:</strong> If low returns are the issue, buy a pure term insurance plan for adequate cover (at a much cheaper premium) and invest the remaining money in higher-return instruments like mutual funds. This often yields better long-term results. <br>👉 <strong><a href='#' class='text-primary font-bold hover:underline'>Compare Term Insurance Plans with ₹1 Cr cover for low premiums</a></strong>",
-            "<strong>Continue or Partial Surrender:</strong> For money-back or ULIP plans, check if you can withdraw bonuses or use partial withdrawal options instead of a full surrender. Some plans may also allow reducing the premium frequency or sum assured."
+            "<strong>Switch to a Term Plan + Invest Difference:</strong> If low returns are the issue, buy a pure term insurance plan for adequate cover (at a much cheaper premium) and invest the remaining money in higher-return instruments like mutual funds. This often yields better results in the long run. <br>👉 <strong><a href='#' class='text-primary font-bold hover:underline'>Compare Term Insurance Plans with ₹1 Cr cover for low premiums</a></strong>",
+            "<strong>Continue or Partial Surrender:</strong> For money-back or ULIP plans, check if you can withdraw some bonus or use partial withdrawal options instead of a full surrender (if applicable). Also mention the option of reducing the premium frequency or sum assured (if any such options exist) as alternatives to outright surrender."
           ]
         }
       ]
