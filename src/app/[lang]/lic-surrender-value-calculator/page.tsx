@@ -1,4 +1,5 @@
 
+
 import { getDictionary } from "@/lib/dictionaries";
 import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
@@ -10,12 +11,12 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
     const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-    const pageUrl = `${siteUrl}/${params.lang}/lic-surrender-value-calculator`;
+    const pageUrl = `/${params.lang}/lic-surrender-value-calculator`;
     // We are fetching the english dictionary specifically, as it contains the most complete data for schema.
     const pageDict = (await import(`@/dictionaries/en/lic-surrender-value-calculator.json`)).default;
 
     const faqSection = pageDict.sections.find((s:any) => s.id === 'faq');
-    const faqItems = faqSection ? faqSection.content.find((c: any) => c.type === 'faq')?.items : [];
+    const faqItems = (faqSection?.content.find((c: any) => c.type === 'faq') as any)?.items ?? [];
 
     const faqSchema = {
       "@context": "https://schema.org",
@@ -31,7 +32,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     };
     
     const howToSection = pageDict.sections.find((s:any) => s.id === 'how-to-surrender');
-    const howToSteps = howToSection ? howToSection.content.find((c: any) => c.type === 'list')?.items : [];
+    const howToSteps = (howToSection?.content.find((c: any) => c.type === 'list') as any)?.items ?? [];
 
     const howToSchema = {
         "@context": "https://schema.org",

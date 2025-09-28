@@ -1,4 +1,5 @@
 
+
 import {
   Landmark,
   Baby,
@@ -14,7 +15,7 @@ import {
   ShieldCheck,
   Calculator,
 } from 'lucide-react';
-import type { Calculator as CalculatorType } from '@/types';
+import type { Calculator as CalculatorType } from '@/lib/types';
 
 export const calculators: CalculatorType[] = [
   {
