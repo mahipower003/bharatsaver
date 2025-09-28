@@ -13,13 +13,13 @@ import { Input } from '@/components/ui/input';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { AlertTriangle } from 'lucide-react';
 
-// Updated schema to take accumulated bonus directly
+// Updated schema to match the new, more detailed user inputs
 const formSchema = z.object({
   premiumsPaid: z.coerce.number().min(1, "Total premiums paid must be positive."),
+  sumAssured: z.coerce.number().min(1, "Sum assured must be positive."),
   policyTerm: z.coerce.number().min(5, "Policy term must be at least 5 years."),
   yearsPaid: z.coerce.number().min(2, "Premiums must be paid for at least 2 years to acquire a surrender value."),
-  sumAssured: z.coerce.number().min(1, "Sum assured must be positive."),
-  accumulatedBonus: z.coerce.number().min(0).default(0),
+  accumulatedBonus: z.coerce.number().min(0, "Bonus cannot be negative.").default(0),
 });
 
 type FormValues = z.infer<typeof formSchema>;
@@ -31,6 +31,7 @@ type CalculationResult = {
   bonusSvf: number;
   gsvPremiums: number;
   gsvBonus: number;
+  paidUpSumAssured: number;
 };
 
 export function LicSurrenderValueCalculator({ dictionary }: { dictionary: any }) {
@@ -41,9 +42,9 @@ export function LicSurrenderValueCalculator({ dictionary }: { dictionary: any })
     resolver: zodResolver(formSchema),
     defaultValues: {
       premiumsPaid: 210000,
+      sumAssured: 1000000,
       policyTerm: 25,
       yearsPaid: 5,
-      sumAssured: 1000000,
       accumulatedBonus: 225000,
     },
   });
@@ -60,34 +61,33 @@ export function LicSurrenderValueCalculator({ dictionary }: { dictionary: any })
         return;
     }
     
-    // GSV Factor for premiums
-    const gsvFactor = values.yearsPaid <= 3 ? 0.3 :
-                     values.yearsPaid <= 4 ? 0.5 :
-                     values.yearsPaid <= 5 ? 0.5 :
-                     values.yearsPaid <= 6 ? 0.5 :
+    // --- GSV Calculation Logic ---
+    const gsvFactorPremiums = values.yearsPaid <= 3 ? 0.3 :
                      values.yearsPaid <= 7 ? 0.5 :
                      Math.min(0.9, 0.5 + (values.yearsPaid - 7) * (0.4 / (values.policyTerm - 8)));
 
-    // Bonus Surrender Value Factor
-    const bonusSvf = Math.min(0.2, (0.13 + (0.01 * values.yearsPaid)));
+    const bonusSurrenderValueFactor = Math.min(0.2, (0.13 + (0.01 * values.yearsPaid)));
 
-    const gsvPremiums = values.premiumsPaid * gsvFactor;
-    const gsvBonus = values.accumulatedBonus * bonusSvf;
+    const gsvPremiums = values.premiumsPaid * gsvFactorPremiums;
+    const gsvBonus = values.accumulatedBonus * bonusSurrenderValueFactor;
     const guaranteedSurrenderValue = gsvPremiums + gsvBonus;
 
-    // SSV Calculation (This is an illustrative formula and varies by plan/time)
-    // A more realistic SSV is (Paid-up Value + Vested Bonus) * SSV Factor
-    const paidUpValue = values.sumAssured * (values.yearsPaid / values.policyTerm);
-    const ssvFactor = 0.35; // This is a highly variable factor set by LIC
-    const specialSurrenderValue = (paidUpValue + values.accumulatedBonus) * ssvFactor;
+    // --- SSV Calculation (Heuristic Method as per spec) ---
+    const paidUpRatio = values.yearsPaid / values.policyTerm;
+    const paidUpSumAssured = values.sumAssured * paidUpRatio;
+    
+    // SSV Factor estimation curve
+    const ssvFactor = 0.35 + (values.yearsPaid / values.policyTerm) * 0.55; // Simple curve from ~35% to 90%
+    const specialSurrenderValue = (paidUpSumAssured + values.accumulatedBonus) * ssvFactor;
 
     setResult({
       guaranteedSurrenderValue,
-      specialSurrenderValue: Math.max(guaranteedSurrenderValue, specialSurrenderValue), // SSV is never less than GSV
-      gsvFactor: gsvFactor * 100,
-      bonusSvf: bonusSvf * 100,
+      specialSurrenderValue: Math.max(guaranteedSurrenderValue, specialSurrenderValue), // SSV is always >= GSV
+      gsvFactor: gsvFactorPremiums * 100,
+      bonusSvf: bonusSurrenderValueFactor * 100,
       gsvPremiums,
       gsvBonus,
+      paidUpSumAssured,
     });
     
     setIsLoading(false);
@@ -107,7 +107,7 @@ export function LicSurrenderValueCalculator({ dictionary }: { dictionary: any })
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <FormField control={form.control} name="premiumsPaid" render={({ field }) => (<FormItem><FormLabel>{dictionary.premiums_paid_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
                 <FormField control={form.control} name="sumAssured" render={({ field }) => (<FormItem><FormLabel>{dictionary.sum_assured_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
-                 <FormField control={form.control} name="accumulatedBonus" render={({ field }) => (<FormItem><FormLabel>{dictionary.accumulated_bonus_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
+                <FormField control={form.control} name="accumulatedBonus" render={({ field }) => (<FormItem><FormLabel>{dictionary.accumulated_bonus_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
                 <FormField control={form.control} name="policyTerm" render={({ field }) => (<FormItem><FormLabel>{dictionary.policy_term_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
                 <FormField control={form.control} name="yearsPaid" render={({ field }) => (<FormItem><FormLabel>{dictionary.years_paid_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
               </div>
@@ -138,6 +138,7 @@ export function LicSurrenderValueCalculator({ dictionary }: { dictionary: any })
                  <div className="border p-4 rounded-lg bg-primary/10">
                     <p className="text-sm text-muted-foreground">{dictionary.ssv_label}</p>
                     <p className="text-2xl font-bold text-primary">{formatCurrency(result.specialSurrenderValue)}</p>
+                     <p className="text-xs text-muted-foreground mt-1">Paid-up Value: {formatCurrency(result.paidUpSumAssured)}</p>
                 </div>
             </div>
             
