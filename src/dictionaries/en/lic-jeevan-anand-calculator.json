@@ -11,6 +11,12 @@
         "sum_assured_label": "Sum Assured (₹)",
         "calculate_button": "Calculate Benefits",
         "calculating": "Calculating...",
+        "riders_title": "Optional Riders",
+        "addb_rider_label": "Accidental Death & Disability Benefit Rider",
+        "term_rider_label": "Term Assurance Rider",
+        "assumptions_title": "Assumptions & Disclaimer",
+        "assumptions_body": "Premiums include GST (4.5% 1st year, 2.25% after). Bonus rates (₹45/1000) & FAB (₹100/1000) are illustrative and not guaranteed.",
+        "pdf_button": "Print / Save PDF",
         "results_note": "Disclaimer: All values are estimates. GST @4.5% (1st year) is included. Bonus rates are illustrative and not guaranteed."
     },
     "article": {
@@ -156,12 +162,20 @@
                         { "q": "Is Jeevan Anand maturity taxable under Section 10(10D)?", "a": "Generally, the maturity amount is tax-free under Section 10(10D), provided the annual premium does not exceed 10% of the Sum Assured." },
                         { "q": "How much premium do I pay for ₹10 lakh cover under Jeevan Anand?", "a": "For a 30-year-old with a 25-year term, the annual premium for a ₹10 lakh cover is approximately ₹45,000. Use the calculator above for a precise figure." },
                         { "q": "Can I add riders to Jeevan Anand and how do they affect premiums?", "a": "Yes, you can add riders like the Accidental Death & Disability Benefit Rider. This will increase your premium slightly, and our calculator can show you the impact." },
+                        { "q": "What documents are needed to get a surrender estimate from LIC?", "a": "To get a surrender value quotation, you need to submit a written request along with your policy document at your LIC servicing branch. A specific form may be required." },
                         { "q": "What is the difference between Jeevan Anand Plan 715 and older Plan numbers?", "a": "Plan 715 is the updated version conforming to new IRDAI guidelines, with slight changes in bonus structure and surrender value calculations compared to older plans like 149." },
                         { "q": "Should I surrender my Jeevan Anand policy or convert it to paid-up?", "a": "If you don't need cash urgently, converting to a 'paid-up' policy is almost always better as it keeps your life cover active with reduced benefits. Surrender only for a dire financial emergency." },
-                        { "q": "How to surrender LIC Jeevan Anand policy?", "a": "To surrender, you must visit your LIC servicing branch with the original policy bond, a filled Surrender Form (No. 5074), and your KYC documents. The policy must have completed at least 2-3 years of premium payments." },
-                        { "q": "How is maturity amount calculated in LIC Jeevan Anand?", "a": "The maturity amount is the sum of the Basic Sum Assured + all accumulated Simple Reversionary Bonuses over the term + a one-time Final Additional Bonus (FAB), if declared by LIC." },
-                        { "q": "How to get a loan on LIC Jeevan Anand policy?", "a": "You can apply for a loan after the policy has acquired a surrender value (typically after 2-3 years). The loan amount can be up to 90% of the surrender value. You need to apply at your LIC branch with the policy document." },
-                        { "q": "What is the policy term in LIC Jeevan Anand?", "a": "The policy term is the duration for which you pay premiums and are covered. For Plan 715, it can range from 15 to 35 years. The life cover, however, continues until age 100." }
+                        { "q": "How do bonuses affect the maturity outcome?", "a": "Bonuses, including the Simple Reversionary Bonus and FAB, are non-guaranteed additions that significantly increase your final payout. They are based on LIC's profits and can make up a large portion of the total maturity value." },
+                        { "q": "how to surrender lic jeevan anand policy", "a": "To surrender, you must visit your LIC servicing branch with the original policy bond, a filled Surrender Form (No. 5074), and your KYC documents. The policy must have completed at least 2-3 years of premium payments." },
+                        { "q": "how to withdraw money from lic jeevan anand", "a": "You can withdraw money in two main ways: 1) as a lump sum at maturity, or 2) by surrendering the policy prematurely for its cash value after 2-3 years. You can also take a loan against the policy." },
+                        { "q": "how is maturity amount calculated in lic jeevan anand", "a": "The maturity amount is the sum of the Basic Sum Assured + all accumulated Simple Reversionary Bonuses over the term + a one-time Final Additional Bonus (FAB), if declared by LIC." },
+                        { "q": "how to buy lic jeevan anand online", "a": "While you can research and get quotes online through LIC's portal or aggregator websites, the final purchase process for Jeevan Anand typically requires an LIC agent or a visit to an LIC branch to complete the paperwork and medicals." },
+                        { "q": "how to check lic jeevan anand policy status", "a": "You can check your policy status online by registering on the LIC e-Services portal. You'll need your policy number to register and log in to view details like premium due dates, bonus status, and more." },
+                        { "q": "how to get loan on lic jeevan anand policy", "a": "You can apply for a loan after the policy has acquired a surrender value (typically after 2-3 years). The loan amount can be up to 90% of the surrender value. You need to apply at your LIC branch with the policy document." },
+                        { "q": "what is survival benefit in lic jeevan anand", "a": "Unlike a money-back plan, Jeevan Anand (915) does not have periodic 'survival benefits'. The main payout is the lump sum at the end of the policy term. However, the life cover continues even after maturity, which is a unique feature." },
+                        { "q": "how to change nominee in lic jeevan anand online", "a": "Currently, changing the nominee for an LIC policy is an offline process. You need to fill out the 'Nominee Change Form' and submit it at your servicing LIC branch along with a copy of your policy and KYC documents." },
+                        { "q": "is lic jeevan anand good", "a": "Jeevan Anand is a good choice for conservative investors who want guaranteed savings, life cover, and tax benefits in a single product. It provides a decent, tax-free return with very low risk. However, it may not be suitable for those seeking high, market-linked growth." },
+                        { "q": "what is policy term in lic jeevan anand", "a": "The policy term is the duration for which you pay premiums and are covered for the primary benefits. For Plan 715, it can range from 15 to 35 years. A unique feature is that the life cover (equal to the Sum Assured) continues even after the policy term, until the policyholder's death." }
                     ]}
                 ]
             },
