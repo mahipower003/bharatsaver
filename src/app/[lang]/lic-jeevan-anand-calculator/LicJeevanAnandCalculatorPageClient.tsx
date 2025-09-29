@@ -9,7 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { CheckCircle, HelpCircle, ShieldCheck, TrendingUp, SlidersHorizontal, BarChart2, StepForward, GitCompareArrows, FileText, Users, BookUser, Star, Calculator } from "lucide-react";
-import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
+import { Alert, AlertTitle, AlertDescription } from '../ui/alert';
 
 function getIcon(iconName: string) {
     switch (iconName) {
@@ -146,6 +146,20 @@ export default function LicJeevanAnandCalculatorPageClient({
         </div>
 
         <ArticleContent />
+        
+        {pageDict.article.conclusion && (
+            <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
+                <CardHeader>
+                    <CardTitle className="flex items-center gap-3">
+                        <Star className="h-7 w-7 text-accent" />
+                        <h2 className="text-2xl font-bold">{pageDict.article.conclusion.title}</h2>
+                    </CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.article.conclusion.body }}></p>
+                </CardContent>
+            </Card>
+        )}
         
         <div className="mt-12 print-hide">
             <AuthorCard dictionary={dictionary.author_card} />

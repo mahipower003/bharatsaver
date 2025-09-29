@@ -148,11 +148,10 @@
             {
                 "id": "faq",
                 "icon": "HelpCircle",
-                "title": "FAQs (15–20 PAA style)",
+                "title": "Your Questions, Answered: The No-Nonsense FAQ",
                 "content": [
                     { "type": "faq", "items": [
-                        { "q": "What is the LIC Jeevan Anand maturity formula?", "a": "The simple formula is: <strong>Maturity = Sum Assured + (Vested Bonus × Policy Term) + Final Additional Bonus (FAB)</strong>. My calculator uses this exact logic to give you a clear estimate." },
-                        { "q": "How to use the LIC Jeevan Anand calculator (Plan 715)?", "a": "It's easy. Just enter your age, the Sum Assured you want, and the policy term. I've pre-filled typical bonus rates to make it simpler. Click 'Calculate' to see your estimated premium, maturity, and surrender values instantly." },
+                        { "q": "What is the LIC Jeevan Anand maturity formula?", "a": "Maturity = Sum Assured + (Vested Simple Reversionary Bonus × Policy Term) + Final Additional Bonus (if declared). Use the calculator with the bonus/FAB inputs for estimates." },
                         { "q": "How accurate is an online Jeevan Anand calculator?", "a": "It is an estimate that depends on the bonus and FAB rates you input. Final maturity is determined by LIC and depends on declared bonuses and underwriting." },
                         { "q": "When does Jeevan Anand get surrender value?", "a": "Usually after 2 full years of premium payment; the Guaranteed Surrender Value and Special Surrender Value depend on years paid and plan rules." },
                         { "q": "Is Jeevan Anand maturity taxable under Section 10(10D)?", "a": "Generally tax-free under 10(10D) subject to conditions (e.g., premium limits). Consult a tax advisor for your specific case." },
@@ -160,7 +159,7 @@
                         { "q": "Can NRIs buy Jeevan Anand and use this calculator?", "a": "NRIs can use the calculator; actual purchase eligibility depends on LIC rules and FEMA regulations — check with LIC/agent." },
                         { "q": "How does adding riders affect maturity?", "a": "Riders increase premium but typically do not change the maturity sum assured; rider benefits are payable separately on events covered." },
                         { "q": "Can I take a loan against Jeevan Anand?", "a": "Yes — loans are generally available after acquiring surrender value, commonly up to 80–90% of the Special Surrender Value." },
-                        { "q": "How much do bonuses really affect the maturity?", "a": "Massively. They are the engine of your returns. Even a small change in the bonus rate per ₹1,000 Sum Assured compounds over the term and can change your final payout by lakhs. That's why using realistic rates is so important." },
+                        { "q": "How do bonuses really affect the maturity?", "a": "Massively. They are the engine of your returns. Even a small change in the bonus rate per ₹1,000 Sum Assured compounds over the term and can change your final payout by lakhs. That's why using realistic rates is so important." },
                         { "q": "What documents are needed to surrender a Jeevan Anand policy?", "a": "You'll need the original policy bond, a filled surrender form (Form 5074), your identity proof (PAN/Aadhaar), and a cancelled cheque for your bank details. Always confirm the latest list with LIC." },
                         { "q": "What is the survival benefit in LIC Jeevan Anand?", "a": "Unlike a money-back plan, Jeevan Anand (915) does not have periodic 'survival benefits'. The main payout is the lump sum at the end of the policy term. However, the life cover continues even after maturity, which is a unique feature." },
                         { "q": "How to change nominee in LIC Jeevan Anand online?", "a": "Currently, changing the nominee for an LIC policy is an offline process. You need to fill out the 'Nominee Change Form' and submit it at your servicing LIC branch along with a copy of your policy and KYC documents." },
@@ -176,6 +175,10 @@
                     {"type":"paragraph", "text": "You've got the numbers, now what? I suggest you download a PDF of your results for your records. If you're still weighing your options, you can use my other calculators to compare this plan against alternatives. And if you're ready to move forward, the next step is to talk to a qualified financial advisor or an LIC agent."}
                 ]
             }
-        ]
+        ],
+        "conclusion": {
+            "title": "My Final Word: Is Jeevan Anand a Good Investment in 2025?",
+            "body": "After all the math, here's my honest take: Jeevan Anand is a solid, ultra-safe choice if you value guarantees and want a simple 'save and forget' product that combines savings with lifelong insurance. The returns (~6%) won't beat equity mutual funds, but they are reliable and tax-free, which is a huge plus. It’s not for aggressive wealth builders, but for someone seeking stability and peace of mind, it’s one of the best endowment plans LIC has to offer. I hope this calculator has given you the clarity to decide if it's the right fit for *your* financial story."
+        }
     }
 }
