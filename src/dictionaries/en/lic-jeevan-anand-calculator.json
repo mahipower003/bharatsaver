@@ -3,6 +3,7 @@
     "meta_title": "LIC Jeevan Anand Calculator (Plan 715) — Premium, Maturity & Surrender Estimates",
     "meta_description": "Use our free LIC Jeevan Anand calculator (Plan 715) to estimate premiums, maturity, surrender and paid-up values. Includes worked examples, bonus & FAB inputs, PDF download.",
     "h1": "LIC Jeevan Anand Calculator (Plan 715) — Estimate Premium, Maturity & Surrender",
+    "top_cta": "<strong>Get an instant estimate:</strong> Enter your plan, sum assured and term — click <a href=\"#calculator-widget\">Calculate</a> to view maturity, surrender and paid-up values. <a href=\"#download\">Download result (PDF)</a> • <a href=\"/book-cfp\">Book a CFP call</a>",
     "tool": {
         "title": "Jeevan Anand Calculator (Plan 715)",
         "form_description": "Enter your details to estimate the premium and maturity benefits. This lic jeevan anand calculator is online and free to use.",
@@ -33,7 +34,7 @@
                       "rows": [
                         ["₹5,00,000", "20 yrs", "≈ ₹28,500", "≈ ₹9,80,000"],
                         ["₹10,00,000", "25 yrs", "≈ ₹45,000", "≈ ₹22,25,000"],
-                        ["₹25,00,000", "21 yrs", "≈ ₹1,25,000", "≈ ₹51,00,000"]
+                        ["₹1,00,00,000", "20 yrs", "≈ ₹5,70,000", "≈ ₹2.02 Cr"]
                       ]
                     }
                 ]
@@ -153,12 +154,12 @@
                     { "type": "faq", "items": [
                         { "q": "What is the LIC Jeevan Anand maturity formula?", "a": "Maturity = Sum Assured + (Vested Simple Reversionary Bonus × Policy Term) + Final Additional Bonus (if declared). Use the calculator with the bonus/FAB inputs for estimates." },
                         { "q": "How to use the LIC Jeevan Anand calculator (Plan 715)?", "a": "Simply enter your age, desired Sum Assured, and policy term. The calculator will instantly estimate your premium, maturity benefits, and provide a detailed breakdown." },
-                        { "q": "How accurate is an online Jeevan Anand calculator?", "a": "It’s an estimate — accurate when you input the correct bonus/FAB and premium. Actual maturity is determined by LIC and depends on final declared bonuses and underwriting." },
+                        { "q": "How accurate is an online Jeevan Anand calculator?", "a": "It is an estimate that depends on the bonus and FAB rates you input. Final maturity is determined by LIC and depends on declared bonuses and underwriting." },
                         { "q": "When does Jeevan Anand get surrender value?", "a": "Typically after 2 full years of premiums. Eligibility and rates vary by plan; our calculator shows GSV & SSV estimates based on years paid." },
                         { "q": "Is Jeevan Anand maturity taxable under Section 10(10D)?", "a": "Generally tax-free, but conditions apply (eg. premium rules). Always check exact tax treatment for your case or consult a tax advisor." },
                         { "q": "Should I surrender or make my policy paid-up?", "a": "Paid-up often gives higher final benefits (for long-term policies) — surrender gives immediate cash. Use the calculator’s paid-up vs surrender comparison to decide." },
                         { "q": "Can NRIs buy Jeevan Anand and use this calculator?", "a": "NRIs can use the calculator; actual purchase and eligibility depend on LIC rules and FEMA regulations — check with LIC/agent." },
-                        { "q": "How does adding riders affect maturity?", "a": "Riders increase premium but usually don’t increase the maturity sum assured; rider benefits are paid separately in case of covered events." },
+                        { "q": "How does adding riders affect maturity?", "a": "Riders increase premium but usually do not increase the maturity sum assured; rider benefits are paid separately in case of covered events." },
                         { "q": "Can I take a loan against my Jeevan Anand policy?", "a": "Yes — loans are generally available after the policy acquires surrender value. Typical loan amount is up to 80–90% of the SSV." },
                         { "q": "How do bonuses affect maturity?", "a": "Very significantly — a small change in bonus/1000 SA compounds across the term. Use realistic historical averages or your policy statement for best estimates." },
                         { "q": "What documents are needed to surrender a Jeevan Anand policy?", "a": "Policy bond, identity proof, bank details, surrender form and discharge form (subject to LIC’s updated requirements)." },
@@ -179,3 +180,5 @@
         ]
     }
 }
+
+    
