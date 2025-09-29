@@ -1,10 +1,11 @@
+
 {
-    "meta_title": "LIC Jeevan Anand Calculator (Plan 715) — Premium, Maturity & Surrender Estimates",
-    "meta_description": "Use our free LIC Jeevan Anand calculator (Plan 715) to estimate premiums, maturity, surrender and paid-up values. Includes worked examples, bonus & FAB inputs, PDF download.",
+    "meta_title": "LIC Jeevan Anand Calculator (Plan 915) — Premium, Maturity & Surrender Estimates",
+    "meta_description": "Use our free LIC Jeevan Anand calculator (Plan 915) to estimate premiums, maturity, surrender and paid-up values. Includes worked examples, bonus & FAB inputs, PDF download.",
     "h1": "I Built This LIC Jeevan Anand Calculator to Give You the Unvarnished Truth (2025)",
     "top_cta": "<strong>Get an instant estimate:</strong> Enter your plan, sum assured and term — click <a href=\"#calculator\">Calculate</a> to view maturity, surrender and paid-up values. <a href=\"#download\">Download result (PDF)</a> • <a href=\"/book-cfp\">Book a CFP call</a>",
     "tool": {
-        "title": "Jeevan Anand Calculator (Plan 715)",
+        "title": "Jeevan Anand Calculator (Plan 915)",
         "form_description": "This isn't just another calculator. I've designed it to give you the clarity that LIC documents often don't. Let's get started.",
         "age_label": "Your Age",
         "term_label": "Policy Term",
@@ -43,9 +44,9 @@
                 "icon": "Calculator",
                 "title": "How My Jeevan Anand Calculator Works (The Math Behind the Magic)",
                 "content": [
-                    { "type": "paragraph", "text": "I built this calculator to pull back the curtain on how LIC's returns are actually calculated. It's not a black box. It combines the guaranteed parts with the variable bonuses to give you a projection you can actually understand." },
-                    { "type": "paragraph", "text": "<h3>The Maturity Formula: SA + Vested Bonus + FAB</h3><p>At its heart, the calculation for your final payout is this simple formula:</p><p class='font-mono bg-muted p-4 rounded-md my-4 text-center'><strong>Maturity Value = Sum Assured + Vested Bonuses + Final Additional Bonus (FAB)</strong></p><p>Let me show you with a real example. For a ₹10 Lakh policy over 25 years (with an illustrative bonus rate of ₹45 and FAB of ₹100 per ₹1000 SA):</p><ul><li><strong>Sum Assured:</strong> This is the guaranteed part, your base: ₹10,00,000</li><li><strong>Vested Bonus:</strong> This is the big variable. My math: (10,00,000 / 1000) * 45 * 25 = ₹11,25,000</li><li><strong>FAB (Loyalty Bonus):</strong> Your reward for staying long-term: (10,00,000 / 1000) * 100 = ₹1,00,000</li><li><strong>Your Total Estimated Payout:</strong> ₹10,00,000 + ₹11,25,000 + ₹1,00,000 = <strong>₹22,25,000</strong></li></ul>" },
-                    { "type": "paragraph", "text": "<h3>Where do the bonus & FAB numbers come from?</h3><p>Here's the honest truth: bonuses aren't guaranteed. Anyone who tells you otherwise is selling something. My calculator uses illustrative rates taken directly from analyzing LIC's past bonus declarations. For the official-but-less-clear version, you can always see the <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-new-jeevan-anand-plan' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>LIC New Jeevan Anand brochure</a>.</p>" }
+                    { "type": "div", "text": "I built this calculator to pull back the curtain on how LIC's returns are actually calculated. It's not a black box. It combines the guaranteed parts with the variable bonuses to give you a projection you can actually understand." },
+                    { "type": "div", "text": "<h3>The Maturity Formula: SA + Vested Bonus + FAB</h3><p>At its heart, the calculation for your final payout is this simple formula:</p><p class='font-mono bg-muted p-4 rounded-md my-4 text-center'><strong>Maturity Value = Sum Assured + Vested Bonuses + Final Additional Bonus (FAB)</strong></p><p>Let me show you with a real example. For a ₹10 Lakh policy over 25 years (with an illustrative bonus rate of ₹45 and FAB of ₹100 per ₹1000 SA):</p><ul><li><strong>Sum Assured:</strong> This is the guaranteed part, your base: ₹10,00,000</li><li><strong>Vested Bonus:</strong> This is the big variable. My math: (10,00,000 / 1000) * 45 * 25 = ₹11,25,000</li><li><strong>FAB (Loyalty Bonus):</strong> Your reward for staying long-term: (10,00,000 / 1000) * 100 = ₹1,00,000</li><li><strong>Your Total Estimated Payout:</strong> ₹10,00,000 + ₹11,25,000 + ₹1,00,000 = <strong>₹22,25,000</strong></li></ul>" },
+                    { "type": "div", "text": "<h3>Where do the bonus & FAB numbers come from?</h3><p>Here's the honest truth: bonuses aren't guaranteed. Anyone who tells you otherwise is selling something. My calculator uses illustrative rates taken directly from analyzing LIC's past bonus declarations. For the official-but-less-clear version, you can always see the <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-new-jeevan-anand-plan' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>LIC New Jeevan Anand brochure</a>.</p>" }
                 ]
             },
             {
@@ -67,7 +68,7 @@
                 "title": "Worked examples & IRR (3 examples; show math & IRR)",
                 "content": [
                     {"type": "examples", "items": [
-                        {"title": "The '10 Lakh' Question: A Real-World Example", "body": "<p>This is the most common scenario people ask me about. Let's run the numbers for a 30-year-old.</p><p><strong>Inputs:</strong> Age: 30, Sum Assured: ₹10 Lakh, Term: 25 years, Bonus Rate: ₹45, FAB Rate: ₹100.</p><p><strong>My Calculation:</strong><br/>- Approx. Yearly Premium (The cost): ₹45,000<br/>- Total You Pay Over 16 Years: ~₹11.25 Lakh<br/>- Estimated Payout (The reward): <strong>~₹22,25,000</strong><br/>- <strong>Your Approx. Tax-Free Return (IRR): ~6.05%</strong>. This is the real number you should compare against an FD or Mutual Fund.</p>"},
+                        {"title": "The '10 Lakh' Question: A Real-World Example", "body": "<p>This is the most common scenario people ask me about. Let's run the numbers for a 30-year-old.</p><p><strong>Inputs:</strong> Age: 30, Sum Assured: ₹10 Lakh, Term: 25 years, Bonus Rate: ₹45, FAB Rate: ₹100.</p><p><strong>My Calculation:</strong><br/>- Approx. Yearly Premium (The cost): ₹45,000<br/>- Total You Pay Over 25 Years: ~₹11.25 Lakh<br/>- Estimated Payout (The reward): <strong>~₹22,25,000</strong><br/>- <strong>Your Approx. Tax-Free Return (IRR): ~6.05%</strong>. This is the real number you should compare against an FD or Mutual Fund.</p>"},
                         {"title": "The Mid-Career Plan: ₹5 Lakh Cover for a 35-Year-Old", "body": "<p><strong>Inputs:</strong> Age: 35, SA: ₹5 Lakh, Term: 20 years, Bonus Rate: ₹42, FAB Rate: ₹70.</p><p><strong>My Calculation:</strong><br/>- Approx. Yearly Premium: ₹28,000<br/>- Total You Pay Over 20 Years: ~₹5.6 Lakh<br/>- Estimated Payout: <strong>~₹9,55,000</strong><br/>- <strong>Approx. Tax-Free Return (IRR): ~5.90%</strong></p>"},
                         {"title": "High SA: Age 40, SA ₹1 Crore, Term 20 yrs — show single high-net-worth scenario", "body": "<p>A lot of my clients ask, 'How do I get to 1 crore?' Here’s one way.</p><p><strong>Inputs:</strong> Age: 40, SA: ₹50 Lakh, Term: 20 years, Bonus Rate: ₹45, FAB Rate: ₹120.</p><p><strong>My Calculation:</strong><br/>- Approx. Yearly Premium: ~₹2.85 Lakh<br/>- Total You Pay Over 20 Years: ~₹57 Lakh<br/>- Estimated Payout: <strong>~₹1.02 Crore</strong><br/>- <strong>Approx. Tax-Free Return (IRR): ~5.85%</strong></p>"}
                     ]}
@@ -80,7 +81,7 @@
                 "content": [
                     {"type": "paragraph", "text":"Thinking of stopping your premiums? This is a critical decision. You have two main options, and choosing the wrong one can cost you dearly. Let's break it down so you can make the right call."},
                     {"type": "list", "items": [
-                        "<strong>Paid-Up Value:</strong> If you've paid for at least 2 years, you can just stop. The policy doesn't die. It becomes 'Paid-Up' with a lower Sum Assured. You'll still get a payout at the end. My calculator estimates this for you.",
+                        "<strong>Paid-Up Value:</strong> If you've paid for at least 2 full years, you can just stop. The policy doesn't die. It becomes 'Paid-Up' with a lower Sum Assured. You'll still get a payout at the end. My calculator estimates this for you.",
                         "<strong>Surrender Value:</strong> This is where you terminate the policy completely and take a one-time cash payment. You lose the life cover. The value is split into Guaranteed (GSV) and Special (SSV). You always get the higher of the two, which is almost always the SSV. My calculator gives you a realistic estimate for this."
                     ]},
                     {"type": "alert", "variant": "default", "title": "My Honest Advice: Surrender vs. Paid-up", "text":"If you don't need the cash urgently, making the policy 'Paid-Up' is almost always the smarter financial move. You keep some life cover and your money continues to grow. Only surrender if you have a dire, immediate cash need that you can't solve any other way."}
@@ -89,7 +90,7 @@
             {
                 "id": "key-features",
                 "icon": "ShieldCheck",
-                "title": "Jeevan Anand (Plan 715) — Key features at a glance",
+                "title": "Jeevan Anand (Plan 915) — Key features at a glance",
                 "content": [
                     {"type": "table", "headers": ["Feature", "Detail"], "rows": [
                         ["Plan UIN", "512N279V03"],
@@ -97,7 +98,7 @@
                         ["Entry Age", "18 to 50 years"],
                         ["Policy Term", "15 to 35 years"],
                         ["Sum Assured", "Minimum ₹1,00,000 (No upper limit)"],
-                        ["Death Benefit", "125% of Basic SA or 7x Annualized Premium, plus bonuses."],
+                        ["Death Benefit", "Higher of 125% of Basic SA or 7x Annualized Premium, plus bonuses."],
                         ["Maturity Benefit", "Sum Assured + Vested Bonuses + Final Additional Bonus (FAB)."],
                         ["Official Link", "<a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-new-jeevan-anand-plan' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>View on LIC Website</a>"]
                     ]}
@@ -163,7 +164,7 @@
                         { "q": "What documents are needed to surrender a Jeevan Anand policy?", "a": "You'll need the original policy bond, a filled surrender form (Form 5074), your identity proof (PAN/Aadhaar), and a cancelled cheque for your bank details. Always confirm the latest list with LIC." },
                         { "q": "What is the survival benefit in LIC Jeevan Anand?", "a": "Unlike a money-back plan, Jeevan Anand (915) does not have periodic 'survival benefits'. The main payout is the lump sum at the end of the policy term. However, the life cover continues even after maturity, which is a unique feature." },
                         { "q": "How to change nominee in LIC Jeevan Anand online?", "a": "Currently, changing the nominee for an LIC policy is an offline process. You need to fill out the 'Nominee Change Form' and submit it at your servicing LIC branch along with a copy of your policy and KYC documents." },
-                        { "q": "What is the policy term in LIC Jeevan Anand?", "a": "The policy term is the duration for which you pay premiums and are covered for the primary benefits. For Plan 715, it can range from 15 to 35 years. A unique feature is that the life cover (equal to the Sum Assured) continues even after the policy term, until the policyholder's death." }
+                        { "q": "What is the policy term in LIC Jeevan Anand?", "a": "The policy term is the duration for which you pay premiums and are covered for the primary benefits. For Plan 915, it can range from 15 to 35 years. A unique feature is that the life cover (equal to the Sum Assured) continues even after the policy term, until the policyholder's death." }
                     ]}
                 ]
             },
