@@ -20,28 +20,153 @@
                 "icon": "TrendingUp",
                 "title": "Quick Answer: Sample Jeevan Anand Estimates",
                 "content": [
-                    { "type": "paragraph", "text": "Here’s a quick look at estimated yearly premiums and maturity amounts for the New Jeevan Anand plan." },
+                    { "type": "paragraph", "text": "Here’s a quick look at estimated yearly premiums and maturity amounts for the New Jeevan Anand plan based on a standard 30-year-old individual. Use our calculator for a personalized estimate." },
                     {
                       "type": "table",
-                      "headers": ["Sum Assured", "Term", "Est. Premium (yr)", "Est. Maturity"],
+                      "headers": ["Sum Assured", "Term", "Est. Yearly Premium", "Est. Maturity Value"],
                       "rows": [
-                        ["₹5,00,000", "20 yrs", "≈₹31,000", "≈₹9,00,000"],
-                        ["₹10,00,000", "25 yrs", "≈₹59,468", "≈₹22,00,000"]
+                        ["₹5,00,000", "20 yrs", "≈ ₹28,500", "≈ ₹9,80,000"],
+                        ["₹10,00,000", "25 yrs", "≈ ₹45,000", "≈ ₹22,25,000"],
+                        ["₹25,00,000", "21 yrs", "≈ ₹1,25,000", "≈ ₹51,00,000"]
                       ]
                     }
                 ]
             },
             {
-                "id": "how-to-use",
-                "icon": "StepForward",
-                "title": "How to Use Our LIC Jeevan Anand Calculator",
+                "id": "how-it-works",
+                "icon": "Calculator",
+                "title": "How the Jeevan Anand Calculator Works",
                 "content": [
-                    { "type": "steps", "items": [
-                        {"title": "Choose Plan Preset", "description": "Select 'New Jeevan Anand (Plan 715)' from the preset to load typical bonus ranges."},
-                        {"title": "Enter Policy Details", "description": "Add your age, desired sum assured, and the policy term."},
-                        {"title": "Toggle Riders", "description": "Optionally include the Accidental Death & Disability Benefit rider to see its impact on the premium."},
-                        {"title": "Click 'Calculate'", "description": "Get instant estimates for premium, maturity, and surrender values, then download your results as a PDF if needed."}
+                    { "type": "paragraph", "text": "Our calculator demystifies the returns of Plan 715 by applying LIC's standard calculation methodology for traditional endowment plans. It combines guaranteed benefits with non-guaranteed bonuses to project your final maturity amount." },
+                    { "type": "paragraph", "text": "<h3>Maturity Formula Explained</h3><p>The core of the calculation lies in this formula:</p><p class='font-mono bg-muted p-4 rounded-md my-4 text-center'><strong>Maturity Value = Sum Assured + Vested Bonuses + Final Additional Bonus (FAB)</strong></p><p>A worked example: For a ₹10 Lakh policy over 25 years with a bonus rate of ₹45 and FAB of ₹100 per ₹1000 SA:</p><ul><li><strong>Sum Assured:</strong> ₹10,00,000</li><li><strong>Vested Bonus:</strong> (10,00,000 / 1000) * 45 * 25 = ₹11,25,000</li><li><strong>FAB:</strong> (10,00,000 / 1000) * 100 = ₹1,00,000</li><li><strong>Total:</strong> ₹10,00,000 + ₹11,25,000 + ₹1,00,000 = <strong>₹22,25,000</strong></li></ul>" },
+                    { "type": "paragraph", "text": "<h3>Where We Get Bonus & FAB Numbers</h3><p>Bonuses are not guaranteed and depend on LIC's performance. Our calculator uses illustrative rates based on historical data from sources like LIC's official bonus declarations and industry analysis. For official figures, always refer to the <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-new-jeevan-anand-plan' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>LIC New Jeevan Anand brochure</a>.</p>" }
+                ]
+            },
+            {
+                "id": "inputs-explained",
+                "icon": "SlidersHorizontal",
+                "title": "Inputs Explained",
+                "content": [
+                    {"type":"list", "items": [
+                        "<strong>Age & Term:</strong> Your entry age and the policy term are the primary factors that determine the premium rate.",
+                        "<strong>Sum Assured:</strong> This is the guaranteed amount your family receives on death or that you receive at maturity, before bonuses.",
+                        "<strong>Bonus per ₹1,000:</strong> The Simple Reversionary Bonus rate. An illustrative rate of ₹40-₹49 is typical.",
+                        "<strong>Final Additional Bonus (FAB):</strong> A loyalty bonus for long-term policies, also calculated per ₹1,000 SA. Can be left at 0 if unsure."
                     ]}
+                ]
+            },
+            {
+                "id": "worked-examples",
+                "icon": "FileText",
+                "title": "Worked Examples & IRR",
+                "content": [
+                    {"type": "examples", "items": [
+                        {"title": "Example A: Age 30, ₹10 Lakh Sum Assured, 25-Year Term", "body": "<p><strong>Inputs:</strong> Age: 30, SA: ₹10L, Term: 25, Bonus Rate: ₹45, FAB Rate: ₹100.</p><p><strong>Calculation:</strong><br/>- Approx. Yearly Premium: ₹45,000<br/>- Total Premium Paid (25 yrs): ~₹11.25 Lakh<br/>- Maturity Value: ₹10,00,000 (SA) + ₹11,25,000 (Bonus) + ₹1,00,000 (FAB) = <strong>₹22,25,000</strong><br/>- <strong>Approx. Tax-Free IRR: ~6.05%</strong></p>"},
+                        {"title": "Example B: Age 35, ₹5 Lakh Sum Assured, 20-Year Term", "body": "<p><strong>Inputs:</strong> Age: 35, SA: ₹5L, Term: 20, Bonus Rate: ₹42, FAB Rate: ₹70.</p><p><strong>Calculation:</strong><br/>- Approx. Yearly Premium: ₹28,000<br/>- Total Premium Paid (20 yrs): ~₹5.6 Lakh<br/>- Maturity Value: ₹5,00,000 (SA) + ₹4,20,000 (Bonus) + ₹35,000 (FAB) = <strong>₹9,55,000</strong><br/>- <strong>Approx. Tax-Free IRR: ~5.90%</strong></p>"},
+                        {"title": "Example C: High SA (NRI Scenario), Age 40, ₹1 Crore Sum Assured, 20-Year Term", "body": "<p><strong>Inputs:</strong> Age: 40, SA: ₹1Cr, Term: 20, Bonus Rate: ₹45, FAB Rate: ₹120.</p><p><strong>Calculation:</strong><br/>- Approx. Yearly Premium: ₹5,70,000<br/>- Total Premium Paid (20 yrs): ~₹1.14 Crore<br/>- Maturity Value: ₹1,00,00,000 (SA) + ₹90,00,000 (Bonus) + ₹12,00,000 (FAB) = <strong>₹2.02 Crore</strong><br/>- <strong>Approx. Tax-Free IRR: ~5.85%</strong></p>"}
+                    ]}
+                ]
+            },
+            {
+                "id": "surrender-paidup",
+                "icon": "GitCompareArrows",
+                "title": "Surrender & Paid-Up Values",
+                "content": [
+                    {"type": "paragraph", "text":"If you stop paying premiums after 2 full years, the policy doesn't lapse but continues with reduced benefits. You have two options: surrender for immediate cash or keep it as a 'Paid-up' policy."},
+                    {"type": "list", "items": [
+                        "<strong>Paid-Up Value:</strong> Your Sum Assured is reduced proportionately. Formula: `Paid-up SA = Basic SA × (Premiums Paid / Total Premiums Payable)`. You receive this reduced SA plus vested bonuses at maturity.",
+                        "<strong>Guaranteed Surrender Value (GSV):</strong> A percentage of total premiums paid plus a percentage of vested bonuses.",
+                        "<strong>Special Surrender Value (SSV):</strong> A non-guaranteed, higher value based on the Paid-up SA and vested bonuses. This is typically what LIC pays out. Our calculator provides an estimate for this."
+                    ]},
+                    {"type": "alert", "variant": "default", "title": "Example: Surrender value after 5 years", "text":"For a ₹10L, 25-year policy, if you stop paying after 5 years (total premium paid ~₹2.25L), your estimated surrender value (SSV) would be around <strong>₹1.5 Lakh</strong>. However, the Paid-up value at maturity would be significantly higher. It's often better to make the policy paid-up than to surrender."}
+                ]
+            },
+            {
+                "id": "key-features",
+                "icon": "ShieldCheck",
+                "title": "Jeevan Anand (Plan 715) — Key Features",
+                "content": [
+                    {"type": "table", "headers": ["Feature", "Detail"], "rows": [
+                        ["Plan UIN", "512N279V03"],
+                        ["Plan Type", "Non-linked, Participating, Individual, Life Assurance"],
+                        ["Entry Age", "18 to 50 years"],
+                        ["Policy Term", "15 to 35 years"],
+                        ["Sum Assured", "Minimum ₹1,00,000 (No upper limit)"],
+                        ["Death Benefit", "125% of Basic SA or 7x Annualized Premium, plus bonuses."],
+                        ["Maturity Benefit", "Sum Assured + Vested Bonuses + Final Additional Bonus (FAB)."],
+                        ["Official Link", "<a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-new-jeevan-anand-plan' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>View on LIC Website</a>"]
+                    ]}
+                ]
+            },
+            {
+                "id":"comparison",
+                "icon":"GitCompareArrows",
+                "title":"Jeevan Anand vs. Popular Alternatives",
+                "content":[
+                    {"type":"table", "headers":["Feature", "Jeevan Anand (915)", "Jeevan Labh (936)", "New Endowment (914)"], "rows":[
+                        ["Primary Feature","Whole Life Cover + Savings","Limited Premium Payment","Pure Endowment Savings"],
+                        ["Premium Term","Equal to Policy Term","Shorter than Policy Term","Equal to Policy Term"],
+                        ["Risk Cover","Continues after maturity","Ends at maturity","Ends at maturity"],
+                        ["Best For","Legacy planning + Savings","Goal-based savings with shorter pay commitment","Simple, disciplined savings"]
+                    ]}
+                ]
+            },
+            {
+                "id":"bonus-history",
+                "icon":"BarChart2",
+                "title":"Bonus History & Impact",
+                "content": [
+                    {"type":"paragraph", "text":"The Simple Reversionary Bonus is the key driver of returns. Below are illustrative bonus rates per ₹1,000 Sum Assured for a 21-year term policy, based on recent declarations."},
+                    {"type":"table", "headers":["Financial Year", "Illustrative Bonus Rate"], "rows":[
+                        ["2023-24", "₹46"],
+                        ["2022-23", "₹45"],
+                        ["2021-22", "₹45"],
+                        ["2020-21", "₹41"],
+                        ["2019-20", "₹41"]
+                    ]},
+                    {"type":"paragraph", "text":"Source: Analysis of data from LIC and PolicyBazaar bonus declarations. Rates are not guaranteed."}
+                ]
+            },
+            {
+                "id": "who-should-use",
+                "icon": "Users",
+                "title": "Who Should Use This Calculator?",
+                "content": [
+                    {"type":"list", "items":[
+                        "<strong>Parents:</strong> Planning for a child's education or marriage fund.",
+                        "<strong>Young Professionals:</strong> Looking for a disciplined long-term savings plan with insurance cover.",
+                        "<strong>NRIs:</strong> Seeking a safe, INR-denominated investment in India with a life cover component. Our 'jeevan anand calculator nri' feature helps estimate returns for offshore investors."
+                    ]}
+                ]
+            },
+            {
+                "id": "faq",
+                "icon": "HelpCircle",
+                "title": "Frequently Asked Questions",
+                "content": [
+                    { "type": "faq", "items": [
+                        { "q": "What is the LIC Jeevan Anand maturity formula?", "a": "The maturity amount is calculated as: Basic Sum Assured + Vested Simple Reversionary Bonuses + Final Additional Bonus (FAB), if any. Our calculator uses this exact formula." },
+                        { "q": "How to use the LIC Jeevan Anand calculator (Plan 715)?", "a": "Simply enter your age, desired Sum Assured, and policy term. The calculator will instantly estimate your premium, maturity benefits, and provide a detailed breakdown." },
+                        { "q": "What is the annual bonus rate for Jeevan Anand in 2024–25?", "a": "LIC declares bonus rates after the financial year ends. For FY 2023-24, illustrative rates were around ₹42-₹46 per ₹1,000 Sum Assured, depending on the term. Our calculator uses these as a baseline." },
+                        { "q": "How accurate is an online Jeevan Anand calculator?", "a": "Our calculator provides a very close estimate based on public data and standard formulas. The final premium and maturity depend on LIC's underwriting and declared bonuses, so treat the results as illustrative." },
+                        { "q": "Is the Final Additional Bonus (FAB) included in calculator estimates?", "a": "Yes, our calculator includes an input for an illustrative FAB rate (e.g., ₹100 per ₹1,000 SA) to provide a more realistic maturity projection for long-term policies." },
+                        { "q": "How is surrender value calculated for Jeevan Anand?", "a": "It's the higher of Guaranteed Surrender Value (GSV) or Special Surrender Value (SSV). SSV is typically higher and is calculated based on the paid-up value and vested bonuses. Our tool provides an estimate for this." },
+                        { "q": "When does Jeevan Anand become paid-up if I stop paying premiums?", "a": "The policy can be converted to a 'paid-up' policy with reduced benefits if you have paid premiums for at least two full years." },
+                        { "q": "Can NRIs use the Jeevan Anand calculator and buy the policy?", "a": "Yes, NRIs can use our calculator and invest in Jeevan Anand, subject to FEMA regulations. It is a popular choice for NRIs looking for a secure INR investment." },
+                        { "q": "Is Jeevan Anand maturity taxable under Section 10(10D)?", "a": "Generally, the maturity amount is tax-free under Section 10(10D), provided the annual premium does not exceed 10% of the Sum Assured." },
+                        { "q": "How much premium do I pay for ₹10 lakh cover under Jeevan Anand?", "a": "For a 30-year-old with a 25-year term, the annual premium for a ₹10 lakh cover is approximately ₹45,000. Use the calculator above for a precise figure." },
+                        { "q": "Can I add riders to Jeevan Anand and how do they affect premiums?", "a": "Yes, you can add riders like the Accidental Death & Disability Benefit Rider. This will increase your premium slightly, and our calculator can show you the impact." },
+                        { "q": "What is the difference between Jeevan Anand Plan 715 and older Plan numbers?", "a": "Plan 715 is the updated version conforming to new IRDAI guidelines, with slight changes in bonus structure and surrender value calculations compared to older plans like 149." },
+                        { "q": "Should I surrender my Jeevan Anand policy or convert it to paid-up?", "a": "If you don't need cash urgently, converting to a 'paid-up' policy is almost always better as it keeps your life cover active with reduced benefits. Surrender only for a dire financial emergency." }
+                    ]}
+                ]
+            },
+             {
+                "id": "next-steps",
+                "icon": "BookUser",
+                "title": "Next Steps",
+                "content": [
+                    {"type":"paragraph", "text": "After using the calculator, consider downloading the PDF of your results for your records. If you have more questions, you can compare this plan with others or speak to a qualified financial planner."}
                 ]
             }
         ]
