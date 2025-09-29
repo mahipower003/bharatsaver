@@ -1,3 +1,4 @@
+
 'use client';
 
 import { LicNewJeevanAnandCalculator } from "@/components/calculators/LicNewJeevanAnandCalculator";
@@ -9,7 +10,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { CheckCircle, HelpCircle, ShieldCheck, TrendingUp, SlidersHorizontal, BarChart2, StepForward, GitCompareArrows, FileText, Users, BookUser, Star, Calculator } from "lucide-react";
-import { Alert, AlertTitle, AlertDescription } from '../ui/alert';
+import { Alert, AlertTitle, AlertDescription } from '@/components/ui/alert';
 
 function getIcon(iconName: string) {
     switch (iconName) {
@@ -57,7 +58,7 @@ export default function LicJeevanAnandCalculatorPageClient({
               {section.content.map((item: any, idx: number) => {
                 switch (item.type) {
                   case 'paragraph':
-                    return <div key={idx} className="text-muted-foreground mb-4 prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: item.text }} />;
+                    return <div key={idx} className="prose dark:prose-invert max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: item.text }} />;
                   case 'list':
                     return (
                       <ul key={idx} className="list-disc pl-5 space-y-2 text-muted-foreground prose dark:prose-invert max-w-none">
@@ -138,7 +139,7 @@ export default function LicJeevanAnandCalculatorPageClient({
       <div className="mx-auto max-w-5xl">
         <header className="text-center mb-8 print-hide">
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{__html: pageDict.h1}} />
-            {pageDict.top_cta && <p className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.top_cta.replace('#calculator', '#calculator-widget').replace('"/book-cfp"', '"/contact"') }}></p>}
+            {pageDict.top_cta && <div className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.top_cta.replace('#calculator', '#calculator-widget').replace('"/book-cfp"', '"/contact"') }} />}
         </header>
         
         <div id="calculator-widget">
