@@ -13,24 +13,29 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
     const pageUrl = `${siteUrl}/${params.lang}/lic-jeevan-anand-calculator`;
 
+    const faqSection = pageDict.article.sections.find((s:any) => s.id === 'faq');
+    const faqItems = (faqSection?.content.find((c: any) => c.type === 'faq') as any)?.items ?? [];
+    
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": pageDict.article.sections.find((s:any) => s.id === 'faq')?.content[0]?.items.map((faq: {q: string, a: string}) => ({
+        "mainEntity": faqItems.map((faq: {q: string, a: string}) => ({
             "@type": "Question",
             "name": faq.q,
             "acceptedAnswer": { "@type": "Answer", "text": faq.a.replace(/<[^>]*>/g, '') }
         }))
     };
 
-    const howToSteps = pageDict.article.sections.find((s:any) => s.id === 'how-to-use')?.content.find((c:any) => c.type === 'steps')?.items ?? [];
     const howToSchema = {
         "@context": "https://schema.org",
         "@type": "HowTo",
         "name": "How to use the LIC Jeevan Anand calculator",
-        "step": howToSteps.map((step: {title: string, description: string}, index: number) => ({
-            "@type": "HowToStep", "name": `Step ${index+1}: ${step.title}`, "text": step.description
-        }))
+        "step": [
+            {"@type": "HowToStep", "name": "Step 1: Enter Your Details", "text": "Input your current age, desired Sum Assured, and the policy term for the plan."},
+            {"@type": "HowToStep", "name": "Step 2: Add Optional Riders", "text": "Toggle the Accidental Death & Disability or Term Assurance riders if you need extra coverage."},
+            {"@type": "HowToStep", "name": "Step 3: Click Calculate", "text": "Get an instant estimate of your premium (monthly and yearly), maturity benefits including bonuses, and potential surrender values."},
+            {"@type": "HowToStep", "name": "Step 4: Download or Share", "text": "Use the buttons to print a PDF of your results or share them via WhatsApp and Twitter."}
+        ]
     };
     
     const articleSchema = {
@@ -40,8 +45,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         "headline": "LIC Jeevan Anand Calculator (Plan 715) — Estimate Premium, Maturity & Surrender",
         "author": { "@type": "Person", "name": "Mahesh Chaube, CFP", "url": `${siteUrl}/${params.lang}/author/mahesh-chaube` },
         "publisher": { "@type": "Organization", "name": "BharatSaver", "logo": { "@type": "ImageObject", "url": `${siteUrl}/icon.svg` } },
-        "datePublished": "2025-09-26",
-        "dateModified": "2025-09-26",
+        "datePublished": "2024-09-26",
+        "dateModified": "2024-09-26",
         "reviewedBy": { "@type": "Person", "name": "Laveena Vijayi", "jobTitle": "Senior Financial Research Analyst, BharatSaver" }
     };
 
