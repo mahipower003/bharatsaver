@@ -8,11 +8,11 @@
     "title": "तत्काल समर्पण मूल्य कैलकुलेटर",
     "plan_label": "एलआईसी योजना",
     "plans": {
-      "new_jeevan_anand": "नई जीवन आनंद (915)",
-      "jeevan_labh": "जीवन लाभ (936)",
-      "new_endowment": "नई बंदोबस्ती योजना (914)",
-      "jeevan_utsav": "जीवन उत्सव (871)",
-      "jeevan_umang": "जीवन उमंग (945)"
+      "new-jeevan-anand": "नई जीवन आनंद (915)",
+      "jeevan-labh": "जीवन लाभ (936)",
+      "new-endowment": "नई बंदोबस्ती योजना (914)",
+      "jeevan-utsav": "जीवन उत्सव (871)",
+      "jeevan-umang": "जीवन उमंग (945)"
     },
     "basic_sa_label": "मूल बीमा राशि (₹)",
     "policy_term_label": "पॉलिसी अवधि (वर्ष)",
