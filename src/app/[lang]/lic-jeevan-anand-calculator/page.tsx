@@ -46,8 +46,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     };
 
     return {
-        title: pageDict.meta_title,
-        description: pageDict.meta_description,
+        title: "LIC Jeevan Anand Calculator (Plan 715) — Premium, Maturity & Surrender Estimates",
+        description: "Use our free LIC Jeevan Anand calculator (Plan 715) to estimate premiums, maturity, surrender and paid-up values. Includes worked examples, bonus & FAB inputs, PDF download.",
         alternates: {
             canonical: pageUrl,
             languages: i18nConfig.locales.reduce((acc, locale) => {
