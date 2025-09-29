@@ -29,7 +29,7 @@
       "endowment_plans": {
         "lic-single-premium-endowment-calculator": "LIC's Single Premium Endowment Plan (917)",
         "new_endowment_plan": "LIC's New Endowment Plan (914)",
-        "new_jeevan_anand": "LIC's New Jeevan Anand (915)",
+        "lic-jeevan-anand-calculator": "LIC's New Jeevan Anand (715)",
         "jeevan_lakshya": "LIC's Jeevan Lakshya (933)",
         "lic-jeevan-labh-calculator": "LIC's Jeevan Labh Plan (936)",
         "amritbaal": "LIC's Amritbaal (874)",
@@ -257,5 +257,3 @@
     "disclaimer": "This LIC Premium Calculator provides estimates for informational purposes only. The final payable premium and policy terms are determined by LIC of India at the time of underwriting. BharatSaver is not affiliated with LIC."
   }
 }
-
-    

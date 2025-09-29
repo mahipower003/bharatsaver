@@ -28,6 +28,16 @@ export const calculators: CalculatorType[] = [
     image: '/images/lic-premium-calculator.png'
   },
   {
+    slug: 'lic-jeevan-anand-calculator',
+    title: 'LIC Jeevan Anand Calculator',
+    description: 'Estimate premium & maturity for LIC\'s New Jeevan Anand (Plan 715).',
+    summary: 'Use our free LIC Jeevan Anand calculator (Plan 715) to estimate premiums, maturity, surrender and paid-up values. Includes worked examples, bonus & FAB inputs, PDF download.',
+    icon: ShieldCheck,
+    link_text: 'Calculate Now',
+    lastModified: '2024-09-26',
+    image: '/images/lic-jeevan-anand-calculator.png'
+  },
+  {
     slug: 'lic-maturity-calculator',
     title: 'LIC Maturity Calculator',
     description: 'Estimate maturity, bonus, and surrender values for LIC plans.',

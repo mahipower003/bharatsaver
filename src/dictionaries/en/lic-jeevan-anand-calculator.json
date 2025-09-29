@@ -1,0 +1,49 @@
+
+{
+    "meta_title": "LIC Jeevan Anand Calculator (Plan 715) — Premium, Maturity & Surrender Estimates",
+    "meta_description": "Use our free LIC Jeevan Anand calculator (Plan 715) to estimate premiums, maturity, surrender and paid-up values. Includes worked examples, bonus & FAB inputs, PDF download.",
+    "h1": "LIC Jeevan Anand Calculator (Plan 715) — Estimate Premium, Maturity & Surrender",
+    "tool": {
+        "title": "Jeevan Anand Calculator (Plan 715)",
+        "form_description": "Enter your details to estimate the premium and maturity benefits.",
+        "age_label": "Your Age",
+        "term_label": "Policy Term",
+        "sum_assured_label": "Sum Assured (₹)",
+        "calculate_button": "Calculate Benefits",
+        "calculating": "Calculating...",
+        "results_note": "Disclaimer: All values are estimates. GST @4.5% (1st year) is included. Bonus rates are illustrative and not guaranteed."
+    },
+    "article": {
+        "sections": [
+            {
+                "id": "quick-answer",
+                "icon": "TrendingUp",
+                "title": "Quick Answer: Sample Jeevan Anand Estimates",
+                "content": [
+                    { "type": "paragraph", "text": "Here’s a quick look at estimated yearly premiums and maturity amounts for the New Jeevan Anand plan." },
+                    {
+                      "type": "table",
+                      "headers": ["Sum Assured", "Term", "Est. Premium (yr)", "Est. Maturity"],
+                      "rows": [
+                        ["₹5,00,000", "20 yrs", "≈₹31,000", "≈₹9,00,000"],
+                        ["₹10,00,000", "25 yrs", "≈₹59,468", "≈₹22,00,000"]
+                      ]
+                    }
+                ]
+            },
+            {
+                "id": "how-to-use",
+                "icon": "StepForward",
+                "title": "How to Use Our LIC Jeevan Anand Calculator",
+                "content": [
+                    { "type": "steps", "items": [
+                        {"title": "Choose Plan Preset", "description": "Select 'New Jeevan Anand (Plan 715)' from the preset to load typical bonus ranges."},
+                        {"title": "Enter Policy Details", "description": "Add your age, desired sum assured, and the policy term."},
+                        {"title": "Toggle Riders", "description": "Optionally include the Accidental Death & Disability Benefit rider to see its impact on the premium."},
+                        {"title": "Click 'Calculate'", "description": "Get instant estimates for premium, maturity, and surrender values, then download your results as a PDF if needed."}
+                    ]}
+                ]
+            }
+        ]
+    }
+}
