@@ -3,7 +3,7 @@
     "meta_title": "LIC Jeevan Anand Calculator (Plan 915) — Premium, Maturity & Surrender Estimates",
     "meta_description": "Use our free LIC Jeevan Anand calculator (Plan 915) to estimate premiums, maturity, surrender and paid-up values. Includes worked examples, bonus & FAB inputs, PDF download.",
     "h1": "I Built This LIC Jeevan Anand Calculator to Give You the Unvarnished Truth (2025)",
-    "top_cta": "<strong>Get an instant estimate:</strong> Enter your plan, sum assured and term — click <a href=\"#calculator\">Calculate</a> to view maturity, surrender and paid-up values. <a href=\"#download\">Download result (PDF)</a> • <a href=\"/book-cfp\">Book a CFP call</a>",
+    "top_cta": "<p><strong>Get an instant estimate:</strong> Enter your plan, sum assured and term — click <a href=\"#calculator-widget\">Calculate</a> to view maturity, surrender and paid-up values. <a href=\"#download\">Download result (PDF)</a> • <a href=\"/contact\">Book a CFP call</a></p>",
     "tool": {
         "title": "Jeevan Anand Calculator (Plan 915)",
         "form_description": "This isn't just another calculator. I've designed it to give you the clarity that LIC documents often don't. Let's get started.",
@@ -27,7 +27,7 @@
                 "icon": "TrendingUp",
                 "title": "Quick Answer: Sample Jeevan Anand estimates",
                 "content": [
-                    { "type": "paragraph", "text": "Curious what a typical LIC policy yields? Here are some illustrative maturity amounts for a standard endowment plan with an assumed bonus rate of ₹45 per ₹1,000 Sum Assured." },
+                    { "type": "paragraph", "text": "<p>Curious what a typical LIC policy yields? Here are some illustrative maturity amounts for a standard endowment plan with an assumed bonus rate of ₹45 per ₹1,000 Sum Assured.</p>" },
                     {
                       "type": "table",
                       "headers": ["Sum Assured", "Term", "Est. Yearly Premium", "Est. Maturity"],
@@ -44,9 +44,18 @@
                 "icon": "Calculator",
                 "title": "How My Jeevan Anand Calculator Works (The Math Behind the Magic)",
                 "content": [
-                    { "type": "div", "text": "I built this calculator to pull back the curtain on how LIC's returns are actually calculated. It's not a black box. It combines the guaranteed parts with the variable bonuses to give you a projection you can actually understand." },
-                    { "type": "div", "text": "<h3>The Maturity Formula: SA + Vested Bonus + FAB</h3><p>At its heart, the calculation for your final payout is this simple formula:</p><p class='font-mono bg-muted p-4 rounded-md my-4 text-center'><strong>Maturity Value = Sum Assured + Vested Bonuses + Final Additional Bonus (FAB)</strong></p><p>Let me show you with a real example. For a ₹10 Lakh policy over 25 years (with an illustrative bonus rate of ₹45 and FAB of ₹100 per ₹1000 SA):</p><ul><li><strong>Sum Assured:</strong> This is the guaranteed part, your base: ₹10,00,000</li><li><strong>Vested Bonus:</strong> This is the big variable. My math: (10,00,000 / 1000) * 45 * 25 = ₹11,25,000</li><li><strong>FAB (Loyalty Bonus):</strong> Your reward for staying long-term: (10,00,000 / 1000) * 100 = ₹1,00,000</li><li><strong>Your Total Estimated Payout:</strong> ₹10,00,000 + ₹11,25,000 + ₹1,00,000 = <strong>₹22,25,000</strong></li></ul>" },
-                    { "type": "div", "text": "<h3>Where do the bonus & FAB numbers come from?</h3><p>Here's the honest truth: bonuses aren't guaranteed. Anyone who tells you otherwise is selling something. My calculator uses illustrative rates taken directly from analyzing LIC's past bonus declarations. For the official-but-less-clear version, you can always see the <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-new-jeevan-anand-plan' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>LIC New Jeevan Anand brochure</a>.</p>" }
+                    {
+                        "type": "div",
+                        "text": "<p>I built this calculator to pull back the curtain on how LIC's returns are actually calculated. It's not a black box. It combines the guaranteed parts with the variable bonuses to give you a projection you can actually understand.</p>"
+                    },
+                    {
+                        "type": "div",
+                        "text": "<h3>The Maturity Formula: SA + Vested Bonus + FAB</h3><p>At its heart, the calculation for your final payout is this simple formula:</p><p class='font-mono bg-muted p-4 rounded-md my-4 text-center'><strong>Maturity Value = Sum Assured + Vested Bonuses + Final Additional Bonus (FAB)</strong></p><p>Let me show you with a real example. For a ₹10 Lakh policy over 25 years (with an illustrative bonus rate of ₹45 and FAB of ₹100 per ₹1000 SA):</p><ul><li><strong>Sum Assured:</strong> This is the guaranteed part, your base: ₹10,00,000</li><li><strong>Vested Bonus:</strong> This is the big variable. My math: (10,00,000 / 1000) * 45 * 25 = ₹11,25,000</li><li><strong>FAB (Loyalty Bonus):</strong> Your reward for staying long-term: (10,00,000 / 1000) * 100 = ₹1,00,000</li><li><strong>Your Total Estimated Payout:</strong> ₹10,00,000 + ₹11,25,000 + ₹1,00,000 = <strong>₹22,25,000</strong></li></ul>"
+                    },
+                    {
+                        "type": "div",
+                        "text": "<h3>Where do the bonus & FAB numbers come from?</h3><p>Here's the honest truth: bonuses aren't guaranteed. Anyone who tells you otherwise is selling something. My calculator uses illustrative rates taken directly from analyzing LIC's past bonus declarations. For the official-but-less-clear version, you can always see the <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-new-jeevan-anand-plan' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>LIC New Jeevan Anand brochure</a>.</p>"
+                    }
                 ]
             },
             {
@@ -79,7 +88,7 @@
                 "icon": "GitCompareArrows",
                 "title": "Surrender & Paid-up values (formulas, GSV vs SSV, sample calc)",
                 "content": [
-                    {"type": "paragraph", "text":"Thinking of stopping your premiums? This is a critical decision. You have two main options, and choosing the wrong one can cost you dearly. Let's break it down so you can make the right call."},
+                    {"type": "paragraph", "text":"<p>Thinking of stopping your premiums? This is a critical decision. You have two main options, and choosing the wrong one can cost you dearly. Let's break it down so you can make the right call.</p>"},
                     {"type": "list", "items": [
                         "<strong>Paid-Up Value:</strong> If you've paid for at least 2 full years, you can just stop. The policy doesn't die. It becomes 'Paid-Up' with a lower Sum Assured. You'll still get a payout at the end. My calculator estimates this for you.",
                         "<strong>Surrender Value:</strong> This is where you terminate the policy completely and take a one-time cash payment. You lose the life cover. The value is split into Guaranteed (GSV) and Special (SSV). You always get the higher of the two, which is almost always the SSV. My calculator gives you a realistic estimate for this."
@@ -98,7 +107,7 @@
                         ["Entry Age", "18 to 50 years"],
                         ["Policy Term", "15 to 35 years"],
                         ["Sum Assured", "Minimum ₹1,00,000 (No upper limit)"],
-                        ["Death Benefit", "Higher of 125% of Basic SA or 7x Annualized Premium, plus bonuses."],
+                        ["Death Benefit", "Higher of 125% of Basic SA or 7x Annualized Premium, plus vested bonuses."],
                         ["Maturity Benefit", "Sum Assured + Vested Bonuses + Final Additional Bonus (FAB)."],
                         ["Official Link", "<a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-new-jeevan-anand-plan' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>View on LIC Website</a>"]
                     ]}
@@ -123,7 +132,7 @@
                 "icon":"BarChart2",
                 "title":"Bonus History & Impact (table showing last 3–5 years illustrative bonus per ₹1,000)",
                 "content": [
-                    {"type":"paragraph", "text":"Your final payout is hugely dependent on the bonuses LIC declares. While they aren't guaranteed, looking at the last few years gives us a realistic expectation. Here are illustrative bonus rates per ₹1,000 Sum Assured for a 21-year term policy."},
+                    {"type":"paragraph", "text":"<p>Your final payout is hugely dependent on the bonuses LIC declares. While they aren't guaranteed, looking at the last few years gives us a realistic expectation. Here are illustrative bonus rates per ₹1,000 Sum Assured for a 21-year term policy.</p>"},
                     {"type":"table", "headers":["Financial Year", "Illustrative Bonus Rate"], "rows":[
                         ["2023-24", "₹46"],
                         ["2022-23", "₹45"],
@@ -131,7 +140,7 @@
                         ["2020-21", "₹41"],
                         ["2019-20", "₹41"]
                     ]},
-                    {"type":"paragraph", "text":"Source: Analysis of data from LIC and PolicyBazaar bonus declarations. These rates are not guaranteed for future years."}
+                    {"type":"paragraph", "text":"<p>Source: Analysis of data from LIC and PolicyBazaar bonus declarations. These rates are not guaranteed for future years.</p>"}
                 ]
             },
             {
@@ -173,7 +182,7 @@
                 "icon": "BookUser",
                 "title": "Next steps & CTAs (download PDF, book CFP call, compare plans)",
                 "content": [
-                    {"type":"paragraph", "text": "You've got the numbers, now what? I suggest you download a PDF of your results for your records. If you're still weighing your options, you can use my other calculators to compare this plan against alternatives. And if you're ready to move forward, the next step is to talk to a qualified financial advisor or an LIC agent."}
+                    {"type":"paragraph", "text": "<p>You've got the numbers, now what? I suggest you download a PDF of your results for your records. If you're still weighing your options, you can use my other calculators to compare this plan against alternatives. And if you're ready to move forward, the next step is to talk to a qualified financial advisor or an LIC agent.</p>"}
                 ]
             }
         ],
