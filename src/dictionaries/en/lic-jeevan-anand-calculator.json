@@ -21,6 +21,10 @@
         "results_note": "Disclaimer: All values are estimates based on the data you provided and illustrative bonus rates. Your final, official figures will be determined by LIC."
     },
     "article": {
+        "conclusion": {
+            "title": "My Final Word: Is Jeevan Anand a Good Investment in 2025?",
+            "body": "After all the math, here's my honest take: Jeevan Anand is a solid, ultra-safe choice if you value guarantees and want a simple 'save and forget' product that combines savings with lifelong insurance. The returns (~6%) won't beat equity mutual funds, but they are reliable and tax-free, which is a huge plus. It’s not for aggressive wealth builders, but for someone seeking stability and peace of mind, it’s one of the best endowment plans LIC has to offer. I hope this calculator has given you the clarity to decide if it's the right fit for *your* financial story."
+        },
         "sections": [
             {
                 "id": "quick-answer",
@@ -44,18 +48,9 @@
                 "icon": "Calculator",
                 "title": "How My Jeevan Anand Calculator Works (The Math Behind the Magic)",
                 "content": [
-                    {
-                        "type": "div",
-                        "text": "<p>I built this calculator to pull back the curtain on how LIC's returns are actually calculated. It's not a black box. It combines the guaranteed parts with the variable bonuses to give you a projection you can actually understand.</p>"
-                    },
-                    {
-                        "type": "div",
-                        "text": "<h3>The Maturity Formula: SA + Vested Bonus + FAB</h3><p>At its heart, the calculation for your final payout is this simple formula:</p><p class='font-mono bg-muted p-4 rounded-md my-4 text-center'><strong>Maturity Value = Sum Assured + Vested Bonuses + Final Additional Bonus (FAB)</strong></p><p>Let me show you with a real example. For a ₹10 Lakh policy over 25 years (with an illustrative bonus rate of ₹45 and FAB of ₹100 per ₹1000 SA):</p><ul><li><strong>Sum Assured:</strong> This is the guaranteed part, your base: ₹10,00,000</li><li><strong>Vested Bonus:</strong> This is the big variable. My math: (10,00,000 / 1000) * 45 * 25 = ₹11,25,000</li><li><strong>FAB (Loyalty Bonus):</strong> Your reward for staying long-term: (10,00,000 / 1000) * 100 = ₹1,00,000</li><li><strong>Your Total Estimated Payout:</strong> ₹10,00,000 + ₹11,25,000 + ₹1,00,000 = <strong>₹22,25,000</strong></li></ul>"
-                    },
-                    {
-                        "type": "div",
-                        "text": "<h3>Where do the bonus & FAB numbers come from?</h3><p>Here's the honest truth: bonuses aren't guaranteed. Anyone who tells you otherwise is selling something. My calculator uses illustrative rates taken directly from analyzing LIC's past bonus declarations. For the official-but-less-clear version, you can always see the <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-new-jeevan-anand-plan' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>LIC New Jeevan Anand brochure</a>.</p>"
-                    }
+                     { "type": "paragraph", "text": "<p>I built this calculator to pull back the curtain on how LIC's returns are actually calculated. It's not a black box. It combines the guaranteed parts with the variable bonuses to give you a projection you can actually understand.</p>" },
+                    { "type": "paragraph", "text": "<h3>The Maturity Formula: SA + Vested Bonus + FAB</h3><p>At its heart, the calculation for your final payout is this simple formula:</p><p class='font-mono bg-muted p-4 rounded-md my-4 text-center'><strong>Maturity Value = Sum Assured + Vested Bonuses + Final Additional Bonus (FAB)</strong></p><p>Let me show you with a real example. For a ₹10 Lakh policy over 25 years (with an illustrative bonus rate of ₹45 and FAB of ₹100 per ₹1000 SA):</p><ul><li><strong>Sum Assured:</strong> This is the guaranteed part, your base: ₹10,00,000</li><li><strong>Vested Bonus:</strong> This is the big variable. My math: (10,00,000 / 1000) * 45 * 25 = ₹11,25,000</li><li><strong>FAB (Loyalty Bonus):</strong> Your reward for staying long-term: (10,00,000 / 1000) * 100 = ₹1,00,000</li><li><strong>Your Total Estimated Payout:</strong> ₹10,00,000 + ₹11,25,000 + ₹1,00,000 = <strong>₹22,25,000</strong></li></ul>" },
+                    { "type": "paragraph", "text": "<h3>Where do the bonus & FAB numbers come from?</h3><p>Here's the honest truth: bonuses aren't guaranteed. Anyone who tells you otherwise is selling something. My calculator uses illustrative rates taken directly from analyzing LIC's past bonus declarations. For the official-but-less-clear version, you can always see the <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-new-jeevan-anand-plan' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>LIC New Jeevan Anand brochure</a>.</p>" }
                 ]
             },
             {
@@ -185,10 +180,6 @@
                     {"type":"paragraph", "text": "<p>You've got the numbers, now what? I suggest you download a PDF of your results for your records. If you're still weighing your options, you can use my other calculators to compare this plan against alternatives. And if you're ready to move forward, the next step is to talk to a qualified financial advisor or an LIC agent.</p>"}
                 ]
             }
-        ],
-        "conclusion": {
-            "title": "My Final Word: Is Jeevan Anand a Good Investment in 2025?",
-            "body": "After all the math, here's my honest take: Jeevan Anand is a solid, ultra-safe choice if you value guarantees and want a simple 'save and forget' product that combines savings with lifelong insurance. The returns (~6%) won't beat equity mutual funds, but they are reliable and tax-free, which is a huge plus. It’s not for aggressive wealth builders, but for someone seeking stability and peace of mind, it’s one of the best endowment plans LIC has to offer. I hope this calculator has given you the clarity to decide if it's the right fit for *your* financial story."
-        }
+        ]
     }
 }
