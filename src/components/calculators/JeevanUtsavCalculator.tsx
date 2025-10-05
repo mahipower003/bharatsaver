@@ -102,14 +102,16 @@ export function JeevanUtsavCalculator({ dictionary }: { dictionary: any }) {
     const flexiIncome = values.basicSumAssured * 0.10; 
 
     const totalPremiumsPaid = premiums[0].premium * values.ppt;
+    const sumAssuredOnDeath = values.basicSumAssured; // As per brochure clarification
     const deathBenefitFloor = totalPremiumsPaid * 1.05;
-    const sumAssuredOnDeath = Math.max(values.basicSumAssured * 1.25, yearlyBasePremium * 7);
+    const finalDeathBenefit = Math.max(sumAssuredOnDeath + guaranteedAdditionsTotal, deathBenefitFloor);
+
 
     setResult({
       premiums,
       guaranteedAdditions: { total: guaranteedAdditionsTotal, yearly: guaranteedAdditionsYearly },
       income: { regular: regularIncome, flexi: flexiIncome },
-      deathBenefit: Math.max(sumAssuredOnDeath, deathBenefitFloor)
+      deathBenefit: finalDeathBenefit
     });
     setIsLoading(false);
   }
@@ -126,83 +128,82 @@ export function JeevanUtsavCalculator({ dictionary }: { dictionary: any }) {
         <CardContent>
           <Form {...form}>
             <form onSubmit={form.handleSubmit(handleSubmit)} className="space-y-6">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                {/* --- Inputs Column --- */}
-                <div className="space-y-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   <FormField control={form.control} name="age" render={({ field }) => (<FormItem><FormLabel>{dictionary.inputs.age}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
                   <FormField control={form.control} name="gender" render={({ field }) => (<FormItem><FormLabel>{dictionary.inputs.gender}</FormLabel><Select onValueChange={field.onChange} defaultValue={field.value}><FormControl><SelectTrigger><SelectValue /></SelectTrigger></FormControl><SelectContent><SelectItem value="male">Male</SelectItem><SelectItem value="female">Female</SelectItem></SelectContent></Select><FormMessage /></FormItem>)} />
                   <FormField control={form.control} name="basicSumAssured" render={({ field }) => (<FormItem><FormLabel>{dictionary.inputs.basicSumAssured}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
                   <FormField control={form.control} name="ppt" render={({ field }) => (<FormItem><FormLabel>{dictionary.inputs.ppt}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
                   <FormField control={form.control} name="incomeOption" render={({ field }) => (
                     <FormItem><FormLabel>{dictionary.inputs.incomeOption.label}</FormLabel>
-                      <RadioGroup onValueChange={field.onChange} defaultValue={field.value} className="flex gap-4">
+                      <RadioGroup onValueChange={field.onChange} defaultValue={field.value} className="flex gap-4 pt-2">
                           <FormItem className="flex items-center space-x-2"><FormControl><RadioGroupItem value="regular" /></FormControl><FormLabel className="font-normal">{dictionary.inputs.incomeOption.regular}</FormLabel></FormItem>
                           <FormItem className="flex items-center space-x-2"><FormControl><RadioGroupItem value="flexi" /></FormControl><FormLabel className="font-normal">{dictionary.inputs.incomeOption.flexi}</FormLabel></FormItem>
                       </RadioGroup>
                     <FormMessage /></FormItem>
                   )} />
-                  <div className="space-y-2 pt-2">
-                      <FormLabel>{dictionary.inputs.riders.label}</FormLabel>
-                      <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
-                          <FormField control={form.control} name="riders.addb" render={({ field }) => (<FormItem className="flex items-center gap-2"><FormControl><Checkbox checked={field.value} onCheckedChange={field.onChange} /></FormControl><FormLabel className="font-normal">{dictionary.inputs.riders.addb}</FormLabel></FormItem>)} />
-                          <FormField control={form.control} name="riders.ab" render={({ field }) => (<FormItem className="flex items-center gap-2"><FormControl><Checkbox checked={field.value} onCheckedChange={field.onChange} /></FormControl><FormLabel className="font-normal">{dictionary.inputs.riders.ab}</FormLabel></FormItem>)} />
-                          <FormField control={form.control} name="riders.term" render={({ field }) => (<FormItem className="flex items-center gap-2"><FormControl><Checkbox checked={field.value} onCheckedChange={field.onChange} /></FormControl><FormLabel className="font-normal">{dictionary.inputs.riders.term}</FormLabel></FormItem>)} />
-                          <FormField control={form.control} name="riders.ci" render={({ field }) => (<FormItem className="flex items-center gap-2"><FormControl><Checkbox checked={field.value} onCheckedChange={field.onChange} /></FormControl><FormLabel className="font-normal">{dictionary.inputs.riders.ci}</FormLabel></FormItem>)} />
-                          <FormField control={form.control} name="riders.pwb" render={({ field }) => (<FormItem className="flex items-center gap-2"><FormControl><Checkbox checked={field.value} onCheckedChange={field.onChange} /></FormControl><FormLabel className="font-normal">{dictionary.inputs.riders.pwb}</FormLabel></FormItem>)} />
-                      </div>
-                  </div>
-                </div>
-
-                {/* --- Outputs Column --- */}
-                <div className="space-y-4">
-                  <Button type="submit" disabled={isLoading} className="w-full">
-                      {isLoading ? <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> {dictionary.calculating}</> : dictionary.calculate_button}
-                  </Button>
-                  
-                  {isLoading && <div className="text-center py-12"><Loader2 className="mx-auto h-12 w-12 animate-spin text-primary" /></div>}
-                  
-                  {result && (
-                    <div className="animate-in fade-in-50 space-y-4 pt-4">
-                      <div>
-                          <h3 className="font-semibold mb-2">{dictionary.outputs.premium.title}</h3>
-                          <div className="grid grid-cols-2 gap-2 text-center">
-                              {result.premiums.map(p => (
-                                  <div key={p.mode} className="p-2 border rounded-md bg-muted/50">
-                                      <p className="text-xs text-muted-foreground">{p.mode}</p>
-                                      <p className="font-bold">{formatCurrency(p.premium)}</p>
-                                  </div>
-                              ))}
-                          </div>
-                      </div>
-                      <div className="p-4 border rounded-md bg-primary/5">
-                          <h3 className="font-semibold">{dictionary.outputs.guaranteedAdditions.title}</h3>
-                          <p className="text-2xl font-bold text-primary">{formatCurrency(result.guaranteedAdditions.total)}</p>
-                          <p className="text-sm text-muted-foreground">{dictionary.outputs.guaranteedAdditions.subtitle.replace('{amount}', formatCurrency(result.guaranteedAdditions.yearly)).replace('{ppt}', String(form.getValues().ppt))}</p>
-                      </div>
-                       <div className="p-4 border rounded-md bg-green-500/5">
-                          <h3 className="font-semibold">{form.getValues().incomeOption === 'regular' ? dictionary.outputs.regularIncome.title : dictionary.outputs.flexiIncome.title}</h3>
-                          <p className="text-2xl font-bold text-green-600">{formatCurrency(form.getValues().incomeOption === 'regular' ? result.income.regular : result.income.flexi)} / year</p>
-                          <p className="text-sm text-muted-foreground">{form.getValues().incomeOption === 'regular' ? dictionary.outputs.regularIncome.subtitle : dictionary.outputs.flexiIncome.subtitle}</p>
-                      </div>
-                       <div className="p-4 border rounded-md bg-muted/50">
-                          <h3 className="font-semibold">{dictionary.outputs.deathBenefit.title}</h3>
-                          <p className="text-xl font-bold">{formatCurrency(result.deathBenefit)}</p>
-                          <p className="text-sm text-muted-foreground">{dictionary.outputs.deathBenefit.subtitle}</p>
-                      </div>
-                    </div>
-                  )}
-                </div>
               </div>
+              <div className="space-y-2 pt-2">
+                  <FormLabel>{dictionary.inputs.riders.label}</FormLabel>
+                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-4 gap-y-2 text-sm">
+                      <FormField control={form.control} name="riders.addb" render={({ field }) => (<FormItem className="flex items-center gap-2"><FormControl><Checkbox checked={field.value} onCheckedChange={field.onChange} /></FormControl><FormLabel className="font-normal">{dictionary.inputs.riders.addb}</FormLabel></FormItem>)} />
+                      <FormField control={form.control} name="riders.ab" render={({ field }) => (<FormItem className="flex items-center gap-2"><FormControl><Checkbox checked={field.value} onCheckedChange={field.onChange} /></FormControl><FormLabel className="font-normal">{dictionary.inputs.riders.ab}</FormLabel></FormItem>)} />
+                      <FormField control={form.control} name="riders.term" render={({ field }) => (<FormItem className="flex items-center gap-2"><FormControl><Checkbox checked={field.value} onCheckedChange={field.onChange} /></FormControl><FormLabel className="font-normal">{dictionary.inputs.riders.term}</FormLabel></FormItem>)} />
+                      <FormField control={form.control} name="riders.ci" render={({ field }) => (<FormItem className="flex items-center gap-2"><FormControl><Checkbox checked={field.value} onCheckedChange={field.onChange} /></FormControl><FormLabel className="font-normal">{dictionary.inputs.riders.ci}</FormLabel></FormItem>)} />
+                      <FormField control={form.control} name="riders.pwb" render={({ field }) => (<FormItem className="flex items-center gap-2"><FormControl><Checkbox checked={field.value} onCheckedChange={field.onChange} /></FormControl><FormLabel className="font-normal">{dictionary.inputs.riders.pwb}</FormLabel></FormItem>)} />
+                  </div>
+              </div>
+               <Button type="submit" disabled={isLoading} className="w-full sm:w-auto">
+                  {isLoading ? <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> {dictionary.calculating}</> : dictionary.calculate_button}
+              </Button>
             </form>
           </Form>
         </CardContent>
       </Card>
       
-      {result && <Alert className="mt-6">
-        <Info className="h-4 w-4" />
-        <AlertTitle>{dictionary.outputs.disclaimer.title}</AlertTitle>
-        <AlertDescription dangerouslySetInnerHTML={{ __html: dictionary.outputs.disclaimer.body }} />
-      </Alert>}
+      {isLoading && <div className="text-center py-12"><Loader2 className="mx-auto h-12 w-12 animate-spin text-primary" /></div>}
+
+      {result && (
+        <Card className="mt-8 animate-in fade-in-50">
+          <CardHeader>
+            <CardTitle>Estimated Benefits</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-6">
+             <div>
+                <h3 className="font-semibold mb-2">{dictionary.outputs.premium.title}</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    {result.premiums.map(p => (
+                        <div key={p.mode} className="p-3 border rounded-lg bg-muted/50">
+                            <p className="text-sm text-muted-foreground">{p.mode}</p>
+                            <p className="font-bold text-lg">{formatCurrency(p.premium)}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="p-4 border rounded-lg bg-primary/5">
+                  <h3 className="font-semibold text-primary">{dictionary.outputs.guaranteedAdditions.title}</h3>
+                  <p className="text-3xl font-bold mt-1">{formatCurrency(result.guaranteedAdditions.total)}</p>
+                  <p className="text-sm text-muted-foreground">{dictionary.outputs.guaranteedAdditions.subtitle.replace('{amount}', formatCurrency(result.guaranteedAdditions.yearly)).replace('{ppt}', String(form.getValues().ppt))}</p>
+              </div>
+               <div className="p-4 border rounded-lg bg-green-500/5">
+                  <h3 className="font-semibold text-green-700">{form.getValues().incomeOption === 'regular' ? dictionary.outputs.regularIncome.title : dictionary.outputs.flexiIncome.title}</h3>
+                  <p className="text-3xl font-bold mt-1">{formatCurrency(form.getValues().incomeOption === 'regular' ? result.income.regular : result.income.flexi)}</p>
+                   <p className="text-sm text-muted-foreground">{form.getValues().incomeOption === 'regular' ? dictionary.outputs.regularIncome.subtitle : dictionary.outputs.flexiIncome.subtitle}</p>
+              </div>
+               <div className="p-4 border rounded-lg bg-muted/50">
+                  <h3 className="font-semibold">{dictionary.outputs.deathBenefit.title}</h3>
+                  <p className="text-3xl font-bold mt-1">{formatCurrency(result.deathBenefit)}</p>
+                  <p className="text-sm text-muted-foreground">{dictionary.outputs.deathBenefit.subtitle}</p>
+              </div>
+            </div>
+            <Alert className="mt-6">
+              <Info className="h-4 w-4" />
+              <AlertTitle>{dictionary.outputs.disclaimer.title}</AlertTitle>
+              <AlertDescription dangerouslySetInnerHTML={{ __html: dictionary.outputs.disclaimer.body }} />
+            </Alert>
+          </CardContent>
+        </Card>
+      )}
     </>
   );
 }
