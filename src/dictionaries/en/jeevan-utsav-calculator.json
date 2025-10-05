@@ -1,0 +1,135 @@
+
+{
+  "meta": {
+    "title": "Jeevan Utsav Calculator (Plan 871) – Premium, Regular vs Flexi Income, Benefits",
+    "description": "Free LIC Jeevan Utsav Calculator (Plan 871). Estimate premium, guaranteed additions, Regular vs Flexi Income, and death benefit. Compare PPT 5–16 years. Download PDF."
+  },
+  "og": {
+    "title": "Jeevan Utsav Calculator (Plan 871) – Premium, Regular vs Flexi Income, Benefits",
+    "description": "Free LIC Jeevan Utsav Calculator (Plan 871). Estimate premium, guaranteed additions, Regular vs Flexi Income, and death benefit. Compare PPT 5–16 years. Download PDF."
+  },
+  "h1": "LIC Jeevan Utsav Calculator — Premium, Income & Benefits (Plan 871)",
+  "trust_blurb": "Data & definitions based on LIC’s official brochure (UIN 512N363V02).",
+  "cta_buttons": {
+    "calculate": "Calculate Now",
+    "download": "Download PDF",
+    "compare": "Compare with Umang/Anand"
+  },
+  "calculator_ui": {
+    "title": "Jeevan Utsav Calculator (Plan 871)",
+    "description": "Enter your details to estimate premiums, guaranteed income, and benefits.",
+    "inputs": {
+      "age": "Age",
+      "gender": "Gender",
+      "tobacco": "Tobacco User",
+      "basicSumAssured": "Basic Sum Assured",
+      "ppt": "Premium Paying Term (5-16 years)",
+      "incomeOption": {
+        "label": "Income Option",
+        "regular": "Regular Income",
+        "flexi": "Flexi Income"
+      },
+      "mode": "Payment Mode",
+      "riders": {
+        "label": "Riders",
+        "addb": "AD&DB",
+        "ab": "AB",
+        "term": "Term",
+        "ci": "CI",
+        "pwb": "PWB"
+      }
+    },
+    "outputs": {
+      "premium": {
+        "title": "Estimated Premium"
+      },
+      "guaranteedAdditions": {
+        "title": "Guaranteed Additions (During PPT)",
+        "subtitle": "{amount} per year for {ppt} years"
+      },
+      "regularIncome": {
+        "title": "Regular Income (Post-PPT)",
+        "subtitle": "Per year, for life"
+      },
+      "flexiIncome": {
+        "title": "Flexi Income (Annual Credit)",
+        "subtitle": "Accrues at 5.5% p.a. if not withdrawn"
+      },
+      "deathBenefit": {
+        "title": "Death Benefit",
+        "subtitle": "Higher of Sum Assured on Death or 105% of premiums paid"
+      },
+      "disclaimer": {
+        "title": "Assumptions",
+        "body": "Calculations based on official LIC Jeevan Utsav (Plan No. 871, UIN: 512N363V02) brochure. All values are illustrative. Final figures are determined by LIC."
+      }
+    },
+    "calculate_button": "Calculate Benefits",
+    "calculating": "Calculating..."
+  },
+  "sections": [],
+  "faq_schema": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What are Guaranteed Additions in Jeevan Utsav?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Guaranteed Additions accrue @ ₹40 per ₹1,000 Basic Sum Assured at the end of each policy year during the premium paying term only."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the Regular vs Flexi Income?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Regular Income pays 10% of BSA each year for life after PPT. Flexi allows you to defer income; unclaimed income accrues @ ~5.5% p.a. compounding, with up to 75% withdrawal per year."
+        }
+      }
+    ]
+  },
+  "how_to_schema": {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to use the Jeevan Utsav Calculator",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Select plan & PPT",
+        "text": "Choose Jeevan Utsav (Plan 871) and a premium paying term between 5 and 16 years."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Pick income option",
+        "text": "Select Regular (10% BSA per year) or Flexi (accumulate at 5.5% if not withdrawn)."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Enter cover & mode",
+        "text": "Fill age, sum assured, mode, and riders; click Calculate to view premium, GAs and income schedule."
+      }
+    ]
+  },
+  "article_schema": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Jeevan Utsav Calculator (Plan 871) – Premium, Regular vs Flexi Income, Benefits",
+    "author": {
+      "@type": "Person",
+      "name": "Mahesh Chaube, CFP"
+    },
+    "reviewedBy": {
+      "@type": "Person",
+      "name": "Laveena Vijayi"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "BharatSaver",
+      "logo": {}
+    },
+    "datePublished": "2025-09-23",
+    "dateModified": "2025-09-23"
+  }
+}

@@ -13,6 +13,8 @@ import {
   Filter,
   ShieldCheck,
   Calculator,
+  PiggyBank,
+  Gift,
 } from 'lucide-react';
 import type { Calculator as CalculatorType } from '@/lib/types';
 
@@ -28,6 +30,16 @@ export const calculators: CalculatorType[] = [
     image: '/images/lic-premium-calculator.png'
   },
   {
+    slug: 'jeevan-utsav-calculator',
+    title: 'Jeevan Utsav Calculator',
+    description: 'Estimate premiums & guaranteed income for LIC\'s Jeevan Utsav (Plan 771).',
+    summary: 'Use our free LIC Jeevan Utsav calculator to estimate premiums, guaranteed additions, Regular vs Flexi Income, and death benefit. Compare PPT 5–16 years and download results.',
+    icon: Gift,
+    link_text: 'Calculate Now',
+    lastModified: '2024-10-15',
+    image: '/images/lic-jeevan-utsav-calculator.png'
+  },
+  {
     slug: 'lic-jeevan-anand-calculator',
     title: 'LIC Jeevan Anand Calculator',
     description: 'Estimate premium & maturity for LIC\'s New Jeevan Anand (Plan 715).',
@@ -36,6 +48,26 @@ export const calculators: CalculatorType[] = [
     link_text: 'Calculate Now',
     lastModified: '2024-09-26',
     image: '/images/lic-jeevan-anand-calculator.png'
+  },
+  {
+    slug: 'lic-jeevan-labh-calculator',
+    title: 'LIC Jeevan Labh Calculator',
+    description: 'Estimate premium & maturity for LIC\'s Jeevan Labh (Plan 936).',
+    summary: 'Use this free LIC Jeevan Labh 936 calculator to instantly estimate maturity benefits, yearly/monthly premiums, bonus rates, and returns. Includes surrender value info and plan comparisons.',
+    icon: ShieldCheck,
+    link_text: 'Calculate Now',
+    lastModified: '2024-09-27',
+    image: '/images/lic-jeevan-labh-calculator.png'
+  },
+  {
+    slug: 'lic-single-premium-endowment-calculator',
+    title: 'LIC Single Premium Endowment Calculator',
+    description: 'Estimate premium & maturity for LIC\'s Single Premium Endowment Plan (Plan 917).',
+    summary: 'Use LIC Single Premium Endowment Calculator online free to estimate your premium, maturity value, bonus & tax benefits. Plan 917/717 one-time investment returns explained.',
+    icon: PiggyBank,
+    link_text: 'Calculate Now',
+    lastModified: '2024-09-28',
+    image: '/images/lic-single-premium-calculator.png'
   },
   {
     slug: 'lic-maturity-calculator',
