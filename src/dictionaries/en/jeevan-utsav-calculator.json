@@ -91,10 +91,7 @@
       "icon": "FileText",
       "title": "How the Calculator Works (Transparent Formulae)",
       "content": [
-        {
-          "type": "paragraph",
-          "text": "<h3>Premium & Mode Conversion</h3><p>We start with the base annual premium and then apply LIC's official modal loading factors to calculate half-yearly (x 0.5098), quarterly (x 0.2575), and monthly (x 0.0879) premiums.</p><h3>Guaranteed Additions (GAs)</h3><p>GAs of <strong>₹40 per ₹1,000 BSA</strong> accrue at the end of each policy year, but only during the Premium Paying Term (PPT). For example, for a ₹10 Lakh BSA, the annual GA is (10,00,000 / 1000) * 40 = ₹40,000. Over a 12-year PPT, this totals ₹4.8 Lakh.</p><h3>Income Options</h3><ul><li><strong>Regular Income:</strong> A straightforward 10% of the BSA is paid to you every year for life, starting after the PPT ends.</li><li><strong>Flexi Income:</strong> If you don't need the income immediately, you can choose this option to let it accumulate. LIC guarantees this deferred income will grow at <strong>5.5% p.a. compounding</strong>. You can then withdraw up to 75% of the accumulated pool in a financial year.</li></ul><h3>Death Benefit</h3><p>The death benefit is the higher of the 'Sum Assured on Death' or 105% of all premiums paid. The 'Sum Assured on Death' is itself the higher of your Basic Sum Assured or 7 times your annualized premium.</p><h3>Riders Impact</h3><p>Adding riders will increase your premium but does not change the calculation for Guaranteed Additions or the 10% income rule. They provide separate, additional benefits on specific events.</p>"
-        }
+        { "type": "paragraph", "text": "<h3>Premium & Mode Conversion</h3><p>We start with the base annual premium and then apply LIC's official modal loading factors to calculate half-yearly (x 0.5098), quarterly (x 0.2575), and monthly (x 0.0879) premiums.</p><h3>Guaranteed Additions (GAs)</h3><p>The formula is: GA per year = (BSA/1000) × 40. GAs of <strong>₹40 per ₹1,000 BSA</strong> accrue at the end of each policy year, but only during the Premium Paying Term (PPT). For example, for a ₹10 Lakh BSA, the annual GA is (10,00,000 / 1000) * 40 = ₹40,000. Over a 12-year PPT, this totals ₹4.8 Lakh.</p><h3>Income Options</h3><ul><li><strong>Regular Income:</strong> A straightforward 10% of the BSA is paid to you every year for life, starting after the PPT ends.</li><li><strong>Flexi Income:</strong> If you don't need the income immediately, you can choose this option to let it accumulate. LIC guarantees this deferred income will grow at <strong>5.5% p.a. compounding</strong>. You can then withdraw up to 75% of the accumulated pool in a financial year.</li></ul><h3>Death Benefit</h3><p>The death benefit is the higher of the 'Sum Assured on Death' or 105% of all premiums paid. The 'Sum Assured on Death' is itself the higher of your Basic Sum Assured or 7 times your annualized premium.</p><h3>Riders Impact</h3><p>Adding riders will increase your premium but does not change the calculation for Guaranteed Additions or the 10% income rule. They provide separate, additional benefits on specific events.</p>" }
       ]
     },
     {
@@ -103,9 +100,9 @@
       "title": "Step-by-Step: Use the Jeevan Utsav Calculator",
       "content": [
         { "type": "steps", "items": [
-          {"title": "Enter Your Details", "description": "Select your age, tobacco status, Basic Sum Assured, and the Premium Paying Term (5-16 years)."},
-          {"title": "Choose Your Income", "description": "Pick between 'Regular' for a fixed 10% BSA annual payout or 'Flexi' to defer and grow the income at 5.5%."},
-          {"title": "Select Payment Mode & Riders", "description": "Choose your payment frequency (Yearly, etc.) and add any optional riders if needed."},
+          {"title": "Enter Your Details", "description": "Select your age, tobacco status, Basic Sum Assured (BSA), and Premium Paying Term (PPT)."},
+          {"title": "Choose Your Income", "description": "Pick between 'Regular' (10% BSA/yr) or 'Flexi' (defer and accumulate at 5.5%)."},
+          {"title": "Select Payment Mode & Riders", "description": "Choose your payment frequency and add any optional riders if needed."},
           {"title": "Calculate and Review", "description": "Click 'Calculate' to see your premiums, total Guaranteed Additions, and income schedule, then download the results as a PDF."}
         ]}
       ]
@@ -137,6 +134,36 @@
           ["35", "≈₹2,15,000", "≈₹1,45,000", "≈₹1,00,000", "≈₹80,000"],
           ["45", "≈₹2,25,000", "≈₹1,55,000", "≈₹1,10,000", "≈₹90,000"],
           ["55", "≈₹2,40,000", "≈₹1,70,000", "≈₹1,25,000", "≈₹1,05,000"]
+        ]},
+        { "type": "paragraph", "text": "<h3 class='mt-6'>Regular vs Flexi Income Comparison (BSA ₹10L)</h3>" },
+        { "type": "table", "headers": ["PPT", "Regular Income", "Flexi Income Pool (after 10 yrs if deferred)"], "rows": [
+            ["8 years", "₹1L/year for life", "≈ ₹17.7 Lakhs"],
+            ["12 years", "₹1L/year for life", "≈ ₹17.7 Lakhs"],
+            ["16 years", "₹1L/year for life", "≈ ₹17.7 Lakhs"]
+        ]}
+      ]
+    },
+    {
+      "id": "benefit-illustrations",
+      "icon": "FileText",
+      "title": "Benefit Illustrations: Real-World Scenarios",
+      "content": [
+        { "type": "paragraph", "text": "<h4>Scenario A: Early Planner (Age 30, Regular Income)</h4><p><strong>Inputs:</strong> BSA ₹10L, PPT 12 years.<br><strong>Cashflow:</strong> You pay ≈₹85,500/year for 12 years. You accrue a total of ₹4.8L in Guaranteed Additions. From year 13 onwards, you receive a tax-free income of ₹1,00,000 every year for life.</p>" },
+        { "type": "paragraph", "text": "<h4>Scenario B: Mid-Career Planner (Age 40, Flexi Income)</h4><p><strong>Inputs:</strong> BSA ₹20L, PPT 10 years.<br><strong>Cashflow:</strong> You pay ≈₹2.1L/year for 10 years. From year 11, you are entitled to ₹2L/year. You choose not to withdraw for 5 years. Your accumulated pool grows at 5.5% p.a. to ≈₹11.8 Lakhs. You can then start making partial withdrawals as needed.</p>" },
+        { "type": "paragraph", "text": "<h4>Scenario C: Pre-Retirement (Age 50, with Riders)</h4><p><strong>Inputs:</strong> BSA ₹15L, PPT 8 years.<br><strong>Cashflow:</strong> Base premium is ≈₹2.5L/year. Adding an Accidental Death & Disability rider might increase it to ≈₹2.52L/year. The income logic remains unchanged: you still receive ₹1.5L/year (10% of BSA) for life after the 8-year PPT.</p>" }
+      ]
+    },
+    {
+      "id": "eligibility-rules",
+      "icon": "BookUser",
+      "title": "Eligibility, Riders, Loan & Surrender",
+      "content": [
+        { "type": "list", "items": [
+          "<strong>Eligibility:</strong> Entry age from 90 days to 65 years. Minimum BSA is ₹5,00,000.",
+          "<strong>Premium Paying Terms (PPT):</strong> 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, and 16 years.",
+          "<strong>Benefit Triggers:</strong> Guaranteed Additions are paid during PPT. Income starts from the end of the deferment period (2 years after PPT ends).",
+          "<strong>Riders:</strong> You can add LIC’s Accidental Death and Disability Benefit Rider, Accident Benefit Rider, New Term Assurance Rider, New Critical Illness Benefit Rider, and Premium Waiver Benefit Rider, subject to conditions.",
+          "<strong>Loan & Surrender:</strong> A loan is available after the policy acquires a surrender value (typically after 2 years of premium payments). You can surrender the policy, but it is often financially better to make it 'Paid-up' to retain a reduced death benefit and receive a payout at maturity. Always compare these options carefully. For more details refer to the official <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-jeevan-utsav' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>LIC product page</a>."
         ]}
       ]
     },
