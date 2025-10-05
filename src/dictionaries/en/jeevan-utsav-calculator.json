@@ -9,7 +9,7 @@
     "description": "Free LIC Jeevan Utsav Calculator (Plan 771). Estimate premium, guaranteed additions, Regular vs Flexi Income, and death benefit. Compare PPT 5–16 years. Download PDF."
   },
   "h1": "LIC Jeevan Utsav Calculator — Premium, Income & Benefits (Plan 771)",
-  "trust_blurb": "Data & definitions based on LIC’s official brochure (UIN 512N363V02).",
+  "trust_blurb": "Data & definitions based on <a href='https://licindia.in/documents/20121/139352932/LIC_s+Jeevan+Utsav_BROCHURE_9-5-24.pdf' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>LIC’s official brochure (UIN 512N363V02)</a>.",
   "calculator_ui": {
     "title": "Jeevan Utsav Calculator (Plan 771)",
     "description": "Enter your details to estimate premiums, guaranteed income, and benefits.",
@@ -182,12 +182,12 @@
       ]
     },
     {
-        "id": "taxes-charges",
-        "icon": "FileText",
-        "title": "Taxes & Charges",
-        "content": [
-            { "type": "paragraph", "text": "<strong>80C Deduction:</strong> Premiums paid are eligible for deduction under Section 80C. <br><strong>10(10D) Exemption:</strong> The income benefits and death benefit are tax-free under Section 10(10D), subject to conditions. <br><strong>GST:</strong> Life insurance premiums typically attract GST at 4.5% in the first year and 2.25% thereafter. Always confirm final tax implications with LIC or a financial advisor." }
-        ]
+      "id": "taxes-charges",
+      "icon": "FileText",
+      "title": "Taxes & Charges",
+      "content": [
+        { "type": "paragraph", "text": "<strong>80C Deduction:</strong> Premiums paid are eligible for deduction under Section 80C. <br><strong>10(10D) Exemption:</strong> The income benefits and death benefit are tax-free under Section 10(10D), subject to conditions. <br><strong>GST:</strong> Life insurance premiums typically attract GST at 4.5% in the first year and 2.25% thereafter. Always confirm final tax implications with LIC or a financial advisor." }
+      ]
     },
     {
       "id": "faq",
@@ -208,24 +208,25 @@
           ]
         }
       ]
-    },
-    {
-        "id": "next-steps",
-        "icon": "Star",
-        "title": "Next Steps",
-        "content": [
-            { "type": "paragraph", "text": "Now that you have an estimate, what's next? You can download a PDF of your results, email it to yourself for your records, or compare this plan with other popular LIC options like Jeevan Umang and Jeevan Anand. If you have more questions, consider talking to a Certified Financial Planner (CFP) for personalized advice."}
-        ]
-    },
-    {
+    }
+  ],
+  "next_steps": {
+    "title": "Next Steps",
+    "buttons": [
+      { "text": "Calculate Now", "href": "#calculator-widget" },
+      { "text": "Download PDF", "href": "#" },
+      { "text": "Email My Illustration", "href": "mailto:" },
+      { "text": "Compare with Umang/Anand", "href": "/lic-premium-calculator" }
+    ]
+  },
+  "conclusion": {
       "id": "conclusion",
       "icon": "Star",
       "title": "Conclusion: A Lifelong Income Stream for a Secure Future",
       "content": [
         { "type": "paragraph", "text": "LIC's Jeevan Utsav is a powerful tool for anyone seeking a guaranteed, lifelong income stream after a limited premium payment period. Whether you choose the predictable 'Regular Income' or the flexible 'Flexi Income' option to grow your wealth, this plan is an excellent choice for creating a secure, lifelong financial legacy. It's best suited for individuals looking for a reliable, non-market-linked income stream in their post-retirement years, combining savings and protection in one powerful package." }
       ]
-    }
-  ],
+    },
   "faq_schema": {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -298,5 +299,3 @@
     "dateModified": "2025-09-23"
   }
 }
-
-    

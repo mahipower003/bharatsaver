@@ -112,6 +112,28 @@ export default function JeevanUtsavCalculatorPageClient({
                   </Card>
                 )
             })}
+
+            {pageDict.next_steps && (
+              <Card className="mt-12 shadow-lg">
+                  <CardHeader>
+                      <CardTitle className="flex items-center gap-3">
+                          <Star className="h-8 w-8 text-primary"/>
+                          <h2 className="text-2xl font-bold">{pageDict.next_steps.title}</h2>
+                      </CardTitle>
+                  </CardHeader>
+                  <CardContent className="flex flex-wrap items-center justify-center gap-4">
+                      {pageDict.next_steps.buttons.map((button: any, index: number) => (
+                          <Button key={index} asChild={button.href.startsWith('/')} variant={button.variant || 'default'}>
+                              {button.href.startsWith('/') ? (
+                                  <Link href={`/${params.lang}${button.href}`}>{button.text}</Link>
+                              ) : (
+                                  <a href={button.href} target="_blank" rel="noopener noreferrer">{button.text}</a>
+                              )}
+                          </Button>
+                      ))}
+                  </CardContent>
+              </Card>
+            )}
         </div>
         
         <AuthorCard dictionary={dictionary.author_card} />
