@@ -15,7 +15,11 @@ type PopularToolsProps = {
 };
 
 export function PopularTools({ lang, dictionary }: PopularToolsProps) {
-  const popularCalculators = calculators;
+  // Filter out the calculators that should not be on the home page.
+  const popularCalculators = calculators.filter(calc => 
+    !['jeevan-utsav-calculator', 'lic-jeevan-labh-calculator', 'lic-single-premium-endowment-calculator'].includes(calc.slug)
+  );
+  
   const [loadingCalculator, setLoadingCalculator] = useState<string | null>(null);
 
   const handleClick = (slug: string) => {
