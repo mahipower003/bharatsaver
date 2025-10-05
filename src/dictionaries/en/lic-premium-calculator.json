@@ -29,7 +29,7 @@
       "endowment_plans": {
         "lic-single-premium-endowment-calculator": "LIC's Single Premium Endowment Plan (917)",
         "new_endowment_plan": "LIC's New Endowment Plan (914)",
-        "lic-jeevan-anand-calculator": "LIC's New Jeevan Anand (715)",
+        "lic-jeevan-anand-calculator": "LIC's New Jeevan Anand (915)",
         "jeevan_lakshya": "LIC's Jeevan Lakshya (933)",
         "lic-jeevan-labh-calculator": "LIC's Jeevan Labh Plan (936)",
         "amritbaal": "LIC's Amritbaal (874)",
@@ -38,7 +38,7 @@
       },
       "whole_life_plans": {
         "jeevan_umang": "LIC's Jeevan Umang (945)",
-        "jeevan_utsav": "LIC's Jeevan Utsav (871)"
+        "jeevan-utsav-calculator": "LIC's Jeevan Utsav (871)"
       },
       "money_back_plans": {
         "bima_shree": "LIC’s Bima Shree (948)",
