@@ -88,11 +88,6 @@ export default function JeevanUtsavCalculatorPageClient({
         <header className="text-center mb-8">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{ __html: pageDict.h1 }} />
           <p className="mt-4 text-sm text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.trust_blurb }}></p>
-          <div className="mt-4 flex justify-center gap-4">
-            <Button asChild><Link href="#calculator-widget">{pageDict.cta_buttons.calculate}</Link></Button>
-            <Button variant="outline" asChild><Link href="#calculator-widget">{pageDict.cta_buttons.download}</Link></Button>
-            <Button variant="outline" asChild><Link href={`/${params.lang}/#comparison`}>{pageDict.cta_buttons.compare}</Link></Button>
-          </div>
         </header>
         
         <div id="calculator-widget">

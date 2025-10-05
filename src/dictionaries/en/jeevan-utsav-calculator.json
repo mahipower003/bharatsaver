@@ -1,22 +1,17 @@
 
 {
   "meta": {
-    "title": "Jeevan Utsav Calculator (Plan 871) – Premium, Regular vs Flexi Income, Benefits",
-    "description": "Free LIC Jeevan Utsav Calculator (Plan 871). Estimate premium, guaranteed additions, Regular vs Flexi Income, and death benefit. Compare PPT 5–16 years. Download PDF."
+    "title": "Jeevan Utsav Calculator (Plan 771) – Premium, Regular vs Flexi Income, Benefits",
+    "description": "Free LIC Jeevan Utsav Calculator (Plan 771). Estimate premium, guaranteed additions, Regular vs Flexi Income, and death benefit. Compare PPT 5–16 years. Download PDF."
   },
   "og": {
-    "title": "Jeevan Utsav Calculator (Plan 871) – Premium, Regular vs Flexi Income, Benefits",
-    "description": "Free LIC Jeevan Utsav Calculator (Plan 871). Estimate premium, guaranteed additions, Regular vs Flexi Income, and death benefit. Compare PPT 5–16 years. Download PDF."
+    "title": "Jeevan Utsav Calculator (Plan 771) – Premium, Regular vs Flexi Income, Benefits",
+    "description": "Free LIC Jeevan Utsav Calculator (Plan 771). Estimate premium, guaranteed additions, Regular vs Flexi Income, and death benefit. Compare PPT 5–16 years. Download PDF."
   },
-  "h1": "LIC Jeevan Utsav Calculator — Premium, Income & Benefits (Plan 871)",
+  "h1": "LIC Jeevan Utsav Calculator — Premium, Income & Benefits (Plan 771)",
   "trust_blurb": "Data & definitions based on LIC’s official brochure (UIN 512N363V02).",
-  "cta_buttons": {
-    "calculate": "Calculate Now",
-    "download": "Download PDF",
-    "compare": "Compare with Umang/Anand"
-  },
   "calculator_ui": {
-    "title": "Jeevan Utsav Calculator (Plan 871)",
+    "title": "Jeevan Utsav Calculator (Plan 771)",
     "description": "Enter your details to estimate premiums, guaranteed income, and benefits.",
     "inputs": {
       "age": "Age",
@@ -192,7 +187,7 @@
       {
         "@type": "HowToStep",
         "name": "Select plan & PPT",
-        "text": "Choose Jeevan Utsav (Plan 871) and a premium paying term between 5 and 16 years."
+        "text": "Choose Jeevan Utsav (Plan 771) and a premium paying term between 5 and 16 years."
       },
       {
         "@type": "HowToStep",
@@ -209,7 +204,7 @@
   "article_schema": {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Jeevan Utsav Calculator (Plan 871) – Premium, Regular vs Flexi Income, Benefits",
+    "headline": "Jeevan Utsav Calculator (Plan 771) – Premium, Regular vs Flexi Income, Benefits",
     "author": {
       "@type": "Person",
       "name": "Mahesh Chaube, CFP"
@@ -227,5 +222,3 @@
     "dateModified": "2025-09-23"
   }
 }
-
-    
