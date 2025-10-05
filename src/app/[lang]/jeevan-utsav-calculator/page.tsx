@@ -10,7 +10,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
     const pageDict = (await import(`@/dictionaries/${params.lang}/jeevan-utsav-calculator.json`).catch(() => import(`@/dictionaries/en/jeevan-utsav-calculator.json`))).default;
-    const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
+    const siteUrl = 'https://bharatsaver.com';
     const pageUrl = `${siteUrl}/${params.lang}/jeevan-utsav-calculator`;
     const ogImageUrl = `${siteUrl}/images/lic-jeevan-utsav-calculator.png`;
 
@@ -27,18 +27,18 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 
 
     return {
-        title: pageDict.meta.title,
-        description: pageDict.meta.description,
+        title: "Jeevan Utsav Calculator (Plan 771) — Premium, Regular vs Flexi Income, Benefits",
+        description: "Free LIC Jeevan Utsav Calculator (Plan 771). Estimate premiums, Guaranteed Additions (₹40/₹1,000), Regular (10% BSA/yr) or Flexi (5.5% accrual) income. Download illustration.",
         alternates: {
-            canonical: pageUrl,
+            canonical: "https://bharatsaver.com/en/jeevan-utsav-calculator",
             languages: i18nConfig.locales.reduce((acc, locale) => {
                 acc[locale] = `${siteUrl}/${locale}/jeevan-utsav-calculator`;
                 return acc;
             }, {} as Record<string, string>),
         },
         openGraph: {
-          title: pageDict.og.title,
-          description: pageDict.og.description,
+          title: "Jeevan Utsav Calculator (Plan 771) — Premium, Regular vs Flexi Income, Benefits",
+          description: "Free LIC Jeevan Utsav Calculator (Plan 771). Estimate premiums, Guaranteed Additions (₹40/₹1,000), Regular (10% BSA/yr) or Flexi (5.5% accrual) income. Download illustration.",
           url: pageUrl,
           images: [{ url: ogImageUrl, width: 1200, height: 630, alt: 'LIC Jeevan Utsav Calculator' }],
           locale: params.lang === 'en' ? 'en_IN' : params.lang,
