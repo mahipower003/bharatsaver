@@ -173,7 +173,7 @@
       "icon": "GitCompareArrows",
       "title": "Jeevan Utsav vs Similar LIC Plans",
       "content": [
-        { "type": "table", "headers": ["Plan Type", "PPT", "Income/Benefit", "GA/Bonus", "Cover Duration", "Best For"], "rows": [
+        { "type": "table", "headers": ["Plan Type", "PPT", "Income/Benefit", "GAs/Bonus", "Cover Duration", "Best For"], "rows": [
             ["Jeevan Utsav (771)", "5-16 years", "10% of BSA/yr (Regular/Flexi)", "GAs of ₹40/1,000 during PPT", "Whole Life", "Flexible, guaranteed income"],
             ["Jeevan Umang (945)", "15, 20, 25, 30 years", "8% of BSA/yr (Regular)", "Annual bonuses", "Whole Life", "Guaranteed pension-like income"],
             ["New Jeevan Anand (915)", "Equal to Term", "Lump Sum at Maturity", "Annual bonuses + FAB", "Term + Whole Life", "Lump-sum goal + legacy"]
@@ -299,3 +299,5 @@
     "dateModified": "2025-09-23"
   }
 }
+
+    
