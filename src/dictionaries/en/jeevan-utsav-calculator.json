@@ -22,7 +22,7 @@
       "riders": {
         "label": "Optional Riders (Your Safety Net)",
         "addb": {
-          "label": "Accidental Death & Disability",
+          "label": "Accidental Death & Disability Benefit",
           "description": "My take: A crucial add-on. It provides an extra payout if an accident causes death or disability. A must-have for the primary earner."
         },
         "ab": {
@@ -75,7 +75,7 @@
     {
       "id": "quick-answer",
       "icon": "BarChart",
-      "title": "The Bottom Line Up Front: What Does a LIC Jeevan Utsav Plan Actually Yield?",
+      "title": "LIC Jeevan Utsav Plan Calculator: The Bottom Line Up Front",
       "content": [
         {
           "type": "paragraph",
@@ -100,7 +100,7 @@
         { "type": "paragraph", "text": "After analyzing dozens of plans, I can tell you Jeevan Utsav stands out. It’s a <strong>whole-life savings plan</strong> where you pay premiums for a short, fixed period (5-16 years) but get benefits for life. Here are the two things you absolutely need to know:" },
         { "type": "list", "items": [
           "<strong>Guaranteed 'Bonus' Every Year You Pay:</strong> During your premium paying term, LIC adds a 'Guaranteed Addition' of <strong>₹40 for every ₹1,000 of your Basic Sum Assured</strong>. This is not a market-linked bonus; it's a contractual promise.",
-          "<strong>A Lifelong Paycheck After You Stop Paying:</strong> Once your payment term is over, you start receiving a lifetime income. You have two choices: get a fixed <strong>10% of your Sum Assured</strong> every year (Regular Income), or let that money sit with LIC and grow at a guaranteed <strong>5.5% interest rate</strong> (Flexi Income), which you can withdraw later."
+          "<strong>A Lifelong Paycheck After You Stop Paying:</strong> Once your premium payment term (PPT) ends, there's a 2-year deferment period. After that, you start receiving a lifetime income. You have two choices: get a fixed <strong>10% of your Sum Assured</strong> every year (Regular Income), or let that money sit with LIC and grow at a guaranteed <strong>5.5% interest rate</strong> (Flexi Income), which you can withdraw later."
         ]},
         { "type": "paragraph", "text": "<strong>My advice:</strong> If you want a guaranteed income stream in retirement without the headaches of the stock market, Jeevan Utsav is one of the most compelling options LIC has launched in years."}
       ]
@@ -111,7 +111,7 @@
       "title": "How My Jeevan Utsav Premium Calculator Works (No Black Box Here)",
       "description": "I believe in transparency. Here's the exact logic I've built into this tool, straight from LIC's rulebook.",
       "content": [
-        { "type": "paragraph", "text": "<h3>1. Your Premium Calculation</h3><p>I start with LIC's base premium rates and then add the standard 'modal loadings' to show you the precise cost for half-yearly, quarterly, or monthly payments. No surprises.</p><h3>2. Your Guaranteed Additions (GAs)</h3><p>This is your reward for staying invested. The formula is simple and powerful: <code>GA per year = (Your Sum Assured / 1000) × 40</code>. These are added every single year you pay premiums.</p><h3>3. Your Lifetime Income</h3><ul><li><strong>Regular Income:</strong> After your premium term ends, you get a straight <code>10% × Your Sum Assured</code> every year, for life. Simple and predictable.</li><li><strong>Flexi Income:</strong> If you don't take the 10% income, it goes into a pot that grows at a <strong>guaranteed 5.5% compounded annually</strong>. My calculator shows you how this 'kitty' can grow over time.</li></ul><h3>4. Your Family's Protection (Death Benefit)</h3><p>This is crucial. The death benefit is your 'Sum Assured on Death' (which is equal to your Basic Sum Assured) plus all the Guaranteed Additions you've collected. Crucially, LIC guarantees this will never be less than 105% of all the premiums you've paid. It's a powerful safety net.</p>" }
+        { "type": "paragraph", "text": "<h3>1. Your Premium Calculation</h3><p>I start with LIC's base premium rates and then add the standard 'modal loadings' to show you the precise cost for half-yearly, quarterly, or monthly payments. No surprises.</p><h3>2. Your Guaranteed Additions (GAs)</h3><p>This is your reward for staying invested. The formula is simple and powerful: <code>GA per year = (Your Sum Assured / 1000) × 40</code>. These are added every single year you pay premiums.</p><h3>3. Your Lifetime Income</h3><ul><li><strong>Regular Income:</strong> After your premium term and a 2-year deferment, you get a straight <code>10% × Your Sum Assured</code> every year, for life. Simple and predictable.</li><li><strong>Flexi Income:</strong> If you don't take the 10% income, it goes into a pot that grows at a <strong>guaranteed 5.5% compounded annually</strong>. My calculator shows you how this 'kitty' can grow over time.</li></ul><h3>4. Your Family's Protection (Death Benefit)</h3><p>This is crucial. The death benefit is your 'Sum Assured on Death' (which is equal to your Basic Sum Assured) plus all the Guaranteed Additions you've collected. Crucially, LIC guarantees this will never be less than 105% of all the premiums you've paid. It's a powerful safety net.</p>" }
       ]
     },
     {
@@ -129,22 +129,22 @@
     {
         "id": "worked-examples",
         "icon": "Users",
-        "title": "LIC Jeevan Utsav Calculator: 6 Real-Life Scenarios I've Modeled for Clients",
-         "content":[
+        "title": "LIC Jeevan Utsav Calculator: 6 Real-Life Scenarios",
+        "content":[
           { "type": "examples", "items": [
               {"title": "The 'Early Bird' Plan: Age 30, ₹10L Cover, Regular Income", "body": "<p><strong>Client's Goal:</strong> A simple, guaranteed income stream for retirement.</p><p><strong>My Suggestion:</strong> A 12-year premium term (PPT). They'll pay about <strong>₹85,500/year</strong>. Over 12 years, their total outgo is ~₹10.26 Lakh.</p><p><strong>The Payoff:</strong> During these 12 years, they accumulate <strong>₹4.8 Lakh in Guaranteed Additions</strong>. Two years after they stop paying, they start receiving <strong>₹1,00,000 every year for the rest of their life</strong>. That's the power of locking in a plan early.</p>"},
               {"title": "The 'Mid-Career Boost': Age 40, ₹20L Cover, Flexi Income", "body": "<p><strong>Client's Goal:</strong> Build a flexible fund for post-60 life, maybe for travel or a grandchild's education.</p><p><strong>My Suggestion:</strong> A 10-year PPT. Premium is ~₹2.1L/year. Over 10 years, they accumulate <strong>₹8 Lakh in GAs</strong>. Their annual income right is ₹2L (10% of ₹20L).</p><p><strong>The 'Flexi' Magic:</strong> Instead of taking the ₹2L yearly, they let it accumulate for 5 years. That pot grows at 5.5% compounded to over <strong>₹11 Lakh</strong>. Combined with their GAs, they now have a flexible fund of over <strong>₹19 Lakh</strong> to draw from as they wish.</p>"},
               {"title": "The 'Pre-Retirement Power-Up': Age 50, ₹15L Cover, with Riders", "body": "<p><strong>Client's Goal:</strong> A final, powerful savings push before retirement, with extra safety.</p><p><strong>My Suggestion:</strong> An 8-year PPT. The base premium is ~₹2.5L/year. We add an Accidental Death Rider for about ₹2,000/year extra. Total cost: ~₹2.52L/year.</p><p><strong>The Outcome:</strong> They accumulate <strong>₹4.8 Lakh in GAs</strong>. After the term, they get a guaranteed <strong>₹1.5 Lakh/year for life</strong>, with the added peace of mind from the rider.</p>"},
               {"title": "Deep Dive: How the Famous '₹17.7 Lakh' Flexi Pool is Calculated", "body": "<p>You'll see this number everywhere for a ₹10L policy with a 12-year PPT and a 10-year deferral. Here’s how I get to it, so you can trust the math:</p><ol><li>Your annual income right is ₹1 Lakh (10% of ₹10L).</li><li>You don't touch it for 10 years. That's an annuity of ₹1L growing at 5.5%. The future value is <strong>₹12.87 Lakh</strong>.</li><li>Now, add the Guaranteed Additions you earned while paying premiums: (₹40,000/year * 12 years) = <strong>₹4.8 Lakh</strong>.</li><li><strong>Total Pot:</strong> ₹12.87 Lakh (from income growth) + ₹4.8 Lakh (from GAs) = <strong>₹17.67 Lakh</strong>. That's your flexible, withdrawable fund.</p>"},
               {"title": "The 'High Net Worth' Play: ₹1 Crore Cover Snapshot", "body": "<p>For my HNI clients, this plan offers a surprisingly stable, tax-efficient legacy tool. For a ₹1 Crore Sum Assured (Age 35, 10-year PPT):</p><ul><li>You accumulate a whopping <strong>₹40 Lakh in Guaranteed Additions</strong>.</li><li>Your lifelong, tax-free annual income is <strong>₹10,00,000 per year</strong>. It's a powerful way to create a guaranteed income stream for yourself or your spouse.</li></ul>"},
-              {"title": "The 'What If I Stop Paying?' Scenario: Surrender vs. Paid-Up", "body": "<p>Life happens. If you stop paying premiums after, say, 3 years, you have a choice. <strong>Surrendering</strong> means you get a small cash amount back and the policy dies. A smarter move is often to make it <strong>'Paid-Up'</strong>. The policy stays alive with a reduced Sum Assured, and you still get to keep all the Guaranteed Additions you've already earned. It's a crucial distinction that can save you from a big financial mistake.</p>"}
+              {"title": "What If I Stop Paying? Surrender vs. Paid-Up Value", "body": "<p>Life happens. If you stop paying premiums after, say, 3 years, you have a choice. <strong>Surrendering</strong> means you get a small cash amount back and the policy dies. A smarter move is often to make it <strong>'Paid-Up'</strong>. The policy stays alive with a reduced Sum Assured, and you still get to keep all the Guaranteed Additions you've already earned. It's a crucial distinction that can save you from a big financial mistake.</p>"}
           ]}
         ]
     },
     {
       "id": "comparison",
       "icon": "GitCompareArrows",
-      "title": "Jeevan Utsav vs. The Classics: A Head-to-Head Comparison",
+      "title": "Jeevan Utsav vs. The Classics: Head-to-Head with Jeevan Utsav Calculator",
       "description": "How does Jeevan Utsav stack up against other LIC fan-favorites like Jeevan Umang and New Jeevan Anand? Here’s my take.",
       "content": [
         { "type": "table", "headers": ["Plan", "My Verdict: What It's Really For", "The Key Difference"], "rows": [
@@ -158,15 +158,15 @@
     {
       "id": "eligibility-rules",
       "icon": "CheckCircle",
-      "title": "The Fine Print: Eligibility, Loans & Surrender Rules",
+      "title": "Eligibility, Riders, Loan & Surrender: The Fine Print",
       "content": [
         { "type": "list", "items": [
             "<strong>Who can buy it?</strong> Almost anyone, from a 90-day-old infant to a 65-year-old.",
             "<strong>Minimum Cover (BSA):</strong> You have to start with at least ₹5,00,000.",
             "<strong>Premium Terms:</strong> You can choose to pay for as little as 5 years or as long as 16 years.",
-            "<strong>When do the benefits start?</strong> The Guaranteed Additions are earned every year you pay premiums. The income starts 2 years after your premium payment term ends.",
-            "<strong>Can I add safety nets (Riders)?</strong> Yes. You can add riders for Accidental Death, Disability, Critical Illness, and even a Premium Waiver Benefit. I highly recommend the AD&DB rider for the primary earner.",
-            "<strong>What if I need money early (Loan/Surrender)?</strong> You can take a loan against the policy after paying premiums for just one or two years (depending on your PPT). While you *can* surrender it, I often advise clients to make it 'Paid-Up' instead to preserve more value. Always compare!"
+            "<strong>Benefit Triggers:</strong> GAs accrue during the PPT. Income begins 2 years after the PPT ends (the deferment period).",
+            "<strong>Riders:</strong> Yes, you can add riders for Accidental Death, Disability, Critical Illness, and a Premium Waiver Benefit. I highly recommend the AD&DB rider for the primary earner.",
+            "<strong>Loan & Surrender:</strong> The policy acquires surrender value and loan eligibility after paying premiums for at least <strong>one full year</strong> (for PPT 5-9) or <strong>two full years</strong> (for PPT 10-16). While you *can* surrender, making it 'Paid-Up' is often a smarter financial move to preserve value."
           ]
         }
       ]
@@ -186,7 +186,7 @@
     {
       "id": "faq",
       "icon": "HelpCircle",
-      "title": "My No-Nonsense FAQ: Your Questions, Answered Honestly",
+      "title": "Jeevan Utsav Premium Calculator FAQ: Your Questions Answered Honestly",
       "content": [
         { "type": "faq", "items": [
             {"q": "Is Jeevan Utsav truly guaranteed?","a": "Yes. The 'Guaranteed Additions' and the '10% Regular Income' are written into the policy contract. Because it's a 'Non-Participating' plan, it doesn't depend on LIC's profits. What you're quoted is what you get."},
@@ -195,12 +195,12 @@
             {"q": "When do the Guaranteed Additions actually stop accruing?","a": "They stop the moment your Premium Paying Term (PPT) ends. After that, your income phase begins."},
             {"q": "Does this plan give a big lump sum at the end like other LIC plans?","a": "Not in the traditional sense. Jeevan Utsav is designed for lifelong *income*. However, if you choose the Flexi option and let your money accumulate, you can build a very large 'pool' of money that you can withdraw from, which can act like a lump sum."},
             {"q": "What does my family get if something happens to me?","a": "Your nominee gets the 'Sum Assured on Death' (which is your Basic Sum Assured) PLUS all the Guaranteed Additions that have been collected up to that point. LIC guarantees this payout will be at least 105% of all premiums you've paid."},
-            {"q": "Can I take a loan if I'm in a pinch?","a": "Yes, it's one of the benefits. Once your policy has a surrender value (after 1-2 years of payments), you can take a loan against it. It's a great way to get liquidity without breaking the policy."},
+            {"q": "Can I take a loan if I'm in a pinch?","a": "Yes, it's one of the benefits. Once your policy has a surrender value (after 1-2 years of payments depending on PPT), you can take a loan against it. It's a great way to get liquidity without breaking the policy."},
             {"q": "Are the optional riders actually worth the extra cost?","a": "In my professional opinion, riders for accidental death and critical illness are absolutely worth it. They add a crucial layer of protection for a relatively small increase in premium. They don't change your core Utsav benefits, but they protect your family from life's worst-case scenarios."}
         ]}
       ]
     },
-     {
+    {
       "id": "conclusion",
       "icon": "Star",
       "title": "My Final Take: Is Jeevan Utsav the Right Choice for You?",
@@ -209,13 +209,11 @@
       ]
     }
   ],
-  "next_steps": {
-    "title": "Your Next Steps",
-    "buttons": [
-      { "text": "Run My Calculation", "href": "#calculator-widget", "variant": "default"},
-      { "text": "Download My Results as PDF", "href": "#", "variant": "outline"},
-      { "text": "Email Me My Illustration", "href": "mailto:", "variant": "outline" },
-      { "text": "Compare with Jeevan Umang", "href": "/lic-premium-calculator", "variant": "outline" }
+  "related_calculators": {
+    "title": "Compare with Other Popular Plans",
+    "links": [
+      { "title": "LIC Jeevan Anand Calculator", "description": "Compare against the classic 'savings + protection' plan.", "href": "/lic-jeevan-anand-calculator" },
+      { "title": "LIC Jeevan Labh Calculator", "description": "See how it stacks up against this popular limited-pay endowment plan.", "href": "/lic-jeevan-labh-calculator" }
     ]
   },
   "article_schema": {
@@ -261,5 +259,3 @@
     ]
   }
 }
-
-    

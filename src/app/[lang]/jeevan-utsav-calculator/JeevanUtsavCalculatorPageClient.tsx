@@ -122,25 +122,26 @@ export default function JeevanUtsavCalculatorPageClient({
                 )
             })}
 
-            {pageDict.next_steps && (
+            {pageDict.related_calculators && (
               <Card className="mt-12 shadow-lg">
-                  <CardHeader>
-                      <CardTitle className="flex items-center gap-3">
-                          <Star className="h-8 w-8 text-primary"/>
-                          <h2 className="text-2xl font-bold">{pageDict.next_steps.title}</h2>
-                      </CardTitle>
-                  </CardHeader>
-                  <CardContent className="flex flex-wrap items-center justify-center gap-4">
-                      {pageDict.next_steps.buttons.map((button: any, index: number) => (
-                          <Button key={index} asChild={button.href.startsWith('/')} variant={button.variant || 'default'}>
-                              {button.href.startsWith('/') ? (
-                                  <Link href={`/${params.lang}${button.href}`}>{button.text}</Link>
-                              ) : (
-                                  <a href={button.href} target="_blank" rel="noopener noreferrer">{button.text}</a>
-                              )}
-                          </Button>
-                      ))}
-                  </CardContent>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-3">
+                    <Calculator className="h-8 w-8 text-primary" />
+                    <h2 className="text-2xl font-bold">{pageDict.related_calculators.title}</h2>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {pageDict.related_calculators.links.map((link: any, index: number) => (
+                    <Link key={index} href={`/${params.lang}${link.href}`} className="block group">
+                      <Card className="h-full hover:shadow-md transition-shadow">
+                        <CardHeader>
+                          <CardTitle className="text-lg">{link.title}</CardTitle>
+                          <p className="text-sm text-muted-foreground mt-1">{link.description}</p>
+                        </CardHeader>
+                      </Card>
+                    </Link>
+                  ))}
+                </CardContent>
               </Card>
             )}
         </div>
