@@ -32,7 +32,7 @@ export const calculators: CalculatorType[] = [
   {
     slug: 'jeevan-utsav-calculator',
     title: 'Jeevan Utsav Calculator',
-    description: 'Estimate premiums & guaranteed income for LIC\'s Jeevan Utsav (Plan 771).',
+    description: 'Estimate premiums & guaranteed income for LIC\'s Jeevan Utsav (Plan 871).',
     summary: 'Use our free LIC Jeevan Utsav calculator to estimate premiums, guaranteed additions, Regular vs Flexi Income, and death benefit. Compare PPT 5–16 years and download results.',
     icon: Gift,
     link_text: 'Calculate Now',
@@ -42,8 +42,8 @@ export const calculators: CalculatorType[] = [
   {
     slug: 'lic-jeevan-anand-calculator',
     title: 'LIC Jeevan Anand Calculator',
-    description: 'Estimate premium & maturity for LIC\'s New Jeevan Anand (Plan 715).',
-    summary: 'Use our free LIC Jeevan Anand calculator (Plan 715) to estimate premiums, maturity, surrender and paid-up values. Includes worked examples, bonus & FAB inputs, PDF download.',
+    description: 'Estimate premium & maturity for LIC\'s New Jeevan Anand (Plan 915).',
+    summary: 'Use our free LIC Jeevan Anand calculator (Plan 915) to estimate premiums, maturity, surrender and paid-up values. Includes worked examples, bonus & FAB inputs, PDF download.',
     icon: ShieldCheck,
     link_text: 'Calculate Now',
     lastModified: '2024-09-26',

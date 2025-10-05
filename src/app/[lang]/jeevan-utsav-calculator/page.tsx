@@ -27,18 +27,18 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 
 
     return {
-        title: "Jeevan Utsav Calculator (Plan 771) — Premium, Regular vs Flexi Income, Benefits",
-        description: "Free LIC Jeevan Utsav Calculator (Plan 771). Estimate premiums, Guaranteed Additions (₹40/₹1,000), Regular (10% BSA/yr) or Flexi (5.5% accrual) income. Download illustration.",
+        title: pageDict.meta_title,
+        description: pageDict.meta_description,
         alternates: {
-            canonical: "https://bharatsaver.com/en/jeevan-utsav-calculator",
+            canonical: pageUrl,
             languages: i18nConfig.locales.reduce((acc, locale) => {
                 acc[locale] = `${siteUrl}/${locale}/jeevan-utsav-calculator`;
                 return acc;
             }, {} as Record<string, string>),
         },
         openGraph: {
-          title: "Jeevan Utsav Calculator (Plan 771) — Premium, Regular vs Flexi Income, Benefits",
-          description: "Free LIC Jeevan Utsav Calculator (Plan 771). Estimate premiums, Guaranteed Additions (₹40/₹1,000), Regular (10% BSA/yr) or Flexi (5.5% accrual) income. Download illustration.",
+          title: pageDict.meta_title,
+          description: pageDict.meta_description,
           url: pageUrl,
           images: [{ url: ogImageUrl, width: 1200, height: 630, alt: 'LIC Jeevan Utsav Calculator' }],
           locale: params.lang === 'en' ? 'en_IN' : params.lang,
