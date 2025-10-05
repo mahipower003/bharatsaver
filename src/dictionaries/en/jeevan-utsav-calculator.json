@@ -144,6 +144,52 @@
       ]
     },
     {
+      "id": "benefit-illustrations",
+      "icon": "FileText",
+      "title": "Benefit Illustrations: Real-World Scenarios",
+      "content": [
+        { "type": "paragraph", "text": "<strong>Scenario A: Early Planner (Age 30, Regular Income)</strong><br>Inputs: BSA ₹10L, PPT 12 years.<br>Cashflow: You pay ≈₹85,500/year for 12 years. You accrue a total of ₹4.8L in Guaranteed Additions. From year 13 onwards, you receive a tax-free income of ₹1,00,000 every year for life." },
+        { "type": "paragraph", "text": "<strong>Scenario B: Mid-Career Planner (Age 40, Flexi Income)</strong><br>Inputs: BSA ₹20L, PPT 10 years.<br>Cashflow: You pay ≈₹2.1L/year for 10 years. From year 11, you are entitled to ₹2L/year. You choose not to withdraw for 5 years. Your accumulated pool grows at 5.5% p.a. to ≈₹11.8 Lakhs. You can then start making partial withdrawals as needed." },
+        { "type": "paragraph", "text": "<strong>Scenario C: Pre-Retirement (Age 50, with Riders)</strong><br>Inputs: BSA ₹15L, PPT 8 years.<br>Cashflow: Base premium is ≈₹2.5L/year. Adding an Accidental Death & Disability rider might increase it to ≈₹2.52L/year. The income logic remains unchanged: you still receive ₹1.5L/year (10% of BSA) for life after the 8-year PPT." }
+      ]
+    },
+    {
+      "id": "eligibility-rules",
+      "icon": "CheckCircle",
+      "title": "Eligibility, Riders, Loan & Surrender",
+      "content": [
+        { "type": "list", "items": [
+            "<strong>Eligibility:</strong> Entry age from 90 days to 65 years. Minimum BSA is ₹5,00,000.",
+            "<strong>Premium Paying Terms (PPT):</strong> 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, and 16 years.",
+            "<strong>Benefit Triggers:</strong> Guaranteed Additions are paid during PPT. Income starts from the end of the deferment period (2 years after PPT ends).",
+            "<strong>Riders:</strong> You can add LIC’s Accidental Death and Disability Benefit Rider, Accident Benefit Rider, New Term Assurance Rider, New Critical Illness Benefit Rider, and Premium Waiver Benefit Rider, subject to conditions.",
+            "<strong>Loan & Surrender:</strong> A loan is available after the policy acquires a surrender value (typically after 2 years of premium payments). You can surrender the policy, but it is often financially better to make it 'Paid-up' to retain a reduced death benefit and receive a payout at maturity. Always compare these options carefully. For more details refer to the <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-jeevan-utsav' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>official LIC product page</a>."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comparison",
+      "icon": "GitCompareArrows",
+      "title": "Jeevan Utsav vs Similar LIC Plans",
+      "content": [
+        { "type": "table", "headers": ["Plan Type", "PPT", "Income/Benefit", "GA/Bonus", "Cover Duration", "Best For"], "rows": [
+            ["Jeevan Utsav (771)", "5-16 years", "10% of BSA/yr (Regular/Flexi)", "GAs of ₹40/1,000 during PPT", "Whole Life", "Flexible, guaranteed income"],
+            ["Jeevan Umang (945)", "15, 20, 25, 30 years", "8% of BSA/yr (Regular)", "Annual bonuses", "Whole Life", "Guaranteed pension-like income"],
+            ["New Jeevan Anand (915)", "Equal to Term", "Lump Sum at Maturity", "Annual bonuses + FAB", "Term + Whole Life", "Lump-sum goal + legacy"]
+          ]
+        }
+      ]
+    },
+    {
+        "id": "taxes-charges",
+        "icon": "FileText",
+        "title": "Taxes & Charges",
+        "content": [
+            { "type": "paragraph", "text": "<strong>80C Deduction:</strong> Premiums paid are eligible for deduction under Section 80C. <br><strong>10(10D) Exemption:</strong> The income benefits and death benefit are tax-free under Section 10(10D), subject to conditions. <br><strong>GST:</strong> Life insurance premiums typically attract GST at 4.5% in the first year and 2.25% thereafter. Always confirm final tax implications with LIC or a financial advisor." }
+        ]
+    },
+    {
       "id": "faq",
       "icon": "HelpCircle",
       "title": "Frequently Asked Questions",
@@ -162,6 +208,14 @@
           ]
         }
       ]
+    },
+    {
+        "id": "next-steps",
+        "icon": "Star",
+        "title": "Next Steps",
+        "content": [
+            { "type": "paragraph", "text": "Now that you have an estimate, what's next? You can download a PDF of your results, email it to yourself for your records, or compare this plan with other popular LIC options like Jeevan Umang and Jeevan Anand. If you have more questions, consider talking to a Certified Financial Planner (CFP) for personalized advice."}
+        ]
     },
     {
       "id": "conclusion",
@@ -244,3 +298,5 @@
     "dateModified": "2025-09-23"
   }
 }
+
+    
