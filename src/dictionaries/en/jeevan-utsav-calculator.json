@@ -81,9 +81,9 @@
     {
       "id": "what-is-plan",
       "icon": "HelpCircle",
-      "title": "What is the LIC Jeevan Utsav plan?",
+      "title": "What is the LIC Jeevan Utsav plan (Plan 771)?",
       "content": [
-        { "type": "paragraph", "text": "LIC Jeevan Utsav is a Non-Linked, Non-Participating, Individual, Savings, Whole Life Insurance plan. It offers a limited premium payment term (5 to 16 years) but provides lifelong benefits. The key feature is the guaranteed additions that accrue during the premium paying term. After the PPT, the policyholder receives a lifetime income through one of two options: Regular Income (a fixed 10% of the Basic Sum Assured annually) or Flexi Income (where the income can be accumulated and grow at an interest rate of 5.5% p.a.). For more official details, you can refer to the <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-jeevan-utsav' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>official LIC product page</a> and the official LIC brochure." }
+        { "type": "paragraph", "text": "LIC Jeevan Utsav is a Non-Linked, Non-Participating, whole-life savings plan with a limited premium paying term (PPT) of 5 to 16 years. Its core feature is providing Guaranteed Additions of ₹40 per ₹1,000 Sum Assured during the PPT. After the PPT, it provides a lifetime income through one of two options: a 'Regular Income' of 10% of the Sum Assured annually, or a 'Flexi Income' option where you can defer and accumulate the income at a guaranteed 5.5% p.a. For full details, refer to the <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-jeevan-utsav' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>official LIC product page</a>." }
       ]
     },
     {
