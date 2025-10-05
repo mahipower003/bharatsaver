@@ -9,7 +9,7 @@
     "description": "Free LIC Jeevan Utsav Calculator (Plan 771). Estimate premium, guaranteed additions, Regular vs Flexi Income, and death benefit. Compare PPT 5–16 years. Download PDF."
   },
   "h1": "LIC Jeevan Utsav Calculator — Premium, Income & Benefits (Plan 771)",
-  "trust_blurb": "Data & definitions based on LIC’s official brochure for Plan 771 (UIN 512N363V02).",
+  "trust_blurb": "Data & definitions based on LIC’s official brochure (UIN 512N363V02).",
   "calculator_ui": {
     "title": "Jeevan Utsav Calculator (Plan 771)",
     "description": "Enter your details to estimate premiums, guaranteed income, and benefits.",
@@ -83,7 +83,7 @@
       "icon": "HelpCircle",
       "title": "What is the LIC Jeevan Utsav plan (Plan 771)?",
       "content": [
-        { "type": "paragraph", "text": "LIC Jeevan Utsav is a Non-Linked, Non-Participating, whole-life savings plan with a limited premium paying term (PPT) of 5 to 16 years. Its core feature is providing Guaranteed Additions of ₹40 per ₹1,000 Sum Assured during the PPT. After the PPT, it provides a lifetime income through one of two options: a 'Regular Income' of 10% of the Sum Assured annually, or a 'Flexi Income' option where you can defer and accumulate the income at a guaranteed 5.5% p.a. For full details, refer to the <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-jeevan-utsav' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>official LIC product page</a>." }
+        { "type": "paragraph", "text": "LIC Jeevan Utsav is a Non-Linked, Non-Participating, whole-life savings plan with a limited premium paying term (PPT) of 5 to 16 years. Its core feature is providing Guaranteed Additions during the PPT. After the PPT, it provides a lifetime income through one of two options: a 'Regular Income' of 10% of the Sum Assured annually, or a 'Flexi Income' option where you can defer and accumulate the income at a guaranteed 5.5% p.a. For full details, refer to the <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-jeevan-utsav' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>official LIC product page</a>." }
       ]
     },
     {
@@ -93,7 +93,7 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "<h3>Premium & Mode Conversion</h3><p>We start with the base annual premium and then apply LIC's official modal loading factors to calculate half-yearly (x 0.5098), quarterly (x 0.2575), and monthly (x 0.0879) premiums.</p><h3>Guaranteed Additions (GAs)</h3><p>GAs of <strong>₹40 per ₹1,000 Basic Sum Assured (BSA)</strong> accrue at the end of each policy year, but only during the Premium Paying Term (PPT). For example, for a ₹10 Lakh BSA, the annual GA is (10,00,000 / 1000) * 40 = ₹40,000. Over a 12-year PPT, this totals ₹4.8 Lakh.</p><h3>Income Options</h3><ul><li><strong>Regular Income:</strong> A straightforward 10% of the BSA is paid to you every year for life, starting after the PPT ends.</li><li><strong>Flexi Income:</strong> If you don't need the income immediately, you can choose this option to let it accumulate. LIC guarantees this deferred income will grow at <strong>5.5% p.a. compounding</strong>. You can then withdraw up to 75% of the accumulated pool in a financial year.</li></ul><h3>Death Benefit</h3><p>The death benefit is designed to be the higher of the 'Sum Assured on Death' or 105% of all premiums paid. The 'Sum Assured on Death' itself is the higher of your Basic Sum Assured or 7 times your annualized premium.</p><h3>Riders Impact</h3><p>Adding riders like Accidental Death & Disability Benefit (AD&DB) will increase your premium but does not change the calculation for Guaranteed Additions or the 10% income rule. They provide separate, additional benefits on specific events.</p>"
+          "text": "<h3>Premium & Mode Conversion</h3><p>We start with the base annual premium and then apply LIC's official modal loading factors to calculate half-yearly (x 0.5098), quarterly (x 0.2575), and monthly (x 0.0879) premiums.</p><h3>Guaranteed Additions (GAs)</h3><p>GAs of <strong>₹40 per ₹1,000 BSA</strong> accrue at the end of each policy year, but only during the Premium Paying Term (PPT). For example, for a ₹10 Lakh BSA, the annual GA is (10,00,000 / 1000) * 40 = ₹40,000. Over a 12-year PPT, this totals ₹4.8 Lakh.</p><h3>Income Options</h3><ul><li><strong>Regular Income:</strong> A straightforward 10% of the BSA is paid to you every year for life, starting after the PPT ends.</li><li><strong>Flexi Income:</strong> If you don't need the income immediately, you can choose this option to let it accumulate. LIC guarantees this deferred income will grow at <strong>5.5% p.a. compounding</strong>. You can then withdraw up to 75% of the accumulated pool in a financial year.</li></ul><h3>Death Benefit</h3><p>The death benefit is the higher of the 'Sum Assured on Death' or 105% of all premiums paid. The 'Sum Assured on Death' is itself the higher of your Basic Sum Assured or 7 times your annualized premium.</p><h3>Riders Impact</h3><p>Adding riders will increase your premium but does not change the calculation for Guaranteed Additions or the 10% income rule. They provide separate, additional benefits on specific events.</p>"
         }
       ]
     },
@@ -102,27 +102,26 @@
       "icon": "CheckCircle",
       "title": "Step-by-Step: Use the Jeevan Utsav Calculator",
       "content": [
-        { "type": "image", "src": "/images/jeevan-utsav-steps.png", "alt": "A step-by-step flowchart on how to use the Jeevan Utsav calculator." },
         { "type": "steps", "items": [
-          {"title": "Enter Details", "description": "Select your age, tobacco status, BSA, and PPT (5-16 years)."},
-          {"title": "Choose Income Option", "description": "Decide between 'Regular' for fixed annual payouts or 'Flexi' to accumulate your benefits."},
-          {"title": "Pick Payment Mode & Riders", "description": "Pick your payment frequency and toggle any optional riders you need."},
-          {"title": "Review & Download", "description": "Click 'Calculate' to see your premium, GAs total, and income schedule; download PDF."}
+          {"title": "Enter Your Details", "description": "Select your age, tobacco status, Basic Sum Assured, and the Premium Paying Term (5-16 years)."},
+          {"title": "Choose Your Income", "description": "Pick between 'Regular' for a fixed 10% BSA annual payout or 'Flexi' to defer and grow the income at 5.5%."},
+          {"title": "Select Payment Mode & Riders", "description": "Choose your payment frequency (Yearly, etc.) and add any optional riders if needed."},
+          {"title": "Calculate and Review", "description": "Click 'Calculate' to see your premiums, total Guaranteed Additions, and income schedule, then download the results as a PDF."}
         ]}
       ]
     },
     {
       "id": "plan-details",
       "icon": "BookUser",
-      "title": "Plan Details at a Glance",
+      "title": "Plan 771 Details at a Glance",
       "content": [
         { "type": "table", "headers": ["Feature", "Detail"], "rows": [
-          ["Plan Number", "771 (previous version was 871; 771 is the current version)"],
+          ["Plan Number", "771 (previous version was 871)"],
           ["UIN", "512N363V02"],
           ["Entry Age", "90 days to 65 years"],
           ["Minimum BSA", "₹5,00,000"],
           ["PPT", "5 to 16 years"],
-          ["Cover", "Whole Life (up to age 100)"],
+          ["Cover", "Whole Life"],
           ["Loan / Surrender", "Available after 2 full years of premium payment"]
         ]}
       ]
@@ -233,5 +232,3 @@
     "dateModified": "2025-09-23"
   }
 }
-
-    
