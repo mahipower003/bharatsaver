@@ -12,6 +12,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { LicSurrenderValueCalculator } from "@/components/calculators/LicSurrenderValueCalculator";
 
 function getIcon(iconName: string) {
     switch (iconName) {
@@ -58,6 +59,10 @@ export default function LicSurrenderValueCalculatorPageClient({
             {pageDict.description && <div className="mt-4 text-lg text-muted-foreground prose dark:prose-invert max-w-none mx-auto" dangerouslySetInnerHTML={{ __html: pageDict.description }} />}
         </header>
 
+        <div id="calculator-widget">
+            <LicSurrenderValueCalculator dictionary={pageDict} />
+        </div>
+        
         <div className="mt-12 space-y-8">
           {pageDict.sections.map((section: any, index: number) => {
             const Icon = getIcon(section.icon);
@@ -96,9 +101,9 @@ export default function LicSurrenderValueCalculatorPageClient({
                                 ))}
                               </Accordion>;
                         case 'image':
-                            return <div key={idx} className="my-6"><Image src={item.src} alt={item.alt} width={800} height={450} className="rounded-lg border shadow-md mx-auto" /></div>
+                            return <div key={idx} className="my-6"><Image src={item.src} alt={item.alt} width={800} height={450} className="rounded-lg border shadow-md mx-auto" /></div>;
                         case 'monetization_card':
-                            return <Card key={idx} className="bg-amber-100/50 dark:bg-amber-900/20 border-amber-400/50"><CardHeader><CardTitle className="text-amber-700 dark:text-amber-400 text-xl">{item.title}</CardTitle></CardHeader><CardContent><p className="text-muted-foreground mb-4">{item.body}</p><Button asChild><Link href={item.href} target="_blank" rel="noopener noreferrer sponsored">{item.cta}</Link></Button></CardContent></Card>
+                            return <Card key={idx} className="bg-amber-100/50 dark:bg-amber-900/20 border-amber-400/50"><CardHeader><CardTitle className="text-amber-700 dark:text-amber-400 text-xl">{item.title}</CardTitle></CardHeader><CardContent><p className="text-muted-foreground mb-4">{item.body}</p><Button asChild><Link href={item.href} target="_blank" rel="noopener noreferrer sponsored">{item.cta}</Link></Button></CardContent></Card>;
                         default:
                           return null;
                       }
