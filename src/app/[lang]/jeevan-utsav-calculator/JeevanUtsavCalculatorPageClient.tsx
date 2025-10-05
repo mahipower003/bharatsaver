@@ -62,6 +62,15 @@ const ContentRenderer = ({ content, lang }: { content: any[]; lang: Locale }) =>
                                 </AccordionItem>
                             ))}
                         </Accordion>;
+                    case 'examples':
+                         return <Accordion key={idx} type="single" collapsible className="w-full">
+                            {item.items.map((example: {title: string; body: string}, eIdx: number) => (
+                                <AccordionItem key={eIdx} value={`item-${eIdx}`}>
+                                    <AccordionTrigger>{example.title}</AccordionTrigger>
+                                    <AccordionContent><div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{__html: example.body}} /></AccordionContent>
+                                </AccordionItem>
+                            ))}
+                        </Accordion>;
                     case 'image':
                         return <div key={idx} className="my-6"><Image src={item.src} alt={item.alt} width={800} height={450} className="rounded-lg border shadow-md mx-auto" /></div>
                     default:
