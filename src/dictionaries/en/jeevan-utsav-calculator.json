@@ -89,28 +89,28 @@
     {
       "id": "how-it-works",
       "icon": "FileText",
-      "title": "How the Calculator Works (Transparent Formulae)",
+      "title": "How the calculator works (transparent, brochure-faithful)",
       "content": [
-        { "type": "paragraph", "text": "<h3>Premium & Mode Conversion</h3><p>We start with the base annual premium and then apply LIC's official modal loading factors to calculate half-yearly (x 0.5098), quarterly (x 0.2575), and monthly (x 0.0879) premiums.</p><h3>Guaranteed Additions (GAs)</h3><p>The formula is: GA per year = (BSA/1000) × 40. GAs of <strong>₹40 per ₹1,000 BSA</strong> accrue at the end of each policy year, but only during the Premium Paying Term (PPT). For example, for a ₹10 Lakh BSA, the annual GA is (10,00,000 / 1000) * 40 = ₹40,000. Over a 12-year PPT, this totals ₹4.8 Lakh.</p><h3>Income Options</h3><ul><li><strong>Regular Income:</strong> A straightforward 10% of the BSA is paid to you every year for life, starting after the PPT ends.</li><li><strong>Flexi Income:</strong> If you don't need the income immediately, you can choose this option to let it accumulate. LIC guarantees this deferred income will grow at <strong>5.5% p.a. compounding</strong>. You can then withdraw up to 75% of the accumulated pool in a financial year.</li></ul><h3>Death Benefit</h3><p>The death benefit is the higher of the 'Sum Assured on Death' or 105% of all premiums paid. The 'Sum Assured on Death' is itself the higher of your Basic Sum Assured or 7 times your annualized premium.</p><h3>Riders Impact</h3><p>Adding riders will increase your premium but does not change the calculation for Guaranteed Additions or the 10% income rule. They provide separate, additional benefits on specific events.</p>" }
+        { "type": "paragraph", "text": "<h3>Premium & mode conversion</h3><p>We start with the base annual premium and then apply LIC's official modal loading factors to calculate half-yearly (x 0.5098), quarterly (x 0.2575), and monthly (x 0.0879) premiums.</p><h3>Guaranteed Additions (GAs)</h3><p>The formula is: GA per year = (BSA/1000) × 40. GAs of <strong>₹40 per ₹1,000 BSA</strong> accrue at the end of each policy year, but only during the Premium Paying Term (PPT). For example, for a ₹10 Lakh BSA, the annual GA is (10,00,000 / 1000) * 40 = ₹40,000. Over a 12-year PPT, this totals ₹4.8 Lakh.</p><h3>Income options</h3><ul><li><strong>Regular Income:</strong> 10% of BSA each policy year after PPT for life.</li><li><strong>Flexi Income:</strong> Unclaimed income accrues at <strong>5.5% p.a. compounding</strong>; you can then withdraw up to 75% of the accumulated pool in a financial year.</li></ul><h3>Death benefit (during/after PPT)</h3><p>The death benefit is the <strong>higher of (Sum Assured on Death) or (105% of total premiums paid)</strong>; Sum Assured on Death is defined in the brochure (commonly higher of BSA or 7× annualized premium).</p><h3>Riders impact</h3><p>Adding riders will increase your premium but does not change the calculation for Guaranteed Additions or the 10% income rule. They provide separate, additional benefits on specific events.</p>" }
       ]
     },
     {
       "id": "step-by-step",
       "icon": "CheckCircle",
-      "title": "Step-by-Step: Use the Jeevan Utsav Calculator",
+      "title": "Step-by-step: Use the Jeevan Utsav Calculator",
       "content": [
         { "type": "steps", "items": [
           {"title": "Enter Your Details", "description": "Select your age, tobacco status, Basic Sum Assured (BSA), and Premium Paying Term (PPT)."},
-          {"title": "Choose Your Income", "description": "Pick between 'Regular' (10% BSA/yr) or 'Flexi' (defer and accumulate at 5.5%)."},
+          {"title": "Choose Your Income", "description": "Pick between Regular (10% BSA/yr) or Flexi (defer and accrue at 5.5% p.a.)."},
           {"title": "Select Payment Mode & Riders", "description": "Choose your payment frequency and add any optional riders if needed."},
-          {"title": "Calculate and Review", "description": "Click 'Calculate' to see your premiums, GAs total, and income schedule, then download the results as a PDF."}
+          {"title": "Calculate and Review", "description": "Click 'Calculate' to see your premiums, GAs total, and income schedule, then download the PDF."}
         ]}
       ]
     },
-    {
+     {
       "id": "plan-details",
       "icon": "BookUser",
-      "title": "Plan 771 Details at a Glance",
+      "title": "Plan 771 — Snapshot",
       "content": [
         { "type": "table", "headers": ["Feature", "Detail"], "rows": [
           ["Plan Number", "771 (previous version was 871)"],
@@ -119,7 +119,7 @@
           ["Minimum BSA", "₹5,00,000"],
           ["PPT", "5 to 16 years"],
           ["Cover", "Whole Life"],
-          ["Loan / Surrender", "Available after 2 full years of premium payment"]
+          ["Loan / Surrender", "Available after 2 full years of premium payment (per LIC rules)"]
         ]}
       ]
     },
@@ -174,7 +174,7 @@
       "content": [
         {
           "type": "table",
-          "headers": ["Plan Type", "PPT", "Income/Benefit", "GA/Bonus", "Cover Duration", "Best For"],
+          "headers": ["Plan Type", "PPT", "Income/Benefit", "GAs/Bonus", "Cover Duration", "Best For"],
           "rows": [
             ["Jeevan Utsav (771)", "5-16 years", "10% of BSA/yr (Regular/Flexi)", "GAs of ₹40/1,000 during PPT", "Whole Life", "Flexible, guaranteed income"],
             ["Jeevan Umang (945)", "15, 20, 25, 30 years", "8% of BSA/yr (Regular)", "Annual bonuses", "Whole Life", "Guaranteed pension-like income"],
@@ -202,19 +202,19 @@
         {
           "type": "faq",
           "items": [
-            {"q": "Is Jeevan Utsav plan guaranteed?", "a": "Yes, the Guaranteed Additions during the PPT and the income options (10% of BSA or 5.5% accrual) are guaranteed. It is a Non-Participating plan, so there are no variable bonuses."},
-            {"q": "Regular vs Flexi — which is better?", "a": "Choose 'Regular' if you need a predictable, fixed income stream immediately after the deferment period. Choose 'Flexi' if you don't need the money right away and want to let it grow at a guaranteed 5.5% p.a., giving you a larger pool to draw from later."},
-            {"q": "What is the minimum Sum Assured?", "a": "The minimum Basic Sum Assured for Jeevan Utsav is ₹5,00,000."},
-            {"q": "When do Guaranteed Additions stop?", "a": "Guaranteed Additions of ₹40 per ₹1,000 Sum Assured accrue only during the Premium Paying Term (PPT). They stop accruing once your premium payments end."},
-            {"q": "Is there a 'maturity amount'?", "a": "As a whole-life plan, Jeevan Utsav is designed to provide a lifetime income stream, not a single lump-sum maturity payout like traditional endowment plans. The policy benefits continue for life."},
-            {"q": "What is the death benefit?", "a": "The death benefit is the higher of the 'Sum Assured on Death' or 105% of all premiums paid. The 'Sum Assured on Death' is itself the higher of your Basic Sum Assured or 7 times your annualized premium."},
-            {"q": "Can I take a loan on this policy?", "a": "Yes, a loan is available after the policy has acquired a surrender value (typically after 2 years of premium payments). Terms are as per LIC rules."},
-            {"q": "Are riders worth it?", "a": "Riders provide valuable additional protection for specific events like accidents or critical illness. They increase your premium but do not affect the Guaranteed Additions or the 10% income benefit calculation."}
+            {"q": "Is Jeevan Utsav guaranteed?","a": "Yes—GAs during PPT and defined income rules thereafter; it’s Non-Par, so no bonuses."},
+            {"q": "Regular vs Flexi—what’s better?","a": "Regular for immediate income; Flexi if you can defer (accrues ~5.5% p.a.)."},
+            {"q": "What is the minimum BSA?","a": "₹5,00,000."},
+            {"q": "When do GAs stop?","a": "After PPT ends."},
+            {"q": "Is there a maturity amount?","a": "It’s a whole-life plan—benefit is lifetime income post-PPT (not a single maturity lump sum)."},
+            {"q": "What is the death benefit?","a": "Higher of SAD or 105% of premiums; SAD definition per LIC brochure."},
+            {"q": "Can I take a loan?","a": "Yes, after policy acquires value; terms per LIC."},
+            {"q": "Are riders worth it?","a": "They add protection; they do not change GA or the 10% income rule."}
           ]
         }
       ]
     },
-     {
+    {
       "id": "next-steps",
       "icon": "Star",
       "title": "Next Steps",
@@ -230,69 +230,5 @@
         { "type": "paragraph", "text": "LIC's Jeevan Utsav is a powerful tool for anyone seeking a guaranteed, lifelong income stream after a limited premium payment period. Whether you choose the predictable 'Regular Income' or the flexible 'Flexi Income' option to grow your wealth, this plan is an excellent choice for creating a secure, lifelong financial legacy. It's best suited for individuals looking for a reliable, non-market-linked income stream in their post-retirement years, combining savings and protection in one powerful package." }
       ]
     }
-  ],
-  "faq_schema": {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What are Guaranteed Additions in Jeevan Utsav?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Guaranteed Additions accrue @ ₹40 per ₹1,000 Basic Sum Assured at the end of each policy year during the premium paying term only."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the Regular vs Flexi Income?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Regular Income pays 10% of BSA each year for life after PPT. Flexi allows you to defer income; unclaimed income accrues @ ~5.5% p.a. compounding, with up to 75% withdrawal per year."
-        }
-      }
-    ]
-  },
-  "how_to_schema": {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-    "name": "How to use the Jeevan Utsav Calculator",
-    "step": [
-      {
-        "@type": "HowToStep",
-        "name": "Select plan & PPT",
-        "text": "Choose Jeevan Utsav (Plan 771) and a premium paying term between 5 and 16 years."
-      },
-      {
-        "@type": "HowToStep",
-        "name": "Pick income option",
-        "text": "Select Regular (10% BSA per year) or Flexi (accumulate at 5.5% if not withdrawn)."
-      },
-      {
-        "@type": "HowToStep",
-        "name": "Enter cover & mode",
-        "text": "Fill age, sum assured, mode, and riders; click Calculate to view premium, GAs and income schedule."
-      }
-    ]
-  },
-  "article_schema": {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Jeevan Utsav Calculator (Plan 771) – Premium, Regular vs Flexi Income, Benefits",
-    "author": {
-      "@type": "Person",
-      "name": "Mahesh Chaube, CFP"
-    },
-    "reviewedBy": {
-      "@type": "Person",
-      "name": "Laveena Vijayi"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "BharatSaver",
-      "logo": {}
-    },
-    "datePublished": "2025-09-23",
-    "dateModified": "2025-09-23"
-  }
+  ]
 }
