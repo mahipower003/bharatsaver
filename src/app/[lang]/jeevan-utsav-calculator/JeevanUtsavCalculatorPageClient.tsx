@@ -11,14 +11,14 @@ import { AuthorCard } from "@/components/layout/AuthorCard";
 import { FooterCta } from "@/components/layout/FooterCta";
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
-import { Download, BarChart, FileText, CheckCircle, SlidersHorizontal, GitCompareArrows, AlertTriangle, Users, BookUser, Star, HelpCircle, UserCheck } from "lucide-react";
+import { Download, BarChart, FileText, CheckCircle, SlidersHorizontal, GitCompareArrows, AlertTriangle, Users, BookUser, Star, HelpCircle, UserCheck, Calculator } from "lucide-react";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import Image from "next/image";
 
 function getIcon(iconName: string) {
     const icons: { [key: string]: React.ElementType } = {
         BarChart, FileText, CheckCircle, SlidersHorizontal, GitCompareArrows,
-        AlertTriangle, Users, BookUser, Star, HelpCircle, UserCheck
+        AlertTriangle, Users, BookUser, Star, HelpCircle, UserCheck, Calculator
     };
     return icons[iconName] || HelpCircle;
 }
@@ -136,6 +136,20 @@ export default function JeevanUtsavCalculatorPageClient({
             )}
         </div>
         
+        {pageDict.conclusion && (
+          <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3">
+                <Star className="h-7 w-7 text-accent" />
+                <h2 className="text-2xl font-bold">{pageDict.conclusion.title}</h2>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="prose dark:prose-invert max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.conclusion.body }} />
+            </CardContent>
+          </Card>
+        )}
+
         <AuthorCard dictionary={dictionary.author_card} />
         <FooterCta dictionary={dictionary.footer_cta} lang={params.lang} />
       </div>
