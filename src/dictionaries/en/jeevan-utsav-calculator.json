@@ -11,7 +11,7 @@
   "h1": "LIC Jeevan Utsav Calculator — Premium, Income & Benefits (Plan 771)",
   "trust_blurb": "Data & definitions based on <a href='https://licindia.in/documents/20121/139352932/LIC_s+Jeevan+Utsav_BROCHURE_9-5-24.pdf' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>LIC’s official brochure (UIN 512N363V02)</a>.",
   "calculator_ui": {
-    "title": "Jeevan Utsav Calculator (Plan 771)",
+    "title": "Jeevan Utsav Premium Calculator (Plan 771)",
     "description": "Enter your details to estimate premiums, guaranteed income, and benefits.",
     "inputs": {
       "age": "Age",
@@ -66,7 +66,7 @@
     {
       "id": "quick-answer",
       "icon": "BarChart",
-      "title": "Quick Answer — Sample Snapshots",
+      "title": "Quick Answer: Sample Snapshots from the Jeevan Utsav Calculator",
       "content": [
         {
           "type": "table",
@@ -81,7 +81,7 @@
     {
       "id": "what-is-plan",
       "icon": "HelpCircle",
-      "title": "What is the LIC Jeevan Utsav plan (Plan 771)?",
+      "title": "What is the LIC Jeevan Utsav Plan (771)?",
       "content": [
         { "type": "paragraph", "text": "LIC Jeevan Utsav is a Non-Linked, Non-Participating, whole-life savings plan with a limited premium paying term (PPT) of 5 to 16 years. Its core feature is providing Guaranteed Additions during the PPT. After the PPT, it provides a lifetime income through one of two options: a 'Regular Income' of 10% of the Sum Assured annually, or a 'Flexi Income' option where you can defer and accumulate the income at a guaranteed 5.5% p.a. For full details, refer to the <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-jeevan-utsav' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>official LIC product page</a>." }
       ]
@@ -89,7 +89,7 @@
     {
       "id": "how-it-works",
       "icon": "FileText",
-      "title": "How the calculator works (transparent, brochure-faithful)",
+      "title": "How this LIC Jeevan Utsav Plan Calculator Works",
       "content": [
         { "type": "paragraph", "text": "<h3>Premium & mode conversion</h3><p>We start with the base annual premium and then apply LIC's official modal loading factors to calculate half-yearly (x 0.5098), quarterly (x 0.2575), and monthly (x 0.0879) premiums.</p><h3>Guaranteed Additions (GAs)</h3><p>The formula is: GA per year = (BSA/1000) × 40. GAs of <strong>₹40 per ₹1,000 BSA</strong> accrue at the end of each policy year, but only during the Premium Paying Term (PPT). For example, for a ₹10 Lakh BSA, the annual GA is (10,00,000 / 1000) * 40 = ₹40,000. Over a 12-year PPT, this totals ₹4.8 Lakh.</p><h3>Income options</h3><ul><li><strong>Regular Income:</strong> 10% of BSA each policy year after PPT for life.</li><li><strong>Flexi Income:</strong> Unclaimed income accrues at 5.5% p.a. compounding; you can then withdraw up to 75% of the accumulated pool in a financial year.</li></ul><h3>Death benefit (during/after PPT)</h3><p>The death benefit is the <strong>higher of (Sum Assured on Death) or (105% of total premiums paid)</strong>; Sum Assured on Death is defined in the brochure (commonly higher of BSA or 7× annualized premium).</p><h3>Riders impact</h3><p>Adding riders will increase your premium but does not change the calculation for Guaranteed Additions or the 10% income rule. They provide separate, additional benefits on specific events.</p>" }
       ]
@@ -97,7 +97,7 @@
     {
       "id": "step-by-step",
       "icon": "CheckCircle",
-      "title": "Step-by-step: Use the Jeevan Utsav Calculator",
+      "title": "Step-by-Step: Using the LIC Jeevan Utsav Calculator",
       "content": [
         { "type": "steps", "items": [
           {"title": "Enter Your Details", "description": "Select your age, tobacco status, Basic Sum Assured (BSA), and Premium Paying Term (PPT)."},
@@ -126,7 +126,7 @@
     {
       "id": "premium-examples",
       "icon": "Users",
-      "title": "Premium Examples",
+      "title": "Jeevan Utsav Premium Calculator: Examples",
       "content": [
         { "type": "paragraph", "text": "<h3>Annual Premium by Age × PPT (BSA ₹10L)</h3>" },
         { "type": "table", "headers": ["Age", "PPT 5", "PPT 8", "PPT 12", "PPT 16"], "rows": [
@@ -171,7 +171,7 @@
     {
       "id": "comparison",
       "icon": "GitCompareArrows",
-      "title": "Jeevan Utsav vs Similar LIC Plans",
+      "title": "Jeevan Utsav vs Jeevan Umang vs Jeevan Anand",
       "content": [
         { "type": "table", "headers": ["Plan Type", "PPT", "Income/Benefit", "GAs/Bonus", "Cover Duration", "Best For"], "rows": [
             ["Jeevan Utsav (771)", "5-16 years", "10% of BSA/yr (Regular/Flexi)", "GAs of ₹40/1,000 during PPT", "Whole Life", "Flexible, guaranteed income"],
@@ -192,7 +192,7 @@
     {
       "id": "faq",
       "icon": "HelpCircle",
-      "title": "Frequently Asked Questions",
+      "title": "Frequently Asked Questions about Jeevan Utsav",
       "content": [
         {
           "type": "faq",
@@ -202,7 +202,7 @@
             {"q": "What is the minimum BSA?","a": "₹5,00,000."},
             {"q": "When do GAs stop?","a": "After PPT ends."},
             {"q": "Is there a maturity amount?","a": "It’s a whole-life plan—benefit is lifetime income post-PPT (not a single maturity lump sum)."},
-            {"q": "What is the death benefit?","a": "Higher of SAD or 105% of total premiums; SAD definition per brochure."},
+            {"q": "What is the death benefit?","a": "Higher of SAD or 105% of total premiums paid; SAD definition per brochure."},
             {"q": "Can I take a loan?","a": "Yes, after policy acquires value; terms per LIC."},
             {"q": "Are riders worth it?","a": "They add protection; they do not change GA or the 10% income rule."}
           ]
@@ -299,5 +299,3 @@
     "dateModified": "2025-09-23"
   }
 }
-
-    
