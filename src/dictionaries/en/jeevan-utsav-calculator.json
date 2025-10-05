@@ -144,57 +144,6 @@
       ]
     },
     {
-      "id": "benefit-illustrations",
-      "icon": "FileText",
-      "title": "Benefit Illustrations: Real-World Scenarios",
-      "content": [
-        { "type": "paragraph", "text": "<h4>Scenario A: Early Planner (Age 30, Regular Income)</h4><p><strong>Inputs:</strong> BSA ₹10L, PPT 12 years.<br><strong>Cashflow:</strong> You pay ≈₹85,500/year for 12 years. You accrue a total of ₹4.8L in Guaranteed Additions. From year 13 onwards, you receive a tax-free income of ₹1,00,000 every year for life.</p>" },
-        { "type": "paragraph", "text": "<h4>Scenario B: Mid-Career Planner (Age 40, Flexi Income)</h4><p><strong>Inputs:</strong> BSA ₹20L, PPT 10 years.<br><strong>Cashflow:</strong> You pay ≈₹2.1L/year for 10 years. From year 11, you are entitled to ₹2L/year. You choose not to withdraw for 5 years. Your accumulated pool grows at 5.5% p.a. to ≈₹11.8 Lakhs. You can then start making partial withdrawals as needed.</p>" },
-        { "type": "paragraph", "text": "<h4>Scenario C: Pre-Retirement (Age 50, with Riders)</h4><p><strong>Inputs:</strong> BSA ₹15L, PPT 8 years.<br><strong>Cashflow:</strong> Base premium is ≈₹2.5L/year. Adding an Accidental Death & Disability rider might increase it to ≈₹2.52L/year. The income logic remains unchanged: you still receive ₹1.5L/year (10% of BSA) for life after the 8-year PPT.</p>" }
-      ]
-    },
-    {
-      "id": "eligibility-rules",
-      "icon": "BookUser",
-      "title": "Eligibility, Riders, Loan & Surrender",
-      "content": [
-        { "type": "list", "items": [
-          "<strong>Eligibility:</strong> Entry age from 90 days to 65 years. Minimum BSA is ₹5,00,000.",
-          "<strong>Premium Paying Terms (PPT):</strong> 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, and 16 years.",
-          "<strong>Benefit Triggers:</strong> Guaranteed Additions are paid during PPT. Income starts from the end of the deferment period (2 years after PPT ends).",
-          "<strong>Riders:</strong> You can add LIC’s Accidental Death and Disability Benefit Rider, Accident Benefit Rider, New Term Assurance Rider, New Critical Illness Benefit Rider, and Premium Waiver Benefit Rider, subject to conditions.",
-          "<strong>Loan & Surrender:</strong> A loan is available after the policy acquires a surrender value (typically after 2 years of premium payments). You can surrender the policy, but it is often financially better to make it 'Paid-up' to retain a reduced death benefit and receive a payout at maturity. Always compare these options carefully. For more details refer to the official <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-jeevan-utsav' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>LIC product page</a>."
-        ]}
-      ]
-    },
-    {
-      "id": "comparison",
-      "icon": "GitCompareArrows",
-      "title": "Jeevan Utsav vs Similar LIC Plans",
-      "content": [
-        {
-          "type": "table",
-          "headers": ["Plan Type", "PPT", "Income/Benefit", "GAs/Bonus", "Cover Duration", "Best For"],
-          "rows": [
-            ["Jeevan Utsav (771)", "5-16 years", "10% of BSA/yr (Regular/Flexi)", "GAs of ₹40/1,000 during PPT", "Whole Life", "Flexible, guaranteed income"],
-            ["Jeevan Umang (945)", "15, 20, 25, 30 years", "8% of BSA/yr (Regular)", "Annual bonuses", "Whole Life", "Guaranteed pension-like income"],
-            ["New Jeevan Anand (915)", "Equal to Term", "Lump Sum at Maturity", "Annual bonuses + FAB", "Term + Whole Life", "Lump-sum goal + legacy"]
-          ]
-        }
-      ]
-    },
-    {
-      "id": "tax",
-      "icon": "FileText",
-      "title": "Taxes & Charges",
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "<strong>80C Deduction:</strong> Premiums paid are eligible for deduction under Section 80C. <strong>10(10D) Exemption:</strong> The income benefits and death benefit are tax-free under Section 10(10D), subject to conditions. <strong>GST:</strong> Life insurance premiums typically attract GST at 4.5% in the first year and 2.25% thereafter. Always confirm final tax implications with LIC or a financial advisor."
-        }
-      ]
-    },
-    {
       "id": "faq",
       "icon": "HelpCircle",
       "title": "Frequently Asked Questions",
@@ -212,14 +161,6 @@
             {"q": "Are riders worth it?","a": "They add protection; they do not change GA or the 10% income rule."}
           ]
         }
-      ]
-    },
-    {
-      "id": "next-steps",
-      "icon": "Star",
-      "title": "Next Steps",
-      "content": [
-        { "type": "paragraph", "text": "<div class='flex flex-wrap gap-2'><a href='#calculator-widget' class='text-primary hover:underline'>Calculate Now</a> • <a href='#' class='text-primary hover:underline'>Download PDF</a> • <a href='#' class='text-primary hover:underline'>Email My Illustration</a> • <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>Compare with Umang/Anand</a></div>" }
       ]
     },
     {
