@@ -155,6 +155,14 @@
           ]
         }
       ]
+    },
+    {
+      "id": "conclusion",
+      "icon": "Star",
+      "title": "Conclusion: A Lifelong Income Stream for a Secure Future",
+      "content": [
+        { "type": "paragraph", "text": "LIC's Jeevan Utsav is a powerful tool for anyone seeking a guaranteed, lifelong income stream after a limited premium payment period. Whether you choose the predictable 'Regular Income' or the flexible 'Flexi Income' option to grow your wealth, this plan is an excellent choice for creating a secure, lifelong financial legacy. It's best suited for individuals looking for a reliable, non-market-linked income stream in their post-retirement years, combining savings and protection in one powerful package." }
+      ]
     }
   ],
   "faq_schema": {
