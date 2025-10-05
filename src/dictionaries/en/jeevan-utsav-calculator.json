@@ -103,7 +103,7 @@
           {"title": "Enter Your Details", "description": "Select your age, tobacco status, Basic Sum Assured (BSA), and Premium Paying Term (PPT)."},
           {"title": "Choose Your Income", "description": "Pick between 'Regular' (10% BSA/yr) or 'Flexi' (defer and accumulate at 5.5%)."},
           {"title": "Select Payment Mode & Riders", "description": "Choose your payment frequency and add any optional riders if needed."},
-          {"title": "Calculate and Review", "description": "Click 'Calculate' to see your premiums, total Guaranteed Additions, and income schedule, then download the results as a PDF."}
+          {"title": "Calculate and Review", "description": "Click 'Calculate' to see your premiums, GAs total, and income schedule, then download the results as a PDF."}
         ]}
       ]
     },
@@ -168,6 +168,33 @@
       ]
     },
     {
+      "id": "comparison",
+      "icon": "GitCompareArrows",
+      "title": "Jeevan Utsav vs Similar LIC Plans",
+      "content": [
+        {
+          "type": "table",
+          "headers": ["Plan Type", "PPT", "Income/Benefit", "GA/Bonus", "Cover Duration", "Best For"],
+          "rows": [
+            ["Jeevan Utsav (771)", "5-16 years", "10% of BSA/yr (Regular/Flexi)", "GAs of ₹40/1,000 during PPT", "Whole Life", "Flexible, guaranteed income"],
+            ["Jeevan Umang (945)", "15, 20, 25, 30 years", "8% of BSA/yr (Regular)", "Annual bonuses", "Whole Life", "Guaranteed pension-like income"],
+            ["New Jeevan Anand (915)", "Equal to Term", "Lump Sum at Maturity", "Annual bonuses + FAB", "Term + Whole Life", "Lump-sum goal + legacy"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tax",
+      "icon": "FileText",
+      "title": "Taxes & Charges",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "<strong>80C Deduction:</strong> Premiums paid are eligible for deduction under Section 80C. <strong>10(10D) Exemption:</strong> The income benefits and death benefit are tax-free under Section 10(10D), subject to conditions. <strong>GST:</strong> Life insurance premiums typically attract GST at 4.5% in the first year and 2.25% thereafter. Always confirm final tax implications with LIC or a financial advisor."
+        }
+      ]
+    },
+    {
       "id": "faq",
       "icon": "HelpCircle",
       "title": "Frequently Asked Questions",
@@ -175,14 +202,24 @@
         {
           "type": "faq",
           "items": [
-            {"q": "Is Jeevan Utsav plan guaranteed?", "a": "Yes: GAs during PPT; income rules per option."},
-            {"q": "Regular vs Flexi — which is better?", "a": "Cash-need vs accumulation @5.5%."},
+            {"q": "Is Jeevan Utsav plan guaranteed?", "a": "Yes, the Guaranteed Additions during the PPT and the income options (10% of BSA or 5.5% accrual) are guaranteed. It is a Non-Participating plan, so there are no variable bonuses."},
+            {"q": "Regular vs Flexi — which is better?", "a": "Choose 'Regular' if you need a predictable, fixed income stream immediately after the deferment period. Choose 'Flexi' if you don't need the money right away and want to let it grow at a guaranteed 5.5% p.a., giving you a larger pool to draw from later."},
             {"q": "What is the minimum Sum Assured?", "a": "The minimum Basic Sum Assured for Jeevan Utsav is ₹5,00,000."},
-            {"q": "Can I take a loan on this policy?", "a": "Yes, a loan is available after the policy has acquired a surrender value, which is typically after paying premiums for two full years."},
-            {"q": "Is there a 'maturity amount'?", "a": "As a whole life plan, Jeevan Utsav provides a lifetime income stream that starts after the premium paying term ends, not a single lump sum maturity payout like traditional endowment plans. The policy technically 'matures' at age 100."},
-            {"q": "Is '10% return' guaranteed?", "a": "It’s 10% of BSA income, not an IRR; Flexi accrual @ 5.5% for unwithdrawn income."}
+            {"q": "When do Guaranteed Additions stop?", "a": "Guaranteed Additions of ₹40 per ₹1,000 Sum Assured accrue only during the Premium Paying Term (PPT). They stop accruing once your premium payments end."},
+            {"q": "Is there a 'maturity amount'?", "a": "As a whole-life plan, Jeevan Utsav is designed to provide a lifetime income stream, not a single lump-sum maturity payout like traditional endowment plans. The policy benefits continue for life."},
+            {"q": "What is the death benefit?", "a": "The death benefit is the higher of the 'Sum Assured on Death' or 105% of all premiums paid. The 'Sum Assured on Death' is itself the higher of your Basic Sum Assured or 7 times your annualized premium."},
+            {"q": "Can I take a loan on this policy?", "a": "Yes, a loan is available after the policy has acquired a surrender value (typically after 2 years of premium payments). Terms are as per LIC rules."},
+            {"q": "Are riders worth it?", "a": "Riders provide valuable additional protection for specific events like accidents or critical illness. They increase your premium but do not affect the Guaranteed Additions or the 10% income benefit calculation."}
           ]
         }
+      ]
+    },
+     {
+      "id": "next-steps",
+      "icon": "Star",
+      "title": "Next Steps",
+      "content": [
+        { "type": "paragraph", "text": "<div class='flex flex-wrap gap-2'><a href='#calculator-widget' class='text-primary hover:underline'>Calculate Now</a> • <a href='#' class='text-primary hover:underline'>Download PDF</a> • <a href='#' class='text-primary hover:underline'>Email My Illustration</a> • <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>Compare with Umang/Anand</a></div>" }
       ]
     },
     {
