@@ -26,12 +26,27 @@
       },
       "mode": "पेमेंट मोड",
       "riders": {
-        "label": "रायडर्स",
-        "addb": "AD&DB",
-        "ab": "AB",
-        "term": "टर्म",
-        "ci": "CI",
-        "pwb": "PWB"
+        "label": "Optional Riders (Add-ons for Extra Protection)",
+        "addb": {
+          "label": "Accidental Death & Disability",
+          "description": "Provides an additional payout in case of death or disability due to an accident."
+        },
+        "ab": {
+          "label": "Accident Benefit",
+          "description": "Provides an additional sum assured in case of accidental death."
+        },
+        "term": {
+          "label": "Term Assurance",
+          "description": "Adds an extra layer of pure life cover to the base policy."
+        },
+        "ci": {
+          "label": "Critical Illness",
+          "description": "Provides a lump sum payout on the diagnosis of specified critical illnesses."
+        },
+        "pwb": {
+          "label": "Premium Waiver Benefit",
+          "description": "Waives future premiums if the policyholder becomes disabled."
+        }
       }
     },
     "outputs": {
@@ -174,7 +189,7 @@
             "<strong>पात्रता:</strong> प्रवेश वय 90 दिवसांपासून 65 वर्षांपर्यंत. किमान BSA ₹5,00,000 आहे.",
             "<strong>प्रीमियम पेमेंट टर्म (PPT):</strong> 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 आणि 16 वर्षे.",
             "<strong>लाभ ट्रिगर:</strong> PPT दरम्यान गॅरंटीड अॅडिशन्स दिले जातात. उत्पन्न स्थगिती कालावधीच्या समाप्तीपासून (PPT संपल्यानंतर 2 वर्षे) सुरू होते.",
-            "<strong>रायडर्स:</strong> तुम्ही एलआयसीचा अपघात मृत्यू आणि अपंगत्व लाभ रायडर, अपघात लाभ रायडर, नवीन टर्म अॅश्युरन्स रायడర్, కొత్త తీవ్ర అనారోగ్య ప్రయోజన రైడర్, మరియు ప్రీమియం మినహాయింపు ప్రయోజన రైడర్‌ను, షరతులకు లోబడి జోడించవచ్చు.",
+            "<strong>रायडర్స్:</strong> మీరు ఎల్‌ఐసి యొక్క ప్రమాద మరణం మరియు వైకల్య ప్రయోజన రైడర్, ప్రమాద ప్రయోజన రైడర్, కొత్త టర్మ్ అస్యూరెన్స్ రైడర్, కొత్త తీవ్ర అనారోగ్య ప్రయోజన రైడర్, మరియు ప్రీమియం మినహాయింపు ప్రయోజన రైడర్‌ను, షరతులకు లోబడి జోడించవచ్చు.",
             "<strong>రుణం & సరెండర్:</strong> పాలసీ సరెండర్ విలువను పొందిన తర్వాత (సాధారణంగా 2 సంవత్సరాల ప్రీమియం చెల్లింపుల తర్వాత) రుణం అందుబాటులో ఉంటుంది. మీరు పాలసీని సరెండర్ చేయవచ్చు, కానీ తగ్గించబడిన మరణ ప్రయోజనాన్ని నిలుపుకోవడానికి మరియు మెచ్యూరిటీపై చెల్లింపు పొందడానికి దానిని 'చెల్లించినది'గా చేయడం తరచుగా ఆర్థికంగా ఉత్తమం. ఈ ఎంపికలను ఎల్లప్పుడూ జాగ్రత్తగా పోల్చండి. మరిన్ని వివరాల కోసం <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-jeevan-utsav' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>అధికారిక எல்ஐசி ఉత్పత్తి పేజీని</a> చూడండి."
           ]
         }
@@ -227,7 +242,7 @@
     }
   ],
   "next_steps": {
-    "title": "పుढील पायऱ्या",
+    "title": "पुढील पायऱ्या",
     "buttons": [
       { "text": "आता गणना करा", "href": "#calculator-widget" },
       { "text": "पीडीएफ डाउनलोड करा", "href": "#" },
@@ -242,7 +257,7 @@
   "article_schema": {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "ఎల్‌ఐసి జీవన్ ఉత్సవ్ క్యాలిక్యులేటర్ — ప్రీమియం, ఆదాయం & ప్రయోజనాలు (ప్లాన్ 771)",
+    "headline": "జీవన్ ఉత్సవ్ క్యాలిక్యులేటర్ (ప్లాన్ 771) – ప్రీమియం, రెగ్యులర్ వర్సెస్ ఫ్లెక్సీ ఆదాయం, ప్రయోజనాలు",
     "description": "ఉచిత ఎల్‌ఐసి జీవన్ ఉత్సవ్ క్యాలిక్యులేటర్ (ప్లాన్ 771). ప్రీమియం, గ్యారెంటీడ్ అడిషన్స్ మరియు జీవితకాల ఆదాయం (సాధారణ 10% BSA / ఫ్లెక్సీ 5.5% జమ) అంచనా వేయండి. ఇలస్ట్రేషన్‌ను డౌన్‌లోడ్ చేయండి.",
     "author": { "@type": "Person", "name": "మహేష్ చౌబే, సిఎఫ్‌పి" },
     "publisher": { "@type": "Organization", "name": "భారత్‌సేవర్" },
@@ -254,7 +269,7 @@
   "how_to_schema": {
     "@context": "https://schema.org",
     "@type": "HowTo",
-    "name": "ఎల్‌ఐసి జీవన్ ఉత్సవ్ క్యాలిక్యులేటర్‌ను ఎలా ఉపయోగించాలి",
+    "name": "జీవన్ ఉత్సవ్ క్యాలిక్యులేటర్‌ను ఎలా ఉపయోగించాలి",
     "step": [
       { "@type": "HowToStep", "name": "ప్లాన్ ఇన్‌పుట్‌లను నమోదు చేయండి", "text": "ప్లాన్ 771, వయస్సు, ప్రాథమిక బీమా మొత్తం, ప్రీమియం చెల్లింపు కాలపరిమితి మరియు ఆదాయ ఎంపికను ఎంచుకోండి." },
       { "@type": "HowToStep", "name": "మోడ్ & రైడర్‌లను ఎంచుకోండి", "text": "చెల్లింపు ఫ్రీక్వెన్సీ మరియు AD&DB వంటి ఐచ్ఛిక రైడర్‌లను ఎంచుకోండి." },

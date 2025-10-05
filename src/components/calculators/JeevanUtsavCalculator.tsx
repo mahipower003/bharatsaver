@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Loader2, Download, Printer, Twitter } from 'lucide-react';
+import { Loader2, Download, Printer, Twitter, Info } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
@@ -14,7 +14,7 @@ import { Input } from '@/components/ui/input';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Alert, AlertTitle, AlertDescription } from '@/components/ui/alert';
-import { Info } from 'lucide-react';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 const formSchema = z.object({
   age: z.coerce.number().min(8, "Minimum age is 8").max(65, "Maximum age is 65"),
@@ -101,8 +101,8 @@ export function JeevanUtsavCalculator({ dictionary }: { dictionary: any }) {
     // Simplified Flexi income just shows the base annual credit
     const flexiIncome = values.basicSumAssured * 0.10; 
 
-    const totalPremiumsPaid = premiums[0].premium * values.ppt;
-    const sumAssuredOnDeath = values.basicSumAssured; // As per brochure clarification
+    const sumAssuredOnDeath = values.basicSumAssured;
+    const totalPremiumsPaid = premiums.find(p => p.mode === 'yearly')!.premium * values.ppt;
     const deathBenefitFloor = totalPremiumsPaid * 1.05;
     const finalDeathBenefit = Math.max(sumAssuredOnDeath + guaranteedAdditionsTotal, deathBenefitFloor);
 
@@ -117,6 +117,8 @@ export function JeevanUtsavCalculator({ dictionary }: { dictionary: any }) {
   }
 
   const formatCurrency = (value: number) => value.toLocaleString('en-IN', { style: 'currency', currency: 'INR', minimumFractionDigits: 0 });
+
+  const riderDetails = dictionary.inputs.riders;
 
   return (
     <>
@@ -142,16 +144,47 @@ export function JeevanUtsavCalculator({ dictionary }: { dictionary: any }) {
                     <FormMessage /></FormItem>
                   )} />
               </div>
-              <div className="space-y-2 pt-2">
-                  <FormLabel>{dictionary.inputs.riders.label}</FormLabel>
-                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-4 gap-y-2 text-sm">
-                      <FormField control={form.control} name="riders.addb" render={({ field }) => (<FormItem className="flex items-center gap-2"><FormControl><Checkbox checked={field.value} onCheckedChange={field.onChange} /></FormControl><FormLabel className="font-normal">{dictionary.inputs.riders.addb}</FormLabel></FormItem>)} />
-                      <FormField control={form.control} name="riders.ab" render={({ field }) => (<FormItem className="flex items-center gap-2"><FormControl><Checkbox checked={field.value} onCheckedChange={field.onChange} /></FormControl><FormLabel className="font-normal">{dictionary.inputs.riders.ab}</FormLabel></FormItem>)} />
-                      <FormField control={form.control} name="riders.term" render={({ field }) => (<FormItem className="flex items-center gap-2"><FormControl><Checkbox checked={field.value} onCheckedChange={field.onChange} /></FormControl><FormLabel className="font-normal">{dictionary.inputs.riders.term}</FormLabel></FormItem>)} />
-                      <FormField control={form.control} name="riders.ci" render={({ field }) => (<FormItem className="flex items-center gap-2"><FormControl><Checkbox checked={field.value} onCheckedChange={field.onChange} /></FormControl><FormLabel className="font-normal">{dictionary.inputs.riders.ci}</FormLabel></FormItem>)} />
-                      <FormField control={form.control} name="riders.pwb" render={({ field }) => (<FormItem className="flex items-center gap-2"><FormControl><Checkbox checked={field.value} onCheckedChange={field.onChange} /></FormControl><FormLabel className="font-normal">{dictionary.inputs.riders.pwb}</FormLabel></FormItem>)} />
+
+               <div className="space-y-2 pt-4">
+                <h3 className="text-lg font-medium">{riderDetails.label}</h3>
+                <TooltipProvider>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {Object.keys(riderDetails)
+                      .filter(key => key !== 'label')
+                      .map(key => {
+                        const rider = riderDetails[key as keyof typeof riderDetails];
+                        return (
+                          <FormField
+                            key={key}
+                            control={form.control}
+                            name={`riders.${key as keyof FormValues['riders']}`}
+                            render={({ field }) => (
+                              <FormItem className="flex flex-row items-center space-x-3 space-y-0 rounded-md border p-4">
+                                <FormControl>
+                                  <Checkbox checked={field.value} onCheckedChange={field.onChange} />
+                                </FormControl>
+                                <div className="space-y-1 leading-none">
+                                  <FormLabel className="flex items-center gap-1.5">
+                                    {rider.label}
+                                    <Tooltip>
+                                      <TooltipTrigger asChild>
+                                        <Info className="h-3 w-3 text-muted-foreground cursor-help" />
+                                      </TooltipTrigger>
+                                      <TooltipContent>
+                                        <p className="max-w-xs">{rider.description}</p>
+                                      </TooltipContent>
+                                    </Tooltip>
+                                  </FormLabel>
+                                </div>
+                              </FormItem>
+                            )}
+                          />
+                        );
+                      })}
                   </div>
+                </TooltipProvider>
               </div>
+
                <Button type="submit" disabled={isLoading} className="w-full sm:w-auto">
                   {isLoading ? <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> {dictionary.calculating}</> : dictionary.calculate_button}
               </Button>
