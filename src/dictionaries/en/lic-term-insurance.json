@@ -1,15 +1,15 @@
 
 {
     "meta": {
-        "title": "LIC Term Insurance Guide (2025): Plans, Premiums, Calculator",
-        "description": "Complete LIC Term Insurance guide — Compare Tech-Term & Jeevan Kiran, see ₹1Cr premiums with our calculator, and learn the claim process. Expert tips to choose the right cover."
+        "title": "LIC Term Insurance (2025) — Plans, Premiums, Comparisons & How to Buy",
+        "description": "Complete LIC Term Insurance guide — compare Tech-Term & Jeevan Kiran, see sample premiums for ₹1Cr, use our calculator, and learn the claim process. Expert tips to choose the right cover."
     },
-    "h1": "LIC Term Insurance — The Ultimate Guide (2025)",
+    "h1": "LIC Term Insurance — Ultimate Guide (2025)",
     "sections": [
         {
             "id": "quick-summary",
             "icon": "FileText",
-            "title": "Quick Summary: Which LIC Term Plan is Best for Whom?",
+            "title": "Quick Summary: Which LIC Term Plan is Best?",
             "content": [
                 {
                     "type": "paragraph",
@@ -70,9 +70,9 @@
             "icon": "BarChart",
             "title": "LIC Term Insurance Premium Examples (Calculator)",
             "content": [
-                {
+                 {
                     "type": "paragraph",
-                    "text": "We used live premium examples from market aggregators (PolicyBazaar, PolicyX) for common scenarios (₹50L/₹1Cr, ages 25/30/35, smoker/non-smoker). Use the calculator above to get an exact quote for your profile — premiums differ widely by age and product."
+                    "text": "We used live premium examples from market aggregators (PolicyBazaar, PolicyX) for common scenarios (₹50L/₹1Cr, ages 25/30/35; smoker/non-smoker). Use the calculator above to get an exact quote for your profile — premiums differ widely by age and product."
                 },
                 {
                     "type": "calculator"
@@ -182,7 +182,7 @@
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
-            { "@type": "Question", "name": "What is the LIC Tech Term Plan and how is it different?", "acceptedAnswer": { "@type": "Answer", "text": "LIC's New Tech-Term (Plan 954) is a pure-risk, non-linked term insurance plan sold exclusively online. It is cheaper than offline counterparts like Jeevan Amar due to online rebates." } },
+            { "@type": "Question", "name": "What is the LIC Tech Term Plan and how is it different?", "acceptedAnswer": { "@type": "Answer", "text": "LIC's New Tech-Term (Plan 954) is a pure-risk, non-linked term insurance plan sold exclusively online. It is different because it is cheaper than its offline counterparts like Jeevan Amar, as it offers a rebate for online sales, cutting out agent commissions." } },
             { "@type": "Question", "name": "How much is the premium for a ₹1 Crore LIC term insurance?", "acceptedAnswer": { "@type": "Answer", "text": "For a 30-year-old non-smoker, the yearly premium for a ₹1 Crore Tech-Term plan is approximately ₹12,000-₹15,000. Use our calculator for a precise quote." } },
             { "@type": "Question", "name": "Does LIC settle term claims reliably?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, LIC has one of the highest Claim Settlement Ratios (CSR) in the industry, consistently above 98% (98.52% for FY 2022-23), indicating high reliability." } }
         ]

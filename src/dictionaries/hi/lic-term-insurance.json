@@ -7,48 +7,70 @@
     "h1": "एलआईसी टर्म इंश्योरेंस — अंतिम गाइड (2025)",
     "sections": [
         {
-            "id": "lic-vs-private",
-            "icon": "GitCompareArrows",
-            "title": "LIC vs. Private Insurers: Premium & Feature Comparison",
-            "content": [
-                {
-                    "type": "paragraph",
-                    "text": "LIC’s term plans are backed by the corporation’s nationwide network and long track record. For buyers who value offline support, brand recognition, and standardized processes, LIC remains a strong choice — and it now offers online-only plans (Tech-Term, Digi Term) for better pricing and convenience."
-                }
-            ]
+            "id": "quick-summary",
+            "icon": "FileText",
+            "title": "Quick Summary: Which LIC Term Plan is Best?",
+            "content": []
+        },
+        {
+            "id": "lic-term-plans",
+            "icon": "ShieldCheck",
+            "title": "LIC Term Plans: A Detailed Look",
+            "content": []
+        },
+        {
+            "id": "premium-calculation",
+            "icon": "Calculator",
+            "title": "How LIC Term Insurance Premiums are Calculated",
+            "content": []
         },
         {
             "id": "premium-examples",
             "icon": "BarChart",
             "title": "LIC Term Insurance Premium Examples (Calculator)",
-            "content": [
-                {
-                    "type": "paragraph",
-                    "text": "We used live premium examples from market aggregators (PolicyBazaar, PolicyX) for common scenarios (₹50L/₹1Cr, ages 25/30/35, smoker/non-smoker). Use the calculator above to get an exact quote for your profile — premiums differ widely by age and product."
-                }
-            ]
+            "content": []
         },
         {
-            "id": "faq",
+            "id": "lic-vs-private",
+            "icon": "GitCompareArrows",
+            "title": "LIC vs. Private Insurers: Premium & Feature Comparison",
+            "content": []
+        },
+        {
+            "id": "riders",
             "icon": "HelpCircle",
-            "title": "Top Questions People Ask About LIC Term Insurance",
-            "content": [
-                {
-                    "type": "faq",
-                    "items": []
-                }
-            ]
+            "title": "Common Riders, Add-ons & What to Avoid",
+            "content": []
+        },
+        {
+            "id": "claim-settlement",
+            "icon": "ShieldCheck",
+            "title": "Claim Settlement Process & Timelines",
+            "content": []
         },
         {
             "id": "how-to-buy",
             "icon": "Users",
             "title": "How to Buy an LIC Term Plan Online",
-            "content": [
-                {
-                    "type": "steps",
-                    "items": []
-                }
-            ]
+            "content": []
+        },
+        {
+            "id": "faq",
+            "icon": "HelpCircle",
+            "title": "Top Questions People Ask About LIC Term Insurance",
+            "content": []
+        },
+        {
+            "id": "case-studies",
+            "icon": "BookUser",
+            "title": "Case Studies & Customer Experiences",
+            "content": []
+        },
+        {
+            "id": "conclusion",
+            "icon": "Star",
+            "title": "Conclusion & Recommended Action",
+            "content": []
         }
     ],
     "faq_schema": {},
