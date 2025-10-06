@@ -57,7 +57,7 @@ const ContentRenderer = ({ content, lang, pageDict }: { content: any[], lang: Lo
                             </div>
                         );
                     case 'premium_chart':
-                        return <LicUmangPremiumChart key={idx} dictionary={pageDict.premium_chart_section} />;
+                        return <LicUmangPremiumChart key={idx} />;
                     
                     default:
                         return null;
