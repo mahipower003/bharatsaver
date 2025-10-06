@@ -1,6 +1,6 @@
 
 {
-    "meta_title": "LIC Jeevan Umang Calculator (Plan 945) — Premium, Survival Income & Maturity",
+    "meta_title": "Jeevan Umang Calculator (Plan 945) — Premium, Survival Income & Maturity",
     "meta_description": "Free LIC Jeevan Umang Calculator — instantly estimate premium, guaranteed survival income & surrender values (Plan 945). Download PDF & get a free illustration.",
     "og_title": "Jeevan Umang Calculator (Plan 945) — Premium, Survival Income & Maturity",
     "og_description": "Use our free LIC Jeevan Umang calculator to estimate premiums, guaranteed survival benefits, and maturity value. Compare different PPT options and download your results.",
@@ -33,6 +33,7 @@
         "premium": { "title": "Premium Estimate" },
         "survivalBenefit": { "title": "Your Guaranteed Lifelong Income", "subtitle": "Per year, for life, after PPT ends." },
         "maturityBenefit": { "title": "Your Legacy (Maturity at 100)", "subtitle": "Sum Assured + Bonus + FAB" },
+        "deathBenefit": { "title": "Death Benefit for Nominee", "subtitle": "Sum Assured on Death + Vested Bonus" },
         "disclaimer": { "title": "Accuracy Note", "body": "This is an illustrative estimate. Actual values depend on LIC's declared bonuses and underwriting. For a binding quote, please contact an LIC agent." }
       },
       "calculate_button": "Calculate My Jeevan Umang Benefits",
@@ -137,6 +138,14 @@
               {"q": "Is the survival income from Jeevan Umang taxable?", "a": "Under current tax laws (Section 10(10D)), the proceeds from LIC policies, including survival benefits, are generally tax-free, subject to certain conditions."}
           ]}
         ]
+      },
+      {
+        "id": "conclusion",
+        "icon": "Star",
+        "title": "Final Verdict: Is Jeevan Umang a Good Investment?",
+        "content": [
+          { "type": "paragraph", "text": "For individuals seeking a disciplined, low-risk savings plan that provides a guaranteed, lifelong, tax-free income stream, Jeevan Umang is one of the most robust products in the market. It excels at creating a predictable 'pension' alternative, shielded from market volatility. It may not offer the high growth of equity, but for foundational financial security, its value is unmatched." }
+        ]
       }
     ],
     "related_calculators": {
@@ -146,10 +155,6 @@
         {"title": "LIC Maturity Calculator", "description": "Estimate maturity for any plan.", "href": "/lic-maturity-calculator"},
         {"title": "LIC Surrender Value Calculator", "description": "Calculate your policy's surrender value.", "href": "/lic-surrender-value-calculator"}
       ]
-    },
-    "conclusion": {
-        "title": "Final Verdict: Is Jeevan Umang a Good Investment?",
-        "body": "For individuals seeking a disciplined, low-risk savings plan that provides a guaranteed, lifelong, tax-free income stream, Jeevan Umang is one of the most robust products in the market. It excels at creating a predictable 'pension' alternative, shielded from market volatility. It may not offer the high growth of equity, but for foundational financial security, its value is unmatched."
     },
     "faq_schema": {
         "mainEntity": [
@@ -173,5 +178,3 @@
         "offers": { "@type": "Offer", "priceCurrency": "INR" }
     }
 }
-
-    
