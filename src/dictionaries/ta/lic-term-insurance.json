@@ -5,7 +5,28 @@
         "description": "முழுமையான எல்ஐசி டேர்ம் இன்சூரன்ஸ் வழிகாட்டி — டெக்-டேர்ம், டிஜி டேர்ம் & யுவா டேர்மை ஒப்பிடுக, ₹1 கோடிக்கு மாதிரி பிரீமியங்களைப் பார்க்கவும், எங்கள் கால்குலேட்டரைப் பயன்படுத்தவும், மற்றும் க்ளைம் செயல்முறையை அறியவும். சரியான கவரைத் தேர்ந்தெடுக்க நிபுணர் குறிப்புகள்."
     },
     "h1": "எல்ஐசி டேர்ம் இன்சூரன்ஸ் — இறுதி வழிகாட்டி (2025)",
-    "sections": []
+    "sections": [
+        {
+            "id": "faq",
+            "icon": "HelpCircle",
+            "title": "Top Questions People Ask About LIC Term Insurance",
+            "content": [
+                {
+                    "type": "faq",
+                    "items": []
+                }
+            ]
+        },
+        {
+            "id": "how-to-buy",
+            "icon": "Users",
+            "title": "How to Buy an LIC Term Plan Online",
+            "content": [
+                {
+                    "type": "steps",
+                    "items": []
+                }
+            ]
+        }
+    ]
 }
-
-    
