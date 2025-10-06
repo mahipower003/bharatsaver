@@ -76,7 +76,22 @@ export function LicTermInsuranceCalculator() {
                             <FormItem><FormLabel>Gender</FormLabel><Select onValueChange={field.onChange} defaultValue={field.value}><FormControl><SelectTrigger><SelectValue/></SelectTrigger></FormControl><SelectContent><SelectItem value="male">Male</SelectItem><SelectItem value="female">Female</SelectItem></SelectContent></Select></FormItem>
                         )}/>
                         <FormField name="smoker" control={form.control} render={({ field }) => (
-                           <FormItem><FormLabel>Smoker</FormLabel><RadioGroup onValueChange={field.onChange} defaultValue={field.value} className="flex gap-4 pt-2"><FormItem><FormControl><RadioGroupItem value="no" /> Non-Smoker</FormControl></FormItem><FormItem><FormControl><RadioGroupItem value="yes" /> Smoker</FormControl></FormItem></RadioGroup></FormItem>
+                           <FormItem><FormLabel>Smoker</FormLabel>
+                            <RadioGroup onValueChange={field.onChange} defaultValue={field.value} className="flex gap-4 pt-2">
+                                <FormItem className="flex items-center space-x-2">
+                                    <FormControl>
+                                        <RadioGroupItem value="no" id="smoker-no" />
+                                    </FormControl>
+                                    <Label htmlFor="smoker-no">Non-Smoker</Label>
+                                </FormItem>
+                                <FormItem className="flex items-center space-x-2">
+                                     <FormControl>
+                                        <RadioGroupItem value="yes" id="smoker-yes" />
+                                     </FormControl>
+                                    <Label htmlFor="smoker-yes">Smoker</Label>
+                                </FormItem>
+                            </RadioGroup>
+                           </FormItem>
                         )}/>
                         <FormField name="sumAssured" control={form.control} render={({ field }) => (
                             <FormItem><FormLabel>Sum Assured (Coverage)</FormLabel><Select onValueChange={(v) => field.onChange(Number(v))} defaultValue={String(field.value)}><FormControl><SelectTrigger><SelectValue/></SelectTrigger></FormControl><SelectContent><SelectItem value="5000000">₹50 Lakh</SelectItem><SelectItem value="10000000">₹1 Crore</SelectItem><SelectItem value="20000000">₹2 Crore</SelectItem></SelectContent></Select></FormItem>
@@ -119,5 +134,3 @@ export function LicTermInsuranceCalculator() {
         </div>
     );
 }
-
-    
