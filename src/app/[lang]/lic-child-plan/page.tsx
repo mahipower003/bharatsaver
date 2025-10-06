@@ -9,7 +9,6 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-    const pageDict = (await import(`@/dictionaries/${params.lang}/lic-child-plan.json`).catch(() => import(`@/dictionaries/en/lic-child-plan.json`))).default;
     const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
     const pageUrl = `${siteUrl}/${params.lang}/lic-child-plan`;
     
