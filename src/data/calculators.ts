@@ -30,6 +30,16 @@ export const calculators: CalculatorType[] = [
     image: '/images/lic-premium-calculator.png'
   },
   {
+    slug: 'lic-jeevan-umang-calculator',
+    title: 'LIC Jeevan Umang Calculator',
+    description: 'Estimate premium & survival benefits for LIC\'s Jeevan Umang (Plan 945).',
+    summary: 'Use our free LIC Jeevan Umang calculator to estimate premiums, guaranteed survival benefits, and maturity value. Compare different PPT options and download your results.',
+    icon: ShieldCheck,
+    link_text: 'Calculate Now',
+    lastModified: '2024-10-16',
+    image: '/images/lic-jeevan-umang-calculator.png'
+  },
+  {
     slug: 'jeevan-utsav-calculator',
     title: 'Jeevan Utsav Calculator',
     description: 'Estimate premiums & guaranteed income for LIC\'s Jeevan Utsav (Plan 871).',
@@ -200,3 +210,5 @@ export const calculators: CalculatorType[] = [
     image: '/images/PPF-NPS-FD-SSY-Scheme-selector.png'
   },
 ];
+
+  
