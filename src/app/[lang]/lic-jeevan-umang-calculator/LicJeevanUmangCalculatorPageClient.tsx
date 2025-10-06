@@ -11,14 +11,15 @@ import { AuthorCard } from "@/components/layout/AuthorCard";
 import { FooterCta } from "@/components/layout/FooterCta";
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
-import { Download, BarChart, FileText, CheckCircle, SlidersHorizontal, GitCompareArrows, AlertTriangle, Users, BookUser, Star, HelpCircle, UserCheck, Calculator } from "lucide-react";
+import { Download, BarChart, FileText, CheckCircle, SlidersHorizontal, GitCompareArrows, AlertTriangle, Users, BookUser, Star, HelpCircle, UserCheck, Calculator, Landmark } from "lucide-react";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import Image from "next/image";
+import { LicUmangPremiumChart } from "@/components/calculators/LicUmangPremiumChart";
 
 function getIcon(iconName: string) {
     const icons: { [key: string]: React.ElementType } = {
         BarChart, FileText, CheckCircle, SlidersHorizontal, GitCompareArrows,
-        AlertTriangle, Users, BookUser, Star, HelpCircle, UserCheck, Calculator
+        AlertTriangle, Users, BookUser, Star, HelpCircle, UserCheck, Calculator, Landmark
     };
     return icons[iconName] || HelpCircle;
 }
@@ -57,6 +58,8 @@ const ContentRenderer = ({ content, lang }: { content: any[], lang: Locale }) =>
                                 {item.body && <div className="prose dark:prose-invert max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: item.body }} />}
                             </div>
                         );
+                    case 'premium_chart':
+                        return <LicUmangPremiumChart key={idx} />;
                     default:
                         return null;
                 }

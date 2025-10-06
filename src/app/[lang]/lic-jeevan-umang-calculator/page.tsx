@@ -16,20 +16,24 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 
     const schemas = [];
 
-    if (pageDict.faq_schema && pageDict.faq_schema.mainEntity) {
-        const faqItems = pageDict.faq_schema.mainEntity;
-        const faqSchema = {
-            ...pageDict.faq_schema,
-            mainEntity: faqItems.map((faq: { question: string, answer: string }) => ({
-                '@type': 'Question',
-                name: faq.question,
-                acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: faq.answer,
-                },
-            })),
-        };
-        schemas.push(faqSchema);
+    const faqSection = pageDict.sections.find((s:any) => s.id === 'faq');
+    if (faqSection && faqSection.content) {
+        const faqItems = faqSection.content.find((c:any) => c.type === 'faq')?.items ?? [];
+        if (faqItems.length > 0) {
+            const faqSchema = {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": faqItems.map((faq: { q: string, a: string }) => ({
+                    '@type': 'Question',
+                    name: faq.q,
+                    acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: faq.a.replace(/<[^>]*>/g, ''),
+                    },
+                })),
+            };
+            schemas.push(faqSchema);
+        }
     }
 
     if (pageDict.how_to_schema) {
@@ -80,4 +84,3 @@ export default async function JeevanUmangCalculatorPage({ params }: { params: { 
         />
     );
 }
-
