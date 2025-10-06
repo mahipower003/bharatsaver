@@ -18,6 +18,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 const formSchema = z.object({
   age: z.coerce.number().min(0, "Minimum age is 90 days (0 years)").max(55, "Maximum age is 55"),
   gender: z.enum(['male', 'female']).default('male'),
+  tobacco: z.enum(['yes', 'no']).default('no'),
   sumAssured: z.coerce.number().min(200000, "Minimum Sum Assured is ₹2,00,000"),
   ppt: z.enum(['15', '20', '25', '30']),
   mode: z.enum(['yearly', 'half-yearly', 'quarterly', 'monthly']),
@@ -60,6 +61,7 @@ export function LicJeevanUmangCalculator({ dictionary }: { dictionary: any }) {
     defaultValues: {
       age: 30,
       gender: 'male',
+      tobacco: 'no',
       sumAssured: 1000000,
       ppt: '20',
       mode: 'yearly',
@@ -121,6 +123,8 @@ export function LicJeevanUmangCalculator({ dictionary }: { dictionary: any }) {
             <form onSubmit={form.handleSubmit(handleSubmit)} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   <FormField control={form.control} name="age" render={({ field }) => (<FormItem><FormLabel>{dictionary.inputs.age}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
+                  <FormField control={form.control} name="gender" render={({ field }) => (<FormItem><FormLabel>{dictionary.inputs.gender}</FormLabel><Select onValueChange={field.onChange} defaultValue={field.value}><FormControl><SelectTrigger><SelectValue /></SelectTrigger></FormControl><SelectContent><SelectItem value="male">Male</SelectItem><SelectItem value="female">Female</SelectItem></SelectContent></Select><FormMessage /></FormItem>)} />
+                  <FormField control={form.control} name="tobacco" render={({ field }) => (<FormItem><FormLabel>{dictionary.inputs.tobacco}</FormLabel><Select onValueChange={field.onChange} defaultValue={field.value}><FormControl><SelectTrigger><SelectValue /></SelectTrigger></FormControl><SelectContent><SelectItem value="no">No</SelectItem><SelectItem value="yes">Yes</SelectItem></SelectContent></Select><FormMessage /></FormItem>)} />
                   <FormField control={form.control} name="sumAssured" render={({ field }) => (<FormItem><FormLabel>{dictionary.inputs.sumAssured}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
                   <FormField control={form.control} name="ppt" render={({ field }) => (
                     <FormItem>
@@ -132,6 +136,21 @@ export function LicJeevanUmangCalculator({ dictionary }: { dictionary: any }) {
                                 <SelectItem value="20">20 Years</SelectItem>
                                 <SelectItem value="25">25 Years</SelectItem>
                                 <SelectItem value="30">30 Years</SelectItem>
+                            </SelectContent>
+                        </Select>
+                        <FormMessage />
+                    </FormItem>
+                  )}/>
+                   <FormField control={form.control} name="mode" render={({ field }) => (
+                    <FormItem>
+                        <FormLabel>{dictionary.inputs.mode}</FormLabel>
+                        <Select onValueChange={field.onChange} defaultValue={field.value}>
+                            <FormControl><SelectTrigger><SelectValue/></SelectTrigger></FormControl>
+                            <SelectContent>
+                                <SelectItem value="yearly">Yearly</SelectItem>
+                                <SelectItem value="half-yearly">Half-yearly</SelectItem>
+                                <SelectItem value="quarterly">Quarterly</SelectItem>
+                                <SelectItem value="monthly">Monthly</SelectItem>
                             </SelectContent>
                         </Select>
                         <FormMessage />
@@ -200,7 +219,7 @@ export function LicJeevanUmangCalculator({ dictionary }: { dictionary: any }) {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
                     {result.premiums.map(p => (
                         <div key={p.mode} className="p-3 border rounded-lg bg-muted/50">
-                            <p className="text-sm text-muted-foreground">{p.mode}</p>
+                            <p className="text-sm text-muted-foreground capitalize">{p.mode}</p>
                             <p className="font-bold text-lg">{formatCurrency(p.premium)}</p>
                         </div>
                     ))}
@@ -229,5 +248,3 @@ export function LicJeevanUmangCalculator({ dictionary }: { dictionary: any }) {
     </>
   );
 }
-
-  

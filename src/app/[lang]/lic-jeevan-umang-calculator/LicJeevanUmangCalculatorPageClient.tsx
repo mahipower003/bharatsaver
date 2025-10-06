@@ -29,6 +29,7 @@ const ContentRenderer = ({ content, lang }: { content: any[]; lang: Locale }) =>
     return (
         <div className="space-y-4">
             {content.map((item, idx) => {
+                const Icon = item.icon ? getIcon(item.icon) : null;
                 switch (item.type) {
                     case 'paragraph':
                         return <div key={idx} className="prose dark:prose-invert max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: item.text.replace(/{lang}/g, lang) }} />;
