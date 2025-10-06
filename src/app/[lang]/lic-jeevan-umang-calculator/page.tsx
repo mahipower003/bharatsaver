@@ -16,7 +16,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 
     const schemas = [];
 
-    const faqSection = pageDict.sections.find((s:any) => s.id === 'faq');
+    // Correctly access the 'faq' section from the sections object
+    const faqSection = pageDict.sections?.faq;
     if (faqSection && faqSection.content) {
         const faqItems = faqSection.content.find((c:any) => c.type === 'faq')?.items ?? [];
         if (faqItems.length > 0) {
