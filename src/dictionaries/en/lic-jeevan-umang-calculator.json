@@ -1,4 +1,3 @@
-
 {
     "meta_title": "Jeevan Umang Calculator (Plan 945) — Premium, Survival Income & Maturity",
     "meta_description": "Free LIC Jeevan Umang Calculator — instantly estimate premium, guaranteed survival income & surrender values (Plan 945). Download PDF & get a free illustration.",
@@ -8,7 +7,7 @@
     "intro": {
       "quick_answer": "Use this LIC Jeevan Umang calculator page to get instant premium & survival-income estimates for Plan 945, compare PPT/mode options, toggle riders, and download a PDF illustration.",
       "cta_button": "Calculate Now",
-      "citation": "Plan details based on LIC of India, UIN: 512N317V02"
+      "citation": "Plan details based on LIC of India, UIN: 512N317V02. <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-jeevan-umang' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>Official Brochure</a>"
     },
     "calculator_ui": {
       "h2": "Try the calculator (interactive tool)",
@@ -44,17 +43,27 @@
         "id": "quick-snapshots",
         "icon": "BarChart",
         "title": "Quick Snapshots: Sample Estimates",
-        "description": "Here are quick illustrative results. Use the calculator with your exact inputs for accurate numbers.",
+        "description": "Here are quick illustrative results for common queries like 'Jeevan Umang premium for 10 lakh'. Use the calculator for your exact inputs.",
         "content": [
           {
             "type": "table",
-            "headers": ["Profile", "Yearly Premium (Approx.)", "Guaranteed Annual Income"],
+            "headers": ["Profile", "Yearly Premium (Approx.)", "Guaranteed Annual Income (post-PPT)"],
             "rows": [
-                ["Age 30, ₹10L Cover, PPT 15", "≈ ₹56,000", "₹80,000 (from age 46)"],
-                ["Age 40, ₹20L Cover, PPT 10", "≈ ₹1,10,000", "₹1,60,000 (from age 51)"]
+                ["Age 30, ₹10 Lakh BSA, PPT 15", "≈ ₹65,000", "₹80,000 / year"],
+                ["Age 40, ₹20 Lakh BSA, PPT 10", "≈ ₹2,20,000", "₹1,60,000 / year"],
+                ["Age 50, ₹5 Lakh BSA, PPT 10", "≈ ₹60,000", "₹40,000 / year"]
             ],
-            "footer": "Numbers are illustrative — actual premium depends on LIC tables, medical underwriting and riders."
+            "footer": "Numbers are illustrative estimates. Actuals depend on LIC underwriting and riders."
           }
+        ]
+      },
+       {
+        "id": "premium-chart-section",
+        "icon": "BarChart",
+        "title": "Jeevan Umang Premium Chart (Age & Sum Assured)",
+        "description": "This chart shows illustrative premiums for different ages, sum assured amounts, and Premium Paying Terms (PPT). This helps answer searches for 'jeevan umang premium for 10 lakh' or 'jeevan umang premium for 50 years old'.",
+        "content": [
+            { "type": "premium_chart" }
         ]
       },
       {
@@ -63,7 +72,7 @@
         "title": "What is Jeevan Umang (Plan 945)?",
         "description": "In simple words: Pay for a fixed period (e.g., 15 years) and get a guaranteed, tax-free income for life (from year 16 to age 100).",
         "content": [
-            { "type": "paragraph", "text": "Jeevan Umang is a **participating whole-life plan** that provides an ongoing (lifelong) survival income after the premium paying term. It combines life insurance protection with a recurring income stream — making it attractive for retirement planning. The plan also accrues bonuses and may include final additional bonuses where applicable. You can get more details from the official <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-jeevan-umang' target='_blank' rel='noopener noreferrer'>LIC Jeevan Umang page</a>." }
+            { "type": "paragraph", "text": "Jeevan Umang is a <strong>participating whole-life plan</strong> that provides an ongoing (lifelong) survival income after the premium paying term. It combines life insurance protection with a recurring income stream — making it attractive for retirement planning. The plan also accrues bonuses and may include final additional bonuses where applicable. You can get more details from the official <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-jeevan-umang' target='_blank' rel='noopener noreferrer'>LIC Jeevan Umang page</a>." }
         ]
       },
       {
@@ -81,7 +90,7 @@
       {
         "id": "worked-examples",
         "icon": "Users",
-        "title": "Worked Examples & Case Studies",
+        "title": "Case Studies: Jeevan Umang for Different Life Goals",
         "description": "See how Jeevan Umang performs for different life stages.",
         "content": [
             {"type": "structured_content", "heading": "Case Study 1: The Young Professional (Age 30, ₹10L Cover, PPT 15)", "body": "<strong>Goal:</strong> Build a tax-free pension alternative. <strong>Inputs:</strong> Age 30, BSA ₹10L, PPT 15. <strong>Result:</strong> Approx. yearly premium of ₹65,000. From age 46, they receive a guaranteed, tax-free income of ₹80,000 every year for life. By age 75, they would have received ₹24 Lakhs in income from a total premium payment of about ₹9.75 Lakhs, while the life cover continues."},
@@ -93,7 +102,7 @@
           "id": "bonus-history",
           "icon": "BarChart",
           "title": "LIC Bonus Rates (Historical Reference)",
-          "description": "While not guaranteed, past bonus rates provide a realistic expectation for returns.",
+          "description": "While not guaranteed, past bonus rates provide a realistic expectation for returns. This is key for any 'LIC Jeevan Umang return calculator with bonus'.",
           "content": [
             {"type": "table", "headers": ["Financial Year", "Bonus Rate per ₹1,000 SA (Avg. for Whole Life)"], "rows": [
                 ["2023-24", "₹48"], ["2022-23", "₹46"], ["2021-22", "₹46"], ["2020-21", "₹45"]
@@ -126,16 +135,20 @@
       {
         "id": "faq",
         "icon": "HelpCircle",
-        "title": "Frequently Asked Questions",
-        "description": "All your questions about the Jeevan Umang Calculator answered.",
+        "title": "Frequently Asked Questions (FAQ)",
+        "description": "All your questions about the Jeevan Umang Calculator answered, covering long-tail keywords like 'surrender value calculator' and 'IRR'.",
         "content": [
           { "type": "faq", "items": [
               {"q": "What is the Jeevan Umang calculator and is it free?", "a": "The Jeevan Umang calculator is a free online tool to estimate premiums, survival income and related values for LIC Plan 945. Results are illustrative, not a binding quote."},
               {"q": "How do I calculate Jeevan Umang premium?", "a": "Enter your age, BSA, and PPT into the calculator. The tool uses official LIC rate tables and modal factors to compute your premium."},
               {"q": "What is the survival income under Jeevan Umang?", "a": "It is a guaranteed annual payment of 8% of the Basic Sum Assured, paid every year after the Premium Paying Term ends, until age 100 or death."},
+              {"q": "What is the maturity value of Jeevan Umang?", "a": "The primary benefit is lifetime income, but a maturity benefit is paid at age 100. It includes the Basic Sum Assured + all vested bonuses + any Final Additional Bonus (FAB). Our 'Jeevan Umang maturity calculator' feature provides this estimate."},
+              {"q": "How to calculate the return or IRR for Jeevan Umang?", "a": "Our tool estimates the Internal Rate of Return (IRR) by considering all premium outflows and all income inflows (survival benefits + maturity). This provides a realistic 'Jeevan Umang ROI' figure, which is typically in the 5-6% tax-free range."},
               {"q": "Are the results from this LIC calculator accurate?", "a": "The premium calculations are highly accurate based on LIC's rules. The maturity benefits are estimates as they depend on future, non-guaranteed bonuses. Always get an official illustration from LIC."},
               {"q": "When can I take a loan against Jeevan Umang?", "a": "You can typically avail a loan after the policy has acquired a surrender value, which is after two full years of premium payments."},
-              {"q": "Is the survival income from Jeevan Umang taxable?", "a": "Under current tax laws (Section 10(10D)), the proceeds from LIC policies, including survival benefits, are generally tax-free, subject to certain conditions."}
+              {"q": "How do I calculate the surrender value of Jeevan Umang?", "a": "The surrender value is complex, but our calculator provides an estimate for both Guaranteed (GSV) and Special (SSV) surrender values. It's a key feature of our 'LIC Jeevan Umang surrender value calculator'."},
+              {"q": "Is the survival income from Jeevan Umang taxable?", "a": "Under current tax laws (Section 10(10D)), the proceeds from LIC policies, including survival benefits, are generally tax-free, subject to certain conditions. This is a major aspect of the 'LIC Jeevan Umang tax benefits calculator' consideration."},
+              {"q": "What is the death benefit in Jeevan Umang?", "a": "Our death benefit calculator feature shows that the nominee receives the 'Sum Assured on Death' (higher of BSA or 7x annual premium) plus all vested bonuses. The 8% annual payouts stop upon the policyholder's death."}
           ]}
         ]
       },
@@ -148,6 +161,15 @@
         ]
       }
     ],
+    "premium_chart_section": {
+        "title": "Jeevan Umang Premium Chart (Illustrative)",
+        "description": "Yearly premiums for a ₹10 Lakh Sum Assured at different ages and Premium Paying Terms (PPT).",
+        "age_col": "Entry Age",
+        "ppt_15": "15 Yrs PPT",
+        "ppt_20": "20 Yrs PPT",
+        "ppt_25": "25 Yrs PPT",
+        "ppt_30": "30 Yrs PPT"
+    },
     "related_calculators": {
       "title": "Related Calculators",
       "links": [
@@ -158,7 +180,7 @@
     },
     "faq_schema": {
         "mainEntity": [
-          { "@type": "Question", "name": "What is the Jeevan Umang calculator?", "acceptedAnswer": { "@type": "Answer", "text": "The Jeevan Umang calculator is a free online tool to estimate premiums, guaranteed survival income, and surrender values for LIC's Jeevan Umang (Plan 945). The results are illustrative and not a binding LIC quote." } },
+          { "@type": "Question", "name": "What is the Jeevan Umang calculator?", "acceptedAnswer": { "@type": "Answer", "text": "The Jeevan Umang calculator is a free online tool to estimate premiums, guaranteed survival income, and surrender/paid-up values for LIC's Jeevan Umang (Plan 945). The results are illustrative and not a binding LIC quote." } },
           { "@type": "Question", "name": "How accurate is the Jeevan Umang calculator?", "acceptedAnswer": { "@type": "Answer", "text": "The calculator uses official plan rules and illustrative bonus assumptions. The final premium and benefits are confirmed by LIC after underwriting. Always verify with LIC." } },
           { "@type": "Question", "name": "Is the income from Jeevan Umang taxable?", "acceptedAnswer": { "@type": "Answer", "text": "Generally, income and maturity benefits from LIC policies like Jeevan Umang are tax-free under Section 10(10D) of the Income Tax Act, subject to policy conditions." } }
         ]

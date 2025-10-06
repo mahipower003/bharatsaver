@@ -1,4 +1,3 @@
-
 'use client';
 
 import type { Dictionary } from "@/lib/types";
@@ -24,7 +23,7 @@ function getIcon(iconName: string) {
     return icons[iconName] || HelpCircle;
 }
 
-const ContentRenderer = ({ content, lang }: { content: any[], lang: Locale }) => {
+const ContentRenderer = ({ content, lang, pageDict }: { content: any[], lang: Locale, pageDict: any }) => {
     if (!content) return null;
     return (
         <div className="space-y-4">
@@ -59,7 +58,7 @@ const ContentRenderer = ({ content, lang }: { content: any[], lang: Locale }) =>
                             </div>
                         );
                     case 'premium_chart':
-                        return <LicUmangPremiumChart key={idx} />;
+                        return <LicUmangPremiumChart key={idx} dictionary={pageDict.premium_chart_section} />;
                     case 'image_placeholder':
                         return <div key={idx} className="my-6 p-8 border-2 border-dashed rounded-lg text-center bg-muted/30">
                             <h4 className="font-semibold text-lg text-muted-foreground">{item.title}</h4>
@@ -67,7 +66,7 @@ const ContentRenderer = ({ content, lang }: { content: any[], lang: Locale }) =>
                             <Image src={item.src} alt={item.alt} width={600} height={300} className="rounded-lg border shadow-md mx-auto mt-4 opacity-50" />
                         </div>;
                     case 'video_placeholder':
-                        return <Card key={idx} className="my-6 text-center bg-secondary/50 p-8"><CardHeader><CardTitle className="flex items-center justify-center gap-3"><Video className="h-8 w-8 text-primary"/>{item.title}</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">{item.description}</p></CardContent></Card>
+                        return <Card key={idx} className="my-6 text-center bg-secondary/50 p-8"><CardHeader><CardTitle className="flex items-center justify-center gap-3"><Video className="h-8 w-8 text-primary"/>{item.title}</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">{item.description}</p></CardContent></Card>;
                     default:
                         return null;
                 }
@@ -116,7 +115,7 @@ export default function LicJeevanUmangCalculatorPageClient({
                       {section.description && <CardDescription dangerouslySetInnerHTML={{ __html: section.description.replace(/{lang}/g, params.lang) }} />}
                     </CardHeader>
                     <CardContent>
-                      <ContentRenderer content={section.content} lang={params.lang}/>
+                      <ContentRenderer content={section.content} lang={params.lang} pageDict={pageDict}/>
                     </CardContent>
                   </Card>
                 )
@@ -166,5 +165,3 @@ export default function LicJeevanUmangCalculatorPageClient({
     </div>
   );
 }
-
-    
