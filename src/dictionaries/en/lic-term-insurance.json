@@ -1,7 +1,6 @@
-
 {
     "meta": {
-        "title": "LIC Term Insurance — Ultimate Guide 2025 | Plans, Premiums & How to Buy",
+        "title": "LIC Term Insurance Plans (2025) — Full Product List & Short Guide",
         "description": "Complete 2025 guide to LIC term insurance — Tech-Term, Jeevan Amar & Jeevan Kiran. Premium examples, buy online steps, claim process & FAQs."
     },
     "h1": "LIC Term Insurance — Ultimate Guide (2025)",
@@ -10,7 +9,7 @@
         {
             "id": "quick-summary",
             "icon": "FileText",
-            "title": "Quick Take: Which LIC Term Insurance Plan Is Best for You?",
+            "title": "Quick Take — Which LIC Term Insurance Plan Is Best for You?",
             "content": [
                 {
                     "type": "paragraph",
@@ -25,7 +24,7 @@
             "content": [
                 {
                     "type": "paragraph",
-                    "text": "<p><strong>Get a free LIC term quote in 2 minutes — enter age & desired cover. No obligation.</strong></p><p>We used live premium examples from market aggregators (PolicyBazaar, PolicyX) for common scenarios. This <strong>lic term insurance calculator</strong> helps you get an exact quote for your profile—premiums for a <strong>lic term insurance 1 crore</strong> policy differ widely by age and product.</p>"
+                    "text": "<p>Get a free LIC term quote in 2 minutes — enter age & desired cover. No obligation.</p><p>We used live premium examples from market aggregators (PolicyBazaar, PolicyX) for common scenarios. This <strong>lic term insurance calculator</strong> helps you get an exact quote for your profile—premiums for a <strong>lic term insurance 1 crore</strong> policy differ widely by age and product.</p>"
                 },
                 {
                     "type": "calculator"
@@ -35,9 +34,9 @@
         {
             "id": "lic-term-plans",
             "icon": "ShieldCheck",
-            "title": "Which LIC Term Insurance Plans Exist? (Full Product List)",
+            "title": "LIC Term Insurance Plans (2025) — Full Product List & Short Guide",
             "content": [
-                {
+                 {
                     "type": "structured_content",
                     "items": [
                         { "title": "1. LIC New Tech-Term — Plan No. 954 (UIN: 512N339V02)", "text": "<strong>Type:</strong> Online-only, pure term (non-participating)<br><strong>Key benefit:</strong> Lowest LIC premiums thanks to online rebate.<br><strong>Eligibility:</strong> Age 18–65; policy term 10–40 years.<br><strong>Best for:</strong> Self-directed, tech-savvy buyers who want cheapest pure protection from LIC." },
@@ -46,7 +45,7 @@
                         { "title": "4. LIC Jeevan Kiran — Plan No. 870 (UIN: 512N359V02) — ROP", "text": "<strong>Type:</strong> Return-of-Premium term plan.<br><strong>Key benefit:</strong> All base premiums returned on survival (excl. taxes, rider premiums).<br><strong>Best for:</strong> Highly risk-averse buyers who want a savings-like result — but be aware of the high cost." },
                         { "title": "5. Bhagya Lakshmi — Plan No. 919 (UIN: 512N299V02)", "text": "<strong>Type:</strong> Non-participating, limited payment protection for low-income households.<br><strong>Best for:</strong> Rural / economically weaker segments." },
                         { "title": "6. New Jeevan Mangal — Plan No. 940 (UIN: 512N308V02)", "text": "<strong>Type:</strong> Micro-insurance with ROP element; protection + small savings.<br><strong>Best for:</strong> Micro-insurance segment wanting a small savings component." },
-                        { "title": "Note on Withdrawn Plans", "text": "Some legacy plans (e.g., Anmol Jeevan II) have been withdrawn or replaced; always check LIC’s product brochure for current availability." }
+                        { "title": "Note: Some legacy plans (e.g., Anmol Jeevan II) have been withdrawn or replaced; always check LIC’s product brochure for current availability.", "text": "" }
                     ]
                 }
             ]
@@ -89,7 +88,7 @@
                         "<strong>Riders</strong> — each rider adds a premium."
                     ]
                 },
-                 {
+                {
                     "type": "paragraph",
                     "text": "Small changes (1–2 years of age, smoker → non-smoker) can change monthly premium noticeably — always pull an instant quote."
                 }
@@ -98,7 +97,7 @@
         {
             "id": "lic-vs-private",
             "icon": "GitCompareArrows",
-            "title": "LIC vs Private Insurers — Premium & Feature Comparison",
+            "title": "LIC vs. Private Insurers — Premium & Feature Comparison",
             "content": [
                 {
                     "type": "paragraph",
@@ -116,21 +115,24 @@
         {
             "id": "riders",
             "icon": "HelpCircle",
-            "title": "Riders & Add-ons You Should Consider (and Those to Avoid)",
+            "title": "Riders & Add-ons — What to Consider (and What to Avoid)",
             "content": [
-                { "type": "paragraph", "text": "<strong>Worthwhile Add-ons:</strong><ul><li><strong>Accidental Death & Disability Benefit Rider (AD&DB):</strong> Does the lic term plan cover accidental death? Yes, if you add this rider. It's a must-have.</li><li><strong>Critical Illness Rider (CI):</strong> Provides a lump sum on diagnosis of major illnesses.</li></ul><strong>What to Avoid:</strong><ul><li><strong>Return of Premium (ROP) Plans:</strong> Financially, it's often better to buy a cheaper pure term plan and invest the difference.</li></ul>" }
+                { "type": "structured_content", "items": [
+                    {"title":"Worth considering", "text": "<ul><li><strong>Accidental Death & Disability (AD&DB):</strong> inexpensive and high incremental protection.</li><li><strong>Critical Illness (CI):</strong> useful if you don’t have robust health cover.</li></ul>"},
+                    {"title":"Use caution", "text":"<ul><li><strong>Return-of-Premium (ROP):</strong> high cost; financially often inferior to buying pure term + investing the difference.</li><li><strong>Excessive layering of riders:</strong> can push your monthly outlay much higher; buy only what materially improves your family’s protection.</li></ul>"}
+                ]}
             ]
         },
         {
             "id": "claim-settlement",
             "icon": "ShieldCheck",
-            "title": "Claim Settlement Process: Step-by-Step & Timelines",
+            "title": "Claim Settlement — Step-by-Step & Timelines",
             "content": [
-                { "type": "paragraph", "text": "This is where LIC's reputation shines. The process to <strong>how to claim lic term insurance death claim</strong> is straightforward:"},
-                { "type": "list", "items": [
-                   "The nominee must intimate the claim by submitting the filled claim form along with the original death certificate and policy documents at the servicing branch.",
-                   "LIC verifies the claim. Non-investigated claims must be settled within 30 days of receiving all documents.",
-                   "LIC's Claim Settlement Ratio was <strong>98.52%</strong> for FY2022-23."
+                { "type": "structured_content", "items": [
+                    {"title": "Intimation", "text":"Nominee files claim at servicing branch with death certificate, original policy & KYC."},
+                    {"title": "Verification", "text":"LIC verifies documents; may request hospital records or post-mortem if required."},
+                    {"title": "IRDAI timelines", "text": "Non-investigated claims to be settled within 30 days of receiving all documents; investigations can extend timelines (up to ~120 days for complex cases)."},
+                    {"title": "Tip", "text":"Keep digital copies & a claim folder for your nominee to speed the process."}
                 ]}
             ]
         },
@@ -183,7 +185,7 @@
             "title": "Conclusion & Recommended Next Step",
             "content": [
                 { "type": "paragraph", "text": "LIC term insurance offers an unparalleled combination of trust and security. For most users, the LIC Tech-Term plan offers the best balance of low cost and high trust." },
-                { "type": "cta_card", "title": "Ready to Secure Your Family's Future?", "description": "LIC Term Plan Checklist — Documents, Riders & Claim Steps (Free PDF)", "buttons": [
+                { "type": "cta_card", "title": "Ready to Secure Your Family's Future?", "description": "We’ll compare LIC Tech-Term quotes and send a customized estimate. Privacy: we never share your number without consent.", "buttons": [
                     { "text": "Get Free Quote", "href": "https://www.policybazaar.com/life-insurance/term-insurance/" }
                 ]}
             ]
