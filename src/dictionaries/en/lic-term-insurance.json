@@ -35,7 +35,7 @@
         {
             "id": "lic-term-plans",
             "icon": "ShieldCheck",
-            "title": "Which LIC Term Insurance Plans Exist? (Full Product List)",
+            "title": "LIC Term Insurance Plans (2025) — Full Product List & Short Guide",
             "content": [
                  {
                     "type": "structured_content",
@@ -72,11 +72,26 @@
         {
             "id": "premium-calculation",
             "icon": "Calculator",
-            "title": "How LIC Term Premiums Are Calculated",
+            "title": "How LIC Term Premiums Are Calculated (Short & Practical)",
             "content": [
                 {
                     "type": "paragraph",
-                    "text": "Premiums reflect actuarial risk: younger age = lower premium, smokers pay materially more, higher sum assured costs more, and longer terms increase cost. Use the calculator above for exact quotes tailored to age, gender, smoker status and PPT."
+                    "text": "Premiums are actuarial — they reflect the insurer’s assessment of risk. Main factors:"
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "<strong>Age at entry</strong> — biggest driver (younger = cheaper).",
+                        "<strong>Smoker / tobacco use</strong> — smokers pay materially higher premiums.",
+                        "<strong>Sum assured</strong> — higher cover increases premium linearly.",
+                        "<strong>Policy term & PPT</strong> — longer terms and different paying terms affect cost.",
+                        "<strong>Gender & health</strong> — underwriting can adjust prices based on gender and health disclosures.",
+                        "<strong>Riders</strong> — each rider adds a premium."
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Small changes (1–2 years of age, smoker → non-smoker) can change monthly premium noticeably — always pull an instant quote."
                 }
             ]
         },
@@ -145,7 +160,7 @@
                     "type": "faq",
                     "items": [
                         { "q": "What is the LIC Tech-Term Plan and how is it different?", "a": "LIC's New Tech-Term (Plan 954) is an online-only pure risk premium plan. It is different because it is cheaper than its offline counterpart, Jeevan Amar, as it offers a rebate for online sales, cutting out agent commissions. It is a popular choice for those looking to buy a simple <strong>lic term life insurance</strong> plan." },
-                        { "q": "Can I buy LIC term insurance online?", "a": "Absolutely. LIC offers the 'New Tech-Term' plan specifically for online purchase. The process involves visiting LIC's official website, filling out the proposal form, uploading documents, and paying the premium online." },
+                        { "q": "Can I buy LIC term insurance online?", "a": "Absolutely. LIC offers the 'New Tech-Term' plan specifically for online purchase. The process involves visiting LIC's official website, filling out the proposal form, uploading documents, and paying the first premium online." },
                         { "q": "How much premium for ₹1 Crore LIC term insurance for a 30-year-old non-smoker?", "a": "The premium for a <strong>lic term insurance 1 crore</strong> policy varies. Use our calculator for an exact quote, but a 30-year-old non-smoker can expect to pay approximately ₹1,000 - ₹1,500 per month for a Tech-Term plan." },
                         { "q": "Does LIC settle term claims reliably?", "a": "Yes. LIC has one of the highest Claim Settlement Ratios (CSR) in the industry, consistently above 98% (98.52% for FY 2022-23), indicating high reliability." },
                         { "q": "Are return-of-premium (ROP) plans worth it?", "a": "ROP plans return premiums on survival but cost much more. Financially, buying a cheap term plan and investing the difference usually gives higher returns." }
