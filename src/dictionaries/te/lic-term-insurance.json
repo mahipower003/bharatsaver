@@ -5,12 +5,18 @@
         "description": "పూర్తి ఎల్‌ఐసి టర్మ్ ఇన్సూరెన్స్ గైడ్ — టెక్-టర్మ్, డిజి టర్మ్ & యువ టర్మ్‌ను పోల్చండి, ₹1 కోటికి నమూనా ప్రీమియంలను చూడండి, మా కాలిక్యులేటర్‌ను ఉపయోగించండి, మరియు క్లెయిమ్ ప్రక్రియను తెలుసుకోండి. సరైన కవర్‌ను ఎంచుకోవడానికి నిపుణుల చిట్కాలు."
     },
     "h1": "ఎల్‌ఐసి టర్మ్ ఇన్సూరెన్స్ — అంతిమ గైడ్ (2025)",
+    "byline": "మహేష్ చౌబే, CFP ద్వారా — చివరి సమీక్ష: జనవరి 2025<br>లవీనా విజయ్ ద్వారా సమీక్షించబడింది — భారత్‌సేవర్ సంపాదకీయ బృందం",
     "sections": [
         {
             "id": "quick-summary",
             "icon": "FileText",
             "title": "Quick Summary: Which LIC Term Plan is Best?",
-            "content": []
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": "For most buyers who want low cost + trust, <strong>LIC New Tech-Term is the best overall choice</strong> (lowest online premium). If you want agent help, consider Jeevan Amar. Avoid Return-of-Premium plans unless you prefer guaranteed return over cost efficiency."
+                }
+            ]
         },
         {
             "id": "lic-term-plans",
@@ -58,7 +64,12 @@
             "id": "faq",
             "icon": "HelpCircle",
             "title": "Top Questions People Ask About LIC Term Insurance",
-            "content": []
+            "content": [
+                {
+                    "type": "faq",
+                    "items": []
+                }
+            ]
         },
         {
             "id": "case-studies",

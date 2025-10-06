@@ -5,12 +5,18 @@
         "description": "संपूर्ण एलआईसी टर्म इंश्योरेंस गाइड — टेक-टर्म, डिजी टर्म और युवा टर्म की तुलना करें, ₹1 करोड़ के लिए नमूना प्रीमियम देखें, हमारे कैलकुलेटर का उपयोग करें, और दावा प्रक्रिया जानें। योग्य कवर चुनने के लिए विशेषज्ञ युक्तियाँ।"
     },
     "h1": "एलआईसी टर्म इंश्योरेंस — अंतिम गाइड (2025)",
+    "byline": "महेश चौबे, CFP द्वारा — अंतिम समीक्षा: जनवरी 2025<br>लवीना विजई द्वारा समीक्षित — भारतसेवर संपादकीय टीम",
     "sections": [
         {
             "id": "quick-summary",
             "icon": "FileText",
             "title": "Quick Summary: Which LIC Term Plan is Best?",
-            "content": []
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": "For most buyers who want low cost + trust, <strong>LIC New Tech-Term is the best overall choice</strong> (lowest online premium). If you want agent help, consider Jeevan Amar. Avoid Return-of-Premium plans unless you prefer guaranteed return over cost efficiency."
+                }
+            ]
         },
         {
             "id": "lic-term-plans",
@@ -58,7 +64,12 @@
             "id": "faq",
             "icon": "HelpCircle",
             "title": "Top Questions People Ask About LIC Term Insurance",
-            "content": []
+            "content": [
+                 {
+                    "type": "faq",
+                    "items": []
+                }
+            ]
         },
         {
             "id": "case-studies",

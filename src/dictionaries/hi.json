@@ -23,8 +23,9 @@
       "title": "कैलकुलेटर",
       "links": [
         { "title": "NPS कैलकुलेटर", "href": "/nps-calculator" },
-        { "title": "कैलकुलेटर सूची", "href": "/calculators" },
-        { "title": "PPF कैलकुलेटर", "href": "/ppf-calculator" }
+        { "title": "PPF कैलकुलेटर", "href": "/ppf-calculator" },
+        { "title": "LIC टर्म इंश्योरेंस", "href": "/lic-term-insurance" },
+        { "title": "All Calculators", "href": "/calculators" }
       ]
     },
     "resources": {
@@ -72,7 +73,7 @@
   "calculators_page": {
     "meta_title": "भारतीय योजनाओं के लिए वित्तीय कैलकुलेटर (PPF, NPS, SSY) | BharatSaver",
     "meta_description": "PPF, NPS, SSY, और अधिक के लिए मुफ्त वित्तीय कैलकुलेटर का एक व्यापक सूट। भारत में अपने निवेश, बचत और करों की योजना बनाएं।",
-    "h1": "वित्तीय कैलकुलेटर"
+    "h1": "Financial Calculators"
   },
   "guides_page": {
     "meta_title": "भारतीय निवेशकों के लिए वित्तीय गाइड (PPF, NPS, Tax) | BharatSaver",
@@ -106,7 +107,7 @@
     "h2": "महेश चौबे द्वारा कैलकुलेटर और लेख",
     "view_calculator": "कैलकुलेटर देखें"
   },
-  "contact_page": {
+   "contact_page": {
     "meta_title": "हमसे संपर्क करें | भारतसेवर",
     "meta_description": "प्रश्न, प्रतिक्रिया, या पूछताछ के लिए भारतसेवर टीम से संपर्क करें। हम आपके वित्तीय सवालों का जवाब देने में मदद करने के लिए यहां हैं।",
     "h1": "हमसे संपर्क करें",
@@ -138,5 +139,3 @@
     "cta_text": "मेरी व्यक्तिगत फंड सूची प्राप्त करें"
   }
 }
-
-    

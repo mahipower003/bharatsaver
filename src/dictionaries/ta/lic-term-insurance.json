@@ -5,12 +5,18 @@
         "description": "முழுமையான எல்ஐசி டேர்ம் இன்சூரன்ஸ் வழிகாட்டி — டெக்-டேர்ம், டிஜி டேர்ம் & யுவா டேர்மை ஒப்பிடுக, ₹1 கோடிக்கு மாதிரி பிரீமியங்களைப் பார்க்கவும், எங்கள் கால்குலேட்டரைப் பயன்படுத்தவும், மற்றும் க்ளைம் செயல்முறையை அறியவும். சரியான கவரைத் தேர்ந்தெடுக்க நிபுணர் குறிப்புகள்."
     },
     "h1": "எல்ஐசி டேர்ம் இன்சூரன்ஸ் — இறுதி வழிகாட்டி (2025)",
+    "byline": "மகேஷ் சௌபே, CFP ஆல் — கடைசி ஆய்வு: ஜனவரி 2025<br>லவீனா விஜயால் மதிப்பாய்வு செய்யப்பட்டது — பாரத்சேவர் தலையங்கக் குழு",
     "sections": [
         {
             "id": "quick-summary",
             "icon": "FileText",
             "title": "Quick Summary: Which LIC Term Plan is Best?",
-            "content": []
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": "For most buyers who want low cost + trust, <strong>LIC New Tech-Term is the best overall choice</strong> (lowest online premium). If you want agent help, consider Jeevan Amar. Avoid Return-of-Premium plans unless you prefer guaranteed return over cost efficiency."
+                }
+            ]
         },
         {
             "id": "lic-term-plans",
@@ -58,7 +64,12 @@
             "id": "faq",
             "icon": "HelpCircle",
             "title": "Top Questions People Ask About LIC Term Insurance",
-            "content": []
+            "content": [
+                {
+                    "type": "faq",
+                    "items": []
+                }
+            ]
         },
         {
             "id": "case-studies",

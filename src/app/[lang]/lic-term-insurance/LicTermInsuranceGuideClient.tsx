@@ -101,13 +101,7 @@ export default function LicTermInsuranceGuideClient({
       <div className="mx-auto max-w-5xl">
         <header className="text-center mb-8">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{ __html: pageDict.h1 }} />
-          <div className="bs-byline justify-center text-center mt-4">
-            <span className="bs-author">By <strong>Mahesh Chaube</strong></span>
-            <span className="bs-creds">, CFP</span>
-            <span className="bs-sep">|</span>
-            <span className="bs-updated">Last reviewed: <time dateTime="2025-01-08">January 2025</time></span>
-            <div className="bs-reviewed">Reviewed by <strong>Laveena Vijayi</strong> — BharatSaver Editorial Team</div>
-          </div>
+          <div className="bs-byline justify-center text-center mt-4" dangerouslySetInnerHTML={{ __html: pageDict.byline }} />
         </header>
         
         <div className="mt-12 space-y-8">
@@ -136,5 +130,3 @@ export default function LicTermInsuranceGuideClient({
     </div>
   );
 }
-
-    

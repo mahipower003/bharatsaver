@@ -13,9 +13,9 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
     const pageUrl = `${siteUrl}/${params.lang}/lic-term-insurance`;
     
-    // --- SEO Optimized Metadata ---
-    const title = "LIC Term Insurance Guide (2025): Plans, Premiums, Calculator";
-    const description = "Complete LIC Term Insurance guide — Compare Tech-Term & Jeevan Kiran, see ₹1Cr premiums with our calculator, and learn the claim process. Expert tips to choose the right cover.";
+    // SEO Optimized Metadata
+    const title = "LIC Term Insurance (2025) — Plans, Premiums, Comparisons & How to Buy";
+    const description = "Complete 2025 guide to LIC term insurance — Tech-Term, Jeevan Amar & Jeevan Kiran. Premium examples, buy online steps, claim process & FAQs.";
 
     const faqSchema = pageDict.faq_schema;
     const howToSchema = pageDict.how_to_schema;
