@@ -14,36 +14,34 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     const pageUrl = `${siteUrl}/${params.lang}/lic-jeevan-umang-calculator`;
     const ogImageUrl = `${siteUrl}/images/lic-jeevan-umang-calculator.png`;
 
-    const faqItems = pageDict.faq_schema.mainEntity;
-    const faqSchema = {
-        ...pageDict.faq_schema,
-        mainEntity: faqItems.map((faq: { question: string, answer: string }) => ({
-            '@type': 'Question',
-            name: faq.question,
-            acceptedAnswer: {
-                '@type': 'Answer',
-                text: faq.answer,
-            },
-        })),
-    };
+    const schemas = [];
 
-    const howToSchema = pageDict.how_to_schema;
+    if (pageDict.faq_schema && pageDict.faq_schema.mainEntity) {
+        const faqItems = pageDict.faq_schema.mainEntity;
+        const faqSchema = {
+            ...pageDict.faq_schema,
+            mainEntity: faqItems.map((faq: { question: string, answer: string }) => ({
+                '@type': 'Question',
+                name: faq.question,
+                acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: faq.answer,
+                },
+            })),
+        };
+        schemas.push(faqSchema);
+    }
+
+    if (pageDict.how_to_schema) {
+        schemas.push(pageDict.how_to_schema);
+    }
     
-    const financialProductSchema = {
-        "@context": "https://schema.org",
-        "@type": "FinancialProduct",
-        "name": "LIC Jeevan Umang (Plan 945)",
-        "description": pageDict.meta_description,
-        "brand": {
-            "@type": "Brand",
-            "name": "LIC of India"
-        },
-        "url": pageUrl,
-        "offers": {
-            "@type": "Offer",
-            "priceCurrency": "INR"
-        }
-    };
+    if (pageDict.financial_product_schema) {
+        schemas.push({
+            ...pageDict.financial_product_schema,
+            url: pageUrl
+        });
+    }
 
     return {
         title: pageDict.meta_title,
@@ -64,7 +62,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
           type: 'website',
         },
         other: {
-            'application/ld+json': JSON.stringify([faqSchema, howToSchema, financialProductSchema]),
+            'application/ld+json': JSON.stringify(schemas),
         },
     };
 }
@@ -82,3 +80,4 @@ export default async function JeevanUmangCalculatorPage({ params }: { params: { 
         />
     );
 }
+
