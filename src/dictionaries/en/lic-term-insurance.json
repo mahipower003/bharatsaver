@@ -1,3 +1,4 @@
+
 {
     "meta": {
         "title": "LIC Term Insurance (2025) — Plans, Premiums, Comparisons & How to Buy",
@@ -22,7 +23,7 @@
             "icon": "ShieldCheck",
             "title": "Which LIC term plans exist (short product list + UINs)",
             "content": [
-                {
+                 {
                     "type": "paragraph",
                     "text": "<h3>LIC's New Tech-Term (Plan No. 954, UIN: 512N339V02)</h3><p>This is LIC’s flagship online-only term plan. Because it's sold directly without agent commissions, it offers the most competitive premium from LIC. <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-new-tech-term' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>Official LIC Page</a></p><ul><li><strong>Key Feature:</strong> Lowest premium due to online purchase rebate.</li><li><strong>Eligibility:</strong> Entry age 18-65, policy term 10-40 years.</li><li><strong>Best Use Case:</strong> For self-directed individuals comfortable with purchasing and managing their policy online to get the best price.</li></ul>"
                 },
@@ -43,16 +44,7 @@
             "content": [
                 {
                     "type": "paragraph",
-                    "text": "Your term insurance premium isn't a random number; it's a carefully calculated risk assessment. The key factors include:"
-                },
-                {
-                    "type": "list",
-                    "items": [
-                        "<strong>Age:</strong> The younger you are, the lower the risk, and thus, the lower the premium.",
-                        "<strong>Smoker Status:</strong> Smokers pay significantly higher premiums (often 40-60% more) due to higher health risks.",
-                        "<strong>Sum Assured:</strong> The higher your coverage amount (e.g., ₹1 Crore vs ₹50 Lakh), the higher the premium.",
-                        "<strong>Policy Term (PPT):</strong> A longer policy term means a higher premium as the insurance company is covering you for a longer period."
-                    ]
+                    "text": "Premiums reflect actuarial risk: younger age = lower premium, smokers pay materially more, higher sum assured costs more, and longer terms increase cost. Use the calculator above for exact quotes tailored to age, gender, smoker status and PPT."
                 }
             ]
         },
@@ -77,7 +69,7 @@
             "content": [
                 {
                     "type": "paragraph",
-                    "text": "LIC’s term plans are backed by the corporation’s nationwide network and long track record. For buyers who value offline support, brand recognition, and standardized processes, LIC remains a strong choice — and it now offers online-only plans (Tech-Term, Digi Term) for better pricing and convenience."
+                    "text": "LIC combines a nationwide service network and a long history of paying claims, making it the natural choice for buyers who value offline support and brand trust. Recent online plans (Tech-Term, Digi Term) now offer competitive pricing for self-service buyers."
                 },
                 { "type": "table", "headers": ["Feature", "LIC (e.g., Tech-Term)", "Top Private Insurers (e.g., HDFC, ICICI)"], "rows": [
                     ["Premium Cost", "Generally 15-30% higher", "More competitive, often lower"],

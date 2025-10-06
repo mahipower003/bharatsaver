@@ -1,3 +1,4 @@
+
 {
     "meta": {
         "title": "एलआयसी टर्म इन्शुरन्स (2025): योजना, प्रीमियम, तुलना आणि कसे खरेदी करावे",
@@ -27,19 +28,37 @@
             "id": "premium-calculation",
             "icon": "Calculator",
             "title": "How LIC term premiums are calculated (age, smoker, sum assured, PPT)",
-            "content": []
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": "Premiums reflect actuarial risk: younger age = lower premium, smokers pay materially more, higher sum assured costs more, and longer terms increase cost. Use the calculator above for exact quotes tailored to age, gender, smoker status and PPT."
+                }
+            ]
         },
         {
             "id": "premium-examples",
             "icon": "BarChart",
             "title": "Premium examples & interactive calculator (examples: ₹50L / ₹1Cr, ages 25/30/35)",
-            "content": []
+            "content": [
+                 {
+                    "type": "paragraph",
+                    "text": "We used live premium examples from market aggregators (PolicyBazaar, PolicyX) for common scenarios (₹50L/₹1Cr, ages 25/30/35; smoker/non-smoker). Use the calculator above to get an exact quote for your profile — premiums differ widely by age and product."
+                },
+                {
+                    "type": "calculator"
+                }
+            ]
         },
         {
             "id": "lic-vs-private",
             "icon": "GitCompareArrows",
             "title": "LIC vs Private insurers — premium & feature comparison (table)",
-            "content": []
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": "LIC combines a nationwide service network and a long history of paying claims, making it the natural choice for buyers who value offline support and brand trust. Recent online plans (Tech-Term, Digi Term) now offer competitive pricing for self-service buyers."
+                }
+            ]
         },
         {
             "id": "riders",
