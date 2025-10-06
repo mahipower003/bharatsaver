@@ -1,4 +1,3 @@
-
 {
     "meta": {
         "title": "LIC Term Insurance (2025) — Plans, Premiums, Comparisons & How to Buy",
@@ -10,7 +9,7 @@
         {
             "id": "quick-summary",
             "icon": "FileText",
-            "title": "Quick Summary: Which LIC Term Plan is Best?",
+            "title": "Quick take: best LIC term plan for you",
             "content": [
                 {
                     "type": "paragraph",
@@ -21,7 +20,7 @@
         {
             "id": "lic-term-plans",
             "icon": "ShieldCheck",
-            "title": "LIC Term Plans: A Detailed Look",
+            "title": "Which LIC term plans exist (short product list + UINs)",
             "content": [
                 {
                     "type": "paragraph",
@@ -40,7 +39,7 @@
         {
             "id": "premium-calculation",
             "icon": "Calculator",
-            "title": "How LIC Term Insurance Premiums are Calculated",
+            "title": "How LIC term premiums are calculated (age, smoker, sum assured, PPT)",
             "content": [
                 {
                     "type": "paragraph",
@@ -60,7 +59,7 @@
         {
             "id": "premium-examples",
             "icon": "BarChart",
-            "title": "LIC Term Insurance Premium Examples (Calculator)",
+            "title": "Premium examples & interactive calculator (examples: ₹50L / ₹1Cr, ages 25/30/35)",
             "content": [
                  {
                     "type": "paragraph",
@@ -74,7 +73,7 @@
         {
             "id": "lic-vs-private",
             "icon": "GitCompareArrows",
-            "title": "LIC vs. Private Insurers: Premium & Feature Comparison",
+            "title": "LIC vs Private insurers — premium & feature comparison (table)",
             "content": [
                 {
                     "type": "paragraph",
@@ -92,7 +91,7 @@
         {
             "id": "riders",
             "icon": "HelpCircle",
-            "title": "Common Riders, Add-ons & What to Avoid",
+            "title": "Riders & add-ons you should consider (and those to avoid)",
             "content": [
                 { "type": "paragraph", "text": "<strong>Worthwhile Add-ons:</strong><ul><li><strong>Accidental Death & Disability Benefit Rider:</strong> A must-have. Provides an extra payout in case of an accident.</li><li><strong>Critical Illness Rider:</strong> Provides a lump sum on diagnosis of major illnesses like cancer or heart attack. A good alternative to a separate health insurance top-up.</li></ul><strong>What to Avoid:</strong><ul><li><strong>Return of Premium (ROP) Plans:</strong> As discussed, these plans are far more expensive. The 'return' you get is usually a very low-return investment. You're better off buying a cheaper pure term plan and investing the difference.</li></ul>" }
             ]
@@ -100,7 +99,7 @@
         {
             "id": "claim-settlement",
             "icon": "ShieldCheck",
-            "title": "Claim Settlement Process & Timelines",
+            "title": "Claim settlement process: step-by-step + timelines",
             "content": [
                 { "type": "paragraph", "text": "This is where LIC shines. Their legendary trust is built on a high claim settlement ratio. The process is straightforward:"},
                 { "type": "list", "items": [
@@ -114,7 +113,7 @@
         {
             "id": "how-to-buy",
             "icon": "Users",
-            "title": "How to Buy an LIC Term Plan Online",
+            "title": "How to buy an LIC term plan online",
             "content": [
                 {
                     "type": "steps",
@@ -130,12 +129,12 @@
         {
             "id": "faq",
             "icon": "HelpCircle",
-            "title": "Top Questions People Ask About LIC Term Insurance",
+            "title": "Frequently asked questions",
             "content": [
                 {
                     "type": "faq",
                     "items": [
-                        { "q": "What is the LIC Tech Term Plan and how is it different?", "a": "LIC's New Tech-Term (Plan 954) is a pure-risk, non-linked term insurance plan sold exclusively online. It is different because it is cheaper than its offline counterparts like Jeevan Amar, as it offers a rebate for online sales, cutting out agent commissions. You can find more details on the <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-new-tech-term' target='_blank' rel='noopener noreferrer'>official LIC product page</a>." },
+                        { "q": "What is LIC Tech Term Plan and how is it different?", "a": "LIC's New Tech-Term (Plan 954) is a pure-risk, non-linked term insurance plan sold exclusively online. It is different because it is cheaper than its offline counterparts like Jeevan Amar, as it offers a rebate for online sales, cutting out agent commissions. You can find more details on the <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-new-tech-term' target='_blank' rel='noopener noreferrer'>official LIC product page</a>." },
                         { "q": "How much premium for ₹1 Crore LIC term insurance for a 30-year-old non-smoker?", "a": "The premium varies, but for a 30-year-old non-smoker seeking a ₹1 Crore cover until age 60, the yearly premium for a Tech-Term plan is approximately ₹12,000-₹15,000. This translates to roughly ₹1,000-₹1,300 per month. Use our calculator above for a precise quote based on your details." },
                         { "q": "Does LIC settle term claims reliably?", "a": "Yes. LIC has one of the highest Claim Settlement Ratios (CSR) in the industry, consistently above 98% (98.52% for FY 2022-23). This, combined with its sovereign guarantee, makes it one of the most reliable insurers for claim settlement in India." },
                         { "q": "Can I buy LIC term insurance online?", "a": "Absolutely. LIC offers the 'New Tech-Term' plan specifically for online purchase. The process involves visiting LIC's official website, filling out the proposal form, uploading documents, and paying the premium online." },
@@ -152,7 +151,7 @@
         {
             "id": "case-studies",
             "icon": "BookUser",
-            "title": "Case Studies & Customer Experiences",
+            "title": "Real case studies & customer experiences",
             "content": [
                 { "type": "paragraph", "text": "<strong>Case Study 1: Raj, the Early Planner.</strong> Raj, a 28-year-old software engineer, bought a ₹1 Crore Tech-Term plan until age 65. His premium was just ₹1,200/month. By buying early, he locked in a low rate for his entire working life, ensuring his family's security for a minimal cost." },
                 { "type": "paragraph", "text": "<strong>Case Study 2: Sunita, the Late Starter.</strong> Sunita, a 45-year-old business owner, realized she was underinsured. She opted for a ₹1.5 Crore cover until age 70. Her premium was higher, around ₹4,500/month, but it gave her immense peace of mind knowing her business and family were protected during her peak earning years." }
@@ -161,7 +160,7 @@
         {
             "id": "conclusion",
             "icon": "Star",
-            "title": "Conclusion & Recommended Action",
+            "title": "Conclusion & recommended next step",
             "content": [
                 { "type": "paragraph", "text": "LIC term insurance offers an unparalleled combination of trust and security. While private players might offer slightly lower premiums, the peace of mind that comes with a government-backed policy is invaluable for many. For most users, the LIC Tech-Term plan offers the best balance of low cost and high trust." },
                 { "type": "cta_card", "title": "Ready to Secure Your Family's Future?", "description": "Get an instant, no-obligation quote and compare LIC's best term plans against top private insurers in under 2 minutes.", "buttons": [
