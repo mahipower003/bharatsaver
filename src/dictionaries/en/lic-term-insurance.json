@@ -35,9 +35,9 @@
         {
             "id": "lic-term-plans",
             "icon": "ShieldCheck",
-            "title": "LIC Term Insurance Plans (2025) — Full Product List & Short Guide",
+            "title": "Which LIC Term Insurance Plans Exist? (Full Product List)",
             "content": [
-                 {
+                {
                     "type": "structured_content",
                     "items": [
                         { "title": "1. LIC New Tech-Term — Plan No. 954 (UIN: 512N339V02)", "text": "<strong>Type:</strong> Online-only, pure term (non-participating)<br><strong>Key benefit:</strong> Lowest LIC premiums thanks to online rebate.<br><strong>Eligibility:</strong> Age 18–65; policy term 10–40 years.<br><strong>Best for:</strong> Self-directed, tech-savvy buyers who want cheapest pure protection from LIC." },
@@ -89,7 +89,7 @@
                         "<strong>Riders</strong> — each rider adds a premium."
                     ]
                 },
-                {
+                 {
                     "type": "paragraph",
                     "text": "Small changes (1–2 years of age, smoker → non-smoker) can change monthly premium noticeably — always pull an instant quote."
                 }
@@ -102,7 +102,7 @@
             "content": [
                 {
                     "type": "paragraph",
-                    "text": "LIC combines a nationwide service network and a long history of paying claims, making it the natural choice for buyers who value offline support and brand trust. Recent online plans (Tech-Term, Digi Term) now offer competitive pricing for self-service buyers."
+                    "text": "<p>LIC combines a nationwide service network and a long history of paying claims, making it the natural choice for buyers who value offline support and brand trust. Recent online plans (Tech-Term, Digi Term) now offer competitive pricing for self-service buyers.</p>"
                 },
                 { "type": "table", "headers": ["Feature", "LIC (e.g., Tech-Term)", "Top Private Insurer A", "Top Private Insurer B"], "rows": [
                     ["Premium Cost", "Generally competitive, especially for online plans.", "Often very competitive, can be lower.", "Competitive, especially with wellness-linked discounts."],
@@ -183,7 +183,7 @@
             "title": "Conclusion & Recommended Next Step",
             "content": [
                 { "type": "paragraph", "text": "LIC term insurance offers an unparalleled combination of trust and security. For most users, the LIC Tech-Term plan offers the best balance of low cost and high trust." },
-                { "type": "cta_card", "title": "Ready to Secure Your Family's Future?", "description": "Get an instant, no-obligation quote and compare LIC's best term plans against top private insurers in under 2 minutes.", "buttons": [
+                { "type": "cta_card", "title": "Ready to Secure Your Family's Future?", "description": "LIC Term Plan Checklist — Documents, Riders & Claim Steps (Free PDF)", "buttons": [
                     { "text": "Get Free Quote", "href": "https://www.policybazaar.com/life-insurance/term-insurance/" }
                 ]}
             ]
