@@ -14,8 +14,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     const pageUrl = `${siteUrl}/${params.lang}/lic-term-insurance`;
     
     // SEO Optimized Metadata
-    const title = "LIC Term Insurance — Ultimate Guide 2025 | Plans, Premiums & How to Buy";
-    const description = "Complete 2025 guide to LIC term insurance — Tech-Term, Jeevan Amar & Jeevan Kiran. Premium examples, buy online steps, claim process & FAQs.";
+    const title = "LIC Term Insurance Plan (2025) — ₹1 Crore Premiums & Calculator";
+    const description = "Complete 2025 guide to buying the best LIC term insurance plan. Compare Tech-Term, Jeevan Amar & get a ₹1 Crore LIC term life insurance quote with our calculator.";
     
     return {
         title: title,
