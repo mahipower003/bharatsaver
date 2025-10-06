@@ -1,3 +1,4 @@
+
 {
     "meta": {
         "title": "LIC Term Insurance (2025) — Plans, Premiums, Comparisons & How to Buy",
@@ -14,6 +15,20 @@
                 {
                     "type": "paragraph",
                     "text": "For most buyers who want a blend of low cost and high trust, <strong>LIC’s New Tech-Term plan is the best overall choice</strong> due to its competitive online-only premium. If you prefer in-person guidance from an agent, consider its offline counterpart, Jeevan Amar. I generally advise against Return-of-Premium (ROP) plans like Jeevan Kiran unless you strongly prefer a guaranteed return of capital over cost efficiency, as they are significantly more expensive for the same cover."
+                }
+            ]
+        },
+        {
+            "id": "premium-examples",
+            "icon": "BarChart",
+            "title": "Premium Examples & Interactive Calculator",
+            "content": [
+                 {
+                    "type": "paragraph",
+                    "text": "<p>We used live premium examples from market aggregators (PolicyBazaar, PolicyX) for common scenarios (₹50L/₹1Cr, ages 25/30/35; smoker/non-smoker). Use the calculator above to get an exact quote for your profile — premiums differ widely by age and product.</p>"
+                },
+                {
+                    "type": "calculator"
                 }
             ]
         },
@@ -48,27 +63,13 @@
             ]
         },
         {
-            "id": "premium-examples",
-            "icon": "BarChart",
-            "title": "Premium Examples & Interactive Calculator",
-            "content": [
-                 {
-                    "type": "paragraph",
-                    "text": "<p>So, how much is the premium for a ₹1 crore LIC term insurance policy? While the exact amount depends on your profile, the examples below give a realistic idea. We used live premium examples from market aggregators (PolicyBazaar, PolicyX) for common scenarios (₹50L/₹1Cr, ages 25/30/35; smoker/non-smoker). For a precise quote tailored to you, use our <strong>LIC term insurance premium calculator</strong> below.</p>"
-                },
-                {
-                    "type": "calculator"
-                }
-            ]
-        },
-        {
             "id": "lic-vs-private",
             "icon": "GitCompareArrows",
             "title": "LIC vs Private Insurers — Premium & Feature Comparison",
             "content": [
                 {
                     "type": "paragraph",
-                    "text": "<p>Is LIC term insurance cheaper than private term insurance? Generally, no. LIC combines a nationwide service network and a long history of paying claims, making it the natural choice for buyers who value offline support and brand trust. Private insurers often win on price and innovation. Recent online-only plans like Tech-Term, however, make LIC's pricing far more competitive.</p>"
+                    "text": "LIC combines a nationwide service network and a long history of paying claims, making it the natural choice for buyers who value offline support and brand trust. Recent online plans (Tech-Term, Digi Term) now offer competitive pricing for self-service buyers."
                 },
                 { "type": "table", "headers": ["Feature", "LIC (e.g., Tech-Term)", "Top Private Insurers (e.g., HDFC, ICICI)"], "rows": [
                     ["Premium Cost", "Generally 15-30% higher, but online plans are competitive", "Often lower and more competitive"],
@@ -125,7 +126,7 @@
                 {
                     "type": "faq",
                     "items": [
-                        { "q": "What is LIC Tech Term Plan and how is it different?", "a": "LIC's New Tech-Term (Plan 954) is a pure-risk, non-linked term insurance plan sold exclusively online. It is different because it is cheaper than its offline counterpart, Jeevan Amar, as it offers a rebate for online sales, cutting out agent commissions. You can find more details on the <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-new-tech-term' target='_blank' rel='noopener noreferrer'>official LIC product page</a>." },
+                        { "q": "What is the LIC Tech-Term Plan and how is it different?", "a": "LIC's New Tech-Term (Plan 954) is a pure-risk, non-linked term insurance plan sold exclusively online. It is different because it is cheaper than its offline counterpart, Jeevan Amar, as it offers a rebate for online sales, cutting out agent commissions. You can find more details on the <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-new-tech-term' target='_blank' rel='noopener noreferrer'>official LIC product page</a>." },
                         { "q": "How much premium for ₹1 Crore LIC term insurance for a 30-year-old non-smoker?", "a": "The premium varies, but for a 30-year-old non-smoker seeking a ₹1 Crore cover until age 60, the yearly premium for a Tech-Term plan is approximately ₹12,000-₹15,000. This translates to roughly ₹1,000-₹1,300 per month. Use our calculator above for a precise quote based on your details." },
                         { "q": "Does LIC settle term claims reliably?", "a": "Yes. LIC has one of the highest Claim Settlement Ratios (CSR) in the industry, consistently above 98% (98.52% for FY 2022-23). This, combined with its sovereign guarantee, makes it one of the most reliable insurers for claim settlement in India." },
                         { "q": "Can I buy LIC term insurance online?", "a": "Absolutely. LIC offers the 'New Tech-Term' plan specifically for online purchase. The process involves visiting LIC's official website, filling out the proposal form, uploading documents, and paying the premium online." },
@@ -164,7 +165,7 @@
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
-            { "@type": "Question", "name": "What is the LIC Tech Term Plan and how is it different?", "acceptedAnswer": { "@type": "Answer", "text": "LIC's New Tech-Term (Plan 954) is a pure-risk, non-linked term insurance plan sold exclusively online. It is different because it is cheaper than its offline counterparts like Jeevan Amar, as it offers a rebate for online sales, cutting out agent commissions." } },
+            { "@type": "Question", "name": "What is the LIC Tech-Term Plan and how is it different?", "acceptedAnswer": { "@type": "Answer", "text": "LIC's New Tech-Term (Plan 954) is a pure-risk, non-linked term insurance plan sold exclusively online. It is different because it is cheaper than its offline counterpart, Jeevan Amar, as it offers a rebate for online sales, cutting out agent commissions." } },
             { "@type": "Question", "name": "How much premium for ₹1 Crore LIC term insurance for a 30-year-old non-smoker?", "a": "The premium for a 30-year-old non-smoker seeking a ₹1 Crore cover until age 60 is approximately ₹12,000-₹15,000 yearly. This translates to roughly ₹1,000-₹1,300 per month. Use our calculator for a precise quote." },
             { "@type": "Question", "name": "Does LIC settle term claims reliably?", "a": "Yes, LIC has one of the highest Claim Settlement Ratios (CSR) in the industry, consistently above 98% (98.52% for FY 2022-23), indicating high reliability." }
         ]

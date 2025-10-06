@@ -103,7 +103,7 @@ export default function LicTermInsuranceGuideClient({
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{ __html: pageDict.h1 }} />
           <div className="bs-byline justify-center text-center mt-4" dangerouslySetInnerHTML={{ __html: pageDict.byline }} />
         </header>
-        
+
         <div className="mt-12 space-y-8">
             {pageDict.sections.map((section: any, index: number) => {
                 const Icon = getIcon(section.icon);
