@@ -23,8 +23,9 @@
       "title": "Calculators",
       "links": [
         { "title": "NPS Calculator", "href": "/nps-calculator" },
-        { "title": "Calculator List", "href": "/calculators" },
-        { "title": "PPF Calculator", "href": "/ppf-calculator" }
+        { "title": "PPF Calculator", "href": "/ppf-calculator" },
+        { "title": "LIC Term Insurance", "href": "/lic-term-insurance" },
+        { "title": "All Calculators", "href": "/calculators" }
       ]
     },
     "resources": {
@@ -138,9 +139,3 @@
     "cta_text": "Get My Personalized Fund List"
   }
 }
-
-  
-  
-
-
-    

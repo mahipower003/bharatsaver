@@ -19,8 +19,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     if (pageDict.financial_product_schema) schemas.push(pageDict.financial_product_schema);
 
     return {
-        title: pageDict.meta.title,
-        description: pageDict.meta.description,
+        title: "LIC Term Insurance Guide (2025): Plans, Premiums & Calculator",
+        description: "Compare LIC's term plans for 2025. See premium examples for ₹1 Cr cover, use our free calculator, and learn how to buy online. Get an expert quote now.",
         alternates: {
             canonical: pageUrl,
             languages: i18nConfig.locales.reduce((acc, locale) => {
@@ -29,8 +29,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
             }, {} as Record<string, string>),
         },
         openGraph: {
-          title: pageDict.meta.title,
-          description: pageDict.meta.description,
+          title: "LIC Term Insurance (2025) — Plans, Premiums, Comparisons & How to Buy",
+          description: "Complete LIC Term Insurance guide — compare Tech-Term, Digi Term & Yuva Term, see sample premiums for ₹1Cr, use our calculator, and learn the claim process.",
           url: pageUrl,
           images: [{ url: `${siteUrl}/images/lic-term-insurance-guide.png`, width: 1200, height: 630, alt: 'LIC Term Insurance Guide' }],
           locale: params.lang === 'en' ? 'en_IN' : params.lang,
@@ -70,5 +70,3 @@ export default async function LicTermInsurancePage({ params }: { params: { lang:
         </>
     );
 }
-
-    
