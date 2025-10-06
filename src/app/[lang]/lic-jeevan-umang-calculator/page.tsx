@@ -14,12 +14,26 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     const pageUrl = `${siteUrl}/${params.lang}/lic-jeevan-umang-calculator`;
     const ogImageUrl = `${siteUrl}/images/lic-jeevan-umang-calculator.png`;
 
-    const faqSchema = pageDict.faq_json_ld;
-    const productSchema = {
+    const faqItems = pageDict.faq_schema.mainEntity;
+    const faqSchema = {
+        ...pageDict.faq_schema,
+        mainEntity: faqItems.map((faq: { question: string, answer: string }) => ({
+            '@type': 'Question',
+            name: faq.question,
+            acceptedAnswer: {
+                '@type': 'Answer',
+                text: faq.answer,
+            },
+        })),
+    };
+
+    const howToSchema = pageDict.how_to_schema;
+    
+    const financialProductSchema = {
         "@context": "https://schema.org",
         "@type": "FinancialProduct",
         "name": "LIC Jeevan Umang (Plan 945)",
-        "description": "A participating whole-life plan that provides annual survival benefits after the premium paying term and a lump sum on maturity or death.",
+        "description": pageDict.meta_description,
         "brand": {
             "@type": "Brand",
             "name": "LIC of India"
@@ -42,7 +56,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
             }, {} as Record<string, string>),
         },
         openGraph: {
-          title: pageDict.og_title,
+          title: pageDict.meta_title,
           description: pageDict.og_description,
           url: pageUrl,
           images: [{ url: ogImageUrl, width: 1200, height: 630, alt: 'LIC Jeevan Umang Calculator' }],
@@ -50,7 +64,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
           type: 'website',
         },
         other: {
-            'application/ld+json': JSON.stringify([faqSchema, productSchema]),
+            'application/ld+json': JSON.stringify([faqSchema, howToSchema, financialProductSchema]),
         },
     };
 }
@@ -68,4 +82,3 @@ export default async function JeevanUmangCalculatorPage({ params }: { params: { 
         />
     );
 }
-

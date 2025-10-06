@@ -15,7 +15,6 @@ import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import Image from "next/image";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
-
 function getIcon(iconName: string) {
     const icons: { [key: string]: React.ElementType } = {
         BarChart, FileText, CheckCircle, SlidersHorizontal, GitCompareArrows,
@@ -47,7 +46,6 @@ const ContentRenderer = ({ content, lang }: { content: any[]; lang: Locale }) =>
                             {item.items.map((faq: {q: string; a: string}, qIdx: number) => (
                                 <AccordionItem key={qIdx} value={`item-${qIdx}`}>
                                     <AccordionTrigger>{faq.q}</AccordionTrigger>
-
                                     <AccordionContent><div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{__html: faq.a}} /></AccordionContent>
                                 </AccordionItem>
                             ))}
@@ -75,11 +73,16 @@ export default function LicJeevanUmangCalculatorPageClient({
       <div className="mx-auto max-w-5xl">
         <header className="text-center mb-8">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{ __html: pageDict.h1 }} />
-          <p className="mt-4 text-sm text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.trust_blurb }}></p>
+           <p className="mt-4 text-sm text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.intro.quick_answer }}></p>
+            <Button asChild size="lg" className="mt-6">
+                <Link href="#calculator-widget">{pageDict.intro.cta_button}</Link>
+            </Button>
+            <p className="text-xs text-muted-foreground mt-4" dangerouslySetInnerHTML={{ __html: pageDict.intro.citation }} />
         </header>
         
         <div id="calculator-widget">
-          <LicJeevanUmangCalculator dictionary={pageDict.calculator_ui} />
+            <h2 className="text-2xl font-bold text-center mb-4">{pageDict.calculator_ui.h2}</h2>
+            <LicJeevanUmangCalculator dictionary={pageDict.calculator_ui} />
         </div>
 
         <div className="mt-12 space-y-8">
@@ -100,23 +103,8 @@ export default function LicJeevanUmangCalculatorPageClient({
                   </Card>
                 )
             })}
-
         </div>
         
-        {pageDict.conclusion && (
-          <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-3">
-                <Star className="h-7 w-7 text-accent" />
-                <h2 className="text-2xl font-bold">{pageDict.conclusion.title}</h2>
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="prose dark:prose-invert max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.conclusion.body }} />
-            </CardContent>
-          </Card>
-        )}
-
         <AuthorCard dictionary={dictionary.author_card} />
         <FooterCta dictionary={dictionary.footer_cta} lang={params.lang} />
       </div>
