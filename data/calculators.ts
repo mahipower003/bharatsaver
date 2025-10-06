@@ -15,6 +15,7 @@ import {
   Calculator,
   PiggyBank,
   Gift,
+  HeartHandshake,
 } from 'lucide-react';
 import type { Calculator as CalculatorType } from '@/lib/types';
 
@@ -78,6 +79,16 @@ export const calculators: CalculatorType[] = [
     link_text: 'Calculate Now',
     lastModified: '2024-09-28',
     image: '/images/lic-single-premium-calculator.png'
+  },
+  {
+    slug: 'lic-term-insurance',
+    title: 'LIC Term Insurance Guide',
+    description: 'Compare Tech-Term, Digi Term & Yuva Term plans and premiums.',
+    summary: 'Complete LIC Term Insurance guide — compare Tech-Term, Digi Term & Yuva Term, see sample premiums for ₹1Cr, use our calculator, and learn the claim process. Expert tips to choose the right cover.',
+    icon: HeartHandshake,
+    link_text: 'Explore Plans',
+    lastModified: '2025-01-10',
+    image: '/images/lic-term-insurance-guide.png'
   },
   {
     slug: 'lic-maturity-calculator',
@@ -210,3 +221,5 @@ export const calculators: CalculatorType[] = [
     image: '/images/PPF-NPS-FD-SSY-Scheme-selector.png'
   },
 ];
+
+    

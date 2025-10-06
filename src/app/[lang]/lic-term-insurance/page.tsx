@@ -1,0 +1,74 @@
+
+import { getDictionary } from "@/lib/dictionaries";
+import { i18nConfig, type Locale } from "@/lib/i18n-config";
+import type { Metadata } from "next";
+import LicTermInsuranceGuideClient from "./LicTermInsuranceGuideClient";
+
+export async function generateStaticParams() {
+    return i18nConfig.locales.map(locale => ({ lang: locale }));
+}
+
+export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
+    const pageDict = (await import(`@/dictionaries/${params.lang}/lic-term-insurance.json`).catch(() => import(`@/dictionaries/en/lic-term-insurance.json`))).default;
+    const siteUrl = 'https://bharatsaver.com';
+    const pageUrl = `${siteUrl}/${params.lang}/lic-term-insurance`;
+    
+    const schemas = [];
+    if (pageDict.faq_schema) schemas.push(pageDict.faq_schema);
+    if (pageDict.how_to_schema) schemas.push(pageDict.how_to_schema);
+    if (pageDict.financial_product_schema) schemas.push(pageDict.financial_product_schema);
+
+    return {
+        title: pageDict.meta.title,
+        description: pageDict.meta.description,
+        alternates: {
+            canonical: pageUrl,
+            languages: i18nConfig.locales.reduce((acc, locale) => {
+                acc[locale] = `${siteUrl}/${locale}/lic-term-insurance`;
+                return acc;
+            }, {} as Record<string, string>),
+        },
+        openGraph: {
+          title: pageDict.meta.title,
+          description: pageDict.meta.description,
+          url: pageUrl,
+          images: [{ url: `${siteUrl}/images/lic-term-insurance-guide.png`, width: 1200, height: 630, alt: 'LIC Term Insurance Guide' }],
+          locale: params.lang === 'en' ? 'en_IN' : params.lang,
+          type: 'website',
+        },
+        other: {
+            'application/ld+json': JSON.stringify(schemas),
+        },
+    };
+}
+
+
+export default async function LicTermInsurancePage({ params }: { params: { lang: Locale }}) {
+    const dictionary = await getDictionary(params.lang);
+    const pageDict = (await import(`@/dictionaries/${params.lang}/lic-term-insurance.json`).catch(() => import(`@/dictionaries/en/lic-term-insurance.json`))).default;
+    const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
+    const pageUrl = `${siteUrl}/${params.lang}/lic-term-insurance`;
+
+    const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${params.lang}` },
+          { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${params.lang}/calculators` },
+          { '@type': 'ListItem', position: 3, name: 'LIC Term Insurance', item: pageUrl },
+        ],
+    };
+    
+    return (
+        <>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <LicTermInsuranceGuideClient 
+                params={params}
+                dictionary={dictionary}
+                pageDict={pageDict}
+            />
+        </>
+    );
+}
+
+    
