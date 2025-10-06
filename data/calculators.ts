@@ -31,6 +31,16 @@ export const calculators: CalculatorType[] = [
     image: '/images/lic-premium-calculator.png'
   },
   {
+    slug: 'lic-child-plan',
+    title: 'LIC Child Plan',
+    description: 'Compare LIC\'s best child plans for education and marriage goals.',
+    summary: 'A complete guide to choosing the best LIC child plan. Compare Jeevan Tarun, New Children’s Money Back Plan & Amritbaal. Use our free calculator to estimate premiums & maturity benefits.',
+    icon: Baby,
+    link_text: 'Explore Plans',
+    lastModified: '2025-01-15',
+    image: '/images/lic-child-plan-guide.png'
+  },
+  {
     slug: 'lic-jeevan-umang-calculator',
     title: 'LIC Jeevan Umang Calculator',
     description: 'Estimate premium & survival benefits for LIC\'s Jeevan Umang (Plan 945).',
