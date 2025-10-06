@@ -23,12 +23,11 @@ function getIcon(iconName: string) {
     return icons[iconName] || HelpCircle;
 }
 
-const ContentRenderer = ({ content, lang }: { content: any[]; lang: Locale }) => {
+const ContentRenderer = ({ content, lang }: { content: any[], lang: Locale }) => {
     if (!content) return null;
     return (
         <div className="space-y-4">
             {content.map((item, idx) => {
-                const Icon = item.icon ? getIcon(item.icon) : null;
                 switch (item.type) {
                     case 'paragraph':
                         return <div key={idx} className="prose dark:prose-invert max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: item.text.replace(/{lang}/g, lang) }} />;
@@ -50,6 +49,16 @@ const ContentRenderer = ({ content, lang }: { content: any[]; lang: Locale }) =>
                                 </AccordionItem>
                             ))}
                         </Accordion>;
+                    case 'structured_content':
+                         return (
+                            <div key={idx} className="space-y-4">
+                                {item.heading && <h3 className="text-xl font-semibold" dangerouslySetInnerHTML={{ __html: item.heading }} />}
+                                {item.body && <div className="prose dark:prose-invert max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: item.body }} />}
+                                {item.list_items && <ul className="list-disc pl-5 space-y-2 text-muted-foreground prose dark:prose-invert max-w-none">
+                                    {item.list_items.map((li: string, liIdx: number) => <li key={liIdx} dangerouslySetInnerHTML={{ __html: li }} />)}
+                                </ul>}
+                            </div>
+                        );
                     default:
                         return null;
                 }

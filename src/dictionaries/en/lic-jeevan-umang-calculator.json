@@ -1,18 +1,17 @@
 
 {
-  "meta_title": "Jeevan Umang Calculator (Plan 945) — Premium, Survival Income & Maturity",
-  "meta_description": "Free LIC Jeevan Umang Calculator (Plan 945) — get instant premium, guaranteed income & maturity estimates with sample illustrations and downloadable PDF.",
-  "og_description": "Use our free online calculator to instantly see your LIC Jeevan Umang premiums, survival benefits, and projected maturity value. Make an informed decision for your family's future.",
+  "meta_title": "Jeevan Umang Calculator (Plan 945) — Premium, Income & Maturity",
+  "meta_description": "Free LIC Jeevan Umang Calculator — instantly estimate premium, guaranteed survival income & surrender values (Plan 945). Download PDF & get a free illustration.",
   "h1": "LIC Jeevan Umang Calculator (Plan 945) — Premium, Survival Income & Maturity",
   "intro": {
-    "quick_answer": "Use this LIC Jeevan Umang calculator page to get instant premium & survival-income estimates for Plan 945, compare PPT/mode options, toggle riders, and download a PDF illustration. Below you’ll find a human-friendly step-by-step guide, how the math works, worked examples, optimization tips, and an extensive FAQ.",
+    "quick_answer": "Use this LIC Jeevan Umang calculator to get instant premium & survival-income estimates for Plan 945, compare PPT/mode options, toggle riders, and download a PDF illustration. Below you’ll find a human-friendly step-by-step guide, how the math works, worked examples, optimization tips, and an extensive FAQ to cover every search intent related to **“lic jeevan umang calculator”** and long-tail variations.",
     "cta_button": "Calculate Now",
     "citation": "Plan details based on LIC of India, UIN: 512N317V02"
   },
   "calculator_ui": {
-    "h2": "Try the Calculator",
+    "h2": "Try the calculator (interactive tool)",
     "title": "Your Personal Jeevan Umang Calculator (Plan 945)",
-    "description": "Enter your details to see exactly what your premiums and guaranteed lifetime income could look like.",
+    "description": "How to use: 1. Select Plan preset: **Jeevan Umang (Plan 945)**. 2. Enter Age, Gender, Basic Sum Assured (BSA), Premium Paying Term (PPT). 3. Choose Payment Mode (Yearly / Half yearly / Quarterly / Monthly). 4. Toggle optional riders (AD&DB, Critical Illness, Term Rider). 5. Click **Calculate** → view Annual Premium, Mode breakdown, and expected Survival Income (post-PPT). 6. Download PDF / Email results / Request a free callback.",
     "inputs": {
       "age": "Your Current Age",
       "gender": "Gender",
@@ -22,37 +21,17 @@
       "mode": "Payment Frequency",
       "riders": {
         "label": "Optional Riders (Your Safety Net)",
-        "addb": {
-          "label": "Accidental Death & Disability Benefit",
-          "description": "A crucial add-on. Provides an extra payout if an accident causes death or disability. A must-have for the primary earner."
-        },
-        "term": {
-          "label": "Term Assurance Rider",
-          "description": "Think of this as a simple life cover boost. It adds a pure-risk insurance amount on top of your base plan."
-        },
-        "ci": {
-          "label": "Critical Illness Cover",
-          "description": "Provides a lump-sum payment on diagnosis of specified major illnesses, helping manage treatment costs."
-        }
+        "addb": { "label": "Accidental Death & Disability Benefit", "description": "Provides an extra payout if an accident causes death or disability." },
+        "term": { "label": "Term Assurance Rider", "description": "Adds a pure-risk insurance amount on top of your base plan." },
+        "ci": { "label": "Critical Illness Cover", "description": "Provides a lump-sum payment on diagnosis of specified major illnesses." }
       }
     },
     "outputs": {
       "title": "Estimated Benefits",
-      "premium": {
-        "title": "Here's What You'll Pay (Premium Estimate)"
-      },
-      "survivalBenefit": {
-        "title": "Your Guaranteed Lifelong Income",
-        "subtitle": "Per year, for life, starting after your PPT ends."
-      },
-      "maturityBenefit": {
-        "title": "Your Legacy (Maturity at 100)",
-        "subtitle": "Sum Assured + Bonus + FAB"
-      },
-      "disclaimer": {
-        "title": "My Honest Disclaimer",
-        "body": "These numbers are based on LIC's official documents for Jeevan Umang (Plan 945). This is a reliable estimate. Your final figures will come from LIC after their underwriting process."
-      }
+      "premium": { "title": "Premium Estimate" },
+      "survivalBenefit": { "title": "Your Guaranteed Lifelong Income", "subtitle": "Per year, for life, after PPT ends." },
+      "maturityBenefit": { "title": "Your Legacy (Maturity at 100)", "subtitle": "Sum Assured + Bonus + FAB" },
+      "disclaimer": { "title": "Accuracy Note", "body": "Where the plan uses declared bonuses or special additions, the calculator uses illustrative/default values but always shows a clear disclaimer and 'last updated' date." }
     },
     "calculate_button": "Calculate My Jeevan Umang Benefits",
     "calculating": "Calculating..."
@@ -61,18 +40,10 @@
     {
       "id": "quick-snapshots",
       "icon": "BarChart",
-      "title": "Quick Snapshots: Sample Estimates",
-      "description": "Illustrative results for common queries (use the calculator for your exact figures).",
+      "title": "Quick snapshots: sample estimates (instant answers people search for)",
       "content": [
-        {
-          "type": "table",
-          "headers": ["Profile", "Est. Annual Premium", "Guaranteed Survival Income (Post-PPT)"],
-          "rows": [
-            ["Age 30, ₹10L Cover, 12yr PPT", "≈ ₹95,000", "₹80,000 / year for life"],
-            ["Age 40, ₹10L Cover, 8yr PPT", "≈ ₹1,10,000", "₹80,000 / year for life"]
-          ],
-          "footer": "Numbers are illustrative. Actual premium depends on LIC tables, medical underwriting and riders."
-        }
+        { "type": "paragraph", "text": "Below are quick illustrative results for a ₹10,00,000 Basic Sum Assured (BSA). These are sample scenarios to show how outputs look. *Numbers are illustrative — actual premium depends on LIC tables, medical underwriting and riders.*" },
+        { "type": "structured_content", "body": "<ul><li>Age 30, PPT 12 → Est. annual premium ≈ ₹95,000 → Survival Income (after PPT) ≈ 8% of BSA = ₹80,000/yr (paid annually for life).</li><li>Age 40, PPT 8 → Est. annual premium ≈ ₹1,10,000 → Survival Income ≈ ₹80,000/yr.</li></ul>" }
       ]
     },
     {
@@ -80,45 +51,56 @@
       "icon": "HelpCircle",
       "title": "What is Jeevan Umang (Plan 945)?",
       "content": [
-        { "type": "paragraph", "text": "Jeevan Umang is a **participating whole-life plan** that provides an ongoing (lifelong) survival income after the premium paying term. It combines life insurance protection with a recurring income stream — making it attractive for retirement planning. The plan also accrues bonuses and may include final additional bonuses where applicable." }
+        { "type": "paragraph", "text": "Jeevan Umang is a <strong>participating whole-life plan</strong> that provides an ongoing (lifelong) survival income after the premium paying term. It combines life insurance protection with a recurring income stream — making it attractive for retirement planning. The plan also accrues bonuses and may include final additional bonuses where applicable." }
       ]
     },
     {
       "id": "how-it-works",
       "icon": "Calculator",
-      "title": "How the LIC Jeevan Umang Calculator Works (Formulas Explained)",
+      "title": "How the LIC Jeevan Umang calculator works (formulas explained)",
       "content": [
-        { "type": "paragraph", "text": "<h3>H3 — Premium calculation</h3><p><ul><li><strong>Base annual premium</strong> = lookup from LIC rate table depending on Age, BSA and PPT.</li><li><strong>Mode conversion</strong> uses modal loading factors:<ul><li>Half-yearly = Yearly × 0.5098</li><li>Quarterly = Yearly × 0.2575</li><li>Monthly = Yearly × 0.0879</li></ul></li></ul></p><h3>H3 — Guaranteed Additions (GAs)</h3><p>GAs are paid during the Premium Paying Term at a fixed rate per ₹1,000 of BSA. Total GAs = Annual GA × PPT.</p><h3>H3 — Survival income (post-PPT)</h3><p>Regular income is a fixed percentage of BSA paid annually after PPT (e.g., 8% of BSA). Unwithdrawn income may accumulate at a guaranteed rate.</p><h3>H3 — Maturity & death benefits</h3><p>The main benefit is the lifetime income. Death benefit is typically Sum Assured on Death plus bonuses, or 105% of total premiums paid.</p>" }
+        { "type": "structured_content", "heading": "Premium calculation", "body": "<ul><li><strong>Base annual premium</strong> = lookup from LIC rate table depending on Age, BSA and PPT.</li><li><strong>Mode conversion</strong> uses modal loading factors:<ul><li>Yearly × 1.00 = Yearly</li><li>Half-yearly = Yearly × 0.5098</li><li>Quarterly = Yearly × 0.2575</li><li>Monthly = Yearly × 0.0879</li></ul></li></ul>" },
+        { "type": "structured_content", "heading": "Guaranteed Additions (GAs)", "body": "<ul><li>GAs are paid during the Premium Paying Term at a fixed rate per ₹1,000 of BSA (displayed by the plan).</li><li><strong>Total GAs</strong> = Annual GA × PPT.</li></ul>" },
+        { "type": "structured_content", "heading": "Survival income (post-PPT)", "body": "<ul><li><strong>Regular income</strong> is typically 8% of BSA paid annually after PPT.</li><li><strong>Flexi / accumulate options</strong>: if offered, unwithdrawn income may accumulate at a guaranteed rate.</li></ul>" },
+        { "type": "structured_content", "heading": "Maturity & death benefits", "body": "<ul><li>Death benefit typically equals Sum Assured on Death or a guaranteed minimum (e.g., 105% of total premiums paid). Check the plan UIN for exact terms.</li></ul>" }
       ]
     },
     {
       "id": "inputs-explained",
       "icon": "SlidersHorizontal",
-      "title": "Inputs Explained",
+      "title": "Inputs explained (what each field means and why it matters)",
       "content": [
-        { "type": "paragraph", "text": "<h3>H3 — Age / gender</h3><p>Younger entrants pay lower premiums.</p><h3>H3 — Basic Sum Assured (BSA)</h3><p>The core coverage amount; survival income and GAs are derived from BSA.</p><h3>H3 — Premium Paying Term (PPT)</h3><p>Shorter PPT means higher annual premium but faster income start.</p><h3>H3 — Payment Mode</h3><p>Yearly is cheapest. Monthly is convenient but costlier.</p><h3>H3 — Riders</h3><p>Optional covers add to the premium but not the core benefits.</p>" }
+        { "type": "structured_content", "heading": "Age / gender", "body": "Younger entrants pay lower premiums; gender may affect premium in some tables." },
+        { "type": "structured_content", "heading": "Basic Sum Assured (BSA)", "body": "This is the core coverage amount — survival income is derived from BSA." },
+        { "type": "structured_content", "heading": "Premium Paying Term (PPT)", "body": "Shorter PPT = higher annual premium but faster income start. Use the preset list for typical options (e.g., 10, 12, 15 years)." },
+        { "type": "structured_content", "heading": "Payment Mode", "body": "Yearly is cheapest. Monthly is convenient but costlier due to modal loading." },
+        { "type": "structured_content", "heading": "Riders", "body": "Optional covers (Accidental Death & Disability, Critical Illness) add to the premium." }
       ]
     },
     {
         "id": "worked-examples",
         "icon": "Users",
-        "title": "Worked Examples",
+        "title": "Worked examples (detailed walk-throughs)",
+        "description": "*These examples are illustrative — use the calculator for exact figures.*",
         "content":[
-          { "type": "paragraph", "text": "<h3>H3 — Example 1 — Young saver (age 30, BSA ₹10L, PPT 12)</h3><p>Input: Age 30, BSA 10,00,000, PPT 12, Yearly mode. Outputs: Annual premium ≈ ₹95,000; Post-PPT survival income = 8% × BSA = ₹80,000/yr (paid for life); Estimated IRR ~5–6%.</p><h3>H3 — Example 2 — Pre-retiree (age 50, BSA ₹15L, PPT 8)</h3><p>Input: Age 50, BSA 15,00,000, PPT 8. Outputs: Annual premium ≈ ₹2,15,000; Survival income post-PPT = ₹1,20,000/yr.</p><h3>H3 — Example 3 — High SA (age 35, BSA ₹1 Cr, PPT 10)</h3><p>Illustrates high sum assured rebate logic. Calculator applies rebate automatically.</p>" }
+          { "type": "structured_content", "heading": "Example 1 — Young saver (age 30, BSA ₹10L, PPT 12)", "body": "<p>Input: Age 30, BSA 10,00,000, PPT 12, Yearly mode.</p><p>Calculator outputs:<ul><li>Annual premium ≈ ₹95,000</li><li>Post-PPT survival income = 8% × BSA = ₹80,000/yr (paid for life)</li><li>Estimated IRR ~5–6%</li></ul></p>" },
+          { "type": "structured_content", "heading": "Example 2 — Pre-retiree (age 50, BSA ₹15L, PPT 8)", "body": "<p>Input: Age 50, BSA 15,00,000, PPT 8.</p><p>Outputs:<ul><li>Annual premium ≈ ₹2,15,000</li><li>Survival income post-PPT = ₹1,20,000/yr</li></ul></p>" },
+          { "type": "structured_content", "heading": "Example 3 — High SA (age 35, BSA ₹1 Cr, PPT 10)", "body": "Illustrates high sum assured rebate logic — calculator applies this automatically." }
         ]
     },
     {
       "id": "surrender-paid-up-loan",
       "icon": "FileText",
-      "title": "Surrender, Paid-up & Loans",
+      "title": "Surrender, paid-up & loans — what the calculator shows",
       "content": [
-        { "type": "paragraph", "text": "<ul><li><strong>Paid-up value</strong>: If premiums stop after 2+ years, policy becomes paid-up with reduced SA.</li><li><strong>Surrender value</strong>: Available after 2 yrs. Calculator estimates GSV or SSV.</li><li><strong>Loan</strong>: You can take a loan up to a percentage of SSV.</li></ul>" }
+        { "type": "list", "items": ["<strong>Paid-up value</strong>: If premiums stop after 2+ years, policy becomes paid-up. Paid-up SA reduces proportionately.", "<strong>Surrender value</strong>: Available after 2 yrs. Calculator estimates GSV or SSV.", "<strong>Loan</strong>: You can take a loan up to a percentage of SSV."] }
       ]
     },
     {
         "id": "comparison",
         "icon": "GitCompareArrows",
-        "title": "Jeevan Umang vs Similar LIC Plans",
+        "title": "Jeevan Umang vs similar LIC plans (quick comparison)",
+        "description": "Users often test Jeevan Umang vs Jeevan Utsav or Jeevan Labh to choose between lifetime income vs lumpsum maturity.",
         "content":[
           { "type": "table", "headers": ["Feature", "Jeevan Umang (Plan 945)", "Jeevan Utsav", "Jeevan Labh"], "rows": [
               ["Benefit type", "Lifetime survival income post-PPT", "Lifetime income or flexi income", "Lump sum maturity (endowment)"],
@@ -131,57 +113,37 @@
     {
       "id": "tips",
       "icon": "CheckCircle",
-      "title": "Practical Tips to Reduce Premium",
+      "title": "Practical tips to reduce premium or improve value",
       "content": [
         { "type": "list", "items": ["Pay yearly", "Pick a longer PPT", "Avoid unnecessary riders", "Start earlier", "Check high SA rebates"] }
       ]
     },
     {
-        "id": "faq",
-        "icon": "HelpCircle",
-        "title": "Frequently Asked Questions",
-        "content": [
-          { "type": "faq", "items": [
-              {"q": "What is the Jeevan Umang calculator and is it free?", "a": "The Jeevan Umang calculator is a free online tool to estimate premiums, survival income and related values for LIC Plan 945. It provides quick, illustrative figures — not a binding LIC quote."},
-              {"q": "How do I calculate Jeevan Umang premium?", "a": "Enter your age, BSA, PPT and mode into the calculator. The tool uses LIC rate tables and modal factors to compute yearly and mode premiums."},
-              {"q": "What is the survival income under Jeevan Umang?", "a": "Survival income is a yearly payment after PPT — typically a fixed percentage of Basic Sum Assured (e.g., 8%)."},
-              {"q": "Does the calculator include riders and GST?", "a": "Yes — toggle riders to see additional rider premiums. The calculator also shows GST in the premium breakdown."},
+      "id": "faq",
+      "icon": "HelpCircle",
+      "title": "FAQ",
+      "content": [
+        { "type": "faq", "items": [
+              {"q": "What is the Jeevan Umang calculator and is it free?","a": "The Jeevan Umang calculator is a free online tool to estimate premiums, survival income and related values for LIC Plan 945. It provides quick, illustrative figures — not a binding LIC quote."},
+              {"q": "How do I calculate Jeevan Umang premium?","a": "Enter your age, BSA, PPT and mode into the calculator. The tool uses LIC rate tables and modal factors to compute yearly and mode premiums."},
+              {"q": "What is the survival income under Jeevan Umang?","a": "Survival income is a yearly payment after PPT — typically 8% of Basic Sum Assured."},
+              {"q": "Does the calculator include riders and GST?","a": "Yes — toggle riders to see additional rider premiums. The calculator also shows GST in the premium breakdown."},
               {"q": "How accurate are the results?","a": "Results are estimates. For a binding quote, contact LIC. The accuracy depends on input assumptions."},
               {"q": "Can NRIs use the Jeevan Umang calculator?","a": "Yes, for planning, but eligibility depends on LIC and FEMA rules."},
               {"q": "When can I take a loan against Jeevan Umang?","a": "Typically after 2 full years when the policy has a surrender value."},
               {"q": "Is the survival income taxable?","a": "Generally tax-favored under Section 10(10D), but consult a tax advisor."},
               {"q": "What is paid-up value?","a": "If premiums stop after 2+ years, the policy continues with a reduced Sum Assured."},
               {"q": "How to compare Jeevan Umang with Jeevan Utsav or Jeevan Labh?","a": "Use the calculator to compare illustrations for the same BSA to see which fits your goals."}
-          ]}
-        ]
+        ]}
+      ]
+    },
+    {
+      "id": "next-steps",
+      "icon": "BookUser",
+      "title": "Next steps & CTA",
+      "content": [
+        { "type": "list", "items": ["<strong>Calculate now</strong> — get an instant PDF.", "<strong>Want a personalized illustration?</strong> Request a free callback.", "<strong>Compare plans</strong> — view Jeevan Utsav vs Jeevan Labh pages."] }
+      ]
     }
-  ],
-  "faq_schema": {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "question": "What is the Jeevan Umang calculator?",
-        "answer": "A free online tool to estimate premiums, guaranteed survival income and surrender/paid-up values for LIC's Jeevan Umang (Plan 945). Results are illustrative and not a binding LIC quote."
-      },
-      {
-        "question": "How accurate is the Jeevan Umang calculator?",
-        "answer": "The calculator uses plan rules and illustrative assumptions for bonuses. Final premium/benefit is confirmed by LIC after underwriting. Always verify with LIC."
-      },
-      {
-        "question": "Is the income from Jeevan Umang taxable?",
-        "answer": "Generally the income and maturity/death benefits are tax-free under Section 10(10D), subject to tax rules and the policy conditions. Confirm with LIC or a tax advisor."
-      }
-    ]
-  },
-  "how_to_schema": {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-    "name": "How to Use the LIC Jeevan Umang Calculator",
-    "step": [
-      { "@type": "HowToStep", "name": "Step 1: Enter Your Details", "text": "Input your age, desired Sum Assured, and how long you want to pay premiums (15, 20, 25, or 30 years)." },
-      { "@type": "HowToStep", "name": "Step 2: Choose Payment Mode and Riders", "text": "Select your payment frequency (e.g., yearly) and any optional riders like Accidental Death Benefit." },
-      { "@type": "HowToStep", "name": "Step 3: Click 'Calculate' & Get Clarity", "text": "Instantly see your estimated premium, your total Guaranteed Additions, and a clear projection of your lifelong income stream." }
-    ]
-  }
+  ]
 }
