@@ -1,9 +1,9 @@
 
 {
-  "meta_title": "Jeevan Umang Calculator (Plan 945) — Premium, Income & Maturity",
-  "meta_description": "Free LIC Jeevan Umang Calculator (Plan 945) — get instant premium, guaranteed income & maturity estimates with sample illustrations and downloadable PDF.",
-  "og_description": "Free LIC Jeevan Umang Calculator — instantly estimate premium, guaranteed survival income & surrender values (Plan 945). Download PDF & get a free illustration.",
-  "h1": "LIC Jeevan Umang Calculator (Plan 945) — Premium, Survival Income & Maturity",
+  "meta_title": "Jeevan Umang Calculator (Plan 745) — Premium, Income & Maturity",
+  "meta_description": "Free LIC Jeevan Umang Calculator (Plan 745) — get instant premium, guaranteed income & maturity estimates with sample illustrations and downloadable PDF.",
+  "og_description": "Free LIC Jeevan Umang Calculator — instantly estimate premium, guaranteed survival income & surrender values (Plan 745). Download PDF & get a free illustration.",
+  "h1": "LIC Jeevan Umang Calculator (Plan 745) — Premium, Survival Income & Maturity",
   "intro": {
     "quick_answer": "Use this LIC Jeevan Umang calculator page to get instant premium & survival-income estimates for Plan 745, compare PPT/mode options, toggle riders, and download a PDF illustration. Below you’ll find a human-friendly step-by-step guide, how the math works, worked examples, optimization tips, and an extensive FAQ to cover every search intent related to **“lic jeevan umang calculator”** and long-tail variations.",
     "cta_button": "Calculate Now",
@@ -43,7 +43,8 @@
       "icon": "BarChart",
       "title": "Quick snapshots: sample estimates",
       "content": [
-        { "type": "paragraph", "text": "Below are quick illustrative results (use your calculator with your exact inputs for accurate numbers). *These are sample scenarios to show how outputs look.*<br/><br/><strong>Sample: ₹10,00,000 BSA (Basic Sum Assured)</strong><ul><li>Age 30, PPT 12 → Est. annual premium ≈ ₹95,000 → Survival Income (after PPT) ≈ 8% of BSA = ₹80,000/yr (paid annually for life) + Guaranteed Additions during PPT.</li><li>Age 40, PPT 8 → Est. annual premium ≈ ₹1,10,000 → Survival Income ≈ ₹80,000/yr.</li></ul><i>(Numbers are illustrative — actual premium depends on LIC tables, medical underwriting and riders.)</i>" }
+        { "type": "paragraph", "text": "Below are quick illustrative results (use your calculator with your exact inputs for accurate numbers). *These are sample scenarios to show how outputs look.*" },
+        { "type": "structured_content", "heading": "Sample: ₹10,00,000 BSA (Basic Sum Assured)", "body": "<ul><li>Age 30, PPT 12 → Est. annual premium ≈ ₹95,000 → Survival Income (after PPT) ≈ 8% of BSA = ₹80,000/yr (paid annually for life) + Guaranteed Additions during PPT.</li><li>Age 40, PPT 8 → Est. annual premium ≈ ₹1,10,000 → Survival Income ≈ ₹80,000/yr.</li></ul><i>(Numbers are illustrative — actual premium depends on LIC tables, medical underwriting and riders.)</i>" }
       ]
     },
     {
@@ -104,34 +105,35 @@
       "id": "comparison",
       "icon": "GitCompareArrows",
       "title": "Jeevan Umang vs similar LIC plans (quick comparison)",
+      "description": "Why compare? Users often test Jeevan Umang vs Jeevan Utsav or Jeevan Labh to choose between lifetime income vs lumpsum maturity.",
       "content": [
-        { "type": "paragraph", "text": "<strong>Why compare?</strong> Users often test Jeevan Umang vs Jeevan Utsav or Jeevan Labh to choose between lifetime income vs lumpsum maturity.<br/><i>(Use the calculator to compare side-by-side illustrations.)</i>" },
         { "type": "table", "headers": ["Feature", "Jeevan Umang (Plan 745)", "Jeevan Utsav", "Jeevan Labh"], "rows": [
             ["Benefit type", "Lifetime survival income post-PPT", "Lifetime income or flexi income", "Lump sum maturity (endowment)"],
             ["PPT options", "Limited (varies)", "5–16 yrs", "Limited pay (e.g., pay 16 yrs)"],
             ["Best for", "Retirement income", "Flexible lifetime income", "Goal-based lump sum (education/marriage)"]
           ]
-        }
+        },
+        {"type": "paragraph", "text": "*(Use the calculator to compare side-by-side illustrations.)*"}
       ]
     },
     {
-      "id": "tips",
-      "icon": "CheckCircle",
-      "title": "Practical tips to reduce premium or improve value",
-      "content": [
-        { "type": "list", "items": [
-            "<strong>Pay yearly</strong> — modal loading is smallest.",
-            "<strong>Pick a longer PPT</strong> (if you can afford the time) — reduces annual premium.",
-            "<strong>Avoid unnecessary riders</strong> — only add riders you truly need.",
-            "<strong>Start earlier</strong> — age is the single biggest determinant of premium.",
-            "<strong>Check high SA rebates</strong> — if you’re going for large sums assured, you may get a discount."
-        ]}
-      ]
+        "id": "tips",
+        "icon": "CheckCircle",
+        "title": "Practical tips to reduce premium or improve value",
+        "content": [
+          { "type": "list", "items": [
+              "<strong>Pay yearly</strong> — modal loading is smallest.",
+              "<strong>Pick a longer PPT</strong> (if you can afford the time) — reduces annual premium.",
+              "<strong>Avoid unnecessary riders</strong> — only add riders you truly need.",
+              "<strong>Start earlier</strong> — age is the single biggest determinant of premium.",
+              "<strong>Check high SA rebates</strong> — if you’re going for large sums assured, you may get a discount."
+          ]}
+        ]
     },
     {
         "id": "faq",
         "icon": "HelpCircle",
-        "title": "FAQ (Frequently Asked Questions)",
+        "title": "FAQ (use these Qs on the page; implement FAQ schema)",
         "content": [
           { "type": "faq", "items": [
               {"q": "1. What is the Jeevan Umang calculator and is it free?", "a": "The Jeevan Umang calculator is a free online tool to estimate premiums, survival income and related values for LIC Plan 745. It provides quick, illustrative figures — not a binding LIC quote."},
@@ -146,30 +148,19 @@
               {"q": "10. How to compare Jeevan Umang with Jeevan Utsav or Jeevan Labh?", "a": "Use the side-by-side comparison feature: input identical BSA and check income vs maturity outcomes to choose the best fit for your goals."}
           ]}
         ]
+    },
+    {
+      "id": "conclusion",
+      "icon": "Star",
+      "title": "My Final Take: Is Jeevan Umang the Right Choice for You?",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "This calculator and content are for informational purposes only — illustrative figures are based on publicly available plan features and common assumptions. Final premiums, bonuses, and policy terms are determined by LIC at the time of quote and underwriting. Always consult LIC or an authorized agent for a binding illustration."
+        }
+      ]
     }
   ],
-  "faq_schema": {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is the Jeevan Umang calculator?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A free online tool to estimate premiums, guaranteed survival income and surrender/paid-up values for LIC's Jeevan Umang (Plan 745). Results are illustrative and not a binding LIC quote."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How accurate is the Jeevan Umang calculator?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The calculator uses plan rules and illustrative assumptions for bonuses. Final premium/benefit is confirmed by LIC after underwriting. Always verify with LIC."
-        }
-      }
-    ]
-  },
   "financial_product_schema": {
     "@context": "https://schema.org",
     "@type": "FinancialProduct",
@@ -183,5 +174,27 @@
         "@type": "Offer",
         "priceCurrency": "INR"
     }
+  },
+  "faq_schema": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the Jeevan Umang calculator and is it free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Jeevan Umang calculator is a free online tool to estimate premiums, survival income and related values for LIC Plan 745. It provides quick, illustrative figures — not a binding LIC quote."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How accurate is the Jeevan Umang calculator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The calculator uses plan rules and illustrative assumptions for bonuses. Final premium/benefit is confirmed by LIC after underwriting. Always verify with LIC."
+        }
+      }
+    ]
   }
 }
