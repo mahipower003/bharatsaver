@@ -5,6 +5,7 @@ import type { Dictionary } from "@/lib/types";
 import type { Locale } from "@/lib/i18n-config";
 import { LicJeevanUmangCalculator } from "@/components/calculators/LicJeevanUmangCalculator";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { AuthorCard } from "@/components/layout/AuthorCard";
 import { FooterCta } from "@/components/layout/FooterCta";
@@ -13,7 +14,6 @@ import Link from 'next/link';
 import { Download, BarChart, FileText, CheckCircle, SlidersHorizontal, GitCompareArrows, AlertTriangle, Users, BookUser, Star, HelpCircle, UserCheck, Calculator } from "lucide-react";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import Image from "next/image";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 function getIcon(iconName: string) {
     const icons: { [key: string]: React.ElementType } = {
@@ -41,6 +41,7 @@ const ContentRenderer = ({ content, lang }: { content: any[], lang: Locale }) =>
                             <TableBody>{item.rows.map((row: (string|number)[], rIdx: number) => <TableRow key={rIdx}>{row.map((cell: string|number, cIdx: number) => <TableCell key={cIdx} dangerouslySetInnerHTML={{ __html: String(cell).replace(/{lang}/g, lang) }} />)}</TableRow>)}</TableBody>
                         </Table>{item.footer && <p className="text-xs text-muted-foreground mt-2 italic" dangerouslySetInnerHTML={{ __html: item.footer }} />}</div>;
                     case 'faq':
+                         if (!item.items) return null;
                         return <Accordion key={idx} type="single" collapsible className="w-full">
                             {item.items.map((faq: {q: string; a: string}, qIdx: number) => (
                                 <AccordionItem key={qIdx} value={`item-${qIdx}`}>
@@ -54,9 +55,6 @@ const ContentRenderer = ({ content, lang }: { content: any[], lang: Locale }) =>
                             <div key={idx} className="space-y-4">
                                 {item.heading && <h3 className="text-xl font-semibold" dangerouslySetInnerHTML={{ __html: item.heading }} />}
                                 {item.body && <div className="prose dark:prose-invert max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: item.body }} />}
-                                {item.list_items && <ul className="list-disc pl-5 space-y-2 text-muted-foreground prose dark:prose-invert max-w-none">
-                                    {item.list_items.map((li: string, liIdx: number) => <li key={liIdx} dangerouslySetInnerHTML={{ __html: li }} />)}
-                                </ul>}
                             </div>
                         );
                     default:
@@ -95,7 +93,7 @@ export default function LicJeevanUmangCalculatorPageClient({
         </div>
 
         <div className="mt-12 space-y-8">
-            {pageDict.sections.map((section: any, index: number) => {
+            {pageDict.sections && Array.isArray(pageDict.sections) && pageDict.sections.map((section: any, index: number) => {
                 const Icon = getIcon(section.icon);
                 return (
                   <Card key={index} id={section.id} className="shadow-lg">
