@@ -10,13 +10,33 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
     const pageDict = (await import(`@/dictionaries/${params.lang}/lic-term-insurance.json`).catch(() => import(`@/dictionaries/en/lic-term-insurance.json`))).default;
-    const siteUrl = 'https://bharatsaver.com';
+    const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
     const pageUrl = `${siteUrl}/${params.lang}/lic-term-insurance`;
     
     const schemas = [];
     if (pageDict.faq_schema) schemas.push(pageDict.faq_schema);
     if (pageDict.how_to_schema) schemas.push(pageDict.how_to_schema);
-    if (pageDict.financial_product_schema) schemas.push(pageDict.financial_product_schema);
+    if (pageDict.financial_product_schema) schemas.push({
+        ...pageDict.financial_product_schema,
+        url: pageUrl
+    });
+    if (pageDict.article_schema) schemas.push({
+        ...pageDict.article_schema,
+        mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
+        author: { ...pageDict.article_schema.author, url: `${siteUrl}/${params.lang}/author/mahesh-chaube`},
+        publisher: { ...pageDict.article_schema.publisher, logo: { "@type": "ImageObject", "url": `${siteUrl}/icon.svg`}}
+    });
+
+    const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${params.lang}` },
+          { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${params.lang}/calculators` },
+          { '@type': 'ListItem', position: 3, name: 'LIC Term Insurance Guide', item: pageUrl },
+        ],
+    };
+    schemas.push(breadcrumbSchema);
 
     return {
         title: "LIC Term Insurance Guide (2025): Plans, Premiums & Calculator",
@@ -46,27 +66,12 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 export default async function LicTermInsurancePage({ params }: { params: { lang: Locale }}) {
     const dictionary = await getDictionary(params.lang);
     const pageDict = (await import(`@/dictionaries/${params.lang}/lic-term-insurance.json`).catch(() => import(`@/dictionaries/en/lic-term-insurance.json`))).default;
-    const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-    const pageUrl = `${siteUrl}/${params.lang}/lic-term-insurance`;
-
-    const breadcrumbSchema = {
-        '@context': 'https://schema.org',
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${params.lang}` },
-          { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${params.lang}/calculators` },
-          { '@type': 'ListItem', position: 3, name: 'LIC Term Insurance', item: pageUrl },
-        ],
-    };
     
     return (
-        <>
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-            <LicTermInsuranceGuideClient 
-                params={params}
-                dictionary={dictionary}
-                pageDict={pageDict}
-            />
-        </>
+        <LicTermInsuranceGuideClient 
+            params={params}
+            dictionary={dictionary}
+            pageDict={pageDict}
+        />
     );
 }
