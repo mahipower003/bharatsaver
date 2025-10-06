@@ -14,6 +14,7 @@ export const licPlans: LicPlanGroup[] = [
         label: "Active LIC Plans",
         plans: [
             { value: "jeevan-utsav-calculator", label: "LIC's Jeevan Utsav (871)" },
+            { value: "lic-jeevan-umang-calculator", label: "LIC's Jeevan Umang (945)" },
             { value: "lic-jeevan-anand-calculator", label: "LIC’s New Jeevan Anand (915)" },
             { value: "lic-single-premium-endowment-calculator", label: "LIC’s Single Premium Endowment Plan (917)" },
             { value: "new_endowment_plan", label: "LIC's New Endowment Plan (914)" },
@@ -22,7 +23,6 @@ export const licPlans: LicPlanGroup[] = [
             { value: "amritbaal", label: "LIC's Amritbaal (874)" },
             { value: "bima_jyoti", label: "LIC's Bima Jyoti (860)" },
             { value: "jeevan_azad", label: "LIC's Jeevan Azad (868)" },
-            { value: "jeevan_umang", label: "LIC's Jeevan Umang (945)" },
             { value: "bima_shree", label: "LIC’s Bima Shree (948)" },
             { value: "new_money_back_20", "label": "LIC's New Money Back Plan- 20 Years (920)" },
             { value: "new_money_back_25", "label": "LIC's New Money Back Plan-25 years (921)" },

@@ -1,0 +1,117 @@
+
+{
+    "meta_title": "Jeevan Umang Calculator (Plan 945) — Premium, Income & Maturity",
+    "meta_description": "Free LIC Jeevan Umang Calculator (Plan 945) — get instant premium, guaranteed income & maturity estimates with sample illustrations and downloadable PDF.",
+    "og_title": "Jeevan Umang Calculator (Plan 945) — Estimate Your Premiums & Guaranteed Income",
+    "og_description": "Use our free online calculator to instantly see your LIC Jeevan Umang premiums, survival benefits, and projected maturity value. Make an informed decision for your family's future.",
+    "h1": "LIC Jeevan Umang Calculator (Plan 945) — Premium, Survival Income & Maturity",
+    "trust_blurb": "<em>As a financial planner for over 20 years, I've seen countless plans. This calculator is built on LIC's official brochure (UIN 512N317V02) to give you the clarity that documents often lack.</em>",
+    "calculator_ui": {
+      "title": "Your Personal Jeevan Umang Calculator (Plan 945)",
+      "description": "Enter your details below to see exactly what your premiums and guaranteed lifetime income could look like.",
+      "inputs": {
+        "age": "Your Current Age",
+        "gender": "Gender",
+        "sumAssured": "Desired Coverage (Basic Sum Assured)",
+        "ppt": "Premium Paying Term",
+        "mode": "Payment Frequency",
+        "riders": {
+          "label": "Optional Riders (Your Safety Net)",
+          "addb": {
+            "label": "Accidental Death & Disability Benefit",
+            "description": "My take: A crucial add-on. Provides an extra payout if an accident causes death or disability. A must-have for the primary earner."
+          },
+          "term": {
+            "label": "Term Assurance Rider",
+            "description": "Think of this as a simple life cover boost. It adds a pure-risk insurance amount on top of your base plan."
+          },
+          "ci": {
+            "label": "Critical Illness Cover",
+            "description": "Provides a lump-sum payment on diagnosis of specified major illnesses, helping manage treatment costs."
+          }
+        }
+      },
+      "outputs": {
+        "title": "Estimated Benefits",
+        "premium": {
+          "title": "Here's What You'll Pay (Premium Estimate)"
+        },
+        "survivalBenefit": {
+            "title": "Your Guaranteed Lifelong Income",
+            "subtitle": "Per year, for life, starting after your PPT ends."
+        },
+        "maturityBenefit": {
+            "title": "Your Legacy (Maturity at 100)",
+            "subtitle": "Sum Assured + Bonus + FAB"
+        },
+        "disclaimer": {
+          "title": "My Honest Disclaimer",
+          "body": "These numbers are based on LIC's official documents for Jeevan Umang (Plan 945). This is a reliable estimate. Your final figures will come from LIC after their underwriting process."
+        }
+      },
+      "calculate_button": "Calculate My Jeevan Umang Benefits",
+      "calculating": "Calculating..."
+    },
+    "sections": [
+      {
+        "id": "quick-answer",
+        "icon": "BarChart",
+        "title": "LIC Jeevan Umang Plan Calculator: The Bottom Line Up Front",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Here are two common scenarios crunched through the <strong>LIC Jeevan Umang Plan Calculator</strong>."
+          },
+          {
+            "type": "table",
+            "headers": ["Your Profile", "Your Goal", "Premium Paying Term (PPT)", "Your Payout (Post-PPT)", "Lump-sum at 100"],
+            "rows": [
+              ["Age 30, ₹10L Cover", "Guaranteed Lifelong Income", "20 Years", "<strong>₹80,000/year for life</strong>", "≈ ₹1.1 Crore"],
+              ["Age 40, ₹25L Cover", "Create a Legacy & Pension", "15 Years", "<strong>₹2,00,000/year for life</strong>", "≈ ₹2.7 Crore"]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "how-it-works",
+        "icon": "Calculator",
+        "title": "How the Jeevan Umang Calculator Works",
+        "description": "Here's the logic from the official LIC brochure (UIN: 512N317V02).",
+        "content": [
+          { "type": "paragraph", "text": "<h3>1. Premium Calculation</h3><p>I start with LIC's base rates and add 'modal loadings' for accurate monthly/quarterly premiums.</p><h3>2. Guaranteed Survival Benefit</h3><p>This is the core feature. The formula is simple: <code>Annual Payout = 8% × Basic Sum Assured</code>. This starts the year after your premium term ends and continues every year until you turn 100.</p><h3>3. Maturity & Death Benefit</h3><p>At age 100 (or on death), the payout is: <code>Maturity Value = Sum Assured + Vested Bonuses + FAB</code>. This calculator uses illustrative bonus rates to project this future value for you.</p>" }
+        ]
+      }
+    ],
+    "conclusion": {
+      "title": "My Final Take: Is Jeevan Umang Right for You?",
+      "body": "Jeevan Umang is a powerful tool for creating a guaranteed, lifelong income stream, functioning almost like a private pension. If you value certainty and want a disciplined savings plan that provides for you in retirement and leaves a legacy, it is one of LIC's best whole-life offerings."
+    },
+    "article_schema": {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "LIC Jeevan Umang Calculator (Plan 945) — Premium, Survival Income & Maturity",
+        "description": "Free LIC Jeevan Umang Calculator (Plan 945) — get instant premium, guaranteed income & maturity estimates with sample illustrations and downloadable PDF.",
+        "author": { "@type": "Person", "name": "Mahesh Chaube, CFP" },
+        "publisher": { "@type": "Organization", "name": "BharatSaver" },
+        "datePublished": "2024-10-16",
+        "dateModified": "2024-10-16"
+    },
+    "faq_schema": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Jeevan Umang (Plan 945)?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Jeevan Umang (Plan 945) is a participating whole-life plan that provides annual survival benefits after the premium paying term and a lump sum on maturity or death. See LIC's official brochure for details." }
+          },
+          {
+            "@type": "Question",
+            "name": "How is guaranteed survival income calculated in Jeevan Umang?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The guaranteed survival income is calculated as 8% of the Basic Sum Assured and is paid out annually after the completion of the premium paying term, until the policyholder reaches 100 years of age." }
+          }
+        ]
+    }
+  }
+  
+  

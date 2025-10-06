@@ -14,6 +14,7 @@ import {
   ShieldCheck,
   Calculator,
   PiggyBank,
+  Gift,
 } from 'lucide-react';
 import type { Calculator as CalculatorType } from '@/lib/types';
 
@@ -29,10 +30,30 @@ export const calculators: CalculatorType[] = [
     image: '/images/lic-premium-calculator.png'
   },
   {
+    slug: 'lic-jeevan-umang-calculator',
+    title: 'LIC Jeevan Umang Calculator',
+    description: 'Estimate premium & survival benefits for LIC\'s Jeevan Umang (Plan 945).',
+    summary: 'Use our free LIC Jeevan Umang calculator to estimate premiums, guaranteed survival benefits, and maturity value. Compare different PPT options and download your results.',
+    icon: ShieldCheck,
+    link_text: 'Calculate Now',
+    lastModified: '2024-10-16',
+    image: '/images/lic-jeevan-umang-calculator.png'
+  },
+  {
+    slug: 'jeevan-utsav-calculator',
+    title: 'Jeevan Utsav Calculator',
+    description: 'Estimate premiums & guaranteed income for LIC\'s Jeevan Utsav (Plan 871).',
+    summary: 'Use our free LIC Jeevan Utsav calculator to estimate premiums, guaranteed additions, Regular vs Flexi Income, and death benefit. Compare PPT 5–16 years and download results.',
+    icon: Gift,
+    link_text: 'Calculate Now',
+    lastModified: '2024-10-15',
+    image: '/images/lic-jeevan-utsav-calculator.png'
+  },
+  {
     slug: 'lic-jeevan-anand-calculator',
     title: 'LIC Jeevan Anand Calculator',
-    description: 'Estimate premium & maturity for LIC\'s New Jeevan Anand (Plan 715).',
-    summary: 'Use our free LIC Jeevan Anand calculator (Plan 715) to estimate premiums, maturity, surrender and paid-up values. Includes worked examples, bonus & FAB inputs, PDF download.',
+    description: 'Estimate premium & maturity for LIC\'s New Jeevan Anand (Plan 915).',
+    summary: 'Use our free LIC Jeevan Anand calculator (Plan 915) to estimate premiums, maturity, surrender and paid-up values. Includes worked examples, bonus & FAB inputs, PDF download.',
     icon: ShieldCheck,
     link_text: 'Calculate Now',
     lastModified: '2024-09-26',
