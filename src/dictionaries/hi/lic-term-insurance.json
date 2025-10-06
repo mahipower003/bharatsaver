@@ -1,11 +1,33 @@
 
 {
     "meta": {
-        "title": "एलआयसी टर्म इन्शुरन्स (2025) — योजना, प्रीमियम, तुलना आणि कसे खरेदी करावे",
-        "description": "संपूर्ण एलआयसी टर्म इन्शुरन्स मार्गदर्शक — टेक-टर्म, डिजी टर्म आणि युवा टर्मची तुलना करा, ₹1 कोटीसाठी नमुना प्रीमियम पहा, आमचे कॅल्क्युलेटर वापरा आणि दावा प्रक्रिया जाणून घ्या. योग्य कव्हर निवडण्यासाठी तज्ञ टिपा."
+        "title": "एलआईसी टर्म इंश्योरेंस (2025): योजनाएं, प्रीमियम, तुलना और कैसे खरीदें",
+        "description": "संपूर्ण एलआईसी टर्म इंश्योरेंस गाइड — टेक-टर्म, डिजी टर्म और युवा टर्म की तुलना करें, ₹1 करोड़ के लिए नमूना प्रीमियम देखें, हमारे कैलकुलेटर का उपयोग करें, और दावा प्रक्रिया जानें।"
     },
-    "h1": "एलआयसी टर्म इन्शुरन्स — अंतिम मार्गदर्शक (2025)",
+    "h1": "एलआईसी टर्म इंश्योरेंस — अंतिम गाइड (2025)",
     "sections": [
+        {
+            "id": "lic-vs-private",
+            "icon": "GitCompareArrows",
+            "title": "LIC vs. Private Insurers: Premium & Feature Comparison",
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": "LIC’s term plans are backed by the corporation’s nationwide network and long track record. For buyers who value offline support, brand recognition, and standardized processes, LIC remains a strong choice — and it now offers online-only plans (Tech-Term, Digi Term) for better pricing and convenience."
+                }
+            ]
+        },
+        {
+            "id": "premium-examples",
+            "icon": "BarChart",
+            "title": "LIC Term Insurance Premium Examples (Calculator)",
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": "We used live premium examples from market aggregators (PolicyBazaar, PolicyX) for common scenarios (₹50L/₹1Cr, ages 25/30/35, smoker/non-smoker). Use the calculator above to get an exact quote for your profile — premiums differ widely by age and product."
+                }
+            ]
+        },
         {
             "id": "faq",
             "icon": "HelpCircle",

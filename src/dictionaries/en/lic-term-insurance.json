@@ -1,8 +1,8 @@
 
 {
     "meta": {
-        "title": "LIC Term Insurance (2025): Plans, Premiums & Calculator",
-        "description": "Complete LIC Term Insurance guide — compare Tech-Term, Digi Term & Jeevan Kiran, see sample premiums for ₹1 Cr cover, use our calculator, and learn the claim process."
+        "title": "LIC Term Insurance Guide (2025): Plans, Premiums, Calculator",
+        "description": "Complete LIC Term Insurance guide — Compare Tech-Term & Jeevan Kiran, see ₹1Cr premiums with our calculator, and learn the claim process. Expert tips to choose the right cover."
     },
     "h1": "LIC Term Insurance — The Ultimate Guide (2025)",
     "sections": [
@@ -70,9 +70,9 @@
             "icon": "BarChart",
             "title": "LIC Term Insurance Premium Examples (Calculator)",
             "content": [
-                 {
+                {
                     "type": "paragraph",
-                    "text": "The best way to understand the cost is to see it. Use our interactive LIC term insurance premium calculator below to get an instant estimate for your profile. These rates are based on real-world examples from online aggregators like PolicyBazaar for a standard, healthy individual."
+                    "text": "We used live premium examples from market aggregators (PolicyBazaar, PolicyX) for common scenarios (₹50L/₹1Cr, ages 25/30/35, smoker/non-smoker). Use the calculator above to get an exact quote for your profile — premiums differ widely by age and product."
                 },
                 {
                     "type": "calculator"
@@ -84,6 +84,10 @@
             "icon": "GitCompareArrows",
             "title": "LIC vs. Private Insurers: Premium & Feature Comparison",
             "content": [
+                {
+                    "type": "paragraph",
+                    "text": "LIC’s term plans are backed by the corporation’s nationwide network and long track record. For buyers who value offline support, brand recognition, and standardized processes, LIC remains a strong choice — and it now offers online-only plans (Tech-Term, Digi Term) for better pricing and convenience."
+                },
                 { "type": "table", "headers": ["Feature", "LIC (e.g., Tech-Term)", "Top Private Insurers (e.g., HDFC, ICICI)"], "rows": [
                     ["Premium Cost", "Generally 15-30% higher", "More competitive, often lower"],
                     ["Claim Settlement Ratio (CSR)", "Very High (98.52% for FY2022-23)", "High (97-99% range)"],

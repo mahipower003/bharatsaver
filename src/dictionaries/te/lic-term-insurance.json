@@ -7,6 +7,28 @@
     "h1": "ఎల్‌ఐసి టర్మ్ ఇన్సూరెన్స్ — అంతిమ గైడ్ (2025)",
     "sections": [
         {
+            "id": "lic-vs-private",
+            "icon": "GitCompareArrows",
+            "title": "LIC vs. Private Insurers: Premium & Feature Comparison",
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": "LIC’s term plans are backed by the corporation’s nationwide network and long track record. For buyers who value offline support, brand recognition, and standardized processes, LIC remains a strong choice — and it now offers online-only plans (Tech-Term, Digi Term) for better pricing and convenience."
+                }
+            ]
+        },
+        {
+            "id": "premium-examples",
+            "icon": "BarChart",
+            "title": "LIC Term Insurance Premium Examples (Calculator)",
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": "We used live premium examples from market aggregators (PolicyBazaar, PolicyX) for common scenarios (₹50L/₹1Cr, ages 25/30/35, smoker/non-smoker). Use the calculator above to get an exact quote for your profile — premiums differ widely by age and product."
+                }
+            ]
+        },
+        {
             "id": "faq",
             "icon": "HelpCircle",
             "title": "Top Questions People Ask About LIC Term Insurance",
