@@ -1,16 +1,16 @@
 
 {
     "meta": {
-        "title": "एलआईसी टर्म इंश्योरेंस (2025): योजनाएं, प्रीमियम, तुलना और कैसे खरीदें",
-        "description": "एलआईसी टर्म इंश्योरेंस के लिए पूर्ण 2025 गाइड — टेक-टर्म, जीवन अमर और जीवन किरण। प्रीमियम उदाहरण, ऑनलाइन खरीदने के चरण, दावा प्रक्रिया और अक्सर पूछे जाने वाले प्रश्न।"
+        "title": "एलआईसी टर्म इंश्योरेंस प्लान (2025) — पूरी उत्पाद सूची और संक्षिप्त गाइड",
+        "description": "एलआईसी टर्म इंश्योरेंस के लिए संपूर्ण 2025 गाइड — टेक-टर्म, जीवन अमर और जीवन किरण। प्रीमियम उदाहरण, ऑनलाइन खरीदने के चरण, दावा प्रक्रिया और अक्सर पूछे जाने वाले प्रश्न।"
     },
     "h1": "एलआईसी टर्म इंश्योरेंस — अंतिम गाइड (2025)",
-    "byline": "महेश चौबे, CFP द्वारा — अंतिम समीक्षा: जनवरी 2025<br>लवीना विजayi द्वारा समीक्षित — भारतसेवर संपादकीय टीम",
+    "byline": "महेश चौबे, CFP द्वारा — अंतिम समीक्षा: जनवरी 2025<br>लवीना विजई द्वारा समीक्षित — भारतसेवर संपादकीय टीम",
     "sections": [
         {
             "id": "quick-summary",
             "icon": "FileText",
-            "title": "त्वरित सारांश: आपके लिए कौन सी एलआईसी टर्म योजना सबसे अच्छी है?",
+            "title": "त्वरित सारांश — आपके लिए कौन सी एलआईसी टर्म बीमा योजना सबसे अच्छी है?",
             "content": [
                 {
                     "type": "paragraph",
@@ -21,11 +21,11 @@
         {
             "id": "premium-examples",
             "icon": "BarChart",
-            "title": "एलआईसी टर्म इंश्योरेंस प्रीमियम कैलकुलेटर",
+            "title": "एलआईसी टर्म बीमा प्रीमियम कैलकुलेटर",
             "content": [
-                {
+                 {
                     "type": "paragraph",
-                    "text": "<p>Get a free LIC term quote in 2 minutes — enter age & desired cover. No obligation.</p><p>We used live premium examples from market aggregators (PolicyBazaar, PolicyX) for common scenarios. This <strong>lic term insurance calculator</strong> helps you get an exact quote for your profile—premiums for a <strong>lic term insurance 1 crore</strong> policy differ widely by age and product.</p>"
+                    "text": "<p>2 मिनट में एक मुफ्त एलआईसी टर्म कोट प्राप्त करें — आयु और वांछित कवर दर्ज करें। कोई बाध्यता नहीं।</p><p>We used live premium examples from market aggregators (PolicyBazaar, PolicyX) for common scenarios. This <strong>lic term insurance calculator</strong> helps you get an exact quote for your profile—premiums for a <strong>lic term insurance 1 crore</strong> policy differ widely by age and product.</p>"
                 },
                 {
                     "type": "calculator"
@@ -35,18 +35,18 @@
         {
             "id": "lic-term-plans",
             "icon": "ShieldCheck",
-            "title": "कौन सी एलआईसी टर्म योजनाएं मौजूद हैं? (पूर्ण उत्पाद सूची)",
-            "content": [
+            "title": "एलआईसी टर्म बीमा योजनाएं (2025) — पूरी उत्पाद सूची और संक्षिप्त गाइड",
+             "content": [
                 {
                     "type": "structured_content",
                     "items": [
-                        { "title": "1. एलआईसी का नया टेक-टर्म (प्लान नं. 954, UIN: 512N339V02)", "text": "<strong>Type:</strong> Online-only, pure term (non-participating)<br><strong>Key benefit:</strong> Lowest LIC premiums thanks to online rebate.<br><strong>Eligibility:</strong> Age 18–65; policy term 10–40 years.<br><strong>Best for:</strong> Self-directed, tech-savvy buyers who want cheapest pure protection from LIC." },
-                        { "title": "2. एलआईसी का नया जीवन अमर (प्लान नं. 955, UIN: 512N338V02)", "text": "<strong>Type:</strong> Offline equivalent of Tech-Term, sold via agents.<br><strong>Key benefit:</strong> Agent support and servicing convenience.<br><strong>Best for:</strong> Buyers who value face-to-face help for application & servicing." },
-                        { "title": "3. सरल जीवन बीमा (प्लान नं. 859, UIN: 512N342V02)", "text": "<strong>Type:</strong> Standardized pure-term product mandated by IRDAI for simplicity.<br><strong>Key benefit:</strong> Simple features, accessible; usually covers up to ₹25 Lakh.<br><strong>Best for:</strong> First-time buyers and low-cover needs." },
-                        { "title": "4. एलआईसी जीवन किरण (प्लान नं. 870, UIN: 512N359V02) — ROP", "text": "<strong>Type:</strong> Return-of-Premium term plan.<br><strong>Key benefit:</strong> All base premiums returned on survival (excl. taxes, rider premiums).<br><strong>Best for:</strong> Highly risk-averse buyers who want a savings-like result — but be aware of the high cost." },
-                        { "title": "5. भाग्य लक्ष्मी (प्लान नं. 919, UIN: 512N299V02)", "text": "<strong>Type:</strong> Non-participating, limited payment protection for low-income households.<br><strong>Best for:</strong> Rural / economically weaker segments." },
-                        { "title": "6. नया जीवन मंगल (प्लान नं. 940, UIN: 512N308V02)", "text": "<strong>Type:</strong> Micro-insurance with ROP element; protection + small savings.<br><strong>Best for:</strong> Micro-insurance segment wanting a small savings component." },
-                        { "title": "Note: Some legacy plans (e.g., Anmol Jeevan II) have been withdrawn or replaced; always check LIC’s product brochure for current availability.", "text": "" }
+                        { "title": "1. एलआईसी न्यू टेक-टर्म — प्लान नंबर 954 (UIN: 512N339V02)", "text": "<strong>प्रकार:</strong> ऑनलाइन-केवल, शुद्ध अवधि (गैर-भागीदारी)<br><strong>मुख्य लाभ:</strong> ऑनलाइन छूट के कारण सबसे कम एलआईसी प्रीमियम।<br><strong>पात्रता:</strong> आयु 18–65; पॉलिसी अवधि 10–40 वर्ष।<br><strong>किसके लिए सर्वश्रेष्ठ:</strong> स्व-निर्देशित, तकनीक-प्रेमी खरीदार जो एलआईसी से सबसे सस्ती शुद्ध सुरक्षा चाहते हैं।" },
+                        { "title": "2. एलआईसी न्यू जीवन अमर — प्लान नंबर 955 (UIN: 512N338V02)", "text": "<strong>प्रकार:</strong> टेक-टर्म का ऑफ़लाइन समकक्ष, एजेंटों के माध्यम से बेचा जाता है।<br><strong>मुख्य लाभ:</strong> एजेंट समर्थन और सर्विसिंग सुविधा।<br><strong>किसके लिए सर्वश्रेष्ठ:</strong> आवेदन और सर्विसिंग के लिए आमने-सामने मदद को महत्व देने वाले खरीदार।" },
+                        { "title": "3. सरल जीवन बीमा — प्लान नंबर 859 (UIN: 512N342V02)", "text": "<strong>प्रकार:</strong> सरलता के लिए IRDAI द्वारा अनिवार्य मानकीकृत शुद्ध-अवधि उत्पाद।<br><strong>मुख्य लाभ:</strong> सरल सुविधाएँ, सुलभ; आमतौर पर ₹25 लाख तक कवर करता है।<br><strong>किसके लिए सर्वश्रेष्ठ:</strong> पहली बार खरीदने वाले और कम-कवर की जरूरतों वाले।" },
+                        { "title": "4. एलआईसी जीवन किरण — प्लान नंबर 870 (UIN: 512N359V02) — ROP", "text": "<strong>प्रकार:</strong> प्रीमियम-वापसी अवधि योजना।<br><strong>मुख्य लाभ:</strong> जीवित रहने पर सभी आधार प्रीमियम वापस (करों, राइडर प्रीमियम को छोड़कर)।<br><strong>किसके लिए सर्वश्रेष्ठ:</strong> बचत-जैसे परिणाम चाहने वाले अत्यधिक जोखिम-से-बचने वाले खरीदार — लेकिन उच्च लागत से सावधान रहें।" },
+                        { "title": "5. भाग्य लक्ष्मी — प्लान नंबर 919 (UIN: 512N299V02)", "text": "<strong>प्रकार:</strong> कम आय वाले परिवारों के लिए गैर-भागीदारी, सीमित भुगतान सुरक्षा।<br><strong>किसके लिए सर्वश्रेष्ठ:</strong> ग्रामीण/आर्थिक रूप से कमजोर वर्ग।" },
+                        { "title": "6. न्यू जीवन मंगल — प्लान नंबर 940 (UIN: 512N308V02)", "text": "<strong>प्रकार:</strong> ROP तत्व के साथ सूक्ष्म-बीमा; सुरक्षा + छोटी बचत।<br><strong>किसके लिए सर्वश्रेष्ठ:</strong> एक छोटा बचत घटक चाहने वाला सूक्ष्म-बीमा खंड।" },
+                        { "title": "नोट: कुछ विरासत योजनाएं (जैसे, अनमोल जीवन II) वापस ले ली गई हैं या बदल दी गई हैं; हमेशा वर्तमान उपलब्धता के लिए एलआईसी के उत्पाद ब्रोशर की जांच करें।", "text": "" }
                     ]
                 }
             ]
@@ -54,16 +54,17 @@
         {
             "id": "key-features",
             "icon": "CheckCircle",
-            "title": "एलआईसी टर्म इंश्योरेंस की मुख्य विशेषताएं और लाभ",
+            "title": "एलआईसी टर्म बीमा की मुख्य विशेषताएं और लाभ",
             "content": [
                 {
                     "type": "list",
                     "items": [
-                        "<strong>उच्च कवर, किफायती प्रीमियम:</strong> एलआईसी टर्म योजनाएं ₹1 करोड़ और उससे अधिक तक की पर्याप्त बीमा राशि प्रदान करती हैं, जो अक्सर प्रतिस्पर्धी प्रीमियम पर होती हैं।",
-                        "<strong>भुगतान विकल्प:</strong> नामांकित व्यक्ति मृत्यु लाभ को एकमुश्त, नियमित आय, या दोनों के संयोजन के रूप में प्राप्त करना चुन सकता है।",
-                        "<strong>राइडर लाभ:</strong> आकस्मिक मृत्यु, विकलांगता या गंभीर बीमारी के लिए वैकल्पिक राइडर्स के साथ अपनी सुरक्षा बढ़ाएं।",
-                        "<strong>कर लाभ:</strong> भुगतान किए गए प्रीमियम धारा 80C के तहत कर कटौती के लिए पात्र हैं, और नामांकित व्यक्ति को भुगतान किया गया मृत्यु लाभ धारा 10(10D) के तहत कर-मुक्त है।",
-                        "<strong>एकाधिक भुगतान शर्तें:</strong> अपनी वित्तीय क्षमता के अनुसार सिंगल, रेग्युलर, या लिमिटेड प्रीमियम पेमेंट टर्म में से चुनें।"
+                        "<strong>उच्च बीमा राशि:</strong> एलआईसी टर्म योजनाएं ₹1 करोड़ और उससे अधिक तक की पर्याप्त कवरेज राशि प्रदान करती हैं, यह सुनिश्चित करते हुए कि आपके परिवार की वित्तीय ज़रूरतें पूरी तरह से पूरी हों।",
+                        "<strong>सस्ती प्रीमियम:</strong> धूम्रपान न करने वाले के लिए, एक उच्च-मूल्य वाली <strong>1 करोड़ रुपये की एलआईसी टर्म बीमा</strong> पॉलिसी बहुत प्रतिस्पर्धी मासिक प्रीमियम पर सुरक्षित की जा सकती है, खासकर जब ऑनलाइन खरीदी जाती है।",
+                        "<strong>लचीले भुगतान विकल्प:</strong> नामांकित व्यक्ति मृत्यु लाभ को एकमुश्त, नियमित आय के रूप में, या दोनों के संयोजन के रूप में प्राप्त करना चुन सकते हैं, जो वित्त का प्रबंधन करने के लिए लचीलापन प्रदान करता है।",
+                        "<strong>राइडर उपलब्धता:</strong> आप आकस्मिक मृत्यु, विकलांगता, या गंभीर बीमारी के लिए राइडर्स जोड़कर अपनी सुरक्षा बढ़ा सकते हैं।",
+                        "<strong>कर लाभ:</strong> भुगतान किए गए प्रीमियम धारा 80C के तहत कर कटौती के लिए पात्र हैं, और नामांकित व्यक्ति को मृत्यु लाभ भुगतान धारा 10(10D) के तहत कर-मुक्त है।",
+                        "<strong>एकाधिक प्रीमियम भुगतान शर्तें:</strong> अपनी वित्तीय क्षमता के अनुरूप सिंगल, रेगुलर, या लिमिटेड प्रीमियम भुगतान शर्तों में से चुनें।"
                     ]
                 }
             ]
@@ -103,12 +104,12 @@
                     "type": "paragraph",
                     "text": "<p>LIC combines a nationwide service network and a long history of paying claims, making it the natural choice for buyers who value offline support and brand trust. Recent online plans (Tech-Term, Digi Term) now offer competitive pricing for self-service buyers.</p>"
                 },
-                { "type": "table", "headers": ["फ़ीचर", "एलआईसी टेक-टर्म", "शीर्ष निजी प्रतियोगी A", "शीर्ष निजी प्रतियोगी B"], "rows": [
-                    ["प्रीमियम रेंज", "स्पर्धात्मक, विशेषतः ऑनलाइन", "अत्यधिक स्पर्धात्मक, अनेकदा कमी", "स्पर्धात्मक, विविध राइडर्ससह"],
-                    ["दावा निपटारा गुणोत्तर", "98.5%+ (वित्त वर्ष 22-23)", "~98-99%", "~97-99%"],
-                    ["विश्वास आणि पोहोच", "अद्वितीय; संपूर्ण भारतात शाखा", "मजबूत; मेट्रो-केंद्रित", "वाढत आहे; डिजिटल-फर्स्ट"],
-                    ["फायदे", "उच्च विश्वास, ऑफलाइन सेवा", "कमी प्रीमियम, नाविन्यपूर्ण वैशिष्ट्ये", "लवचिक रायडर्स, चांगला डिजिटल अनुभव"],
-                    ["तोटे", "ऐतिहासिकदृष्ट्या उच्च प्रीमियम", "शाखा नेटवर्क कमी व्यापक असू शकते", "ब्रँडची ओळख एलआयसी इतकी मजबूत नसू शकते"]
+                { "type": "table", "headers": ["फ़ीचर", "एलआईसी टेक-टर्म", "शीर्ष निजी प्रतियोगी ए", "शीर्ष निजी प्रतियोगी बी"], "rows": [
+                    ["प्रीमियम लागत", "आम तौर पर प्रतिस्पर्धी, विशेष रूप से ऑनलाइन योजनाओं के लिए।", "अक्सर बहुत प्रतिस्पर्धी, कम हो सकता है।", "प्रतिस्पर्धी, विशेष रूप से कल्याण-जुड़े छूट के साथ।"],
+                    ["दावा निपटान अनुपात (सीएसआर)", "बहुत अधिक (वित्त वर्ष 2022-23 के लिए 98.52%)", "उच्च (97-99% रेंज)", "उच्च (97-99% रेंज)"],
+                    ["विश्वास कारक", "उच्चतम (सरकार समर्थित)", "उच्च (आईआरडीएआई द्वारा विनियमित)", "उच्च"],
+                    ["सुविधाएँ और राइडर्स", "मानक विकल्प (AD&DB, CI)", "अक्सर अधिक नवीन सुविधाएँ", "लचीले राइडर्स की विस्तृत श्रृंखला"],
+                    ["खरीद प्रक्रिया", "ऑनलाइन सुधार, अभी भी मजबूत ऑफ़लाइन", "उत्कृष्ट, निर्बाध ऑनलाइन अनुभव", "मजबूत डिजिटल-प्रथम अनुभव"]
                 ]}
             ]
         },
@@ -117,7 +118,7 @@
             "icon": "HelpCircle",
             "title": "Riders & Add-ons — What to Consider (and What to Avoid)",
             "content": [
-                { "type": "structured_content", "items": [
+                 { "type": "structured_content", "items": [
                     {"title":"Worth considering", "text": "<ul><li><strong>Accidental Death & Disability (AD&DB):</strong> inexpensive and high incremental protection.</li><li><strong>Critical Illness (CI):</strong> useful if you don’t have robust health cover.</li></ul>"},
                     {"title":"Use caution", "text":"<ul><li><strong>Return-of-Premium (ROP):</strong> high cost; financially often inferior to buying pure term + investing the difference.</li><li><strong>Excessive layering of riders:</strong> can push your monthly outlay much higher; buy only what materially improves your family’s protection.</li></ul>"}
                 ]}
@@ -128,7 +129,7 @@
             "icon": "ShieldCheck",
             "title": "Claim Settlement — Step-by-Step & Timelines",
             "content": [
-                 { "type": "structured_content", "items": [
+                { "type": "structured_content", "items": [
                     {"title": "Intimation", "text":"Nominee files claim at servicing branch with death certificate, original policy & KYC."},
                     {"title": "Verification", "text":"LIC verifies documents; may request hospital records or post-mortem if required."},
                     {"title": "IRDAI timelines", "text": "Non-investigated claims to be settled within 30 days of receiving all documents; investigations can extend timelines (up to ~120 days for complex cases)."},
@@ -139,17 +140,17 @@
         {
             "id": "how-to-buy",
             "icon": "Users",
-            "title": "एलआईसी टर्म प्लान ऑनलाइन कैसे खरीदें - त्वरित चरण",
+            "title": "How to Buy LIC Term Insurance Online — Quick Steps",
             "content": [
                 {
                     "type": "steps",
                     "items": [
-                        { "title": "प्रीमियम की गणना करें", "description": "बीमा राशि, आयु और अवधि निर्धारित करने के लिए कैलकुलेटर का उपयोग करें।" },
-                        { "title": "एलआईसी ई-सेवा पोर्टल पर जाएं", "description": "नया टेक-टर्म विकल्प चुनें और आवेदन शुरू करें।" },
-                        { "title": "फॉर्म भरें", "description": "व्यक्तिगत, स्वास्थ्य और नामांकित व्यक्ति का विवरण सटीक रूप से प्रदान करें।" },
-                        { "title": "दस्तावेज़ अपलोड करें और भुगतान करें", "description": "पैन/आधार और आवश्यक दस्तावेज़ अपलोड करें; पहला प्रीमियम भुगतान करें।" },
-                        { "title": "चिकित्सा परीक्षा पूरी करें", "description": "एलआईसी द्वारा अनुरोधित कोई भी चिकित्सा परीक्षण पूरा करें।" },
-                        { "title": "पॉलिसी दस्तावेज़ प्राप्त करें", "description": "जारी होने के बाद डिजिटल/भौतिक रूप से पॉलिसी दस्तावेज़ प्राप्त करें।" }
+                        { "title": "Calculate Premium", "description": "Use the calculator to set sum assured, age and term." },
+                        { "title": "Visit LIC e-services portal", "description": "Choose the New Tech-Term option and start application." },
+                        { "title": "Fill the form", "description": "Provide personal, health & nominee details accurately." },
+                        { "title": "Upload Documents & Pay", "description": "Upload PAN/Aadhaar and necessary documents; pay the first premium." },
+                        { "title": "Complete Medical Exam", "description": "Complete any medical tests requested by LIC." },
+                        { "title": "Receive Policy Documents", "description": "Receive policy documents digitally / physically after issuance." }
                     ]
                 }
             ]
@@ -157,16 +158,16 @@
         {
             "id": "faq",
             "icon": "HelpCircle",
-            "title": "अक्सर पूछे जाने वाले प्रश्न (संक्षिप्त उत्तर)",
+            "title": "Frequently Asked Questions (Short Answers)",
             "content": [
                 {
                     "type": "faq",
                     "items": [
-                        { "q": "क्या मैं एलआईसी टर्म इंश्योरेंस ऑनलाइन खरीद सकता हूं?", "a": "हां — टेक-टर्म और डिजी টার্ম এলआईसी ई-सेवाओं के माध्यम से उपलब्ध हैं।" },
-                        { "q": "30 वर्षीय धूम्रपान न करने वाले के लिए ₹1 करोड़ के लिए कितना प्रीमियम?", "a": "योजना/मोड के अनुसार भिन्न होता है — कैलकुलेटर का उपयोग करें।" },
-                        { "q": "क्या एलआईसी दावों का विश्वसनीय रूप से भुगतान करती है?", "a": "एलआईसी बहुत उच्च सीएसआर की रिपोर्ट करती है; वार्षिक रिपोर्ट में नवीनतम संख्याओं को मान्य करें।" },
-                        { "q": "क्या मैं नामांकित व्यक्ति को ऑनलाइन बदल सकता हूं?", "a": "पॉलिसी सर्विसिंग नियम भिन्न होते हैं — कुछ अनुरोधों के लिए शाखा यात्रा की आवश्यकता हो सकती है।" },
-                        { "q": "यदि मैं प्रीमियम का भुगतान करना बंद कर दूं तो क्या होगा?", "a": "पॉलिसी समाप्त हो सकती है; पुनरुद्धार/भुगतान विकल्प पॉलिसी की शर्तों पर निर्भर करते हैं।" }
+                        { "q": "Can I buy LIC term insurance online?", "a": "Yes — Tech-Term & Digi Term available via LIC e-services." },
+                        { "q": "How much premium for ₹1 Crore for a 30-yr-old non-smoker?", "a": "Varies by plan/mode — use the calculator." },
+                        { "q": "Does LIC pay claims reliably?", "a": "LIC reports very high CSR; validate the latest numbers in the annual report." },
+                        { "q": "Can I change the nominee online?", "a": "Policy servicing rules vary — some requests may require branch visit." },
+                        { "q": "What happens if I stop paying premiums?", "a": "Policy may lapse; revival/paid-up options depend on the policy terms." }
                     ]
                 }
             ]
@@ -176,8 +177,8 @@
             "icon": "BookUser",
             "title": "Real Case Studies & Customer Experiences",
             "content": [
-                { "type": "paragraph", "text": "<strong>Case Study 1: Raj, the Early Planner.</strong> Raj, a 28-year-old software engineer, bought a ₹1 Crore LIC term insurance plan until age 65. His premium was just ₹1,200/month. By buying early, he locked in a low rate for his entire working life." },
-                { "type": "paragraph", "text": "<strong>Case Study 2: Sunita, the Late Starter.</strong> Sunita, a 45-year-old business owner, realized she was underinsured. She opted for a ₹1.5 Crore cover until age 70. Her premium was higher, around ₹4,500/month, but it gave her immense peace of mind." }
+                { "type": "paragraph", "text": "<strong>केस स्टडी 1: राज, शुरुआती योजनाकार।</strong> राज, मुंबई के एक 28 वर्षीय सॉफ्टवेयर इंजीनियर, ने 65 वर्ष की आयु तक ₹1 करोड़ का एलआईसी टेक-टर्म प्लान खरीदा। उसका प्रीमियम सिर्फ ₹1,200/माह था। जल्दी खरीदकर, उसने अपने पूरे कामकाजी जीवन के लिए कम दर को लॉक कर लिया।" },
+                { "type": "paragraph", "text": "<strong>केस स्टडी 2: सुनीता, देर से शुरू करने वाली।</strong> सुनीता, दिल्ली की एक 45 वर्षीय व्यवसायी, ने महसूस किया कि वह कम बीमित थी। उसने 70 वर्ष की आयु तक ₹1.5 करोड़ के कवर का विकल्प चुना। उसका प्रीमियम अधिक था, लगभग ₹4,500/माह, लेकिन यह जानकर कि उसका परिवार सुरक्षित है, उसे अपार मानसिक शांति मिली।" }
             ]
         },
         {
@@ -185,8 +186,8 @@
             "icon": "Star",
             "title": "Conclusion & Recommended Next Step",
             "content": [
-                { "type": "paragraph", "text": "LIC term insurance offers an unparalleled combination of trust and security. For most users, the LIC Tech-Term plan offers the best balance of low cost and high trust." },
-                { "type": "cta_card", "title": "क्या आप अपने परिवार के भविष्य को सुरक्षित करने के लिए तैयार हैं?", "description": "We’ll compare LIC Tech-Term quotes and send a customized estimate. Privacy: we never share your number without consent.", "buttons": [{ "text": "मुफ्त कोट प्राप्त करें", "href": "https://www.policybazaar.com/life-insurance/term-insurance/" }]}
+                { "type": "paragraph", "text": "एलआईसी टर्म बीमा विश्वास और सुरक्षा का एक अद्वितीय संयोजन प्रदान करता है। अधिकांश उपयोगकर्ताओं के लिए, एलआईसी टेक-टर्म योजना कम लागत और उच्च विश्वास का सबसे अच्छा संतुलन प्रदान करती है।" },
+                { "type": "cta_card", "title": "क्या आप अपने परिवार के भविष्य को सुरक्षित करने के लिए तैयार हैं?", "description": "We’ll compare LIC Tech-Term quotes and send a customized estimate. Privacy: we never share your number without consent.", "buttons": [{ "text": "मुफ्त उद्धरण प्राप्त करें", "href": "https://www.policybazaar.com/life-insurance/term-insurance/" }]}
             ]
         }
     ],
@@ -194,23 +195,23 @@
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
-          { "@type": "Question", "name": "What is the LIC Tech-Term Plan and how is it different?", "acceptedAnswer": { "@type": "Answer", "text": "LIC Tech-Term is an online-only pure term plan sold directly by LIC with online rebates; it offers low premiums compared with LIC's offline equivalents." } },
-          { "@type": "Question", "name": "Can I buy LIC term insurance online?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. LIC offers online purchase for Tech-Term and Digi Term via the LIC e-services portal. You must provide KYC docs and may need a medical exam." } },
-          { "@type": "Question", "name": "How much premium for ₹1 Crore LIC term insurance for a 30-year-old non-smoker?", "acceptedAnswer": { "@type": "Answer", "text": "Premiums vary by plan and mode. Use the calculator on this page for an exact quote, or compare samples from leading aggregators." } },
-          { "@type": "Question", "name": "Does LIC settle term claims reliably?", "acceptedAnswer": { "@type": "Answer", "text": "LIC has historically high claim settlement ratios and strong solvency; always check the latest IRDAI/annual report numbers when deciding." } },
-          { "@type": "Question", "name": "Are return-of-premium (ROP) plans worth it?", "acceptedAnswer": { "@type": "Answer", "text": "ROP plans return premiums on survival but cost much more. Financially, buying a cheap term plan and investing the difference usually gives higher returns." } }
+            { "@type": "Question", "name": "एलआईसी टेक-टर्म प्लान क्या है और यह कैसे अलग है?", "acceptedAnswer": { "@type": "Answer", "text": "एलआईसी टेक-टर्म ऑनलाइन छूट के साथ सीधे एलआईसी द्वारा बेचा जाने वाला एक ऑनलाइन-केवल शुद्ध टर्म प्लान है; यह एलआईसी के ऑफ़लाइन समकक्षों की तुलना में कम प्रीमियम प्रदान करता है।" } },
+            { "@type": "Question", "name": "क्या मैं एलआईसी टर्म बीमा ऑनलाइन खरीद सकता हूँ?", "acceptedAnswer": { "@type": "Answer", "text": "हाँ। एलआईसी ई-सेवा पोर्टल के माध्यम से टेक-टर्म और डिजी टर्म के लिए ऑनलाइन खरीद की पेशकश करता है। आपको केवाईसी दस्तावेज प्रदान करने होंगे और चिकित्सा जांच की आवश्यकता हो सकती है।" } },
+            { "@type": "Question", "name": "30 वर्षीय धूम्रपान न करने वाले के लिए ₹1 करोड़ एलआईसी टर्म बीमा के लिए कितना प्रीमियम है?", "acceptedAnswer": { "@type": "Answer", "text": "प्रीमियम योजना और मोड के अनुसार भिन्न होते हैं। एक सटीक उद्धरण के लिए इस पृष्ठ पर कैलकुलेटर का उपयोग करें, या प्रमुख एग्रीगेटर्स से नमूनों की तुलना करें।" } },
+            { "@type": "Question", "name": "क्या एलआईसी टर्म दावों का विश्वसनीय रूप से निपटान करती है?", "acceptedAnswer": { "@type": "Answer", "text": "एलआईसी के पास ऐतिहासिक रूप से उच्च दावा निपटान अनुपात और मजबूत सॉल्वेंसी है; निर्णय लेते समय हमेशा नवीनतम आईआरडीएआई/वार्षिक रिपोर्ट संख्याओं की जांच करें।" } },
+            { "@type": "Question", "name": "क्या प्रीमियम-वापसी (ROP) योजनाएं इसके लायक हैं?", "acceptedAnswer": { "@type": "Answer", "text": "ROP योजनाएं जीवित रहने पर प्रीमियम वापस करती हैं लेकिन बहुत अधिक खर्च होती हैं। आर्थिक रूप से, एक सस्ता टर्म प्लान खरीदना और अंतर का निवेश करना आमतौर पर उच्च रिटर्न देता है।" } }
         ]
     },
     "how_to_schema": {
         "@context":"https://schema.org",
         "@type":"HowTo",
-        "name":"How to buy LIC Tech-Term online",
+        "name":"एलआईसी टेक-टर्म ऑनलाइन कैसे खरीदें",
         "step":[
-          {"@type":"HowToStep","name":"Calculate premium","text":"Use the calculator to set sum assured, age and term."},
-          {"@type":"HowToStep","name":"Visit LIC e-services portal","text":"Choose the New Tech-Term option and start application."},
-          {"@type":"HowToStep","name":"Fill the form","text":"Provide personal, health and nominee details accurately."},
-          {"@type":"HowToStep","name":"Upload documents and pay","text":"Upload PAN/Aadhaar and pay the first premium online."},
-          {"@type":"HowToStep","name":"Medical check (if required)","text":"Complete any medical tests requested by LIC to finalize cover."}
+          {"@type":"HowToStep","name":"प्रीमियम की गणना करें","text":"बीमा राशि, आयु और अवधि निर्धारित करने के लिए कैलकुलेटर का उपयोग करें।"},
+          {"@type":"HowToStep","name":"एलआईसी ई-सेवा पोर्टल पर जाएं","text":"न्यू टेक-टर्म विकल्प चुनें और आवेदन शुरू करें।"},
+          {"@type":"HowToStep","name":"फॉर्म भरें","text":"व्यक्तिगत, स्वास्थ्य और नामांकित व्यक्ति का विवरण सटीक रूप से प्रदान करें।"},
+          {"@type": "HowToStep", "name": "दस्तावेज़ अपलोड करें और भुगतान करें", "text": "पैन/आधार और आवश्यक दस्तावेज़ अपलोड करें; पहला प्रीमियम ऑनलाइन भुगतान करें।"},
+          {"@type": "HowToStep", "name": "चिकित्सा जांच (यदि आवश्यक हो)", "text": "कवर को अंतिम रूप देने के लिए एलआईसी द्वारा अनुरोधित किसी भी चिकित्सा परीक्षण को पूरा करें।"}
         ]
     },
     "article_schema": {
