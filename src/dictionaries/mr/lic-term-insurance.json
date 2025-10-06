@@ -50,5 +50,8 @@
                 }
             ]
         }
-    ]
+    ],
+    "faq_schema": {},
+    "how_to_schema": {},
+    "article_schema": {}
 }

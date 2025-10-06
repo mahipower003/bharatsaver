@@ -13,9 +13,12 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
     const pageUrl = `${siteUrl}/${params.lang}/lic-term-insurance`;
     
-    const schemas = [];
-    if (pageDict.faq_schema) schemas.push(pageDict.faq_schema);
-    if (pageDict.how_to_schema) schemas.push(pageDict.how_to_schema);
+    // --- SEO Optimized Metadata ---
+    const title = "LIC Term Insurance Guide (2025): Plans, Premiums, Calculator";
+    const description = "Complete LIC Term Insurance guide — Compare Tech-Term & Jeevan Kiran, see ₹1Cr premiums with our calculator, and learn the claim process. Expert tips to choose the right cover.";
+
+    const faqSchema = pageDict.faq_schema;
+    const howToSchema = pageDict.how_to_schema;
     
     const articleSchema = {
         ...pageDict.article_schema,
@@ -23,7 +26,6 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         author: { ...pageDict.article_schema.author, url: `${siteUrl}/${params.lang}/author/mahesh-chaube`},
         publisher: { ...pageDict.article_schema.publisher, logo: { "@type": "ImageObject", "url": `${siteUrl}/icon.svg`}}
     };
-    schemas.push(articleSchema);
 
     const breadcrumbSchema = {
         '@context': 'https://schema.org',
@@ -34,11 +36,12 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
           { '@type': 'ListItem', position: 3, name: 'LIC Term Insurance Guide', item: pageUrl },
         ],
     };
-    schemas.push(breadcrumbSchema);
+    
+    const schemas = [faqSchema, howToSchema, articleSchema, breadcrumbSchema];
 
     return {
-        title: pageDict.meta.title,
-        description: pageDict.meta.description,
+        title: title,
+        description: description,
         alternates: {
             canonical: `${siteUrl}/en/lic-term-insurance`,
             languages: i18nConfig.locales.reduce((acc, locale) => {
@@ -47,8 +50,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
             }, {} as Record<string, string>),
         },
         openGraph: {
-          title: pageDict.meta.title,
-          description: pageDict.meta.description,
+          title: title,
+          description: description,
           url: pageUrl,
           images: [{ url: `${siteUrl}/images/lic-term-insurance-guide.png`, width: 1200, height: 630, alt: 'LIC Term Insurance Guide' }],
           locale: params.lang === 'en' ? 'en_IN' : params.lang,

@@ -148,7 +148,7 @@
                         { "q": "Does LIC settle term claims reliably?", "a": "Yes. LIC has one of the highest Claim Settlement Ratios (CSR) in the industry, consistently above 98% (98.52% for FY 2022-23). This, combined with its sovereign guarantee, makes it one of the most reliable insurers for claim settlement in India." },
                         { "q": "Can I buy LIC term insurance online?", "a": "Absolutely. LIC offers the 'New Tech-Term' and 'Digi Term' plans specifically for online purchase. The process involves visiting LIC's official website, filling out the proposal form, uploading documents, and paying the premium online." },
                         { "q": "Are riders like critical illness covered under LIC term plans?", "a": "Yes, LIC term plans like New Tech-Term and Jeevan Amar offer optional riders, including an Accidental Death and Disability Benefit Rider and a Critical Illness Rider. You should compare the additional cost versus the benefits before adding them to your policy." },
-                        { "q": "What is the maximum age for LIC term insurance?", "a": "The maximum entry age for most LIC term plans is 65 years, and the maximum maturity age (the age until which you can be covered) is 80 years." },
+                        { "q": "What is the maximum age for LIC term insurance?", "a": "The maximum entry age for most LIC term plans like Tech-Term is 65 years, and the maximum maturity age (the age until which you can be covered) is 80 years." },
                         { "q": "Can I get my money back from a term insurance plan?", "a": "In a standard term plan like Tech-Term, no premiums are returned if you survive the policy term. However, LIC's Jeevan Kiran is a 'Return of Premium' (ROP) plan where all premiums paid are returned, but the premiums for these plans are significantly higher." },
                         { "q": "Is LIC term insurance cheaper than private companies?", "a": "Generally, LIC's term plans are priced slightly higher than those from top private insurers like HDFC Life or ICICI Prudential. The premium difference is often justified by LIC's higher claim settlement ratio and the unparalleled trust associated with a government-backed entity." },
                         { "q": "What documents are needed to buy an LIC term plan?", "a": "You will typically need Proof of Identity (Aadhaar, PAN Card), Proof of Address, and Proof of Income (Salary Slips, ITR). A medical examination may also be required depending on your age and the sum assured." },
@@ -182,11 +182,9 @@
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
-            { "@type": "Question", "name": "Which is the best LIC term plan?", "acceptedAnswer": { "@type": "Answer", "text": "For most online users, LIC's New Tech-Term (Plan 954) is the best due to its lower premiums. If you prefer buying offline via an agent, LIC's New Jeevan Amar is the equivalent option." } },
-            { "@type": "Question", "name": "What is the premium for a 1 crore LIC term insurance?", "acceptedAnswer": { "@type": "Answer", "text": "For a 30-year-old non-smoker male, a ₹1 Crore cover till age 60 can cost approximately ₹12,000 - ₹15,000 per year for the Tech-Term plan. Use our calculator for a personalized estimate." } },
-            { "@type": "Question", "name": "Is LIC term insurance good?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, LIC term insurance is considered very good due to its high claim settlement ratio and the sovereign guarantee of the Government of India, which provides a high degree of trust and reliability." } },
-            { "@type": "Question", "name": "Can I get my money back from a term insurance plan?", "acceptedAnswer": { "@type": "Answer", "text": "In a standard term plan, no premiums are returned if you survive the policy term. However, LIC's Jeevan Kiran is a 'Return of Premium' (ROP) plan where all premiums paid are returned on survival, but the premiums are significantly higher." } },
-            { "@type": "Question", "name": "What is the maximum age for LIC term insurance?", "acceptedAnswer": { "@type": "Answer", "text": "The maximum entry age for most LIC term plans like Tech-Term is 65 years, and the maximum maturity age (the age until which you can be covered) is 80 years." } }
+            { "@type": "Question", "name": "What is the LIC Tech Term Plan and how is it different?", "acceptedAnswer": { "@type": "Answer", "text": "LIC's New Tech-Term (Plan 954) is a pure-risk, non-linked term insurance plan sold exclusively online. It is cheaper than offline counterparts like Jeevan Amar due to online rebates." } },
+            { "@type": "Question", "name": "How much is the premium for a ₹1 Crore LIC term insurance?", "acceptedAnswer": { "@type": "Answer", "text": "For a 30-year-old non-smoker, the yearly premium for a ₹1 Crore Tech-Term plan is approximately ₹12,000-₹15,000. Use our calculator for a precise quote." } },
+            { "@type": "Question", "name": "Does LIC settle term claims reliably?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, LIC has one of the highest Claim Settlement Ratios (CSR) in the industry, consistently above 98% (98.52% for FY 2022-23), indicating high reliability." } }
         ]
     },
     "how_to_schema": {
@@ -197,7 +195,7 @@
             { "@type": "HowToStep", "name": "Step 1: Calculate Your Premium", "text": "Use the online LIC premium calculator to determine the premium for your desired cover amount, age, and policy term." },
             { "@type": "HowToStep", "name": "Step 2: Visit LIC's Website", "text": "Go to the official LIC India e-services portal and select the 'New Tech-Term' plan." },
             { "@type": "HowToStep", "name": "Step 3: Fill the Application Form", "text": "Provide your personal details, health information, and nominee details accurately in the online form." },
-            { "@type": "HowToStep", "name": "Step 4: Upload Documents & Pay", "text": "Upload your KYC documents (PAN, Aadhaar) and income proof. Pay the first premium online to complete the process. A medical check-up may be required." }
+            { "@type": "HowToStep", "name": "Step 4: Upload Documents & Pay", "text": "Upload your KYC documents (PAN, Aadhaar) and income proof. Pay the first premium online to complete the process." }
         ]
     },
     "article_schema": {
