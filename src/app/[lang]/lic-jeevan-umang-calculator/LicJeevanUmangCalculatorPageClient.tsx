@@ -58,12 +58,7 @@ const ContentRenderer = ({ content, lang, pageDict }: { content: any[], lang: Lo
                         );
                     case 'premium_chart':
                         return <LicUmangPremiumChart key={idx} dictionary={pageDict.premium_chart_section} />;
-                    case 'image_placeholder':
-                        return <div key={idx} className="my-6 p-8 border-2 border-dashed rounded-lg text-center bg-muted/30">
-                            <h4 className="font-semibold text-lg text-muted-foreground">{item.title}</h4>
-                            <p className="text-sm text-muted-foreground mt-2">{item.description}</p>
-                            <Image src={item.src} alt={item.alt} width={600} height={300} className="rounded-lg border shadow-md mx-auto mt-4 opacity-50" />
-                        </div>;
+                    
                     default:
                         return null;
                 }
@@ -81,8 +76,6 @@ export default function LicJeevanUmangCalculatorPageClient({
   dictionary: Dictionary;
   pageDict: any;
 }) {
-
-  const sections = Object.values(pageDict.sections || {}) as any[];
 
   return (
     <div className="py-12">
@@ -102,7 +95,7 @@ export default function LicJeevanUmangCalculatorPageClient({
         </div>
 
         <div className="mt-12 space-y-8">
-            {sections.map((section: any, index: number) => {
+            {pageDict.sections.map((section: any, index: number) => {
                 const Icon = getIcon(section.icon);
                 return (
                   <Card key={index} id={section.id} className="shadow-lg">
