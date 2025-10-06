@@ -15,6 +15,7 @@ const staticPages = [
   { slug: '/guides', lastModified: '2024-07-29', priority: 0.6, changefreq: 'monthly' },
   { slug: '/terms', lastModified: '2024-07-29', priority: 0.3, changefreq: 'yearly' },
   { slug: '/author/mahesh-chaube', lastModified: '2024-07-29', priority: 0.4, changefreq: 'monthly' },
+  { slug: '/lic-surrender-value-calculator', lastModified: '2024-10-10', priority: 0.9, changefreq: 'monthly' },
 ];
 
 // Add priority and changefreq to calculator pages
