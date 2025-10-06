@@ -13,15 +13,27 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
     const pageUrl = `${siteUrl}/${params.lang}/lic-child-plan`;
     
+    // SEO Optimized Metadata
+    const title = "LIC Child Plan (2025) — Benefits, Calculator, Comparison (Jeevan Tarun & New Children’s Money Back)";
+    const description = "Complete guide to LIC child plans (Jeevan Tarun, New Children’s Money Back). Compare benefits, see premium & maturity examples, use our free LIC child plan calculator, and learn tax & surrender rules. Free PDF calculator inside.";
+    
     return {
-        title: pageDict.meta_title,
-        description: pageDict.meta_description,
+        title: title,
+        description: description,
         alternates: {
-            canonical: pageUrl,
+            canonical: `${siteUrl}/en/lic-child-plan`,
             languages: i18nConfig.locales.reduce((acc, locale) => {
                 acc[locale] = `${siteUrl}/${locale}/lic-child-plan`;
                 return acc;
             }, {} as Record<string, string>),
+        },
+        openGraph: {
+          title: title,
+          description: description,
+          url: pageUrl,
+          images: [{ url: `${siteUrl}/images/lic-child-plan-guide.png`, width: 1200, height: 630, alt: 'LIC Child Plan Guide' }],
+          locale: params.lang === 'en' ? 'en_IN' : params.lang,
+          type: 'website',
         },
     };
 }
