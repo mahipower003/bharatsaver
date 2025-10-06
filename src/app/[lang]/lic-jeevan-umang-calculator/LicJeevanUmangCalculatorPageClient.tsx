@@ -1,3 +1,4 @@
+
 'use client';
 
 import type { Dictionary } from "@/lib/types";
@@ -8,10 +9,8 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { AuthorCard } from "@/components/layout/AuthorCard";
 import { FooterCta } from "@/components/layout/FooterCta";
-import { Button } from "@/components/ui/button";
 import Link from 'next/link';
-import { Download, BarChart, FileText, CheckCircle, SlidersHorizontal, GitCompareArrows, AlertTriangle, Users, BookUser, Star, HelpCircle, UserCheck, Calculator, Landmark, Video } from "lucide-react";
-import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
+import { BarChart, FileText, CheckCircle, SlidersHorizontal, GitCompareArrows, AlertTriangle, Users, BookUser, Star, HelpCircle, UserCheck, Calculator, Landmark, Video } from "lucide-react";
 import Image from "next/image";
 import { LicUmangPremiumChart } from "@/components/calculators/LicUmangPremiumChart";
 
@@ -65,8 +64,6 @@ const ContentRenderer = ({ content, lang, pageDict }: { content: any[], lang: Lo
                             <p className="text-sm text-muted-foreground mt-2">{item.description}</p>
                             <Image src={item.src} alt={item.alt} width={600} height={300} className="rounded-lg border shadow-md mx-auto mt-4 opacity-50" />
                         </div>;
-                    case 'video_placeholder':
-                        return <Card key={idx} className="my-6 text-center bg-secondary/50 p-8"><CardHeader><CardTitle className="flex items-center justify-center gap-3"><Video className="h-8 w-8 text-primary"/>{item.title}</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">{item.description}</p></CardContent></Card>;
                     default:
                         return null;
                 }
@@ -85,15 +82,17 @@ export default function LicJeevanUmangCalculatorPageClient({
   pageDict: any;
 }) {
 
+  const sections = Object.values(pageDict.sections || {}) as any[];
+
   return (
     <div className="py-12">
       <div className="mx-auto max-w-5xl">
         <header className="text-center mb-8">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{ __html: pageDict.h1 }} />
            <p className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.intro.quick_answer }}></p>
-            <Button asChild size="lg" className="mt-6">
-                <Link href="#calculator-widget">{pageDict.intro.cta_button}</Link>
-            </Button>
+            <Link href="#calculator-widget" className="inline-block mt-6 px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-md shadow-md hover:bg-primary/90 transition-colors">
+                {pageDict.intro.cta_button}
+            </Link>
             <p className="text-xs text-muted-foreground mt-4" dangerouslySetInnerHTML={{ __html: pageDict.intro.citation }} />
         </header>
         
@@ -103,7 +102,7 @@ export default function LicJeevanUmangCalculatorPageClient({
         </div>
 
         <div className="mt-12 space-y-8">
-            {pageDict.sections && Array.isArray(pageDict.sections) && pageDict.sections.map((section: any, index: number) => {
+            {sections.map((section: any, index: number) => {
                 const Icon = getIcon(section.icon);
                 return (
                   <Card key={index} id={section.id} className="shadow-lg">
@@ -142,20 +141,6 @@ export default function LicJeevanUmangCalculatorPageClient({
                   ))}
                 </CardContent>
               </Card>
-            )}
-
-            {pageDict.conclusion && (
-                <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
-                    <CardHeader>
-                    <CardTitle className="flex items-center gap-3">
-                        <Star className="h-7 w-7 text-accent" />
-                        <h2 className="text-2xl font-bold">{pageDict.conclusion.title}</h2>
-                    </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                    <div className="prose dark:prose-invert max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.conclusion.body }} />
-                    </CardContent>
-                </Card>
             )}
         </div>
         

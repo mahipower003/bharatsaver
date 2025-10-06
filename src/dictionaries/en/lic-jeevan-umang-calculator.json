@@ -1,7 +1,8 @@
+
 {
-    "meta_title": "Jeevan Umang Calculator (Plan 945) — Premium, Survival Income & Maturity",
+    "meta_title": "LIC Jeevan Umang Calculator (Plan 945) — Premium, Survival Income & Maturity",
     "meta_description": "Free LIC Jeevan Umang Calculator — instantly estimate premium, guaranteed survival income & surrender values (Plan 945). Download PDF & get a free illustration.",
-    "og_title": "Jeevan Umang Calculator (Plan 945) — Premium, Survival Income & Maturity",
+    "og_title": "LIC Jeevan Umang Calculator (Plan 945) — Premium, Survival Income & Maturity",
     "og_description": "Use our free LIC Jeevan Umang calculator to estimate premiums, guaranteed survival benefits, and maturity value. Compare different PPT options and download your results.",
     "h1": "LIC Jeevan Umang Calculator (Plan 945) — Premium, Survival Income & Maturity",
     "intro": {
@@ -38,8 +39,8 @@
       "calculate_button": "Calculate My Jeevan Umang Benefits",
       "calculating": "Calculating..."
     },
-    "sections": [
-      {
+    "sections": {
+      "quick_snapshots": {
         "id": "quick-snapshots",
         "icon": "BarChart",
         "title": "Quick Snapshots: Sample Estimates",
@@ -57,7 +58,7 @@
           }
         ]
       },
-       {
+      "premium_chart_section": {
         "id": "premium-chart-section",
         "icon": "BarChart",
         "title": "Jeevan Umang Premium Chart (Age & Sum Assured)",
@@ -66,7 +67,7 @@
             { "type": "premium_chart" }
         ]
       },
-      {
+      "what_is_jeevan_umang": {
         "id": "what-is-jeevan-umang",
         "icon": "HelpCircle",
         "title": "What is Jeevan Umang (Plan 945)?",
@@ -75,19 +76,18 @@
             { "type": "paragraph", "text": "Jeevan Umang is a <strong>participating whole-life plan</strong> that provides an ongoing (lifelong) survival income after the premium paying term. It combines life insurance protection with a recurring income stream — making it attractive for retirement planning. The plan also accrues bonuses and may include final additional bonuses where applicable. You can get more details from the official <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-jeevan-umang' target='_blank' rel='noopener noreferrer'>LIC Jeevan Umang page</a>." }
         ]
       },
-      {
+      "how_it_works": {
         "id": "how-it-works",
         "icon": "Calculator",
         "title": "How the LIC Jeevan Umang Calculator Works",
         "description": "The formulas and assumptions behind your benefit calculation.",
         "content": [
-            {"type": "video_placeholder", "title": "Video Explainer: How Jeevan Umang Works", "description": "Watch our 2-minute animated video to understand the plan's benefits."},
             { "type": "structured_content", "heading": "Premium Calculation", "body": "The calculator uses LIC's base premium rates based on your age, sum assured, and PPT. It then applies standard modal loading factors for non-yearly payments and adds GST (4.5% 1st year, 2.25% thereafter)." },
             { "type": "image_placeholder", "title": "Infographic: Premium Breakdown", "description": "Visualizing how your base premium, riders, and GST add up.", "src": "/images/premium-breakdown-placeholder.png", "alt": "A pie chart showing the components of an insurance premium."},
             { "type": "structured_content", "heading": "Survival & Maturity Benefits", "body": "The primary benefit is the <strong>annual survival income</strong>, which is a guaranteed <strong>8% of your Basic Sum Assured</strong>, paid every year after your premium term ends, until you reach age 100. The maturity benefit, paid at age 100, includes the Sum Assured, vested bonuses, and any Final Additional Bonus (FAB)." }
         ]
       },
-      {
+      "worked_examples": {
         "id": "worked-examples",
         "icon": "Users",
         "title": "Case Studies: Jeevan Umang for Different Life Goals",
@@ -98,7 +98,7 @@
             {"type": "structured_content", "heading": "Case Study 3: Child's Future (Child Age 1, Parent Age 30)", "body": "<strong>Goal:</strong> Create a lifelong financial gift for a child. <strong>Inputs:</strong> Child Age 1, Parent Age 30, BSA ₹5L, PPT 20. <strong>Result:</strong> Approx. premium of ₹22,875/year. From the child's 22nd birthday, they start receiving ₹40,000 annually, for life. It serves as a supplementary income for their early career and a valuable asset for life."}
         ]
       },
-      {
+      "bonus_history": {
           "id": "bonus-history",
           "icon": "BarChart",
           "title": "LIC Bonus Rates (Historical Reference)",
@@ -109,7 +109,7 @@
             ]}
           ]
       },
-      {
+      "loan_example": {
           "id": "loan-example",
           "icon": "Landmark",
           "title": "Loan Calculation Example",
@@ -118,7 +118,7 @@
             {"type": "paragraph", "text": "If you've paid premiums for 5 years on a ₹10 Lakh policy, your policy might have a Special Surrender Value (SSV) of around ₹2.5 Lakhs (illustrative). You can typically get a loan of up to 90% of this amount, which would be <strong>₹2.25 Lakhs</strong>, to meet any immediate financial needs. The loan amount and accrued interest are then adjusted against the final claim amount."}
           ]
       },
-      {
+      "comparison": {
         "id": "comparison",
         "icon": "GitCompareArrows",
         "title": "Jeevan Umang vs. Similar LIC Plans",
@@ -132,7 +132,7 @@
           }
         ]
       },
-      {
+      "faq": {
         "id": "faq",
         "icon": "HelpCircle",
         "title": "Frequently Asked Questions (FAQ)",
@@ -152,7 +152,7 @@
           ]}
         ]
       },
-      {
+      "conclusion": {
         "id": "conclusion",
         "icon": "Star",
         "title": "Final Verdict: Is Jeevan Umang a Good Investment?",
@@ -160,7 +160,7 @@
           { "type": "paragraph", "text": "For individuals seeking a disciplined, low-risk savings plan that provides a guaranteed, lifelong, tax-free income stream, Jeevan Umang is one of the most robust products in the market. It excels at creating a predictable 'pension' alternative, shielded from market volatility. It may not offer the high growth of equity, but for foundational financial security, its value is unmatched." }
         ]
       }
-    ],
+    },
     "premium_chart_section": {
         "title": "Jeevan Umang Premium Chart (Illustrative)",
         "description": "Yearly premiums for a ₹10 Lakh Sum Assured at different ages and Premium Paying Terms (PPT).",
