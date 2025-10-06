@@ -113,6 +113,43 @@ export default function LicJeevanUmangCalculatorPageClient({
                   </Card>
                 )
             })}
+
+             {pageDict.related_calculators && (
+              <Card className="shadow-lg">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-3">
+                    <Calculator className="h-8 w-8 text-primary" />
+                    <h2 className="text-2xl font-bold">{pageDict.related_calculators.title}</h2>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {pageDict.related_calculators.links.map((link: any, index: number) => (
+                    <Link key={index} href={`/${params.lang}${link.href}`} className="block group">
+                      <Card className="h-full hover:shadow-md transition-shadow">
+                        <CardHeader>
+                          <CardTitle className="text-lg">{link.title}</CardTitle>
+                          <p className="text-sm text-muted-foreground mt-1">{link.description}</p>
+                        </CardHeader>
+                      </Card>
+                    </Link>
+                  ))}
+                </CardContent>
+              </Card>
+            )}
+
+            {pageDict.conclusion && (
+                <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
+                    <CardHeader>
+                    <CardTitle className="flex items-center gap-3">
+                        <Star className="h-7 w-7 text-accent" />
+                        <h2 className="text-2xl font-bold">{pageDict.conclusion.title}</h2>
+                    </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                    <div className="prose dark:prose-invert max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.conclusion.body }} />
+                    </CardContent>
+                </Card>
+            )}
         </div>
         
         <AuthorCard dictionary={dictionary.author_card} />

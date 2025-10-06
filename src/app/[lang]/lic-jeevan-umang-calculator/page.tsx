@@ -15,38 +15,13 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     const ogImageUrl = `${siteUrl}/images/lic-jeevan-umang-calculator.png`;
 
     const schemas = [];
+    if (pageDict.faq_schema) schemas.push(pageDict.faq_schema);
+    if (pageDict.how_to_schema) schemas.push(pageDict.how_to_schema);
+    if (pageDict.financial_product_schema) schemas.push({
+        ...pageDict.financial_product_schema,
+        url: pageUrl
+    });
 
-    // Correctly access the 'faq' section from the sections object
-    const faqSection = pageDict.sections?.faq;
-    if (faqSection && faqSection.content) {
-        const faqItems = faqSection.content.find((c:any) => c.type === 'faq')?.items ?? [];
-        if (faqItems.length > 0) {
-            const faqSchema = {
-                "@context": "https://schema.org",
-                "@type": "FAQPage",
-                "mainEntity": faqItems.map((faq: { q: string, a: string }) => ({
-                    '@type': 'Question',
-                    name: faq.q,
-                    acceptedAnswer: {
-                        '@type': 'Answer',
-                        text: faq.a.replace(/<[^>]*>/g, ''),
-                    },
-                })),
-            };
-            schemas.push(faqSchema);
-        }
-    }
-
-    if (pageDict.how_to_schema) {
-        schemas.push(pageDict.how_to_schema);
-    }
-    
-    if (pageDict.financial_product_schema) {
-        schemas.push({
-            ...pageDict.financial_product_schema,
-            url: pageUrl
-        });
-    }
 
     return {
         title: pageDict.meta_title,
@@ -59,7 +34,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
             }, {} as Record<string, string>),
         },
         openGraph: {
-          title: pageDict.meta_title,
+          title: pageDict.og_title,
           description: pageDict.og_description,
           url: pageUrl,
           images: [{ url: ogImageUrl, width: 1200, height: 630, alt: 'LIC Jeevan Umang Calculator' }],
