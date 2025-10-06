@@ -29,7 +29,6 @@ const ContentRenderer = ({ content, lang }: { content: any[]; lang: Locale }) =>
     return (
         <div className="space-y-4">
             {content.map((item, idx) => {
-                const Icon = item.icon ? getIcon(item.icon) : null;
                 switch (item.type) {
                     case 'paragraph':
                         return <div key={idx} className="prose dark:prose-invert max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: item.text.replace(/{lang}/g, lang) }} />;
@@ -89,7 +88,7 @@ export default function LicJeevanUmangCalculatorPageClient({
                   <Card key={index} id={section.id} className="shadow-lg">
                     <CardHeader>
                       <CardTitle className="flex items-center gap-3">
-                        <Icon className="h-8 w-8 text-primary" />
+                        {Icon && <Icon className="h-8 w-8 text-primary" />}
                         <h2 className="text-2xl font-bold">{section.title}</h2>
                       </CardTitle>
                       {section.description && <CardDescription dangerouslySetInnerHTML={{ __html: section.description.replace(/{lang}/g, params.lang) }} />}
@@ -123,5 +122,3 @@ export default function LicJeevanUmangCalculatorPageClient({
     </div>
   );
 }
-
-  

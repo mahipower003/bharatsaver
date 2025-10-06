@@ -210,5 +210,3 @@ export const calculators: CalculatorType[] = [
     image: '/images/PPF-NPS-FD-SSY-Scheme-selector.png'
   },
 ];
-
-  
