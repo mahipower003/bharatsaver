@@ -77,7 +77,16 @@ const ContentRenderer = ({ content, lang }: { content: any[]; lang: Locale }) =>
                                   ))}
                                 </div>
                             </Card>
-                         )
+                         );
+                    case 'structured_content':
+                        return <div key={idx} className="space-y-4">
+                            {item.items.map((subItem: {title: string; text: string}, subIdx: number) => (
+                                <div key={subIdx}>
+                                    <h3 className="font-semibold text-lg" dangerouslySetInnerHTML={{__html: subItem.title}} />
+                                    <div className="prose dark:prose-invert max-w-none text-muted-foreground mt-1" dangerouslySetInnerHTML={{__html: subItem.text}} />
+                                </div>
+                            ))}
+                        </div>
                     default:
                         return null;
                 }

@@ -2,7 +2,7 @@
 {
     "meta": {
         "title": "LIC Term Insurance — Ultimate Guide 2025 | Plans, Premiums & How to Buy",
-        "description": "Complete 2025 guide to LIC term insurance — Tech-Term, Jeevan Amar, Saral Jeevan & more. Premium examples, buy online steps, claim process & FAQs."
+        "description": "Complete 2025 guide to LIC term insurance — Tech-Term, Jeevan Amar & Jeevan Kiran. Premium examples, buy online steps, claim process & FAQs."
     },
     "h1": "LIC Term Insurance — Ultimate Guide (2025)",
     "byline": "By Mahesh Chaubey, CFP — Last reviewed: January 2025<br>Reviewed by Laveena Vijayi — BharatSaver Editorial Team",
@@ -14,7 +14,7 @@
             "content": [
                 {
                     "type": "paragraph",
-                    "text": "For most buyers who want the lowest cost from LIC for a substantial cover (₹50 Lakh+), the <strong>LIC New Tech-Term plan</strong> is the best overall choice due to its competitive online-only premium. If you prefer in-person guidance from an agent for a high-value policy, consider its offline counterpart, <strong>Jeevan Amar</strong>. For those seeking absolute simplicity with lower cover amounts, <strong>Saral Jeevan Bima</strong> is a great starting point. Micro-insurance plans like <strong>Bhagya Lakshmi</strong> and <strong>New Jeevan Mangal</strong> are designed for rural and low-income segments with smaller coverage needs. I generally advise against Return-of-Premium (ROP) plans like <strong>Jeevan Kiran</strong> unless you strongly prefer a guaranteed return of your capital over the much lower cost of a pure term insurance plan."
+                    "text": "For most buyers who want low cost and high trust, the <strong>LIC New Tech-Term plan</strong> is the best overall choice due to its competitive online-only premium. If you prefer in-person guidance from an agent for a high-value policy, consider its offline counterpart, <strong>Jeevan Amar</strong>. For those seeking absolute simplicity with lower cover amounts, <strong>Saral Jeevan Bima</strong> is a great starting point. Micro-insurance plans like <strong>Bhagya Lakshmi</strong> and <strong>New Jeevan Mangal</strong> are designed for rural and low-income segments. I generally advise against Return-of-Premium (ROP) plans like <strong>Jeevan Kiran</strong> unless you strongly prefer a guaranteed return of your capital over the much lower cost of a pure term insurance plan."
                 }
             ]
         },
@@ -38,32 +38,16 @@
             "title": "Which LIC Term Insurance Plans Exist? (Full Product List)",
             "content": [
                  {
-                    "type": "paragraph",
-                    "text": "<h3>1. LIC's New Tech-Term (Plan No. 954, UIN: 512N339V02)</h3><p>This is LIC’s flagship online-only, non-participating pure-risk premium plan. Because it's sold directly online, it offers the most competitive premium from LIC. It's the ideal <strong>LIC term life insurance</strong> choice for self-directed buyers comfortable with online processes. <br><strong>Best for:</strong> Tech-savvy users who want the lowest possible premium directly from LIC for covers of ₹50 Lakh and above.</p>"
-                },
-                {
-                    "type": "paragraph",
-                    "text": "<h3>2. LIC's New Jeevan Amar (Plan No. 955, UIN: 512N338V02)</h3><p>This is the offline version of Tech-Term, offering nearly identical features but sold through agents and intermediaries. The premium is slightly higher to account for agent commissions. The main <strong>difference between Tech Term and Jeevan Amar</strong> is this sales channel and the resulting price. <br><strong>Best for:</strong> Buyers who prefer face-to-face advice and assistance from an LIC agent for high-value cover.</p>"
-                },
-                {
-                    "type": "paragraph",
-                    "text": "<h3>3. LIC's Saral Jeevan Bima (Plan No. 859, UIN: 512N342V02)</h3><p>This is a standardized, pure-risk term plan mandated by IRDAI to be offered by all insurers with simple, uniform features. The terms and conditions are the same across all companies. It is designed to make buying term insurance simple and accessible for everyone, with coverage typically up to ₹25 Lakh. <br><strong>Best for:</strong> First-time buyers who want a straightforward, easy-to-understand product without complex features or options.</p>"
-                },
-                {
-                    "type": "paragraph",
-                    "text": "<h3>4. LIC's Jeevan Kiran (Plan No. 870, UIN: 512N359V02)</h3><p>This is a 'Return of Premium' (ROP) plan. You pay a higher premium, but if you survive the policy term, LIC returns all premiums paid (excluding taxes and rider premiums). The <strong>LIC Jeevan Kiran return of premium is explained</strong> as a feature for those who dislike 'losing' their money in a pure risk plan. <br><strong>Best for:</strong> Highly risk-averse individuals who want the comfort of getting their money back if they outlive the policy and are willing to pay a much higher premium for this feature.</p>"
-                },
-                {
-                  "type": "paragraph",
-                  "text": "<h3>5. LIC's Bhagya Lakshmi (Plan No. 919, UIN: 512N299V02)</h3><p>This is a non-participating, limited payment protection plan designed for low-income households. It offers a death benefit of 100% of the Sum Assured. <br><strong>Best for:</strong> Individuals in rural and economically weaker sections looking for basic life cover with a very low entry barrier.</p>"
-                },
-                {
-                  "type": "paragraph",
-                  "text": "<h3>6. LIC's New Jeevan Mangal Plan (Plan No. 940, UIN: 512N308V02)</h3><p>This is a micro-insurance plan that also offers a return of premiums on survival, making it a protection-cum-savings product. It's designed for those who need life cover but also want their money back. <br><strong>Best for:</strong> Individuals looking for a small savings component along with their life insurance, particularly in the micro-insurance segment.</p>"
-                },
-                {
-                  "type": "paragraph",
-                  "text": "<h3>7. LIC's Anmol Jeevan II (Withdrawn)</h3><p>This was a popular pure term plan from LIC that has now been withdrawn and is no longer available for sale. It has been effectively replaced by New Jeevan Amar and Tech-Term.</p>"
+                    "type": "structured_content",
+                    "items": [
+                        { "title": "1. LIC's New Tech-Term (Plan No. 954, UIN: 512N339V02)", "text": "This is LIC’s flagship online-only, non-participating pure-risk premium plan. Because it's sold directly online, it offers the most competitive premium from LIC. It's the ideal <strong>LIC term life insurance</strong> choice for self-directed buyers comfortable with online processes. <br><strong>Best for:</strong> Tech-savvy users who want the lowest possible premium directly from LIC for covers of ₹50 Lakh and above." },
+                        { "title": "2. LIC's New Jeevan Amar (Plan No. 955, UIN: 512N338V02)", "text": "This is the offline version of Tech-Term, offering nearly identical features but sold through agents and intermediaries. The premium is slightly higher to account for agent commissions. The main <strong>difference between Tech Term and Jeevan Amar</strong> is this sales channel and the resulting price. <br><strong>Best for:</strong> Buyers who prefer face-to-face advice and assistance from an LIC agent for high-value cover." },
+                        { "title": "3. LIC's Saral Jeevan Bima (Plan No. 859, UIN: 512N342V02)", "text": "This is a standardized, pure-risk term plan mandated by IRDAI to be offered by all insurers with simple, uniform features. The terms and conditions are the same across all companies. It is designed to make buying term insurance simple and accessible for everyone, with coverage typically up to ₹25 Lakh. <br><strong>Best for:</strong> First-time buyers who want a straightforward, easy-to-understand product without complex features or options." },
+                        { "title": "4. LIC's Jeevan Kiran (Plan No. 870, UIN: 512N359V02)", "text": "This is a 'Return of Premium' (ROP) plan. You pay a higher premium, but if you survive the policy term, LIC returns all premiums paid (excluding taxes and rider premiums). The <strong>LIC Jeevan Kiran return of premium is explained</strong> as a feature for those who dislike 'losing' their money in a pure risk plan. <br><strong>Best for:</strong> Highly risk-averse individuals who want the comfort of getting their money back if they outlive the policy and are willing to pay a much higher premium for this feature." },
+                        { "title": "5. LIC's Bhagya Lakshmi (Plan No. 919, UIN: 512N299V02)", "text": "This is a non-participating, limited payment protection plan designed for low-income households. It offers a death benefit of 100% of the Sum Assured. <br><strong>Best for:</strong> Individuals in rural and economically weaker sections looking for basic life cover with a very low entry barrier." },
+                        { "title": "6. LIC's New Jeevan Mangal Plan (Plan No. 940, UIN: 512N308V02)", "text": "This is a micro-insurance plan that also offers a return of premiums on survival, making it a protection-cum-savings product. It's designed for those who need life cover but also want their money back. <br><strong>Best for:</strong> Individuals looking for a small savings component along with their life insurance, particularly in the micro-insurance segment." },
+                        { "title": "7. LIC's Anmol Jeevan II (Withdrawn)", "text": "This was a popular pure term plan from LIC that has now been withdrawn and is no longer available for sale. It has been effectively replaced by New Jeevan Amar and Tech-Term." }
+                    ]
                 }
             ]
         },
@@ -85,7 +69,7 @@
             "content": [
                 {
                     "type": "paragraph",
-                    "text": "LIC combines a nationwide service network and a long history of paying claims, making it the natural choice for buyers who value offline support and brand trust. Recent online plans (Tech-Term) now offer competitive pricing for self-service buyers looking for a great <strong>LIC term insurance plan</strong>."
+                    "text": "<p>LIC’s term plans are backed by the corporation’s nationwide network and long track record. For buyers who value offline support, brand recognition, and standardized processes, LIC remains a strong choice — and it now offers online-only plans (Tech-Term, Digi Term) for better pricing and convenience.</p>"
                 },
                 { "type": "table", "headers": ["Feature", "LIC (e.g., Tech-Term)", "Top Private Insurers (e.g., HDFC, ICICI)"], "rows": [
                     ["Premium Cost", "Generally 15-30% higher, but online plans are competitive. A 'lic tech term vs hdfc life' comparison often shows LIC is now closer in price.", "Often lower and more competitive."],
@@ -183,9 +167,9 @@
         "mainEntity": [
             { "@type": "Question", "name": "What is the LIC Tech-Term Plan and how is it different?", "acceptedAnswer": { "@type": "Answer", "text": "LIC Tech-Term is an online-only pure term plan sold directly by LIC with online rebates; it offers low premiums compared with LIC's offline equivalents." } },
             { "@type": "Question", "name": "Can I buy LIC term insurance online?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. LIC offers online purchase for Tech-Term and Digi Term via the LIC e-services portal. You must provide KYC docs and may need a medical exam." } },
-            { "@type": "Question", "name": "How much premium for ₹1 Crore LIC term insurance for a 30-year-old non-smoker?", "acceptedAnswer": { "@type": "Answer", "text": "Premiums vary by plan and mode. Use the calculator on this page for an exact quote, or compare samples from leading aggregators." } },
-            { "@type": "Question", "name": "Does LIC settle term claims reliably?", "acceptedAnswer": { "@type": "Answer", "text": "LIC has historically high claim settlement ratios and strong solvency; always check the latest IRDAI/annual report numbers when deciding." } },
-            { "@type": "Question", "name": "Are return-of-premium (ROP) plans worth it?", "acceptedAnswer": { "@type": "Answer", "text": "ROP plans return premiums on survival but cost much more. Financially, buying a cheap term plan and investing the difference usually gives higher returns." } }
+            { "@type": "Question", "name": "How much premium for ₹1 Crore LIC term insurance for a 30-year-old non-smoker?", "a": "Premiums vary by plan and mode. Use the calculator on this page for an exact quote, or compare samples from leading aggregators." },
+            { "@type": "Question", "name": "Does LIC settle term claims reliably?", "a": "Yes, LIC has historically high claim settlement ratios and strong solvency; always check the latest IRDAI/annual report numbers when deciding." },
+            { "@type": "Question", "name": "Are return-of-premium (ROP) plans worth it?", "a": "ROP plans return premiums on survival but cost much more. Financially, buying a cheap term plan and investing the difference usually gives higher returns." }
         ]
     },
     "how_to_schema": {
@@ -193,7 +177,7 @@
         "@type":"HowTo",
         "name":"How to buy LIC Tech-Term online",
         "step":[
-          {"@type":"HowToStep","name":"Calculate premium","text":"Use the calculator to set sum assured, age and term."},
+          {"@type":"HowToStep","name":"Calculate premium","text":"Use the LIC term insurance calculator to set sum assured, age and term."},
           {"@type":"HowToStep","name":"Visit LIC e-services portal","text":"Choose the New Tech-Term option and start application."},
           {"@type":"HowToStep","name":"Fill the form","text":"Provide personal, health and nominee details accurately."},
           {"@type":"HowToStep","name":"Upload documents and pay","text":"Upload PAN/Aadhaar and pay the first premium online."},
