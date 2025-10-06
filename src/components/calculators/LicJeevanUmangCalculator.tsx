@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Loader2, Info } from 'lucide-react';
+import { Loader2, Info, Download, Printer, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
@@ -236,6 +236,11 @@ export function LicJeevanUmangCalculator({ dictionary }: { dictionary: any }) {
                   <p className="text-3xl font-bold mt-1">{formatCurrency(result.maturityBenefit.total)}</p>
                   <p className="text-sm text-muted-foreground">{dictionary.outputs.maturityBenefit.subtitle}</p>
               </div>
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-4 pt-4 border-t">
+                <Button variant="outline"><Download className="mr-2 h-4 w-4"/>Download PDF</Button>
+                <Button variant="outline"><Printer className="mr-2 h-4 w-4"/>Print</Button>
+                <Button variant="outline"><Twitter className="mr-2 h-4 w-4"/>Share on Twitter</Button>
             </div>
             <Alert className="mt-6">
               <Info className="h-4 w-4" />
