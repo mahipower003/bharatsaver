@@ -14,7 +14,7 @@ export const licPlans: LicPlanGroup[] = [
         label: "Active LIC Plans",
         plans: [
             { value: "jeevan-utsav-calculator", label: "LIC's Jeevan Utsav (871)" },
-            { value: "lic-jeevan-umang-calculator", label: "LIC's Jeevan Umang (945)" },
+            { value: "jeevan-umang", label: "LIC's Jeevan Umang (945)" },
             { value: "lic-jeevan-anand-calculator", label: "LIC’s New Jeevan Anand (915)" },
             { value: "lic-single-premium-endowment-calculator", label: "LIC’s Single Premium Endowment Plan (917)" },
             { value: "new_endowment_plan", label: "LIC's New Endowment Plan (914)" },
