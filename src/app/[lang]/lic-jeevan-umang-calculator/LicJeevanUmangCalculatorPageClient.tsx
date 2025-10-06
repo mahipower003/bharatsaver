@@ -11,7 +11,7 @@ import { AuthorCard } from "@/components/layout/AuthorCard";
 import { FooterCta } from "@/components/layout/FooterCta";
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
-import { Download, BarChart, FileText, CheckCircle, SlidersHorizontal, GitCompareArrows, AlertTriangle, Users, BookUser, Star, HelpCircle, UserCheck, Calculator, Landmark } from "lucide-react";
+import { Download, BarChart, FileText, CheckCircle, SlidersHorizontal, GitCompareArrows, AlertTriangle, Users, BookUser, Star, HelpCircle, UserCheck, Calculator, Landmark, Video } from "lucide-react";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import Image from "next/image";
 import { LicUmangPremiumChart } from "@/components/calculators/LicUmangPremiumChart";
@@ -19,7 +19,7 @@ import { LicUmangPremiumChart } from "@/components/calculators/LicUmangPremiumCh
 function getIcon(iconName: string) {
     const icons: { [key: string]: React.ElementType } = {
         BarChart, FileText, CheckCircle, SlidersHorizontal, GitCompareArrows,
-        AlertTriangle, Users, BookUser, Star, HelpCircle, UserCheck, Calculator, Landmark
+        AlertTriangle, Users, BookUser, Star, HelpCircle, UserCheck, Calculator, Landmark, Video
     };
     return icons[iconName] || HelpCircle;
 }
@@ -60,6 +60,14 @@ const ContentRenderer = ({ content, lang }: { content: any[], lang: Locale }) =>
                         );
                     case 'premium_chart':
                         return <LicUmangPremiumChart key={idx} />;
+                    case 'image_placeholder':
+                        return <div key={idx} className="my-6 p-8 border-2 border-dashed rounded-lg text-center bg-muted/30">
+                            <h4 className="font-semibold text-lg text-muted-foreground">{item.title}</h4>
+                            <p className="text-sm text-muted-foreground mt-2">{item.description}</p>
+                            <Image src={item.src} alt={item.alt} width={600} height={300} className="rounded-lg border shadow-md mx-auto mt-4 opacity-50" />
+                        </div>;
+                    case 'video_placeholder':
+                        return <Card key={idx} className="my-6 text-center bg-secondary/50 p-8"><CardHeader><CardTitle className="flex items-center justify-center gap-3"><Video className="h-8 w-8 text-primary"/>{item.title}</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">{item.description}</p></CardContent></Card>
                     default:
                         return null;
                 }
@@ -83,7 +91,7 @@ export default function LicJeevanUmangCalculatorPageClient({
       <div className="mx-auto max-w-5xl">
         <header className="text-center mb-8">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{ __html: pageDict.h1 }} />
-           <p className="mt-4 text-sm text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.intro.quick_answer }}></p>
+           <p className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.intro.quick_answer }}></p>
             <Button asChild size="lg" className="mt-6">
                 <Link href="#calculator-widget">{pageDict.intro.cta_button}</Link>
             </Button>
@@ -158,3 +166,5 @@ export default function LicJeevanUmangCalculatorPageClient({
     </div>
   );
 }
+
+    
