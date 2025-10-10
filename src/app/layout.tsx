@@ -93,14 +93,8 @@ export default function RootLayout({
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
       </head>
       <body>
-        <noscript>
-            <iframe 
-                src="https://www.googletagmanager.com/ns.html?id=GTM-NMDXQFK7"
-                height="0" 
-                width="0" 
-                style={{display: 'none', visibility: 'hidden'}}
-            ></iframe>
-        </noscript>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMDXQFK7"
+height="0" width="0" style={{display:'none',visibility:'hidden'}}></iframe></noscript>
         {children}
         <Toaster />
         <SpeedInsights />
@@ -108,5 +102,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-    
