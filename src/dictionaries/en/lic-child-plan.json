@@ -1,7 +1,7 @@
 
 {
-  "meta_title": "LIC Child Plan (2025) — Benefits, Calculator, Comparison (Jeevan Tarun & New Children’s Money Back)",
-  "meta_description": "Complete guide to LIC child plans (Jeevan Tarun, New Children’s Money Back). Compare benefits, see premium & maturity examples, use our free LIC child plan calculator, and learn tax & surrender rules. Free PDF calculator inside.",
+  "meta_title": "LIC Child Plan 2025 — Jeevan Tarun, Money Back & Amritbaal Comparison (Calculator Inside)",
+  "meta_description": "Compare LIC child plans — Jeevan Tarun, New Children’s Money Back, and Amritbaal. See benefits, premiums, worked examples, tax rules, and download free LIC child plan calculator.",
   "h1": "LIC Child Plan (2025) — Complete Guide",
   "intro": "This page covers everything you need to know about choosing the best LIC plan for your child's future, whether you're a parent or grandparent. We'll compare LIC's key child plans like Jeevan Tarun and the New Children's Money Back Plan, helping you make an informed decision.",
   "sections": [
@@ -9,15 +9,15 @@
       "id": "quick-comparison",
       "icon": "BarChart",
       "title": "At a Glance: LIC Child Plans Comparison",
-      "description": "A quick comparison of the most popular child plans from LIC.",
+      "description": "This 2025 LIC child plan comparison helps you choose the best LIC child plan for education and marriage goals. See key differences at a glance.",
       "content": [
         {
           "type": "table",
-          "headers": ["Plan Name", "Plan No.", "Age Entry", "Key Benefits", "Best For", "Action"],
+          "headers": ["Plan Name", "Plan No.", "Age Entry", "Policy Term", "Maturity Age", "Key Benefits", "Premium Waiver Rider", "Best For"],
           "rows": [
-            ["Jeevan Tarun", "934", "90 days - 12 yrs", "Flexible survival benefits from age 20-24", "Higher education funding", "<a href='#calculator'>Calculate Premium</a>"],
-            ["New Children’s Money Back", "932", "0 - 12 yrs", "Money back at ages 18, 20, 22", "Staggered education goals", "<a href='#calculator'>Calculate Premium</a>"],
-            ["Amritbaal", "874", "30 days - 13 yrs", "Guaranteed Additions, flexible maturity", "Building a guaranteed corpus", "<a href='#calculator'>Calculate Premium</a>"]
+            ["Jeevan Tarun", "934", "90 days - 12 yrs", "25 - Child's Age", "25 yrs", "Flexible survival benefits from age 20-24", "Available", "Higher education funding"],
+            ["New Children’s Money Back", "932", "0 - 12 yrs", "25 - Child's Age", "25 yrs", "Money back at ages 18, 20, 22", "Available", "Staggered education goals"],
+            ["Amritbaal", "874", "30 days - 13 yrs", "Min 5 yrs", "18 to 25 yrs", "Guaranteed Additions, flexible maturity", "Available", "Building a guaranteed corpus"]
           ]
         }
       ]
