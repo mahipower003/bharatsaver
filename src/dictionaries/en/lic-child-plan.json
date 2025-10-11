@@ -25,10 +25,27 @@
     {
       "id": "deep-dive-cmbp",
       "icon": "FileText",
-      "title": "Deep Dive: LIC’s New Children’s Money Back Plan (Plan 932)",
+      "title": "Deep Dive: LIC’s New Children’s Money Back Plan (932)",
       "description": "A detailed look at one of LIC's most popular money-back child plans.",
       "content": [
-        { "type": "paragraph", "text": "This plan provides money-back installments at key educational milestones. Eligibility is from 0-12 years. You receive 20% of the Sum Assured at ages 18, 20, and 22, with the final 40% plus bonuses at age 25. For the official details, see the <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-new-children-s-money-back-plan' target='_blank' rel='noopener noreferrer'>official brochure</a>." }
+        {
+          "type": "paragraph",
+          "text": "<h3>Eligibility & Policy Term</h3><p>The LIC New Children's Money Back Plan is designed for children from birth (0 years) up to 12 years of age. The policy term is fixed to mature when the child turns 25. For example, if you buy the plan for a 5-year-old child, the policy term will be 20 years (25 - 5). For the official details, see the <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-new-children-s-money-back-plan' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>official brochure</a>.</p><h3>Survival Benefit Schedule with Example</h3><p>This plan is structured to provide fixed payouts at key milestones in a child's educational journey. Here’s how it works with an example for a ₹5,00,000 Sum Assured policy taken for a 5-year-old child:</p>"
+        },
+        {
+          "type": "table",
+          "headers": ["Child's Age", "Event", "Payout (% of Sum Assured)", "Amount Received"],
+          "rows": [
+            ["18", "Higher Secondary / Entrance Exams", "20%", "₹1,00,000"],
+            ["20", "Undergraduate Degree Year 2/3", "20%", "₹1,00,000"],
+            ["22", "Post-Graduate / Final Year", "20%", "₹1,00,000"],
+            ["25", "Maturity", "40% + Vested Bonuses", "₹2,00,000 + Bonuses"]
+          ]
+        },
+        {
+            "type": "paragraph",
+            "text": "<p>The final payment at age 25 includes the remaining 40% of the Sum Assured plus all accrued bonuses, providing a substantial amount for post-graduation goals or as a financial head start.</p>"
+        }
       ]
     },
     {
