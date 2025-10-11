@@ -54,7 +54,10 @@
       "title": "Deep Dive: LIC Jeevan Tarun — What Parents Should Know",
       "description": "Understanding the features and payout flexibility of Jeevan Tarun (Plan 934).",
       "content": [
-        { "type": "paragraph", "text": "<p>Jeevan Tarun is unique because it offers four different options for receiving survival benefits between the ages of 20 and 24, making it highly suitable for funding higher education. You can choose to receive a percentage of the sum assured annually or let it accumulate. Surrender and loan facilities are available after two full years of premium payment. Refer to the <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-jeevan-tarun' target='_blank' rel='noopener noreferrer'>Jeevan Tarun brochure</a> for more.</p><h3>LIC Jeevan Tarun Options Explained</h3><p>This plan's main advantage is its flexibility. At the time of proposal, you must choose one of four options for how the survival benefits are paid out:</p><ul><li><strong>Option 1:</strong> No survival benefit. Receive 100% of the Sum Assured + bonuses at maturity (age 25).</li><li><strong>Option 2:</strong> Receive 5% of the Sum Assured every year from age 20 to 24. At maturity, receive the remaining 75% of the Sum Assured + bonuses.</li><li><strong>Option 3:</strong> Receive 10% of the Sum Assured every year from age 20 to 24. At maturity, receive the remaining 50% of the Sum Assured + bonuses.</li><li><strong>Option 4:</strong> Receive 15% of the Sum Assured every year from age 20 to 24. At maturity, receive the remaining 25% of the Sum Assured + bonuses.</li></ul><h3>Worked Example: Jeevan Tarun Premium & Maturity</h3><p>Let's use our LIC Jeevan Tarun calculator logic for a real-world scenario:</p><ul><li><strong>Child's Age:</strong> 3 years</li><li><strong>Parent's Age:</strong> 30 years</li><li><strong>Sum Assured:</strong> ₹5,00,000</li><li><strong>Policy Term:</strong> 22 years (25 - 3)</li><li><strong>Premium Paying Term:</strong> 17 years (20 - 3)</li><li><strong>Option Chosen:</strong> Option 2 (5% payout yearly from age 20)</li></ul><p><strong>Approx. Yearly Premium:</strong> ₹25,000<br><strong>Total Premium Paid over 17 years:</strong> ~₹4.25 Lakh<br><strong>Survival Benefits:</strong> You receive <strong>₹25,000</strong> every year at ages 20, 21, 22, 23, and 24 (totaling ₹1.25 Lakh).<br><strong>Estimated Maturity Benefit at Age 25:</strong> ₹3,75,000 (remaining 75% SA) + Vested Bonuses + FAB ≈ <strong>₹8,00,000</strong>.<br><strong>Total Received:</strong> ~₹1.25 Lakh (survival) + ~₹8 Lakh (maturity) = <strong>~₹9.25 Lakh</strong>.</p>" }
+        {
+          "type": "paragraph",
+          "text": "<p>Jeevan Tarun is unique because it offers four different options for receiving survival benefits between the ages of 20 and 24, making it highly suitable for funding higher education. You can choose to receive a percentage of the sum assured annually or let it accumulate. Surrender and loan facilities are available after two full years of premium payment. Refer to the <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-jeevan-tarun' target='_blank' rel='noopener noreferrer'>Jeevan Tarun brochure</a> for more.</p><h3>LIC Jeevan Tarun Options Explained</h3><p>This plan's main advantage is its flexibility. At the time of proposal, you must choose one of four options for how the survival benefits are paid out:</p><ul><li><strong>Option 1:</strong> No survival benefit. Receive 100% of the Sum Assured + bonuses at maturity (age 25).</li><li><strong>Option 2:</strong> Receive 5% of the Sum Assured every year from age 20 to 24. At maturity, receive the remaining 75% of the Sum Assured + bonuses.</li><li><strong>Option 3:</strong> Receive 10% of the Sum Assured every year from age 20 to 24. At maturity, receive the remaining 50% of the Sum Assured + bonuses.</li><li><strong>Option 4:</strong> Receive 15% of the Sum Assured every year from age 20 to 24. At maturity, receive the remaining 25% of the Sum Assured + bonuses.</li></ul><h3>Worked Example: Jeevan Tarun Premium & Maturity</h3><p>Let's use our LIC Jeevan Tarun calculator logic for a real-world scenario:</p><ul><li><strong>Child's Age:</strong> 3 years</li><li><strong>Parent's Age:</strong> 30 years</li><li><strong>Sum Assured:</strong> ₹5,00,000</li><li><strong>Policy Term:</strong> 22 years (25 - 3)</li><li><strong>Premium Paying Term:</strong> 17 years (20 - 3)</li><li><strong>Option Chosen:</strong> Option 2 (5% payout yearly from age 20)</li></ul><p><strong>Approx. Yearly Premium:</strong> ₹25,000<br><strong>Total Premium Paid over 17 years:</strong> ~₹4.25 Lakh<br><strong>Survival Benefits:</strong> You receive <strong>₹25,000</strong> every year at ages 20, 21, 22, 23, and 24 (totaling ₹1.25 Lakh).<br><strong>Estimated Maturity Benefit at Age 25:</strong> ₹3,75,000 (remaining 75% SA) + Vested Bonuses + FAB ≈ <strong>₹8,00,000</strong>.<br><strong>Total Received:</strong> ~₹1.25 Lakh (survival) + ~₹8 Lakh (maturity) = <strong>~₹9.25 Lakh</strong>.</p>"
+        }
       ]
     },
     {
@@ -75,7 +78,10 @@
       "title": "How Premium & Maturity are Calculated",
       "description": "Use our calculator to get a personalized estimate or see worked examples below.",
       "content": [
-        { "type": "calculator", "dictionary": {} }
+        {
+          "type": "calculator",
+          "dictionary": {}
+        }
       ]
     },
     {
@@ -83,7 +89,10 @@
       "icon": "GitCompareArrows",
       "title": "LIC Child Plan: Pros & Cons",
       "content": [
-        { "type": "paragraph", "text": "<strong>Benefits:</strong> Guaranteed survival benefits, potential for bonuses, tax benefits under 80C and 10(10D), and a disciplined savings approach. <strong>Drawbacks:</strong> Lower returns compared to equity-linked options like ULIPs or mutual funds, and poor liquidity in the early years." }
+        {
+          "type": "paragraph",
+          "text": "<strong>Benefits:</strong> Guaranteed survival benefits, potential for bonuses, tax benefits under 80C and 10(10D), and a disciplined savings approach. <strong>Drawbacks:</strong> Lower returns compared to equity-linked options like ULIPs or mutual funds, and poor liquidity in the early years."
+        }
       ]
     },
     {
@@ -92,8 +101,8 @@
       "title": "LIC Child Plan vs. Private ULIP Child Plans",
       "content": [
         {
-            "type": "paragraph",
-            "text": "The biggest decision you'll make is choosing between a traditional, guaranteed-return LIC plan and a market-linked ULIP from a private insurer. Here’s how they stack up:"
+          "type": "paragraph",
+          "text": "The biggest decision you'll make is choosing between a traditional, guaranteed-return LIC plan and a market-linked ULIP from a private insurer. Here’s how they stack up:"
         },
         {
           "type": "table",
@@ -107,57 +116,101 @@
           ]
         },
         {
-            "type": "paragraph",
-            "text": "<strong>My Take:</strong> If you want absolute peace of mind and are primarily looking for a safe savings tool, an LIC plan is unbeatable. If you have a higher risk appetite and are aiming for inflation-beating growth over 15+ years, a well-chosen ULIP could potentially generate a much larger corpus for your child."
+          "type": "paragraph",
+          "text": "<strong>My Take:</strong> If you want absolute peace of mind and are primarily looking for a safe savings tool, an LIC plan is unbeatable. If you have a higher risk appetite and are aiming for inflation-beating growth over 15+ years, a well-chosen ULIP could potentially generate a much larger corpus for your child."
         }
       ]
     },
     {
-        "id": "tax-rules",
-        "icon": "FileText",
-        "title": "Tax Treatment, Riders & Nomination",
-        "content": [
-            { "type": "paragraph", "text": "Premiums paid for LIC child plans are eligible for deduction under Section 80C, and maturity/death benefits are generally tax-free under Section 10(10D), subject to conditions. You can add riders like Premium Waiver Benefit, which is highly recommended. Nomination is a straightforward process to ensure the benefit goes to the right person." }
-        ]
+      "id": "tax-rules",
+      "icon": "FileText",
+      "title": "Tax Treatment, Riders & Nomination",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Premiums paid for LIC child plans are eligible for deduction under Section 80C, and maturity/death benefits are generally tax-free under Section 10(10D), subject to conditions. You can add riders like Premium Waiver Benefit, which is highly recommended. Nomination is a straightforward process to ensure the benefit goes to the right person."
+        }
+      ]
     },
     {
-        "id": "how-to-buy",
-        "icon": "BookUser",
-        "title": "How to Buy & Things to Check",
-        "content": [
-            { "type": "list", "items": [
-                "Always verify the plan's UIN and read the official sales brochure.",
-                "Understand the premium paying term vs. the policy term.",
-                "Check the survival benefit payout schedule to ensure it matches your child's milestones."
-            ]}
-        ]
+      "id": "how-to-buy",
+      "icon": "BookUser",
+      "title": "How to Buy & Things to Check",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "Always verify the plan's UIN and read the official sales brochure.",
+            "Understand the premium paying term vs. the policy term.",
+            "Check the survival benefit payout schedule to ensure it matches your child's milestones."
+          ]
+        }
+      ]
     },
     {
       "id": "faq",
       "icon": "HelpCircle",
       "title": "Frequently Asked Questions",
       "content": [
-        { "type": "faq", "items": [
-            { "q": "Which LIC child plan is best for education?", "a": "For flexible higher education funding between ages 20-24, <strong>Jeevan Tarun (934)</strong> is excellent. For staggered payouts for milestones like 12th grade and college years (ages 18, 20, 22), the <strong>New Children’s Money Back Plan (932)</strong> is ideal. For a simple, guaranteed lump sum at a specific age, <strong>Amritbaal (874)</strong> is the best choice." },
-            { "q": "Which is better — LIC Jeevan Tarun or New Children’s Money Back?", "a": "<strong>Jeevan Tarun</strong> is better for flexibility, allowing you to choose how and if you receive payouts between ages 20 and 24. The <strong>New Children's Money Back Plan</strong> has a fixed, rigid payout schedule at ages 18, 20, and 22. Choose Tarun if you want more control over the money flow for higher education." },
-            { "q": "What is LIC Amritbaal Plan 874?", "a": "Amritbaal is a non-participating endowment plan focused on providing a <strong>guaranteed lump sum</strong> for a child's future. Unlike other plans, its returns are not based on variable bonuses but on Guaranteed Additions (₹80 per ₹1000 SA) that accrue each year, making the final maturity amount highly predictable." },
-            { "q": "Is LIC child plan good for daughters?", "a": "Yes, LIC child plans are an excellent and safe way to save for a daughter's education and marriage. They provide guaranteed returns and insurance cover. You can also compare these plans with the government's <strong>Sukanya Samriddhi Yojana (SSY)</strong>, which currently offers a higher, tax-free interest rate specifically for a girl child." },
-            { "q": "What happens if parent dies in LIC child plan?", "a": "If the parent (proposer) has opted for the <strong>Premium Waiver Benefit (PWB)</strong> rider, all future premiums are waived upon their death, but the policy benefits for the child continue uninterrupted. Without this rider, the family would need to continue paying premiums to keep the policy active." },
-            { "q": "Can I surrender LIC child plan early?", "a": "Yes, you can surrender the policy after it acquires a surrender value, typically after paying premiums for two full years. However, surrendering early results in a significant financial loss. It is generally better to make the policy 'Paid-Up' with reduced benefits if you can no longer pay premiums." },
-            { "q": "Is LIC child plan better than ULIP for children?", "a": "It depends on your risk appetite. LIC child plans offer <strong>guaranteed, safe returns</strong>. ULIPs (Unit Linked Insurance Plans) invest in the market and have the potential for much <strong>higher returns</strong>, but they also carry market risk and do not offer guarantees. Choose LIC for safety and ULIPs for higher growth potential." },
-            { "q": "Does LIC child plan give loan facility?", "a": "Yes, most LIC child plans, including Jeevan Tarun and New Children's Money Back, offer a loan facility once the policy has acquired a surrender value (typically after 2-3 years of premium payments). This allows for liquidity without terminating the policy." },
-            { "q": "How to calculate LIC child plan maturity value?", "a": "The maturity value is typically the <strong>Sum Assured + Vested Simple Reversionary Bonuses + Final Additional Bonus (FAB)</strong>. Our calculator provides a close estimate by using illustrative bonus rates based on historical performance." },
-            { "q": "What tax benefits are available under LIC child plan 2025?", "a": "Premiums paid (up to ₹1.5 lakh) are eligible for deduction under <strong>Section 80C</strong> of the Income Tax Act. The maturity amount and survival benefits received are generally tax-free under <strong>Section 10(10D)</strong>, provided the annual premium does not exceed 10% of the sum assured." }
-        ]}
+        {
+          "type": "faq",
+          "items": [
+            {
+              "q": "Which LIC child plan is best for education?",
+              "a": "For flexible higher education funding between ages 20-24, <strong>Jeevan Tarun (934)</strong> is excellent. For staggered payouts for milestones like 12th grade and college years (ages 18, 20, 22), the <strong>New Children’s Money Back Plan (932)</strong> is ideal. For a simple, guaranteed lump sum at a specific age, <strong>Amritbaal (874)</strong> is the best choice."
+            },
+            {
+              "q": "Which is better — LIC Jeevan Tarun or New Children’s Money Back?",
+              "a": "<strong>Jeevan Tarun</strong> is better for flexibility, allowing you to choose how and if you receive payouts between ages 20 and 24. The <strong>New Children's Money Back Plan</strong> has a fixed, rigid payout schedule at ages 18, 20, and 22. Choose Tarun if you want more control over the money flow for higher education."
+            },
+            {
+              "q": "What is LIC Amritbaal Plan 874?",
+              "a": "Amritbaal is a non-participating endowment plan focused on providing a <strong>guaranteed lump sum</strong> for a child's future. Unlike other plans, its returns are not based on variable bonuses but on Guaranteed Additions (₹80 per ₹1000 SA) that accrue each year, making the final maturity amount highly predictable."
+            },
+            {
+              "q": "Is LIC child plan good for daughters?",
+              "a": "Yes, LIC child plans are an excellent and safe way to save for a daughter's education and marriage. They provide guaranteed returns and insurance cover. You can also compare these plans with the government's <strong>Sukanya Samriddhi Yojana (SSY)</strong>, which currently offers a higher, tax-free interest rate specifically for a girl child."
+            },
+            {
+              "q": "What happens if parent dies in LIC child plan?",
+              "a": "If the parent (proposer) has opted for the <strong>Premium Waiver Benefit (PWB)</strong> rider, all future premiums are waived upon their death, but the policy benefits for the child continue uninterrupted. Without this rider, the family would need to continue paying premiums to keep the policy active."
+            },
+            {
+              "q": "Can I surrender LIC child plan early?",
+              "a": "Yes, you can surrender the policy after it acquires a surrender value, typically after paying premiums for two full years. However, surrendering early results in a significant financial loss. It is generally better to make the policy 'Paid-Up' with reduced benefits if you can no longer pay premiums."
+            },
+            {
+              "q": "Is LIC child plan better than ULIP for children?",
+              "a": "It depends on your risk appetite. LIC child plans offer <strong>guaranteed, safe returns</strong>. ULIPs (Unit Linked Insurance Plans) invest in the market and have the potential for much <strong>higher returns</strong>, but they also carry market risk and do not offer guarantees. Choose LIC for safety and ULIPs for higher growth potential."
+            },
+            {
+              "q": "Does LIC child plan give loan facility?",
+              "a": "Yes, most LIC child plans, including Jeevan Tarun and New Children's Money Back, offer a loan facility once the policy has acquired a surrender value (typically after 2-3 years of premium payments). This allows for liquidity without terminating the policy."
+            },
+            {
+              "q": "How to calculate LIC child plan maturity value?",
+              "a": "The maturity value is typically the <strong>Sum Assured + Vested Simple Reversionary Bonuses + Final Additional Bonus (FAB)</strong>. Our calculator provides a close estimate by using illustrative bonus rates based on historical performance."
+            },
+            {
+              "q": "What tax benefits are available under LIC child plan 2025?",
+              "a": "Premiums paid (up to ₹1.5 lakh) are eligible for deduction under <strong>Section 80C</strong> of the Income Tax Act. The maturity amount and survival benefits received are generally tax-free under <strong>Section 10(10D)</strong>, provided the annual premium does not exceed 10% of the sum assured."
+            }
+          ]
+        }
       ]
     },
     {
-        "id": "resources",
-        "icon": "Download",
-        "title": "Resources & Downloads",
-        "content": [
-           { "type": "paragraph", "text": "Download the official LIC brochures and a sample calculation spreadsheet for your records." }
-        ]
+      "id": "resources",
+      "icon": "Download",
+      "title": "Resources & Downloads",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Download the official LIC brochures and a sample calculation spreadsheet for your records."
+        }
+      ]
     }
   ]
 }
+
+    
