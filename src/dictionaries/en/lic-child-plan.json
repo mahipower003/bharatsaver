@@ -2,22 +2,26 @@
 {
   "meta_title": "LIC Child Plan 2025 — Jeevan Tarun, Money Back & Amritbaal Comparison (Calculator Inside)",
   "meta_description": "Compare LIC child plans — Jeevan Tarun, New Children’s Money Back, and Amritbaal. See benefits, premiums, worked examples, tax rules, and download free LIC child plan calculator.",
-  "h1": "LIC Child Plan (2025) — Complete Guide",
-  "intro": "This 2025 LIC child plan comparison helps you choose the best LIC child plan for education and marriage goals. We'll compare LIC's key child plans like Jeevan Tarun (Plan 934), New Children's Money Back Plan (Plan 932), and Amritbaal (Plan 874) to help you make an informed decision.",
+  "h1": "LIC Child Plan (2025) — An Unbiased Financial Planner's Guide",
+  "intro": "<p>As a financial planner, one of the most common questions I get is, “What is the best LIC plan for my child’s future?” It’s a critical decision, and the brochures don't always make it easy. This 2025 guide is my attempt to give you the unvarnished truth. We'll compare LIC's key child plans like <strong>Jeevan Tarun (Plan 934)</strong>, <strong>New Children's Money Back Plan (Plan 932)</strong>, and the new <strong>Amritbaal (Plan 874)</strong> with real numbers and worked examples, so you can choose with confidence.</p>",
   "sections": [
     {
       "id": "quick-comparison",
       "icon": "BarChart",
       "title": "At a Glance: LIC Child Plans Comparison (2025)",
-      "description": "This 2025 LIC child plan comparison helps you choose the best LIC child plan for education and marriage goals. See key differences at a glance.",
+      "description": "This 2025 LIC child plan comparison helps you choose the best LIC child plan for education and marriage goals. See key differences at a glance before we dive deep into the numbers.",
       "content": [
         {
           "type": "table",
-          "headers": ["Plan Name", "Plan No.", "Age Entry", "Policy Term", "Maturity Age", "Key Benefits", "Premium Waiver Rider", "Best For"],
+          "headers": ["Feature", "Jeevan Tarun (Plan 934)", "New Children’s Money Back (932)", "Amritbaal (Plan 874)"],
           "rows": [
-            ["Jeevan Tarun", "934", "90 days - 12 yrs", "25 - Child's Age", "25 yrs", "Flexible survival benefits from age 20-24", "Available", "Higher education funding"],
-            ["New Children’s Money Back", "932", "0 - 12 yrs", "25 - Child's Age", "25 yrs", "Money back at ages 18, 20, 22", "Available", "Staggered education goals"],
-            ["Amritbaal", "874", "30 days - 13 yrs", "Min 5 yrs", "18 to 25 yrs", "Guaranteed Additions, flexible maturity", "Available", "Building a guaranteed corpus"]
+            ["<strong>Primary Goal</strong>", "Flexible Higher Education Funding", "Staggered Payouts for Milestones", "Guaranteed Corpus Building"],
+            ["<strong>Entry Age</strong>", "90 days - 12 yrs", "0 - 12 yrs", "30 days - 13 yrs"],
+            ["<strong>Maturity Age</strong>", "25 years", "25 years", "18 to 25 years (flexible)"],
+            ["<strong>Key Benefit</strong>", "Choice of 4 payout options from age 20-24", "Fixed 20% payouts at ages 18, 20, 22", "Guaranteed Additions (₹80/1000 SA)"],
+            ["<strong>Returns Type</strong>", "Participating (Bonus-linked)", "Participating (Bonus-linked)", "Non-Participating (Guaranteed)"],
+            ["<strong>Premium Waiver Rider</strong>", "Available", "Available", "Available"],
+            ["<strong>Best For</strong>", "Parents wanting control over college funding flow.", "Parents needing funds for 12th grade, college.", "Risk-averse planners wanting a predictable lump sum."]
           ]
         }
       ]
@@ -26,7 +30,6 @@
       "id": "deep-dive-cmbp",
       "icon": "FileText",
       "title": "Deep Dive: LIC’s New Children’s Money Back Plan (932)",
-      "description": "A detailed look at one of LIC's most popular money-back child plans.",
       "content": [
         {
           "type": "paragraph",
@@ -43,20 +46,21 @@
           ]
         },
         {
-            "type": "paragraph",
-            "text": "<p>The final payment at age 25 includes the remaining 40% of the Sum Assured plus all accrued bonuses, providing a substantial amount for post-graduation goals or as a financial head start.</p>"
+          "type": "alert",
+          "variant": "default",
+          "title": "My Take on This Plan",
+          "text": "This plan is excellent for parents who want a disciplined, 'set-it-and-forget-it' approach. The fixed payouts are perfectly timed for major educational expenses. However, its rigidity is also its weakness; you cannot alter this payout schedule."
         }
       ]
     },
     {
       "id": "deep-dive-tarun",
       "icon": "FileText",
-      "title": "Deep Dive: LIC Jeevan Tarun — What Parents Should Know",
-      "description": "Understanding the features and payout flexibility of Jeevan Tarun (Plan 934).",
+      "title": "Deep Dive: LIC Jeevan Tarun — The Flexibility Champion",
       "content": [
         {
           "type": "paragraph",
-          "text": "<p>Jeevan Tarun is unique because it offers four different options for receiving survival benefits between the ages of 20 and 24, making it highly suitable for funding higher education. You can choose to receive a percentage of the sum assured annually or let it accumulate. Surrender and loan facilities are available after two full years of premium payment. Refer to the <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-jeevan-tarun' target='_blank' rel='noopener noreferrer'>Jeevan Tarun brochure</a> for more.</p><h3>LIC Jeevan Tarun Options Explained</h3><p>This plan's main advantage is its flexibility. At the time of proposal, you must choose one of four options for how the survival benefits are paid out:</p><ul><li><strong>Option 1:</strong> No survival benefit. Receive 100% of the Sum Assured + bonuses at maturity (age 25).</li><li><strong>Option 2:</strong> Receive 5% of the Sum Assured every year from age 20 to 24. At maturity, receive the remaining 75% of the Sum Assured + bonuses.</li><li><strong>Option 3:</strong> Receive 10% of the Sum Assured every year from age 20 to 24. At maturity, receive the remaining 50% of the Sum Assured + bonuses.</li><li><strong>Option 4:</strong> Receive 15% of the Sum Assured every year from age 20 to 24. At maturity, receive the remaining 25% of the Sum Assured + bonuses.</li></ul><h3>Worked Example: Jeevan Tarun Premium & Maturity</h3><p>Let's use our LIC Jeevan Tarun calculator logic for a real-world scenario:</p><ul><li><strong>Child's Age:</strong> 3 years</li><li><strong>Parent's Age:</strong> 30 years</li><li><strong>Sum Assured:</strong> ₹5,00,000</li><li><strong>Policy Term:</strong> 22 years (25 - 3)</li><li><strong>Premium Paying Term:</strong> 17 years (20 - 3)</li><li><strong>Option Chosen:</strong> Option 2 (5% payout yearly from age 20)</li></ul><p><strong>Approx. Yearly Premium:</strong> ₹25,000<br><strong>Total Premium Paid over 17 years:</strong> ~₹4.25 Lakh<br><strong>Survival Benefits:</strong> You receive <strong>₹25,000</strong> every year at ages 20, 21, 22, 23, and 24 (totaling ₹1.25 Lakh).<br><strong>Estimated Maturity Benefit at Age 25:</strong> ₹3,75,000 (remaining 75% SA) + Vested Bonuses + FAB ≈ <strong>₹8,00,000</strong>.<br><strong>Total Received:</strong> ~₹1.25 Lakh (survival) + ~₹8 Lakh (maturity) = <strong>~₹9.25 Lakh</strong>.</p>"
+          "text": "<p>Jeevan Tarun (UIN: 512N292V02) is unique because it offers four different options for receiving survival benefits between the ages of 20 and 24, making it highly suitable for funding higher education. You can choose to receive a percentage of the sum assured annually or let it accumulate. Surrender and loan facilities are available after two full years of premium payment. Refer to the <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-jeevan-tarun' target='_blank' rel='noopener noreferrer'>Jeevan Tarun brochure</a> for more.</p><h3>LIC Jeevan Tarun Options Explained</h3><p>This plan's main advantage is its flexibility. At the time of proposal, you must choose one of four options for how the survival benefits are paid out:</p><ul><li><strong>Option 1:</strong> No survival benefit. Receive 100% of the Sum Assured + bonuses at maturity (age 25).</li><li><strong>Option 2:</strong> Receive 5% of the Sum Assured every year from age 20 to 24. At maturity, receive the remaining 75% of the Sum Assured + bonuses.</li><li><strong>Option 3:</strong> Receive 10% of the Sum Assured every year from age 20 to 24. At maturity, receive the remaining 50% of the Sum Assured + bonuses.</li><li><strong>Option 4:</strong> Receive 15% of the Sum Assured every year from age 20 to 24. At maturity, receive the remaining 25% of the Sum Assured + bonuses.</li></ul><h3>Worked Example: Jeevan Tarun Premium & Maturity</h3><p>Let's use our LIC Jeevan Tarun calculator logic for a real-world scenario:</p><ul><li><strong>Child's Age:</strong> 3 years</li><li><strong>Parent's Age:</strong> 30 years</li><li><strong>Sum Assured:</strong> ₹5,00,000</li><li><strong>Policy Term:</strong> 22 years (25 - 3)</li><li><strong>Premium Paying Term:</strong> 17 years (20 - 3)</li><li><strong>Option Chosen:</strong> Option 2 (5% payout yearly from age 20)</li></ul><p><strong>Approx. Yearly Premium:</strong> ₹25,000<br><strong>Total Premium Paid over 17 years:</strong> ~₹4.25 Lakh<br><strong>Survival Benefits:</strong> You receive <strong>₹25,000</strong> every year at ages 20, 21, 22, 23, and 24 (totaling ₹1.25 Lakh).<br><strong>Estimated Maturity Benefit at Age 25:</strong> ₹3,75,000 (remaining 75% SA) + Vested Bonuses + FAB ≈ <strong>₹8,00,000</strong>.<br><strong>Total Received:</strong> ~₹1.25 Lakh (survival) + ~₹8 Lakh (maturity) = <strong>~₹9.25 Lakh</strong>.</p>"
         }
       ]
     },
@@ -64,7 +68,6 @@
       "id": "deep-dive-amritbaal",
       "icon": "FileText",
       "title": "Deep Dive: LIC Amritbaal (Plan 874) — A Modern Approach",
-      "description": "Amritbaal is LIC's newest child plan, focusing on guaranteed corpus building. Here are the details.",
       "content": [
         {
           "type": "paragraph",
@@ -84,18 +87,7 @@
         }
       ]
     },
-    {
-      "id": "pros-cons",
-      "icon": "GitCompareArrows",
-      "title": "LIC Child Plan: Pros & Cons",
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "<strong>Benefits:</strong> Guaranteed survival benefits, potential for bonuses, tax benefits under 80C and 10(10D), and a disciplined savings approach. <strong>Drawbacks:</strong> Lower returns compared to equity-linked options like ULIPs or mutual funds, and poor liquidity in the early years."
-        }
-      ]
-    },
-    {
+     {
       "id": "private-comparison",
       "icon": "GitCompareArrows",
       "title": "LIC Child Plan vs. Private ULIP Child Plans",
@@ -117,7 +109,7 @@
         },
         {
           "type": "paragraph",
-          "text": "<strong>My Take:</strong> If you want absolute peace of mind and are primarily looking for a safe savings tool, an LIC plan is unbeatable. If you have a higher risk appetite and are aiming for inflation-beating growth over 15+ years, a well-chosen ULIP could potentially generate a much larger corpus for your child."
+          "text": "<br><strong>My Take:</strong> If you want absolute peace of mind and are primarily looking for a safe savings tool, an LIC plan is unbeatable. If you have a higher risk appetite and are aiming for inflation-beating growth over 15+ years, a well-chosen ULIP could potentially generate a much larger corpus for your child."
         }
       ]
     },
