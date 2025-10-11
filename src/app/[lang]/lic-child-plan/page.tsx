@@ -13,8 +13,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     const pageUrl = `${siteUrl}/${params.lang}/lic-child-plan`;
     
     // SEO Optimized Metadata
-    const title = "LIC Child Plan (2025) — Benefits, Calculator, Comparison (Jeevan Tarun & New Children’s Money Back)";
-    const description = "Complete guide to LIC child plans (Jeevan Tarun, New Children’s Money Back). Compare benefits, see premium & maturity examples, use our free LIC child plan calculator, and learn tax & surrender rules. Free PDF calculator inside.";
+    const title = "LIC Child Plan 2025 — Jeevan Tarun, Money Back & Amritbaal Comparison (Calculator Inside)";
+    const description = "Compare LIC child plans — Jeevan Tarun, New Children’s Money Back, and Amritbaal. See benefits, premiums, worked examples, tax rules, and download free LIC child plan calculator.";
     
     return {
         title: title,
