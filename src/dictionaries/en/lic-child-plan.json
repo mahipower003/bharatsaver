@@ -3,7 +3,7 @@
   "meta_title": "LIC Child Plan 2025 — Jeevan Tarun, Money Back & Amritbaal Comparison (Calculator Inside)",
   "meta_description": "Compare LIC child plans — Jeevan Tarun, New Children’s Money Back, and Amritbaal. See benefits, premiums, worked examples, tax rules, and download free LIC child plan calculator.",
   "h1": "LIC Child Plan (2025) — Complete Guide",
-  "intro": "This page covers everything you need to know about choosing the best LIC plan for your child's future, whether you're a parent or grandparent. This 2025 LIC child plan comparison helps you choose the best LIC child plan for education and marriage goals. We'll compare LIC's key child plans like Jeevan Tarun (Plan 934), New Children's Money Back Plan (Plan 932), and Amritbaal (Plan 874) to help you make an informed decision.",
+  "intro": "This 2025 LIC child plan comparison helps you choose the best LIC child plan for education and marriage goals. We'll compare LIC's key child plans like Jeevan Tarun (Plan 934), New Children's Money Back Plan (Plan 932), and Amritbaal (Plan 874) to help you make an informed decision.",
   "sections": [
     {
       "id": "quick-comparison",
@@ -89,9 +89,27 @@
     {
       "id": "private-comparison",
       "icon": "GitCompareArrows",
-      "title": "LIC vs. Private Child Plans — Which to Pick?",
+      "title": "LIC Child Plan vs. Private ULIP Child Plans",
       "content": [
-        { "type": "paragraph", "text": "LIC offers unmatched trust and sovereign guarantee, while private players like HDFC, ICICI, and Bajaj often provide more flexibility and potentially higher returns through ULIPs. If safety and guarantees are your priority, LIC is a solid choice. If you're comfortable with market risks for higher growth, a private ULIP might be a better fit." }
+        {
+            "type": "paragraph",
+            "text": "The biggest decision you'll make is choosing between a traditional, guaranteed-return LIC plan and a market-linked ULIP from a private insurer. Here’s how they stack up:"
+        },
+        {
+          "type": "table",
+          "headers": ["Feature", "LIC Child Plan (e.g., Jeevan Tarun)", "Private ULIP (e.g., ICICI Smart Kid)"],
+          "rows": [
+            ["<strong>Return Type</strong>", "Guaranteed + Non-Guaranteed Bonus (Low Risk)", "Market-Linked (Higher Risk, Higher Potential)"],
+            ["<strong>Transparency</strong>", "Opaque; bonus-dependent", "Transparent; based on NAV"],
+            ["<strong>Flexibility</strong>", "Limited (options chosen at start)", "High (fund switching, top-ups)"],
+            ["<strong>Charges</strong>", "Embedded in premium (less visible)", "Explicit (premium allocation, policy admin, fund management)"],
+            ["<strong>Best For</strong>", "Risk-averse parents seeking guarantees", "Parents comfortable with equity risk for wealth creation"]
+          ]
+        },
+        {
+            "type": "paragraph",
+            "text": "<strong>My Take:</strong> If you want absolute peace of mind and are primarily looking for a safe savings tool, an LIC plan is unbeatable. If you have a higher risk appetite and are aiming for inflation-beating growth over 15+ years, a well-chosen ULIP could potentially generate a much larger corpus for your child."
+        }
       ]
     },
     {
