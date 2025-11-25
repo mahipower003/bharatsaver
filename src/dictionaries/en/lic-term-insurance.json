@@ -63,7 +63,7 @@
                         "<strong>Affordable Premiums:</strong> For a non-smoker, a high-value <strong>lic term insurance 1 crore</strong> policy can be secured for a very competitive monthly premium, especially when purchased online.",
                         "<strong>Flexible Payout Options:</strong> Nominees can choose to receive the death benefit as a lump sum, as a regular income, or a combination of both, providing flexibility to manage finances.",
                         "<strong>Rider Availability:</strong> You can enhance your protection by adding riders for accidental death, disability, or critical illness.",
-                        "<strong>Tax Benefits:</strong> Premiums paid are eligible for tax deductions under Section 80C, and the death benefit payout to the nominee is tax-free under Section 10(10D).",
+                        "<strong>Tax Benefits:</strong> Premiums paid are eligible for tax deductions under Section 80C, and the death benefit payout to the nominee is tax-free under Section 10(10D). Compare your options with our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a>.",
                         "<strong>Multiple Premium Payment Terms:</strong> Choose from Single, Regular, or Limited premium payment terms to align with your financial capacity."
                     ]
                 }
@@ -91,7 +91,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "Small changes (1–2 years of age, smoker → non-smoker) can change monthly premium noticeably — always pull an instant quote."
+                    "text": "Small changes (1–2 years of age, smoker → non-smoker) can change monthly premium noticeably — always pull an instant quote using our main <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a>."
                 }
             ]
         },
@@ -118,7 +118,7 @@
             "icon": "HelpCircle",
             "title": "Riders & Add-ons — What to Consider (and What to Avoid)",
             "content": [
-                { "type": "structured_content", "items": [
+                 { "type": "structured_content", "items": [
                     {"title":"Worth considering", "text": "<ul><li><strong>Accidental Death & Disability (AD&DB):</strong> inexpensive and high incremental protection.</li><li><strong>Critical Illness (CI):</strong> useful if you don’t have robust health cover.</li></ul>"},
                     {"title":"Use caution", "text":"<ul><li><strong>Return-of-Premium (ROP):</strong> high cost; financially often inferior to buying pure term + investing the difference.</li><li><strong>Excessive layering of riders:</strong> can push your monthly outlay much higher; buy only what materially improves your family’s protection.</li></ul>"}
                 ]}
@@ -182,6 +182,19 @@
             ]
         },
         {
+            "id": "also-read",
+            "icon": "BookUser",
+            "title": "Also Read: Related LIC Plan Guides",
+            "content": [
+                { "type": "paragraph", "text": "While term insurance provides pure protection, LIC's endowment plans offer a combination of savings and insurance. Compare them here:" },
+                { "type": "list", "items": [
+                    "<strong><a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>LIC Jeevan Anand</a>:</strong> A classic plan that combines savings with whole-life cover.",
+                    "<strong><a href='/{lang}/lic-jeevan-umang-calculator' class='text-primary hover:underline'>LIC Jeevan Umang</a>:</strong> Provides a guaranteed income for life after the premium paying term.",
+                    "<strong><a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>LIC Jeevan Labh</a>:</strong> A limited premium payment plan for goal-based savings."
+                ]}
+            ]
+        },
+        {
             "id": "conclusion",
             "icon": "Star",
             "title": "Conclusion & Recommended Next Step",
@@ -212,8 +225,8 @@
           {"@type":"HowToStep","name":"Calculate premium","text":"Use the calculator to set sum assured, age and term."},
           {"@type":"HowToStep","name":"Visit LIC e-services portal","text":"Choose the New Tech-Term option and start application."},
           {"@type":"HowToStep","name":"Fill the form","text":"Provide personal, health and nominee details accurately."},
-          {"@type":"HowToStep","name":"Upload documents and pay","text":"Upload PAN/Aadhaar and pay the first premium online."},
-          {"@type":"HowToStep","name":"Medical check (if required)","text":"Complete any medical tests requested by LIC to finalize cover."}
+          {"@type": "HowToStep", "name": "Upload Documents & Pay", "text": "Upload PAN/Aadhaar and necessary documents; pay the first premium online."},
+          {"@type": "HowToStep", "name": "Medical check (if required)", "text": "Complete any medical tests requested by LIC to finalize cover."}
         ]
     },
     "article_schema": {
