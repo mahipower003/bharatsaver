@@ -40,7 +40,15 @@
   },
   "what_to_do": {
     "h2": "What to Do If You Have High Overlap",
-    "body": "If you find a high overlap, don't panic. Consider replacing one of the funds with another that has a different strategy or market-cap focus. For example, if two large-cap funds overlap, you might switch one to a mid-cap or a sector-specific fund to achieve true diversification."
+    "body": "If you find a high overlap, don't panic. Consider replacing one of the funds with another that has a different strategy or market-cap focus. For example, if two large-cap funds overlap, you might switch one to a mid-cap or a sector-specific fund to achieve true diversification. Our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>Mutual Fund Screener</a> can help you find funds with different strategies."
+  },
+  "related_tools": {
+    "h2": "Related Tools & Guides",
+    "links": [
+        { "href": "/mutual-fund-screener", "title": "Mutual Fund Screener", "description": "Filter and find new funds to improve your portfolio's diversification." },
+        { "href": "/retirement-corpus-calculator", "title": "Retirement Corpus Calculator", "description": "See how your mutual fund investments fit into your overall retirement plan." },
+        { "href": "/tax-regime-calculator", "title": "Tax Regime Calculator", "description": "Understand the tax implications of your mutual fund gains." }
+    ]
   },
   "faq": {
     "h2": "Frequently Asked Questions",
@@ -62,5 +70,3 @@
       "min_weight_header": "Min. Weight"
   }
 }
-
-    
