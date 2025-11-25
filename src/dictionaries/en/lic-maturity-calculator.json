@@ -1,4 +1,3 @@
-
 {
   "meta_title": "LIC Maturity Calculator — Calculate Your LIC Policy Maturity Online (Free)",
   "meta_description": "Use our free LIC maturity calculator to estimate maturity, surrender and paid-up values for LIC plans. Enter sum assured, term, bonus rate & get instant downloadable results.",
@@ -227,9 +226,9 @@
     },
     {
       "id": "plan-specifics",
-      "icon": "ShieldCheck",
-      "title": "Plan-Specific Maturity Calculators",
-      "description": "Different plans have unique features. Our calculator presets help adjust for these, but here’s a quick guide to our dedicated tools:",
+      "icon": "LinkIcon",
+      "title": "Also Read: Related Calculators",
+      "description": "Explore our other tools to get a complete financial picture.",
       "content": [
         {
           "type": "card_link",
@@ -244,6 +243,13 @@
           "title": "LIC Single Premium Calculator",
           "description": "For one-time lump sum investments.",
           "href": "/lic-single-premium-endowment-calculator"
+        },
+        {
+           "type": "card_link",
+           "icon": "FileText",
+           "title": "LIC Surrender Value Calculator",
+           "description": "Understand the financial implications before you surrender a policy.",
+           "href": "/lic-surrender-value-calculator"
         },
         {
           "type": "card_link",
