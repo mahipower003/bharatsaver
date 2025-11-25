@@ -3,7 +3,7 @@
     "meta_title": "LIC Jeevan Anand Calculator (Plan 915) — Premium, Maturity & Surrender Estimates",
     "meta_description": "I built this free LIC Jeevan Anand calculator (Plan 915) to give you the unvarnished truth on premiums, maturity, and surrender values. Includes worked examples & PDF download.",
     "h1": "I Built This LIC Jeevan Anand Calculator to Give You the Unvarnished Truth (2025)",
-    "top_cta": "<p><strong>Get an instant estimate:</strong> Enter your plan, sum assured and term — click <a href=\"#calculator-widget\">Calculate</a> to view maturity, surrender and paid-up values. <a href=\"#download\">Download result (PDF)</a> • <a href=\"/contact\">Book a CFP call</a></p>",
+    "top_cta": "<p><strong>Get an instant estimate:</strong> Enter your plan, sum assured and term — click <a href=\"#calculator-widget\">Calculate</a> to view maturity, surrender and paid-up values. <a href=\"#download\">Download result (PDF)</a> • <a href=\"/{lang}/contact\">Book a CFP call</a></p>",
     "tool": {
         "title": "Jeevan Anand Calculator (Plan 915)",
         "form_description": "This isn't just another calculator. I've designed it to give you the clarity that LIC documents often don't. Let's get started.",
@@ -171,15 +171,15 @@
                         { "q": "What is the policy term in LIC Jeevan Anand?", "a": "The policy term is the duration for which you pay premiums and are covered for the primary benefits. For Plan 915, it can range from 15 to 35 years. A unique feature is that the life cover (equal to the Sum Assured) continues even after the policy term, until the policyholder's death." }
                     ]}
                 ]
-            },
-             {
-                "id": "next-steps",
-                "icon": "BookUser",
-                "title": "Next steps & CTAs (download PDF, book CFP call, compare plans)",
-                "content": [
-                    {"type":"paragraph", "text": "<p>You've got the numbers, now what? I suggest you download a PDF of your results for your records. If you're still weighing your options, you can use my other calculators to compare this plan against alternatives. And if you're ready to move forward, the next step is to talk to a qualified financial advisor or an LIC agent.</p>"}
-                ]
             }
+        ]
+    },
+    "related_calculators": {
+        "title": "Also Read: Compare with Other Popular Plans",
+        "links": [
+            { "title": "LIC Jeevan Labh Calculator", "description": "Compare against this popular limited-pay endowment plan.", "href": "/lic-jeevan-labh-calculator" },
+            { "title": "LIC Jeevan Umang Calculator", "description": "The original '8% for life' guaranteed income plan.", "href": "/lic-jeevan-umang-calculator" },
+            { "title": "LIC Maturity Calculator", "description": "Estimate maturity for any LIC plan.", "href": "/lic-maturity-calculator" }
         ]
     }
 }
