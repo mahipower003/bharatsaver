@@ -76,7 +76,7 @@
     },
     {
       "question": "Is the pension from APY taxable?",
-      "answer": "Yes, the pension received under APY is considered as income and is taxable as per the applicable income tax slabs."
+      "answer": "Yes, the pension received under APY is considered as income and is taxable as per the applicable income tax slabs. You can use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to check your slab."
     }
   ],
   "conclusion": {
