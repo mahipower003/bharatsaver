@@ -1,3 +1,4 @@
+
 {
   "h1": "Loan Optimization Calculator India 2025 — EMI, Prepayment & Refinance Savings",
   "summary": "This guide + interactive calculator helps you answer: How can I minimize total interest, reduce my EMI or tenure, and make the best choice between prepaying, refinancing, or investing my surplus?",
@@ -63,7 +64,7 @@
   },
   "prepay_vs_invest": {
     "h2": "The Big Question: Prepay the Loan or Invest the Surplus?",
-    "body": "<p>This is a classic financial dilemma. The answer depends on your risk appetite and the numbers. The mathematical rule is: <strong>If the post-tax return on your investment is higher than your loan interest rate, you should invest. If not, prepay the loan.</strong></p><p><strong>Example:</strong> Your home loan is at 8.5%. Can you find an investment that consistently and safely delivers more than 8.5% after taxes? A fixed deposit giving 7% (which is ~4.9% post-tax) is not a good option. An equity mutual fund SIP might give 12% returns, but it comes with market risk. Prepaying a loan offers a guaranteed, risk-free 'return' equal to your interest rate.</p>"
+    "body": "<p>This is a classic financial dilemma. The answer depends on your risk appetite and the numbers. The mathematical rule is: <strong>If the post-tax return on your investment is higher than your loan interest rate, you should invest. If not, prepay the loan.</strong></p><p><strong>Example:</strong> Your home loan is at 8.5%. Can you find an investment that consistently and safely delivers more than 8.5% after taxes? A fixed deposit giving 7% (which is ~4.9% post-tax) is not a good option. An equity mutual fund SIP might give 12% returns, but it comes with market risk. Prepaying a loan offers a guaranteed, risk-free 'return' equal to your interest rate. Use our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>Mutual Fund Screener</a> to explore options.</p>"
   },
   "comparison_table": {
     "title": "Prepay vs. Invest: Decision Matrix",
@@ -81,7 +82,7 @@
   },
   "tax_notes": {
     "h2": "Important Tax Considerations",
-    "body": "<p>For a home loan, the principal repayment is eligible for deduction under Section 80C (up to ₹1.5 lakh) and the interest paid is eligible for deduction under Section 24(b) (up to ₹2 lakh for a self-occupied property). While prepaying your loan is financially prudent, be aware that paying it off too quickly means you can no longer claim these tax benefits for the full original tenure. Always factor this into your decision.</p>"
+    "body": "<p>For a home loan, the principal repayment is eligible for deduction under Section 80C (up to ₹1.5 lakh) and the interest paid is eligible for deduction under Section 24(b) (up to ₹2 lakh for a self-occupied property). While prepaying your loan is financially prudent, be aware that paying it off too quickly means you can no longer claim these tax benefits for the full original tenure. Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>Old vs New Tax Regime Calculator</a> to see how this impacts your decision.</p>"
   },
   "faq": {
     "h2": "Frequently Asked Questions",
@@ -104,9 +105,18 @@
       }
     ]
   },
+  "related_tools": {
+    "h2": "Also Read: Related Tools & Guides",
+    "links": [
+      { "href": "/tax-regime-calculator", "title": "Old vs New Tax Regime Calculator", "description": "See if your loan deductions make the Old Regime better for you." },
+      { "href": "/retirement-corpus-calculator", "title": "Retirement Corpus Calculator", "description": "Plan how becoming debt-free faster impacts your retirement goals." },
+      { "href": "/ppf-calculator", "title": "PPF Calculator", "description": "Compare risk-free PPF returns against your loan's interest rate." }
+    ]
+  },
   "conclusion": {
     "title": "Take Control of Your Debt",
     "body": "Becoming debt-free is a key milestone on the path to financial independence. By using this optimizer to strategically prepay or refinance your loans, you can save lakhs in interest and significantly shorten your journey to financial freedom. Play with the numbers and find the strategy that works best for you."
   }
 }
+
     

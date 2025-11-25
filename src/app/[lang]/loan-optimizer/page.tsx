@@ -245,6 +245,26 @@ export default async function LoanOptimizerPage({ params }: { params: { lang: Lo
                     </Accordion>
                 </CardContent>
             </Card>
+
+            {pageDict.related_tools && (
+              <Card>
+                <CardHeader>
+                    <CardTitle className="flex items-center gap-3"><HelpCircle className="h-6 w-6 text-primary" />{pageDict.related_tools.h2}</CardTitle>
+                </CardHeader>
+                <CardContent className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  {pageDict.related_tools.links.map((link: any, index: number) => (
+                    <Link key={index} href={`/${params.lang}${link.href}`} className="group block">
+                       <Card className="h-full hover:shadow-md transition-shadow">
+                        <CardHeader>
+                          <CardTitle className="text-lg">{link.title}</CardTitle>
+                          <p className="text-sm text-muted-foreground mt-1">{link.description}</p>
+                        </CardHeader>
+                      </Card>
+                    </Link>
+                  ))}
+                </CardContent>
+              </Card>
+            )}
         </div>
         
         <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
@@ -265,4 +285,5 @@ export default async function LoanOptimizerPage({ params }: { params: { lang: Lo
     </div>
   );
 }
+
     
