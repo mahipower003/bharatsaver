@@ -1,4 +1,3 @@
-
 'use client';
 
 import { LicNewJeevanAnandCalculator } from "@/components/calculators/LicNewJeevanAnandCalculator";
@@ -11,6 +10,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { CheckCircle, HelpCircle, ShieldCheck, TrendingUp, SlidersHorizontal, BarChart2, StepForward, GitCompareArrows, FileText, Users, BookUser, Star, Calculator } from "lucide-react";
 import { Alert, AlertTitle, AlertDescription } from '@/components/ui/alert';
+import Link from "next/link";
 
 function getIcon(iconName: string) {
     switch (iconName) {
@@ -52,17 +52,17 @@ export default function LicJeevanAnandCalculatorPageClient({
                 {Icon && <Icon className="h-8 w-8 text-primary" />}
                 <h2 className="text-2xl font-bold">{section.title}</h2>
               </CardTitle>
-               {section.description && <CardDescription dangerouslySetInnerHTML={{ __html: section.description }} />}
+               {section.description && <CardDescription dangerouslySetInnerHTML={{ __html: section.description.replace(/{lang}/g, params.lang) }} />}
             </CardHeader>
             <CardContent>
               {section.content.map((item: any, idx: number) => {
                 switch (item.type) {
                   case 'paragraph':
-                    return <div key={idx} className="prose dark:prose-invert max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: item.text }} />;
+                    return <div key={idx} className="prose dark:prose-invert max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: item.text.replace(/{lang}/g, params.lang) }} />;
                   case 'list':
                     return (
                       <ul key={idx} className="list-disc pl-5 space-y-2 text-muted-foreground prose dark:prose-invert max-w-none">
-                        {item.items.map((li: string, liIdx: number) => <li key={liIdx} dangerouslySetInnerHTML={{ __html: li }} />)}
+                        {item.items.map((li: string, liIdx: number) => <li key={liIdx} dangerouslySetInnerHTML={{ __html: li.replace(/{lang}/g, params.lang) }} />)}
                       </ul>
                     );
                   case 'table':
@@ -77,12 +77,12 @@ export default function LicJeevanAnandCalculatorPageClient({
                             <TableBody>
                             {item.rows.map((row: string[], rIdx: number) => (
                                 <TableRow key={rIdx}>
-                                {row.map((cell: string, cIdx: number) => <TableCell key={cIdx} dangerouslySetInnerHTML={{ __html: cell }} />)}
+                                {row.map((cell: string, cIdx: number) => <TableCell key={cIdx} dangerouslySetInnerHTML={{ __html: cell.replace(/{lang}/g, params.lang) }} />)}
                                 </TableRow>
                             ))}
                             </TableBody>
                         </Table>
-                        {item.footer && <p className="text-xs text-muted-foreground mt-2 italic" dangerouslySetInnerHTML={{ __html: item.footer }} />}
+                        {item.footer && <p className="text-xs text-muted-foreground mt-2 italic" dangerouslySetInnerHTML={{ __html: item.footer.replace(/{lang}/g, params.lang) }} />}
                         </div>
                     );
                   case 'steps':
@@ -105,7 +105,7 @@ export default function LicJeevanAnandCalculatorPageClient({
                             {item.items.map((example: {title: string, body: string}, eIdx: number) => (
                                 <div key={eIdx} className="bg-muted/50 p-4 rounded-lg">
                                     <h3 className="font-semibold text-lg">{example.title}</h3>
-                                    <div className="mt-2 text-muted-foreground prose prose-sm dark:prose-invert max-w-none" dangerouslySetInnerHTML={{__html: example.body}}></div>
+                                    <div className="mt-2 text-muted-foreground prose prose-sm dark:prose-invert max-w-none" dangerouslySetInnerHTML={{__html: example.body.replace(/{lang}/g, params.lang)}}></div>
                                 </div>
                             ))}
                         </div>
@@ -116,13 +116,13 @@ export default function LicJeevanAnandCalculatorPageClient({
                             {item.items.map((faq: {q: string, a: string}, qIdx: number) => (
                                 <AccordionItem key={qIdx} value={`item-${qIdx}`}>
                                     <AccordionTrigger>{faq.q}</AccordionTrigger>
-                                    <AccordionContent><p dangerouslySetInnerHTML={{__html: faq.a}} /></AccordionContent>
+                                    <AccordionContent><p dangerouslySetInnerHTML={{__html: faq.a.replace(/{lang}/g, params.lang)}} /></AccordionContent>
                                 </AccordionItem>
                             ))}
                         </Accordion>
                     );
                   case 'alert':
-                    return <Alert key={idx} variant={item.variant || 'default'}><AlertTitle>{item.title}</AlertTitle><AlertDescription dangerouslySetInnerHTML={{ __html: item.text }} /></Alert>;
+                    return <Alert key={idx} variant={item.variant || 'default'}><AlertTitle>{item.title}</AlertTitle><AlertDescription dangerouslySetInnerHTML={{ __html: item.text.replace(/{lang}/g, params.lang) }} /></Alert>;
                   default:
                     return null;
                 }
@@ -139,7 +139,7 @@ export default function LicJeevanAnandCalculatorPageClient({
       <div className="mx-auto max-w-5xl">
         <header className="text-center mb-8 print-hide">
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{__html: pageDict.h1}} />
-            {pageDict.top_cta && <div className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.top_cta.replace('#calculator', '#calculator-widget').replace('"/book-cfp"', '"/contact"') }} />}
+            {pageDict.top_cta && <div className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.top_cta.replace(/{lang}/g, params.lang) }} />}
         </header>
         
         <div id="calculator-widget">
@@ -147,6 +147,29 @@ export default function LicJeevanAnandCalculatorPageClient({
         </div>
 
         <ArticleContent />
+
+        {pageDict.related_calculators && (
+          <Card className="mt-12 shadow-lg">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3">
+                <Calculator className="h-8 w-8 text-primary" />
+                <h2 className="text-2xl font-bold">{pageDict.related_calculators.title}</h2>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {pageDict.related_calculators.links.map((link: any, index: number) => (
+                <Link key={index} href={`/${params.lang}${link.href}`} className="block group">
+                  <Card className="h-full hover:shadow-md transition-shadow">
+                    <CardHeader>
+                      <CardTitle className="text-lg">{link.title}</CardTitle>
+                      <p className="text-sm text-muted-foreground mt-1">{link.description}</p>
+                    </CardHeader>
+                  </Card>
+                </Link>
+              ))}
+            </CardContent>
+          </Card>
+        )}
         
         {pageDict.article.conclusion && (
             <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
@@ -157,7 +180,7 @@ export default function LicJeevanAnandCalculatorPageClient({
                     </CardTitle>
                 </CardHeader>
                 <CardContent>
-                    <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.article.conclusion.body }}></p>
+                    <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.article.conclusion.body.replace(/{lang}/g, params.lang) }}></p>
                 </CardContent>
             </Card>
         )}
