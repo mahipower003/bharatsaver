@@ -89,6 +89,7 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-NMDXQFK7');
           `}
         </Script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6935097890040585" crossOrigin="anonymous"></script>
         <link rel="icon" href="/icon.svg" type="image/svg+xml" sizes="any" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
       </head>
