@@ -18,10 +18,11 @@ export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
 }
 
-export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dict = (await import(`@/dictionaries/${params.lang}/mutual-fund-overlap-calculator.json`)).default;
+export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const dict = (await import(`@/dictionaries/${lang}/mutual-fund-overlap-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/${params.lang}/mutual-fund-overlap-calculator`;
+  const pageUrl = `${siteUrl}/${lang}/mutual-fund-overlap-calculator`;
   
   const title = dict.meta_title;
   const description = dict.meta_description;
@@ -40,7 +41,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     "@context":"https://schema.org",
     "@type":"Article",
     "headline": dict.h1,
-    "author":{"@type":"Person","name":"Mahesh Chaube","jobTitle":"CFP","url":`${siteUrl}/${params.lang}/author/mahesh-chaube`},
+    "author":{"@type":"Person","name":"Mahesh Chaube","jobTitle":"CFP","url":`${siteUrl}/${lang}/author/mahesh-chaube`},
     "datePublished":"2025-09-01","dateModified":"2025-09-12",
     "publisher":{"@type":"Organization","name":"BharatSaver","logo":{"@type":"ImageObject","url":`${siteUrl}/icon.svg`}}
   };
@@ -74,9 +75,10 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   };
 }
 
-export default async function MutualFundOverlapCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang);
-  const dict = (await import(`@/dictionaries/${params.lang}/mutual-fund-overlap-calculator.json`)).default;
+export default async function MutualFundOverlapCalculatorPage({ params }: { params: Promise<{ lang: Locale }>}) {
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
+  const dict = (await import(`@/dictionaries/${lang}/mutual-fund-overlap-calculator.json`)).default;
   const liveExample = dict.live_example;
   
   return (
@@ -163,7 +165,7 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
                     <CardTitle className="flex items-center gap-3"><CheckCircle className="h-6 w-6 text-primary" />{dict.what_to_do.h2}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.what_to_do.body.replace(/{lang}/g, params.lang) }} />
+                  <div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.what_to_do.body.replace(/{lang}/g, lang) }} />
                   <div className="my-6">
                     <Image src="/images/Mutual Fund Overlap decision .png" alt="Decision flowchart for mutual fund overlap" width={800} height={500} className="rounded-lg border shadow-md mx-auto" />
                   </div>
@@ -177,7 +179,7 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
                 </CardHeader>
                 <CardContent className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {dict.related_tools.links.map((link: any, index: number) => (
-                    <Link key={index} href={`/${params.lang}${link.href}`} className="group block">
+                    <Link key={index} href={`/${lang}${link.href}`} className="group block">
                        <Card className="h-full hover:shadow-md transition-shadow">
                         <CardHeader>
                           <CardTitle className="text-lg">{link.title}</CardTitle>
@@ -216,7 +218,7 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
             </CardHeader>
             <CardContent className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dict.methodology.body }}/>
         </Card>
-        <FooterCta dictionary={dictionary.footer_cta} lang={params.lang} />
+        <FooterCta dictionary={dictionary.footer_cta} lang={lang} />
       </div>
     </div>
   );

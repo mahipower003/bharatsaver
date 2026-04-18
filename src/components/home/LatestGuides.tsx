@@ -15,7 +15,7 @@ export function LatestGuides({ dictionary }: LatestGuidesProps) {
       title: dictionary.guide1_title,
       subtitle: dictionary.guide1_subtitle,
       link: '/guides',
-      image: '/images/guide-1.png',
+      image: '/images/fdvspf-calculator-online.png',
       alt: 'A person reviewing financial documents to compare PPF and FD investment options.',
       hint: 'finance documents'
     },
@@ -23,7 +23,7 @@ export function LatestGuides({ dictionary }: LatestGuidesProps) {
       title: dictionary.guide2_title,
       subtitle: dictionary.guide2_subtitle,
       link: '/guides',
-      image: '/images/guide-2.png',
+      image: '/images/calculate-ssy-online.png',
       alt: 'A happy young girl wearing a graduation cap, symbolizing planning for education with Sukanya Samriddhi Yojana.',
       hint: 'child education'
     },
@@ -31,7 +31,7 @@ export function LatestGuides({ dictionary }: LatestGuidesProps) {
       title: dictionary.guide3_title,
       subtitle: dictionary.guide3_subtitle,
       link: '/guides',
-      image: '/images/guide-3.png',
+      image: '/images/Old vs New Tax Regime Calculator.png',
       alt: 'A comparison chart showing the old and new tax regimes side-by-side to help with financial decisions.',
       hint: 'tax comparison'
     },

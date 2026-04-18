@@ -17,10 +17,11 @@ export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
 }
 
-export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const pageDict = (await import(`@/dictionaries/${params.lang}/loan-optimization-calculator.json`)).default;
+export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const pageDict = (await import(`@/dictionaries/${lang}/loan-optimization-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/${params.lang}/loan-optimizer`;
+  const pageUrl = `${siteUrl}/${lang}/loan-optimizer`;
   
   const faqSchema = {
     "@context": "https://schema.org",
@@ -63,7 +64,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     "author": {
       "@type": "Person",
       "name": "Mahesh Chaube, CFP",
-      "url": `${siteUrl}/${params.lang}/author/mahesh-chaube`,
+      "url": `${siteUrl}/${lang}/author/mahesh-chaube`,
     },
     "publisher": {
       "@type": "Organization",
@@ -98,18 +99,19 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   };
 }
 
-export default async function LoanOptimizerPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang);
-  const pageDict = (await import(`@/dictionaries/${params.lang}/loan-optimization-calculator.json`)).default;
+export default async function LoanOptimizerPage({ params }: { params: Promise<{ lang: Locale }>}) {
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
+  const pageDict = (await import(`@/dictionaries/${lang}/loan-optimization-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${params.lang}` },
-      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${params.lang}/calculators` },
-      { '@type': 'ListItem', position: 3, name: 'Loan Optimization Calculator', item: `${siteUrl}/${params.lang}/loan-optimizer` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${lang}` },
+      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${lang}/calculators` },
+      { '@type': 'ListItem', position: 3, name: 'Loan Optimization Calculator', item: `${siteUrl}/${lang}/loan-optimizer` },
     ],
   };
 
@@ -253,7 +255,7 @@ export default async function LoanOptimizerPage({ params }: { params: { lang: Lo
                 </CardHeader>
                 <CardContent className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {pageDict.related_tools.links.map((link: any, index: number) => (
-                    <Link key={index} href={`/${params.lang}${link.href}`} className="group block">
+                    <Link key={index} href={`/${lang}${link.href}`} className="group block">
                        <Card className="h-full hover:shadow-md transition-shadow">
                         <CardHeader>
                           <CardTitle className="text-lg">{link.title}</CardTitle>
@@ -280,7 +282,7 @@ export default async function LoanOptimizerPage({ params }: { params: { lang: Lo
         </Card>
 
         <AuthorCard dictionary={dictionary.author_card} />
-        <FooterCta dictionary={dictionary.footer_cta} lang={params.lang} />
+        <FooterCta dictionary={dictionary.footer_cta} lang={lang} />
       </div>
     </div>
   );

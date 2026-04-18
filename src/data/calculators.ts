@@ -209,4 +209,34 @@ export const calculators: CalculatorType[] = [
     lastModified: '2024-08-05',
     image: '/images/PPF-NPS-FD-SSY-Scheme-selector.png'
   },
+  {
+    slug: 'lic-child-plan',
+    title: 'LIC Child Plan Calculator',
+    description: 'Calculate premiums and benefits for LIC child insurance plans.',
+    summary: 'Use our free LIC Child Plan Calculator to estimate premiums, maturity benefits, and returns for child insurance policies. Plan for your child\'s future with confidence.',
+    icon: Baby,
+    link_text: 'Calculate Now',
+    lastModified: '2024-10-20',
+    image: '/images/lic-child-plan-calculator.png'
+  },
+  {
+    slug: 'lic-new-jeevan-anand-calculator',
+    title: 'LIC New Jeevan Anand Calculator',
+    description: 'Estimate premium & maturity for LIC\'s New Jeevan Anand (Plan 915).',
+    summary: 'Use our free LIC New Jeevan Anand calculator to estimate premiums, maturity, surrender and paid-up values for Plan 915. Includes bonus calculations and PDF download.',
+    icon: ShieldCheck,
+    link_text: 'Calculate Now',
+    lastModified: '2024-10-18',
+    image: '/images/lic-new-jeevan-anand-calculator.png'
+  },
+  {
+    slug: 'lic-term-insurance',
+    title: 'LIC Term Insurance Calculator',
+    description: 'Calculate premiums for LIC term life insurance plans.',
+    summary: 'Use our free LIC Term Insurance Calculator to estimate premiums and coverage for term life insurance. Compare different term options and find the best plan for your needs.',
+    icon: Shield,
+    link_text: 'Calculate Now',
+    lastModified: '2024-10-19',
+    image: '/images/lic-term-insurance-calculator.png'
+  },
 ];

@@ -101,19 +101,41 @@
     <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/lic-premium-calculator" />
   </url>
   <url>
-    <loc>https://bharatsaver.com/te/lic-maturity-calculator</loc>
-    <lastmod>2024-10-05</lastmod>
+    <loc>https://bharatsaver.com/te/lic-jeevan-umang-calculator</loc>
+    <lastmod>2024-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/lic-maturity-calculator" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/lic-maturity-calculator" />
-    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/lic-maturity-calculator" />
-    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/lic-maturity-calculator" />
-    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/lic-maturity-calculator" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/lic-jeevan-umang-calculator" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/lic-jeevan-umang-calculator" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/lic-jeevan-umang-calculator" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/lic-jeevan-umang-calculator" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/lic-jeevan-umang-calculator" />
+  </url>
+  <url>
+    <loc>https://bharatsaver.com/te/jeevan-utsav-calculator</loc>
+    <lastmod>2024-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/jeevan-utsav-calculator" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/jeevan-utsav-calculator" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/jeevan-utsav-calculator" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/jeevan-utsav-calculator" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/jeevan-utsav-calculator" />
+  </url>
+  <url>
+    <loc>https://bharatsaver.com/te/lic-jeevan-anand-calculator</loc>
+    <lastmod>2024-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/lic-jeevan-anand-calculator" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/lic-jeevan-anand-calculator" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/lic-jeevan-anand-calculator" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/lic-jeevan-anand-calculator" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/lic-jeevan-anand-calculator" />
   </url>
   <url>
     <loc>https://bharatsaver.com/te/lic-jeevan-labh-calculator</loc>
-    <lastmod>2024-09-26</lastmod>
+    <lastmod>2024-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/lic-jeevan-labh-calculator" />
@@ -124,7 +146,7 @@
   </url>
   <url>
     <loc>https://bharatsaver.com/te/lic-single-premium-endowment-calculator</loc>
-    <lastmod>2024-10-02</lastmod>
+    <lastmod>2024-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/lic-single-premium-endowment-calculator" />
@@ -132,6 +154,17 @@
     <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/lic-single-premium-endowment-calculator" />
     <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/lic-single-premium-endowment-calculator" />
     <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/lic-single-premium-endowment-calculator" />
+  </url>
+  <url>
+    <loc>https://bharatsaver.com/te/lic-maturity-calculator</loc>
+    <lastmod>2024-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/lic-maturity-calculator" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/lic-maturity-calculator" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/lic-maturity-calculator" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/lic-maturity-calculator" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/lic-maturity-calculator" />
   </url>
   <url>
     <loc>https://bharatsaver.com/te/lic-surrender-value-calculator</loc>
@@ -264,5 +297,38 @@
     <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/mutual-fund-screener" />
     <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/mutual-fund-screener" />
     <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/mutual-fund-screener" />
+  </url>
+  <url>
+    <loc>https://bharatsaver.com/te/lic-child-plan</loc>
+    <lastmod>2024-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/lic-child-plan" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/lic-child-plan" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/lic-child-plan" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/lic-child-plan" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/lic-child-plan" />
+  </url>
+  <url>
+    <loc>https://bharatsaver.com/te/lic-new-jeevan-anand-calculator</loc>
+    <lastmod>2024-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/lic-new-jeevan-anand-calculator" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/lic-new-jeevan-anand-calculator" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/lic-new-jeevan-anand-calculator" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/lic-new-jeevan-anand-calculator" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/lic-new-jeevan-anand-calculator" />
+  </url>
+  <url>
+    <loc>https://bharatsaver.com/te/lic-term-insurance</loc>
+    <lastmod>2024-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/lic-term-insurance" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/lic-term-insurance" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/lic-term-insurance" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/lic-term-insurance" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/lic-term-insurance" />
   </url>
 </urlset>
