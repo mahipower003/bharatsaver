@@ -77,7 +77,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
       description: pageDict.og_description,
       url: pageUrl,
       images: [{ url: ogImageUrl, width: 1200, height: 630, alt: 'BharatSaver APY Calculator' }],
-      locale: params.lang === 'en' ? 'en_IN' : params.lang,
+      locale: lang === 'en' ? 'en_IN' : lang,
       type: 'website',
     },
     twitter: {
