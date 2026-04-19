@@ -14,7 +14,7 @@
             "content": [
                 {
                     "type": "paragraph",
-                    "text": "For most buyers who want low cost + high trust, LIC New Tech-Term (Plan No. 954) is the best overall choice because of its competitive online-only premium. If you prefer in-person guidance for a high-value policy, consider the offline counterpart LIC New Jeevan Amar (Plan No. 955). For very small/simple needs, Saral Jeevan Bima is a good starter. I generally advise against Return-of-Premium (ROP) plans like Jeevan Kiran unless you prefer guaranteed return of paid premiums and accept significantly higher cost."
+                    "text": "For most buyers who want low cost + high trust, LIC New Tech-Term (Plan No. 954) is the best overall choice because of its competitive online-only premium. If you prefer in-person guidance for a high-value policy, consider the offline counterpart LIC New Jeevan Amar (Plan No. 955). For very small/simple needs, Saral Jeevan Bima is a good starter. For comprehensive financial planning, use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to determine the right coverage amount. I generally advise against Return-of-Premium (ROP) plans like Jeevan Kiran unless you prefer guaranteed return of paid premiums and accept significantly higher cost."
                 }
             ]
         },
@@ -63,8 +63,8 @@
                         "<strong>Affordable Premiums:</strong> For a non-smoker, a high-value <strong>lic term insurance 1 crore</strong> policy can be secured for a very competitive monthly premium, especially when purchased online.",
                         "<strong>Flexible Payout Options:</strong> Nominees can choose to receive the death benefit as a lump sum, as a regular income, or a combination of both, providing flexibility to manage finances.",
                         "<strong>Rider Availability:</strong> You can enhance your protection by adding riders for accidental death, disability, or critical illness.",
-                        "<strong>Tax Benefits:</strong> Premiums paid are eligible for tax deductions under Section 80C, and the death benefit payout to the nominee is tax-free under Section 10(10D). Compare your options with our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a>.",
-                        "<strong>Multiple Premium Payment Terms:</strong> Choose from Single, Regular, or Limited premium payment terms to align with your financial capacity."
+                        "<strong>Tax Benefits:</strong> Premiums paid are eligible for tax deductions under Section 80C, and the death benefit payout to the nominee is tax-free under Section 10(10D). Compare your options with our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> and explore savings alternatives like our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a> and <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF calculator</a> for comparing investment returns.",
+                        "<strong>Multiple Premium Payment Terms:</strong> Choose from Single, Regular, or Limited premium payment terms to align with your financial capacity. Compare these with our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> for all available plans."
                     ]
                 }
             ]
@@ -102,7 +102,7 @@
             "content": [
                 {
                     "type": "paragraph",
-                    "text": "<p>LIC combines a nationwide service network and a long history of paying claims, making it the natural choice for buyers who value offline support and brand trust. Recent online plans (Tech-Term, Digi Term) now offer competitive pricing for self-service buyers.</p>"
+                    "text": "<p>LIC combines a nationwide service network and a long history of paying claims, making it the natural choice for buyers who value offline support and brand trust. Recent online plans (Tech-Term, Digi Term) now offer competitive pricing for self-service buyers. For comprehensive wealth planning, compare with our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a>, explore <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund options</a>, and check <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>fund overlaps</a> for diversification.</p>"
                 },
                 { "type": "table", "headers": ["Feature", "LIC (e.g., Tech-Term)", "Top Private Insurer A", "Top Private Insurer B"], "rows": [
                     ["Premium Cost", "Generally competitive, especially for online plans.", "Often very competitive, can be lower.", "Competitive, especially with wellness-linked discounts."],
@@ -182,15 +182,31 @@
             ]
         },
         {
+            "id": "comprehensive-planning",
+            "icon": "GitCompareArrows",
+            "title": "Beyond Term Insurance: Complete Financial Planning",
+            "content": [
+                { "type": "list", "items": [
+                    "<strong>Calculate Your Coverage Needs:</strong> Use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to determine the right insurance amount for your family's financial security.",
+                    "<strong>Compare Fixed Income Options:</strong> Check our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a>, explore <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF returns</a>, and use our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for personal finance needs.",
+                    "<strong>Tax Optimization:</strong> Plan your tax strategy using our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to maximize post-tax returns on your insurance and investments.",
+                    "<strong>Diversified Investing:</strong> If considering equity investments, use our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> and <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> to build a balanced portfolio.",
+                    "<strong>Government Schemes:</strong> Explore supplementary retirement income with <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>Atal Pension Yojana (APY)</a>, <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>National Pension System (NPS)</a>, or <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>Sukanya Samriddhi Yojana (SSY)</a> for child planning."
+                ]}
+            ]
+        },
+        {
             "id": "also-read",
             "icon": "BookUser",
             "title": "Also Read: Related LIC Plan Guides",
             "content": [
-                { "type": "paragraph", "text": "While term insurance provides pure protection, LIC's endowment plans offer a combination of savings and insurance. Compare them here:" },
+                { "type": "paragraph", "text": "While term insurance provides pure protection, LIC's endowment plans offer a combination of savings and insurance. Compare them here, and use our <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a> to understand full-term benefits:" },
                 { "type": "list", "items": [
                     "<strong><a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>LIC Jeevan Anand</a>:</strong> A classic plan that combines savings with whole-life cover.",
                     "<strong><a href='/{lang}/lic-jeevan-umang-calculator' class='text-primary hover:underline'>LIC Jeevan Umang</a>:</strong> Provides a guaranteed income for life after the premium paying term.",
-                    "<strong><a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>LIC Jeevan Labh</a>:</strong> A limited premium payment plan for goal-based savings."
+                    "<strong><a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>LIC Jeevan Labh</a>:</strong> A limited premium payment plan for goal-based savings.",
+                    "<strong><a href='/{lang}/lic-single-premium-endowment-calculator' class='text-primary hover:underline'>LIC Single Premium Endowment</a>:</strong> One-time investment with guaranteed returns and life cover.",
+                    "<strong><a href='/{lang}/jeevan-utsav-calculator' class='text-primary hover:underline'>LIC Jeevan Utsav</a>:</strong> Another endowment option for medium-term planning."
                 ]}
             ]
         },
@@ -199,7 +215,19 @@
             "icon": "Star",
             "title": "Conclusion & Recommended Next Step",
             "content": [
-                { "type": "paragraph", "text": "LIC term insurance offers an unparalleled combination of trust and security. For most users, the LIC Tech-Term plan offers the best balance of low cost and high trust." },
+                { "type": "paragraph", "text": "LIC term insurance offers an unparalleled combination of trust and security. For most users, the LIC Tech-Term plan offers the best balance of low cost and high trust. To create a comprehensive financial safety net, consider combining term insurance with other savings and investment vehicles." },
+                {
+                    "type": "paragraph",
+                    "text": "<strong>For Your Insurance Needs:</strong> Use our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> to compare all available plans, explore <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>maturity benefits</a> if considering endowment plans, and check <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>surrender value options</a> for policy flexibility. If you have dependents, the <a href='/{lang}/lic-child-plan' class='text-primary hover:underline'>LIC child plan calculator</a> can help secure their future."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<strong>For Investment & Savings:</strong> Compare with our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a>, explore <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF investment returns</a>, use <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> for equity options, and check <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>fund diversification</a> to build a balanced portfolio."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<strong>For Complete Financial Planning:</strong> Calculate your total retirement needs with our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a>, optimize your tax situation using our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a>, manage your debt with our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a>, and explore government schemes like <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>APY</a>, <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a>, and <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>SSY</a> for additional income streams."
+                },
                 { "type": "cta_card", "title": "Ready to Secure Your Family's Future?", "description": "We’ll compare LIC Tech-Term quotes and send a customized estimate. Privacy: we never share your number without consent.", "buttons": [
                     { "text": "Get Free Quote", "href": "https://www.policybazaar.com/life-insurance/term-insurance/" }
                 ]}

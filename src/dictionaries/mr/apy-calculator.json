@@ -79,8 +79,12 @@
       "answer": "होय, एपीवाय अंतर्गत मिळणारी पेन्शन उत्पन्न मानली जाते आणि लागू आयकर स्लॅबनुसार करपात्र आहे. तुमचा स्लॅब तपासण्यासाठी तुम्ही आमचे <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>कर प्रणाली कॅल्क्युलेटर</a> वापरू शकता."
     }
   ],
+  "related_calculators": {
+    "title": "आमचे इतर आर्थिक कॅल्क्युलेटर एक्सप्लोर करा",
+    "body": "<a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD विरुद्ध PPF</a> ची तुलना करा, <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC समर्पण मूल्य</a> मोजा, किंवा तुमचा पोर्टफोलियो विविध करण्यासाठी आमचे <a href='/{lang}/mutual-fund-scheme-selector' class='text-primary hover:underline'>म्यूचुअल फंड योजना चयनकर्ता</a> वापरा."
+  },
   "conclusion": {
     "title": "आज एका लहान पावलाने तुमचे भविष्य सुरक्षित करा",
-    "body": "अटल पेन्शन योजना सेवानिवृत्ती सुरक्षा जाळे तयार करण्यासाठी एक उत्कृष्ट साधन आहे, विशेषतः मर्यादित साधन असलेल्यांसाठी. एक लहान मासिक योगदान देखील सेवानिवृत्तीनंतर एक सन्माननीय जीवन सुनिश्चित करू शकते. तुमच्या आर्थिक भविष्याला सुरक्षित करण्याच्या दिशेने पहिले पाऊल उचलण्यासाठी या कॅल्क्युलेटरचा वापर करा."
+    "body": "अटल पेन्शन योजना सेवानिवृत्ती सुरक्षा जाळे तयार करण्यासाठी एक उत्कृष्ट साधन आहे, विशेषतः मर्यादित साधन असलेल्यांसाठी. तुमच्या आर्थिक भविष्याला सुरक्षित करण्याच्या दिशेने पहिले पाऊल उचलण्यासाठी या कॅल्क्युलेटरचा वापर करा, आणि अधिक व्यापक योजनेसाठी आमचे <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>सेवानिवृत्ती कॅल्क्युलेटर</a> विचारात घ्या. ऋण व्यवस्थापनासाठी <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>ऋण अनुकूलक</a>, गुंतवणूक संधींसाठी <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>म्यूचुअल फंड स्क्रीनर</a>, विमा योजनेसाठी <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>LIC जीवन आनंद कॅल्क्युलेटर</a>, आणि पॉलिसी लाभ समजून घेण्यासाठी <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC परिपक्वता कॅल्क्युलेटर</a> देखील एक्सप्लोर करा."
   }
 }

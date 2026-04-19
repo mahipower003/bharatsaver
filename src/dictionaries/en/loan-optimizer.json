@@ -37,7 +37,7 @@
   },
   "why": {
     "h2": "Why Optimize Your Loan? The Hidden Cost of Interest",
-    "body": "<p>Taking a loan is often a necessary step towards achieving major life goals, like buying a home or a car. However, the total interest you pay over the loan's lifetime can be staggering. A ₹50 lakh home loan at 8.5% for 20 years means you pay over ₹55 lakh in interest alone—more than the loan amount itself! Loan optimization is the strategic process of minimizing this interest cost and becoming debt-free faster. This calculator is designed to be your primary tool in this process.</p>"
+    "body": "<p>Taking a loan is often a necessary step towards achieving major life goals, like buying a home or a car. However, the total interest you pay over the loan's lifetime can be staggering. A ₹50 lakh home loan at 8.5% for 20 years means you pay over ₹55 lakh in interest alone—more than the loan amount itself! Loan optimization is the strategic process of minimizing this interest cost and becoming debt-free faster. This calculator is designed to be your primary tool in this process. Smart debt management through this optimizer, combined with our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a>, helps you achieve overall financial freedom.</p>"
   },
   "how_it_works": {
     "h2": "How This Loan Optimizer Works",
@@ -64,16 +64,16 @@
   },
   "prepay_vs_invest": {
     "h2": "The Big Question: Prepay the Loan or Invest the Surplus?",
-    "body": "<p>This is a classic financial dilemma. The answer depends on your risk appetite and the numbers. The mathematical rule is: <strong>If the post-tax return on your investment is higher than your loan interest rate, you should invest. If not, prepay the loan.</strong></p><p><strong>Example:</strong> Your home loan is at 8.5%. Can you find an investment that consistently and safely delivers more than 8.5% after taxes? A fixed deposit giving 7% (which is ~4.9% post-tax) is not a good option. An equity mutual fund SIP might give 12% returns, but it comes with market risk. Prepaying a loan offers a guaranteed, risk-free 'return' equal to your interest rate.</p>"
+    "body": "<p>This is a classic financial dilemma. The answer depends on your risk appetite and the numbers. The mathematical rule is: <strong>If the post-tax return on your investment is higher than your loan interest rate, you should invest. If not, prepay the loan.</strong></p><p><strong>Example:</strong> Your home loan is at 8.5%. Can you find an investment that consistently and safely delivers more than 8.5% after taxes? A <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>fixed deposit or PPF</a> giving 7% (which is ~4.9% post-tax) is not a good option. An <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>equity mutual fund</a> SIP might give 12% returns, but it comes with market risk. Prepaying a loan offers a guaranteed, risk-free 'return' equal to your interest rate. Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to determine your post-tax returns and optimize your decision.</p>"
   },
   "comparison_table": {
     "title": "Prepay vs. Invest: Decision Matrix",
     "headers": ["Factor", "Prepay Loan", "Invest Surplus"],
     "rows": [
-      ["Return", "Guaranteed & Risk-Free (equal to loan rate)", "Market-linked & Variable"],
+      ["Return", "Guaranteed & Risk-Free (equal to loan rate)", "Market-linked & Variable (<a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual funds</a>, <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FDs/PPF</a>, etc.)"],
       ["Psychological Benefit", "High (peace of mind, debt-free sooner)", "Lower (market volatility can cause stress)"],
-      ["Liquidity", "Low (money is locked in the asset)", "High (investments can be liquidated)"],
-      ["Tax Benefit", "None on prepayment itself (but you retain 80C interest deduction longer if you don't prepay)", "Depends on instrument (LTCG on equity, etc.)"]
+      ["Liquidity", "Low (money is locked in the asset)", "High (investments can be liquidated quickly)"],
+      ["Tax Benefit", "80C interest deduction available (Section 24b for self-occupied property) - use <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax calculator</a>", "Depends on instrument (LTCG on equity, tax-free growth in <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a>, etc.)"]
     ]
   },
   "refinance": {
@@ -82,7 +82,7 @@
   },
   "tax_notes": {
     "h2": "Important Tax Considerations",
-    "body": "<p>For a home loan, the principal repayment is eligible for deduction under Section 80C (up to ₹1.5 lakh) and the interest paid is eligible for deduction under Section 24(b) (up to ₹2 lakh for a self-occupied property). While prepaying your loan is financially prudent, be aware that paying it off too quickly means you can no longer claim these tax benefits for the full original tenure. Always factor this into your decision.</p>"
+    "body": "<p>For a home loan, the principal repayment is eligible for deduction under Section 80C (up to ₹1.5 lakh) and the interest paid is eligible for deduction under Section 24(b) (up to ₹2 lakh for a self-occupied property). While prepaying your loan is financially prudent, be aware that paying it off too quickly means you can no longer claim these tax benefits for the full original tenure. Always factor this into your decision. Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to compare your tax situations under different prepayment scenarios and explore alternatives like <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a>, <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a>, or <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>APY</a> for tax-efficient retirement planning.</p>"
   },
   "faq": {
     "h2": "Frequently Asked Questions",
@@ -101,12 +101,20 @@
       },
       {
         "q": "Should I choose to reduce my EMI or my tenure after prepayment?",
-        "a": "To maximize your interest savings, always choose to <strong>reduce the tenure</strong>. Reducing the EMI keeps the loan active for the original duration, which means you continue to pay interest for longer, negating much of the prepayment benefit."
+        "a": "To maximize your interest savings, always choose to <strong>reduce the tenure</strong>. Reducing the EMI keeps the loan active for the original duration, which means you continue to pay interest for longer, negating much of the prepayment benefit. Use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to plan for early debt freedom."
+      },
+      {
+        "q": "How do I decide between prepaying my loan and investing for retirement?",
+        "a": "Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to determine your post-tax investment returns. Compare with your loan interest rate. For long-term retirement planning, also explore <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a>, <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>APY</a>, and <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a> for tax-efficient savings, and use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to determine your total needs."
+      },
+      {
+        "q": "What are the best investments if I decide to invest instead of prepay?",
+        "a": "Use our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> to find equity options, compare with <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF</a> for fixed-income alternatives, and check <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>fund overlaps</a> to build a diversified portfolio. Optimize your tax strategy with our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a>."
       }
     ]
   },
   "conclusion": {
     "title": "Take Control of Your Debt",
-    "body": "Becoming debt-free is a key milestone on the path to financial independence. By using this optimizer to strategically prepay or refinance your loans, you can save lakhs in interest and significantly shorten your journey to financial freedom. Play with the numbers and find the strategy that works best for you."
+    "body": "Becoming debt-free is a key milestone on the path to financial independence. By using this optimizer to strategically prepay or refinance your loans, you can save lakhs in interest and significantly shorten your journey to financial freedom. Play with the numbers and find the strategy that works best for you.<br><br><strong>Comprehensive Financial Planning:</strong> Combine debt optimization with our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to plan your complete financial future. Explore investment options with our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a>, <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a>, and compare returns using our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a>. Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to optimize your overall tax situation.<br><br><strong>Retirement & Income Planning:</strong> For long-term financial security, explore <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a>, <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>APY</a>, <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>SSY</a>, and <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a> for tax-efficient retirement savings. Also explore LIC insurance plans like <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a>, <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a>, and <a href='/{lang}/lic-jeevan-umang-calculator' class='text-primary hover:underline'>Jeevan Umang calculator</a> for life coverage combined with savings."
   }
 }

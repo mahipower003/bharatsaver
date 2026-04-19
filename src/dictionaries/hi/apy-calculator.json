@@ -79,8 +79,12 @@
       "answer": "हां, एपीवाई के तहत प्राप्त पेंशन को आय माना जाता है और यह लागू आयकर स्लैब के अनुसार कर योग्य है। आप अपनी स्लैब की जांच के लिए हमारे <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>कर व्यवस्था कैलकुलेटर</a> का उपयोग कर सकते हैं।"
     }
   ],
+  "related_calculators": {
+    "title": "हमारे अन्य वित्तीय कैलकुलेटर देखें",
+    "body": "अपनी वित्तीय योजना को अधिकतम करें हमारे कैलकुलेटर के व्यापक सूट के साथ। <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD बनाम PPF</a> की तुलना करें, <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC समर्पण मूल्य</a> की गणना करें, या अपने पोर्टफोलियो को विविध बनाने के लिए हमारे <a href='/{lang}/mutual-fund-scheme-selector' class='text-primary hover:underline'>म्यूचुअल फंड योजना चयनकर्ता</a> का उपयोग करें।"
+  },
   "conclusion": {
     "title": "आज एक छोटे कदम से अपना भविष्य सुरक्षित करें",
-    "body": "अटल पेंशन योजना सेवानिवृत्ति सुरक्षा जाल बनाने के लिए एक उत्कृष्ट उपकरण है, विशेषतः सीमित साधनों वाले लोगों के लिए। एक छोटा मासिक योगदान भी सेवानिवृత్తి के बाद एक सम्मानजनक जीवन सुनिश्चित कर सकता है। अपने वित्तीय भविष्य को सुरक्षित करने की दिशा में पहला कदम उठाने के लिए इस कैलकुलेटर का उपयोग करें, और एक अधिक व्यापक योजना के लिए हमारे <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>सेवानिवृత్తి कैलकुलेटर</a> पर विचार करें।"
+    "body": "अटल पेंशन योजना सेवानिवृत्ति सुरक्षा जाल बनाने के लिए एक उत्कृष्ट उपकरण है, विशेषतः सीमित साधनों वाले लोगों के लिए। अपने वित्तीय भविष्य को सुरक्षित करने की दिशा में पहला कदम उठाने के लिए इस कैलकुलेटर का उपयोग करें, और एक अधिक व्यापक योजना के लिए हमारे <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>सेवानिवृत्ति कैलकुलेटर</a> पर विचार करें। साथ ही, ऋण प्रबंधन के लिए <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>ऋण अनुकूलक</a>, निवेश के अवसरों के लिए <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>म्यूचुअल फंड स्क्रीनर</a>, बीमा योजना के लिए <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>LIC जीवन आनंद कैलकुलेटर</a>, और पॉलिसी लाभ समझने के लिए <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC परिपक्वता कैलकुलेटर</a> देखें।"
   }
 }

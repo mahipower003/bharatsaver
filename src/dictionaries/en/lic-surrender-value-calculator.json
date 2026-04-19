@@ -57,7 +57,7 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "Let's cut through the jargon. The 'surrender value' is the cash amount LIC gives you if you decide to end your policy before its official end date. To be eligible for any payout at all, you generally need to have paid premiums for at least two or three full years. There are two numbers you need to know:"
+          "text": "Let's cut through the jargon. The 'surrender value' is the cash amount LIC gives you if you decide to end your policy before its official end date. To be eligible for any payout at all, you generally need to have paid premiums for at least two or three full years. If you're considering surrender because of low returns, check our <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a> to understand what you'd receive if you let the policy run its full term. There are two numbers you need to know:"
         },
         {
           "type": "list",
@@ -118,7 +118,7 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "Before you surrender, you need to know about its smarter cousin: the 'Paid-Up' option. They are not the same, and choosing correctly can save you from a huge financial mistake."
+          "text": "Before you surrender, you need to know about its smarter cousin: the 'Paid-Up' option. They are not the same, and choosing correctly can save you from a huge financial mistake. Compare your policy options using our <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>Jeevan Anand</a>, <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh</a>, and <a href='/{lang}/lic-jeevan-umang-calculator' class='text-primary hover:underline'>Jeevan Umang</a> calculators to explore better policy alternatives."
         },
         {
           "type": "list",
@@ -136,14 +136,14 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "I always say surrendering should be your absolute last resort. Here are three things I'd consider first:"
+          "text": "I always say surrendering should be your absolute last resort. Before taking any drastic steps, check our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> to explore borrowing options and our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> for comprehensive financial planning. Here are three things I'd consider first:"
         },
         {
           "type": "list",
           "items": [
-            "<strong>Take a Loan Against the Policy:</strong> If you need money for a short-term emergency, this is your best bet. You get liquidity (up to 90% of the surrender value) without losing your life cover. It's a win-win.",
+            "<strong>Take a Loan Against the Policy:</strong> If you need money for a short-term emergency, this is your best bet. You get liquidity (up to 90% of the surrender value) without losing your life cover. Use our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> to compare borrowing options.",
             "<strong>Make it Paid-Up:</strong> As we discussed above, if you can't afford the premiums, just stop paying. Your policy stays alive with reduced benefits, which is far better than getting a pittance back and losing your cover.",
-            "<strong>The 'Buy Term, Invest the Rest' Strategy:</strong> If your issue is the low returns, a much better approach is to buy a cheap, high-cover pure term insurance plan, and then invest the premium difference in higher-return options like mutual funds. This often creates far more wealth in the long run."
+            "<strong>The 'Buy Term, Invest the Rest' Strategy:</strong> If your issue is the low returns, explore our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> and <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> for high-return investment options. Compare with our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a> to see what matches your goals."
           ]
         },
         {
@@ -183,16 +183,31 @@
           "items": [
             {"q": "How do I calculate the surrender value of my LIC policy?", "a": "The simplest way is to use our calculator above. Just enter your policy details to get an instant estimate. The formula is a percentage of premiums paid plus a portion of your accrued bonuses, which our tool calculates for you."},
             {"q": "After how many years can I surrender an LIC policy?", "a": "Generally, you can surrender a policy only after you've paid premiums for at least two or three full years. Some single premium policies may be surrendered after one year. Before this period, the policy has no surrender value."},
-            {"q": "Is the surrender value of an LIC policy taxable?", "a": "If you surrender after 5 full premium-paying years, the amount is generally tax-free under Section 10(10D). If you surrender before 5 years, the amount can become taxable, and any tax deductions you claimed under 80C can be reversed."},
+            {"q": "Is the surrender value of an LIC policy taxable?", "a": "If you surrender after 5 full premium-paying years, the amount is generally tax-free under Section 10(10D). If you surrender before 5 years, the amount can become taxable, and any tax deductions you claimed under 80C can be reversed. Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to understand the tax implications for your specific situation."},
             {"q": "How much money will I get if I surrender my LIC policy?", "a": "It's a percentage of what you've paid, and it starts very low. For example, after 3 years, you might only get back ~30% of your premiums. The value increases the longer you hold the policy. Use our calculator above to get a personalized estimate for your policy."},
             {"q": "What is the difference between guaranteed and special surrender value?", "a": "Guaranteed Surrender Value (GSV) is the legally mandated minimum payout based on a formula of premiums paid. Special Surrender Value (SSV) is a higher, non-guaranteed amount that includes a portion of your bonuses. LIC will always pay whichever amount is higher."},
-            {"q": "Should I surrender my LIC policy or make it paid-up?", "a": "If you don't need cash immediately, making the policy 'Paid-Up' is almost always better. You stop paying premiums but keep a reduced life cover and get a payout at maturity. Surrender only for a dire cash emergency."},
+            {"q": "Should I surrender my LIC policy or make it paid-up?", "a": "If you don't need cash immediately, making the policy 'Paid-Up' is almost always better. You stop paying premiums but keep a reduced life cover and get a payout at maturity. Use our <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a> to see what you'd get at the end of the policy term. For overall financial planning, check our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a>. Surrender only for a dire cash emergency."},
             {"q": "Can I surrender my LIC policy online?", "a": "As of now, the final surrender process is offline. You must visit your servicing LIC branch with the original documents to complete the process, though some initial forms may be downloadable online."},
             {"q": "What documents are required to surrender an LIC policy?", "a": "You will need the Original Policy Bond, the filled Surrender Form (Form 5074), a copy of your PAN and Aadhaar cards, and a cancelled cheque for your bank details."},
             {"q": "How long does it take to receive the surrender value amount?", "a": "Once your documents are submitted and approved, it typically takes 5-10 working days for LIC to credit the amount to your bank account."},
             {"q": "Can a surrendered LIC policy be revived?", "a": "No, once you surrender and take the money, the policy is terminated permanently and cannot be revived. You would have to buy a new policy if needed."},
             {"q": "Do term insurance policies have a surrender value?", "a": "Generally no, pure term insurance plans are for risk cover only and do not have a savings component, so they do not offer a payout on cancellation."},
-            {"q": "Will I get my bonus if I surrender the policy?", "a": "Yes, a portion of your accrued bonuses is typically factored into the Special Surrender Value (SSV). So, if your policy has earned bonuses, your surrender payout will be higher than the basic guaranteed value. Loyalty additions, however, are usually forfeited if the policy does not run its full term."}
+            {"q": "Will I get my bonus if I surrender the policy?", "a": "Yes, a portion of your accrued bonuses is typically factored into the Special Surrender Value (SSV). So, if your policy has earned bonuses, your surrender payout will be higher than the basic guaranteed value. Use our <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a> to see how these bonuses grow if you let the policy run full term. Loyalty additions, however, are usually forfeited if the policy does not run its full term."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "next-steps",
+      "icon": "GitCompareArrows",
+      "title": "Beyond Surrender: Explore Your Options",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "<strong>Better LIC Plans:</strong> Explore our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> to compare all available plans and find one that matches your needs better. Check out <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>Jeevan Anand</a>, <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh</a>, <a href='/{lang}/lic-jeevan-umang-calculator' class='text-primary hover:underline'>Jeevan Umang</a>, and <a href='/{lang}/jeevan-utsav-calculator' class='text-primary hover:underline'>Jeevan Utsav</a> calculators.",
+            "<strong>Investment Alternatives:</strong> Compare returns with our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a>, explore <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF investment</a>, use <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a>, and check <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlaps</a> for diversification.",
+            "<strong>Comprehensive Planning:</strong> Use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to plan your overall financial future. Check <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime options</a> to optimize your savings. Explore <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for any borrowing needs and government schemes like <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>APY</a>, <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a>, and <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>SSY</a>."
           ]
         }
       ]
@@ -207,11 +222,20 @@
           "text": "I know deciding to surrender your policy is tough. It often feels like you're caught between a rock and a hard place. My goal with this page was to give you the clarity you deserve. You now understand the formulas, the financial implications, and the smarter alternatives available. Use the numbers from the calculator not as an endpoint, but as a key piece of information in your decision-making process."
         },
         {
-            "type": "monetization_card",
-            "title": "Your Next Step: Ready to Make a Better Move?",
-            "body": "If you're surrendering because you've realized your current plan doesn't meet your needs, that's a smart financial insight. The next logical step is to find a better alternative. Check out our tools to find high-cover, low-cost term insurance or explore investment options that can genuinely grow your wealth.",
-            "href": "https://www.policybazaar.com/life-insurance/term-insurance/",
-            "cta": "Compare Term Plans"
+          "type": "paragraph",
+          "text": "<strong>Before Surrendering:</strong> Explore better options with our <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a> to see your full-term benefits, <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> for alternative plans, and <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> for comprehensive financial planning. Consider our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for emergency liquidity without surrendering."
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Explore LIC Alternatives:</strong> Compare different LIC plans using our <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>Jeevan Anand calculator</a>, <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh calculator</a>, <a href='/{lang}/lic-jeevan-umang-calculator' class='text-primary hover:underline'>Jeevan Umang calculator</a>, and <a href='/{lang}/jeevan-utsav-calculator' class='text-primary hover:underline'>Jeevan Utsav calculator</a>. Check our <a href='/{lang}/lic-child-plan' class='text-primary hover:underline'>LIC child plan calculator</a> if you have dependents."
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Better Investment Returns:</strong> If low returns are driving your surrender decision, use our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a> to compare fixed-income investments, explore <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF returns</a>, and check our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> for equity opportunities. Use the <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> to avoid concentration risk. Optimize with our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a>."
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Comprehensive Financial Planning:</strong> For long-term wealth building, explore government schemes including <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>Atal Pension Yojana (APY)</a>, <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>National Pension System (NPS)</a>, and <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>Sukanya Samriddhi Yojana (SSY)</a>. Use our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for debt management and <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to plan your complete financial future."
         }
       ]
     }
