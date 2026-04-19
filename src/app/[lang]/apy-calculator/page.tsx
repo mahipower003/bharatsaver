@@ -15,10 +15,11 @@ export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
 }
 
-export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const pageDict = (await import(`@/dictionaries/${params.lang}/apy-calculator.json`)).default;
+export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const pageDict = (await import(`@/dictionaries/${lang}/apy-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/${params.lang}/apy-calculator`;
+  const pageUrl = `${siteUrl}/${lang}/apy-calculator`;
   const ogImageUrl = `${siteUrl}/images/APY-Calculator-online.png`;
 
   const faqItems = pageDict.faqs;
@@ -98,18 +99,19 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   };
 }
 
-export default async function ApyCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang);
-  const pageDict = (await import(`@/dictionaries/${params.lang}/apy-calculator.json`)).default;
+export default async function ApyCalculatorPage({ params }: { params: Promise<{ lang: Locale }>}) {
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
+  const pageDict = (await import(`@/dictionaries/${lang}/apy-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${params.lang}` },
-      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${params.lang}/calculators` },
-      { '@type': 'ListItem', position: 3, name: 'APY Calculator', item: `${siteUrl}/${params.lang}/apy-calculator` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${lang}` },
+      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${lang}/calculators` },
+      { '@type': 'ListItem', position: 3, name: 'APY Calculator', item: `${siteUrl}/${lang}/apy-calculator` },
     ],
   };
   
@@ -202,7 +204,7 @@ export default async function ApyCalculatorPage({ params }: { params: { lang: Lo
                     <h2 className="text-2xl font-bold">{pageDict.comparison.title}</h2>
                 </CardTitle>
             </CardHeader>
-            <CardContent dangerouslySetInnerHTML={{__html: pageDict.comparison.body.replace(/{lang}/g, params.lang)}} />
+            <CardContent dangerouslySetInnerHTML={{__html: pageDict.comparison.body.replace(/{lang}/g, lang)}} />
         </Card>
 
         <Card className="mt-12 shadow-lg">
@@ -239,11 +241,23 @@ export default async function ApyCalculatorPage({ params }: { params: { lang: Lo
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground">{pageDict.conclusion.body}</p>
+            <div className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.conclusion.body.replace(/{lang}/g, lang) }} />
+          </CardContent>
+        </Card>
+
+        <Card className="mt-12 shadow-lg">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-3">
+              <BarChart2 className="h-7 w-7 text-primary" />
+              <h2 className="text-2xl font-bold">{pageDict.related_calculators.title}</h2>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.related_calculators.body.replace(/{lang}/g, lang) }} />
           </CardContent>
         </Card>
         <AuthorCard dictionary={dictionary.author_card} />
-        <FooterCta dictionary={dictionary.footer_cta} lang={params.lang} />
+        <FooterCta dictionary={dictionary.footer_cta} lang={lang} />
       </div>
     </div>
   );

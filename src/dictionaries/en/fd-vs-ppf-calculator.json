@@ -36,7 +36,7 @@
   "result_snapshot": "After {tenure} years, the {winner} yields a higher post-tax return by {difference}.",
   "quick_answer": {
     "title": "Quick Answer: Which is better, FD or PPF?",
-    "body": "For long-term goals (15+ years) and for investors in higher tax brackets (20-30%), <strong>PPF almost always provides superior post-tax returns</strong> due to its EEE (Exempt-Exempt-Exempt) status. FDs are better for short-term goals where liquidity is needed and the lock-in periods of PPF are not suitable. Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax calculator</a> to determine your slab."
+    "body": "For long-term goals (15+ years) and for investors in higher tax brackets (20-30%), <strong>PPF almost always provides superior post-tax returns</strong> due to its EEE (Exempt-Exempt-Exempt) status. FDs are better for short-term goals where liquidity is needed and the lock-in periods of PPF are not suitable. Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax calculator</a> to determine your slab, and compare with <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>Atal Pension Yojana</a> for guaranteed pension benefits."
   },
   "how_it_works": {
     "title": "How the Comparison Works: Worked Examples",
@@ -105,10 +105,26 @@
     {
       "question": "Which has a better interest rate, FD or PPF?",
       "answer": "Historically, PPF has offered a higher rate than most bank FDs. Currently, the PPF rate is 7.1%, while most bank FDs for longer tenures are in the 6.5% to 7.25% range. However, the post-tax return from PPF is almost always higher for those in tax-paying brackets."
+    },
+    {
+      "question": "How does PPF compare with NPS for retirement planning?",
+      "answer": "Both PPF and NPS are excellent for long-term savings, but NPS offers market-linked returns with higher growth potential. Use our <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS calculator</a> to compare returns and benefits."
+    },
+    {
+      "question": "Can I use PPF for child education planning?",
+      "answer": "PPF is great for long-term goals like education. For child-specific plans, consider <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>Sukanya Samriddhi Yojana</a> which offers higher interest rates and tax benefits for girl child education."
+    },
+    {
+      "question": "What about LIC insurance plans vs PPF?",
+      "answer": "LIC plans provide insurance coverage along with investment returns. Compare PPF with LIC schemes using our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> and <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a>."
     }
   ],
+  "related_calculators": {
+    "title": "Explore More Investment Calculators",
+    "body": "Build a comprehensive investment strategy with our suite of calculators. Calculate <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF returns</a>, compare <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlaps</a>, and plan for <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>LIC Jeevan Anand</a> benefits."
+  },
   "conclusion": {
     "title": "The Right Tool for the Right Goal",
-    "body": "Both FD and PPF are excellent tools in their own right. The choice isn't about which is universally 'better,' but which is better for *your* specific financial goal and timeline. Use this calculator to see the numbers for yourself and make an informed decision that aligns with your financial plan. For a complete portfolio view, also consider comparing with our <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS Calculator</a> and <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>SSY Calculator</a>."
+    "body": "Both FD and PPF are excellent tools in their own right. The choice isn't about which is universally 'better,' but which is better for *your* specific financial goal and timeline. Use this calculator to see the numbers for yourself and make an informed decision that aligns with your financial plan. For a complete portfolio view, also consider comparing with our <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS Calculator</a>, <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>SSY Calculator</a>, and <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a>. Explore <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> for market-linked investments and <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for debt management."
   }
 }

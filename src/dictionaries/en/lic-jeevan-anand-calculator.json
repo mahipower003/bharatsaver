@@ -22,7 +22,7 @@
     "article": {
         "conclusion": {
             "title": "My Final Word: Is Jeevan Anand a Good Investment in 2025?",
-            "body": "After all the math, here's my honest take: Jeevan Anand is a solid, ultra-safe choice if you value guarantees and want a simple 'save and forget' product that combines savings with lifelong insurance. The returns (~6%) won't beat equity mutual funds, but they are reliable and tax-free, which is a huge plus. It’s not for aggressive wealth builders, but for someone seeking stability and peace of mind, it’s one of the best endowment plans LIC has to offer. I hope this calculator has given you the clarity to decide if it's the right fit for *your* financial story."
+            "body": "After all the math, here's my honest take: Jeevan Anand is a solid, ultra-safe choice if you value guarantees and want a simple 'save and forget' product that combines savings with lifelong insurance. The returns (~6%) won't beat equity mutual funds, but they are reliable and tax-free, which is a huge plus. It’s not for aggressive wealth builders, but for someone seeking stability and peace of mind, it’s one of the best endowment plans LIC has to offer. For broader financial planning, explore our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for debt management and <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> for portfolio optimization. I hope this calculator has given you the clarity to decide if it's the right fit for *your* financial story."
         },
         "sections": [
             {
@@ -143,7 +143,7 @@
                 "title": "Who should use this calculator & common use-cases (NRI, retiree, parent planning)",
                 "content": [
                     {"type":"list", "items":[
-                        "<strong>Parents Planning for the Future:</strong> I see many parents use this to plan for a child's education or marriage fund. It's a classic, safe choice.",
+                        "<strong>Parents Planning for the Future:</strong> I see many parents use this to plan for a child's education or marriage fund. It's a classic, safe choice. For child-specific plans, check our <a href='/{lang}/lic-child-plan' class='text-primary hover:underline'>LIC child plan calculator</a>.",
                         "<strong>Young Professionals:</strong> If you're looking for a disciplined long-term savings plan that also gives you life cover, this is a solid starting point.",
                         "<strong>NRIs Looking for Secure Indian Investments:</strong> Yes, NRIs can absolutely use this calculator. If you're looking for a safe, INR-denominated investment back home, this is one of the most popular options."
                     ]}
@@ -167,7 +167,10 @@
                         { "q": "What documents are needed to surrender a Jeevan Anand policy?", "a": "Policy bond, identity proof, bank details, surrender form and discharge form (subject to LIC’s updated requirements)." },
                         { "q": "What is the survival benefit in LIC Jeevan Anand?", "a": "Unlike a money-back plan, Jeevan Anand (915) does not have periodic 'survival benefits'. The main payout is the lump sum at the end of the policy term. However, the life cover (equal to the Sum Assured) continues even after the policy term, until the policyholder's death, which is a unique feature." },
                         { "q": "How to change nominee in LIC Jeevan Anand online?", "a": "Currently, changing the nominee for an LIC policy is an offline process. You need to fill out the 'Nominee Change Form' and submit it at your servicing LIC branch along with a copy of your policy and KYC documents." },
-                        { "q": "What is the policy term in LIC Jeevan Anand?", "a": "The policy term is the duration for which you pay premiums and are covered for the primary benefits. For Plan 915, it can range from 15 to 35 years. A unique feature is that the life cover (equal to the Sum Assured) continues even after the policy term, until the policyholder's death." }
+                        { "q": "What is the policy term in LIC Jeevan Anand?", "a": "The policy term is the duration for which you pay premiums and are covered for the primary benefits. For Plan 915, it can range from 15 to 35 years. A unique feature is that the life cover (equal to the Sum Assured) continues even after the policy term, until the policyholder's death." },
+                        { "q": "How does Jeevan Anand compare with other investment options?", "a": "Jeevan Anand offers guaranteed returns with insurance cover. Compare with <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a> for tax-free savings, <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF</a> for fixed deposits, or <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual funds</a> for market-linked growth." },
+                        { "q": "What about tax planning with Jeevan Anand?", "a": "Premiums are eligible for tax deduction under Section 80C. Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to optimize your overall tax savings and compare with <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a> for additional tax benefits." },
+                        { "q": "How to plan overall retirement with Jeevan Anand?", "a": "For comprehensive retirement planning, combine Jeevan Anand with our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> and explore <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>APY calculator</a> for pension options." }
                     ]}
                 ]
             }

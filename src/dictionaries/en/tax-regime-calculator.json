@@ -88,6 +88,22 @@
     {
       "question": "Is the standard deduction of ₹50,000 available in the new tax regime?",
       "answer": "Yes, from FY 2023-24 onwards, the standard deduction of ₹50,000 is available for salaried individuals and pensioners under the New Tax Regime as well."
+    },
+    {
+      "question": "How does choosing the old regime affect my investment planning?",
+      "answer": "The old regime allows deductions under Section 80C, making investments in <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a>, <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a>, and ELSS more tax-efficient. Use our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> to find ELSS funds that qualify for 80C deductions."
+    },
+    {
+      "question": "What if I have a home loan? Which regime should I choose?",
+      "answer": "If you have a home loan, the old regime is typically better due to home loan interest deductions. Use our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> to compare loan options and maximize your tax benefits under the old regime."
+    },
+    {
+      "question": "How does the tax regime choice impact my retirement planning?",
+      "answer": "Your tax regime choice affects long-term savings. The old regime favors tax-saving investments, while the new regime offers simplicity. Use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to plan your retirement corpus considering your tax regime choice."
+    },
+    {
+      "question": "Can I compare my tax savings with different investment options?",
+      "answer": "Yes, use our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a> to compare fixed deposits with PPF, and our <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> to optimize your investment portfolio for maximum tax efficiency."
     }
   ],
   "next_steps": {
@@ -99,6 +115,6 @@
   },
   "conclusion": {
     "title": "Make an Informed Choice",
-    "body": "Choosing the right tax regime is a critical financial decision that can save you thousands of rupees. This choice depends entirely on your individual income and deduction profile. Use this calculator to run your numbers and make the most financially prudent decision for the year. For more savings options, check our <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a> or <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a> calculators."
+    "body": "Choosing the right tax regime is a critical financial decision that can save you thousands of rupees. This choice depends entirely on your individual income and deduction profile. Use this calculator to run your numbers and make the most financially prudent decision for the year. For more savings options, check our <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a> or <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a> calculators. For broader financial planning, explore our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for debt management and <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> for portfolio optimization. Compare with other investment options using our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a> and <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a>."
   }
 }

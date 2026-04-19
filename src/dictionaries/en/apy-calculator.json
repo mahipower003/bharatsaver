@@ -53,8 +53,8 @@
     ]
   },
   "comparison": {
-    "title": "APY vs. NPS vs. PPF",
-    "body": "<p>While APY provides a guaranteed pension, it's important to compare it with other popular schemes like the <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>National Pension System (NPS)</a> and <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>Public Provident Fund (PPF)</a>. APY is ideal for those seeking a fixed, secure pension with low contributions, whereas NPS offers market-linked returns with higher growth potential, and PPF is a long-term savings tool with tax-free returns.</p>"
+    "title": "APY vs. NPS vs. PPF vs. Other Pension Schemes",
+    "body": "<p>While APY provides a guaranteed pension, it's important to compare it with other popular schemes like the <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>National Pension System (NPS)</a>, <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>Public Provident Fund (PPF)</a>, <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>Sukanya Samriddhi Yojana (SSY)</a>, and <a href='/{lang}/ups-pension-calculator' class='text-primary hover:underline'>UPS Pension Scheme</a>. APY is ideal for those seeking a fixed, secure pension with low contributions, whereas NPS offers market-linked returns with higher growth potential, and PPF is a long-term savings tool with tax-free returns. For a direct comparison between FD and PPF, use our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a>.</p><p>Use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to plan your overall retirement strategy, and compare different <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regimes</a> to maximize your savings.</p>"
   },
   "rules": {
     "title": "Key Rules and Conditions of APY",
@@ -77,10 +77,38 @@
     {
       "question": "Is the pension from APY taxable?",
       "answer": "Yes, the pension received under APY is considered as income and is taxable as per the applicable income tax slabs. You can use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to check your slab."
+    },
+    {
+      "question": "How does APY compare with LIC pension plans?",
+      "answer": "Unlike LIC plans that depend on market performance, APY provides a guaranteed pension backed by the Government of India. Check our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> for comparison."
+    },
+    {
+      "question": "Can I withdraw money before retirement?",
+      "answer": "Premature withdrawal is only allowed in exceptional cases like terminal illness or death. Otherwise, you must contribute until age 60."
+    },
+    {
+      "question": "What is the minimum and maximum pension amount?",
+      "answer": "You can choose monthly pensions of ₹1,000, ₹2,000, ₹3,000, ₹4,000, or ₹5,000 after retirement."
+    },
+    {
+      "question": "How can I calculate LIC insurance premiums for comparison?",
+      "answer": "For comparing APY with LIC pension plans, use our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> to estimate costs for various LIC schemes like Jeevan Anand or Jeevan Umang."
+    },
+    {
+      "question": "What if I want to check overlap in my mutual fund investments?",
+      "answer": "If you're considering mutual funds alongside APY, use our <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> to avoid redundant investments and optimize your portfolio."
+    },
+    {
+      "question": "Are there calculators for LIC child plans or term insurance?",
+      "answer": "Yes, we have specialized calculators for <a href='/{lang}/lic-child-plan' class='text-primary hover:underline'>LIC child plans</a>, <a href='/{lang}/lic-term-insurance' class='text-primary hover:underline'>LIC term insurance</a>, and other LIC schemes to help you compare options."
     }
   ],
+  "related_calculators": {
+    "title": "Explore Our Other Financial Calculators",
+    "body": "Maximize your financial planning with our comprehensive suite of calculators. Compare <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF</a>, calculate <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC surrender values</a>, or use our <a href='/{lang}/mutual-fund-scheme-selector' class='text-primary hover:underline'>mutual fund scheme selector</a> to build a diversified portfolio."
+  },
   "conclusion": {
     "title": "Secure Your Future with a Small Step Today",
-    "body": "Atal Pension Yojana is an excellent tool for building a retirement safety net, especially for those with limited means. Use this calculator to take the first step towards securing your financial future, and consider our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement calculator</a> for a more comprehensive plan."
+    "body": "Atal Pension Yojana is an excellent tool for building a retirement safety net, especially for those with limited means. Use this calculator to take the first step towards securing your financial future, and consider our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement calculator</a> for a more comprehensive plan. Also explore our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for debt management, <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> for investment opportunities, <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>LIC Jeevan Anand calculator</a> for insurance planning, and <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a> to understand policy benefits."
   }
 }

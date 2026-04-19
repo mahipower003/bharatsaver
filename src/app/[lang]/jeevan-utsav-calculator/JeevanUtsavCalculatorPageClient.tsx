@@ -11,14 +11,14 @@ import { AuthorCard } from "@/components/layout/AuthorCard";
 import { FooterCta } from "@/components/layout/FooterCta";
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
-import { Download, BarChart, FileText, CheckCircle, SlidersHorizontal, GitCompareArrows, AlertTriangle, Users, BookUser, Star, HelpCircle, UserCheck, Calculator } from "lucide-react";
+import { Download, BarChart, FileText, CheckCircle, SlidersHorizontal, GitCompareArrows, AlertTriangle, Users, BookUser, Star, HelpCircle, UserCheck, Calculator, TrendingUp } from "lucide-react";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import Image from "next/image";
 
 function getIcon(iconName: string) {
     const icons: { [key: string]: React.ElementType } = {
         BarChart, FileText, CheckCircle, SlidersHorizontal, GitCompareArrows,
-        AlertTriangle, Users, BookUser, Star, HelpCircle, UserCheck, Calculator
+        AlertTriangle, Users, BookUser, Star, HelpCircle, UserCheck, Calculator, TrendingUp
     };
     return icons[iconName] || HelpCircle;
 }

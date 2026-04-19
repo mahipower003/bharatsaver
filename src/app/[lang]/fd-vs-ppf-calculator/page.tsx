@@ -262,6 +262,18 @@ export default async function FdVsPpfCalculatorPage({ params }: { params: { lang
             </Accordion>
         </div>
 
+        <Card className="mt-12 shadow-lg">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-3">
+              <Banknote className="h-7 w-7 text-primary" />
+              <h2 className="text-2xl font-bold">{pageDict.related_calculators.title}</h2>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.related_calculators.body.replace(/{lang}/g, params.lang) }} />
+          </CardContent>
+        </Card>
+
         <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
           <CardHeader>
             <CardTitle className="flex items-center gap-3">

@@ -195,8 +195,19 @@
             {"q": "Does this plan give a big lump sum at the end like other LIC plans?","a": "Not in the traditional sense. Jeevan Utsav is designed for lifelong *income*. However, if you choose the Flexi option and let your money accumulate, you can build a very large 'pool' of money that you can withdraw from, which can act like a lump sum."},
             {"q": "What does my family get if something happens to me?","a": "Your nominee gets the 'Sum Assured on Death' (which is your Basic Sum Assured) PLUS all the Guaranteed Additions that have been collected up to that point. LIC guarantees this payout will be at least 105% of all premiums you've paid."},
             {"q": "Can I take a loan if I'm in a pinch?","a": "Yes, it's one of the benefits. Once your policy has a surrender value (after 1-2 years of payments depending on PPT), you can take a loan against it. It's a great way to get liquidity without breaking the policy."},
-            {"q": "Are the optional riders actually worth the extra cost?","a": "In my professional opinion, riders for accidental death and critical illness are absolutely worth it. They add a crucial layer of protection for a relatively small increase in premium. They don't change your core Utsav benefits, but they protect your family from life's worst-case scenarios."}
+            {"q": "Are the optional riders actually worth the extra cost?","a": "In my professional opinion, riders for accidental death and critical illness are absolutely worth it. They add a crucial layer of protection for a relatively small increase in premium. They don't change your core Utsav benefits, but they protect your family from life's worst-case scenarios."},
+            {"q": "How does Jeevan Utsav compare with mutual fund investments?","a": "While Jeevan Utsav provides guaranteed returns, mutual funds offer potentially higher returns but with market risk. Use our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> to explore market-linked options and our <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>overlap calculator</a> to optimize your portfolio."},
+            {"q": "What about tax-saving options beyond LIC plans?","a": "For comprehensive tax planning, explore <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF comparisons</a> and our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to maximize your savings under different tax slabs."},
+            {"q": "Can I use Jeevan Utsav for child education planning?","a": "While Jeevan Utsav is primarily for retirement income, for child-specific plans consider <a href='/{lang}/lic-child-plan' class='text-primary hover:underline'>LIC child plans</a> or <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>Sukanya Samriddhi Yojana</a> which offer better tax benefits for education goals."}
         ]}
+      ]
+    },
+    {
+      "id": "explore-more",
+      "icon": "TrendingUp",
+      "title": "Explore More Financial Planning Tools",
+      "content": [
+        { "type": "paragraph", "text": "Maximize your financial strategy with our comprehensive suite of calculators. Calculate <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan repayment strategies</a>, plan for <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS retirement benefits</a>, and compare <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity values</a> to build a diversified financial portfolio." }
       ]
     },
     {
@@ -204,7 +215,7 @@
       "icon": "Star",
       "title": "My Final Take: Is Jeevan Utsav the Right Choice for You?",
       "content": [
-        { "type": "paragraph", "text": "After reviewing hundreds of financial products, I can tell you that Jeevan Utsav is a compelling option for a specific type of investor: someone who values <strong>certainty over speculation</strong>. If you want to lock in a guaranteed, lifelong, tax-free income stream for your retirement without being exposed to market risks, this plan is one of the strongest contenders LIC has ever offered. It’s not for the aggressive wealth builder, but for creating a foundation of absolute financial security, it's a top-tier choice. I hope this guide and calculator have given you the clarity and confidence to decide if it fits into your financial story." }
+        { "type": "paragraph", "text": "After reviewing hundreds of financial products, I can tell you that Jeevan Utsav is a compelling option for a specific type of investor: someone who values <strong>certainty over speculation</strong>. If you want to lock in a guaranteed, lifelong, tax-free income stream for your retirement without being exposed to market risks, this plan is one of the strongest contenders LIC has ever offered. It’s not for the aggressive wealth builder, but for creating a foundation of absolute financial security, it's a top-tier choice. For a comprehensive retirement strategy, compare Jeevan Utsav with our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a>, explore <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF returns</a>, or check <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>Atal Pension Yojana</a> for government-backed pension options. I hope this guide and calculator have given you the clarity and confidence to decide if it fits into your financial story." }
       ]
     }
   ],
