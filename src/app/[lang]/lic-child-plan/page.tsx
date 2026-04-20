@@ -8,9 +8,10 @@ export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
 }
 
-export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
+    const { lang } = await params;
     const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-    const pageUrl = `${siteUrl}/${params.lang}/lic-child-plan`;
+    const pageUrl = `${siteUrl}/${lang}/lic-child-plan`;
     
     // SEO Optimized Metadata
     const title = "LIC Child Plan 2025 — Jeevan Tarun, Money Back & Amritbaal Comparison (Calculator Inside)";
@@ -31,20 +32,21 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
           description: description,
           url: pageUrl,
           images: [{ url: `${siteUrl}/images/lic-child-plan-guide.png`, width: 1200, height: 630, alt: 'LIC Child Plan Guide' }],
-          locale: params.lang === 'en' ? 'en_IN' : params.lang,
+          locale: lang === 'en' ? 'en_IN' : lang,
           type: 'website',
         },
     };
 }
 
 
-export default async function LicChildPlanPage({ params }: { params: { lang: Locale }}) {
-    const dictionary = await getDictionary(params.lang);
-    const pageDict = (await import(`@/dictionaries/${params.lang}/lic-child-plan.json`).catch(() => import(`@/dictionaries/en/lic-child-plan.json`))).default;
+export default async function LicChildPlanPage({ params }: { params: Promise<{ lang: Locale }> }) {
+    const { lang } = await params;
+    const dictionary = await getDictionary(lang);
+    const pageDict = (await import(`@/dictionaries/${lang}/lic-child-plan.json`).catch(() => import(`@/dictionaries/en/lic-child-plan.json`))).default;
     
     return (
         <LicChildPlanPageClient 
-            params={params}
+            params={{ lang }}
             dictionary={dictionary}
             pageDict={pageDict}
         />

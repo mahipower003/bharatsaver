@@ -9,9 +9,10 @@ export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
 }
 
-export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
+    const { lang } = await params;
     const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-    const pageUrl = `/${params.lang}/lic-surrender-value-calculator`;
+    const pageUrl = `/${lang}/lic-surrender-value-calculator`;
     // We are fetching the english dictionary specifically, as it contains the most complete data for schema.
     const pageDict = (await import(`@/dictionaries/en/lic-surrender-value-calculator.json`)).default;
 
@@ -62,14 +63,15 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 }
 
 
-export default async function LicSurrenderValueCalculatorPage({ params }: { params: { lang: Locale }}) {
-    const dictionary = await getDictionary(params.lang);
+export default async function LicSurrenderValueCalculatorPage({ params }: { params: Promise<{ lang: Locale }> }) {
+    const { lang } = await params;
+    const dictionary = await getDictionary(lang);
     // Fallback to english dictionary if the translation is not available for this page
-    const pageDict = (await import(`@/dictionaries/${params.lang}/lic-surrender-value-calculator.json`).catch(() => import(`@/dictionaries/en/lic-surrender-value-calculator.json`))).default;
+    const pageDict = (await import(`@/dictionaries/${lang}/lic-surrender-value-calculator.json`).catch(() => import(`@/dictionaries/en/lic-surrender-value-calculator.json`))).default;
     
     return (
         <LicSurrenderValueCalculatorPageClient 
-            params={params}
+            params={{ lang }}
             dictionary={dictionary}
             pageDict={pageDict}
         />

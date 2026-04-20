@@ -13,10 +13,11 @@ export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
 }
 
-export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang);
+export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/${params.lang}/blog`;
+  const pageUrl = `${siteUrl}/${lang}/blog`;
   return {
     title: dictionary.blog_page.meta_title,
     description: dictionary.blog_page.meta_description,
@@ -30,8 +31,9 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   };
 }
 
-export default async function BlogPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang);
+export default async function BlogPage({ params }: { params: Promise<{ lang: Locale }> }) {
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
 
   const sortedContent = [...calculators].sort((a, b) => new Date(b.lastModified).getTime() - new Date(a.lastModified).getTime());
   
@@ -49,7 +51,7 @@ export default async function BlogPage({ params }: { params: { lang: Locale }}) 
 
         <div className="space-y-12">
           {sortedContent.map((item) => (
-             <Link key={item.slug} href={`/${params.lang}/${item.slug}`} className="group block">
+             <Link key={item.slug} href={`/${lang}/${item.slug}`} className="group block">
                 <Card className="transition-all duration-300 group-hover:shadow-xl group-hover:border-primary/30 overflow-hidden md:flex md:flex-row">
                     <div className="md:w-1/3">
                         <Image

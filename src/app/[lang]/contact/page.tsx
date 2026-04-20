@@ -10,10 +10,11 @@ export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
 }
 
-export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang);
+export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/${params.lang}/contact`;
+  const pageUrl = `${siteUrl}/${lang}/contact`;
   return {
     title: dictionary.contact_page?.meta_title,
     description: dictionary.contact_page?.meta_description,
@@ -45,8 +46,9 @@ const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 
-export default async function ContactPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang);
+export default async function ContactPage({ params }: { params: Promise<{ lang: Locale }> }) {
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
   
   const contactDetails = [
     {

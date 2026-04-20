@@ -8,10 +8,11 @@ export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
 }
 
-export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-    const pageDict = (await import(`@/dictionaries/${params.lang}/lic-jeevan-anand-calculator.json`)).default;
+export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
+    const { lang } = await params;
+    const pageDict = (await import(`@/dictionaries/${lang}/lic-jeevan-anand-calculator.json`)).default;
     const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-    const pageUrl = `${siteUrl}/${params.lang}/lic-jeevan-anand-calculator`;
+    const pageUrl = `${siteUrl}/${lang}/lic-jeevan-anand-calculator`;
 
     const faqItems = (pageDict.article.sections.find((s:any) => s.id === 'faq')?.content.find((c: any) => c.type === 'faq') as any)?.items ?? [];
     
@@ -69,19 +70,20 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 }
 
 
-export default async function LicJeevanAnandCalculatorPage({ params }: { params: { lang: Locale }}) {
-    const dictionary = await getDictionary(params.lang);
-    const pageDict = (await import(`@/dictionaries/${params.lang}/lic-jeevan-anand-calculator.json`).catch(() => import(`@/dictionaries/en/lic-jeevan-anand-calculator.json`))).default;
+export default async function LicJeevanAnandCalculatorPage({ params }: { params: Promise<{ lang: Locale }> }) {
+    const { lang } = await params;
+    const dictionary = await getDictionary(lang);
+    const pageDict = (await import(`@/dictionaries/${lang}/lic-jeevan-anand-calculator.json`).catch(() => import(`@/dictionaries/en/lic-jeevan-anand-calculator.json`))).default;
     const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-    const pageUrl = `${siteUrl}/${params.lang}/lic-jeevan-anand-calculator`;
+    const pageUrl = `${siteUrl}/${lang}/lic-jeevan-anand-calculator`;
 
     const breadcrumbSchema = {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${params.lang}` },
-          { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${params.lang}/calculators` },
-          { '@type': 'ListItem', position: 3, name: 'LIC Premium Calculator', item: `${siteUrl}/${params.lang}/lic-premium-calculator` },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${lang}` },
+          { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${lang}/calculators` },
+          { '@type': 'ListItem', position: 3, name: 'LIC Premium Calculator', item: `${siteUrl}/${lang}/lic-premium-calculator` },
           { '@type': 'ListItem', position: 4, name: 'LIC Jeevan Anand Calculator', item: pageUrl },
         ],
     };
@@ -90,7 +92,7 @@ export default async function LicJeevanAnandCalculatorPage({ params }: { params:
         <>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <LicJeevanAnandCalculatorPageClient 
-                params={params}
+                params={{ lang }}
                 dictionary={dictionary}
                 pageDict={pageDict}
             />

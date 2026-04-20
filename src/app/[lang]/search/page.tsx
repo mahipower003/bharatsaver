@@ -11,16 +11,18 @@ export async function generateMetadata({
     params,
     searchParams 
 }: { 
-    params: { lang: Locale },
-    searchParams: { q?: string }
+    params: Promise<{ lang: Locale }>,
+    searchParams: Promise<{ q?: string }>
 }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang);
-  const query = searchParams.q;
+  const { lang } = await params;
+  const { q } = await searchParams;
+  const dictionary = await getDictionary(lang);
+  const query = q;
   const title = query 
     ? `${dictionary.search_page.title_with_query} "${query}"` 
     : dictionary.search_page.title;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/${params.lang}/search`;
+  const pageUrl = `${siteUrl}/${lang}/search`;
   
   return {
     title: title,
@@ -43,17 +45,19 @@ export default async function SearchPage({
     params,
     searchParams
 }: { 
-    params: { lang: Locale },
-    searchParams: { q?: string }
+    params: Promise<{ lang: Locale }>,
+    searchParams: Promise<{ q?: string }>
 }) {
-  const dictionary = await getDictionary(params.lang);
-  const query = searchParams.q;
+  const { lang } = await params;
+  const { q } = await searchParams;
+  const dictionary = await getDictionary(lang);
+  const query = q;
   
   return (
     <div className="py-12">
       <div className="mx-auto max-w-xl">
         <div className="mb-8">
-            <Search lang={params.lang} dictionary={{ placeholder: dictionary.header.search_placeholder }} />
+            <Search lang={lang} dictionary={{ placeholder: dictionary.header.search_placeholder }} />
         </div>
         
         <h1 className="text-2xl font-bold tracking-tight sm:text-3xl font-headline">

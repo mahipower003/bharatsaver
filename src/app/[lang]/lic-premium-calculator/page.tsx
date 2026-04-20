@@ -8,7 +8,8 @@ export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
 }
 
-export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
+  const { lang } = await params;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   
   const faqSchema = {
@@ -151,7 +152,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       "@type": "Person",
       "name": "Mahesh Chaube",
       "jobTitle": "Certified Financial Planner (CFP)",
-      "url": `${siteUrl}/${params.lang}/author/mahesh-chaube`
+        "url": `${siteUrl}/${lang}/author/mahesh-chaube`
     },
     "publisher": {
       "@type": "Organization",
@@ -181,19 +182,19 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         "@type": "HowToStep",
         "name": "Step 1: Select Your Plan",
         "text": "Start by choosing your desired LIC plan from the dropdown menus. Use a preset like 'Jeevan Umang' for better accuracy.",
-        "url": `${siteUrl}/${params.lang}/lic-premium-calculator#calculator-widget`
+        "url": `${siteUrl}/${lang}/lic-premium-calculator#calculator-widget`
       },
       {
         "@type": "HowToStep",
         "name": "Step 2: Enter Your Details",
         "text": "Input your current age, gender, the sum assured (coverage amount), and the premium paying term (PPT).",
-        "url": `${siteUrl}/${params.lang}/lic-premium-calculator#calculator-widget`
+        "url": `${siteUrl}/${lang}/lic-premium-calculator#calculator-widget`
       },
       {
         "@type": "HowToStep",
         "name": "Step 3: Click 'Calculate'",
         "text": "The tool will process your inputs and instantly display your estimated premium for yearly, half-yearly, quarterly, and monthly frequencies.",
-        "url": `${siteUrl}/${params.lang}/lic-premium-calculator#calculator-widget`
+        "url": `${siteUrl}/${lang}/lic-premium-calculator#calculator-widget`
       }
     ]
   };
@@ -232,18 +233,19 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   };
 }
 
-export default async function LicPremiumCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang);
-  const pageDict = (await import(`@/dictionaries/${params.lang}/lic-premium-calculator.json`)).default;
+export default async function LicPremiumCalculatorPage({ params }: { params: Promise<{ lang: Locale }> }) {
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
+  const pageDict = (await import(`@/dictionaries/${lang}/lic-premium-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/${params.lang}/lic-premium-calculator`;
+  const pageUrl = `${siteUrl}/${lang}/lic-premium-calculator`;
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${params.lang}` },
-      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${params.lang}/calculators` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${lang}` },
+      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${lang}/calculators` },
       { '@type': 'ListItem', position: 3, name: 'LIC Premium Calculator', item: pageUrl },
     ],
   };
@@ -252,7 +254,7 @@ export default async function LicPremiumCalculatorPage({ params }: { params: { l
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <LicPremiumCalculatorPageClient
-          params={params}
+          params={{ lang }}
           dictionary={dictionary}
           pageDict={pageDict}
       />

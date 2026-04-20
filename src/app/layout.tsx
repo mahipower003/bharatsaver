@@ -58,13 +58,14 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 }>) {
+  const { lang } = await params;
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
@@ -72,13 +73,13 @@ export default function RootLayout({
     name: 'BharatSaver',
     potentialAction: {
       '@type': 'SearchAction',
-      target: `${siteUrl}/${params.lang ?? i18nConfig.defaultLocale}/search?q={search_term_string}`,
+      target: `${siteUrl}/${lang ?? i18nConfig.defaultLocale}/search?q={search_term_string}`,
       'query-input': 'required name=search_term_string',
     },
   };
 
   return (
-    <html lang={params.lang ?? i18nConfig.defaultLocale} suppressHydrationWarning className={`${inter.variable} ${noto_sans.variable}`}>
+    <html lang={lang ?? i18nConfig.defaultLocale} suppressHydrationWarning className={`${inter.variable} ${noto_sans.variable}`}>
       <head>
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`

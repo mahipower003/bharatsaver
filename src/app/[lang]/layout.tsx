@@ -13,18 +13,19 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { lang: Locale };
+  params: Promise<{ lang: Locale }>;
 }) {
-  const dictionary = await getDictionary(params.lang);
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
   return (
     <div className="flex min-h-screen flex-col">
-      <Header lang={params.lang} dictionary={dictionary.header} />
+      <Header lang={lang} dictionary={dictionary.header} />
       <main className="flex flex-1 flex-col container mx-auto px-4 md:px-6">
         <Suspense fallback={<Loading />}>
           {children}
         </Suspense>
       </main>
-      <Footer lang={params.lang} dictionary={dictionary.footer} />
+      <Footer lang={lang} dictionary={dictionary.footer} />
       <ScrollToTopButton />
       <ScrollToBottomButton />
     </div>

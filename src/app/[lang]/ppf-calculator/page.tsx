@@ -15,10 +15,11 @@ export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
 }
 
-export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const pageDict = (await import(`@/dictionaries/${params.lang}/ppf-calculator.json`)).default;
+export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const pageDict = (await import(`@/dictionaries/${lang}/ppf-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/${params.lang}/ppf-calculator`;
+  const pageUrl = `${siteUrl}/${lang}/ppf-calculator`;
   const ogImageUrl = `${siteUrl}/images/calculate-ppf-online.png`;
 
   const faqItems = pageDict.faqs;
@@ -82,7 +83,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
           height: 630, 
           alt: 'BharatSaver PPF Calculator' 
         }],
-        locale: params.lang === 'en' ? 'en_IN' : params.lang,
+        "locale": lang === 'en' ? 'en_IN' : lang,
         type: 'website',
     },
     twitter: {
@@ -104,18 +105,19 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   };
 }
 
-export default async function PpfCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang);
-  const pageDict = (await import(`@/dictionaries/${params.lang}/ppf-calculator.json`)).default;
+export default async function PpfCalculatorPage({ params }: { params: Promise<{ lang: Locale }> }) {
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
+  const pageDict = (await import(`@/dictionaries/${lang}/ppf-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${params.lang}` },
-      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${params.lang}/calculators` },
-      { '@type': 'ListItem', position: 3, name: 'PPF Calculator', item: `${siteUrl}/${params.lang}/ppf-calculator` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${lang}` },
+      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${lang}/calculators` },
+      { '@type': 'ListItem', position: 3, name: 'PPF Calculator', item: `${siteUrl}/${lang}/ppf-calculator` },
     ],
   };
   
@@ -306,7 +308,7 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
                         ))}
                     </TableBody>
                 </Table>
-                 <p className="text-sm text-muted-foreground mt-4" dangerouslySetInnerHTML={{ __html: pageDict.comparison.footer_note.replace('{lang}', params.lang) }}></p>
+                 <p className="text-sm text-muted-foreground mt-4" dangerouslySetInnerHTML={{ __html: pageDict.comparison.footer_note.replace('{lang}', lang) }}></p>
             </CardContent>
         </Card>
 
@@ -336,7 +338,7 @@ export default async function PpfCalculatorPage({ params }: { params: { lang: Lo
           </CardContent>
         </Card>
         <AuthorCard dictionary={dictionary.author_card} />
-        <FooterCta dictionary={dictionary.footer_cta} lang={params.lang} />
+        <FooterCta dictionary={dictionary.footer_cta} lang={lang} />
       </div>
     </div>
   );

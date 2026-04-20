@@ -7,11 +7,12 @@ export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
 }
 
-export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang);
+export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
   const pageDict = dictionary.guides_page;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/${params.lang}/guides`;
+  const pageUrl = `${siteUrl}/${lang}/guides`;
   return {
     title: pageDict.meta_title,
     description: pageDict.meta_description,
@@ -25,8 +26,9 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   };
 }
 
-export default async function GuidesPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang);
+export default async function GuidesPage({ params }: { params: Promise<{ lang: Locale }> }) {
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
   const pageDict = dictionary.guides_page;
   
   return (

@@ -16,10 +16,11 @@ export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
 }
 
-export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const pageDict = (await import(`@/dictionaries/${params.lang}/tax-regime-calculator.json`)).default;
+export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const pageDict = (await import(`@/dictionaries/${lang}/tax-regime-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/${params.lang}/tax-regime-calculator`;
+  const pageUrl = `${siteUrl}/${lang}/tax-regime-calculator`;
   const ogImageUrl = `${siteUrl}/images/tax-regime-calculator-online.png`;
 
   const faqItems = pageDict.faqs;
@@ -49,7 +50,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
     "author": {
       "@type": "Person",
       "name": "Mahesh Chaube, CFP",
-      "url": `${siteUrl}/${params.lang}/author/mahesh-chaube`,
+      "url": `${siteUrl}/${lang}/author/mahesh-chaube`,
       "sameAs": "https://www.linkedin.com/in/mahi003/"
     },
     "publisher": {
@@ -103,7 +104,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       description: pageDict.meta_description,
       url: pageUrl,
       images: [{ url: ogImageUrl, width: 1200, height: 630, alt: 'BharatSaver Tax Regime Calculator' }],
-      locale: params.lang === 'en' ? 'en_IN' : params.lang,
+      "locale": lang === 'en' ? 'en_IN' : lang,
       type: 'website',
     },
     twitter: {
@@ -125,18 +126,19 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   };
 }
 
-export default async function TaxRegimeCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang);
-  const pageDict = (await import(`@/dictionaries/${params.lang}/tax-regime-calculator.json`)).default;
+export default async function TaxRegimeCalculatorPage({ params }: { params: Promise<{ lang: Locale }> }) {
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
+  const pageDict = (await import(`@/dictionaries/${lang}/tax-regime-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${params.lang}` },
-      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${params.lang}/calculators` },
-      { '@type': 'ListItem', position: 3, name: 'Tax Regime Calculator', item: `${siteUrl}/${params.lang}/tax-regime-calculator` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${lang}` },
+      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${lang}/calculators` },
+      { '@type': 'ListItem', position: 3, name: 'Tax Regime Calculator', item: `${siteUrl}/${lang}/tax-regime-calculator` },
     ],
   };
   
@@ -228,7 +230,7 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
                   <h2 className="text-2xl font-bold">{pageDict.how_we_calculate.title}</h2>
               </CardTitle>
             </CardHeader>
-            <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.how_we_calculate.body.replace(/{lang}/g, params.lang) }} />
+            <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.how_we_calculate.body.replace(/{lang}/g, lang) }} />
           </Card>
         )}
 
@@ -300,7 +302,7 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
                             </CardHeader>
                         </Card>
                     </Link>
-                     <Link href={`/${params.lang}/calculators`} className="block group">
+                     <Link href={`/${lang}/calculators`} className="block group">
                         <Card className="h-full hover:shadow-md transition-shadow">
                             <CardHeader className="flex flex-row items-center gap-4">
                                 <TrendingUp className="h-8 w-8 text-primary"/>
@@ -325,13 +327,13 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: { la
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground" dangerouslySetInnerHTML={{__html: pageDict.conclusion.body.replace(/{lang}/g, params.lang)}}></p>
+              <p className="text-muted-foreground" dangerouslySetInnerHTML={{__html: pageDict.conclusion.body.replace(/{lang}/g, lang)}}></p>
             </CardContent>
           </Card>
         )}
 
         <AuthorCard dictionary={dictionary.author_card} />
-        <FooterCta dictionary={dictionary.footer_cta} lang={params.lang} />
+        <FooterCta dictionary={dictionary.footer_cta} lang={lang} />
       </div>
     </div>
   );

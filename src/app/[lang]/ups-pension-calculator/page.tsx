@@ -15,10 +15,11 @@ export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
 }
 
-export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dict = (await import(`@/dictionaries/${params.lang}/ups-pension-calculator.json`)).default;
+export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const dict = (await import(`@/dictionaries/${lang}/ups-pension-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/${params.lang}/ups-pension-calculator`;
+  const pageUrl = `${siteUrl}/${lang}/ups-pension-calculator`;
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -60,7 +61,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       "author": {
         "@type": "Person",
         "name": "Mahesh Chaube, CFP",
-        "url": `${siteUrl}/${params.lang}/author/mahesh-chaube`
+        "url": `${siteUrl}/${lang}/author/mahesh-chaube`
       },
       "publisher": {
         "@type": "Organization",
@@ -101,18 +102,19 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   };
 }
 
-export default async function UpsPensionCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang);
-  const dict = (await import(`@/dictionaries/${params.lang}/ups-pension-calculator.json`)).default;
+export default async function UpsPensionCalculatorPage({ params }: { params: Promise<{ lang: Locale }> }) {
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
+  const dict = (await import(`@/dictionaries/${lang}/ups-pension-calculator.json`)).default;
   const workedExamples = dict.worked_examples;
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: `https://bharatsaver.com/${params.lang}` },
-      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `https://bharatsaver.com/${params.lang}/calculators` },
-      { '@type': 'ListItem', position: 3, name: 'UPS Pension Calculator', item: `https://bharatsaver.com/${params.lang}/ups-pension-calculator` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `https://bharatsaver.com/${lang}` },
+      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `https://bharatsaver.com/${lang}/calculators` },
+      { '@type': 'ListItem', position: 3, name: 'UPS Pension Calculator', item: `https://bharatsaver.com/${lang}/ups-pension-calculator` },
     ],
   };
 
@@ -243,7 +245,7 @@ export default async function UpsPensionCalculatorPage({ params }: { params: { l
             </Alert>
             
             <AuthorCard dictionary={dictionary.author_card} />
-            <FooterCta dictionary={dictionary.footer_cta} lang={params.lang} />
+            <FooterCta dictionary={dictionary.footer_cta} lang={lang} />
         </div>
       </div>
     </div>

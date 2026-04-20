@@ -8,10 +8,11 @@ export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
 }
 
-export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-    const pageDict = (await import(`@/dictionaries/${params.lang}/lic-jeevan-umang-calculator.json`).catch(() => import(`@/dictionaries/en/lic-jeevan-umang-calculator.json`))).default;
+export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
+    const { lang } = await params;
+    const pageDict = (await import(`@/dictionaries/${lang}/lic-jeevan-umang-calculator.json`).catch(() => import(`@/dictionaries/en/lic-jeevan-umang-calculator.json`))).default;
     const siteUrl = 'https://bharatsaver.com';
-    const pageUrl = `${siteUrl}/${params.lang}/lic-jeevan-umang-calculator`;
+    const pageUrl = `${siteUrl}/${lang}/lic-jeevan-umang-calculator`;
     const ogImageUrl = `${siteUrl}/images/lic-jeevan-umang-calculator.png`;
 
     const schemas = [];
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
           description: pageDict.og_description,
           url: pageUrl,
           images: [{ url: ogImageUrl, width: 1200, height: 630, alt: 'LIC Jeevan Umang Calculator' }],
-          locale: params.lang === 'en' ? 'en_IN' : params.lang,
+          locale: lang === 'en' ? 'en_IN' : lang,
           type: 'website',
         },
         other: {
@@ -48,13 +49,14 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 }
 
 
-export default async function JeevanUmangCalculatorPage({ params }: { params: { lang: Locale }}) {
-    const dictionary = await getDictionary(params.lang);
-    const pageDict = (await import(`@/dictionaries/${params.lang}/lic-jeevan-umang-calculator.json`).catch(() => import(`@/dictionaries/en/lic-jeevan-umang-calculator.json`))).default;
+export default async function JeevanUmangCalculatorPage({ params }: { params: Promise<{ lang: Locale }> }) {
+    const { lang } = await params;
+    const dictionary = await getDictionary(lang);
+    const pageDict = (await import(`@/dictionaries/${lang}/lic-jeevan-umang-calculator.json`).catch(() => import(`@/dictionaries/en/lic-jeevan-umang-calculator.json`))).default;
     
     return (
         <LicJeevanUmangCalculatorPageClient 
-            params={params}
+            params={{ lang }}
             dictionary={dictionary}
             pageDict={pageDict}
         />

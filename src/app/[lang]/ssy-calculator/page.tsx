@@ -15,10 +15,11 @@ export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
 }
 
-export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const pageDict = (await import(`@/dictionaries/${params.lang}/ssy-calculator.json`)).default;
+export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const pageDict = (await import(`@/dictionaries/${lang}/ssy-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/${params.lang}/ssy-calculator`;
+  const pageUrl = `${siteUrl}/${lang}/ssy-calculator`;
   const ogImageUrl = `${siteUrl}/images/calculate-ssy-online.png`;
 
   const faqItems = pageDict.faqs;
@@ -81,7 +82,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
           height: 630, 
           alt: 'BharatSaver SSY Calculator' 
         }],
-        locale: params.lang === 'en' ? 'en_IN' : params.lang,
+        locale: lang === 'en' ? 'en_IN' : lang,
         type: 'website',
     },
     twitter: {
@@ -91,7 +92,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
         images: [ogImageUrl],
     },
     alternates: {
-      canonical: `${siteUrl}/en/ssy-calculator`,
+      "canonical": `${siteUrl}/${lang}/ssy-calculator`,
       languages: {
         'en': `${siteUrl}/en/ssy-calculator`,
         'hi': `${siteUrl}/hi/ssy-calculator`,
@@ -107,18 +108,19 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   };
 }
 
-export default async function SsyCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang);
-  const pageDict = (await import(`@/dictionaries/${params.lang}/ssy-calculator.json`)).default;
+export default async function SsyCalculatorPage({ params }: { params: Promise<{ lang: Locale }> }) {
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
+  const pageDict = (await import(`@/dictionaries/${lang}/ssy-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${params.lang}` },
-      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${params.lang}/calculators` },
-      { '@type': 'ListItem', position: 3, name: 'SSY Calculator', item: `${siteUrl}/${params.lang}/ssy-calculator` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${lang}` },
+      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${lang}/calculators` },
+      { '@type': 'ListItem', position: 3, name: 'SSY Calculator', item: `${siteUrl}/${lang}/ssy-calculator` },
     ],
   };
   
@@ -369,7 +371,7 @@ export default async function SsyCalculatorPage({ params }: { params: { lang: Lo
           </CardContent>
         </Card>
         <AuthorCard dictionary={dictionary.author_card} />
-        <FooterCta dictionary={dictionary.footer_cta} lang={params.lang} />
+        <FooterCta dictionary={dictionary.footer_cta} lang={lang} />
       </div>
     </div>
   );

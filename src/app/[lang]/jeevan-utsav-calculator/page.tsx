@@ -8,10 +8,11 @@ export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
 }
 
-export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-    const pageDict = (await import(`@/dictionaries/${params.lang}/jeevan-utsav-calculator.json`).catch(() => import(`@/dictionaries/en/jeevan-utsav-calculator.json`))).default;
+export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
+    const { lang } = await params;
+    const pageDict = (await import(`@/dictionaries/${lang}/jeevan-utsav-calculator.json`).catch(() => import(`@/dictionaries/en/jeevan-utsav-calculator.json`))).default;
     const siteUrl = 'https://bharatsaver.com';
-    const pageUrl = `${siteUrl}/${params.lang}/jeevan-utsav-calculator`;
+    const pageUrl = `${siteUrl}/${lang}/jeevan-utsav-calculator`;
     const ogImageUrl = `${siteUrl}/images/lic-jeevan-utsav-calculator.png`;
 
     const faqSchema = pageDict.faq_schema;
@@ -41,7 +42,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
           description: pageDict.meta_description,
           url: pageUrl,
           images: [{ url: ogImageUrl, width: 1200, height: 630, alt: 'LIC Jeevan Utsav Calculator' }],
-          locale: params.lang === 'en' ? 'en_IN' : params.lang,
+          "locale": lang === 'en' ? 'en_IN' : lang,
           type: 'website',
         },
         other: {
@@ -51,13 +52,14 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 }
 
 
-export default async function JeevanUtsavCalculatorPage({ params }: { params: { lang: Locale }}) {
-    const dictionary = await getDictionary(params.lang);
-    const pageDict = (await import(`@/dictionaries/${params.lang}/jeevan-utsav-calculator.json`).catch(() => import(`@/dictionaries/en/jeevan-utsav-calculator.json`))).default;
+export default async function JeevanUtsavCalculatorPage({ params }: { params: Promise<{ lang: Locale }> }) {
+    const { lang } = await params;
+    const dictionary = await getDictionary(lang);
+    const pageDict = (await import(`@/dictionaries/${lang}/jeevan-utsav-calculator.json`).catch(() => import(`@/dictionaries/en/jeevan-utsav-calculator.json`))).default;
     
     return (
         <JeevanUtsavCalculatorPageClient 
-            params={params}
+            params={{ lang }}
             dictionary={dictionary}
             pageDict={pageDict}
         />

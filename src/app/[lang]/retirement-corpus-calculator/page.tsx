@@ -27,10 +27,11 @@ function formatCurrency(value: number) {
     return value.toLocaleString('en-IN', { style: 'currency', currency: 'INR', minimumFractionDigits: 0, maximumFractionDigits: 0 });
 }
 
-export async function generateMetadata({ params }: { params: { lang:Locale } }): Promise<Metadata> {
-  const retirementDict = (await import(`@/dictionaries/${params.lang}/retirement-corpus-calculator.json`)).default;
+export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const retirementDict = (await import(`@/dictionaries/${lang}/retirement-corpus-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/${params.lang}/retirement-corpus-calculator`;
+  const pageUrl = `${siteUrl}/${lang}/retirement-corpus-calculator`;
   const ogImageUrl = `${siteUrl}/images/retirement-calc-og.png`;
   
   const softwareSchema = {
@@ -74,7 +75,7 @@ export async function generateMetadata({ params }: { params: { lang:Locale } }):
     "author": {
       "@type": "Person",
       "name": "Mahesh Chaube, CFP",
-      "url": `${siteUrl}/${params.lang}/author/mahesh-chaube`,
+      "url": `${siteUrl}/${lang}/author/mahesh-chaube`,
     },
     "publisher": {
       "@type": "Organization",
@@ -118,7 +119,7 @@ export async function generateMetadata({ params }: { params: { lang:Locale } }):
         description: retirementDict.og_description,
         url: pageUrl,
         images: [{ url: ogImageUrl, width: 1200, height: 630, alt: 'BharatSaver Retirement Corpus Calculator' }],
-        locale: params.lang === 'en' ? 'en_IN' : params.lang,
+        "locale": lang === 'en' ? 'en_IN' : lang,
         type: 'website',
     },
     other: {
@@ -127,17 +128,18 @@ export async function generateMetadata({ params }: { params: { lang:Locale } }):
   };
 }
 
-export default async function RetirementCorpusCalculatorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang);
-  const retirementDict = (await import(`@/dictionaries/${params.lang}/retirement-corpus-calculator.json`)).default;
+export default async function RetirementCorpusCalculatorPage({ params }: { params: Promise<{ lang: Locale }> }) {
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
+  const retirementDict = (await import(`@/dictionaries/${lang}/retirement-corpus-calculator.json`)).default;
   
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: `https://bharatsaver.com/${params.lang}` },
-      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `https://bharatsaver.com/${params.lang}/calculators` },
-      { '@type': 'ListItem', position: 3, name: 'Retirement Corpus Calculator', item: `https://bharatsaver.com/${params.lang}/retirement-corpus-calculator` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `https://bharatsaver.com/${lang}` },
+      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `https://bharatsaver.com/${lang}/calculators` },
+      { '@type': 'ListItem', position: 3, name: 'Retirement Corpus Calculator', item: `https://bharatsaver.com/${lang}/retirement-corpus-calculator` },
     ],
   };
 
@@ -375,7 +377,7 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
                           </CardHeader>
                       </Card>
                   </Link>
-                   <Link href={`/${params.lang}/calculators`} className="block group">
+                   <Link href={`/${lang}/calculators`} className="block group">
                       <Card className="h-full hover:shadow-md transition-shadow">
                           <CardHeader className="flex flex-row items-center gap-4">
                               <Calculator className="h-8 w-8 text-primary"/>
@@ -423,7 +425,7 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
                 <p>{retirementDict.methodology.body}</p>
             </CardContent>
         </Card>}
-        <FooterCta dictionary={dictionary.footer_cta} lang={params.lang} />
+        <FooterCta dictionary={dictionary.footer_cta} lang={lang} />
       </div>
     </div>
   );

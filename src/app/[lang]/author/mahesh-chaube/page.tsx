@@ -14,10 +14,11 @@ export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
 }
 
-export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang);
+export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/${params.lang}/author/mahesh-chaube`;
+  const pageUrl = `${siteUrl}/${lang}/author/mahesh-chaube`;
   return {
     title: dictionary.author_page.meta_title,
     description: dictionary.author_page.meta_description,
@@ -31,8 +32,9 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   };
 }
 
-export default async function AuthorPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang);
+export default async function AuthorPage({ params }: { params: Promise<{ lang: Locale }> }) {
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
   const authoredContent = calculators;
 
   return (
@@ -49,7 +51,7 @@ export default async function AuthorPage({ params }: { params: { lang: Locale }}
 
             <div className="space-y-8">
             {authoredContent.map((item) => (
-                <Link key={item.slug} href={`/${params.lang}/${item.slug}`} className="group block">
+                <Link key={item.slug} href={`/${lang}/${item.slug}`} className="group block">
                     <Card className="transition-all duration-300 group-hover:shadow-xl group-hover:border-primary/30">
                         <CardHeader>
                             <CardTitle>{item.title}</CardTitle>

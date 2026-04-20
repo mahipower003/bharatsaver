@@ -8,10 +8,11 @@ export async function generateStaticParams() {
   return i18nConfig.locales.map(locale => ({ lang: locale }));
 }
 
-export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang);
+export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/${params.lang}/calculators`;
+  const pageUrl = `${siteUrl}/${lang}/calculators`;
   return {
     title: dictionary.calculators_page.meta_title,
     description: dictionary.calculators_page.meta_description,
@@ -25,8 +26,9 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   };
 }
 
-export default async function CalculatorsPage({ params }: { params: { lang: Locale } }) {
-  const dictionary = await getDictionary(params.lang);
+export default async function CalculatorsPage({ params }: { params: Promise<{ lang: Locale }> }) {
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
   return (
     <div className="py-12">
         <div className="text-center mb-12">
@@ -34,7 +36,7 @@ export default async function CalculatorsPage({ params }: { params: { lang: Loca
                 {dictionary.calculators_page.h1}
             </h1>
         </div>
-      <PopularTools lang={params.lang} dictionary={dictionary.home.popular_tools} />
+      <PopularTools lang={lang} dictionary={dictionary.home.popular_tools} />
     </div>
   );
 }

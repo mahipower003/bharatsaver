@@ -8,7 +8,7 @@ export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
 }
 
-export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
     const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
     const pageUrl = `${siteUrl}/lic-calculators/tools/maturity-calculator`;
 
@@ -46,13 +46,14 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 }
 
 
-export default async function LicMaturityCalculatorPage({ params }: { params: { lang: Locale }}) {
-    const dictionary = await getDictionary(params.lang);
-    const pageDict = (await import(`@/dictionaries/${params.lang}/lic-maturity-calculator.json`)).default;
+export default async function LicMaturityCalculatorPage({ params }: { params: Promise<{ lang: Locale }> }) {
+    const { lang } = await params;
+    const dictionary = await getDictionary(lang);
+    const pageDict = (await import(`@/dictionaries/${lang}/lic-maturity-calculator.json`)).default;
     
     return (
         <LicMaturityCalculatorPageClient 
-            params={params}
+            params={{ lang }}
             dictionary={dictionary}
             pageDict={pageDict}
         />

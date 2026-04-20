@@ -8,10 +8,11 @@ export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
 }
 
-export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-    const pageDict = (await import(`@/dictionaries/${params.lang}/lic-single-premium-endowment-calculator.json`)).default;
+export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
+    const { lang } = await params;
+    const pageDict = (await import(`@/dictionaries/${lang}/lic-single-premium-endowment-calculator.json`)).default;
     const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-    const pageUrl = `${siteUrl}/${params.lang}/lic-single-premium-endowment-calculator`;
+    const pageUrl = `${siteUrl}/${lang}/lic-single-premium-endowment-calculator`;
 
     return {
         title: pageDict.meta_title,
@@ -27,13 +28,14 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
 }
 
 
-export default async function LicSinglePremiumEndowmentCalculatorPage({ params }: { params: { lang: Locale }}) {
-    const dictionary = await getDictionary(params.lang);
-    const pageDict = (await import(`@/dictionaries/${params.lang}/lic-single-premium-endowment-calculator.json`)).default;
+export default async function LicSinglePremiumEndowmentCalculatorPage({ params }: { params: Promise<{ lang: Locale }> }) {
+    const { lang } = await params;
+    const dictionary = await getDictionary(lang);
+    const pageDict = (await import(`@/dictionaries/${lang}/lic-single-premium-endowment-calculator.json`)).default;
     
     return (
         <LicSinglePremiumEndowmentCalculatorPageClient 
-            params={params}
+            params={{ lang }}
             dictionary={dictionary}
             pageDict={pageDict}
         />

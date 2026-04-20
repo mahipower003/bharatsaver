@@ -12,10 +12,11 @@ import { BookOpen, ListOrdered, Wand2, GitCompareArrows, HeartPulse, Ban, Shield
 import { FooterCta } from "@/components/layout/FooterCta";
 
 
-export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dict = (await import(`@/dictionaries/${params.lang}/mutual-fund-screener.json`)).default;
+export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const dict = (await import(`@/dictionaries/${lang}/mutual-fund-screener.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/${params.lang}/mutual-fund-screener`;
+  const pageUrl = `${siteUrl}/${lang}/mutual-fund-screener`;
 
   const softwareSchema = {
     "@context":"https://schema.org",
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
       "@type": "WebPage",
       "@id": pageUrl
   };
-   articleSchema.author.url = `${siteUrl}/${params.lang}/author/mahesh-chaube`;
+   articleSchema.author.url = `${siteUrl}/${lang}/author/mahesh-chaube`;
    articleSchema.publisher.logo["@id"] = `${siteUrl}/icon.svg`;
 
 
@@ -61,19 +62,20 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   };
 }
 
-export default async function MutualFundScreenerPage({ params }: { params: { lang: Locale }}) {
-  const dictionary = await getDictionary(params.lang);
-  const dict = (await import(`@/dictionaries/${params.lang}/mutual-fund-screener.json`)).default;
+export default async function MutualFundScreenerPage({ params }: { params: Promise<{ lang: Locale }> }) {
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
+  const dict = (await import(`@/dictionaries/${lang}/mutual-fund-screener.json`)).default;
   const authorCardDict = dictionary.author_card;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/${params.lang}/mutual-fund-screener`;
+  const pageUrl = `${siteUrl}/${lang}/mutual-fund-screener`;
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${params.lang}` },
-      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${params.lang}/calculators` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${lang}` },
+      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${lang}/calculators` },
       { '@type': 'ListItem', position: 3, name: 'Mutual Fund Screener', item: pageUrl },
     ],
   };
@@ -254,7 +256,7 @@ export default async function MutualFundScreenerPage({ params }: { params: { lan
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {dict.tools_downloads.links.map((link: { text: string, href: string, desc: string }, index: number) => (
                     <Button key={index} asChild variant="outline">
-                      <Link href={link.href.replace('{lang}', params.lang)} target={link.href.startsWith('/') ? '_self' : '_blank'}>{link.text}</Link>
+                      <Link href={link.href.replace('{lang}', lang)} target={link.href.startsWith('/') ? '_self' : '_blank'}>{link.text}</Link>
                     </Button>
                   ))}
               </div>
@@ -286,7 +288,7 @@ export default async function MutualFundScreenerPage({ params }: { params: { lan
           
           <AuthorCard dictionary={authorCardDict} />
 
-          <FooterCta dictionary={dictionary.footer_cta} lang={params.lang} />
+          <FooterCta dictionary={dictionary.footer_cta} lang={lang} />
 
         </main>
       </div>
