@@ -1,146 +1,146 @@
-
+﻿
 {
-  "meta_title": "म्यूचुअल फंड स्कीम चयनकर्ता 2025 — तुलना करें, ओवरलैप जांचें, CSV निर्यात करें",
-  "meta_description": "होल्डिंग्स, टीईआर, एयूएम द्वारा फ़िल्टर करने, फंड की तुलना करने और सीएसवी डाउनलोड करने के लिए हमारे म्यूचुअल फंड स्कीम चयनकर्ता (भारत) का उपयोग करें।",
-  "h1": "म्यूचुअल फंड स्कीम चयनकर्ता — अपने लक्ष्य के लिए सर्वश्रेष्ठ फंड खोजें और तुलना करें (भारत, 2025)",
-  "intro": "<p>2,000 से अधिक योजनाओं के साथ, 'सही' योजना चुनने की कोशिश करना घास के ढेर में सुई खोजने जैसा महसूस हो सकता है। यह सिर्फ एक और सूची नहीं है; यह एक पूर्ण <strong>होल्डिंग्स विश्लेषण के साथ म्यूचुअल फंड चयनकर्ता भारत</strong> है, जो आपको शोर को काटने, महंगी गलतियों से बचने और आत्मविश्वास से *आपके* विशिष्ट वित्तीय लक्ष्यों के लिए सर्वश्रेष्ठ फंड चुनने में मदद करने के लिए एक इंटरैक्टिव प्लेटफॉर्म है।</p><p>आप सिर्फ एक फंड की तलाश में नहीं हैं; आप स्पष्टता की तलाश में हैं। चाहे वह सेवानिवृत्ति योजना हो या आपकी पहली एसआईपी, आइए भ्रम को आत्मविश्वास में बदलें। <strong>डेटा ताज़ा: अगस्त 2025 • 2,200 योजनाएं • इस महीने 10,000+ तुलनाएँ चलीं।</strong></p>",
+  "meta_title": "Mutual Fund Scheme Selector 2025 â€” Compare, Check Overlap, Export CSV",
+  "meta_description": "Use our mutual fund scheme selector (India) to filter by holdings, TER, AUM, compare funds and download CSV.",
+  "h1": "Mutual Fund Scheme Selector â€” Find & Compare Best Funds for Your Goal (India, 2025)",
+  "intro": "<p>With over 2,000 schemes, trying to pick the 'right' one can feel like finding a needle in a haystack. This isn't just another list; it's a complete <strong>mutual fund selector India with holdings</strong> analysis, an interactive platform to help you cut through the noise, avoid costly mistakes, and confidently select the best funds for *your* specific financial goals.</p><p>You're not just looking for a fund; you're looking for clarity. Whether it's retirement planning or your first SIP, let's turn confusion into confidence. <strong>Data refreshed: Aug 2025 â€¢ 2,200 schemes â€¢ 10,000+ comparisons run this month.</strong></p>",
   "how_it_works": {
-    "h2": "हमारा म्यूचुअल फंड स्कीम चयनकर्ता कैसे काम करता है",
+    "h2": "How Our Mutual Fund Scheme Selector Works",
     "data_sources": {
-      "h3": "डेटा स्रोत और अद्यतन आवृत्ति",
-      "body": "<p>आपको सबसे विश्वसनीय और भरोसेमंद जानकारी देने के लिए, मैं एएमएफआई (एसोसिएशन ऑफ म्यूचुअल फंड्स इन इंडिया) से दैनिक एनएवी अपडेट और सीधे फंड हाउस से विस्तृत मासिक पोर्टफोलियो प्रकटीकरण सहित कई आधिकारिक स्रोतों से डेटा खींचता हूं। इसका मतलब है कि आप हमेशा उपलब्ध ताज़ा डेटा के आधार पर निर्णय ले रहे हैं — एनएवी दैनिक रूप से अपडेट किए जाते हैं, और फंड होल्डिंग्स हर 30-45 दिनों में जारी होते ही ताज़ा हो जाती हैं। पारदर्शिता मेरी सर्वोच्च प्राथमिकता है, और मैं चाहता हूं कि आप यहां देखे गए नंबरों पर पूरी तरह से आश्वस्त महसूस करें। <strong>अंतिम पूर्ण डेटा ताज़ा: अगस्त 2025।</strong></p>"
+      "h3": "Data Sources & Update Frequency",
+      "body": "<p>To give you the most reliable and trustworthy information, I pull data from multiple official sources, including daily NAV updates from AMFI (Association of Mutual Funds in India) and detailed monthly portfolio disclosures directly from the fund houses. This means you're always making decisions based on the freshest data available â€” NAVs are updated daily, and fund holdings are refreshed every 30-45 days as soon as they are released. Transparency is my top priority, and I want you to feel completely confident in the numbers you see here. <strong>Last Full Data Refresh: August 2025.</strong></p>"
     },
     "filters": {
-      "h3": "उपलब्ध फ़िल्टर: आपकी उंगलियों पर एक शक्तिशाली स्क्रीनर",
-      "body": "<p>मैंने इस स्क्रीनर को उन शक्तिशाली फ़िल्टर के साथ डिज़ाइन किया है जिनका उपयोग मैं व्यक्तिगत रूप से फंड का विश्लेषण करने के लिए करता हूं। आप अपनी ज़रूरत के अनुसार भारतीय म्यूचुअल फंड के पूरे ब्रह्मांड को काट और टुकड़ों में बांट सकते हैं। आप इसके द्वारा स्क्रीन कर सकते हैं:</p><ul><li><strong>फंड श्रेणी:</strong> लार्ज कैप, मिड कैप, स्मॉल कैप, फ्लेक्सी कैप, ईएलएसएस (टैक्स सेवर), इंडेक्स फंड, आदि।</li><li><strong>मुख्य मेट्रिक्स:</strong> एयूएम (प्रबंधन के तहत संपत्ति), टीईआर (कुल व्यय अनुपात), और फंड प्रबंधक का कार्यकाल।</li><li><strong>प्रदर्शन:</strong> 1, 3, 5, और 10-वर्षीय चक्रवृद्धि वार्षिक वृद्धि दर (सीएजीआर)।</li><li><strong>जोखिम स्कोर:</strong> अल्फा, बीटा, मानक विचलन, और शार्प अनुपात एक फंड की अस्थिरता और जोखिम-समायोजित रिटर्न को समझने के लिए।</li><li><strong>होल्डिंग्स:</strong> आप उन फंडों की भी खोज कर सकते हैं जो अपने पोर्टफोलियो में एक विशिष्ट स्टॉक रखते हैं (या महत्वपूर्ण रूप से, नहीं रखते हैं)।</li></ul>"
+      "h3": "Filters Available: A Powerful Screener at Your Fingertips",
+      "body": "<p>I've designed this screener with the powerful filters I personally use to analyze funds. You can slice and dice the entire universe of Indian mutual funds to find exactly what you need. You can screen by:</p><ul><li><strong>Fund Category:</strong> Large Cap, Mid Cap, Small Cap, Flexi Cap, ELSS (Tax Saver), Index Funds, etc.</li><li><strong>Key Metrics:</strong> AUM (Assets Under Management), TER (Total Expense Ratio), and the fund manager's tenure.</li><li><strong>Performance:</strong> 1, 3, 5, and 10-year Compound Annual Growth Rate (CAGR).</li><li><strong>Risk Scores:</strong> Alpha, Beta, Standard Deviation, and Sharpe Ratio to understand a fund's volatility and risk-adjusted returns.</li><li><strong>Holdings:</strong> You can even search for funds that hold (or crucially, don't hold) a specific stock in their portfolio.</li></ul>"
     },
     "matching_logic": {
-      "h3": "हमारा मिलान तर्क (सटीक ओवरलैप का रहस्य)",
-      "body": "<p>होल्डिंग्स और ओवरलैप विश्लेषण के लिए, सटीकता सुनिश्चित करना सब कुछ है। मैंने बहुत सारे टूल को यह गलत करते देखा है। हम मुख्य रूप से उनके अद्वितीय एक्सचेंज टिकर (जैसे, रिलायंस इंडस्ट्रीज के लिए 'RELIANCE') का उपयोग करके स्टॉक का मिलान करते हैं। जहां टिकर उपलब्ध नहीं हैं, मैं एक स्मार्ट सामान्यीकरण एल्गोरिथ्म का उपयोग करता हूं जो कंपनी के नामों को साफ करता है (उदाहरण के लिए, 'Reliance Industries Ltd.' और 'RELIANCE IND' को एक ही इकाई के रूप में माना जाता है) ताकि हम हमेशा सेब की तुलना सेब से कर रहे हों। डेटा सटीकता के प्रति यह प्रतिबद्धता आपको एक आधिकारिक और भरोसेमंद उपकरण प्रदान करने की मेरी प्रतिज्ञा का हिस्सा है।</p>"
+      "h3": "Our Matching Logic (The Secret to Accurate Overlap)",
+      "body": "<p>For holdings and overlap analysis, ensuring accuracy is everything. I've seen too many tools get this wrong. We primarily match stocks using their unique exchange tickers (like 'RELIANCE' for Reliance Industries). Where tickers aren't available, I use a smart normalization algorithm that cleans up company names (e.g., 'Reliance Industries Ltd.' and 'RELIANCE IND' are treated as the same entity) to ensure we're always comparing apples to apples. This commitment to data accuracy is part of my promise to provide you with an authoritative and trustworthy tool.</p>"
     }
   },
   "interactive_tool": {
-    "h2": "सर्वश्रेष्ठ प्रत्यक्ष म्यूचुअल फंड चयनकर्ता ऑनलाइन: इंटरैक्टिव उपकरण",
-    "guide": "यह एक सरल 3-चरणीय प्रक्रिया है: <strong>1) एक प्रीसेट फ़िल्टर से शुरू करें</strong> → <strong>2) अपने स्वयं के मानदंडों के साथ परिष्कृत करें</strong> → <strong>3) होल्डिंग ओवरलैप की जांच के लिए अपने शीर्ष 3 फंड की तुलना करें</strong>। एक होशियार पोर्टफोलिओ बनाना इतना आसान है। आइए शुरू करें।",
-    "cta_button": "मेरे फंड खोजें"
+    "h2": "Best Direct Mutual Fund Selector Online: The Interactive Tool",
+    "guide": "It's a simple 3-step process: <strong>1) Start with a preset filter</strong> â†’ <strong>2) Refine with your own criteria</strong> â†’ <strong>3) Compare your top 3 funds</strong> to check for holding overlap. It's that easy to build a smarter portfolio. Let's get started.",
+    "cta_button": "Find My Funds"
   },
   "step_by_step": {
-    "h2": "म्यूचुअल फंड योजनाओं का चयन कैसे करें: एक चरण-दर-चरण मार्गदर्शिका",
-    "body": "<h3>चरण 1: एक लक्ष्य चुनें (यह आपका 'क्यों' है)</h3><p>इससे पहले कि आप किसी फंड को देखें, अपने आप से पूछें: 'मैं किस लिए बचत कर रहा हूँ?' आपका लक्ष्य सब कुछ तय करता है। क्या आप 20 साल दूर सेवानिवृत्ति की योजना बना रहे हैं? एक उच्च-विकास इक्विटी फंड आपका सबसे अच्छा दोस्त हो सकता है। 3 साल में घर के डाउन पेमेंट के लिए बचत कर रहे हैं? एक ऋण या हाइब्रिड फंड बहुत सुरक्षित शर्त होने की संभावना है। 'सेवानिवृत्ति', 'कर बचत', या 'धन सृजन' जैसे स्पष्ट लक्ष्य का चयन करके शुरू करें। यह <strong>लक्ष्य-आधारित निवेश</strong> का पूर्ण आधार है, और यह सबसे महत्वपूर्ण कदम है।</p><h3>चरण 2: अपनी जोखिम प्रोफ़ाइल और समय क्षितिज चुनें</h3><p>अब, अपने आप से ईमानदार रहें। क्या आप अपने पोर्टफोलिओ में 20% की गिरावट को बिना नींद खोए और घबराहट में बेचे बिना सहन कर सकते हैं? यदि नहीं, तो 'उच्च जोखिम' प्रोफ़ाइल आपके लिए नहीं है, और यह पूरी तरह से ठीक है। मैंने बाजार दुर्घटनाओं की तुलना में लोगों द्वारा अपनी जोखिम सहनशीलता को अधिक आंकने से अधिक धन नष्ट होते देखा है। आपका समय क्षितिज समान रूप से महत्वपूर्ण है। आपके पास जितना लंबा समय होगा, आप आम तौर पर उतना ही अधिक जोखिम उठा सकते हैं, क्योंकि आपके पास अपरिहार्य मंदी से उबरने का समय होता है। यह <strong>जोखिम प्रोफ़ाइल द्वारा म्यूचुअल फंड चयनकर्ता भारत</strong> का उपयोग करने का मूल है।</p><h3>चरण 3: लगभग 10 फंड की एक शॉर्टलिस्ट को संकीर्ण करने के लिए फ़िल्टर का उपयोग करें</h3><p>ठीक है, आइए 2,000+ फंडों के जंगल से काटें। व्यापक फ़िल्टर से शुरू करें। उदाहरण के लिए: श्रेणी = 'फ्लेक्सी कैप', एयूएम > ₹10,000 करोड़, और व्यय अनुपात < 1.0%। यह साधारण फ़िल्टर आपको 20-30 फंडों के साथ छोड़ सकता है। यह अभी भी बहुत अधिक है। अब, आइए एक प्रदर्शन फ़िल्टर जोड़ें, जैसे '5-वर्षीय रिटर्न > 15%'। यह इसे लगभग 10 शीर्ष दावेदारों की एक प्रबंधनीय सूची तक सीमित कर देगा। अब आप महासागर को उबाल नहीं रहे हैं; आप एक अच्छी तरह से स्टॉक किए गए तालाब में मछली पकड़ रहे हैं।</p><h3>चरण 4: होल्डिंग्स की तुलना करें और पोर्टफोलिओ ओवरलैप की जांच करें</h3><p>यह महत्वपूर्ण कदम है जिसे मैं 90% DIY निवेशकों को चूकते हुए देखता हूं, लेकिन यह वह जगह है जहां हमारा <strong><a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>म्यूचुअल फंड ओवरलैप जांचकर्ता</a></strong> आपका गुप्त हथियार बन जाता है। सूची से अपने शीर्ष 3-5 फंड का चयन करें और ओवरलैप जांच चलाएं। आप यह जानकर चौंक सकते हैं कि दो अलग-अलग फंड हाउसों के दो 'अलग-अलग' फंड बिल्कुल समान शीर्ष 10 स्टॉक धारण कर रहे हैं। मेरे पास एक बार एक ग्राहक था जिसके पास पांच 'विविध' फंड थे जो सामूहिक रूप से 80% समान पोर्टफोलिओ थे! यदि ओवरलैप 30% से अधिक है, तो आप शायद विविध नहीं हैं। आप सिर्फ एक ही काम करने के लिए दो अलग-अलग फंड प्रबंधकों को भुगतान कर रहे हैं। लक्ष्य एक वास्तव में मजबूत पोर्टफोलिओ बनाने के लिए अलग-अलग रणनीतियों और होल्डिंग्स वाले फंड ढूंढना है।</p><h3>चरण 5: निवेश करने से पहले अंतिम जांच</h3><p>आपके पास अपने शीर्ष 2-3 फंड हैं। शानदार! इससे पहले कि आप ट्रिगर खींचें और निवेश करें, इन अंतिम विवेक जांचों को करें: <strong>व्यय अनुपात (टीईआर):</strong> क्या यह अपनी श्रेणी के लिए प्रतिस्पर्धी है? कम लगभग हमेशा बेहतर होता है। <strong>निकास भार:</strong> क्या आपके पैसे जल्दी निकालने पर कोई दंड है? <strong>फंड प्रबंधक कार्यकाल:</strong> क्या प्रबंधक वहां कम से कम 3-5 वर्षों से है, जो पहिया पर एक सुसंगत हाथ दिखा रहा है? <strong>फंड हाउस प्रतिष्ठा:</strong> क्या एएमसी के पास एक लंबा, सुसंगत और निवेशक-अनुकूल ट्रैक रिकॉर्ड है, या वे सिर्फ जो भी फैशनेबल है उसे लॉन्च करते हैं? एक ठोस, दोहराने योग्य प्रक्रिया अक्सर एक एकल स्टार फंड मैनेजर से अधिक महत्वपूर्ण होती है जो कल जा सकता है।</p>"
+    "h2": "How to Select Mutual Fund Schemes: A Step-by-Step Guide",
+    "body": "<h3>Step 1: Choose a Goal (This is Your 'Why')</h3><p>Before you even look at a fund, ask yourself: 'What am I saving for?' Your goal dictates everything. Are you planning for retirement 20 years away? A high-growth equity fund might be your best friend. Saving for a house down payment in 3 years? A debt or hybrid fund is likely a much safer bet. Start by selecting a clear goal like 'Retirement', 'Tax Saving', or 'Wealth Creation'. This is the absolute foundation of <strong>goal-based investing</strong>, and it's the most important step.</p><h3>Step 2: Choose Your Risk Profile & Time Horizon</h3><p>Now, be honest with yourself. Can you stomach a 20% drop in your portfolio without losing sleep and panic-selling? If not, a 'High Risk' profile isn't for you, and that's perfectly okay. I've seen more wealth destroyed by people overestimating their risk tolerance than by market crashes. Your time horizon is equally critical. The longer you have, the more risk you can generally afford, as you have time to recover from inevitable downturns. This is the core of using a <strong>mutual fund selector by risk profile in India</strong>.</p><h3>Step 3: Use Filters to Narrow to a Shortlist of ~10 Funds</h3><p>Okay, let's cut through the jungle of 2,000+ funds. Start with broad filters. For example: Category = 'Flexi Cap', AUM > â‚¹10,000 Cr, and Expense Ratio < 1.0%. This simple filter might leave you with 20-30 funds. That's still too many. Now, let's add a performance filter, like '5-Year Return > 15%'. This should narrow it down to a manageable list of around 10 top contenders. You're no longer boiling the ocean; you're fishing in a well-stocked pond.</p><h3>Step 4: Compare Holdings & Check for Portfolio Overlap</h3><p>This is the crucial step that I see 90% of DIY investors miss, but it's where our <strong><a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap checker</a></strong> becomes your secret weapon. Select your top 3-5 funds from the list and run the Overlap Check. You might be shocked to find that two 'different' funds from two different fund houses are holding the exact same top 10 stocks. I once had a client who owned five 'diversified' funds that were collectively 80% the same portfolio! If the overlap is over 30%, you're likely not diversified. You're just paying two separate fund managers to do the same job. The goal is to find funds with different strategies and holdings to build a truly robust portfolio.</p><h3>Step 5: Final Checks Before You Invest</h3><p>You've got your top 2-3 funds. Fantastic! Before you pull the trigger and invest, do these final sanity checks: <strong>Expense Ratio (TER):</strong> Is it competitive for its category? Lower is almost always better. <strong>Exit Loads:</strong> Are there penalties for withdrawing your money early? <strong>Fund Manager Tenure:</strong> Has the manager been there for at least 3-5 years, showing a consistent hand at the wheel? <strong>Fund House Reputation:</strong> Does the AMC have a long, consistent, and investor-friendly track record? Answering these gives you the final layer of confidence to invest your hard-earned money.</p>"
   },
   "screener_examples": {
-    "h2": "स्क्रीनर उदाहरण और मेरे क्यूरेटेड प्रीसेट",
-    "body": "<h3>प्रीसेट: एसआईपी चयन के लिए सर्वश्रेष्ठ प्रत्यक्ष लार्ज-कैप फंड</h3><p>भारत की सबसे बड़ी कंपनियों से स्थिर, दीर्घकालिक विकास की तलाश है? यह वह प्रीसेट है जिससे मैं शुरू करूंगा। हम इसके लिए फ़िल्टर करते हैं: श्रेणी = 'लार्ज कैप', एयूएम > ₹20,000 करोड़, 5-वर्षीय सीएजीआर > 14%, और व्यय अनुपात < 0.9%. यह आपको तुरंत सुसंगत, अच्छी तरह से प्रबंधित ब्लू-चिप फंड की एक सूची देता है जो किसी के लिए भी एक विश्वसनीय <strong>एसआईपी चयन के लिए म्यूचुअल फंड स्क्रीनर</strong> की तलाश में एक शानदार प्रारंभिक बिंदु है।</p><h3>प्रीसेट: कर-बचतकर्ताओं के लिए सर्वश्रेष्ठ ईएलएसएस फंड</h3><p>धारा 80सी के तहत कर बचाने की आवश्यकता है लेकिन सिर्फ कम-रिटर्न विकल्पों में अपना पैसा बंद नहीं करना चाहते हैं? यह अंतिम <strong>कर बचतकर्ता म्यूचुअल फंड चयनकर्ता (ईएलएसएस)</strong> है। यह प्रीसेट इसके लिए फ़िल्टर करता है: श्रेणी = 'ईएलएसएस' (जिसमें 3-वर्षीय लॉक-इन है) और पिछले 5 वर्षों में सुसंगत प्रदर्शन। यह आपको न केवल कर छूट देने वाले फंड खोजने में मदद करता है, बल्कि मध्यम अवधि में आपकी संपत्ति बढ़ाने की उनकी क्षमता को भी साबित करता है।</p><h3>प्रीसेट: छोटे निवेशक कम लागत वाला पोर्टफोलिओ</h3><p>अभी शुरुआत कर रहे हैं और अभिभूत महसूस कर रहे हैं? यह प्रीसेट आपके लिए एकदम सही है। मैंने इसे भारत में <strong>छोटे निवेशकों के लिए सर्वश्रेष्ठ म्यूचुअल फंड चयनकर्ताओं</strong> में से एक के रूप में डिज़ाइन किया है। यह 0.5% से कम व्यय अनुपात और ₹500 या उससे कम की न्यूनतम एसआईपी राशि वाले इंडेक्स फंड या कम लागत वाले लार्ज और मिड-कैप फंड की तलाश करता है। यह आपके रिटर्न को पहले दिन से ही उच्च शुल्क खाने के बिना एक विविध पोर्टफोलिओ बनाने का आदर्श, बिना किसी झंझट का तरीका है।</p>"
+    "h2": "Screener Examples & My Curated Presets",
+    "body": "<h3>Preset: Best Direct Large-Cap Funds for SIP Selection</h3><p>Looking for stable, long-term growth from India's biggest companies? This is the preset I'd start with. We filter for: Category = 'Large Cap', AUM > â‚¹20,000 Cr, a 5-Year CAGR > 14%, and an Expense Ratio < 0.9%. This instantly gives you a list of consistent, well-managed blue-chip funds that are a great starting point for anyone looking for a reliable <strong>mutual fund screener for SIP selection</strong>.</p><h3>Preset: Best ELSS Funds for Tax-Savers</h3><p>Need to save tax under Section 80C but don't want to just lock your money in low-return options? This is the ultimate <strong>tax saver mutual fund selector (ELSS)</strong>. This preset filters for: Category = 'ELSS' (which have a 3-year lock-in) and consistent performance over the last 5 years. It helps you find funds that not only give you a tax break but have also proven their ability to grow your wealth over the medium term. See how much you can save with our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax calculator</a>.</p><h3>Preset: Small Investor Low-Cost Portfolio</h3><p>Just starting out and feeling overwhelmed? This preset is perfect for you. I designed it to be one of the <strong>best mutual fund selectors for small investors</strong> in India. It looks for Index Funds or low-cost Large & Mid-Cap funds with an Expense Ratio < 0.5% and a minimum SIP amount of â‚¹500 or less. It's the ideal, no-fuss way to build a diversified portfolio without high fees eating into your returns from day one.</p>"
   },
   "original_report": {
-    "h2": "मूल रिपोर्ट: भारत के 100 सबसे लोकप्रिय एसआईपी फंडों में ओवरलैप",
-    "body": "<h4>मुख्य खोज: पसंद का भ्रम वास्तविक है</h4><p>हमने एसआईपी निवेशकों के लिए शीर्ष 100 सबसे लोकप्रिय इक्विटी फंडों का विश्लेषण किया और एक चौंकाने वाला चलन पाया: एक ही श्रेणी के फंडों के बीच औसत जोड़ीदार ओवरलैप (जैसे, लार्ज कैप बनाम लार्ज कैप) <strong>38%</strong> था। इसका मतलब है कि यदि आप दो लोकप्रिय लार्ज-कैप फंड चुनते हैं, तो एक अच्छा मौका है कि उनके पोर्टफोलिओ का एक तिहाई से अधिक समान है। फ्लेक्सी कैप फंडों के लिए, यह आंकड़ा अभी भी 29% अधिक था। मुझे एक उदाहरण भी मिला जहां दो अलग-अलग एएमसी के दो फंडों में 62% का चौंका देने वाला ओवरलैप था!</p><h4>इसका आपके लिए क्या मतलब है</h4><p>यह डेटा पुष्टि करता है कि केवल कई 'शीर्ष-रेटेड' फंड खरीदने से विविधीकरण की गारंटी नहीं होती है। आप सिर्फ उसी मुट्ठी भर लोकप्रिय शेयरों (जैसे एचडीएफसी बैंक, रिलायंस, और आईसीआईसीआई बैंक) में अपना जोखिम केंद्रित कर सकते हैं, जबकि विशेषाधिकार के लिए कई प्रबंधन शुल्क का भुगतान करते हैं। सच्चा विविधीकरण वास्तव में अलग-अलग रणनीतियों और होल्डिंग्स के साथ फंडों के संयोजन से आता है, एक प्रक्रिया जिसे हमारा ओवरलैप चेकर सरल बनाने के लिए डिज़ाइन किया गया है।</p>"
+    "h2": "Original Report: Overlap in India's 100 Most Popular SIP Funds",
+    "body": "<h4>Key Finding: The Illusion of Choice is Real</h4><p>We analyzed the top 100 most popular equity funds for SIP investors and found a startling trend: the average pairwise overlap between funds in the same category (e.g., Large Cap vs. Large Cap) was <strong>38%</strong>. This means that if you pick two popular large-cap funds, there's a good chance over a third of their portfolios are identical. For Flexi Cap funds, this figure was still a high 29%. I even found one instance where two funds from different AMCs had a staggering 62% overlap!</p><h4>What This Means For You</h4><p>This data confirms that simply buying multiple 'top-rated' funds does not guarantee diversification. You might just be concentrating your risk in the same handful of popular stocks (like HDFC Bank, Reliance, and ICICI Bank) while paying multiple management fees for the privilege. True diversification comes from combining funds with genuinely different strategies and holdings, a process our overlap checker is designed to simplify.</p>"
   },
   "case_studies": {
-    "h2": "वास्तविक निवेशकों ने चयनकर्ता का उपयोग कैसे किया: केस स्टडीज",
+    "h2": "How Real Investors Used the Selector: Case Studies",
     "studies": [
       {
-        "title": "केस स्टडी 1: अंजलि का पोर्टफोलिओ डी-क्लटर",
-        "body": "<strong>पहले:</strong> अंजलि, एक 32 वर्षीय सॉफ्टवेयर इंजीनियर, 5 अलग-अलग 'शीर्ष-रेटेड' फ्लेक्सी कैप फंड रखती थी। उसे लगा कि वह विविध है। <br/><strong>विश्लेषण:</strong> हमारे ओवरलैप चेकर ने <strong>45% औसत ओवरलैप</strong> का चौंकाने वाला खुलासा किया। वह अनिवार्य रूप से शेयरों की एक ही टोकरी खरीदने के लिए पांच अलग-अलग फंड प्रबंधकों को भुगतान कर रही थी। <br/><strong>बाद में:</strong> स्क्रीनर का उपयोग करके, उसने अपने पोर्टफोलिओ को दो अलग-अलग फंडों में समेकित किया: एक कोर फ्लेक्सी कैप और एक केंद्रित मिड-कैप फंड। इससे उसका औसत ओवरलैप केवल 18% तक कम हो गया, उसका समग्र व्यय अनुपात सालाना 0.4% कम हो गया, और उसके पोर्टफोलिओ ट्रैकिंग को काफी सरल बना दिया।"
+        "title": "Case Study 1: Anjali's Portfolio De-Clutter",
+        "body": "<strong>Before:</strong> Anjali, a 32-year-old software engineer, held 5 different 'top-rated' Flexi Cap funds. She thought she was diversified. <br/><strong>Analysis:</strong> Our overlap checker revealed a shocking <strong>45% average overlap</strong>. She was essentially paying five separate fund managers to buy the same basket of stocks. <br/><strong>After:</strong> Using the screener, she consolidated her portfolio into two distinct funds: one core Flexi Cap and one focused Mid-Cap fund. This reduced her average overlap to just 18%, lowered her overall expense ratio by 0.4% annually, and simplified her portfolio tracking immensely."
       },
       {
-        "title": "केस स्टडी 2: राज का पहला एसआईपी निवेश",
-        "body": "<strong>पहले:</strong> राज, 24, पसंद से अभिभूत एक शुरुआती निवेशक था। वह एक एसआईपी शुरू करना चाहता था लेकिन कहां से शुरू करे यह नहीं जानता था। <br/><strong>विश्लेषण:</strong> राज ने 0.2% से कम व्यय अनुपात वाले निफ्टी 50 इंडेक्स फंड खोजने के लिए हमारे 'कम लागत वाले पोर्टफोलिओ' प्रीसेट का उपयोग किया। <br/><strong>बाद में:</strong> उसने आत्मविश्वास से एक कम लागत वाले इंडेक्स फंड में ₹5,000 मासिक एसआईपी शुरू किया, यह जानते हुए कि वह उच्च शुल्क के लिए अपनी शुरुआती कमाई नहीं खो रहा था। यह उसकी निवेश यात्रा के लिए एकदम सही, सरल शुरुआत थी, जिससे वह <strong>छोटे निवेशकों</strong> के लिए हमारे पसंदीदा उदाहरणों में से एक बन गया।"
+        "title": "Case Study 2: Raj's First SIP Investment",
+        "body": "<strong>Before:</strong> Raj, 24, was a beginner investor overwhelmed by choice. He wanted to start a SIP but didn't know where to begin. <br/><strong>Analysis:</strong> Raj used our 'Low-Cost Portfolio' preset to find Nifty 50 index funds with an expense ratio below 0.2%. <br/><strong>After:</strong> He confidently started a â‚¹5,000 monthly SIP in a low-cost index fund, knowing he wasn't losing his early gains to high fees. It was the perfect, simple start to his investment journey, making him one of our favorite examples for <strong>small investors</strong>."
       },
       {
-        "title": "केस स्टडी 3: शर्मा की सेवानिवृत्ति योजना",
-        "body": "<strong>पहले:</strong> शर्मा, दोनों अपने चालीसवें दशक के अंत में, अपनी सेवानिवृత్తి बचत को एफडी, पीपीएफ, और कुछ बेतरतीब ढंग से चुने गए फंडों में बिखरे हुए थे। <br/><strong>विश्लेषण:</strong> हमने <strong>सेवानिवृత్తి योजना</strong> के उनके लक्ष्य के लिए दो फंड खोजने के लिए चयनकर्ता का उपयोग किया: एक सुसंगत लार्ज और मिड-कैप फंड और एक अधिक रूढ़िवादी संतुलित लाभ फंड। <br/><strong>बाद में:</strong> उन्होंने एक लक्ष्य-आधारित पोर्टफोलिओ संरचित किया, इक्विटी फंडों के लिए 60% आवंटित किया और अपने सुरक्षित पीपीएफ/एफडी में 40% रखा। इससे उन्हें सेवानिवृत्ति के करीब आते ही जोखिम का प्रबंधन करते हुए विकास का एक स्पष्ट मार्ग मिला।"
+        "title": "Case Study 3: The Sharma's Retirement Plan",
+        "body": "<strong>Before:</strong> The Sharmas, both in their late 40s, had their retirement savings scattered across FDs, PPF, and a few randomly chosen funds. <br/><strong>Analysis:</strong> We used the selector to find two funds for their goal of <strong>retirement planning</strong>: a consistent Large & Mid-Cap fund and a more conservative Balanced Advantage fund. <br/><strong>After:</strong> They structured a goal-based portfolio, allocating 60% to the equity funds and keeping 40% in their safer PPF/FDs. This gave them a clear path to growth while managing risk as they approached retirement. They used our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement calculator</a> to validate their goals."
       }
     ]
   },
   "compare_funds": {
-    "h2": "म्यूचुअल फंड योजनाओं की तुलना कैसे करें: अगल-बगल क्या देखना है",
-    "body": "<h3>प्रदर्शन मेट्रिक्स: पिछले साल के रिटर्न से परे</h3><p>कृपया, सिर्फ 1 साल का रिटर्न न देखें। यह सबसे बड़ी नौसिखिया गलती है। इसके बजाय, 3, 5, और 10 वर्षों में <strong>सीएजीआर (चक्रवृद्धि वार्षिक वृद्धि दर)</strong> पर ध्यान केंद्रित करें। यह आपको दीर्घकालिक स्थिरता की बहुत बेहतर तस्वीर देता है। मैं आपसे <strong>रोलिंग रिटर्न</strong> की जांच करने का भी आग्रह करता हूं, जो दिखाता है कि फंड ने अलग-अलग बाजार चक्रों में कैसा प्रदर्शन किया, न कि सिर्फ एक मनमाने ढंग से शुरू होने की तारीख से दूसरे तक। अंत में, <strong>डाउनसाइड कैप्चर रेशियो</strong> देखें; यह आपको बताता है कि एक फंड ने डाउन मार्केट के दौरान अपने बेंचमार्क की तुलना में कितना खोया। यहां एक कम संख्या एक फंड मैनेजर का एक बड़ा संकेत है जो पूंजी को अच्छी तरह से बचाता है।</p><h3>जोखिम मेट्रिक्स: क्या रिटर्न सवारी के लायक है?</h3><p>यदि आप रात में सो नहीं सकते हैं तो उच्च रिटर्न बेकार है। इसीलिए जोखिम को समझना गैर-परक्राम्य है। <strong>मानक विचलन (एसडी)</strong> अस्थिरता को मापता है; एक उच्च एसडी का मतलब एक ऊबड़-खाबड़, अधिक पेट-मरोड़ने वाली सवारी है। <strong>शार्प अनुपात</strong> यहां आपका मित्र है: यह आपको लिए गए जोखिम की प्रति इकाई मिलने वाले रिटर्न को बताता है (उच्च बेहतर है)। <strong>बीटा</strong> बाजार के सापेक्ष एक फंड की अस्थिरता को मापता है; एक बीटा > 1 का मतलब है कि यह सेंसेक्स या निफ्टी से अधिक अस्थिर है। अंत में, <strong>अधिकतम गिरावट</strong> देखें—एक फंड ने अपने शिखर से बिल्कुल सबसे अधिक खोया है। यह आपको सबसे खराब स्थिति में संभावित रूप से कितना खो सकते हैं, इसका एक वास्तविक दुनिया का पेट-जांच देता है।</p><h3>पोर्टफोलिओ निरीक्षण: हुड के नीचे देखें</h3><p>यह वह जगह है जहां आप जासूस की भूमिका निभाते हैं। संख्याओं से परे जाएं और <strong>शीर्ष 10 होल्डिंग्स</strong> देखें। क्या वे ऐसी कंपनियां हैं जिन्हें आप समझते हैं और लंबी अवधि के लिए विश्वास करते हैं? फिर, <strong>क्षेत्र एकाग्रता</strong> की जांच करें। क्या फंड सिर्फ एक क्षेत्र, जैसे बैंकिंग या आईटी पर बहुत अधिक निर्भर है? मैंने एक ही क्षेत्र में 40%+ वाले फंड देखे हैं, जो एक बहुत बड़ा, अक्सर छिपा हुआ, जोखिम है। कई क्षेत्रों में एक अच्छी तरह से विविध पोर्टफोलिओ आम तौर पर सुरक्षित और अधिक मजबूत होता है।</p><h3>प्रबंधक और प्रक्रिया: आपका जहाज कौन चला रहा है?</h3><p>अंत में, पूछें: मेरा पैसा कौन प्रबंधित कर रहा है? एक लंबा <strong>कार्यकाल</strong> (एक ही फंड के साथ 5+ वर्ष) वाला एक फंड प्रबंधक स्थिरता और स्थिरता का संकेत है। इसके अलावा, <strong>फंड हाउस की प्रतिष्ठा</strong> देखें। क्या उनके पास अपनी योजनाओं में एक सुसंगत, दोहराने योग्य निवेश दर्शन है, या वे सिर्फ जो भी फैशनेबल है उसे लॉन्च करते हैं? एक ठोस, दोहराने योग्य प्रक्रिया अक्सर एक एकल स्टार फंड मैनेजर से अधिक महत्वपूर्ण होती है जो कल जा सकता है।</p>"
+    "h2": "How to Compare Mutual Fund Schemes: What to Look At Side-by-Side",
+    "body": "<h3>Performance Metrics: Beyond Just Last Year's Return</h3><p>Please, don't just look at the 1-year return. It's the biggest rookie mistake. Instead, focus on <strong>CAGR (Compound Annual Growth Rate)</strong> over 3, 5, and 10 years. This gives you a much better picture of long-term consistency. I also urge you to check <strong>Rolling Returns</strong>, which shows how the fund performed across different market cycles, not just from one arbitrary start date to another. Lastly, look at the <strong>Downside Capture Ratio</strong>; it tells you how much a fund lost compared to its benchmark during down markets. A lower number here is a great sign of a fund manager who protects capital well.</p><h3>Risk Metrics: Is the Return Worth the Ride?</h3><p>High returns are useless if you can't sleep at night. That's why understanding risk is non-negotiable. <strong>Standard Deviation (SD)</strong> measures volatility; a higher SD means a bumpier, more gut-wrenching ride. The <strong>Sharpe Ratio</strong> is your friend here: it tells you the return you get per unit of risk taken (higher is better). <strong>Beta</strong> measures a fund's volatility relative to the market; a Beta > 1 means it's more volatile than the Sensex or Nifty. Finally, look at the <strong>Max Drawdown</strong>â€”the absolute most a fund has lost from its peak. This gives you a real-world gut check on how much you could potentially lose in a worst-case scenario.</p><h3>Portfolio Inspection: Look Under the Hood</h3><p>This is where you play detective. Go beyond the numbers and look at the <strong>Top 10 Holdings</strong>. Are they companies you understand and believe in for the long term? Then, check the <strong>Sector Concentration</strong>. Is the fund too heavily reliant on just one sector, like banking or IT? I've seen funds with 40%+ in a single sector, which is a huge, often hidden, risk. A well-diversified portfolio across multiple sectors is generally safer and more robust.</p><h3>Manager & Process: Who's Steering Your Ship?</h3><p>Finally, ask: who is managing my money? A fund manager with a long <strong>tenure</strong> (5+ years with the same fund) is a sign of stability and consistency. Also, look at the <strong>Fund House's reputation</strong>. Do they have a consistent, repeatable investment philosophy across their schemes, or do they just launch whatever's trendy? A solid, repeatable process is often more important than a single star fund manager who might leave tomorrow.</p>"
   },
   "benchmarks": {
-    "h2": "संदर्भ राजा है: आपके फंड के प्रदर्शन का बेंचमार्किंग",
-    "body": "<h4>15% रिटर्न खराब क्यों हो सकता है</h4><p>एक फंड का रिटर्न नंबर अलगाव में अर्थहीन है। यदि आपके फंड ने 15% रिटर्न दिया लेकिन उसकी श्रेणी का औसत 20% था और उसके बेंचमार्क इंडेक्स ने 18% रिटर्न दिया, तो आपके फंड ने वास्तव में काफी कम प्रदर्शन किया। इसीलिए एक बेंचमार्क से तुलना करना महत्वपूर्ण है। हम आपको यह देखने में मदद करने के लिए श्रेणी औसत प्रदान करते हैं कि आपका फंड एक सच्चा नेता है या सिर्फ एक बाजार की लहर की सवारी कर रहा है।</p><h4>उपयोग करने के लिए प्रमुख बेंचमार्क:</h4><ul><li><strong>श्रेणी औसत:</strong> आपका फंड अपने प्रत्यक्ष साथियों की तुलना में कैसा है?</li><li><strong>बेंचमार्क इंडेक्स (जैसे, निफ्टी 50):</strong> क्या आपका सक्रिय फंड मैनेजर एक साधारण, कम लागत वाले इंडेक्स फंड को हराकर अपनी फीस को सही ठहरा रहा है?</li><li><strong>व्यय अनुपात (टीईआर):</strong> क्या आपके फंड का शुल्क श्रेणी औसत से अधिक या कम है? एक उच्च शुल्क को लगातार उच्च अल्फा (आउटपरफॉर्मेंस) द्वारा उचित ठहराया जाना चाहिए।</li></ul><p>इन बेंचमार्क का उपयोग करके, जिन्हें हम अपने विस्तृत विश्लेषण में प्रदान करते हैं, आपको एक निष्क्रिय निवेशक से एक स्मार्ट, सूचित निवेशक में बदल देता है।</p>"
+    "h2": "Context is King: Benchmarking Your Fund's Performance",
+    "body": "<h4>Why a 15% Return Might Be Bad</h4><p>A fund's return number is meaningless in isolation. If your fund returned 15% but its category average was 20% and its benchmark index returned 18%, then your fund actually underperformed significantly. This is why comparing to a benchmark is critical. We provide category averages to help you see if your fund is a true leader or just riding a market wave.</p><h4>Key Benchmarks to Use:</h4><ul><li><strong>Category Average:</strong> How does your fund compare to its direct peers?</li><li><strong>Benchmark Index (e.g., Nifty 50):</strong> Is your active fund manager justifying their fee by beating a simple, low-cost index fund?</li><li><strong>Expense Ratio (TER):</strong> Is your fund's fee higher or lower than the category average? A higher fee needs to be justified by consistently higher alpha (outperformance).</li></ul><p>Using these benchmarks, which we provide in our detailed analysis, turns you from a passive investor into a smart, informed one.</p>"
   },
   "portfolio_hygiene": {
-    "h2": "पोर्टफोलिओ स्वच्छता: ओवरलैप, एकाग्रता और पुनर्संतुलन",
-    "body": "<p>एक बार जब आप अपने फंड का चयन कर लेते हैं, तो काम खत्म नहीं होता है। इसे एक कार के मालिक होने की तरह सोचें; इसे अच्छी तरह से चलाने के लिए नियमित रखरखाव की आवश्यकता होती है। आपके दीर्घकालिक वित्तीय स्वास्थ्य के लिए अच्छा पोर्टफोलिओ स्वच्छता महत्वपूर्ण है। मैं जो सबसे आम गलती देखता हूं, वह है जिसे मैं 'अनजाने में अति-विविधता' कहता हूं - एक निवेशक गर्व से 10-15 फंड रखता है, लेकिन वे सभी समान शीर्ष 20 स्टॉक रखते हैं। यह वह जगह है जहां हमारा <strong><a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>म्यूचुअल फंड ओवरलैप जांचकर्ता</a></strong> आपका सबसे अच्छा दोस्त है। एक अंगूठे के नियम के रूप में, यदि आपके दो इक्विटी फंडों में <strong>30% से अधिक का भारित ओवरलैप</strong> है, तो आपको गंभीरता से सवाल करना चाहिए कि क्या आपको दोनों की आवश्यकता है। एक में समेकित करने से आपकी फीस कम हो सकती है और आपके पोर्टफोलिओ को सरल बनाया जा सकता है, बिना किसी वास्तविक विविधीकरण का त्याग किए।</p><p>नियमित रूप से अपने पोर्टफोलिओ को <strong>पुनर्संतुलित करना</strong> भी महत्वपूर्ण है। उदाहरण के लिए, यदि आपके मिड-कैप फंड में एक शानदार रन का मतलब है कि यह अब आपके पोर्टफोलिओ का 40% बनाता है, बजाय आपके लक्ष्य 20% के, तो कुछ मुनाफा बुक करने और उस पैसे को आपके अन्य फंडों में पुन: आवंटित करने का समय है जो कम प्रदर्शन कर सकते हैं। यह सरल कार्य आपको उच्च बेचने और कम खरीदने के लिए मजबूर करता है, जो सफल निवेश का रहस्य है। मैं आपके पोर्टफोलिओ की समीक्षा करने और यदि आवश्यक हो, तो साल में कम से कम एक बार पुनर्संतुलन करने की सलाह देता हूं। यह एक वार्षिक स्वास्थ्य जांच के वित्तीय समकक्ष है।</p>"
+    "h2": "Portfolio Hygiene: Overlap, Concentration & Rebalancing",
+    "body": "<p>Once you've selected your funds, the work isn't over. Think of it like owning a car; it needs regular maintenance to run well. Good portfolio hygiene is crucial for your long-term financial health. The most common mistake I see is what I call 'unintentional over-diversification'â€”an investor proudly holds 10-15 funds, but they all own the same top 20 stocks. This is where our <strong><a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap checker</a></strong> is your best friend. As a rule of thumb, if two of your equity funds have a <strong>weighted overlap of over 30%</strong>, you should seriously question if you need both. Consolidating into one could reduce your fees and simplify your portfolio without actually sacrificing any real diversification.</p><p>Regularly <strong>rebalancing</strong> your portfolio is also key. For example, if a great run in your mid-cap fund means it now makes up 40% of your portfolio instead of your target 20%, it's time to book some profits and reallocate that money to your other funds that may have underperformed. This simple act forces you to sell high and buy low, which is the secret to successful investing. I recommend reviewing your portfolio and rebalancing, if needed, once a year. It's the financial equivalent of an annual health check-up.</p>"
   },
   "common_mistakes": {
-    "h2": "सामान्य फंड चयन गलतियाँ (और उनसे कैसे बचें)",
+    "h2": "Common Fund Selection Mistakes (And How to Avoid Them)",
     "mistakes": [
-      "<strong>पिछले साल के विजेता का पीछा करना:</strong> सिर्फ पिछले साल #1 रहे फंड में निवेश न करें। पिछला प्रदर्शन भविष्य के रिटर्न का एक विश्वसनीय भविष्यवक्ता नहीं है। 5-10 वर्षों में दीर्घकालिक स्थिरता की तलाश करें।",
-      "<strong>व्यय अनुपात की अनदेखी करना:</strong> शुल्क में 0.5% का अंतर छोटा लग सकता है, लेकिन 20-30 वर्षों के चक्रवृद्धि में, यह सचमुच आपको खोए हुए रिटर्न में लाखों का खर्च कर सकता है। हमेशा कम लागत वाले फंडों का पक्ष लें।",
-      "<strong>अधिक फंड = अधिक विविधीकरण सोचना:</strong> 20 अलग-अलग फंड रखने का मतलब यह नहीं है कि आप विविध हैं। आपके पास सिर्फ एक ही पोर्टफोलिओ के 20 संस्करण हो सकते हैं। यह सुनिश्चित करने के लिए ओवरलैप की जांच करें कि आप वास्तव में अपना जोखिम फैला रहे हैं।",
-      "<strong>जोखिम प्रोफ़ाइल का बेमेल होना:</strong> यदि आप एक रूढ़िवादी निवेशक हैं जो बाजार में गिरावट के दौरान घबराते हैं तो एक अस्थिर स्मॉल-कैप फंड में निवेश न करें। अपनी जोखिम सहनशीलता के बारे में क्रूरता से ईमानदार रहें।",
-      "<strong>करों को भूलना:</strong> 80सी के तहत कर बचाने के लिए ईएलएसएस फंड का उपयोग नहीं करना, या एक साल के भीतर इक्विटी फंड बेचना और अल्पकालिक पूंजीगत लाभ कर से प्रभावित होना आम, महंगी त्रुटियां हैं।"
+      "<strong>Chasing Last Year's Winner:</strong> Don't just invest in the fund that was #1 last year. Past performance is not a reliable predictor of future returns. Look for long-term consistency over 5-10 years.",
+      "<strong>Ignoring Expense Ratios:</strong> A 0.5% difference in fees might seem tiny, but over 20-30 years of compounding, it can literally cost you lakhs in lost returns. Always favor lower-cost funds.",
+      "<strong>Thinking More Funds = More Diversification:</strong> Owning 20 different funds doesn't mean you're diversified. You might just own 20 versions of the same portfolio. Check for overlap to ensure you're truly spreading your risk.",
+      "<strong>Mismatching Risk Profile:</strong> Don't invest in a volatile small-cap fund if you're a conservative investor who panics during market dips. Be brutally honest about your own risk tolerance.",
+      "<strong>Forgetting About Taxes:</strong> Not using ELSS funds to save tax under 80C, or selling equity funds within a year and getting hit with short-term capital gains tax are common, costly errors."
     ]
   },
   "goal_based_portfolio": {
-    "h2": "चयनकर्ता का उपयोग करके एक लक्ष्य-आधारित पोर्टफोलिओ कैसे बनाएं",
-    "body": "<h3>रूढ़िवादी पोर्टफोलिओ (कम जोखिम)</h3><p><strong>लक्ष्य:</strong> पूंजी संरक्षण, मुद्रास्फीति को मात देना, और शायद कुछ नियमित आय उत्पन्न करना। यह 1-3 साल दूर के लक्ष्यों के लिए है। <br/><strong>मेरी रणनीति:</strong> मैं एक या दो उच्च-गुणवत्ता वाले शॉर्ट-टर्म डेट फंड (पोर्टफोलिओ का लगभग 60%) खोजने के लिए स्क्रीनर का उपयोग करूंगा और इसे एक स्थिर निफ्टी 50 या सेंसेक्स इंडेक्स फंड (अन्य 40% के लिए) के साथ मिलाऊंगा। यह आपको एक छोटे इक्विटी किक के साथ स्थिरता देता है।</p><h3>संतुलित पोर्टफोलिओ (मध्यम जोखिम)</h3><p><strong>लक्ष्य:</strong> 5-7 साल दूर के लक्ष्यों के लिए मध्यम वृद्धि, जैसे घर के लिए डाउन पेमेंट या आपके बच्चे की कॉलेज की शिक्षा के लिए धन। <br/><strong>मेरी रणनीति:</strong> यहां, मैं एक अच्छा फ्लेक्सी कैप फंड खोजने के लिए चयनकर्ता का उपयोग करूंगा (पोर्टफोलिओ का लगभग 40%)। मैं थोड़ा और विकास पंच के लिए एक लार्ज और मिड-कैप फंड (20%) जोड़ूंगा, और फिर इसे मेरे पीपीएफ/ईपीएफ और शायद एक अच्छे कॉर्पोरेट बॉन्ड फंड (शेष 40%) की स्थिरता के साथ संतुलित करूंगा।</p><h3>आक्रामक पोर्टफोलिओ (उच्च जोखिम)</h3><p><strong>लक्ष्य:</strong> सेवानिवृत्ति जैसे बहुत दीर्घकालिक लक्ष्यों के लिए उच्च वृद्धि (10+ वर्ष दूर)। यह वह जगह है जहां आप वास्तव में चक्रवृद्धि की शक्ति का उपयोग कर सकते हैं। <br/><strong>मेरी रणनीति:</strong> इसके लिए, मैं एक अधिक गतिशील पोर्टफोलिओ बनाने के लिए चयनकर्ता का उपयोग करूंगा। मैं एक कोर फ्लेक्सी-कैप/मल्टी-कैप फंड (30%) से शुरू करूंगा, आक्रामक विकास के लिए एक समर्पित मिड-कैप फंड (30%) और एक स्मॉल-कैप फंड (20%) जोड़ूंगा, और शायद एक सेक्टोरल फंड जैसे टेक या बैंकिंग (20%) भी यदि मुझे उस क्षेत्र के भविष्य में दृढ़ विश्वास है। यहां कुंजी एसआईपी के माध्यम से निवेश करना और इस पोर्टफोलिओ को साल में कम से कम एक बार पुनर्संतुलित करने के लिए प्रतिबद्ध होना है।</p>"
+    "h2": "How to Build a Goal-Based Portfolio Using the Selector",
+    "body": "<h3>Conservative Portfolio (Low Risk)</h3><p><strong>Goal:</strong> Capital preservation, beating inflation, and maybe generating some regular income. This is for goals that are 1-3 years away. <br/><strong>My Strategy:</strong> I'd use the screener to find one or two high-quality Short-Term Debt Funds (for about 60% of the portfolio) and combine that with a stable Nifty 50 or Sensex Index Fund (for the other 40%). This gives you stability with a small equity kick.</p><h3>Balanced Portfolio (Medium Risk)</h3><p><strong>Goal:</strong> Moderate growth for goals that are 5-7 years away, like a down payment for a house or funding your child's college education. <br/><strong>My Strategy:</strong> Here, I would use the selector to find a good Flexi Cap fund as the core (about 40% of the portfolio). I'd add a Large & Mid-Cap fund for a bit more growth punch (20%), and then balance it with the stability of my PPF/EPF and perhaps a good Corporate Bond Fund (the remaining 40%).</p><h3>Aggressive Portfolio (High Risk)</h3><p><strong>Goal:</strong> High growth for very long-term goals like retirement (10+ years away). This is where you can truly harness the power of compounding. <br/><strong>My Strategy:</strong> For this, I'd use the selector to build a more dynamic portfolio. I'd start with a core Flexi-Cap/Multi-Cap Fund (30%), add a dedicated Mid-Cap Fund (30%) and a Small-Cap Fund (20%) for aggressive growth, and maybe even a Sectoral Fund like tech or banking (20%) if I have a strong conviction in that sector's future. The key here is to invest via SIPs and commit to rebalancing this portfolio at least once a year.</p>"
   },
   "faq": {
-    "h2": "अक्सर पूछे जाने वाले प्रश्न",
+    "h2": "Frequently Asked Questions",
     "questions": [
       {
-        "q": "म्यूचुअल फंड स्कीम चयनकर्ता क्या है और यह कैसे काम करता है?",
-        "a": "इसे एक स्मार्ट फ़िल्टर के रूप में सोचें। यह आपको हजारों फंडों के माध्यम से छानबीन करने में मदद करता है ताकि आप उन कुछ को ढूंढ सकें जो वास्तव में आपके लक्ष्यों से मेल खाते हैं। आप इसे बताते हैं कि आप क्या खोज रहे हैं - जैसे श्रेणी, रिटर्न, और जोखिम - और चयनकर्ता आपको एक शॉर्टलिस्ट देता है। मेरा टूल फिर आपको होल्डिंग्स की तुलना करके और पोर्टफोलिओ ओवरलैप की जांच करके गहराई से गोता लगाने देता है, ताकि आप जान सकें कि आप वास्तव में विविध हैं।"
+        "q": "What is a mutual fund scheme selector and how does it work?",
+        "a": "Think of it as a smart filter. It helps you sift through thousands of funds to find the few that actually match your goals. You tell it what you're looking forâ€”like category, returns, and riskâ€”and the selector gives you a shortlist. My tool then lets you dive deeper by comparing holdings and checking for portfolio overlap, so you know you're truly diversified."
       },
       {
-        "q": "मैं एसआईपी निवेश के लिए सही म्यूचुअल फंड योजना कैसे चुनूं?",
-        "a": "एसआईपी के लिए, स्थिरता राजा है। पिछले साल के विजेता का पीछा न करें। 5-10 साल का ठोस ट्रैक रिकॉर्ड और एक प्रबंधक जो कुछ समय के लिए शीर्ष पर रहा है, वाले फंड खोजने के लिए चयनकर्ता का उपयोग करें। एक कम व्यय अनुपात (सक्रिय फंडों के लिए 1% से कम) भी महत्वपूर्ण है। ज्यादातर लोगों के लिए, एक निफ्टी 50 इंडेक्स फंड या एक अच्छी तरह से प्रबंधित फ्लेक्सी कैप फंड एसआईपी के लिए एक शानदार, विश्वसनीय विकल्प है।"
+        "q": "How do I choose the right mutual fund scheme for SIP investing?",
+        "a": "For SIPs, consistency is king. Don't chase last year's winner. Use the selector to find funds with a solid 5-10 year track record and a manager who's been at the helm for a while. A low expense ratio (under 1% for active funds) is also crucial. For most people starting out, a Nifty 50 index fund or a well-managed Flexi Cap fund is a fantastic, reliable choice for SIPs."
       },
       {
-        "q": "क्या चयनकर्ता एक म्यूचुअल फंड के शीर्ष होल्डिंग्स दिखा सकता है?",
-        "a": "हाँ, बिल्कुल। यह इसकी सबसे शक्तिशाली विशेषताओं में से एक है। एक बार जब आप फंड की एक सूची में फ़िल्टर कर लेते हैं, तो आप किसी भी फंड पर क्लिक करके उसके शीर्ष 10 स्टॉक होल्डिंग्स और सेक्टर आवंटन देख सकते हैं। यह समझने के लिए महत्वपूर्ण है कि आप *वास्तव में* किसमें निवेश कर रहे हैं और इसे अन्य फंडों के खिलाफ तुलना करने के लिए ताकि महंगी ओवरलैप से बचा जा सके।"
+        "q": "Can the selector show top holdings of a mutual fund?",
+        "a": "Yes, absolutely. That's one of its most powerful features. Once you've filtered down to a list of funds, you can click on any fund to see its top 10 stock holdings and sector allocation. This is critical for understanding what you're *really* investing in and for comparing it against other funds to avoid costly overlap."
       },
       {
-        "q": "चयनकर्ता कितनी बार फंड होल्डिंग्स को अपडेट करता है?",
-        "a": "मैं डेटा सटीकता को बहुत गंभीरता से लेता हूं। प्रत्येक फंड के लिए नेट एसेट वैल्यू (एनएवी) दैनिक रूप से अपडेट की जाती है, इसलिए आप हमेशा नवीनतम मूल्य देख रहे होते हैं। विस्तृत फंड होल्डिंग्स (एक फंड के स्वामित्व वाले वास्तविक स्टॉक) मासिक रूप से अपडेट किए जाते हैं, जैसे ही फंड हाउस (एएमसी) अपने नवीनतम पोर्टफोलिओ जारी करते हैं। ఇది మీరు అందుబాటులో ఉన్న తాజా, అత్యంత నమ్మకమైన డేటాపై నిర్ణయాలు తీసుకుంటున్నారని నిర్ధారిస్తుంది."
+        "q": "How frequently does the selector update fund holdings?",
+        "a": "I take data accuracy very seriously. The Net Asset Value (NAV) for each fund is updated daily, so you're always seeing the latest price. The detailed fund holdings (the actual stocks a fund owns) are updated monthly, as soon as the fund houses (AMCs) release their latest portfolios. This ensures you're making decisions on the freshest, most reliable data available."
       },
       {
-        "q": "भारित ओवरलैप क्या है और मुझे इसकी परवाह क्यों करनी चाहिए?",
-        "a": "भारित ओवरलैप आपको बताता है कि आपके पोर्टफोलिओ का सटीक प्रतिशत दो फंडों के बीच डुप्लिकेट है। आपको इसकी परवाह करनी चाहिए क्योंकि उच्च ओवरलैप (मैं कहूंगा 30% से अधिक) का मतलब है कि आप वास्तव में विविध नहीं हैं; आप सिर्फ दो प्रबंधकों को एक ही स्टॉक खरीदने के लिए भुगतान कर रहे होंगे। मेरा टूल इसकी गणना करता है ताकि आप वास्तव में अलग-अलग रणनीतियों वाले फंडों का एक पोर्टफोलिओ बना सकें, जो आपको सच्चा विविधीकरण प्रदान करता है।"
+        "q": "What is weighted overlap and why should I care?",
+        "a": "Weighted overlap tells you the exact percentage of your portfolio that's duplicated between two funds. You should care because high overlap (I'd say over 30%) means you're not actually diversified; you might just be paying two managers to buy the same stocks. My tool calculates this so you can build a portfolio of funds that genuinely have different strategies, giving you true diversification."
       },
       {
-        "q": "एक विविध पोर्टफोलिओ में मेरे पास कितने फंड होने चाहिए?",
-        "a": "ईमानदारी से, कम अक्सर अधिक होता है। अधिकांश निवेशकों के लिए, 4-6 फंडों का एक अच्छी तरह से चुना गया पोर्टफोलिओ पर्याप्त से अधिक है। यह एक लार्ज-कैप, एक मिड-कैप, एक स्मॉल-कैप, और शायद एक अंतरराष्ट्रीय या ईएलएसएस फंड जैसा मिश्रण हो सकता है। लक्ष्य केवल बड़ी संख्या में फंड रखना नहीं है, बल्कि अलग-अलग रणनीतियों वाले फंड रखना है।"
+        "q": "How many funds should I hold in a diversified portfolio?",
+        "a": "Honestly, less is often more. For most investors, a well-chosen portfolio of 4-6 funds is more than enough. This could be a mix like one large-cap, one mid-cap, one small-cap, and perhaps one international or ELSS fund. The goal is to have funds with different strategies, not just a large number of funds that all do the same thing."
       },
       {
-        "q": "क्या कम व्यय अनुपात का मतलब हमेशा एक बेहतर फंड होता है?",
-        "a": "हमेशा नहीं, लेकिन यह एक बहुत बड़ी बढ़त है। एक कम व्यय अनुपात का मतलब है कि आपका अधिक मेहनत से कमाया गया पैसा आपके लिए काम कर रहा है, न कि फंड मैनेजर के पास जा रहा है। जबकि एक शानदार प्रबंधक लगातार बेहतर प्रदर्शन के साथ थोड़ा अधिक शुल्क को उचित ठहरा सकता है, आपको हमेशा संदेह करना चाहिए। इंडेक्स फंडों के लिए, एक कम व्यय अनुपात सबसे महत्वपूर्ण कारक है, अवधि।"
+        "q": "Does a lower expense ratio always mean a better fund?",
+        "a": "Not always, but it's a massive head start. A lower expense ratio means more of your hard-earned money is working for you, not going to the fund manager. While a brilliant manager might justify a slightly higher fee with consistent outperformance, you should always be skeptical. For index funds, a low expense ratio is the single most important factor, period."
       },
       {
-        "q": "मैं कर और रिटर्न के लिए ईएलएसएस फंड की तुलना कैसे करूं?",
-        "a": "ईएलएसएस (कर-बचत) फंडों की तुलना करते समय, सिर्फ कर लाभ से परे देखें। 'ईएलएसएस' श्रेणी के लिए फ़िल्टर करने के लिए चयनकर्ता का उपयोग करें, फिर उनके 3-वर्ष और 5-वर्ष के रिटर्न की तुलना करें (क्योंकि उनमें 3-वर्ष का लॉक-इन होता है)। महत्वपूर्ण रूप से, अपने मौजूदा फंडों के साथ उनके पोर्टफोलिओ ओवरलैप की जांच करें ताकि यह सुनिश्चित हो सके कि नया फंड सिर्फ अधिक समान स्टॉक नहीं, बल्कि वास्तविक विविधीकरण जोड़ रहा है।"
+        "q": "How do I compare ELSS funds for tax and returns?",
+        "a": "When comparing ELSS (tax-saving) funds, look beyond just the tax benefit. Use the selector to filter for the 'ELSS' category, then compare their 3-year and 5-year returns (since they have a 3-year lock-in). Crucially, check their portfolio overlap with your existing funds to ensure the new fund is adding real diversification, not just more of the same stocks."
       },
       {
-        "q": "क्या मैं चयनकर्ता परिणामों को CSV या एक्सेल में निर्यात कर सकता हूं?",
-        "a": "हाँ। एक बार जब आप उन फंडों की एक शॉर्टलिस्ट बना लेते हैं जिनमें आपकी रुचि है, तो आप हमारी 'सीएसवी में निर्यात करें' सुविधा का उपयोग कर सकते हैं। यह आपको अपने चयनित फंडों के लिए मुख्य डेटा बिंदुओं को डाउनलोड करने की अनुमति देता है, ताकि आप अपना ऑफ़लाइन विश्लेषण कर सकें, अपने शोध का रिकॉर्ड रख सकें, या अपनी पसंद पर चर्चा करने के लिए इसे अपने वित्तीय सलाहकार के साथ साझा कर सकें।"
+        "q": "Can I export the selector results to CSV or Excel?",
+        "a": "Yes. Once you've created a shortlist of funds you're interested in, you can use our 'Export to CSV' feature. This allows you to download the key data points for your selected funds, so you can do your own offline analysis, keep a record of your research, or share it with your financial advisor to discuss your choices."
       },
       {
-        "q": "मैं सेवानिवृत्ति पोर्टफोलिओ बनाने के लिए चयनकर्ता का उपयोग कैसे करूं?",
-        "a": "सेवानिवृत्ति के लिए, आपके पास एक लंबा समय क्षितिज है, जो आपका सबसे बड़ा लाभ है। मैं 'फ्लेक्सी कैप' या 'लार्ज और मिड-कैप' जैसे इक्विटी फंडों के लिए फ़िल्टर करके शुरू करूंगा। 10-वर्षीय ट्रैक रिकॉर्ड और एक उच्च शार्प अनुपात (जो अच्छे जोखिम-समायोजित रिटर्न को इंगित करता है) वाले फंडों की तलाश करें। 2-3 ऐसे इक्विटी फंडों को अपने ईपीएफ/पीपीएफ के साथ जोड़ना एक संतुलित, विकास-उन्मुख सेवानिवृత్తి पोर्टफोलिओ बनाने का एक शानदार तरीका है।"
+        "q": "How do I use the selector to build a retirement portfolio?",
+        "a": "For retirement, you have a long time horizon, which is your biggest advantage. I'd start by filtering for equity funds like 'Flexi Cap' or 'Large & Mid-Cap'. Look for funds with a consistent 10-year track record and a high Sharpe Ratio (which indicates good risk-adjusted returns). Combining 2-3 such equity funds with your EPF/PPF is a great way to build a balanced, growth-oriented retirement portfolio."
       },
       {
-        "q": "क्या चयनकर्ता प्रत्यक्ष योजनाओं या नियमित योजनाओं की सिफारिश करेगा?",
-        "a": "मेरा चयनकर्ता विशेष रूप से <strong>प्रत्यक्ष योजनाओं</strong> की सिफारिश करता है। क्यों? क्योंकि उनके पास कम व्यय अनुपात होता है। प्रत्यक्ष योजनाओं में एक वितरक को कमीशन का भुगतान शामिल नहीं होता है, और लंबी अवधि में, वह আপাত रूप से छोटा अंतर सचमुच आपको, निवेशक को, अतिरिक्त रिटर्न में लाखों का इजाफा कर सकता है। मैं आपके अपने पैसे का अधिक हिस्सा आपके लिए काम करने में विश्वास करता हूं।"
+        "q": "Will the selector recommend direct plans or regular plans?",
+        "a": "My selector exclusively recommends <strong>Direct Plans</strong>. Why? Because they have lower expense ratios. Direct plans don't involve paying a commission to a distributor, and over the long term, that seemingly small difference can add up to lakhs in extra returns for you, the investor. I believe in putting more of your own money to work for you."
       },
       {
-        "q": "मैं टूल में फंड मैनेजर ट्रैक रिकॉर्ड की जांच कैसे करूं?",
-        "a": "अनुभव मायने रखता है। हमारे विस्तृत फंड व्यू में, हम 'प्रबंधक कार्यकाल' दिखाते हैं - वर्तमान फंड प्रबंधक कितने समय से शीर्ष पर है। 5+ वर्षों के कार्यकाल वाला एक प्रबंधक स्थिरता और एक सुसंगत निवेश प्रक्रिया का एक बड़ा संकेत है। यह दिखाता है कि उन्होंने कई बाजार चक्रों को नेविगेट किया है, जो बहुत आत्मविश्वास पैदा करता है।"
+        "q": "How do I check fund manager track record in the tool?",
+        "a": "Experience matters. In our detailed fund view, we show the 'Manager Tenure'â€”how long the current fund manager has been at the helm. A manager with a tenure of 5+ years is a great sign of stability and a consistent investment process. It shows they've navigated multiple market cycles, which builds a lot of confidence."
       },
       {
-        "q": "क्या ओवरलैप सहसंबंध के समान है?",
-        "a": "नहीं, और यह एक महत्वपूर्ण अंतर है। ओवरलैप <strong>होल्डिंग्स के प्रत्यक्ष दोहराव</strong> को मापता है। यदि दो फंड एक ही स्टॉक के मालिक हैं, तो यह ओवरलैप में योगदान देता है। सहसंबंध मापता है कि दो फंडों की *कीमतें* एक साथ कैसे चलती हैं, भले ही उनकी होल्डिंग्स कुछ भी हों। दो फंडों में शून्य ओवरलैप हो सकता है लेकिन फिर भी वे अत्यधिक सहसंबद्ध हो सकते हैं (जैसे, एक अमेरिकी टेक फंड और एक चीनी टेक फंड दोनों गिर सकते हैं यदि वैश्विक तकनीकी भावना बिगड़ती है)।"
+        "q": "Is overlap the same as correlation?",
+        "a": "No, and this is a critical distinction. Overlap measures the *direct duplication of holdings*. If two funds own the same stock, it contributes to overlap. Correlation measures how the *prices* of two funds move together, regardless of their holdings. Two funds could have zero overlap but still be highly correlated (e.g., a US tech fund and a China tech fund might both fall if global tech sentiment sours)."
       },
       {
-        "q": "क्या चयनकर्ता मेरे मौजूदा फंडों के लिए कम-ओवरलैप विकल्प सुझा सकता है?",
-        "a": "हालांकि टूल में अभी तक 'ऑटो-सुझाव' सुविधा नहीं है, यह आपको यह सब खुद करने की पूरी शक्ति देता है। मैं इसे कैसे करता हूं: पहले, अपना मौजूदा फंड डालें। फिर, एक अलग श्रेणी से एक फंड जोड़ें (जैसे, यदि आपके पास एक लार्ज-कैप है, तो एक मिड-कैप या एक सेक्टर-विशिष्ट फंड जोड़ें)। ओवरलैप जांच चलाएं। यदि यह कम है (<20%), तो आपने विविधीकरण के लिए एक अच्छा उम्मीदवार पाया है। यह उन्मूलन की एक त्वरित, प्रभावी प्रक्रिया है।"
+        "q": "Can the selector suggest a low-overlap alternative to my existing funds?",
+        "a": "While the tool doesn't have an 'auto-suggest' feature yet, it gives you all the power to do this yourself. Here's how I do it: First, put in your existing fund. Then, add a fund from a different category (e.g., if you have a Large-Cap, add a Mid-Cap or a sector-specific fund). Run the overlap check. If it's low (<20%), you've found a good candidate for diversification. It's a quick, effective process of elimination."
       },
       {
-        "q": "चयनकर्ता का उपयोग करके एक लक्ष्य-आधारित 3-फंड पोर्टफोलिओ कैसे बनाएं?",
-        "a": "एक 3-फंड पोर्टफोलिओ एक शानदार, सरल रणनीति है। यहां एक क्लासिक दृष्टिकोण है: 1) अपने लार्ज-कैप आवंटन (आपके पोर्टफोलिओ का मूल) के लिए एक कम लागत वाला निफ्टी 50 इंडेक्स फंड खोजने के लिए स्क्रीनर का उपयोग करें। 2) मिड-कैप एक्सपोजर के लिए एक निफ्टी मिडकैप 150 इंडेक्स फंड खोजें। 3) अंतरराष्ट्रीय विविधीकरण के लिए एक नैस्डैक 100 या एसएंडपी 500 फंड खोजें। ओवरलैप जांच चलाएं - यह बहुत कम होना चाहिए। यह आपको सबसे महत्वपूर्ण बाजार खंडों को कवर करने वाला एक विविध, कम लागत वाला पोर्टफोलिओ देता है।"
+        "q": "How to build a goal-based 3-fund portfolio using the selector?",
+        "a": "A 3-fund portfolio is a fantastic, simple strategy. Hereâ€™s a classic approach: 1) Use the screener to find a low-cost Nifty 50 Index Fund for your Large-Cap allocation (Core of your portfolio). 2) Find a Nifty Midcap 150 Index Fund for Mid-Cap exposure. 3) Find a Nasdaq 100 or S&P 500 fund for international diversification. Run the overlap checkâ€”it should be very low. This gives you a diversified, low-cost portfolio covering the most important market segments."
       }
     ]
   },
@@ -150,97 +150,97 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "म्यूचुअल फंड स्कीम चयनकर्ता क्या है और यह कैसे काम करता है?",
+        "name": "What is a mutual fund scheme selector and how does it work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "इसे एक स्मार्ट फ़िल्टर के रूप में सोचें। यह आपको हजारों फंडों के माध्यम से छानबीन करने में मदद करता है ताकि आप उन कुछ को ढूंढ सकें जो वास्तव में आपके लक्ष्यों से मेल खाते हैं। आप इसे बताते हैं कि आप क्या खोज रहे हैं - जैसे श्रेणी, रिटर्न, और जोखिम - और चयनकर्ता आपको एक शॉर्टलिस्ट देता है। मेरा टूल फिर आपको होल्डिंग्स की तुलना करके और पोर्टफोलिओ ओवरलैप की जांच करके गहराई से गोता लगाने देता है, ताकि आप जान सकें कि आप वास्तव में विविध हैं।"
+          "text": "Think of it as a smart filter. It helps you sift through thousands of funds to find the few that actually match your goals. You tell it what you're looking forâ€”like category, returns, and riskâ€”and the selector gives you a shortlist. My tool then lets you dive deeper by comparing holdings and checking for portfolio overlap, so you know you're truly diversified."
         }
       },
       {
         "@type": "Question",
-        "name": "मैं एसआईपी निवेश के लिए सही म्यूचुअल फंड योजना कैसे चुनूं?",
+        "name": "How do I choose the right mutual fund scheme for SIP investing?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "एसआईपी के लिए, स्थिरता राजा है। पिछले साल के विजेता का पीछा न करें। 5-10 साल का ठोस ट्रैक रिकॉर्ड और एक प्रबंधक जो कुछ समय के लिए शीर्ष पर रहा है, वाले फंड खोजने के लिए चयनकर्ता का उपयोग करें। एक कम व्यय अनुपात (सक्रिय फंडों के लिए 1% से कम) भी महत्वपूर्ण है। ज्यादातर लोगों के लिए, एक निफ्टी 50 इंडेक्स फंड या एक अच्छी तरह से प्रबंधित फ्लेक्सी कैप फंड एसआईपी के लिए एक शानदार, विश्वसनीय विकल्प है।"
+          "text": "For SIPs, consistency is king. Don't chase last year's winner. Use the selector to find funds with a solid 5-10 year track record and a manager who's been at the helm for a while. A low expense ratio (under 1% for active funds) is also crucial. For most people starting out, a Nifty 50 index fund or a well-managed Flexi Cap fund is a fantastic, reliable choice for SIPs."
         }
       },
       {
         "@type": "Question",
-        "name": "क्या चयनकर्ता एक म्यूचुअल फंड के शीर्ष होल्डिंग्स दिखा सकता है?",
+        "name": "Can the selector show top holdings of a mutual fund?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "हाँ, बिल्कुल। यह इसकी सबसे शक्तिशाली विशेषताओं में से एक है। एक बार जब आप फंड की एक सूची में फ़िल्टर कर लेते हैं, तो आप किसी भी फंड पर क्लिक करके उसके शीर्ष 10 स्टॉक होल्डिंग्स और सेक्टर आवंटन देख सकते हैं। यह समझने के लिए महत्वपूर्ण है कि आप *वास्तव में* किसमें निवेश कर रहे हैं और इसे अन्य फंडों के खिलाफ तुलना करने के लिए ताकि महंगी ओवरलैप से बचा जा सके।"
+          "text": "Yes, absolutely. That's one of its most powerful features. Once you've filtered down to a list of funds, you can click on any fund to see its top 10 stock holdings and sector allocation. This is critical for understanding what you're *really* investing in and for comparing it against other funds to avoid costly overlap."
         }
       },
       {
         "@type": "Question",
-        "name": "चयनकर्ता कितनी बार फंड होल्डिंग्स को अपडेट करता है?",
+        "name": "How frequently does the selector update fund holdings?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "मैं डेटा सटीकता को बहुत गंभीरता से लेता हूं। प्रत्येक फंड के लिए नेट एसेट वैल्यू (एनएवी) दैनिक रूप से अपडेट की जाती है, इसलिए आप हमेशा नवीनतम मूल्य देख रहे होते हैं। विस्तृत फंड होल्डिंग्स (एक फंड के स्वामित्व वाले वास्तविक स्टॉक) मासिक रूप से अपडेट किए जाते हैं, जैसे ही फंड हाउस (एएमसी) अपने नवीनतम पोर्टफोलिओ जारी करते हैं। ఇది మీరు అందుబాటులో ఉన్న తాజా, అత్యంత నమ్మకమైన డేటాపై నిర్ణయాలు తీసుకుంటున్నారని నిర్ధారిస్తుంది."
+          "text": "I take data accuracy very seriously. The Net Asset Value (NAV) for each fund is updated daily, so you're always seeing the latest price. The detailed fund holdings (the actual stocks a fund owns) are updated monthly, as soon as the fund houses (AMCs) release their latest portfolios. This ensures you're making decisions on the freshest, most reliable data available."
         }
       },
       {
         "@type": "Question",
-        "name": "भारित ओवरलैप क्या है और मुझे इसकी परवाह क्यों करनी चाहिए?",
+        "name": "What is weighted overlap and why should I care?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "भारित ओवरलैप आपको बताता है कि आपके पोर्टफोलिओ का सटीक प्रतिशत दो फंडों के बीच डुप्लिकेट है। आपको इसकी परवाह करनी चाहिए क्योंकि उच्च ओवरलैप (मैं कहूंगा 30% से अधिक) का मतलब है कि आप वास्तव में विविध नहीं हैं; आप सिर्फ दो प्रबंधकों को एक ही स्टॉक खरीदने के लिए भुगतान कर रहे होंगे। मेरा टूल इसकी गणना करता है ताकि आप वास्तव में अलग-अलग रणनीतियों वाले फंडों का एक पोर्टफोलिओ बना सकें, जो आपको सच्चा विविधीकरण प्रदान करता है।"
+          "text": "Weighted overlap tells you the exact percentage of your portfolio that's duplicated between two funds. You should care because high overlap (I'd say over 30%) means you're not actually diversified; you might just be paying two managers to buy the same stocks. My tool calculates this so you can build a portfolio of funds that genuinely have different strategies, giving you true diversification."
         }
       },
       {
         "@type": "Question",
-        "name": "एक विविध पोर्टफोलिओ में मेरे पास कितने फंड होने चाहिए?",
+        "name": "How many funds should I hold in a diversified portfolio?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "ईमानदारी से, कम अक्सर अधिक होता है। अधिकांश निवेशकों के लिए, 4-6 फंडों का एक अच्छी तरह से चुना गया पोर्टफोलिओ पर्याप्त से अधिक है। यह एक लार्ज-कैप, एक मिड-कैप, एक स्मॉल-कैप, और शायद एक अंतरराष्ट्रीय या ईएलएसएस फंड जैसा मिश्रण हो सकता है। लक्ष्य केवल बड़ी संख्या में फंड रखना नहीं है, बल्कि अलग-अलग रणनीतियों वाले फंड रखना है।"
+          "text": "Honestly, less is often more. For most investors, a well-chosen portfolio of 4-6 funds is more than enough. This could be a mix like one large-cap, one mid-cap, one small-cap, and perhaps one international or ELSS fund. The goal is to have funds with different strategies, not just a large number of funds that all do the same thing."
       }
       },
       {
-        "q": "क्या कम व्यय अनुपात का मतलब हमेशा एक बेहतर फंड होता है?",
-        "a": "हमेशा नहीं, लेकिन यह एक बहुत बड़ी बढ़त है। एक कम व्यय अनुपात का मतलब है कि आपका अधिक मेहनत से कमाया गया पैसा आपके लिए काम कर रहा है, न कि फंड मैनेजर के पास जा रहा है। जबकि एक शानदार प्रबंधक लगातार बेहतर प्रदर्शन के साथ थोड़ा अधिक शुल्क को उचित ठहरा सकता है, आपको हमेशा संदेह करना चाहिए। इंडेक्स फंडों के लिए, एक कम व्यय अनुपात सबसे महत्वपूर्ण कारक है, अवधि।"
+        "q": "Does a lower expense ratio always mean a better fund?",
+        "a": "Not always, but it's a massive head start. A lower expense ratio means more of your hard-earned money is working for you, not going to the fund manager. While a brilliant manager might justify a slightly higher fee with consistent outperformance, you should always be skeptical. For index funds, a low expense ratio is the single most important factor, period."
       },
       {
-        "q": "मैं कर और रिटर्न के लिए ईएलएसएस फंड की तुलना कैसे करूं?",
-        "a": "ईएलएसएस (कर-बचत) फंडों की तुलना करते समय, सिर्फ कर लाभ से परे देखें। 'ईएलएसएस' श्रेणी के लिए फ़िल्टर करने के लिए चयनकर्ता का उपयोग करें, फिर उनके 3-वर्ष और 5-वर्ष के रिटर्न की तुलना करें (क्योंकि उनमें 3-वर्ष का लॉक-इन होता है)। महत्वपूर्ण रूप से, अपने मौजूदा फंडों के साथ उनके पोर्टफोलिओ ओवरलैप की जांच करें ताकि यह सुनिश्चित हो सके कि नया फंड सिर्फ अधिक समान स्टॉक नहीं, बल्कि वास्तविक विविधीकरण जोड़ रहा है।"
+        "q": "How do I compare ELSS funds for tax and returns?",
+        "a": "When comparing ELSS (tax-saving) funds, look beyond just the tax benefit. Use the selector to filter for the 'ELSS' category, then compare their 3-year and 5-year returns (since they have a 3-year lock-in). Crucially, check their portfolio overlap with your existing funds to ensure the new fund is adding real diversification, not just more of the same stocks."
       },
       {
-        "q": "क्या मैं चयनकर्ता परिणामों को CSV या एक्सेल में निर्यात कर सकता हूं?",
-        "a": "हाँ। एक बार जब आप उन फंडों की एक शॉर्टलिस्ट बना लेते हैं जिनमें आपकी रुचि है, तो आप हमारी 'सीएसवी में निर्यात करें' सुविधा का उपयोग कर सकते हैं। यह आपको अपने चयनित फंडों के लिए मुख्य डेटा बिंदुओं को डाउनलोड करने की अनुमति देता है, ताकि आप अपना ऑफ़लाइन विश्लेषण कर सकें, अपने शोध का रिकॉर्ड रख सकें, या अपनी पसंद पर चर्चा करने के लिए इसे अपने वित्तीय सलाहकार के साथ साझा कर सकें।"
+        "q": "Can I export the selector results to CSV or Excel?",
+        "a": "Yes. Once you've created a shortlist of funds you're interested in, you can use our 'Export to CSV' feature. This allows you to download the key data points for your selected funds, so you can do your own offline analysis, keep a record of your research, or share it with your financial advisor to discuss your choices."
       },
       {
-        "q": "मैं सेवानिवृत्ति पोर्टफोलिओ बनाने के लिए चयनकर्ता का उपयोग कैसे करूं?",
-        "a": "सेवानिवृत्ति के लिए, आपके पास एक लंबा समय क्षितिज है, जो आपका सबसे बड़ा लाभ है। मैं 'फ्लेक्सी कैप' या 'लार्ज और मिड-कैप' जैसे इक्विटी फंडों के लिए फ़िल्टर करके शुरू करूंगा। 10-वर्षीय ट्रैक रिकॉर्ड और एक उच्च शार्प अनुपात (जो अच्छे जोखिम-समायोजित रिटर्न को इंगित करता है) वाले फंडों की तलाश करें। 2-3 ऐसे इक्विटी फंडों को अपने ईपीएफ/पीपीएफ के साथ जोड़ना एक संतुलित, विकास-उन्मुख सेवानिवृత్తి पोर्टफोलिओ बनाने का एक शानदार तरीका है।"
+        "q": "How do I use the selector to build a retirement portfolio?",
+        "a": "For retirement, you have a long time horizon, which is your biggest advantage. I'd start by filtering for equity funds like 'Flexi Cap' or 'Large & Mid-Cap'. Look for funds with a consistent 10-year track record and a high Sharpe Ratio (which indicates good risk-adjusted returns). Combining 2-3 such equity funds with your EPF/PPF is a great way to build a balanced, growth-oriented retirement portfolio."
       },
       {
-        "q": "क्या चयनकर्ता प्रत्यक्ष योजनाओं या नियमित योजनाओं की सिफारिश करेगा?",
-        "a": "मेरा चयनकर्ता विशेष रूप से <strong>प्रत्यक्ष योजनाओं</strong> की सिफारिश करता है। क्यों? क्योंकि उनके पास कम व्यय अनुपात होता है। प्रत्यक्ष योजनाओं में एक वितरक को कमीशन का भुगतान शामिल नहीं होता है, और लंबी अवधि में, वह আপাত रूप से छोटा अंतर सचमुच आपको, निवेशक को, अतिरिक्त रिटर्न में लाखों का इजाफा कर सकता है। मैं आपके अपने पैसे का अधिक हिस्सा आपके लिए काम करने में विश्वास करता हूं।"
+        "q": "Will the selector recommend direct plans or regular plans?",
+        "a": "My selector exclusively recommends <strong>Direct Plans</strong>. Why? Because they have lower expense ratios. Direct plans don't involve paying a commission to a distributor, and over the long term, that seemingly small difference can add up to lakhs in extra returns for you, the investor. I believe in putting more of your own money to work for you."
       },
       {
-        "q": "मैं टूल में फंड मैनेजर ट्रैक रिकॉर्ड की जांच कैसे करूं?",
-        "a": "अनुभव मायने रखता है। हमारे विस्तृत फंड व्यू में, हम 'प्रबंधक कार्यकाल' दिखाते हैं - वर्तमान फंड प्रबंधक कितने समय से शीर्ष पर है। 5+ वर्षों के कार्यकाल वाला एक प्रबंधक स्थिरता और एक सुसंगत निवेश प्रक्रिया का एक बड़ा संकेत है। यह दिखाता है कि उन्होंने कई बाजार चक्रों को नेविगेट किया है, जो बहुत आत्मविश्वास पैदा करता है।"
+        "q": "How do I check fund manager track record in the tool?",
+        "a": "Experience matters. In our detailed fund view, we show the 'Manager Tenure'â€”how long the current fund manager has been at the helm. A manager with a tenure of 5+ years is a great sign of stability and a consistent investment process. It shows they've navigated multiple market cycles, which builds a lot of confidence."
       },
       {
-        "q": "क्या ओवरलैप सहसंबंध के समान है?",
-        "a": "नहीं, और यह एक महत्वपूर्ण अंतर है। ओवरलैप <strong>होल्डिंग्स के प्रत्यक्ष दोहराव</strong> को मापता है। यदि दो फंड एक ही स्टॉक के मालिक हैं, तो यह ओवरलैप में योगदान देता है। सहसंबंध मापता है कि दो फंडों की *कीमतें* एक साथ कैसे चलती हैं, भले ही उनकी होल्डिंग्स कुछ भी हों। दो फंडों में शून्य ओवरलैप हो सकता है लेकिन फिर भी वे अत्यधिक सहसंबद्ध हो सकते हैं (जैसे, एक अमेरिकी टेक फंड और एक चीनी टेक फंड दोनों गिर सकते हैं यदि वैश्विक तकनीकी भावना बिगड़ती है)।"
+        "q": "Is overlap the same as correlation?",
+        "a": "No, and this is a critical distinction. Overlap measures the *direct duplication of holdings*. If two funds own the same stock, it contributes to overlap. Correlation measures how the *prices* of two funds move together, regardless of their holdings. Two funds could have zero overlap but still be highly correlated (e.g., a US tech fund and a China tech fund might both fall if global tech sentiment sours)."
       },
       {
-        "q": "क्या चयनकर्ता मेरे मौजूदा फंडों के लिए कम-ओवरलैप विकल्प सुझा सकता है?",
-        "a": "हालांकि टूल में अभी तक 'ऑटो-सुझाव' सुविधा नहीं है, यह आपको यह सब खुद करने की पूरी शक्ति देता है। मैं इसे कैसे करता हूं: पहले, अपना मौजूदा फंड डालें। फिर, एक अलग श्रेणी से एक फंड जोड़ें (जैसे, यदि आपके पास एक लार्ज-कैप है, तो एक मिड-कैप या एक सेक्टर-विशिष्ट फंड जोड़ें)। ओवरलैप जांच चलाएं। यदि यह कम है (<20%), तो आपने विविधीकरण के लिए एक अच्छा उम्मीदवार पाया है। यह उन्मूलन की एक त्वरित, प्रभावी प्रक्रिया है।"
+        "q": "Can the selector suggest a low-overlap alternative to my existing funds?",
+        "a": "While the tool doesn't have an 'auto-suggest' feature yet, it gives you all the power to do this yourself. Here's how I do it: First, put in your existing fund. Then, add a fund from a different category (e.g., if you have a Large-Cap, add a Mid-Cap or a sector-specific fund). Run the overlap check. If it's low (<20%), you've found a good candidate for diversification. It's a quick, effective process of elimination."
       },
       {
-        "q": "चयनकर्ता का उपयोग करके एक लक्ष्य-आधारित 3-फंड पोर्टफोलिओ कैसे बनाएं?",
-        "a": "एक 3-फंड पोर्टफोलिओ एक शानदार, सरल रणनीति है। यहां एक क्लासिक दृष्टिकोण है: 1) अपने लार्ज-कैप आवंटन (आपके पोर्टफोलिओ का मूल) के लिए एक कम लागत वाला निफ्टी 50 इंडेक्स फंड खोजने के लिए स्क्रीनर का उपयोग करें। 2) मिड-कैप एक्सपोजर के लिए एक निफ्टी मिडकैप 150 इंडेक्स फंड खोजें। 3) अंतरराष्ट्रीय विविधीकरण के लिए एक नैस्डैक 100 या एसएंडपी 500 फंड खोजें। ओवरलैप जांच चलाएं - यह बहुत कम होना चाहिए। यह आपको सबसे महत्वपूर्ण बाजार खंडों को कवर करने वाला एक विविध, कम लागत वाला पोर्टफोलिओ देता है।"
+        "q": "How to build a goal-based 3-fund portfolio using the selector?",
+        "a": "A 3-fund portfolio is a fantastic, simple strategy. Hereâ€™s a classic approach: 1) Use the screener to find a low-cost Nifty 50 Index Fund for your Large-Cap allocation (Core of your portfolio). 2) Find a Nifty Midcap 150 Index Fund for Mid-Cap exposure. 3) Find a Nasdaq 100 or S&P 500 fund for international diversification. Run the overlap checkâ€”it should be very low. This gives you a diversified, low-cost portfolio covering the most important market segments."
       }
     ]
   },
   "article_schema": {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "म्यूचुअल फंड स्कीम चयनकर्ता 2025 — अपने लक्ष्य के लिए सर्वश्रेष्ठ फंड खोजें और तुलना करें (भारत, 2025)",
+    "headline": "Mutual Fund Scheme Selector 2025 â€” Find & Compare Best Funds for Your Goal (India, 2025)",
     "author": {
       "@type": "Person",
-      "name": "महेश चौबे, सीएफपी"
+      "name": "Mahesh Chaube, CFP"
     },
     "datePublished": "2025-08-15",
     "dateModified": "2025-09-01",
@@ -253,55 +253,55 @@
     },
     "reviewedBy": {
         "@type": "Person",
-        "name": "लवीना विजई",
-        "jobTitle": "म्यूचुअल फंड अनुसंधान प्रमुख, भारतसेवर"
+        "name": "Laveena Vijayi",
+        "jobTitle": "Head of Mutual Fund Research, BharatSaver"
     }
   },
   "how_to_schema": {
     "@context":"https://schema.org",
     "@type":"HowTo",
-    "name":"भारत में म्यूचुअल फंड कैसे चुनें",
-    "description":"हमारे इंटरेक्टिव स्क्रीनर का उपयोग करके अपने वित्तीय लक्ष्यों के लिए सही म्यूचुअल फंड स्कीम का चयन करने के लिए एक 5-चरणीय मार्गदर्शिका।",
+    "name":"How to Choose a Mutual Fund in India",
+    "description":"A 5-step guide to selecting the right mutual fund scheme for your financial goals using our interactive screener.",
     "step":[
-      {"@type":"HowToStep","name":"चरण 1: लक्ष्य और जोखिम परिभाषित करें","text":"अपना वित्तीय लक्ष्य चुनें (जैसे, सेवानिवृत्ति, कर बचत) और अपनी व्यक्तिगत जोखिम सहनशीलता (कम, मध्यम, या उच्च)।"},
-      {"@type":"HowToStep","name":"चरण 2: ब्रह्मांड को फ़िल्टर करें","text":"एक शॉर्टलिस्ट बनाने के लिए श्रेणी (जैसे, लार्ज कैप, ईएलएसएस), एयूएम, और व्यय अनुपात द्वारा फंड को फ़िल्टर करने के लिए स्क्रीनर का उपयोग करें।"},
-      {"@type":"HowToStep","name":"चरण 3: शीर्ष 3 फंड की तुलना करें","text":"एक साथ-साथ तुलना के लिए उन्हें तैयार करने के लिए सूची से अपने शीर्ष 2-3 फंड का चयन करें।"},
-      {"@type":"HowToStep","name":"चरण 4: पोर्टफोलिओ ओवरलैप की जांच करें","text":"भारित पोर्टफोलिओ ओवरलैप की जांच करने के लिए तुलना चलाएं। यदि यह 30% से अधिक है, तो वास्तविक विविधीकरण सुनिश्चित करने के लिए एक फंड को बदलने पर विचार करें।"},
-      {"@type":"HowToStep","name":"चरण 5: अंतिम विवरण की समीक्षा करें","text":"निवेश करने से पहले फंड मैनेजर का कार्यकाल, निकास भार, और फंड हाउस की प्रतिष्ठा की जांच करें।"}
+      {"@type":"HowToStep","name":"Step 1: Define Goal & Risk","text":"Choose your financial goal (e.g., retirement, tax saving) and your personal risk tolerance (low, medium, or high)."},
+      {"@type":"HowToStep","name":"Step 2: Filter the Universe","text":"Use the screener to filter funds by category (e.g., Large Cap, ELSS), AUM, and expense ratio to create a shortlist."},
+      {"@type":"HowToStep","name":"Step 3: Compare Top 3 Funds","text":"Select your top 2-3 funds from the list to prepare them for a side-by-side comparison."},
+      {"@type":"HowToStep","name":"Step 4: Check Portfolio Overlap","text":"Run the comparison to check the weighted portfolio overlap. If it's over 30%, consider replacing one fund to ensure true diversification."},
+      {"@type":"HowToStep","name":"Step 5: Review Final Details","text":"Check the fund manager's tenure, exit loads, and the fund house's reputation before investing."}
     ]
   },
   "tools_downloads": {
-    "h2": "अपने विश्लेषण को सुपरचार्ज करने के लिए उपकरण और डाउनलोड",
-    "intro": "अपने विश्लेषण को ऑफ़लाइन लें या एक पूर्ण वित्तीय तस्वीर बनाने के लिए संबंधित कैलकुलेटर का पता लगाएं।",
+    "h2": "Tools & Downloads to Supercharge Your Analysis",
+    "intro": "Take your analysis offline or explore related calculators to build a complete financial picture.",
     "links": [
       {
-        "text": "तुलना टेम्पलेट डाउनलोड करें (सीएसवी)",
+        "text": "Download Comparison Template (CSV)",
         "href": "/downloads/fund-comparison-template.csv",
-        "desc": "फंडों की साथ-साथ तुलना करने के लिए एक खाली सीएसवी टेम्पलेट।"
+        "desc": "An empty CSV template to compare funds side-by-side."
       },
       {
-        "text": "एसआईपी कैलकुलेटर",
+        "text": "SIP Calculator",
         "href": "/{lang}/sip-calculator",
-        "desc": "अपने एसआईपी निवेशों के भविष्य के मूल्य की गणना करें।"
+        "desc": "Calculate the future value of your SIP investments."
       },
       {
-        "text": "म्यूचुअल फंड ओवरलैप चेकर",
+        "text": "Mutual Fund Overlap Checker",
         "href": "/{lang}/mutual-fund-overlap-calculator",
-        "desc": "किन्हीं दो फंडों के बीच ओवरलैप पर गहराई से गोता लगाएँ।"
+        "desc": "Do a deep-dive on overlap between any two funds."
       }
     ]
   },
   "methodology": {
-    "h2": "हमारा डेटा और कार्यप्रणाली",
-    "body": "<p><strong>डेटा स्रोत:</strong> आपको सबसे सटीक और विश्वसनीय जानकारी मिले यह सुनिश्चित करने के लिए, हमारा NAV और रिटर्न डेटा AMFI-पंजीकृत प्रदाताओं से दैनिक रूप से प्राप्त किया जाता है। विस्तृत फंड होल्डिंग्स डेटा सार्वजनिक रूप से उपलब्ध फंड फैक्टशीट से संकलित किया गया है और इसमें 45 दिनों तक का अंतराल हो सकता है। <strong>अंतिम पूर्ण डेटा अद्यतन: अगस्त 2025.</strong></p><p><strong>कार्यप्रणाली:</strong> भारित ओवरलैप सूत्र का उपयोग करके गणना की जाती है: सभी सामान्य शेयरों के लिए Σ min(फंड ए में भार, फंड बी में भार)। उदाहरण के लिए, यदि फंड ए रिलायंस में 5% और फंड बी 4% रखता है, तो उस स्टॉक से ओवरलैप కంట్రిబ్యూషన్ 4% ஆகும். మేము అన్ని సాధారణ హోల్డింగ్స్ కోసం దీన్ని కూడతాము. చూపబడిన అన్ని రాబడులు చక్రవడ్డీ వార్షిక వృద్ధి రేటు (సిఏజిఆర్). షార్ప్ మరియు ప్రామాణిక విచలనం వంటి రిస్క్ నిష్పత్తులు 3-సంవత్సరాల அடிப்படையில் లెక్కించబడతాయి. మేము ప్రత్యేకంగా అందుబాటులో ఉన్నప్పుడు డైరెక్ట్-గ్రోత్ ప్లాన్‌ల కోసం డేటాను చూపిస్తాము. ఇది ఒక సమాచార సాధనం, పెట్టుబడి సలహా కాదు. నేను ఎల్లప్పుడూ ఏ పెట్టుబడి నిర్ణయాలు తీసుకునే ముందు ఒక సెబీ-నమోదిత సలహాదారుని సంప్రదించమని సిఫార్సు చేస్తాను.</p>"
+    "h2": "Our Data & Methodology",
+    "body": "<p><strong>Data Sources:</strong> To ensure you get the most accurate and reliable information, our NAV and returns data are sourced daily from AMFI-registered providers. The detailed fund holdings data is compiled from publicly available fund factsheets and may have a lag of up to 45 days. <strong>Last Full Data Update: August 2025.</strong></p><p><strong>Methodology:</strong> The weighted overlap is calculated using the formula: Î£ min(weight in Fund A, weight in Fund B) for all common stocks. For example, if Fund A holds 5% in Reliance and Fund B holds 4%, the overlap from that stock is 4%. We sum this for all common holdings. All returns shown are Compound Annual Growth Rate (CAGR). The risk ratios like Sharpe and Standard Deviation are calculated on a 3-year basis. We exclusively show data for Direct-Growth plans where available. This is an informational tool, not investment advice. I always recommend consulting a SEBI-registered advisor before making any investment decisions.</p>"
   },
   "conclusion": {
-    "h2": "अंतिम विचार: चयन से धन सृजन तक",
-    "body": "एक होशियार, अधिक जानबूझकर म्यूचुअल फंड पोर्टफोलिओ बनाने की दिशा में एक बड़ा कदम उठाने के लिए बधाई। मैंने यह उपकरण बनाया क्योंकि मेरा मानना है कि हर निवेशक को पेशेवरों द्वारा उपयोग किए जाने वाले समान उच्च-गुणवत्ता वाले डेटा और विश्लेषण तक पहुंच का अधिकार है। याद रखें, लक्ष्य सिर्फ 'अच्छे' फंड चुनना नहीं है; यह एक लचीला, विविध पोर्टफोलिओ बनाना है जो आपके वित्तीय भविष्य के लिए उतना ही कठिन काम करता है जितना आप करते हैं। इस स्क्रीनर को अपने शुरुआती बिंदु, अपने सह-पायलट, और अपने विवेक जांच के रूप में उपयोग करें। धन सृजन की आपकी यात्रा एक मैराथन है, स्प्रिंट नहीं, और आपने अभी एक शक्तिशाली पहला कदम उठाया है।"
+    "h2": "Final Thoughts: From Selection to Wealth Creation",
+    "body": "Congratulations on taking a huge step towards building a smarter, more intentional mutual fund portfolio. I built this tool because I believe every investor deserves access to the same high-quality data and analysis that professionals use. Remember, the goal isn't just to pick 'good' funds; it's to build a resilient, diversified portfolio that works as hard for your financial future as you do. Use this screener as your starting point, your co-pilot, and your sanity check. Your journey to wealth creation is a marathon, not a sprint, and you've just taken a powerful first stride."
   },
   "footer_cta": {
-    "h2": "अभिभूत महसूस कर रहे हैं? मुझे मदद करने दें।",
-    "body": "अभी भी यकीन नहीं है कि कौन से फंड चुनें? यह पूरी तरह से सामान्य है। अधिक व्यक्तिगत दृष्टिकोण के लिए, मैं आपके विशिष्ट लक्ष्यों और जोखिम प्रोफ़ाइल के आधार पर फंड की एक क्यूरेटेड सूची प्राप्त करने में आपकी सहायता कर सकता हूं।",
-    "cta_text": "मेरी व्यक्तिगत फंड सूची प्राप्त करें"
+    "h2": "Feeling Overwhelmed? Let Me Help.",
+    "body": "Still not sure which funds to pick? That's completely normal. For a more personalized approach, I can help you get a curated list of funds based on your specific goals and risk profile.",
+    "cta_text": "Get My Personalized Fund List"
   }
 }

@@ -1,90 +1,114 @@
-
+﻿
 {
-  "meta_title": "एपीवाई कैलकुलेटर 2025 — अटल पेंशन योजना प्रीमियम और पेंशन चार्ट",
-  "meta_description": "मुफ्त एपीवाई कैलकुलेटर भारत (2025)। ₹1000-₹5000 की निश्चित पेंशन पाने के लिए अटल पेंशन योजना के लिए अपने मासिक योगदान की गणना करें। इसमें आयु-वार प्रीमियम चार्ट और नियम शामिल हैं।",
-  "og_title": "एपीवाई कैलकुलेटर 2025 — अटल पेंशन योजना प्रीमियम और पेंशन चार्ट",
-  "og_description": "₹1,000–₹5,000 पेंशन के लिए आवश्यक मासिक प्रीमियम जानने के लिए हमारे मुफ़्त एपीवाई कैलकुलेटर का उपयोग करें। आयु-आधारित प्रीमियम चार्ट, पात्रता, अक्सर पूछे जाने वाले प्रश्न और डाउनलोड करने योग्य सीएसवी प्राप्त करें। सितंबर 2025 को अपडेट किया गया।",
-  "h1": "एपीवाई कैलकुलेटर 2025 — अटल पेंशन योजना प्रीमियम चार्ट और पेंशन",
-  "description": "हमारा मुफ्त <a href=\"https://www.india.gov.in/spotlight/atal-pension-yojana\" target=\"_blank\" rel=\"noopener noreferrer\">अटल पेंशन योजना (एपीवाई)</a> कैलकुलेटर आपको वांछित पेंशन राशि के लिए आवश्यक मासिक योगदान खोजने में मदद करता है। सरकार समर्थित पेंशन के साथ अपना भविष्य सुरक्षित करें।",
-  "last_updated": "दरें अपडेट की गईं:",
-  "title": "अटल पेंशन योजना (एपीवाई) कैलकुलेटर",
-  "form_description": "अपनी वांछित पेंशन के लिए मासिक प्रीमियम जानने के लिए अपनी आयु दर्ज करें।",
-  "age_label": "आपकी वर्तमान आयु",
-  "years_label": "वर्ष",
-  "pension_label": "वांछित मासिक पेंशन",
-  "calculate_button": "प्रीमियम की गणना करें",
-  "loading": "गणना हो रही है...",
-  "results_title": "आपका एपीवाई योगदान",
-  "monthly_premium": "आपका मासिक प्रीमियम",
-  "total_contribution": "कुल योगदान",
-  "indicative_corpus": "60 पर सांकेतिक कोष",
+  "meta_title": "APY Calculator 2025 â€” Atal Pension Yojana Premium & Pension Chart",
+  "meta_description": "Free APY Calculator India (2025). Calculate your monthly contribution for Atal Pension Yojana to get a fixed pension of â‚¹1000-â‚¹5000. Includes age-wise premium chart & rules.",
+  "og_title": "APY Calculator 2025 â€” Atal Pension Yojana Premium & Pension Chart",
+  "og_description": "Use our FREE APY Calculator to find the monthly premium required for â‚¹1,000â€“â‚¹5,000 pensions. Get age-based premium charts, eligibility, FAQs and downloadable CSV. Updated Sep 2025.",
+  "h1": "APY Calculator 2025 â€” Atal Pension Yojana Premium Chart & Pension",
+  "description": "Our free <a href=\"https://www.india.gov.in/spotlight/atal-pension-yojana\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline\">Atal Pension Yojana (APY)</a> Calculator helps you find your required monthly contribution for a desired pension amount. Secure your future with a government-backed pension.",
+  "last_updated": "Rates updated:",
+  "title": "Atal Pension Yojana (APY) Calculator",
+  "form_description": "Enter your age to find the monthly premium for your desired pension.",
+  "age_label": "Your Current Age",
+  "years_label": "years",
+  "pension_label": "Desired Monthly Pension",
+  "calculate_button": "Calculate Premium",
+  "loading": "Calculating...",
+  "results_title": "Your APY Contribution",
+  "monthly_premium": "Your Monthly Premium",
+  "total_contribution": "Total Contribution",
+  "indicative_corpus": "Indicative Corpus at 60",
   "what_is_apy": {
-    "title": "अटल पेंशन योजना (एपीवाई) क्या है?",
-    "body": "अटल पेंशन योजना (एपीवाई) भारत में एक सरकार समर्थित पेंशन योजना है, जो मुख्य रूप से असंगठित क्षेत्र के श्रमिकों पर लक्षित है। यह सेवानिवृत्ति के लिए छोटी बचत को प्रोत्साहित करती है और 60 वर्ष की आयु के बाद ₹1,000, ₹2,000, ₹3,000, ₹4,000, या ₹5,000 की निश्चित मासिक पेंशन की गारंटी देती है।",
+    "title": "What is Atal Pension Yojana (APY)?",
+    "body": "The Atal Pension Yojana (APY) is a government-backed pension scheme in India, primarily targeted at workers in the unorganized sector. It encourages small savings for retirement and guarantees a fixed monthly pension of â‚¹1,000, â‚¹2,000, â‚¹3,000, â‚¹4,000, or â‚¹5,000 after the age of 60.",
     "points": [
-      "<strong>गारंटीकृत पेंशन:</strong> एक निश्चित पेंशन प्रदान करती है, जो वृद्धावस्था में वित्तीय सुरक्षा प्रदान करती है।",
-      "<strong>सरकार का सह-योगदान:</strong> पात्र ग्राहकों के लिए, सरकार पहले 5 वर्षों के लिए कुल योगदान का 50% या ₹1,000 प्रति वर्ष, जो भी कम हो, का सह-योगदान करती है।",
-      "<strong>पात्रता:</strong> 18 से 40 वर्ष की आयु के बीच के सभी भारतीय नागरिकों के लिए खुला है जिनके पास बैंक खाता है।"
+      "<strong>Guaranteed Pension:</strong> Provides a fixed pension, offering financial security in old age.",
+      "<strong>Government Co-contribution:</strong> For eligible subscribers, the government co-contributes 50% of the total contribution or â‚¹1,000 per annum, whichever is lower, for the first 5 years.",
+      "<strong>Eligibility:</strong> Open to all Indian citizens between 18 and 40 years of age with a bank account."
     ]
   },
   "how_it_works": {
-    "title": "एपीवाई कैलकुलेटर कैसे काम करता है",
-    "intro": "एपीवाई प्रीमियम आपकी प्रवेश आयु और वांछित पेंशन के आधार पर तय होता है। आप जितनी जल्दी शुरू करते हैं, आपका मासिक योगदान उतना ही कम होता है। हमारा कैलकुलेटर आपको सटीक राशि देने के लिए पीएफआरडीए द्वारा प्रदान किए गए आधिकारिक प्रीमियम चार्ट का उपयोग करता है।",
+    "title": "How the APY Calculator Works",
+    "intro": "The APY premium is fixed based on your entry age and desired pension. The earlier you start, the lower your monthly contribution. Our calculator uses the official premium chart provided by the PFRDA to give you the exact amount.",
     "example": {
-      "title": "उदाहरण गणना",
-      "body": "यदि आप <strong>25 वर्ष</strong> के हैं और <strong>₹5,000 प्रति माह</strong> की पेंशन चाहते हैं, तो आपका आवश्यक मासिक योगदान केवल <strong>₹376</strong> होगा। आप इस राशि का योगदान 35 वर्षों (60 वर्ष की आयु तक) तक करेंगे।",
-      "note": "यह निश्चित प्रीमियम आपके सेवानिवृत्ति बचत के लिए लगातार बजट और योजना बनाना आसान बनाता है।"
+      "title": "Example Calculation",
+      "body": "If you are <strong>25 years old</strong> and want a pension of <strong>â‚¹5,000 per month</strong>, your required monthly contribution would be just <strong>â‚¹376</strong>. You would contribute this amount for 35 years (until age 60).",
+      "note": "This fixed premium makes it easy to budget and plan for your retirement savings consistently."
     }
   },
   "premium_chart": {
-    "title": "एपीवाई प्रीमियम चार्ट (आयु-वार)",
-    "description": "यह चार्ट शामिल होने के समय आपकी आयु के आधार पर विभिन्न पेंशन राशियों के लिए आवश्यक निश्चित मासिक प्रीमियम दिखाता है।",
-    "age_header": "प्रवेश आयु",
-    "years_label": "वर्ष"
+    "title": "APY Premium Chart (Age-wise)",
+    "description": "This chart shows the fixed monthly premium required for different pension amounts based on your age at the time of joining.",
+    "age_header": "Entry Age",
+    "years_label": "Yrs"
   },
   "enrollment": {
-    "title": "एपीवाई में नामांकन कैसे करें",
-    "intro": "एपीवाई में नामांकन सरल है और इसे आपके बैंक या डाकघर के माध्यम से किया जा सकता है जहां आपका बचत खाता है। चरण हैं:",
+    "title": "How to Enroll in APY",
+    "intro": "Enrolling in APY is simple and can be done through your bank or post office where you have a savings account. The steps are:",
     "steps": [
-      "अपनी बैंक शाखा या डाकघर पर जाएं।",
-      "एपीवाई पंजीकरण फॉर्म भरें।",
-      "अपना आधार और मोबाइल नंबर प्रदान करें।",
-      "मासिक योगदान के ऑटो-डेबिट के लिए अपना बचत खाता लिंक करें।"
+      "Visit your bank branch or post office.",
+      "Fill out the APY registration form.",
+      "Provide your Aadhaar and mobile number.",
+      "Link your savings account for auto-debit of the monthly contribution."
     ]
   },
   "comparison": {
-    "title": "एपीवाई बनाम एनपीएस बनाम पीपीएफ",
-    "body": "<p>जबकि एपीवाई एक गारंटीकृत पेंशन प्रदान करता है, इसकी तुलना <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>राष्ट्रीय पेंशन प्रणाली (एनपीएस)</a> और <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>सार्वजनिक भविष्य निधि (पीपीएफ)</a> जैसी अन्य लोकप्रिय योजनाओं से करना महत्वपूर्ण है। एपीवाई उन लोगों के लिए आदर्श है जो कम योगदान के साथ एक निश्चित, सुरक्षित पेंशन चाहते हैं, जबकि एनपीएस उच्च विकास क्षमता के साथ बाजार से जुड़े रिटर्न प्रदान करता है, और पीपीएफ कर-मुक्त रिटर्न के साथ एक दीर्घकालिक बचत उपकरण है।</p>"
+    "title": "APY vs. NPS vs. PPF vs. Other Pension Schemes",
+    "body": "<p>While APY provides a guaranteed pension, it's important to compare it with other popular schemes like the <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>National Pension System (NPS)</a>, <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>Public Provident Fund (PPF)</a>, <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>Sukanya Samriddhi Yojana (SSY)</a>, and <a href='/{lang}/ups-pension-calculator' class='text-primary hover:underline'>UPS Pension Scheme</a>. APY is ideal for those seeking a fixed, secure pension with low contributions, whereas NPS offers market-linked returns with higher growth potential, and PPF is a long-term savings tool with tax-free returns. For a direct comparison between FD and PPF, use our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a>.</p><p>Use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to plan your overall retirement strategy, and compare different <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regimes</a> to maximize your savings.</p>"
   },
   "rules": {
-    "title": "एपीवाई के प्रमुख नियम और शर्तें",
-    "body": "<ul><li>ग्राहक को न्यूनतम 20 वर्षों के लिए योगदान करना होगा।</li><li>समय से पहले निकासी केवल गंभीर बीमारी या मृत्यु के मामले में ही अनुमत है।</li><li>यदि ग्राहक की मृत्यु 60 वर्ष से पहले हो जाती है, तो पति या पत्नी योगदान जारी रख सकते हैं या योजना से बाहर निकल सकते हैं।</li><li>पेंशन राशि भारत सरकार द्वारा गारंटीकृत है।</li></ul>"
+    "title": "Key Rules and Conditions of APY",
+    "body": "<ul><li>The subscriber must contribute for a minimum of 20 years.</li><li>Premature withdrawal is only allowed in case of terminal illness or death.</li><li>If the subscriber dies before age 60, the spouse can continue the contributions or exit the scheme.</li><li>The pension amount is guaranteed by the Government of India.</li></ul>"
   },
-  "faq_title": "अक्सर पूछे जाने वाले प्रश्न",
+  "faq_title": "Frequently Asked Questions",
   "faqs": [
     {
-      "question": "एपीवाई योजना में शामिल होने की अधिकतम आयु क्या है?",
-      "answer": "अटल पेंशन योजना में शामिल होने की अधिकतम आयु 40 वर्ष है।"
+      "question": "What is the maximum age to join the APY scheme?",
+      "answer": "The maximum age to join the Atal Pension Yojana is 40 years."
     },
     {
-      "question": "क्या मैं बाद में अपनी पेंशन राशि बढ़ा या घटा सकता हूं?",
-      "answer": "हां, आप अप्रैल के महीने में साल में एक बार अपनी वांछित पेंशन राशि बदल सकते हैं।"
+      "question": "Can I increase or decrease my pension amount later?",
+      "answer": "Yes, you can change your desired pension amount once a year, in the month of April."
     },
     {
-      "question": "यदि मैं एक योगदान चूक जाता हूं तो क्या होता है?",
-      "answer": "देरी से योगदान के लिए जुर्माना लगाया जाता है। ₹100 के योगदान के लिए जुर्माना ₹1 प्रति माह है, और इसी तरह।"
+      "question": "What happens if I miss a contribution?",
+      "answer": "A penalty is charged for delayed contributions. The penalty is â‚¹1 per month for a contribution of â‚¹100, and so on."
     },
     {
-      "question": "क्या एपीवाई से मिलने वाली पेंशन कर योग्य है?",
-      "answer": "हां, एपीवाई के तहत प्राप्त पेंशन को आय माना जाता है और यह लागू आयकर स्लैब के अनुसार कर योग्य है। आप अपनी स्लैब की जांच के लिए हमारे <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>कर व्यवस्था कैलकुलेटर</a> का उपयोग कर सकते हैं।"
+      "question": "Is the pension from APY taxable?",
+      "answer": "Yes, the pension received under APY is considered as income and is taxable as per the applicable income tax slabs. You can use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to check your slab."
+    },
+    {
+      "question": "How does APY compare with LIC pension plans?",
+      "answer": "Unlike LIC plans that depend on market performance, APY provides a guaranteed pension backed by the Government of India. Check our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> for comparison."
+    },
+    {
+      "question": "Can I withdraw money before retirement?",
+      "answer": "Premature withdrawal is only allowed in exceptional cases like terminal illness or death. Otherwise, you must contribute until age 60."
+    },
+    {
+      "question": "What is the minimum and maximum pension amount?",
+      "answer": "You can choose monthly pensions of â‚¹1,000, â‚¹2,000, â‚¹3,000, â‚¹4,000, or â‚¹5,000 after retirement."
+    },
+    {
+      "question": "How can I calculate LIC insurance premiums for comparison?",
+      "answer": "For comparing APY with LIC pension plans, use our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> to estimate costs for various LIC schemes like Jeevan Anand or Jeevan Umang."
+    },
+    {
+      "question": "What if I want to check overlap in my mutual fund investments?",
+      "answer": "If you're considering mutual funds alongside APY, use our <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> to avoid redundant investments and optimize your portfolio."
+    },
+    {
+      "question": "Are there calculators for LIC child plans or term insurance?",
+      "answer": "Yes, we have specialized calculators for <a href='/{lang}/lic-child-plan' class='text-primary hover:underline'>LIC child plans</a>, <a href='/{lang}/lic-term-insurance' class='text-primary hover:underline'>LIC term insurance</a>, and other LIC schemes to help you compare options."
     }
   ],
   "related_calculators": {
-    "title": "हमारे अन्य वित्तीय कैलकुलेटर देखें",
-    "body": "अपनी वित्तीय योजना को अधिकतम करें हमारे कैलकुलेटर के व्यापक सूट के साथ। <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD बनाम PPF</a> की तुलना करें, <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC समर्पण मूल्य</a> की गणना करें, या अपने पोर्टफोलियो को विविध बनाने के लिए हमारे <a href='/{lang}/mutual-fund-scheme-selector' class='text-primary hover:underline'>म्यूचुअल फंड योजना चयनकर्ता</a> का उपयोग करें।"
+    "title": "Explore Our Other Financial Calculators",
+    "body": "Maximize your financial planning with our comprehensive suite of calculators. Compare <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF</a>, calculate <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC surrender values</a>, or use our <a href='/{lang}/mutual-fund-scheme-selector' class='text-primary hover:underline'>mutual fund scheme selector</a> to build a diversified portfolio."
   },
   "conclusion": {
-    "title": "आज एक छोटे कदम से अपना भविष्य सुरक्षित करें",
-    "body": "अटल पेंशन योजना सेवानिवृत्ति सुरक्षा जाल बनाने के लिए एक उत्कृष्ट उपकरण है, विशेषतः सीमित साधनों वाले लोगों के लिए। अपने वित्तीय भविष्य को सुरक्षित करने की दिशा में पहला कदम उठाने के लिए इस कैलकुलेटर का उपयोग करें, और एक अधिक व्यापक योजना के लिए हमारे <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>सेवानिवृत्ति कैलकुलेटर</a> पर विचार करें। साथ ही, ऋण प्रबंधन के लिए <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>ऋण अनुकूलक</a>, निवेश के अवसरों के लिए <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>म्यूचुअल फंड स्क्रीनर</a>, बीमा योजना के लिए <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>LIC जीवन आनंद कैलकुलेटर</a>, और पॉलिसी लाभ समझने के लिए <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC परिपक्वता कैलकुलेटर</a> देखें।"
+    "title": "Secure Your Future with a Small Step Today",
+    "body": "Atal Pension Yojana is an excellent tool for building a retirement safety net, especially for those with limited means. Use this calculator to take the first step towards securing your financial future, and consider our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement calculator</a> for a more comprehensive plan. Also explore our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for debt management, <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> for investment opportunities, <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>LIC Jeevan Anand calculator</a> for insurance planning, and <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a> to understand policy benefits."
   }
 }

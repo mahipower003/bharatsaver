@@ -1,68 +1,68 @@
-
+﻿
 {
-    "meta_title": "एलआईसी जीवन उमंग कैलकुलेटर (प्लान 945) — प्रीमियम, उत्तरजीविता आय और परिपक्वता",
-    "meta_description": "मुफ्त एलआईसी जीवन उमंग कैलकुलेटर — तुरंत प्रीमियम, गारंटीकृत उत्तरजीविता आय और समर्पण मूल्यों (प्लान 945) का अनुमान लगाएं। पीडीएफ डाउनलोड करें और एक मुफ्त चित्रण प्राप्त करें।",
-    "og_title": "एलआईसी जीवन उमंग कैलकुलेटर (प्लान 945) — प्रीमियम, उत्तरजीविता आय और परिपक्वता",
-    "og_description": "हमारे मुफ्त एलआईसी जीवन उमंग कैलकुलेटर का उपयोग करके प्रीमियम, गारंटीकृत उत्तरजीविता लाभ, और परिपक्वता मूल्य का अनुमान लगाएं। विभिन्न पीपीटी विकल्पों की तुलना करें और अपने परिणाम डाउनलोड करें।",
-    "h1": "एलआईसी जीवन उमंग कैलकुलेटर (प्लान 945) — प्रीमियम, उत्तरजीविता आय और परिपक्वता",
+    "meta_title": "LIC Jeevan Umang Calculator (Plan 945) â€” Premium, Survival Income & Maturity",
+    "meta_description": "Free LIC Jeevan Umang Calculator â€” instantly estimate premium, guaranteed survival income & surrender values (Plan 945). Download PDF & get a free illustration.",
+    "og_title": "LIC Jeevan Umang Calculator (Plan 945) â€” Premium, Survival Income & Maturity",
+    "og_description": "Use our free LIC Jeevan Umang calculator to estimate premiums, guaranteed survival benefits, and maturity value. Compare different PPT options and download your results.",
+    "h1": "LIC Jeevan Umang Calculator (Plan 945) â€” Premium, Survival Income & Maturity",
     "intro": {
-      "quick_answer": "इस एलआईसी जीवन उमंग कैलकुलेटर पृष्ठ का उपयोग करके प्लान 945 के लिए तुरंत प्रीमियम और उत्तरजीविता-आय अनुमान प्राप्त करें, पीपीटी/मोड विकल्पों की तुलना करें, राइडर्स टॉगल करें, और एक पीडीएफ चित्रण डाउनलोड करें।",
-      "cta_button": "अभी गणना करें",
-      "citation": "योजना विवरण एलआईसी ऑफ इंडिया, UIN: 512N317V02 पर आधारित है। <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-jeevan-umang' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>आधिकारिक ब्रोशर</a>"
+      "quick_answer": "Use this LIC Jeevan Umang calculator page to get instant premium & survival-income estimates for Plan 945, compare PPT/mode options, toggle riders, and download a PDF illustration.",
+      "cta_button": "Calculate Now",
+      "citation": "Plan details based on LIC of India, UIN: 512N317V02. <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-jeevan-umang' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>Official Brochure</a>"
     },
     "calculator_ui": {
-      "h2": "कैलकुलेटर आज़माएं (इंटरैक्टिव टूल)",
-      "title": "आपका व्यक्तिगत जीवन उमंग कैलकुलेटर (प्लान 945)",
-      "description": "कैसे उपयोग करें: 1. आयु, लिंग, मूल बीमा राशि (BSA), प्रीमियम भुगतान अवधि (PPT) दर्ज करें। 2. भुगतान मोड चुनें। 3. वैकल्पिक राइडर्स टॉगल करें। 4. अपने लाभ देखने के लिए गणना करें पर क्लिक करें।",
+      "h2": "Try the calculator (interactive tool)",
+      "title": "Your Personal Jeevan Umang Calculator (Plan 945)",
+      "description": "How to use: 1. Enter Age, Gender, Basic Sum Assured (BSA), Premium Paying Term (PPT). 2. Choose Payment Mode. 3. Toggle optional riders. 4. Click Calculate to view your benefits.",
       "inputs": {
-        "age": "आपकी वर्तमान आयु",
-        "gender": "लिंग",
-        "tobacco": "तंबाकू उपयोगकर्ता",
-        "sumAssured": "वांछित कवरेज (मूल बीमा राशि)",
-        "ppt": "प्रीमियम भुगतान अवधि",
-        "mode": "भुगतान आवृत्ति",
+        "age": "Your Current Age",
+        "gender": "Gender",
+        "tobacco": "Tobacco User",
+        "sumAssured": "Desired Coverage (Basic Sum Assured)",
+        "ppt": "Premium Paying Term",
+        "mode": "Payment Frequency",
         "riders": {
-          "label": "वैकल्पिक राइडर्स",
-          "addb": { "label": "आकस्मिक मृत्यु और विकलांगता लाभ", "description": "एक दुर्घटना के कारण मृत्यु या विकलांगता होने पर अतिरिक्त भुगतान प्रदान करता है।" },
-          "term": { "label": "टर्म एश्योरेंस राइडर", "description": "आपकी आधार योजना के ऊपर एक शुद्ध-जोखिम बीमा राशि जोड़ता है।" },
-          "ci": { "label": "गंभीर बीमारी कवर", "description": "निर्दिष्ट प्रमुख बीमारियों में से किसी एक का निदान होने पर एकमुश्त भुगतान प्रदान करता है।" }
+          "label": "Optional Riders",
+          "addb": { "label": "Accidental Death & Disability Benefit", "description": "Provides an extra payout if an accident causes death or disability." },
+          "term": { "label": "Term Assurance Rider", "description": "Adds a pure-risk insurance amount on top of your base plan." },
+          "ci": { "label": "Critical Illness Cover", "description": "Provides a lump-sum payment on diagnosis of specified major illnesses." }
         }
       },
       "outputs": {
-        "title": "अनुमानित लाभ",
-        "premium": { "title": "प्रीमियम अनुमान" },
-        "survivalBenefit": { "title": "आपकी गारंटीकृत आजीवन आय", "subtitle": "प्रति वर्ष, जीवन भर के लिए, पीपीटी समाप्त होने के बाद।" },
-        "maturityBenefit": { "title": "आपकी विरासत (100 पर परिपक्वता)", "subtitle": "बीमा राशि + बोनस + एफएबी" },
-        "deathBenefit": { "title": "नामांकित व्यक्ति के लिए मृत्यु लाभ", "subtitle": "मृत्यु पर बीमा राशि + निहित बोनस" },
-        "disclaimer": { "title": "सटीकता नोट", "body": "यह एक उदाहरणात्मक अनुमान है। वास्तविक मूल्य एलआईसी द्वारा घोषित बोनस और अंडरराइटिंग पर निर्भर करते हैं। एक बाध्यकारी उद्धरण के लिए, कृपया एक एलआईसी एजेंट से संपर्क करें।" }
+        "title": "Estimated Benefits",
+        "premium": { "title": "Premium Estimate" },
+        "survivalBenefit": { "title": "Your Guaranteed Lifelong Income", "subtitle": "Per year, for life, after PPT ends." },
+        "maturityBenefit": { "title": "Your Legacy (Maturity at 100)", "subtitle": "Sum Assured + Bonus + FAB" },
+        "deathBenefit": { "title": "Death Benefit for Nominee", "subtitle": "Sum Assured on Death + Vested Bonus" },
+        "disclaimer": { "title": "Accuracy Note", "body": "This is an illustrative estimate. Actual values depend on LIC's declared bonuses and underwriting. For a binding quote, please contact an LIC agent." }
       },
-      "calculate_button": "मेरे जीवन उमंग लाभों की गणना करें",
-      "calculating": "गणना हो रही है..."
+      "calculate_button": "Calculate My Jeevan Umang Benefits",
+      "calculating": "Calculating..."
     },
     "sections": [
       {
         "id": "quick-snapshots",
         "icon": "BarChart",
-        "title": "त्वरित स्नैपशॉट: नमूना अनुमान",
-        "description": "'10 लाख के लिए जीवन उमंग प्रीमियम' जैसे सामान्य प्रश्नों के लिए त्वरित उदाहरणात्मक परिणाम यहां दिए गए हैं। अपने सटीक इनपुट के लिए कैलकुलेटर का उपयोग करें।",
+        "title": "Quick Snapshots: Sample Estimates",
+        "description": "Here are quick illustrative results for common queries like 'Jeevan Umang premium for 10 lakh'. Use the calculator for your exact inputs.",
         "content": [
           {
             "type": "table",
-            "headers": ["प्रोफ़ाइल", "वार्षिक प्रीमियम (लगभग)", "गारंटीकृत वार्षिक आय (पीपीटी के बाद)"],
+            "headers": ["Profile", "Yearly Premium (Approx.)", "Guaranteed Annual Income (post-PPT)"],
             "rows": [
-                ["आयु 30, ₹10L BSA, पीपीटी 15", "≈ ₹65,000", "₹80,000 / वर्ष"],
-                ["आयु 40, ₹20L BSA, पीपीटी 10", "≈ ₹2,20,000", "₹1,60,000 / वर्ष"],
-                ["आयु 50, ₹5L BSA, पीपीटी 10", "≈ ₹60,000", "₹40,000 / वर्ष"]
+                ["Age 30, â‚¹10 Lakh BSA, PPT 15", "â‰ˆ â‚¹65,000", "â‚¹80,000 / year"],
+                ["Age 40, â‚¹20 Lakh BSA, PPT 10", "â‰ˆ â‚¹2,20,000", "â‚¹1,60,000 / year"],
+                ["Age 50, â‚¹5 Lakh BSA, PPT 10", "â‰ˆ â‚¹60,000", "â‚¹40,000 / year"]
             ],
-            "footer": "संख्याएं उदाहरणात्मक अनुमान हैं। वास्तविक आंकड़े एलआईसी अंडरराइटिंग और राइडर्स पर निर्भर करते हैं।"
+            "footer": "Numbers are illustrative estimates. Actuals depend on LIC underwriting and riders."
           }
         ]
       },
       {
         "id": "premium-chart-section",
         "icon": "BarChart",
-        "title": "जीवन उमंग प्रीमियम चार्ट (आयु और बीमा राशि)",
-        "description": "यह चार्ट विभिन्न आयु, बीमा राशि, और प्रीमियम भुगतान अवधि (पीपीटी) के लिए उदाहरणात्मक प्रीमियम दिखाता है।",
+        "title": "Jeevan Umang Premium Chart (Age & Sum Assured)",
+        "description": "This chart shows illustrative premiums for different ages, sum assured amounts, and Premium Paying Terms (PPT). This helps answer searches for 'jeevan umang premium for 10 lakh' or 'jeevan umang premium for 50 years old'.",
         "content": [
             { "type": "premium_chart" }
         ]
@@ -70,107 +70,131 @@
       {
         "id": "what-is-jeevan-umang",
         "icon": "HelpCircle",
-        "title": "जीवन उमंग (प्लान 945) क्या है?",
-        "description": "सरल शब्दों में: एक निश्चित अवधि (जैसे, 15 वर्ष) के लिए भुगतान करें और जीवन भर (16वें वर्ष से 100 वर्ष की आयु तक) एक गारंटीकृत, कर-मुक्त आय प्राप्त करें।",
+        "title": "What is Jeevan Umang (Plan 945)?",
+        "description": "In simple words: Pay for a fixed period (e.g., 15 years) and get a guaranteed, tax-free income for life (from year 16 to age 100).",
         "content": [
-          { "type": "paragraph", "text": "जीवन उमंग एक <strong>भागीदारी, गैर-लिंक्ड, संपूर्ण-जीवन योजना</strong> है जो प्रीमियम भुगतान अवधि के बाद एक सतत (आजीवन) उत्तरजीविता आय प्रदान करती है। यह जीवन बीमा सुरक्षा को एक आवर्ती आय धारा के साथ जोड़ती है — जो इसे सेवानिवृत्ति योजना के लिए आकर्षक बनाती है। यह योजना बोनस भी जमा करती है और लागू होने पर अंतिम अतिरिक्त बोनस भी शामिल कर सकती है। आप आधिकारिक <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-jeevan-umang' target='_blank' rel='noopener noreferrer'>एलआईसी जीवन उमंग पृष्ठ</a> से अधिक विवरण प्राप्त कर सकते हैं।" }
+            { "type": "paragraph", "text": "Jeevan Umang is a <strong>participating whole-life plan</strong> that provides an ongoing (lifelong) survival income after the premium paying term. It combines life insurance protection with a recurring income stream â€” making it attractive for retirement planning. Compare this plan with <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>Jeevan Anand</a>, <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh</a>, and <a href='/{lang}/jeevan-utsav-calculator' class='text-primary hover:underline'>Jeevan Utsav</a> using our LIC calculators. The plan also accrues bonuses and may include final additional bonuses where applicable. You can get more details from the official <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-jeevan-umang' target='_blank' rel='noopener noreferrer'>LIC Jeevan Umang page</a>." }
         ]
       },
       {
         "id": "how-it-works",
         "icon": "Calculator",
-        "title": "एलआईसी जीवन उमंग कैलकुलेटर कैसे काम करता है",
-        "description": "आपके लाभ गणना के पीछे के सूत्र और धारणाएं।",
+        "title": "How the LIC Jeevan Umang Calculator Works",
+        "description": "The formulas and assumptions behind your benefit calculation.",
         "content": [
-          { "type": "structured_content", "heading": "प्रीमियम गणना", "body": "कैलकुलेटर आपकी आयु, बीमा राशि और पीपीटी के आधार पर एलआईसी के आधार प्रीमियम दरों का उपयोग करता है। फिर यह गैर-वार्षिक भुगतानों के लिए मानक मोडल लोडिंग कारकों को लागू करता है और जीएसटी (4.5% प्रथम वर्ष, 2.25% उसके बाद) जोड़ता है।" },
-          { "type": "structured_content", "heading": "उत्तरजीविता और परिपक्वता लाभ", "body": "प्राथमिक लाभ <strong>वार्षिक उत्तरजीविता आय</strong> है, जो आपकी मूल बीमा राशि का <strong>8%</strong> की गारंटी है, जो आपकी प्रीमियम अवधि समाप्त होने के बाद, 100 वर्ष की आयु तक या मृत्यु तक, जो भी पहले हो, हर साल भुगतान किया जाता है। 100 वर्ष की आयु में भुगतान किया जाने वाला परिपक्वता लाभ, बीमा राशि, निहित बोनस, और कोई भी अंतिम अतिरिक्त बोनस (FAB) शामिल है।" }
+            { "type": "structured_content", "heading": "Premium Calculation", "body": "The calculator uses LIC's base premium rates based on your age, sum assured, and PPT. It then applies standard modal loading factors for non-yearly payments and adds GST (4.5% 1st year, 2.25% thereafter)." },
+            { "type": "structured_content", "heading": "Survival & Maturity Benefits", "body": "The primary benefit is the <strong>annual survival income</strong>, which is a guaranteed <strong>8% of your Basic Sum Assured</strong>, paid every year after your premium term ends, until you reach age 100. The maturity benefit, paid at age 100, includes the Sum Assured, vested bonuses, and any Final Additional Bonus (FAB)." }
         ]
       },
       {
         "id": "worked-examples",
         "icon": "Users",
-        "title": "केस स्टडीज: जीवन उमंग विभिन्न जीवन लक्ष्यों के लिए",
-        "description": "जीवन उमंग विभिन्न जीवन चरणों के लिए कैसे प्रदर्शन करता है, यह देखें।",
+        "title": "Case Studies: Jeevan Umang for Different Life Goals",
+        "description": "See how Jeevan Umang performs for different life stages.",
         "content": [
-          {"type": "structured_content", "heading": "केस स्टडी 1: युवा पेशेवर (आयु 30, ₹10L कवर, पीपीटी 15)", "body": "<strong>लक्ष्य:</strong> एक कर-मुक्त पेंशन विकल्प बनाने के लिए जल्दी शुरू करें।<br><strong>इनपुट:</strong> आयु 30, BSA ₹10L, PPT 15.<br><strong>परिणाम:</strong> लगभग वार्षिक प्रीमियम ₹65,000। 46 वर्ष की आयु से, उसे जीवन भर हर साल <strong>₹80,000</strong> की गारंटी, कर-मुक्त आय मिलती है। 75 वर्ष की आयु तक, उसे कुल प्रीमियम भुगतान ₹9.75 लाख से अधिक पर ₹24 लाख आय प्राप्त होगी, जबकि जीवन कवर जारी रहेगा।"},
-          {"type": "structured_content", "heading": "केस स्टडी 2: पूर्व-सेवानिवृत्त योजनाकार (आयु 50, ₹25L कवर, पीपीटी 10)", "body": "<strong>लक्ष्य:</strong> सेवानिवृत्ति में एक पूरक, गारंटीकृत आय धारा बनाएं।<br><strong>इनपुट:</strong> आयु 50, BSA ₹25L, PPT 10.<br><strong>परिणाम:</strong> लगभग वार्षिक प्रीमियम ₹2.7 लाख। 61 वर्ष की आयु से, उसे <strong>₹2,00,000</strong> की वार्षिक गारंटीकृत आय मिलती है। यह उसके सेवानिवृत्ति के वर्षों में बाजार की अस्थिरता से अप्रभावित एक सुरक्षित आय तल प्रदान करता है।"},
-          {"type": "structured_content", "heading": "केस स्टडी 3: एक बच्चे के भविष्य के लिए योजना बनाना (बच्चे की आयु 1, माता-पिता की आयु 30)", "body": "<strong>लक्ष्य:</strong> एक बच्चे के लिए एक आजीवन वित्तीय सुरक्षा जाल और भविष्य की आय बनाएं।<br><strong>इनपुट:</strong> बच्चे की आयु 1, माता-पिता की आयु 30, BSA ₹5L, PPT 20.<br><strong>परिणाम:</strong> लगभग प्रीमियम ₹22,875/वर्ष। बच्चे के 22वें जन्मदिन से, वे जीवन भर हर साल ₹40,000 प्राप्त करना शुरू करते हैं। यह उनके शुरुआती करियर के लिए एक पूरक आय और जीवन के लिए एक मूल्यवान संपत्ति के रूप में कार्य करता है।"}
+            {"type": "structured_content", "heading": "Case Study 1: The Young Professional (Age 30, â‚¹10L Cover, PPT 15)", "body": "<strong>Goal:</strong> Build a tax-free pension alternative. <strong>Inputs:</strong> Age 30, BSA â‚¹10L, PPT 15. <strong>Result:</strong> Approx. yearly premium of â‚¹65,000. From age 46, they receive a guaranteed, tax-free income of â‚¹80,000 every year for life. By age 75, they would have received â‚¹24 Lakhs in income from a total premium payment of about â‚¹9.75 Lakhs, while the life cover continues."},
+            {"type": "structured_content", "heading": "Case Study 2: The Pre-Retiree (Age 50, â‚¹25L Cover, PPT 10)", "body": "<strong>Goal:</strong> Create a supplementary, guaranteed income stream in retirement. <strong>Inputs:</strong> Age 50, BSA â‚¹25L, PPT 10. <strong>Result:</strong> Approx. yearly premium of â‚¹2.7 Lakhs. From age 61, they receive a guaranteed annual income of â‚¹2,00,000. This provides a secure income floor, unaffected by market volatility in their retirement years."},
+            {"type": "structured_content", "heading": "Case Study 3: Child's Future (Child Age 1, Parent Age 30)", "body": "<strong>Goal:</strong> Create a lifelong financial gift for a child. <strong>Inputs:</strong> Child Age 1, Parent Age 30, BSA â‚¹5L, PPT 20. <strong>Result:</strong> Approx. premium of â‚¹22,875/year. From the child's 22nd birthday, they start receiving â‚¹40,000 annually, for life. It serves as a supplementary income for their early career and a valuable asset for life."}
         ]
       },
       {
-        "id": "bonus-history",
-        "icon": "BarChart",
-        "title": "एलआईसी बोनस दरें (ऐतिहासिक संदर्भ)",
-        "description": "गारंटी नहीं होने पर, पिछली बोनस दरें रिटर्न के लिए एक यथार्थवादी अपेक्षा प्रदान करती हैं। यह किसी भी 'बोनस के साथ जीवन उमंग रिटर्न कैलकुलेटर' के लिए महत्वपूर्ण है।",
-        "content": [
-          {"type": "table", "headers": ["वित्तीय वर्ष", "प्रति ₹1,000 बीमा राशि पर बोनस दर (औसत)"], "rows": [
-              ["2023-24", "₹48"], ["2022-23", "₹46"], ["2021-22", "₹46"], ["2020-21", "₹45"]
-          ]}
-        ]
+          "id": "bonus-history",
+          "icon": "BarChart",
+          "title": "LIC Bonus Rates (Historical Reference)",
+          "description": "While not guaranteed, past bonus rates provide a realistic expectation for returns. This is key for any 'LIC Jeevan Umang return calculator with bonus'.",
+          "content": [
+            {"type": "table", "headers": ["Financial Year", "Bonus Rate per â‚¹1,000 SA (Avg. for Whole Life)"], "rows": [
+                ["2023-24", "â‚¹48"], ["2022-23", "â‚¹46"], ["2021-22", "â‚¹46"], ["2020-21", "â‚¹45"]
+            ]}
+          ]
       },
       {
-        "id": "loan_example",
-        "icon": "Landmark",
-        "title": "ऋण गणना उदाहरण",
-        "description": "अपनी पॉलिसी को सरेंडर किए बिना आप उससे तरलता कैसे प्राप्त कर सकते हैं, यह समझें।",
-        "content": [
-          {"type": "paragraph", "text": "यदि आपने 5 वर्षों के लिए प्रीमियम का भुगतान किया है, तो आपकी ₹10 लाख की पॉलिसी में लगभग ₹2.5 लाख का विशेष समर्पण मूल्य (SSV) हो सकता है (उदाहरणात्मक)। आप इस राशि का 90% तक ऋण प्राप्त कर सकते हैं, जो <strong>₹2.25 लाख</strong> होगा, किसी भी तत्काल वित्तीय जरूरतों को पूरा करने के लिए। ऋण राशि और अर्जित ब्याज फिर अंतिम दावा राशि के विरुद्ध समायोजित किया जाता है।"}
-        ]
+          "id": "loan_example",
+          "icon": "Landmark",
+          "title": "Loan Calculation Example",
+          "description": "Understand how you can get liquidity from your policy without surrendering it.",
+          "content": [
+            {"type": "paragraph", "text": "If you've paid premiums for 5 years on a â‚¹10 Lakh policy, your policy might have a Special Surrender Value (SSV) of around â‚¹2.5 Lakhs (illustrative). You can typically get a loan of up to 90% of this amount, which would be <strong>â‚¹2.25 Lakhs</strong>, to meet any immediate financial needs. The loan amount and accrued interest are then adjusted against the final claim amount."}
+          ]
       },
       {
         "id": "comparison",
         "icon": "GitCompareArrows",
-        "title": "जीवन उमंग बनाम समान एलआईसी योजनाएं",
-        "description": "जीवन उमंग अन्य लोकप्रिय विकल्पों की तुलना में कैसा है?",
+        "title": "Jeevan Umang vs. Similar LIC Plans",
+        "description": "How does Jeevan Umang compare against other popular choices?",
         "content": [
-          { "type": "table", "headers": ["फ़ीचर", "जीवन उमंग (945)", "जीवन उत्सव", "जीवन लाभ"], "rows": [
-              ["लाभ प्रकार", "पीपीटी के बाद आजीवन उत्तरजीविता आय", "आजीवन आय या फ्लेक्सी-आय", "एकमुश्त बंदोबस्ती"],
-              ["आय भुगतान", "बीमा राशि का 8% वार्षिक", "बीमा राशि का 10% वार्षिक", "N/A (केवल एकमुश्त)"],
-              ["किसके लिए सर्वश्रेष्ठ", "गारंटीकृत आजीवन पेंशन", "लचीला आजीवन आय विकल्प", "लक्ष्य-आधारित एकमुश्त बचत"]
-            ], "footer": " <a href='/{lang}/jeevan-utsav-calculator' class='text-primary hover:underline'>जीवन उत्सव</a> और <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>जीवन लाभ</a> के लिए चित्रों की तुलना करने के लिए हमारे कैलकुलेटर का उपयोग करें।"
+          { "type": "table", "headers": ["Feature", "Jeevan Umang (945)", "Jeevan Utsav", "Jeevan Labh", "Jeevan Anand"], "rows": [
+              ["Benefit Type", "Lifetime Survival Income", "Lifetime Income or Flexi-income", "Lump Sum Endowment", "Whole-Life Protection + Bonuses"],
+              ["Income Payout", "8% of Sum Assured annually", "10% of Sum Assured annually", "N/A (Lump Sum only)", "Death benefit + bonus"],
+              ["Best For", "Guaranteed lifelong pension", "Flexible lifetime income options", "Goal-based lump sum savings", "Whole-life family protection"]
+            ], "footer": "Use our calculators to compare illustrations for <a href='/{lang}/jeevan-utsav-calculator' class='text-primary hover:underline'>Jeevan Utsav</a>, <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh</a>, and <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>Jeevan Anand</a>. Also check <a href='/{lang}/lic-single-premium-endowment-calculator' class='text-primary hover:underline'>Single Premium Endowment</a> for one-time investment options."
           }
         ]
       },
       {
         "id": "faq",
         "icon": "HelpCircle",
-        "title": "अक्सर पूछे जाने वाले प्रश्न (FAQ)",
-        "description": "जीवन उमंग कैलकुलेटर के बारे में आपके सभी प्रश्नों के उत्तर यहां दिए गए हैं।",
+        "title": "Frequently Asked Questions (FAQ)",
+        "description": "All your questions about the Jeevan Umang Calculator answered, covering long-tail keywords like 'surrender value calculator' and 'IRR'.",
         "content": [
           { "type": "faq", "items": [
-              {"q": "जीवन उमंग कैलकुलेटर क्या है और क्या यह मुफ़्त है?", "a": "जीवन उमंग कैलकुलेटर एलआईसी प्लान 945 के लिए प्रीमियम, उत्तरजीविता आय और संबंधित मूल्यों का अनुमान लगाने के लिए एक मुफ्त ऑनलाइन उपकरण है। परिणाम उदाहरणात्मक हैं, बाध्यकारी एलआईसी उद्धरण नहीं।"},
-              {"q": "मैं जीवन उमंग प्रीमियम की गणना कैसे करूं?", "a": "अपनी आयु, बीएसए, और पीपीटी को कैलकुलेटर में दर्ज करें। यह उपकरण आधिकारिक एलआईसी दर तालिकाओं और मोडल कारकों का उपयोग करके आपके प्रीमियम की गणना करता है।"},
-              {"q": "जीवन उमंग के तहत उत्तरजीविता आय क्या है?", "a": "यह आपकी मूल बीमा राशि का 8% की गारंटीकृत वार्षिक भुगतान है, जो आपकी प्रीमियम भुगतान अवधि समाप्त होने के बाद, 100 वर्ष की आयु तक या मृत्यु तक, जो भी पहले हो, हर साल भुगतान किया जाता है।"},
-              {"q": "इस एलआईसी कैलकुलेटर के परिणाम कितने सटीक हैं?", "a": "प्रीमियम गणना एलआईसी के नियमों के आधार पर अत्यधिक सटीक हैं। परिपक्वता लाभ अनुमान हैं क्योंकि वे भविष्य, गैर-गारंटीकृत बोनस पर निर्भर करते हैं। हमेशा एलआईसी से एक आधिकारिक चित्रण प्राप्त करें।"},
-              {"q": "मैं जीवन उमंग पर ऋण कब ले सकता हूं?", "a": "పాలసీ ఒక సరెండర్ విలువను పొందిన తర్వాత (సాధారణంగా రెండు పూర్తి సంవత్సరాల ప్రీమియం చెల్లింపుల తర్వాత) రుణాలు సాధారణంగా అందుబాటులో ఉంటాయి."},
-              {"q": "जीवन उमंग से उत्तरजीविता आय कर योग्य है?", "a": "ప్రస్తుత పన్ను చట్టాల (సెక్షన్ 10(10D)) కింద, జీవన్ ఉమంగ్ వంటి ఎల్‌ఐసి పాలసీల నుండి వచ్చే ఆదాయం మరియు మెచ్యూరిటీ/మరణ ప్రయోజనాలు సాధారణంగా పన్ను-రహితం, కొన్ని షరతులకు లోబడి ఉంటాయి."}
+              {"q": "What is the Jeevan Umang calculator and is it free?", "a": "The Jeevan Umang calculator is a free online tool to estimate premiums, survival income and related values for LIC Plan 945. Results are illustrative, not a binding LIC quote."},
+              {"q": "How do I calculate Jeevan Umang premium?", "a": "Enter your age, BSA, and PPT into the calculator. The tool uses official LIC rate tables and modal factors to compute your premium."},
+              {"q": "What is the survival income under Jeevan Umang?", "a": "It is a guaranteed annual payment of 8% of the Basic Sum Assured, paid every year after the Premium Paying Term ends, until age 100 or death."},
+              {"q": "What is the maturity value of Jeevan Umang?", "a": "The primary benefit is lifetime income, but a maturity benefit is paid at age 100. It includes the Basic Sum Assured + all vested bonuses + any Final Additional Bonus (FAB). Our 'Jeevan Umang maturity calculator' feature provides this estimate."},
+              {"q": "How to calculate the return or IRR for Jeevan Umang?", "a": "Our tool estimates the Internal Rate of Return (IRR) by considering all premium outflows and all income inflows (survival benefits + maturity). This provides a realistic 'Jeevan Umang ROI' figure, which is typically in the 5-6% tax-free range."},
+              {"q": "Are the results from this LIC calculator accurate?", "a": "The premium calculations are highly accurate based on LIC's rules. The maturity benefits are estimates as they depend on future, non-guaranteed bonuses. Always get an official illustration from LIC."},
+              {"q": "When can I take a loan against Jeevan Umang?", "a": "You can typically avail a loan after the policy has acquired a surrender value, which is after two full years of premium payments."},
+              {"q": "How do I calculate the surrender value of Jeevan Umang?", "a": "The surrender value is complex, but our calculator provides an estimate for both Guaranteed (GSV) and Special (SSV) surrender values. It's a key feature of our 'LIC Jeevan Umang surrender value calculator'."},
+              {"q": "Is the survival income from Jeevan Umang taxable?", "a": "Under current tax laws (Section 10(10D)), the proceeds from LIC policies, including survival benefits, are generally tax-free, subject to certain conditions. Compare your tax situation using our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to see the tax benefits of this plan. This is a major aspect of the 'LIC Jeevan Umang tax benefits calculator' consideration."},
+              {"q": "What is the death benefit in Jeevan Umang?", "a": "Our death benefit calculator feature shows that the nominee receives the 'Sum Assured on Death' (higher of BSA or 7x annual premium) plus all vested bonuses. The 8% annual payouts stop upon the policyholder's death."},
+              {"q": "How does Jeevan Umang compare with other investment options?", "a": "Jeevan Umang offers guaranteed returns with insurance cover. Compare with <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a> for tax-free savings, <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF</a> for comparing fixed deposits, or <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual funds</a> for market-linked growth. Use our <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> to build a diversified portfolio."},
+              {"q": "How does Jeevan Umang fit into retirement planning?", "a": "Jeevan Umang provides guaranteed lifelong income, making it ideal for retirement. Use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to determine your total needs and compare with <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS calculator</a>, <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>APY calculator</a>, and <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>SSY calculator</a> for other pension and retirement options."},
+              {"q": "Can I optimize my loans while investing in Jeevan Umang?", "a": "Yes, use our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> to compare loan options and potentially free up more funds for LIC investments like Jeevan Umang. Also use our <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>surrender value calculator</a> to understand borrowing options against your policy."},
+              {"q": "How does Jeevan Umang help with tax planning?", "a": "Premiums are eligible for tax deduction under Section 80C. Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to optimize your overall tax savings and compare Jeevan Umang with <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a>, <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a>, and <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>APY</a> for additional tax benefits."},
+              {"q": "Should I compare Jeevan Umang with other LIC plans?", "a": "Absolutely! Use our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> to compare premiums across different LIC plans and find the best fit for your financial goals."}
+          ]}
+        ]
+      },
+      {
+        "id": "comprehensive-planning",
+        "icon": "GitCompareArrows",
+        "title": "Complete Financial Planning Beyond Jeevan Umang",
+        "content": [
+          { "type": "list", "items": [
+              "<strong>Retirement Planning:</strong> Use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to determine your total retirement needs and see how Jeevan Umang fits into your overall plan.",
+              "<strong>Alternative Income Streams:</strong> Explore government schemes like <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>Atal Pension Yojana (APY)</a>, <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>National Pension System (NPS)</a>, and <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>Sukanya Samriddhi Yojana (SSY)</a> for additional income.",
+              "<strong>Fixed Income Alternatives:</strong> Compare with <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a> and use our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a> to see which savings vehicle suits your needs.",
+              "<strong>Equity Investments:</strong> For growth, use our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> and <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> to build a diversified portfolio.",
+              "<strong>Tax Optimization:</strong> Plan your tax strategy using our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to maximize post-tax returns.",
+              "<strong>Debt Management:</strong> Use our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> to manage any personal loans or borrowing needs."
           ]}
         ]
       },
       {
         "id": "conclusion",
         "icon": "Star",
-        "title": "अंतिम निर्णय: क्या जीवन उमंग एक अच्छा निवेश है?",
+        "title": "Final Verdict: Is Jeevan Umang a Good Investment?",
         "content": [
-          { "type": "paragraph", "text": "క్రమశిక్షణతో కూడిన, తక్కువ-రిస్క్ పొదుపు పథకాన్ని కోరుకునే వ్యక్తులకు, ఇది ఒక హామీ, జీవితకాల, పన్ను-రహిత ఆదాయ ప్రవాహాన్ని అందిస్తుంది, జీవన్ ఉమంగ్ మార్కెట్లో అత్యంత దృఢమైన ఉత్పత్తులలో ఒకటి. ఇది మార్కెట్ అస్థిరత నుండి రక్షించబడిన, ఊహించదగిన 'పెన్షన్' ప్రత్యామ్నాయాన్ని సృష్టించడంలో రాణిస్తుంది. ఇది ఈక్విటీ యొక్క అధిక వృద్ధిని అందించకపోవచ్చు, కానీ పునాది ఆర్థిక భద్రత కోసం, దాని విలువ సరిపోలనిది।" }
+          { "type": "paragraph", "text": "For individuals seeking a disciplined, low-risk savings plan that provides a guaranteed, lifelong, tax-free income stream, Jeevan Umang is one of the most robust products in the market. It excels at creating a predictable 'pension' alternative, shielded from market volatility. It may not offer the high growth of equity, but for foundational financial security, its value is unmatched. For broader financial planning, explore our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for debt management and <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> for portfolio optimization. Compare with other LIC plans using our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> to make the best choice. For tax optimization, check our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> and for retirement planning, use the <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a>." }
         ]
       }
     ],
     "premium_chart_section": {
-        "title": "जीवन उमंग प्रीमियम चार्ट (उदाहरणात्मक)",
-        "description": "₹10 लाख बीमा राशि के लिए विभिन्न आयु और प्रीमियम भुगतान अवधि (PPT) पर वार्षिक प्रीमियम।",
-        "age_col": "प्रवेश आयु",
-        "ppt_15": "15 वर्ष PPT",
-        "ppt_20": "20 वर्ष PPT",
-        "ppt_25": "25 वर्ष PPT",
-        "ppt_30": "30 वर्ष PPT"
+        "title": "Jeevan Umang Premium Chart (Illustrative)",
+        "description": "Yearly premiums for a â‚¹10 Lakh Sum Assured at different ages and Premium Paying Terms (PPT).",
+        "age_col": "Entry Age",
+        "ppt_15": "15 Yrs PPT",
+        "ppt_20": "20 Yrs PPT",
+        "ppt_25": "25 Yrs PPT",
+        "ppt_30": "30 Yrs PPT"
     },
     "related_calculators": {
-      "title": "సంబంధిత కాలిక్యులేటర్లు",
+      "title": "Related Calculators",
       "links": [
-        {"title": "ఎల్‌ఐసి ప్రీమియం కాలిక్యులేటర్", "description": "అన్ని పథకాలకు ప్రీమియంలను అన్వేషించండి.", "href": "/lic-premium-calculator"},
-        {"title": "ఎల్‌ఐసి మెచ్యూరిటీ కాలిక్యులేటర్", "description": "ఏ పథకానికైనా మెచ్యూరిటీని అంచనా వేయండి.", "href": "/lic-maturity-calculator"},
-        {"title": "ఎల్‌ఐసి సరెండర్ విలువ కాలిక్యులేటర్", "description": "మీ పాలసీ సరెండర్ విలువను లెక్కించండి.", "href": "/lic-surrender-value-calculator"}
+        {"title": "LIC Premium Calculator", "description": "Explore premiums for all plans.", "href": "/lic-premium-calculator"},
+        {"title": "LIC Maturity Calculator", "description": "Estimate maturity for any plan.", "href": "/lic-maturity-calculator"},
+        {"title": "LIC Surrender Value Calculator", "description": "Calculate your policy's surrender value.", "href": "/lic-surrender-value-calculator"}
       ]
     },
     "faq_schema": {
@@ -179,26 +203,26 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "జీవన్ ఉమంగ్ క్యాలిక్యులేటర్ అంటే ఏమిటి?",
+            "name": "What is the Jeevan Umang calculator?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "జీవన్ ఉమంగ్ క్యాలిక్యులేటర్ ఎల్‌ఐసి యొక్క జీవన్ ఉమంగ్ (ప్లాన్ 945) కోసం ప్రీమియంలు, హామీ సర్వైవల్ ఆదాయం మరియు సరెండర్ విలువలను అంచనా వేయడానికి ఒక ఉచిత ఆన్‌లైన్ సాధనం. ఫలితాలు ఉదాహరణాత్మకమైనవి మరియు ఒక బైండింగ్ ఎల్‌ఐసి కోట్ కాదు."
+              "text": "The Jeevan Umang calculator is a free online tool to estimate premiums, survival income and related values for LIC Plan 945. Results are illustrative, not a binding LIC quote."
             }
           },
           {
             "@type": "Question",
-            "name": "జీవన్ ఉమంగ్ క్యాలిక్యులేటర్ ఎంత ఖచ్చితమైనది?",
+            "name": "How accurate is the Jeevan Umang calculator?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "క్యాలిక్యులేటర్ అధికారిక పథకం నియమాలు మరియు బోనస్‌ల కోసం ఉదాహరణాత్మక అంచనాలను ఉపయోగిస్తుంది. చివరి ప్రీమియం/ప్రయోజనం అండర్‌రైటింగ్ తర్వాత ఎల్‌ఐసి ద్వారా నిర్ధారించబడుతుంది. ఎల్లప్పుడూ ఎల్‌ఐసితో ధృవీకరించుకోండి."
+              "text": "The calculator uses official plan rules and illustrative bonus assumptions. The final premium and benefits are confirmed by LIC after underwriting. Always verify with LIC."
             }
           },
           {
             "@type": "Question",
-            "name": "జీవన్ ఉమంగ్ నుండి వచ్చే ఆదాయం పన్ను విధించదగినదా?",
+            "name": "Is the income from Jeevan Umang taxable?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "సాధారణంగా, జీవన్ ఉమంగ్ వంటి ఎల్‌ఐసి పాలసీల నుండి వచ్చే ఆదాయం మరియు మెచ్యూరిటీ/మరణ ప్రయోజనాలు ఆదాయపు పన్ను చట్టంలోని సెక్షన్ 10(10D) కింద పన్ను-రహితం, పాలసీ షరతులకు లోబడి ఉంటాయి."
+              "text": "Generally, income and maturity benefits from LIC policies like Jeevan Umang are tax-free under Section 10(10D) of the Income Tax Act, subject to policy conditions."
             }
           }
         ]
@@ -206,30 +230,30 @@
     "how_to_schema": {
         "@context": "https://schema.org",
         "@type": "HowTo",
-        "name": "ఎల్‌ఐసి జీవన్ ఉమంగ్ క్యాలిక్యులేటర్‌ను ఎలా ఉపయోగించాలి",
+        "name": "How to Use the LIC Jeevan Umang Calculator",
         "step": [
           {
             "@type": "HowToStep",
-            "name": "దశ 1: పాలసీ వివరాలను నమోదు చేయండి",
-            "text": "మీ వయస్సు, కోరుకున్న ప్రాథమిక బీమా మొత్తం (BSA), మరియు ప్రీమియం చెల్లింపు కాలపరిమితి (PPT)ని నమోదు చేయండి."
+            "name": "Step 1: Enter Policy Details",
+            "text": "Input your age, desired Basic Sum Assured (BSA), and the Premium Paying Term (PPT)."
           },
           {
             "@type": "HowToStep",
-            "name": "దశ 2: చెల్లింపు & రైడర్‌లను ఎంచుకోండి",
-            "text": "మీ చెల్లింపు ఫ్రీక్వెన్సీ మరియు ప్రమాద మరణ ప్రయోజనం వంటి ఏవైనా ఐచ్ఛిక రైడర్‌లను ఎంచుకోండి."
+            "name": "Step 2: Choose Payment & Riders",
+            "text": "Select your payment frequency and any optional riders like Accidental Death Benefit."
           },
           {
             "@type": "HowToStep",
-            "name": "దశ 3: లెక్కించు & విశ్లేషించు",
-            "text": "మీ ప్రీమియం, హామీ వార్షిక ఆదాయం చూడటానికి 'లెక్కించు' క్లిక్ చేయండి మరియు మీ ప్రయోజనాల PDF ఇలస్ట్రేషన్‌ను డౌన్‌లోడ్ చేయండి."
+            "name": "Step 3: Calculate & Analyze",
+            "text": "Click 'Calculate' to see your premium, guaranteed annual income, and download a PDF illustration of your benefits."
           }
         ]
     },
     "financial_product_schema": {
         "@context": "https://schema.org",
         "@type": "FinancialProduct",
-        "name": "ఎల్‌ఐసి జీవన్ ఉమంగ్ (ప్లాన్ 945)",
-        "description": "ప్రీమియం చెల్లింపు కాలపరిమితి తర్వాత వార్షిక సర్వైవల్ ప్రయోజనాలు మరియు మెచ్యూరిటీ లేదా మరణంపై ఒకేసారి మొత్తాన్ని అందించే ఒక పాల్గొనే పూర్తి-జీవిత పథకం.",
+        "name": "LIC Jeevan Umang (Plan 945)",
+        "description": "A participating whole-life plan providing annual survival benefits and a lump sum at maturity or death.",
         "brand": {
           "@type": "Brand",
           "name": "LIC of India"

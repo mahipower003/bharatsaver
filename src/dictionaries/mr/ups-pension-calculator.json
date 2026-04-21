@@ -1,111 +1,111 @@
-
+﻿
 {
-  "meta_title": "UPS पेन्शन कॅल्क्युलेटर 2025 (भारत) — मासिक पेन्शन आणि एकरकमी रकमेचा अंदाज घ्या",
-  "meta_description": "2025 साठी मोफत युनिफाइड पेन्शन स्कीम (UPS) कॅल्क्युलेटर. आमच्या वापरण्यास सोप्या साधनासह तुमची मासिक पेन्शन, कौटुंबिक पेन्शन आणि कम्युटेड एकरकमी रकमेचा अंदाज घ्या.",
-  "h1": "UPS पेन्शन कॅल्क्युलेटर (युनिफाइड पेन्शन स्कीम इंडिया)",
-  "hero_subtitle": "PSU कर्मचाऱ्यांसाठी युनिफाइड पेन्शन स्कीम अंतर्गत तुमची मासिक पेन्शन, कौटुंबिक पेन्शन आणि एकरकमी रकमेचा त्वरित अंदाज घ्या.",
-  "last_reviewed_date": "ऑगस्ट 2024",
+  "meta_title": "UPS Pension Calculator 2025 (India) â€” Estimate Monthly Pension & Lump Sum",
+  "meta_description": "Free Unified Pension Scheme (UPS) calculator for 2025. Estimate your monthly pension, family pension, and commuted lump sum with our easy-to-use tool.",
+  "h1": "UPS Pension Calculator (Unified Pension Scheme India)",
+  "hero_subtitle": "Instantly estimate your monthly pension, family pension, and lump sum under the Unified Pension Scheme for PSU employees.",
+  "last_reviewed_date": "August 2024",
   "interactive_tool": {
-    "title": "UPS पेन्शन कॅल्क्युलेटर",
-    "description": "तुमच्या अंदाजित पेन्शनची गणना करण्यासाठी तुमचे तपशील प्रविष्ट करा.",
-    "calculate_cta": "पेन्शनची गणना करा",
-    "calculating": "गणना होत आहे...",
-    "try_example": "एक उदाहरण वापरून पहा",
-    "show_steps": "गणनेचे टप्पे दर्शवा",
-    "hide_steps": "गणनेचे टप्पे लपवा",
-    "copy_link": "लिंक कॉपी करा",
-    "print_results": "प्रिंट करा",
-    "download_excel": "टप्पे डाउनलोड करा (CSV)"
+    "title": "UPS Pension Calculator",
+    "description": "Enter your details to calculate your estimated pension.",
+    "calculate_cta": "Calculate Pension",
+    "calculating": "Calculating...",
+    "try_example": "Try an Example",
+    "show_steps": "Show Calculation Steps",
+    "hide_steps": "Hide Calculation Steps",
+    "copy_link": "Copy Link",
+    "print_results": "Print",
+    "download_excel": "Download Steps (CSV)"
   },
   "inputs": {
-    "basic_pay": "शेवटचे काढलेले मूळ वेतन (प्रति महिना)",
-    "da_percentage": "निवृत्तीच्या वेळी डीए टक्केवारी (%)",
-    "service_years": "पात्र सेवा (वर्षांमध्ये)"
+    "basic_pay": "Last Drawn Basic Pay (per month)",
+    "da_percentage": "DA Percentage at Retirement (%)",
+    "service_years": "Qualifying Service (in years)"
   },
   "outputs": {
-    "title": "तुमची अंदाजित पेन्शन",
-    "monthly_pension": "मासिक पेन्शन",
-    "family_pension": "कौटुंबिक पेन्शन (सूचक)",
-    "lump_sum": "एकरकमी रक्कम (कम्युटेशन उदाहरण)"
+    "title": "Your Estimated Pension",
+    "monthly_pension": "Monthly Pension",
+    "family_pension": "Family Pension (Indicative)",
+    "lump_sum": "Lump Sum (Commutation Example)"
   },
   "calculation_transcript": {
-    "title": "गणना প্রতিলিপি",
-    "inputs_title": "ইনপুট:",
-    "basic_pay": "  मूळ वेतन",
-    "da_percentage": "  डीए %",
-    "pensionable_salary": "  पेन्शनपात्र पगार",
-    "formula_title": "সূত্র:",
-    "monthly_pension_formula": "  (पेन्शनपात्र पगार * पेन्शन फॅक्टर * सेवा) / भाजक",
-    "numbers_title": "संख्या:",
-    "pension_factor": "  पेन्शन फॅक्टर",
-    "service_years": "  सेवा वर्षे",
-    "divisor": "  भाजक",
-    "compute_title": "गणना:",
-    "monthly_pension": "  मासिक पेन्शन",
-    "family_pension": "  कौटुंबिक पेन्शन"
+    "title": "Calculation Transcript",
+    "inputs_title": "Inputs:",
+    "basic_pay": "  Basic Pay",
+    "da_percentage": "  DA %",
+    "pensionable_salary": "  Pensionable Salary",
+    "formula_title": "Formula:",
+    "monthly_pension_formula": "  (Pensionable Salary * Pension Factor * Service) / Divisor",
+    "numbers_title": "Numbers:",
+    "pension_factor": "  Pension Factor",
+    "service_years": "  Service Years",
+    "divisor": "  Divisor",
+    "compute_title": "Compute:",
+    "monthly_pension": "  Monthly Pension",
+    "family_pension": "  Family Pension"
   },
   "calculation_steps": {
-    "title": "हे कसे गणले जाते",
-    "pensionable_salary": "पेन्शनपात्र पगार",
-    "monthly_pension": "मासिक पेन्शन",
-    "family_pension": "कौटुंबिक पेन्शन"
+    "title": "How it's calculated",
+    "pensionable_salary": "Pensionable Salary",
+    "monthly_pension": "Monthly Pension",
+    "family_pension": "Family Pension"
   },
   "worked_examples": {
-    "h2": "काम केलेले उदाहरण (प्रतिलिपी)",
+    "h2": "Worked Examples (Transcript)",
     "scenario1": {
-      "title": "परिस्थिती १: मानक सेवानिवृत्ती",
-      "body": "<p><strong>इनपुट:</strong><br>मूळ वेतन: ₹80,000 | डीए: 52% | सेवा: 33 वर्षे</p><p><strong>गणना:</strong><br>1. पेन्शनपात्र पगार = 80000 * (1 + 0.52) = ₹1,21,600<br>2. मासिक पेन्शन = (121600 * 0.5 * 33) / 33 = <strong>₹60,800</strong></p>"
+      "title": "Scenario 1: Standard Retirement",
+      "body": "<p><strong>Inputs:</strong><br>Basic Pay: â‚¹80,000 | DA: 52% | Service: 33 years</p><p><strong>Calculation:</strong><br>1. Pensionable Salary = 80000 * (1 + 0.52) = â‚¹1,21,600<br>2. Monthly Pension = (121600 * 0.5 * 33) / 33 = <strong>â‚¹60,800</strong></p>"
     },
     "scenario2": {
-      "title": "परिस्थिती २: लवकर सेवानिवृत्ती",
-      "body": "<p><strong>इनपुट:</strong><br>मूळ वेतन: ₹65,000 | डीए: 50% | सेवा: 25 वर्षे</p><p><strong>गणना:</strong><br>1. पेन्शनपात्र पगार = 65000 * (1 + 0.50) = ₹97,500<br>2. मासिक पेन्शन = (97500 * 0.5 * 25) / 33 = <strong>₹37,000 (अंदाजे)</strong></p>"
+      "title": "Scenario 2: Early Retirement",
+      "body": "<p><strong>Inputs:</strong><br>Basic Pay: â‚¹65,000 | DA: 50% | Service: 25 years</p><p><strong>Calculation:</strong><br>1. Pensionable Salary = 65000 * (1 + 0.50) = â‚¹97,500<br>2. Monthly Pension = (97500 * 0.5 * 25) / 33 = <strong>â‚¹37,000 (approx)</strong></p>"
     },
     "scenario3": {
-      "title": "परिस्थिती ३: लहान सेवा",
-      "body": "<p><strong>इनपुट:</strong><br>मूळ वेतन: ₹1,10,000 | डीए: 55% | सेवा: 15 वर्षे</p><p><strong>गणना:</strong><br>1. पेन्शनपात्र पगार = 110000 * (1 + 0.55) = ₹1,70,500<br>2. मासिक पेन्शन = (170500 * 0.5 * 15) / 33 = <strong>₹38,750 (अंदाजे)</strong></p>"
+      "title": "Scenario 3: Shorter Service",
+      "body": "<p><strong>Inputs:</strong><br>Basic Pay: â‚¹1,10,000 | DA: 55% | Service: 15 years</p><p><strong>Calculation:</strong><br>1. Pensionable Salary = 110000 * (1 + 0.55) = â‚¹1,70,500<br>2. Monthly Pension = (170500 * 0.5 * 15) / 33 = <strong>â‚¹38,750 (approx)</strong></p>"
     }
   },
   "how_it_works": {
-    "h2": "UPS पेन्शन कॅल्क्युलेटर कसे कार्य करते?",
-    "body": "हे कॅल्क्युलेटर युनिफाइड पेन्शन स्कीमसाठी निर्धारित प्रमाणित सूत्र वापरते. ते तुमचे शेवटचे काढलेले मूळ वेतन आणि लागू महागाई भत्ता (डीए) समाविष्ट करून तुमचे एकूण 'पेन्शनपात्र पगार' गणते. त्यानंतर ते तुमची एकूण मासिक पेन्शन निश्चित करण्यासाठी पेन्शन फॅक्टर आणि तुमच्या पात्र सेवेची वर्षे लागू करते."
+    "h2": "How Does the UPS Pension Calculator Work?",
+    "body": "This calculator uses the standardized formula prescribed for the Unified Pension Scheme. It computes your total 'pensionable salary' by including your last drawn Basic Pay and the applicable Dearness Allowance (DA). It then applies a pension factor and your years of qualifying service to determine the gross monthly pension you are entitled to."
   },
   "formula_section": {
-    "h2": "UPS पेन्शन सूत्र स्पष्ट केले",
-    "body": "<p>वापरलेले मुख्य सूत्र आहे:</p><p><code>मासिक पेन्शन = (पेन्शनपात्र पगार × पेन्शन फॅक्टर × सेवेची वर्षे) / भाजक</code></p><ul><li><strong>पेन्शनपात्र पगार:</strong> महागाई भत्त्यासाठी समायोजित केलेले तुमचे शेवटचे काढलेले मूळ वेतन.</li><li><strong>पेन्शन फॅक्टर:</strong> हे सामान्यतः 0.5 (50% चे प्रतिनिधित्व करते) असते.</li><li><strong>सेवेची वर्षे:</strong> तुमचा एकूण पात्र सेवा कालावधी.</li><li><strong>भाजक:</strong> एक मानक मूल्य, सामान्यतः 33 वर्षे, पूर्ण पेन्शनसाठी बेंचमार्क म्हणून वापरले जाते.</li></ul>"
+    "h2": "The UPS Pension Formula Explained",
+    "body": "<p>The core formula used is:</p><p><code>Monthly Pension = (Pensionable Salary Ã— Pension Factor Ã— Years of Service) / Divisor</code></p><ul><li><strong>Pensionable Salary:</strong> Your last drawn Basic Pay adjusted for Dearness Allowance.</li><li><strong>Pension Factor:</strong> This is typically 0.5 (representing 50%).</li><li><strong>Years of Service:</strong> Your total qualifying service period.</li><li><strong>Divisor:</strong> A standard value, typically 33 years, used as the benchmark for full pension.</li></ul>"
   },
   "family_pension": {
-    "h2": "कौटुंबिक पेन्शन समजून घेणे",
-    "body": "पेन्शनधारकाच्या दुर्दैवी निधनाच्या बाबतीत, पेन्शनचा एक भाग जोडीदाराला किंवा अवलंबितांना देय असतो. याला कौटुंबिक पेन्शन म्हणून ओळखले जाते. आमचे कॅल्क्युलेटर एक सूचक रक्कम प्रदान करते, जी सामान्यतः मूळ मासिक पेन्शनच्या टक्केवारी (उदा. 60%) म्हणून गणली जाते."
+    "h2": "Understanding Family Pension",
+    "body": "In the unfortunate event of the pensioner's demise, a portion of the pension is payable to the spouse or dependents. This is known as Family Pension. Our calculator provides an indicative amount, which is typically calculated as a percentage (e.g., 60%) of the basic monthly pension."
   },
   "comparison": {
-    "h2": "UPS वि. NPS: एक जलद तुलना",
-    "body": "UPS ही PSU मध्ये सामान्य असलेली एक परिभाषित लाभ योजना आहे, तर राष्ट्रीय पेन्शन प्रणाली (NPS) ही एक परिभाषित योगदान योजना आहे. UPS मध्ये, तुमची पेन्शन तुमच्या पगारावर आणि सेवा वर्षांवर आधारित असते. NPS मध्ये, तुमची पेन्शन तुमच्या योगदानाद्वारे निर्माण झालेल्या बाजारातील परताव्यावर अवलंबून असते. हे UPS ला अधिक अंदाजित बनवते परंतु संभाव्यतः चांगल्या कामगिरी करणाऱ्या NPS पोर्टफोलिओपेक्षा कमी असते."
+    "h2": "UPS vs. NPS: A Quick Comparison",
+    "body": "While UPS is a Defined Benefit scheme common in PSUs, the <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>National Pension System (NPS)</a> is a Defined Contribution scheme. In UPS, your pension is based on your salary and service years. In NPS, your pension depends on the market returns generated by your contributions. This makes UPS more predictable but potentially lower than a well-performing NPS portfolio."
   },
   "tax_rules": {
-    "h2": "पेन्शन उत्पन्नासाठी कर नियम",
-    "body": "मिळालेली पेन्शन, मग ती मासिक असो किंवा एकरकमी कम्युटेशनच्या रूपात असो, सामान्यतः 'पगारातून उत्पन्न' मानली जाते आणि तुमच्या लागू आयकर स्लॅबनुसार करपात्र असते. तपशीलवार नियोजनासाठी कर सल्लागाराचा सल्ला घ्या, कारण नियम बदलू शकतात."
+    "h2": "Tax Rules for Pension Income",
+    "body": "Pension received, whether monthly or as a lump-sum commutation, is generally considered 'Income from Salary' and is taxable as per your applicable income tax slab. Consult a tax advisor for detailed planning, as rules can vary."
   },
   "optimization": {
-    "h2": "तुमची पेन्शन कशी ऑप्टिमाइझ करावी",
-    "body": "<ul><li><strong>दीर्घ सेवा:</strong> तुमच्या पात्र सेवेची वर्षे वाढवल्याने तुमची पेन्शन रक्कम थेट वाढते.</li><li><strong>डीए प्रभाव:</strong> सेवानिवृत्तीच्या वेळी उच्च डीए दर तुमच्या पेन्शनपात्र पगारात आणि त्यामुळे तुमच्या अंतिम पेन्शनमध्ये वाढ करतील.</li><li><strong>कम्युटेशन निर्णय:</strong> एकरकमी रक्कम (कम्युटेशन) घ्यायची की नाही याचा काळजीपूर्वक विचार करा. जरी ते तात्काळ तरलता प्रदान करते, तरी ते एका निश्चित कालावधीसाठी तुमची मासिक पेन्शन कमी करते.</li></ul>"
+    "h2": "How to Optimize Your Pension",
+    "body": "<ul><li><strong>Longer Service:</strong> Maximizing your qualifying service years directly increases your pension amount.</li><li><strong>DA Impact:</strong> Higher DA rates at the time of retirement will boost your pensionable salary and, therefore, your final pension.</li><li><strong>Commutation Decision:</strong> Carefully consider whether to take a lump-sum amount (commutation). While it provides immediate liquidity, it reduces your monthly pension for a fixed period.</li></ul>"
   },
   "methodology": {
-    "h2": "कार्यपद्धती",
-    "body": "गणना युनिफाइड पेन्शन स्कीमच्या मानक सूत्रावर आधारित आहे. हे पेन्शन फॅक्टर 0.5 आणि भाजक 33 असल्याचे गृहीत धरते. हे साधन केवळ अंदाजाच्या उद्देशाने आहे. तुमची वास्तविक पेन्शन तुमच्या संस्थेच्या विशिष्ट नियमांनुसार बदलू शकते."
+    "h2": "Methodology",
+    "body": "The calculations are based on the standard formula for the Unified Pension Scheme. It assumes the pension factor is 0.5 and the divisor is 33. This tool is for estimation purposes only. Your actual pension may vary based on your organization's specific rules and regulations."
   },
   "faqs": [
-    { "q": "युनिफाइड पेन्शन स्कीम (UPS) म्हणजे काय?", "a": "UPS ही भारतातील काही सार्वजनिक क्षेत्रातील उपक्रमांच्या (PSUs) कर्मचाऱ्यांसाठी लागू असलेली एक परिभाषित-लाभ पेन्शन योजना आहे. ती पगार आणि सेवेच्या लांबीवर आधारित पेन्शनची हमी देते." },
-    { "q": "हे कॅल्क्युलेटर सर्व PSU कर्मचाऱ्यांसाठी लागू आहे का?", "a": "हे कॅल्क्युलेटर सामान्य UPS सूत्र वापरते. तथापि, विशिष्ट पेन्शन नियम वेगवेगळ्या PSUs मध्ये भिन्न असू शकतात. नेहमी तुमच्या नियोक्त्याच्या एचआर विभागाशी पडताळणी करा." },
-    { "q": "'पेन्शनपात्र पगार' म्हणजे काय?", "a": "ही तुमची पेन्शन मोजण्यासाठी वापरली जाणारी पगाराची रक्कम आहे, ज्यामध्ये सामान्यतः तुमचे शेवटचे काढलेले मूळ वेतन आणि लागू महागाई भत्ता (डीए) टक्केवारी यांचा समावेश असतो." },
-    { "q": "मी माझ्या पेन्शनमधून एकरकमी रक्कम मिळवू शकेन का?", "a": "होय, बहुतेक योजना 'कम्युटेशन' ला परवानगी देतात, जिथे तुम्ही तुमच्या पेन्शनचा एक भाग एकरकमी घेऊ शकता. हे एका निर्दिष्ट कालावधीसाठी (उदा. 15 वर्षे) तुमची मासिक पेन्शन कमी करेल." }
+    { "q": "What is the Unified Pension Scheme (UPS)?", "a": "UPS is a defined-benefit pension plan applicable to employees of certain Public Sector Undertakings (PSUs) in India. It guarantees a pension based on salary and service length." },
+    { "q": "Is this calculator applicable for all PSU employees?", "a": "This calculator uses the common UPS formula. However, specific pension rules can vary between different PSUs. Always cross-verify with your employer's HR department." },
+    { "q": "What is 'Pensionable Salary'?", "a": "It is the salary amount used to calculate your pension, typically comprising your last drawn Basic Pay plus the applicable Dearness Allowance (DA) percentage." },
+    { "q": "Can I get a lump-sum amount from my pension?", "a": "Yes, most schemes allow for 'commutation,' where you can take a portion of your pension as a lump sum. This will reduce your monthly pension for a specified period (e.g., 15 years)." }
   ],
-  "faq_title": "वारंवार विचारले जाणारे प्रश्न",
+  "faq_title": "Frequently Asked Questions",
   "conclusion": {
-    "h2": "आत्मविश्वासाने तुमच्या सेवानिवृत्तीनंतरच्या जीवनाची योजना करा",
-    "body": "हे कॅल्क्युलेटर सेवानिवृत्तीनंतर तुमची आर्थिक स्थिती समजून घेण्याच्या दिशेने तुमचे पहिले पाऊल आहे. तुमच्या गुंतवणूक, खर्च आणि वारसाची योजना अधिक स्पष्टतेने आणि आत्मविश्वासाने करण्यासाठी या अंदाजाचा वापर करा."
+    "h2": "Plan Your Post-Retirement Life with Confidence",
+    "body": "This calculator is your first step towards understanding your financial standing post-retirement. Use this estimate to plan your investments, expenses, and legacy with greater clarity and confidence."
   },
   "disclaimer": {
-    "title": "अस्वीकरण",
-    "body": "हे एक माहितीपूर्ण साधन आहे आणि आर्थिक सल्ला नाही. पेन्शन रक्कम अंदाजित आहे आणि बदलू शकते. कृपया अधिकृत गणना आणि सल्ल्यासाठी तुमच्या नियोक्त्याशी किंवा आर्थिक सल्लागाराशी संपर्क साधा."
+    "title": "Disclaimer",
+    "body": "This is an informational tool and not financial advice. Pension amounts are estimates and may vary. Please consult your employer or a financial advisor for official calculations and advice."
   }
 }

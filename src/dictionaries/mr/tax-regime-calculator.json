@@ -1,104 +1,120 @@
-
+﻿
 {
-  "meta_title": "कर प्रणाली कॅल्क्युलेटर 2025 — जुनी वि नवीन कर प्रणालीची तुलना करा (भारत)",
-  "meta_description": "जुनी वि नवीन प्रणाली अंतर्गत कर त्वरित तुलना करण्यासाठी तुमचा पगार आणि वजावट प्रविष्ट करा. आर्थिक वर्ष 2025-26 साठी अद्यतनित — एचआरए, 80सी, 80डी, आणि काम केलेली उदाहरणे समाविष्ट आहेत. विनामूल्य डाउनलोड करण्यायोग्य सारांश आणि आयटीआर फाइलिंग पर्याय.",
-  "h1": "जुनी वि नवीन कर प्रणाली कॅल्क्युलेटर (आर्थिक वर्ष 2024-25 / मूल्यांकन वर्ष 2025-26)",
-  "description": "कोणती कर प्रणाली निवडावी याबाबत गोंधळात आहात? चालू आर्थिक वर्षासाठी जुनी की नवीन कर प्रणाली तुमच्यासाठी अधिक फायदेशीर आहे हे त्वरित शोधण्यासाठी तुमचे उत्पन्न आणि वजावट प्रविष्ट करा.",
-  "last_updated": "अद्यतनित:",
-  "title": "जुनी वि नवीन कर प्रणाली कॅल्क्युलेटर",
-  "form_description": "एक स्पष्ट तुलना मिळवण्यासाठी तुमचे उत्पन्न आणि संभाव्य वजावट भरा.",
-  "gross_salary_label": "एकूण वार्षिक पगार",
-  "basic_salary_label": "मूळ पगार (एचआरए गणनेसाठी)",
-  "other_income_label": "इतर स्त्रोतांकडून उत्पन्न",
-  "age_label": "तुमचे वय",
-  "age_below_60": "60 वर्षांपेक्षा कमी",
-  "age_60_to_80": "60 ते 80 वर्षे (ज्येष्ठ नागरिक)",
-  "age_above_80": "80 वर्षांपेक्षा जास्त (अति ज्येष्ठ नागरिक)",
-  "deductions_title": "वजावट (जुनी प्रणालीसाठी)",
-  "section80C_label": "कलम 80C (उदा., पीपीएफ, ईएलएसएस, जीवन विमा)",
-  "section80D_label": "कलम 80D (आरोग्य विमा प्रीमियम)",
-  "section80CCD1B_label": "कलम 80CCD(1B) (एनपीएस योगदान)",
-  "section80TTA_label": "कलम 80TTA (बचत खाते व्याज)",
-  "hra_label": "मिळालेले एचआरए",
-  "rent_paid_label": "एकूण वार्षिक भरलेले भाडे",
-  "metro_city_label": "तुम्ही मेट्रो शहरात राहता का? (दिल्ली, मुंबई, कोलकाता, चेन्नई)",
-  "home_loan_interest_label": "गृह कर्ज व्याज (स्वतःच्या ताब्यात)",
-  "lta_label": "रजा प्रवास भत्ता (एलटीए)",
-  "calculate_button": "कर प्रणाल्यांची तुलना करा",
-  "loading": "तुलना होत आहे...",
-  "results_title": "कर तुलना परिणाम",
-  "result_recommendation": "{winner} तुमच्यासाठी चांगले आहे, ज्यामुळे तुमचे {savings} कर वाचतात!",
-  "old_regime": "जुनी कर प्रणाली",
-  "new_regime": "नवीन कर प्रणाली (डीफॉल्ट)",
-  "total_tax_label": "एकूण देय कर",
-  "taxable_income_label": "करपात्र उत्पन्न",
-  "net_income_label": "निव्वळ हातात येणारे उत्पन्न",
+  "meta_title": "Tax Regime Calculator 2025 â€” Compare Old vs New Tax Regime (India)",
+  "meta_description": "Enter your salary and deductions to instantly compare tax under the old vs new regime. Updated for FY 2025-26 â€” includes HRA, 80C, 80D, and worked examples. Free downloadable summary & ITR filing options.",
+  "h1": "Old vs New Tax Regime Calculator (FY 2024-25 / AY 2025-26)",
+  "description": "Confused about which tax regime to choose? Enter your income and deductions to instantly find out whether the Old or New Tax Regime is more beneficial for you for the current financial year.",
+  "last_updated": "Updated:",
+  "title": "Old vs New Tax Regime Calculator",
+  "form_description": "Fill in your income and potential deductions to get a clear comparison.",
+  "gross_salary_label": "Gross Annual Salary",
+  "basic_salary_label": "Basic Salary (for HRA calculation)",
+  "other_income_label": "Income from Other Sources",
+  "age_label": "Your Age",
+  "age_below_60": "Below 60 years",
+  "age_60_to_80": "60 to 80 years (Senior Citizen)",
+  "age_above_80": "Above 80 years (Super Senior Citizen)",
+  "deductions_title": "Deductions (for Old Regime)",
+  "section80C_label": "Section 80C (e.g., PPF, ELSS, Life Insurance)",
+  "section80D_label": "Section 80D (Health Insurance Premium)",
+  "section80CCD1B_label": "Section 80CCD(1B) (NPS Contribution)",
+  "section80TTA_label": "Section 80TTA (Savings Account Interest)",
+  "hra_label": "HRA Received",
+  "rent_paid_label": "Total Annual Rent Paid",
+  "metro_city_label": "Do you live in a metro city? (Delhi, Mumbai, Kolkata, Chennai)",
+  "home_loan_interest_label": "Home Loan Interest (Self-occupied)",
+  "lta_label": "Leave Travel Allowance (LTA)",
+  "calculate_button": "Compare Tax Regimes",
+  "loading": "Comparing...",
+  "results_title": "Tax Comparison Result",
+  "result_recommendation": "The {winner} is better for you, saving you {savings} in taxes!",
+  "old_regime": "Old Tax Regime",
+  "new_regime": "New Tax Regime (Default)",
+  "total_tax_label": "Total Tax Payable",
+  "taxable_income_label": "Taxable Income",
+  "net_income_label": "Net Take-Home Income",
   "assumptions": {
-    "title": "गृहितके आणि टिपा",
-    "body": "<ul><li>हे कॅल्क्युलेटर मूल्यांकन वर्ष 2025-26 (आर्थिक वर्ष 2024-25) साठी आहे.</li><li>हे असे गृहीत धरते की तुम्ही एक पगारदार व्यक्ती आहात.</li><li>नवीन कर प्रणाली डीफॉल्ट पर्याय आहे. जुनी प्रणाली अधिक फायदेशीर असल्यास तुम्ही स्पष्टपणे जुनी प्रणाली निवडणे आवश्यक आहे.</li><li>नवीनतम नियमांनुसार दोन्ही प्रणालींअंतर्गत पगार उत्पन्नावर ₹50,000 ची मानक वजावट लागू केली जाते.</li></ul>"
+    "title": "Assumptions & Notes",
+    "body": "<ul><li>This calculator is for Assessment Year 2025-26 (Financial Year 2024-25).</li><li>It assumes you are a salaried individual.</li><li>The New Tax Regime is the default regime. You must explicitly opt for the Old Regime if it is more beneficial.</li><li>Standard Deduction of â‚¹50,000 is applied to salary income under both regimes as per latest rules.</li></ul>"
   },
   "comparison_table": {
-    "title": "जुनी वि नवीन प्रणाली: मुख्य फरक",
-    "description": "प्रत्येक प्रणाली अंतर्गत काय परवानगी आहे यावर एक द्रुत नजर येथे आहे.",
+    "title": "Old vs New Regime: Key Differences",
+    "description": "Hereâ€™s a quick look at whatâ€™s allowed under each regime.",
     "table": {
-      "headers": ["वजावट/सूट", "जुनी प्रणाली", "नवीन प्रणाली"],
+      "headers": ["Deduction/Exemption", "Old Regime", "New Regime"],
       "rows": [
-        ["मानक वजावट", "✅ (₹50,000)", "✅ (₹50,000)"],
-        ["कलम 80C (पीपीएफ, ईएलएसएस, इ.)", "✅ (₹1.5 लाखांपर्यंत)", "❌ परवानगी नाही"],
-        ["कलम 80D (आरोग्य विमा)", "✅", "❌ परवानगी नाही"],
-        ["एचआरए सूट", "✅", "❌ परवानगी नाही"],
-        ["गृह कर्ज व्याज (कलम 24ब)", "✅ (₹2 लाखांपर्यंत)", "❌ परवानगी नाही"],
-        ["कलम 80CCD(1B) (एनपीएस)", "✅ (₹50,000 पर्यंत)", "❌ परवानगी नाही"]
+        ["Standard Deduction", "âœ… (â‚¹50,000)", "âœ… (â‚¹50,000)"],
+        ["Section 80C (PPF, ELSS, etc.)", "âœ… (Up to â‚¹1.5 Lakh)", "âŒ Not Allowed"],
+        ["Section 80D (Health Insurance)", "âœ…", "âŒ Not Allowed"],
+        ["HRA Exemption", "âœ…", "âŒ Not Allowed"],
+        ["Home Loan Interest (Sec 24b)", "âœ… (Up to â‚¹2 Lakh)", "âŒ Not Allowed"],
+        ["Section 80CCD(1B) (NPS)", "âœ… (Up to â‚¹50,000)", "âŒ Not Allowed"]
       ]
     }
   },
   "checklist": {
-    "title": "तुम्ही कोणती प्रणाली निवडावी?",
-    "body": "<ul><li><strong>जुनी प्रणाली निवडा जर:</strong> तुमच्याकडे एचआरए, गृह कर्ज व्याज यांसारखी महत्त्वपूर्ण वजावट असेल आणि तुम्ही पूर्ण 80C मर्यादा वापरत असाल. सामान्यतः, जर तुमची एकूण वजावट ₹2.5 - ₹3.75 लाखांपेक्षा जास्त असेल, तर जुनी प्रणाली अनेकदा चांगली असते.</li><li><strong>नवीन प्रणाली निवडा जर:</strong> तुमच्याकडे कमी किंवा कोणतीही वजावट नसेल, तुम्ही साधेपणाला प्राधान्य देत असाल, आणि कर उद्देशांसाठी गुंतवणुकीचा मागोवा घेण्याच्या त्रासाशिवाय बहुतेक उत्पन्न स्तरांवर कमी कर दर हवे असतील.</li></ul>"
+    "title": "Which Regime Should You Choose?",
+    "body": "<ul><li><strong>Choose the Old Regime if:</strong> You have significant deductions like HRA, home loan interest, and utilize the full 80C limit. Typically, if your total deductions are above â‚¹2.5 - â‚¹3.75 lakh, the old regime is often better.</li><li><strong>Choose the New Regime if:</strong> You have few or no deductions, prefer simplicity, and want lower tax rates at most income levels without the hassle of tracking investments for tax purposes.</li></ul>"
   },
   "how_we_calculate": {
-    "title": "आम्ही तुमचा कर कसा मोजतो",
-    "body": "<p><strong>जुनी प्रणाली:</strong> आम्ही प्रथम एचआरए सूट आणि सर्व कलमांसह (80C, 80D, इ.) तुमच्या एकूण वजावटीची गणना करतो. हे तुमच्या 'करपात्र उत्पन्न' मिळवण्यासाठी तुमच्या एकूण उत्पन्नातून वजा केले जाते. कर नंतर जुन्या कर स्लॅबच्या आधारावर मोजला जातो, जो वेगवेगळ्या वयोगटांसाठी भिन्न असतो.</p><p><strong>नवीन प्रणाली:</strong> गणना सोपी आहे. आम्ही फक्त तुमच्या पगारावर ₹50,000 ची मानक वजावट लागू करतो. इतर कोणत्याही वजावटीला परवानगी नाही. कर नंतर नवीन, कमी कर स्लॅबच्या आधारावर मोजला जातो. स्लॅबच्या तपशीलवार विघटनासाठी, तुम्ही <a href='https://incometaxindia.gov.in/' target='_blank' rel='noopener noreferrer'>अधिकृत आयकर विभागाच्या वेबसाइटचा</a> संदर्भ घेऊ शकता.</p>"
+    "title": "How We Calculate Your Tax",
+    "body": "<p><strong>Old Regime:</strong> We first calculate your total deductions, including HRA exemption and all sections (80C, 80D, etc.). This is subtracted from your gross income to get your 'Taxable Income'. Tax is then calculated based on the old tax slabs, which vary for different age groups.</p><p><strong>New Regime:</strong> The calculation is simpler. We only apply the standard deduction of â‚¹50,000 to your salary. No other deductions are allowed. Tax is then calculated based on the new, lower tax slabs. For a detailed breakdown of slabs, you can refer to the <a href='https://incometaxindia.gov.in/' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>official Income Tax Department website</a>.</p>"
   },
   "common_scenarios": {
-    "title": "सामान्य परिस्थिती",
+    "title": "Common Scenarios",
     "scenario1": {
-      "title": "मेट्रोमध्ये भाड्याने राहणारा तरुण व्यावसायिक (पगार: ₹12 लाख)",
-      "body": "<p>पूर्ण 80C (₹1.5 लाख) आणि 80D (₹25 हजार) वजावटीसह, तसेच एचआरए सूट, <strong>जुनी प्रणाली</strong> लक्षणीय कर वाचवून अधिक चांगली असण्याची शक्यता आहे.</p>"
+      "title": "Young Professional Renting in a Metro (Salary: â‚¹12 Lakh)",
+      "body": "<p>With full 80C (â‚¹1.5L) and 80D (â‚¹25k) deductions, plus HRA exemption, the <strong>Old Regime</strong> is likely better, saving significant tax.</p>"
     },
     "scenario2": {
-      "title": "गृहकर्जासह घरमालक (पगार: ₹20 लाख)",
-      "body": "<p>₹2 लाख गृहकर्ज व्याज वजावट, 80C, 80D, आणि एनपीएस सह, <strong>जुनी प्रणाली</strong> मोठ्या प्रमाणात वजावटीमुळे जवळजवळ निश्चितपणे अधिक फायदेशीर आहे.</p>"
+      "title": "Homeowner with a Home Loan (Salary: â‚¹20 Lakh)",
+      "body": "<p>With â‚¹2L home loan interest deduction, 80C, 80D, and NPS, the <strong>Old Regime</strong> is almost certainly more beneficial due to the large volume of deductions.</p>"
     },
     "scenario3": {
-      "title": "कमी वजावटीसह गुंतवणूकदार (पगार: ₹15 लाख)",
-      "body": "<p>तुमच्याकडे एचआरए किंवा गृहकर्ज नसेल आणि तुम्ही फक्त किमान 80C गुंतवणूक करत असाल, तर <strong>नवीन प्रणालीचे</strong> कमी स्लॅब दर সম্ভবত कमी कर देयकात परिणाम देतील.</p>"
+      "title": "Investor with Low Deductions (Salary: â‚¹15 Lakh)",
+      "body": "<p>If you don't have HRA or a home loan and only make minimal 80C investments, the <strong>New Regime's</strong> lower slab rates will likely result in lower tax payable.</p>"
     }
   },
-  "faq_title": "वारंवार विचारले जाणारे प्रश्न",
+  "faq_title": "Frequently Asked Questions",
   "faqs": [
     {
-      "question": "आर्थिक वर्ष 2024-25 साठी कोणती कर प्रणाली डीफॉल्ट आहे?",
-      "answer": "नवीन कर प्रणाली सर्व करदात्यांसाठी डीफॉल्ट पर्याय आहे. तुम्हाला जुनी प्रणाली निवडायची असल्यास, तुम्ही तुमचा आयकर रिटर्न (आयटीआर) दाखल करताना तसे विशेषतः करणे आवश्यक आहे."
+      "question": "Which tax regime is the default for FY 2024-25?",
+      "answer": "The New Tax Regime is the default option for all taxpayers. If you want to opt for the Old Regime, you must do so specifically when filing your Income Tax Return (ITR)."
     },
     {
-      "question": "मी दरवर्षी जुनी आणि नवीन प्रणालींमध्ये स्विच करू शकेन का?",
-      "answer": "पगारदार व्यक्ती प्रत्येक आर्थिक वर्षात जुनी आणि नवीन प्रणालींमध्ये निवड करू शकतात. तथापि, व्यावसायिक उत्पन्न असलेल्या व्यक्ती त्यांच्या आयुष्यभरात फक्त एकदाच स्विच करू शकतात."
+      "question": "Can I switch between the old and new regimes every year?",
+      "answer": "Salaried individuals can choose between the old and new regimes every financial year. However, individuals with business income can only switch once in their lifetime."
     },
     {
-      "question": "नवीन कर प्रणालीमध्ये ₹50,000 ची मानक वजावट उपलब्ध आहे का?",
-      "answer": "होय, आर्थिक वर्ष 2023-24 पासून, नवीन कर प्रणाली अंतर्गत पगारदार व्यक्ती आणि पेन्शनधारकांसाठी ₹50,000 ची मानक वजावट उपलब्ध आहे."
+      "question": "Is the standard deduction of â‚¹50,000 available in the new tax regime?",
+      "answer": "Yes, from FY 2023-24 onwards, the standard deduction of â‚¹50,000 is available for salaried individuals and pensioners under the New Tax Regime as well."
+    },
+    {
+      "question": "How does choosing the old regime affect my investment planning?",
+      "answer": "The old regime allows deductions under Section 80C, making investments in <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a>, <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a>, and ELSS more tax-efficient. Use our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> to find ELSS funds that qualify for 80C deductions."
+    },
+    {
+      "question": "What if I have a home loan? Which regime should I choose?",
+      "answer": "If you have a home loan, the old regime is typically better due to home loan interest deductions. Use our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> to compare loan options and maximize your tax benefits under the old regime."
+    },
+    {
+      "question": "How does the tax regime choice impact my retirement planning?",
+      "answer": "Your tax regime choice affects long-term savings. The old regime favors tax-saving investments, while the new regime offers simplicity. Use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to plan your retirement corpus considering your tax regime choice."
+    },
+    {
+      "question": "Can I compare my tax savings with different investment options?",
+      "answer": "Yes, use our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a> to compare fixed deposits with PPF, and our <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> to optimize your investment portfolio for maximum tax efficiency."
     }
   ],
   "next_steps": {
-    "title": "डाउनलोड आणि पुढील पायऱ्या",
-    "cta1_title": "सारांश डाउनलोड करा (सीएसव्ही)",
-    "cta1_desc": "तुमच्या रेकॉर्डसाठी तुमची कर गणना निर्यात करा.",
-    "cta2_title": "तुमची कर बचत ऑप्टिमाइझ करा",
-    "cta2_desc": "पीपीएफ आणि ईएलएसएस सारखे आमचे कर-बचत गुंतवणूक कॅल्क्युलेटर एक्सप्लोर करा."
+    "title": "Download & Next Steps",
+    "cta1_title": "Download Summary (CSV)",
+    "cta1_desc": "Export your tax calculation for your records.",
+    "cta2_title": "Optimize Your Tax Savings",
+    "cta2_desc": "Explore our tax-saving investment calculators like PPF and ELSS."
   },
   "conclusion": {
-    "title": "एक माहितीपूर्ण निवड करा",
-    "body": "योग्य कर प्रणाली निवडणे हा एक महत्त्वाचा आर्थिक निर्णय आहे जो तुम्हाला हजारो रुपये वाचवू शकतो. ही निवड पूर्णपणे तुमच्या वैयक्तिक उत्पन्न आणि वजावट प्रोफाइलवर अवलंबून असते. तुमचे आकडे चालवण्यासाठी हे कॅल्क्युलेटर वापरा आणि वर्षासाठी सर्वात आर्थिकदृष्ट्या शहाणा निर्णय घ्या. अधिक बचत पर्यायांसाठी, आमचे <a href='/{lang}/ppf-calculator'>पीपीएफ</a> किंवा <a href='/{lang}/nps-calculator'>एनपीएस</a> कॅल्क्युलेटर तपासा."
+    "title": "Make an Informed Choice",
+    "body": "Choosing the right tax regime is a critical financial decision that can save you thousands of rupees. This choice depends entirely on your individual income and deduction profile. Use this calculator to run your numbers and make the most financially prudent decision for the year. For more savings options, check our <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a> or <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a> calculators. For broader financial planning, explore our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for debt management and <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> for portfolio optimization. Compare with other investment options using our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a> and <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a>."
   }
 }

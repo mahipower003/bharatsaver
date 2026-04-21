@@ -1,122 +1,120 @@
-
+﻿
 {
-  "h1": "கடன் உகப்பாக்க கால்குலேட்டர் இந்தியா 2025 — இஎம்ஐ, முன்கூட்டியே செலுத்துதல் & மறுநிதியளிப்பு சேமிப்புகள்",
-  "summary": "இந்த வழிகாட்டி + ஊடாடும் கால்குலேட்டர் உங்களுக்கு பதிலளிக்க உதவுகிறது: நான் மொத்த வட்டியை எவ்வாறு குறைக்க முடியும், எனது இஎம்ஐ அல்லது காலத்தை எவ்வாறு குறைக்க முடியும், மற்றும் முன்கூட்டியே செலுத்துதல், மறுநிதியளித்தல், அல்லது எனது உபரி நிதியை முதலீடு செய்வதற்கு இடையில் சிறந்த தேர்வை எவ்வாறு செய்வது?",
-  "title": "கடன் உகப்பாக்க கால்குலேட்டர்",
-  "form_description": "உங்கள் இஎம்ஐ கணக்கிட மற்றும் முன்கூட்டியே செலுத்துதல்கள் உங்கள் கடனை எவ்வாறு பாதிக்கலாம் என்பதைப் பார்க்க உங்கள் கடன் விவரங்களை உள்ளிடவும்.",
+  "h1": "Loan Optimization Calculator India 2025 â€” EMI, Prepayment & Refinance Savings",
+  "summary": "This guide + interactive calculator helps you answer: How can I minimize total interest, reduce my EMI or tenure, and make the best choice between prepaying, refinancing, or investing my surplus?",
+  "title": "Loan Optimization Calculator",
+  "form_description": "Enter your loan details to calculate your EMI and see how prepayments can impact your loan.",
   "form": {
-    "loan_amount": "கடன் தொகை",
-    "interest_rate": "வட்டி விகிதம் (% ஆண்டுக்கு)",
-    "tenure": "கடன் காலம் (ஆண்டுகள்)",
-    "prepayment_amount": "ஒரு முறை முன்கூட்டியே செலுத்தும் தொகை (விருப்பத்தேர்வு)",
-    "calculate_cta": "எனது கடனை உகப்பாக்கு",
-    "calculating": "உகப்பாக்கப்படுகிறது..."
+    "loan_amount": "Loan Amount",
+    "interest_rate": "Interest Rate (% p.a.)",
+    "tenure": "Loan Tenure (Years)",
+    "prepayment_amount": "One-time Prepayment Amount (Optional)",
+    "calculate_cta": "Optimize My Loan",
+    "calculating": "Optimizing..."
   },
   "results": {
-    "title": "உங்கள் கடன் பகுப்பாய்வு",
-    "monthly_emi": "மாதாந்திர இஎம்ஐ",
-    "total_interest": "மொத்த செலுத்த வேண்டிய வட்டி",
-    "total_payment": "மொத்த చెల్లింపు (అసలు + వడ్డీ)",
+    "title": "Your Loan Analysis",
+    "monthly_emi": "Monthly EMI",
+    "total_interest": "Total Interest Payable",
+    "total_payment": "Total Payment (Principal + Interest)",
     "prepayment_summary": {
-      "title": "முன்கூட்டியே செலுத்துவதன் மூலம், நீங்கள் சேமிக்க முடியும்:",
-      "subtitle": "மற்றும் உங்கள் காலத்தை {months} மாதங்கள் குறைக்கவும்!"
+      "title": "With Prepayment, You Could Save:",
+      "subtitle": "and reduce your tenure by {months} months!"
     },
-    "chart_view": "விளக்கப்படக் காட்சி",
-    "table_view": "கடனைத் திருப்பிச் செலுத்தும் அட்டவணை",
-    "download_csv": "அட்டவணையைப் பதிவிறக்கு",
-    "principal_paid": "செலுத்தப்பட்ட அசல்",
-    "interest_paid": "செலுத்தப்பட்ட வட்டி",
-    "outstanding_balance": "நிலுவைத் தொகை",
+    "chart_view": "Chart View",
+    "table_view": "Amortization Table",
+    "download_csv": "Download Schedule",
+    "principal_paid": "Principal Paid",
+    "interest_paid": "Interest Paid",
+    "outstanding_balance": "Outstanding Balance",
     "table": {
-      "month": "மாதம்",
-      "principal": "அசல்",
-      "interest": "வட்டி",
-      "total_payment": "மொத்த చెల్లింపు",
-      "ending_balance": "இறுதி இருப்பு"
+      "month": "Month",
+      "principal": "Principal",
+      "interest": "Interest",
+      "total_payment": "Total Payment",
+      "ending_balance": "Ending Balance"
     }
   },
   "why": {
-    "h2": "உங்கள் கடனை ஏன் உகப்பாக்க வேண்டும்? வட்டியின் மறைக்கப்பட்ட செலவு",
-    "body": "<p>ஒரு வீடு அல்லது கார் வாங்குவது போன்ற முக்கிய வாழ்க்கைக் குறிக்கோள்களை அடைவதற்கு கடன் எடுப்பது பெரும்பாலும் ஒரு அவசியமான படியாகும். இருப்பினும், கடனின் ஆயுட்காலம் முழுவதும் நீங்கள் செலுத்தும் மொத்த வட்டி திகைப்பூட்டுவதாக இருக்கலாம். 20 ஆண்டுகளுக்கு 8.5% வட்டி விகிதத்தில் ₹50 லட்சம் வீட்டுக் கடன் என்பது நீங்கள் வட்டிக்கு மட்டும் ₹55 லட்சத்திற்கும் அதிகமாக செலுத்துகிறீர்கள் - கடன் தொகையை விட அதிகம்! கடன் உகப்பாக்கம் என்பது இந்த வட்டிச் செலவைக் குறைத்து, விரைவாகக் கடன் இல்லாதவராக மாறுவதற்கான ஒரு மூலோபாயச் செயல்முறையாகும். இந்தக் கால்குலேட்டர் இந்தச் செயல்பாட்டில் உங்கள் முதன்மைக் கருவியாக வடிவமைக்கப்பட்டுள்ளது.</p>"
+    "h2": "Why Optimize Your Loan? The Hidden Cost of Interest",
+    "body": "<p>Taking a loan is often a necessary step towards achieving major life goals, like buying a home or a car. However, the total interest you pay over the loan's lifetime can be staggering. A â‚¹50 lakh home loan at 8.5% for 20 years means you pay over â‚¹55 lakh in interest aloneâ€”more than the loan amount itself! Loan optimization is the strategic process of minimizing this interest cost and becoming debt-free faster. This calculator is designed to be your primary tool in this process. Smart debt management through this optimizer, combined with our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a>, helps you achieve overall financial freedom.</p>"
   },
   "how_it_works": {
-    "h2": "இந்த கடன் உகப்பாக்கி எவ்வாறு செயல்படுகிறது",
-    "body": "<p>எங்கள் கால்குலேட்டர் முதலில் உங்கள் சமமான மாதாந்திரத் தவணையை (இஎம்ஐ) நிலையான சூத்திரத்தைப் பயன்படுத்தி தீர்மானிக்கிறது:</p><p><code>இஎம்ஐ = பி × ஆர் × (1 + ஆர்)^என் / ((1 + ஆர்)^என் - 1)</code></p><p>இங்கு பி என்பது அசல் கடன் தொகை, ஆர் என்பது மாதாந்திர வட்டி விகிதம், மற்றும் என் என்பது மாதாந்திரத் தவணைகளின் எண்ணிக்கை. இது பின்னர் ஒரு முழுமையான கடன் திருப்பிச் செலுத்தும் அட்டவணையை உருவாக்குகிறது, இது ஒவ்வொரு இஎம்ஐயும் அசல் மற்றும் வட்டிக்கு இடையில் எவ்வாறு பிரிக்கப்பட்டுள்ளது என்பதைக் காட்டுகிறது. நீங்கள் ஒரு முன்கூட்டியே செலுத்தும் தொகையைச் சேர்த்தால், கால்குலேட்டர் சேமிக்கப்பட்ட வட்டி மற்றும் காலக் குறைப்பில் நேரடித் தாக்கத்தைக் காட்ட அட்டவணையை மீண்டும் கணக்கிடுகிறது.</p>"
+    "h2": "How This Loan Optimizer Works",
+    "body": "<p>Our calculator first determines your Equated Monthly Instalment (EMI) using the standard formula:</p><p><code>EMI = P Ã— r Ã— (1 + r)^n / ((1 + r)^n â€“ 1)</code></p><p>Where P is the principal loan amount, r is the monthly interest rate, and n is the number of monthly instalments. It then generates a full amortization schedule, showing how each EMI is split between principal and interest. If you add a prepayment amount, the calculator re-computes the schedule to show you the direct impact on interest saved and tenure reduction.</p>"
   },
   "worked_examples": {
-    "h2": "செயல்படுத்தப்பட்ட எடுத்துக்காட்டுகள்: உண்மையான-உலகச் சூழ்நிலைகள்",
+    "h2": "Worked Examples: Real-World Scenarios",
     "scenario1": {
-      "title": "சூழல் 1: நிலையான வீட்டுக் கடன்",
-      "body": "<p><strong>உள்ளீடுகள்:</strong> கடன்: ₹40 லட்சம், விகிதம்: 8.75%, காலம்: 20 ஆண்டுகள், முன்கூட்டியே செலுத்துதல்: ₹0.</p><p><strong>முடிவு:</strong> இஎம்ஐ ₹35,338. 20 ஆண்டுகளில் செலுத்தப்பட்ட மொத்த வட்டி ₹44.81 லட்சம்.</p>"
+      "title": "Scenario 1: Standard Home Loan",
+      "body": "<p><strong>Inputs:</strong> Loan: â‚¹40 Lakh, Rate: 8.75%, Tenure: 20 years, Prepayment: â‚¹0.</p><p><strong>Result:</strong> EMI is â‚¹35,338. Total interest paid over 20 years is â‚¹44.81 Lakh.</p>"
     },
     "scenario2": {
-      "title": "சூழல் 2: ஒரு சிறிய முன்கூட்டியே செலுத்துதலின் சக்தி",
-      "body": "<p><strong>உள்ளீடுகள்:</strong> மேலே உள்ளதைப் போலவே, ஆனால் முதல் ஆண்டின் இறுதியில் <strong>₹2 லட்சம்</strong> ஒரு முறை முன்கூட்டியே செலுத்துதலுடன்.</p><p><strong>முடிவு:</strong> சேமிக்கப்பட்ட மொத்த வட்டி <strong>₹4.5 லட்சத்திற்கும்</strong> அதிகமாக உள்ளது மற்றும் கடன் <strong>25 மாதங்கள் முன்னதாகவே</strong> திருப்பிச் செலுத்தப்படுகிறது!</p>"
+      "title": "Scenario 2: The Power of a Small Prepayment",
+      "body": "<p><strong>Inputs:</strong> Same as above, but with a one-time prepayment of <strong>â‚¹2 Lakh</strong> at the end of the first year.</p><p><strong>Result:</strong> Total interest saved is over <strong>â‚¹4.5 Lakh</strong> and the loan is paid off <strong>25 months earlier!</strong></p>"
     },
     "scenario3": {
-      "title": "சூழல் 3: தீவிரமான முன்கூட்டியே செலுத்துதல்",
-      "body": "<p><strong>உள்ளீடுகள்:</strong> மேலே உள்ளதைப் போலவே, ஆனால் முதல் ஆண்டின் இறுதியில் <strong>₹5 லட்சம்</strong> ஒரு முறை முன்கூட்டியே செலுத்துதலுடன்.</p><p><strong>முடிவு:</strong> சேமிக்கப்பட்ட மொத்த வட்டி ஒரு பெரிய <strong>₹9.8 லட்சம்</strong> ஆக உள்ளது మరియు கடன் காலம் <strong>56 மாதங்கள் (4.6 ஆண்டுகள்)</strong> குறைக்கப்படுகிறது!</p>"
+      "title": "Scenario 3: Aggressive Prepayment",
+      "body": "<p><strong>Inputs:</strong> Same as above, but with a one-time prepayment of <strong>â‚¹5 Lakh</strong> at the end of the first year.</p><p><strong>Result:</strong> Total interest saved is a massive <strong>â‚¹9.8 Lakh</strong> and the loan tenure is reduced by <strong>56 months (4.6 years)!</strong></p>"
     }
   },
   "optimization_masterclass": {
-    "h2": "கடன் உகப்பாக்க மாஸ்டர்கிளாஸ்: முக்கிய உத்திகள்",
-    "body": "<ul><li><strong>வழக்கமான முன்கூட்டியே செலுத்துதல்கள்:</strong> சிறிய, வழக்கமான முன்கூட்டியே செலுத்துதல்கள் கூட ஒரு பெரிய தாக்கத்தை ஏற்படுத்தக்கூடும். உங்கள் சம்பள உயர்வுக்கு ஏற்ப ஒவ்வொரு ஆண்டும் உங்கள் இஎம்ஐயை 5-10% அதிகரிக்கும் 'ஸ்டெப்-அப்' உத்தியைக் கவனியுங்கள்.</li><li><strong>ஒரு முறை வரும் பணம்:</strong> போனஸ்கள், பரம்பரைச் சொத்துக்கள், அல்லது பிற மொத்தத் தொகைகளைப் பயன்படுத்தி குறிப்பிடத்தக்க முன்கூட்டியே செலுத்துதல்களைச் செய்யுங்கள். கடன் காலத்தில் இதை எவ்வளவு சீக்கிரம் செய்கிறீர்களோ, అంత ఎక్కువ ప్రభావం ఉంటుంది.</li><li><strong>மறுநிதியளித்தல் (இருப்பு மாற்றம்):</strong> ఇతర రుణదాతలు கணிசமாக తక్కువ వడ్డీ రేటును (కనీసం 0.5% నుండి 1% తక్కువ) అందిస్తున్నట్లయితే, మీ రుణాన్ని పునఃఫైనాన్స్ చేయడాన్ని పరిగణించండి. ஒரு సమాచారంతో కూడిన నిర్ణయం తీసుకోవడానికి ఖర్చులు (ప్రాసెసింగ్ ఫీజులు, చట్టపరమైన ఛార్జీలు) వర్సెస్ సేవ్ చేసిన వడ్డీని கணக்கிடండి.</li></ul>"
+    "h2": "Loan Optimization Masterclass: Key Strategies",
+    "body": "<ul><li><strong>Regular Prepayments:</strong> Even small, regular prepayments can have a huge impact. Consider a 'step-up' strategy where you increase your EMI by 5-10% each year in line with your salary hike.</li><li><strong>One-Time Windfalls:</strong> Use bonuses, inheritances, or other lump-sum amounts to make significant prepayments. The earlier in the loan tenure you do this, the greater the impact.</li><li><strong>Refinancing (Balance Transfer):</strong> If other lenders are offering a significantly lower interest rate (at least 0.5% to 1% lower), consider refinancing your loan. Calculate the costs (processing fees, legal charges) versus the interest saved to make an informed decision.</li></ul>"
   },
   "prepay_vs_invest": {
-    "h2": "பெரிய கேள்வி: கடனை முன்கூட்டியே செலுத்துவதா அல்லது உபரியை முதலீடு செய்வதா?",
-    "body": "<p>இது ஒரு கிளாசிக் நிதி இக்கட்டு. பதில் உங்கள் இடர் பசி మరియు எண்களைப் பொறுத்தது. గణిత నియమం: <strong>మీ పెట్టుబడిపై పన్ను-తర్వాత రాబడి మీ రుణ వడ్డీ రేటు కంటే ఎక్కువగా ఉంటే, మీరు పెట్టుబడి పెట్టాలి. లేకపోతే, రుణాన్ని ముందుగా చెల్లించండి.</strong></p><p><strong>உதாரணம்:</strong> உங்கள் வீட்டுக் கடன் 8.5% ஆக உள்ளது. పన్నుల తర్వాత స్థిరంగా మరియు సురక్షితంగా 8.5% కంటే ఎక్కువ రాబడినిచ్చే పెట్టుబడిని మీరు కనుగొనగలరా? 7% ఇచ్చే ఫిక్స్‌డ్ డిపాజిట్ (ఇది పన్ను-తర్వాత ~4.9%) ఒక మంచి ఎంపిక కాదు. ஒரு ఈక్విటీ మ్యూచువల్ ఫండ్ SIP 12% రాబడిని ఇవ్వగలదు, కానీ అది మార్కెట్ రిస్క్‌తో వస్తుంది. ஒரு రుణాన్ని ముందుగా చెల్లించడం మీ వడ్డీ రేటుకు సమానమైన ఒక హామీ, రిస్క్-లేని 'రాబడి'ని అందిస్తుంది. எங்கள் <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>மியூச்சுவல் ஃபண்ட் ஸ்கிரீனரைப்</a> பயன்படுத்தி விருப்பங்களை ஆராயுங்கள்.</p>"
+    "h2": "The Big Question: Prepay the Loan or Invest the Surplus?",
+    "body": "<p>This is a classic financial dilemma. The answer depends on your risk appetite and the numbers. The mathematical rule is: <strong>If the post-tax return on your investment is higher than your loan interest rate, you should invest. If not, prepay the loan.</strong></p><p><strong>Example:</strong> Your home loan is at 8.5%. Can you find an investment that consistently and safely delivers more than 8.5% after taxes? A <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>fixed deposit or PPF</a> giving 7% (which is ~4.9% post-tax) is not a good option. An <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>equity mutual fund</a> SIP might give 12% returns, but it comes with market risk. Prepaying a loan offers a guaranteed, risk-free 'return' equal to your interest rate. Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to determine your post-tax returns and optimize your decision.</p>"
   },
   "comparison_table": {
-    "title": "முன்கூட்டியே செலுத்துதல் மற்றும் முதலீடு: முடிவு மேட்ரிக்ஸ்",
-    "headers": ["காரணி", "கடனை முன்கூட்டியே செலுத்து", "உபரியை முதலீடு செய்"],
+    "title": "Prepay vs. Invest: Decision Matrix",
+    "headers": ["Factor", "Prepay Loan", "Invest Surplus"],
     "rows": [
-      ["வருமானம்", "உத்தரவாதம் மற்றும் இடர் இல்லாதது (கடன் விகிதத்திற்கு சமம்)", "சந்தையோடு இணைக்கப்பட்டது மற்றும் மாறக்கூடியது"],
-      ["உளவியல் நன்மை", "உயர்ந்தது (மன அமைதி, விரைவில் கடன் இல்லாதவர்)", "குறைந்தது (சந்தை अस्थिरత ఒత్తిడికి కారణమవుతుంది)"],
-      ["நீர்மைத்தன்மை", "குறைந்தது (பணம் ఆస్తిలో లాక్ చేయబడింది)", "உயர்ந்தது (పెట్టుబడులను திரవமாக்கవచ్చు)"],
-      ["வரி நன்மை", "ముందుగా చెల్లించడంపై ఏమీ లేదు (కానీ మీరు ముందుగా చెల్లించకపోతే మీరు 80C వడ్డీ మినహాయింపును ఎక్కువ కాలం నిలుపుకుంటారు)", "సాధనాన్ని బట్టి ఉంటుంది (ఈక్విటీపై ఎల్‌టిసిజి, మొదలైనవి)"]
+      ["Return", "Guaranteed & Risk-Free (equal to loan rate)", "Market-linked & Variable (<a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual funds</a>, <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FDs/PPF</a>, etc.)"],
+      ["Psychological Benefit", "High (peace of mind, debt-free sooner)", "Lower (market volatility can cause stress)"],
+      ["Liquidity", "Low (money is locked in the asset)", "High (investments can be liquidated quickly)"],
+      ["Tax Benefit", "80C interest deduction available (Section 24b for self-occupied property) - use <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax calculator</a>", "Depends on instrument (LTCG on equity, tax-free growth in <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a>, etc.)"]
     ]
   },
   "refinance": {
-    "h2": "நீங்கள் எப்போது மறுநிதியளிக்க வேண்டும் (இருப்பு மாற்றம்)?",
-    "body": "<p>இந்த நிபந்தனைகளின் கீழ் மறுநிதியளிப்பது அர்த்தமுள்ளதாக இருக்கிறது:</p><ul><li><strong>குறிப்பிடத்தக்க விகித வேறுபாடு:</strong> கட்டணங்களைக் கணக்கில் கொண்ட பிறகு மாறுதல் பயனுள்ளதாக இருக்க, புதிய రుణదాతவின் விகிதம் உங்கள் தற்போதைய விகிதத்தை விட குறைந்தது 0.50% - 1% குறைவாக இருக்க வேண்டும்.</li><li><strong>கடன் காலத்தின் ஆரம்பத்தில்:</strong> ஆரம்ப ஆண்டுகளில் உங்கள் இஎம்ஐயின் பெரும்பகுதி வட்டிக்குச் செல்கிறது. ஆரம்பத்தில் மறுநிதியளிப்பது உங்கள் சேமிப்பை அதிகரிக்கிறது. உங்கள் கடனின் கடைசி 2-3 ஆண்டுகளில் மறுநிதியளிப்பது சிறிதளவு அர்த்தமுள்ளதாக இல்லை.</li><li><strong>நல்ல கடன் மதிப்பெண்:</strong> ஒரு புதிய రుణదాతவிடமிருந்து சிறந்த விகிதங்களைப் பெற ஒரு உயர் கடன் மதிப்பெண் (750+) அவசியம்.</li></ul>"
+    "h2": "When Should You Refinance (Balance Transfer)?",
+    "body": "<p>Refinancing makes sense under these conditions:</p><ul><li><strong>Significant Rate Difference:</strong> The new lender's rate should be at least 0.50% - 1% lower than your current rate to make the switch worthwhile after accounting for fees.</li><li><strong>Early in Loan Tenure:</strong> Most of your EMI in the initial years goes towards interest. Refinancing early maximizes your savings. It makes little sense to refinance in the last 2-3 years of your loan.</li><li><strong>Good Credit Score:</strong> A high credit score (750+) is essential to get the best rates from a new lender.</li></ul>"
   },
   "tax_notes": {
-    "h2": "முக்கியமான வரிக் கருத்தாய்வுகள்",
-    "body": "<p>ஒரு வீட்டுக் கடனுக்கு, அசல் திருப்பிச் செலுத்துதல் பிரிவு 80C இன் கீழ் (₹1.5 லட்சம் வரை) கழிவுக்குத் தகுதியானது மற்றும் செலுத்தப்பட்ட வட்டி பிரிவு 24(பி) இன் கீழ் (சுய-குடியிருப்புச் சொத்துக்கு ₹2 லட்சம் வரை) கழிவுக்குத் தகுதியானது. உங்கள் கடனை முன்கூட்டியே செலுத்துவது நிதி ரீதியாக விவேகமானது என்றாலும், அதை மிக விரைவாகச் செலுத்துவது என்பது நீங்கள் இனி முழு அசல் காலத்திற்கும் இந்தக் வரி நன்மைகளைக் கோர முடியாது என்பதை அறிந்து கொள்ளுங்கள். உங்கள் முடிவில் இதை எப்போதும் காரணியாகக் கொள்ளுங்கள். எங்கள் <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>பழைய மற்றும் புதிய வரி ஆட்சி கால்குலேட்டரைப்</a> பயன்படுத்தி இது உங்கள் முடிவை எவ்வாறு பாதிக்கிறது என்பதைப் பார்க்கவும்.</p>"
+    "h2": "Important Tax Considerations",
+    "body": "<p>For a home loan, the principal repayment is eligible for deduction under Section 80C (up to â‚¹1.5 lakh) and the interest paid is eligible for deduction under Section 24(b) (up to â‚¹2 lakh for a self-occupied property). While prepaying your loan is financially prudent, be aware that paying it off too quickly means you can no longer claim these tax benefits for the full original tenure. Always factor this into your decision. Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to compare your tax situations under different prepayment scenarios and explore alternatives like <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a>, <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a>, or <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>APY</a> for tax-efficient retirement planning.</p>"
   },
   "faq": {
-    "h2": "அடிக்கடி கேட்கப்படும் கேள்விகள்",
+    "h2": "Frequently Asked Questions",
     "faqs": [
       {
-        "q": "இஎம்ஐ மற்றும் முன்கூட்டியே செலுத்துதல் ஆகியவற்றுக்கு என்ன வித்தியாసం?",
-        "a": "இஎம்ஐ என்பது உங்கள் வழக்கமான மாதாந்திர చెల్లింపు, ఇది అసలు మరియు వడ్డీ రెండింటినీ కవర్ చేస్తుంది. ஒரு முன்செலுத்துதல் என்பது நீங்கள் అసలు మొత్తానికి చేసే ఒక అదనపు, అదనపు చెల్లింపు, ఇది మీ ఇఎంఐకి పైన మరియు మించి ఉంటుంది."
+        "q": "What is the difference between EMI and Prepayment?",
+        "a": "EMI is your regular monthly payment that covers both principal and interest. A prepayment is an additional, extra payment you make towards the principal amount, which is over and above your EMI."
       },
       {
-        "q": "வீட்டுக் கடனை முன்கூட்டியே செலுத்த தனிநபர் கடன் எடுப்பது அர்த்தமுள்ளதா?",
-        "a": "దాదాపు ఎప్పుడూ కాదు. వ్యక్తిగత రుణాలకు గృహ రుణాలతో (8-10%) పోలిస్తే చాలా ఎక్కువ వడ్డీ రేట్లు (11-18%) ఉంటాయి. మీరు తక్కువ-వడ్డీ రుణాన్ని మూసివేయడానికి అధిక వడ్డీని చెల్లిస్తుంటారు, ఇది ఆర్థికంగా హానికరం."
+        "q": "Does it make sense to take a personal loan to prepay a home loan?",
+        "a": "Almost never. Personal loans have much higher interest rates (11-18%) compared to home loans (8-10%). You would be paying a higher interest to close a lower-interest loan, which is financially detrimental."
       },
       {
-        "q": "கடன் செலுத்தும் அட்டவணை என்றால் என்ன?",
-        "a": "ఇది ఒక వివరణాత్మక పట్టిక, ఇది రుణத்தின் మొత్తం వ్యవధికి దాని అసలు మరియు వడ్డీ భాగాలలో ప్రతి ఇఎంఐ యొక్క విచ్ఛిన్నతను చూపుతుంది. మా కాలిక్యులేటర్ మీ కోసం దీన్ని ఉత్పత్తి చేస్తుంది, మరియు మీరు దాన్ని ఒక సిఎస్‌విగా డౌన్‌లోడ్ చేసుకోవచ్చు."
+        "q": "What is a loan amortization schedule?",
+        "a": "It's a detailed table that shows the breakdown of each EMI into its principal and interest components for the entire duration of the loan. Our calculator generates this for you, and you can download it as a CSV."
       },
       {
-        "q": "முன்கூட்டியே செலுத்திய பிறகு நான் எனது இஎம்ஐயைக் குறைக்க வேண்டுமா அல்லது எனது காலத்தைக் குறைக்க வேண்டுமா?",
-        "a": "మీ వడ్డీ పొదుపును పెంచుకోవడానికి, ఎల్లప్పుడూ <strong>కాలాన్ని తగ్గించడం</strong> ఎంచుకోండి. ఇఎంఐని తగ్గించడం వల్ల రుణం అసలు వ్యవధికి చురుకుగా ఉంటుంది, దీని అర్థం మీరు ఎక్కువ కాలం వడ్డీని చెల్లించడం కొనసాగిస్తారు, ఇది ముందస్తు చెల్లింపు ప్రయోజనాన్ని చాలా వరకు తిరస్కరిస్తుంది."
+        "q": "Should I choose to reduce my EMI or my tenure after prepayment?",
+        "a": "To maximize your interest savings, always choose to <strong>reduce the tenure</strong>. Reducing the EMI keeps the loan active for the original duration, which means you continue to pay interest for longer, negating much of the prepayment benefit. Use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to plan for early debt freedom."
+      },
+      {
+        "q": "How do I decide between prepaying my loan and investing for retirement?",
+        "a": "Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to determine your post-tax investment returns. Compare with your loan interest rate. For long-term retirement planning, also explore <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a>, <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>APY</a>, and <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a> for tax-efficient savings, and use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to determine your total needs."
+      },
+      {
+        "q": "What are the best investments if I decide to invest instead of prepay?",
+        "a": "Use our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> to find equity options, compare with <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF</a> for fixed-income alternatives, and check <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>fund overlaps</a> to build a diversified portfolio. Optimize your tax strategy with our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a>."
       }
     ]
   },
-  "related_tools": {
-    "h2": "மேலும் படிக்க: தொடர்புடைய கருவிகள் மற்றும் வழிகாட்டிகள்",
-    "links": [
-      { "href": "/tax-regime-calculator", "title": "பழைய மற்றும் புதிய வரி ஆட்சி கால்குலேட்டர்", "description": "உங்கள் கடன் விலக்குகள் பழைய ஆட்சியை உங்களுக்கு சிறந்ததாக ஆக்குகிறதா என்று பாருங்கள்." },
-      { "href": "/retirement-corpus-calculator", "title": "ஓய்வூதிய கார்பஸ் கால்குலேட்டர்", "description": "விரைவாக கடன் இல்லாதவராக மாறுவது உங்கள் ஓய்வூதிய இலக்குகளை எவ்வாறு பாதிக்கிறது என்பதைத் திட்டமிடுங்கள்." },
-      { "href": "/ppf-calculator", "title": "பிபிஎஃப் கால்குலேட்டர்", "description": "உங்கள் கடனின் வட்டி விகிதத்திற்கு எதிராக ஆபத்து இல்லாத பிபிஎஃப் வருமானத்தை ஒப்பிடுக." }
-    ]
-  },
   "conclusion": {
-    "title": "உங்கள் கடனைக் கட்டுப்படுத்துங்கள்",
-    "body": "கடன் இல்லாதவராக மாறுவது நிதி சுதந்திரத்திற்கான பாதையில் ஒரு முக்கிய மைல்கல். உங்கள் கடன்களை தந்திரோபாயமாக முன்கூட்டியே செலுத்த அல்லது மறுநிதியளிக்க இந்த உகப்பாக்கியைப் பயன்படுத்துவதன் மூலம், நீங்கள் வட்டியில் லட்சங்களைச் சேமிக்கலாம் மற்றும் நிதி சுதந்திரத்திற்கான உங்கள் பயணத்தை கணிசமாகக் குறைக்கலாம். எண்களுடன் விளையாடி, உங்களுக்குச் சிறப்பாகச் செயல்படும் உத்தியைக் கண்டறியவும்."
+    "title": "Take Control of Your Debt",
+    "body": "Becoming debt-free is a key milestone on the path to financial independence. By using this optimizer to strategically prepay or refinance your loans, you can save lakhs in interest and significantly shorten your journey to financial freedom. Play with the numbers and find the strategy that works best for you.<br><br><strong>Comprehensive Financial Planning:</strong> Combine debt optimization with our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to plan your complete financial future. Explore investment options with our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a>, <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a>, and compare returns using our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a>. Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to optimize your overall tax situation.<br><br><strong>Retirement & Income Planning:</strong> For long-term financial security, explore <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a>, <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>APY</a>, <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>SSY</a>, and <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a> for tax-efficient retirement savings. Also explore LIC insurance plans like <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a>, <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a>, and <a href='/{lang}/lic-jeevan-umang-calculator' class='text-primary hover:underline'>Jeevan Umang calculator</a> for life coverage combined with savings."
   }
 }
-
-    

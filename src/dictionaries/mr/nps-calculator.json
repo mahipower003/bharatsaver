@@ -1,123 +1,125 @@
-
+﻿
 {
-  "meta_title": "एनपीएस कॅल्क्युलेटर 2025 — राष्ट्रीय पेन्शन प्रणाली कॉर्पस आणि पेन्शन",
-  "meta_description": "तुमच्या निवृत्तीची योजना आखण्यासाठी आमचे एनपीएस कॅल्क्युलेटर वापरा. कॉर्पस आणि मासिक पेन्शन अंदाज मिळवण्यासाठी योगदान, अपेक्षित परतावा आणि निवृत्तीचे वय प्रविष्ट करा.",
-  "h1": "एनपीएस कॅल्क्युलेटर 2025 — राष्ट्रीय पेन्शन प्रणाली कॉर्पस आणि पेन्शन",
-  "description": "तुमच्या निवृत्ती कॉर्पस, मासिक पेन्शन, आणि भारतातील कर लाभांचा अंदाज लावण्यासाठी आमचे मोफत <a href=\"https://www.pfrda.org.in/\" target=\"_blank\" rel=\"noopener noreferrer\">राष्ट्रीय पेन्शन प्रणाली (एनपीएस)</a> कॅल्क्युलेटर वापरा. सुरक्षित निवृत्तीसाठी योजना आखा.",
-  "last_updated": "दर अद्यतनित केले:",
-  "title": "राष्ट्रीय पेन्शन प्रणाली (एनपीएस) कॅल्क्युलेटर",
-  "form_description": "तुमचे एनपीएस कॉर्पస్ आणि पेन्शनचा अंदाज घेण्यासाठी तुमचे गुंतवणूक तपशील प्रविष्ट करा.",
-  "contribution_mode": "योगदान मोड",
-  "monthly_mode": "मासिक",
-  "yearly_mode": "वार्षिक",
-  "monthly_contribution_label": "मासिक योगदान",
-  "yearly_contribution_label": "वार्षिक योगदान",
-  "current_age_label": "तुमचे सध्याचे वय",
-  "retirement_age_label": "निवृत्तीचे वय",
-  "expected_returns_label": "अपेक्षित परतावा (% प्रति वर्ष)",
-  "annuity_percentage_label": "अॅन्युइटी खरेदी टक्केवारी",
-  "annuity_percentage_description": "किमान 40% रक्कम पेन्शन देणाऱ्या अॅन्युइटी खरेदीसाठी वापरली पाहिजे.",
-  "annuity_rate_label": "अॅन्युइटी दर (% प्रति वर्ष)",
-  "annuity_rate_description": "अॅन्युइटी ज्या दराने पेन्शन देईल तो गृहीत दर.",
-  "calculate_button": "एनपीएस कॉर्पస్ची गणना करा",
-  "loading": "गणना होत आहे...",
-  "results_title": "तुमचे एनपीएस प्रक्षेपण",
-  "total_corpus": "निवृत्तीवेळी एकूण कॉर्पస్",
-  "monthly_pension": "अपेक्षित मासिक पेन्शन",
-  "total_investment": "एकूण गुंतवणूक",
-  "total_interest": "एकूण मिळवलेले व्याज",
-  "lump_sum_value": "कर-मुक्त एकरकमी काढणे",
-  "annuity_value": "अॅन्युइटीसाठी रक्कम",
-  "view_chart": "चार्ट",
-  "view_table": "तक्ता",
-  "age_label": "वय",
-  "amount_in_lakhs": "रक्कम (लाखात)",
-  "export_csv": "CSV निर्यात करा",
-  "table_year": "वर्ष",
-  "table_age": "वय",
-  "table_opening_balance": "सुरुवातीची शिल्लक",
-  "table_amount_invested": "गुंतवलेली रक्कम",
-  "table_interest_earned": "मिळालेले व्याज",
-  "table_closing_balance": "अंतिम शिल्लक",
-  "what_is_nps": {
-    "title": "राष्ट्रीय पेन्शन प्रणाली (एनपीएस) काय आहे?",
-    "body": "राष्ट्रीय पेन्शन प्रणाली (एनपीएस) ही एक ऐच्छिक, परिभाषित योगदान सेवानिवૃत्ती बचत योजना आहे जी सदस्यांना त्यांच्या भविष्यासाठी योग्य निर्णय घेण्यास सक्षम करण्यासाठी डिझाइन केली आहे. ती पेन्शन फंड नियामक आणि विकास प्राधिकरण (पीएफआरडीए) द्वारे नियमित केली जाते.",
-    "points": [
-      {"title": "टियर-I खाते", "body": "कर लाभांसह एक अनिवार्य सेवानिवૃत्ती खाते. 60 वर्षांपर्यंत पैसे काढण्यावर निर्बंध आहेत."},
-      {"title": "टियर-II खाते", "body": "एक पर्यायी, ऐच्छिक बचत खाते ज्यावर कोणतेही काढण्याचे निर्बंध नाहीत. गुंतवणुकीवर कर लाभ देत नाही."}
-    ],
-    "footer": "तुमचे योगदान तुमच्या आवडीनुसार मालमत्ता (इक्विटी, कॉर्पोरेट बॉण्ड्स, सरकारी रोखे) च्या मिश्रणात गुंतवले जाते."
-  },
-  "how_it_works": {
-    "title": "एनपीएस कॅल्क्युलेटर कसे कार्य करते",
-    "formula_title": "चक्रवाढ सूत्र",
-    "annual": {"title": "वार्षिक गुंतवणुकीसाठी", "formula": "A = P * [((1+r)^n - 1) / r]"},
-    "monthly": {"title": "मासिक गुंतवणुकीसाठी", "formula": "A = P * [((1+r)^n - 1) / r] * (1+r)"}
-  },
-  "example": {
-    "title": "उदाहरण गणना",
-    "intro": "समजा एक <strong>30-वर्षीय</strong> व्यक्ती <strong>₹6,000</strong> चा मासिक एनपीएस योगदान सुरू करतो. येथे एक विवरण आहे:",
-    "assumptions": [
-      "निवૃत्तीचे वय: 60 वर्षे",
-      "अपेक्षित परतावा: 9% प्रति वर्ष",
-      "अॅन्युइटी खरेदी: 40%",
-      "अॅन्युइटी दर: 6% प्रति वर्ष"
-    ],
-    "calculation_steps": "<h4>गणना:</h4><p>30 वर्षांत, एकूण गुंतवलेली रक्कम ₹21,60,000 आहे. 9% परताव्याने, चक्रवाढीची जादू याला एका मोठ्या कॉर्पస్मध्ये वाढवते.</p>",
-    "result": "60 व्या वर्षी एकूण कॉर्पస్ अंदाजे <strong>₹1.14 कोटी</strong> असेल.",
-    "annuity_intro": "या कॉर्पస్मधून, 40% (₹45.58 लाख) रक्कम अॅन्युइटी खरेदी करण्यासाठी वापरली पाहिजे. उर्वरित 60% (₹68.37 लाख) कर-मुक्त एकरकमी काढता येते.",
-    "annuity_result": "अॅन्युइटीचा भाग नंतर अंदाजे मासिक पेन्शन <strong>₹22,790</strong> निर्माण करेल.",
-    "disclaimer": "हे एक उदाहरणात्मक उदाहरण आहे. वास्तविक परताव्याची हमी नाही आणि ते बाजाराच्या कामगिरीवर अवलंबून असते."
-  },
-  "tax_benefits": {
-    "title": "एनपीएसचे कर लाभ",
-    "intro": "एनपीएस महत्त्वपूर्ण कर फायदे देते, ज्यामुळे ते एक आकर्षक सेवानिवૃत्ती नियोजन साधन बनते:",
-    "points": [
-      "<strong>कलम 80CCD(1):</strong> ₹1.5 लाखांपर्यंतची वजावट (80C मर्यादेचा भाग).",
-      "<strong>कलम 80CCD(1B):</strong> ₹50,000 पर्यंतची अतिरिक्त वजावट, 80C मर्यादेच्या वर.",
-      "<strong>कलम 80CCD(2):</strong> नियोक्ताच्या योगदानावर वजावट (मूळ + डीए च्या 10% पर्यंत).",
-      "<strong>काढणे:</strong> सेवानिवૃत्तीच्या वेळी काढलेल्या कॉर्पస్पैकी 60% कर-मुक्त आहे."
-    ]
-  },
-  "rules": {
-    "title": "एनपीएस टियर्स आणि काढण्याचे नियम",
-    "intro": "एनपीएसमध्ये दोन प्रकारचे खाते आहेत:",
-    "tier1": {
-      "title": "टियर-I (सेवानिवૃत्ती खाते)",
-      "points": ["अनिवार्य खाते", "कर लाभ लागू होतात", "काढण्याचे निर्बंध"]
+    "meta_title": "NPS Calculator 2025 â€” National Pension System Corpus & Pension",
+    "meta_description": "Use our NPS calculator to plan your retirement. Enter contribution, expected returns and retirement age to get corpus & monthly pension estimates.",
+    "h1": "NPS Calculator 2025 â€” National Pension System Corpus & Pension",
+    "description": "Use our free <a href=\"https://www.pfrda.org.in/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline\">National Pension System (NPS)</a> Calculator to estimate your retirement corpus, monthly pension, and tax benefits in India. Plan for a secure retirement.",
+    "last_updated": "Rates updated:",
+    "title": "National Pension System (NPS) Calculator",
+    "form_description": "Enter your investment details to project your NPS corpus and pension.",
+    "contribution_mode": "Contribution Mode",
+    "monthly_mode": "Monthly",
+    "yearly_mode": "Yearly",
+    "monthly_contribution_label": "Monthly Contribution",
+    "yearly_contribution_label": "Yearly Contribution",
+    "current_age_label": "Your Current Age",
+    "retirement_age_label": "Retirement Age",
+    "expected_returns_label": "Expected Returns (% p.a.)",
+    "annuity_percentage_label": "Annuity Purchase Percentage",
+    "annuity_percentage_description": "Min. 40% must be used to buy an annuity, which provides the pension.",
+    "annuity_rate_label": "Annuity Rate (% p.a.)",
+    "annuity_rate_description": "Assumed rate at which the annuity provides pension.",
+    "calculate_button": "Calculate NPS Corpus",
+    "loading": "Calculating...",
+    "results_title": "Your NPS Projection",
+    "total_corpus": "Total Corpus at Retirement",
+    "monthly_pension": "Expected Monthly Pension",
+    "total_investment": "Total Investment",
+    "total_interest": "Total Interest Earned",
+    "lump_sum_value": "Tax-Free Lump Sum Withdrawal",
+    "annuity_value": "Amount for Annuity",
+    "view_chart": "Chart",
+    "view_table": "Table",
+    "age_label": "Age",
+    "amount_in_lakhs": "Amount (in Lakhs)",
+    "export_csv": "Export CSV",
+    "table_year": "Year",
+    "table_age": "Age",
+    "table_opening_balance": "Opening Balance",
+    "table_amount_invested": "Amount Invested",
+    "table_interest_earned": "Interest Earned",
+    "table_closing_balance": "Closing Balance",
+    "what_is_nps": {
+        "title": "What is the National Pension System (NPS)?",
+        "body": "The National Pension System (NPS) is a voluntary, defined contribution retirement savings scheme designed to enable subscribers to make optimum decisions for their future. It's regulated by the Pension Fund Regulatory and Development Authority (PFRDA). For comprehensive retirement planning, combine NPS with other schemes like <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a>, <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>SSY</a>, and <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>APY</a>. Use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to determine your total retirement needs.",
+        "points": [
+          {"title": "Tier-I Account", "body": "A mandatory retirement account with tax benefits. Withdrawals are restricted until age 60."},
+          {"title": "Tier-II Account", "body": "An optional, voluntary savings account with no withdrawal restrictions. Does not offer tax benefits on investment."}
+        ],
+        "footer": "Your contributions are invested in a mix of assets (equity, corporate bonds, government securities) based on your choice."
     },
-    "tier2": {
-      "title": "टियर-II (गुंतवणूक खाते)",
-      "points": ["ऐच्छिक खाते", "गुंतवणुकीवर कर लाभ नाहीत", "काढण्याचे निर्बंध नाहीत"]
+    "how_it_works": {
+        "title": "How the NPS Calculator Works",
+        "formula_title": "The Compounding Formula",
+        "annual": {"title": "For Annual Investment", "formula": "A = P * [((1+r)^n - 1) / r]"},
+        "monthly": {"title": "For Monthly Investment", "formula": "A = P * [((1+r)^n - 1) / r] * (1+r)"}
     },
-    "withdrawal": {
-      "title": "सेवानिवृत्तीच्या वेळी काढणे (वय 60)",
-      "body": "60 व्या वर्षी, तुम्ही कॉर्पస్पैकी 60% पर्यंत कर-मुक्त एकरकमी काढू शकता. किमान 40% रक्कम अॅन्युइटी खरेदी करण्यासाठी वापरली पाहिजे, जी मासिक पेन्షన్ देईल."
+    "example": {
+        "title": "Example Calculation",
+        "intro": "Let's say a <strong>30-year-old</strong> starts a monthly NPS contribution of <strong>â‚¹6,000</strong>. Here's a breakdown:",
+        "assumptions": [
+            "Retirement Age: 60 years",
+            "Expected Returns: 9% p.a.",
+            "Annuity Purchase: 40%",
+            "Annuity Rate: 6% p.a."
+        ],
+        "calculation_steps": "<h4>Calculation:</h4><p>Over 30 years, the total invested amount is â‚¹21,60,000. With a 9% return, the magic of compounding grows this into a substantial corpus.</p>",
+        "result": "The total corpus at age 60 will be approximately <strong>â‚¹1.14 Crores</strong>.",
+        "annuity_intro": "From this corpus, 40% (â‚¹45.58 Lakhs) must be used to purchase an annuity. The remaining 60% (â‚¹68.37 Lakhs) can be withdrawn as a tax-free lump sum.",
+        "annuity_result": "The annuity portion will then generate an estimated monthly pension of <strong>â‚¹22,790</strong>.",
+        "disclaimer": "This is an illustrative example. Actual returns are not guaranteed and depend on market performance."
+    },
+    "tax_benefits": {
+        "title": "Tax Benefits of NPS",
+        "intro": "NPS offers significant tax advantages, making it an attractive retirement planning tool. Understand how to optimize your tax position using our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to compare NPS benefits with other investments.",
+        "points": [
+            "<strong>Section 80CCD(1):</strong> Deduction up to â‚¹1.5 lakh (part of 80C limit). Compare with <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a> and <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF</a> tax benefits.",
+            "<strong>Section 80CCD(1B):</strong> Additional deduction of up to â‚¹50,000, over and above the 80C limit.",
+            "<strong>Section 80CCD(2):</strong> Deduction on employer's contribution (up to 10% of basic + DA). Plan with our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a>.",
+            "<strong>Withdrawal:</strong> 60% of the corpus withdrawn at retirement is tax-free. Use <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to plan post-retirement taxes."
+        ]
+    },
+    "rules": {
+        "title": "NPS Tiers & Withdrawal Rules",
+        "intro": "NPS has two account types:",
+        "tier1": {
+            "title": "Tier-I (Retirement Account)",
+            "points": ["Mandatory account", "Tax benefits apply", "Withdrawal restrictions"]
+        },
+        "tier2": {
+            "title": "Tier-II (Investment Account)",
+            "points": ["Voluntary account", "No tax benefits on investment", "No withdrawal restrictions"]
+        },
+        "withdrawal": {
+            "title": "Withdrawal at Retirement (Age 60)",
+            "body": "At age 60, you can withdraw up to 60% of the corpus as a tax-free lump sum. A minimum of 40% must be used to purchase an annuity, which will provide a monthly pension."
+        }
+    },
+    "comparison": {
+        "title": "NPS vs. Other Investment Options",
+        "table": {
+            "headers": ["Feature", "NPS", "PPF", "ELSS"],
+            "rows": [
+                ["Risk", "Market-linked (Low to High)", "Sovereign (Nil)", "High"],
+                ["Returns", "Market-driven (avg. 8-12%)", "Govt. set (7.1%)", "Market-driven"],
+                ["Tax on Maturity", "60% Tax-Free", "Tax-Free", "Tax-Free (LTCG > â‚¹1L is taxed)"],
+                ["Lock-in", "Till 60", "15 years", "3 years"],
+                ["80C Deduction", "Yes", "Yes", "Yes"],
+                ["Extra Deduction", "Yes (80CCD1B)", "No", "No"]
+            ]
+        },
+        "footer_note": "To choose between NPS and PPF, consider your risk appetite and return expectations. Use our <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF Calculator</a> for comparison. Explore other options: <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF</a>, <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>APY</a>, <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>SSY</a>, and <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC insurance plans</a>."
+    },
+    "faq_title": "Frequently Asked Questions",
+    "faqs": [
+        {"question": "Can I withdraw from my NPS Tier-I account before age 60?", "answer": "Partial withdrawal (up to 25% of your contribution) is allowed for specific purposes like higher education, medical emergencies, or home purchase, after 3 years of opening the account. Use <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> to manage emergency expenses efficiently."},
+        {"question": "What is an annuity?", "answer": "An annuity is a financial product that provides a regular income (pension) in exchange for a lump-sum investment. In NPS, you must use at least 40% of your corpus to buy an annuity from an IRDAI-registered insurance company. Compare with <a href='/{lang}/lic-jeevan-umang-calculator' class='text-primary hover:underline'>LIC Jeevan Umang</a> and other <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC insurance plans</a> for lifetime income."},
+        {"question": "Can I choose how my NPS money is invested?", "answer": "Yes, NPS offers 'Active Choice' where you can decide the asset allocation mix between equity, corporate bonds, and government securities. Alternatively, you can opt for 'Auto Choice', which automatically rebalances your portfolio based on your age. Use our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> to understand equity options."},
+        {"question": "How does NPS compare to other retirement savings options?", "answer": "NPS offers market-linked returns with tax benefits, but compare with <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a> (sovereign security), <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF</a>, <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>APY</a>, <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>SSY</a>, and mutual funds via <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a>. Use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to build a balanced portfolio."},
+        {"question": "Should I invest in NPS or mutual funds?", "answer": "NPS provides discipline and tax benefits with pension at retirement, while mutual funds offer liquidity. The best approach combines both. Use our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> to find diversified funds, check overlap with <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a>, and plan comprehensively with our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a>."}
+    ],
+    "conclusion": {
+        "title": "Plan Your Retirement with Confidence",
+        "body": "NPS is a powerful, long-term tool for disciplined retirement savings. Its combination of market-linked growth, tax benefits, and a structured pension makes it an essential part of a modern financial plan.<br><br><strong>Build Your Complete Retirement Strategy:</strong> Start with our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to determine your total needs, then allocate across NPS, <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a>, and mutual funds via <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a>. Check <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>fund overlap</a> to avoid concentration.<br><br><strong>Tax Optimization:</strong> Maximize your <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime</a> benefits by understanding 80CCD deductions. Compare NPS with <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF</a>, <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>APY</a>, and <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>SSY</a> for tax-efficient savings. Explore insurance through <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> and <a href='/{lang}/lic-jeevan-umang-calculator' class='text-primary hover:underline'>Jeevan Umang</a> for income protection.<br><br><strong>Debt Management:</strong> Before increasing NPS contributions, optimize existing loans with our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> to free up cash flow. A balanced approach to debt, savings, and investments ensures long-term financial security."
     }
-  },
-  "comparison": {
-    "title": "एनपीएस वि इतर गुंतवणूक पर्याय",
-    "table": {
-      "headers": ["वैशिष्ट्य", "एनपीएस", "पीपीएफ", "ईएलएसएस"],
-      "rows": [
-        ["जोखीम", "बाजाराशी जोडलेले (कमी ते उच्च)", "सार्वभौम (शून्य)", "उच्च"],
-        ["परतावा", "बाजार-चालित (सरासरी 8-12%)", "सरकार निर्धारित (7.1%)", "बाजार-चालित"],
-        ["मॅच्युरिटीवर कर", "60% कर-मुक्त", "कर-मुक्त", "कर-मुक्त (LTCG > ₹1 लाख करपात्र)"],
-        ["लॉक-इन", "60 पर्यंत", "15 वर्षे", "3 वर्षे"],
-        ["80C वजावट", "होय", "होय", "होय"],
-        ["अतिरिक्त वजावट", "होय (80CCD1B)", "नाही", "नाही"]
-      ]
-    },
-    "footer_note": "एनपीएस आणि पीपीएफ दरम्यान निवड करण्यासाठी, तुमची जोखीम क्षमता आणि परताव्याच्या अपेक्षा विचारात घ्या. तुलनेसाठी आमचे <a href='/{lang}/ppf-calculator'>पीपीएफ कॅल्क्युलेटर</a> वापरा."
-  },
-  "faq_title": "वारंवार विचारले जाणारे प्रश्न",
-  "faqs": [
-    {"question": "मी 60 वर्षांच्या वयापूर्वी माझ्या एनपीएस टियर-I खात्यातून पैसे काढू शकेन का?", "answer": "उच्च शिक्षण, वैद्यकीय आपत्कालीन परिस्थिती, किंवा घर खरेदी यांसारख्या विशिष्ट उद्देशांसाठी 3 वर्षे खाते उघडल्यानंतर आंशिक पैसे काढण्याची (तुमच्या योगदानाच्या 25% पर्यंत) परवानगी आहे."},
-    {"question": "अॅन्युइटी म्हणजे काय?", "answer": "अॅन्युइटी हे एक आर्थिक उत्पादन आहे जे एकरकमी गुंतवणुकीच्या बदल्यात नियमित उत्पन्न (पेन्शन) देते. एनपीएसमध्ये, तुम्ही तुमच्या कॉर्पస్पैकी किमान 40% रक्कम आयआरडीएआय-नोंदणीकृत विमा कंपनीकडून अॅन्युइटी खरेदी करण्यासाठी वापरली पाहिजे."},
-    {"question": "माझे एनपीएस पैसे कसे गुंतवले जातात हे मी निवडू शकेन का?", "answer": "होय, एनपीएस 'अॅक्टिव्ह चॉईस' ऑफर करते जिथे तुम्ही इक्विटी, कॉर्पोरेट बॉण्ड्स आणि सरकारी रोख्यांमध्ये मालमत्ता वाटप मिश्रण ठरवू शकता. वैकल्पिकरित्या, तुम्ही 'ऑटो चॉईस' निवडू शकता, जे तुमच्या वयानुसार तुमचे पोर्टफोलिओ स्वयंचलितपणे पुनर्संतुलित करते."}
-  ],
-  "conclusion": {
-    "title": "आत्मविश्वासाने तुमच्या सेवानिवृत्तीची योजना आखा",
-    "body": "एनपीएस शिस्तबद्ध सेवानिवृत्ती बचतीसाठी एक शक्तिशाली, दीर्घकालीन साधन आहे. त्याचे बाजाराशी जोडलेले वाढ, कर लाभ आणि संरचित पेन्शन यांचे संयोजन हे एका आधुनिक आर्थिक योजनेचा एक अत्यावश्यक भाग बनवते. तुमच्या सेवानिवृत्ती कॉर्पస్ची कल्पना करण्यासाठी आणि आजच नियोजन सुरू करण्यासाठी हे कॅल्क्युलेटर वापरा."
-  }
 }

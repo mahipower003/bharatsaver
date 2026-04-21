@@ -1,72 +1,79 @@
-
+﻿
 {
-  "meta_title": "म्युच्युअल फंड ओव्हरलॅप कॅल्क्युलेटर — फंडांमधील ओव्हरलॅप तपासा (भारत, 2025)",
-  "meta_description": "भारतीय फंडांसाठी मोफत म्युच्युअल फंड ओव्हरलॅप कॅल्क्युलेटर (2025). पोर्टफोलिओ ओव्हरలॅप टक्केवारी आणि सामान्य स्टॉक पाहण्यासाठी 2-5 फंडांची बाजू-बाजूला तुलना करा. माहितीपूर्ण विविधीकरण निर्णय घ्या.",
-  "h1": "म्युच्युअल फंड ओव्हरलॅप कॅल्क्युलेटर भारत (2025)",
+  "meta_title": "Mutual Fund Overlap Calculator â€” Check Overlap Between Funds (India, 2025)",
+  "meta_description": "Free mutual fund overlap calculator (2025) for Indian funds. Compare 2-5 funds side-by-side to see portfolio overlap percentage and common stocks. Make informed diversification decisions.",
+  "h1": "Mutual Fund Overlap Calculator India (2025)",
   "hero": {
-    "subtitle": "तुमचे म्युच्युअल फंड गुप्तपणे सारखेच आहेत का? तुमचा खरा पोर्टफोलिओ ओव्हरలॅप आणि शीर्ष सामान्य होल्डिंग्स त्वरित पाहण्यासाठी पाच भारतीय इक्विटी फंडांपर्यंत तुलना करा."
+    "subtitle": "Are your mutual funds secretly the same? Compare up to five Indian equity funds to instantly see your true portfolio overlap and top common holdings."
   },
   "tool": {
-    "title": "म्युच्युअल फंड होल्डिंग्सची तुलना करा",
-    "description": "सुरू करण्यासाठी किमान दोन फंड निवडा.",
-    "add_fund": "आणखी एक फंड जोडा",
-    "export_csv": "CSV निर्यात करा",
-    "copy_summary": "सारांश कॉपी करा"
+    "title": "Compare Mutual Fund Holdings",
+    "description": "Select at least two funds to begin.",
+    "add_fund": "Add Another Fund",
+    "export_csv": "Export CSV",
+    "copy_summary": "Copy Summary"
   },
   "what_is_overlap": {
-    "h2": "म्युच्युअल फंड ओव्हरలॅप म्हणजे काय आणि ते का महत्त्वाचे आहे?",
-    "body": "जेव्हा तुमच्या पोर्टफोलिओमधील दोन किंवा अधिक फंड समान स्टॉक धारण करतात तेव्हा म्युच्युअल फंड ओव्हरలॅप होतो. काही ओव्हरలॅप सामान्य असले तरी (विशेषतः लार्ज-कॅप फंडांमध्ये), అధిక ఓవర్ల్యాప్ <strong>అతి-గాఢత</strong> మరియు <strong>‘विविधीकरण’</strong> होऊ शकते — जिथे तुम्हाला वाटते की तुम्ही वैविధ్యपूर्ण आहात पण प्रत्यक्षात तुम्ही समान मूलभूत मालमत्ता धारण करत आहात. हे कॅल्क्युलेटर तुम्हाला तो लपलेला धोका उघड करण्यास मदत करते."
+    "h2": "What is Mutual Fund Overlap and Why Does It Matter?",
+    "body": "Mutual fund overlap occurs when two or more funds in your portfolio hold the same stocks. While some overlap is normal (especially in large-cap funds), high overlap can lead to <strong>over-concentration</strong> and <strong>'diworsification'</strong> â€” where you think you are diversified but are actually holding the same underlying assets. This calculator helps you uncover that hidden risk. Smart diversification is crucial for long-term wealth building. Use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to understand how your diversified portfolio should grow to meet your financial goals."
   },
   "how_it_works": {
-    "h2": "आमचे म्युच्युअल फंड ओव्हरలॅप कॅल्क्युलेटर कसे कार्य करते",
-    "body": "आमचे साधन तुम्ही निवडलेल्या फंडांच्या होल्डिंग्सची तुलना करते आणि <strong>भारित ओव्हरలॅप</strong> मोजते. ही मेट्रिक तुम्हाला सांगते की तुमच्या पोर्टफोलिओचा किती टक्के भाग दोन फंडांमध्ये डुप्लिकेट आहे, प्रत्येक सामान्य स्टॉकसाठी लहान वजनावर आधारित.<br/><br/><strong>उदाहरण:</strong> जर फंड ए आयसीआयसीआय बँकेत 5% आणि फंड बी 6% धारण करत असेल, तर त्या स्टॉकमधून ఓవర్ల్యాప్ பங்களிப்பு 5% आहे (दोन्हीपैकी किमान). आम्ही एकूण भारित ఓవర్ల్యాప్ పొందడానికి सर्व सामान्य பங்குகளுக்கும் இதை கூட்டுகிறோம்."
+    "h2": "How Our Mutual Fund Overlap Calculator Works",
+    "body": "Our tool compares the holdings of the funds you select and calculates the <strong>weighted overlap</strong>. This metric tells you what percentage of your portfolio is duplicated between two funds, based on the smaller weight for each common stock.<br/><br/><strong>Example:</strong> If Fund A holds 5% in ICICI Bank and Fund B holds 6%, the overlap contribution from that stock is 5% (the minimum of the two). We sum this for all common shares to get the total weighted overlap."
   },
   "live_example": {
-    "h2": "लाइव्ह उदाहरण: आयसीआयसीआय प्रू ब्लूचिप वि एचडीएफसी टॉप 100",
-    "intro": "येथे एक सामान्य तुलना दर्शविणारे पूर्व-रेंडर केलेले उदाहरण आहे. फंडांमध्ये <strong>27.02%</strong> का भारित ओवरलैप है।",
-    "result_summary": "हे <strong>मध्यम</strong> पातळीचे ओव्हरలॅप आहे, जे समान बेंचमार्कचा मागोवा घेणाऱ्या लार्ज-कॅप फंडांसाठी सामान्य आहे. शीर्ष 5 सामान्य स्टॉक एकट्या या ओव्हरలॅपमध्ये 18% पेक्षा जास्त योगदान देतात.",
-    "top_stocks_title": "शीर्ष 5 ओव्हरలॅपिंग स्टॉक",
+    "h2": "Live Example: ICICI Pru Bluechip vs HDFC Top 100",
+    "intro": "Here is a pre-rendered example showing a typical comparison. The funds have a weighted overlap of <strong>27.02%</strong>.",
+    "result_summary": "This is a <strong>moderate</strong> level of overlap, common for large-cap funds tracking similar benchmarks. The top 5 common stocks alone contribute over 18% to this overlap.",
+    "top_stocks_title": "Top 5 Overlapping Stocks",
     "top_stocks": [
-      { "name": "आयसीआयसीआय बँक", "weight": "5.21%" },
-      { "name": "इन्फोसिस", "weight": "4.67%" },
-      { "name": "अॅक्सिस बँक", "weight": "2.34%" },
-      { "name": "भारती एअरटेल", "weight": "3.12%" },
-      { "name": "भारतीय स्टेट बँक", "weight": "2.98%" }
+      { "name": "ICICI Bank", "weight": "5.21%" },
+      { "name": "Infosys", "weight": "4.67%" },
+      { "name": "Axis Bank", "weight": "2.34%" },
+      { "name": "Bharti Airtel", "weight": "3.12%" },
+      { "name": "State Bank of India", "weight": "2.98%" }
     ]
   },
   "interpreting_results": {
-    "h2": "तुमचा ओव्हरలॅप स्कोअर कसा अर्थ लावावा",
-    "body": "<ul><li><strong>कमी (0-15%):</strong> चांगले विविधीकरण. फंडांना वेगळ्या रणनीती आहेत.</li><li><strong>मध्यम (15-30%):</strong> एकाच श्रेणीतील फंडांसाठी सामान्य (उदा. लार्ज-कॅप). तुम्ही सामायिक प्रदर्शनासह आरामदायक आहात याची खात्री करण्यासाठी पुनरावलोकन करा.</li><li><strong>उच्च (30-50%):</strong> महत्त्वपूर्ण ओव्हरలॅप. तुम्ही समान स्टॉकसाठी दोन सेट शुल्क भरत असाल. एकत्रित करण्याचा विचार करा.</li><li><strong>खूप उच्च (>50%):</strong> फंड व्यावहारिकदृष्ट्या क्लोन आहेत. विविधीकरण सुधारण्यासाठी एक बदलण्याची अत्यंत शिफारस केली जाते.</li></ul>"
+    "h2": "How to Interpret Your Overlap Score",
+    "body": "<ul><li><strong>Low (0-15%):</strong> Good diversification. The funds have distinct strategies.</li><li><strong>Moderate (15-30%):</strong> Common for funds in the same category (e.g., large-cap). Review to ensure you are comfortable with the shared exposure.</li><li><strong>High (30-50%):</strong> Significant overlap. You may be paying two sets of fees for the same stocks. Consider consolidating.</li><li><strong>Very High (>50%):</strong> The funds are practically clones. Replacing one to improve diversification is highly recommended.</li></ul>"
   },
   "what_to_do": {
-    "h2": "तुमच्याकडे उच्च ओव्हरలॅप असल्यास काय करावे",
-    "body": "तुम्हाला उच्च ओव्हरలॅप आढळल्यास, घाबरू नका. फंडांपैकी एकाला वेगळ्या रणनीती किंवा मार्केट-कॅप फोकस असलेल्या दुसऱ्या फंडाने बदलण्याचा विचार करा. उदाहरणार्थ, जर दोन लार्ज-कॅप फंड ओव्हरలॅप होत असतील, तर तुम्ही खरा विविधीकरण साधण्यासाठी एकाला मिड-कॅप किंवा सेक्टर-विशिष्ट फंडात बदलू शकता. आमचे <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>म्युच्युअल फंड स्क्रीनर</a> तुम्हाला वेगवेगळ्या रणनीतींसह फंड शोधण्यात मदत करू शकते."
+    "h2": "What to Do If You Have High Overlap",
+    "body": "If you find a high overlap, don't panic. Consider replacing one of the funds with another that has a different strategy or market-cap focus. For example, if two large-cap funds overlap, you might switch one to a mid-cap or a sector-specific fund to achieve true diversification. Our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> can help you find funds with different strategies. Also explore <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF</a> options and <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a> for more conservative allocations. Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to understand the tax implications of any fund switches, and our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> to manage any debt before increasing investments."
   },
   "related_tools": {
-    "h2": "संबंधित साधने आणि मार्गदर्शक",
+    "h2": "Related Tools & Guides",
     "links": [
-        { "href": "/mutual-fund-screener", "title": "म्युच्युअल फंड स्क्रीनर", "description": "तुमच्या पोर्टफोलिओचे विविधीकरण सुधारण्यासाठी नवीन फंड फिल्टर करा आणि शोधा." },
-        { "href": "/retirement-corpus-calculator", "title": "सेवानिवृत्ती निधी कॅल्क्युलेटर", "description": "तुमच्या म्युच्युअल फंड गुंतवणूक तुमच्या एकूण सेवानिवृत्ती योजनेत कशी बसते ते पहा." },
-        { "href": "/tax-regime-calculator", "title": "कर प्रणाली कॅल्क्युलेटर", "description": "तुमच्या म्युच्युअल फंड नफ्यावरील कर परिणाम समजून घ्या." }
+        { "href": "/mutual-fund-screener", "title": "Mutual Fund Screener", "description": "Filter and find new funds to improve your portfolio's diversification." },
+        { "href": "/retirement-corpus-calculator", "title": "Retirement Corpus Calculator", "description": "See how your mutual fund investments fit into your overall retirement plan." },
+        { "href": "/tax-regime-calculator", "title": "Tax Regime Calculator", "description": "Understand the tax implications of your mutual fund gains and switches." },
+        { "href": "/fd-vs-ppf-calculator", "title": "FD vs PPF Calculator", "description": "Compare fixed income alternatives to mutual funds for a balanced portfolio." },
+        { "href": "/ppf-calculator", "title": "PPF Calculator", "description": "Explore tax-free savings options to complement your mutual fund investments." },
+        { "href": "/nps-calculator", "title": "NPS Calculator", "description": "Plan your retirement with National Pension System alongside mutual funds." },
+        { "href": "/loan-optimizer", "title": "Loan Optimizer", "description": "Manage debt efficiently before investing in mutual funds." }
     ]
   },
   "faq": {
-    "h2": "सतत विचारले जाणारे प्रश्न",
+    "h2": "Frequently Asked Questions",
     "faqs": [
-      { "q": "म्युच्युअल फंड ओव्हरలॅप कसा मोजला जातो?", "a": "రెండు ఫండ్‌లు కలిగి ఉన్న ప్రతి సాధారణ స్టాక్ యొక్క కనీస బరువును కూడటం ద్వారా మేము భారిత ఓవర్‌ల్యాప్‌ను లెక్కిస్తాము. సూత్రం: అన్ని సాధారణ స్టాక్‌ల కోసం Σ min(Weight_Fund_A, Weight_Fund_B)." },
-      { "q": "म्युच्युअल फंडांमध्ये 30% ओव्हरలॅप वाईट आहे का?", "a": "30% ఓవర్‌ల్యాప్ అధికంగా పరిగణించబడుతుంది. 'చెడ్డది' అని అవసరం లేనప్పటికీ, మీరు ఒకే విధమైన హోల్డింగ్‌ల కోసం రెండు వ్యయ నిష్పత్తులను చెల్లిస్తూ ఉండవచ్చని ఇది సూచిస్తుంది, ఇది వైవిధ్యాన్ని తగ్గిస్తుంది. మీ పోర్ట్‌ఫోలియోకు రెండు ఫండ్‌లు అవసరమా అని సమీక్షించడం విలువ." },
-      { "q": "तुम्ही म्युच्युअल फंडांमध्ये ओव्हरలॅप कसा तपासता?", "a": "आमच्या कॅल्क्युलेटरमधील ड्रॉपडाउन मेन्यूमधून 2 ते 5 भारतीय इक्विटी फंड निवडा. साधन आपोआप नवीनतम होल्डिंग्स डेटा आणेल आणि तुमच्यासाठी जोडीदार ओव्हरలॅपची गणना करेल." },
-      { "q": "कोणत्या प्रकारच्या फंडांमध्ये सर्वाधिक ओव्हरలॅप असतो?", "a": "లార్జ్-క్యాప్ आणि ఇండెక్స్ ఫండ్‌లలో ఎక్కువ ఓవర్‌ల్యాప్ ఉంటుంది ఎందుకంటే అవి ఒకే విధమైన బెంచ్‌మార్క్‌లను (నిఫ్టీ 50 లేదా సెన్సెక్స్ వంటివి) ట్రాక్ చేస్తాయి మరియు అగ్ర బ్లూ-చిప్ కంపెనీల అదే సెట్‌లో పెట్టుబడి పెడతాయి." }
+      { "q": "How is mutual fund overlap calculated?", "a": "We calculate the weighted overlap by summing the minimum weight of each common stock held by two funds. The formula is: Î£ min(Weight_Fund_A, Weight_Fund_B) for all common stocks. This helps identify diversification gaps in your portfolio. Compare with our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> to find complementary funds." },
+      { "q": "Is 30% overlap in mutual funds bad?", "a": "An overlap of 30% is considered high. While not necessarily 'bad,' it suggests you may be paying two expense ratios for very similar holdings, which reduces diversification. It is worth reviewing if you need both funds in your portfolio. For alternative investments, check our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a>, <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a>, or <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a> for tax-efficient savings." },
+      { "q": "How do you check overlap in mutual funds?", "a": "Simply select 2 to 5 Indian equity funds from the dropdown menus in our calculator. The tool will automatically fetch the latest holdings data and calculate the pairwise overlap for you." },
+      { "q": "Which type of funds have the most overlap?", "a": "Large-cap and index funds tend to have the most overlap because they often track similar benchmarks (like the Nifty 50 or Sensex) and invest in the same set of top blue-chip companies. Use our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> to find mid-cap or sector funds for diversification. Plan your complete portfolio with our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a>." },
+      { "q": "How do I build a diversified portfolio using this calculator?", "a": "Start by analyzing your current funds with this overlap calculator. Identify high-overlap pairs and consider replacing one with a fund from a different category (e.g., mid-cap, small-cap, or sector-specific). Use our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> to find alternatives, balance with <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD or PPF</a> for stability, and plan using our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a>." },
+      { "q": "Should I completely avoid overlap in my mutual fund portfolio?", "a": "No, some overlap is natural and healthy. The key is managing it strategically. Diversification across fund types (large-cap, mid-cap, small-cap, debt, international) with manageable overlap is ideal. Use our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> to find complementary funds, check tax implications with <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a>, and plan comprehensively with our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a>." },
+      { "q": "How does mutual fund overlap relate to overall financial planning?", "a": "Portfolio overlap affects your overall diversification and risk management. If overlapped, you have less true diversification and higher concentration risk. Balance mutual fund investments with other vehicles like <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a>, <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD</a>, <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a>, and insurance (use our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a>). Plan your complete financial picture using our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> and <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a>." }
     ]
   },
   "methodology": {
-    "h2": "डेटा आणि कार्यपद्धती",
-    "body": "<p><strong>डेटा स्त्रोत:</strong> आमचा होल्डिंग्स डेटा सार्वजनिकरित्या उपलब्ध असलेल्या योजना दस्तऐवजांमधून मिळवला जातो आणि वेळोवेळी अद्यतनित केला जातो. आम्ही अचूकतेसाठी प्रयत्न करत असताना, आम्ही त्याची हमी देऊ शकत नाही. नेहमी अधिकृत एएमसी फॅక్ట్‌షీట్‌లతో सत्यापित करा. <strong>शेवटचे अद्यतन: ऑगस्ट 2025।</strong></p><p><strong>जुळणारे तर्क:</strong> होल्डिंग्स प्रथम त्यांच्या स्टॉक टिकरद्वारे (उदा. 'RELIANCE') जुळवले जातात. टिकर उपलब्ध नसल्यास, आम्ही ఒక सामान्यीकृत కంపెనీचे नाव वापरतो (उदा. 'reliance industries' 'Ltd', 'Inc', इत्यादी काढून टाकल्यानंतर). 'कॅश', 'त्रि-पक्षीय रेपो', किंवा 'नेट रिसिव्हेबल्स' यांसारखे नॉन-इक्विटी होल्डिंग्स सामान्य शब्दांसाठी एक रेजेक्स जुळणीवर आधारित गणनेतून वगळले जातात.</p><p><strong>काम केलेले उदाहरण (भारित ओव्हरలॅप):</strong></p><p>भारित ओव्हरలॅप = सर्व सामान्य स्टॉकसाठी Σ min(फंड ए मधील वजन, फंड बी मधील वजन).</p><div class='overflow-x-auto'><table class='w-full text-sm my-4'><thead><tr class='border-b'><th class='text-left p-2'>स्टॉक</th><th class='text-right p-2'>फंड ए (w%)</th><th class='text-right p-2'>फंड बी (w%)</th><th class='text-right p-2'>किमान वजन</th></tr></thead><tbody><tr class='border-b'><td class='p-2'>आयसीआयसीआय बँक</td><td class='text-right p-2'>5.21</td><td class='text-right p-2'>6.03</td><td class='text-right p-2'>5.21</td></tr><tr class='border-b'><td class='p-2'>इन्फोसिस</td><td class='text-right p-2'>4.67</td><td class='text-right p-2'>5.06</td><td class='text-right p-2'>4.67</td></tr><tr class='border-b'><td class='p-2'>अॅक्सिस बँक</td><td class='text-right p-2'>2.34</td><td class='text-right p-2'>3.45</td><td class='text-right p-2'>2.34</td></tr><tr class='border-b'><td class='p-2'>भारती एअरटेल</td><td class='text-right p-2'>3.12</td><td class='text-right p-2'>4.50</td><td class='text-right p-2'>3.12</td></tr><tr class='border-b'><td class='p-2'>भारतीय स्टेट बँक</td><td class='text-right p-2'>2.98</td><td class='text-right p-2'>3.80</td><td class='text-right p-2'>2.98</td></tr><tr><td colspan='3' class='text-right font-bold p-2'>...आणि सर्व 35 सामान्य स्टॉकसाठी...</td><td class='text-right font-bold p-2'></td></tr><tr class='border-t'><td colspan='3' class='text-right font-bold p-2'>एकूण भारित ओव्हरలॅप</td><td class='text-right font-bold p-2'>27.02%</td></tr></tbody></table></div>"
+    "h2": "Data & Methodology",
+    "body": "<p><strong>Data Sources:</strong> Our holdings data is sourced from publicly available scheme documents and updated periodically. While we strive for accuracy, we cannot guarantee it. Always verify with official AMC factsheets. <strong>Last Updated: Aug 2025.</strong></p><p><strong>Matching Logic:</strong> Holdings are matched first by their stock ticker (e.g., 'RELIANCE'). If a ticker is not available, we use a normalized company name (e.g., 'reliance industries' after removing 'Ltd', 'Inc', etc.). Non-equity holdings like 'Cash', 'Tri-party repo', or 'Net Receivables' are excluded from the calculation based on a regex match for common terms.</p><p><strong>Worked Example (Weighted Overlap):</strong></p><p>Weighted Overlap = Î£ min(weight in Fund A, weight in Fund B) for all common stocks.</p><div class='overflow-x-auto'><table class='w-full text-sm my-4'><thead><tr class='border-b'><th class='text-left p-2'>Stock</th><th class='text-right p-2'>Fund A (w%)</th><th class='text-right p-2'>Fund B (w%)</th><th class='text-right p-2'>Min Weight</th></tr></thead><tbody><tr class='border-b'><td class='p-2'>ICICI Bank</td><td class='text-right p-2'>5.21</td><td class='text-right p-2'>6.03</td><td class='text-right p-2'>5.21</td></tr><tr class='border-b'><td class='p-2'>Infosys</td><td class='text-right p-2'>4.67</td><td class='text-right p-2'>5.06</td><td class='text-right p-2'>4.67</td></tr><tr class='border-b'><td class='p-2'>Axis Bank</td><td class='text-right p-2'>2.34</td><td class='text-right p-2'>3.45</td><td class='text-right p-2'>2.34</td></tr><tr class='border-b'><td class='p-2'>Bharti Airtel</td><td class='text-right p-2'>3.12</td><td class='text-right p-2'>4.50</td><td class='text-right p-2'>3.12</td></tr><tr class='border-b'><td class='p-2'>State Bank of India</td><td class='text-right p-2'>2.98</td><td class='text-right p-2'>3.80</td><td class='text-right p-2'>2.98</td></tr><tr><td colspan='3' class='text-right font-bold p-2'>...and so on for all 35 common stocks...</td><td class='text-right font-bold p-2'></td></tr><tr class='border-t'><td colspan='3' class='text-right font-bold p-2'>Total Weighted Overlap</td><td class='text-right font-bold p-2'>27.02%</td></tr></tbody></table></div>"
   },
   "results": {
-      "weighted_overlap_title": "भारित ओव्हरలॅप",
-      "top_stocks_title": "शीर्ष सामान्य स्टॉक",
-      "stock_header": "स्टॉक",
-      "min_weight_header": "किमान वजन"
+      "weighted_overlap_title": "Weighted Overlap",
+      "top_stocks_title": "Top Common Stocks",
+      "stock_header": "Stock",
+      "min_weight_header": "Min. Weight"
   }
 }

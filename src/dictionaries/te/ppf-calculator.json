@@ -1,147 +1,145 @@
-
+﻿
 {
-  "meta_title": "PPF కాలిక్యులేటర్ 2025 — PPF మెచ్యూరిటీని ఆన్‌లైన్‌లో లెక్కించండి (భారతదేశం)",
-  "meta_description": "2025 కోసం ఉచిత PPF కాలిక్యులేటర్: తక్షణమే PPF మెచ్యూరిటీ, వడ్డీ, మరియు పన్ను ఆదాలను (EEE) అంచనా వేయండి. ఇందులో సంవత్సరాల వారీ చార్ట్‌లు, పొడిగింపు నియమాలు, మరియు FD, NPS, మరియు SSYతో పోలిక ఉన్నాయి.",
-  "h1": "PPF కాలిక్యులేటర్ 2025 (పబ్లిక్ ప్రావిడెంట్ ఫండ్)",
-  "description": "మీ పబ్లిక్ ప్రావిడెంట్ ఫండ్ మెచ్యూరిటీ మొత్తం, మొత్తం సంపాదించిన వడ్డీ, మరియు సంవత్సరాల వారీ పెట్టుబడి విచ్ఛిన్నం అంచనా వేయడానికి మా ఉచిత PPF కాలిక్యులేటర్‌ను ఉపయోగించండి. తాజా వడ్డీ రేట్లతో నవీకరించబడింది.",
-  "last_updated": "రేట్లు నవీకరించబడ్డాయి:",
-  "title": "పబ్లిక్ ప్రావిడెంట్ ఫండ్ (PPF) కాలిక్యులేటర్",
-  "annual_investment_label": "వార్షిక పెట్టుబడి మొత్తం",
-  "annual_investment_placeholder": "ఉదా., 100000",
-  "tenure_label": "పెట్టుబడి కాలపరిమితి",
-  "interest_rate_label": "వడ్డీ రేటు (% ప్రతి సంవత్సరం)",
-  "interest_rate_placeholder": "ఉదా., 7.1",
-  "calculate_button": "PPF రాబడులను లెక్కించండి",
-  "loading": "లెక్కిస్తోంది...",
-  "results_title": "మీ PPF ప్రొజెక్షన్",
-  "maturity_value": "మెచ్యూరిటీ విలువ",
-  "total_investment": "మొత్తం పెట్టుబడి",
-  "total_interest": "మొత్తం సంపాదించిన వడ్డీ",
-  "view_chart": "చార్ట్",
-  "view_table": "పట్టిక",
-  "yearly_breakdown_title": "సంవత్సరాల వారీ విచ్ఛిన్నం",
-  "export_csv": "CSVని ఎగుమతి చేయండి",
-  "table_year": "సంవత్సరం",
-  "table_opening_balance": "ప్రారంభ నిల్వ",
-  "table_amount_invested": "పెట్టుబడి పెట్టిన మొత్తం",
-  "table_interest_earned": "సంపాదించిన వడ్డీ",
-  "table_closing_balance": "ముగింపు నిల్వ",
+  "meta_title": "PPF Calculator 2025 â€” Calculate PPF Maturity Online (India)",
+  "meta_description": "Free PPF calculator for 2025: Instantly estimate PPF maturity, interest, and tax savings (EEE). Includes year-wise charts, extension rules, and comparison with FD, NPS, and SSY.",
+  "h1": "PPF Calculator 2025 (Public Provident Fund)",
+  "description": "Use our free PPF Calculator to estimate your Public Provident Fund maturity amount, total interest earned, and year-wise investment breakdown. Updated with the latest interest rates.",
+  "last_updated": "Rates updated:",
+  "title": "Public Provident Fund (PPF) Calculator",
+  "annual_investment_label": "Yearly Investment Amount",
+  "annual_investment_placeholder": "e.g., 100000",
+  "tenure_label": "Investment Tenure",
+  "interest_rate_label": "Interest Rate (% p.a.)",
+  "interest_rate_placeholder": "e.g., 7.1",
+  "calculate_button": "Calculate PPF Returns",
+  "loading": "Calculating...",
+  "results_title": "Your PPF Projection",
+  "maturity_value": "Maturity Value",
+  "total_investment": "Total Investment",
+  "total_interest": "Total Interest Earned",
+  "view_chart": "Chart",
+  "view_table": "Table",
+  "yearly_breakdown_title": "Year-wise Breakdown",
+  "export_csv": "Export CSV",
+  "table_year": "Year",
+  "table_opening_balance": "Opening Balance",
+  "table_amount_invested": "Amount Invested",
+  "table_interest_earned": "Interest Earned",
+  "table_closing_balance": "Closing Balance",
   "advantages": {
-    "title": "PPF పెట్టుబడి ప్రయోజనాలు",
-    "intro": "PPF అనేక కారణాల వల్ల భారతదేశంలోని అత్యంత ప్రజాదరణ పొందిన దీర్ఘకాలిక పొదుపు పథకాలలో ఒకటి:",
+    "title": "Advantages of PPF Investment",
+    "intro": "PPF is one of India's most popular long-term savings schemes for several reasons:",
     "points": [
-      "రిస్క్-లేని సార్వభౌమ హామీ",
-      "ఆకర్షణీయమైన చక్రవడ్డీ రాబడులు",
-      "అసమానమైన EEE పన్ను ప్రయోజనం",
-      "సౌకర్యవంతమైన పెట్టుబడి మొత్తాలు (₹500 నుండి ₹1.5 లక్షలు/సంవత్సరం)",
-      "బ్యాలెన్స్‌పై రుణ సౌకర్యం",
-      "పాక్షిక ఉపసంహరణ ఎంపిక"
+      "Risk-Free Sovereign Guarantee",
+      "Attractive Compounded Returns",
+      "Unmatched EEE Tax Benefit",
+      "Flexible Investment Amounts (â‚¹500 to â‚¹1.5 Lakh/year)",
+      "Loan Facility Against Balance",
+      "Partial Withdrawal Option"
     ],
-    "conclusion": "ఇది పదవీ విరమణ, పిల్లల విద్య, లేదా సంపద సృష్టి వంటి దీర్ఘకాలిక లక్ష్యాల కోసం ఒక ఆదర్శవంతమైన సాధనం."
+    "conclusion": "It's an ideal tool for long-term goals like retirement, children's education, or wealth creation."
   },
   "investment_strategy": {
-    "title": "ప్రో చిట్కా: గరిష్ట రాబడుల కోసం PPFలో ఎప్పుడు పెట్టుబడి పెట్టాలి",
-    "intro": "PPF ఖాతాలో మీ వడ్డీ ఆదాయాన్ని గరిష్టం చేయడానికి, వడ్డీ ఎలా లెక్కించబడుతుందో అర్థం చేసుకోవడం ముఖ్యం. ప్రతి నెల 5వ మరియు చివరి తేదీల మధ్య ఉన్న అతి తక్కువ బ్యాలెన్స్‌పై నెలవారీగా వడ్డీ లెక్కించబడుతుంది. అందువల్ల, గరిష్ట ప్రయోజనం పొందడానికి:",
+    "title": "Pro Tip: When to Invest in PPF for Maximum Returns",
+    "intro": "To maximize your interest earnings in a PPF account, it's crucial to understand how interest is calculated. The interest is calculated monthly on the lowest balance between the 5th and the last day of each month. Therefore, to get the maximum benefit:",
     "points": [
-      "<strong>మీరు నెలవారీగా పెట్టుబడి పెడుతున్నట్లయితే ప్రతి నెల 5వ తేదీకి ముందు పెట్టుబడి పెట్టండి.</strong>",
-      "<strong>మీరు ఒకేసారి వార్షిక పెట్టుబడి పెడుతున్నట్లయితే ఏప్రిల్ 5వ తేదీకి ముందు పూర్తి మొత్తాన్ని పెట్టుబడి పెట్టండి.</strong>"
+      "<strong>Invest before the 5th of each month</strong> if you are investing monthly.",
+      "<strong>Invest the full amount before April 5th</strong> if you are making a lump-sum annual investment."
     ]
   },
   "tax_benefits": {
-    "title": "PPF పన్ను ప్రయోజనాలు: EEE యొక్క శక్తి",
-    "intro": "PPF మినహాయింపు-మినహాయింపు-మినహాయింపు (EEE) హోదాను పొందుతుంది, ఇది భారతదేశంలో అందుబాటులో ఉన్న అత్యంత పన్ను-సమర్థవంతమైన పెట్టుబడి ఎంపికలలో ఒకటిగా నిలుస్తుంది.",
-    "contribution_title": "1. కంట్రిబ్యూషన్ పన్ను-తగ్గింపుకు అర్హమైనది",
-    "contribution_body": "మీ వార్షిక కంట్రిబ్యూషన్లు ₹1.5 లక్షల వరకు ఆదాయపు పన్ను చట్టంలోని &lt;strong&gt;సెక్షన్ 80C&lt;/strong&gt; కింద మినహాయింపుకు అర్హమైనవి.",
-    "interest_title": "2. సంపాదించిన వడ్డీ పన్ను-రహితం",
-    "interest_body": "మీరు ప్రతి సంవత్సరం సంపాదించే వడ్డీ పూర్తిగా ఆదాయపు పన్ను నుండి మినహాయించబడింది.",
-    "maturity_title": "3. మెచ్యూరిటీ మొత్తం పన్ను-రహితం",
-    "maturity_body": "అసలు మరియు పేరుకుపోయిన వడ్డీతో సహా మొత్తం మెచ్యూరిటీ మొత్తం, ఉపసంహరణపై పన్ను-రహితం.",
-    "why_matters": "ఈ త్రివిధ పన్ను ప్రయోజనం ఇతర పరికరాలతో పోలిస్తే మీ ప్రభావవంతమైన రాబడి రేటును గణనీయంగా పెంచుతుంది, అక్కడ రాబడులు పన్ను విధించబడతాయి.",
-    "footer_note": "మీకు ఏ పన్ను విధానం మంచిదో తెలుసుకోవడానికి, మా &lt;a href='/te/tax-regime-calculator'&gt;పాత వర్సెస్ కొత్త పన్ను విధానం కాలిక్యులేటర్‌ను&lt;/a&gt; ఉపయోగించండి."
+    "title": "PPF Tax Benefits: The Power of EEE",
+    "intro": "PPF enjoys the Exempt-Exempt-Exempt (EEE) status, making it one of the most tax-efficient investment options available in India.",
+    "contribution_title": "1. Contribution is Tax-Deductible",
+    "contribution_body": "Your annual contributions of up to â‚¹1.5 lakh are eligible for deduction under <strong>Section 80C</strong> of the Income Tax Act.",
+    "interest_title": "2. Interest Earned is Tax-Free",
+    "interest_body": "The interest you earn each year is completely exempt from income tax.",
+    "maturity_title": "3. Maturity Amount is Tax-Free",
+    "maturity_body": "The entire maturity amount, including the principal and the accumulated interest, is tax-free upon withdrawal.",
+    "why_matters": "This triple tax benefit significantly enhances your effective rate of return compared to other instruments where returns are taxable.",
+    "footer_note": "To know which tax regime is better for you, use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>Old vs New Tax Regime calculator</a>."
   },
   "rules": {
-    "title": "మీరు తెలుసుకోవలసిన కీలకమైన PPF నియమాలు",
+    "title": "Key PPF Rules You Should Know",
     "points": [
-      "&lt;strong&gt;కాలపరిమితి:&lt;/strong&gt; తప్పనిసరి లాక్-ఇన్ కాలం 15 సంవత్సరాలు. దీనిని 5 సంవత్సరాల బ్లాకులలో నిరవధికంగా పొడిగించవచ్చు.",
-      "&lt;strong&gt;కంట్రిబ్యూషన్ పరిమితి:&lt;/strong&gt; ఒక ఆర్థిక సంవత్సరానికి కనీసం ₹500 మరియు గరిష్టంగా ₹1.5 లక్షలు.",
-      "&lt;strong&gt;డిపాజిట్లు:&lt;/strong&gt; ఒకేసారి లేదా గరిష్టంగా 12 వాయిదాలలో చేయవచ్చు.",
-      "&lt;strong&gt;ఖాతా తెరవడం:&lt;/strong&gt; ఏ జాతీయీకరణ బ్యాంకు, ప్రధాన ప్రైవేట్ బ్యాంకులు, లేదా పోస్ట్ ఆఫీసులలోనైనా తెరవవచ్చు.",
-      "&lt;strong&gt;రుణం:&lt;/strong&gt; PPF బ్యాలెన్స్‌పై 3వ నుండి 6వ ఆర్థిక సంవత్సరం వరకు రుణం తీసుకోవచ్చు.",
-      "&lt;strong&gt;ఉపసంహరణ:&lt;/strong&gt; నిర్దిష్ట పరిస్థితులలో 7వ ఆర్థిక సంవత్సరం నుండి పాక్షిక ఉపసంహరణ అనుమతించబడుతుంది."
+      "<strong>Tenure:</strong> The mandatory lock-in period is 15 years. It can be extended in blocks of 5 years indefinitely.",
+      "<strong>Contribution Limit:</strong> Minimum of â‚¹500 and a maximum of â‚¹1.5 lakh per financial year.",
+      "<strong>Deposits:</strong> Can be made in a lump sum or in a maximum of 12 installments.",
+      "<strong>Account Opening:</strong> Can be opened at any nationalized bank, major private banks, or post offices.",
+      "<strong>Loan:</strong> A loan can be taken against the PPF balance from the 3rd to the 6th financial year.",
+      "<strong>Withdrawal:</strong> Partial withdrawal is permissible from the 7th financial year onwards under specific conditions."
     ],
-    "footer_note": "అధికారిక మరియు వివరణాత్మక నియమాల కోసం, ఎల్లప్పుడూ ఆర్థిక మంత్రిత్వ శాఖ లేదా RBI అందించిన మార్గదర్శకాలను చూడండి."
+    "footer_note": "For official and detailed rules, always refer to the guidelines provided by the Ministry of Finance or the RBI."
   },
   "how_to_open": {
-    "title": "PPF ఖాతా ఎలా తెరవాలి",
-    "intro": "PPF ఖాతా తెరవడం ఒక సరళమైన ప్రక్రియ:",
+    "title": "How to Open a PPF Account",
+    "intro": "Opening a PPF account is a straightforward process:",
     "steps": [
-      "PPF ఖాతాలను అందించే బ్యాంకు లేదా పోస్ట్ ఆఫీసును ఎంచుకోండి.",
-      "ఖాతా తెరిచే ఫారమ్ (ఫారమ్ A) ను పూరించండి.",
-      "అవసరమైన KYC పత్రాలను సమర్పించండి: గుర్తింపు రుజువు (ఆధార్, పాన్) మరియు చిరునామా రుజువు.",
-      "ప్రారంభ డిపాజిట్ చేయండి (కనీసం ₹500).",
-      "అనేక బ్యాంకులు ఇప్పుడు పూర్తిగా ఆన్‌లైన్, ఆధార్ ఇ-ధృవీకరణ-ఆధారిత ఖాతా తెరిచే ప్రక్రియను అందిస్తున్నాయి."
+      "Choose a bank or post office that offers PPF accounts.",
+      "Fill out the account opening form (Form A).",
+      "Submit the necessary KYC documents: Proof of Identity (Aadhaar, PAN) and Proof of Address.",
+      "Make the initial deposit (minimum â‚¹500).",
+      "Many banks now offer a completely online, Aadhaar e-verification-based account opening process."
     ],
     "links": [
-      {"text": "SBIలో PPF తెరవండి", "href": "https://www.onlinesbi.sbi/"},
-      {"text": "HDFC బ్యాంకులో PPF తెరవండి", "href": "https://www.hdfcbank.com/"},
-      {"text": "ICICI బ్యాంకులో PPF తెరవండి", "href": "https://www.icicibank.com/"}
+      {"text": "Open PPF in SBI", "href": "https://www.onlinesbi.sbi/"},
+      {"text": "Open PPF in HDFC Bank", "href": "https://www.hdfcbank.com/"},
+      {"text": "Open PPF in ICICI Bank", "href": "https://www.icicibank.com/"}
     ]
   },
   "historical_rates": {
-    "title": "చారిత్రక PPF వడ్డీ రేట్లు",
-    "intro": "PPF వడ్డీ రేటు ప్రభుత్వం ద్వారా నిర్ణయించబడుతుంది మరియు త్రైమాసికంగా సమీక్షించబడుతుంది. గత కొన్ని సంవత్సరాల రేట్లు ఇక్కడ ఉన్నాయి:",
+    "title": "Historical PPF Interest Rates",
+    "intro": "The PPF interest rate is set by the government and reviewed quarterly. Here are the rates over the past few years:",
     "table": {
-      "headers": ["కాలం", "వడ్డీ రేటు"],
+      "headers": ["Period", "Interest Rate"],
       "rows": [
-        ["ఏప్రిల్ 2024 - జూన్ 2024", "7.1%"],
-        ["జనవరి 2024 - మార్చి 2024", "7.1%"],
-        ["అక్టోబర్ 2023 - డిసెంబర్ 2023", "7.1%"],
-        ["జూలై 2020 - సెప్టెంబర్ 2023", "7.1%"],
-        ["ఏప్రిల్ 2020 - జూన్ 2020", "7.1%"],
-        ["జూలై 2019 - మార్చి 2020", "7.9%"],
-        ["అక్టోబర్ 2018 - జూన్ 2019", "8.0%"]
+        ["Apr 2024 - Jun 2024", "7.1%"],
+        ["Jan 2024 - Mar 2024", "7.1%"],
+        ["Oct 2023 - Dec 2023", "7.1%"],
+        ["Jul 2020 - Sep 2023", "7.1%"],
+        ["Apr 2020 - Jun 2020", "7.1%"],
+        ["Jul 2019 - Mar 2020", "7.9%"],
+        ["Oct 2018 - Jun 2019", "8.0%"]
       ]
     },
-    "sources": "మూలాలు: ఆర్థిక మంత్రిత్వ శాఖ నోటిఫికేషన్లు, RBI సర్క్యులర్లు.",
-    "insight": "రేటు దాని గరిష్ట స్థాయిల నుండి తగ్గుదలని చూసినప్పటికీ, ఇది రిస్క్-లేని పరికరం కోసం అత్యంత పోటీ రేట్లలో ఒకటిగా మిగిలిపోయింది."
+    "sources": "Sources: Ministry of Finance notifications, RBI circulars.",
+    "insight": "While the rate has seen a downtrend from its highs, it remains one of the most competitive rates for a risk-free instrument."
   },
   "comparison": {
-    "title": "PPF వర్సెస్ ఇతర పెట్టుబడి ఎంపికలు",
+    "title": "PPF vs Other Investment Options",
     "table": {
-      "headers": ["ఫీచర్", "PPF", "FD", "NPS", "SSY"],
+      "headers": ["Feature", "PPF", "FD", "NPS", "SSY"],
       "rows": [
-        ["రిస్క్", "సార్వభౌమ (శూన్యం)", "తక్కువ", "మార్కెట్-లింక్డ్", "సార్వభౌమ (శూన్యం)"],
-        ["రాబడులు", "ప్రభుత్వం నిర్ణయించింది (7.1%)", "బ్యాంకు నిర్ణయించింది (మారుతుంది)", "మార్కెట్-ఆధారిత", "ప్రభుత్వం నిర్ణయించింది (8.2%)"],
-        ["మెచ్యూరిటీపై పన్ను", "పన్ను-రహితం (EEE)", "పన్ను విధించదగినది", "పాక్షికంగా పన్ను విధించదగినది", "పన్ను-రహితం (EEE)"],
-        ["లాక్-ఇన్", "15 సంవత్సరాలు", "మారుతుంది (రోజుల నుండి సంవత్సరాల వరకు)", "60 వరకు", "21 సంవత్సరాలు"],
-        ["అర్హత", "భారతీయులందరూ", "భారతీయులందరూ", "18-70 సంవత్సరాలు", "ఆడపిల్ల &lt; 10"]
+        ["Risk", "Sovereign (Nil)", "Low", "Market-linked", "Sovereign (Nil)"],
+        ["Returns", "Govt. set (7.1%)", "Bank set (Varies)", "Market-driven", "Govt. set (8.2%)"],
+        ["Tax on Maturity", "Tax-Free (EEE)", "Taxable", "Partially Taxable", "Tax-Free (EEE)"],
+        ["Lock-in", "15 years", "Varies (days to yrs)", "Till 60", "21 years"],
+        ["Eligibility", "All Indians", "All Indians", "18-70 years", "Girl child < 10"]
       ]
     },
-    "footer_note": "వివరణాత్మక పోలిక కోసం, మా &lt;a href='/{lang}/fd-vs-ppf-calculator'&gt;FD వర్సెస్ PPF కాలిక్యులేటర్‌ను&lt;/a&gt; చూడండి."
+    "footer_note": "For a detailed comparison, check out our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a>."
   },
-  "faq_title": "PPF గురించి తరచుగా అడిగే ప్రశ్నలు",
+  "faq_title": "Frequently Asked Questions about PPF",
   "faqs": [
     {
-      "question": "నాకు ఒకటి కంటే ఎక్కువ PPF ఖాతాలు ఉండవచ్చా?",
-      "answer": "లేదు, ఒక వ్యక్తి తన పేరు మీద ఒక PPF ఖాతాను మాత్రమే కలిగి ఉండగలడు. అయితే, మీరు మైనర్ తరపున మరొక ఖాతాను తెరవవచ్చు."
+      "question": "Can I have more than one PPF account?",
+      "answer": "No, an individual can only have one PPF account in their name. You can, however, open another account on behalf of a minor."
     },
     {
-      "question": "నేను ఒక సంవత్సరంలో కనీసం ₹500 జమ చేయకపోతే ఏమి జరుగుతుంది?",
-      "answer": "ఖాతా నిష్క్రియం అవుతుంది. దానిని తిరిగి సక్రియం చేయడానికి, మీరు ప్రతి నిష్క్రియాత్మక సంవత్సరానికి ₹50 జరిమానా చెల్లించాలి, అలాగే ఆ ప్రతి సంవత్సరానికి ₹500 కనీస చందాను కూడా చెల్లించాలి."
+      "question": "What happens if I don't deposit the minimum â‚¹500 in a year?",
+      "answer": "The account becomes inactive. To reactivate it, you need to pay a penalty of â‚¹50 for each inactive year, along with the minimum subscription of â‚¹500 for each of those years."
     },
     {
-      "question": "ఒక ఎన్నారై PPF ఖాతాలో పెట్టుబడి పెట్టడం కొనసాగించవచ్చా?",
-      "answer": "ఒక నివాసేతర భారతీయుడు (ఎన్నారై) కొత్త PPF ఖాతాను తెరవలేడు. అయితే, వారు నివాసిగా ఒక ఖాతాను కలిగి ఉంటే, వారు మెచ్యూరిటీ వరకు దానిలో చందా కట్టడం కొనసాగించవచ్చు, కానీ ఖాతాను పొడిగించలేరు."
+      "question": "Can an NRI continue to invest in a PPF account?",
+      "answer": "A Non-Resident Indian (NRI) cannot open a new PPF account. However, if they had an account as a resident, they can continue to subscribe to it until maturity, but the account cannot be extended."
     },
     {
-      "question": "PPF మెచ్యూరిటీ విలువ పూర్తిగా పన్ను-రహితమా?",
-      "answer": "అవును, ప్రస్తుత పన్ను చట్టాల ప్రకారం, అసలు మరియు వడ్డీతో సహా మొత్తం మెచ్యూరిటీ మొత్తం ఆదాయపు పన్ను నుండి మినహాయించబడింది."
+      "question": "Is the maturity value of PPF completely tax-free?",
+      "answer": "Yes, under the current tax laws, the entire maturity amount, including principal and interest, is exempt from income tax."
     }
   ],
   "conclusion": {
-    "title": "ముగింపు: PPF మీకు సరైనదేనా?",
-    "body": "సురక్షితమైన, పన్ను-సమర్థవంతమైన, మరియు క్రమశిక్షణతో కూడిన మార్గంలో దీర్ఘకాలిక కార్పస్‌ను నిర్మించాలనుకునే ఎవరికైనా PPF ఒక అద్భుతమైన పెట్టుబడి. దాని హామీ రాబడులు మరియు EEE హోదా ఇది రిస్క్-విముఖ పెట్టుబడిదారుల కోసం ఒక బాగా-వైవిధ్యభరితమైన పోర్ట్‌ఫోలియో యొక్క మూలస్తంభంగా నిలుస్తుంది. చిన్న, స్థిరమైన పొదుపులు కాలక్రమేణా గణనీయమైన మొత్తంగా ఎలా పెరుగుతాయో చూడటానికి ఈ కాలిక్యులేటర్‌ను ఉపయోగించండి."
+    "title": "The Bottom Line: Is PPF Right For You?",
+    "body": "PPF is an outstanding investment for anyone looking for a safe, tax-efficient, and disciplined way to build a long-term corpus. Its guaranteed returns and EEE status make it a cornerstone of a well-diversified portfolio for risk-averse investors. Also see how it compares to the <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>Sukanya Samriddhi Yojana</a> for a girl child."
   }
 }
-
-    

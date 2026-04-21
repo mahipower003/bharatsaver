@@ -1,114 +1,130 @@
-
+﻿
 {
-  "meta_title": "FD மற்றும் PPF கால்குலேட்டர் 2025 — வருமானம், வரி மற்றும் முதிர்வை ஒப்பிடுக (இலவச கருவி)",
-  "meta_description": "எங்கள் இலவச FD மற்றும் PPF கால்குலேட்டரைப் பயன்படுத்தி முதிர்வுத் தொகைகள், வரி பாதிப்பு மற்றும் வரிக்குப் பிந்தைய வருமானத்தை ஒப்பிடவும். பிரீமியம் விளக்கப்படங்கள், எடுத்துக்காட்டுகள் மற்றும் தரவிறக்கம் செய்யக்கூடிய CSV ஆகியவை அடங்கும். செப்டம்பர் 2025 இல் புதுப்பிக்கப்பட்டது.",
-  "og_title": "FD மற்றும் PPF கால்குலேட்டர் 2025 — வருமானம், வரி மற்றும் முதிர்வை ஒப்பிடுக",
-  "og_description": "மொத்தத் தொகை FD மற்றும் தொடர்ச்சியான PPF பங்களிப்புகளின் வருமானத்தை ஒப்பிட இலவச FD மற்றும் PPF கால்குலேட்டர். வரிக்குப் பிந்தைய பகுப்பாய்வுடன் ஒரு தகவலறிந்த முதலீட்டு முடிவை எடுக்கவும்.",
-  "h1": "FD மற்றும் PPF கால்குலேட்டர் 2025 — வருமானம், வரி மற்றும் முதிர்வை ஒப்பிடுக (இலவச கருவி)",
-  "description": "எங்கள் இலவச FD மற்றும் PPF கால்குலேட்டர், நிலையான வைப்பு (FD) மொத்த முதலீடுகள் மற்றும் தொடர்ச்சியான பொது வருங்கால வைப்பு நிதி (PPF) பங்களிப்புகளின் வருமானத்தை ஒப்பிட உதவுகிறது. ஒரு தகவலறிந்த முதலீட்டு முடிவை எடுக்கவும்.",
-  "last_updated": "விகிதங்கள் புதுப்பிக்கப்பட்டன:",
-  "title": "FD மற்றும் PPF கால்குலேட்டர்",
-  "form_description": "ஒரே காலகட்டத்தில் ஒரு மொத்தத் தொகை FD முதலீட்டை ஒரு தொடர்ச்சியான ஆண்டு PPF முதலீட்டிற்கு எதிராக ஒப்பிடவும்.",
-  "investment_amount_label": "மொத்தத் தொகை / ஆண்டு முதலீடு",
-  "tenure_label": "முதலீட்டுக் காலம் (ஆண்டுகள்)",
-  "fd_rate_label": "FD வட்டி விகிதம் (% ஆண்டுக்கு)",
-  "ppf_rate_label": "PPF வட்டி விகிதம் (% ஆண்டுக்கு)",
-  "tax_bracket_label": "உங்கள் வருமான வரி அடுக்கு",
-  "calculate_button": "இப்போது ஒப்பிடுக",
-  "loading": "கணக்கிடப்படுகிறது...",
-  "results_title": "ஒப்பீட்டு முடிவுகள்",
-  "fd_label": "நிலையான வைப்பு (FD)",
-  "ppf_label": "பொது வருங்கால வைப்பு நிதி (PPF)",
-  "fd_maturity_label": "மொத்த முதிர்வு மதிப்பு",
-  "fd_post_tax_maturity_label": "வரிக்குப் பிந்தைய முதிர்வு மதிப்பு",
-  "total_interest_label": "மொத்தமாக ஈட்டிய வட்டி",
-  "total_investment_label": "மொத்த முதலீடு",
-  "ppf_maturity_label": "முதிர்வு மதிப்பு (வரி இல்லாதது)",
-  "export_csv": "CSV ஆக ஏற்றுமதி செய்",
+  "meta_title": "FD vs PPF Calculator 2025 â€” Compare Returns, Tax & Maturity (Free Tool)",
+  "meta_description": "Use our free FD vs PPF calculator to compare maturity amounts, tax impact and post-tax returns. Includes premium charts, examples, and downloadable CSV. Updated Sep 2025.",
+  "og_title": "FD vs PPF Calculator 2025 â€” Compare Returns, Tax & Maturity",
+  "og_description": "Free FD vs PPF calculator to compare returns on lump-sum FD vs recurring PPF contributions. Make an informed investment decision with post-tax analysis.",
+  "h1": "FD vs PPF Calculator 2025 â€” Compare Returns, Tax & Maturity (Free Tool)",
+  "description": "Our free FD vs PPF calculator helps you compare returns on Fixed Deposit (FD) lump-sum investments vs recurring Public Provident Fund (PPF) contributions. Make an informed investment decision.",
+  "last_updated": "Rates updated:",
+  "title": "FD vs PPF Calculator",
+  "form_description": "Compare a lump-sum FD investment against a recurring annual PPF investment over the same period.",
+  "investment_amount_label": "Lump-sum / Annual Investment",
+  "tenure_label": "Investment Tenure (Years)",
+  "fd_rate_label": "FD Interest Rate (% p.a.)",
+  "ppf_rate_label": "PPF Interest Rate (% p.a.)",
+  "tax_bracket_label": "Your Income Tax Bracket",
+  "calculate_button": "Compare Now",
+  "loading": "Calculating...",
+  "results_title": "Comparison Results",
+  "fd_label": "Fixed Deposit (FD)",
+  "ppf_label": "Public Provident Fund (PPF)",
+  "fd_maturity_label": "Gross Maturity Value",
+  "fd_post_tax_maturity_label": "Post-Tax Maturity Value",
+  "total_interest_label": "Total Interest Earned",
+  "total_investment_label": "Total Investment",
+  "ppf_maturity_label": "Maturity Value (Tax-Free)",
+  "export_csv": "Export CSV",
   "clarifier_note": {
-    "title": "முக்கியமான தெளிவுபடுத்தல்",
-    "body": "இந்த கால்குலேட்டர் <strong>ஒரு முறை, மொத்தத் தொகை FD</strong> முதலீட்டை ஒரு <strong>தொடர்ச்சியான, ஆண்டு PPF</strong> முதலீட்டுடன் ஒப்பிடுகிறது. 'ஆண்டு முதலீடு' தொகை தொடக்கத்தில் FD இல் மொத்தமாக முதலீடு செய்யப்படுகிறது, மற்றும் ஒவ்வொரு ஆண்டும் PPF கணக்கில் முதலீடு செய்யப்படுகிறது."
+    "title": "Important Clarification",
+    "body": "This calculator compares a <strong>one-time, lump-sum FD</strong> investment with a <strong>recurring, annual PPF</strong> investment. The 'Annual Investment' amount is invested as a lump sum in the FD at the start, and invested every year in the PPF account."
   },
   "assumptions": {
-    "title": "அனுமானங்கள்",
-    "body": "<ul><li>FD வட்டி ஆண்டுதோறும் கூட்டப்படுகிறது.</li><li>PPF முதலீடு ஒவ்வொரு நிதியாண்டின் தொடக்கத்திலும் செய்யப்படுகிறது.</li><li>FD மற்றும் PPF இரண்டிற்குமான வட்டி விகிதங்கள் முழு காலத்திற்கும் స్థిరంగా ఉంటాయి.</li><li>வரி নির্দিষ্ট స్లాబ్ రేటులో FD యొక్క వడ్డీ భాగంపై మాత్రమే கணக்கிடப்படுகிறது.</li></ul>"
+    "title": "Assumptions",
+    "body": "<ul><li>FD interest is compounded annually.</li><li>PPF investment is made at the start of each financial year.</li><li>Interest rates for both FD and PPF remain constant throughout the tenure.</li><li>Tax is calculated only on the interest component of the FD at the specified slab rate.</li></ul>"
   },
-  "result_snapshot": "{tenure} ஆண்டுகளுக்குப் பிறகு, {winner} {difference} ஆல் அதிக வரிக்குப் பிந்தைய வருமானத்தை அளிக்கிறது.",
+  "result_snapshot": "After {tenure} years, the {winner} yields a higher post-tax return by {difference}.",
   "quick_answer": {
-    "title": "விரைவான பதில்: எது சிறந்தது, FD அல்லது PPF?",
-    "body": "நீண்ட கால இலக்குகளுக்கு (15+ ஆண்டுகள்) மற்றும் உயர் வரி அடைப்புகளில் (20-30%) உள்ள முதலீட்டாளர்களுக்கு, <strong>PPF கிட்டத்தட்ட எப்போதும் దాని EEE (விலக்கு-விலக்கு-விலக்கு) హోదా కారణంగా ఉన్నతమైన పన్ను-తర్వాత రాబడులను అందిస్తుంది</strong>. FDகள் స్వల్పకాలిక లక్ష్యాలకు ఉత్తమం, ఇక్కడ ద్రవ్యత అవసరం మరియు PPF యొక్క లాక్-ఇన్ కాలాలు సరిపోవు. உங்கள் ಸ್ಲಾబ్ ನಿರ್ಧరించడానికి మా <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>పన్ను కాలిక్యులేటర్‌ను</a> ఉపయోగించండి."
+    "title": "Quick Answer: Which is better, FD or PPF?",
+    "body": "For long-term goals (15+ years) and for investors in higher tax brackets (20-30%), <strong>PPF almost always provides superior post-tax returns</strong> due to its EEE (Exempt-Exempt-Exempt) status. FDs are better for short-term goals where liquidity is needed and the lock-in periods of PPF are not suitable. Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax calculator</a> to determine your slab, and compare with <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>Atal Pension Yojana</a> for guaranteed pension benefits."
   },
   "how_it_works": {
-    "title": "ஒப்பீடு எவ்வாறு செயல்படுகிறது: செயல்படுத்தப்பட்ட எடுத்துக்காட்டுகள்",
+    "title": "How the Comparison Works: Worked Examples",
     "example1": {
-      "title": "FD கணக்கீட்டு எடுத்துக்காட்டு",
-      "body": "<p>நீங்கள் <strong>₹1,00,000</strong> ஐ <strong>15 ஆண்டுகளுக்கு</strong> <strong>7%</strong> வட்டிக்கு ஒரு FD இல் முதலீடு செய்தால்:</p><ul><li>முதிர்வு மதிப்பு = 1,00,000 * (1 + 0.07)^15 = <strong>₹2,75,903</strong></li><li>மொத்த வட்டி = 2,75,903 - 1,00,000 = ₹1,75,903</li><li>வரி (30% இல்) = 1,75,903 * 0.30 = ₹52,771</li><li>வரிக்குப் பிந்தைய முதிர்வு = 2,75,903 - 52,771 = <strong>₹2,23,132</strong></li></ul>"
+      "title": "FD Calculation Example",
+      "body": "<p>If you invest <strong>â‚¹1,00,000</strong> in an FD for <strong>15 years</strong> at <strong>7%</strong> interest:</p><ul><li>Maturity Value = 1,00,000 * (1 + 0.07)^15 = <strong>â‚¹2,75,903</strong></li><li>Total Interest = 2,75,903 - 1,00,000 = â‚¹1,75,903</li><li>Tax (at 30%) = 1,75,903 * 0.30 = â‚¹52,771</li><li>Post-Tax Maturity = 2,75,903 - 52,771 = <strong>â‚¹2,23,132</strong></li></ul>"
     },
     "example2": {
-      "title": "PPF கணக்கீட்டு எடுத்துக்காட்டு",
-      "body": "<p>நீங்கள் <strong>₹1,00,000 ஒவ்வொரு ஆண்டும்</strong> PPF இல் <strong>15 ஆண்டுகளுக்கு</strong> <strong>7.1%</strong> வட்டிக்கு முதலீடு செய்தால்:</p><ul><li>உங்கள் மொத்த முதலீடு ₹15,00,000 ஆக இருக்கும்.</li><li>ஆண்டு கூட்டுத்தொகையின் శక్తి ద్వారా இறுதி முதிர்வு மதிப்பு <strong>₹27,12,139</strong> ஆக இருக்கும்.</li><li>இந்த முழுத் தொகையும் வரி இல்லாதது.</li></ul>"
+      "title": "PPF Calculation Example",
+      "body": "<p>If you invest <strong>â‚¹1,00,000 every year</strong> in PPF for <strong>15 years</strong> at <strong>7.1%</strong> interest:</p><ul><li>Your total investment will be â‚¹15,00,000.</li><li>The final maturity value, through the power of annual compounding, will be <strong>â‚¹27,12,139</strong>.</li><li>This entire amount is tax-free.</li></ul>"
     }
   },
   "ppf_features": {
-    "title": "PPF இன் முக்கிய அம்சங்கள்",
+    "title": "Key Features of PPF",
     "points": [
-      "இந்திய அரசாங்கத்தால் ஆதரிக்கப்படுகிறது, மிக உயர்ந்த பாதுகாப்பை வழங்குகிறது.",
-      "EEE அந்தஸ்து பங்களிப்புகள், வட்டி மற்றும் முதிர்வுத் தொகையை வரி இல்லாததாக்குகிறது.",
-      "குறைந்தபட்சம் 15-ஆண்டு லாக்-இன், நீண்ட கால ஒழுக்கமான சேமிப்பை ஊக்குவிக்கிறது.",
-      "குறிப்பிட்ட காலங்களுக்குப் பிறகு கடன் மற்றும் பகுதி திரும்பப் பெறும் வசதிகள் உள்ளன."
+      "Backed by the Government of India, offering highest safety.",
+      "EEE status makes contributions, interest, and maturity amount tax-free.",
+      "Minimum 15-year lock-in, promoting long-term disciplined savings.",
+      "Loan and partial withdrawal facilities available after specific periods."
     ]
   },
   "fd_features": {
-    "title": "நிலையான வைப்பு (FD) இன் முக்கிய அம்சங்கள்",
+    "title": "Key Features of Fixed Deposit (FD)",
     "points": [
-      "7 நாட்கள் முதல் 10 ஆண்டுகள் வரை நெகிழ்வான காலங்கள்.",
-      "உத்தரவாத வருமானம், சந்தை செயல்திறனுடன் இணைக்கப்படவில்லை.",
-      "ஈட்டிய வட்டி உங்கள் வருமான வரி அடுக்குக்கு ஏற்ப முழுமையாக வரிக்குட்பட்டது.",
-      "முன்கூட்டியே திரும்பப் பெறுவது சாத்தியம், இருப்பினும் பொதுவாக ஒரு அபராதத்துடன்."
+      "Flexible tenures ranging from 7 days to 10 years.",
+      "Guaranteed returns, not linked to market performance.",
+      "Interest earned is fully taxable as per your income tax slab.",
+      "Premature withdrawal is possible, though usually with a penalty."
     ]
   },
   "comparison": {
-    "title": "FD மற்றும் PPF: ஒரு விரிவான ஒப்பீடு",
+    "title": "FD vs. PPF: A Detailed Comparison",
     "table": {
-      "headers": ["அம்சம்", "நிலையான வைப்பு (FD)", "பொது வருங்கால வைப்பு நிதி (PPF)"],
+      "headers": ["Feature", "Fixed Deposit (FD)", "Public Provident Fund (PPF)"],
       "rows": [
-        ["ஆபத்து நிலை", "மிகக் குறைவு (DICGC ஆல் ₹5 லட்சம் வரை காப்பீடு)", "இறையாண்மை (பயனுள்ள வகையில் பூஜ்ஜிய ஆபத்து)"],
-        ["வருமானம்", "வங்கியால் நிர்ணயிக்கப்பட்டது மற்றும் உத்தரவாதம் அளிக்கப்பட்டது", "அரசாங்கத்தால் உத்தரவாதம் அளிக்கப்பட்டது, காலாண்டுக்கு ஒருமுறை மதிப்பாய்வு செய்யப்படுகிறது"],
-        ["லாக்-இன் காலம்", "நெகிழ்வானது (7 நாட்கள் முதல் 10 ஆண்டுகள் வரை)", "15 ஆண்டுகள் (நீட்டிக்கப்படலாம்)"],
-        ["வட்டி/முதிர்ச்சியில் வரி", "உங்கள் அடுக்குக்கு ஏற்ப வரிக்குட்பட்டது", "முற்றிலும் வரி இல்லாதது (EEE)"],
-        ["முதலீட்டு நெகிழ்வுத்தன்மை", "ஒரு முறை மொத்தத் தொகை", "ஆண்டுதோறும் தொடர்ச்சியான வைப்புத்தொகை"],
-        ["இதற்கு சிறந்தது", "குறுகிய முதல் நடுத்தர கால இலக்குகள், அவசர நிதி", "நீண்ட கால இலக்குகள் (ஓய்வூதியம், கல்வி)"]
+        ["Risk Level", "Very Low (covered by DICGC up to â‚¹5 Lakh)", "Sovereign (Effectively zero risk)"],
+        ["Returns", "Fixed and Guaranteed by Bank", "Guaranteed by Govt, reviewed quarterly"],
+        ["Lock-in Period", "Flexible (7 days to 10 years)", "15 years (can be extended)"],
+        ["Tax on Interest/Maturity", "Taxable as per your slab", "Completely Tax-Free (EEE)"],
+        ["Investment Flexibility", "One-time lump sum", "Annual recurring deposits"],
+        ["Best For", "Short to medium-term goals, emergency fund", "Long-term goals (retirement, education)"]
       ]
     }
   },
   "tax_impact": {
-    "title": "தீர்மானகரமான காரணி: வரி தாக்கம்",
-    "body": "FD மற்றும் PPF க்கு இடையிலான மிகப்பெரிய வேறுபாடு வரிவிதிப்பு ஆகும். FD களில் இருந்து வரும் வட்டி உங்கள் 'பிற மூலங்களிலிருந்து வரும் வருமானம்' என்பதில் சேர்க்கப்பட்டு உங்கள் ஓரளவு அடுக்கு விகிதத்தில் வரி விதிக்கப்படுகிறது. 30% வரி அடைப்பில் உள்ள ஒருவருக்கு, 7% FD வருமானம் வரிக்குப் பிறகு திறம்பட 4.9% ஆகிறது. இதற்கு மாறாக, PPF வருமானம் முற்றிலும் வரி இல்லாதது, அதன் பயனுள்ள வருமானத்தை கணிசமாக உயர்த்துகிறது."
+    "title": "The Decisive Factor: Tax Impact",
+    "body": "The biggest difference between FD and PPF is taxation. Interest from FDs is added to your 'Income from Other Sources' and taxed at your marginal slab rate. For someone in the 30% tax bracket, a 7% FD return effectively becomes just 4.9% post-tax. In contrast, PPF returns are entirely tax-free, making its effective return significantly higher."
   },
   "checklist": {
-    "title": "எதை எப்போது தேர்ந்தெடுப்பது?",
+    "title": "When to Choose Which?",
     "points": [
-      "<strong>FD ஐத் தேர்ந்தெடுக்கவும்:</strong> உங்களிடம் ஒரு குறுகிய கால இலக்கு (1-5 ஆண்டுகள்) இருந்தால், அதிக நீர்மைத்திறன் தேவைப்பட்டால், మరియు நீங்கள் ஒரு குறைந்த வரி அடைப்பில் இருந்தால்.",
-      "<strong>PPF ஐத் தேர்ந்தெடுக்கவும்:</strong> உங்களிடம் ஒரு நீண்ட கால இலக்கு (15+ ஆண்டுகள்) இருந்தால், ஓய்வூதியத்திற்காக சேமிக்கிறீர்கள் என்றால், மற்றும் 20% లేదా 30% வரி அடைப்பில் இருந்தால்."
+      "<strong>Choose FD if:</strong> You have a short-term goal (1-5 years), need high liquidity, and are in a lower tax bracket.",
+      "<strong>Choose PPF if:</strong> You have a long-term goal (15+ years), are saving for retirement, and are in the 20% or 30% tax bracket."
     ]
   },
-  "faq_title": "அடிக்கடி கேட்கப்படும் கேள்விகள்",
+  "faq_title": "Frequently Asked Questions",
   "faqs": [
     {
-      "question": "நான் பிபிஎஃப்-ல் ₹1.5 லட்சத்திற்கும் அதிகமாக முதலீடு செய்யலாமா?",
-      "answer": "நீங்கள் அதிகமாக டெபாசிட் செய்யலாம், ஆனால் பிரிவு 80C இன் கீழ் வட்டி மற்றும் வரி நன்மைகளுக்குத் தகுதியான பங்களிப்பு ஒரு நிதியாண்டில் ₹1.5 லட்சத்தில் முடக்கப்பட்டுள்ளது."
+      "question": "Can I invest more than â‚¹1.5 lakh in PPF?",
+      "answer": "You can deposit more, but the contribution eligible for interest and tax benefits under Section 80C is capped at â‚¹1.5 lakh per financial year."
     },
     {
-      "question": "எஃப்டி வட்டி மீது டிடிஎஸ் கழிக்கப்படுமா?",
-      "answer": "ஆம், அந்த வங்கியில் உள்ள அனைத்து எஃப்டிகளிலிருந்தும் உங்கள் வட்டி வருமானம் ஒரு நிதியாண்டில் ₹40,000 (மூத்த குடிமக்களுக்கு ₹50,000) ஐத் தாண்டினால் வங்கிகள் 10% டிடிஎஸ் (மூலத்தில் வரி கழிக்கப்பட்டது) கழிக்கின்றன. நீங்கள் பான் வழங்கவில்லை என்றால், விகிதம் 20% ஆகும். நீங்கள் அதிக அடுக்கில் இருந்தால் கூடுதல் வரி செலுத்த வேண்டியிருக்கும்."
+      "question": "Is TDS deducted on FD interest?",
+      "answer": "Yes, banks deduct TDS (Tax Deducted at Source) at 10% if your interest income from all FDs in that bank exceeds â‚¹40,000 in a financial year (â‚¹50,000 for senior citizens). If you don't provide PAN, the rate is 20%. You may still have to pay additional tax if you are in a higher slab."
     },
     {
-      "question": "எது சிறந்த வட்டி விகிதத்தைக் கொண்டுள்ளது, எஃப்டி அல்லது பிபிஎஃப்?",
-      "answer": "வரலாற்று ரீதியாக, பிபிஎஃப் பெரும்பாலான வங்கி எஃப்டிகளை விட அதிக விகிதத்தை வழங்கியுள்ளது. தற்போது, பிபிஎஃப் விகிதம் 7.1% ஆக உள்ளது, அதே நேரத்தில் நீண்ட காலங்களுக்கான பெரும்பாலான வங்கி எஃப்டிகள் 6.5% முதல் 7.25% வரம்பில் உள்ளன. இருப்பினும், வரி செலுத்தும் அடைப்புகளில் உள்ளவர்களுக்கு பிபிஎஃப்-லிருந்து வரிக்குப் பிந்தைய வருமானம் கிட்டத்தட்ட எப்போதும் அதிகமாக உள்ளது."
+      "question": "Which has a better interest rate, FD or PPF?",
+      "answer": "Historically, PPF has offered a higher rate than most bank FDs. Currently, the PPF rate is 7.1%, while most bank FDs for longer tenures are in the 6.5% to 7.25% range. However, the post-tax return from PPF is almost always higher for those in tax-paying brackets."
+    },
+    {
+      "question": "How does PPF compare with NPS for retirement planning?",
+      "answer": "Both PPF and NPS are excellent for long-term savings, but NPS offers market-linked returns with higher growth potential. Use our <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS calculator</a> to compare returns and benefits."
+    },
+    {
+      "question": "Can I use PPF for child education planning?",
+      "answer": "PPF is great for long-term goals like education. For child-specific plans, consider <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>Sukanya Samriddhi Yojana</a> which offers higher interest rates and tax benefits for girl child education."
+    },
+    {
+      "question": "What about LIC insurance plans vs PPF?",
+      "answer": "LIC plans provide insurance coverage along with investment returns. Compare PPF with LIC schemes using our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> and <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a>."
     }
   ],
+  "related_calculators": {
+    "title": "Explore More Investment Calculators",
+    "body": "Build a comprehensive investment strategy with our suite of calculators. Calculate <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF returns</a>, compare <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlaps</a>, and plan for <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>LIC Jeevan Anand</a> benefits."
+  },
   "conclusion": {
-    "title": "சரியான இலக்குக்கு சரியான கருவி",
-    "body": "FD மற்றும் PPF இரண்டும் தத்தமது வழியில் சிறந்த கருவிகள். தேர்வு என்பது உலகளவில் எது 'சிறந்தது' என்பதைப் பற்றியது அல்ல, ஆனால் *உங்கள்* குறிப்பிட்ட நிதி இலக்கு మరియు காலக்கெடுவுக்கு எது சிறந்தது என்பதைப் பற்றியது. உங்களுக்காக எண்களைப் பார்க்க இந்தக் கால்குலேட்டரைப் பயன்படுத்தவும் மற்றும் உங்கள் நிதித் திட்டத்துடன் ஒத்துப்போகும் ஒரு தகவலறிந்த முடிவை எடுக்கவும். ஒரு முழுமையான போர்ட்ஃபோலியோ பார்வக்கு, <a href='/{lang}/nps-calculator'>NPS கால்குலேட்டரையும்</a> మరియు <a href='/{lang}/ssy-calculator'>SSY கால்குலேட்டரையும்</a> ஒப்பிடுவதையும் கருத்தில் கொள்ளுங்கள்."
+    "title": "The Right Tool for the Right Goal",
+    "body": "Both FD and PPF are excellent tools in their own right. The choice isn't about which is universally 'better,' but which is better for *your* specific financial goal and timeline. Use this calculator to see the numbers for yourself and make an informed decision that aligns with your financial plan. For a complete portfolio view, also consider comparing with our <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS Calculator</a>, <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>SSY Calculator</a>, and <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a>. Explore <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> for market-linked investments and <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for debt management."
   }
 }

@@ -1,21 +1,21 @@
-
+﻿
 {
-  "meta_title": "எல்ஐசி ஒற்றை பிரீமியம் எண்டோமென்ட் கால்குலேटर (திட்டம் 917/717) - பிரீமியம் & முதிர்வு ஆன்லைன்",
-  "meta_description": "உங்கள் பிரீமியம், முதிர்வு மதிப்பு, போனஸ் மற்றும் வரி நன்மைகளை மதிப்பிட எல்ஐசி ஒற்றை பிரீமியம் எண்டோமென்ட் கால்குலேட்டரை ஆன்லைனில் இலவசமாகப் பயன்படுத்தவும். திட்டம் 917/717 ஒரு முறை முதலீட்டு வருமானம் விளக்கப்பட்டுள்ளது.",
-  "h1": "எல்ஐசி ஒற்றை பிரீமியம் எண்டோமென்ட் கால்குலேட்டர் (திட்டம் 917/717/817)",
-  "description": "உத்தரவாதமான வருமானம், காப்பீட்டுத் தொகை மற்றும் வரி நன்மைகளை வழங்கும் ஒரு பாதுகாப்பான ஒரு முறை முதலீட்டைத் தேடுகிறீர்களா? எல்ஐசி ஒற்றை பிரீமியம் எண்டோமென்ட் திட்டம் ஒரு பிரபலமான தேர்வாகும். நீங்கள் சரியாக என்ன செலுத்துவீர்கள் மற்றும் உங்களுக்கு என்ன திரும்பக் கிடைக்கும் என்பதைப் பார்க்க எங்கள் இலவச எல்ஐசி ஒற்றை பிரீமியம் எண்டோமென்ட் கால்குலேட்டரைப் பயன்படுத்தவும்.",
+  "meta_title": "LIC Single Premium Endowment Calculator (Plan 917/717) â€“ Premium & Maturity Online",
+  "meta_description": "Use LIC Single Premium Endowment Calculator online free to estimate your premium, maturity value, bonus & tax benefits. Plan 917/717 one-time investment returns explained.",
+  "h1": "LIC Single Premium Endowment Calculator (Plan 917/717/817)",
+  "description": "Looking for a secure one-time investment that offers guaranteed returns, insurance coverage, and tax benefits? The LIC Single Premium Endowment Plan is a popular choice. Use our free LIC Single Premium Endowment Calculator to see exactly what you'll pay and what you could get back.",
   "tool": {
-    "title": "எல்ஐசி ஒற்றை பிரீமியம் எண்டோமென்ட் கால்குலேட்டர்",
-    "form_description": "ஒரு உடனடி பிரீமியம் மற்றும் முதிர்வு மதிப்பீட்டைப் பெற உங்கள் விவரங்களை உள்ளிடவும்.",
-    "age_label": "உங்கள் வயது (90 நாட்கள் - 65 ஆண்டுகள்)",
-    "term_label": "பாலிசி காலம் (10-25 ஆண்டுகள்)",
-    "sum_assured_label": "காப்பீட்டுத் தொகை (₹)",
-    "calculate_button": "நன்மைகளைக் கணக்கிடு",
-    "calculating": "கணக்கிடப்படுகிறது...",
-    "addb_rider_label": "விபத்து மரணம் மற்றும் இயலாமை நன்மை ரைடர்",
-    "term_rider_label": "டேர்ம் அஷ்யூரன்ஸ் ரைடர்",
+    "title": "LIC Single Premium Endowment Calculator",
+    "form_description": "Enter your details to get an instant premium and maturity estimate.",
+    "age_label": "Your Age (90 days - 65 years)",
+    "term_label": "Policy Term (10-25 years)",
+    "sum_assured_label": "Sum Assured (â‚¹)",
+    "calculate_button": "Calculate Benefits",
+    "calculating": "Calculating...",
+    "addb_rider_label": "Accidental Death & Disability Benefit Rider",
+    "term_rider_label": "Term Assurance Rider",
     "results": {
-      "note": "பொறுப்புத் துறப்பு: அனைத்து மதிப்புகளும் மதிப்பீடுகள். போனஸ் விகிதங்கள் விளக்கத்திற்கானது மற்றும் உத்தரவாதம் அளிக்கப்படவில்லை."
+      "note": "Disclaimer: All values are estimates. Bonus rates are illustrative and not guaranteed."
     }
   },
   "article": {
@@ -23,49 +23,49 @@
        {
         "id": "what-is-plan",
         "icon": "HelpCircle",
-        "title": "எல்ஐசி ஒற்றை பிரீமியம் எண்டோமென்ட் திட்டம் (917/717/817) என்றால் என்ன?",
+        "title": "What is LIC Single Premium Endowment Plan (917/717/817)?",
         "content": [
-          { "type": "paragraph", "text": "எல்ஐசி ஒற்றை பிரீமியம் எண்டோமென்ட் திட்டம் (UIN: 512N283V03) ஒரு நேரடியான சேமிப்பு மற்றும் பாதுகாப்புத் திட்டமாகும், இதில் நீங்கள் பாலிசியின் தொடக்கத்தில் ஒரு முறை மட்டுமே பிரீமியம் செலுத்துகிறீர்கள். இது ஒரு தொந்தரவு இல்லாத, ஒரு முறை முதலீடு ஆகும், இது உத்தரவாதமான சேமிப்பு மற்றும் ஆயுள் காப்பீட்டுத் தொகையின் கலவையை வழங்குகிறது. பாலிசி காலத்தின் முடிவில், நீங்கள் ஒரு மொத்த முதிர்வுத் தொகையைப் பெறுவீர்கள், மேலும் உங்கள் குடும்பம் முழு காலத்திற்கும் மரணப் பலனால் பாதுகாக்கப்படுகிறது. ஒரு மொத்தத் தொகையை வைத்திருப்பவர்களுக்கும், அதை எதிர்கால இலக்குக்காகப் பாதுகாக்க விரும்புபவர்களுக்கும் இது ஒரு சிறந்த தீர்வாகும்." }
+          { "type": "paragraph", "text": "The LIC Single Premium Endowment Plan (UIN: 512N283V03) is a straightforward savings-cum-protection plan where you pay the premium only once at the start of the policy. It's a hassle-free, one-time investment that provides a combination of guaranteed savings and life insurance coverage. Compare this with our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> for other payment options and our <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a> to estimate your final benefits. At the end of the policy term, you receive a lump sum maturity amount, and your family is protected with a death benefit throughout the term. It's an ideal solution for those who have a lump sum amount and want to secure it for a future goal." }
         ]
       },
       {
         "id": "key-features",
         "icon": "ShieldCheck",
-        "title": "முக்கிய அம்சங்கள், தகுதி மற்றும் வரி நன்மைகள்",
+        "title": "Key Features, Eligibility & Tax Benefits",
         "content": [
           { "type": "list", "items": [
-              "<strong>நுழைவு வயது:</strong> 90 நாட்கள் (முழுமை பெற்றது) முதல் 65 ஆண்டுகள் வரை",
-              "<strong>பாலிசி காலம்:</strong> 10 முதல் 25 ஆண்டுகள் வரை",
-              "<strong>பிரீமியம் செலுத்துதல்:</strong> ஒற்றை செலுத்துதல் மட்டுமே",
-              "<strong>காப்பீட்டுத் தொகை:</strong> குறைந்தபட்சம் ₹50,000 (உச்ச வரம்பு இல்லை)",
-              "<strong>ரைடர்கள்:</strong> விபத்து மரணம் மற்றும் இயலாமை நன்மை ரைடர் மற்றும் ஒரு புதிய டேர்ம் அஷ்யூரன்ஸ் ரைடர் கிடைக்கின்றன.",
-              "<strong>வரி நன்மைகள்:</strong> செலுத்தப்பட்ட பிரீமியத்தை பிரிவு 80C இன் கீழ் கோரலாம். நிபந்தனைகளுக்கு உட்பட்டு பிரிவு 10(10D) இன் கீழ் முதிர்வு வரி இல்லாததாக இருக்கலாம்."
+              "<strong>Entry Age:</strong> 90 days (completed) to 65 years",
+              "<strong>Policy Term:</strong> 10 to 25 years",
+              "<strong>Premium Payment:</strong> Single Pay Only",
+              "<strong>Sum Assured:</strong> Minimum â‚¹50,000 (No upper limit)",
+              "<strong>Riders:</strong> Accidental Death & Disability Benefit Rider and a New Term Assurance Rider are available.",
+              "<strong>Tax Benefits:</strong> Premium paid can be claimed under Section 80C. Maturity may be tax-free under Section 10(10D) subject to conditions."
           ]}
         ]
       },
       {
         "id": "how-to-use",
         "icon": "StepForward",
-        "title": "எல்ஐசி ஒற்றை பிரீமியம் எண்டோமென்ட் கால்குலேட்டர் - அது எப்படி வேலை செய்கிறது",
+        "title": "LIC Single Premium Endowment Calculator â€“ How It Works",
         "content": [
-          { "type": "paragraph", "text": "எங்கள் இலவச ஆன்லைன் கால்குலேட்டர் இந்தத் திட்டத்தைப் புரிந்துகொள்ளும் செயல்முறையை எளிதாக்குகிறது. இது வேகமானது, துல்லியமானது மற்றும் பயன்படுத்த எளிதானது:"},
+          { "type": "paragraph", "text": "Our free online calculator simplifies the process of understanding this plan. It's quick, accurate, and easy to use:"},
           { "type": "steps", "items": [
-              {"title": "உங்கள் விவரங்களை உள்ளிடவும்", "description": "உங்கள் வயது, விரும்பிய பாலிசி காலம் மற்றும் நீங்கள் விரும்பும் காப்பீட்டுத் தொகையை உள்ளிடவும்."},
-              {"title": "'கணக்கிடு' என்பதைக் கிளிக் செய்யவும்", "description": "இந்தக் கருவி உங்கள் ஒரு முறை பிரீமியத்தை, பொருந்தக்கூடிய வரிகள் உட்பட, உடனடியாகக் கணக்கிடுகிறது."},
-              {"title": "உங்கள் வருமானத்தைப் பார்க்கவும்", "description": "கால்குலேட்டர் உங்கள் மதிப்பிடப்பட்ட முதிர்வு மதிப்பை, காப்பீட்டுத் தொகை, வழங்கப்பட்ட போனஸ்கள் மற்றும் ஒரு சாத்தியமான இறுதி கூடுதல் போனஸ் (FAB) உட்பட, திட்டமிடுகிறது."}
+              {"title": "Enter Your Details", "description": "Input your age, desired policy term, and the Sum Assured you want."},
+              {"title": "Click 'Calculate'", "description": "The tool instantly computes your one-time premium, including applicable taxes."},
+              {"title": "View Your Returns", "description": "The calculator projects your estimated maturity value, including the Sum Assured, vested bonuses, and a potential Final Additional Bonus (FAB)."}
           ]}
         ]
       },
       {
         "id": "irr-return",
         "icon": "TrendingUp",
-        "title": "எல்ஐசி ஒற்றை பிரீமியம் IRR (வருமான %)",
+        "title": "LIC Single Premium IRR (Return %)",
         "content": [
-          { "type": "paragraph", "text": "உள் வருவாய் விகிதம் (IRR) என்பது உங்கள் முதலீட்டின் மீதான பயனுள்ள ஆண்டு வருமானம். இங்கே ஒரு வேலை செய்யப்பட்ட உதாரணம்:" },
+          { "type": "paragraph", "text": "The Internal Rate of Return (IRR) is the effective annual return on your investment. Here's a worked-out example. Compare these returns with our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a> to see how this stacks up against fixed deposits and Public Provident Fund options." },
           { "type": "examples", "items": [
               {
-                "title": "எடுத்துக்காட்டு IRR கணக்கீடு:",
-                "body": "<strong>ஒரு முறை பிரீமியம்:</strong> ₹2.87 லட்சம்<br><strong>முதிர்வு மதிப்பு:</strong> ₹8.62 லட்சம் (15 ஆண்டுகளுக்குப் பிறகு)<br><strong>பயனுள்ள IRR:</strong> ~5.3% ஆண்டுக்கு (வரி இல்லாதது).<br>இது 'எல்ஐசி ஒற்றை பிரீமியம் வருமான கால்குலேட்டர்' கேள்விகளுக்கு உண்மையான, கூட்டு வருமானத்தைக் காண்பிப்பதன் மூலம் நேரடியாக பதிலளிக்கிறது."
+                "title": "Example IRR Calculation:",
+                "body": "<strong>One-Time Premium:</strong> â‚¹2.87 lakh<br><strong>Maturity Value:</strong> â‚¹8.62 lakh (after 15 years)<br><strong>Effective IRR:</strong> ~5.3% per annum (tax-free).<br>This directly answers 'LIC single premium return calculator' queries by showing the real, compounded return."
               }
           ]}
         ]
@@ -73,47 +73,47 @@
        {
         "id": "maturity-chart",
         "icon": "BarChart2",
-        "title": "எல்ஐசி ஒற்றை பிரீமியம் எண்டோமென்ட் முதிர்வு விளக்கப்படம்",
+        "title": "LIC Single Premium Endowment Maturity Chart",
         "content": [
-          { "type": "paragraph", "text": "கீழேயுள்ள அட்டவணை வெவ்வேறு காப்பீட்டுத் தொகைகள் மற்றும் காலங்களுக்கான விளக்க முதிர்வு மதிப்புகள் மற்றும் IRRகளை வழங்குகிறது." },
-          { "type": "table", "headers": ["காப்பீட்டுத் தொகை", "பிரீமியம் (தோராயமாக)", "காலம்", "முதிர்வு (தோராயமாக)", "IRR"], "rows": [
-              ["₹5 லட்சம்", "₹2.87L", "15Y", "₹8.62L", "5.3%"],
-              ["₹10 லட்சம்", "₹5.8L", "20Y", "₹19L", "5.5%"],
-              ["₹25 லட்சம்", "₹14.5L", "25Y", "₹52L", "5.6%"],
-              ["₹1 கோடி", "₹58-60L", "20Y", "₹1.9–2 கோடி", "5.7%"]
+          { "type": "paragraph", "text": "The table below provides illustrative maturity values and IRRs for different Sum Assured amounts and terms." },
+          { "type": "table", "headers": ["Sum Assured", "Premium (approx)", "Term", "Maturity (approx)", "IRR"], "rows": [
+              ["â‚¹5 Lakh", "â‚¹2.87L", "15Y", "â‚¹8.62L", "5.3%"],
+              ["â‚¹10 Lakh", "â‚¹5.8L", "20Y", "â‚¹19L", "5.5%"],
+              ["â‚¹25 Lakh", "â‚¹14.5L", "25Y", "â‚¹52L", "5.6%"],
+              ["â‚¹1 Crore", "â‚¹58-60L", "20Y", "â‚¹1.9â€“2 Cr", "5.7%"]
           ]}
         ]
       },
        {
         "id": "bonus-rates-chart",
         "icon": "BarChart2",
-        "title": "எல்ஐசி ஒற்றை பிரீமியம் போனஸ் விகித விளக்கப்படம் (கடந்த 5 ஆண்டுகள்)",
+        "title": "LIC Single Premium Bonus Rate Chart (Past 5 Years)",
         "content": [
-          { "type": "paragraph", "text": "போனஸ் விகிதங்கள் எல்ஐசியால் ஆண்டுதோறும் அறிவிக்கப்படுகின்றன மற்றும் உங்கள் வருமானத்தின் ஒரு முக்கிய அங்கமாகும். உத்தரவாதம் அளிக்கப்படாவிட்டாலும், வரலாற்று விகிதங்கள் ஒரு வலுவான அறிகுறியை வழங்குகின்றன." },
-          { "type": "table", "headers": ["நிதியாண்டு", "போனஸ் प्रति ₹1,000 காப்பீட்டுத் தொகை (சராசரி)"], "rows": [
-              ["2023-24", "₹44"],
-              ["2022-23", "₹42"],
-              ["2021-22", "₹41"],
-              ["2020-21", "₹40"],
-              ["2019-20", "₹40"]
+          { "type": "paragraph", "text": "Bonus rates are declared annually by LIC and are a key component of your returns. While not guaranteed, historical rates offer a strong indication." },
+          { "type": "table", "headers": ["Financial Year", "Bonus per â‚¹1,000 SA (Avg.)"], "rows": [
+              ["2023-24", "â‚¹44"],
+              ["2022-23", "â‚¹42"],
+              ["2021-22", "â‚¹41"],
+              ["2020-21", "â‚¹40"],
+              ["2019-20", "â‚¹40"]
           ]}
         ]
       },
        {
         "id": "high-sum-example",
         "icon": "TrendingUp",
-        "title": "அதிக காப்பீட்டுத் தொகை உதாரணம் (1 கோடி பாலிசி)",
+        "title": "High Sum Assured Example (1 Crore Policy)",
         "content": [
           {
             "type": "paragraph",
-            "text": "இந்தத் திட்டம் உயர்-நிகர-மதிப்புள்ள நபர்களுக்கும் ஒரு பாதுகாப்பான, ஒரு முறை முதலீட்டைத் தேடுபவர்களுக்கும் ஏற்றது. இது 'எல்ஐசி 1 கோடி ஒற்றை பிரீமியம் திட்டம்' போன்ற தேடல்களை இலக்காகக் கொள்ள உதவுகிறது."
+            "text": "This plan is also suitable for high-net-worth individuals looking for a safe, one-time investment. This helps target searches like 'LIC 1 crore single premium plan'."
           },
           {
             "type": "examples",
             "items": [
               {
-                "title": "சூழ்நிலை: ₹1 கோடி காப்பீட்டுத் தொகை",
-                "body": "<strong>உள்ளீடுகள்:</strong> வயது: 35, காலம்: 20 ஆண்டுகள், காப்பீட்டுத் தொகை: ₹1 கோடி.<br/><strong>ஒற்றை பிரீமியம்:</strong> தோராயமாக ₹58-60 லட்சம் (ஒரு முறை).<br/><strong>மதிப்பிடப்பட்ட முதிர்வு:</strong> ~₹1.9 முதல் ₹2.0 கோடி வரை (வரி இல்லாதது, காப்பீட்டுத் தொகை ≥ 10× பிரீமியம் என்றால்)."
+                "title": "Scenario: â‚¹1 Crore Sum Assured",
+                "body": "<strong>Inputs:</strong> Age: 35, Term: 20 years, Sum Assured: â‚¹1 Crore.<br/><strong>Single Premium:</strong> Approx. â‚¹58-60 Lakhs (one-time).<br/><strong>Estimated Maturity:</strong> ~â‚¹1.9 to â‚¹2.0 Crore (tax-free, if SA â‰¥ 10Ã— premium)."
               }
             ]
           }
@@ -122,20 +122,20 @@
        {
         "id": "surrender-value",
         "icon": "TrendingUp",
-        "title": "சரணடைவு மதிப்பு விளக்கப்பட்டது",
+        "title": "Surrender Value Explained",
         "content": [
-          { "type": "paragraph", "text": "நீங்கள் ஒரு முழு ஆண்டுக்குப் பிறகு பாலிசியை சரணடையலாம். நீங்கள் பெறும் மதிப்பு இரண்டு காரணிகளைப் பொறுத்தது:" },
+          { "type": "paragraph", "text": "You can surrender the policy after one full year. The value you receive depends on two factors:" },
           {
             "type": "list",
             "items": [
-                "<strong>உத்தரவாத சரணடைவு மதிப்பு (GSV):</strong> செலுத்தப்பட்ட ஒற்றை பிரீமியத்தின் ஒரு சதவீதம் (ரைடர்கள்/வரிகள் தவிர்த்து). இது முதல் ஆண்டில் 75% மற்றும் அதன் பிறகு 90% ஆகும்.",
-                "<strong>சிறப்பு சரணடைவு மதிப்பு (SSV):</strong> இது ஒரு உயர் மதிப்பு, இது வழங்கப்பட்ட போனஸ்களையும் சார்ந்துள்ளது மற்றும் எல்ஐசியால் அவர்களின் செயல்திறனின் அடிப்படையில் தீர்மானிக்கப்படுகிறது."
+                "<strong>Guaranteed Surrender Value (GSV):</strong> A percentage of the single premium paid (excluding riders/taxes). It's 75% in the first year and 90% thereafter.",
+                "<strong>Special Surrender Value (SSV):</strong> This is a higher value that also depends on the vested bonuses and is determined by LIC based on their performance."
             ]
           },
           {
             "type": "examples",
             "items": [
-              { "title": "சரணடைவு மதிப்பு உதாரணம்", "body": "நீங்கள் <strong>₹5 லட்சம் பிரீமியம்</strong> செலுத்தி 5 ஆண்டுகளுக்குப் பிறகு பாலிசியை சரணடைந்தால், உங்கள் சரணடைவு மதிப்பு சுமார் <strong>₹3.2 லட்சம்</strong> ஆக இருக்கலாம் (விளக்கப்படம்). இது தேவைப்பட்டால் ஒரு நீர்மைத்தன்மை விருப்பத்தை வழங்குகிறது." }
+              { "title": "Surrender Value Example", "body": "If you paid a <strong>â‚¹5 Lakh premium</strong> and surrender the policy after 5 years, your surrender value might be around <strong>â‚¹3.2 Lakh</strong> (illustrative). This provides a liquidity option if needed." }
             ]
           }
         ]
@@ -143,22 +143,22 @@
       {
         "id": "tax-benefits-explained",
         "icon": "FileText",
-        "title": "வரி நன்மைகள் — 80C & 10(10D) எச்சரிக்கை",
+        "title": "Tax Benefits â€” 80C & 10(10D) Caveat",
         "content": [
-            { "type": "paragraph", "text": "இந்தத் திட்டம் வரி நன்மைகளை வழங்குகிறது, ஆனால் முதிர்வுக்கான ஒரு முக்கியமான நிபந்தனையுடன்." },
+            { "type": "paragraph", "text": "The plan offers tax benefits, but with an important condition for maturity. Optimize your tax strategy using our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to compare this with other investment options." },
             {
                 "type": "list",
                 "items": [
-                    "<strong>பிரிவு 80C:</strong> செலுத்தப்பட்ட பிரீமியங்கள் ₹1.5 லட்சம் வரை விலக்குக்குத் தகுதி பெறுகின்றன.",
-                    "<strong>பிரிவு 10(10D):</strong> முதிர்வு வரி இல்லாதது <strong>காப்பீட்டுத் தொகை செலுத்தப்பட்ட ஒற்றை பிரீமியத்தின் குறைந்தபட்சம் 10 மடங்கு இருந்தால் மட்டுமே</strong>."
+                    "<strong>Section 80C:</strong> Premiums paid qualify for deduction up to â‚¹1.5 Lakh.",
+                    "<strong>Section 10(10D):</strong> Maturity is tax-free <strong>only if the Sum Assured is at least 10 times the single premium paid</strong>."
                 ]
             },
             {
                 "type": "examples",
                 "items": [
                     {
-                        "title": "வரிக்குட்பட்ட உதாரணம்",
-                        "body": "உங்கள் ₹5 லட்சம் காப்பீட்டுத் தொகைக்கான ஒற்றை பிரீமியம் ₹3.5 லட்சமாக இருந்தால், காப்பீட்டுத் தொகை பிரீமியத்தை விட 10 மடங்கு இல்லை. இதுபோன்ற சந்தர்ப்பங்களில், முதிர்வு வருமானம் வரிக்குட்பட்டதாக மாறக்கூடும். முதலீடு செய்வதற்கு முன் இந்த விகிதத்தை எப்போதும் சரிபார்க்கவும்."
+                        "title": "Taxability Example",
+                        "body": "If your single premium for a â‚¹5 Lakh Sum Assured is â‚¹3.5 Lakh, the Sum Assured is not 10 times the premium. In such cases, the maturity proceeds could become taxable. Always check this ratio before investing."
                     }
                 ]
             }
@@ -167,16 +167,16 @@
       {
         "id": "benefits-drawbacks",
         "icon": "GitCompareArrows",
-        "title": "இந்தத் திட்டத்தின் நன்மைகள் மற்றும் தீமைகள்",
+        "title": "Benefits vs. Drawbacks of This Plan",
         "content": [
             {
                 "type": "table",
-                "headers": ["✅ நன்மைகள்", "❌ தீமைகள்"],
+                "headers": ["âœ… Benefits", "âŒ Drawbacks"],
                 "rows": [
-                    ["ஒரு முறை, தொந்தரவு இல்லாத பிரீமியம் செலுத்துதல்.", "வருமானம் மிதமானது (அதிக பணவீக்கத்தை வெல்ல முடியாது)."],
-                    ["உத்தரவாதமான மொத்தத் தொகை முதிர்வு மற்றும் ஆயுள் காப்பீடு.", "ஒரு பெரிய முன்பணம் தேவைப்படுகிறது."],
-                    ["80C மற்றும் சாத்தியமான 10(10D) இன் கீழ் வரி நன்மைகள்.", "பாலிசியின் ஆரம்ப ஆண்டுகளில் குறைந்த நீர்மைத்தன்மை."],
-                    ["நீர்மைத்தன்மைக்கு கடன் மற்றும் சரணடைதல் வசதி உள்ளது.", "ஆக்கிரமிப்பு முதலீட்டாளர்களுக்கு ஒரு உயர்-வளர்ச்சி கருவி அல்ல."]
+                    ["One-time, hassle-free premium payment.", "Returns are modest (may not beat high inflation)."],
+                    ["Guaranteed lump sum maturity plus life cover.", "Requires a large upfront premium payment."],
+                    ["Tax benefits under 80C and potentially 10(10D).", "Low liquidity in the early years of the policy."],
+                    ["Loan and surrender facility available for liquidity.", "Not a high-growth instrument for aggressive investors."]
                 ]
             }
         ]
@@ -184,60 +184,60 @@
        {
         "id": "nri-angle",
         "icon": "Users",
-        "title": "என்ஆர்ஐகள் எல்ஐசி ஒற்றை பிரீமியம் எண்டோமென்ட் திட்டத்தில் முதலீடு செய்யலாமா?",
+        "title": "Can NRIs Invest in LIC Single Premium Endowment Plan?",
         "content": [
-            { "type": "paragraph", "text": "ஆம், குடியுரிமை பெறாத இந்தியர்கள் (என்ஆர்ஐகள்) இந்தத் திட்டத்தில் முற்றிலும் முதலீடு செய்யலாம், இது ஒரு பாதுகாப்பான, இந்திய அடிப்படையிலான கருவியில் ஒரு மொத்தத் தொகையை முதலீடு செய்ய விரும்புபவர்களுக்கு மிகவும் பிரபலமான தேர்வாக அமைகிறது. முதலீடு இந்திய ரூபாயில் (INR) செய்யப்பட வேண்டும் மற்றும் இது ஃபெமா விதிமுறைகளுக்கு உட்பட்டது. இது என்ஆர்ஐகள் இந்தியாவில் ஒரு ஒற்றை, நேரடியான கட்டணத்துடன் ஒரு உத்தரவாதமான சேமிப்புத் திட்டத்தில் பங்கேற்க ஒரு சிறந்த வழியாகும்."}
+            { "type": "paragraph", "text": "Yes, Non-Resident Indians (NRIs) can absolutely invest in this plan, making it a very popular choice for those looking to invest a lump sum in a secure, India-based instrument. The investment must be made in Indian Rupees (INR) and is subject to FEMA regulations. This is a great way for NRIs to participate in a guaranteed savings plan in India with a single, straightforward payment."}
         ]
       },
       {
         "id": "who-should-buy",
         "icon": "Users",
-        "title": "இந்தத் திட்டத்தை யார் வாங்க வேண்டும்?",
+        "title": "Who Should Buy This Plan?",
         "content": [
-            { "type": "paragraph", "text": "இந்தத் திட்டம் அனைவருக்கும் பொருந்தாது, ஆனால் இது குறிப்பிட்ட சுயவிவரங்களுக்கு ஒரு சிறந்த பொருத்தம்:"},
+            { "type": "paragraph", "text": "This plan is not for everyone, but it's an excellent fit for specific profiles:"},
             { "type": "list", "items": [
-                "<strong>ஆபத்து-வெறுக்கும் முதலீட்டாளர்கள்:</strong> மூலதனப் பாதுகாப்பிற்கு அதிக வருமானத்தை விட முன்னுரிமை அளிக்கும் தனிநபர்கள்.",
-                "<strong>மொத்த நிதி உள்ளவர்கள்:</strong> ஓய்வூதியர்களுக்கான கார்பஸ், போனஸ் பெற்றவர்கள், அல்லது இந்தியாவில் ஒரு முறை தொகையை முதலீடு செய்ய விரும்பும் என்ஆர்ஐகளுக்கு ஏற்றது.",
-                "<strong>இலக்கு அடிப்படையிலான திட்டமிடுபவர்கள்:</strong> ஒரு நிலையான, ஒரு முறை முதலீட்டுடன் ஒரு குழந்தையின் எதிர்காலக் கல்வி அல்லது திருமணத்தைத் திட்டமிடும் பெற்றோர்கள் அல்லது தாத்தா பாட்டிகள்."
+                "<strong>Risk-Averse Investors:</strong> Individuals who prioritize capital safety over high returns.",
+                "<strong>Those with Lump Sum Funds:</strong> Perfect for retirees with a corpus, people who received a bonus, or NRIs looking to invest a one-time amount in India.",
+                "<strong>Goal-Based Planners:</strong> Parents or grandparents planning for a child's future education or marriage with a fixed, one-time investment."
             ]}
         ]
       },
       {
         "id": "comparison",
         "icon": "TrendingUp",
-        "title": "எல்ஐசி ஒற்றை பிரீமியம் எண்டோமென்ட் மற்றும் பிற முதலீடுகள்",
+        "title": "LIC Single Premium Endowment vs. Other Investments",
         "content": [
-            {"type": "table", "headers": ["அம்சம்", "எல்ஐசி ஒற்றை பிரீமியம்", "நிலையான வைப்பு", "பிபிஎஃப்", "எல்ஐசி ஜீவன் லாப்"], "rows": [
-                ["செலுத்துதல்", "ஒரு முறை", "ஒரு முறை", "தொடர்ச்சியான ஆண்டு", "வரையறுக்கப்பட்ட தொடர்ச்சியான"],
-                ["வருமானம்", "~5-6% (வரி இல்லாதது*)", "~7% (வரிக்குட்பட்டது)", "~7.1% (வரி இல்லாதது)", "~5.5% (வரி இல்லாதது)"],
-                ["ஆபத்து", "இறையாண்மை உத்தரவாதம்", "குறைந்தது (வங்கி ஆபத்து)", "இறையாண்மை உத்தரவாதம்", "இறையாண்மை உத்தரவாதம்"],
-                ["காப்பீடு", "ஆம்", "இல்லை", "இல்லை", "ஆம்"],
-                ["நீர்மைத்தன்மை", "குறைந்தது (1 ஆண்டுக்குப் பிறகு கடன்)", "உயர்ந்தது (அபராதத்துடன்)", "மிகக் குறைந்தது (15-ஆண்டு லாக்-இன்)", "குறைந்தது (2 ஆண்டுகளுக்குப் பிறகு கடன்)"]
+            {"type": "table", "headers": ["Feature", "LIC Single Premium", "Fixed Deposit", "PPF", "LIC Jeevan Labh"], "rows": [
+                ["Payment", "One-Time", "One-Time", "Recurring Yearly", "Limited Recurring"],
+                ["Returns", "~5-6% (Tax-Free*)", "~7% (Taxable)", "~7.1% (Tax-Free)", "~5.5% (Tax-Free)"],
+                ["Risk", "Sovereign Guarantee", "Low (Bank Risk)", "Sovereign Guarantee", "Sovereign Guarantee"],
+                ["Insurance", "Yes", "No", "No", "Yes"],
+                ["Liquidity", "Low (Loan after 1 yr)", "High (with penalty)", "Very Low (15-yr lock-in)", "Low (Loan after 2 yrs)"]
             ]},
-            { "type": "paragraph", "text": "மேலும் விரிவான ஒப்பீடுகளுக்கு, எங்கள் <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>எல்ஐசி ஜீவன் லாப் கால்குலேட்டரை</a> அல்லது முக்கிய <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>எல்ஐசி பிரீமியம் கால்குலேட்டர்</a> பக்கத்தைப் பார்க்கவும்."}
+            { "type": "paragraph", "text": "For detailed comparisons, use our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a>, explore our <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF calculator</a>, check the <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>LIC Jeevan Labh calculator</a> for recurring premium options, or visit the main <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> page for all plan options."}
         ]
       },
       {
         "id": "faq",
         "icon": "HelpCircle",
-        "title": "அடிக்கடி கேட்கப்படும் கேள்விகள் (FAQ)",
+        "title": "Frequently Asked Questions (FAQ)",
         "content": [
             {"type": "faq", "items": [
-                {"q": "எல்ஐசி ஒற்றை பிரீமியம் எண்டோமென்ட் திட்டம் 917 மற்றும் 717 க்கு என்ன வித்தியாசம்?", "a": "பெரிய வித்தியாசம் இல்லை. திட்டம் 717 ஆஃப்லைன் பதிப்பாக இருந்தது, மற்றும் திட்டம் 917 (மற்றும் முன்பு 817) ஆன்லைன் பதிப்புகளாகும். அடிப்படை கட்டமைப்பு மற்றும் ప్రయోజనాలు ఒకేలా ఉన్నాయి. మా எல்ஐசி ஒற்றை பிரீமியம் எண்டோமென்ட் திட்ட கால்குலேட்டர் ஆன்லைன் இலவசம் இந்த அனைத்து திட்ட எண்களுக்கும் பொருந்தும்."},
-                {"q": "₹5 லட்சம் / ₹10 லட்சம் ஒற்றை பிரீமியம் பாலிசியின் வருமானம் என்ன?", "a": "15-ஆண்டு காலத்துடன் கூடிய ₹5 லட்சம் பாலிசிக்கு, முதிர்வு சுமார் ₹8.62 லட்சம் (IRR ~5.3%) ஆகும். 20 ஆண்டுகளில் ₹10 லட்சம் பாலிசிக்கு, முதிர்வு சுமார் ₹19 லட்சம் ஆகலாம். మా எல்ஐசி ஒற்றை பிரீமியம் 10 லட்சம் ரிட்டர்ன் கால்குலேட்டர் உங்கள் வயது మరియు పదం ఆధారంగా మీకు ஒரு ఖచ్చితమైన అంచనాను ఇవ్వగలదు."},
-                {"q": "எல்ஐசி ஒற்றை பிரீமியம் திட்டத்தின் முதிர்வு 10(10D) இன் கீழ் வரி இல்லாததா?", "a": "ஆம், ஆனால் அதன் పన్ను ప్రయోజనం కోసం ఒక ముఖ్యమైన நிபந்தனையுடன்: முதிர்வு வரி இல்லாதது কেবল காப்பீட்டுத் தொகை நீங்கள் செலுத்திய ஒற்றை பிரீமியத்தின் குறைந்தபட்சம் 10 மடங்கு இருந்தால் மட்டுமே. காப்பீட்டுத் தொகைக்கு సంబంధించి பிரீமியம் அதிகமாக இருந்தால், வருமானம் வரிக்குட்பட்டதாக மாறக்கூடும்."},
-                {"q": "எல்ஐசி ஒற்றை பிரீமியம் எண்டோமென்ட் திட்டத்தின் IRR என்ன?", "a": "இந்த திட்டத்திற்கான అంతర్గత రాబడి రేటు (IRR) సాధారణంగా 5% నుండి 6% వరకు ఉంటుంది, ఇది பாலிசிதாரரின் வயது மற்றும் ఎంచుకున్న కాలాన్ని బట్టి ఉంటుంది. இந்த రాబడి తరచుగా పన్ను-రహితం, ఇది దానిని పోటీగా చేస్తుంది."},
-                {"q": "என்ஆர்ஐகள் எல்ஐசி ஒற்றை பிரீமியம் திட்டத்தில் முதலீடு செய்யலாமா?", "a": "ஆம், என்ஆர்ஐகள் இந்த திட்டத்தில் முதலீடு செய்யலாம், ఇది ఒక సురక్షితమైన, భారత ఆధారిత పరికరంలో ఒకేసారి మొత్తాన్ని పెట్టుబడి పెట్టాలనుకునే వారికి ఇది చాలా ప్రజాదరణ పొందిన ఎంపికగా చేస్తుంది, ఇది ఫెమా నియమాలకు లోబడి ఉంటుంది."},
-                {"q": "எல்ஐசி ஒற்றை பிரீமியம் vs எல்ஐசி ஜீவன் லாப் — எது சிறந்தது?", "a": "உங்களிடம் ஒரு மொத்தத் தொகை ఉంటే மற்றும் நீங்கள் ஒரு முறை, தொந்தரவு లేని పెట్టుబడి కావాలనుకుంటే ஒற்றை பிரீமியம் திட்டத்தைத் தேர்ந்தெடுக்கவும். நீங்கள் దీర్ఘకాలిక లక్ష్యం కోసం పరిమిత కాలానికి (10-16 సంవత్సరాలు వంటివి) பிரீமியங்கள் செலுத்த விரும்பితే జీవన్ லாభ్ ఎంచుకోండి. జీవన్ లాభ్‌కు క్రమశిక్షణా చెల్లింపులు అవసరం కానీ చిన్న ప్రారంభ వ్యయం."},
-                {"q": "சரணடைவு மதிப்பு கணக்கீட்டு முறை என்ன?", "a": "சரணடைவு மதிப்பு உத்தரவாத சரண்டர் மதிப்பு (GSV) அல்லது சிறப்பு சரண்டர் மதிப்பு (SSV) எது அதிகமோ அதுவாக இருக்கும். GSV என்பது செலுத்தப்பட்ட பிரீமியங்களின் ஒரு சதவீதம் (మొదటి సంవత్సరంలో 75%, ఆ తర్వాత 90%). SSV என்பது ஒரு అధిక విలువ, ఇది వెస్టెడ్ బోనస్‌లపై కూడా ఆధారపడి ఉంటుంది మరియు ఎల్‌ఐసి ద్వారా వారి పనితీరు ఆధారంగా నిర్ణయించబడుతుంది."},
-                {"q": "எல்ஐசி ஒற்றை பிரீமியம் FD அல்லது PPF ஐ விட சிறந்ததா?", "a": "இது உங்கள் இலக்கைப் பொறுத்தது. அதன் పన్ను-రహిత రాబడుల కారణంగా అధిక పన్ను బ్రాకెట్లలో ఉన్నవారికి ఇది FD కంటే ఉత్తమం. మీరు వార్షిక కంట్రిబ్యూషన్లు చేయడానికి బదులుగా పెట్టుబడి పెట్టడానికి ఒకేసారి మొత్తం ఉంటే మరియు జీవిత బీమా కవర్ చేర్చాల్సిన అవసరం ఉంటే ఇది PPF కంటే ఉత్తమం."}
+                {"q": "What is the difference between LIC Single Premium Endowment Plan 917 and 717?", "a": "There is no major difference. Plan 717 was the offline version, and Plan 917 (and previously 817) are the online versions. The underlying structure and benefits are identical. Our LIC single premium endowment plan calculator online free applies to all these plan numbers."},
+                {"q": "What is the return on a â‚¹5 lakh / â‚¹10 lakh single premium policy?", "a": "For a â‚¹5 Lakh policy with a 15-year term, the maturity is around â‚¹8.62 Lakh (IRR ~5.3%). For a â‚¹10 Lakh policy over 20 years, the maturity could be around â‚¹19 Lakh. Use our <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a> for precise estimates based on your age and term. You can also compare using our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a> to see how these returns stack up."},
+                {"q": "Is the maturity of LIC single premium plan tax-free under 10(10D)?", "a": "Yes, but with a critical condition for its tax benefit: the maturity is tax-free only if the Sum Assured is at least 10 times the single premium you paid. If the premium is higher relative to the Sum Assured, the proceeds may become taxable."},
+                {"q": "What is the IRR of LIC Single Premium Endowment Plan?", "a": "The Internal Rate of Return (IRR) for this plan typically ranges from 5% to 6%, depending on the policyholder's age and the chosen term. This return is often tax-free, making it competitive."},
+                {"q": "Can NRIs invest in LIC single premium plan?", "a": "Yes, NRIs can invest in this plan, making it a popular choice for those looking to invest a lump sum in a secure, India-based instrument, subject to FEMA rules."},
+                {"q": "LIC single premium vs LIC Jeevan Labh â€” which is better?", "a": "Choose the Single Premium plan if you have a lump sum and want a one-time, hassle-free investment. Choose <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh</a> if you prefer to pay premiums over a limited period (like 10-16 years) for a long-term goal. For comprehensive retirement planning, use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> and <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>Jeevan Anand calculator</a> to compare all options."},
+                {"q": "What is the surrender value calculation method?", "a": "The surrender value is the higher of the Guaranteed Surrender Value (GSV) or Special Surrender Value (SSV). The GSV is a percentage of premiums paid (75% in year 1, 90% thereafter). The SSV is a more favorable value determined by LIC that also includes a portion of vested bonuses."},
+                {"q": "Is LIC Single Premium better than FD or PPF?", "a": "It depends on your goal. Use our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a> to compare returns directly. It's better than an FD for those in higher tax brackets due to its tax-free returns. Compare with our <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF calculator</a> and <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to optimize based on your tax situation. It's better than PPF if you have a lump sum to invest instead of making yearly contributions and need life insurance cover included."}
             ]}
         ]
       }
     ],
     "conclusion": {
-      "title": "ஒரு ஸ்மார்ட் கட்டணத்துடன் உங்கள் எதிர்காலத்தைப் பாதுகாத்துக் கொள்ளுங்கள்",
-      "body": "எல்ஐசி ஒற்றை பிரீமியம் எண்டோமென்ட் திட்டம் ஒரு ஒற்றை, தொந்தரவு இல்லாத கட்டணத்தில் பாதுகாப்பு, சேமிப்பு மற்றும் பாதுகாப்பின் ஒரு தனித்துவமான கலவையை வழங்குகிறது. இது ஆண்டுதோறும் அர்ப்பணிப்புகளின் சுமை இல்லாமல் குறிப்பிட்ட நிதி இலக்குகளை அடைவதற்கான ஒரு சக்திவாய்ந்த கருவியாகும். இப்போது எங்கள் இலவச எல்ஐசி ஒற்றை பிரீமியம் எண்டோமென்ட் கால்குலேட்டரை ஆன்லைனில் பயன்படுத்தவும் மற்றும் உங்களுக்காக வடிவமைக்கப்பட்ட உடனடி பிரீமியம் மற்றும் முதிர்வு மதிப்பீடுகளைப் பெறவும்."
+      "title": "Secure Your Future with One Smart Payment",
+      "body": "The LIC Single Premium Endowment Plan offers a unique blend of safety, savings, and security in a single, hassle-free payment. It's a powerful tool for achieving specific financial goals without the burden of yearly commitments. Use our LIC Single Premium Endowment Calculator online free now and get instant premium & maturity estimates tailored for you. <br/><br/><strong>Complete Your Financial Planning:</strong> Use our <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a> to estimate your final benefits, <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC surrender value calculator</a> for early exit scenarios, and <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> for comprehensive retirement planning. <br/><br/><strong>Explore Other LIC Plans:</strong> Compare with our <a href='/{lang}/lic-jeevan-umang-calculator' class='text-primary hover:underline'>Jeevan Umang calculator</a>, <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh calculator</a>, <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>Jeevan Anand calculator</a>, <a href='/{lang}/jeevan-utsav-calculator' class='text-primary hover:underline'>Jeevan Utsav calculator</a>, and <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> to see all plan options. <br/><br/><strong>Compare Investment Options:</strong> Use our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a> to compare returns, explore <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF returns</a>, and use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to optimize your tax planning. Check our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> and <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> if considering a diversified portfolio. <br/><br/><strong>Debt & Retirement Planning:</strong> Use our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for debt management and explore government schemes like <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>APY</a>, <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a>, and <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>SSY</a> for additional retirement income streams."
     }
   }
 }

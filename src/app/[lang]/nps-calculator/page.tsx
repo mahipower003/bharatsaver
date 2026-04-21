@@ -101,7 +101,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
 export default async function NpsCalculatorPage({ params }: { params: Promise<{ lang: Locale }> }) {
   const { lang } = await params;
   const dictionary = await getDictionary(lang);
-  const pageDict = (await import(`@/dictionaries/${lang}/nps-calculator.json`)).default;
+  const pageDict = { ...(await import(`@/dictionaries/${lang}/nps-calculator.json`)).default };
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
 
   const breadcrumbSchema = {

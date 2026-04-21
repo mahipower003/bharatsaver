@@ -1,69 +1,69 @@
-
+﻿
 {
-  "meta_title": "எல்ஐசி சரண்டர் மதிப்பு கால்குலேட்டர் 2025: ஆன்லைனில் இலவசமாகக் கணக்கிடுங்கள் (படிவம் 5074/3510)",
-  "meta_description": "உங்கள் பாலிசிக்கான உத்தரவாத (ஜிஎஸ்வி) மற்றும் சிறப்பு சரண்டர் மதிப்பை (எஸ்எஸ்வி) ஆன்லைனில் கண்டறிய எங்கள் இலவச எல்ஐசி சரண்டர் மதிப்பு கால்குலேட்டரைப் பயன்படுத்தவும். எங்கள் கருவி ஜீவன் ஆனந்த், ஜீவன் லாப், மற்றும் பலவற்றிற்கான சரண்டர் மதிப்பைக் கணக்கிட உதவுகிறது. சரண்டர் செய்வதற்கு முன் சூத்திரம் மற்றும் நிதி விளைவுகளைப் புரிந்து கொள்ளுங்கள்.",
-  "h1": "நான் இந்த எல்ஐசி சரண்டர் மதிப்பு கால்குலேட்டரை உங்களுக்கு வெளிப்படையான உண்மையைக் கொடுக்க உருவாக்கினேன் (2025)",
-  "description": "உங்கள் எல்ஐசி பாலிசியை சரண்டர் செய்வது பற்றி யோசிக்கிறீர்களா? இது ஒரு கடினமான இடம், எனக்குப் புரிகிறது. எந்த நடவடிக்கையும் எடுப்பதற்கு முன், நீங்கள் சரியாக என்ன திரும்பப் பெறுவீர்கள் என்பதைக் கண்டுபிடிப்போம். நான் இந்த இலவச <strong>எல்ஐசி சரண்டர் மதிப்பு கால்குலேட்டரை</strong> உங்களுக்கு ஒரு நேர்மையான, உடனடி மதிப்பீட்டைக் கொடுக்க உருவாக்கினேன். நாங்கள் உத்தரவாத மதிப்பு (ஜிஎஸ்வி) மற்றும் மிகவும் யதார்த்தமான சிறப்பு மதிப்பு (எஸ்எஸ்வி) க்கு இடையிலான வேறுபாட்டை உடைப்போம், எனவே நீங்கள் உங்கள் கண்களைத் திறந்து ஒரு முடிவை எடுக்கலாம்.",
+  "meta_title": "LIC Surrender Value Calculator 2025: An Honest Look at Your Payout",
+  "meta_description": "Thinking of surrendering your LIC policy? I built this free calculator to give you the unvarnished truth about your surrender value (GSV & SSV) before you make a move.",
+  "h1": "I Built This LIC Surrender Value Calculator to Give You the Unvarnished Truth (2025)",
+  "description": "Thinking about surrendering your LIC policy? It's a tough spot to be in, and I get it. Before you make a move, let's figure out exactly what you'd get back. I've built this free <strong>LIC Surrender Value Calculator</strong> to give you an honest, instant estimate. We'll break down the difference between the Guaranteed Value (GSV) and the more realistic Special Value (SSV), so you can make a decision with your eyes wide open.",
   "tool": {
-    "title": "உடனடி சரண்டர் மதிப்பு கால்குலேட்டர்",
-    "plan_label": "எல்ஐசி திட்டம்",
+    "title": "Instant Surrender Value Calculator",
+    "plan_label": "LIC Plan",
     "plans": {
-      "new_jeevan_anand": "புதிய ஜீவன் ஆனந்த் (915)",
-      "jeevan_labh": "ஜீவன் லாப் (936)",
-      "new_endowment": "புதிய எண்டோவ்மென்ட் திட்டம் (914)",
-      "jeevan_utsav": "ஜீவன் உத்சவ் (871)",
-      "jeevan_umang": "ஜீவன் உமங் (945)"
+      "new-jeevan-anand": "New Jeevan Anand (915)",
+      "jeevan-labh": "Jeevan Labh (936)",
+      "new-endowment": "New Endowment Plan (914)",
+      "jeevan-utsav": "Jeevan Utsav (871)",
+      "jeevan-umang": "Jeevan Umang (945)"
     },
-    "basic_sa_label": "அடிப்படை காப்பீட்டுத் தொகை (₹)",
-    "policy_term_label": "பாலிசி காலம் (ஆண்டுகள்)",
-    "premiums_paid_label": "செலுத்திய பிரீமியங்களின் எண்ணிக்கை",
-    "total_premiums_payable_label": "காலத்தில் மொத்த செலுத்த வேண்டிய பிரீமியங்கள்",
-    "vested_bonus_label": "மொத்த வழங்கப்பட்ட போனஸ் (₹) (விருப்பத்தேர்வு)",
-    "loan_principal_label": "நிலுவையிலுள்ள கடன் (₹) (விருப்பத்தேர்வு)",
-    "calculate_button": "சரணடைவு மதிப்பைக் கணக்கிடு",
-    "calculating": "கணக்கிடப்படுகிறது...",
-    "results_title": "மதிப்பிடப்பட்ட சரணடைவு மதிப்பு விவரம்",
-    "gsv_label": "உத்தரவாத சரணடைவு மதிப்பு (GSV)",
-    "ssv_label": "சிறப்பு சரணடைவு மதிப்பு (SSV - மதிப்பிடப்பட்டது)",
-    "net_payout_label": "உங்கள் மதிப்பிடப்பட்ட நிகர చెల్లింపు",
-    "paid_up_sa_label": "செலுத்தப்பட்ட காப்பீட்டுத் தொகை",
-    "policy_year_label": "பாலிசி ஆண்டுகள் நிறைவடைந்தன",
-    "copy_link_cta": "இணைப்பை நகலெடு",
-    "print_cta": "அச்சிடு / PDF",
-    "export_csv_cta": "CSV க்கு ஏற்றுமதி செய்",
-    "email_cta": "முடிவுகளை மின்னஞ்சல் செய்",
-    "share_text": "நான் இப்போதுதான் பாரத்சேவருடன் எனது எல்ஐசி பாலிசியின் சரணடைவு மதிப்பை மதிப்பிட்டேன்! எனது சாத்தியமான చెల్లింపు ~{payout} ஆகும். நீங்களும் உங்கள் சரிபார்க்கவும்:",
-    "copy_success_title": "இணைப்பு நகலெடுக்கப்பட்டது!",
-    "copy_success_description": "நீங்கள் இப்போது உங்கள் கணக்கீட்டின் இணைப்பைப் பகிரலாம்.",
+    "basic_sa_label": "Basic Sum Assured (â‚¹)",
+    "policy_term_label": "Policy Term (Years)",
+    "premiums_paid_label": "No. of Premiums Paid",
+    "total_premiums_payable_label": "Total Premiums Payable in Term",
+    "vested_bonus_label": "Total Vested Bonus (â‚¹) (Optional)",
+    "loan_principal_label": "Outstanding Loan (â‚¹) (Optional)",
+    "calculate_button": "Calculate Surrender Value",
+    "calculating": "Calculating...",
+    "results_title": "Estimated Surrender Value Breakdown",
+    "gsv_label": "Guaranteed Surrender Value (GSV)",
+    "ssv_label": "Special Surrender Value (SSV - Estimated)",
+    "net_payout_label": "Your Estimated Net Payout",
+    "paid_up_sa_label": "Paid-up Sum Assured",
+    "policy_year_label": "Policy Years Completed",
+    "copy_link_cta": "Copy Link",
+    "print_cta": "Print / PDF",
+    "export_csv_cta": "Export to CSV",
+    "email_cta": "Email Results",
+    "share_text": "I just estimated my LIC policy's surrender value with BharatSaver! My potential payout is ~{payout}. Check yours:",
+    "copy_success_title": "Link Copied!",
+    "copy_success_description": "You can now share the link to your calculation.",
     "csv": {
-      "parameter": "அளவுரு",
-      "value": "மதிப்பு",
-      "policy_year": "பாலிசி ஆண்டுகள் நிறைவடைந்தன",
-      "paid_up_sa": "செலுத்தப்பட்ட காப்பீட்டுத் தொகை",
-      "gsv_premium": "ஜிஎஸ்வி (பிரீமியம் கூறு)",
-      "gsv_bonus": "ஜிஎஸ்வி (போனஸ் கூறு)",
-      "gsv_total": "மொத்த ஜிஎஸ்வி",
-      "ssv_estimated": "மதிப்பிடப்பட்ட எஸ்எஸ்வி",
-      "gross_surrender": "மொத்த சரணடைவு மதிப்பு",
-      "loan_principal": "கடன் அசல்",
-      "net_payout": "நிகர చెల్లింపు"
+      "parameter": "Parameter",
+      "value": "Value",
+      "policy_year": "Policy Year Completed",
+      "paid_up_sa": "Paid-up Sum Assured",
+      "gsv_premium": "GSV (Premium Component)",
+      "gsv_bonus": "GSV (Bonus Component)",
+      "gsv_total": "Total GSV",
+      "ssv_estimated": "Estimated SSV",
+      "gross_surrender": "Gross Surrender Value",
+      "loan_principal": "Loan Principal",
+      "net_payout": "Net Payout"
     }
   },
   "sections": [
     {
       "id": "what-is-surrender-value",
       "icon": "HelpCircle",
-      "title": "சரியாக 'எல்ஐசி சரண்டர் மதிப்பு' என்றால் என்ன?",
+      "title": "What Exactly is 'LIC Surrender Value'?",
       "content": [
         {
           "type": "paragraph",
-          "text": "வார்த்தை ஜாலத்தை வெட்டுவோம். 'சரணடைவு மதிப்பு' என்பது உங்கள் பாலிசியை அதன் அதிகாரப்பூர்வ முடிவுத் தேதிக்கு முன் முடிவுக்குக் கொண்டுவர முடிவு செய்தால் எல்ஐசி உங்களுக்கு வழங்கும் ரொக்கத் தொகையாகும். எந்தவொரு చెల్లింపుக்கும் தகுதி பெற, நீங்கள் பொதுவாக குறைந்தபட்சம் இரண்டு அல்லது மூன்று முழு ஆண்டுகளுக்கு பிரீமியம் செலுத்தியிருக்க வேண்டும். நீங்கள் தெரிந்து கொள்ள வேண்டிய இரண்டு எண்கள் உள்ளன:"
+          "text": "Let's cut through the jargon. The 'surrender value' is the cash amount LIC gives you if you decide to end your policy before its official end date. To be eligible for any payout at all, you generally need to have paid premiums for at least two or three full years. If you're considering surrender because of low returns, check our <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a> to understand what you'd receive if you let the policy run its full term. There are two numbers you need to know:"
         },
         {
           "type": "list",
           "items": [
-            "<strong>உத்தரவாத சரண்டர் மதிப்பு (GSV):</strong> இதை நீங்கள் திரும்பப் பெறும் முழுமையான குறைந்தபட்ச, சட்டப்பூர்வமாக உத்தரவாதமளிக்கப்பட்ட தொகையாக நினைத்துப் பாருங்கள். இது எல்ஐசியின் விதிப்புத்தகத்திலிருந்து ஒரு நிலையான சூத்திரத்தின் அடிப்படையில் கணக்கிடப்படுகிறது.",
-            "<strong>சிறப்பு சரணடைவு மதிப்பு (SSV):</strong> இது உண்மையில் முக்கியமானது. இது ஒரு உயர், உத்தரவாதமற்ற மதிப்பாகும், இது எல்ஐசி அவர்களின் வணிக செயல்திறன் మరియు ఇతర காரணிகளின் அடிப்படையில் கணக்கிடுகிறது. దాదాపు అన్ని సందర్భాల్లో, SSV நீங்கள் வாస్తవానికి అందుకునేది, మరియు ఇది ఎల్లప్పుడూ GSV కి సమానంగా లేదా అంతకంటే ఎక్కువగా ఉంటుంది."
+            "<strong>Guaranteed Surrender Value (GSV):</strong> Think of this as the absolute minimum, legally guaranteed amount you'll get back. It's calculated based on a fixed formula from LIC's rulebook.",
+            "<strong>Special Surrender Value (SSV):</strong> This is the number that really matters. It's a higher, non-guaranteed value that LIC calculates based on their business performance and other factors. In almost all cases, the SSV is what you'll actually receive, and it's always equal to or higher than the GSV."
           ]
         }
       ]
@@ -71,42 +71,42 @@
     {
       "id": "how-to-calculate",
       "icon": "FileText",
-      "title": "நாங்கள் உங்கள் எல்ஐசி சரண்டர் மதிப்பை எவ்வாறு கணக்கிடுகிறோம்",
+      "title": "How We Calculate Your LIC Surrender Value",
       "content": [
         {
           "type": "paragraph",
-          "text": "இதன் பின்னணியில் உள்ள கணிதம் சற்று இருண்ட பெட்டி போல உணரலாம், ஆனால் நான் அதை உங்களுக்காக உடைக்கிறேன். இங்கே నేను కాలిక్యులేటర్‌లో నిర్మించిన సరళీకృత తర్కం:"
+          "text": "The math behind this can feel a bit like a black box, but I'll break it down for you. Hereâ€™s the simplified logic Iâ€™ve built into the calculator:"
         },
         {
             "type": "alert",
             "variant": "default",
-            "title": "படி 1: உத்தரவாத சரண்டர் மதிப்பைக் (GSV) கணக்கிடுங்கள்",
-            "text": "முதலில், நாங்கள் உங்களுக்கு உரிமையுள்ள முழுமையான குறைந்தபட்சத்தைக் கணக்கிடுகிறோம். சூத்திரம்: <strong>(மொத்தம் செலுத்திய பிரீமியங்கள் × ஜிஎஸ்வி பிரீமியம் காரணி) + (திரட்டப்பட்ட போனஸ்கள் × ஜிஎஸ்வி போனஸ் காரணி)</strong>. இந்த 'காரணிகள்' எல்ஐசியால் வரையறுக்கப்பட்ட சதவீதங்கள், நீங்கள் பாலிசியை எவ்வளவு காலம் வைத்திருக்கிறீர்களோ அவ்வளவு அதிகரிக்கும்."
+            "title": "Step 1: Calculate Guaranteed Surrender Value (GSV)",
+            "text": "First, we calculate the absolute minimum you're entitled to. The formula is: <strong>(Total Premiums Paid Ã— GSV Premium Factor) + (Accrued Bonuses Ã— GSV Bonus Factor)</strong>. These 'factors' are percentages defined by LIC that increase the longer you've held the policy."
         },
         {
             "type": "alert",
             "variant": "default",
-            "title": "படி 2: சிறப்பு சரண்டர் மதிப்பை (SSV) மதிப்பிடுங்கள்",
-            "text": "இது மிகவும் யதார்த்தமான, உயர் மதிப்பு. ఇది సూత్రంతో అంచనా వేయబడింది: <strong>(చెల్లించిన విలువ + திரட்டப்பட்ட బోனస్‌లు) × எஸ்எஸ்வி காரணி</strong>. 'చెల్లించిన విలువ' என்பது మీరు செலுத்திய பிரீமியங்களின் ఆధారంగా తగ్గించబడిన காப்பீட்டுத் தொகை. 'எஸ்எஸ்வி காரணி' என்பது எல்ஐசியின் உள் గుణకం. ఇది పబ్లిక్ కానందున, మా కాలిక్యులేటర్ ఈ విలువను అంచనా వేయడానికి ఒక బలమైన హ్యూరిస్టిక్‌ను ఉపయోగిస్తుంది, ఇది మీకు మీ అసలు చెల్లింపు గురించి చాలా దగ్గరి ఆలోచనను ఇస్తుంది."
+            "title": "Step 2: Estimate Special Surrender Value (SSV)",
+            "text": "This is the more realistic, higher value. It's estimated with the formula: <strong>(Paid-up Value + Accrued Bonuses) Ã— SSV Factor</strong>. The 'Paid-up Value' is a reduced Sum Assured based on premiums you've paid. The 'SSV Factor' is LIC's internal multiplier. Since it's not public, our calculator uses a robust heuristic to estimate this value, giving you a much closer idea of your actual payout."
         }
       ]
     },
     {
       "id": "gsv-factors-chart",
       "icon": "BarChart2",
-      "title": "கொடூரமான உண்மை: காலப்போக்கில் சரண்டர் மதிப்பு எவ்வாறு வளர்கிறது",
+      "title": "The Brutal Reality: How Surrender Value Grows Over Time",
       "content": [
         {
           "type": "paragraph",
-          "text": "முன்கூட்டியே சரண்டர் செய்வது ஏன் இவ்வளவு விலை உயர்ந்தது என்பதற்கான ஒரு உண்மையான சித்திரத்தை உங்களுக்கு வழங்க, சரண்டர் மதிப்பு காரணி (நீங்கள் செலுத்திய பிரீமியங்களின் சதவீதமாக) பொதுவாக எவ்வாறு முன்னேறுகிறது என்பது இங்கே. ஆரம்ப ஆண்டுகளில் நீங்கள் எவ்வளவு குறைவாக திரும்பப் பெறுகிறீர்கள் என்பதைக் గమనిக்கவும்."
+          "text": "To give you a real-world picture of why surrendering early is so costly, hereâ€™s how the surrender value factor (as a percentage of premiums you've paid) typically progresses. Notice how little you get back in the first few years."
         },
         {
           "type": "table",
-          "headers": ["சரணடைவின் பாலிசி ஆண்டு", "மதிப்பிடப்பட்ட చెల్లింపు (% செலுத்திய பிரீமியங்களின்)"],
+          "headers": ["Policy Year of Surrender", "Estimated Payout (% of premiums paid)"],
           "rows": [
-            ["3வது ஆண்டு", "~30% (நீங்கள் செலுத்தியதில் ~70% இழக்கிறீர்கள்)"],
-            ["5வது ஆண்டு", "~50% - 60%"],
-            ["10வது ஆண்டு", "~80% - 90%"]
+            ["3rd Year", "~30% (You lose ~70% of what you paid)"],
+            ["5th Year", "~50% - 60%"],
+            ["10th Year", "~80% - 90%"]
           ]
         }
       ]
@@ -114,17 +114,17 @@
     {
       "id": "surrender-vs-paidup",
       "icon": "GitCompareArrows",
-      "title": "பெரிய கேள்வி: சரண்டர் செய்வதா அல்லது 'செலுத்தப்பட்டது' ஆக்குவதா?",
+      "title": "The Big Question: Surrender vs. Make It 'Paid-Up'?",
       "content": [
         {
           "type": "paragraph",
-          "text": "சரணடைவதற்கு முன், நீங்கள் அதன் புத்திசாலித்தனமான உறவினரைப் பற்றி தெரிந்து கொள்ள வேண்டும்: 'செலுத்தப்பட்டது' விருப்பம். அவை ஒன்றல்ல, సరిగ్గా தேர்ந்தெடுப்பது உங்களை ஒரு பெரிய நிதித் தவறிலிருந்து காப்பாற்றும்."
+          "text": "Before you surrender, you need to know about its smarter cousin: the 'Paid-Up' option. They are not the same, and choosing correctly can save you from a huge financial mistake. Compare your policy options using our <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>Jeevan Anand</a>, <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh</a>, and <a href='/{lang}/lic-jeevan-umang-calculator' class='text-primary hover:underline'>Jeevan Umang</a> calculators to explore better policy alternatives."
         },
         {
           "type": "list",
           "items": [
-            "<strong>சரணடைதல்:</strong> நீங்கள் பாலிசியை முழுமையாக முடிக்கிறீர்கள். நீங்கள் ஒரு முறை ரொக்கப் பணம் (சரணடைவு மதிப்பு) பெறுவீர்கள், ஆனால் நீங்கள் <strong>உங்கள் ஆயுள் காப்பீட்டுத் தொகையை என்றென்றும் இழக்கிறீர்கள்</strong>.",
-            "<strong>அதை செலுத்தியதாக்குதல்:</strong> நீங்கள் இனி பிரீமியங்களைச் செலுத்த முடியாவிட்டால் (2-3 ஆண்டுகளுக்குப் பிறகு), நீங்கள் செலுத்துவதை நிறுத்தலாம். பாலிசி இறக்காது. அது <strong>குறைக்கப்பட்ட காப்பீட்டுத் தொகையுடன்</strong> தொடர்கிறது. நீங்கள் இனி பிரீமியங்கள் செலுத்த மாட்டீர்கள், மேலும் நீங்கள் அசல் முதிர்வு தேதியில் இந்த குறைக்கப்பட்ட தொகையைப் பெறுவீர்கள்."
+            "<strong>Surrendering:</strong> You terminate the policy completely. You get a one-time cash payment (the surrender value), but you <strong>lose your life insurance cover forever</strong>.",
+            "<strong>Making it Paid-Up:</strong> If you can't afford premiums anymore (after 2-3 years), you can just stop paying. The policy doesn't die. It continues with a <strong>reduced Sum Assured</strong>. You won't pay any more premiums, and you'll still get this reduced amount at the original maturity date."
           ]
         }
       ]
@@ -132,43 +132,43 @@
     {
       "id": "alternatives",
       "icon": "CheckCircle",
-      "title": "எனது அறிவுரை: உங்கள் பாலிசியை சரண்டர் செய்வதற்கு புத்திசாலித்தனமான மாற்று வழிகள்",
+      "title": "My Advice: Smarter Alternatives to Surrendering Your Policy",
       "content": [
         {
           "type": "paragraph",
-          "text": "நான் எப்போதும் சரண்டர் செய்வது உங்கள் முழுமையான கடைசி வழிமுறையாக இருக்க வேண்டும் என்று கூறுகிறேன். இங்கே நான் முதலில் கருத்தில் கொள்ளும் மூன்று விஷயங்கள்:"
+          "text": "I always say surrendering should be your absolute last resort. Before taking any drastic steps, check our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> to explore borrowing options and our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> for comprehensive financial planning. Here are three things I'd consider first:"
         },
         {
           "type": "list",
           "items": [
-            "<strong>பாலிசிக்கு எதிராகக் கடன் பெறுங்கள்:</strong> உங்களுக்கு ஒரு குறுகிய கால அவசரத்திற்குப் பணம் தேவைப்பட்டால், இது உங்கள் சிறந்த பந்தயம். உங்கள் ஆயுள் காப்பீட்டை இழக்காமல் நீங்கள் நீர்மையை (சரணடைவு மதிப்பில் 90% வரை) பெறுவீர்கள். இது ஒரு வெற்றி-வெற்றி.",
-            "<strong>செலுத்தப்பட்டது ஆக்குங்கள்:</strong> மேலே விவாதித்தபடி, நீங்கள் பிரீமியங்களைச் செலுத்த முடியாவிட்டால், செலுத்துவதை நிறுத்துங்கள். உங்கள் பாலிசி குறைக்கப்பட்ட நன்மைகளுடன் உயிருடன் இருக்கிறது, ఇది ஒரு చిన్న మొత్తాన్ని తిరిగి పొంది మీ కవర్‌ను కోల్పోవడం కంటే చాలా ఉత్తమం.",
-            "<strong>'டேர்ம் வாங்கு, மீதமுள்ளதை முதலீடு செய்' உத்தி:</strong> உங்கள் பிரச்சினை குறைந்த வருமானம் என்றால், ஒரு மலிவான, அதிக-கவர் தூய டேர்ம் காப்பீட்டுத் திட்டத்தை வாங்குவது ஒரு சிறந்த அணுகுமுறை, பின்னர் பிரீமியம் வித்தியாசத்தை మ్యూచువల్ ఫండ్‌లు వంటి అధిక-రిటర్న్ ఎంపికలలో పెట్టుబడి పెట్టండి. ఇది తరచుగా దీర్ఘకాలంలో చాలా ఎక్కువ సంపదను సృష్టిస్తుంది."
+            "<strong>Take a Loan Against the Policy:</strong> If you need money for a short-term emergency, this is your best bet. You get liquidity (up to 90% of the surrender value) without losing your life cover. Use our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> to compare borrowing options.",
+            "<strong>Make it Paid-Up:</strong> As we discussed above, if you can't afford the premiums, just stop paying. Your policy stays alive with reduced benefits, which is far better than getting a pittance back and losing your cover.",
+            "<strong>The 'Buy Term, Invest the Rest' Strategy:</strong> If your issue is the low returns, explore our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> and <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> for high-return investment options. Compare with our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a> to see what matches your goals."
           ]
         },
         {
           "type": "alert",
-          "title": "எனது நேர்மையான அறிவுரை",
-          "text": "உங்களுக்கு உடனடியாக ரொக்கம் தேவையில்லை என்றால், பாலிசியை 'செலுத்தப்பட்டது' ஆக்குவது దాదాపు ఎల్లప్పుడూ சிறந்த ఆర్థిక చర్య. நீங்கள் కొంత జీవిత కవర్‌ను ఉంచుకుంటారు మరియు మీ డబ్బు పెరుగుతూనే ఉంటుంది. நீங்கள் வேறு ఏ విధంగానూ தீர்க்கలేని ఒక తీవ్రమైన, తక్షణ నగదు అవసరం ఉంటే మాత్రమే சரணடையండి."
+          "title": "My Honest Advice",
+          "text": "If you don't need the cash urgently, making the policy 'Paid-Up' is almost always the better financial move. You keep some life cover and your money continues to grow. Only surrender if you have a dire, immediate cash need that you can't solve any other way."
         }
       ]
     },
     {
       "id": "how-to-surrender",
       "icon": "BookOpen",
-      "title": "அதிகாரப்பூர்வ செயல்முறை: உங்கள் எல்ஐசி பாலிசியை எவ்வாறு சரண்டர் செய்வது",
+      "title": "The Official Process: How to Surrender Your LIC Policy",
       "content": [
         {
           "type": "paragraph",
-          "text": "நீங்கள் எல்லாவற்றையும் cân nhắc చేసి आगे बढ़ने का निर्णय लिया है, तो இங்கே మీరు అనుసరించాల్సిన దశలవారీ ప్రక్రియ:"
+          "text": "If you've weighed everything and decided to proceed, here is the step-by-step process you'll need to follow:"
         },
         {
           "type": "list",
           "items": [
-            "<strong>అర్హతను నిర్ధారించుకోండి:</strong> మీ పాలసీ ప్రకారం, మీరు కనీసం రెండు లేదా మూడు పూర్తి సంవత్సరాలు ప్రీమియంలు చెల్లించారని నిర్ధారించుకోండి.",
-            "<strong>మీ పత్రాలను సేకరించండి:</strong> మీకు <strong>అసలు పాలసీ బాండ్</strong> (ఇది కీలకం), ఒక నింపిన సరెండర్ ఫారం నం. 5074, మీ పాన్ మరియు ఆధార్ యొక్క ఒక కాపీ, మరియు బ్యాంక్ బదిలీ కోసం ఒక రద్దు చేయబడిన చెక్ అవసరం.",
-            "<strong>మీ సర్వీసింగ్ శాఖను సందర్శించండి:</strong> పాలసీదారుడు సరెండర్ అభ్యర్థనను సమర్పించడానికి వారి పాలసీని నిర్వహించే ఎల్‌ఐసి శాఖకు భౌతికంగా వెళ్ళాలి.",
-            "<strong>ధృవీకరణ & చెల్లింపు:</strong> எல்ஐசி பత్రங்களை சரிபார்த்து உங்கள் கோரிக்கையைச் செயல்படுத்தும். சரண்டர் மதிப்பு பொதுவாக உங்கள் வங்கிக் கணக்கில் NEFT வழியாக 7-10 வேலை நாட்களில் வரவு வைக்கப்படும்."
+            "<strong>Confirm Eligibility:</strong> Make sure you've paid premiums for at least two or three full years, as required by your policy.",
+            "<strong>Gather Your Documents:</strong> You'll need the <strong>Original Policy Bond</strong> (this is crucial), a filled Surrender Form No. 5074, a copy of your PAN and Aadhaar, and a cancelled cheque for the bank transfer.",
+            "<strong>Visit Your Servicing Branch:</strong> The policyholder must physically go to the LIC branch that manages their policy to submit the surrender request.",
+            "<strong>Verification & Payout:</strong> LIC will verify the documents and process your request. The surrender value is typically credited to your bank account via NEFT within 7-10 working days."
           ]
         }
       ]
@@ -176,23 +176,38 @@
     {
       "id": "faq",
       "icon": "HelpCircle",
-      "title": "உங்கள் கேள்விகள், பதில்கள்: எல்ஐசி சரண்டர் மதிப்பு அடிக்கடி கேட்கப்படும் கேள்விகள்",
+      "title": "Your Questions, Answered: LIC Surrender Value FAQs",
       "content": [
         {
           "type": "faq",
           "items": [
-            {"q": "எனது எல்ஐசி பாலிசியின் சரண்டர் மதிப்பை நான் எவ்வாறு கணக்கிடுவது?","a": "எளிமையான வழி మా மேலே உள்ள కాలిక్యులేటரைப் பயன்படுத்துவதாகும். ஒரு உடனடி மதிப்பீட்டைப் பெற உங்கள் பாலிசி వివరங்களை உள்ளிடவும். சூத்திரம் செலுத்தப்பட்ட பிரீமியங்களின் ஒரு சதவீதம் మరియు మీ திரட்டப்பட்ட బోనస్‌ల ఒక భాగం, మా సాధనం మీ కోసం கணக்கிస్తుంది."},
-            {"q": "எத்தனை ஆண்டுகளுக்குப் பிறகு నేను ஒரு எல்ஐசி பாலிசியை சரண்டர் செய்ய முடியும்?","a": "பொதுவாக, మీరు కనీసం రెండు నుండి మూడు పూర్తి సంవత్సరాలు ప్రీమియంలు చెల్లించిన తర్వాత మాత్రమే ఒక పాలసీని సరెండర్ చేయవచ్చు. కొన్ని సింగిల్ ప్రీమియం పాలసీలను ఒక సంవత్సరం తర్వాత సరెండర్ చేయవచ్చు. ఈ కాలానికి ముందు, పాలసీకి எந்த సరెండర్ విలువ ఉండదు."},
-            {"q": "ஒரு எல்ஐசி பாலிசியின் சரண்டர் மதிப்பு வரிக்குட்பட்டதா?","a": "நீங்கள் 5 పూర్తి ప్రీమియం-చెల్లించే సంవత్సరాల తర్వాత సరెండర్ చేస్తే, మొత్తం సాధారణంగా సెక్షన్ 10(10D) కింద పన్ను-రహితం. మీరు 5 సంవత్సరాల ముందు సరెండర్ చేస్తే, మొత్తం పన్ను విధించదగినది కావచ్చు, మరియు మీరు 80C కింద క్లెయిమ్ చేసిన ఏవైనా పన్ను మినహాయింపులు రద్దు చేయబడవచ్చు."},
-            {"q": "நான் எனது எல்ஐசி பாலிசியை சரண்டர் செய்தால் எனக்கு எவ்வளவு பணம் கிடைக்கும்?","a": "ఇది మీరు చెల్లించిన దానిలో ఒక శాతం, మరియు ఇది చాలా తక్కువగా మొదలవుతుంది. ఉదాహరణకు, 3 సంవత్సరాల తర్వాత, మీరు మీ ప్రీమియంలలో ~30% మాత్రమే తిరిగి పొందవచ్చు. మీరు పాలసీని ఎంత ఎక్కువ కాలం ఉంచుకుంటే, విలువ అంతగా పెరుగుతుంది. మీ పాలసీకి ఒక వ్యక్తిగతీకరించిన అంచనాను పొందడానికి మా పైన ఉన్న కాలిక్యులేటర్‌ను ఉపయోగించండి."},
-            {"q": "உத்தரவாத மற்றும் சிறப்பு சரண்டர் மதிப்புக்கு என்ன வித்தியாசம்?","a": "உத்தரவாத சரண்டர் విలువ (GSV) అనేది చెల్లించిన ప్రీమియంల సూత్రం ఆధారంగా చట్టబద్ధంగా తప్పనిసరి చేయబడిన కనీస చెల్లింపు. ప్రత్యేక సరెండర్ విలువ (SSV) అనేది మీ బోనస్‌లలో ఒక భాగాన్ని కలిగి ఉన్న అధిక, హామీ లేని మొత్తం. ఎల్‌ఐసి ఎల్లప్పుడూ ఏది ఎక్కువైతే అది చెల్లిస్తుంది."},
-            {"q": "நான் எனது எல்ஐசி பாலிசியை சரண்டர் చేయాలా அல்லது அதை పెయిడ్-అప్ చేయాలా?","a": "మీకు తక్షణమే నగదు అవసరం లేకపోతే, పాలసీని 'పెయిడ్-అప్' చేయడం దాదాపు ఎల్లప్పుడూ ఉత్తమం. మీరు ప్రీమియంలు చెల్లించడం ఆపివేస్తారు కానీ తగ్గించబడిన జీవిత కవర్‌ను ఉంచుకుంటారు మరియు మెచ్యూరిటీలో చెల్లింపు పొందుతారు. కేవలం ఒక తీవ్రమైన నగదు అత్యవసర పరిస్థితికి మాత్రమే సరెండర్ చేయండి."},
-            {"q": "நான் எனது எல்ஐசி பாலிசியை ஆன்லைனில் சரண்டர் செய்யலாமா?","a": "ప్రస్తుతానికి, చివరి సరెండర్ ప్రక్రియ ఆఫ్‌లైన్‌లో ఉంది. ప్రక్రియను పూర్తి చేయడానికి మీరు అసలు పత్రాలతో మీ సర్వీసింగ్ ఎల్‌ఐసి శాఖను సందర్శించాలి, అయినప్పటికీ కొన్ని ప్రారంభ ఫారమ్‌లను ఆన్‌లైన్‌లో డౌన్‌లోడ్ చేసుకోవచ్చు."},
-            {"q": "எல்ஐசி பாலிசியை சரண்டர் చేయడానికి ఏ పత్రాలు అవసరం?","a": "మీకు అసలు పాలసీ బాండ్, నింపిన సరెండర్ ఫారం (ఫారం 5074), మీ పాన్ మరియు ఆధార్ కార్డుల కాపీ, మరియు మీ బ్యాంక్ వివరాల కోసం ఒక రద్దు చేయబడిన చెక్ అవసరం."},
-            {"q": "சரணடைவு மதிப்புத் தொகையைப் பெற எவ்வளவு காலம் ஆகும்?","a": "உங்கள் ஆவணங்கள் சமர்ப்பிக்கப்பட்டு அங்கீகரிக்கப்பட்டவுடன், எல்ஐசி உங்கள் வங்கிக் கணக்கில் தொகையை வரவு வைக்க பொதுவாக 5-10 வேலை நாட்கள் ஆகும்."},
-            {"q": "சரணடைந்த எல்ஐசி பாலிசியை புதுப்பிக்க முடியுமா?","a": "இல்லை, మీరు సరెండర్ చేసి డబ్బు తీసుకున్న తర్వాత, పాలసీ శాశ్వతంగా రద్దు చేయబడుతుంది మరియు దానిని పునరుద్ధరించలేరు. అవసరమైతే మీరు ఒక కొత్త పాలసీని కొనవలసి ఉంటుంది."},
-            {"q": "டேர்ம் இன்சூரன்ஸ் பாலிசிகளுக்கு சரணடைவு மதிப்பு உள்ளதா?","a": "సాధారణంగా లేదు, స్వచ్ఛమైన టర్మ్ భీమా పథకాలు కేవలం రిస్క్ కవర్ కోసం మాత్రమే మరియు పొదుపు భాగం ఉండదు, కాబట్టి అవి రద్దుపై ఏ చెల్లింపును అందించవు."},
-            {"q": "நான் பாலிசியை சரண்டர் செய்தால் எனது போனஸைப் பெறுவேனா?","a": "అవును, మీ సేకరించిన బోనస్‌లలో ఒక భాగం సాధారణంగా ప్రత్యేక సరెండర్ విలువ (SSV)లో పరిగణించబడుతుంది. కాబట్టి, మీ పాలసీ బోనస్‌లను సంపాదించినట్లయితే, మీ సరెండర్ చెల్లింపు ప్రాథమిక హామీ విలువ కంటే ఎక్కువగా ఉంటుంది. అయితే, పాలసీ దాని పూర్తి కాలాన్ని నడవకపోతే లాయల్టీ చేర్పులు సాధారణంగా జప్తు చేయబడతాయి."}
+            {"q": "How do I calculate the surrender value of my LIC policy?", "a": "The simplest way is to use our calculator above. Just enter your policy details to get an instant estimate. The formula is a percentage of premiums paid plus a portion of your accrued bonuses, which our tool calculates for you."},
+            {"q": "After how many years can I surrender an LIC policy?", "a": "Generally, you can surrender a policy only after you've paid premiums for at least two or three full years. Some single premium policies may be surrendered after one year. Before this period, the policy has no surrender value."},
+            {"q": "Is the surrender value of an LIC policy taxable?", "a": "If you surrender after 5 full premium-paying years, the amount is generally tax-free under Section 10(10D). If you surrender before 5 years, the amount can become taxable, and any tax deductions you claimed under 80C can be reversed. Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to understand the tax implications for your specific situation."},
+            {"q": "How much money will I get if I surrender my LIC policy?", "a": "It's a percentage of what you've paid, and it starts very low. For example, after 3 years, you might only get back ~30% of your premiums. The value increases the longer you hold the policy. Use our calculator above to get a personalized estimate for your policy."},
+            {"q": "What is the difference between guaranteed and special surrender value?", "a": "Guaranteed Surrender Value (GSV) is the legally mandated minimum payout based on a formula of premiums paid. Special Surrender Value (SSV) is a higher, non-guaranteed amount that includes a portion of your bonuses. LIC will always pay whichever amount is higher."},
+            {"q": "Should I surrender my LIC policy or make it paid-up?", "a": "If you don't need cash immediately, making the policy 'Paid-Up' is almost always better. You stop paying premiums but keep a reduced life cover and get a payout at maturity. Use our <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a> to see what you'd get at the end of the policy term. For overall financial planning, check our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a>. Surrender only for a dire cash emergency."},
+            {"q": "Can I surrender my LIC policy online?", "a": "As of now, the final surrender process is offline. You must visit your servicing LIC branch with the original documents to complete the process, though some initial forms may be downloadable online."},
+            {"q": "What documents are required to surrender an LIC policy?", "a": "You will need the Original Policy Bond, the filled Surrender Form (Form 5074), a copy of your PAN and Aadhaar cards, and a cancelled cheque for your bank details."},
+            {"q": "How long does it take to receive the surrender value amount?", "a": "Once your documents are submitted and approved, it typically takes 5-10 working days for LIC to credit the amount to your bank account."},
+            {"q": "Can a surrendered LIC policy be revived?", "a": "No, once you surrender and take the money, the policy is terminated permanently and cannot be revived. You would have to buy a new policy if needed."},
+            {"q": "Do term insurance policies have a surrender value?", "a": "Generally no, pure term insurance plans are for risk cover only and do not have a savings component, so they do not offer a payout on cancellation."},
+            {"q": "Will I get my bonus if I surrender the policy?", "a": "Yes, a portion of your accrued bonuses is typically factored into the Special Surrender Value (SSV). So, if your policy has earned bonuses, your surrender payout will be higher than the basic guaranteed value. Use our <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a> to see how these bonuses grow if you let the policy run full term. Loyalty additions, however, are usually forfeited if the policy does not run its full term."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "next-steps",
+      "icon": "GitCompareArrows",
+      "title": "Beyond Surrender: Explore Your Options",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "<strong>Better LIC Plans:</strong> Explore our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> to compare all available plans and find one that matches your needs better. Check out <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>Jeevan Anand</a>, <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh</a>, <a href='/{lang}/lic-jeevan-umang-calculator' class='text-primary hover:underline'>Jeevan Umang</a>, and <a href='/{lang}/jeevan-utsav-calculator' class='text-primary hover:underline'>Jeevan Utsav</a> calculators.",
+            "<strong>Investment Alternatives:</strong> Compare returns with our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a>, explore <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF investment</a>, use <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a>, and check <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlaps</a> for diversification.",
+            "<strong>Comprehensive Planning:</strong> Use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to plan your overall financial future. Check <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime options</a> to optimize your savings. Explore <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for any borrowing needs and government schemes like <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>APY</a>, <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a>, and <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>SSY</a>."
           ]
         }
       ]
@@ -200,18 +215,27 @@
     {
       "id": "conclusion",
       "icon": "Star",
-      "title": "முடிவுரை: நம்பிக்கையுடன் உங்கள் முடிவை எடுங்கள்",
+      "title": "Conclusion: Make Your Decision with Confidence",
       "content": [
         {
           "type": "paragraph",
-          "text": "உங்கள் பாலிசியை சரண்டர் செய்ய முடிவெடுப்பது கடினம் என்று எனக்குத் தெரியும். இது తరచుగా நீங்கள் ஒரு பாறைக்கும் கடினமான இடத்திற்கும் இடையில் చిక్కుకున్నట్లు உணர்கிறீர்கள். இந்தப் பக்கத்துடன் எனது లక్ష్యం உங்களுக்குத் தகுதியான தெளிவை அளிப்பதாகும். இப்போது நீங்கள் சூத்திரங்கள், நிதி தாக்கங்கள் మరియు అందుబాటులో ఉన్న తెలివైన ప్రత్యామ్నాయాలను అర్థం చేసుకున్నారు. கால்குலேட்டர் నుండి సంఖ్యలను ఒక ముగింపు బిందువుగా కాకుండా, உங்கள் முடிவெடுக்கும் செயல்பாட்டில் ஒரு முக்கிய தகவல் துணுக்குగాப் பயன்படுத்தவும்."
+          "text": "I know deciding to surrender your policy is tough. It often feels like you're caught between a rock and a hard place. My goal with this page was to give you the clarity you deserve. You now understand the formulas, the financial implications, and the smarter alternatives available. Use the numbers from the calculator not as an endpoint, but as a key piece of information in your decision-making process."
         },
         {
-            "type": "monetization_card",
-            "title": "உங்கள் அடுத்த படி: ஒரு சிறந்த நகர்வுக்குத் தயாரா?",
-            "body": "మీ ప్రస్తుత ప్రణాళిక మీ అవసరాలను తీర్చడం లేదని మీరు గ్రహించినందున మీరు సరెండర్ చేస్తుంటే, అది ఒక తెలివైన ఆర్థిక అంతర్దృష్టి. తదుపరి తార్కిక అడుగు ఒక మంచి ప్రత్యామ్నాయాన్ని కనుగొనడం. అధిక-కవర్, తక్కువ-ధర టర్మ్ ఇన్సూరెన్స్‌ను కనుగొనడానికి మా సాధనాలను చూడండి లేదా మీ సంపదను నిజంగా పెంచగల పెట్టుబడి ఎంపికలను అన్వేషించండి.",
-            "href": "https://www.policybazaar.com/life-insurance/term-insurance/",
-            "cta": "கால திட்டங்களை ஒப்பிடுக"
+          "type": "paragraph",
+          "text": "<strong>Before Surrendering:</strong> Explore better options with our <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a> to see your full-term benefits, <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> for alternative plans, and <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> for comprehensive financial planning. Consider our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for emergency liquidity without surrendering."
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Explore LIC Alternatives:</strong> Compare different LIC plans using our <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>Jeevan Anand calculator</a>, <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh calculator</a>, <a href='/{lang}/lic-jeevan-umang-calculator' class='text-primary hover:underline'>Jeevan Umang calculator</a>, and <a href='/{lang}/jeevan-utsav-calculator' class='text-primary hover:underline'>Jeevan Utsav calculator</a>. Check our <a href='/{lang}/lic-child-plan' class='text-primary hover:underline'>LIC child plan calculator</a> if you have dependents."
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Better Investment Returns:</strong> If low returns are driving your surrender decision, use our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a> to compare fixed-income investments, explore <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF returns</a>, and check our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> for equity opportunities. Use the <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> to avoid concentration risk. Optimize with our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a>."
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Comprehensive Financial Planning:</strong> For long-term wealth building, explore government schemes including <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>Atal Pension Yojana (APY)</a>, <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>National Pension System (NPS)</a>, and <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>Sukanya Samriddhi Yojana (SSY)</a>. Use our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for debt management and <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to plan your complete financial future."
         }
       ]
     }

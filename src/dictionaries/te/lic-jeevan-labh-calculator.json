@@ -1,19 +1,19 @@
-
+﻿
 {
-  "meta_title": "ఎల్‌ఐసి జీవన్ లాభ్ ప్రీమియం & మెచ్యూరిటీ క్యాలిక్యులేటర్ (ప్లాన్ 936) — ఆన్‌లైన్, ఉచితం (2025)",
-  "meta_description": "ఈ ఉచిత ఎల్‌ఐసి జీవన్ లాభ్ 936 క్యాలిక్యులేటర్‌ను ఉపయోగించి తక్షణమే మెచ్యూరిటీ ప్రయోజనాలు, వార్షిక/నెలవారీ ప్రీమియంలు, బోనస్ రేట్లు మరియు రాబడులను అంచనా వేయండి. ఇందులో సరెండర్ విలువ సమాచారం మరియు పథకం పోలికలు ఉన్నాయి. 2025 కోసం నవీకరించబడింది.",
-  "h1": "ఎల్‌ఐసి జీవన్ లాభ్ 936 క్యాలిక్యులేటర్ — ప్రీమియంలు & మెచ్యూరిటీ (ఉచిత ఆన్‌లైన్ సాధనం)",
-  "description": "<p>మా ఉచిత, ఆన్‌లైన్ <strong>ఎల్‌ఐసి జీవన్ లాభ్ 936 క్యాలిక్యులేటర్</strong> మీ ప్రీమియం మరియు మెచ్యూరిటీ విలువకు తక్షణ, ఖచ్చితమైన అంచనాలను అందిస్తుంది. మీ రాబడులు, బోనస్, మరియు ప్లాన్ 936 కోసం పన్ను ప్రయోజనాలను సెకన్లలో అర్థం చేసుకోండి. ఈరోజే మీ పెట్టుబడిని ప్లాన్ చేయడానికి మా <strong>జీవన్ లాభ్ క్యాలిక్యులేటర్ ఆన్‌లైన్ ఉచితంగా</strong> ఉపయోగించండి.</p>",
+  "meta_title": "LIC Jeevan Labh Premium & Maturity Calculator (Plan 936) â€” Online, Free (2025)",
+  "meta_description": "Use this free LIC Jeevan Labh 936 calculator to instantly estimate maturity benefits, yearly/monthly premiums, bonus rates, and returns. Includes surrender value info and plan comparisons. Updated for 2025.",
+  "h1": "LIC Jeevan Labh 936 Calculator â€” Premiums & Maturity (Free Online Tool)",
+  "description": "<p>Our free, online <strong>LIC Jeevan Labh 936 calculator</strong> gives you instant, accurate estimates for your premiums and maturity value. Understand your returns, bonus, and tax benefits for Plan 936 in seconds. Use our <strong>lic jeevan labh calculator online free</strong> to plan your investment today.</p>",
   "tool": {
-    "title": "జీవన్ లాభ్ క్యాలిక్యులేటర్ (ప్లాన్ 936)",
-    "form_description": "ప్రీమియం మరియు మెచ్యూరిటీ ప్రయోజనాలను అంచనా వేయడానికి మీ వివరాలను నమోదు చేయండి.",
-    "age_label": "మీ వయస్సు",
-    "term_label": "పాలసీ కాలపరిమితి",
-    "sum_assured_label": "బీమా మొత్తం (₹)",
-    "calculate_button": "ప్రయోజనాలను లెక్కించండి",
-    "calculating": "లెక్కిస్తోంది...",
+    "title": "Jeevan Labh Calculator (Plan 936)",
+    "form_description": "Enter your details to estimate the premium and maturity benefits.",
+    "age_label": "Your Age",
+    "term_label": "Policy Term",
+    "sum_assured_label": "Sum Assured (â‚¹)",
+    "calculate_button": "Calculate Benefits",
+    "calculating": "Calculating...",
     "results": {
-      "note": "నిరాకరణ: అన్ని విలువలు అంచనాలు. GST @4.5% (1వ సంవత్సరం) చేర్చబడింది. బోనస్ రేట్లు ఉదాహరణాత్మకమైనవి మరియు హామీ ఇవ్వబడవు."
+      "note": "Disclaimer: All values are estimates. GST @4.5% (1st year) is included. Bonus rates are illustrative and not guaranteed."
     }
   },
   "article": {
@@ -21,22 +21,22 @@
       {
         "id": "at-a-glance",
         "icon": "ShieldCheck",
-        "title": "ఎల్‌ఐసి జీవన్ లాభ్ పథకం 936 ఒక చూపులో",
+        "title": "LIC Jeevan Labh Plan 936 at a Glance",
         "content": [
           {
             "type": "paragraph",
-            "text": "మొదలుపెట్టే ముందు, జీవన్ లాభ్ (ప్లాన్ 936) ఎందుకు చాలా మందికి ఇష్టమైన ఎంపికగా ఉందో ఇక్కడ ఒక శీఘ్ర అవలోకనం ఉంది:"
+            "text": "Before diving in, here's a quick overview of what makes Jeevan Labh (Plan 936) a preferred choice for many:"
           },
           {
             "type": "table",
-            "headers": ["ఫీచర్", "వివరాలు"],
+            "headers": ["Feature", "Details"],
             "rows": [
-              ["పథకం రకం", "నాన్-లింక్డ్, లాభాలతో, పరిమిత ప్రీమియం ఎండోమెంట్"],
-              ["ప్రవేశ వయస్సు", "8 సంవత్సరాల నుండి 59 సంవత్సరాల వరకు"],
-              ["పాలసీ కాలపరిమితి / పిపిటి", "16/10 సంవత్సరాలు, 21/15 సంవత్సరాలు, 25/16 సంవత్సరాలు"],
-              ["బీమా మొత్తం", "కనీసం ₹2,00,000 (ఎగువ పరిమితి లేదు)"],
-              ["బోనస్‌లు", "సింపుల్ రివర్షనరీ బోనస్ + ఫైనల్ అడిషనల్ బోనస్ (FAB)"],
-              ["పన్ను ప్రయోజనాలు", "80C కింద చెల్లించిన ప్రీమియం అర్హత, 10(10D) కింద మెచ్యూరిటీ"]
+              ["Plan Type", "Non-linked, With-Profits, Limited Premium Endowment"],
+              ["Entry Age", "8 years to 59 years"],
+              ["Policy Term / PPT", "16/10 years, 21/15 years, 25/16 years"],
+              ["Sum Assured", "Minimum â‚¹2,00,000 (No upper limit)"],
+              ["Bonuses", "Simple Reversionary Bonus + Final Additional Bonus (FAB)"],
+              ["Tax Benefits", "Premium paid eligible under 80C, Maturity under 10(10D)"]
             ]
           }
         ]
@@ -44,19 +44,19 @@
       {
         "id": "why-use-calculator",
         "icon": "HelpCircle",
-        "title": "ఎల్‌ఐసి జీవన్ లాభ్ ప్రీమియం క్యాలిక్యులేటర్‌ను ఎందుకు ఉపయోగించాలి?",
+        "title": "Why Use a LIC Jeevan Labh Premium Calculator?",
         "content": [
           {
             "type": "paragraph",
-            "text": "ఈ సాధనం ఖర్చులు మరియు ప్రయోజనాలపై తక్షణ స్పష్టతను అందించడం ద్వారా సమాచారంతో కూడిన నిర్ణయాలు తీసుకోవడానికి మిమ్మల్ని శక్తివంతం చేస్తుంది. ఇది ఎందుకు అవసరమో ఇక్కడ ఉంది:"
+            "text": "This tool empowers you to make informed decisions by providing instant clarity on costs and benefits. Hereâ€™s why itâ€™s essential:"
           },
           {
             "type": "list",
             "items": [
-              "<strong>వేగవంతమైన & ఖచ్చితమైన ప్రీమియంలు:</strong> మీరు ఎంచుకున్న బీమా మొత్తం మరియు కాలపరిమితి కోసం తక్షణ, నమ్మకమైన ప్రీమియం అంచనాలను పొందండి.",
-              "<strong>దృష్టాంతాలను పోల్చండి:</strong> 'జీవన్ లాభ్ మెచ్యూరిటీ విలువ 10 లక్షలు' వర్సెస్ 'ఎల్‌ఐసి జీవన్ లాభ్ 1 కోటి ప్రీమియం' కోసం మీ ప్రీమియం ఎలా మారుతుందో సులభంగా తనిఖీ చేయండి.",
-              "<strong>బడ్జెటింగ్ సులభం:</strong> నెలవారీ, త్రైమాసిక మరియు వార్షిక చెల్లింపు మోడ్‌ల మధ్య వ్యత్యాసాన్ని తక్షణమే చూడండి.",
-              "<strong>పూర్తి ఖర్చు పారదర్శకత:</strong> మీ మొత్తం ప్రీమియం అవుట్‌ఫ్లోపై GST మరియు ఐచ్ఛిక రైడర్‌ల ప్రభావాన్ని అర్థం చేసుకోండి."
+              "<strong>Fast & Accurate Premiums:</strong> Get immediate, reliable premium estimates for your chosen sum assured and term.",
+              "<strong>Compare Scenarios:</strong> Easily check how your premium changes for a 'lic jeevan labh maturity value 10 lakh' versus a 'lic jeevan labh 1 crore premium'.",
+              "<strong>Budgeting Made Easy:</strong> Instantly see the difference between monthly, quarterly, and yearly payment modes.",
+              "<strong>Full Cost Transparency:</strong> Understand the impact of GST and optional riders on your total premium outflow."
             ]
           }
         ]
@@ -64,17 +64,17 @@
       {
         "id": "factors-affecting-premium",
         "icon": "SlidersHorizontal",
-        "title": "మీ జీవన్ లాభ్ ప్రీమియంను ప్రభావితం చేసే కారకాలు",
+        "title": "Factors That Affect Your Jeevan Labh Premium",
         "content": [
           {
             "type": "list",
             "items": [
-              "<strong>పాలసీదారుని వయస్సు:</strong> మీరు ఎంత చిన్నవయస్సులో ఉంటే, మీ ప్రీమియం అంత తక్కువగా ఉంటుంది.",
-              "<strong>బీమా మొత్తం:</strong> అధిక కవరేజ్ మొత్తం అంటే అధిక ప్రీమియం.",
-              "<strong>పాలసీ కాలపరిమితి:</strong> దీర్ఘ కాలపరిమితులు సాధారణంగా కొద్దిగా తక్కువ వార్షిక ప్రీమియంలను కలిగి ఉంటాయి, కానీ ఎక్కువ సంవత్సరాలు చెల్లించబడతాయి.",
-              "<strong>చెల్లింపు విధానం:</strong> 'మోడల్ లోడింగ్' కారణంగా వార్షిక చెల్లింపులు నెలవారీ చెల్లింపుల కంటే చౌకగా ఉంటాయి.",
-              "<strong>రైడర్‌లు:</strong> యాక్సిడెంటల్ డెత్ బెనిఫిట్ వంటి ఐచ్ఛిక యాడ్-ఆన్‌లు ఖర్చును పెంచుతాయి.",
-              "<strong>అధిక బీమా మొత్తం రిబేట్లు:</strong> ఎల్‌ఐసి అధిక బీమా మొత్తాలపై తగ్గింపును అందిస్తుంది, దానిని మా క్యాలిక్యులేటర్ కలిగి ఉంటుంది."
+              "<strong>Age of Policyholder:</strong> The younger you are, the lower your premium.",
+              "<strong>Sum Assured:</strong> A higher coverage amount means a higher premium.",
+              "<strong>Policy Term:</strong> Longer terms generally have slightly lower annualized premiums but are paid for more years.",
+              "<strong>Mode of Payment:</strong> Yearly payments are cheaper than monthly payments due to 'modal loading'.",
+              "<strong>Riders:</strong> Optional add-ons like Accidental Death Benefit increase the cost.",
+              "<strong>High Sum Assured Rebates:</strong> LIC offers a discount on higher sum assured amounts, which our calculator includes."
             ]
           }
         ]
@@ -82,62 +82,62 @@
       {
         "id": "premium-chart",
         "icon": "BarChart2",
-        "title": "ఎల్‌ఐసి జీవన్ లాభ్ 10 లక్షల ప్రీమియం చార్ట్ (నమూనా)",
+        "title": "LIC Jeevan Labh 10 Lakh Premium Chart (Sample)",
         "content": [
           {
             "type": "paragraph",
-            "text": "ఇక్కడ ఒక <strong>₹10 లక్షల బీమా మొత్తం</strong> కోసం అంచనా వేయబడిన వార్షిక ప్రీమియంలను చూపించే ఒక నమూనా చార్ట్ ఉంది. ఈ సంఖ్యలు ఉదాహరణాత్మకమైనవి మరియు GSTని కలిగి ఉంటాయి."
+            "text": "Hereâ€™s a sample chart showing estimated yearly premiums for a **â‚¹10 Lakh Sum Assured** for a standard male life. These figures are illustrative and include GST."
           },
           {
             "type": "table",
-            "headers": ["ప్రవేశ వయస్సు", "కాలపరిమితి 16 / పిపిటి 10", "కాలపరిమితి 21 / పిపిటి 15", "కాలపరిమితి 25 / పిపిటి 16"],
+            "headers": ["Entry Age", "Term 16 / PPT 10", "Term 21 / PPT 15", "Term 25 / PPT 16"],
             "rows": [
-              ["20 సంవత్సరాలు", "₹85,150", "₹50,300", "₹40,900"],
-              ["30 సంవత్సరాలు", "₹86,900", "₹51,800", "₹42,200"],
-              ["40 సంవత్సరాలు", "₹90,500", "₹55,500", "₹46,100"],
-              ["50 సంవత్సరాలు", "₹1,01,200", "₹64,900", "₹54,800"]
+              ["20 Years", "â‚¹85,150", "â‚¹50,300", "â‚¹40,900"],
+              ["30 Years", "â‚¹86,900", "â‚¹51,800", "â‚¹42,200"],
+              ["40 Years", "â‚¹90,500", "â‚¹55,500", "â‚¹46,100"],
+              ["50 Years", "â‚¹1,01,200", "â‚¹64,900", "â‚¹54,800"]
             ],
-            "footer": "ప్రీమియంలు అంచనా వేయబడినవి మరియు అండర్‌రైటింగ్ ఆధారంగా మారవచ్చు."
+            "footer": "Premiums are approximate and can vary based on underwriting."
           }
         ]
       },
        {
         "id": "maturity-calculator-bonus",
         "icon": "TrendingUp",
-        "title": "బోనస్‌తో జీవన్ లాభ్ మెచ్యూరిటీ క్యాలిక్యులేటర్ (ఉదాహరణాత్మకం)",
+        "title": "Jeevan Labh Maturity Calculator with Bonus (Illustrative)",
         "content": [
           {
             "type": "paragraph",
-            "text": "ఈ పట్టిక, మా <strong>బోనస్‌తో జీవన్ లాభ్ మెచ్యూరిటీ క్యాలిక్యులేటర్</strong> తర్కం ద్వారా శక్తివంతం చేయబడింది, ఒక <strong>₹10 లక్షల బీమా మొత్తం</strong> పాలసీ కోసం అంచనా వేయబడిన <strong>పన్ను-రహిత మెచ్యూరిటీ మొత్తాన్ని</strong> అంచనా వేస్తుంది. ఇది 'జీవన్ లాభ్ 25 సంవత్సరాల మెచ్యూరిటీ విలువ' లేదా ఇతర నిబంధనలు ఏమిటో సమాధానం ఇవ్వడానికి సహాయపడుతుంది."
+            "text": "This table, powered by our <strong>jeevan labh maturity calculator with bonus</strong> logic, projects the approximate **tax-free maturity amount** for a **â‚¹10 Lakh Sum Assured** policy. This helps answer what the 'jeevan labh 25 years maturity value' or other terms would be."
           },
           {
             "type": "table",
-            "headers": ["ప్రవేశ వయస్సు", "కాలపరిమితి 16 / మెచ్యూరిటీ", "కాలపరిమితి 21 / మెచ్యూరిటీ", "కాలపరిమితి 25 / మెచ్యూరిటీ"],
+            "headers": ["Entry Age", "Term 16 / Maturity", "Term 21 / Maturity", "Term 25 / Maturity"],
             "rows": [
-              ["20 సంవత్సరాలు", "₹17,44,000", "₹20,34,000", "₹23,00,000"],
-              ["30 సంవత్సరాలు", "₹17,44,000", "₹20,34,000", "₹23,00,000"],
-              ["40 సంవత్సరాలు", "₹17,44,000", "₹20,34,000", "₹23,00,000"],
-              ["50 సంవత్సరాలు", "₹17,44,000", "₹20,34,000", "₹23,00,000"]
+              ["20 Years", "â‚¹17,44,000", "â‚¹20,34,000", "â‚¹23,00,000"],
+              ["30 Years", "â‚¹17,44,000", "â‚¹20,34,000", "â‚¹23,00,000"],
+              ["40 Years", "â‚¹17,44,000", "â‚¹20,34,000", "â‚¹23,00,000"],
+              ["50 Years", "â‚¹17,44,000", "â‚¹20,34,000", "â‚¹23,00,000"]
             ],
-            "footer": "మెచ్యూరిటీ విలువలు అంచనాలు మరియు హామీ ఇవ్వబడవు. అవి ఎల్‌ఐసి ద్వారా ప్రకటించబడిన బోనస్‌లపై ఆధారపడి ఉంటాయి."
+            "footer": "Maturity values are estimates and not guaranteed. They depend on bonuses declared by LIC."
           }
         ]
       },
       {
         "id": "worked-examples",
         "icon": "FileText",
-        "title": "పని చేసిన ప్రీమియం & మెచ్యూరిటీ ఉదాహరణలు",
+        "title": "Worked-Out Premium & Maturity Examples",
         "content": [
           {
             "type": "examples",
             "items": [
               {
-                "title": "ఉదాహరణ 1: ₹10 లక్షల బీమా మొత్తం కోసం జీవన్ లాభ్ మెచ్యూరిటీ విలువ",
-                "body": "<strong>దృష్టాంతం:</strong> ఒక 30 ఏళ్ల వ్యక్తి 25 ఏళ్ల కాలపరిమితి పాలసీలో పెట్టుబడి పెడతాడు. <br><strong>ప్రీమియం:</strong> 16 సంవత్సరాలకు సుమారుగా ₹42,200 ప్రతి సంవత్సరం. <br><strong>మొత్తం చెల్లించింది:</strong> ~₹6.75 లక్షలు. <br><strong>అంచనా వేయబడిన 'జీవన్ లాభ్ 25 సంవత్సరాల మెచ్యూరిటీ విలువ':</strong> ₹10,00,000 (బీమా మొత్తం) + ~₹12,00,000 (బోనస్) + ~₹1,00,000 (FAB) = <strong>~₹23,00,000</strong>."
+                "title": "Example 1: Jeevan Labh Maturity Value for â‚¹10 Lakh Sum Assured",
+                "body": "<strong>Scenario:</strong> A 30-year-old invests in a 25-year term policy. <br><strong>Premium:</strong> Approx. â‚¹42,200 per year for 16 years. <br><strong>Total Paid:</strong> ~â‚¹6.75 Lakh. <br><strong>Estimated 'Jeevan Labh 25 years maturity value':</strong> â‚¹10,00,000 (Sum Assured) + ~â‚¹12,00,000 (Bonus) + ~â‚¹1,00,000 (FAB) = <strong>~â‚¹23,00,000</strong>."
               },
               {
-                "title": "ఉదాహరణ 2: ఎల్‌ఐసి జీవన్ లాభ్ 1 కోటి ప్రీమియం",
-                "body": "<strong>దృష్టాంతం:</strong> ఒక 35 ఏళ్ల అధిక-ఆదాయ నిపుణుడు 21 ఏళ్ల కాలపరిమితితో ₹1 కోటి బీమా మొత్తాన్ని ఎంచుకుంటాడు. <br><strong>ప్రీమియం:</strong> 15 సంవత్సరాలకు సుమారుగా ₹5,10,000 ప్రతి సంవత్సరం. <br><strong>మొత్తం చెల్లించింది:</strong> ~₹76.5 లక్షలు. <br><strong>అంచనా వేయబడిన మెచ్యూరిటీ:</strong> <strong>₹2.03 కోట్లకు</strong> పైగా ఒక గణనీయమైన పన్ను-రహిత కార్పస్."
+                "title": "Example 2: LIC Jeevan Labh 1 Crore Premium",
+                "body": "<strong>Scenario:</strong> A 35-year-old high-income professional opts for a â‚¹1 Crore Sum Assured with a 21-year term. <br><strong>Premium:</strong> Approx. â‚¹5,10,000 per year for 15 years. <br><strong>Total Paid:</strong> ~â‚¹76.5 Lakh. <br><strong>Estimated Maturity:</strong> A substantial tax-free corpus of over <strong>â‚¹2.03 Crore</strong>."
               }
             ]
           }
@@ -146,47 +146,47 @@
       {
         "id": "bonus-rates",
         "icon": "TrendingUp",
-        "title": "ఎల్‌ఐసి జీవన్ లాభ్ బోనస్ రేట్లు (చారిత్రక డేటా)",
+        "title": "LIC Jeevan Labh Bonus Rates (Historical Data)",
         "content": [
           {
             "type": "paragraph",
-            "text": "మెచ్యూరిటీ విలువ ఎల్‌ఐసి ద్వారా ఏటా ప్రకటించబడే సింపుల్ రివర్షనరీ బోనస్‌పై ఎక్కువగా ఆధారపడి ఉంటుంది. హామీ ఇవ్వనప్పటికీ, చారిత్రక రేట్లు పనితీరుకు ఒక మంచి సూచనను అందిస్తాయి. ఇక్కడ ప్రతి ₹1,000 బీమా మొత్తానికి ఇటీవలి ఉదాహరణాత్మక రేట్లు ఉన్నాయి:"
+            "text": "The maturity value heavily depends on the Simple Reversionary Bonus declared by LIC annually. While not guaranteed, historical rates provide a good indication of performance. Here are recent illustrative rates per â‚¹1,000 Sum Assured:"
           },
           {
             "type": "table",
-            "headers": ["కాలపరిమితి", "2023-24 కోసం బోనస్ రేటు", "2022-23 కోసం బోనస్ రేటు"],
+            "headers": ["Term", "Bonus Rate for 2023-24", "Bonus Rate for 2022-23"],
             "rows": [
-              ["16 సంవత్సరాలు", "₹40", "₹37"],
-              ["21 సంవత్సరాలు", "₹44", "₹41"],
-              ["25 సంవత్సరాలు", "₹48", "₹45"]
+              ["16 Years", "â‚¹40", "â‚¹37"],
+              ["21 Years", "â‚¹44", "â‚¹41"],
+              ["25 Years", "â‚¹48", "â‚¹45"]
             ],
-            "footer": "మూలం: పబ్లిక్‌గా అందుబాటులో ఉన్న ఎల్‌ఐసి బోనస్ ప్రకటనలు. భవిష్యత్ సంవత్సరాలకు రేట్లు హామీ ఇవ్వబడవు."
+            "footer": "Source: Publicly available LIC bonus declarations. Rates are not guaranteed for future years."
           }
         ]
       },
       {
         "id": "how-to-use",
         "icon": "StepForward",
-        "title": "మా ఎల్‌ఐసి జీవన్ లాభ్ క్యాలిక్యులేటర్‌ను ఆన్‌లైన్‌లో ఉచితంగా ఎలా ఉపయోగించాలి",
+        "title": "How to Use Our LIC Jeevan Labh Calculator Online Free",
         "content": [
           {
             "type": "steps",
             "items": [
               {
-                "title": "ప్రాథమిక వివరాలను నమోదు చేయండి",
-                "description": "మీ ప్రస్తుత వయస్సు మరియు మీరు కోరుకున్న బీమా మొత్తాన్ని అందించండి."
+                "title": "Enter Basic Details",
+                "description": "Input your current age and the Sum Assured (coverage amount) you desire."
               },
               {
-                "title": "కాలపరిమితి & పిపిటిని ఎంచుకోండి",
-                "description": "మీ పాలసీ కాలపరిమితిని (16, 21, లేదా 25 సంవత్సరాలు) ఎంచుకోండి. క్యాలిక్యులేటర్ స్వయంచాలకంగా సరైన ప్రీమియం చెల్లింపు కాలాన్ని (10, 15, లేదా 16 సంవత్సరాలు) వర్తింపజేస్తుంది."
+                "title": "Select Term & PPT",
+                "description": "Choose your policy term (16, 21, or 25 years). The calculator will automatically apply the correct Premium Paying Term (10, 15, or 16 years)."
               },
               {
-                "title": "లెక్కించు క్లిక్ చేయండి",
-                "description": "మా సాధనం తక్షణమే GSTతో సహా ప్రీమియంను గణిస్తుంది, మరియు ఉదాహరణాత్మక బోనస్ రేట్ల ఆధారంగా మెచ్యూరిటీ విలువను అంచనా వేస్తుంది."
+                "title": "Click 'Calculate'",
+                "description": "Our tool instantly computes the premium, including GST, and estimates the maturity value based on illustrative bonus rates."
               },
               {
-                "title": "వివరణాత్మక ఫలితాలను వీక్షించండి",
-                "description": "మీ వార్షిక/నెలవారీ ప్రీమియంలు, చెల్లించిన మొత్తం మొత్తం, మరియు ప్రొజెక్ట్ చేయబడిన చివరి చెల్లింపు యొక్క స్పష్టమైన విచ్ఛిన్నం చూడండి."
+                "title": "View Detailed Results",
+                "description": "See a clear breakdown of your yearly/monthly premiums, total amount paid, and the projected final payout."
               }
             ]
           }
@@ -195,22 +195,22 @@
        {
         "id": "tax-benefits-explained",
         "icon": "FileText",
-        "title": "పన్ను ప్రయోజనాలు వివరించబడ్డాయి: 80C & 10(10D)",
+        "title": "Tax Benefits Explained: 80C & 10(10D)",
         "content": [
             {
                 "type": "paragraph",
-                "text": "జీవన్ లాభ్ మినహాయింపు-మినహాయింపు-మినహాయింపు (EEE) వర్గం కింద గణనీయమైన పన్ను ప్రయోజనాలను అందిస్తుంది, ఇది దాని ప్రజాదరణకు ఒక ముఖ్య కారణం."
+                "text": "Jeevan Labh offers significant tax advantages under the Exempt-Exempt-Exempt (EEE) category, a key reason for its popularity."
             },
             {
                 "type": "examples",
                 "items": [
                     {
-                        "title": "సెక్షన్ 80C మినహాయింపు (పెట్టుబడి దశ)",
-                        "body": "మీరు ప్రతి సంవత్సరం చెల్లించే ప్రీమియం (₹1.5 లక్షల వరకు) మీ పన్ను విధించదగిన ఆదాయం నుండి మినహాయింపుకు అర్హత పొందుతుంది. <strong>ఉదాహరణ:</strong> ₹10 లక్షల జీవన్ లాభ్ పథకం కోసం మీ వార్షిక ప్రీమియం ₹42,000 మరియు మీరు 30% పన్ను బ్రాకెట్‌లో ఉంటే, మీరు ప్రతి సంవత్సరం సుమారుగా <strong>₹12,600 పన్ను</strong> ఆదా చేయవచ్చు."
+                        "title": "Section 80C Deduction (Investment Phase)",
+                        "body": "The premium you pay each year (up to â‚¹1.5 Lakh) is eligible for deduction from your taxable income. <strong>Example:</strong> If your annual premium for a â‚¹10 Lakh Jeevan Labh plan is â‚¹42,000 and you are in the 30% tax bracket, you can save approximately <strong>â‚¹12,600 in taxes</strong> each year."
                     },
                     {
-                        "title": "సెక్షన్ 10(10D) పన్ను-రహిత మెచ్యూరిటీ (రిటర్న్ దశ)",
-                        "body": "బీమా మొత్తం మరియు అన్ని బోనస్‌లతో సహా మొత్తం మెచ్యూరిటీ మొత్తం పూర్తిగా పన్ను-రహితం, వార్షిక ప్రీమియం బీమా మొత్తంలో 10% మించకపోతే. <strong>ఉదాహరణ:</strong> మీ మెచ్యూరిటీ విలువ ₹23 లక్షలు అయితే, మీరు ఏ పన్ను బాధ్యత లేకుండా పూర్తి మొత్తాన్ని అందుకుంటారు. ఇది ఫిక్స్‌డ్ డిపాజిట్ల వంటి పరికరాలపై ఒక ముఖ్యమైన ప్రయోజనాన్ని అందిస్తుంది, ఇక్కడ వడ్డీ పూర్తిగా పన్ను విధించదగినది."
+                        "title": "Section 10(10D) Tax-Free Maturity (Return Phase)",
+                        "body": "The entire maturity amountâ€”including the Sum Assured and all bonusesâ€”is completely tax-free, provided the annual premium does not exceed 10% of the sum assured. <strong>Example:</strong> If your maturity value is â‚¹23 Lakh, you receive the full amount without any tax liability. This offers a significant advantage over instruments like Fixed Deposits where interest is fully taxable."
                     }
                 ]
             }
@@ -219,25 +219,25 @@
       {
         "id": "surrender-value",
         "icon": "TrendingUp",
-        "title": "సరెండర్ విలువ & రుణ సౌకర్యం వివరించబడింది",
+        "title": "Surrender Value & Loan Facility Explained",
         "content": [
             {
                 "type": "paragraph",
-                "text": "జీవన్ లాభ్ కనీసం రెండు పూర్తి సంవత్సరాలు ప్రీమియంలు చెల్లించిన తర్వాత ద్రవ్యత ఎంపికలను అందిస్తుంది, ఆ సమయంలో పాలసీ ఒక 'సరెండర్ విలువ'ను పొందుతుంది. ఈ విలువ పాలసీ సరెండర్ మరియు రుణ అర్హత రెండింటికీ కీలకం."
+                "text": "Jeevan Labh provides liquidity options after you have paid premiums for at least two full years, at which point the policy acquires a 'Surrender Value'. This value is crucial for both policy surrender and loan eligibility."
             },
             {
                 "type": "list",
                 "items": [
-                    "<strong>హామీ సరెండర్ విలువ (GSV):</strong> ఇది చెల్లించిన మొత్తం ప్రీమియంల (రైడర్‌లను మినహాయించి) శాతం మరియు వెస్టెడ్ బోనస్‌ల శాతంగా లెక్కించబడుతుంది.",
-                    "<strong>రుణ సౌకర్యం:</strong> మీరు పాలసీపై రుణం తీసుకోవచ్చు, దీని గరిష్ట మొత్తం అమలులో ఉన్న పాలసీలకు సరెండర్ విలువలో 90% వరకు ఉంటుంది. ఇది పథకాన్ని ముగించకుండా నిధులకు ప్రాప్యతను అందిస్తుంది."
+                    "<strong>Guaranteed Surrender Value (GSV):</strong> This is calculated as a percentage of total premiums paid (excluding riders) plus a percentage of vested bonuses.",
+                    "<strong>Loan Facility:</strong> You can take a loan against the policy, with the maximum amount being up to 90% of the surrender value for in-force policies. This provides access to funds without terminating the plan."
                 ]
             },
             {
                 "type": "examples",
                 "items": [
                     {
-                        "title": "సరెండర్ & రుణ ఉదాహరణ (ఉదాహరణాత్మకం)",
-                        "body": "మీరు మీ పాలసీ కోసం 5 సంవత్సరాలలో మొత్తం <strong>₹2.5 లక్షలు</strong> ప్రీమియం చెల్లించినట్లయితే, అది సుమారుగా <strong>₹1.3 లక్షల</strong> సరెండర్ విలువను పొందవచ్చు (ఈ విలువ ఎల్‌ఐసి యొక్క నిర్దిష్ట పట్టికలపై ఆధారపడి ఉంటుంది). దీని ఆధారంగా, మీరు <strong>₹1.17 లక్షల</strong> (₹1.3Lలో 90%) వరకు రుణానికి అర్హత పొందవచ్చు. మా అంతర్గత 'జీవన్ లాభ్ సరెండర్ విలువ క్యాలిక్యులేటర్' తర్కం మా ఫలితాల అంచనాలలో నిర్మించబడింది."
+                        "title": "Surrender & Loan Example (Illustrative)",
+                        "body": "If you have paid premiums totaling <strong>â‚¹2.5 Lakh</strong> over 5 years for your policy, it might acquire a surrender value of approximately <strong>â‚¹1.3 Lakh</strong> (this value depends on LIC's specific tables). Based on this, you could be eligible for a loan of up to <strong>â‚¹1.17 Lakh</strong> (90% of â‚¹1.3L). Our internal 'jeevan labh surrender value calculator' logic is built into our result estimates."
                     }
                 ]
             }
@@ -246,15 +246,15 @@
       {
         "id": "benefits",
         "icon": "CheckCircle",
-        "title": "ఎల్‌ఐసి జీవన్ లాభ్ ప్రయోజనాలు ఒక చూపులో",
+        "title": "LIC Jeevan Labh Benefits at a Glance",
         "content": [
           {
             "type": "list",
             "items": [
-              "<strong>తక్కువ చెల్లించండి, ఎక్కువ పొందండి:</strong> ముఖ్య ప్రయోజనం పరిమిత ప్రీమియం చెల్లింపు కాలపరిమితి. 25-సంవత్సరాల పాలసీకి, మీరు కేవలం 16 సంవత్సరాలు చెల్లిస్తారు.",
-              "<strong>ద్వంద్వ ప్రయోజనం:</strong> ఇది జీవిత బీమా రక్షణను ఒక క్రమశిక్షణతో కూడిన పొదుపు పథకంతో కలుపుతుంది, మెచ్యూరిటీపై ఏకమొత్తాన్ని నిర్ధారిస్తుంది.",
-              "<strong>పన్ను సామర్థ్యం:</strong> చెల్లించిన ప్రీమియంలు సెక్షన్ 80C కింద మినహాయించబడతాయి, మరియు మెచ్యూరిటీ మొత్తం సెక్షన్ 10(10D) కింద పన్ను-రహితం.",
-              "<strong>ద్రవ్యత ఎంపికలు:</strong> రెండు పూర్తి సంవత్సరాల ప్రీమియం చెల్లింపుల తర్వాత రుణం మరియు సరెండర్ సౌకర్యాలు అందుబాటులో ఉన్నాయి."
+              "<strong>Pay for Less, Get for More:</strong> The key benefit is the limited premium payment term. For a 25-year policy, you only pay for 16 years.",
+              "<strong>Dual Advantage:</strong> It combines life insurance protection with a disciplined savings plan, ensuring a lump sum at maturity.",
+              "<strong>Tax Efficiency:</strong> Premiums paid are deductible under Section 80C, and the maturity amount is tax-free under Section 10(10D).",
+              "<strong>Liquidity Options:</strong> Loan and surrender facilities are available after two full years of premium payments."
             ]
           }
         ]
@@ -262,59 +262,94 @@
       {
         "id": "comparison",
         "icon": "GitCompareArrows",
-        "title": "జీవన్ లాభ్ వర్సెస్ జీవన్ ఉమంగ్ వర్సెస్ జీవన్ ఉత్సవ్",
+        "title": "Jeevan Labh vs. Jeevan Umang vs. Jeevan Utsav",
         "content": [
           {
             "type": "paragraph",
-            "text": "సరైన ఎల్‌ఐసి పథకాన్ని ఎంచుకోవడం గందరగోళంగా ఉంటుంది. నిర్ణయం తీసుకోవడంలో మీకు సహాయపడటానికి ఇక్కడ ఒక శీఘ్ర పోలిక ఉంది:"
+            "text": "Choosing the right LIC plan can be confusing. Hereâ€™s a quick comparison to help you decide:"
           },
           {
             "type": "table",
-            "headers": ["ఫీచర్", "జీవన్ లాభ్ (936)", "జీవన్ ఉమంగ్ (945)", "జీవన్ ఉత్సవ్ (871)"],
+            "headers": ["Feature", "Jeevan Labh (936)", "Jeevan Umang (945)", "Jeevan Utsav (871)"],
             "rows": [
-              ["పథకం రకం", "పరిమిత చెల్లింపు ఎండోమెంట్", "పూర్తి జీవితం + హామీ ఆదాయం", "పూర్తి జీవితం + హామీ చేర్పులు"],
-              ["ప్రాథమిక లక్ష్యం", "లక్ష్య-ఆధారిత ఏకమొత్తం (ఉదా., పిల్లల వివాహం)", "పిపిటి తర్వాత జీవితకాల ఆదాయ ప్రవాహం", "సౌకర్యవంతమైన జీవితకాల ప్రయోజనాలు"],
-              ["మెచ్యూరిటీ", "పాలసీ కాలపరిమితి చివరిలో స్థిరం", "100 ఏళ్ల వయస్సులో లేదా మరణంపై", "100 ఏళ్ల వయస్సులో లేదా మరణంపై"],
-              ["ముఖ్య ప్రయోజనం", "ఏకమొత్తం చెల్లింపు", "పిపిటి తర్వాత ఏటా బీమా మొత్తంలో 8%", "పిపిటి సమయంలో హామీ చేర్పులు"],
-              ["ప్రీమియం స్థాయి", "మూడింటిలో అతి తక్కువ", "అత్యధికం", "మధ్యస్థం"]
+              ["Plan Type", "Limited Pay Endowment", "Whole Life + Guaranteed Income", "Whole Life + Guaranteed Additions"],
+              ["Primary Goal", "Goal-based lump sum (e.g., child's marriage)", "Lifelong income stream post-PPT", "Flexible lifelong benefits"],
+              ["Maturity", "Fixed at end of policy term", "At age 100 or on death", "At age 100 or on death"],
+              ["Key Benefit", "Lump sum payout", "8% of Sum Assured annually after PPT", "Guaranteed Additions during PPT"],
+              ["Premium Level", "Lowest of the three", "Highest", "Moderate"]
             ],
-            "footer": "<strong>ముగింపు:</strong> ఒక నిర్దిష్ట, సమయబద్ధ లక్ష్యం కోసం జీవన్ లాభ్‌ను ఎంచుకోండి. జీవితకాల పెన్షన్ వంటి ఆదాయం కోసం జీవన్ ఉమంగ్‌ను ఎంచుకోండి. ప్రయోజన ఉపసంహరణపై ఎక్కువ సౌలభ్యం కోసం జీవన్ ఉత్సవ్‌ను ఎంచుకోండి."
+            "footer": "<strong>Conclusion:</strong> Choose Jeevan Labh for a specific, timed goal. Choose Jeevan Umang for a lifelong pension-like income. Choose Jeevan Utsav for more flexibility on benefit withdrawal."
           }
         ]
       },
       {
         "id": "faq",
         "icon": "HelpCircle",
-        "title": "తరచుగా అడిగే ప్రశ్నలు (FAQ)",
+        "title": "Frequently Asked Questions (FAQ)",
         "content": [
           {
             "type": "faq",
             "items": [
               {
-                "q": "10 లక్షలకు ఎల్‌ఐసి జీవన్ లాభ్ ప్రీమియం ఎంత?",
-                "a": "25 ఏళ్ల కాలపరిమితి తీసుకునే 30 ఏళ్ల వ్యక్తికి, ₹10 లక్షల కవర్‌కు వార్షిక ప్రీమియం సుమారుగా ₹42,200. దీనిని మా జీవన్ లాభ్ 936 క్యాలిక్యులేటర్‌ను ఆన్‌లైన్‌లో ఉచితంగా ఉపయోగించి తక్షణమే లెక్కించవచ్చు."
+                "q": "What is the premium of LIC Jeevan Labh for 10 lakh?",
+                "a": "For a 30-year-old taking a 25-year term, the yearly premium for a â‚¹10 lakh cover is approximately â‚¹42,200. This can be calculated instantly using our Jeevan Labh 936 calculator online free."
               },
               {
-                "q": "ఎల్‌ఐసి జీవన్ లాభ్ మెచ్యూరిటీ ఎలా లెక్కించబడుతుంది?",
-                "a": "మెచ్యూరిటీ విలువ అనేది ప్రాథమిక బీమా మొత్తం, పాలసీ కాలపరిమితిలో ప్రకటించబడిన అన్ని వెస్టెడ్ సింపుల్ రివర్షనరీ బోనస్‌లు, మరియు ఒక-సారి ఫైనల్ అడిషనల్ బోనస్ (FAB), ఏదైనా ఉంటే, వాటి మొత్తం. మా ఎల్‌ఐసి జీవన్ లాభ్ మెచ్యూరిటీ క్యాలిక్యులేటర్ ఉదాహరణాత్మక రేట్ల ఆధారంగా మీ కోసం దీనిని అంచనా వేస్తుంది."
+                "q": "How does the LIC Jeevan Labh maturity calculator work?",
+                "a": "The maturity value is the sum of the Basic Sum Assured, all vested Simple Reversionary Bonuses declared over the policy term, and a one-time Final Additional Bonus (FAB), if any. Our LIC Jeevan Labh maturity calculator estimates this for you based on illustrative rates."
               },
               {
-                "q": "జీవన్ లాభ్ 25 సంవత్సరాల మెచ్యూరిటీ విలువ ఎంత?",
-                "a": "30 ఏళ్ల వయస్సులో తీసుకున్న ₹10 లక్షల బీమా మొత్తం కోసం, జీవన్ లాభ్ 25 సంవత్సరాల మెచ్యూరిటీ విలువ సుమారుగా ₹23,00,000. ఇది ఉదాహరణాత్మక బోనస్ రేట్లపై ఆధారపడి ఉంటుంది మరియు మా క్యాలిక్యులేటర్‌ను ఉపయోగించి అంచనా వేయవచ్చు."
+                "q": "What is the Jeevan Labh 25 years maturity value?",
+                "a": "For a â‚¹10 lakh sum assured taken at age 30, the Jeevan Labh 25 years maturity value is approximately â‚¹23,00,000. This is based on illustrative bonus rates and can be projected using our calculator."
               },
               {
-                "q": "జీవన్ లాభ్ సరెండర్ విలువ క్యాలిక్యులేటర్‌ను ఎలా ఉపయోగించాలి?",
-                "a": "మా క్యాలిక్యులేటర్ ఒక స్వతంత్ర సరెండర్ విలువ గణనను అందించదు. అయితే, సరెండర్ విలువ చెల్లించిన మొత్తం ప్రీమియంలు మరియు వెస్టెడ్ బోనస్‌పై ఆధారపడి ఉంటుంది. ఇది సాధారణంగా ఈ మొత్తం యొక్క శాతంగా ఉంటుంది, ఎల్‌ఐసి పాలసీల ద్వారా నిర్ధారించబడినట్లుగా. మీరు 2 సంవత్సరాల తర్వాత ఈ సరెండర్ విలువలో 90% వరకు రుణం పొందవచ్చు."
+                "q": "How to use a Jeevan Labh surrender value calculator?",
+                "a": "Our calculator doesn't provide a standalone surrender value calculation. However, the surrender value depends on the total premiums paid and the vested bonus. It is typically a percentage of this total, as determined by LIC's policies. You can avail a loan of up to 90% of this surrender value after 2 years."
               },
               {
-                "q": "ఏది మంచిది: ఎల్‌ఐసి జీవన్ లాభ్ లేదా జీవన్ ఉమంగ్?",
-                "a": "జీవన్ లాభ్ అనేది ఒక స్థిరమైన మెచ్యూరిటీ తేదీతో ఒక పరిమిత-చెల్లింపు ఎండోమెంట్ పథకం, ఇది లక్ష్య-ఆధారిత పొదుపులకు ఆదర్శంగా ఉంటుంది. జీవన్ ఉమంగ్ అనేది పిపిటి తర్వాత వార్షిక సర్వైవల్ ప్రయోజనాలను అందించే మరియు 100 సంవత్సరాల వయస్సులో మెచ్యూర్ అయ్యే ఒక పూర్తి-జీవిత పథకం. ఉమంగ్‌కు అధిక ప్రీమియంలు ఉంటాయి కానీ జీవితకాల కవర్ మరియు ఆదాయాన్ని అందిస్తుంది."
+                "q": "Which is better: LIC Jeevan Labh or Jeevan Umang?",
+                "a": "Jeevan Labh is a limited-pay endowment plan with a fixed maturity date, ideal for goal-based savings. Jeevan Umang is a whole-life plan that provides annual survival benefits after the PPT and matures at age 100. Umang has higher premiums but offers lifelong cover and income."
               },
               {
-                "q": "1 కోటి ఎల్‌ఐసి జీవన్ లాభ్ పాలసీకి ప్రీమియం ఎంత?",
-                "a": "₹1 కోటి పాలసీకి ప్రీమియం వయస్సు మరియు కాలపరిమితిపై ఆధారపడి ఉంటుంది. ఉదాహరణకు, 21 ఏళ్ల కాలపరిమితి తీసుకునే 35 ఏళ్ల వ్యక్తికి, వార్షిక ప్రీమియం సుమారుగా ₹5,10,000 ఉంటుంది. మా 'ఎల్‌ఐసి జీవన్ లాభ్ 1 కోటి ప్రీమియం' క్యాలిక్యులేటర్ మీకు ఒక ఖచ్చితమైన సంఖ్యను ఇవ్వగలదు."
+                "q": "How much is the premium for a 1 crore LIC Jeevan Labh policy?",
+                "a": "The premium for a â‚¹1 crore policy depends on age and term. For example, for a 35-year-old taking a 21-year term, the yearly premium would be approximately â‚¹5,10,000. Our 'lic jeevan labh 1 crore premium' calculator can give you a precise figure."
+              },
+              {
+                "q": "How does Jeevan Labh compare with other investment options?",
+                "a": "Jeevan Labh offers guaranteed returns with insurance cover. Compare with <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a> for tax-free savings, <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF</a> for fixed deposits, or <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual funds</a> for market-linked growth."
+              },
+              {
+                "q": "What about tax planning with Jeevan Labh?",
+                "a": "Premiums are eligible for tax deduction under Section 80C. Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to optimize your overall tax savings and compare with <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a> for additional tax benefits."
+              },
+              {
+                "q": "How to plan overall retirement with Jeevan Labh?",
+                "a": "For comprehensive retirement planning, combine Jeevan Labh with our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> and explore <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>APY calculator</a> for pension options."
+              },
+              {
+                "q": "Can I optimize my existing loans while investing in Jeevan Labh?",
+                "a": "Yes, use our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> to compare loan options and potentially free up more funds for LIC investments like Jeevan Labh."
+              },
+              {
+                "q": "How does Jeevan Labh fit into my mutual fund portfolio?",
+                "a": "Jeevan Labh provides guaranteed returns alongside market-linked investments. Use our <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> to avoid duplication and our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> to find complementary funds."
+              },
+              {
+                "q": "Should I compare Jeevan Labh with other LIC plans before investing?",
+                "a": "Absolutely! Use our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> to compare premiums across different LIC plans and find the best fit for your financial goals."
               }
             ]
+          }
+        ]
+      },
+      {
+        "id": "conclusion",
+        "icon": "Star",
+        "title": "My Final Take: Is Jeevan Labh Right for You?",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Jeevan Labh (Plan 936) is an excellent choice for those seeking a disciplined, limited-pay endowment plan with strong tax benefits and guaranteed returns. It's particularly suitable for goal-based savings like children's education or marriage. For broader financial planning, explore our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for debt management and <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> for portfolio optimization. Compare with other LIC plans using our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> to make the best choice. For tax optimization, check our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> and for retirement planning, use the <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a>."
           }
         ]
       }

@@ -1,69 +1,69 @@
-
+﻿
 {
-  "meta_title": "एलआईसी सरेंडर वैल्यू कैलकुलेटर 2025: ऑनलाइन मुफ्त गणना करें (फॉर्म 5074/3510)",
-  "meta_description": "अपनी पॉलिसी के लिए गारंटीड (जीएसवी) और स्पेशल सरेंडर वैल्यू (एसएसवी) ऑनलाइन खोजने के लिए हमारे मुफ्त एलआईसी सरेंडर वैल्यू कैलकुलेटर का उपयोग करें। हमारा टूल जीवन आनंद, जीवन लाभ, और अधिक के लिए समर्पण मूल्य की गणना करने में मदद करता है। समर्पण करने से पहले सूत्र और वित्तीय निहितार्थों को समझें।",
-  "h1": "मैंने यह एलआईसी सरेंडर वैल्यू कैलकुलेटर आपको बिना लाग-लपेट के सच्चाई बताने के लिए बनाया है (2025)",
-  "description": "क्या आप अपनी एलआईसी पॉलिसी को सरेंडर करने के बारे में सोच रहे हैं? यह एक कठिन स्थिति है, और मैं समझता हूँ। कोई भी कदम उठाने से पहले, आइए जानें कि आपको वास्तव में क्या वापस मिलेगा। मैंने यह मुफ्त <strong>एलआईसी सरेंडर वैल्यू कैलकुलेटर</strong> आपको एक ईमानदार, तत्काल अनुमान देने के लिए बनाया है। हम गारंटीड वैल्यू (जीएसवी) और अधिक यथार्थवादी स्पेशल वैल्यू (एसएसवी) के बीच के अंतर को तोड़ देंगे, ताकि आप अपनी आँखें खोलकर निर्णय ले सकें।",
+  "meta_title": "LIC Surrender Value Calculator 2025: An Honest Look at Your Payout",
+  "meta_description": "Thinking of surrendering your LIC policy? I built this free calculator to give you the unvarnished truth about your surrender value (GSV & SSV) before you make a move.",
+  "h1": "I Built This LIC Surrender Value Calculator to Give You the Unvarnished Truth (2025)",
+  "description": "Thinking about surrendering your LIC policy? It's a tough spot to be in, and I get it. Before you make a move, let's figure out exactly what you'd get back. I've built this free <strong>LIC Surrender Value Calculator</strong> to give you an honest, instant estimate. We'll break down the difference between the Guaranteed Value (GSV) and the more realistic Special Value (SSV), so you can make a decision with your eyes wide open.",
   "tool": {
-    "title": "तत्काल समर्पण मूल्य कैलकुलेटर",
-    "plan_label": "एलआईसी योजना",
+    "title": "Instant Surrender Value Calculator",
+    "plan_label": "LIC Plan",
     "plans": {
-      "new-jeevan-anand": "नई जीवन आनंद (915)",
-      "jeevan-labh": "जीवन लाभ (936)",
-      "new-endowment": "नई बंदोबस्ती योजना (914)",
-      "jeevan-utsav": "जीवन उत्सव (871)",
-      "jeevan-umang": "जीवन उमंग (945)"
+      "new-jeevan-anand": "New Jeevan Anand (915)",
+      "jeevan-labh": "Jeevan Labh (936)",
+      "new-endowment": "New Endowment Plan (914)",
+      "jeevan-utsav": "Jeevan Utsav (871)",
+      "jeevan-umang": "Jeevan Umang (945)"
     },
-    "basic_sa_label": "मूल बीमा राशि (₹)",
-    "policy_term_label": "पॉलिसी अवधि (वर्ष)",
-    "premiums_paid_label": "भुगतान किए गए प्रीमियम की संख्या",
-    "total_premiums_payable_label": "अवधि में कुल देय प्रीमियम",
-    "vested_bonus_label": "कुल निहित बोनस (₹) (वैकल्पिक)",
-    "loan_principal_label": "बकाया ऋण (₹) (वैकल्पिक)",
-    "calculate_button": "समर्पण मूल्य की गणना करें",
-    "calculating": "गणना हो रही है...",
-    "results_title": "अनुमानित समर्पण मूल्य का विवरण",
-    "gsv_label": "गारंटीड सरेंडर वैल्यू (GSV)",
-    "ssv_label": "विशेष समर्पण मूल्य (SSV - अनुमानित)",
-    "net_payout_label": "आपका अनुमानित शुद्ध भुगतान",
-    "paid_up_sa_label": "पेड-अप बीमा राशि",
-    "policy_year_label": "पॉलिसी के पूरे हुए वर्ष",
-    "copy_link_cta": "लिंक कॉपी करें",
-    "print_cta": "प्रिंट / पीडीएफ",
-    "export_csv_cta": "सीएसवी में निर्यात करें",
-    "email_cta": "ईमेल परिणाम",
-    "share_text": "मैंने अभी भारतसेवर के साथ अपनी एलआईसी पॉलिसी के समर्पण मूल्य का अनुमान लगाया है! मेरा संभावित भुगतान ~{payout} है। आप भी अपना देखें:",
-    "copy_success_title": "लिंक कॉपी हो गया!",
-    "copy_success_description": "अब आप अपनी गणना का लिंक साझा कर सकते हैं।",
+    "basic_sa_label": "Basic Sum Assured (â‚¹)",
+    "policy_term_label": "Policy Term (Years)",
+    "premiums_paid_label": "No. of Premiums Paid",
+    "total_premiums_payable_label": "Total Premiums Payable in Term",
+    "vested_bonus_label": "Total Vested Bonus (â‚¹) (Optional)",
+    "loan_principal_label": "Outstanding Loan (â‚¹) (Optional)",
+    "calculate_button": "Calculate Surrender Value",
+    "calculating": "Calculating...",
+    "results_title": "Estimated Surrender Value Breakdown",
+    "gsv_label": "Guaranteed Surrender Value (GSV)",
+    "ssv_label": "Special Surrender Value (SSV - Estimated)",
+    "net_payout_label": "Your Estimated Net Payout",
+    "paid_up_sa_label": "Paid-up Sum Assured",
+    "policy_year_label": "Policy Years Completed",
+    "copy_link_cta": "Copy Link",
+    "print_cta": "Print / PDF",
+    "export_csv_cta": "Export to CSV",
+    "email_cta": "Email Results",
+    "share_text": "I just estimated my LIC policy's surrender value with BharatSaver! My potential payout is ~{payout}. Check yours:",
+    "copy_success_title": "Link Copied!",
+    "copy_success_description": "You can now share the link to your calculation.",
     "csv": {
-      "parameter": "पैरामीटर",
-      "value": "मूल्य",
-      "policy_year": "पॉलिसी के पूरे हुए वर्ष",
-      "paid_up_sa": "पेड-अप बीमा राशि",
-      "gsv_premium": "जीएसवी (प्रीमियम घटक)",
-      "gsv_bonus": "जीएसवी (बोनस घटक)",
-      "gsv_total": "कुल जीएसवी",
-      "ssv_estimated": "अनुमानित एसएसवी",
-      "gross_surrender": "सकल समर्पण मूल्य",
-      "loan_principal": "ऋण मूलधन",
-      "net_payout": "शुद्ध भुगतान"
+      "parameter": "Parameter",
+      "value": "Value",
+      "policy_year": "Policy Year Completed",
+      "paid_up_sa": "Paid-up Sum Assured",
+      "gsv_premium": "GSV (Premium Component)",
+      "gsv_bonus": "GSV (Bonus Component)",
+      "gsv_total": "Total GSV",
+      "ssv_estimated": "Estimated SSV",
+      "gross_surrender": "Gross Surrender Value",
+      "loan_principal": "Loan Principal",
+      "net_payout": "Net Payout"
     }
   },
   "sections": [
     {
       "id": "what-is-surrender-value",
       "icon": "HelpCircle",
-      "title": "वास्तव में 'एलआईसी सरेंडर वैल्यू' क्या है?",
+      "title": "What Exactly is 'LIC Surrender Value'?",
       "content": [
         {
           "type": "paragraph",
-          "text": "चलिए शब्दजाल को काटते हैं। 'समर्पण मूल्य' वह नकद राशि है जो एलआईसी आपको देती है यदि आप अपनी पॉलिसी को उसकी आधिकारिक समाप्ति तिथि से पहले समाप्त करने का निर्णय लेते हैं। किसी भी भुगतान के लिए पात्र होने के लिए, आपको आम तौर पर कम से कम दो या तीन पूर्ण वर्षों के लिए प्रीमियम का भुगतान करना होगा। आपको दो नंबर जानने की जरूरत है:"
+          "text": "Let's cut through the jargon. The 'surrender value' is the cash amount LIC gives you if you decide to end your policy before its official end date. To be eligible for any payout at all, you generally need to have paid premiums for at least two or three full years. If you're considering surrender because of low returns, check our <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a> to understand what you'd receive if you let the policy run its full term. There are two numbers you need to know:"
         },
         {
           "type": "list",
           "items": [
-            "<strong>गारंटीड सरेंडर वैल्यू (जीएसवी):</strong> इसे पूर्ण न्यूनतम, कानूनी रूप से गारंटीकृत राशि के रूप में सोचें जो आपको वापस मिलेगी। इसकी गणना एलआईसी की नियम पुस्तिका से एक निश्चित सूत्र के आधार पर की जाती है।",
-            "<strong>विशेष समर्पण मूल्य (एसएसवी):</strong> यह वह संख्या है जो वास्तव में मायने रखती है। यह एक उच्च, गैर-गारंटीकृत मूल्य है जिसकी गणना एलआईसी अपने व्यावसायिक प्रदर्शन और अन्य कारकों के आधार पर करती है। लगभग सभी मामलों में, एसएसवी वह है जो आपको वास्तव में प्राप्त होगा, और यह हमेशा जीएसवी के बराबर या उससे अधिक होता है।"
+            "<strong>Guaranteed Surrender Value (GSV):</strong> Think of this as the absolute minimum, legally guaranteed amount you'll get back. It's calculated based on a fixed formula from LIC's rulebook.",
+            "<strong>Special Surrender Value (SSV):</strong> This is the number that really matters. It's a higher, non-guaranteed value that LIC calculates based on their business performance and other factors. In almost all cases, the SSV is what you'll actually receive, and it's always equal to or higher than the GSV."
           ]
         }
       ]
@@ -71,42 +71,42 @@
     {
       "id": "how-to-calculate",
       "icon": "FileText",
-      "title": "हम आपके एलआईसी समर्पण मूल्य की गणना कैसे करते हैं",
+      "title": "How We Calculate Your LIC Surrender Value",
       "content": [
         {
           "type": "paragraph",
-          "text": "इसके पीछे का गणित थोड़ा ब्लैक बॉक्स जैसा लग सकता है, लेकिन मैं इसे आपके लिए तोड़ दूँगा। यहाँ मैंने कैलकुलेटर में बनाया गया सरलीकृत तर्क है:"
+          "text": "The math behind this can feel a bit like a black box, but I'll break it down for you. Hereâ€™s the simplified logic Iâ€™ve built into the calculator:"
         },
         {
             "type": "alert",
             "variant": "default",
-            "title": "चरण 1: गारंटीड सरेंडर वैल्यू (जीएसवी) की गणना करें",
-            "text": "सबसे पहले, हम आपके हकदार पूर्ण न्यूनतम की गणना करते हैं। सूत्र है: <strong>(कुल भुगतान किए गए प्रीमियम × जीएसवी प्रीमियम फैक्टर) + (अर्जित बोनस × जीएसवी बोनस फैक्टर)</strong>। ये 'कारक' एलआईसी द्वारा परिभाषित प्रतिशत हैं जो आपके द्वारा पॉलिसी को जितने लंबे समय तक रखा गया है, उतने बढ़ते हैं।"
+            "title": "Step 1: Calculate Guaranteed Surrender Value (GSV)",
+            "text": "First, we calculate the absolute minimum you're entitled to. The formula is: <strong>(Total Premiums Paid Ã— GSV Premium Factor) + (Accrued Bonuses Ã— GSV Bonus Factor)</strong>. These 'factors' are percentages defined by LIC that increase the longer you've held the policy."
         },
         {
             "type": "alert",
             "variant": "default",
-            "title": "चरण 2: विशेष समर्पण मूल्य (एसएसवी) का अनुमान लगाएं",
-            "text": "यह अधिक यथार्थवादी, उच्च मूल्य है। इसका अनुमान सूत्र के साथ लगाया गया है: <strong>(पेड-अप मूल्य + अर्जित बोनस) × एसएसवी फैक्टर</strong>। 'पेड-अप मूल्य' आपके द्वारा भुगतान किए गए प्रीमियम के आधार पर एक कम बीमा राशि है। 'एसएसवी फैक्टर' एलआईसी का आंतरिक गुणक है। যেহেতু এটি সর্বজনীন নয়, আমাদের ক্যালকুলেটর একটি শক্তিশালী হিউরিস্টিক ব্যবহার করে এই মান অনুমান করে, যা আপনাকে আপনার वास्तविक भुक्तानी সম্পর্কে অনেক কাছাকাছি ধারণা দেয়।"
+            "title": "Step 2: Estimate Special Surrender Value (SSV)",
+            "text": "This is the more realistic, higher value. It's estimated with the formula: <strong>(Paid-up Value + Accrued Bonuses) Ã— SSV Factor</strong>. The 'Paid-up Value' is a reduced Sum Assured based on premiums you've paid. The 'SSV Factor' is LIC's internal multiplier. Since it's not public, our calculator uses a robust heuristic to estimate this value, giving you a much closer idea of your actual payout."
         }
       ]
     },
     {
       "id": "gsv-factors-chart",
       "icon": "BarChart2",
-      "title": "क्रूर वास्तविकता: समय के साथ समर्पण मूल्य कैसे बढ़ता है",
+      "title": "The Brutal Reality: How Surrender Value Grows Over Time",
       "content": [
         {
           "type": "paragraph",
-          "text": "जल्दी समर्पण करना इतना महंगा क्यों है, इसकी वास्तविक तस्वीर देने के लिए, यहाँ समर्पण मूल्य कारक (आपके द्वारा भुगतान किए गए प्रीमियम के प्रतिशत के रूप में) आमतौर पर कैसे बढ़ता है। ध्यान दें कि शुरुआती वर्षों में आपको कितना कम वापस मिलता है।"
+          "text": "To give you a real-world picture of why surrendering early is so costly, hereâ€™s how the surrender value factor (as a percentage of premiums you've paid) typically progresses. Notice how little you get back in the first few years."
         },
         {
           "type": "table",
-          "headers": ["समर्पण का पॉलिसी वर्ष", "अनुमानित भुगतान (% भुगतान किए गए प्रीमियम का)"],
+          "headers": ["Policy Year of Surrender", "Estimated Payout (% of premiums paid)"],
           "rows": [
-            ["तीसरा वर्ष", "~30% (आप जो भुगतान करते हैं उसका ~70% खो देते हैं)"],
-            ["5वां वर्ष", "~50% - 60%"],
-            ["10वां वर्ष", "~80% - 90%"]
+            ["3rd Year", "~30% (You lose ~70% of what you paid)"],
+            ["5th Year", "~50% - 60%"],
+            ["10th Year", "~80% - 90%"]
           ]
         }
       ]
@@ -114,17 +114,17 @@
     {
       "id": "surrender-vs-paidup",
       "icon": "GitCompareArrows",
-      "title": "बड़ा सवाल: समर्पण करें या इसे 'पेड-अप' बनाएं?",
+      "title": "The Big Question: Surrender vs. Make It 'Paid-Up'?",
       "content": [
         {
           "type": "paragraph",
-          "text": "समर्पण करने से पहले, आपको इसके होशियार चचेरे भाई के बारे में जानना होगा: 'पेड-अप' विकल्प। वे समान नहीं हैं, और सही ढंग से चुनना आपको एक बड़ी वित्तीय गलती से बचा सकता है।"
+          "text": "Before you surrender, you need to know about its smarter cousin: the 'Paid-Up' option. They are not the same, and choosing correctly can save you from a huge financial mistake. Compare your policy options using our <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>Jeevan Anand</a>, <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh</a>, and <a href='/{lang}/lic-jeevan-umang-calculator' class='text-primary hover:underline'>Jeevan Umang</a> calculators to explore better policy alternatives."
         },
         {
           "type": "list",
           "items": [
-            "<strong>समर्पण:</strong> आप पॉलिसी को पूरी तरह से समाप्त कर देते हैं। आपको एकमुश्त नकद भुगतान (समर्पण मूल्य) मिलता है, लेकिन आप <strong>हमेशा के लिए अपना जीवन बीमा कवर खो देते हैं</strong>।",
-            "<strong>इसे पेड-अप बनाना:</strong> यदि आप अब प्रीमियम का भुगतान नहीं कर सकते हैं (2-3 साल बाद), तो आप बस भुगतान करना बंद कर सकते हैं। पॉलिसी मरती नहीं है। यह <strong>कम बीमा राशि</strong> के साथ जारी रहती है। आप और कोई प्रीमियम नहीं देंगे, और आपको अभी भी मूल परिपक्वता तिथि पर यह कम राशि मिलेगी।"
+            "<strong>Surrendering:</strong> You terminate the policy completely. You get a one-time cash payment (the surrender value), but you <strong>lose your life insurance cover forever</strong>.",
+            "<strong>Making it Paid-Up:</strong> If you can't afford premiums anymore (after 2-3 years), you can just stop paying. The policy doesn't die. It continues with a <strong>reduced Sum Assured</strong>. You won't pay any more premiums, and you'll still get this reduced amount at the original maturity date."
           ]
         }
       ]
@@ -132,43 +132,43 @@
     {
       "id": "alternatives",
       "icon": "CheckCircle",
-      "title": "मेरी सलाह: अपनी पॉलिसी को सरेंडर करने के होशियार विकल्प",
+      "title": "My Advice: Smarter Alternatives to Surrendering Your Policy",
       "content": [
         {
           "type": "paragraph",
-          "text": "मैं हमेशा कहता हूं कि समर्पण आपका पूर्ण अंतिम उपाय होना चाहिए। यहाँ तीन बातें हैं जिन पर मैं पहले विचार करूँगा:"
+          "text": "I always say surrendering should be your absolute last resort. Before taking any drastic steps, check our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> to explore borrowing options and our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> for comprehensive financial planning. Here are three things I'd consider first:"
         },
         {
           "type": "list",
           "items": [
-            "<strong>पॉलिसी पर ऋण लें:</strong> यदि आपको अल्पकालिक आपात स्थिति के लिए पैसे की आवश्यकता है, तो यह आपका सबसे अच्छा दांव है। आपको अपना जीवन कवर खोए बिना तरलता (समर्पण मूल्य का 90% तक) मिलती है। यह एक जीत-जीत है।",
-            "<strong>इसे पेड-अप बनाएं:</strong> जैसा कि हमने ऊपर चर्चा की है, यदि आप प्रीमियम का भुगतान नहीं कर सकते हैं, तो बस भुगतान करना बंद कर दें। आपकी पॉलिसी कम लाभों के साथ जीवित रहती है, जो एक छोटी सी राशि वापस पाने और अपना कवर खोने से कहीं बेहतर है।",
-            "<strong>'टर्म खरीदें, बाकी का निवेश करें' रणनीति:</strong> यदि आपकी समस्या कम रिटर्न है, तो एक बहुत बेहतर दृष्टिकोण एक सस्ता, उच्च-कवर शुद्ध टर्म बीमा योजना खरीदना है, और फिर प्रीमियम अंतर को म्यूचुअल फंड जैसे उच्च-रिटर्न विकल्पों में निवेश करना है। यह अक्सर लंबी अवधि में कहीं अधिक धन बनाता है।"
+            "<strong>Take a Loan Against the Policy:</strong> If you need money for a short-term emergency, this is your best bet. You get liquidity (up to 90% of the surrender value) without losing your life cover. Use our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> to compare borrowing options.",
+            "<strong>Make it Paid-Up:</strong> As we discussed above, if you can't afford the premiums, just stop paying. Your policy stays alive with reduced benefits, which is far better than getting a pittance back and losing your cover.",
+            "<strong>The 'Buy Term, Invest the Rest' Strategy:</strong> If your issue is the low returns, explore our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> and <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> for high-return investment options. Compare with our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a> to see what matches your goals."
           ]
         },
         {
           "type": "alert",
-          "title": "मेरी ईमानदार सलाह",
-          "text": "यदि आपको तत्काल नकदी की आवश्यकता नहीं है, तो पॉलिसी को 'पेड-अप' बनाना लगभग हमेशा बेहतर वित्तीय कदम है। आप कुछ जीवन कवर रखते हैं और आपका पैसा बढ़ता रहता है। केवल तभी समर्पण करें जब आपके पास एक गंभीर, तत्काल नकदी की आवश्यकता हो जिसे आप किसी अन्य तरीके से हल नहीं कर सकते।"
+          "title": "My Honest Advice",
+          "text": "If you don't need the cash urgently, making the policy 'Paid-Up' is almost always the better financial move. You keep some life cover and your money continues to grow. Only surrender if you have a dire, immediate cash need that you can't solve any other way."
         }
       ]
     },
     {
       "id": "how-to-surrender",
       "icon": "BookOpen",
-      "title": "आधिकारिक प्रक्रिया: अपनी एलआईसी पॉलिसी को कैसे सरेंडर करें",
+      "title": "The Official Process: How to Surrender Your LIC Policy",
       "content": [
         {
           "type": "paragraph",
-          "text": "यदि आपने सब कुछ तौल लिया है और आगे बढ़ने का फैसला किया है, तो यहाँ आपको पालन करने की चरण-दर-चरण प्रक्रिया है:"
+          "text": "If you've weighed everything and decided to proceed, here is the step-by-step process you'll need to follow:"
         },
         {
           "type": "list",
           "items": [
-            "<strong>पात्रता की पुष्टि करें:</strong> सुनिश्चित करें कि आपने अपनी पॉलिसी के अनुसार कम से कम दो या तीन पूर्ण वर्षों के लिए प्रीमियम का भुगतान किया है।",
-            "<strong>अपने दस्तावेज़ इकट्ठा करें:</strong> आपको <strong>मूल पॉलिसी बॉन्ड</strong> (यह महत्वपूर्ण है), एक भरा हुआ समर्पण फॉर्म नंबर 5074, आपके पैन और आधार की एक प्रति, और बैंक हस्तांतरण के लिए एक रद्द किया गया चेक चाहिए होगा।",
-            "<strong>अपनी सर्विसिंग शाखा पर जाएँ:</strong> पॉलिसीधारक को समर्पण अनुरोध जमा करने के लिए अपनी पॉलिसी का प्रबंधन करने वाली एलआईसी शाखा में शारीरिक रूप से जाना होगा।",
-            "<strong>सत्यापन और भुगतान:</strong> एलआईसी दस्तावेजों का सत्यापन करेगा और आपके अनुरोध को संसाधित करेगा। समर्पण मूल्य आमतौर पर 7-10 कार्य दिवसों के भीतर एनईएफटी के माध्यम से आपके बैंक खाते में जमा कर दिया जाता है।"
+            "<strong>Confirm Eligibility:</strong> Make sure you've paid premiums for at least two or three full years, as required by your policy.",
+            "<strong>Gather Your Documents:</strong> You'll need the <strong>Original Policy Bond</strong> (this is crucial), a filled Surrender Form No. 5074, a copy of your PAN and Aadhaar, and a cancelled cheque for the bank transfer.",
+            "<strong>Visit Your Servicing Branch:</strong> The policyholder must physically go to the LIC branch that manages their policy to submit the surrender request.",
+            "<strong>Verification & Payout:</strong> LIC will verify the documents and process your request. The surrender value is typically credited to your bank account via NEFT within 7-10 working days."
           ]
         }
       ]
@@ -176,23 +176,38 @@
     {
       "id": "faq",
       "icon": "HelpCircle",
-      "title": "आपके प्रश्न, उत्तर: एलआईसी समर्पण मूल्य अक्सर पूछे जाने वाले प्रश्न",
+      "title": "Your Questions, Answered: LIC Surrender Value FAQs",
       "content": [
         {
           "type": "faq",
           "items": [
-            {"q": "मैं अपनी एलआईसी पॉलिसी के समर्पण मूल्य की गणना कैसे करूं?", "a": "सबसे सरल तरीका हमारे उपरोक्त कैलकुलेटर का उपयोग करना है। बस अपनी पॉलिसी का विवरण दर्ज करें ताकि तत्काल अनुमान मिल सके। सूत्र भुगतान किए गए प्रीमियम का एक प्रतिशत और आपके अर्जित बोनस का एक हिस्सा है, जिसे हमारा टूल आपके लिए गणना करता है।"},
-            {"q": "कितने वर्षों के बाद मैं एक एलआईसी पॉलिसी को सरेंडर कर सकता हूं?", "a": "आम तौर पर, आप कम से कम दो से तीन पूर्ण वर्षों के लिए प्रीमियम का भुगतान करने के बाद ही एक पॉलिसी को सरेंडर कर सकते हैं। कुछ एकल प्रीमियम पॉलिसियों को एक वर्ष के बाद सरेंडर किया जा सकता है। इस अवधि से पहले, पॉलिसी का कोई समर्पण मूल्य नहीं होता है।"},
-            {"q": "क्या एलआईसी पॉलिसी का समर्पण मूल्य कर योग्य है?", "a": "यदि आप 5 पूर्ण प्रीमियम-भुगतान वर्षों के बाद सरेंडर करते हैं, तो राशि आम तौर पर धारा 10(10D) के तहत कर-मुक्त होती है। यदि आप 5 साल से पहले सरेंडर करते हैं, तो राशि कर योग्य हो सकती है, और आपके द्वारा 80C के तहत दावा किए गए किसी भी कर कटौती को उलटा किया जा सकता है।"},
-            {"q": "यदि मैं अपनी एलआईसी पॉलिसी को सरेंडर करता हूं तो मुझे कितना पैसा मिलेगा?", "a": "यह आपके द्वारा भुगतान किए गए का एक प्रतिशत है, और यह बहुत कम से शुरू होता है। उदाहरण के लिए, 3 साल बाद, आपको अपने प्रीमियम का केवल ~30% वापस मिल सकता है। आप पॉलिसी को जितने लंबे समय तक रखते हैं, मूल्य उतना ही बढ़ता है। अपनी पॉलिसी के लिए एक व्यक्तिगत अनुमान प्राप्त करने के लिए हमारे उपरोक्त कैलकुलेटर का उपयोग करें।"},
-            {"q": "गारंटीड और विशेष समर्पण मूल्य के बीच क्या अंतर है?", "a": "गारंटीड सरेंडर वैल्यू (जीएसवी) भुगतान किए गए प्रीमियम के एक सूत्र के आधार पर कानूनी रूप से अनिवार्य न्यूनतम भुगतान है। विशेष समर्पण मूल्य (एसएसवी) एक उच्च, गैर-गारंटीकृत राशि है जिसमें आपके बोनस का एक हिस्सा शामिल होता है। एलआईसी हमेशा जो भी राशि अधिक हो, उसका भुगतान करेगा।"},
-            {"q": "क्या मुझे अपनी एलआईसी पॉलिसी को सरेंडर करना चाहिए या इसे पेड-अप बनाना चाहिए?", "a": "यदि आपको तत्काल नकदी की आवश्यकता नहीं है, तो पॉलिसी को 'पेड-अप' बनाना लगभग हमेशा बेहतर होता है। आप प्रीमियम का भुगतान करना बंद कर देते हैं लेकिन एक कम जीवन कवर रखते हैं और परिपक्वता पर भुगतान प्राप्त करते हैं। केवल एक गंभीर नकदी आपात स्थिति के लिए समर्पण करें।"},
-            {"q": "क्या मैं अपनी एलआईसी पॉलिसी को ऑनलाइन सरेंडर कर सकता हूं?", "a": "अभी तक, अंतिम समर्पण प्रक्रिया ऑफ़लाइन है। प्रक्रिया को पूरा करने के लिए आपको मूल दस्तावेजों के साथ अपनी सर्विसिंग एलआईसी शाखा में जाना होगा, हालांकि कुछ प्रारंभिक फॉर्म ऑनलाइन डाउनलोड किए जा सकते हैं।"},
-            {"q": "एलआईसी पॉलिसी को सरेंडर करने के लिए कौन से दस्तावेज़ आवश्यक हैं?", "a": "आपको मूल पॉलिसी बॉन्ड, भरा हुआ समर्पण फॉर्म (फॉर्म 5074), आपके पैन और आधार कार्ड की एक प्रति, और आपके बैंक विवरण के लिए एक रद्द किया गया चेक चाहिए होगा।"},
-            {"q": "समर्पण मूल्य राशि प्राप्त करने में कितना समय लगता है?", "a": "आपके दस्तावेज़ जमा होने और स्वीकृत होने के बाद, एलआईसी को आपके बैंक खाते में राशि जमा करने में आमतौर पर 5-10 कार्य दिवस लगते हैं।"},
-            {"q": "क्या एक सरेंडर की गई एलआईसी पॉलिसी को पुनर्जीवित किया जा सकता है?", "a": "नहीं, एक बार जब आप सरेंडर कर देते हैं और पैसे ले लेते हैं, तो पॉलिसी स्थायी रूप से समाप्त हो जाती है और इसे पुनर्जीवित नहीं किया जा सकता है। यदि आवश्यक हो तो आपको एक नई पॉलिसी खरीदनी होगी।"},
-            {"q": "क्या टर्म बीमा पॉलिसियों का समर्पण मूल्य होता है?", "a": "आम तौर पर नहीं, शुद्ध टर्म बीमा योजनाएं केवल जोखिम कवर के लिए होती हैं और उनमें कोई बचत घटक नहीं होता है, इसलिए वे रद्दीकरण पर कोई भुगतान प्रदान नहीं करती हैं।"},
-            {"q": "यदि मैं पॉलिसी को सरेंडर करता हूं तो क्या मुझे अपना बोनस मिलेगा?", "a": "हां, आपके अर्जित बोनस का एक हिस्सा आमतौर पर विशेष समर्पण मूल्य (एसएसवी) में शामिल किया जाता है। इसलिए, यदि आपकी पॉलिसी ने बोनस अर्जित किया है, तो आपका समर्पण भुगतान मूल गारंटीकृत मूल्य से अधिक होगा। हालांकि, यदि पॉलिसी अपनी पूरी अवधि तक नहीं चलती है तो वफादारी परिवर्धन आमतौर पर जब्त कर लिए जाते हैं।"}
+            {"q": "How do I calculate the surrender value of my LIC policy?", "a": "The simplest way is to use our calculator above. Just enter your policy details to get an instant estimate. The formula is a percentage of premiums paid plus a portion of your accrued bonuses, which our tool calculates for you."},
+            {"q": "After how many years can I surrender an LIC policy?", "a": "Generally, you can surrender a policy only after you've paid premiums for at least two or three full years. Some single premium policies may be surrendered after one year. Before this period, the policy has no surrender value."},
+            {"q": "Is the surrender value of an LIC policy taxable?", "a": "If you surrender after 5 full premium-paying years, the amount is generally tax-free under Section 10(10D). If you surrender before 5 years, the amount can become taxable, and any tax deductions you claimed under 80C can be reversed. Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to understand the tax implications for your specific situation."},
+            {"q": "How much money will I get if I surrender my LIC policy?", "a": "It's a percentage of what you've paid, and it starts very low. For example, after 3 years, you might only get back ~30% of your premiums. The value increases the longer you hold the policy. Use our calculator above to get a personalized estimate for your policy."},
+            {"q": "What is the difference between guaranteed and special surrender value?", "a": "Guaranteed Surrender Value (GSV) is the legally mandated minimum payout based on a formula of premiums paid. Special Surrender Value (SSV) is a higher, non-guaranteed amount that includes a portion of your bonuses. LIC will always pay whichever amount is higher."},
+            {"q": "Should I surrender my LIC policy or make it paid-up?", "a": "If you don't need cash immediately, making the policy 'Paid-Up' is almost always better. You stop paying premiums but keep a reduced life cover and get a payout at maturity. Use our <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a> to see what you'd get at the end of the policy term. For overall financial planning, check our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a>. Surrender only for a dire cash emergency."},
+            {"q": "Can I surrender my LIC policy online?", "a": "As of now, the final surrender process is offline. You must visit your servicing LIC branch with the original documents to complete the process, though some initial forms may be downloadable online."},
+            {"q": "What documents are required to surrender an LIC policy?", "a": "You will need the Original Policy Bond, the filled Surrender Form (Form 5074), a copy of your PAN and Aadhaar cards, and a cancelled cheque for your bank details."},
+            {"q": "How long does it take to receive the surrender value amount?", "a": "Once your documents are submitted and approved, it typically takes 5-10 working days for LIC to credit the amount to your bank account."},
+            {"q": "Can a surrendered LIC policy be revived?", "a": "No, once you surrender and take the money, the policy is terminated permanently and cannot be revived. You would have to buy a new policy if needed."},
+            {"q": "Do term insurance policies have a surrender value?", "a": "Generally no, pure term insurance plans are for risk cover only and do not have a savings component, so they do not offer a payout on cancellation."},
+            {"q": "Will I get my bonus if I surrender the policy?", "a": "Yes, a portion of your accrued bonuses is typically factored into the Special Surrender Value (SSV). So, if your policy has earned bonuses, your surrender payout will be higher than the basic guaranteed value. Use our <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a> to see how these bonuses grow if you let the policy run full term. Loyalty additions, however, are usually forfeited if the policy does not run its full term."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "next-steps",
+      "icon": "GitCompareArrows",
+      "title": "Beyond Surrender: Explore Your Options",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "<strong>Better LIC Plans:</strong> Explore our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> to compare all available plans and find one that matches your needs better. Check out <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>Jeevan Anand</a>, <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh</a>, <a href='/{lang}/lic-jeevan-umang-calculator' class='text-primary hover:underline'>Jeevan Umang</a>, and <a href='/{lang}/jeevan-utsav-calculator' class='text-primary hover:underline'>Jeevan Utsav</a> calculators.",
+            "<strong>Investment Alternatives:</strong> Compare returns with our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a>, explore <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF investment</a>, use <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a>, and check <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlaps</a> for diversification.",
+            "<strong>Comprehensive Planning:</strong> Use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to plan your overall financial future. Check <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime options</a> to optimize your savings. Explore <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for any borrowing needs and government schemes like <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>APY</a>, <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a>, and <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>SSY</a>."
           ]
         }
       ]
@@ -200,18 +215,27 @@
     {
       "id": "conclusion",
       "icon": "Star",
-      "title": "निष्कर्ष: आत्मविश्वास के साथ अपना निर्णय लें",
+      "title": "Conclusion: Make Your Decision with Confidence",
       "content": [
         {
           "type": "paragraph",
-          "text": "मुझे पता है कि अपनी पॉलिसी को सरेंडर करने का निर्णय लेना कठिन है। यह अक्सर ऐसा लगता है कि आप एक चट्टान और एक कठिन जगह के बीच फंसे हुए हैं। इस पृष्ठ के साथ मेरा लक्ष्य आपको वह स्पष्टता देना था जिसके आप हकदार हैं। अब आप सूत्रों, वित्तीय निहितार्थों, और उपलब्ध होशियार विकल्पों को समझते हैं। कैलकुलेटर से संख्याओं का उपयोग एक अंतिम बिंदु के रूप में नहीं, बल्कि अपनी निर्णय लेने की प्रक्रिया में एक महत्वपूर्ण जानकारी के रूप में करें।"
+          "text": "I know deciding to surrender your policy is tough. It often feels like you're caught between a rock and a hard place. My goal with this page was to give you the clarity you deserve. You now understand the formulas, the financial implications, and the smarter alternatives available. Use the numbers from the calculator not as an endpoint, but as a key piece of information in your decision-making process."
         },
         {
-            "type": "monetization_card",
-            "title": "आपका अगला कदम: एक बेहतर कदम उठाने के लिए तैयार हैं?",
-            "body": "यदि आप सरेंडर कर रहे हैं क्योंकि आपने महसूस किया है कि आपकी वर्तमान योजना आपकी आवश्यकताओं को पूरा नहीं करती है, तो यह एक स्मार्ट वित्तीय अंतर्दृष्टि है। अगला तार्किक कदम एक बेहतर विकल्प खोजना है। उच्च-कवर, कम-लागत वाली टर्म बीमा खोजने के लिए हमारे टूल देखें या वास्तव में आपकी संपत्ति को बढ़ा सकने वाले निवेश विकल्पों का पता लगाएं।",
-            "href": "https://www.policybazaar.com/life-insurance/term-insurance/",
-            "cta": "टर्म योजनाओं की तुलना करें"
+          "type": "paragraph",
+          "text": "<strong>Before Surrendering:</strong> Explore better options with our <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a> to see your full-term benefits, <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> for alternative plans, and <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> for comprehensive financial planning. Consider our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for emergency liquidity without surrendering."
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Explore LIC Alternatives:</strong> Compare different LIC plans using our <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>Jeevan Anand calculator</a>, <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh calculator</a>, <a href='/{lang}/lic-jeevan-umang-calculator' class='text-primary hover:underline'>Jeevan Umang calculator</a>, and <a href='/{lang}/jeevan-utsav-calculator' class='text-primary hover:underline'>Jeevan Utsav calculator</a>. Check our <a href='/{lang}/lic-child-plan' class='text-primary hover:underline'>LIC child plan calculator</a> if you have dependents."
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Better Investment Returns:</strong> If low returns are driving your surrender decision, use our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a> to compare fixed-income investments, explore <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF returns</a>, and check our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> for equity opportunities. Use the <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> to avoid concentration risk. Optimize with our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a>."
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Comprehensive Financial Planning:</strong> For long-term wealth building, explore government schemes including <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>Atal Pension Yojana (APY)</a>, <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>National Pension System (NPS)</a>, and <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>Sukanya Samriddhi Yojana (SSY)</a>. Use our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for debt management and <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to plan your complete financial future."
         }
       ]
     }

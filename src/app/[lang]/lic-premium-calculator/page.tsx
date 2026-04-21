@@ -4,6 +4,8 @@ import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
 import LicPremiumCalculatorPageClient from "./LicPremiumCalculatorPageClient";
 
+export const dynamic = 'force-dynamic';
+
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
 }
@@ -236,7 +238,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
 export default async function LicPremiumCalculatorPage({ params }: { params: Promise<{ lang: Locale }> }) {
   const { lang } = await params;
   const dictionary = await getDictionary(lang);
-  const pageDict = (await import(`@/dictionaries/${lang}/lic-premium-calculator.json`)).default;
+  const pageDict = { ...(await import(`@/dictionaries/${lang}/lic-premium-calculator.json`)).default };
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${lang}/lic-premium-calculator`;
 

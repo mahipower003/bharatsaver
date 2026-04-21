@@ -1,86 +1,114 @@
-
+﻿
 {
-  "meta_title": "APY கால்குலேட்டர் 2025 — அடல் பென்ஷன் யோஜனா பிரீமியம் & பென்ஷன் விளக்கப்படம்",
-  "meta_description": "இலவச APY கால்குலேட்டர் இந்தியா (2025). ₹1000-₹5000 நிலையான ஓய்வூதியம் பெற அடல் பென்ஷன் யோஜனாவுக்கான உங்கள் மாதாந்திர பங்களிப்பைக் கணக்கிடுங்கள். வயது வாரியான பிரீமியம் விளக்கப்படம் மற்றும் விதிகள் அடங்கும்.",
-  "og_title": "APY கால்குலேட்டர் 2025 — அடல் பென்ஷன் யோஜனா பிரீமியம் & பென்ஷன் விளக்கப்படம்",
-  "og_description": "₹1,000–₹5,000 ஓய்வூதியங்களுக்குத் தேவையான மாதாந்திர பிரீமியத்தைக் கண்டறிய எங்கள் இலவச APY கால்குலேட்டரைப் பயன்படுத்தவும். வயது அடிப்படையிலான பிரீமியம் விளக்கப்படங்கள், தகுதி, அடிக்கடி கேட்கப்படும் கேள்விகள் மற்றும் தரவிறக்கம் செய்யக்கூடிய CSV ஐப் பெறுங்கள். செப்டம்பர் 2025 இல் புதுப்பிக்கப்பட்டது.",
-  "h1": "APY கால்குலேட்டர் 2025 — அடல் பென்ஷன் யோஜனா பிரீமியம் விளக்கப்படம் & ஓய்வூதியம்",
-  "description": "எங்கள் இலவச <a href=\"https://www.india.gov.in/spotlight/atal-pension-yojana\" target=\"_blank\" rel=\"noopener noreferrer\">அடல் பென்ஷன் யோஜனா (APY)</a> கால்குலேட்டர் நீங்கள் விரும்பும் ஓய்வூதியத் தொகைக்குத் தேவையான மாதாந்திர பங்களிப்பைக் கண்டறிய உதவுகிறது. அரசாங்க ஆதரவு ஓய்வூதியத்துடன் உங்கள் எதிர்காலத்தைப் பாதுகாத்துக் கொள்ளுங்கள்.",
-  "last_updated": "கடைசியாகப் புதுப்பிக்கப்பட்ட விகிதங்கள்:",
-  "title": "அடல் பென்ஷன் யோஜனா (APY) கால்குலேட்டர்",
-  "form_description": "நீங்கள் விரும்பும் ஓய்வூதியத்திற்கான மாதாந்திர பிரீமியத்தைக் கண்டறிய உங்கள் வயதை உள்ளிடவும்.",
-  "age_label": "உங்கள் தற்போதைய வயது",
-  "years_label": "ஆண்டுகள்",
-  "pension_label": "விரும்பிய மாதாந்திர ஓய்வூதியம்",
-  "calculate_button": "பிரீமியத்தைக் கணக்கிடு",
-  "loading": "கணக்கிடப்படுகிறது...",
-  "results_title": "உங்கள் APY பங்களிப்பு",
-  "monthly_premium": "உங்கள் மாதாந்திர பிரீமியம்",
-  "total_contribution": "மொத்த பங்களிப்பு",
-  "indicative_corpus": "60 வயதில் சுட்டிக்காட்டப்பட்ட கார்பஸ்",
+  "meta_title": "APY Calculator 2025 â€” Atal Pension Yojana Premium & Pension Chart",
+  "meta_description": "Free APY Calculator India (2025). Calculate your monthly contribution for Atal Pension Yojana to get a fixed pension of â‚¹1000-â‚¹5000. Includes age-wise premium chart & rules.",
+  "og_title": "APY Calculator 2025 â€” Atal Pension Yojana Premium & Pension Chart",
+  "og_description": "Use our FREE APY Calculator to find the monthly premium required for â‚¹1,000â€“â‚¹5,000 pensions. Get age-based premium charts, eligibility, FAQs and downloadable CSV. Updated Sep 2025.",
+  "h1": "APY Calculator 2025 â€” Atal Pension Yojana Premium Chart & Pension",
+  "description": "Our free <a href=\"https://www.india.gov.in/spotlight/atal-pension-yojana\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline\">Atal Pension Yojana (APY)</a> Calculator helps you find your required monthly contribution for a desired pension amount. Secure your future with a government-backed pension.",
+  "last_updated": "Rates updated:",
+  "title": "Atal Pension Yojana (APY) Calculator",
+  "form_description": "Enter your age to find the monthly premium for your desired pension.",
+  "age_label": "Your Current Age",
+  "years_label": "years",
+  "pension_label": "Desired Monthly Pension",
+  "calculate_button": "Calculate Premium",
+  "loading": "Calculating...",
+  "results_title": "Your APY Contribution",
+  "monthly_premium": "Your Monthly Premium",
+  "total_contribution": "Total Contribution",
+  "indicative_corpus": "Indicative Corpus at 60",
   "what_is_apy": {
-    "title": "அடல் பென்ஷன் யோஜனா (APY) என்றால் என்ன?",
-    "body": "அடல் பென்ஷன் யோஜனா (APY) என்பது இந்தியாவில் அரசாங்க ஆதரவு ஓய்வூதியத் திட்டமாகும், இது முக்கியமாக அமைப்புசாரா துறையில் உள்ள தொழிலாளர்களை இலக்காகக் கொண்டது. இது ஓய்வூதியத்திற்காக சிறு சேமிப்பை ஊக்குவிக்கிறது மற்றும் 60 வயதிற்குப் பிறகு ₹1,000, ₹2,000, ₹3,000, ₹4,000, அல்லது ₹5,000 நிலையான மாதாந்திர ஓய்வூதியத்திற்கு உத்தரவாதம் அளிக்கிறது.",
+    "title": "What is Atal Pension Yojana (APY)?",
+    "body": "The Atal Pension Yojana (APY) is a government-backed pension scheme in India, primarily targeted at workers in the unorganized sector. It encourages small savings for retirement and guarantees a fixed monthly pension of â‚¹1,000, â‚¹2,000, â‚¹3,000, â‚¹4,000, or â‚¹5,000 after the age of 60.",
     "points": [
-      "<strong>உத்தரவாத ஓய்வூதியம்:</strong> ஒரு நிலையான ஓய்வூதியத்தை வழங்குகிறது, முதுமையில் நிதிப் பாதுகாப்பை வழங்குகிறது.",
-      "<strong>அரசாங்கத்தின் இணை பங்களிப்பு:</strong> தகுதியான சந்தாதாரர்களுக்கு, அரசாங்கம் முதல் 5 ஆண்டுகளுக்கு மொத்த பங்களிப்பில் 50% அல்லது ஆண்டுக்கு ₹1,000, எது குறைவோ அதை இணை பங்களிப்பாக வழங்குகிறது.",
-      "<strong>தகுதி:</strong> 18 முதல் 40 வயதுக்குட்பட்ட அனைத்து இந்திய குடிமக்களுக்கும் ஒரு வங்கிக் கணக்குடன் திறக்கப்பட்டுள்ளது."
+      "<strong>Guaranteed Pension:</strong> Provides a fixed pension, offering financial security in old age.",
+      "<strong>Government Co-contribution:</strong> For eligible subscribers, the government co-contributes 50% of the total contribution or â‚¹1,000 per annum, whichever is lower, for the first 5 years.",
+      "<strong>Eligibility:</strong> Open to all Indian citizens between 18 and 40 years of age with a bank account."
     ]
   },
   "how_it_works": {
-    "title": "APY கால்குலேட்டர் எவ்வாறு செயல்படுகிறது",
-    "intro": "APY பிரீமியம் உங்கள் நுழைவு வயது மற்றும் விரும்பிய ஓய்வூதியத்தின் அடிப்படையில் நிர்ணயிக்கப்படுகிறது. நீங்கள் எவ்வளவு சீக்கிரம் தொடங்குகிறீர்களோ, அவ்வளவு குறைவாக உங்கள் மாதாந்திர பங்களிப்பு இருக்கும். எங்கள் கால்குலேட்டர் உங்களுக்கு சரியான தொகையை வழங்க PFRDA வழங்கிய அதிகாரப்பூர்வ பிரீமியம் விளக்கப்படத்தைப் பயன்படுத்துகிறது.",
+    "title": "How the APY Calculator Works",
+    "intro": "The APY premium is fixed based on your entry age and desired pension. The earlier you start, the lower your monthly contribution. Our calculator uses the official premium chart provided by the PFRDA to give you the exact amount.",
     "example": {
-      "title": "எடுத்துக்காட்டு கணக்கீடு",
-      "body": "நீங்கள் <strong>25 வயது</strong> மற்றும் மாதத்திற்கு <strong>₹5,000</strong> ஓய்வூதியம் விரும்பினால், உங்கள் தேவையான மாதாந்திர பங்களிப்பு வெறும் <strong>₹376</strong> ஆக இருக்கும். நீங்கள் இந்தத் தொகையை 35 ஆண்டுகளுக்கு (60 வயது வரை) பங்களிப்பீர்கள்.",
-      "note": "இந்த நிலையான பிரீமியம் உங்கள் ஓய்வூதிய சேமிப்பிற்காக தொடர்ந்து பட்ஜெட் மற்றும் திட்டமிடலை எளிதாக்குகிறது."
+      "title": "Example Calculation",
+      "body": "If you are <strong>25 years old</strong> and want a pension of <strong>â‚¹5,000 per month</strong>, your required monthly contribution would be just <strong>â‚¹376</strong>. You would contribute this amount for 35 years (until age 60).",
+      "note": "This fixed premium makes it easy to budget and plan for your retirement savings consistently."
     }
   },
   "premium_chart": {
-    "title": "APY பிரீமியம் விளக்கப்படம் (வயது வாரியாக)",
-    "description": "இந்த விளக்கப்படம் நீங்கள் சேரும் வயதின் அடிப்படையில் வெவ்வேறு ஓய்வூதியத் தொகைகளுக்குத் தேவையான நிலையான மாதாந்திர பிரீமியத்தைக் காட்டுகிறது.",
-    "age_header": "நுழைவு வயது",
-    "years_label": "ஆண்டுகள்"
+    "title": "APY Premium Chart (Age-wise)",
+    "description": "This chart shows the fixed monthly premium required for different pension amounts based on your age at the time of joining.",
+    "age_header": "Entry Age",
+    "years_label": "Yrs"
   },
   "enrollment": {
-    "title": "APY இல் சேர்வது எப்படி",
-    "intro": "APY இல் சேர்வது எளிதானது மற்றும் உங்கள் சேமிப்புக் கணக்கு உள்ள உங்கள் வங்கி அல்லது தபால் அலுவலகம் மூலம் செய்யலாம். படிகள்:",
+    "title": "How to Enroll in APY",
+    "intro": "Enrolling in APY is simple and can be done through your bank or post office where you have a savings account. The steps are:",
     "steps": [
-      "உங்கள் வங்கிக் கிளை அல்லது தபால் அலுவலகத்திற்குச் செல்லுங்கள்.",
-      "APY பதிவு படிவத்தை நிரப்பவும்.",
-      "உங்கள் ஆதார் மற்றும் மொபைல் எண்ணை வழங்கவும்.",
-      "மாதாந்திர பங்களிப்பின் தானியங்கி டெபிட்டிற்காக உங்கள் சேமிப்புக் கணக்கை இணைக்கவும்."
+      "Visit your bank branch or post office.",
+      "Fill out the APY registration form.",
+      "Provide your Aadhaar and mobile number.",
+      "Link your savings account for auto-debit of the monthly contribution."
     ]
   },
   "comparison": {
-    "title": "APY மற்றும் NPS மற்றும் PPF",
-    "body": "<p>APY ஒரு உத்தரவாத ஓய்வூதியத்தை வழங்கினாலும், அதை <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>தேசிய ஓய்வூதிய அமைப்பு (NPS)</a> மற்றும் <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>பொது வருங்கால வைப்பு நிதி (PPF)</a> போன்ற பிற பிரபலமான திட்டங்களுடன் ஒப்பிடுவது முக்கியம். APY குறைந்த பங்களிப்புகளுடன் ஒரு நிலையான, பாதுகாப்பான ஓய்வூதியத்தைத் தேடுபவர்களுக்கு ஏற்றது, அதேசமயம் NPS அதிக வளர்ச்சித் திறனுடன் சந்தையுடன் இணைக்கப்பட்ட வருமானத்தை வழங்குகிறது, மற்றும் PPF வரி இல்லாத வருமானத்துடன் ஒரு நீண்ட கால சேமிப்புக் கருவியாகும்.</p>"
+    "title": "APY vs. NPS vs. PPF vs. Other Pension Schemes",
+    "body": "<p>While APY provides a guaranteed pension, it's important to compare it with other popular schemes like the <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>National Pension System (NPS)</a>, <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>Public Provident Fund (PPF)</a>, <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>Sukanya Samriddhi Yojana (SSY)</a>, and <a href='/{lang}/ups-pension-calculator' class='text-primary hover:underline'>UPS Pension Scheme</a>. APY is ideal for those seeking a fixed, secure pension with low contributions, whereas NPS offers market-linked returns with higher growth potential, and PPF is a long-term savings tool with tax-free returns. For a direct comparison between FD and PPF, use our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a>.</p><p>Use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to plan your overall retirement strategy, and compare different <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regimes</a> to maximize your savings.</p>"
   },
   "rules": {
-    "title": "APY இன் முக்கிய விதிகள் மற்றும் நிபந்தனைகள்",
-    "body": "<ul><li>சந்தாதாரர் குறைந்தபட்சம் 20 ஆண்டுகள் பங்களிக்க வேண்டும்.</li><li>முன்கூட்டியே திரும்பப் பெறுவது முனைய நோய் அல்லது இறப்பு ஏற்பட்டால் மட்டுமே அனுமதிக்கப்படுகிறது.</li><li>சந்தாதாரர் 60 வயதிற்கு முன்பே இறந்தால், வாழ்க்கைத் துணை பங்களிப்புகளைத் தொடரலாம் அல்லது திட்டத்திலிருந்து வெளியேறலாம்.</li><li>ஓய்வூதியத் தொகை இந்திய அரசாங்கத்தால் உத்தரவாதம் அளிக்கப்படுகிறது.</li></ul>"
+    "title": "Key Rules and Conditions of APY",
+    "body": "<ul><li>The subscriber must contribute for a minimum of 20 years.</li><li>Premature withdrawal is only allowed in case of terminal illness or death.</li><li>If the subscriber dies before age 60, the spouse can continue the contributions or exit the scheme.</li><li>The pension amount is guaranteed by the Government of India.</li></ul>"
   },
-  "faq_title": "அடிக்கடி கேட்கப்படும் கேள்விகள்",
+  "faq_title": "Frequently Asked Questions",
   "faqs": [
     {
-      "question": "APY திட்டத்தில் சேருவதற்கான அதிகபட்ச வயது என்ன?",
-      "answer": "அடல் பென்ஷன் யோஜனாவில் சேருவதற்கான அதிகபட்ச வயது 40 ஆண்டுகள்."
+      "question": "What is the maximum age to join the APY scheme?",
+      "answer": "The maximum age to join the Atal Pension Yojana is 40 years."
     },
     {
-      "question": "நான் பின்னர் எனது ஓய்வூதியத் தொகையை அதிகரிக்கவோ அல்லது குறைக்கவோ முடியுமா?",
-      "answer": "ஆம், நீங்கள் ஏப்ரல் மாதத்தில் வருடத்திற்கு ஒரு முறை உங்கள் விரும்பிய ஓய்வூதியத் தொகையை மாற்றலாம்."
+      "question": "Can I increase or decrease my pension amount later?",
+      "answer": "Yes, you can change your desired pension amount once a year, in the month of April."
     },
     {
-      "question": "நான் ஒரு பங்களிப்பைத் தவறவிட்டால் என்ன ஆகும்?",
-      "answer": "தாமதமான பங்களிப்புகளுக்கு அபராதம் விதிக்கப்படுகிறது. ₹100 பங்களிப்புக்கு மாதத்திற்கு ₹1 அபராதம், மற்றும் பல."
+      "question": "What happens if I miss a contribution?",
+      "answer": "A penalty is charged for delayed contributions. The penalty is â‚¹1 per month for a contribution of â‚¹100, and so on."
     },
     {
-      "question": "APY இலிருந்து கிடைக்கும் ஓய்வூதியம் வரிக்கு உட்பட்டதா?",
-      "answer": "ஆம், APY இன் கீழ் பெறப்பட்ட ஓய்வூதியம் வருமானமாகக் கருதப்படுகிறது மற்றும் பொருந்தக்கூடிய வருமான வரி அடுக்குகளின்படி வரி விதிக்கப்படுகிறது. உங்கள் அடுக்கைச் சரிபார்க்க எங்கள் <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>வரி ஆட்சி கால்குலேட்டரைப்</a> பயன்படுத்தலாம்."
+      "question": "Is the pension from APY taxable?",
+      "answer": "Yes, the pension received under APY is considered as income and is taxable as per the applicable income tax slabs. You can use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to check your slab."
+    },
+    {
+      "question": "How does APY compare with LIC pension plans?",
+      "answer": "Unlike LIC plans that depend on market performance, APY provides a guaranteed pension backed by the Government of India. Check our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> for comparison."
+    },
+    {
+      "question": "Can I withdraw money before retirement?",
+      "answer": "Premature withdrawal is only allowed in exceptional cases like terminal illness or death. Otherwise, you must contribute until age 60."
+    },
+    {
+      "question": "What is the minimum and maximum pension amount?",
+      "answer": "You can choose monthly pensions of â‚¹1,000, â‚¹2,000, â‚¹3,000, â‚¹4,000, or â‚¹5,000 after retirement."
+    },
+    {
+      "question": "How can I calculate LIC insurance premiums for comparison?",
+      "answer": "For comparing APY with LIC pension plans, use our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> to estimate costs for various LIC schemes like Jeevan Anand or Jeevan Umang."
+    },
+    {
+      "question": "What if I want to check overlap in my mutual fund investments?",
+      "answer": "If you're considering mutual funds alongside APY, use our <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> to avoid redundant investments and optimize your portfolio."
+    },
+    {
+      "question": "Are there calculators for LIC child plans or term insurance?",
+      "answer": "Yes, we have specialized calculators for <a href='/{lang}/lic-child-plan' class='text-primary hover:underline'>LIC child plans</a>, <a href='/{lang}/lic-term-insurance' class='text-primary hover:underline'>LIC term insurance</a>, and other LIC schemes to help you compare options."
     }
   ],
+  "related_calculators": {
+    "title": "Explore Our Other Financial Calculators",
+    "body": "Maximize your financial planning with our comprehensive suite of calculators. Compare <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF</a>, calculate <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC surrender values</a>, or use our <a href='/{lang}/mutual-fund-scheme-selector' class='text-primary hover:underline'>mutual fund scheme selector</a> to build a diversified portfolio."
+  },
   "conclusion": {
-    "title": "இன்று ஒரு சிறிய படியுடன் உங்கள் எதிர்காலத்தைப் பாதுகாத்துக் கொள்ளுங்கள்",
-    "body": "அடல் பென்ஷன் யோஜனா ஒரு ஓய்வூதியப் பாதுகாப்பு வலையை உருவாக்குவதற்கான ஒரு சிறந்த கருவியாகும், குறிப்பாக குறைந்த வசதி உள்ளவர்களுக்கு. ஒரு சிறிய மாதாந்திர பங்களிப்பு கூட ஓய்வுக்குப் பிறகு ஒரு கண்ணியமான வாழ்க்கையை உறுதி செய்ய முடியும். உங்கள் நிதி எதிர்காலத்தைப் பாதுகாப்பதற்கான முதல் படியை எடுக்க இந்த கால்குலேட்டரைப் பயன்படுத்தவும், மேலும் ஒரு விரிவான திட்டத்திற்கு எங்கள் <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>ஓய்வூதிய கால்குலேட்டரைக்</a> கருத்தில் கொள்ளுங்கள்."
+    "title": "Secure Your Future with a Small Step Today",
+    "body": "Atal Pension Yojana is an excellent tool for building a retirement safety net, especially for those with limited means. Use this calculator to take the first step towards securing your financial future, and consider our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement calculator</a> for a more comprehensive plan. Also explore our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for debt management, <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> for investment opportunities, <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>LIC Jeevan Anand calculator</a> for insurance planning, and <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a> to understand policy benefits."
   }
 }

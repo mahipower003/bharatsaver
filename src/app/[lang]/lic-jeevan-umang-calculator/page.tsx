@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
 export default async function JeevanUmangCalculatorPage({ params }: { params: Promise<{ lang: Locale }> }) {
     const { lang } = await params;
     const dictionary = await getDictionary(lang);
-    const pageDict = (await import(`@/dictionaries/${lang}/lic-jeevan-umang-calculator.json`).catch(() => import(`@/dictionaries/en/lic-jeevan-umang-calculator.json`))).default;
+    const pageDict = { ...(await import(`@/dictionaries/${lang}/lic-jeevan-umang-calculator.json`).catch(() => import(`@/dictionaries/en/lic-jeevan-umang-calculator.json`))).default };
     
     return (
         <LicJeevanUmangCalculatorPageClient 

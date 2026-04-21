@@ -1,164 +1,164 @@
-
+﻿
 {
-  "h1": "SSY கால்குலேட்டர் 2025 — சுகன்யா சம்ரித்தி யோஜனா வருமானம் & முதிர்வு",
-  "description": "2025 க்கான எங்கள் இலவச SSY கால்குலேட்டரைப் பயன்படுத்தி முதிர்வு, மொத்த வட்டி மற்றும் ஆண்டு வாரியான கணிப்பை (8.2% தற்போதைய விகிதம்) மதிப்பிடவும். ஆண்டு மற்றும் மாதாந்திர வைப்புகளை ஆதரிக்கிறது. முடிவுகளை CSV ஆக ஏற்றுமதி செய்யவும்.",
-  "title": "சுகன்யா சம்ரித்தி யோஜனா (SSY) கால்குலேட்டர்",
-  "investment_mode": "முதலீட்டு முறை",
-  "yearly_mode": "ஆண்டுதோறும்",
-  "monthly_mode": "மாதாந்திரம்",
-  "yearly_investment_label": "ஆண்டு முதலீட்டுத் தொகை",
-  "monthly_investment_label": "மாதாந்திர முதலீட்டுத் தொகை",
-  "yearly_investment_placeholder": "எ.கா., 150000",
-  "monthly_investment_placeholder": "எ.கா., 12500",
-  "max_investment_note": "அதிகபட்ச ஆண்டு முதலீடு ₹1,50,000",
-  "girl_age_label": "பெண் குழந்தையின் தற்போதைய வயது",
-  "years": "ஆண்டுகள்",
-  "interest_rate_label": "வட்டி விகிதம் (% ஆண்டுக்கு)",
-  "interest_rate_placeholder": "எ.கா., 8.2",
-  "calculate_button": "SSY வருமானத்தைக் கணக்கிடு",
-  "loading": "கணக்கிடப்படுகிறது...",
-  "results_title": "உங்கள் SSY கணிப்பு",
-  "maturity_value": "21 ஆண்டுகளில் முதிர்வு மதிப்பு",
-  "total_investment": "மொத்த முதலீடு",
-  "total_interest": "மொத்தமாக ஈட்டிய வட்டி",
-  "view_chart": "விளக்கப்படம்",
-  "view_table": "அட்டவணை",
-  "export_csv": "CSV ஆக ஏற்றுமதி செய்",
-  "amount_in_lakhs": "தொகை (லட்சத்தில்)",
-  "table_year": "ஆண்டு",
-  "table_age": "பெண் குழந்தையின் வயது",
-  "table_opening_balance": "தொடக்க இருப்பு",
-  "table_amount_invested": "முதலீடு செய்யப்பட்ட தொகை",
-  "table_interest_earned": "ஈட்டிய வட்டி",
-  "table_closing_balance": "இறுதி இருப்பு",
+  "h1": "SSY Calculator 2025 â€” Sukanya Samriddhi Yojana Returns & Maturity",
+  "description": "Use our free SSY Calculator 2025 to estimate maturity, total interest and year-wise projection (8.2% current rate). Supports annual & monthly deposits. Export results as CSV.",
+  "title": "Sukanya Samriddhi Yojana (SSY) Calculator",
+  "investment_mode": "Investment Mode",
+  "yearly_mode": "Yearly",
+  "monthly_mode": "Monthly",
+  "yearly_investment_label": "Yearly Investment Amount",
+  "monthly_investment_label": "Monthly Investment Amount",
+  "yearly_investment_placeholder": "e.g., 150000",
+  "monthly_investment_placeholder": "e.g., 12500",
+  "max_investment_note": "Max. yearly investment is â‚¹1,50,000",
+  "girl_age_label": "Girl's Current Age",
+  "years": "years",
+  "interest_rate_label": "Interest Rate (% p.a.)",
+  "interest_rate_placeholder": "e.g., 8.2",
+  "calculate_button": "Calculate SSY Returns",
+  "loading": "Calculating...",
+  "results_title": "Your SSY Projection",
+  "maturity_value": "Maturity Value at 21 Years",
+  "total_investment": "Total Investment",
+  "total_interest": "Total Interest Earned",
+  "view_chart": "Chart",
+  "view_table": "Table",
+  "export_csv": "Export CSV",
+  "amount_in_lakhs": "Amount (in Lakhs)",
+  "table_year": "Year",
+  "table_age": "Girl's Age",
+  "table_opening_balance": "Opening Balance",
+  "table_amount_invested": "Amount Invested",
+  "table_interest_earned": "Interest Earned",
+  "table_closing_balance": "Closing Balance",
   "what_is_ssy": {
-    "title": "சுகன்யா சம்ரித்தி யோஜனா (SSY) என்றால் என்ன?",
-    "body": "சுகன்யா சம்ரித்தி யோஜனா என்பது 'பேட்டி பச்சாவ், பேட்டி பதாவ்' பிரச்சாரத்தின் ஒரு பகுதியாக தொடங்கப்பட்ட ஒரு அரசாங்க ஆதரவு சேமிப்புத் திட்டமாகும். இது பெற்றோரை தங்கள் பெண் குழந்தையின் எதிர்காலக் கல்வி மற்றும் திருமணச் செலவுகளுக்காக ஒரு நிதியை உருவாக்க ஊக்குவிப்பதற்காக வடிவமைக்கப்பட்டுள்ளது.",
+    "title": "What is Sukanya Samriddhi Yojana (SSY)?",
+    "body": "The Sukanya Samriddhi Yojana is a government-backed savings scheme launched as part of the 'Beti Bachao, Beti Padhao' campaign. It's designed to encourage parents to build a fund for their female child's future education and marriage expenses.",
     "quick_facts": {
-      "title": "விரைவான உண்மைகள்:",
+      "title": "Quick Facts:",
       "points": [
-        "<strong>அதிக வட்டி விகிதம்:</strong> தற்போது சிறு சேமிப்புத் திட்டங்களில் மிக உயர்ந்த வட்டி விகிதங்களில் ஒன்றை வழங்குகிறது.",
-        "<strong>வரி நன்மைகள்:</strong> பிபிஎஃப் போன்ற விலக்கு-விலக்கு-விலக்கு (EEE) தகுதியைப் பெறுகிறது.",
-        "<strong>தகுதி:</strong> 10 வயதுக்குட்பட்ட ஒரு பெண் குழந்தைக்காக."
+        "<strong>High Interest Rate:</strong> Currently offers one of the highest interest rates among small savings schemes.",
+        "<strong>Tax Benefits:</strong> Enjoys Exempt-Exempt-Exempt (EEE) status, similar to <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a>.",
+        "<strong>Eligibility:</strong> For a girl child below the age of 10."
       ]
     }
   },
   "how_it_works": {
-    "title": "SSY கால்குலேட்டர் எவ்வாறு செயல்படுகிறது",
+    "title": "How the SSY Calculator Works",
     "body": ""
   },
   "example": {
-    "formula_title": "கணக்கீடு தர்க்கம் & உதாரணம்",
-    "intro": "எஸ்எஸ்ஒய் கால்குலேட்டர் உங்கள் பங்களிப்புகளின் அடிப்படையில் முதல் 15 ஆண்டுகளுக்கு ஆண்டுதோறும் வட்டியை கூட்டுகிறது. 16 முதல் 21 ஆம் ஆண்டு வரை மேலும் வைப்புத்தொகை தேவையில்லை, ஆனால் இருப்பு தொடர்ந்து வட்டியைப் பெறுகிறது. ஆண்டு கூட்டு வட்டிக்கான சூத்திரம்:",
+    "formula_title": "Calculation Logic & Example",
+    "intro": "The SSY calculator compounds interest annually based on your contributions for the first 15 years. No further deposits are needed from the 16th to the 21st year, but the balance continues to earn interest. The formula for annual compound interest is:",
     "formula": "A = P(1 + r/n)^(nt)",
     "scenario": {
-      "title": "உதாரண சூழ்நிலை",
-      "body": "பின்வருவனவற்றை எடுத்துக் கொள்வோம்:",
+      "title": "Example Scenario",
+      "body": "Let's assume the following:",
       "points": [
-        "ஆண்டு முதலீடு: <strong>₹1,50,000</strong>",
-        "தொடக்கத்தில் பெண் குழந்தையின் வயது: <strong>5 ஆண்டுகள்</strong>",
-        "வட்டி விகிதம்: <strong>8.2%</strong>"
+        "Annual Investment: <strong>â‚¹1,50,000</strong>",
+        "Girl's Age at Start: <strong>5 years</strong>",
+        "Interest Rate: <strong>8.2%</strong>"
       ],
-      "result": "இதன் அடிப்படையில், 26 வயதில் (21 ஆண்டுகளுக்குப் பிறகு) முதிர்வுத் தொகை சுமார் <strong>₹69,80,473</strong> ஆக இருக்கும்."
+      "result": "Based on this, the maturity amount at age 26 (after 21 years) will be approximately <strong>â‚¹69,80,473</strong>."
     },
-    "timing_note": "<strong>குறிப்பு:</strong> எங்கள் கால்குலேட்டர் எளிமைக்காக ஒவ்வொரு நிதியாண்டின் தொடக்கத்திலும் முதலீடு செய்யப்படுவதாகக் கருதுகிறது. டெபாசிட் செய்யப்பட்ட சரியான தேதியைப் பொறுத்து உண்மையான தொகை சற்று மாறுபடலாம்.",
-    "snapshot_title": "ஆண்டு வாரியான ஸ்னாப்ஷாட்",
+    "timing_note": "<strong>Note:</strong> Our calculator assumes the investment is made at the beginning of each financial year for simplicity. The actual amount can vary slightly based on the exact date of deposit.",
+    "snapshot_title": "Year-wise Snapshot",
     "table": {
-      "headers": ["ஆண்டு இறுதி", "வயது", "டெபாசிட்", "வட்டி", "இருப்பு"],
-      "rows": [
-        ["1", "6", "₹1,50,000", "₹12,300", "₹1,62,300"],
-        ["15", "20", "₹1,50,000", "₹3,48,460", "₹46,03,622"],
-        ["16", "21", "₹0", "₹3,77,497", "₹49,81,119"],
-        ["21", "26", "₹0", "₹5,29,788", "₹69,80,473"]
-      ]
+        "headers": ["End of Year", "Age", "Deposited", "Interest", "Balance"],
+        "rows": [
+            ["1", "6", "â‚¹1,50,000", "â‚¹12,300", "â‚¹1,62,300"],
+            ["15", "20", "â‚¹1,50,000", "â‚¹3,48,460", "â‚¹46,03,622"],
+            ["16", "21", "â‚¹0", "â‚¹3,77,497", "â‚¹49,81,119"],
+            ["21", "26", "â‚¹0", "â‚¹5,29,788", "â‚¹69,80,473"]
+        ]
     },
-    "footer_note": "அட்டவணை சுருக்கத்திற்காக தேர்ந்தெடுக்கப்பட்ட ஆண்டுகளைக் காட்டுகிறது. முழுமையான விவரங்களுக்கு CSV ஐ பதிவிறக்கவும்."
+    "footer_note": "Table shows selected years for brevity. Download the CSV for the full breakdown."
   },
   "investment_strategy": {
-    "title": "SSY வருமானத்தை அதிகரிப்பது எப்படி",
+    "title": "How to Maximize SSY Returns",
     "points": [
-      "<strong>முன்கூட்டியே முதலீடு செய்யுங்கள்:</strong> கூட்டுக்காலத்தை அதிகரிக்க உங்கள் மகள் பிறந்தவுடன் தொடங்கவும்.",
-      "<strong>ஏப்ரல் 5 ஆம் தேதிக்கு முன் முதலீடு செய்யுங்கள்:</strong> முழு நிதியாண்டுக்கான வட்டியைப் பெற, ஏப்ரல் 5 ஆம் தேதிக்கு முன் உங்கள் மொத்த வைப்புத்தொகையைச் செய்யுங்கள்.",
-      "<strong>பங்களிப்பை அதிகரிக்கவும்:</strong> முடிந்தால், கணிசமான கார்பஸை உருவாக்க ஆண்டுக்கு அதிகபட்சம் ₹1.5 லட்சம் பங்களிக்கவும்."
+      "<strong>Invest Early:</strong> Start as soon as your daughter is born to maximize the compounding period.",
+      "<strong>Invest Before 5th of April:</strong> To get interest for the full financial year, make your lump-sum deposit before April 5th.",
+      "<strong>Maximize Contribution:</strong> If possible, contribute the maximum â‚¹1.5 lakh annually to build a substantial corpus."
     ],
-    "monthly_example": "மாதாந்திர முதலீடு செய்தால், உங்கள் எஸ்ஐபி அந்த மாதத்திற்கான வட்டி கணக்கீட்டிற்கு தகுதி பெற ஒவ்வொரு மாதமும் 5 ஆம் தேதிக்கு முன் டெபிட் செய்யப்படுவதை உறுதி செய்யுங்கள்."
+    "monthly_example": "If investing monthly, ensure your SIP is debited before the 5th of each month to be eligible for that month's interest calculation."
   },
   "tax_benefits": {
-    "title": "SSY இன் வரி நன்மைகள்",
-    "intro": "எஸ்எஸ்ஒய் என்பது EEE (விலக்கு-விலக்கு-விலக்கு) தகுதியுடன் கூடிய ஒரு சக்திவாய்ந்த வரி-சேமிப்புக் கருவியாகும்:",
-    "body": "இதன் பொருள் <strong>பங்களிப்பு</strong> (80C இன் கீழ் ₹1.5 லட்சம் வரை), <strong>ஈட்டிய வட்டி</strong>, మరియు <strong>முதிர்வுத் தொகை</strong> அனைத்தும் முற்றிலும் வரி இல்லாதவை."
+    "title": "Tax Benefits of SSY",
+    "intro": "SSY is a powerful tax-saving tool with an EEE (Exempt-Exempt-Exempt) status:",
+    "body": "This means the <strong>contribution</strong> (up to â‚¹1.5 lakh under 80C), the <strong>interest earned</strong>, and the <strong>maturity amount</strong> are all completely tax-free. Check if you can save more with our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a>."
   },
   "rules": {
-    "title": "SSY இன் முக்கிய விதிகள்",
-    "withdrawal_title": "திரும்பப் பெறும் விதிகள்",
-    "withdrawal_body": "பெண் குழந்தையின் உயர் கல்விக்காக 18 வயது ஆனவுடன் 50% வரை இருப்பை பகுதி திரும்பப் பெற அனுமதிக்கப்படுகிறது. 21 ஆண்டுகளில் முதிர்ச்சியடைந்தவுடன் அல்லது 18 வயது ஆன பிறகு அவரது திருமணத்தின் போது முழுமையாகத் திரும்பப் பெற அனுமதிக்கப்படுகிறது.",
-    "withdrawal_example": "உதாரணமாக, உங்கள் மகள் 18 வயதாகும்போது இருப்பு ₹40 லட்சமாக இருந்தால், அவரது கல்லூரி கட்டணத்திற்காக நீங்கள் ₹20 லட்சம் வரை திரும்பப் பெறலாம்.",
-    "revival_title": "நிறுத்தப்பட்ட கணக்கை புதுப்பித்தல்",
-    "revival_intro": "குறைந்தபட்ச ஆண்டு வைப்புத்தொகையான ₹250 செய்யப்படாவிட்டால், கணக்கு நிறுத்தப்படுகிறது. அதை செலுத்துவதன் மூலம் புதுப்பிக்கலாம்:",
+    "title": "Key Rules of SSY",
+    "withdrawal_title": "Withdrawal Rules",
+    "withdrawal_body": "Partial withdrawal of up to 50% of the balance is allowed for the girl's higher education once she turns 18. Full withdrawal is allowed upon maturity at 21 years, or at the time of her marriage after she turns 18.",
+    "withdrawal_example": "For example, if the balance is â‚¹40 lakh when your daughter turns 18, you can withdraw up to â‚¹20 lakh for her college fees.",
+    "revival_title": "Revival of a Discontinued Account",
+    "revival_intro": "If the minimum annual deposit of â‚¹250 is not made, the account becomes discontinued. It can be revived by paying:",
     "revival_steps": [
-      "ஒவ்வொரு இயல்புநிலை வருடத்திற்கும் ₹50 அபராதம்.",
-      "ஒவ்வொரு இயல்புநிலை வருடத்திற்கும் குறைந்தபட்ச சந்தாத் தொகை (₹250)."
+      "A penalty of â‚¹50 for each year of default.",
+      "The minimum subscription amount (â‚¹250) for each default year."
     ],
-    "nomination_title": "நியமனம்",
-    "nomination_body": "எஸ்எஸ்ஒய் கணக்கில் நியமன வசதி கிடைக்காது, ஏனெனில் கணக்கு பயனாளி అయిన பெண் குழந்தையின் பெயரில் உள்ளது."
+    "nomination_title": "Nomination",
+    "nomination_body": "Nomination facility is not available in an SSY account, as the account is in the name of the girl child who is the beneficiary."
   },
   "comparison": {
-    "title": "SSY மற்றும் பிற சேமிப்புத் திட்டங்கள்",
+    "title": "SSY vs Other Savings Schemes",
     "table": {
-      "headers": ["அம்சம்", "SSY", "PPF", "FD", "NPS"],
+      "headers": ["Feature", "SSY", "PPF", "FD", "NPS"],
       "rows": [
-        ["தகுதி", "பெண் குழந்தை < 10", "அனைத்து இந்தியர்களும்", "அனைத்து இந்தியர்களும்", "18-70 ஆண்டுகள்"],
-        ["வட்டி விகிதம்", "8.2% (அரசாங்கம் நிர்ணயித்தது)", "7.1% (அரசாங்கம் நிர்ணயித்தது)", "மாறுபடும் (வங்கி நிர்ணயித்தது)", "சந்தையோடு இணைக்கப்பட்டது"],
-        ["முதிர்ச்சியில் வரி", "வரி இல்லாதது", "வரி இல்லாதது", "வரிக்குட்பட்டது", "பகுதி வரிக்குட்பட்டது"],
-        ["லாக்-இன் காலம்", "21 ஆண்டுகள்", "15 ஆண்டுகள்", "மாறுபடும்", "60 வயது வரை"]
+        ["Eligibility", "Girl child < 10", "All Indians", "All Indians", "18-70 years"],
+        ["Interest Rate", "8.2% (Govt. set)", "7.1% (Govt. set)", "Varies (Bank set)", "Market-linked"],
+        ["Tax on Maturity", "Tax-Free", "Tax-Free", "Taxable", "Partially Taxable"],
+        ["Lock-in Period", "21 years", "15 years", "Varies", "Till age 60"]
       ]
     }
   },
   "how_to_open": {
-    "title": "SSY கணக்கு தொடங்குவது எப்படி",
-    "intro": "நீங்கள் எந்த அங்கீகரிக்கப்பட்ட வங்கி அல்லது தபால் நிலையத்திலும் ஒரு எஸ்எஸ்ஒய் கணக்கைத் திறக்கலாம். இந்த செயல்முறை பின்வருவனவற்றை உள்ளடக்கியது:",
+    "title": "How to Open an SSY Account",
+    "intro": "You can open an SSY account at any authorized bank or post office. The process involves:",
     "steps": [
-      "எஸ்எஸ்ஒய் கணக்கு தொடங்கும் படிவத்தை நிரப்புதல்.",
-      "பெண் குழந்தையின் பிறப்புச் சான்றிதழைச் சமர்ப்பித்தல்.",
-      "பெற்றோர்/பாதுகாவலரின் KYC ஆவணங்களைச் சமர்ப்பித்தல் (ஐடி மற்றும் முகவரிச் சான்று).",
-      "முதல் வைப்புத்தொகையைச் செய்தல் (₹250 முதல் ₹1.5 லட்சம் வரை)."
+      "Filling the SSY account opening form.",
+      "Submitting the girl child's birth certificate.",
+      "Submitting KYC documents of the parent/guardian (ID and address proof).",
+      "Making the first deposit (from â‚¹250 to â‚¹1.5 lakh)."
     ]
   },
   "historical_rates": {
-    "title": "வரலாற்று SSY வட்டி விகிதங்கள்",
+    "title": "Historical SSY Interest Rates",
     "table": {
-      "headers": ["காலம்", "வட்டி விகிதம்"],
+      "headers": ["Period", "Interest Rate"],
       "rows": [
-        ["ஏப்ரல் 2024 - ஜூன் 2024", "8.2%"],
-        ["ஜனவரி 2024 - மார்ச் 2024", "8.2%"],
-        ["ஏப்ரல் 2023 - டிசம்பர் 2023", "8.0%"],
-        ["ஜனவரி 2023 - மார்ச் 2023", "7.6%"],
-        ["ஏப்ரல் 2020 - டிசம்பர் 2022", "7.6%"],
-        ["ஜூலை 2019 - மார்ச் 2020", "8.4%"]
+        ["Apr 2024 - Jun 2024", "8.2%"],
+        ["Jan 2024 - Mar 2024", "8.2%"],
+        ["Apr 2023 - Dec 2023", "8.0%"],
+        ["Jan 2023 - Mar 2023", "7.6%"],
+        ["Apr 2020 - Dec 2022", "7.6%"],
+        ["Jul 2019 - Mar 2020", "8.4%"]
       ]
     }
   },
-  "faq_title": "எஸ்எஸ்ஒய் பற்றி அடிக்கடி கேட்கப்படும் கேள்விகள்",
+  "faq_title": "Frequently Asked Questions about SSY",
   "faqs": [
     {
-      "question": "ஒரு மகளுக்கு இரண்டு எஸ்எஸ்ஒய் கணக்குகளைத் திறக்க முடியுமா?",
-      "answer": "இல்லை, ஒரு பெண் குழந்தைக்கு ஒரு எஸ்எஸ்ஒய் கணக்கு மட்டுமே அனுமதிக்கப்படுகிறது."
+      "question": "Can I open two SSY accounts for one daughter?",
+      "answer": "No, only one SSY account is allowed per girl child."
     },
     {
-      "question": "ஒரு குடும்பம் மூன்று மகள்களுக்கு மூன்று எஸ்எஸ்ஒய் கணக்குகளைத் திறக்க முடியுமா?",
-      "answer": "ஒரு குடும்பம் அதிகபட்சம் இரண்டு எஸ்எஸ்ஒய் கணக்குகளைத் திறக்கலாம். மூன்றாவது கணக்கு முதல் குழந்தைக்குப் பிறகு இரட்டை அல்லது மும்முறைப் பெண்கள் பிறந்தால் மட்டுமே அனுமதிக்கப்படும்."
+      "question": "Can a family open three SSY accounts if they have three daughters?",
+      "answer": "A family can open a maximum of two SSY accounts. A third account is only permissible in the case of twin or triplet girls born after the first child."
     },
     {
-      "question": "நான் ஒரு எஸ்எஸ்ஒய் கணக்கில் குறைந்தபட்ச மற்றும் அதிகபட்சமாக எவ்வளவு டெபாசிட் செய்யலாம்?",
-      "answer": "குறைந்தபட்ச ஆண்டு வைப்புத்தொகை ₹250, மற்றும் அதிகபட்சம் ஒரு நிதியாண்டில் ₹1,50,000."
+      "question": "What is the minimum and maximum amount I can deposit in an SSY account?",
+      "answer": "The minimum annual deposit is â‚¹250, and the maximum is â‚¹1,50,000 in a financial year."
     },
     {
-      "question": "சுகன்யா சம்ரித்தி யோஜனா கணக்கு எப்போது முதிர்ச்சியடைகிறது?",
-      "answer": "கணக்கு திறக்கப்பட்ட நாளிலிருந்து 21 ஆண்டுகளுக்குப் பிறகு, அல்லது பெண் 18 வயதை அடைந்த பிறகு அவரது திருமணத்தின் போது கணக்கு முதிர்ச்சியடைகிறது."
+      "question": "When does the Sukanya Samriddhi Yojana account mature?",
+      "answer": "The account matures 21 years from the date of account opening, or at the time of the girl's marriage after she attains the age of 18."
     }
   ],
   "conclusion": {
-    "title": "உங்கள் மகளின் எதிர்காலத்திற்கான ஒரு சக்திவாய்ந்த கருவி",
-    "body": "சுகன்யா சம்ரித்தி யோஜனா ஒரு சேமிப்புத் திட்டத்தை விட மேலானது; இது உங்கள் மகளின் उज्ज्वल எதிர்காலத்திற்கான ஒரு அர்ப்பணிப்பு. அதன் उच्च, வரி இல்லாத வருமானம் மற்றும் அரசாங்க ஆதரவுடன், இது அவளது கல்வி மற்றும் திருமணச் செலவுகளைத் திட்டமிடுவதற்கு கிடைக்கும் சிறந்த கருவிகளில் ஒன்றாகும். வளர்ச்சியைக் காட்சிப்படுத்தவும், அவளது கனவுகளைப் பாதுகாப்பதில் நம்பிக்கையான ஒரு படியை எடுக்கவும் இந்தக் கால்குலேட்டரைப் பயன்படுத்தவும்."
+    "title": "A Powerful Tool for Your Daughter's Future",
+    "body": "Sukanya Samriddhi Yojana is more than just a savings scheme; it's a commitment to your daughter's bright future. With its high, tax-free returns and government backing, it is one of the best tools available for planning her education and marriage expenses. Use this calculator to visualize the growth and take a confident step towards securing her dreams."
   }
 }

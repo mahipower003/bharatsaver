@@ -1,145 +1,145 @@
-
+﻿
 {
-  "meta_title": "पीपीएफ कैलकुलेटर 2025 — पीपीएफ परिपक्वता ऑनलाइन गणना करें (भारत)",
-  "meta_description": "2025 के लिए मुफ्त पीपीएफ कैलकुलेटर: तुरंत पीपीएफ परिपक्वता, ब्याज, और कर बचत (ईईई) का अनुमान लगाएं। इसमें साल-दर-साल चार्ट, विस्तार नियम, और एफडी, एनपीएस, और एसएसवाई के साथ तुलना शामिल है।",
-  "h1": "पीपीएफ कैलकुलेटर 2025 (सार्वजनिक भविष्य निधि)",
-  "description": "हमारे मुफ्त पीपीएफ कैलकुलेटर का उपयोग करके अपनी सार्वजनिक भविष्य निधि परिपक्वता राशि, कुल अर्जित ब्याज, और साल-दर-साल निवेश का विवरण अनुमानित करें। नवीनतम ब्याज दरों के साथ अद्यतन।",
-  "last_updated": "दरें अपडेट की गईं:",
-  "title": "सार्वजनिक भविष्य निधि (पीपीएफ) कैलकुलेटर",
-  "annual_investment_label": "वार्षिक निवेश राशि",
-  "annual_investment_placeholder": "उदा., 100000",
-  "tenure_label": "निवेश अवधि",
-  "interest_rate_label": "ब्याज दर (% प्रति वर्ष)",
-  "interest_rate_placeholder": "उदा., 7.1",
-  "calculate_button": "पीपीएफ रिटर्न की गणना करें",
-  "loading": "गणना हो रही है...",
-  "results_title": "आपका पीपीएफ प्रक्षेपण",
-  "maturity_value": "परिपक्वता मूल्य",
-  "total_investment": "कुल निवेश",
-  "total_interest": "कुल अर्जित ब्याज",
-  "view_chart": "चार्ट",
-  "view_table": "तालिका",
-  "yearly_breakdown_title": "साल-दर-साल विवरण",
-  "export_csv": "सीएसवी निर्यात करें",
-  "table_year": "वर्ष",
-  "table_opening_balance": "प्रारंभिक शेष",
-  "table_amount_invested": "निवेशित राशि",
-  "table_interest_earned": "अर्जित ब्याज",
-  "table_closing_balance": "अंतिम शेष",
+  "meta_title": "PPF Calculator 2025 â€” Calculate PPF Maturity Online (India)",
+  "meta_description": "Free PPF calculator for 2025: Instantly estimate PPF maturity, interest, and tax savings (EEE). Includes year-wise charts, extension rules, and comparison with FD, NPS, and SSY.",
+  "h1": "PPF Calculator 2025 (Public Provident Fund)",
+  "description": "Use our free PPF Calculator to estimate your Public Provident Fund maturity amount, total interest earned, and year-wise investment breakdown. Updated with the latest interest rates.",
+  "last_updated": "Rates updated:",
+  "title": "Public Provident Fund (PPF) Calculator",
+  "annual_investment_label": "Yearly Investment Amount",
+  "annual_investment_placeholder": "e.g., 100000",
+  "tenure_label": "Investment Tenure",
+  "interest_rate_label": "Interest Rate (% p.a.)",
+  "interest_rate_placeholder": "e.g., 7.1",
+  "calculate_button": "Calculate PPF Returns",
+  "loading": "Calculating...",
+  "results_title": "Your PPF Projection",
+  "maturity_value": "Maturity Value",
+  "total_investment": "Total Investment",
+  "total_interest": "Total Interest Earned",
+  "view_chart": "Chart",
+  "view_table": "Table",
+  "yearly_breakdown_title": "Year-wise Breakdown",
+  "export_csv": "Export CSV",
+  "table_year": "Year",
+  "table_opening_balance": "Opening Balance",
+  "table_amount_invested": "Amount Invested",
+  "table_interest_earned": "Interest Earned",
+  "table_closing_balance": "Closing Balance",
   "advantages": {
-    "title": "पीपीएफ निवेश के लाभ",
-    "intro": "पीपीएफ कई कारणों से भारत की सबसे लोकप्रिय दीर्घकालिक बचत योजनाओं में से एक है:",
+    "title": "Advantages of PPF Investment",
+    "intro": "PPF is one of India's most popular long-term savings schemes for several reasons:",
     "points": [
-      "जोखिम-मुक्त संप्रभु गारंटी",
-      "आकर्षक चक्रवृद्धि रिटर्न",
-      "अद्वितीय ईईई कर लाभ",
-      "लचीली निवेश राशि (₹500 से ₹1.5 लाख/वर्ष)",
-      "शेष राशि पर ऋण सुविधा",
-      "आंशिक निकासी का विकल्प"
+      "Risk-Free Sovereign Guarantee",
+      "Attractive Compounded Returns",
+      "Unmatched EEE Tax Benefit",
+      "Flexible Investment Amounts (â‚¹500 to â‚¹1.5 Lakh/year)",
+      "Loan Facility Against Balance",
+      "Partial Withdrawal Option"
     ],
-    "conclusion": "यह सेवानिवृत्ति, बच्चों की शिक्षा, या धन सृजन जैसे दीर्घकालिक लक्ष्यों के लिए एक आदर्श उपकरण है।"
+    "conclusion": "It's an ideal tool for long-term goals like retirement, children's education, or wealth creation."
   },
   "investment_strategy": {
-    "title": "प्रो टिप: अधिकतम रिटर्न के लिए पीपीएफ में कब निवेश करें",
-    "intro": "पीपीएफ खाते में अपने ब्याज आय को अधिकतम करने के लिए, ब्याज की गणना कैसे की जाती है, यह समझना महत्वपूर्ण है। ब्याज की गणना हर महीने की 5वीं और अंतिम तारीख के बीच के न्यूनतम शेष पर मासिक रूप से की जाती है। इसलिए, अधिकतम लाभ प्राप्त करने के लिए:",
+    "title": "Pro Tip: When to Invest in PPF for Maximum Returns",
+    "intro": "To maximize your interest earnings in a PPF account, it's crucial to understand how interest is calculated. The interest is calculated monthly on the lowest balance between the 5th and the last day of each month. Therefore, to get the maximum benefit:",
     "points": [
-      "<strong>यदि आप मासिक निवेश कर रहे हैं तो प्रत्येक माह की 5 तारीख से पहले निवेश करें।</strong>",
-      "<strong>यदि आप एकमुश्त वार्षिक निवेश कर रहे हैं तो 5 अप्रैल से पहले पूरी राशि का निवेश करें।</strong>"
+      "<strong>Invest before the 5th of each month</strong> if you are investing monthly.",
+      "<strong>Invest the full amount before April 5th</strong> if you are making a lump-sum annual investment."
     ]
   },
   "tax_benefits": {
-    "title": "पीपीएफ कर लाभ: ईईई की शक्ति",
-    "intro": "पीपीएफ को छूट-छूट-छूट (ईईई) का दर्जा प्राप्त है, जो इसे भारत में उपलब्ध सबसे अधिक कर-कुशल निवेश विकल्पों में से एक बनाता है।",
-    "contribution_title": "1. योगदान कर-कटौती योग्य है",
-    "contribution_body": "आपका ₹1.5 लाख तक का वार्षिक योगदान आयकर अधिनियम की <strong>धारा 80सी</strong> के तहत कटौती के लिए पात्र है।",
-    "interest_title": "2. अर्जित ब्याज कर-मुक्त है",
-    "interest_body": "आपके द्वारा प्रत्येक वर्ष अर्जित ब्याज पूरी तरह से आयकर से मुक्त है।",
-    "maturity_title": "3. परिपक्वता राशि कर-मुक्त है",
-    "maturity_body": "मूलधन और संचित ब्याज सहित पूरी परिपक्वता राशि, निकासी पर कर-मुक्त है।",
-    "why_matters": "यह तिहरा कर लाभ अन्य उपकरणों की तुलना में आपके प्रभावी प्रतिफल की दर को काफी बढ़ाता है जहाँ रिटर्न कर योग्य होता है।",
-    "footer_note": "आपके लिए कौन सी कर व्यवस्था बेहतर है, यह जानने के लिए हमारे <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>पुरानी बनाम नई कर व्यवस्था कैलकुलेटर</a> का उपयोग करें।"
+    "title": "PPF Tax Benefits: The Power of EEE",
+    "intro": "PPF enjoys the Exempt-Exempt-Exempt (EEE) status, making it one of the most tax-efficient investment options available in India.",
+    "contribution_title": "1. Contribution is Tax-Deductible",
+    "contribution_body": "Your annual contributions of up to â‚¹1.5 lakh are eligible for deduction under <strong>Section 80C</strong> of the Income Tax Act.",
+    "interest_title": "2. Interest Earned is Tax-Free",
+    "interest_body": "The interest you earn each year is completely exempt from income tax.",
+    "maturity_title": "3. Maturity Amount is Tax-Free",
+    "maturity_body": "The entire maturity amount, including the principal and the accumulated interest, is tax-free upon withdrawal.",
+    "why_matters": "This triple tax benefit significantly enhances your effective rate of return compared to other instruments where returns are taxable.",
+    "footer_note": "To know which tax regime is better for you, use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>Old vs New Tax Regime calculator</a>."
   },
   "rules": {
-    "title": "आपको जानने योग्य प्रमुख पीपीएफ नियम",
+    "title": "Key PPF Rules You Should Know",
     "points": [
-      "<strong>अवधि:</strong> अनिवार्य लॉक-इन अवधि 15 वर्ष है। इसे 5 साल के ब्लॉक में अनिश्चित काल के लिए बढ़ाया जा सकता है।",
-      "<strong>योगदान सीमा:</strong> न्यूनतम ₹500 और अधिकतम ₹1.5 लाख प्रति वित्तीय वर्ष।",
-      "<strong>जमा:</strong> एकमुश्त या अधिकतम 12 किस्तों में किया जा सकता है।",
-      "<strong>खाता खोलना:</strong> किसी भी राष्ट्रीयकृत बैंक, प्रमुख निजी बैंकों, या डाकघरों में खोला जा सकता है।",
-      "<strong>ऋण:</strong> पीपीएफ शेष राशि के विरुद्ध तीसरे से छठे वित्तीय वर्ष तक ऋण लिया जा सकता है।",
-      "<strong>निकासी:</strong> विशिष्ट शर्तों के तहत 7वें वित्तीय वर्ष से आंशिक निकासी की अनुमति है।"
+      "<strong>Tenure:</strong> The mandatory lock-in period is 15 years. It can be extended in blocks of 5 years indefinitely.",
+      "<strong>Contribution Limit:</strong> Minimum of â‚¹500 and a maximum of â‚¹1.5 lakh per financial year.",
+      "<strong>Deposits:</strong> Can be made in a lump sum or in a maximum of 12 installments.",
+      "<strong>Account Opening:</strong> Can be opened at any nationalized bank, major private banks, or post offices.",
+      "<strong>Loan:</strong> A loan can be taken against the PPF balance from the 3rd to the 6th financial year.",
+      "<strong>Withdrawal:</strong> Partial withdrawal is permissible from the 7th financial year onwards under specific conditions."
     ],
-    "footer_note": "आधिकारिक और विस्तृत नियमों के लिए, हमेशा वित्त मंत्रालय या आरबीआई द्वारा प्रदान किए गए दिशानिर्देशों का संदर्भ लें।"
+    "footer_note": "For official and detailed rules, always refer to the guidelines provided by the Ministry of Finance or the RBI."
   },
   "how_to_open": {
-    "title": "पीपीएफ खाता कैसे खोलें",
-    "intro": "पीपीएफ खाता खोलना एक सीधी प्रक्रिया है:",
+    "title": "How to Open a PPF Account",
+    "intro": "Opening a PPF account is a straightforward process:",
     "steps": [
-      "पीपीएफ खाते की पेशकश करने वाले बैंक या डाकघर का चयन करें।",
-      "खाता खोलने का फॉर्म (फॉर्म ए) भरें।",
-      "आवश्यक केवाईसी दस्तावेज जमा करें: पहचान का प्रमाण (आधार, पैन) और पते का प्रमाण।",
-      "प्रारंभिक जमा करें (न्यूनतम ₹500)।",
-      "कई बैंक अब पूरी तरह से ऑनलाइन, आधार ई-सत्यापन-आधारित खाता खोलने की प्रक्रिया प्रदान करते हैं।"
+      "Choose a bank or post office that offers PPF accounts.",
+      "Fill out the account opening form (Form A).",
+      "Submit the necessary KYC documents: Proof of Identity (Aadhaar, PAN) and Proof of Address.",
+      "Make the initial deposit (minimum â‚¹500).",
+      "Many banks now offer a completely online, Aadhaar e-verification-based account opening process."
     ],
     "links": [
-      {"text": "एसबीआई में पीपीएफ खोलें", "href": "https://www.onlinesbi.sbi/"},
-      {"text": "एचडीएफसी बैंक में पीपीएफ खोलें", "href": "https://www.hdfcbank.com/"},
-      {"text": "आईसीआईसीआई बैंक में पीपीएफ खोलें", "href": "https://www.icicibank.com/"}
+      {"text": "Open PPF in SBI", "href": "https://www.onlinesbi.sbi/"},
+      {"text": "Open PPF in HDFC Bank", "href": "https://www.hdfcbank.com/"},
+      {"text": "Open PPF in ICICI Bank", "href": "https://www.icicibank.com/"}
     ]
   },
   "historical_rates": {
-    "title": "ऐतिहासिक पीपीएफ ब्याज दरें",
-    "intro": "पीपीएफ ब्याज दर सरकार द्वारा निर्धारित की जाती है और तिमाही समीक्षा की जाती है। यहाँ पिछले कुछ वर्षों की दरें हैं:",
+    "title": "Historical PPF Interest Rates",
+    "intro": "The PPF interest rate is set by the government and reviewed quarterly. Here are the rates over the past few years:",
     "table": {
-      "headers": ["अवधि", "ब्याज दर"],
+      "headers": ["Period", "Interest Rate"],
       "rows": [
-        ["अप्रैल 2024 - जून 2024", "7.1%"],
-        ["जनवरी 2024 - मार्च 2024", "7.1%"],
-        ["अक्टूबर 2023 - दिसंबर 2023", "7.1%"],
-        ["जुलाई 2020 - सितंबर 2023", "7.1%"],
-        ["अप्रैल 2020 - जून 2020", "7.1%"],
-        ["जुलाई 2019 - मार्च 2020", "7.9%"],
-        ["अक्टूबर 2018 - जून 2019", "8.0%"]
+        ["Apr 2024 - Jun 2024", "7.1%"],
+        ["Jan 2024 - Mar 2024", "7.1%"],
+        ["Oct 2023 - Dec 2023", "7.1%"],
+        ["Jul 2020 - Sep 2023", "7.1%"],
+        ["Apr 2020 - Jun 2020", "7.1%"],
+        ["Jul 2019 - Mar 2020", "7.9%"],
+        ["Oct 2018 - Jun 2019", "8.0%"]
       ]
     },
-    "sources": "स्रोत: वित्त मंत्रालय की अधिसूचनाएं, आरबीआई परिपत्र।",
-    "insight": "हालांकि दर अपने उच्च स्तर से गिरावट देखी गई है, यह जोखिम-मुक्त उपकरण के लिए सबसे प्रतिस्पर्धी दरों में से एक बनी हुई है।"
+    "sources": "Sources: Ministry of Finance notifications, RBI circulars.",
+    "insight": "While the rate has seen a downtrend from its highs, it remains one of the most competitive rates for a risk-free instrument."
   },
   "comparison": {
-    "title": "पीपीएफ बनाम अन्य निवेश विकल्प",
+    "title": "PPF vs Other Investment Options",
     "table": {
-      "headers": ["फ़ीचर", "पीपीएफ", "एफडी", "एनपीएस", "एसएसवाई"],
+      "headers": ["Feature", "PPF", "FD", "NPS", "SSY"],
       "rows": [
-        ["जोखिम", "संप्रभु (शून्य)", "कम", "बाजार-लिंक्ड", "संप्रभु (शून्य)"],
-        ["रिटर्न", "सरकार द्वारा निर्धारित (7.1%)", "बैंक द्वारा निर्धारित (भिन्न होता है)", "बाजार-चालित", "सरकार द्वारा निर्धारित (8.2%)"],
-        ["परिपक्वता पर कर", "कर-मुक्त (ईईई)", "कर योग्य", "आंशिक रूप से कर योग्य", "कर-मुक्त (ईईई)"],
-        ["लॉक-इन", "15 साल", "भिन्न होता है (दिनों से वर्षों तक)", "60 तक", "21 साल"],
-        ["पात्रता", "सभी भारतीय", "सभी भारतीय", "18-70 वर्ष", "बालिका < 10"]
+        ["Risk", "Sovereign (Nil)", "Low", "Market-linked", "Sovereign (Nil)"],
+        ["Returns", "Govt. set (7.1%)", "Bank set (Varies)", "Market-driven", "Govt. set (8.2%)"],
+        ["Tax on Maturity", "Tax-Free (EEE)", "Taxable", "Partially Taxable", "Tax-Free (EEE)"],
+        ["Lock-in", "15 years", "Varies (days to yrs)", "Till 60", "21 years"],
+        ["Eligibility", "All Indians", "All Indians", "18-70 years", "Girl child < 10"]
       ]
     },
-    "footer_note": "विस्तृत तुलना के लिए, हमारे <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>एफडी बनाम पीपीएफ कैलकुलेटर</a> और <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>एनपीएस कैलकुलेटर</a> की जाँच करें।"
+    "footer_note": "For a detailed comparison, check out our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a>."
   },
-  "faq_title": "पीपीएफ के बारे में अक्सर पूछे जाने वाले प्रश्न",
+  "faq_title": "Frequently Asked Questions about PPF",
   "faqs": [
     {
-      "question": "क्या मेरे पास एक से अधिक पीपीएफ खाते हो सकते हैं?",
-      "answer": "नहीं, एक व्यक्ति के नाम पर केवल एक पीपीएफ खाता हो सकता है। हालांकि, आप एक नाबालिग की ओर से दूसरा खाता खोल सकते हैं।"
+      "question": "Can I have more than one PPF account?",
+      "answer": "No, an individual can only have one PPF account in their name. You can, however, open another account on behalf of a minor."
     },
     {
-      "question": "यदि मैं एक वर्ष में न्यूनतम ₹500 जमा नहीं करता तो क्या होता है?",
-      "answer": "खाता निष्क्रिय हो जाता है। इसे पुनः सक्रिय करने के लिए, आपको प्रत्येक निष्क्रिय वर्ष के लिए ₹50 का जुर्माना देना होगा, साथ ही उन प्रत्येक वर्षों के लिए ₹500 की न्यूनतम सदस्यता भी देनी होगी।"
+      "question": "What happens if I don't deposit the minimum â‚¹500 in a year?",
+      "answer": "The account becomes inactive. To reactivate it, you need to pay a penalty of â‚¹50 for each inactive year, along with the minimum subscription of â‚¹500 for each of those years."
     },
     {
-      "question": "क्या एक एनआरआई पीपीएफ खाते में निवेश करना जारी रख सकता है?",
-      "answer": "एक अनिवासी भारतीय (एनआरआई) नया पीपीएफ खाता नहीं खोल सकता है। हालांकि, यदि उनके पास निवासी के रूप में एक खाता था, तो वे परिपक्वता तक उसमें सदस्यता लेना जारी रख सकते हैं, लेकिन खाते को बढ़ाया नहीं जा सकता है।"
+      "question": "Can an NRI continue to invest in a PPF account?",
+      "answer": "A Non-Resident Indian (NRI) cannot open a new PPF account. However, if they had an account as a resident, they can continue to subscribe to it until maturity, but the account cannot be extended."
     },
     {
-      "question": "क्या पीपीएफ की परिपक्वता राशि पूरी तरह से कर-मुक्त है?",
-      "answer": "हां, मौजूदा कर कानूनों के तहत, मूलधन और ब्याज सहित पूरी परिपक्वता राशि आयकर से मुक्त है।"
+      "question": "Is the maturity value of PPF completely tax-free?",
+      "answer": "Yes, under the current tax laws, the entire maturity amount, including principal and interest, is exempt from income tax."
     }
   ],
   "conclusion": {
-    "title": "निष्कर्ष: क्या पीपीएफ आपके लिए सही है?",
-    "body": "पीपीएफ किसी के लिए भी एक उत्कृष्ट निवेश है जो एक सुरक्षित, कर-कुशल, और अनुशासित तरीके से एक दीर्घकालिक कोष बनाने की तलाश में है। इसके गारंटीकृत रिटर्न और ईईई स्थिति इसे जोखिम-से-बचने वाले निवेशकों के लिए एक अच्छी तरह से विविध पोर्टफोलियो का आधार बनाती है। यह भी देखें कि यह <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>सुकन्या समृद्धि योजना</a> की तुलना में एक बालिका के लिए कैसा है।"
+    "title": "The Bottom Line: Is PPF Right For You?",
+    "body": "PPF is an outstanding investment for anyone looking for a safe, tax-efficient, and disciplined way to build a long-term corpus. Its guaranteed returns and EEE status make it a cornerstone of a well-diversified portfolio for risk-averse investors. Also see how it compares to the <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>Sukanya Samriddhi Yojana</a> for a girl child."
   }
 }

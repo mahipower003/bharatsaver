@@ -131,7 +131,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
 export default async function RetirementCorpusCalculatorPage({ params }: { params: Promise<{ lang: Locale }> }) {
   const { lang } = await params;
   const dictionary = await getDictionary(lang);
-  const retirementDict = (await import(`@/dictionaries/${lang}/retirement-corpus-calculator.json`)).default;
+  const retirementDict = { ...(await import(`@/dictionaries/${lang}/retirement-corpus-calculator.json`)).default };
   
   const breadcrumbSchema = {
     '@context': 'https://schema.org',

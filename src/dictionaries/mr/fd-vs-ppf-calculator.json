@@ -1,114 +1,130 @@
-
+﻿
 {
-  "meta_title": "एफडी वि पीपीएफ कॅल्क्युलेटर 2025 — परतावा, कर आणि मॅच्युरिटीची तुलना करा (विनामूल्य साधन)",
-  "meta_description": "आमचे विनामूल्य एफडी वि पीपीएफ कॅल्क्युलेटर वापरून मॅच्युरिटी रक्कम, कर प्रभाव आणि कर-पश्चात परताव्याची तुलना करा. प्रीमियम चार्ट, उदाहरणे आणि डाउनलोड करण्यायोग्य सीएसव्ही समाविष्ट आहे. सप्टेंबर 2025 रोजी अद्यतनित केले.",
-  "og_title": "एफडी वि पीपीएफ कॅल्क्युलेटर 2025 — परतावा, कर आणि मॅच्युरिटीची तुलना करा",
-  "og_description": "एकকালীন एफडी वि आवर्ती पीपीएफ योगदानावरील परताव्याची तुलना करण्यासाठी विनामूल्य एफडी वि पीपीएफ कॅल्क्युलेटर. कर-पश्चात विश्लेषणासह एक माहितीपूर्ण गुंतवणूक निर्णय घ्या.",
-  "h1": "एफडी वि पीपीएफ कॅल्क्युलेटर 2025 — परतावा, कर आणि मॅच्युरिटीची तुलना करा (विनामूल्य साधन)",
-  "description": "आमचे विनामूल्य एफडी वि पीपीएफ कॅल्क्युलेटर तुम्हाला मुदत ठेव (एफडी) एकरकमी गुंतवणूक वि आवर्ती सार्वजनिक भविष्य निर्वाह निधी (पीपीएफ) योगदानावरील परताव्याची तुलना करण्यास मदत करते. एक माहितीपूर्ण गुंतवणूक निर्णय घ्या.",
-  "last_updated": "दर अद्यतनित केले:",
-  "title": "एफडी वि पीपीएफ कॅल्क्युलेटर",
-  "form_description": "एकाच कालावधीत एकरकमी एफडी गुंतवणुकीची तुलना आवर्ती वार्षिक पीपीएफ गुंतवणुकीशी करा.",
-  "investment_amount_label": "एकरकमी / वार्षिक गुंतवणूक",
-  "tenure_label": "गुंतवणूक कालावधी (वर्षे)",
-  "fd_rate_label": "एफडी व्याज दर (% प्रति वर्ष)",
-  "ppf_rate_label": "पीपीएफ व्याज दर (% प्रति वर्ष)",
-  "tax_bracket_label": "तुमचा आयकर ब्रॅकेट",
-  "calculate_button": "आता तुलना करा",
-  "loading": "गणना होत आहे...",
-  "results_title": "तुलना परिणाम",
-  "fd_label": "मुदत ठेव (एफडी)",
-  "ppf_label": "सार्वजनिक भविष्य निर्वाह निधी (पीपीएफ)",
-  "fd_maturity_label": "एकूण मॅच्युरिटी मूल्य",
-  "fd_post_tax_maturity_label": "कर-पश्चात मॅच्युरिटी मूल्य",
-  "total_interest_label": "एकूण मिळवलेले व्याज",
-  "total_investment_label": "एकूण गुंतवणूक",
-  "ppf_maturity_label": "मॅच्युरिटी मूल्य (कर-मुक्त)",
-  "export_csv": "सीएसव्ही निर्यात करा",
+  "meta_title": "FD vs PPF Calculator 2025 â€” Compare Returns, Tax & Maturity (Free Tool)",
+  "meta_description": "Use our free FD vs PPF calculator to compare maturity amounts, tax impact and post-tax returns. Includes premium charts, examples, and downloadable CSV. Updated Sep 2025.",
+  "og_title": "FD vs PPF Calculator 2025 â€” Compare Returns, Tax & Maturity",
+  "og_description": "Free FD vs PPF calculator to compare returns on lump-sum FD vs recurring PPF contributions. Make an informed investment decision with post-tax analysis.",
+  "h1": "FD vs PPF Calculator 2025 â€” Compare Returns, Tax & Maturity (Free Tool)",
+  "description": "Our free FD vs PPF calculator helps you compare returns on Fixed Deposit (FD) lump-sum investments vs recurring Public Provident Fund (PPF) contributions. Make an informed investment decision.",
+  "last_updated": "Rates updated:",
+  "title": "FD vs PPF Calculator",
+  "form_description": "Compare a lump-sum FD investment against a recurring annual PPF investment over the same period.",
+  "investment_amount_label": "Lump-sum / Annual Investment",
+  "tenure_label": "Investment Tenure (Years)",
+  "fd_rate_label": "FD Interest Rate (% p.a.)",
+  "ppf_rate_label": "PPF Interest Rate (% p.a.)",
+  "tax_bracket_label": "Your Income Tax Bracket",
+  "calculate_button": "Compare Now",
+  "loading": "Calculating...",
+  "results_title": "Comparison Results",
+  "fd_label": "Fixed Deposit (FD)",
+  "ppf_label": "Public Provident Fund (PPF)",
+  "fd_maturity_label": "Gross Maturity Value",
+  "fd_post_tax_maturity_label": "Post-Tax Maturity Value",
+  "total_interest_label": "Total Interest Earned",
+  "total_investment_label": "Total Investment",
+  "ppf_maturity_label": "Maturity Value (Tax-Free)",
+  "export_csv": "Export CSV",
   "clarifier_note": {
-    "title": "महत्वाचे स्पष्टीकरण",
-    "body": "हे कॅल्क्युलेटर <strong>एक-वेळ, एकरकमी एफडी</strong> गुंतवणुकीची तुलना <strong>आवर्ती, वार्षिक पीपीएफ</strong> गुंतवणुकीशी करते. 'वार्षिक गुंतवणूक' रक्कम सुरुवातीला एफडीमध्ये एकरकमी म्हणून गुंतवली जाते, आणि दरवर्षी पीपीएफ खात्यात गुंतवली जाते."
+    "title": "Important Clarification",
+    "body": "This calculator compares a <strong>one-time, lump-sum FD</strong> investment with a <strong>recurring, annual PPF</strong> investment. The 'Annual Investment' amount is invested as a lump sum in the FD at the start, and invested every year in the PPF account."
   },
   "assumptions": {
-    "title": "गृहितके",
-    "body": "<ul><li>एफडी व्याज वार्षिकरित्या चक्रवाढ होते.</li><li>पीपीएफ गुंतवणूक प्रत्येक आर्थिक वर्षाच्या सुरुवातीला केली जाते.</li><li>एफडी आणि पीपीएफ दोन्हीसाठी व्याजदर संपूर्ण कालावधीत स्थिर राहतात.</li><li>कर फक्त एफडीच्या व्याज घटकावर निर्दिष्ट स्लॅब दराने मोजला जातो.</li></ul>"
+    "title": "Assumptions",
+    "body": "<ul><li>FD interest is compounded annually.</li><li>PPF investment is made at the start of each financial year.</li><li>Interest rates for both FD and PPF remain constant throughout the tenure.</li><li>Tax is calculated only on the interest component of the FD at the specified slab rate.</li></ul>"
   },
-  "result_snapshot": "{tenure} वर्षांनंतर, {winner} {difference} ने जास्त कर-पश्चात परतावा देतो.",
+  "result_snapshot": "After {tenure} years, the {winner} yields a higher post-tax return by {difference}.",
   "quick_answer": {
-    "title": "त्वरित उत्तर: एफडी की पीपीएफ, कोणते चांगले आहे?",
-    "body": "दीर्घकालीन उद्दिष्टांसाठी (15+ वर्षे) आणि उच्च कर ब्रॅकेटमधील (20-30%) गुंतवणूकदारांसाठी, <strong>पीपीएफ जवळजवळ नेहमीच त्याच्या ईईई (सूट-सूट-सूट) स्थितीमुळे उत्कृष्ट कर-पश्चात परतावा देतो</strong>. एफडी अल्पकालीन उद्दिष्टांसाठी चांगले आहेत जिथे तरलतेची आवश्यकता असते आणि पीपीएफचा लॉक-इन कालावधी योग्य नसतो. तुमचा स्लॅब निश्चित करण्यासाठी आमचे <a href='/{lang}/tax-regime-calculator'>कर कॅल्क्युलेटर</a> वापरा."
+    "title": "Quick Answer: Which is better, FD or PPF?",
+    "body": "For long-term goals (15+ years) and for investors in higher tax brackets (20-30%), <strong>PPF almost always provides superior post-tax returns</strong> due to its EEE (Exempt-Exempt-Exempt) status. FDs are better for short-term goals where liquidity is needed and the lock-in periods of PPF are not suitable. Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax calculator</a> to determine your slab, and compare with <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>Atal Pension Yojana</a> for guaranteed pension benefits."
   },
   "how_it_works": {
-    "title": "तुलना कशी कार्य करते: काम केलेली उदाहरणे",
+    "title": "How the Comparison Works: Worked Examples",
     "example1": {
-      "title": "एफडी गणना उदाहरण",
-      "body": "<p>तुम्ही <strong>₹1,00,000</strong> ची गुंतवणूक <strong>15 वर्षांसाठी</strong> <strong>7%</strong> व्याजाने एफडीमध्ये केल्यास:</p><ul><li>मॅच्युरिटी मूल्य = 1,00,000 * (1 + 0.07)^15 = <strong>₹2,75,903</strong></li><li>एकूण व्याज = 2,75,903 - 1,00,000 = ₹1,75,903</li><li>कर (30% दराने) = 1,75,903 * 0.30 = ₹52,771</li><li>कर-पश्चात मॅच्युरिटी = 2,75,903 - 52,771 = <strong>₹2,23,132</strong></li></ul>"
+      "title": "FD Calculation Example",
+      "body": "<p>If you invest <strong>â‚¹1,00,000</strong> in an FD for <strong>15 years</strong> at <strong>7%</strong> interest:</p><ul><li>Maturity Value = 1,00,000 * (1 + 0.07)^15 = <strong>â‚¹2,75,903</strong></li><li>Total Interest = 2,75,903 - 1,00,000 = â‚¹1,75,903</li><li>Tax (at 30%) = 1,75,903 * 0.30 = â‚¹52,771</li><li>Post-Tax Maturity = 2,75,903 - 52,771 = <strong>â‚¹2,23,132</strong></li></ul>"
     },
     "example2": {
-      "title": "पीपीएफ गणना उदाहरण",
-      "body": "<p>तुम्ही <strong>₹1,00,000 दरवर्षी</strong> पीपीएफमध्ये <strong>15 वर्षांसाठी</strong> <strong>7.1%</strong> व्याजाने गुंतवल्यास:</p><ul><li>तुमची एकूण गुंतवणूक ₹15,00,000 असेल.</li><li>वार्षिक चक्रवाढीच्या शक्तीमुळे अंतिम मॅच्युरिटी मूल्य <strong>₹27,12,139</strong> होईल.</li><li>ही संपूर्ण रक्कम कर-मुक्त आहे.</li></ul>"
+      "title": "PPF Calculation Example",
+      "body": "<p>If you invest <strong>â‚¹1,00,000 every year</strong> in PPF for <strong>15 years</strong> at <strong>7.1%</strong> interest:</p><ul><li>Your total investment will be â‚¹15,00,000.</li><li>The final maturity value, through the power of annual compounding, will be <strong>â‚¹27,12,139</strong>.</li><li>This entire amount is tax-free.</li></ul>"
     }
   },
   "ppf_features": {
-    "title": "पीपीएफची प्रमुख वैशिष्ट्ये",
+    "title": "Key Features of PPF",
     "points": [
-      "भारत सरकारद्वारे समर्थित, सर्वोच्च सुरक्षा प्रदान करते.",
-      "ईईई स्थिती योगदान, व्याज आणि मॅच्युरिटी रक्कम कर-मुक्त करते.",
-      "किमान 15-वर्षांचा लॉक-इन, दीर्घकालीन शिस्तबद्ध बचतीला प्रोत्साहन देते.",
-      "विशिष्ट कालावधीनंतर कर्ज आणि आंशिक पैसे काढण्याची सुविधा उपलब्ध आहे."
+      "Backed by the Government of India, offering highest safety.",
+      "EEE status makes contributions, interest, and maturity amount tax-free.",
+      "Minimum 15-year lock-in, promoting long-term disciplined savings.",
+      "Loan and partial withdrawal facilities available after specific periods."
     ]
   },
   "fd_features": {
-    "title": "मुदत ठेवीची (एफडी) प्रमुख वैशिष्ट्ये",
+    "title": "Key Features of Fixed Deposit (FD)",
     "points": [
-      "7 दिवसांपासून ते 10 वर्षांपर्यंत लवचिक कालावधी.",
-      "हमी परतावा, बाजाराच्या कामगिरीशी जोडलेला नाही.",
-      "मिळालेले व्याज तुमच्या आयकर स्लॅबनुसार पूर्णपणे करपात्र आहे.",
-      "मुदतपूर्व पैसे काढणे शक्य आहे, जरी सहसा दंडासह."
+      "Flexible tenures ranging from 7 days to 10 years.",
+      "Guaranteed returns, not linked to market performance.",
+      "Interest earned is fully taxable as per your income tax slab.",
+      "Premature withdrawal is possible, though usually with a penalty."
     ]
   },
   "comparison": {
-    "title": "एफडी वि. पीपीएफ: एक तपशीलवार तुलना",
+    "title": "FD vs. PPF: A Detailed Comparison",
     "table": {
-      "headers": ["वैशिष्ट्य", "मुदत ठेव (एफडी)", "सार्वजनिक भविष्य निर्वाह निधी (पीपीएफ)"],
+      "headers": ["Feature", "Fixed Deposit (FD)", "Public Provident Fund (PPF)"],
       "rows": [
-        ["जोखीम पातळी", "खूप कमी (डीआयसीजीसी द्वारे ₹5 लाखांपर्यंत संरक्षित)", "सार्वभौम (प्रभावीपणे शून्य जोखीम)"],
-        ["परतावा", "बँकेद्वारे निश्चित आणि हमी", "सरकारद्वारे हमी, तिमाही पुनरावलोकन"],
-        ["लॉक-इन कालावधी", "लवचिक (7 दिवस ते 10 वर्षे)", "15 वर्षे (वाढवता येते)"],
-        ["व्याज/मॅच्युरिटीवर कर", "तुमच्या स्लॅबनुसार करपात्र", "पूर्णपणे कर-मुक्त (ईईई)"],
-        ["गुंतवणूक लवचिकता", "एक-वेळ एकरकमी", "वार्षिक आवर्ती ठेवी"],
-        ["यासाठी सर्वोत्तम", "अल्प ते मध्यम-मुदतीची उद्दिष्ट्ये, आपत्कालीन निधी", "दीर्घकालीन उद्दिष्ट्ये (सेवानिवृत्ती, शिक्षण)"]
+        ["Risk Level", "Very Low (covered by DICGC up to â‚¹5 Lakh)", "Sovereign (Effectively zero risk)"],
+        ["Returns", "Fixed and Guaranteed by Bank", "Guaranteed by Govt, reviewed quarterly"],
+        ["Lock-in Period", "Flexible (7 days to 10 years)", "15 years (can be extended)"],
+        ["Tax on Interest/Maturity", "Taxable as per your slab", "Completely Tax-Free (EEE)"],
+        ["Investment Flexibility", "One-time lump sum", "Annual recurring deposits"],
+        ["Best For", "Short to medium-term goals, emergency fund", "Long-term goals (retirement, education)"]
       ]
     }
   },
   "tax_impact": {
-    "title": "निर्णायक घटक: कर प्रभाव",
-    "body": "एफडी आणि पीपीएफमधील सर्वात मोठा फरक कर आकारणी हा आहे. एफडीवरील व्याज तुमच्या 'इतर स्त्रोतांकडून मिळणारे उत्पन्न' मध्ये जोडले जाते आणि तुमच्या सीमांत स्लॅब दराने कर आकारला जातो. 30% कर ब्रॅकेटमध्ये असलेल्या एखाद्यासाठी, 7% एफडी परतावा प्रभावीपणे कर-पश्चात फक्त 4.9% होतो. याउलट, पीपीएफ परतावा पूर्णपणे कर-मुक्त असतो, ज्यामुळे त्याचा प्रभावी परतावा लक्षणीयरीत्या जास्त होतो."
+    "title": "The Decisive Factor: Tax Impact",
+    "body": "The biggest difference between FD and PPF is taxation. Interest from FDs is added to your 'Income from Other Sources' and taxed at your marginal slab rate. For someone in the 30% tax bracket, a 7% FD return effectively becomes just 4.9% post-tax. In contrast, PPF returns are entirely tax-free, making its effective return significantly higher."
   },
   "checklist": {
-    "title": "कोणते केव्हा निवडावे?",
+    "title": "When to Choose Which?",
     "points": [
-      "<strong>एफडी निवडा जर:</strong> तुमचे अल्प-मुदतीचे ध्येय (1-5 वर्षे) असेल, जास्त तरलतेची गरज असेल, आणि तुम्ही कमी कर ब्रॅकेटमध्ये असाल.",
-      "<strong>पीपीएफ निवडा जर:</strong> तुमचे दीर्घ-मुदतीचे ध्येय (15+ वर्षे) असेल, सेवानिवृत्तीसाठी बचत करत असाल, आणि 20% किंवा 30% कर ब्रॅकेटमध्ये असाल."
+      "<strong>Choose FD if:</strong> You have a short-term goal (1-5 years), need high liquidity, and are in a lower tax bracket.",
+      "<strong>Choose PPF if:</strong> You have a long-term goal (15+ years), are saving for retirement, and are in the 20% or 30% tax bracket."
     ]
   },
-  "faq_title": "वारंवार विचारले जाणारे प्रश्न",
+  "faq_title": "Frequently Asked Questions",
   "faqs": [
     {
-      "question": "मी पीपीएफमध्ये ₹1.5 लाखांपेक्षा जास्त गुंतवणूक करू शकेन का?",
-      "answer": "तुम्ही अधिक जमा करू शकता, परंतु कलम 80C अंतर्गत व्याज आणि कर लाभांसाठी पात्र योगदान प्रति आर्थिक वर्ष ₹1.5 लाखांपर्यंत मर्यादित आहे."
+      "question": "Can I invest more than â‚¹1.5 lakh in PPF?",
+      "answer": "You can deposit more, but the contribution eligible for interest and tax benefits under Section 80C is capped at â‚¹1.5 lakh per financial year."
     },
     {
-      "question": "एफडी व्याजावर टीडीएस कापला जातो का?",
-      "answer": "होय, जर एका आर्थिक वर्षात त्या बँकेतील सर्व एफडीमधून तुमचे व्याज उत्पन्न ₹40,000 (ज्येष्ठ नागरिकांसाठी ₹50,000) पेक्षा जास्त असेल तर बँका 10% दराने टीडीएस (स्रोतवर कर कपात) कापतात. तुम्ही पॅन न दिल्यास, दर 20% आहे. तुम्ही उच्च स्लॅबमध्ये असल्यास तुम्हाला अतिरिक्त कर भरावा लागू शकतो."
+      "question": "Is TDS deducted on FD interest?",
+      "answer": "Yes, banks deduct TDS (Tax Deducted at Source) at 10% if your interest income from all FDs in that bank exceeds â‚¹40,000 in a financial year (â‚¹50,000 for senior citizens). If you don't provide PAN, the rate is 20%. You may still have to pay additional tax if you are in a higher slab."
     },
     {
-      "question": "एफडी की पीपीएफ, कोणाचा व्याजदर चांगला आहे?",
-      "answer": "ऐतिहासिकदृष्ट्या, पीपीएफने बहुतेक बँक एफडीपेक्षा जास्त दर दिला आहे. सध्या, पीपीएफ दर 7.1% आहे, तर दीर्घ मुदतीसाठी बहुतेक बँक एफडी 6.5% ते 7.25% च्या श्रेणीत आहेत. तथापि, कर-भरणाऱ्या ब्रॅकेटमधील लोकांसाठी पीपीएफमधून मिळणारा कर-पश्चात परतावा जवळजवळ नेहमीच जास्त असतो."
+      "question": "Which has a better interest rate, FD or PPF?",
+      "answer": "Historically, PPF has offered a higher rate than most bank FDs. Currently, the PPF rate is 7.1%, while most bank FDs for longer tenures are in the 6.5% to 7.25% range. However, the post-tax return from PPF is almost always higher for those in tax-paying brackets."
+    },
+    {
+      "question": "How does PPF compare with NPS for retirement planning?",
+      "answer": "Both PPF and NPS are excellent for long-term savings, but NPS offers market-linked returns with higher growth potential. Use our <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS calculator</a> to compare returns and benefits."
+    },
+    {
+      "question": "Can I use PPF for child education planning?",
+      "answer": "PPF is great for long-term goals like education. For child-specific plans, consider <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>Sukanya Samriddhi Yojana</a> which offers higher interest rates and tax benefits for girl child education."
+    },
+    {
+      "question": "What about LIC insurance plans vs PPF?",
+      "answer": "LIC plans provide insurance coverage along with investment returns. Compare PPF with LIC schemes using our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> and <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a>."
     }
   ],
+  "related_calculators": {
+    "title": "Explore More Investment Calculators",
+    "body": "Build a comprehensive investment strategy with our suite of calculators. Calculate <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF returns</a>, compare <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlaps</a>, and plan for <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>LIC Jeevan Anand</a> benefits."
+  },
   "conclusion": {
-    "title": "योग्य ध्येयासाठी योग्य साधन",
-    "body": "एफडी आणि पीपीएफ दोन्ही त्यांच्या स्वतःच्या जागी उत्कृष्ट साधने आहेत. निवड ही सार्वत्रिकरित्या कोणते 'चांगले' आहे याबद्दल नाही, तर *तुमच्या* विशिष्ट आर्थिक ध्येय आणि टाइमलाइनसाठी कोणते चांगले आहे याबद्दल आहे. तुमच्यासाठी संख्या पाहण्यासाठी हे कॅल्क्युलेटर वापरा आणि तुमच्या आर्थिक योजनेशी जुळणारा माहितीपूर्ण निर्णय घ्या. पूर्ण पोर्टफोलिओ दृश्यासाठी, <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>एनपीएस</a> आणि <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>एसएसवाय</a> सह तुलना करण्याचा देखील विचार करा."
+    "title": "The Right Tool for the Right Goal",
+    "body": "Both FD and PPF are excellent tools in their own right. The choice isn't about which is universally 'better,' but which is better for *your* specific financial goal and timeline. Use this calculator to see the numbers for yourself and make an informed decision that aligns with your financial plan. For a complete portfolio view, also consider comparing with our <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS Calculator</a>, <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>SSY Calculator</a>, and <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a>. Explore <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> for market-linked investments and <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for debt management."
   }
 }

@@ -1,40 +1,40 @@
-{
-  "meta_title": "एलआयसी मॅच्युरिटी कॅल्क्युलेटर — तुमची एलआयसी पॉलिसी मॅच्युरिटी ऑनलाइन गणना करा (विनामूल्य)",
-  "meta_description": "एलआयसी योजनांसाठी मॅच्युरिटी, सरेंडर आणि पेड-अप मूल्यांचा अंदाज घेण्यासाठी आमचे विनामूल्य एलआयसी मॅच्युरिटी कॅल्क्युलेटर वापरा. विमा रक्कम, मुदत, बोनस दर प्रविष्ट करा आणि त्वरित डाउनलोड करण्यायोग्य परिणाम मिळवा.",
-  "h1": "एलआयसी मॅच्युरिटी कॅल्क्युलेटर — तुमच्या एलआयसी पॉलिसी मॅच्युरिटीचा त्वरित अंदाज लावा (साधन + मार्गदर्शक)",
-  "top_cta": "<strong>त्वरित अंदाज मिळवा:</strong> तुमची योजना, विमा रक्कम आणि मुदत प्रविष्ट करा — मॅच्युरिटी, सरेंडर आणि पेड-अप मूल्ये पाहण्यासाठी गणना करा वर क्लिक करा. <a href=\"#calculator-widget\">आता सुरू करा</a>",
+﻿{
+  "meta_title": "LIC Maturity Calculator â€” Calculate Your LIC Policy Maturity Online (Free)",
+  "meta_description": "Use our free LIC maturity calculator to estimate maturity, surrender and paid-up values for LIC plans. Enter sum assured, term, bonus rate & get instant downloadable results.",
+  "h1": "LIC Maturity Calculator â€” Estimate Your LIC Policy Maturity Instantly (Tool + Guide)",
+  "top_cta": "<strong>Get an instant estimate:</strong> Enter your plan, sum assured and term â€” click Calculate to view maturity, surrender and paid-up values. <a href=\"#calculator-widget\">Start now</a>",
   "tool": {
-    "title": "जलद एलआयसी मॅच्युरिटी कॅल्क्युलेटर",
-    "description": "तुमच्या मॅच्युरिटी, सरेंडर आणि पेड-अप मूल्यांचा त्वरित अंदाज मिळवण्यासाठी तुमचे पॉलिसी तपशील प्रविष्ट करा.",
-    "plan_label": "योजना प्रीसेट निवडा",
-    "plan_placeholder": "एक योजना निवडा",
-    "sum_assured_label": "विमा रक्कम (₹)",
-    "policy_term_label": "पॉलिसी मुदत (वर्षे)",
-    "premium_label": "वार्षिक प्रीमियम (₹)",
-    "bonus_rate_label": "उदाहरणात्मक बोनस दर (प्रति ₹1000 विमा रक्कम)",
-    "fab_rate_label": "अंतिम अतिरिक्त बोनस (FAB) (प्रति ₹1000 विमा रक्कम, पर्यायी)",
-    "dob_label": "जन्म तारीख",
-    "last_premium_date_label": "शेवटची प्रीमियम भरलेली तारीख",
-    "calculate_button": "मॅच्युरिटी आणि सरेंडर मूल्य गणना करा",
-    "calculating": "गणना होत आहे...",
-    "download_pdf": "पीडीएफ म्हणून डाउनलोड करा",
-    "share_results": "निकाल शेअर करा",
-    "contact_cfp": "एका सीएफपीशी संपर्क साधा"
+    "title": "Quick LIC Maturity Calculator",
+    "description": "Enter your policy details to get an instant estimate of your maturity, surrender, and paid-up values.",
+    "plan_label": "Select Plan Preset",
+    "plan_placeholder": "Choose a plan",
+    "sum_assured_label": "Sum Assured (â‚¹)",
+    "policy_term_label": "Policy Term (Years)",
+    "premium_label": "Annual Premium (â‚¹)",
+    "bonus_rate_label": "Illustrative Bonus Rate (per â‚¹1000 SA)",
+    "fab_rate_label": "Final Additional Bonus (FAB) (per â‚¹1000 SA, optional)",
+    "dob_label": "Date of Birth",
+    "last_premium_date_label": "Last Premium Paid Date",
+    "calculate_button": "Calculate Maturity & Surrender Value",
+    "calculating": "Calculating...",
+    "download_pdf": "Download as PDF",
+    "share_results": "Share Results",
+    "contact_cfp": "Contact a CFP"
   },
   "sections": [
     {
       "id": "quick-answer",
       "icon": "TableIcon",
-      "title": "त्वरित उत्तर: नमुना एलआयसी मॅच्युरिटी अंदाज",
-      "description": "एक सामान्य एलआयसी पॉलिसी काय उत्पन्न देते, हे जाणून घेण्यासाठी उत्सुक आहात? येथे ₹45 प्रति ₹1,000 विमा रकमेच्या अंदाजित बोनस दरासह एका मानक एंडोमेंट योजनेसाठी काही उदाहरणात्मक मॅच्युरिटी रक्कम आहेत.",
+      "title": "Quick Answer: Sample LIC Maturity Estimates",
+      "description": "Curious what a typical LIC policy yields? Here are some illustrative maturity amounts for a standard endowment plan with an assumed bonus rate of â‚¹45 per â‚¹1,000 Sum Assured. Use our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> to get plan-specific estimates.",
       "content": [
         {
           "type": "table",
-          "headers": ["विमा रक्कम", "मुदत", "एकूण प्रीमियम भरलेले (अंदाजे)", "अंदाजित मॅच्युरिटी (अंदाजे)"],
+          "headers": ["Sum Assured", "Term", "Total Premiums Paid (approx)", "Estimated Maturity (approx)"],
           "rows": [
-            ["₹5,00,000", "20 वर्षे", "₹4,50,000", "₹9,50,000"],
-            ["₹10,00,000", "25 वर्षे", "₹8,40,000", "₹22,00,000"],
-            ["₹1,00,00,000", "20 वर्षे", "₹90,00,000", "₹2,10,00,000"]
+            ["â‚¹5,00,000", "20 yrs", "â‚¹4,50,000", "â‚¹9,50,000"],
+            ["â‚¹10,00,000", "25 yrs", "â‚¹8,40,000", "â‚¹22,00,000"],
+            ["â‚¹1,00,00,000", "20 yrs", "â‚¹90,00,000", "â‚¹2,10,00,000"]
           ]
         }
       ]
@@ -42,90 +42,90 @@
     {
       "id": "how-it-works",
       "icon": "Calculator",
-      "title": "एलआयसी पॉलिसी मॅच्युरिटी मूल्य ऑनलाइन कसे गणना करावे",
-      "description": "हे कॅल्क्युलेटर पारंपरिक एंडोमेंट योजनांसाठी वापरल्या जाणाऱ्या मानक सूत्राचा वापर करून तुमच्या एलआयसी पॉलिसीच्या परताव्याचे रहस्य उलगडते. येथे मुख्य तर्क आहे:",
+      "title": "How to Calculate LIC Policy Maturity Value Online",
+      "description": "This calculator demystifies your LIC policy returns by applying the standard formula used for traditional endowment plans. Understand how LIC compares to other investment options with our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF comparison</a> and <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax optimization guide</a>. Here's the core logic:",
       "content": [
         {
           "type": "formula",
-          "text": "<strong>मॅच्युरिटी मूल्य = मूळ विमा रक्कम + (जमा झालेला बोनस × पॉलिसी मुदत) + अंतिम अतिरिक्त बोनस (FAB)</strong>"
+          "text": "<strong>Maturity Value = Basic Sum Assured + (Vested Bonus Ã— Policy Term) + Final Additional Bonus (FAB)</strong>"
         },
         {
           "type": "paragraph",
-          "text": "<h4>सूत्राचे विश्लेषण:</h4>"
+          "text": "<h4>Formula Breakdown:</h4>"
         },
         {
           "type": "list",
           "items": [
-            "<strong>मूळ विमा रक्कम (SA):</strong> मॅच्युरिटीवर तुम्हाला मिळणारी हमी रक्कम.",
-            "<strong>जमा झालेला साधा रिव्हर्शनरी बोनस:</strong> हा दरवर्षी एलआयसीद्वारे घोषित केलेला बोनस आहे. याची गणना तुमच्या विमा रकमेच्या प्रति ₹1,000 वर केली जाते. उदाहरणार्थ, जर बोनस दर ₹42 असेल आणि तुमची विमा रक्कम ₹10 लाख असेल, तर त्या वर्षाचा बोनस (10,00,000 / 1000) * 42 = ₹42,000 आहे. आमचा कॅल्क्युलेटर एकूण शोधण्यासाठी या वार्षिक बोनसला पॉलिसी मुदतीने गुणतो.",
-            "<strong>अंतिम अतिरिक्त बोनस (FAB):</strong> हा एकरकमी लॉयल्टी बोनस आहे जो दीर्घ मुदतीसाठी (सामान्यतः 15+ वर्षे) चाललेल्या पॉलिसींवर मॅच्युरिटीवर दिला जातो. याची गणना देखील प्रति ₹1,000 विमा रकमेवर केली जाते आणि ती खूप बदलते. तुम्ही एक उदाहरणात्मक दर प्रविष्ट करू शकता, किंवा ते रिकामे सोडू शकता."
+            "<strong>Basic Sum Assured (SA):</strong> The guaranteed amount you receive at maturity.",
+            "<strong>Vested Simple Reversionary Bonus:</strong> This is the bonus declared by LIC each year. It's calculated per â‚¹1,000 of your Sum Assured. For example, if the bonus rate is â‚¹42 and your SA is â‚¹10 Lakh, the bonus for that year is (10,00,000 / 1000) * 42 = â‚¹42,000. Our calculator multiplies this annual bonus by the policy term to find the total.",
+            "<strong>Final Additional Bonus (FAB):</strong> This is a one-time loyalty bonus paid at maturity for policies that have run for a long duration (typically 15+ years). It is also calculated per â‚¹1,000 SA and varies widely. You can input an illustrative rate, or leave it blank."
           ]
         },
         {
           "type": "alert",
           "variant": "default",
-          "title": "मुख्य गृहितके",
-          "text": "<ul><li>तुम्ही प्रविष्ट केलेले बोनस दर उदाहरणात्मक आहेत आणि संपूर्ण पॉलिसी मुदतीसाठी स्थिर राहतील असे गृहीत धरले आहे. वास्तविक बोनस एलआयसीच्या कामगिरीवर अवलंबून असतात आणि त्यांची हमी नाही.</li><li>प्रीमियमवर भरलेला जीएसटी 'एकूण प्रीमियम भरलेले' गणनेत समाविष्ट नाही, कारण ते मॅच्युरिटी मूल्यात योगदान देत नाही.</li></ul>"
+          "title": "Key Assumptions",
+          "text": "<ul><li>The bonus rates you enter are illustrative and assumed to remain constant for the entire policy term. Actual bonuses depend on LIC's performance and are not guaranteed.</li><li>GST paid on premiums is not included in the 'Total Premiums Paid' calculation, as it does not contribute to the maturity value.</li></ul>"
         }
       ]
     },
     {
       "id": "death-benefit",
       "icon": "ShieldCheck",
-      "title": "मृत्यू लाभ स्पष्ट केले",
+      "title": "Death Benefit Explained",
       "content": [
         {
           "type": "paragraph",
-          "text": "पॉलिसी मुदतीत पॉलिसीधारकाच्या दुर्दैवी मृत्यू झाल्यास, नामनिर्देशित व्यक्तीला 'मृत्यूवरील विमा रक्कम' आणि जमा झालेले कोणतेही बोनस मिळतात. ही 'मृत्यूवरील विमा रक्कम' खालीलपैकी जे जास्त असेल ते म्हणून परिभाषित केली आहे:"
+          "text": "In the unfortunate event of the policyholder's death during the policy term, the nominee receives the 'Sum Assured on Death' plus any vested bonuses. This 'Sum Assured on Death' is defined as the higher of:"
         },
         {
           "type": "list",
           "items": [
-            "<strong>मूळ विमा रकमेच्या 125%</strong>",
-            "<strong>वार्षिक प्रीमियमच्या 7 पट</strong>"
+            "<strong>125% of the Basic Sum Assured</strong>",
+            "<strong>7 times the annualized premium</strong>"
           ]
         },
         {
           "type": "alert",
           "variant": "default",
-          "title": "उदाहरण",
-          "text": "₹50,000 वार्षिक प्रीमियमसह ₹10 लाखांच्या पॉलिसीसाठी, मृत्यूवरील विमा रक्कम ₹12.5 लाख (10L च्या 125%) किंवा ₹3.5 लाख (7 x 50k) यापैकी जी जास्त असेल ती असेल, जी <strong>₹12.5 लाख</strong> आहे, तसेच जमा झालेले कोणतेही बोनस."
+          "title": "Example",
+          "text": "For a â‚¹10 Lakh policy with an annual premium of â‚¹50,000, the Sum Assured on Death would be the higher of â‚¹12.5 Lakh (125% of 10L) or â‚¹3.5 Lakh (7 x 50k), which is <strong>â‚¹12.5 Lakh</strong>, plus any accumulated bonuses."
         }
       ]
     },
     {
       "id": "paid-up-value",
       "icon": "FileText",
-      "title": "पेड-अप मूल्य स्पष्ट केले",
+      "title": "Paid-Up Value Explained",
       "content": [
         {
           "type": "paragraph",
-          "text": "तुम्ही किमान दोन पूर्ण वर्षे प्रीमियम भरणे थांबवल्यास, तुमची पॉलिसी पूर्णपणे रद्द होत नाही. ती कमी झालेल्या लाभांसह 'पेड-अप' पॉलिसी बनते. तुम्हाला आणखी प्रीमियम भरण्याची गरज नाही, आणि तुम्हाला मॅच्युरिटीवर 'पेड-अप विमा रक्कम' आणि जमा झालेले बोनस मिळतील."
+          "text": "If you stop paying premiums after at least two full years, your policy doesn't lapse completely. It becomes a 'paid-up' policy with reduced benefits. You don't have to pay any more premiums, and you will receive the 'Paid-up Sum Assured' plus vested bonuses at maturity."
         },
         {
-          "type": "formula",
-          "text": "<strong>पेड-अप मूल्य = विमा रक्कम × (भरलेल्या प्रीमियमची संख्या / एकूण देय प्रीमियम)</strong>"
+            "type": "formula",
+            "text": "<strong>Paid-up Value = Sum Assured Ã— (No. of Premiums Paid / Total Premiums Payable)</strong>"
         },
         {
           "type": "alert",
           "variant": "default",
-          "title": "उदाहरण",
-          "text": "तुमच्याकडे ₹10 लाख विमा रक्कम आणि 16 वर्षांच्या पीपीटीसह 25 वर्षांची पॉलिसी असेल आणि तुम्ही 8 वर्षांनंतर भरणे थांबवल्यास, तुमची पेड-अप विमा रक्कम बनते: ₹10,00,000 * (8 / 16) = <strong>₹5,00,000</strong>। ही रक्कम, 8 वर्षांसाठी जमा झालेल्या बोनससह, मॅच्युरिटीवर दिली जाईल."
+          "title": "Example",
+          "text": "If you have a 25-year policy with a â‚¹10 Lakh Sum Assured and a 16-year PPT, and you stop paying after 8 years, your Paid-up Sum Assured becomes: â‚¹10,00,000 * (8 / 16) = <strong>â‚¹5,00,000</strong>. This amount, plus bonuses accrued for 8 years, will be paid at maturity."
         }
       ]
     },
     {
       "id": "inputs-explained",
       "icon": "HelpCircle",
-      "title": "इनपुट स्पष्ट केले: तुम्ही काय प्रविष्ट करणे आवश्यक आहे",
+      "title": "Inputs Explained: What You Must Enter",
       "content": [
         {
           "type": "list",
           "items": [
-            "<strong>योजना प्रीसेट:</strong> 'जीवन लाभ' सारखी एक विशिष्ट योजना निवडल्याने साधनाला योग्य प्रीमियम पेमेंट टर्म (PPT) आणि सामान्य बोनस श्रेणी लागू करण्यास मदत होते.",
-            "<strong>प्रीमियम आणि मुदत:</strong> एकूण गुंतवणुकीची गणना करण्यासाठी वार्षिक प्रीमियम आणि पूर्ण पॉलिसी मुदत आवश्यक आहे. पॉलिसी मुदत (उदा. 25 वर्षे) आणि प्रीमियम पेमेंट टर्म (उदा. जीवन लाभसाठी 16 वर्षे) मधील फरक लक्षात घ्या.",
-            "<strong>बोनस आणि FAB दर:</strong> अचूक अंदाजासाठी सर्वात महत्त्वाचे इनपुट. तुम्ही हे तुमच्या वार्षिक पॉलिसी स्टेटमेंटमध्ये शोधू शकता किंवा ₹40-₹48 च्या ऐतिहासिक सरासरीचा मार्गदर्शक म्हणून वापर करू शकता.",
-            "<strong>सरेंडर/कर्ज तारखा:</strong> तुमची जन्मतारीख आणि शेवटच्या प्रीमियम भरल्याची तारीख अचूक सरेंडर मूल्य आणि कर्ज पात्रतेची गणना करण्यासाठी आवश्यक आहे, कारण हे वय- आणि मुदत-अवलंबित आहेत."
+            "<strong>Plan Preset:</strong> Selecting a specific plan like 'Jeevan Labh' helps the tool apply correct Premium Paying Terms (PPT) and typical bonus ranges. Explore our <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh calculator</a>, <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>Jeevan Anand calculator</a>, or other <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC plans</a> for specific comparisons.",
+            "<strong>Premium & Term:</strong> The annual premium and the full policy term are needed to calculate total investment. Note the difference between Policy Term (e.g., 25 years) and Premium Paying Term (e.g., 16 years for Jeevan Labh).",
+            "<strong>Bonus & FAB Rates:</strong> The most critical inputs for an accurate estimate. You can find these in your annual policy statement or use the historical average of â‚¹40-â‚¹48 as a guideline.",
+            "<strong>Surrender/Loan Dates:</strong> Your Date of Birth and the date of the last premium paid are required to calculate the precise Surrender Value and loan eligibility. Use our <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC surrender value calculator</a> for detailed analysis."
           ]
         }
       ]
@@ -133,46 +133,46 @@
     {
       "id": "worked-examples",
       "icon": "FileText",
-      "title": "काम केलेले उदाहरणे आणि IRR गणना",
+      "title": "Worked Examples & IRR Calculation",
       "content": [
         {
-          "type": "paragraph",
-          "text": "<h4>उदाहरण 1: 30-वर्षीय, ₹10 लाख कव्हर, 25-वर्षीय मुदत</h4><p><strong>इनपुट:</strong> विमा रक्कम = ₹10L, मुदत = 25 वर्षे, वार्षिक प्रीमियम ≈ ₹42,000, बोनस दर = ₹45/1000, FAB दर = ₹100/1000.</p><p><strong>गणना:</strong><br/>मॅच्युरिटी = 10,00,000 + ( (10,00,000/1000)*45*25 ) + ( (10,00,000/1000)*100 )<br/>= 10,00,000 + 11,25,000 + 1,00,000 = <strong>₹22,25,000</strong><br/><strong>अंदाजे IRR:</strong> ~6.1% (कर-मुक्त)</p>"
+            "type": "paragraph",
+            "text": "<h4>Example 1: 30-Year-Old, â‚¹10 Lakh Cover, 25-Year Term</h4><p><strong>Inputs:</strong> SA = â‚¹10L, Term = 25 yrs, Annual Premium â‰ˆ â‚¹42,000, Bonus Rate = â‚¹45/1000, FAB Rate = â‚¹100/1000.</p><p><strong>Calculation:</strong><br/>Maturity = 10,00,000 + ( (10,00,000/1000)*45*25 ) + ( (10,00,000/1000)*100 )<br/>= 10,00,000 + 11,25,000 + 1,00,000 = <strong>â‚¹22,25,000</strong><br/><strong>Approx. IRR:</strong> ~6.1% (tax-free)</p>"
         },
         {
-          "type": "paragraph",
-          "text": "<h4>उदाहरण 2: 35-वर्षीय, ₹5 लाख कव्हर, 15-वर्षीय मुदत</h4><p><strong>इनपुट:</strong> विमा रक्कम = ₹5L, मुदत = 15 वर्षे, वार्षिक प्रीमियम ≈ ₹34,000, बोनस दर = ₹40/1000.</p><p><strong>गणना:</strong><br/>मॅच्युरिटी = 5,00,000 + ( (5,00,000/1000)*40*15 )<br/>= 5,00,000 + 3,00,000 = <strong>₹8,00,000</strong><br/><strong>अंदाजे IRR:</strong> ~5.8% (कर-मुक्त)</p>"
+            "type": "paragraph",
+            "text": "<h4>Example 2: 35-Year-Old, â‚¹5 Lakh Cover, 15-Year Term</h4><p><strong>Inputs:</strong> SA = â‚¹5L, Term = 15 yrs, Annual Premium â‰ˆ â‚¹34,000, Bonus Rate = â‚¹40/1000.</p><p><strong>Calculation:</strong><br/>Maturity = 5,00,000 + ( (5,00,000/1000)*40*15 )<br/>= 5,00,000 + 3,00,000 = <strong>â‚¹8,00,000</strong><br/><strong>Approx. IRR:</strong> ~5.8% (tax-free)</p>"
         }
       ]
     },
     {
       "id": "surrender-loan",
       "icon": "TrendingUp",
-      "title": "सरेंडर, पेड-अप आणि कर्ज गणना",
+      "title": "Surrender, Paid-up and Loan Calculations",
       "content": [
         {
           "type": "paragraph",
-          "text": "<p>किमान 2 पूर्ण वर्षे प्रीमियम भरल्यानंतर, तुमच्या पॉलिसीला 'सरेंडर मूल्य' प्राप्त होते. तुम्ही पॉलिसी लवकर बंद केल्यास तुम्हाला किती मिळेल, किंवा तुम्ही त्यावर किती कर्ज घेऊ शकता, हे ठरवण्यासाठी या मूल्याचा वापर केला जातो.</p>"
+          "text": "<p>After paying premiums for at least 2 full years, your policy gains a 'Surrender Value'. This value is used to determine how much you get if you close the policy early, or how much you can borrow against it.</p>"
         },
         {
           "type": "list",
           "items": [
-            "<strong>हमी सरेंडर मूल्य (GSV):</strong> भरलेल्या एकूण प्रीमियमची टक्केवारी (उदा. 3 वर्षांनंतर 30%) आणि जमा झालेल्या बोनसची टक्केवारी. ही तुम्हाला मिळणारी किमान रक्कम आहे.",
-            "<strong>विशेष समर्पण मूल्य (SSV):</strong> एक उच्च, गैर-हमी मूल्य जे एलआयसीद्वारे मोजले जाते, अनेकदा वास्तविक रोख मूल्याच्या जवळ असते. आमचा कॅल्क्युलेटर याचा अंदाज लावतो.",
-            "<strong>कर्ज:</strong> तुम्ही साधारणपणे विशेष समर्पण मूल्याच्या 90% पर्यंत कर्ज घेऊ शकता."
+            "<strong>Guaranteed Surrender Value (GSV):</strong> A percentage of total premiums paid (e.g., 30% after 3 years) plus a percentage of vested bonuses. This is the minimum you'll receive.",
+            "<strong>Special Surrender Value (SSV):</strong> A higher, non-guaranteed value calculated by LIC, often closer to the real cash value. Our calculator estimates this.",
+            "<strong>Loan:</strong> You can typically borrow up to 90% of the Special Surrender Value."
           ]
         },
         {
           "type": "paragraph",
-          "text": "<p><strong>कर्ज गणना उदाहरण:</strong> तुम्ही 5 वर्षांत प्रीमियममध्ये ₹2 लाख भरले असल्यास, तुमचे SSV सुमारे ₹1.5 लाख असू शकते. त्यानंतर तुम्ही त्यापैकी 90% पर्यंत कर्ज घेऊ शकता, जे <strong>₹1.35 लाख</strong> आहे.</p>"
+          "text": "<p><strong>Loan Calculation Example:</strong> If you've paid â‚¹2 Lakh in premiums over 5 years, your SSV might be around â‚¹1.5 Lakh. You could then take a loan of up to 90% of that, which is <strong>â‚¹1.35 Lakh</strong>.</p>"
         }
       ]
     },
     {
       "id": "bonus-rates",
       "icon": "BarChart2",
-      "title": "एलआयसी बोनस दर (ऐतिहासिक ट्रेंड)",
-      "description": "'बोनस दर' तुमच्या मॅच्युरिटी गणनेत सर्वात महत्त्वाचा चल आहे. एलआयसी दरवर्षी हा दर घोषित करते. हमी नसली तरी, भूतकाळातील दर पाहिल्यास एक वास्तववादी अपेक्षा मिळते.",
+      "title": "LIC Bonus Rates (Historical Trends)",
+      "description": "The 'bonus rate' is the most important variable in your maturity calculation. LIC declares this rate each year. While not guaranteed, looking at past rates gives a realistic expectation.",
       "content": [
         {
           "type": "bar_chart",
@@ -193,33 +193,33 @@
     {
       "id": "alternatives",
       "icon": "GitCompareArrows",
-      "title": "तुलना करा: एलआयसी मॅच्युरिटी वि इतर गुंतवणूक",
+      "title": "Compare: LIC Maturity vs. Other Investments",
       "content": [
         {
           "type": "paragraph",
-          "text": "एक एलआयसी मॅच्युरिटी पेमेंट इतर लोकप्रिय गुंतवणूक पर्यायांच्या तुलनेत कसे आहे?"
+          "text": "How does an LIC maturity payout stack up against other popular investment options? Compare LIC with <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF</a>, <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF returns</a>, and explore our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> for comprehensive planning."
         },
         {
           "type": "table",
-          "headers": ["साधन", "विशिष्ट परतावा (प्रति वर्ष)", "जोखीम पातळी", "मॅच्युरिटीवर कर"],
+          "headers": ["Instrument", "Typical Return (p.a.)", "Risk Level", "Tax on Maturity"],
           "rows": [
-            ["एलआयसी एंडोमेंट", "~5-6%", "खूप कमी (सार्वभौम-समर्थित)", "कर-मुक्त (कलम 10(10D) अंतर्गत)"],
-            ["बँक एफडी", "~7%", "कमी", "स्लॅबनुसार करपात्र"],
-            ["पीपीएफ", "~7.1%", "खूप कमी (सार्वभौम)", "कर-मुक्त"],
-            ["इक्विटी म्युच्युअल फंड", "~12-15%", "उच्च (बाजार जोखीम)", "करपात्र (LTCG > ₹1L)"]
+            ["LIC Endowment", "~5-6%", "Very Low (Sovereign-backed)", "Tax-Free (u/s 10(10D))"],
+            ["Bank FD", "~7%", "Low", "Taxable as per slab"],
+            ["PPF", "~7.1%", "Very Low (Sovereign)", "Tax-Free"],
+            ["Equity Mutual Funds", "~12-15%", "High (Market Risk)", "Taxable (LTCG > â‚¹1L)"]
           ]
         },
         {
           "type": "paragraph",
-          "text": "<br>एलआयसीमध्ये सुद्धा, विविध योजना विविध उद्देशांसाठी आहेत."
+          "text": "<br>Even within LIC, different plans serve different purposes. Use our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> to compare premiums across all major plans."
         },
         {
           "type": "table",
-          "headers": ["वैशिष्ट्य", "जीवन लाभ", "जीवन आनंद", "सिंगल प्रीमियम"],
+          "headers": ["Feature", "Jeevan Labh", "Jeevan Anand", "Single Premium"],
           "rows": [
-            ["पेमेंट", "मर्यादित (उदा. 16/25)", "नियमित (पूर्ण मुदत)", "एक-वेळ"],
-            ["यासाठी सर्वोत्तम", "ध्येय-आधारित बचत", "वारसा + बचत", "एकरकमी गुंतवणूकदार"],
-            ["मॅच्युरिटी", "विमा रक्कम + बोनस + FAB", "विमा रक्कम + बोनस + FAB", "विमा रक्कम + बोनस + FAB"]
+            ["Payment", "Limited (e.g. 16/25)", "Regular (Full Term)", "One-Time"],
+            ["Best For", "Goal-based savings", "Legacy + Savings", "Lump-sum investors"],
+            ["Maturity", "SA + Bonus + FAB", "SA + Bonus + FAB", "SA + Bonus + FAB"]
           ]
         }
       ]
@@ -227,35 +227,35 @@
     {
       "id": "plan-specifics",
       "icon": "LinkIcon",
-      "title": "हे देखील वाचा: संबंधित कॅल्क्युलेटर",
-      "description": "एक पूर्ण आर्थिक चित्र मिळवण्यासाठी आमचे इतर साधने एक्सप्लोर करा.",
+      "title": "Also Read: Related Calculators",
+      "description": "Explore our other tools to get a complete financial picture.",
       "content": [
         {
           "type": "card_link",
           "icon": "Calculator",
-          "title": "एलआयसी जीवन लाभ कॅल्क्युलेटर",
-          "description": "ध्येय-आधारित बचतीसाठी मर्यादित प्रीमियम योजना.",
+          "title": "LIC Jeevan Labh Calculator",
+          "description": "Limited premium plan for goal-based savings.",
           "href": "/lic-jeevan-labh-calculator"
         },
         {
           "type": "card_link",
           "icon": "Calculator",
-          "title": "एलआयसी सिंगल प्रीमियम कॅल्क्युलेटर",
-          "description": "एकरकमी गुंतवणुकीसाठी.",
+          "title": "LIC Single Premium Calculator",
+          "description": "For one-time lump sum investments.",
           "href": "/lic-single-premium-endowment-calculator"
         },
         {
            "type": "card_link",
            "icon": "FileText",
-           "title": "एलआयसी सरेंडर व्हॅल्यू कॅल्क्युलेटर",
-           "description": "एक पॉलिसी सरेंडर करण्यापूर्वी आर्थिक परिणाम समजून घ्या.",
+           "title": "LIC Surrender Value Calculator",
+           "description": "Understand the financial implications before you surrender a policy.",
            "href": "/lic-surrender-value-calculator"
         },
         {
           "type": "card_link",
           "icon": "LinkIcon",
-          "title": "सर्व एलआयसी प्रीमियम कॅल्क्युलेटर",
-          "description": "सर्व लोकप्रिय योजनांसाठी प्रीमियम एक्सप्लोर करा.",
+          "title": "All LIC Premium Calculators",
+          "description": "Explore premiums for all popular plans.",
           "href": "/lic-premium-calculator"
         }
       ]
@@ -263,31 +263,31 @@
     {
       "id": "faq",
       "icon": "HelpCircle",
-      "title": "सतत विचारले जाणारे प्रश्न (FAQs)",
+      "title": "Frequently Asked Questions (FAQs)",
       "content": [
         {
           "type": "faq",
           "items": [
-            {"q": "मी माझी एलआयसी पॉलिसी मॅच्युरिटी रक्कम कशी गणना करू?","a": "विमा रक्कम, पॉलिसी मुदत, आणि प्रति ₹1,000 विमा रकमेवर एक उदाहरणात्मक बोनस दर कॅल्क्युलेटरमध्ये प्रविष्ट करा. मॅच्युरिटी = विमा रक्कम + (जमा झालेला बोनस × पॉलिसी मुदत) + अंतिम अतिरिक्त बोनस (असल्यास)."},
-            {"q": "एलआयसी मॅच्युरिटी कॅल्क्युलेटरमध्ये बोनस समाविष्ट आहे का?","a": "होय. तुम्ही प्रति ₹1,000 विमा रकमेवर एक उदाहरणात्मक बोनस दर प्रविष्ट करू शकता किंवा ऐतिहासिक सरासरी वापरू शकता. कॅल्क्युलेटर एकूण बोनसचा अंदाज लावण्यासाठी वार्षिक बोनसला पॉलिसी मुदतीने गुणतो."},
-            {"q": "मॅच्युरिटी अंदाज किती अचूक आहे?","a": "अंदाज इनपुट आणि उदाहरणात्मक बोनस/एफएबी दरांचा वापर करतात. वास्तविक मॅच्युरिटी एलआयसीने घोषित केलेल्या बोनस आणि अंतिम अंडररायटिंगवर अवलंबून असते; परिणामांना सूचक माना, बंधनकारक नाही."},
-            {"q": "एलआयसी मॅच्युरिटीसाठी सूत्र काय आहे?","a": "सूत्र आहे: मूळ विमा रक्कम + जमा झालेले साधे रिव्हर्शनरी बोनस + अंतिम अतिरिक्त बोनस (FAB)."},
-            {"q": "अंतिम अतिरिक्त बोनस (FAB) म्हणजे काय?","a": "FAB हा एक लॉयल्टी बोनस आहे जो एलआयसीद्वारे दीर्घकालीन सहभागी पॉलिसींवर मॅच्युरिटीवर दिला जातो. तो परिवर्तनीय आहे आणि एलआयसीद्वारे व्यवसाय कामगिरीनुसार घोषित केला जातो."},
-            {"q": "मी वापरण्यासाठी योग्य बोनस दर कसा शोधू?","a": "तुमच्या पॉलिसी स्टेटमेंटवर दर्शविलेला बोनस दर किंवा प्रकाशित एलआयसी बोनस सूचना वापरा. अनुपलब्ध असल्यास, एक ऐतिहासिक सरासरी (उदा. सामान्य एंडोमेंट योजनांसाठी प्रति ₹1,000 विमा रकमेवर 40–48) वापरा."},
-            {"q": "जीएसटी माझ्या मॅच्युरिटीवर परिणाम करतो का?","a": "नाही, जीएसटी प्रीमियमवर आकारला जातो आणि मॅच्युरिटी गणनेवर परिणाम करत नाही, जी विमा रक्कम आणि बोनसवर आधारित आहे."},
-            {"q": "एलआयसी पॉलिसींसाठी सरेंडर मूल्य कसे मोजले जाते?","a": "सरेंडर मूल्य हमी सरेंडर मूल्य (भरलेल्या प्रीमियमची %) किंवा विशेष सरेंडर मूल्य (जमा झालेल्या बोनसवर आधारित) असू शकते. एक अचूक अंदाजासाठी कॅल्क्युलेटरचा सरेंडर टॅब वापरा आणि शेवटची प्रीमियम तारीख प्रविष्ट करा."},
-            {"q": "पेड-अप मूल्य म्हणजे काय?","a": "तुम्ही दोन पूर्ण वर्षे प्रीमियम भरणे थांबवल्यास पेड-अप मूल्य लागू होते; भरलेल्या प्रीमियम आणि जमा झालेल्या बोनसच्या आधारावर लाभ आनुपातिकरित्या कमी होतात. कॅल्क्युलेटर पेड-अप अंदाज दर्शवू शकतो."},
-            {"q": "मी माझ्या एलआयसी पॉलिसीवर कर्ज केव्हा घेऊ शकेन?","a": "तुम्ही साधारणपणे पॉलिसीला सरेंडर मूल्य प्राप्त झाल्यावर कर्ज घेऊ शकता, जे साधारणपणे 2-3 पूर्ण वर्षे प्रीमियम भरल्यानंतर होते."},
-            {"q": "एलआयसी मॅच्युरिटी कलम 10(10D) अंतर्गत कर-मुक्त आहे का?","a": "साधारणपणे होय, पण सूट नियमांवर अवलंबून असते (विशेषतः जर वार्षिक प्रीमियम बहुतेक पॉलिसींसाठी विमा रकमेच्या 10% पेक्षा जास्त नसेल तर). तुमच्या पॉलिसीची वैशिष्ट्ये तपासा."},
-            {"q": "मोडल लोडिंग म्हणजे काय?","a": "मोडल लोडिंग म्हणजे मासिक/त्रैमासिक/अर्ध-वार्षिक विरुद्ध वार्षिक प्रीमियम भरताना अतिरिक्त खर्च. कॅल्क्युलेटर अचूक मोड-वार प्रीमियम दर्शविण्यासाठी मोडल घटकांचा वापर करून वार्षिक प्रीमियम रूपांतरित करतो."},
-            {"q": "एनआरआय हे एलआयसी मॅच्युरिटी कॅल्क्युलेटर वापरू शकतात का?","a": "होय, एनआरआय अंदाजासाठी कॅल्क्युलेटर वापरू शकतात. वास्तविक खरेदी फेमा आणि एनआरआयसाठी एलआयसी नियमांच्या अधीन असू शकते; पात्रतेसाठी एलआयसी/एजंटशी तपासा."},
-            {"q": "रायडर्स माझ्या प्रीमियम आणि मॅच्युरिटीवर कसा परिणाम करतात?","a": "रायडर्स प्रीमियम वाढवतात पण मॅच्युरिटी विमा-रक्कम वाढवत नाहीत. आमचा कॅल्क्युलेटर रायडर प्रीमियम आणि वेगळे रायडर लाभ (असल्यास) दाखवतो पण मॅच्युरिटी सूत्र विमा रक्कम + बोनस + एफएबी राहते."},
-            {"q": "एलआयसी पॉलिसीवर IRR कसे गणना करावे?","a": "IRR ही सवलत दर आहे जी भरलेल्या एकूण प्रीमियमला मिळालेल्या मॅच्युरिटीच्या बरोबरीने करते. आमचा कॅल्क्युलेटर मॅच्युरिटी आणि भरलेल्या एकूण प्रीमियमची गणना केल्यानंतर अंदाजे IRR प्रदान करतो."},
-            {"q": "कोणत्या एलआयसी योजना जास्त मॅच्युरिटी देतात?","a": "दीर्घ मुदत आणि उच्च बोनस दर असलेल्या योजना (जसे की जीवन लाभची 25-वर्षांची मुदत) दीर्घ चक्रवाढीमुळे जास्त मॅच्युरिटी रक्कम देतात."},
-            {"q": "एलआयसी मॅच्युरिटीची तुलना एफडी/पीपीएफशी कशी करावी?","a": "कर-पश्चात IRR ची तुलना करा. एलआयसी मॅच्युरिटी अनेकदा कर-मुक्त असते, ज्यामुळे तिचा ~6% परतावा 30% कर ब्रॅकेटमधील एखाद्यासाठी एफडीमधून 8-9% करपात्र परताव्याच्या बरोबरीचा होतो."},
-            {"q": "मी पॉलिसी दरम्यान विमा रक्कम बदलू शकेन का?","a": "नाही, मूळ विमा रक्कम पॉलिसी जारी करण्याच्या वेळी निश्चित केली जाते आणि मुदतीत बदलली जाऊ शकत नाही."},
-            {"q": "मी प्रीमियम भरणे थांबवल्यास काय होते (पेड-अप)?","a": "2 वर्षांनंतर, पॉलिसी कमी झालेल्या विमा रकमेसह 'पेड-अप' होऊ शकते. तुम्हाला आणखी प्रीमियम भरण्याची गरज नाही, आणि तुम्हाला मॅच्युरिटीवर कमी झालेली विमा रक्कम आणि जमा झालेले बोनस मिळतील."},
-            {"q": "एलआयसी किती वेळा बोनस दर घोषित करते?","a": "एलआयसी आपले साधे रिव्हर्शनरी बोनस दर वार्षिकरित्या घोषित करते, साधारणपणे प्रत्येक आर्थिक वर्षाच्या (31 मार्च) समाप्तीनंतर."}
+            {"q": "How do I calculate my LIC policy maturity amount?","a": "Enter sum assured, policy term, and an illustrative bonus rate per â‚¹1,000 SA into the calculator. Maturity = Sum Assured + (Vested bonus Ã— policy term) + Final Additional Bonus (if any). For other LIC plans, use our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a>."},
+            {"q": "Does the LIC maturity calculator include bonus?","a": "Yes. You can input an illustrative bonus rate per â‚¹1,000 SA or use historical averages. The calculator multiplies the annual bonus by the policy term to estimate total bonus."},
+            {"q": "How accurate is the maturity estimate?","a": "Estimates use the inputs and illustrative bonus/FAB rates. Actual maturity depends on LIC's declared bonuses and final underwriting; treat results as indicative, not binding. Use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> for comprehensive retirement planning."},
+            {"q": "What is the formula for LIC maturity?","a": "The formula is: Basic Sum Assured + Vested Simple Reversionary Bonuses + Final Additional Bonus (FAB). For comparisons, check our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a> and <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF calculator</a>."},
+            {"q": "What is Final Additional Bonus (FAB)?","a": "FAB is a loyalty bonus paid by LIC at maturity on long-term participating policies. It is variable and declared by LIC depending on business performance."},
+            {"q": "How do I find the correct bonus rate to use?","a": "Use the bonus rate shown on your policy statement or the published LIC bonus notifications. If unavailable, use a historical average (e.g., 40â€“48 per â‚¹1,000 SA for typical endowment plans)."},
+            {"q": "Does GST affect my maturity?","a": "No, GST is charged on the premium and does not affect the maturity calculation, which is based on Sum Assured and bonuses."},
+            {"q": "How is surrender value calculated for LIC policies?","a": "Surrender value can be Guaranteed Surrender Value (a % of premiums paid) or Special Surrender Value (based on vested bonuses). Use our <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC surrender value calculator</a> for precise estimates."},
+            {"q": "What is paid-up value?","a": "Paid-up value applies if you stop paying premiums after two full years; benefits are reduced proportionately based on premiums paid and vested bonuses. The calculator can show paid-up estimates."},
+            {"q": "When can I take a loan on my LIC policy?","a": "You can typically take a loan after the policy has acquired a surrender value, which is usually after paying premiums for 2-3 full years. Check our <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC surrender value calculator</a> for loan eligibility."},
+            {"q": "Is LIC maturity tax-free under Section 10(10D)?","a": "Generally yes, but the exemption depends on rules (notably if annual premium does not exceed 10% of Sum Assured for most policies). Check your policy specifics and use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> for tax planning."},
+            {"q": "What is modal loading?","a": "Modal loading is the extra cost when paying premium monthly/quarterly/half-yearly versus yearly. The calculator converts yearly premium using modal factors to show accurate mode-wise premiums."},
+            {"q": "Can NRIs use this LIC maturity calculator?","a": "Yes, NRIs can use the calculator for estimates. Actual purchase may be subject to FEMA and LIC rules for NRIs; check with LIC/agent for eligibility."},
+            {"q": "How do riders affect my premium and maturity?","a": "Riders increase premium but do not increase the maturity sum-assured. Our calculator shows rider premium and the separate rider benefits (if any) but the maturity formula remains SA + bonuses + FAB."},
+            {"q": "How to calculate IRR on LIC policy?","a": "IRR is the discount rate that equates total premiums paid with maturity received. Our calculator provides an approximate IRR after computing maturity and total premiums paid. Compare with <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF returns</a> and <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD returns</a>."},
+            {"q": "Which LIC plans pay higher maturity?","a": "Plans with longer terms and higher bonus rates (like Jeevan Labh's 25-year term) tend to yield higher maturity amounts due to longer compounding. Use our <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh calculator</a> to compare."},
+            {"q": "How to compare LIC maturity against FD/PPF?","a": "Compare the post-tax IRR. LIC maturity is often tax-free, making its ~6% return equivalent to an 8-9% taxable return from an FD for someone in the 30% tax bracket. Use our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a> for direct comparison."},
+            {"q": "Can I change Sum Assured during the policy?","a": "No, the Basic Sum Assured is fixed at the time of policy issuance and cannot be changed during the term."},
+            {"q": "What happens if I stop paying premiums (paid-up)?","a": "After 2 years, the policy can become 'paid-up' with a reduced Sum Assured. You won't have to pay more premiums, and you will receive the reduced sum assured plus vested bonuses at maturity."},
+            {"q": "How often does LIC declare bonus rates?","a": "LIC declares its Simple Reversionary Bonus rates annually, typically after the end of each financial year (March 31st)."}
           ]
         }
       ]
@@ -295,11 +295,23 @@
     {
       "id": "conclusion",
       "icon": "Star",
-      "title": "तुमच्या आर्थिक भविष्यावर नियंत्रण ठेवा",
+      "title": "Take Control of Your Financial Future",
       "content": [
         {
           "type": "paragraph",
-          "text": "तुमच्या पॉलिसीचे मॅच्युरिटी मूल्य समजून घेणे हे आर्थिक नियोजनात एक महत्त्वाचे पाऊल आहे. ते तुम्हाला तुम्ही तुमच्या ध्येयांपर्यंत पोहोचण्याच्या मार्गावर आहात की नाही हे पाहण्याची आणि आवश्यक समायोजन करण्याची परवानगी देते. स्पष्टता मिळवण्यासाठी, भविष्यातील संदर्भासाठी तुमचे परिणाम डाउनलोड करण्यासाठी, आणि तुमच्या गुंतवणूक प्रवासात पुढील आत्मविश्वासाचे पाऊल उचलण्यासाठी हे कॅल्क्युलेटर वापरा."
+          "text": "Understanding your policy's maturity value is a crucial step in financial planning. It allows you to see if you're on track to meet your goals and make necessary adjustments. Use this calculator to gain clarity, download your results for future reference, and take the next confident step in your investment journey."
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Build a Complete Financial Plan:</strong> Combine your LIC strategy with other investment tools. Use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to plan your overall retirement, check <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF</a> returns, and explore <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime options</a> to optimize your investments."
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Explore Other LIC Plans:</strong> Compare maturity across different plans using our <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh calculator</a>, <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>Jeevan Anand calculator</a>, <a href='/{lang}/lic-single-premium-endowment-calculator' class='text-primary hover:underline'>single premium calculator</a>, and <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a>. For surrender scenarios, use our <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>surrender value calculator</a>."
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Diversify Your Portfolio:</strong> If you're considering a multi-asset approach, use our <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a>, <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a>, and <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS calculator</a>. For debt management, check our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> and plan for government schemes like <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>Sukanya Samriddhi Yojana (SSY)</a> and <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a>."
         }
       ]
     }

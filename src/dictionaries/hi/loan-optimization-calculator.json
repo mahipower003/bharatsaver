@@ -1,121 +1,121 @@
-
+﻿
 {
-  "h1": "ऋण अनुकूलन कैलकुलेटर भारत 2025 — ईएमआई, पूर्व भुगतान और पुनर्वित्त बचत",
-  "summary": "यह गाइड + इंटरैक्टिव कैलकुलेटर आपको उत्तर देने में मदद करता है: मैं कुल ब्याज को कैसे कम कर सकता हूं, अपनी ईएमआई या अवधि को कैसे कम कर सकता हूं, और पूर्व भुगतान, पुनर्वित्त, या अपने अधिशेष का निवेश करने के बीच सबसे अच्छा विकल्प कैसे चुन सकता हूं?",
-  "title": "ऋण अनुकूलन कैलकुलेटर",
-  "form_description": "अपनी ईएमआई की गणना करने और पूर्व भुगतान आपके ऋण को कैसे प्रभावित कर सकता है, यह देखने के लिए अपने ऋण विवरण दर्ज करें।",
+  "h1": "Loan Optimization Calculator India 2025 â€” EMI, Prepayment & Refinance Savings",
+  "summary": "This guide + interactive calculator helps you answer: How can I minimize total interest, reduce my EMI or tenure, and make the best choice between prepaying, refinancing, or investing my surplus?",
+  "title": "Loan Optimization Calculator",
+  "form_description": "Enter your loan details to calculate your EMI and see how prepayments can impact your loan.",
   "form": {
-    "loan_amount": "ऋण राशि",
-    "interest_rate": "ब्याज दर (% प्रति वर्ष)",
-    "tenure": "ऋण अवधि (वर्ष)",
-    "prepayment_amount": "एकमुश्त पूर्व भुगतान राशि (वैकल्पिक)",
-    "calculate_cta": "मेरे ऋण का अनुकूलन करें",
-    "calculating": "अनुकूलन हो रहा है..."
+    "loan_amount": "Loan Amount",
+    "interest_rate": "Interest Rate (% p.a.)",
+    "tenure": "Loan Tenure (Years)",
+    "prepayment_amount": "One-time Prepayment Amount (Optional)",
+    "calculate_cta": "Optimize My Loan",
+    "calculating": "Optimizing..."
   },
   "results": {
-    "title": "आपका ऋण विश्लेषण",
-    "monthly_emi": "मासिक ईएमआई",
-    "total_interest": "कुल देय ब्याज",
-    "total_payment": "कुल भुगतान (मूलधन + ब्याज)",
+    "title": "Your Loan Analysis",
+    "monthly_emi": "Monthly EMI",
+    "total_interest": "Total Interest Payable",
+    "total_payment": "Total Payment (Principal + Interest)",
     "prepayment_summary": {
-      "title": "पूर्व भुगतान के साथ, आप बचा सकते हैं:",
-      "subtitle": "और अपनी अवधि को {months} महीने कम करें!"
+      "title": "With Prepayment, You Could Save:",
+      "subtitle": "and reduce your tenure by {months} months!"
     },
-    "chart_view": "चार्ट दृश्य",
-    "table_view": "ऋण चुकौती तालिका",
-    "download_csv": "अनुसूची डाउनलोड करें",
-    "principal_paid": "चुकाया गया मूलधन",
-    "interest_paid": "चुकाया गया ब्याज",
-    "outstanding_balance": "बकाया शेष",
+    "chart_view": "Chart View",
+    "table_view": "Amortization Table",
+    "download_csv": "Download Schedule",
+    "principal_paid": "Principal Paid",
+    "interest_paid": "Interest Paid",
+    "outstanding_balance": "Outstanding Balance",
     "table": {
-      "month": "महीना",
-      "principal": "मूलधन",
-      "interest": "ब्याज",
-      "total_payment": "कुल भुगतान",
-      "ending_balance": "अंतिम शेष"
+      "month": "Month",
+      "principal": "Principal",
+      "interest": "Interest",
+      "total_payment": "Total Payment",
+      "ending_balance": "Ending Balance"
     }
   },
   "why": {
-    "h2": "अपने ऋण का अनुकूलन क्यों करें? ब्याज की छिपी लागत",
-    "body": "<p>घर या कार खरीदने जैसे प्रमुख जीवन लक्ष्यों को प्राप्त करने की दिशा में ऋण लेना अक्सर एक आवश्यक कदम होता है। हालांकि, ऋण की अवधि में आप जो कुल ब्याज चुकाते हैं, वह चौंकाने वाला हो सकता है। 20 वर्षों के लिए 8.5% पर ₹50 लाख का गृह ऋण का मतलब है कि आप केवल ब्याज में ₹55 लाख से अधिक का भुगतान करते हैं - ऋण राशि से ही अधिक! ऋण अनुकूलन इस ब्याज लागत को कम करने और तेजी से ऋण-मुक्त होने की रणनीतिक प्रक्रिया है। यह कैलकुलेटर इस प्रक्रिया में आपका प्राथमिक उपकरण बनने के लिए डिज़ाइन किया गया है।</p>"
+    "h2": "Why Optimize Your Loan? The Hidden Cost of Interest",
+    "body": "<p>Taking a loan is often a necessary step towards achieving major life goals, like buying a home or a car. However, the total interest you pay over the loan's lifetime can be staggering. A â‚¹50 lakh home loan at 8.5% for 20 years means you pay over â‚¹55 lakh in interest aloneâ€”more than the loan amount itself! Loan optimization is the strategic process of minimizing this interest cost and becoming debt-free faster. This calculator is designed to be your primary tool in this process.</p>"
   },
   "how_it_works": {
-    "h2": "यह ऋण अनुकूलक कैसे काम करता है",
-    "body": "<p>हमारा कैलकुलेटर पहले मानक सूत्र का उपयोग करके आपकी समान मासिक किस्त (ईएमआई) निर्धारित करता है:</p><p><code>ईएमआई = पी × आर × (1 + आर)^एन / ((1 + आर)^एन - 1)</code></p><p>जहां पी मूल ऋण राशि है, आर मासिक ब्याज दर है, और एन मासिक किस्तों की संख्या है। यह तब एक पूर्ण ऋण चुकौती अनुसूची उत्पन्न करता है, जो दिखाता है कि प्रत्येक ईएमआई मूलधन और ब्याज के बीच कैसे विभाजित है। यदि आप एक पूर्व भुगतान राशि जोड़ते हैं, तो कैलकुलेटर बचाए गए ब्याज और अवधि में कमी पर सीधे प्रभाव को दिखाने के लिए अनुसूची को फिर से गणना करता है।</p>"
+    "h2": "How This Loan Optimizer Works",
+    "body": "<p>Our calculator first determines your Equated Monthly Instalment (EMI) using the standard formula:</p><p><code>EMI = P Ã— r Ã— (1 + r)^n / ((1 + r)^n â€“ 1)</code></p><p>Where P is the principal loan amount, r is the monthly interest rate, and n is the number of monthly instalments. It then generates a full amortization schedule, showing how each EMI is split between principal and interest. If you add a prepayment amount, the calculator re-computes the schedule to show you the direct impact on interest saved and tenure reduction.</p>"
   },
   "worked_examples": {
-    "h2": "काम किए गए उदाहरण: वास्तविक दुनिया के परिदृश्य",
+    "h2": "Worked Examples: Real-World Scenarios",
     "scenario1": {
-      "title": "परिदृश्य 1: मानक गृह ऋण",
-      "body": "<p><strong>इनपुट:</strong> ऋण: ₹40 लाख, दर: 8.75%, अवधि: 20 वर्ष, पूर्व भुगतान: ₹0।</p><p><strong>परिणाम:</strong> ईएमआई ₹35,338 है। 20 वर्षों में चुकाया गया कुल ब्याज ₹44.81 लाख है।</p>"
+      "title": "Scenario 1: Standard Home Loan",
+      "body": "<p><strong>Inputs:</strong> Loan: â‚¹40 Lakh, Rate: 8.75%, Tenure: 20 years, Prepayment: â‚¹0.</p><p><strong>Result:</strong> EMI is â‚¹35,338. Total interest paid over 20 years is â‚¹44.81 Lakh.</p>"
     },
     "scenario2": {
-      "title": "परिदृश्य 2: एक छोटे पूर्व भुगतान की शक्ति",
-      "body": "<p><strong>इनपुट:</strong> उपरोक्त के समान, लेकिन पहले वर्ष के अंत में <strong>₹2 लाख</strong> के एकमुश्त पूर्व भुगतान के साथ।</p><p><strong>परिणाम:</strong> कुल बचाया गया ब्याज <strong>₹4.5 लाख</strong> से अधिक है और ऋण <strong>25 महीने पहले</strong> चुका दिया जाता है!</p>"
+      "title": "Scenario 2: The Power of a Small Prepayment",
+      "body": "<p><strong>Inputs:</strong> Same as above, but with a one-time prepayment of <strong>â‚¹2 Lakh</strong> at the end of the first year.</p><p><strong>Result:</strong> Total interest saved is over <strong>â‚¹4.5 Lakh</strong> and the loan is paid off <strong>25 months earlier!</strong></p>"
     },
     "scenario3": {
-      "title": "परिदृश्य 3: आक्रामक पूर्व भुगतान",
-      "body": "<p><strong>इनपुट:</strong> उपरोक्त के समान, लेकिन पहले वर्ष के अंत में <strong>₹5 लाख</strong> के एकमुश्त पूर्व भुगतान के साथ।</p><p><strong>परिणाम:</strong> कुल बचाया गया ब्याज एक विशाल <strong>₹9.8 लाख</strong> है और ऋण अवधि <strong>56 महीने (4.6 वर्ष)</strong> कम हो जाती है!</p>"
+      "title": "Scenario 3: Aggressive Prepayment",
+      "body": "<p><strong>Inputs:</strong> Same as above, but with a one-time prepayment of <strong>â‚¹5 Lakh</strong> at the end of the first year.</p><p><strong>Result:</strong> Total interest saved is a massive <strong>â‚¹9.8 Lakh</strong> and the loan tenure is reduced by <strong>56 months (4.6 years)!</strong></p>"
     }
   },
   "optimization_masterclass": {
-    "h2": "ऋण अनुकूलन मास्टरक्लास: प्रमुख रणनीतियाँ",
-    "body": "<ul><li><strong>नियमित पूर्व भुगतान:</strong> छोटे, नियमित पूर्व भुगतान भी एक बहुत बड़ा प्रभाव डाल सकते हैं। एक 'स्टेप-अप' रणनीति पर विचार करें जहां आप अपनी वेतन वृद्धि के अनुरूप हर साल अपनी ईएमआई 5-10% बढ़ाते हैं।</li><li><strong>एकमुश्त अप्रत्याशित लाभ:</strong> महत्वपूर्ण पूर्व भुगतान करने के लिए बोनस, विरासत, या अन्य एकमुश्त राशि का उपयोग करें। ऋण अवधि में आप जितनी जल्दी ऐसा करते हैं, प्रभाव उतना ही अधिक होता है।</li><li><strong>पुनर्वित्त (बैलेंस ट्रांसफर):</strong> यदि अन्य ऋणदाता काफी कम ब्याज दर (कम से कम 0.5% से 1% कम) की पेशकश कर रहे हैं, तो अपने ऋण को पुनर्वित्त करने पर विचार करें। एक सूचित निर्णय लेने के लिए लागत (प्रसंस्करण शुल्क, कानूनी शुल्क) बनाम बचाए गए ब्याज की गणना करें।</li></ul>"
+    "h2": "Loan Optimization Masterclass: Key Strategies",
+    "body": "<ul><li><strong>Regular Prepayments:</strong> Even small, regular prepayments can have a huge impact. Consider a 'step-up' strategy where you increase your EMI by 5-10% each year in line with your salary hike.</li><li><strong>One-Time Windfalls:</strong> Use bonuses, inheritances, or other lump-sum amounts to make significant prepayments. The earlier in the loan tenure you do this, the greater the impact.</li><li><strong>Refinancing (Balance Transfer):</strong> If other lenders are offering a significantly lower interest rate (at least 0.5% to 1% lower), consider refinancing your loan. Calculate the costs (processing fees, legal charges) versus the interest saved to make an informed decision.</li></ul>"
   },
   "prepay_vs_invest": {
-    "h2": "बड़ा सवाल: ऋण का पूर्व भुगतान करें या अधिशेष का निवेश करें?",
-    "body": "<p>यह एक क्लासिक वित्तीय दुविधा है। उत्तर आपकी जोखिम लेने की क्षमता और संख्याओं पर निर्भर करता है। गणितीय नियम है: <strong>यदि आपके निवेश पर कर-पश्चात रिटर्न आपके ऋण ब्याज दर से अधिक है, तो आपको निवेश करना चाहिए। यदि नहीं, तो ऋण का पूर्व भुगतान करें।</strong></p><p><strong>उदाहरण:</strong> आपका गृह ऋण 8.5% पर है। क्या आप एक ऐसा निवेश पा सकते हैं जो करों के बाद लगातार और सुरक्षित रूप से 8.5% से अधिक बचाता है? 7% (जो कर-पश्चात ~4.9% है) देने वाला एक सावधि जमा एक अच्छा विकल्प नहीं है। एक इक्विटी म्यूचुअल फंड एसआईपी 12% रिटर्न दे सकता है, लेकिन यह बाजार जोखिम के साथ आता है। एक ऋण का पूर्व भुगतान आपके ब्याज दर के बराबर एक गारंटीकृत, जोखिम-मुक्त 'रिटर्न' प्रदान करता है।</p>"
+    "h2": "The Big Question: Prepay the Loan or Invest the Surplus?",
+    "body": "<p>This is a classic financial dilemma. The answer depends on your risk appetite and the numbers. The mathematical rule is: <strong>If the post-tax return on your investment is higher than your loan interest rate, you should invest. If not, prepay the loan.</strong></p><p><strong>Example:</strong> Your home loan is at 8.5%. Can you find an investment that consistently and safely delivers more than 8.5% after taxes? A fixed deposit giving 7% (which is ~4.9% post-tax) is not a good option. An equity mutual fund SIP might give 12% returns, but it comes with market risk. Prepaying a loan offers a guaranteed, risk-free 'return' equal to your interest rate. Use our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>Mutual Fund Screener</a> to explore options.</p>"
   },
   "comparison_table": {
-    "title": "पूर्व भुगतान बनाम निवेश: निर्णय मैट्रिक्स",
-    "headers": ["कारक", "ऋण का पूर्व भुगतान", "अधिशेष का निवेश"],
+    "title": "Prepay vs. Invest: Decision Matrix",
+    "headers": ["Factor", "Prepay Loan", "Invest Surplus"],
     "rows": [
-      ["रिटर्न", "गारंटीकृत और जोखिम-मुक्त (ऋण दर के बराबर)", "बाजार-लिंक्ड और परिवर्तनीय"],
-      ["मनोवैज्ञानिक लाभ", "उच्च (मन की शांति, जल्द ही ऋण-मुक्त)", "कम (बाजार की अस्थिरता तनाव का कारण बन सकती है)"],
-      ["तरलता", "कम (पैसा संपत्ति में बंद है)", "उच्च (निवेश को भुनाया जा सकता है)"],
-      ["कर लाभ", "पूर्व भुगतान पर कोई नहीं (लेकिन यदि आप पूर्व भुगतान नहीं करते हैं तो आप 80सी ब्याज कटौती को लंबे समय तक बनाए रखते हैं)", "साधन पर निर्भर करता है (इक्विटी पर एलटीसीजी, आदि)"]
+      ["Return", "Guaranteed & Risk-Free (equal to loan rate)", "Market-linked & Variable"],
+      ["Psychological Benefit", "High (peace of mind, debt-free sooner)", "Lower (market volatility can cause stress)"],
+      ["Liquidity", "Low (money is locked in the asset)", "High (investments can be liquidated)"],
+      ["Tax Benefit", "None on prepayment itself (but you retain 80C interest deduction longer if you don't prepay)", "Depends on instrument (LTCG on equity, etc.)"]
     ]
   },
   "refinance": {
-    "h2": "आपको कब पुनर्वित्त (बैलेंस ट्रांसफर) करना चाहिए?",
-    "body": "<p>इन शर्तों के तहत पुनर्वित्त करना समझ में आता है:</p><ul><li><strong>महत्वपूर्ण दर अंतर:</strong> नए ऋणदाता की दर आपके वर्तमान दर से कम से कम 0.50% - 1% कम होनी चाहिए ताकि शुल्क को ध्यान में रखने के बाद स्विच सार्थक हो।</li><li><strong>ऋण अवधि की शुरुआत में:</strong> शुरुआती वर्षों में आपकी अधिकांश ईएमआई ब्याज की ओर जाती है। जल्दी पुनर्वित्त करने से आपकी बचत अधिकतम होती है। आपके ऋण के अंतिम 2-3 वर्षों में पुनर्वित्त करना बहुत कम समझ में आता है।</li><li><strong>अच्छा क्रेडिट स्कोर:</strong> एक नए ऋणदाता से सर्वोत्तम दरें प्राप्त करने के लिए एक उच्च क्रेडिट स्कोर (750+) आवश्यक है।</li></ul>"
+    "h2": "When Should You Refinance (Balance Transfer)?",
+    "body": "<p>Refinancing makes sense under these conditions:</p><ul><li><strong>Significant Rate Difference:</strong> The new lender's rate should be at least 0.50% - 1% lower than your current rate to make the switch worthwhile after accounting for fees.</li><li><strong>Early in Loan Tenure:</strong> Most of your EMI in the initial years goes towards interest. Refinancing early maximizes your savings. It makes little sense to refinance in the last 2-3 years of your loan.</li><li><strong>Good Credit Score:</strong> A high credit score (750+) is essential to get the best rates from a new lender.</li></ul>"
   },
   "tax_notes": {
-    "h2": "महत्वपूर्ण कर विचार",
-    "body": "<p>एक गृह ऋण के लिए, मूलधन चुकौती धारा 80सी (₹1.5 लाख तक) के तहत कटौती के लिए पात्र है और चुकाया गया ब्याज धारा 24(बी) (एक स्व-अधिकृत संपत्ति के लिए ₹2 लाख तक) के तहत कटौती के लिए पात्र है। जबकि आपके ऋण का पूर्व भुगतान वित्तीय रूप से विवेकपूर्ण है, ध्यान रखें कि इसे बहुत जल्दी चुकाने का मतलब है कि आप अब पूरी मूल अवधि के लिए इन कर लाभों का दावा नहीं कर सकते। अपने निर्णय में हमेशा इसे ध्यान में रखें।</p>"
+    "h2": "Important Tax Considerations",
+    "body": "<p>For a home loan, the principal repayment is eligible for deduction under Section 80C (up to â‚¹1.5 lakh) and the interest paid is eligible for deduction under Section 24(b) (up to â‚¹2 lakh for a self-occupied property). While prepaying your loan is financially prudent, be aware that paying it off too quickly means you can no longer claim these tax benefits for the full original tenure. Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>Old vs New Tax Regime Calculator</a> to see how this impacts your decision.</p>"
   },
   "faq": {
-    "h2": "अक्सर पूछे जाने वाले प्रश्न",
+    "h2": "Frequently Asked Questions",
     "faqs": [
       {
-        "q": "ईएमआई और पूर्व भुगतान में क्या अंतर है?",
-        "a": "ईएमआई आपका नियमित मासिक भुगतान है जो मूलधन और ब्याज दोनों को कवर करता है। एक पूर्व भुगतान एक अतिरिक्त, अतिरिक्त भुगतान है जो आप मूलधन राशि की ओर करते हैं, जो आपकी ईएमआई के ऊपर और परे है।"
+        "q": "What is the difference between EMI and Prepayment?",
+        "a": "EMI is your regular monthly payment that covers both principal and interest. A prepayment is an additional, extra payment you make towards the principal amount, which is over and above your EMI."
       },
       {
-        "q": "क्या गृह ऋण का पूर्व भुगतान करने के लिए व्यक्तिगत ऋण लेना समझ में आता है?",
-        "a": "लगभग कभी नहीं। व्यक्तिगत ऋणों में गृह ऋण (8-10%) की तुलना में बहुत अधिक ब्याज दरें (11-18%) होती हैं। आप कम-ब्याज वाले ऋण को बंद करने के लिए उच्च ब्याज का भुगतान कर रहे होंगे, जो वित्तीय रूप से हानिकारक है।"
+        "q": "Does it make sense to take a personal loan to prepay a home loan?",
+        "a": "Almost never. Personal loans have much higher interest rates (11-18%) compared to home loans (8-10%). You would be paying a higher interest to close a lower-interest loan, which is financially detrimental."
       },
       {
-        "q": "एक ऋण परिशोधन अनुसूची क्या है?",
-        "a": "यह एक विस्तृत तालिका है जो ऋण की पूरी अवधि के लिए प्रत्येक ईएमआई के मूलधन और ब्याज घटकों में विभाजन को दिखाती है। हमारा कैलकुलेटर आपके लिए यह उत्पन्न करता है, और आप इसे एक सीएसवी के रूप में डाउनलोड कर सकते हैं।"
+        "q": "What is a loan amortization schedule?",
+        "a": "It's a detailed table that shows the breakdown of each EMI into its principal and interest components for the entire duration of the loan. Our calculator generates this for you, and you can download it as a CSV."
       },
       {
-        "q": "क्या मुझे पूर्व भुगतान के बाद अपनी ईएमआई कम करनी चाहिए या अपनी अवधि कम करनी चाहिए?",
-        "a": "अपनी ब्याज बचत को अधिकतम करने के लिए, हमेशा <strong>अवधि को कम करना</strong> चुनें। ईएमआई कम करने से ऋण मूल अवधि के लिए सक्रिय रहता है, जिसका अर्थ है कि आप लंबे समय तक ब्याज का भुगतान करना जारी रखते हैं, जो पूर्व भुगतान लाभ का बहुत कुछ नकारता है।"
+        "q": "Should I choose to reduce my EMI or my tenure after prepayment?",
+        "a": "To maximize your interest savings, always choose to <strong>reduce the tenure</strong>. Reducing the EMI keeps the loan active for the original duration, which means you continue to pay interest for longer, negating much of the prepayment benefit."
       }
     ]
   },
   "related_tools": {
-    "h2": "यह भी पढ़ें: संबंधित उपकरण और मार्गदर्शिकाएँ",
+    "h2": "Also Read: Related Tools & Guides",
     "links": [
-      { "href": "/tax-regime-calculator", "title": "पुरानी बनाम नई कर व्यवस्था कैलकुलेटर", "description": "देखें कि क्या आपकी ऋण कटौती पुरानी व्यवस्था को आपके लिए बेहतर बनाती है।" },
-      { "href": "/retirement-corpus-calculator", "title": "सेवानिवृत्ति कोष कैलकुलेटर", "description": "तेजी से ऋण-मुक्त होना आपकी सेवानिवृत्ति के लक्ष्यों को कैसे प्रभावित करता है, इसकी योजना बनाएं।" },
-      { "href": "/ppf-calculator", "title": "पीपीएफ कैलकुलेटर", "description": "अपने ऋण की ब्याज दर के मुकाबले जोखिम-मुक्त पीपीएफ रिटर्न की तुलना करें।" }
+      { "href": "/tax-regime-calculator", "title": "Old vs New Tax Regime Calculator", "description": "See if your loan deductions make the Old Regime better for you." },
+      { "href": "/retirement-corpus-calculator", "title": "Retirement Corpus Calculator", "description": "Plan how becoming debt-free faster impacts your retirement goals." },
+      { "href": "/ppf-calculator", "title": "PPF Calculator", "description": "Compare risk-free PPF returns against your loan's interest rate." }
     ]
   },
   "conclusion": {
-    "title": "अपने ऋण पर नियंत्रण रखें",
-    "body": "ऋण-मुक्त होना वित्तीय स्वतंत्रता के मार्ग पर एक महत्वपूर्ण मील का पत्थर है। रणनीतिक रूप से अपने ऋणों का पूर्व भुगतान या पुनर्वित्त करने के लिए इस अनुकूलक का उपयोग करके, आप ब्याज में लाखों बचा सकते हैं और वित्तीय स्वतंत्रता की अपनी यात्रा को काफी छोटा कर सकते हैं। संख्याओं के साथ खेलें और वह रणनीति खोजें जो आपके लिए सबसे अच्छा काम करती है।"
+    "title": "Take Control of Your Debt",
+    "body": "Becoming debt-free is a key milestone on the path to financial independence. By using this optimizer to strategically prepay or refinance your loans, you can save lakhs in interest and significantly shorten your journey to financial freedom. Play with the numbers and find the strategy that works best for you."
   }
 }
 

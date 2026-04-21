@@ -1,121 +1,121 @@
-
+﻿
 {
-  "h1": "రుణ ఆప్టిమైజేషన్ కాలిక్యులేటర్ భారతదేశం 2025 — ఇఎంఐ, ముందస్తు చెల్లింపు & పునఃఫైనాన్స్ పొదుపులు",
-  "summary": "ఈ గైడ్ + ఇంటరాక్టివ్ కాలిక్యులేటర్ మీకు సమాధానం ఇవ్వడానికి సహాయపడుతుంది: నేను మొత్తం వడ్డీని ఎలా తగ్గించగలను, నా ఇఎంఐ లేదా కాలాన్ని ఎలా తగ్గించగలను, మరియు ముందస్తు చెల్లింపు, పునఃఫైనాన్సింగ్, లేదా నా అదనపు నిధిని పెట్టుబడి పెట్టడం మధ్య ఉత్తమ ఎంపికను ఎలా ఎంచుకోగలను?",
-  "title": "రుణ ఆప్టిమైజేషన్ కాలిక్యులేటర్",
-  "form_description": "మీ ఇఎంఐని గణించడానికి మరియు ముందస్తు చెల్లింపులు మీ రుణాన్ని ఎలా ప్రభావితం చేయవచ్చో చూడటానికి మీ రుణ వివరాలను నమోదు చేయండి.",
+  "h1": "Loan Optimization Calculator India 2025 â€” EMI, Prepayment & Refinance Savings",
+  "summary": "This guide + interactive calculator helps you answer: How can I minimize total interest, reduce my EMI or tenure, and make the best choice between prepaying, refinancing, or investing my surplus?",
+  "title": "Loan Optimization Calculator",
+  "form_description": "Enter your loan details to calculate your EMI and see how prepayments can impact your loan.",
   "form": {
-    "loan_amount": "రుణ మొత్తం",
-    "interest_rate": "వడ్డీ రేటు (% ప్రతి సంవత్సరం)",
-    "tenure": "రుణ కాలపరిమితి (సంవత్సరాలు)",
-    "prepayment_amount": "ఒక-సారి ముందస్తు చెల్లింపు మొత్తం (ఐచ్ఛికం)",
-    "calculate_cta": "నా రుణాన్ని ఆప్టిమైజ్ చేయండి",
-    "calculating": "ఆప్టిమైజ్ చేస్తోంది..."
+    "loan_amount": "Loan Amount",
+    "interest_rate": "Interest Rate (% p.a.)",
+    "tenure": "Loan Tenure (Years)",
+    "prepayment_amount": "One-time Prepayment Amount (Optional)",
+    "calculate_cta": "Optimize My Loan",
+    "calculating": "Optimizing..."
   },
   "results": {
-    "title": "మీ రుణ విశ్లేషణ",
-    "monthly_emi": "నెలవారీ ఇఎంఐ",
-    "total_interest": "మొత్తం చెల్లించవలసిన వడ్డీ",
-    "total_payment": "మొత్తం చెల్లింపు (అసలు + వడ్డీ)",
+    "title": "Your Loan Analysis",
+    "monthly_emi": "Monthly EMI",
+    "total_interest": "Total Interest Payable",
+    "total_payment": "Total Payment (Principal + Interest)",
     "prepayment_summary": {
-      "title": "ముందస్తు చెల్లింపుతో, మీరు ఆదా చేయవచ్చు:",
-      "subtitle": "మరియు మీ కాలాన్ని {months} నెలలు తగ్గించుకోండి!"
+      "title": "With Prepayment, You Could Save:",
+      "subtitle": "and reduce your tenure by {months} months!"
     },
-    "chart_view": "చార్ట్ వీక్షణ",
-    "table_view": "అమోర్టైజేషన్ పట్టిక",
-    "download_csv": "షెడ్యూల్‌ను డౌన్‌లోడ్ చేయండి",
-    "principal_paid": "చెల్లించిన అసలు",
-    "interest_paid": "చెల్లించిన వడ్డీ",
-    "outstanding_balance": "మిగిలిన బకాయి",
+    "chart_view": "Chart View",
+    "table_view": "Amortization Table",
+    "download_csv": "Download Schedule",
+    "principal_paid": "Principal Paid",
+    "interest_paid": "Interest Paid",
+    "outstanding_balance": "Outstanding Balance",
     "table": {
-      "month": "నెల",
-      "principal": "అసలు",
-      "interest": "వడ్డీ",
-      "total_payment": "మొత్తం చెల్లింపు",
-      "ending_balance": "ముగింపు నిల్వ"
+      "month": "Month",
+      "principal": "Principal",
+      "interest": "Interest",
+      "total_payment": "Total Payment",
+      "ending_balance": "Ending Balance"
     }
   },
   "why": {
-    "h2": "మీ రుణాన్ని ఎందుకు ఆప్టిమైజ్ చేయాలి? వడ్డీ యొక్క దాచిన ఖర్చు",
-    "body": "<p>ఇల్లు లేదా కారు కొనడం వంటి ప్రధాన జీవిత లక్ష్యాలను సాధించడానికి రుణం తీసుకోవడం తరచుగా ఒక అవసరమైన దశ. అయితే, రుణం యొక్క జీవితకాలంలో మీరు చెల్లించే మొత్తం వడ్డీ అద్భుతమైనదిగా ఉంటుంది. 20 సంవత్సరాలకు 8.5% వద్ద ₹50 లక్షల గృహ రుణం అంటే మీరు వడ్డీలోనే ₹55 లక్షలకు పైగా చెల్లిస్తారు - రుణ మొత్తం కంటే ఎక్కువ! రుణ ఆప్టిమైజేషన్ ఈ వడ్డీ ఖర్చును తగ్గించడానికి మరియు వేగంగా రుణ-రహితం కావడానికి ఒక వ్యూహాత్మక ప్రక్రియ. ఈ కాలిక్యులేటర్ ఈ ప్రక్రియలో మీ ప్రాథమిక సాధనంగా రూపొందించబడింది.</p>"
+    "h2": "Why Optimize Your Loan? The Hidden Cost of Interest",
+    "body": "<p>Taking a loan is often a necessary step towards achieving major life goals, like buying a home or a car. However, the total interest you pay over the loan's lifetime can be staggering. A â‚¹50 lakh home loan at 8.5% for 20 years means you pay over â‚¹55 lakh in interest aloneâ€”more than the loan amount itself! Loan optimization is the strategic process of minimizing this interest cost and becoming debt-free faster. This calculator is designed to be your primary tool in this process.</p>"
   },
   "how_it_works": {
-    "h2": "ఈ రుణ ఆప్టిమైజర్ ఎలా పనిచేస్తుంది",
-    "body": "<p>మా కాలిక్యులేటర్ మొదట మీ సమాన నెలవారీ వాయిదా (ఇఎంఐ)ను ప్రామాణిక సూత్రాన్ని ఉపయోగించి నిర్ధారిస్తుంది:</p><p><code>ఇఎంఐ = పి × ఆర్ × (1 + ఆర్)^ఎన్ / ((1 + ఆర్)^ఎన్ - 1)</code></p><p>ఇక్కడ పి అనేది అసలు రుణ మొత్తం, ఆర్ నెలవారీ వడ్డీ రేటు, మరియు ఎన్ నెలవారీ వాయిదాల సంఖ్య. ఇది అప్పుడు ఒక పూర్తి అమోర్టైజేషన్ షెడ్యూల్‌ను ఉత్పత్తి చేస్తుంది, ఇది ప్రతి ఇఎంఐ అసలు మరియు వడ్డీ మధ్య ఎలా విభజించబడిందో చూపుతుంది. మీరు ఒక ముందస్తు చెల్లింపు మొత్తాన్ని జోడిస్తే, కాలిక్యులేటర్ ఆదా చేయబడిన వడ్డీ మరియు కాలపరిమితి తగ్గింపుపై ప్రత్యక్ష ప్రభావాన్ని చూపించడానికి షెడ్యూల్‌ను పునఃగణిస్తుంది.</p>"
+    "h2": "How This Loan Optimizer Works",
+    "body": "<p>Our calculator first determines your Equated Monthly Instalment (EMI) using the standard formula:</p><p><code>EMI = P Ã— r Ã— (1 + r)^n / ((1 + r)^n â€“ 1)</code></p><p>Where P is the principal loan amount, r is the monthly interest rate, and n is the number of monthly instalments. It then generates a full amortization schedule, showing how each EMI is split between principal and interest. If you add a prepayment amount, the calculator re-computes the schedule to show you the direct impact on interest saved and tenure reduction.</p>"
   },
   "worked_examples": {
-    "h2": "పని చేసిన ఉదాహరణలు: వాస్తవ-ప్రపంచ దృష్టాంతాలు",
+    "h2": "Worked Examples: Real-World Scenarios",
     "scenario1": {
-      "title": "దృష్టాంతం 1: ప్రామాణిక గృహ రుణం",
-      "body": "<p><strong>ఇన్‌పుట్‌లు:</strong> రుణం: ₹40 లక్షలు, రేటు: 8.75%, కాలపరిమితి: 20 సంవత్సరాలు, ముందస్తు చెల్లింపు: ₹0.</p><p><strong>ఫలితం:</strong> ఇఎంఐ ₹35,338. 20 సంవత్సరాలలో చెల్లించిన మొత్తం వడ్డీ ₹44.81 లక్షలు.</p>"
+      "title": "Scenario 1: Standard Home Loan",
+      "body": "<p><strong>Inputs:</strong> Loan: â‚¹40 Lakh, Rate: 8.75%, Tenure: 20 years, Prepayment: â‚¹0.</p><p><strong>Result:</strong> EMI is â‚¹35,338. Total interest paid over 20 years is â‚¹44.81 Lakh.</p>"
     },
     "scenario2": {
-      "title": "దృష్టాంతం 2: ఒక చిన్న ముందస్తు చెల్లింపు యొక్క శక్తి",
-      "body": "<p><strong>ఇన్‌పుట్‌లు:</strong> పైన ఉన్నట్లే, కానీ మొదటి సంవత్సరం చివరిలో <strong>₹2 లక్షల</strong> ఒక-సారి ముందస్తు చెల్లింపుతో.</p><p><strong>ఫలితం:</strong> మొత్తం ఆదా చేయబడిన వడ్డీ <strong>₹4.5 లక్షలకు</strong> పైగా మరియు రుణం <strong>25 నెలలు ముందుగానే</strong> తీర్చబడుతుంది!</p>"
+      "title": "Scenario 2: The Power of a Small Prepayment",
+      "body": "<p><strong>Inputs:</strong> Same as above, but with a one-time prepayment of <strong>â‚¹2 Lakh</strong> at the end of the first year.</p><p><strong>Result:</strong> Total interest saved is over <strong>â‚¹4.5 Lakh</strong> and the loan is paid off <strong>25 months earlier!</strong></p>"
     },
     "scenario3": {
-      "title": "దృష్టాంతం 3: దూకుడు ముందస్తు చెల్లింపు",
-      "body": "<p><strong>ఇన్‌పుట్‌లు:</strong> పైన ఉన్నట్లే, కానీ మొదటి సంవత్సరం చివరిలో <strong>₹5 లక్షల</strong> ఒక-సారి ముందస్తు చెల్లింపుతో.</p><p><strong>ఫలితం:</strong> మొత్తం ఆదా చేయబడిన వడ్డీ ఒక భారీ <strong>₹9.8 లక్షలు</strong> మరియు రుణ కాలపరిమితి <strong>56 నెలలు (4.6 సంవత్సరాలు)</strong> తగ్గించబడుతుంది!</p>"
+      "title": "Scenario 3: Aggressive Prepayment",
+      "body": "<p><strong>Inputs:</strong> Same as above, but with a one-time prepayment of <strong>â‚¹5 Lakh</strong> at the end of the first year.</p><p><strong>Result:</strong> Total interest saved is a massive <strong>â‚¹9.8 Lakh</strong> and the loan tenure is reduced by <strong>56 months (4.6 years)!</strong></p>"
     }
   },
   "optimization_masterclass": {
-    "h2": "రుణ ఆప్టిమైజేషన్ మాస్టర్‌క్లాస్: కీలక వ్యూహాలు",
-    "body": "<ul><li><strong>సాధారణ ముందస్తు చెల్లింపులు:</strong> చిన్న, సాధారణ ముందస్తు చెల్లింపులు కూడా భారీ ప్రభావాన్ని చూపుతాయి. మీ జీతం పెంపుకు అనుగుణంగా ప్రతి సంవత్సరం మీ ఇఎంఐని 5-10% పెంచే 'స్టెప్-అప్' వ్యూహాన్ని పరిగణించండి.</li><li><strong>ఒక-సారి లాభాలు:</strong> బోనస్‌లు, వారసత్వాలు, లేదా ఇతర ఏకమొత్తం మొత్తాలను ఉపయోగించి గణనీయమైన ముందస్తు చెల్లింపులు చేయండి. రుణ కాలపరిమితిలో మీరు ఇది ఎంత త్వరగా చేస్తే, ప్రభావం అంత ఎక్కువగా ఉంటుంది.</li><li><strong>పునఃఫైనాన్సింగ్ (బ్యాలెన్స్ బదిలీ):</strong> ఇతర రుణదాతలు గణనీయంగా తక్కువ వడ్డీ రేటును (కనీసం 0.5% నుండి 1% తక్కువ) అందిస్తున్నట్లయితే, మీ రుణాన్ని పునఃఫైనాన్స్ చేయడాన్ని పరిగణించండి. ఒక సమాచారంతో కూడిన నిర్ణయం తీసుకోవడానికి ఖర్చులు (ప్రాసెసింగ్ ఫీజులు, చట్టపరమైన ఛార్జీలు) వర్సెస్ ఆదా చేసిన వడ్డీని கணக்கிடండి.</li></ul>"
+    "h2": "Loan Optimization Masterclass: Key Strategies",
+    "body": "<ul><li><strong>Regular Prepayments:</strong> Even small, regular prepayments can have a huge impact. Consider a 'step-up' strategy where you increase your EMI by 5-10% each year in line with your salary hike.</li><li><strong>One-Time Windfalls:</strong> Use bonuses, inheritances, or other lump-sum amounts to make significant prepayments. The earlier in the loan tenure you do this, the greater the impact.</li><li><strong>Refinancing (Balance Transfer):</strong> If other lenders are offering a significantly lower interest rate (at least 0.5% to 1% lower), consider refinancing your loan. Calculate the costs (processing fees, legal charges) versus the interest saved to make an informed decision.</li></ul>"
   },
   "prepay_vs_invest": {
-    "h2": "పెద్ద ప్రశ్న: రుణాన్ని ముందుగా చెల్లించాలా లేదా అదనపు నిధిని పెట్టుబడి పెట్టాలా?",
-    "body": "<p>ఇది ఒక క్లాసిక్ ఆర్థిక ద్విविधा. సమాధానం మీ రిస్క్ సామర్థ్యం మరియు సంఖ్యలపై ఆధారపడి ఉంటుంది. గణిత నియమం: <strong>మీ పెట్టుబడిపై పన్ను-తర్వాత రాబడి మీ రుణ వడ్డీ రేటు కంటే ఎక్కువగా ఉంటే, మీరు పెట్టుబడి పెట్టాలి. లేకపోతే, రుణాన్ని ముందుగా చెల్లించండి.</strong></p><p><strong>ఉదాహరణ:</strong> మీ గృహ రుణం 8.5% వద్ద ఉంది. పన్నుల తర్వాత స్థిరంగా మరియు సురక్షితంగా 8.5% కంటే ఎక్కువ రాబడినిచ్చే పెట్టుబడిని మీరు కనుగొనగలరా? 7% ఇచ్చే ఫిక్స్‌డ్ డిపాజిట్ (ఇది పన్ను-తర్వాత ~4.9%) ఒక మంచి ఎంపిక కాదు. ఒక ఈక్విటీ మ్యూచువల్ ఫండ్ SIP 12% రాబడిని ఇవ్వగలదు, కానీ అది మార్కెట్ రిస్క్‌తో వస్తుంది. ఒక రుణాన్ని ముందుగా చెల్లించడం మీ వడ్డీ రేటుకు సమానమైన ఒక హామీ, రిస్క్-లేని 'రాబడి'ని అందిస్తుంది. మా <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>మ్యూచువల్ ఫండ్ స్క్రీనర్‌ను</a> ఉపయోగించి ఎంపికలను అన్వేషించండి.</p>"
+    "h2": "The Big Question: Prepay the Loan or Invest the Surplus?",
+    "body": "<p>This is a classic financial dilemma. The answer depends on your risk appetite and the numbers. The mathematical rule is: <strong>If the post-tax return on your investment is higher than your loan interest rate, you should invest. If not, prepay the loan.</strong></p><p><strong>Example:</strong> Your home loan is at 8.5%. Can you find an investment that consistently and safely delivers more than 8.5% after taxes? A fixed deposit giving 7% (which is ~4.9% post-tax) is not a good option. An equity mutual fund SIP might give 12% returns, but it comes with market risk. Prepaying a loan offers a guaranteed, risk-free 'return' equal to your interest rate. Use our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>Mutual Fund Screener</a> to explore options.</p>"
   },
   "comparison_table": {
-    "title": "ముందుగా చెల్లించు వర్సెస్ పెట్టుబడి: నిర్ణయ మ్యాట్రిక్స్",
-    "headers": ["కారకం", "రుణాన్ని ముందుగా చెల్లించండి", "అదనపు నిధిని పెట్టుబడి పెట్టండి"],
+    "title": "Prepay vs. Invest: Decision Matrix",
+    "headers": ["Factor", "Prepay Loan", "Invest Surplus"],
     "rows": [
-      ["రాబడి", "హామీ మరియు రిస్క్-రహితం (రుణ రేటుకు సమానం)", "మార్కెట్-లింక్డ్ మరియు వేరియబుల్"],
-      ["మానసిక ప్రయోజనం", "అధికం (మనశ్శాంతి, త్వరగా రుణ-రహితం)", "తక్కువ (మార్కెట్ అస్థిరత ఒత్తిడికి కారణమవుతుంది)"],
-      ["ద్రవ్యత", "తక్కువ (డబ్బు ఆస్తిలో లాక్ చేయబడింది)", "అధికం (పెట్టుబడులను ద్రవంగా మార్చవచ్చు)"],
-      ["పన్ను ప్రయోజనం", "ముందుగా చెల్లించడంపై ఏమీ లేదు (కానీ మీరు ముందుగా చెల్లించకపోతే మీరు 80C వడ్డీ మినహాయింపును ఎక్కువ కాలం నిలుపుకుంటారు)", "సాధనాన్ని బట్టి ఉంటుంది (ఈక్విటీపై ఎల్‌టిసిజి, మొదలైనవి)"]
+      ["Return", "Guaranteed & Risk-Free (equal to loan rate)", "Market-linked & Variable"],
+      ["Psychological Benefit", "High (peace of mind, debt-free sooner)", "Lower (market volatility can cause stress)"],
+      ["Liquidity", "Low (money is locked in the asset)", "High (investments can be liquidated)"],
+      ["Tax Benefit", "None on prepayment itself (but you retain 80C interest deduction longer if you don't prepay)", "Depends on instrument (LTCG on equity, etc.)"]
     ]
   },
   "refinance": {
-    "h2": "మీరు ఎప్పుడు పునఃఫైనాన్స్ (బ్యాలెన్స్ బదిలీ) చేయాలి?",
-    "body": "<p>ఈ పరిస్థితులలో పునఃఫైనాన్స్ చేయడం అర్ధవంతంగా ఉంటుంది:</p><ul><li><strong>గణనీయమైన రేటు తేడా:</strong> రుసుములను పరిగణనలోకి తీసుకున్న తర్వాత స్విచ్ ప్రయోజనకరంగా ఉండటానికి కొత్త రుణదాత రేటు మీ ప్రస్తుత రేటు కంటే కనీసం 0.50% - 1% తక్కువగా ఉండాలి.</li><li><strong>రుణ కాలపరిమితి ప్రారంభంలో:</strong> ప్రారంభ సంవత్సరాలలో మీ ఇఎంఐలో ఎక్కువ భాగం వడ్డీకి వెళ్తుంది. ముందుగా పునఃఫైనాన్స్ చేయడం వల్ల మీ పొదుపులు గరిష్టం అవుతాయి. మీ రుణం చివరి 2-3 సంవత్సరాలలో పునఃఫైనాన్స్ చేయడం చాలా తక్కువ అర్ధవంతంగా ఉంటుంది.</li><li><strong>మంచి క్రెడిట్ స్కోర్:</strong> ఒక కొత్త రుణదాత నుండి ఉత్తమ రేట్లను పొందడానికి అధిక క్రెడిట్ స్కోర్ (750+) అవసరం.</li></ul>"
+    "h2": "When Should You Refinance (Balance Transfer)?",
+    "body": "<p>Refinancing makes sense under these conditions:</p><ul><li><strong>Significant Rate Difference:</strong> The new lender's rate should be at least 0.50% - 1% lower than your current rate to make the switch worthwhile after accounting for fees.</li><li><strong>Early in Loan Tenure:</strong> Most of your EMI in the initial years goes towards interest. Refinancing early maximizes your savings. It makes little sense to refinance in the last 2-3 years of your loan.</li><li><strong>Good Credit Score:</strong> A high credit score (750+) is essential to get the best rates from a new lender.</li></ul>"
   },
   "tax_notes": {
-    "h2": "ముఖ్యమైన పన్ను పరిగణనలు",
-    "body": "<p>ఒక గృహ రుణం కోసం, అసలు తిరిగి చెల్లింపు సెక్షన్ 80సి (₹1.5 లక్షల వరకు) కింద మినహాయింపుకు అర్హత పొందింది మరియు చెల్లించిన వడ్డీ సెక్షన్ 24(బి) (ఒక స్వీయ-ఆక్రమిత ఆస్తి కోసం ₹2 లక్షల వరకు) కింద మినహాయింపుకు అర్హత పొందింది. మీ రుణాన్ని ముందుగా చెల్లించడం ఆర్థికంగా వివేకవంతమైనది అయినప్పటికీ, దానిని చాలా త్వరగా చెల్లించడం అంటే మీరు ఇకపై పూర్తి అసలు కాలపరిమితికి ఈ పన్ను ప్రయోజనాలను క్లెయిమ్ చేయలేరని తెలుసుకోండి. మీ నిర్ణయంలో ఎల్లప్పుడూ దీనిని పరిగణనలోకి తీసుకోండి. మా <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>పాత వర్సెస్ కొత్త పన్ను విధానం కాలిక్యులేటర్‌ను</a> ఉపయోగించి ఇది మీ నిర్ణయాన్ని ఎలా ప్రభావితం చేస్తుందో చూడండి.</p>"
+    "h2": "Important Tax Considerations",
+    "body": "<p>For a home loan, the principal repayment is eligible for deduction under Section 80C (up to â‚¹1.5 lakh) and the interest paid is eligible for deduction under Section 24(b) (up to â‚¹2 lakh for a self-occupied property). While prepaying your loan is financially prudent, be aware that paying it off too quickly means you can no longer claim these tax benefits for the full original tenure. Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>Old vs New Tax Regime Calculator</a> to see how this impacts your decision.</p>"
   },
   "faq": {
-    "h2": "తరచుగా అడిగే ప్రశ్నలు",
+    "h2": "Frequently Asked Questions",
     "faqs": [
       {
-        "q": "ఇఎంఐ మరియు ముందస్తు చెల్లింపు మధ్య తేడా ఏమిటి?",
-        "a": "ఇఎంఐ అనేది మీ సాధారణ నెలవారీ చెల్లింపు, ఇది అసలు మరియు వడ్డీ రెండింటినీ కవర్ చేస్తుంది. ఒక ముందస్తు చెల్లింపు అనేది మీరు అసలు మొత్తానికి చేసే ఒక అదనపు, అదనపు చెల్లింపు, ఇది మీ ఇఎంఐకి పైన మరియు మించి ఉంటుంది."
+        "q": "What is the difference between EMI and Prepayment?",
+        "a": "EMI is your regular monthly payment that covers both principal and interest. A prepayment is an additional, extra payment you make towards the principal amount, which is over and above your EMI."
       },
       {
-        "q": "గృహ రుణాన్ని ముందుగా చెల్లించడానికి వ్యక్తిగత రుణం తీసుకోవడం అర్ధవంతంగా ఉంటుందా?",
-        "a": "దాదాపు ఎప్పుడూ కాదు. వ్యక్తిగత రుణాలకు గృహ రుణాలతో (8-10%) పోలిస్తే చాలా ఎక్కువ వడ్డీ రేట్లు (11-18%) ఉంటాయి. మీరు తక్కువ-వడ్డీ రుణాన్ని మూసివేయడానికి అధిక వడ్డీని చెల్లిస్తుంటారు, ఇది ఆర్థికంగా హానికరం."
+        "q": "Does it make sense to take a personal loan to prepay a home loan?",
+        "a": "Almost never. Personal loans have much higher interest rates (11-18%) compared to home loans (8-10%). You would be paying a higher interest to close a lower-interest loan, which is financially detrimental."
       },
       {
-        "q": "ఒక రుణ అమోర్టైజేషన్ షెడ్యూల్ అంటే ఏమిటి?",
-        "a": "ఇది ఒక వివరణాత్మక పట్టిక, ఇది రుణం యొక్క మొత్తం వ్యవధికి దాని అసలు మరియు వడ్డీ భాగాలలో ప్రతి ఇఎంఐ యొక్క విచ్ఛిన్నతను చూపుతుంది. మా కాలిక్యులేటర్ మీ కోసం దీన్ని ఉత్పత్తి చేస్తుంది, మరియు మీరు దాన్ని ఒక సిఎస్‌విగా డౌన్‌లోడ్ చేసుకోవచ్చు."
+        "q": "What is a loan amortization schedule?",
+        "a": "It's a detailed table that shows the breakdown of each EMI into its principal and interest components for the entire duration of the loan. Our calculator generates this for you, and you can download it as a CSV."
       },
       {
-        "q": "ముందస్తు చెల్లింపు తర్వాత నేను నా ఇఎంఐని తగ్గించాలా లేదా నా కాలాన్ని తగ్గించాలా?",
-        "a": "మీ వడ్డీ పొదుపును పెంచుకోవడానికి, ఎల్లప్పుడూ <strong>కాలాన్ని తగ్గించడం</strong> ఎంచుకోండి. ఇఎంఐని తగ్గించడం వల్ల రుణం అసలు వ్యవధికి చురుకుగా ఉంటుంది, దీని అర్థం మీరు ఎక్కువ కాలం వడ్డీని చెల్లించడం కొనసాగిస్తారు, ఇది ముందస్తు చెల్లింపు ప్రయోజనాన్ని చాలా వరకు తిరస్కరిస్తుంది."
+        "q": "Should I choose to reduce my EMI or my tenure after prepayment?",
+        "a": "To maximize your interest savings, always choose to <strong>reduce the tenure</strong>. Reducing the EMI keeps the loan active for the original duration, which means you continue to pay interest for longer, negating much of the prepayment benefit."
       }
     ]
   },
   "related_tools": {
-    "h2": "ఇది కూడా చదవండి: సంబంధిత సాధనాలు & మార్గదర్శకాలు",
+    "h2": "Also Read: Related Tools & Guides",
     "links": [
-      { "href": "/tax-regime-calculator", "title": "పాత వర్సెస్ కొత్త పన్ను విధానం కాలిక్యులేటర్", "description": "మీ రుణ మినహాయింపులు పాత విధానాన్ని మీకు ఉత్తమంగా చేస్తాయో చూడండి." },
-      { "href": "/retirement-corpus-calculator", "title": "పదవీ విరమణ నిధి కాలిక్యులేటర్", "description": "వేగంగా రుణ-రహితం కావడం మీ పదవీ విరమణ లక్ష్యాలను ఎలా ప్రభావితం చేస్తుందో ప్లాన్ చేయండి." },
-      { "href": "/ppf-calculator", "title": "పిపిఎఫ్ కాలిక్యులేటర్", "description": "మీ రుణం యొక్క వడ్డీ రేటుకు వ్యతిరేకంగా రిస్క్-లేని పిపిఎఫ్ రాబడులను పోల్చండి." }
+      { "href": "/tax-regime-calculator", "title": "Old vs New Tax Regime Calculator", "description": "See if your loan deductions make the Old Regime better for you." },
+      { "href": "/retirement-corpus-calculator", "title": "Retirement Corpus Calculator", "description": "Plan how becoming debt-free faster impacts your retirement goals." },
+      { "href": "/ppf-calculator", "title": "PPF Calculator", "description": "Compare risk-free PPF returns against your loan's interest rate." }
     ]
   },
   "conclusion": {
-    "title": "మీ అప్పుపై నియంత్రణ తీసుకోండి",
-    "body": "రుణ-రహితం కావడం ఆర్థిక స్వాతంత్ర్యం మార్గంలో ఒక ముఖ్యమైన మైలురాయి. మీ రుణాలను వ్యూహాత్మకంగా ముందుగా చెల్లించడానికి లేదా పునఃఫైనాన్స్ చేయడానికి ఈ ఆప్టిమైజర్‌ను ఉపయోగించడం ద్వారా, మీరు వడ్డీలో లక్షలు ఆదా చేయవచ్చు మరియు ఆర్థిక స్వేచ్ఛకు మీ ప్రయాణాన్ని గణనీయంగా తగ్గించవచ్చు. సంఖ్యలతో ఆడుకోండి మరియు మీకు ఉత్తమంగా పనిచేసే వ్యూహాన్ని కనుగొనండి."
+    "title": "Take Control of Your Debt",
+    "body": "Becoming debt-free is a key milestone on the path to financial independence. By using this optimizer to strategically prepay or refinance your loans, you can save lakhs in interest and significantly shorten your journey to financial freedom. Play with the numbers and find the strategy that works best for you."
   }
 }
 

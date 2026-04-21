@@ -1,43 +1,43 @@
-{
-    "meta_title": "एलआईसी जीवन आनंद कैलकुलेटर (प्लान 915) — प्रीमियम, मैच्योरिटी और सरेंडर का अनुमान",
-    "meta_description": "हमारे मुफ्त एलआईसी जीवन आनंद कैलकुलेटर (प्लान 915) का उपयोग करके प्रीमियम, मैच्योरिटी, सरेंडर और पेड-अप मूल्यों का अनुमान लगाएं। इसमें काम किए गए उदाहरण, बोनस और एफएबी इनपुट, पीडीएफ डाउनलोड शामिल हैं।",
-    "h1": "मैंने यह एलआईसी जीवन आनंद कैलकुलेटर आपको बिना लाग-लपेट के सच्चाई बताने के लिए बनाया है (2025)",
-    "top_cta": "<p><strong>तुरंत अनुमान प्राप्त करें:</strong> अपनी योजना, बीमा राशि और अवधि दर्ज करें — मैच्योरिटी, सरेंडर और पेड-अप मूल्यों को देखने के लिए <a href=\"#calculator-widget\">गणना करें</a> पर क्लिक करें। <a href=\"#download\">परिणाम डाउनलोड करें (PDF)</a> • <a href=\"/{lang}/contact\">एक सीएफपी कॉल बुक करें</a></p>",
+﻿{
+    "meta_title": "LIC Jeevan Anand Calculator (Plan 915) â€” Premium, Maturity & Surrender Estimates",
+    "meta_description": "I built this free LIC Jeevan Anand calculator (Plan 915) to give you the unvarnished truth on premiums, maturity, and surrender values. Includes worked examples & PDF download.",
+    "h1": "I Built This LIC Jeevan Anand Calculator to Give You the Unvarnished Truth (2025)",
+    "top_cta": "<p><strong>Get an instant estimate:</strong> Enter your plan, sum assured and term â€” click <a href=\"#calculator-widget\">Calculate</a> to view maturity, surrender and paid-up values. <a href=\"#download\">Download result (PDF)</a> â€¢ <a href=\"/{lang}/contact\">Book a CFP call</a></p>",
     "tool": {
-        "title": "जीवन आनंद कैलकुलेटर (प्लान 915)",
-        "form_description": "यह सिर्फ एक और कैलकुलेटर नहीं है। मैंने इसे आपको वह स्पष्टता देने के लिए डिज़ाइन किया है जो एलआईसी दस्तावेज़ अक्सर नहीं देते हैं। चलिए शुरू करते हैं।",
-        "age_label": "आपकी आयु",
-        "term_label": "पॉलिसी अवधि",
-        "sum_assured_label": "बीमा राशि (₹)",
-        "calculate_button": "मेरे लाभ की गणना करें",
-        "calculating": "गणना हो रही है...",
-        "riders_title": "वैकल्पिक राइडर्स (ऐड-ऑन)",
-        "addb_rider_label": "आकस्मिक मृत्यु और विकलांगता लाभ राइडर",
-        "term_rider_label": "टर्म एश्योरेंस राइडर",
-        "assumptions_title": "मेरी मान्यताओं पर एक त्वरित नोट",
-        "assumptions_body": "मेरी गणनाओं में सटीकता के लिए जीएसटी (4.5% प्रथम वर्ष, 2.25% बाद में) शामिल है। बोनस और एफएबी दरें उदाहरणात्मक हैं, जो ऐतिहासिक डेटा पर आधारित हैं, क्योंकि एलआईसी उनकी गारंटी नहीं देता है। यह आपको एक यथार्थवादी, सिर्फ आशावादी नहीं, तस्वीर देता है।",
-        "pdf_button": "प्रिंट / পিডিএফ হিসাবে সংরক্ষণ করুন",
-        "results_note": "अस्वीकरण: सभी मान आपके द्वारा प्रदान किए गए डेटा और उदाहरणात्मक बोनस दरों के आधार पर अनुमान हैं। आपके अंतिम, आधिकारिक आंकड़े एलआईसी द्वारा निर्धारित किए जाएंगे।"
+        "title": "Jeevan Anand Calculator (Plan 915)",
+        "form_description": "This isn't just another calculator. I've designed it to give you the clarity that LIC documents often don't. Let's get started.",
+        "age_label": "Your Age",
+        "term_label": "Policy Term",
+        "sum_assured_label": "Sum Assured (â‚¹)",
+        "calculate_button": "Calculate My Benefits",
+        "calculating": "Calculating...",
+        "riders_title": "Optional Riders (Add-ons)",
+        "addb_rider_label": "Accidental Death & Disability Benefit Rider",
+        "term_rider_label": "Term Assurance Rider",
+        "assumptions_title": "A Quick Note on My Assumptions",
+        "assumptions_body": "My calculations include GST (4.5% 1st year, 2.25% after) for accuracy. The bonus and FAB rates are illustrative, based on historical data, as LIC doesn't guarantee them. This gives you a realistic, not just optimistic, picture.",
+        "pdf_button": "Print / Save as PDF",
+        "results_note": "Disclaimer: All values are estimates based on the data you provided and illustrative bonus rates. Your final, official figures will be determined by LIC."
     },
     "article": {
         "conclusion": {
-            "title": "मेरा अंतिम शब्द: क्या 2025 में जीवन आनंद एक अच्छा निवेश है?",
-            "body": "सभी गणित के बाद, यहाँ मेरी ईमानदार राय है: यदि आप गारंटियों को महत्व देते हैं और बचत और आजीवन बीमा को मिलाने वाला एक सरल 'बचाओ और भूल जाओ' उत्पाद चाहते हैं, तो जीवन आनंद एक ठोस, अति-सुरक्षित विकल्प है। रिटर्न (~6%) इक्विटी म्यूचुअल फंड को नहीं हराएगा, लेकिन वे विश्वसनीय और कर-मुक्त हैं, जो एक बहुत बड़ा प्लस है। यह आक्रामक धन निर्माताओं के लिए नहीं है, लेकिन स्थिरता और मन की शांति की तलाश करने वाले किसी व्यक्ति के लिए, यह एलआईसी द्वारा पेश की जाने वाली सर्वश्रेष्ठ बंदोबस्ती योजनाओं में से एक है। मुझे उम्मीद है कि इस कैलकुलेटर ने आपको यह तय करने के लिए स्पष्टता दी है कि यह *आपके* वित्तीय कहानी के लिए सही है या नहीं।"
+            "title": "My Final Word: Is Jeevan Anand a Good Investment in 2025?",
+            "body": "After all the math, here's my honest take: Jeevan Anand is a solid, ultra-safe choice if you value guarantees and want a simple 'save and forget' product that combines savings with lifelong insurance. The returns (~6%) won't beat equity mutual funds, but they are reliable and tax-free, which is a huge plus. It's not for aggressive wealth builders, but for someone seeking stability and peace of mind, it's one of the best endowment plans LIC has to offer. For broader financial planning, explore our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for debt management, <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> for portfolio optimization, <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> for retirement planning, <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF</a> for investment comparisons, and <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to optimize taxes. Also explore other LIC plans like <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh</a>, <a href='/{lang}/lic-jeevan-umang-calculator' class='text-primary hover:underline'>Jeevan Umang</a>, <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>maturity calculator</a>, <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>surrender value calculator</a>, and <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a>. I hope this calculator has given you the clarity to decide if it's the right fit for *your* financial story."
         },
         "sections": [
             {
                 "id": "quick-answer",
                 "icon": "TrendingUp",
-                "title": "त्वरित उत्तर: नमूना जीवन आनंद अनुमान",
+                "title": "Quick Answer: Sample Jeevan Anand estimates",
                 "content": [
-                    { "type": "paragraph", "text": "<p>एक सामान्य एलआईसी पॉलिसी क्या देती है, यह जानने के लिए उत्सुक हैं? यहाँ ₹45 प्रति ₹1,000 बीमा राशि के अनुमानित बोनस दर के साथ एक मानक बंदोबस्ती योजना के लिए कुछ उदाहरणात्मक मैच्योरिटी राशियाँ हैं।</p>" },
+                    { "type": "paragraph", "text": "<p>Curious what a typical LIC policy yields? Here are some illustrative maturity amounts for a standard endowment plan with an assumed bonus rate of â‚¹45 per â‚¹1,000 Sum Assured. For detailed plan-wise premiums, use our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a>.</p> "},
                     {
                       "type": "table",
-                      "headers": ["बीमा राशि", "अवधि", "अनुमानित वार्षिक प्रीमियम", "अनुमानित मैच्योरिटी"],
+                      "headers": ["Sum Assured", "Term", "Est. Yearly Premium", "Est. Maturity"],
                       "rows": [
-                          ["₹5,00,000", "20 वर्ष", "≈ ₹28,500", "≈ ₹9,80,000"],
-                          ["₹10,00,000", "25 वर्ष", "≈ ₹45,000", "≈ ₹22,25,000"],
-                          ["₹1,00,00,000", "20 वर्ष", "≈ ₹5,70,000", "≈ ₹2.02 करोड़"]
+                          ["â‚¹5,00,000", "20 yrs", "â‰ˆ â‚¹28,500", "â‰ˆ â‚¹9,80,000"],
+                          ["â‚¹10,00,000", "25 yrs", "â‰ˆ â‚¹45,000", "â‰ˆ â‚¹22,25,000"],
+                          ["â‚¹1,00,00,000", "20 yrs", "â‰ˆ â‚¹5,70,000", "â‰ˆ â‚¹2.02 Cr"]
                       ]
                     }
                 ]
@@ -45,140 +45,148 @@
             {
                 "id": "how-it-works",
                 "icon": "Calculator",
-                "title": "मेरा जीवन आनंद कैलकुलेटर कैसे काम करता है (गणित के पीछे का जादू)",
+                "title": "How My Jeevan Anand Calculator Works (The Math Behind the Magic)",
                 "content": [
-                     { "type": "paragraph", "text": "मैंने यह कैलकुलेटर एलआईसी के रिटर्न की गणना वास्तव में कैसे की जाती है, इस पर से पर्दा उठाने के लिए बनाया है। यह एक ब्लैक बॉक्स नहीं है। यह आपको वास्तव में समझ में आने वाला एक प्रक्षेपण देने के लिए गारंटीकृत भागों को परिवर्तनीय बोनस के साथ जोड़ता है।" },
-                     { "type": "paragraph", "text": "<h3>मैच्योरिटी फॉर्मूला: एसए + निहित बोनस + एफएबी</h3><p>इसके मूल में, आपके अंतिम भुगतान की गणना यह सरल सूत्र है:</p><p class='font-mono bg-muted p-4 rounded-md my-4 text-center'><strong>मैच्योरिटी मूल्य = बीमा राशि + निहित बोनस + अंतिम अतिरिक्त बोनस (एफएबी)</strong></p><p>मुझे एक वास्तविक उदाहरण के साथ दिखाएं। ₹45 के उदाहरणात्मक बोनस दर और प्रति ₹1000 एसए पर ₹100 एफएबी के साथ 25 वर्षों में ₹10 लाख की पॉलिसी के लिए:</p><ul><li><strong>बीमा राशि:</strong> यह गारंटीकृत हिस्सा है, आपका आधार: ₹10,00,000</li><li><strong>निहित बोनस:</strong> यह बड़ा चर है। मेरा गणित: (10,00,000 / 1000) * 45 * 25 = ₹11,25,000</li><li><strong>एफएबी (लॉयल्टी बोनस):</strong> आपकी दीर्घकालिक प्रतिबद्धता के लिए आपका इनाम: (10,00,000 / 1000) * 100 = ₹1,00,000</li><li><strong>आपका कुल अनुमानित भुगतान:</strong> ₹10,00,000 + ₹11,25,000 + ₹1,00,000 = <strong>₹22,25,000</strong></li></ul>" },
-                     { "type": "paragraph", "text": "<h3>बोनस और एफएबी नंबर कहाँ से आते हैं?</h3><p>यहाँ ईमानदार सच्चाई है: बोनस की गारंटी नहीं है। जो कोई भी आपको अन्यथा बताता है वह कुछ बेच रहा है। मेरा कैलकुलेटर एलआईसी के पिछले बोनस घोषणाओं का विश्लेषण करके लिए गए उदाहरणात्मक दरों का उपयोग करता है। आधिकारिक-लेकिन-कम-स्पष्ट संस्करण के लिए, आप हमेशा <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-new-jeevan-anand-plan' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>एलआईसी नई जीवन आनंद ब्रोशर</a> देख सकते हैं।</p>" }
+                     { "type": "paragraph", "text": "I built this calculator to pull back the curtain on how LIC's returns are actually calculated. It's not a black box. It combines the guaranteed parts with the variable bonuses to give you a projection you can actually understand. Compare these guaranteed returns with <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF</a> or explore tax-efficient options using our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a>." },
+                     { "type": "paragraph", "text": "<h3>The Maturity Formula: SA + Vested Bonus + FAB</h3><p>At its heart, the calculation for your final payout is this simple formula:</p><p class='font-mono bg-muted p-4 rounded-md my-4 text-center'><strong>Maturity Value = Sum Assured + Vested Bonuses + Final Additional Bonus (FAB)</strong></p><p>Let me show you with a real example. For a â‚¹10 Lakh policy over 25 years (with an illustrative bonus rate of â‚¹45 and FAB of â‚¹100 per â‚¹1000 SA):</p><ul><li><strong>Sum Assured:</strong> This is the guaranteed part, your base: â‚¹10,00,000</li><li><strong>Vested Bonus:</strong> This is the big variable. My math: (10,00,000 / 1000) * 45 * 25 = â‚¹11,25,000</li><li><strong>FAB (Loyalty Bonus):</strong> Your reward for staying long-term: (10,00,000 / 1000) * 100 = â‚¹1,00,000</li><li><strong>Your Total Estimated Payout:</strong> â‚¹10,00,000 + â‚¹11,25,000 + â‚¹1,00,000 = <strong>â‚¹22,25,000</strong></li></ul>" },
+                     { "type": "paragraph", "text": "<h3>Where do the bonus & FAB numbers come from?</h3><p>Here's the honest truth: bonuses aren't guaranteed. Anyone who tells you otherwise is selling something. My calculator uses illustrative rates taken directly from analyzing LIC's past bonus declarations. For the official-but-less-clear version, you can always see the <a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-new-jeevan-anand-plan' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>LIC New Jeevan Anand brochure</a>.</p>" }
                 ]
             },
             {
                 "id": "inputs-explained",
                 "icon": "SlidersHorizontal",
-                "title": "इनपुट समझाया गया: जन्म तिथि, बीमा राशि, अवधि, प्रीमियम, प्रति ₹1,000 पर बोनस, एफएबी",
+                "title": "Inputs explained: DOB, Sum Assured, Term, Premium, Bonus per â‚¹1,000, FAB",
                 "content": [
                     {"type":"list", "items": [
-                        "<strong>आयु और अवधि:</strong> ये दो सबसे बड़े कारक हैं जो आपके प्रीमियम का फैसला करते हैं। आप जितनी कम उम्र में शुरू करते हैं, यह उतना ही सस्ता होता है। सरल।",
-                        "<strong>बीमा राशि:</strong> यह गारंटीकृत मृत्यु लाभ और आपके मैच्योरिटी गणना का आधार है। यह पॉलिसी का 'वादा' है।",
-                        "<strong>प्रति ₹1,000 पर बोनस:</strong> यहीं पर वास्तविक वृद्धि होती है। यह सिंपल रिवर्शनरी बोनस दर है। आपके अनुमानों के लिए ₹40-₹49 का ऐतिहासिक औसत एक यथार्थवादी प्रारंभिक बिंदु है।",
-                        "<strong>अंतिम अतिरिक्त बोनस (एफएबी):</strong> इसे अपनी पॉलिसी पर हार न मानने के लिए एक वफादारी बोनस के रूप में सोचें। यह लंबी अवधि की पॉलिसियों के लिए अंत में भुगतान किया जाता है। यदि आप अनिश्चित हैं तो आप इसे 0 पर छोड़ सकते हैं, लेकिन मैंने एक सामान्य दर पहले से भर दी है।"
+                        "<strong>Age & Term:</strong> These are the two biggest factors that decide your premium. The younger you start, the cheaper it is. Simple. Compare with our <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh calculator</a> or <a href='/{lang}/lic-jeevan-umang-calculator' class='text-primary hover:underline'>Jeevan Umang calculator</a> for other term options.",
+                        "<strong>Sum Assured:</strong> This is the guaranteed death benefit and the base for your maturity calculation. It's the 'promise' of the policy.",
+                        "<strong>Bonus per â‚¹1,000:</strong> This is where the real growth happens. It's the Simple Reversionary Bonus rate. A historical average of â‚¹40-â‚¹49 is a realistic starting point for your estimates.",
+                        "<strong>Final Additional Bonus (FAB):</strong> Think of this as a loyalty bonus for not giving up on your policy. It's paid at the end for long-term policies. You can leave this at 0 if you're unsure, but I've pre-filled a typical rate. For detailed FAB analysis, see our <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a>."
                     ]}
                 ]
             },
             {
                 "id": "worked-examples",
                 "icon": "FileText",
-                "title": "काम किए गए उदाहरण और IRR (3 उदाहरण; गणित और IRR दिखाएं)",
+                "title": "Worked examples & IRR (3 examples; show math & IRR)",
                 "content": [
                     {"type": "examples", "items": [
-                        {"title": "‘10 लाख’ प्रश्न: एक वास्तविक-दुनिया का उदाहरण", "body": "<p>यह वह सबसे आम परिदृश्य है जिसके बारे में लोग मुझसे पूछते हैं। चलिए 30-वर्षीय व्यक्ति के लिए संख्याओं को चलाते हैं।</p><p><strong>इनपुट:</strong> आयु: 30, बीमा राशि: ₹10 लाख, अवधि: 25 वर्ष, बोनस दर: ₹45, एफएबी दर: ₹100।</p><p><strong>मेरी गणना:</strong><br/>- लगभग। वार्षिक प्रीमियम (लागत): ₹45,000<br/>- 25 वर्षों में आप कुल भुगतान करते हैं: ~₹11.25 लाख<br/>- अनुमानित भुगतान (इनाम): <strong>~₹22,25,000</strong><br/>- <strong>आपका लगभग कर-मुक्त रिटर्न (IRR): ~6.05%</strong>। यह वह वास्तविक संख्या है जिसकी आपको एक एफडी या म्यूचुअल फंड के खिलाफ तुलना करनी चाहिए।</p>"},
-                        {"title": "मध्य-कैरियर योजना: 35-वर्षीय के लिए ₹5 लाख कवर", "body": "<p><strong>इनपुट:</strong> आयु: 35, एसए: ₹5 लाख, अवधि: 20 वर्ष, बोनस दर: ₹42, एफएबी दर: ₹70।</p><p><strong>मेरी गणना:</strong><br/>- लगभग। वार्षिक प्रीमियम: ₹28,000<br/>- 20 वर्षों में आप कुल भुगतान करते हैं: ~₹5.6 लाख<br/>- अनुमानित भुगतान: <strong>~₹9,55,000</strong><br/>- <strong>लगभग कर-मुक्त रिटर्न (IRR): ~5.90%</strong></p>"},
-                        {"title": "उच्च एसए: आयु 40, एसए ₹1 करोड़, अवधि 20 वर्ष — एकल उच्च-निवल-मूल्य परिदृश्य दिखाएं", "body": "<p>मेरे बहुत सारे ग्राहक पूछते हैं, 'मैं 1 करोड़ तक कैसे पहुँचूँ?' यहाँ एक तरीका है।</p><p><strong>इनपुट:</strong> आयु: 40, एसए: ₹50 लाख, अवधि: 20 वर्ष, बोनस दर: ₹45, एफएबी दर: ₹120।</p><p><strong>मेरी गणना:</strong><br/>- लगभग। वार्षिक प्रीमियम: ~₹2.85 लाख<br/>- 20 वर्षों में आप कुल भुगतान करते हैं: ~₹57 लाख<br/>- अनुमानित भुगतान: <strong>~₹1.02 करोड़</strong><br/>- <strong>लगभग कर-मुक्त रिटर्न (IRR): ~5.85%</strong></p>"}
+                        {"title": "The '10 Lakh' Question: A Real-World Example", "body": "<p>This is the most common scenario people ask me about. Let's run the numbers for a 30-year-old.</p><p><strong>Inputs:</strong> Age: 30, Sum Assured: â‚¹10 Lakh, Term: 25 years, Bonus Rate: â‚¹45, FAB Rate: â‚¹100.</p><p><strong>My Calculation:</strong><br/>- Approx. Yearly Premium (The cost): â‚¹45,000<br/>- Total You Pay Over 25 Years: ~â‚¹11.25 Lakh<br/>- Estimated Payout (The reward): <strong>~â‚¹22,25,000</strong><br/>- <strong>Your Approx. Tax-Free Return (IRR): ~6.05%</strong>. This is the real number you should compare against an FD or Mutual Fund.</p>"},
+                        {"title": "The Mid-Career Plan: â‚¹5 Lakh Cover for a 35-Year-Old", "body": "<p><strong>Inputs:</strong> Age: 35, SA: â‚¹5 Lakh, Term: 20 years, Bonus Rate: â‚¹42, FAB Rate: â‚¹70.</p><p><strong>My Calculation:</strong><br/>- Approx. Yearly Premium: â‚¹28,000<br/>- Total You Pay Over 20 Years: ~â‚¹5.6 Lakh<br/>- Estimated Payout: <strong>~â‚¹9,55,000</strong><br/>- <strong>Approx. Tax-Free Return (IRR): ~5.90%</strong></p>"},
+                        {"title": "High SA: Age 40, SA â‚¹1 Crore, Term 20 yrs â€” show single high-net-worth scenario", "body": "<p>A lot of my clients ask, 'How do I get to 1 crore?' Hereâ€™s one way.</p><p><strong>Inputs:</strong> Age: 40, SA: â‚¹50 Lakh, Term: 20 years, Bonus Rate: â‚¹45, FAB Rate: â‚¹120.</p><p><strong>My Calculation:</strong><br/>- Approx. Yearly Premium: ~â‚¹2.85 Lakh<br/>- Total You Pay Over 20 Years: ~â‚¹57 Lakh<br/>- Estimated Payout: <strong>~â‚¹1.02 Crore</strong><br/>- <strong>Approx. Tax-Free Return (IRR): ~5.85%</strong></p>"}
                     ]}
                 ]
             },
             {
                 "id": "surrender-paidup",
                 "icon": "GitCompareArrows",
-                "title": "सरेंडर और पेड-अप मूल्य (सूत्र, जीएसवी बनाम एसएसवी, नमूना गणना)",
+                "title": "Surrender & Paid-up values (formulas, GSV vs SSV, sample calc)",
                 "content": [
-                    {"type": "paragraph", "text":"<p>अपने प्रीमियम का भुगतान बंद करने के बारे में सोच रहे हैं? यह एक महत्वपूर्ण निर्णय है। आपके पास दो मुख्य विकल्प हैं, और गलत विकल्प चुनने पर आपको बहुत महंगा पड़ सकता है। चलिए इसे तोड़ते हैं ताकि आप सही निर्णय ले सकें।</p>"},
+                    {"type": "paragraph", "text":"<p>Thinking of stopping your premiums? This is a critical decision. You have two main options, and choosing the wrong one can cost you dearly. Let's break it down so you can make the right call.</p>"},
                     {"type": "list", "items": [
-                        "<strong>पेड-अप मूल्य:</strong> यदि आपने कम से कम 2 पूर्ण वर्षों के लिए भुगतान किया है, तो आप बस रुक सकते हैं। पॉलिसी मरती नहीं है। यह कम बीमा राशि के साथ 'पेड-अप' हो जाती है। आपको अंत में फिर भी एक भुगतान मिलेगा। मेरा कैलकुलेटर आपके लिए इसका अनुमान लगाता है।",
-                        "<strong>सरेंडर मूल्य:</strong> यहाँ आप पॉलिसी को पूरी तरह से समाप्त कर देते हैं और एकमुश्त नकद भुगतान लेते हैं। आप जीवन कवर खो देते हैं। मूल्य गारंटीकृत (जीएसवी) और विशेष (एसएसवी) में विभाजित है। आपको हमेशा दोनों में से जो अधिक हो वह मिलता है, जो लगभग हमेशा एसएसवी होता है। मेरा कैलकुलेटर आपको इसके लिए एक यथार्थवादी अनुमान देता है।"
+                        "<strong>Paid-Up Value:</strong> If you've paid for at least 2 full years, you can just stop. The policy doesn't die. It becomes 'Paid-Up' with a lower Sum Assured. You'll still get a payout at the end. My calculator estimates this for you.",
+                        "<strong>Surrender Value:</strong> This is where you terminate the policy completely and take a one-time cash payment. You lose the life cover. The value is split into Guaranteed (GSV) and Special (SSV). You always get the higher of the two, which is almost always the SSV. My calculator gives you a realistic estimate for this."
                     ]},
-                    {"type": "alert", "variant": "default", "title": "मेरी ईमानदार सलाह: सरेंडर बनाम पेड-अप", "text":"यदि आपको तत्काल नकदी की आवश्यकता नहीं है, तो पॉलिसी को 'पेड-अप' बनाना लगभग हमेशा बेहतर वित्तीय कदम होता है। आप कुछ जीवन कवर रखते हैं और आपका पैसा बढ़ता रहता है। केवल तभी सरेंडर करें जब आपके पास एक गंभीर, तत्काल नकदी की आवश्यकता हो जिसे आप किसी अन्य तरीके से हल नहीं कर सकते। विस्तृत विघटन के लिए, हमारे <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>एलआईसी सरेंडर मूल्य कैलकुलेटर</a> देखें।"}
+                    {"type": "alert", "variant": "default", "title": "My Honest Advice: Surrender vs. Paid-up", "text":"If you don't need the cash urgently, making the policy 'Paid-Up' is almost always the smarter financial move. You keep some life cover and your money continues to grow. Only surrender if you have a dire, immediate cash need that you can't solve any other way. For a detailed breakdown, use our <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC Surrender Value Calculator</a> and explore <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimization options</a> for alternative solutions."}
                 ]
             },
             {
                 "id": "key-features",
                 "icon": "ShieldCheck",
-                "title": "जीवन आनंद (प्लान 915) — एक नज़र में मुख्य विशेषताएं",
+                "title": "Jeevan Anand (Plan 915) â€” Key features at a glance",
                 "content": [
-                    {"type": "table", "headers": ["फ़ीचर", "विवरण"], "rows": [
-                        ["प्लान UIN", "512N279V03"],
-                        ["योजना प्रकार", "गैर-लिंक्ड, सहभागी, व्यक्तिगत, जीवन बीमा"],
-                        ["प्रवेश आयु", "18 से 50 वर्ष"],
-                        ["पॉलिसी अवधि", "15 से 35 वर्ष"],
-                        ["बीमा राशि", "न्यूनतम ₹1,00,000 (कोई ऊपरी सीमा नहीं)"],
-                        ["मृत्यु लाभ", "मूल बीमा राशि का 125% या वार्षिक प्रीमियम का 7 गुना, जो भी अधिक हो, और निहित बोनस।"],
-                        ["मैच्योरिटी लाभ", "बीमा राशि + निहित बोनस + अंतिम अतिरिक्त बोनस (एफएबी)।"],
-                        ["आधिकारिक लिंक", "<a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-new-jeevan-anand-plan' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>एलआईसी वेबसाइट पर देखें</a>"]
+                    {"type": "table", "headers": ["Feature", "Detail"], "rows": [
+                        ["Plan UIN", "512N279V03"],
+                        ["Plan Type", "Non-linked, Participating, Individual, Life Assurance"],
+                        ["Entry Age", "18 to 50 years"],
+                        ["Policy Term", "15 to 35 years"],
+                        ["Sum Assured", "Minimum â‚¹1,00,000 (No upper limit)"],
+                        ["Death Benefit", "Higher of 125% of Basic SA or 7x Annualized Premium, plus vested bonuses."],
+                        ["Maturity Benefit", "Sum Assured + Vested Bonuses + Final Additional Bonus (FAB)."],
+                        ["Official Link", "<a href='https://licindia.in/web/guest/products/insurance-plan/lic-s-new-jeevan-anand-plan' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>View on LIC Website</a>"]
                     ]}
                 ]
             },
             {
                 "id":"comparison",
                 "icon":"GitCompareArrows",
-                "title":"जीवन आनंद बनाम लोकप्रिय विकल्प (जीवन लाभ, नई बंदोबस्ती)",
+                "title":"Jeevan Anand vs Popular Alternatives (Jeevan Labh, New Endowment)",
                 "content":[
-                    {"type":"table", "headers":["फ़ीचर", "जीवन आनंद (915)", "जीवन लाभ (936)", "नई बंदोबस्ती (914)"], "rows":[
-                        ["प्राथमिक फ़ीचर","संपूर्ण जीवन कवर + बचत","सीमित प्रीमियम भुगतान","शुद्ध बंदोबस्ती बचत"],
-                        ["प्रीमियम अवधि","पॉलिसी अवधि के बराबर","पॉलिसी अवधि से कम","पॉलिसी अवधि के बराबर"],
-                        ["जोखिम कवर","मैच्योरिटी के बाद भी जारी रहता है","मैच्योरिटी पर समाप्त होता है","मैच्योरिटी पर समाप्त होता है"],
-                        ["किसके लिए सर्वश्रेष्ठ","विरासत योजना + बचत","कम भुगतान प्रतिबद्धता के साथ लक्ष्य-आधारित बचत","सरल, अनुशासित बचत"]
+                    {"type":"table", "headers":["Feature", "Jeevan Anand (915)", "Jeevan Labh (936)", "New Endowment (914)"], "rows":[
+                        ["Primary Feature","Whole Life Cover + Savings","Limited Premium Payment","Pure Endowment Savings"],
+                        ["Premium Term","Equal to Policy Term","Shorter than Policy Term","Equal to Policy Term"],
+                        ["Risk Cover","Continues after maturity","Ends at maturity","Ends at maturity"],
+                        ["Best For","Legacy planning + Savings","Goal-based savings with shorter pay commitment","Simple, disciplined savings"]
                     ]},
-                     {"type":"paragraph", "text":"<br><strong>मेरा मानना:</strong> जीवन आनंद अद्वितीय है क्योंकि जीवन कवर आपकी मैच्योरिटी राशि मिलने के बाद भी जारी रहता है। यह बचत और विरासत छोड़ने के लिए 'टू-इन-वन' है। जीवन लाभ उन लोगों के लिए है जो प्रीमियम का भुगतान जल्दी समाप्त करना चाहते हैं। नई बंदोबस्ती सबसे बुनियादी, कोई तामझाम वाली बचत योजना है। हमारे मुख्य <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>एलआईसी प्रीमियम कैलकुलेटर</a> में उनकी तुलना करें।"}
+                     {"type":"paragraph", "text":"<br><strong>My take:</strong> Jeevan Anand is unique because the life cover continues even after you get your maturity money. It's a 'two-in-one' for savings and leaving a legacy. Jeevan Labh is for people who want to finish paying premiums early. The New Endowment is the most basic, no-frills savings plan. Compare them in our main <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC Premium Calculator</a>."}
                 ]
             },
             {
                 "id":"bonus-history",
                 "icon":"BarChart2",
-                "title":"बोनस इतिहास और प्रभाव (पिछले 3–5 वर्षों का उदाहरणात्मक बोनस प्रति ₹1,000)",
+                "title":"Bonus History & Impact (table showing last 3â€“5 years illustrative bonus per â‚¹1,000)",
                 "content": [
-                    {"type":"paragraph", "text":"<p>आपका अंतिम भुगतान एलआईसी द्वारा घोषित बोनस पर बहुत अधिक निर्भर करता है। वे गारंटीकृत नहीं हैं, लेकिन पिछले कुछ वर्षों को देखने से हमें एक यथार्थवादी उम्मीद मिलती है। यहाँ 21-वर्षीय अवधि की पॉलिसी के लिए प्रति ₹1,000 बीमा राशि पर उदाहरणात्मक बोनस दरें हैं।</p>"},
-                    {"type":"table", "headers":["वित्तीय वर्ष", "उदाहरणात्मक बोनस दर"], "rows":[
-                        ["2023-24", "₹46"],
-                        ["2022-23", "₹45"],
-                        ["2021-22", "₹45"],
-                        ["2020-21", "₹41"],
-                        ["2019-20", "₹41"]
+                    {"type":"paragraph", "text":"<p>Your final payout is hugely dependent on the bonuses LIC declares. While they aren't guaranteed, looking at the last few years gives us a realistic expectation. Here are illustrative bonus rates per â‚¹1,000 Sum Assured for a 21-year term policy.</p>"},
+                    {"type":"table", "headers":["Financial Year", "Illustrative Bonus Rate"], "rows":[
+                        ["2023-24", "â‚¹46"],
+                        ["2022-23", "â‚¹45"],
+                        ["2021-22", "â‚¹45"],
+                        ["2020-21", "â‚¹41"],
+                        ["2019-20", "â‚¹41"]
                     ]},
-                    {"type":"paragraph", "text":"<p>स्रोत: एलआईसी और पॉलिसीबाजार बोनस घोषणाओं से डेटा का विश्लेषण। ये दरें भविष्य के वर्षों के लिए गारंटीकृत नहीं हैं।</p>"}
+                    {"type":"paragraph", "text":"<p>Source: Analysis of data from LIC and PolicyBazaar bonus declarations. These rates are not guaranteed for future years.</p>"}
                 ]
             },
             {
                 "id": "who-should-use",
                 "icon": "Users",
-                "title": "इस कैलकुलेटर का उपयोग कौन करना चाहिए और सामान्य उपयोग-मामले (एनआरआई, सेवानिवृत्त, माता-पिता की योजना)",
+                "title": "Who should use this calculator & common use-cases (NRI, retiree, parent planning)",
                 "content": [
                     {"type":"list", "items":[
-                        "<strong>भविष्य के लिए योजना बनाने वाले माता-पिता:</strong> मैं कई माता-पिता को बच्चे की शिक्षा या विवाह निधि के लिए योजना बनाने के लिए इसका उपयोग करते हुए देखता हूं। यह एक क्लासिक, सुरक्षित विकल्प है।",
-                        "<strong>युवा पेशेवर:</strong> यदि आप एक अनुशासित दीर्घकालिक बचत योजना की तलाश में हैं जो आपको जीवन कवर भी देती है, तो यह एक ठोस प्रारंभिक बिंदु है।",
-                        "<strong>सुरक्षित भारतीय निवेश की तलाश में एनआरआई:</strong> हां, एनआरआई बिल्कुल इस कैलकुलेटर का उपयोग कर सकते हैं। यदि आप घर वापस एक सुरक्षित, INR-मूल्य वाले निवेश की तलाश में हैं, तो यह सबसे लोकप्रिय विकल्पों में से एक है।"
+                        "<strong>Parents Planning for the Future:</strong> I see many parents use this to plan for a child's education or marriage fund. It's a classic, safe choice. For child-specific plans, check our <a href='/{lang}/lic-child-plan' class='text-primary hover:underline'>LIC child plan calculator</a>.",
+                        "<strong>Young Professionals:</strong> If you're looking for a disciplined long-term savings plan that also gives you life cover, this is a solid starting point.",
+                        "<strong>NRIs Looking for Secure Indian Investments:</strong> Yes, NRIs can absolutely use this calculator. If you're looking for a safe, INR-denominated investment back home, this is one of the most popular options."
                     ]}
                 ]
             },
             {
                 "id": "faq",
                 "icon": "HelpCircle",
-                "title": "आपके प्रश्न, उत्तर: बिना बकवास के FAQ",
+                "title": "Your Questions, Answered: The No-Nonsense FAQ",
                 "content": [
                     { "type": "faq", "items": [
-                        { "q": "एलआईसी जीवन आनंद मैच्योरिटी फॉर्मूला क्या है?", "a": "मैच्योरिटी = बीमा राशि + (निहित सरल प्रत्यावर्ती बोनस × पॉलिसी अवधि) + अंतिम अतिरिक्त बोनस (यदि घोषित हो)। अनुमानों के लिए बोनस/एफएबी इनपुट के साथ कैलकुलेटर का उपयोग करें।" },
-                        { "q": "एक ऑनलाइन जीवन आनंद कैलकुलेटर कितना सटीक है?", "a": "यह एक अनुमान है — जब आप सही बोनस/एफएबी और प्रीमियम इनपुट करते हैं तो सटीक होता है। वास्तविक मैच्योरिटी एलआईसी द्वारा निर्धारित की जाती है और अंतिम घोषित बोनस और अंडरराइटिंग पर निर्भर करती है।" },
-                        { "q": "जीवन आनंद सरेंडर मूल्य कब प्राप्त होता है?", "a": "आमतौर पर 2 पूर्ण वर्षों के प्रीमियम के बाद। पात्रता और दरें योजना के अनुसार अलग-अलग होती हैं; हमारा कैलकुलेटर जीएसवी और एसएसवी अनुमान भुगतान किए गए वर्षों के आधार पर दिखाता है।" },
-                        { "q": "क्या जीवन आनंद मैच्योरिटी धारा 10(10D) के तहत कर योग्य है?", "a": "आम तौर पर कर-मुक्त, लेकिन शर्तें लागू होती हैं (उदा., प्रीमियम नियम)। अपने विशिष्ट मामले के लिए सटीक कर उपचार हमेशा जांचें या एक कर सलाहकार से परामर्श करें।" },
-                        { "q": "क्या मुझे सरेंडर करना चाहिए या मेरी पॉलिसी को पेड-अप करना चाहिए?", "a": "पेड-अप अक्सर दीर्घकालिक पॉलिसियों के लिए उच्च अंतिम लाभ देता है — सरेंडर तत्काल नकदी देता है। निर्णय लेने के लिए कैलकुलेटर के पेड-अप बनाम सरेंडर तुलना का उपयोग करें।" },
-                        { "q": "क्या एनआरआई जीवन आनंद खरीद सकते हैं और इस कैलकुलेटर का उपयोग कर सकते हैं?", "a": "एनआरआई कैलकुलेटर का उपयोग कर सकते हैं; वास्तविक खरीद और पात्रता एलआईसी नियमों और फेमा विनियमों पर निर्भर करती है — एलआईसी/एजेंट से जांच करें।" },
-                        { "q": "राइडर्स जोड़ने से मैच्योरिटी कैसे प्रभावित होती है?", "a": "राइडर्स प्रीमियम बढ़ाते हैं लेकिन आमतौर पर मैच्योरिटी बीमा राशि नहीं बढ़ाते हैं; राइडर लाभ कवर किए गए घटनाओं के मामले में अलग से भुगतान किए जाते हैं।" },
-                        { "q": "क्या मैं अपनी जीवन आनंद पॉलिसी पर ऋण ले सकता हूँ?", "a": "हां — सरेंडर मूल्य प्राप्त करने के बाद ऋण आम तौर पर उपलब्ध होते हैं, आमतौर पर एसएसवी के 80–90% तक।" },
-                        { "q": "बोनस वास्तव में मैच्योरिटी को कैसे प्रभावित करते हैं?", "a": "बहुत बड़े पैमाने पर। वे आपके रिटर्न का इंजन हैं। प्रति ₹1,000 बीमा राशि पर बोनस दर में एक छोटा सा बदलाव भी अवधि के दौरान चक्रवृद्धि होता है और आपके अंतिम भुगतान को लाखों से बदल सकता है। इसीलिए यथार्थवादी दरों का उपयोग करना इतना महत्वपूर्ण है।" },
-                        { "q": "जीवन आनंद पॉलिसी को सरेंडर करने के लिए कौन से दस्तावेजों की आवश्यकता होती है?", "a": "पॉलिसी बॉन्ड, पहचान प्रमाण, बैंक विवरण, सरेंडर फॉर्म और डिस्चार्ज फॉर्म (एलआईसी की अद्यतन आवश्यकताओं के अधीन)।" },
-                        { "q": "एलआईसी जीवन आनंद में उत्तरजीविता लाभ क्या है?", "a": "मनी-बैक योजना के विपरीत, जीवन आनंद (915) में आवधिक 'उत्तरजीविता लाभ' नहीं होते हैं। मुख्य भुगतान पॉलिसी अवधि के अंत में एकमुश्त होता है। हालांकि, जीवन कवर (बीमा राशि के बराबर) मैच्योरिटी के बाद भी, पॉलिसीधारक की मृत्यु तक जारी रहता है, जो एक अनूठी विशेषता है।" },
-                        { "q": "एलआईसी जीवन आनंद में नामांकित व्यक्ति को ऑनलाइन कैसे बदलें?", "a": "वर्तमान में, एलआईसी पॉलिसी के लिए नामांकित व्यक्ति को बदलना एक ऑफ़लाइन प्रक्रिया है। आपको 'नामांकित व्यक्ति परिवर्तन फॉर्म' भरना होगा और इसे अपनी पॉलिसी और केवाईसी दस्तावेजों की एक प्रति के साथ अपनी सर्विसिंग एलआईसी शाखा में जमा करना होगा।" },
-                        { "q": "एलआईसी जीवन आनंद में पॉलिसी अवधि क्या है?", "a": "पॉलिसी अवधि वह अवधि है जिसके लिए आप प्रीमियम का भुगतान करते हैं और प्राथमिक लाभों के लिए कवर किए जाते हैं। प्लान 915 के लिए, यह 15 से 35 वर्ष तक हो सकता है। एक अनूठी विशेषता यह है कि जीवन कवर (बीमा राशि के बराबर) पॉलिसी अवधि के बाद भी, पॉलिसीधारक की मृत्यु तक जारी रहता है।" }
+                        { "q": "What is the LIC Jeevan Anand maturity formula?", "a": "Maturity = Sum Assured + (Vested Simple Reversionary Bonus Ã— Policy Term) + Final Additional Bonus (if declared). Use the calculator with the bonus/FAB inputs for estimates." },
+                        { "q": "How accurate is an online Jeevan Anand calculator?", "a": "It's an estimate â€” accurate when you input the correct bonus/FAB and premium. Actual maturity is determined by LIC and depends on final declared bonuses and underwriting." },
+                        { "q": "When does Jeevan Anand get surrender value?", "a": "Typically after 2 full years of premiums. Eligibility and rates vary by plan; our calculator shows GSV & SSV estimates based on years paid." },
+                        { "q": "Is Jeevan Anand maturity taxable under Section 10(10D)?", "a": "Generally tax-free, but conditions apply (eg. premium rules). Always check exact tax treatment for your case or consult a tax advisor." },
+                        { "q": "Should I surrender or make my policy paid-up?", "a": "Paid-up often gives higher final benefits (for long-term policies) â€” surrender gives immediate cash. Use our <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC surrender value calculator</a> or this calculator's paid-up vs surrender comparison to decide." },
+                        { "q": "Can NRIs buy Jeevan Anand and use this calculator?", "a": "NRIs can use the calculator; actual purchase and eligibility depend on LIC rules and FEMA regulations â€” check with LIC/agent." },
+                        { "q": "How does adding riders affect maturity?", "a": "Riders increase premium but usually donâ€™t increase the maturity sum assured; rider benefits are paid separately in case of covered events." },
+                        { "q": "Can I take a loan against my Jeevan Anand policy?", "a": "Yes â€” loans are generally available after the policy acquires surrender value. Typical loan amount is up to 80â€“90% of the SSV. Use our <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC surrender value calculator</a> to estimate your loan eligibility and compare with our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for the best strategy." },
+                        { "q": "How do bonuses really affect the maturity?", "a": "Massively. They are the engine of your returns. Even a small change in the bonus rate per â‚¹1,000 Sum Assured compounds over the term and can change your final payout by lakhs. That's why using realistic rates is so important." },
+                        { "q": "What documents are needed to surrender a Jeevan Anand policy?", "a": "Policy bond, identity proof, bank details, surrender form and discharge form (subject to LICâ€™s updated requirements)." },
+                        { "q": "What is the survival benefit in LIC Jeevan Anand?", "a": "Unlike a money-back plan, Jeevan Anand (915) does not have periodic 'survival benefits'. The main payout is the lump sum at the end of the policy term. However, the life cover (equal to the Sum Assured) continues even after the policy term, until the policyholder's death, which is a unique feature." },
+                        { "q": "How to change nominee in LIC Jeevan Anand online?", "a": "Currently, changing the nominee for an LIC policy is an offline process. You need to fill out the 'Nominee Change Form' and submit it at your servicing LIC branch along with a copy of your policy and KYC documents." },
+                        { "q": "What is the policy term in LIC Jeevan Anand?", "a": "The policy term is the duration for which you pay premiums and are covered for the primary benefits. For Plan 915, it can range from 15 to 35 years. A unique feature is that the life cover (equal to the Sum Assured) continues even after the policy term, until the policyholder's death." },
+                        { "q": "How does Jeevan Anand compare with other investment options?", "a": "Jeevan Anand offers guaranteed returns with insurance cover. Compare with <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a> for tax-free savings, <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF</a> for fixed deposits, or <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual funds</a> for market-linked growth." },
+                        { "q": "What about tax planning with Jeevan Anand?", "a": "Premiums are eligible for tax deduction under Section 80C. Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to optimize your overall tax savings and compare with <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a> for additional tax benefits." },
+                        { "q": "How to plan overall retirement with Jeevan Anand?", "a": "For comprehensive retirement planning, combine Jeevan Anand with our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> and explore <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>APY calculator</a> for pension options." }
                     ]}
                 ]
             }
         ]
     },
     "related_calculators": {
-        "title": "यह भी पढ़ें: अन्य लोकप्रिय योजनाओं से तुलना करें",
+        "title": "Also Read: Compare with Other Popular Plans",
         "links": [
-            { "title": "एलआईसी जीवन लाभ कैलकुलेटर", "description": "इस लोकप्रिय सीमित-भुगतान वाली बंदोबस्ती योजना से तुलना करें।", "href": "/lic-jeevan-labh-calculator" },
-            { "title": "एलआईसी जीवन उमंग कैलकुलेटर", "description": "मूल 'जीवन भर 8%' गारंटीकृत आय योजना।", "href": "/lic-jeevan-umang-calculator" },
-            { "title": "एलआईसी मैच्योरिटी कैलकुलेटर", "description": "किसी भी एलआईसी योजना के लिए मैच्योरिटी का अनुमान लगाएं।", "href": "/lic-maturity-calculator" }
+            { "title": "LIC Jeevan Labh Calculator", "description": "Compare against this popular limited-pay endowment plan.", "href": "/lic-jeevan-labh-calculator" },
+            { "title": "LIC Jeevan Umang Calculator", "description": "The original '8% for life' guaranteed income plan.", "href": "/lic-jeevan-umang-calculator" },
+            { "title": "LIC Maturity Calculator", "description": "Estimate maturity for any LIC plan.", "href": "/lic-maturity-calculator" },
+            { "title": "LIC Premium Calculator", "description": "Compare premiums across all LIC plans.", "href": "/lic-premium-calculator" },
+            { "title": "LIC Surrender Value Calculator", "description": "Estimate surrender and loan values.", "href": "/lic-surrender-value-calculator" },
+            { "title": "FD vs PPF Calculator", "description": "Compare fixed deposits with PPF returns.", "href": "/fd-vs-ppf-calculator" },
+            { "title": "Retirement Corpus Calculator", "description": "Plan your overall retirement needs.", "href": "/retirement-corpus-calculator" },
+            { "title": "Tax Regime Calculator", "description": "Optimize your tax savings.", "href": "/tax-regime-calculator" }
         ]
     }
 }

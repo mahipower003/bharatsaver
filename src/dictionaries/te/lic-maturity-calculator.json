@@ -1,40 +1,40 @@
-{
-  "meta_title": "ఎల్‌ఐసి మెచ్యూరిటీ కాలిక్యులేటర్ — మీ ఎల్‌ఐసి పాలసీ మెచ్యూరిటీని ఆన్‌లైన్‌లో లెక్కించండి (ఉచితం)",
-  "meta_description": "ఎల్‌ఐసి పథకాల కోసం మెచ్యూరిటీ, సరెండర్ మరియు పెయిడ్-అప్ విలువలను అంచనా వేయడానికి మా ఉచిత ఎల్‌ఐసి మెచ్యూరిటీ కాలిక్యులేటర్‌ను ఉపయోగించండి. బీమా మొత్తం, కాలపరిమితి, బోనస్ రేటు నమోదు చేసి, తక్షణమే డౌన్‌లోడ్ చేసుకోగల ఫలితాలను పొందండి.",
-  "h1": "ఎల్‌ఐసి మెచ్యూరిటీ కాలిక్యులేటర్ — మీ ఎల్‌ఐసి పాలసీ మెచ్యూరిటీని తక్షణమే అంచనా వేయండి (సాధనం + గైడ్)",
-  "top_cta": "<strong>తక్షణ అంచనా పొందండి:</strong> మీ పథకం, బీమా మొత్తం మరియు కాలపరిమితిని నమోదు చేయండి — మెచ్యూరిటీ, సరెండర్ మరియు పెయిడ్-అప్ విలువలను చూడటానికి లెక్కించు క్లిక్ చేయండి. <a href=\"#calculator-widget\">ఇప్పుడే ప్రారంభించండి</a>",
+﻿{
+  "meta_title": "LIC Maturity Calculator â€” Calculate Your LIC Policy Maturity Online (Free)",
+  "meta_description": "Use our free LIC maturity calculator to estimate maturity, surrender and paid-up values for LIC plans. Enter sum assured, term, bonus rate & get instant downloadable results.",
+  "h1": "LIC Maturity Calculator â€” Estimate Your LIC Policy Maturity Instantly (Tool + Guide)",
+  "top_cta": "<strong>Get an instant estimate:</strong> Enter your plan, sum assured and term â€” click Calculate to view maturity, surrender and paid-up values. <a href=\"#calculator-widget\">Start now</a>",
   "tool": {
-    "title": "శీఘ్ర ఎల్‌ఐసి మెచ్యూరిటీ కాలిక్యులేటర్",
-    "description": "మీ మెచ్యూరిటీ, సరెండర్ మరియు పెయిడ్-అప్ విలువల తక్షణ అంచనాను పొందడానికి మీ పాలసీ వివరాలను నమోదు చేయండి.",
-    "plan_label": "పథకం ప్రీసెట్‌ను ఎంచుకోండి",
-    "plan_placeholder": "ఒక పథకాన్ని ఎంచుకోండి",
-    "sum_assured_label": "బీమా మొత్తం (₹)",
-    "policy_term_label": "పాలసీ కాలపరిమితి (సంవత్సరాలు)",
-    "premium_label": "వార్షిక ప్రీమియం (₹)",
-    "bonus_rate_label": "ఉదాహరణాత్మక బోనస్ రేటు (ప్రతి ₹1000 బీమా మొత్తానికి)",
-    "fab_rate_label": "తుది అదనపు బోనస్ (FAB) (ప్రతి ₹1000 బీమా మొత్తానికి, ఐచ్ఛికం)",
-    "dob_label": "పుట్టిన తేదీ",
-    "last_premium_date_label": "చివరి ప్రీమియం చెల్లించిన తేదీ",
-    "calculate_button": "మెచ్యూరిటీ & సరెండర్ విలువను లెక్కించండి",
-    "calculating": "లెక్కిస్తోంది...",
-    "download_pdf": "పిడిఎఫ్‌గా డౌన్‌లోడ్ చేయండి",
-    "share_results": "ఫలితాలను పంచుకోండి",
-    "contact_cfp": "ఒక సిఎఫ్‌పిని సంప్రదించండి"
+    "title": "Quick LIC Maturity Calculator",
+    "description": "Enter your policy details to get an instant estimate of your maturity, surrender, and paid-up values.",
+    "plan_label": "Select Plan Preset",
+    "plan_placeholder": "Choose a plan",
+    "sum_assured_label": "Sum Assured (â‚¹)",
+    "policy_term_label": "Policy Term (Years)",
+    "premium_label": "Annual Premium (â‚¹)",
+    "bonus_rate_label": "Illustrative Bonus Rate (per â‚¹1000 SA)",
+    "fab_rate_label": "Final Additional Bonus (FAB) (per â‚¹1000 SA, optional)",
+    "dob_label": "Date of Birth",
+    "last_premium_date_label": "Last Premium Paid Date",
+    "calculate_button": "Calculate Maturity & Surrender Value",
+    "calculating": "Calculating...",
+    "download_pdf": "Download as PDF",
+    "share_results": "Share Results",
+    "contact_cfp": "Contact a CFP"
   },
   "sections": [
     {
       "id": "quick-answer",
       "icon": "TableIcon",
-      "title": "శీఘ్ర సమాధానం: నమూనా ఎల్‌ఐసి మెచ్యూరిటీ అంచనాలు",
-      "description": "ఒక సాధారణ ఎల్‌ఐసి పాలసీ ఏమి ఇస్తుందో తెలుసుకోవాలని ఆసక్తిగా ఉన్నారా? ఇక్కడ ₹45 ప్రతి ₹1,000 బీమా మొత్తానికి ఊహించిన బోనస్ రేటుతో ఒక ప్రామాణిక ఎండోమెంట్ పథకం కోసం కొన్ని ఉదాహరణాత్మక మెచ్యూరిటీ మొత్తాలు ఉన్నాయి.",
+      "title": "Quick Answer: Sample LIC Maturity Estimates",
+      "description": "Curious what a typical LIC policy yields? Here are some illustrative maturity amounts for a standard endowment plan with an assumed bonus rate of â‚¹45 per â‚¹1,000 Sum Assured. Use our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> to get plan-specific estimates.",
       "content": [
         {
           "type": "table",
-          "headers": ["బీమా మొత్తం", "కాలపరిమితి", "మొత్తం చెల్లించిన ప్రీమియంలు (సుమారు)", "అంచనా వేయబడిన మెచ్యూరిటీ (సుమారు)"],
+          "headers": ["Sum Assured", "Term", "Total Premiums Paid (approx)", "Estimated Maturity (approx)"],
           "rows": [
-            ["₹5,00,000", "20 సం.", "₹4,50,000", "₹9,50,000"],
-            ["₹10,00,000", "25 సం.", "₹8,40,000", "₹22,00,000"],
-            ["₹1,00,00,000", "20 సం.", "₹90,00,000", "₹2,10,00,000"]
+            ["â‚¹5,00,000", "20 yrs", "â‚¹4,50,000", "â‚¹9,50,000"],
+            ["â‚¹10,00,000", "25 yrs", "â‚¹8,40,000", "â‚¹22,00,000"],
+            ["â‚¹1,00,00,000", "20 yrs", "â‚¹90,00,000", "â‚¹2,10,00,000"]
           ]
         }
       ]
@@ -42,90 +42,90 @@
     {
       "id": "how-it-works",
       "icon": "Calculator",
-      "title": "ఎల్‌ఐసి పాలసీ మెచ్యూరిటీ విలువను ఆన్‌లైన్‌లో ఎలా లెక్కించాలి",
-      "description": "ఈ కాలిక్యులేటర్ సాంప్రదాయ ఎండోమెంట్ పథకాలకు ఉపయోగించే ప్రామాణిక సూత్రాన్ని వర్తింపజేయడం ద్వారా మీ ఎల్‌ఐసి పాలసీ రాబడులను స్పష్టం చేస్తుంది. ఇక్కడ ముఖ్య తర్కం ఉంది:",
+      "title": "How to Calculate LIC Policy Maturity Value Online",
+      "description": "This calculator demystifies your LIC policy returns by applying the standard formula used for traditional endowment plans. Understand how LIC compares to other investment options with our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF comparison</a> and <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax optimization guide</a>. Here's the core logic:",
       "content": [
         {
           "type": "formula",
-          "text": "<strong>మెచ్యూరిటీ విలువ = ప్రాథమిక బీమా మొత్తం + (జమ అయిన బోనస్ × పాలసీ కాలపరిమితి) + తుది అదనపు బోనస్ (FAB)</strong>"
+          "text": "<strong>Maturity Value = Basic Sum Assured + (Vested Bonus Ã— Policy Term) + Final Additional Bonus (FAB)</strong>"
         },
         {
           "type": "paragraph",
-          "text": "<h4>సూత్రం విశ్లేషణ:</h4>"
+          "text": "<h4>Formula Breakdown:</h4>"
         },
         {
           "type": "list",
           "items": [
-            "<strong>ప్రాథమిక బీమా మొత్తం (SA):</strong> మెచ్యూరిటీపై మీరు అందుకునే హామీ మొత్తం.",
-            "<strong>జమ అయిన సింపుల్ రివర్షనరీ బోనస్:</strong> ఇది ప్రతి సంవత్సరం ఎల్‌ఐసి ద్వారా ప్రకటించబడిన బోనస్. ఇది మీ బీమా మొత్తంలో ప్రతి ₹1,000కి లెక్కించబడుతుంది. ఉదాహరణకు, బోనస్ రేటు ₹42 మరియు మీ బీమా మొత్తం ₹10 లక్షలు అయితే, ఆ సంవత్సరానికి బోనస్ (10,00,000 / 1000) * 42 = ₹42,000. మా కాలిక్యులేటర్ ఈ వార్షిక బోనస్‌ను పాలసీ కాలపరిమితితో గుణించి మొత్తం కనుగొంటుంది.",
-            "<strong>తుది అదనపు బోనస్ (FAB):</strong> ఇది ఒకేసారి లాయల్టీ బోనస్, ఇది దీర్ఘకాలం (సాధారణంగా 15+ సంవత్సరాలు) నడిచిన పాలసీలపై మెచ్యూరిటీపై చెల్లించబడుతుంది. ఇది కూడా ప్రతి ₹1,000 బీమా మొత్తానికి లెక్కించబడుతుంది మరియు చాలా మారుతుంది. మీరు ఒక ఉదాహరణాత్మక రేటును నమోదు చేయవచ్చు, లేదా దానిని ఖాళీగా వదిలివేయవచ్చు."
+            "<strong>Basic Sum Assured (SA):</strong> The guaranteed amount you receive at maturity.",
+            "<strong>Vested Simple Reversionary Bonus:</strong> This is the bonus declared by LIC each year. It's calculated per â‚¹1,000 of your Sum Assured. For example, if the bonus rate is â‚¹42 and your SA is â‚¹10 Lakh, the bonus for that year is (10,00,000 / 1000) * 42 = â‚¹42,000. Our calculator multiplies this annual bonus by the policy term to find the total.",
+            "<strong>Final Additional Bonus (FAB):</strong> This is a one-time loyalty bonus paid at maturity for policies that have run for a long duration (typically 15+ years). It is also calculated per â‚¹1,000 SA and varies widely. You can input an illustrative rate, or leave it blank."
           ]
         },
         {
           "type": "alert",
           "variant": "default",
-          "title": "ముఖ్యమైన ఊహలు",
-          "text": "<ul><li>మీరు నమోదు చేసే బోనస్ రేట్లు ఉదాహరణాత్మకమైనవి మరియు మొత్తం పాలసీ కాలపరిమితికి స్థిరంగా ఉంటాయని ఊహించబడింది. వాస్తవ బోనస్‌లు ఎల్‌ఐసి పనితీరుపై ఆధారపడి ఉంటాయి మరియు వాటికి హామీ లేదు.</li><li>ప్రీమియంలపై చెల్లించిన GST 'మొత్తం చెల్లించిన ప్రీమియంలు' గణనలో చేర్చబడదు, ఎందుకంటే అది మెచ్యూరిటీ విలువకు దోహదం చేయదు.</li></ul>"
+          "title": "Key Assumptions",
+          "text": "<ul><li>The bonus rates you enter are illustrative and assumed to remain constant for the entire policy term. Actual bonuses depend on LIC's performance and are not guaranteed.</li><li>GST paid on premiums is not included in the 'Total Premiums Paid' calculation, as it does not contribute to the maturity value.</li></ul>"
         }
       ]
     },
     {
       "id": "death-benefit",
       "icon": "ShieldCheck",
-      "title": "మరణ ప్రయోజనం వివరించబడింది",
+      "title": "Death Benefit Explained",
       "content": [
         {
           "type": "paragraph",
-          "text": "పాలసీ కాలపరిమితిలో పాలసీదారుని దురదృష్టకర మరణం సంభవిస్తే, నామినీ 'మరణంపై బీమా మొత్తం' మరియు ఏవైనా జమ అయిన బోనస్‌లను అందుకుంటారు. ఈ 'మరణంపై బీమా మొత్తం' కిందివాటిలో ఏది ఎక్కువైతే అదిగా నిర్వచించబడింది:"
+          "text": "In the unfortunate event of the policyholder's death during the policy term, the nominee receives the 'Sum Assured on Death' plus any vested bonuses. This 'Sum Assured on Death' is defined as the higher of:"
         },
         {
           "type": "list",
           "items": [
-            "<strong>ప్రాథమిక బీమా మొత్తంలో 125%</strong>",
-            "<strong>వార్షిక ప్రీమియం యొక్క 7 రెట్లు</strong>"
+            "<strong>125% of the Basic Sum Assured</strong>",
+            "<strong>7 times the annualized premium</strong>"
           ]
         },
         {
           "type": "alert",
           "variant": "default",
-          "title": "ఉదాహరణ",
-          "text": "₹50,000 వార్షిక ప్రీమియంతో ₹10 లక్షల పాలసీకి, మరణంపై బీమా మొత్తం ₹12.5 లక్షలు (10Lలో 125%) లేదా ₹3.5 లక్షలు (7 x 50k)లో ఏది ఎక్కువైతే అది, అంటే <strong>₹12.5 లక్షలు</strong>, మరియు ఏవైనా సంచిత బోనస్‌లు."
+          "title": "Example",
+          "text": "For a â‚¹10 Lakh policy with an annual premium of â‚¹50,000, the Sum Assured on Death would be the higher of â‚¹12.5 Lakh (125% of 10L) or â‚¹3.5 Lakh (7 x 50k), which is <strong>â‚¹12.5 Lakh</strong>, plus any accumulated bonuses."
         }
       ]
     },
     {
       "id": "paid-up-value",
       "icon": "FileText",
-      "title": "పెయిడ్-అప్ విలువ వివరించబడింది",
+      "title": "Paid-Up Value Explained",
       "content": [
         {
           "type": "paragraph",
-          "text": "మీరు కనీసం రెండు పూర్తి సంవత్సరాల తర్వాత ప్రీమియంలు చెల్లించడం ఆపివేస్తే, మీ పాలసీ పూర్తిగా రద్దు కాదు. ఇది తగ్గించబడిన ప్రయోజనాలతో ఒక 'పెయిడ్-అప్' పాలసీ అవుతుంది. మీరు ఇకపై ప్రీమియంలు చెల్లించాల్సిన అవసరం లేదు, మరియు మీరు మెచ్యూరిటీపై 'పెయిడ్-అప్ బీమా మొత్తం' మరియు జమ అయిన బోనస్‌లను అందుకుంటారు."
+          "text": "If you stop paying premiums after at least two full years, your policy doesn't lapse completely. It becomes a 'paid-up' policy with reduced benefits. You don't have to pay any more premiums, and you will receive the 'Paid-up Sum Assured' plus vested bonuses at maturity."
         },
         {
-          "type": "formula",
-          "text": "<strong>పెయిడ్-అప్ విలువ = బీమా మొత్తం × (చెల్లించిన ప్రీమియంల సంఖ్య / మొత్తం చెల్లించవలసిన ప్రీమియంలు)</strong>"
+            "type": "formula",
+            "text": "<strong>Paid-up Value = Sum Assured Ã— (No. of Premiums Paid / Total Premiums Payable)</strong>"
         },
         {
           "type": "alert",
           "variant": "default",
-          "title": "ఉదాహరణ",
-          "text": "మీకు ₹10 లక్షల బీమా మొత్తం మరియు 16-సంవత్సరాల పిపిటితో 25-సంవత్సరాల పాలసీ ఉంటే, మరియు మీరు 8 సంవత్సరాల తర్వాత చెల్లించడం ఆపివేస్తే, మీ పెయిడ్-అప్ బీమా మొత్తం అవుతుంది: ₹10,00,000 * (8 / 16) = <strong>₹5,00,000</strong>। ఈ మొత్తం, 8 సంవత్సరాలకు జమ అయిన బోనస్‌లతో, మెచ్యూరిటీపై చెల్లించబడుతుంది."
+          "title": "Example",
+          "text": "If you have a 25-year policy with a â‚¹10 Lakh Sum Assured and a 16-year PPT, and you stop paying after 8 years, your Paid-up Sum Assured becomes: â‚¹10,00,000 * (8 / 16) = <strong>â‚¹5,00,000</strong>. This amount, plus bonuses accrued for 8 years, will be paid at maturity."
         }
       ]
     },
     {
       "id": "inputs-explained",
       "icon": "HelpCircle",
-      "title": "ఇన్‌పుట్‌లు వివరించబడ్డాయి: మీరు ఏమి నమోదు చేయాలి",
+      "title": "Inputs Explained: What You Must Enter",
       "content": [
         {
           "type": "list",
           "items": [
-            "<strong>పథకం ప్రీసెట్:</strong> 'జీవన్ లాభ్' వంటి ఒక నిర్దిష్ట పథకాన్ని ఎంచుకోవడం సాధనానికి సరైన ప్రీమియం చెల్లింపు కాలాలు (PPT) మరియు సాధారణ బోనస్ శ్రేణులను వర్తింపజేయడానికి సహాయపడుతుంది.",
-            "<strong>ప్రీమియం & కాలపరిమితి:</strong> మొత్తం పెట్టుబడిని లెక్కించడానికి వార్షిక ప్రీమియం మరియు పూర్తి పాలసీ కాలపరిమితి అవసరం. పాలసీ కాలపరిమితి (ఉదా., 25 సంవత్సరాలు) మరియు ప్రీమియం చెల్లింపు కాలపరిమితి (ఉదా., జీవన్ లాభ్ కోసం 16 సంవత్సరాలు) మధ్య వ్యత్యాసాన్ని గమనించండి.",
-            "<strong>బోనస్ & FAB రేట్లు:</strong> ఒక ఖచ్చితమైన అంచనా కోసం అత్యంత కీలకమైన ఇన్‌పుట్‌లు. మీరు వీటిని మీ వార్షిక పాలసీ స్టేట్‌మెంట్‌లో కనుగొనవచ్చు లేదా ₹40-₹48 యొక్క చారిత్రక సగటును ఒక మార్గదర్శకంగా ఉపయోగించవచ్చు.",
-            "<strong>సరెండర్/రుణ తేదీలు:</strong> మీ పుట్టిన తేదీ మరియు చివరి ప్రీమియం చెల్లించిన తేదీ ఖచ్చితమైన సరెండర్ విలువ మరియు రుణ అర్హతను లెక్కించడానికి అవసరం, ఎందుకంటే ఇవి వయస్సు- మరియు కాలపరిమితి-ఆధారితమైనవి."
+            "<strong>Plan Preset:</strong> Selecting a specific plan like 'Jeevan Labh' helps the tool apply correct Premium Paying Terms (PPT) and typical bonus ranges. Explore our <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh calculator</a>, <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>Jeevan Anand calculator</a>, or other <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC plans</a> for specific comparisons.",
+            "<strong>Premium & Term:</strong> The annual premium and the full policy term are needed to calculate total investment. Note the difference between Policy Term (e.g., 25 years) and Premium Paying Term (e.g., 16 years for Jeevan Labh).",
+            "<strong>Bonus & FAB Rates:</strong> The most critical inputs for an accurate estimate. You can find these in your annual policy statement or use the historical average of â‚¹40-â‚¹48 as a guideline.",
+            "<strong>Surrender/Loan Dates:</strong> Your Date of Birth and the date of the last premium paid are required to calculate the precise Surrender Value and loan eligibility. Use our <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC surrender value calculator</a> for detailed analysis."
           ]
         }
       ]
@@ -133,46 +133,46 @@
     {
       "id": "worked-examples",
       "icon": "FileText",
-      "title": "పని చేసిన ఉదాహరణలు & IRR గణన",
+      "title": "Worked Examples & IRR Calculation",
       "content": [
         {
-          "type": "paragraph",
-          "text": "<h4>ఉదాహరణ 1: 30-ఏళ్ల, ₹10 లక్షల కవర్, 25-ఏళ్ల కాలపరిమితి</h4><p><strong>ఇన్‌పుట్‌లు:</strong> బీమా మొత్తం = ₹10L, కాలపరిమితి = 25 సం., వార్షిక ప్రీమియం ≈ ₹42,000, బోనస్ రేటు = ₹45/1000, FAB రేటు = ₹100/1000.</p><p><strong>గణన:</strong><br/>మెచ్యూరిటీ = 10,00,000 + ( (10,00,000/1000)*45*25 ) + ( (10,00,000/1000)*100 )<br/>= 10,00,000 + 11,25,000 + 1,00,000 = <strong>₹22,25,000</strong><br/><strong>సుమారు IRR:</strong> ~6.1% (పన్ను-రహితం)</p>"
+            "type": "paragraph",
+            "text": "<h4>Example 1: 30-Year-Old, â‚¹10 Lakh Cover, 25-Year Term</h4><p><strong>Inputs:</strong> SA = â‚¹10L, Term = 25 yrs, Annual Premium â‰ˆ â‚¹42,000, Bonus Rate = â‚¹45/1000, FAB Rate = â‚¹100/1000.</p><p><strong>Calculation:</strong><br/>Maturity = 10,00,000 + ( (10,00,000/1000)*45*25 ) + ( (10,00,000/1000)*100 )<br/>= 10,00,000 + 11,25,000 + 1,00,000 = <strong>â‚¹22,25,000</strong><br/><strong>Approx. IRR:</strong> ~6.1% (tax-free)</p>"
         },
         {
-          "type": "paragraph",
-          "text": "<h4>ఉదాహరణ 2: 35-ఏళ్ల, ₹5 లక్షల కవర్, 15-ఏళ్ల కాలపరిమితి</h4><p><strong>ఇన్‌పుట్‌లు:</strong> బీమా మొత్తం = ₹5L, కాలపరిమితి = 15 సం., వార్షిక ప్రీమియం ≈ ₹34,000, బోనస్ రేటు = ₹40/1000.</p><p><strong>గణన:</strong><br/>మెచ్యూరిటీ = 5,00,000 + ( (5,00,000/1000)*40*15 )<br/>= 5,00,000 + 3,00,000 = <strong>₹8,00,000</strong><br/><strong>సుమారు IRR:</strong> ~5.8% (పన్ను-రహితం)</p>"
+            "type": "paragraph",
+            "text": "<h4>Example 2: 35-Year-Old, â‚¹5 Lakh Cover, 15-Year Term</h4><p><strong>Inputs:</strong> SA = â‚¹5L, Term = 15 yrs, Annual Premium â‰ˆ â‚¹34,000, Bonus Rate = â‚¹40/1000.</p><p><strong>Calculation:</strong><br/>Maturity = 5,00,000 + ( (5,00,000/1000)*40*15 )<br/>= 5,00,000 + 3,00,000 = <strong>â‚¹8,00,000</strong><br/><strong>Approx. IRR:</strong> ~5.8% (tax-free)</p>"
         }
       ]
     },
     {
       "id": "surrender-loan",
       "icon": "TrendingUp",
-      "title": "సరెండర్, పెయిడ్-అప్ మరియు రుణ గణనలు",
+      "title": "Surrender, Paid-up and Loan Calculations",
       "content": [
         {
           "type": "paragraph",
-          "text": "<p>కనీసం 2 పూర్తి సంవత్సరాలు ప్రీమియంలు చెల్లించిన తర్వాత, మీ పాలసీ ఒక 'సరెండర్ విలువ'ను పొందుతుంది. మీరు పాలసీని ముందుగానే మూసివేస్తే మీకు ఎంత వస్తుంది, లేదా మీరు దానిపై ఎంత రుణం తీసుకోవచ్చు అని నిర్ధారించడానికి ఈ విలువ ఉపయోగించబడుతుంది.</p>"
+          "text": "<p>After paying premiums for at least 2 full years, your policy gains a 'Surrender Value'. This value is used to determine how much you get if you close the policy early, or how much you can borrow against it.</p>"
         },
         {
           "type": "list",
           "items": [
-            "<strong>హామీ సరెండర్ విలువ (GSV):</strong> చెల్లించిన మొత్తం ప్రీమియంల శాతం (ఉదా., 3 సంవత్సరాల తర్వాత 30%) మరియు జమ అయిన బోనస్‌ల శాతం. ఇది మీకు లభించే కనీస మొత్తం.",
-            "<strong>ప్రత్యేక సరెండర్ విలువ (SSV):</strong> ఎల్‌ఐసి ద్వారా లెక్కించబడిన ఒక అధిక, హామీ లేని విలువ, ఇది తరచుగా నిజమైన నగదు విలువకు దగ్గరగా ఉంటుంది. మా కాలిక్యులేటర్ దీనిని అంచనా వేస్తుంది.",
-            "<strong>రుణం:</strong> మీరు సాధారణంగా ప్రత్యేక సరెండర్ విలువలో 90% వరకు రుణం తీసుకోవచ్చు."
+            "<strong>Guaranteed Surrender Value (GSV):</strong> A percentage of total premiums paid (e.g., 30% after 3 years) plus a percentage of vested bonuses. This is the minimum you'll receive.",
+            "<strong>Special Surrender Value (SSV):</strong> A higher, non-guaranteed value calculated by LIC, often closer to the real cash value. Our calculator estimates this.",
+            "<strong>Loan:</strong> You can typically borrow up to 90% of the Special Surrender Value."
           ]
         },
         {
           "type": "paragraph",
-          "text": "<p><strong>రుణ గణన ఉదాహరణ:</strong> మీరు 5 సంవత్సరాలలో ప్రీమియంలలో ₹2 లక్షలు చెల్లించినట్లయితే, మీ SSV సుమారు ₹1.5 లక్షలు ఉండవచ్చు. అప్పుడు మీరు దానిలో 90% వరకు రుణం తీసుకోవచ్చు, అది <strong>₹1.35 లక్షలు</strong>.</p>"
+          "text": "<p><strong>Loan Calculation Example:</strong> If you've paid â‚¹2 Lakh in premiums over 5 years, your SSV might be around â‚¹1.5 Lakh. You could then take a loan of up to 90% of that, which is <strong>â‚¹1.35 Lakh</strong>.</p>"
         }
       ]
     },
     {
       "id": "bonus-rates",
       "icon": "BarChart2",
-      "title": "ఎల్‌ఐసి బోనస్ రేట్లు (చారిత్రక ధోరణులు)",
-      "description": "'బోనస్ రేటు' మీ మెచ్యూరిటీ గణనలో అత్యంత ముఖ్యమైన చరరాశి. ఎల్‌ఐసి ప్రతి సంవత్సరం ఈ రేటును ప్రకటిస్తుంది. హామీ ఇవ్వనప్పటికీ, గత రేట్లను చూడటం ఒక వాస్తవిక అంచనాను ఇస్తుంది.",
+      "title": "LIC Bonus Rates (Historical Trends)",
+      "description": "The 'bonus rate' is the most important variable in your maturity calculation. LIC declares this rate each year. While not guaranteed, looking at past rates gives a realistic expectation.",
       "content": [
         {
           "type": "bar_chart",
@@ -193,33 +193,33 @@
     {
       "id": "alternatives",
       "icon": "GitCompareArrows",
-      "title": "పోల్చండి: ఎల్‌ఐసి మెచ్యూరిటీ వర్సెస్ ఇతర పెట్టుబడులు",
+      "title": "Compare: LIC Maturity vs. Other Investments",
       "content": [
         {
           "type": "paragraph",
-          "text": "ఒక ఎల్‌ఐసి మెచ్యూరిటీ చెల్లింపు ఇతర ప్రజాదరణ పొందిన పెట్టుబడి ఎంపికలతో పోలిస్తే ఎలా ఉంటుంది?"
+          "text": "How does an LIC maturity payout stack up against other popular investment options? Compare LIC with <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF</a>, <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF returns</a>, and explore our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> for comprehensive planning."
         },
         {
           "type": "table",
-          "headers": ["సాధనం", "సాధారణ రాబడి (సంవత్సరానికి)", "రిస్క్ స్థాయి", "మెచ్యూరిటీపై పన్ను"],
+          "headers": ["Instrument", "Typical Return (p.a.)", "Risk Level", "Tax on Maturity"],
           "rows": [
-            ["ఎల్‌ఐసి ఎండోమెంట్", "~5-6%", "చాలా తక్కువ (సార్వభౌమ-మద్దతు)", "పన్ను-రహితం (సెక్షన్ 10(10D) కింద)"],
-            ["బ్యాంకు ఎఫ్‌డి", "~7%", "తక్కువ", "స్లాబ్ ప్రకారం పన్ను విధించదగినది"],
-            ["పిపిఎఫ్", "~7.1%", "చాలా తక్కువ (సార్వభౌమ)", "పన్ను-రహితం"],
-            ["ఈక్విటీ మ్యూచువల్ ఫండ్‌లు", "~12-15%", "అధికం (మార్కెట్ రిస్క్)", "పన్ను విధించదగినది (LTCG > ₹1L)"]
+            ["LIC Endowment", "~5-6%", "Very Low (Sovereign-backed)", "Tax-Free (u/s 10(10D))"],
+            ["Bank FD", "~7%", "Low", "Taxable as per slab"],
+            ["PPF", "~7.1%", "Very Low (Sovereign)", "Tax-Free"],
+            ["Equity Mutual Funds", "~12-15%", "High (Market Risk)", "Taxable (LTCG > â‚¹1L)"]
           ]
         },
         {
           "type": "paragraph",
-          "text": "<br>ఎల్‌ఐసిలో కూడా, వివిధ పథకాలు వివిధ ప్రయోజనాలకు ఉపయోగపడతాయి."
+          "text": "<br>Even within LIC, different plans serve different purposes. Use our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> to compare premiums across all major plans."
         },
         {
           "type": "table",
-          "headers": ["ఫీచర్", "జీవన్ లాభ్", "జీవన్ ఆనంద్", "సింగిల్ ప్రీమియం"],
+          "headers": ["Feature", "Jeevan Labh", "Jeevan Anand", "Single Premium"],
           "rows": [
-            ["చెల్లింపు", "పరిమితం (ఉదా. 16/25)", "సాధారణం (పూర్తి కాలపరిమితి)", "ఒకేసారి"],
-            ["దేనికి ఉత్తమం", "లక్ష్య-ఆధారిత పొదుపు", "వారసత్వం + పొదుపు", "ఏకమొత్తం పెట్టుబడిదారులు"],
-            ["మెచ్యూరిటీ", "బీమా మొత్తం + బోనస్ + FAB", "బీమా మొత్తం + బోనస్ + FAB", "బీమా మొత్తం + బోనస్ + FAB"]
+            ["Payment", "Limited (e.g. 16/25)", "Regular (Full Term)", "One-Time"],
+            ["Best For", "Goal-based savings", "Legacy + Savings", "Lump-sum investors"],
+            ["Maturity", "SA + Bonus + FAB", "SA + Bonus + FAB", "SA + Bonus + FAB"]
           ]
         }
       ]
@@ -227,35 +227,35 @@
     {
       "id": "plan-specifics",
       "icon": "LinkIcon",
-      "title": "ఇది కూడా చదవండి: సంబంధిత కాలిక్యులేటర్లు",
-      "description": "ఒక పూర్తి ఆర్థిక చిత్రాన్ని పొందడానికి మా ఇతర సాధనాలను అన్వేషించండి.",
+      "title": "Also Read: Related Calculators",
+      "description": "Explore our other tools to get a complete financial picture.",
       "content": [
         {
           "type": "card_link",
           "icon": "Calculator",
-          "title": "ఎల్‌ఐసి జీవన్ లాభ్ కాలిక్యులేటర్",
-          "description": "లక్ష్య-ఆధారిత పొదుపు కోసం పరిమిత ప్రీమియం పథకం.",
+          "title": "LIC Jeevan Labh Calculator",
+          "description": "Limited premium plan for goal-based savings.",
           "href": "/lic-jeevan-labh-calculator"
         },
         {
           "type": "card_link",
           "icon": "Calculator",
-          "title": "ఎల్‌ఐసి సింగిల్ ప్రీమియం కాలిక్యులేటర్",
-          "description": "ఒకేసారి ఏకమొత్తం పెట్టుబడుల కోసం.",
+          "title": "LIC Single Premium Calculator",
+          "description": "For one-time lump sum investments.",
           "href": "/lic-single-premium-endowment-calculator"
         },
         {
            "type": "card_link",
            "icon": "FileText",
-           "title": "ఎల్‌ఐసి సరెండర్ విలువ కాలిక్యులేటర్",
-           "description": "ఒక పాలసీని సరెండర్ చేయడానికి ముందు ఆర్థిక చిక్కులను అర్థం చేసుకోండి.",
+           "title": "LIC Surrender Value Calculator",
+           "description": "Understand the financial implications before you surrender a policy.",
            "href": "/lic-surrender-value-calculator"
         },
         {
           "type": "card_link",
           "icon": "LinkIcon",
-          "title": "అన్ని ఎల్‌ఐసి ప్రీమియం కాలిక్యులేటర్లు",
-          "description": "అన్ని ప్రజాదరణ పొందిన పథకాల కోసం ప్రీమియంలను అన్వేషించండి.",
+          "title": "All LIC Premium Calculators",
+          "description": "Explore premiums for all popular plans.",
           "href": "/lic-premium-calculator"
         }
       ]
@@ -263,31 +263,31 @@
     {
       "id": "faq",
       "icon": "HelpCircle",
-      "title": "తరచుగా అడిగే ప్రశ్నలు (FAQs)",
+      "title": "Frequently Asked Questions (FAQs)",
       "content": [
         {
           "type": "faq",
           "items": [
-            {"q": "నా ఎల్‌ఐసి పాలసీ మెచ్యూరిటీ మొత్తాన్ని నేను ఎలా లెక్కించాలి?","a": "బీమా మొత్తం, పాలసీ కాలపరిమితి, మరియు ప్రతి ₹1,000 బీమా మొత్తానికి ఒక ఉదాహరణాత్మక బోనస్ రేటును కాలిక్యులేటర్‌లో నమోదు చేయండి. మెచ్యూరిటీ = బీమా మొత్తం + (జమ అయిన బోనస్ × పాలసీ కాలపరిమితి) + తుది అదనపు బోనస్ (ఏదైనా ఉంటే)."},
-            {"q": "ఎల్‌ఐసి మెచ్యూరిటీ కాలిక్యులేటర్‌లో బోనస్ ఉంటుందా?","a": "అవును. మీరు ప్రతి ₹1,000 బీమా మొత్తానికి ఒక ఉదాహరణాత్మక బోనస్ రేటును నమోదు చేయవచ్చు లేదా చారిత్రక సగటులను ఉపయోగించవచ్చు. కాలిక్యులేటర్ మొత్తం బోనస్‌ను అంచనా వేయడానికి వార్షిక బోనస్‌ను పాలసీ కాలపరిమితితో గుణిస్తుంది."},
-            {"q": "మెచ్యూరిటీ అంచనా ఎంత ఖచ్చితమైనది?","a": "అంచనాలు ఇన్‌పుట్‌లు మరియు ఉదాహరణాత్మక బోనస్/FAB రేట్లను ఉపయోగిస్తాయి. వాస్తవ మెచ్యూరిటీ ఎల్‌ఐసి ప్రకటించిన బోనస్‌లు మరియు చివరి అండర్‌రైటింగ్‌పై ఆధారపడి ఉంటుంది; ఫలితాలను సూచనాత్మకంగా పరిగణించండి, కట్టుబడి ఉండవు."},
-            {"q": "ఎల్‌ఐసి మెచ్యూరిటీ కోసం సూత్రం ఏమిటి?","a": "సూత్రం: ప్రాథమిక బీమా మొత్తం + జమ అయిన సింపుల్ రివర్షనరీ బోనస్‌లు + తుది అదనపు బోనస్ (FAB)."},
-            {"q": "తుది అదనపు బోనస్ (FAB) అంటే ఏమిటి?","a": "FAB అనేది ఎల్‌ఐసి ద్వారా దీర్ఘకాలిక పాల్గొనే పాలసీలపై మెచ్యూరిటీపై చెల్లించబడే ఒక లాయల్టీ బోనస్. ఇది చరరాశి మరియు ఎల్‌ఐసి ద్వారా వ్యాపార పనితీరు ఆధారంగా ప్రకటించబడుతుంది."},
-            {"q": "నేను ఉపయోగించడానికి సరైన బోనస్ రేటును ఎలా కనుగొనగలను?","a": "మీ పాలసీ స్టేట్‌మెంట్‌లో చూపబడిన బోనస్ రేటు లేదా ప్రచురించబడిన ఎల్‌ఐసి బోనస్ నోటిఫికేషన్‌లను ఉపయోగించండి. అందుబాటులో లేకపోతే, ఒక చారిత్రక సగటును (ఉదా., సాధారణ ఎండోమెంట్ పథకాలకు ప్రతి ₹1,000 బీమా మొత్తానికి 40–48) ఉపయోగించండి."},
-            {"q": "GST నా మెచ్యూరిటీని ప్రభావితం చేస్తుందా?","a": "లేదు, GST ప్రీమియంపై విధించబడుతుంది మరియు మెచ్యూరిటీ గణనను ప్రభావితం చేయదు, ఇది బీమా మొత్తం మరియు బోనస్‌లపై ఆధారపడి ఉంటుంది."},
-            {"q": "ఎల్‌ఐసి పాలసీలకు సరెండర్ విలువ ఎలా లెక్కించబడుతుంది?","a": "సరెండర్ విలువ హామీ సరెండర్ విలువ (చెల్లించిన ప్రీమియంల %) లేదా ప్రత్యేక సరెండర్ విలువ (జమ అయిన బోనస్‌లపై ఆధారపడి) కావచ్చు. ఒక ఖచ్చితమైన అంచనా కోసం కాలిక్యులేటర్ యొక్క సరెండర్ ట్యాబ్‌ను ఉపయోగించండి మరియు చివరి ప్రీమియం తేదీని నమోదు చేయండి."},
-            {"q": "పెయిడ్-అప్ విలువ అంటే ఏమిటి?","a": "మీరు రెండు పూర్తి సంవత్సరాల తర్వాత ప్రీమియంలు చెల్లించడం ఆపివేస్తే పెయిడ్-అప్ విలువ వర్తిస్తుంది; చెల్లించిన ప్రీమియంలు మరియు జమ అయిన బోనస్‌ల ఆధారంగా ప్రయోజనాలు నిష్పత్తిలో తగ్గించబడతాయి. కాలిక్యులేటర్ పెయిడ్-అప్ అంచనాలను చూపగలదు."},
-            {"q": "నేను నా ఎల్‌ఐసి పాలసీపై రుణం ఎప్పుడు తీసుకోగలను?","a": "మీరు సాధారణంగా పాలసీ ఒక సరెండర్ విలువను పొందిన తర్వాత రుణం తీసుకోవచ్చు, ఇది సాధారణంగా 2-3 పూర్తి సంవత్సరాలు ప్రీమియంలు చెల్లించిన తర్వాత జరుగుతుంది."},
-            {"q": "ఎల్‌ఐసి మెచ్యూరిటీ సెక్షన్ 10(10D) కింద పన్ను-రహితమా?","a": "సాధారణంగా అవును, కానీ మినహాయింపు నిబంధనలపై ఆధారపడి ఉంటుంది (ముఖ్యంగా వార్షిక ప్రీమియం చాలా పాలసీలకు బీమా మొత్తంలో 10% మించకపోతే). మీ పాలసీ ప్రత్యేకతలను తనిఖీ చేయండి."},
-            {"q": "మోడల్ లోడింగ్ అంటే ఏమిటి?","a": "మోడల్ లోడింగ్ అనేది నెలవారీ/త్రైమాసిక/అర్ధ-వార్షిక వర్సెస్ వార్షిక ప్రీమియం చెల్లించేటప్పుడు అదనపు ఖర్చు. కాలిక్యులేటర్ ఖచ్చితమైన మోడ్-వారీ ప్రీమియంలను చూపించడానికి మోడల్ కారకాలను ఉపయోగించి వార్షిక ప్రీమియంను మారుస్తుంది."},
-            {"q": "ఎన్నారైలు ఈ ఎల్‌ఐసి మెచ్యూరిటీ కాలిక్యులేటర్‌ను ఉపయోగించవచ్చా?","a": "అవును, ఎన్నారైలు అంచనాల కోసం కాలిక్యులేటర్‌ను ఉపయోగించవచ్చు. వాస్తవ కొనుగోలు ఫెమా మరియు ఎన్నారైల కోసం ఎల్‌ఐసి నిబంధనలకు లోబడి ఉండవచ్చు; అర్హత కోసం ఎల్‌ఐసి/ఏజెంట్‌తో తనిఖీ చేయండి."},
-            {"q": "రైడర్‌లు నా ప్రీమియం మరియు మెచ్యూరిటీని ఎలా ప్రభావితం చేస్తాయి?","a": "రైడర్‌లు ప్రీమియంను పెంచుతాయి కానీ మెచ్యూరిటీ బీమా-మొత్తాన్ని పెంచవు. మా కాలిక్యులేటర్ రైడర్ ప్రీమియం మరియు ప్రత్యేక రైడర్ ప్రయోజనాలను (ఏదైనా ఉంటే) చూపుతుంది కానీ మెచ్యూరిటీ సూత్రం బీమా మొత్తం + బోనస్‌లు + FAB గానే ఉంటుంది."},
-            {"q": "ఎల్‌ఐసి పాలసీపై IRRని ఎలా లెక్కించాలి?","a": "IRR అనేది చెల్లించిన మొత్తం ప్రీమియంలను అందుకున్న మెచ్యూరిటీకి సమానం చేసే డిస్కౌంట్ రేటు. మా కాలిక్యులేటర్ మెచ్యూరిటీ మరియు చెల్లించిన మొత్తం ప్రీమియంలను లెక్కించిన తర్వాత సుమారుగా IRRను అందిస్తుంది."},
-            {"q": "ఏ ఎల్‌ఐసి పథకాలు అధిక మెచ్యూరిటీని చెల్లిస్తాయి?","a": "దీర్ఘకాలిక మరియు అధిక బోనస్ రేట్లు ఉన్న పథకాలు (జీవన్ లాభ్ యొక్క 25-సంవత్సరాల కాలపరిమితి వంటివి) దీర్ఘ చక్రవడ్డీ కారణంగా అధిక మెచ్యూరిటీ మొత్తాలను ఇస్తాయి."},
-            {"q": "ఎల్‌ఐసి మెచ్యూరిటీని FD/PPFతో ఎలా పోల్చాలి?","a": "పన్ను-తర్వాత IRRని పోల్చండి. ఎల్‌ఐసి మెచ్యూరిటీ తరచుగా పన్ను-రహితం, దాని ~6% రాబడిని 30% పన్ను బ్రాకెట్‌లో ఉన్నవారికి FD నుండి 8-9% పన్ను విధించదగిన రాబడికి సమానంగా చేస్తుంది."},
-            {"q": "నేను పాలసీ సమయంలో బీమా మొత్తాన్ని మార్చవచ్చా?","a": "లేదు, ప్రాథమిక బీమా మొత్తం పాలసీ జారీ సమయంలో స్థిరపరచబడుతుంది మరియు కాలపరిమితిలో మార్చబడదు."},
-            {"q": "నేను ప్రీమియంలు చెల్లించడం ఆపివేస్తే ఏమి జరుగుతుంది (పెయిడ్-అప్)?","a": "2 సంవత్సరాల తర్వాత, పాలసీ తగ్గించబడిన బీమా మొత్తంతో 'పెయిడ్-అప్' కావచ్చు. మీరు ఇకపై ప్రీమియంలు చెల్లించాల్సిన అవసరం లేదు, మరియు మీరు మెచ్యూరిటీపై తగ్గించబడిన బీమా మొత్తం మరియు జమ అయిన బోనస్‌లను అందుకుంటారు."},
-            {"q": "ఎల్‌ఐసి ఎంత తరచుగా బోనస్ రేట్లను ప్రకటిస్తుంది?","a": "ఎల్‌ఐసి తన సింపుల్ రివర్షనరీ బోనస్ రేట్లను ఏటా ప్రకటిస్తుంది, సాధారణంగా ప్రతి ఆర్థిక సంవత్సరం (మార్చి 31) ముగింపు తర్వాత."}
+            {"q": "How do I calculate my LIC policy maturity amount?","a": "Enter sum assured, policy term, and an illustrative bonus rate per â‚¹1,000 SA into the calculator. Maturity = Sum Assured + (Vested bonus Ã— policy term) + Final Additional Bonus (if any). For other LIC plans, use our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a>."},
+            {"q": "Does the LIC maturity calculator include bonus?","a": "Yes. You can input an illustrative bonus rate per â‚¹1,000 SA or use historical averages. The calculator multiplies the annual bonus by the policy term to estimate total bonus."},
+            {"q": "How accurate is the maturity estimate?","a": "Estimates use the inputs and illustrative bonus/FAB rates. Actual maturity depends on LIC's declared bonuses and final underwriting; treat results as indicative, not binding. Use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> for comprehensive retirement planning."},
+            {"q": "What is the formula for LIC maturity?","a": "The formula is: Basic Sum Assured + Vested Simple Reversionary Bonuses + Final Additional Bonus (FAB). For comparisons, check our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a> and <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF calculator</a>."},
+            {"q": "What is Final Additional Bonus (FAB)?","a": "FAB is a loyalty bonus paid by LIC at maturity on long-term participating policies. It is variable and declared by LIC depending on business performance."},
+            {"q": "How do I find the correct bonus rate to use?","a": "Use the bonus rate shown on your policy statement or the published LIC bonus notifications. If unavailable, use a historical average (e.g., 40â€“48 per â‚¹1,000 SA for typical endowment plans)."},
+            {"q": "Does GST affect my maturity?","a": "No, GST is charged on the premium and does not affect the maturity calculation, which is based on Sum Assured and bonuses."},
+            {"q": "How is surrender value calculated for LIC policies?","a": "Surrender value can be Guaranteed Surrender Value (a % of premiums paid) or Special Surrender Value (based on vested bonuses). Use our <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC surrender value calculator</a> for precise estimates."},
+            {"q": "What is paid-up value?","a": "Paid-up value applies if you stop paying premiums after two full years; benefits are reduced proportionately based on premiums paid and vested bonuses. The calculator can show paid-up estimates."},
+            {"q": "When can I take a loan on my LIC policy?","a": "You can typically take a loan after the policy has acquired a surrender value, which is usually after paying premiums for 2-3 full years. Check our <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC surrender value calculator</a> for loan eligibility."},
+            {"q": "Is LIC maturity tax-free under Section 10(10D)?","a": "Generally yes, but the exemption depends on rules (notably if annual premium does not exceed 10% of Sum Assured for most policies). Check your policy specifics and use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> for tax planning."},
+            {"q": "What is modal loading?","a": "Modal loading is the extra cost when paying premium monthly/quarterly/half-yearly versus yearly. The calculator converts yearly premium using modal factors to show accurate mode-wise premiums."},
+            {"q": "Can NRIs use this LIC maturity calculator?","a": "Yes, NRIs can use the calculator for estimates. Actual purchase may be subject to FEMA and LIC rules for NRIs; check with LIC/agent for eligibility."},
+            {"q": "How do riders affect my premium and maturity?","a": "Riders increase premium but do not increase the maturity sum-assured. Our calculator shows rider premium and the separate rider benefits (if any) but the maturity formula remains SA + bonuses + FAB."},
+            {"q": "How to calculate IRR on LIC policy?","a": "IRR is the discount rate that equates total premiums paid with maturity received. Our calculator provides an approximate IRR after computing maturity and total premiums paid. Compare with <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF returns</a> and <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD returns</a>."},
+            {"q": "Which LIC plans pay higher maturity?","a": "Plans with longer terms and higher bonus rates (like Jeevan Labh's 25-year term) tend to yield higher maturity amounts due to longer compounding. Use our <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh calculator</a> to compare."},
+            {"q": "How to compare LIC maturity against FD/PPF?","a": "Compare the post-tax IRR. LIC maturity is often tax-free, making its ~6% return equivalent to an 8-9% taxable return from an FD for someone in the 30% tax bracket. Use our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a> for direct comparison."},
+            {"q": "Can I change Sum Assured during the policy?","a": "No, the Basic Sum Assured is fixed at the time of policy issuance and cannot be changed during the term."},
+            {"q": "What happens if I stop paying premiums (paid-up)?","a": "After 2 years, the policy can become 'paid-up' with a reduced Sum Assured. You won't have to pay more premiums, and you will receive the reduced sum assured plus vested bonuses at maturity."},
+            {"q": "How often does LIC declare bonus rates?","a": "LIC declares its Simple Reversionary Bonus rates annually, typically after the end of each financial year (March 31st)."}
           ]
         }
       ]
@@ -295,11 +295,23 @@
     {
       "id": "conclusion",
       "icon": "Star",
-      "title": "మీ ఆర్థిక భవిష్యత్తుపై నియంత్రణ తీసుకోండి",
+      "title": "Take Control of Your Financial Future",
       "content": [
         {
           "type": "paragraph",
-          "text": "మీ పాలసీ మెచ్యూరిటీ విలువను అర్థం చేసుకోవడం ఆర్థిక ప్రణాళికలో ఒక కీలకమైన అడుగు. ఇది మీరు మీ లక్ష్యాలను చేరుకోవడానికి ట్రాక్‌లో ఉన్నారో లేదో చూడటానికి మరియు అవసరమైన సర్దుబాట్లు చేయడానికి మిమ్మల్ని అనుమతిస్తుంది. స్పష్టత పొందడానికి, భవిష్యత్ సూచన కోసం మీ ఫలితాలను డౌన్‌లోడ్ చేయడానికి, మరియు మీ పెట్టుబడి ప్రయాణంలో తదుపరి విశ్వాసమైన అడుగు వేయడానికి ఈ కాలిక్యులేటర్‌ను ఉపయోగించండి."
+          "text": "Understanding your policy's maturity value is a crucial step in financial planning. It allows you to see if you're on track to meet your goals and make necessary adjustments. Use this calculator to gain clarity, download your results for future reference, and take the next confident step in your investment journey."
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Build a Complete Financial Plan:</strong> Combine your LIC strategy with other investment tools. Use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to plan your overall retirement, check <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF</a> returns, and explore <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime options</a> to optimize your investments."
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Explore Other LIC Plans:</strong> Compare maturity across different plans using our <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh calculator</a>, <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>Jeevan Anand calculator</a>, <a href='/{lang}/lic-single-premium-endowment-calculator' class='text-primary hover:underline'>single premium calculator</a>, and <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a>. For surrender scenarios, use our <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>surrender value calculator</a>."
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Diversify Your Portfolio:</strong> If you're considering a multi-asset approach, use our <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a>, <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a>, and <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS calculator</a>. For debt management, check our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> and plan for government schemes like <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>Sukanya Samriddhi Yojana (SSY)</a> and <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a>."
         }
       ]
     }

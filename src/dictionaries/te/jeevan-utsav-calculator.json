@@ -1,155 +1,155 @@
-{
-  "meta_title": "ఎల్‌ఐసి జీవన్ ఉత్సవ్ కాలిక్యులేటర్ (871) — ప్రీమియంలు & జీవితకాల ఆదాయంపై ఒక నిజాయితీ గల సమీక్ష",
-  "meta_description": "నేను ఈ ఉచిత ఎల్‌ఐసి జీవన్ ఉత్సవ్ కాలిక్యులేటర్ (ప్లాన్ 871)ను దాని ప్రీమియంలు, గ్యారెంటీడ్ అడిషన్స్ (₹40/₹1,000), మరియు జీవితకాల ఆదాయ ఎంపికలపై మీకు అలంకరించని నిజాన్ని ఇవ్వడానికి నిర్మించాను. నా 20 సంవత్సరాల నిపుణుల అభిప్రాయాన్ని పొందండి.",
-  "h1": "నేను ఈ ఎల్‌ఐసి జీవన్ ఉత్సవ్ కాలిక్యులేటర్‌ను మీకు అలంకరించని నిజాన్ని ఇవ్వడానికి నిర్మించాను (2025)",
-  "trust_blurb": "<em>20 సంవత్సరాలకు పైగా ఒక ఆర్థిక ప్రణాళికదారుడిగా, నేను అసంఖ్యాక పథకాలను చూశాను. జీవన్ ఉత్సవ్ భిన్నమైనది. ఈ కాలిక్యులేటర్ ఎల్‌ఐసి యొక్క అధికారిక బ్రోచర్ (UIN 512N363V02) ఆధారంగా ఉంది, కానీ నా లక్ష్యం మీకు అధికారిక పత్రాలు తరచుగా ఇవ్వని స్పష్టతను ఇవ్వడమే. ఇది మీకు సరైనదేనా అని కనుగొందాం.</em>",
+﻿{
+  "meta_title": "LIC Jeevan Utsav Calculator (871) â€” An Honest Look at Premiums & Lifetime Income",
+  "meta_description": "I've built this free LIC Jeevan Utsav Calculator (Plan 871) to give you the unvarnished truth on its premiums, Guaranteed Additions (â‚¹40/â‚¹1,000), and lifetime income options. Get my 20-year expert take.",
+  "h1": "I Built This LIC Jeevan Utsav Calculator to Give You the Unvarnished Truth (2025)",
+  "trust_blurb": "<em>As a financial planner for over 20 years, I've seen countless plans. Jeevan Utsav is different. This calculator is based on LICâ€™s official brochure (UIN 512N363V02), but my goal is to give you the clarity that official documents often lack. Let's find out if it's right for you.</em>",
   "calculator_ui": {
-    "title": "మీ వ్యక్తిగత జీవన్ ఉత్సవ్ ప్రీమియం కాలిక్యులేటర్ (ప్లాన్ 771)",
-    "description": "పరిభాష లేదు, కేవలం సమాధానాలు. మీ వివరాలను క్రింద నమోదు చేయండి, మరియు మీ ప్రీమియంలు మరియు హామీ జీవితకాల ఆదాయం వాస్తవంగా ఎలా ఉండవచ్చో నేను మీకు చూపిస్తాను.",
+    "title": "Your Personal Jeevan Utsav Calculator (Plan 871)",
+    "description": "No jargon, just answers. Enter your details below, and I'll show you exactly what your premiums and guaranteed lifetime income could look like.",
     "inputs": {
-      "age": "మీ ప్రస్తుత వయస్సు",
-      "gender": "లింగం",
-      "tobacco": "పొగాకు వినియోగదారు",
-      "basicSumAssured": "మీ కోరుకున్న కవరేజ్ (ప్రాథమిక బీమా మొత్తం)",
-      "ppt": "మీరు ఎంతకాలం ప్రీమియంలు చెల్లించాలనుకుంటున్నారు? (5-16 సంవత్సరాలు)",
+      "age": "Your Current Age",
+      "gender": "Gender",
+      "tobacco": "Tobacco User",
+      "basicSumAssured": "Your Desired Coverage (Basic Sum Assured)",
+      "ppt": "How long do you want to pay premiums? (5-16 years)",
       "incomeOption": {
-        "label": "మీరు మీ ఆదాయాన్ని ఎలా కోరుకుంటున్నారు?",
-        "regular": "సాధారణ వార్షిక చెల్లింపులు",
-        "flexi": "దాన్ని పెరగనివ్వండి & తర్వాత ఉపసంహరించుకోండి (ఫ్లెక్సీ)"
+        "label": "How do you want your income?",
+        "regular": "Regular Annual Payouts",
+        "flexi": "Let it Grow & Withdraw Later (Flexi)"
       },
-      "mode": "చెల్లింపు ఫ్రీక్వెన్సీ",
+      "mode": "Payment Frequency",
       "riders": {
-        "label": "ఐచ్ఛిక రైడర్లు (మీ భద్రతా వలయం)",
+        "label": "Optional Riders (Your Safety Net)",
         "addb": {
-          "label": "ప్రమాద మరణం & వైకల్యం",
-          "description": "నా అభిప్రాయం: ఒక కీలకమైన యాడ్-ఆన్. ఇది ఒక ప్రమాదం వల్ల మరణం లేదా వైకల్యం సంభవిస్తే అదనపు చెల్లింపును అందిస్తుంది. ప్రాథమిక సంపాదించేవారికి ఇది తప్పనిసరి."
+          "label": "Accidental Death & Disability Benefit",
+          "description": "My take: A crucial add-on. It provides an extra payout if an accident causes death or disability. A must-have for the primary earner."
         },
         "ab": {
-          "label": "ప్రమాద ప్రయోజనం",
-          "description": "ఇది ప్రమాదవశాత్తు మరణం సందర్భంలో ఒక అదనపు బీమా మొత్తాన్ని అందిస్తుంది. ఇది మీ కుటుంబానికి అదనపు రక్షణ యొక్క ఒక పొర."
+          "label": "Accident Benefit",
+          "description": "This provides an additional sum assured in case of accidental death. It's a layer of extra protection for your family."
         },
         "term": {
-          "label": "టర్మ్ అస్యూరెన్స్",
-          "description": "దీనిని ఒక సాధారణ జీవిత కవర్ బూస్ట్‌గా భావించండి. ఇది మీ బేస్ ప్లాన్‌పై ఒక స్వచ్ఛమైన-ప్రమాద బీమా మొత్తాన్ని జోడిస్తుంది."
+          "label": "Term Assurance",
+          "description": "Think of this as a simple life cover boost. It adds a pure-risk insurance amount on top of your base plan."
         },
         "ci": {
-          "label": "తీవ్ర అనారోగ్య కవర్",
-          "description": "పేర్కొన్న ప్రధాన అనారోగ్యాలలో ఒకటి నిర్ధారణ అయినప్పుడు ఒక ఏకమొత్తం చెల్లింపును అందిస్తుంది, ఇది మీకు ఆర్థిక ఒత్తిడి లేకుండా చికిత్స ఖర్చులను నిర్వహించడానికి సహాయపడుతుంది."
+          "label": "Critical Illness Cover",
+          "description": "Provides a lump-sum payment if you're diagnosed with one of the specified major illnesses, helping you manage treatment costs without financial stress."
         },
         "pwb": {
-          "label": "ప్రీమియం మినహాయింపు ప్రయోజనం",
-          "description": "మీ భద్రతా వలయానికి ఒక భద్రతా వలయం. మీరు (పాలసీదారుడు) వికలాంగులైతే, ఎల్‌ఐసి భవిష్యత్ అన్ని ప్రీమియంలను మాఫీ చేస్తుంది, కానీ మీ పాలసీ ప్రయోజనాలు నిరంతరాయంగా కొనసాగుతాయి."
+          "label": "Premium Waiver Benefit",
+          "description": "A safety net for your safety net. If you (the policyholder) become disabled, LIC waives all future premiums, but your policy benefits continue uninterrupted."
         }
       }
     },
     "outputs": {
       "premium": {
-        "title": "ఇక్కడ మీరు ఏమి చెల్లిస్తారు (ప్రీమియం అంచనా)"
+        "title": "Here's What You'll Pay (Premium Estimate)"
       },
       "guaranteedAdditions": {
-        "title": "హామీ చేర్పులు (మీ బోనస్)",
-        "subtitle": "{ppt} సంవత్సరాలకు ప్రతి సంవత్సరం {amount}"
+        "title": "Guaranteed Additions (Your Bonus)",
+        "subtitle": "{amount} per year for {ppt} years"
       },
       "regularIncome": {
-        "title": "మీ జీవితకాల సాధారణ ఆదాయం",
-        "subtitle": "ప్రతి సంవత్సరం, జీవితాంతం, మీ పిపిటి ముగిసిన 2 సంవత్సరాల తర్వాత ప్రారంభమవుతుంది."
+        "title": "Your Lifelong Regular Income",
+        "subtitle": "Per year, for life, starting 2 years after your PPT ends."
       },
       "flexiIncome": {
-        "title": "మీ ఫ్లెక్సీ ఆదాయ కిట్టీ",
-        "subtitle": "మీరు ఉపసంహరించుకోకపోతే సంవత్సరానికి హామీ 5.5% చొప్పున జమ అవుతుంది."
+        "title": "Your Flexi Income Kitty",
+        "subtitle": "Accrues at a guaranteed 5.5% p.a. if you don't withdraw."
       },
       "deathBenefit": {
-        "title": "మీ కుటుంబానికి వారసత్వం (మరణ ప్రయోజనం)",
-        "subtitle": "మరణంపై బీమా మొత్తం + మీ జమ అయిన హామీ చేర్పులు."
+        "title": "Legacy for Your Family (Death Benefit)",
+        "subtitle": "Sum Assured on Death + Your Accrued Guaranteed Additions."
       },
       "disclaimer": {
-        "title": "నా నిజాయితీ నిరాకరణ",
-        "body": "ఈ సంఖ్యలు జీవన్ ఉత్సవ్ (ప్లాన్ 871, UIN: 512N363V02) కోసం ఎల్‌ఐసి యొక్క అధికారిక పత్రాల ఆధారంగా లెక్కించబడ్డాయి. దీనిని ఒక అత్యంత విశ్వసనీయమైన అంచనాగా భావించండి. మీ చివరి, అధికారిక సంఖ్యలు ఎల్‌ఐసి ద్వారా వారి అండర్‌రైటింగ్ ప్రక్రియ తర్వాత వస్తాయి."
+        "title": "My Honest Disclaimer",
+        "body": "These numbers are crunched based on LIC's official documents for Jeevan Utsav (Plan 871, UIN: 512N363V02). Think of this as a highly reliable estimate. Your final, official figures will come from LIC after their underwriting process."
       }
     },
-    "calculate_button": "నా జీవన్ ఉత్సవ్ ప్రయోజనాలను లెక్కించండి",
-    "calculating": "సంఖ్యలను లెక్కిస్తోంది..."
+    "calculate_button": "Calculate My Jeevan Utsav Benefits",
+    "calculating": "Crunching the numbers..."
   },
   "sections": [
     {
       "id": "quick-answer",
       "icon": "BarChart",
-      "title": "ఎల్‌ఐసి జీవన్ ఉత్సవ్ ప్లాన్ కాలిక్యులేటర్: శీఘ్ర సమాధానం స్నాప్‌షాట్‌లు",
+      "title": "LIC Jeevan Utsav Plan Calculator: The Bottom Line Up Front",
       "content": [
         {
           "type": "paragraph",
-          "text": "లోతుగా వెళ్ళే ముందు, మీరు బహుశా తెలుసుకోవాలనుకుంటున్నారు: 'ఇది నిజమైన సంఖ్యలలో ఎలా కనిపిస్తుంది?' నాకు అర్థమైంది. ఇక్కడ రెండు సాధారణ దృశ్యాలు ఉన్నాయి, నేను నా క్లయింట్ల కోసం అమలు చేస్తాను, <strong>ఎల్‌ఐసి జీవన్ ఉత్సవ్ ప్లాన్ కాలిక్యులేటర్</strong> ద్వారా క్రంచ్ చేయబడింది."
+          "text": "Before we dive deep, you probably just want to know: 'What does this look like in real numbers?' I get it. Here are two common scenarios I run for my clients, crunched through the <strong>LIC Jeevan Utsav Plan Calculator</strong>."
         },
         {
           "type": "table",
-          "headers": ["మీ ప్రొఫైల్", "మీ లక్ష్యం", "మీ నిబద్ధత (PPT)", "మీ చెల్లింపు (PPT తర్వాత)", "మీకు లభించే బోనస్ (GAs)"],
+          "headers": ["Your Profile", "Your Goal", "Your Commitment (PPT)", "Your Payout (Post-PPT)", "Bonus You Get (GAs)"],
           "rows": [
-            ["వయస్సు 30, ₹10L కవర్", "స్థిరమైన జీవితకాల ఆదాయం", "12 సంవత్సరాలు", "<strong>జీవితాంతం సంవత్సరానికి ₹1L</strong> (సాధారణ ఆదాయం)", "మొత్తం ₹4.8 లక్షలు"],
-            ["వయస్సు 40, ₹20L కవర్", "ఒక ఫ్లెక్సిబుల్ కిట్టీని నిర్మించండి", "10 సంవత్సరాలు", "ఉపసంహరించుకోకపోతే పూల్ ~<strong>5.5% వార్షికంగా</strong> పెరుగుతుంది (ఫ్లెక్సీ ఆదాయం)", "మొత్తం ₹8 లక్షలు"]
+            ["Age 30, â‚¹10L Cover", "Steady Lifelong Income", "12 Years", "<strong>â‚¹1L/year for life</strong> (Regular Income)", "â‚¹4.8 Lakh total"],
+            ["Age 40, â‚¹20L Cover", "Build a Flexible Kitty", "10 Years", "Pool grows @ <strong>5.5% p.a.</strong> (Flexi Income)", "â‚¹8 Lakh total"]
           ],
-          "footer": "నా అభిప్రాయం: ఇవి మార్కెట్ అనిశ్చితి ప్రపంచంలో దృఢమైన, హామీ ఇవ్వబడిన సంఖ్యలు. వాస్తవ ప్రీమియంలు ఎల్‌ఐసి యొక్క చివరి అండర్‌రైటింగ్‌పై ఆధారపడి ఉంటాయి, కానీ ఇది మీకు ఒక దృఢమైన ప్రారంభ స్థానాన్ని ఇస్తుంది."
+          "footer": "My Take: These are solid, guaranteed numbers in a world of market uncertainty. The real premiums will depend on LIC's final underwriting, but this gives you a rock-solid starting point."
         }
       ]
     },
     {
       "id": "what-is-plan",
       "icon": "HelpCircle",
-      "title": "ఎల్‌ఐసి జీవన్ ఉత్సవ్ (ప్లాన్ 871) కోసం నా సాదాసీదా మార్గదర్శి",
+      "title": "My Plain-English Guide to LIC Jeevan Utsav (Plan 871)",
       "content": [
-        { "type": "paragraph", "text": "డజన్ల కొద్దీ ప్లాన్‌లను విశ్లేషించిన తర్వాత, జీవన్ ఉత్సవ్ ప్రత్యేకంగా నిలుస్తుందని నేను మీకు చెప్పగలను. ఇది ఒక <strong>పూర్తి-జీవిత పొదుపు పథకం</strong>, ఇక్కడ మీరు ఒక చిన్న, స్థిరమైన కాలానికి (5-16 సంవత్సరాలు) ప్రీమియంలు చెల్లిస్తారు కానీ జీవితాంతం ప్రయోజనాలను పొందుతారు. మీరు ఖచ్చితంగా తెలుసుకోవలసిన రెండు విషయాలు ఇక్కడ ఉన్నాయి:" },
+        { "type": "paragraph", "text": "After analyzing dozens of plans, I can tell you Jeevan Utsav stands out. Itâ€™s a <strong>whole-life savings plan</strong> where you pay premiums for a short, fixed period (5-16 years) but get benefits for life. Here are the two things you absolutely need to know:" },
         { "type": "list", "items": [
-          "<strong>మీరు చెల్లించే ప్రతి సంవత్సరం హామీ 'బోనస్':</strong> మీ ప్రీమియం చెల్లింపు కాలంలో, ఎల్‌ఐసి మీ ప్రాథమిక బీమా మొత్తంలో ప్రతి ₹1,000కి <strong>₹40</strong> 'హామీ అదనపు' జోడిస్తుంది. ఇది మార్కెట్-లింక్డ్ బోనస్ కాదు; ఇది ఒక ఒప్పంద వాగ్దానం.",
-          "<strong>మీరు చెల్లించడం ఆపిన తర్వాత జీవితకాల జీతం:</strong> మీ చెల్లింపు కాలం ముగిసిన తర్వాత, 2 సంవత్సరాల వాయిదా కాలం ఉంటుంది. ఆ తర్వాత, మీరు జీవితకాల ఆదాయాన్ని పొందడం ప్రారంభిస్తారు. మీకు రెండు ఎంపికలు ఉన్నాయి: ప్రతి సంవత్సరం మీ బీమా మొత్తంలో స్థిరమైన <strong>10%</strong> పొందండి (సాధారణ ఆదాయం), లేదా ఆ డబ్బును ఎల్‌ఐసి వద్ద ఉంచి, హామీ <strong>5.5% వడ్డీ రేటుతో</strong> పెరగనివ్వండి (ఫ్లెక్సీ ఆదాయం), దానిని మీరు తర్వాత ఉపసంహరించుకోవచ్చు."
+          "<strong>Guaranteed 'Bonus' Every Year You Pay:</strong> During your premium paying term, LIC adds a 'Guaranteed Addition' of <strong>â‚¹40 for every â‚¹1,000 of your Basic Sum Assured</strong>. This is not a market-linked bonus; it's a contractual promise.",
+          "<strong>A Lifelong Paycheck After You Stop Paying:</strong> Once your premium payment term (PPT) ends, there's a 2-year deferment period. After that, you start receiving a lifetime income. You have two choices: get a fixed <strong>10% of your Sum Assured</strong> every year (Regular Income), or let that money sit with LIC and grow at a guaranteed <strong>5.5% interest rate</strong> (Flexi Income), which you can withdraw later."
         ]},
-        { "type": "paragraph", "text": "<strong>నా సలహా:</strong> మీరు స్టాక్ మార్కెట్ తలనొప్పి లేకుండా పదవీ విరమణలో హామీ ఆదాయ ప్రవాహాన్ని కోరుకుంటే, జీవన్ ఉత్సవ్ ఎల్‌ఐసి సంవత్సరాలలో ప్రారంభించిన అత్యంత ఆకర్షణీయమైన ఎంపికలలో ఒకటి. ఇది మీ మొత్తం ప్రణాళికలో ఎలా సరిపోతుందో చూడటానికి దానిని మా <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS కాలిక్యులేటర్</a> వంటి పదవీ విరమణ-కేంద్రీకృత సాధనాలతో పోల్చండి."}
+        { "type": "paragraph", "text": "<strong>My advice:</strong> If you want a guaranteed income stream in retirement without the headaches of the stock market, Jeevan Utsav is one of the most compelling options LIC has launched in years. Compare it with retirement-focused tools like our <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS Calculator</a> to see how it fits your overall plan."}
       ]
     },
     {
       "id": "how-it-works",
       "icon": "Calculator",
-      "title": "నా జీవన్ ఉత్సవ్ ప్రీమియం క్యాలిక్యులేటర్ ఎలా పనిచేస్తుంది (ఇక్కడ బ్లాక్ బాక్స్ లేదు)",
-      "description": "నేను పారదర్శకతలో నమ్ముతాను. ఇక్కడ నేను ఈ సాధనంలో నిర్మించిన ఖచ్చితమైన తర్కం ఉంది, నేరుగా ఎల్‌ఐసి నియమపుస్తకం నుండి.",
+      "title": "How My Jeevan Utsav Premium Calculator Works (No Black Box Here)",
+      "description": "I believe in transparency. Here's the exact logic I've built into this tool, straight from LIC's rulebook.",
       "content": [
-        { "type": "paragraph", "text": "<h3>1. మీ ప్రీమియం గణన</h3><p>నేను ఎల్‌ఐసి యొక్క బేస్ ప్రీమియం రేట్లతో ప్రారంభించి, ఆపై అర్ధ-వార్షిక, త్రైమాసిక, లేదా నెలవారీ చెల్లింపులకు ఖచ్చితమైన ఖర్చును చూపించడానికి ప్రామాణిక 'మోడల్ లోడింగ్స్' జోడిస్తాను. ఆశ్చర్యాలు లేవు. మీరు మా ప్రధాన <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>ఎల్‌ఐసి ప్రీమియం క్యాలిక్యులేటర్‌ను</a> ఉపయోగించి పూర్తి విచ్ఛిన్నం చూడవచ్చు.</p><h3>2. మీ హామీ అదనపులు (GAs)</h3><p>ఇది పెట్టుబడి పెట్టినందుకు మీ బహుమతి. సూత్రం సులభం మరియు శక్తివంతమైనది: <code>సంవత్సరానికి GA = (మీ బీమా మొత్తం / 1000) × 40</code>। మీరు ప్రీమియంలు చెల్లించే ప్రతి సంవత్సరం ఇవి జోడించబడతాయి.</p><h3>3. మీ జీవితకాల ఆదాయం</h3><ul><li><strong>సాధారణ ఆదాయం:</strong> మీ ప్రీమియం కాలం మరియు 2-సంవత్సరాల వాయిదా తర్వాత, మీరు జీవితాంతం, ప్రతి సంవత్సరం నేరుగా <code>మీ బీమా మొత్తంలో 10%</code> పొందుతారు. సులభం మరియు ఊహించదగినది.</li><li><strong>ఫ్లెక్సీ ఆదాయం:</strong> మీరు 10% ఆదాయాన్ని తీసుకోకపోతే, అది ఒక కుండలో వెళ్తుంది, అది <strong>హామీ 5.5% వార్షిక చక్రవడ్డీ</strong>తో పెరుగుతుంది. నా క్యాలిక్యులేటర్ ఈ 'కిట్టీ' కాలక్రమేణా ఎలా పెరుగుతుందో మీకు చూపుతుంది.</li></ul><h3>4. మీ కుటుంబ రక్షణ (మరణ ప్రయోజనం)</h3><p>ఇది చాలా ముఖ్యం. మరణ ప్రయోజనం మీ 'మరణంపై బీమా మొత్తం' (ఇది మీ ప్రాథమిక బీమా మొత్తానికి సమానం) ప్లస్ మీరు సేకరించిన అన్ని హామీ అదనపులు. మీరు చెల్లించిన అన్ని ప్రీమియంలలో 105% కంటే తక్కువగా ఇది ఎప్పటికీ ఉండదని ఎల్‌ఐసి హామీ ఇస్తుంది. ఇది ఒక శక్తివంతమైన భద్రతా వలయం.</p>" }
+        { "type": "paragraph", "text": "<h3>1. Your Premium Calculation</h3><p>I start with LIC's base premium rates and then add the standard 'modal loadings' to show you the precise cost for half-yearly, quarterly, or monthly payments. No surprises. You can see the full breakdown using our main <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC Premium Calculator</a>.</p><h3>2. Your Guaranteed Additions (GAs)</h3><p>This is your reward for staying invested. The formula is simple and powerful: <code>GA per year = (Your Sum Assured / 1000) Ã— 40</code>. These are added every single year you pay premiums.</p><h3>3. Your Lifetime Income</h3><ul><li><strong>Regular Income:</strong> After your premium term and a 2-year deferment, you get a straight <code>10% Ã— Your Sum Assured</code> every year, for life. Simple and predictable.</li><li><strong>Flexi Income:</strong> If you don't take the 10% income, it goes into a pot that grows at a <strong>guaranteed 5.5% compounded annually</strong>. My calculator shows you how this 'kitty' can grow over time.</li></ul><h3>4. Your Family's Protection (Death Benefit)</h3><p>This is crucial. The death benefit is your 'Sum Assured on Death' (which is equal to your Basic Sum Assured) plus all the Guaranteed Additions you've collected. Crucially, LIC guarantees this will never be less than 105% of all the premiums you've paid. It's a powerful safety net.</p>" }
       ]
     },
     {
         "id": "important-formulas",
         "icon":"FileText",
-        "title":"మీరు తెలుసుకోవలసిన మూడు సూత్రాలు",
+        "title":"The Three Formulas You Need to Know",
         "content": [
            { "type": "list", "items": [
-              "<strong>మొత్తం హామీ అదనపులు</strong> = <code>(బీమా మొత్తం / 1000) × 40 × ప్రీమియం చెల్లింపు కాలపరిమితి</code>",
-              "<strong>వార్షిక సాధారణ ఆదాయ చెల్లింపు</strong> = <code>0.10 × బీమా మొత్తం</code>",
-              "<strong>మీ ఫ్లెక్సీ ఆదాయ వృద్ధి (N సంవత్సరాలు ఉపసంహరించుకోకపోతే)</strong> = <code>(వార్షిక ఆదాయం) × [((1.055)^N - 1) / 0.055]</code>"
+              "<strong>Total Guaranteed Additions</strong> = <code>(Sum Assured / 1000) Ã— 40 Ã— Premium Paying Term</code>",
+              "<strong>Annual Regular Income Payout</strong> = <code>0.10 Ã— Sum Assured</code>",
+              "<strong>Your Flexi Income Growth (after N years of not withdrawing)</strong> = <code>(Annual Income) Ã— [((1.055)^N - 1) / 0.055]</code>"
             ]}
         ]
     },
     {
         "id": "worked-examples",
         "icon": "Users",
-        "title": "ఎల్‌ఐసి జీవన్ ఉత్సవ్ కాలిక్యులేటర్: 6 వాస్తవ-జీవిత దృష్టాంతాలు",
+        "title": "LIC Jeevan Utsav Calculator: 6 Real-Life Scenarios",
         "content":[
           { "type": "examples", "items": [
-              {"title": "'ప్రారంభ పక్షి' ప్రణాళిక: వయస్సు 30, ₹10L కవర్, సాధారణ ఆదాయం", "body": "<p><strong>క్లయింట్ లక్ష్యం:</strong> పదవీ విరమణ కోసం ఒక సాధారణ, హామీ ఆదాయ ప్రవాహం.</p><p><strong>నా సూచన:</strong> ఒక 12-సంవత్సరాల ప్రీమియం కాలపరిమితి (PPT). వారు సుమారు <strong>₹85,500/సంవత్సరం</strong> చెల్లిస్తారు. 12 సంవత్సరాలలో, వారి మొత్తం వ్యయం ~₹10.26 లక్షలు.</p><p><strong>ఫలితం:</strong> ఈ 12 సంవత్సరాలలో, వారు <strong>₹4.8 లక్షలు హామీ అదనపులలో</strong> జమ చేస్తారు. వారు చెల్లించడం ఆపిన రెండు సంవత్సరాల తర్వాత, వారు <strong>జీవితాంతం ప్రతి సంవత్సరం ₹1,00,000</strong> పొందడం ప్రారంభిస్తారు. ఇది ఒక ప్రణాళికను ముందుగానే లాక్ ఇన్ చేయడం యొక్క శక్తి.</p>"},
-              {"title": "'మధ్య-వృత్తి బూస్ట్': వయస్సు 40, ₹20L కవర్, ఫ్లెక్సీ ఆదాయం", "body": "<p><strong>క్లయింట్ లక్ష్యం:</strong> 60 ఏళ్ల తర్వాత జీవితం కోసం ఒక సౌకర్యవంతమైన నిధిని నిర్మించడం, బహుశా ప్రయాణం లేదా మనవడి చదువు కోసం.</p><p><strong>నా సూచన:</strong> ఒక 10-సంవత్సరాల PPT. ప్రీమియం ~₹2.1 లక్షలు/సంవత్సరం. 10 సంవత్సరాలలో, వారు <strong>₹8 లక్షలు GAs</strong>లో జమ చేస్తారు. వారి వార్షిక ఆదాయ హక్కు ₹2L (₹20Lలో 10%).</p><p><strong>'ఫ్లెక్సీ' మ్యాజిక్:</strong> సంవత్సరానికి ₹2L తీసుకోవడానికి బదులుగా, వారు దానిని 5 సంవత్సరాలు జమ చేయనివ్వండి. ఆ కుండ 5.5% చక్రవడ్డీతో <strong>₹11 లక్షలకు</strong> పైగా పెరుగుతుంది. వారి GAsతో కలిపి, ఇప్పుడు వారి వద్ద <strong>₹19 లక్షలకు</strong> పైగా సౌకర్యవంతమైన నిధి ఉంది, దాని నుండి వారు ఇష్టానుసారం ఉపసంహరించుకోవచ్చు.</p>"},
-              {"title": "'ప్రీ-రిటైర్మెంట్ పవర్-అప్': వయస్సు 50, ₹15L కవర్, రైడర్‌లతో", "body": "<p><strong>క్లయింట్ లక్ష్యం:</strong> పదవీ విరమణకు ముందు ఒక చివరి, శక్తివంతమైన పొదుపు ప్రోత్సాహం, అదనపు భద్రతతో.</p><p><strong>నా సూచన:</strong> ఒక 8-సంవత్సరాల PPT. బేస్ ప్రీమియం ~₹2.5 లక్షలు/సంవత్సరం. మేము యాక్సిడెంటల్ డెత్ రైడర్‌ను సుమారు ₹2,000/సంవత్సరం అదనంగా జోడిస్తాము. మొత్తం ఖర్చు: ~₹2.52 లక్షలు/సంవత్సరం.</p><p><strong>ఫలితం:</strong> వారు <strong>₹4.8 లక్షలు GAs</strong>లో జమ చేస్తారు. కాలపరిమితి తర్వాత, వారు రైడర్ నుండి అదనపు మనశ్శాంతితో, <strong>జీవితాంతం ప్రతి సంవత్సరం ₹1.5 లక్షలు</strong> హామీ పొందుతారు.</p>"},
-              {"title": "లోతైన విశ్లేషణ: ప్రసిద్ధ '₹17.7 లక్షల' ఫ్లెక్సీ పూల్ ఎలా లెక్కించబడుతుంది", "body": "<p>మీరు ఈ సంఖ్యను ₹10L పాలసీకి PPT 12 మరియు 10-సంవత్సరాల వాయిదాతో ప్రతిచోటా చూస్తారు. ఇక్కడ నేను దానికి ఎలా వస్తానో ఉంది, కాబట్టి మీరు గణితాన్ని నమ్మవచ్చు:</p><ol><li>మీ వార్షిక ఆదాయ హక్కు ₹1 లక్ష (₹10Lలో 10%).</li><li>మీరు దానిని 10 సంవత్సరాలు తాకరు. అది 5.5% వద్ద ₹1L యొక్క యాన్యుటీ. భవిష్యత్ విలువ <strong>₹12.87 లక్షలు</strong>.</li><li>ఇప్పుడు, ప్రీమియంలు చెల్లించేటప్పుడు మీరు సంపాదించిన హామీ అదనపులను జోడించండి: (₹40,000/సంవత్సరం * 12 సంవత్సరాలు) = <strong>₹4.8 లక్షలు</strong>.</li><li><strong>మొత్తం పూల్:</strong> ₹12.87 లక్షలు (ఆదాయ వృద్ధి నుండి) + ₹4.8 లక్షలు (GAs నుండి) = <strong>₹17.67 లక్షలు</strong>. అది మీ సౌకర్యవంతమైన, ఉపసంహరించుకోగల నిధి.</p>"},
-              {"title": "'అధిక నికర విలువ' ఆట: ₹1 కోటి కవర్ స్నాప్‌షాట్", "body": "<p>నా హెచ్‌ఎన్‌ఐ క్లయింట్ల కోసం, ఈ పథకం ఆశ్చర్యకరంగా స్థిరమైన, పన్ను-సమర్థవంతమైన వారసత్వ సాధనాన్ని అందిస్తుంది. ₹1 కోటి బీమా మొత్తం కోసం (వయస్సు 35, 10-సంవత్సరాల పిపిటి):</p><ul><li>మీరు <strong>₹40 లక్షలు హామీ అదనపులలో</strong> జమ చేస్తారు.</li><li>మీ జీవితకాల, పన్ను-రహిత వార్షిక ఆదాయం <strong>సంవత్సరానికి ₹10,00,000</strong>. ఇది మీ కోసం లేదా మీ జీవిత భాగస్వామి కోసం ఒక హామీ ఆదాయ ప్రవాహాన్ని సృష్టించడానికి ఒక శక్తివంతమైన మార్గం.</li></ul>"},
-              {"title": "'నేను చెల్లించడం ఆపివేస్తే ఏమిటి?' దృష్టాంతం: సరెండర్ వర్సెస్ పెయిడ్-అప్", "body": "<p>జీవితం జరుగుతుంది. మీరు, చెప్పాలంటే, 3 సంవత్సరాల తర్వాత ప్రీమియంలు చెల్లించడం ఆపివేస్తే, మీకు ఒక ఎంపిక ఉంటుంది. <strong>సరెండర్</strong> చేయడం అంటే మీరు ఒక చిన్న నగదు మొత్తాన్ని తిరిగి పొందుతారు మరియు పాలసీ చనిపోతుంది. ఒక తెలివైన చర్య తరచుగా దానిని <strong>'పెయిడ్-అప్'</strong> చేయడం. పాలసీ తగ్గించబడిన బీమా మొత్తంతో సజీవంగా ఉంటుంది, మరియు మీరు ఇప్పటికీ మీరు ఇప్పటికే సంపాదించిన అన్ని హామీ అదనపులను ఉంచుకుంటారు. ఇది ఒక కీలకమైన వ్యత్యాసం, ఇది మిమ్మల్ని ఒక పెద్ద ఆర్థిక తప్పు నుండి కాపాడగలదు. మా <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>సరెండర్ విలువ క్యాలిక్యులేటర్‌తో</a> ఇది ఎలా పనిచేస్తుందో చూడండి.</p>"}
+              {"title": "The 'Early Bird' Plan: Age 30, â‚¹10L Cover, Regular Income", "body": "<p><strong>Client's Goal:</strong> A simple, guaranteed income stream for retirement.</p><p><strong>My Suggestion:</strong> A 12-year premium term (PPT). They'll pay about <strong>â‚¹85,500/year</strong>. Over 12 years, their total outgo is ~â‚¹10.26 Lakh.</p><p><strong>The Payoff:</strong> During these 12 years, they accumulate <strong>â‚¹4.8 Lakh in Guaranteed Additions</strong>. Two years after they stop paying, they start receiving <strong>â‚¹1,00,000 every year for the rest of their life</strong>. That's the power of locking in a plan early.</p>"},
+              {"title": "The 'Mid-Career Boost': Age 40, â‚¹20L Cover, Flexi Income", "body": "<p><strong>Client's Goal:</strong> Build a flexible fund for post-60 life, maybe for travel or a grandchild's education.</p><p><strong>My Suggestion:</strong> A 10-year PPT. Premium is ~â‚¹2.1L/year. Over 10 years, they accumulate <strong>â‚¹8 Lakh in GAs</strong>. Their annual income right is â‚¹2L (10% of â‚¹20L).</p><p><strong>The 'Flexi' Magic:</strong> Instead of taking the â‚¹2L yearly, they let it accumulate for 5 years. That pot grows at 5.5% compounded to over <strong>â‚¹11 Lakh</strong>. Combined with their GAs, they now have a flexible fund of over <strong>â‚¹19 Lakh</strong> to draw from as they wish.</p>"},
+              {"title": "The 'Pre-Retirement Power-Up': Age 50, â‚¹15L Cover, with Riders", "body": "<p><strong>Client's Goal:</strong> A final, powerful savings push before retirement, with extra safety.</p><p><strong>My Suggestion:</strong> An 8-year PPT. The base premium is ~â‚¹2.5L/year. We add an Accidental Death Rider for about â‚¹2,000/year extra. Total cost: ~â‚¹2.52L/year.</p><p><strong>The Outcome:</strong> They accumulate <strong>â‚¹4.8 Lakh in GAs</strong>. After the term, they get a guaranteed <strong>â‚¹1.5 Lakh/year for life</strong>, with the added peace of mind from the rider.</p>"},
+              {"title": "Deep Dive: How the Famous 'â‚¹17.7 Lakh' Flexi Pool is Calculated", "body": "<p>You'll see this number everywhere for a â‚¹10L policy with a 12-year PPT and a 10-year deferral. Hereâ€™s how I get to it, so you can trust the math:</p><ol><li>Your annual income right is â‚¹1 Lakh (10% of â‚¹10L).</li><li>You don't touch it for 10 years. That's an annuity of â‚¹1L growing at 5.5%. The future value is <strong>â‚¹12.87 Lakh</strong>.</li><li>Now, add the Guaranteed Additions you earned while paying premiums: (â‚¹40,000/year * 12 years) = <strong>â‚¹4.8 Lakh</strong>.</li><li><strong>Total Pot:</strong> â‚¹12.87 Lakh (from income growth) + â‚¹4.8 Lakh (from GAs) = <strong>â‚¹17.67 Lakh</strong>. That's your flexible, withdrawable fund.</p>"},
+              {"title": "The 'High Net Worth' Play: â‚¹1 Crore Cover Snapshot", "body": "<p>For my HNI clients, this plan offers a surprisingly stable, tax-efficient legacy tool. For a â‚¹1 Crore Sum Assured (Age 35, 10-year PPT):</p><ul><li>You accumulate a whopping <strong>â‚¹40 Lakh in Guaranteed Additions</strong>.</li><li>Your lifelong, tax-free annual income is <strong>â‚¹10,00,000 per year</strong>. It's a powerful way to create a guaranteed income stream for yourself or your spouse.</li></ul>"},
+              {"title": "What If I Stop Paying? Surrender vs. Paid-Up Value", "body": "<p>Life happens. If you stop paying premiums after, say, 3 years, you have a choice. <strong>Surrendering</strong> means you get a small cash amount back and the policy dies. A smarter move is often to make it <strong>'Paid-Up'</strong>. The policy stays alive with a reduced Sum Assured, and you still get to keep all the Guaranteed Additions you've already earned. It's a crucial distinction that can save you from a big financial mistake. See how this works with our <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>surrender value calculator</a>.</p>"}
           ]}
         ]
     },
     {
       "id": "comparison",
       "icon": "GitCompareArrows",
-      "title": "జీవన్ ఉత్సవ్ వర్సెస్ క్లాసిక్స్: హెడ్-టు-హెడ్ జీవన్ ఉత్సవ్ క్యాలిక్యులేటర్‌తో",
-      "description": "జీవన్ ఉత్సవ్, జీవన్ ఉమంగ్ మరియు కొత్త జీవన్ ఆనంద్ వంటి ఇతర ఎల్‌ఐసి అభిమానుల ఇష్టమైన వాటితో ఎలా పోలుస్తుంది? ఇక్కడ నా అభిప్రాయం ఉంది.",
+      "title": "Jeevan Utsav vs. The Classics: Head-to-Head with Jeevan Utsav Calculator",
+      "description": "How does Jeevan Utsav stack up against other LIC fan-favorites like Jeevan Umang and New Jeevan Anand? Hereâ€™s my take.",
       "content": [
-        { "type": "table", "headers": ["పథకం", "నా తీర్పు: ఇది నిజంగా దేనికి", "కీలక వ్యత్యాసం"], "rows": [
-            ["<strong>జీవన్ ఉత్సవ్ (871)</strong>", "పదవీ విరమణ కోసం ఒక సౌకర్యవంతమైన, హామీ ఆదాయ ప్రవాహాన్ని నిర్మించడం.", "మీరు హామీ అదనపులు + సాధారణ లేదా పెరుగుతున్న ఆదాయం మధ్య ఒక ఎంపికను పొందుతారు."],
-            ["<strong>జీవన్ ఉమంగ్ (945)</strong>", "జీవితం కోసం ఒక సాధారణ, పెన్షన్ వంటి వార్షిక చెల్లింపును సృష్టించడం.", "ఇది వార్షిక ఆదాయంగా బీమా మొత్తంలో నేరుగా 8% ఇస్తుంది, బోనస్‌లతో కలిపి."],
-            ["<strong>కొత్త జీవన్ ఆనంద్ (915)</strong>", "ఒక నిర్దిష్ట లక్ష్యం కోసం ఒక క్లాసిక్ పొదుపు పథకం, బోనస్‌గా జీవితకాల రిస్క్ కవర్‌తో.", "మీరు చివరిలో ఒక పెద్ద ఏకమొత్తం పొందుతారు, మరియు మీ కుటుంబం మరణంపై బీమా మొత్తాన్ని ఇంకా పొందుతుంది."]
+        { "type": "table", "headers": ["Plan", "My Verdict: What It's Really For", "The Key Difference"], "rows": [
+            ["<strong>Jeevan Utsav (871)</strong>", "Building a flexible, guaranteed income stream for retirement.", "You get Guaranteed Additions + a choice between regular or growing income."],
+            ["<strong>Jeevan Umang (945)</strong>", "Creating a simple, pension-like annual payout for life.", "It gives a straight 8% of Sum Assured as annual income, with bonuses added."],
+            ["<strong>New Jeevan Anand (915)</strong>", "A classic savings plan for a specific goal, with lifelong risk cover as a bonus.", "You get a big lump sum at the end, AND your family still gets the Sum Assured on death."]
           ]
         }
       ]
@@ -157,15 +157,15 @@
     {
       "id": "eligibility-rules",
       "icon": "CheckCircle",
-      "title": "అర్హత, రైడర్లు, రుణం & సరెండర్: చిన్న అక్షరాలు",
+      "title": "Eligibility, Riders, Loan & Surrender: The Fine Print",
       "content": [
         { "type": "list", "items": [
-            "<strong>దీనిని ఎవరు కొనగలరు?</strong> దాదాపు ఎవరైనా, 90 రోజుల శిశువు నుండి 65 ఏళ్ల వృద్ధుడి వరకు.",
-            "<strong>కనీస కవర్ (BSA):</strong> మీరు కనీసం ₹5,00,000తో ప్రారంభించాలి.",
-            "<strong>ప్రీమియం నిబంధనలు:</strong> మీరు 5 సంవత్సరాల నుండి 16 సంవత్సరాల వరకు చెల్లించడాన్ని ఎంచుకోవచ్చు.",
-            "<strong>ప్రయోజన ట్రిగ్గర్లు:</strong> పిపిటి సమయంలో జిఏలు జమ అవుతాయి. పిపిటి ముగిసిన 2 సంవత్సరాల తర్వాత (వాయిదా కాలం) ఆదాయం ప్రారంభమవుతుంది.",
-            "<strong>రైడర్లు:</strong> అవును, మీరు యాక్సిడెంటల్ డెత్, డిజేబిలిటీ, క్రిటికల్ ఇల్‌నెస్, మరియు ప్రీమియం మినహాయింపు ప్రయోజనం కోసం రైడర్‌లను జోడించవచ్చు. నేను ప్రాథమిక సంపాదించేవారికి AD&DB రైడర్‌ను చాలా సిఫార్సు చేస్తున్నాను.",
-            "<strong>రుణం & సరెండర్:</strong> పాలసీ కనీసం <strong>ఒక పూర్తి సంవత్సరం</strong> (పిపిటి 5-9కి) లేదా <strong>రెండు పూర్తి సంవత్సరాలు</strong> (పిపిటి 10-16కి) ప్రీమియంలు చెల్లించిన తర్వాత సరెండర్ విలువ మరియు రుణ అర్హతను పొందుతుంది. మీరు *సరెండర్* చేయగలిగినప్పటికీ, విలువను కాపాడుకోవడానికి దానిని 'పెయిడ్-అప్' చేయడం తరచుగా ఒక తెలివైన ఆర్థిక చర్య."
+            "<strong>Who can buy it?</strong> Almost anyone, from a 90-day-old infant to a 65-year-old.",
+            "<strong>Minimum Cover (BSA):</strong> You have to start with at least â‚¹5,00,000.",
+            "<strong>Premium Terms:</strong> You can choose to pay for as little as 5 years or as long as 16 years.",
+            "<strong>Benefit Triggers:</strong> GAs accrue during the PPT. Income begins 2 years after the PPT ends (the deferment period).",
+            "<strong>Riders:</strong> Yes, you can add riders for Accidental Death, Disability, Critical Illness, and a Premium Waiver Benefit. I highly recommend the AD&DB rider for the primary earner.",
+            "<strong>Loan & Surrender:</strong> The policy acquires surrender value and loan eligibility after paying premiums for at least <strong>one full year</strong> (for PPT 5-9) or <strong>two full years</strong> (for PPT 10-16). While you *can* surrender, making it 'Paid-Up' is often a smarter financial move to preserve value."
           ]
         }
       ]
@@ -173,70 +173,80 @@
     {
         "id": "taxes-charges",
         "icon": "FileText",
-        "title": "పన్నులు & ఛార్జీలు: ప్రభుత్వం ఏమి తీసుకుంటుంది",
+        "title": "Taxes & Charges: What the Government Takes",
         "content": [
           { "type": "list", "items": [
-            "<strong>మీ పెట్టుబడి (80C):</strong> మీరు చెల్లించే ప్రీమియంలు సాధారణంగా సెక్షన్ 80C కింద మినహాయింపుకు అర్హమైనవి, ఇది మీ పన్ను విధించదగిన ఆదాయాన్ని తగ్గించగలదు.",
-            "<strong>మీ చెల్లింపు (10(10D)):</strong> మీరు అందుకునే ఆదాయం మరియు మరణ ప్రయోజనాలు సాధారణంగా సెక్షన్ 10(10D) కింద పన్ను-రహితం, కానీ ఎల్లప్పుడూ తాజా నియమాలను తనిఖీ చేయండి ఎందుకంటే అవి మారవచ్చు. మా <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>పన్ను విధానం కాలిక్యులేటర్‌ను</a> ఉపయోగించి ఇది మిమ్మల్ని ఎలా ప్రభావితం చేస్తుందో చూడండి.",
-            "<strong>ప్రీమియంపై GST:</strong> అవును, GST ఉంది. ఇది సాధారణంగా మొదటి సంవత్సరంలో ~4.5% మరియు ఆ తర్వాత ~2.25%కి పడిపోతుంది. నా కాలిక్యులేటర్ దీనిని చేర్చదు ఎందుకంటే ఇది ఒక పన్ను, పెట్టుబడి రాబడిలో భాగం కాదు, కానీ ఇది మీరు తెలుసుకోవలసిన ఒక వాస్తవ ఖర్చు."
+            "<strong>Your Investment (80C):</strong> The premiums you pay are usually eligible for deduction under Section 80C, which can lower your taxable income.",
+            "<strong>Your Payout (10(10D)):</strong> The income and death benefits you receive are generally tax-free under Section 10(10D), but always check the latest rules as they can change. Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to see how this impacts you.",
+            "<strong>GST on Premium:</strong> Yes, there's GST. It's typically around 4.5% in the first year and drops to about 2.25% thereafter. My calculator doesn't include this as it's a tax, not part of the investment return, but it's a real cost you should be aware of."
           ] }
         ]
     },
     {
       "id": "faq",
       "icon": "HelpCircle",
-      "title": "జీవన్ ఉత్సవ్ ప్రీమియం కాలిక్యులేటర్ తరచుగా అడిగే ప్రశ్నలు: మీ ప్రశ్నలు, నిజాయితీగా సమాధానమివ్వబడ్డాయి",
+      "title": "Jeevan Utsav Premium Calculator FAQ: Your Questions Answered Honestly",
       "content": [
         { "type": "faq", "items": [
-            {"q": "జీవన్ ఉత్సవ్ నిజంగా హామీ ఇవ్వబడిందా?","a": "అవును. 'హామీ అదనపులు' మరియు '10% సాధారణ ఆదాయం' నియమం పాలసీ ఒప్పందంలో వ్రాయబడ్డాయి. ఇది ఒక 'పాల్గొనని' పథకం కాబట్టి, ఇది ఎల్‌ఐసి లాభాలపై ఆధారపడదు. మీకు కోట్ చేయబడినది మీకు లభిస్తుంది."},
-            {"q": "ఒక సాధారణ జీవితం కోసం, ఏది మంచిది: సాధారణ లేదా ఫ్లెక్సీ ఆదాయం?","a": "మీరు ప్రతి సంవత్సరం ఎటువంటి గందరగోళం లేకుండా ఒక ఊహించదగిన, 'పెన్షన్-వంటి' చెక్ కావాలనుకుంటే, సాధారణ ఆదాయం కోసం వెళ్ళండి. మీకు వెంటనే డబ్బు అవసరం లేకపోతే మరియు తరువాత ఒక పెద్ద కుండను నిర్మించాలనుకుంటే, 5.5% చక్రవడ్డీ కారణంగా ఫ్లెక్సీ మరింత శక్తివంతమైన ఎంపిక."},
-            {"q": "కనీస BSA ఎంత?","a": "కనీస ప్రాథమిక బీమా మొత్తం ₹5,00,000. మీ ప్రీమియం మీ వయస్సు మరియు ఈ మొత్తం కోసం మీరు ఎంచుకున్న కాలపరిమితిపై ఆధారపడి ఉంటుంది."},
-            {"q": "హామీ అదనపులు ఎప్పుడు జమ అవ్వడం ఆగిపోతాయి?","a": "మీ ప్రీమియం చెల్లింపు కాలపరిమితి (PPT) ముగిసిన వెంటనే అవి ఆగిపోతాయి. ఆ తర్వాత, మీ ఆదాయ దశ ప్రారంభమవుతుంది."},
-            {"q": "ఇతర ఎల్‌ఐసి పథకాల వలె చివరలో ఒక పెద్ద ఏకమొత్తం ఉందా?","a": "సాంప్రదాయ అర్థంలో లేదు. జీవన్ ఉత్సవ్ జీవితకాల *ఆదాయం* కోసం రూపొందించబడింది. అయితే, మీరు ఫ్లెక్సీ ఎంపికను ఎంచుకుని, మీ డబ్బును జమ చేయనిస్తే, మీరు ఉపసంహరించుకోగల చాలా పెద్ద డబ్బు 'పూల్'ను నిర్మించవచ్చు, ఇది ఒకేసారి మొత్తంలా పనిచేస్తుంది."},
-            {"q": "నాకు ఏదైనా జరిగితే నా కుటుంబానికి ఏమి లభిస్తుంది?","a": "మీ నామినీ 'మరణంపై బీమా మొత్తం' (ఇది మీ ప్రాథమిక బీమా మొత్తానికి సమానం) మరియు ఆ సమయం వరకు సేకరించిన అన్ని హామీ అదనపులను పొందుతారు. ఎల్‌ఐసి ఈ చెల్లింపు మీరు చెల్లించిన అన్ని ప్రీమియంలలో 105% కంటే తక్కువగా ఉండదని హామీ ఇస్తుంది."},
-            {"q": "నేను ఇబ్బందుల్లో ఉన్నప్పుడు రుణం తీసుకోగలనా?","a": "అవును, ఇది ప్రయోజనాలలో ఒకటి. మీ పాలసీకి సరెండర్ విలువ వచ్చిన తర్వాత (పిపిటి ప్రకారం 1-2 సంవత్సరాల చెల్లింపుల తర్వాత), మీరు దానిపై రుణం తీసుకోవచ్చు. ఇది పాలసీని విచ్ఛిన్నం చేయకుండా ద్రవ్యతను పొందడానికి ఒక గొప్ప మార్గం."},
-            {"q": "ఐచ్ఛిక రైడర్లు అదనపు ఖర్చుకు నిజంగా విలువైనవేనా?","a": "నా వృత్తిపరమైన అభిప్రాయంలో, ప్రమాద మరణం మరియు తీవ్ర అనారోగ్యం కోసం రైడర్లు ఖచ్చితంగా విలువైనవి. అవి సాపేక్షంగా చిన్న ప్రీమియం పెరుగుదలకు ఒక కీలకమైన రక్షణ పొరను జోడిస్తాయి. అవి మీ ప్రధాన ఉత్సవ్ ప్రయోజనాలను మార్చవు, కానీ అవి మీ కుటుంబాన్ని జీవితంలోని చెత్త పరిస్థితుల నుండి రక్షిస్తాయి."}
+            {"q": "Is Jeevan Utsav truly guaranteed?","a": "Yes. The 'Guaranteed Additions' and the '10% Regular Income' are written into the policy contract. Because it's a 'Non-Participating' plan, it doesn't depend on LIC's profits. What you're quoted is what you get."},
+            {"q": "For a simple life, which is better: Regular or Flexi income?","a": "If you want a predictable, 'pension-like' cheque every year without any fuss, go for Regular Income. If you don't need the money immediately and want to build a larger pot for later, Flexi is the more powerful option because of the 5.5% compounding."},
+            {"q": "What's the absolute minimum I can invest?","a": "The minimum Basic Sum Assured is â‚¹5,00,000. Your premium will depend on your age and the term you choose for this amount."},
+            {"q": "When do the Guaranteed Additions actually stop accruing?","a": "They stop the moment your Premium Paying Term (PPT) ends. After that, your income phase begins."},
+            {"q": "Does this plan give a big lump sum at the end like other LIC plans?","a": "Not in the traditional sense. Jeevan Utsav is designed for lifelong *income*. However, if you choose the Flexi option and let your money accumulate, you can build a very large 'pool' of money that you can withdraw from, which can act like a lump sum."},
+            {"q": "What does my family get if something happens to me?","a": "Your nominee gets the 'Sum Assured on Death' (which is your Basic Sum Assured) PLUS all the Guaranteed Additions that have been collected up to that point. LIC guarantees this payout will be at least 105% of all premiums you've paid."},
+            {"q": "Can I take a loan if I'm in a pinch?","a": "Yes, it's one of the benefits. Once your policy has a surrender value (after 1-2 years of payments depending on PPT), you can take a loan against it. It's a great way to get liquidity without breaking the policy."},
+            {"q": "Are the optional riders actually worth the extra cost?","a": "In my professional opinion, riders for accidental death and critical illness are absolutely worth it. They add a crucial layer of protection for a relatively small increase in premium. They don't change your core Utsav benefits, but they protect your family from life's worst-case scenarios."},
+            {"q": "How does Jeevan Utsav compare with mutual fund investments?","a": "While Jeevan Utsav provides guaranteed returns, mutual funds offer potentially higher returns but with market risk. Use our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> to explore market-linked options and our <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>overlap calculator</a> to optimize your portfolio."},
+            {"q": "What about tax-saving options beyond LIC plans?","a": "For comprehensive tax planning, explore <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF comparisons</a> and our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to maximize your savings under different tax slabs."},
+            {"q": "Can I use Jeevan Utsav for child education planning?","a": "While Jeevan Utsav is primarily for retirement income, for child-specific plans consider <a href='/{lang}/lic-child-plan' class='text-primary hover:underline'>LIC child plans</a> or <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>Sukanya Samriddhi Yojana</a> which offer better tax benefits for education goals."}
         ]}
+      ]
+    },
+    {
+      "id": "explore-more",
+      "icon": "TrendingUp",
+      "title": "Explore More Financial Planning Tools",
+      "content": [
+        { "type": "paragraph", "text": "Maximize your financial strategy with our comprehensive suite of calculators. Calculate <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan repayment strategies</a>, plan for <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS retirement benefits</a>, and compare <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity values</a> to build a diversified financial portfolio." }
       ]
     },
     {
       "id": "conclusion",
       "icon": "Star",
-      "title": "నా చివరి మాట: జీవన్ ఉత్సవ్ మీకు సరైన ఎంపికా?",
+      "title": "My Final Take: Is Jeevan Utsav the Right Choice for You?",
       "content": [
-        { "type": "paragraph", "text": "వందలాది ఆర్థిక ఉత్పత్తులను సమీక్షించిన తర్వాత, జీవన్ ఉత్సవ్ ఒక నిర్దిష్ట రకమైన పెట్టుబడిదారునికి ఒక ఆకర్షణీయమైన ఎంపిక అని నేను మీకు చెప్పగలను: <strong>ఊహాగానాల కంటే నిశ్చయతకు</strong> విలువ ఇచ్చే వ్యక్తి. మీరు మార్కెట్ రిస్క్‌లకు గురికాకుండా మీ పదవీ విరమణ కోసం ఒక హామీ, జీవితకాల, పన్ను-రహిత ఆదాయ ప్రవాహాన్ని లాక్ చేయాలనుకుంటే, ఈ పథకం ఎల్‌ఐసి ఇప్పటివరకు అందించిన బలమైన పోటీదారులలో ఒకటి. ఇది దూకుడు సంపద సృష్టికర్త కోసం కాదు, కానీ పూర్తి ఆర్థిక భద్రత యొక్క పునాదిని నిర్మించడానికి, ఇది ఒక అగ్ర-శ్రేణి ఎంపిక. ఈ గైడ్ మరియు కాలిక్యులేటర్ మీకు ఇది మీ ఆర్థిక కథలో సరిపోతుందో లేదో నిర్ణయించడానికి స్పష్టత మరియు విశ్వాసాన్ని ఇచ్చిందని నేను ఆశిస్తున్నాను." }
+        { "type": "paragraph", "text": "After reviewing hundreds of financial products, I can tell you that Jeevan Utsav is a compelling option for a specific type of investor: someone who values <strong>certainty over speculation</strong>. If you want to lock in a guaranteed, lifelong, tax-free income stream for your retirement without being exposed to market risks, this plan is one of the strongest contenders LIC has ever offered. Itâ€™s not for the aggressive wealth builder, but for creating a foundation of absolute financial security, it's a top-tier choice. For a comprehensive retirement strategy, compare Jeevan Utsav with our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a>, explore <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF returns</a>, or check <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>Atal Pension Yojana</a> for government-backed pension options. I hope this guide and calculator have given you the clarity and confidence to decide if it fits into your financial story." }
       ]
     }
   ],
   "related_calculators": {
-    "title": "ఇది కూడా చదవండి: ఇతర ప్రజాదరణ పొందిన పథకాలతో పోల్చండి",
+    "title": "Also Read: Compare with Other Popular Plans",
     "links": [
-      { "title": "ఎల్‌ఐసి జీవన్ ఆనంద్ కాలిక్యులేటర్", "description": "క్లాసిక్ 'పొదుపు + రక్షణ' పథకంతో పోల్చండి.", "href": "/lic-jeevan-anand-calculator" },
-      { "title": "ఎల్‌ఐసి జీవన్ లాభ్ కాలిక్యులేటర్", "description": "ఈ ప్రజాదరణ పొందిన పరిమిత-చెల్లింపు ఎండోమెంట్ పథకంతో ఇది ఎలా నిలుస్తుందో చూడండి.", "href": "/lic-jeevan-labh-calculator" },
-      { "title": "ఎల్‌ఐసి జీవన్ ఉమంగ్ కాలిక్యులేటర్", "description": "అసలు 'జీవితాంతం 8%' హామీ ఆదాయ పథకం.", "href": "/lic-jeevan-umang-calculator" },
-      { "title": "ఎల్‌ఐసి ప్రీమియం కాలిక్యులేటర్", "description": "అన్ని ప్రధాన ఎల్‌ఐసి పథకాల కోసం ప్రీమియంలను అన్వేషించండి.", "href": "/lic-premium-calculator" }
+      { "title": "LIC Jeevan Anand Calculator", "description": "Compare against the classic 'savings + protection' plan.", "href": "/lic-jeevan-anand-calculator" },
+      { "title": "LIC Jeevan Labh Calculator", "description": "See how it stacks up against this popular limited-pay endowment plan.", "href": "/lic-jeevan-labh-calculator" },
+      { "title": "LIC Jeevan Umang Calculator", "description": "The original '8% for life' guaranteed income plan.", "href": "/lic-jeevan-umang-calculator" },
+      { "title": "LIC Premium Calculator", "description": "Explore premiums for all major LIC plans.", "href": "/lic-premium-calculator" }
     ]
   },
   "article_schema": {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "ఎల్‌ఐసి జీవన్ ఉత్సవ్ క్యాలిక్యులేటర్ — ప్రీమియం, ఆదాయం & ప్రయోజనాలు (ప్లాన్ 771)",
-    "description": "ఉచిత ఎల్‌ఐసి జీవన్ ఉత్సవ్ క్యాలిక్యులేటర్ (ప్లాన్ 771). ప్రీమియం, గ్యారెంటీడ్ అడిషన్స్ (₹40/₹1,000), సాధారణ (10% BSA/సంవత్సరం) లేదా ఫ్లెక్సీ (5.5% జమ) ఆదాయం అంచనా వేయండి. ఇలస్ట్రేషన్‌ను డౌన్‌లోడ్ చేయండి.",
-    "author": { "@type": "Person", "name": "మహేష్ చౌబే, సిఎఫ్‌పి" },
-    "publisher": { "@type": "Organization", "name": "భారత్‌సేవర్" },
+    "headline": "LIC Jeevan Utsav Calculator â€” An Honest Look at Premiums & Lifetime Income (Plan 871)",
+    "description": "I've built this free LIC Jeevan Utsav Calculator (Plan 871) to give you the unvarnished truth on its premiums, Guaranteed Additions (â‚¹40/â‚¹1,000), and lifetime income options. Get my 20-year expert take.",
+    "author": { "@type": "Person", "name": "Mahesh Chaube, CFP" },
+    "publisher": { "@type": "Organization", "name": "BharatSaver" },
     "datePublished": "2025-09-23",
     "dateModified": "2025-09-23",
-    "reviewedBy": { "@type": "Person", "name": "లవీనా విజయ్" },
-    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://bharatsaver.com/en/jeevan-utsav-calculator" }
+    "reviewedBy": { "@type": "Person", "name": "Laveena Vijayi", "jobTitle": "Head of Insurance Research" }
   },
   "how_to_schema": {
     "@context": "https://schema.org",
     "@type": "HowTo",
-    "name": "జీవన్ ఉత్సవ్ క్యాలిక్యులేటర్‌ను ఎలా ఉపయోగించాలి",
+    "name": "How to Use the LIC Jeevan Utsav Calculator",
     "step": [
-      { "@type": "HowToStep", "name": "ప్లాన్ ఇన్‌పుట్‌లను నమోదు చేయండి", "text": "ప్లాన్ 771, వయస్సు, ప్రాథమిక బీమా మొత్తం, ప్రీమియం చెల్లింపు కాలపరిమితి మరియు ఆదాయ ఎంపికను ఎంచుకోండి." },
-      { "@type": "HowToStep", "name": "మోడ్ & రైడర్‌లను ఎంచుకోండి", "text": "చెల్లింపు ఫ్రీక్వెన్సీ మరియు AD&DB వంటి ఐచ్ఛిక రైడర్‌లను ఎంచుకోండి." },
-      { "@type": "HowToStep", "name": "లెక్కించు క్లిక్ చేయండి", "text": "మోడ్ ద్వారా ప్రీమియం, గ్యారెంటీడ్ అడిషన్స్ షెడ్యూల్, ఆదాయ ప్రొజెక్షన్లు మరియు డౌన్‌లోడ్ చేయగల పిడిఎఫ్ ఇలస్ట్రేషన్ పొందండి." }
+      { "@type": "HowToStep", "name": "Step 1: Enter Your Details", "text": "Input your age, desired Sum Assured, and how long you want to pay premiums (5-16 years)." },
+      { "@type": "HowToStep", "name": "Step 2: Choose Your Income Style", "text": "Select 'Regular' for a fixed annual payout or 'Flexi' to let your income grow at a guaranteed 5.5%." },
+      { "@type": "HowToStep", "name": "Step 3: Click 'Calculate' & Get Clarity", "text": "Instantly see your estimated premium, your total Guaranteed Additions, and a clear projection of your lifelong income stream." }
     ]
   },
   "faq_schema": {
@@ -245,18 +255,18 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "జీవన్ ఉత్సవ్‌లో గ్యారెంటీడ్ అడిషన్స్ అంటే ఏమిటి?",
-        "acceptedAnswer": { "@type": "Answer", "text": "గ్యారెంటీడ్ అడిషన్స్ ప్రీమియం చెల్లింపు కాలపరిమితిలో ప్రతి పాలసీ సంవత్సరం చివరిలో ప్రతి ₹1,000 ప్రాథమిక బీమా మొత్తానికి ₹40 చొప్పున జమ అవుతాయి." }
+        "name": "What are the Guaranteed Additions in Jeevan Utsav?",
+        "acceptedAnswer": { "@type": "Answer", "text": "For every year you pay the premium, LIC adds a guaranteed amount of â‚¹40 for every â‚¹1,000 of your Basic Sum Assured. This is not a variable bonus; it's a contractual guarantee." }
       },
       {
         "@type": "Question",
-        "name": "రెగ్యులర్ వర్సెస్ ఫ్లెక్సీ ఆదాయం అంటే ఏమిటి?",
-        "acceptedAnswer": { "@type": "Answer", "text": "రెగ్యులర్ ఆదాయం పిపిటి తర్వాత జీవితాంతం ప్రతి సంవత్సరం ప్రాథమిక బీమా మొత్తంలో 10% చెల్లిస్తుంది. ఫ్లెక్సీ మీరు ఆదాయాన్ని వాయిదా వేయడానికి అనుమతిస్తుంది; క్లెయిమ్ చేయని ఆదాయం సంవత్సరానికి ~5.5% చక్రవడ్డీతో జమ అవుతుంది మరియు మీరు జమ అయిన పూల్ నుండి కొంత భాగాన్ని ఉపసంహరించుకోవచ్చు." }
+        "name": "What's the real difference between Regular and Flexi Income?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Regular Income provides a fixed, predictable payout of 10% of your Sum Assured every year for life, starting after your premium term. Flexi Income allows you to defer this payout, letting it accumulate in a separate pool with a guaranteed interest rate of 5.5% compounded annually, giving you the flexibility to withdraw larger amounts later." }
       },
       {
         "@type": "Question",
-        "name": "మరణ ప్రయోజనం ఏమిటి?",
-        "acceptedAnswer": { "@type": "Answer", "text": "మరణ ప్రయోజనం మరణంపై బీమా మొత్తం లేదా మరణ తేదీ వరకు చెల్లించిన మొత్తం ప్రీమియంలలో 105% కంటే ఎక్కువ, ఉత్పత్తి నిబంధనలకు లోబడి ఉంటుంది." }
+        "name": "Is Jeevan Utsav a good plan for retirement income?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, it is specifically designed for creating a guaranteed, lifelong income stream, making it an excellent tool for retirement planning, especially for those who prefer safety over market-linked returns." }
       }
     ]
   }

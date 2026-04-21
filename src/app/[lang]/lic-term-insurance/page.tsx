@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
 export default async function LicTermInsurancePage({ params }: { params: Promise<{ lang: Locale }> }) {
     const { lang } = await params;
     const dictionary = await getDictionary(lang);
-    const pageDict = (await import(`@/dictionaries/${lang}/lic-term-insurance.json`).catch(() => import(`@/dictionaries/en/lic-term-insurance.json`))).default;
+    const pageDict = { ...(await import(`@/dictionaries/${lang}/lic-term-insurance.json`).catch(() => import(`@/dictionaries/en/lic-term-insurance.json`))).default };
     const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
     const pageUrl = `${siteUrl}/${lang}/lic-term-insurance`;
 

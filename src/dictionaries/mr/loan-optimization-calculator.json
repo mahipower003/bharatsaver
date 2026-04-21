@@ -1,121 +1,121 @@
-
+﻿
 {
-  "h1": "कर्ज ऑप्टिमायझेशन कॅल्क्युलेटर भारत 2025 — EMI, प्रीपेमेंट आणि रिफायनान्स बचत",
-  "summary": "हा मार्गदर्शक + परस्परसंवादी कॅल्क्युलेटर तुम्हाला उत्तर देण्यास मदत करतो: मी एकूण व्याज कसे कमी करू शकेन, माझी EMI किंवा मुदत कशी कमी करू शकेन, आणि प्रीपेमेंट, रिफायनान्सिंग, किंवा माझा अतिरिक्त निधी गुंतवणे यामधील सर्वोत्तम निवड कशी करू शकेन?",
-  "title": "कर्ज ऑप्टिमायझेशन कॅल्क्युलेटर",
-  "form_description": "तुमची EMI गणना करण्यासाठी आणि प्रीपेमेंट तुमच्या कर्जावर कसा परिणाम करू शकतात हे पाहण्यासाठी तुमचे कर्ज तपशील प्रविष्ट करा.",
+  "h1": "Loan Optimization Calculator India 2025 â€” EMI, Prepayment & Refinance Savings",
+  "summary": "This guide + interactive calculator helps you answer: How can I minimize total interest, reduce my EMI or tenure, and make the best choice between prepaying, refinancing, or investing my surplus?",
+  "title": "Loan Optimization Calculator",
+  "form_description": "Enter your loan details to calculate your EMI and see how prepayments can impact your loan.",
   "form": {
-    "loan_amount": "कर्ज रक्कम",
-    "interest_rate": "व्याज दर (% प्रति वर्ष)",
-    "tenure": "कर्ज कालावधी (वर्षे)",
-    "prepayment_amount": "एक-वेळ प्रीपेमेंट रक्कम (पर्यायी)",
-    "calculate_cta": "माझे कर्ज ऑप्टिमाइझ करा",
-    "calculating": "ऑप्टिमाइझ करत आहे..."
+    "loan_amount": "Loan Amount",
+    "interest_rate": "Interest Rate (% p.a.)",
+    "tenure": "Loan Tenure (Years)",
+    "prepayment_amount": "One-time Prepayment Amount (Optional)",
+    "calculate_cta": "Optimize My Loan",
+    "calculating": "Optimizing..."
   },
   "results": {
-    "title": "तुमचे कर्ज विश्लेषण",
-    "monthly_emi": "मासिक ईएमआय",
-    "total_interest": "एकूण देय व्याज",
-    "total_payment": "एकूण पेमेंट (मुद्दल + व्याज)",
+    "title": "Your Loan Analysis",
+    "monthly_emi": "Monthly EMI",
+    "total_interest": "Total Interest Payable",
+    "total_payment": "Total Payment (Principal + Interest)",
     "prepayment_summary": {
-      "title": "प्रीपेमेंटसह, तुम्ही बचत करू शकता:",
-      "subtitle": "आणि तुमची मुदत {months} महिन्यांनी कमी करा!"
+      "title": "With Prepayment, You Could Save:",
+      "subtitle": "and reduce your tenure by {months} months!"
     },
-    "chart_view": "चार्ट दृश्य",
-    "table_view": "अमॉर्टिझेशन टेबल",
-    "download_csv": "शेड्यूल डाउनलोड करा",
-    "principal_paid": "भरलेला मुद्दल",
-    "interest_paid": "भरलेला व्याज",
-    "outstanding_balance": "थकबाकी",
+    "chart_view": "Chart View",
+    "table_view": "Amortization Table",
+    "download_csv": "Download Schedule",
+    "principal_paid": "Principal Paid",
+    "interest_paid": "Interest Paid",
+    "outstanding_balance": "Outstanding Balance",
     "table": {
-      "month": "महिना",
-      "principal": "मुद्दल",
-      "interest": "व्याज",
-      "total_payment": "एकूण पेमेंट",
-      "ending_balance": "अंतिम शिल्लक"
+      "month": "Month",
+      "principal": "Principal",
+      "interest": "Interest",
+      "total_payment": "Total Payment",
+      "ending_balance": "Ending Balance"
     }
   },
   "why": {
-    "h2": "तुमचे कर्ज ऑप्टिमाइझ का करावे? व्याजाचा छुपा खर्च",
-    "body": "<p>घर किंवा कार खरेदी करणे यासारखी प्रमुख जीवन ध्येये साध्य करण्याच्या दिशेने कर्ज घेणे अनेकदा आवश्यक पाऊल असते. तथापि, कर्जाच्या आयुष्यभरात तुम्ही भरलेले एकूण व्याज थक्क करणारे असू शकते. 20 वर्षांसाठी 8.5% दराने ₹50 लाखांचे गृहकर्ज म्हणजे तुम्ही व्याजातच ₹55 लाखांपेक्षा जास्त भरता - कर्ज रकमेपेक्षा जास्त! कर्ज ऑप्टिमायझेशन ही या व्याज खर्चाला कमी करण्याची आणि लवकर कर्जमुक्त होण्याची धोरणात्मक प्रक्रिया आहे. हे कॅल्क्युलेटर या प्रक्रियेत तुमचा प्राथमिक साधन म्हणून डिझाइन केलेले आहे.</p>"
+    "h2": "Why Optimize Your Loan? The Hidden Cost of Interest",
+    "body": "<p>Taking a loan is often a necessary step towards achieving major life goals, like buying a home or a car. However, the total interest you pay over the loan's lifetime can be staggering. A â‚¹50 lakh home loan at 8.5% for 20 years means you pay over â‚¹55 lakh in interest aloneâ€”more than the loan amount itself! Loan optimization is the strategic process of minimizing this interest cost and becoming debt-free faster. This calculator is designed to be your primary tool in this process.</p>"
   },
   "how_it_works": {
-    "h2": "हा कर्ज ऑप्टिमायझर कसा काम करतो",
-    "body": "<p>आमचा कॅल्क्युलेटर प्रथम तुमचा समान मासिक हप्ता (EMI) मानक सूत्र वापरून निर्धारित करतो:</p><p><code>EMI = P × r × (1 + r)^n / ((1 + r)^n - 1)</code></p><p>येथे P म्हणजे मूळ कर्ज रक्कम, r म्हणजे मासिक व्याज दर, आणि n म्हणजे मासिक हप्त्यांची संख्या. त्यानंतर ते एक पूर्ण अ‍ॅमॉर्टिझेशन शेड्यूल तयार करते, जे प्रत्येक EMI मुद्दल आणि व्याजामध्ये कसे विभागले आहे हे दर्शवते. तुम्ही प्रीपेमेंट रक्कम जोडल्यास, कॅल्क्युलेटर वाचवलेले व्याज आणि मुदत कपातीवर थेट परिणाम दर्शविण्यासाठी शेड्यूल पुन्हा गणना करतो.</p>"
+    "h2": "How This Loan Optimizer Works",
+    "body": "<p>Our calculator first determines your Equated Monthly Instalment (EMI) using the standard formula:</p><p><code>EMI = P Ã— r Ã— (1 + r)^n / ((1 + r)^n â€“ 1)</code></p><p>Where P is the principal loan amount, r is the monthly interest rate, and n is the number of monthly instalments. It then generates a full amortization schedule, showing how each EMI is split between principal and interest. If you add a prepayment amount, the calculator re-computes the schedule to show you the direct impact on interest saved and tenure reduction.</p>"
   },
   "worked_examples": {
-    "h2": "काम केलेले उदाहरणे: वास्तविक-जगातील परिस्थिती",
+    "h2": "Worked Examples: Real-World Scenarios",
     "scenario1": {
-      "title": "परिस्थिती 1: मानक गृह कर्ज",
-      "body": "<p><strong>इनपुट:</strong> कर्ज: ₹40 लाख, दर: 8.75%, कालावधी: 20 वर्षे, प्रीपेमेंट: ₹0.</p><p><strong>निकाल:</strong> EMI ₹35,338 आहे. 20 वर्षांमध्ये भरलेले एकूण व्याज ₹44.81 लाख आहे.</p>"
+      "title": "Scenario 1: Standard Home Loan",
+      "body": "<p><strong>Inputs:</strong> Loan: â‚¹40 Lakh, Rate: 8.75%, Tenure: 20 years, Prepayment: â‚¹0.</p><p><strong>Result:</strong> EMI is â‚¹35,338. Total interest paid over 20 years is â‚¹44.81 Lakh.</p>"
     },
     "scenario2": {
-      "title": "परिस्थिती 2: एका लहान प्रीपेमेंटची शक्ती",
-      "body": "<p><strong>इनपुट:</strong> वरीलप्रमाणे, पण पहिल्या वर्षाच्या शेवटी <strong>₹2 लाख</strong> एक-वेळ प्रीपेमेंटसह.</p><p><strong>निकाल:</strong> एकूण वाचवलेले व्याज <strong>₹4.5 लाखांपेक्षा</strong> जास्त आहे आणि कर्ज <strong>25 महिने आधीच</strong> फेडले जाते!</p>"
+      "title": "Scenario 2: The Power of a Small Prepayment",
+      "body": "<p><strong>Inputs:</strong> Same as above, but with a one-time prepayment of <strong>â‚¹2 Lakh</strong> at the end of the first year.</p><p><strong>Result:</strong> Total interest saved is over <strong>â‚¹4.5 Lakh</strong> and the loan is paid off <strong>25 months earlier!</strong></p>"
     },
     "scenario3": {
-      "title": "परिस्थिती 3: आक्रमक प्रीपेमेंट",
-      "body": "<p><strong>इनपुट:</strong> वरीलप्रमाणे, पण पहिल्या वर्षाच्या शेवटी <strong>₹5 लाख</strong> एक-वेळ प्रीपेमेंटसह.</p><p><strong>निकाल:</strong> एकूण वाचलेले व्याज <strong>₹9.8 लाख</strong> आहे आणि कर्ज कालावधी <strong>56 महिने (4.6 वर्षे)</strong> कमी होतो!</p>"
+      "title": "Scenario 3: Aggressive Prepayment",
+      "body": "<p><strong>Inputs:</strong> Same as above, but with a one-time prepayment of <strong>â‚¹5 Lakh</strong> at the end of the first year.</p><p><strong>Result:</strong> Total interest saved is a massive <strong>â‚¹9.8 Lakh</strong> and the loan tenure is reduced by <strong>56 months (4.6 years)!</strong></p>"
     }
   },
   "optimization_masterclass": {
-    "h2": "कर्ज ऑप्टिमायझेशन मास्टरक्लास: मुख्य धोरणे",
-    "body": "<ul><li><strong>नियमित प्रीपेमेंट्स:</strong> लहान, नियमित प्रीपेमेंट्स देखील मोठा प्रभाव टाकू शकतात. तुमच्या पगाराच्या वाढीनुसार प्रत्येक वर्षी तुमची EMI 5-10% वाढवण्याची 'स्टेप-अप' धोरण विचारात घ्या.</li><li><strong>एक-वेळचे फायदे:</strong> बोनस, वारसा, किंवा इतर एकरकमी रकमेचा वापर करून महत्त्वपूर्ण प्रीपेमेंट्स करा. कर्ज कालावधीत तुम्ही हे जितके लवकर कराल, तितका जास्त प्रभाव पडेल.</li><li><strong>पुनर्वित्तपुरवठा (बॅलन्स ट्रान्सफर):</strong> जर इतर कर्जदाते लक्षणीयरीत्या कमी व्याज दर (किमान 0.5% ते 1% कमी) देत असतील, तर तुमचे कर्ज पुनर्वित्तपुरवठा करण्याचा विचार करा. माहितीपूर्ण निर्णय घेण्यासाठी खर्च (प्रोसेसिंग फी, कायदेशीर शुल्क) विरुद्ध वाचवलेले व्याज यांची गणना करा.</li></ul>"
+    "h2": "Loan Optimization Masterclass: Key Strategies",
+    "body": "<ul><li><strong>Regular Prepayments:</strong> Even small, regular prepayments can have a huge impact. Consider a 'step-up' strategy where you increase your EMI by 5-10% each year in line with your salary hike.</li><li><strong>One-Time Windfalls:</strong> Use bonuses, inheritances, or other lump-sum amounts to make significant prepayments. The earlier in the loan tenure you do this, the greater the impact.</li><li><strong>Refinancing (Balance Transfer):</strong> If other lenders are offering a significantly lower interest rate (at least 0.5% to 1% lower), consider refinancing your loan. Calculate the costs (processing fees, legal charges) versus the interest saved to make an informed decision.</li></ul>"
   },
   "prepay_vs_invest": {
-    "h2": "मोठा प्रश्न: कर्ज आधी फेडायचे की अतिरिक्त निधी गुंतवायचा?",
-    "body": "<p>ही एक क्लासिक आर्थिक द्विधा आहे. उत्तर तुमच्या जोखीम घेण्याच्या क्षमतेवर आणि आकड्यांवर अवलंबून आहे. गणितीय नियम असा आहे: <strong>जर तुमच्या गुंतवणुकीवरील कर-पश्चात परतावा तुमच्या कर्जाच्या व्याज दरापेक्षा जास्त असेल, तर तुम्ही गुंतवणूक करावी. नाहीतर, कर्ज आधी फेडा.</strong></p><p><strong>उदाहरण:</strong> तुमचे गृहकर्ज 8.5% आहे. तुम्ही 8.5% पेक्षा जास्त परतावा देणारी गुंतवणूक स्थिर आणि सुरक्षितपणे शोधू शकता का? 7% देणारी मुदत ठेव (जी कर-पश्चात ~4.9% आहे) चांगला पर्याय नाही. एक इक्विटी म्युच्युअल फंड SIP 12% परतावा देऊ शकतो, पण त्यात बाजाराचा धोका असतो. कर्ज आधी फेडणे तुमच्या व्याज दराइतकेच एक हमी, जोखीम-मुक्त 'परतावा' देते.</p>"
+    "h2": "The Big Question: Prepay the Loan or Invest the Surplus?",
+    "body": "<p>This is a classic financial dilemma. The answer depends on your risk appetite and the numbers. The mathematical rule is: <strong>If the post-tax return on your investment is higher than your loan interest rate, you should invest. If not, prepay the loan.</strong></p><p><strong>Example:</strong> Your home loan is at 8.5%. Can you find an investment that consistently and safely delivers more than 8.5% after taxes? A fixed deposit giving 7% (which is ~4.9% post-tax) is not a good option. An equity mutual fund SIP might give 12% returns, but it comes with market risk. Prepaying a loan offers a guaranteed, risk-free 'return' equal to your interest rate. Use our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>Mutual Fund Screener</a> to explore options.</p>"
   },
   "comparison_table": {
-    "title": "आधी फेडा विरुद्ध गुंतवणूक करा: निर्णय मॅट्रिक्स",
-    "headers": ["घटक", "कर्ज आधी फेडा", "अतिरिक्त निधी गुंतवा"],
+    "title": "Prepay vs. Invest: Decision Matrix",
+    "headers": ["Factor", "Prepay Loan", "Invest Surplus"],
     "rows": [
-      ["परतावा", "हमी आणि जोखीम-मुक्त (कर्ज दराइतके)", "बाजार-लिंक्ड आणि परिवर्तनीय"],
-      ["मानसिक लाभ", "उच्च (मनःशांती, लवकर कर्ज-मुक्त)", "कमी (बाजारातील अस्थिरता तणाव निर्माण करू शकते)"],
-      ["तरलता", "कमी (पैसे मालमत्तेत अडकलेले)", "उच्च (गुंतवणूक तरल केली जाऊ शकते)"],
-      ["कर लाभ", "आधी फेडण्यावर काहीही नाही (पण तुम्ही आधी न फेडल्यास तुम्ही 80C व्याज कपात जास्त काळ टिकवून ठेवता)", "साधनावर अवलंबून असते (इक्विटीवर एलटीसीजी, इ.)"]
+      ["Return", "Guaranteed & Risk-Free (equal to loan rate)", "Market-linked & Variable"],
+      ["Psychological Benefit", "High (peace of mind, debt-free sooner)", "Lower (market volatility can cause stress)"],
+      ["Liquidity", "Low (money is locked in the asset)", "High (investments can be liquidated)"],
+      ["Tax Benefit", "None on prepayment itself (but you retain 80C interest deduction longer if you don't prepay)", "Depends on instrument (LTCG on equity, etc.)"]
     ]
   },
   "refinance": {
-    "h2": "तुम्ही केव्हा पुनर्वित्तपुरवठा (बॅలన్స్ ट्रान्सఫర్) करावा?",
-    "body": "<p>या परिस्थितीत पुनर्वित्तपुरवठा करणे अर्थपूर्ण आहे:</p><ul><li><strong>महत्वपूर्ण दर फरक:</strong> शुल्क लक्षात घेतल्यानंतर स्विच फायदेशीर होण्यासाठी नवीन कर्जदाराचा दर तुमच्या सध्याच्या दरापेक्षा किमान 0.50% - 1% कमी असावा.</li><li><strong>कर्ज कालावधीच्या सुरुवातीला:</strong> सुरुवातीच्या वर्षांमध्ये तुमच्या EMI चा बहुतेक भाग व्याजाकडे जातो. लवकर पुनर्वित्तपुरवठा केल्याने तुमची बचत वाढते. तुमच्या कर्जाच्या शेवटच्या 2-3 वर्षांमध्ये पुनर्वित्तपुरवठा करणे फारसे अर्थपूर्ण नाही.</li><li><strong>चांगला क्रेडिट स्कोअर:</strong> नवीन कर्जदाराकडून सर्वोत्तम दर मिळवण्यासाठी उच्च क्रेडिट स्कोअर (750+) आवश्यक आहे.</li></ul>"
+    "h2": "When Should You Refinance (Balance Transfer)?",
+    "body": "<p>Refinancing makes sense under these conditions:</p><ul><li><strong>Significant Rate Difference:</strong> The new lender's rate should be at least 0.50% - 1% lower than your current rate to make the switch worthwhile after accounting for fees.</li><li><strong>Early in Loan Tenure:</strong> Most of your EMI in the initial years goes towards interest. Refinancing early maximizes your savings. It makes little sense to refinance in the last 2-3 years of your loan.</li><li><strong>Good Credit Score:</strong> A high credit score (750+) is essential to get the best rates from a new lender.</li></ul>"
   },
   "tax_notes": {
-    "h2": "महत्वाचे कर विचार",
-    "body": "<p>गृह कर्जासाठी, मुद्दल परतफेड कलम 80C अंतर्गत (₹1.5 लाख पर्यंत) कपातीसाठी पात्र आहे आणि भरलेले व्याज कलम 24(बी) अंतर्गत (स्व-व्याप्त मालमत्तेसाठी ₹2 लाख पर्यंत) कपातीसाठी पात्र आहे. तुमचे कर्ज आधी फेडणे आर्थिक दृष्ट्या शहाणपणाचे असले तरी, ते खूप लवकर फेडल्याने तुम्ही पूर्ण मूळ कालावधीसाठी हे कर लाभ घेऊ शकणार नाही हे लक्षात घ्या. तुमच्या निर्णयात हे नेहमी विचारात घ्या.</p>"
+    "h2": "Important Tax Considerations",
+    "body": "<p>For a home loan, the principal repayment is eligible for deduction under Section 80C (up to â‚¹1.5 lakh) and the interest paid is eligible for deduction under Section 24(b) (up to â‚¹2 lakh for a self-occupied property). While prepaying your loan is financially prudent, be aware that paying it off too quickly means you can no longer claim these tax benefits for the full original tenure. Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>Old vs New Tax Regime Calculator</a> to see how this impacts your decision.</p>"
   },
   "faq": {
-    "h2": "वारंवार विचारले जाणारे प्रश्न",
+    "h2": "Frequently Asked Questions",
     "faqs": [
       {
-        "q": "EMI आणि प्रीपेमेंटमध्ये काय फरक आहे?",
-        "a": "EMI हा तुमचा नियमित मासिक हप्ता आहे, जो मुद्दल आणि व्याज दोन्ही कव्हर करतो. प्रीपेमेंट ही एक अतिरिक्त, जादा पेमेंट आहे जी तुम्ही मुद्दल रकमेवर करता, जी तुमच्या EMI च्या वर आणि पलीकडे असते."
+        "q": "What is the difference between EMI and Prepayment?",
+        "a": "EMI is your regular monthly payment that covers both principal and interest. A prepayment is an additional, extra payment you make towards the principal amount, which is over and above your EMI."
       },
       {
-        "q": "गृहकर्ज आधी फेडण्यासाठी वैयक्तिक कर्ज घेणे अर्थपूर्ण आहे का?",
-        "a": "जवळजवळ कधीच नाही. वैयक्तिक कर्जांना गृहकर्जांपेक्षा (8-10%) खूप जास्त व्याज दर (11-18%) असतात. तुम्ही कमी-व्याज असलेले कर्ज बंद करण्यासाठी उच्च व्याज देत असाल, जे आर्थिक दृष्ट्या हानिकारक आहे."
+        "q": "Does it make sense to take a personal loan to prepay a home loan?",
+        "a": "Almost never. Personal loans have much higher interest rates (11-18%) compared to home loans (8-10%). You would be paying a higher interest to close a lower-interest loan, which is financially detrimental."
       },
       {
-        "q": "कर्ज अमॉर्टिझेशन शेड्यूल म्हणजे काय?",
-        "a": "ही एक तपशीलवार सारणी आहे जी कर्जाच्या संपूर्ण कालावधीसाठी प्रत्येक EMI चे मुद्दल आणि व्याज घटकांमध्ये विभाजन दर्शवते. आमचा कॅल्क्युलेटर तुमच्यासाठी हे तयार करतो, आणि तुम्ही ते CSV म्हणून डाउनलोड करू शकता."
+        "q": "What is a loan amortization schedule?",
+        "a": "It's a detailed table that shows the breakdown of each EMI into its principal and interest components for the entire duration of the loan. Our calculator generates this for you, and you can download it as a CSV."
       },
       {
-        "q": "प्रीपेमेंटनंतर मी माझा EMI कमी करावा की माझी मुदत कमी करावी?",
-        "a": "तुमची व्याज बचत वाढवण्यासाठी, नेहमी <strong>मुदत कमी करणे</strong> निवडा. EMI कमी केल्याने कर्ज मूळ कालावधीसाठी सक्रिय राहते, याचा अर्थ तुम्ही जास्त काळ व्याज देत राहता, जे प्रीपेमेंटचा बराचसा फायदा नाकारते."
+        "q": "Should I choose to reduce my EMI or my tenure after prepayment?",
+        "a": "To maximize your interest savings, always choose to <strong>reduce the tenure</strong>. Reducing the EMI keeps the loan active for the original duration, which means you continue to pay interest for longer, negating much of the prepayment benefit."
       }
     ]
   },
   "related_tools": {
-    "h2": "हे सुद्धा वाचा: संबंधित साधने आणि मार्गदर्शक तत्त्वे",
+    "h2": "Also Read: Related Tools & Guides",
     "links": [
-      { "href": "/tax-regime-calculator", "title": "जुनी विरुद्ध नवीन कर प्रणाली कॅल्क्युलेटर", "description": "तुमच्या कर्जाच्या कपातीमुळे जुनी प्रणाली तुमच्यासाठी अधिक चांगली ठरते का ते पहा." },
-      { "href": "/retirement-corpus-calculator", "title": "सेवानिवृत्ती निधी कॅल्क्युलेटर", "description": "लवकर कर्जमुक्त होणे तुमच्या सेवानिवृत्तीच्या ध्येयांवर कसा परिणाम करते याची योजना करा." },
-      { "href": "/ppf-calculator", "title": "पीपीएफ कॅल्क्युलेटर", "description": "तुमच्या कर्जाच्या व्याजदराच्या तुलनेत जोखीम-मुक्त पीपीएफ परताव्याची तुलना करा." }
+      { "href": "/tax-regime-calculator", "title": "Old vs New Tax Regime Calculator", "description": "See if your loan deductions make the Old Regime better for you." },
+      { "href": "/retirement-corpus-calculator", "title": "Retirement Corpus Calculator", "description": "Plan how becoming debt-free faster impacts your retirement goals." },
+      { "href": "/ppf-calculator", "title": "PPF Calculator", "description": "Compare risk-free PPF returns against your loan's interest rate." }
     ]
   },
   "conclusion": {
-    "title": "तुमच्या कर्जावर नियंत्रण ठेवा",
-    "body": "कर्ज-मुक्त होणे हे आर्थिक स्वातंत्र्याच्या मार्गावरील एक महत्त्वाचा टप्पा आहे. तुमच्या कर्जांचे धोरणात्मक प्रीपेमेंट किंवा पुनर्वित्तपुरवठा करण्यासाठी या ऑप्टिमायझरचा वापर करून, तुम्ही व्याजात लाखो रुपये वाचवू शकता आणि आर्थिक स्वातंत्र्यासाठी तुमचा प्रवास लक्षणीयरीत्या कमी करू शकता. आकड्यांशी खेळा आणि तुमच्यासाठी सर्वोत्तम कार्य करणारी रणनीती शोधा."
+    "title": "Take Control of Your Debt",
+    "body": "Becoming debt-free is a key milestone on the path to financial independence. By using this optimizer to strategically prepay or refinance your loans, you can save lakhs in interest and significantly shorten your journey to financial freedom. Play with the numbers and find the strategy that works best for you."
   }
 }
 

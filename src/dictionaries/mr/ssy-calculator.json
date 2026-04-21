@@ -1,164 +1,164 @@
-
+﻿
 {
-  "h1": "एसएसवाय कॅल्क्युलेटर 2025 — सुकन्या समृद्धी योजना परतावा आणि मॅच्युरिटी",
-  "description": "2025 साठी आमचे मोफत एसएसवाय कॅल्क्युलेटर वापरून मॅच्युरिटी, एकूण व्याज आणि वर्ष-वार प्रक्षेपण (8.2% सध्याचा दर) अंदाज लावा. वार्षिक आणि मासिक ठेवींना समर्थन देते. परिणाम CSV म्हणून निर्यात करा.",
-  "title": "सुकन्या समृद्धी योजना (एसएसवाय) कॅल्क्युलेटर",
-  "investment_mode": "गुंतवणूक मोड",
-  "yearly_mode": "वार्षिक",
-  "monthly_mode": "मासिक",
-  "yearly_investment_label": "वार्षिक गुंतवणूक रक्कम",
-  "monthly_investment_label": "मासिक गुंतवणूक रक्कम",
-  "yearly_investment_placeholder": "उदा., 150000",
-  "monthly_investment_placeholder": "उदा., 12500",
-  "max_investment_note": "कमाल वार्षिक गुंतवणूक ₹1,50,000 आहे",
-  "girl_age_label": "मुलीचे सध्याचे वय",
-  "years": "वर्षे",
-  "interest_rate_label": "व्याज दर (% प्रति वर्ष)",
-  "interest_rate_placeholder": "उदा., 8.2",
-  "calculate_button": "एसएसवाय परताव्याची गणना करा",
-  "loading": "गणना होत आहे...",
-  "results_title": "तुमचे एसएसवाय प्रक्षेपण",
-  "maturity_value": "21 वर्षांनी मॅच्युरिटी मूल्य",
-  "total_investment": "एकूण गुंतवणूक",
-  "total_interest": "एकूण मिळवलेले व्याज",
-  "view_chart": "चार्ट",
-  "view_table": "तक्ता",
-  "export_csv": "CSV निर्यात करा",
-  "amount_in_lakhs": "रक्कम (लाखात)",
-  "table_year": "वर्ष",
-  "table_age": "मुलीचे वय",
-  "table_opening_balance": "सुरुवातीची शिल्लक",
-  "table_amount_invested": "गुंतवलेली रक्कम",
-  "table_interest_earned": "मिळालेले व्याज",
-  "table_closing_balance": "अंतिम शिल्लक",
+  "h1": "SSY Calculator 2025 â€” Sukanya Samriddhi Yojana Returns & Maturity",
+  "description": "Use our free SSY Calculator 2025 to estimate maturity, total interest and year-wise projection (8.2% current rate). Supports annual & monthly deposits. Export results as CSV.",
+  "title": "Sukanya Samriddhi Yojana (SSY) Calculator",
+  "investment_mode": "Investment Mode",
+  "yearly_mode": "Yearly",
+  "monthly_mode": "Monthly",
+  "yearly_investment_label": "Yearly Investment Amount",
+  "monthly_investment_label": "Monthly Investment Amount",
+  "yearly_investment_placeholder": "e.g., 150000",
+  "monthly_investment_placeholder": "e.g., 12500",
+  "max_investment_note": "Max. yearly investment is â‚¹1,50,000",
+  "girl_age_label": "Girl's Current Age",
+  "years": "years",
+  "interest_rate_label": "Interest Rate (% p.a.)",
+  "interest_rate_placeholder": "e.g., 8.2",
+  "calculate_button": "Calculate SSY Returns",
+  "loading": "Calculating...",
+  "results_title": "Your SSY Projection",
+  "maturity_value": "Maturity Value at 21 Years",
+  "total_investment": "Total Investment",
+  "total_interest": "Total Interest Earned",
+  "view_chart": "Chart",
+  "view_table": "Table",
+  "export_csv": "Export CSV",
+  "amount_in_lakhs": "Amount (in Lakhs)",
+  "table_year": "Year",
+  "table_age": "Girl's Age",
+  "table_opening_balance": "Opening Balance",
+  "table_amount_invested": "Amount Invested",
+  "table_interest_earned": "Interest Earned",
+  "table_closing_balance": "Closing Balance",
   "what_is_ssy": {
-    "title": "सुकन्या समृद्धी योजना (एसएसवाय) काय आहे?",
-    "body": "सुकन्या समृद्धी योजना ही 'बेटी बचाओ, बेटी पढाओ' मोहिमेचा भाग म्हणून सुरू केलेली सरकार-समर्थित बचत योजना आहे. ती पालकांना त्यांच्या मुलीच्या भविष्यातील शिक्षण आणि लग्नाच्या खर्चासाठी निधी तयार करण्यास प्रोत्साहित करण्यासाठी डिझाइन केलेली आहे.",
+    "title": "What is Sukanya Samriddhi Yojana (SSY)?",
+    "body": "The Sukanya Samriddhi Yojana is a government-backed savings scheme launched as part of the 'Beti Bachao, Beti Padhao' campaign. It's designed to encourage parents to build a fund for their female child's future education and marriage expenses.",
     "quick_facts": {
-      "title": "जलद तथ्ये:",
+      "title": "Quick Facts:",
       "points": [
-        "<strong>उच्च व्याज दर:</strong> सध्या लहान बचत योजनांमध्ये सर्वाधिक व्याज दरांपैकी एक देते.",
-        "<strong>कर लाभ:</strong> पीपीएफ प्रमाणेच सूट-सूट-सूट (ईईई) दर्जाचा आनंद घेते.",
-        "<strong>पात्रता:</strong> 10 वर्षांपेक्षा कमी वयाच्या मुलीसाठी."
+        "<strong>High Interest Rate:</strong> Currently offers one of the highest interest rates among small savings schemes.",
+        "<strong>Tax Benefits:</strong> Enjoys Exempt-Exempt-Exempt (EEE) status, similar to <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a>.",
+        "<strong>Eligibility:</strong> For a girl child below the age of 10."
       ]
     }
   },
   "how_it_works": {
-    "title": "एसएसवाय कॅल्क्युलेटर कसे कार्य करते",
+    "title": "How the SSY Calculator Works",
     "body": ""
   },
   "example": {
-    "formula_title": "गणना तर्क आणि उदाहरण",
-    "intro": "एसएसवाय कॅल्क्युलेटर तुमच्या योगदानाच्या आधारावर पहिल्या 15 वर्षांसाठी वार्षिक चक्रवाढ व्याज मोजते. 16 व्या ते 21 व्या वर्षापर्यंत आणखी कोणत्याही ठेवींची आवश्यकता नाही, परंतु शिल्लक रकमेवर व्याज मिळत राहते. वार्षिक चक्रवाढ व्याजाचे सूत्र आहे:",
+    "formula_title": "Calculation Logic & Example",
+    "intro": "The SSY calculator compounds interest annually based on your contributions for the first 15 years. No further deposits are needed from the 16th to the 21st year, but the balance continues to earn interest. The formula for annual compound interest is:",
     "formula": "A = P(1 + r/n)^(nt)",
     "scenario": {
-      "title": "उदाहरण परिस्थिती",
-      "body": "खालील गृहित धरूया:",
+      "title": "Example Scenario",
+      "body": "Let's assume the following:",
       "points": [
-        "वार्षिक गुंतवणूक: <strong>₹1,50,000</strong>",
-        "सुरुवातीला मुलीचे वय: <strong>5 वर्षे</strong>",
-        "व्याज दर: <strong>8.2%</strong>"
+        "Annual Investment: <strong>â‚¹1,50,000</strong>",
+        "Girl's Age at Start: <strong>5 years</strong>",
+        "Interest Rate: <strong>8.2%</strong>"
       ],
-      "result": "या आधारावर, 26 व्या वर्षी (21 वर्षांनंतर) मॅच्युरिटी रक्कम अंदाजे <strong>₹69,80,473</strong> असेल."
+      "result": "Based on this, the maturity amount at age 26 (after 21 years) will be approximately <strong>â‚¹69,80,473</strong>."
     },
-    "timing_note": "<strong>टीप:</strong> आमचे कॅल्क्युलेटर सोयीसाठी प्रत्येक आर्थिक वर्षाच्या सुरूवातीला गुंतवणूक केली जाते असे गृहीत धरते. ठेवीच्या अचूक तारखेनुसार वास्तविक रक्कम थोडी बदलू शकते.",
-    "snapshot_title": "वर्ष-वार स्नॅपशॉट",
+    "timing_note": "<strong>Note:</strong> Our calculator assumes the investment is made at the beginning of each financial year for simplicity. The actual amount can vary slightly based on the exact date of deposit.",
+    "snapshot_title": "Year-wise Snapshot",
     "table": {
-      "headers": ["वर्षाचा शेवट", "वय", "ठेव", "व्याज", "शिल्लक"],
-      "rows": [
-        ["1", "6", "₹1,50,000", "₹12,300", "₹1,62,300"],
-        ["15", "20", "₹1,50,000", "₹3,48,460", "₹46,03,622"],
-        ["16", "21", "₹0", "₹3,77,497", "₹49,81,119"],
-        ["21", "26", "₹0", "₹5,29,788", "₹69,80,473"]
-      ]
+        "headers": ["End of Year", "Age", "Deposited", "Interest", "Balance"],
+        "rows": [
+            ["1", "6", "â‚¹1,50,000", "â‚¹12,300", "â‚¹1,62,300"],
+            ["15", "20", "â‚¹1,50,000", "â‚¹3,48,460", "â‚¹46,03,622"],
+            ["16", "21", "â‚¹0", "â‚¹3,77,497", "â‚¹49,81,119"],
+            ["21", "26", "â‚¹0", "â‚¹5,29,788", "â‚¹69,80,473"]
+        ]
     },
-    "footer_note": "तक्ता संक्षिप्ततेसाठी निवडक वर्षे दर्शवितो. संपूर्ण ब्रेकडाउनसाठी CSV डाउनलोड करा."
+    "footer_note": "Table shows selected years for brevity. Download the CSV for the full breakdown."
   },
   "investment_strategy": {
-    "title": "एसएसवाय परतावा कसा वाढवायचा",
+    "title": "How to Maximize SSY Returns",
     "points": [
-      "<strong>लवकर गुंतवणूक करा:</strong> चक्रवाढ कालावधी वाढवण्यासाठी तुमची मुलगी जन्माला आल्यावर लगेचच सुरुवात करा.",
-      "<strong>5 एप्रिलपूर्वी गुंतवणूक करा:</strong> संपूर्ण आर्थिक वर्षासाठी व्याज मिळवण्यासाठी, 5 एप्रिलपूर्वी तुमची एकरकमी ठेव करा.",
-      "<strong>योगदान वाढवा:</strong> शक्य असल्यास, भरीव निधी तयार करण्यासाठी वार्षिक कमाल ₹1.5 लाख योगदान द्या."
+      "<strong>Invest Early:</strong> Start as soon as your daughter is born to maximize the compounding period.",
+      "<strong>Invest Before 5th of April:</strong> To get interest for the full financial year, make your lump-sum deposit before April 5th.",
+      "<strong>Maximize Contribution:</strong> If possible, contribute the maximum â‚¹1.5 lakh annually to build a substantial corpus."
     ],
-    "monthly_example": "जर मासिक गुंतवणूक करत असाल, तर तुमच्या एसआयपी त्या महिन्याच्या व्याज गणनेसाठी पात्र होण्यासाठी प्रत्येक महिन्याच्या 5 तारखेपूर्वी डेबिट होईल याची खात्री करा."
+    "monthly_example": "If investing monthly, ensure your SIP is debited before the 5th of each month to be eligible for that month's interest calculation."
   },
   "tax_benefits": {
-    "title": "एसएसवायचे कर लाभ",
-    "intro": "एसएसवाय हे ईईई (सूट-सूट-सूट) दर्जा असलेले एक शक्तिशाली कर-बचत साधन आहे:",
-    "body": "याचा अर्थ <strong>योगदान</strong> (80C अंतर्गत ₹1.5 लाखांपर्यंत), <strong>मिळालेले व्याज</strong>, आणि <strong>मॅच्युरिटी रक्कम</strong> हे सर्व पूर्णपणे कर-मुक्त आहेत."
+    "title": "Tax Benefits of SSY",
+    "intro": "SSY is a powerful tax-saving tool with an EEE (Exempt-Exempt-Exempt) status:",
+    "body": "This means the <strong>contribution</strong> (up to â‚¹1.5 lakh under 80C), the <strong>interest earned</strong>, and the <strong>maturity amount</strong> are all completely tax-free. Check if you can save more with our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a>."
   },
   "rules": {
-    "title": "एसएसवायचे मुख्य नियम",
-    "withdrawal_title": "पैसे काढण्याचे नियम",
-    "withdrawal_body": "मुलीच्या उच्च शिक्षणासाठी ती 18 वर्षांची झाल्यावर 50% पर्यंत शिल्लक रकमेची आंशिक काढण्याची परवानगी आहे. 21 वर्षांच्या मॅच्युरिटीवर किंवा 18 वर्षे पूर्ण झाल्यावर तिच्या लग्नाच्या वेळी पूर्ण पैसे काढण्याची परवानगी आहे.",
-    "withdrawal_example": "उदाहरणार्थ, तुमची मुलगी 18 वर्षांची झाल्यावर शिल्लक रक्कम ₹40 लाख असेल, तर तुम्ही तिच्या कॉलेजच्या फीसाठी ₹20 लाखांपर्यंत काढू शकता.",
-    "revival_title": "बंद खात्याचे पुनरुज्जीवन",
-    "revival_intro": "जर किमान वार्षिक ठेव ₹250 केली नाही, तर खाते बंद होते. ते भरून पुनरुज्जीवित केले जाऊ शकते:",
+    "title": "Key Rules of SSY",
+    "withdrawal_title": "Withdrawal Rules",
+    "withdrawal_body": "Partial withdrawal of up to 50% of the balance is allowed for the girl's higher education once she turns 18. Full withdrawal is allowed upon maturity at 21 years, or at the time of her marriage after she turns 18.",
+    "withdrawal_example": "For example, if the balance is â‚¹40 lakh when your daughter turns 18, you can withdraw up to â‚¹20 lakh for her college fees.",
+    "revival_title": "Revival of a Discontinued Account",
+    "revival_intro": "If the minimum annual deposit of â‚¹250 is not made, the account becomes discontinued. It can be revived by paying:",
     "revival_steps": [
-      "प्रत्येक डिफॉल्ट वर्षासाठी ₹50 दंड.",
-      "प्रत्येक डिफॉल्ट वर्षासाठी किमान वर्गणी रक्कम (₹250)."
+      "A penalty of â‚¹50 for each year of default.",
+      "The minimum subscription amount (â‚¹250) for each default year."
     ],
-    "nomination_title": "नामांकन",
-    "nomination_body": "एसएसवाय खात्यात नामांकन सुविधा उपलब्ध नाही, कारण खाते लाभार्थी असलेल्या मुलीच्या नावावर आहे."
+    "nomination_title": "Nomination",
+    "nomination_body": "Nomination facility is not available in an SSY account, as the account is in the name of the girl child who is the beneficiary."
   },
   "comparison": {
-    "title": "एसएसवाय वि इतर बचत योजना",
+    "title": "SSY vs Other Savings Schemes",
     "table": {
-      "headers": ["वैशिष्ट्य", "एसएसवाय", "पीपीएफ", "एफडी", "एनपीएस"],
+      "headers": ["Feature", "SSY", "PPF", "FD", "NPS"],
       "rows": [
-        ["पात्रता", "मुलगी < 10", "सर्व भारतीय", "सर्व भारतीय", "18-70 वर्षे"],
-        ["व्याज दर", "8.2% (सरकार निर्धारित)", "7.1% (सरकार निर्धारित)", "बदलते (बँक निर्धारित)", "बाजाराशी जोडलेले"],
-        ["मॅच्युरिटीवर कर", "कर-मुक्त", "कर-मुक्त", "करपात्र", "अंशतः करपात्र"],
-        ["लॉक-इन कालावधी", "21 वर्षे", "15 वर्षे", "बदलते", "60 वयापर्यंत"]
+        ["Eligibility", "Girl child < 10", "All Indians", "All Indians", "18-70 years"],
+        ["Interest Rate", "8.2% (Govt. set)", "7.1% (Govt. set)", "Varies (Bank set)", "Market-linked"],
+        ["Tax on Maturity", "Tax-Free", "Tax-Free", "Taxable", "Partially Taxable"],
+        ["Lock-in Period", "21 years", "15 years", "Varies", "Till age 60"]
       ]
     }
   },
   "how_to_open": {
-    "title": "एसएसवाय खाते कसे उघडायचे",
-    "intro": "तुम्ही कोणत्याही अधिकृत बँक किंवा पोस्ट ऑफिसमध्ये एसएसवाय खाते उघडू शकता. या प्रक्रियेत समाविष्ट आहे:",
+    "title": "How to Open an SSY Account",
+    "intro": "You can open an SSY account at any authorized bank or post office. The process involves:",
     "steps": [
-      "एसएसवाय खाते उघडण्याचा फॉर्म भरणे.",
-      "मुलीचा जन्म प्रमाणपत्र सादर करणे.",
-      "पालक/पालकाचे केवायसी दस्तऐवज (ओळख आणि पत्त्याचा पुरावा) सादर करणे.",
-      "पहिली ठेव करणे (₹250 ते ₹1.5 लाख पर्यंत)."
+      "Filling the SSY account opening form.",
+      "Submitting the girl child's birth certificate.",
+      "Submitting KYC documents of the parent/guardian (ID and address proof).",
+      "Making the first deposit (from â‚¹250 to â‚¹1.5 lakh)."
     ]
   },
   "historical_rates": {
-    "title": "ऐतिहासिक एसएसवाय व्याज दर",
+    "title": "Historical SSY Interest Rates",
     "table": {
-      "headers": ["कालावधी", "व्याज दर"],
+      "headers": ["Period", "Interest Rate"],
       "rows": [
-        ["एप्रिल 2024 - जून 2024", "8.2%"],
-        ["जानेवारी 2024 - मार्च 2024", "8.2%"],
-        ["एप्रिल 2023 - डिसेंबर 2023", "8.0%"],
-        ["जानेवारी 2023 - मार्च 2023", "7.6%"],
-        ["एप्रिल 2020 - डिसेंबर 2022", "7.6%"],
-        ["जुलै 2019 - मार्च 2020", "8.4%"]
+        ["Apr 2024 - Jun 2024", "8.2%"],
+        ["Jan 2024 - Mar 2024", "8.2%"],
+        ["Apr 2023 - Dec 2023", "8.0%"],
+        ["Jan 2023 - Mar 2023", "7.6%"],
+        ["Apr 2020 - Dec 2022", "7.6%"],
+        ["Jul 2019 - Mar 2020", "8.4%"]
       ]
     }
   },
-  "faq_title": "एसएसवाय बद्दल वारंवार विचारले जाणारे प्रश्न",
+  "faq_title": "Frequently Asked Questions about SSY",
   "faqs": [
     {
-      "question": "मी एका मुलीसाठी दोन एसएसवाय खाती उघडू शकेन का?",
-      "answer": "नाही, प्रति मुलीसाठी फक्त एक एसएसवाय खात्याची परवानगी आहे."
+      "question": "Can I open two SSY accounts for one daughter?",
+      "answer": "No, only one SSY account is allowed per girl child."
     },
     {
-      "question": "एका कुटुंबाला तीन मुली असल्यास तीन एसएसवाय खाती उघडता येतात का?",
-      "answer": "एक कुटुंब जास्तीत जास्त दोन एसएसवाय खाती उघडू शकते. तिसरे खाते फक्त पहिल्या अपत्यानंतर जुळ्या किंवा तिळ्या मुलींच्या बाबतीत परवानगी आहे."
+      "question": "Can a family open three SSY accounts if they have three daughters?",
+      "answer": "A family can open a maximum of two SSY accounts. A third account is only permissible in the case of twin or triplet girls born after the first child."
     },
     {
-      "question": "मी एसएसवाय खात्यात किमान आणि कमाल किती रक्कम जमा करू शकेन?",
-      "answer": "किमान वार्षिक ठेव ₹250 आहे, आणि कमाल एका आर्थिक वर्षात ₹1,50,000 आहे."
+      "question": "What is the minimum and maximum amount I can deposit in an SSY account?",
+      "answer": "The minimum annual deposit is â‚¹250, and the maximum is â‚¹1,50,000 in a financial year."
     },
     {
-      "question": "सुकन्या समृद्धी योजना खाते कधी मॅच्युअर होते?",
-      "answer": "खाते उघडण्याच्या तारखेपासून 21 वर्षांनी, किंवा 18 वर्षे पूर्ण झाल्यावर मुलीच्या लग्नाच्या वेळी खाते मॅच्युअर होते."
+      "question": "When does the Sukanya Samriddhi Yojana account mature?",
+      "answer": "The account matures 21 years from the date of account opening, or at the time of the girl's marriage after she attains the age of 18."
     }
   ],
   "conclusion": {
-    "title": "तुमच्या मुलीच्या भविष्यासाठी एक शक्तिशाली साधन",
-    "body": "सुकन्या समृद्धी योजना ही फक्त एक बचत योजना नाही; ती तुमच्या मुलीच्या उज्ज्वल भविष्यासाठी एक वचनबद्धता आहे. तिच्या उच्च, कर-मुक्त परतावा आणि सरकारी पाठिंब्यासह, हे तिच्या शिक्षण आणि लग्नाच्या खर्चाचे नियोजन करण्यासाठी उपलब्ध असलेल्या सर्वोत्तम साधनांपैकी एक आहे. वाढीची कल्पना करण्यासाठी आणि तिची स्वप्ने सुरक्षित करण्याच्या दिशेने एक आत्मविश्वासपूर्ण पाऊल उचलण्यासाठी हे कॅल्क्युलेटर वापरा."
+    "title": "A Powerful Tool for Your Daughter's Future",
+    "body": "Sukanya Samriddhi Yojana is more than just a savings scheme; it's a commitment to your daughter's bright future. With its high, tax-free returns and government backing, it is one of the best tools available for planning her education and marriage expenses. Use this calculator to visualize the growth and take a confident step towards securing her dreams."
   }
 }

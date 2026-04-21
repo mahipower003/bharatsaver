@@ -1,103 +1,120 @@
+﻿
 {
-  "meta_title": "வரி ஆட்சி கால்குலேட்டர் 2025 — பழைய மற்றும் புதிய வரி ஆட்சியை ஒப்பிடுக (இந்தியா)",
-  "meta_description": "பழைய மற்றும் புதிய ஆட்சியின் கீழ் வரியை உடனடியாக ஒப்பிட உங்கள் சம்பளம் மற்றும் விலக்குகளை உள்ளிடவும். நிதியாண்டு 2025-26 க்கு புதுப்பிக்கப்பட்டது — எச்ஆர்ஏ, 80சி, 80டி மற்றும் செயல்படுத்தப்பட்ட எடுத்துக்காட்டுகள் அடங்கும். இலவசமாக பதிவிறக்கம் செய்யக்கூடிய சுருக்கம் மற்றும் ஐடிஆர் தாக்கல் விருப்பங்கள்.",
-  "h1": "பழைய மற்றும் புதிய வரி ஆட்சி கால்குலேட்டர் (நிதியாண்டு 2024-25 / மதிப்பீட்டு ஆண்டு 2025-26)",
-  "description": "எந்த வரி ஆட்சியைத் தேர்ந்தெடுப்பது என்பதில் குழப்பமா? நடப்பு நிதியாண்டில் பழைய அல்லது புதிய வரி ஆட்சி உங்களுக்கு அதிக நன்மை பயக்குமா என்பதை உடனடியாகக் கண்டறிய உங்கள் வருமானம் மற்றும் விலக்குகளை உள்ளிடவும்.",
-  "last_updated": "புதுப்பிக்கப்பட்டது:",
-  "title": "பழைய மற்றும் புதிய வரி ஆட்சி கால்குலேட்டர்",
-  "form_description": "ஒரு தெளிவான ஒப்பீட்டைப் பெற உங்கள் வருமானம் மற்றும் சாத்தியமான விலக்குகளை நிரப்பவும்.",
-  "gross_salary_label": "மொத்த ஆண்டு சம்பளம்",
-  "basic_salary_label": "அடிப்படை சம்பளம் (எச்ஆர்ஏ கணக்கீட்டிற்கு)",
-  "other_income_label": "பிற மூலங்களிலிருந்து வருமானம்",
-  "age_label": "உங்கள் வயது",
-  "age_below_60": "60 வயதுக்குக் கீழ்",
-  "age_60_to_80": "60 முதல் 80 வயது வரை (மூத்த குடிமகன்)",
-  "age_above_80": "80 வயதுக்கு மேல் (சூப்பர் மூத்த குடிமகன்)",
-  "deductions_title": "விலக்குகள் (பழைய ஆட்சிக்கு)",
-  "section80C_label": "பிரிவு 80சி (எ.கா., பிபிஎஃப், இஎல்எஸ்எஸ், ஆயுள் காப்பீடு)",
-  "section80D_label": "பிரிவு 80டி (உடல்நலக் காப்பீட்டு பிரீமியம்)",
-  "section80CCD1B_label": "பிரிவு 80சிசிடி(1பி) (என்பிஎஸ் பங்களிப்பு)",
-  "section80TTA_label": "பிரிவு 80டிடிஏ (சேமிப்புக் கணக்கு வட்டி)",
-  "hra_label": "பெறப்பட்ட எச்ஆர்ஏ",
-  "rent_paid_label": "மொத்த ஆண்டு வாடகை செலுத்தப்பட்டது",
-  "metro_city_label": "நீங்கள் ஒரு மெட்ரோ நகரத்தில் வசிக்கிறீர்களா? (டெல்லி, மும்பை, கொல்கத்தா, சென்னை)",
-  "home_loan_interest_label": "வீட்டுக் கடன் வட்டி (சுய-குடியிருப்பு)",
-  "lta_label": "விடுமுறை பயணப் படி (எல்டிஏ)",
-  "calculate_button": "வரி ஆட்சிகளை ஒப்பிடுக",
-  "loading": "ஒப்பிடப்படுகிறது...",
-  "results_title": "வரி ஒப்பீட்டு முடிவு",
-  "result_recommendation": "{winner} உங்களுக்குச் சிறந்தது, உங்கள் வரிகளில் {savings} சேமிக்கிறது!",
-  "old_regime": "பழைய வரி ஆட்சி",
-  "new_regime": "புதிய வரி ஆட்சி (இயல்புநிலை)",
-  "total_tax_label": "மொத்த செலுத்த வேண்டிய வரி",
-  "taxable_income_label": "வரிக்குட்பட்ட வருமானம்",
-  "net_income_label": "நிகர கையில் கிடைக்கும் வருமானம்",
+  "meta_title": "Tax Regime Calculator 2025 â€” Compare Old vs New Tax Regime (India)",
+  "meta_description": "Enter your salary and deductions to instantly compare tax under the old vs new regime. Updated for FY 2025-26 â€” includes HRA, 80C, 80D, and worked examples. Free downloadable summary & ITR filing options.",
+  "h1": "Old vs New Tax Regime Calculator (FY 2024-25 / AY 2025-26)",
+  "description": "Confused about which tax regime to choose? Enter your income and deductions to instantly find out whether the Old or New Tax Regime is more beneficial for you for the current financial year.",
+  "last_updated": "Updated:",
+  "title": "Old vs New Tax Regime Calculator",
+  "form_description": "Fill in your income and potential deductions to get a clear comparison.",
+  "gross_salary_label": "Gross Annual Salary",
+  "basic_salary_label": "Basic Salary (for HRA calculation)",
+  "other_income_label": "Income from Other Sources",
+  "age_label": "Your Age",
+  "age_below_60": "Below 60 years",
+  "age_60_to_80": "60 to 80 years (Senior Citizen)",
+  "age_above_80": "Above 80 years (Super Senior Citizen)",
+  "deductions_title": "Deductions (for Old Regime)",
+  "section80C_label": "Section 80C (e.g., PPF, ELSS, Life Insurance)",
+  "section80D_label": "Section 80D (Health Insurance Premium)",
+  "section80CCD1B_label": "Section 80CCD(1B) (NPS Contribution)",
+  "section80TTA_label": "Section 80TTA (Savings Account Interest)",
+  "hra_label": "HRA Received",
+  "rent_paid_label": "Total Annual Rent Paid",
+  "metro_city_label": "Do you live in a metro city? (Delhi, Mumbai, Kolkata, Chennai)",
+  "home_loan_interest_label": "Home Loan Interest (Self-occupied)",
+  "lta_label": "Leave Travel Allowance (LTA)",
+  "calculate_button": "Compare Tax Regimes",
+  "loading": "Comparing...",
+  "results_title": "Tax Comparison Result",
+  "result_recommendation": "The {winner} is better for you, saving you {savings} in taxes!",
+  "old_regime": "Old Tax Regime",
+  "new_regime": "New Tax Regime (Default)",
+  "total_tax_label": "Total Tax Payable",
+  "taxable_income_label": "Taxable Income",
+  "net_income_label": "Net Take-Home Income",
   "assumptions": {
-    "title": "அனுமானங்கள் மற்றும் குறிப்புகள்",
-    "body": "<ul><li>இந்த கால்குலேட்டர் மதிப்பீட்டு ஆண்டு 2025-26 (நிதியாண்டு 2024-25) க்கானது.</li><li>இது நீங்கள் ஒரு சம்பளம் பெறும் தனிநபர் என்று அனுமானிக்கிறது.</li><li>புதிய வரி ஆட்சி இயல்புநிலை விருப்பமாகும். பழைய ஆட்சி அதிக நன்மை பயக்கும் என்றால் நீங்கள் வெளிப்படையாக பழைய ஆட்சியைத் தேர்ந்தெடுக்க வேண்டும்.</li><li>சமீபத்திய விதிகளின்படி இரு ஆட்சிகளின் கீழும் சம்பள வருமானத்திற்கு ₹50,000 நிலையான விலக்கு பயன்படுத்தப்படுகிறது.</li></ul>"
+    "title": "Assumptions & Notes",
+    "body": "<ul><li>This calculator is for Assessment Year 2025-26 (Financial Year 2024-25).</li><li>It assumes you are a salaried individual.</li><li>The New Tax Regime is the default regime. You must explicitly opt for the Old Regime if it is more beneficial.</li><li>Standard Deduction of â‚¹50,000 is applied to salary income under both regimes as per latest rules.</li></ul>"
   },
   "comparison_table": {
-    "title": "பழைய மற்றும் புதிய ஆட்சி: முக்கிய வேறுபாடுகள்",
-    "description": "ஒவ்வொரு ஆட்சியின் கீழும் என்ன அனுமதிக்கப்படுகிறது என்பதற்கான ஒரு விரைவான பார்வை இங்கே.",
+    "title": "Old vs New Regime: Key Differences",
+    "description": "Hereâ€™s a quick look at whatâ€™s allowed under each regime.",
     "table": {
-      "headers": ["விலக்கு/சலுகை", "பழைய ஆட்சி", "புதிய ஆட்சி"],
+      "headers": ["Deduction/Exemption", "Old Regime", "New Regime"],
       "rows": [
-        ["நிலையான விலக்கு", "✅ (₹50,000)", "✅ (₹50,000)"],
-        ["பிரிவு 80சி (பிபிஎஃப், இஎல்எஸ்எஸ், போன்றவை)", "✅ (₹1.5 லட்சம் வரை)", "❌ அனுமதிக்கப்படவில்லை"],
-        ["பிரிவு 80டி (உடல்நலக் காப்பீடு)", "✅", "❌ அனுமதிக்கப்படவில்லை"],
-        ["எச்ஆர்ஏ விலக்கு", "✅", "❌ அனுமதிக்கப்படவில்லை"],
-        ["வீட்டுக் கடன் வட்டி (பிரிவு 24பி)", "✅ (₹2 லட்சம் வரை)", "❌ அனுமதிக்கப்படவில்லை"],
-        ["பிரிவு 80சிசிடி(1பி) (என்பிஎஸ்)", "✅ (₹50,000 வரை)", "❌ அனுமதிக்கப்படவில்லை"]
+        ["Standard Deduction", "âœ… (â‚¹50,000)", "âœ… (â‚¹50,000)"],
+        ["Section 80C (PPF, ELSS, etc.)", "âœ… (Up to â‚¹1.5 Lakh)", "âŒ Not Allowed"],
+        ["Section 80D (Health Insurance)", "âœ…", "âŒ Not Allowed"],
+        ["HRA Exemption", "âœ…", "âŒ Not Allowed"],
+        ["Home Loan Interest (Sec 24b)", "âœ… (Up to â‚¹2 Lakh)", "âŒ Not Allowed"],
+        ["Section 80CCD(1B) (NPS)", "âœ… (Up to â‚¹50,000)", "âŒ Not Allowed"]
       ]
     }
   },
   "checklist": {
-    "title": "நீங்கள் எந்த ஆட்சியைத் தேர்ந்தெடுக்க வேண்டும்?",
-    "body": "<ul><li><strong>பழைய ஆட்சியைத் தேர்ந்தெடுக்கவும்:</strong> உங்களிடம் எச்ஆர்ஏ, வீட்டுக் கடன் வட்டி போன்ற குறிப்பிடத்தக்க விலக்குகள் இருந்தால், மற்றும் முழு 80சி வரம்பையும் பயன்படுத்தினால். பொதுவாக, உங்கள் மொத்த விலக்குகள் ₹2.5 - ₹3.75 லட்சத்திற்கு மேல் இருந்தால், பழைய ஆட்சி பெரும்பாலும் சிறந்தது.</li><li><strong>புதிய ஆட்சியைத் தேர்ந்தெடுக்கவும்:</strong> உங்களிடம் சில அல்லது விலக்குகள் இல்லை என்றால், எளிமையை விரும்பினால், மற்றும் வரி நோக்கங்களுக்காக முதலீடுகளைக் கண்காணிக்கும் தொந்தரவு இல்லாமல் பெரும்பாலான வருமான மட்டங்களில் குறைந்த வரி விகிதங்களை விரும்பினால்.</li></ul>"
+    "title": "Which Regime Should You Choose?",
+    "body": "<ul><li><strong>Choose the Old Regime if:</strong> You have significant deductions like HRA, home loan interest, and utilize the full 80C limit. Typically, if your total deductions are above â‚¹2.5 - â‚¹3.75 lakh, the old regime is often better.</li><li><strong>Choose the New Regime if:</strong> You have few or no deductions, prefer simplicity, and want lower tax rates at most income levels without the hassle of tracking investments for tax purposes.</li></ul>"
   },
   "how_we_calculate": {
-    "title": "நாங்கள் உங்கள் வரியை எவ்வாறு கணக்கிடுகிறோம்",
-    "body": "<p><strong>பழைய ஆட்சி:</strong> நாங்கள் முதலில் உங்கள் மொத்த விலக்குகளை, எச்ஆர்ஏ விலக்கு மற்றும் அனைத்துப் பிரிவுகளையும் (80சி, 80டி, போன்றவை) கணக்கிடுகிறோம். இது உங்கள் 'வரிக்குட்பட்ட வருமானம்' பெற உங்கள் மொத்த வருமானத்திலிருந்து கழிக்கப்படுகிறது. பின்னர் வரி வெவ்வேறு வயதுக் குழுக்களுக்கு மாறுபடும் பழைய வரி அடுக்குகளின் அடிப்படையில் கணக்கிடப்படுகிறது.</p><p><strong>புதிய ஆட்சி:</strong> கணக்கீடு எளிமையானது. நாங்கள் உங்கள் சம்பளத்திற்கு ₹50,000 நிலையான விலக்கை மட்டுமே பயன்படுத்துகிறோம். வேறு எந்த விலக்குகளும் அனுமதிக்கப்படவில்லை. பின்னர் வரி புதிய, குறைந்த வரி அடுக்குகளின் அடிப்படையில் கணக்கிடப்படுகிறது. அடுக்குகளின் விரிவான விவரங்களுக்கு, நீங்கள் <a href='https://incometaxindia.gov.in/' target='_blank' rel='noopener noreferrer'>அதிகாரப்பூர்வ வருமான வரித் துறை வலைத்தளத்தைப்</a> பார்க்கவும்.</p>"
+    "title": "How We Calculate Your Tax",
+    "body": "<p><strong>Old Regime:</strong> We first calculate your total deductions, including HRA exemption and all sections (80C, 80D, etc.). This is subtracted from your gross income to get your 'Taxable Income'. Tax is then calculated based on the old tax slabs, which vary for different age groups.</p><p><strong>New Regime:</strong> The calculation is simpler. We only apply the standard deduction of â‚¹50,000 to your salary. No other deductions are allowed. Tax is then calculated based on the new, lower tax slabs. For a detailed breakdown of slabs, you can refer to the <a href='https://incometaxindia.gov.in/' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>official Income Tax Department website</a>.</p>"
   },
   "common_scenarios": {
-    "title": "பொதுவான சூழ்நிலைகள்",
+    "title": "Common Scenarios",
     "scenario1": {
-      "title": "ஒரு மெட்ரோவில் வாடகைக்கு இருக்கும் இளம் தொழில்முறை (சம்பளம்: ₹12 லட்சம்)",
-      "body": "<p>முழு 80சி (₹1.5 லட்சம்) மற்றும் 80டி (₹25 ஆயிரம்) விலக்குகளுடன், மேலும் எச்ஆர்ஏ விலக்குடன், <strong>பழைய ஆட்சி</strong> குறிப்பிடத்தக்க வரியைச் சேமித்து, சிறந்ததாக இருக்கும்.</p>"
+      "title": "Young Professional Renting in a Metro (Salary: â‚¹12 Lakh)",
+      "body": "<p>With full 80C (â‚¹1.5L) and 80D (â‚¹25k) deductions, plus HRA exemption, the <strong>Old Regime</strong> is likely better, saving significant tax.</p>"
     },
     "scenario2": {
-      "title": "ஒரு வீட்டுக் கடனுடன் வீட்டு உரிமையாளர் (சம்பளம்: ₹20 லட்சம்)",
-      "body": "<p>₹2 லட்சம் வீட்டுக் கடன் வட்டி விலக்கு, 80சி, 80டி, மற்றும் என்பிஎஸ் உடன், <strong>பழைய ஆட்சி</strong> பெரிய அளவிலான விலக்குகள் காரணமாக கிட்டத்தட்ட நிச்சயமாக அதிக நன்மை பயக்கும்.</p>"
+      "title": "Homeowner with a Home Loan (Salary: â‚¹20 Lakh)",
+      "body": "<p>With â‚¹2L home loan interest deduction, 80C, 80D, and NPS, the <strong>Old Regime</strong> is almost certainly more beneficial due to the large volume of deductions.</p>"
     },
     "scenario3": {
-      "title": "குறைந்த விலக்குகளுடன் முதலீட்டாளர் (சம்பளம்: ₹15 லட்சம்)",
-      "body": "<p>உங்களிடம் எச்ஆர்ஏ அல்லது வீட்டுக் கடன் இல்லை மற்றும் குறைந்தபட்ச 80சி முதலீடுகளை மட்டுமே செய்தால், <strong>புதிய ஆட்சியின்</strong> குறைந்த அடுக்கு விகிதங்கள் அனேகமாக குறைந்த வரி செலுத்தலுக்கு வழிவகுக்கும்.</p>"
+      "title": "Investor with Low Deductions (Salary: â‚¹15 Lakh)",
+      "body": "<p>If you don't have HRA or a home loan and only make minimal 80C investments, the <strong>New Regime's</strong> lower slab rates will likely result in lower tax payable.</p>"
     }
   },
-  "faq_title": "அடிக்கடி கேட்கப்படும் கேள்விகள்",
+  "faq_title": "Frequently Asked Questions",
   "faqs": [
     {
-      "question": "நிதியாண்டு 2024-25க்கான இயல்புநிலை வரி ஆட்சி எது?",
-      "answer": "புதிய வரி ஆட்சி அனைத்து வரி செலுத்துபவர்களுக்கும் இயல்புநிலை விருப்பமாகும். நீங்கள் பழைய ஆட்சியைத் தேர்ந்தெடுக்க விரும்பினால், உங்கள் வருமான வரி அறிக்கையை (ஐடிஆர்) தாக்கல் செய்யும்போது அவ்வாறு குறிப்பாகச் செய்ய வேண்டும்."
+      "question": "Which tax regime is the default for FY 2024-25?",
+      "answer": "The New Tax Regime is the default option for all taxpayers. If you want to opt for the Old Regime, you must do so specifically when filing your Income Tax Return (ITR)."
     },
     {
-      "question": "நான் ஒவ்வொரு ஆண்டும் பழைய மற்றும் புதிய ஆட்சிகளுக்கு இடையில் மாற முடியுமா?",
-      "answer": "சம்பளம் பெறும் தனிநபர்கள் ஒவ்வொரு நிதியாண்டும் பழைய மற்றும் புதிய ஆட்சிகளுக்கு இடையில் தேர்வு செய்யலாம். இருப்பினும், வணிக வருமானம் உள்ள தனிநபர்கள் தங்கள் வாழ்நாளில் ஒரு முறை மட்டுமே மாற முடியும்."
+      "question": "Can I switch between the old and new regimes every year?",
+      "answer": "Salaried individuals can choose between the old and new regimes every financial year. However, individuals with business income can only switch once in their lifetime."
     },
     {
-      "question": "புதிய வரி ஆட்சியில் ₹50,000 நிலையான விலக்கு கிடைக்குமா?",
-      "answer": "ஆம், நிதியாண்டு 2023-24 முதல், புதிய வரி ஆட்சியின் கீழ் சம்பளம் பெறும் தனிநபர்கள் மற்றும் ஓய்வூதியதாரர்களுக்கு ₹50,000 நிலையான விலக்கு கிடைக்கிறது."
+      "question": "Is the standard deduction of â‚¹50,000 available in the new tax regime?",
+      "answer": "Yes, from FY 2023-24 onwards, the standard deduction of â‚¹50,000 is available for salaried individuals and pensioners under the New Tax Regime as well."
+    },
+    {
+      "question": "How does choosing the old regime affect my investment planning?",
+      "answer": "The old regime allows deductions under Section 80C, making investments in <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a>, <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a>, and ELSS more tax-efficient. Use our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> to find ELSS funds that qualify for 80C deductions."
+    },
+    {
+      "question": "What if I have a home loan? Which regime should I choose?",
+      "answer": "If you have a home loan, the old regime is typically better due to home loan interest deductions. Use our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> to compare loan options and maximize your tax benefits under the old regime."
+    },
+    {
+      "question": "How does the tax regime choice impact my retirement planning?",
+      "answer": "Your tax regime choice affects long-term savings. The old regime favors tax-saving investments, while the new regime offers simplicity. Use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to plan your retirement corpus considering your tax regime choice."
+    },
+    {
+      "question": "Can I compare my tax savings with different investment options?",
+      "answer": "Yes, use our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a> to compare fixed deposits with PPF, and our <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> to optimize your investment portfolio for maximum tax efficiency."
     }
   ],
   "next_steps": {
-    "title": "பதிவிறக்கம் & அடுத்த படிகள்",
-    "cta1_title": "சுருக்கத்தைப் பதிவிறக்கு (சிஎஸ்வி)",
-    "cta1_desc": "உங்கள் பதிவுகளுக்காக உங்கள் வரி கணக்கீட்டை ஏற்றுமதி செய்யுங்கள்.",
-    "cta2_title": "உங்கள் வரி சேமிப்பை உகப்பாக்கு",
-    "cta2_desc": "பிபிஎஃப் மற்றும் இஎல்எஸ்எஸ் போன்ற எங்கள் வரி-சேமிப்பு முதலீட்டு கால்குலேட்டர்களை ஆராயுங்கள்."
+    "title": "Download & Next Steps",
+    "cta1_title": "Download Summary (CSV)",
+    "cta1_desc": "Export your tax calculation for your records.",
+    "cta2_title": "Optimize Your Tax Savings",
+    "cta2_desc": "Explore our tax-saving investment calculators like PPF and ELSS."
   },
   "conclusion": {
-    "title": "ஒரு தகவலறிந்த தேர்வைச் செய்யுங்கள்",
-    "body": "சரியான வரி ஆட்சியைத் தேர்ந்தெடுப்பது ஆயிரக்கணக்கான ரூபாய்களைச் சேமிக்கக்கூடிய ஒரு முக்கியமான நிதி முடிவாகும். இந்தத் தேர்வு முற்றிலும் உங்கள் தனிப்பட்ட வருமானம் மற்றும் விலக்கு சுயவிவரத்தைப் பொறுத்தது. உங்கள் எண்களை இயக்க இந்தக் கால்குலேட்டரைப் பயன்படுத்தவும் மற்றும் ஆண்டிற்கான மிகவும் நிதி ரீதியாக விவேகமான முடிவை எடுக்கவும். மேலும் சேமிப்பு விருப்பங்களுக்கு, எங்கள் <a href='/{lang}/ppf-calculator'>பிபிஎஃப்</a> அல்லது <a href='/{lang}/nps-calculator'>என்பிஎஸ்</a> கால்குலேட்டர்களைப் பார்க்கவும்."
+    "title": "Make an Informed Choice",
+    "body": "Choosing the right tax regime is a critical financial decision that can save you thousands of rupees. This choice depends entirely on your individual income and deduction profile. Use this calculator to run your numbers and make the most financially prudent decision for the year. For more savings options, check our <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a> or <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a> calculators. For broader financial planning, explore our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for debt management and <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> for portfolio optimization. Compare with other investment options using our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a> and <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a>."
   }
 }
