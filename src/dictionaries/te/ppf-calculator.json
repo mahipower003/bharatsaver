@@ -37,7 +37,7 @@
       "Loan Facility Against Balance",
       "Partial Withdrawal Option"
     ],
-    "conclusion": "It's an ideal tool for long-term goals like retirement, children's education, or wealth creation."
+    "conclusion": "It's an ideal tool for long-term goals like retirement, children's education, or wealth creation. Use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>Retirement Corpus Calculator</a> to see how PPF fits into your overall retirement strategy."
   },
   "investment_strategy": {
     "title": "Pro Tip: When to Invest in PPF for Maximum Returns",
@@ -45,7 +45,8 @@
     "points": [
       "<strong>Invest before the 5th of each month</strong> if you are investing monthly.",
       "<strong>Invest the full amount before April 5th</strong> if you are making a lump-sum annual investment."
-    ]
+    ],
+    "note": "Combine PPF with our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>Retirement Corpus Calculator</a> to plan your overall retirement goals strategically."
   },
   "tax_benefits": {
     "title": "PPF Tax Benefits: The Power of EEE",
@@ -107,6 +108,7 @@
   },
   "comparison": {
     "title": "PPF vs Other Investment Options",
+    "intro": "Understanding how PPF compares to alternative investment instruments helps you make a better financial decision. Here's a comprehensive comparison:",
     "table": {
       "headers": ["Feature", "PPF", "FD", "NPS", "SSY"],
       "rows": [
@@ -117,7 +119,7 @@
         ["Eligibility", "All Indians", "All Indians", "18-70 years", "Girl child < 10"]
       ]
     },
-    "footer_note": "For a detailed comparison, check out our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a>."
+    "footer_note": "For a detailed comparison, check out our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a>. Also explore our <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS Calculator</a> and <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>SSY Calculator</a> to compare all options side by side."
   },
   "faq_title": "Frequently Asked Questions about PPF",
   "faqs": [
@@ -141,5 +143,36 @@
   "conclusion": {
     "title": "The Bottom Line: Is PPF Right For You?",
     "body": "PPF is an outstanding investment for anyone looking for a safe, tax-efficient, and disciplined way to build a long-term corpus. Its guaranteed returns and EEE status make it a cornerstone of a well-diversified portfolio for risk-averse investors. Also see how it compares to the <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>Sukanya Samriddhi Yojana</a> for a girl child."
+  },
+  "related_calculators": {
+    "title": "Explore Related Financial Calculators",
+    "description": "Complement your PPF investment strategy with these powerful financial planning tools:",
+    "tools": [
+      {
+        "name": "FD vs PPF Calculator",
+        "description": "Compare returns between Fixed Deposits and PPF to determine which option suits your investment goals.",
+        "link": "/{lang}/fd-vs-ppf-calculator"
+      },
+      {
+        "name": "Tax Regime Calculator",
+        "description": "Determine whether the Old or New Tax Regime offers more tax savings for your income profile.",
+        "link": "/{lang}/tax-regime-calculator"
+      },
+      {
+        "name": "Retirement Corpus Calculator",
+        "description": "Calculate the corpus needed to support your retirement lifestyle and plan accordingly.",
+        "link": "/{lang}/retirement-corpus-calculator"
+      },
+      {
+        "name": "NPS Calculator",
+        "description": "Explore National Pension Scheme as a complementary tool for your retirement planning.",
+        "link": "/{lang}/nps-calculator"
+      },
+      {
+        "name": "Sukanya Samriddhi Yojana (SSY) Calculator",
+        "description": "Perfect for parents saving for their daughter's future with attractive tax-free returns.",
+        "link": "/{lang}/ssy-calculator"
+      }
+    ]
   }
 }

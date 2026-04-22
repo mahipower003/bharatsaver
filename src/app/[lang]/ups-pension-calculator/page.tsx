@@ -10,6 +10,7 @@ import { AuthorCard } from "@/components/layout/AuthorCard";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { FooterCta } from "@/components/layout/FooterCta";
+import Link from "next/link";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -236,6 +237,27 @@ export default async function UpsPensionCalculatorPage({ params }: { params: Pro
                 <p className="text-muted-foreground">{dict.conclusion.body}</p>
               </CardContent>
             </Card>
+
+            {dict?.related_calculators && <Card className="mt-12 shadow-lg bg-blue-50/50 dark:bg-blue-950/20 border-blue-200 dark:border-blue-800">
+              <CardHeader>
+                <h2 className="text-2xl font-bold">{dict.related_calculators.title}</h2>
+                <p className="text-muted-foreground mt-2">{dict.related_calculators.description}</p>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {dict.related_calculators.tools.map((tool: { name: string; description: string; link: string }, index: number) => (
+                    <Link
+                      key={index}
+                      href={tool.link.replace('{lang}', lang)}
+                      className="p-4 rounded-lg border border-blue-200 dark:border-blue-800 hover:shadow-md hover:border-blue-400 transition-all group bg-white dark:bg-slate-900"
+                    >
+                      <h3 className="font-semibold text-primary group-hover:underline mb-1">{tool.name}</h3>
+                      <p className="text-sm text-muted-foreground">{tool.description}</p>
+                    </Link>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>}
             
             <Alert variant="destructive" className="mt-8">
               <AlertTitle>{dict.disclaimer.title} (Last reviewed: August 2024)</AlertTitle>

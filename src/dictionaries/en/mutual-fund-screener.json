@@ -299,6 +299,17 @@
     "h2": "Final Thoughts: From Selection to Wealth Creation",
     "body": "Congratulations on taking a huge step towards building a smarter, more intentional mutual fund portfolio. I built this tool because I believe every investor deserves access to the same high-quality data and analysis that professionals use. Remember, the goal isn't just to pick 'good' funds; it's to build a resilient, diversified portfolio that works as hard for your financial future as you do. Use this screener as your starting point, your co-pilot, and your sanity check. Your journey to wealth creation is a marathon, not a sprint, and you've just taken a powerful first stride."
   },
+  "related_calculators": {
+    "title": "Explore Related Investment & Financial Planning Tools",
+    "description": "Complement your mutual fund selection strategy with these essential calculators:",
+    "tools": [
+      { "name": "Mutual Fund Overlap Calculator", "description": "Check overlap between any two funds to ensure portfolio diversification", "link": "/{lang}/mutual-fund-overlap-calculator" },
+      { "name": "Tax Regime Calculator", "description": "Optimize your tax liability on mutual fund gains and dividends", "link": "/{lang}/tax-regime-calculator" },
+      { "name": "Retirement Corpus Calculator", "description": "Plan your retirement corpus through systematic mutual fund SIPs", "link": "/{lang}/retirement-corpus-calculator" },
+      { "name": "PPF Calculator", "description": "Compare PPF with mutual funds for tax-free returns and safety", "link": "/{lang}/ppf-calculator" },
+      { "name": "NPS Calculator", "description": "Diversify retirement savings with NPS alongside mutual funds", "link": "/{lang}/nps-calculator" }
+    ]
+  },
   "footer_cta": {
     "h2": "Feeling Overwhelmed? Let Me Help.",
     "body": "Still not sure which funds to pick? That's completely normal. For a more personalized approach, I can help you get a curated list of funds based on your specific goals and risk profile.",

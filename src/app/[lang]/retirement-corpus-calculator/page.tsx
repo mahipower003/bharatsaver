@@ -403,6 +403,27 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
             <p className="text-muted-foreground">{retirementDict.conclusion.body}</p>
           </CardContent>
         </Card>}
+
+        {retirementDict?.related_calculators && <Card className="mt-12 shadow-lg bg-blue-50/50 dark:bg-blue-950/20 border-blue-200 dark:border-blue-800">
+          <CardHeader>
+            <h2 className="text-2xl font-bold">{retirementDict.related_calculators.title}</h2>
+            <p className="text-muted-foreground mt-2">{retirementDict.related_calculators.description}</p>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {retirementDict.related_calculators.tools.map((tool: { name: string; description: string; link: string }, index: number) => (
+                <Link
+                  key={index}
+                  href={tool.link.replace('{lang}', lang)}
+                  className="p-4 rounded-lg border border-blue-200 dark:border-blue-800 hover:shadow-md hover:border-blue-400 transition-all group bg-white dark:bg-slate-900"
+                >
+                  <h3 className="font-semibold text-primary group-hover:underline mb-1">{tool.name}</h3>
+                  <p className="text-sm text-muted-foreground">{tool.description}</p>
+                </Link>
+              ))}
+            </div>
+          </CardContent>
+        </Card>}
         
         {retirementDict?.disclaimer && <Alert variant="destructive" className="mt-8">
           <AlertTriangle className="h-4 w-4" />

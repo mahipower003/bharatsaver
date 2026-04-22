@@ -116,5 +116,16 @@
   "conclusion": {
     "title": "Make an Informed Choice",
     "body": "Choosing the right tax regime is a critical financial decision that can save you thousands of rupees. This choice depends entirely on your individual income and deduction profile. Use this calculator to run your numbers and make the most financially prudent decision for the year. For more savings options, check our <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a> or <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a> calculators. For broader financial planning, explore our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for debt management and <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> for portfolio optimization. Compare with other investment options using our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a> and <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a>."
+  },
+  "related_calculators": {
+    "title": "Explore Related Tax & Financial Planning Tools",
+    "description": "Complement your tax regime strategy with these essential calculators:",
+    "tools": [
+      { "name": "PPF Calculator", "description": "Calculate PPF maturity and tax-saving investment strategy for the old regime", "link": "/{lang}/ppf-calculator" },
+      { "name": "NPS Calculator", "description": "Plan your retirement corpus and maximize Section 80CCD tax deductions", "link": "/{lang}/nps-calculator" },
+      { "name": "Retirement Corpus Calculator", "description": "Determine your total retirement needs considering your tax regime choice", "link": "/{lang}/retirement-corpus-calculator" },
+      { "name": "FD vs PPF Calculator", "description": "Compare Fixed Deposits with PPF for tax-efficient returns under old regime", "link": "/{lang}/fd-vs-ppf-calculator" },
+      { "name": "Loan Optimizer", "description": "Optimize your loans to maximize tax deductions under old regime", "link": "/{lang}/loan-optimizer" }
+    ]
   }
 }

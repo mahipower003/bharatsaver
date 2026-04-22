@@ -104,6 +104,17 @@
     "h2": "Plan Your Post-Retirement Life with Confidence",
     "body": "This calculator is your first step towards understanding your financial standing post-retirement. Use this estimate to plan your investments, expenses, and legacy with greater clarity and confidence."
   },
+  "related_calculators": {
+    "title": "Explore Related Retirement & Financial Planning Tools",
+    "description": "Complement your UPS pension planning with these essential calculators:",
+    "tools": [
+      { "name": "Retirement Corpus Calculator", "description": "Calculate total retirement corpus needed considering your UPS pension income", "link": "/{lang}/retirement-corpus-calculator" },
+      { "name": "NPS Calculator", "description": "Plan additional retirement savings through National Pension Scheme", "link": "/{lang}/nps-calculator" },
+      { "name": "Tax Regime Calculator", "description": "Optimize your tax liability on pension and other retirement income", "link": "/{lang}/tax-regime-calculator" },
+      { "name": "PPF Calculator", "description": "Build additional retirement corpus with tax-free PPF investments", "link": "/{lang}/ppf-calculator" },
+      { "name": "Loan Optimizer", "description": "Manage and settle loans before retirement to maximize pension income", "link": "/{lang}/loan-optimizer" }
+    ]
+  },
   "disclaimer": {
     "title": "Disclaimer",
     "body": "This is an informational tool and not financial advice. Pension amounts are estimates and may vary. Please consult your employer or a financial advisor for official calculations and advice."

@@ -33,7 +33,7 @@
   "table_closing_balance": "Closing Balance",
   "what_is_ssy": {
     "title": "What is Sukanya Samriddhi Yojana (SSY)?",
-    "body": "The Sukanya Samriddhi Yojana is a government-backed savings scheme launched as part of the 'Beti Bachao, Beti Padhao' campaign. It's designed to encourage parents to build a fund for their female child's future education and marriage expenses.",
+    "body": "The Sukanya Samriddhi Yojana is a government-backed savings scheme launched as part of the 'Beti Bachao, Beti Padhao' campaign. It's designed to encourage parents to build a fund for their female child's future education and marriage expenses. For comprehensive retirement planning that includes SSY for your child, use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>Retirement Corpus Calculator</a>.",
     "quick_facts": {
       "title": "Quick Facts:",
       "points": [
@@ -104,6 +104,7 @@
   },
   "comparison": {
     "title": "SSY vs Other Savings Schemes",
+    "intro": "Understanding how SSY compares to other savings vehicles helps you make an informed decision for your daughter's future:",
     "table": {
       "headers": ["Feature", "SSY", "PPF", "FD", "NPS"],
       "rows": [
@@ -112,7 +113,8 @@
         ["Tax on Maturity", "Tax-Free", "Tax-Free", "Taxable", "Partially Taxable"],
         ["Lock-in Period", "21 years", "15 years", "Varies", "Till age 60"]
       ]
-    }
+    },
+    "footer_note": "For a detailed comparison, check out our <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF Calculator</a>. Also explore our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>Retirement Corpus Calculator</a> to plan multi-generational wealth."
   },
   "how_to_open": {
     "title": "How to Open an SSY Account",
@@ -160,5 +162,36 @@
   "conclusion": {
     "title": "A Powerful Tool for Your Daughter's Future",
     "body": "Sukanya Samriddhi Yojana is more than just a savings scheme; it's a commitment to your daughter's bright future. With its high, tax-free returns and government backing, it is one of the best tools available for planning her education and marriage expenses. Use this calculator to visualize the growth and take a confident step towards securing her dreams."
+  },
+  "related_calculators": {
+    "title": "Explore Other Financial Planning Tools",
+    "description": "Complement your SSY strategy with these essential financial planning calculators:",
+    "tools": [
+      {
+        "name": "PPF Calculator",
+        "description": "Plan your personal retirement with PPF alongside SSY for your daughter's future.",
+        "link": "/{lang}/ppf-calculator"
+      },
+      {
+        "name": "Retirement Corpus Calculator",
+        "description": "Ensure you're on track for retirement while planning your daughter's education.",
+        "link": "/{lang}/retirement-corpus-calculator"
+      },
+      {
+        "name": "NPS Calculator",
+        "description": "Explore NPS as a complementary tool for long-term retirement and wealth accumulation.",
+        "link": "/{lang}/nps-calculator"
+      },
+      {
+        "name": "Tax Regime Calculator",
+        "description": "Determine the most tax-efficient regime for your SSY contributions under Section 80C.",
+        "link": "/{lang}/tax-regime-calculator"
+      },
+      {
+        "name": "FD vs PPF Calculator",
+        "description": "Compare Fixed Deposits with PPF and SSY to optimize your investment mix.",
+        "link": "/{lang}/fd-vs-ppf-calculator"
+      }
+    ]
   }
 }
