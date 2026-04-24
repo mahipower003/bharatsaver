@@ -181,7 +181,9 @@ export function LicJeevanUmangCalculator({ dictionary }: { dictionary: any }) {
                                     {rider.label}
                                     <Tooltip>
                                       <TooltipTrigger asChild>
-                                        <Info className="h-3 w-3 text-muted-foreground cursor-help" />
+                                        <button type="button" className="inline-flex" tabIndex={-1}>
+                                          <Info className="h-3 w-3 text-muted-foreground cursor-help" />
+                                        </button>
                                       </TooltipTrigger>
                                       <TooltipContent>
                                         <p className="max-w-xs">{rider.description}</p>

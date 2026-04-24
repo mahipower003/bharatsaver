@@ -5,7 +5,8 @@ import { useState, useEffect } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Loader2, Download, Printer, Twitter } from 'lucide-react';
+import { Loader2, Download, Printer, Twitter, Info } from 'lucide-react';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
@@ -122,7 +123,7 @@ export function LicMaturityCalculator({ dictionary }: { dictionary: any }) {
   const formatCurrency = (value: number) => value.toLocaleString('en-IN', { style: 'currency', currency: 'INR', minimumFractionDigits: 0, maximumFractionDigits: 0 });
 
   return (
-    <>
+    <TooltipProvider>
       <Card className="shadow-lg">
         <CardHeader>
           <CardTitle>{dictionary.title}</CardTitle>
@@ -147,8 +148,44 @@ export function LicMaturityCalculator({ dictionary }: { dictionary: any }) {
                 <FormField control={form.control} name="sumAssured" render={({ field }) => (<FormItem><FormLabel>{dictionary.sum_assured_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
                 <FormField control={form.control} name="policyTerm" render={({ field }) => (<FormItem><FormLabel>{dictionary.policy_term_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
                 <FormField control={form.control} name="annualPremium" render={({ field }) => (<FormItem><FormLabel>{dictionary.premium_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
-                <FormField control={form.control} name="bonusRate" render={({ field }) => (<FormItem><FormLabel>{dictionary.bonus_rate_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
-                <FormField control={form.control} name="fabRate" render={({ field }) => (<FormItem><FormLabel>{dictionary.fab_rate_label}</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>)} />
+                <FormField control={form.control} name="bonusRate" render={({ field }) => (
+                  <FormItem>
+                    <div className="flex items-center gap-2">
+                      <FormLabel>{dictionary.bonus_rate_label}</FormLabel>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <button type="button" className="inline-flex" tabIndex={-1}>
+                            <Info className="h-4 w-4 text-muted-foreground hover:text-primary transition-colors" />
+                          </button>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p className="max-w-xs text-sm">Illustrative Simple Reversionary Bonus per ₹1,000 Sum Assured. Usually between ₹40 to ₹48 depending on the plan.</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </div>
+                    <FormControl><Input type="number" {...field} /></FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )} />
+                <FormField control={form.control} name="fabRate" render={({ field }) => (
+                  <FormItem>
+                    <div className="flex items-center gap-2">
+                      <FormLabel>{dictionary.fab_rate_label}</FormLabel>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <button type="button" className="inline-flex" tabIndex={-1}>
+                            <Info className="h-4 w-4 text-muted-foreground hover:text-primary transition-colors" />
+                          </button>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p className="max-w-xs text-sm">Final Additional Bonus per ₹1,000 SA. Paid only at maturity for policies running 15+ years.</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </div>
+                    <FormControl><Input type="number" {...field} /></FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )} />
                 <FormField control={form.control} name="dob" render={({ field }) => (
                     <FormItem className="flex flex-col"><FormLabel>{dictionary.dob_label}</FormLabel>
                         <Popover><PopoverTrigger asChild><FormControl>
@@ -220,6 +257,6 @@ export function LicMaturityCalculator({ dictionary }: { dictionary: any }) {
           </CardContent>
         </Card>
       )}
-    </>
+    </TooltipProvider>
   );
 }

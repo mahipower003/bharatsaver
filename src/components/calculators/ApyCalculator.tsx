@@ -51,6 +51,8 @@ const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 
+import { TooltipProvider } from "@/components/ui/tooltip";
+
 export function ApyCalculator({ dictionary }: ApyCalculatorProps) {
   const router = useRouter();
   const pathname = usePathname();
@@ -146,7 +148,7 @@ export function ApyCalculator({ dictionary }: ApyCalculatorProps) {
   }
 
   return (
-    <>
+    <TooltipProvider>
       <Card className="shadow-lg">
         <CardHeader>
            <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
@@ -241,6 +243,6 @@ export function ApyCalculator({ dictionary }: ApyCalculatorProps) {
           </CardContent>
         </Card>
       )}
-    </>
+    </TooltipProvider>
   );
 }

@@ -8,8 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Shield, BarChart2, UserCheck, Landmark, GitCompareArrows, AlertTriangle, Star } from "lucide-react";
 import Link from "next/link";
 import { ApyPremiumChart } from "@/components/calculators/ApyPremiumChart";
-import { AuthorCard } from "@/components/layout/AuthorCard";
-import { FooterCta } from "@/components/layout/FooterCta";
+import { CalculatorPageLayout } from "@/components/layout/CalculatorPageLayout";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -21,53 +20,6 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${lang}/apy-calculator`;
   const ogImageUrl = `${siteUrl}/images/APY-Calculator-online.png`;
-
-  const faqItems = pageDict.faqs;
-  const faqSchema = {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity": faqItems.map((faq: { question: string, answer: string }) => ({
-      '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: faq.answer,
-      },
-    })),
-  };
-
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": pageUrl
-    },
-    "headline": "APY Calculator 2025 — Atal Pension Yojana Premium Chart & Pension",
-    "description": "Use our FREE APY Calculator to find the monthly premium required for ₹1,000–₹5,000 pensions. Get age-based premium charts, eligibility, FAQs and downloadable CSV. Updated Sep 2025.",
-    "image": ogImageUrl,
-    "author": {
-      "@type": "Person",
-      "name": "Mahesh Chaube, CFP",
-      "url": "https://www.linkedin.com/in/mahi003/",
-      "sameAs": "https://www.linkedin.com/in/mahi003/"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "BharatSaver",
-      "logo": {
-        "@type": "ImageObject",
-        "url": `${siteUrl}/icon.svg`
-      }
-    },
-    "reviewedBy": {
-      "@type": "Organization",
-      "name": "BharatSaver Editorial Team"
-    },
-    "about": ["Atal Pension Yojana", "Pension Calculator", "Government Schemes"],
-    "datePublished": "2024-07-25",
-    "dateModified": "2025-09-01"
-  };
 
   return {
     title: pageDict.meta_title,
@@ -93,9 +45,6 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
         return acc;
       }, {} as Record<string, string>),
     },
-    other: {
-      'application/ld+json': JSON.stringify([faqSchema, articleSchema]),
-    },
   };
 }
 
@@ -105,35 +54,21 @@ export default async function ApyCalculatorPage({ params }: { params: Promise<{ 
   const pageDict = { ...(await import(`@/dictionaries/${lang}/apy-calculator.json`)).default };
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
 
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${lang}` },
-      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${lang}/calculators` },
-      { '@type': 'ListItem', position: 3, name: 'APY Calculator', item: `${siteUrl}/${lang}/apy-calculator` },
-    ],
-  };
-  
   return (
-    <div className="py-12">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <div className="mx-auto max-w-5xl">
-        <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{__html: pageDict.h1}}></h1>
-          <div className="bs-byline justify-center text-center">
-            <span className="bs-author">By <strong>Mahesh Chaube</strong></span>
-            <span className="bs-creds">, CFP</span>
-            <span className="bs-sep">|</span>
-            <span className="bs-updated">Last updated: <time dateTime="2025-09-01">September 2025</time></span>
-            <div className="bs-reviewed">Reviewed by <strong>Laveena Vijayi</strong> — BharatSaver Editorial Team</div>
-          </div>
-          <p className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{__html: pageDict.description}}></p>
-        </div>
-        
-        <ApyCalculator dictionary={pageDict} />
-
-        <Card className="mt-12 shadow-lg">
+    <CalculatorPageLayout
+      lang={lang}
+      dictionary={dictionary}
+      pageDict={pageDict}
+      h1={pageDict.h1}
+      description={pageDict.description}
+      lastUpdated="September 2025"
+      calculator={<ApyCalculator dictionary={pageDict} />}
+      faqs={pageDict.faqs}
+      faqTitle={pageDict.faq_title}
+      pageUrl={`${siteUrl}/${lang}/apy-calculator`}
+    >
+      <div className="mt-12 space-y-12">
+        <Card className="shadow-lg">
           <CardHeader>
             <CardTitle className="flex items-center gap-3">
                 <Shield className="h-7 w-7 text-primary"/>
@@ -141,12 +76,12 @@ export default async function ApyCalculatorPage({ params }: { params: Promise<{ 
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.what_is_apy.body }}></p>
+            <div className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.what_is_apy.body.replace(/{lang}/g, lang) }}></div>
             <ul className="mt-4 space-y-2">
                 {pageDict.what_is_apy.points.map((point: string, index: number) => (
                     <li key={index} className="flex items-start gap-3">
                         <UserCheck className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
-                        <span dangerouslySetInnerHTML={{__html: point}}></span>
+                        <span dangerouslySetInnerHTML={{__html: point.replace(/{lang}/g, lang)}}></span>
                     </li>
                 ))}
             </ul>
@@ -158,11 +93,11 @@ export default async function ApyCalculatorPage({ params }: { params: Promise<{ 
               <h2 className="text-2xl font-bold">{pageDict.how_it_works.title}</h2>
           </CardHeader>
           <CardContent className="space-y-4">
-              <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.how_it_works.intro }}></p>
+              <div className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.how_it_works.intro.replace(/{lang}/g, lang) }}></div>
               <div className="bg-muted/50 p-4 rounded-lg">
                   <h3 className="font-semibold text-lg">{pageDict.how_it_works.example.title}</h3>
-                  <p className="mt-2 text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.how_it_works.example.body }}></p>
-                   <p className="mt-2 text-sm text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.how_it_works.example.note }}></p>
+                  <div className="mt-2 text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.how_it_works.example.body.replace(/{lang}/g, lang) }}></div>
+                   <div className="mt-2 text-sm text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.how_it_works.example.note.replace(/{lang}/g, lang) }}></div>
               </div>
           </CardContent>
         </Card>
@@ -175,7 +110,7 @@ export default async function ApyCalculatorPage({ params }: { params: Promise<{ 
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="mb-4 text-muted-foreground" dangerouslySetInnerHTML={{__html: pageDict.premium_chart.description}}></p>
+            <div className="mb-4 text-muted-foreground" dangerouslySetInnerHTML={{__html: pageDict.premium_chart.description.replace(/{lang}/g, lang)}}></div>
             <ApyPremiumChart dictionary={pageDict.premium_chart} />
           </CardContent>
         </Card>
@@ -191,7 +126,7 @@ export default async function ApyCalculatorPage({ params }: { params: Promise<{ 
             <p className="text-muted-foreground">{pageDict.enrollment.intro}</p>
             <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
                 {pageDict.enrollment.steps.map((step: string, index: number) => (
-                    <li key={index} dangerouslySetInnerHTML={{__html: step}}></li>
+                    <li key={index} dangerouslySetInnerHTML={{__html: step.replace(/{lang}/g, lang)}}></li>
                 ))}
             </ul>
           </CardContent>
@@ -215,23 +150,11 @@ export default async function ApyCalculatorPage({ params }: { params: Promise<{ 
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
-            <div dangerouslySetInnerHTML={{__html: pageDict.rules.body}} />
+            <div dangerouslySetInnerHTML={{__html: pageDict.rules.body.replace(/{lang}/g, lang)}} />
           </CardContent>
         </Card>
 
-        <div className="mt-12">
-            <h2 className="text-2xl font-bold text-center mb-6">{pageDict.faq_title}</h2>
-            <Accordion type="single" collapsible className="w-full">
-              {pageDict.faqs.map((faq: { question: string, answer: string }, index: number) => (
-                <AccordionItem value={`item-${index}`} key={index}>
-                  <AccordionTrigger>{faq.question}</AccordionTrigger>
-                  <AccordionContent>
-                    <p dangerouslySetInnerHTML={{ __html: faq.answer }}></p>
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-        </div>
+
 
         <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
           <CardHeader>
@@ -253,13 +176,11 @@ export default async function ApyCalculatorPage({ params }: { params: Promise<{ 
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.related_calculators.body.replace(/{lang}/g, lang) }} />
+            <div className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.related_calculators.body.replace(/{lang}/g, lang) }}></div>
           </CardContent>
         </Card>
-        <AuthorCard dictionary={dictionary.author_card} />
-        <FooterCta dictionary={dictionary.footer_cta} lang={lang} />
       </div>
-    </div>
+    </CalculatorPageLayout>
   );
 }
 

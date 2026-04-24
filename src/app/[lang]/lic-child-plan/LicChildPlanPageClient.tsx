@@ -6,8 +6,7 @@ import type { Locale } from "@/lib/i18n-config";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { AuthorCard } from "@/components/layout/AuthorCard";
-import { FooterCta } from "@/components/layout/FooterCta";
+import { CalculatorPageLayout } from "@/components/layout/CalculatorPageLayout";
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
 import { Download, BarChart, FileText, CheckCircle, SlidersHorizontal, GitCompareArrows, AlertTriangle, Users, BookUser, Star, HelpCircle, UserCheck, Calculator } from "lucide-react";
@@ -40,7 +39,7 @@ const ContentRenderer = ({ content, lang }: { content: any[]; lang: Locale }) =>
                         return <div key={idx} className="overflow-x-auto"><Table>
                             <TableHeader><TableRow>{item.headers.map((h: string, hIdx: number) => <TableHead key={hIdx}>{h}</TableHead>)}</TableRow></TableHeader>
                             <TableBody>{item.rows.map((row: (string|number)[], rIdx: number) => <TableRow key={rIdx}>{row.map((cell: string|number, cIdx: number) => <TableCell key={cIdx} dangerouslySetInnerHTML={{ __html: String(cell).replace(/{lang}/g, lang) }} />)}</TableRow>)}</TableBody>
-                        </Table>{item.footer && <p className="text-xs text-muted-foreground mt-2 italic" dangerouslySetInnerHTML={{ __html: item.footer }} />}</div>;
+                        </Table>{item.footer && <div className="text-xs text-muted-foreground mt-2 italic" dangerouslySetInnerHTML={{ __html: item.footer.replace(/{lang}/g, lang) }}></div>}</div>;
                     case 'faq':
                         return <Accordion key={idx} type="single" collapsible className="w-full">
                             {item.items.map((faq: {q: string; a: string}, qIdx: number) => (
@@ -72,16 +71,28 @@ export default function LicChildPlanPageClient({
   pageDict: any;
 }) {
 
+  const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
+  const pageUrl = `${siteUrl}/${params.lang}/lic-child-plan`;
+  
+  const faqSection = pageDict.sections.find((s: any) => s.id === 'faq');
+  const faqs = faqSection ? faqSection.content.find((c: any) => c.type === 'faq')?.items.map((f: any) => ({ question: f.q, answer: f.a })) : [];
+
   return (
-    <div className="py-12">
-      <div className="mx-auto max-w-5xl">
-        <header className="text-center mb-8">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{ __html: pageDict.h1 }} />
-          <div className="prose dark:prose-invert max-w-none mx-auto mt-4 text-lg" dangerouslySetInnerHTML={{ __html: pageDict.intro }} />
-        </header>
-        
-        <div className="mt-12 space-y-8">
+    <CalculatorPageLayout
+      lang={params.lang}
+      dictionary={dictionary}
+      pageDict={pageDict}
+      h1={pageDict.h1}
+      description={pageDict.intro}
+      lastUpdated="September 2025"
+      calculator={<></>}
+      faqs={faqs}
+      faqTitle="Frequently Asked Questions (FAQs)"
+      pageUrl={pageUrl}
+    >
+        <div className="space-y-8">
             {pageDict.sections.map((section: any, index: number) => {
+                if (section.id === 'faq') return null;
                 const Icon = getIcon(section.icon);
                 return (
                   <Card key={index} id={section.id} className="shadow-lg">
@@ -99,10 +110,6 @@ export default function LicChildPlanPageClient({
                 )
             })}
         </div>
-        
-        <AuthorCard dictionary={dictionary.author_card} />
-        <FooterCta dictionary={dictionary.footer_cta} lang={params.lang} />
-      </div>
-    </div>
+    </CalculatorPageLayout>
   );
 }

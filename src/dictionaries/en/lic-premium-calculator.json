@@ -1,27 +1,73 @@
-﻿{
+{
   "h1": "LIC Premium Calculator",
-  "description": "Calculate LIC premiums instantly",
-  "meta_title": "LIC Premium Calculator",
-  "meta_description": "Free LIC premium calculator",
+  "description": "Calculate premiums instantly for LIC's top endowment, whole life, term and pension plans.",
+  "meta_title": "LIC Premium Calculator — Free Online LIC Premium Calculator | BharatSaver",
+  "meta_description": "Use BharatSaver's free LIC Premium Calculator to estimate premiums for Jeevan Umang, Jeevan Utsav, Jeevan Labh & more. Compare monthly vs yearly and download results.",
   "tool": {
-    "title": "LIC Calculator",
-    "form_description": "Select a plan to calculate",
-    "plans": {
-      "term_insurance": {},
-      "endowment": {},
-      "whole_life": {}
+    "title": "LIC Plan Navigator",
+    "form_description": "Select a category and plan to jump to its dedicated calculator.",
+    "category_label": "Plan Category",
+    "sub_category_label": "Sub-Category",
+    "plan_label": "LIC Plan",
+    "category_placeholder": "Select a category",
+    "sub_category_placeholder": "Select category first",
+    "plan_placeholder": "Select a plan",
+    "view_calculator_button": "Go to Calculator",
+    "categories": {
+      "endowment": "Endowment Plans",
+      "whole_life": "Whole Life Plans",
+      "term_insurance": "Term Insurance",
+      "pension": "Pension & Annuity",
+      "ulip": "ULIPs",
+      "money_back": "Money Back Plans",
+      "micro": "Micro Insurance"
     },
     "sub_categories": {
-      "term_insurance": {},
       "endowment": {},
-      "whole_life": {}
+      "whole_life": {},
+      "term_insurance": {},
+      "pension": {},
+      "ulip": {},
+      "money_back": {},
+      "micro": {}
+    },
+    "plans": {
+      "endowment": {
+        "jeevan-utsav-calculator": "LIC Jeevan Utsav (871)",
+        "lic-jeevan-umang-calculator": "LIC Jeevan Umang (945)",
+        "lic-jeevan-anand-calculator": "LIC New Jeevan Anand (915)",
+        "lic-single-premium-endowment-calculator": "LIC Single Premium Endowment (917)",
+        "lic-jeevan-labh-calculator": "LIC Jeevan Labh (936)"
+      },
+      "whole_life": {
+        "lic-jeevan-umang-calculator": "LIC Jeevan Umang (945)"
+      },
+      "term_insurance": {
+        "lic-term-insurance": "LIC Term Insurance Guide"
+      },
+      "pension": {
+        "nps-calculator": "NPS Calculator",
+        "apy-calculator": "APY Calculator",
+        "ups-pension-calculator": "UPS Pension Calculator"
+      },
+      "ulip": {
+        "lic-maturity-calculator": "LIC Maturity Calculator"
+      },
+      "money_back": {
+        "lic-jeevan-labh-calculator": "LIC Jeevan Labh (936)",
+        "lic-maturity-calculator": "LIC Maturity Calculator"
+      },
+      "micro": {
+        "lic-premium-calculator": "LIC Premium Calculator"
+      }
     }
   },
   "article": {
     "sections": [],
     "conclusion": {
-      "body": "Plan your coverage today"
+      "title": "Start Planning Your LIC Coverage Today",
+      "body": "Use the plan navigator above to jump directly to the calculator for your chosen LIC policy. Each calculator provides instant premium estimates, maturity projections, and downloadable results."
     },
-    "disclaimer": "Estimates only"
+    "disclaimer": "All premium estimates are indicative only. Actual premiums may vary based on your age, health, and the specific plan variant. Please verify with an authorised LIC agent or on the official LIC website before purchasing a policy."
   }
 }

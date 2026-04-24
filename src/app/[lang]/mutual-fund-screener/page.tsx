@@ -3,13 +3,11 @@ import { getDictionary } from "@/lib/dictionaries";
 import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { AuthorCard } from "@/components/layout/AuthorCard";
 import { MutualFundScreenerTool } from "@/components/tools/MutualFundScreener";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { BookOpen, ListOrdered, Wand2, GitCompareArrows, HeartPulse, Ban, ShieldCheck, Star, Newspaper, Users, Scaling, HelpCircle } from 'lucide-react';
-import { FooterCta } from "@/components/layout/FooterCta";
+import { CalculatorPageLayout } from "@/components/layout/CalculatorPageLayout";
 
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
@@ -57,7 +55,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
       }, {} as Record<string, string>),
     },
     other: {
-      'application/ld+json': JSON.stringify([faqSchema, softwareSchema, articleSchema, howToSchema]),
+      'application/ld+json': JSON.stringify([softwareSchema, articleSchema, howToSchema]),
     },
   };
 }
@@ -70,29 +68,28 @@ export default async function MutualFundScreenerPage({ params }: { params: Promi
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${lang}/mutual-fund-screener`;
 
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${lang}` },
-      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${lang}/calculators` },
-      { '@type': 'ListItem', position: 3, name: 'Mutual Fund Screener', item: pageUrl },
-    ],
-  };
+  const mappedFaqs = dict.faq?.questions ? dict.faq.questions.map((f: any) => ({ question: f.q, answer: f.a })) : [];
 
   return (
-    <div className="py-12">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <div className="mx-auto max-w-5xl">
-        <header className="text-center mb-12">
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl font-headline mb-4" dangerouslySetInnerHTML={{ __html: dict.h1 }}></h1>
-          <div className="text-xl text-muted-foreground prose dark:prose-invert max-w-none mx-auto" dangerouslySetInnerHTML={{ __html: dict.intro }}></div>
-          <Button asChild size="lg" className="mt-6">
-            <Link href="#interactive-selector">{dict.interactive_tool.cta_button}</Link>
-          </Button>
-        </header>
-
-        <main className="space-y-12">
+    <CalculatorPageLayout
+      lang={lang}
+      dictionary={dictionary}
+      pageDict={dict}
+      h1={dict.h1}
+      description={dict.intro}
+      lastUpdated="September 2025"
+      calculator={
+        <section id="interactive-selector">
+          <h2 className="text-3xl font-bold font-headline text-center mb-6">{dict.interactive_tool.h2}</h2>
+          <div></div>
+          <MutualFundScreenerTool />
+        </section>
+      }
+      faqs={mappedFaqs}
+      faqTitle={dict.faq?.h2 || "Frequently Asked Questions"}
+      pageUrl={pageUrl}
+    >
+        <div className="space-y-12 print-hide">
           <Card>
             <CardHeader>
                 <CardTitle className="flex items-center gap-3 text-3xl font-bold font-headline">
@@ -102,19 +99,13 @@ export default async function MutualFundScreenerPage({ params }: { params: Promi
             </CardHeader>
             <CardContent className="space-y-6 prose dark:prose-invert max-w-none">
               <h3 className="text-2xl font-semibold">{dict.how_it_works.data_sources.h3}</h3>
-              <div dangerouslySetInnerHTML={{ __html: dict.how_it_works.data_sources.body }}></div>
+              <div dangerouslySetInnerHTML={{ __html: dict.how_it_works.data_sources.body.replace(/{lang}/g, lang) }}></div>
               <h3 className="text-2xl font-semibold">{dict.how_it_works.filters.h3}</h3>
-              <div dangerouslySetInnerHTML={{ __html: dict.how_it_works.filters.body }}></div>
+              <div dangerouslySetInnerHTML={{ __html: dict.how_it_works.filters.body.replace(/{lang}/g, lang) }}></div>
               <h3 className="text-2xl font-semibold">{dict.how_it_works.matching_logic.h3}</h3>
-              <div dangerouslySetInnerHTML={{ __html: dict.how_it_works.matching_logic.body }}></div>
+              <div dangerouslySetInnerHTML={{ __html: dict.how_it_works.matching_logic.body.replace(/{lang}/g, lang) }}></div>
             </CardContent>
           </Card>
-
-          <section id="interactive-selector">
-            <h2 className="text-3xl font-bold font-headline text-center mb-6">{dict.interactive_tool.h2}</h2>
-            <p className="text-center text-muted-foreground mb-8" dangerouslySetInnerHTML={{ __html: dict.interactive_tool.guide }}></p>
-            <MutualFundScreenerTool />
-          </section>
 
           <Card>
             <CardHeader>
@@ -124,7 +115,7 @@ export default async function MutualFundScreenerPage({ params }: { params: Promi
                 </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6 prose dark:prose-invert max-w-none">
-                <div dangerouslySetInnerHTML={{ __html: dict.step_by_step.body }}></div>
+                <div dangerouslySetInnerHTML={{ __html: dict.step_by_step.body.replace(/{lang}/g, lang) }}></div>
             </CardContent>
           </Card>
 
@@ -136,7 +127,7 @@ export default async function MutualFundScreenerPage({ params }: { params: Promi
                 </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6 prose dark:prose-invert max-w-none">
-                <div dangerouslySetInnerHTML={{ __html: dict.screener_examples.body }}></div>
+                <div dangerouslySetInnerHTML={{ __html: dict.screener_examples.body.replace(/{lang}/g, lang) }}></div>
             </CardContent>
           </Card>
 
@@ -148,7 +139,7 @@ export default async function MutualFundScreenerPage({ params }: { params: Promi
                   </CardTitle>
               </CardHeader>
               <CardContent className="space-y-6 prose dark:prose-invert max-w-none">
-                  <div dangerouslySetInnerHTML={{ __html: dict.original_report.body }}></div>
+                  <div dangerouslySetInnerHTML={{ __html: dict.original_report.body.replace(/{lang}/g, lang) }}></div>
               </CardContent>
             </Card>
 
@@ -163,7 +154,7 @@ export default async function MutualFundScreenerPage({ params }: { params: Promi
                     {dict.case_studies.studies.map((study: {title: string, body: string}, index: number) => (
                         <div key={index} className="p-4 border rounded-lg bg-muted/30">
                             <h4 className="font-bold text-xl mb-2">{study.title}</h4>
-                            <div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: study.body }}></div>
+                            <div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: study.body.replace(/{lang}/g, lang) }}></div>
                         </div>
                     ))}
                 </CardContent>
@@ -177,7 +168,7 @@ export default async function MutualFundScreenerPage({ params }: { params: Promi
                 </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6 prose dark:prose-invert max-w-none">
-                <div dangerouslySetInnerHTML={{ __html: dict.compare_funds.body }}></div>
+                <div dangerouslySetInnerHTML={{ __html: dict.compare_funds.body.replace(/{lang}/g, lang) }}></div>
             </CardContent>
           </Card>
 
@@ -189,7 +180,7 @@ export default async function MutualFundScreenerPage({ params }: { params: Promi
                   </CardTitle>
               </CardHeader>
               <CardContent className="space-y-6 prose dark:prose-invert max-w-none">
-                  <div dangerouslySetInnerHTML={{ __html: dict.benchmarks.body }}></div>
+                  <div dangerouslySetInnerHTML={{ __html: dict.benchmarks.body.replace(/{lang}/g, lang) }}></div>
               </CardContent>
             </Card>
 
@@ -201,7 +192,7 @@ export default async function MutualFundScreenerPage({ params }: { params: Promi
                 </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6 prose dark:prose-invert max-w-none">
-                <div dangerouslySetInnerHTML={{ __html: dict.portfolio_hygiene.body }}></div>
+                <div dangerouslySetInnerHTML={{ __html: dict.portfolio_hygiene.body.replace(/{lang}/g, lang) }}></div>
             </CardContent>
           </Card>
 
@@ -215,7 +206,7 @@ export default async function MutualFundScreenerPage({ params }: { params: Promi
             <CardContent className="prose dark:prose-invert max-w-none">
                 <ul className="list-disc pl-5 space-y-2">
                     {dict.common_mistakes.mistakes.map((mistake: string, index: number) => (
-                        <li key={index} dangerouslySetInnerHTML={{ __html: mistake }}></li>
+                        <li key={index} dangerouslySetInnerHTML={{ __html: mistake.replace(/{lang}/g, lang) }}></li>
                     ))}
                 </ul>
             </CardContent>
@@ -229,23 +220,10 @@ export default async function MutualFundScreenerPage({ params }: { params: Promi
                 </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6 prose dark:prose-invert max-w-none">
-                <div dangerouslySetInnerHTML={{ __html: dict.goal_based_portfolio.body }}></div>
+                <div dangerouslySetInnerHTML={{ __html: dict.goal_based_portfolio.body.replace(/{lang}/g, lang) }}></div>
             </CardContent>
           </Card>
 
-          <section id="faq">
-            <h2 className="text-3xl font-bold font-headline text-center mb-8">{dict.faq.h2}</h2>
-            <Accordion type="single" collapsible className="w-full">
-              {dict.faq.questions.map((faq: { q: string, a: string }, index: number) => (
-                <AccordionItem value={`item-${index}`} key={index}>
-                  <AccordionTrigger>{faq.q}</AccordionTrigger>
-                  <AccordionContent>
-                    <p dangerouslySetInnerHTML={{ __html: faq.a }}></p>
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </section>
 
           <Card>
             <CardHeader>
@@ -270,7 +248,7 @@ export default async function MutualFundScreenerPage({ params }: { params: Promi
                     <h2 className="text-2xl font-bold">{dict.methodology.h2}</h2>
                 </CardTitle>
             </CardHeader>
-            <CardContent className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dict.methodology.body }}/>
+            <CardContent className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dict.methodology.body.replace(/{lang}/g, lang) }}/>
           </Card>
 
 
@@ -282,7 +260,7 @@ export default async function MutualFundScreenerPage({ params }: { params: Promi
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: dict.conclusion.body }} />
+              <div className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: dict.conclusion.body.replace(/{lang}/g, lang) }}></div>
             </CardContent>
           </Card>
 
@@ -306,14 +284,9 @@ export default async function MutualFundScreenerPage({ params }: { params: Promi
               </div>
             </CardContent>
           </Card>}
-          
-          <AuthorCard dictionary={authorCardDict} />
 
-          <FooterCta dictionary={dictionary.footer_cta} lang={lang} />
-
-        </main>
-      </div>
-    </div>
+        </div>
+    </CalculatorPageLayout>
   );
 }
 

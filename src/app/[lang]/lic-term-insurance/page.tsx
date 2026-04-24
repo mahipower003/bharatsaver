@@ -46,37 +46,13 @@ export default async function LicTermInsurancePage({ params }: { params: Promise
     const pageDict = { ...(await import(`@/dictionaries/${lang}/lic-term-insurance.json`).catch(() => import(`@/dictionaries/en/lic-term-insurance.json`))).default };
     const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
     const pageUrl = `${siteUrl}/${lang}/lic-term-insurance`;
-
-    const breadcrumbSchema = {
-        '@context': 'https://schema.org',
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${lang}` },
-      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${lang}/calculators` },
-          { '@type': 'ListItem', position: 3, name: 'LIC Term Insurance Guide', item: pageUrl },
-        ],
-    };
-    
-    const faqSchema = pageDict.faq_schema;
-    const howToSchema = pageDict.how_to_schema;
-    const articleSchema = {
-      ...pageDict.article_schema,
-      mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
-      author: { ...pageDict.article_schema.author, url: `${siteUrl}/${lang}/author/mahesh-chaube`},
-      publisher: { ...pageDict.article_schema.publisher, logo: { "@type": "ImageObject", "url": `${siteUrl}/icon.svg`}}
-    };
-
-    const schemas = [faqSchema, howToSchema, articleSchema, breadcrumbSchema];
     
     return (
-        <>
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas) }} />
-            <LicTermInsuranceGuideClient 
-                params={{ lang }}
-                dictionary={dictionary}
-                pageDict={pageDict}
-            />
-        </>
+        <LicTermInsuranceGuideClient 
+            params={{ lang }}
+            dictionary={dictionary}
+            pageDict={pageDict}
+        />
     );
 }
 

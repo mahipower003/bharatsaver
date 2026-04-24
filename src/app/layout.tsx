@@ -90,11 +90,17 @@ export default async function RootLayout({
             })(window,document,'script','dataLayer','GTM-NMDXQFK7');
           `}
         </Script>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6935097890040585" crossOrigin="anonymous"></script>
+        <Script
+          id="google-adsense"
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6935097890040585"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         <link rel="icon" href="/icon.svg" type="image/svg+xml" sizes="any" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
       </head>
-      <body>
+      <body suppressHydrationWarning>
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMDXQFK7"
 height="0" width="0" style={{display:'none',visibility:'hidden'}}></iframe></noscript>
         {children}

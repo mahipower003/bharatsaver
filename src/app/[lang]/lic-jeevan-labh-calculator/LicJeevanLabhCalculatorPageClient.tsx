@@ -1,11 +1,11 @@
 
 'use client';
 
-import { LicJeevanLabhCalculator } from "@/components/calculators/LicJeevanLabhCalculator";
-import { AuthorCard } from "@/components/layout/AuthorCard";
 import type { Dictionary } from "@/lib/types";
 import type { Locale } from "@/lib/i18n-config";
-import { FooterCta } from "@/components/layout/FooterCta";
+
+import { LicJeevanLabhCalculator } from "@/components/calculators/LicJeevanLabhCalculator";
+import { CalculatorPageLayout } from "@/components/layout/CalculatorPageLayout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
@@ -39,6 +39,7 @@ export default function LicJeevanLabhCalculatorPageClient({
   const ArticleContent = () => (
     <div className="mt-12 space-y-8 print-hide">
       {pageDict.article.sections.map((section: any, index: number) => {
+        if (section.id === 'faq') return null;
         const Icon = section.icon ? getIcon(section.icon) : null;
         return (
           <Card key={index} className="shadow-lg" id={section.id}>
@@ -52,11 +53,11 @@ export default function LicJeevanLabhCalculatorPageClient({
               {section.content.map((item: any, idx: number) => {
                 switch (item.type) {
                   case 'paragraph':
-                    return <p key={idx} className="text-muted-foreground mb-4" dangerouslySetInnerHTML={{ __html: item.text }} />;
+                    return <div key={idx} className="text-muted-foreground mb-4" dangerouslySetInnerHTML={{ __html: item.text.replace(/{lang}/g, params.lang) }}></div>;
                   case 'list':
                     return (
                       <ul key={idx} className="list-disc pl-5 space-y-2 text-muted-foreground">
-                        {item.items.map((li: string, liIdx: number) => <li key={liIdx} dangerouslySetInnerHTML={{ __html: li }} />)}
+                        {item.items.map((li: string, liIdx: number) => <li key={liIdx} dangerouslySetInnerHTML={{ __html: li.replace(/{lang}/g, params.lang) }} />)}
                       </ul>
                     );
                   case 'table':
@@ -71,12 +72,12 @@ export default function LicJeevanLabhCalculatorPageClient({
                             <TableBody>
                             {item.rows.map((row: string[], rIdx: number) => (
                                 <TableRow key={rIdx}>
-                                {row.map((cell: string, cIdx: number) => <TableCell key={cIdx} dangerouslySetInnerHTML={{ __html: cell }} />)}
+                                {row.map((cell: string, cIdx: number) => <TableCell key={cIdx} dangerouslySetInnerHTML={{ __html: cell.replace(/{lang}/g, params.lang) }} />)}
                                 </TableRow>
                             ))}
                             </TableBody>
                         </Table>
-                        {item.footer && <p className="text-xs text-muted-foreground mt-2 italic" dangerouslySetInnerHTML={{ __html: item.footer }} />}
+                        {item.footer && <div className="text-xs text-muted-foreground mt-2 italic" dangerouslySetInnerHTML={{ __html: item.footer.replace(/{lang}/g, params.lang) }}></div>}
                         </div>
                     );
                   case 'steps':
@@ -87,7 +88,7 @@ export default function LicJeevanLabhCalculatorPageClient({
                                     <div className="flex-shrink-0 h-8 w-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">{sIdx + 1}</div>
                                     <div>
                                         <h3 className="font-semibold text-lg">{step.title}</h3>
-                                        <p className="text-muted-foreground">{step.description}</p>
+                                        <div className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: step.description.replace(/{lang}/g, params.lang) }}></div>
                                     </div>
                                 </li>
                             ))}
@@ -99,22 +100,12 @@ export default function LicJeevanLabhCalculatorPageClient({
                             {item.items.map((example: {title: string, body: string}, eIdx: number) => (
                                 <div key={eIdx} className="bg-muted/50 p-4 rounded-lg">
                                     <h3 className="font-semibold text-lg">{example.title}</h3>
-                                    <div className="mt-2 text-muted-foreground prose prose-sm dark:prose-invert max-w-none" dangerouslySetInnerHTML={{__html: example.body}}></div>
+                                    <div className="mt-2 text-muted-foreground prose prose-sm dark:prose-invert max-w-none" dangerouslySetInnerHTML={{__html: example.body.replace(/{lang}/g, params.lang)}}></div>
                                 </div>
                             ))}
                         </div>
                     );
-                  case 'faq':
-                    return (
-                        <Accordion key={idx} type="single" collapsible className="w-full">
-                            {item.items.map((faq: {q: string, a: string}, qIdx: number) => (
-                                <AccordionItem key={qIdx} value={`item-${qIdx}`}>
-                                    <AccordionTrigger>{faq.q}</AccordionTrigger>
-                                    <AccordionContent><p dangerouslySetInnerHTML={{__html: faq.a}} /></AccordionContent>
-                                </AccordionItem>
-                            ))}
-                        </Accordion>
-                    );
+
                   default:
                     return null;
                 }
@@ -126,27 +117,31 @@ export default function LicJeevanLabhCalculatorPageClient({
     </div>
   );
 
+  const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
+  const pageUrl = `${siteUrl}/${params.lang}/lic-jeevan-labh-calculator`;
+  
+  const faqSection = pageDict.article.sections.find((s: any) => s.id === 'faq');
+  const faqs = faqSection ? faqSection.content.find((c: any) => c.type === 'faq')?.items.map((f: any) => ({ question: f.q, answer: f.a })) : [];
+
   return (
-    <div className="py-12">
-      <div className="mx-auto max-w-5xl">
-        <header className="text-center mb-8 print-hide">
-            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{__html: pageDict.h1}} />
-            <div className="mt-4 text-lg text-muted-foreground prose dark:prose-invert max-w-none mx-auto" dangerouslySetInnerHTML={{__html: pageDict.description}} />
-        </header>
-        
+    <CalculatorPageLayout
+      lang={params.lang}
+      dictionary={dictionary}
+      pageDict={pageDict}
+      h1={pageDict.h1}
+      description={pageDict.description}
+      lastUpdated="September 2025"
+      calculator={
         <div id="calculator-widget">
           <LicJeevanLabhCalculator dictionary={pageDict.tool} />
         </div>
-
+      }
+      faqs={faqs}
+      faqTitle="Frequently Asked Questions (FAQs)"
+      pageUrl={pageUrl}
+    >
         <ArticleContent />
         
-        <div className="mt-12 print-hide">
-            <AuthorCard dictionary={dictionary.author_card} />
-        </div>
-        <div className="print-hide">
-            <FooterCta dictionary={dictionary.footer_cta} lang={params.lang} />
-        </div>
-      </div>
-    </div>
+    </CalculatorPageLayout>
   );
 }

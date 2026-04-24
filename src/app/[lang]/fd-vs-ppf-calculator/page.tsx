@@ -9,8 +9,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Landmark, ArrowRightLeft, ShieldCheck, Banknote, HelpCircle, Star, AlertTriangle, CheckCircle } from "lucide-react";
 import Link from "next/link";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { AuthorCard } from "@/components/layout/AuthorCard";
-import { FooterCta } from "@/components/layout/FooterCta";
+import { CalculatorPageLayout } from "@/components/layout/CalculatorPageLayout";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -22,53 +21,6 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${lang}/fd-vs-ppf-calculator`;
   const ogImageUrl = `${siteUrl}/images/fd-vs-ppf-calculator.png`;
-
-  const faqItems = pageDict.faqs;
-  const faqSchema = {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity": faqItems.map((faq: { question: string, answer: string }) => ({
-      '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: faq.answer.replace(/<[^>]*>/g, ''), // Strip HTML tags for JSON-LD
-      },
-    })),
-  };
-
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": pageUrl
-    },
-    "headline": "FD vs PPF Calculator 2025 — Compare Returns, Tax & Maturity (Free Tool)",
-    "description": "Use our free FD vs PPF calculator to compare maturity amounts, tax impact and post-tax returns. Includes premium charts, examples, and downloadable CSV. Updated Sep 2025.",
-    "image": ogImageUrl,
-    "author": {
-      "@type": "Person",
-      "name": "Mahesh Chaube, CFP",
-      "url": "https://www.linkedin.com/in/mahi003/",
-      "sameAs": "https://www.linkedin.com/in/mahi003/"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "BharatSaver",
-      "logo": {
-        "@type": "ImageObject",
-        "url": `${siteUrl}/icon.svg`
-      }
-    },
-     "reviewedBy": {
-      "@type": "Organization",
-      "name": "BharatSaver Editorial Team"
-    },
-    "about": ["Fixed Deposit", "Public Provident Fund", "FD vs PPF Returns Calculator"],
-    "datePublished": "2024-07-24",
-    "dateModified": "2025-09-01"
-  };
 
   return {
     title: pageDict.meta_title,
@@ -94,9 +46,6 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
         return acc;
       }, {} as Record<string, string>),
     },
-    other: {
-      'application/ld+json': JSON.stringify([faqSchema, articleSchema]),
-    },
   };
 }
 
@@ -108,35 +57,21 @@ export default async function FdVsPpfCalculatorPage({ params }: { params: Promis
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const comparisonData = pageDict.comparison.table;
 
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${lang}` },
-      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${lang}/calculators` },
-      { '@type': 'ListItem', position: 3, name: 'FD vs PPF Calculator', item: `${siteUrl}/${lang}/fd-vs-ppf-calculator` },
-    ],
-  };
-  
   return (
-    <div className="py-12">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <div className="mx-auto max-w-5xl">
-         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{__html: pageDict.h1}}></h1>
-          <div className="bs-byline justify-center text-center">
-            <span className="bs-author">By <strong>Mahesh Chaube</strong></span>
-            <span className="bs-creds">, CFP</span>
-            <span className="bs-sep">|</span>
-            <span className="bs-updated">Last updated: <time dateTime="2025-09-01">September 2025</time></span>
-            <div className="bs-reviewed">Reviewed by <strong>Laveena Vijayi</strong> — BharatSaver Editorial Team</div>
-          </div>
-          <p className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{__html: pageDict.description}}></p>
-        </div>
-
-        <FdVsPpfCalculator dictionary={pageDict} />
-
-        <Card className="mt-12 shadow-lg">
+    <CalculatorPageLayout
+      lang={lang}
+      dictionary={dictionary}
+      pageDict={pageDict}
+      h1={pageDict.h1}
+      description={pageDict.description}
+      lastUpdated="September 2025"
+      calculator={<FdVsPpfCalculator dictionary={pageDict} />}
+      faqs={pageDict.faqs}
+      faqTitle={pageDict.faq_title}
+      pageUrl={`${siteUrl}/${lang}/fd-vs-ppf-calculator`}
+    >
+      <div className="mt-12 space-y-12">
+        <Card className="shadow-lg">
           <CardHeader>
             <CardTitle className="flex items-center gap-3">
                 <HelpCircle className="h-7 w-7 text-primary"/>
@@ -144,7 +79,7 @@ export default async function FdVsPpfCalculatorPage({ params }: { params: Promis
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.quick_answer.body.replace(/{lang}/g, lang) }}></p>
+            <div className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.quick_answer.body.replace(/{lang}/g, lang) }}></div>
           </CardContent>
         </Card>
 
@@ -155,11 +90,11 @@ export default async function FdVsPpfCalculatorPage({ params }: { params: Promis
           <CardContent className="space-y-6">
             <div className="bg-muted/50 p-4 rounded-lg">
               <h3 className="font-semibold text-lg mb-2">{pageDict.how_it_works.example1.title}</h3>
-              <div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.how_it_works.example1.body }} />
+              <div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.how_it_works.example1.body.replace(/{lang}/g, lang) }} />
             </div>
             <div className="bg-muted/50 p-4 rounded-lg">
               <h3 className="font-semibold text-lg mb-2">{pageDict.how_it_works.example2.title}</h3>
-               <div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.how_it_works.example2.body }} />
+               <div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.how_it_works.example2.body.replace(/{lang}/g, lang) }} />
             </div>
           </CardContent>
         </Card>
@@ -174,7 +109,7 @@ export default async function FdVsPpfCalculatorPage({ params }: { params: Promis
             <CardContent className="space-y-4">
                 <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
                     {pageDict.ppf_features.points.map((point: string, index: number) => (
-                      <li key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
+                      <li key={index} dangerouslySetInnerHTML={{ __html: point.replace(/{lang}/g, lang) }}></li>
                     ))}
                 </ul>
             </CardContent>
@@ -190,7 +125,7 @@ export default async function FdVsPpfCalculatorPage({ params }: { params: Promis
             <CardContent className="space-y-4">
                 <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
                     {pageDict.fd_features.points.map((point: string, index: number) => (
-                      <li key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
+                      <li key={index} dangerouslySetInnerHTML={{ __html: point.replace(/{lang}/g, lang) }}></li>
                     ))}
                 </ul>
             </CardContent>
@@ -213,7 +148,7 @@ export default async function FdVsPpfCalculatorPage({ params }: { params: Promis
                       {comparisonData.rows.map((row: string[], rowIndex: number) => (
                           <TableRow key={rowIndex}>
                               {row.map((cell: string, cellIndex: number) => (
-                                  <TableCell key={cellIndex} dangerouslySetInnerHTML={{ __html: cell }}></TableCell>
+                                  <TableCell key={cellIndex} dangerouslySetInnerHTML={{ __html: cell.replace(/{lang}/g, lang) }}></TableCell>
                               ))}
                           </TableRow>
                       ))}
@@ -230,7 +165,7 @@ export default async function FdVsPpfCalculatorPage({ params }: { params: Promis
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
-            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.tax_impact.body }}></p>
+            <div className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.tax_impact.body.replace(/{lang}/g, lang) }}></div>
           </CardContent>
         </Card>
         
@@ -244,25 +179,13 @@ export default async function FdVsPpfCalculatorPage({ params }: { params: Promis
             <CardContent>
                 <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
                     {pageDict.checklist.points.map((point: string, index: number) => (
-                        <li key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
+                        <li key={index} dangerouslySetInnerHTML={{ __html: point.replace(/{lang}/g, lang) }}></li>
                     ))}
                 </ul>
             </CardContent>
         </Card>
 
-        <div className="mt-12">
-            <h2 className="text-2xl font-bold text-center mb-6">{pageDict.faq_title}</h2>
-            <Accordion type="single" collapsible className="w-full">
-              {pageDict.faqs.map((faq: { question: string, answer: string }, index: number) => (
-                <AccordionItem value={`item-${index}`} key={index}>
-                  <AccordionTrigger>{faq.question}</AccordionTrigger>
-                  <AccordionContent>
-                    <p dangerouslySetInnerHTML={{ __html: faq.answer }}></p>
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-        </div>
+
 
         <Card className="mt-12 shadow-lg">
           <CardHeader>
@@ -272,7 +195,7 @@ export default async function FdVsPpfCalculatorPage({ params }: { params: Promis
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.related_calculators.body.replace(/{lang}/g, lang) }} />
+            <div className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.related_calculators.body.replace(/{lang}/g, lang) }}></div>
           </CardContent>
         </Card>
 
@@ -284,13 +207,11 @@ export default async function FdVsPpfCalculatorPage({ params }: { params: Promis
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.conclusion.body.replace(/{lang}/g, lang) }}></p>
+            <div className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.conclusion.body.replace(/{lang}/g, lang) }}></div>
           </CardContent>
         </Card>
-        <AuthorCard dictionary={dictionary.author_card} />
-        <FooterCta dictionary={dictionary.footer_cta} lang={lang} />
       </div>
-    </div>
+    </CalculatorPageLayout>
   );
 }
 

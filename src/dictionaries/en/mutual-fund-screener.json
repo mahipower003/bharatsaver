@@ -1,4 +1,3 @@
-
 {
   "meta_title": "Mutual Fund Scheme Selector 2025 — Compare, Check Overlap, Export CSV",
   "meta_description": "Use our mutual fund scheme selector (India) to filter by holdings, TER, AUM, compare funds and download CSV.",
@@ -194,7 +193,7 @@
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Honestly, less is often more. For most investors, a well-chosen portfolio of 4-6 funds is more than enough. This could be a mix like one large-cap, one mid-cap, one small-cap, and perhaps one international or ELSS fund. The goal is to have funds with different strategies, not just a large number of funds that all do the same thing."
-      }
+        }
       },
       {
         "q": "Does a lower expense ratio always mean a better fund?",
@@ -252,38 +251,48 @@
       }
     },
     "reviewedBy": {
-        "@type": "Person",
-        "name": "Laveena Vijayi",
-        "jobTitle": "Head of Mutual Fund Research, BharatSaver"
+      "@type": "Person",
+      "name": "Laveena Vijayi",
+      "jobTitle": "Head of Mutual Fund Research, BharatSaver"
     }
   },
   "how_to_schema": {
-    "@context":"https://schema.org",
-    "@type":"HowTo",
-    "name":"How to Choose a Mutual Fund in India",
-    "description":"A 5-step guide to selecting the right mutual fund scheme for your financial goals using our interactive screener.",
-    "step":[
-      {"@type":"HowToStep","name":"Step 1: Define Goal & Risk","text":"Choose your financial goal (e.g., retirement, tax saving) and your personal risk tolerance (low, medium, or high)."},
-      {"@type":"HowToStep","name":"Step 2: Filter the Universe","text":"Use the screener to filter funds by category (e.g., Large Cap, ELSS), AUM, and expense ratio to create a shortlist."},
-      {"@type":"HowToStep","name":"Step 3: Compare Top 3 Funds","text":"Select your top 2-3 funds from the list to prepare them for a side-by-side comparison."},
-      {"@type":"HowToStep","name":"Step 4: Check Portfolio Overlap","text":"Run the comparison to check the weighted portfolio overlap. If it's over 30%, consider replacing one fund to ensure true diversification."},
-      {"@type":"HowToStep","name":"Step 5: Review Final Details","text":"Check the fund manager's tenure, exit loads, and the fund house's reputation before investing."}
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Choose a Mutual Fund in India",
+    "description": "A 5-step guide to selecting the right mutual fund scheme for your financial goals using our interactive screener.",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Step 1: Define Goal & Risk",
+        "text": "Choose your financial goal (e.g., retirement, tax saving) and your personal risk tolerance (low, medium, or high)."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Step 2: Filter the Universe",
+        "text": "Use the screener to filter funds by category (e.g., Large Cap, ELSS), AUM, and expense ratio to create a shortlist."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Step 3: Compare Top 3 Funds",
+        "text": "Select your top 2-3 funds from the list to prepare them for a side-by-side comparison."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Step 4: Check Portfolio Overlap",
+        "text": "Run the comparison to check the weighted portfolio overlap. If it's over 30%, consider replacing one fund to ensure true diversification."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Step 5: Review Final Details",
+        "text": "Check the fund manager's tenure, exit loads, and the fund house's reputation before investing."
+      }
     ]
   },
   "tools_downloads": {
     "h2": "Tools & Downloads to Supercharge Your Analysis",
     "intro": "Take your analysis offline or explore related calculators to build a complete financial picture.",
     "links": [
-      {
-        "text": "Download Comparison Template (CSV)",
-        "href": "/downloads/fund-comparison-template.csv",
-        "desc": "An empty CSV template to compare funds side-by-side."
-      },
-      {
-        "text": "SIP Calculator",
-        "href": "/{lang}/sip-calculator",
-        "desc": "Calculate the future value of your SIP investments."
-      },
       {
         "text": "Mutual Fund Overlap Checker",
         "href": "/{lang}/mutual-fund-overlap-calculator",
@@ -303,11 +312,31 @@
     "title": "Explore Related Investment & Financial Planning Tools",
     "description": "Complement your mutual fund selection strategy with these essential calculators:",
     "tools": [
-      { "name": "Mutual Fund Overlap Calculator", "description": "Check overlap between any two funds to ensure portfolio diversification", "link": "/{lang}/mutual-fund-overlap-calculator" },
-      { "name": "Tax Regime Calculator", "description": "Optimize your tax liability on mutual fund gains and dividends", "link": "/{lang}/tax-regime-calculator" },
-      { "name": "Retirement Corpus Calculator", "description": "Plan your retirement corpus through systematic mutual fund SIPs", "link": "/{lang}/retirement-corpus-calculator" },
-      { "name": "PPF Calculator", "description": "Compare PPF with mutual funds for tax-free returns and safety", "link": "/{lang}/ppf-calculator" },
-      { "name": "NPS Calculator", "description": "Diversify retirement savings with NPS alongside mutual funds", "link": "/{lang}/nps-calculator" }
+      {
+        "name": "Mutual Fund Overlap Calculator",
+        "description": "Check overlap between any two funds to ensure portfolio diversification",
+        "link": "/{lang}/mutual-fund-overlap-calculator"
+      },
+      {
+        "name": "Tax Regime Calculator",
+        "description": "Optimize your tax liability on mutual fund gains and dividends",
+        "link": "/{lang}/tax-regime-calculator"
+      },
+      {
+        "name": "Retirement Corpus Calculator",
+        "description": "Plan your retirement corpus through systematic mutual fund SIPs",
+        "link": "/{lang}/retirement-corpus-calculator"
+      },
+      {
+        "name": "PPF Calculator",
+        "description": "Compare PPF with mutual funds for tax-free returns and safety",
+        "link": "/{lang}/ppf-calculator"
+      },
+      {
+        "name": "NPS Calculator",
+        "description": "Diversify retirement savings with NPS alongside mutual funds",
+        "link": "/{lang}/nps-calculator"
+      }
     ]
   },
   "footer_cta": {

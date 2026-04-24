@@ -7,10 +7,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { FileText, Calculator, HelpCircle, TrendingUp, Wallet, Landmark, Star, AlertTriangle, Download, BadgeCheck, LineChart, Banknote, TableIcon } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import Link from "next/link";
-import { AuthorCard } from "@/components/layout/AuthorCard";
 import { calculateRetirementCorpus, calculateSip } from "@/lib/calculations";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { FooterCta } from "@/components/layout/FooterCta";
+import { CalculatorPageLayout } from "@/components/layout/CalculatorPageLayout";
 
 
 export async function generateStaticParams() {
@@ -123,7 +122,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
         type: 'website',
     },
     other: {
-      'application/ld+json': JSON.stringify([softwareSchema, faqSchema, articleSchema]),
+      'application/ld+json': JSON.stringify([softwareSchema, articleSchema]),
     },
   };
 }
@@ -133,15 +132,8 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
   const dictionary = await getDictionary(lang);
   const retirementDict = { ...(await import(`@/dictionaries/${lang}/retirement-corpus-calculator.json`)).default };
   
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: `https://bharatsaver.com/${lang}` },
-      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `https://bharatsaver.com/${lang}/calculators` },
-      { '@type': 'ListItem', position: 3, name: 'Retirement Corpus Calculator', item: `https://bharatsaver.com/${lang}/retirement-corpus-calculator` },
-    ],
-  };
+  const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
+  const pageUrl = `${siteUrl}/${lang}/retirement-corpus-calculator`;
 
   const defaultValues = {
       currentAge: 30,
@@ -186,28 +178,25 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
   });
 
   return (
-    <div className="py-12">
-       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <div className="mx-auto max-w-5xl">
-        <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
-            {retirementDict?.h1}
-            </h1>
-            <p className="mt-4 text-lg text-muted-foreground">{retirementDict?.intro}</p>
-        </div>
-        
-        <div className="bs-byline justify-center text-center">
-            <span className="bs-author">By <strong>Mahesh Chaube, CFP</strong></span>
-            <span className="bs-sep">|</span>
-            <span className="bs-updated">Last updated: <time dateTime="2025-09-01">September 2025</time></span>
-            <div className="bs-reviewed">Reviewed by <strong>Laveena Vijayi</strong> — BharatSaver Editorial Team</div>
-        </div>
-
-        {retirementDict?.tool_section && <h2 className="text-2xl font-bold tracking-tight sm:text-3xl font-headline mt-12 mb-6 text-center">
-          {retirementDict.tool_section.h2}
-        </h2>}
-        <RetirementCorpusCalculator dictionary={retirementDict} initialResult={initialResult} />
-
+    <CalculatorPageLayout
+      lang={lang}
+      dictionary={dictionary}
+      pageDict={retirementDict}
+      h1={retirementDict.h1}
+      description={retirementDict.intro}
+      lastUpdated="September 2025"
+      calculator={
+        <>
+            {retirementDict?.tool_section && <h2 className="text-2xl font-bold tracking-tight sm:text-3xl font-headline mt-12 mb-6 text-center">
+            {retirementDict.tool_section.h2}
+            </h2>}
+            <RetirementCorpusCalculator dictionary={retirementDict} initialResult={initialResult} />
+        </>
+      }
+      faqs={retirementDict.faqs}
+      faqTitle={retirementDict.faq_title}
+      pageUrl={pageUrl}
+    >
         {retirementDict?.how_it_works && <Card className="mt-8 shadow-lg">
            <CardHeader>
              <CardTitle className="flex items-center gap-3">
@@ -215,7 +204,7 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
                 <h2 className="text-2xl font-bold">{retirementDict.how_it_works.h2}</h2>
              </CardTitle>
           </CardHeader>
-          <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: retirementDict.how_it_works.body }} />
+          <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: retirementDict.how_it_works.body.replace(/{lang}/g, lang) }} />
         </Card>}
         
         {retirementDict?.inputs_explained && <Card className="mt-8 shadow-lg">
@@ -225,7 +214,7 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
                 <h2 className="text-2xl font-bold">{retirementDict.inputs_explained.h2}</h2>
              </CardTitle>
           </CardHeader>
-          <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: retirementDict.inputs_explained.body }} />
+          <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: retirementDict.inputs_explained.body.replace(/{lang}/g, lang) }} />
         </Card>}
 
         {retirementDict?.worked_examples && <Card className="mt-8 shadow-lg">
@@ -238,15 +227,15 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
           <CardContent className="space-y-6">
             {retirementDict.worked_examples.scenario1 && <div className="bg-muted/50 p-4 rounded-lg">
               <h3 className="font-semibold text-lg">{retirementDict.worked_examples.scenario1.title}</h3>
-              <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: retirementDict.worked_examples.scenario1.body }} />
+              <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: retirementDict.worked_examples.scenario1.body.replace(/{lang}/g, lang) }} />
             </div>}
             {retirementDict.worked_examples.scenario2 && <div className="bg-muted/50 p-4 rounded-lg">
               <h3 className="font-semibold text-lg">{retirementDict.worked_examples.scenario2.title}</h3>
-              <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: retirementDict.worked_examples.scenario2.body }} />
+              <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: retirementDict.worked_examples.scenario2.body.replace(/{lang}/g, lang) }} />
             </div>}
             {retirementDict.worked_examples.scenario3 && <div className="bg-muted/50 p-4 rounded-lg">
               <h3 className="font-semibold text-lg">{retirementDict.worked_examples.scenario3.title}</h3>
-              <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: retirementDict.worked_examples.scenario3.body }} />
+              <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: retirementDict.worked_examples.scenario3.body.replace(/{lang}/g, lang) }} />
             </div>}
           </CardContent>
         </Card>}
@@ -259,7 +248,7 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
              </CardTitle>
           </CardHeader>
           <CardContent>
-             <p className="mb-4 text-muted-foreground">{retirementDict.sensitivity_analysis.body}</p>
+             <div></div>
               <Table>
                 <TableHeader>
                   <TableRow>
@@ -289,10 +278,10 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
              </CardTitle>
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none">
-            <div dangerouslySetInnerHTML={{ __html: retirementDict.accumulation_strategy.body }} />
+            <div dangerouslySetInnerHTML={{ __html: retirementDict.accumulation_strategy.body.replace(/{lang}/g, lang) }} />
             {retirementDict.sip_plans && <>
                 <h3 className="font-semibold text-lg mt-6 mb-2">{retirementDict.sip_plans.title}</h3>
-                <p className="text-muted-foreground">{retirementDict.sip_plans.body}</p>
+                <div></div>
                 <Table className="mt-4">
                 <TableHeader>
                     <TableRow>
@@ -325,7 +314,7 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
                 <h2 className="text-2xl font-bold">{retirementDict.deaccumulation_strategy.h2}</h2>
              </CardTitle>
           </CardHeader>
-          <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: retirementDict.deaccumulation_strategy.body }} />
+          <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: retirementDict.deaccumulation_strategy.body.replace(/{lang}/g, lang) }} />
         </Card>}
         
         {retirementDict?.tax_rules && <Card className="mt-8 shadow-lg">
@@ -335,28 +324,10 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
                 <h2 className="text-2xl font-bold">{retirementDict.tax_rules.h2}</h2>
              </CardTitle>
           </CardHeader>
-          <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: retirementDict.tax_rules.body }} />
+          <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: retirementDict.tax_rules.body.replace(/{lang}/g, lang) }} />
         </Card>}
 
-        {retirementDict?.faqs && <Card className="mt-12 shadow-lg">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-3">
-                <LineChart className="h-7 w-7 text-primary"/>
-                <h2 className="text-2xl font-bold">{retirementDict.faq_title}</h2>
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-              <div className="prose dark:prose-invert max-w-none">
-                {retirementDict.faqs.map((faq: { question: string; answer: string; }, index: number) => (
-                  <div key={index} className="mb-4">
-                    <h3 className="font-semibold text-lg">{faq.question}</h3>
-                    <p className="text-muted-foreground">{faq.answer}</p>
-                  </div>
-                ))}
-              </div>
-          </CardContent>
-        </Card>}
-        
+
         {retirementDict?.next_steps && <Card className="mt-12 shadow-lg">
           <CardHeader>
             <CardTitle className="flex items-center gap-3">
@@ -428,14 +399,10 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
         {retirementDict?.disclaimer && <Alert variant="destructive" className="mt-8">
           <AlertTriangle className="h-4 w-4" />
           <AlertTitle>{retirementDict.disclaimer.title}</AlertTitle>
-          <AlertDescription>
-            {retirementDict.disclaimer.body}
-          </AlertDescription>
+          <AlertDescription dangerouslySetInnerHTML={{__html: retirementDict.disclaimer.body.replace(/{lang}/g, lang)}} />
         </Alert>}
 
-        <AuthorCard dictionary={dictionary.author_card} />
-
-        {retirementDict?.methodology && <Card className="mt-12 text-sm text-muted-foreground">
+        {retirementDict?.methodology && <Card className="mt-12 text-sm text-muted-foreground print-hide">
             <CardHeader>
                 <CardTitle className="text-lg flex items-center gap-2">
                     <BadgeCheck className="h-5 w-5"/>
@@ -443,12 +410,10 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
                 </CardTitle>
             </CardHeader>
             <CardContent>
-                <p>{retirementDict.methodology.body}</p>
+                <div></div>
             </CardContent>
         </Card>}
-        <FooterCta dictionary={dictionary.footer_cta} lang={lang} />
-      </div>
-    </div>
+    </CalculatorPageLayout>
   );
 }
 

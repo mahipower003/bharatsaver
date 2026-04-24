@@ -16,7 +16,6 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
     const ogImageUrl = `${siteUrl}/images/lic-jeevan-umang-calculator.png`;
 
     const schemas = [];
-    if (pageDict.faq_schema) schemas.push(pageDict.faq_schema);
     if (pageDict.how_to_schema) schemas.push(pageDict.how_to_schema);
     if (pageDict.financial_product_schema) schemas.push({
         ...pageDict.financial_product_schema,

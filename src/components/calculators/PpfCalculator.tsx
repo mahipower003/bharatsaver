@@ -6,8 +6,8 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
-import { Loader2, Download, Landmark, IndianRupee, Twitter, Printer } from 'lucide-react';
-import { Area, AreaChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Loader2, Download, Landmark, IndianRupee, Twitter, Printer, Info } from 'lucide-react';
+import { Area, AreaChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip as RechartsTooltip, XAxis, YAxis } from 'recharts';
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -18,6 +18,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { type ChartConfig } from '@/components/ui/chart';
 import type { Dictionary } from '@/lib/types';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 const formSchema = z.object({
   annualInvestment: z.coerce.number().min(500, 'Minimum annual investment is ₹500').max(150000, 'Maximum annual investment is ₹1,50,000'),
@@ -238,7 +239,7 @@ export function PpfCalculator({ dictionary }: PpfCalculatorProps) {
   } satisfies ChartConfig;
 
   return (
-    <>
+    <TooltipProvider>
       <Card className="shadow-lg">
         <CardHeader>
           <div className="flex justify-between items-start">
@@ -263,7 +264,19 @@ export function PpfCalculator({ dictionary }: PpfCalculatorProps) {
                     name="annualInvestment"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>{dictionary.annual_investment_label}</FormLabel>
+                        <div className="flex items-center gap-2">
+                          <FormLabel>{dictionary.annual_investment_label}</FormLabel>
+                          <Tooltip>
+                            <TooltipTrigger asChild>
+                              <button type="button" className="inline-flex" tabIndex={-1}>
+                                <Info className="h-4 w-4 text-muted-foreground hover:text-primary transition-colors" />
+                              </button>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p className="max-w-xs text-sm">Maximum ₹1.5 Lakh/year qualifies for Section 80C tax deduction.</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        </div>
                         <FormControl>
                           <Input type="number" placeholder={dictionary.annual_investment_placeholder} {...field} />
                         </FormControl>
@@ -276,7 +289,19 @@ export function PpfCalculator({ dictionary }: PpfCalculatorProps) {
                     name="interestRate"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>{dictionary.interest_rate_label}</FormLabel>
+                        <div className="flex items-center gap-2">
+                          <FormLabel>{dictionary.interest_rate_label}</FormLabel>
+                          <Tooltip>
+                            <TooltipTrigger asChild>
+                              <button type="button" className="inline-flex" tabIndex={-1}>
+                                <Info className="h-4 w-4 text-muted-foreground hover:text-primary transition-colors" />
+                              </button>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p className="max-w-xs text-sm">PPF interest rate is fixed by the government and revised quarterly. Currently 7.1%.</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        </div>
                         <FormControl>
                            <Input type="number" step="0.1" placeholder={dictionary.interest_rate_placeholder} {...field} />
                         </FormControl>
@@ -387,7 +412,7 @@ export function PpfCalculator({ dictionary }: PpfCalculatorProps) {
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="year" />
                     <YAxis tickFormatter={(value) => (value / 100000).toLocaleString('en-IN') + 'L'}/>
-                    <Tooltip 
+                    <RechartsTooltip 
                       contentStyle={{
                         borderRadius: "var(--radius)",
                         border: "1px solid hsl(var(--border))",
@@ -431,6 +456,6 @@ export function PpfCalculator({ dictionary }: PpfCalculatorProps) {
           </CardContent>
         </Card>
       )}
-    </>
+    </TooltipProvider>
   );
 }

@@ -14,18 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
     const pageUrl = `${siteUrl}/${lang}/lic-jeevan-labh-calculator`;
     const pageDict = (await import(`@/dictionaries/${lang}/lic-jeevan-labh-calculator.json`)).default;
 
-    const faqSchema = {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {"@type": "Question", "name": "What is the premium of LIC Jeevan Labh for 10 lakh?", "acceptedAnswer": {"@type": "Answer", "text": "For a 30-year-old, 25-year term, 16-year PPT, premium is ~₹42,200 yearly (before tax)."}},
-        {"@type": "Question", "name": "How is LIC Jeevan Labh maturity calculated?", "acceptedAnswer": {"@type": "Answer", "text": "Maturity = Sum Assured + Simple Reversionary Bonuses + Final Additional Bonus (FAB)."}},
-        {"@type": "Question", "name": "What are LIC Jeevan Labh bonus rates 2025?", "acceptedAnswer": {"@type": "Answer", "text": "LIC declares yearly bonus rates. Historically, ₹40–₹48 per ₹1,000 SA depending on term."}},
-        {"@type": "Question", "name": "Which is better: LIC Jeevan Labh or Jeevan Umang?", "acceptedAnswer": {"@type": "Answer", "text": "Jeevan Labh suits fixed-goal lump sum needs. Jeevan Umang is better for lifelong income."}},
-        {"@type": "Question", "name": "Can I take a loan on Jeevan Labh?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, loans are available after 2 years, up to 80–90% of surrender value."}},
-        {"@type": "Question", "name": "How much is LIC Jeevan Labh 1 crore premium?", "acceptedAnswer": {"@type": "Answer", "text": "For a 35-year-old, 21-year term, ~₹5.1L yearly premium for 15 years. Maturity >₹2 crore (illustrative)."}}
-      ]
-    };
+
     
     const howToSchema = {
         "@context": "https://schema.org",
@@ -67,7 +56,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
             }, {} as Record<string, string>),
         },
         other: {
-            'application/ld+json': JSON.stringify([faqSchema, howToSchema, financialProductSchema]),
+            'application/ld+json': JSON.stringify([howToSchema, financialProductSchema]),
         },
     };
 }
@@ -80,20 +69,10 @@ export default async function LicJeevanLabhCalculatorPage({ params }: { params: 
     const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
     const pageUrl = `${siteUrl}/${lang}/lic-jeevan-labh-calculator`;
 
-    const breadcrumbSchema = {
-        '@context': 'https://schema.org',
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${lang}` },
-          { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${lang}/calculators` },
-          { '@type': 'ListItem', position: 3, name: 'LIC Premium Calculator', item: `${siteUrl}/${lang}/lic-premium-calculator` },
-          { '@type': 'ListItem', position: 4, name: 'LIC Jeevan Labh Calculator', item: pageUrl },
-        ],
-    };
+
     
     return (
         <>
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <LicJeevanLabhCalculatorPageClient 
                 params={{ lang }}
                 dictionary={dictionary}

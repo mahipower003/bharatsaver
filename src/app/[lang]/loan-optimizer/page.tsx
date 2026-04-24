@@ -3,14 +3,12 @@ import { LoanOptimizer } from "@/components/calculators/LoanOptimizer";
 import { getDictionary } from "@/lib/dictionaries";
 import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { FileText, Download, TrendingUp, Star, AlertTriangle, CheckCircle, HelpCircle, GitCompareArrows, LineChart, Banknote, Table as TableIcon } from "lucide-react";
 import Link from "next/link";
-import { AuthorCard } from "@/components/layout/AuthorCard";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { FooterCta } from "@/components/layout/FooterCta";
+import { CalculatorPageLayout } from "@/components/layout/CalculatorPageLayout";
 
 
 export async function generateStaticParams() {
@@ -23,19 +21,6 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${lang}/loan-optimizer`;
   
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": pageDict.faq.faqs.map((faq: { q: string, a: string }) => ({
-        "@type": "Question",
-        "name": faq.q,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": faq.a
-        }
-    }))
-  };
-
   const softwareSchema = {
     "@context":"https://schema.org",
     "@type":"SoftwareApplication",
@@ -94,7 +79,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
       }, {} as Record<string, string>),
     },
     other: {
-      'application/ld+json': JSON.stringify([faqSchema, softwareSchema, articleSchema]),
+      'application/ld+json': JSON.stringify([softwareSchema, articleSchema]),
     },
   };
 }
@@ -105,51 +90,37 @@ export default async function LoanOptimizerPage({ params }: { params: Promise<{ 
   const pageDict = (await import(`@/dictionaries/${lang}/loan-optimization-calculator.json`)).default;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${lang}` },
-      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${lang}/calculators` },
-      { '@type': 'ListItem', position: 3, name: 'Loan Optimization Calculator', item: `${siteUrl}/${lang}/loan-optimizer` },
-    ],
-  };
-
   const comparisonData = pageDict.comparison_table;
-
+  const pageUrl = `${siteUrl}/${lang}/loan-optimizer`;
+  
+  const mappedFaqs = pageDict.faq?.faqs ? pageDict.faq.faqs.map((f: any) => ({ question: f.q, answer: f.a })) : [];
 
   return (
-    <div className="py-12">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <div className="mx-auto max-w-5xl">
-        <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
-            {pageDict.h1}
-          </h1>
-          <div className="bs-byline justify-center text-center mt-4">
-            <span className="bs-author">By <strong>Mahesh Chaube, CFP</strong></span>
-            <span className="bs-sep">|</span>
-            <span className="bs-updated">Last updated: <time dateTime="2025-09-01">September 2025</time></span>
-            <div className="bs-reviewed">Reviewed by <strong>Laveena Vijayi</strong> — BharatSaver Editorial Team</div>
-          </div>
-          <p className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.summary }} />
-        </div>
-        
-        <LoanOptimizer dictionary={pageDict} />
-
-        <div className="space-y-8 mt-12">
+    <CalculatorPageLayout
+      lang={lang}
+      dictionary={dictionary}
+      pageDict={pageDict}
+      h1={pageDict.h1}
+      description={pageDict.summary}
+      lastUpdated="September 2025"
+      calculator={<LoanOptimizer dictionary={pageDict} />}
+      faqs={mappedFaqs}
+      faqTitle={pageDict.faq?.h2 || "Frequently Asked Questions"}
+      pageUrl={pageUrl}
+    >
+        <div className="space-y-8 mt-12 print-hide">
             <Card>
                 <CardHeader>
                     <CardTitle className="flex items-center gap-3"><HelpCircle className="h-6 w-6 text-primary" />{pageDict.why.h2}</CardTitle>
                 </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.why.body }} />
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.why.body.replace(/{lang}/g, lang) }} />
             </Card>
 
             <Card>
                 <CardHeader>
                     <CardTitle className="flex items-center gap-3"><FileText className="h-6 w-6 text-primary" />{pageDict.how_it_works.h2}</CardTitle>
                 </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.how_it_works.body }} />
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.how_it_works.body.replace(/{lang}/g, lang) }} />
             </Card>
 
             {pageDict.worked_examples && (
@@ -160,15 +131,15 @@ export default async function LoanOptimizerPage({ params }: { params: Promise<{ 
                 <CardContent className="space-y-6">
                   <div className="bg-muted/50 p-4 rounded-lg">
                     <h3 className="font-semibold text-lg">{pageDict.worked_examples.scenario1.title}</h3>
-                    <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: pageDict.worked_examples.scenario1.body }} />
+                    <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: pageDict.worked_examples.scenario1.body.replace(/{lang}/g, lang) }} />
                   </div>
                   <div className="bg-muted/50 p-4 rounded-lg">
                     <h3 className="font-semibold text-lg">{pageDict.worked_examples.scenario2.title}</h3>
-                    <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: pageDict.worked_examples.scenario2.body }} />
+                    <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: pageDict.worked_examples.scenario2.body.replace(/{lang}/g, lang) }} />
                   </div>
                   <div className="bg-muted/50 p-4 rounded-lg">
                     <h3 className="font-semibold text-lg">{pageDict.worked_examples.scenario3.title}</h3>
-                    <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: pageDict.worked_examples.scenario3.body }} />
+                    <div className="prose dark:prose-invert max-w-none mt-2 text-sm" dangerouslySetInnerHTML={{ __html: pageDict.worked_examples.scenario3.body.replace(/{lang}/g, lang) }} />
                   </div>
                 </CardContent>
               </Card>
@@ -178,14 +149,14 @@ export default async function LoanOptimizerPage({ params }: { params: Promise<{ 
                 <CardHeader>
                     <CardTitle className="flex items-center gap-3"><TrendingUp className="h-6 w-6 text-primary" />{pageDict.optimization_masterclass.h2}</CardTitle>
                 </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.optimization_masterclass.body }} />
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.optimization_masterclass.body.replace(/{lang}/g, lang) }} />
             </Card>
             
             <Card>
                 <CardHeader>
                     <CardTitle className="flex items-center gap-3"><GitCompareArrows className="h-6 w-6 text-primary" />{pageDict.prepay_vs_invest.h2}</CardTitle>
                 </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.prepay_vs_invest.body }} />
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.prepay_vs_invest.body.replace(/{lang}/g, lang) }} />
             </Card>
             
             {comparisonData && (
@@ -206,7 +177,7 @@ export default async function LoanOptimizerPage({ params }: { params: Promise<{ 
                         {comparisonData.rows.map((row: string[], rowIndex: number) => (
                             <TableRow key={rowIndex}>
                                 {row.map((cell: string, cellIndex: number) => (
-                                    <TableCell key={cellIndex} dangerouslySetInnerHTML={{ __html: cell }}></TableCell>
+                                    <TableCell key={cellIndex} dangerouslySetInnerHTML={{ __html: cell.replace(/{lang}/g, lang) }}></TableCell>
                                 ))}
                             </TableRow>
                         ))}
@@ -220,32 +191,14 @@ export default async function LoanOptimizerPage({ params }: { params: Promise<{ 
                 <CardHeader>
                     <CardTitle className="flex items-center gap-3"><Banknote className="h-6 w-6 text-primary" />{pageDict.refinance.h2}</CardTitle>
                 </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.refinance.body }} />
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.refinance.body.replace(/{lang}/g, lang) }} />
             </Card>
 
             <Card>
                 <CardHeader>
                     <CardTitle className="flex items-center gap-3"><AlertTriangle className="h-6 w-6 text-primary" />{pageDict.tax_notes.h2}</CardTitle>
                 </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.tax_notes.body }} />
-            </Card>
-            
-            <Card>
-                <CardHeader>
-                    <CardTitle className="flex items-center gap-3"><CheckCircle className="h-6 w-6 text-primary" />{pageDict.faq.h2}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                    <Accordion type="single" collapsible className="w-full">
-                    {pageDict.faq.faqs.map((faq: { q: string, a: string }, index: number) => (
-                        <AccordionItem value={`item-${index}`} key={index}>
-                        <AccordionTrigger>{faq.q}</AccordionTrigger>
-                        <AccordionContent>
-                            <p dangerouslySetInnerHTML={{ __html: faq.a }}></p>
-                        </AccordionContent>
-                        </AccordionItem>
-                    ))}
-                    </Accordion>
-                </CardContent>
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.tax_notes.body.replace(/{lang}/g, lang) }} />
             </Card>
 
             {pageDict.related_tools && (
@@ -268,7 +221,6 @@ export default async function LoanOptimizerPage({ params }: { params: Promise<{ 
               </Card>
             )}
         </div>
-        
         <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
           <CardHeader>
             <CardTitle className="flex items-center gap-3">
@@ -277,14 +229,10 @@ export default async function LoanOptimizerPage({ params }: { params: Promise<{ 
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground">{pageDict.conclusion.body}</p>
+              <div className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.conclusion.body.replace(/{lang}/g, lang) }}></div>
           </CardContent>
         </Card>
-
-        <AuthorCard dictionary={dictionary.author_card} />
-        <FooterCta dictionary={dictionary.footer_cta} lang={lang} />
-      </div>
-    </div>
+    </CalculatorPageLayout>
   );
 }
 

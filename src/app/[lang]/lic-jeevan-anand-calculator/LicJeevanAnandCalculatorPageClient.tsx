@@ -1,10 +1,10 @@
 'use client';
 
-import { LicNewJeevanAnandCalculator } from "@/components/calculators/LicNewJeevanAnandCalculator";
-import { AuthorCard } from "@/components/layout/AuthorCard";
 import type { Dictionary } from "@/lib/types";
 import type { Locale } from "@/lib/i18n-config";
-import { FooterCta } from "@/components/layout/FooterCta";
+
+import { LicNewJeevanAnandCalculator } from "@/components/calculators/LicNewJeevanAnandCalculator";
+import { CalculatorPageLayout } from "@/components/layout/CalculatorPageLayout";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
@@ -44,6 +44,7 @@ export default function LicJeevanAnandCalculatorPageClient({
   const ArticleContent = () => (
     <div className="mt-12 space-y-8 print-hide">
       {pageDict.article.sections.map((section: any, index: number) => {
+        if (section.id === 'faq') return null;
         const Icon = section.icon ? getIcon(section.icon) : null;
         return (
           <Card key={index} className="shadow-lg" id={section.id}>
@@ -82,7 +83,7 @@ export default function LicJeevanAnandCalculatorPageClient({
                             ))}
                             </TableBody>
                         </Table>
-                        {item.footer && <p className="text-xs text-muted-foreground mt-2 italic" dangerouslySetInnerHTML={{ __html: item.footer.replace(/{lang}/g, params.lang) }} />}
+                        {item.footer && <div className="text-xs text-muted-foreground mt-2 italic" dangerouslySetInnerHTML={{ __html: item.footer.replace(/{lang}/g, params.lang) }}></div>}
                         </div>
                     );
                   case 'steps':
@@ -93,7 +94,7 @@ export default function LicJeevanAnandCalculatorPageClient({
                                     <div className="flex-shrink-0 h-8 w-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">{sIdx + 1}</div>
                                     <div>
                                         <h3 className="font-semibold text-lg">{step.title}</h3>
-                                        <p className="text-muted-foreground">{step.description}</p>
+                                        <div className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: step.description.replace(/{lang}/g, params.lang) }}></div>
                                     </div>
                                 </li>
                             ))}
@@ -110,17 +111,7 @@ export default function LicJeevanAnandCalculatorPageClient({
                             ))}
                         </div>
                     );
-                  case 'faq':
-                    return (
-                        <Accordion key={idx} type="single" collapsible className="w-full">
-                            {item.items.map((faq: {q: string, a: string}, qIdx: number) => (
-                                <AccordionItem key={qIdx} value={`item-${qIdx}`}>
-                                    <AccordionTrigger>{faq.q}</AccordionTrigger>
-                                    <AccordionContent><p dangerouslySetInnerHTML={{__html: faq.a.replace(/{lang}/g, params.lang)}} /></AccordionContent>
-                                </AccordionItem>
-                            ))}
-                        </Accordion>
-                    );
+
                   case 'alert':
                     return <Alert key={idx} variant={item.variant || 'default'}><AlertTitle>{item.title}</AlertTitle><AlertDescription dangerouslySetInnerHTML={{ __html: item.text.replace(/{lang}/g, params.lang) }} /></Alert>;
                   default:
@@ -134,18 +125,29 @@ export default function LicJeevanAnandCalculatorPageClient({
     </div>
   );
 
+  const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
+  const pageUrl = `${siteUrl}/${params.lang}/lic-jeevan-anand-calculator`;
+  
+  const faqSection = pageDict.article.sections.find((s: any) => s.id === 'faq');
+  const faqs = faqSection ? faqSection.content.find((c: any) => c.type === 'faq')?.items.map((f: any) => ({ question: f.q, answer: f.a })) : [];
+
   return (
-    <div className="py-12">
-      <div className="mx-auto max-w-5xl">
-        <header className="text-center mb-8 print-hide">
-            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{__html: pageDict.h1}} />
-            {pageDict.top_cta && <div className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.top_cta.replace(/{lang}/g, params.lang) }} />}
-        </header>
-        
+    <CalculatorPageLayout
+      lang={params.lang}
+      dictionary={dictionary}
+      pageDict={pageDict}
+      h1={pageDict.h1}
+      description={pageDict.top_cta}
+      lastUpdated="September 2025"
+      calculator={
         <div id="calculator-widget">
           <LicNewJeevanAnandCalculator dictionary={pageDict.tool} />
         </div>
-
+      }
+      faqs={faqs}
+      faqTitle="Frequently Asked Questions (FAQs)"
+      pageUrl={pageUrl}
+    >
         <ArticleContent />
 
         {pageDict.related_calculators && (
@@ -180,18 +182,11 @@ export default function LicJeevanAnandCalculatorPageClient({
                     </CardTitle>
                 </CardHeader>
                 <CardContent>
-                    <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.article.conclusion.body.replace(/{lang}/g, params.lang) }}></p>
+                    <div className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.article.conclusion.body.replace(/{lang}/g, params.lang) }}></div>
                 </CardContent>
             </Card>
         )}
         
-        <div className="mt-12 print-hide">
-            <AuthorCard dictionary={dictionary.author_card} />
-        </div>
-        <div className="print-hide">
-            <FooterCta dictionary={dictionary.footer_cta} lang={params.lang} />
-        </div>
-      </div>
-    </div>
+    </CalculatorPageLayout>
   );
 }

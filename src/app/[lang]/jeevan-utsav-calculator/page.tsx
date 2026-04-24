@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
     const pageUrl = `${siteUrl}/${lang}/jeevan-utsav-calculator`;
     const ogImageUrl = `${siteUrl}/images/lic-jeevan-utsav-calculator.png`;
 
-    const faqSchema = pageDict.faq_schema;
+
     const howToSchema = pageDict.how_to_schema;
     const articleSchema = {
         ...pageDict.article_schema,
@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
           type: 'website',
         },
         other: {
-            'application/ld+json': JSON.stringify([faqSchema, howToSchema, articleSchema]),
+            'application/ld+json': JSON.stringify([howToSchema, articleSchema]),
         },
     };
 }

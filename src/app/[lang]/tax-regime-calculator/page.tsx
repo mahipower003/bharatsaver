@@ -3,14 +3,12 @@ import { TaxRegimeCalculator } from "@/components/calculators/TaxRegimeCalculato
 import { getDictionary } from "@/lib/dictionaries";
 import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { FileText, Download, TrendingUp, Star, AlertTriangle, CheckCircle, HelpCircle } from "lucide-react";
 import Link from "next/link";
-import { AuthorCard } from "@/components/layout/AuthorCard";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
-import { FooterCta } from "@/components/layout/FooterCta";
+import { CalculatorPageLayout } from "@/components/layout/CalculatorPageLayout";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -22,20 +20,6 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   const pageUrl = `${siteUrl}/${lang}/tax-regime-calculator`;
   const ogImageUrl = `${siteUrl}/images/tax-regime-calculator-online.png`;
-
-  const faqItems = pageDict.faqs;
-  const faqSchema = {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity": faqItems.map((faq: { question: string, answer: string }) => ({
-      '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: faq.answer.replace(/<[^>]*>/g, ''), // Strip HTML tags for JSON-LD
-      },
-    })),
-  };
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -121,7 +105,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
       }, {} as Record<string, string>),
     },
     other: {
-      'application/ld+json': JSON.stringify([faqSchema, articleSchema, softwareSchema]),
+      'application/ld+json': JSON.stringify([articleSchema, softwareSchema]),
     },
   };
 }
@@ -132,47 +116,28 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: Prom
   const pageDict = { ...(await import(`@/dictionaries/${lang}/tax-regime-calculator.json`)).default };
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${lang}` },
-      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${lang}/calculators` },
-      { '@type': 'ListItem', position: 3, name: 'Tax Regime Calculator', item: `${siteUrl}/${lang}/tax-regime-calculator` },
-    ],
-  };
-  
   const comparisonData = pageDict.comparison_table;
+  const pageUrl = `${siteUrl}/${lang}/tax-regime-calculator`;
 
   return (
-    <div className="py-12">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <div className="mx-auto max-w-5xl">
-        <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
-            {pageDict.h1}
-          </h1>
-          <div className="bs-byline justify-center text-center">
-            <span className="bs-author">By <strong>Mahesh Chaube</strong></span>
-            <span className="bs-creds">, CFP</span>
-            <span className="bs-sep">|</span>
-            <span className="bs-updated">Last updated: <time dateTime="2025-09-01">September 2025</time></span>
-            <div className="bs-reviewed">Reviewed by <strong>Laveena Vijayi</strong> — BharatSaver Editorial Team</div>
-          </div>
-          <p className="mt-4 text-lg text-muted-foreground">
-            {pageDict.description}
-          </p>
-        </div>
-        
-        <TaxRegimeCalculator dictionary={pageDict} />
+    <CalculatorPageLayout
+      lang={lang}
+      dictionary={dictionary}
+      pageDict={pageDict}
+      h1={pageDict.h1}
+      description={pageDict.description}
+      lastUpdated="September 2025"
+      calculator={<TaxRegimeCalculator dictionary={pageDict} />}
+      faqs={pageDict.faqs}
+      faqTitle={pageDict.faq_title}
+      pageUrl={pageUrl}
+    >
         
         {pageDict.assumptions && (
           <Alert className="mt-8">
             <AlertTriangle className="h-4 w-4" />
             <AlertTitle>{pageDict.assumptions.title}</AlertTitle>
-            <AlertDescription>
-              <div className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: pageDict.assumptions.body }} />
-            </AlertDescription>
+            <AlertDescription dangerouslySetInnerHTML={{ __html: pageDict.assumptions.body.replace(/{lang}/g, lang) }} />
           </Alert>
         )}
 
@@ -199,7 +164,7 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: Prom
                         {comparisonData.table.rows.map((row: string[], rowIndex: number) => (
                             <TableRow key={rowIndex}>
                                 {row.map((cell: string, cellIndex: number) => (
-                                    <TableCell key={cellIndex} dangerouslySetInnerHTML={{ __html: cell }}></TableCell>
+                                    <TableCell key={cellIndex} dangerouslySetInnerHTML={{ __html: cell.replace(/{lang}/g, lang) }}></TableCell>
                                 ))}
                             </TableRow>
                         ))}
@@ -218,7 +183,7 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: Prom
                   <h2 className="text-2xl font-bold">{pageDict.checklist.title}</h2>
               </CardTitle>
             </CardHeader>
-            <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.checklist.body }} />
+            <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.checklist.body.replace(/{lang}/g, lang) }} />
           </Card>
         )}
         
@@ -246,41 +211,26 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: Prom
               {pageDict.common_scenarios.scenario1 && (
                 <div className="bg-muted/50 p-4 rounded-lg">
                   <h3 className="font-semibold text-lg">{pageDict.common_scenarios.scenario1.title}</h3>
-                  <div className="prose dark:prose-invert max-w-none mt-2" dangerouslySetInnerHTML={{ __html: pageDict.common_scenarios.scenario1.body }} />
+                  <div className="prose dark:prose-invert max-w-none mt-2" dangerouslySetInnerHTML={{ __html: pageDict.common_scenarios.scenario1.body.replace(/{lang}/g, lang) }} />
                 </div>
               )}
               {pageDict.common_scenarios.scenario2 && (
                 <div className="bg-muted/50 p-4 rounded-lg">
                   <h3 className="font-semibold text-lg">{pageDict.common_scenarios.scenario2.title}</h3>
-                  <div className="prose dark:prose-invert max-w-none mt-2" dangerouslySetInnerHTML={{ __html: pageDict.common_scenarios.scenario2.body }} />
+                  <div className="prose dark:prose-invert max-w-none mt-2" dangerouslySetInnerHTML={{ __html: pageDict.common_scenarios.scenario2.body.replace(/{lang}/g, lang) }} />
                 </div>
               )}
               {pageDict.common_scenarios.scenario3 && (
                 <div className="bg-muted/50 p-4 rounded-lg">
                   <h3 className="font-semibold text-lg">{pageDict.common_scenarios.scenario3.title}</h3>
-                  <div className="prose dark:prose-invert max-w-none mt-2" dangerouslySetInnerHTML={{ __html: pageDict.common_scenarios.scenario3.body }} />
+                  <div className="prose dark:prose-invert max-w-none mt-2" dangerouslySetInnerHTML={{ __html: pageDict.common_scenarios.scenario3.body.replace(/{lang}/g, lang) }} />
                 </div>
               )}
             </CardContent>
           </Card>
         )}
 
-        {pageDict.faqs && (
-          <div className="mt-12">
-            <h2 className="text-2xl font-bold text-center mb-6">{pageDict.faq_title}</h2>
-            <Accordion type="single" collapsible className="w-full">
-              {pageDict.faqs.map((faq: { question: string, answer: string }, index: number) => (
-                <AccordionItem value={`item-${index}`} key={index}>
-                  <AccordionTrigger>{faq.question}</AccordionTrigger>
-                  <AccordionContent>
-                    <p dangerouslySetInnerHTML={{ __html: faq.answer }}></p>
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
-        )}
-        
+
         {pageDict.next_steps && (
           <Card className="mt-12 shadow-lg">
             <CardHeader>
@@ -327,7 +277,7 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: Prom
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground" dangerouslySetInnerHTML={{__html: pageDict.conclusion.body.replace(/{lang}/g, lang)}}></p>
+              <div></div>
             </CardContent>
           </Card>
         )}
@@ -353,10 +303,7 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: Prom
           </CardContent>
         </Card>}
 
-        <AuthorCard dictionary={dictionary.author_card} />
-        <FooterCta dictionary={dictionary.footer_cta} lang={lang} />
-      </div>
-    </div>
+    </CalculatorPageLayout>
   );
 }
 

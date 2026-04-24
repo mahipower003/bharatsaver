@@ -28,6 +28,15 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/:lang/lic-new-jeevan-anand-calculator',
+        destination: '/:lang/lic-jeevan-anand-calculator',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

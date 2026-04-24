@@ -7,7 +7,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
 import { Loader2, ArrowRightLeft, Twitter, Printer, Download, AlertTriangle } from 'lucide-react';
-import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip as RechartsTooltip, XAxis, YAxis } from 'recharts';
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
@@ -17,6 +17,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import type { Dictionary } from '@/lib/types';
 import { type ChartConfig } from '@/components/ui/chart';
 import { Alert, AlertDescription, AlertTitle } from '../ui/alert';
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const formSchema = z.object({
   investmentAmount: z.coerce.number().min(500, 'Minimum investment is ₹500'),
@@ -191,7 +192,7 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
   const difference = result ? Math.abs(result.ppfMaturity - result.fdPostTaxMaturity) : 0;
 
   return (
-    <>
+    <TooltipProvider>
       <Card className="shadow-lg">
         <CardHeader>
           <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
@@ -318,7 +319,7 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
                       <CartesianGrid strokeDasharray="3 3" />
                       <XAxis dataKey="name" />
                       <YAxis tickFormatter={(value) => (value / 100000).toLocaleString('en-IN') + 'L'} />
-                      <Tooltip contentStyle={{ borderRadius: "var(--radius)", border: "1px solid hsl(var(--border))", background: "hsl(var(--background))" }} formatter={(value: number) => formatCurrency(value)} />
+                      <RechartsTooltip contentStyle={{ borderRadius: "var(--radius)", border: "1px solid hsl(var(--border))", background: "hsl(var(--background))" }} formatter={(value: number) => formatCurrency(value)} />
                       <Legend />
                       <Bar dataKey="Gross Value" fill="hsl(var(--secondary-foreground))" radius={[4, 4, 0, 0]} />
                       <Bar dataKey="Post-Tax Value" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
@@ -335,6 +336,6 @@ export function FdVsPpfCalculator({ dictionary }: CalculatorProps) {
             </Card>
         </>
       )}
-    </>
+    </TooltipProvider>
   );
 }

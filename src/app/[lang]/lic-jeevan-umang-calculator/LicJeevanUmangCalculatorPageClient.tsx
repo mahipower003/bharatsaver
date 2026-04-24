@@ -8,11 +8,11 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { AuthorCard } from "@/components/layout/AuthorCard";
-import { FooterCta } from "@/components/layout/FooterCta";
 import Link from 'next/link';
 import { BarChart, FileText, CheckCircle, SlidersHorizontal, GitCompareArrows, AlertTriangle, Users, BookUser, Star, HelpCircle, UserCheck, Calculator, Landmark, Video } from "lucide-react";
 import Image from "next/image";
 import { LicUmangPremiumChart } from "@/components/calculators/LicUmangPremiumChart";
+import { CalculatorPageLayout } from "@/components/layout/CalculatorPageLayout";
 
 function getIcon(iconName: string) {
     const icons: { [key: string]: React.ElementType } = {
@@ -38,22 +38,22 @@ const ContentRenderer = ({ content, lang, pageDict }: { content: any[], lang: Lo
                         return <div key={idx} className="overflow-x-auto"><Table>
                             <TableHeader><TableRow>{item.headers.map((h: string, hIdx: number) => <TableHead key={hIdx}>{h}</TableHead>)}</TableRow></TableHeader>
                             <TableBody>{item.rows.map((row: (string|number)[], rIdx: number) => <TableRow key={rIdx}>{row.map((cell: string|number, cIdx: number) => <TableCell key={cIdx} dangerouslySetInnerHTML={{ __html: String(cell).replace(/{lang}/g, lang) }} />)}</TableRow>)}</TableBody>
-                        </Table>{item.footer && <p className="text-xs text-muted-foreground mt-2 italic" dangerouslySetInnerHTML={{ __html: item.footer }} />}</div>;
+                        </Table>{item.footer && <div className="text-xs text-muted-foreground mt-2 italic" dangerouslySetInnerHTML={{ __html: item.footer.replace(/{lang}/g, lang) }}></div>}</div>;
                     case 'faq':
                          if (!item.items) return null;
                         return <Accordion key={idx} type="single" collapsible className="w-full">
                             {item.items.map((faq: {q: string; a: string}, qIdx: number) => (
                                 <AccordionItem key={qIdx} value={`item-${qIdx}`}>
                                     <AccordionTrigger>{faq.q}</AccordionTrigger>
-                                    <AccordionContent><div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{__html: faq.a}} /></AccordionContent>
+                                    <AccordionContent><div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{__html: faq.a.replace(/{lang}/g, lang)}} /></AccordionContent>
                                 </AccordionItem>
                             ))}
                         </Accordion>;
                     case 'structured_content':
                          return (
                             <div key={idx} className="space-y-4">
-                                {item.heading && <h3 className="text-xl font-semibold" dangerouslySetInnerHTML={{ __html: item.heading }} />}
-                                {item.body && <div className="prose dark:prose-invert max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: item.body }} />}
+                                {item.heading && <h3 className="text-xl font-semibold" dangerouslySetInnerHTML={{ __html: item.heading.replace(/{lang}/g, lang) }} />}
+                                {item.body && <div className="prose dark:prose-invert max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: item.body.replace(/{lang}/g, lang) }} />}
                             </div>
                         );
                     case 'premium_chart':
@@ -77,25 +77,33 @@ export default function LicJeevanUmangCalculatorPageClient({
   pageDict: any;
 }) {
 
+  const siteUrl = 'https://bharatsaver.com';
+  const pageUrl = `${siteUrl}/${params.lang}/lic-jeevan-umang-calculator`;
+  
+  const faqSection = pageDict.sections.find((s: any) => s.id === 'faq');
+  const faqs = faqSection ? faqSection.content.find((c: any) => c.type === 'faq')?.items.map((f: any) => ({ question: f.q, answer: f.a })) : [];
+
   return (
-    <div className="py-12">
-      <div className="mx-auto max-w-5xl">
-        <header className="text-center mb-8">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{ __html: pageDict.h1 }} />
-           <p className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.intro.quick_answer }}></p>
-            <Link href="#calculator-widget" className="inline-block mt-6 px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-md shadow-md hover:bg-primary/90 transition-colors">
-                {pageDict.intro.cta_button}
-            </Link>
-            <p className="text-xs text-muted-foreground mt-4" dangerouslySetInnerHTML={{ __html: pageDict.intro.citation }} />
-        </header>
-        
+    <CalculatorPageLayout
+      lang={params.lang}
+      dictionary={dictionary}
+      pageDict={pageDict}
+      h1={pageDict.h1}
+      description={`${pageDict.intro.quick_answer}<br/><br/><a href="#calculator-widget" class="inline-block px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-md shadow-md hover:bg-primary/90 transition-colors">${pageDict.intro.cta_button}</a>`}
+      lastUpdated="September 2025"
+      calculator={
         <div id="calculator-widget">
             <h2 className="text-2xl font-bold text-center mb-4">{pageDict.calculator_ui.h2}</h2>
             <LicJeevanUmangCalculator dictionary={pageDict.calculator_ui} />
         </div>
-
+      }
+      faqs={faqs}
+      faqTitle="Frequently Asked Questions (FAQs)"
+      pageUrl={pageUrl}
+    >
         <div className="mt-12 space-y-8">
             {pageDict.sections.map((section: any, index: number) => {
+                if (section.id === 'faq') return null; // FAQ is handled by CalculatorPageLayout
                 const Icon = getIcon(section.icon);
                 return (
                   <Card key={index} id={section.id} className="shadow-lg">
@@ -136,10 +144,6 @@ export default function LicJeevanUmangCalculatorPageClient({
               </Card>
             )}
         </div>
-        
-        <AuthorCard dictionary={dictionary.author_card} />
-        <FooterCta dictionary={dictionary.footer_cta} lang={params.lang} />
-      </div>
-    </div>
+    </CalculatorPageLayout>
   );
 }

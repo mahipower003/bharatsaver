@@ -8,8 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { CheckCircle2, TrendingUp, Landmark, ArrowRight, ShieldCheck, Scale, Star } from "lucide-react";
 import Link from "next/link";
-import { AuthorCard } from "@/components/layout/AuthorCard";
-import { FooterCta } from "@/components/layout/FooterCta";
+import { CalculatorPageLayout } from "@/components/layout/CalculatorPageLayout";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -23,18 +22,6 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
   const ogImageUrl = `${siteUrl}/images/calculate-ppf-online.png`;
 
   const faqItems = pageDict.faqs;
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqItems.map((faq: { question: string, answer: string }) => ({
-      '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: faq.answer,
-      },
-    })),
-  };
   
   const articleSchema = {
     "@context": "https://schema.org",
@@ -100,7 +87,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
     }, {} as Record<string, string>),
     },
     other: {
-      'application/ld+json': JSON.stringify([faqSchema, articleSchema]),
+      'application/ld+json': JSON.stringify(articleSchema),
     },
   };
 }
@@ -111,61 +98,43 @@ export default async function PpfCalculatorPage({ params }: { params: Promise<{ 
   const pageDict = { ...(await import(`@/dictionaries/${lang}/ppf-calculator.json`)).default };
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${lang}` },
-      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${lang}/calculators` },
-      { '@type': 'ListItem', position: 3, name: 'PPF Calculator', item: `${siteUrl}/${lang}/ppf-calculator` },
-    ],
-  };
+  const pageUrl = `${siteUrl}/${lang}/ppf-calculator`;
   
   const comparisonData = pageDict.comparison.table;
   const historicalRatesData = pageDict.historical_rates.table;
 
   return (
-    <div className="py-12">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      
-      <div className="mx-auto max-w-5xl">
-        <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
-            {pageDict.h1}
-          </h1>
-          <div className="bs-byline justify-center text-center">
-            <span className="bs-author">By <strong>Mahesh Chaube</strong></span>
-            <span className="bs-creds">, CFP</span>
-            <span className="bs-sep">|</span>
-            <span className="bs-updated">Last updated: <time dateTime="2025-09-01">September 2025</time></span>
-            <div className="bs-reviewed">Reviewed by <strong>Laveena Vijayi</strong> — BharatSaver Editorial Team</div>
-          </div>
-          <p className="mt-4 text-lg text-muted-foreground">
-            {pageDict.description}
-          </p>
-        </div>
-        
-        <PpfCalculator dictionary={pageDict} />
-
-        <Card className="mt-12 shadow-lg">
+    <CalculatorPageLayout
+      lang={lang}
+      dictionary={dictionary}
+      pageDict={pageDict}
+      h1={pageDict.h1}
+      description={pageDict.description}
+      lastUpdated="September 2025"
+      calculator={<PpfCalculator dictionary={pageDict} />}
+      faqs={pageDict.faqs}
+      faqTitle={pageDict.faq_title}
+      pageUrl={pageUrl}
+    >
+        <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
           <CardHeader>
             <h2 className="text-2xl font-bold">{pageDict.advantages.title}</h2>
           </CardHeader>
           <CardContent>
-            <p className="mb-6 text-muted-foreground">{pageDict.advantages.intro}</p>
+            <div></div>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
               {pageDict.advantages.points.map((point: string, index: number) => (
                 <li key={index} className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
-                  <span>{point}</span>
+                  <span dangerouslySetInnerHTML={{ __html: point.replace(/{lang}/g, lang) }}></span>
                 </li>
               ))}
             </ul>
-            <p className="mt-6 font-semibold" dangerouslySetInnerHTML={{ __html: pageDict.advantages.conclusion }}></p>
+            <div></div>
           </CardContent>
         </Card>
 
-        <Card className="mt-12 shadow-lg bg-primary/10 border-primary/20">
+        <Card className="shadow-lg bg-primary/10 border-primary/20 hover:shadow-xl transition-shadow duration-300">
             <CardHeader>
               <CardTitle className="flex items-center gap-3">
                   <TrendingUp className="h-7 w-7 text-primary"/>
@@ -173,16 +142,16 @@ export default async function PpfCalculatorPage({ params }: { params: Promise<{ 
               </CardTitle>
             </CardHeader>
             <CardContent className="prose dark:prose-invert max-w-none">
-              <p dangerouslySetInnerHTML={{ __html: pageDict.investment_strategy.intro }}></p>
+              <div></div>
               <ul>
                 {pageDict.investment_strategy.points.map((point: string, index: number) => (
-                  <li key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
+                  <li key={index} dangerouslySetInnerHTML={{ __html: point.replace(/{lang}/g, lang) }}></li>
                 ))}
               </ul>
             </CardContent>
         </Card>
         
-        <Card className="mt-12 shadow-lg">
+        <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
           <CardHeader>
              <CardTitle className="flex items-center gap-3">
                 <ShieldCheck className="h-7 w-7 text-primary"/>
@@ -190,27 +159,27 @@ export default async function PpfCalculatorPage({ params }: { params: Promise<{ 
              </CardTitle>
           </CardHeader>
           <CardContent className="space-y-6">
-            <p className="text-muted-foreground">{pageDict.tax_benefits.intro}</p>
+            <div></div>
             <div>
                 <h3 className="text-lg font-semibold">{pageDict.tax_benefits.contribution_title}</h3>
-                <p className="text-muted-foreground mt-1" dangerouslySetInnerHTML={{ __html: pageDict.tax_benefits.contribution_body }}></p>
+                <div></div>
             </div>
             <div>
                 <h3 className="text-lg font-semibold">{pageDict.tax_benefits.interest_title}</h3>
-                <p className="text-muted-foreground mt-1">{pageDict.tax_benefits.interest_body}</p>
+                <div></div>
             </div>
             <div>
                 <h3 className="text-lg font-semibold">{pageDict.tax_benefits.maturity_title}</h3>
-                <p className="text-muted-foreground mt-1">{pageDict.tax_benefits.maturity_body}</p>
+                <div></div>
             </div>
             <div className="bg-primary/10 p-4 rounded-lg border-l-4 border-primary">
-              <p className="font-semibold" dangerouslySetInnerHTML={{ __html: pageDict.tax_benefits.why_matters }}></p>
+              <div></div>
             </div>
-            <p className="text-sm text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.tax_benefits.footer_note }}></p>
+            <div></div>
           </CardContent>
         </Card>
         
-        <Card className="mt-12 shadow-lg">
+        <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
           <CardHeader>
             <CardTitle className="flex items-center gap-3">
                 <Scale className="h-7 w-7 text-primary"/>
@@ -222,15 +191,15 @@ export default async function PpfCalculatorPage({ params }: { params: Promise<{ 
                 {pageDict.rules.points.map((point: string, index: number) => (
                     <li key={index} className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
-                      <span dangerouslySetInnerHTML={{ __html: point }}></span>
+                      <span dangerouslySetInnerHTML={{ __html: point.replace(/{lang}/g, lang) }}></span>
                     </li>
                 ))}
             </ul>
-            <p className="text-sm text-muted-foreground pt-4" dangerouslySetInnerHTML={{ __html: pageDict.rules.footer_note }}></p>
+            <div></div>
           </CardContent>
         </Card>
 
-        <Card className="mt-12 shadow-lg">
+        <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
           <CardHeader>
             <CardTitle className="flex items-center gap-3">
               <Landmark className="h-7 w-7 text-primary"/>
@@ -238,15 +207,15 @@ export default async function PpfCalculatorPage({ params }: { params: Promise<{ 
             </CardTitle>
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none">
-            <p>{pageDict.how_to_open.intro}</p>
+            <div></div>
             <ol className="list-decimal pl-5 space-y-2">
               {pageDict.how_to_open.steps.map((step: string, index: number) => (
-                <li key={index} dangerouslySetInnerHTML={{ __html: step }}></li>
+                <li key={index} dangerouslySetInnerHTML={{ __html: step.replace(/{lang}/g, lang) }}></li>
               ))}
             </ol>
             <div className="flex flex-wrap gap-4 mt-6">
                 {pageDict.how_to_open.links.map((link: { text: string; href: string }, index: number) => (
-                    <Link href={link.href} key={index} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary font-semibold hover:underline">
+                    <Link href={link.href.replace(/{lang}/g, lang)} key={index} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary font-semibold hover:underline">
                         {link.text} <ArrowRight className="h-4 w-4" />
                     </Link>
                 ))}
@@ -254,79 +223,69 @@ export default async function PpfCalculatorPage({ params }: { params: Promise<{ 
           </CardContent>
         </Card>
 
-        <Card className="mt-12 shadow-lg">
+        <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
           <CardHeader>
             <h2 className="text-2xl font-bold">{pageDict.historical_rates.title}</h2>
           </CardHeader>
           <CardContent>
-            <p className="mb-4 text-muted-foreground">{pageDict.historical_rates.intro}</p>
-            <Table>
-              <TableHeader>
-                <TableRow>
-                  {historicalRatesData.headers.map((header: string, index: number) => (
-                    <TableHead key={index}>{header}</TableHead>
-                  ))}
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {historicalRatesData.rows.map((row: string[], rowIndex: number) => (
-                  <TableRow key={rowIndex}>
-                    {row.map((cell: string, cellIndex: number) => (
-                      <TableCell key={cellIndex}>{cell}</TableCell>
+            <div></div>
+            <div className="overflow-x-auto">
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    {historicalRatesData.headers.map((header: string, index: number) => (
+                      <TableHead key={index}>{header}</TableHead>
                     ))}
                   </TableRow>
-                ))}
-              </TableBody>
-            </Table>
+                </TableHeader>
+                <TableBody>
+                  {historicalRatesData.rows.map((row: string[], rowIndex: number) => (
+                    <TableRow key={rowIndex}>
+                      {row.map((cell: string, cellIndex: number) => (
+                        <TableCell key={cellIndex} dangerouslySetInnerHTML={{ __html: cell.replace(/{lang}/g, lang) }}></TableCell>
+                      ))}
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </div>
             <div className="prose dark:prose-invert max-w-none mt-4">
-                <p className="text-sm" dangerouslySetInnerHTML={{ __html: pageDict.historical_rates.sources }}></p>
-                <p className="font-semibold italic">{pageDict.historical_rates.insight}</p>
+                <div></div>
+                <div></div>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="mt-12 shadow-lg">
+        <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader>
                 <h2 className="text-2xl font-bold">{pageDict.comparison.title}</h2>
             </CardHeader>
             <CardContent>
-                <Table>
-                    <TableHeader>
-                        <TableRow>
-                            {comparisonData.headers.map((header: string, index: number) => (
-                                <TableHead key={index} className={index > 0 ? "text-center" : ""}>{header}</TableHead>
-                            ))}
-                        </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                        {comparisonData.rows.map((row: string[], rowIndex: number) => (
-                            <TableRow key={rowIndex}>
-                                {row.map((cell: string, cellIndex: number) => (
-                                    <TableCell key={cellIndex} className={cellIndex > 0 ? 'text-center' : ''}>{cell}</TableCell>
-                                ))}
-                            </TableRow>
-                        ))}
-                    </TableBody>
-                </Table>
-                 <p className="text-sm text-muted-foreground mt-4" dangerouslySetInnerHTML={{ __html: pageDict.comparison.footer_note.replace('{lang}', lang) }}></p>
+                <div className="overflow-x-auto">
+                  <Table>
+                      <TableHeader>
+                          <TableRow>
+                              {comparisonData.headers.map((header: string, index: number) => (
+                                  <TableHead key={index} className={index > 0 ? "text-center whitespace-nowrap" : "whitespace-nowrap"}>{header}</TableHead>
+                              ))}
+                          </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                          {comparisonData.rows.map((row: string[], rowIndex: number) => (
+                              <TableRow key={rowIndex}>
+                                  {row.map((cell: string, cellIndex: number) => (
+                                      <TableCell key={cellIndex} className={cellIndex > 0 ? 'text-center' : ''} dangerouslySetInnerHTML={{ __html: cell.replace(/{lang}/g, lang) }}></TableCell>
+                                  ))}
+                              </TableRow>
+                          ))}
+                      </TableBody>
+                  </Table>
+                </div>
+                 <div></div>
             </CardContent>
         </Card>
 
-        <div className="mt-12">
-            <h2 className="text-2xl font-bold text-center mb-6">{pageDict.faq_title}</h2>
-            <Accordion type="single" collapsible className="w-full">
-              {pageDict.faqs.map((faq: { question: string, answer: string }, index: number) => (
-                <AccordionItem value={`item-${index}`} key={index}>
-                  <AccordionTrigger>{faq.question}</AccordionTrigger>
-                  <AccordionContent>
-                    <p dangerouslySetInnerHTML={{ __html: faq.answer }}></p>
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-        </div>
-
-        <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
+        <Card className="shadow-lg bg-accent/10 border-accent/20 hover:shadow-xl transition-shadow duration-300">
           <CardHeader>
             <CardTitle className="flex items-center gap-3">
               <Star className="h-7 w-7 text-accent" />
@@ -334,34 +293,33 @@ export default async function PpfCalculatorPage({ params }: { params: Promise<{ 
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground">{pageDict.conclusion.body}</p>
+            <div></div>
           </CardContent>
         </Card>
 
-        <Card className="mt-12 shadow-lg bg-blue-50/50 dark:bg-blue-950/20 border-blue-200 dark:border-blue-800">
-          <CardHeader>
-            <h2 className="text-2xl font-bold">{pageDict.related_calculators.title}</h2>
-            <p className="text-muted-foreground mt-2">{pageDict.related_calculators.description}</p>
-          </CardHeader>
-          <CardContent>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {pageDict.related_calculators.tools.map((tool: { name: string; description: string; link: string }, index: number) => (
-                <Link
-                  key={index}
-                  href={tool.link.replace('{lang}', lang)}
-                  className="p-4 rounded-lg border border-blue-200 dark:border-blue-800 hover:shadow-md hover:border-blue-400 transition-all group bg-white dark:bg-slate-900"
-                >
-                  <h3 className="font-semibold text-primary group-hover:underline mb-1">{tool.name}</h3>
-                  <p className="text-sm text-muted-foreground">{tool.description}</p>
-                </Link>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
-        <AuthorCard dictionary={dictionary.author_card} />
-        <FooterCta dictionary={dictionary.footer_cta} lang={lang} />
-      </div>
-    </div>
+        {pageDict.related_calculators && (
+          <Card className="shadow-lg bg-blue-50/50 dark:bg-blue-950/20 border-blue-200 dark:border-blue-800 hover:shadow-xl transition-shadow duration-300">
+            <CardHeader>
+              <h2 className="text-2xl font-bold">{pageDict.related_calculators.title}</h2>
+              <p className="text-muted-foreground mt-2">{pageDict.related_calculators.description}</p>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {pageDict.related_calculators.tools.map((tool: { name: string; description: string; link: string }, index: number) => (
+                  <Link
+                    key={index}
+                    href={tool.link.replace(/{lang}/g, lang)}
+                    className="p-4 rounded-lg border border-blue-200 dark:border-blue-800 hover:shadow-md hover:border-blue-400 transition-all group bg-white dark:bg-slate-900"
+                  >
+                    <h3 className="font-semibold text-primary group-hover:underline mb-1">{tool.name}</h3>
+                    <p className="text-sm text-muted-foreground">{tool.description}</p>
+                  </Link>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        )}
+    </CalculatorPageLayout>
   );
 }
 

@@ -13,7 +13,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Input } from '@/components/ui/input';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Checkbox } from '../ui/checkbox';
-import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer, CartesianGrid } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, Tooltip as RechartsTooltip, Legend, ResponsiveContainer, CartesianGrid } from 'recharts';
 import { useToast } from '@/hooks/use-toast';
 
 const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -399,7 +399,7 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
                          <CartesianGrid strokeDasharray="3 3" />
                          <XAxis dataKey="name" />
                          <YAxis tickFormatter={(value) => (value / 100000).toLocaleString('en-IN') + 'L'} />
-                         <Tooltip formatter={(value: number) => formatCurrency(value)} />
+                         <RechartsTooltip formatter={(value: number) => formatCurrency(value)} />
                          <Legend />
                          <Bar dataKey="Total Premium Paid" stackId="a" fill="hsl(var(--destructive))" />
                          <Bar dataKey="Sum Assured" stackId="a" fill="hsl(var(--primary))" />

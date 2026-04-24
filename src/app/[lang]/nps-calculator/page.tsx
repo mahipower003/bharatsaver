@@ -1,14 +1,11 @@
-
 import { NpsCalculator } from "@/components/calculators/NpsCalculator";
 import { getDictionary } from "@/lib/dictionaries";
 import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { TrendingUp, ShieldCheck, Scale, Star } from "lucide-react";
-import { AuthorCard } from "@/components/layout/AuthorCard";
-import { FooterCta } from "@/components/layout/FooterCta";
+import { CalculatorPageLayout } from "@/components/layout/CalculatorPageLayout";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -21,19 +18,6 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
   const pageUrl = `${siteUrl}/${lang}/nps-calculator`;
   const ogImageUrl = `${siteUrl}/images/nps-calculator-online.png`;
 
-  const faqItems = pageDict.faqs;
-  const faqSchema = {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity": faqItems.map((faq: { question: string, answer: string }) => ({
-      '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: faq.answer,
-      },
-    })),
-  };
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -76,7 +60,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
       description: "Use our NPS calculator to plan your retirement. Enter contribution, expected returns and retirement age to get corpus & monthly pension estimates.",
       url: pageUrl,
       images: [{ url: ogImageUrl, width: 1200, height: 630, alt: 'BharatSaver NPS Calculator' }],
-    "locale": lang === 'en' ? 'en_IN' : lang,
+      locale: lang === 'en' ? 'en_IN' : lang,
       type: 'website',
     },
     twitter: {
@@ -93,7 +77,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
       }, {} as Record<string, string>),
     },
     other: {
-      'application/ld+json': JSON.stringify([faqSchema, articleSchema]),
+      'application/ld+json': JSON.stringify(articleSchema),
     },
   };
 }
@@ -102,39 +86,24 @@ export default async function NpsCalculatorPage({ params }: { params: Promise<{ 
   const { lang } = await params;
   const dictionary = await getDictionary(lang);
   const pageDict = { ...(await import(`@/dictionaries/${lang}/nps-calculator.json`)).default };
-  const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/${lang}` },
-      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${siteUrl}/${lang}/calculators` },
-      { '@type': 'ListItem', position: 3, name: 'NPS Calculator', item: `${siteUrl}/${lang}/nps-calculator` },
-    ],
-  };
-
   const comparisonData = pageDict.comparison.table;
+  const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
+  const pageUrl = `${siteUrl}/${lang}/nps-calculator`;
   
   return (
-    <div className="py-12">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <div className="mx-auto max-w-5xl">
-        <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{__html: pageDict.h1}}></h1>
-          <div className="bs-byline justify-center text-center">
-            <span className="bs-author">By <strong>Mahesh Chaube</strong></span>
-            <span className="bs-creds">, CFP</span>
-            <span className="bs-sep">|</span>
-            <span className="bs-updated">Last updated: <time dateTime="2025-09-01">September 2025</time></span>
-            <div className="bs-reviewed">Reviewed by <strong>Laveena Vijayi</strong> — BharatSaver Editorial Team</div>
-          </div>
-          <p className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{__html: pageDict.description}}></p>
-        </div>
-        
-        <NpsCalculator dictionary={pageDict} />
-
-        <Card className="mt-12 shadow-lg">
+    <CalculatorPageLayout
+      lang={lang}
+      dictionary={dictionary}
+      pageDict={pageDict}
+      h1={pageDict.h1}
+      description={pageDict.description}
+      lastUpdated="September 2025"
+      calculator={<NpsCalculator dictionary={pageDict} />}
+      faqs={pageDict.faqs}
+      faqTitle={pageDict.faq_title}
+      pageUrl={pageUrl}
+    >
+        <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
           <CardHeader>
             <CardTitle className="flex items-center gap-3">
                 <TrendingUp className="h-7 w-7 text-primary"/>
@@ -142,41 +111,41 @@ export default async function NpsCalculatorPage({ params }: { params: Promise<{ 
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.what_is_nps.body }}></p>
+            <div></div>
             <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
               {pageDict.what_is_nps.points.map((point: {title: string, body: string}, index: number) => (
-                <div key={index} className="bg-muted/50 p-4 rounded-lg">
+                <div key={index} className="bg-muted/50 p-4 rounded-lg border border-border">
                   <h3 className="font-semibold text-primary">{point.title}</h3>
-                  <p className="text-sm text-muted-foreground mt-1" dangerouslySetInnerHTML={{__html: point.body}}></p>
+                  <div></div>
                 </div>
               ))}
             </div>
-             <p className="mt-4 text-sm text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.what_is_nps.footer }}></p>
+             <div></div>
           </CardContent>
         </Card>
 
-        <Card className="mt-12 shadow-lg">
+        <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
           <CardHeader>
             <h2 className="text-2xl font-bold">{pageDict.how_it_works.title}</h2>
           </CardHeader>
           <CardContent className="space-y-6">
-            <div className="bg-muted/50 p-4 rounded-lg">
+            <div className="bg-muted/50 p-4 rounded-lg border border-border">
               <h3 className="font-semibold text-lg mb-2">{pageDict.how_it_works.formula_title}</h3>
               <div className="space-y-4">
                 <div>
                   <h4 className="font-medium">{pageDict.how_it_works.annual.title}</h4>
-                  <p className="font-mono bg-background p-3 rounded-md text-center text-sm md:text-base mt-1" dangerouslySetInnerHTML={{__html: pageDict.how_it_works.annual.formula}}></p>
+                  <div></div>
                 </div>
                  <div>
                   <h4 className="font-medium">{pageDict.how_it_works.monthly.title}</h4>
-                   <p className="font-mono bg-background p-3 rounded-md text-center text-sm md:text-base mt-1" dangerouslySetInnerHTML={{__html: pageDict.how_it_works.monthly.formula}}></p>
+                   <div></div>
                 </div>
               </div>
             </div>
 
             <div>
               <h3 className="font-semibold text-lg">{pageDict.example.title}</h3>
-              <p className="text-muted-foreground mt-2" dangerouslySetInnerHTML={{ __html: pageDict.example.intro }}></p>
+              <div></div>
               <ul className="list-disc pl-5 space-y-2 mt-4 text-muted-foreground">
                 {pageDict.example.assumptions.map((point: string, index: number) => (
                   <li key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
@@ -184,16 +153,16 @@ export default async function NpsCalculatorPage({ params }: { params: Promise<{ 
               </ul>
                <div className="mt-4 prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: pageDict.example.calculation_steps }}></div>
               <div className="mt-4 bg-primary/10 p-4 rounded-lg border-l-4 border-primary">
-                <p className="text-muted-foreground font-semibold" dangerouslySetInnerHTML={{ __html: pageDict.example.result }}></p>
+                <div></div>
               </div>
               <div className="mt-4 text-sm text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.example.annuity_intro }}></div>
-              <p className="mt-2 text-sm text-muted-foreground font-semibold" dangerouslySetInnerHTML={{ __html: pageDict.example.annuity_result }}></p>
-              <p className="mt-4 text-xs italic text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.example.disclaimer }}></p>
+              <div></div>
+              <div></div>
             </div>
           </CardContent>
         </Card>
         
-        <Card className="mt-12 shadow-lg">
+        <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader>
                 <CardTitle className="flex items-center gap-3">
                     <ShieldCheck className="h-7 w-7 text-primary"/>
@@ -201,16 +170,16 @@ export default async function NpsCalculatorPage({ params }: { params: Promise<{ 
                 </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-                <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.tax_benefits.intro }}></p>
+                <div></div>
                  <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
                     {pageDict.tax_benefits.points.map((point: string, index: number) => (
-                      <li key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
+                      <li key={index} dangerouslySetInnerHTML={{ __html: point.replace(/{lang}/g, lang) }}></li>
                     ))}
                   </ul>
             </CardContent>
         </Card>
 
-        <Card className="mt-12 shadow-lg">
+        <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
           <CardHeader>
             <CardTitle className="flex items-center gap-3">
                 <Scale className="h-7 w-7 text-primary"/>
@@ -218,7 +187,7 @@ export default async function NpsCalculatorPage({ params }: { params: Promise<{ 
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
-            <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: pageDict.rules.intro }}></p>
+            <div></div>
              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <h3 className="font-semibold text-lg">{pageDict.rules.tier1.title}</h3>
@@ -237,55 +206,43 @@ export default async function NpsCalculatorPage({ params }: { params: Promise<{ 
                   </ul>
                 </div>
              </div>
-             <div className="pt-4">
+             <div className="pt-4 border-t mt-4">
                 <h3 className="font-semibold text-lg">{pageDict.rules.withdrawal.title}</h3>
-                <p className="text-muted-foreground mt-1" dangerouslySetInnerHTML={{__html: pageDict.rules.withdrawal.body}}></p>
+                <div></div>
              </div>
           </CardContent>
         </Card>
 
-        <Card className="mt-12 shadow-lg">
+        <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
           <CardHeader>
             <h2 className="text-2xl font-bold">{pageDict.comparison.title}</h2>
           </CardHeader>
           <CardContent>
-              <Table>
-                  <TableHeader>
-                      <TableRow>
-                          {comparisonData.headers.map((header: string, index: number) => (
-                              <TableHead key={index} className={index > 0 ? "text-center" : ""}>{header}</TableHead>
-                          ))}
-                      </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                      {comparisonData.rows.map((row: string[], rowIndex: number) => (
-                          <TableRow key={rowIndex}>
-                              {row.map((cell: string, cellIndex: number) => (
-                                  <TableCell key={cellIndex} className={cellIndex > 0 ? 'text-center' : ''} dangerouslySetInnerHTML={{ __html: cell }}></TableCell>
+              <div className="overflow-x-auto">
+                  <Table>
+                      <TableHeader>
+                          <TableRow>
+                              {comparisonData.headers.map((header: string, index: number) => (
+                                  <TableHead key={index} className={index > 0 ? "text-center whitespace-nowrap" : "whitespace-nowrap"}>{header}</TableHead>
                               ))}
                           </TableRow>
-                      ))}
-                  </TableBody>
-              </Table>
-               <p className="text-sm text-muted-foreground mt-4" dangerouslySetInnerHTML={{ __html: pageDict.comparison.footer_note.replace(/{lang}/g, lang) }}></p>
+                      </TableHeader>
+                      <TableBody>
+                          {comparisonData.rows.map((row: string[], rowIndex: number) => (
+                              <TableRow key={rowIndex}>
+                                  {row.map((cell: string, cellIndex: number) => (
+                                      <TableCell key={cellIndex} className={cellIndex > 0 ? 'text-center' : ''} dangerouslySetInnerHTML={{ __html: cell }}></TableCell>
+                                  ))}
+                              </TableRow>
+                          ))}
+                      </TableBody>
+                  </Table>
+              </div>
+               <div></div>
           </CardContent>
         </Card>
 
-        <div className="mt-12">
-            <h2 className="text-2xl font-bold text-center mb-6">{pageDict.faq_title}</h2>
-            <Accordion type="single" collapsible className="w-full">
-              {pageDict.faqs.map((faq: { question: string, answer: string }, index: number) => (
-                <AccordionItem value={`item-${index}`} key={index}>
-                  <AccordionTrigger>{faq.question}</AccordionTrigger>
-                  <AccordionContent>
-                    <p dangerouslySetInnerHTML={{ __html: faq.answer }}></p>
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-        </div>
-
-        <Card className="mt-12 shadow-lg bg-accent/10 border-accent/20">
+        <Card className="shadow-lg bg-accent/5 border-accent/20 hover:shadow-xl transition-shadow duration-300">
           <CardHeader>
             <CardTitle className="flex items-center gap-3">
               <Star className="h-7 w-7 text-accent" />
@@ -293,16 +250,9 @@ export default async function NpsCalculatorPage({ params }: { params: Promise<{ 
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground">{pageDict.conclusion.body}</p>
+            <div></div>
           </CardContent>
         </Card>
-        <AuthorCard dictionary={dictionary.author_card} />
-        <FooterCta dictionary={dictionary.footer_cta} lang={lang} />
-      </div>
-    </div>
+    </CalculatorPageLayout>
   );
 }
-
-    
-
-    

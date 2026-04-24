@@ -12,7 +12,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { Input } from '@/components/ui/input';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Checkbox } from '../ui/checkbox';
-import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer, CartesianGrid } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, Tooltip as RechartsTooltip, Legend, ResponsiveContainer, CartesianGrid } from 'recharts';
 import { useToast } from '@/hooks/use-toast';
 import { Alert, AlertTitle, AlertDescription } from '../ui/alert';
 import { Info } from 'lucide-react';
@@ -264,7 +264,7 @@ export function LicNewJeevanAnandCalculator({ dictionary }: { dictionary: any })
                       <CartesianGrid strokeDasharray="3 3" />
                       <XAxis type="number" tickFormatter={(v) => `${(v/100000).toFixed(1)}L`} />
                       <YAxis type="category" dataKey="name" width={120} />
-                      <Tooltip formatter={(value: number) => formatCurrency(value)} />
+                      <RechartsTooltip formatter={(value: number) => formatCurrency(value)} />
                       <Bar dataKey="value" fill="hsl(var(--primary))" radius={[0, 4, 4, 0]} />
                   </BarChart>
               </ResponsiveContainer>

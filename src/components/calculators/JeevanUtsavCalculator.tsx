@@ -168,7 +168,9 @@ export function JeevanUtsavCalculator({ dictionary }: { dictionary: any }) {
                                     {rider.label}
                                     <Tooltip>
                                       <TooltipTrigger asChild>
-                                        <Info className="h-3 w-3 text-muted-foreground cursor-help" />
+                                        <button type="button" className="inline-flex items-center justify-center rounded-md border-0 bg-transparent p-0 focus:outline-none">
+                                          <Info className="h-3 w-3 text-muted-foreground cursor-help" />
+                                        </button>
                                       </TooltipTrigger>
                                       <TooltipContent>
                                         <p className="max-w-xs">{rider.description}</p>

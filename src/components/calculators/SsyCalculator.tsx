@@ -6,8 +6,8 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
-import { Loader2, Download, Baby, Twitter, Printer } from 'lucide-react';
-import { Area, AreaChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Loader2, Download, Baby, Twitter, Printer, Info } from 'lucide-react';
+import { Area, AreaChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip as RechartsTooltip, XAxis, YAxis } from 'recharts';
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -19,6 +19,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { type ChartConfig } from '@/components/ui/chart';
 import type { Dictionary } from '@/lib/types';
 import { RadioGroup, RadioGroupItem } from '../ui/radio-group';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 const formSchema = z.object({
   investmentAmount: z.coerce.number().min(250, 'Minimum investment is ₹250').max(150000, 'Maximum investment is ₹1,50,000'),
@@ -254,7 +255,7 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
   } satisfies ChartConfig;
 
   return (
-    <>
+    <TooltipProvider>
       <Card className="shadow-lg">
         <CardHeader>
             <h2 className="flex items-center gap-2 text-xl font-bold">
@@ -297,12 +298,24 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
                             </FormItem>
                         )}
                     />
-                   <FormField
+                  <FormField
                     control={form.control}
                     name="investmentAmount"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>{investmentMode === 'yearly' ? dictionary.yearly_investment_label : dictionary.monthly_investment_label}</FormLabel>
+                        <div className="flex items-center gap-2">
+                          <FormLabel>{investmentMode === 'yearly' ? dictionary.yearly_investment_label : dictionary.monthly_investment_label}</FormLabel>
+                          <Tooltip>
+                            <TooltipTrigger asChild>
+                              <button type="button" className="inline-flex" tabIndex={-1}>
+                                <Info className="h-4 w-4 text-muted-foreground hover:text-primary transition-colors" />
+                              </button>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p className="max-w-xs text-sm">Maximum ₹1.5 Lakh/year qualifies for Section 80C tax deduction.</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        </div>
                         <FormControl>
                           <Input type="number" placeholder={investmentMode === 'yearly' ? dictionary.yearly_investment_placeholder : dictionary.monthly_investment_placeholder} {...field} />
                         </FormControl>
@@ -316,7 +329,19 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
                     name="interestRate"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>{dictionary.interest_rate_label}</FormLabel>
+                        <div className="flex items-center gap-2">
+                          <FormLabel>{dictionary.interest_rate_label}</FormLabel>
+                          <Tooltip>
+                            <TooltipTrigger asChild>
+                              <button type="button" className="inline-flex" tabIndex={-1}>
+                                <Info className="h-4 w-4 text-muted-foreground hover:text-primary transition-colors" />
+                              </button>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p className="max-w-xs text-sm">SSY interest rate is fixed by the government and revised quarterly. Currently 8.2%.</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        </div>
                         <FormControl>
                            <Input type="number" step="0.1" placeholder={dictionary.interest_rate_placeholder} {...field} />
                         </FormControl>
@@ -428,7 +453,7 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="age" label={{ value: dictionary.girl_age_label, position: 'insideBottom', offset: -10 }}/>
                     <YAxis tickFormatter={(value) => (value / 100000).toLocaleString('en-IN') + 'L'} label={{ value: dictionary.amount_in_lakhs, angle: -90, position: 'insideLeft' }}/>
-                    <Tooltip 
+                    <RechartsTooltip 
                        contentStyle={{
                         borderRadius: "var(--radius)",
                         border: "1px solid hsl(var(--border))",
@@ -474,6 +499,6 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
           </CardContent>
         </Card>
       )}
-    </>
+    </TooltipProvider>
   );
 }

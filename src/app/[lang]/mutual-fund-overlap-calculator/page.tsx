@@ -4,14 +4,12 @@ import { getDictionary } from "@/lib/dictionaries";
 import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { AuthorCard } from "@/components/layout/AuthorCard";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { CheckCircle, GitCompareArrows, HelpCircle, FileText, AlertTriangle, Table as TableIcon, BarChart2 } from "lucide-react";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import Image from "next/image";
-import { FooterCta } from "@/components/layout/FooterCta";
 import Link from "next/link";
+import { CalculatorPageLayout } from "@/components/layout/CalculatorPageLayout";
 
 
 export async function generateStaticParams() {
@@ -46,18 +44,6 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
     "publisher":{"@type":"Organization","name":"BharatSaver","logo":{"@type":"ImageObject","url":`${siteUrl}/icon.svg`}}
   };
   
-  const faqSchema = {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity": dict.faq.faqs.map((faq: { q: string, a: string }) => ({
-        "@type": "Question",
-        "name": faq.q,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": faq.a
-        }
-    }))
-  };
 
   return {
     title: title,
@@ -70,7 +56,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
       }, {} as Record<string, string>),
     },
      other: {
-      'application/ld+json': JSON.stringify([articleSchema, softwareSchema, faqSchema]),
+      'application/ld+json': JSON.stringify([articleSchema, softwareSchema]),
     },
   };
 }
@@ -81,16 +67,20 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
   const dict = (await import(`@/dictionaries/${lang}/mutual-fund-overlap-calculator.json`)).default;
   const liveExample = dict.live_example;
   
+  const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
+  const pageUrl = `${siteUrl}/${lang}/mutual-fund-overlap-calculator`;
+  
+  const mappedFaqs = dict.faq?.faqs ? dict.faq.faqs.map((f: any) => ({ question: f.q, answer: f.a })) : [];
+
   return (
-    <div className="py-12">
-      <div className="mx-auto max-w-5xl">
-         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
-            {dict.h1}
-          </h1>
-          <p className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: dict.hero.subtitle }} />
-        </div>
-        
+    <CalculatorPageLayout
+      lang={lang}
+      dictionary={dictionary}
+      pageDict={dict}
+      h1={dict.h1}
+      description={dict.hero.subtitle}
+      lastUpdated="September 2025"
+      calculator={
         <Card className="shadow-lg">
           <CardHeader>
             <CardTitle>{dict.tool.title}</CardTitle>
@@ -99,20 +89,26 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
             <MutualFundOverlapCalculator dictionary={dict} />
           </CardContent>
         </Card>
+      }
+      faqs={mappedFaqs}
+      faqTitle={dict.faq?.h2 || "Frequently Asked Questions"}
+      pageUrl={pageUrl}
+    >
+        <div className="space-y-8 mt-12 print-hide">
         
-        <div className="space-y-8 mt-12">
+
             <Card>
                 <CardHeader>
                     <CardTitle className="flex items-center gap-3"><HelpCircle className="h-6 w-6 text-primary" />{dict.what_is_overlap.h2}</CardTitle>
                 </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.what_is_overlap.body }} />
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.what_is_overlap.body.replace(/{lang}/g, lang) }} />
             </Card>
             
             <Card>
                 <CardHeader>
                     <CardTitle className="flex items-center gap-3"><FileText className="h-6 w-6 text-primary" />{dict.how_it_works.h2}</CardTitle>
                 </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.how_it_works.body }} />
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.how_it_works.body.replace(/{lang}/g, lang) }} />
             </Card>
 
             {liveExample && <Card>
@@ -157,7 +153,7 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
                 <CardHeader>
                     <CardTitle className="flex items-center gap-3"><GitCompareArrows className="h-6 w-6 text-primary" />{dict.interpreting_results.h2}</CardTitle>
                 </CardHeader>
-                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.interpreting_results.body }} />
+                <CardContent className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: dict.interpreting_results.body.replace(/{lang}/g, lang) }} />
             </Card>
 
             <Card>
@@ -193,33 +189,15 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
             )}
         </div>
 
-        <div className="mt-12">
-            <h2 className="text-2xl font-bold text-center mb-6">{dict.faq.h2}</h2>
-            <Accordion type="single" collapsible className="w-full">
-            {dict.faq.faqs.map((faq: { q: string, a: string }, index: number) => (
-                <AccordionItem value={`item-${index}`} key={index}>
-                <AccordionTrigger>{faq.q}</AccordionTrigger>
-                <AccordionContent>
-                    <p dangerouslySetInnerHTML={{ __html: faq.a }}></p>
-                </AccordionContent>
-                </AccordionItem>
-            ))}
-            </Accordion>
-        </div>
-
-        <AuthorCard dictionary={dictionary.author_card} />
-
-        <Card id="methodology" className="mt-12 text-sm text-muted-foreground">
-            <CardHeader>
-                <CardTitle className="text-lg flex items-center gap-2">
-                    <HelpCircle className="h-5 w-5"/>
-                    <h2 className="text-2xl font-bold">{dict.methodology.h2}</h2>
-                </CardTitle>
-            </CardHeader>
-            <CardContent className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dict.methodology.body }}/>
-        </Card>
-        <FooterCta dictionary={dictionary.footer_cta} lang={lang} />
-      </div>
-    </div>
+            <Card id="methodology" className="mt-12 text-sm text-muted-foreground print-hide">
+                <CardHeader>
+                    <CardTitle className="text-lg flex items-center gap-2">
+                        <HelpCircle className="h-5 w-5"/>
+                        <h2 className="text-2xl font-bold">{dict.methodology.h2}</h2>
+                    </CardTitle>
+                </CardHeader>
+                <CardContent className="prose dark:prose-invert max-w-none text-sm" dangerouslySetInnerHTML={{ __html: dict.methodology.body.replace(/{lang}/g, lang) }}/>
+            </Card>
+    </CalculatorPageLayout>
   );
 }

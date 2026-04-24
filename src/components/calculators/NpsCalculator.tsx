@@ -6,8 +6,8 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
-import { Loader2, Download, TrendingUp, Twitter, Printer } from 'lucide-react';
-import { Area, AreaChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Loader2, Download, TrendingUp, Twitter, Printer, Info } from 'lucide-react';
+import { Area, AreaChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip as RechartsTooltip, XAxis, YAxis } from 'recharts';
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
@@ -19,6 +19,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { type ChartConfig } from '@/components/ui/chart';
 import type { Dictionary } from '@/lib/types';
 import { RadioGroup, RadioGroupItem } from '../ui/radio-group';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 const formSchema = z.object({
   contribution: z.coerce.number().min(500, 'Minimum contribution is ₹500').max(200000, 'Maximum contribution is ₹2,00,000'),
@@ -57,20 +58,20 @@ type NpsCalculatorProps = {
 };
 
 const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52s-.669-1.611-.916-2.207c-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-    </svg>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52s-.669-1.611-.916-2.207c-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+  </svg>
 );
 
 
@@ -82,7 +83,7 @@ export function NpsCalculator({ dictionary }: NpsCalculatorProps) {
   const [result, setResult] = useState<CalculationResult | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [lastUpdated, setLastUpdated] = useState('');
-  
+
   const form = useForm<NpsFormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -102,7 +103,7 @@ export function NpsCalculator({ dictionary }: NpsCalculatorProps) {
     const params = new URLSearchParams(searchParams.toString());
     const values: Partial<NpsFormValues> = {};
     const mode = params.get('mode');
-    
+
     if (params.get('contribution')) values.contribution = Number(params.get('contribution'));
     if (mode === 'monthly' || mode === 'yearly') values.contributionMode = mode;
     if (params.get('age')) values.currentAge = Number(params.get('age'));
@@ -110,12 +111,12 @@ export function NpsCalculator({ dictionary }: NpsCalculatorProps) {
     if (params.get('returns')) values.expectedReturns = Number(params.get('returns'));
     if (params.get('annuity')) values.annuityPercentage = Number(params.get('annuity'));
     if (params.get('annuityRate')) values.annuityRate = Number(params.get('annuityRate'));
-    
+
     if (Object.keys(values).length > 0) {
       form.reset(values as NpsFormValues);
       handleSubmit(values as NpsFormValues);
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -137,23 +138,23 @@ export function NpsCalculator({ dictionary }: NpsCalculatorProps) {
     let balance = 0;
     let totalInvestment = 0;
     const yearlyData: YearlyData[] = [];
-    
-    for (let i = 1; i <= investmentPeriod; i++) {
-        const openingBalance = balance;
-        const interest = (openingBalance + annualContribution) * r;
-        const closingBalance = openingBalance + annualContribution + interest;
-        balance = closingBalance;
-        totalInvestment += annualContribution;
 
-        yearlyData.push({
-            year: i,
-            age: values.currentAge + i,
-            openingBalance,
-            invested: annualContribution,
-            interest,
-            closingBalance,
-            totalInvestment,
-        });
+    for (let i = 1; i <= investmentPeriod; i++) {
+      const openingBalance = balance;
+      const interest = (openingBalance + annualContribution) * r;
+      const closingBalance = openingBalance + annualContribution + interest;
+      balance = closingBalance;
+      totalInvestment += annualContribution;
+
+      yearlyData.push({
+        year: i,
+        age: values.currentAge + i,
+        openingBalance,
+        invested: annualContribution,
+        interest,
+        closingBalance,
+        totalInvestment,
+      });
     }
 
     const totalCorpus = balance;
@@ -170,7 +171,7 @@ export function NpsCalculator({ dictionary }: NpsCalculatorProps) {
       totalInterest: totalCorpus - totalInvestment,
       yearlyData,
     });
-    
+
     const params = new URLSearchParams();
     params.set('contribution', values.contribution.toString());
     params.set('mode', values.contributionMode);
@@ -183,19 +184,19 @@ export function NpsCalculator({ dictionary }: NpsCalculatorProps) {
 
     setIsLoading(false);
   }
-  
+
   const handlePrint = () => window.print();
 
   const handleShare = (platform: 'whatsapp' | 'twitter') => {
     if (!result) return;
     const url = window.location.href;
     const text = `I just calculated my NPS retirement corpus using BharatSaver's calculator! I'm projected to get a corpus of ${formatCurrency(result.totalCorpus)} and a monthly pension of ${formatCurrency(result.monthlyPension)}. Plan your retirement too:`;
-    
+
     let shareUrl = '';
     if (platform === 'twitter') {
-        shareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`;
+      shareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`;
     } else if (platform === 'whatsapp') {
-        shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(text + ' ' + url)}`;
+      shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(text + ' ' + url)}`;
     }
 
     if (shareUrl) window.open(shareUrl, '_blank');
@@ -234,7 +235,7 @@ export function NpsCalculator({ dictionary }: NpsCalculatorProps) {
     link.click();
     document.body.removeChild(link);
   };
-  
+
   const formatCurrency = (value: number) => {
     return value.toLocaleString('en-IN', {
       style: 'currency',
@@ -243,55 +244,55 @@ export function NpsCalculator({ dictionary }: NpsCalculatorProps) {
       maximumFractionDigits: 0,
     });
   }
-  
+
   const chartConfig = {
     totalInvestment: { label: dictionary.total_investment, color: "hsl(var(--primary))" },
     totalInterest: { label: dictionary.total_interest, color: "hsl(var(--accent))" },
   } satisfies ChartConfig;
 
   return (
-    <>
+    <TooltipProvider>
       <Card className="shadow-lg">
         <CardHeader>
-           <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
+          <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
             <h2 className="flex items-center gap-2 text-xl font-bold">
-                <TrendingUp className="h-6 w-6 text-primary" />
-                <span>{dictionary.title}</span>
+              <TrendingUp className="h-6 w-6 text-primary" />
+              <span>{dictionary.title}</span>
             </h2>
-             {lastUpdated && (
+            {lastUpdated && (
               <p className="text-sm text-muted-foreground mt-1 whitespace-nowrap">{dictionary.last_updated} {lastUpdated}</p>
             )}
-            </div>
-             <CardDescription>{dictionary.form_description}</CardDescription>
+          </div>
+          <CardDescription>{dictionary.form_description}</CardDescription>
         </CardHeader>
         <CardContent>
           <Form {...form}>
             <form onSubmit={form.handleSubmit(handleSubmit)} className="space-y-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
                 <div className="space-y-6">
-                    <FormField
-                        control={form.control}
-                        name="contributionMode"
-                        render={({ field }) => (
-                          <FormItem className="space-y-3">
-                            <FormLabel>{dictionary.contribution_mode}</FormLabel>
-                            <FormControl>
-                                <RadioGroup onValueChange={field.onChange} defaultValue={field.value} className="flex gap-4">
-                                <FormItem className="flex items-center space-x-3 space-y-0">
-                                    <FormControl><RadioGroupItem value="monthly" /></FormControl>
-                                    <FormLabel className="font-normal">{dictionary.monthly_mode}</FormLabel>
-                                </FormItem>
-                                <FormItem className="flex items-center space-x-3 space-y-0">
-                                    <FormControl><RadioGroupItem value="yearly" /></FormControl>
-                                    <FormLabel className="font-normal">{dictionary.yearly_mode}</FormLabel>
-                                </FormItem>
-                                </RadioGroup>
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                    />
-                   <FormField
+                  <FormField
+                    control={form.control}
+                    name="contributionMode"
+                    render={({ field }) => (
+                      <FormItem className="space-y-3">
+                        <FormLabel>{dictionary.contribution_mode}</FormLabel>
+                        <FormControl>
+                          <RadioGroup onValueChange={field.onChange} defaultValue={field.value} className="flex gap-4">
+                            <FormItem className="flex items-center space-x-3 space-y-0">
+                              <FormControl><RadioGroupItem value="monthly" /></FormControl>
+                              <FormLabel className="font-normal">{dictionary.monthly_mode}</FormLabel>
+                            </FormItem>
+                            <FormItem className="flex items-center space-x-3 space-y-0">
+                              <FormControl><RadioGroupItem value="yearly" /></FormControl>
+                              <FormLabel className="font-normal">{dictionary.yearly_mode}</FormLabel>
+                            </FormItem>
+                          </RadioGroup>
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
                     control={form.control}
                     name="contribution"
                     render={({ field }) => (
@@ -311,67 +312,91 @@ export function NpsCalculator({ dictionary }: NpsCalculatorProps) {
                       <FormItem>
                         <FormLabel>{dictionary.expected_returns_label}</FormLabel>
                         <FormControl>
-                           <Input type="number" step="0.1" {...field} />
+                          <Input type="number" step="0.1" {...field} />
                         </FormControl>
-                         <FormMessage />
+                        <FormMessage />
                       </FormItem>
                     )}
                   />
                 </div>
                 <div className="space-y-6">
-                    <FormField
-                      control={form.control}
-                      name="currentAge"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>{dictionary.current_age_label}: {field.value} years</FormLabel>
-                          <FormControl>
-                            <Slider min={18} max={59} step={1} value={[field.value]} onValueChange={(vals) => field.onChange(vals[0])} />
-                          </FormControl>
-                        </FormItem>
-                      )}
-                    />
-                    <FormField
-                      control={form.control}
-                      name="retirementAge"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>{dictionary.retirement_age_label}: {field.value} years</FormLabel>
-                          <FormControl>
-                            <Slider min={60} max={75} step={1} value={[field.value]} onValueChange={(vals) => field.onChange(vals[0])} />
-                          </FormControl>
-                        </FormItem>
-                      )}
-                    />
+                  <FormField
+                    control={form.control}
+                    name="currentAge"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>{dictionary.current_age_label}: {field.value} years</FormLabel>
+                        <FormControl>
+                          <Slider min={18} max={59} step={1} value={[field.value]} onValueChange={(vals) => field.onChange(vals[0])} />
+                        </FormControl>
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name="retirementAge"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>{dictionary.retirement_age_label}: {field.value} years</FormLabel>
+                        <FormControl>
+                          <Slider min={60} max={75} step={1} value={[field.value]} onValueChange={(vals) => field.onChange(vals[0])} />
+                        </FormControl>
+                      </FormItem>
+                    )}
+                  />
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-                  <FormField
-                      control={form.control}
-                      name="annuityPercentage"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>{dictionary.annuity_percentage_label}: {field.value}%</FormLabel>
-                          <FormControl>
-                            <Slider min={40} max={100} step={5} value={[field.value]} onValueChange={(vals) => field.onChange(vals[0])} />
-                          </FormControl>
-                          <CardDescription>{dictionary.annuity_percentage_description}</CardDescription>
-                        </FormItem>
-                      )}
-                  />
-                   <FormField
-                      control={form.control}
-                      name="annuityRate"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>{dictionary.annuity_rate_label}: {field.value}%</FormLabel>
-                          <FormControl>
-                            <Slider min={1} max={15} step={0.5} value={[field.value]} onValueChange={(vals) => field.onChange(vals[0])} />
-                          </FormControl>
-                           <CardDescription>{dictionary.annuity_rate_description}</CardDescription>
-                        </FormItem>
-                      )}
-                  />
+                <FormField
+                  control={form.control}
+                  name="annuityPercentage"
+                  render={({ field }) => (
+                    <FormItem>
+                      <div className="flex items-center gap-2">
+                        <FormLabel>{dictionary.annuity_percentage_label}: {field.value}%</FormLabel>
+                        <Tooltip>
+                          <TooltipTrigger asChild>
+                            <button type="button" className="inline-flex" tabIndex={-1}>
+                              <Info className="h-4 w-4 text-muted-foreground hover:text-primary transition-colors" />
+                            </button>
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p className="max-w-xs text-sm">Minimum 40% of the corpus must be used to purchase an annuity (pension) at retirement. The remaining can be withdrawn as a lump sum.</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </div>
+                      <FormControl>
+                        <Slider min={40} max={100} step={5} value={[field.value]} onValueChange={(vals) => field.onChange(vals[0])} />
+                      </FormControl>
+                      <CardDescription>{dictionary.annuity_percentage_description}</CardDescription>
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="annuityRate"
+                  render={({ field }) => (
+                    <FormItem>
+                      <div className="flex items-center gap-2">
+                        <FormLabel>{dictionary.annuity_rate_label}: {field.value}%</FormLabel>
+                        <Tooltip>
+                          <TooltipTrigger asChild>
+                            <button type="button" className="inline-flex" tabIndex={-1}>
+                              <Info className="h-4 w-4 text-muted-foreground hover:text-primary transition-colors" />
+                            </button>
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p className="max-w-xs text-sm">The expected interest rate on the purchased annuity which determines your monthly pension amount. Usually between 5-7%.</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </div>
+                      <FormControl>
+                        <Slider min={1} max={15} step={0.5} value={[field.value]} onValueChange={(vals) => field.onChange(vals[0])} />
+                      </FormControl>
+                      <CardDescription>{dictionary.annuity_rate_description}</CardDescription>
+                    </FormItem>
+                  )}
+                />
               </div>
 
               <Button type="submit" disabled={isLoading} className="w-full md:w-auto">
@@ -408,48 +433,48 @@ export function NpsCalculator({ dictionary }: NpsCalculatorProps) {
                 <p className="text-xl font-bold text-accent-foreground">{formatCurrency(result.totalInterest)}</p>
               </div>
             </div>
-             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 text-center">
-                <div className="bg-muted p-4 rounded-lg">
-                    <p className="text-sm text-muted-foreground">{dictionary.lump_sum_value}</p>
-                    <p className="text-xl font-bold">{formatCurrency(result.lumpSumValue)}</p>
-                </div>
-                 <div className="bg-muted p-4 rounded-lg">
-                    <p className="text-sm text-muted-foreground">{dictionary.annuity_value}</p>
-                    <p className="text-xl font-bold">{formatCurrency(result.annuityValue)}</p>
-                </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 text-center">
+              <div className="bg-muted p-4 rounded-lg">
+                <p className="text-sm text-muted-foreground">{dictionary.lump_sum_value}</p>
+                <p className="text-xl font-bold">{formatCurrency(result.lumpSumValue)}</p>
+              </div>
+              <div className="bg-muted p-4 rounded-lg">
+                <p className="text-sm text-muted-foreground">{dictionary.annuity_value}</p>
+                <p className="text-xl font-bold">{formatCurrency(result.annuityValue)}</p>
+              </div>
             </div>
 
 
             <Tabs defaultValue="chart">
-                <div className="flex flex-wrap items-center justify-between gap-4">
-                    <TabsList className="grid w-full grid-cols-2 md:w-auto md:inline-grid">
-                        <TabsTrigger value="chart">{dictionary.view_chart}</TabsTrigger>
-                        <TabsTrigger value="table">{dictionary.view_table}</TabsTrigger>
-                    </TabsList>
-                    <div className="flex flex-wrap gap-2">
-                        <Button variant="outline" size="sm" onClick={() => handleShare('whatsapp')}><WhatsAppIcon className="mr-2 h-4 w-4" /> WhatsApp</Button>
-                        <Button variant="outline" size="sm" onClick={() => handleShare('twitter')}><Twitter className="mr-2 h-4 w-4" /> Twitter</Button>
-                        <Button variant="outline" size="sm" onClick={handlePrint}><Printer className="mr-2 h-4 w-4" /> Print</Button>
-                        <Button variant="outline" size="sm" onClick={handleCSVExport}><Download className="mr-2 h-4 w-4" />{dictionary.export_csv}</Button>
-                    </div>
+              <div className="flex flex-wrap items-center justify-between gap-4">
+                <TabsList className="grid w-full grid-cols-2 md:w-auto md:inline-grid">
+                  <TabsTrigger value="chart">{dictionary.view_chart}</TabsTrigger>
+                  <TabsTrigger value="table">{dictionary.view_table}</TabsTrigger>
+                </TabsList>
+                <div className="flex flex-wrap gap-2">
+                  <Button variant="outline" size="sm" onClick={() => handleShare('whatsapp')}><WhatsAppIcon className="mr-2 h-4 w-4" /> WhatsApp</Button>
+                  <Button variant="outline" size="sm" onClick={() => handleShare('twitter')}><Twitter className="mr-2 h-4 w-4" /> Twitter</Button>
+                  <Button variant="outline" size="sm" onClick={handlePrint}><Printer className="mr-2 h-4 w-4" /> Print</Button>
+                  <Button variant="outline" size="sm" onClick={handleCSVExport}><Download className="mr-2 h-4 w-4" />{dictionary.export_csv}</Button>
                 </div>
+              </div>
 
               <TabsContent value="chart" className="pt-4">
                 <ResponsiveContainer width="100%" height={400}>
-                   <AreaChart data={result.yearlyData} margin={{ top: 10, right: 30, left: 20, bottom: 0 }}>
-                     <defs>
-                      <linearGradient id="colorInvestment" x1="0" y1="0" x2="0" y2="1"><stop offset="5%" stopColor="hsl(var(--primary))" stopOpacity={0.8}/><stop offset="95%" stopColor="hsl(var(--primary))" stopOpacity={0}/></linearGradient>
-                      <linearGradient id="colorInterest" x1="0" y1="0" x2="0" y2="1"><stop offset="5%" stopColor="hsl(var(--accent))" stopOpacity={0.8}/><stop offset="95%" stopColor="hsl(var(--accent))" stopOpacity={0}/></linearGradient>
+                  <AreaChart data={result.yearlyData} margin={{ top: 10, right: 30, left: 20, bottom: 0 }}>
+                    <defs>
+                      <linearGradient id="colorInvestment" x1="0" y1="0" x2="0" y2="1"><stop offset="5%" stopColor="hsl(var(--primary))" stopOpacity={0.8} /><stop offset="95%" stopColor="hsl(var(--primary))" stopOpacity={0} /></linearGradient>
+                      <linearGradient id="colorInterest" x1="0" y1="0" x2="0" y2="1"><stop offset="5%" stopColor="hsl(var(--accent))" stopOpacity={0.8} /><stop offset="95%" stopColor="hsl(var(--accent))" stopOpacity={0} /></linearGradient>
                     </defs>
                     <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="age" label={{ value: dictionary.age_label, position: 'insideBottom', offset: -10 }}/>
-                    <YAxis tickFormatter={(value) => (value / 100000).toLocaleString('en-IN') + 'L'} label={{ value: dictionary.amount_in_lakhs, angle: -90, position: 'insideLeft' }}/>
-                    <Tooltip 
-                       contentStyle={{ borderRadius: "var(--radius)", border: "1px solid hsl(var(--border))", background: "hsl(var(--background))" }}
-                       formatter={(value: number, name: string) => [formatCurrency(value), chartConfig[name as keyof typeof chartConfig]?.label]}
+                    <XAxis dataKey="age" label={{ value: dictionary.age_label, position: 'insideBottom', offset: -10 }} />
+                    <YAxis tickFormatter={(value) => (value / 100000).toLocaleString('en-IN') + 'L'} label={{ value: dictionary.amount_in_lakhs, angle: -90, position: 'insideLeft' }} />
+                    <RechartsTooltip
+                      contentStyle={{ borderRadius: "var(--radius)", border: "1px solid hsl(var(--border))", background: "hsl(var(--background))" }}
+                      formatter={(value: number, name: string) => [formatCurrency(value), chartConfig[name as keyof typeof chartConfig]?.label]}
                     />
                     <Legend />
-                    <Area type="monotone" dataKey="totalInvestment" stackId="1" stroke="hsl(var(--primary))" fill="url(#colorInvestment)" name="totalInvestment"/>
+                    <Area type="monotone" dataKey="totalInvestment" stackId="1" stroke="hsl(var(--primary))" fill="url(#colorInvestment)" name="totalInvestment" />
                     <Area type="monotone" dataKey="interest" stackId="1" stroke="hsl(var(--accent))" fill="url(#colorInterest)" name="totalInterest" />
                   </AreaChart>
                 </ResponsiveContainer>
@@ -486,6 +511,6 @@ export function NpsCalculator({ dictionary }: NpsCalculatorProps) {
           </CardContent>
         </Card>
       )}
-    </>
+    </TooltipProvider>
   );
 }

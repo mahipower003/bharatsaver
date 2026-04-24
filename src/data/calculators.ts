@@ -219,16 +219,7 @@ export const calculators: CalculatorType[] = [
     lastModified: '2024-10-20',
     image: '/images/lic-child-plan-calculator.png'
   },
-  {
-    slug: 'lic-new-jeevan-anand-calculator',
-    title: 'LIC New Jeevan Anand Calculator',
-    description: 'Estimate premium & maturity for LIC\'s New Jeevan Anand (Plan 915).',
-    summary: 'Use our free LIC New Jeevan Anand calculator to estimate premiums, maturity, surrender and paid-up values for Plan 915. Includes bonus calculations and PDF download.',
-    icon: ShieldCheck,
-    link_text: 'Calculate Now',
-    lastModified: '2024-10-18',
-    image: '/images/lic-new-jeevan-anand-calculator.png'
-  },
+
   {
     slug: 'lic-term-insurance',
     title: 'LIC Term Insurance Calculator',
