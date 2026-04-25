@@ -2,14 +2,14 @@
 'use client';
 
 import { LicSinglePremiumEndowmentCalculator } from "@/components/calculators/LicSinglePremiumEndowmentCalculator";
-import { AuthorCard } from "@/components/layout/AuthorCard";
+
 import type { Dictionary } from "@/lib/types";
 import type { Locale } from "@/lib/i18n-config";
-import { FooterCta } from "@/components/layout/FooterCta";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { CheckCircle, HelpCircle, ShieldCheck, TrendingUp, SlidersHorizontal, BarChart2, StepForward, GitCompareArrows, FileText, Users } from "lucide-react";
+import { CalculatorPageLayout } from "@/components/layout/CalculatorPageLayout";
 
 function getIcon(iconName: string) {
     switch (iconName) {
@@ -174,39 +174,39 @@ export default function LicSinglePremiumEndowmentCalculatorPageClient({
     </div>
   );
 
+  const faqs = faqItems.map((f: {q: string; a: string}) => ({ question: f.q, answer: f.a }));
+
   return (
-    <div className="py-12">
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([faqSchema, howToSchema, financialProductSchema]) }} />
-      <div className="mx-auto max-w-5xl">
-        <header className="text-center mb-8 print-hide">
-            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{__html: pageDict.h1}} />
-            <div className="mt-4 text-lg text-muted-foreground prose dark:prose-invert max-w-none mx-auto" dangerouslySetInnerHTML={{__html: pageDict.description}} />
-        </header>
-        
+    <CalculatorPageLayout
+      lang={params.lang}
+      dictionary={dictionary}
+      pageDict={pageDict}
+      h1={pageDict.h1}
+      description={pageDict.description}
+      lastUpdated="September 2025"
+      calculator={
         <div id="calculator-widget">
           <LicSinglePremiumEndowmentCalculator dictionary={pageDict.tool} />
         </div>
-
-        <ArticleContent />
-        
+      }
+      faqs={faqs}
+      faqTitle="Frequently Asked Questions"
+      pageUrl={pageUrl}
+    >
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([faqSchema, howToSchema, financialProductSchema]) }} />
+      <ArticleContent />
+      {pageDict.article?.conclusion && (
         <Card className="shadow-lg mt-8 bg-primary/10 border-primary/20">
-            <CardHeader>
-                <CardTitle className="flex items-center gap-3">
-                    <h2 className="text-2xl font-bold">{pageDict.article.conclusion.title}</h2>
-                </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground" dangerouslySetInnerHTML={{__html: pageDict.article.conclusion.body}} />
-            </CardContent>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-3">
+              <h2 className="text-2xl font-bold">{pageDict.article.conclusion?.title || 'Conclusion'}</h2>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-muted-foreground" dangerouslySetInnerHTML={{__html: (pageDict.article.conclusion?.body || '').replace(/{lang}/g, params.lang)}} />
+          </CardContent>
         </Card>
-
-        <div className="mt-12 print-hide">
-            <AuthorCard dictionary={dictionary.author_card} />
-        </div>
-        <div className="print-hide">
-            <FooterCta dictionary={dictionary.footer_cta} lang={params.lang} />
-        </div>
-      </div>
-    </div>
+      )}
+    </CalculatorPageLayout>
   );
 }

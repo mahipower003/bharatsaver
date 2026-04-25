@@ -7,7 +7,6 @@ import { LicJeevanUmangCalculator } from "@/components/calculators/LicJeevanUman
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { AuthorCard } from "@/components/layout/AuthorCard";
 import Link from 'next/link';
 import { BarChart, FileText, CheckCircle, SlidersHorizontal, GitCompareArrows, AlertTriangle, Users, BookUser, Star, HelpCircle, UserCheck, Calculator, Landmark, Video } from "lucide-react";
 import Image from "next/image";
