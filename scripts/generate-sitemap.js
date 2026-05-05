@@ -1,10 +1,9 @@
 
 // scripts/generate-sitemap.js
-const fs = require('fs');
-const path = require('path');
-// const { calculators } = require('../dist/data/calculators');
-const { calculators } = require('../src/data/calculators');
-const { i18nConfig } = require('../src/lib/i18n-config');
+import fs from 'fs';
+import path from 'path';
+import { calculators } from '../src/data/calculators';
+import { i18nConfig } from '../src/lib/i18n-config';
 
 
 const staticPages = [

@@ -1,8 +1,8 @@
 {
-  "meta_title": "LIC Maturity Calculator — Calculate Your LIC Policy Maturity Online (Free)",
-  "meta_description": "Use our free LIC maturity calculator to estimate maturity, surrender and paid-up values for LIC plans. Enter sum assured, term, bonus rate & get instant downloadable results.",
-  "h1": "LIC Maturity Calculator — Estimate Your LIC Policy Maturity Instantly (Tool + Guide)",
-  "top_cta": "<strong>Get an instant estimate:</strong> Enter your plan, sum assured and term — click Calculate to view maturity, surrender and paid-up values. <a href=\"#calculator-widget\">Start now</a>",
+  "meta_title": "LIC Maturity Calculator – Calculate Your Policy's Maturity Value",
+  "meta_description": "Use our free LIC maturity calculator to estimate your policy's maturity value (sum assured + bonuses). Includes formula, example calculation, and FAQs.",
+  "h1": "LIC Maturity Calculator – Estimate Your LIC Policy's Maturity Value",
+  "top_cta": "<strong>Get an instant estimate:</strong> Enter your sum assured, term, and bonus rate to view your maturity, surrender, and paid-up values. <a href=\"#calculator-widget\">Start now</a>",
   "tool": {
     "title": "Quick LIC Maturity Calculator",
     "description": "Enter your policy details to get an instant estimate of your maturity, surrender, and paid-up values.",
@@ -23,168 +23,205 @@
   },
   "sections": [
     {
-      "id": "quick-answer",
-      "icon": "TableIcon",
-      "title": "Quick Answer: Sample LIC Maturity Estimates",
-      "description": "Curious what a typical LIC policy yields? Here are some illustrative maturity amounts for a standard endowment plan with an assumed bonus rate of ₹45 per ₹1,000 Sum Assured. Use our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> to get plan-specific estimates.",
+      "id": "introduction",
+      "icon": "BookUser",
+      "title": "What Is an LIC Maturity Calculator?",
       "content": [
         {
-          "type": "table",
-          "headers": [
-            "Sum Assured",
-            "Term",
-            "Total Premiums Paid (approx)",
-            "Estimated Maturity (approx)"
-          ],
-          "rows": [
-            [
-              "₹5,00,000",
-              "20 yrs",
-              "₹4,50,000",
-              "₹9,50,000"
-            ],
-            [
-              "₹10,00,000",
-              "25 yrs",
-              "₹8,40,000",
-              "₹22,00,000"
-            ],
-            [
-              "₹1,00,00,000",
-              "20 yrs",
-              "₹90,00,000",
-              "₹2,10,00,000"
-            ]
+          "type": "paragraph",
+          "text": "You have an LIC policy and want to know how much it will pay out when it ends. An <strong>LIC maturity calculator</strong> is an online financial tool that computes the approximate maturity value of your LIC policy by using inputs like your sum assured, policy term, and bonus rates. Think of it as a shortcut – no manual math, no confusion. You simply enter your policy details, and it instantly shows you the projected maturity payout."
+        },
+        {
+          "type": "paragraph",
+          "text": "For example, industry experts explain that by entering your premium, tenure, and bonuses, the calculator provides an approximate value of the amount you may receive when the policy matures. This helps you plan for life events like education or retirement because you'll know your guaranteed sum plus any declared bonuses. LIC policies are backed by a <strong>sovereign guarantee (LIC Act, Sec. 37)</strong>, meaning the core maturity amount is highly secure. Using our tool, you'll get those numbers in seconds."
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>How the Calculator Helps You:</strong>"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Quick Estimates:</strong> Get instant maturity and bonus values without manual calculations.",
+            "<strong>Financial Planning:</strong> Understand your policy's returns early to compare with other investments.",
+            "<strong>Policy Check:</strong> If you already have a policy, verify its health or see how changes (e.g., paying extra years) affect the payout.",
+            "<strong>Plan Comparison:</strong> Use it across different plans like Endowment or <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>Jeevan Anand</a>."
           ]
+        },
+        {
+          "type": "alert",
+          "variant": "default",
+          "title": "Important Note",
+          "text": "This tool calculates the <strong>approximate maturity amount</strong> including bonuses. It is an estimate. Actual payouts depend on <a href='https://licindia.in' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>LIC of India's</a> official bonus declarations."
         }
       ]
     },
     {
       "id": "how-it-works",
       "icon": "Calculator",
-      "title": "How to Calculate LIC Policy Maturity Value Online",
-      "description": "This calculator demystifies your LIC policy returns by applying the standard formula used for traditional endowment plans. Understand how LIC compares to other investment options with our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF comparison</a> and <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax optimization guide</a>. Here's the core logic:",
+      "title": "How the LIC Maturity Calculator Works",
       "content": [
         {
-          "type": "formula",
-          "text": "<strong>Maturity Value = Basic Sum Assured + (Vested Bonus × Policy Term) + Final Additional Bonus (FAB)</strong>"
-        },
-        {
           "type": "paragraph",
-          "text": "<h4>Formula Breakdown:</h4>"
+          "text": "Under the hood, the maturity calculator applies the standard formula used for traditional LIC endowment policies. It breaks down into three core components:"
         },
         {
           "type": "list",
           "items": [
-            "<strong>Basic Sum Assured (SA):</strong> The guaranteed amount you receive at maturity.",
-            "<strong>Vested Simple Reversionary Bonus:</strong> This is the bonus declared by LIC each year. It's calculated per ₹1,000 of your Sum Assured. For example, if the bonus rate is ₹42 and your SA is ₹10 Lakh, the bonus for that year is (10,00,000 / 1000) * 42 = ₹42,000. Our calculator multiplies this annual bonus by the policy term to find the total.",
-            "<strong>Final Additional Bonus (FAB):</strong> This is a one-time loyalty bonus paid at maturity for policies that have run for a long duration (typically 15+ years). It is also calculated per ₹1,000 SA and varies widely. You can input an illustrative rate, or leave it blank."
+            "<strong>Basic Sum Assured (SA):</strong> The guaranteed payout on maturity.",
+            "<strong>Vested Bonuses:</strong> LIC declares a simple reversionary bonus each year (₹ per ₹1,000 SA). Over the policy term, these accumulate.",
+            "<strong>Final Additional Bonus (FAB):</strong> A one-time loyalty bonus paid at maturity for long-term policies."
           ]
-        },
-        {
-          "type": "alert",
-          "variant": "default",
-          "title": "Key Assumptions",
-          "text": "<ul><li>The bonus rates you enter are illustrative and assumed to remain constant for the entire policy term. Actual bonuses depend on LIC's performance and are not guaranteed.</li><li>GST paid on premiums is not included in the 'Total Premiums Paid' calculation, as it does not contribute to the maturity value.</li></ul>"
-        }
-      ]
-    },
-    {
-      "id": "death-benefit",
-      "icon": "ShieldCheck",
-      "title": "Death Benefit Explained",
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "In the unfortunate event of the policyholder's death during the policy term, the nominee receives the 'Sum Assured on Death' plus any vested bonuses. This 'Sum Assured on Death' is defined as the higher of:"
-        },
-        {
-          "type": "list",
-          "items": [
-            "<strong>125% of the Basic Sum Assured</strong>",
-            "<strong>7 times the annualized premium</strong>"
-          ]
-        },
-        {
-          "type": "alert",
-          "variant": "default",
-          "title": "Example",
-          "text": "For a ₹10 Lakh policy with an annual premium of ₹50,000, the Sum Assured on Death would be the higher of ₹12.5 Lakh (125% of 10L) or ₹3.5 Lakh (7 x 50k), which is <strong>₹12.5 Lakh</strong>, plus any accumulated bonuses."
-        }
-      ]
-    },
-    {
-      "id": "paid-up-value",
-      "icon": "FileText",
-      "title": "Paid-Up Value Explained",
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "If you stop paying premiums after at least two full years, your policy doesn't lapse completely. It becomes a 'paid-up' policy with reduced benefits. You don't have to pay any more premiums, and you will receive the 'Paid-up Sum Assured' plus vested bonuses at maturity."
         },
         {
           "type": "formula",
-          "text": "<strong>Paid-up Value = Sum Assured × (No. of Premiums Paid / Total Premiums Payable)</strong>"
+          "text": "<strong>Maturity Value = Basic Sum Assured + (Annual Bonus Rate × SA/1000 × Policy Term) + (FAB Rate × SA/1000)</strong>"
         },
         {
-          "type": "alert",
-          "variant": "default",
-          "title": "Example",
-          "text": "If you have a 25-year policy with a ₹10 Lakh Sum Assured and a 16-year PPT, and you stop paying after 8 years, your Paid-up Sum Assured becomes: ₹10,00,000 * (8 / 16) = <strong>₹5,00,000</strong>. This amount, plus bonuses accrued for 8 years, will be paid at maturity."
-        }
-      ]
-    },
-    {
-      "id": "inputs-explained",
-      "icon": "HelpCircle",
-      "title": "Inputs Explained: What You Must Enter",
-      "content": [
-        {
-          "type": "list",
-          "items": [
-            "<strong>Plan Preset:</strong> Selecting a specific plan like 'Jeevan Labh' helps the tool apply correct Premium Paying Terms (PPT) and typical bonus ranges. Explore our <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh calculator</a>, <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>Jeevan Anand calculator</a>, or other <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC plans</a> for specific comparisons.",
-            "<strong>Premium & Term:</strong> The annual premium and the full policy term are needed to calculate total investment. Note the difference between Policy Term (e.g., 25 years) and Premium Paying Term (e.g., 16 years for Jeevan Labh).",
-            "<strong>Bonus & FAB Rates:</strong> The most critical inputs for an accurate estimate. You can find these in your annual policy statement or use the historical average of ₹40-₹48 as a guideline.",
-            "<strong>Surrender/Loan Dates:</strong> Your Date of Birth and the date of the last premium paid are required to calculate the precise Surrender Value and loan eligibility. Use our <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC surrender value calculator</a> for detailed analysis."
-          ]
+          "type": "paragraph",
+          "text": "This is the core <strong>LIC maturity calculation formula</strong>. It assumes that the illustrative bonus rate you enter remains constant each year."
         }
       ]
     },
     {
       "id": "worked-examples",
-      "icon": "FileText",
-      "title": "Worked Examples & IRR Calculation",
+      "icon": "StepForward",
+      "title": "Example: Calculating an LIC Maturity Amount",
       "content": [
         {
           "type": "paragraph",
-          "text": "<h4>Example 1: 30-Year-Old, ₹10 Lakh Cover, 25-Year Term</h4><p><strong>Inputs:</strong> SA = ₹10L, Term = 25 yrs, Annual Premium ≈ ₹42,000, Bonus Rate = ₹45/1000, FAB Rate = ₹100/1000.</p><p><strong>Calculation:</strong><br/>Maturity = 10,00,000 + ( (10,00,000/1000)*45*25 ) + ( (10,00,000/1000)*100 )<br/>= 10,00,000 + 11,25,000 + 1,00,000 = <strong>₹22,25,000</strong><br/><strong>Approx. IRR:</strong> ~6.1% (tax-free)</p>"
-        },
-        {
-          "type": "paragraph",
-          "text": "<h4>Example 2: 35-Year-Old, ₹5 Lakh Cover, 15-Year Term</h4><p><strong>Inputs:</strong> SA = ₹5L, Term = 15 yrs, Annual Premium ≈ ₹34,000, Bonus Rate = ₹40/1000.</p><p><strong>Calculation:</strong><br/>Maturity = 5,00,000 + ( (5,00,000/1000)*40*15 )<br/>= 5,00,000 + 3,00,000 = <strong>₹8,00,000</strong><br/><strong>Approx. IRR:</strong> ~5.8% (tax-free)</p>"
-        }
-      ]
-    },
-    {
-      "id": "surrender-loan",
-      "icon": "TrendingUp",
-      "title": "Surrender, Paid-up and Loan Calculations",
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "<p>After paying premiums for at least 2 full years, your policy gains a 'Surrender Value'. This value is used to determine how much you get if you close the policy early, or how much you can borrow against it.</p>"
+          "text": "Let’s run a quick example to see how the <strong>LIC maturity amount calculator</strong> works in practice:"
         },
         {
           "type": "list",
           "items": [
-            "<strong>Guaranteed Surrender Value (GSV):</strong> A percentage of total premiums paid (e.g., 30% after 3 years) plus a percentage of vested bonuses. This is the minimum you'll receive.",
-            "<strong>Special Surrender Value (SSV):</strong> A higher, non-guaranteed value calculated by LIC, often closer to the real cash value. Our calculator estimates this.",
-            "<strong>Loan:</strong> You can typically borrow up to 90% of the Special Surrender Value."
+            "<strong>Policy:</strong> Endowment Plan",
+            "<strong>Sum Assured:</strong> ₹10,00,000",
+            "<strong>Term:</strong> 20 years",
+            "<strong>Annual Premium (approx):</strong> ₹50,000",
+            "<strong>Bonus Rate:</strong> ₹40 per ₹1,000 SA",
+            "<strong>Final Additional Bonus (FAB):</strong> ₹80 per ₹1,000 SA"
           ]
         },
         {
           "type": "paragraph",
-          "text": "<p><strong>Loan Calculation Example:</strong> If you've paid ₹2 Lakh in premiums over 5 years, your SSV might be around ₹1.5 Lakh. You could then take a loan of up to 90% of that, which is <strong>₹1.35 Lakh</strong>.</p>"
+          "text": "<strong>Step 1:</strong> Enter the details above into the calculator.<br><strong>Step 2:</strong> The calculator does the math:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Vested Bonuses = (10,00,000 / 1000) × 40 × 20 = <strong>₹8,00,000</strong>",
+            "FAB = (10,00,000 / 1000) × 80 = <strong>₹80,000</strong>",
+            "<strong>Estimated Maturity Value = ₹10,00,000 + ₹8,00,000 + ₹80,000 = ₹18,80,000</strong>"
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Component",
+            "Amount (₹)"
+          ],
+          "rows": [
+            [
+              "Sum Assured",
+              "10,00,000"
+            ],
+            [
+              "Total Vested Bonuses",
+              "8,00,000"
+            ],
+            [
+              "Final Additional Bonus",
+              "80,000"
+            ],
+            [
+              "<strong>Total Maturity Value</strong>",
+              "<strong>18,80,000</strong>"
+            ]
+          ],
+          "footer": "Numbers are illustrative. You can adjust the bonus input to see how it changes the final payout."
+        }
+      ]
+    },
+    {
+      "id": "interpreting-results",
+      "icon": "FileText",
+      "title": "Interpreting Your LIC Maturity Results",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "After using the <strong>LIC policy maturity value calculator</strong>, you'll see a breakdown of your payout. Here is how to interpret those numbers:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Tax-Free Payout:</strong> The maturity amount you receive is generally tax-free under Section 10(10D) of the Income Tax Act, provided the annual premium doesn't exceed 10% of the sum assured.",
+            "<strong>Bonuses:</strong> The <strong>LIC maturity calculator with bonus</strong> includes simple reversionary bonuses added every year. A higher declared bonus rate from LIC means a larger payout.",
+            "<strong>FAB:</strong> The Final Additional Bonus is a loyalty reward. If your policy term is under 15 years, this might be zero. Leave it blank if unsure."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Note that the payout you actually receive includes these main components (SA + bonuses). If you stop paying premiums early, your policy goes 'paid-up', and the calculator adjusts the results accordingly."
+        }
+      ]
+    },
+    {
+      "id": "common-scenarios",
+      "icon": "SlidersHorizontal",
+      "title": "Common Scenarios: Surrender, Bonus Changes, Partial Payments",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "<strong>Surrender:</strong> If you exit the policy early, the calculator also shows the guaranteed surrender value and current surrender value. These will be lower than maturity, so you can compare whether to hold or surrender. You can use our dedicated <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC surrender value calculator</a> for an in-depth analysis."
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Bonus Changes:</strong> LIC bonuses can change annually. If you anticipate higher or lower future bonuses, you can rerun the <strong>LIC return calculator</strong> with a different bonus rate to simulate scenarios."
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Partial Payment (Paid-Up):</strong> If you stop paying premiums after at least 2 years, your policy continues as paid-up. The Paid-Up Value is calculated as <em>SA × (premiums paid / premiums payable)</em>. You will receive that reduced SA plus bonuses earned up to the stop date."
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Loan Eligibility:</strong> You can take a loan against your LIC policy. The calculator shows loan eligibility based on current surrender values, helping you secure short-term funds without closing the policy."
+        }
+      ]
+    },
+    {
+      "id": "pros-cons",
+      "icon": "GitCompareArrows",
+      "title": "Pros and Cons of Using an Online Calculator",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Like any financial tool, this calculator has its advantages and limitations:"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Pros",
+            "Cons"
+          ],
+          "rows": [
+            [
+              "<strong>Fast & Easy:</strong> No manual math or waiting for official statements.",
+              "<strong>Estimates Only:</strong> Based on assumed constant bonus rates. Actual bonuses differ."
+            ],
+            [
+              "<strong>Planning Aid:</strong> Easily compare LIC plans with PPF or mutual funds.",
+              "<strong>Input Errors:</strong> Entering incorrect terms or premiums will skew the results."
+            ],
+            [
+              "<strong>Visual Breakdown:</strong> See SA, bonuses, and FAB separated clearly.",
+              "<strong>Not Official:</strong> For absolute accuracy, always check LIC's customer portal."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Overall, the calculator is an excellent educational resource. It gives you a clear understanding of your policy's performance so you can make informed decisions."
         }
       ]
     },
@@ -192,163 +229,39 @@
       "id": "bonus-rates",
       "icon": "BarChart2",
       "title": "LIC Bonus Rates (Historical Trends)",
-      "description": "The 'bonus rate' is the most important variable in your maturity calculation. LIC declares this rate each year. While not guaranteed, looking at past rates gives a realistic expectation.",
       "content": [
+        {
+          "type": "paragraph",
+          "text": "The bonus rate is the most important variable in your calculation. LIC declares this rate each year. While not guaranteed, looking at past rates gives a realistic expectation for traditional endowment policies."
+        },
         {
           "type": "bar_chart",
           "data": [
-            {
-              "name": "2015-16",
-              "value": 48
-            },
-            {
-              "name": "2016-17",
-              "value": 44
-            },
-            {
-              "name": "2017-18",
-              "value": 43
-            },
-            {
-              "name": "2018-19",
-              "value": 42
-            },
-            {
-              "name": "2019-20",
-              "value": 40
-            },
-            {
-              "name": "2020-21",
-              "value": 44
-            },
-            {
-              "name": "2021-22",
-              "value": 45
-            },
-            {
-              "name": "2022-23",
-              "value": 46
-            },
-            {
-              "name": "2023-24",
-              "value": 48
-            }
+            { "name": "2015-16", "value": 48 },
+            { "name": "2016-17", "value": 44 },
+            { "name": "2017-18", "value": 43 },
+            { "name": "2018-19", "value": 42 },
+            { "name": "2019-20", "value": 40 },
+            { "name": "2020-21", "value": 44 },
+            { "name": "2021-22", "value": 45 },
+            { "name": "2022-23", "value": 46 },
+            { "name": "2023-24", "value": 48 }
           ]
         }
       ]
     },
     {
-      "id": "alternatives",
-      "icon": "GitCompareArrows",
-      "title": "Compare: LIC Maturity vs. Other Investments",
+      "id": "conclusion",
+      "icon": "StepForward",
+      "title": "Use the Tool: Calculate Your Maturity",
       "content": [
         {
           "type": "paragraph",
-          "text": "How does an LIC maturity payout stack up against other popular investment options? Compare LIC with <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF</a>, <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF returns</a>, and explore our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> for comprehensive planning."
-        },
-        {
-          "type": "table",
-          "headers": [
-            "Instrument",
-            "Typical Return (p.a.)",
-            "Risk Level",
-            "Tax on Maturity"
-          ],
-          "rows": [
-            [
-              "LIC Endowment",
-              "~5-6%",
-              "Very Low (Sovereign-backed)",
-              "Tax-Free (u/s 10(10D))"
-            ],
-            [
-              "Bank FD",
-              "~7%",
-              "Low",
-              "Taxable as per slab"
-            ],
-            [
-              "PPF",
-              "~7.1%",
-              "Very Low (Sovereign)",
-              "Tax-Free"
-            ],
-            [
-              "Equity Mutual Funds",
-              "~12-15%",
-              "High (Market Risk)",
-              "Taxable (LTCG > ₹1L)"
-            ]
-          ]
+          "text": "Ready to see your own numbers? Scroll up and enter your policy details in the <strong>LIC Maturity Calculator</strong> above. You'll immediately get your estimated maturity, surrendered, and paid-up values. The faster and more accurately you plan, the better prepared you'll be for the future."
         },
         {
           "type": "paragraph",
-          "text": "<br>Even within LIC, different plans serve different purposes. Use our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> to compare premiums across all major plans."
-        },
-        {
-          "type": "table",
-          "headers": [
-            "Feature",
-            "Jeevan Labh",
-            "Jeevan Anand",
-            "Single Premium"
-          ],
-          "rows": [
-            [
-              "Payment",
-              "Limited (e.g. 16/25)",
-              "Regular (Full Term)",
-              "One-Time"
-            ],
-            [
-              "Best For",
-              "Goal-based savings",
-              "Legacy + Savings",
-              "Lump-sum investors"
-            ],
-            [
-              "Maturity",
-              "SA + Bonus + FAB",
-              "SA + Bonus + FAB",
-              "SA + Bonus + FAB"
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "id": "plan-specifics",
-      "icon": "LinkIcon",
-      "title": "Also Read: Related Calculators",
-      "description": "Explore our other tools to get a complete financial picture.",
-      "content": [
-        {
-          "type": "card_link",
-          "icon": "Calculator",
-          "title": "LIC Jeevan Labh Calculator",
-          "description": "Limited premium plan for goal-based savings.",
-          "href": "/lic-jeevan-labh-calculator"
-        },
-        {
-          "type": "card_link",
-          "icon": "Calculator",
-          "title": "LIC Single Premium Calculator",
-          "description": "For one-time lump sum investments.",
-          "href": "/lic-single-premium-endowment-calculator"
-        },
-        {
-          "type": "card_link",
-          "icon": "FileText",
-          "title": "LIC Surrender Value Calculator",
-          "description": "Understand the financial implications before you surrender a policy.",
-          "href": "/lic-surrender-value-calculator"
-        },
-        {
-          "type": "card_link",
-          "icon": "LinkIcon",
-          "title": "All LIC Premium Calculators",
-          "description": "Explore premiums for all popular plans.",
-          "href": "/lic-premium-calculator"
+          "text": "Still not convinced? Try a few different scenarios (higher bonuses, longer term) to see how it changes. Then, share your results with an LIC agent or financial advisor. Use our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> to compare new policies, or the <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> for your long-term goals."
         }
       ]
     },
@@ -361,109 +274,34 @@
           "type": "faq",
           "items": [
             {
-              "q": "How do I calculate my LIC policy maturity amount?",
-              "a": "Enter sum assured, policy term, and an illustrative bonus rate per ₹1,000 SA into the calculator. Maturity = Sum Assured + (Vested bonus × policy term) + Final Additional Bonus (if any). For other LIC plans, use our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a>."
+              "q": "What is an LIC Maturity Calculator?",
+              "a": "An LIC maturity calculator is an online tool that estimates the maturity amount of an LIC policy by using inputs like sum assured, policy term, and bonuses. It saves you from doing manual math."
             },
             {
-              "q": "Does the LIC maturity calculator include bonus?",
-              "a": "Yes. You can input an illustrative bonus rate per ₹1,000 SA or use historical averages. The calculator multiplies the annual bonus by the policy term to estimate total bonus."
+              "q": "How do I calculate the LIC maturity amount?",
+              "a": "The basic formula is: <strong>Maturity Value = Basic Sum Assured + (Vested Bonus × Policy Term) + Final Additional Bonus (FAB)</strong>. You enter your SA, term, and bonus rates into the calculator to compute this value."
             },
             {
-              "q": "How accurate is the maturity estimate?",
-              "a": "Estimates use the inputs and illustrative bonus/FAB rates. Actual maturity depends on LIC's declared bonuses and final underwriting; treat results as indicative, not binding. Use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> for comprehensive retirement planning."
+              "q": "Can I use my LIC policy number in the calculator?",
+              "a": "No. Most online calculators (including ours) require policy details like sum assured, premium, and term. They cannot compute a result from just the policy number."
             },
             {
-              "q": "What is the formula for LIC maturity?",
-              "a": "The formula is: Basic Sum Assured + Vested Simple Reversionary Bonuses + Final Additional Bonus (FAB). For comparisons, check our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a> and <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF calculator</a>."
+              "q": "Are the calculator results accurate?",
+              "a": "The calculator provides close estimates based on the data you enter. However, actual maturity amounts depend on official bonus rates and LIC's rules. Use it for planning, but confirm details with LIC."
             },
             {
-              "q": "What is Final Additional Bonus (FAB)?",
-              "a": "FAB is a loyalty bonus paid by LIC at maturity on long-term participating policies. It is variable and declared by LIC depending on business performance."
+              "q": "Do bonuses count in the maturity value?",
+              "a": "Yes. The maturity value includes the basic sum assured plus all vested simple reversionary bonuses and any Final Additional Bonus (FAB) declared by LIC."
             },
             {
-              "q": "How do I find the correct bonus rate to use?",
-              "a": "Use the bonus rate shown on your policy statement or the published LIC bonus notifications. If unavailable, use a historical average (e.g., 40–48 per ₹1,000 SA for typical endowment plans)."
+              "q": "Is this LIC calculator free to use?",
+              "a": "Absolutely. It's a completely free tool for all BharatSaver users to help you plan better with your LIC policies."
             },
             {
-              "q": "Does GST affect my maturity?",
-              "a": "No, GST is charged on the premium and does not affect the maturity calculation, which is based on Sum Assured and bonuses."
-            },
-            {
-              "q": "How is surrender value calculated for LIC policies?",
-              "a": "Surrender value can be Guaranteed Surrender Value (a % of premiums paid) or Special Surrender Value (based on vested bonuses). Use our <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC surrender value calculator</a> for precise estimates."
-            },
-            {
-              "q": "What is paid-up value?",
-              "a": "Paid-up value applies if you stop paying premiums after two full years; benefits are reduced proportionately based on premiums paid and vested bonuses. The calculator can show paid-up estimates."
-            },
-            {
-              "q": "When can I take a loan on my LIC policy?",
-              "a": "You can typically take a loan after the policy has acquired a surrender value, which is usually after paying premiums for 2-3 full years. Check our <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC surrender value calculator</a> for loan eligibility."
-            },
-            {
-              "q": "Is LIC maturity tax-free under Section 10(10D)?",
-              "a": "Generally yes, but the exemption depends on rules (notably if annual premium does not exceed 10% of Sum Assured for most policies). Check your policy specifics and use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> for tax planning."
-            },
-            {
-              "q": "What is modal loading?",
-              "a": "Modal loading is the extra cost when paying premium monthly/quarterly/half-yearly versus yearly. The calculator converts yearly premium using modal factors to show accurate mode-wise premiums."
-            },
-            {
-              "q": "Can NRIs use this LIC maturity calculator?",
-              "a": "Yes, NRIs can use the calculator for estimates. Actual purchase may be subject to FEMA and LIC rules for NRIs; check with LIC/agent for eligibility."
-            },
-            {
-              "q": "How do riders affect my premium and maturity?",
-              "a": "Riders increase premium but do not increase the maturity sum-assured. Our calculator shows rider premium and the separate rider benefits (if any) but the maturity formula remains SA + bonuses + FAB."
-            },
-            {
-              "q": "How to calculate IRR on LIC policy?",
-              "a": "IRR is the discount rate that equates total premiums paid with maturity received. Our calculator provides an approximate IRR after computing maturity and total premiums paid. Compare with <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF returns</a> and <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD returns</a>."
-            },
-            {
-              "q": "Which LIC plans pay higher maturity?",
-              "a": "Plans with longer terms and higher bonus rates (like Jeevan Labh's 25-year term) tend to yield higher maturity amounts due to longer compounding. Use our <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh calculator</a> to compare."
-            },
-            {
-              "q": "How to compare LIC maturity against FD/PPF?",
-              "a": "Compare the post-tax IRR. LIC maturity is often tax-free, making its ~6% return equivalent to an 8-9% taxable return from an FD for someone in the 30% tax bracket. Use our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a> for direct comparison."
-            },
-            {
-              "q": "Can I change Sum Assured during the policy?",
-              "a": "No, the Basic Sum Assured is fixed at the time of policy issuance and cannot be changed during the term."
-            },
-            {
-              "q": "What happens if I stop paying premiums (paid-up)?",
-              "a": "After 2 years, the policy can become 'paid-up' with a reduced Sum Assured. You won't have to pay more premiums, and you will receive the reduced sum assured plus vested bonuses at maturity."
-            },
-            {
-              "q": "How often does LIC declare bonus rates?",
-              "a": "LIC declares its Simple Reversionary Bonus rates annually, typically after the end of each financial year (March 31st)."
+              "q": "Does GST affect my maturity payout?",
+              "a": "No. The GST you pay on your premiums does not affect the calculation. The maturity is strictly based on the Sum Assured and declared bonuses."
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "conclusion",
-      "icon": "Star",
-      "title": "Take Control of Your Financial Future",
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "Understanding your policy's maturity value is a crucial step in financial planning. It allows you to see if you're on track to meet your goals and make necessary adjustments. Use this calculator to gain clarity, download your results for future reference, and take the next confident step in your investment journey."
-        },
-        {
-          "type": "paragraph",
-          "text": "<strong>Build a Complete Financial Plan:</strong> Combine your LIC strategy with other investment tools. Use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to plan your overall retirement, check <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF</a> returns, and explore <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime options</a> to optimize your investments."
-        },
-        {
-          "type": "paragraph",
-          "text": "<strong>Explore Other LIC Plans:</strong> Compare maturity across different plans using our <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh calculator</a>, <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>Jeevan Anand calculator</a>, <a href='/{lang}/lic-single-premium-endowment-calculator' class='text-primary hover:underline'>single premium calculator</a>, and <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a>. For surrender scenarios, use our <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>surrender value calculator</a>."
-        },
-        {
-          "type": "paragraph",
-          "text": "<strong>Diversify Your Portfolio:</strong> If you're considering a multi-asset approach, use our <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a>, <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a>, and <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS calculator</a>. For debt management, check our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> and plan for government schemes like <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>Sukanya Samriddhi Yojana (SSY)</a> and <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a>."
         }
       ]
     }

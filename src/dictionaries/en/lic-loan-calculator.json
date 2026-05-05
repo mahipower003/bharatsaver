@@ -1,0 +1,259 @@
+{
+  "meta_title": "LIC Loan Calculator 2026: Check Policy Loan Eligibility & Interest",
+  "meta_description": "Use our free LIC Loan Calculator online India to instantly check your loan against LIC policy eligibility, estimate interest rates (9-10%), and compare EMI options.",
+  "h1": "LIC Loan Calculator: Instantly Check Your Policy Loan Eligibility & Interest (2026)",
+  "description": "Facing a sudden financial emergency? I know the exact feeling of panic when you need cash urgently. Your first thought might be to break your investments or even surrender your life insurance policy. But hold on—what if I told you there’s a much smarter way? Taking a loan against your LIC policy is secretly one of the cheapest, fastest, and most hassle-free ways to raise money in India. Before you rush to a bank or an agent, you need to know exactly how much money you can unlock. Use our free <strong>LIC Loan Calculator</strong> below to instantly calculate your LIC policy loan amount, check the current interest rates, and see your repayment options.",
+  "tool": {
+    "title": "Interactive LIC Policy Loan Calculator",
+    "surrender_value_label": "Your Current Surrender Value (₹)",
+    "policy_status_label": "Current Policy Status",
+    "status_options": {
+      "active": "Active / In-Force (Max 90%)",
+      "paid_up": "Paid-up (Max 80%)"
+    },
+    "calculate_button": "Check Your Eligibility Now",
+    "results_title": "Your Estimated Loan Breakdown",
+    "eligible_loan_label": "Maximum Eligible Cash Loan",
+    "interest_rate_label": "Applicable Interest Rate",
+    "annual_interest_label": "Estimated Annual Interest",
+    "monthly_interest_label": "Monthly Interest Equivalent",
+    "disclaimer": "*This is an estimate based on current LIC rules. The final loan against LIC policy amount and interest rate will be confirmed by LIC of India."
+  },
+  "sections": [
+    {
+      "id": "what-is-lic-loan",
+      "icon": "HelpCircle",
+      "title": "What is an LIC Loan?",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Let's keep it incredibly simple. A loan against an LIC policy is a secured loan where you pledge your life insurance policy as collateral to borrow money. Instead of going to a bank and jumping through hoops, showing salary slips or worrying about a bad credit score, you simply use the surrender value of your existing LIC policy to unlock cash."
+        },
+        {
+          "type": "paragraph",
+          "text": "I always recommend this strategy to my clients because your life insurance cover continues exactly as before. If something unfortunate happens to you while the loan is active, LIC will simply deduct the outstanding loan amount and pay the remaining death benefit to your family. You get the cash you need today, and your family stays completely protected tomorrow. It's truly a win-win situation."
+        }
+      ]
+    },
+    {
+      "id": "how-calculator-works",
+      "icon": "Calculator",
+      "title": "How Our LIC Loan Calculator Works",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "I designed this <strong>LIC loan calculator online India</strong> to take all the guesswork out of your financial planning. You don't need to do complex math or wait in a long line at an LIC branch just to figure out how much loan you can get on your LIC policy. Here is exactly how you use the calculator above:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Find your Surrender Value:</strong> Check your policy document or ask your agent for the current surrender value of your policy. If you don't have it, use our <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC Surrender Value Calculator</a> first to find that number.",
+            "<strong>Enter the Value:</strong> Type this surrender value into our tool.",
+            "<strong>Select Policy Status:</strong> Choose whether your policy is currently 'Active' (you are still paying premiums) or 'Paid-up' (you've stopped paying but the policy is still alive).",
+            "<strong>Get Instant Results:</strong> Hit calculate! Instantly, our lic policy loan interest calculator will show you your maximum loan eligibility, the applicable interest rate, and your estimated yearly interest burden."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "You can even use it as an unofficial <strong>LIC loan EMI calculator</strong> to figure out the monthly interest you need to set aside. <strong>Use the calculator above</strong> to run your numbers before we dive into the details."
+        }
+      ]
+    },
+    {
+      "id": "eligibility-criteria",
+      "icon": "CheckCircle",
+      "title": "LIC Policy Loan Eligibility Criteria",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Not every single LIC policy qualifies for a loan. Before you get your hopes up and start planning, let's quickly check your eligibility. To get approved instantly, you must meet these basic conditions:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Policy Type:</strong> You need a traditional life insurance plan. This includes Endowment plans, Money-Back plans, or Whole Life policies (like Jeevan Anand or Jeevan Labh). Pure term insurance plans and Unit Linked Insurance Plans (ULIPs) absolutely do not qualify.",
+            "<strong>Minimum Premiums Paid:</strong> You must have paid full premiums for at least 3 years (for older policies) or 2 full years (for newer policies issued after 2020) to acquire a surrender value. If your policy has no surrender value, it has no loan value.",
+            "<strong>Active Status:</strong> Your policy should ideally be in-force. Paid-up policies are also completely eligible, but keep in mind you'll get a slightly lower loan amount percentage.",
+            "<strong>Age Requirement:</strong> You must be at least 18 years old to apply."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interest-rate-2026",
+      "icon": "TrendingUp",
+      "title": "LIC Policy Loan Interest Rate (2026)",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Whenever my clients ask me how to take a loan against an LIC policy, I immediately tell them to look at the interest rates. Why? Because it is incredibly cheap."
+        },
+        {
+          "type": "paragraph",
+          "text": "For 2026, the official <strong>LIC policy loan interest rate 2026</strong> is hovering around <strong>9% to 10% per annum</strong>. LIC usually pegs this rate slightly above the 10-year government bond yield. Compared to a standard bank personal loan that charges you anywhere from 13% to 20%, an LIC policy loan is a massive money-saver."
+        },
+        {
+          "type": "paragraph",
+          "text": "Plus, the interest is calculated half-yearly, and there are absolutely zero hidden processing fees if you apply directly with LIC. If you choose to pledge your LIC policy to a private bank or NBFC instead, expect to pay around 10% to 13%, which defeats the purpose of the cheap rate."
+        }
+      ]
+    },
+    {
+      "id": "example-calculation",
+      "icon": "BarChart2",
+      "title": "Example Calculation: Calculate LIC Policy Loan Amount",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "You might be wondering, <em>\"Exactly how much loan can I get on my LIC policy?\"</em> The math is actually quite straightforward. LIC does not look at your total sum assured; they only look at your Surrender Value. For Active Policies, you get up to <strong>90%</strong> of the surrender value. For Paid-Up Policies, you get up to <strong>80%</strong>."
+        },
+        {
+          "type": "alert",
+          "variant": "default",
+          "title": "Real-Life Example: Rahul's Emergency",
+          "text": "Imagine my friend Rahul has an active Jeevan Anand policy. He has been paying premiums for 7 years, and his current surrender value is exactly ₹5,00,000. Suddenly, he faces a medical emergency and needs cash.<br/><br/>Since his policy is active, Rahul is eligible for 90% of that surrender value. <br/><strong>₹5,00,000 x 90% = ₹4,50,000.</strong><br/><br/>So, Rahul can instantly get a loan of up to ₹4,50,000. If he takes the full amount at a 9.5% interest rate, he only has to pay roughly ₹42,750 a year in interest (which works out to about ₹3,562 a month). It's highly affordable and saves him from taking a predatory bank loan."
+        }
+      ]
+    },
+    {
+      "id": "benefits",
+      "icon": "Star",
+      "title": "Benefits of Taking a Loan Against LIC Policy",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Why do financial experts love this loan? Here are the practical advantages I always point out to people who are on the fence:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>No Credit Score Needed:</strong> Your CIBIL score literally doesn't matter here. Even if you have a terrible credit history, LIC will not reject you because the loan is backed by your own money.",
+            "<strong>Cheaper Interest Rates:</strong> At 9-10%, it beats credit cards and unsecured personal loans hands down.",
+            "<strong>Lightning Fast Approval:</strong> Since there is no background check or income verification needed, the money hits your bank account in just 3 to 5 working days.",
+            "<strong>Zero Prepayment Penalties:</strong> Got a bonus at work? You can pay off the entire LIC loan early without any foreclosure charges whatsoever.",
+            "<strong>Flexible Usage:</strong> Whether it's a medical emergency, a wedding, or a business need, absolutely nobody asks why you need the money."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "disadvantages",
+      "icon": "AlertTriangle",
+      "title": "Disadvantages to Keep in Mind",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "I wouldn't be doing my job properly if I didn't warn you about the flip side. You need to keep these risks in mind before signing the dotted line:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Compounding Interest Trap:</strong> If you default on your half-yearly interest payments, LIC adds that unpaid interest to your principal amount. This means you’ll start paying interest on the interest, which can snowball quickly out of control.",
+            "<strong>Risk of Policy Foreclosure:</strong> If your outstanding loan plus accumulated interest ever exceeds the surrender value of your policy, LIC has the legal right to forcefully close (foreclose) your policy to recover their money. You lose your life cover permanently.",
+            "<strong>Reduced Final Payout:</strong> If you don't repay the principal before maturity or death, LIC will rightfully deduct the entire outstanding loan and interest from the final claim amount before paying you or your nominee."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comparison",
+      "icon": "GitCompareArrows",
+      "title": "LIC Loan vs Personal Loan: Which is Better?",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "I get this question all the time. Let’s do a quick, brutal comparison between an <strong>lic loan vs personal loan</strong> to see which one actually makes sense for you."
+        },
+        {
+          "type": "table",
+          "headers": ["Feature", "LIC Policy Loan", "Bank Personal Loan"],
+          "rows": [
+            ["Interest Rate", "Low (~9% to 10%)", "High (~13% to 20%)"],
+            ["Credit Score (CIBIL)", "Not Required at all", "Strictly Required (750+)"],
+            ["Income Proof", "Not Required", "Salary Slips/ITR Required"],
+            ["Repayment Flexibility", "High (Pay only interest if you want)", "Rigid EMIs (Principal + Interest)"],
+            ["Processing Time", "3 to 5 Days", "1 to 7 Days (With heavy paperwork)"]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>My Verdict:</strong> If you already have an eligible LIC policy with a good surrender value, the LIC loan is the clear winner every single time. Only look at a personal loan if your surrender value isn't high enough to cover your immediate financial needs."
+        }
+      ]
+    },
+    {
+      "id": "how-to-apply",
+      "icon": "BookOpen",
+      "title": "How to Apply for a Loan Against LIC Policy",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Ready to move forward? The <strong>required documents for lic policy loan</strong> are extremely minimal. You need your Original LIC Policy Bond, Identity Proof (Aadhaar/PAN), Address Proof, a cancelled cheque, and an Assignment Deed. You have two simple ways to get this done."
+        },
+        {
+          "type": "alert",
+          "variant": "default",
+          "title": "Online Apply Steps (Highly Recommended)",
+          "text": "For a <strong>loan against lic policy online apply</strong>, log into the official LIC e-Services portal. Navigate to 'Online Loans' under the premier services section. Select the policy you want to borrow against, enter how much you need, verify your KYC, upload your cancelled cheque, and submit. The money drops into your account within 3 to 5 days."
+        },
+        {
+          "type": "alert",
+          "variant": "default",
+          "title": "Offline Apply Steps",
+          "text": "If you prefer the traditional route, visit your home LIC branch. Fill out the Loan Application Form and submit your original policy bond along with your KYC copies. The branch manager will verify the documents and process the disbursal."
+        }
+      ]
+    },
+    {
+      "id": "repayment-options",
+      "icon": "TrendingUp",
+      "title": "LIC Policy Loan Repayment Options",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "One of the absolute best things about taking a loan against your LIC policy is the absolute freedom in how you pay it back. You have excellent <strong>lic policy loan repayment options</strong>:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Pay Interest Only:</strong> You can choose to pay just the interest amount every 6 months. The main loan amount (principal) will simply be deducted from your final maturity payout years down the line.",
+            "<strong>Pay EMIs:</strong> You can set up regular monthly payments (Principal + Interest) just like a normal bank loan to clear the debt faster.",
+            "<strong>Lump Sum Repayment:</strong> You can pay off the entire loan amount in one go whenever you have surplus cash, without any penalty."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "icon": "HelpCircle",
+      "title": "Frequently Asked Questions (FAQs)",
+      "content": [
+        {
+          "type": "faq",
+          "items": [
+            {"q": "Can I get a loan on a Term Insurance policy?", "a": "No. Pure term insurance policies do not build any surrender value or cash value, so you cannot take a loan against them."},
+            {"q": "What happens if the policyholder dies while the LIC loan is active?", "a": "Don't worry, your family is still protected. LIC will simply calculate the total death benefit, subtract the outstanding loan and unpaid interest, and pay the remaining balance directly to your nominee."},
+            {"q": "Is my CIBIL score affected if I don't pay the LIC loan on time?", "a": "No. Because this is a loan against your own funds, LIC does not report defaults to CIBIL. However, they will deduct the dues from your policy value, which could eventually lead to policy cancellation."},
+            {"q": "How many times can I take a loan on the same LIC policy?", "a": "You can take another loan even if you have an active one, provided your total loan amount (including the old one) does not cross the maximum eligibility limit of your current surrender value."},
+            {"q": "Can I pay my LIC premium with the loan amount?", "a": "Yes! If you are short on cash to pay your upcoming premium, you can request LIC to adjust the loan amount to cover your premium payment directly."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "explore-options",
+      "icon": "GitCompareArrows",
+      "title": "Next Steps for Your Financial Planning",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Now that you know exactly how the loan works, <strong>check your eligibility now</strong> by scrolling up and using the tool. Making an informed, stress-free financial decision has never been easier."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you are planning to buy a new policy or want to compare premium costs across different plans, don't forget to use our free <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC Premium Calculator</a>. Armed with the right information, you are always in control of your financial future."
+        }
+      ]
+    }
+  ]
+}

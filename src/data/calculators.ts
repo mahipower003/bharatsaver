@@ -230,4 +230,14 @@ export const calculators: CalculatorType[] = [
     lastModified: '2024-10-19',
     image: '/images/lic-term-insurance-calculator.png'
   },
+  {
+    slug: 'lic-loan-calculator',
+    title: 'LIC Loan Calculator',
+    description: 'Check your policy loan eligibility and interest rates.',
+    summary: 'Use our free LIC Loan Calculator to instantly check your loan eligibility, estimate interest rates (9-10%), and plan your repayment against your LIC policy surrender value.',
+    icon: Landmark,
+    link_text: 'Calculate Loan',
+    lastModified: '2026-05-05',
+    image: '/images/lic-surrender-value-calculator.png'
+  },
 ];

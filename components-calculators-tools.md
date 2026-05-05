@@ -66,6 +66,10 @@ The calculators directory contains various financial calculation components for 
 - **File**: `LicTermInsuranceCalculator.tsx`
 - **Purpose**: Calculates premiums and coverage for term insurance plans.
 
+### LIC Loan Calculator
+- **File**: `LicLoanCalculator.tsx`
+- **Purpose**: Calculates maximum eligible loan amount and estimates interest for LIC policies based on surrender value.
+
 ### LIC Umang Premium Chart
 - **File**: `LicUmangPremiumChart.tsx`
 - **Purpose**: Chart component for LIC Umang premium visualizations.

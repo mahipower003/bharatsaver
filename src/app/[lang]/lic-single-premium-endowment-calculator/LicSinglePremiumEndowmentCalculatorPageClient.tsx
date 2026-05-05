@@ -87,6 +87,7 @@ export default function LicSinglePremiumEndowmentCalculatorPageClient({
   const ArticleContent = () => (
     <div className="mt-12 space-y-8 print-hide">
       {pageDict.article.sections.map((section: any, index: number) => {
+        if (section.id === 'faq') return null;
         const Icon = section.icon ? getIcon(section.icon) : null;
         return (
           <Card key={index} className="shadow-lg" id={section.id}>
@@ -193,7 +194,7 @@ export default function LicSinglePremiumEndowmentCalculatorPageClient({
       faqTitle="Frequently Asked Questions"
       pageUrl={pageUrl}
     >
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([faqSchema, howToSchema, financialProductSchema]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([howToSchema, financialProductSchema]) }} />
       <ArticleContent />
       {pageDict.article?.conclusion && (
         <Card className="shadow-lg mt-8 bg-primary/10 border-primary/20">
