@@ -353,4 +353,15 @@
     <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/calculate-lic-maturity-amount" />
     <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/calculate-lic-maturity-amount" />
   </url>
+  <url>
+    <loc>https://bharatsaver.com/te/lic-vs-ppf-calculator</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/lic-vs-ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/lic-vs-ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/lic-vs-ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/lic-vs-ppf-calculator" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/lic-vs-ppf-calculator" />
+  </url>
 </urlset>

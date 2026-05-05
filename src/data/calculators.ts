@@ -1,4 +1,3 @@
-
 import {
   Landmark,
   Baby,
@@ -15,6 +14,7 @@ import {
   Calculator,
   PiggyBank,
   Gift,
+  GitCompareArrows,
 } from 'lucide-react';
 import type { Calculator as CalculatorType } from '@/lib/types';
 
@@ -259,5 +259,15 @@ export const calculators: CalculatorType[] = [
     link_text: 'Read Guide',
     lastModified: '2026-05-05',
     image: '/images/lic-maturity-calculator.png'
+  },
+  {
+    slug: 'lic-vs-ppf-calculator',
+    title: 'LIC vs PPF Calculator',
+    description: 'Compare LIC returns against PPF with our free calculator.',
+    summary: 'Choosing between a Life Insurance Corporation (LIC) policy and the Public Provident Fund (PPF)? Compare estimated returns, tax benefits (EEE vs 10(10D)), and find out which fits your goals.',
+    icon: GitCompareArrows,
+    link_text: 'Compare Now',
+    lastModified: '2026-05-05',
+    image: '/images/lic-vs-ppf-returns-chart.png'
   },
 ];
