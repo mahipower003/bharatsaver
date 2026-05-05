@@ -249,10 +249,10 @@ export function LicMaturityCalculator({ dictionary }: { dictionary: any }) {
               </div>
             </div>
             
-            <div className="flex flex-wrap items-center justify-center gap-2 pt-4">
-                <Button variant="outline" size="sm"><Download className="mr-2 h-4 w-4" />{dictionary.download_pdf}</Button>
-                <Button variant="outline" size="sm"><Twitter className="mr-2 h-4 w-4" />{dictionary.share_results}</Button>
-                <Button asChild size="sm"><Link href="/contact">{dictionary.contact_cfp}</Link></Button>
+            <div className="flex flex-wrap items-center justify-center gap-3 pt-6 border-t">
+                <Button variant="outline" size="default"><Download className="mr-2 h-4 w-4" />{dictionary.download_pdf || "Download PDF"}</Button>
+                <Button variant="outline" size="default"><Twitter className="mr-2 h-4 w-4" />{dictionary.share_results || "Share Results"}</Button>
+                <Button asChild size="lg" className="w-full sm:w-auto text-base font-semibold shadow-md"><Link href="/contact">{dictionary.contact_cfp || "Consult a CFP Expert"}</Link></Button>
             </div>
           </CardContent>
         </Card>

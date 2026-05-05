@@ -250,4 +250,14 @@ export const calculators: CalculatorType[] = [
     lastModified: '2026-05-05',
     image: '/images/lic-surrender-value-calculator.png'
   },
+  {
+    slug: 'calculate-lic-maturity-amount',
+    title: 'How to Calculate LIC Maturity',
+    description: 'A step-by-step guide to calculating LIC maturity amount with formula and examples.',
+    summary: 'Learn the exact formula for calculating your LIC maturity payout, including Reversionary Bonuses, Final Additional Bonus, and the Section 10(10D) tax benefits. Use our free tool to see your payout.',
+    icon: Target,
+    link_text: 'Read Guide',
+    lastModified: '2026-05-05',
+    image: '/images/lic-maturity-calculator.png'
+  },
 ];

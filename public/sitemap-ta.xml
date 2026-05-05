@@ -331,4 +331,26 @@
     <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/lic-loan-calculator" />
     <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/lic-loan-calculator" />
   </url>
+  <url>
+    <loc>https://bharatsaver.com/ta/lic-vs-sip-calculator</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/lic-vs-sip-calculator" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/lic-vs-sip-calculator" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/lic-vs-sip-calculator" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/lic-vs-sip-calculator" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/lic-vs-sip-calculator" />
+  </url>
+  <url>
+    <loc>https://bharatsaver.com/ta/calculate-lic-maturity-amount</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/calculate-lic-maturity-amount" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/calculate-lic-maturity-amount" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/calculate-lic-maturity-amount" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/calculate-lic-maturity-amount" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/calculate-lic-maturity-amount" />
+  </url>
 </urlset>
