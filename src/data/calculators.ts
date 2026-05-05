@@ -240,4 +240,14 @@ export const calculators: CalculatorType[] = [
     lastModified: '2026-05-05',
     image: '/images/lic-surrender-value-calculator.png'
   },
+  {
+    slug: 'lic-vs-sip-calculator',
+    title: 'LIC vs SIP Calculator',
+    description: 'Compare returns, risk, and tax between LIC and SIP.',
+    summary: 'In 2026, should you invest in an LIC policy or an equity SIP? Use our free calculator to compare estimated returns, understand risk and liquidity, and see the exact tax implications to make the right choice.',
+    icon: ArrowRightLeft,
+    link_text: 'Compare Now',
+    lastModified: '2026-05-05',
+    image: '/images/lic-surrender-value-calculator.png'
+  },
 ];
