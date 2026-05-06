@@ -165,7 +165,7 @@ export default function LicMaturityCalculatorPageClient({
       pageDict={pageDict}
       h1={pageDict.h1}
       description={pageDict.top_cta}
-      lastUpdated="September 2025"
+      lastUpdated="May 2026"
       calculator={
         <div id="calculator-widget">
           <LicMaturityCalculator dictionary={pageDict.tool} />

@@ -31,9 +31,26 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
         }))
     };
 
+    const articleSchema = {
+      "@context":"https://schema.org",
+      "@type":"Article",
+      "mainEntityOfPage":{"@type":"WebPage","@id":`${siteUrl}${pageUrl}`},
+      "headline":"LIC Surrender Value Calculator (2026) – Check Guaranteed & Special Value",
+      "description":"Calculate your LIC surrender value instantly. See your Guaranteed Surrender Value (GSV) vs Special Surrender Value (SSV), formulas, and early exit penalties.",
+      "author":{"@type":"Person","name":"Mahesh Chaube, CFP","url":"https://bharatsaver.com/author/mahesh-chaube"},
+      "publisher":{"@type":"Organization","name":"BharatSaver","logo":{"@type":"ImageObject","url":"https://bharatsaver.com/icon.svg"}},
+      "datePublished":"2025-09-01",
+      "dateModified":"2026-05-06",
+      "reviewedBy": {
+        "@type": "Person",
+        "name": "Laveena Vijayi",
+        "jobTitle": "Senior Financial Research Analyst"
+      }
+    };
+
     return {
-        title: "LIC Surrender Value Calculator – Estimate Your Policy’s Cash Value & Guide 2025",
-        description: "Calculate your LIC policy’s surrender value instantly with our online calculator. Learn how surrender value is computed, when to surrender, tax impact, FAQs and more on this comprehensive guide.",
+        title: "LIC Surrender Value Calculator (2026) – Check Guaranteed & Special Value",
+        description: "Calculate your LIC surrender value instantly. See your Guaranteed Surrender Value (GSV) vs Special Surrender Value (SSV), formulas, and early exit penalties.",
         alternates: {
             canonical: pageUrl,
             languages: i18nConfig.locales.reduce((acc, locale) => {
@@ -42,7 +59,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
             }, {} as Record<string, string>),
         },
         other: {
-            'application/ld+json': JSON.stringify([howToSchema]),
+            'application/ld+json': [JSON.stringify(howToSchema), JSON.stringify(articleSchema)],
         },
     };
 }
