@@ -1,16 +1,15 @@
-
 {
     "meta": {
-        "title": "LIC Term Insurance Plans (2025) â€” Full Product List & Short Guide",
-        "description": "Complete 2025 guide to LIC term insurance â€” Tech-Term, Jeevan Amar & Jeevan Kiran. Premium examples, buy online steps, claim process & FAQs."
+        "title": "LIC Term Insurance Premium Calculator — Best Plans & ₹1 Crore Quote",
+        "description": "Calculate LIC term insurance premiums instantly. Compare Tech-Term vs Jeevan Amar, see age-wise rates for ₹1 Crore cover, and learn which plan suits you best."
     },
-    "h1": "LIC Term Insurance â€” Ultimate Guide (2025)",
-    "byline": "By Mahesh Chaubey, CFP â€” Last reviewed: January 2025<br>Reviewed by Laveena Vijayi â€” BharatSaver Editorial Team",
+    "h1": "LIC Term Insurance — Compare Plans, Premium Calculator & Honest Reviews",
+    "byline": "By Mahesh Chaubey, CFP — Last reviewed: May 2026<br>Reviewed by Laveena Vijayi — BharatSaver Editorial Team",
     "sections": [
         {
             "id": "quick-summary",
             "icon": "FileText",
-            "title": "Quick Take â€” Which LIC Term Insurance Plan Is Best for You?",
+            "title": "Quick Take — Which LIC Term Insurance Plan Is Best for You?",
             "content": [
                 {
                     "type": "paragraph",
@@ -25,28 +24,51 @@
             "content": [
                 {
                     "type": "paragraph",
-                    "text": "<p>Get a free LIC term quote in 2 minutes â€” enter age & desired cover. No obligation.</p><p>We used live premium examples from market aggregators (PolicyBazaar, PolicyX) for common scenarios. This <strong>lic term insurance calculator</strong> helps you get an exact quote for your profileâ€”premiums for a <strong>lic term insurance 1 crore</strong> policy differ widely by age and product.</p>"
+                    "text": "<p>Get a free LIC term quote in 2 minutes — enter age & desired cover. No obligation.</p><p>We used live premium examples from market aggregators (PolicyBazaar, PolicyX) for common scenarios. This <strong>LIC term insurance calculator</strong> helps you get an exact quote for your profile—premiums for a <strong>LIC term insurance 1 crore</strong> policy differ widely by age and product.</p>"
                 },
                 {
                     "type": "calculator"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<strong>Estimated Monthly Premiums for ₹1 Crore Cover (30-Year Term, Non-Smoker, Male)</strong>"
+                },
+                {
+                    "type": "table",
+                    "headers": ["Age", "LIC Tech-Term (Online)", "LIC Jeevan Amar (Offline)", "Private Insurer Avg."],
+                    "rows": [
+                        ["25 Years", "₹700 - ₹850", "₹850 - ₹1,000", "₹550 - ₹750"],
+                        ["30 Years", "₹900 - ₹1,100", "₹1,100 - ₹1,300", "₹750 - ₹950"],
+                        ["35 Years", "₹1,300 - ₹1,600", "₹1,600 - ₹1,900", "₹1,100 - ₹1,400"],
+                        ["40 Years", "₹2,100 - ₹2,500", "₹2,500 - ₹3,000", "₹1,800 - ₹2,200"]
+                    ],
+                    "footer": "Note: These are indicative estimates based on historical aggregator data. Actual premiums vary based on medical history, specific plan parameters, and GST."
                 }
             ]
         },
         {
             "id": "lic-term-plans",
             "icon": "ShieldCheck",
-            "title": "LIC Term Insurance Plans (2025) â€” Full Product List & Short Guide",
+            "title": "LIC Term Insurance Plans — Comparison Guide",
             "content": [
+                {
+                    "type": "table",
+                    "headers": ["Plan Name", "Min Age", "Max Age", "Max Cover", "Online Buy?", "Best For"],
+                    "rows": [
+                        ["LIC Tech-Term (954)", "18", "65", "No Limit", "Yes", "Cheapest pure term cover online"],
+                        ["LIC Jeevan Amar (955)", "18", "65", "No Limit", "No (Agents)", "Offline buyer seeking agent help"],
+                        ["Saral Jeevan Bima (859)", "18", "65", "₹25 Lakh", "Yes", "Simple, low-cover starter plan"],
+                        ["LIC Jeevan Kiran (870)", "18", "65", "No Limit", "Yes", "Risk-averse buyers wanting ROP"]
+                    ],
+                    "footer": "Subject to LIC's underwriting and maximum coverage limits based on income."
+                },
                 {
                     "type": "structured_content",
                     "items": [
-                        { "title": "1. LIC New Tech-Term â€” Plan No. 954 (UIN: 512N339V02)", "text": "<strong>Type:</strong> Online-only, pure term (non-participating)<br><strong>Key benefit:</strong> Lowest LIC premiums thanks to online rebate.<br><strong>Eligibility:</strong> Age 18â€“65; policy term 10â€“40 years.<br><strong>Best for:</strong> Self-directed, tech-savvy buyers who want cheapest pure protection from LIC." },
-                        { "title": "2. LIC New Jeevan Amar â€” Plan No. 955 (UIN: 512N338V02)", "text": "<strong>Type:</strong> Offline equivalent of Tech-Term, sold via agents.<br><strong>Key benefit:</strong> Agent support and servicing convenience.<br><strong>Best for:</strong> Buyers who value face-to-face help for application & servicing." },
-                        { "title": "3. Saral Jeevan Bima â€” Plan No. 859 (UIN: 512N342V02)", "text": "<strong>Type:</strong> Standardized pure-term product mandated by IRDAI for simplicity.<br><strong>Key benefit:</strong> Simple features, accessible; usually covers up to â‚¹25 Lakh.<br><strong>Best for:</strong> First-time buyers and low-cover needs." },
-                        { "title": "4. LIC Jeevan Kiran â€” Plan No. 870 (UIN: 512N359V02) â€” ROP", "text": "<strong>Type:</strong> Return-of-Premium term plan.<br><strong>Key benefit:</strong> All base premiums returned on survival (excl. taxes, rider premiums).<br><strong>Best for:</strong> Highly risk-averse buyers who want a savings-like result â€” but be aware of the high cost." },
-                        { "title": "5. Bhagya Lakshmi â€” Plan No. 919 (UIN: 512N299V02)", "text": "<strong>Type:</strong> Non-participating, limited payment protection for low-income households.<br><strong>Best for:</strong> Rural / economically weaker segments." },
-                        { "title": "6. New Jeevan Mangal â€” Plan No. 940 (UIN: 512N308V02)", "text": "<strong>Type:</strong> Micro-insurance with ROP element; protection + small savings.<br><strong>Best for:</strong> Micro-insurance segment wanting a small savings component." },
-                        { "title": "Note: Some legacy plans (e.g., Anmol Jeevan II) have been withdrawn or replaced; always check LICâ€™s product brochure for current availability.", "text": "" }
+                        { "title": "1. LIC New Tech-Term — Plan No. 954", "text": "<strong>Type:</strong> Online-only, pure term (non-participating)<br><strong>Key benefit:</strong> Lowest LIC premiums thanks to online rebate.<br><strong>Best for:</strong> Self-directed, tech-savvy buyers who want cheapest pure protection from LIC." },
+                        { "title": "2. LIC New Jeevan Amar — Plan No. 955", "text": "<strong>Type:</strong> Offline equivalent of Tech-Term, sold via agents.<br><strong>Key benefit:</strong> Agent support and servicing convenience.<br><strong>Best for:</strong> Buyers who value face-to-face help for application & servicing." },
+                        { "title": "3. Saral Jeevan Bima — Plan No. 859", "text": "<strong>Type:</strong> Standardized pure-term product mandated by IRDAI for simplicity.<br><strong>Key benefit:</strong> Simple features, accessible; usually covers up to ₹25 Lakh.<br><strong>Best for:</strong> First-time buyers and low-cover needs." },
+                        { "title": "4. LIC Jeevan Kiran — Plan No. 870 — ROP", "text": "<strong>Type:</strong> Return-of-Premium term plan.<br><strong>Key benefit:</strong> All base premiums returned on survival (excl. taxes, rider premiums).<br><strong>Best for:</strong> Highly risk-averse buyers who want a savings-like result — but be aware of the high cost." }
                     ]
                 }
             ]
@@ -59,7 +81,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "<strong>High Sum Assured:</strong> LIC term plans offer substantial coverage amounts, often going up to â‚¹1 crore and beyond, ensuring your family's financial needs are fully met.",
+                        "<strong>High Sum Assured:</strong> LIC term plans offer substantial coverage amounts, often going up to ₹1 crore and beyond, ensuring your family's financial needs are fully met.",
                         "<strong>Affordable Premiums:</strong> For a non-smoker, a high-value <strong>lic term insurance 1 crore</strong> policy can be secured for a very competitive monthly premium, especially when purchased online.",
                         "<strong>Flexible Payout Options:</strong> Nominees can choose to receive the death benefit as a lump sum, as a regular income, or a combination of both, providing flexibility to manage finances.",
                         "<strong>Rider Availability:</strong> You can enhance your protection by adding riders for accidental death, disability, or critical illness.",
@@ -76,29 +98,29 @@
             "content": [
                 {
                     "type": "paragraph",
-                    "text": "Premiums are actuarial â€” they reflect the insurerâ€™s assessment of risk. Main factors:"
+                    "text": "Premiums are actuarial — they reflect the insurer’s assessment of risk. Main factors:"
                 },
                 {
                     "type": "list",
                     "items": [
-                        "<strong>Age at entry</strong> â€” biggest driver (younger = cheaper).",
-                        "<strong>Smoker / tobacco use</strong> â€” smokers pay materially higher premiums.",
-                        "<strong>Sum assured</strong> â€” higher cover increases premium linearly.",
-                        "<strong>Policy term & PPT</strong> â€” longer terms and different paying terms affect cost.",
-                        "<strong>Gender & health</strong> â€” underwriting can adjust prices based on gender and health disclosures.",
-                        "<strong>Riders</strong> â€” each rider adds a premium."
+                        "<strong>Age at entry</strong> — biggest driver (younger = cheaper).",
+                        "<strong>Smoker / tobacco use</strong> — smokers pay materially higher premiums.",
+                        "<strong>Sum assured</strong> — higher cover increases premium linearly.",
+                        "<strong>Policy term & PPT</strong> — longer terms and different paying terms affect cost.",
+                        "<strong>Gender & health</strong> — underwriting can adjust prices based on gender and health disclosures.",
+                        "<strong>Riders</strong> — each rider adds a premium."
                     ]
                 },
                 {
                     "type": "paragraph",
-                    "text": "Small changes (1â€“2 years of age, smoker â†’ non-smoker) can change monthly premium noticeably â€” always pull an instant quote using our main <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a>."
+                    "text": "Small changes (1–2 years of age, smoker → non-smoker) can change monthly premium noticeably — always pull an instant quote using our main <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a>."
                 }
             ]
         },
         {
             "id": "lic-vs-private",
             "icon": "GitCompareArrows",
-            "title": "LIC vs. Private Insurers â€” Premium & Feature Comparison",
+            "title": "LIC vs. Private Insurers — Premium & Feature Comparison",
             "content": [
                 {
                     "type": "paragraph",
@@ -116,18 +138,18 @@
         {
             "id": "riders",
             "icon": "HelpCircle",
-            "title": "Riders & Add-ons â€” What to Consider (and What to Avoid)",
+            "title": "Riders & Add-ons — What to Consider (and What to Avoid)",
             "content": [
                  { "type": "structured_content", "items": [
-                    {"title":"Worth considering", "text": "<ul><li><strong>Accidental Death & Disability (AD&DB):</strong> inexpensive and high incremental protection.</li><li><strong>Critical Illness (CI):</strong> useful if you donâ€™t have robust health cover.</li></ul>"},
-                    {"title":"Use caution", "text":"<ul><li><strong>Return-of-Premium (ROP):</strong> high cost; financially often inferior to buying pure term + investing the difference.</li><li><strong>Excessive layering of riders:</strong> can push your monthly outlay much higher; buy only what materially improves your familyâ€™s protection.</li></ul>"}
+                    {"title":"Worth considering", "text": "<ul><li><strong>Accidental Death & Disability (AD&DB):</strong> inexpensive and high incremental protection.</li><li><strong>Critical Illness (CI):</strong> useful if you don’t have robust health cover.</li></ul>"},
+                    {"title":"Use caution", "text":"<ul><li><strong>Return-of-Premium (ROP):</strong> high cost; financially often inferior to buying pure term + investing the difference.</li><li><strong>Excessive layering of riders:</strong> can push your monthly outlay much higher; buy only what materially improves your family’s protection.</li></ul>"}
                 ]}
             ]
         },
         {
             "id": "claim-settlement",
             "icon": "ShieldCheck",
-            "title": "Claim Settlement â€” Step-by-Step & Timelines",
+            "title": "Claim Settlement — Step-by-Step & Timelines",
             "content": [
                  { "type": "structured_content", "items": [
                     {"title": "Intimation", "text":"Nominee files claim at servicing branch with death certificate, original policy & KYC."},
@@ -140,7 +162,7 @@
         {
             "id": "how-to-buy",
             "icon": "Users",
-            "title": "How to Buy LIC Term Insurance Online â€” Quick Steps",
+            "title": "How to Buy LIC Term Insurance Online — Quick Steps",
             "content": [
                 {
                     "type": "steps",
@@ -156,29 +178,12 @@
             ]
         },
         {
-            "id": "faq",
-            "icon": "HelpCircle",
-            "title": "Frequently Asked Questions (Short Answers)",
-            "content": [
-                {
-                    "type": "faq",
-                    "items": [
-                        { "q": "Can I buy LIC term insurance online?", "a": "Yes â€” Tech-Term & Digi Term available via LIC e-services." },
-                        { "q": "How much premium for â‚¹1 Crore for a 30-yr-old non-smoker?", "a": "Varies by plan/mode â€” use the calculator." },
-                        { "q": "Does LIC pay claims reliably?", "a": "LIC reports very high CSR; validate the latest numbers in the annual report." },
-                        { "q": "Can I change the nominee online?", "a": "Policy servicing rules vary â€” some requests may require branch visit." },
-                        { "q": "What happens if I stop paying premiums?", "a": "Policy may lapse; revival/paid-up options depend on the policy terms." }
-                    ]
-                }
-            ]
-        },
-        {
             "id": "case-studies",
             "icon": "BookUser",
             "title": "Real Case Studies & Customer Experiences",
             "content": [
-                { "type": "paragraph", "text": "<strong>Case Study 1: Raj, the Early Planner.</strong> Raj, a 28-year-old software engineer, bought a â‚¹1 Crore LIC term insurance plan until age 65. His premium was just â‚¹1,200/month. By buying early, he locked in a low rate for his entire working life." },
-                { "type": "paragraph", "text": "<strong>Case Study 2: Sunita, the Late Starter.</strong> Sunita, a 45-year-old business owner, realized she was underinsured. She opted for a â‚¹1.5 Crore cover until age 70. Her premium was higher, around â‚¹4,500/month, but it gave her immense peace of mind." }
+                { "type": "paragraph", "text": "<strong>Case Study 1: Raj, the Early Planner.</strong> Raj, a 28-year-old software engineer, bought a ₹1 Crore LIC term insurance plan until age 65. His premium was just ₹1,200/month. By buying early, he locked in a low rate for his entire working life." },
+                { "type": "paragraph", "text": "<strong>Case Study 2: Sunita, the Late Starter.</strong> Sunita, a 45-year-old business owner, realized she was underinsured. She opted for a ₹1.5 Crore cover until age 70. Her premium was higher, around ₹4,500/month, but it gave her immense peace of mind." }
             ]
         },
         {
@@ -211,6 +216,28 @@
             ]
         },
         {
+            "id": "faq",
+            "icon": "HelpCircle",
+            "title": "Frequently Asked Questions (Detailed Answers)",
+            "content": [
+                {
+                    "type": "faq",
+                    "items": [
+                        { "q": "What is the LIC Tech-Term Plan and how is it different?", "a": "LIC Tech-Term is an online-only pure term plan sold directly by LIC on their e-services portal. Because there are no agent commissions involved, it offers significantly lower premiums compared to LIC's offline equivalents. It is designed for self-directed buyers who want a cheap, robust pure protection plan." },
+                        { "q": "Can I buy LIC term insurance online?", "a": "Yes, you can absolutely buy LIC term insurance online. LIC offers the New Tech-Term and Digi Term plans exclusively through their online portal. The online process requires you to fill out the application, submit KYC documents like your PAN and Aadhaar, and optionally complete a tele-medical or physical medical exam." },
+                        { "q": "How much premium for ₹1 Crore LIC term insurance for a 30-year-old non-smoker?", "a": "For a 30-year-old healthy non-smoker male, the premium for a ₹1 Crore LIC Tech-Term policy for a 30-year term typically ranges between ₹10,000 to ₹13,000 annually (roughly ₹900 to ₹1,100 monthly) before GST. Premiums vary slightly based on the exact term and your medical history, so using our premium calculator is highly recommended." },
+                        { "q": "Which is better: LIC Tech-Term or LIC Jeevan Amar?", "a": "Both plans offer the exact same coverage and features. The only difference is the purchasing channel. LIC Tech-Term is an online-only plan with lower premiums since there are no intermediary commissions. LIC Jeevan Amar is an offline plan bought through an agent, which means higher premiums but you receive personalized, face-to-face assistance for application and future claim servicing. Choose based on your comfort level." },
+                        { "q": "Are return-of-premium (ROP) plans worth it?", "a": "Return-of-Premium (ROP) plans, like LIC Jeevan Kiran, return your base premiums if you survive the policy term. While this sounds appealing, the premiums for ROP plans are often double or triple the cost of pure term plans. Financially, buying a cheap pure term plan and investing the difference (e.g., in a PPF or mutual fund) usually yields a much higher overall return." },
+                        { "q": "Does LIC settle term claims reliably?", "a": "Yes, LIC is highly reliable and boasts one of the highest Claim Settlement Ratios (CSR) in the industry, consistently staying above 98.5%. Because it is backed by the government of India, it carries an immense trust factor. However, it's always critical to declare your medical history accurately to ensure smooth claim processing." },
+                        { "q": "LIC term insurance vs HDFC Life Click2Protect: Which is better?", "a": "LIC offers unmatched sovereign trust and an excellent rural and urban service network, but its premiums can be slightly higher than private insurers. Private plans like HDFC Life Click2Protect often provide lower premiums, more innovative riders (like income-replacement or wellness discounts), and a smoother digital experience. Both are highly reliable; your choice depends on whether you value government backing or aggressive pricing and features." },
+                        { "q": "What is the Saral Jeevan Bima plan?", "a": "Saral Jeevan Bima is a standardized, simple pure-term insurance product mandated by the IRDAI across all insurers. Its features are identical regardless of which company you buy it from. It typically provides coverage up to ₹25 Lakhs, making it an excellent entry-level policy for first-time buyers or those with lower coverage requirements." },
+                        { "q": "How to claim LIC term insurance after death?", "a": "To claim LIC term insurance, the nominee must visit the home branch where the policy is serviced. They need to submit the death claim form, the original policy document, the municipal death certificate, and their KYC documents. If the claim is straightforward and non-investigated, LIC typically settles it within 15 to 30 days of receiving all the completed documents." },
+                        { "q": "Can I change the nominee in my LIC term policy online?", "a": "While LIC has significantly upgraded its e-services portal to handle premium payments, address updates, and loans, changing a nominee often still requires submitting a physical 'Change of Nomination' form at your servicing branch for verification. Always confirm the current digital capabilities on the LIC portal for your specific policy type." }
+                    ]
+                }
+            ]
+        },
+        {
             "id": "conclusion",
             "icon": "Star",
             "title": "Conclusion & Recommended Next Step",
@@ -228,7 +255,7 @@
                     "type": "paragraph",
                     "text": "<strong>For Complete Financial Planning:</strong> Calculate your total retirement needs with our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a>, optimize your tax situation using our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a>, manage your debt with our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a>, and explore government schemes like <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>APY</a>, <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a>, and <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>SSY</a> for additional income streams."
                 },
-                { "type": "cta_card", "title": "Ready to Secure Your Family's Future?", "description": "Weâ€™ll compare LIC Tech-Term quotes and send a customized estimate. Privacy: we never share your number without consent.", "buttons": [
+                { "type": "cta_card", "title": "Ready to Secure Your Family's Future?", "description": "We’ll compare LIC Tech-Term quotes and send a customized estimate. Privacy: we never share your number without consent.", "buttons": [
                     { "text": "Get Free Quote", "href": "https://www.policybazaar.com/life-insurance/term-insurance/" }
                 ]}
             ]
@@ -238,32 +265,37 @@
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
-            { "@type": "Question", "name": "What is the LIC Tech-Term Plan and how is it different?", "acceptedAnswer": { "@type": "Answer", "text": "LIC Tech-Term is an online-only pure term plan sold directly by LIC with online rebates; it offers low premiums compared with LIC's offline equivalents." } },
-            { "@type": "Question", "name": "Can I buy LIC term insurance online?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. LIC offers online purchase for Tech-Term and Digi Term via the LIC e-services portal. You must provide KYC docs and may need a medical exam." } },
-            { "@type": "Question", "name": "How much premium for â‚¹1 Crore LIC term insurance for a 30-year-old non-smoker?", "acceptedAnswer": { "@type": "Answer", "text": "Premiums vary by plan and mode. Use the calculator on this page for an exact quote, or compare samples from leading aggregators." } },
-            { "@type": "Question", "name": "Does LIC settle term claims reliably?", "acceptedAnswer": { "@type": "Answer", "text": "LIC has historically high claim settlement ratios and strong solvency; always check the latest IRDAI/annual report numbers when deciding." } },
-            { "@type": "Question", "name": "Are return-of-premium (ROP) plans worth it?", "acceptedAnswer": { "@type": "Answer", "text": "ROP plans return premiums on survival but cost much more. Financially, buying a cheap term plan and investing the difference usually gives higher returns." } }
+            { "@type": "Question", "name": "What is the LIC Tech-Term Plan and how is it different?", "acceptedAnswer": { "@type": "Answer", "text": "LIC Tech-Term is an online-only pure term plan sold directly by LIC on their e-services portal. Because there are no agent commissions involved, it offers significantly lower premiums compared to LIC's offline equivalents. It is designed for self-directed buyers who want a cheap, robust pure protection plan." } },
+            { "@type": "Question", "name": "Can I buy LIC term insurance online?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, you can absolutely buy LIC term insurance online. LIC offers the New Tech-Term and Digi Term plans exclusively through their online portal. The online process requires you to fill out the application, submit KYC documents like your PAN and Aadhaar, and optionally complete a tele-medical or physical medical exam." } },
+            { "@type": "Question", "name": "How much premium for ₹1 Crore LIC term insurance for a 30-year-old non-smoker?", "acceptedAnswer": { "@type": "Answer", "text": "For a 30-year-old healthy non-smoker male, the premium for a ₹1 Crore LIC Tech-Term policy for a 30-year term typically ranges between ₹10,000 to ₹13,000 annually (roughly ₹900 to ₹1,100 monthly) before GST. Premiums vary slightly based on the exact term and your medical history, so using our premium calculator is highly recommended." } },
+            { "@type": "Question", "name": "Which is better: LIC Tech-Term or LIC Jeevan Amar?", "acceptedAnswer": { "@type": "Answer", "text": "Both plans offer the exact same coverage and features. The only difference is the purchasing channel. LIC Tech-Term is an online-only plan with lower premiums since there are no intermediary commissions. LIC Jeevan Amar is an offline plan bought through an agent, which means higher premiums but you receive personalized, face-to-face assistance for application and future claim servicing. Choose based on your comfort level." } },
+            { "@type": "Question", "name": "Are return-of-premium (ROP) plans worth it?", "acceptedAnswer": { "@type": "Answer", "text": "Return-of-Premium (ROP) plans, like LIC Jeevan Kiran, return your base premiums if you survive the policy term. While this sounds appealing, the premiums for ROP plans are often double or triple the cost of pure term plans. Financially, buying a cheap pure term plan and investing the difference (e.g., in a PPF or mutual fund) usually yields a much higher overall return." } },
+            { "@type": "Question", "name": "Does LIC settle term claims reliably?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, LIC is highly reliable and boasts one of the highest Claim Settlement Ratios (CSR) in the industry, consistently staying above 98.5%. Because it is backed by the government of India, it carries an immense trust factor. However, it's always critical to declare your medical history accurately to ensure smooth claim processing." } },
+            { "@type": "Question", "name": "LIC term insurance vs HDFC Life Click2Protect: Which is better?", "acceptedAnswer": { "@type": "Answer", "text": "LIC offers unmatched sovereign trust and an excellent rural and urban service network, but its premiums can be slightly higher than private insurers. Private plans like HDFC Life Click2Protect often provide lower premiums, more innovative riders (like income-replacement or wellness discounts), and a smoother digital experience. Both are highly reliable; your choice depends on whether you value government backing or aggressive pricing and features." } },
+            { "@type": "Question", "name": "What is the Saral Jeevan Bima plan?", "acceptedAnswer": { "@type": "Answer", "text": "Saral Jeevan Bima is a standardized, simple pure-term insurance product mandated by the IRDAI across all insurers. Its features are identical regardless of which company you buy it from. It typically provides coverage up to ₹25 Lakhs, making it an excellent entry-level policy for first-time buyers or those with lower coverage requirements." } },
+            { "@type": "Question", "name": "How to claim LIC term insurance after death?", "acceptedAnswer": { "@type": "Answer", "text": "To claim LIC term insurance, the nominee must visit the home branch where the policy is serviced. They need to submit the death claim form, the original policy document, the municipal death certificate, and their KYC documents. If the claim is straightforward and non-investigated, LIC typically settles it within 15 to 30 days of receiving all the completed documents." } },
+            { "@type": "Question", "name": "Can I change the nominee in my LIC term policy online?", "acceptedAnswer": { "@type": "Answer", "text": "While LIC has significantly upgraded its e-services portal to handle premium payments, address updates, and loans, changing a nominee often still requires submitting a physical 'Change of Nomination' form at your servicing branch for verification. Always confirm the current digital capabilities on the LIC portal for your specific policy type." } }
         ]
     },
     "how_to_schema": {
-        "@context":"https://schema.org",
-        "@type":"HowTo",
-        "name":"How to buy LIC Tech-Term online",
-        "step":[
-          {"@type":"HowToStep","name":"Calculate premium","text":"Use the calculator to set sum assured, age and term."},
-          {"@type":"HowToStep","name":"Visit LIC e-services portal","text":"Choose the New Tech-Term option and start application."},
-          {"@type":"HowToStep","name":"Fill the form","text":"Provide personal, health and nominee details accurately."},
-          {"@type": "HowToStep", "name": "Upload Documents & Pay", "text": "Upload PAN/Aadhaar and necessary documents; pay the first premium online."},
-          {"@type": "HowToStep", "name": "Medical check (if required)", "text": "Complete any medical tests requested by LIC to finalize cover."}
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to buy LIC Tech-Term online",
+        "step": [
+            {"@type": "HowToStep", "name": "Calculate premium", "text": "Use the calculator to set sum assured, age and term."},
+            {"@type": "HowToStep", "name": "Visit LIC e-services portal", "text": "Choose the New Tech-Term option and start application."},
+            {"@type": "HowToStep", "name": "Fill the form", "text": "Provide personal, health and nominee details accurately."},
+            {"@type": "HowToStep", "name": "Upload Documents & Pay", "text": "Upload PAN/Aadhaar and necessary documents; pay the first premium online."},
+            {"@type": "HowToStep", "name": "Medical check (if required)", "text": "Complete any medical tests requested by LIC to finalize cover."}
         ]
     },
     "article_schema": {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "author": { "@type": "Person", "name": "Mahesh Chaube, CFP" },
-      "publisher": { "@type": "Organization", "name": "BharatSaver", "logo": { "@type": "ImageObject" }},
-      "datePublished": "2025-01-10",
-      "dateModified": "2025-01-10",
-      "reviewedBy": { "@type": "Person", "name": "Laveena Vijayi", "jobTitle": "Head of Insurance Research" }
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "author": { "@type": "Person", "name": "Mahesh Chaube, CFP" },
+        "publisher": { "@type": "Organization", "name": "BharatSaver", "logo": { "@type": "ImageObject" } },
+        "datePublished": "2026-05-06",
+        "dateModified": "2026-05-06",
+        "reviewedBy": { "@type": "Person", "name": "Laveena Vijayi", "jobTitle": "Head of Insurance Research" }
     }
 }
