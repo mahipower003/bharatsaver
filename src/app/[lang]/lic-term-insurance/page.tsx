@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
     const pageUrl = `${siteUrl}/${lang}/lic-term-insurance`;
     const title = "LIC Term Insurance Premium Calculator — Best Plans & ₹1 Crore Quote";
     const description = "Calculate LIC term insurance premiums instantly. Compare Tech-Term vs Jeevan Amar, see age-wise rates for ₹1 Crore cover, and learn which plan suits you best.";
-    const ogImage = `${siteUrl}/images/lic-term-insurance-guide.png`;
+    const ogImage = `${siteUrl}/images/Bharat-saver-home-page-top.png`;
     return {
         title,
         description,
