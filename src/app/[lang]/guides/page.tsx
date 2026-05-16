@@ -51,6 +51,22 @@ export default async function GuidesPage({ params }: { params: Promise<{ lang: L
       image: '/images/Bharat-saver-home-page-top.png',
       alt: 'LIC Term Insurance Guide',
       hint: 'term insurance'
+    },
+    {
+      title: "LIC Premium Receipt Download Guide",
+      subtitle: "Scrambling to file taxes? Download your LIC premium receipt online instantly using the customer portal, Pay Direct without login, or WhatsApp.",
+      link: `/${lang}/lic-premium-receipt-download`,
+      image: '/images/about us.png',
+      alt: 'Downloading LIC premium tax receipt',
+      hint: 'tax receipt download'
+    },
+    {
+      title: "LIC vs SIP: The Ultimate 2026 Comparison",
+      subtitle: "Are you leaving lakhs on the table? Discover why the 'Term Plan + SIP' strategy mathematically outperforms traditional LIC policies.",
+      link: `/${lang}/lic-vs-sip`,
+      image: '/images/about us.png', // Temporary fallback image
+      alt: 'LIC vs SIP head-to-head comparison',
+      hint: 'finance comparison'
     }
   ];
 

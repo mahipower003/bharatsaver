@@ -364,4 +364,38 @@
     <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/lic-vs-ppf-calculator" />
     <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/lic-vs-ppf-calculator" />
   </url>
+
+  <url>
+    <loc>https://bharatsaver.com/mr/lic-policy-status</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/lic-policy-status" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/lic-policy-status" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/lic-policy-status" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/lic-policy-status" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/lic-policy-status" />
+  </url>
+  <url>
+    <loc>https://bharatsaver.com/mr/lic-premium-receipt-download</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/lic-premium-receipt-download" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/lic-premium-receipt-download" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/lic-premium-receipt-download" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/lic-premium-receipt-download" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/lic-premium-receipt-download" />
+  </url>
+  <url>
+    <loc>https://bharatsaver.com/mr/lic-vs-sip</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bharatsaver.com/lic-vs-sip" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bharatsaver.com/hi/lic-vs-sip" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://bharatsaver.com/mr/lic-vs-sip" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://bharatsaver.com/ta/lic-vs-sip" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://bharatsaver.com/te/lic-vs-sip" />
+  </url>
 </urlset>
