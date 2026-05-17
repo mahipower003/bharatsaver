@@ -6,8 +6,9 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
-import { Loader2, Download, Baby, Twitter, Printer, Info } from 'lucide-react';
+import { Loader2, Download, Baby, Twitter, Printer, Info, RefreshCw } from 'lucide-react';
 import { Area, AreaChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip as RechartsTooltip, XAxis, YAxis } from 'recharts';
+import { useCalculatorWorker } from '@/hooks/useWorker';
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -74,8 +75,7 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  const [result, setResult] = useState<CalculationResult | null>(null);
-  const [isLoading, setIsLoading] = useState(false);
+  const { result, isCalculating: isLoading, calculate } = useCalculatorWorker<any, CalculationResult>('ssy', 150);
 
   const form = useForm<SsyFormValues>({
     resolver: zodResolver(formSchema),
@@ -117,64 +117,35 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  async function handleSubmit(values: SsyFormValues) {
-    setIsLoading(true);
-    setResult(null);
+  // Watch form values for auto-calculation
+  const formValues = form.watch();
 
-    await new Promise(resolve => setTimeout(resolve, 500));
-
-    const yearlyInvestment = values.investmentMode === 'monthly' ? values.investmentAmount * 12 : values.investmentAmount;
+  useEffect(() => {
+    // Only calculate if the values are valid
+    const yearlyInvestment = formValues.investmentMode === 'monthly' ? formValues.investmentAmount * 12 : formValues.investmentAmount;
     
-    if (yearlyInvestment > 150000) {
-        form.setError('investmentAmount', { type: 'manual', message: 'Total yearly investment cannot exceed ₹1,50,000'});
-        setIsLoading(false);
-        return;
-    }
-
-
-    let balance = 0;
-    let totalInvestment = 0;
-    const yearlyData: YearlyData[] = [];
-    const contributionPeriod = 15;
-    const maturityPeriod = 21;
-
-    for (let i = 1; i <= maturityPeriod; i++) {
-      const openingBalance = balance;
-      const invested = i <= contributionPeriod ? yearlyInvestment : 0;
-      if (invested > 0) {
-        totalInvestment += invested;
-      }
+    if (formValues.investmentAmount >= 250 && yearlyInvestment <= 150000 && 
+        formValues.girlAge >= 0 && formValues.girlAge <= 10 && 
+        formValues.interestRate > 0) {
       
-      const interest = (openingBalance + invested) * (values.interestRate / 100);
-      const closingBalance = openingBalance + invested + interest;
-      balance = closingBalance;
-
-      yearlyData.push({
-        year: i,
-        age: values.girlAge + i,
-        openingBalance,
-        invested,
-        interest,
-        closingBalance,
-        totalInvestment,
+      calculate({
+        annualInvestment: yearlyInvestment,
+        girlAge: formValues.girlAge,
+        interestRate: formValues.interestRate,
       });
+      
+      // Update URL silently
+      const params = new URLSearchParams(searchParams.toString());
+      params.set('investment', formValues.investmentAmount.toString());
+      params.set('age', formValues.girlAge.toString());
+      params.set('rate', formValues.interestRate.toString());
+      params.set('mode', formValues.investmentMode);
+      router.replace(`${pathname}?${params.toString()}`, { scroll: false });
     }
+  }, [formValues, calculate, pathname, router, searchParams]);
 
-    setResult({
-      maturityValue: balance,
-      totalInvestment: totalInvestment,
-      totalInterest: balance - totalInvestment,
-      yearlyData,
-    });
-    
-    const params = new URLSearchParams();
-    params.set('investment', values.investmentAmount.toString());
-    params.set('age', values.girlAge.toString());
-    params.set('rate', values.interestRate.toString());
-    params.set('mode', values.investmentMode);
-    router.push(`${pathname}?${params.toString()}`, { scroll: false });
-
-    setIsLoading(false);
+  function handleSubmit(values: SsyFormValues) {
+    // Prevent default form submission; calculations are handled automatically
   }
 
   const handlePrint = () => {
@@ -376,16 +347,7 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
                 />
               </div>
 
-              <Button type="submit" disabled={isLoading} className="w-full md:w-auto">
-                {isLoading ? (
-                  <>
-                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                    {dictionary.loading}
-                  </>
-                ) : (
-                  dictionary.calculate_button
-                )}
-              </Button>
+              {/* Removed the manual calculate button since it now auto-calculates with Web Workers */}
             </form>
           </Form>
         </CardContent>

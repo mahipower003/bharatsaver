@@ -6,8 +6,9 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
-import { Loader2, Download, TrendingUp, Twitter, Printer, Info } from 'lucide-react';
+import { Loader2, Download, TrendingUp, Twitter, Printer, Info, RefreshCw } from 'lucide-react';
 import { Area, AreaChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip as RechartsTooltip, XAxis, YAxis } from 'recharts';
+import { useCalculatorWorker } from '@/hooks/useWorker';
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
@@ -80,9 +81,9 @@ export function NpsCalculator({ dictionary }: NpsCalculatorProps) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  const [result, setResult] = useState<CalculationResult | null>(null);
-  const [isLoading, setIsLoading] = useState(false);
   const [lastUpdated, setLastUpdated] = useState('');
+  
+  const { result, isCalculating: isLoading, calculate } = useCalculatorWorker<any, CalculationResult>('nps', 150);
 
   const form = useForm<NpsFormValues>({
     resolver: zodResolver(formSchema),
@@ -125,64 +126,42 @@ export function NpsCalculator({ dictionary }: NpsCalculatorProps) {
     setLastUpdated(`${monthNames[currentDate.getMonth()]} ${currentDate.getFullYear()}`);
   }, []);
 
-  async function handleSubmit(values: NpsFormValues) {
-    setIsLoading(true);
-    setResult(null);
+  // Watch form values for auto-calculation
+  const formValues = form.watch();
 
-    await new Promise(resolve => setTimeout(resolve, 500));
-
-    const investmentPeriod = values.retirementAge - values.currentAge;
-    const annualContribution = values.contributionMode === 'monthly' ? values.contribution * 12 : values.contribution;
-    const r = values.expectedReturns / 100;
-
-    let balance = 0;
-    let totalInvestment = 0;
-    const yearlyData: YearlyData[] = [];
-
-    for (let i = 1; i <= investmentPeriod; i++) {
-      const openingBalance = balance;
-      const interest = (openingBalance + annualContribution) * r;
-      const closingBalance = openingBalance + annualContribution + interest;
-      balance = closingBalance;
-      totalInvestment += annualContribution;
-
-      yearlyData.push({
-        year: i,
-        age: values.currentAge + i,
-        openingBalance,
-        invested: annualContribution,
-        interest,
-        closingBalance,
-        totalInvestment,
+  useEffect(() => {
+    // Basic validation check before calculation
+    if (formValues.contribution >= 500 && formValues.contribution <= 200000 && 
+        formValues.currentAge >= 18 && formValues.currentAge <= 59 && 
+        formValues.retirementAge >= 60 && formValues.retirementAge <= 75 && 
+        formValues.expectedReturns > 0 && formValues.annuityPercentage >= 40 && 
+        formValues.annuityPercentage <= 100 && formValues.annuityRate > 0) {
+      
+      calculate({
+        contribution: formValues.contribution,
+        contributionMode: formValues.contributionMode,
+        currentAge: formValues.currentAge,
+        retirementAge: formValues.retirementAge,
+        expectedReturns: formValues.expectedReturns,
+        annuityPercentage: formValues.annuityPercentage,
+        annuityRate: formValues.annuityRate,
       });
+      
+      // Update URL silently
+      const params = new URLSearchParams(searchParams.toString());
+      params.set('contribution', formValues.contribution.toString());
+      params.set('mode', formValues.contributionMode);
+      params.set('age', formValues.currentAge.toString());
+      params.set('retire', formValues.retirementAge.toString());
+      params.set('returns', formValues.expectedReturns.toString());
+      params.set('annuity', formValues.annuityPercentage.toString());
+      params.set('annuityRate', formValues.annuityRate.toString());
+      router.replace(`${pathname}?${params.toString()}`, { scroll: false });
     }
+  }, [formValues, calculate, pathname, router, searchParams]);
 
-    const totalCorpus = balance;
-    const annuityValue = totalCorpus * (values.annuityPercentage / 100);
-    const lumpSumValue = totalCorpus - annuityValue;
-    const monthlyPension = (annuityValue * (values.annuityRate / 100)) / 12;
-
-    setResult({
-      totalCorpus,
-      lumpSumValue,
-      annuityValue,
-      monthlyPension,
-      totalInvestment,
-      totalInterest: totalCorpus - totalInvestment,
-      yearlyData,
-    });
-
-    const params = new URLSearchParams();
-    params.set('contribution', values.contribution.toString());
-    params.set('mode', values.contributionMode);
-    params.set('age', values.currentAge.toString());
-    params.set('retire', values.retirementAge.toString());
-    params.set('returns', values.expectedReturns.toString());
-    params.set('annuity', values.annuityPercentage.toString());
-    params.set('annuityRate', values.annuityRate.toString());
-    router.push(`${pathname}?${params.toString()}`, { scroll: false });
-
-    setIsLoading(false);
+  function handleSubmit(values: NpsFormValues) {
+    // Prevent default form submission; calculations are handled automatically
   }
 
   const handlePrint = () => window.print();
@@ -399,9 +378,7 @@ export function NpsCalculator({ dictionary }: NpsCalculatorProps) {
                 />
               </div>
 
-              <Button type="submit" disabled={isLoading} className="w-full md:w-auto">
-                {isLoading ? <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> {dictionary.loading}</> : dictionary.calculate_button}
-              </Button>
+              {/* Removed manual calculate button since it auto-calculates */}
             </form>
           </Form>
         </CardContent>

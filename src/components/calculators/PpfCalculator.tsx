@@ -6,8 +6,9 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
-import { Loader2, Download, Landmark, IndianRupee, Twitter, Printer, Info } from 'lucide-react';
+import { Loader2, Download, Landmark, IndianRupee, Twitter, Printer, Info, RefreshCw } from 'lucide-react';
 import { Area, AreaChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip as RechartsTooltip, XAxis, YAxis } from 'recharts';
+import { useCalculatorWorker } from '@/hooks/useWorker';
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -72,9 +73,9 @@ export function PpfCalculator({ dictionary }: PpfCalculatorProps) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  const [result, setResult] = useState<CalculationResult | null>(null);
-  const [isLoading, setIsLoading] = useState(false);
   const [lastUpdated, setLastUpdated] = useState('');
+  
+  const { result, isCalculating: isLoading, calculate } = useCalculatorWorker<PpfFormValues, CalculationResult>('ppf', 150);
 
   const form = useForm<PpfFormValues>({
     resolver: zodResolver(formSchema),
@@ -115,52 +116,28 @@ export function PpfCalculator({ dictionary }: PpfCalculatorProps) {
     setLastUpdated(`${monthNames[currentDate.getMonth()]} ${currentDate.getFullYear()}`);
   }, []);
 
-  async function handleSubmit(values: PpfFormValues) {
-    setIsLoading(true);
-    setResult(null);
+  // Watch form values for auto-calculation
+  const formValues = form.watch();
 
-    // Simulate calculation delay
-    await new Promise(resolve => setTimeout(resolve, 500));
-
-    let balance = 0;
-    let totalInvestment = 0;
-    let totalInterest = 0;
-    const yearlyData: YearlyData[] = [];
-
-    for (let i = 1; i <= values.tenure; i++) {
-      const openingBalance = balance;
-      const invested = values.annualInvestment;
-      totalInvestment += invested;
-      const interest = (openingBalance + invested) * (values.interestRate / 100);
-      totalInterest += interest;
-      const closingBalance = openingBalance + invested + interest;
-      balance = closingBalance;
-
-      yearlyData.push({
-        year: i,
-        openingBalance,
-        invested,
-        interest,
-        closingBalance,
-        totalInvestment,
-        totalInterest,
-      });
+  useEffect(() => {
+    // Only calculate if the values are valid (basic validation)
+    if (formValues.annualInvestment >= 500 && formValues.annualInvestment <= 150000 && 
+        formValues.tenure >= 15 && formValues.tenure <= 50 && 
+        formValues.interestRate > 0) {
+      calculate(formValues as PpfFormValues);
+      
+      // Update URL silently
+      const params = new URLSearchParams(searchParams.toString());
+      params.set('investment', formValues.annualInvestment.toString());
+      params.set('tenure', formValues.tenure.toString());
+      params.set('rate', formValues.interestRate.toString());
+      router.replace(`${pathname}?${params.toString()}`, { scroll: false });
     }
+  }, [formValues, calculate, pathname, router, searchParams]);
 
-    setResult({
-      maturityValue: balance,
-      totalInvestment: totalInvestment,
-      totalInterest: totalInterest,
-      yearlyData,
-    });
-    
-    const params = new URLSearchParams();
-    params.set('investment', values.annualInvestment.toString());
-    params.set('tenure', values.tenure.toString());
-    params.set('rate', values.interestRate.toString());
-    router.push(`${pathname}?${params.toString()}`, { scroll: false });
-
-    setIsLoading(false);
+  function handleSubmit(values: PpfFormValues) {
+    // The auto-calculation handles this, but we keep this for form submission prevention
+    calculate(values);
   }
 
   const handlePrint = () => {
@@ -336,16 +313,7 @@ export function PpfCalculator({ dictionary }: PpfCalculatorProps) {
                 />
               </div>
 
-              <Button type="submit" disabled={isLoading} className="w-full md:w-auto">
-                {isLoading ? (
-                  <>
-                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                    {dictionary.loading}
-                  </>
-                ) : (
-                  dictionary.calculate_button
-                )}
-              </Button>
+              {/* Removed the manual calculate button since it now auto-calculates with Web Workers */}
             </form>
           </Form>
         </CardContent>

@@ -51,6 +51,7 @@ export function Hero({ lang, dictionary }: HeroProps) {
                 height={640}
                 className="h-auto w-full"
                 priority
+                fetchPriority="high"
                 data-ai-hint="family finance"
               />
             </Card>

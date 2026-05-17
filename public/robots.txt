@@ -2,8 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://bharatsaver.com/sitemap.xml
-Sitemap: https://bharatsaver.com/sitemap-en.xml
-Sitemap: https://bharatsaver.com/sitemap-hi.xml
-Sitemap: https://bharatsaver.com/sitemap-mr.xml
-Sitemap: https://bharatsaver.com/sitemap-ta.xml
-Sitemap: https://bharatsaver.com/sitemap-te.xml
