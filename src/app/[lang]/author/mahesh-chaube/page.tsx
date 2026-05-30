@@ -8,6 +8,7 @@ import { calculators } from '@/data/calculators';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 import { AuthorCard } from "@/components/layout/AuthorCard";
+import { buildAlternates, buildOpenGraph, buildTwitterCard } from '@/lib/seo';
 
 
 export async function generateStaticParams() {

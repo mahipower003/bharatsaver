@@ -2,6 +2,7 @@ import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
 import CalculateLicMaturityClient from "./CalculateLicMaturityClient";
 import { getDictionary } from "@/lib/dictionaries";
+import { buildAlternates, buildOpenGraph, buildTwitterCard } from '@/lib/seo';
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -25,12 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
       locale: lang === 'en' ? 'en_IN' : lang,
       type: 'article',
     },
-    twitter: {
-      card: 'summary_large_image',
-      title: pageDict.meta_title,
-      description: pageDict.meta_description,
-      images: [ogImageUrl],
-    },
+    twitter: buildTwitterCard(pageDict.meta_title, pageDict.meta_description, ogImageUrl),
     alternates: {
       canonical: pageUrl,
       languages: i18nConfig.locales.reduce((acc, locale) => {

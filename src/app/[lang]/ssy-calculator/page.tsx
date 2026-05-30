@@ -9,6 +9,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { CheckCircle2, TrendingUp, ShieldCheck, Scale, Star, Baby, IndianRupee, Landmark, FileText, ArrowRightLeft } from "lucide-react";
 import Link from "next/link";
 import { CalculatorPageLayout } from "@/components/layout/CalculatorPageLayout";
+import { buildAlternates, buildOpenGraph, buildTwitterCard } from "@/lib/seo";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -16,44 +17,18 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
   const { lang } = await params;
-  const pageDict = (await import(`@/dictionaries/${lang}/ssy-calculator.json`)).default;
+  const path = '/ssy-calculator';
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/${lang}/ssy-calculator`;
   const ogImageUrl = `${siteUrl}/images/calculate-ssy-online.png`;
+  const title = 'SSY Calculator 2025 — Sukanya Samriddhi Yojana Returns & Maturity';
+  const description = 'Use our free SSY Calculator 2025 to estimate maturity, total interest and year-wise projection (8.2% current rate). Supports annual & monthly deposits. Export results as CSV.';
 
   return {
-    title: "SSY Calculator 2025 — Sukanya Samriddhi Yojana Returns & Maturity",
-    description: "Use our free SSY Calculator 2025 to estimate maturity, total interest and year-wise projection (8.2% current rate). Supports annual & monthly deposits. Export results as CSV.",
-    openGraph: {
-        title: "SSY Calculator 2025 — Sukanya Samriddhi Yojana Returns",
-        description: "Plan your daughter's future with the SSY calculator. Updated with current SSY interest rate and download/export options.",
-        url: pageUrl,
-        images: [{ 
-          url: ogImageUrl,
-          width: 1200, 
-          height: 630, 
-          alt: 'BharatSaver SSY Calculator' 
-        }],
-        locale: lang === 'en' ? 'en_IN' : lang,
-        type: 'website',
-    },
-    twitter: {
-        card: 'summary_large_image',
-        title: "SSY Calculator 2025 — Sukanya Samriddhi Yojana Returns & Maturity",
-        description: "Free SSY Calculator 2025 — estimate Sukanya Samriddhi Yojana maturity, total interest earned and year-wise breakdown (8.2% rate). Compare SSY vs PPF, FD & NPS.",
-        images: [ogImageUrl],
-    },
-    alternates: {
-      "canonical": `${siteUrl}/${lang}/ssy-calculator`,
-      languages: {
-        'en': `${siteUrl}/en/ssy-calculator`,
-        'hi': `${siteUrl}/hi/ssy-calculator`,
-        'mr': `${siteUrl}/mr/ssy-calculator`,
-        'ta': `${siteUrl}/ta/ssy-calculator`,
-        'te': `${siteUrl}/te/ssy-calculator`,
-        'x-default': `${siteUrl}/en/ssy-calculator`,
-      }
-    },
+    title,
+    description,
+    openGraph: buildOpenGraph(lang, path, 'SSY Calculator 2025 — Sukanya Samriddhi Yojana Returns', 'Plan your daughter\'s future with the SSY calculator. Updated with current SSY interest rate and download/export options.', ogImageUrl),
+    twitter: buildTwitterCard(title, description, ogImageUrl),
+    alternates: buildAlternates(lang, path),
   };
 }
 

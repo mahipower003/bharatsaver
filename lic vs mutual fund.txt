@@ -1,0 +1,402 @@
+**SEO Title:** LIC Bonus Rates: Latest Slabs, Calculation Secrets & Maturity Impact
+
+**Meta Description:** Decode the latest LIC bonus rates, new step-up sum assured slabs, and terminal bonuses. Learn how to calculate your policy maturity proceeds.
+
+**URL Slug:** lic-bonus-rates-guide
+
+---
+
+If you own an insurance policy with the Life Insurance Corporation of India (LIC), you have likely seen the term "bonus" on your policy documents or heard it mentioned by your agent. But how exactly are these bonuses calculated? Why do some policies get a higher payout than others, even with the same tenure?
+
+Most importantly, what is the actual rate of return you are getting once these bonuses are added to your final maturity payout?
+
+Understanding **LIC Bonus Rates** is the single most important step in evaluating whether your life insurance policy is truly helping you build wealth or quietly eating away at your hard-earned savings through the drag of simple interest.
+
+---
+
+## Table of Contents
+
+1.(#the-great-confusion-shareholder-bonus-vs-policyholder-bonus)
+2.(#how-lic-actuarial-bonuses-are-born)
+3.(#understanding-the-types-of-lic-bonuses)
+4.(#the-game-changing-sum-assured-sa-based-step-up-slabs)
+5.(#lic-bonus-rates-tables-for-active-plans)
+6.(#final-additional-bonus-fab-the-terminal-reward)
+7.(#step-by-step-calculation-how-to-find-your-policys-maturity-value)
+8.(#the-compounding-trap-simple-interest-vs-compound-interest)
+9.(#the-tax-landscape-navigating-the-income-tax-act-2025)
+10. [Common Mistakes Policyholders Make](#common-mistakes-policyholders-make)
+11. [Frequently Asked Questions (FAQs)](#frequently-asked-questions-faqs)
+12.(#the-verdict-how-to-optimize-your-portfolio)
+
+---
+
+## The Great Confusion: Shareholder Bonus vs. Policyholder Bonus
+
+Before we dive into the calculations, we must clear up a massive wave of confusion that has hit retail investors. There are two completely different types of "LIC Bonuses":
+
+### 1. The Shareholder 1:1 Corporate Bonus Issue
+
+For equity shareholders of LIC trading on the NSE and BSE (NSE: LICI) , the Board of Directors approved a historic 1:1 corporate bonus share issue with a record date of May 29, 2026. If you held LIC shares on this date, your share count doubled at no cost, and the share price adjusted downward by exactly 50%. This was a stock market liquidity action that did not change LIC’s fundamental market capitalization.
+
+### 2. The Policyholder Actuarial Bonus
+
+This is the annual bonus declared for LIC insurance policyholders. It represents the distribution of valuation surpluses generated within LIC’s massive life fund. If you own a participating insurance policy (like New Jeevan Anand or Jeevan Labh), you are entitled to this bonus. It has absolutely nothing to do with stock market shares, the May 2026 record date, or stock splits.
+
+This guide focuses strictly on the second type: the **actuarial bonuses that determine your policy’s maturity value**.
+
+---
+
+## How LIC Actuarial Bonuses are Born
+
+LIC is India's largest insurance provider and institutional investor, managing massive assets under management. At the end of every financial year (on March 31st), LIC's actuarial department conducts a thorough valuation of its assets and liabilities.
+
+By statutory mandate, LIC historically distributes 95% of its participating "with-profit" fund surplus to its policyholders, while the remaining 5% is allocated to the government as the promoter. The surplus is declared every year on September 1st as a **Simple Reversionary Bonus (SRB)**. Once declared, this bonus is legally guaranteed (vested) in your policy and is paid out at maturity, death, or surrender.
+
+---
+
+## Understanding the Types of LIC Bonuses
+
+To calculate your final payout accurately, you must understand the four distinct bonus types LIC utilizes:
+
+* **Simple Reversionary Bonus (SRB):** This is the core annual bonus added to your policy. It is declared as a flat rupee rate per ₹1,000 of your policy’s Sum Assured. It does not compound.
+
+
+* **Interim Bonus:** If a policyholder passes away or their policy matures in the middle of a financial year (between two annual September declarations), an interim bonus is applied to ensure they do not lose out on mid-year growth.
+
+
+* **Final Additional Bonus (FAB):** Also known as a terminal bonus, this is a one-time reward paid only if your policy completes a tenure of 15 years or more. It scales exponentially for longer durations.
+
+
+* **Loyalty Additions (LA):** Certain policies do not participate in annual reversionary bonuses. Instead, they pay a one-time loyalty addition upon exit after completing a specific duration.
+
+
+
+---
+
+## The Game-Changing Sum Assured (SA)-Based Step-Up Slabs
+
+Historically, LIC declared flat bonus rates for all policyholders under a specific plan. However, recent valuations introduced a major structural change: **Sum Assured-Based Step-Up Slabs**.
+
+To reward higher coverage amounts and encourage larger policy purchases, LIC transitioned to a tiered step-up structure :
+
+1. **Slab A (Sum Assured < ₹5,00,000):** Receives the baseline Simple Reversionary Bonus.
+
+
+2. **Slab B (Sum Assured ≥ ₹5,00,000):** Receives a step-up of **+₹1 per ₹1,000 Sum Assured** across most participating plans.
+
+
+
+For LIC's flagship limited-premium product, **Jeevan Labh (Plan 736)**, a more generous **three-slab structure** is implemented :
+
+* **Slab A (SA < ₹5,00,000):** Receives the base bonus rate.
+
+
+* **Slab B (₹5,00,000 ≤ SA < ₹10,00,000):** Step-up of **+₹1 per ₹1,000 SA**.
+
+
+* **Slab C (SA ≥ ₹10,00,000):** Step-up of **+₹2 per ₹1,000 SA**.
+
+
+
+For a policyholder with a ₹10,00,000 Sum Assured on Jeevan Labh, a +₹2 step-up translates to an extra ₹2,000 in accrued bonus every year. Over a 25-year term, this adds an extra ₹50,000 to your maturity payout before terminal bonuses are even considered.
+
+---
+
+## LIC Bonus Rates Tables for Active Plans
+
+The tables below present the verified reversionary bonus rates across LIC's primary active participating insurance products :
+
+### Table 1: LIC New Endowment Plan (Plan 914)
+
+A classic savings-and-protection plan offering flexible policy terms.
+
+| Policy Term (Years) | SRB (SA < ₹5,00,000) | SRB (SA ≥ ₹5,00,000) |
+| --- | --- | --- |
+| 12 to 15 Years | ₹35 per ₹1,000 SA | ₹36 per ₹1,000 SA |
+| 16 to 20 Years | ₹39 per ₹1,000 SA | ₹40 per ₹1,000 SA |
+| Over 20 Years | ₹45 per ₹1,000 SA | ₹46 per ₹1,000 SA |
+
+### Table 2: LIC New Jeevan Anand (Plan 915)
+
+The highly popular "double cover" plan that maintains life coverage even after the maturity amount is fully paid.
+
+| Policy Term (Years) | SRB (SA < ₹5,00,000) | SRB (SA ≥ ₹5,00,000) |
+| --- | --- | --- |
+| 15 Years | ₹38 per ₹1,000 SA | ₹39 per ₹1,000 SA |
+| 16 to 20 Years | ₹42 per ₹1,000 SA | ₹43 per ₹1,000 SA |
+| Over 20 Years | ₹46 per ₹1,000 SA | ₹47 per ₹1,000 SA |
+
+### Table 3: LIC Jeevan Labh (Plan 736 / 936)
+
+A limited premium-paying endowment plan designed for long-term goal funding.
+
+| Policy Term / Premium Term | Slab A (SA < ₹5 Lakh) | Slab B (₹5L to < ₹10L) | Slab C (SA ≥ ₹10 Lakh) |
+| --- | --- | --- | --- |
+| 16 Years (PPT: 10) | ₹40 per ₹1,000 SA | ₹41 per ₹1,000 SA | ₹42 per ₹1,000 SA |
+| 21 Years (PPT: 15) | ₹44 per ₹1,000 SA | ₹45 per ₹1,000 SA | ₹46 per ₹1,000 SA |
+| 25 Years (PPT: 16) | ₹47 per ₹1,000 SA | ₹48 per ₹1,000 SA | ₹49 per ₹1,000 SA |
+
+### Table 4: LIC Jeevan Lakshya (Plan 733 / 933)
+
+Often recommended as a child education plan due to its built-in annual premium waiver and annual income benefit features upon the parent's demise.
+
+| Policy Term (Years) | SRB (SA < ₹5,00,000) | SRB (SA ≥ ₹5,00,000) |
+| --- | --- | --- |
+| 13 to 15 Years | ₹38 per ₹1,000 SA | ₹39 per ₹1,000 SA |
+| 16 to 20 Years | ₹42 per ₹1,000 SA | ₹43 per ₹1,000 SA |
+| Over 20 Years | ₹46 per ₹1,000 SA | ₹47 per ₹1,000 SA |
+
+---
+
+## Final Additional Bonus (FAB) – The Terminal Reward
+
+The Final Additional Bonus (FAB) is a one-time terminal payout added to your maturity or death claim. Because it rewards long-term capital retention, it increases exponentially the longer you keep your policy active.
+
+| Completed Policy Term | FAB (SA < ₹2,00,000) | FAB (SA ≥ ₹2,00,000) |
+| --- | --- | --- |
+| 15 Years | ₹10 to ₹20 per ₹1,000 SA | ₹25 to ₹40 per ₹1,000 SA |
+| 20 Years | ₹40 per ₹1,000 SA | ₹70 per ₹1,000 SA |
+| 25 Years | ₹330 per ₹1,000 SA | ₹450 per ₹1,000 SA |
+| 30 Years | ₹900 per ₹1,000 SA | ₹1,100 per ₹1,000 SA |
+| 35 Years | ₹1,850 per ₹1,000 SA | ₹2,300 per ₹1,000 SA |
+| 40+ Years | ₹3,000 per ₹1,000 SA | ₹3,550 per ₹1,000 SA |
+
+---
+
+## Step-by-Step Calculation: How to Find Your Policy's Maturity Value
+
+Let us run a real-world calculation using these official tables so you can see exactly how the math works.
+
+### Scenario Profile
+
+* **Policyholder:** Rohan, Age 30
+* **Policy Chosen:** LIC New Jeevan Anand (Plan 915)
+* **Policy Term:** 25 Years
+* **Basic Sum Assured:** ₹10,00,000
+* **Annual Premium:** ~₹46,000
+
+### Step 1: Calculate the Simple Reversionary Bonus (SRB)
+
+The formula to calculate the annual bonus is:
+
+$$\text{Annual Reversionary Bonus} = \left(\frac{\text{Sum Assured}}{1000}\right) \times \text{Bonus Rate}$$
+
+Since Rohan’s Sum Assured is ₹10,00,000 (which is $\geq$ ₹5,00,000), his policy qualifies for the step-up slab. According to Table 2, the rate for a term over 20 years is **₹47 per ₹1,000 SA**.
+
+$$\text{Annual Reversionary Bonus} = \left(\frac{1,000,000}{1000}\right) \times 47 = \text{₹}47,000 \text{ per year}$$
+
+Assuming this rate remains stable over his term, the total reversionary bonus accumulated over 25 years is:
+
+$$\text{Total Accumulated SRB} = \text{₹}47,000 \times 25 = \text{₹}11,75,000$$
+
+### Step 2: Calculate the Final Additional Bonus (FAB)
+
+Rohan's policy is active for 25 years and has a Sum Assured greater than ₹2,00,000. According to the FAB table, his terminal bonus rate is **₹450 per ₹1,000 SA**.
+
+$$\text{Total FAB Amount} = \left(\frac{1,000,000}{1000}\right) \times 450 = \text{₹}4,50,000$$
+
+### Step 3: Determine the Final Maturity Payout
+
+$$\text{Total Maturity Benefit} = \text{Sum Assured} + \text{Accumulated SRB} + \text{FAB}$$
+
+$$\text{Total Maturity Benefit} = \text{₹}10,00,000 + \text{₹}11,75,000 + \text{₹}4,50,000 = \text{₹}26,25,000$$
+
+Rohan pays approximately ₹46,00,000 in total premiums over 25 years. At maturity, he receives a lump-sum check of ₹26,25,000. This translates to a net Internal Rate of Return (IRR) of roughly **5.2% to 5.5%**.
+
+---
+
+## The Compounding Trap: Simple Interest vs. Compound Interest
+
+Now that you know how the math works, we need to address the elephant in the financial room: **The Compounding Trap**.
+
+When you invest in a Systematic Investment Plan (SIP) in equity mutual funds, your money compounds. This means your returns earn returns, causing your wealth to grow exponentially over time.
+
+Traditional LIC policies do **not** compound. Reversionary bonuses are calculated as **simple interest** based strictly on your original, flat Sum Assured. Every year, Rohan gets ₹47,000 added to his policy account. That ₹47,000 sits idly inside LIC's reserves for 25 years without earning a single rupee of interest-on-interest.
+
+Look at the devastating opportunity cost of choosing a low-yield simple interest instrument over a compounding equity mutual fund SIP on a standard ₹10,000/month commitment :
+
+| Investment Period | Cumulative Outlay | LIC Endowment Payout (~5% IRR) 
+
+ | Equity Mutual Fund SIP (~12% CAGR) 
+
+ | The Real Wealth Gap |
+| --- | --- | --- | --- | --- |
+| 10 Years | ₹12,00,000 | ~₹16,00,000 to ₹18,00,000 | ~₹23,23,390 | **~₹5,23,390** |
+| 15 Years | ₹18,00,000 | ~₹26,00,000 to ₹30,00,000 | ~₹50,45,760 | **~₹20,45,760** |
+| 20 Years | ₹24,00,000 | ~₹38,00,000 to ₹45,00,000 | ~₹99,91,475 | **~₹54,91,475** |
+| 25 Years | ₹30,00,000 | ~₹55,00,000 to ₹65,00,000 | ~₹1,89,76,400 | **~₹1,24,76,400** |
+
+By year 25, the power of compound interest has widened the wealth gap to **over ₹1.24 Crore**. This is the massive invisible cost of bundling your life insurance cover with your long-term wealth investments.
+
+---
+
+## The Tax Landscape: Navigating the Income Tax Act, 2025
+
+Taxation rules significantly impact your net returns. Traditional life insurance policies and mutual funds operate under completely different tax architectures in India.
+
+### The Reorganized Revisions
+
+Under the revised codes of the **Income Tax Act, 2025**, the tax sections we have relied on for decades have been restructured :
+
+| Legacy Tax Section (1961 Act) | Reorganized Section (2025 Act) | Deduction / Exemption Rule |
+| --- | --- | --- |
+| **Section 80C** | **Section 123** | Deductions up to ₹1,50,000 on eligible premiums.
+
+ |
+| **Section 80D** | **Section 126** | Deductions up to ₹25,000 (₹50,000 for seniors) on health riders.
+
+ |
+| **Section 10(10D)** | **Schedule II** | Exemption of eligible maturity and survival proceeds.
+
+ |
+
+### The ₹5 Lakh Aggregate Premium Tax Cap
+
+Historically, all maturity payouts from traditional endowment insurance plans were tax-free. However, the current tax code imposes a strict cap:
+
+* For policies issued **on or after April 1, 2023**, the maturity proceeds are completely tax-free under Schedule II **only if the aggregate annual premium across all your traditional policies remains under ₹5,00,000**.
+
+
+* If your combined annual premium exceeds ₹5,00,000, the entire maturity payout (minus the premiums you paid) is taxed as "Income from Other Sources" at your marginal income tax slab rate.
+* **The Death Benefit Exception:** The ₹5 Lakh premium cap does not apply to death benefits. In the event of the policyholder's demise, the payout received by nominees remains **100% tax-free** under Schedule II, regardless of the premium size.
+
+
+
+### TDS Rules on Taxable Payouts
+
+If your traditional policy breaches the ₹5 Lakh premium threshold, the maturity benefit is subject to Tax Deducted at Source (TDS) at the time of payout :
+
+* **Resident with PAN:** A **5% TDS** is deducted from the net profit portion (Maturity Proceeds minus Total Premiums Paid), provided the net taxable profit exceeds ₹1,00,000.
+
+
+* **Resident without PAN:** A flat **20% TDS** is deducted from the entire maturity proceed.
+
+
+* **Non-Resident (NRI):** A flat **30% TDS** (plus applicable surcharges and health cess) is deducted from the entire payout.
+
+
+
+---
+
+## Common Mistakes Policyholders Make
+
+Over my two decades of experience ranking financial products, I have seen millions of Indian retail savers make the same costly mistakes:
+
+1. **Falling for the Opaque Bundling Trap:** Buying a traditional endowment plan that tries to do two jobs—provide life cover and grow your wealth—and ends up failing at both. It gives you an inadequate life cover and locks your capital into low, simple-interest returns.
+
+
+2. **Ignoring the Surrender Charge Penalty:** Traditional policies are highly illiquid. If you face a financial emergency and decide to surrender your policy in the first three years, the insurer will heavily penalize you, often wiping out **30% to 50% of the total premiums** you paid.
+
+
+3. **Underestimating the Drag of Retail Inflation:** With India’s consumer price inflation (CPI) averaging 5.0% to 5.5% over long cycles, a traditional insurance plan yielding an IRR of 5.0% to 5.5% provides flat or negative real, inflation-adjusted returns.
+
+
+4. **Assuming Stock Market Action Affects Policies:** Getting swayed by news of corporate stock adjustments (such as the 1:1 shareholder bonus in May 2026) and believing it has a positive impact on your insurance policy's maturity returns.
+
+
+
+---
+
+## Frequently Asked Questions (FAQs)
+
+### What is the current bonus rate of LIC?
+
+LIC declares its Simple Reversionary Bonus rates annually on September 1st. For most active endowment plans, the rate ranges from ₹35 to ₹47 per ₹1,000 of your policy's Sum Assured, depending on the term and whether your policy qualifies for the ₹5 Lakh step-up slab.
+
+### How do I calculate my LIC policy bonus?
+
+To calculate your annual reversionary bonus, divide your basic Sum Assured by 1,000 and multiply it by the declared bonus rate for your specific plan and term. The formula is:
+
+
+$$\text{Annual Reversionary Bonus} = \left(\frac{\text{Sum Assured}}{1000}\right) \times \text{Bonus Rate}$$
+
+### Why did LIC shares halve in May 2026?
+
+On May 29, 2026, LIC shares adjusted downward by 50% because the company executed a 1:1 corporate bonus share issue for its stock market equity investors. This was an exchange-liquidity action that did not impact policyholders or their insurance maturity values.
+
+### What is the difference between a reversionary bonus and a terminal bonus?
+
+A simple reversionary bonus is declared annually and vests continuously in your policy account throughout the term. A terminal bonus (Final Additional Bonus) is a one-time lump-sum payout added only at maturity or death, provided the policy has run for at least 15 years.
+
+### Is LIC maturity taxable under the new rules?
+
+Under the Income Tax Act, 2025 (Schedule II), traditional non-ULIP policies are tax-free at maturity only if the aggregate annual premium does not exceed ₹5,00,000 in any previous year. If the premium exceeds this cap, the net returns are taxable at your marginal tax slab rate.
+
+### How much TDS is deducted on taxable LIC payouts?
+
+For resident policyholders who submit their PAN, a 5% TDS is deducted from the net income portion (maturity value minus total premiums paid), provided the net profit exceeds ₹1,00,000.
+
+### Does a traditional LIC policy compound?
+
+No. Traditional LIC participating endowment and money-back policies utilize Simple Reversionary Bonuses. The bonus is calculated only on your flat Sum Assured, meaning you do not earn compound interest (returns on previously accumulated bonuses).
+
+### Can I withdraw my accrued LIC bonus early?
+
+No. Policyholder bonuses are credited internally to your policy record each year. They are locked in and paid out as a lump-sum amount only when the policy terminates due to maturity, a death claim, or early surrender.
+
+---
+
+## The Verdict: How to Optimize Your Portfolio
+
+If you want stable, guaranteed returns backed by the Sovereign Guarantee of Section 37 of the LIC Act, traditional participating policies are an option. However, if your primary goal is long-term wealth creation, **mixing your insurance protection with your investments is a massive mistake**.
+
+The optimal wealth strategy is simple: **Unbundle your capital**.
+
+1. **Secure Pure Protection:** Purchase a high-cover, low-cost pure Term Life Insurance plan from LIC or another leading insurer. For a 30-year-old, a ₹1 Crore term cover costs only ₹10,000 to ₹12,000 per year.
+
+
+2. **Invest the Surplus for Growth:** Take the remaining surplus capital and invest it systematically into a diversified equity mutual fund SIP. By doing so, you leverage compounding to generate market-linked returns of 12% to 15% CAGR over the long term.
+
+
+
+To compare these paths dynamically based on your own age, premium size, and financial horizon, try the calculator on BharatSaver.
+
+---
+
+## Technical SEO Configurations
+
+### 1. Suggested Image Ideas & Alt Text
+
+* **Image 1: Simple Interest vs. Compound Interest Chart**
+* *Visual:* A line graph showing the exponential divergence over 25 years between a flat ₹47,000 simple interest line and a compounding 12% mutual fund SIP line.
+* *Alt Text:* Chart comparing the simple interest maturity returns of a traditional LIC policy against a compounding mutual fund SIP over 25 years.
+
+
+* **Image 2: Step-Up Sum Assured Slabs Infographic**
+* *Visual:* A clear step diagram illustrating the baseline bonus rate below ₹5 Lakh Sum Assured and the +₹1 step-up rate for policies above ₹5 Lakh.
+* *Alt Text:* Infographic explaining the Sum Assured-based step-up bonus slabs for LIC policyholders.
+
+
+
+### 2. Suggested Internal Linking Opportunities
+
+* Anchor text **"LIC Jeevan Umang Calculator"** linking to your dedicated Jeevan Umang page.
+* Anchor text **"LIC Surrender Value Calculator"** linking to your tool for calculating surrender penalties.
+* Anchor text **"SSY Calculator"** linking to your Sukanya Samriddhi Yojana planning tool.
+* Anchor text **"Sovereign Guarantee as per Sec 37"** linking to your guide on safe government savings schemes in India.
+
+
+* Anchor text **"LIC vs PPF Calculator"** linking to your comparison tool.
+
+### 3. Suggested Breadcrumbs (JSON-LD Schema)
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement":
+}
+
+```
+
+### 4. Suggested FAQ Schema (JSON-LD)
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity":
+}
+
+```

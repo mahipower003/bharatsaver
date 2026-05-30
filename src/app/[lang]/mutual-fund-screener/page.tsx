@@ -8,6 +8,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { BookOpen, ListOrdered, Wand2, GitCompareArrows, HeartPulse, Ban, ShieldCheck, Star, Newspaper, Users, Scaling, HelpCircle } from 'lucide-react';
 import { CalculatorPageLayout } from "@/components/layout/CalculatorPageLayout";
+import { buildAlternates, buildOpenGraph, buildTwitterCard } from '@/lib/seo';
 
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {

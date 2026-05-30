@@ -10,6 +10,7 @@ import Link from "next/link";
 import { calculateRetirementCorpus, calculateSip } from "@/lib/calculations";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { CalculatorPageLayout } from "@/components/layout/CalculatorPageLayout";
+import { buildAlternates, buildOpenGraph, buildTwitterCard } from '@/lib/seo';
 
 
 export async function generateStaticParams() {

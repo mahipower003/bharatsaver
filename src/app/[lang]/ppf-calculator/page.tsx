@@ -9,6 +9,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { CheckCircle2, TrendingUp, Landmark, ArrowRight, ShieldCheck, Scale, Star } from "lucide-react";
 import Link from "next/link";
 import { CalculatorPageLayout } from "@/components/layout/CalculatorPageLayout";
+import { buildAlternates, buildOpenGraph, buildTwitterCard, buildArticleSchema } from "@/lib/seo";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -17,75 +18,29 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
   const { lang } = await params;
   const pageDict = (await import(`@/dictionaries/${lang}/ppf-calculator.json`)).default;
+  const path = '/ppf-calculator';
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/${lang}/ppf-calculator`;
   const ogImageUrl = `${siteUrl}/images/calculate-ppf-online.png`;
+  const title = pageDict.meta_title;
+  const description = pageDict.meta_description;
 
-  const faqItems = pageDict.faqs;
-  
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": pageUrl
-    },
-    "headline": "PPF Calculator 2025 — Calculate PPF Maturity Online (India)",
-    "description": "Free PPF calculator for 2025: Instantly estimate PPF maturity, interest, and tax savings (EEE). Includes year-wise charts, extension rules, and comparison with FD, NPS, and SSY.",
-    "image": ogImageUrl,
-    "author": {
-      "@type": "Person",
-      "name": "Mahesh Chaube, CFP",
-      "url": "https://www.linkedin.com/in/mahi003/",
-      "sameAs": "https://www.linkedin.com/in/mahi003/"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "BharatSaver",
-      "logo": {
-        "@type": "ImageObject",
-        "url": `${siteUrl}/icon.svg`
-      }
-    },
-    "reviewedBy": {
-      "@type": "Organization",
-      "name": "BharatSaver Editorial Team"
-    },
-    "about": ["Public Provident Fund", "PPF Calculator", "PPF Interest Rate"],
-    "datePublished": "2024-07-28",
-    "dateModified": "2025-09-01"
-  }
+  const articleSchema = buildArticleSchema({
+    lang,
+    path,
+    headline: 'PPF Calculator 2025 — Calculate PPF Maturity Online (India)',
+    description: 'Free PPF calculator for 2025: Instantly estimate PPF maturity, interest, and tax savings (EEE). Includes year-wise charts, extension rules, and comparison with FD, NPS, and SSY.',
+    ogImageUrl,
+    datePublished: '2024-07-28',
+    dateModified: '2025-09-01',
+    about: ['Public Provident Fund', 'PPF Calculator', 'PPF Interest Rate'],
+  });
 
   return {
-    title: pageDict.meta_title,
-    description: pageDict.meta_description,
-    openGraph: {
-        title: pageDict.meta_title,
-        description: pageDict.meta_description,
-        url: pageUrl,
-        siteName: 'BharatSaver',
-        images: [{ 
-          url: ogImageUrl,
-          width: 1200, 
-          height: 630, 
-          alt: 'BharatSaver PPF Calculator' 
-        }],
-        "locale": lang === 'en' ? 'en_IN' : lang,
-        type: 'website',
-    },
-    twitter: {
-        card: 'summary_large_image',
-        title: pageDict.meta_title,
-        description: pageDict.meta_description,
-        images: [ogImageUrl],
-    },
-    alternates: {
-      canonical: pageUrl,
-      languages: i18nConfig.locales.reduce((acc, locale) => {
-        acc[locale] = `${siteUrl}/${locale}/ppf-calculator`;
-        return acc;
-    }, {} as Record<string, string>),
-    },
+    title,
+    description,
+    openGraph: buildOpenGraph(lang, path, title, description, ogImageUrl),
+    twitter: buildTwitterCard(title, description, ogImageUrl),
+    alternates: buildAlternates(lang, path),
     other: {
       'application/ld+json': JSON.stringify(articleSchema),
     },

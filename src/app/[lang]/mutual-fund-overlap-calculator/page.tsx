@@ -10,6 +10,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import Image from "next/image";
 import Link from "next/link";
 import { CalculatorPageLayout } from "@/components/layout/CalculatorPageLayout";
+import { buildAlternates, buildOpenGraph, buildTwitterCard } from '@/lib/seo';
 
 
 export async function generateStaticParams() {

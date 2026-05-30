@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Mail, Phone } from "lucide-react";
 import Link from "next/link";
+import { buildAlternates, buildOpenGraph, buildTwitterCard } from '@/lib/seo';
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));

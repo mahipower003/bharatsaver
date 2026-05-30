@@ -4,6 +4,7 @@ import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { AuthorCard } from "@/components/layout/AuthorCard";
+import { buildAlternates, buildOpenGraph, buildTwitterCard } from '@/lib/seo';
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));

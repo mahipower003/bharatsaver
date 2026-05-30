@@ -8,6 +8,7 @@ import { FileText, TrendingUp, Star, AlertTriangle, CheckCircle, HelpCircle, Git
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import Link from "next/link";
 import { CalculatorPageLayout } from "@/components/layout/CalculatorPageLayout";
+import { buildAlternates, buildOpenGraph, buildTwitterCard } from '@/lib/seo';
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));

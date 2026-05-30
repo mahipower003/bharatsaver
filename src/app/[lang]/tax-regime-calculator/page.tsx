@@ -9,6 +9,7 @@ import { FileText, Download, TrendingUp, Star, AlertTriangle, CheckCircle, HelpC
 import Link from "next/link";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import { CalculatorPageLayout } from "@/components/layout/CalculatorPageLayout";
+import { buildAlternates, buildOpenGraph, buildTwitterCard } from '@/lib/seo';
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -91,12 +92,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
       "locale": lang === 'en' ? 'en_IN' : lang,
       type: 'website',
     },
-    twitter: {
-      card: 'summary_large_image',
-      title: pageDict.meta_title,
-      description: pageDict.meta_description,
-      images: [ogImageUrl],
-    },
+    twitter: buildTwitterCard(pageDict.meta_title, pageDict.meta_description, ogImageUrl),
     alternates: {
       canonical: pageUrl,
       languages: i18nConfig.locales.reduce((acc, locale) => {

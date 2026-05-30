@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { TrendingUp, ShieldCheck, Scale, Star } from "lucide-react";
 import { CalculatorPageLayout } from "@/components/layout/CalculatorPageLayout";
+import { buildAlternates, buildOpenGraph, buildTwitterCard, buildArticleSchema } from "@/lib/seo";
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -14,68 +15,29 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
   const { lang } = await params;
   const pageDict = (await import(`@/dictionaries/${lang}/nps-calculator.json`)).default;
+  const path = '/nps-calculator';
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
-  const pageUrl = `${siteUrl}/${lang}/nps-calculator`;
   const ogImageUrl = `${siteUrl}/images/nps-calculator-online.png`;
+  const title = pageDict.meta_title;
+  const description = pageDict.meta_description;
 
-
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": pageUrl
-    },
-    "headline": "NPS Calculator 2025 — National Pension System Corpus & Pension",
-    "description": "Use our NPS calculator to plan your retirement. Enter contribution, expected returns and retirement age to get corpus & monthly pension estimates.",
-    "image": ogImageUrl,
-    "author": {
-      "@type": "Person",
-      "name": "Mahesh Chaube, CFP",
-      "url": "https://www.linkedin.com/in/mahi003/",
-      "sameAs": "https://www.linkedin.com/in/mahi003/"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "BharatSaver",
-      "logo": {
-        "@type": "ImageObject",
-        "url": `${siteUrl}/icon.svg`
-      }
-    },
-    "reviewedBy": {
-      "@type": "Organization",
-      "name": "BharatSaver Editorial Team"
-    },
-    "about": ["National Pension System", "NPS Calculator", "Retirement Planning"],
-    "datePublished": "2024-07-26",
-    "dateModified": "2025-09-01"
-  }
+  const articleSchema = buildArticleSchema({
+    lang,
+    path,
+    headline: 'NPS Calculator 2025 — National Pension System Corpus & Pension',
+    description: 'Use our NPS calculator to plan your retirement. Enter contribution, expected returns and retirement age to get corpus & monthly pension estimates.',
+    ogImageUrl,
+    datePublished: '2024-07-26',
+    dateModified: '2025-09-01',
+    about: ['National Pension System', 'NPS Calculator', 'Retirement Planning'],
+  });
 
   return {
-    title: pageDict.meta_title,
-    description: pageDict.meta_description,
-    openGraph: {
-      title: "NPS Calculator 2025 — National Pension System Corpus & Pension",
-      description: "Use our NPS calculator to plan your retirement. Enter contribution, expected returns and retirement age to get corpus & monthly pension estimates.",
-      url: pageUrl,
-      images: [{ url: ogImageUrl, width: 1200, height: 630, alt: 'BharatSaver NPS Calculator' }],
-      locale: lang === 'en' ? 'en_IN' : lang,
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: pageDict.meta_title,
-      description: pageDict.meta_description,
-      images: [ogImageUrl],
-    },
-    alternates: {
-      canonical: pageUrl,
-      languages: i18nConfig.locales.reduce((acc, locale) => {
-        acc[locale] = `${siteUrl}/${locale}/nps-calculator`;
-        return acc;
-      }, {} as Record<string, string>),
-    },
+    title,
+    description,
+    openGraph: buildOpenGraph(lang, path, 'NPS Calculator 2025 — National Pension System Corpus & Pension', 'Use our NPS calculator to plan your retirement. Enter contribution, expected returns and retirement age to get corpus & monthly pension estimates.', ogImageUrl),
+    twitter: buildTwitterCard(title, description, ogImageUrl),
+    alternates: buildAlternates(lang, path),
     other: {
       'application/ld+json': JSON.stringify(articleSchema),
     },

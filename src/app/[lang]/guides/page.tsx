@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { ArrowRight } from 'lucide-react';
+import { buildAlternates, buildOpenGraph, buildTwitterCard } from '@/lib/seo';
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -34,7 +35,7 @@ export default async function GuidesPage({ params }: { params: Promise<{ lang: L
   const { lang } = await params;
   const dictionary = await getDictionary(lang);
   const pageDict = dictionary.guides_page;
-  
+
   const guides = [
     {
       title: "LIC Policy Status Check Online (2026)",
@@ -64,9 +65,25 @@ export default async function GuidesPage({ params }: { params: Promise<{ lang: L
       title: "LIC vs SIP: The Ultimate 2026 Comparison",
       subtitle: "Are you leaving lakhs on the table? Discover why the 'Term Plan + SIP' strategy mathematically outperforms traditional LIC policies.",
       link: `/${lang}/lic-vs-sip`,
-      image: '/images/about us.png', // Temporary fallback image
-      alt: 'LIC vs SIP head-to-head comparison',
+      image: '/images/lic-vs-sip-banner.png',
+      alt: 'LIC vs SIP head-to-head comparison for Indian investors',
       hint: 'finance comparison'
+    },
+    {
+      title: "LIC vs Mutual Fund: Which Builds More Wealth in 2026?",
+      subtitle: "Real number comparison — see how a ₹10,000/month commitment in an LIC endowment vs a mutual fund SIP plays out over 20 years.",
+      link: `/${lang}/lic-vs-mutual-fund`,
+      image: '/images/lic-vs-mutual-fund-banner.png',
+      alt: 'LIC vs Mutual Fund comparison for Indian investors',
+      hint: 'lic mutual fund comparison'
+    },
+    {
+      title: "LIC Bonus Rates 2026: Full Guide with Calculation",
+      subtitle: "Decode the latest SRB rates, step-up Sum Assured slabs, and terminal bonuses — and calculate your exact maturity payout with worked examples.",
+      link: `/${lang}/lic-bonus-rates`,
+      image: '/images/lic-bonus-rates-banner.png',
+      alt: 'LIC Bonus Rates 2026 guide with calculation tables',
+      hint: 'lic bonus rates'
     }
   ];
 
@@ -81,13 +98,13 @@ export default async function GuidesPage({ params }: { params: Promise<{ lang: L
             {pageDict.description || "Comprehensive guides to help you navigate your LIC portfolio and personal finance."}
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {guides.map((guide, index) => (
             <Link key={index} href={guide.link} className="group">
               <Card className="h-full flex flex-col transition-all duration-200 group-hover:shadow-xl group-hover:-translate-y-1 overflow-hidden">
                 <div className="relative">
-                  <Image 
+                  <Image
                     src={guide.image}
                     alt={guide.alt}
                     width={400}
@@ -99,7 +116,7 @@ export default async function GuidesPage({ params }: { params: Promise<{ lang: L
                 <CardContent className="p-6 flex flex-col flex-grow bg-card">
                   <h3 className="text-xl font-semibold flex-grow">{guide.title}</h3>
                   <p className="mt-2 text-muted-foreground text-sm">{guide.subtitle}</p>
-                   <div className="flex items-center text-primary mt-6 text-sm font-medium">
+                  <div className="flex items-center text-primary mt-6 text-sm font-medium">
                     <span>Read Guide</span>
                     <ArrowRight className="ml-1 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
                   </div>
@@ -112,5 +129,3 @@ export default async function GuidesPage({ params }: { params: Promise<{ lang: L
     </div>
   );
 }
-
-    

@@ -2,6 +2,7 @@ import { getDictionary } from "@/lib/dictionaries";
 import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
 import LicPremiumCalculatorPageClient from "./LicPremiumCalculatorPageClient";
+import { buildAlternates, buildOpenGraph, buildTwitterCard } from '@/lib/seo';
 
 export const dynamic = 'force-dynamic';
 
