@@ -233,7 +233,7 @@
           "rows": [
             ["10 Years", "₹12,00,000", "₹16–18 Lakhs", "₹23.2 Lakhs", "<strong>~₹5 Lakhs</strong>"],
             ["15 Years", "₹18,00,000", "₹26–30 Lakhs", "₹50.5 Lakhs", "<strong>~₹20 Lakhs</strong>"],
-            ["20 Years", "₹24,00,000", "₹38–45 Lakhs", "₹99.9 Lakhs", "<strong>~₹55 Lakhs</strong>"],
+            ["20 Years", "₹24,00,000", "₹38–45 Lakhs", "₹99.9 Lakhs (see <a href='/{lang}/lic-vs-mutual-fund' class='text-primary hover:underline'>LIC vs Mutual Fund</a>)", "<strong>~₹55 Lakhs</strong>"],
             ["25 Years", "₹30,00,000", "₹55–65 Lakhs", "₹1.9 Crore", "<strong>~₹1.24 Crore</strong>"]
           ],
           "footer": "By year 25, the compounding advantage creates a wealth gap of <strong>over ₹1.24 Crore</strong> on the same ₹10,000/month commitment. This is the hidden cost of bundling insurance with investment."
@@ -278,7 +278,7 @@
           "type": "list",
           "items": [
             "<strong>Treating bonus as compound growth:</strong> LIC bonuses are simple interest on your flat Sum Assured. The ₹47,000/year Rohan earns never earns interest-on-interest — unlike equity MF returns that compound year after year.",
-            "<strong>Surrendering in the first 3 years:</strong> You lose 30–50% of all premiums paid as surrender charges. If you need to exit, always wait for 3 full years. Better still, convert to 'Paid-Up' status.",
+            "<strong>Surrendering in the first 3 years:</strong> You lose 30–50% of all premiums paid as surrender charges. Use our <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC Surrender Value Calculator</a> to estimate your exact cash-out value. If you need to exit, always wait for 3 full years. Better still, convert to a <a href='/{lang}/lic-paid-up-value' class='text-primary hover:underline'>Paid-Up policy</a> to avoid losing premiums.",
             "<strong>Confusing shareholder bonus with policyholder bonus:</strong> The May 2026 1:1 bonus share issue benefited LIC equity shareholders — it has zero impact on your insurance policy's maturity value.",
             "<strong>Ignoring inflation drag:</strong> India's CPI averages 5–5.5% annually. An LIC IRR of 5–5.5% means your real (inflation-adjusted) return is essentially zero over 20+ years."
           ]

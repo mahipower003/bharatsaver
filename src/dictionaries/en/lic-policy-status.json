@@ -182,7 +182,7 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "If you cannot log in to the portal and don't have your registered mobile number nearby, you still have options. The 'Pay Direct' portal on the main website serves as a convenient workaround. Although designed for quick payments, its built-in validation search acts as a simplified status check. Just navigate to 'Pay Direct (Without Login)', select 'Renewal Premium', and enter your basic details to view your premium status and next due date."
+          "text": "If you cannot log in to the portal and don't have your registered mobile number nearby, you still have options. The 'Pay Direct' portal on the main website serves as a convenient workaround. Although designed for quick payments, its built-in validation search acts as a simplified status check. Just navigate to 'Pay Direct (Without Login)', select 'Renewal Premium', and enter your basic details to view your premium status and next due date. You can also download your physical records instantly using our <a href='/{lang}/lic-premium-receipt-download' class='text-primary hover:underline'>LIC Premium Receipt Download guide</a>."
         },
         {
           "type": "paragraph",
@@ -219,7 +219,7 @@
             ],
             [
               "<strong>Reduced Paid-Up</strong>",
-              "Premium payments stopped after the policy acquired a guaranteed surrender value (typically after 2–3 years).",
+              "Premium payments stopped after the policy acquired a guaranteed surrender value. Read our detailed <a href='/{lang}/lic-paid-up-value' class='text-primary hover:underline'>LIC Paid-Up Value guide</a> to learn more.",
               "<strong>Active with Reduced Cover</strong> (No further premiums due, but sum assured is reduced)."
             ],
             [
@@ -288,7 +288,7 @@
             },
             {
               "q": "What happens if my policy status is 'Reduced Paid-Up'?",
-              "a": "If your policy is 'Reduced Paid-Up', it means you stopped paying premiums after the policy acquired a guaranteed surrender value (usually after 2 or 3 years). The policy remains active, but the final life cover and maturity payout are proportionally reduced."
+              "a": "If your policy is 'Reduced Paid-Up', it means you stopped paying premiums after the policy acquired a guaranteed surrender value (usually after 2 or 3 years). The policy remains active, but the final life cover and maturity payout are proportionally reduced. You can calculate your exact payout using our <a href='/{lang}/lic-paid-up-value' class='text-primary hover:underline'>LIC Paid-Up Value Calculator</a>."
             },
             {
               "q": "How can I update my mobile number in my LIC policy?",

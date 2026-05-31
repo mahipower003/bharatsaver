@@ -84,6 +84,14 @@ export default async function GuidesPage({ params }: { params: Promise<{ lang: L
       image: '/images/lic-bonus-rates-banner.png',
       alt: 'LIC Bonus Rates 2026 guide with calculation tables',
       hint: 'lic bonus rates'
+    },
+    {
+      title: "LIC Paid-Up Value: Stop Premiums Without Losing Capital",
+      subtitle: "Struggling with high LIC premiums? Learn how Paid-Up status keeps your policy active, preserves your life cover, and protects your maturity payout.",
+      link: `/${lang}/lic-paid-up-value`,
+      image: '/images/lic-paid-up-value-banner.png',
+      alt: 'LIC Paid-Up Value Calculator and Guide',
+      hint: 'lic paid up value'
     }
   ];
 

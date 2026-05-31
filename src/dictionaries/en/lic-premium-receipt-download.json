@@ -227,7 +227,7 @@
           "type": "list",
           "items": [
             "<strong>The 48-Hour Grace Period:</strong> In 95% of failed session cases, the digital premium receipt is auto-generated once the bank confirms the credit to LIC, and is sent directly to your registered email ID within 3 working days.",
-            "<strong>Check 'Transaction Status' Online:</strong> After 24 hours, visit the LIC website, go to 'Pay Direct', and select 'View Transaction Status'. If the status has shifted to 'Successful', you can download your receipt directly.",
+            "<strong>Check 'Transaction Status' Online:</strong> After 24 hours, visit the LIC website, go to 'Pay Direct', and select 'View Transaction Status'. You can also verify if the payment successfully updated your active status using our <a href='/{lang}/lic-policy-status' class='text-primary hover:underline'>LIC Policy Status checker</a>.",
             "<strong>Escalate via Email Support:</strong> If the transaction remains missing after 48 hours, send an email with your Policy Number, Transaction Date, Exact Premium Amount Debited, and bank statement to <strong>bo_eps1@licindia.com</strong>."
           ]
         }
@@ -247,7 +247,7 @@
           "items": [
             "<strong>Mistake 1: Entering Premium with GST for Portal Queries.</strong> When pulling a Pay Direct statement, you must enter the base premium without tax. If your premium is ₹10,450 (which includes ₹450 GST), entering ₹10,450 will result in a database mismatch.",
             "<strong>Mistake 2: Claiming Premium Deductions for Non-Eligible Relatives.</strong> Under Section 80C, you can only claim deductions for premiums paid for yourself, your spouse, or dependent children. Premiums paid for your parents or in-laws are strictly non-deductible.",
-            "<strong>Mistake 3: Forgetting the Section 80C Reversal Trap.</strong> Traditional LIC policies have a mandatory 2-year lock-in period. If you claim a deduction and then surrender the policy before this lock-in ends, the IT department will treat past deductions as taxable income.",
+            "<strong>Mistake 3: Forgetting the Section 80C Reversal Trap.</strong> Traditional LIC policies have a mandatory 2-year lock-in period. If you claim a deduction and then surrender the policy before this lock-in ends (calculate your losses first using our <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC Surrender Value Calculator</a>), the IT department will treat past deductions as taxable income. Consider converting to a <a href='/{lang}/lic-paid-up-value' class='text-primary hover:underline'>Paid-Up policy</a> instead to avoid losing premiums.",
             "<strong>Mistake 4: Allowing Outdated Contact Details.</strong> If your contact details are outdated, your digital payment receipts will go to the wrong destination. Update them via the 'Help Us To Serve You Better' portal page.",
             "<strong>Mistake 5: Assuming Digital Receipts are Invalid.</strong> Many corporate HR departments mistakenly reject online PDF receipts because they lack a rubber stamp. Under Section 37 of the LIC Act, digitally signed receipts carry full legal validity."
           ]

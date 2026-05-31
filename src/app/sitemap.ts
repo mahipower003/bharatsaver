@@ -65,6 +65,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'lic-vs-sip',
     'lic-vs-mutual-fund',
     'lic-bonus-rates',
+    'lic-paid-up-value',
   ];
 
   articles.forEach(slug => {

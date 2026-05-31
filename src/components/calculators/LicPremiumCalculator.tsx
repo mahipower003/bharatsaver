@@ -52,7 +52,11 @@ export function LicPremiumCalculator({ dictionary }: LicCalculatorProps) {
      form.resetField('plan', { defaultValue: '' });
   }, [subCategory, form]);
 
-  const hasSubCategories = productCategory && dictionary?.tool?.sub_categories?.[productCategory];
+  const hasSubCategories = !!(
+    productCategory && 
+    dictionary?.tool?.sub_categories?.[productCategory] && 
+    Object.keys(dictionary.tool.sub_categories[productCategory]).length > 0
+  );
   
   const subCategories = hasSubCategories 
     ? Object.entries(dictionary.tool.sub_categories[productCategory])

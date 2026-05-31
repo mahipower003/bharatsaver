@@ -37,7 +37,7 @@
         },
         {
           "type": "paragraph",
-          "text": "For decades, buying a traditional Life Insurance Corporation (LIC) endowment or money-back plan was considered the ultimate financial rite of passage in India. But times have changed. As retail investing has gone digital and financial awareness has exploded across India, a new contender has emerged: the Systematic Investment Plan (SIP) in mutual funds."
+          "text": "For decades, buying a traditional Life Insurance Corporation (LIC) endowment or money-back plan was considered the ultimate financial rite of passage in India. But times have changed. As retail investing has gone digital and financial awareness has exploded across India, a new contender has emerged: the Systematic Investment Plan (SIP) in mutual funds. To understand this choice in detail, see our full breakdown of <a href='/{lang}/lic-vs-mutual-fund' class='text-primary hover:underline'>LIC vs Mutual Fund</a> investing."
         },
         {
           "type": "paragraph",
@@ -59,7 +59,7 @@
           "items": [
             {
               "title": "What is LIC (Traditional Insurance)?",
-              "text": "Traditional LIC policies (such as endowment, money-back, or whole life plans like Jeevan Anand and Jeevan Labh) are <strong>bundled products</strong>. They combine life insurance coverage with a conservative, low-yield savings plan. When you pay your annual premium, LIC takes a portion of it to cover your life risk and invests the remaining portion in highly conservative government securities and bonds."
+              "text": "Traditional LIC policies (such as endowment, money-back, or whole life plans like <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>New Jeevan Anand</a> and <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh</a>) are <strong>bundled products</strong>. They combine life insurance coverage with a conservative, low-yield savings plan. When you pay your annual premium, LIC takes a portion of it to cover your life risk and invests the remaining portion in highly conservative government securities and bonds."
             },
             {
               "title": "What is a SIP (Systematic Investment Plan)?",
@@ -247,7 +247,7 @@
           "type": "list",
           "items": [
             "<strong>Treating Insurance as an Investment:</strong> Never look at insurance as a source of profit. Keep your risk cover (Term Insurance) and your growth tools (SIPs) completely separate.",
-            "<strong>Surrendering LIC Policies Prematurely:</strong> If you realize your LIC policy is underperforming and decide to surrender it, you might face heavy surrender penalties and lose your past Section 80C tax deductions. Ask LIC to make your policy <strong>'Paid-Up'</strong> instead to keep your accumulated cash safe.",
+            "<strong>Surrendering LIC Policies Prematurely:</strong> If you realize your LIC policy is underperforming and decide to surrender it, you might face heavy surrender penalties and lose your past Section 80C tax deductions. Ask LIC to make your policy <strong>'Paid-Up'</strong> instead (read our comprehensive <a href='/{lang}/lic-paid-up-value' class='text-primary hover:underline'>LIC Paid-Up Value guide</a> to see the details) to keep your accumulated cash safe.",
             "<strong>Buying 'Pension Plans' or 'Annuities' for Aggressive Growth:</strong> Retirement products from insurance companies are designed to give steady, low-risk pension payouts, not to double your money.",
             "<strong>Panicking During Market Corrections:</strong> Equity SIP returns are not linear. Investors who stop their monthly SIPs when the stock market dips miss out on the benefit of 'Rupee Cost Averaging'.",
             "<strong>Relying Solely on 'Forced Savings Discipline':</strong> Many people continue underperforming LIC policies saying it forces them to save. Today, you can set up automated monthly auto-debits for your SIPs."
@@ -265,7 +265,7 @@
           "items": [
             {
               "q": "Should I surrender my existing LIC policy to start a SIP?",
-              "a": "It depends on how long you have held the policy. Surrendering a traditional policy in the first few years usually results in heavy losses due to surrender charges. A better alternative is often to make the policy 'Paid-Up'. This stops future premium obligations without incurring severe surrender penalties, freeing up cash flow to start your SIP."
+              "a": "It depends on how long you have held the policy. Surrendering a traditional policy in the first few years usually results in heavy losses due to surrender charges. A better alternative is often to convert the policy to a <a href='/{lang}/lic-paid-up-value' class='text-primary hover:underline'>Paid-Up status</a>. Use our <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC Surrender Value Calculator</a> first to see what immediate cash you would get, and decide if paid-up is a better choice."
             },
             {
               "q": "Can I save tax with mutual fund SIPs like I do with LIC?",

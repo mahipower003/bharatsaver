@@ -180,7 +180,7 @@
         },
         {
           "type": "paragraph",
-          "text": "<strong>LIC Jeevan Labh (Plan 936)</strong><br/>LIC Jeevan Labh (Plan 936) is designed as a limited premium paying endowment plan. This means that the period over which premiums are paid is structurally shorter than the actual policy duration. The premium paying terms and policy terms are strictly coupled in three combinations: 16-year Policy Term with a 10-year PPT, 21-year Policy Term with a 15-year PPT, or a 25-year Policy Term with a 16-year PPT."
+          "text": "<strong>LIC Jeevan Labh (Plan 936)</strong><br/>LIC Jeevan Labh (Plan 936) is designed as a limited premium paying endowment plan. You can estimate the exact premium schedules based on your age and sum assured using our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC Premium Calculator</a>. This means that the period over which premiums are paid is structurally shorter than the actual policy duration. The premium paying terms and policy terms are strictly coupled in three combinations: 16-year Policy Term with a 10-year PPT, 21-year Policy Term with a 15-year PPT, or a 25-year Policy Term with a 16-year PPT."
         },
         {
           "type": "table",
@@ -333,7 +333,7 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "Participating life insurance policies offered by LIC are widely used for retail wealth preservation and risk protection in India. However, optimizing their returns requires careful financial management. Since reversionary bonuses operate on a simple, non-compounded basis, these traditional savings plans are best suited for risk-averse investors seeking guaranteed capital preservation alongside basic life cover."
+          "text": "Participating life insurance policies offered by LIC are widely used for retail wealth preservation and risk protection in India. However, optimizing their returns requires careful financial management. Since reversionary bonuses operate on a simple, non-compounded basis, these traditional savings plans are best suited for risk-averse investors seeking guaranteed capital preservation alongside basic life cover. If your goal is aggressive wealth creation, see our detailed <a href='/{lang}/lic-vs-mutual-fund' class='text-primary hover:underline'>LIC vs Mutual Fund comparison</a> to make a better choice."
         },
         {
           "type": "paragraph",
@@ -358,7 +358,7 @@
           "type": "list",
           "items": [
             "<strong>Mistake 1: Confusing Sum Assured with Total Premium Paid.</strong> Your bonus is calculated on your Basic Sum Assured, not the total amount of premiums you have paid. If you pay ₹50,000 yearly for 20 years, your total premium is ₹10 Lakhs, but your Basic Sum Assured might be higher or lower depending on your age and the plan.",
-            "<strong>Mistake 2: Assuming Bonuses Compound.</strong> Simple Reversionary Bonuses do not compound! If LIC declares ₹40 per ₹1,000 SA, that flat amount is added to your account each year. It does not earn interest on itself. This is why traditional policies typically yield around a 5% to 6% Internal Rate of Return (IRR).",
+            "<strong>Mistake 2: Assuming Bonuses Compound.</strong> Simple Reversionary Bonuses do not compound! Read our complete <a href='/{lang}/lic-bonus-rates' class='text-primary hover:underline'>LIC Bonus Rates guide</a> to understand how different terms and plans affect your payout. It does not earn interest on itself. This is why traditional policies typically yield around a 5% to 6% Internal Rate of Return (IRR).",
             "<strong>Mistake 3: Forgetting the 15-Year FAB Rule.</strong> The massive Final Additional Bonus (FAB) is generally only paid on policies that have run for at least 15 years. If you surrender early or choose a short 10-year term, do not factor the FAB into your calculations."
           ]
         }
@@ -393,6 +393,20 @@
           "description": "Looking for pure protection? Calculate the cost of ₹1 Crore term coverage with LIC Tech-Term vs Jeevan Amar.",
           "href": "/lic-term-insurance",
           "icon": "ShieldCheck"
+        },
+        {
+          "type": "card_link",
+          "title": "LIC Paid-Up Value Calculator",
+          "description": "Stop paying premium safely. Calculate your reduced paid-up sum assured, frozen bonuses, and maturity payout without surrendering your policy.",
+          "href": "/lic-paid-up-value",
+          "icon": "ShieldCheck"
+        },
+        {
+          "type": "card_link",
+          "title": "LIC Bonus Rates Guide",
+          "description": "Decode the latest reversionary and terminal bonus rate slabs declared by LIC to find your policy's exact growth rate.",
+          "href": "/lic-bonus-rates",
+          "icon": "TrendingUp"
         }
       ]
     },

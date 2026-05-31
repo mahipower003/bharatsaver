@@ -137,7 +137,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Unless you are in a severe financial emergency, making the policy Paid-Up is almost always the smarter financial move."
+          "text": "Unless you are in a severe financial emergency, converting to a <a href='/{lang}/lic-paid-up-value' class='text-primary hover:underline'>Paid-Up policy</a> is almost always the smarter financial move."
         }
       ]
     },

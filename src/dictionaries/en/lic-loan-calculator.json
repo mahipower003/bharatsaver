@@ -105,7 +105,7 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "You might be wondering, <em>\"Exactly how much loan can I get on my LIC policy?\"</em> The math is actually quite straightforward. LIC does not look at your total sum assured; they only look at your Surrender Value. For Active Policies, you get up to <strong>90%</strong> of the surrender value. For Paid-Up Policies, you get up to <strong>80%</strong>."
+          "text": "You might be wondering, <em>\"Exactly how much loan can I get on my LIC policy?\"</em> The math is actually quite straightforward. LIC does not look at your total sum assured; they only look at your Surrender Value. For Active Policies, you get up to <strong>90%</strong> of the surrender value. For <a href='/{lang}/lic-paid-up-value' class='text-primary hover:underline'>Paid-Up Policies</a>, you get up to <strong>80%</strong>."
         },
         {
           "type": "alert",
@@ -149,7 +149,7 @@
           "type": "list",
           "items": [
             "<strong>Compounding Interest Trap:</strong> If you default on your half-yearly interest payments, LIC adds that unpaid interest to your principal amount. This means you’ll start paying interest on the interest, which can snowball quickly out of control.",
-            "<strong>Risk of Policy Foreclosure:</strong> If your outstanding loan plus accumulated interest ever exceeds the surrender value of your policy, LIC has the legal right to forcefully close (foreclose) your policy to recover their money. You lose your life cover permanently.",
+            "<strong>Risk of Policy Foreclosure:</strong> If your outstanding loan plus accumulated interest ever exceeds the surrender value of your policy, LIC has the legal right to forcefully close (foreclose) your policy to recover their money. This risk is especially high if your policy has acquired <a href='/{lang}/lic-paid-up-value' class='text-primary hover:underline'>Paid-Up status</a> and premium payments have stopped.",
             "<strong>Reduced Final Payout:</strong> If you don't repay the principal before maturity or death, LIC will rightfully deduct the entire outstanding loan and interest from the final claim amount before paying you or your nominee."
           ]
         }

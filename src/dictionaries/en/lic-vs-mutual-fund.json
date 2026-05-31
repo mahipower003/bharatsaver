@@ -20,7 +20,7 @@
         },
         {
           "type": "paragraph",
-          "text": "But today, in 2026, you have a powerful alternative: <strong>Mutual Funds</strong>. And the data shows that most Indians are unknowingly giving up <strong>lakhs of rupees</strong> in potential wealth by choosing a traditional LIC policy over a well-structured mutual fund investment."
+          "text": "But today, in 2026, you have a powerful alternative: <strong>Mutual Funds</strong>. By setting up a disciplined monthly <a href='/{lang}/lic-vs-sip' class='text-primary hover:underline'>Systematic Investment Plan (SIP)</a>, you can harness exponential market compounding. And the data shows that most Indians are unknowingly giving up <strong>lakhs of rupees</strong> in potential wealth by choosing a traditional LIC policy over a well-structured mutual fund investment."
         },
         {
           "type": "paragraph",
@@ -38,7 +38,7 @@
           "items": [
             {
               "title": "What is an LIC Policy?",
-              "text": "LIC (Life Insurance Corporation of India) offers several types of plans. It is critical to understand which type you own, because they are <strong>not all the same</strong>:<br/><br/><strong>Traditional Plans (Endowment, Money-Back, Whole Life):</strong> These are the most commonly sold plans. They bundle life insurance with low-yield savings. Think Jeevan Anand, Jeevan Labh, Jeevan Umang. Your annual premium pays both for life cover AND a forced savings pool that LIC invests in government bonds.<br/><br/><strong>Unit Linked Insurance Plans (ULIPs):</strong> These combine insurance with market-linked investments. They are closer to mutual funds but carry high charges in the early years.<br/><br/><strong>Term Plans:</strong> Pure life insurance — no savings, no maturity amount. The cheapest way to protect your family.<br/><br/>⚠️ <strong>This article compares Traditional LIC Plans vs Mutual Funds.</strong> This is the most important battle for the average Indian saver."
+              "text": "LIC (Life Insurance Corporation of India) offers several types of plans. It is critical to understand which type you own, because they are <strong>not all the same</strong>:<br/><br/><strong>Traditional Plans (Endowment, Money-Back, Whole Life):</strong> These are the most commonly sold plans. They bundle life insurance with low-yield savings. Think <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>New Jeevan Anand</a>, <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh</a>, or <a href='/{lang}/lic-jeevan-umang-calculator' class='text-primary hover:underline'>Jeevan Umang</a>. Your annual premium pays both for life cover AND a forced savings pool that LIC invests in government bonds.<br/><br/><strong>Unit Linked Insurance Plans (ULIPs):</strong> These combine insurance with market-linked investments. They are closer to mutual funds but carry high charges in the early years.<br/><br/><strong>Term Plans:</strong> Pure life insurance — no savings, no maturity amount. The cheapest way to protect your family.<br/><br/>⚠️ <strong>This article compares Traditional LIC Plans vs Mutual Funds.</strong> This is the most important battle for the average Indian saver."
             },
             {
               "title": "What is a Mutual Fund?",
@@ -83,7 +83,7 @@
             ["<strong>Monthly Investment</strong>", "₹10,000", "₹10,000", "Tie"],
             ["<strong>Life Cover</strong>", "₹12–15 Lakhs", "₹1 Crore", "Mutual Fund Route (6.5× more)"],
             ["<strong>Corpus at 20 Years</strong>", "~₹40 Lakhs", "~₹90 Lakhs", "Mutual Fund Route"],
-            ["<strong>Effective Return</strong>", "4.5%–5.5% IRR", "12% CAGR (Historical)", "Mutual Fund Route"],
+            ["<strong>Effective Return</strong>", "4.5%–5.5% IRR (see <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>maturity returns</a>)", "12% CAGR (Historical)", "Mutual Fund Route"],
             ["<strong>Flexibility</strong>", "Locked-in; surrender penalties", "Pause/stop/withdraw anytime", "Mutual Fund Route"],
             ["<strong>Transparency</strong>", "Low — opaque bonus system", "High — daily NAV published", "Mutual Fund Route"],
             ["<strong>Wealth Gap at Maturity</strong>", "—", "₹50 Lakhs more wealth", "Mutual Fund Route"]
@@ -174,7 +174,7 @@
           "items": [
             {
               "title": "LIC Policy Liquidity:",
-              "text": "If you stop paying premiums within the first 2–3 years, you lose <em>everything</em> you have paid. After 3 years, the policy acquires a 'Paid-Up' or 'Surrender Value', but this is significantly lower than your total premiums paid. Loans are available against LIC policies, but at 9%–10% interest."
+              "text": "If you stop paying premiums within the first 2–3 years, you lose <em>everything</em> you have paid. After 3 years, the policy acquires a <a href='/{lang}/lic-paid-up-value' class='text-primary hover:underline'>Paid-Up Value</a> or a <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>Surrender Value</a>, but this is significantly lower than your total premiums paid. Loans are also available against policies, which you can estimate using our <a href='/{lang}/lic-loan-calculator' class='text-primary hover:underline'>LIC Loan Calculator</a>."
             },
             {
               "title": "Mutual Fund SIP Liquidity:",
@@ -220,7 +220,7 @@
             },
             {
               "title": "Step 2: Build Wealth with a Mutual Fund SIP",
-              "description": "Direct the rest of your monthly investment budget into a diversified equity mutual fund SIP. For most 30-year-olds with a 20+ year horizon, a Large-Cap or Flexi-Cap fund is ideal. Start small — even ₹500/month compounded over 20+ years creates significant wealth."
+              "description": "Direct the rest of your monthly investment budget into a diversified equity mutual fund SIP. Use our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>Mutual Fund Screener</a> to pick high-quality Large-Cap or Flexi-Cap funds. Start small — even ₹500/month compounded over 20+ years creates significant wealth."
             },
             {
               "title": "Step 3: Review and Rebalance Annually",
@@ -267,7 +267,7 @@
             },
             {
               "q": "Can I stop my LIC policy and start a mutual fund?",
-              "a": "You can, but you must be careful. If your policy is less than 2–3 years old, surrendering it means losing a significant portion of your premiums. A better approach: after 3 full years of premium payments, convert your LIC policy to 'Paid-Up' status (no more premiums needed, you receive a reduced benefit at maturity) and start redirecting your premium amount into a mutual fund SIP."
+              "a": "You can, but you must be careful. If your policy is less than 2–3 years old, surrendering it means losing a significant portion of your premiums. A better approach: after 3 full years of premium payments, convert your LIC policy to 'Paid-Up' status (read our detailed <a href='/{lang}/lic-paid-up-value' class='text-primary hover:underline'>LIC Paid-Up Value guide</a> to see the exact mathematics) and start redirecting your premium amount into a mutual fund SIP."
             },
             {
               "q": "Do mutual funds have tax benefits like LIC?",

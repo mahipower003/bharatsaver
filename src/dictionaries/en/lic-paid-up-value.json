@@ -1,0 +1,361 @@
+{
+  "meta_title": "LIC Paid-Up Value Calculator & Guide (2026): Stop Premiums Safely",
+  "meta_description": "LIC Paid-Up Value: How to calculate your paid-up sum assured, keep your life cover active without paying premiums, and avoid heavy surrender charges.",
+  "h1": "LIC Paid-Up Value Calculator & Full Guide (2026)",
+  "description": "Want to stop paying your LIC policy premiums without losing your hard-earned money? Converting your policy to 'Paid-Up' status keeps it active at a reduced sum assured. Calculate your exact maturity value below.",
+  "tool": {
+    "title": "Instant LIC Paid-Up Value Calculator",
+    "basic_sa_label": "Basic Sum Assured (₹)",
+    "policy_term_label": "Policy Term / PPT (Years)",
+    "premiums_paid_label": "No. of Premiums Paid (Years)",
+    "total_premiums_payable_label": "Total Premium Paying Term - PPT (Years)",
+    "vested_bonus_label": "Total Vested Bonus Accrued (₹) (Optional)",
+    "calculate_button": "Calculate Paid-Up Value",
+    "calculating": "Calculating...",
+    "results_title": "Your Estimated Paid-Up Value Breakdown",
+    "paid_up_sa_label": "Paid-Up Sum Assured",
+    "vested_bonus_display": "Accrued Vested Bonus",
+    "total_maturity_value_label": "Maturity Payout (Paid-up SA + Bonus)",
+    "surrender_estimate_label": "Estimated Immediate Cash Payout (If Surrendered Instead)",
+    "surrender_loss_label": "Potential Capital Loss by Surrendering",
+    "copy_link_cta": "Copy Link",
+    "print_cta": "Print Summary",
+    "export_csv_cta": "Download CSV",
+    "email_cta": "Email Results",
+    "share_text": "I just calculated my LIC policy's Paid-Up value! My reduced sum assured is ~{payout}. Check yours here:",
+    "copy_success_title": "Link Copied!",
+    "copy_success_description": "Share link copied to clipboard successfully.",
+    "csv": {
+      "parameter": "Parameter",
+      "value": "Value",
+      "paid_up_sa": "Paid-Up Sum Assured",
+      "vested_bonus": "Vested Bonus Accrued",
+      "total_paid_up": "Total Paid-up Maturity Value",
+      "surrender_cash": "Est. Cash Payout if Surrendered",
+      "surrender_loss": "Est. Loss if Surrendered"
+    }
+  },
+  "sections": [
+    {
+      "id": "introduction",
+      "icon": "FileText",
+      "title": "Struggling with LIC Premiums? Don't Surrender Just Yet",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/lic-paid-up-value-banner.png",
+          "alt": "LIC Paid-Up Value Guide and Calculator Banner"
+        },
+        {
+          "type": "paragraph",
+          "text": "Every year, lakhs of Indian policyholders face a common dilemma: they bought an LIC endowment or money-back policy (like <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>New Jeevan Anand</a> or <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh</a>) but now find the premium payments a heavy burden. Life priorities change—maybe there is a home loan EMI, a child's college admission, or a job transition."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you cannot afford to pay premiums, most agents will tell you to either let the policy lapse or surrender it. <strong>But both options are highly destructive.</strong> Lapsing the policy strips away your family's life cover completely, while surrendering early locks in an immediate, painful loss of up to 50% to 70% of your total paid premiums."
+        },
+        {
+          "type": "paragraph",
+          "text": "Fortunately, there is a third, mathematically superior option: converting your policy to <strong>'Paid-Up' status</strong>. By making your policy Paid-Up, you stop paying all future premiums entirely, yet your policy remains active, your family's life cover continues (at a reduced rate), and you receive your accrued money at the original maturity date."
+        },
+        {
+          "type": "paragraph",
+          "text": "In this guide, I will show you exactly how the <strong>LIC Paid-Up Value</strong> is calculated, compare it against surrendering, break down the revival rules, and explain the tax impact under the Income Tax Act 2025."
+        }
+      ]
+    },
+    {
+      "id": "what-is-paid-up",
+      "icon": "HelpCircle",
+      "title": "What Exactly is 'LIC Paid-Up Value'?",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A policy achieves 'Paid-Up' status when the policyholder stops paying premiums after the policy has acquired a vested cash value (typically after paying full premiums for at least 2 or 3 consecutive years)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Instead of terminating the contract, LIC reduces the original Sum Assured proportionately based on the number of premiums actually paid versus the total premiums that were due. This reduced cover is called the <strong>Paid-Up Sum Assured</strong> or <strong>Reduced Sum Assured</strong>."
+        },
+        {
+          "type": "structured_content",
+          "items": [
+            {
+              "title": "Key Features of a Paid-Up Policy:",
+              "text": "<strong>1. Reduced Life Cover:</strong> Your life cover does not go to zero. If your original cover was ₹10 Lakh and you paid half the premiums, your family remains covered for ₹5 Lakh until maturity.<br/><strong>2. Bonus Freeze:</strong> Once a policy becomes paid-up, it stops participating in future annual bonus declarations. However, any bonuses declared and vested <em>before</em> the policy became paid-up are fully protected and will be paid out upon maturity.<br/><strong>3. No Premium Obligations:</strong> You do not owe LIC another rupee. Your policy is self-sustaining.<br/><strong>4. Payout Timing:</strong> The maturity value is paid out only at the end of the original policy term, or to your nominee in the event of your death."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "formula",
+      "icon": "SlidersHorizontal",
+      "title": "Paid-Up Sum Assured Calculation Formula",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Calculating your policy's paid-up value is simple and transparent. The standard actuarial formula used by LIC is:"
+        },
+        {
+          "type": "paragraph",
+          "text": "$$\\text{Paid-Up Sum Assured} = \\text{Original Sum Assured} \\times \\left( \\frac{\\text{Number of Premiums Paid}}{\\text{Total Number of Premiums Payable}} \\right)$$"
+        },
+        {
+          "type": "paragraph",
+          "text": "To find your final maturity payout, you add the vested bonuses accumulated before the premium payments stopped:"
+        },
+        {
+          "type": "paragraph",
+          "text": "$$\\text{Total Paid-Up Value} = \\text{Paid-Up Sum Assured} + \\text{Vested Bonuses}$$"
+        }
+      ]
+    },
+    {
+      "id": "real-example",
+      "icon": "GitCompareArrows",
+      "title": "Step-by-Step Calculation: Real-World Scenario",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Let us look at a concrete example to see how this plays out in real life. Imagine <strong>Sunita</strong>, a 35-year-old manager in Bengaluru, who bought an LIC New Endowment Plan (Plan 914) with these parameters:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Original Sum Assured:</strong> ₹10,00,000 (10 Lakhs)",
+            "<strong>Policy Term (PPT):</strong> 20 Years",
+            "<strong>Annual Premium:</strong> ~₹48,000",
+            "<strong>Premiums Paid:</strong> 8 Years (Paid ₹3,84,000 in total)",
+            "<strong>Vested Bonus:</strong> ₹3,20,000 (declared during the first 8 years)"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "In the 9th year, Sunita decides she cannot continue the policy and wants to make it Paid-Up. Here is the math:"
+        },
+        {
+          "type": "structured_content",
+          "items": [
+            {
+              "title": "Step 1: Calculate the Paid-Up Sum Assured",
+              "text": "Paid-Up SA = ₹10,00,000 × (8 Paid ÷ 20 Payable) = <strong>₹4,00,000</strong>"
+            },
+            {
+              "title": "Step 2: Add Vested Bonuses",
+              "text": "Vested Bonus = <strong>₹3,20,000</strong> (This remains frozen inside the policy account and does not grow further)."
+            },
+            {
+              "title": "Step 3: Total Maturity Value",
+              "text": "Maturity Payout = Paid-Up SA (₹4,00,000) + Vested Bonus (₹3,20,000) = <strong>₹7,20,000</strong>"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "At age 55 (the original maturity year), Sunita receives a guaranteed check of **₹7,20,000** from LIC, despite having paid only ₹3,84,000 in premiums. Furthermore, during those 12 unpaid years, if anything had happened to her, her nominee would have received ₹7,20,000 immediately."
+        }
+      ]
+    },
+    {
+      "id": "paid-up-vs-surrender",
+      "icon": "GitCompareArrows",
+      "title": "LIC Paid-Up Value vs. Surrender Value: Which is Smarter?",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "When you want to stop premiums, you must decide whether to make the policy Paid-Up or surrender it. Use our interactive <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC Surrender Value Calculator</a> to find your exact early-exit cash payout, or see this head-to-head comparison to help you choose:"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Feature",
+            "Paid-Up Policy",
+            "Surrender Value"
+          ],
+          "rows": [
+            [
+              "<strong>Status of Policy</strong>",
+              "Policy remains active at a reduced level.",
+              "Policy terminates completely and instantly."
+            ],
+            [
+              "<strong>Life Insurance Cover</strong>",
+              "Continues at the reduced Paid-Up SA level.",
+              "Stops completely. Family has no protection."
+            ],
+            [
+              "<strong>Payout Timing</strong>",
+              "Paid only at maturity or upon death.",
+              "Paid immediately as a cash lump sum."
+            ],
+            [
+              "<strong>Bonuses Paid</strong>",
+              "Vested bonuses are fully preserved and paid.",
+              "Bonus component is slashed by a surrender factor."
+            ],
+            [
+              "<strong>Financial Recovery</strong>",
+              "High. You recover the full proportionate value.",
+              "Low. You typically lose 30% to 60% of premiums paid."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>The Verdict:</strong> Surrendering only makes sense if you are in a desperate, immediate liquidity crisis. If you can afford to wait until the original maturity date, making the policy Paid-Up preserves far more of your capital."
+        }
+      ]
+    },
+    {
+      "id": "revival-rules",
+      "icon": "CheckCircle",
+      "title": "Can a Paid-Up Policy be Revived? Rules & Conditions",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Yes! One of the greatest benefits of converting a policy to Paid-Up (rather than surrendering it) is that **you can revive it later if your financial situation improves**."
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>The 5-Year Window:</strong> Under LIC's standard terms, you can revive a lapsed or paid-up policy within <strong>5 years</strong> from the date of the First Unpaid Premium (FUP).",
+            "<strong>Payment of Arrears:</strong> You must pay all unpaid premiums from the FUP date up to the revival date, along with compound interest (typically 9% to 9.5% per annum).",
+            "<strong>Proof of Continued Insurability:</strong> Depending on the policy term and Sum Assured, LIC may require a self-declaration of good health (Form 300/680) or a fresh medical examination to ensure you do not carry new high-risk conditions.",
+            "<strong>Reinstatement of Original Cover:</strong> Once revived, your original Sum Assured is restored, and you begin earning the full annual reversionary bonuses again."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Before starting the revival process, you should verify the exact date of your first unpaid premium. Read our comprehensive guide on <a href='/{lang}/lic-policy-status' class='text-primary hover:underline'>LIC policy status online check</a> to find out how to trace your policy's FUP date using WhatsApp, SMS, or the web portal."
+        }
+      ]
+    },
+    {
+      "id": "outstanding-loans",
+      "icon": "AlertTriangle",
+      "title": "How Outstanding Loans Impact Paid-Up Value",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "If you have taken a loan against your LIC policy, making it Paid-Up requires careful calculation. LIC charges interest on policy loans. When a policy is active, you pay this interest annually or let it accumulate."
+        },
+        {
+          "type": "paragraph",
+          "text": "However, when you stop paying premiums and convert to Paid-Up, the policy's cash value stops growing aggressively. If the accumulated loan principal plus interest exceeds the surrender value of the paid-up policy, **LIC reserves the right to forcefully foreclose your policy** to recover its dues, leaving you with no life cover and no maturity payout."
+        },
+        {
+          "type": "paragraph",
+          "text": "<em>My Expert Advice:</em> If you plan to make a policy Paid-Up, always clear any outstanding loans first (you can estimate your loan details using our <a href='/{lang}/lic-loan-calculator' class='text-primary hover:underline'>LIC Loan Calculator</a>), or ensure the paid-up value is significantly higher than the debt to prevent foreclosure."
+        }
+      ]
+    },
+    {
+      "id": "taxation",
+      "icon": "FileText",
+      "title": "Tax Treatment of Paid-Up Payouts under Income Tax Act 2025",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The tax treatment of a paid-up policy's maturity payout is governed by the reorganized codes of the **Income Tax Act 2025**:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Maturity proceeds taxability (Schedule II):</strong> If the aggregate annual premium of all your traditional policies (including the one you made paid-up) remains under ₹5,00,000, the final maturity payout (Paid-Up SA + Vested Bonus) is <strong>100% tax-free</strong>.",
+            "<strong>High-Premium Policies:</strong> If your aggregate annual premium exceeds ₹5,00,000, the net profit (maturity payout minus total premiums paid) is fully taxable as 'Income from Other Sources' at your marginal slab rate.",
+            "<strong>Section 80C Clawback:</strong> Unlike surrendering early, making a policy paid-up does not trigger a reversal of past tax deductions claimed under Section 80C (now Section 123), provided you paid premiums for at least 2 full years.",
+            "<strong>TDS Applicability:</strong> If the maturity payout is taxable, a 5% TDS is deducted from the net profit portion at the time of payout."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "common-mistakes",
+      "icon": "AlertTriangle",
+      "title": "5 Costly Mistakes Policyholders Make with Paid-Up Policies",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "<strong>Lapsing instead of making Paid-Up:</strong> If you stop paying premiums in the first or second year before acquiring a surrender value, the policy lapses completely. You get zero return and lose your cover. Always ensure you complete at least 2 full years of premiums.",
+            "<strong>Surrendering out of panic:</strong> Surrendering is an irreversible action that destroys capital. Always check if making the policy Paid-Up is a viable option for your timeline.",
+            "<strong>Ignoring the 5-year revival deadline:</strong> Many policyholders forget about their paid-up policy and let the 5-year window slide, losing the chance to ever reinstate their original cover.",
+            "<strong>Neglecting to track policy loan interest:</strong> Letting loan interest compound on a paid-up policy is a recipe for forced foreclosure. Keep track of your loan balances.",
+            "<strong>Not updating nominee details:</strong> Since paid-up payouts are received years down the line, ensure your nominee details remain active and updated with LIC."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "icon": "HelpCircle",
+      "title": "Frequently Asked Questions: LIC Paid-Up Value",
+      "content": [
+        {
+          "type": "faq",
+          "items": [
+            {
+              "q": "What is the paid-up value in LIC?",
+              "a": "Paid-up value is the reduced Sum Assured that a policyholder receives at maturity or death when they stop paying premiums after paying for at least 2 or 3 consecutive years. It keeps the policy active with a proportionately reduced cover and no further premium obligations."
+            },
+            {
+              "q": "How is LIC paid-up value calculated?",
+              "a": "The formula is: Paid-Up Sum Assured = Original Sum Assured × (Number of Premiums Paid ÷ Total Premiums Payable). To get the total payout, you add any vested bonuses accumulated before the policy became paid-up."
+            },
+            {
+              "q": "Do I get bonuses on a paid-up policy?",
+              "a": "You do not earn any new bonuses after the policy is converted to paid-up status. However, all bonuses declared and vested in your policy account <em>before</em> you stopped paying premiums are 100% preserved and paid at maturity or death."
+            },
+            {
+              "q": "Can I surrender a paid-up LIC policy?",
+              "a": "Yes. If you need immediate cash, you can surrender a paid-up policy. The surrender payout is calculated as: Surrender Value = (Paid-Up Sum Assured + Vested Bonus) × Special Surrender Value Factor. This amount will be lower than the maturity value."
+            },
+            {
+              "q": "Is LIC paid-up value taxable?",
+              "a": "Under the Income Tax Act 2025 (Schedule II), paid-up maturity proceeds are completely tax-free if the aggregate annual premium of your traditional policies is under ₹5,00,000. If the premium exceeds this cap, the profits are taxable at your marginal tax rate."
+            },
+            {
+              "q": "Can I revive a paid-up LIC policy?",
+              "a": "Yes, you can revive a paid-up policy within 5 years from the date of the First Unpaid Premium (FUP) by paying all outstanding premiums along with applicable interest (around 9% per annum) and submitting a declaration of good health."
+            },
+            {
+              "q": "What happens if I stop paying LIC premium after 3 years?",
+              "a": "If you stop paying premiums after 3 full years, your policy will automatically acquire a paid-up status. Your life cover will continue at a reduced level, all accumulated bonuses will be secured, and you will receive a lump sum at the end of the policy term."
+            },
+            {
+              "q": "Can I take a loan against a paid-up LIC policy?",
+              "a": "Yes. You can take a loan against a paid-up policy. The loan amount is usually capped at 80% to 90% of the surrender value of the paid-up policy, depending on the plan and term."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conclusion",
+      "icon": "CheckCircle",
+      "title": "The Verdict: How to Optimize Your LIC Portfolio",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "If you are struggling to pay premiums, converting your policy to Paid-Up is a highly effective way to halt expenses while preserving your capital and family cover. But don't make the decision blindly."
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>My Recommendation:</strong> Use our free, interactive Paid-Up Value Calculator below to see exactly what your policy will pay at maturity. Compare those numbers with your surrender value to make the smartest financial decision."
+        },
+        {
+          "type": "cta_card",
+          "title": "Calculate Your Exact LIC Paid-Up Value in Seconds",
+          "description": "Enter your policy details to see your reduced sum assured, vested bonuses, and final maturity payout today!",
+          "buttons": [
+            {
+              "text": "Try the Paid-Up Value Calculator",
+              "href": "/lic-paid-up-value"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
