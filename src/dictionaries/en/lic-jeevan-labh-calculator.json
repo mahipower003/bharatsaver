@@ -1,5 +1,5 @@
 {
-  "meta_title": "LIC Jeevan Labh Calculator (Plan 936 / 736) — Premiums & Tax-Free Maturity (2026)",
+  "meta_title": "LIC Jeevan Labh (Plan 936/736) Premium & Maturity Calculator (2026)",
   "meta_description": "Use our free LIC Jeevan Labh (Plan 936/736) calculator to estimate yearly/monthly premiums, tax-free maturity returns, bonus rates (SRB & FAB), and PPT payment schedules. Updated for 2026.",
   "h1": "LIC Jeevan Labh Calculator (Plan 936 / 736) — Premiums & Maturity Returns",
   "description": "<p>Our free, online <strong>LIC Jeevan Labh calculator (Plan 936 / 736)</strong> gives you instant, accurate estimates for your premiums, limited payment schedule, and tax-free maturity returns. Plan 736 (formerly 936 and 836) is LIC's highest-yielding limited pay endowment policy.</p>",
@@ -9,7 +9,7 @@
     "age_label": "Your Age (Years)",
     "term_label": "Policy Term & Premium Paying Term (PPT)",
     "sum_assured_label": "Basic Sum Assured (₹)",
-    "calculate_button": "Calculate Benefits & PPT Schedule",
+    "calculate_button": "Calculate Premium & Maturity Returns",
     "calculating": "Calculating Jeevan Labh Returns...",
     "results": {
       "note": "Disclaimer: All values are estimates. GST @4.5% (1st year) & 2.25% (2nd year onwards) included. Bonus rates are illustrative based on recent LIC declarations."
@@ -24,7 +24,7 @@
         "content": [
           {
             "type": "paragraph",
-            "text": "LIC Jeevan Labh (Table No. 736, formerly Plan 936 and Plan 836) is a non-linked, with-profits, limited premium paying endowment plan. It offers the dual advantage of high financial protection and limited out-of-pocket premium payments."
+            "text": "LIC Jeevan Labh (Table No. 736, formerly Plan 936 and Plan 836) is a non-linked, with-profits, limited premium paying endowment plan registered under IRDAI. For official policy details, visit the <a href='https://licindia.in' target='_blank' rel='noopener noreferrer' class='text-primary underline font-medium'>LIC of India Official Portal</a>."
           },
           {
             "type": "table",
@@ -249,7 +249,7 @@
         "content": [
           {
             "type": "paragraph",
-            "text": "LIC Jeevan Labh (Plan 736/936) remains the premier limited pay policy for wealth creation and tax-free lump sum goals. For broader planning, compare with our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a>, <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a>, and <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a>."
+            "text": "LIC Jeevan Labh (Plan 736/936) remains the premier limited pay policy for wealth creation and tax-free lump sum goals. For official guidelines, check <a href='https://licindia.in' target='_blank' rel='noopener noreferrer' class='text-primary underline font-medium'>LIC India Official Web Portal</a>. For broader planning, compare with our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a>, <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a>, and <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a>."
           }
         ]
       }
