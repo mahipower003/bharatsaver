@@ -66,7 +66,7 @@
               "Accumulated Reversionary Bonus, Terminal Bonus, Gross Maturity Value, Net Gain."
             ],
             [
-              "<strong>LIC Premium Calculator</strong>",
+              "<a href='/{lang}/lic-premium-calculator' class='text-primary font-bold hover:underline'>LIC Premium Calculator</a>",
               "Computes the regular premium installments required to keep a specific plan active.",
               "Age, Gender, Sum Assured, Policy Term, Premium Frequency, Chosen Riders.",
               "Tabular Base Premium, GST Additions, First-Year Premium, Subsequent-Year Premiums."

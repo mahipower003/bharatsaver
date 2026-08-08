@@ -205,6 +205,13 @@
         },
         {
           "type": "card_link",
+          "title": "LIC Premium Calculator",
+          "description": "Calculate annual premiums, 0% GST (2026 rules), and modal rebates across all active LIC plans.",
+          "href": "/lic-premium-calculator",
+          "icon": "Calculator"
+        },
+        {
+          "type": "card_link",
           "title": "LIC Maturity Calculator",
           "description": "Calculate exactly how much you will receive if you continue the policy to its full maturity term instead of surrendering it now.",
           "href": "/lic-maturity-calculator",

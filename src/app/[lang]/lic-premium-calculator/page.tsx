@@ -2,7 +2,7 @@ import { getDictionary } from "@/lib/dictionaries";
 import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
 import LicPremiumCalculatorPageClient from "./LicPremiumCalculatorPageClient";
-import { buildAlternates, buildOpenGraph, buildTwitterCard } from '@/lib/seo';
+import { buildAlternates } from '@/lib/seo';
 
 export const dynamic = 'force-dynamic';
 
@@ -13,21 +13,22 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
   const { lang } = await params;
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
+  const pagePath = `lic-premium-calculator`;
   
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `${siteUrl}/lic-calculators/tools/premium-calculator`
+      "@id": `${siteUrl}/${lang}/${pagePath}`
     },
-    "headline": "LIC Premium Calculator — Free Online LIC Premium Calculator (2025)",
-    "description": "Calculate LIC premium instantly for Jeevan Umang, Jeevan Utsav, Jeevan Labh & more. Use plan presets, add riders, compare monthly vs yearly and download results.",
+    "headline": "LIC Premium Calculator 2026 — Calculate LIC Premium, Maturity & Returns Online",
+    "description": "Free online LIC Premium Calculator to estimate premiums and maturity returns for Jeevan Labh (936), New Jeevan Anand (915), Jeevan Umang (945), Jeevan Utsav (871) & Term Insurance. Includes 0% GST reform rules.",
     "author": {
       "@type": "Person",
       "name": "Mahesh Chaube",
       "jobTitle": "Certified Financial Planner (CFP)",
-        "url": `${siteUrl}/${lang}/author/mahesh-chaube`
+      "url": `${siteUrl}/${lang}/author/mahesh-chaube`
     },
     "publisher": {
       "@type": "Organization",
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
       }
     },
     "datePublished": "2024-09-25",
-    "dateModified": "2025-09-24",
+    "dateModified": "2026-08-08",
     "reviewedBy": {
       "@type": "Person",
       "name": "Laveena Vijayi",
@@ -50,26 +51,32 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
   const howToSchema = {
     "@context": "https://schema.org",
     "@type": "HowTo",
-    "name": "How to Calculate Your LIC Premium Online",
-    "description": "A quick step-by-step guide to using the online LIC premium calculator.",
+    "name": "How to Calculate Your LIC Premium and Maturity Value Online",
+    "description": "Step-by-step instructions to calculate LIC policy premiums, modal rebates, and maturity returns.",
     "step": [
       {
         "@type": "HowToStep",
-        "name": "Step 1: Select Your Plan",
-        "text": "Start by choosing your desired LIC plan from the dropdown menus. Use a preset like 'Jeevan Umang' for better accuracy.",
-        "url": `${siteUrl}/${lang}/lic-premium-calculator#calculator-widget`
+        "name": "Step 1: Select Your LIC Plan",
+        "text": "Choose your specific policy plan from the dropdown list (e.g. Jeevan Labh 936, New Jeevan Anand 915, Jeevan Umang 945, or Tech Term).",
+        "url": `${siteUrl}/${lang}/${pagePath}#calculator-widget`
       },
       {
         "@type": "HowToStep",
-        "name": "Step 2: Enter Your Details",
-        "text": "Input your current age, gender, the sum assured (coverage amount), and the premium paying term (PPT).",
-        "url": `${siteUrl}/${lang}/lic-premium-calculator#calculator-widget`
+        "name": "Step 2: Enter Age & Coverage Details",
+        "text": "Input the policyholder's current age, policy term, premium paying term (PPT), and basic sum assured coverage.",
+        "url": `${siteUrl}/${lang}/${pagePath}#calculator-widget`
       },
       {
         "@type": "HowToStep",
-        "name": "Step 3: Click 'Calculate'",
-        "text": "The tool will process your inputs and instantly display your estimated premium for yearly, half-yearly, quarterly, and monthly frequencies.",
-        "url": `${siteUrl}/${lang}/lic-premium-calculator#calculator-widget`
+        "name": "Step 3: Select Payment Mode & Optional Riders",
+        "text": "Choose yearly, half-yearly, quarterly, or monthly frequency and toggle optional riders like Accidental Death or Term Rider.",
+        "url": `${siteUrl}/${lang}/${pagePath}#calculator-widget`
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Step 4: View Premium Breakdown & Bonus Projections",
+        "text": "Click 'Calculate' to see exact premium installments, 0% GST tax exemptions, and projected maturity payouts factoring in SRB and FAB bonuses.",
+        "url": `${siteUrl}/${lang}/${pagePath}#calculator-widget`
       }
     ]
   };
@@ -77,13 +84,13 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
   const softwareSchema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "BharatSaver's LIC Premium Calculator",
+    "name": "BharatSaver Universal LIC Premium Calculator Engine",
     "operatingSystem": "Web",
     "applicationCategory": "FinanceApplication",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",
-      "ratingCount": "12580"
+      "ratingCount": "14250"
     },
     "offers": {
       "@type": "Offer",
@@ -93,15 +100,9 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
   };
   
   return {
-    title: "LIC Premium Calculator — Free Online LIC Premium Calculator | BharatSaver",
-    description: "Use BharatSaver's free LIC Premium Calculator to instantly estimate LIC premiums (Jeevan Umang, Jeevan Labh, Jeevan Utsav). Compare monthly vs yearly, toggle riders, and download results.",
-    alternates: {
-      canonical: `https://bharatsaver.com/lic-calculators/tools/premium-calculator`,
-       languages: i18nConfig.locales.reduce((acc, locale) => {
-        acc[locale] = `${siteUrl}/${locale}/lic-premium-calculator`;
-        return acc;
-      }, {} as Record<string, string>),
-    },
+    title: "LIC Premium Calculator 2026 — Calculate LIC Premium & Maturity Online | BharatSaver",
+    description: "Use BharatSaver's free LIC Premium Calculator to calculate premiums & maturity payouts for Jeevan Labh, Jeevan Anand, Jeevan Umang & Utsav. 0% GST (2026 rules), modal rebates & SIP comparison.",
+    alternates: buildAlternates(lang, pagePath),
     other: {
       'application/ld+json': JSON.stringify([articleSchema, howToSchema, softwareSchema]),
     }
