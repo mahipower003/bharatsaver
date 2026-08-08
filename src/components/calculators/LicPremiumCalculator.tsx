@@ -136,9 +136,6 @@ export function LicPremiumCalculator({ dictionary }: { dictionary: any }) {
 
   async function handleSubmit(values: FormValues) {
     setIsLoading(true);
-    setResult(null);
-    await new Promise(resolve => setTimeout(resolve, 400));
-
     const selectedPlan = planOptions.find(p => p.id === values.planId) || planOptions[0];
 
     // Base actuarial rate per 1000 SA estimation based on age & term

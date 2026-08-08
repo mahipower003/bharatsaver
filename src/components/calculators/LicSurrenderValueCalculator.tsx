@@ -1,6 +1,7 @@
 
 'use client';
 
+import { useState, useTransition, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
@@ -33,6 +34,7 @@ const formSchema = z.object({
 export function LicSurrenderValueCalculator({ dictionary }: { dictionary: any }) {
   const { result, isLoading, error, performCalculation } = useLicSurrenderCalculator();
   const { toast } = useToast();
+  const [isPending, startTransition] = useTransition();
   const toolDict = dictionary.tool;
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -48,8 +50,17 @@ export function LicSurrenderValueCalculator({ dictionary }: { dictionary: any })
     },
   });
 
+  // Calculate default quote on mount via startTransition so main thread stays 100% responsive
+  useEffect(() => {
+    startTransition(() => {
+      performCalculation(form.getValues() as LicSurrenderFormValues);
+    });
+  }, []);
+
   function handleSubmit(values: z.infer<typeof formSchema>) {
-    performCalculation(values as LicSurrenderFormValues);
+    startTransition(() => {
+      performCalculation(values as LicSurrenderFormValues);
+    });
   }
 
   const formatCurrency = (value: number) => value.toLocaleString('en-IN', { style: 'currency', currency: 'INR', minimumFractionDigits: 0, maximumFractionDigits: 0 });
