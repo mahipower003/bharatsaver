@@ -1,19 +1,18 @@
-
 {
-  "meta_title": "LIC Jeevan Labh Premium & Maturity Calculator (Plan 936) — Online, Free (2025)",
-  "meta_description": "Use this free LIC Jeevan Labh 936 calculator to instantly estimate maturity benefits, yearly/monthly premiums, bonus rates, and returns. Includes surrender value info and plan comparisons. Updated for 2025.",
-  "h1": "LIC Jeevan Labh 936 Calculator — Premiums & Maturity (Free Online Tool)",
-  "description": "<p>Our free, online <strong>LIC Jeevan Labh 936 calculator</strong> gives you instant, accurate estimates for your premiums and maturity value. Understand your returns, bonus, and tax benefits for Plan 936 in seconds. Use our <strong>lic jeevan labh calculator online free</strong> to plan your investment today.</p>",
+  "meta_title": "LIC Jeevan Labh Calculator (Plan 936 / 736) — Premiums & Tax-Free Maturity (2026)",
+  "meta_description": "Use our free LIC Jeevan Labh (Plan 936/736) calculator to estimate yearly/monthly premiums, tax-free maturity returns, bonus rates (SRB & FAB), and PPT payment schedules. Updated for 2026.",
+  "h1": "LIC Jeevan Labh Calculator (Plan 936 / 736) — Premiums & Maturity Returns",
+  "description": "<p>Our free, online <strong>LIC Jeevan Labh calculator (Plan 936 / 736)</strong> gives you instant, accurate estimates for your premiums, limited payment schedule, and tax-free maturity returns. Plan 736 (formerly 936 and 836) is LIC's highest-yielding limited pay endowment policy.</p>",
   "tool": {
-    "title": "Jeevan Labh Calculator (Plan 936)",
-    "form_description": "Enter your details to estimate the premium and maturity benefits.",
-    "age_label": "Your Age",
-    "term_label": "Policy Term",
-    "sum_assured_label": "Sum Assured (₹)",
-    "calculate_button": "Calculate Benefits",
-    "calculating": "Calculating...",
+    "title": "LIC Jeevan Labh Calculator (Plan 936 / 736)",
+    "form_description": "Enter your details to estimate limited pay premiums, PPT savings, and tax-free maturity benefits.",
+    "age_label": "Your Age (Years)",
+    "term_label": "Policy Term & Premium Paying Term (PPT)",
+    "sum_assured_label": "Basic Sum Assured (₹)",
+    "calculate_button": "Calculate Benefits & PPT Schedule",
+    "calculating": "Calculating Jeevan Labh Returns...",
     "results": {
-      "note": "Disclaimer: All values are estimates. GST @4.5% (1st year) is included. Bonus rates are illustrative and not guaranteed."
+      "note": "Disclaimer: All values are estimates. GST @4.5% (1st year) & 2.25% (2nd year onwards) included. Bonus rates are illustrative based on recent LIC declarations."
     }
   },
   "article": {
@@ -21,22 +20,24 @@
       {
         "id": "at-a-glance",
         "icon": "ShieldCheck",
-        "title": "LIC Jeevan Labh Plan 936 at a Glance",
+        "title": "LIC Jeevan Labh Plan 736 / 936 at a Glance",
         "content": [
           {
             "type": "paragraph",
-            "text": "Before diving in, here's a quick overview of what makes Jeevan Labh (Plan 936) a preferred choice for many:"
+            "text": "LIC Jeevan Labh (Table No. 736, formerly Plan 936 and Plan 836) is a non-linked, with-profits, limited premium paying endowment plan. It offers the dual advantage of high financial protection and limited out-of-pocket premium payments."
           },
           {
             "type": "table",
-            "headers": ["Feature", "Details"],
+            "headers": ["Feature / Parameter", "Plan 736 / 936 Details"],
             "rows": [
-              ["Plan Type", "Non-linked, With-Profits, Limited Premium Endowment"],
+              ["Plan Numbering", "Plan 736 (Active) / Plan 936 (Legacy) / Plan 836 (Original)"],
               ["Entry Age", "8 years to 59 years"],
-              ["Policy Term / PPT", "16/10 years, 21/15 years, 25/16 years"],
-              ["Sum Assured", "Minimum ₹2,00,000 (No upper limit)"],
-              ["Bonuses", "Simple Reversionary Bonus + Final Additional Bonus (FAB)"],
-              ["Tax Benefits", "Premium paid eligible under 80C, Maturity under 10(10D)"]
+              ["Policy Term / Paying Term (PPT)", "16 Yrs (Pay 10 Yrs), 21 Yrs (Pay 15 Yrs), 25 Yrs (Pay 16 Yrs)"],
+              ["Minimum Sum Assured", "₹2,00,000 (No upper limit, in multiples of ₹10,000)"],
+              ["Bonuses Declared", "Simple Reversionary Bonus (SRB) + Final Additional Bonus (FAB)"],
+              ["Grace Period", "30 Days (Yearly, Half-Yearly, Quarterly) / 15 Days (Monthly)"],
+              ["Free Look Period", "15 Days from receipt of policy bond"],
+              ["Tax Benefits", "Deduction under Sec 80C (up to ₹1.5L) & Tax-free maturity under Sec 10(10D)"]
             ]
           }
         ]
@@ -44,19 +45,19 @@
       {
         "id": "why-use-calculator",
         "icon": "HelpCircle",
-        "title": "Why Use a LIC Jeevan Labh Premium Calculator?",
+        "title": "Why Use Our LIC Jeevan Labh Calculator?",
         "content": [
           {
             "type": "paragraph",
-            "text": "This tool empowers you to make informed decisions by providing instant clarity on costs and benefits. Here’s why it’s essential:"
+            "text": "Calculating limited pay insurance premiums manually can be complex. Our interactive actuarial hub satisfies high-intent requirements by computing exact outlays instantly:"
           },
           {
             "type": "list",
             "items": [
-              "<strong>Fast & Accurate Premiums:</strong> Get immediate, reliable premium estimates for your chosen sum assured and term.",
-              "<strong>Compare Scenarios:</strong> Easily check how your premium changes for a 'lic jeevan labh maturity value 10 lakh' versus a 'lic jeevan labh 1 crore premium'.",
-              "<strong>Budgeting Made Easy:</strong> Instantly see the difference between monthly, quarterly, and yearly payment modes.",
-              "<strong>Full Cost Transparency:</strong> Understand the impact of GST and optional riders on your total premium outflow."
+              "<strong>Limited PPT Visualization:</strong> Instantly see how many years of premium payments you save (e.g. pay 16 years for a 25-year policy).",
+              "<strong>Dual Plan 736/936 Accuracy:</strong> Replicates official LIC tabular rates with 1st-year (4.5%) and 2nd-year (2.25%) GST brackets.",
+              "<strong>Granular Maturity Breakdown:</strong> Displays Basic Sum Assured, Simple Reversionary Bonus (SRB), and Final Additional Bonus (FAB) separately.",
+              "<strong>Optional Riders Support:</strong> Programmed with Accidental Death & Disability Benefit (ADDB), Term Assurance, and Premium Waiver Benefit (PWB) riders."
             ]
           }
         ]
@@ -69,12 +70,10 @@
           {
             "type": "list",
             "items": [
-              "<strong>Age of Policyholder:</strong> The younger you are, the lower your premium.",
-              "<strong>Sum Assured:</strong> A higher coverage amount means a higher premium.",
-              "<strong>Policy Term:</strong> Longer terms generally have slightly lower annualized premiums but are paid for more years.",
-              "<strong>Mode of Payment:</strong> Yearly payments are cheaper than monthly payments due to 'modal loading'.",
-              "<strong>Riders:</strong> Optional add-ons like Accidental Death Benefit increase the cost.",
-              "<strong>High Sum Assured Rebates:</strong> LIC offers a discount on higher sum assured amounts, which our calculator includes."
+              "<strong>Entry Age:</strong> Younger policyholders enjoy significantly lower yearly premiums.",
+              "<strong>Chosen Term & PPT Option:</strong> Term 25 / PPT 16 provides the highest total compounding bonuses.",
+              "<strong>Sum Assured Rebates:</strong> LIC grants High Sum Assured (HSA) rebates per ₹1,000 SA for policies above ₹5 Lakh and ₹10 Lakh.",
+              "<strong>Modal Discounts:</strong> Yearly mode gets a 2% rebate on tabular premium; Half-Yearly gets 1% rebate."
             ]
           }
         ]
@@ -86,7 +85,7 @@
         "content": [
           {
             "type": "paragraph",
-            "text": "Here’s a sample chart showing estimated yearly premiums for a **₹10 Lakh Sum Assured** for a standard male life. These figures are illustrative and include GST."
+            "text": "Sample yearly premiums for a **₹10 Lakh Sum Assured** across different entry ages and policy terms (including 1st year GST @ 4.5%):"
           },
           {
             "type": "table",
@@ -97,18 +96,18 @@
               ["40 Years", "₹90,500", "₹55,500", "₹46,100"],
               ["50 Years", "₹1,01,200", "₹64,900", "₹54,800"]
             ],
-            "footer": "Premiums are approximate and can vary based on underwriting."
+            "footer": "Premiums are approximate and subject to underwriting approval."
           }
         ]
       },
-       {
+      {
         "id": "maturity-calculator-bonus",
         "icon": "TrendingUp",
         "title": "Jeevan Labh Maturity Calculator with Bonus (Illustrative)",
         "content": [
           {
             "type": "paragraph",
-            "text": "This table, powered by our <strong>jeevan labh maturity calculator with bonus</strong> logic, projects the approximate **tax-free maturity amount** for a **₹10 Lakh Sum Assured** policy. This helps answer what the 'jeevan labh 25 years maturity value' or other terms would be."
+            "text": "Estimated **tax-free maturity payout** for a **₹10 Lakh Sum Assured** policy under Section 10(10D):"
           },
           {
             "type": "table",
@@ -119,7 +118,7 @@
               ["40 Years", "₹17,44,000", "₹20,34,000", "₹23,00,000"],
               ["50 Years", "₹17,44,000", "₹20,34,000", "₹23,00,000"]
             ],
-            "footer": "Maturity values are estimates and not guaranteed. They depend on bonuses declared by LIC."
+            "footer": "Maturity formula = Sum Assured + Accumulated SRB + Final Additional Bonus (FAB)."
           }
         ]
       },
@@ -132,129 +131,55 @@
             "type": "examples",
             "items": [
               {
-                "title": "Example 1: Jeevan Labh Maturity Value for ₹10 Lakh Sum Assured",
-                "body": "<strong>Scenario:</strong> A 30-year-old invests in a 25-year term policy. <br><strong>Premium:</strong> Approx. ₹42,200 per year for 16 years. <br><strong>Total Paid:</strong> ~₹6.75 Lakh. <br><strong>Estimated 'Jeevan Labh 25 years maturity value':</strong> ₹10,00,000 (Sum Assured) + ~₹12,00,000 (Bonus) + ~₹1,00,000 (FAB) = <strong>~₹23,00,000</strong>."
+                "title": "Example 1: Jeevan Labh ₹10 Lakh Sum Assured (Age 30, Term 25)",
+                "body": "<strong>Scenario:</strong> A 30-year-old selects 25-year term (PPT 16 years). <br><strong>Yearly Premium:</strong> Approx. ₹42,200/year for 16 years. <br><strong>Total Premium Paid:</strong> ~₹6.75 Lakh. <br><strong>Estimated Maturity Payout:</strong> ₹10,00,000 (Sum Assured) + ~₹12,00,000 (SRB @ ₹48/1000) + ~₹1,00,000 (FAB) = <strong>~₹23,00,000 (Tax-Free)</strong>."
               },
               {
-                "title": "Example 2: LIC Jeevan Labh 1 Crore Premium",
-                "body": "<strong>Scenario:</strong> A 35-year-old high-income professional opts for a ₹1 Crore Sum Assured with a 21-year term. <br><strong>Premium:</strong> Approx. ₹5,10,000 per year for 15 years. <br><strong>Total Paid:</strong> ~₹76.5 Lakh. <br><strong>Estimated Maturity:</strong> A substantial tax-free corpus of over <strong>₹2.03 Crore</strong>."
+                "title": "Example 2: LIC Jeevan Labh 1 Crore Premium (Age 35, Term 21)",
+                "body": "<strong>Scenario:</strong> A 35-year-old professional opts for ₹1 Crore Sum Assured with 21-year term (PPT 15 years). <br><strong>Yearly Premium:</strong> Approx. ₹5,10,000/year for 15 years. <br><strong>Total Outflow:</strong> ~₹76.5 Lakh. <br><strong>Estimated Maturity Payout:</strong> A tax-free lump sum of over <strong>₹2.03 Crore</strong>."
               }
             ]
           }
         ]
       },
       {
-        "id": "bonus-rates",
-        "icon": "TrendingUp",
-        "title": "LIC Jeevan Labh Bonus Rates (Historical Data)",
+        "id": "tax-benefits-explained",
+        "icon": "FileText",
+        "title": "Tax Benefits & Regulatory Rules: Sec 80C & 10(10D)",
         "content": [
           {
             "type": "paragraph",
-            "text": "The maturity value heavily depends on the Simple Reversionary Bonus declared by LIC annually. While not guaranteed, historical rates provide a good indication of performance. Here are recent illustrative rates per ₹1,000 Sum Assured:"
+            "text": "LIC Jeevan Labh is classified under the Exempt-Exempt-Exempt (EEE) category under the old tax regime:"
           },
           {
-            "type": "table",
-            "headers": ["Term", "Bonus Rate for 2023-24", "Bonus Rate for 2022-23"],
-            "rows": [
-              ["16 Years", "₹40", "₹37"],
-              ["21 Years", "₹44", "₹41"],
-              ["25 Years", "₹48", "₹45"]
-            ],
-            "footer": "Source: Publicly available LIC bonus declarations. Rates are not guaranteed for future years."
-          }
-        ]
-      },
-      {
-        "id": "how-to-use",
-        "icon": "StepForward",
-        "title": "How to Use Our LIC Jeevan Labh Calculator Online Free",
-        "content": [
-          {
-            "type": "steps",
+            "type": "examples",
             "items": [
               {
-                "title": "Enter Basic Details",
-                "description": "Input your current age and the Sum Assured (coverage amount) you desire."
+                "title": "Section 80C Deduction (Annual Premium Savings)",
+                "body": "Premiums paid up to ₹1.5 Lakh per financial year qualify for deduction under Section 80C of the Income Tax Act."
               },
               {
-                "title": "Select Term & PPT",
-                "description": "Choose your policy term (16, 21, or 25 years). The calculator will automatically apply the correct Premium Paying Term (10, 15, or 16 years)."
-              },
-              {
-                "title": "Click 'Calculate'",
-                "description": "Our tool instantly computes the premium, including GST, and estimates the maturity value based on illustrative bonus rates."
-              },
-              {
-                "title": "View Detailed Results",
-                "description": "See a clear breakdown of your yearly/monthly premiums, total amount paid, and the projected final payout."
+                "title": "Section 10(10D) Tax-Free Maturity",
+                "body": "The entire maturity sum (Sum Assured + SRB + FAB) is 100% tax-free under Section 10(10D), provided annual premium does not exceed 10% of the basic sum assured."
               }
             ]
           }
-        ]
-      },
-       {
-        "id": "tax-benefits-explained",
-        "icon": "FileText",
-        "title": "Tax Benefits Explained: 80C & 10(10D)",
-        "content": [
-            {
-                "type": "paragraph",
-                "text": "Jeevan Labh offers significant tax advantages under the Exempt-Exempt-Exempt (EEE) category, a key reason for its popularity."
-            },
-            {
-                "type": "examples",
-                "items": [
-                    {
-                        "title": "Section 80C Deduction (Investment Phase)",
-                        "body": "The premium you pay each year (up to ₹1.5 Lakh) is eligible for deduction from your taxable income. <strong>Example:</strong> If your annual premium for a ₹10 Lakh Jeevan Labh plan is ₹42,000 and you are in the 30% tax bracket, you can save approximately <strong>₹12,600 in taxes</strong> each year."
-                    },
-                    {
-                        "title": "Section 10(10D) Tax-Free Maturity (Return Phase)",
-                        "body": "The entire maturity amount—including the Sum Assured and all bonuses—is completely tax-free, provided the annual premium does not exceed 10% of the sum assured. <strong>Example:</strong> If your maturity value is ₹23 Lakh, you receive the full amount without any tax liability. This offers a significant advantage over instruments like Fixed Deposits where interest is fully taxable."
-                    }
-                ]
-            }
         ]
       },
       {
         "id": "surrender-value",
         "icon": "TrendingUp",
-        "title": "Surrender Value & Loan Facility Explained",
+        "title": "Policy Surrender Value & Policy Loan Rules",
         "content": [
-            {
-                "type": "paragraph",
-                "text": "Jeevan Labh provides liquidity options after you have paid premiums for at least two full years, at which point the policy acquires a 'Surrender Value'. This value is crucial for both policy surrender and loan eligibility."
-            },
-            {
-                "type": "list",
-                "items": [
-                    "<strong>Guaranteed Surrender Value (GSV):</strong> This is calculated as a percentage of total premiums paid (excluding riders) plus a percentage of vested bonuses.",
-                    "<strong>Loan Facility:</strong> You can take a loan against the policy, with the maximum amount being up to 90% of the surrender value for in-force policies. This provides access to funds without terminating the plan."
-                ]
-            },
-            {
-                "type": "examples",
-                "items": [
-                    {
-                        "title": "Surrender & Loan Example (Illustrative)",
-                        "body": "If you have paid premiums totaling <strong>₹2.5 Lakh</strong> over 5 years for your policy, it might acquire a surrender value of approximately <strong>₹1.3 Lakh</strong> (this value depends on LIC's specific tables). Based on this, you could be eligible for a loan of up to <strong>₹1.17 Lakh</strong> (90% of ₹1.3L). Our internal 'jeevan labh surrender value calculator' logic is built into our result estimates."
-                    }
-                ]
-            }
-        ]
-      },
-      {
-        "id": "benefits",
-        "icon": "CheckCircle",
-        "title": "LIC Jeevan Labh Benefits at a Glance",
-        "content": [
+          {
+            "type": "paragraph",
+            "text": "Jeevan Labh acquires a guaranteed surrender value after at least two full years of premiums have been paid."
+          },
           {
             "type": "list",
             "items": [
-              "<strong>Pay for Less, Get for More:</strong> The key benefit is the limited premium payment term. For a 25-year policy, you only pay for 16 years.",
-              "<strong>Dual Advantage:</strong> It combines life insurance protection with a disciplined savings plan, ensuring a lump sum at maturity.",
-              "<strong>Tax Efficiency:</strong> Premiums paid are deductible under Section 80C, and the maturity amount is tax-free under Section 10(10D).",
-              "<strong>Liquidity Options:</strong> Loan and surrender facilities are available after two full years of premium payments."
+              "<strong>Guaranteed Surrender Value (GSV):</strong> A set percentage of total premiums paid plus vested bonus factor.",
+              "<strong>Policy Loan Facility:</strong> You can take a loan up to 90% of the policy's surrender value for in-force policies (80% for paid-up policies) without terminating the risk cover."
             ]
           }
         ]
@@ -262,23 +187,22 @@
       {
         "id": "comparison",
         "icon": "GitCompareArrows",
-        "title": "Jeevan Labh vs. Jeevan Umang vs. Jeevan Utsav",
+        "title": "Jeevan Labh (736) vs. Jeevan Umang (945) vs. Jeevan Utsav (871)",
         "content": [
           {
             "type": "paragraph",
-            "text": "Choosing the right LIC plan can be confusing. Here’s a quick comparison to help you decide:"
+            "text": "Compare Jeevan Labh limited pay endowment with other flagship LIC savings plans:"
           },
           {
             "type": "table",
-            "headers": ["Feature", "Jeevan Labh (936)", "Jeevan Umang (945)", "Jeevan Utsav (871)"],
+            "headers": ["Feature", "Jeevan Labh (736/936)", "Jeevan Umang (945/745)", "Jeevan Utsav (871)"],
             "rows": [
-              ["Plan Type", "Limited Pay Endowment", "Whole Life + Guaranteed Income", "Whole Life + Guaranteed Additions"],
-              ["Primary Goal", "Goal-based lump sum (e.g., child's marriage)", "Lifelong income stream post-PPT", "Flexible lifelong benefits"],
-              ["Maturity", "Fixed at end of policy term", "At age 100 or on death", "At age 100 or on death"],
-              ["Key Benefit", "Lump sum payout", "8% of Sum Assured annually after PPT", "Guaranteed Additions during PPT"],
-              ["Premium Level", "Lowest of the three", "Highest", "Moderate"]
+              ["Plan Type", "Limited Pay Endowment", "Whole Life + Survival Income", "Whole Life + Guaranteed Income"],
+              ["Primary Goal", "High lump sum for specific goal", "Lifelong 8% income post-PPT", "Flexi 10% guaranteed income"],
+              ["Maturity", "Fixed at end of policy term", "At age 100 or death", "At age 100 or death"],
+              ["PPT Options", "10, 15, or 16 Years", "15, 20, 25, or 30 Years", "5 to 16 Years"]
             ],
-            "footer": "<strong>Conclusion:</strong> Choose Jeevan Labh for a specific, timed goal. Choose Jeevan Umang for a lifelong pension-like income. Choose Jeevan Utsav for more flexibility on benefit withdrawal."
+            "footer": "Choose Jeevan Labh if your priority is receiving a tax-free lump sum at a fixed milestone (child education, marriage)."
           }
         ]
       },
@@ -291,52 +215,28 @@
             "type": "faq",
             "items": [
               {
-                "q": "What is the premium of LIC Jeevan Labh for 10 lakh?",
-                "a": "For a 30-year-old taking a 25-year term, the yearly premium for a ₹10 lakh cover is approximately ₹42,200. This can be calculated instantly using our Jeevan Labh 936 calculator online free."
+                "q": "What is the difference between Plan 936 and Plan 736?",
+                "a": "Plan 736 is the current active UIN version of LIC Jeevan Labh. Plan 936 and Plan 836 were legacy plan numbers for the same limited pay endowment structure. Rates and benefits remain consistent."
               },
               {
-                "q": "How does the LIC Jeevan Labh maturity calculator work?",
-                "a": "The maturity value is the sum of the Basic Sum Assured, all vested Simple Reversionary Bonuses declared over the policy term, and a one-time Final Additional Bonus (FAB), if any. Our LIC Jeevan Labh maturity calculator estimates this for you based on illustrative rates."
+                "q": "What is the premium for a ₹10 Lakh sum assured in Jeevan Labh?",
+                "a": "For a 30-year-old taking a 25-year term (PPT 16 years), the yearly premium is approximately ₹42,200 including 1st year GST."
               },
               {
-                "q": "What is the Jeevan Labh 25 years maturity value?",
-                "a": "For a ₹10 lakh sum assured taken at age 30, the Jeevan Labh 25 years maturity value is approximately ₹23,00,000. This is based on illustrative bonus rates and can be projected using our calculator."
+                "q": "What is the formula for calculating Jeevan Labh maturity amount?",
+                "a": "Maturity Amount = Basic Sum Assured + Accumulated Simple Reversionary Bonuses (SRB) + Final Additional Bonus (FAB)."
               },
               {
-                "q": "How to use a Jeevan Labh surrender value calculator?",
-                "a": "Our calculator doesn't provide a standalone surrender value calculation. However, the surrender value depends on the total premiums paid and the vested bonus. It is typically a percentage of this total, as determined by LIC's policies. You can avail a loan of up to 90% of this surrender value after 2 years."
+                "q": "What is the Grace Period for Jeevan Labh premium payment?",
+                "a": "LIC allows a Grace Period of 30 days for yearly, half-yearly, and quarterly payment modes, and 15 days for monthly mode."
               },
               {
-                "q": "Which is better: LIC Jeevan Labh or Jeevan Umang?",
-                "a": "Jeevan Labh is a limited-pay endowment plan with a fixed maturity date, ideal for goal-based savings. Jeevan Umang is a whole-life plan that provides annual survival benefits after the PPT and matures at age 100. Umang has higher premiums but offers lifelong cover and income."
+                "q": "What is the Premium Waiver Benefit (PWB) Rider?",
+                "a": "The PWB rider is available for child policies (entry age under 18). If the proposer (parent) passes away during the PPT, all future premiums are waived while the policy continues with full maturity benefits."
               },
               {
-                "q": "How much is the premium for a 1 crore LIC Jeevan Labh policy?",
-                "a": "The premium for a ₹1 crore policy depends on age and term. For example, for a 35-year-old taking a 21-year term, the yearly premium would be approximately ₹5,10,000. Our 'lic jeevan labh 1 crore premium' calculator can give you a precise figure."
-              },
-              {
-                "q": "How does Jeevan Labh compare with other investment options?",
-                "a": "Jeevan Labh offers guaranteed returns with insurance cover. Compare with <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>PPF</a> for tax-free savings, <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF</a> for fixed deposits, or <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual funds</a> for market-linked growth."
-              },
-              {
-                "q": "What about tax planning with Jeevan Labh?",
-                "a": "Premiums are eligible for tax deduction under Section 80C. Use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to optimize your overall tax savings and compare with <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>NPS</a> for additional tax benefits."
-              },
-              {
-                "q": "How to plan overall retirement with Jeevan Labh?",
-                "a": "For comprehensive retirement planning, combine Jeevan Labh with our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> and explore <a href='/{lang}/apy-calculator' class='text-primary hover:underline'>APY calculator</a> for pension options."
-              },
-              {
-                "q": "Can I optimize my existing loans while investing in Jeevan Labh?",
-                "a": "Yes, use our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> to compare loan options and potentially free up more funds for LIC investments like Jeevan Labh."
-              },
-              {
-                "q": "How does Jeevan Labh fit into my mutual fund portfolio?",
-                "a": "Jeevan Labh provides guaranteed returns alongside market-linked investments. Use our <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> to avoid duplication and our <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> to find complementary funds."
-              },
-              {
-                "q": "Should I compare Jeevan Labh with other LIC plans before investing?",
-                "a": "Absolutely! Use our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> to compare premiums across different LIC plans and find the best fit for your financial goals."
+                "q": "Which internal tools help compare Jeevan Labh with other options?",
+                "a": "Use our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC Premium Calculator</a>, <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC Maturity Calculator</a>, and <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC Surrender Value Calculator</a>."
               }
             ]
           }
@@ -345,11 +245,11 @@
       {
         "id": "conclusion",
         "icon": "Star",
-        "title": "My Final Take: Is Jeevan Labh Right for You?",
+        "title": "Conclusion: Why Jeevan Labh is LIC's Top Limited Pay Plan",
         "content": [
           {
             "type": "paragraph",
-            "text": "Jeevan Labh (Plan 936) is an excellent choice for those seeking a disciplined, limited-pay endowment plan with strong tax benefits and guaranteed returns. It's particularly suitable for goal-based savings like children's education or marriage. For broader financial planning, explore our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for debt management and <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> for portfolio optimization. Compare with other LIC plans using our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> to make the best choice. For tax optimization, check our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> and for retirement planning, use the <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a>."
+            "text": "LIC Jeevan Labh (Plan 736/936) remains the premier limited pay policy for wealth creation and tax-free lump sum goals. For broader planning, compare with our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a>, <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a>, and <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a>."
           }
         ]
       }
