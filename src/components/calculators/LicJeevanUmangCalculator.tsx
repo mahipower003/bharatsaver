@@ -459,7 +459,7 @@ export function LicJeevanUmangCalculator({ dictionary }: { dictionary: any }) {
             <Card className="border shadow-lg">
               <CardHeader className="bg-muted/40">
                 <CardTitle className="text-lg font-bold flex items-center gap-2">
-                  <Landmark className="h-5 w-5 text-indigo-600" />
+                  <Landmark className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
                   Maturity Benefit Payout (At Age 100)
                 </CardTitle>
               </CardHeader>
@@ -478,7 +478,7 @@ export function LicJeevanUmangCalculator({ dictionary }: { dictionary: any }) {
                 </div>
                 <div className="flex justify-between items-center pt-2">
                   <span className="font-bold text-base">Estimated Maturity Lump Sum:</span>
-                  <span className="font-extrabold text-xl text-indigo-600 dark:text-indigo-400">
+                  <span className="font-extrabold text-xl text-emerald-600 dark:text-emerald-400">
                     {formatCurrency(result.maturity.total)}
                   </span>
                 </div>
