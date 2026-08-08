@@ -7,6 +7,7 @@ import { Suspense } from 'react';
 import Loading from './loading';
 import { ScrollToTopButton } from '@/components/layout/ScrollToTopButton';
 import { ScrollToBottomButton } from '@/components/layout/ScrollToBottomButton';
+import { LeadCaptureModal } from '@/components/layout/LeadCaptureModal';
 
 export default async function LocaleLayout({
   children,
@@ -28,6 +29,7 @@ export default async function LocaleLayout({
       <Footer lang={lang} dictionary={dictionary.footer} />
       <ScrollToTopButton />
       <ScrollToBottomButton />
+      <LeadCaptureModal />
     </div>
   );
 }
