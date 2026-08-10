@@ -348,7 +348,7 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
                         : 'bg-slate-100 text-slate-700 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-300'
                     }`}
                   >
-                    ₹{(sa / 100000).toLocaleString('en-IN')} Lakh
+                    {sa >= 10000000 ? `₹${sa / 10000000} Cr` : `₹${sa / 100000} Lakh`}
                   </button>
                 ))}
               </div>
@@ -415,7 +415,11 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
                 </div>
               </div>
 
-              <Button type="submit" disabled={isLoading} className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3">
+              <Button
+                type="submit"
+                disabled={isLoading}
+                className="w-full sm:w-auto h-11 text-base font-semibold bg-emerald-600 hover:bg-emerald-700 text-white shadow-md"
+              >
                 {isLoading ? (
                   <>
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" /> Calculating Jeevan Labh Returns...
@@ -430,148 +434,154 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
       </Card>
 
       {result && (
-        <Card className="animate-in fade-in-50 border-emerald-200 dark:border-emerald-950">
-          <CardHeader className="border-b border-slate-100 dark:border-slate-800">
-            <CardTitle className="text-lg md:text-xl text-slate-900 dark:text-white flex items-center justify-between">
-              <span>LIC Jeevan Labh (Plan 736/936) Calculation Summary</span>
-              <span className="text-xs font-normal text-emerald-600 bg-emerald-50 dark:bg-emerald-950/60 px-3 py-1 rounded-full border border-emerald-200 dark:border-emerald-800">
-                Plan 736 Active
+        <Card className="shadow-xl border-slate-200 dark:border-slate-800">
+          <CardHeader className="bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-t-xl p-4 sm:p-6">
+            <CardTitle className="text-lg md:text-2xl flex items-center justify-between gap-2">
+              <span>Maturity Benefit & Outflow Breakdown</span>
+              <span className="text-xs bg-emerald-800/60 px-2.5 py-1 rounded-full text-emerald-100 font-normal">
+                Sec 10(10D) Tax-Free
               </span>
             </CardTitle>
           </CardHeader>
-          <CardContent className="p-3.5 sm:p-6 space-y-6 sm:space-y-8">
+          <CardContent className="p-3.5 sm:p-6 space-y-6">
             {/* Visual Limited PPT Payment Timeline Card */}
-            <div className="rounded-xl bg-gradient-to-r from-slate-900 to-slate-800 p-5 text-white shadow-lg">
-              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-400">
-                <Clock className="h-4 w-4" /> Limited Premium Paying Advantage
+            <div className="rounded-xl bg-gradient-to-r from-slate-900 to-slate-800 p-4 sm:p-5 text-white shadow-lg">
+              <div className="flex items-center gap-2 text-[11px] sm:text-xs font-bold uppercase tracking-wider text-emerald-400">
+                <Clock className="h-4 w-4 shrink-0" /> Limited Premium Paying Advantage
               </div>
-              <h4 className="mt-1 text-lg font-bold">
+              <h4 className="mt-1 text-base sm:text-lg font-bold">
                 Pay for <span className="text-emerald-400">{result.ppt} Years</span> — Enjoy Coverage for <span className="text-emerald-400">{values.term} Years</span>!
               </h4>
               <p className="mt-1 text-xs text-slate-300">
-                You save premium payments for <strong className="text-white">{result.freeYears} full years</strong> while your bonuses continue to compound tax-free.
+                You save paying premiums for <strong>{result.freeYears} whole years</strong> while LIC continues adding bonuses to your account.
               </p>
 
               <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3">
                 <div className="rounded-lg bg-slate-800/80 p-3 border border-slate-700">
                   <span className="text-[11px] text-slate-400 block">Active Payment Window</span>
-                  <span className="text-base font-bold text-white">Year 1 to Year {result.ppt}</span>
+                  <span className="text-sm sm:text-base font-bold text-white">Year 1 to Year {result.ppt}</span>
                 </div>
                 <div className="rounded-lg bg-slate-800/80 p-3 border border-slate-700">
                   <span className="text-[11px] text-slate-400 block">Zero Premium Growth Window</span>
-                  <span className="text-base font-bold text-emerald-400">Year {result.ppt + 1} to Year {values.term}</span>
+                  <span className="text-sm sm:text-base font-bold text-emerald-400">Year {result.ppt + 1} to Year {values.term}</span>
                 </div>
                 <div className="rounded-lg bg-slate-800/80 p-3 border border-slate-700">
                   <span className="text-[11px] text-slate-400 block">Tax-Free Maturity Payout</span>
-                  <span className="text-base font-bold text-cyan-300">End of Year {values.term}</span>
+                  <span className="text-sm sm:text-base font-bold text-cyan-300">End of Year {values.term}</span>
                 </div>
               </div>
             </div>
 
             {/* Premium Schedule Tables */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="rounded-xl border border-slate-200 dark:border-slate-800 p-4">
-                <h4 className="font-bold text-sm text-slate-900 dark:text-white mb-3">
+              <div className="rounded-xl border border-slate-200 dark:border-slate-800 p-3.5 sm:p-4">
+                <h4 className="font-bold text-xs sm:text-sm text-slate-900 dark:text-white mb-3">
                   First Year Premium (4.5% GST Included)
                 </h4>
-                <Table>
-                  <TableHeader>
-                    <TableRow>
-                      <TableHead className="text-xs">Mode</TableHead>
-                      <TableHead className="text-xs text-right">Base</TableHead>
-                      <TableHead className="text-xs text-right">GST</TableHead>
-                      <TableHead className="text-xs text-right font-bold">Total</TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    {result.firstYear.map((item) => (
-                      <TableRow key={item.mode}>
-                        <TableCell className="text-xs font-medium">{item.mode}</TableCell>
-                        <TableCell className="text-xs text-right">{formatCurrency(item.premium)}</TableCell>
-                        <TableCell className="text-xs text-right text-slate-500">{formatCurrency(item.gst)}</TableCell>
-                        <TableCell className="text-xs text-right font-bold text-emerald-600">{formatCurrency(item.total)}</TableCell>
+                <div className="overflow-x-auto -mx-1 px-1 sm:mx-0 sm:px-0">
+                  <Table>
+                    <TableHeader>
+                      <TableRow>
+                        <TableHead className="text-xs">Mode</TableHead>
+                        <TableHead className="text-xs text-right">Base</TableHead>
+                        <TableHead className="text-xs text-right">GST</TableHead>
+                        <TableHead className="text-xs text-right font-bold">Total</TableHead>
                       </TableRow>
-                    ))}
-                  </TableBody>
-                </Table>
+                    </TableHeader>
+                    <TableBody>
+                      {result.firstYear.map((item) => (
+                        <TableRow key={item.mode}>
+                          <TableCell className="text-xs font-medium">{item.mode}</TableCell>
+                          <TableCell className="text-xs text-right">{formatCurrency(item.premium)}</TableCell>
+                          <TableCell className="text-xs text-right text-slate-500">{formatCurrency(item.gst)}</TableCell>
+                          <TableCell className="text-xs text-right font-bold text-emerald-600">{formatCurrency(item.total)}</TableCell>
+                        </TableRow>
+                      ))}
+                    </TableBody>
+                  </Table>
+                </div>
               </div>
 
-              <div className="rounded-xl border border-slate-200 dark:border-slate-800 p-4">
-                <h4 className="font-bold text-sm text-slate-900 dark:text-white mb-3">
+              <div className="rounded-xl border border-slate-200 dark:border-slate-800 p-3.5 sm:p-4">
+                <h4 className="font-bold text-xs sm:text-sm text-slate-900 dark:text-white mb-3">
                   2nd Year Onward Renewal Premium (2.25% GST Included)
                 </h4>
-                <Table>
-                  <TableHeader>
-                    <TableRow>
-                      <TableHead className="text-xs">Mode</TableHead>
-                      <TableHead className="text-xs text-right">Base</TableHead>
-                      <TableHead className="text-xs text-right">GST</TableHead>
-                      <TableHead className="text-xs text-right font-bold">Total</TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    {result.secondYear.map((item) => (
-                      <TableRow key={item.mode}>
-                        <TableCell className="text-xs font-medium">{item.mode}</TableCell>
-                        <TableCell className="text-xs text-right">{formatCurrency(item.premium)}</TableCell>
-                        <TableCell className="text-xs text-right text-slate-500">{formatCurrency(item.gst)}</TableCell>
-                        <TableCell className="text-xs text-right font-bold text-emerald-600">{formatCurrency(item.total)}</TableCell>
+                <div className="overflow-x-auto -mx-1 px-1 sm:mx-0 sm:px-0">
+                  <Table>
+                    <TableHeader>
+                      <TableRow>
+                        <TableHead className="text-xs">Mode</TableHead>
+                        <TableHead className="text-xs text-right">Base</TableHead>
+                        <TableHead className="text-xs text-right">GST</TableHead>
+                        <TableHead className="text-xs text-right font-bold">Total</TableHead>
                       </TableRow>
-                    ))}
-                  </TableBody>
-                </Table>
+                    </TableHeader>
+                    <TableBody>
+                      {result.secondYear.map((item) => (
+                        <TableRow key={item.mode}>
+                          <TableCell className="text-xs font-medium">{item.mode}</TableCell>
+                          <TableCell className="text-xs text-right">{formatCurrency(item.premium)}</TableCell>
+                          <TableCell className="text-xs text-right text-slate-500">{formatCurrency(item.gst)}</TableCell>
+                          <TableCell className="text-xs text-right font-bold text-emerald-600">{formatCurrency(item.total)}</TableCell>
+                        </TableRow>
+                      ))}
+                    </TableBody>
+                  </Table>
+                </div>
               </div>
             </div>
 
             {/* Actuarial Maturity Breakdown */}
-            <div className="rounded-xl border border-emerald-200 dark:border-emerald-900 bg-emerald-50/50 dark:bg-emerald-950/20 p-5">
-              <h4 className="font-bold text-base text-slate-900 dark:text-white mb-4">
+            <div className="rounded-xl border border-emerald-200 dark:border-emerald-900 bg-emerald-50/50 dark:bg-emerald-950/20 p-4 sm:p-5">
+              <h4 className="font-bold text-sm sm:text-base text-slate-900 dark:text-white mb-3 sm:mb-4">
                 Granular Maturity Breakdown (Sec 10(10D) Tax-Free)
               </h4>
-              <Table>
-                <TableBody>
-                  <TableRow>
-                    <TableCell className="font-medium text-xs md:text-sm">Basic Sum Assured (A)</TableCell>
-                    <TableCell className="text-right font-semibold text-xs md:text-sm">{formatCurrency(result.maturity.sumAssured)}</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium text-xs md:text-sm">Simple Reversionary Bonus (SRB) (B)</TableCell>
-                    <TableCell className="text-right font-semibold text-xs md:text-sm">{formatCurrency(result.maturity.bonus)}</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium text-xs md:text-sm">Final Additional Bonus (FAB) (C)</TableCell>
-                    <TableCell className="text-right font-semibold text-xs md:text-sm">{formatCurrency(result.maturity.fab)}</TableCell>
-                  </TableRow>
-                  <TableRow className="bg-emerald-100 dark:bg-emerald-900/50 font-bold">
-                    <TableCell className="text-emerald-900 dark:text-emerald-100 text-sm md:text-base">
-                      Total Tax-Free Maturity Payout (A + B + C)
-                    </TableCell>
-                    <TableCell className="text-right text-emerald-700 dark:text-emerald-300 text-base md:text-xl">
-                      {formatCurrency(result.maturity.total)}
-                    </TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="text-xs text-slate-500">Total Out-of-Pocket Premium Invested ({result.ppt} Yrs)</TableCell>
-                    <TableCell className="text-right text-xs font-semibold text-slate-700 dark:text-slate-300">
-                      {formatCurrency(result.totalPremiumPaid)}
-                    </TableCell>
-                  </TableRow>
-                </TableBody>
-              </Table>
+              <div className="overflow-x-auto -mx-1 px-1 sm:mx-0 sm:px-0">
+                <Table>
+                  <TableBody>
+                    <TableRow>
+                      <TableCell className="font-medium text-xs md:text-sm">Basic Sum Assured (A)</TableCell>
+                      <TableCell className="text-right font-semibold text-xs md:text-sm">{formatCurrency(result.maturity.sumAssured)}</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell className="font-medium text-xs md:text-sm">Simple Reversionary Bonus (SRB) (B)</TableCell>
+                      <TableCell className="text-right font-semibold text-xs md:text-sm">{formatCurrency(result.maturity.bonus)}</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell className="font-medium text-xs md:text-sm">Final Additional Bonus (FAB) (C)</TableCell>
+                      <TableCell className="text-right font-semibold text-xs md:text-sm">{formatCurrency(result.maturity.fab)}</TableCell>
+                    </TableRow>
+                    <TableRow className="bg-emerald-100 dark:bg-emerald-900/50 font-bold">
+                      <TableCell className="text-emerald-900 dark:text-emerald-100 text-xs sm:text-sm md:text-base">
+                        Total Tax-Free Maturity Payout (A + B + C)
+                      </TableCell>
+                      <TableCell className="text-right text-emerald-700 dark:text-emerald-300 text-sm sm:text-base md:text-xl">
+                        {formatCurrency(result.maturity.total)}
+                      </TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell className="text-xs text-slate-500">Total Out-of-Pocket Premium Invested ({result.ppt} Yrs)</TableCell>
+                      <TableCell className="text-right text-xs font-semibold text-slate-700 dark:text-slate-300">
+                        {formatCurrency(result.totalPremiumPaid)}
+                      </TableCell>
+                    </TableRow>
+                  </TableBody>
+                </Table>
+              </div>
             </div>
 
             {/* Financial Recharts Breakdown */}
             <div>
-              <h4 className="font-bold text-sm text-slate-900 dark:text-white mb-3">
+              <h4 className="font-bold text-xs sm:text-sm text-slate-900 dark:text-white mb-3">
                 Investment Outflow vs. Maturity Returns
               </h4>
               <ResponsiveContainer width="100%" height={280}>
-                <BarChart data={result.chartData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+                <BarChart data={result.chartData} margin={{ top: 20, right: 20, left: -10, bottom: 5 }}>
                   <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="name" />
-                  <YAxis tickFormatter={(value) => (value / 100000).toFixed(1) + 'L'} />
+                  <XAxis dataKey="name" tick={{ fontSize: 11 }} />
+                  <YAxis tickFormatter={(value) => (value / 100000).toFixed(1) + 'L'} tick={{ fontSize: 11 }} />
                   <RechartsTooltip formatter={(value: number) => formatCurrency(value)} />
-                  <Legend />
+                  <Legend wrapperStyle={{ fontSize: 12 }} />
                   <Bar dataKey="Total Premium Paid" fill="#ef4444" />
                   <Bar dataKey="Sum Assured" fill="#059669" />
                   <Bar dataKey="Simple Reversionary Bonus" fill="#0d9488" />
@@ -581,18 +591,18 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
             </div>
 
             {/* Action Bar */}
-            <div className="flex flex-wrap items-center justify-center gap-3 pt-4 border-t border-slate-200 dark:border-slate-800">
-              <Button variant="outline" size="sm" onClick={() => handleShare('whatsapp')}>
-                <WhatsAppIcon className="mr-2 h-4 w-4" /> Share on WhatsApp
+            <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-2.5 sm:gap-3 pt-4 border-t border-slate-200 dark:border-slate-800">
+              <Button variant="outline" size="sm" className="w-full sm:w-auto text-xs" onClick={() => handleShare('whatsapp')}>
+                <WhatsAppIcon className="mr-2 h-4 w-4 shrink-0" /> Share on WhatsApp
               </Button>
-              <Button variant="outline" size="sm" onClick={() => handleShare('twitter')}>
-                <Twitter className="mr-2 h-4 w-4" /> Share on X
+              <Button variant="outline" size="sm" className="w-full sm:w-auto text-xs" onClick={() => handleShare('twitter')}>
+                <Twitter className="mr-2 h-4 w-4 shrink-0" /> Share on X
               </Button>
-              <Button variant="outline" size="sm" onClick={handlePrint}>
-                <Printer className="mr-2 h-4 w-4" /> Print PDF Report
+              <Button variant="outline" size="sm" className="w-full sm:w-auto text-xs" onClick={handlePrint}>
+                <Printer className="mr-2 h-4 w-4 shrink-0" /> Print PDF Report
               </Button>
-              <Button variant="outline" size="sm" onClick={handleCSVExport}>
-                <Download className="mr-2 h-4 w-4" /> Export CSV Summary
+              <Button variant="outline" size="sm" className="w-full sm:w-auto text-xs" onClick={handleCSVExport}>
+                <Download className="mr-2 h-4 w-4 shrink-0" /> Export CSV Summary
               </Button>
             </div>
 
