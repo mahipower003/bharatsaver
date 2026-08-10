@@ -330,20 +330,17 @@ export function LicPremiumCalculator({ dictionary }: { dictionary: any }) {
                   name="planId"
                   render={({ field }) => (
                     <FormItem className="md:col-span-3">
-                      <FormLabel className="font-semibold text-base">Select LIC Policy Plan</FormLabel>
+                      <FormLabel className="font-semibold text-xs sm:text-base">Select LIC Policy Plan</FormLabel>
                       <Select onValueChange={field.onChange} value={field.value}>
                         <FormControl>
-                          <SelectTrigger className="h-11 text-base">
+                          <SelectTrigger className="min-h-[2.75rem] h-auto text-xs sm:text-base font-semibold py-2.5">
                             <SelectValue placeholder="Select an LIC Plan" />
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
                           {planOptions.map(p => (
                             <SelectItem key={p.id} value={p.id} className="py-2.5">
-                              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4 text-left w-full">
-                                <span className="font-medium">{p.name}</span>
-                                <span className="text-[10px] sm:text-xs text-muted-foreground bg-muted px-2 py-0.5 rounded self-start sm:self-auto">{p.category}</span>
-                              </div>
+                              <span className="font-medium text-xs sm:text-sm">{p.name} <span className="text-[10px] sm:text-xs text-muted-foreground font-normal ml-1">({p.category})</span></span>
                             </SelectItem>
                           ))}
                         </SelectContent>
