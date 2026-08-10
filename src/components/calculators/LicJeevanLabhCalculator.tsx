@@ -271,13 +271,13 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
   return (
     <div className="print-hide space-y-6">
       <Card className="shadow-xl border-slate-200 dark:border-slate-800">
-        <CardHeader className="bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-t-xl">
-          <CardTitle className="text-xl md:text-2xl">{dictionary.title || "LIC Jeevan Labh Calculator (Plan 936 / 736)"}</CardTitle>
+        <CardHeader className="bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-t-xl p-4 sm:p-6">
+          <CardTitle className="text-lg md:text-2xl">{dictionary.title || "LIC Jeevan Labh Calculator (Plan 936 / 736)"}</CardTitle>
           <CardDescription className="text-emerald-100 text-xs md:text-sm">
             Instant actuarial calculation for premiums, limited payment schedule, and tax-free maturity benefits.
           </CardDescription>
         </CardHeader>
-        <CardContent className="p-6">
+        <CardContent className="p-3.5 sm:p-6">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(handleSubmit)} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -439,7 +439,7 @@ export function LicJeevanLabhCalculator({ dictionary }: { dictionary: any }) {
               </span>
             </CardTitle>
           </CardHeader>
-          <CardContent className="p-6 space-y-8">
+          <CardContent className="p-3.5 sm:p-6 space-y-6 sm:space-y-8">
             {/* Visual Limited PPT Payment Timeline Card */}
             <div className="rounded-xl bg-gradient-to-r from-slate-900 to-slate-800 p-5 text-white shadow-lg">
               <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-400">

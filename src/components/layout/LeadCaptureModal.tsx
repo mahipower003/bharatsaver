@@ -133,17 +133,17 @@ export function LeadCaptureModal() {
       {/* Modal Backdrop */}
       {isOpen && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/70 p-4 backdrop-blur-sm transition-opacity duration-300 animate-in fade-in"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/70 p-3 sm:p-4 backdrop-blur-sm transition-opacity duration-300 animate-in fade-in"
           onClick={(e) => {
             if (e.target === e.currentTarget) handleClose();
           }}
         >
-          <div className="relative w-full max-w-lg overflow-hidden rounded-2xl bg-white shadow-2xl dark:bg-slate-900 border border-slate-200 dark:border-slate-800 animate-in zoom-in-95 duration-200">
+          <div className="relative w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-2xl bg-white shadow-2xl dark:bg-slate-900 border border-slate-200 dark:border-slate-800 animate-in zoom-in-95 duration-200">
             {/* Header Banner */}
-            <div className="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-700 p-6 text-white">
+            <div className="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-700 p-4 sm:p-6 text-white">
               <button
                 onClick={handleClose}
-                className="absolute right-4 top-4 rounded-full bg-black/20 p-1 text-white/80 transition-colors hover:bg-black/40 hover:text-white"
+                className="absolute right-3 top-3 sm:right-4 sm:top-4 rounded-full bg-black/20 p-1 text-white/80 transition-colors hover:bg-black/40 hover:text-white"
                 aria-label="Close modal"
               >
                 <X className="h-5 w-5" />
@@ -151,7 +151,7 @@ export function LeadCaptureModal() {
               <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-emerald-100">
                 <ShieldCheck className="h-4 w-4" /> 100% Free CFP Financial Consultation
               </div>
-              <h3 className="mt-1 text-xl font-bold text-white md:text-2xl">
+              <h3 className="mt-1 text-lg sm:text-xl font-bold text-white md:text-2xl">
                 Have Policy Questions? Talk to an Expert
               </h3>
               <p className="mt-1 text-xs text-emerald-50/90">
@@ -160,7 +160,7 @@ export function LeadCaptureModal() {
             </div>
 
             {/* Content Area */}
-            <div className="p-6">
+            <div className="p-4 sm:p-6">
               {submitted ? (
                 <div className="py-8 text-center">
                   <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-emerald-100 dark:bg-emerald-950/50">

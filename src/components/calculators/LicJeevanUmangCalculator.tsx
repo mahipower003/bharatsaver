@@ -196,21 +196,21 @@ export function LicJeevanUmangCalculator({ dictionary }: { dictionary: any }) {
   return (
     <div className="space-y-8">
       <Card className="border-2 border-emerald-500/20 shadow-xl bg-card">
-        <CardHeader className="bg-gradient-to-r from-emerald-950/10 via-teal-950/10 to-transparent pb-6">
-          <div className="flex items-center justify-between">
-            <CardTitle className="text-xl sm:text-2xl font-bold flex items-center gap-2">
-              <Sparkles className="h-6 w-6 text-emerald-600 dark:text-emerald-400" />
-              {dictionary.title || "LIC Jeevan Umang Calculator (Plan 745 / 945)"}
+        <CardHeader className="bg-gradient-to-r from-emerald-950/10 via-teal-950/10 to-transparent p-4 sm:p-6">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <CardTitle className="text-lg sm:text-2xl font-bold flex items-center gap-2">
+              <Sparkles className="h-5 w-5 sm:h-6 sm:w-6 text-emerald-600 dark:text-emerald-400 shrink-0" />
+              <span>{dictionary.title || "LIC Jeevan Umang Calculator (Plan 745 / 945)"}</span>
             </CardTitle>
-            <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-200">
+            <span className="self-start sm:self-auto text-[11px] sm:text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-200">
               Active Plan 745 (2026)
             </span>
           </div>
-          <CardDescription className="text-sm">
+          <CardDescription className="text-xs sm:text-sm mt-1">
             {dictionary.form_description || "Calculate guaranteed 8% annual survival income, limited PPT premiums, and age-100 maturity wealth."}
           </CardDescription>
         </CardHeader>
-        <CardContent className="pt-6">
+        <CardContent className="p-3.5 sm:p-6 pt-4 sm:pt-6">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -413,18 +413,18 @@ export function LicJeevanUmangCalculator({ dictionary }: { dictionary: any }) {
 
           {/* Premium Breakdown Table */}
           <Card className="shadow-lg border">
-            <CardHeader>
-              <CardTitle className="text-xl font-bold flex items-center gap-2">
-                <Calendar className="h-5 w-5 text-emerald-600" />
-                Premium Payment Options (1st Year vs 2nd Year Onwards GST)
+            <CardHeader className="p-4 sm:p-6 pb-2 sm:pb-3">
+              <CardTitle className="text-lg sm:text-xl font-bold flex items-center gap-2">
+                <Calendar className="h-5 w-5 text-emerald-600 shrink-0" />
+                <span>Premium Payment Options (1st Year vs 2nd Year GST)</span>
               </CardTitle>
-              <CardDescription>
+              <CardDescription className="text-xs sm:text-sm">
                 Includes 4.5% GST load for Year 1 and reduced 2.25% GST for Year 2 to Year {result.ppt}.
               </CardDescription>
             </CardHeader>
-            <CardContent>
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm text-left border-collapse">
+            <CardContent className="p-3.5 sm:p-6 pt-2 sm:pt-4">
+              <div className="overflow-x-auto -mx-1 px-1 sm:mx-0 sm:px-0">
+                <table className="w-full text-xs sm:text-sm text-left border-collapse min-w-[500px]">
                   <thead>
                     <tr className="bg-muted border-b">
                       <th className="p-3 font-semibold">Payment Mode</th>

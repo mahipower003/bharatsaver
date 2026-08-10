@@ -64,45 +64,45 @@ export function CalculatorPageLayout({
   } : null;
 
   return (
-    <div className="py-12">
+    <div className="py-6 sm:py-12">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {faqSchema && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       )}
       
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline" dangerouslySetInnerHTML={{__html: h1}}></h1>
-          <div className="bs-byline justify-center text-center mt-4 text-sm text-muted-foreground flex flex-wrap items-center gap-2">
+      <div className="mx-auto max-w-5xl px-3 sm:px-6 lg:px-8">
+        <div className="text-center mb-6 sm:mb-8">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight font-headline break-words" dangerouslySetInnerHTML={{__html: h1}}></h1>
+          <div className="bs-byline justify-center text-center mt-3 text-xs sm:text-sm text-muted-foreground flex flex-wrap items-center gap-1.5 sm:gap-2">
             <span className="bs-author">By <strong className="text-foreground">Mahesh Chaube</strong></span>
             <span className="bs-creds">, CFP</span>
             <span className="bs-sep hidden sm:inline">|</span>
             <span className="bs-updated">Last updated: <time dateTime={lastUpdated}>{lastUpdated}</time></span>
-            <div className="bs-reviewed w-full sm:w-auto mt-2 sm:mt-0">Reviewed by <strong className="text-foreground">Laveena Vijayi</strong> — BharatSaver Editorial Team</div>
+            <div className="bs-reviewed w-full sm:w-auto mt-1 sm:mt-0 text-xs">Reviewed by <strong className="text-foreground">Laveena Vijayi</strong> — BharatSaver Editorial Team</div>
           </div>
-          <div className="mt-4 text-lg text-muted-foreground" dangerouslySetInnerHTML={{__html: description}}></div>
+          <div className="mt-3 text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed" dangerouslySetInnerHTML={{__html: description}}></div>
           <CalculatorActions />
         </div>
         
         {/* The Interactive Calculator Component */}
-        <div className="mb-12">
+        <div className="mb-8 sm:mb-12">
           {calculator}
         </div>
 
         {/* Dynamic Descriptive Content */}
-        <div className="space-y-12">
+        <div className="space-y-8 sm:space-y-12">
           {children}
         </div>
 
         {/* Standardized FAQ Section */}
         {faqs && faqs.length > 0 && (
-          <div className="mt-12">
-              <h2 className="text-2xl font-bold text-center mb-6">{faqTitle || "Frequently Asked Questions"}</h2>
-              <Accordion type="single" collapsible className="w-full bg-card border rounded-lg shadow-sm p-4">
+          <div className="mt-8 sm:mt-12">
+              <h2 className="text-xl sm:text-2xl font-bold text-center mb-4 sm:mb-6">{faqTitle || "Frequently Asked Questions"}</h2>
+              <Accordion type="single" collapsible className="w-full bg-card border rounded-lg shadow-sm p-3 sm:p-4">
                 {faqs.map((faq, index) => (
                   <AccordionItem value={`item-${index}`} key={index}>
-                    <AccordionTrigger className="text-left font-semibold hover:text-primary">{faq.question}</AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground leading-relaxed">
+                    <AccordionTrigger className="text-left text-xs sm:text-sm md:text-base font-semibold hover:text-primary">{faq.question}</AccordionTrigger>
+                    <AccordionContent className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                       <div dangerouslySetInnerHTML={{ __html: faq.answer.replace(/{lang}/g, lang) }}></div>
                     </AccordionContent>
                   </AccordionItem>
