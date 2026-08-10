@@ -340,9 +340,9 @@ export function LicPremiumCalculator({ dictionary }: { dictionary: any }) {
                         <SelectContent>
                           {planOptions.map(p => (
                             <SelectItem key={p.id} value={p.id} className="py-2.5">
-                              <div className="flex items-center justify-between gap-4">
+                              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4 text-left w-full">
                                 <span className="font-medium">{p.name}</span>
-                                <span className="text-xs text-muted-foreground bg-muted px-2 py-0.5 rounded">{p.category}</span>
+                                <span className="text-[10px] sm:text-xs text-muted-foreground bg-muted px-2 py-0.5 rounded self-start sm:self-auto">{p.category}</span>
                               </div>
                             </SelectItem>
                           ))}
