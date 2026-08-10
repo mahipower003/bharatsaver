@@ -23,12 +23,12 @@ export function Header({ lang, dictionary }: HeaderProps) {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-sm border-b">
-      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <div className="flex items-center gap-4 md:gap-10">
+      <div className="container mx-auto flex h-16 sm:h-20 items-center justify-between px-3 sm:px-6">
+        <div className="flex items-center gap-3 sm:gap-10">
           <MobileNav lang={lang} dictionary={dictionary} />
-          <Link href={`/${lang}`} className="hidden sm:flex items-center gap-2">
-            <BharatSaverLogo className="h-8 w-8" />
-            <span className="font-bold text-xl text-foreground">BharatSaver</span>
+          <Link href={`/${lang}`} className="flex items-center gap-2">
+            <BharatSaverLogo className="h-7 w-7 sm:h-8 sm:w-8" />
+            <span className="font-bold text-lg sm:text-xl text-foreground">BharatSaver</span>
           </Link>
         </div>
 
