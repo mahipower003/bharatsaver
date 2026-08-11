@@ -124,10 +124,10 @@ export function LeadCaptureModal() {
       <button
         onClick={() => setIsOpen(true)}
         aria-label="Ask Financial Expert"
-        className="fixed bottom-20 right-4 z-40 flex items-center gap-2 rounded-full bg-gradient-to-r from-emerald-600 to-teal-700 px-4 py-2.5 text-white shadow-xl transition-all duration-300 hover:scale-105 hover:from-emerald-700 hover:to-teal-800 active:scale-95 md:bottom-24 md:right-6 md:px-5 md:py-3"
+        className="fixed bottom-5 left-4 z-40 flex items-center gap-2 rounded-full bg-gradient-to-r from-emerald-600 to-teal-700 px-3.5 py-2.5 text-white shadow-xl transition-all duration-300 hover:scale-105 hover:from-emerald-700 hover:to-teal-800 active:scale-95 sm:bottom-6 sm:left-6 sm:px-5 sm:py-3"
       >
-        <Headphones className="h-5 w-5 animate-pulse text-emerald-200" />
-        <span className="font-semibold text-xs md:text-sm">Get Free Expert Help</span>
+        <Headphones className="h-4 w-4 sm:h-5 sm:w-5 animate-pulse text-emerald-200 shrink-0" />
+        <span className="font-semibold text-xs sm:text-sm">Get Free Expert Help</span>
       </button>
 
       {/* Modal Backdrop */}
