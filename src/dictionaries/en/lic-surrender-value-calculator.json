@@ -71,7 +71,54 @@
         },
         {
           "type": "paragraph",
-          "text": "This is why you must calculate your exact numbers before walking into an LIC branch. Use the calculator above to see your personalized estimates."
+          "text": "This is why you must calculate your exact numbers before walking into an LIC branch. If you want to know what you will earn by staying until the end, check our <a href='/{lang}/lic-maturity-calculator' class='text-primary font-bold hover:underline'>LIC Maturity Calculator</a>."
+        }
+      ]
+    },
+    {
+      "id": "surrender-vs-loan",
+      "icon": "GitCompareArrows",
+      "title": "Decision Matrix: Surrender Value vs. LIC Policy Loan",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Need urgent cash? Don't destroy your hard-earned investment by surrendering! LIC allows policyholders to borrow up to 90% of their policy's surrender value at an affordable ~9% simple annual interest. Here is how surrendering compares to taking a policy loan:"
+        },
+        {
+          "type": "table",
+          "headers": ["Decision Parameter", "Option A: Surrender Policy", "Option B: Take LIC Policy Loan"],
+          "rows": [
+            [
+              "<strong>Capital Loss</strong>",
+              "Severe loss! You lose 30% to 70% of all paid premiums.",
+              "<strong>0% Capital Loss!</strong> Your full principal remains safe."
+            ],
+            [
+              "<strong>Life Risk Cover</strong>",
+              "Terminates immediately. No financial protection for family.",
+              "<strong>100% Active Cover!</strong> Nominee receives full claim."
+            ],
+            [
+              "<strong>Max Money Access</strong>",
+              "Receive 100% of current Surrender Value.",
+              "Borrow up to <strong>90% of Surrender Value</strong> instantly."
+            ],
+            [
+              "<strong>Interest Charged</strong>",
+              "0% (but heavy exit penalty).",
+              "~9% per year (payable half-yearly)."
+            ],
+            [
+              "<strong>Repayment Terms</strong>",
+              "Permanent termination. Irreversible.",
+              "Flexible! Pay interest only, or let interest deduct at maturity."
+            ]
+          ],
+          "footer": "Verdict: Taking a policy loan saves your bonuses, keeps your family protected, and prevents permanent loss of capital."
+        },
+        {
+          "type": "paragraph",
+          "text": "Calculate how much loan you can get today using our <a href='/{lang}/lic-loan-calculator' class='text-primary font-bold hover:underline'>LIC Loan Calculator</a>."
         }
       ]
     },
@@ -137,7 +184,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Unless you are in a severe financial emergency, converting to a <a href='/{lang}/lic-paid-up-value' class='text-primary hover:underline'>Paid-Up policy</a> is almost always the smarter financial move."
+          "text": "Unless you are in a severe financial emergency, converting to a <a href='/{lang}/lic-paid-up-value' class='text-primary font-bold hover:underline'>Paid-Up policy</a> is almost always the smarter financial move."
         }
       ]
     },
@@ -164,37 +211,6 @@
       ]
     },
     {
-      "id": "alternatives",
-      "icon": "CheckCircle",
-      "title": "Smarter Alternatives to Surrendering",
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "If you need liquidity, consider taking a loan against your LIC policy. You can typically borrow up to 90% of your surrender value at a relatively low interest rate (around 9%), and you maintain your life cover. Use our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> to see if a policy loan makes sense for you compared to a personal loan."
-        }
-      ]
-    },
-    {
-      "id": "how-to-surrender",
-      "icon": "BookOpen",
-      "title": "How to Surrender Your LIC Policy Offline",
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "If you've decided to proceed, follow these steps to claim your surrender value. (Note: LIC currently requires an offline visit for the final surrender processing)."
-        },
-        {
-          "type": "list",
-          "items": [
-            "<strong>Confirm Eligibility:</strong> Ensure you have paid premiums for at least 2 or 3 full years.",
-            "<strong>Gather Your Documents:</strong> Collect the Original Policy Bond, a filled Surrender Form No. 5074, a copy of your PAN and Aadhaar, and a cancelled cheque.",
-            "<strong>Visit Your Servicing Branch:</strong> Go to the specific LIC branch that issued your policy.",
-            "<strong>Verification & Payout:</strong> Once approved, the amount is credited to your bank account via NEFT within 7-10 working days."
-          ]
-        }
-      ]
-    },
-    {
       "id": "related-tools",
       "icon": "LinkIcon",
       "title": "Related Planning Tools",
@@ -205,10 +221,10 @@
         },
         {
           "type": "card_link",
-          "title": "LIC Premium Calculator",
-          "description": "Calculate annual premiums, 0% GST (2026 rules), and modal rebates across all active LIC plans.",
-          "href": "/lic-premium-calculator",
-          "icon": "Calculator"
+          "title": "LIC Loan Calculator",
+          "description": "Calculate how much loan you can get against your LIC policy without surrendering or losing your life cover.",
+          "href": "/lic-loan-calculator",
+          "icon": "ShieldCheck"
         },
         {
           "type": "card_link",
@@ -219,17 +235,17 @@
         },
         {
           "type": "card_link",
-          "title": "LIC Term Insurance",
-          "description": "If you are surrendering an endowment plan to buy pure protection, check the latest premiums for LIC Tech-Term and Jeevan Amar.",
-          "href": "/lic-term-insurance",
-          "icon": "ShieldCheck"
+          "title": "LIC Paid-Up Value Calculator",
+          "description": "Calculate your reduced paid-up sum assured, frozen bonuses, and maturity payout without surrendering your policy.",
+          "href": "/lic-paid-up-value",
+          "icon": "GitCompareArrows"
         },
         {
           "type": "card_link",
-          "title": "Mutual Fund Screener",
-          "description": "Planning to reinvest your surrender payout? Use our screener to find high-performing equity mutual funds for better long-term returns.",
-          "href": "/mutual-fund-screener",
-          "icon": "TrendingUp"
+          "title": "LIC Premium Calculator",
+          "description": "Calculate annual premiums, 0% GST (2026 rules), and modal rebates across all active LIC plans.",
+          "href": "/lic-premium-calculator",
+          "icon": "Calculator"
         }
       ]
     },
@@ -243,10 +259,10 @@
           "items": [
             {"q": "How much money will I lose if I surrender my LIC policy?", "a": "The loss is significant, especially in the early years. If you surrender a policy in the 3rd year, you will typically lose around 70% of the total premiums you have paid. The penalty decreases the longer you hold the policy, but it is rarely a profitable move."},
             {"q": "What is the difference between Guaranteed and Special Surrender Value?", "a": "Guaranteed Surrender Value (GSV) is the legally mandated minimum payout based on a strict formula of premiums paid. Special Surrender Value (SSV) is a higher, non-guaranteed amount that includes a portion of your accrued bonuses. LIC pays whichever is higher, which is almost always the SSV."},
+            {"q": "Is taking a policy loan better than surrendering?", "a": "Yes! Taking an LIC Policy Loan allows you to borrow up to 90% of your surrender value at ~9% interest while keeping 100% of your life insurance cover active and preserving all your accumulated bonuses."},
             {"q": "Is the surrender value of an LIC policy taxable?", "a": "If you surrender your LIC policy after paying premiums for at least 5 years, the surrender value is completely tax-free under Section 10(10D). If you surrender before completing 5 years, the entire payout is added to your taxable income and taxed according to your slab rate."},
             {"q": "Can I surrender my LIC policy online?", "a": "No, you cannot completely surrender an LIC policy online. While you can download the surrender forms from the LIC portal, you must physically visit your servicing LIC branch and submit the original policy bond along with your KYC documents to process the surrender."},
-            {"q": "Should I surrender my LIC policy or make it paid-up?", "a": "Making the policy 'Paid-Up' is almost always the better financial decision. When you surrender, you take a heavy loss on your premiums and lose your life cover. By making it Paid-Up, you stop paying future premiums but retain a reduced life cover and get your proportionate money back at maturity without the early exit penalties."},
-            {"q": "How long does it take to get the surrender amount in my bank account?", "a": "Once you submit all the correct documents (original bond, Form 5074, KYC, cancelled cheque) at your servicing branch, LIC typically processes the request and transfers the funds to your bank account via NEFT within 7 to 10 working days."}
+            {"q": "Should I surrender my LIC policy or make it paid-up?", "a": "Making the policy 'Paid-Up' is almost always the better financial decision. When you surrender, you take a heavy loss on your premiums and lose your life cover. By making it Paid-Up, you stop paying future premiums but retain a reduced life cover and get your proportionate money back at maturity without the early exit penalties."}
           ]
         }
       ]
