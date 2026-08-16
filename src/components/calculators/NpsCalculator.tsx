@@ -1,7 +1,7 @@
 
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useDeferredValue } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
@@ -126,36 +126,39 @@ export function NpsCalculator({ dictionary }: NpsCalculatorProps) {
     setLastUpdated(`${monthNames[currentDate.getMonth()]} ${currentDate.getFullYear()}`);
   }, []);
 
-  // Watch form values for auto-calculation
   const formValues = form.watch();
+  const deferredFormValues = useDeferredValue(formValues);
 
   useEffect(() => {
     // Basic validation check before calculation
-    if (formValues.contribution >= 500 && formValues.contribution <= 200000 && 
-        formValues.currentAge >= 18 && formValues.currentAge <= 59 && 
-        formValues.retirementAge >= 60 && formValues.retirementAge <= 75 && 
-        formValues.expectedReturns > 0 && formValues.annuityPercentage >= 40 && 
-        formValues.annuityPercentage <= 100 && formValues.annuityRate > 0) {
+    if (deferredFormValues.contribution >= 500 && deferredFormValues.contribution <= 200000 && 
+        deferredFormValues.currentAge >= 18 && deferredFormValues.currentAge <= 59 && 
+        deferredFormValues.retirementAge >= 60 && deferredFormValues.retirementAge <= 75 && 
+        deferredFormValues.expectedReturns > 0 && deferredFormValues.annuityPercentage >= 40 && 
+        deferredFormValues.annuityPercentage <= 100 && deferredFormValues.annuityRate > 0) {
       
       calculate({
-        contribution: formValues.contribution,
-        contributionMode: formValues.contributionMode,
-        currentAge: formValues.currentAge,
-        retirementAge: formValues.retirementAge,
-        expectedReturns: formValues.expectedReturns,
-        annuityPercentage: formValues.annuityPercentage,
-        annuityRate: formValues.annuityRate,
+        contribution: deferredFormValues.contribution,
+        contributionMode: deferredFormValues.contributionMode,
+        currentAge: deferredFormValues.currentAge,
+        retirementAge: deferredFormValues.retirementAge,
+        expectedReturns: deferredFormValues.expectedReturns,
+        annuityPercentage: deferredFormValues.annuityPercentage,
+        annuityRate: deferredFormValues.annuityRate,
       });
       
       if (typeof window !== 'undefined') {
-        const newQuery = `contribution=${formValues.contribution}&mode=${formValues.contributionMode}&age=${formValues.currentAge}&retire=${formValues.retirementAge}&returns=${formValues.expectedReturns}&annuity=${formValues.annuityPercentage}&annuityRate=${formValues.annuityRate}`;
-        const currentQuery = window.location.search.replace(/^\?/, '');
-        if (currentQuery !== newQuery) {
-          window.history.replaceState(null, '', `${pathname}?${newQuery}`);
-        }
+        const timer = setTimeout(() => {
+          const newQuery = `contribution=${deferredFormValues.contribution}&mode=${deferredFormValues.contributionMode}&age=${deferredFormValues.currentAge}&retire=${deferredFormValues.retirementAge}&returns=${deferredFormValues.expectedReturns}&annuity=${deferredFormValues.annuityPercentage}&annuityRate=${deferredFormValues.annuityRate}`;
+          const currentQuery = window.location.search.replace(/^\?/, '');
+          if (currentQuery !== newQuery) {
+            window.history.replaceState(null, '', `${pathname}?${newQuery}`);
+          }
+        }, 300);
+        return () => clearTimeout(timer);
       }
     }
-  }, [formValues, calculate, pathname, router, searchParams]);
+  }, [deferredFormValues, calculate, pathname]);
 
   function handleSubmit(values: NpsFormValues) {
     // Prevent default form submission; calculations are handled automatically

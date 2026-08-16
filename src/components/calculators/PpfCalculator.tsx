@@ -1,7 +1,7 @@
 
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useDeferredValue } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
@@ -116,18 +116,21 @@ export function PpfCalculator({ dictionary }: PpfCalculatorProps) {
     setLastUpdated(`${monthNames[currentDate.getMonth()]} ${currentDate.getFullYear()}`);
   }, []);
 
-  // Watch form values for auto-calculation
   const formValues = form.watch();
+  const deferredFormValues = useDeferredValue(formValues);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const newQuery = `investment=${formValues.annualInvestment}&tenure=${formValues.tenure}&rate=${formValues.interestRate}`;
-      const currentQuery = window.location.search.replace(/^\?/, '');
-      if (currentQuery !== newQuery) {
-        window.history.replaceState(null, '', `${pathname}?${newQuery}`);
-      }
+      const timer = setTimeout(() => {
+        const newQuery = `investment=${deferredFormValues.annualInvestment}&tenure=${deferredFormValues.tenure}&rate=${deferredFormValues.interestRate}`;
+        const currentQuery = window.location.search.replace(/^\?/, '');
+        if (currentQuery !== newQuery) {
+          window.history.replaceState(null, '', `${pathname}?${newQuery}`);
+        }
+      }, 300);
+      return () => clearTimeout(timer);
     }
-  }, [formValues.annualInvestment, formValues.tenure, formValues.interestRate, pathname]);
+  }, [deferredFormValues.annualInvestment, deferredFormValues.tenure, deferredFormValues.interestRate, pathname]);
 
   function handleSubmit(values: PpfFormValues) {
     // The auto-calculation handles this, but we keep this for form submission prevention

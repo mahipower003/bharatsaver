@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useDeferredValue } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
@@ -150,30 +150,34 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const yearlyInvestment = formValues.investmentMode === 'monthly' ? formValues.investmentAmount * 12 : formValues.investmentAmount;
+  const deferredFormValues = useDeferredValue(formValues);
+  const yearlyInvestment = deferredFormValues.investmentMode === 'monthly' ? deferredFormValues.investmentAmount * 12 : deferredFormValues.investmentAmount;
 
   const result = useMemo(() => {
     if (
-      formValues.investmentAmount >= 250 &&
+      deferredFormValues.investmentAmount >= 250 &&
       yearlyInvestment <= 150000 &&
-      formValues.girlAge >= 0 &&
-      formValues.girlAge <= 10 &&
-      formValues.interestRate > 0
+      deferredFormValues.girlAge >= 0 &&
+      deferredFormValues.girlAge <= 10 &&
+      deferredFormValues.interestRate > 0
     ) {
-      return calculateSsyLocal(yearlyInvestment, formValues.girlAge, formValues.interestRate);
+      return calculateSsyLocal(yearlyInvestment, deferredFormValues.girlAge, deferredFormValues.interestRate);
     }
     return null;
-  }, [formValues.investmentAmount, formValues.girlAge, formValues.interestRate, yearlyInvestment]);
+  }, [deferredFormValues.investmentAmount, deferredFormValues.girlAge, deferredFormValues.interestRate, yearlyInvestment]);
 
   useEffect(() => {
     if (typeof window !== 'undefined' && result) {
-      const newQuery = `investment=${formValues.investmentAmount}&age=${formValues.girlAge}&rate=${formValues.interestRate}&mode=${formValues.investmentMode}`;
-      const currentQuery = window.location.search.replace(/^\?/, '');
-      if (currentQuery !== newQuery) {
-        window.history.replaceState(null, '', `${pathname}?${newQuery}`);
-      }
+      const timer = setTimeout(() => {
+        const newQuery = `investment=${deferredFormValues.investmentAmount}&age=${deferredFormValues.girlAge}&rate=${deferredFormValues.interestRate}&mode=${deferredFormValues.investmentMode}`;
+        const currentQuery = window.location.search.replace(/^\?/, '');
+        if (currentQuery !== newQuery) {
+          window.history.replaceState(null, '', `${pathname}?${newQuery}`);
+        }
+      }, 300);
+      return () => clearTimeout(timer);
     }
-  }, [formValues.investmentAmount, formValues.girlAge, formValues.interestRate, formValues.investmentMode, result, pathname]);
+  }, [deferredFormValues.investmentAmount, deferredFormValues.girlAge, deferredFormValues.interestRate, deferredFormValues.investmentMode, result, pathname]);
 
   const handlePrint = () => {
     window.print();
