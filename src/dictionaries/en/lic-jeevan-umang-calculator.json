@@ -1,11 +1,11 @@
 {
-  "meta_title": "LIC Jeevan Umang (Plan 745/945) Premium & Survival Income Calculator (2026)",
-  "meta_description": "Use our free LIC Jeevan Umang (Plan 745/945) calculator to estimate yearly premiums, guaranteed 8% annual survival income, tax savings, and age-100 maturity returns. Updated for 2026.",
-  "h1": "LIC Jeevan Umang Calculator (Plan 745 / 945) — Premium & 8% Survival Income",
-  "description": "<p>Our free online <strong>LIC Jeevan Umang calculator (Plan 745 / 945)</strong> gives you instant estimates for limited-pay premiums, guaranteed 8% annual survival pension, and age-100 tax-free maturity returns. Plan 745 (UIN: 512N312V03) is LIC's flagship participating whole-life plan.</p>",
+  "meta_title": "LIC Jeevan Umang Plan 745 Calculator – 8% Survival Income & Premium Chart",
+  "meta_description": "Calculate premiums and guaranteed 8% annual survival income for LIC Jeevan Umang (Plan No. 745 / 945). View year-by-year benefit chart, GST, riders, and age-100 maturity.",
+  "h1": "LIC Jeevan Umang Plan 745 Calculator (Premium & 8% Survival Income)",
+  "description": "<p>Our online <strong>LIC Jeevan Umang calculator (Plan No. 745 / 945)</strong> provides instant calculations for limited-pay premiums, guaranteed 8% annual survival pension, and age-100 tax-free maturity wealth. Plan 745 (UIN: 512N312V03) is LIC's flagship participating whole-life savings plan.</p>",
   "intro": {
-    "quick_answer": "Use this LIC Jeevan Umang calculator page to get instant premium & guaranteed 8% survival income estimates for Plan 745 (formerly Plan 945 & 845).",
-    "cta_button": "Calculate Premium & Survival Income",
+    "quick_answer": "Use this LIC Jeevan Umang calculator to estimate limited-pay premiums, 1st/2nd year GST loads, guaranteed 8% annual survival pension, and age-100 maturity wealth for Plan 745 (formerly Plan 945 & 845).",
+    "cta_button": "Calculate Premium & 8% Survival Income",
     "citation": "Plan details based on LIC of India, UIN: 512N312V03. <a href='https://licindia.in' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>Official LIC Portal</a>"
   },
   "calculator_ui": {
@@ -18,32 +18,33 @@
     "calculate_button": "Calculate Premium & 8% Survival Income",
     "calculating": "Calculating Jeevan Umang Returns...",
     "results": {
-      "note": "Disclaimer: All values are estimates based on LIC Plan 745 tabular rates. GST @4.5% (1st year) & 2.25% (2nd year onwards) included. Bonus rates are illustrative."
+      "note": "Disclaimer: All values are estimates based on official LIC Plan 745 tabular rates and past declared bonus rates. GST @4.5% (1st year) & 2.25% (2nd year onwards) included."
     }
   },
   "sections": [
     {
       "id": "at-a-glance",
       "icon": "ShieldCheck",
-      "title": "LIC Jeevan Umang Plan 745 / 945 at a Glance",
+      "title": "LIC Jeevan Umang Plan 745 Overview & IRDAI 2024 Updates",
       "content": [
         {
           "type": "paragraph",
-          "text": "LIC Jeevan Umang (Table No. 745, UIN: 512N312V03) is LIC's active participating whole-life plan. Plan 745 superseded legacy Plan 945 (withdrawn Oct 2024) and Plan 845. For official brochure details, visit the <a href='https://licindia.in' target='_blank' rel='noopener noreferrer' class='text-primary underline font-medium'>LIC of India Official Portal</a>."
+          "text": "LIC Jeevan Umang (Table No. 745, UIN: 512N312V03) is LIC's current active participating whole-life plan. Plan 745 superseded legacy Plan 945 (withdrawn October 2024) and Plan 845. Under the latest IRDAI 2024 surrender value guidelines, policies now acquire guaranteed surrender and loan eligibility after just <strong>1 full year of premium payments</strong> (reduced from 2 years)."
         },
         {
           "type": "table",
-          "headers": ["Plan Feature / Parameter", "Plan 745 Details"],
+          "headers": ["Plan Parameter / Regulatory Feature", "Plan 745 Official Specifications"],
           "rows": [
             ["Plan Number & UIN", "Plan 745 (UIN: 512N312V03) — Active"],
-            ["Entry Age", "90 Days to 55 Years (depending on PPT selected)"],
-            ["Policy Term", "100 Years minus Entry Age (Coverage up to Age 100)"],
+            ["Entry Age Eligibility", "90 Days to 55 Years (depending on PPT chosen)"],
+            ["Policy Term", "100 Years minus Entry Age (Lifelong Coverage to Age 100)"],
             ["Premium Paying Terms (PPT)", "15, 20, 25, or 30 Years"],
-            ["Minimum Basic Sum Assured", "₹2,00,000 (No upper limit, in multiples of ₹25,000)"],
-            ["Guaranteed Survival Benefit", "8% of Basic Sum Assured per year (paid annually post-PPT to age 100)"],
-            ["Maturity Benefit at Age 100", "Basic Sum Assured + Vested Simple Reversionary Bonus + FAB"],
-            ["Grace & Free Look Period", "Grace: 30 Days (15 Days Monthly); Free Look: 15 Days"],
-            ["Tax Exemption", "Sec 80C premium deduction & Sec 10(10D) tax-free survival/maturity payouts"]
+            ["Minimum Basic Sum Assured", "₹2,00,000 (Increments of ₹25k up to 4.5L, ₹50k up to 9L, ₹1L above 9L)"],
+            ["Guaranteed Survival Benefit", "<strong>8% of Basic Sum Assured per year</strong> (Paid annually post-PPT to age 99)"],
+            ["Maturity Benefit at Age 100", "Basic Sum Assured + Vested Simple Reversionary Bonus + Final Additional Bonus (FAB)"],
+            ["GST Tax Loading", "4.5% in 1st Year | 2.25% in 2nd Year onwards"],
+            ["Loan & Surrender Eligibility", "Available after <strong>1 full policy year</strong> (IRDAI 2024 rules)"],
+            ["Tax Exemptions", "Sec 80C premium deduction & Sec 10(10D) tax-free survival/maturity payouts"]
           ]
         }
       ]
@@ -51,23 +52,23 @@
     {
       "id": "quick-snapshots",
       "icon": "BarChart",
-      "title": "Quick Snapshots: Sample Jeevan Umang 745 Premiums & Income",
+      "title": "Sample Jeevan Umang 745 Premiums & Income Snapshots",
       "content": [
         {
           "type": "paragraph",
-          "text": "Sample yearly premiums and guaranteed annual survival payouts across common entry ages for a **₹10 Lakh Basic Sum Assured** (including 1st year GST @ 4.5%):"
+          "text": "The table below illustrates sample 1st year premiums (with 4.5% GST) and guaranteed annual survival pension payouts for a <strong>₹10 Lakh Basic Sum Assured</strong> across common entry ages:"
         },
         {
           "type": "table",
-          "headers": ["Entry Age", "PPT Selected", "1st Year Premium (Approx.)", "Guaranteed Annual Income (Post-PPT)"],
+          "headers": ["Entry Age", "PPT Selected", "1st Year Premium (4.5% GST)", "2nd Yr+ Premium (2.25% GST)", "Guaranteed Annual Income (Post-PPT)"],
           "rows": [
-            ["Age 20", "20 Years (PPT 20)", "₹36,800 / yr", "₹80,000 / year (Age 40 to 100)"],
-            ["Age 30", "15 Years (PPT 15)", "₹54,800 / yr", "₹80,000 / year (Age 45 to 100)"],
-            ["Age 30", "20 Years (PPT 20)", "₹39,900 / yr", "₹80,000 / year (Age 50 to 100)"],
-            ["Age 40", "15 Years (PPT 15)", "₹61,500 / yr", "₹80,000 / year (Age 55 to 100)"],
-            ["Age 50", "15 Years (PPT 15)", "₹74,200 / yr", "₹80,000 / year (Age 65 to 100)"]
+            ["Age 20", "20 Years (PPT 20)", "₹36,800 / yr", "₹36,010 / yr", "₹80,000 / year (Age 40 to 100)"],
+            ["Age 30", "15 Years (PPT 15)", "₹54,800 / yr", "₹53,620 / yr", "₹80,000 / year (Age 45 to 100)"],
+            ["Age 30", "20 Years (PPT 20)", "₹39,900 / yr", "₹39,040 / yr", "₹80,000 / year (Age 50 to 100)"],
+            ["Age 40", "15 Years (PPT 15)", "₹61,500 / yr", "₹60,180 / yr", "₹80,000 / year (Age 55 to 100)"],
+            ["Age 50", "15 Years (PPT 15)", "₹74,200 / yr", "₹72,600 / yr", "₹80,000 / year (Age 65 to 100)"]
           ],
-          "footer": "Premiums include HSA rebates and 1st year GST @ 4.5%. Mode discounts: 2% Yearly, 1% Half-Yearly."
+          "footer": "Premiums include High Sum Assured rebates and modal discounts: 2% for Yearly mode, 1% for Half-Yearly mode."
         }
       ]
     },
@@ -82,81 +83,157 @@
     {
       "id": "how-it-works",
       "icon": "Calculator",
-      "title": "How the LIC Jeevan Umang Calculator Works",
+      "title": "How the LIC Jeevan Umang Premium & 8% Survival Income is Calculated",
       "content": [
         {
-          "type": "structured_content",
-          "heading": "1. Base Premium & Modal Loading",
-          "body": "The engine looks up LIC's official Plan 745 tabular rates for your age, PPT, and sum assured. High Sum Assured (HSA) rebates (up to ₹2.00 per ₹1,000 SA for ₹25L+) are subtracted. Modal loadings and 2% yearly rebates are applied."
+          "type": "paragraph",
+          "text": "Our calculator automates the complex actuarial calculations of Plan 745. Here is the exact mathematical step-by-step breakdown of how premiums and survival benefits are determined:"
         },
         {
           "type": "structured_content",
-          "heading": "2. GST Loads (4.5% Year 1 vs 2.25% Year 2+)",
-          "body": "Goods & Services Tax (GST) is calculated separately: 4.5% for the 1st year premium, dropping to 2.25% for all subsequent years during the PPT."
+          "heading": "1. Base Tabular Rate & High Sum Assured (HSA) Rebate",
+          "body": "LIC assigns a tabular base premium rate per ₹1,000 of Sum Assured based on your entry age and PPT. For policies with higher sum assured, tabular discounts (HSA rebates) are subtracted: ₹1.25 per ₹1,000 SA for ₹5L+, ₹1.75 per ₹1,000 SA for ₹10L+, and ₹2.00 per ₹1,000 SA for ₹25L+."
         },
         {
           "type": "structured_content",
-          "heading": "3. Guaranteed 8% Survival Income Calculation",
-          "body": "Starting immediately after your PPT finishes, LIC pays exactly <strong>8% of your Basic Sum Assured annually</strong> until age 100. For a ₹10 Lakh policy, you receive ₹80,000 every year, 100% tax-free under Section 10(10D)."
+          "heading": "2. Modal Rebates & GST Loading (4.5% vs 2.25%)",
+          "body": "A 2% discount is applied for Annual payment mode (1% for Half-Yearly). First-year premiums carry a 4.5% GST load. Renewal premiums for year 2 through PPT carry a reduced 2.25% GST load."
+        },
+        {
+          "type": "structured_content",
+          "heading": "3. Guaranteed 8% Survival Income Formula",
+          "body": "Starting 1 year post-PPT (e.g., at Age 50 for an entry age of 30 with a 20-year PPT), LIC pays an annual survival income calculated as: <strong>Survival Benefit = Basic Sum Assured × 8%</strong>. For a ₹10 Lakh policy, this equals <strong>₹80,000 per year, 100% tax-free under Section 10(10D)</strong>, continuing every year until age 99."
+        },
+        {
+          "type": "structured_content",
+          "heading": "4. Age-100 Maturity Wealth Formula",
+          "body": "If the policyholder reaches age 100, the policy matures and pays: <strong>Maturity Payout = Basic Sum Assured + Accrued Simple Reversionary Bonuses + Final Additional Bonus (FAB)</strong>."
         }
       ]
     },
     {
       "id": "worked-examples",
       "icon": "Users",
-      "title": "Case Studies: Jeevan Umang for Different Life Goals",
+      "title": "Case Studies: 3 Real-Life Financial Scenarios",
       "content": [
         {
           "type": "structured_content",
           "heading": "Case Study 1: The Young Professional (Age 30, ₹10L Cover, PPT 20)",
-          "body": "<strong>Goal:</strong> Build a tax-free pension alternative. <br><strong>Inputs:</strong> Age 30, BSA ₹10 Lakh, PPT 20 Years. <br><strong>Yearly Premium:</strong> ~₹39,900/year for 20 years (Total Outflow: ~₹7.8 Lakh). <br><strong>Result:</strong> From Age 50 to 100 (50 years), they receive a guaranteed tax-free income of <strong>₹80,000 every year</strong> (Total Survival Cashflow: ₹40 Lakh). At age 100, the nominee receives an estimated maturity lump sum of over <strong>₹25 Lakh</strong>."
+          "body": "<strong>Goal:</strong> Build a tax-free retirement pension. <br><strong>Inputs:</strong> Age 30, BSA ₹10 Lakh, PPT 20 Years. <br><strong>Outflow:</strong> ~₹39,900/year for 20 years (Total Outflow: ~₹7.8 Lakh). <br><strong>Result:</strong> From Age 50 to 100 (50 years), they receive a guaranteed tax-free income of <strong>₹80,000 every year</strong> (Total Survival Cashflow: ₹40 Lakh). At age 100, the nominee receives an estimated maturity lump sum of over <strong>₹25 Lakh</strong>."
         },
         {
           "type": "structured_content",
           "heading": "Case Study 2: The Pre-Retiree (Age 45, ₹25L Cover, PPT 15)",
-          "body": "<strong>Goal:</strong> Create a supplementary pension floor. <br><strong>Inputs:</strong> Age 45, BSA ₹25 Lakh, PPT 15 Years. <br><strong>Yearly Premium:</strong> ~₹1,65,000/year for 15 years. <br><strong>Result:</strong> From Age 60 to 100, they receive a guaranteed annual pension of <strong>₹2,00,000/year</strong>."
+          "body": "<strong>Goal:</strong> Create a supplementary pension floor. <br><strong>Inputs:</strong> Age 45, BSA ₹25 Lakh, PPT 15 Years. <br><strong>Outflow:</strong> ~₹1,65,000/year for 15 years. <br><strong>Result:</strong> From Age 60 to 100, they receive a guaranteed annual pension of <strong>₹2,00,000/year</strong>."
         },
         {
           "type": "structured_content",
           "heading": "Case Study 3: Child's Future (Child Age 5, Parent Age 32, PPT 20)",
-          "body": "<strong>Goal:</strong> Create a lifelong financial gift for a child. <br><strong>Inputs:</strong> Child Age 5, BSA ₹10 Lakh, PPT 20 Years with PWB Rider. <br><strong>Result:</strong> From the child's 25th birthday, they start receiving <strong>₹80,000 annually for life</strong> up to age 100."
+          "body": "<strong>Goal:</strong> Gift lifelong tax-free passive income to a child. <br><strong>Inputs:</strong> Child Age 5, BSA ₹10 Lakh, PPT 20 Years with PWB Rider. <br><strong>Result:</strong> If the parent passes away during PPT, all future premiums are waived. From the child's 25th birthday, they start receiving <strong>₹80,000 annually for life</strong> up to age 100."
         }
       ]
     },
     {
-      "id": "death-surrender-loan",
-      "icon": "Landmark",
-      "title": "Death Benefit, Surrender Value & Policy Loan Rules",
+      "id": "riders",
+      "icon": "ShieldCheck",
+      "title": "Optional Policy Riders in Plan 745",
       "content": [
         {
           "type": "paragraph",
-          "text": "Jeevan Umang provides comprehensive life protection alongside policy loan liquidity:"
+          "text": "Enhance your policy coverage during the PPT by adding optional riders:"
         },
         {
           "type": "list",
           "items": [
-            "<strong>Death Benefit:</strong> If the policyholder dies before age 100, the nominee receives the <strong>Sum Assured on Death</strong> (higher of 7x annual premium or basic SA) plus all vested simple reversionary bonuses and FAB (at least 105% of total premiums paid).",
-            "<strong>Policy Loan Facility:</strong> Available after 2 full years of premium payments. Policyholders can take a loan up to <strong>90% of the Special Surrender Value (SSV)</strong> for active policies (80% for paid-up policies).",
-            "<strong>Surrender Value:</strong> Policy acquires guaranteed surrender value (GSV) after 2 years."
+            "<strong>Accidental Death & Disability Benefit (AD&DB) Rider:</strong> Pays an additional sum equal to the Accident Benefit Sum Assured in case of accidental death or permanent disability.",
+            "<strong>Term Assurance Rider:</strong> Provides additional life cover equal to the Term Rider Sum Assured in case of death during the PPT.",
+            "<strong>Premium Waiver Benefit (PWB) Rider:</strong> Available for policies on minor lives (Age < 18). If the proposer (parent) dies during the PPT, all remaining future premiums are completely waived while policy benefits continue uninterrupted."
           ]
+        }
+      ]
+    },
+    {
+      "id": "surrender-loan",
+      "icon": "Landmark",
+      "title": "Surrender Value, Paid-Up Rules & Policy Loans (IRDAI 2024 Updates)",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Under the 2024 IRDAI guidelines, LIC Jeevan Umang Plan 745 offers enhanced liquidity and flexibility:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>1-Year Surrender Rule:</strong> Policy acquires Guaranteed Surrender Value (GSV) after completing just 1 full policy year.",
+            "<strong>Policy Loan Facility:</strong> Borrow up to 75% of surrender value for active policies (65% for paid-up policies) at ~9% simple annual interest.",
+            "<strong>Paid-Up Conversion:</strong> If you stop paying premiums after 1 year, the policy reduces to a 'Paid-Up' status with proportionate reduced sum assured and reduced survival benefits."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "To calculate exact surrender values or loan amounts, use our <a href='/{lang}/lic-surrender-value-calculator' class='text-primary font-bold hover:underline'>LIC Surrender Value Calculator</a> and <a href='/{lang}/lic-paid-up-value' class='text-primary font-bold hover:underline'>LIC Paid-Up Value Calculator</a>."
         }
       ]
     },
     {
       "id": "comparison",
       "icon": "GitCompareArrows",
-      "title": "Jeevan Umang (745) vs. Jeevan Utsav (871) vs. Jeevan Labh (736)",
+      "title": "Decision Matrix: Jeevan Umang (745) vs. Jeevan Utsav (771) vs. Jeevan Labh (936)",
       "content": [
         {
           "type": "table",
-          "headers": ["Feature", "Jeevan Umang (745)", "Jeevan Utsav (871)", "Jeevan Labh (736)"],
+          "headers": ["Decision Parameter", "Jeevan Umang (Plan 745)", "Jeevan Utsav (Plan 771)", "Jeevan Labh (Plan 936)"],
           "rows": [
             ["Plan Type", "Whole Life Participating", "Whole Life Non-Participating", "Limited Pay Endowment"],
-            ["Income Payout", "8% of Sum Assured annually", "10% of Sum Assured annually", "None (Lump sum at maturity)"],
-            ["Maturity Age", "Age 100", "Age 100", "16, 21, or 25 Years"],
-            ["PPT Options", "15, 20, 25, or 30 Years", "5 to 16 Years", "10, 15, or 16 Years"]
+            ["Survival Income Yield", "<strong>8% of Sum Assured annually</strong>", "<strong>10% of Sum Assured annually</strong>", "None (Lump sum at maturity)"],
+            ["Income Payout Start", "Immediately post-PPT (Age + PPT)", "Post-PPT + Deferment Period", "Not Applicable"],
+            ["Maximum Maturity Horizon", "Age 100", "Age 100", "16, 21, or 25 Years"],
+            ["PPT Options", "15, 20, 25, or 30 Years", "5 to 16 Years", "10, 15, or 16 Years"],
+            ["Best For", "Lifelong 8% tax-free income + legacy", "Guaranteed 10% income with short PPT", "Maximum lump-sum wealth creation"]
           ],
-          "footer": "Compare using our <a href='/{lang}/jeevan-utsav-calculator' class='text-primary hover:underline'>Jeevan Utsav Calculator</a> and <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline'>Jeevan Labh Calculator</a>."
+          "footer": "Compare using our <a href='/{lang}/jeevan-utsav-calculator' class='text-primary font-bold hover:underline'>LIC Jeevan Utsav Calculator</a> and <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary font-bold hover:underline'>LIC Jeevan Labh Calculator</a>."
+        }
+      ]
+    },
+    {
+      "id": "related-tools",
+      "icon": "Calculator",
+      "title": "Related Financial & Policy Planning Tools",
+      "content": [
+        {
+          "type": "card_link",
+          "title": "LIC Surrender Value Calculator",
+          "description": "Calculate exact Guaranteed & Special surrender values and policy loan limits under 2024 IRDAI rules.",
+          "href": "/lic-surrender-value-calculator",
+          "icon": "Landmark"
+        },
+        {
+          "type": "card_link",
+          "title": "LIC Maturity Calculator",
+          "description": "Calculate exact maturity returns, bonus rates (Plan 914, 915, 936), and final payouts across active LIC plans.",
+          "href": "/lic-maturity-calculator",
+          "icon": "StepForward"
+        },
+        {
+          "type": "card_link",
+          "title": "LIC Paid-Up Value Calculator",
+          "description": "Check reduced paid-up sum assured, frozen bonuses, and maturity payout if you stop paying premiums.",
+          "href": "/lic-paid-up-value",
+          "icon": "GitCompareArrows"
+        },
+        {
+          "type": "card_link",
+          "title": "LIC Premium Calculator",
+          "description": "Calculate annual premiums, 0% GST (2026 rules), and modal rebates across all active LIC plans.",
+          "href": "/lic-premium-calculator",
+          "icon": "Calculator"
+        },
+        {
+          "type": "card_link",
+          "title": "LIC Jeevan Utsav Calculator",
+          "description": "Calculate 10% guaranteed lifetime income and flexi-income compounding growth for Plan 771.",
+          "href": "/jeevan-utsav-calculator",
+          "icon": "TrendingUp"
         }
       ]
     },
@@ -170,11 +247,11 @@
           "items": [
             {
               "q": "What is the difference between LIC Plan 945 and Plan 745?",
-              "a": "Plan 745 is the current active version of LIC Jeevan Umang launched under UIN: 512N312V03. Plan 945 and Plan 845 were legacy plan numbers for the same whole life product structure."
+              "a": "Plan 745 (UIN: 512N312V03) is the current active version of LIC Jeevan Umang launched under updated IRDAI guidelines. Plan 945 and Plan 845 were legacy plan numbers for the same whole-life product structure."
             },
             {
               "q": "How does the Jeevan Umang guaranteed 8% survival income work?",
-              "a": "After your chosen Premium Paying Term (15, 20, 25, or 30 years) ends, LIC pays a guaranteed 8% of your Basic Sum Assured every year until age 100 or death."
+              "a": "After your chosen Premium Paying Term (15, 20, 25, or 30 years) ends, LIC pays a guaranteed 8% of your Basic Sum Assured every year until age 99 or death."
             },
             {
               "q": "What is the maturity payout at age 100 under Plan 745?",
@@ -182,11 +259,11 @@
             },
             {
               "q": "Is the 8% annual survival income tax-free?",
-              "a": "Yes, survival benefit payouts and maturity proceeds from LIC Jeevan Umang are 100% tax-free under Section 10(10D) of the Income Tax Act."
+              "a": "Yes! Survival benefit payouts and maturity proceeds from LIC Jeevan Umang are 100% tax-free under Section 10(10D) of the Income Tax Act."
             },
             {
               "q": "Can I take a loan on my LIC Jeevan Umang policy?",
-              "a": "Yes, you can take a loan up to 90% of your policy's surrender value after completing 2 years of premium payments."
+              "a": "Yes, under 2024 IRDAI rules, you can take a policy loan up to 75% of your surrender value after completing just 1 full year of premium payments."
             },
             {
               "q": "What internal LIC tools help compare Jeevan Umang?",

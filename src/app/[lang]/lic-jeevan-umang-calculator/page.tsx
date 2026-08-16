@@ -55,6 +55,22 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
     }
   };
 
+  const faqSection = pageDict.sections?.find((s: any) => s.id === 'faq');
+  const faqItems = faqSection?.content?.find((c: any) => c.type === 'faq')?.items || [];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems.map((f: any) => ({
+      "@type": "Question",
+      "name": f.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": f.a.replace(/<[^>]*>?/gm, '')
+      }
+    }))
+  };
+
   return {
     title: pageDict.meta_title,
     description: pageDict.meta_description,
@@ -66,7 +82,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
       }, {} as Record<string, string>),
     },
     other: {
-      'application/ld+json': JSON.stringify([howToSchema, financialProductSchema, softwareAppSchema]),
+      'application/ld+json': JSON.stringify([howToSchema, financialProductSchema, softwareAppSchema, faqSchema]),
     },
   };
 }

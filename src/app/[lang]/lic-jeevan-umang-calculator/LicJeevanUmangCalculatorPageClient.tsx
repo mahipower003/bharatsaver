@@ -53,6 +53,28 @@ const ContentRenderer = ({ content, lang, pageDict }: { content: any[], lang: Lo
                 {item.body && <div className="prose dark:prose-invert max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: item.body.replace(/{lang}/g, lang) }} />}
               </div>
             );
+          case 'alert':
+            return (
+              <div key={idx} className="p-4 rounded-lg border bg-emerald-50 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-800">
+                {item.title && <h4 className="font-semibold text-emerald-800 dark:text-emerald-200 mb-1" dangerouslySetInnerHTML={{ __html: item.title.replace(/{lang}/g, lang) }} />}
+                {item.text && <div className="text-sm text-emerald-700 dark:text-emerald-300" dangerouslySetInnerHTML={{ __html: item.text.replace(/{lang}/g, lang) }} />}
+              </div>
+            );
+          case 'card_link':
+            const CardIcon = getIcon(item.icon);
+            return (
+              <Link key={idx} href={`/${lang}${item.href}`} className="block group">
+                <Card className="hover:shadow-md transition-shadow border-emerald-500/20">
+                  <CardHeader className="p-4">
+                    <CardTitle className="text-base flex items-center gap-2">
+                      {CardIcon && <CardIcon className="h-5 w-5 text-emerald-600 shrink-0" />}
+                      <span>{item.title}</span>
+                    </CardTitle>
+                    <p className="text-xs text-muted-foreground mt-1">{item.description}</p>
+                  </CardHeader>
+                </Card>
+              </Link>
+            );
           case 'premium_chart':
             return <LicUmangPremiumChart key={idx} />;
           

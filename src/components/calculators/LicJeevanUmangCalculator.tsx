@@ -4,7 +4,7 @@ import { useState, useEffect, useTransition } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Loader2, Info, CheckCircle2, ShieldAlert, Sparkles, TrendingUp, Calendar, Landmark, AlertCircle } from 'lucide-react';
+import { Loader2, Info, CheckCircle2, ShieldAlert, Sparkles, TrendingUp, Calendar, Landmark, AlertCircle, ChevronDown, ChevronUp, Table as TableIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
@@ -34,6 +34,15 @@ type ModeDetail = {
   total2nd: number;
 };
 
+type LifecycleRow = {
+  policyYear: number;
+  attainedAge: number;
+  premiumPaid: number;
+  survivalIncome: number;
+  accruedBonus: number;
+  deathBenefit: number;
+};
+
 type CalculationResult = {
   ppt: number;
   payingYears: number;
@@ -50,6 +59,7 @@ type CalculationResult = {
     total: number;
   };
   deathBenefit: number;
+  lifecycle: LifecycleRow[];
 };
 
 // Base tabular premium rates per 1,000 Sum Assured for Plan 745 (representative actuarial scale)
@@ -82,6 +92,7 @@ function getTabularRate(ppt: number, age: number): number {
 export function LicJeevanUmangCalculator({ dictionary }: { dictionary: any }) {
   const [result, setResult] = useState<CalculationResult | null>(null);
   const [isPending, startTransition] = useTransition();
+  const [showFullLifecycle, setShowFullLifecycle] = useState(false);
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -162,6 +173,32 @@ export function LicJeevanUmangCalculator({ dictionary }: { dictionary: any }) {
 
       const deathBenefit = sumAssured * 1.25 + totalBonus;
 
+      // 6. Year-by-Year Lifecycle Table (Age to 100)
+      const maxYears = 100 - age;
+      const lifecycle: LifecycleRow[] = [];
+
+      for (let yr = 1; yr <= maxYears; yr++) {
+        const attainedAge = age + yr - 1;
+        let premiumPaid = 0;
+        if (yr === 1) premiumPaid = yearlyMode.total1st;
+        else if (yr <= ppt) premiumPaid = yearlyMode.total2nd;
+
+        let survivalIncome = 0;
+        if (yr > ppt) survivalIncome = annualSurvivalIncome;
+
+        const accruedBonus = Math.round((sumAssured / 1000) * estBonusRatePerThousand * yr);
+        const deathCov = Math.round(Math.max(sumAssured * 1.25, yearlyMode.total1st * 7) + accruedBonus);
+
+        lifecycle.push({
+          policyYear: yr,
+          attainedAge,
+          premiumPaid,
+          survivalIncome,
+          accruedBonus,
+          deathBenefit: deathCov,
+        });
+      }
+
       setResult({
         ppt,
         payingYears: ppt,
@@ -178,6 +215,7 @@ export function LicJeevanUmangCalculator({ dictionary }: { dictionary: any }) {
           total: maturityTotal,
         },
         deathBenefit,
+        lifecycle,
       });
     });
   };
@@ -203,7 +241,7 @@ export function LicJeevanUmangCalculator({ dictionary }: { dictionary: any }) {
               <span>{dictionary.title || "LIC Jeevan Umang Calculator (Plan 745 / 945)"}</span>
             </CardTitle>
             <span className="self-start sm:self-auto text-[11px] sm:text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-200">
-              Active Plan 745 (2026)
+              Active Plan 745 (2026 Rules)
             </span>
           </div>
           <CardDescription className="text-xs sm:text-sm mt-1">
@@ -273,7 +311,7 @@ export function LicJeevanUmangCalculator({ dictionary }: { dictionary: any }) {
               {/* Quick Select Presets */}
               <div className="flex flex-wrap items-center gap-2 pt-1">
                 <span className="text-xs font-semibold text-slate-500">Quick Select Sum Assured:</span>
-                {[500000, 1000000, 2500000, 5000000, 10000000].map((sa) => (
+                {[200000, 500000, 1000000, 2500000, 5000000].map((sa) => (
                   <button
                     key={sa}
                     type="button"
@@ -451,6 +489,86 @@ export function LicJeevanUmangCalculator({ dictionary }: { dictionary: any }) {
                 <span>Total Cumulative Outflow ({result.ppt} Years): <strong>{formatCurrency(result.totalPremiumPaid)}</strong></span>
                 <span>Sum Assured Rebate applied for high coverage.</span>
               </div>
+            </CardContent>
+          </Card>
+
+          {/* Dynamic Year-by-Year Cash Flow Lifecycle Table */}
+          <Card className="shadow-xl border-2 border-emerald-500/20">
+            <CardHeader className="p-4 sm:p-6 pb-2 sm:pb-3 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+              <div>
+                <CardTitle className="text-lg sm:text-xl font-bold flex items-center gap-2">
+                  <TableIcon className="h-5 w-5 text-emerald-600 shrink-0" />
+                  <span>Year-by-Year Policy Lifecycle Schedule (Age {values.age} to 100)</span>
+                </CardTitle>
+                <CardDescription className="text-xs sm:text-sm mt-1">
+                  Complete annual breakdown of premiums paid, 8% survival income payouts, accrued bonuses, and nominee death cover.
+                </CardDescription>
+              </div>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setShowFullLifecycle(!showFullLifecycle)}
+                className="text-xs border-emerald-500 text-emerald-700 dark:text-emerald-300 shrink-0"
+              >
+                {showFullLifecycle ? (
+                  <>Show Summary View <ChevronUp className="ml-1 h-3.5 w-3.5" /></>
+                ) : (
+                  <>View Full 100-Year Table <ChevronDown className="ml-1 h-3.5 w-3.5" /></>
+                )}
+              </Button>
+            </CardHeader>
+            <CardContent className="p-3.5 sm:p-6 pt-2 sm:pt-4">
+              <div className="overflow-x-auto -mx-1 px-1 sm:mx-0 sm:px-0 max-h-[500px] overflow-y-auto border rounded-lg">
+                <table className="w-full text-xs text-left border-collapse min-w-[650px]">
+                  <thead className="sticky top-0 bg-emerald-950 text-white dark:bg-emerald-950 shadow">
+                    <tr>
+                      <th className="p-2.5 font-semibold">Policy Yr</th>
+                      <th className="p-2.5 font-semibold">Attained Age</th>
+                      <th className="p-2.5 font-semibold text-right">Annual Premium (₹)</th>
+                      <th className="p-2.5 font-semibold text-right text-emerald-300">Guaranteed Income (8%)</th>
+                      <th className="p-2.5 font-semibold text-right">Accrued Bonus (Est)</th>
+                      <th className="p-2.5 font-semibold text-right text-rose-300">Nominee Death Cover</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {(showFullLifecycle ? result.lifecycle : result.lifecycle.slice(0, result.ppt + 10)).map((row) => (
+                      <tr
+                        key={row.policyYear}
+                        className={`border-b hover:bg-emerald-50/50 dark:hover:bg-emerald-950/30 ${
+                          row.policyYear === result.ppt
+                            ? 'bg-amber-500/10 font-medium'
+                            : row.policyYear === result.ppt + 1
+                            ? 'bg-emerald-500/10 font-semibold'
+                            : ''
+                        }`}
+                      >
+                        <td className="p-2.5 font-mono">Yr {row.policyYear}</td>
+                        <td className="p-2.5 font-medium">Age {row.attainedAge}</td>
+                        <td className="p-2.5 text-right font-mono">{row.premiumPaid > 0 ? formatCurrency(row.premiumPaid) : '—'}</td>
+                        <td className="p-2.5 text-right font-mono text-emerald-700 dark:text-emerald-400 font-bold">
+                          {row.survivalIncome > 0 ? formatCurrency(row.survivalIncome) : '—'}
+                        </td>
+                        <td className="p-2.5 text-right font-mono text-slate-500">{formatCurrency(row.accruedBonus)}</td>
+                        <td className="p-2.5 text-right font-mono font-medium text-rose-600 dark:text-rose-400">
+                          {formatCurrency(row.deathBenefit)}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              {!showFullLifecycle && result.lifecycle.length > result.ppt + 10 && (
+                <div className="text-center pt-3">
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={() => setShowFullLifecycle(true)}
+                    className="text-xs text-emerald-600 hover:text-emerald-700 font-medium"
+                  >
+                    Showing first {result.ppt + 10} years. Click to expand all {result.lifecycle.length} years (up to Age 100) ↓
+                  </Button>
+                </div>
+              )}
             </CardContent>
           </Card>
 
