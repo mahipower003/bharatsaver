@@ -26,17 +26,16 @@ export function middleware(request: NextRequest) {
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   );
 
-  // Redirect if there is no locale
+  // Redirect permanently (308) if there is no locale to transfer SEO index to /en/
   if (pathnameIsMissingLocale) {
     const locale = getLocale(request);
 
-    // e.g. incoming request is /products
-    // The new URL is now /en/products
     return NextResponse.redirect(
       new URL(
         `/${locale}${pathname.startsWith('/') ? '' : '/'}${pathname}`,
         request.url
-      )
+      ),
+      308
     );
   }
 
