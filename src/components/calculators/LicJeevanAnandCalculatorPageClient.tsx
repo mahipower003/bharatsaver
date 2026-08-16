@@ -124,6 +124,24 @@ export default function LicJeevanAnandCalculatorPageClient({
                     );
                   case 'alert':
                     return <Alert key={idx} variant={item.variant || 'default'}><AlertTitle>{item.title}</AlertTitle><AlertDescription dangerouslySetInnerHTML={{ __html: item.text.replace(/{lang}/g, params.lang) }} /></Alert>;
+                  case 'card_link':
+                    return (
+                      <div key={idx} className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-4">
+                        {item.items.map((card: any, cIdx: number) => (
+                          <Link key={cIdx} href={`/${params.lang}${card.href}`} className="block group">
+                            <Card className="h-full border border-emerald-500/20 hover:border-emerald-500/50 transition-all shadow-sm hover:shadow-md">
+                              <CardHeader className="p-4">
+                                <CardTitle className="text-base text-emerald-700 dark:text-emerald-400 group-hover:underline flex items-center justify-between">
+                                  <span>{card.title}</span>
+                                  <StepForward className="h-4 w-4 text-emerald-500" />
+                                </CardTitle>
+                                <p className="text-xs text-muted-foreground mt-1">{card.description}</p>
+                              </CardHeader>
+                            </Card>
+                          </Link>
+                        ))}
+                      </div>
+                    );
                   default:
                     return null;
                 }
