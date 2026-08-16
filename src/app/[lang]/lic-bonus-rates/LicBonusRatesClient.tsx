@@ -126,7 +126,7 @@ export default function LicBonusRatesClient({
             pageDict={pageDict}
             h1={pageDict.h1}
             description={pageDict.byline || ""}
-            lastUpdated="May 30, 2026"
+            lastUpdated="August 2026"
             calculator={null}
             faqs={faqs}
             faqTitle="Frequently Asked Questions: LIC Bonus Rates"

@@ -62,7 +62,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
     },
     "about": ["Income Tax Calculator", "Old vs New Tax Regime", "Tax Planning India"],
     "datePublished": "2024-07-30",
-    "dateModified": "2025-09-01"
+    "dateModified": "2026-08-16"
   };
 
   const softwareSchema = {
@@ -122,7 +122,7 @@ export default async function TaxRegimeCalculatorPage({ params }: { params: Prom
       pageDict={pageDict}
       h1={pageDict.h1}
       description={pageDict.description}
-      lastUpdated="September 2025"
+      lastUpdated="August 2026"
       calculator={<TaxRegimeCalculator dictionary={pageDict} />}
       faqs={pageDict.faqs}
       faqTitle={pageDict.faq_title}

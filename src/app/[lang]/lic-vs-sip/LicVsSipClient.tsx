@@ -128,7 +128,7 @@ export default function LicVsSipClient({
             pageDict={pageDict}
             h1={pageDict.h1}
             description={pageDict.byline || ""}
-            lastUpdated="May 16, 2026"
+            lastUpdated="August 2026"
             calculator={null}
             faqs={faqs}
             faqTitle="Frequently Asked Questions"

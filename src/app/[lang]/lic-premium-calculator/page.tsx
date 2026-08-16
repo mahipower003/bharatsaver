@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
       }
     },
     "datePublished": "2024-09-25",
-    "dateModified": "2026-08-08",
+    "dateModified": "2026-08-16",
     "reviewedBy": {
       "@type": "Person",
       "name": "Laveena Vijayi",

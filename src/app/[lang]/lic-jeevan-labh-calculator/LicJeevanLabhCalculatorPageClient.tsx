@@ -130,7 +130,7 @@ export default function LicJeevanLabhCalculatorPageClient({
       pageDict={pageDict}
       h1={pageDict.h1}
       description={pageDict.description}
-      lastUpdated="September 2025"
+      lastUpdated="August 2026"
       calculator={
         <div id="calculator-widget">
           <LicJeevanLabhCalculator dictionary={pageDict.tool} />

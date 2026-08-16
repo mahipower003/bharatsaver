@@ -133,7 +133,7 @@ export default function LicTermInsuranceGuideClient({
             pageDict={pageDict}
             h1={pageDict.h1}
             description={pageDict.byline || ""}
-            lastUpdated="May 2026"
+            lastUpdated="August 2026"
             calculator={null}
             faqs={faqs}
             faqTitle="Frequently Asked Questions"

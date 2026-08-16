@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
     "author": { "@type": "Person", "name": "Mahesh Chaube, CFP", "url": `${siteUrl}/author/mahesh-chaube` },
     "publisher": { "@type": "Organization", "name": "BharatSaver", "logo": { "@type": "ImageObject", "url": `${siteUrl}/icon.svg` } },
     "datePublished": "2026-05-31",
-    "dateModified": "2026-05-31",
+    "dateModified": "2026-08-16",
   };
 
   const faqSection = pageDict.sections?.find((s: any) => s.id === 'faq');

@@ -1,209 +1,242 @@
+
 Executive Summary
-BharatSaver’s Jeevan Umang page is losing to the competitor because it’s outdated (still labeled “Plan 945”) and misses critical content and SEO elements. In contrast, the LICPremiumCalculator page focuses on the current Plan 745 with detailed features, examples and clean structure. To overtake it, BharatSaver must update all plan details to 745, correct on-page SEO, and add the missing content/trust elements (FAQs, examples, etc.) while boosting authority via internal linking and outreach. The plan below covers in-depth on-page gaps (titles, content, schema), factual mismatches (PPT, riders, death benefit), technical SEO checks (mobile, canonical, structured data), new content (premium tables, IRR, methodology, FAQs, video), silo links, backlink outreach, SERP features optimization, and a 30-day rollout with monitoring. Key fixes include rewriting the H1/meta to “LIC Jeevan Umang (Plan 745)…”, removing invalid 10‑year PPT examples, adding a plan-details table, citing official bonus/benefit rules, and updating the “Last updated” date. This multi-pronged audit and action plan will close the content and trust gap and drive BharatSaver to #1 for Jeevan Umang queries.
+Our analysis reveals that BharatSaver’s APY and Jeevan Utsav calculator pages lack depth and SEO refinement compared to top competitors, causing them to rank below. Competitor APY pages (Groww, Axis, Paytm, Upstox) include extensive definitions, examples, charts, and FAQ sections. Likewise, Jeevan Utsav pages on liccalculators.info and licpremiumcalculator.in provide thorough plan details, feature highlights, and FAQs. By expanding content (e.g. adding scheme details, worked examples, and benefits), structuring it with clear headings, and embedding FAQ schema, BharatSaver can meet user intent more fully. On the technical side, optimizing page speed, ensuring mobile responsiveness, and adding structured data (JSON‑LD FAQ) will improve performance. Backlink profiles must be strengthened – competitors (Groww, Axis) enjoy far higher authority from strong backlinks. We prioritize: (1) On-page content expansion (high impact), (2) Structured data and schema (medium), (3) Technical speed fixes (medium), (4) Title/meta rewrites and internal linking (high), and (5) Link-building (long-term high). Detailed comparisons and a step-by-step action plan follow.
 
-1. On-Page Comparison
-Element	BharatSaver (Current)	Competitor (licpremiumcalculator.in)	Gap/Issue
-URL	/en/lic-jeevan-umang-calculator (generic)	/lic-jeevan-umang-745 (includes plan)	BharatSaver URL omits “745” (weaker keyword targeting)
-Title/H1	“LIC Jeevan Umang Calculator (Plan 945) – Premium, Survival Income & Maturity”	“LIC Jeevan Umang Plan (745) Premium Calculator”	BharatSaver’s title uses old plan number (945) and keyword order is suboptimal.
-Meta Description	Focuses on “Plan 945” premium/maturity (likely outdated).	“Calculate premium… Jeevan Umang Plan 745… survival, maturity, death…” (see SERP snippet)	Needs update to include “Plan 745”, survival benefit, query terms.
-Headings (H2/H3)	Many sections: “Quick Snapshots”, “Premium Chart”, “How it works”, case studies, FAQs (but no answers visible).	Sections: “Plan Introduction”, “Eligibility”, “Maturity & Money Back”, “Death Benefit”, “Riders”, “Surrender”, “Loan”, “Grace”, “Free Look”, “Example”.	BharatSaver lacks structured plan/eligibility sections. FAQs have no visible answers (likely hidden).
-Calculator Inputs	Age, Gender, Tobacco, Sum Assured, PPT, Frequency, Riders (Accident, Term, Critical Illness).	Age, PPT, Sum Assured, AD&D Rider, Term Rider, PWB Rider, Proposer Age.	BharatSaver has Gender/Tobacco/Critical Illness which Jeevan Umang doesn’t use; competitor includes PWB/Proposer Age not in BharatSaver. Remove invalid riders (no CI) and add missing ones if applicable.
-Calculator Outputs	“Quick Snapshots” table (illustrative incomes). No maturity output shown.	Shows premium details, annual survival income, bonus, total maturity at age 100 with example values.	BharatSaver output lacks maturity/bonus details; competitor’s example illustrates maturity benefit. Need to display total maturity.
-Examples/Scenarios	Two case-study scenarios (both use 10-year PPT) (invalid for Plan 745).	One calculation example with valid parameters (Age 28, PPT 20).	BharatSaver’s examples use PPT=10 (only allowed in old Plan 945); must recalc or remove. Adding realistic example (e.g. PPT 15/20) is needed.
-Plan Details Table	None. Basic plan info missing (term, min SA, PPT options, maturity age, riders).	Lists eligibility, benefits, terms etc. (e.g. “8% survival benefit…”).	BharatSaver needs a concise Plan 745 feature table (min SA ₹2L, PPT options 15/20/25/30, maturity 100 years, riders available).
-FAQs	Qs listed but answers hidden (or missing). No FAQ schema.	No FAQ section.	BharatSaver should provide answer text to target PAA/Featured Snippets (with FAQ schema).
-Author/Trust	Author byline (“Mahesh Chaube, CFP”), editorial review, “Last updated: Sep 2025”.	No author or date.	BharatSaver has strong E‑A‑T signals; ensure “Last updated” is current (Aug 2026).
-Internal Links	Good: links to related LIC calculators (Labh, Anand, etc.) and guides.	Mostly site menu and back link.	BharatSaver has internal links; can improve by linking to this page from related pages (see Sec 5).
-Canonical/Hreflang	Uses /en/ prefix. No alternate hreflang seen (likely only English).	Not applicable (single English page).	Verify canonical points to /en/lic-jeevan-umang-calculator. Ensure no duplicate (e.g. without /en/) indexed.
-Structured Data	Likely none (check HTML).	None apparent.	Add FAQPage schema and possibly a HowTo or Product schema for the calculator (if applicable).
+1. Competitor Page Analysis (On-Page SEO & Content)
+APY Calculator Pages
+We compared BharatSaver’s APY page versus Groww, Axis Bank, Paytm, and Upstox (top ranking pages for “apy calculator”). The findings are summarized below:
 
-2. Facts Check vs Official LIC 745
-BharatSaver’s content still references Jeevan Umang “Plan 945,” which ceased Oct 2024. The current plan is “Jeevan Umang (Plan 745)”. Key official facts (LIC brochure) and gaps:
+Metric	BharatSaver (Our Page)	Groww	Axis Bank (maxlife)	Paytm	Upstox
+Title Tag	*“APY Calculator 2025 — Atal Pension Yojana Premium Chart & Pension Chart	BharatSaver”* (≈100 chars)	“APY Calculator – Atal Pension Yojana Calculator Online – Groww” (≈60)	*“Atal Pension Yojana (APY) Scheme Calculator	Axis Bank”* (≈60)
+Meta Description	Static snippet**: “Free APY Calculator India (2025). Calculate your monthly contribution for Atal Pension Yojana…” (≈150 chars)	“APY Calculator – Determines real interest earned on APY scheme” (≈155 chars)	Not fully visible, likely describes scheme	Likely mentions APY scheme details (visible: “APY is a national pension scheme… introduced in Union Budget 2015-16”)	Likely similar, emphasizes retirement corpus
+H1 / Main Heading	Missing proper scheme context. The page loads via JS; actual H1 not captured by tools.	“# APY Calculator” – clear and concise.	“# APY Calculator” (Axis: L19-23) plus “What is APY Calculator?” (L25-29).	“# APY Calculator” – followed by input fields.	“# APY Calculator” – succinct.
+Content Depth	Very limited. Likely only form inputs or short intro (not captured).	Moderate. ~400–600 words of scheme intro, tool usage, formula.	Very high. Axis content spans dozens of sections (Scheme intro, how-to, charts, FAQs).	Very high. Paytm page is ~1,300+ lines, covering scheme intro, usage, examples, features, FAQs. (“APY is a national pension scheme… introduced by Govt…”)	High. ~300+ lines. Includes quick tool UI, scheme definition, usage steps, worked example (Prachi’s 30-year-old case), and advantages.
+Key Keywords (usage)	Uncertain due to lack of visible content.	Frequent use of “APY”, “Atal Pension Yojana” and “pension calculator”.	Repeats “APY Calculator”, “Atal Pension Yojana” and relevant terms heavily.	Heavy usage of “Atal Pension Yojana”, “APY”, “calculator” through all sections.	Focus on “APY”, “pension scheme”, etc.
+Headings (H2–H4)	Likely missing since content not shown.	## headings for “What is APY Calculator” and “How it works” (e.g. “What is APY Calculator, and How Does it Help You?”). Third-level for steps.	Multiple H2 sections: “What is an APY Calculator?”, “How to use APY Calculator?”, “Benefits of using APY Calculator”, “APY Charts”, “FAQs”.	Strong structure with H2 sections: “What is APY?”, “What is APY calculator?”, “How to use”, “Benefits”, etc (We see e.g. “What is APY?”, “How to use APY” etc).	H2 sections like “Atal Pension Yojana (APY) Calculator?”, “What is the APY calculator?”, “How does it work?”, “APY formula”, “Advantages” (e.g. “How does the APY calculator work?”).
+Content Examples	None visible. Possibly no illustrative examples.	No concrete numeric example given.	Yes. Charts of contributions by age (“APY Calculator Chart for ₹1000 Pension…”). Worked mathematical example.	Yes. Shows inputs and results. Practical example of a 20-year-old computing ₹150.	Yes. Example scenario (Prachi 30-year-old wants ₹5,000 pension).
+Readability	Unknown, but likely poor due to lack of content/context.	Plain language; somewhat formal. Moderate Flesch.	Formal yet structured. Possibly harder to read due to jargon.	Moderate tone, geared to broad audience. Long paragraphs may be harder.	Conversational and clear (“As a result, the subscriber must invest…”).
+FAQ/Schema	None. No FAQ content or markup known.	No FAQ section. End of page shows “Invest Now” CTA and related calculators, but no FAQs.	Yes. Contains extensive FAQs in text (e.g. “Who can open an APY account?”). No visible JSON-LD.	Implied. Has a FAQ heading in HTML (“What is the APY return calculator?” etc), but unclear if JSON-LD used.	No visible FAQs snippet.
+Internal Links/CTA	Possibly a generic “Calculate Now” button but no related links.	“Invest in Mutual Funds – Invest Now” CTA and list of other calculators (SIP, FD, etc).	No obvious CTAs. Navigation bar; internal links to other Axis products.	No “invest” CTA (not a fintech), but built as tool. Has navigation to other site tools.	No direct CTA; minimal internal linking aside site nav.
+Calculator UX	Uncertain. Presumably form inputs (“Joining Age, Desired Pension” etc), but performance unknown.	Yes. Interactive slider/inputs; instantly shows monthly investment and totals.	Yes. Form with age/pension; results are displayed. Likely mobile-friendly.	Yes. Input fields show real-time results (“Monthly Investment ₹231” etc).	Yes. Fields update totals; simple UI.
 
-Annual Survival Benefit: 8% of Basic Sum Assured, paid yearly after PPT till maturity. (BharatSaver text: “8% of SA” – correct, but context/tag still says Plan 945.)
-PPT Options: 15, 20, 25, 30 years. BharatSaver’s examples use PPT=10, which is invalid for Plan 745. Must remove or replace PPT10.
-Sum Assured: Min ₹2,00,000 with multiples as per LIC. BharatSaver should mention these.
-Maturity Age: 100 years (nearest birthday). BharatSaver’s content implies “till you reach age 100” (okay), but competitor text had one place “age 99” (in example). Clarify as 100.
-Maturity Benefit: Lump-sum at maturity = Basic SA + vested bonuses + any Final Additional Bonus. LIC: “lump sum at time of maturity or on death”. BharatSaver says “BSA + bonuses + FAB” (fine).
-Death Benefit: On death (after risk starts), nominee gets Sum Assured on death + bonuses. Policy states sum assured on death is higher of 7× annualized premium or basic SA. Also at least 105% of premiums paid. BharatSaver does not explicitly mention this. Should add the “7x rule/105%” for completeness.
-Riders: Officially PWB (Premium Waiver) and AD&D riders are available; no Critical Illness rider. BharatSaver erroneously lists “Critical Illness” rider – remove it. (Competitor mentions only AD&D and PWB.)
-Loan / Surrender: Official plan allows loans (up to 90% of surrender value after some years). Competitor: “Loan up to 90% after 3 years” (not in brochure snippet). BharatSaver lacks any mention. Should add that after 3 years, 90% loan against surrender value, and surrender value is defined (approx ~75% of premiums paid after 3 years).
-Free Look / Grace: Standard LIC: 15-day free-look, 30-day grace. Competitor lists those; BharatSaver doesn’t. Add them for completeness.
-Mismatches: In summary, BharatSaver’s page is still for Plan 945. It must be fully updated to Plan 745: change all “945” to “745,” remove PPT10 examples, delete CI rider, and add missing info (min SA, riders, loan, surrender). Official brochure confirms the 8% benefit and key terms that must be clearly restated.
+Key observations: Every top-ranking APY page provides in-depth context and clear structure. For instance, Axis’s page immediately defines APY (“a government-backed pension scheme… for unorganised sector”) and then details the calculator logic (“uses inputs… to calculate monthly contributions”). Paytm’s page likewise explains APY scheme purpose and usage. BharatSaver’s APY page appears to have minimal content by comparison (likely only the tool interface), missing definitions, examples, and benefits. 
 
-3. Technical SEO Audit
-Indexability: Ensure only one canonical URL. If the site automatically redirects /lic-jeevan-umang-calculator to /en/…, verify canonical is set to /en/lic-jeevan-umang-calculator (to avoid the duplicate /en vs non-/en). Check GSC for duplicate pages.
-Sitemap: Confirm the updated URL is in XML sitemap and /lic-jeevan-umang-calculator isn’t separately listed.
-Robots: No “noindex” tag should block this page. Confirm via browser header or SEO tool.
-Page Speed: Benchmark via Lighthouse/GTmetrix. Compress images (e.g. charts) and enable browser caching. Remove unused CSS/JS. Mobile viewport should be set. Any heavy scripts (e.g. calculators, PDF downloads) should be asynchronous.
-Mobile UX: The form must be mobile-friendly (inputs legible, tap targets OK). The competitor page is text-heavy but simple; BharatSaver should match or exceed.
-Structured Data: Implement FAQPage schema for the FAQ section (with answers) to target SERP FAQ. If adding a HowTo or Product schema makes sense (as a “calculator tool”), include that. Ensure valid JSON-LD (Test in Google’s Rich Results tool).
-Canonical/Hreflang: Add <link rel="alternate" hreflang="en" href="https://bharatsaver.com/en/lic-jeevan-umang-calculator" /> if a Hindi version exists (e.g. /hi/...). Otherwise ensure canonical tag in <head> points to the exact page URL.
-Duplicate Content: Check that BharatSaver’s Jeevan Umang content isn’t duplicated on another page (the same site had issues with LIC Premium calc). If similar content exists elsewhere (e.g. a Hindi page), use hreflang as above.
-Internal Links: Currently OK. Also add breadcrumbs (if not present) to show “Home > LIC Calculators > Jeevan Umang”, aiding navigation.
-Other: Add download attribute to PDF link if used. Ensure GSC Index Coverage has no errors for this URL. Monitor Core Web Vitals (LCP, CLS) especially if adding images.
-4. Content Gaps & Exact Changes
-Rewrite Title & Meta: Update H1 to include “Plan 745”: e.g. H1: “LIC Jeevan Umang Premium Calculator (Plan 745) – Annual Income & Maturity”. Meta description could read: “Calculate LIC Jeevan Umang Plan 745 premium and benefits. See guaranteed 8% annual survival income, death and maturity payouts with our free online calculator.” This targets queries and cites the 8% benefit.
-Plan-745 Details Table: Add a bullet/table of key facts: e.g., “Policy Term: until age 100; Premium Terms: 15/20/25/30 yrs; Min SA ₹2L; Survival Benefit: 8% of SA annually; Death Benefit: SA+Bonuses (≥105% of premiums); Riders: Accidental/AD&D, Premium Waiver.”
-Premium Tables: Insert sample premium chart for common cases (e.g. Age 30, SA ₹5L/₹10L/₹20L, PPTs 15/20 yrs, yearly vs half-yearly rates with GST). Show first-year and subsequent-year premiums. This directly targets queries for “Jeevan Umang premium chart”. (e.g. see competitor’s small charts or [40] snippet for guidance).
-IRR Calculator: Add a simple formula: “We also compute the internal rate of return (IRR) of the policy by equating the PV of premiums to PV of benefits (survival incomes + maturity).” Optionally provide a link or embed JS calculator that solves IRR. For example: “IRR is found by solving: Σ(Premium_outflow/ (1+r)^t) = Σ(Benefit_inflow/(1+r)^t). Use our built‑in tool for accuracy.”
-Calculation Methodology: Expand “How calculator works” section. E.g.: “We compute premiums using LIC’s published base rates for Jeevan Umang (Plan 745). We multiply by modal loading (e.g. 1.0 for annual, 0.52 for half-yearly, etc.) and add GST (4.5% in 1st year, 2.25% thereafter). The annual survival benefit is 8% of SA per LIC rules. Maturity = SA + vested bonuses + FAB. Inflows (survival + maturity) vs outflows (premiums) give the plan’s IRR.” (Cite [13] for loading/GST and [34] for 8% factor).
-Scenario/Case Studies: Replace invalid scenarios with valid ones. E.g.: “Case Study: Age 35, SA ₹10L, PPT 20. PPT ends at 55, then ₹80k/year (8% of 10L) till age 100, plus maturity lump sum. ...” Use realistic numbers, possibly reusing competitor’s example. Show both survival income stream and final lump-sum.
-Premium Waiver (PWB): Since competitor highlights it, mention “With Premium Waiver rider, premiums stop on death of proposer, and survival incomes continue.” (if factual).
-FAQs: Provide full answers. For example:
-“How to calculate Jeevan Umang premium? Our calculator applies LIC’s base rates for your age/PPT/SA, then adds modal loading and GST. Enter your details and hit Calculate.”
-“What is the survival income? Under Jeevan Umang, starting after the PPT, you get 8% of the Basic SA each year. E.g., ₹80,000/year on a ₹10L SA.”
-“What is the death benefit? If the policyholder dies, the nominee gets the higher of 7× annual premium or the basic SA, plus bonuses (at least 105% of premiums paid). This ensures strong protection.”
-(Add other Qs like surrender value, tax, etc., with answers.)
-Embed Video: Add a relevant YouTube video (e.g. “LIC Jeevan Umang Explained”). Embed below an FAQ or in intro. Use video schema. (Zfunds [40] had one.)
-Last-Modified Date: Update “Last updated” to current (e.g. Aug 2026) to show freshness.
-Schema & Markup: Add JSON-LD for FAQPage with those Q&As. Mark up the calculator area as appropriate.
-Meta/E-A-T: Adjust author intro if needed. Possibly add one more internal link to validate “download PDF” by hooking it with a VA (e.g. “for a full PDF illustration, contact our LIC agent or email”).
-5. Internal Linking & Siloing
-Leverage BharatSaver’s existing LIC and calculators network. Exact anchor/links to add:
+These deficiencies hurt SEO: incomplete coverage of user queries and keywords. Competitors use multiple headings with FAQs (Axis includes “Who can open an APY account?” etc) to capture long-tail queries. Adding similar sections (e.g. “What is APY?”, “How to use this calculator”, “APY contribution chart”) will make content more comprehensive and aligned with searcher intent.
 
-Anchor Text	Source Page on BharatSaver	Notes/Placement
-“LIC Jeevan Umang (Plan 745) Calculator”	LIC Premium Calculator page	Add in text or “Related Calculators” section
-“Jeevan Umang vs Jeevan Labh”	LIC Jeevan Labh page	In text or comparison table
-“Jeevan Umang vs Jeevan Anand”	LIC Jeevan Anand page	In text or comparators list
-“Lifetime Pension Plans”	LIC Premium Calculator page	Broad link from hub
-“LIC Jeevan Umang 745 Survival Income”	Related blog post or FAQ page (new or existing)	If such exists, else omit
-“Compare Jeevan Umang and Utsav”	LIC Jeevan Utsav page	Anchor like “Jeevan Umang vs Jeevan Utsav”
-“Annual Bonus Rates”	LIC Bonus or Plan chart page	If BharatSaver has one
-“Jeevan Umang Loan Calculator”	Loan Calculator page	If exists, else skip
+Jeevan Utsav Calculator Pages
+For the keyword “LIC Jeevan Utsav plan calculator”, we compared BharatSaver’s Jeevan Utsav page (Plan 871) against liccalculators.info (Plan 771) and licpremiumcalculator.in (Plan 883). Key comparisons:
 
-Also, ensure the LIC Calculators index page links prominently to Jeevan Umang (change text to “Plan 745” instead of “945”). Use breadcrumb linking (Home > LIC Calculators > Jeevan Umang).
+Metric	BharatSaver (Plan 871)	LICCalculators.info (Plan 771)	LICPremiumCalculator.in (Plan 883)
+Title Tag	*“LIC Jeevan Utsav Calculator (871) — An Honest Look at Premiums & Lifetime Income	BharatSaver”* (≈100 chars)	“LIC Jeevan Utsav Plan 771 Calculator – LIC Calculator” (50)
+Meta Description	Likely custom (not shown).	Likely: “Calculate premiums and benefits for LIC Jeevan Utsav Plan 771…” etc.	Likely: describes plan 883 tool (not visible).
+H1 / Main Heading	“I Built This LIC Jeevan Utsav Calculator…” – persuasive, brand-driven tone.	“# LIC Jeevan Utsav Plan 771 Calculator” – straightforward.	“# Jeevan Utsav Single Premium Plan (883) Premium Calculator” – descriptive.
+Content Depth	High (≈1800 words). Engaging narrative voice with sections on how it works, formulas, scenarios, comparisons, “bottom line up front” table.	High (~1200 words). Detailed plan description, features, benefits, usage instructions, FAQs, conclusion.	Very high (~1700 words). Plan overview, features, eligibility, maturity/death benefits, riders, surrender value (up to L173).
+Keywords/Headings	Many H2/H3 sections: “The Bottom Line Up Front”, “Plain-English Guide”, “How it Works”, plus dozens of H3 scenarios (Age 30, etc).	H2 for input form (“Enter Policy Details”) and key sections (“What is Plan 771?”, “Key Features”, “Benefits”, “How to Use Calculator”, “FAQs”).	H2 for “Key Features – LIC Jeevan Utsav”, “Eligibility”, “Maturity Benefit”, etc. Structured table listings.
+Plan Details	Explains GA ₹40 per ₹1000, 2-year deferment, regular vs flexi income. Personal tone (“My take: …”).	Explains non-linked nature, coverage to age 100, income after PPT; technical details of death vs maturity.	Focus on single premium features: GA, income options, lump-sum maturity, detailed eligibility (age, sum assured).
+Calculations/Examples	Yes. “Bottom Line Up Front” table of sample scenarios, plus various calculators and formulas (regular vs flexi income).	Outputs premium breakdown tables (yearly, half-yearly, etc) and year-wise benefits chart; numeric example of age 30 vs 40 in benefits section.	Includes numeric “Premium Details” and “Maturity Details” tables; no narrative example.
+FAQ/Schema	Yes. End section “Frequently Asked Questions (FAQs)” with 10+ custom questions (though answers hidden); author and review byline (Mahesh Chaube, CFP). No JSON-LD shown.	Yes. Contains an FAQ section with multiple Q&As; clear author bio for Naresh Kumar. No JSON-LD.	No FAQ section. Pure tool+info layout.
+Internal Links/CTA	Footer “Get My Personalized Fund List” CTA; links to other calculators/blog.	Menu-driven links to other LIC calculators; “Use calculator before purchasing” CTA (though internal); author link.	Top menu (Home, Blog); no backlinks to related content except header.
+Readability	Conversational tone (CFP-authority). Relatable style.	Factual, moderately technical. Uses tables.	Formal, dense with policy terms.
+Calculator UX	Live form fields with options (age, sum, PPT, income type, riders). Good instructions.	Input form (sum, age, PPT, options); results shown in breakdown.	Input form with dropdowns and number fields; instantly shows premium/maturity tables.
 
-6. Backlink & Authority Strategy
-Competitor Backlink Estimate: licpremiumcalculator.in is a niche site (likely few high-authority backlinks). BharatSaver, by comparison, should outrank on content alone, but backlinks will boost trust.
+Key observations: BharatSaver’s Jeevan Utsav page is rich in narrative and examples, differentiating on tone. However, competitors’ pages excel in technical completeness. For example, liccalculators.info lists “Key Features” and “Benefits” with bullet tables, followed by FAQs and a conclusion. LIC Premium Calculator’s plan 883 page covers eligibility, riders, surrender value in exhaustive detail. BharatSaver should similarly add structured content on “Key Benefits” of Jeevan Utsav (e.g. guaranteed additions, family protection) and an FAQ schema with plan-specific questions. The FAQs should target queries like “Minimum entry age?”, “How are bonuses added?”, “Death benefit guarantee?” etc, as competitors partially cover.
 
-Outreach Targets: Focus on high-DA Indian finance sites and authoritative calculators. Possible targets:
+Figure: Competitor liccalculators.info includes engaging plan graphics and charts to illustrate key features. BharatSaver should similarly use visuals to break text.
 
-Financial Portals: Policybazaar LIC plan pages (they have LIC Jeevan Umang section) – pitch linking to an improved calculator as reference.
-Insurance Blogs: Insurancefunda.in, Policygyan, BankBazaar Blog – offer a guest post or infographic on Jeevan Umang linking to BharatSaver.
-Personal Finance Sites: JagoInvestor, INDmoney blog, Moneycontrol community, EconomistIndia blog.
-News/Sites: Economic Times Insurance section, Hindu BusinessLine, Mint (their education columns).
-Q&A/Forums: Write authoritative answers on Quora, Reddit (r/IndiaInvesting), StackExchange Money (Personal Finance), linking back.
-Social Influencers: Finfluencers or YouTube channels (e.g. CA Rachana Ranade, CA Manish Agarwal) – collaborate on LIC posts linking to BharatSaver.
-Government/Institutional: Unlikely a direct backlink, but list BharatSaver in educational resources if possible.
-8 Specific Link Opportunities: (with suggested anchor use)
+2. Technical SEO & Performance
+Page Speed & CWV: We recommend running PageSpeed Insights and Lighthouse for both pages. Given our pages rely on JavaScript (content hidden from crawl), they may have higher TTFB or slow LCP. Action: Optimize by deferring non-critical scripts, compressing images (use modern formats), and enabling browser caching/CDN. Ensure largest contentful paint (calculator form) loads quickly. (Axis Bank’s SPA was heavy but loaded content promptly; Paytm’s page was very long, so their speed is unknown but likely slower – we must aim for fast performance.)
 
-insurancefunda.in – “LIC Jeevan Umang Premium Calculator” – their plan write-up could link to BharatSaver’s tool.
-Policybazaar.com – “LIC Jeevan Umang Premium Calculator” – comment or blog integration linking BharatSaver.
-BankBazaar.com/ blog – “Jeevan Umang calculator” in a roundup of LIC tools.
-JagoInvestor.com – “LIC Jeevan Umang 745” – comprehensive LIC articles often allow tool links.
-Moneycontrol Q&A – answer questions about Jeevan Umang with link to BharatSaver’s calculator.
-YouTube (e.g. CA Rachana Ranade) – sponsor or request mention in a Jeevan Umang video (video descriptions can have links).
-RBI or IRDAI consumer education site – suggest including BharatSaver’s calculator in resources (difficult but high authority).
-Forum Communities – e.g. BusinessToday forum, BankBazaar’s forums, where linking is allowed.
-(Prioritize sites with Indian insurance/finance focus. Use outreach emails and content pitching, citing LIC facts from [34] and [40] to build credibility.)
+Mobile Usability: All competitor sites are mobile-responsive. Ensure BharatSaver’s calculators have mobile-friendly design (responsive input fields/buttons). Test on Google Mobile-Friendly Test and fix any layout issues. Using a responsive framework or CSS tweaks may be needed for our form.
 
-7. SERP Feature Strategy
-FAQs: Fill FAQ answers (with schema) to capture “People Also Ask” and FAQ rich snippet slots. Use clear Q&A pairs (see sample Qs in Section 4).
-Video Snippet: Embed a relevant YouTube video (with ”Jeevan Umang 745 calculator” in title/description). Add VideoObject schema. Also post the video on BharatSaver’s own channel and embed.
-Featured Snippet (Answer box): Target queries like “What is Jeevan Umang survival benefit?” by using short lists/definitions. E.g. “Survival Benefit = 8% of Basic SA”. Use bullet lists for comparators.
-“People Also Ask”: Answer common questions as H3 with simple answers, then expand. Questions like “How much premium do I pay for Jeevan Umang?” or “Is Jeevan Umang good for retirement?”
-Knowledge Panel/Local: Unlikely.
-Other: Ensure definition and calculation of IRR/spouse incomes can trigger “How To” snippet – format steps clearly if feasible.
-E-E-A-T Signals: Add trust badges or partner logos if any. Cite official sources to boost snippet eligibility.
-8. A/B Test & Measurement Plan
-Metrics: Track in Google Search Console (GSC) and GA4: positions, impressions, CTR for Jeevan Umang–related queries; GA4 events for “Calculate” clicks, “Download PDF”, etc.
+Core Web Vitals: Monitor LCP (Largest Contentful Paint) – likely the calculator form or banner image. Optimize by inline-critical CSS, lazy-loading offscreen images. Minimize CLS (avoid layout shifts from form loading). Ensure FID (First Input Delay) is low: our calculators should respond instantly (debounce input handlers if heavy).
 
-Queries to Monitor (GSC): “Jeevan Umang Calculator”, “LIC Jeevan Umang 745”, “Jeevan Umang premium”, “Jeevan Umang survival benefit”, plus branded terms. Filter performance report for queries containing “Jeevan Umang” and “LIC Jeevan Umang”.
-Pages to Monitor: /lic-jeevan-umang-calculator. In GSC Performance, filter by this page to see CTR and avg position for target queries.
-A/B Tests:
-Title/Meta: Test two meta descriptions (with vs without numeric data). Evaluate CTR differences via GSC after 2 weeks.
-H1/CTA text: Try alternative H1 (“Premium, Survival Income…” vs. “Annual Pension Calculator…”). Use GA4 event on scroll or “calculate” button to see engagement.
-“Calculate Now” button vs. “Download PDF”: Track which CTA gets more use (GA4 event tracking).
-Timeline:
-Baseline GSC data export now for target queries.
-Week 1-2: Implement P0 changes (plan number, examples, title/meta, case study fix).
-Week 3: Check GSC and GA4 (impression/CTR changes, event counts).
-Week 4: Continue P1 content additions; final check at day 30.
-If possible, iterate A/B tests (e.g. swap meta at day15, swap back at day30).
-Exact GSC Export: Recommend exporting the “Query” report (CTR, impressions, position) for queries containing “Jeevan Umang” and the “Pages” report for this page on Day 0, 15, 30. Compare changes. Also export “Search Appearance” to check any new Rich Result impressions (FAQ, video) after schema is added.
-9. Implementation Checklist (30-Day Rollout)
-Task/Change	Priority (P0–P3)	Effort	Impact
-P0 (Critical): Fix plan number references	P0	0.5d	High
-– Update H1, title, meta to “Plan 745”			
-– Change all “945” text to “745”			
-P0: Correct calculator inputs/results	P0	1d	High
-– Remove 10-year PPT from snapshots (replace)			
-– Remove Critical Illness rider			
-– Ensure outputs include maturity value			
-P0: Update “Last updated” date to Aug 2026	P0	0.1d	Medium
-P1 (High): Add/Revise Content Sections	P1	3d	High
-– Insert Plan 745 features table (SA, PPT, etc)			
-– Add premium example tables (5L,10L,20L)			
-– Write explanation (methodology) paragraph with formula		0.5d	Medium
-– Create valid case study (e.g. Age35/SA10L/PPT20)			
-P1: FAQs and Schema	P1	1d	High
-– Write concise FAQ answers (3–5 Qs)			
-– Add FAQPage JSON-LD			
-P2 (Medium): Multimedia Enhancements	P2	2d	Medium
-– Embed relevant YouTube video			
-– Add alt/text to images, compress charts			
-– Ensure calculators function (no errors)			
-P2: On-Page SEO	P2	1.5d	Medium
-– Add FAQ schema, Video schema			
-– Update breadcrumb/navigation			
-– Check canonical/hreflang tags			
-P3 (Low): Links & Authority	P3	3d	Medium
-– Internal linking (see Sec 5 anchors)			
-– Outreach: email 5 targets, social shares			
-– Monitor GSC/GA4, refine after initial data		Ongoing	Long-term
+Indexability & Canonical: Verify our /en/apy-calculator and /en/jeevan-utsav-calculator are in XML sitemap and not blocked by robots.txt. Use canonical tags if duplicate versions exist. (Axis Bank page has canonical SEO, likely BharatSaver too). If content is injected by JS, ensure server-side rendering or prerendering so Google can index text.
 
-Effort = estimated work days; Impact = expected SEO/UX boost. Prioritize P0 tasks (correct plan and calculations) immediately, since these fix fundamental relevance.
+Structured Data: Add JSON‑LD markup. In particular, implement FAQPage schema using our FAQ Q&As. This can win rich snippets. (Example code given below.) For Jeevan Utsav, also consider HowTo or QAPage for the step-by-step guide. Ensure valid schema by testing with Google’s Rich Results tool. No competitor seems to use JSON-LD, so adding this is a quick win.
 
-10. Sample Content Snippets
-H1:
+json
+Copy
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the Atal Pension Yojana (APY)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Atal Pension Yojana (APY) is a government-backed pension scheme for the unorganised sector, launched in the 2015–16 Union Budget. It provides a fixed pension of ₹1000–₹5000 per month after age 60, based on contributions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the APY calculator determine my pension?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The APY Calculator uses your current age and desired pension amount to compute the required monthly contribution and total savings. It applies the scheme formula (as explained in official guidelines) to ensure you achieve that pension."
+      }
+    }
+  ]
+}
+</script>
+json
+Copy
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is LIC Jeevan Utsav (Plan 871)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LIC’s Jeevan Utsav Plan 871 is a non-linked, whole-life savings plan with a limited premium term (5–16 years) that offers lifelong guaranteed additions and income. It provides regular or flexi income post-PPT and a guaranteed death benefit (at least 105% of premiums paid)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the Jeevan Utsav premium calculator work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The calculator asks for your age, sum assured, premium-paying term, and choice of income option. It then computes the base premium (applying modal loadings) and guaranteed additions (₹40 per ₹1,000 SA per year). After your PPT and deferment, it shows your fixed 10% yearly income or projected flexi-income growth."
+      }
+    }
+  ]
+}
+</script>
+(Place these scripts in the <head> or just before </body>.)
 
-LIC Jeevan Umang Premium Calculator (Plan 745) – Annual Income & Maturity
+3. Backlink Profile & Authority
+Our domain (BharatSaver) likely has much lower authority than competitors. Groww and Axis are major brands with thousands of backlinks and high domain ratings, which strongly influence rankings. Lic-related sites have niche backlinks from insurance blogs and forums. To improve, BharatSaver should:
 
-Meta Description (160 chars):
+Acquire quality backlinks: Pitch guest posts on reputable finance sites, partner with financial blogs, and list the calculators on relevant directories. For example, linking from LIC agent/financial planning forums or media (like PolicyBazaar or Moneycontrol articles) can help.
+Leverage internal linking: Link to our calculators from high-traffic pages (e.g. blog posts on APY or retirement planning). Add links from related guides (“How to save for retirement”) to the calculators.
+Diversify anchor text: Use both branded anchors (“BharatSaver APY Calculator”) and keyword anchors (“Atal Pension Yojana calculator”) in backlinks.
+Monitor link velocity: Build links steadily. Avoid spammy link schemes. Tools like Ahrefs/SEMrush can be used to audit our profile vs competitors’.
+(Actionable queries: Use Google Search Console’s “Links” report and tools like Ahrefs to compare referring domains and identify high-authority opportunities.)
 
-“Calculate LIC Jeevan Umang (Plan 745) premium and benefits. Get guaranteed 8% annual survival income, death & maturity payouts with our free calculator.”
+4. SERP Features & User Intent
+SERP Analysis: Searches for “APY calculator” and “Jeevan Utsav calculator” show mostly educational/transactional intent. Users want either to use the calculator or understand the scheme before using it. Google often shows People Also Ask questions (e.g. “What is APY?” “How does Atal Pension work?”) and possibly featured snippets. The Axis page has content formatted like a FAQ to target PAA. BharatSaver should aim to answer these directly in concise paragraphs.
 
-Methodology Paragraph (calculator explanation):
+Featured Snippets / Knowledge Panels: We should look at whether queries like “What is APY Yojana” or “Jeevan Utsav benefit” trigger snippets. Crafting a bullet-list or definition paragraph (e.g. “Atal Pension Yojana (APY) is…”) at the top can capture snippets. For Jeevan Utsav, a quick bullet on “Key Features: Whole-life cover, limited payment term, 10% guaranteed income…” might trigger a snippet.
 
-“Our calculator uses LIC’s official Jeevan Umang (Plan 745) premium rates. It computes the base premium for your age, term and sum assured, then applies modal loadings (annual, half-yearly, etc.) and adds GST (4.5% in 1st year, 2.25% thereafter). After the premium term, the policy pays a guaranteed annual income of 8% of the Basic Sum Assured (as per LIC rules). The maturity benefit is the Basic SA plus vested simple bonuses and any Final Additional Bonus. We then derive the policy’s IRR by equating the present value of premiums paid to the present value of benefits received.”
+People Also Ask: Include PAA-targeted Q&A in FAQ sections. For example, Axis’s APY page anticipates “Who can open APY account?”; our FAQs should similarly answer things like entry age, pension amounts, etc.
 
-FAQ Examples:
+Paid & Other Features: While “Jeevan Utsav calculator” is niche (unlikely paid ads), “apy calculator” might see ads from banks. Ensure our organic content addresses all aspects to compete. Also, Google’s Knowledge Panel for LIC plans could exist – ensure correct schema and Biz info for any listing.
 
-Q: How is Jeevan Umang premium calculated? A: “We apply LIC’s official rate table for Plan 745. Enter your age, PPT and sum assured; our tool finds the base premium. Then we add mode loading (e.g. 0.52× for half-yearly) and GST (4.5% 1st yr, 2.25% later). The result is an estimate of your annual/half-yearly premium.”
-Q: What is the survival income under Jeevan Umang? A: “The plan guarantees an annual survival benefit of 8% of the Basic Sum Assured from the end of the premium term until maturity. For example, on a ₹10 lakh SA, you’d receive ₹80,000 per year after the PPT.”
-Q: What death benefit does Jeevan Umang provide? A: “If the life assured dies, the nominee gets the sum assured on death plus bonuses. LIC defines Sum Assured on death as the greater of 7× annualized premium or basic SA. The total death payout (SA+bonuses) is at least 105% of all premiums paid.”
-Monitoring & GSC Exports: Suggest filtering GSC for “Jeevan Umang” queries weekly. Export “Search Results” for queries containing “Jeevan Umang” and the “Page” filter for this calculator page to track rank/impressions changes. Key metrics to watch: avg. position for target terms, CTR on impressions, and GA4 events (calculator use, downloads).
+5. Content Gaps & Topical Authority
+Semantic Keywords/LSI: Audit our pages for missing related terms. For APY: include “pension amount ₹1000–5000”, “Central Government co-contribution”, “subscriber benefits”, “lock-in period”, etc. Competitors use terms like “investment period”, “minimum age 18” (Paytm), which should be on our page too. For Jeevan Utsav: include “guaranteed additions”, “PPT 5–16 yrs”, “2-year deferment”, “death benefit 105% of premium”, “loan against policy”, etc (several found on licpages).
 
-Timeline (30-day rollout):
+Related Calculators/Links: Cross-link relevant tools. For example, the APY page should link to related guides (e.g. “NPS Calculator” or “FD Calculator”). For Jeevan Utsav, link to other LIC plan guides (Jeevan Umang, Anand) if relevant. This increases topical authority.
 
-09-Aug
-11-Aug
-13-Aug
-15-Aug
-17-Aug
-19-Aug
-21-Aug
-23-Aug
-25-Aug
-Plan Update (H1/title/meta to 745)
-Fix calculator (remove PPT10, CI rider)
-Update examples & case studies
-Add Plan-745 summary table
-Insert premium chart/table
-Write methodology & FAQ answers
-Add IRR calculation & features
-Embed video, images, optimize content
-Update schema (FAQ, Video)
-Internal linking / menu updates
-Begin outreach & backlink pitching
-Monitor GSC/GA4; tweak as needed
-Week 1 (P0)
-Week 2 (P1)
-Week 3 (P1-P2)
-Week 4 (P2-P3)
-30-Day Implementation Schedule
+Trust Signals (Author, Date, Citations): Both our pages already show the author and “Last updated” date (Mahesh Chaube, CFP, Sep 2025). This is good. We should also cite official sources where possible (e.g. “according to LIC’s official brochure, GA rate is ₹40/₹1000”). Embedding citations (policy or government sites) can add credibility, though not strictly necessary for SEO.
+
+Localization: Ensure we use local context (all rupee symbols ₹, mention IRDA or RBI mandates, etc). Consider offering Hindi/Marathi versions if not already done. (Site has language toggle; ensure main keywords are translated properly in alternate versions.)
+
+Conversion Opportunities: Add clear CTAs. E.g. after the APY calculator, a link “Apply for APY at any bank” or “Download APY scheme brochure”. For Jeevan Utsav, “Get a free consultation” or “See all LIC plans”. This may not directly boost SEO but improves engagement.
+
+6. UX & Engagement Metrics
+Page Layout: Ensure the calculator is above the fold with clear labels (as in Upstox). Use bullet lists and tables for easy scanning (Groww uses bullets under “advantages”; we should too). Good contrast, readable font, and mobile-friendly spacing are essential.
+
+Interactive Elements: The calculator should be fast and accurate. Consider adding “Reset” button, tooltips, and sample presets. For Jeevan, allow switching between regular/flexi mode to see difference dynamically.
+
+Microcopy: Add explanatory microcopy (e.g. “Sum Assured is the coverage amount you choose” or “PPT = Premium Paying Term”). Even small clarifications help users.
+
+Accessibility: Ensure all form fields have labels and aria tags. Test with keyboard navigation. Provide alt text for images/graphics (like the charts added).
+
+Analytics & Engagement: Use Google Analytics and GSC to track: click-through rates (improve meta/title if CTR is low), bounce rate (if users drop off, page might not match intent), time on page (should be high if content is thorough). For example, if the APY page has high bounce, it suggests visitors don’t find the info – justify adding explanatory content. Use events to track “Calculate” button clicks and schema-impression clicks.
+
+7. Prioritized Action Plan
+Expand & Structure Content (High Impact, Medium Effort): Rewrite pages with clear H1/H2 hierarchy. For APY: start with “What is Atal Pension Yojana?” (definition), then “How to Use the APY Calculator” (steps), followed by “APY Contribution Chart & Examples”. For Jeevan Utsav: start with “What is LIC Jeevan Utsav (Plan 871)?”, then explain “Key Features & Benefits” (bullets from competitors), “How the Calculator Works” (with formula), then “Real Scenarios” (like we have), and FAQs. Ensure keywords (“APY”, “Jeevan Utsav”, “calculator”) appear naturally in headings and text.
+
+Optimize On-Page SEO (Medium Effort):
+
+Title/Meta: Put main keyword at start. E.g., change APY title to “APY Calculator (2026) – Atal Pension Yojana Calculator & Premium Chart”. For Jeevan: “LIC Jeevan Utsav Calculator (871) – Premium & Lifetime Income”. Meta descriptions should include target terms and a call-to-action (e.g. “Use our free Atal Pension Yojana calculator to find your required monthly contribution for a ₹1000–₹5000 pension”). Aim for ~155 chars.
+Headings & Content: As above, use descriptive H2s. Include bullet tables like competitors (e.g. the Excel-style “Pension ₹1000: contribution ₹X – ₹Y”).
+Implement Structured Data (Low Effort): Add the FAQPage JSON-LD as shown above to both pages. Also consider BreadcrumbList schema if not present. This can yield rich results and improve CTR.
+
+Technical Fixes (Medium Effort): Run a Lighthouse audit. Fix any large assets (compress the calculator UI scripts, minify CSS/JS). If bundle is too heavy, lazy-load charts or images not in first view. Use <link rel=“preconnect”> for critical resources (fonts, APIs). Ensure a fast hosting environment or CDN distribution.
+
+Improve User Engagement (Medium Effort): Add relevant images or infographics: e.g. an APY contribution chart, or Jeevan Utsav benefit diagram (see examples below). Embed the BharatSaver logo on charts to brand. Include a “Calculate” button near top (we have). For Jeevan Utsav, expand FAQs with answers (the placeholders in our HTML should be filled so crawlers see actual text, not just headings).
+
+Internal Linking & CTAs (Low Effort): Link the APY page from any blog post or guide mentioning pensions or retirement. Link Jeevan Utsav calculator from LIC-related blog posts. Add CTA banners (e.g. “Try our Atal Pension Calculator” on retirement pages). Ensure sitemap.xml includes both URLs and ping Google for reindexing.
+
+Backlink Building (High Effort): Engage in outreach: write guest articles on personal finance portals about APY or LIC plans, linking back to our calculators. Offer the tools to financial advisors/agencies. List the calculators in online financial communities (e.g. FinTech directories). Internally, feature our calculators in related blog posts with proper anchor text (e.g. “APY calculator” ⇒ /en/apy-calculator).
+
+A/B Testing (Ongoing): Try variants of title/meta. E.g. test “(2026)” vs “(2025)” or including “free calculator”. Experiment with placement of the FAQ section (above/below the fold). Test a more neutral tone vs. the personal tone on Jeevan page (see which converts better to further actions). Use heatmaps to see if users scroll to examples.
+
+8. Sample Improved Elements
+Title/Meta Examples:
+
+APY Calculator: “APY Calculator (2026) – Atal Pension Yojana Premium & Pension Chart | BharatSaver”.
+Meta: “Calculate your required monthly contribution under Atal Pension Yojana (APY) with our free online calculator. See guaranteed pension of ₹1000–₹5000 at age 60.”
+Jeevan Utsav: “LIC Jeevan Utsav Calculator (Plan 871) – Premium and Lifetime Income”.
+Meta: “Use our LIC Jeevan Utsav calculator to estimate premiums, guaranteed additions, and lifetime income for Plan 871. Compare Regular vs Flexi payout.”
+Suggested H1/H2 Structure (APY):
+
+H1: “APY Calculator: Atal Pension Yojana Retirement Planner (2026)”
+H2: “What is the Atal Pension Yojana (APY)?” (define scheme)
+H2: “How Does the APY Calculator Work?” (inputs & formula)
+H2: “APY Contribution Chart & Examples” (table or chart of pension vs age)
+H2: “Benefits of Using the APY Calculator” (short bullets)
+H2: “Frequently Asked Questions”
+Each H2 can have relevant H3’s (e.g. steps under “How it works”).
+
+Suggested H1/H2 (Jeevan Utsav):
+
+H1: “LIC Jeevan Utsav (Plan 871/883) Calculator – Premium & Guaranteed Income”
+H2: “What is LIC’s Jeevan Utsav Plan?” (explain 871/883 basics)
+H2: “How to Use Our Jeevan Utsav Calculator” (describe fields)
+H2: “Key Features and Benefits” (bullets: GA rate, limited PPT, 10% payout)
+H2: “Example Scenarios” (one or two case studies or charts)
+H2: “FAQs”
+Structured Data (JSON-LD): See code snippets above for implementing FAQ schema on each page.
+
+Mermaid Diagram (Site Structure Example):
+
+LICPremiumCalc
+
+Home
+
+Jeevan Utsav Plan 883
+
+Other LIC Plans
+
+LICCalculators
+
+Home
+
+Jeevan Utsav Plan 771
+
+Other LIC Calculators
+
+Groww
+
+Home
+
+Calculators
+
+APY Calculator
+
+BharatSaver
+
+Home
+
+Calculators Menu
+
+APY Calculator
+
+Jeevan Utsav Calculator
+
 
 
 Show code
-Careful execution of this plan – fixing critical content, enriching the page, and building authority – should significantly improve BharatSaver’s Jeevan Umang ranking in 1–2 months. The citations above from LIC’s own brochure and the competitor page demonstrate the official benefits (8% survival income) and how the top-ranking page presents them. Using these improvements, BharatSaver can offer more accurate, comprehensive information and outperform the current #1 result.
+This illustrates how our pages sit within each site’s structure, highlighting internal linking pathways.
+
+9. Conclusion
+By broadening and deepening content, aligning on-page SEO with target keywords, and improving technical health, BharatSaver’s calculators can become more comprehensive and attractive to both users and search engines. Incorporating competitor-best practices (rich definitions, examples, visuals, FAQs) plus rigorous technical optimization will address the gaps. Prioritize content expansion and structured data implementation first (as they yield large SEO gains with moderate effort). Concurrently, invest in link-building and speed improvements. Monitoring analytics (CTR, bounce, scroll depth) post-update will guide ongoing refinement.
+
+Sources: Comparative data and excerpts are drawn from Groww, Axis Max Life, Paytm, Upstox, LICCalculators.info, and LICPremiumCalculator.in. These exemplify best practices and content points to model.
+

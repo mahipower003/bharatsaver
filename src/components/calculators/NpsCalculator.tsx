@@ -147,16 +147,13 @@ export function NpsCalculator({ dictionary }: NpsCalculatorProps) {
         annuityRate: formValues.annuityRate,
       });
       
-      // Update URL silently
-      const params = new URLSearchParams(searchParams.toString());
-      params.set('contribution', formValues.contribution.toString());
-      params.set('mode', formValues.contributionMode);
-      params.set('age', formValues.currentAge.toString());
-      params.set('retire', formValues.retirementAge.toString());
-      params.set('returns', formValues.expectedReturns.toString());
-      params.set('annuity', formValues.annuityPercentage.toString());
-      params.set('annuityRate', formValues.annuityRate.toString());
-      router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+      if (typeof window !== 'undefined') {
+        const newQuery = `contribution=${formValues.contribution}&mode=${formValues.contributionMode}&age=${formValues.currentAge}&retire=${formValues.retirementAge}&returns=${formValues.expectedReturns}&annuity=${formValues.annuityPercentage}&annuityRate=${formValues.annuityRate}`;
+        const currentQuery = window.location.search.replace(/^\?/, '');
+        if (currentQuery !== newQuery) {
+          window.history.replaceState(null, '', `${pathname}?${newQuery}`);
+        }
+      }
     }
   }, [formValues, calculate, pathname, router, searchParams]);
 

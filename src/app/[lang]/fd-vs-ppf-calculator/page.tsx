@@ -60,7 +60,7 @@ export default async function FdVsPpfCalculatorPage({ params }: { params: Promis
       pageDict={pageDict}
       h1={pageDict.h1}
       description={pageDict.description}
-      lastUpdated="September 2025"
+      lastUpdated="August 2026"
       calculator={<FdVsPpfCalculator dictionary={pageDict} />}
       faqs={pageDict.faqs}
       faqTitle={pageDict.faq_title}

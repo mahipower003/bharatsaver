@@ -127,7 +127,7 @@ export default function LicPaidUpValueClient({
       pageDict={pageDict}
       h1={pageDict.h1}
       description={pageDict.byline || ""}
-      lastUpdated="May 31, 2026"
+      lastUpdated="August 2026"
       calculator={<LicPaidUpValueCalculator dictionary={pageDict} />}
       faqs={faqs}
       faqTitle="Frequently Asked Questions: LIC Paid-Up Value"

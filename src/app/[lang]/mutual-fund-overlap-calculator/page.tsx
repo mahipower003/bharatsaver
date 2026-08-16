@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
     "@type":"Article",
     "headline": dict.h1,
     "author":{"@type":"Person","name":"Mahesh Chaube","jobTitle":"CFP","url":`${siteUrl}/${lang}/author/mahesh-chaube`},
-    "datePublished":"2025-09-01","dateModified":"2025-09-12",
+    "datePublished":"2025-09-01","dateModified": "2026-08-16",
     "publisher":{"@type":"Organization","name":"BharatSaver","logo":{"@type":"ImageObject","url":`${siteUrl}/icon.svg`}}
   };
   
@@ -80,7 +80,7 @@ export default async function MutualFundOverlapCalculatorPage({ params }: { para
       pageDict={dict}
       h1={dict.h1}
       description={dict.hero.subtitle}
-      lastUpdated="September 2025"
+      lastUpdated="August 2026"
       calculator={
         <Card className="shadow-lg">
           <CardHeader>

@@ -101,7 +101,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
     },
     "about": ["Retirement Planning", "SIP Calculator", "Retirement Corpus India"],
     "datePublished": "2024-07-22",
-    "dateModified": "2025-09-01"
+    "dateModified": "2026-08-16"
   };
 
   return {
@@ -185,7 +185,7 @@ export default async function RetirementCorpusCalculatorPage({ params }: { param
       pageDict={retirementDict}
       h1={retirementDict.h1}
       description={retirementDict.intro}
-      lastUpdated="September 2025"
+      lastUpdated="August 2026"
       calculator={
         <>
             {retirementDict?.tool_section && <h2 className="text-2xl font-bold tracking-tight sm:text-3xl font-headline mt-12 mb-6 text-center">

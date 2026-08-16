@@ -78,7 +78,7 @@ export default async function MutualFundScreenerPage({ params }: { params: Promi
       pageDict={dict}
       h1={dict.h1}
       description={dict.intro}
-      lastUpdated="September 2025"
+      lastUpdated="August 2026"
       calculator={
         <section id="interactive-selector">
           <h2 className="text-3xl font-bold font-headline text-center mb-6">{dict.interactive_tool.h2}</h2>

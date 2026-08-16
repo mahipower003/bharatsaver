@@ -1,4 +1,3 @@
-
 'use client';
 
 import type { Dictionary } from "@/lib/types";
@@ -13,6 +12,8 @@ import Link from 'next/link';
 import { Download, BarChart, FileText, CheckCircle, SlidersHorizontal, GitCompareArrows, AlertTriangle, Users, BookUser, Star, HelpCircle, UserCheck, Calculator, TrendingUp } from "lucide-react";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import Image from "next/image";
+import { TableOfContents } from "@/components/ui/TableOfContents";
+import { InlineLeadBanner } from "@/components/layout/InlineLeadBanner";
 
 function getIcon(iconName: string) {
     const icons: { [key: string]: React.ElementType } = {
@@ -95,6 +96,10 @@ export default function JeevanUtsavCalculatorPageClient({
   const faqSection = pageDict.sections.find((s: any) => s.id === 'faq');
   const faqs = faqSection ? faqSection.content.find((c: any) => c.type === 'faq')?.items.map((f: any) => ({ question: f.q, answer: f.a })) : [];
 
+  const tocItems = pageDict.sections
+    ? pageDict.sections.map((s: any) => ({ id: s.id, title: s.title }))
+    : [];
+
   return (
     <CalculatorPageLayout
       lang={params.lang}
@@ -102,7 +107,7 @@ export default function JeevanUtsavCalculatorPageClient({
       pageDict={pageDict}
       h1={pageDict.h1}
       description={pageDict.trust_blurb}
-      lastUpdated="September 2025"
+      lastUpdated="August 2026"
       calculator={
         <div id="calculator-widget">
           <JeevanUtsavCalculator dictionary={pageDict.calculator_ui} />
@@ -112,12 +117,12 @@ export default function JeevanUtsavCalculatorPageClient({
       faqTitle="Frequently Asked Questions (FAQs)"
       pageUrl={pageUrl}
     >
-        <div className="mt-12 space-y-8">
+        <div className="mt-8 space-y-8">
             {pageDict.sections.map((section: any, index: number) => {
                 if (section.id === 'faq') return null; // FAQ is handled by CalculatorPageLayout
                 const Icon = getIcon(section.icon);
                 return (
-                  <Card key={index} id={section.id} className="shadow-lg">
+                  <Card key={index} id={section.id} className="shadow-lg scroll-mt-24">
                     <CardHeader>
                       <CardTitle className="flex items-center gap-3">
                         <Icon className="h-8 w-8 text-primary" />

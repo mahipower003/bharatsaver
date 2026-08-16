@@ -1,9 +1,7 @@
-
 import { getDictionary } from "@/lib/dictionaries";
 import { i18nConfig, type Locale } from "@/lib/i18n-config";
 import type { Metadata } from "next";
 import JeevanUtsavCalculatorPageClient from "./JeevanUtsavCalculatorPageClient";
-import { buildAlternates, buildOpenGraph, buildTwitterCard } from '@/lib/seo';
 
 export async function generateStaticParams() {
     return i18nConfig.locales.map(locale => ({ lang: locale }));
@@ -16,7 +14,6 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
     const pageUrl = `${siteUrl}/${lang}/jeevan-utsav-calculator`;
     const ogImageUrl = `${siteUrl}/images/lic-jeevan-utsav-calculator.png`;
 
-
     const howToSchema = pageDict.how_to_schema;
     const articleSchema = {
         ...pageDict.article_schema,
@@ -26,7 +23,22 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
             logo: { "@type": "ImageObject", "url": `${siteUrl}/icon.svg` }
         }
     };
+    const faqSchema = pageDict.faq_schema;
 
+    const webAppSchema = {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "LIC Jeevan Utsav Plan 771 & 883 Calculator",
+        "operatingSystem": "All",
+        "applicationCategory": "FinanceApplication",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "INR"
+        },
+        "description": pageDict.meta_description,
+        "url": pageUrl
+    };
 
     return {
         title: pageDict.meta_title,
@@ -39,15 +51,15 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
             }, {} as Record<string, string>),
         },
         openGraph: {
-          title: pageDict.meta_title,
-          description: pageDict.meta_description,
+          title: pageDict.og_title || pageDict.meta_title,
+          description: pageDict.og_description || pageDict.meta_description,
           url: pageUrl,
-          images: [{ url: ogImageUrl, width: 1200, height: 630, alt: 'LIC Jeevan Utsav Calculator' }],
+          images: [{ url: ogImageUrl, width: 1200, height: 630, alt: 'LIC Jeevan Utsav Calculator Plan 771' }],
           "locale": lang === 'en' ? 'en_IN' : lang,
           type: 'website',
         },
         other: {
-            'application/ld+json': JSON.stringify([howToSchema, articleSchema]),
+            'application/ld+json': JSON.stringify([webAppSchema, howToSchema, articleSchema, faqSchema]),
         },
     };
 }

@@ -48,7 +48,7 @@ export default function LicSurrenderValueCalculatorPageClient({
       pageDict={pageDict}
       h1={pageDict.h1}
       description={pageDict.description || ""}
-      lastUpdated="May 2026"
+      lastUpdated="August 2026"
       calculator={
         <div id="calculator-widget">
             <LicSurrenderValueCalculator dictionary={pageDict} />

@@ -1,114 +1,134 @@
-
 {
-  "meta_title": "APY Calculator 2025 — Atal Pension Yojana Premium & Pension Chart",
-  "meta_description": "Free APY Calculator India (2025). Calculate your monthly contribution for Atal Pension Yojana to get a fixed pension of ₹1000-₹5000. Includes age-wise premium chart & rules.",
-  "og_title": "APY Calculator 2025 — Atal Pension Yojana Premium & Pension Chart",
-  "og_description": "Use our FREE APY Calculator to find the monthly premium required for ₹1,000–₹5,000 pensions. Get age-based premium charts, eligibility, FAQs and downloadable CSV. Updated Sep 2025.",
-  "h1": "APY Calculator 2025 — Atal Pension Yojana Premium Chart & Pension",
-  "description": "Our free <a href=\"https://www.india.gov.in/spotlight/atal-pension-yojana\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline\">Atal Pension Yojana (APY)</a> Calculator helps you find your required monthly contribution for a desired pension amount. Secure your future with a government-backed pension.",
+  "meta_title": "2026 APY Calculator – Atal Pension Yojana (APY) Contribution Calculator | BharatSaver",
+  "meta_description": "Free APY (Atal Pension Yojana) Calculator 2026. Calculate monthly premium, total contribution & indicative corpus for ₹1,000–₹5,000 guaranteed pensions. Includes age-wise PFRDA charts & rules.",
+  "og_title": "2026 APY Calculator – Atal Pension Yojana Premium & Pension Chart | BharatSaver",
+  "og_description": "Calculate your exact monthly contribution for Atal Pension Yojana (APY) with our free 2026 calculator. Check PFRDA premium charts, 80CCD tax benefits, nominee corpus return & rules.",
+  "h1": "Atal Pension Yojana (APY) Contribution & Pension Calculator (2026)",
+  "description": "Calculate your monthly contribution for the government-backed <a href=\"https://www.india.gov.in/spotlight/atal-pension-yojana\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline font-medium\">Atal Pension Yojana (APY)</a> scheme. Determine exact premiums for ₹1,000 to ₹5,000 monthly pensions based on official PFRDA actuarial charts.",
   "last_updated": "Rates updated:",
   "title": "Atal Pension Yojana (APY) Calculator",
-  "form_description": "Enter your age to find the monthly premium for your desired pension.",
+  "form_description": "Select your current age and desired monthly pension after age 60 to calculate your exact contribution.",
   "age_label": "Your Current Age",
   "years_label": "years",
   "pension_label": "Desired Monthly Pension",
+  "frequency_label": "Contribution Frequency",
   "calculate_button": "Calculate Premium",
   "loading": "Calculating...",
-  "results_title": "Your APY Contribution",
-  "monthly_premium": "Your Monthly Premium",
-  "total_contribution": "Total Contribution",
-  "indicative_corpus": "Indicative Corpus at 60",
+  "results_title": "Your APY Contribution & Corpus Summary",
+  "monthly_premium": "Your Premium Contribution",
+  "total_contribution": "Total Out-of-Pocket Investment",
+  "indicative_corpus": "Indicative Corpus to Nominee",
+  "contribution_period": "Contribution Duration",
   "what_is_apy": {
     "title": "What is Atal Pension Yojana (APY)?",
-    "body": "The Atal Pension Yojana (APY) is a government-backed pension scheme in India, primarily targeted at workers in the unorganized sector. It encourages small savings for retirement and guarantees a fixed monthly pension of ₹1,000, ₹2,000, ₹3,000, ₹4,000, or ₹5,000 after the age of 60.",
+    "body": "The <strong>Atal Pension Yojana (APY)</strong> is a flagship government-backed pension scheme in India introduced in 2015, administered by the Pension Fund Regulatory and Development Authority (PFRDA) through the National Pension System (NPS) architecture. Specifically designed to provide social security to workers in the unorganized sector, APY guarantees a fixed monthly pension of <strong>₹1,000, ₹2,000, ₹3,000, ₹4,000, or ₹5,000</strong> per month after reaching 60 years of age.",
     "points": [
-      "<strong>Guaranteed Pension:</strong> Provides a fixed pension, offering financial security in old age.",
-      "<strong>Government Co-contribution:</strong> For eligible subscribers, the government co-contributes 50% of the total contribution or ₹1,000 per annum, whichever is lower, for the first 5 years.",
-      "<strong>Eligibility:</strong> Open to all Indian citizens between 18 and 40 years of age with a bank account."
+      "<strong>Government Guaranteed Pension:</strong> The monthly pension is 100% guaranteed by the Government of India, protecting subscribers against market volatility.",
+      "<strong>Triple Security Protection:</strong> Pension continues for the subscriber for life; upon their demise, the same pension is paid to the spouse for life; after both pass away, the full accumulated indicative corpus (up to ₹8.5 Lakh) is returned to the nominee.",
+      "<strong>Affordable Early Entry:</strong> Joining at age 18 requires a monthly contribution of just ₹42 for a ₹1,000 pension or ₹210 for a maximum ₹5,000 pension.",
+      "<strong>Tax Benefit Eligible:</strong> Contributions qualify for tax deductions under Section 80CCD(1) and additional deductions under Section 80CCD(1B) of the Income Tax Act."
     ]
   },
-  "how_it_works": {
-    "title": "How the APY Calculator Works",
-    "intro": "The APY premium is fixed based on your entry age and desired pension. The earlier you start, the lower your monthly contribution. Our calculator uses the official premium chart provided by the PFRDA to give you the exact amount.",
-    "example": {
-      "title": "Example Calculation",
-      "body": "If you are <strong>25 years old</strong> and want a pension of <strong>₹5,000 per month</strong>, your required monthly contribution would be just <strong>₹376</strong>. You would contribute this amount for 35 years (until age 60).",
-      "note": "This fixed premium makes it easy to budget and plan for your retirement savings consistently."
-    }
+  "how_math_works": {
+    "title": "How APY Premiums Are Actually Calculated (Mathematical Breakdown)",
+    "intro": "A common misconception online—often perpetuated by generic financial blogs—is trying to compute APY contributions using compound interest yield formulas like <code>(1 + r/n)^n - 1</code>. That formula applies to western savings yields, not Indian government pension schemes!",
+    "body": "In reality, APY premiums are strictly determined by actuarial lookup tables mandated by PFRDA. The formula factors in: <ul><li><strong>Entry Age (18 to 40 years):</strong> The younger you start, the longer your money compounds over time (up to 42 years of contributions).</li><li><strong>Target Monthly Pension (₹1,000 to ₹5,000):</strong> Higher pension amounts require proportionally higher premium contributions.</li><li><strong>Payment Frequency:</strong> Choose Monthly, Quarterly, or Half-Yearly auto-debit payments from your savings account.</li></ul>",
+    "example_title": "Real-World Calculation Example",
+    "example_body": "If you join APY at <strong>age 25</strong> and select a monthly pension of <strong>₹5,000</strong>: <ul><li>Monthly Premium: <strong>₹376</strong></li><li>Contribution Duration: <strong>35 years</strong> (until age 60)</li><li>Total Investment: <strong>₹1,57,920</strong> (₹376 × 12 months × 35 years)</li><li>Guaranteed Pension from Age 60: <strong>₹5,000 every month for life</strong></li><li>Lump Sum Returned to Nominee: <strong>₹8,50,000</strong></li></ul>"
   },
   "premium_chart": {
-    "title": "APY Premium Chart (Age-wise)",
-    "description": "This chart shows the fixed monthly premium required for different pension amounts based on your age at the time of joining.",
+    "title": "Official PFRDA APY Premium & Contribution Chart (2026)",
+    "description": "Below are the official contribution rates published by PFRDA for entry ages 18 to 40 across monthly pension tiers.",
     "age_header": "Entry Age",
-    "years_label": "Yrs"
+    "years_label": "Yrs",
+    "duration_header": "Years of Contribution",
+    "monthly_header": "Monthly",
+    "quarterly_header": "Quarterly",
+    "half_yearly_header": "Half-Yearly",
+    "corpus_header": "Nominee Corpus"
+  },
+  "eligibility_and_rules": {
+    "title": "Eligibility Criteria & Key Scheme Rules",
+    "intro": "Before opening an APY account, ensure you meet the official government guidelines:",
+    "rules_list": [
+      "<strong>Age Requirement:</strong> Open to any Indian citizen between 18 and 40 years of age.",
+      "<strong>Bank Account & Aadhaar:</strong> Must possess a valid savings bank account linked with Aadhaar and an active mobile number.",
+      "<strong>Income Tax Payer Exclusion:</strong> As per Ministry of Finance notification effective October 1, 2022, any citizen who is or has been an income tax payer is NOT eligible to join APY.",
+      "<strong>Minimum Contribution Period:</strong> Subscriber must contribute for a minimum of 20 years before reaching age 60.",
+      "<strong>Auto-Debit Facility:</strong> Premium contributions are automatically debited from the linked savings account on fixed due dates."
+    ]
+  },
+  "tax_benefits": {
+    "title": "Tax Benefits Under Income Tax Act",
+    "body": "Subscribers can claim attractive tax savings under existing tax laws: <ul><li><strong>Section 80CCD(1):</strong> Contributions are eligible for tax deduction up to ₹1.5 Lakh under the overall Section 80C umbrella.</li><li><strong>Section 80CCD(1B):</strong> Subscribers can claim an <em>additional exclusive deduction of up to ₹50,000</em> over and above the ₹1.5 Lakh limit, offering maximum tax savings under the Old Tax Regime.</li><li><strong>Pension Taxability:</strong> The monthly pension received after age 60 is treated as income and taxed as per the subscriber's applicable income tax slab.</li></ul>"
+  },
+  "penalty_rules": {
+    "title": "Delayed Payment Penalties & Discontinuation Rules",
+    "body": "To keep your APY account active, ensure sufficient balance in your bank account for auto-debit. If delayed, banks charge nominal monthly penalties: <ul><li>Contribution up to ₹100/mo: <strong>₹1 per month penalty</strong></li><li>Contribution ₹101 to ₹500/mo: <strong>₹2 per month penalty</strong></li><li>Contribution ₹501 to ₹1,000/mo: <strong>₹5 per month penalty</strong></li><li>Contribution above ₹1,000/mo: <strong>₹10 per month penalty</strong></li></ul>If contributions are discontinued for 6 months, account gets frozen; after 12 months, account gets deactivated; after 24 months, account closes automatically."
   },
   "enrollment": {
-    "title": "How to Enroll in APY",
-    "intro": "Enrolling in APY is simple and can be done through your bank or post office where you have a savings account. The steps are:",
+    "title": "How to Open an APY Account (Online & Offline)",
+    "intro": "Enrolling in Atal Pension Yojana takes just a few minutes through your bank or post office:",
     "steps": [
-      "Visit your bank branch or post office.",
-      "Fill out the APY registration form.",
-      "Provide your Aadhaar and mobile number.",
-      "Link your savings account for auto-debit of the monthly contribution."
+      "<strong>Via NetBanking / Mobile Banking:</strong> Log into your bank's Internet banking app (SBI, HDFC, ICICI, Axis, PNB, Canara, etc.), navigate to Social Security / APY section, select desired pension amount, and activate auto-debit.",
+      "<strong>At Bank Branch / Post Office:</strong> Visit your savings bank branch, submit the filled APY Subscriber Registration Form along with Aadhaar card copy and bank account details.",
+      "<strong>PRAN Generation:</strong> Upon successful registration, a Permanent Retirement Account Number (PRAN) will be issued to track your APY account status."
     ]
   },
   "comparison": {
-    "title": "APY vs. NPS vs. PPF vs. Other Pension Schemes",
-    "body": "<p>While APY provides a guaranteed pension, it's important to compare it with other popular schemes like the <a href='/{lang}/nps-calculator' class='text-primary hover:underline'>National Pension System (NPS)</a>, <a href='/{lang}/ppf-calculator' class='text-primary hover:underline'>Public Provident Fund (PPF)</a>, <a href='/{lang}/ssy-calculator' class='text-primary hover:underline'>Sukanya Samriddhi Yojana (SSY)</a>, and <a href='/{lang}/ups-pension-calculator' class='text-primary hover:underline'>UPS Pension Scheme</a>. APY is ideal for those seeking a fixed, secure pension with low contributions, whereas NPS offers market-linked returns with higher growth potential, and PPF is a long-term savings tool with tax-free returns. For a direct comparison between FD and PPF, use our <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF calculator</a>.</p><p>Use our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement corpus calculator</a> to plan your overall retirement strategy, and compare different <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regimes</a> to maximize your savings.</p>"
+    "title": "APY vs NPS vs PPF vs LIC Pension Plans",
+    "intro": "Choosing the right retirement product depends on your risk appetite and financial goals. Here is how APY compares with other options:",
+    "body": "<p>While APY guarantees fixed pension returns backed by the Government of India, the <a href='/{lang}/nps-calculator' class='text-primary hover:underline font-medium'>National Pension System (NPS)</a> offers market-linked growth with higher potential returns. The <a href='/{lang}/ppf-calculator' class='text-primary hover:underline font-medium'>Public Provident Fund (PPF)</a> provides tax-free wealth accumulation without a guaranteed annuity. For structured insurance-cum-pension options, compare with our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline font-medium'>LIC Premium Calculator</a> and <a href='/{lang}/lic-jeevan-umang-calculator' class='text-primary hover:underline font-medium'>LIC Jeevan Umang Calculator</a>.</p>"
   },
-  "rules": {
-    "title": "Key Rules and Conditions of APY",
-    "body": "<ul><li>The subscriber must contribute for a minimum of 20 years.</li><li>Premature withdrawal is only allowed in case of terminal illness or death.</li><li>If the subscriber dies before age 60, the spouse can continue the contributions or exit the scheme.</li><li>The pension amount is guaranteed by the Government of India.</li></ul>"
-  },
-  "faq_title": "Frequently Asked Questions",
+  "faq_title": "Frequently Asked Questions (FAQs)",
   "faqs": [
     {
-      "question": "What is the maximum age to join the APY scheme?",
-      "answer": "The maximum age to join the Atal Pension Yojana is 40 years."
+      "question": "What is the maximum and minimum entry age for APY?",
+      "answer": "The minimum entry age is 18 years and the maximum entry age is 40 years. You must contribute for at least 20 years before reaching retirement age at 60."
     },
     {
-      "question": "Can I increase or decrease my pension amount later?",
-      "answer": "Yes, you can change your desired pension amount once a year, in the month of April."
+      "question": "Can income tax payers join Atal Pension Yojana?",
+      "answer": "No. Effective October 1, 2022, any citizen who is or has been an income tax payer cannot enroll in the APY scheme."
     },
     {
-      "question": "What happens if I miss a contribution?",
-      "answer": "A penalty is charged for delayed contributions. The penalty is ₹1 per month for a contribution of ₹100, and so on."
+      "question": "Can I increase or decrease my pension amount after joining?",
+      "answer": "Yes. Subscribers can upgrade or downgrade their target monthly pension tier once a year, typically during the month of April."
     },
     {
-      "question": "Is the pension from APY taxable?",
-      "answer": "Yes, the pension received under APY is considered as income and is taxable as per the applicable income tax slabs. You can use our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline'>tax regime calculator</a> to check your slab."
+      "question": "What happens if the subscriber dies before age 60?",
+      "answer": "If the subscriber passes away before 60, the spouse can choose to either continue contributing to the account until the original subscriber would have turned 60, or exit the scheme and claim the accumulated corpus."
     },
     {
-      "question": "How does APY compare with LIC pension plans?",
-      "answer": "Unlike LIC plans that depend on market performance, APY provides a guaranteed pension backed by the Government of India. Check our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> for comparison."
+      "question": "What happens to the pension after the subscriber's death at age 60?",
+      "answer": "Upon the subscriber's death, the exact same monthly pension continues to be paid to the surviving spouse for life. After the spouse passes away, the entire indicative corpus (up to ₹8.5 Lakh) is returned to the nominee."
     },
     {
-      "question": "Can I withdraw money before retirement?",
-      "answer": "Premature withdrawal is only allowed in exceptional cases like terminal illness or death. Otherwise, you must contribute until age 60."
+      "question": "Is the pension received under APY tax-free?",
+      "answer": "No. The monthly pension received after age 60 is treated as income and taxed according to the subscriber's income tax slab. Check your tax liability using our <a href='/{lang}/tax-regime-calculator' class='text-primary hover:underline font-medium'>Tax Regime Calculator</a>."
     },
     {
-      "question": "What is the minimum and maximum pension amount?",
-      "answer": "You can choose monthly pensions of ₹1,000, ₹2,000, ₹3,000, ₹4,000, or ₹5,000 after retirement."
+      "question": "Can I exit APY prematurely before age 60?",
+      "answer": "Voluntary premature exit before 60 is permitted. In such cases, only the subscriber's own contributions along with actual interest earned will be refunded (minus bank administration charges). Government co-contribution and interest thereon will not be refunded."
     },
     {
-      "question": "How can I calculate LIC insurance premiums for comparison?",
-      "answer": "For comparing APY with LIC pension plans, use our <a href='/{lang}/lic-premium-calculator' class='text-primary hover:underline'>LIC premium calculator</a> to estimate costs for various LIC schemes like Jeevan Anand or Jeevan Umang."
+      "question": "What is the penalty for missing an auto-debit contribution?",
+      "answer": "Banks charge a penalty ranging from ₹1 to ₹10 per month depending on your monthly contribution tier. Ensure adequate balance in your account to avoid account freezing."
     },
     {
-      "question": "What if I want to check overlap in my mutual fund investments?",
-      "answer": "If you're considering mutual funds alongside APY, use our <a href='/{lang}/mutual-fund-overlap-calculator' class='text-primary hover:underline'>mutual fund overlap calculator</a> to avoid redundant investments and optimize your portfolio."
+      "question": "How can I check my APY account balance and statement?",
+      "answer": "You can check your APY account details online by downloading the APY e-PRAN app or logging into the official NSDL/CRA portal using your PRAN number."
     },
     {
-      "question": "Are there calculators for LIC child plans or term insurance?",
-      "answer": "Yes, we have specialized calculators for <a href='/{lang}/lic-child-plan' class='text-primary hover:underline'>LIC child plans</a>, <a href='/{lang}/lic-term-insurance' class='text-primary hover:underline'>LIC term insurance</a>, and other LIC schemes to help you compare options."
+      "question": "How does APY compare with LIC Jeevan Anand or Jeevan Labh?",
+      "answer": "APY is a low-cost, government-backed pension scheme for small monthly savings. LIC plans offer insurance cover along with bonuses. Compare both using our <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline font-medium'>LIC Jeevan Anand Calculator</a> and <a href='/{lang}/lic-jeevan-labh-calculator' class='text-primary hover:underline font-medium'>LIC Jeevan Labh Calculator</a>."
     }
   ],
   "related_calculators": {
-    "title": "Explore Our Other Financial Calculators",
-    "body": "Maximize your financial planning with our comprehensive suite of calculators. Compare <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline'>FD vs PPF</a>, calculate <a href='/{lang}/lic-surrender-value-calculator' class='text-primary hover:underline'>LIC surrender values</a>, or use our <a href='/{lang}/mutual-fund-scheme-selector' class='text-primary hover:underline'>mutual fund scheme selector</a> to build a diversified portfolio."
+    "title": "Explore Related Financial Calculators",
+    "body": "Plan your financial future with BharatSaver's tools: compare <a href='/{lang}/fd-vs-ppf-calculator' class='text-primary hover:underline font-medium'>FD vs PPF</a>, calculate your <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline font-medium'>Retirement Corpus</a>, or evaluate <a href='/{lang}/ups-pension-calculator' class='text-primary hover:underline font-medium'>UPS Pension Scheme</a> benefits."
   },
   "conclusion": {
-    "title": "Secure Your Future with a Small Step Today",
-    "body": "Atal Pension Yojana is an excellent tool for building a retirement safety net, especially for those with limited means. Use this calculator to take the first step towards securing your financial future, and consider our <a href='/{lang}/retirement-corpus-calculator' class='text-primary hover:underline'>retirement calculator</a> for a more comprehensive plan. Also explore our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline'>loan optimizer</a> for debt management, <a href='/{lang}/mutual-fund-screener' class='text-primary hover:underline'>mutual fund screener</a> for investment opportunities, <a href='/{lang}/lic-jeevan-anand-calculator' class='text-primary hover:underline'>LIC Jeevan Anand calculator</a> for insurance planning, and <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline'>LIC maturity calculator</a> to understand policy benefits."
+    "title": "Start Securing Your Retirement Today",
+    "body": "Atal Pension Yojana is one of India's most dependable, low-cost pension options for guaranteed income after 60. By starting early at age 18, a small daily contribution of less than ₹7 secures a ₹5,000 monthly pension for life. Use our calculator to choose your plan, and explore our <a href='/{lang}/loan-optimizer' class='text-primary hover:underline font-medium'>Loan Optimizer</a> and <a href='/{lang}/lic-maturity-calculator' class='text-primary hover:underline font-medium'>LIC Maturity Calculator</a> to build a comprehensive financial roadmap."
   }
 }

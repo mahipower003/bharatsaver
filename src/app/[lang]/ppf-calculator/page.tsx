@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
     description: 'Free PPF calculator for 2025: Instantly estimate PPF maturity, interest, and tax savings (EEE). Includes year-wise charts, extension rules, and comparison with FD, NPS, and SSY.',
     ogImageUrl,
     datePublished: '2024-07-28',
-    dateModified: '2025-09-01',
+    dateModified: '2026-08-16',
     about: ['Public Provident Fund', 'PPF Calculator', 'PPF Interest Rate'],
   });
 
@@ -65,7 +65,7 @@ export default async function PpfCalculatorPage({ params }: { params: Promise<{ 
       pageDict={pageDict}
       h1={pageDict.h1}
       description={pageDict.description}
-      lastUpdated="September 2025"
+      lastUpdated="August 2026"
       calculator={<PpfCalculator dictionary={pageDict} />}
       faqs={pageDict.faqs}
       faqTitle={pageDict.faq_title}

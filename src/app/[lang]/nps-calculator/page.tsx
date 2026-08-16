@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
     description: 'Use our NPS calculator to plan your retirement. Enter contribution, expected returns and retirement age to get corpus & monthly pension estimates.',
     ogImageUrl,
     datePublished: '2024-07-26',
-    dateModified: '2025-09-01',
+    dateModified: '2026-08-16',
     about: ['National Pension System', 'NPS Calculator', 'Retirement Planning'],
   });
 
@@ -59,7 +59,7 @@ export default async function NpsCalculatorPage({ params }: { params: Promise<{ 
       pageDict={pageDict}
       h1={pageDict.h1}
       description={pageDict.description}
-      lastUpdated="September 2025"
+      lastUpdated="August 2026"
       calculator={<NpsCalculator dictionary={pageDict} />}
       faqs={pageDict.faqs}
       faqTitle={pageDict.faq_title}

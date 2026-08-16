@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
       "author":{"@type":"Person","name":"Mahesh Chaube, CFP","url":"https://bharatsaver.com/author/mahesh-chaube"},
       "publisher":{"@type":"Organization","name":"BharatSaver","logo":{"@type":"ImageObject","url":"https://bharatsaver.com/icon.svg"}},
       "datePublished":"2025-09-01",
-      "dateModified":"2026-05-06",
+      "dateModified": "2026-08-16",
       "reviewedBy": {
         "@type": "Person",
         "name": "Laveena Vijayi",

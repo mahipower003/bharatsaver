@@ -1,17 +1,15 @@
-
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
-import { Loader2, Download, Baby, Twitter, Printer, Info, RefreshCw } from 'lucide-react';
+import { Download, Baby, Twitter, Printer, Info } from 'lucide-react';
 import { Area, AreaChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip as RechartsTooltip, XAxis, YAxis } from 'recharts';
-import { useCalculatorWorker } from '@/hooks/useWorker';
 
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Slider } from '@/components/ui/slider';
@@ -39,6 +37,7 @@ type YearlyData = {
   interest: number;
   closingBalance: number;
   totalInvestment: number;
+  totalInterest: number;
 };
 
 type CalculationResult = {
@@ -69,13 +68,47 @@ const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
     </svg>
 );
 
+function calculateSsyLocal(annualInvestment: number, girlAge: number, interestRate: number): CalculationResult {
+  let balance = 0;
+  let totalInvestment = 0;
+  let totalInterest = 0;
+  const yearlyData: YearlyData[] = [];
+  const tenure = 21;
+  const investmentPeriod = 15;
+
+  for (let i = 1; i <= tenure; i++) {
+    const openingBalance = balance;
+    const invested = i <= investmentPeriod ? annualInvestment : 0;
+    totalInvestment += invested;
+    const interest = (openingBalance + invested) * (interestRate / 100);
+    totalInterest += interest;
+    const closingBalance = openingBalance + invested + interest;
+    balance = closingBalance;
+
+    yearlyData.push({
+      year: i,
+      age: girlAge + i,
+      openingBalance,
+      invested,
+      interest,
+      closingBalance,
+      totalInvestment,
+      totalInterest,
+    });
+  }
+
+  return {
+    maturityValue: balance,
+    totalInvestment,
+    totalInterest,
+    yearlyData,
+  };
+}
 
 export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-
-  const { result, isCalculating: isLoading, calculate } = useCalculatorWorker<any, CalculationResult>('ssy', 150);
 
   const form = useForm<SsyFormValues>({
     resolver: zodResolver(formSchema),
@@ -88,6 +121,7 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
   });
 
   const investmentMode = form.watch('investmentMode');
+  const formValues = form.watch();
 
   useEffect(() => {
     const params = new URLSearchParams(searchParams.toString());
@@ -111,42 +145,35 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
     }
     
     if (Object.keys(valuesToSet).length > 0) {
-      form.reset(valuesToSet);
-      handleSubmit(valuesToSet as SsyFormValues);
+      form.reset({ ...form.getValues(), ...valuesToSet });
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Watch form values for auto-calculation
-  const formValues = form.watch();
+  const yearlyInvestment = formValues.investmentMode === 'monthly' ? formValues.investmentAmount * 12 : formValues.investmentAmount;
+
+  const result = useMemo(() => {
+    if (
+      formValues.investmentAmount >= 250 &&
+      yearlyInvestment <= 150000 &&
+      formValues.girlAge >= 0 &&
+      formValues.girlAge <= 10 &&
+      formValues.interestRate > 0
+    ) {
+      return calculateSsyLocal(yearlyInvestment, formValues.girlAge, formValues.interestRate);
+    }
+    return null;
+  }, [formValues.investmentAmount, formValues.girlAge, formValues.interestRate, yearlyInvestment]);
 
   useEffect(() => {
-    // Only calculate if the values are valid
-    const yearlyInvestment = formValues.investmentMode === 'monthly' ? formValues.investmentAmount * 12 : formValues.investmentAmount;
-    
-    if (formValues.investmentAmount >= 250 && yearlyInvestment <= 150000 && 
-        formValues.girlAge >= 0 && formValues.girlAge <= 10 && 
-        formValues.interestRate > 0) {
-      
-      calculate({
-        annualInvestment: yearlyInvestment,
-        girlAge: formValues.girlAge,
-        interestRate: formValues.interestRate,
-      });
-      
-      // Update URL silently
-      const params = new URLSearchParams(searchParams.toString());
-      params.set('investment', formValues.investmentAmount.toString());
-      params.set('age', formValues.girlAge.toString());
-      params.set('rate', formValues.interestRate.toString());
-      params.set('mode', formValues.investmentMode);
-      router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+    if (typeof window !== 'undefined' && result) {
+      const newQuery = `investment=${formValues.investmentAmount}&age=${formValues.girlAge}&rate=${formValues.interestRate}&mode=${formValues.investmentMode}`;
+      const currentQuery = window.location.search.replace(/^\?/, '');
+      if (currentQuery !== newQuery) {
+        window.history.replaceState(null, '', `${pathname}?${newQuery}`);
+      }
     }
-  }, [formValues, calculate, pathname, router, searchParams]);
-
-  function handleSubmit(values: SsyFormValues) {
-    // Prevent default form submission; calculations are handled automatically
-  }
+  }, [formValues.investmentAmount, formValues.girlAge, formValues.interestRate, formValues.investmentMode, result, pathname]);
 
   const handlePrint = () => {
     window.print();
@@ -172,12 +199,12 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
   const handleCSVExport = () => {
     if (!result) return;
     const headers = [
-      dictionary.table_year,
-      dictionary.table_age,
-      dictionary.table_opening_balance,
-      dictionary.table_amount_invested,
-      dictionary.table_interest_earned,
-      dictionary.table_closing_balance,
+      dictionary.table_year || 'Year',
+      dictionary.table_age || "Girl's Age",
+      dictionary.table_opening_balance || 'Opening Balance',
+      dictionary.table_amount_invested || 'Amount Invested',
+      dictionary.table_interest_earned || 'Interest Earned',
+      dictionary.table_closing_balance || 'Closing Balance',
     ];
     let csvContent = headers.join(',') + '\n';
     result.yearlyData.forEach(row => {
@@ -213,30 +240,19 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
       maximumFractionDigits: 0,
     });
   }
-  
-  const chartConfig = {
-    totalInvestment: {
-      label: dictionary.total_investment,
-      color: "hsl(var(--primary))",
-    },
-    totalInterest: {
-      label: dictionary.total_interest,
-      color: "hsl(var(--accent))",
-    },
-  } satisfies ChartConfig;
 
   return (
     <TooltipProvider>
-      <Card className="shadow-lg">
+      <Card className="shadow-lg border-emerald-500/20">
         <CardHeader>
             <h2 className="flex items-center gap-2 text-xl font-bold">
-                <Baby className="h-6 w-6 text-primary" />
-                <span>{dictionary.title}</span>
+                <Baby className="h-6 w-6 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                <span>{dictionary.title || "Sukanya Samriddhi Yojana (SSY) Calculator"}</span>
             </h2>
         </CardHeader>
         <CardContent>
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(handleSubmit)} className="space-y-8">
+            <form onSubmit={(e) => e.preventDefault()} className="space-y-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
                 <div className="space-y-6">
                     <FormField
@@ -244,7 +260,7 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
                         name="investmentMode"
                         render={({ field }) => (
                             <FormItem className="space-y-3">
-                            <FormLabel>{dictionary.investment_mode}</FormLabel>
+                            <FormLabel className="font-bold">{dictionary.investment_mode || "Investment Mode"}</FormLabel>
                             <FormControl>
                                 <RadioGroup
                                 onValueChange={field.onChange}
@@ -255,13 +271,13 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
                                     <FormControl>
                                     <RadioGroupItem value="yearly" />
                                     </FormControl>
-                                    <FormLabel className="font-normal">{dictionary.yearly_mode}</FormLabel>
+                                    <FormLabel className="font-normal">{dictionary.yearly_mode || "Yearly"}</FormLabel>
                                 </FormItem>
                                 <FormItem className="flex items-center space-x-3 space-y-0">
                                     <FormControl>
                                     <RadioGroupItem value="monthly" />
                                     </FormControl>
-                                    <FormLabel className="font-normal">{dictionary.monthly_mode}</FormLabel>
+                                    <FormLabel className="font-normal">{dictionary.monthly_mode || "Monthly"}</FormLabel>
                                 </FormItem>
                                 </RadioGroup>
                             </FormControl>
@@ -275,7 +291,7 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
                     render={({ field }) => (
                       <FormItem>
                         <div className="flex items-center gap-2">
-                          <FormLabel>{investmentMode === 'yearly' ? dictionary.yearly_investment_label : dictionary.monthly_investment_label}</FormLabel>
+                          <FormLabel className="font-bold">{investmentMode === 'yearly' ? (dictionary.yearly_investment_label || "Yearly Investment Amount") : (dictionary.monthly_investment_label || "Monthly Investment Amount")}</FormLabel>
                           <Tooltip>
                             <TooltipTrigger asChild>
                               <button type="button" className="inline-flex" tabIndex={-1}>
@@ -288,9 +304,9 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
                           </Tooltip>
                         </div>
                         <FormControl>
-                          <Input type="number" placeholder={investmentMode === 'yearly' ? dictionary.yearly_investment_placeholder : dictionary.monthly_investment_placeholder} {...field} />
+                          <Input type="number" placeholder={investmentMode === 'yearly' ? (dictionary.yearly_investment_placeholder || "150000") : (dictionary.monthly_investment_placeholder || "12500")} {...field} />
                         </FormControl>
-                         <FormDescription>{dictionary.max_investment_note}</FormDescription>
+                         <FormDescription>{dictionary.max_investment_note || "Max. yearly investment is ₹1,50,000"}</FormDescription>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -301,7 +317,7 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
                     render={({ field }) => (
                       <FormItem>
                         <div className="flex items-center gap-2">
-                          <FormLabel>{dictionary.interest_rate_label}</FormLabel>
+                          <FormLabel className="font-bold">{dictionary.interest_rate_label || "Interest Rate (% p.a.)"}</FormLabel>
                           <Tooltip>
                             <TooltipTrigger asChild>
                               <button type="button" className="inline-flex" tabIndex={-1}>
@@ -314,7 +330,7 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
                           </Tooltip>
                         </div>
                         <FormControl>
-                           <Input type="number" step="0.1" placeholder={dictionary.interest_rate_placeholder} {...field} />
+                           <Input type="number" step="0.1" placeholder={dictionary.interest_rate_placeholder || "8.2"} {...field} />
                         </FormControl>
                          <FormMessage />
                       </FormItem>
@@ -326,7 +342,7 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
                   name="girlAge"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>{dictionary.girl_age_label}: {field.value} {dictionary.years}</FormLabel>
+                      <FormLabel className="font-bold">{dictionary.girl_age_label || "Girl's Current Age"}: {field.value} {dictionary.years || "years"}</FormLabel>
                       <FormControl>
                         <Slider
                           min={0}
@@ -338,49 +354,45 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
                         />
                       </FormControl>
                       <div className="flex justify-between text-xs text-muted-foreground">
-                        <span>0</span>
-                        <span>10</span>
+                        <span>0 years</span>
+                        <span>10 years</span>
                       </div>
                       <FormMessage />
                     </FormItem>
                   )}
                 />
               </div>
-
-              {/* Removed the manual calculate button since it now auto-calculates with Web Workers */}
             </form>
           </Form>
         </CardContent>
       </Card>
 
-      {isLoading && <div className="text-center py-12"><Loader2 className="mx-auto h-12 w-12 animate-spin text-primary" /></div>}
-
       {result && (
-        <Card className="mt-8 animate-in fade-in-50 slide-in-from-bottom-5 shadow-lg">
+        <Card className="mt-8 animate-in fade-in-50 slide-in-from-bottom-5 shadow-lg border-emerald-500/20">
           <CardHeader>
-            <CardTitle>{dictionary.results_title}</CardTitle>
+            <h3 className="text-xl font-bold">{dictionary.results_title || "Your SSY Projection"}</h3>
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 text-center">
-              <div className="bg-primary/10 p-4 rounded-lg">
-                <p className="text-sm text-muted-foreground">{dictionary.maturity_value}</p>
-                <p className="text-2xl font-bold text-primary">{formatCurrency(result.maturityValue)}</p>
+              <div className="bg-emerald-50 dark:bg-emerald-950/40 p-4 rounded-xl border border-emerald-500/20">
+                <p className="text-xs font-semibold text-emerald-800 dark:text-emerald-300 uppercase tracking-wider">{dictionary.maturity_value || "Maturity Value at 21 Years"}</p>
+                <p className="text-2xl sm:text-3xl font-extrabold text-emerald-600 dark:text-emerald-400 mt-1">{formatCurrency(result.maturityValue)}</p>
               </div>
-              <div className="bg-secondary p-4 rounded-lg">
-                <p className="text-sm text-muted-foreground">{dictionary.total_investment}</p>
-                <p className="text-2xl font-bold">{formatCurrency(result.totalInvestment)}</p>
+              <div className="bg-slate-100 dark:bg-slate-800 p-4 rounded-xl border">
+                <p className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider">{dictionary.total_investment || "Total Investment"}</p>
+                <p className="text-2xl sm:text-3xl font-bold mt-1 text-foreground">{formatCurrency(result.totalInvestment)}</p>
               </div>
-              <div className="bg-accent/10 p-4 rounded-lg">
-                <p className="text-sm text-muted-foreground">{dictionary.total_interest}</p>
-                <p className="text-2xl font-bold text-accent">{formatCurrency(result.totalInterest)}</p>
+              <div className="bg-teal-50 dark:bg-teal-950/40 p-4 rounded-xl border border-teal-500/20">
+                <p className="text-xs font-semibold text-teal-800 dark:text-teal-300 uppercase tracking-wider">{dictionary.total_interest || "Total Interest Earned"}</p>
+                <p className="text-2xl sm:text-3xl font-bold mt-1 text-teal-600 dark:text-teal-400">{formatCurrency(result.totalInterest)}</p>
               </div>
             </div>
 
             <Tabs defaultValue="chart">
                 <div className="flex flex-wrap items-center justify-between gap-4">
                     <TabsList className="grid w-full grid-cols-2 md:w-auto md:inline-grid">
-                        <TabsTrigger value="chart">{dictionary.view_chart}</TabsTrigger>
-                        <TabsTrigger value="table">{dictionary.view_table}</TabsTrigger>
+                        <TabsTrigger value="chart">{dictionary.view_chart || "Chart"}</TabsTrigger>
+                        <TabsTrigger value="table">{dictionary.view_table || "Table"}</TabsTrigger>
                     </TabsList>
                     <div className="flex flex-wrap gap-2">
                         <Button variant="outline" size="sm" onClick={() => handleShare('whatsapp')}>
@@ -394,7 +406,7 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
                         </Button>
                         <Button variant="outline" size="sm" onClick={handleCSVExport}>
                             <Download className="mr-2 h-4 w-4" />
-                            {dictionary.export_csv}
+                            {dictionary.export_csv || "Export CSV"}
                         </Button>
                     </div>
                 </div>
@@ -413,19 +425,19 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
                       </linearGradient>
                     </defs>
                     <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="age" label={{ value: dictionary.girl_age_label, position: 'insideBottom', offset: -10 }}/>
-                    <YAxis tickFormatter={(value) => (value / 100000).toLocaleString('en-IN') + 'L'} label={{ value: dictionary.amount_in_lakhs, angle: -90, position: 'insideLeft' }}/>
+                    <XAxis dataKey="age" label={{ value: dictionary.girl_age_label || "Girl's Age", position: 'insideBottom', offset: -10 }}/>
+                    <YAxis tickFormatter={(value) => (value / 100000).toLocaleString('en-IN') + 'L'} label={{ value: dictionary.amount_in_lakhs || "Amount (in Lakhs)", angle: -90, position: 'insideLeft' }}/>
                     <RechartsTooltip 
                        contentStyle={{
                         borderRadius: "var(--radius)",
                         border: "1px solid hsl(var(--border))",
                         background: "hsl(var(--background))"
                       }}
-                      formatter={(value: number, name: string) => [formatCurrency(value), dictionary[name as keyof typeof dictionary]]}
+                      formatter={(value: number) => [formatCurrency(value), 'Value']}
                     />
                     <Legend />
-                    <Area type="monotone" dataKey="totalInvestment" stackId="1" stroke="hsl(var(--primary))" fill="url(#colorInvestment)" name="total_investment"/>
-                    <Area type="monotone" dataKey="interest" stackId="1" stroke="hsl(var(--accent))" fill="url(#colorInterest)" name="total_interest" />
+                    <Area type="monotone" dataKey="totalInvestment" stackId="1" stroke="hsl(var(--primary))" fill="url(#colorInvestment)" name={dictionary.total_investment || "Total Investment"}/>
+                    <Area type="monotone" dataKey="totalInterest" stackId="1" stroke="hsl(var(--accent))" fill="url(#colorInterest)" name={dictionary.total_interest || "Total Interest Earned"} />
                   </AreaChart>
                 </ResponsiveContainer>
               </TabsContent>
@@ -434,12 +446,12 @@ export function SsyCalculator({ dictionary }: SsyCalculatorProps) {
                   <Table>
                     <TableHeader className="sticky top-0 bg-card">
                       <TableRow>
-                        <TableHead>{dictionary.table_year}</TableHead>
-                        <TableHead>{dictionary.table_age}</TableHead>
-                        <TableHead className="text-right">{dictionary.table_opening_balance}</TableHead>
-                        <TableHead className="text-right">{dictionary.table_amount_invested}</TableHead>
-                        <TableHead className="text-right">{dictionary.table_interest_earned}</TableHead>
-                        <TableHead className="text-right">{dictionary.table_closing_balance}</TableHead>
+                        <TableHead>{dictionary.table_year || "Year"}</TableHead>
+                        <TableHead>{dictionary.table_age || "Girl's Age"}</TableHead>
+                        <TableHead className="text-right">{dictionary.table_opening_balance || "Opening Balance"}</TableHead>
+                        <TableHead className="text-right">{dictionary.table_amount_invested || "Amount Invested"}</TableHead>
+                        <TableHead className="text-right">{dictionary.table_interest_earned || "Interest Earned"}</TableHead>
+                        <TableHead className="text-right">{dictionary.table_closing_balance || "Closing Balance"}</TableHead>
                       </TableRow>
                     </TableHeader>
                     <TableBody>

@@ -4,6 +4,8 @@ import { AuthorCard } from "@/components/layout/AuthorCard";
 import { FooterCta } from "@/components/layout/FooterCta";
 import { CalculatorActions } from "@/components/layout/CalculatorActions";
 import { RelatedCalculatorsWidget } from "@/components/layout/RelatedCalculatorsWidget";
+import { InlineLeadBanner } from "@/components/layout/InlineLeadBanner";
+import { TableOfContents, TocItem } from "@/components/ui/TableOfContents";
 import type { Locale } from "@/lib/i18n-config";
 
 interface FAQ {
@@ -13,16 +15,17 @@ interface FAQ {
 
 interface CalculatorPageLayoutProps {
   lang: Locale;
-  dictionary: any; // Ideally typed, but 'any' is flexible for different dictionaries
+  dictionary: any;
   pageDict: any;
   h1: string;
   description: string;
   lastUpdated: string;
   calculator: ReactNode;
-  children: ReactNode; // The content cards below the calculator
+  children: ReactNode;
   faqs?: FAQ[];
   faqTitle?: string;
   pageUrl?: string;
+  tocItems?: TocItem[];
 }
 
 export function CalculatorPageLayout({
@@ -37,6 +40,7 @@ export function CalculatorPageLayout({
   faqs,
   faqTitle,
   pageUrl,
+  tocItems,
 }: CalculatorPageLayoutProps) {
   const siteUrl = process.env.SITE_URL || 'https://bharatsaver.com';
   
@@ -63,6 +67,15 @@ export function CalculatorPageLayout({
     })),
   } : null;
 
+  // Auto-generate Table of Contents items from pageDict sections if not explicitly provided
+  const autoTocItems: TocItem[] = pageDict?.sections
+    ? pageDict.sections
+        .filter((s: any) => s && s.id && s.title && s.id !== 'faq')
+        .map((s: any) => ({ id: s.id, title: s.title }))
+    : [];
+
+  const finalTocItems = tocItems && tocItems.length > 0 ? tocItems : autoTocItems;
+
   return (
     <div className="py-6 sm:py-12">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
@@ -85,9 +98,14 @@ export function CalculatorPageLayout({
         </div>
         
         {/* The Interactive Calculator Component */}
-        <div className="mb-8 sm:mb-12">
+        <div className="mb-6 sm:mb-8">
           {calculator}
         </div>
+
+        {/* Automatic Table of Contents Bar for All Articles & Calculators */}
+        {finalTocItems.length > 0 && (
+          <TableOfContents items={finalTocItems} />
+        )}
 
         {/* Dynamic Descriptive Content */}
         <div className="space-y-8 sm:space-y-12">
@@ -110,6 +128,9 @@ export function CalculatorPageLayout({
               </Accordion>
           </div>
         )}
+
+        {/* Inline Lead Capture Banner */}
+        <InlineLeadBanner calculatorName={h1} />
 
         {/* Related Calculators — retention widget */}
         <RelatedCalculatorsWidget lang={lang} />

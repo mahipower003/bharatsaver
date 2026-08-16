@@ -127,7 +127,7 @@ export default function LicVsPpfPageClient({
       pageDict={pageDict}
       h1={pageDict.h1}
       description={pageDict.top_cta}
-      lastUpdated="September 2025"
+      lastUpdated="August 2026"
       calculator={
         <div id="calculator-widget">
           <LicVsPpfCalculator dictionary={pageDict.tool || {}} />

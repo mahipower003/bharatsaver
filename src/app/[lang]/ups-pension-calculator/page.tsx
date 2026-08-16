@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
       },
       "headline": dict.h1,
       "datePublished": "2024-08-02",
-      "dateModified": "2024-08-02",
+      "dateModified": "2026-08-16",
       "author": {
         "@type": "Person",
         "name": "Mahesh Chaube, CFP",
@@ -106,7 +106,7 @@ export default async function UpsPensionCalculatorPage({ params }: { params: Pro
       pageDict={dict}
       h1={dict.h1}
       description={dict.hero_subtitle}
-      lastUpdated="September 2025"
+      lastUpdated="August 2026"
       calculator={<UpsPensionCalculator dictionary={dict} />}
       faqs={mappedFaqs}
       faqTitle={dict.faq_title}

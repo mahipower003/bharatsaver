@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
       "author":{"@type":"Person","name":"Mahesh Chaube, CFP","url":`${siteUrl}/author/mahesh-chaube`},
       "publisher":{"@type":"Organization","name":"BharatSaver","logo":{"@type":"ImageObject","url":`${siteUrl}/icon.svg`}},
       "datePublished":"2026-05-16",
-      "dateModified":"2026-05-16",
+      "dateModified": "2026-08-16",
       "reviewedBy": {
         "@type": "Person",
         "name": "Laveena Vijayi",

@@ -84,7 +84,7 @@ export default function LicChildPlanPageClient({
       pageDict={pageDict}
       h1={pageDict.h1}
       description={pageDict.intro}
-      lastUpdated="September 2025"
+      lastUpdated="August 2026"
       calculator={<></>}
       faqs={faqs}
       faqTitle="Frequently Asked Questions (FAQs)"

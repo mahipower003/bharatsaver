@@ -66,7 +66,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
         "jobTitle": "BharatSaver Editorial Team"
     },
     "datePublished": "2024-08-01",
-    "dateModified": "2025-09-01"
+    "dateModified": "2026-08-16"
   };
 
   return {
@@ -103,7 +103,7 @@ export default async function LoanOptimizerPage({ params }: { params: Promise<{ 
       pageDict={pageDict}
       h1={pageDict.h1}
       description={pageDict.summary}
-      lastUpdated="September 2025"
+      lastUpdated="August 2026"
       calculator={<LoanOptimizer dictionary={pageDict} />}
       faqs={mappedFaqs}
       faqTitle={pageDict.faq?.h2 || "Frequently Asked Questions"}

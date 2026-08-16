@@ -120,20 +120,14 @@ export function PpfCalculator({ dictionary }: PpfCalculatorProps) {
   const formValues = form.watch();
 
   useEffect(() => {
-    // Only calculate if the values are valid (basic validation)
-    if (formValues.annualInvestment >= 500 && formValues.annualInvestment <= 150000 && 
-        formValues.tenure >= 15 && formValues.tenure <= 50 && 
-        formValues.interestRate > 0) {
-      calculate(formValues as PpfFormValues);
-      
-      // Update URL silently
-      const params = new URLSearchParams(searchParams.toString());
-      params.set('investment', formValues.annualInvestment.toString());
-      params.set('tenure', formValues.tenure.toString());
-      params.set('rate', formValues.interestRate.toString());
-      router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+    if (typeof window !== 'undefined') {
+      const newQuery = `investment=${formValues.annualInvestment}&tenure=${formValues.tenure}&rate=${formValues.interestRate}`;
+      const currentQuery = window.location.search.replace(/^\?/, '');
+      if (currentQuery !== newQuery) {
+        window.history.replaceState(null, '', `${pathname}?${newQuery}`);
+      }
     }
-  }, [formValues, calculate, pathname, router, searchParams]);
+  }, [formValues.annualInvestment, formValues.tenure, formValues.interestRate, pathname]);
 
   function handleSubmit(values: PpfFormValues) {
     // The auto-calculation handles this, but we keep this for form submission prevention
